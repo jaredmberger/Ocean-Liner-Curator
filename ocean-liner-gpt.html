@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+    body { background:#0a1110; }
+  </style>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ocean Liner GPT — AI Use &amp; Methodology — Ocean Liner Curator</title>
+  <meta name="description" content="Explains how Ocean Liner Curator uses Ocean Liner GPT and other AI-assisted tools: instruction constraints, evidence standards, limitations, and how to interpret AI-assisted output responsibly." />
+
+  <link rel="canonical" href="https://oceanliners.net/ocean-liner-gpt" />
+
+  <!-- WebPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/ocean-liner-gpt#webpage",
+    "name": "Ocean Liner GPT — AI Use & Methodology — Ocean Liner Curator",
+    "url": "https://oceanliners.net/ocean-liner-gpt",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "Explains how Ocean Liner Curator uses Ocean Liner GPT and other AI-assisted tools: instruction constraints, evidence standards, limitations, and how to interpret AI-assisted output responsibly.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- FAQPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does “ocean liner AI” mean on this site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "On Ocean Liner Curator, “ocean liner AI” refers to AI used as a constrained research aid: a tool for organizing questions, testing claim logic, and reinforcing evidence-first standards. It does not replace archives, museums, or primary documentation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Ocean Liner AI a generative content tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The goal is not to generate stories about ships. The goal is to help readers evaluate evidence, provenance claims, and attribution limits without drifting into unsupported certainty."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can AI authenticate or confirm an ocean liner artifact?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not by itself. Authentication requires object-level examination and, ideally, documentation. AI can help identify weak claim structures and suggest what evidence would matter, but it cannot replace primary evidence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are famous-ship claims especially risky?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fame increases misattribution. Seller incentives, repeated lore, and “looks like” reasoning can upgrade a line or era association into a ship-specific claim without documentation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do when the evidence is limited?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stop where the record stops. “Unknown” can be a responsible conclusion when a ship-specific link cannot be demonstrated with independently checkable evidence."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JPZ291Q3RB');
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+  <link rel="preload" as="image" href="/olgpt-page.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Ocean Liner GPT — AI Use &amp; Methodology — Ocean Liner Curator">
+  <meta property="og:description" content="Explains how Ocean Liner Curator uses Ocean Liner GPT and other AI-assisted tools: instruction constraints, evidence standards, limitations, and how to interpret AI-assisted output responsibly.">
+  <meta property="og:url" content="https://oceanliners.net/ocean-liner-gpt">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ocean Liner GPT — AI Use &amp; Methodology — Ocean Liner Curator">
+  <meta name="twitter:description" content="Explains how Ocean Liner Curator uses Ocean Liner GPT and other AI-assisted tools: instruction constraints, evidence standards, limitations, and how to interpret AI-assisted output responsibly.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+
+      /* one knob for all editorial measure */
+      --prose-measure: 72ch;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    /* =========================
+       HERO PLATE
+       ========================= */
+    .hero{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 1.1rem 0 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .hero-inner{
+      width: min(1080px, calc(100% - 1.5rem));
+      position: relative;
+    }
+
+    .hero-img{
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius:16px;
+      border:1px solid var(--border);
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+    }
+
+    @media (max-width:520px){
+      .hero-img{ border-radius:14px; }
+    }
+
+    /* =========================
+       CARD (plate)
+       ========================= */
+    .container{
+      width: min(780px, calc(100% - 1.5rem));
+      margin: 0.75rem auto 0; /* keep tight to hero */
+      background-color: rgba(15,27,25,0.78);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+
+      --container-pad-top: clamp(2rem, 4.5vh, 3rem);
+      padding: var(--container-pad-top) 2.75rem 1.5rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      isolation:isolate;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      pointer-events:none;
+      z-index:0;
+
+      background:
+        url("/tile7.png") repeat,
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+
+      background-size:
+        360px 360px,
+        auto, auto, auto,
+        auto,
+        auto, auto;
+
+      background-position:
+        center,
+        center, center, center,
+        center,
+        center, center;
+
+      opacity:0.05;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    @media (max-width:520px){
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:0.7rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+      }
+    }
+
+    @media (min-width:1300px){
+      .container{ width: min(1080px, calc(100% - 3rem)); }
+    }
+
+    /* ==========================================================
+       THE FIX: ONE PROSE COLUMN FOR EVERYTHING INSIDE THE CARD
+       ========================================================== */
+    .prose{
+      max-width: var(--prose-measure);
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    /* neutralize the “center everything with auto margins” rules */
+    .prose :is(h1,h2,h3,p,ul,ol,blockquote,.note,.page-kicker,footer,section){
+      width:auto !important;
+      max-width:none !important;
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+
+    .prose p{
+      margin:0 0 1.55rem 0;
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    .prose h2{
+      position:relative;
+      margin:2.25rem 0 0.9rem 0;
+      text-align:left;
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+    }
+
+    .prose h2::after{
+      content:"";
+      display:block;
+      width:72px;
+      height:1px;
+      margin-top:0.45rem;
+      background:linear-gradient(90deg, var(--accent), rgba(191,164,106,0.35), transparent);
+    }
+
+    .prose ul,
+    .prose ol{
+      margin:0.2rem 0 1.55rem 0;
+      padding-left:1.35rem;
+      text-align:left;
+      color:var(--text);
+      list-style-position: outside;
+    }
+
+    .prose li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    /* mini list styling */
+    .mini{
+      margin:0.25rem 0 1.55rem 0;
+      padding-left:1.2rem;
+      text-align:left;
+      color:rgba(230,223,207,0.92);
+    }
+    .mini li{ margin:0.35rem 0; line-height:1.65; }
+
+    /* =========================
+       Badges + rule + kicker
+       ========================= */
+    .badge{
+      --brass:#bfa46a;
+      display:inline-block;
+      font-variant: small-caps;
+      letter-spacing:0.12em;
+      font-size:0.72rem;
+      font-weight:600;
+      color:var(--brass);
+      padding:0.28rem 0.6rem 0.32rem;
+      border:1.5px solid var(--brass);
+      border-radius:999px;
+      line-height:1;
+      white-space:nowrap;
+    }
+
+    .badge-group{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.45rem;
+      margin:0 0 0.9rem;
+      justify-content:center;
+    }
+
+    .badge.primary{ border-width:2px; }
+
+    h1{
+      font-family:"Libre Baskerville", serif;
+      font-variant: small-caps;
+      letter-spacing:0.08em;
+      font-weight:400;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:0.9rem auto 1.4rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    .page-kicker{
+      margin:0 0 1.4rem 0;
+      font-size:0.98rem;
+      line-height:1.65;
+      color:var(--muted);
+      text-align:left;
+    }
+
+    .caps{
+      font-variant: small-caps;
+      letter-spacing:0.08em;
+      font-size:0.95em;
+      color:rgba(230,223,207,0.9);
+    }
+
+    /* =========================
+       Notes + glyph
+       ========================= */
+    .note{
+      margin:0.3rem 0 1.55rem 0;
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+      text-align:left;
+    }
+
+    .glyph{
+      width:32px;
+      height:32px;
+      display:grid;
+      place-items:center;
+      flex:0 0 32px;
+      border-radius:10px;
+      border:1px solid rgba(191,164,106,0.35);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      color:rgba(209,187,134,0.95);
+      font-size:0.95rem;
+      line-height:1;
+    }
+
+    .note.note-centered{
+      display:flex;
+      align-items:center;
+      gap:0.75rem;
+    }
+    .note.note-centered .note-text{
+      flex:1;
+      text-align:center;
+      padding-right:32px; /* keep centered relative to glyph */
+    }
+
+    /* =========================
+       Links
+       ========================= */
+    a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:1px;
+    }
+    a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+    a:focus-visible{ outline:2px solid rgba(191,164,106,0.6); outline-offset:3px; }
+
+    /* =========================
+       CTA buttons
+       ========================= */
+    .cta{ margin-top:2.2rem; text-align:center; }
+
+    .actions{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:0.9rem;
+      flex-wrap:wrap;
+      margin-top:0.6rem;
+    }
+
+    .button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:0.9rem 1.35rem;
+  font-size:0.98rem;
+  letter-spacing:0.35px;
+  text-decoration:none;
+
+  min-height:44px; /* important */
+  line-height:1;   /* prevents font metrics shifting */
+
+  color:#0a1110;
+  background:linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
+  border:1px solid rgba(0,0,0,0.35);
+  border-radius:10px;
+
+  transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  box-shadow:0 10px 26px rgba(191,164,106,0.22);
+}
+
+    a.button.secondary{
+      background: linear-gradient(
+        180deg,
+        rgba(191,164,106,0.10) 0%,
+        rgba(10,17,16,0.16) 55%,
+        rgba(0,0,0,0.15) 100%
+      );
+      color:var(--link);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    @media (max-width:520px){
+      .actions{
+        flex-direction:column;
+        gap:0.85rem;
+        align-items:stretch;
+      }
+      a.button{ width:100%; white-space:normal; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{ transition:none; }
+    }
+
+    /* =========================
+       Constitution button (spacing fix)
+       ========================= */
+    .constitution-wrapper{ text-align:center; }
+
+    .constitution-btn{
+      display:inline-block;
+      width:min(280px, 80%);
+      max-width:280px;
+      text-decoration:none;
+      border-bottom:0 !important;
+    }
+
+    .constitution-btn img{
+      width:100%;
+      height:auto;
+      display:block;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));
+      transition: transform 220ms ease, filter 220ms ease;
+    }
+
+    .constitution-btn:hover img{
+      transform:translateY(-2px);
+      filter: drop-shadow(0 8px 16px rgba(0,0,0,0.45));
+    }
+
+    .constitution-btn:active img{
+      transform:translateY(0);
+      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.35));
+    }
+
+    /* =========================
+       Footer
+       ========================= */
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:150px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem !important;
+      opacity:0.55 !important;
+      margin-top:1.2rem !important;
+    }
+
+    @media (max-width:520px){
+      footer{ margin-top:1.8rem; font-size:0.78rem; }
+      .flags-footer{ width:108px; margin:0.9rem auto 0; opacity:0.35; }
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <section class="hero" aria-label="Ocean Liner GPT">
+    <div class="hero-inner">
+      <img
+        class="hero-img"
+        src="/olgpt-page.png"
+        alt=""
+        width="1080"
+        height="540"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+  </section>
+
+  <!-- APPLY THE FIX: remove .scope and add .prose wrapper -->
+  <main class="container">
+    <div class="prose">
+
+      <div class="badge-group">
+        <span class="badge primary">Methodology Page</span>
+      </div>
+
+      <div class="rule"></div>
+
+      <p class="page-kicker">
+        How Ocean Liner Curator uses AI-assisted tools: the instruction constraints, evidence standards, limitations, and how to interpret AI-assisted output responsibly.
+      </p>
+
+      <div class="note note-centered">
+        <div class="glyph" aria-hidden="true">★</div>
+        <div class="note-text">
+          Those interested in using <span class="caps">Ocean Liner GPT</span> can access it
+          <a
+            href="https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt"
+            target="_blank"
+            rel="noopener"
+            onclick="return confirm('You are leaving Ocean Liner Curator and opening an external site (ChatGPT) in a new tab. Continue?');"
+          >here →</a>
+        </div>
+      </div>
+
+      <p>
+        Ocean Liner Curator makes limited, clearly bounded use of AI-assisted tools to support research organization,
+        drafting, and analysis. These tools function as assistants—not authorities—and do not replace archives, museums,
+        scholarly publications, or primary research.
+      </p>
+
+      <p>
+        Ocean liner AI, as used on this site, is not a generative content tool. It is a constrained research assistant designed to help evaluate evidence,
+        provenance claims, and attribution limits in ocean liner material culture. It is distinguished from general AI applications by its reliance on clearly
+        defined source constraints, evidence hierarchy, and methodological transparency. Attribution, interpretation, and historical judgment are reserved for
+        documented evidence and human review.
+      </p>
+
+      <p>
+        Ocean liner AI in the form of <span class="caps">Ocean Liner GPT</span> operates within the same evidence-first standards that govern responsible ocean liner collecting.
+      </p>
+
+      <p>
+        This page explains how <span class="caps">Ocean Liner GPT</span> is instructed, what it is designed to do, what it is designed
+        <em>not</em> to do, and how its output should be read in an evidence-first historical context.
+      </p>
+
+      <h2>Purpose</h2>
+      <p>
+        Ocean Liner GPT is used as a research companion. Its role is to help structure questions, summarize context,
+        compare terminology, and propose avenues for verification—not to “decide” what is true. Ocean Liner GPT is an implementation of ocean liner AI principles rather than a replacement for historical research or curatorial judgment.
+      </p>
+
+      <p>In practice, it is used to:</p>
+      <ul>
+        <li>Draft or refine explanatory text in the site’s house voice</li>
+        <li>Organize notes from sources into structured outlines</li>
+        <li>Generate checklists and comparison frameworks for evaluation</li>
+        <li>Clarify definitions (for example: what “ocean liner” means in context)</li>
+        <li>Identify where evidence is missing or where claims need citation</li>
+      </ul>
+
+      <h2>Instruction Constraints</h2>
+      <p>
+        Ocean Liner GPT is instructed to follow the same standards that govern the rest of the project: restraint,
+        evidence-first reasoning, and clear separation of fact, inference, and uncertainty.
+      </p>
+
+      <p>Its core constraints include:</p>
+      <ul>
+        <li><strong>Evidence over assertion:</strong> favor documented sources over confident-sounding conclusions</li>
+        <li><strong>Conservative attribution:</strong> avoid ship-specific claims unless evidence supports them</li>
+        <li><strong>Explicit uncertainty:</strong> label ambiguity rather than smoothing it over</li>
+        <li><strong>No provenance “certification”:</strong> do not authenticate or “verify” an object based on description alone</li>
+        <li><strong>Method before narrative:</strong> prioritize how we know something over dramatic storytelling</li>
+      </ul>
+
+      <div class="note">
+
+        <p style="margin:0 0 0.95rem 0;">
+          ⁂ The site’s broader standards and definitions are anchored in the
+          <a href="/definitive-guide">Definitive Guide to Research Standards</a>.
+          Where Ocean Liner GPT is used, it is expected to follow the same terminology discipline and confidence language.
+          Ocean Liner GPT is guided by and follows all of the outlined research standards.
+        </p>
+
+        <p style="margin:0;">
+          ⁂ For site-wide guidance on reading AI-assisted material, see the
+          <a href="/ai-interpretation-policy">AI Interpretation Policy</a>.
+        </p>
+      </div>
+
+      <h2>What It Can Do</h2>
+      <p>
+        Ocean Liner GPT is well-suited to certain kinds of work—especially work that benefits from structure and comparison.
+        It can be helpful when the goal is clarity, organization, and question refinement.
+      </p>
+
+      <ul>
+        <li>Summarize or restate material in neutral, reader-friendly language</li>
+        <li>Propose verification steps (archives to consult, document types to look for)</li>
+        <li>Compare competing interpretations and list the evidence needed to adjudicate them</li>
+        <li>Generate collecting heuristics consistent with the project’s restraint</li>
+        <li>Help build consistent internal linking and page structure across the site</li>
+      </ul>
+
+      <h2>What It Cannot Do</h2>
+      <p>
+        AI can be persuasive even when wrong. For that reason, Ocean Liner GPT is treated as inherently fallible and is
+        deliberately prevented—by policy and by editorial practice—from functioning as an authority. These limitations are intentional and reflect the evidentiary realities of ocean liner research rather than deficiencies in the tool.
+      </p>
+
+      <p>It cannot responsibly do the following on its own:</p>
+      <ul>
+        <li><strong>Authenticate artifacts</strong> (including silver, ceramics, keys, textiles, fittings, ephemera)</li>
+        <li><strong>Confirm provenance</strong> or chain-of-custody claims without documentation</li>
+        <li><strong>Resolve disputed historical claims</strong> without primary or scholarly support</li>
+        <li><strong>Replace archival research</strong>, museum collections work, or original document review</li>
+        <li><strong>Guarantee accuracy</strong> in dates, specifications, quotations, or attributions</li>
+      </ul>
+
+      <p>
+        To avoid visual misrepresentation, Ocean Liner GPT does not create illustrative images of historic ships or artifacts and relies instead on documented photographs, plans, or explicitly symbolic graphics.
+      </p>
+
+      <h2>How Output Is Interpreted</h2>
+      <p>
+        When Ocean Liner GPT is used, its output is treated as a draft or working note—subject to correction, citation,
+        and revision. Outputs generated by Ocean Liner GPT should be treated as research aids, not as authoritative conclusions. The project distinguishes between:
+      </p>
+
+      <ul class="mini">
+        <li><span class="caps">Documented facts</span>: directly supported by a cited primary or scholarly source</li>
+        <li><span class="caps">Reasoned inferences</span>: plausible conclusions drawn from evidence, labeled as such</li>
+        <li><span class="caps">Open questions</span>: areas where evidence is incomplete, contradictory, or absent</li>
+      </ul>
+
+      <p>
+        Where evidence is limited, conclusions are conservative or not presented. In some cases, “unknown” is the most
+        responsible outcome. (See: <a href="/unknown">When Evidence Is Limited: Why “Unknown” Is a Responsible Conclusion</a>.)
+      </p>
+
+      <p><strong>What would change a conclusion?</strong> Primary documentation, object-level examination, or independently checkable archival corroboration.</p>
+
+      <h2>Quality Assurance &amp; Ongoing Review</h2>
+      <p>
+        Ocean Liner GPT is regularly stress-tested against its own governing standards. These tests include adversarial prompts,
+        high-risk attribution scenarios (such as Titanic-related claims), forced-choice and probabilistic pressure, and comparisons
+        designed to probe authority, valuation, and certainty boundaries.
+      </p>
+      <p>
+        The purpose of this testing is not to optimize for persuasive answers, but to ensure the system consistently refuses unsupported conclusions,
+        preserves uncertainty where evidence ends, and applies its evidence-first methodology reliably under pressure. Results are reviewed to confirm alignment with the Core
+        Constitution and are used to refine safeguards rather than expand claims.
+        For a detailed explanation of how Ocean Liner GPT is evaluated under real-world, high-risk scenarios,
+        see <a href="/ocean-liner-gpt-stress-testing.html">How Ocean Liner GPT Is Stress Tested</a>.
+      </p>
+
+      <h2>How This Page Protects the Project</h2>
+      <p>
+        Ocean Liner Curator is a historical reference project. A clear AI methodology exists to prevent accidental drift
+        into overclaiming, and to make the site’s standards legible to readers.
+      </p>
+
+      <p>In short:</p>
+      <ul>
+        <li>AI is used to support clarity and organization—not to replace evidence</li>
+        <li>Claims are bounded by documentation and expressed with measured confidence language</li>
+        <li>Editorial responsibility remains with the project, not with the tool</li>
+        <li>Ocean Liner GPT does not determine authenticity, attribution, or provenance; it assists users in examining evidence and contextual relationships.</li>
+      </ul>
+
+      <h2>Reader Guidance</h2>
+      <p>
+        If you use Ocean Liner GPT directly, treat it as a starting point. Use is completely optional and voluntary. Ask it for sources, ask it what would change its conclusion, and use it to build a verification plan. Do not treat it as authentication, certification, or final word. The system is intentionally constrained to ocean liner–specific contexts and does not function as a general maritime or historical AI. It also does not generate illustrative images of historic ships or artifacts, as realistic imagery can be mistaken for evidence.
+      </p>
+
+      <p class="page-kicker">
+        New here? Start with <a href="/ocean-liner-collecting-guide">Ocean Liner Collecting: A Curated Guide</a> for the evidence-first framework behind the project.
+      </p>
+
+      <h2>Why Most “Ocean Liner AI” Results Are Misleading</h2>
+      <p>
+        Most “ocean liner AI” pages on the web are not research tools. They are generative systems that produce convincing text
+        without a responsibility to verify sources, distinguish evidence from narrative, or stop at “unknown” when the record is thin.
+        The result is often confident-sounding content that drifts into myth, misattribution, and invented certainty.
+      </p>
+
+      <div class="note">
+        <strong>⁂ A practical distinction:</strong> Generative output can be readable and still be unreliable.
+        In ocean liner collecting, the highest-risk failures are not obvious fakes—they are <em>plausible stories</em> presented as conclusions.
+      </div>
+
+      <ul>
+        <li><strong>Text synthesis is not evidence:</strong> a model can summarize common claims without proving any of them.</li>
+        <li><strong>“Sounds right” is a trap:</strong> maritime history is full of repeated lore that spreads through copying, not documentation.</li>
+        <li><strong>Specificity is often performative:</strong> exact dates, ship names, and “salvage” narratives can be invented or uncheckable.</li>
+        <li><strong>Attribution gets upgraded by accident:</strong> “White Star Line” becomes “Titanic,” “era-correct” becomes “from the ship.”</li>
+        <li><strong>Limits are rarely stated:</strong> responsible research includes uncertainty, scope boundaries, and refusal to over-claim.</li>
+      </ul>
+
+      <p>
+        Ocean Liner Curator treats AI as a <em>constrained research aid</em> rather than a content engine: it is useful for organizing questions,
+        spotting weak claim structures, and pointing readers toward evidence standards—but it does not replace primary documentation.
+        For the site’s evidence framework, see <a href="/evidence">What Counts as Evidence in Ocean Liner Collecting?</a> and
+        <a href="/sources">Sources &amp; Standards</a>.
+      </p>
+
+      <div class="note">
+        ⁂ If you have a specific artifact or claim you want to evaluate, start with:
+        <a href="/identify">How to Identify Authentic Ocean Liner Memorabilia</a> and
+        <a href="/evidence">What Counts as Evidence in Ocean Liner Collecting?</a>.
+        The project’s standard approach is to move from <em>claims</em> → <em>evidence types</em> → <em>verification</em>.
+      </div>
+
+      <section aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently Asked Questions About “Ocean Liner AI”</h2>
+
+        <div class="note">
+          <p style="margin:0 0 0.55rem 0;"><strong>⟡ What does “ocean liner AI” mean on this site?</strong></p>
+          <p style="margin:0;">
+            ⟡ Here it means AI used as a <em>constrained research aid</em>: a tool for organizing questions, testing claim logic,
+            and reinforcing evidence-first standards. It is not a substitute for archives, museums, or primary documentation.
+          </p>
+        </div>
+
+        <div class="note">
+          <p style="margin:0 0 0.55rem 0;"><strong>⟡ Is Ocean Liner AI a generative content tool?</strong></p>
+          <p style="margin:0;">
+            ⟡ No. The goal is not to generate stories about ships. The goal is to help readers evaluate evidence, provenance claims,
+            and attribution limits without drifting into certainty that the record can’t support.
+          </p>
+        </div>
+
+        <div class="note">
+          <p style="margin:0 0 0.55rem 0;"><strong>⟡ Can AI authenticate or “confirm” an artifact?</strong></p>
+          <p style="margin:0;">
+            ⟡ Not by itself. Authentication requires object-level examination and, ideally, documentation. AI can help you ask better questions
+            and identify weak claim structures, but it cannot replace primary evidence.
+            Start with <a href="/identify">How to Identify Authentic Ocean Liner Memorabilia</a>.
+          </p>
+        </div>
+
+        <div class="note">
+          <p style="margin:0 0 0.55rem 0;"><strong>⟡ Why are famous-ship claims especially risky?</strong></p>
+          <p style="margin:0;">
+            ⟡ Fame increases misattribution. Repeated lore, seller incentives, and “looks like” reasoning push objects toward the most famous name.
+            See <a href="/attribution">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</a>.
+          </p>
+        </div>
+
+        <div class="note">
+          <p style="margin:0 0 0.55rem 0;"><strong>⟡ What should I do when the evidence is limited?</strong></p>
+          <p style="margin:0;">
+            ⟡ Stop where the record stops. “Unknown” can be the most responsible conclusion.
+            See <a href="/unknown">When Evidence Is Limited: Why “Unknown” Is a Responsible Conclusion</a>.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Note: Ocean Liner Curator’s use of AI-assisted tools is intentionally limited and method-bound. Ocean Liner GPT operates within the same evidence-first framework described in Sources &amp; Standards, and does not substitute for archival research or curatorial judgment. Where AI contributes
+          to drafting or analysis, the site’s standards remain unchanged: evidence-first reasoning, conservative attribution, and
+          clear labeling of uncertainty. Accuracy depends on the quality of sources provided and the user’s interpretation of results, not on the system alone.
+        </p>
+        <p>
+          Ocean Liner GPT is not designed to appraise objects, assess market value, or advise on purchasing decisions.
+        </p>
+
+        <section class="cta" aria-label="Primary actions">
+          <div class="actions">
+            <a class="button secondary"
+               href="https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt"
+               target="_blank"
+               rel="noopener"
+               onclick="return confirm('You are leaving Ocean Liner Curator and opening an external site (ChatGPT) in a new tab. Continue?');">
+              Open Ocean Liner GPT
+            </a>
+            <a class="button secondary" href="/">Home</a>
+          </div>
+        </section>
+
+        <img class="flags-footer" src="/engraved-star-laurel.PNG" alt="" aria-hidden="true" />
+
+        <p class="copyright">
+          © <span id="year"></span> Ocean Liner Curator.
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+  <!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+  <script>
+    window.addEventListener('load', function() {
+      const c = document.querySelector('.container');
+      if (!c) return;
+      c.style.transform = 'translateZ(0)';
+      requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+          c.style.transform = '';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

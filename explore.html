@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Explore Ocean Liners — Ocean Liner Curator</title>
+  <meta name="description" content="Start exploring Ocean Liner Curator: ship guides, research collections, collector’s notebook essays, and evidence-first liner history built for curious readers and serious enthusiasts alike." />
+  <link rel="canonical" href="https://www.oceanliners.net/explore/" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Explore Ocean Liners — Ocean Liner Curator" />
+  <meta property="og:description" content="A curated starting point for ship guides, research collections, collector’s notebook essays, and evidence-first ocean liner history." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.oceanliners.net/explore/" />
+  <meta property="og:image" content="https://www.oceanliners.net/ships/luxury-liner-hero.WEBP" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Explore Ocean Liners — Ocean Liner Curator" />
+  <meta name="twitter:description" content="A curated starting point for ship guides, research collections, collector’s notebook essays, and evidence-first ocean liner history." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/ships/luxury-liner-hero.WEBP" />
+
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  <link rel="preload" as="image" href="/ships/luxury-liner-hero.WEBP" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "@id":"https://www.oceanliners.net/explore/#webpage",
+    "name":"Explore Ocean Liners — Ocean Liner Curator",
+    "url":"https://www.oceanliners.net/explore/",
+    "description":"A curated landing page for exploring ship guides, research collections, collector’s notebook essays, and evidence-first ocean liner history.",
+    "isPartOf":{
+      "@type":"WebSite",
+      "@id":"https://www.oceanliners.net/#website",
+      "name":"Ocean Liner Curator",
+      "url":"https://www.oceanliners.net/"
+    },
+    "about":[
+      { "@type":"Thing", "name":"Ocean liners" },
+      { "@type":"Thing", "name":"Maritime history" },
+      { "@type":"Thing", "name":"Ship guides" },
+      { "@type":"Thing", "name":"Collecting and attribution" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --bg-2:#0d1615;
+      --panel:rgba(15,27,25,0.78);
+      --panel-strong:rgba(15,27,25,0.9);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --accent-2:#d7c08a;
+      --border:rgba(191,164,106,0.26);
+      --border-strong:rgba(191,164,106,0.38);
+      --shadow:rgba(0,0,0,0.58);
+      --link:rgba(209,187,134,0.96);
+      --maxw:1120px;
+      --contentw:900px;
+      --radius:22px;
+      --radius-sm:16px;
+      --glass-blur:blur(2px);
+    }
+
+    *{ box-sizing:border-box; }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(191,164,106,0.08), transparent 0 28%),
+        radial-gradient(circle at 20% 18%, rgba(255,255,255,0.03), transparent 0 18%),
+        linear-gradient(180deg, #0c1413 0%, #0a1110 100%);
+      font-family:"Spectral", serif;
+      line-height:1.7;
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.16;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size:22px 22px, 22px 22px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.7), transparent 90%);
+      -webkit-mask-image:linear-gradient(to bottom, rgba(0,0,0,.7), transparent 90%);
+    }
+
+    
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+    }
+
+    a:hover{
+      color:#ecd9ab;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    .page-shell{
+      position:relative;
+      z-index:1;
+      width:min(var(--maxw), calc(100% - 1.4rem));
+      margin:0 auto;
+      padding:1rem 0 2.5rem;
+    }
+
+    .container{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:30px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+        var(--panel);
+      backdrop-filter:var(--glass-blur);
+      -webkit-backdrop-filter:var(--glass-blur);
+      box-shadow:
+        0 22px 60px var(--shadow),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(120deg,
+          rgba(255,255,255,0.05) 0%,
+          rgba(255,255,255,0.015) 22%,
+          transparent 48%);
+      opacity:.35;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background-image:url("/tile12.png");
+      background-size:280px auto;
+      opacity:1;
+      mix-blend-mode:screen;
+    }
+
+    .hero{
+      position:relative;
+      display:grid;
+      grid-template-columns:1.18fr .82fr;
+      gap:1.4rem;
+      align-items:stretch;
+      padding:1.4rem;
+      border-bottom:1px solid rgba(191,164,106,0.14);
+      min-height:520px;
+    }
+
+    .hero-copy,
+    .hero-visual{
+      position:relative;
+      min-width:0;
+    }
+
+    .hero-copy{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:0 1rem 1.5rem 1.4rem;
+      z-index:2;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.65rem;
+      width:max-content;
+      max-width:100%;
+      margin:0 0 1rem;
+      padding:.45rem .85rem;
+      border:1px solid rgba(191,164,106,0.30);
+      border-radius:999px;
+      background:rgba(191,164,106,0.08);
+      color:var(--accent-2);
+      font-size:.78rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      line-height:1.15;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .eyebrow::before{
+      content:"✦";
+      font-size:.8rem;
+      opacity:.92;
+    }
+
+    h1{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+     font-size:clamp(2.25rem, 5.1vw, 4.2rem);
+      line-height:1.08;
+      letter-spacing:-0.03em;
+      color:#f0e8d7;
+      text-wrap:balance;
+      text-shadow:0 2px 18px rgba(0,0,0,0.26);
+    }
+
+    .hero-sub{
+      max-width:42rem;
+      margin:1.2rem 0 0;
+      font-size:1.08rem;
+      color:var(--muted);
+    }
+
+    .hero-rule{
+      width:160px;
+      height:2px;
+      margin:1.3rem 0 1.15rem;
+      background:linear-gradient(90deg, var(--accent), transparent);
+      opacity:.88;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.9rem;
+      margin:1.5rem 0 0;
+    }
+
+    .hero-note{
+      max-width:46rem;
+      margin:1rem 0 0;
+      color:#cdbf9c;
+      font-size:.96rem;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.55rem;
+      min-height:48px;
+      padding:.82rem 1.15rem;
+      border-radius:14px;
+      border:1px solid rgba(0,0,0,0.32);
+      font-weight:600;
+      letter-spacing:.01em;
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+      box-shadow:0 8px 20px rgba(0,0,0,0.26);
+      text-decoration:none;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      text-decoration:none;
+    }
+
+    .btn-primary{
+      color:#1b1710;
+      background:linear-gradient(180deg, #dbc791 0%, var(--accent) 100%);
+      border-color:rgba(0,0,0,0.28);
+    }
+
+    .btn-primary:hover{
+      background:linear-gradient(180deg, #e2d09f 0%, #c7ad72 100%);
+      color:#17120b;
+      box-shadow:0 12px 26px rgba(0,0,0,0.3);
+    }
+
+    .btn-secondary{
+      color:var(--text);
+      background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border:1px solid var(--border-strong);
+    }
+
+    .btn-secondary:hover{
+      border-color:rgba(191,164,106,0.5);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      color:#f1ead9;
+    }
+
+    .hero-visual{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100%;
+      padding:.6rem;
+    }
+
+    .hero-frame{
+      position:relative;
+      width:100%;
+      height:100%;
+      min-height:420px;
+      border-radius:26px;
+      overflow:hidden;
+      border:1px solid rgba(191,164,106,0.30);
+      background:#0b1211;
+      box-shadow:
+        0 22px 50px rgba(0,0,0,0.36),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .hero-frame::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.10), rgba(10,17,16,0.58)),
+        radial-gradient(circle at 20% 18%, rgba(255,255,255,0.14), transparent 0 30%);
+      z-index:2;
+      pointer-events:none;
+    }
+
+    .hero-frame::after{
+      content:"";
+      position:absolute;
+      inset:14px;
+      border:1px solid rgba(191,164,106,0.16);
+      border-radius:18px;
+      pointer-events:none;
+      z-index:3;
+    }
+
+    .hero-frame img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:saturate(.95) contrast(1.02);
+    }
+
+    .hero-plate{
+      position:absolute;
+      left:1.1rem;
+      right:1.1rem;
+      bottom:1.1rem;
+      z-index:4;
+      padding:.9rem 1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:16px;
+      background:rgba(10,17,16,0.56);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.25);
+    }
+
+    .hero-plate-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:1rem;
+      color:#f1ead7;
+    }
+
+    .hero-plate p{
+      margin:.35rem 0 0;
+      font-size:.92rem;
+      color:var(--muted);
+      line-height:1.55;
+    }
+
+    .main{
+      padding:0 1.4rem 1.5rem;
+    }
+
+    section{
+      position:relative;
+      padding:2.15rem 0 0;
+    }
+
+    .section-head{
+      max-width:48rem;
+      margin:0 auto 1.2rem;
+      text-align:center;
+      padding:0 1rem;
+    }
+
+    .section-kicker{
+      display:inline-block;
+      margin:0 0 0;
+      color:var(--accent-2);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:clamp(1.55rem, 3vw, 2.35rem);
+    }
+
+    h2{
+      margin:0 0 .8rem;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.45rem, 3vw, 2.25rem);
+      letter-spacing:-0.02em;
+      color:#f0e7d6;
+      text-wrap:balance;
+      text-align:center;
+      align-items:center;
+    }
+
+    .section-head p{
+      margin:0 auto;
+      max-width:48rem;
+      color:var(--muted);
+      font-size:1rem;
+    }
+
+    
+
+    .path-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:1rem;
+      margin-top:0.5rem;
+    }
+
+    
+    .path-card{
+      display:flex;
+      flex-direction:column;
+      min-height:250px;
+      padding:1.2rem 1.15rem 1.15rem;
+        background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+    }
+    
+    .path-card::after{
+  content:"➾";
+  position:absolute;
+  top:.9rem;
+  right:.95rem;
+  font-size:1.25rem;
+  color:rgba(240,231,214,0.68);
+  opacity:.9;
+  transition:transform .18s ease, color .18s ease;
+}
+
+
+
+    .path-card:hover{
+      transform:translateY(-3px);
+      border-color:rgba(191,164,106,0.42);
+      box-shadow:
+        0 16px 32px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015)),
+        rgba(14,24,23,0.84);
+    }
+
+    .path-top{
+      display:flex;
+      align-items:flex-start;
+      gap:.9rem;
+      margin-bottom:.8rem;
+    }
+
+    .path-icon{
+      flex:0 0 auto;
+      width:2.15rem;
+      height:2.15rem;
+      display:grid;
+      place-items:center;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.30);
+      background:rgba(191,164,106,0.09);
+      color:var(--accent-2);
+      font-size:1rem;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .path-title-wrap{
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .path-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:1.22rem;
+      color:#f1ead7;
+    }
+
+    .path-sub{
+      margin:.18rem 0 0;
+      color:#cdbf9c;
+      font-size:.86rem;
+      letter-spacing:.02em;
+    }
+
+    .path-card p{
+      margin:0;
+      color:var(--muted);
+      flex:1 1 auto;
+    }
+
+    .path-link{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      width:max-content;
+      margin-top:1rem;
+      font-weight:600;
+      color:#ecd8a7;
+    }
+    
+    
+.path-link::after{
+  content:"»";
+  transition:transform .18s ease;
+}
+    
+
+    .path-card:hover .path-link::after{
+      transform:translateX(2px);
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0, 1fr));
+      gap:1rem;
+      margin-top:1.2rem;
+    }
+
+    .stat-card{
+      padding:1.2rem 1rem;
+      text-align:center;
+        background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+    }
+
+    .stat-num{
+      display:block;
+      margin:0 0 .35rem;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1rem, 3.4vw, 1.85rem);
+      color:#f1ead7;
+      line-height:1.1;
+    }
+
+    .stat-label{
+      display:block;
+      font-size:.82rem;
+      color:var(--muted);
+    }
+
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(5, minmax(0, 1fr));
+      gap:1rem;
+      margin-top:1.2rem;
+    }
+
+    .feature-card{
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+        background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+    }
+
+    .feature-card:hover{
+      transform:translateY(-3px);
+      border-color:rgba(191,164,106,0.42);
+      box-shadow:
+        0 16px 32px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .feature-thumb{
+      position:relative;
+      aspect-ratio:4 / 3;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.12);
+      background:#0d1615;
+    }
+
+    .feature-thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .45s ease;
+      filter:saturate(.95) contrast(1.03);
+    }
+
+    .feature-card:hover .feature-thumb img{
+      transform:scale(1.04);
+    }
+
+    .feature-thumb::after{
+      content:"";
+      position:absolute;
+      inset:10px;
+      border:1px solid rgba(191,164,106,0.16);
+      border-radius:14px;
+      pointer-events:none;
+    }
+
+    .feature-body{
+      display:flex;
+      flex-direction:column;
+      gap:.45rem;
+      padding:1rem .95rem 1rem;
+      flex:1 1 auto;
+    }
+
+    .feature-label{
+      font-size:.72rem;
+      letter-spacing:.17em;
+      text-transform:uppercase;
+      color:var(--accent-2);
+    }
+
+    .feature-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:1.02rem;
+      color:#f1ead7;
+    }
+
+    .feature-body p{
+      margin:0;
+      color:var(--muted);
+      font-size:.94rem;
+      flex:1 1 auto;
+    }
+
+    .feature-link{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      margin-top:.2rem;
+      font-weight:600;
+      color:#ecd8a7;
+    }
+
+    .feature-link::after{
+      content:"»";
+    }
+
+    .highlights-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:1rem;
+      margin-top:1.2rem;
+    }
+
+    .highlight-card{
+      padding:1.2rem 1.15rem;
+        background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+    }
+
+    .highlight-card h3{
+      margin:0 0 .55rem;
+      font-family:"Libre Baskerville", serif;
+      font-size:1.15rem;
+      color:#f1ead7;
+    }
+
+    .highlight-card p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    .mini-list{
+      margin:.9rem 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:.6rem;
+    }
+
+    .mini-list li{
+      position:relative;
+      padding-left:1rem;
+      color:var(--muted);
+    }
+
+    .mini-list li::before{
+      content:"•";
+      position:absolute;
+      left:0;
+      color:var(--accent);
+    }
+
+    .mini-list a{
+      color:#ecd8a7;
+    }
+
+    .closing-card{
+      max-width:780px;
+      margin:1.2rem auto 0;
+      padding:1.35rem 1.25rem;
+      text-align:center;
+        background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+    }
+
+    .closing-card p{
+      margin:.25rem 0 0;
+      color:var(--muted);
+    }
+
+    .closing-actions{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:.85rem;
+      margin-top:1rem;
+    }
+
+    footer{
+      position:relative;
+      margin:2rem auto 0;
+      text-align:center;
+      padding:0 1rem 1.15rem;
+      color:var(--muted);
+      font-size:.95rem;
+      z-index:2;
+    }
+
+    .footer-star{
+      position:relative;
+      text-align:center;
+      color:var(--accent);
+      font-size:.9rem;
+      margin:0 0 1rem;
+      line-height:1;
+      opacity:0.85;
+    }
+
+    .footer-star::before,
+    .footer-star::after{
+      content:"";
+      position:absolute;
+      top:50%;
+      width:48px;
+      height:1px;
+      background:var(--accent);
+      opacity:0.85;
+    }
+
+    .footer-star::before{
+      right:calc(50% + 18px);
+    }
+
+    .footer-star::after{
+      left:calc(50% + 18px);
+    }
+
+    .copyright{
+      margin:0;
+    }
+
+    @media (max-width: 1100px){
+      .feature-grid{
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 920px){
+      .hero{
+        grid-template-columns:1fr;
+        min-height:auto;
+      }
+
+      .hero-copy{
+        padding:0 .6rem .2rem;
+      }
+
+      .hero-visual{
+        padding:0 .1rem .4rem;
+      }
+
+      .hero-frame{
+        min-height:340px;
+      }
+
+      .path-grid,
+      .stats-grid,
+      .highlights-grid{
+        grid-template-columns:1fr;
+      }
+
+      .feature-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px){
+      .page-shell{
+        width:min(var(--maxw), calc(100% - .8rem));
+        padding:.45rem 0 1.3rem;
+      }
+
+      .container{
+        border-radius:24px;
+      }
+
+      .hero{
+        padding:1rem;
+        gap:1rem;
+      }
+
+      .main{
+        padding:0 1rem 1rem;
+      }
+
+      section{
+        padding-top:1.8rem;
+      }
+
+      .hero-actions,
+      .closing-actions{
+        flex-direction:column;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .feature-grid{
+        grid-template-columns:1fr;
+      }
+
+      .path-grid{
+        grid-template-columns:1fr;
+      }
+
+      .stats-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-frame{
+        min-height:280px;
+      }
+
+      .hero-plate{
+        left:.85rem;
+        right:.85rem;
+        bottom:.85rem;
+      }
+    }
+    
+    .path-card,
+.feature-card,
+.stat-card,
+.highlight-card,
+.closing-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+  border:1px solid var(--border);
+  
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.32),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+}
+
+.path-card::before,
+.feature-card::before,
+.stat-card::before,
+.highlight-card::before,
+.closing-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(255,255,255,0.05) 0%,
+      rgba(255,255,255,0.015) 26%,
+      transparent 56%
+    );
+  opacity:.28;
+}
+
+.path-card{
+  display:flex;
+  flex-direction:column;
+  min-height:250px;
+  padding:1.2rem 1.15rem 1.15rem;
+}
+
+.stat-card{
+  padding:1.2rem 1rem;
+  text-align:center;
+}
+
+.feature-card{
+  display:flex;
+  flex-direction:column;
+  min-height:100%;
+}
+
+.highlight-card{
+  padding:1.2rem 1.15rem;
+}
+
+.closing-card{
+  max-width:780px;
+  margin:1.2rem auto 0;
+  padding:1.35rem 1.25rem;
+  text-align:center;
+}
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+  
+  <style> h2{
+      margin:0 0 0;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.45rem, 3vw, 2.25rem);
+      letter-spacing:-0.02em;
+      color:#f0e7d6;
+      text-wrap:balance;
+      text-align:center;
+      align-items:center;
+    } 
+    
+    .container h2{
+    margin: 0 auto 0.7rem;
+    }
+    
+    .section-star{
+  display:inline-block;
+  color:#f0cf58;
+  text-shadow:
+    0 0 6px rgba(240,207,88,0.3),
+    0 0 12px rgba(240,207,88,0.18);
+}
+      .memorial-pin{
+    --rx: 0deg;
+    --ry: 0deg;
+    --tx: 0px;
+    --ty: 0px;
+    --scale: 1;
+
+    position:relative;
+    display:block;
+    opacity:0.78;
+    width:min(260px, 100%);
+    margin:1rem auto;
+    margin-bottom:5rem;
+    text-decoration:none;
+    -webkit-tap-highlight-color:transparent;
+    perspective:1000px;
+    transform-style:preserve-3d;
+    overflow:visible;
+    isolation:isolate;
+  }
+  
+  .memorial-pin{
+  --accent: #bfa46a;
+
+  /* derived brass tones */
+  --accent-bright: #d7c08a;
+  --accent-hot: #f2dda8;
+}
+
+  .memorial-pin-glow{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    border-radius:50%;
+    z-index:0;
+    transform-origin:center;
+    will-change:transform, opacity, filter;
+    mix-blend-mode:screen;
+  }
+
+  /* outer ambient aura */
+  .memorial-pin-glow-back{
+    inset:-34px;
+    background:
+    radial-gradient(circle,
+      rgba(191,164,106,0.00) 0%,
+      rgba(191,164,106,0.12) 26%,
+      rgba(191,164,106,0.18) 42%,
+      rgba(191,164,106,0.10) 58%,
+      rgba(191,164,106,0.04) 72%,
+      transparent 84%);
+    opacity:0.30;
+    filter:blur(14px);
+    animation:emberBack 7.2s ease-in-out infinite;
+  }
+
+  /* warmer middle breathing ring */
+  .memorial-pin-glow-mid{
+    inset:-20px;
+      background:
+    radial-gradient(circle,
+      rgba(215,192,138,0.00) 0%,
+      rgba(215,192,138,0.22) 24%,
+      rgba(191,164,106,0.32) 42%,
+      rgba(191,164,106,0.14) 60%,
+      transparent 78%);
+    opacity:0.40;
+    filter:blur(10px);
+    animation:emberMid 5.6s ease-in-out infinite;
+  }
+
+  /* brighter core flicker */
+  .memorial-pin-glow-core{
+    inset:-8px;
+    background:
+    radial-gradient(circle,
+      rgba(242,221,168,0.00) 0%,
+      rgba(242,221,168,0.30) 18%,
+      rgba(215,192,138,0.40) 34%,
+      rgba(191,164,106,0.20) 52%,
+      transparent 72%);
+    opacity:0.46;
+    filter:blur(6px);
+    animation:emberCore 4.4s ease-in-out infinite;
+  }
+  
+  .memorial-pin-glow-back { transform:translateY(18px); }
+.memorial-pin-glow-mid  { transform:translateY(14px); }
+.memorial-pin-glow-core { transform:translateY(10px); }
+
+.memorial-pin-glow-core{
+  filter: blur(6px) brightness(1.08);
+}
+
+.memorial-pin-glow-mid{
+  filter: blur(10px) brightness(1.04);
+}
+
+  .memorial-pin img{
+    position:relative;
+    z-index:2;
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    transform-style:preserve-3d;
+    will-change:transform, filter;
+    transform:
+      rotateX(var(--rx))
+      rotateY(var(--ry))
+      translateX(var(--tx))
+      translateY(var(--ty))
+      scale(var(--scale));
+    filter:
+      drop-shadow(0 8px 14px rgba(0,0,0,0.34))
+      drop-shadow(0 0 10px rgba(191,164,106,0.12));
+    transition:
+      transform 140ms ease,
+      filter 140ms ease;
+  }
+
+  .memorial-pin:hover img,
+  .memorial-pin:focus-visible img{
+    filter:
+      drop-shadow(0 12px 22px rgba(0,0,0,0.42))
+      drop-shadow(0 0 16px rgba(191,164,106,0.20));
+  }
+
+ @keyframes emberBack{
+  0%,100%{
+    opacity:0.26;
+    transform:translateY(18px) scale(0.94);
+  }
+  50%{
+    opacity:0.62;
+    transform:translateY(18px) scale(1.12);
+  }
+}
+
+  @keyframes emberMid{
+  0%,100%{
+    opacity:0.30;
+    transform:translateY(14px) scale(0.96);
+  }
+  50%{
+    opacity:0.74;
+    transform:translateY(14px) scale(1.08);
+  }
+}
+
+@keyframes emberCore{
+  0%,100%{
+    opacity:0.34;
+    transform:translateY(10px) scale(0.98);
+  }
+  50%{
+    opacity:0.86;
+    transform:translateY(10px) scale(1.05);
+  }
+}
+
+  @media (max-width: 600px){
+    .memorial-pin{
+      width:min(200px, 100%);
+      margin:22px auto;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .memorial-pin-glow{
+      animation:none;
+      opacity:0.42;
+      transform:none;
+    }
+
+    .memorial-pin img{
+      transform:none !important;
+    }
+  }
+
+  
+.memorial-pin-caption{
+  display:block;
+  margin-top:1.5rem;
+  margin-bottom:0.75rem;
+  text-align:center;
+  font: 0.75rem/1.2 "Libre Baskerville", serif;
+  letter-spacing:.08em;
+  color:rgba(191,164,106,0.78);
+  text-transform:uppercase;
+}
+    
+        .bottom-hero{
+      padding:1.2rem 1.4rem 0;
+    }
+
+    .bottom-hero-frame{
+      position:relative;
+      min-height:360px;
+      border-radius:26px;
+      overflow:hidden;
+      border:1px solid rgba(191,164,106,0.28);
+      background:#0b1211;
+      box-shadow:
+        0 22px 50px rgba(0,0,0,0.34),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .bottom-hero-frame::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    /* softer vertical control — mostly transparent */
+    linear-gradient(
+      180deg,
+      rgba(10,17,16,0.04) 0%,
+      rgba(10,17,16,0.12) 45%,
+      rgba(10,17,16,0.32) 85%,
+      rgba(10,17,16,0.42) 100%
+    ),
+
+    /* centered glow around the dome light */
+    radial-gradient(
+      circle at 50% 38%,
+      rgba(255, 232, 180, 0.22),
+      rgba(255, 232, 180, 0.10) 18%,
+      transparent 40%
+    );
+}
+
+    .bottom-hero-frame::after{
+      content:"";
+      position:absolute;
+      inset:14px;
+      border:1px solid rgba(191,164,106,0.16);
+      border-radius:18px;
+      pointer-events:none;
+      z-index:3;
+    }
+
+    .bottom-hero-frame img{
+      width:100%;
+      height:100%;
+      min-height:360px;
+      object-fit:cover;
+      filter:saturate(.95) contrast(1.03);
+    }
+
+    .bottom-hero-overlay{
+      position:absolute;
+      left:1.2rem;
+      right:1.2rem;
+      bottom:1.2rem;
+      z-index:4;
+      max-width:760px;
+      padding:1rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:18px;
+      background:rgba(10,17,16,0.56);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.24);
+    }
+
+    .bottom-hero-kicker{
+      margin:0 0 .35rem;
+      color:var(--accent-2);
+      font-size:.72rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+
+    .bottom-hero-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.35rem, 2.8vw, 2.1rem);
+      line-height:1.15;
+      color:#f1ead7;
+      text-align:left !important;
+    }
+
+    .bottom-hero-text{
+      margin:.55rem 0 0;
+      color:var(--muted);
+      max-width:48rem;
+    }
+
+    @media (max-width: 640px){
+      .bottom-hero{
+        padding:1rem 1rem 0;
+      }
+
+      .bottom-hero-frame,
+      .bottom-hero-frame img{
+        min-height:280px;
+      }
+
+      .bottom-hero-overlay{
+        left:.85rem;
+        right:.85rem;
+        bottom:.85rem;
+      }
+    }
+    
+    .hero-seasonal{
+      margin:1.2rem 0 0;
+      padding:.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:18px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+        rgba(15,27,25,0.52);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+
+    .hero-seasonal-label{
+      display:block;
+      margin:0 0 .45rem;
+      color:var(--accent-2);
+      font-size:.74rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+
+    .hero-seasonal p{
+      margin:0;
+      color:var(--muted);
+      font-size:.96rem;
+    }
+
+    .hero-seasonal-link{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      margin-top:.8rem;
+      font-weight:600;
+      color:#ecd8a7;
+    }
+
+    .hero-seasonal-link::after{
+      content:"»";
+    }
+    
+    </style>
+</head>
+
+<body>
+
+  <div id="site-header"></div>
+
+  <div class="page-shell">
+    <main class="container">
+
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+        
+       
+        
+
+
+          <div class="eyebrow">Curated starting point</div>
+
+          <h1 id="page-title">Find your route into ocean liner history</h1>
+
+          <div class="hero-rule" aria-hidden="true"></div>
+
+          <p class="hero-sub">
+            Start with Titanic, browse the ship archive, explore research collections, or follow collector-minded essays built around evidence-first standards, interpretive restraint, and a deep respect for the ships themselves.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/titanic">Explore Titanic</a>
+            <a class="btn btn-secondary" href="/ships/ships#guide">Explore Ship Guides</a>
+            <a class="btn btn-secondary" href="/collections">Browse Research Collections</a>
+          </div>
+
+          <p class="hero-note">
+            Built for both quick entry and deeper study: familiar ships, broader themes, research guidance, and design history, all organized to reward the next click.
+          </p>
+
+          <div class="hero-seasonal">
+            <span class="hero-seasonal-label">Best first steps</span>
+            <p>
+              New here? Start with <a href="/titanic">Titanic</a> for the best-known entry point, <a href="/ships/ships#guide">Ship Guides</a> for the wider archive, or <a href="/collections">Research Collections</a> for curated thematic routes.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img src="/grand-staircase-side.jpg" alt="Ocean liner interior under dramatic light, used as a hero image for Ocean Liner Curator." />
+            <div class="hero-plate">
+              <h2 class="hero-plate-title">A museum-plate approach to liner history</h2>
+              <p>
+                Built to invite exploration without losing rigor: quick paths for newcomers, deeper routes for enthusiasts, and a clear sense of what the surviving evidence actually supports.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="main">
+
+        <section aria-labelledby="choose-path">
+          <div class="section-head">
+            <div class="section-kicker">Begin here<br><span class="section-star">★</span></div>
+            <h2 id="choose-path">Choose your path</h2>
+            <p>
+              Start with the route that matches your interest best: Titanic, individual ships, broader history, collecting and attribution, or liner design and interiors.
+            </p>
+          </div>
+
+          <div class="path-grid">
+            <a class="path-card path-card-featured" href="/titanic">
+              <div class="path-top">
+                <div class="path-icon" aria-hidden="true">★</div>
+                <div class="path-title-wrap">
+                  <h3 class="path-title">Titanic</h3>
+                  <p class="path-sub">The most familiar doorway into the subject</p>
+                </div>
+              </div>
+              <p>
+                Start with the ship that brings many readers here first, then branch outward into timelines, artifacts, myths, interiors, and the larger world of ocean liner history.
+              </p>
+              <span class="path-link">Explore Titanic</span>
+            </a>
+
+            <a class="path-card" href="/ships/ships#guide">
+              <div class="path-top">
+                <div class="path-icon" aria-hidden="true">☆</div>
+                <div class="path-title-wrap">
+                  <h3 class="path-title">Ship Guides</h3>
+                  <p class="path-sub">Browse individual ocean liners</p>
+                </div>
+              </div>
+              <p>
+                The core archive: 200+ ship guides covering famous Atlantic liners, migration-era vessels, express steamers, and later passenger ships across multiple eras.
+              </p>
+              <span class="path-link">Explore ship guides</span>
+            </a>
+
+            <a class="path-card" href="/collections">
+              <div class="path-top">
+                <div class="path-icon" aria-hidden="true">☆</div>
+                <div class="path-title-wrap">
+                  <h3 class="path-title">Research Collections</h3>
+                  <p class="path-sub">Explore ocean liner history by theme</p>
+                </div>
+              </div>
+              <p>
+                Follow curated paths through Atlantic rivalry, migration, design change, national prestige liners, and the wider evolution of passenger-ship history.
+              </p>
+              <span class="path-link">Browse collections</span>
+            </a>
+
+            <a class="path-card" href="/collectors-notebook/">
+              <div class="path-top">
+                <div class="path-icon" aria-hidden="true">☆</div>
+                <div class="path-title-wrap">
+                  <h3 class="path-title">Collector’s Notebook</h3>
+                  <p class="path-sub">For objects, attribution, and evidence</p>
+                </div>
+              </div>
+              <p>
+                Read practical essays on identifying liner material, understanding attribution limits, separating service items from souvenirs, and collecting with stronger historical discipline.
+              </p>
+              <span class="path-link">Read notebook essays</span>
+            </a>
+          </div>
+        </section>
+
+        <section aria-labelledby="why-this-site">
+          <div class="section-head">
+            <div class="section-kicker">Why explore here?<br><span class="section-star">★</span></div>
+            <h2 id="why-this-site">Built for serious curiosity</h2>
+            <p>
+              Ocean Liner Curator is designed to feel welcoming without flattening the history. The aim is not maximal certainty at all costs, but careful interpretation grounded in what can actually be shown.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-num">200+</span>
+              <span class="stat-label">Ship guides spanning multiple eras</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">Evidence-first</span>
+              <span class="stat-label">Interpretive standards throughout the site</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">Curated</span>
+              <span class="stat-label">Collections built to reward deeper browsing</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">Collector-minded</span>
+              <span class="stat-label">Objects, interiors, and attribution included</span>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="featured-ships">
+          <div class="section-head">
+            <div class="section-kicker">Popular starting points<br><span class="section-star">★</span></div>
+            <h2 id="featured-ships">Start with a famous liner</h2>
+            <p>
+              These are the kinds of ships many visitors look for first. They make good entry points into the larger archive.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/ships/rms-titanic.JPG" alt="Representative ocean liner image for Titanic-related exploration." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Featured Ship</div>
+                <h3 class="feature-title">RMS Titanic</h3>
+                <p>
+                  The most famous liner in public memory, and often the place where broader liner history begins for new readers.
+                </p>
+                <a class="feature-link" href="/titanic.html">Open hub</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/ships/rms-queen-mary.JPG" alt="Representative ocean liner image for RMS Queen Mary." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Featured Ship</div>
+                <h3 class="feature-title">RMS Queen Mary</h3>
+                <p>
+                  A defining Cunard giant whose career links express service, wartime duty, and long afterlives in public memory.
+                </p>
+                <a class="feature-link" href="/ships/rms-queen-mary.html">Open guide</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/ships/ss-us.JPG" alt="Representative ocean liner image for SS United States." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Featured Ship</div>
+                <h3 class="feature-title">SS United States</h3>
+                <p>
+                  Speed, national prestige, and late-era Atlantic glamour converge in one of the most discussed modern liners.
+                </p>
+                <a class="feature-link" href="/ships/ss-us.html">Open guide</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/ships/ss-normandie.jpg" alt="Representative ocean liner image for SS Normandie." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Featured Ship</div>
+                <h3 class="feature-title">SS Normandie</h3>
+                <p>
+                  A touchstone for interwar French prestige, dramatic styling, and the cultural mythology of the great liner age.
+                </p>
+                <a class="feature-link" href="/ships/ss-normandie.html">Open guide</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/ships/ss-leviathan.JPG" alt="Representative ocean liner image for SS Leviathan." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Featured Ship</div>
+                <h3 class="feature-title">SS Leviathan</h3>
+                <p>
+                  A dedicated starting point for exploring one of the great giant liners of the early twentieth century.
+                </p>
+                <a class="feature-link" href="/ss-leviathan.html">Open hub</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="deeper-routes">
+          <div class="section-head">
+            <div class="section-kicker">Deeper routes<br><span class="section-star">★</span></div>
+            <h2 id="deeper-routes">Go beyond one ship</h2>
+            <p>
+              Some visitors want a broader interpretive path rather than a single vessel. These routes are ideal for that.
+            </p>
+          </div>
+
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <h3>Curated Guides</h3>
+              <p>
+                These pages are built to help collectors and researchers evaluate ocean liner material responsibly, with an emphasis on evidence, limits, understanding provenance, and attribution clarity. These guides are the best place to begin for readers who want a structured understanding of how to go about researching ocean liners and/or collect their material culture.
+              </p>
+              <ul class="mini-list">
+                <li><a href="/ocean-liner-collecting-guide">Ocean Liner Collecting:
+A Curated Guide »</a></li>
+                <li><a href="/ocean-liner-research">Ocean Liner Research:
+Sources, Methods, and Evidence »</a></li>
+              </ul>
+            </div>
+
+            <div class="highlight-card">
+              <h3>Ocean Liner GPT</h3>
+              <p>
+                Ocean Liner GPT is available as an AI assistant,
+applying the same evidence-first standards used throughout this site.
+              </p>
+              <ul class="mini-list">
+              <li><a href="/ocean-liner-gpt">About this tool ⓘ</a></li>
+                <li><a href="https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt">Use Ocean Liner GPT ➚</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="final-step">
+          <div class="section-head">
+            <div class="section-kicker">Continue exploring<br><span class="section-star">★</span></div>
+            <h2 id="final-step">Pick a starting point and go deeper</h2>
+            <p>
+              The best use of this page is simple: choose one doorway, then follow your curiosity from there.
+            </p>
+          </div>
+
+          <div class="closing-card">
+            <h3 style="margin:0;font-family:'Libre Baskerville', serif;font-size:1.22rem;color:#f1ead7;">A better first step than a homepage, a friendlier first step than an archive</h3>
+            <p>
+              Whether you came here because of a famous ship, a design detail, a research question, or a collecting interest, the goal is to help you find a route into the site that feels rewarding immediately.
+            </p>
+
+            <div class="closing-actions">
+              <a class="btn btn-primary" href="/titanic">Start with Titanic</a>
+              <a class="btn btn-secondary" href="/ships/ships">Enter the Ship Archive</a>
+              <a class="btn btn-secondary" href="/">Go to Homepage</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      
+            <section class="bottom-hero" aria-label="Closing image">
+        <div class="bottom-hero-frame">
+          <img src="/grand-staircase-dome.jpg" alt="dramatic closing image at the end of the page." />
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-star" aria-hidden="true">★</div>
+        <p class="copyright">© Ocean Liner Curator</p>
+      </footer>
+
+    </main>
+  </div>
+ <!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  
+    <script src="/assets/header.js" defer></script>
+       <script src="/assets/nav.js" defer></script>
+       
+</body>
+</html>

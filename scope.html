@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Scope — Ocean Liner Curator</title>
+  <meta name="description" content="Defines the scope of coverage for Ocean Liner Curator: what the project includes, what it intentionally excludes, and how boundaries are maintained over time." />
+
+  <link rel="canonical" href="https://oceanliners.net/scope" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/scope#webpage",
+    "name": "Project Scope — Ocean Liner Curator",
+    "url": "https://oceanliners.net/scope",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "Defines the scope of coverage for Ocean Liner Curator: what the project includes, what it intentionally excludes, and how boundaries are maintained over time.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Project Scope — Ocean Liner Curator">
+  <meta property="og:description" content="Defines the scope of coverage for Ocean Liner Curator: what the project includes, what it intentionally excludes, and how boundaries are maintained over time.">
+  <meta property="og:url" content="https://oceanliners.net/scope">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Project Scope — Ocean Liner Curator">
+  <meta name="twitter:description" content="Defines the scope of coverage for Ocean Liner Curator: what the project includes, what it intentionally excludes, and how boundaries are maintained over time.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+
+      /* ONE knob for the content column */
+      --prose-measure: 72ch;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    /* =========================
+       TOP MENU BAR (fallback; real nav is /assets/nav.css)
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+    .header-inner{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    /* =========================
+       HERO
+       ========================= */
+    .hero{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.22);
+      overflow:hidden;
+
+      min-height:52vh;
+      max-height:640px;
+
+      display:flex;
+      align-items:flex-end;
+
+      background:
+        linear-gradient(to bottom,
+          rgba(10,17,16,0.70) 0%,
+          rgba(10,17,16,0.05) 45%,
+          rgba(10,17,16,0.72) 100%),
+        url("/britannic-hero.png") center/cover no-repeat;
+      position:relative;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+        radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
+      opacity:0.55;
+    }
+
+    .hero-inner{
+      width:100%;
+      margin:0;
+      padding: 3.2rem 2.2rem 2.1rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .hero h1{
+      margin:0 0 0.55rem 0;
+      font-family:"Libre Baskerville", serif;
+      font-variant: small-caps;
+      letter-spacing:0.09em;
+      font-weight:400;
+      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+      text-align:left;
+    }
+
+    .hero p{
+      margin:0;
+      max-width: 70ch;
+      color: rgba(230,223,207,0.92);
+      font-size: 1.02rem;
+      line-height: 1.65;
+      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    @media (max-width: 600px){
+      .hero{ min-height: 46vh; }
+      .hero-inner{ padding: 2.6rem 1.15rem 1.65rem; }
+    }
+
+    @media (min-width: 1300px){
+      .hero{ width: min(1080px, calc(100% - 3rem)); }
+    }
+
+    /* =========================
+       CARD (plate)
+       ========================= */
+    .container{
+      width: min(780px, calc(100% - 1.5rem));
+      margin: 1.1rem auto 0;
+
+      background-color: rgba(15,27,25,0.78);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+
+      --container-pad-top: clamp(1.6rem, 4vh, 2.8rem);
+      padding: var(--container-pad-top) 2.75rem 1.5rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      pointer-events:none;
+      z-index:0;
+
+      background:
+        url("/tile8.png") repeat,
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+
+      background-size:
+        360px 360px,
+        auto, auto, auto,
+        auto,
+        auto, auto;
+
+      background-position:
+        center,
+        center, center, center,
+        center,
+        center, center;
+
+      opacity: 0.025;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    @media (max-width:520px){
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+      }
+    }
+
+    @media (min-width: 1300px){
+      .container{ width: min(1080px, calc(100% - 3rem)); }
+    }
+
+    /* ==========================================================
+       THE FIX: ONE PROSE COLUMN (headings align with paragraphs)
+       ========================================================== */
+    .prose{
+      max-width: var(--prose-measure);
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    /* Kill the old “centered block + width:100%” behavior */
+    .prose :is(h1,h2,h3,p,ul,ol,blockquote,.note,.page-kicker,footer){
+      width:auto !important;
+      max-width:none !important;
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+
+    /* Headings */
+    .prose h2{
+      position: relative;
+      margin: 2.25rem 0 0.9rem 0;
+      text-align:left;
+      font-size: 1.22rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .prose h2::after{
+      content:"";
+      display:block;
+      width:72px;
+      height:1px;
+      margin-top:0.45rem;
+      background:linear-gradient(
+        90deg,
+        var(--accent),
+        rgba(191,164,106,0.35),
+        transparent
+      );
+    }
+
+    /* Paragraphs */
+    .prose p{
+      margin:0 0 1.55rem 0;
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    /* Lists aligned to the same column (NOT inside) */
+    .prose ul,
+    .prose ol{
+      margin:0.2rem 0 1.55rem 0;
+      padding-left:1.35rem;
+      text-align:left;
+      color: var(--text);
+      list-style-position: outside;
+    }
+    .prose li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    /* Note */
+    .note{
+      margin:0.3rem 0 1.55rem 0;
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+      text-align:left;
+    }
+    .note em{ font-style:italic; }
+
+    /* Buttons + links */
+    .button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:0.9rem 1.35rem;
+  font-size:0.98rem;
+  letter-spacing:0.35px;
+  text-decoration:none;
+
+  min-height:44px; /* important */
+  line-height:1;   /* prevents font metrics shifting */
+
+  color:#0a1110;
+  background:linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
+  border:1px solid rgba(0,0,0,0.35);
+  border-radius:10px;
+
+  transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  box-shadow:0 10px 26px rgba(191,164,106,0.22);
+}
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    /* Editorial links */
+    .container a:not(.button):not(.nav-link){
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+    .container a:not(.button):not(.nav-link):hover{
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    .container a:not(.button):not(.nav-link):focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:108px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem !important;
+      opacity:0.55 !important;
+      margin-top:1.2rem !important;
+    }
+
+    @media (max-width:520px){
+      a.button{
+        width:100%;
+        padding:0.95rem 1.1rem;
+        text-align:center;
+      }
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+      .flags-footer{
+        width:92px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{ transition:none; }
+    }
+
+    @media (max-width:600px){
+      .hero h1{
+        font-size:clamp(1.35rem, 6vw, 1.75rem);
+        letter-spacing:0.07em;
+        line-height:1.18;
+      }
+      .prose h2{
+        font-size:clamp(1.05rem, 4.8vw, 1.35rem);
+        letter-spacing:0.06em;
+        line-height:1.22;
+      }
+    }
+
+    /* Large phones */
+    @media (max-width: 768px){
+      .container::after{
+        background-size:
+          300px 300px,
+          auto, auto, auto,
+          auto,
+          auto, auto;
+      }
+    }
+
+    /* Small phones */
+    @media (max-width: 480px){
+      .container::after{
+        background-size:
+          240px 240px,
+          auto, auto, auto,
+          auto,
+          auto, auto;
+        inset: -10%;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="/assets/nav.css?v=2">
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <section class="hero" aria-label="Scope hero">
+    <div class="hero-inner">
+      <h1>Project Scope</h1>
+      <p>
+        What Ocean Liner Curator includes, what it intentionally excludes, and how boundaries are maintained over time.
+      </p>
+    </div>
+  </section>
+
+  <!-- NOTE: removed "scope" class from <main> so old .scope h2 rules can’t fight you -->
+  <main class="container">
+    <div class="prose">
+
+      <p>
+        Ocean Liner Curator is a focused historical reference project dedicated to the study of ocean liners and major
+        passenger steamships. The project examines these vessels through documented sources, material culture, and design
+        history, applying consistent curatorial standards to interpretation, attribution, and presentation.
+      </p>
+
+      <p>
+        This page defines the scope of coverage for the project—what it includes, what it intentionally excludes, and how
+        boundaries are maintained over time.
+      </p>
+
+      <h2>Scope of Coverage</h2>
+      <p>
+        Ocean Liner Curator focuses on <a href="/what-are-ocean-liners">ocean liners</a> and closely related passenger vessels, primarily from the late
+        nineteenth century through the mid-twentieth century, when transoceanic passenger travel represented a distinct
+        industrial, cultural, and design tradition. <a href="/what-are-ocean-liners">What qualifies as an ocean liner?</a>
+      </p>
+
+      <p>The project covers:</p>
+      <ul>
+        <li>Ocean liners and major passenger steamships operated on scheduled routes</li>
+        <li>Ship design, construction, interiors, and technical context</li>
+        <li>Passenger experience as documented through contemporary sources</li>
+        <li>Surviving artifacts and ephemera, including printed material and fittings</li>
+        <li>Shipping lines as institutions, including branding and service standards</li>
+        <li>Primary archival material and scholarly secondary sources</li>
+      </ul>
+
+      <p>
+        Interpretation emphasizes verifiable evidence, contextual clarity, and restraint. Where possible, claims are
+        grounded in original documentation, period publications, or established historical scholarship.
+      </p>
+
+      <h2>Interpretive Focus</h2>
+      <p>
+        The project approaches ocean liners as historical objects rather than symbols. Ships are examined as designed
+        systems—technological, commercial, and cultural—rather than as vessels of myth or retrospective narrative.
+      </p>
+
+      <p>Interpretation prioritizes:</p>
+      <ul>
+        <li>Documented design intent</li>
+        <li>Contemporary usage and reception</li>
+        <li>Material survival and provenance</li>
+        <li>Historical context over modern judgment</li>
+      </ul>
+
+      <p>
+        Narrative emphasis is placed on what can be demonstrated rather than what is popularly assumed.
+      </p>
+
+      <h2>Intentional Exclusions</h2>
+      <p>
+        Ocean Liner Curator maintains a defined scope in order to preserve clarity and reliability. The following areas
+        fall outside the project’s coverage unless directly relevant to a documented passenger vessel or artifact:
+      </p>
+
+      <ul>
+        <li>Speculative reconstructions unsupported by primary or scholarly sources</li>
+        <li>Fictionalized or dramatized interpretations presented as history</li>
+        <li>Unsourced or circular claims originating from online repetition</li>
+        <li>Modern cruise ships and contemporary leisure cruising</li>
+        <li>General naval, military, or maritime history unrelated to passenger liners</li>
+        <li>Sensational or myth-driven narratives that conflict with available evidence</li>
+      </ul>
+
+      <p>
+        Exclusion reflects focus, not dismissal. Topics are omitted when sufficient documentation does not exist to support
+        responsible inclusion.
+      </p>
+
+      <h2>Evidence and Certainty</h2>
+      <p>
+        Historical evidence varies in completeness and reliability. Ocean Liner Curator does not attempt to resolve gaps
+        through conjecture. Where evidence is incomplete, interpretive language reflects varying levels of confidence
+        rather than certainty. The absence of certainty does not preclude responsible interpretation when context can be documented.
+      </p>
+
+      <div class="note">
+        ⁂ Terminology such as <em>confirmed</em>, <em>probable</em>, <em>attributed</em>, or <em>uncertain</em> is used intentionally.
+        Definitions and standards governing this language are published in the
+        <a href="/definitive-guide">Research Standards</a>,
+        which serves as the methodological foundation for all research and assessment on the site.
+      </div>
+
+      <h2>Growth and Revision</h2>
+      <p>
+        Ocean Liner Curator is an evolving project. The scope may expand where sufficient documentation exists to support
+        responsible treatment. New material is incorporated cautiously and reviewed against established standards before
+        inclusion. Core methodological standards and scope boundaries are not subject to frequent revision.
+      </p>
+
+      <p>
+        Revisions, corrections, and updates are treated as part of the historical process rather than as exceptions.
+        Interpretations may change when new evidence emerges or when earlier assumptions are no longer supported by
+        available sources.
+      </p>
+
+      <h2>Project Intent</h2>
+      <p>
+        The purpose of Ocean Liner Curator is not exhaustiveness, novelty, or narrative spectacle. The project aims to
+        provide a stable, well-sourced reference grounded in evidence, clarity, and historical restraint.
+      </p>
+
+      <p>
+        By maintaining a defined scope, the project seeks to serve readers who value accuracy over embellishment and
+        documentation over assumption.
+      </p>
+
+      <footer>
+        <p>
+          Note: This project makes limited use of AI-assisted tools to support research organization, drafting, and analysis.
+          These tools function as assistants, not authorities, and do not replace archives, museums, or primary research.
+          Where evidence is incomplete or contested, conclusions are deliberately conservative or not presented.
+          <br><br>
+          For site-wide guidance on reading AI-assisted material, see the
+          <a href="/ai-interpretation-policy">AI Interpretation Policy</a>.
+        </p>
+
+        <a class="button secondary" href="/">Home</a>
+
+        <img class="flags-footer" src="/engraved-anchor-wheel.PNG" alt="" aria-hidden="true" />
+
+        <p class="copyright">
+          © <span id="year"></span> Ocean Liner Curator.
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+  <!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>

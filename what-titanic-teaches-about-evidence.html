@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>What Titanic Teaches About Evidence — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded guide to what Titanic teaches about evidence: witness testimony, inquiry records, wreck discovery, press error, myth formation, and why historical certainty must be matched to the strength of documentation." />
+  <link rel="canonical" href="https://oceanliners.net/titanic-evidence" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/titanic-evidence#webpage",
+    "name": "What Titanic Teaches About Evidence — Ocean Liner Curator",
+    "url": "https://oceanliners.net/titanic-evidence",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "A curator-minded guide to what Titanic teaches about evidence: witness testimony, inquiry records, wreck discovery, press error, myth formation, and why historical certainty must be matched to the strength of documentation.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is Titanic useful as a case study in historical evidence?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because Titanic combines abundant sources with persistent uncertainty. It has witness testimony, official inquiries, newspaper coverage, photographs, technical records, modern wreck evidence, and a powerful afterlife in popular culture. That combination makes it ideal for studying how evidence is weighed rather than merely repeated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does having many sources automatically make a claim secure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Numerous weak or derivative sources do not outweigh fewer but stronger sources. Source quality, independence, timing, and evidentiary proximity matter more than raw quantity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Did the wreck solve every major Titanic debate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The wreck clarified some technical questions, including the breakup, but it did not resolve every issue involving motive, perception, sequence, or disputed testimony."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why were early Titanic newspaper reports so unreliable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because information moved through partial wireless messages, relayed reports, official statements, assumptions, and deadline pressure. Early press accounts often reflected incomplete knowledge rather than settled fact."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the safest way to write about disputed Titanic claims?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Match the language to the support. Use firm language for well-documented points, cautious language for debated claims, and preserve uncertainty where the record does not justify stronger conclusions."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JPZ291Q3RB');
+  </script>
+
+  <meta name="robots" content="index,follow">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="What Titanic Teaches About Evidence — Ocean Liner Curator">
+  <meta property="og:description" content="Witnesses, inquiries, newspapers, wreck evidence, and myth: a practical guide to what Titanic teaches about how history should be argued." />
+  <meta property="og:url" content="https://oceanliners.net/titanic-evidence">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/titanic-evidence-hero.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Titanic Teaches About Evidence — Ocean Liner Curator">
+  <meta name="twitter:description" content="A curator-minded guide to evidence, uncertainty, and myth through the case of Titanic." />
+  <meta name="twitter:image" content="https://oceanliners.net/titanic-evidence-hero.jpg">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --measure: 43rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --good:#7da07d;
+      --warn:#b98f58;
+      --danger:#b66262;
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing:-0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding:0 0 2.25rem;
+    }
+
+    .hero{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.22);
+      overflow:hidden;
+      min-height:52vh;
+      max-height:640px;
+      background:
+        linear-gradient(to bottom,
+          rgba(10,17,16,0.72) 0%,
+          rgba(10,17,16,0.14) 45%,
+          rgba(10,17,16,0.82) 100%),
+        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.12), transparent 60%),
+        url("/titanic-evidence-hero.jpg") center/cover no-repeat;
+    }
+
+    .hero-inner{
+      width:100%;
+      margin:0;
+      padding:3.2rem 2.2rem 2.1rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .hero-badge{
+      display:inline-block;
+      margin:0 0 0.8rem;
+      padding:0.35rem 0.7rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.35);
+      background:rgba(191,164,106,0.08);
+      color:rgba(230,223,207,0.9);
+      font-size:0.82rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+    }
+
+    .hero h1{
+      margin:0 0 0.55rem 0;
+      font-family:"Libre Baskerville", serif;
+      font-variant:small-caps;
+      letter-spacing:0.09em;
+      font-weight:400;
+      text-shadow:0 18px 45px rgba(0,0,0,0.45);
+      max-width:13ch;
+    }
+
+    .hero p{
+      margin:0;
+      max-width:70ch;
+      color:rgba(230,223,207,0.92);
+      font-size:1.02rem;
+      line-height:1.65;
+      text-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .container{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      background-color:rgba(15,27,25,0.78);
+      background-image:url("/tile44.png");
+      background-size:360px 360px;
+      background-position:center 38%;
+      background-repeat:repeat;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:2rem 2.4rem;
+      position:relative;
+      overflow:hidden;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    .scope p,
+    .scope ul,
+    .scope .note,
+    .scope .method-card{
+      text-align:left;
+    }
+
+    .scope h2{
+      position:relative;
+      margin:2.25rem auto 0.9rem auto;
+      max-width:var(--measure);
+      width:100%;
+      text-align:left;
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+    }
+
+    .scope h2::after{
+      content:"";
+      display:block;
+      width:72px;
+      height:1px;
+      margin-top:0.45rem;
+      background:linear-gradient(90deg, var(--accent), rgba(191,164,106,0.35), transparent);
+    }
+
+    .scope h3{
+      max-width:var(--measure);
+      margin:1.55rem auto 0.55rem auto;
+      font-size:1.03rem;
+      letter-spacing:0.02em;
+      color:#d9c593;
+      text-align:left;
+    }
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    .scope .note{
+      margin:0.9rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    .scope p a,
+    .scope li a,
+    .scope .note a,
+    .source-list a,
+    .matrix-table a,
+    .jump-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.45);
+      padding-bottom:1px;
+    }
+
+    .scope p a:hover,
+    .scope li a:hover,
+    .scope .note a:hover,
+    .source-list a:hover,
+    .matrix-table a:hover,
+    .jump-link:hover{
+      border-bottom-color:rgba(191,164,106,0.75);
+    }
+
+    .split-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:0.9rem;
+      max-width:var(--measure);
+      margin:1rem auto 1.5rem;
+    }
+
+    .mini-card,
+    .method-card,
+    .timeline-card,
+    .chart-card,
+    .matrix-table-wrap,
+    .jump-card{
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.14);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+    }
+
+    .mini-card{
+      padding:1rem 0.95rem;
+      text-align:left;
+    }
+
+    .mini-card .eyebrow{
+      display:block;
+      margin-bottom:0.35rem;
+      font-size:0.78rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:rgba(191,164,106,0.9);
+    }
+
+    .mini-card .big{
+      display:block;
+      font-size:1.24rem;
+      line-height:1.15;
+      color:var(--text);
+      margin-bottom:0.45rem;
+    }
+
+    .jump-card{
+      max-width:var(--measure);
+      margin:1.05rem auto 1.55rem auto;
+      padding:0.95rem 0.75rem 1.2rem 0.75rem;
+      background:rgba(191,164,106,0.06);
+    }
+
+    .jump-title{
+      font-variant:small-caps;
+      letter-spacing:0.10em;
+      color:rgba(191,164,106,0.95);
+      margin:0 0 0.55rem 0;
+      text-align:left;
+    }
+
+    .jump-links{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap:0.55rem;
+    }
+
+    .jump-links li{ margin:0; }
+
+    .jump-link{
+      display:flex;
+      justify-content:space-between;
+      gap:0.7rem;
+      padding:0.6rem 0.7rem 0.6rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:12px;
+      background:rgba(0,0,0,0.12);
+      position:relative;
+    }
+
+    .jump-link::before{
+      content:"";
+      position:absolute;
+      left:0.45rem;
+      top:0.55rem;
+      bottom:0.55rem;
+      width:2px;
+      border-radius:2px;
+      background:rgba(191,164,106,0.38);
+      opacity:0.75;
+    }
+
+    .jump-link .meta{
+      color:rgba(230,223,207,0.78);
+      font-size:0.9rem;
+      white-space:nowrap;
+    }
+
+    .ladder-card{
+      max-width:var(--measure);
+      margin:0.95rem auto 1.55rem auto;
+      padding:1.05rem 1.1rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:16px;
+      background:
+        radial-gradient(900px 420px at 50% 0%, rgba(255,255,255,0.04), transparent 55%),
+        rgba(191,164,106,0.06);
+      text-align:left;
+      box-shadow:0 20px 55px rgba(0,0,0,0.35);
+    }
+
+    .ladder-head{
+      display:flex;
+      flex-direction:column;
+      gap:0.25rem;
+      margin-bottom:0.8rem;
+    }
+
+    .ladder-title{
+      font-variant:small-caps;
+      letter-spacing:0.10em;
+      font-weight:600;
+      color:rgba(230,223,207,0.95);
+    }
+
+    .ladder-sub{
+      color:rgba(230,223,207,0.75);
+      font-size:0.98rem;
+      line-height:1.55;
+    }
+
+    .ladder{
+      list-style:none;
+      margin:0.75rem 0 0 0;
+      padding:0;
+      display:grid;
+      gap:0.55rem;
+    }
+
+    .rung{
+      position:relative;
+      padding:0.8rem 0.85rem 0.8rem 1.45rem;
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:14px;
+      background:rgba(0,0,0,0.14);
+    }
+
+    .rung::before{
+      content:"";
+      position:absolute;
+      left:0.42rem;
+      top:1.40rem;
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:rgba(191,164,106,0.22);
+      border:1px solid rgba(191,164,106,0.55);
+      box-shadow:0 0 0 4px rgba(191,164,106,0.06);
+    }
+
+    .rung-label{
+      font-weight:600;
+      color:rgba(230,223,207,0.96);
+      margin-bottom:0.15rem;
+    }
+
+    .rung-desc{
+      color:rgba(230,223,207,0.82);
+      line-height:1.62;
+      font-size:0.98rem;
+    }
+
+    .ladder-tag,
+    .good-badge,
+    .warn-badge,
+    .danger-badge,
+    .mixed-badge{
+      display:inline-block;
+      padding:0.22rem 0.55rem;
+      border-radius:999px;
+      font-size:0.72rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+    }
+
+    .ladder-tag{
+      border:1px solid rgba(191,164,106,0.25);
+      background:rgba(0,0,0,0.10);
+      color:rgba(230,223,207,0.78);
+      margin-top:0.1rem;
+    }
+
+    .good-badge{
+      background:rgba(125,160,125,0.14);
+      border:1px solid rgba(125,160,125,0.36);
+      color:#b8d0b8;
+    }
+
+    .warn-badge{
+      background:rgba(185,143,88,0.14);
+      border:1px solid rgba(185,143,88,0.36);
+      color:#dfc28c;
+    }
+
+    .danger-badge{
+      background:rgba(182,98,98,0.14);
+      border:1px solid rgba(182,98,98,0.36);
+      color:#d9aaaa;
+    }
+
+    .mixed-badge{
+      background:rgba(191,164,106,0.12);
+      border:1px solid rgba(191,164,106,0.36);
+      color:#d8c58f;
+    }
+
+    .matrix-table-wrap{
+      max-width:var(--measure);
+      margin:0.5rem auto 1.6rem;
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch;
+      padding:0 0.75rem;
+    }
+
+    .matrix-table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:680px;
+    }
+
+    .matrix-table th,
+    .matrix-table td{
+      padding:0.9rem 0.9rem;
+      vertical-align:top;
+      border-bottom:1px solid rgba(191,164,106,0.14);
+      text-align:left;
+      line-height:1.5;
+      overflow-wrap:break-word;
+    }
+
+    .matrix-table th{
+      font-size:0.84rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:#d7c08a;
+      background:rgba(191,164,106,0.06);
+    }
+
+    .matrix-table td:last-child,
+    .matrix-table th:last-child{
+      width:1%;
+      white-space:nowrap;
+    }
+
+    .method-grid{
+      max-width:var(--measure);
+      margin:0.9rem auto 1.55rem;
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:0.9rem;
+    }
+
+    .method-card{
+      padding:1rem;
+    }
+
+    .method-card.good{
+      border-color:rgba(125,160,125,0.34);
+      background:linear-gradient(180deg, rgba(120,160,120,0.12), rgba(10,17,16,0.18));
+    }
+
+    .method-card.warn{
+      border-color:rgba(185,143,88,0.34);
+      background:linear-gradient(180deg, rgba(185,143,88,0.12), rgba(10,17,16,0.18));
+    }
+
+    .timeline-card{
+      max-width:var(--measure);
+      margin:0.8rem auto 1.55rem;
+      padding:1rem 1rem 0.25rem;
+    }
+
+    .event{
+      display:grid;
+      grid-template-columns:minmax(110px, 140px) 1fr;
+      gap:0.9rem;
+      padding:0.85rem 0;
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+
+    .event:first-child{
+      border-top:none;
+      padding-top:0.25rem;
+    }
+
+    .year{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:0.6rem 0.7rem;
+      line-height:1.25;
+      font-size:0.78rem;
+      letter-spacing:0.12em;
+      white-space:normal;
+      overflow-wrap:anywhere;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:12px;
+      background:rgba(191,164,106,0.06);
+      color:#e2d4b0;
+    }
+
+    .tags{
+      display:flex;
+      gap:0.45rem;
+      flex-wrap:wrap;
+      margin-bottom:0.28rem;
+    }
+
+    .tag{
+      display:inline-block;
+      padding:0.16rem 0.42rem;
+      border-radius:999px;
+      font-size:0.72rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      border:1px solid rgba(191,164,106,0.24);
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.82);
+    }
+
+    .chart-card{
+      max-width:var(--measure);
+      margin:0.7rem auto 1.45rem;
+      padding:1rem 1rem 1.1rem;
+    }
+
+    .bar-group{ margin:0.9rem 0; }
+
+    .bar-label{
+      display:flex;
+      justify-content:space-between;
+      gap:1rem;
+      font-size:0.94rem;
+      margin-bottom:0.35rem;
+      color:rgba(230,223,207,0.92);
+    }
+
+    .bar-track{
+      width:100%;
+      height:14px;
+      border-radius:999px;
+      background:rgba(191,164,106,0.10);
+      overflow:hidden;
+      border:1px solid rgba(191,164,106,0.18);
+    }
+
+    .bar-fill{
+      height:100%;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(191,164,106,0.85), rgba(214,192,138,0.98));
+    }
+
+    .source-list{
+      max-width:var(--measure);
+      margin:0.4rem auto 1.4rem;
+      padding-left:1.2rem;
+      text-align:left;
+    }
+
+    .source-list li{ margin:0.5rem 0; }
+
+    .page-actions{
+      display:flex;
+      justify-content:center;
+      gap:0.65rem;
+      margin:1.5rem 0;
+      flex-wrap:wrap;
+    }
+
+    .bookmark-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      margin:1.25rem auto;
+      padding:.55rem .85rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.35);
+      background:rgba(191,164,106,0.08);
+      color:rgba(209,187,134,0.95);
+      letter-spacing:.06em;
+      font-variant:small-caps;
+      text-decoration:none;
+      cursor:pointer;
+    }
+
+    .bookmark-btn:hover{
+      background:rgba(191,164,106,0.12);
+      border-color:rgba(191,164,106,0.55);
+    }
+
+    .bookmark-pop{
+      position:fixed;
+      inset:0;
+      display:none;
+      padding:1.25rem;
+      background:rgba(0,0,0,0.55);
+      backdrop-filter:blur(3px);
+      z-index:9999;
+    }
+
+    .bookmark-pop[data-open="true"]{
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+    }
+
+    .bookmark-pop-inner{
+      width:min(520px, 100%);
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.28);
+      background:rgba(10,17,16,0.96);
+      box-shadow:0 14px 40px rgba(0,0,0,0.55);
+      padding:1rem 1rem .9rem 1rem;
+    }
+
+    .bookmark-pop-title{
+      color:rgba(191,164,106,0.95);
+      font-variant:small-caps;
+      letter-spacing:.10em;
+      margin-bottom:.55rem;
+    }
+
+    .bookmark-pop-body{
+      color:rgba(235,231,222,0.90);
+      line-height:1.45;
+      font-size:.98rem;
+    }
+
+    .bookmark-pop-actions{
+      display:flex;
+      gap:.6rem;
+      justify-content:flex-end;
+      margin-top:.9rem;
+    }
+
+    .bookmark-mini{
+      padding:.45rem .75rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.35);
+      background:rgba(191,164,106,0.08);
+      color:rgba(209,187,134,0.95);
+      cursor:pointer;
+    }
+
+    .bookmark-mini:hover{
+      background:rgba(191,164,106,0.12);
+      border-color:rgba(191,164,106,0.55);
+    }
+
+    .standards-badge{
+      margin:1.25rem auto 0;
+      text-align:center;
+    }
+
+    .standards-badge a{
+      display:inline-block;
+      padding:0.3rem 0.7rem;
+      font-size:0.75rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:rgba(230,223,207,0.85);
+      border:1px solid rgba(191,164,106,0.45);
+      border-radius:999px;
+      text-decoration:none;
+      background:rgba(191,164,106,0.05);
+    }
+
+    .standards-badge a:hover{ background:rgba(191,164,106,0.12); }
+
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:160px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      display:block;
+      text-align:center;
+      width:100%;
+      font-size:0.72rem;
+      opacity:0.55;
+      margin:0.8rem auto 0;
+      white-space:nowrap;
+    }
+
+    @media (min-width:1300px){
+      .container{ width:min(1080px, calc(100% - 3rem)); }
+      .hero{ width:min(1080px, calc(100% - 3rem)); }
+    }
+
+    @media (max-width:760px){
+      .split-grid,
+      .method-grid{
+        grid-template-columns:1fr;
+      }
+
+      .event{
+        grid-template-columns:1fr;
+        gap:0.55rem;
+      }
+
+      .matrix-table-wrap{
+        overflow:visible;
+        padding:0;
+        border:none;
+        background:transparent;
+        box-shadow:none;
+      }
+
+      .matrix-table{
+        min-width:0;
+        width:100%;
+        border-collapse:separate;
+        border-spacing:0;
+      }
+
+      .matrix-table thead{ display:none; }
+
+      .matrix-table,
+      .matrix-table tbody,
+      .matrix-table tr,
+      .matrix-table td{
+        display:block;
+        width:100%;
+      }
+
+      .matrix-table tr{
+        margin:0 0 1rem 0;
+        padding:0.95rem 1rem;
+        border:1px solid rgba(191,164,106,0.22);
+        border-radius:14px;
+        background:rgba(0,0,0,0.14);
+        box-shadow:0 10px 24px rgba(0,0,0,0.32);
+      }
+
+      .matrix-table td{
+        border:none;
+        padding:0.35rem 0 0.65rem 0;
+      }
+
+      .matrix-table td:last-child{
+        padding-bottom:0;
+        white-space:normal;
+        border-top:1px solid rgba(191,164,106,0.14);
+        padding-top:0.6rem;
+        margin-top:0.4rem;
+      }
+
+      .matrix-table td::before{
+        display:block;
+        margin-bottom:0.2rem;
+        font-size:0.72rem;
+        letter-spacing:0.1em;
+        text-transform:uppercase;
+        color:rgba(191,164,106,0.9);
+      }
+
+      .matrix-table td:nth-child(1)::before{ content:"Case"; }
+      .matrix-table td:nth-child(2)::before{ content:"What the evidence looked like"; }
+      .matrix-table td:nth-child(3)::before{ content:"What later study changed"; }
+      .matrix-table td:nth-child(4)::before{ content:"Lesson"; }
+    }
+
+    @media (max-width:600px){
+      .hero{ min-height:46vh; }
+      .hero-inner{ padding:2.6rem 1.15rem 1.65rem; }
+    }
+
+    @media (max-width:520px){
+      .button{ width:100%; text-align:center; }
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:280px 280px;
+      }
+      .hero{ width:calc(100% - 1.5rem); }
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+      footer{
+        margin-top:1rem;
+        font-size:0.78rem;
+      }
+      .flags-footer{
+        width:160px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+      .ladder-card{ padding:0.95rem 0.95rem; }
+      .rung{ padding-left:1.35rem; }
+      .rung::before{ left:0.37rem; }
+      .jump-link{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .jump-link .meta{ white-space:normal; }
+    }
+
+    @media print{
+      body{
+        background:#fff;
+        color:#111;
+        padding:0;
+      }
+      .hero,
+      .container{
+        width:100%;
+        max-width:none;
+        margin:0;
+        border:none;
+        box-shadow:none;
+        background:#fff;
+        color:#111;
+      }
+      .hero{ min-height:auto; padding:0; }
+      .hero::before,
+      .hero::after,
+      .container::before,
+      .page-actions,
+      .standards-badge,
+      #site-header,
+      .flags-footer{
+        display:none !important;
+      }
+      .bookmark-btn,
+      .button.secondary{
+        display:none !important;
+      }
+      .scope h2,
+      .scope p,
+      .scope ul,
+      .scope .note,
+      .timeline-card,
+      .chart-card,
+      .matrix-table-wrap,
+      .method-grid,
+      .source-list,
+      .ladder-card,
+      .jump-card{
+        color:#111 !important;
+      }
+      a{ color:#111 !important; border-bottom-color:#888 !important; }
+    }
+    
+    footer .copyright{
+  display:block;
+  text-align:center;
+  white-space:nowrap;
+}
+
+footer .copyright span{
+  display:inline;
+}
+
+@media (max-width:760px){
+  .matrix-table-wrap{
+    overflow:visible;
+    padding:0;
+    border:none;
+    background:transparent;
+    box-shadow:none;
+  }
+
+  .matrix-table{
+    min-width:0;
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0;
+  }
+
+  .matrix-table thead{
+    display:none;
+  }
+
+  .matrix-table,
+  .matrix-table tbody,
+  .matrix-table tr,
+  .matrix-table td{
+    display:block;
+    width:100%;
+  }
+
+  .matrix-table tr{
+    margin:0 0 1rem 0;
+    padding:0.95rem 1rem;
+    border:1px solid rgba(191,164,106,0.22);
+    border-radius:14px;
+    background:rgba(0,0,0,0.14);
+    box-shadow:0 10px 24px rgba(0,0,0,0.32);
+  }
+
+  .matrix-table td{
+    border:none;
+    padding:0.35rem 0 0.65rem 0;
+    width:100% !important;
+    white-space:normal !important;
+  }
+
+  .matrix-table td:last-child{
+    border-top:1px solid rgba(191,164,106,0.14);
+    padding-top:0.6rem;
+    margin-top:0.4rem;
+  }
+
+  .matrix-table td::before{
+    display:block;
+    margin-bottom:0.2rem;
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:rgba(191,164,106,0.9);
+  }
+
+  .matrix-table td:nth-child(1)::before{ content:"Case"; }
+  .matrix-table td:nth-child(2)::before{ content:"What the evidence looked like"; }
+  .matrix-table td:nth-child(3)::before{ content:"What later study changed"; }
+  .matrix-table td:nth-child(4)::before{ content:"Lesson"; }
+
+  .good-badge,
+  .warn-badge,
+  .danger-badge,
+  .mixed-badge{
+    display:inline-flex;
+    width:auto;
+    max-width:100%;
+    white-space:normal;
+    overflow-wrap:break-word;
+    word-break:normal;
+    line-height:1.35;
+    padding:0.4rem 0.65rem;
+  }
+}
+
+.matrix-table td:last-child .good-badge,
+.matrix-table td:last-child .warn-badge,
+.matrix-table td:last-child .danger-badge,
+.matrix-table td:last-child .mixed-badge{
+  margin-top:0.15rem;
+}
+
+.page-path{
+  max-width:var(--measure);
+  margin:0 auto 1rem auto;
+  font-size:0.92rem;
+  letter-spacing:0.04em;
+  color:rgba(230,223,207,0.72);
+}
+
+.page-path a{
+  color:var(--link);
+  text-decoration:none;
+  border-bottom:1px solid rgba(191,164,106,0.45);
+  padding-bottom:1px;
+}
+
+.page-path a:hover{
+  border-bottom-color:rgba(191,164,106,0.75);
+}
+
+.continue-grid{
+  max-width:var(--measure);
+  margin:0.95rem auto 1.65rem;
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:0.9rem;
+}
+
+.continue-card{
+  display:block;
+  text-decoration:none;
+  color:var(--text);
+  border:1px solid rgba(191,164,106,0.22);
+  border-radius:14px;
+  padding:1rem;
+  background:rgba(0,0,0,0.14);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+  box-shadow:0 10px 24px rgba(0,0,0,0.32);
+  transition:transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.continue-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(191,164,106,0.45);
+  background:rgba(191,164,106,0.08);
+  color:var(--text);
+}
+
+.continue-card h3{
+  margin:0 0 0.35rem 0;
+  font-size:1rem;
+  color:var(--text);
+}
+
+.continue-card p{
+  margin:0;
+  font-size:0.95rem;
+  line-height:1.55;
+  color:rgba(230,223,207,0.84);
+}
+
+.continue-label{
+  display:inline-block;
+  margin-bottom:0.45rem;
+  font-size:0.72rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:rgba(191,164,106,0.9);
+}
+
+@media (max-width:760px){
+  .continue-grid{
+    grid-template-columns:1fr;
+  }
+}
+    
+  </style>
+
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+<div id="site-header"></div>
+
+<section class="hero" aria-label="Titanic evidence hero">
+  <div class="hero-inner">
+    <span class="hero-badge">Method, memory & proof</span>
+    <h1>What Titanic Teaches About Evidence</h1>
+    <p>
+      Why one of the most documented maritime disasters in history still requires caution, source discipline, and interpretive restraint.
+    </p>
+  </div>
+</section>
+
+<main class="container scope">
+
+<p class="page-path">
+  Part of the <a href="/titanic">Titanic topic collection</a>
+</p>
+
+  <p class="page-kicker">
+    Titanic is often treated as a solved story: a famous ship, a famous disaster, and a familiar set of conclusions. But Titanic is actually a remarkably useful lesson in how evidence works. It shows how eyewitnesses can disagree, how newspapers can harden early error into public memory, how official inquiries can clarify some questions while leaving others open, and how later discoveries can strengthen some claims without resolving every debate.
+  </p>
+
+  <div class="note">
+    <strong>⁂ Core principle:</strong> The lesson of Titanic is not that evidence is useless. It is that evidence comes in layers, and each layer supports a different level of confidence.
+  </div>
+
+  <div class="jump-card" aria-label="Related Titanic and research pages">
+    <div class="jump-title">Related paths</div>
+    <ul class="jump-links">
+  <li><a class="jump-link" href="/titanic-myths-that-persist"><span>Titanic Myths That Persist</span><span class="meta">why repetition hardens into belief »</span></a></li>
+  <li><a class="jump-link" href="/titanic-what-the-world-knew"><span>What the World Knew</span><span class="meta">news, rumor, and changing certainty »</span></a></li>
+  <li><a class="jump-link" href="/titanic-history-vs-movie"><span>History vs. Film</span><span class="meta">how dramatization reshapes evidence »</span></a></li>
+  <li><a class="jump-link" href="/collections/titanic-artifacts-what-survives-and-what-doesnt"><span>Titanic Artifacts</span><span class="meta">wreck evidence, survival bias, and material limits »</span></a></li>
+  <li><a class="jump-link" href="/titanic-officers-roles-decisions-and-survival"><span>The Officers of Titanic</span><span class="meta">testimony, command, and disputed interpretation »</span></a></li>
+  <li><a class="jump-link" href="/sources"><span>Sources &amp; Standards</span><span class="meta">site methodology and evidence language »</span></a></li>
+</ul>
+  </div>
+
+  <div class="split-grid" aria-label="Quick framing cards">
+    <div class="mini-card">
+      <span class="eyebrow">Why Titanic matters</span>
+      <span class="big">Many sources, uneven certainty</span>
+      <p>Titanic offers testimony, inquiry records, contemporary news coverage, technical history, and modern wreck evidence—all valuable, but not all equally strong for every question.</p>
+    </div>
+    <div class="mini-card">
+      <span class="eyebrow">What goes wrong</span>
+      <span class="big">Fame can flatten nuance</span>
+      <p>Popular memory prefers neat villains, simple causes, and decisive last moments. The documentary record is often messier than the version people most easily remember.</p>
+    </div>
+    <div class="mini-card">
+      <span class="eyebrow">Best practice</span>
+      <span class="big">Match language to support</span>
+      <p>The discipline is not merely to collect facts, but to say only as much as the evidence can bear—and no more.</p>
+    </div>
+  </div>
+
+  <h2>Why Titanic is such a good evidence case study</h2>
+  <p>
+    Some historical subjects are difficult because almost nothing survives. Titanic is difficult for a different reason: so much survives that it becomes tempting to treat the whole field as settled. Yet a large archive does not eliminate the need for judgment. It increases it. Witness statements must be weighed. Newspapers must be distinguished from verified records. Inquiry findings must be read as products of their moment, with their own strengths and limits. And modern wreck-era evidence must be used carefully, especially when it is asked to answer questions it was never capable of settling on its own.
+  </p>
+  <p>
+  This makes Titanic unusually valuable for an evidence-first site. It is not just a story about a shipwreck. It is a story about how claims are formed, repeated, corrected, and sometimes still overstated even after new evidence appears. That process can be seen directly in pages like <a href="/titanic-myths-that-persist">Titanic Myths That Persist</a> and <a href="/titanic-what-the-world-knew">What the World Knew: Titanic in April 1912</a>.
+</p>
+
+  <div class="ladder-card" id="evidence-ladder" aria-label="Evidence confidence ladder">
+    <div class="ladder-head">
+      <div class="ladder-title">Titanic Evidence Ladder</div>
+      <div class="ladder-sub">Different kinds of sources deserve different levels of confidence.</div>
+    </div>
+    <span class="ladder-tag">Read top to bottom: stronger → weaker for factual certainty</span>
+
+    <ol class="ladder" aria-label="Evidence ladder">
+      <li class="rung">
+        <div class="rung-label">Physical and documentary anchors</div>
+        <div class="rung-desc">Technical records, official inquiry transcripts, dated photographs, ship specifications, and later wreck evidence where the wreck itself can directly answer the question.</div>
+      </li>
+      <li class="rung">
+        <div class="rung-label">Corroborated contemporary testimony</div>
+        <div class="rung-desc">Eyewitness accounts that align with independent witnesses or documentary records, especially on broad sequence rather than minute-by-minute certainty.</div>
+      </li>
+      <li class="rung">
+        <div class="rung-label">Contemporary press used cautiously</div>
+        <div class="rung-desc">Useful for showing what people believed at the time, but often unreliable for immediate factual certainty during the disaster’s earliest reporting window.</div>
+      </li>
+      <li class="rung">
+        <div class="rung-label">Later synthesis with citations</div>
+        <div class="rung-desc">Useful when authors show their footing and distinguish evidence from inference.</div>
+      </li>
+      <li class="rung">
+        <div class="rung-label">Legend, compression, and repetition</div>
+        <div class="rung-desc">Stories repeated because they are memorable, symbolic, cinematic, or morally satisfying. These may preserve emotional truth, but they are not automatically documentary truth.</div>
+      </li>
+    </ol>
+  </div>
+
+  <h2>Four kinds of Titanic evidence—and what each is good for</h2>
+  <div class="method-grid">
+   <div class="method-card good">
+  <h3>Inquiry records</h3>
+  <p>Excellent for testimony, timelines, operational detail, and the questions contemporaries thought mattered. Less perfect for inner motive, total certainty, or issues obscured by stress, darkness, and incomplete perception. This is especially clear in <a href="/titanic-officers-roles-decisions-and-survival">The Officers of Titanic</a>.</p>
+</div>
+    
+    <div class="method-card good">
+  <h3>Wreck evidence</h3>
+  <p>Exceptionally strong for certain structural and physical questions. Much weaker for personal motive, spoken words, or the exact perception of individuals on deck. For the material side of that problem, see <a href="/collections/titanic-artifacts-what-survives-and-what-doesnt">Titanic Artifacts: What Survives and What Doesn’t</a>.</p>
+</div>
+   <div class="method-card warn">
+  <h3>Newspapers</h3>
+  <p>Very strong for tracing public knowledge and misinformation. Often weak for first-wave factual claims made before reliable confirmation existed. That distinction is central to <a href="/titanic-what-the-world-knew">What the World Knew</a>.</p>
+</div>
+    <div class="method-card warn">
+  <h3>Later cultural retellings</h3>
+  <p>Important as evidence of memory, myth, and interpretation—but not sufficient on their own for reconstructing disputed historical details. See <a href="/titanic-history-vs-movie">Titanic: History vs. James Cameron’s Film</a>.</p>
+</div>
+  </div>
+
+  <h2>Case studies: what Titanic teaches when different evidence types collide</h2>
+  <div class="matrix-table-wrap">
+    <table class="matrix-table" aria-label="Titanic evidence case studies">
+      <thead>
+        <tr>
+          <th>Case</th>
+          <th>What the evidence looked like</th>
+          <th>What later study changed</th>
+          <th>Lesson</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Early newspaper reports</strong></td>
+          <td>Some papers initially reported that all passengers had been saved or that the damage was serious but not catastrophic.</td>
+         <td>Later confirmation revealed the scale of loss. The newspapers remain important evidence of confusion, not of what actually happened, a distinction explored further in <a href="/titanic-what-the-world-knew">What the World Knew</a>.</td>
+          <td><span class="warn-badge">Report ≠ fact</span></td>
+        </tr>
+        <tr>
+          <td><strong>The breakup</strong></td>
+          <td>For decades, public memory and testimony did not always align neatly on whether the ship broke apart before the final plunge.</td>
+          <td>Wreck discovery and later study confirmed Titanic lay in two main sections on the seabed, making the breakup effectively unavoidable in modern interpretation.</td>
+          <td><span class="good-badge">Later evidence can strengthen</span></td>
+        </tr>
+        <tr>
+          <td><strong>Class barriers</strong></td>
+          <td>There were real separations, movement controls, and social inequalities aboard. Popular retellings often compress these into one decisive lock-in image.</td>
+          <td>The structural reality remains important, but the most famous image is cleaner and simpler than the full documentary picture, a pattern explored further in <a href="/titanic-myths-that-persist">Titanic Myths That Persist</a>.</td>
+          
+          <td><span class="mixed-badge">Reality can be overstated</span></td>
+        </tr>
+        <tr>
+          <td><strong>Last-moment conduct</strong></td>
+          <td>Witness testimony preserves vivid scenes, but stress, darkness, and partial vantage make some details difficult to settle beyond dispute.</td>
+          <td>Later writers often prefer decisive narratives of heroism, villainy, or panic that exceed what the surviving record securely supports, especially in discussions of <a href="/titanic-officers-roles-decisions-and-survival">officers and testimony</a>.</td>
+          <td><span class="danger-badge">Resist overprecision</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Lesson one: more sources do not automatically mean more certainty</h2>
+  <p>
+    A common misunderstanding in historical writing is that quantity settles quality. Titanic demonstrates the opposite. Many sources may all derive from the same early report, from the same misunderstood testimony, or from later authors repeating one another. Ten retellings do not outweigh one strong document if the ten retellings are dependent, derivative, or imprecise.
+  </p>
+  <p>
+    This matters especially with famous ships. Fame produces confident summaries, visual shorthand, and repeated anecdotes. It also creates an illusion of saturation: because everyone knows the story, people assume the facts behind every detail are equally secure. They are not.
+  </p>
+
+  <h2>Lesson two: newspapers are evidence of knowledge in motion</h2>
+  <p>
+  Titanic’s early press coverage is valuable precisely because it was not fully reliable. That is not a contradiction. Newspaper error in April 1912 is evidence of how information moved, how uncertainty was managed under deadline, and how the public encountered the disaster in fragments rather than in one stable form. That problem is treated directly in <a href="/titanic-what-the-world-knew">What the World Knew: Titanic in April 1912</a>.
+</p>
+  <div class="timeline-card" aria-label="Evidence in motion timeline">
+    <div class="event">
+      <div class="year">Collision</div>
+      <div>
+        <div class="tags">
+          <span class="tag">Event</span>
+          <span class="tag">Reality</span>
+        </div>
+        <p>The ship strikes the iceberg late on April 14, 1912, beginning the actual disaster sequence at sea.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="year">First reports</div>
+      <div>
+        <div class="tags">
+          <span class="tag">Press</span>
+          <span class="tag">Partial information</span>
+        </div>
+        <p>Messages reach shore unevenly. Some early reports minimize the danger or suggest all aboard have been saved.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="year">Confirmation</div>
+      <div>
+        <div class="tags">
+          <span class="tag">Correction</span>
+          <span class="tag">Casualties</span>
+        </div>
+        <p>As better information arrives, the public understanding shifts from reassurance to catastrophe.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="year">Aftermath</div>
+      <div>
+        <div class="tags">
+          <span class="tag">Inquiry</span>
+          <span class="tag">Memory</span>
+        </div>
+        <p>Once the broad disaster is known, interpretation begins: responsibility, sequence, and meaning become the new contested terrain.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Practical takeaway:</strong> If a source is early, dramatic, and widely repeated, ask first whether it is valuable as evidence of contemporary belief rather than as final evidence of what happened.
+  </div>
+
+  <h2>Lesson three: witness testimony is indispensable, but never frictionless</h2>
+  <p>
+    Titanic would be far poorer as a historical subject without witnesses. Testimony preserves sequence, atmosphere, procedures, confusion, and human response in ways no technical document can replace. But testimony also has limits. People remember differently. They stood in different places. They saw some things clearly and others dimly. Some were calm; some were shocked; some spoke after the fact in a climate already shaped by blame, grief, and publicity.
+  </p>
+  <p>
+  The consequence is not that witness testimony should be discarded. It should be handled proportionally. Broad convergences are often strong. Precise psychological interpretations, exact spoken lines, and the cleanest moral narratives are often where caution matters most. That tension becomes especially visible in <a href="/titanic-officers-roles-decisions-and-survival">The Officers of Titanic</a>.
+</p>
+
+  <h2>Lesson four: later evidence can correct some debates without solving all of them</h2>
+  <p>
+  Titanic’s wreck discovery transformed the evidentiary landscape. It strengthened modern understanding of the ship’s physical end state and helped move certain technical questions out of the realm of speculation. But it did not turn the whole disaster into a solved equation. The wreck could clarify structural realities; it could not directly tell historians everything about motive, interpretation, perception, hesitation, or rumor. The material side of that distinction is explored further in <a href="/collections/titanic-artifacts-what-survives-and-what-doesnt">Titanic Artifacts: What Survives and What Doesn’t</a>.
+</p>
+
+  <div class="chart-card" aria-label="Illustrative evidence balance chart">
+    <p><strong>Illustrative balance:</strong> how different Titanic questions respond to different evidence types.</p>
+
+    <div class="bar-group">
+      <div class="bar-label">
+        <span>Structural / physical questions</span>
+        <span>High help from wreck evidence</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:92%;"></div></div>
+    </div>
+
+    <div class="bar-group">
+      <div class="bar-label">
+        <span>Broad sequence / operations</span>
+        <span>Strong with testimony + inquiry</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:81%;"></div></div>
+    </div>
+
+    <div class="bar-group">
+      <div class="bar-label">
+        <span>Personal motive / disputed scenes</span>
+        <span>Often much less secure</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:38%;"></div></div>
+    </div>
+
+    <p class="page-kicker" style="margin-top:0.95rem; font-size:0.95rem;">
+      The point is not mathematical precision. It is methodological proportion: some questions are easier to answer securely than others.
+    </p>
+  </div>
+
+  <h2>Lesson five: myth forms where documentary reality is unsatisfying</h2>
+  <p>
+    Titanic also teaches that myths do not survive only because people are careless. They survive because they are useful. They simplify complexity. They supply neat villains, memorable last acts, and symbolic scenes that can be retold without footnotes. A complicated structural failure becomes a single boast. A layered class system becomes one image. A broad field of conflicting human conduct becomes one final act of purity or blame.
+  </p>
+  <p>
+  This is why Titanic is such a productive site for evidence-first interpretation. It reveals how public memory selects what is legible, moving, visual, and morally tidy—even when the historical record remains less resolved. That process is visible both in <a href="/titanic-myths-that-persist">Titanic Myths That Persist</a> and in <a href="/titanic-history-vs-movie">Titanic: History vs. James Cameron’s Film</a>.
+</p>
+
+  <h2>How to write about Titanic responsibly</h2>
+  <ul>
+    <li><strong>Separate source types:</strong> inquiry records, newspapers, testimony, wreck evidence, and later retellings should not be blended into one undifferentiated “record.”</li>
+    <li><strong>State the level of certainty:</strong> documented, broadly supported, debated, overstated, or unresolved.</li>
+    <li><strong>Do not overclaim from one source:</strong> especially one witness, one headline, or one later secondary summary.</li>
+    <li><strong>Preserve disagreement where it matters:</strong> ambiguity is often a more truthful result than false neatness.</li>
+    <li><strong>Use later discoveries carefully:</strong> they may correct some points while leaving other interpretive questions open.</li>
+  </ul>
+
+  <div class="note">
+    <strong>Recommended phrasing:</strong> “Current evidence strongly supports X.” “The record is mixed on Y.” “This later became a widespread story, but the surviving documentation does not make it secure as fact.”
+  </div>
+
+  <h2>What Titanic ultimately teaches</h2>
+  <p>
+    Titanic teaches that evidence is not a single thing. It is a hierarchy of materials, each answering different questions with different strength. It teaches that a famous story can still be misunderstood, that early reports can mislead without becoming worthless, that witnesses are vital without becoming infallible, and that later discoveries can clarify some questions while leaving others genuinely open.
+  </p>
+  <p>
+    For a curator-minded approach, that is the central lesson. The goal is not maximal certainty at all costs. It is proportion. A careful writer should be willing to say more where the record is strong, less where it is mixed, and “unknown” where the evidence does not justify more ambitious claims.
+  </p>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="note">
+    <p><strong>⟡ Why is Titanic so useful for thinking about evidence?</strong></p>
+    <p>⟡ Because it combines rich documentation with persistent uncertainty. It lets us see the difference between having many sources and having one fully settled story.</p>
+  </div>
+
+  <div class="note">
+    <p><strong>⟡ Are early newspapers useless because they got things wrong?</strong></p>
+    <p>⟡ No. They are extremely useful for showing what was believed, repeated, and corrected in real time. They simply should not be treated as final proof when reporting was still unstable.</p>
+  </div>
+
+  <div class="note">
+    <p><strong>⟡ Did wreck discovery solve every major Titanic question?</strong></p>
+    <p>⟡ No. It greatly strengthened certain structural conclusions, especially about the ship’s breakup, but it did not settle every question about conduct, motive, or disputed testimony.</p>
+  </div>
+
+  <div class="note">
+    <p><strong>⟡ Why do Titanic myths last so long?</strong></p>
+    <p>⟡ Because they are memorable, emotionally legible, and easy to retell. Myth often thrives where the documentary record is more complicated than popular storytelling prefers.</p>
+  </div>
+
+  <div class="note">
+    <p><strong>⟡ What is the safest overall method?</strong></p>
+    <p>⟡ Separate source types, identify what each can actually prove, and match the wording of the claim to the strength of the support.</p>
+  </div>
+  
+  <h2>Continue Exploring Titanic</h2>
+<p>
+  These pages show how the evidence problems discussed above play out in specific Titanic topics.
+</p>
+
+<div class="continue-grid">
+  <a class="continue-card" href="/titanic">
+    <span class="continue-label">Hub</span>
+    <h3>Titanic topic hub</h3>
+    <p>Start from a central overview of timelines, questions, and research paths.</p>
+  </a>
+
+  <a class="continue-card" href="/ships/titanic-southampton-to-rescue-timeline">
+    <span class="continue-label">Timeline</span>
+    <h3>Southampton to rescue</h3>
+    <p>Follow the disaster sequence that later sources and interpretations are trying to describe.</p>
+  </a>
+
+  <a class="continue-card" href="/titanic-what-the-world-knew">
+    <span class="continue-label">News & certainty</span>
+    <h3>What the World Knew</h3>
+    <p>See how reporting, correction, and public understanding changed in real time.</p>
+  </a>
+
+  <a class="continue-card" href="/titanic-myths-that-persist">
+    <span class="continue-label">Myth & memory</span>
+    <h3>Titanic myths that persist</h3>
+    <p>See how repetition, simplification, and symbolism outlast messy documentation.</p>
+  </a>
+
+  <a class="continue-card" href="/titanic-history-vs-movie">
+    <span class="continue-label">Interpretation</span>
+    <h3>History vs. film</h3>
+    <p>See how cinematic storytelling reshaped evidence into a cleaner narrative.</p>
+  </a>
+
+  <a class="continue-card" href="/collections/titanic-artifacts-what-survives-and-what-doesnt">
+    <span class="continue-label">Material evidence</span>
+    <h3>Titanic artifacts</h3>
+    <p>See how survival bias and recovery context shape what objects can really prove.</p>
+  </a>
+</div>
+
+  <h2>Sources &amp; standards</h2>
+  <p>
+    This page uses Titanic not as a platform for maximal certainty, but as a case study in evidentiary method. The sources below are useful for different reasons: inquiry and federal records context, early newspaper misinformation, general event chronology, and later wreck-era understanding.
+  </p>
+
+  <ul class="source-list">
+    <li><a href="https://www.archives.gov/publications/prologue/2012/spring/titanic.html">U.S. National Archives — “They Said It Couldn’t Sink”</a></li>
+    <li><a href="https://www.senate.gov/reference/reference_item/titanic.htm">U.S. Senate — Titanic Disaster Hearings</a></li>
+    <li><a href="https://blogs.loc.gov/teachers/2017/04/information-literacy-how-does-the-news-change-over-time-the-sinking-of-the-titanic/">Library of Congress — how Titanic news changed over time</a></li>
+    <li><a href="https://guides.loc.gov/titanic/library-resources">Library of Congress — Titanic research resources</a></li>
+    <li><a href="https://www.britannica.com/topic/Titanic">Encyclopaedia Britannica — Titanic overview</a></li>
+    <li><a href="https://www.britannica.com/story/timeline-of-the-titanics-final-hours">Encyclopaedia Britannica — timeline of the final hours</a></li>
+    <li><a href="https://www.noaa.gov/office-of-general-counsel/gc-international-section/rms-titanic-documents-and-references">NOAA — RMS Titanic documents and references</a></li>
+  </ul>
+
+  <footer>
+    <a class="button secondary" href="/">Home</a>
+    <img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true" />
+    <p class="copyright">© <span id="year"></span> Ocean Liner Curator.</p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+
+
+<script src="/assets/header.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

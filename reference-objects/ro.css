@@ -1,0 +1,188 @@
+/* ro.css — Reference Object page-only styling (pairs with theme.css tokens/classes) */
+
+/* Secondary button (transparent plate style) */
+.button.secondary{
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(191,164,106,0.45);
+  box-shadow: none;
+}
+.button.secondary:hover{
+  background: rgba(191,164,106,0.10);
+  transform: translateY(-1px);
+}
+
+/* Reference Object meta + tags */
+.ro-meta{
+  margin: 0.75rem auto 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+  max-width: 78ch;
+}
+.ro-meta strong{
+  color: var(--text);
+  font-weight: 600;
+}
+
+.ro-tag{
+  display: inline-block;
+  margin-top: 0;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(191,164,106,0.22);
+  background: rgba(0,0,0,0.10);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.ro-tags{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+.ro-sep{
+  color: rgba(191,164,106,0.45);
+}
+
+/* Core RO grid */
+.ro-grid{
+  margin-top: 0.95rem;
+  display: grid;
+  gap: 0.9rem;
+}
+@media (min-width: 880px){
+  .ro-grid{
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: start;
+  }
+}
+
+/* Figures */
+.figure{
+  margin: 0;
+  border: 1px solid rgba(191,164,106,0.18);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.10);
+}
+.figure img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.figcap{
+  padding: 0.75rem 0.95rem 0.85rem;
+  border-top: 1px solid rgba(191,164,106,0.12);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Prevent default figure margins from drifting */
+.card figure{ margin: 0; }
+.card figure + figure{ margin-top: 0.85rem; }
+
+/* Object record (kv grid) */
+.record{
+  display: grid;
+  gap: 0.15rem;
+}
+.kv{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0.7rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid rgba(191,164,106,0.12);
+}
+.kv:first-child{
+  border-top: none;
+  padding-top: 0.2rem;
+}
+.k{
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.v{
+  color: rgba(230,223,207,0.92);
+  font-size: 0.98rem;
+}
+
+/* Attribution status line */
+.statusline{
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+@media (min-width: 560px){
+  .statusline{ grid-template-columns: 1fr 1fr; }
+}
+.status{
+  border: 1px solid rgba(191,164,106,0.18);
+  border-radius: 12px;
+  padding: 0.7rem 0.85rem;
+  background: rgba(0,0,0,0.08);
+}
+.status .label{
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.status .value{
+  margin-top: 0.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Optional: slightly reduce top spacing since container already breathes */
+.container h1{ margin-top: 0.35rem; }
+
+/* Micro-alignment inside cards */
+.card h2{
+  margin-top: 0;
+  margin-bottom: 0.55rem;
+}
+.card h2 + :is(p, ul, figure, .record, .statusline){
+  margin-top: 0;
+}
+.card > :is(p, ul, figure, .record, .statusline):first-child{
+  margin-top: 0;
+}
+
+/* RO list alignment (museum-label feel) */
+.card ul{
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0.45rem;
+}
+.card li{
+  margin: 0.35rem 0;
+  padding-left: 0.15rem;
+}
+
+/* Bottom navigation */
+.cta{ margin-top: 1.6rem; }
+.actions{
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+aside .cta{ padding-top: 0.25rem; }
+
+/* Card breathing room */
+.card{ padding-bottom: 1.35rem; }
+
+/* Mobile object record */
+@media (max-width: 520px){
+  .kv{
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 0.6rem 0;
+  }
+  .k{
+    font-size: 0.86rem;
+    letter-spacing: 0.2px;
+  }
+}

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  html { background:#0a1110; }
+</style>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0a1110">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How to Use the Ship Archive — Ocean Liner Curator</title>
+  <meta name="description" content="A guide to navigating the Ocean Liner Curator Ship Archive—how to use ship guides, research collections, timelines, and evidence-first interpretation across the site." />
+  <link rel="canonical" href="https://oceanliners.net/how-to-use-the-ship-archive" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="How to Use the Ship Archive — Ocean Liner Curator" />
+  <meta property="og:description" content="Learn how to explore the Ocean Liner Curator Ship Archive through ship guides, timelines, research collections, and curator-minded reference tools." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://oceanliners.net/how-to-use-the-ship-archive" />
+  <meta property="og:image" content="https://oceanliners.net/social-preview.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Use the Ship Archive — Ocean Liner Curator" />
+  <meta name="twitter:description" content="Learn how to explore the Ocean Liner Curator Ship Archive through ship guides, timelines, research collections, and curator-minded reference tools." />
+  <meta name="twitter:image" content="https://oceanliners.net/social-preview.jpg" />
+
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/how-to-use-the-ship-archive#webpage",
+    "name": "How to Use the Ship Archive — Ocean Liner Curator",
+    "url": "https://oceanliners.net/how-to-use-the-ship-archive",
+    "description": "A guide to navigating the Ocean Liner Curator Ship Archive—how to use ship guides, research collections, timelines, and evidence-first interpretation across the site.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Ocean Liner Curator",
+      "url": "https://oceanliners.net/"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Ocean liner research and navigation"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:#0f1716;
+      --panel-2:#121c1a;
+      --line:rgba(191,164,106,.22);
+      --line-strong:rgba(191,164,106,.42);
+      --text:#e8e0cf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,.12);
+      --shadow:0 18px 42px rgba(0,0,0,.32);
+      --radius:20px;
+      --radius-sm:14px;
+      --stage:min(820px, calc(100% - 1.5rem));
+      --stage-wide:min(1080px, calc(100% - 1.5rem));
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; }
+    body{
+      background:
+        radial-gradient(circle at top, rgba(191,164,106,.08), transparent 36%),
+        linear-gradient(180deg, #0a1110 0%, #0d1514 100%);
+      color:var(--text);
+      font-family:"Spectral", serif;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    img{ max-width:100%; display:block; }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .container{
+      width:var(--stage);
+      margin:0 auto;
+      padding:1rem 0 3rem;
+    }
+
+    .hero{
+      width:var(--stage-wide);
+      margin:1rem auto 1.25rem;
+      padding:0 0.75rem;
+    }
+
+    .hero-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:
+        linear-gradient(180deg, rgba(20,31,29,.95), rgba(12,19,18,.98)),
+        url("/quatrefoil.svg");
+      box-shadow:var(--shadow);
+    }
+
+    .hero-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(135deg, rgba(191,164,106,.09), transparent 35%),
+        radial-gradient(circle at 85% 20%, rgba(191,164,106,.12), transparent 24%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:1;
+      padding:3.25rem 1.4rem 2.4rem;
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      margin:0 0 .9rem;
+      padding:.38rem .8rem;
+      border:1px solid var(--line-strong);
+      border-radius:999px;
+      background:rgba(191,164,106,.08);
+      color:var(--muted);
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      font-size:.72rem;
+    }
+
+    h1,h2,h3{
+      font-family:"Libre Baskerville", serif;
+      line-height:1.25;
+      letter-spacing:.01em;
+      margin:0 0 .7rem;
+      color:#f2ead9;
+    }
+
+    h1{
+      font-size:clamp(2rem, 4.8vw, 3.2rem);
+      margin-bottom:.75rem;
+    }
+
+    .hero-subtitle{
+      max-width:760px;
+      margin:0 auto 1.25rem;
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.75rem;
+      justify-content:center;
+      margin-top:1.15rem;
+    }
+
+    .button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.45rem;
+      min-height:46px;
+      padding:.78rem 1.1rem;
+      border-radius:999px;
+      border:1px solid var(--line-strong);
+      backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+      background: linear-gradient(
+        180deg,
+        rgba(191,164,106,0.10) 0%,
+        rgba(10,17,16,0.16) 55%,
+        rgba(0,0,0,0.15) 100%
+      ) !important;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.32);
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+      transition:transform .15s ease, background .15s ease, border-color .15s ease;
+    }
+
+    .button:hover{
+      text-decoration:none;
+      transform:translateY(-1px);
+      background:rgba(191,164,106,.14);
+      border-color:rgba(191,164,106,.55);
+    }
+
+    .button.primary{
+      background:linear-gradient(180deg, rgba(191,164,106,.2), rgba(191,164,106,.1));
+    }
+
+    .main-card{
+      border:1px solid var(--line);
+      border-radius:26px;
+      background-color:rgba(15,27,25,0.78);
+      background-image:url("quatrefoil.svg");
+      background-size:360px 360px;
+      background-position:center 38%;
+      background-repeat:repeat;
+      box-shadow:var(--shadow);
+      padding:1.15rem;
+    }
+    
+
+    .note{
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:linear-gradient(180deg, rgba(18,28,26,.82), rgba(12,19,18,.92));
+      padding:1.2rem 1rem 1.1rem;
+      margin:0 0 1rem;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.02);
+    }
+
+    .intro-note{
+      background:
+        linear-gradient(180deg, rgba(191,164,106,.08), rgba(191,164,106,.03)),
+        linear-gradient(180deg, rgba(18,28,26,.82), rgba(12,19,18,.92));
+    }
+
+    .ornament-line{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:.8rem;
+      color:var(--accent);
+      margin:0 0 .95rem;
+      opacity:.9;
+    }
+
+    .ornament-line::before,
+    .ornament-line::after{
+      content:"";
+      height:1px;
+      flex:1;
+      max-width:110px;
+      background:linear-gradient(90deg, transparent, rgba(191,164,106,.55), transparent);
+    }
+
+    .ornament-star{
+      font-size:.9rem;
+      line-height:1;
+    }
+
+    .section-title{
+  text-align:center;
+  align-items:center;
+  font-size:1.3rem;
+  margin:0 0 .85rem;
+  padding:0 2rem;
+}
+    .section-permalink{
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translateY(-50%);
+      width:1.1rem;
+      height:1.1rem;
+      border-radius:50%;
+      opacity:.75;
+      text-decoration:none;
+    }
+
+  
+
+    .lede{
+      margin:0;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:1rem;
+      margin:0 0 1rem;
+      
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:1rem;
+      margin:0 0 1rem;
+      
+    }
+
+    .mini-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:1rem;
+      background:linear-gradient(180deg, rgba(191,164,106,.06), rgba(191,164,106,.02));
+      backdrop-filter: blur(2px) saturate(105%);
+  -webkit-backdrop-filter: blur(2px) saturate(105%);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.32); 
+    }
+
+    .mini-card h3{
+      font-size:1rem;
+      margin-bottom:.45rem;
+    }
+
+    .mini-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+
+    .path-list,
+    .sitemap-list,
+    .principles-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+
+    .path-list li,
+    .sitemap-list li,
+    .principles-list li{
+      border-top:1px solid rgba(191,164,106,.16);
+      padding:.9rem 0;
+    }
+
+    .path-list li:first-child,
+    .sitemap-list li:first-child,
+    .principles-list li:first-child{
+      border-top:0;
+      padding-top:0;
+    }
+
+    .path-list a,
+    .sitemap-list a{
+      display:inline-block;
+      font-weight:700;
+      color:#f0e5cd;
+    }
+
+    .path-list small,
+    .sitemap-list small{
+      display:block;
+      margin-top:.2rem;
+      color:var(--muted);
+      font-size:.96rem;
+      line-height:1.65;
+    }
+
+    .principles-list strong{
+      color:#f0e5cd;
+    }
+
+    .callout{
+      margin:1rem 0;
+      padding:1rem 1rem 1rem 1.05rem;
+      border-left:3px solid var(--accent);
+      border-radius:12px;
+      background:rgba(191,164,106,.06);
+      color:var(--muted);
+    }
+
+    .steps{
+      counter-reset:archive-steps;
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+
+    .steps li{
+      position:relative;
+      padding:0 0 1rem 3rem;
+      margin:0 0 1rem;
+      border-bottom:1px solid rgba(191,164,106,.14);
+    }
+
+    .steps li:last-child{
+      border-bottom:0;
+      margin-bottom:0;
+      padding-bottom:0;
+    }
+
+    .steps li::before{
+      counter-increment:archive-steps;
+      content:counter(archive-steps);
+      position:absolute;
+      left:0;
+      top:.1rem;
+      width:2rem;
+      height:2rem;
+      border-radius:50%;
+      border:1px solid var(--line-strong);
+      background:rgba(191,164,106,.08);
+      color:var(--accent);
+      font-weight:700;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:.95rem;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+    }
+
+    .steps strong{
+      color:#f0e5cd;
+    }
+
+    .quick-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.6rem;
+      justify-content:center;
+      margin-top:.9rem;
+    }
+
+    .quick-links a{
+      padding:.48rem .78rem;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(191,164,106,.06);
+      color:var(--accent);
+      text-decoration:none;
+      font-size:.93rem;
+    }
+
+    .quick-links a:hover{
+      background:rgba(191,164,106,.12);
+      text-decoration:none;
+    }
+
+    .footer-star{
+      position:relative;
+      text-align:center;
+      color:var(--accent);
+      font-size:.9rem;
+      margin:2rem 0 .6rem;
+      line-height:1;
+      opacity:.85;
+    }
+
+    .footer-star::before,
+    .footer-star::after{
+      content:"";
+      position:absolute;
+      top:50%;
+      width:48px;
+      height:1px;
+      background:var(--accent);
+      opacity:.85;
+    }
+
+    .footer-star::before{ right:calc(50% + 18px); }
+    .footer-star::after{ left:calc(50% + 18px); }
+
+    .copyright{
+      text-align:center;
+      color:var(--muted);
+      font-size:.92rem;
+      margin:.35rem 0 0;
+    }
+
+    @media (max-width:900px){
+      .grid-3{ grid-template-columns:1fr; }
+      .grid-2{ grid-template-columns:1fr; }
+    }
+
+    @media (max-width:680px){
+      .hero-inner{ padding:2.35rem 1rem 1.8rem; }
+      .main-card{ padding:.8rem; }
+      .note{ padding:1rem .9rem; }
+      .section-title{
+        font-size:1.15rem;
+        padding:0 1.4rem;
+      }
+      .section-permalink{ right:-.1rem; }
+    }
+  </style>
+   <link rel="stylesheet" href="/assets/nav.css">
+</head>
+<body>
+ <div id="site-header"></div>
+  <header class="hero">
+    <div class="hero-card">
+      <div class="hero-inner">
+        <div class="eyebrow">Orientation Guide</div>
+        <h1>How to Use the Ship Archive</h1>
+        <p class="hero-subtitle">
+          The Ship Archive is designed as a curator-minded reference system rather than a simple list of famous vessels.
+          This page explains how to navigate ship guides, timelines, collections, and research tools across Ocean Liner Curator.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="/ships/ships">Browse Ship Guides</a>
+          <a class="button" href="/ships/timeline-1900-1960">Open Timeline</a>
+          <a class="button" href="/definitive-guide">Research Standards</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="main-card">
+
+      <section class="note intro-note" id="what-this-is">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          What This Archive Is
+          <a class="section-permalink" href="#what-this-is" aria-label="Permalink to What This Archive Is"></a>
+        </h2>
+        <p class="lede">
+          Ocean Liner Curator’s Ship Archive is meant to be read as both a catalog and an interpretive framework:
+          a place where individual ships can be studied on their own, but also understood within larger stories of route systems,
+          design change, prestige, migration, war, reconstruction, and decline.
+        </p>
+      </section>
+
+      <section class="grid-3" aria-label="Archive at a glance">
+        <div class="mini-card">
+          <h3>Ship Guides</h3>
+          <p>Individual reference pages centered on a specific vessel, with key facts, service context, and interpretive notes.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Research Collections</h3>
+          <p>Thematic groupings that connect ships through shared patterns such as speed, empire routes, social change, or interrupted careers.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Reference Tools</h3>
+          <p>Timelines, maps, standards, and other pages that help place ships within wider historical systems rather than treating them in isolation.</p>
+        </div>
+      </section>
+
+      <section class="note" id="how-to-begin">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          How to Begin
+          <a class="section-permalink" href="#how-to-begin" aria-label="Permalink to How to Begin"></a>
+        </h2>
+
+        <ol class="steps">
+          <li>
+            <strong>Start with a ship you already know</strong><br>
+            If you arrived looking for a specific liner—such as <em>Olympic</em>, <em>Lusitania</em>, <em>Normandie</em>, or <em>Queen Mary</em>—begin with that ship guide and use it as your entry point into the archive.
+          </li>
+          <li>
+            <strong>Use the guide as a hub, not an endpoint</strong><br>
+            Each ship guide is meant to open outward into larger patterns: class identity, line history, route networks, service chronology, and related vessels.
+          </li>
+          <li>
+            <strong>Follow themes through Research Collections</strong><br>
+            If a ship seems to belong to a bigger story—migration, speed rivalry, renaming, decline, empire service, or prestige competition—the collections help you move from one vessel to a wider historical pattern.
+          </li>
+          <li>
+            <strong>Use the timeline when sequence matters</strong><br>
+            The archive timeline is especially helpful when trying to understand what came before, what overlapped, and what changed across decades.
+          </li>
+          <li>
+            <strong>Consult standards when interpretation becomes uncertain</strong><br>
+            Where historical evidence is incomplete, disputed, or unevenly preserved, Ocean Liner Curator favors restraint, clarity, and explicit acknowledgment of limits.
+          </li>
+        </ol>
+      </section>
+
+      <section class="note" id="what-is-a-ship-guide">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          What a Ship Guide Is
+          <a class="section-permalink" href="#what-is-a-ship-guide" aria-label="Permalink to What a Ship Guide Is"></a>
+        </h2>
+
+        <ul class="principles-list">
+          <li><strong>Identity:</strong> the ship’s name, operator, service era, and core reference facts.</li>
+          <li><strong>Context:</strong> where the vessel belongs within a line, route, class, or historical moment.</li>
+          <li><strong>Interpretation:</strong> why the ship matters beyond its statistics alone.</li>
+          <li><strong>Discipline:</strong> a guide may be concise where the evidence is thin, rather than padded with unsupported certainty.</li>
+        </ul>
+
+        <div class="callout">
+          A ship guide is not intended to be the final word on every vessel. It is meant to be a clear, evidence-minded reference point that helps readers continue outward into larger patterns of ocean liner history.
+        </div>
+      </section>
+
+      <section class="note" id="how-to-read-a-guide">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          How to Read a Guide
+          <a class="section-permalink" href="#how-to-read-a-guide" aria-label="Permalink to How to Read a Guide"></a>
+        </h2>
+
+        <div class="grid-2">
+          <div class="mini-card">
+            <h3>Read for facts</h3>
+            <p>Look first at the vessel’s dates, line affiliation, route identity, and major career phases. These establish the guide’s documentary foundation.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Read for placement</h3>
+            <p>Then ask where the ship belongs: fast express liner, migrant carrier, cabin liner, imperial route ship, prestige flagship, rebuilt survivor, or final-era holdout.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Read for comparison</h3>
+            <p>A guide becomes more meaningful when compared with sister ships, rivals, predecessors, or successors elsewhere in the archive.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Read for restraint</h3>
+            <p>Silences, caveats, and careful phrasing are often deliberate. They signal that the archive is distinguishing between documented evidence and later repetition or assumption.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="note" id="ways-to-explore">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Ways to Explore the Archive
+          <a class="section-permalink" href="#ways-to-explore" aria-label="Permalink to Ways to Explore the Archive"></a>
+        </h2>
+
+        <ul class="path-list">
+          <li>
+            <a href="/ships/ships">By Ship</a>
+            <small>Use the Ship Guides index when you want a direct alphabetical route into individual vessels.</small>
+          </li>
+          <li>
+            <a href="/ships/timeline-1900-1960">By Date</a>
+            <small>Use the timeline when you want to understand sequence, overlap, and historical clustering across decades.</small>
+          </li>
+          <li>
+            <a href="/collections/blue-riband-era.html">By Theme</a>
+            <small>Use Research Collections to follow larger narratives such as speed competition, migration, route systems, postwar reconstruction, or decline.</small>
+          </li>
+          <li>
+            <a href="/ships/ocean-liner-evolution-map">By Lineage</a>
+            <small>Use the evolution map when you want to trace design ambition, prestige inheritance, and changing liner ideas across generations.</small>
+          </li>
+          <li>
+            <a href="/definitive-guide">By Method</a>
+            <small>Use Research Standards when you want to understand how evidence, interpretation, and uncertainty are being handled throughout the site.</small>
+          </li>
+        </ul>
+      </section>
+
+      <section class="note" id="research-collections">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          What Research Collections Do
+          <a class="section-permalink" href="#research-collections" aria-label="Permalink to What Research Collections Do"></a>
+        </h2>
+        <p class="lede">
+          Research Collections are where the archive becomes more than a catalog. They connect ships into patterns:
+          not just what a vessel was, but what kind of historical story it helps tell.
+        </p>
+
+        <div class="grid-2" style="margin-top:1rem;">
+          <div class="mini-card">
+            <h3>They reveal structure</h3>
+            <p>A single ship can appear isolated until it is placed among peers, rivals, sisters, or successors.</p>
+          </div>
+          <div class="mini-card">
+            <h3>They reveal change</h3>
+            <p>Collections help show how speed, class systems, route logic, and prestige ideals evolved over time.</p>
+          </div>
+          <div class="mini-card">
+            <h3>They reveal continuity</h3>
+            <p>Ships from different lines or decades may still belong to the same long-running historical pattern.</p>
+          </div>
+          <div class="mini-card">
+            <h3>They improve discovery</h3>
+            <p>Collections give readers a way to move through the site by theme, not just by name recognition.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="note" id="evidence-and-uncertainty">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Evidence, Attribution, and Uncertainty
+          <a class="section-permalink" href="#evidence-and-uncertainty" aria-label="Permalink to Evidence, Attribution, and Uncertainty"></a>
+        </h2>
+
+        <ul class="principles-list">
+          <li><strong>Evidence comes first.</strong> The archive does not treat repetition alone as proof.</li>
+          <li><strong>Context matters.</strong> A fact may be technically correct but misleading if stripped from service history, route, or chronology.</li>
+          <li><strong>Silence is sometimes more honest than overclaiming.</strong> Not every ship has equally complete surviving documentation.</li>
+          <li><strong>Interpretation is present, but disciplined.</strong> The goal is not to remove judgment entirely, but to keep it responsible and clearly bounded.</li>
+        </ul>
+
+        <div class="callout">
+          Ocean Liner Curator is designed to reward close reading. When phrasing seems careful, qualified, or unusually precise, that is usually a feature of the archive’s method rather than a weakness of the entry.
+        </div>
+      </section>
+
+      <section class="note" id="best-paths">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Suggested Paths Through the Archive
+          <a class="section-permalink" href="#best-paths" aria-label="Permalink to Suggested Paths Through the Archive"></a>
+        </h2>
+
+        <ul class="sitemap-list">
+          <li>
+            <a href="/ships/ships">New to ocean liner history</a>
+            <small>Begin with the Ship Guides index, choose a famous liner, then branch into its line, era, and related collection pages.</small>
+          </li>
+          <li>
+            <a href="/collections/olympic-class-liners.html">Interested in famous ships</a>
+            <small>Start with recognizable flagship subjects and then use collections to understand why those vessels became culturally central.</small>
+          </li>
+          <li>
+            <a href="/ships/timeline-1900-1960">Interested in chronology</a>
+            <small>Use the timeline first, then open individual ship guides once you see where clusters, turning points, or breaks occur.</small>
+          </li>
+          <li>
+            <a href="/collections/tourist-third-cabin-democratization.html">Interested in social history</a>
+            <small>Use collections on migration, class reform, and tourist accommodation to trace how liner travel widened beyond elite prestige alone.</small>
+          </li>
+          <li>
+            <a href="/collections/liners-rebuilt-and-renamed.html">Interested in complicated careers</a>
+            <small>Follow ships that changed names, operators, or physical form to see how liner identities were often layered and unstable across time.</small>
+          </li>
+        </ul>
+      </section>
+
+      <section class="note" id="quick-links">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Quick Links
+          <a class="section-permalink" href="#quick-links" aria-label="Permalink to Quick Links"></a>
+        </h2>
+        <p class="lede">A direct route into the main parts of the archive.</p>
+
+        <div class="quick-links">
+          <a href="/ships/ships#guide">Ship Guides</a>
+          <a href="/ships/timeline-1900-1960">Timeline</a>
+          <a href="/ships/ocean-liner-evolution-map">Evolution Map</a>
+          <a href="/definitive-guide">Research Standards</a>
+          <a href="/about">About the Project</a>
+          <a href="/scope">Project Scope</a>
+        </div>
+      </section>
+
+      <section class="note" id="final-note">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Final Note
+          <a class="section-permalink" href="#final-note" aria-label="Permalink to Final Note"></a>
+        </h2>
+        <p class="lede">
+          The Ship Archive works best when used slowly and comparatively. A single page may explain one vessel, but the broader purpose of the archive is to help readers see how ships fit into systems of design, route logic, migration, commerce, prestige, and historical change.
+        </p>
+      </section>
+
+      <div class="hero-actions" style="margin-top:1.25rem;">
+        <a class="button primary" href="/ships/ships">Enter the Ship Archive</a>
+        <a class="button" href="/collections">Browse Collections</a>
+      </div>
+
+      <div class="footer-star">★</div>
+      <p class="copyright">© Ocean Liner Curator</p>
+
+    </div>
+  </main>
+<script src="/assets/header.js" defer></script>
+       <script src="/assets/nav.js" defer></script>
+</body>
+</html>

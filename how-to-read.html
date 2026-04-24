@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How to Read a Reference Object — Ocean Liner Curator</title>
+  <meta name="description" content="A guide to understanding Reference Object records, attribution levels, and limits of evidence within Ocean Liner Curator." />
+  <link rel="canonical" href="https://www.oceanliners.net/reference-objects/how-to-read.html" />
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://www.oceanliners.net/reference-objects/how-to-read.html#article",
+    "name": "How to Read a Reference Object",
+    "description": "A guide to understanding Reference Object records, attribution levels, and limits of evidence within Ocean Liner Curator.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://www.oceanliners.net/#website",
+      "name": "Ocean Liner Curator"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+      --prose-measure:72ch;
+    }
+
+    html{
+      text-rendering:optimizeLegibility;
+      background:var(--bg);
+    }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+      min-height:100vh;
+      padding:0 0 2.25rem;
+    }
+
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    
+
+    .container > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .prose{
+      max-width:var(--prose-measure);
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+      position:relative;
+      z-index:1;
+    }
+
+    h1, h2, h3{
+      letter-spacing:-0.02em;
+    }
+
+    h1{
+      margin:0.35rem 0 0.8rem;
+      font-weight:600;
+      font-feature-settings:"kern" 1, "liga" 1;
+      font-size:2.55rem;
+      letter-spacing:0.6px;
+      text-align:center;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    .muted{
+      color:var(--muted);
+    }
+
+    .read-intro{
+      max-width:78ch;
+      margin:0.75rem auto 0;
+      text-align:center;
+    }
+
+    .read-section{
+      max-width:78ch;
+      margin:1.05rem auto 0;
+      text-align:left;
+    }
+
+    .card{
+      border:1px solid rgba(191,164,106,0.18);
+      background:rgba(0,0,0,0.10);
+      border-radius:14px;
+      padding:1.1rem 1.15rem 1.25rem;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,0.015);
+      text-align:left;
+    }
+
+    .card h2{
+      margin:0 0 0.8rem;
+      text-align:left;
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+    }
+
+    .card h2::after{
+      content:"";
+      display:block;
+      width:72px;
+      height:1px;
+      margin-top:0.45rem;
+      background:linear-gradient(
+        90deg,
+        var(--accent),
+        rgba(191,164,106,0.35),
+        transparent
+      );
+    }
+
+    .card p{
+      margin:0 0 1.1rem;
+      font-size:1.06rem;
+      line-height:1.72;
+      color:var(--text);
+    }
+
+    .card p:last-child{
+      margin-bottom:0;
+    }
+
+    .card ul{
+      list-style-position:outside;
+      padding-left:1.2rem;
+      margin:0.4rem 0 0;
+      text-align:left;
+    }
+
+    .card li{
+      margin:0.45rem 0;
+      padding-left:0;
+      line-height:1.65;
+      color:var(--muted);
+    }
+
+    .card li::marker{
+      color:rgba(191,164,106,0.65);
+    }
+
+    .term{
+      font-weight:600;
+      color:var(--text);
+    }
+
+    .notes{
+      margin-top:1rem;
+      padding:0.9rem 1rem;
+      
+      
+      
+      color:var(--muted);
+      line-height:1.65;
+    }
+
+    .notes strong{
+      color:var(--text);
+    }
+
+    .about-link{
+      margin-top:1rem;
+      font-size:0.95rem;
+      color:var(--muted);
+    }
+
+    .about-link a{
+      color:rgba(209,187,134,0.9);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+    }
+
+    .about-link a:hover{
+      border-bottom-color:rgba(191,164,106,0.65);
+    }
+
+    .cta{
+      margin-top:1.25rem;
+    }
+
+    .actions{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:0.85rem;
+      margin-bottom:0.85rem;
+    }
+
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease, background 0.15s ease;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+      min-width:220px;
+      text-align:center;
+    }
+
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      box-shadow:none;
+      filter:none;
+    }
+
+    .cta-note{
+      max-width:78ch;
+      margin:0 auto;
+      text-align:center;
+      color:var(--muted);
+      font-size:0.95rem;
+      line-height:1.6;
+    }
+
+    footer{
+      margin-top:2rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    @media (max-width:520px){
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{
+        inset:6px;
+        border-radius:11px;
+      }
+
+      .logo{
+        border-radius:11px;
+      }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem;
+      }
+
+      .card{
+        padding:1rem 1rem 1.15rem;
+      }
+
+      .card p,
+      .cta-note{
+        font-size:0.98rem;
+        line-height:1.65;
+      }
+
+      .button.secondary{
+        min-width:0;
+        width:100%;
+        max-width:280px;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{
+        transition:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="prose">
+
+      <div class="logo-mount">
+        <img class="logo" src="/logo.png" alt="Ocean Liner Curator" />
+      </div>
+
+      <h1>How to Read a Reference Object</h1>
+      <div class="rule" aria-hidden="true"></div>
+
+      <div class="read-intro">
+        <p class="muted">
+          Reference Objects are structured records designed to document physical artifacts with clarity, restraint, and transparency. This page explains how to read them—and why they are written the way they are.
+        </p>
+      </div>
+
+      <section class="read-section">
+        <div class="card">
+          <h2>What a Reference Object Is</h2>
+          <p>
+            A Reference Object is not a narrative article, appraisal, or catalog listing. It is a controlled documentation record for a single physical object.
+          </p>
+          <p>
+            Each record prioritizes observable characteristics, conservative attribution, and explicit acknowledgment of uncertainty where evidence is incomplete.
+          </p>
+        </div>
+      </section>
+
+      <section class="read-section">
+        <div class="card">
+          <h2>The Object Record</h2>
+          <p>
+            The <span class="term">Object Record</span> lists known, verifiable facts about the item: object type, materials, dimensions when recorded, and holding.
+          </p>
+          <p class="muted">
+            Absence of data is stated explicitly. Fields marked “Not recorded” indicate information that is unknown or unavailable, not overlooked.
+          </p>
+        </div>
+      </section>
+
+      <section class="read-section">
+        <div class="card">
+          <h2>Attribution Assessment</h2>
+          <p>
+            Attribution describes how confidently an object can be associated with a vessel, company, or date range.
+          </p>
+          <p>
+            Ocean Liner Curator uses four attribution levels:
+          </p>
+          <ul>
+            <li><strong>Confirmed</strong> — Supported by direct documentary or physical evidence</li>
+            <li><strong>Probable</strong> — Strong comparative or contextual evidence</li>
+            <li><strong>Attributed</strong> — Reasonable association with acknowledged uncertainty</li>
+            <li><strong>Unresolved</strong> — Insufficient evidence to assign confidently</li>
+          </ul>
+          <p class="muted">
+            Attribution levels may change as new evidence emerges.
+          </p>
+
+          <div class="notes">
+            <strong>Attribution &amp; provenance:</strong>
+            Ship-specific attribution and documented provenance are often unavailable for maritime artifacts. Design similarity, oral history, and repeated claims do not establish origin.
+
+            <p class="about-link">
+              <a href="/attribution">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</a>
+            </p>
+            <p class="about-link">
+              <a href="/provenance">Common Problems With “Provenance” in Maritime Collecting</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="read-section">
+        <div class="card">
+          <h2>Limits of Evidence</h2>
+          <p>
+            The <span class="term">Limits of Evidence</span> section is intentional. It documents what the object cannot demonstrate on its own. Listing limitations prevents speculation from being mistaken for fact.
+          </p>
+          <p>
+            This may include the absence of:
+          </p>
+          <ul>
+            <li>Passenger association</li>
+            <li>Voyage-specific dating</li>
+            <li>Ship-specific markings</li>
+            <li>Documented provenance beyond ownership</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="read-section">
+        <div class="card">
+          <h2>What You Will Not Find</h2>
+          <p>
+            Reference Objects intentionally avoid:
+          </p>
+          <ul>
+            <li>Speculative narratives</li>
+            <li>Unqualified valuation claims</li>
+            <li>Assumptions based on popularity or myth</li>
+            <li>Certainty unsupported by evidence</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="read-section">
+        <div class="card">
+          <h2>Revision and Updates</h2>
+          <p>
+            Reference Objects are not static. Records may be revised if new documentation, comparative material, or corrections become available.
+          </p>
+          <p class="muted">
+            Revision is treated as responsible historical practice, not error.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <section class="cta">
+          <div class="actions">
+            <a class="button secondary" href="/reference-objects/">Reference Objects Index</a>
+            <a class="button secondary" href="/definitive-guide.html">Definitive Guide</a>
+          </div>
+
+          <div class="cta-note">
+            Reference Objects are prepared within the Ocean Liner Curator project as evidence-first documentation.
+            <p class="copyright">© <span id="year"></span> Ocean Liner Curator.</p>
+          </div>
+        </section>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+</body>
+</html>

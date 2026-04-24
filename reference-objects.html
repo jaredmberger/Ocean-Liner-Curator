@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reference Objects — Ocean Liner Curator</title>
+  <meta name="description" content="A curated index of reference objects examined under Ocean Liner Curator standards." />
+  <link rel="canonical" href="https://www.oceanliners.net/reference-objects/" />
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://www.oceanliners.net/reference-objects/#collection",
+    "name": "Reference Objects",
+    "description": "A curated index of reference objects examined under Ocean Liner Curator standards.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://www.oceanliners.net/#website",
+      "name": "Ocean Liner Curator"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+      --prose-measure:72ch;
+    }
+
+    html{
+      text-rendering:optimizeLegibility;
+      background:var(--bg);
+    }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+      min-height:100vh;
+      padding:0 0 2.25rem;
+    }
+
+    .container{
+      width:min(960px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    
+
+    .container > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .prose{
+      max-width:var(--prose-measure);
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+      position:relative;
+      z-index:1;
+    }
+
+    h1, h2, h3{
+      letter-spacing:-0.02em;
+    }
+
+    h1{
+      margin:0.35rem 0 0.8rem;
+      font-weight:600;
+      font-feature-settings:"kern" 1, "liga" 1;
+      font-size:2.55rem;
+      letter-spacing:0.6px;
+      text-align:center;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    .muted{
+      color:var(--muted);
+    }
+
+    p{
+      margin:0 0 1.25rem;
+      line-height:1.72;
+    }
+
+    .index-intro{
+      max-width:78ch;
+      margin:0.75rem auto 0;
+      text-align:center;
+    }
+
+    .about-link{
+      margin-top:1rem;
+      font-size:0.95rem;
+      color:var(--muted);
+    }
+
+    .about-link a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+    }
+
+    .about-link a:hover{
+      border-bottom-color:rgba(191,164,106,0.65);
+    }
+
+    .index-grid{
+      margin-top:1.55rem;
+      display:grid;
+      gap:0.8rem;
+      text-align:left;
+    }
+
+    .ro-row{
+      display:grid;
+      gap:0.45rem;
+      padding:0.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:12px;
+      background:rgba(0,0,0,0.10);
+      backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+    }
+
+    @media (min-width:760px){
+      .ro-row{
+        grid-template-columns:110px minmax(0, 1fr) 220px;
+        align-items:center;
+        gap:0.95rem;
+      }
+    }
+
+    .ro-id{
+      font-size:0.92rem;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+
+    .ro-title{
+      font-size:1.02rem;
+      line-height:1.55;
+      color:var(--text);
+    }
+
+    .ro-title a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+    }
+
+    .ro-title a:hover{
+      border-bottom-color:rgba(191,164,106,0.65);
+    }
+
+    .ro-meta{
+      margin-top:0.2rem;
+      font-size:0.9rem;
+      color:var(--muted);
+    }
+
+    .ro-status{
+      text-align:left;
+      font-size:0.9rem;
+      color:var(--muted);
+    }
+
+    @media (min-width:760px){
+      .ro-status{
+        text-align:right;
+      }
+    }
+
+    .index-nav{
+      margin-top:2.3rem;
+      margin-bottom:1.35rem;
+      text-align:center;
+    }
+
+    .actions{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:0.85rem;
+    }
+
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease, background 0.15s ease;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+      min-width:180px;
+      text-align:center;
+    }
+
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      box-shadow:none;
+      filter:none;
+    }
+
+    .flags-footer{
+      display:block;
+      width:108px;
+      height:auto;
+      margin:1.1rem auto 0;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    footer{
+      margin-top:2rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    @media (max-width:520px){
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{
+        inset:6px;
+        border-radius:11px;
+      }
+
+      .logo{
+        border-radius:11px;
+      }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem;
+      }
+
+      .button.secondary{
+        min-width:0;
+        width:100%;
+        max-width:280px;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:92px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{
+        transition:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="prose">
+
+      <div class="logo-mount">
+        <img class="logo" src="/logo.png" alt="Ocean Liner Curator" />
+      </div>
+
+      <h1>Reference Objects</h1>
+      <div class="rule" aria-hidden="true"></div>
+
+      <div class="index-intro">
+        <p class="muted">
+          This register lists reference objects drawn from the Ocean Liner Curator editor’s personal collection. Records document physical characteristics, attribution assessment, and limits of evidence.
+        </p>
+        <p class="about-link">
+          New here? The quickest orientation is <a href="/ocean-liner-collecting-guide">Ocean Liner Collecting: A Curated Guide</a>, then return to this record.
+        </p>
+        <p class="about-link">
+          <a href="/how-to-read.html">How to read a Reference Object →</a>
+        </p>
+      </div>
+
+      <section class="index-grid" aria-label="Reference Objects Index">
+
+        <div class="ro-row">
+          <div class="ro-id">RO-0001</div>
+          <div class="ro-title">
+            <a href="/reference-objects/object1.html">SS Olympic Breakfast Menu Card</a>
+            <div class="ro-meta">
+              SS <em>Olympic</em>, June 2, 1929
+            </div>
+          </div>
+          <div class="ro-status">
+            Attribution: <strong>Confirmed (object-printed)</strong>
+          </div>
+        </div>
+
+        <div class="ro-row">
+          <div class="ro-id">RO-0002</div>
+          <div class="ro-title">
+            <a href="/reference-objects/object2.html">White Star Line Note Card (Line-Generic Stationery)</a>
+            <div class="ro-meta">
+              White Star Line, early 20th century / c. 1910s–1920s
+            </div>
+          </div>
+          <div class="ro-status">
+            Attribution: <strong>Company-level</strong>
+          </div>
+        </div>
+
+        <div class="ro-row">
+          <div class="ro-id">RO-0003</div>
+          <div class="ro-title">
+            <a href="/reference-objects/object3.html">Warded Skeleton Key with Handwritten Attribution Tag</a>
+            <div class="ro-meta">
+              Claimed “S.S. Majestic,” broadly c. 1880–1930
+            </div>
+          </div>
+          <div class="ro-status">
+            Attribution: <strong>Unverified / traditions-based</strong>
+          </div>
+        </div>
+
+        <div class="ro-row">
+          <div class="ro-id">RO-0004</div>
+          <div class="ro-title">
+            <a href="/reference-objects/object4.html">White Star Line-Pattern Creamer</a>
+            <div class="ro-meta">
+              White Star Line-consistent, date code “K” interpreted as 1922
+            </div>
+          </div>
+          <div class="ro-status">
+            Attribution: <strong>Line-consistent; vessel unverified</strong>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="index-nav">
+        <div class="actions">
+          <a class="button secondary" href="/">Home</a>
+        </div>
+      </div>
+
+      <img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true" />
+
+      <footer>
+        <span class="muted">Prepared as part of the Ocean Liner Curator reference framework.</span>
+        <p class="copyright">© <span id="year"></span> Ocean Liner Curator.</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+</body>
+</html>

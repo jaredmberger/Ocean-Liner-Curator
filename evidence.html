@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>What Counts as Evidence in Ocean Liner Collecting — Ocean Liner Curator</title>
+  <meta name="description" content="A clear, evidence-first framework for evaluating ocean liner artifacts—what qualifies as proof, what does not, and how to assess claims with historical restraint." />
+
+  <link rel="canonical" href="https://oceanliners.net/evidence" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/evidence#webpage",
+    "name": "What Counts as Evidence in Ocean Liner Collecting — Ocean Liner Curator",
+    "url": "https://oceanliners.net/evidence",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "A clear, evidence-first framework for evaluating ocean liner artifacts—what qualifies as proof, what does not, and how to assess claims with historical restraint.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="/logo.png">
+  <meta name="robots" content="index,follow">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+    --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+    
+    /* =========================
+   Ladder (matches “confidence ladder” vibe)
+   ========================= */
+
+.ladder-card{
+  max-width: var(--measure);
+  margin: 0.95rem auto 1.55rem auto;
+  padding: 1.05rem 1.1rem;
+  border: 1px solid rgba(191,164,106,0.26);
+  border-radius: 16px;
+  backdrop-filter: blur(2px) saturate(105%);
+  -webkit-backdrop-filter: blur(2px) saturate(105%);
+  border: 1px solid rgba(191,164,106,0.22);
+  background:
+    radial-gradient(900px 420px at 50% 0%, rgba(255,255,255,0.04), transparent 55%),
+    rgba(191,164,106,0.06);
+  text-align: left;
+  box-shadow: 0 20px 55px rgba(0,0,0,0.35);
+}
+
+.ladder-head{
+  display:flex;
+  flex-direction:column;
+  gap:0.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.ladder-title{
+  font-variant: small-caps;
+  letter-spacing: 0.10em;
+  font-weight: 600;
+  color: rgba(230,223,207,0.95);
+}
+
+.ladder-sub{
+  color: rgba(230,223,207,0.75);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.ladder{
+  list-style: none;
+  margin: 0.75rem 0 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+  position: relative;
+}
+
+
+.rung{
+  position: relative;
+  padding: 0.8rem 0.85rem 0.8rem 1.45rem;
+  border: 1px solid rgba(191,164,106,0.18);
+  border-radius: 14px;
+  background: rgba(0,0,0,0.14);
+}
+
+/* Brass “node” on the rail */
+.rung::before{
+  content:"";
+  position:absolute;
+  left: 0.42rem;
+  top: 1.40rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(191,164,106,0.22);
+  border: 1px solid rgba(191,164,106,0.55);
+  box-shadow: 0 0 0 4px rgba(191,164,106,0.06);
+}
+
+.rung-label{
+  font-weight: 600;
+  color: rgba(230,223,207,0.96);
+  margin-bottom: 0.15rem;
+}
+
+.rung-desc{
+  color: rgba(230,223,207,0.82);
+  line-height: 1.62;
+  font-size: 0.98rem;
+}
+
+.ladder-foot{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.ladder-tag{
+  display:inline-block;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(191,164,106,0.25);
+  background: rgba(0,0,0,0.10);
+  color: rgba(230,223,207,0.78);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width:520px){
+  .ladder-card{ padding: 0.95rem 0.95rem; }
+  .rung{ padding-left: 1.35rem; }
+  .ladder::before{ left: 0.5rem; }
+  .rung::before{ left: 0.37rem; }
+}
+    
+    .standards-badge{
+  margin:2.1rem auto 0;
+  text-align:center;
+}
+
+.standards-badge a{
+  display:inline-block;
+  padding:0.3rem 0.7rem;
+  font-size:0.7rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:rgba(230,223,207,0.85);
+  border:1px solid rgba(191,164,106,0.45);
+  border-radius:999px;
+  text-decoration:none;
+  background:rgba(191,164,106,0.05);
+}
+
+.standards-badge a:hover{
+  background:rgba(191,164,106,0.12);
+}
+
+.note.ladder ul{
+  margin: 0.55rem 0 0 0;
+  padding-left: 1.15rem;
+}
+
+.note.ladder li{
+  margin: 0.4rem 0;
+}
+
+
+
+    /* =========================
+       TOP MENU BAR (alignment + stacking)
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    /* =========================
+       CARD (lattice + glow + compass)
+       ========================= */
+    .container{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1 {
+  font-family: "Libre Baskerville", serif;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+    
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+    
+     .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+.about-link{
+      margin-top:1.1rem;
+      font-size:0.95rem;
+      color:var(--muted);
+    }
+
+    .about-link ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0.4rem auto 0;
+}
+
+.about-link li{
+  margin: 0.45rem 0;
+}
+
+.about-link a{
+  color: rgba(209,187,134,0.9);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(191,164,106,0.35);
+}
+
+.about-link a:hover{
+  border-bottom-color: rgba(191,164,106,0.65);
+}
+
+    .flags-footer{
+      display:block;
+      width:160px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    @media (max-width:520px){
+      .site-header{ padding:0.65rem 0; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+
+      a.button{
+        width:100%;
+        padding:0.95rem 1.1rem;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:120px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{ transition:none; }
+    }
+
+    /* =========================
+       ARTICLE TYPOGRAPHY (readability pass)
+       ========================= */
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    /* Left-align reading text (head/title remain centered via container) */
+    .scope p,
+    .scope ul,
+    .scope .note{
+      text-align:left;
+    }
+
+    .scope h2{
+  position: relative;
+  margin:2.25rem auto 0.9rem auto;
+  max-width:var(--measure);
+  width:100%;
+  text-align:left;
+  font-size:1.22rem;
+  font-weight:600;
+  color:var(--text);
+}
+
+.scope h2::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:1px;
+  margin-top:0.45rem;
+  background:linear-gradient(
+    90deg,
+    var(--accent),
+    rgba(191,164,106,0.35),
+    transparent
+  );
+}
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:0.45rem 0;
+      line-height:1.65;
+      margin-left: 1.0rem
+    }
+
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+    
+    /* =========================
+   Inline editorial links
+   ========================= */
+.scope p a,
+.scope li a,
+.scope .note a {
+  color: rgba(209,187,134,0.95); /* same tone as nav links */
+  text-decoration: none;
+  border-bottom: 1px solid rgba(191,164,106,0.45);
+  padding-bottom: 1px;
+}
+
+.scope p a:hover,
+.scope li a:hover,
+.scope .note a:hover {
+  border-bottom-color: rgba(191,164,106,0.75);
+}
+
+.scope p a:focus-visible,
+.scope li a:focus-visible,
+.scope .note a:focus-visible {
+  outline: 2px solid rgba(191,164,106,0.6);
+  outline-offset: 3px;
+}
+
+    /* Footer should remain centered */
+    footer p,
+    footer .copyright{
+      text-align: center;
+      margin-top:1.8rem;
+    }
+    
+    @media (min-width: 1300px){
+  .container{
+    width: min(1080px, calc(100% - 3rem));
+  }
+}
+
+@media (min-width: 1100px){
+  .container p{
+    max-width: 72ch;
+  }
+}
+
+.hero{
+  position: relative;
+  overflow: hidden;
+
+  /* centered "card" sizing */
+  width: min(780px, calc(100% - 1.5rem));
+  margin: 1.1rem auto 0;
+
+  /* hero sizing */
+  min-height: 52vh;
+  max-height: 640px;
+
+  display: flex;
+  align-items: flex-end;
+
+  border-radius: 16px;
+  border: 1px solid rgba(191,164,106,0.22);
+
+  background:
+    linear-gradient(to bottom,
+      rgba(10,17,16,0.70) 0%,
+      rgba(10,17,16,0.05) 45%,
+      rgba(10,17,16,0.72) 100%),
+    url("/smallolympic-hero.jpg") center/cover no-repeat;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:0.55;
+  background:
+    radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+    radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
+}
+
+.hero-inner{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 3.2rem 2.2rem 2.1rem;
+}
+
+.hero h1{
+  margin: 0 0 0.55rem;
+  font-family: "Libre Baskerville", serif;
+  font-variant: small-caps;
+  letter-spacing: 0.09em;
+  font-weight: 400;
+  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+.hero p{
+  margin: 0;
+  max-width: 70ch;
+  color: rgba(230,223,207,0.92);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 600px){
+  .hero{ min-height: 46vh; }
+  .hero-inner{ padding: 2.6rem 1.15rem 1.65rem; }
+}
+
+@media (min-width: 1300px){
+  .hero{ width: min(1080px, calc(100% - 3rem)); }
+}
+
+.container{
+  --container-pad-top: clamp(1.75rem, 3.8vh, 2.6rem);
+
+  padding:
+    var(--container-pad-top)
+    2.75rem
+    1.5rem;
+}
+    
+    
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+<div id="site-header"></div>
+
+<section class="hero" aria-label="Evidence hero">
+  <div class="hero-inner">
+    <h1>What Counts as Evidence in Ocean Liner Collecting</>
+    <p>
+     Evaluating maritime artifacts.
+    </p>
+  </div>
+</section>
+
+<main class="container scope">
+
+  <!-- <div class="logo-mount">
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+  </div>
+
+  <h1>What Counts as Evidence in Ocean Liner Collecting</h1>
+  <div class="rule"></div> -->
+
+  <p class="page-kicker">
+    A practical framework for evaluating maritime artifacts with historical restraint—separating documentation from description,
+    and evidence from belief. 
+  </p>
+  <p>This essay is one part of the broader framework outlined in <a href="/ocean-liner-collecting-guide">Ocean Liner Collecting: A Curated Guide</a>. Also available is the <a href="/glossary">Glossary</a>.</p>
+
+  <div class="note">
+    <strong>⁂ Key principle:</strong> Evidence supports a claim. It does not merely resemble one.
+  </div>
+
+  <p>
+    Ocean liner collecting exists in a space where genuine history, incomplete records, and market incentives overlap.
+    As a result, many artifacts are described with confidence that exceeds what the surviving evidence can actually support.
+  </p>
+
+  <p>
+    This page outlines what qualifies as evidence in ocean liner collecting, what does not, and how to evaluate claims
+    without defaulting to either cynicism or credulity. The goal is not to diminish artifacts—but to describe them
+    accurately, proportionately, and honestly. This page is written as a reference standard and is intended to be cited in discussions of attribution, provenance, and documentation quality.</p> <p>
+  The purpose is to increase precision—placing objects where the evidence supports them, and preserving uncertainty where it does not. 
+</p><p>For a broader overview beyond artifacts, see <a href="/ocean-liner-research">Ocean Liner Research: Sources, Methods, and Evidence</a>.</p>
+ <div class="note" id="scope-limits">
+  <strong>Scope & limits:</strong> This framework addresses attribution, provenance, and documentation quality.
+  It does not appraise market value, and it does not claim certainty where primary documentation is absent.
+</div>
+
+  <h2>Evidence Is Claim-Specific</h2>
+  <p>
+    Evidence does not exist in the abstract. It supports a particular claim—and only that claim.
+    Most disputes in collecting arise because different questions are being answered simultaneously. This distinction is central to understanding why many ocean liner artifacts cannot be reliably tied to specific ships, as discussed in <a href="/attribution">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</a>.
+  </p>
+  <ul>
+    <li><strong>Is the object period?</strong> (Does it plausibly date to the claimed era?)</li>
+    <li><strong>Is it authentic as a category?</strong> (Is it a genuine maritime or shipping-line object?)</li>
+    <li><strong>Is it attributable?</strong> (Can it be tied to a specific ship, voyage, or event?)</li>
+  </ul>
+
+  <div class="note">
+    Evidence sufficient for one question may be inadequate for the next.
+  </div>
+
+  <h2>Characteristics of Strong Evidence</h2>
+  <p>
+    Strong evidence is contemporaneous, specific, and independently verifiable. It does not need to be perfect,
+    but it should withstand skeptical review.
+  </p>
+  <ul>
+    <li><strong>Contemporaneous documentation</strong> created during the object’s period of use</li>
+    <li><strong>Primary-source materials</strong> such as letters, receipts, inventories, or company records</li>
+    <li><strong>Photographic confirmation</strong> showing the same object or design in period context</li>
+    <li><strong>Manufacturer or printer identifiers</strong> that can be dated independently</li>
+    <li><strong>Traceable custody</strong> with names, dates, and transfers—not just a general origin story</li>
+  </ul>
+
+  <h2>What Sounds Convincing—but Is Not Evidence</h2>
+  <p>
+    The following appear frequently in listings and discussions. They may be sincere and even plausible,
+    but they do not constitute proof on their own. Many of these issues stem from misunderstandings about provenance, which are examined in detail in <a href="/provenance">Common Problems With “Provenance” in Maritime Collecting</a>.
+  </p>
+  <ul>
+    <li>Family stories without documentation</li>
+    <li>Repeated dealer descriptions or inherited catalog language</li>
+    <li>Certificates lacking cited primary sources</li>
+    <li>Visual similarity to well-known examples</li>
+    <li>Statements framed as belief rather than support (“thought to be,” “believed,” “attributed”)</li>
+  </ul>
+
+  <h2>Similarity Is Not Attribution</h2>
+  <p>
+    Ocean liner companies reused designs, suppliers, printers, and formats extensively. Visual similarity
+    can help narrow possibilities—but it cannot, by itself, establish ship-specific origin.
+  </p>
+  <ul>
+    <li>Identical designs may span multiple ships</li>
+    <li>Formats may remain unchanged for years</li>
+    <li>Suppliers often served several lines simultaneously</li>
+  </ul>
+
+  <div class="note">
+    <strong>Working distinction:</strong> Similarity supports plausibility, not certainty.
+  </div>
+
+  <h2>Negative Evidence Matters</h2>
+  <p>
+    Evidence is not only what is present, but what is absent. Missing documentation, gaps in custody,
+    or contradictions with known records must be weighed alongside supporting material.
+  </p>
+  <ul>
+    <li>Does the object lack expected markings?</li>
+    <li>Is there an unexplained gap in its history?</li>
+    <li>Does the claim conflict with documented timelines?</li>
+  </ul>
+
+  <h2>Market Incentives and Attribution Drift</h2>
+  <p>
+    The more famous a ship, the stronger the incentive—intentional or otherwise—to attach unproven material to it.
+    Over time, tentative language hardens into asserted fact through repetition.
+  </p>
+  <ul>
+    <li>Line-level objects become ship-level claims</li>
+    <li>Era descriptions narrow into named associations</li>
+    <li>Repetition substitutes for verification</li>
+  </ul>
+
+  <div class="note">
+    <strong>⁂ Practical rule:</strong> Fame raises the burden of proof, not lowers it.
+  </div>
+
+  <h2>Acceptable Conclusions</h2>
+  <p>
+    In many cases, the most accurate conclusion is also the least dramatic.
+  </p>
+  <ul>
+    <li><strong>Period maritime object</strong> (dateable, but not ship-specific)</li>
+    <li><strong>Probable line association</strong> (consistent, but undocumented)</li>
+    <li><strong>Unattributed</strong> (no reliable basis for narrowing further)</li>
+  </ul>
+
+  <p>
+    These conclusions preserve historical integrity while remaining honest about the limits of surviving evidence.
+  </p>
+
+  <div class="note">
+    <strong>Recommended language:</strong> “The object is consistent with the period and type, but current evidence
+    is insufficient for specific attribution.”
+  </div>
+
+  <h2>A Practical Evidence Audit</h2>
+  <ul>
+    <li><strong>Claim:</strong> What exactly is being asserted?</li>
+    <li><strong>Support:</strong> What evidence directly supports that claim?</li>
+    <li><strong>Source:</strong> Is the evidence primary or derivative?</li>
+    <li><strong>Gaps:</strong> What is missing or uncertain?</li>
+    <li><strong>Incentive:</strong> Who benefits from the attribution?</li>
+  </ul>
+  
+  <div class="ladder-card" id="evidence-ladder" aria-label="Evidence ladder">
+  <div class="ladder-head">
+    <div class="ladder-title">Evidence Ladder</div>
+    <div class="ladder-sub">Stronger evidence supports narrower, more confident claims.</div>
+  </div><span class="ladder-tag">Order: strong → weak</span>
+
+  <ol class="ladder" aria-label="Evidence strength rungs (strong to weak)">
+    <li class="rung">
+      <div class="rung-label">Primary documentation</div>
+      <div class="rung-desc">Company files, receipts, inventories, passenger correspondence created during use.</div>
+    </li>
+
+    <li class="rung">
+      <div class="rung-label">Contemporaneous attribution</div>
+      <div class="rung-desc">Period labeling tied to a named person, place, voyage, or event—verifiable independently.</div>
+    </li>
+
+    <li class="rung">
+      <div class="rung-label">Independent identifiers</div>
+      <div class="rung-desc">Maker marks, printer codes, stamps, serials that can be dated outside the claim.</div>
+    </li>
+
+    <li class="rung">
+      <div class="rung-label">Corroborating context</div>
+      <div class="rung-desc">Period photographs, matched designs, verified exemplars—supports plausibility, not certainty.</div>
+    </li>
+
+    <li class="rung">
+      <div class="rung-label">Oral history</div>
+      <div class="rung-desc">Family stories without documentation—valuable context, but not proof on its own.</div>
+    </li>
+  </ol>
+
+  <div class="ladder-foot">
+    
+  </div>
+</div>
+
+  <h2>Related Essays</h2>
+  <div class="about-link">
+    <ul>
+    <li>
+  <a href="/how-to-identify-fake-ocean-liner-memorabilia.html">
+    How to Identify Fake Ocean Liner Memorabilia
+  </a></li>
+    <li><a href="/certificates-of-authenticity">A brief explainer on COAs and documentation</a></li>
+      <li><a href="/attribution">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</a></li>
+      <li><a href="/provenance">Common Problems With “Provenance” in Maritime Collecting</a></li>
+      <li><a href="/identify">How to Identify Authentic Ocean Liner Memorabilia</a></li>
+      <li><a href="/scope">Project Scope</a></li>
+    </ul>
+  </div>
+
+<div class="standards-badge">
+  <a href="/sources" aria-label="Sources and standards">
+    Methodology · Sources &amp; Standards
+  </a>
+</div>
+
+  <footer>
+    <a class="button secondary" href="/">Home</a>
+
+    <img class="flags-footer" src="/engraved-gs2.PNG" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script src="/assets/header.js" defer></script>
+       <script src="/assets/nav.js" defer></script>
+
+<!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+</body>
+</html>

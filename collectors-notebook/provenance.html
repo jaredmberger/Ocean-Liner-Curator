@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Provenance Pitfalls — Collector’s Notebook — Ocean Liner Curator</title>
+  <meta name="description" content="A practical overview of provenance pitfalls in ocean liner collecting: where chains of custody break, how stories inflate, and how to keep claims aligned with documentation." />
+
+  <link rel="canonical" href="https://oceanliners.net/collectors-notebook/provenance" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/collectors-notebook/provenance#webpage",
+    "name": "Provenance Pitfalls — Collector’s Notebook — Ocean Liner Curator",
+    "url": "https://oceanliners.net/collectors-notebook/provenance",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "A practical overview of provenance pitfalls in ocean liner collecting: where chains of custody break, how stories inflate, and how to keep claims aligned with documentation.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Provenance Pitfalls — Collector’s Notebook — Ocean Liner Curator">
+  <meta property="og:description" content="A practical overview of provenance pitfalls in ocean liner collecting: where chains of custody break, how stories inflate, and how to keep claims aligned with documentation.">
+  <meta property="og:url" content="https://oceanliners.net/collectors-notebook/provenance">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Provenance Pitfalls — Collector’s Notebook — Ocean Liner Curator">
+  <meta name="twitter:description" content="A practical overview of provenance pitfalls in ocean liner collecting: where chains of custody break, how stories inflate, and how to keep claims aligned with documentation.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+    --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    /* =========================
+       TOP MENU BAR
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    /* =========================
+       CARD
+       ========================= */
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      pointer-events:none;
+      z-index:0;
+      opacity:0.95;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1{
+      margin:0 0 0.8rem 0;
+      font-weight:600;
+      font-feature-settings:"kern" 1, "liga" 1;
+      font-size:2.55rem;
+      letter-spacing:0.6px;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:110px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    /* Buttons */
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      margin-bottom:2.75rem;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+      margin-bottom:0;
+    }
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    /* =========================
+       ARTICLE TYPOGRAPHY
+       ========================= */
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    .scope p,
+    .scope ul,
+    .scope .note{
+      text-align:left;
+    }
+
+    .scope h2{
+      margin:2.25rem auto 0.7rem auto;
+      max-width:var(--measure);
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+      letter-spacing:0.2px;
+      text-align:left;
+    }
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    /* Inline editorial links */
+    .scope p a,
+    .scope li a,
+    .scope .note a{
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+    .scope p a:hover,
+    .scope li a:hover,
+    .scope .note a:hover{
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    .scope p a:focus-visible,
+    .scope li a:focus-visible,
+    .scope .note a:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    /* Optional: definition list */
+    .scope .deflist{
+      margin:0.2rem auto 1.35rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+    }
+    .scope .defrow{
+      display:flex;
+      gap:0.75rem;
+      padding:0.55rem 0;
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+    .scope .defrow:first-child{ border-top:none; padding-top:0.1rem; }
+    .scope .defterm{
+      min-width:10.5rem;
+      font-weight:600;
+      color:rgba(230,223,207,0.95);
+    }
+    .scope .defdesc{
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+    @media (max-width:520px){
+      .scope .defrow{ flex-direction:column; gap:0.25rem; }
+      .scope .defterm{ min-width:auto; }
+    }
+
+    /* NEW: “pitfall” cards */
+    .pitfalls{
+      max-width:var(--measure);
+      margin:0.25rem auto 1.55rem auto;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:0.85rem;
+      text-align:left;
+    }
+    .pitfall{
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+    }
+    .pitfall h3{
+      margin:0 0 0.35rem 0;
+      font-size:1.05rem;
+      font-weight:600;
+      color:rgba(230,223,207,0.96);
+      letter-spacing:0.2px;
+    }
+    .pitfall p{
+      margin:0.1rem 0 0 0;
+      max-width:none;
+      font-size:1.0rem;
+      line-height:1.65;
+      color:rgba(230,223,207,0.86);
+      text-align:left;
+    }
+
+    /* NEW: callout list */
+    .checks{
+      max-width:var(--measure);
+      margin:0.25rem auto 1.55rem auto;
+      padding:0;
+      list-style:none;
+      text-align:left;
+    }
+    .checks li{
+      margin:0 0 0.75rem 0;
+      padding:0.9rem 1.0rem;
+      border:1px solid rgba(191,164,106,0.20);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+
+    /* Center footer copyright reliably */
+    footer{ text-align:center; }
+    footer p,
+    footer .copyright{
+      max-width:none;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    @media (max-width:520px){
+      .site-header{ padding:0.65rem 0; }
+      .button{ width:100%; text-align:center; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:110px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+
+      .pitfall{ padding:0.9rem 0.95rem; }
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+<div id="site-header"></div>
+
+<main class="container scope">
+
+  <div class="logo-mount">
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+  </div>
+
+  <h1>Provenance Pitfalls</h1>
+  <div class="rule"></div>
+
+  <p class="page-kicker">
+    “Provenance” is often used as a synonym for “a story.” In collecting, provenance is a <em>chain of custody supported by documentation</em>.
+    Maritime objects frequently pass through shipbreaking, auctions, chandlers, private swaps, estate sales, and dealer inventories—often without records.
+    This section is a field guide to the most common failure points, and how to keep claims aligned with what can actually be shown.
+  </p>
+
+  <div class="note">
+    <strong>⁂ Guiding principle:</strong> Weak provenance does not automatically mean an item is fake.
+    It means the chain cannot be proven—and therefore the claim must stay modest.
+  </div>
+
+  <h2>What Provenance Is (and What It Isn’t)</h2>
+
+  <div class="deflist" role="group" aria-label="Provenance definitions">
+    <div class="defrow">
+      <div class="defterm">Provenance</div>
+      <div class="defdesc">
+        A documented chain of custody: who held the object, when, and how it transferred—supported by records that can be checked.
+      </div>
+    </div>
+    <div class="defrow">
+      <div class="defterm">A story</div>
+      <div class="defdesc">
+        A narrative about origin (“came from Titanic,” “recovered from the ship,” “from an officer’s estate”) without a document trail.
+        Stories can be true—but they are not self-proving.
+      </div>
+    </div>
+    <div class="defrow">
+      <div class="defterm">Attribution</div>
+      <div class="defdesc">
+        A claim about what the evidence supports (type, maker, period, line, ship). Provenance can support attribution, but it is not interchangeable with it.
+      </div>
+    </div>
+  </div>
+
+  <h2>The Most Common Provenance Pitfalls</h2>
+  <p>
+    These patterns show up again and again. Most are not “scams” so much as story inflation—small unknowns getting smoothed over into certainty.
+  </p>
+
+  <div class="pitfalls" role="list" aria-label="Common provenance pitfalls">
+    <article class="pitfall" role="listitem">
+      <h3>1) “From an estate” without the person’s connection</h3>
+      <p>
+        Estate claims often lack the key link: what was the person’s role, what ship/line did they have access to, and is that documented?
+        “Estate” can mean anything from direct family retention to a resale lot with no primary context.
+      </p>
+    </article>
+
+    <article class="pitfall" role="listitem">
+      <h3>2) “Shipbreaker source” without records</h3>
+      <p>
+        Shipbreaking dispersal is real—but many objects changed hands multiple times. Without invoices, yard records, or contemporaneous documentation,
+        “came from the breakers” becomes a non-falsifiable claim.
+      </p>
+    </article>
+
+    <article class="pitfall" role="listitem">
+      <h3>3) Auction descriptions treated as primary evidence</h3>
+      <p>
+        Auction catalogs can be useful secondary sources, but they often repeat consignor narratives.
+        Unless a catalog cites documentation (and you can inspect it), treat it as <em>attribution by the seller</em>, not proof.
+      </p>
+    </article>
+
+    <article class="pitfall" role="listitem">
+      <h3>4) “Museum quality” and “COA” language</h3>
+      <p>
+        Certificates and “museum” phrasing are marketing devices unless they reference verifiable sources.
+        A COA is a claim about authenticity, not evidence of it.
+      </p>
+    </article>
+
+    <article class="pitfall" role="listitem">
+      <h3>5) The “famous ship magnet”</h3>
+      <p>
+        When a ship name dramatically increases price, stories tend to drift toward it over time.
+        If the object works equally well as a line-level or period-level item, assume the ship claim is the fragile part until proved.
+      </p>
+    </article>
+
+    <article class="pitfall" role="listitem">
+      <h3>6) Handwritten tags as identity documents</h3>
+      <p>
+        Tags can be helpful—especially if old, consistent, and context-rich—but handwriting is easy to add later.
+        A tag is best treated as a lead to investigate, not a final ID.
+      </p>
+    </article>
+  </div>
+
+  <h2>A Practical “Provenance Check” You Can Reuse</h2>
+  <p>
+    When a claim is made, run it through these questions. The goal is not to “disprove” everything—it’s to find the strongest defensible statement.
+  </p>
+
+  <ul class="checks" aria-label="Provenance check questions">
+    <li><strong>What is the earliest documented appearance?</strong> A dated photo, receipt, letter, inventory list, or catalog entry beats oral tradition.</li>
+    <li><strong>Who is the named source, exactly?</strong> “A sailor,” “a steward,” and “a family friend” are not identities. Roles can be checked only when specific.</li>
+    <li><strong>Does the claimed access make sense?</strong> Would that person plausibly handle this category of object? (Store room vs passenger area vs engineering spaces.)</li>
+    <li><strong>Is the chain continuous?</strong> If there are gaps (“then it was sold around”), downgrade confidence. Gaps aren’t fatal—just limiting.</li>
+    <li><strong>What evidence is independent of the story?</strong> Maker marks, date marks, line marks, pattern matches—things that still exist even if the story disappears.</li>
+    <li><strong>What is the narrowest safe claim?</strong> Often: object type + maker + period + line-level context, stopping short of ship ID.</li>
+  </ul>
+
+  <div class="note">
+    <strong>Practical takeaway:</strong> Most provenance narratives contain a true core plus added certainty.
+    Your job as a collector is to keep the description anchored to what survives: marks, materials, documentation, and comparisons.
+  </div>
+
+  <h2>How This Section Connects to the Rest of the Site</h2>
+  <ul>
+    <li>Provenance is discussed in depth in <a href="/provenance">Common Problems With “Provenance” in Maritime Collecting</a>.</li>
+    <li>For claim discipline, see <a href="/attribution">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</a> and <a href="/unknown">When Evidence Is Limited: Why “Unknown” Is a Responsible Conclusion</a>.</li>
+    <li>For what counts as strong support, see <a href="/evidence">What Counts as Evidence in Ocean Liner Collecting?</a>.</li>
+  </ul>
+
+  <h2>Pages in This Section</h2>
+  <ul>
+    <li><a href="/collectors-notebook/handwritten-tags">Handwritten Tags: When They Help, When They Don’t</a></li>
+    <li><a href="/collectors-notebook/auction-descriptions">Auction Descriptions as Secondary Sources</a></li>
+    <li><a href="/certificates-of-authenticity">Certificates of Authenticity: What They Are (and Aren’t)</a></li>
+  </ul>
+
+  <footer>
+    <a class="button secondary" href="/collectors-notebook">Collector’s Notebook</a>
+
+    <img class="flags-footer" src="/engraved-wheel.png" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script>
+  document.querySelectorAll(".nav-dropdown").forEach((d) => {
+    d.addEventListener("toggle", () => {
+      if (!d.open) return;
+      document.querySelectorAll(".nav-dropdown").forEach((other) => {
+        if (other !== d) other.open = false;
+      });
+    });
+  });
+</script>
+
+  <script src="/assets/header.js" defer></script> <script src="/assets/nav.js" defer></script>
+</body>
+</html>

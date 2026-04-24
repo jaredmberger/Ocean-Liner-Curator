@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JPZ291Q3RB');
+  </script>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Life Below Deck: Crew &amp; Systems — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded research collection exploring engine rooms, boiler rooms, ventilation, provisioning, service circulation, and the hidden labor that made ocean liners function." />
+  <link rel="canonical" href="https://www.oceanliners.net/collections/life-below-deck-crew-and-systems.html" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Life Below Deck: Crew &amp; Systems — Ocean Liner Curator" />
+  <meta property="og:description" content="Explore the hidden labor, machinery, and operational systems beneath passenger life at sea." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.oceanliners.net/collections/life-below-deck-crew-and-systems.html" />
+  <meta property="og:image" content="https://www.oceanliners.net/assets/og/life-below-deck.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Life Below Deck: Crew &amp; Systems — Ocean Liner Curator" />
+  <meta name="twitter:description" content="Explore the hidden labor, machinery, and operational systems beneath passenger life at sea." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/assets/og/life-below-deck.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://www.oceanliners.net/collections/life-below-deck-crew-and-systems.html#webpage",
+    "url": "https://www.oceanliners.net/collections/life-below-deck-crew-and-systems.html",
+    "name": "Life Below Deck: Crew & Systems",
+    "headline": "Life Below Deck: Crew & Systems",
+    "description": "A curator-minded research collection exploring engine rooms, boiler rooms, ventilation, provisioning, service circulation, and the hidden labor that made ocean liners function.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@id": "https://www.oceanliners.net/#website"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Ocean Liner Curator",
+      "url": "https://www.oceanliners.net/"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --panel-strong:rgba(12,22,20,0.88);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --border-strong:rgba(191,164,106,0.4);
+      --shadow:0 18px 44px rgba(0,0,0,0.34);
+      --shadow-soft:0 10px 28px rgba(0,0,0,0.24);
+      --rule:linear-gradient(90deg, transparent, rgba(191,164,106,0.95), transparent);
+      --max:780px;
+      --wide:1080px;
+      --glass-blur:blur(2px);
+    }
+
+    *{ box-sizing:border-box; }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      color:var(--text);
+      font-family:"Spectral", serif;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+      overflow-x:hidden;
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, #0a1110 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(30,52,48,0.32) 0%, rgba(10,17,16,0) 62%),
+        var(--bg);
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(rgba(255,255,255,0.015), rgba(255,255,255,0.015)),
+        url("/tile7.png");
+      opacity:0.08;
+      mix-blend-mode:screen;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      color:rgba(209,187,134,0.96);
+      text-decoration-thickness:1px;
+      text-underline-offset:0.2em;
+    }
+
+    a:hover{
+      color:#ead7a5;
+    }
+
+    #site-header{
+      position:relative;
+      z-index:20;
+    }
+
+    .page-shell{
+      position:relative;
+      z-index:1;
+      width:min(var(--wide), calc(100% - 1.5rem));
+      margin:1rem auto 2.25rem;
+    }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      min-height:560px;
+      border:1px solid var(--border);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      background:
+        linear-gradient(180deg, rgba(8,14,13,0.2) 0%, rgba(8,14,13,0.7) 100%),
+        radial-gradient(circle at 78% 24%, rgba(191,164,106,0.12) 0%, rgba(191,164,106,0) 28%),
+        url("/collections/crew-hero.PNG") center center / cover no-repeat,
+        var(--panel-strong);
+      display:flex;
+      align-items:flex-end;
+      isolation:isolate;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:0;
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.08) 0%, rgba(10,17,16,0.18) 32%, rgba(10,17,16,0.86) 100%);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0 0;
+      height:56%;
+      z-index:0;
+      pointer-events:none;
+      background:
+        radial-gradient(900px 320px at 50% 100%, rgba(191,164,106,0.12), transparent 60%);
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:1;
+      width:min(var(--max), calc(100% - 1.5rem));
+      margin:0 auto 1rem;
+      padding:1.1rem;
+    }
+
+    .hero-plate{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:1.2rem 1.1rem 1.15rem;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.018) 34%, rgba(255,255,255,0) 64%),
+        linear-gradient(180deg, rgba(15,27,25,0.84) 0%, rgba(12,20,19,0.9) 100%);
+      box-shadow:0 14px 34px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.03);
+      backdrop-filter:var(--glass-blur);
+      -webkit-backdrop-filter:var(--glass-blur);
+    }
+
+    .hero-plate::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(191,164,106,0.11), transparent 28%),
+        linear-gradient(120deg, rgba(255,255,255,0.045) 0%, rgba(255,255,255,0.012) 32%, transparent 60%);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:0.55rem;
+      margin:0 0 0.9rem;
+      color:#d7c08a;
+      font-size:0.74rem;
+      letter-spacing:0.18em;
+      text-transform:uppercase;
+      line-height:1.2;
+    }
+
+    .eyebrow::before{
+      content:"★";
+      display:inline-grid;
+      place-items:center;
+      width:1.65rem;
+      height:1.65rem;
+      border-radius:999px;
+      background:rgba(15,27,25,0.45);
+      border:1px solid rgba(191,164,106,0.3);
+      color:rgba(191,164,106,0.95);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.04), 0 4px 10px rgba(0,0,0,0.18);
+      font-size:0.8rem;
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+    }
+
+    h1,h2,h3{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-weight:700;
+      line-height:1.22;
+      text-wrap:balance;
+    }
+
+    h1{
+      font-size:clamp(2rem, 4vw, 3.25rem);
+      letter-spacing:0.01em;
+      margin-bottom:0.85rem;
+    }
+
+    .hero-sub{
+      margin:0;
+      max-width:62ch;
+      color:var(--text);
+      font-size:1.02rem;
+    }
+
+    .hero-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.65rem;
+      margin-top:1rem;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:0.48rem;
+      min-height:2rem;
+      padding:0.42rem 0.8rem;
+      border-radius:999px;
+      background:rgba(15,27,25,0.62);
+      border:1px solid rgba(191,164,106,0.22);
+      color:var(--muted);
+      font-size:0.84rem;
+      line-height:1.2;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+    }
+
+    .meta-pill strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    .section{
+      width:min(var(--wide), calc(100% - 0rem));
+      margin:1.1rem auto 0;
+    }
+
+    .section-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:16px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.042) 0%, rgba(255,255,255,0.014) 28%, rgba(255,255,255,0) 60%),
+        linear-gradient(180deg, rgba(15,27,25,0.78) 0%, rgba(12,20,19,0.86) 100%);
+      box-shadow:var(--shadow-soft);
+      backdrop-filter:var(--glass-blur);
+      -webkit-backdrop-filter:var(--glass-blur);
+    }
+
+    .section-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 12% 12%, rgba(191,164,106,0.08), transparent 26%);
+      opacity:0.95;
+    }
+
+    .intro-grid{
+      display:grid;
+      grid-template-columns:1.2fr 0.8fr;
+      gap:1rem;
+      align-items:stretch;
+    }
+
+    .intro-copy,
+    .intro-side{
+      position:relative;
+      padding:1.15rem;
+    }
+
+    .intro-copy p,
+    .intro-side p{
+      margin:0 0 1rem;
+      color:var(--text);
+    }
+
+    .intro-copy p:last-child,
+    .intro-side p:last-child{
+      margin-bottom:0;
+    }
+
+    .section-heading{
+      text-align:center;
+      padding:1.3rem 1rem 0;
+    }
+
+    .section-kicker{
+      display:block;
+      color:#d7c08a;
+      text-transform:uppercase;
+      letter-spacing:0.18em;
+      font-size:0.72rem;
+      margin-bottom:0.5rem;
+      text-align:center !important;
+    }
+
+    .section-heading h2{
+      font-size:clamp(1.45rem, 2.2vw, 2.15rem);
+      text-align:center !important;
+    }
+
+    .heading-rule{
+      width:140px;
+      height:1px;
+      margin:0.95rem auto 0;
+      background:var(--rule);
+      border-radius:999px;
+    }
+
+    .section-intro{
+      max-width:70ch;
+      margin:0.85rem auto 0;
+      color:var(--muted);
+      font-size:0.98rem;
+    }
+
+    .pill-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.6rem;
+      margin-top:0.95rem;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      min-height:2rem;
+      padding:0.42rem 0.75rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.24);
+      background:rgba(15,27,25,0.58);
+      color:var(--muted);
+      font-size:0.82rem;
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+    }
+
+    .quote-box{
+      position:relative;
+      padding:1rem 1rem 1rem 1.1rem;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.18);
+      background:rgba(11,19,18,0.5);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.025);
+    }
+
+    .quote-box::before{
+      content:"★";
+      position:absolute;
+      top:0.8rem;
+      right:0.95rem;
+      color:rgba(191,164,106,0.28);
+      font-size:1rem;
+    }
+
+    .quote-box p{
+      margin:0;
+      color:var(--text);
+    }
+
+    .quote-box strong{
+      color:#d7c08a;
+    }
+
+    .path-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:1rem;
+      padding:1.25rem;
+    }
+
+    .path-card{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+      padding:1rem 1rem 0.95rem;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.22);
+      background:
+        linear-gradient(120deg, rgba(255,255,255,0.045) 0%, rgba(255,255,255,0.012) 30%, transparent 60%),
+        rgba(14,24,23,0.64);
+      box-shadow:0 10px 22px rgba(0,0,0,0.22);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      overflow:hidden;
+    }
+
+    .path-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:radial-gradient(circle at 88% 12%, rgba(191,164,106,0.09), transparent 26%);
+      pointer-events:none;
+    }
+
+    .path-top{
+      display:flex;
+      align-items:flex-start;
+      gap:0.8rem;
+      margin-bottom:0.75rem;
+    }
+
+    .path-icon{
+      flex:0 0 auto;
+      width:2rem;
+      height:2rem;
+      border-radius:999px;
+      display:grid;
+      place-items:center;
+      font-size:0.88rem;
+      color:rgba(191,164,106,0.95);
+      background:rgba(15,27,25,0.45);
+      border:1px solid rgba(191,164,106,0.3);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+
+    .path-card h3{
+      font-size:1.04rem;
+      margin-top:0.08rem;
+    }
+
+    .path-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:0.96rem;
+    }
+
+    .path-card ul{
+      margin:0.85rem 0 0;
+      padding-left:1.05rem;
+      color:var(--text);
+    }
+
+    .path-card li{
+      margin:0 0 0.42rem;
+    }
+
+    .path-card li::marker{
+      color:var(--accent);
+    }
+
+    .notes-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:1rem;
+      padding:1.25rem;
+    }
+
+    .note-card{
+      position:relative;
+      padding:1rem;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.2);
+      background:rgba(11,19,18,0.52);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.025);
+    }
+
+    .note-card h3{
+      font-size:1rem;
+      margin-bottom:0.55rem;
+    }
+
+    .note-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .reading-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:1rem;
+      padding:1.25rem;
+    }
+
+    .reading-card{
+      position:relative;
+      display:block;
+      color:inherit;
+      text-decoration:none;
+      padding:1rem 1rem 0.95rem;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.22);
+      background:
+        linear-gradient(120deg, rgba(255,255,255,0.045) 0%, rgba(255,255,255,0.012) 30%, transparent 60%),
+        rgba(14,24,23,0.62);
+      box-shadow:0 10px 22px rgba(0,0,0,0.2);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      transition:transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .reading-card:hover{
+      transform:translateY(-2px);
+      border-color:rgba(191,164,106,0.38);
+      box-shadow:0 14px 28px rgba(0,0,0,0.26);
+    }
+
+    .reading-card-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:0.75rem;
+      margin-bottom:0.55rem;
+    }
+
+    .reading-card-title{
+      font-family:"Libre Baskerville", serif;
+      font-size:1.03rem;
+      color:var(--text);
+      text-decoration:underline;
+      text-decoration-thickness:1px;
+      text-underline-offset:0.2em;
+      text-decoration-color:rgba(191,164,106,0.34);
+    }
+
+    .reading-card-type{
+      flex:0 0 auto;
+      color:#d7c08a;
+      font-size:0.72rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+    }
+
+    .reading-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .closing{
+      padding:1.2rem 1.15rem 1.25rem;
+      text-align:center;
+    }
+
+    .closing p{
+      max-width:64ch;
+      margin:0.85rem auto 0;
+      color:var(--muted);
+    }
+
+    .site-footer{
+      width:min(var(--max), calc(100% - 1.5rem));
+      margin:1.2rem auto 2rem;
+      text-align:center;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .footer-star{
+      position:relative;
+      margin:1rem auto 0;
+      width:max-content;
+      color:var(--accent);
+      font-size:0.98rem;
+      line-height:1;
+      opacity:0.9;
+    }
+
+    .footer-star::before,
+    .footer-star::after{
+      content:"";
+      position:absolute;
+      top:50%;
+      width:48px;
+      height:1px;
+      background:rgba(191,164,106,0.55);
+      transform:translateY(-50%);
+    }
+
+    .footer-star::before{ right:calc(100% + 14px); }
+    .footer-star::after{ left:calc(100% + 14px); }
+
+    @media (max-width: 980px){
+      .intro-grid,
+      .path-grid,
+      .notes-grid,
+      .reading-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 720px){
+      .page-shell{
+        width:min(calc(100% - 1rem), var(--wide));
+        margin-top:0.75rem;
+      }
+
+      .hero{
+        min-height:520px;
+        background-position:center center;
+      }
+
+      .hero-inner{
+        width:min(calc(100% - 1rem), var(--max));
+        margin-bottom:0.8rem;
+        padding:0.5rem;
+      }
+
+      .hero-plate,
+      .intro-copy,
+      .intro-side,
+      .path-grid,
+      .notes-grid,
+      .reading-grid,
+      .closing{
+        padding-left:0.95rem;
+        padding-right:0.95rem;
+      }
+
+      h1{
+        font-size:clamp(1.9rem, 8vw, 2.6rem);
+      }
+
+      .hero-sub{
+        font-size:0.98rem;
+      }
+    }
+
+    @media (min-width: 1300px){
+      .page-shell{
+        width:min(1120px, calc(100% - 3rem));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="page-shell">
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-inner">
+        <div class="hero-plate">
+          <p class="eyebrow">Research Collection</p>
+          <h1 id="page-title">Life Below Deck: Crew &amp; Systems</h1>
+          <p class="hero-sub">
+            Ocean liners were not sustained by public rooms alone. Beneath the visible ship lay a second world of engine rooms, boiler spaces, ventilating trunks, storerooms, laundries, galleys, and service corridors—an operational structure held together by labor, hierarchy, and constant movement. This collection follows the ship where passengers often could not go.
+          </p>
+
+          <div class="hero-meta" aria-label="Page metadata">
+            <span class="meta-pill"><strong>Focus:</strong> labor, machinery, infrastructure</span>
+            <span class="meta-pill"><strong>Lens:</strong> function before romance</span>
+            <span class="meta-pill"><strong>Scope:</strong> operations beneath passenger life</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="overview-heading">
+      <div class="section-card intro-grid">
+        <div class="intro-copy">
+          <span class="section-kicker">Collection Overview</span>
+          <h2 id="overview-heading">A different way to read an ocean liner</h2>
+          
+
+          <p>
+            Much liner history begins with grandeur: staircases, dining saloons, first-class suites, and the language of prestige. This collection begins elsewhere. It starts with heat, ventilation, service movement, fuel, water, laundry, storage, and the hidden human systems that made passenger life possible.
+          </p>
+
+          <p>
+            The point is not to remove beauty from the story, but to place it inside a working structure. Fine interiors depended on unseen routines. Comfort depended on discipline, routing, machinery, and labor. A polished public room was only the surface expression of a much deeper operational order.
+          </p>
+
+          <div class="pill-list" aria-label="Topics covered">
+            <span class="pill">Engine rooms</span>
+            <span class="pill">Boiler spaces</span>
+            <span class="pill">Ventilation</span>
+            <span class="pill">Provisioning</span>
+            <span class="pill">Laundry &amp; storage</span>
+            <span class="pill">Crew circulation</span>
+            <span class="pill">Service hierarchy</span>
+          </div>
+        </div>
+
+        <div class="intro-side">
+          <div class="quote-box">
+            <p>
+              <strong>Collection principle:</strong> read the ship as a system, not just a spectacle. Before decoration, ask what had to happen for the crossing to function at all.
+            </p>
+          </div>
+
+          <p style="margin-top:1rem;">
+            This collection works especially well alongside broader questions of evidence, material culture, design, and ship interpretation. It offers a structural answer to an easy mistake: treating the visible ship as the whole ship.
+          </p>
+
+          <p>
+            Here, prestige is not ignored. It is re-situated. Luxury becomes something supported by engineering, circulation, staffing, storage, and routines that most passengers barely saw.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="paths-heading">
+      <div class="section-card">
+        <div class="section-heading">
+          <span class="section-kicker">Research Paths</span>
+          <h2 id="paths-heading">Core themes within the collection</h2>
+        
+          <p class="section-intro">
+            These paths let the collection hold both machinery and human structure. Together they show how ocean liners operated as tightly organized environments rather than simple floating hotels.
+          </p>
+        </div>
+
+        <div class="path-grid">
+          <article class="path-card">
+            <div class="path-top">
+              <div class="path-icon" aria-hidden="true">⚙</div>
+              <div>
+                <h3>Engine Rooms &amp; Power</h3>
+              </div>
+            </div>
+            <p>
+              Follow propulsion as lived infrastructure: engines, turbines, shafts, vibration, watchkeeping, and the disciplined rhythms of mechanical maintenance.
+            </p>
+            <ul>
+              <li>Reciprocating engines, turbines, and later change</li>
+              <li>Engine-room labor and technical hierarchy</li>
+              <li>Power as the hidden basis of schedule and prestige</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <div class="path-top">
+              <div class="path-icon" aria-hidden="true">🔥</div>
+              <div>
+                <h3>Boilers, Heat &amp; Fuel</h3>
+              </div>
+            </div>
+            <p>
+              Boiler rooms and bunker spaces remind us that movement required heat, fuel handling, and difficult physical labor long before comfort reached the passenger decks.
+            </p>
+            <ul>
+              <li>Coal-era stokers and trimmers</li>
+              <li>Fuel logistics as a design constraint</li>
+              <li>The relationship between heat, endurance, and route</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <div class="path-top">
+              <div class="path-icon" aria-hidden="true">🌀</div>
+              <div>
+                <h3>Air, Water &amp; Habitability</h3>
+              </div>
+            </div>
+            <p>
+              Passenger comfort depended on systems that are easy to overlook: ventilation, heating, plumbing, freshwater management, drainage, and sanitary control.
+            </p>
+            <ul>
+              <li>Ventilators, ducts, and air movement</li>
+              <li>Plumbing, washrooms, and freshwater supply</li>
+              <li>How technical systems shaped daily experience</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <div class="path-top">
+              <div class="path-icon" aria-hidden="true">🍽</div>
+              <div>
+                <h3>Provisioning &amp; Service</h3>
+              </div>
+            </div>
+            <p>
+              Dining, housekeeping, and hospitality required continuous backstage work: storage, cold rooms, pantries, galleys, service routes, and disciplined timing.
+            </p>
+            <ul>
+              <li>Food loading and storage below deck</li>
+              <li>Galley organization and stewarding chains</li>
+              <li>Invisible circulation behind polished service</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <div class="path-top">
+              <div class="path-icon" aria-hidden="true">👥</div>
+              <div>
+                <h3>Crew Hierarchy &amp; Spatial Order</h3>
+              </div>
+            </div>
+            <p>
+              The ship’s labor was stratified. Officers, engineers, stewards, cooks, firemen, sailors, and attendants occupied different spaces and moved through different routes.
+            </p>
+            <ul>
+              <li>Rank, role, and living conditions</li>
+              <li>Crew messes, cabins, and restricted zones</li>
+              <li>Separation as an operating principle</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <div class="path-top">
+              <div class="path-icon" aria-hidden="true">↘</div>
+              <div>
+                <h3>Service Paths &amp; Hidden Movement</h3>
+              </div>
+            </div>
+            <p>
+              One of the most revealing things to study is circulation: who could move where, by what routes, and how the ship concealed work from passenger view.
+            </p>
+            <ul>
+              <li>Back corridors, lifts, pantries, and stairs</li>
+              <li>Passenger calm versus backstage intensity</li>
+              <li>How planning separated spectacle from function</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="approach-heading">
+      <div class="section-card">
+        <div class="section-heading">
+          <span class="section-kicker">Interpretive Approach</span>
+          <h2 id="approach-heading">What this collection is trying to do</h2>
+          
+        </div>
+
+        <div class="notes-grid">
+          <article class="note-card">
+            <h3>Restore hidden labor to the story</h3>
+            <p>
+              Ocean liners are often remembered through public glamour. This collection restores the workers, routines, and support systems that made that glamour possible, without reducing them to background detail.
+            </p>
+          </article>
+
+          <article class="note-card">
+            <h3>Connect design to operation</h3>
+            <p>
+              Decorative rooms did not float free of function. They depended on mechanical support, storage, service circulation, cleaning systems, staffing, and technical planning beneath and around them.
+            </p>
+          </article>
+
+          <article class="note-card">
+            <h3>Read prestige as an organized achievement</h3>
+            <p>
+              Luxury at sea was not merely aesthetic. It was operationally manufactured. The calmer and more effortless a crossing felt to passengers, the more disciplined the system behind it usually had to be.
+            </p>
+          </article>
+
+          <article class="note-card">
+            <h3>Encourage evidence-first interpretation</h3>
+            <p>
+              The collection favors plans, technical descriptions, service logic, material evidence, and observed constraints over vague romantic language. It asks how we know a ship functioned, not only how it was described.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="read-next-heading">
+      <div class="section-card">
+        <div class="section-heading">
+          <span class="section-kicker">Suggested Paths</span>
+          <h2 id="read-next-heading">Related pages and companion directions</h2>
+          
+          <p class="section-intro">
+            These can sit as supporting links now, even if some pages are still planned. They help place this collection inside the larger Ocean Liner Curator structure.
+          </p>
+        </div>
+
+        <div class="reading-grid">
+          <a class="reading-card" href="/designs-interiors/functional-design">
+            <div class="reading-card-top">
+              <span class="reading-card-title">Functional Design</span>
+              <span class="reading-card-type">Designs &amp; Interiors</span>
+            </div>
+            <p>
+              A natural companion page on how technical and service needs shaped spatial decisions above deck as well as below it.
+            </p>
+          </a>
+
+          <a class="reading-card" href="/collectors-notebook/service-vs-souvenir">
+            <div class="reading-card-top">
+              <span class="reading-card-title">Service vs Souvenir</span>
+              <span class="reading-card-type">Collector’s Notebook</span>
+            </div>
+            <p>
+              Reinforces the same interpretive discipline: begin with function, use, and context before romance or assumption.
+            </p>
+          </a>
+
+          <a class="reading-card" href="/designs-interiors/how-route-shaped-interior-planning">
+            <div class="reading-card-top">
+              <span class="reading-card-title">How Route Shaped Interior Planning</span>
+              <span class="reading-card-type">Designs &amp; Interiors</span>
+            </div>
+            <p>
+              Extends the argument outward by showing how route, climate, and service expectations affected planning choices throughout the ship.
+            </p>
+          </a>
+
+          <a class="reading-card" href="/ships/ships">
+            <div class="reading-card-top">
+              <span class="reading-card-title">Ship Archive</span>
+              <span class="reading-card-type">Reference</span>
+            </div>
+            <p>
+              Use the archive to move from themes back to individual ships, comparing how different liners organized machinery, service, and crew space.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="closing-heading">
+      <div class="section-card closing">
+        <span class="section-kicker">Closing Thought</span>
+        <h2 id="closing-heading">The visible ship rested on an invisible one</h2>
+        
+        <p>
+          To study life below deck is not to leave the ocean liner behind. It is to understand the ship more completely. Public grandeur, passenger comfort, punctual service, and the ritual of the crossing all depended on a second world of fuel, air, labor, timing, hierarchy, and controlled movement. This collection follows that world with a curator’s eye.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p><a href="/collections/">Back to Research Collections</a></p>
+      <p class="footer-star" aria-hidden="true">★</p>
+    </footer>
+
+  </main>
+ <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

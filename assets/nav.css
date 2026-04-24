@@ -1,0 +1,894 @@
+/* ==========================================================
+   nav.css — Ocean Liner Curator
+   Unified Stage System: one source of truth for page width
+   ========================================================== */
+
+/* =========================
+   GLOBAL SAFETY
+   ========================= */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+
+/* ==========================================================
+   OLC UNIFIED STAGE SYSTEM
+   - Controls all “content column” widths site-wide
+   - Header, hero, containers all align to the same stage
+   ========================================================== */
+
+:root{
+  /* Stage width (default) */
+  --olc-stage: min(780px, calc(100% - 1.5rem));
+
+  /* Stage width (large screens) */
+  --olc-stage-desktop: min(1100px, calc(100% - 3rem));
+
+  /* When to widen (matches your older per-page pattern) */
+  --olc-stage-break: 1300px;
+
+  /* Shared horizontal padding for inner content */
+  --olc-pad-x: 2.75rem;
+  --olc-pad-x-mobile: 1.25rem;
+
+  /* Global rounding */
+  --olc-radius: 16px;
+  --olc-radius-mobile: 14px;
+
+  /* Prose measure (one knob) */
+  --olc-measure: 72ch;
+
+  /* Brass + panel tokens used in nav UI */
+  --olc-accent: #bfa46a;
+  --olc-accent-rgba-22: rgba(191,164,106,0.22);
+  --olc-accent-rgba-24: rgba(191,164,106,0.24);
+  --olc-accent-rgba-28: rgba(191,164,106,0.28);
+  --olc-accent-rgba-35: rgba(191,164,106,0.35);
+  --olc-accent-rgba-65: rgba(191,164,106,0.65);
+  --olc-link: rgba(209,187,134,0.95);
+
+  --olc-panel: rgba(15,27,25,0.96);
+  --olc-header: rgba(15,27,25,0.55);
+  --olc-text-hi: rgba(255,255,255,0.96);
+
+  --olc-link: #cdb57a;
+  --olc-link-hover: #f0e1b7;
+}
+
+
+
+/* Widen stage on large screens */
+@media (min-width:1300px){
+  :root{ --olc-stage: var(--olc-stage-desktop); }
+}
+
+/* Mobile tighten */
+@media (max-width:520px){
+  :root{
+    --olc-pad-x: var(--olc-pad-x-mobile);
+    --olc-radius: var(--olc-radius-mobile);
+  }
+}
+
+/* Apply stage sizing to key alignment points */
+.header-inner,
+.container,
+.hero,
+.paths,
+.page-container{
+  width: var(--olc-stage) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Align header padding to main plates */
+.header-inner{
+  padding-left: var(--olc-pad-x) !important;
+  padding-right: var(--olc-pad-x) !important;
+}
+
+/* Radius alignment */
+.container,
+.hero{
+  border-radius: var(--olc-radius) !important;
+}
+
+/* Hero inner should fill hero */
+.hero-inner{ width: 100% !important; }
+
+/* Optional prose helper (if you use it on pages) */
+.prose{
+  max-width: var(--olc-measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   TOP MENU BAR
+   ========================= */
+
+.site-header{
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem 0;
+  background: var(--olc-header);
+  border-bottom: 1px solid var(--olc-accent-rgba-22);
+  position: relative;
+  z-index: 5000;
+
+  /* Make header span full width even inside flex layouts */
+  align-self: stretch;
+  display: block;
+}
+
+/* Injected header container span full width */
+#site-header{
+  width: 100%;
+  align-self: stretch;
+}
+
+/* Header inner container (stage-aligned via unified stage above) */
+.header-inner{
+  margin: 0 auto;
+}
+
+/* =========================
+   NAV ROW
+   ========================= */
+
+.site-nav{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  font-size: 0.95rem;
+  min-width: 0; /* iOS/Safari flex weirdness guard */
+}
+
+/* =========================
+   TOP-LEVEL LINKS + SUMMARIES
+   ========================= */
+
+.nav-link{
+  color: var(--olc-link);
+  text-decoration: none;
+  border-bottom: 1px solid var(--olc-accent-rgba-35);
+  padding-bottom: 2px;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-link:hover{
+  border-bottom-color: var(--olc-accent-rgba-65);
+}
+
+/* Keyboard focus */
+.nav-link:focus-visible,
+.nav-dropdown > summary:focus-visible,
+.dropdown-link:focus-visible{
+  outline: 2px solid var(--olc-accent-rgba-65);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* =========================
+   DROPDOWNS (details/summary)
+   ========================= */
+
+.nav-dropdown{ position: relative; }
+
+/* Make <summary> behave like the rest of nav */
+.nav-dropdown > summary{
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-dropdown > summary::-webkit-details-marker{ display: none; }
+
+/* Dropdown panel: hidden by default, shown when open */
+.dropdown-panel{
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+
+  min-width: 320px;
+  max-width: 420px;
+
+  padding: 10px;
+  z-index: 6000;
+
+  background: var(--olc-panel);
+  border: 1px solid var(--olc-accent-rgba-24);
+  border-radius: 14px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.45),
+    0 0 0 1px rgba(255,255,255,0.02) inset;
+
+  /* closed state */
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transform-origin: top left;
+}
+
+.nav-dropdown[open] > .dropdown-panel{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Hover-open for desktop pointer devices */
+@media (hover:hover) and (pointer:fine){
+  .nav-dropdown:hover > .dropdown-panel{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+/* Animation */
+@media (prefers-reduced-motion: no-preference){
+  .dropdown-panel{
+    transition: opacity 140ms ease, transform 140ms ease;
+  }
+}
+
+/* Dropdown links */
+.dropdown-link{
+  display: block;
+  padding: 8px 0;
+  margin: 0 10px;
+
+  color: var(--olc-link);
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--olc-accent-rgba-28);
+}
+
+.dropdown-link:last-of-type{ border-bottom: none; }
+
+.dropdown-link:hover,
+.dropdown-link:focus-visible{
+  border-bottom-color: var(--olc-accent-rgba-65);
+  color: var(--olc-text-hi);
+}
+
+/* Mobile safety */
+@media (max-width:520px){
+  .dropdown-panel{
+    min-width: 260px;
+    max-width: calc(100vw - 24px);
+  }
+}
+
+/* =========================
+   Secondary Dropdown (Short Answers)
+========================= */
+
+.nav-subdropdown {
+  position: relative;
+}
+
+.nav-subdropdown > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-subdropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* indent + subtle hierarchy */
+.subdropdown-panel {
+  margin-top: 6px;
+  margin-left: 14px;
+  padding-left: 12px;
+  border-left: 1px solid rgba(191,164,106,0.25);
+}
+
+/* optional arrow indicator */
+.nav-subdropdown > summary::after {
+  content: "▸";
+  float: right;
+  opacity: .6;
+  transition: transform .2s ease;
+}
+
+.nav-subdropdown[open] > summary::after {
+  transform: rotate(90deg);
+}
+
+/* =========================
+   SITE MARK (OceanLiners.net)
+   ========================= */
+
+.site-mark{
+  margin-left: auto;
+  font-family: "Libre Baskerville", Baskerville, serif;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: rgba(230,223,207,0.95) !important;
+  opacity: 0.9;
+  text-shadow: 0 0 4px rgba(191,164,106,0.15);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.site-star{
+  font-size: 0.9rem;
+  color: var(--olc-accent);
+  opacity: 0.85;
+  text-shadow: 0 0 3px rgba(191,164,106,0.25);
+  display: inline-block;
+  transform: translateY(-0.75px);
+  margin-right: 8px;
+}
+
+.site-mark{
+  display:inline-flex;
+  align-items:center;
+  gap:0.35rem;
+  cursor:default;
+
+  color:inherit;              /* keeps your exact text color */
+  text-decoration:none;      /* removes underline */
+  cursor:pointer;            /* still clickable */
+}
+
+.site-mark,
+.site-mark:link,
+.site-mark:visited,
+.site-mark:hover,
+.site-mark:active,
+.site-mark:focus{
+  color: inherit;
+  text-decoration: none !important;   /* kills underline everywhere */
+}
+
+/* =========================
+   RESPONSIVE REFINEMENTS
+   ========================= */
+
+@media (max-width:900px){
+  .site-mark{
+    font-size: 0.82rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width:520px){
+  .site-header{ padding: 0.65rem 0; }
+
+  /* Hide the text only (keep the star) */
+  .site-mark{
+    font-size: 0;
+    letter-spacing: 0;
+  }
+
+  .site-star{
+    font-size: 0.9rem;
+    margin-right: 0;
+  }
+}
+
+/* =========================
+   SMALL SCREEN DROPDOWN FIX
+   ========================= */
+
+@media (max-width:520px){
+  .nav-dropdown{
+    position: static; /* prevent awkward absolute anchoring */
+  }
+
+  .dropdown-panel{
+    position: absolute;
+    left: 0;
+    right: auto;
+
+    min-width: unset;
+    width: calc(100vw - 32px);
+    max-width: calc(100vw - 32px);
+
+    margin-left: 0;
+    max-height: 70vh;
+    overflow-y: auto;
+
+    padding: 10px 14px;
+  }
+}
+
+/* =========================
+   SUMMARY MARKER FIXES
+   ========================= */
+
+/* iPad Safari sometimes shows a tiny fallback marker for <summary> */
+details > summary{
+  list-style: none !important;
+  display: inline-block;
+}
+
+details > summary::-webkit-details-marker{ display: none !important; }
+details > summary::marker{ content: "" !important; }
+
+summary{
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+summary:focus-visible{
+  outline: 2px solid rgba(191,164,106,0.6);
+  outline-offset: 3px;
+}
+
+summary:focus:not(:focus-visible){ outline: none; }
+
+details{ display: block; }
+
+details > summary{
+  list-style: none !important;
+  display: inline-block !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+details > summary::-webkit-details-marker{
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* If header injection hasn’t happened yet */
+#site-header:empty{
+  background: none;
+  border-bottom: none;
+}
+
+a.button.secondary{
+backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+      background: linear-gradient(
+        180deg,
+        rgba(191,164,106,0.10) 0%,
+        rgba(10,17,16,0.16) 55%,
+        rgba(0,0,0,0.15) 100%
+      ) !important;
+      color:var(--link) !important;
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.32);
+    }
+    
+.button.secondary{
+backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+      background: linear-gradient(
+        180deg,
+        rgba(191,164,106,0.10) 0%,
+        rgba(10,17,16,0.16) 55%,
+        rgba(0,0,0,0.15) 100%
+      ) !important;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.32);
+      opacity: 1 !important;
+      color:var(--link) !important;
+      border:1px solid rgba(191,164,106,0.45);
+      padding:0.9rem 1.35rem;
+      border-radius:10px;
+      text-decoration:none;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    
+.standards-badge a{
+      display:inline-block;
+      padding:0.3rem 0.7rem;
+      font-size:0.9rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:var(--link) !important;
+      border:1px solid rgba(191,164,106,0.45);
+      border-radius:999px;
+      text-decoration:none;
+      background:rgba(191,164,106,0.05);
+    }
+    
+    .secondary-nav a{
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+      background: linear-gradient(
+        180deg,
+        rgba(191,164,106,0.10) 0%,
+        rgba(10,17,16,0.16) 55%,
+        rgba(0,0,0,0.15) 100%
+      ) !important;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.32);
+    }
+    
+.scope h2::after{
+  content:"";
+  display:block;
+  width:140px;
+    height:2px;
+    margin:0 0 1.35rem;
+    background:linear-gradient(90deg, var(--accent), transparent);
+    opacity:0.82;
+}
+
+/* ==========================================================
+   UNIVERSAL H2 DECORATIVE RULE — OLC SYSTEM
+   Follows heading alignment automatically
+   ========================================================== */
+
+h2{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+/* decorative brass rule */
+h2::after{
+  content:"";
+  width:140px;
+  height:2px;
+  margin-top:.65rem;
+
+  background:linear-gradient(90deg,var(--accent),transparent);
+  opacity:.82;
+}
+
+/* alignment helpers (optional but powerful) */
+
+h2.center{
+  text-align:center;
+  align-items:center;
+}
+
+h2.right{
+  text-align:right;
+  align-items:flex-end;
+}
+    
+h1 {
+      font-family: "Libre Baskerville", serif;
+      font-variant: small-caps;
+      letter-spacing: 0.08em;
+      font-weight: 400;
+    }
+    
+/* Global editorial column heading alignment */
+.container h2{
+  margin:2.25rem auto 0.7rem auto;
+  max-width:var(--measure);
+  text-align:left;
+}
+
+.footer-star{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:18px !important;
+
+  width:100% !important;
+  margin:1.5rem auto 0 !important;
+  line-height:1 !important;
+
+  color:var(--olc-accent) !important;
+  font-size:.9rem !important;
+  opacity:0.85 !important;
+  text-align:center !important;
+}
+
+.footer-star::before,
+.footer-star::after{
+  content:"" !important;
+  display:block !important;
+  width:48px !important;
+  height:1px !important;
+  background:var(--olc-accent) !important;
+  opacity:0.85 !important;
+  flex:0 0 48px !important;
+}
+
+.copyright{
+    font-size:0.72rem !important;
+    opacity:0.55 !important;
+    margin-top:2.2rem !important;
+    margin-bottom:1rem !important;
+  }
+  
+ /* =========================================================
+   OLC Universal Frosted Plate System
+   Applies to .card and .note (opt-in utility)
+   ========================================================= */
+
+.card,
+.matrix,
+.ladder,
+.check,
+.dos-col,
+.compare,
+.signals li,
+.theme-card,
+.object-card,
+.related-card,
+.curator-note,
+.meta-plate,
+.deflist,
+.ladder-card,
+.timeline-block,
+.timeline,
+.facts,
+.note{
+  position: relative;
+  border-radius: 14px;
+
+  /* glass */
+  backdrop-filter: blur(2px) saturate(105%);
+  -webkit-backdrop-filter: blur(2px) saturate(105%);
+
+  /* surface */
+  background: rgba(10,17,16,0.16);
+
+  /* depth */
+  box-shadow: 0 10px 24px rgba(0,0,0,0.32);
+
+  /* subtle polish */
+  overflow: hidden;
+}
+
+
+/* refined hover lift (desktop only) */
+@media (hover:hover){
+  .card:hover,
+  .note:hover{
+    transform: translateY(-2px);
+    border-color: rgba(191,164,106,0.32);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.36);
+  }
+}
+
+
+.card,
+.ladder,
+.check,
+.compare,
+.signals li,
+.theme-card,
+.object-card,
+.related-card,
+.curator-note,
+.timeline-block,
+.timeline,
+.meta-plate,
+.deflist,
+.ladder-card,
+.facts,
+.note{
+  position:relative;
+  overflow:hidden;
+}
+
+.card::after,
+.compare::after,
+.signals li::after,
+.theme-card::after,
+.object-card::after,
+.related-card::after,
+.curator-note::after,
+.timeline-block::after,
+.timeline::after,
+.meta-plate::after,
+.deflist::after,
+.ladder-card::after,
+.facts::after,
+.note::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.045) 0%,
+    rgba(255,255,255,0.015) 30%,
+    transparent 60%
+  );
+
+  opacity:.40;
+}
+
+/* =========================================================
+   Editorial note override (ship guides only)
+   ========================================================= */
+
+.guide .note{
+  position: static !important;
+  display: block !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+
+  padding: 0 !important;
+  margin: 0.15rem 0 0 !important;
+
+  font-size: 0.96rem !important;
+  color: var(--muted);
+}
+
+.guide .note::after{
+  content:none;
+}
+
+.compare-head{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:0.35rem !important;
+}
+
+.tag{
+  display:block;
+  font-size:0.74em;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  opacity:0.7;
+  margin:0.35rem 0 0 0;
+  white-space:normal;
+  line-height:1.3;
+}
+
+@media (max-width: 520px){
+
+  .compare-row{
+    display:grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .compare-cell{
+    padding:0.9rem 0.85rem !important;
+  }
+
+  .compare ul{
+    padding-left:1.05rem !important;
+  }
+
+  .compare li{
+    margin:0.5rem 0 !important;
+    line-height:1.55 !important;
+  }
+
+  .compare{
+    margin-bottom:2.5rem !important;
+  }
+
+}
+
+@media (max-width: 520px){
+  .compare li{
+    font-size:0.96rem;
+  }
+}
+
+/* =========================================================
+ .logo-mount{
+      width: min(680px, 100%);
+      height: 260px;
+      margin: 0 auto 1.05rem auto;
+      padding: 10px;
+      border-radius: 16px;
+      border: 1px solid rgba(191,164,106,0.55);.0hh
+      background: rgba(10,17,16,0.16);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    ========================================================= */
+    
+    .compare{
+      max-width:var(--measure);
+      margin:0.35rem auto 1.55rem auto;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      overflow:hidden;
+      background:rgba(0,0,0,0.12);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+      text-align:left;
+      --compare-cols:1fr 1fr;
+    }
+    .compare-row{
+      display:grid;
+      grid-template-columns:var(--compare-cols);
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+    .compare-row:first-child{ border-top:none; }
+    .compare-row > * + *{
+      border-left:1px solid rgba(191,164,106,0.28);
+    }
+    .compare-cell{
+      padding:1.05rem 1.15rem;
+    }
+    .compare-head{
+      font-weight:600;
+      color:rgba(230,223,207,0.96);
+      background:rgba(191,164,106,0.06);
+    }
+    .compare-cell ul{
+      margin:0.35rem 0 0 0;
+      padding-left:1.15rem;
+      max-width:none;
+    }
+    .compare-cell li{
+      margin:0.45rem 0;
+      line-height:1.62;
+    }
+    .compare--2col{ --compare-cols:1fr 1fr; }
+    .compare--2col-text{ --compare-cols:1.15fr 1.35fr; }
+
+    .compare-cell:nth-child(2){
+      background:linear-gradient(
+        90deg,
+        rgba(191,164,106,0.04),
+        transparent 60%
+      );
+    }
+    
+        .index-item{
+      border:1px solid rgba(191,164,106,0.20);
+      border-radius:14px;
+      padding:0.95rem 1.05rem;
+      background:rgba(0,0,0,0.12);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+      margin:0 0 0.85rem 0;
+    }
+    
+    .bound{
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+    }
+
+.phrases li{
+      margin:0 0 0.75rem 0;
+      padding:0.9rem 1.0rem;
+      border:1px solid rgba(191,164,106,0.20);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+      backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+    
+    .site-mark,
+.site-mark:link,
+.site-mark:visited,
+.site-mark:hover,
+.site-mark:active,
+.site-mark:focus{
+  color: inherit;
+  text-decoration: none !important;   /* kills underline everywhere */
+  border-bottom: none !important;
+}
+
+.site-mark{
+  -webkit-text-decoration: none !important;
+}

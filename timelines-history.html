@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  html { background:#0a1110; }
+</style>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0a1110">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Timelines and History — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded entry point into Ocean Liner Curator timelines and history pages: chronologies, line histories, and reference tools that place ships within broader historical change." />
+  <link rel="canonical" href="https://oceanliners.net/timelines-history" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Timelines and History — Ocean Liner Curator" />
+  <meta property="og:description" content="Explore timelines, line histories, and reference pages that place ocean liners within larger historical patterns of change, rivalry, prestige, and decline." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://oceanliners.net/timelines-history" />
+  <meta property="og:image" content="https://oceanliners.net/social-preview.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Timelines and History — Ocean Liner Curator" />
+  <meta name="twitter:description" content="Explore timelines, line histories, and reference pages that place ocean liners within larger historical patterns of change, rivalry, prestige, and decline." />
+  <meta name="twitter:image" content="https://oceanliners.net/social-preview.jpg" />
+
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/timelines-history#webpage",
+    "name": "Timelines and History — Ocean Liner Curator",
+    "url": "https://oceanliners.net/timelines-history",
+    "description": "A curator-minded entry point into Ocean Liner Curator timelines and history pages: chronologies, line histories, and reference tools that place ships within broader historical change.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Ocean Liner Curator",
+      "url": "https://oceanliners.net/"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Ocean liner timelines and history"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:#0f1716;
+      --panel-2:#121c1a;
+      --line:rgba(191,164,106,.22);
+      --line-strong:rgba(191,164,106,.42);
+      --text:#e8e0cf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,.12);
+      --shadow:0 18px 42px rgba(0,0,0,.32);
+      --radius:20px;
+      --radius-sm:14px;
+      --stage:min(820px, calc(100% - 1.5rem));
+      --stage-wide:min(1080px, calc(100% - 1.5rem));
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; }
+    body{
+      background:
+        radial-gradient(circle at top, rgba(191,164,106,.08), transparent 36%),
+        linear-gradient(180deg, #0a1110 0%, #0d1514 100%);
+      color:var(--text);
+      font-family:"Spectral", serif;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    img{ max-width:100%; display:block; }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .container{
+      width:var(--stage);
+      margin:0 auto;
+      padding:1rem 0 3rem;
+    }
+
+    .hero{
+      width:var(--stage-wide);
+      margin:1rem auto 1.25rem;
+      padding:0 0.75rem;
+    }
+
+    .hero-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:
+        linear-gradient(180deg, rgba(20,31,29,.95), rgba(12,19,18,.98)),
+        url("/quatrefoil.svg");
+      box-shadow:var(--shadow);
+    }
+
+    .hero-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(135deg, rgba(191,164,106,.09), transparent 35%),
+        radial-gradient(circle at 85% 20%, rgba(191,164,106,.12), transparent 24%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:1;
+      padding:3.25rem 1.4rem 2.4rem;
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      margin:0 0 .9rem;
+      padding:.38rem .8rem;
+      border:1px solid var(--line-strong);
+      border-radius:999px;
+      background:rgba(191,164,106,.08);
+      color:var(--muted);
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      font-size:.72rem;
+    }
+
+    h1,h2,h3{
+      font-family:"Libre Baskerville", serif;
+      line-height:1.25;
+      letter-spacing:.01em;
+      margin:0 0 .7rem;
+      color:#f2ead9;
+    }
+
+    h1{
+      font-size:clamp(2rem, 4.8vw, 3.2rem);
+      margin-bottom:.75rem;
+    }
+
+    .hero-subtitle{
+      max-width:760px;
+      margin:0 auto 1.25rem;
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.75rem;
+      justify-content:center;
+      margin-top:1.15rem;
+    }
+
+    .button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.45rem;
+      min-height:46px;
+      padding:.78rem 1.1rem;
+      border-radius:999px;
+      border:1px solid var(--line-strong);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+      background: linear-gradient(
+        180deg,
+        rgba(191,164,106,0.10) 0%,
+        rgba(10,17,16,0.16) 55%,
+        rgba(0,0,0,0.15) 100%
+      ) !important;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.32);
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+      transition:transform .15s ease, background .15s ease, border-color .15s ease;
+    }
+
+    .button:hover{
+      text-decoration:none;
+      transform:translateY(-1px);
+      background:rgba(191,164,106,.14);
+      border-color:rgba(191,164,106,.55);
+    }
+
+    .button.primary{
+      background:linear-gradient(180deg, rgba(191,164,106,.2), rgba(191,164,106,.1));
+    }
+
+    .main-card{
+      border:1px solid var(--line);
+      border-radius:26px;
+      background-color:rgba(15,27,25,0.78);
+      background-image:url("quatrefoil.svg");
+      background-size:360px 360px;
+      background-position:center 38%;
+      background-repeat:repeat;
+      box-shadow:var(--shadow);
+      padding:1.15rem;
+    }
+
+    .note{
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:linear-gradient(180deg, rgba(18,28,26,.82), rgba(12,19,18,.92));
+      padding:1.2rem 1rem 1.1rem;
+      margin:0 0 1rem;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.02);
+    }
+
+    .intro-note{
+      background:
+        linear-gradient(180deg, rgba(191,164,106,.08), rgba(191,164,106,.03)),
+        linear-gradient(180deg, rgba(18,28,26,.82), rgba(12,19,18,.92));
+    }
+
+    .ornament-line{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:.8rem;
+      color:var(--accent);
+      margin:0 0 .95rem;
+      opacity:.9;
+    }
+
+    .ornament-line::before,
+    .ornament-line::after{
+      content:"";
+      height:1px;
+      flex:1;
+      max-width:110px;
+      background:linear-gradient(90deg, transparent, rgba(191,164,106,.55), transparent);
+    }
+
+    .ornament-star{
+      font-size:.9rem;
+      line-height:1;
+    }
+
+    .section-title{
+      text-align:center;
+      align-items:center;
+      font-size:1.3rem;
+      margin:0 0 .85rem;
+      padding:0 2rem;
+    }
+
+    .section-permalink{
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translateY(-50%);
+      width:1.1rem;
+      height:1.1rem;
+      border-radius:50%;
+      opacity:.75;
+      text-decoration:none;
+    }
+
+    .lede{
+      margin:0;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:1rem;
+      margin:0 0 1rem;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:1rem;
+      margin:0 0 1rem;
+    }
+
+    .mini-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:1rem;
+      background:linear-gradient(180deg, rgba(191,164,106,.06), rgba(191,164,106,.02));
+      backdrop-filter: blur(2px) saturate(105%);
+      -webkit-backdrop-filter: blur(2px) saturate(105%);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.32);
+    }
+
+    .mini-card h3{
+      font-size:1rem;
+      margin-bottom:.45rem;
+    }
+
+    .mini-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+
+    .path-list,
+    .sitemap-list,
+    .principles-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+
+    .path-list li,
+    .sitemap-list li,
+    .principles-list li{
+      border-top:1px solid rgba(191,164,106,.16);
+      padding:.9rem 0;
+    }
+
+    .path-list li:first-child,
+    .sitemap-list li:first-child,
+    .principles-list li:first-child{
+      border-top:0;
+      padding-top:0;
+    }
+
+    .path-list a,
+    .sitemap-list a{
+      display:inline-block;
+      font-weight:700;
+      color:#f0e5cd;
+    }
+
+    .path-list small,
+    .sitemap-list small{
+      display:block;
+      margin-top:.2rem;
+      color:var(--muted);
+      font-size:.96rem;
+      line-height:1.65;
+    }
+
+    .principles-list strong{
+      color:#f0e5cd;
+    }
+
+    .callout{
+      margin:1rem 0;
+      padding:1rem 1rem 1rem 1.05rem;
+      border-left:3px solid var(--accent);
+      border-radius:12px;
+      background:rgba(191,164,106,.06);
+      color:var(--muted);
+    }
+
+    .quick-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.6rem;
+      justify-content:center;
+      margin-top:.9rem;
+    }
+
+    .quick-links a{
+      padding:.48rem .78rem;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(191,164,106,.06);
+      color:var(--accent);
+      text-decoration:none;
+      font-size:.93rem;
+    }
+
+    .quick-links a:hover{
+      background:rgba(191,164,106,.12);
+      text-decoration:none;
+    }
+
+    .featured-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:1rem;
+      margin-top:1rem;
+    }
+
+ .featured-card{
+  display:block;
+  position:relative;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1rem 2.2rem 1rem 1rem;
+  background:linear-gradient(180deg, rgba(191,164,106,.08), rgba(191,164,106,.02));
+  box-shadow:0 10px 24px rgba(0,0,0,.28);
+  transition:transform .15s ease, border-color .15s ease, background .15s ease;
+  text-decoration:none;
+}
+
+    .featured-card:hover{
+      text-decoration:none;
+      transform:translateY(-2px);
+      border-color:rgba(191,164,106,.45);
+      background:linear-gradient(180deg, rgba(191,164,106,.11), rgba(191,164,106,.03));
+    }
+
+    .featured-card-top{
+  display:block;
+  margin-bottom:.55rem;
+}
+
+.featured-card-title{
+  display:block;
+  color:#f0e5cd;
+  font-weight:700;
+  font-size:1.02rem;
+  line-height:1.35;
+  margin:0 0 .35rem;
+}
+
+.featured-card-meta{
+  display:block;
+  color:var(--accent);
+  font-size:.86rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  line-height:1.35;
+}
+    .featured-card-desc{
+      margin:0;
+      color:var(--muted);
+      font-size:.97rem;
+      line-height:1.65;
+    }
+
+    .footer-star{
+      position:relative;
+      text-align:center;
+      color:var(--accent);
+      font-size:.9rem;
+      margin:2rem 0 .6rem;
+      line-height:1;
+      opacity:.85;
+    }
+
+    .footer-star::before,
+    .footer-star::after{
+      content:"";
+      position:absolute;
+      top:50%;
+      width:48px;
+      height:1px;
+      background:var(--accent);
+      opacity:.85;
+    }
+
+    .footer-star::before{ right:calc(50% + 18px); }
+    .footer-star::after{ left:calc(50% + 18px); }
+
+    .copyright{
+      text-align:center;
+      color:var(--muted);
+      font-size:.92rem;
+      margin:.35rem 0 0;
+    }
+
+    @media (max-width:900px){
+      .grid-3,
+      .grid-2,
+      .featured-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-inner{ padding:2.35rem 1rem 1.8rem; }
+      .main-card{ padding:.8rem; }
+      .note{ padding:1rem .9rem; }
+      .section-title{
+        font-size:1.15rem;
+        padding:0 1.4rem;
+      }
+      .section-permalink{ right:-.1rem; }
+    }
+    
+    .featured-card{
+  position: relative !important; /* required */
+}
+
+.featured-card::after{
+  content: "»";
+  position: absolute;
+
+  right: 1rem;
+  bottom: 0.2rem;
+
+  /* explicitly reset anything weird */
+  top: auto;
+  left: auto;
+
+  font-size: 1.5rem;
+  color: var(--link);
+font-weight:600;
+  pointer-events: none;
+}
+
+.featured-card:hover::after{
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+@media (max-width:680px){
+  .featured-card-top{
+    grid-template-columns:1fr;
+  }
+
+  .featured-card-meta{
+    text-align:left;
+  }
+}
+    
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <header class="hero">
+    <div class="hero-card">
+      <div class="hero-inner">
+        <div class="eyebrow">Reference Hub</div>
+        <h1>Timelines and History</h1>
+        <p class="hero-subtitle">
+          This section gathers curator-minded chronology and line history into one place:
+          not just lists of dates, but reference pages that help explain sequence, rivalry,
+          prestige, institutional change, and the larger structure of ocean liner history.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="/ships/timeline-1900-1960.html">Open Timeline</a>
+          <a class="button" href="/ships/ocean-liner-evolution-map.html">View Evolution Map</a>
+          <a class="button" href="/history-of-major-shipping-lines.html">Shipping Line Histories</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="main-card">
+
+      <section class="note intro-note" id="what-this-section-is">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          What This Section Is
+          <a class="section-permalink" href="#what-this-section-is" aria-label="Permalink to What This Section Is"></a>
+        </h2>
+        <p class="lede">
+          Timelines and History is where individual ships are placed back into the larger historical frame.
+          These pages are meant to show not only what happened, but when, in what sequence, under which companies,
+          and within what wider pattern of expansion, rivalry, reform, disruption, and decline.
+        </p>
+      </section>
+
+      <section class="grid-3" aria-label="Timelines and history at a glance">
+        <div class="mini-card">
+          <h3>Chronology</h3>
+          <p>Pages that help readers understand sequence, overlap, turning points, and changing eras of liner development.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Line History</h3>
+          <p>Reference pages on major passenger companies, placing famous ships within the institutions that built and operated them.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Historical Structure</h3>
+          <p>Tools that connect ships to broader themes such as speed rivalry, prestige competition, route logic, and long-term decline.</p>
+        </div>
+      </section>
+
+      <section class="note" id="how-to-use-this-section">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          How to Use This Section
+          <a class="section-permalink" href="#how-to-use-this-section" aria-label="Permalink to How to Use This Section"></a>
+        </h2>
+
+        <ul class="principles-list">
+          <li><strong>Use timelines when sequence matters.</strong> They are especially helpful when trying to understand what came before, what overlapped, and what changed across decades.</li>
+          <li><strong>Use line histories when institutions matter.</strong> Ships make more sense when placed inside the ambitions, finances, and service patterns of the companies behind them.</li>
+          <li><strong>Use reference tools comparatively.</strong> A date, company, or ship becomes more meaningful when set against rivals, predecessors, successors, or broader transitions.</li>
+          <li><strong>Use these pages as frameworks.</strong> Their purpose is to orient the reader, not simply to repeat isolated facts without pattern or context.</li>
+        </ul>
+
+        <div class="callout">
+          This part of Ocean Liner Curator works best when read as historical scaffolding: it helps explain why individual ship guides matter, and how those ships fit into larger stories rather than standing alone.
+        </div>
+      </section>
+
+      <section class="note" id="featured-pages">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Featured Timelines and History Pages
+          <a class="section-permalink" href="#featured-pages" aria-label="Permalink to Featured Timelines and History Pages"></a>
+        </h2>
+        <p class="lede">
+          A direct route into the main chronology and history reference pages.
+        </p>
+
+        <section class="featured-grid">
+
+          <a class="featured-card" href="/ships/timeline-1900-1960.html">
+            <div class="featured-card-top">
+              <span class="featured-card-title">Ocean Liner Timeline</span>
+              <span class="featured-card-meta">1900 – 1960</span>
+            </div>
+            <p class="featured-card-desc">
+              A curator-minded chronology of major ships, industry shifts, and the early jet-age inflection.
+            </p>
+          </a>
+
+          <a class="featured-card" href="/ships/ocean-liner-evolution-map.html">
+            <div class="featured-card-top">
+              <span class="featured-card-title">Ocean Liner Evolution Map</span>
+              <span class="featured-card-meta">1838 – 1970</span>
+            </div>
+            <p class="featured-card-desc">
+              A visual map of liner lineages in speed, comfort, scale and prestige.
+            </p>
+          </a>
+
+          <a class="featured-card" href="/ships/ocean-liner-speed-record-table.html">
+            <div class="featured-card-top">
+              <span class="featured-card-title">Blue Riband Speed Record Table</span>
+              <span class="featured-card-meta">1838 – 1952</span>
+            </div>
+            <p class="featured-card-desc">
+              Reference table of transatlantic record breakers with evidence-first notes.
+            </p>
+          </a>
+          
+          <a class="featured-card" href="/ships/routes-and-trade-lanes-timeline.html">
+  <div class="featured-card-top">
+    <span class="featured-card-title">Routes &amp; Trade Lanes Timeline</span>
+    <span class="featured-card-meta">Atlantic, Empire &amp; Migration Routes</span>
+  </div>
+  <p class="featured-card-desc">
+    A curator-minded overview of the sea lanes that shaped ocean liner history, from the North Atlantic express route to imperial and migration-era networks.
+  </p>
+</a>
+
+<a class="featured-card" href="/ships/propulsion-technology-timeline.html">
+  <div class="featured-card-top">
+    <span class="featured-card-title">Propulsion &amp; Technology Timeline</span>
+    <span class="featured-card-meta">Paddles, Screws, Turbines &amp; Diesel</span>
+  </div>
+  <p class="featured-card-desc">
+    A curator-minded overview of the engineering transitions that shaped ocean liner speed, endurance, efficiency, and onboard operation.
+  </p>
+</a>
+
+<a class="featured-card" href="/ships/titanic-southampton-to-rescue-timeline.html">
+  <div class="featured-card-top">
+    <span class="featured-card-title">Titanic: Departure to Rescue</span>
+    <span class="featured-card-meta">April 10–15, 1912</span>
+  </div>
+  <p class="featured-card-desc">
+    A tightly sequenced timeline from Southampton sailing through collision, evacuation, sinking, and Carpathia’s recovery of survivors.
+  </p>
+</a>
+
+          <a class="featured-card" href="/history-of-major-shipping-lines.html">
+            <div class="featured-card-top">
+              <span class="featured-card-title">Major Shipping Line Histories</span>
+              <span class="featured-card-meta">Overview</span>
+            </div>
+            <p class="featured-card-desc">
+              Overview of important liner companies beyond Cunard and White Star.
+            </p>
+          </a>
+
+          <a class="featured-card" href="/white-star-line-history.html">
+            <div class="featured-card-top">
+              <span class="featured-card-title">White Star Line History</span>
+              <span class="featured-card-meta">1845 – 1949</span>
+            </div>
+            <p class="featured-card-desc">
+              The famous Atlantic passenger brand best known for Titanic.
+            </p>
+          </a>
+
+          <a class="featured-card" href="/history-of-cunard.html">
+            <div class="featured-card-top">
+              <span class="featured-card-title">Cunard Line History</span>
+              <span class="featured-card-meta">1840 – Present</span>
+            </div>
+            <p class="featured-card-desc">
+              The longest-operating major ocean liner company.
+            </p>
+          </a>
+
+        </section>
+      </section>
+
+      <section class="note" id="what-these-pages-help-with">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          What These Pages Help Explain
+          <a class="section-permalink" href="#what-these-pages-help-with" aria-label="Permalink to What These Pages Help Explain"></a>
+        </h2>
+
+        <div class="grid-2">
+          <div class="mini-card">
+            <h3>Periods and transitions</h3>
+            <p>They show how the liner world moved from paddle steamers to express liners, from Edwardian prestige to interwar modernity, and from postwar survival to jet-age eclipse.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Company identity</h3>
+            <p>They explain why Cunard, White Star, Hamburg America, Norddeutscher Lloyd, CGT, and others occupied different roles within the passenger trade.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Competition and prestige</h3>
+            <p>They clarify how speed records, size, luxury, and national symbolism shaped the liner era beyond simple passenger transport.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Historical placement</h3>
+            <p>They help readers place a single ship inside a wider sequence instead of treating it as an isolated celebrity object.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="note" id="best-ways-in">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Suggested Ways In
+          <a class="section-permalink" href="#best-ways-in" aria-label="Permalink to Suggested Ways In"></a>
+        </h2>
+
+        <ul class="path-list">
+          <li>
+            <a href="/ships/timeline-1900-1960.html">Start with chronology</a>
+            <small>Best if you want to understand how ships and companies overlapped across time, and where major turning points occurred.</small>
+          </li>
+          <li>
+            <a href="/history-of-major-shipping-lines.html">Start with the companies</a>
+            <small>Best if you want a wider institutional overview before moving into individual line pages or ship guides.</small>
+          </li>
+          <li>
+            <a href="/white-star-line-history.html">Start with White Star</a>
+            <small>Best if your interest begins with Titanic and you want to see the broader company behind that story.</small>
+          </li>
+          <li>
+            <a href="/history-of-cunard.html">Start with Cunard</a>
+            <small>Best if you want the longest-running continuous line history and a strong overview of Atlantic passenger continuity.</small>
+          </li>
+          <li>
+            <a href="/ships/ocean-liner-evolution-map.html">Start visually</a>
+            <small>Best if you want a more graphic sense of inheritance, ambition, and development across generations of liners.</small>
+          </li>
+        </ul>
+      </section>
+
+      <section class="note" id="quick-links">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Quick Links
+          <a class="section-permalink" href="#quick-links" aria-label="Permalink to Quick Links"></a>
+        </h2>
+        <p class="lede">Direct routes into the main pages in this section.</p>
+
+        <div class="quick-links">
+          <a href="/ships/timeline-1900-1960.html">Timeline</a>
+          <a href="/ships/ocean-liner-evolution-map.html">Evolution Map</a>
+          <a href="/ships/ocean-liner-speed-record-table.html">Blue Riband Table</a>
+          <a href="/history-of-major-shipping-lines.html">Major Line Histories</a>
+          <a href="/white-star-line-history.html">White Star</a>
+          <a href="/history-of-cunard.html">Cunard</a>
+        </div>
+      </section>
+
+      <section class="note" id="final-note">
+        <div class="ornament-line"><span class="ornament-star">★</span></div>
+        <h2 class="section-title">
+          Final Note
+          <a class="section-permalink" href="#final-note" aria-label="Permalink to Final Note"></a>
+        </h2>
+        <p class="lede">
+          The purpose of Timelines and History is not simply to accumulate dates. It is to help readers see ships,
+          lines, and reference tools as part of one longer historical system: shaped by technology, migration,
+          commerce, design, prestige, war, and eventual transition out of the classic liner age.
+        </p>
+      </section>
+
+      <div class="hero-actions" style="margin-top:1.25rem;">
+        <a class="button primary" href="/ships/timeline-1900-1960.html">Open Timeline</a>
+        <a class="button" href="/ships/ships">Browse Ship Guides</a>
+      </div>
+
+      <div class="footer-star">★</div>
+      <p class="copyright">© Ocean Liner Curator</p>
+
+    </div>
+  </main>
+
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+</body>
+</html>

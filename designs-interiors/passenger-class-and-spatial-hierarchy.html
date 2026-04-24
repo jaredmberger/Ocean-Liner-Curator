@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Passenger Class & Spatial Hierarchy — Designs & Interiors — Ocean Liner Curator</title>
+  <meta name="description" content="How ocean liners organized class through decks, circulation, cabins, dining rooms, and access to space—read as a built social system rather than decoration alone." />
+
+  <link rel="canonical" href="https://oceanliners.net/designs-interiors/passenger-class-and-spatial-hierarchy" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/designs-interiors/passenger-class-and-spatial-hierarchy#webpage",
+    "name": "Passenger Class & Spatial Hierarchy — Designs & Interiors — Ocean Liner Curator",
+    "url": "https://oceanliners.net/designs-interiors/passenger-class-and-spatial-hierarchy",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "How ocean liners organized class through decks, circulation, cabins, dining rooms, and access to space—read as a built social system rather than decoration alone.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Passenger Class & Spatial Hierarchy — Designs & Interiors — Ocean Liner Curator">
+  <meta property="og:description" content="How ocean liners organized class through decks, circulation, cabins, dining rooms, and access to space—read as a built social system rather than decoration alone.">
+  <meta property="og:url" content="https://oceanliners.net/designs-interiors/passenger-class-and-spatial-hierarchy">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Passenger Class & Spatial Hierarchy — Designs & Interiors — Ocean Liner Curator">
+  <meta name="twitter:description" content="How ocean liners organized class through decks, circulation, cabins, dining rooms, and access to space—read as a built social system rather than decoration alone.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root{
+      --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+    .header-inner{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      pointer-events:none;
+      z-index:0;
+      opacity:0.95;
+    }
+    .container > *{ position:relative; z-index:1; }
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+    h1{
+      margin:0 0 0.8rem 0;
+      font-weight:600;
+      font-feature-settings:"kern" 1, "liga" 1;
+      font-size:2.55rem;
+      letter-spacing:0.6px;
+    }
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+    .flags-footer{
+      display:block;
+      width:110px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      margin-bottom:2.75rem;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+      margin-bottom:0;
+    }
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+    .scope p,.scope ul,.scope .note{ text-align:left; }
+    .scope h2{
+      margin:2.25rem auto 0.7rem auto;
+      max-width:var(--measure);
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+      letter-spacing:0.2px;
+      text-align:left;
+    }
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+    .scope li{ margin:0.45rem 0; line-height:1.65; }
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+    .scope .note strong{ color:var(--text); font-weight:600; }
+    .scope p a,.scope li a,.scope .note a{
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+    .scope p a:hover,.scope li a:hover,.scope .note a:hover{
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    .scope p a:focus-visible,.scope li a:focus-visible,.scope .note a:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+    .compare{
+      max-width:var(--measure);
+      margin:0.35rem auto 1.55rem auto;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      overflow:hidden;
+      background:rgba(0,0,0,0.12);
+      text-align:left;
+    }
+    .compare-row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+    .compare-row:first-child{ border-top:none; }
+    .compare-cell{ padding:0.95rem 1rem; }
+    .compare-head{
+      font-weight:600;
+      color:rgba(230,223,207,0.96);
+      background:rgba(191,164,106,0.06);
+    }
+    .compare-cell ul{
+      margin:0.35rem 0 0 0;
+      padding-left:1.15rem;
+      max-width:none;
+    }
+    .compare-cell li{ margin:0.45rem 0; }
+    .tag{
+      display:inline-block;
+      font-size:0.74em;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      opacity:0.7;
+      margin-left:0.4rem;
+      white-space:nowrap;
+    }
+    .signals{
+      max-width:var(--measure);
+      margin:0.25rem auto 1.55rem auto;
+      padding:0;
+      list-style:none;
+      text-align:left;
+    }
+    .signals li{
+      margin:0 0 0.75rem 0;
+      padding:0.9rem 1rem;
+      border:1px solid rgba(191,164,106,0.20);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+    footer p, footer .copyright{
+      max-width:none;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+    @media (max-width:520px){
+      .compare-row{ grid-template-columns:1fr; }
+      .site-header{ padding:0.65rem 0; }
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+      .flags-footer{
+        width:110px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+    }
+    
+    @media (max-width: 520px){
+  .compare-row{
+    grid-template-columns:1fr !important;
+  }
+
+  .compare-head{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:0.35rem !important;
+  }
+
+  .tag{
+    display:block !important;
+    margin-left:0 !important;
+    white-space:normal !important;
+    line-height:1.3 !important;
+  }
+}
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+<div id="site-header"></div>
+
+<main class="container scope">
+
+  <div class="logo-mount">
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+  </div>
+
+  <h1>Passenger Class &amp; Spatial Hierarchy</h1>
+  <div class="rule"></div>
+
+  <p class="page-kicker">
+    Ocean liners were not simply decorated ships with different ticket prices. They were <strong>spatial systems</strong>:
+    decks, corridors, entrances, staircases, dining rooms, and public spaces were arranged to create separation,
+    hierarchy, and controlled movement. Class at sea was built into the ship itself.
+  </p>
+
+  <div class="note">
+    <strong>⁂ Guiding principle:</strong> Passenger class should be read as architecture as much as accommodation.
+    The question is not only “who slept where,” but “who moved where, who saw what, and who was kept apart.”
+  </div>
+
+  <h2>Quick Read: What Class Controlled</h2>
+
+  <div class="compare" role="group" aria-label="Passenger class and spatial hierarchy comparison">
+    <div class="compare-row">
+      <div class="compare-cell compare-head">
+        Higher classes <span class="tag">visibility + privilege</span>
+      </div>
+      <div class="compare-cell compare-head">
+        Lower classes <span class="tag">containment + efficiency</span>
+      </div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-cell">
+        <ul>
+          <li>More access to upper decks and promenade space</li>
+          <li>Closer relationship to grand staircases and central public rooms</li>
+          <li>Larger cabins, more privacy, better light and ventilation</li>
+          <li>Spaces designed for display, ceremony, and social ease</li>
+        </ul>
+      </div>
+
+      <div class="compare-cell">
+        <ul>
+          <li>More confined circulation routes and deck zones</li>
+          <li>Heavier use of practical corridors and dormitory-style planning</li>
+          <li>Reduced privacy and fewer direct links to prestige interiors</li>
+          <li>Spaces optimized for volume, supervision, and turnover</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h2>1) Class Was Planned Into the Ship</h2>
+  <p>
+    On most liners, passenger class was not an afterthought layered onto a neutral hull. It shaped the internal plan from the beginning.
+    Public rooms, staircases, dining spaces, open deck access, cabin widths, and even the quality of finishes were arranged according to who the line expected to carry,
+    and how visibly that hierarchy should be expressed.
+  </p>
+  <p>
+    In elite North Atlantic service, first class was often concentrated around the grandest circulation zones: central staircases,
+    major saloons, principal lounges, and the best promenading positions. Lower classes were usually placed in parts of the ship where
+    traffic could be separated and large numbers managed efficiently, even when the accommodation was comparatively modern.
+  </p>
+
+  <h2>2) Circulation Mattered as Much as Decoration</h2>
+  <ul>
+    <li><strong>Staircases:</strong> grand staircases were often as much about class theater as movement.</li>
+    <li><strong>Corridors:</strong> who used open public corridors versus practical enclosed passages revealed the ship’s social logic.</li>
+    <li><strong>Entrances:</strong> gangway and boarding arrangements often reinforced class separation from the very start of the voyage.</li>
+    <li><strong>Deck access:</strong> promenade rights and open-air placement were major parts of the hierarchy of experience.</li>
+  </ul>
+
+  <h2>3) Public Rooms Were Not Distributed Equally</h2>
+  <p>
+    The famous interiors of liner history—grand dining saloons, winter gardens, smoking rooms, lounges, verandah cafés, writing rooms—
+    were heavily classed spaces. Even where lower-class passengers had their own dining or recreation rooms, the scale, finish, light, and symbolic value
+    of those rooms were rarely equivalent.
+  </p>
+  <p>
+    This does not mean lower-class interiors were always crude. By the interwar period, many lines improved tourist, cabin, and third-class spaces substantially.
+    But the basic logic remained: prestige rooms anchored the upper-class experience and helped sell the line’s public image.
+  </p>
+
+  <div class="note">
+    <strong>Interpretive caution:</strong> A surviving interior photograph may look “representative” of a ship, but often represents one class’s experience only.
+    The visual identity most remembered today is usually the upper-deck, upper-class version of the liner.
+  </div>
+
+  <h2>4) Cabin Planning Was a Social Map</h2>
+  <ul>
+    <li><strong>Location:</strong> cabin placement often tracked class, stability, light, and proximity to public rooms.</li>
+    <li><strong>Size:</strong> cabin dimensions, berth numbers, and private facilities were strongly hierarchical.</li>
+    <li><strong>Noise and convenience:</strong> better classes were usually buffered from service traffic and machinery disturbance.</li>
+    <li><strong>Privacy:</strong> upper-class planning favored personal territory; lower-class planning favored density and manageability.</li>
+  </ul>
+
+  <h2>5) The System Changed Over Time</h2>
+  <p>
+    Passenger hierarchy was never entirely fixed. The immigrant era, the growth of cabin class, the development of tourist-class markets,
+    and the later decline of strict old class labels all changed how lines organized space. Some ships originally planned around rigid first/second/third logic
+    were later modernized into more flexible interwar or postwar arrangements.
+  </p>
+  <p>
+    This matters because interiors should always be read <strong>by phase</strong>. A ship in 1910 and the same ship after refit or transfer could present a very different
+    hierarchy of movement and access.
+  </p>
+
+  <h2>Common Reading Errors</h2>
+  <ul class="signals" aria-label="Common reading errors list">
+    <li><strong>“One famous room defines the whole ship”:</strong> it usually defines one class, one route image, or one publicity strategy.</li>
+    <li><strong>“Better decoration means more important space”:</strong> often true, but not always; some prestige was placed in circulation, scale, or position rather than ornament alone.</li>
+    <li><strong>“Class equals comfort in a simple way”:</strong> lines often balanced prestige, efficiency, migration volume, and commercial practicality in more complicated ways.</li>
+    <li><strong>“Later labels map neatly onto earlier ships”:</strong> terms like tourist class or cabin class should be read in period context, not imposed backward carelessly.</li>
+  </ul>
+
+  <h2>A Safe Way to Describe It</h2>
+  <div class="note">
+    <strong>Suggested wording:</strong>
+    “The ship’s internal plan reflects a clearly tiered class hierarchy, expressed through deck access, circulation, cabin distribution, and the concentration of major public rooms.”
+  </div>
+
+  <h2>Related Pages</h2>
+  <ul>
+    <li><a href="/designs-interiors/cabins">Cabins & Accommodation Standards</a></li>
+    <li><a href="/designs-interiors/public-rooms">Dining Rooms, Lounges & Public Rooms</a></li>
+    <li><a href="/glossary#cabin-class">Cabin class</a></li>
+    <li><a href="/glossary#tourist-third-cabin">Tourist third cabin</a></li>
+    <li><a href="/glossary#steerage">Steerage</a></li>
+    <li><a href="/collections/tourist-third-cabin-democratization.html">Tourist Third Cabin / Democratization</a></li>
+  </ul>
+
+  <footer>
+    <a class="button secondary" href="/designs-interiors">Designs &amp; Interiors</a>
+
+    <img class="flags-footer" src="/engraved-wheel.png" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script>
+  document.querySelectorAll(".nav-dropdown").forEach((d) => {
+    d.addEventListener("toggle", () => {
+      if (!d.open) return;
+      document.querySelectorAll(".nav-dropdown").forEach((other) => {
+        if (other !== d) other.open = false;
+      });
+    });
+  });
+</script>
+
+<script src="/assets/header.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

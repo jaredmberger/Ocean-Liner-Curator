@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ocean Liner Research: Sources, Methods, and Evidence — Ocean Liner Curator</title>
+  <meta name="description" content="A practical, evidence-first guide to ocean liner research: where reliable information lives, how to verify claims, and how to document uncertainty with curatorial restraint." />
+
+  <link rel="canonical" href="https://oceanliners.net/ocean-liner-research" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/ocean-liner-research#webpage",
+    "name": "Ocean Liner Research: Sources, Methods, and Evidence — Ocean Liner Curator",
+    "url": "https://oceanliners.net/ocean-liner-research",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "A practical, evidence-first guide to ocean liner research: where reliable information lives, how to verify claims, and how to document uncertainty with curatorial restraint.",
+    "inLanguage": "en"
+  }
+  </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPZ291Q3RB');
+</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="/logo.png">
+  <meta name="robots" content="index,follow">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+    
+     .page-actions{
+  display:flex;
+  justify-content:center;
+  gap:0.65rem;
+  margin:1.5rem 0;
+  flex-wrap:wrap;
+}
+
+.page-actions .bookmark-btn{
+  margin:1.25rem 0 0;
+  font-size:0.85rem;
+  padding:0.45rem 0.75rem;
+}
+
+.bookmark-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  margin:1.25rem auto;
+  padding:.55rem .85rem;
+  border-radius:999px;
+  border:1px solid rgba(191,164,106,0.35);
+  background:rgba(191,164,106,0.08);
+  color:rgba(209,187,134,0.95);
+  letter-spacing:.06em;
+  font-variant:small-caps;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.bookmark-btn:hover{
+  background:rgba(191,164,106,0.12);
+  border-color:rgba(191,164,106,0.55);
+}
+
+.bookmark-pop{
+  position:fixed;
+  inset:0;
+  display:none;
+  padding:1.25rem;
+  background:rgba(0,0,0,0.55);
+  backdrop-filter:blur(3px);
+  z-index:9999;
+}
+
+.bookmark-pop[data-open="true"]{
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.bookmark-pop-inner{
+  width:min(520px, 100%);
+  border-radius:16px;
+  border:1px solid rgba(191,164,106,0.28);
+  background:rgba(10,17,16,0.96);
+  box-shadow:0 14px 40px rgba(0,0,0,0.55);
+  padding:1rem 1rem .9rem 1rem;
+}
+
+.bookmark-pop-title{
+  color:rgba(191,164,106,0.95);
+  font-variant:small-caps;
+  letter-spacing:.10em;
+  margin-bottom:.55rem;
+}
+
+.bookmark-pop-body{
+  color:rgba(235,231,222,0.90);
+  line-height:1.45;
+  font-size:.98rem;
+}
+
+.bookmark-pop-actions{
+  display:flex;
+  gap:.6rem;
+  justify-content:flex-end;
+  margin-top:.9rem;
+}
+
+.bookmark-mini{
+  padding:.45rem .75rem;
+  border-radius:999px;
+  border:1px solid rgba(191,164,106,0.35);
+  background:rgba(191,164,106,0.08);
+  color:rgba(209,187,134,0.95);
+  cursor:pointer;
+}
+
+.bookmark-mini:hover{
+  background:rgba(191,164,106,0.12);
+  border-color:rgba(191,164,106,0.55);
+}
+
+
+
+    /* =========================
+       Ladder (matches “confidence ladder” vibe)
+       ========================= */
+    .ladder-card{
+      max-width: var(--measure);
+      margin: 0.95rem auto 1.55rem auto;
+      padding: 1.05rem 1.1rem;
+      border: 1px solid rgba(191,164,106,0.26);
+      border-radius: 16px;
+      background:
+        radial-gradient(900px 420px at 50% 0%, rgba(255,255,255,0.04), transparent 55%),
+        rgba(191,164,106,0.06);
+      text-align: left;
+      box-shadow: 0 20px 55px rgba(0,0,0,0.35);
+    }
+
+    .ladder-head{
+      display:flex;
+      flex-direction:column;
+      gap:0.25rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .ladder-title{
+      font-variant: small-caps;
+      letter-spacing: 0.10em;
+      font-weight: 600;
+      color: rgba(230,223,207,0.95);
+    }
+
+    .ladder-sub{
+      color: rgba(230,223,207,0.75);
+      font-size: 0.98rem;
+      line-height: 1.55;
+    }
+
+    .ladder{
+      list-style: none;
+      margin: 0.75rem 0 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.55rem;
+      position: relative;
+    }
+
+    .rung{
+      position: relative;
+      padding: 0.8rem 0.85rem 0.8rem 1.45rem;
+      border: 1px solid rgba(191,164,106,0.18);
+      border-radius: 14px;
+      background: rgba(0,0,0,0.14);
+    }
+
+    .rung::before{
+      content:"";
+      position:absolute;
+      left: 0.42rem;
+      top: 1.40rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(191,164,106,0.22);
+      border: 1px solid rgba(191,164,106,0.55);
+      box-shadow: 0 0 0 4px rgba(191,164,106,0.06);
+    }
+
+    .rung-label{
+      font-weight: 600;
+      color: rgba(230,223,207,0.96);
+      margin-bottom: 0.15rem;
+    }
+
+    .rung-desc{
+      color: rgba(230,223,207,0.82);
+      line-height: 1.62;
+      font-size: 0.98rem;
+    }
+
+    .ladder-tag{
+      display:inline-block;
+      padding: 0.22rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(191,164,106,0.25);
+      background: rgba(0,0,0,0.10);
+      color: rgba(230,223,207,0.78);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 0.1rem;
+    }
+
+    @media (max-width:520px){
+      .ladder-card{ padding: 0.95rem 0.95rem; }
+      .rung{ padding-left: 1.35rem; }
+      .rung::before{ left: 0.37rem; }
+    }
+
+    .standards-badge{
+      margin:1.25rem auto 0;
+      text-align:center;
+    }
+    .standards-badge a{
+      display:inline-block;
+      padding:0.3rem 0.7rem;
+      font-size:0.7rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:rgba(230,223,207,0.85);
+      border:1px solid rgba(191,164,106,0.45);
+      border-radius:999px;
+      text-decoration:none;
+      background:rgba(191,164,106,0.05);
+    }
+    .standards-badge a:hover{ background:rgba(191,164,106,0.12); }
+
+    /* =========================
+       TOP MENU BAR
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    /* =========================
+       CARD (lattice + glow + compass)
+       ========================= */
+    .container{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("/tile.svg");
+      background-size:360px 360px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:2rem 2.75rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1{
+      font-variant: small-caps;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      margin: 0.2rem auto 0;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    .about-link{
+      margin-top:1.1rem;
+      font-size:0.95rem;
+      color:var(--muted);
+    }
+
+    .about-link ul{
+      list-style: none;
+      padding-left: 0;
+      margin: 0.4rem auto 0;
+      max-width: var(--measure);
+      text-align:left;
+    }
+
+    .about-link li{ margin: 0.45rem 0; }
+
+    .about-link a{
+      color: rgba(209,187,134,0.9);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.35);
+    }
+
+    .about-link a:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .flags-footer{
+      display:block;
+      width:160px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    @media (max-width:520px){
+      .site-header{ padding:0.65rem 0; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+
+      a.button{
+        width:100%;
+        padding:0.95rem 1.1rem;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:120px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{ transition:none; }
+    }
+
+    /* =========================
+       ARTICLE TYPOGRAPHY (readability pass)
+       ========================= */
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    .scope p,
+    .scope ul,
+    .scope .note{
+      text-align:left;
+    }
+
+    .scope h2{
+  position: relative;
+  margin:2.25rem auto 0.9rem auto;
+  max-width:var(--measure);
+  width:100%;
+  text-align:left;
+  font-size:1.22rem;
+  font-weight:600;
+  color:var(--text);
+}
+
+.scope h2::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:1px;
+  margin-top:0.45rem;
+  background:linear-gradient(
+    90deg,
+    var(--accent),
+    rgba(191,164,106,0.35),
+    transparent
+  );
+}
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:0.45rem 0;
+      line-height:1.65;
+      margin-left: 1.0rem;
+    }
+
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    /* Inline editorial links */
+    .scope p a,
+    .scope li a,
+    .scope .note a{
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+
+    .scope p a:hover,
+    .scope li a:hover,
+    .scope .note a:hover{
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+
+    .scope p a:focus-visible,
+    .scope li a:focus-visible,
+    .scope .note a:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+    
+    /* =========================
+   Research shortcuts (internal nav)
+   ========================= */
+.jump-card{
+  margin: 1.05rem auto 1.55rem auto;
+  max-width: var(--measure);
+
+  /* top  right  bottom  left */
+  padding: 0.95rem 0.75rem clamp(1.25rem, 2vh, 1.6rem) 0.75rem;
+
+  border: 1px solid rgba(191,164,106,0.26);
+  border-radius: 14px;
+  background: rgba(191,164,106,0.06);
+   backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+  
+}
+
+.jump-title{
+  font-variant: small-caps;
+  letter-spacing: 0.10em;
+  color: rgba(191,164,106,0.95);
+  margin: 0 0 0.55rem 0;
+}
+
+.jump-links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.jump-links .meta{
+  color: rgba(230,223,207,0.78);
+  font-size: 0.9rem;
+}
+
+.jump-links .chev{
+  opacity: 0.85;
+}
+
+/* Hard reset: remove the UL indent inside the shortcuts card */
+.jump-card .jump-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;              /* <-- this is the big one */
+}
+
+/* Some browsers add extra left offset on LI; kill it too */
+.jump-card .jump-links > li{
+  margin: 0;
+  padding: 0;
+}
+
+    footer p,
+    footer .copyright{
+      text-align: center;
+      margin-top:1.8rem;
+    }
+
+    @media (min-width: 1300px){
+      .container{
+        width: min(1080px, calc(100% - 3rem));
+      }
+    }
+
+    @media (min-width: 1100px){
+      .container p{
+        max-width: 72ch;
+      }
+    }
+    
+    @media (max-width: 520px){
+  .container{
+    background-size: 280px 280px;
+  }
+}
+
+@media (max-width: 420px){
+  .container{
+    background-size: 220px 220px;
+  }
+}
+
+.hero{
+  width:100%;
+  margin:0;
+  position:relative;
+  overflow:hidden;
+
+  /* hero height */
+  min-height: 52vh;
+  max-height: 640px;
+
+  display:flex;
+  align-items:flex-end;
+
+  /* the image */
+  background:
+    /* top/bottom readability glaze */
+    linear-gradient(to bottom,
+      rgba(10,17,16,0.70) 0%,
+      rgba(10,17,16,0.05) 45%,
+      rgba(10,17,16,0.72) 100%),
+    url("/olympic-hero.PNG") center/cover no-repeat;
+
+  border-bottom:1px solid rgba(191,164,106,0.22);
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+
+  /* extra subtle “house” vignette */
+  background:
+    radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+    radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
+  opacity:0.55;
+}
+
+.hero-inner{
+  width:min(860px, calc(100% - 1.5rem));
+  margin:0 auto;
+  padding: 3.2rem 2.2rem 2.1rem;
+  position:relative;
+  z-index:1;
+}
+
+.hero h1{
+  margin:0 0 0.55rem 0;
+  font-family:"Libre Baskerville", serif;
+  font-variant: small-caps;
+  letter-spacing:0.09em;
+  font-weight:400;
+
+  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+.hero p{
+  margin:0;
+  max-width: 70ch;
+  color: rgba(230,223,207,0.92);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 600px){
+  .hero{
+    min-height: 46vh;
+  }
+  .hero-inner{
+    padding: 2.6rem 1.15rem 1.65rem;
+  }
+}
+
+.hero{
+  width: min(780px, calc(100% - 1.5rem));
+  margin: 1.1rem auto 0;
+  border-radius: 16px;
+  border: 1px solid rgba(191,164,106,0.22);
+  overflow:hidden;
+
+  min-height: 52vh;
+  max-height: 640px;
+
+  background:
+    linear-gradient(to bottom,
+      rgba(10,17,16,0.70) 0%,
+      rgba(10,17,16,0.05) 45%,
+      rgba(10,17,16,0.72) 100%),
+    url("/olympic-hero.PNG") center/cover no-repeat;
+}
+
+@media (min-width: 1300px){
+  .hero{
+    width: min(1080px, calc(100% - 3rem));
+  }
+}
+
+/* Make hero-inner not override your width cap */
+.hero-inner{
+  width:100%;
+  margin:0;
+}
+
+.container{
+  --container-pad-top: clamp(1.75rem, 3.8vh, 2.6rem);
+
+  padding:
+    var(--container-pad-top)
+    2.75rem
+    1.5rem;
+}
+ /* =========================
+   House star box + link row
+   ========================= */
+.link-row{
+  display:flex;
+  align-items:center;   /* center vertically */
+  gap:0.45rem;
+}
+
+/* star box (NOT clickable) */
+.starbox{
+  flex: 0 0 auto;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(191,164,106,0.45);
+  background: rgba(0,0,0,0.14);
+
+  display:grid;
+  place-items:center;
+
+  box-shadow: 0 0 0 3px rgba(191,164,106,0.06);
+}
+
+.starbox span{
+  color: rgba(191,164,106,0.95);
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+/* the clickable tile next to it */
+.jump-link{
+  flex: 1 1 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.75rem;
+
+  color: rgba(209,187,134,0.95);
+  text-decoration:none;
+
+  border: 1px solid rgba(191,164,106,0.22);
+  background: rgba(0,0,0,0.12);
+  padding: 0.55rem 0.7rem;
+  border-radius: 12px;
+}
+
+.jump-link:hover{
+  border-color: rgba(191,164,106,0.55);
+  background: rgba(191,164,106,0.08);
+}
+
+.jump-link:focus-visible{
+  outline: 2px solid rgba(191,164,106,0.6);
+  outline-offset: 3px;
+}
+
+.jump-link .meta{
+  color: rgba(230,223,207,0.78);
+  font-size: 0.9rem;
+}
+
+.jump-link .chev{
+  opacity: 0.85;
+}   
+
+/* Subtle left rule on research shortcut tiles */
+.jump-link{
+  position: relative;                 /* allow pseudo-element */
+  padding-left: 0.95rem;              /* a hair more room for the rule */
+}
+
+.jump-link::before{
+  content:"";
+  position:absolute;
+  left: 0.45rem;                      /* inside the tile */
+  top: 0.55rem;
+  bottom: 0.55rem;                    /* keeps it inset vertically */
+  width: 2px;
+  border-radius: 2px;
+
+  /* soft “brass wash” that fades */
+  background:
+    rgba(191,164,106,0.38);
+
+  opacity: 0.75;
+}
+
+/* Visually center the main label inside jump tiles */
+.jump-link > span:first-child{
+  position: relative;
+  top: -3.5px;        /* try 1px; increase to 2px if needed */
+}
+
+    
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css?v=3">
+</head>
+
+<body>
+
+ <div id="site-header"></div>
+
+<section class="hero" aria-label="Research hero">
+  <div class="hero-inner">
+    <h1>Ocean Liner Research:<br>Sources, Methods, and Evidence</h1>
+    <p>
+     A field guide to researching ocean liners.
+    </p>
+  </div>
+</section>
+
+<main class="container scope">
+
+ <!-- <div class="logo-mount">
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+  </div>
+
+  <h1>Ocean Liner Research:<br>Sources, Methods, and Evidence</h1>
+  <div class="rule"></div> -->
+
+  <p class="page-kicker">
+    A practical field guide to researching ocean liners and their material culture—where reliable information lives,
+    how to verify claims, and how to document uncertainty with curatorial restraint.
+  </p>
+  
+  <div class="jump-card" aria-label="Research shortcuts">
+  <div class="jump-title">Research shortcuts</div>
+  <ul class="jump-links">
+  <li class="link-row">
+    <div class="starbox" aria-hidden="true"><span>★</span></div>
+    <a class="jump-link" href="/ships/ships">
+      <span>Ship Guides</span>
+      <span class="meta">vessel reference pages <span class="chev">»</span></span>
+    </a>
+  </li>
+
+  <li class="link-row">
+    <div class="starbox" aria-hidden="true"><span>★</span></div>
+    <a class="jump-link" href="/timelines-history">
+      <span>Timelines & History</span>
+      <span class="meta">context + milestones <span class="chev">»</span></span>
+    </a>
+  </li>
+  
+  <li class="link-row">
+    <div class="starbox" aria-hidden="true"><span>★</span></div>
+    <a class="jump-link" href="/collections">
+      <span>Research Collections</span>
+      <span class="meta">themes and connections <span class="chev">»</span></span>
+    </a>
+  </li>
+  
+</ul>
+</div>
+
+  <div class="note">
+    <strong>⁂ Core principle:</strong> Research is not just collecting facts. It is establishing what can be supported—and at what level.
+  </div>
+
+  <p>
+    Ocean liner history is scattered across archives, shipping-line records, shipyard documentation, museums, private collections,
+    and a century of secondary retellings. Some claims are easy to repeat and hard to verify; others are verifiable but require
+    careful source selection and disciplined language.
+  </p>
+
+  <p>
+    This page outlines a working method for ocean liner research. It is designed to be citeable: a shared standard for evaluating
+    sources, building verification plans, and separating primary documentation from confident storytelling.
+  </p>
+
+  <div class="note" id="scope-limits">
+    <strong>Scope & limits:</strong> This framework covers research method, sources, and evidence handling. It does not attempt to be exhaustive,
+    and it does not substitute for archival access when primary documentation is required.
+  </div>
+
+  <h2>Start With the Exact Question</h2>
+  <p>
+    “Ocean liner research” can mean many different tasks. The same source may be adequate for one question and insufficient for another.
+    Define the claim precisely before evaluating sources.
+  </p>
+  <ul>
+    <li><strong>Identity:</strong> Which ship, line, route, or time period?</li>
+    <li><strong>Event:</strong> A launch, collision, refit, voyage, or incident?</li>
+    <li><strong>Object:</strong> A physical artifact, design, marking, or supplier?</li>
+    <li><strong>Question type:</strong> Is this about <em>what happened</em>, <em>what was used</em>, or <em>what can be proven</em>?</li>
+  </ul>
+
+  <h2>Prefer Primary Sources—But Know Where They Hide</h2>
+  <p>
+    Primary sources are created during the period being studied: official records, letters, ship plans, inventories, yard documents,
+    contemporaneous press, photographs, and corporate paperwork. They are rarely “all in one place.”
+  </p>
+  <ul>
+    <li><strong>Shipyard & technical records:</strong> plans, specifications, refit notes, contracts (when available)</li>
+    <li><strong>Company materials:</strong> menus, brochures, timetables, staff manuals, internal circulars</li>
+    <li><strong>Port & government records:</strong> passenger lists, customs/immigration, casualty investigations, registry changes</li>
+    <li><strong>Contemporaneous press:</strong> useful but must be cross-checked (errors propagate quickly)</li>
+    <li><strong>Photographs:</strong> powerful when dated and contextualized; misleading when uncaptioned or misidentified</li>
+  </ul>
+
+  <div class="note">
+    <strong>Practical habit:</strong> Save the citation first. Interpret second. (If you can’t cite it, treat it as a lead, not a result.)
+  </div>
+
+  <h2>Secondary Sources: Use, But Verify</h2>
+  <p>
+    Good secondary work can summarize difficult-to-access material. Weak secondary work repeats earlier secondary work.
+    The difference is whether a source shows its footing: citations, archival references, and traceable claims.
+  </p>
+  <ul>
+    <li><strong>Best:</strong> secondary sources that cite primary documentation and can be checked</li>
+    <li><strong>Acceptable:</strong> carefully argued synthesis with transparent uncertainty</li>
+    <li><strong>Risky:</strong> “fact lists,” unsourced timelines, and repeated anecdotes without documentation</li>
+  </ul>
+
+  <h2>Evidence Handling for Artifacts</h2>
+  <p>
+    Research on objects requires a different discipline than research on events. Visual similarity is useful for narrowing possibilities,
+    but it is not proof of ship-level origin. For an explicit framework, see <a href="/evidence">What Counts as Evidence in Ocean Liner Collecting?</a>.
+  </p>
+  <ul>
+    <li><strong>Describe first:</strong> material, dimensions, construction, markings, wear patterns</li>
+    <li><strong>Separate levels:</strong> period authenticity ≠ line association ≠ ship-specific attribution</li>
+    <li><strong>Look for identifiers:</strong> maker marks, printer codes, pattern numbers, dates</li>
+    <li><strong>Demand context:</strong> where/when found, custody chain, any documentation</li>
+  </ul>
+
+  <div class="ladder-card" id="research-ladder" aria-label="Research reliability ladder">
+    <div class="ladder-head">
+      <div class="ladder-title">Research Reliability Ladder</div>
+      <div class="ladder-sub">Stronger sources support narrower, more confident claims.</div>
+    </div>
+    <span class="ladder-tag">Order: strong → weak</span>
+
+    <ol class="ladder" aria-label="Source strength rungs (strong to weak)">
+      <li class="rung">
+        <div class="rung-label">Primary documentation</div>
+        <div class="rung-desc">Official records, plans, inventories, correspondence, company paperwork from the period.</div>
+      </li>
+      <li class="rung">
+        <div class="rung-label">Contemporaneous confirmation</div>
+        <div class="rung-desc">Dated photos, labeled artifacts, period press corroborated by independent records.</div>
+      </li>
+      <li class="rung">
+        <div class="rung-label">Secondary work with citations</div>
+        <div class="rung-desc">Books/articles that cite archives, collections, and verifiable documents.</div>
+      </li>
+      <li class="rung">
+        <div class="rung-label">Uncited secondary summaries</div>
+        <div class="rung-desc">Useful for leads, but must be treated as provisional until verified.</div>
+      </li>
+      <li class="rung">
+        <div class="rung-label">Anecdote and repetition</div>
+        <div class="rung-desc">Forum lore, “everyone says,” and inherited listing language—context, not proof.</div>
+      </li>
+    </ol>
+  </div>
+
+  <h2>Build a Verification Plan</h2>
+  <p>
+    The goal is not to “win” an argument but to identify what would change your conclusion.
+    A verification plan is a checklist: sources to locate, conflicts to resolve, and gaps to acknowledge.
+  </p>
+  <ul>
+    <li><strong>Claim:</strong> State it in one sentence.</li>
+    <li><strong>Minimum proof:</strong> What would qualify as decisive?</li>
+    <li><strong>Corroboration:</strong> What independent source could confirm it?</li>
+    <li><strong>Conflicts:</strong> What evidence would contradict it?</li>
+    <li><strong>Language:</strong> Match certainty to support (avoid “definitely” without primary documentation).</li>
+  </ul>
+
+  <div class="note">
+    <strong>Recommended phrasing:</strong> “Current evidence supports X at the line/period level. Ship-specific attribution remains unverified.”
+  </div>
+
+  <h2>Common Failure Modes</h2>
+  <p>
+    The same research errors recur across ship history and collecting. Being able to name them makes them easier to avoid.
+  </p>
+  <ul>
+    <li><strong>Source flattening:</strong> treating all sources as equal because they “agree”</li>
+    <li><strong>Caption drift:</strong> a misidentified photo becomes the “reference image” for years</li>
+    <li><strong>Attribution drift:</strong> tentative language hardens into asserted fact via repetition</li>
+    <li><strong>Fame bias:</strong> famous ships attract confident claims with weak support</li>
+    <li><strong>Overfitting:</strong> forcing an object to match a desired story instead of the evidence</li>
+  </ul>
+
+  <h2>Related Essays</h2>
+  <div class="about-link">
+    <ul>
+      <li><a href="/sources">Sources &amp; Standards</a></li>
+      <li><a href="/ships/ships">Ship Guides</a></li>
+<li><a href="/ships/timeline-1900-1960">Ocean Liner Timeline (1900–1960)</a></li>
+      <li><a href="/evidence">What Counts as Evidence in Ocean Liner Collecting?</a></li>
+      <li><a href="/attribution">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</a></li>
+      <li><a href="/provenance">Common Problems With “Provenance” in Maritime Collecting</a></li>
+      <li><a href="/unknown">When Evidence Is Limited: Why “Unknown” Is a Responsible Conclusion</a></li>
+      <li><a href="/ocean-liner-collecting-guide">Ocean Liner Collecting: A Curated Guide</a></li>
+    </ul>
+  </div>
+
+<div class="page-actions">
+  <button class="bookmark-btn" type="button" onclick="bookmarkPage()">
+    ☆ Bookmark page
+  </button>
+
+  <button class="bookmark-btn pdf-btn" type="button" onclick="openGuidePDF()">
+     ⧉ Printable PDF
+  </button>
+</div>
+
+<div class="bookmark-pop" id="bookmarkPop" role="dialog" aria-live="polite" aria-hidden="true">
+  <div class="bookmark-pop-inner">
+    <div class="bookmark-pop-title">Add this page to your bookmarks</div>
+    <div class="bookmark-pop-body" id="bookmarkPopBody"></div>
+
+    <div class="bookmark-pop-actions">
+      <button class="bookmark-mini" type="button" onclick="copyPageLink()">Copy link</button>
+      <button class="bookmark-mini" type="button" onclick="closeBookmarkPop()">Close</button>
+    </div>
+  </div>
+</div>
+
+  <div class="standards-badge">
+    <a href="/sources" aria-label="Sources and standards">
+      Methodology · Sources &amp; Standards
+    </a>
+  </div>
+
+  <footer>
+    <a class="button secondary" href="/">Home</a>
+
+    <img class="flags-footer" src="/engraved-anchor-laurel.PNG" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+
+
+<script>
+function bookmarkPage(){
+  const title = document.title;
+  const url = window.location.href;
+
+  // Old-school shortcut (works in some desktop browsers; many ignore it now)
+  try{
+    if (window.sidebar && window.sidebar.addPanel){
+      window.sidebar.addPanel(title, url, "");
+      return;
+    }
+    if (window.external && ('AddFavorite' in window.external)){
+      window.external.AddFavorite(url, title);
+      return;
+    }
+  }catch(e){ /* fall through */ }
+
+  // Otherwise show instructions
+  showBookmarkInstructions();
+}
+
+function showBookmarkInstructions(){
+  const ua = navigator.userAgent || "";
+  const isIOS = /iPhone|iPad|iPod/i.test(ua);
+  const isMac = /Macintosh/i.test(ua);
+  const isSafari = /^((?!chrome|android).)*safari/i.test(ua);
+  const isChrome = /Chrome/i.test(ua) && !/Edg/i.test(ua);
+
+  let msg = "";
+
+  if (isIOS && isSafari){
+    msg = `On iPhone/iPad Safari: tap the <strong>Share</strong> icon, then choose <strong>Add Bookmark</strong> (or <strong>Add to Favorites</strong>).`;
+  } else if (isMac && isSafari){
+    msg = `On Safari (Mac): press <strong>⌘D</strong> to bookmark this page.`;
+  } else if (isChrome){
+    msg = `On Chrome: press <strong>Ctrl+D</strong> (Windows) or <strong>⌘D</strong> (Mac) to bookmark this page.`;
+  } else {
+    msg = `To bookmark: look for your browser’s <strong>star</strong> or <strong>bookmark</strong> menu, or press <strong>Ctrl+D</strong> / <strong>⌘D</strong>.`;
+  }
+
+  openBookmarkPop(msg);
+}
+
+function openBookmarkPop(html){
+  const pop = document.getElementById("bookmarkPop");
+  const body = document.getElementById("bookmarkPopBody");
+  body.innerHTML = html;
+  pop.setAttribute("aria-hidden","false");
+  pop.dataset.open = "true";
+
+  // Click outside to close
+  pop.addEventListener("click", (e) => {
+    if (e.target === pop) closeBookmarkPop();
+  }, { once:false });
+}
+
+function closeBookmarkPop(){
+  const pop = document.getElementById("bookmarkPop");
+  pop.setAttribute("aria-hidden","true");
+  pop.dataset.open = "false";
+}
+
+async function copyPageLink(){
+  const url = window.location.href;
+
+  try{
+    await navigator.clipboard.writeText(url);
+    openBookmarkPop(`Link copied. You can paste it anywhere (notes, messages, etc.).`);
+  }catch(e){
+    // Fallback
+    const tmp = document.createElement("textarea");
+    tmp.value = url;
+    document.body.appendChild(tmp);
+    tmp.select();
+    document.execCommand("copy");
+    document.body.removeChild(tmp);
+    openBookmarkPop(`Link copied. You can paste it anywhere (notes, messages, etc.).`);
+  }
+}
+</script>
+
+<script>
+function openGuidePDF(){
+  window.open(
+    "/Ocean-Liner-Research.pdf",
+    "_blank",
+    "noopener"
+  );
+}
+</script>
+
+<!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+<script src="/assets/header.js" defer></script>
+       <script src="/assets/nav.js" defer></script>
+
+</body>
+</html>

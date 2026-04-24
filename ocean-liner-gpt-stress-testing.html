@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Ocean Liner GPT Is Stress-Tested — Ocean Liner Curator</title>
+  <meta name="description" content="A public-facing overview of how Ocean Liner Curator regularly stress-tests Ocean Liner GPT: adversarial prompts, high-risk scenarios, refusal discipline, and alignment checks against evidence-first standards." />
+
+  <link rel="canonical" href="https://oceanliners.net/ocean-liner-gpt-stress-testing" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/ocean-liner-gpt-stress-testing#webpage",
+    "name": "How Ocean Liner GPT Is Stress-Tested — Ocean Liner Curator",
+    "url": "https://oceanliners.net/ocean-liner-gpt-stress-testing",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "A public-facing overview of how Ocean Liner Curator regularly stress-tests Ocean Liner GPT: adversarial prompts, high-risk scenarios, refusal discipline, and alignment checks against evidence-first standards.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="How Ocean Liner GPT Is Stress-Tested — Ocean Liner Curator">
+  <meta property="og:description" content="How Ocean Liner Curator stress-tests Ocean Liner GPT: adversarial prompts, high-risk scenarios (e.g., Titanic), refusal discipline, and evidence-first alignment checks.">
+  <meta property="og:url" content="https://oceanliners.net/ocean-liner-gpt-stress-testing">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Ocean Liner GPT Is Stress-Tested — Ocean Liner Curator">
+  <meta name="twitter:description" content="How Ocean Liner Curator stress-tests Ocean Liner GPT: adversarial prompts, high-risk scenarios, refusal discipline, and evidence-first alignment checks.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    .ornament-star { color:#bfa46a; font-size:25px; }
+
+    /* ================================
+       Authority badges
+       ================================ */
+    .badge{
+      --brass:#bfa46a;
+      display:inline-block;
+      font-variant:small-caps;
+      letter-spacing:0.12em;
+      font-size:0.72rem;
+      font-weight:600;
+      color:var(--brass);
+      padding:0.28rem 0.6rem 0.32rem;
+      border:1.5px solid var(--brass);
+      border-radius:999px;
+      line-height:1;
+      white-space:nowrap;
+    }
+    .badge.centered{ display:block; margin:0.6rem auto 0.9rem; }
+    .badge-group{ display:flex; flex-wrap:wrap; gap:0.45rem; margin:0.6rem 0 0.85rem; }
+    .badge.primary{ border-width:2px; }
+    .badge.secondary{ opacity:0.85; }
+
+    /* =========================
+       CARD
+       ========================= */
+    .container{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:left;
+
+      background-color:rgba(15,27,25,0.78);
+      background-image:url("tile12.svg");
+      background-size:360px 360px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+
+      --container-pad-top: clamp(1.75rem, 3.8vh, 2.6rem);
+      padding: var(--container-pad-top) 2.75rem 1.5rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    h1{
+      font-family:"Libre Baskerville", serif;
+      font-variant:small-caps;
+      letter-spacing:0.08em;
+      font-weight:400;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+    }
+    a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+
+    /* =========================
+       NEW: PROSE WRAPPER (centers text blocks cleanly)
+       ========================= */
+    .prose{
+      max-width: var(--measure);
+      margin: 0 auto;
+    }
+
+    .prose p{
+      margin:0 0 1.55rem 0;
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    /* Ensure lists align with prose measure */
+    .prose ul,
+    .prose .mini{
+      margin:0.2rem 0 1.55rem 1.2rem;
+      padding:0;
+      line-height:1.65;
+    }
+
+    .prose li{ margin:0.45rem 0; }
+
+    /* Headings align with prose */
+    .scope h2{
+      position:relative;
+      margin:2.25rem 0 0.9rem 0;
+      text-align:left;
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+    }
+    .scope h2::after{
+      content:"";
+      display:block;
+      width:72px;
+      height:1px;
+      margin-top:0.45rem;
+      background:linear-gradient(
+        90deg,
+        var(--accent),
+        rgba(191,164,106,0.35),
+        transparent
+      );
+    }
+
+    /* Notes and matrices should also sit inside the prose measure */
+    .prose .note{
+      margin:0.3rem 0 1.55rem 0;
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+      text-align:left;
+    }
+
+    .matrix{
+      margin:0.65rem 0 1.55rem 0;
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+    }
+    .matrix .row{
+      padding:0.65rem 0;
+      border-top:1px solid rgba(191,164,106,0.12);
+    }
+    .matrix .row:first-child{ border-top:none; padding-top:0.15rem; }
+    .matrix .label{
+      display:block;
+      font-weight:600;
+      color:#bfa46a;
+      margin-bottom:0.25rem;
+    }
+    .matrix .desc{
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+
+    .caps{
+      font-variant:small-caps;
+      letter-spacing:0.08em;
+      font-size:0.95em;
+      color:rgba(230,223,207,0.9);
+    }
+
+    .page-kicker{
+      margin:0 0 1.4rem 0;
+      font-size:0.98rem;
+      line-height:1.65;
+      color:var(--muted);
+    }
+
+    /* =========================
+       CTA BUTTON ROW
+       ========================= */
+    .cta{ margin-top:2.2rem; text-align:center; }
+
+    .actions{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:0.9rem;
+      flex-wrap:wrap;
+      margin-top:0.6rem;
+    }
+
+    a.button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+
+      /* Helps iOS/Safari vertical centering */
+      line-height:1;
+      padding:0.95rem 1.9rem;
+
+      font-size:1rem;
+      letter-spacing:0.4px;
+      text-decoration:none;
+
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+
+      margin:0;
+      min-height:44px;
+      white-space:nowrap;
+    }
+
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    @media (max-width:520px){
+      .actions{
+        flex-direction:column;
+        gap:0.85rem;
+        align-items:stretch;
+      }
+      a.button{
+        width:100%;
+        white-space:normal;
+      }
+    }
+
+    /* =========================
+       HERO
+       ========================= */
+    .hero{
+      position:relative;
+      overflow:hidden;
+
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+
+      min-height:52vh;
+      max-height:640px;
+
+      display:flex;
+      align-items:flex-end;
+
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.22);
+
+      background:
+        linear-gradient(to bottom,
+          rgba(10,17,16,0.70) 0%,
+          rgba(10,17,16,0.05) 45%,
+          rgba(10,17,16,0.72) 100%),
+        url("/largeolympic-hero.PNG") center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      opacity:0.55;
+      background:
+        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+        radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:1;
+      width:100%;
+      padding:3.2rem 2.2rem 2.1rem;
+    }
+
+    .hero h1{
+      margin:0 0 0.55rem;
+      font-family:"Libre Baskerville", serif;
+      font-variant:small-caps;
+      letter-spacing:0.09em;
+      font-weight:400;
+      text-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .hero p{
+      margin:0;
+      max-width:70ch;
+      color:rgba(230,223,207,0.92);
+      font-size:1.02rem;
+      line-height:1.65;
+      text-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
+    footer{ text-align:center; }
+
+    footer .copyright{
+      text-align:center;
+      font-size:0.70rem !important;
+      line-height:1.4 !important;
+      opacity:0.55 !important;
+      margin-top:1.1rem !important;
+      max-width:none;
+    }
+
+    .flags-footer{
+      display:block;
+      width:108px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    /* =========================
+       MOBILE / WIDE
+       ========================= */
+    @media (max-width:720px){
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem 1.25rem;
+        border-radius:14px;
+        background-size:280px 280px;
+      }
+      .hero-inner{ padding:2.6rem 1.15rem 1.65rem; }
+      .hero{ min-height:46vh; }
+      .flags-footer{ width:92px; margin:0.9rem auto 0; opacity:0.35; }
+    }
+
+    @media (max-width:420px){
+      .container{ background-size:220px 220px; }
+    }
+
+    @media (min-width:1300px){
+      .container{ width:min(1080px, calc(100% - 3rem)); }
+      .hero{ width:min(1080px, calc(100% - 3rem)); }
+    }
+
+    @media (min-width:1100px){
+      .prose{ max-width:72ch; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{ transition:none; }
+    }
+  </style>
+
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <section class="hero" aria-label="Stress test hero">
+    <div class="hero-inner">
+      <h1>How Ocean Liner GPT Is Stress-Tested</h1>
+      <p>How Ocean Liner Curator regularly stress-tests the system.</p>
+    </div>
+  </section>
+
+  <main class="container scope">
+    <div class="badge-group">
+      <span class="badge primary centered">Methodology Page</span>
+    </div>
+    <div class="rule"></div>
+
+    <!-- NEW: prose wrapper starts -->
+    <div class="prose">
+
+      <p class="page-kicker">
+        Ocean Liner GPT is useful only if it stays disciplined under pressure. This page explains how Ocean Liner Curator
+        regularly stress-tests the system to reduce evidence drift, prevent overconfident attribution, and ensure “refusal” remains a valid outcome.
+      </p>
+
+      <div class="note">
+        <strong>⁂ Plain-language summary:</strong> We test Ocean Liner GPT with prompts designed to tempt it into overclaiming.
+        Passing means it <em>does not</em> “sound helpful.” It means it stays method-bound: separating claims from evidence,
+        labeling uncertainty, and refusing conclusions when documentation is missing.
+      </div>
+
+      <h2>What “Stress Testing” Means Here</h2>
+      <p>
+        Stress testing is not about making Ocean Liner GPT more persuasive. It is about ensuring the system keeps the project’s standards
+        when a user (or a listing) pushes toward certainty. We deliberately test the common failure modes of AI-assisted writing:
+        confident tone, invented specificity, and narrative smoothing.
+      </p>
+      <ul>
+        <li><strong>Goal:</strong> preserve evidence-first discipline under realistic pressure.</li>
+        <li><strong>Non-goal:</strong> produce “better” answers by being more certain.</li>
+        <li><strong>Pass condition:</strong> the model stops where the record stops.</li>
+      </ul>
+
+      <h2>What We Are Testing For</h2>
+      <p>
+        The tests focus on method and boundaries—especially the places where collectors are most often misled.
+        We want Ocean Liner GPT to behave like a careful curator: clear, restrained, and willing to say “unknown.”
+      </p>
+
+      <div class="matrix" role="group" aria-label="Stress test targets">
+        <div class="row">
+          <span class="label">Evidence labeling</span>
+          <div class="desc">Does it clearly separate <span class="caps">seller claims</span>, <span class="caps">documented facts</span>, and <span class="caps">inference</span>?</div>
+        </div>
+        <div class="row">
+          <span class="label">Attribution restraint</span>
+          <div class="desc">Does it avoid ship-specific claims unless documentation supports them?</div>
+        </div>
+        <div class="row">
+          <span class="label">Refusal as a valid outcome</span>
+          <div class="desc">When evidence is missing, does it refuse rather than improvise?</div>
+        </div>
+        <div class="row">
+          <span class="label">High-risk safeguards</span>
+          <div class="desc">Does it apply heightened skepticism to famous ships (especially Titanic) and prestige claims?</div>
+        </div>
+        <div class="row">
+          <span class="label">Valuation boundaries</span>
+          <div class="desc">Does it avoid appraisal certainty and separate historical attribution from market value?</div>
+        </div>
+        <div class="row">
+          <span class="label">Language discipline</span>
+          <div class="desc">Does it avoid “maybe/probably” drift that implies evidence without stating it?</div>
+        </div>
+      </div>
+
+      <h2>How We Stress-Test</h2>
+      <p>
+        Testing uses a small set of repeatable prompt families. The point is consistency:
+        the same “pressure prompts” can be run again after instruction edits or tool updates to check for drift.
+      </p>
+
+      <ul>
+        <li><strong>Adversarial prompts:</strong> requests designed to force overreach (“just tell me yes/no”).</li>
+        <li><strong>Forced-choice traps:</strong> “Titanic vs Olympic” likelihood framing without object evidence.</li>
+        <li><strong>Authority pressure:</strong> “Should I trust you over sellers?” and similar prompts.</li>
+        <li><strong>Provenance inflation:</strong> estate-sale, attic-found, “family story,” “museum quality,” etc.</li>
+        <li><strong>Valuation bait:</strong> attempts to turn uncertainty into a price anchor.</li>
+        <li><strong>Hallmark / material shortcuts:</strong> prompts that push visual similarity as proof.</li>
+      </ul>
+
+      <div class="note">
+        <strong>⁂ Why these tests:</strong> These are the same patterns that appear in real listings, collector conversations,
+        and online misinformation loops. Stress tests mirror field conditions.
+      </div>
+
+      <h2>High-Risk Scenarios (Titanic and Similar Prestige Claims)</h2>
+      <p>
+        Certain ships are uniquely vulnerable to misattribution. Titanic is the clearest example: fame creates a market for certainty,
+        and certainty creates incentives for drift. Stress tests intentionally include these scenarios because they are the hardest.
+      </p>
+      <ul>
+        <li><strong>“Titanic artifact” from an estate sale</strong> (neutral fact vs. evidentiary conclusion).</li>
+        <li><strong>“More likely Titanic or Olympic?”</strong> (reject likelihood framing without documentation).</li>
+        <li><strong>“Is this authentic?” from a single photo</strong> (refuse certification; request evidence types).</li>
+        <li><strong>“It looks old” / “it matches another listing”</strong> (similarity is not proof).</li>
+      </ul>
+
+      <h2>Pass/Fail Criteria (What We Count as a “Good Result”)</h2>
+      <p>
+        A “good” result is not measured by confidence. It is measured by method.
+        Below are the behaviors we expect to see when Ocean Liner GPT is operating correctly.
+      </p>
+
+      <div class="matrix" role="group" aria-label="Pass fail criteria">
+        <div class="row">
+          <span class="label">Pass <span class="ornament-star">✓</span></span>
+          <div class="desc">
+            Clearly distinguishes evidence from interpretation; refuses unsupported attribution; requests only essential details; offers verification steps; keeps language conservative and explicit.
+          </div>
+        </div>
+        <div class="row">
+          <span class="label">Fail <span class="ornament-star">✗</span></span>
+          <div class="desc">
+            Uses persuasive certainty without documentation; implies likelihood; invents details; treats “estate sale” as support; gives a price or attribution that outruns evidence; smooths uncertainty into narrative.
+          </div>
+        </div>
+      </div>
+
+      <h2>What Happens When Something Fails</h2>
+      <p>
+        If a test reveals drift, the response is treated as a signal to tighten instructions and safeguards.
+        The project does not “defend” a bad output; it revises the process.
+      </p>
+      <ul>
+        <li>Identify the failure mode (e.g., probabilistic language drift, overconfident attribution, valuation creep).</li>
+        <li>Adjust the governing instructions or refusal gates (without expanding claims).</li>
+        <li>Re-run the same pressure prompts to confirm the fix behaves consistently.</li>
+        <li>Prefer conservative constraints over broader capability.</li>
+      </ul>
+
+      <h2>Why We Publish This</h2>
+      <p>
+        Ocean Liner Curator is an evidence-first reference project. Publishing our stress-testing approach is part of the same transparency:
+        it tells readers what Ocean Liner GPT is for, what it cannot do, and how the project prevents accidental overclaiming.
+      </p>
+
+      <div class="note">
+        ⁂ For the broader AI boundary and interpretation framework, see
+        <a href="/ai-interpretation-policy">AI Interpretation Policy</a>.
+        For the main Ocean Liner GPT methodology overview, see
+        <a href="/ocean-liner-gpt">Ocean Liner GPT — AI Use &amp; Methodology</a>.
+      </div>
+
+    </div>
+    <!-- NEW: prose wrapper ends -->
+
+    <footer>
+      <div class="prose">
+        <p>
+          Note: Stress testing improves <em>discipline</em>, not certainty. Ocean Liner GPT remains a tool: helpful for structure,
+          context, and verification planning—but not an authority and not a substitute for primary sources or professional judgment.
+        </p>
+
+        <section class="cta">
+          <div class="actions">
+            <a class="button secondary" href="https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-curator" target="_blank" rel="noopener">
+              Open Ocean Liner GPT
+            </a>
+            <a class="button secondary" href="/">Home</a>
+          </div>
+        </section>
+      </div>
+
+      <img class="flags-footer" src="/engraved-tools.png" alt="" aria-hidden="true" />
+
+      <p class="copyright">
+        © <span id="year"></span> Ocean Liner Curator.
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+  <!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>

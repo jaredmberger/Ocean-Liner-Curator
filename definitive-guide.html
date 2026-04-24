@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Definitive Guide to Research Standards — Ocean Liner Curator</title>
+  <meta name="description" content="A public reference handbook summarizing research standards, evidence evaluation, attribution discipline, and ethical interpretation used across Ocean Liner Curator." />
+
+  <link rel="canonical" href="https://oceanliners.net/definitive-guide" />
+  <meta name="theme-color" content="#0a1110">
+  <meta name="robots" content="index,follow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/definitive-guide#webpage",
+    "name": "Definitive Guide to Research Standards — Ocean Liner Curator",
+    "url": "https://oceanliners.net/definitive-guide",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "inLanguage": "en",
+    "description": "A public reference handbook summarizing research standards, evidence evaluation, attribution discipline, and ethical interpretation used across Ocean Liner Curator."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://oceanliners.net/definitive-guide#pdf",
+    "name": "Ocean Liner Curator — Definitive Guide to Resarch Standards (PDF)",
+    "url": "https://oceanliners.net/Ocean-Liner-Curator-Definitive-Guide-Research-Standards.pdf",
+    "fileFormat": "application/pdf",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "name": "Ocean Liner Curator",
+      "url": "https://oceanliners.net/"
+    }
+  }
+  </script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="/logo.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --bg: #0a1110;
+      --panel: rgba(15,27,25,0.78);
+      --text: #e6dfcf;
+      --muted: #b6ae9c;
+      --accent: #bfa46a;
+      --border: rgba(191,164,106,0.28);
+      --shadow: rgba(0,0,0,0.60);
+      --font-sans: "Spectral", Georgia, "Times New Roman", serif;
+      --link: rgba(209,187,134,0.92);
+    }
+
+    html{
+      text-rendering: optimizeLegibility;
+      scroll-behavior: auto; /* IMPORTANT: no smooth scrolling on iOS hash jumps */
+      background: none;
+    }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      /* Safari-safe vignette: normal background on body (NO fixed overlays) */
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height: 100dvh;
+      overflow-x:hidden;
+
+      /* ensures you never “cut off” the panel at the bottom on iOS */
+      padding: 0 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    /* TOP MENU BAR */
+    .site-header{
+      width: 100%;
+      margin: 0;
+      padding: 0.75rem 0;
+      background: rgba(15,27,25,0.55);
+      border-bottom: 1px solid rgba(191,164,106,0.22);
+      position: relative;
+      z-index: 5000;
+    }
+
+    .header-inner{
+      width: min(860px, calc(100% - 1.5rem));
+      margin: 0 auto;
+      padding: 0 2.2rem;
+    }
+
+    .site-nav{
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .nav-link{
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.35);
+      padding-bottom: 2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position: relative; }
+    .nav-dropdown summary{
+      cursor: pointer;
+      list-style: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display: none; }
+
+    .dropdown-panel{
+      position: absolute;
+      top: 1.8rem;
+      left: 0;
+      min-width: 240px;
+      background: rgba(15,27,25,0.95);
+      border: 1px solid rgba(191,164,106,0.28);
+      border-radius: 12px;
+      padding: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      z-index: 6000;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.25);
+      padding: 0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    /* PANEL */
+    .container{
+      width: min(860px, calc(100% - 1.5rem));
+      margin: 1.1rem auto 0; /* centered */
+      background-color: rgba(15,27,25,0.78);
+      background-image:
+        url("/quatrefoil.svg");
+      background-size: 360px 360px;
+      background-position: center 38%;
+      background-repeat: repeat;
+
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.9rem 2.4rem;
+      position: relative;
+      overflow: hidden;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    
+
+    @keyframes compass-settle {
+      from { opacity: 0.88; transform: scale(0.994); }
+      to   { opacity: 0.95; transform: scale(1); }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .container::after{ animation:none; transform:none; }
+    }
+
+    .container > *{ position: relative; z-index: 1; }
+
+    .logo-mount{
+      width: 94px;
+      height: 94px;
+      margin: 0 auto 0.9rem auto;
+      padding: 9px;
+      border-radius: 16px;
+      border: 1px solid rgba(191,164,106,0.55);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow: 0 14px 34px rgba(0,0,0,0.42);
+      position: relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position: absolute;
+      inset: 7px;
+      border-radius: 12px;
+      border: 1px solid rgba(191,164,106,0.22);
+      pointer-events: none;
+    }
+
+    .logo{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      border-radius: 12px;
+      background: rgba(230,223,207,0.06);
+    }
+
+    h1 {
+  font-family: "Libre Baskerville", serif;
+  font-variant: small-caps;
+  text-align: left;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
+    .rule{
+      width: 160px;
+      height: 2px;
+      margin: 1.05rem auto 1.35rem auto;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0.85;
+    }
+
+    .lede{
+      max-width: 70ch;
+      margin: 0 auto 1.1rem auto;
+      font-size: 1.06rem;
+      line-height: 1.72;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .meta{
+      text-align: center;
+      max-width: 74ch;
+      margin: 0.7rem auto 0 auto;
+      font-size: 0.92rem;
+      color: var(--muted);
+      opacity: 0.95;
+    }
+
+    .section{
+      max-width: 76ch;
+      margin: 0 auto;
+    }
+
+    /* Anchor comfort (not required for the JS, but nice for readability) */
+    h2[id]{ scroll-margin-top: 16px; }
+
+    h2{
+  position: relative;
+  margin:2.25rem auto 0.9rem auto;
+  max-width:var(--measure);
+  width:100%;
+  text-align:left;
+  font-size:1.22rem;
+  font-weight:600;
+  color:var(--text);
+}
+
+   h2::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:1px;
+  margin-top:0.45rem;
+  background:linear-gradient(
+    90deg,
+    var(--accent),
+    rgba(191,164,106,0.35),
+    transparent
+  );
+}
+
+    p{
+      margin: 0 0 1.05rem 0;
+      color: rgba(230,223,207,0.92);
+      line-height: 1.72;
+    }
+
+    ul{
+      margin: 0.2rem 0 1.2rem 1.1rem;
+      padding: 0;
+      color: rgba(230,223,207,0.92);
+      line-height: 1.7;
+    }
+
+    .pdf-row{
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      align-items: center;
+      margin: 1.1rem 0 1.15rem 0;
+    }
+
+    .pdf-tag{
+      font-size: 0.72em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-left: 0.45em;
+      opacity: 0.7;
+    }
+
+    .jump{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:0.45rem;
+      margin: 0.35rem 0 0.35rem 0;
+    }
+    .chip{
+      display:inline-block;
+      padding:0.35rem 0.6rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.28);
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+      text-decoration:none;
+      font-size:0.92rem;
+      letter-spacing:0.2px;
+    }
+    .chip:hover{ background:rgba(191,164,106,0.10); border-color:rgba(191,164,106,0.42); }
+
+    .note{
+      margin: 1.15rem 0 1.25rem 0;
+      padding: 0.95rem 1.0rem;
+      border: 1px solid rgba(191,164,106,0.26);
+      border-radius: 14px;
+      background: rgba(191,164,106,0.06);
+       backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+      color: rgba(230,223,207,0.92);
+    }
+    .note strong{ color: var(--text); font-weight: 600; }
+
+    .cards{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem;
+      margin: 0.7rem 0 0.2rem 0;
+    }
+
+    .card{
+      border:1px solid rgba(191,164,106,0.20);
+      border-radius: 14px;
+      background: rgba(0,0,0,0.12);
+       backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+      padding: 0.9rem 0.95rem;
+      display: grid;
+  grid-template-columns: 1.15rem 1fr;
+  column-gap: 0.75rem;
+  align-items: start;
+    }
+    
+    /* decorative star on the left */
+.card::before{
+  content: "★";              /* try: "★" or "⁂" */
+  color: #bfa46a;
+  opacity: 0.9;
+  font-size: 0.92rem;
+  line-height: 1.2;
+  margin-top: 0.27rem;       /* nudges star down to align with h3 */
+}
+
+/* force all existing content into column 2 */
+.card > *{
+  grid-column: 2;
+  }
+    
+    .card h3{
+      margin:0 0 0.35rem 0;
+      font-size: 1.02rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: rgba(230,223,207,0.98);
+    }
+    .card p{ margin:0; font-size: 0.98rem; line-height: 1.65; }
+
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(191,164,106,0.28), transparent);
+      margin: 1.5rem 0 0.2rem 0;
+    }
+
+/* ================================
+   Authority badges
+   ================================ */
+
+.badge{
+  --brass: #bfa46a;
+
+  display: inline-block;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--brass);
+
+  padding: 0.28rem 0.6rem 0.32rem;
+  border: 1.5px solid var(--brass);
+  border-radius: 999px;
+
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badge.centered{
+  display: block;
+  margin: 0.6rem auto 0.9rem;
+}
+
+/* Badge groups (for multiple badges) */
+.badge-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.6rem 0 0.85rem;
+}
+
+/* Subtle hierarchy: primary badge slightly heavier */
+.badge.primary{
+  border-width: 2px;
+}
+
+/* Optional: quieter secondary badges */
+.badge.secondary{
+  opacity: 0.85;
+}
+
+    .navbuttons{
+      margin-top: 2.05rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    a.button{
+      display: inline-block;
+      padding: 0.9rem 1.45rem;
+      font-size: 0.98rem;
+      letter-spacing: 0.35px;
+      text-decoration: none;
+      color: #0a1110;
+      background: linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
+      border: 1px solid rgba(0,0,0,0.35);
+      border-radius: 10px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+      box-shadow: 0 10px 26px rgba(191,164,106,0.22);
+    }
+
+    a.button:hover{
+      transform: translateY(-1px);
+      filter: brightness(1.03);
+      box-shadow: 0 14px 34px rgba(191,164,106,0.32);
+    }
+
+    a.button:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.75);
+      outline-offset: 3px;
+    }
+
+    a.button.secondary.navbutton{
+      background: linear-gradient(
+        180deg,
+        rgba(191,164,106,0.10) 0%,
+        rgba(10,17,16,0.16) 55%,
+        rgba(0,0,0,0.15) 100%
+      );
+      color: var(--link);
+      border: 1px solid rgba(191,164,106,0.45);
+      box-shadow: none;
+      padding: 0.68rem 1.1rem;
+      font-size: 0.92rem;
+      text-decoration: none;
+    }
+    a.button.secondary.navbutton:hover{
+      background: rgba(191,164,106,0.10);
+      transform: translateY(-1px);
+    }
+
+    /* Catch-all for editorial links */
+    a:not(.button):not(.nav-link) {
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+    a:not(.button):not(.nav-link):hover {
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    a:not(.button):not(.nav-link):focus-visible {
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    .flags-footer{
+      display: block;
+      width: 108px;
+      height: auto;
+      margin: 1.1rem auto -0.2rem;
+      opacity: 0.42;
+      filter: saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events: none;
+    }
+
+    footer{
+      margin-top: 2.0rem;
+      text-align: center !important;
+      color: rgba(230,223,207,0.72);
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    /* =========================
+       CONFIDENCE LADDER
+       ========================= */
+    .ladder{
+      margin: 0.85rem 0 1.25rem 0;
+      padding: 0.95rem 1.0rem;
+      border: 1px solid rgba(191,164,106,0.22);
+      border-radius: 14px;
+      background: rgba(0,0,0,0.12);
+       backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+    }
+
+    .ladder-header{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:0.75rem;
+      margin-bottom:0.75rem;
+    }
+
+    .ladder-title{
+      margin:0;
+      font-size:1.02rem;
+      font-weight:700;
+      letter-spacing:0.2px;
+      color:rgba(230,223,207,0.98);
+    }
+
+    .ladder-sub{
+      margin:0;
+      font-size:0.9rem;
+      color:rgba(182,174,156,0.92);
+    }
+
+    .ladder-steps{
+      display:flex;
+      flex-direction:column;
+      gap:0.55rem;
+    }
+
+    .ladder-step{
+      display:flex;
+      gap:0.85rem;
+      align-items:flex-start;
+      padding:0.7rem 0.75rem;
+      border-radius: 12px;
+      border: 1px solid rgba(191,164,106,0.16);
+      background:
+        linear-gradient(180deg, rgba(191,164,106,0.06), rgba(0,0,0,0.08));
+    }
+
+    .ladder-step strong{
+      font-weight:700;
+      color:rgba(230,223,207,0.98);
+    }
+
+    .ladder-badge{
+      flex:0 0 auto;
+      min-width: 9.6rem;
+      padding:0.25rem 0.55rem;
+      border-radius:999px;
+      border: 1px solid rgba(191,164,106,0.30);
+      background: rgba(191,164,106,0.08);
+      color: rgba(230,223,207,0.95);
+      font-size:0.85rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      line-height:1.3;
+    }
+
+    .ladder-body{
+      flex:1 1 auto;
+      color: rgba(230,223,207,0.90);
+      font-size:0.98rem;
+      line-height:1.55;
+    }
+
+    .ladder-scale{
+      margin-top:0.85rem;
+      padding-top:0.85rem;
+      border-top: 1px solid rgba(191,164,106,0.16);
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+    }
+
+    .scale-row{
+      display:flex;
+      align-items:center;
+      gap:0.65rem;
+    }
+
+    .scale-label{
+      flex:0 0 auto;
+      font-size:0.86rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color: rgba(182,174,156,0.92);
+    }
+
+    .scale-bar{
+      position:relative;
+      height:10px;
+      border-radius:999px;
+      border: 1px solid rgba(191,164,106,0.22);
+      background: rgba(0,0,0,0.18);
+      flex:1 1 auto;
+      overflow:hidden;
+    }
+
+    .scale-fill{
+      position:absolute;
+      inset:0;
+      width: 100%;
+      background: linear-gradient(90deg,
+        rgba(191,164,106,0.22),
+        rgba(191,164,106,0.12),
+        rgba(191,164,106,0.06));
+      opacity:0.85;
+    }
+
+    .scale-ticks{
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        repeating-linear-gradient(90deg,
+          rgba(191,164,106,0.16) 0,
+          rgba(191,164,106,0.16) 1px,
+          transparent 1px,
+          transparent 20%);
+      opacity:0.55;
+    }
+
+    .scale-note{
+      margin:0;
+      font-size:0.9rem;
+      color: rgba(182,174,156,0.92);
+    }
+
+    @media (max-width: 780px){
+      .cards{ grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 520px){
+      body{ padding: 0 0 calc(1.6rem + env(safe-area-inset-bottom)); }
+      .site-header{ margin-top: 0.35rem; padding: 0.65rem 0; }
+      .header-inner{ width: calc(100% - 1.5rem); padding: 0 1.25rem; }
+      .container{
+        width: calc(100% - 1.5rem);
+        margin: 1.05rem auto 0;
+        padding: 1.9rem 1.25rem;
+        border-radius: 14px;
+        background-size: 54px 54px;
+      }
+      h1{ font-size: 1.75rem; }
+      .lede{ font-size: 0.98rem; }
+      a.button{ width: 100%; text-align: center; }
+      .navbuttons{ gap: 0.6rem; }
+      a.button.secondary.navbutton{ width: 100%; text-align: center; }
+      .flags-footer{ width: 92px; margin: 0.9rem auto 0; opacity: 0.35; }
+      .ladder{ padding:0.85rem 0.85rem; }
+      .ladder-header{ flex-direction:column; align-items:flex-start; }
+      .ladder-step{ flex-direction:column; gap:0.5rem; }
+      .ladder-badge{ min-width: auto; width: fit-content; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{ transition: none; }
+      .container::after{ animation:none; }
+    }
+    
+    @media (min-width: 1300px){
+  .container{
+    width: min(1080px, calc(100% - 3rem));
+  }
+}
+
+@media (min-width: 1100px){
+  .container p{
+    max-width: 72ch;
+  }
+}
+
+@media (max-width: 520px){
+  .container{
+    background-size: 280px 280px;
+  }
+}
+
+@media (max-width: 420px){
+  .container{
+    background-size: 220px 220px;
+  }
+}
+
+.hero{
+  position: relative;
+  overflow: hidden;
+
+  /* centered "card" sizing */
+  width: min(780px, calc(100% - 1.5rem));
+  margin: 1.1rem auto 0;
+
+  /* hero sizing */
+  min-height: 52vh;
+  max-height: 640px;
+
+  display: flex;
+  align-items: flex-end;
+
+  border-radius: 16px;
+  border: 1px solid rgba(191,164,106,0.22);
+
+  background:
+    linear-gradient(to bottom,
+      rgba(10,17,16,0.70) 0%,
+      rgba(10,17,16,0.05) 45%,
+      rgba(10,17,16,0.72) 100%),
+    url("/olympic-hero.jpg") center/cover no-repeat;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:0.55;
+  background:
+    radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+    radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
+}
+
+.hero-inner{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 3.2rem 2.2rem 2.1rem;
+}
+
+.hero h1{
+  margin: 0 0 0.55rem;
+  font-family: "Libre Baskerville", serif;
+  font-variant: small-caps;
+  letter-spacing: 0.09em;
+  font-weight: 400;
+  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+.hero p{
+  margin: 0;
+  max-width: 70ch;
+  color: rgba(230,223,207,0.92);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 600px){
+  .hero{ min-height: 46vh; }
+  .hero-inner{ padding: 2.6rem 1.15rem 1.65rem; }
+}
+
+@media (min-width: 1300px){
+  .hero{ width: min(1080px, calc(100% - 3rem)); }
+}
+
+.container{
+  --container-pad-top: clamp(1.75rem, 3.8vh, 2.6rem);
+
+  padding:
+    var(--container-pad-top)
+    2.75rem
+    1.5rem;
+}
+
+.footer-stack{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+.copyright{
+  width:100%;
+  max-width:none;
+  margin:1.2rem 0 0;
+  font-size:0.72rem;
+  opacity:0.55;
+  text-align:center;
+}
+     .site-mark,
+.site-mark:link,
+.site-mark:visited,
+.site-mark:hover,
+.site-mark:active,
+.site-mark:focus{
+  color: #e6dfcf !important;
+  text-decoration: none !important;   /* kills underline everywhere */
+  border-bottom: none !important;
+}
+
+.site-mark{
+  -webkit-text-decoration: none !important;
+}
+    
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+
+   <div id="site-header"></div>
+  
+  <section class="hero" aria-label="Research hero">
+  <div class="hero-inner">
+    <h1>Research Standards</h1>
+    <p>
+     Research standards used throughout Ocean Liner Curator.
+    </p>
+  </div>
+</section>
+
+  <main class="container">
+
+   <!-- <div class="logo-mount">
+      <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+    </div>
+
+    <h1>Research Standards</h1>
+    
+<div class="badge-group">
+  <span class="badge primary centered">Methodology Page</span>
+</div>
+    <div class="rule"></div> -->
+
+    <p class="lede">
+      This page summarizes the research standards used throughout Ocean Liner Curator.
+      The full handbook remains available as a PDF reference.
+    </p>
+
+    <div class="section">
+
+      <div class="pdf-row">
+        <a class="button secondary navbutton" href="/Ocean-Liner-Curator-Definitive-Guide-Research-Standards.pdf" target="_blank" rel="noopener">
+          ⧉ Open the Definitive Guide to Research Standards<span class="pdf-tag">PDF</span>
+        </a>
+
+        <p class="meta">
+          Note: This guide describes <em>method</em> and <em>confidence</em>—it does not certify individual objects.
+          For transparency on AI-assisted tools, see <a href="/ocean-liner-gpt">Ocean Liner GPT &amp; AI Methodology</a>.
+        </p>
+      </div>
+
+      <div class="note">
+        <strong>What this is:</strong> A plain-language summary of how claims are tested, how attribution is expressed,
+        and how uncertainty is preserved when evidence does not support a definitive conclusion.
+      </div>
+
+      <div class="jump" aria-label="Jump to section">
+        <a class="chip" href="#principles">Principles</a>
+        <a class="chip" href="#evidence-hierarchy">Evidence hierarchy</a>
+        <a class="chip" href="#attribution-levels">Attribution levels</a>
+        <a class="chip" href="#comparative">Comparative method</a>
+        <a class="chip" href="#provenance">Provenance discipline</a>
+        <a class="chip" href="#redflags">Red flags</a>
+        <a class="chip" href="#language">Language & confidence</a>
+      </div>
+
+      <h2 id="principles">Core principles</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Evidence-first</h3>
+          <p>Claims follow what can be checked. Story and resemblance are treated as leads until supported by marks, documents, or verified comparatives.</p>
+        </div>
+        <div class="card">
+          <h3>Restraint is a method</h3>
+          <p>“Unknown” is a valid conclusion. When the evidence ceiling is reached, the correct outcome is to stop—not to fill gaps.</p>
+        </div>
+        <div class="card">
+          <h3>Separate object from narrative</h3>
+          <p>An object may be authentic while the attached story is wrong (or untestable). The two are evaluated independently.</p>
+        </div>
+        <div class="card">
+          <h3>Ship-specific is a high bar</h3>
+          <p>Many lines used fleet patterns and long-running supplier contracts. Specific ship claims usually require documentation or a verifiable identifier.</p>
+        </div>
+      </div>
+
+      <h2 id="evidence-hierarchy">Evidence hierarchy (strongest to weakest)</h2>
+      <ul>
+        <li><strong>Primary documentation</strong>: dated records identifying the <em>specific object</em> (invoices, logs, deaccession papers, photographs showing the exact item).</li>
+        <li><strong>Object-mark evidence</strong>: maker marks, assay marks, property marks, stamped identifiers, serials—interpreted in context (what they do and do not prove).</li>
+        <li><strong>Material / construction cues</strong>: manufacturing method, materials, fasteners, printing process, wear patterns consistent with use.</li>
+        <li><strong>Verified comparatives</strong>: matching to museum catalogs, archival photos, or reliable documented collections (not a lone image online).</li>
+        <li><strong>Oral history / listing narrative</strong>: potentially useful, but treated as a lead unless independently supported.</li>
+      </ul>
+
+      <div class="note">
+        <strong>Key rule:</strong> A hallmark can confirm metal content; it does not prove a ship. A crest can suggest an institution; it does not automatically prove shipboard use.
+      </div>
+
+      <h2 id="attribution-levels">Attribution levels (how conclusions are phrased)</h2>
+      <p>
+        This site prefers explicit attribution language, so readers can tell the difference between what is
+        <em>known</em>, what is <em>likely</em>, and what is only <em>suggested</em>.
+      </p>
+      <ul>
+        <li><strong>Confirmed</strong>: supported by primary documentation and/or unambiguous identifiers.</li>
+        <li><strong>Strong</strong>: multiple independent supports (marks + comparatives + date/production fit), without contradictions.</li>
+        <li><strong>Probable</strong>: plausible and supported, but missing a key piece (e.g., no direct documentation).</li>
+        <li><strong>Possible</strong>: consistent with the evidence, but not enough to prefer it over alternatives.</li>
+        <li><strong>Unknown / untestable</strong>: the evidence ceiling has been reached; further certainty would be speculation.</li>
+      </ul>
+
+      <section class="ladder" aria-label="Confidence ladder">
+        <div class="ladder-header">
+          <h3 class="ladder-title">Confidence ladder</h3>
+          <p class="ladder-sub">How conclusions are expressed (stronger at top)</p>
+        </div>
+
+        <div class="ladder-steps">
+          <div class="ladder-step">
+            <div class="ladder-badge">Confirmed</div>
+            <div class="ladder-body">
+              Supported by <strong>primary documentation</strong> and/or an <strong>unambiguous identifier</strong>
+              tied to the <em>specific object</em>.
+            </div>
+          </div>
+
+          <div class="ladder-step">
+            <div class="ladder-badge">Strong</div>
+            <div class="ladder-body">
+              Multiple independent supports align (marks + verified comparatives + period fit),
+              with <strong>no meaningful contradictions</strong>.
+            </div>
+          </div>
+
+          <div class="ladder-step">
+            <div class="ladder-badge">Probable</div>
+            <div class="ladder-body">
+              Evidence points in one direction, but a key link is missing (often <em>direct documentation</em>).
+              Alternative explanations are less likely—but not eliminated.
+            </div>
+          </div>
+
+          <div class="ladder-step">
+            <div class="ladder-badge">Possible</div>
+            <div class="ladder-body">
+              Consistent with what’s visible, but insufficient to prefer it over competing interpretations.
+              Treated as a <strong>candidate</strong>, not a conclusion.
+            </div>
+          </div>
+
+          <div class="ladder-step">
+            <div class="ladder-badge">Unknown / untestable</div>
+            <div class="ladder-body">
+              The evidence ceiling has been reached. Further certainty would be <strong>speculation</strong>.
+              “Unknown” preserves integrity and remains a valid endpoint.
+            </div>
+          </div>
+        </div>
+
+        <div class="ladder-scale" aria-hidden="true">
+          <div class="scale-row">
+            <span class="scale-label">Confidence</span>
+            <div class="scale-bar">
+              <div class="scale-fill"></div>
+              <div class="scale-ticks"></div>
+            </div>
+          </div>
+          <p class="scale-note">The ladder is about <em>support</em>, not enthusiasm. Stronger claims require stronger evidence.</p>
+        </div>
+      </section>
+
+      <h2 id="comparative">Comparative method (how matching is done)</h2>
+      <ul>
+        <li>Compare <strong>dimensions</strong>, not just motif.</li>
+        <li>Compare <strong>marks and backstamps</strong> (placement, font, punch shape, period conventions).</li>
+        <li>Compare <strong>construction details</strong> (casting seams, rivets, printing method, edge profiles).</li>
+        <li>Prefer <strong>multiple verified matches</strong> over single-image resemblance.</li>
+        <li>Record what differs: a near-match may indicate a <strong>pattern variant</strong>, a different contract, or a different era.</li>
+      </ul>
+
+      <h2 id="provenance">Provenance discipline</h2>
+      <p>
+        Provenance is treated as a <strong>traceable history</strong>, not as a synonym for “a story.”
+        Useful provenance usually includes dated paperwork, identifiable people, or a chain of custody that can be checked.
+      </p>
+      <ul>
+        <li><strong>Strong</strong>: documentation + continuity (e.g., estate papers + photographs + identifiers).</li>
+        <li><strong>Moderate</strong>: plausible chain with partial documentation.</li>
+        <li><strong>Weak</strong>: family claim without dates, names, or object-specific linkage.</li>
+        <li><strong>Unsupported</strong>: listing lore, copied narratives, or “came from a captain” with no details.</li>
+      </ul>
+
+      <h2 id="redflags">Common red flags (prompts for verification)</h2>
+      <ul>
+        <li>No photos of marks; evasive answers when asked for them.</li>
+        <li>Over-specific claims that outrun the evidence (“one-of-a-kind Titanic”).</li>
+        <li>Claims built on a single generic motif (“any star = White Star”).</li>
+        <li>Condition that conflicts with the story (e.g., “shipboard use” but unrealistically pristine in wear-critical areas).</li>
+        <li>Mismatch between alleged era and manufacturing cues (modern fasteners, laser etching, wrong paper/printing method).</li>
+      </ul>
+
+      <h2 id="language">Language &amp; confidence (how uncertainty stays visible)</h2>
+      <p>
+        Ocean Liner Curator avoids “proof by tone.” When a claim is uncertain, the language reflects that uncertainty rather than hiding it.
+        Preferred phrasing includes <em>“attributed to,” “consistent with,” “likely,” “cannot be confirmed,”</em> and <em>“unknown.”</em>
+      </p>
+
+      <div class="divider"></div>
+
+      <p class="meta" style="margin-top:1.0rem;">
+        Related reading: <a href="/evidence">Evidence</a>, <a href="/attribution">Attribution</a>, <a href="/provenance">Provenance</a>,
+        <a href="/identify">Identify</a>, <a href="/unknown">Unknown</a>, and the <a href="/glossary">Glossary</a>.
+      </p>
+
+      <div class="navbuttons">
+        <a class="button secondary navbutton" href="/">Home</a>
+        <a class="button secondary navbutton" href="/about">About Site</a>
+        <a class="button secondary navbutton" href="/ocean-liner-gpt">About Ocean Liner GPT</a>
+      </div>
+
+      <div class="footer-stack">
+  <img class="flags-footer" src="/engraved-anchor.png" alt="" aria-hidden="true" />
+
+  <footer>
+    <p class="copyright">© <span id="year"></span> Ocean Liner Curator.</p>
+  </footer>
+
+ 
+</div>
+
+    </div>
+  </main>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    // Close dropdown when another is opened
+    document.querySelectorAll(".nav-dropdown").forEach((d) => {
+      d.addEventListener("toggle", () => {
+        if (!d.open) return;
+        document.querySelectorAll(".nav-dropdown").forEach((other) => {
+          if (other !== d) other.open = false;
+        });
+      });
+    });
+  </script>
+
+  <!-- iOS Safari-safe hash navigation (no scrollIntoView, no smooth, no fixed overlays) -->
+  <script>
+  (function () {
+    const OFFSET = 14; // small cushion so headings aren't glued to the top
+
+    function closeNavDropdowns(){
+      document.querySelectorAll(".nav-dropdown").forEach(d => { d.open = false; });
+    }
+
+    function yForId(id){
+      const el = document.getElementById(id);
+      if (!el) return null;
+      const rect = el.getBoundingClientRect();
+      return rect.top + window.pageYOffset - OFFSET;
+    }
+
+    function goToId(id, push){
+      const y = yForId(id);
+      if (y == null) return;
+
+      closeNavDropdowns();
+
+      // Update URL hash without native jump (we control scroll)
+      if (push) {
+        history.pushState(null, "", "#" + encodeURIComponent(id));
+      }
+
+      // iOS: do the scroll, then "reassert" very shortly after (fonts/layout/bfcache)
+      window.scrollTo(0, y);
+      setTimeout(() => window.scrollTo(0, y), 50);
+    }
+
+    // Intercept same-page hash clicks
+    document.addEventListener("click", (e) => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+
+      const href = a.getAttribute("href");
+      if (!href || href.length < 2) return;
+
+      const id = decodeURIComponent(href.slice(1));
+      if (!document.getElementById(id)) return;
+
+      e.preventDefault();
+      goToId(id, true);
+    }, { passive: false });
+
+    // If arriving from another page with a hash
+    function goInitial(){
+      if (!location.hash || location.hash.length < 2) return;
+      const id = decodeURIComponent(location.hash.slice(1));
+      if (!document.getElementById(id)) return;
+      // Let layout settle
+      setTimeout(() => goToId(id, false), 0);
+      setTimeout(() => goToId(id, false), 120);
+    }
+
+    window.addEventListener("hashchange", () => {
+      if (!location.hash || location.hash.length < 2) return;
+      const id = decodeURIComponent(location.hash.slice(1));
+      if (!document.getElementById(id)) return;
+      goToId(id, false);
+    });
+
+    // iOS back/forward cache restore
+    window.addEventListener("pageshow", () => {
+      goInitial();
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      goInitial();
+    });
+  })();
+  </script>
+  
+  <script src="/assets/header.js" defer></script>
+       <script src="/assets/nav.js" defer></script>
+
+<!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Research Collections — Ocean Liner Curator</title>
+  <meta name="description" content="Browse Research Collections at Ocean Liner Curator: curated thematic paths through ocean liner history, from Atlantic rivalry and prestige programs to migration-era ships, design transitions, and broader passenger-ship change over time." />
+  <link rel="canonical" href="https://www.oceanliners.net/collections/" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Research Collections — Ocean Liner Curator" />
+  <meta property="og:description" content="Curated thematic journeys through ocean liner history: prestige, rivalry, migration, design, technology, and broader passenger-ship change across eras." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.oceanliners.net/collections/" />
+  <meta property="og:image" content="https://www.oceanliners.net/ships/luxury-liner-hero.WEBP" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Research Collections — Ocean Liner Curator" />
+  <meta name="twitter:description" content="Curated thematic journeys through ocean liner history: prestige, rivalry, migration, design, technology, and broader passenger-ship change across eras." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/ships/luxury-liner-hero.WEBP" />
+
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  <link rel="preload" as="image" href="/collections-hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "@id":"https://www.oceanliners.net/collections/#webpage",
+    "name":"Research Collections — Ocean Liner Curator",
+    "url":"https://www.oceanliners.net/collections/",
+    "description":"A curated landing page for themed research collections exploring ocean liner history across lines, eras, design movements, and historical transitions.",
+    "isPartOf":{
+      "@type":"WebSite",
+      "@id":"https://www.oceanliners.net/#website",
+      "name":"Ocean Liner Curator",
+      "url":"https://www.oceanliners.net/"
+    },
+    "about":[
+      { "@type":"Thing", "name":"Ocean liners" },
+      { "@type":"Thing", "name":"Maritime history" },
+      { "@type":"Thing", "name":"Research collections" },
+      { "@type":"Thing", "name":"Passenger ship history" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --bg-2:#0d1615;
+      --panel:rgba(15,27,25,0.78);
+      --panel-strong:rgba(15,27,25,0.9);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --accent-2:#d7c08a;
+      --border:rgba(191,164,106,0.26);
+      --border-strong:rgba(191,164,106,0.38);
+      --shadow:rgba(0,0,0,0.58);
+      --link:rgba(209,187,134,0.96);
+      --maxw:1120px;
+      --contentw:960px;
+      --radius:22px;
+      --radius-sm:16px;
+      --glass-blur:blur(2px);
+    }
+
+    *{ box-sizing:border-box; }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(191,164,106,0.08), transparent 0 28%),
+        radial-gradient(circle at 20% 18%, rgba(255,255,255,0.03), transparent 0 18%),
+        linear-gradient(180deg, #0c1413 0%, #0a1110 100%);
+      font-family:"Spectral", serif;
+      line-height:1.7;
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.16;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size:22px 22px, 22px 22px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.7), transparent 90%);
+      -webkit-mask-image:linear-gradient(to bottom, rgba(0,0,0,.7), transparent 90%);
+    }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+    }
+
+    a:hover{
+      color:#ecd9ab;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    .page-shell{
+      position:relative;
+      z-index:1;
+      width:min(var(--maxw), calc(100% - 1.4rem));
+      margin:0 auto;
+      padding:1rem 0 2.5rem;
+    }
+
+    .container{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:30px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+        var(--panel);
+      backdrop-filter:var(--glass-blur);
+      -webkit-backdrop-filter:var(--glass-blur);
+      box-shadow:
+        0 22px 60px var(--shadow),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background-image:url("/tile3.png");
+      background-size:280px auto;
+      opacity:.06;
+      mix-blend-mode:screen;
+    }
+
+    .hero{
+      position:relative;
+      display:grid;
+      grid-template-columns:1.18fr .82fr;
+      gap:1.4rem;
+      align-items:stretch;
+      padding:1.4rem;
+      border-bottom:1px solid rgba(191,164,106,0.14);
+      min-height:520px;
+    }
+
+    .hero-copy,
+    .hero-visual{
+      position:relative;
+      min-width:0;
+      z-index:1;
+    }
+
+    .hero-copy{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:1.5rem 1rem 1.5rem 1.4rem;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.65rem;
+      width:max-content;
+      max-width:100%;
+      margin:0 0 1rem;
+      padding:.45rem .85rem;
+      border:1px solid rgba(191,164,106,0.30);
+      border-radius:999px;
+      background:rgba(191,164,106,0.08);
+      color:var(--accent-2);
+      font-size:.78rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      line-height:1.15;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .eyebrow::before{
+      content:"✦";
+      font-size:.8rem;
+      opacity:.92;
+    }
+
+    h1{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(2rem, 5.1vw, 3.5rem);
+      line-height:1.08;
+      letter-spacing:-0.03em;
+      color:#f0e8d7;
+      text-wrap:balance;
+      text-shadow:0 2px 18px rgba(0,0,0,0.26);
+    }
+
+    .hero-sub{
+      max-width:44rem;
+      margin:1.2rem 0 0;
+      font-size:1.08rem;
+      color:var(--muted);
+    }
+
+    .hero-rule{
+      width:160px;
+      height:2px;
+      margin:1.3rem 0 1.15rem;
+      background:linear-gradient(90deg, var(--accent), transparent);
+      opacity:.88;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.9rem;
+      margin:1.5rem 0 0;
+    }
+
+    .hero-note{
+      max-width:46rem;
+      margin:1rem 0 0;
+      color:#cdbf9c;
+      font-size:.96rem;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.55rem;
+      min-height:48px;
+      padding:.82rem 1.15rem;
+      border-radius:14px;
+      border:1px solid rgba(0,0,0,0.32);
+      font-weight:600;
+      letter-spacing:.01em;
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+      box-shadow:0 8px 20px rgba(0,0,0,0.26);
+      text-decoration:none;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      text-decoration:none;
+    }
+
+    .btn-primary{
+      color:#1b1710;
+      background:linear-gradient(180deg, #dbc791 0%, var(--accent) 100%);
+      border-color:rgba(0,0,0,0.28);
+    }
+
+    .btn-primary:hover{
+      background:linear-gradient(180deg, #e2d09f 0%, #c7ad72 100%);
+      color:#17120b;
+      box-shadow:0 12px 26px rgba(0,0,0,0.3);
+    }
+
+    .btn-secondary{
+      color:var(--text);
+      background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border:1px solid var(--border-strong);
+    }
+
+    .btn-secondary:hover{
+      border-color:rgba(191,164,106,0.5);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      color:#f1ead9;
+    }
+
+    .hero-visual{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100%;
+      padding:.6rem;
+    }
+
+    .hero-frame{
+      position:relative;
+      width:100%;
+      height:100%;
+      min-height:420px;
+      border-radius:26px;
+      overflow:hidden;
+      border:1px solid rgba(191,164,106,0.30);
+      background:#0b1211;
+      box-shadow:
+        0 22px 50px rgba(0,0,0,0.36),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .hero-frame::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.10), rgba(10,17,16,0.58)),
+        radial-gradient(circle at 20% 18%, rgba(255,255,255,0.14), transparent 0 30%);
+      z-index:2;
+      pointer-events:none;
+    }
+
+    .hero-frame::after{
+      content:"";
+      position:absolute;
+      inset:14px;
+      border:1px solid rgba(191,164,106,0.16);
+      border-radius:18px;
+      pointer-events:none;
+      z-index:3;
+    }
+
+    .hero-frame img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:saturate(.95) contrast(1.02);
+    }
+
+    .hero-plate{
+      position:absolute;
+      left:1.1rem;
+      right:1.1rem;
+      bottom:1.1rem;
+      z-index:4;
+      padding:.9rem 1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:16px;
+      background:rgba(10,17,16,0.56);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.25);
+    }
+
+    .hero-plate-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:1rem;
+      color:#f1ead7;
+    }
+
+    .hero-plate p{
+      margin:.35rem 0 0;
+      font-size:.92rem;
+      color:var(--muted);
+      line-height:1.55;
+    }
+
+    .main{
+      padding:0 1.4rem 1.5rem;
+      position:relative;
+      z-index:1;
+    }
+
+    section{
+      position:relative;
+      padding:2.15rem 0 0;
+    }
+
+    .section-head{
+      max-width:52rem;
+      margin:0 auto .5rem;
+      text-align:center;
+      padding:0 1rem;
+    }
+
+    .section-kicker{
+      display:inline-block;
+      margin:0 0 0;
+      color:var(--accent-2);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:clamp(1.55rem, 3vw, 2.35rem);
+    }
+
+    h2{
+      margin:0 0 .7rem;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.45rem, 3vw, 2.25rem);
+      letter-spacing:-0.02em;
+      color:#f0e7d6;
+      text-wrap:balance;
+      text-align:center !important;
+    }
+    
+    .section-head{
+  text-align:center;
+}
+
+.section-head h2{
+  display:block;
+  width:100%;
+  margin:0 auto .7rem;
+  text-align:center !important;
+  margin-top:0;
+}
+
+
+
+.section-head h2::after{
+  content:"";
+  display:block;
+  width:140px;
+  height:2px;
+  margin:.8rem auto 0;
+  background:linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity:.82;
+}
+
+    .section-head p{
+      margin:0 auto;
+      max-width:48rem;
+      color:var(--muted);
+      font-size:1rem;
+    }
+
+    .section-star{
+      display:inline-block;
+  line-height:1;
+  transform:translateY(-2px);
+  margin-top:.1rem;
+      
+      color:#f0cf58;
+      text-shadow:
+        0 0 6px rgba(240,207,88,0.3),
+        0 0 12px rgba(240,207,88,0.18);
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0, 1fr));
+      gap:1rem;
+      margin-top:1.2rem;
+    }
+
+    .stat-card{
+      padding:1.2rem 1rem;
+      text-align:center;
+      overflow:hidden;
+  border-radius:20px;
+  border:1px solid var(--border);
+      background:rgba(0,0,0,0.12);
+      backdrop-filter:blur(4px);
+      -webkit-backdrop-filter:blur(4px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+    }
+
+    .stat-num{
+      display:block;
+      margin:0 0 .35rem;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1rem, 3.4vw, 1.85rem);
+      color:#f1ead7;
+      line-height:1.1;
+    }
+
+    .stat-label{
+      display:block;
+      font-size:.82rem;
+      color:var(--muted);
+    }
+
+    .collections-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:1rem;
+      margin-top:0.5rem;
+    }
+
+    .collection-card{
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+      padding:1.2rem 1.15rem 1.15rem;
+      position:relative;
+      overflow:hidden;
+      border-radius:20px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,0.12);
+      backdrop-filter:blur(4px);
+      -webkit-backdrop-filter:blur(4px);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,0.32),
+        inset 0 1px 0 rgba(255,255,255,0.03);
+      transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .collection-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(255,255,255,0.05) 0%,
+          rgba(255,255,255,0.015) 26%,
+          transparent 56%
+        );
+      opacity:.28;
+    }
+
+    .collection-card:hover{
+      transform:translateY(-3px);
+      border-color:rgba(191,164,106,0.42);
+      box-shadow:
+        0 16px 32px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015)),
+        rgba(14,24,23,0.84);
+    }
+
+    .collection-card-top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:1rem;
+      margin-bottom:.7rem;
+      min-width:0;
+    }
+
+    .collection-card-title{
+      display:block;
+      min-width:0;
+      flex:1 1 auto;
+      font-family:"Libre Baskerville", serif;
+      font-size:1.18rem;
+      line-height:1.28;
+      color:#f1ead7;
+      text-wrap:balance;
+    }
+
+    .collection-card-meta{
+      flex:0 0 auto;
+      white-space:nowrap;
+      margin-top:.12rem;
+      padding:.22rem .52rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:999px;
+      background:rgba(191,164,106,0.08);
+      color:#d4c08f;
+      font-size:.78rem;
+      letter-spacing:.04em;
+      line-height:1.2;
+    }
+
+    .collection-card-desc{
+      margin:0;
+      color:var(--muted);
+      flex:1 1 auto;
+    }
+
+    .collection-card-link{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      width:max-content;
+      margin-top:1rem;
+      font-weight:600;
+      color:#ecd8a7;
+    }
+
+    .collection-card-link::after{
+      content:"»";
+    }
+
+    .highlight-wrap{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:1rem;
+      margin-top:1.2rem;
+    }
+
+    .highlight-card{
+      padding:1.2rem 1.15rem;
+      position:relative;
+      overflow:hidden;
+      border-radius:20px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,0.12);
+      backdrop-filter:blur(4px);
+      -webkit-backdrop-filter:blur(4px);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,0.32),
+        inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+
+    .highlight-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(255,255,255,0.05) 0%,
+          rgba(255,255,255,0.015) 26%,
+          transparent 56%
+        );
+      opacity:.28;
+    }
+
+    .highlight-card h3{
+      position:relative;
+      z-index:1;
+      margin:0 0 .55rem;
+      font-family:"Libre Baskerville", serif;
+      font-size:1.15rem;
+      color:#f1ead7;
+      text-align:center;  
+    }
+    
+
+    .highlight-card p{
+      position:relative;
+      z-index:1;
+      margin:0;
+      color:var(--muted);
+    }
+
+    .mini-list{
+      position:relative;
+      z-index:1;
+      margin:.9rem 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:.6rem;
+    }
+
+    .mini-list li{
+      position:relative;
+      padding-left:1rem;
+      color:var(--muted);
+    }
+
+    .mini-list li::before{
+      content:"•";
+      position:absolute;
+      left:0;
+      color:var(--accent);
+    }
+
+    .mini-list a{
+      color:#ecd8a7;
+    }
+
+    .closing-card{
+      max-width:780px;
+      margin:1.2rem auto 0;
+      padding:1.35rem 1.25rem;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+      border-radius:20px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,0.12);
+      backdrop-filter:blur(4px);
+      -webkit-backdrop-filter:blur(4px);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,0.32),
+        inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+
+    .closing-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(255,255,255,0.05) 0%,
+          rgba(255,255,255,0.015) 26%,
+          transparent 56%
+        );
+      opacity:.28;
+    }
+
+    .closing-card > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .closing-card p{
+      margin:.25rem 0 0;
+      color:var(--muted);
+    }
+
+    .closing-actions{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:.85rem;
+      margin-top:1rem;
+    }
+
+    footer{
+      position:relative;
+      margin:2rem auto 0;
+      text-align:center;
+      padding:0 1rem 1.15rem;
+      color:var(--muted);
+      font-size:.95rem;
+      z-index:2;
+    }
+
+    .footer-star{
+      position:relative;
+      text-align:center;
+      color:var(--accent);
+      font-size:.9rem;
+      margin:0 0 1rem;
+      line-height:1;
+      opacity:0.85;
+    }
+
+    .footer-star::before,
+    .footer-star::after{
+      content:"";
+      position:absolute;
+      top:50%;
+      width:48px;
+      height:1px;
+      background:var(--accent);
+      opacity:0.85;
+    }
+
+    .footer-star::before{
+      right:calc(50% + 18px);
+    }
+
+    .footer-star::after{
+      left:calc(50% + 18px);
+    }
+
+    .copyright{
+      margin:0;
+    }
+
+    @media (max-width: 920px){
+      .hero{
+        grid-template-columns:1fr;
+        min-height:auto;
+      }
+
+      .hero-copy{
+        padding:1rem .6rem .2rem;
+      }
+
+      .hero-visual{
+        padding:0 .1rem .4rem;
+      }
+
+      .hero-frame{
+        min-height:340px;
+      }
+
+      .stats-grid,
+      .collections-grid,
+      .highlight-wrap{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 640px){
+      .page-shell{
+        width:min(var(--maxw), calc(100% - .8rem));
+        padding:.45rem 0 1.3rem;
+      }
+
+      .container{
+        border-radius:24px;
+      }
+
+      .hero{
+        padding:1rem;
+        gap:1rem;
+      }
+
+      .main{
+        padding:0 1rem 1rem;
+      }
+
+      section{
+        padding-top:1.8rem;
+      }
+
+      .hero-actions,
+      .closing-actions{
+        flex-direction:column;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .stats-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-frame{
+        min-height:280px;
+      }
+
+      .hero-plate{
+        left:.85rem;
+        right:.85rem;
+        bottom:.85rem;
+      }
+
+      .collection-card-top{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:.55rem;
+      }
+
+      .collection-card-meta{
+        white-space:normal;
+      }
+    }
+    
+            .bottom-hero{
+      padding:1.2rem 1.4rem 0;
+    }
+
+    .bottom-hero-frame{
+      position:relative;
+      min-height:360px;
+      border-radius:26px;
+      overflow:hidden;
+      border:1px solid rgba(191,164,106,0.28);
+      background:#0b1211;
+      box-shadow:
+        0 22px 50px rgba(0,0,0,0.34),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .bottom-hero-frame::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.10) 0%, rgba(10,17,16,0.42) 48%, rgba(10,17,16,0.82) 100%),
+        radial-gradient(circle at 18% 20%, rgba(255,255,255,0.12), transparent 0 28%);
+    }
+
+    .bottom-hero-frame::after{
+      content:"";
+      position:absolute;
+      inset:14px;
+      border:1px solid rgba(191,164,106,0.16);
+      border-radius:18px;
+      pointer-events:none;
+      z-index:3;
+    }
+
+    .bottom-hero-frame img{
+      width:100%;
+      height:100%;
+      min-height:360px;
+      object-fit:cover;
+      filter:saturate(.95) contrast(1.03);
+    }
+
+    .bottom-hero-overlay{
+      position:absolute;
+      left:1.2rem;
+      right:1.2rem;
+      bottom:1.2rem;
+      z-index:4;
+      max-width:760px;
+      padding:1rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:18px;
+      background:rgba(10,17,16,0.56);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.24);
+    }
+
+    .bottom-hero-kicker{
+      margin:0 0 .35rem;
+      color:var(--accent-2);
+      font-size:.72rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+
+    .bottom-hero-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.35rem, 2.8vw, 2.1rem);
+      line-height:1.15;
+      color:#f1ead7;
+      text-align:left !important;
+    }
+
+    .bottom-hero-text{
+      margin:.55rem 0 0;
+      color:var(--muted);
+      max-width:48rem;
+    }
+
+    @media (max-width: 640px){
+      .bottom-hero{
+        padding:1rem 1rem 0;
+      }
+
+      .bottom-hero-frame,
+      .bottom-hero-frame img{
+        min-height:280px;
+      }
+
+      .bottom-hero-overlay{
+        left:.85rem;
+        right:.85rem;
+        bottom:.85rem;
+      }
+    }
+    
+    
+  </style>
+   <link rel="stylesheet" href="/assets/nav.css">
+   
+   
+  <style> h2{
+      margin:0 0 0;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.45rem, 3vw, 2.25rem);
+      letter-spacing:-0.02em;
+      color:#f0e7d6;
+      text-wrap:balance;
+      text-align:center;
+      align-items:center;
+    } 
+    
+    .container h2{
+    margin: 0 auto 0.7rem;
+    }
+    
+    .section-star{
+  display:inline-block;
+  color:#f0cf58;
+  text-shadow:
+    0 0 6px rgba(240,207,88,0.3),
+    0 0 12px rgba(240,207,88,0.18);
+}
+    
+    </style>
+   
+</head>
+
+<body>
+
+  <div id="site-header"></div>
+
+  <div class="page-shell">
+    <main class="container">
+
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <div class="eyebrow">Curated thematic routes</div>
+
+          <h1 id="page-title">Ocean Liner History Collections</h1>
+
+          <div class="hero-rule" aria-hidden="true"></div>
+
+          <p class="hero-sub">
+            These collections organize ocean liner history into structured themes, from transatlantic competition and migration-era ships to design evolution and the decline of the liner era.
+Each collection groups related ships, events, and systems to provide a broader understanding beyond individual ship histories.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#collections-grid">Browse Collections</a>
+            <a class="btn btn-secondary" href="/ships/ships">Return to Ship Archive</a>
+          </div>
+
+          <p class="hero-note">
+            Explore prestige races, migration-era traffic, interwar ambitions, line-specific groupings, and the wider shifts that shaped passenger shipping across more than a century.
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img src="/collections-hero.jpg" alt="Ocean liner under dramatic light, used as a hero image for the Research Collections landing page." />
+            <div class="hero-plate">
+              <h2 class="hero-plate-title">A wider frame for liner history</h2>
+              <p>
+                Research Collections are built for readers who want context: rivalries, eras, ship families, design change, technological shifts, and the long historical arcs behind individual vessels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="main">
+
+        <section aria-labelledby="collections-intro">
+          <div class="section-head">
+            <div class="section-kicker">Why collections?<br><span class="section-star">★</span></div>
+            <h2 id="collections-intro">A better way to see patterns across ships and eras</h2>
+            <p>
+              A single ship guide can tell you a great deal. A research collection shows how ships relate to one another: by route, prestige, chronology, function, national identity, design language, or shared historical change.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-num">26</span>
+              <span class="stat-label">Curated collections currently available</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">1838–1965</span>
+              <span class="stat-label">Broad chronological range covered</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">Thematic</span>
+              <span class="stat-label">Built around patterns, not just individual fame</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">Evidence-first</span>
+              <span class="stat-label">Interpretive restraint remains central</span>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="collections-grid">
+          <div class="section-head">
+            <div class="section-kicker">Browse the collections<br><span class="section-star">★</span></div>
+            <h2 id="collections-grid">Explore Ocean Liner History by Theme</h2>
+            <p>
+              Browse curated collections covering major themes in ocean liner history, including migration, speed rivalry, design innovation, and passenger experience.
+            </p>
+          </div>
+
+          <div class="collections-grid">
+
+            <a class="collection-card" href="/collections/blue-riband-era.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">Blue Riband Era</span>
+                <span class="collection-card-meta">1838–1952</span>
+              </div>
+              <p class="collection-card-desc">
+                Record-breaking Atlantic crossings and the competitive pursuit of speed prestige.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/cabin-liner-transition.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">Cabin Liner Transition</span>
+                <span class="collection-card-meta">1919–1955</span>
+              </div>
+              <p class="collection-card-desc">
+                Medium-scale ships rebuilding regular passenger networks after the First World War.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/empire-routes-beyond-the-north-atlantic.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">Empire Routes Beyond the North Atlantic</span>
+                <span class="collection-card-meta">1880–1965</span>
+              </div>
+              <p class="collection-card-desc">
+                The great passenger and mail routes beyond the North Atlantic—services to Australia, India, Africa, and the wider imperial world.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/french-atlantic-flagships.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">French Atlantic Flagships</span>
+                <span class="collection-card-meta">1912–1962</span>
+              </div>
+              <p class="collection-card-desc">
+                The great French liners that projected national elegance, design identity, and Atlantic prestige.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/german-prestige-liners.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">German Prestige Liners</span>
+                <span class="collection-card-meta">1897–1939</span>
+              </div>
+              <p class="collection-card-desc">
+                Flagship programs of Kaiser-era ambition through interwar revival.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/immigrant-era-atlantic-liners.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">Immigrant-era Atlantic Liners</span>
+                <span class="collection-card-meta">c. 1870–1914</span>
+              </div>
+              <p class="collection-card-desc">
+                The passenger ships of the great migration era, when North Atlantic liners carried millions of emigrants, migrants, and hopeful arrivals between Europe and North America.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/liners-rebuilt-and-renamed.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">Liners Rebuilt and Renamed</span>
+                <span class="collection-card-meta">1919–1950s</span>
+              </div>
+              <p class="collection-card-desc">
+                Ships whose identities shifted through transfer, reconstruction, refit, reparations, or rebranding—liners that remind us a vessel’s name was often only one chapter in a longer life.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/lost-liners-and-interrupted-careers.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">Lost Liners and Interrupted Careers</span>
+                <span class="collection-card-meta">1854–1956</span>
+              </div>
+              <p class="collection-card-desc">
+                Passenger liners whose careers ended early or were sharply redirected by disaster, war, collision, fire, grounding, or abrupt structural change.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/olympic-class-liners.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">Olympic-class Liners</span>
+                <span class="collection-card-meta">1908–1935</span>
+              </div>
+              <p class="collection-card-desc">
+                The White Star trio that defined scale, prestige, and tragedy in the pre-war Atlantic world.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/the-birth-of-the-modern-passenger-ship-1838-1875.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">The Birth of the Modern Passenger Ship (1838–1875)</span>
+                <span class="collection-card-meta">1838–1875</span>
+              </div>
+              <p class="collection-card-desc">
+                The formative decades in which the modern passenger ship emerged: scheduled steam crossings, hull innovation, propulsion change, and the early vessels that transformed ocean travel from experiment into system.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/the-end-of-the-atlantic-express-liner.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">The End of the Atlantic Express Liner</span>
+                <span class="collection-card-meta">1945–1970</span>
+              </div>
+              <p class="collection-card-desc">
+                The last phase of the great express liner tradition: the years when speed, glamour, and prestige still mattered, even as the jet age and changing economics made their world increasingly unsustainable.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/the-superliner-race.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">The Superliner Race</span>
+                <span class="collection-card-meta">1880–1965</span>
+              </div>
+              <p class="collection-card-desc">
+                The brief but dramatic escalation in passenger-ship size and ambition before the First World War, when competing lines pushed toward ever larger and more symbolically charged superliners.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+
+            <a class="collection-card" href="/collections/tourist-third-cabin-democratization.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">Tourist Third Cabin / Democratization</span>
+                <span class="collection-card-meta">1920–1965</span>
+              </div>
+              <p class="collection-card-desc">
+                The widening of passenger access at sea: tourist third cabin, cabin class reform, and the gradual movement away from rigid old hierarchies.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+            
+            <a class="collection-card" href="/collections/floating-palaces-interior-innovation.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">Floating Palaces: Interior Innovation</span>
+    <span class="collection-card-meta">c. 1890–1965</span>
+  </div>
+  <p class="collection-card-desc">
+    A curator-minded collection on ocean liner interiors: grand public rooms, decorative programs, passenger hierarchy, and the evolving meaning of luxury at sea.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/collections/dining-rooms-lounges-and-ritual-at-sea.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">Dining Rooms, Lounges, and Ritual at Sea</span>
+    <span class="collection-card-meta">c. 1890–1965</span>
+  </div>
+  <p class="collection-card-desc">
+    A curator-minded collection on shipboard life: dining rituals, lounges, social spaces, and the structured rhythms that shaped daily experience aboard ocean liners.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+            <a class="collection-card" href="/collections/white-stars-big-four.html">
+              <div class="collection-card-top">
+                <span class="collection-card-title">White Star’s Big Four</span>
+                <span class="collection-card-meta">1901–1907</span>
+              </div>
+              <p class="collection-card-desc">
+                The great White Star quartet, <em>Adriatic</em>, <em>Baltic</em>, <em>Cedric</em> and <em>Celtic</em>.
+              </p>
+              <span class="collection-card-link">Open collection</span>
+            </a>
+            
+            <a class="collection-card" href="/collections/what-defines-an-ocean-liner.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">What Defines an Ocean Liner?</span>
+    <span class="collection-card-meta">c. 1838–1970</span>
+  </div>
+  <p class="collection-card-desc">
+    A curator-minded collection on what makes a ship a liner: scheduled service, route logic, passenger function, and the evidence needed to separate liners from adjacent ship types.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/collections/life-below-deck-crew-and-systems.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">Life Below Deck</span>
+    <span class="collection-card-meta">Crew & Systems</span>
+  </div>
+
+  <p class="collection-card-desc">
+    A curator-minded look beneath the public decks: engine rooms, boiler spaces, ventilation, provisioning, and the labor systems that made ocean liners function. This collection traces how ships actually worked—before decoration, before romance.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/collections/from-leviathan-to-united-states.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">From Leviathan to United States</span>
+    <span class="collection-card-meta">1914–1952</span>
+  </div>
+  <p class="collection-card-desc">
+    A curator-minded collection tracing the arc from <em>SS Leviathan</em> through William Francis Gibbs’ long design philosophy to the eventual realization of <em>SS United States</em>.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/collections/the-imperator-class-as-a-design-system.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">The Imperator Class as a Design System</span>
+    <span class="collection-card-meta">1913–1930s</span>
+  </div>
+  <p class="collection-card-desc">
+    A curator-minded collection on <em>Imperator</em>, <em>Vaterland</em>, and <em>Bismarck</em> as a unified prestige program: shared scale, class logic, and a design identity that survived later renaming and reassignment.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/collections/from-olympic-to-titanic-design-revisions-between-sisters.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">From Olympic to Titanic</span>
+    <span class="collection-card-meta">1911–1912</span>
+  </div>
+  <p class="collection-card-desc">
+    A curator-minded collection on the revisions made between <em>Olympic</em> and <em>Titanic</em>: enclosed promenade space, stateroom adjustments, interior refinements, and what White Star changed after the first sister entered service.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/collections/titanic-artifacts-what-survives-and-what-doesnt.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">Titanic Artifacts: What Survives and What Doesn’t</span>
+    <span class="collection-card-meta">Material Survival & Provenance</span>
+  </div>
+  <p class="collection-card-desc">
+    A curator-minded collection on Titanic artifacts: what materials endure, what disappears, how provenance is evaluated, and why survival patterns shape interpretation.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/titanic-public-rooms.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">Titanic’s Most Famous Public Rooms</span>
+    <span class="collection-card-meta">1911–1912</span>
+  </div>
+  <p class="collection-card-desc">
+   A curator-minded guide to the interiors that shaped Titanic’s public identity: the spaces most often remembered, reproduced, and used to represent the ship’s luxury, mood, and social world.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/titanic-what-the-world-knew.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">What the World Knew: Titanic in April 1912</span>
+    <span class="collection-card-meta">1912</span>
+  </div>
+  <p class="collection-card-desc">
+    A guide to how the disaster was understood in real time: false reassurance, partial lists, delayed confirmation, and the long movement from rumor to grief.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/titanic-myths-that-persist.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">Titanic Myths That Persist — and Why They Persist</span>
+    <span class="collection-card-meta">Myth vs. Fact</span>
+  </div>
+  <p class="collection-card-desc">
+    A guide to the stories that keep attaching themselves to Titanic: what the record supports, what is overstated, and why certain claims remain so durable.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+<a class="collection-card" href="/titanic-officers-roles-decisions-and-survival.html">
+  <div class="collection-card-top">
+    <span class="collection-card-title">The Officers of Titanic: Roles, Decisions, and Survival</span>
+    <span class="collection-card-meta">Command, Crisis & Testimony</span>
+  </div>
+  <p class="collection-card-desc">
+    A practical guide to Titanic's deck officers: who they were, what they were responsible for, how their actions have been remembered, and where the historical record remains clear, complicated, or contested.
+  </p>
+  <span class="collection-card-link">Open collection</span>
+</a>
+
+          </div>
+        </section>
+
+        <section aria-labelledby="how-to-use">
+          <div class="section-head">
+            <div class="section-kicker">How to use this page<br><span class="section-star">★</span></div>
+            <h2 id="how-to-use">Three good ways to begin</h2>
+            <p>
+              Not every reader arrives with the same kind of curiosity. These are three especially useful entry methods.
+            </p>
+          </div>
+
+          <div class="highlight-wrap">
+            <div class="highlight-card">
+              <h3>Start with a theme</h3>
+              <p>
+                If you are more interested in broad history than a single vessel, begin with a collection such as <a href="/collections/blue-riband-era.html">Blue Riband Era</a>, <a href="/collections/german-prestige-liners.html">German Prestige Liners</a>, or <a href="/collections/tourist-third-cabin-democratization.html">Tourist Third Cabin / Democratization</a>. These pages are especially good for understanding how prestige, class, migration, and technology interacted over time.
+              </p>
+              <ul class="mini-list">
+                <li>Best for seeing patterns across multiple ships</li>
+                <li>Useful when one vessel is not enough context</li>
+                <li>Ideal for broader historical browsing</li>
+              </ul>
+            </div>
+
+            <div class="highlight-card">
+              <h3>Then go narrower</h3>
+              <p>
+                Once a collection gives you a frame, you can move into the individual ship guides with a much clearer sense of why each ship mattered, how it fit its route or era, and what larger developments it represented.
+              </p>
+              <ul class="mini-list">
+                <li><a href="/ships/ships">Browse Ship Guides</a></li>
+                <li><a href="/collectors-notebook/">Read Collector’s Notebook</a></li>
+                <li><a href="/designs-interiors">Explore Designs &amp; Interiors</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="final-step">
+          <div class="section-head">
+            <div class="section-kicker">Continue exploring<br><span class="section-star">★</span></div>
+            <h2 id="final-step">Take the wider historical route</h2>
+            <p>
+              Research Collections work best when you want more than a list of ships. They are meant to help the bigger picture come into view.
+            </p>
+          </div>
+
+          <div class="closing-card">
+            <h3 style="margin:0;font-family:'Libre Baskerville', serif;font-size:1.22rem;color:#f1ead7;">Built for readers who want context, not just names</h3>
+            <p>
+              Whether you are interested in speed rivalry, migration traffic, prestige fleets, changing class structures, or the long transformation of passenger shipping, these collections are designed to make the larger history easier to navigate.
+            </p>
+
+            <div class="closing-actions">
+              <a class="btn btn-primary" href="/ships/ships">Enter the Ship Archive</a>
+              <a class="btn btn-secondary" href="/timelines-history">Timelines and History</a>
+              <a class="btn btn-secondary" href="/">Go to Homepage</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      
+      <section class="bottom-hero" aria-label="Closing image of SS Leviathan">
+        <div class="bottom-hero-frame">
+          <img src="/collections-end-hero.PNG" alt="Dramatic closing image at the end of the page." />
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-star" aria-hidden="true">★</div>
+        <p class="copyright">© Ocean Liner Curator</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Submission Received — Ocean Liner Curator</title>
+  <meta name="description" content="Your submission has been received for curatorial review." />
+  <link rel="canonical" href="https://oceanliners.net/submissions/thanks" />
+
+  <link rel="preload" as="image" href="/logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0a1110">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing:border-box; }
+
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --link:rgba(209,187,134,0.95);
+      --font:"Spectral", Georgia, serif;
+    }
+
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:0 0 2.25rem;
+    }
+
+    /* container — copied from main template */
+    .container{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:2.25rem auto 0;
+      text-align:center;
+
+      background-color:var(--panel);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.25rem 2.75rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, transparent 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, transparent 55%);
+      pointer-events:none;
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      pointer-events:none;
+      opacity:0.95;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo{
+      width:96px;
+      height:auto;
+      margin:0 auto 0.9rem;
+      display:block;
+      opacity:0.95;
+    }
+
+    h1{
+      font-size:2.25rem;
+      font-weight:600;
+      margin:0 0 0.75rem;
+      letter-spacing:0.5px;
+    }
+
+    .rule{
+      width:130px;
+      height:2px;
+      margin:1rem auto 1.6rem;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+
+    p{
+      max-width:62ch;
+      margin:0 auto 1.25rem;
+      font-size:1.05rem;
+      line-height:1.7;
+    }
+
+    .muted{ color:var(--muted); }
+
+    .actions{
+      margin-top:2rem;
+      display:flex;
+      gap:0.8rem;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    a.button{
+      padding:0.9rem 1.6rem;
+      text-decoration:none;
+      font-size:0.95rem;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border-radius:12px;
+      border:1px solid rgba(0,0,0,0.35);
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+    }
+
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+
+    footer{
+      margin-top:2.4rem;
+      font-size:0.75rem;
+      opacity:0.55;
+    }
+
+    @media (max-width:520px){
+      .container{
+        padding:2rem 1.4rem;
+      }
+      h1{ font-size:1.8rem; }
+      a.button{ width:100%; text-align:center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+    <img src="/logo.png" alt="Ocean Liner Curator logo" class="logo">
+
+    <h1>Submission Received</h1>
+    <div class="rule"></div>
+
+    <p>
+      Thank you for submitting your artwork to <strong>Ocean Liner Curator</strong>.
+      Your submission has been received and entered into the curatorial review queue.
+    </p>
+
+    <p class="muted">
+      Due to volume, not all submissions can be published.  
+      If your work is selected, you’ll be contacted using the email you provided.
+    </p>
+
+    <div class="actions">
+      <a class="button" href="/">Return Home</a>
+      <a class="button secondary" href="/community/art">View Selected Artwork</a>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Ocean Liner Curator
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

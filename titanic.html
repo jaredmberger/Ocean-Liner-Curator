@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Titanic — Topic Hub | Ocean Liner Curator</title>
+  <meta name="description" content="A curated hub for RMS Titanic: timelines from departure to rescue, artifact research collections, and short answers clarifying common misunderstandings." />
+  <link rel="canonical" href="https://www.oceanliners.net/titanic/" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Titanic — Topic Hub | Ocean Liner Curator" />
+  <meta property="og:description" content="Explore RMS Titanic through curated timelines, artifact research, and evidence-first short answers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.oceanliners.net/titanic/" />
+  <meta property="og:image" content="https://www.oceanliners.net/ships/rms-titanic.JPG" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Titanic — Topic Hub | Ocean Liner Curator" />
+  <meta name="twitter:description" content="Explore RMS Titanic through curated timelines, artifact research, and evidence-first short answers." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/ships/rms-titanic.JPG" />
+
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  <link rel="preload" as="image" href="/ships/rms-titanic.JPG" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "@id":"https://www.oceanliners.net/titanic/#webpage",
+    "name":"Titanic — Topic Hub | Ocean Liner Curator",
+    "url":"https://www.oceanliners.net/titanic/",
+    "description":"A curated Titanic hub bringing together timeline, artifacts research, and evidence-first short answers.",
+    "isPartOf":{
+      "@type":"WebSite",
+      "@id":"https://www.oceanliners.net/#website",
+      "name":"Ocean Liner Curator",
+      "url":"https://www.oceanliners.net/"
+    },
+    "about":[
+      { "@type":"Thing", "name":"RMS Titanic" },
+      { "@type":"Thing", "name":"White Star Line" },
+      { "@type":"Thing", "name":"Titanic artifacts" },
+      { "@type":"Thing", "name":"Maritime history" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --bg-2:#0d1615;
+      --panel:rgba(15,27,25,0.78);
+      --panel-strong:rgba(15,27,25,0.9);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --accent-2:#d7c08a;
+      --border:rgba(191,164,106,0.26);
+      --border-strong:rgba(191,164,106,0.38);
+      --shadow:rgba(0,0,0,0.58);
+      --link:rgba(209,187,134,0.96);
+      --maxw:1120px;
+      --contentw:900px;
+      --radius:22px;
+      --radius-sm:16px;
+      --glass-blur:blur(2px);
+    }
+
+    *{ box-sizing:border-box; }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(191,164,106,0.08), transparent 0 28%),
+        radial-gradient(circle at 20% 18%, rgba(255,255,255,0.03), transparent 0 18%),
+        linear-gradient(180deg, #0c1413 0%, #0a1110 100%);
+      font-family:"Spectral", serif;
+      line-height:1.7;
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.16;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size:22px 22px, 22px 22px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.7), transparent 90%);
+      -webkit-mask-image:linear-gradient(to bottom, rgba(0,0,0,.7), transparent 90%);
+    }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+    }
+
+    a:hover{
+      color:#ecd9ab;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    .page-shell{
+      position:relative;
+      z-index:1;
+      width:min(var(--maxw), calc(100% - 1.4rem));
+      margin:0 auto;
+      padding:1rem 0 2.5rem;
+    }
+
+    .container{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:30px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+        var(--panel);
+      backdrop-filter:var(--glass-blur);
+      -webkit-backdrop-filter:var(--glass-blur);
+      box-shadow:
+        0 22px 60px var(--shadow),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background-image:url("/tile3.png");
+      background-size:280px auto;
+      opacity:.06;
+      mix-blend-mode:screen;
+    }
+
+    .hero{
+      position:relative;
+      display:grid;
+      grid-template-columns:1.18fr .82fr;
+      gap:1.4rem;
+      align-items:stretch;
+      padding:1.4rem;
+      border-bottom:1px solid rgba(191,164,106,0.14);
+      min-height:520px;
+    }
+
+    .hero-copy,
+    .hero-visual{
+      position:relative;
+      min-width:0;
+    }
+
+    .hero-copy{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:1.5rem 1rem 1.5rem 1.4rem;
+      z-index:2;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.65rem;
+      width:max-content;
+      max-width:100%;
+      margin:0 0 1rem;
+      padding:.45rem .85rem;
+      border:1px solid rgba(191,164,106,0.30);
+      border-radius:999px;
+      background:rgba(191,164,106,0.08);
+      color:var(--accent-2);
+      font-size:.78rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      line-height:1.15;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .eyebrow::before{
+      content:"✦";
+      font-size:.8rem;
+      opacity:.92;
+    }
+
+    h1{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(2.25rem, 5.1vw, 3.5rem);
+      line-height:1.08;
+      letter-spacing:-0.03em;
+      color:#f0e8d7;
+      text-wrap:balance;
+      text-shadow:0 2px 18px rgba(0,0,0,0.26);
+    }
+
+    .hero-sub{
+      max-width:42rem;
+      margin:1.2rem 0 0;
+      font-size:1.08rem;
+      color:var(--muted);
+    }
+
+    .hero-rule{
+      width:160px;
+      height:2px;
+      margin:1.3rem 0 1.15rem;
+      background:linear-gradient(90deg, var(--accent), transparent);
+      opacity:.88;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.9rem;
+      margin:1.5rem 0 0;
+    }
+
+    .hero-note{
+      max-width:46rem;
+      margin:1rem 0 0;
+      color:#cdbf9c;
+      font-size:.96rem;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.55rem;
+      min-height:48px;
+      padding:.82rem 1.15rem;
+      border-radius:14px;
+      border:1px solid rgba(0,0,0,0.32);
+      font-weight:600;
+      letter-spacing:.01em;
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+      box-shadow:0 8px 20px rgba(0,0,0,0.26);
+      text-decoration:none;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      text-decoration:none;
+    }
+
+    .btn-primary{
+      color:#1b1710;
+      background:linear-gradient(180deg, #dbc791 0%, var(--accent) 100%);
+      border-color:rgba(0,0,0,0.28);
+    }
+
+    .btn-primary:hover{
+      background:linear-gradient(180deg, #e2d09f 0%, #c7ad72 100%);
+      color:#17120b;
+      box-shadow:0 12px 26px rgba(0,0,0,0.3);
+    }
+
+    .btn-secondary{
+      color:var(--text);
+      background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border:1px solid var(--border-strong);
+    }
+
+    .btn-secondary:hover{
+      border-color:rgba(191,164,106,0.5);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      color:#f1ead9;
+    }
+
+    .hero-visual{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100%;
+      padding:.6rem;
+    }
+
+    .hero-frame{
+      position:relative;
+      width:100%;
+      height:100%;
+      min-height:420px;
+      border-radius:26px;
+      overflow:hidden;
+      border:1px solid rgba(191,164,106,0.30);
+      background:#0b1211;
+      box-shadow:
+        0 22px 50px rgba(0,0,0,0.36),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .hero-frame::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.10), rgba(10,17,16,0.58)),
+        radial-gradient(circle at 20% 18%, rgba(255,255,255,0.14), transparent 0 30%);
+      z-index:2;
+      pointer-events:none;
+    }
+
+    .hero-frame::after{
+      content:"";
+      position:absolute;
+      inset:14px;
+      border:1px solid rgba(191,164,106,0.16);
+      border-radius:18px;
+      pointer-events:none;
+      z-index:3;
+    }
+
+    .hero-frame img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:saturate(.95) contrast(1.02);
+    }
+
+    .hero-plate{
+      position:absolute;
+      left:1.1rem;
+      right:1.1rem;
+      bottom:1.1rem;
+      z-index:4;
+      padding:.9rem 1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:16px;
+      background:rgba(10,17,16,0.56);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.25);
+    }
+
+    .hero-plate-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:1rem;
+      color:#f1ead7;
+      text-align:left;
+    }
+
+    .hero-plate p{
+      margin:.35rem 0 0;
+      font-size:.92rem;
+      color:var(--muted);
+      line-height:1.55;
+    }
+
+    .main{
+      padding:0 1.4rem 1.5rem;
+    }
+
+    section{
+      position:relative;
+      padding:2.15rem 0 0;
+    }
+
+    .section-head{
+      max-width:48rem;
+      margin:0 auto 1.2rem;
+      text-align:center;
+      padding:0 1rem;
+    }
+
+    .section-kicker{
+      display:inline-block;
+      margin:0 0 0;
+      color:var(--accent-2);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:clamp(1.55rem, 3vw, 2.35rem);
+    }
+
+    h2{
+      margin:0 0 .8rem !important;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.45rem, 3vw, 2.25rem);
+      letter-spacing:-0.02em;
+      color:#f0e7d6;
+      text-wrap:balance;
+      text-align:center !important;
+      align-items:center !important;
+      margin-top:0;
+    }
+
+    .section-head p{
+      margin:0 auto;
+      max-width:48rem;
+      color:var(--muted);
+      font-size:1rem;
+    }
+
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:1rem;
+      margin-top:1.2rem;
+    }
+
+    .feature-card{
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+      background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter: blur(2px) !important;
+      -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+      position:relative;
+      overflow:hidden;
+      border-radius:20px;
+      border:1px solid var(--border);
+    }
+
+    .feature-card::before,
+    .highlight-card::before,
+    .closing-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(255,255,255,0.05) 0%,
+          rgba(255,255,255,0.015) 26%,
+          transparent 56%
+        );
+      opacity:.28;
+    }
+
+    .feature-card:hover{
+      transform:translateY(-3px);
+      border-color:rgba(191,164,106,0.42);
+      box-shadow:
+        0 16px 32px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .feature-thumb{
+      position:relative;
+      aspect-ratio:4 / 3;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.12);
+      background:#0d1615;
+    }
+
+    .feature-thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .45s ease;
+      filter:saturate(.95) contrast(1.03);
+    }
+
+    .feature-card:hover .feature-thumb img{
+      transform:scale(1.04);
+    }
+
+    .feature-thumb::after{
+      content:"";
+      position:absolute;
+      inset:10px;
+      border:1px solid rgba(191,164,106,0.16);
+      border-radius:14px;
+      pointer-events:none;
+    }
+
+    .feature-body{
+      display:flex;
+      flex-direction:column;
+      gap:.45rem;
+      padding:1rem .95rem 1rem;
+      flex:1 1 auto;
+    }
+
+    .feature-label{
+      font-size:.72rem;
+      letter-spacing:.17em;
+      text-transform:uppercase;
+      color:var(--accent-2);
+    }
+
+    .feature-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:1.02rem;
+      color:#f1ead7;
+    }
+
+    .feature-body p{
+      margin:0;
+      color:var(--muted);
+      font-size:.94rem;
+      flex:1 1 auto;
+    }
+
+    .feature-link{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      margin-top:.2rem;
+      font-weight:600;
+      color:#ecd8a7;
+    }
+
+    .feature-link::after{
+      content:"»";
+    }
+
+    .highlights-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:1rem;
+      margin-top:1.2rem;
+    }
+
+    .highlight-card{
+      padding:1.2rem 1.15rem;
+      background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter: blur(2px) !important;
+      -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+      position:relative;
+      overflow:hidden;
+      border-radius:20px;
+      border:1px solid var(--border);
+    }
+
+    .highlight-card h3{
+      margin:0 0 .55rem;
+      font-family:"Libre Baskerville", serif;
+      font-size:1.15rem;
+      color:#f1ead7;
+    }
+
+    .highlight-card p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    .mini-list{
+      margin:.9rem 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:.6rem;
+    }
+
+    .mini-list li{
+      position:relative;
+      padding-left:1rem;
+      color:var(--muted);
+    }
+
+    .mini-list li::before{
+      content:"•";
+      position:absolute;
+      left:0;
+      color:var(--accent);
+    }
+
+    .mini-list a{
+      color:#ecd8a7;
+    }
+
+    .closing-card{
+      max-width:780px;
+      margin:1.2rem auto 0;
+      padding:1.35rem 1.25rem;
+      text-align:center;
+      background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter: blur(2px) !important;
+      -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+      position:relative;
+      overflow:hidden;
+      border-radius:20px;
+      border:1px solid var(--border);
+    }
+
+    .closing-card p{
+      margin:.25rem 0 0;
+      color:var(--muted);
+    }
+
+    .closing-actions{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:.85rem;
+      margin-top:1rem;
+    }
+
+    footer{
+      position:relative;
+      margin:2rem auto 0;
+      text-align:center;
+      padding:0 1rem 1.15rem;
+      color:var(--muted);
+      font-size:.95rem;
+      z-index:2;
+    }
+
+    .footer-star{
+      position:relative;
+      text-align:center;
+      color:var(--accent);
+      font-size:.9rem;
+      margin:0 0 1rem;
+      line-height:1;
+      opacity:0.85;
+    }
+
+    .footer-star::before,
+    .footer-star::after{
+      content:"";
+      position:absolute;
+      top:50%;
+      width:48px;
+      height:1px;
+      background:var(--accent);
+      opacity:0.85;
+    }
+
+    .footer-star::before{
+      right:calc(50% + 18px);
+    }
+
+    .footer-star::after{
+      left:calc(50% + 18px);
+    }
+
+    .copyright{
+      margin:0;
+    }
+
+    .section-star{
+      margin-bottom:0
+      display:inline-block;
+      color:#f0cf58;
+      text-shadow:
+        0 0 6px rgba(240,207,88,0.3),
+        0 0 12px rgba(240,207,88,0.18);
+    }
+
+    @media (max-width: 1100px){
+      .feature-grid{
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+      }
+    }
+
+   @media (max-width: 920px){
+  .hero{
+    grid-template-columns:1fr;
+    min-height:auto;
+  }
+
+  .hero-copy{
+    padding:0 .35rem .2rem;
+    align-items:center;
+    text-align:center;
+  }
+
+  .eyebrow{
+    margin:0 auto 1rem;
+  }
+
+  h1{
+    max-width:11ch;
+    margin-inline:auto;
+  }
+
+  .hero-rule{
+    margin:1.3rem auto 1.15rem;
+    background:linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
+  }
+
+  .hero-sub{
+    max-width:23rem;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-actions{
+    justify-content:center;
+  }
+
+  .hero-note{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-visual{
+    padding:0 .1rem .4rem;
+  }
+
+  .hero-frame{
+    min-height:340px;
+  }
+
+  .highlights-grid{
+    grid-template-columns:1fr;
+  }
+
+  .feature-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+ 
+  }
+}
+    
+        .bottom-hero{
+      padding:1.2rem 1.4rem 0;
+    }
+
+    .bottom-hero-frame{
+      position:relative;
+      min-height:360px;
+      border-radius:26px;
+      overflow:hidden;
+      border:1px solid rgba(191,164,106,0.28);
+      background:#0b1211;
+      box-shadow:
+        0 22px 50px rgba(0,0,0,0.34),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .bottom-hero-frame::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.10) 0%, rgba(10,17,16,0.42) 48%, rgba(10,17,16,0.82) 100%),
+        radial-gradient(circle at 18% 20%, rgba(255,255,255,0.12), transparent 0 28%);
+    }
+
+    .bottom-hero-frame::after{
+      content:"";
+      position:absolute;
+      inset:14px;
+      border:1px solid rgba(191,164,106,0.16);
+      border-radius:18px;
+      pointer-events:none;
+      z-index:3;
+    }
+
+    .bottom-hero-frame img{
+      width:100%;
+      height:100%;
+      min-height:360px;
+      object-fit:cover;
+      filter:saturate(.95) contrast(1.03);
+    }
+
+    .bottom-hero-overlay{
+      position:absolute;
+      left:1.2rem;
+      right:1.2rem;
+      bottom:1.2rem;
+      z-index:4;
+      max-width:760px;
+      padding:1rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:18px;
+      background:rgba(10,17,16,0.56);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.24);
+    }
+
+    .bottom-hero-kicker{
+      margin:0 0 .35rem;
+      color:var(--accent-2);
+      font-size:.72rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+
+    .bottom-hero-title{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.35rem, 2.8vw, 2.1rem);
+      line-height:1.15;
+      color:#f1ead7;
+      text-align:left !important;
+    }
+
+    .bottom-hero-text{
+      margin:.55rem 0 0;
+      color:var(--muted);
+      max-width:48rem;
+    }
+
+    @media (max-width: 640px){
+      .bottom-hero{
+        padding:1rem 1rem 0;
+      }
+
+      .bottom-hero-frame,
+      .bottom-hero-frame img{
+        min-height:280px;
+      }
+
+      .bottom-hero-overlay{
+        left:.85rem;
+        right:.85rem;
+        bottom:.85rem;
+      }
+    }
+    
+     
+    .hero-emblem{
+  display:flex;
+  justify-content:center;
+  margin:2rem 0 2.2rem;
+}
+
+.hero-emblem img{
+  width:clamp(140px, 18vw, 220px); /* ← controls size */
+  height:auto;
+  display:block;
+  filter:
+    drop-shadow(0 6px 18px rgba(0,0,0,0.6))
+    drop-shadow(0 0 12px rgba(191,164,106,0.25));
+}
+
+
+
+.hero-emblem-bg{
+mix-blend-mode:soft-light;
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+
+  width:clamp(260px, 30vw, 380px);
+  aspect-ratio:1 / 1;
+  background:url('/wsl-embed.PNG') center/contain no-repeat;
+
+  /* 🔧 KEY ADJUSTMENTS */
+  top:55px;              /* move UP behind title */
+  left:35px;              /* nudge slightly right */
+
+  opacity:0.21;          /* slightly more subtle */
+  filter:blur(0.2px);
+}
+
+.eyebrow,
+h1,
+.hero-rule,
+.hero-sub,
+.hero-actions,
+.hero-note{
+  position:relative;
+  z-index:2;
+}
+
+@media (max-width: 920px){
+  .hero-emblem-bg{
+    width:min(72vw, 320px);
+    top:92px;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0.09;
+    filter:blur(0.2px);
+  }
+
+  .hero-copy{
+    padding:0 .35rem .2rem;
+  }
+
+  h1{
+    max-width:11ch;
+  }
+
+  .hero-sub{
+    max-width:23rem;
+  }
+}
+    
+  </style>
+</head>
+
+<body>
+
+  <div id="site-header"></div>
+
+  <div class="page-shell">
+    <main class="container">
+
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+        
+         <div class="hero-emblem-bg" aria-hidden="true"></div>
+        
+        
+          <div class="eyebrow">Titanic topic hub</div>
+
+          <h1 id="page-title">Titanic, organized by event, evidence, and interpretation</h1>
+
+          <div class="hero-rule" aria-hidden="true"></div>
+
+          <p class="hero-sub">
+            A focused starting point for Titanic on Ocean Liner Curator: follow the voyage from departure to rescue, explore the artifacts research collection, and read short answers that clarify some of the most common Titanic-related misunderstandings.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/ships/titanic-southampton-to-rescue-timeline.html">Departure to Rescue Timeline</a>
+            <a class="btn btn-secondary" href="/what-titanic-teaches-about-evidence.html">Titanic & Evidence</a>
+          </div>
+
+          <p class="hero-note">
+            Built to keep chronology, material culture, and company context connected—so Titanic can be approached as more than a single isolated disaster narrative.
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img src="/titanic-postcard.JPG" alt="RMS Titanic as a hero image for the Titanic topic hub." />
+            <div class="hero-plate">
+              <h2 class="hero-plate-title">A tighter way into Titanic</h2>
+              <p>
+                Start with the event itself, move into the surviving objects, and then into the interpretive questions that shape public memory.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="main">
+
+        <section aria-labelledby="choose-path">
+          <div class="section-head">
+            <div class="section-kicker">Begin here<br><span class="section-star">★</span></div>
+            <h2 id="choose-path">Many strong entry points</h2>
+            <p>
+              These are the clearest ways into Titanic on the site: the chronology of the voyage, Titanic movie, and the famous public rooms aboard the ship. More topics then follow.
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/ships/titanic-timeline-hero.jpg" alt="Titanic-related feature image for the departure to rescue timeline." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Timeline</div>
+                <h3 class="feature-title">Departure to Rescue</h3>
+                <p>
+                  Follow the story from Southampton departure through the collision, final hours, lifeboat launches, and the Carpathia rescue sequence.
+                </p>
+                <a class="feature-link" href="/ships/titanic-southampton-to-rescue-timeline.html">Open timeline</a>
+              </div>
+            </article>
+            
+              <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/titanic-movie-hero.JPG" alt="Titanic-related feature image for the movie." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Essay</div>
+                <h3 class="feature-title">Film vs. History</h3>
+                <p>
+                  What the 1997 movie gets right, what it changes, and where dramatic storytelling departs from the historical record.
+                </p>
+                <a class="feature-link" href="/titanic-history-vs-movie.html">Go to Page</a>
+              </div>
+            </article>
+
+<article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/titanic-public-rooms-hero.jpg" alt="Titanic-related feature image for the public rooms." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Research Collection</div>
+                <h3 class="feature-title">Titanic’s Most Famous Public Rooms</h3>
+                <p>
+                  A guide to the interiors that shaped Titanic’s public identity: the spaces most often remembered, reproduced, and used to represent the ship’s luxury, mood, and social world.
+                </p>
+                <a class="feature-link" href="/titanic-public-rooms.html">Browse collection</a>
+              </div>
+            </article>
+
+
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/collections/titanic-artifacts-hero.PNG" alt="Titanic-related feature image for the artifacts research collection." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Research Collection</div>
+                <h3 class="feature-title">Titanic Artifacts</h3>
+                <p>
+                  Explore surviving material tied to Titanic with an emphasis on evidence, provenance, attribution limits, and what the documentation actually supports.
+                </p>
+                <a class="feature-link" href="/collections/titanic-artifacts-what-survives-and-what-doesnt.html">Browse collection</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/wsl-hero.PNG" alt="White Star Line related feature image for Titanic short answers." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Short Answers</div>
+                <h3 class="feature-title">Clarifying Titanic &amp; White Star</h3>
+                <p>
+                  Read short answers on Titanic artifacts and why White Star Line should not be treated as interchangeable with Titanic itself.
+                </p>
+                <a class="feature-link" href="/why-didnt-titanic-slow-down">Why Didn’t Titanic Slow Down?</a><a class="feature-link" href="/could-titanic-have-survived-the-collision">Could Titanic have survived the collision?</a><a class="feature-link" href="/is-this-really-from-titanic">Titanic artifacts</a><a class="feature-link" href="/is-white-star-line-the-same-as-titanic">White Star Line</a>
+              </div>
+            </article>
+            
+              <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/collections/olympic-to-titanic-design-revisions.PNG" alt="Titanic-related feature image for the Olympic and Titanic sister ships." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Research Collection</div>
+                <h3 class="feature-title">From Olympic to Titanic — Design Revisions Between Sisters</h3>
+                <p>
+                  A curator-minded path through the adjustments made between Olympic and Titanic: not a story of wholly different ships, but of a first unit tested in service and a second unit refined through observation, commercial ambition, and selective revision.
+                </p>
+                <a class="feature-link" href="/collections/from-olympic-to-titanic-design-revisions-between-sisters.html">Browse collection</a>
+              </div>
+            </article>
+            
+             <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/titanic-world-knew-hero.WEBP" alt="Titanic-related feature image." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Research Collection</div>
+                <h3 class="feature-title">What the World Knew: Titanic in April 1912</h3>
+                <p>
+                  A guide to how the disaster was understood in real time: false reassurance, partial lists, delayed confirmation, and the long movement from rumor to grief.
+                </p>
+                <a class="feature-link" href="/titanic-what-the-world-knew.html">Browse collection</a>
+              </div>
+            </article>
+            
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/titanic-myths-hero.JPG" alt="Titanic-related feature image." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Research Collection</div>
+                <h3 class="feature-title">Titanic Myths That Persist — and Why They Persist</h3>
+                <p>
+                  A guide to the stories that keep attaching themselves to Titanic: what the record supports, what is overstated, and why certain claims remain so durable.
+                </p>
+                <a class="feature-link" href="/titanic-myths-that-persist.html">Browse collection</a>
+              </div>
+            </article>
+            
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/titanic-officers-hero.jpg" alt="Titanic-related feature image." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Research Collection</div>
+                <h3 class="feature-title">The Officers of Titanic: Roles, Decisions, and Survival</h3>
+                <p>
+                  A practical guide to Titanic's deck officers: who they were, what they were responsible for, how their actions have been remembered, and where the historical record remains clear, complicated, or contested.
+                </p>
+                <a class="feature-link" href="/titanic-officers-roles-decisions-and-survival.html">Browse collection</a>
+              </div>
+            </article>
+            
+            <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="/titanic-evidence-hero.jpg" alt="Titanic-related feature image." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Essay</div>
+                <h3 class="feature-title">What Titanic Teaches About Evidence</h3>
+                <p>
+                  Why one of the most documented maritime disasters in history still requires caution, source discipline, and interpretive restraint.
+                </p>
+                <a class="feature-link" href="/what-titanic-teaches-about-evidence.html">Read essay</a>
+              </div>
+            </article>
+            
+             <article class="feature-card">
+              <div class="feature-thumb">
+                <img src="assets/postcards/titanic-ocean-bow-alt.JPG" alt="Titanic-related feature image." />
+              </div>
+              <div class="feature-body">
+                <div class="feature-label">Guide</div>
+                <h3 class="feature-title">Authentic Titanic Postcards and Promotional Material</h3>
+                <p>
+                  Titanic postcard material is more varied than many collectors first expect. Some cards are memorial pieces issued after the sinking. Others are promotional images tied to White Star presentation and passenger publicity. A smaller group survives mainly through archives, institutional collections, or collecting references rather than easy, publication-safe scans.
+                </p>
+                <a class="feature-link" href="/authentic-titanic-postcards.html">Browse postcards</a>
+              </div>
+            </article>
+            
+          </div>
+        </section>
+
+        <section aria-labelledby="why-this-page">
+          <div class="section-head">
+            <div class="section-kicker">Why this hub?<br><span class="section-star">★</span></div>
+            <h2 id="why-this-page">A better Titanic starting point</h2>
+            <p>
+              Titanic is often encountered as a flattened public-memory subject. This page is meant to restore structure: event sequence, company context, and object-based interpretation in one place.
+            </p>
+          </div>
+
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <h3>Chronology first</h3>
+              <p>
+                The disaster makes more sense when the order of events is clear. A structured timeline helps prevent Titanic from collapsing into a handful of repeated moments detached from sequence.
+              </p>
+              <ul class="mini-list">
+                <li><a href="/ships/titanic-southampton-to-rescue-timeline.html">Southampton departure through Carpathia rescue »</a></li>
+                <li><a href="/ships/rms-carpathia.html">RMS Carpathia ship guide »</a></li>
+              </ul>
+            </div>
+
+            <div class="highlight-card">
+              <h3>Evidence over myth</h3>
+              <p>
+                Titanic collecting and artifact discussion often drift toward assumption. The artifacts collection and short answers help keep claims proportional to the evidence.
+              </p>
+              <ul class="mini-list">
+                <li><a href="/collections/titanic-artifacts-what-survives-and-what-doesnt.html">Titanic artifacts research collection »</a></li>
+                <li><a href="/white-star-line-history.html">White Star Line history »</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="related-reading">
+          <div class="section-head">
+            <div class="section-kicker">Related context<br><span class="section-star">★</span></div>
+            <h2 id="related-reading">Keep the wider context in view</h2>
+            <p>
+              Titanic belongs to a larger network of ships, companies, and historical questions. These adjacent pages help keep that wider frame intact.
+            </p>
+          </div>
+
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <h3>Related ships</h3>
+              <ul class="mini-list">
+                <li><a href="/ships/rms-titanic.html">RMS Titanic ship guide »</a></li>
+                <li><a href="/ships/rms-olympic.html">RMS Olympic ship guide »</a></li>
+                <li><a href="/ships/rms-britannic.html">HMHS Britannic / RMS Britannic ship guide »</a></li>
+                <li><a href="/ships/rms-carpathia.html">RMS Carpathia ship guide »</a></li>
+              </ul>
+            </div>
+
+            <div class="highlight-card">
+              <h3>Related history</h3>
+              <ul class="mini-list">
+                <li><a href="/white-star-line-history.html">White Star Line history »</a></li>
+                <li><a href="/history-of-major-shipping-lines.html">Major shipping line histories »</a></li>
+                <li><a href="/ships/ships">Ship Archive »</a></li>
+                <li><a href="/collections/">Research Collections »</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="final-step">
+          <div class="section-head">
+            <div class="section-kicker">Continue exploring<br><span class="section-star">★</span></div>
+            <h2 id="final-step">Start with Titanic, then widen the lens</h2>
+            <p>
+              The strongest use of this page is simple: begin with one Titanic path, then follow the surrounding context outward into ships, company history, and material culture.
+            </p>
+          </div>
+
+          <div class="closing-card">
+            <h3 style="margin:0;font-family:'Libre Baskerville', serif;font-size:1.22rem;color:#f1ead7;">A dedicated hub for Titanic without losing the larger liner story</h3>
+            <p>
+              Whether you came here for the disaster timeline, the artifact questions, or the White Star context, this page is meant to keep those subjects connected rather than fragmented.
+            </p>
+
+            <div class="closing-actions">
+              <a class="btn btn-primary" href="/ships/titanic-southampton-to-rescue-timeline.html">Open Timeline</a>
+              <a class="btn btn-secondary" href="/collections/titanic-artifacts-what-survives-and-what-doesnt.html">Artifacts Collection</a>
+              <a class="btn btn-secondary" href="/ships/rms-titanic.html">Titanic Ship Guide</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <section class="bottom-hero" aria-label="Closing image of Titanic">
+        <div class="bottom-hero-frame">
+          <img src="/titanic-bottom-hero.JPG" alt="Titanic seen in a dramatic closing image at the end of the page." />
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-star" aria-hidden="true">★</div>
+        <p class="copyright">© Ocean Liner Curator</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+</body>
+</html>

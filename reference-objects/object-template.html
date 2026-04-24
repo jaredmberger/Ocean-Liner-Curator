@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reference Object {{RO_ID}} — Ocean Liner Curator</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <link rel="canonical" href="https://www.oceanliners.net/reference-objects/{{RO_SLUG}}.html" />
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/logo.png">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- House Theme -->
+  <link rel="stylesheet" href="https://www.oceanliners.net/theme.css" />
+
+  <!-- Page additions (minimal; uses your tokens/classes) -->
+  <style>
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    /* Reference Object layout: stays within your container + card system */
+    .ro-meta{
+      margin: 0.75rem auto 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+      max-width: 78ch;
+    }
+    .ro-meta strong{ color: var(--text); font-weight: 600; }
+
+    /* RO tags: consistent spacing + clean wrapping */
+    .ro-tag{
+      display: inline-block;
+      margin-top: 0;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid rgba(191,164,106,0.22);
+      background: rgba(0,0,0,0.10);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .ro-tags{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+    }
+    .ro-sep{ color: rgba(191,164,106,0.45); }
+
+    /* Core grid: SINGLE source of truth */
+    .ro-grid{
+      margin-top: 0.95rem;
+      display: grid;
+      gap: 0.9rem;
+    }
+    /* Desktop: imagery/context left, record/notes right */
+    @media (min-width: 880px){
+      .ro-grid{
+        grid-template-columns: 1.25fr 0.75fr;
+        align-items: start;
+      }
+    }
+
+    .figure{
+      margin: 0;
+      border: 1px solid rgba(191,164,106,0.18);
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(0,0,0,0.10);
+    }
+    .figure img{ display: block; width: 100%; height: auto; }
+
+    /* Single figcap definition */
+    .figcap{
+      padding: 0.75rem 0.95rem 0.85rem;
+      border-top: 1px solid rgba(191,164,106,0.12);
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Prevent figure default margins from reintroducing vertical drift */
+    .card figure{ margin: 0; }
+    .card figure + figure{ margin-top: 0.85rem; }
+
+    /* Object Record "table" that reads like your cards */
+    .record{ display: grid; gap: 0.15rem; }
+    .kv{
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0.7rem;
+      padding: 0.55rem 0;
+      border-top: 1px solid rgba(191,164,106,0.12);
+    }
+    .kv:first-child{ border-top: none; padding-top: 0.2rem; }
+    .k{ color: var(--muted); font-size: 0.92rem; }
+    .v{ color: rgba(230,223,207,0.92); font-size: 0.98rem; }
+
+    /* Attribution status line */
+    .statusline{
+      display: grid;
+      gap: 0.65rem;
+      margin-top: 0.75rem;
+    }
+    @media (min-width: 560px){
+      .statusline{ grid-template-columns: 1fr 1fr; }
+    }
+    .status{
+      border: 1px solid rgba(191,164,106,0.18);
+      border-radius: 12px;
+      padding: 0.7rem 0.85rem;
+      background: rgba(0,0,0,0.08);
+    }
+    .status .label{ color: var(--muted); font-size: 0.9rem; }
+    .status .value{ margin-top: 0.1rem; font-weight: 600; color: var(--text); }
+
+    /* Optional: slightly reduce top spacing since container already breathes */
+    .container h1{ margin-top: 0.35rem; }
+
+    /* Micro-alignment: card headings and first content */
+    .card h2{
+      margin-top: 0;
+      margin-bottom: 0.55rem;
+    }
+    .card h2 + :is(p, ul, figure, .record, .statusline){
+      margin-top: 0;
+    }
+    .card > :is(p, ul, figure, .record, .statusline):first-child{
+      margin-top: 0;
+    }
+
+    /* RO list alignment (tight, museum-label feel) */
+    .card ul{
+      list-style-position: inside;
+      padding-left: 0;
+      margin-left: 0;
+      margin-top: 0.45rem;
+    }
+    .card li{
+      margin: 0.35rem 0;
+      padding-left: 0.15rem; /* optical nudge */
+    }
+
+    /* Reference Object bottom navigation spacing */
+    .cta{ margin-top: 1.6rem; }
+    .actions{
+      display: flex;
+      justify-content: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+    aside .cta{ padding-top: 0.25rem; }
+
+    .card{
+      padding-bottom: 1.35rem; /* was ~1rem */
+    }
+
+    @media (max-width: 520px){
+      .kv{
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+        padding: 0.6rem 0;
+      }
+      .k{
+        font-size: 0.86rem;
+        letter-spacing: 0.2px;
+      }
+    }
+  </style>
+
+  <!-- Schema: individual reference object -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://www.oceanliners.net/reference-objects/{{RO_SLUG}}.html#object",
+    "name": "Reference Object {{RO_ID}}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://www.oceanliners.net/#website",
+      "name": "Ocean Liner Curator",
+      "url": "https://www.oceanliners.net/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="/">Home</a>
+
+        <details class="nav-dropdown">
+          <summary class="nav-link">Reference</summary>
+          <div class="dropdown-panel">
+            <a href="/reference-objects/">Reference Objects</a>
+            <a href="/definitive-guide.html">Definitive Guide</a>
+            <a href="/sources">Sources</a>
+            <a href="/about">About</a>
+            <a href="/scope">Project Scope</a>
+            <a href="/contact">Contact</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="logo-mount">
+      <img class="logo" src="/logo.png" alt="Ocean Liner Curator" />
+    </div>
+
+    <h1>Reference Object</h1>
+    <div class="rule" aria-hidden="true"></div>
+
+    <p class="subtitle" style="text-align:center;">
+      {{OBJECT_DISPLAY_TITLE}}
+    </p>
+
+    <div class="ro-meta ro-tags">
+      <span class="ro-tag"><strong>Object ID:</strong> {{RO_ID}}</span>
+      <span class="ro-sep" aria-hidden="true">•</span>
+      <span class="ro-tag"><strong>Attribution:</strong> {{ATTRIBUTION_LEVEL}}</span>
+      <span class="ro-sep" aria-hidden="true">•</span>
+      <span class="ro-tag"><strong>Last reviewed:</strong> {{LAST_REVIEWED}}</span>
+    </div>
+
+    <section class="ro-grid" aria-label="Reference Object Content">
+
+      <!-- LEFT COLUMN -->
+      <div>
+
+        <section class="card" aria-label="Primary Visual Evidence">
+          <h2>Primary Visual Evidence</h2>
+
+          <!-- Image 1 -->
+          <figure class="figure">
+            <img src="{{IMG_1_SRC}}" alt="{{IMG_1_ALT}}" loading="lazy" />
+            <figcaption class="figcap">{{IMG_1_CAPTION}}</figcaption>
+          </figure>
+
+          <!-- Image 2 -->
+          <figure class="figure">
+            <img src="{{IMG_2_SRC}}" alt="{{IMG_2_ALT}}" loading="lazy" />
+            <figcaption class="figcap">{{IMG_2_CAPTION}}</figcaption>
+          </figure>
+
+          <!-- Image 3 -->
+          <figure class="figure">
+            <img src="{{IMG_3_SRC}}" alt="{{IMG_3_ALT}}" loading="lazy" />
+            <figcaption class="figcap">{{IMG_3_CAPTION}}</figcaption>
+          </figure>
+
+        </section>
+
+        <section class="card" aria-label="Attribution Assessment">
+          <h2>Attribution Assessment</h2>
+          <p class="muted">
+            {{ATTRIBUTION_TEXT}}
+          </p>
+
+          <div class="statusline" aria-label="Attribution Status">
+            <div class="status">
+              <div class="label">Attribution Level</div>
+              <div class="value">{{ATTRIBUTION_LEVEL}}</div>
+            </div>
+            <div class="status">
+              <div class="label">Evidence Type</div>
+              <div class="value">{{EVIDENCE_TYPE}}</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" aria-label="Historical Context">
+          <h2>Historical Context</h2>
+          <p class="muted">{{CONTEXT_P1}}</p>
+          <p class="muted">{{CONTEXT_P2}}</p>
+        </section>
+
+        <section class="card" aria-label="Limits of Evidence">
+          <h2>Limits of Evidence</h2>
+          <ul class="muted">
+            <li>{{LIMIT_1}}</li>
+            <li>{{LIMIT_2}}</li>
+            <li>{{LIMIT_3}}</li>
+            <li>{{LIMIT_4}}</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside>
+
+        <section class="card" aria-label="Object Record">
+          <h2>Object Record</h2>
+
+          <div class="record" role="list">
+            <div class="kv" role="listitem">
+              <div class="k">Object Type</div>
+              <div class="v">{{OBJECT_TYPE}}</div>
+            </div>
+            <div class="kv" role="listitem">
+              <div class="k">Line / Operator</div>
+              <div class="v">{{LINE_OPERATOR}}</div>
+            </div>
+            <div class="kv" role="listitem">
+              <div class="k">Vessel Association</div>
+              <div class="v">{{VESSEL_ASSOCIATION}}</div>
+            </div>
+            <div class="kv" role="listitem">
+              <div class="k">Date Range</div>
+              <div class="v">{{DATE_RANGE}}</div>
+            </div>
+            <div class="kv" role="listitem">
+              <div class="k">Material</div>
+              <div class="v">{{MATERIAL}}</div>
+            </div>
+            <div class="kv" role="listitem">
+              <div class="k">Dimensions</div>
+              <div class="v">{{DIMENSIONS}}</div>
+            </div>
+            <div class="kv" role="listitem">
+              <div class="k">Provenance</div>
+              <div class="v">{{PROVENANCE}}</div>
+            </div>
+            <div class="kv" role="listitem">
+              <div class="k">Current Status</div>
+              <div class="v">{{CURRENT_STATUS}}</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" aria-label="Reference Notes">
+          <h2>Reference Notes</h2>
+          <ul class="muted">
+            <li>{{NOTE_1}}</li>
+            <li>{{NOTE_2}}</li>
+            <li>{{NOTE_3}}</li>
+          </ul>
+        </section>
+
+        <section class="cta" aria-label="Navigation">
+          <div class="actions">
+            <a class="button secondary" href="/reference-objects/">All Reference Objects</a>
+            <a class="button secondary" href="/definitive-guide.html">Methodology</a>
+          </div>
+        </section>
+
+      </aside>
+
+    </section>
+
+    <footer>
+      {{FOOTER_SENTENCE}}
+      <p class="copyright">© <span id="year"></span> Ocean Liner Curator.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

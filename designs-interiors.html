@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Designs & Interiors — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded guide to the design and interiors of ocean liners: public rooms, cabins, decorative styles, shipboard logistics, class structure, and the visual language of the liner world." />
+
+  <link rel="canonical" href="https://oceanliners.net/designs-interiors" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/designs-interiors#webpage",
+    "name": "Designs & Interiors — Ocean Liner Curator",
+    "url": "https://oceanliners.net/designs-interiors",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "A curator-minded guide to the design and interiors of ocean liners: public rooms, cabins, decorative styles, shipboard logistics, class structure, and the visual language of the liner world.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Designs & Interiors — Ocean Liner Curator">
+  <meta property="og:description" content="A curator-minded guide to the design and interiors of ocean liners: public rooms, cabins, decorative styles, shipboard logistics, class structure, and the visual language of the liner world.">
+  <meta property="og:url" content="https://oceanliners.net/designs-interiors">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Designs & Interiors — Ocean Liner Curator">
+  <meta name="twitter:description" content="A curator-minded guide to the design and interiors of ocean liners: public rooms, cabins, decorative styles, shipboard logistics, class structure, and the visual language of the liner world.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    /* =========================
+       TOP MENU BAR
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    /* =========================
+       CARD
+       ========================= */
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1 {
+      font-family: "Libre Baskerville", serif;
+      font-variant: small-caps;
+      letter-spacing: 0.08em;
+      font-weight: 400;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:110px;
+      height:auto;
+      margin:1.1rem auto 1rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    /* Buttons */
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      margin-bottom:2.75rem;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+      margin-bottom:0;
+    }
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    /* =========================
+       ARTICLE TYPOGRAPHY
+       ========================= */
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    .scope p,
+    .scope ul,
+    .scope .note{
+      text-align:left;
+    }
+
+    .scope h2{
+      margin:2.25rem auto 0.7rem auto;
+      max-width:var(--measure);
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+      letter-spacing:0.2px;
+    }
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    .scope p a,
+    .scope li a,
+    .scope .note a{
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.22);
+      padding-bottom: 1px;
+    }
+    .scope p a:hover,
+    .scope li a:hover,
+    .scope .note a:hover{
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    .scope p a:focus-visible,
+    .scope li a:focus-visible,
+    .scope .note a:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    /* Hub index grid */
+    .notebook-grid{
+      max-width:var(--measure);
+      margin: 0.35rem auto 1.45rem auto;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:0.85rem;
+      text-align:left;
+    }
+    .nb-card{
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      padding:0.95rem 1.05rem;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+      background:rgba(0,0,0,0.12);
+    }
+    
+    .nb-card::after{
+    content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.045) 0%,
+    rgba(255,255,255,0.015) 30%,
+    transparent 60%
+  );
+
+  opacity:.40;
+}
+    
+    .nb-card h3{
+      margin:0 0 0.35rem 0;
+      font-size:1.05rem;
+      font-weight:600;
+      letter-spacing:0.2px;
+      color:rgba(230,223,207,0.96);
+      display:flex;
+      align-items:center;
+      gap:0.55rem;
+    }
+
+    .nb-card h3::before{
+      content:"★";
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:1.2rem;
+      height:1.2rem;
+      flex:0 0 1.2rem;
+      border-radius:6px;
+      border:1px solid rgba(191,164,106,0.42);
+      background:
+        linear-gradient(
+          180deg,
+          rgba(191,164,106,0.12) 0%,
+          rgba(0,0,0,0.18) 100%
+        );
+      color:rgba(191,164,106,0.95);
+      font-size:0.9rem;
+      line-height:1;
+      box-shadow:
+        inset 0 0 0 1px rgba(191,164,106,0.10),
+        0 8px 18px rgba(0,0,0,0.22);
+    }
+
+    .nb-card p{
+      margin:0.1rem 0 0.75rem 0;
+      max-width:none;
+      font-size:1.0rem;
+      line-height:1.65;
+      color:rgba(230,223,207,0.86);
+    }
+
+    .nb-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.5rem 0.6rem;
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .nb-links li{
+      margin:0;
+      padding:0;
+    }
+
+    .nb-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:0.35rem;
+      padding:0.38rem 0.62rem;
+      border-radius:999px;
+      color: rgba(209,187,134,0.95);
+      text-decoration:none;
+      background:rgba(191,164,106,0.06);
+      border:1px solid rgba(191,164,106,0.22);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+      font-size:0.98rem;
+      line-height:1.25;
+      white-space:nowrap;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 0.15s ease, filter 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .nb-links a:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      border-color: rgba(191,164,106,0.45);
+      background:rgba(191,164,106,0.10);
+    }
+
+    .nb-links a:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    footer{ text-align:center; }
+
+    footer p,
+    footer .copyright{
+      max-width:none;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    @media (max-width:520px){
+      .site-header{ padding:0.65rem 0; }
+      .button{ width:100%; text-align:center; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:110px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+
+      .nb-card{ padding:0.9rem 0.95rem; }
+      .nb-links{
+        flex-direction:column;
+        gap:0.55rem;
+      }
+      .nb-links a{
+        width:100%;
+        justify-content:flex-start;
+        padding:0.7rem 0.85rem;
+        border-radius:12px;
+        white-space:normal;
+        font-size:0.98rem;
+      }
+
+      .nb-card h3{ gap:0.5rem; }
+      .nb-card h3::before{
+        width:1.1rem;
+        height:1.1rem;
+        flex-basis:1.1rem;
+        font-size:0.85rem;
+        border-radius:5px;
+      }
+    }
+
+    @media (min-width: 1300px){
+      .container{
+        width: min(1080px, calc(100% - 3rem));
+      }
+    }
+
+    @media (min-width: 1100px){
+      .container p{
+        max-width: 72ch;
+      }
+    }
+
+    .hero{
+      position: relative;
+      overflow: hidden;
+      width: min(780px, calc(100% - 1.5rem));
+      margin: 1.1rem auto 0;
+      min-height: 52vh;
+      max-height: 640px;
+      display: flex;
+      align-items: flex-end;
+      border-radius: 16px;
+      border: 1px solid rgba(191,164,106,0.22);
+      background:
+        linear-gradient(to bottom,
+          rgba(10,17,16,0.70) 0%,
+          rgba(10,17,16,0.05) 45%,
+          rgba(10,17,16,0.72) 100%),
+        url("/interiors-hero.PNG") center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      opacity:0.55;
+      background:
+        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+        radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
+    }
+
+    .hero-inner{
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: 3.2rem 2.2rem 2.1rem;
+    }
+
+    .hero h1{
+      margin: 0 0 0.55rem;
+      font-family: "Libre Baskerville", serif;
+      font-variant: small-caps;
+      letter-spacing: 0.09em;
+      font-weight: 400;
+      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .hero p{
+      margin: 0;
+      max-width: 70ch;
+      color: rgba(230,223,207,0.92);
+      font-size: 1.02rem;
+      line-height: 1.65;
+      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    @media (max-width: 600px){
+      .hero{ min-height: 46vh; }
+      .hero-inner{ padding: 2.6rem 1.15rem 1.65rem; }
+    }
+
+    @media (min-width: 1300px){
+      .hero{ width: min(1080px, calc(100% - 3rem)); }
+    }
+
+    .container{
+      --container-pad-top: clamp(1.75rem, 3.8vh, 2.6rem);
+      padding:
+        var(--container-pad-top)
+        2.75rem
+        1.5rem;
+    }
+
+    .nb-links a > span{
+      display:inline-block;
+      transform: translateY(-2.5px);
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+<div id="site-header"></div>
+
+<section class="hero" aria-label="Designs and Interiors hero">
+  <div class="hero-inner">
+    <h1>Designs &amp; Interiors</h1>
+    <p>
+      A curator-minded guide to public rooms, cabins, decorative styles, branding systems, and the lived interior worlds of the great passenger ships.
+    </p>
+  </div>
+</section>
+
+<main class="container scope">
+
+  <p class="page-kicker">
+    This section is devoted to how ocean liners were <em>designed from the inside out</em>:
+    not only as ships, but as environments. Public rooms, dining saloons, cabins, service corridors,
+    decorative schemes, and class divisions all shaped how liner travel was experienced, remembered,
+    and materially represented.
+  </p>
+
+  <div class="note">
+    <strong>⁂ How to use this section:</strong> Read these pages as interpretive guides rather than décor lists.
+    The goal is not simply to identify styles, but to understand what interiors did:
+    how they organized passenger life, reflected line identity, and changed across routes, eras, refits, and shifting social expectations.
+  </div>
+
+  <h2>Start Here</h2>
+  <p>
+    If you are new to the project, begin with <a href="/start-here">Ocean Liner Curator: Start Here</a>.
+    If you want a broader explanation of how liners functioned as a type, see <a href="/what-are-ocean-liners">What Are Ocean Liners?</a>.
+    If you are approaching interiors through material culture, the <a href="/glossary">Glossary</a> and <a href="/collectors-notebook">Collector’s Notebook</a>
+    will help clarify terms, decorative language, and evidence boundaries.
+  </p>
+
+  <h2>Section Index</h2>
+<p>
+  The pages below divide the subject into major interpretive lanes: class structure, public rooms, cabin planning,
+  decorative language, service systems, material culture, evidence-reading, and the reshaping of interiors across modernization and transfer.
+</p>
+
+  <div class="notebook-grid" role="list" aria-label="Designs and Interiors sections">
+
+  <article class="nb-card" role="listitem">
+    <h3>Passenger Class &amp; Spatial Hierarchy</h3>
+    <p>
+      How liners organized movement, privacy, prestige, and exclusion through decks, staircases, public rooms,
+      and class-separated circulation systems.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/passenger-class-and-spatial-hierarchy"><span>Section overview</span></a></li>
+      <li><a href="/glossary#cabin-class"><span>Cabin class</span></a></li>
+      <li><a href="/glossary#steerage"><span>Steerage</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Dining Rooms, Lounges &amp; Public Rooms</h3>
+    <p>
+      The major shared interiors of the liner world: dining saloons, smoking rooms, writing rooms, verandah cafés,
+      lounges, winter gardens, and the staged social life they supported.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/public-rooms"><span>Section overview</span></a></li>
+      <li><a href="/ships/ss-normandie"><span>SS Normandie</span></a></li>
+      <li><a href="/ships/ss-ile-de-france"><span>SS Île de France</span></a></li>
+    </ul>
+  </article>
+  
+  <article class="nb-card" role="listitem">
+  <h3>Verandahs and Winter Gardens at Sea</h3>
+  <p>
+    Semi-open leisure rooms shaped by light, air, climate-conscious design, and the softer,
+    more relaxed social atmosphere of indoor-outdoor public life at sea.
+  </p>
+  <ul class="nb-links">
+    <li><a href="/designs-interiors/verandahs-and-winter-gardens-at-sea"><span>Read page</span></a></li>
+    <li><a href="/designs-interiors/public-rooms"><span>Public rooms</span></a></li>
+    <li><a href="/designs-interiors/how-route-shaped-interior-planning"><span>Route-shaped planning</span></a></li>
+  </ul>
+</article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Cabins &amp; Accommodation Standards</h3>
+    <p>
+      Private and semi-private passenger spaces: berth arrangements, cabin planning, suites, shared facilities,
+      and the evolving standards of comfort across class and era.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/cabins"><span>Section overview</span></a></li>
+      <li><a href="/glossary#tourist-class"><span>Tourist class</span></a></li>
+      <li><a href="/glossary#tourist-third-cabin"><span>Tourist third cabin</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Decorative Styles &amp; National Identity</h3>
+    <p>
+      Edwardian classicism, French Art Deco, German modernism, Italian prestige styling, Scandinavian restraint,
+      and the broader question of how interior design communicated line identity and national ambition.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/decorative-styles"><span>Section overview</span></a></li>
+      <li><a href="/ships/ss-france-1912"><span>SS France (1912)</span></a></li>
+      <li><a href="/ships/ss-conte-di-savoia"><span>SS Conte di Savoia</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>French, British, German, and Italian Interior Traditions</h3>
+    <p>
+      A comparative guide to how national design traditions can help describe liner interiors—while also showing
+      where those labels become too broad, too rigid, or too confident.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/french-british-german-and-italian-interior-traditions"><span>Read page</span></a></li>
+      <li><a href="/designs-interiors/decorative-styles"><span>Decorative styles</span></a></li>
+      <li><a href="/collections/french-atlantic-flagships.html"><span>French Atlantic Flagships</span></a></li>
+    </ul>
+  </article>
+  
+  <article class="nb-card" role="listitem">
+  <h3>Wall Panels, Woods, Veneers, and Painted Finishes</h3>
+  <p>
+    How paneling, veneers, painted surfaces, and wood treatments shaped atmosphere, class signaling,
+    maintenance logic, and the visual identity of liner interiors.
+  </p>
+  <ul class="nb-links">
+    <li><a href="/designs-interiors/wall-panels-woods-veneers-and-painted-finishes"><span>Read page</span></a></li>
+    <li><a href="/designs-interiors/decorative-styles"><span>Decorative styles</span></a></li>
+    <li><a href="/designs-interiors/french-british-german-and-italian-interior-traditions"><span>National traditions</span></a></li>
+  </ul>
+</article>
+
+<article class="nb-card" role="listitem">
+  <h3>Lighting Fixtures and Decorative Metalwork</h3>
+  <p>
+    How lighting, railings, grilles, chandeliers, sconces, and metal finishes shaped mood, hierarchy,
+    circulation, and the broader decorative language of ship interiors.
+  </p>
+  <ul class="nb-links">
+    <li><a href="/designs-interiors/lighting-fixtures-and-decorative-metalwork"><span>Read page</span></a></li>
+    <li><a href="/designs-interiors/grand-staircases-at-sea"><span>Grand staircases</span></a></li>
+    <li><a href="/designs-interiors/decorative-styles"><span>Decorative styles</span></a></li>
+  </ul>
+</article>
+
+<article class="nb-card" role="listitem">
+  <h3>Carpets, Textiles, and Upholstery at Sea</h3>
+  <p>
+    How carpets, curtains, upholstery, and soft furnishings shaped comfort, acoustics, room mood,
+    branding coherence, and the lived texture of liner interiors.
+  </p>
+  <ul class="nb-links">
+    <li><a href="/designs-interiors/carpets-textiles-and-upholstery-at-sea"><span>Read page</span></a></li>
+    <li><a href="/designs-interiors/china-silver-linens"><span>Total interior scheme</span></a></li>
+    <li><a href="/designs-interiors/branding"><span>Interiors &amp; branding</span></a></li>
+  </ul>
+</article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Functional Design &amp; Shipboard Logistics</h3>
+    <p>
+      The less visible systems that made passenger interiors possible: service corridors, ventilation, galleys, laundry,
+      steward movement, storage, and the practical architecture behind the polished surface.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/functional-design"><span>Section overview</span></a></li>
+      <li><a href="/glossary#liner-service"><span>Liner service</span></a></li>
+      <li><a href="/glossary#working-liner"><span>Working liner</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>How Route Shaped Interior Planning</h3>
+    <p>
+      How climate, voyage length, passenger mix, and service rhythm shaped cabins, public rooms,
+      ventilation strategies, circulation, and the practical logic of liner interiors.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/how-route-shaped-interior-planning"><span>Read page</span></a></li>
+      <li><a href="/designs-interiors/functional-design"><span>Functional design</span></a></li>
+      <li><a href="/collections/empire-routes-beyond-the-north-atlantic.html"><span>Empire routes</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Tourist Class Interiors &amp; the Middle-Market Ship</h3>
+    <p>
+      How middle-market liners and tourist class spaces reshaped ocean travel through moderated luxury,
+      disciplined comfort, and the widening of passenger access beyond the old class model.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/tourist-class-interiors-and-the-middle-market-ship"><span>Read page</span></a></li>
+      <li><a href="/collections/tourist-third-cabin-democratization.html"><span>Tourist Third Cabin / Democratization</span></a></li>
+      <li><a href="/glossary#tourist-class"><span>Tourist class</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Interiors &amp; Branding</h3>
+    <p>
+      The relationship between décor and corporate identity: china patterns, menu typography, monograms, carpets,
+      color systems, and the repeated motifs that made a line feel visually coherent.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/branding"><span>Section overview</span></a></li>
+      <li><a href="/collectors-notebook/patterns-and-motifs"><span>Patterns &amp; motifs</span></a></li>
+      <li><a href="/glossary#trade-name"><span>Trade name / branding</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Menus, Printed Matter, and Interior Branding</h3>
+    <p>
+      How menus, stationery, deck plans, notices, and onboard printed graphics extended the ship’s
+      branding system beyond architecture into daily passenger life.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/menus-printed-matter-and-interior-branding"><span>Read page</span></a></li>
+      <li><a href="/designs-interiors/branding"><span>Interiors &amp; branding</span></a></li>
+      <li><a href="/collectors-notebook/patterns-and-motifs"><span>Patterns &amp; motifs</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>How to Read an Ocean Liner Interior Photograph</h3>
+    <p>
+      A methodology guide to reading interior views carefully: room function, framing, service clues,
+      refit context, and the limits of what a single image can securely prove.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/how-to-read-an-ocean-liner-interior-photograph"><span>Read page</span></a></li>
+      <li><a href="/designs-interiors/why-interior-style-alone-cannot-identify-a-ship"><span>Attribution limits</span></a></li>
+      <li><a href="/unknown"><span>“Unknown” as a conclusion</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Why Interior Style Alone Cannot Identify a Ship</h3>
+    <p>
+      Why resemblance is not proof: shared design languages, reused motifs, modernization,
+      and the need for documentary or spatial corroboration before naming a ship.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/why-interior-style-alone-cannot-identify-a-ship"><span>Read page</span></a></li>
+      <li><a href="/designs-interiors/how-to-read-an-ocean-liner-interior-photograph"><span>Interior photograph reading</span></a></li>
+      <li><a href="/collectors-notebook/attribution-boundaries"><span>Attribution boundaries</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>China, Silver, Linens &amp; the Total Interior Scheme</h3>
+    <p>
+      How tableware, textiles, printed matter, and repeated service objects extended the interior beyond architecture
+      into a coordinated material world of branding, atmosphere, and daily use.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/china-silver-linens"><span>Read page</span></a></li>
+      <li><a href="/designs-interiors/branding"><span>Interiors &amp; branding</span></a></li>
+      <li><a href="/collectors-notebook/materials"><span>Materials &amp; manufacturing</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Grand Staircases at Sea</h3>
+    <p>
+      Ceremonial circulation, social theatre, prestige design, and the architectural role of staircases
+      as both orientation devices and symbolic interior centers.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/grand-staircases-at-sea"><span>Read page</span></a></li>
+      <li><a href="/designs-interiors/passenger-class-and-spatial-hierarchy"><span>Class &amp; spatial hierarchy</span></a></li>
+      <li><a href="/ships/rms-olympic"><span>RMS Olympic</span></a></li>
+    </ul>
+  </article>
+
+  <article class="nb-card" role="listitem">
+    <h3>Interiors Through Refit, Transfer &amp; Conversion</h3>
+    <p>
+      How ships changed over time: modernization waves, wartime interruption, line transfer, class restructuring,
+      and the gradual shift from liner transport to cruising.
+    </p>
+    <ul class="nb-links">
+      <li><a href="/designs-interiors/refits"><span>Section overview</span></a></li>
+      <li><a href="/glossary#transfer"><span>Transfer</span></a></li>
+      <li><a href="/glossary#cruise-transition"><span>Cruise transition</span></a></li>
+    </ul>
+  </article>
+
+</div>
+
+  <div class="note">
+    <strong>Editorial standard:</strong> This section treats interiors as historical evidence, not just style. A room, material, motif,
+    or furnishing is interpreted in relation to route structure, passenger class, line branding, and service logic—not as floating decoration detached from context.
+  </div>
+
+  <h2>Suggested Reading Paths</h2>
+  <ul>
+    <li><strong>If you are interested in famous public rooms:</strong> <a href="/designs-interiors/public-rooms">Public Rooms</a> → <a href="/designs-interiors/decorative-styles">Decorative Styles</a> → <a href="/ships/ss-normandie">SS Normandie</a></li>
+    <li><strong>If you want to understand class at sea:</strong> <a href="/designs-interiors/passenger-class-and-spatial-hierarchy">Passenger Class & Spatial Hierarchy</a> → <a href="/designs-interiors/cabins">Cabins</a> → <a href="/glossary#steerage">Steerage</a></li>
+    <li><strong>If you are approaching interiors through collecting:</strong> <a href="/designs-interiors/branding">Interiors & Branding</a> → <a href="/collectors-notebook">Collector’s Notebook</a> → <a href="/reference-objects/">Reference Objects</a></li>
+    <li><strong>If you are interested in change over time:</strong> <a href="/designs-interiors/refits">Refits & Conversion</a> → <a href="/collections/liners-rebuilt-and-renamed.html">Liners Rebuilt and Renamed</a> → <a href="/glossary#transfer">Transfer</a></li>
+    <li><strong>If you want to interpret interior images more carefully:</strong> <a href="/designs-interiors/how-to-read-an-ocean-liner-interior-photograph">How to Read an Ocean Liner Interior Photograph</a> → <a href="/designs-interiors/why-interior-style-alone-cannot-identify-a-ship">Why Interior Style Alone Cannot Identify a Ship</a> → <a href="/unknown">Why “Unknown” Is a Responsible Conclusion</a></li>
+  </ul>
+
+  <h2>Related Pages</h2>
+  <ul>
+    <li><a href="/glossary">Glossary</a> — terminology for class structure, liner service, decorative language, and material culture.</li>
+    <li><a href="/collectors-notebook">Collector’s Notebook</a> — practical notes on motifs, materials, marks, and attribution limits.</li>
+    <li><a href="/ships/ships">Ship Guides</a> — individual vessel pages where interior character can be placed in service context.</li>
+    <li><a href="/ships/timeline-1900-1960">Ocean Liner Timeline (1900–1960)</a> — to place changing interior styles within chronological context.</li>
+    <li><a href="/collections/french-atlantic-flagships.html">French Atlantic Flagships</a> — a strong route into high-style interior interpretation.</li>
+    <li><a href="/collections/tourist-third-cabin-democratization.html">Tourist Third Cabin / Democratization</a> — the social history behind changing interior planning.</li>
+    <li><a href="/designs-interiors/how-to-read-an-ocean-liner-interior-photograph">How to Read an Ocean Liner Interior Photograph</a> — a methodology page for interpreting room views, service clues, and photographic limits.</li>
+<li><a href="/designs-interiors/why-interior-style-alone-cannot-identify-a-ship">Why Interior Style Alone Cannot Identify a Ship</a> — why resemblance is not proof, and why corroborating evidence matters.</li>
+  </ul>
+
+  <footer>
+    <a class="button secondary" href="/">Home</a>
+
+    <img class="flags-footer" src="/logo-transparent.png" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script>
+  document.querySelectorAll(".nav-dropdown").forEach((d) => {
+    d.addEventListener("toggle", () => {
+      if (!d.open) return;
+      document.querySelectorAll(".nav-dropdown").forEach((other) => {
+        if (other !== d) other.open = false;
+      });
+    });
+  });
+</script>
+
+<!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+<script src="/assets/header.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+
+</body>
+</html>

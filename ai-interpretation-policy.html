@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI Interpretation Policy — Ocean Liner Curator</title>
+  <meta name="description" content="Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator: evidence-first boundaries, limitations, and reader guidance to prevent false certainty." />
+
+  <link rel="canonical" href="https://oceanliners.net/ai-interpretation-policy" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/ai-interpretation-policy#webpage",
+    "name": "AI Interpretation Policy — Ocean Liner Curator",
+    "url": "https://oceanliners.net/ai-interpretation-policy",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator: evidence-first boundaries, limitations, and reader guidance to prevent false certainty.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="AI Interpretation Policy — Ocean Liner Curator">
+  <meta property="og:description" content="Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator: evidence-first boundaries, limitations, and reader guidance to prevent false certainty.">
+  <meta property="og:url" content="https://oceanliners.net/ai-interpretation-policy">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Interpretation Policy — Ocean Liner Curator">
+  <meta name="twitter:description" content="Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator: evidence-first boundaries, limitations, and reader guidance to prevent false certainty.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+
+      --prose-measure: 72ch;
+    }
+
+    html{ text-rendering: optimizeLegibility; background: var(--bg); }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    /* ================================
+       Badges
+       ================================ */
+    .badge{
+      --brass:#bfa46a;
+      display:inline-block;
+      font-variant: small-caps;
+      letter-spacing:0.12em;
+      font-size:0.72rem;
+      font-weight:600;
+      color:var(--brass);
+      padding:0.28rem 0.6rem 0.32rem;
+      border:1.5px solid var(--brass);
+      border-radius:999px;
+      line-height:1;
+      white-space:nowrap;
+    }
+
+    .badge-group{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.45rem;
+      margin:0 0 0.9rem;
+      justify-content:center;
+    }
+    .badge.primary{ border-width:2px; }
+
+    /* =========================
+       HERO (FIXED: single definition, no duplicates, no stray "I")
+       ========================= */
+    .hero{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.22);
+      overflow:hidden;
+
+      min-height:52vh;
+      max-height:640px;
+
+      display:flex;
+      align-items:flex-end;
+      position:relative;
+
+      background:
+        linear-gradient(to bottom,
+          rgba(10,17,16,0.70) 0%,
+          rgba(10,17,16,0.05) 45%,
+          rgba(10,17,16,0.72) 100%),
+        url("/leviathan-hero.jpg") center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+        radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
+      opacity:0.55;
+    }
+
+    .hero-inner{
+      width:100%;
+      margin:0;
+      padding: 3.2rem 2.2rem 2.1rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .hero h1{
+      margin:0 0 0.55rem 0;
+      font-family:"Libre Baskerville", serif;
+      font-variant: small-caps;
+      letter-spacing:0.09em;
+      font-weight:400;
+      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .hero p{
+      margin:0;
+      max-width:70ch;
+      color: rgba(230,223,207,0.92);
+      font-size:1.02rem;
+      line-height:1.65;
+      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    @media (max-width:600px){
+      .hero{ min-height:46vh; border-radius:14px; }
+      .hero-inner{ padding: 2.6rem 1.15rem 1.65rem; }
+    }
+
+    @media (min-width:1300px){
+      .hero{ width:min(1080px, calc(100% - 3rem)); }
+    }
+
+    /* =========================
+       CARD (FIXED: missing semicolon; safari-friendly layering)
+       ========================= */
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0.75rem auto 0;
+      text-align:left;
+      background-color: rgba(15,27,25,0.78);
+
+      border:1px solid var(--border);
+      border-radius:16px;
+
+      --container-pad-top: clamp(1.75rem, 3.8vh, 2.6rem);
+      padding: var(--container-pad-top) 2.75rem 1.5rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+
+      isolation:isolate;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      pointer-events:none;
+      z-index:0;
+      background:
+        url("/tile10.jpg") repeat,
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      background-size:
+        360px 360px,
+        auto, auto, auto,
+        auto,
+        auto, auto;
+      background-position:
+        center,
+        center, center, center,
+        center,
+        center, center;
+      opacity:0.05;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    @media (max-width:520px){
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:0.7rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+      }
+    }
+
+    @media (min-width:1300px){
+      .container{ width:min(1080px, calc(100% - 3rem)); }
+    }
+
+    /* =========================
+       THE FIX: single prose column wrapper (same approach as your GPT page)
+       ========================= */
+    .prose{
+      max-width: var(--prose-measure);
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .prose :is(h1,h2,h3,p,ul,ol,blockquote,footer,section){
+      width:auto !important;
+      max-width:none !important;
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:0.9rem auto 1.4rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    .page-kicker{
+      margin:0 0 1.4rem 0;
+      font-size:0.98rem;
+      line-height:1.65;
+      color:var(--muted);
+      text-align:left;
+    }
+
+    .prose h2{
+      margin:2.25rem 0 0.9rem 0;
+      text-align:left;
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+    }
+
+    .prose h2::after{
+      content:"";
+      display:block;
+      width:72px;
+      height:1px;
+      margin-top:0.45rem;
+      background:linear-gradient(90deg, var(--accent), rgba(191,164,106,0.35), transparent);
+    }
+
+    .prose p{
+      margin:0 0 1.55rem 0;
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    .prose ul,
+    .prose ol{
+      margin:0.2rem 0 1.55rem 0;
+      padding-left:1.35rem;
+      text-align:left;
+      color:rgba(230,223,207,0.92);
+      list-style-position: outside;
+    }
+
+    .prose li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    .caps{
+      font-variant: small-caps;
+      letter-spacing:0.08em;
+      font-size:0.95em;
+      color:rgba(230,223,207,0.9);
+    }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:1px;
+    }
+    a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+    a:focus-visible{ outline:2px solid rgba(191,164,106,0.6); outline-offset:3px; }
+
+    /* =========================
+       CTA (FIXED: missing wrapper in your original markup)
+       ========================= */
+    .cta{ margin-top:2.2rem; text-align:center; }
+
+    .actions{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:0.9rem;
+      flex-wrap:wrap;
+      margin-top:0.6rem;
+    }
+
+    .button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:0.9rem 1.35rem;
+  font-size:0.98rem;
+  letter-spacing:0.35px;
+  text-decoration:none;
+
+  min-height:44px; /* important */
+  line-height:1;   /* prevents font metrics shifting */
+
+  color:#0a1110;
+  background:linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
+  border:1px solid rgba(0,0,0,0.35);
+  border-radius:10px;
+
+  transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  box-shadow:0 10px 26px rgba(191,164,106,0.22);
+}
+
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a..secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    @media (max-width:520px){
+      .actions{
+        flex-direction:column;
+        gap:0.85rem;
+        align-items:stretch;
+      }
+      a.button{
+        width:100%;
+        white-space:normal;
+      }
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:150px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem !important;
+      opacity:0.55 !important;
+      margin-top:1.2rem !important;
+    }
+
+    @media (max-width:520px){
+      footer{ margin-top:1.8rem; font-size:0.78rem; }
+      .flags-footer{ width:92px; margin:0.9rem auto 0; opacity:0.35; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{ transition:none; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <section class="hero" aria-label="AI interpretation hero">
+    <div class="hero-inner">
+      <h1>AI Interpretation Policy</h1>
+      <p>How AI-assisted tools are used and interpreted across Ocean Liner Curator.</p>
+    </div>
+  </section>
+
+  <!-- APPLY THE FIX: remove .scope and add .prose wrapper -->
+  <main class="container">
+    <div class="prose">
+
+      <div class="badge-group">
+        <span class="badge primary">Methodology Page</span>
+      </div>
+
+      <div class="rule"></div>
+
+      <p class="page-kicker">
+        Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator, and how readers should understand AI-supported material in an evidence-first historical context.
+      </p>
+
+      <h2>Purpose</h2>
+      <p>
+        This policy defines how artificial intelligence–assisted tools are used, interpreted, and limited across <span class="caps">Ocean Liner Curator</span>.
+        It exists to ensure that AI-supported research remains consistent with evidence-first historical standards and does not introduce
+        false certainty, speculative attribution, or implied authority.
+      </p>
+
+      <h2>Role of AI Tools</h2>
+      <p>
+        AI tools used within <span class="caps">Ocean Liner Curator</span> are employed as <em>assistive research instruments</em>, not as authoritative sources. To put it very clearly, AI use on this site is not generative or appealed to as an authority, rather, is provided as an optional tool to help organize and correlate thoughts and processes.
+      </p>
+
+      <p>Their role is limited to:</p>
+      <ul>
+        <li>Organizing and summarizing information</li>
+        <li>Highlighting patterns and comparative relationships</li>
+        <li>Supporting inquiry through synthesis</li>
+      </ul>
+
+      <p>
+        AI tools do not establish authenticity, attribution, provenance, or historical fact.
+      </p>
+
+      <h2>Relationship to Evidence</h2>
+      <p>
+        All conclusions presented on this site are grounded in documented sources, comparative analysis with known reference objects,
+        and explicit acknowledgment of evidentiary limits.
+      </p>
+      <p>
+        AI-generated output is always subordinate to documented evidence and human review.
+      </p>
+
+      <h2>Attribution and Authority</h2>
+      <p>
+        AI systems referenced or employed by <span class="caps">Ocean Liner Curator</span> do not make final determinations, do not override historical uncertainty,
+        and do not replace curatorial judgment.
+      </p>
+      <p>
+        Any appearance of certainty must be supported independently by evidence.
+      </p>
+
+      <h2>Interpretation and Use</h2>
+      <p>
+        Readers should interpret AI-assisted material as contextual guidance, not confirmation, and as exploratory support, not definitive analysis.
+      </p>
+      <p>
+        Statements produced or informed by AI should be evaluated in the same manner as any other secondary research aid.
+      </p>
+
+      <h2>Transparency and Constraints</h2>
+      <p>
+        AI use on this site is intentionally constrained by defined subject scope (historic ocean liners and related material culture),
+        explicit methodological boundaries, and a preference for transparency over completeness or confidence.
+      </p>
+      <p>
+        Limitations are treated as ethical safeguards rather than technical shortcomings.
+      </p>
+
+      <h2>Market and Valuation Exclusion</h2>
+      <p>
+        AI tools associated with <span class="caps">Ocean Liner Curator</span> do not provide appraisals, do not assess market value,
+        and do not advise on purchasing, selling, or investment.
+      </p>
+      <p>
+        Historical evaluation and market behavior are treated as distinct activities.
+      </p>
+
+      <h2>Responsibility and Review</h2>
+      <p>
+        Responsibility for interpretation rests with the human author or curator and with the reader engaging with the material.
+        AI-assisted output is reviewed, contextualized, and constrained before publication or recommendation.
+      </p>
+
+      <h2>Scope of Applicability</h2>
+      <p>
+        This policy applies to <span class="caps">Ocean Liner GPT</span>, any AI-assisted research tools linked or referenced on the site,
+        and any summaries, comparisons, or analyses informed by AI systems.
+      </p>
+      <p>
+        It does not apply to external AI systems operating independently of <span class="caps">Ocean Liner Curator</span>.
+      </p>
+
+      <h2>Guiding Principle</h2>
+      <p>
+        Artificial intelligence is treated as a tool for <em>clarifying complexity</em>, not resolving uncertainty.
+        Where evidence is incomplete, uncertainty is preserved.
+      </p>
+
+      <footer>
+        <p>
+          This policy is intended to keep AI-assisted work consistent with the project’s existing standards: evidence-first reasoning,
+          conservative attribution, and clear labeling of uncertainty.
+        </p>
+
+        <section class="cta" aria-label="Primary actions">
+          <div class="actions">
+            <a class="button secondary" href="/">Home</a>
+          </div>
+        </section>
+
+        <img class="flags-footer" src="/engraved-trident.png" alt="" aria-hidden="true" />
+
+        <p class="copyright">
+          © <span id="year"></span> Ocean Liner Curator.
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+  <!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>

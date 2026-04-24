@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Silverplate vs Sterling — Collector’s Notebook — Ocean Liner Curator</title>
+  <meta name="description" content="How to tell silverplate from sterling, what each implies for ocean liner service, and what neither can prove about ship-specific attribution." />
+
+  <link rel="canonical" href="https://oceanliners.net/collectors-notebook/silver-plate-vs-sterling" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/collectors-notebook/silver-plate-vs-sterling#webpage",
+    "name": "Silverplate vs Sterling — Collector’s Notebook — Ocean Liner Curator",
+    "url": "https://oceanliners.net/collectors-notebook/silver-plate-vs-sterling",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "How to tell silverplate from sterling, what each implies for ocean liner service, and what neither can prove about ship-specific attribution.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Silverplate vs Sterling — Collector’s Notebook — Ocean Liner Curator">
+  <meta property="og:description" content="How to tell silverplate from sterling, what each implies for ocean liner service, and what neither can prove about ship-specific attribution.">
+  <meta property="og:url" content="https://oceanliners.net/collectors-notebook/silver-plate-vs-sterling">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Silverplate vs Sterling — Collector’s Notebook — Ocean Liner Curator">
+  <meta name="twitter:description" content="How to tell silverplate from sterling, what each implies for ocean liner service, and what neither can prove about ship-specific attribution.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+    --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    /* =========================
+       TOP MENU BAR
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    /* =========================
+       CARD
+       ========================= */
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      pointer-events:none;
+      z-index:0;
+      opacity:0.95;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1{
+      margin:0 0 0.8rem 0;
+      font-weight:600;
+      font-feature-settings:"kern" 1, "liga" 1;
+      font-size:2.55rem;
+      letter-spacing:0.6px;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:110px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+    
+    
+
+    /* Buttons */
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      margin-bottom:2.75rem;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+      margin-bottom:0;
+    }
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    /* =========================
+       ARTICLE TYPOGRAPHY
+       ========================= */
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    .scope p,
+    .scope ul,
+    .scope .note{
+      text-align:left;
+    }
+
+    .scope h2{
+      margin:2.25rem auto 0.7rem auto;
+      max-width:var(--measure);
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+      letter-spacing:0.2px;
+      text-align:left;
+    }
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    /* Inline editorial links */
+    .scope p a,
+    .scope li a,
+    .scope .note a{
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+    .scope p a:hover,
+    .scope li a:hover,
+    .scope .note a:hover{
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    .scope p a:focus-visible,
+    .scope li a:focus-visible,
+    .scope .note a:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    /* Optional: small definition list styling */
+    .scope .deflist{
+      margin:0.2rem auto 1.35rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+    }
+    .scope .defrow{
+      display:flex;
+      gap:0.75rem;
+      padding:0.55rem 0;
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+    .scope .defrow:first-child{ border-top:none; padding-top:0.1rem; }
+    .scope .defterm{
+      min-width:10.5rem;
+      font-weight:600;
+      color:rgba(230,223,207,0.95);
+    }
+    .scope .defdesc{
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+    
+    footer{ text-align:center; }
+
+footer p,
+footer .copyright{
+  max-width:none;     /* overrides the global p max-width */
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;  /* belt + suspenders */
+}
+    
+    @media (max-width:520px){
+      .site-header{ padding:0.65rem 0; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:110px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+
+      .scope .defrow{ flex-direction:column; gap:0.25rem; }
+      .scope .defterm{ min-width:auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+<div id="site-header"></div>
+
+<main class="container scope">
+
+  <div class="logo-mount">
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+  </div>
+
+  <h1>Silverplate vs Sterling</h1>
+  <div class="rule"></div>
+
+  <p class="page-kicker">
+    “Silver” is often used as a single word, but collectors need two separate questions:
+    <em>what is the metal</em>, and <em>what claim is being made</em>? Silverplate and sterling can both be authentic maritime material—
+    but neither automatically proves ship-specific use.
+  </p>
+
+  <div class="note">
+    <strong>⁂ Guiding principle:</strong> Material identification is evidence about <em>what the object is</em>.
+    It is rarely evidence about <em>which ship it came from</em>.
+  </div>
+
+  <h2>Quick Definitions</h2>
+  <div class="deflist" role="group" aria-label="Key definitions">
+    <div class="defrow">
+      <div class="defterm">Silverplate</div>
+      <div class="defdesc">
+        A base metal (often nickel silver or copper-based alloys) coated with a thin layer of silver. Built for durability and repeated polishing.
+      </div>
+    </div>
+    <div class="defrow">
+      <div class="defterm">Sterling</div>
+      <div class="defdesc">
+        A solid silver alloy (typically 92.5% silver) used for higher-end hollowware and some tableware. It can be serviced, repaired, and refinished—at a cost.
+      </div>
+    </div>
+  </div>
+
+  <h2>How to Tell Them Apart (Practical Checks)</h2>
+  <p>
+    The most reliable answer is usually in the marks—then confirmed by how the piece wears.
+    Use multiple signals together; do not rely on a single “trick.”
+  </p>
+
+  <ul>
+    <li><strong>Look for explicit sterling marks.</strong> “STERLING,” “925,” lion/passant and other national hallmark systems (when present) are strong indicators. Absence is not proof of plate, but it is a caution flag.</li>
+    <li><strong>Plate-related language.</strong> Terms like “EPNS,” “EP,” “A1,” “silver plated,” or maker-specific plating systems commonly point toward plate.</li>
+    <li><strong>Wear tells a story.</strong> Silverplate often shows base metal “ghosting” on high points (rims, handle edges, crests) after heavy use. Sterling wears too, but you won’t see a different-colored base metal emerging the same way.</li>
+    <li><strong>Weight and feel (weak signal, not proof).</strong> Many sterling pieces feel denser, but forms vary widely. Do not use heft as a standalone test.</li>
+    <li><strong>Magnet test (limited use).</strong> Most silver and sterling aren’t magnetic—but many base metals also aren’t. A magnet can rule in some alloys, but it cannot rule out silver.</li>
+  </ul>
+
+  <div class="note">
+    <strong>Collector’s caution:</strong> Polishing can erase or soften marks. Always check inside bowls, under feet, around handle junctions,
+    and on the underside where marks are more likely to survive.
+  </div>
+
+  <h2>What Each Material Can Suggest (and What It Cannot)</h2>
+
+  <h2>Silverplate</h2>
+  <ul>
+    <li><strong>What it can suggest:</strong> institutional service, high-turnover use, frequent polishing, and a preference for durability over intrinsic metal value.</li>
+    <li><strong>What it cannot prove:</strong> that a piece was “third class,” that it was “from a specific ship,” or that it is “less authentic.” Many famous-line pieces are plated.</li>
+  </ul>
+
+  <h2>Sterling</h2>
+  <ul>
+    <li><strong>What it can suggest:</strong> higher-end service environments, formal presentation pieces, or policies where intrinsic value and prestige were part of the object’s purpose.</li>
+    <li><strong>What it cannot prove:</strong> first-class use (automatically), ship-specific service, or rarity on its own. Sterling also circulated through hotels, clubs, rail, and private service.</li>
+  </ul>
+
+  <h2>Common Misreadings in Listings</h2>
+  <ul>
+    <li><strong>“It’s heavy, so it’s sterling.”</strong> Weight is unreliable without marks. Form and wall thickness vary.</li>
+    <li><strong>“No marks = plated.”</strong> Sometimes true; often not. Marks can be worn or placed in obscure locations.</li>
+    <li><strong>“It’s plated, so it’s not important.”</strong> Plated service ware can be historically significant and line-relevant—especially when patterns and makers match known examples.</li>
+    <li><strong>“Sterling means it must be from the famous ship.”</strong> Material upgrades do not create provenance.</li>
+  </ul>
+
+  <h2>What This Means for Attribution</h2>
+  <p>
+    Silverplate vs sterling is best treated as a <strong>classification tool</strong>:
+    it helps you describe the object accurately and compare it to known service patterns.
+    Ship-specific attribution still requires documentation or a defensible chain of evidence.
+  </p>
+
+  <div class="note">
+    <strong>Practical takeaway:</strong> If a listing uses “sterling” as the main evidence for a famous-ship claim, treat that as a risk factor.
+    Strong claims should be carried by marks, documentation, and comparative examples—not by a single material descriptor.
+  </div>
+
+  <h2>Related Pages</h2>
+  <ul>
+    <li><a href="/collectors-notebook/materials">Materials & Manufacturing (Notebook)</a></li>
+    <li><a href="/collectors-notebook/marks">Marks, Stamps & Labels (Notebook)</a></li>
+    <li><a href="/evidence">What Counts as Evidence in Ocean Liner Collecting?</a></li>
+    <li><a href="/attribution">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</a></li>
+    <li><a href="/reference-objects/">Reference Objects</a></li>
+  </ul>
+
+  <footer>
+    <a class="button secondary" href="/collectors-notebook">Collector’s Notebook</a>
+
+    <img class="flags-footer" src="/engraved-wheel.png" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script>
+  document.querySelectorAll(".nav-dropdown").forEach((d) => {
+    d.addEventListener("toggle", () => {
+      if (!d.open) return;
+      document.querySelectorAll(".nav-dropdown").forEach((other) => {
+        if (other !== d) other.open = false;
+      });
+    });
+  });
+</script>
+
+  <script src="/assets/header.js" defer></script> <script src="/assets/nav.js" defer></script>
+</body>
+</html>

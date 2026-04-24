@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Functional Design & Shipboard Logistics — Designs & Interiors — Ocean Liner Curator</title>
+  <meta name="description" content="How ocean liner interiors depended on hidden systems: service corridors, ventilation, galleys, laundry, storage, steward movement, and the practical architecture behind passenger comfort." />
+
+  <link rel="canonical" href="https://oceanliners.net/designs-interiors/functional-design" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/designs-interiors/functional-design#webpage",
+    "name": "Functional Design & Shipboard Logistics — Designs & Interiors — Ocean Liner Curator",
+    "url": "https://oceanliners.net/designs-interiors/functional-design",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "How ocean liner interiors depended on hidden systems: service corridors, ventilation, galleys, laundry, storage, steward movement, and the practical architecture behind passenger comfort.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Functional Design & Shipboard Logistics — Designs & Interiors — Ocean Liner Curator">
+  <meta property="og:description" content="How ocean liner interiors depended on hidden systems: service corridors, ventilation, galleys, laundry, storage, steward movement, and the practical architecture behind passenger comfort.">
+  <meta property="og:url" content="https://oceanliners.net/designs-interiors/functional-design">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Functional Design & Shipboard Logistics — Designs & Interiors — Ocean Liner Curator">
+  <meta name="twitter:description" content="How ocean liner interiors depended on hidden systems: service corridors, ventilation, galleys, laundry, storage, steward movement, and the practical architecture behind passenger comfort.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root{
+      --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+    .header-inner{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      pointer-events:none;
+      z-index:0;
+      opacity:0.95;
+    }
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1{
+      margin:0 0 0.8rem 0;
+      font-weight:600;
+      font-feature-settings:"kern" 1, "liga" 1;
+      font-size:2.55rem;
+      letter-spacing:0.6px;
+    }
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+    .flags-footer{
+      display:block;
+      width:110px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      margin-bottom:2.75rem;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+      margin-bottom:0;
+    }
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    .scope p,.scope ul,.scope .note{ text-align:left; }
+    .scope h2{
+      margin:2.25rem auto 0.7rem auto;
+      max-width:var(--measure);
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+      letter-spacing:0.2px;
+      text-align:left;
+    }
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+    .scope li{ margin:0.45rem 0; line-height:1.65; }
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+    .scope .note strong{ color:var(--text); font-weight:600; }
+
+    .scope p a,.scope li a,.scope .note a{
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+    .scope p a:hover,.scope li a:hover,.scope .note a:hover{
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    .scope p a:focus-visible,.scope li a:focus-visible,.scope .note a:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    .compare{
+      max-width:var(--measure);
+      margin:0.35rem auto 1.55rem auto;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      overflow:hidden;
+      background:rgba(0,0,0,0.12);
+      text-align:left;
+    }
+    .compare-row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+    .compare-row:first-child{ border-top:none; }
+    .compare-cell{ padding:0.95rem 1rem; }
+    .compare-head{
+      font-weight:600;
+      color:rgba(230,223,207,0.96);
+      background:rgba(191,164,106,0.06);
+    }
+    .compare-cell ul{
+      margin:0.35rem 0 0 0;
+      padding-left:1.15rem;
+      max-width:none;
+    }
+    .compare-cell li{ margin:0.45rem 0; }
+
+    .tag{
+      display:inline-block;
+      font-size:0.74em;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      opacity:0.7;
+      margin-left:0.4rem;
+      white-space:nowrap;
+    }
+
+    .signals{
+      max-width:var(--measure);
+      margin:0.25rem auto 1.55rem auto;
+      padding:0;
+      list-style:none;
+      text-align:left;
+    }
+    .signals li{
+      margin:0 0 0.75rem 0;
+      padding:0.9rem 1rem;
+      border:1px solid rgba(191,164,106,0.20);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+
+    footer p, footer .copyright{
+      max-width:none;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    @media (max-width:520px){
+      .compare-row{ grid-template-columns:1fr; }
+      .site-header{ padding:0.65rem 0; }
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+      .flags-footer{
+        width:110px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+<div id="site-header"></div>
+
+<main class="container scope">
+
+  <div class="logo-mount">
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+  </div>
+
+  <h1>Functional Design &amp; Shipboard Logistics</h1>
+  <div class="rule"></div>
+
+  <p class="page-kicker">
+    The polished passenger world of the ocean liner depended on a hidden one. Behind every lounge, dining room, and cabin stood a network
+    of galleys, pantries, steward routes, ventilation systems, laundry spaces, storerooms, service corridors, lifts, and working compartments.
+    Functional design is what made the decorative world possible.
+  </p>
+
+  <div class="note">
+    <strong>⁂ Guiding principle:</strong> Passenger interiors should never be read in isolation from the systems that fed, aired, cleaned, heated,
+    provisioned, and serviced them. A liner was not just a floating hotel. It was a tightly organized operational machine.
+  </div>
+
+  <h2>Quick Read: What Functional Design Had To Solve</h2>
+
+  <div class="compare" role="group" aria-label="Functional design comparison">
+    <div class="compare-row">
+      <div class="compare-cell compare-head">
+        Passenger-facing needs <span class="tag">comfort + order</span>
+      </div>
+      <div class="compare-cell compare-head">
+        Hidden operational needs <span class="tag">efficiency + control</span>
+      </div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-cell">
+        <ul>
+          <li>Stable dining service across long voyages</li>
+          <li>Clean cabins, linens, and public rooms</li>
+          <li>Fresh air, lighting, water, and temperature control</li>
+          <li>Smooth, almost invisible service rhythms</li>
+        </ul>
+      </div>
+      <div class="compare-cell">
+        <ul>
+          <li>Rapid movement of food, crockery, laundry, and stores</li>
+          <li>Separation of passenger and staff circulation</li>
+          <li>Management of heat, smoke, odors, waste, and noise</li>
+          <li>Reliable operation under weather, time, and route pressure</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h2>1) The Beautiful Rooms Were Supported by Invisible Routes</h2>
+  <p>
+    Service corridors, steward passages, dumb waiters, service stairs, and pantry links made it possible for the public side of the ship
+    to appear ordered and effortless. Meals did not simply “arrive” in dining rooms, and cabins did not remain clean by decorative virtue.
+    Passenger experience relied on carefully separated working flows.
+  </p>
+  <p>
+    One of the most important distinctions on a liner is the split between what passengers were intended to see and what staff needed to access quickly.
+    Functional design is often the architecture of concealment: work kept present in effect, but hidden in appearance.
+  </p>
+
+  <h2>2) Galleys and Pantry Systems Were Central</h2>
+  <ul>
+    <li><strong>Main galleys:</strong> had to serve large numbers reliably, often across several classes.</li>
+    <li><strong>Pantries and serving stations:</strong> reduced distance between food production and final table service.</li>
+    <li><strong>Cold storage and dry stores:</strong> mattered enormously on long voyages.</li>
+    <li><strong>Service sequencing:</strong> shaped how quickly and smoothly a liner could sustain formal dining.</li>
+  </ul>
+
+  <h2>3) Ventilation Was More Than Comfort</h2>
+  <p>
+    Ventilation is one of the most under-read parts of liner design. It affected cabin livability, odor control, dining comfort,
+    machinery heat separation, and overall health conditions. On long-distance passenger ships, especially in warmer routes,
+    airflow was not cosmetic: it was part of whether the ship could function humanely and competitively.
+  </p>
+  <p>
+    Cabin position, deck arrangement, ventilator placement, and internal airflow routes all influenced how passengers actually experienced the ship,
+    even when those systems were visually secondary.
+  </p>
+
+  <div class="note">
+    <strong>Interpretive caution:</strong> Decorative survival can distort historical reading.
+    A preserved lounge may survive beautifully, while the service and ventilation systems that made it workable are forgotten because they were never meant to be admired.
+  </div>
+
+  <h2>4) Laundry, Linens, and Cleaning Were Huge Operations</h2>
+  <p>
+    A liner carrying hundreds or thousands of passengers required enormous cloth management: sheets, towels, table linen, napkins, uniforms,
+    and cleaning textiles all had to be washed, stored, moved, and redistributed. This logistical layer had direct spatial consequences,
+    even if passengers only noticed the result as freshness and order.
+  </p>
+  <p>
+    The more ambitious the public-facing service, the greater the hidden strain behind it. Crisp dining linen and immaculate cabins were operational achievements, not decorative accidents.
+  </p>
+
+  <h2>5) Staff Movement Shaped the Interior Plan</h2>
+  <ul>
+    <li><strong>Steward circulation:</strong> had to be quick, discreet, and repeatable.</li>
+    <li><strong>Crew support spaces:</strong> were essential to sustaining passenger comfort.</li>
+    <li><strong>Separated routes:</strong> reduced visible disorder in prestige spaces.</li>
+    <li><strong>Access planning:</strong> linked cabins, pantries, linen rooms, and public rooms into hidden service networks.</li>
+  </ul>
+
+  <h2>6) Functional Design Changed with Ship Type and Era</h2>
+  <p>
+    A fast North Atlantic express liner, a mixed cargo-passenger ship, a cabin liner, and a long imperial route vessel all faced different operational demands.
+    Functional design therefore varied with route length, climate, passenger load, and class structure. Later ships also carried growing pressure to modernize
+    plumbing, air-handling, refrigeration, and service efficiency.
+  </p>
+  <p>
+    This means function should always be read historically. What looked adequate in one decade or route system could seem outdated in another.
+  </p>
+
+  <h2>Common Reading Errors</h2>
+  <ul class="signals" aria-label="Common reading errors list">
+    <li><strong>“The ship is its showpiece rooms”:</strong> its real interior logic may lie just as much in the spaces behind and between them.</li>
+    <li><strong>“Service was just staffing”:</strong> it was also architectural planning, circulation design, and system layout.</li>
+    <li><strong>“Comfort equals luxury decoration”:</strong> comfort often depended more on ventilation, plumbing, cleaning, and noise control.</li>
+    <li><strong>“Functional spaces are secondary to design history”:</strong> they are central if the goal is to understand how the ship actually worked.</li>
+  </ul>
+
+  <h2>A Safe Way to Describe It</h2>
+  <div class="note">
+    <strong>Suggested wording:</strong>
+    “The passenger interiors were supported by a substantial hidden infrastructure of service circulation, provisioning, ventilation, and maintenance systems, without which the ship’s visible atmosphere could not have been sustained.”
+  </div>
+
+  <h2>Related Pages</h2>
+  <ul>
+    <li><a href="/designs-interiors/public-rooms">Dining Rooms, Lounges & Public Rooms</a></li>
+    <li><a href="/designs-interiors/cabins">Cabins & Accommodation Standards</a></li>
+    <li><a href="/designs-interiors/passenger-class-and-spatial-hierarchy">Passenger Class & Spatial Hierarchy</a></li>
+    <li><a href="/designs-interiors/refits">Interiors Through Refit, Transfer & Conversion</a></li>
+    <li><a href="/glossary#liner-service">Liner service</a></li>
+    <li><a href="/glossary#working-liner">Working liner</a></li>
+  </ul>
+
+  <footer>
+    <a class="button secondary" href="/designs-interiors">Designs &amp; Interiors</a>
+
+    <img class="flags-footer" src="/engraved-wheel.png" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script>
+  document.querySelectorAll(".nav-dropdown").forEach((d) => {
+    d.addEventListener("toggle", () => {
+      if (!d.open) return;
+      document.querySelectorAll(".nav-dropdown").forEach((other) => {
+        if (other !== d) other.open = false;
+      });
+    });
+  });
+</script>
+
+<script src="/assets/header.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Handwritten Tags: When They Help, When They Don’t — Collector’s Notebook — Ocean Liner Curator</title>
+  <meta name="description" content="How to evaluate handwritten tags in ocean liner collecting: when they provide useful context, where they commonly mislead, and why they are never proof on their own." />
+
+  <link rel="canonical" href="https://oceanliners.net/collectors-notebook/handwritten-tags" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/collectors-notebook/handwritten-tags#webpage",
+    "name": "Handwritten Tags: When They Help, When They Don’t — Collector’s Notebook — Ocean Liner Curator",
+    "url": "https://oceanliners.net/collectors-notebook/handwritten-tags",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "How to evaluate handwritten tags in ocean liner collecting: when they provide useful context, where they commonly mislead, and why they are never proof on their own.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Handwritten Tags: When They Help, When They Don’t — Collector’s Notebook — Ocean Liner Curator">
+  <meta property="og:description" content="How to evaluate handwritten tags in ocean liner collecting: when they provide useful context, where they commonly mislead, and why they are never proof on their own.">
+  <meta property="og:url" content="https://oceanliners.net/collectors-notebook/handwritten-tags">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Handwritten Tags: When They Help, When They Don’t — Collector’s Notebook — Ocean Liner Curator">
+  <meta name="twitter:description" content="How to evaluate handwritten tags in ocean liner collecting: when they provide useful context, where they commonly mislead, and why they are never proof on their own.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+    --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    /* =========================
+       TOP MENU BAR
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    /* =========================
+       CARD
+       ========================= */
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      pointer-events:none;
+      z-index:0;
+      opacity:0.95;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1{
+      margin:0 0 0.8rem 0;
+      font-weight:600;
+      font-feature-settings:"kern" 1, "liga" 1;
+      font-size:2.55rem;
+      letter-spacing:0.6px;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:110px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    /* Buttons */
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      margin-bottom:2.75rem;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+      margin-bottom:0;
+    }
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    /* =========================
+       ARTICLE TYPOGRAPHY
+       ========================= */
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    .scope p,
+    .scope ul,
+    .scope .note{
+      text-align:left;
+    }
+
+    .scope h2{
+      margin:2.25rem auto 0.7rem auto;
+      max-width:var(--measure);
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+      letter-spacing:0.2px;
+      text-align:left;
+    }
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    /* Inline editorial links */
+    .scope p a,
+    .scope li a,
+    .scope .note a{
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+    .scope p a:hover,
+    .scope li a:hover,
+    .scope .note a:hover{
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    .scope p a:focus-visible,
+    .scope li a:focus-visible,
+    .scope .note a:focus-visible{
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    /* Optional: definition list */
+    .scope .deflist{
+      margin:0.2rem auto 1.35rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+    }
+    .scope .defrow{
+      display:flex;
+      gap:0.75rem;
+      padding:0.55rem 0;
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+    .scope .defrow:first-child{ border-top:none; padding-top:0.1rem; }
+    .scope .defterm{
+      min-width:10.5rem;
+      font-weight:600;
+      color:rgba(230,223,207,0.95);
+    }
+    .scope .defdesc{
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+    @media (max-width:520px){
+      .scope .defrow{ flex-direction:column; gap:0.25rem; }
+      .scope .defterm{ min-width:auto; }
+    }
+
+    /* NEW: “pitfall” cards */
+    .pitfalls{
+      max-width:var(--measure);
+      margin:0.25rem auto 1.55rem auto;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:0.85rem;
+      text-align:left;
+    }
+    .pitfall{
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+    }
+    .pitfall h3{
+      margin:0 0 0.35rem 0;
+      font-size:1.05rem;
+      font-weight:600;
+      color:rgba(230,223,207,0.96);
+      letter-spacing:0.2px;
+    }
+    .pitfall p{
+      margin:0.1rem 0 0 0;
+      max-width:none;
+      font-size:1.0rem;
+      line-height:1.65;
+      color:rgba(230,223,207,0.86);
+      text-align:left;
+    }
+
+    /* NEW: callout list */
+    .checks{
+      max-width:var(--measure);
+      margin:0.25rem auto 1.55rem auto;
+      padding:0;
+      list-style:none;
+      text-align:left;
+    }
+    .checks li{
+      margin:0 0 0.75rem 0;
+      padding:0.9rem 1.0rem;
+      border:1px solid rgba(191,164,106,0.20);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+
+    /* Center footer copyright reliably */
+    footer{ text-align:center; }
+    footer p,
+    footer .copyright{
+      max-width:none;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    @media (max-width:520px){
+      .site-header{ padding:0.65rem 0; }
+      .button{ width:100%; text-align:center; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:110px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+
+      .pitfall{ padding:0.9rem 0.95rem; }
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+
+
+</head>
+
+<body>
+<div id="site-header"></div>
+
+<main class="container scope">
+
+  <div class="logo-mount">
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+  </div>
+
+  <h1>Handwritten Tags: When They Help, When They Don’t</h1>
+  <div class="rule"></div>
+
+  <p class="page-kicker">
+    Handwritten tags are among the most emotionally persuasive forms of “provenance.”
+    They feel personal, immediate, and specific. They can also be added at any time.
+    This page explains how to treat handwritten tags as <em>contextual clues</em>—not identity documents.
+  </p>
+
+  <div class="note">
+    <strong>⁂ Guiding principle:</strong> A handwritten tag is evidence that someone believed something at some point.
+    It is not evidence that the belief was correct.
+  </div>
+
+  <h2>What a Handwritten Tag Actually Is</h2>
+  <p>
+    In collecting terms, a handwritten tag is an <strong>unverified secondary annotation</strong>.
+    It records a claim or association made after manufacture—often long after service ended.
+    The tag is not contemporaneous with shipboard use unless proven otherwise.
+  </p>
+
+  <div class="deflist" role="group" aria-label="Tag definition">
+    <div class="defrow">
+      <div class="defterm">Best case</div>
+      <div class="defdesc">
+        A tag created close in time to removal, by someone with documented access, and supported by other evidence.
+      </div>
+    </div>
+    <div class="defrow">
+      <div class="defterm">Typical case</div>
+      <div class="defdesc">
+        A later note added by an owner, dealer, or family member attempting to preserve or enhance context.
+      </div>
+    </div>
+    <div class="defrow">
+      <div class="defterm">Worst case</div>
+      <div class="defdesc">
+        A modern addition meant to legitimize or inflate a claim, with no independent support.
+      </div>
+    </div>
+  </div>
+
+  <h2>When Handwritten Tags Can Help</h2>
+  <p>
+    Tags are not useless. They can be <em>usefully directional</em> when handled carefully.
+  </p>
+
+  <ul>
+    <li><strong>They preserve early associations.</strong> An old tag may capture a line, ship name, or service context that otherwise would have been forgotten.</li>
+    <li><strong>They suggest where to investigate.</strong> A named person, role, or ship can be checked against records.</li>
+    <li><strong>They help group objects.</strong> Multiple items with matching handwriting, phrasing, and aging can indicate a shared collecting or dispersal history.</li>
+    <li><strong>They sometimes align with physical evidence.</strong> When marks, materials, and patterns independently support the same conclusion, a tag can reinforce—but not create—the claim.</li>
+  </ul>
+
+  <div class="note">
+    <strong>Important:</strong> A tag helps most when it points <em>away from itself</em>—toward records, marks, or comparative examples you can actually verify.
+  </div>
+
+  <h2>When Handwritten Tags Commonly Mislead</h2>
+  <p>
+    Most over-attribution problems involving tags follow predictable patterns.
+  </p>
+
+  <ul>
+    <li><strong>Ship name without access logic.</strong> The tag names a famous ship, but the object type would not plausibly have been handled by the named person.</li>
+    <li><strong>Vague authority.</strong> “From a sailor,” “from a steward,” or “from a family friend” without names, dates, or roles.</li>
+    <li><strong>Retroactive specificity.</strong> Early tags often said “White Star Line.” Later ones quietly become “Titanic.”</li>
+    <li><strong>Single-object certainty.</strong> One tag makes a precise claim, but no other object from the same source carries comparable documentation.</li>
+    <li><strong>Modern materials.</strong> Paper, ink, string, or handwriting style inconsistent with the claimed era.</li>
+  </ul>
+
+  <h2>What a Tag Cannot Prove on Its Own</h2>
+  <ul>
+    <li>That an object came from a specific ship</li>
+    <li>That it was used aboard rather than acquired later</li>
+    <li>That it belonged to a named individual</li>
+    <li>That the claim predates the collector market</li>
+  </ul>
+
+  <div class="note">
+    <strong>Collector’s caution:</strong> The more value a ship name adds, the less weight a standalone tag should carry.
+  </div>
+
+  <h2>A Practical Way to Use Tags Responsibly</h2>
+  <p>
+    Treat handwritten tags as <strong>hypotheses</strong>, not conclusions.
+    A defensible description usually looks like this:
+  </p>
+
+  <div class="note">
+    <strong>Example:</strong>  
+    “Silver-plated service spoon, White Star Line pattern, early 20th century.  
+    Accompanied by a handwritten tag attributing it to RMS Titanic; no independent documentation confirming ship-specific use.”
+  </div>
+
+  <p>
+    This preserves information without upgrading it into fact.
+  </p>
+
+  <h2>Questions to Ask Every Time</h2>
+  <ul>
+    <li><strong>Who wrote this?</strong> Is the author identifiable?</li>
+    <li><strong>When was it written?</strong> Contemporary or retrospective?</li>
+    <li><strong>What access did the author plausibly have?</strong></li>
+    <li><strong>What survives if the tag is removed?</strong> Marks, materials, documentation.</li>
+    <li><strong>What is the narrowest claim that remains defensible?</strong></li>
+  </ul>
+
+  <h2>How This Page Fits the Notebook</h2>
+  <ul>
+    <li>This page supports <a href="/collectors-notebook/provenance">Provenance Pitfalls</a> by addressing one of the most common failure points.</li>
+    <li>For mark-based evidence, see <a href="/collectors-notebook/marks">Marks, Stamps & Labels</a>.</li>
+    <li>For claim discipline, see <a href="/unknown">When “Unknown” Is a Responsible Conclusion</a>.</li>
+  </ul>
+
+  <div class="note">
+    <strong>Bottom line:</strong> A handwritten tag can preserve memory.
+    Your responsibility is to keep memory from becoming certainty without evidence.
+  </div>
+
+  <footer>
+    <a class="button secondary" href="/collectors-notebook/provenance">Provenance Pitfalls</a>
+
+    <img class="flags-footer" src="/engraved-wheel.png" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script>
+  document.querySelectorAll(".nav-dropdown").forEach((d) => {
+    d.addEventListener("toggle", () => {
+      if (!d.open) return;
+      document.querySelectorAll(".nav-dropdown").forEach((other) => {
+        if (other !== d) other.open = false;
+      });
+    });
+  });
+</script>
+
+  <script src="/assets/header.js" defer></script> <script src="/assets/nav.js" defer></script>
+</body>
+</html>

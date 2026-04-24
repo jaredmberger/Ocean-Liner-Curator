@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sources &amp; Standards — Ocean Liner Curator</title>
+  <meta name="description" content="How Ocean Liner Curator evaluates evidence: sourcing tiers, citation standards, uncertainty labeling, and a curated bibliography of institutional and scholarly references." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://oceanliners.net/sources" />
+
+  <!-- Preload / Icons -->
+  <link rel="preload" as="image" href="/logo.png">
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/logo.png">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0a1110">
+
+  <!-- Social -->
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Sources &amp; Standards — Ocean Liner Curator">
+  <meta property="og:description" content="How Ocean Liner Curator evaluates evidence: sourcing tiers, citation standards, uncertainty labeling, and a curated bibliography of institutional and scholarly references.">
+  <meta property="og:url" content="https://oceanliners.net/sources">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <!-- Indexing -->
+  <meta name="robots" content="index,follow">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.6;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+
+      padding:0 0 2.25rem;
+    }
+    
+    /* ================================
+   Authority badges
+   ================================ */
+
+.badge{
+  --brass: #bfa46a;
+
+  display: inline-block;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--brass);
+
+  padding: 0.28rem 0.6rem 0.32rem;
+  border: 1.5px solid var(--brass);
+  border-radius: 999px;
+
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badge.centered{
+  display: block;
+  margin: 0.6rem auto 0.9rem;
+}
+
+/* Badge groups (for multiple badges) */
+.badge-group{
+  display: block;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.6rem 0 0.85rem;
+}
+
+/* Subtle hierarchy: primary badge slightly heavier */
+.badge.primary{
+  border-width: 2px;
+}
+
+/* Optional: quieter secondary badges */
+.badge.secondary{
+  opacity: 0.85;
+}
+
+.copyright{
+  max-width:none;     /* not trapped in 72ch */
+  text-align:center;
+}
+
+    /* =========================
+       TOP MENU BAR
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.2rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color:rgba(191,164,106,0.55); }
+
+    /* =========================
+   CARD (lattice + glow + engraved background)
+   ========================= */
+.container{
+  width: min(780px, calc(100% - 1.5rem));
+  margin: 1.1rem auto 0;
+  text-align: center;
+
+  background-color: rgba(15,27,25,0.78);
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 3.5rem 2.75rem 1.5rem;
+
+  box-shadow:
+    0 26px 70px rgba(0,0,0,0.60),
+    0 0 0 1px rgba(191,164,106,0.08),
+    0 0 80px rgba(191,164,106,0.06);
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Soft inner lighting (keep this on ::before) */
+.container::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  background:
+    radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+    radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+}
+
+/* Pattern + overlays (move everything here) */
+.container::before{
+  content:"";
+  position:absolute;
+  inset:-20%;
+  pointer-events:none;
+  z-index:0;
+
+  background:
+    /* 1) engraved tile */
+    url("/tile9.png") repeat,
+
+    /* 2) grain/sparkle */
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+    radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+    radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+
+    /* 3) compass + crosshatch */
+    radial-gradient(circle at center,
+      rgba(191,164,106,0.095) 0%,
+      rgba(191,164,106,0.075) 20%,
+      rgba(191,164,106,0.045) 26%,
+      transparent 34%),
+    linear-gradient(45deg,
+      transparent 47.5%,
+      rgba(191,164,106,0.065) 49%,
+      rgba(191,164,106,0.065) 51%,
+      transparent 52.5%),
+    linear-gradient(-45deg,
+      transparent 47.5%,
+      rgba(191,164,106,0.065) 49%,
+      rgba(191,164,106,0.065) 51%,
+      transparent 52.5%);
+
+  background-size:
+    360px 360px,  /* tile scale (airier) */
+    auto, auto, auto,
+    auto,
+    auto, auto;
+    
+    background-position:
+  center,   /* tile */
+  center, center, center,  /* sparkles */
+  center,   /* compass */
+  center, center; /* crosshatch */
+    
+
+  opacity: 0.025; /* keep your existing overlay strength */
+}
+
+/* Make tile subtle without dimming the whole overlay */
+.container::after{
+  /* optional: if tile is still loud, lower just overall opacity */
+  /* opacity: 0.75; */
+}
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1{
+      font-family: "Libre Baskerville", serif;
+      font-variant: small-caps;
+      text-align:left;
+      letter-spacing:0.08em;
+      font-weight:400;
+      margin:0.25rem 0 0;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.6rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    .lede{
+      margin:0 auto 1.35rem auto;
+      max-width:72ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    .muted{ color:var(--muted); }
+
+    .about-link{
+      margin-top:1.1rem;
+      font-size:0.95rem;
+      color:var(--muted);
+      text-align:left;
+      max-width:76ch;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .about-link a{
+      color:rgba(209,187,134,0.9);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+    }
+    .about-link a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+
+    .sections{
+      text-align:left;
+      margin:1.5rem auto 0;
+      max-width:76ch;
+    }
+
+    .sections a{
+      color:rgba(209,187,134,0.9);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+    }
+    .sections a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+
+    .section{
+      margin:1.25rem 0 0;
+      padding-top:1.1rem;
+      border-top:1px solid rgba(191,164,106,0.22);
+    }
+    .section:first-child{
+      border-top:none;
+      padding-top:0;
+      margin-top:0;
+    }
+
+    h2{
+      margin:0 0 0.55rem 0;
+      font-weight:600;
+      font-size:1.22rem;
+      letter-spacing:0.2px;
+      color:var(--text);
+    }
+    
+    h2::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:1px;
+  margin-top:0.45rem;
+  background:linear-gradient(
+    90deg,
+    var(--accent),
+    rgba(191,164,106,0.35),
+    transparent
+  );
+}
+
+    h3{
+      margin:0 0 0.5rem 0;
+      font-weight:600;
+      font-size:1.0rem;
+      letter-spacing:0.15px;
+      color:var(--text);
+    }
+
+    .section p{
+      margin:0 0 0.75rem 0;
+      
+      font-size:0.98rem;
+      line-height:1.7;
+    }
+
+    ul{ margin:0; padding-left:1.1rem; color:var(--text); }
+    li{ margin:0.45rem 0; line-height:1.6; }
+    li .note{ color:var(--muted); }
+
+    .tag{
+      font-size:0.72em;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      margin-left:0.45em;
+      opacity:0.7;
+    }
+
+    a:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+      border-radius:6px;
+    }
+
+    .navbuttons{
+      margin-top:1.4rem;
+      display:flex;
+      justify-content:center;
+      gap:0.75rem;
+      flex-wrap:wrap;
+    }
+
+    a.button{
+      display:inline-block;
+      padding:0.85rem 1.35rem;
+      font-size:0.98rem;
+      letter-spacing:0.2px;
+      text-decoration:none;
+      border-radius:10px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    footer{
+      margin-top:2.4rem;
+      margin-bottom:0;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:108px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .footer-stack{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+.copyright{
+  width:100%;
+  max-width:none;
+  margin:1.2rem 0 0;
+  margin-bottom:0.5rem !important;
+  font-size:0.72rem;
+  opacity:0.55;
+  text-align:center;
+}
+
+    .card{
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:12px;
+      padding:1rem 1rem;
+      backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+      background:rgba(0,0,0,0.10);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+      margin-top:0.75rem;
+      text-align:left;
+      max-width:76ch;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:0.75rem;
+      margin-top:0.75rem;
+    }
+
+    .pill{
+      display:inline-block;
+      padding:0.18rem 0.55rem;
+      border:1px solid rgba(191,164,106,0.35);
+      border-radius:999px;
+      font-size:0.78rem;
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+      color:rgba(230,223,207,0.82);
+      background:rgba(191,164,106,0.06);
+      margin-right:0.35rem;
+      margin-bottom:0.25rem;
+    }
+
+    @media (max-width:520px){
+      .site-header{ padding:0.65rem 0; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.15rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:12px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+
+      h1{ font-size:1.9rem; margin-bottom:0.5rem; }
+      .rule{ width:110px; margin:0.9rem auto 1.15rem auto; }
+
+      .lede{ font-size:0.96rem; margin-bottom:1.1rem; }
+
+      a.button.secondary.navbutton{ width:100%; text-align:center; }
+
+      .flags-footer{ width:92px; margin:0.9rem auto 0; opacity:0.35; }
+      footer{ margin-top:1.8rem; font-size:0.78rem; }
+    }
+    
+    @media (min-width: 1300px){
+  .container{
+    width: min(1080px, calc(100% - 3rem));
+  }
+}
+
+@media (min-width: 1100px){
+  .container p{
+    max-width: 72ch;
+  }
+}
+
+/* Large phones */
+@media (max-width: 768px){
+  .container::after{
+    background-size:
+      300px 300px,  /* tile */
+      auto, auto, auto,
+      auto,
+      auto, auto;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px){
+  .container::after{
+    background-size:
+      240px 240px,  /* tile */
+      auto, auto, auto,
+      auto,
+      auto, auto;
+  }
+}
+
+@media (max-width: 480px){
+  .container::after{
+    inset: -10%;
+    background-position:
+      center,
+      center, center, center,
+      center,
+      center, center;
+  }
+}
+
+.hero{
+  width:100%;
+  margin:0;
+  position:relative;
+  overflow:hidden;
+
+  /* hero height */
+  min-height: 52vh;
+  max-height: 640px;
+
+  display:flex;
+  align-items:flex-end;
+
+  /* the image */
+  background:
+    /* top/bottom readability glaze */
+    linear-gradient(to bottom,
+      rgba(10,17,16,0.70) 0%,
+      rgba(10,17,16,0.05) 45%,
+      rgba(10,17,16,0.72) 100%),
+    url("/ssus2-hero.PNG") center/cover no-repeat;
+
+  border-bottom:1px solid rgba(191,164,106,0.22);
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+
+  /* extra subtle “house” vignette */
+  background:
+    radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+    radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
+  opacity:0.55;
+}
+
+.hero-inner{
+  width:min(860px, calc(100% - 1.5rem));
+  margin:0 auto;
+  padding: 3.2rem 2.2rem 2.1rem;
+  position:relative;
+  z-index:1;
+}
+
+.hero h1{
+  margin:0 0 0.55rem 0;
+  font-family:"Libre Baskerville", serif;
+  font-variant: small-caps;
+  letter-spacing:0.09em;
+  font-weight:400;
+
+  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+.hero p{
+  margin:0;
+  max-width: 70ch;
+  color: rgba(230,223,207,0.92);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 600px){
+  .hero{
+    min-height: 46vh;
+  }
+  .hero-inner{
+    padding: 2.6rem 1.15rem 1.65rem;
+  }
+}
+
+.hero{
+  width: min(780px, calc(100% - 1.5rem));
+  margin: 1.1rem auto 0;
+  border-radius: 16px;
+  border: 1px solid rgba(191,164,106,0.22);
+  overflow:hidden;
+
+  min-height: 52vh;
+  max-height: 640px;
+
+  background:
+    linear-gradient(to bottom,
+      rgba(10,17,16,0.70) 0%,
+      rgba(10,17,16,0.05) 45%,
+      rgba(10,17,16,0.72) 100%),
+    url("/ssus2-hero.PNG") center/cover no-repeat;
+}
+
+@media (min-width: 1300px){
+  .hero{
+    width: min(1080px, calc(100% - 3rem));
+  }
+}
+
+/* Make hero-inner not override your width cap */
+.hero-inner{
+  width:100%;
+  margin:0;
+}
+
+.container{
+  --container-pad-top: clamp(1.75rem, 3.8vh, 2.6rem);
+
+  padding:
+    var(--container-pad-top)
+    2.75rem
+    1.5rem;
+}
+    /* ================================
+   Source “Preferred use” labels
+   ================================ */
+.use-tag{
+  display:inline-block;
+  margin-left:0.55rem;
+  padding:0.18rem 0.55rem;
+
+  border:1px solid rgba(191,164,106,0.38);
+  border-radius:999px;
+
+  font-size:0.74rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+
+  color:rgba(230,223,207,0.84);
+  background:rgba(191,164,106,0.07);
+  white-space:nowrap;
+}
+    
+  </style>
+  <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+
+  <div id="site-header"></div>
+  
+  <section class="hero" aria-label="Sources hero">
+  <div class="hero-inner">
+    <h1>Sources &amp; Standards</h1>
+    <p>
+      How claims are supported,
+      how uncertainty is labeled, and what kinds of sources are preferred.
+    </p>
+  </div>
+</section>
+
+  <main class="container">
+    <!-- <div class="logo-mount">
+      <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+    </div> 
+
+    <h1>Sources &amp; Standards</h1> -->
+    <div class="badge-group">
+  <span class="badge group">Methodology Page</span>
+<span class="badge group">Sources & Standards</span></div>
+    <div class="rule"></div>
+
+    <p class="lede">
+      Ocean Liner Curator uses an evidence-first approach. This page explains how claims are supported,
+      how uncertainty is labeled, and what kinds of sources are preferred—followed by a curated bibliography
+      of institutional holdings and scholarly works used across the site.
+    </p><p class="about-link">For a broader overview beyond artifacts, see <a href="/ocean-liner-research">Ocean Liner Research: Sources, Methods, and Evidence</a>.</p>
+
+    <div class="sections">
+
+      <div class="section">
+        <h2>Standards (How Evidence Is Weighed)</h2>
+        <p>
+          Not all sources are equal. Ocean Liner Curator prioritizes primary documentation and
+          professional custodianship (archives, museums, official registers). Secondary works are used
+          when they transparently cite primary material or show consistent technical reliability.
+          Market descriptions and collector lore are treated as context—not proof.
+        </p>
+
+        <div class="card" role="note" aria-label="Evidence tiers">
+          <h3>Evidence tiers used on this site</h3>
+          <div class="grid">
+            <div>
+              <span class="pill">Primary</span>
+              Plans, shipyard records, official registers, contemporary documents, period photographs, company papers, inquiry reports.
+            </div>
+            <div>
+              <span class="pill">Secondary</span>
+              Scholarly books, museum publications, technical histories, peer-reviewed or professionally edited work that cites sources.
+            </div>
+            <div>
+              <span class="pill">Tertiary</span>
+              Collector references, auction catalogs, databases, enthusiast compilations—useful, but cross-checked and never treated as sole proof.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Claim Scaling (How Strong Conclusions Are Allowed to Be)</h2>
+        <p>
+          Conclusions are stated in proportion to the supporting record. When documentation is thin,
+          the site prefers bounded language (e.g., “consistent with,” “probable,” “cannot be confirmed”)
+          and makes “unknown” a valid, responsible endpoint.
+        </p>
+
+        <div class="card" role="note" aria-label="Uncertainty and labeling">
+          <h3>How uncertainty is labeled</h3>
+          <p class="muted" style="margin:0;">
+            <span class="pill">Documented</span> Supported by primary/official sources.<br/>
+            <span class="pill">Well-supported</span> Multiple strong secondary sources agree, citing primary material.<br/>
+            <span class="pill">Probable</span> Evidence points one way, but a confirming document is missing.<br/>
+            <span class="pill">Possible</span> Plausible, but competing explanations exist.<br/>
+            <span class="pill">Unknown</span> Evidence is insufficient to choose responsibly.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Citation Standards (What Gets Cited)</h2>
+        <p>
+          Factual assertions (dates, dimensions, ownership, design features, route chronology) should be traceable
+          to primary or reputable secondary sources. Interpretive commentary is separated from documentary claims.
+          When a source is popular but weakly sourced, it may still be referenced—but only with cross-checking and restraint.
+        </p><p>
+  General encyclopedic resources (including collaboratively edited platforms) are not treated as primary or secondary authorities.
+  Where such resources are consulted for orientation, underlying references are traced and evaluated directly.
+</p>
+      </div>
+
+      <div class="card" role="note" aria-label="AI use policy">
+        <h3>Use of AI-assisted tools</h3>
+        <p class="muted" style="margin:0;">
+          This project makes limited use of AI-assisted tools to support research organization, drafting, and cross-referencing.
+          These tools function as assistants, not authorities. All content is reviewed by a human editor, and factual claims
+          are evaluated against primary or reputable secondary sources. AI-assisted outputs do not replace archival research
+          or curatorial judgment, and uncertainty is stated explicitly where evidence is incomplete.
+        </p>
+      </div>
+
+      <p class="about-link">
+        The links on this page are intentionally institution- and scholarship-oriented. If you're looking for hobby and general-interest resources,
+        see <a href="/external-references">External References</a>.
+      </p>
+
+      <div class="section">
+        <h2>Museums &amp; Archives <span class="tag">institutional</span></h2>
+        <p>Custodians of primary material (plans, photographs, company papers, artifacts) and professional interpretation.</p>
+        <ul>
+          <li><strong><a href="https://www.rmg.co.uk/national-maritime-museum" target="_blank" rel="noopener">National Maritime Museum (Greenwich, UK)</a></strong> <span class="note">— plans, models, photographs, curatorial research</span></li>
+          <li><strong><a href="https://www.marinersmuseum.org" target="_blank" rel="noopener">The Mariners’ Museum &amp; Park (Newport News, VA)</a></strong> <span class="note">— shipbuilding and transatlantic liner context</span></li>
+          <li><strong><a href="https://www.liverpoolmuseums.org.uk/maritime-museum" target="_blank" rel="noopener">Merseyside Maritime Museum (Liverpool)</a></strong> <span class="note">— port history; Cunard/White Star context</span></li>
+          <li><strong><a href="https://americanhistory.si.edu" target="_blank" rel="noopener">Smithsonian Institution — National Museum of American History</a></strong> <span class="note">— U.S. maritime and industrial context</span></li>
+          <li><strong><a href="https://www.loc.gov" target="_blank" rel="noopener">Library of Congress</a></strong> <span class="note">— period images, posters, maps, ephemera</span></li>
+<li>
+  <strong>
+    <a href="https://www.nationalarchives.gov.uk" target="_blank" rel="noopener">
+      The National Archives (Kew, UK)
+    </a>
+  </strong>
+  <span class="note">— government records; Board of Trade files; inquiry context; registration and regulatory material</span>
+</li>
+
+<li>
+  <strong>
+    <a href="https://libguides.liverpool.ac.uk/cunardarchive" target="_blank" rel="noopener">
+      Cunard Archive (University of Liverpool)
+    </a>
+  </strong>
+  <span class="note">— corporate papers, ephemera, branding, and fleet documentation</span>
+</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Shipbuilders &amp; Corporate Records <span class="tag">primary</span></h2>
+        <p>When available, shipyard and line records provide foundational evidence for specifications and design intent.</p>
+        <ul>
+          <li><strong><a href="https://archives.hul.ac.uk/repositories/2/resources/248" target="_blank" rel="noopener">Harland &amp; Wolff shipyard records (Belfast)</a></strong> <span class="note">— construction drawings and specifications</span></li>
+          <li><strong><a href="https://archiveshub.jisc.ac.uk" target="_blank" rel="noopener">John Brown &amp; Company archives (Clydebank)</a></strong> <span class="note">— engineering and construction context</span></li>
+          <li><strong><a href="https://www.nnshipbuildingmuseum.org" target="_blank" rel="noopener">Newport News Shipbuilding archives</a></strong> <span class="note">— postwar American liners, including SS United States</span></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Registers &amp; Official Documentation <span class="tag">reference</span></h2>
+        <p>Used for verification and cross-checking (ownership, tonnage, dimensions, chronology, and official inquiries).</p>
+        <ul>
+          <li><strong><a href="https://hec.lrfoundation.org.uk" target="_blank" rel="noopener">Lloyd’s Register of Ships</a></strong> <span class="note">— contemporary technical and ownership data</span></li>
+          <li><strong><a href="https://www.gov.uk/government/collections/merchant-shipping-inquiries" target="_blank" rel="noopener">British Board of Trade reports</a></strong> <span class="note">— official investigations and inquiry material</span></li>
+        <li>
+  <strong>
+    <a href="https://www.norwayheritage.com" target="_blank" rel="noopener">
+      Norway Heritage
+    </a>
+  </strong>
+  <span class="note">— compiled passenger lists and ship summaries <em>(used as a cross-checked reference, not primary evidence)</em></span>
+</li>
+
+<li>
+  <strong>
+    <a href="https://parlipapers.proquest.com/" target="_blank" rel="noopener">
+      UK Parliamentary Papers
+    </a>
+  </strong>
+  <span class="use-tag">inquiry transcripts</span>
+  <span class="note">— Board of Trade inquiries, committee reports, and official testimony (access varies)</span>
+</li>
+
+<li>
+  <strong>
+    <a href="https://hansard.parliament.uk/" target="_blank" rel="noopener">
+      Hansard (UK Parliament Debates)
+    </a>
+  </strong>
+  <span class="use-tag">legislative debate</span>
+  <span class="note">— parliamentary discussions relating to maritime regulation and liner incidents</span>
+</li>
+        </ul>
+      </div>
+      
+      <div class="section">
+  <h2>Ship-History Databases &amp; Technical Reference Sites <span class="tag">secondary / tertiary</span></h2>
+  <p>
+    These resources are used as high-utility research tools—especially for builder data, chronology scaffolding,
+    and cross-checking names, yard numbers, and careers. They are treated as <em>reference layers</em>, not final authority,
+    and are best used alongside registers, archival holdings, and published technical works.
+  </p>
+
+  <ul>
+    <li>
+      <strong>
+        <a href="https://www.miramarshipindex.nz/" target="_blank" rel="noopener">
+          Miramar Ship Index
+        </a>
+      </strong>
+      <span class="use-tag">career tracking</span>
+      <span class="note">— ownership chains, renamings, fates; excellent for triangulation</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://www.clydeships.co.uk/" target="_blank" rel="noopener">
+          Scottish Built Ships (Clydeships)
+        </a>
+      </strong>
+      <span class="use-tag">builder / yard</span>
+      <span class="note">— shipbuilding entries with yard details; strong for build cross-checking</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://www.tynebuiltships.co.uk/Ships.html" target="_blank" rel="noopener">
+          Tyne Built Ships &amp; Shipbuilders
+        </a>
+      </strong>
+      <span class="use-tag">builder / yard</span>
+      <span class="note">— Tyne shipyards output; useful for compiled build data and context</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://shippingandshipbuilding.uk/" target="_blank" rel="noopener">
+          Shipping &amp; Shipbuilding Research Trust database family
+        </a>
+      </strong>
+      <span class="use-tag">yard output</span>
+      <span class="note">— UK &amp; Ireland shipyard production coverage (varies by yard/region)</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://www.shipindex.org/" target="_blank" rel="noopener">
+          ShipIndex.org
+        </a>
+      </strong>
+      <span class="use-tag">find citations</span>
+      <span class="note">— points to where a ship is discussed across books, journals, databases, and sites</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://www.shippingwondersoftheworld.com/" target="_blank" rel="noopener">
+          Shipping Wonders of the World (archive)
+        </a>
+      </strong>
+      <span class="use-tag">period articles</span>
+      <span class="note">— contemporary reporting and imagery (verified case-by-case)</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://simplonpc.co.uk/OceanLiner.html" target="_blank" rel="noopener">
+          Simplon Postcards (Passenger Ship / Ocean Liner galleries)
+        </a>
+      </strong>
+      <span class="use-tag">imagery ID</span>
+      <span class="note">— superb visual reference for postcard/photograph identification and comparison</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://www.crewlist.org.uk/" target="_blank" rel="noopener">
+          Crew List Index Project (CLIP)
+        </a>
+      </strong>
+      <span class="use-tag">archival routing</span>
+      <span class="note">— helps locate UK crew-list records; bridges into archival holdings</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://www.equasis.org/" target="_blank" rel="noopener">
+          Equasis
+        </a>
+      </strong>
+      <span class="use-tag">modern verification</span>
+      <span class="note">— company/ship data for modern vessels (registration required); useful for late-career checks</span>
+    </li>
+
+    <li>
+      <strong>
+        <a href="https://www.wrecksite.eu/" target="_blank" rel="noopener">
+          Wrecksite
+        </a>
+      </strong>
+      <span class="use-tag">casualty index</span>
+      <span class="note">— wreck/casualty summaries and locations (used as a starting index; verified via primary reporting)</span>
+    </li>
+  </ul>
+
+  <p class="muted" style="margin-top:0.8rem;">
+    Note: When sources disagree, priority goes to primary documentation (registers, plans, inquiry reports, archival records),
+    then to professionally edited technical histories that clearly cite their underlying evidence.
+  </p>
+</div>
+
+<!-- =========================================================
+     STRONGEST ADDITIONS (curated, high signal)
+     Paste these sections where you want them in .sections
+     ========================================================= -->
+
+<div class="section">
+  <h2>Period Newspapers &amp; Digitized Primary Print <span class="tag">primary-adjacent</span></h2>
+  <p>
+    Used for contemporaneous reporting (launch coverage, arrivals, refits, groundings, collisions, wrecks),
+    public notices, and period language. Best practice is to cite the specific issue/date and cross-check
+    technical claims against registers and plans.
+  </p>
+  <ul>
+    <li>
+      <strong>
+        <a href="https://www.britishnewspaperarchive.co.uk/" target="_blank" rel="noopener">
+          British Newspaper Archive
+        </a>
+      </strong>
+      <span class="use-tag">contemporary reporting</span>
+      <span class="note">— UK press coverage; strong for incidents, sailings, public notices</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://www.thetimes.co.uk/archive/" target="_blank" rel="noopener">
+          The Times Digital Archive
+        </a>
+      </strong>
+      <span class="use-tag">official tone</span>
+      <span class="note">— major liner events, inquiries, high-profile voyages (subscription access)</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://chroniclingamerica.loc.gov/" target="_blank" rel="noopener">
+          Chronicling America (Library of Congress)
+        </a>
+      </strong>
+      <span class="use-tag">U.S. coverage</span>
+      <span class="note">— American newspapers; excellent for arrival/departure reporting and public reaction</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://www.hathitrust.org/" target="_blank" rel="noopener">
+          HathiTrust Digital Library
+        </a>
+      </strong>
+      <span class="use-tag">digitized books</span>
+      <span class="note">— scanned maritime books/journals; useful for hard-to-find period references</span>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Naval Architecture &amp; Technical Journals <span class="tag">technical</span></h2>
+  <p>
+    Used for machinery, structural changes, and “why this design” questions. These sources can resolve
+    conflicting specifications by anchoring claims in engineering-era documentation.
+  </p>
+  <ul>
+    <li>
+      <strong>
+        <a href="https://www.gracesguide.co.uk/The_Engineer" target="_blank" rel="noopener">
+          The Engineer (via Grace’s Guide index)
+        </a>
+      </strong>
+      <span class="use-tag">engineering articles</span>
+      <span class="note">— period engineering reporting and references (varies by ship/topic)</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://www.shipindex.org/" target="_blank" rel="noopener">
+          ShipIndex.org
+        </a>
+      </strong>
+      <span class="use-tag">find citations</span>
+      <span class="note">— quickest route to where a ship is discussed in technical and historical literature</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://www.rina.org.uk/" target="_blank" rel="noopener">
+          Royal Institution of Naval Architects (RINA)
+        </a>
+      </strong>
+      <span class="use-tag">peer technical</span>
+      <span class="note">— gateway to Transactions/proceedings and naval-architecture scholarship</span>
+    </li>
+    
+    <li>
+  <strong>
+    <a href="https://www.gracesguide.co.uk/" target="_blank" rel="noopener">
+      Grace’s Guide to British Industrial History
+    </a>
+  </strong>
+  <span class="use-tag">trade press index</span>
+  <span class="note">— indexed engineering and shipbuilding articles (The Engineer, industrial journals)</span>
+</li>
+
+<li>
+  <strong>
+    <a href="https://gallica.bnf.fr/" target="_blank" rel="noopener">
+      Gallica (Bibliothèque nationale de France)
+    </a>
+  </strong>
+  <span class="use-tag">French press</span>
+  <span class="note">— digitized French newspapers and maritime journals; useful for French-line coverage</span>
+</li>
+
+<li>
+  <strong>
+    <a href="https://www.deutsche-digitale-bibliothek.de/" target="_blank" rel="noopener">
+      Deutsche Digitale Bibliothek
+    </a>
+  </strong>
+  <span class="use-tag">German archives</span>
+  <span class="note">— digitized cultural and historical collections; useful for Norddeutscher Lloyd and HAPAG context</span>
+</li>
+
+<li>
+  <strong>
+    <a href="https://trove.nla.gov.au/" target="_blank" rel="noopener">
+      Trove (National Library of Australia)
+    </a>
+  </strong>
+  <span class="use-tag">Commonwealth press</span>
+  <span class="note">— Australian and Commonwealth newspapers and government publications</span>
+</li>
+    
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Peer-Reviewed Maritime History Journals <span class="tag">peer-reviewed</span></h2>
+  <p>
+    Used when a ship guide needs industrial, economic, labor, or policy context—especially where popular
+    narratives oversimplify. These help keep interpretation disciplined and well-sourced.
+  </p>
+  <ul>
+    <li>
+      <strong>
+        <a href="https://www.tandfonline.com/journals/rmar20" target="_blank" rel="noopener">
+          The Mariner’s Mirror
+        </a>
+      </strong>
+      <span class="use-tag">scholarly context</span>
+      <span class="note">— long-running maritime history journal (often behind paywalls)</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://journals.sagepub.com/home/ijh" target="_blank" rel="noopener">
+          International Journal of Maritime History
+        </a>
+      </strong>
+      <span class="use-tag">modern research</span>
+      <span class="note">— academic articles on shipping, ports, and maritime industries</span>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Classification Societies <span class="tag">verification</span></h2>
+  <p>
+    Used for cross-checking specifications, surveys, and late-career technical continuity—especially postwar
+    ships and refitted vessels where secondary summaries often diverge.
+  </p>
+  <ul>
+    <li>
+      <strong>
+        <a href="https://ww2.eagle.org/" target="_blank" rel="noopener">
+          American Bureau of Shipping (ABS)
+        </a>
+      </strong>
+      <span class="use-tag">technical verification</span>
+      <span class="note">— classification framework and ship data access points (coverage varies)</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://www.bureauveritas.com/" target="_blank" rel="noopener">
+          Bureau Veritas
+        </a>
+      </strong>
+      <span class="use-tag">classification</span>
+      <span class="note">— classification society reference layer (access varies by dataset)</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://www.rina.org/" target="_blank" rel="noopener">
+          RINA (Registro Italiano Navale)
+        </a>
+      </strong>
+      <span class="use-tag">classification</span>
+      <span class="note">— classification resources; useful for Italian and international coverage</span>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Passenger Lists &amp; Immigration Records <span class="tag">service chronology</span></h2>
+  <p>
+    Used to verify sailings and route patterns when secondary sources disagree. These are strongest when
+    treated as documentation of a specific voyage rather than a complete career summary.
+  </p>
+  <ul>
+    <li>
+      <strong>
+        <a href="https://www.statueofliberty.org/ellis-island/" target="_blank" rel="noopener">
+          Ellis Island Passenger Search
+        </a>
+      </strong>
+      <span class="use-tag">voyage verification</span>
+      <span class="note">— arrivals and manifests (useful for specific sailings; data quality varies)</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/merchant-seamen/" target="_blank" rel="noopener">
+          The National Archives (UK): Merchant Seamen research guides
+        </a>
+      </strong>
+      <span class="use-tag">archival routing</span>
+      <span class="note">— how-to pathways into crew/passenger related holdings and series</span>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Photographic &amp; Film Archives <span class="tag">visual documentation</span></h2>
+  <p>
+    Used for configuration and refit verification (deck furniture, boat arrangement, bridge shape, funnels,
+    ventilators), and for anchoring “what it looked like when” with dated holdings.
+  </p>
+  <ul>
+    <li>
+      <strong>
+        <a href="https://www.iwm.org.uk/collections" target="_blank" rel="noopener">
+          Imperial War Museums Collections
+        </a>
+      </strong>
+      <span class="use-tag">wartime service</span>
+      <span class="note">— requisitioned liners, troopship conversions, wartime imagery and documentation</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://historicengland.org.uk/images-books/archive/" target="_blank" rel="noopener">
+          Historic England Archive
+        </a>
+      </strong>
+      <span class="use-tag">dated imagery</span>
+      <span class="note">— strong for ports, infrastructure, and some maritime/industrial photography</span>
+    </li>
+    <li>
+      <strong>
+        <a href="https://www.gettyimages.com/" target="_blank" rel="noopener">
+          Getty Images (Editorial Archive)
+        </a>
+      </strong>
+      <span class="use-tag">image search</span>
+      <span class="note">— a powerful discovery tool; best when you trace images back to original agencies/collections</span>
+    </li>
+  </ul>
+
+  <p class="muted" style="margin-top:0.8rem;">
+    Access note: Some databases and journal archives require subscriptions or institutional access.
+    Where paywalled, citations should still specify the publication, issue/date, and any stable identifier available.
+  </p>
+</div>
+
+      <div class="section">
+        <h2>Scholarly &amp; Curatorial Works <span class="tag">selected</span></h2>
+        <p>
+          The following authors are relied upon for documented research, technical accuracy, and transparent engagement with primary sources.
+          Inclusion reflects sustained reference value rather than narrative popularity.
+        </p>
+
+        <ul>
+          <li><strong><a href="https://markchirnside.co.uk" target="_blank" rel="noopener">Mark Chirnside</a></strong> <span class="note">— c. 1890–1930; White Star Line; Titanic and Olympic-class ships; primary-source analysis</span></li>
+          <li><strong><a href="https://www.penguinrandomhouse.com/authors/20533/william-h-miller/" target="_blank" rel="noopener">William H. Miller</a></strong> <span class="note">— transatlantic passenger liners; interiors; passenger experience</span></li>
+          <li><strong><a href="https://en.wikipedia.org/wiki/John_Maxtone-Graham" target="_blank" rel="noopener">John Maxtone-Graham</a></strong> <span class="note">— ocean liner engineering and aesthetics; structural design interpretation</span></li>
+          <li><strong><a href="https://www.usni.org/press/authors/norman-friedman" target="_blank" rel="noopener">Norman Friedman</a></strong> <span class="note">— maritime and naval engineering; technical systems and design evolution</span></li>
+          <li><strong><a href="https://www.worldcat.org/search?q=au%3AKludas%2C+Arnold" target="_blank" rel="noopener">Arnold Kludas</a></strong> <span class="note">— passenger shipping lines, fleets, routes, and chronology</span></li>
+          <li><strong><a href="https://danielallenbutler.com" target="_blank" rel="noopener">Daniel Allen Butler</a></strong> <span class="note">— narrative synthesis (used when cross-checked)</span></li>
+          <li><strong><a href="https://www.britannica.com/biography/Asa-Briggs" target="_blank" rel="noopener">Asa Briggs</a></strong> <span class="note">— industrial Britain; social and economic history context</span></li>
+          <li><strong><a href="https://www.worldcat.org/search?q=au%3ABrown%2C+David+K." target="_blank" rel="noopener">David K. Brown</a></strong> <span class="note">— naval architecture and ship design history</span></li>
+          <li><strong><a href="https://www.worldcat.org/search?q=au%3ABurt%2C+R.+A." target="_blank" rel="noopener">R. A. Burt</a></strong> <span class="note">— naval and maritime technical studies</span></li>
+          <li><strong><a href="https://www.worldcat.org/search?q=au%3AMurphy%2C+Hugh" target="_blank" rel="noopener">Hugh Murphy</a></strong> <span class="note">— Titanic public history; preservation and interpretation</span></li>
+          <li><strong><a href="https://www.encyclopedia-titanica.org/community/members/charles-haas.21/" target="_blank" rel="noopener">Charles Haas</a></strong> <span class="note">— wreck-site material culture; recovery-context research</span></li>
+          <li><strong><a href="https://www.rmg.co.uk/stories/topics/exhibitions" target="_blank" rel="noopener">Institutional exhibition catalogs &amp; curatorial publications</a></strong> <span class="note">— object-based research grounded in documented collections</span></li>
+        <li>
+  <strong>
+    <a href="https://www.encyclopedia-titanica.org/community/members/bill-wormstedt.35/" target="_blank" rel="noopener">
+      Bill Wormstedt
+    </a>
+  </strong>
+  <span class="note">— structural analysis, plan interpretation, technical chronology (especially Olympic/Titanic-class)</span>
+</li>
+
+<li>
+  <strong>
+    <a href="https://www.paullee.com/titanic/" target="_blank" rel="noopener">
+      Paul Lee
+    </a>
+  </strong>
+  <span class="note">— documentary research and compiled resources (used with cross-checking)</span>
+</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Artifact &amp; Material Culture <span class="tag">objects</span></h2>
+        <p>Used for provenance context and object-based interpretation. Market descriptions alone are not treated as historical proof.</p>
+        <ul>
+          <li><strong><a href="https://www.ssusc.org" target="_blank" rel="noopener">SS United States Conservancy</a></strong> <span class="note">— archival research and preservation history</span></li>
+          <li><strong><a href="https://www.henryaldridge.com" target="_blank" rel="noopener">Henry Aldridge &amp; Son</a></strong> <span class="note">— specialist auction research</span></li>
+          <li><strong><a href="https://www.christies.com" target="_blank" rel="noopener">Major auction houses (Christie’s · Sotheby’s · Bonhams)</a></strong> <span class="note">— catalog essays and provenance context</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+ <div class="navbuttons" aria-label="Page navigation">
+        <a class="button secondary navbutton" href="/">Home</a>
+        <a class="button secondary navbutton" href="/about">About</a>
+      </div>
+    
+    <footer><div class="footer-stack">
+      <p>
+        Notes: This page evolves as new archival material becomes accessible. Where uncertainty exists, it is labeled plainly and speculation is avoided.
+      </p>
+
+      <img class="flags-footer" src="/engraved-scroll.PNG" alt="" aria-hidden="true" />
+
+      <p class="copyright">
+        © <span id="year"></span> Ocean Liner Curator.
+      </p>
+    </footer></div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/header.js" defer></script>
+       <script src="/assets/nav.js" defer></script>
+  
+  <!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+</body>
+</html>

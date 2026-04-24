@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Submit Ocean Liner Art — Ocean Liner Curator</title>
+  <meta name="description" content="Submit original ocean liner artwork for curatorial review. Selected works may be featured on Ocean Liner Curator with full credit and clear rights terms." />
+
+  <link rel="canonical" href="https://oceanliners.net/submissions/art" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/submissions/art#webpage",
+    "name": "Submit Ocean Liner Art — Ocean Liner Curator",
+    "url": "https://oceanliners.net/submissions/art",
+    "isPartOf": { "@id": "https://oceanliners.net/#website" },
+    "description": "Submit original ocean liner artwork for curatorial review. Selected works may be featured on Ocean Liner Curator with full credit and clear rights terms.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/logo.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:site_name" content="Ocean Liner Curator">
+  <meta property="og:title" content="Submit Ocean Liner Art — Ocean Liner Curator">
+  <meta property="og:description" content="Submit original ocean liner artwork for curatorial review. Selected works may be featured on Ocean Liner Curator with full credit and clear rights terms.">
+  <meta property="og:url" content="https://oceanliners.net/submissions/art">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Submit Ocean Liner Art — Ocean Liner Curator">
+  <meta name="twitter:description" content="Submit original ocean liner artwork for curatorial review. Selected works may be featured on Ocean Liner Curator with full credit and clear rights terms.">
+  <meta name="twitter:image" content="https://oceanliners.net/logo.png">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+    --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+    }
+
+    html{ text-rendering: optimizeLegibility; }
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 0 0 2.25rem;
+    }
+
+    /* =========================
+       TOP MENU BAR
+       ========================= */
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    /* =========================
+       CARD
+       ========================= */
+    .container{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:3.5rem 2.75rem;
+
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      pointer-events:none;
+      z-index:0;
+      opacity:0.95;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    .logo-mount{
+      width:108px;
+      height:108px;
+      margin:0 auto 0.95rem auto;
+      padding:10px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.55);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+      box-shadow:0 14px 34px rgba(0,0,0,0.42);
+      position:relative;
+    }
+
+    .logo-mount::after{
+      content:"";
+      position:absolute;
+      inset:7px;
+      border-radius:12px;
+      border:1px solid rgba(191,164,106,0.22);
+      pointer-events:none;
+    }
+
+    .logo{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      border-radius:12px;
+      background:rgba(230,223,207,0.06);
+    }
+
+    h1{
+      margin:0 0 0.8rem 0;
+      font-weight:600;
+      font-feature-settings:"kern" 1, "liga" 1;
+      font-size:2.55rem;
+      letter-spacing:0.6px;
+    }
+
+    .rule{
+      width:140px;
+      height:2px;
+      margin:1.1rem auto 1.7rem auto;
+      background:linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity:0.85;
+    }
+
+    p{
+      margin:0 auto 1.55rem auto;
+      max-width:var(--measure);
+      font-size:1.06rem;
+      line-height:1.72;
+    }
+
+    a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:0.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:108px;
+      height:auto;
+      margin:1.1rem auto -0.2rem;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+    }
+
+    @media (max-width:520px){
+      .site-header{ padding:0.65rem 0; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      .logo-mount{
+        width:88px;
+        height:88px;
+        padding:8px;
+        margin-bottom:0.75rem;
+        border-radius:14px;
+      }
+
+      .logo-mount::after{ inset:6px; border-radius:11px; }
+      .logo{ border-radius:11px; }
+
+      h1{
+        font-size:1.9rem;
+        letter-spacing:0.4px;
+        margin-bottom:0.6rem;
+      }
+
+      .rule{
+        width:110px;
+        margin:0.9rem auto 1.25rem auto;
+      }
+
+      p{
+        font-size:0.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:92px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      a.button{ transition:none; }
+    }
+
+    /* =========================
+       ARTICLE TYPOGRAPHY (house-matched)
+       ========================= */
+    .page-kicker{
+      margin:0 auto 1.4rem auto;
+      max-width:70ch;
+      font-size:1.02rem;
+      line-height:1.72;
+      color:var(--muted);
+    }
+
+    /* Left-align reading text (head/title remain centered via container) */
+    .scope p,
+    .scope ul,
+    .scope .note,
+    .scope .deflist,
+    .scope form{
+      text-align:left;
+    }
+
+    .scope h2{
+      margin:2.25rem auto 0.7rem auto;
+      max-width:var(--measure);
+      font-size:1.22rem;
+      font-weight:600;
+      color:var(--text);
+      letter-spacing:0.2px;
+    }
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem auto;
+    }
+
+    .scope ul{
+      margin:0.55rem auto 1.35rem auto;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:0.45rem 0;
+      line-height:1.65;
+    }
+
+    .scope .note{
+      margin:0.85rem auto 1.55rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 0.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    /* Inline editorial links */
+    .scope p a,
+    .scope li a,
+    .scope .note a {
+      color: rgba(209,187,134,0.95);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(191,164,106,0.45);
+      padding-bottom: 1px;
+    }
+    .scope p a:hover,
+    .scope li a:hover,
+    .scope .note a:hover {
+      border-bottom-color: rgba(191,164,106,0.75);
+    }
+    .scope p a:focus-visible,
+    .scope li a:focus-visible,
+    .scope .note a:focus-visible {
+      outline: 2px solid rgba(191,164,106,0.6);
+      outline-offset: 3px;
+    }
+
+    /* Definition list “museum label” feel */
+    .scope .deflist{
+      margin:0.2rem auto 1.35rem auto;
+      max-width:var(--measure);
+      padding:0.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+    }
+    .scope .defrow{
+      display:flex;
+      gap:0.75rem;
+      padding:0.55rem 0;
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+    .scope .defrow:first-child{ border-top:none; padding-top:0.1rem; }
+    .scope .defterm{
+      min-width:10.5rem;
+      font-weight:600;
+      color:rgba(230,223,207,0.95);
+    }
+    .scope .defdesc{
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+    @media (max-width:520px){
+      .scope .defrow{ flex-direction:column; gap:0.25rem; }
+      .scope .defterm{ min-width:auto; }
+    }
+
+    /* =========================
+       FORM STYLING (house-matched)
+       ========================= */
+    .form-wrap{
+      margin:0.2rem auto 1.35rem auto;
+      max-width:var(--measure);
+      padding:1.05rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+    }
+
+    .form-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:0.95rem;
+    }
+    @media (max-width:520px){
+      .form-grid{ grid-template-columns: 1fr; }
+    }
+
+    label{
+      display:block;
+      font-weight:600;
+      color:rgba(230,223,207,0.95);
+      margin:0 0 0.35rem 0;
+      letter-spacing:0.1px;
+    }
+
+    .field{
+      margin:0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    select,
+    textarea{
+      width:100%;
+      font-family:var(--font-sans);
+      font-size:1rem;
+      color:var(--text);
+      background:rgba(15,27,25,0.55);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem 0.85rem;
+      outline:none;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.20);
+    }
+
+    textarea{
+      min-height:140px;
+      resize:vertical;
+      line-height:1.6;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="url"]::placeholder,
+    textarea::placeholder{
+      color: rgba(182,174,156,0.72);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus{
+      border-color: rgba(191,164,106,0.62);
+      box-shadow:
+        0 0 0 3px rgba(191,164,106,0.14),
+        0 10px 24px rgba(0,0,0,0.22);
+    }
+
+    .help{
+      margin:0.35rem 0 0 0;
+      font-size:0.92rem;
+      color:rgba(182,174,156,0.92);
+      line-height:1.55;
+    }
+
+    .full{
+      grid-column: 1 / -1;
+    }
+
+    .checkline{
+      display:flex;
+      gap:0.55rem;
+      align-items:flex-start;
+      margin:0.65rem 0 0 0;
+      color:rgba(230,223,207,0.92);
+      font-size:0.98rem;
+      line-height:1.55;
+    }
+    .checkline input{
+      margin-top:0.25rem;
+      accent-color: var(--accent);
+    }
+
+    /* Center the action buttons inside the submission box */
+.form-actions{
+  display:flex;
+  gap:0.8rem;
+  align-items:center;
+  justify-content:center; /* was flex-start */
+  margin-top:1.05rem;
+  flex-wrap:wrap;
+}
+
+    button.button{
+      cursor:pointer;
+      font-family:var(--font-sans);
+      display:inline-block;
+      padding:0.95rem 1.25rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    button.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+    button.button:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+
+    .mini-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:1px;
+    }
+    .mini-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+    
+    @media (max-width:520px){
+  .form-actions{
+    flex-direction:column;
+    align-items:center;
+  }
+  .form-actions .button{
+    width:100%;
+    text-align:center;
+  }
+}
+
+    /* Footer should remain centered */
+    footer p,
+    footer .copyright{
+      text-align: center;
+      margin-top:1.8rem;
+    }
+  </style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <nav class="site-nav" aria-label="Primary">
+      <a class="nav-link" href="/">Home</a>
+
+      <details class="nav-dropdown">
+        <summary class="nav-link">Essays</summary>
+        <div class="dropdown-panel">
+          <a href="/what-are-ocean-liners">What Are Ocean Liners?</a>
+          <a href="/ocean-liner-collecting-guide">Ocean Liner Collecting: A Curated Guide</a>
+          <a href="/attribution">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</a>
+          <a href="/provenance">Common Problems With “Provenance” in Maritime Collecting</a>
+          <a href="/identify">How to Identify Authentic Ocean Liner Memorabilia</a>
+          <a href="/evidence">What Counts as Evidence in Ocean Liner Collecting?</a>
+          <a href="/unknown">When Evidence Is Limited: Why “Unknown” Is a Responsible Conclusion</a>
+        </div>
+      </details>
+
+      <details class="nav-dropdown">
+        <summary class="nav-link">Reference</summary>
+        <div class="dropdown-panel">
+          <a href="/reference-objects/">Reference Objects</a>
+          <a href="/collectors-notebook">Collector’s Notebook</a>
+          <a href="/photos">Photos</a>
+          <a href="/ships/ships">Ship Guides</a>
+          <a href="/white-star-line-history">History of White Star Line</a>
+          <a href="/history-of-cunard">History of Cunard Line</a>
+          <a href="/definitive-guide">Definitive Guide</a>
+          <a href="/sources">Sources</a>
+          <a href="/about">About</a>
+          <a href="/scope">Project Scope</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main class="container scope">
+
+  <div class="logo-mount">
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
+  </div>
+
+  <h1>Submit Ocean Liner Art</h1>
+  <div class="rule"></div>
+
+  <p class="page-kicker">
+    Ocean Liner Curator occasionally reviews and features original artwork that engages thoughtfully with ocean liners—design, history,
+    and material culture. Submissions are reviewed case-by-case. Not all submissions can be published.
+  </p>
+
+  <div class="note">
+    <strong>⁂ Quick expectation:</strong> This is a curatorial review process, not an open gallery. Selected works may be featured with full credit,
+    and may include a short curator’s note for context.
+  </div>
+
+  <h2>What This Page Is For</h2>
+  <p>
+    Use this page to submit original ocean-liner-related artwork for consideration. If your work is selected, it may appear in a curated
+    “Selected Reader Artwork” section, with attribution and a stable permalink.
+  </p>
+
+  <h2>What I’m Looking For</h2>
+  <ul>
+    <li><strong>Original work</strong> inspired by ocean liners (historic or interpretive).</li>
+    <li><strong>Historically informed</strong> depictions, design studies, posters, technical drawings, or concept work.</li>
+    <li><strong>Clear labeling</strong> when something is interpretive rather than a reconstruction.</li>
+    <li><strong>Thoughtful context</strong> (brief statement, what ship/era inspired it, what sources you referenced if relevant).</li>
+  </ul>
+
+  <h2>What I Don’t Accept</h2>
+  <ul>
+    <li><strong>Uncredited derivative work</strong> (traces/edits of other artists’ work).</li>
+    <li><strong>Unlicensed commercial imagery</strong> (studio stills, film frames, copyrighted marketing art) presented as original.</li>
+    <li><strong>Content that relies on sensational or unsupported claims</strong> presented as fact.</li>
+    <li><strong>Low-resolution images</strong> that cannot be displayed cleanly on the site.</li>
+  </ul>
+
+  <div class="note">
+    <strong>AI note:</strong> If you used AI tools in any part of the workflow, disclose it in the submission. I may still decline AI-generated
+    imagery depending on fit and documentation. Transparency is required either way.
+  </div>
+
+  <h2>Submission Checklist</h2>
+  <div class="deflist" role="group" aria-label="Submission checklist">
+    <div class="defrow">
+      <div class="defterm">Files</div>
+      <div class="defdesc">JPG or PNG preferred. Aim for 2000px wide minimum for featured images (larger is welcome).</div>
+    </div>
+    <div class="defrow">
+      <div class="defterm">Credits</div>
+      <div class="defdesc">Name / artist handle, optional website or social link, and preferred credit line.</div>
+    </div>
+    <div class="defrow">
+      <div class="defterm">Statement</div>
+      <div class="defdesc">150–300 words describing the work, subject, and intent. Sources optional but appreciated.</div>
+    </div>
+    <div class="defrow">
+      <div class="defterm">Rights</div>
+      <div class="defdesc">You must own the work and grant permission for Ocean Liner Curator to display it (non-exclusive).</div>
+    </div>
+  </div>
+
+  <h2>Review & Publication</h2>
+  <ul>
+    <li>Submissions are reviewed periodically. If selected, I’ll contact you using the email provided.</li>
+    <li>I may request minor edits (cropping, caption clarity, or historical labeling) before publication.</li>
+    <li>Publication is editorially curated. I may decline submissions without detailed feedback.</li>
+  </ul>
+
+  <h2>Rights & Permission Summary</h2>
+  <p>
+    If your submission is selected, you grant Ocean Liner Curator a <strong>non-exclusive</strong> permission to publish and display your work
+    on this site and (optionally) promote it on Ocean Liner Curator social channels, with full credit. You retain ownership and may publish
+    the work elsewhere.
+  </p>
+
+  <div class="note">
+    <strong>Removal:</strong> Ocean Liner Curator reserves the right to remove published submissions (for example: rights concerns, misattribution,
+    or policy changes). If you need a piece removed, contact me and I’ll handle it promptly.
+  </div>
+
+  <h2>Submit Your Artwork</h2>
+
+  <div class="form-wrap" role="region" aria-label="Artwork submission form">
+    <!--
+      Implementation options:
+      - Static form service: Formspree / Netlify Forms / Cloudflare Turnstile + Worker endpoint
+      - Custom endpoint: set action="/api/submit-art" method="POST"
+      - File uploads often require a service or backend; you can swap the file inputs for a link field until ready.
+    -->
+    <form action="https://formspree.io/f/mzdznkal" method="POST"><input type="hidden" name="_subject" value="Ocean Liner Curator — Art Submission">
+<input type="hidden" name="_redirect" value="https://oceanliners.net/submissions/thanks">
+<input type="text" name="_gotcha" style="display:none">
+      <div class="form-grid">
+        <div class="field">
+          <label for="artistName">Artist name (for credit)</label>
+          <input id="artistName" name="artistName" type="text" autocomplete="name" placeholder="Your name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field full">
+          <label for="titleWork">Title of work</label>
+          <input id="titleWork" name="titleWork" type="text" placeholder="Optional, but helpful">
+          <p class="help">If untitled, leave blank.</p>
+        </div>
+
+        <div class="field">
+          <label for="shipSubject">Ship / subject</label>
+          <input id="shipSubject" name="shipSubject" type="text" placeholder="e.g., RMS Mauretania, SS United States, “North Atlantic crossing”">
+        </div>
+
+        <div class="field">
+          <label for="yearMade">Year created</label>
+          <input id="yearMade" name="yearMade" type="text" inputmode="numeric" placeholder="e.g., 2026">
+        </div>
+
+        <div class="field full">
+          <label for="medium">Medium</label>
+          <input id="medium" name="medium" type="text" placeholder="e.g., watercolor, digital illustration, linocut, graphite">
+        </div>
+
+        <div class="field full">
+          <label for="links">Links to image files</label>
+          <input id="links" name="links" type="url" placeholder="Paste a direct link (Google Drive / Dropbox / your site)">
+          <p class="help">Tip: If you’re not hosting files yet, use a share link and ensure access is set appropriately.</p>
+        </div>
+
+        <!-- File input included for future use. Many static hosts won’t accept file uploads without a service. -->
+        <div class="field full" aria-hidden="true" style="display:none;">
+          <label for="files">Upload files</label>
+          <input id="files" name="files" type="file" multiple accept="image/png,image/jpeg">
+        </div>
+
+        <div class="field full">
+          <label for="statement">Artist statement (150–300 words)</label>
+          <textarea id="statement" name="statement" placeholder="What is the piece? What inspired it? If relevant, what references or sources did you use?" required></textarea>
+        </div>
+
+        <div class="field full">
+          <label for="aiDisclosure">AI / tool disclosure</label>
+          <textarea id="aiDisclosure" name="aiDisclosure" placeholder="If you used AI tools or heavy photo reference, note what was used and how (or write “None”)." required></textarea>
+        </div>
+
+        <div class="field full">
+          <label for="creditLine">Preferred credit line</label>
+          <input id="creditLine" name="creditLine" type="text" placeholder="e.g., “Artwork © 2026 Jane Doe” or “Jane Doe (@handle)”">
+        </div>
+
+        <div class="field full">
+          <label for="webLink">Website / social link (optional)</label>
+          <input id="webLink" name="webLink" type="url" placeholder="https://">
+        </div>
+
+        <div class="field full">
+          <div class="checkline">
+            <input id="originality" name="originality" type="checkbox" required>
+            <label for="originality" style="margin:0; font-weight:600;">
+              I confirm this is my original work and I hold the rights needed to submit it.
+            </label>
+          </div>
+
+          <div class="checkline">
+            <input id="permission" name="permission" type="checkbox" required>
+            <label for="permission" style="margin:0; font-weight:600;">
+              If selected, I grant Ocean Liner Curator non-exclusive permission to publish the work online with credit.
+            </label>
+          </div>
+
+          <div class="checkline">
+            <input id="policy" name="policy" type="checkbox" required>
+            <label for="policy" style="margin:0; font-weight:600;">
+              I understand submissions are reviewed case-by-case and publication is not guaranteed.
+            </label>
+          </div>
+
+          <p class="help">
+            If you have questions before submitting, use the <a class="mini-link" href="/contact">contact page</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="button" type="submit">Submit for review</button>
+        <a class="button secondary" href="/community/art">View selected artwork</a>
+      </div>
+    </form>
+  </div>
+
+  <h2>After You Submit</h2>
+  <ul>
+    <li>If selected, you’ll receive an email with the proposed title, credit line, and any requested clarifications.</li>
+    <li>Published entries may include a short curator’s note (for context and historical labeling).</li>
+    <li>For transparency, published pages may label work as <em>interpretive</em> when not intended as reconstruction.</li>
+  </ul>
+
+  <footer>
+    <a class="button secondary" href="/">Home</a>
+
+    <img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true" />
+
+    <p class="copyright">
+      © <span id="year"></span> Ocean Liner Curator.
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script>
+  document.querySelectorAll(".nav-dropdown").forEach((d) => {
+    d.addEventListener("toggle", () => {
+      if (!d.open) return;
+      document.querySelectorAll(".nav-dropdown").forEach((other) => {
+        if (other !== d) other.open = false;
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

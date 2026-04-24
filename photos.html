@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Photos — Ocean Liner Curator</title>
+  <meta name="description" content="Curated photographic references from Ocean Liner Curator — ships, interiors, objects, and historical documentation." />
+  <link rel="canonical" href="https://www.oceanliners.net/photos/" />
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   Ocean Liner Curator — theme.css (extracted from index.html)
+   House style: dark museum plate, lattice glow, curator nav
+   ========================================================= */
+
+/* ---------- Base Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { text-rendering: optimizeLegibility; }
+h1, h2, h3 { letter-spacing: -0.02em; }
+
+/* ---------- Theme Tokens (from your :root) ---------- */
+:root{
+--measure: 42rem;
+  --bg:#0a1110;
+  --panel:rgba(15,27,25,0.78);
+  --text:#e6dfcf;
+  --muted:#b6ae9c;
+  --accent:#bfa46a;
+  --border:rgba(191,164,106,0.28);
+  --shadow:rgba(0,0,0,0.60);
+  --link:rgba(209,187,134,0.95);
+  --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+}
+
+/* ---------- Body / Page Background ---------- */
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size:17px;
+  line-height:1.55;
+  letter-spacing:-0.01em;
+  color:var(--text);
+
+  background:
+    radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+    radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+
+  padding: 0 0 2.25rem;
+}
+
+/* =========================================================
+   TOP MENU BAR (alignment + stacking)
+   ========================================================= */
+.site-header{
+  width:100%;
+  margin:0;
+  padding:0.75rem 0;
+  background:rgba(15,27,25,0.55);
+  border-bottom:1px solid rgba(191,164,106,0.22);
+  position:relative;
+  z-index:5000;
+}
+
+.header-inner{
+  width:min(780px, calc(100% - 1.5rem));
+  margin:0 auto;
+  padding:0 2.75rem; /* match container padding */
+}
+
+.site-nav{
+  display:flex;
+  align-items:center;
+  gap:1.1rem;
+  flex-wrap:wrap;
+  font-size:0.95rem;
+}
+
+.nav-link{
+  color:var(--link);
+  text-decoration:none;
+  border-bottom:1px solid rgba(191,164,106,0.35);
+  padding-bottom:2px;
+}
+.nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+/* Dropdown */
+.nav-dropdown{ position:relative; }
+
+.nav-dropdown summary{
+  cursor:pointer;
+  list-style:none;
+  display:inline-block; /* iOS click target */
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+.dropdown-panel{
+  position:absolute;
+  top:1.8rem;
+  left:0;
+  min-width:240px;
+  background:rgba(15,27,25,0.95);
+  border:1px solid rgba(191,164,106,0.28);
+  border-radius:12px;
+  padding:0.75rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.35rem;
+  z-index:6000;
+  box-shadow:0 18px 45px rgba(0,0,0,0.45);
+}
+
+.dropdown-panel a{
+  color:var(--link);
+  text-decoration:none;
+  border-bottom:1px solid rgba(191,164,106,0.25);
+  padding:0.2rem 0;
+}
+.dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+/* =========================================================
+   MAIN CONTAINER (card + lattice + glow + compass/grain)
+   ========================================================= */
+.container{
+  width:min(780px, calc(100% - 1.5rem));
+  margin:1.1rem auto 0;
+  text-align:center;
+
+  background-color:rgba(15,27,25,0.78);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:92px 92px;
+  background-position:center 38%;
+  background-repeat:repeat;
+
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:3.5rem 2.75rem;
+
+  box-shadow:
+    0 26px 70px rgba(0,0,0,0.60),
+    0 0 0 1px rgba(191,164,106,0.08),
+    0 0 80px rgba(191,164,106,0.06);
+
+  position:relative;
+  overflow:hidden;
+  z-index:1;
+}
+
+/* Soft inner lighting */
+.container::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+    radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+  pointer-events:none;
+  z-index:0;
+}
+
+
+
+.container > *{ position:relative; z-index:1; }
+
+/* =========================================================
+   Typography + Rules
+   ========================================================= */
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-variant: small-caps;
+  text-align: center;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
+.rule{
+  width:140px;
+  height:2px;
+  margin:1.1rem auto 1.7rem auto;
+  background:linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity:0.85;
+}
+
+p{
+  margin:0 auto 1.55rem auto;
+  max-width:var(--measure);
+  font-size:1.06rem;
+  line-height:1.72;
+}
+
+/* Tip block */
+.tip{
+  margin:0 0 2.2rem 0;
+  font-size:0.96rem;
+  color:var(--muted);
+}
+
+/* ✅ Intro alignment fix: centered block, left-aligned copy */
+.intro{
+  max-width:var(--measure);
+  margin:0 auto 2.2rem auto;
+  text-align:center;
+}
+
+/* About link blocks */
+.about-link{
+  margin-top:1.1rem;
+  font-size:0.9rem;
+  color:var(--muted);
+}
+.about-link a{
+  color:rgba(209,187,134,0.9);
+  text-decoration:none;
+  border-bottom:1px solid rgba(191,164,106,0.35);
+}
+.about-link a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+
+/* Footer */
+footer{
+  margin-top:2.8rem;
+  font-size:0.82rem;
+  line-height:1.6;
+  color:rgba(230,223,207,0.72);
+  text-align:center !important;
+}
+.footer-stack{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+.copyright{
+  width:100%;
+  max-width:none;
+  margin:1.2rem 0 0;
+  font-size:0.72rem;
+  opacity:0.55;
+  text-align:center;
+}
+
+/* Buttons */
+.button.secondary{
+  background:transparent;
+  color:var(--text);
+  border:1px solid rgba(191,164,106,0.45);
+  padding:0.9rem 1.35rem;
+  border-radius:10px;
+  text-decoration:none;
+  transition: transform 0.15s ease, background 0.15s ease;
+  display:inline-block;
+}
+.button.secondary:hover{
+  background:rgba(191,164,106,0.10);
+  transform:translateY(-1px);
+}
+
+/* ✅ Home button + flags spacing fix (single rhythm system) */
+.actions{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:0.85rem;            /* controls distance between Home button and flags */
+  margin-top:2.0rem;      /* separation from grid */
+  margin-bottom:0.35rem;  /* separation from footer */
+}
+
+.flags-footer{
+  display:block;
+  width:108px;
+  height:auto;
+  margin:0;               /* spacing now controlled by .actions gap */
+  opacity:0.42;
+  filter:saturate(0.85) contrast(0.95) brightness(0.95);
+  pointer-events:none;
+}
+
+/* Responsive */
+@media (max-width:520px){
+  .site-header{ padding:0.65rem 0; }
+  .header-inner{
+    width:calc(100% - 1.5rem);
+    padding:0 1.25rem;
+  }
+  .container{
+    width:calc(100% - 1.5rem);
+    margin:1.05rem auto 0;
+    padding:1.9rem 1.25rem;
+    border-radius:14px;
+    background-size:54px 54px;
+  }
+  h1{ font-size:1.9rem; letter-spacing:0.4px; margin-bottom:0.6rem; }
+  .rule{ width:110px; margin:0.9rem auto 1.25rem auto; }
+  p{ font-size:0.98rem; line-height:1.65; margin-bottom:1.15rem; }
+  .tip{ font-size:0.9rem; margin-bottom:1.55rem; }
+  .intro{ margin-bottom:1.55rem; }
+  footer{ margin-top:1.8rem; font-size:0.78rem; }
+  .flags-footer{ width:92px; opacity:0.35; }
+  .actions{ margin-top:1.55rem; gap:0.75rem; }
+}
+
+/* === Logo mount (match /scope exactly) === */
+.logo-mount{
+  width:108px;
+  height:108px;
+  margin:0 auto 0.95rem auto;
+  padding:10px;
+  border-radius:16px;
+  border:1px solid rgba(191,164,106,0.55);
+  background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+  box-shadow:0 14px 34px rgba(0,0,0,0.42);
+  position:relative;
+}
+
+.logo-mount::after{
+  content:"";
+  position:absolute;
+  inset:7px;
+  border-radius:12px;
+  border:1px solid rgba(191,164,106,0.22);
+  pointer-events:none;
+}
+
+.logo{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:contain;
+  border-radius:12px;
+  background:rgba(230,223,207,0.06);
+}
+
+@media (max-width:520px){
+  .logo-mount{
+    width:88px;
+    height:88px;
+    padding:8px;
+    margin-bottom:0.75rem;
+    border-radius:14px;
+  }
+  .logo-mount::after{ inset:6px; border-radius:11px; }
+  .logo{ border-radius:11px; }
+}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ scroll-behavior:auto !important; }
+}
+
+/* =========================================================
+   PHOTOS PAGE
+   ========================================================= */
+.photo-grid{
+  margin-top: 2rem;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  text-align:left;
+}
+
+.photo-card{
+  padding: 0.9rem;
+  border: 1px solid rgba(191,164,106,0.22);
+  border-radius: 14px;
+  background: rgba(0,0,0,0.12);
+  backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+}
+
+.photo-card img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius: 10px;
+  border: 1px solid rgba(191,164,106,0.14);
+  cursor: zoom-in;
+}
+
+.photo-card figcaption{
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.caption-note{
+  display:block;
+  margin-top: 0.45rem;
+  color: rgba(230,223,207,0.70);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 980px){
+  .photo-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px){
+  .photo-grid{ grid-template-columns: 1fr; }
+}
+
+/* =========================================================
+   LIGHTBOX
+   ========================================================= */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(10,17,16,0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9000;
+  padding: 2.25rem 1.25rem;
+}
+.lightbox.active{ display:flex; }
+
+.lightbox-figure{
+  margin:0;
+  max-width: 1100px;
+  width: 100%;
+  text-align: left;
+}
+
+.lightbox-img{
+  width: 100%;
+  height: auto;
+  max-height: 82vh;
+  object-fit: contain;
+  display: block;
+  border: 1px solid rgba(191,164,106,0.28);
+  border-radius: 16px;
+  box-shadow: 0 30px 90px rgba(0,0,0,0.80);
+  background: rgba(0,0,0,0.18);
+}
+
+.lightbox-caption{
+  margin-top: 0.9rem;
+  color: rgba(230,223,207,0.78);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  max-width: 74ch;
+}
+
+.lightbox-close{
+  position: fixed;
+  top: 1.1rem;
+  right: 1.1rem;
+  color: var(--text);
+  font-size: 1.35rem;
+  cursor: pointer;
+  border: 1px solid rgba(191,164,106,0.30);
+  padding: .45rem .65rem;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.35);
+  -webkit-tap-highlight-color: transparent;
+}
+.lightbox-close:hover{
+  background: rgba(191,164,106,0.10);
+}
+
+@media (min-width: 1300px){
+  .container{
+    width: min(1080px, calc(100% - 3rem));
+  }
+}
+
+@media (min-width: 1100px){
+  .container p{
+    max-width: 72ch;
+  }
+}
+
+</style>
+ <link rel="stylesheet" href="/assets/nav.css">
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+<!-- FIX: open the container main (you were closing later without opening it) -->
+<main class="container">
+
+
+  <div class="logo-mount">
+  <img class="logo" src="/logo.png" alt="Ocean Liner Curator" loading="eager" />
+</div>
+
+<h1>Photographic References</h1>
+<div class="rule" aria-hidden="true"></div>
+
+  <!-- ✅ intro text alignment corrected -->
+  <p class="tip intro">
+    A curated selection of photographs used for historical reference, comparative study, and visual context.
+    Images are presented as documentation—not decoration.
+  </p>
+
+  <section class="photo-grid" aria-label="Photo gallery">
+
+    <figure class="photo-card">
+      <img
+        src="/photos/photo1.jpg"
+        data-full="/photos/photo1.jpg"
+        data-caption="TRANS-ATLANTIC LINER HITS HEAVY SEAS — Press photo, c.1931"
+        alt="TRANS-ATLANTIC LINER HITS HEAVY SEAS"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>TRANS-ATLANTIC LINER HITS HEAVY SEAS</strong><br>
+        The trans-atlantic liner Aquitania arrived in New York city November 12 approximately 28 hours late because of heavy seas encountered on the westward crossing. This photograph, taken from the liner's deck shows one of the huge waves as it rolled toward the ship.<br>
+        <span class="caption-note">Press photo, c.1931</span>
+      </figcaption>
+    </figure>
+
+    <figure class="photo-card">
+      <img
+        src="/photos/photo2.jpg"
+        data-full="/photos/photo2.jpg"
+        data-caption="WORLD'S LARGEST CABIN MOTOR SHIP — Press photo, c.1930"
+        alt="WORLD'S LARGEST CABIN MOTOR SHIP WHICH WILL SAIL FROM LIVERPOOL TO BOSTON ON MAIDEN VOYAGE"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>WORLD'S LARGEST CABIN MOTOR SHIP WHICH WILL SAIL FROM LIVERPOOL TO BOSTON ON MAIDEN VOYAGE</strong><br>
+        New York....View of the S.S. Britannic, largest cabin motor vessel in the world as it will leave Liverpool on June 28th to make its maiden voyage to Boston, it has a tonnage of 27,000 and can accomodate 1,500 passengers.<br>
+        <span class="caption-note">Press photo, c.1930</span>
+      </figcaption>
+    </figure>
+
+    <figure class="photo-card">
+      <img
+        src="/photos/photo3.jpg"
+        data-full="/photos/photo3.jpg"
+        data-caption="AS THE NEWEST OCEAN GREYHOUND REACHED ITS GOAL — Press photo, c.1930"
+        alt="AS THE NEWEST OCEAN GREYHOUND REACHED ITS GOAL"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>AS THE NEWEST OCEAN GREYHOUND REACHED ITS GOAL</strong><br>
+        New York....With fitting dignity, the handsome new S.S. Britannic of White Star Line draws proudly up to the New World to complete her first ocean crossing under the guidance of capt. F.F. Summers. The new twin screw 27,000 ton liner is Britain's largest motor vessel and the world's largest cabin liner. She was built in Belfast.<br>
+        <span class="caption-note">Press photo, c.1930</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/photo7.jpg"
+        data-full="/photos/photo7.jpg"
+        data-caption="NEW ADDITION TO TRANS-ATLANTIC TRAVEL — Press photo, c.1930"
+        alt="NEW ADDITION TO TRANS-ATLANTIC TRAVEL"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>NEW ADDITION TO TRANS-ATLANTIC TRAVEL</strong><br>
+        The motor ship Britannic, the largest vessel of its type build in England, and the world's largest cabin liner, photographed when it appeared in New York harbor, July 7, on its maiden trip from Europe. It has 27,000 tons displacement, is 680 feet long and has a beam of 82 feet. She has accommodations for 1,500 passengers, divided equally between cabin, tourist and third class.<br>
+        <span class="caption-note">Press photo, c.1930</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/photo4.jpg"
+        data-full="/photos/photo4.jpg"
+        data-caption="Aerial view - Statue of Liberty"
+        alt="Aerial view - Statue of Liberty"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>Aerial view - Statue of Liberty</strong><br>
+        Aerial view - Statue of Liberty with unknown ocean liner in the background.<br>
+        <span class="caption-note">Press photo, c.1920-1930</span>
+      </figcaption>
+    </figure>
+
+<figure class="photo-card">
+      <img
+        src="/photos/photo5.jpg"
+        data-full="/photos/photo5.jpg"
+        data-caption="AND THE OCEAN WAVES ROLLED HIGH - Press photo, c.1926"
+        alt="AND THE OCEAN WAVES ROLLED HIGH"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>AND THE OCEAN WAVES ROLLED HIGH</strong><br>
+        New York - that might have been the expressions of the passengers on the SS Leviathan, giant trans-atlantic steamer as it plowed through one of the roughest and biggest sea storms ever encountered on its trip here.
+The Leviathan arrived today.<br>
+        <span class="caption-note">Press photo, c.1926</span>
+      </figcaption>
+    </figure>
+
+<figure class="photo-card">
+      <img
+        src="/photos/photo6.jpg"
+        data-full="/photos/photo6.jpg"
+        data-caption="RMS Mauretania II — Press photo, c.1937"
+        alt="RMS Mauretania II"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>RMS Mauretania II</strong><br>
+        An artist's rendition of the new RMS Mauretania.<br>
+        <span class="caption-note">Press photo, c.1937</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/photo8.jpg"
+        data-full="/photos/photo8.jpg"
+        data-caption="BUCKING HEAVY SEAS IN MID-ATLANTIC — Press photo, c.1926"
+        alt="BUCKING HEAVY SEAS IN MID-ATLANTIC"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>BUCKING HEAVY SEAS IN MID-ATLANTIC</strong><br>
+        New York....Here is a picture made aboard the S.S. Berengaria as the ship plowed through heavy seas. The Berengaria arrived in New York more than two days late, due to storms.<br>
+        <span class="caption-note">Press photo, c.1926</span>
+      </figcaption>
+    </figure>
+
+<figure class="photo-card">
+      <img
+        src="/photos/mv-britannic/mvb1.JPG"
+        data-full="/photos/mv-britannic/mvb1.JPG"
+        data-caption="MV Britannic Interior - 1st Class Entrance"
+        alt="MV Britannic Interiors"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>MV Britannic Interior - 1st Class Entrance</strong><br>
+        MV Britannic Interior - 1st Class Entrance from an early pre-maiden voyage brochure booklet.<br>
+        <span class="caption-note">Illustration, c.1930</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/mv-britannic/mvb2.JPG"
+        data-full="/photos/mv-britannic/mvb2.JPG"
+        data-caption="MV Britannic Interior - 1st Class Drawing Room"
+        alt="MV Britannic Interiors"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>MV Britannic Interior - 1st Class Drawing Room</strong><br>
+        MV Britannic Interior - 1st Class Drawing Room from an early pre-maiden voyage brochure booklet.<br>
+        <span class="caption-note">Illustration, c.1930</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/mv-britannic/mvb3.JPG"
+        data-full="/photos/mv-britannic/mvb3.JPG"
+        data-caption="MV Britannic Interior - 1st Class Long Gallery"
+        alt="MV Britannic Interiors"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>MV Britannic Interior - 1st Class Long Gallery</strong><br>
+        MV Britannic Interior - 1st Class Long Gallery from an early pre-maiden voyage brochure booklet.<br>
+        <span class="caption-note">Illustration, c.1930</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/mv-britannic/mvb4.JPG"
+        data-full="/photos/mv-britannic/mvb4.JPG"
+        data-caption="MV Britannic Interior - 1st Class Dining Room"
+        alt="MV Britannic Interiors"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>MV Britannic Interior - 1st Class Dining Room</strong><br>
+        MV Britannic Interior - 1st Class Dining Room from an early pre-maiden voyage brochure booklet.<br>
+        <span class="caption-note">Illustration, c.1930</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/hw-postcard.jpg"
+        data-full="/photos/hw-postcard.jpg"
+        data-caption="Postcard of the Harland and Wolff great gantry - Olympic and Titanic"
+        alt="Postcard of the Harland and Wolff great gantry - Olympic and Titanic"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>Postcard of the Harland and Wolff great gantry - Olympic and Titanic</strong><br>
+        Postcard showing Harland and Wolff's great gantry where both the Olympic and Titanic are under construction.<br>
+        <span class="caption-note">Postcard, c.1910s</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/boxer.jpg"
+        data-full="/photos/boxer.jpg"
+        data-caption="Boxer the cat of the SS Canopic"
+        alt="Boxer the cat of the SS Canopic"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>Boxer the cat of the SS Canopic</strong><br>
+        Postcard of Boxer, the ship's cat, aboard the White Star Line ship SS Canopic<br>
+        <span class="caption-note">Postcard, c.1905</span>
+      </figcaption>
+    </figure>
+
+<figure class="photo-card">
+      <img
+        src="/photos/photo9.jpg"
+        data-full="/photos/photo9.jpg"
+        data-caption="SS United States - Photo, c.1955"
+        alt="SS United States"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>SS United States</strong><br>
+        SS United States at sea.<br>
+        <span class="caption-note">Photo, c.1955</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/photo10.JPG"
+        data-full="/photos/photo10.JPG"
+        data-caption="Bow of the SS Leviathan - Photo, c.1920s"
+        alt="Bow of the SS Leviathan"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>Bow of the SS Leviathan</strong><br>
+        Bow of the SS Leviathan.<br>
+        <span class="caption-note">Photo, c.1920s</span>
+      </figcaption>
+    </figure>
+
+<figure class="photo-card">
+      <img
+        src="/photos/photo11.jpg"
+        data-full="/photos/photo11.jpg"
+        data-caption="New United States Liner - Photo, c.1937"
+        alt="New United States Liner"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>New United States Liner</strong><br>
+        Washington D.C. — Here is a drawing of a new liner, sister ship of the Manhattan and Washington of the United States Lines which will cost $15,750,000. It will be constructed as a successor to the liner Leviathan, soon to be scrapped. The new ship will be the largest ever built in an American shipyard and will give the American merchant marine the finest and safest ship afloat. It will be slightly larger than the
+Washington and the Manhattan, with a length of 723 feet and a breadth of 92 feet. It will have a depth to promenade deck of 75 feet and a load-draft displacement of about 34,000 tons.Its speed will be about twenty-two knots an hour; and there will be accommodations for about 1,200 passengers and a crew of about 630.<br>
+        <span class="caption-note">Photo, c.1937</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/photo12.jpg"
+        data-full="/photos/photo12.jpg"
+        data-caption="OCEAN LINER REACHES FRANCE AFTER BATTLING GALES - Photo, c.1930"
+        alt="OCEAN LINER REACHES FRANCE AFTER BATTLING GALES c.1930"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>OCEAN LINER REACHES FRANCE AFTER BATTLING GALES c.1930</strong><br>
+        Le Havre, France...the S.S. Tuscania arriving here from New York in a rough sea following a battle with fierce equinoxial gales which swept the east Atlantic. Several french harbors reported that the largest liners were having difficulty in making their way into port.<br>
+        <span class="caption-note">Photo, c.1930</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/photo13.jpg"
+        data-full="/photos/photo13.jpg"
+        data-caption="DRYDOCKING THE WORLDS LARGEST LINER"
+        alt="DRYDOCKING THE WORLDS LARGEST LINER"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>DRYDOCKING THE WORLDS LARGEST LINER</strong><br>
+        London...above is pictured the giant S.S.Majestic being raised on the floating dry dock by means of powerful pumps. The ship is at Southampton being repaired. The raising of the ship took six hours to complete and was done under the direction of Commander Harvey.<br>
+        <span class="caption-note">Press photo, c.1925</span>
+      </figcaption>
+    </figure>
+    
+    <figure class="photo-card">
+      <img
+        src="/photos/photo14.jpg"
+        data-full="/photos/photo14.jpg"
+        data-caption="SS Majestic at sea"
+        alt="SS Majestic at sea"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>Air view of SS Majestic at sea</strong><br>
+        Air view of the SS Majestic - White Star Line - World's largest ship.<br>
+        <span class="caption-note">Press photo, c.1920s</span>
+      </figcaption>
+    </figure>
+
+<figure class="photo-card">
+      <img
+        src="/photos/ssus-pan.png"
+        data-full="/photos/ssus-pan.png"
+        data-caption="SS United States and the Manhattan skyline"
+        alt=""SS United States and the Manhattan skyline"
+        loading="lazy"
+      >
+      <figcaption>
+        <strong>SS United States and the Manhattan skyline</strong><br>
+        More than six miles of New York City's waterfront are covered in this picture, taken with a new type camera devised by Luis Azarraga, a Philippine born commercial photographer. The picture was taken from a helicopter hovering over the Hudson river. It shows the SS Untied States and takes in the Manhattan skyline from 138th St. to 12th St.<br>
+        <span class="caption-note">Press photo, c.1953</span>
+      </figcaption>
+    </figure>
+
+  </section>
+
+  <!-- ✅ spacing system for home button + flags -->
+  <div class="actions">
+    <a class="button secondary" href="/">Home</a>
+    </div>
+    
+     <div class="footer-stack">
+    <img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true" />
+ 
+
+  <footer>
+    <p class="copyright">
+        © <span id="year"></span> Ocean Liner Curator.
+      </p>
+    </footer></div>
+  </main>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+
+  <figure class="lightbox-figure">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
+<script>
+(function(){
+  const lightbox = document.getElementById('lightbox');
+  const imgEl = document.getElementById('lightboxImg');
+  const capEl = document.getElementById('lightboxCaption');
+  const closeBtn = document.getElementById('lightboxClose');
+
+  function openLightbox(src, alt, caption){
+    imgEl.src = src;
+    imgEl.alt = alt || "";
+    capEl.textContent = caption || "";
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function closeLightbox(){
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    imgEl.src = "";
+    capEl.textContent = "";
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.photo-card img').forEach(img => {
+    img.addEventListener('click', () => {
+      const full = img.getAttribute('data-full') || img.src;
+      const alt = img.getAttribute('alt') || "";
+      const caption = img.getAttribute('data-caption') || "";
+      openLightbox(full, alt, caption);
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+  });
+})();
+</script>
+
+ <script src="/assets/header.js" defer></script>
+       <script src="/assets/nav.js" defer></script>
+
+<!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+
+</body>
+</html>
