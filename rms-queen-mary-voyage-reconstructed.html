@@ -260,6 +260,40 @@
   -webkit-backdrop-filter:blur(2px);
 }
 
+a.button{
+      display:inline-block;
+      padding:0.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:0.4px;
+      margin-bottom:1.10rem;
+      margin-left:0.5rem;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+    }
+
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
 @media (min-width:1300px){
   .hero{
     width:min(1080px, calc(100% - 3rem));
@@ -1476,6 +1510,7 @@
 
       <footer>
         <a class="button secondary" href="/">Home</a>
+        <a class="button secondary" href="/rms-queen-mary">Queen Mary Hub</a>
         <img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true" /><br>
         <p class="copyright">© <span id="year"></span> Ocean Liner Curator.</p>
       </footer>
