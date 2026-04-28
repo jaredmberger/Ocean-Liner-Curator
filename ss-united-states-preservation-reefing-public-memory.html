@@ -698,6 +698,97 @@
         grid-template-columns:1fr;
       }
     }
+    
+    @media (max-width: 900px){
+
+  .matrix-table{
+    table-layout: auto;
+  }
+
+  .matrix-table th,
+  .matrix-table td{
+    width: auto !important;
+  }
+
+}
+
+@media (max-width: 760px){
+
+  .matrix-table-wrap{
+    padding:0;
+    border:none;
+    background:transparent;
+    box-shadow:none;
+  }
+
+  .matrix-table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0;
+  }
+
+  .matrix-table thead{
+    display:none;
+  }
+
+  .matrix-table,
+  .matrix-table tbody,
+  .matrix-table tr,
+  .matrix-table td{
+    display:block;
+    width:100%;
+  }
+
+  .matrix-table tr{
+    margin:0 0 1rem 0;
+    padding:1.1rem 1.1rem;
+    border:1px solid rgba(191,164,106,0.22);
+    border-radius:14px;
+    background:rgba(0,0,0,0.18);
+    box-shadow:0 10px 24px rgba(0,0,0,0.32);
+  }
+
+  .matrix-table td{
+    border:none;
+    padding:0.45rem 0 0.8rem 0;
+    font-size:0.96rem;
+  }
+
+  .matrix-table td:last-child{
+    padding-bottom:0;
+    margin-top:0.35rem;
+    padding-top:0.75rem;
+    border-top:1px solid rgba(191,164,106,0.14);
+  }
+
+  .matrix-table td::before{
+    display:block;
+    margin-bottom:0.25rem;
+    font-size:0.7rem;
+    letter-spacing:0.11em;
+    text-transform:uppercase;
+    color:rgba(191,164,106,0.9);
+  }
+
+  .matrix-table td:nth-child(1)::before{ content:"Question"; }
+  .matrix-table td:nth-child(2)::before{ content:"Why it matters"; }
+  .matrix-table td:nth-child(3)::before{ content:"What the record supports"; }
+  .matrix-table td:nth-child(4)::before{ content:"Best verdict"; }
+
+  /* 👇 KEY FIX */
+  .matrix-table td:nth-child(1){
+    font-size:1.05rem;
+    line-height:1.45;
+  }
+
+  .matrix-table td:nth-child(1) strong{
+    display:block;
+    font-size:1.05rem;
+    line-height:1.45;
+  }
+
+}
+    
   </style>
   <link rel="stylesheet" href="/assets/nav.css">
 </head>
