@@ -949,14 +949,34 @@
     
     .cutaway-grid{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:1rem;
+  grid-template-columns:1fr;
+  gap:1.4rem;
+  max-width:100%;
 }
 
 .cutaway-card{
-  border:1px solid rgba(191,164,106,0.22);
-  border-radius:16px;
-  overflow:hidden;
+  max-width:100%;
+}
+
+/* Make images feel more “hero-like” */
+.cutaway-open{
+  aspect-ratio: 16 / 8;
+}
+
+/* Optional: give them a bit more presence */
+.cutaway-section{
+  max-width: 860px; /* slightly wider than text measure */
+  margin:2rem auto 2.2rem;
+}
+
+/* Subtle visual separation between the two */
+.cutaway-card + .cutaway-card{
+  margin-top:0.4rem;
+}
+
+.cutaway-card{
+  padding:0.35rem;
+  background:rgba(191,164,106,0.03);
 }
 
 .cutaway-open{
