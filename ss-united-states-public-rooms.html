@@ -946,6 +946,81 @@
         grid-template-columns:1fr;
       }
     }
+    
+    .cutaway-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1rem;
+}
+
+.cutaway-card{
+  border:1px solid rgba(191,164,106,0.22);
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.cutaway-open{
+  display:block;
+  width:100%;
+  border:0;
+  cursor:zoom-in;
+  background:#0c1312;
+}
+
+.cutaway-open img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* Modal */
+.cutaway-modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.cutaway-modal.is-open{
+  display:flex;
+}
+
+.cutaway-modal-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.85);
+}
+
+.cutaway-modal-panel{
+  position:relative;
+  z-index:1;
+  max-width:95vw;
+  max-height:95vh;
+  background:#0a1110;
+  border:1px solid rgba(191,164,106,0.3);
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.cutaway-modal-media img{
+  width:100%;
+  height:auto;
+}
+
+.cutaway-close{
+  position:absolute;
+  top:10px;
+  right:10px;
+  font-size:1.5rem;
+  background:none;
+  border:1px solid rgba(191,164,106,0.4);
+  border-radius:50%;
+  color:#fff;
+  cursor:pointer;
+}
+    
   </style>
 
   <link rel="stylesheet" href="/assets/nav.css">
@@ -977,6 +1052,57 @@
   <div class="note">
     <strong>⁂ Guiding principle:</strong> This page treats the ship’s public rooms as a class-structured interior system. First class carried the strongest publicity glamour, but cabin class and tourist class are essential to understanding how the ship actually worked as a commercial passenger liner.
   </div>
+  
+  <section class="cutaway-section">
+
+  <h2>SS United States — Structural Cutaway Views</h2>
+
+  <p class="cutaway-intro">
+    These cutaway illustrations help visualize the ship as a complete system rather than isolated rooms.
+  </p>
+
+  <div class="cutaway-grid">
+
+    <figure class="cutaway-card">
+      <button class="cutaway-open"
+        data-full="/images/ss-united-states-cutaway-forward.PNG"
+        data-caption="Forward section — passenger accommodations and public rooms.">
+        <img src="/images/ss-united-states-cutaway-forward.PNG" alt="">
+      </button>
+      <figcaption>
+        <strong>Forward Section</strong>
+        <span>Passenger accommodations and public rooms.</span>
+      </figcaption>
+    </figure>
+
+    <figure class="cutaway-card">
+      <button class="cutaway-open"
+        data-full="/images/ss-united-states-cutaway-aft.PNG"
+        data-caption="Aft section — machinery and service areas.">
+        <img src="/images/ss-united-states-cutaway-aft.PNG" alt="">
+      </button>
+      <figcaption>
+        <strong>Aft Section</strong>
+        <span>Engineering and service spaces.</span>
+      </figcaption>
+    </figure>
+
+  </div>
+
+</section>
+
+<!-- Modal -->
+<div class="cutaway-modal" id="cutawayModal" aria-hidden="true">
+  <div class="cutaway-modal-backdrop" data-close-cutaway></div>
+
+  <div class="cutaway-modal-panel">
+    <button class="cutaway-close" data-close-cutaway>×</button>
+    <div class="cutaway-modal-media">
+      <img id="cutawayModalImage" src="" alt="">
+    </div>
+    <p id="cutawayModalCaption"></p>
+  </div>
+</div>
 
   <div class="split-grid" aria-label="Quick facts">
     <div class="mini-card">
@@ -1714,6 +1840,35 @@
 <script>
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script>
+(function(){
+  const modal = document.getElementById('cutawayModal');
+  const modalImage = document.getElementById('cutawayModalImage');
+  const modalCaption = document.getElementById('cutawayModalCaption');
+
+  document.querySelectorAll('.cutaway-open').forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalImage.src = btn.dataset.full;
+      modalCaption.textContent = btn.dataset.caption || '';
+      modal.classList.add('is-open');
+    });
+  });
+
+  document.querySelectorAll('[data-close-cutaway]').forEach(el => {
+    el.addEventListener('click', () => {
+      modal.classList.remove('is-open');
+      modalImage.src = '';
+    });
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      modal.classList.remove('is-open');
+    }
+  });
+})();
 </script>
 
 <script src="/assets/header.js" defer></script>
