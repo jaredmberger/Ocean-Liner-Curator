@@ -938,6 +938,59 @@ a.button{
         line-height:1.62;
       }
     }
+    
+    @media (max-width:760px){
+  .matrix,
+  .matrix thead,
+  .matrix tbody,
+  .matrix th,
+  .matrix td,
+  .matrix tr{
+    display:block;
+  }
+
+  .matrix{
+    border:0;
+    background:transparent;
+    overflow:visible;
+  }
+
+  .matrix thead{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    white-space:nowrap;
+  }
+
+  .matrix tr{
+    margin:0 0 0.85rem;
+    border:1px solid rgba(191,164,106,0.18);
+    border-radius:16px;
+    background:rgba(0,0,0,0.12);
+    overflow:hidden;
+  }
+
+  .matrix td{
+    min-width:0;
+    padding:0.75rem 0.85rem;
+    border-bottom:1px solid rgba(191,164,106,0.12);
+    font-size:0.95rem;
+    line-height:1.5;
+  }
+
+  .matrix td:last-child{
+    border-bottom:none;
+  }
+
+  .matrix td:first-child{
+    color:#eadbb6;
+    font-family:"Libre Baskerville", serif;
+    background:rgba(191,164,106,0.07);
+  }
+}
+    
   </style>
 </head>
 <body>
@@ -1509,7 +1562,7 @@ a.button{
                 <p>The central landing page for ship guide access, timelines, interiors, speed record context, and related research paths.</p>
               </article>
               <article class="path-card">
-                <h3><a href="/ss-united-states-speed-record-blue-riband/">Speed Record &amp; Blue Riband</a></h3>
+                <h3><a href="/collections/ss-united-states-speed-record-blue-riband/">Speed Record &amp; Blue Riband</a></h3>
                 <p>Explore why speed mattered, how the ship’s reputation formed, and why her maiden-voyage record became central to her identity.</p>
               </article>
             </div>
