@@ -913,6 +913,17 @@ h1,
     max-width:23rem;
   }
 }
+
+.section-emblem{
+      display:block;
+      width:clamp(60px, 6.8vw, 84px);
+      height:auto;
+      margin:.1rem auto .1rem;
+      object-fit:contain;
+      filter:
+        drop-shadow(0 4px 10px rgba(0,0,0,0.35))
+        drop-shadow(0 0 10px rgba(191,164,106,0.16));
+    }
     
   </style>
 </head>
@@ -1134,7 +1145,12 @@ h1,
 
         <section aria-labelledby="why-this-page">
           <div class="section-head">
-            <div class="section-kicker">Why this hub?<br><span class="section-star">★</span></div>
+            <div class="section-kicker">Why this hub?<img
+                class="section-emblem"
+                src="/engraved-wsl-flag.png"
+                alt=""
+                aria-hidden="true"
+              ></div>
             <h2 id="why-this-page">A better Titanic starting point</h2>
             <p>
               Titanic is often encountered as a flattened public-memory subject. This page is meant to restore structure: event sequence, company context, and object-based interpretation in one place.
