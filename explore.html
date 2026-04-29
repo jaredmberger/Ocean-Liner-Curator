@@ -1328,6 +1328,52 @@
       content:"»";
     }
     
+     .hero-emblem{
+  display:flex;
+  justify-content:center;
+  margin:2rem 0 2.2rem;
+}
+
+.hero-emblem img{
+  width:clamp(140px, 18vw, 220px); /* ← controls size */
+  height:auto;
+  display:block;
+  filter:
+    drop-shadow(0 6px 18px rgba(0,0,0,0.6))
+    drop-shadow(0 0 12px rgba(191,164,106,0.25));
+}
+
+
+
+.hero-emblem-bg{
+mix-blend-mode:soft-light;
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+
+  width:clamp(260px, 30vw, 380px);
+  aspect-ratio:1 / 1;
+  background:url('/engraved-logo-brass.PNG') center/contain no-repeat;
+
+  /* 🔧 KEY ADJUSTMENTS */
+  top:55px;              /* move UP behind title */
+  left:35px;              /* nudge slightly right */
+
+  opacity:0.21;          /* slightly more subtle */
+  filter:blur(0.2px);
+}
+
+
+@media (max-width: 920px){
+  .hero-emblem-bg{
+    width:min(72vw, 320px);
+    top:92px;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0.09;
+    filter:blur(0.2px);
+  }
+    
     </style>
 </head>
 
@@ -1341,7 +1387,7 @@
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
         
-       
+       <div class="hero-emblem-bg" aria-hidden="true"></div>
         
 
 
