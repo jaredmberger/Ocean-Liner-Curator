@@ -2188,6 +2188,42 @@ footer .orientation-context .note{
   aspect-ratio: 805 / 387;
 }
 
+.ref-dropdown{
+  margin: 0;
+}
+
+.ref-dropdown summary{
+  cursor: pointer;
+  list-style: none;
+}
+
+.ref-dropdown summary::-webkit-details-marker{
+  display: none;
+}
+
+.ref-dropdown-summary::after{
+  content: "▾";
+  font-size: 0.85rem;
+  transition: transform 160ms ease;
+}
+
+.ref-dropdown[open] .ref-dropdown-summary::after{
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.ref-dropdown-menu{
+  display: grid;
+  gap: 0.25rem;
+  margin: 0.25rem 0 0.45rem 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid rgba(191,164,106,0.22);
+}
+
+.ref-subpill{
+  font-size: 0.84rem;
+  background: rgba(10,17,16,0.10);
+  border-color: rgba(191,164,106,0.12);
+}
 
 </style>
   
@@ -2408,10 +2444,16 @@ footer .orientation-context .note{
         <a class="pill" href="/ships/ships">Ship Archive</a>
         <a class="pill" href="/timelines-history">Timelines & History</a>
         <a class="pill" href="/collections">Research Collections</a>
-        <a class="pill" href="/titanic">RMS Titanic Hub</a>
-        <a class="pill" href="/ss-leviathan">SS Leviathan Hub</a>
-        <a class="pill" href="/rms-queen-mary">RMS Queen Mary Hub</a>
-        <a class="pill" href="/ss-united-states">SS United States Hub</a>
+        <details class="ref-dropdown">
+  <summary class="pill ref-dropdown-summary">Ship Hubs</summary>
+
+  <div class="ref-dropdown-menu">
+    <a class="pill ref-subpill" href="/titanic">RMS Titanic Hub</a>
+    <a class="pill ref-subpill" href="/ss-leviathan">SS Leviathan Hub</a>
+    <a class="pill ref-subpill" href="/rms-queen-mary">RMS Queen Mary Hub</a>
+    <a class="pill ref-subpill" href="/ss-united-states">SS United States Hub</a>
+  </div>
+</details>
         <a class="pill" href="/designs-interiors">Designs & Interiors</a>
         <a class="pill" href="/collectors-notebook">Collector’s Notebook</a>
         <a class="pill" href="/photos">Photos</a>
