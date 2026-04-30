@@ -2765,6 +2765,80 @@ font-weight:600;
   text-align:center;
 align-items:center !important;
 }
+
+/* =========================
+   Color-coded Ship Hub Cards
+   ========================= */
+
+.hub-card-titanic{ --hub-accent:#8e7ac8; }
+.hub-card-leviathan{ --hub-accent:#8f4b3f; }
+.hub-card-queen-mary{ --hub-accent:#bfa46a; }
+.hub-card-united-states{ --hub-accent:#5f7898; }
+
+.ship-hub-card{
+  position:relative;
+  overflow:hidden;
+  border-color:color-mix(in srgb, var(--hub-accent) 46%, rgba(191,164,106,.22)) !important;
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--hub-accent) 18%, transparent), transparent 32%),
+    linear-gradient(180deg, rgba(191,164,106,.06), rgba(191,164,106,.02)) !important;
+}
+
+.ship-hub-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:4px;
+  background:linear-gradient(90deg, transparent, var(--hub-accent), transparent);
+  opacity:.85;
+  pointer-events:none;
+}
+
+.ship-hub-card::after{
+  content:attr(data-ship-mark);
+  position:absolute;
+  right:.85rem;
+  top:.55rem;
+  bottom:auto;
+  font-family:"Libre Baskerville", serif;
+  font-size:2.8rem;
+  line-height:1;
+  color:color-mix(in srgb, var(--hub-accent) 20%, transparent);
+  pointer-events:none;
+  transform:none;
+}
+
+.ship-hub-card:hover{
+  border-color:color-mix(in srgb, var(--hub-accent) 72%, rgba(191,164,106,.28)) !important;
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--hub-accent) 24%, transparent), transparent 34%),
+    linear-gradient(180deg, rgba(191,164,106,.075), rgba(191,164,106,.025)) !important;
+}
+
+.ship-hub-card .hub-card-top,
+.ship-hub-card .hub-card-desc{
+  position:relative;
+  z-index:1;
+}
+
+.ship-hub-card .hub-card-top::before{
+  color:var(--hub-accent);
+  border-color:color-mix(in srgb, var(--hub-accent) 55%, rgba(191,164,106,.28));
+}
+
+.ship-hub-card .hub-card-title{
+  color:#f0e5cd;
+  text-decoration-color:color-mix(in srgb, var(--hub-accent) 55%, rgba(191,164,106,.35));
+}
+
+.ship-hub-card:hover .hub-card-title{
+  text-decoration-color:var(--hub-accent);
+}
+
+.ship-hub-card .hub-card-meta{
+  color:color-mix(in srgb, var(--hub-accent) 72%, rgba(230,223,207,.72));
+}
+
 </style>
  
 </head>
@@ -2878,7 +2952,7 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
       </div>
 
       <div class="archive-feature-block">
-        <a class="hub-card" href="/titanic">
+        <a class="hub-card ship-hub-card hub-card-titanic" href="/titanic" data-ship-mark="T">
           <div class="hub-card-top">
             <span class="hub-card-title">RMS Titanic Hub</span>
             <span class="hub-card-meta">Content Hub</span>
@@ -2890,7 +2964,7 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
       </div>
 
       <div class="archive-feature-block">
-        <a class="hub-card" href="/ss-leviathan">
+        <a class="hub-card ship-hub-card hub-card-leviathan" href="/ss-leviathan" data-ship-mark="L">
           <div class="hub-card-top">
             <span class="hub-card-title">SS Leviathan Hub</span>
             <span class="hub-card-meta">Content Hub</span>
@@ -2902,7 +2976,7 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
       </div>
 
 <div class="archive-feature-block">
-        <a class="hub-card" href="/rms-queen-mary">
+        <a class="hub-card ship-hub-card hub-card-queen-mary" href="/rms-queen-mary" data-ship-mark="QM">
           <div class="hub-card-top">
             <span class="hub-card-title">RMS Queen Mary Hub</span>
             <span class="hub-card-meta">Content Hub</span>
@@ -2912,6 +2986,20 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
           </p>
         </a>
       </div>
+
+<div class="archive-feature-block">
+        <a class="hub-card ship-hub-card hub-card-united-states" href="/ss-united-states" data-ship-mark="US">
+          <div class="hub-card-top">
+            <span class="hub-card-title">SS United States Hub</span>
+            <span class="hub-card-meta">Content Hub</span>
+          </div>
+          <p class="hub-card-desc">
+  Explore the fastest ocean liner ever built: from design philosophy and record-breaking Atlantic crossings to interiors, service life, preservation efforts, and the evidence behind her enduring legacy.
+</p>
+        </a>
+      </div>
+
+
 
     </div>
   </div>
@@ -5894,7 +5982,7 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
 
       
 
-      <img class="flags-footer" src="/afric-flag.PNG" alt="" aria-hidden="true" />
+      <img class="flags-footer" src="/afric-flag-edit.png" alt="" aria-hidden="true" />
 
       <p class="copyright">
         © <span id="year"></span> Ocean Liner Curator.<br>Researched and curated by Jared Berger<br>
