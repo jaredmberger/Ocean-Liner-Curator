@@ -485,7 +485,105 @@
       }
       .section-permalink{ right:-.1rem; }
     }
-  </style>
+    
+ 
+  .hub-card-titanic{ --hub-accent:#8e7ac8; }
+  .hub-card-leviathan{ --hub-accent:#8f4b3f; }
+  .hub-card-queen-mary{ --hub-accent:#bfa46a; }
+  .hub-card-united-states{ --hub-accent:#5f7898; }
+
+  .ship-hub-card{
+    position:relative;
+    overflow:hidden;
+    border-color:color-mix(in srgb, var(--hub-accent) 46%, rgba(191,164,106,.22));
+    background:
+      radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--hub-accent) 18%, transparent), transparent 32%),
+      linear-gradient(180deg, rgba(191,164,106,.06), rgba(191,164,106,.02));
+  }
+
+  .ship-hub-card::before{
+    content:"";
+    position:absolute;
+    inset:0 0 auto;
+    height:4px;
+    background:linear-gradient(90deg, transparent, var(--hub-accent), transparent);
+    opacity:.85;
+  }
+
+  .ship-hub-card::after{
+    content:attr(data-ship-mark);
+    position:absolute;
+    right:.85rem;
+    top:.55rem;
+    font-family:"Libre Baskerville", serif;
+    font-size:2.8rem;
+    line-height:1;
+    color:color-mix(in srgb, var(--hub-accent) 20%, transparent);
+    pointer-events:none;
+  }
+
+  .ship-hub-kicker{
+    display:block;
+    margin:0 0 .35rem;
+    color:var(--hub-accent);
+    font-size:.72rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+
+  .ship-hub-card h3{
+    position:relative;
+    z-index:1;
+  }
+
+  .ship-hub-card p,
+  .ship-hub-card .quick-links{
+    position:relative;
+    z-index:1;
+  }
+
+  .ship-hub-card .quick-links a{
+    border-color:color-mix(in srgb, var(--hub-accent) 48%, rgba(191,164,106,.22));
+    color:#f0e5cd;
+    background:color-mix(in srgb, var(--hub-accent) 12%, rgba(191,164,106,.06));
+  }
+  
+  
+  .quick-links a.hub-link{
+    position:relative;
+    border-color:rgba(191,164,106,.22);
+    background:rgba(191,164,106,.06);
+    transition:all .15s ease;
+  }
+
+  .quick-links a.hub-link::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:3px;
+    border-radius:999px 0 0 999px;
+    background:var(--hub-accent, var(--accent));
+    opacity:.9;
+  }
+
+  .quick-links a.hub-link:hover{
+    transform:translateY(-1px);
+    border-color:var(--hub-accent, var(--accent));
+    background:color-mix(in srgb, var(--hub-accent, var(--accent)) 14%, rgba(191,164,106,.06));
+  }
+
+  /* Individual hub accents */
+  .hub-titanic{ --hub-accent:#8e7ac8; }
+  .hub-leviathan{ --hub-accent:#8f4b3f; }
+  .hub-queen-mary{ --hub-accent:#bfa46a; }
+  .hub-united-states{ --hub-accent:#5f7898; }
+
+  
+  
+</style>
    <link rel="stylesheet" href="/assets/nav.css">
 </head>
 <body>
@@ -617,6 +715,80 @@
         </div>
       </section>
 
+
+
+<section class="note" id="ship-hubs">
+  <div class="ornament-line"><span class="ornament-star">★</span></div>
+  <h2 class="section-title">
+    Using the Ship Hubs
+    <a class="section-permalink" href="#ship-hubs" aria-label="Permalink to Using the Ship Hubs"></a>
+  </h2>
+
+  <p class="lede">
+    The Ship Hubs are designed as deeper entry points into the archive. Each one gathers a major vessel’s guides,
+    timelines, research paths, and interpretive material into a single, connected space—allowing you to move beyond
+    a single page into a broader historical framework.
+  </p>
+
+  <div class="grid-2" style="margin-top:1rem;">
+
+    <div class="mini-card ship-hub-card hub-card-titanic" data-ship-mark="T">
+      <span class="ship-hub-kicker">Evidence & Memory</span>
+      <h3>RMS Titanic</h3>
+      <p>
+        A hub centered on evidence, memory, and interpretation. Use it to move between the ship’s documented history,
+        survivor testimony, artifact survival, and the formation of one of the most persistent historical narratives.
+      </p>
+      <div class="quick-links" style="justify-content:flex-start;">
+        <a href="/titanic">Open Hub</a>
+      </div>
+    </div>
+
+    <div class="mini-card ship-hub-card hub-card-leviathan" data-ship-mark="L">
+      <span class="ship-hub-kicker">Transformation & Identity</span>
+      <h3>SS Leviathan</h3>
+      <p>
+        A hub focused on transformation and identity. Follow Leviathan from her origins as <em>Vaterland</em> through
+        American service, altered interiors, and the challenges of operating one of the largest liners of her era.
+      </p>
+      <div class="quick-links" style="justify-content:flex-start;">
+        <a href="/ss-leviathan">Open Hub</a>
+      </div>
+    </div>
+
+    <div class="mini-card ship-hub-card hub-card-queen-mary" data-ship-mark="Q">
+      <span class="ship-hub-kicker">Speed & Prestige</span>
+      <h3>RMS Queen Mary</h3>
+      <p>
+        A hub built around speed, prestige, and continuity. Explore her role in transatlantic competition, wartime
+        service, postwar travel, and the long afterlife of a preserved liner in public memory.
+      </p>
+      <div class="quick-links" style="justify-content:flex-start;">
+        <a href="/rms-queen-mary">Open Hub</a>
+      </div>
+    </div>
+
+    <div class="mini-card ship-hub-card hub-card-united-states" data-ship-mark="US">
+      <span class="ship-hub-kicker">Engineering & Preservation</span>
+      <h3>SS United States</h3>
+      <p>
+        A hub focused on engineering, records, and preservation debate. Use it to trace design philosophy, Cold War
+        context, Atlantic service, and the complex questions surrounding the ship’s later life and future.
+      </p>
+      <div class="quick-links" style="justify-content:flex-start;">
+        <a href="/ss-united-states">Open Hub</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="callout">
+    A Ship Hub is not a replacement for a guide—it is a way of moving outward. Start with a familiar vessel,
+    then use the hub to follow connected material: timelines, collections, interiors, and interpretive pages
+    that place the ship within a larger historical system.
+  </div>
+</section>
+
       <section class="note" id="ways-to-explore">
         <div class="ornament-line"><span class="ornament-star">★</span></div>
         <h2 class="section-title">
@@ -729,23 +901,36 @@
         </ul>
       </section>
 
-      <section class="note" id="quick-links">
-        <div class="ornament-line"><span class="ornament-star">★</span></div>
-        <h2 class="section-title">
-          Quick Links
-          <a class="section-permalink" href="#quick-links" aria-label="Permalink to Quick Links"></a>
-        </h2>
-        <p class="lede">A direct route into the main parts of the archive.</p>
+    <section class="note" id="quick-links">
+  <div class="ornament-line"><span class="ornament-star">★</span></div>
+  <h2 class="section-title">
+    Quick Links
+    <a class="section-permalink" href="#quick-links" aria-label="Permalink to Quick Links"></a>
+  </h2>
+  <p class="lede">A direct route into the main parts of the archive.</p>
 
-        <div class="quick-links">
-          <a href="/ships/ships#guide">Ship Guides</a>
-          <a href="/ships/timeline-1900-1960">Timeline</a>
-          <a href="/ships/ocean-liner-evolution-map">Evolution Map</a>
-          <a href="/definitive-guide">Research Standards</a>
-          <a href="/about">About the Project</a>
-          <a href="/scope">Project Scope</a>
-        </div>
-      </section>
+  <div class="quick-links">
+    <a href="/ships/ships#guide">Ship Guides</a>
+    <a href="/ships/timeline-1900-1960">Timeline</a>
+    <a href="/ships/ocean-liner-evolution-map">Evolution Map</a>
+    <a href="/collections">Collections</a>
+    <a href="/definitive-guide">Research Standards</a>
+    <a href="/about">About the Project</a>
+    <a href="/scope">Project Scope</a>
+  </div>
+
+  <!-- Ship Hubs row -->
+  <p style="text-align:center; margin:.85rem 0 .25rem; font-size:.85rem; color:var(--muted); letter-spacing:.08em;">
+  Ship Hubs
+</p>
+
+<div class="quick-links" style="margin-top:.35rem;">
+  <a class="hub-link hub-titanic" href="/titanic">Titanic Hub</a>
+  <a class="hub-link hub-leviathan" href="/ss-leviathan">Leviathan Hub</a>
+  <a class="hub-link hub-queen-mary" href="/rms-queen-mary">Queen Mary Hub</a>
+  <a class="hub-link hub-united-states" href="/ss-united-states">United States Hub</a>
+</div>
+</section>
 
       <section class="note" id="final-note">
         <div class="ornament-line"><span class="ornament-star">★</span></div>
