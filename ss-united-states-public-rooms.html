@@ -1049,6 +1049,84 @@
   color:#fff;
   cursor:pointer;
 }
+
+.cabin-selection-section{
+  max-width:860px;
+  margin:2rem auto 2.2rem;
+}
+
+.cabin-selection-card{
+  margin:1rem auto 1.4rem;
+  border:1px solid rgba(191,164,106,0.22);
+  border-radius:18px;
+  overflow:hidden;
+  background:rgba(0,0,0,0.14);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+  box-shadow:0 10px 24px rgba(0,0,0,0.32);
+}
+
+.cabin-selection-card img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.cabin-selection-card figcaption{
+  padding:0.95rem 1rem 1rem;
+  border-top:1px solid rgba(191,164,106,0.18);
+  color:rgba(230,223,207,0.84);
+  line-height:1.55;
+}
+
+.cabin-selection-card figcaption strong{
+  display:block;
+  color:var(--text);
+  margin-bottom:0.2rem;
+}
+
+.cabin-selection-card figcaption span{
+  display:block;
+}
+
+.cabin-notes-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:0.9rem;
+  margin:1rem auto 1.4rem;
+}
+
+.cabin-note{
+  border:1px solid rgba(191,164,106,0.22);
+  border-radius:14px;
+  padding:1rem;
+  background:rgba(0,0,0,0.14);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+  box-shadow:0 10px 24px rgba(0,0,0,0.32);
+}
+
+.cabin-note span{
+  display:block;
+  margin-bottom:0.35rem;
+  font-size:0.76rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:rgba(191,164,106,0.92);
+}
+
+.cabin-note p{
+  margin:0;
+  font-size:0.96rem;
+  line-height:1.62;
+  color:rgba(230,223,207,0.88);
+}
+
+@media (max-width:860px){
+  .cabin-notes-grid{
+    grid-template-columns:1fr;
+  }
+}
     
   </style>
 
@@ -1138,6 +1216,54 @@
 
   </div>
 
+</section>
+
+<section class="cabin-selection-section" id="passenger-cabins">
+  <h2>Selection of Passenger Cabins</h2>
+
+  <p>
+    SS United States’ passenger accommodations reflected the same three-class structure as her public rooms. First class cabins offered the greatest space, finish, and privacy; cabin class provided comfortable mid-tier rooms; and tourist class emphasized efficient, practical Atlantic passage. Seen together, these layouts show the ship as a complete passenger system rather than a first-class showpiece alone.
+  </p>
+
+  <figure class="cabin-selection-card">
+    <img
+      src="/ss-united-states-passenger-cabin-selection.jpg"
+      alt="Illustrated selection of passenger cabins aboard SS United States, including first class, cabin class, and tourist class staterooms"
+    >
+    <figcaption>
+      <strong>Passenger cabin arrangements aboard SS United States.</strong>
+      <span>
+        A selection of first class staterooms and suite accommodations, alongside cabin class and tourist class examples.
+      </span>
+    </figcaption>
+  </figure>
+
+  <div class="cabin-notes-grid">
+    <div class="cabin-note">
+      <span>First class</span>
+      <p>
+        First class accommodations ranged from compact private staterooms to larger suites, often with more generous seating, dressing space, private facilities, and a stronger sense of decorative finish.
+      </p>
+    </div>
+
+    <div class="cabin-note">
+      <span>Cabin class</span>
+      <p>
+        Cabin class rooms balanced comfort and economy. They were less expansive than first class spaces, but still offered a respectable, carefully organized setting for middle-tier transatlantic travel.
+      </p>
+    </div>
+
+    <div class="cabin-note">
+      <span>Tourist class</span>
+      <p>
+        Tourist class cabins were more compact and practical, designed around efficient sleeping arrangements, storage, and shared voyage routines rather than luxury display.
+      </p>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Interpretive point:</strong> The cabins help explain the ship’s social geography. Public rooms show where passengers gathered; staterooms show how class, privacy, comfort, and efficiency shaped daily life between those public moments.
+  </div>
 </section>
 
 
