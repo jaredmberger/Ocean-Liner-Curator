@@ -553,11 +553,42 @@
   }
 
   .explore-grid{
-    display:grid;
-    grid-template-columns:repeat(3, minmax(0, 1fr));
-    gap:1rem;
-    margin-top:1rem;
+  display:grid;
+  grid-template-columns:repeat(12, minmax(0, 1fr));
+  gap:1rem;
+}
+
+/* Original 3 cards */
+.explore-grid > .explore-card:not(.ship-hub-card){
+  grid-column:span 4;
+}
+
+/* Ship hub row: 4 taller, skinnier cards */
+.explore-grid > .ship-hub-card{
+  grid-column:span 3;
+  min-height:260px;
+  padding:1.25rem .9rem 1rem;
+}
+
+/* Mobile/tablet stacking */
+@media (max-width:900px){
+  .explore-grid > .explore-card:not(.ship-hub-card),
+  .explore-grid > .ship-hub-card{
+    grid-column:span 6;
   }
+}
+
+@media (max-width:760px){
+  .explore-grid{
+    grid-template-columns:1fr;
+  }
+
+  .explore-grid > .explore-card:not(.ship-hub-card),
+  .explore-grid > .ship-hub-card{
+    grid-column:auto;
+    min-height:auto;
+  }
+}
 
   .explore-card{
     display:block;
@@ -765,6 +796,103 @@
       line-height:1.22;
     }
   }
+  
+  /* =========================
+   Start Here — Ship Hub Cards
+   ========================= */
+
+.explore-grid{
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+}
+
+.hub-card-titanic{ --hub-accent:#8e7ac8; }
+.hub-card-leviathan{ --hub-accent:#8f4b3f; }
+.hub-card-queen-mary{ --hub-accent:#bfa46a; }
+.hub-card-united-states{ --hub-accent:#5f7898; }
+
+.explore-card.ship-hub-card{
+  position:relative;
+  overflow:hidden;
+  border-color:color-mix(in srgb, var(--hub-accent) 46%, rgba(191,164,106,.22));
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--hub-accent) 18%, transparent), transparent 32%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06)),
+    rgba(191,164,106,0.045);
+}
+
+.explore-card.ship-hub-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:4px;
+  background:linear-gradient(90deg, transparent, var(--hub-accent), transparent);
+  opacity:.88;
+  pointer-events:none;
+}
+
+.explore-card.ship-hub-card::after{
+  content:attr(data-ship-mark);
+  position:absolute;
+  right:.85rem;
+  top:.55rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:2.75rem;
+  line-height:1;
+  color:color-mix(in srgb, var(--hub-accent) 20%, transparent);
+  pointer-events:none;
+}
+
+.explore-card.ship-hub-card:hover{
+  border-color:color-mix(in srgb, var(--hub-accent) 72%, rgba(191,164,106,.28));
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--hub-accent) 25%, transparent), transparent 34%),
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.08)),
+    rgba(191,164,106,0.06);
+}
+
+.explore-card.ship-hub-card .explore-eyebrow{
+  color:var(--hub-accent);
+}
+
+.explore-card.ship-hub-card h3,
+.explore-card.ship-hub-card p,
+.explore-card.ship-hub-card .explore-eyebrow{
+  position:relative;
+  z-index:1;
+}
+
+/* Explore grid: 3 cards, then 4 hub cards */
+.explore-grid{
+  display:grid !important;
+  grid-template-columns:repeat(12, minmax(0, 1fr)) !important;
+  gap:1rem;
+}
+
+/* First row: original 3 cards */
+.explore-grid > .explore-card:not(.ship-hub-card){
+  grid-column:span 4;
+}
+
+/* Second row: 4 ship hubs */
+.explore-grid > .ship-hub-card{
+  grid-column:span 3;
+  min-height:260px;
+  padding:1.25rem .9rem 1rem;
+}
+
+/* Stack only on smaller screens */
+@media (max-width:680px){
+  .explore-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .explore-grid > .explore-card:not(.ship-hub-card),
+  .explore-grid > .ship-hub-card{
+    grid-column:auto;
+    min-height:auto;
+  }
+}
+  
 </style>
 
 <link rel="stylesheet" href="/assets/nav.css">
@@ -919,8 +1047,43 @@
               Use timelines and broader historical pages to situate ships, companies, and changes over time.
             </p>
           </a>
-        </div>
+        
+      
+      
+      <a class="explore-card ship-hub-card hub-card-titanic" href="/titanic" data-ship-mark="T">
+  <span class="explore-eyebrow">Ship Hub »</span>
+  <h3>RMS Titanic Hub</h3>
+  <p>
+    Start with the best-known liner, then move through timelines, artifacts, evidence, interiors, memory, and myth.
+  </p>
+</a>
+
+<a class="explore-card ship-hub-card hub-card-leviathan" href="/ss-leviathan" data-ship-mark="L">
+  <span class="explore-eyebrow">Ship Hub »</span>
+  <h3>SS Leviathan Hub</h3>
+  <p>
+    Follow Leviathan from Vaterland origins through American service, transformed interiors, scale, and identity.
+  </p>
+</a>
+
+<a class="explore-card ship-hub-card hub-card-queen-mary" href="/rms-queen-mary" data-ship-mark="QM">
+  <span class="explore-eyebrow">Ship Hub »</span>
+  <h3>RMS Queen Mary Hub</h3>
+  <p>
+    Explore speed, prestige, wartime service, preservation, and the public memory of one of Cunard’s defining liners.
+  </p>
+</a>
+
+<a class="explore-card ship-hub-card hub-card-united-states" href="/ss-united-states" data-ship-mark="US">
+  <span class="explore-eyebrow">Ship Hub »</span>
+  <h3>SS United States Hub</h3>
+  <p>
+    Trace engineering, record-breaking speed, Cold War context, interiors, preservation debate, and legacy.
+  </p>
+</a>
+      </div>
       </section>
+      
 
       <h2>How the Project Is Structured</h2>
       <p>
