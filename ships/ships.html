@@ -1624,7 +1624,15 @@ content-visibility: auto;
   box-shadow:0 12px 28px rgba(0,0,0,0.24);
 }
 
-
+.hub-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:4px;
+  background:linear-gradient(90deg, transparent, rgba(191,164,106,0.22), transparent);
+  opacity:.85;
+  pointer-events:none;
+}
 
 .hub-card-top{
   display:flex;
