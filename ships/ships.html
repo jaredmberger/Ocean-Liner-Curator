@@ -2839,6 +2839,37 @@ align-items:center !important;
   color:color-mix(in srgb, var(--hub-accent) 72%, rgba(230,223,207,.72));
 }
 
+  /* keep your existing ship mark (::after) as-is */
+
+/* Arrow restored */
+.ship-hub-card::after{
+  content:attr(data-ship-mark);
+  position:absolute;
+  right:.85rem;
+  top:.55rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:2.8rem;
+  line-height:1;
+  color:color-mix(in srgb, var(--hub-accent) 20%, transparent);
+  pointer-events:none;
+}
+
+/* NEW arrow layer */
+.ship-hub-card .hub-card-arrow{
+  position:absolute;
+  right:1rem;
+  bottom:0.2rem;
+  font-size:1rem;
+  color:var(--link);
+  font-weight:600;
+  pointer-events:none;
+  transition:transform .15s ease, opacity .15s ease;
+}
+
+.ship-hub-card:hover .hub-card-arrow{
+  transform:translateX(2px);
+}
+  
 </style>
  
 </head>
@@ -2995,7 +3026,7 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
           </div>
           <p class="hub-card-desc">
   Explore the fastest ocean liner ever built: from design philosophy and record-breaking Atlantic crossings to interiors, service life, preservation efforts, and the evidence behind her enduring legacy.
-</p>
+</p><span class="hub-card-arrow">»</span>
         </a>
       </div>
 
