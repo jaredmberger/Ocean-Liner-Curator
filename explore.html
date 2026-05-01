@@ -1373,6 +1373,73 @@ mix-blend-mode:soft-light;
     opacity:0.09;
     filter:blur(0.2px);
   }
+  
+  /* =========================
+   Color-themed Ship Hub Feature Cards
+   ========================= */
+
+.hub-card-titanic{ --hub-accent:#8e7ac8; }
+.hub-card-leviathan{ --hub-accent:#8f4b3f; }
+.hub-card-queen-mary{ --hub-accent:#bfa46a; }
+.hub-card-united-states{ --hub-accent:#5f7898; }
+
+.feature-card.ship-hub-card{
+  position:relative;
+  overflow:hidden;
+  border-color:color-mix(in srgb, var(--hub-accent) 46%, rgba(191,164,106,.22)) !important;
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--hub-accent) 18%, transparent), transparent 32%),
+    linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+    rgba(15,27,25,0.42) !important;
+}
+
+.feature-card.ship-hub-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:4px;
+  background:linear-gradient(90deg, transparent, var(--hub-accent), transparent);
+  opacity:.88;
+  pointer-events:none;
+  z-index:4;
+}
+
+.feature-card.ship-hub-card::after{
+  content:attr(data-ship-mark);
+  position:absolute;
+  right:.85rem;
+  top:.55rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:2.9rem;
+  line-height:1;
+  color:color-mix(in srgb, var(--hub-accent) 20%, transparent);
+  pointer-events:none;
+  z-index:3;
+}
+
+.feature-card.ship-hub-card:hover{
+  border-color:color-mix(in srgb, var(--hub-accent) 72%, rgba(191,164,106,.28)) !important;
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--hub-accent) 25%, transparent), transparent 34%),
+    linear-gradient(120deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.016) 32%, transparent 70%),
+    rgba(15,27,25,0.5) !important;
+}
+
+.feature-card.ship-hub-card .feature-label{
+  color:var(--hub-accent);
+}
+
+.feature-card.ship-hub-card .feature-link{
+  color:color-mix(in srgb, var(--hub-accent) 72%, #ecd8a7);
+}
+
+.feature-card.ship-hub-card .feature-thumb{
+  border-bottom-color:color-mix(in srgb, var(--hub-accent) 45%, rgba(191,164,106,.12));
+}
+
+.feature-card.ship-hub-card .feature-thumb::after{
+  border-color:color-mix(in srgb, var(--hub-accent) 38%, rgba(191,164,106,.16));
+}
     
     </style>
 </head>
@@ -1541,7 +1608,7 @@ mix-blend-mode:soft-light;
           </div>
 
           <div class="feature-grid">
-            <article class="feature-card">
+            <article class="feature-card ship-hub-card hub-card-titanic" data-ship-mark="T">
               <div class="feature-thumb">
                 <img src="/ships/rms-titanic.JPG" alt="Representative ocean liner image for Titanic-related exploration." />
               </div>
@@ -1555,7 +1622,7 @@ mix-blend-mode:soft-light;
               </div>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card ship-hub-card hub-card-queen-mary" data-ship-mark="QM">
               <div class="feature-thumb">
                 <img src="/ships/rms-queen-mary.JPG" alt="Representative ocean liner image for RMS Queen Mary." />
               </div>
@@ -1569,7 +1636,7 @@ mix-blend-mode:soft-light;
               </div>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card ship-hub-card hub-card-united-states" data-ship-mark="US">
               <div class="feature-thumb">
                 <img src="/ships/ss-us.JPG" alt="Representative ocean liner image for SS United States." />
               </div>
@@ -1583,21 +1650,9 @@ mix-blend-mode:soft-light;
               </div>
             </article>
 
-            <article class="feature-card">
-              <div class="feature-thumb">
-                <img src="/ships/ss-normandie.jpg" alt="Representative ocean liner image for SS Normandie." />
-              </div>
-              <div class="feature-body">
-                <div class="feature-label">Featured Ship</div>
-                <h3 class="feature-title">SS Normandie</h3>
-                <p>
-                  A touchstone for interwar French prestige, dramatic styling, and the cultural mythology of the great liner age.
-                </p>
-                <a class="feature-link" href="/ships/ss-normandie.html">Open guide</a>
-              </div>
-            </article>
+           
 
-            <article class="feature-card">
+            <article class="feature-card ship-hub-card hub-card-leviathan" data-ship-mark="L">
               <div class="feature-thumb">
                 <img src="/ships/ss-leviathan.JPG" alt="Representative ocean liner image for SS Leviathan." />
               </div>
