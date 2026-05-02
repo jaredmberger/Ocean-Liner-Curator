@@ -1441,6 +1441,123 @@ mix-blend-mode:soft-light;
 .feature-card.ship-hub-card .feature-thumb::after{
   border-color:color-mix(in srgb, var(--hub-accent) 38%, rgba(191,164,106,.16));
 }
+
+  .essay-list-grid{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:1rem;
+    margin-top:1.2rem;
+  }
+
+  .essay-card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-height:185px;
+    padding:1.15rem 1.1rem;
+    overflow:hidden;
+    border-radius:20px;
+    border:1px solid var(--border);
+    background:
+      radial-gradient(circle at 92% 10%, rgba(191,164,106,0.12), transparent 34%),
+      linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+      rgba(15,27,25,0.42);
+    box-shadow:
+      0 10px 24px rgba(0,0,0,0.32),
+      inset 0 1px 0 rgba(255,255,255,0.03);
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2px);
+    transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  }
+
+  .essay-card::before{
+    content:"";
+    position:absolute;
+    inset:0 0 auto;
+    height:3px;
+    background:linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity:.72;
+    pointer-events:none;
+  }
+
+  .essay-card::after{
+    content:"✦";
+    position:absolute;
+    right:.9rem;
+    top:.72rem;
+    color:rgba(191,164,106,0.32);
+    font-size:1.25rem;
+    line-height:1;
+    pointer-events:none;
+  }
+
+  .essay-card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(191,164,106,0.42);
+    box-shadow:
+      0 16px 32px rgba(0,0,0,0.28),
+      inset 0 1px 0 rgba(255,255,255,0.04);
+  }
+
+  .essay-card-label{
+    margin:0 0 .45rem;
+    color:var(--accent-2);
+    font-size:.72rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+  }
+
+  .essay-card-title{
+    margin:0;
+    padding-right:1.5rem;
+    font-family:"Libre Baskerville", serif;
+    font-size:1.05rem;
+    line-height:1.32;
+    color:#f1ead7;
+  }
+
+  .essay-card p{
+    margin:.6rem 0 0;
+    color:var(--muted);
+    font-size:.94rem;
+    line-height:1.58;
+    flex:1 1 auto;
+  }
+
+  .essay-card-link{
+    display:inline-flex;
+    align-items:center;
+    gap:.45rem;
+    width:max-content;
+    margin-top:.95rem;
+    font-weight:600;
+    color:#ecd8a7;
+  }
+
+  .essay-card-link::after{
+    content:"»";
+    transition:transform .18s ease;
+  }
+
+  .essay-card:hover .essay-card-link::after{
+    transform:translateX(2px);
+  }
+
+  @media (max-width: 920px){
+    .essay-list-grid{
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px){
+    .essay-list-grid{
+      grid-template-columns:1fr;
+    }
+
+    .essay-card{
+      min-height:0;
+    }
+  }
     
     </style>
 </head>
@@ -1705,6 +1822,81 @@ applying the same evidence-first standards used throughout this site.
             </div>
           </div>
         </section>
+        
+        <section aria-labelledby="available-essays">
+  <div class="section-head">
+    <div class="section-kicker">Available essays<br><span class="section-star">★</span></div>
+    <h2 id="available-essays">Read the essay library</h2>
+    <p>
+      A focused set of introductory, research-minded, and collector-minded essays for understanding ocean liners, evaluating evidence, and handling attribution carefully.
+    </p>
+  </div>
+
+  <div class="essay-list-grid">
+    <a class="essay-card" href="/why-ocean-liners-are-so-cool">
+      <span class="essay-card-label">Introductory Essay</span>
+      <h3 class="essay-card-title">Why Ocean Liners Are So Cool</h3>
+      <p>Moving people but doing it with beauty, ceremony, and national pride.</p>
+      <span class="essay-card-link">Read essay</span>
+    </a>
+
+    <a class="essay-card" href="/what-are-ocean-liners">
+      <span class="essay-card-label">Definition Guide</span>
+      <h3 class="essay-card-title">What Are Ocean Liners?</h3>
+      <p>Definitions and context: what ocean liners are, what they are not, and why the distinction matters.</p>
+      <span class="essay-card-link">Read essay</span>
+    </a>
+
+    <a class="essay-card" href="/ocean-liner-collecting-guide">
+      <span class="essay-card-label">Collector Guide</span>
+      <h3 class="essay-card-title">Ocean Liner Collecting: A Curated Guide</h3>
+      <p>The central hub: evidence standards, provenance pitfalls, and responsible attribution workflow.</p>
+      <span class="essay-card-link">Read guide</span>
+    </a>
+
+    <a class="essay-card" href="/ocean-liner-research">
+      <span class="essay-card-label">Research Guide</span>
+      <h3 class="essay-card-title">Ocean Liner Research: Sources, Methods, and Evidence</h3>
+      <p>A practical guide to researching ocean liners with evidence, restraint, and documented sources.</p>
+      <span class="essay-card-link">Read guide</span>
+    </a>
+
+    <a class="essay-card" href="/evidence">
+      <span class="essay-card-label">Evidence Standards</span>
+      <h3 class="essay-card-title">What Counts as Evidence in Ocean Liner Collecting?</h3>
+      <p>How to weigh marks, documentation, photos, and stories without over-claiming.</p>
+      <span class="essay-card-link">Read essay</span>
+    </a>
+
+    <a class="essay-card" href="/identify">
+      <span class="essay-card-label">Identification</span>
+      <h3 class="essay-card-title">How to Identify Authentic Ocean Liner Memorabilia</h3>
+      <p>A step-by-step approach to identifying and evaluating objects in the wild.</p>
+      <span class="essay-card-link">Read essay</span>
+    </a>
+
+    <a class="essay-card" href="/provenance">
+      <span class="essay-card-label">Provenance</span>
+      <h3 class="essay-card-title">Common Problems With “Provenance” in Maritime Collecting</h3>
+      <p>Why provenance often collapses, and how to treat gaps honestly.</p>
+      <span class="essay-card-link">Read essay</span>
+    </a>
+
+    <a class="essay-card" href="/attribution">
+      <span class="essay-card-label">Attribution</span>
+      <h3 class="essay-card-title">Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed</h3>
+      <p>Why ship-specific claims are hard, and what restraint looks like in practice.</p>
+      <span class="essay-card-link">Read essay</span>
+    </a>
+
+    <a class="essay-card" href="/unknown">
+      <span class="essay-card-label">Responsible Uncertainty</span>
+      <h3 class="essay-card-title">When Evidence Is Limited: Why “Unknown” Is a Responsible Conclusion</h3>
+      <p>Why “unknown” is not a shrug. It is a defensible boundary aligned to the record.</p>
+      <span class="essay-card-link">Read essay</span>
+    </a>
+  </div>
+</section>
 
         <section aria-labelledby="final-step">
           <div class="section-head">
