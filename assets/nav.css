@@ -892,3 +892,123 @@ h1 {
 .site-mark{
   -webkit-text-decoration: none !important;
 }
+
+.entry-links-block{
+  margin:2rem 0 2.5rem;
+}
+
+.entry-links-inner{
+  border:1px solid rgba(191,164,106,0.25);
+  border-radius:26px;
+  padding:clamp(1rem, 3vw, 1.75rem);
+  background:
+    radial-gradient(circle at top left, rgba(191,164,106,0.14), transparent 22rem),
+    linear-gradient(180deg, rgba(18,31,29,0.82), rgba(11,19,18,0.74));
+  backdrop-filter:blur(3px);
+  -webkit-backdrop-filter:blur(3px);
+  box-shadow:0 18px 45px rgba(0,0,0,0.34);
+}
+
+.entry-links-header{
+  max-width:720px;
+  margin-bottom:1.1rem;
+}
+
+.entry-links-eyebrow{
+  display:inline-block;
+  margin-bottom:.35rem;
+  color:#d9c17f;
+  font-family:"Libre Baskerville", Georgia, serif;
+  font-size:.75rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.entry-links-header h2{
+  margin:.2rem 0 .45rem;
+  color:#f4ead2;
+  font-family:"Libre Baskerville", Georgia, serif;
+  font-size:clamp(1.4rem, 3vw, 2rem);
+  letter-spacing:-.02em;
+}
+
+.entry-links-header h2::after{
+  content:"";
+  display:block;
+  width:90px;
+  height:1px;
+  margin:.55rem 0 0;
+  background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+}
+
+.entry-links-intro{
+  margin:0;
+  color:#d8ceb8;
+  font-size:.98rem;
+  line-height:1.5;
+}
+
+.entry-links-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:.8rem;
+  margin-top:.9rem;
+}
+
+.entry-link-card{
+  display:block;
+  min-height:100%;
+  padding:.95rem 1rem;
+  border:1px solid rgba(191,164,106,0.2);
+  border-radius:18px;
+  background:rgba(8,15,14,0.36);
+  text-decoration:none;
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    background .2s ease;
+}
+
+.entry-link-card:hover{
+  border-color:rgba(191,164,106,0.45);
+  background:rgba(191,164,106,0.08);
+  transform:translateY(-2px);
+  text-decoration:none;
+}
+
+.entry-link-meta{
+  display:block;
+  color:#a99d84;
+  font-size:.75rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin-bottom:.25rem;
+}
+
+.entry-link-card b{
+  display:block;
+  color:#f0e4c2;
+  font-family:"Libre Baskerville", Georgia, serif;
+  font-size:1.02rem;
+  line-height:1.25;
+  margin-bottom:.3rem;
+}
+
+.entry-link-desc{
+  display:block;
+  color:#d3c8b1;
+  font-size:.92rem;
+  line-height:1.45;
+}
+
+@media (max-width:900px){
+  .entry-links-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width:560px){
+  .entry-links-grid{
+    grid-template-columns:1fr;
+  }
+}
