@@ -646,49 +646,77 @@ backdrop-filter: blur(1px);
 .button.secondary:hover{
   background:rgba(191,164,106,0.10);
   transform:translateY(-1px);
-}.hero{
+}
+.hero{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1.1rem 0 0;
+  padding: 0;
   position: relative;
-  overflow: hidden;
+}
 
-  width: min(780px, calc(100% - 1.5rem));
-  margin: 1.1rem auto 0;
-
-  min-height: clamp(420px, 55vh, 640px);
+.hero-inner{
+  width: min(1080px, calc(100% - 1.5rem));
+  position: relative;
+  aspect-ratio: 1792 / 1024;
 
   border-radius: 16px;
+  overflow: hidden;
   border: 1px solid rgba(191,164,106,0.22);
+
+  box-shadow:
+    0 26px 70px rgba(0,0,0,0.60),
+    0 0 0 1px rgba(191,164,106,0.08),
+    0 0 80px rgba(191,164,106,0.06);
+
+  background: rgba(15,27,25,0.92);
 }
 
-/* IMAGE = responsive + controllable */
-.hero-img{
-  position: absolute;
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: 75% center; /* KEY: shifts crop */
-
-  z-index: 0;
+.hero-inner::before{
+  content:"";
+  position:absolute;
+  inset:6px;
+  border-radius:12px;
+  border:1px solid rgba(191,164,106,0.14);
+  pointer-events:none;
+  z-index:2;
 }
 
-/* Overlay stays clean */
-.hero-overlay{
+.hero-inner::after{
+  content:"";
   position:absolute;
   inset:0;
+  pointer-events:none;
   z-index:1;
-
   background:
-    linear-gradient(to right,
-      rgba(10,17,16,0.88) 0%,
-      rgba(10,17,16,0.6) 35%,
-      rgba(10,17,16,0.2) 65%,
-      rgba(10,17,16,0.75) 100%),
-    linear-gradient(to bottom,
-      rgba(10,17,16,0.70) 0%,
-      rgba(10,17,16,0.05) 45%,
-      rgba(10,17,16,0.72) 100%);
+    linear-gradient(
+      120deg,
+      rgba(255,255,255,0.045) 0%,
+      rgba(255,255,255,0.018) 28%,
+      transparent 58%
+    );
+}
+
+.hero-img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  position:relative;
+  z-index:0;
+}
+
+@media (max-width:520px){
+  .hero-inner{
+    width: calc(100% - 1.5rem);
+    border-radius:14px;
+  }
+
+  .hero-inner::before{
+    border-radius:10px;
+  }
 }
 
 .container{
@@ -2861,18 +2889,20 @@ align-items:center !important;
 
 <body id="top">
   <div id="site-header"></div>
-
-<div class="hero">
-  <img 
-    src="/ships/ship-archive-hero.jpg" 
-    alt="" 
-    class="hero-img"
-  />
-
-  <div class="hero-overlay"></div>
-
-  <!-- your hero content here -->
-</div>
+<section class="hero ships-archive-hero" aria-label="Ships Archive">
+  <div class="hero-inner">
+    <img
+      class="hero-img"
+      src="/ships/ship-archive-hero.jpg"
+      alt="Ships Archive — SHIPS.GUIDE"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+      width="1797"
+      height="875"
+    />
+  </div>
+</section>
 
   <main class="container">
     <!-- <div class="logo-mount">
