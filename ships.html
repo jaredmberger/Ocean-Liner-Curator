@@ -12,24 +12,23 @@
 <meta name="theme-color" content="#0a1110">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ship Archive — Ocean Liner Curator</title>
- 
+<title>Ship Archive — Ocean Liner Curator</title>
+<meta name="description" content="Browse 200+ ocean liner ship guides spanning 1837–2004, including Cunard, White Star, French Line, and more—curated with evidence-first standards." />
 
-  <link rel="canonical" href="https://oceanliners.net/ships/ships" />
+<link rel="canonical" href="https://oceanliners.net/ships/ships" />
 
-  <!-- Schema (aligned with your site pattern) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://oceanliners.net/ships#webpage",
-    "name": "Ship Guides — Ocean Liner Curator",
-    "url": "https://oceanliners.net/ships",
-    "isPartOf": { "@id": "https://oceanliners.net/#website" },
-    "description": "A curated index of Ocean Liner Curator ship guides—evidence-first references prepared with interpretive restraint.",
-    "inLanguage": "en"
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://oceanliners.net/ships/ships#webpage",
+  "name": "Ship Archive — Ocean Liner Curator",
+  "url": "https://oceanliners.net/ships/ships",
+  "isPartOf": { "@id": "https://oceanliners.net/#website" },
+  "description": "Browse 200+ ocean liner ship guides spanning 1837–2004, including Cunard, White Star, French Line, and more—curated with evidence-first standards.",
+  "inLanguage": "en"
+}
+</script>
 
   <link rel="preload" as="image" href="/ships/luxury-liner-hero.WEBP">
 
@@ -376,6 +375,7 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 10px 26px rgba(0,0,0,.18);
 }
+
 
 
 
@@ -1624,7 +1624,15 @@ content-visibility: auto;
   box-shadow:0 12px 28px rgba(0,0,0,0.24);
 }
 
-
+.hub-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:4px;
+  background:linear-gradient(90deg, transparent, rgba(191,164,106,0.22), transparent);
+  opacity:.85;
+  pointer-events:none;
+}
 
 .hub-card-top{
   display:flex;
@@ -2507,7 +2515,6 @@ font-weight:600;
   gap:0.85rem;
   max-width:var(--olc-stage);
   margin:1.85rem auto;
-}
   align-items:start;
 }
 
@@ -2839,6 +2846,41 @@ align-items:center !important;
   color:color-mix(in srgb, var(--hub-accent) 72%, rgba(230,223,207,.72));
 }
 
+  /* keep your existing ship mark (::after) as-is */
+
+/* Arrow restored */
+.ship-hub-card::after{
+  content:attr(data-ship-mark);
+  position:absolute;
+  right:.85rem;
+  top:.55rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:2.8rem;
+  line-height:1;
+  color:color-mix(in srgb, var(--hub-accent) 20%, transparent);
+  pointer-events:none;
+}
+
+/* NEW arrow layer */
+.ship-hub-card .hub-card-arrow{
+  position:absolute;
+  right:1rem;
+  bottom:0.2rem;
+  font-size:1rem;
+  color:var(--link);
+  font-weight:600;
+  pointer-events:none;
+  transition:transform .15s ease, opacity .15s ease;
+}
+
+.ship-hub-card:hover .hub-card-arrow{
+  transform:translateX(2px);
+}
+  
+.ship-hub-card .hub-card-arrow{
+  color:color-mix(in srgb, var(--hub-accent) 70%, var(--link));
+}
+
 </style>
  
 </head>
@@ -2850,7 +2892,9 @@ align-items:center !important;
    <div class="hero-inner">
     <h1>Ocean Liner Ship Archive</h1>
     <p>
-      A curated index of ship guides, histories and timelines. 
+      <p>
+  Browse more than 200 ocean liner guides, from early Atlantic steamships to the final generation of passenger liners.
+</p>
     </p>
   </div>
 </section>
@@ -2907,9 +2951,8 @@ align-items:center !important;
 </section>
 <br>
     <p>
-      This archive presents a structured list of ocean liners spanning 1837–2004, organized as individual ship guides.
-Browse by name, era, or shipping line to explore major transatlantic liners, immigrant-era vessels, and later passenger ships. Additionally, various timelines of important events, evolution of ship design, and a selection of research collections are available.
-    </p>
+  This archive gathers individual ocean liner guides into a single searchable index. Browse by ship name, year, or shipping line, then move outward into timelines, research collections, and dedicated ship hubs for deeper context.
+</p>
     
 <div class="button-row">
   <a class="button secondary" href="/how-to-use-the-ship-archive">New Here?</a>
@@ -2919,10 +2962,14 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
   <a class="button secondary" href="/">Home</a>
 </div>
     
-    
+    <img class="archive-divider" src="/engraved-laurel.png" alt="">
+<h2 class="archive-heading">Explore by Path</h2>
+<p>
+  Start with a ship guide, browse a broader research collection, follow a timeline, or enter one of the dedicated ship hubs.
+</p>
 <div class="hub-links-grid">
   <div class="archive-feature-wrap">
-    <img class="archive-divider archive-divider--top" src="/engraved-laurel.png" alt="">
+   
 
     <div class="archive-feature-row">
 
@@ -2955,11 +3002,11 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
         <a class="hub-card ship-hub-card hub-card-titanic" href="/titanic" data-ship-mark="T">
           <div class="hub-card-top">
             <span class="hub-card-title">RMS Titanic Hub</span>
-            <span class="hub-card-meta">Content Hub</span>
+            <span class="hub-card-meta">Ship Hub</span>
           </div>
           <p class="hub-card-desc">
             Follow the voyage from departure to rescue, explore the artifacts collection, and read short answers that clarify common Titanic misunderstandings.
-          </p>
+          </p><span class="hub-card-arrow">»</span>
         </a>
       </div>
 
@@ -2967,11 +3014,11 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
         <a class="hub-card ship-hub-card hub-card-leviathan" href="/ss-leviathan" data-ship-mark="L">
           <div class="hub-card-top">
             <span class="hub-card-title">SS Leviathan Hub</span>
-            <span class="hub-card-meta">Content Hub</span>
+            <span class="hub-card-meta">Ship Hub</span>
           </div>
           <p class="hub-card-desc">
             Explore one of the great giant liners of the early twentieth century: from Vaterland origins to American service, interiors, and surviving material culture.
-          </p>
+          </p><span class="hub-card-arrow">»</span>
         </a>
       </div>
 
@@ -2979,11 +3026,11 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
         <a class="hub-card ship-hub-card hub-card-queen-mary" href="/rms-queen-mary" data-ship-mark="QM">
           <div class="hub-card-top">
             <span class="hub-card-title">RMS Queen Mary Hub</span>
-            <span class="hub-card-meta">Content Hub</span>
+            <span class="hub-card-meta">Ship Hub</span>
           </div>
           <p class="hub-card-desc">
             Explore one of the defining liners of the Atlantic age: her speed, wartime service, public image, and the reasons she remains central to how the ocean liner era is remembered today.
-          </p>
+          </p><span class="hub-card-arrow">»</span>
         </a>
       </div>
 
@@ -2991,11 +3038,11 @@ Browse by name, era, or shipping line to explore major transatlantic liners, imm
         <a class="hub-card ship-hub-card hub-card-united-states" href="/ss-united-states" data-ship-mark="US">
           <div class="hub-card-top">
             <span class="hub-card-title">SS United States Hub</span>
-            <span class="hub-card-meta">Content Hub</span>
+            <span class="hub-card-meta">Ship Hub</span>
           </div>
           <p class="hub-card-desc">
   Explore the fastest ocean liner ever built: from design philosophy and record-breaking Atlantic crossings to interiors, service life, preservation efforts, and the evidence behind her enduring legacy.
-</p>
+</p><span class="hub-card-arrow">»</span>
         </a>
       </div>
 
