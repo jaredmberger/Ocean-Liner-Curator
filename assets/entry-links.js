@@ -11,7 +11,14 @@
     title: "What is the difference between an ocean liner and a cruise ship?",
     desc:
       "Purpose, design, routes, and experience—why liners crossed oceans and cruise ships don’t have to.",
-    href: "/ocean-liner-cruise-ship"
+    href: "/ocean-liner-vs-cruise-ship"
+  },
+  {
+    meta: "History · Transition",
+    title: "Why did ocean liners disappear?",
+    desc:
+      "Jet travel, economics, and changing expectations reshaped transatlantic travel.",
+    href: "/why-did-ocean-liners-disappear"
   },
   {
     meta: "Titanic · Artifacts",
