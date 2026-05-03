@@ -979,6 +979,71 @@
     0 0 12px rgba(240,207,88,0.18);
 }
     
+    .hub-research-grid{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.hub-research-group{
+  padding:1.1rem;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:rgba(0,0,0,0.12);
+  box-shadow:0 10px 24px rgba(0,0,0,0.32);
+}
+
+.hub-research-group h3{
+  margin:0 0 .75rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:1.05rem;
+  color:#f1ead7;
+  text-align:center;
+}
+
+.hub-research-list{
+  display:grid;
+  gap:.65rem;
+}
+
+.hub-research-link{
+  display:block;
+  padding:.72rem .75rem;
+  border:1px solid rgba(191,164,106,0.18);
+  border-radius:14px;
+  background:rgba(255,255,255,0.025);
+  color:#ecd8a7;
+  line-height:1.35;
+  font-weight:600;
+}
+
+.hub-research-link span{
+  display:block;
+  margin-top:.18rem;
+  color:var(--muted);
+  font-size:.86rem;
+  font-weight:400;
+}
+
+.hub-research-link:hover{
+  border-color:rgba(191,164,106,0.38);
+  background:rgba(191,164,106,0.07);
+  color:#f1dfb5;
+}
+
+@media (max-width: 920px){
+  .hub-research-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px){
+  .hub-research-grid{
+    grid-template-columns:1fr;
+  }
+}
+    
     </style>
    
 </head>
@@ -1039,7 +1104,7 @@ Each collection groups related ships, events, and systems to provide a broader u
 
           <div class="stats-grid">
             <div class="stat-card">
-              <span class="stat-num">26</span>
+              <span class="stat-num">30+</span>
               <span class="stat-label">Curated collections currently available</span>
             </div>
             <div class="stat-card">
@@ -1357,6 +1422,99 @@ Each collection groups related ships, events, and systems to provide a broader u
 
           </div>
         </section>
+        
+        <section aria-labelledby="ship-hub-research">
+  <div class="section-head">
+    <div class="section-kicker">Ship hub research paths<br><span class="section-star">★</span></div>
+    <h2 id="ship-hub-research">Research-Style Pages from the Major Ship Hubs</h2>
+    <p>
+      Some hub pages function less like single-ship overviews and more like focused research collections: artifact survival, design revision, public memory, myth formation, onboard spaces, and the wider historical meaning of individual liners.
+    </p>
+  </div>
+
+  <div class="hub-research-grid">
+
+    <div class="hub-research-group">
+      <h3>RMS Titanic</h3>
+      <div class="hub-research-list">
+        <a class="hub-research-link" href="/collections/from-olympic-to-titanic-design-revisions-between-sisters.html">
+          From Olympic to Titanic
+          <span>Design revisions between sister ships</span>
+        </a>
+        <a class="hub-research-link" href="/collections/titanic-artifacts-what-survives-and-what-doesnt.html">
+          Titanic Artifacts
+          <span>Material survival, provenance, and loss</span>
+        </a>
+        <a class="hub-research-link" href="/titanic-public-rooms.html">
+          Titanic’s Public Rooms
+          <span>Interiors, memory, and luxury</span>
+        </a>
+        <a class="hub-research-link" href="/titanic-myths-that-persist.html">
+          Titanic Myths That Persist
+          <span>Myth, evidence, and repetition</span>
+        </a>
+        <a class="hub-research-link" href="/titanic-what-the-world-knew.html">
+          What the World Knew
+          <span>April 1912 news, rumor, and confirmation</span>
+        </a>
+        <a class="hub-research-link" href="/titanic-officers-roles-decisions-and-survival.html">
+          Titanic’s Officers
+          <span>Roles, decisions, testimony, and survival</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hub-research-group">
+      <h3>SS Leviathan</h3>
+      <div class="hub-research-list">
+        <a class="hub-research-link" href="/collections/from-leviathan-to-united-states.html">
+          From Leviathan to United States
+          <span>Gibbs, design philosophy, and American ambition</span>
+        </a>
+        <a class="hub-research-link" href="/collections/the-imperator-class-as-a-design-system.html">
+          The Imperator Class as a Design System
+          <span>Scale, prestige, and inherited identity</span>
+        </a>
+        <a class="hub-research-link" href="/was-leviathan-actually-a-great-ship">
+          Was Leviathan Actually a Great Ship?
+          <span>What made Leviathan impressive</span></a>
+      </div>
+    </div>
+
+    <div class="hub-research-group">
+      <h3>RMS Queen Mary</h3>
+      <div class="hub-research-list">
+        <a class="hub-research-link" href="/why-queen-mary-still-matters">
+          Why Queen Mary Still Matters
+          <span>Prestige, memory, and preservation</span>
+        </a>
+        <a class="hub-research-link" href="/queen-mary-speed-prestige">
+          Queen Mary, Speed, and Prestige
+          <span>how Queen Mary came to symbolize more than transport alone</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hub-research-group">
+      <h3>SS United States</h3>
+      <div class="hub-research-list">
+        <a class="hub-research-link" href="/why-ss-united-states-still-matters">
+          Why SS United States Still Matters
+          <span>Speed, national identity, and preservation debate</span>
+        </a>
+        <a class="hub-research-link" href="/collections/ss-united-states-speed-record-blue-riband.html">
+          Speed Record & the Blue Riband
+          <span>The way United States became inseparable from the language of Atlantic records</span>
+        </a>
+        <a class="hub-research-link" href="/ss-united-states-preservation-reefing-public-memory">
+          Preservation, Reefing, and Public Memory
+          <span>Advocacy, artifacts, reefing, and legacy</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
         <section aria-labelledby="how-to-use">
           <div class="section-head">
