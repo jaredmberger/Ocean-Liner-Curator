@@ -6,28 +6,35 @@
       intro:
         "If you’re new to this topic, these quick-entry pages answer the most common questions and lead into deeper material.",
       links: [
-        {
-          meta: "Titanic · Artifacts",
-          title: "What happened to Titanic artifacts?",
-          desc:
-            "What was recovered, what remains at the wreck site, and why preservation is complicated.",
-          href: "/what-happened-to-titanic-artifacts"
-        },
-        {
-          meta: "Titanic · Life aboard",
-          title: "What was it like aboard Titanic?",
-          desc:
-            "Cabins, meals, routines, and how experience differed across classes.",
-          href: "/what-was-it-like-aboard-titanic"
-        },
-        {
-          meta: "SS United States · Design",
-          title: "Why was SS United States so fast?",
-          desc:
-            "Power, weight, and military-influenced engineering behind her record speed.",
-          href: "/why-was-ss-united-states-so-fast"
-        }
-      ]
+  {
+    meta: "Basics · Ships",
+    title: "What is the difference between an ocean liner and a cruise ship?",
+    desc:
+      "Purpose, design, routes, and experience—why liners crossed oceans and cruise ships don’t have to.",
+    href: "/ocean-liner-vs-cruise-ship"
+  },
+  {
+    meta: "Titanic · Artifacts",
+    title: "What happened to Titanic artifacts?",
+    desc:
+      "What was recovered, what remains at the wreck site, and why preservation is complicated.",
+    href: "/what-happened-to-titanic-artifacts"
+  },
+  {
+    meta: "Titanic · Life aboard",
+    title: "What was it like aboard Titanic?",
+    desc:
+      "Cabins, meals, routines, and how experience differed across classes.",
+    href: "/what-was-it-like-aboard-titanic"
+  },
+  {
+    meta: "SS United States · Design",
+    title: "Why was SS United States so fast?",
+    desc:
+      "Power, weight, and military-influenced engineering behind her record speed.",
+    href: "/why-was-ss-united-states-so-fast"
+  }
+]
     },
 
     titanic: {
