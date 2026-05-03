@@ -647,16 +647,13 @@ backdrop-filter: blur(1px);
   background:rgba(191,164,106,0.10);
   transform:translateY(-1px);
 }
-    
-    .hero{
+ .hero{
   position: relative;
   overflow: hidden;
 
-  /* centered "card" sizing */
   width: min(780px, calc(100% - 1.5rem));
   margin: 1.1rem auto 0;
 
-  /* hero sizing */
   min-height: 52vh;
   max-height: 640px;
 
@@ -671,7 +668,20 @@ backdrop-filter: blur(1px);
       rgba(10,17,16,0.70) 0%,
       rgba(10,17,16,0.05) 45%,
       rgba(10,17,16,0.72) 100%),
-    url("/ships/ship-archive-hero.jpg") center/cover no-repeat;
+    url("/ships/ship-archive-hero.jpg") 72% center / cover no-repeat;
+}
+
+@media (max-width: 700px){
+  .hero{
+    min-height: 62vh;
+
+    background:
+      linear-gradient(to bottom,
+        rgba(10,17,16,0.72) 0%,
+        rgba(10,17,16,0.18) 42%,
+        rgba(10,17,16,0.82) 100%),
+      url("/ships/ship-archive-hero.jpg") 82% center / cover no-repeat;
+  }
 }
 
 .hero::after{
