@@ -646,87 +646,49 @@ backdrop-filter: blur(1px);
 .button.secondary:hover{
   background:rgba(191,164,106,0.10);
   transform:translateY(-1px);
-}
- .hero{
+}.hero{
   position: relative;
   overflow: hidden;
 
   width: min(780px, calc(100% - 1.5rem));
   margin: 1.1rem auto 0;
 
-  min-height: 52vh;
-  max-height: 640px;
-
-  display: flex;
-  align-items: flex-end;
+  min-height: clamp(420px, 55vh, 640px);
 
   border-radius: 16px;
   border: 1px solid rgba(191,164,106,0.22);
+}
+
+/* IMAGE = responsive + controllable */
+.hero-img{
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 75% center; /* KEY: shifts crop */
+
+  z-index: 0;
+}
+
+/* Overlay stays clean */
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  z-index:1;
 
   background:
+    linear-gradient(to right,
+      rgba(10,17,16,0.88) 0%,
+      rgba(10,17,16,0.6) 35%,
+      rgba(10,17,16,0.2) 65%,
+      rgba(10,17,16,0.75) 100%),
     linear-gradient(to bottom,
       rgba(10,17,16,0.70) 0%,
       rgba(10,17,16,0.05) 45%,
-      rgba(10,17,16,0.72) 100%),
-    url("/ships/ship-archive-hero.jpg") 72% center / cover no-repeat;
-}
-
-@media (max-width: 700px){
-  .hero{
-    min-height: 62vh;
-
-    background:
-      linear-gradient(to bottom,
-        rgba(10,17,16,0.72) 0%,
-        rgba(10,17,16,0.18) 42%,
-        rgba(10,17,16,0.82) 100%),
-      url("/ships/ship-archive-hero.jpg") 82% center / cover no-repeat;
-  }
-}
-
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  opacity:0.55;
-  background:
-    radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
-    radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
-}
-
-.hero-inner{
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding: 3.2rem 2.2rem 2.1rem;
-}
-
-.hero h1{
-  margin: 0 0 0.55rem;
-  font-family: "Libre Baskerville", serif;
-  font-variant: small-caps;
-  letter-spacing: 0.09em;
-  font-weight: 400;
-  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
-}
-
-.hero p{
-  margin: 0;
-  max-width: 70ch;
-  color: rgba(230,223,207,0.92);
-  font-size: 1.02rem;
-  line-height: 1.65;
-  text-shadow: 0 18px 45px rgba(0,0,0,0.45);
-}
-
-@media (max-width: 600px){
-  .hero{ min-height: 46vh; }
-  .hero-inner{ padding: 2.6rem 1.15rem 1.65rem; }
-}
-
-@media (min-width: 1300px){
-  .hero{ width: min(1080px, calc(100% - 3rem)); }
+      rgba(10,17,16,0.72) 100%);
 }
 
 .container{
@@ -2900,11 +2862,17 @@ align-items:center !important;
 <body id="top">
   <div id="site-header"></div>
 
-<section class="hero" aria-label="Ship page hero">
-   <div class="hero-inner">
-    
-  </div>
-</section>
+<div class="hero">
+  <img 
+    src="/ships/ship-archive-hero.jpg" 
+    alt="" 
+    class="hero-img"
+  />
+
+  <div class="hero-overlay"></div>
+
+  <!-- your hero content here -->
+</div>
 
   <main class="container">
     <!-- <div class="logo-mount">
