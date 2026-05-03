@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>What Happened to Titanic Artifacts? — Ocean Liner Curator</title>
+  <meta name="description" content="A careful, curator-minded answer to what happened to Titanic artifacts: what was recovered, what remains at the wreck site, why preservation is complicated, and how evidence shapes what we can say." />
+  <link rel="canonical" href="https://www.oceanliners.net/what-happened-to-titanic-artifacts" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="What Happened to Titanic Artifacts? — Ocean Liner Curator" />
+  <meta property="og:description" content="Some Titanic artifacts were recovered, many remain on the ocean floor, and the meaning of each object depends on evidence, conservation, law, and memory." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.oceanliners.net/what-happened-to-titanic-artifacts" />
+  <meta property="og:image" content="https://www.oceanliners.net/images/titanic-artifacts-og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Happened to Titanic Artifacts?" />
+  <meta name="twitter:description" content="A careful guide to recovered Titanic artifacts, objects still at the wreck site, conservation, and public memory." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/images/titanic-artifacts-og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.oceanliners.net/what-happened-to-titanic-artifacts#webpage",
+        "url": "https://www.oceanliners.net/what-happened-to-titanic-artifacts",
+        "name": "What Happened to Titanic Artifacts? — Ocean Liner Curator",
+        "description": "A careful, curator-minded answer to what happened to Titanic artifacts: what was recovered, what remains at the wreck site, why preservation is complicated, and how evidence shapes what we can say.",
+        "isPartOf": {
+          "@id": "https://www.oceanliners.net/#website"
+        },
+        "about": {
+          "@type": "Ship",
+          "name": "RMS Titanic"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.oceanliners.net/what-happened-to-titanic-artifacts#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.oceanliners.net/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "RMS Titanic Hub",
+            "item": "https://www.oceanliners.net/titanic"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "What Happened to Titanic Artifacts?",
+            "item": "https://www.oceanliners.net/what-happened-to-titanic-artifacts"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.oceanliners.net/what-happened-to-titanic-artifacts#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Were artifacts recovered from Titanic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Thousands of artifacts have been recovered from the Titanic wreck site, especially from the debris field, and many require careful conservation after decades in salt water and deep-ocean conditions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are there still artifacts at the Titanic wreck site?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many objects remain at or near the wreck site. Some are part of the debris field, some are associated with the ship structure, and others have likely deteriorated or become difficult to identify."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Titanic artifacts be sold individually?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Titanic artifact recovery and ownership are shaped by court rulings, preservation conditions, and public-interest concerns. The best-supported interpretation is that major recovered collections should remain preserved, documented, and publicly accessible rather than treated as ordinary collectible objects."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,26,24,0.74);
+      --panel-soft:rgba(15,26,24,0.52);
+      --ink:#efe9dc;
+      --muted:#cfc2a8;
+      --faint:#9f9278;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,0.18);
+      --accent-line:rgba(191,164,106,0.34);
+      --edge:rgba(191,164,106,0.25);
+      --shadow:rgba(0,0,0,0.34);
+      --max:min(1080px, calc(100% - 2rem));
+      --measure:72ch;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Spectral", Georgia, serif;
+      line-height:1.65;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(191,164,106,0.13), transparent 32rem),
+        radial-gradient(circle at 82% 0%, rgba(255,255,255,0.06), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #0b1514 48%, #070d0c 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:0.11;
+      background-image:url('/tile3.png');
+      background-size:360px auto;
+      mix-blend-mode:screen;
+    }
+
+    a{ color:#ead59b; text-decoration:none; }
+    a:hover{ color:#fff1c2; text-decoration:underline; text-underline-offset:0.18em; }
+
+    .hero{
+      position:relative;
+      min-height:62vh;
+      display:grid;
+      align-items:end;
+      padding:7.5rem 0 3rem;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.2);
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.28), rgba(10,17,16,0.88)),
+        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.26), transparent 31rem),
+        linear-gradient(125deg, rgba(10,17,16,0.18), rgba(10,17,16,0.94)),
+        url('/images/titanic-artifacts-hero.jpg') center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:42%;
+      background:linear-gradient(180deg, transparent, #0a1110 92%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:var(--max);
+      margin:0 auto;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      max-width:100%;
+      padding:.42rem .68rem;
+      border:1px solid rgba(191,164,106,0.36);
+      border-radius:999px;
+      background:rgba(10,17,16,0.55);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.74rem;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      line-height:1.25;
+    }
+
+    .hero h1{
+      max-width:920px;
+      margin:.95rem 0 .75rem;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(2.25rem, 7vw, 5.15rem);
+      line-height:1.02;
+      letter-spacing:-.045em;
+      text-wrap:balance;
+      text-shadow:0 16px 34px rgba(0,0,0,0.45);
+    }
+
+    .page-kicker{
+      max-width:760px;
+      margin:0;
+      color:#e5dcc8;
+      font-size:clamp(1.05rem, 2vw, 1.32rem);
+      line-height:1.55;
+      text-shadow:0 10px 24px rgba(0,0,0,0.36);
+    }
+
+    .meta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+      margin-top:1.25rem;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      padding:.38rem .65rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:999px;
+      background:rgba(10,17,16,0.48);
+      color:var(--muted);
+      font-size:.86rem;
+    }
+
+    main{
+      width:var(--max);
+      margin:0 auto;
+      padding:2.4rem 0 4rem;
+    }
+
+    .entry-shell{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) 315px;
+      gap:1.25rem;
+      align-items:start;
+    }
+
+    .article-card,
+    .side-card,
+    .answer-box,
+    .link-card,
+    .note{
+      border:1px solid var(--edge);
+      background:linear-gradient(180deg, rgba(18,31,29,0.82), rgba(11,19,18,0.76));
+      box-shadow:0 18px 45px var(--shadow);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+    }
+
+    .article-card{
+      border-radius:24px;
+      padding:clamp(1.1rem, 3vw, 2rem);
+    }
+
+    .prose{
+      max-width:var(--measure);
+    }
+
+    .prose h2,
+    .side-card h2{
+      margin:2rem 0 .75rem;
+      color:#f4ead2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(1.42rem, 3vw, 2.1rem);
+      line-height:1.18;
+      letter-spacing:-.025em;
+    }
+
+    .prose h2:first-child{ margin-top:0; }
+
+    .prose h2::after,
+    .side-card h2::after{
+      content:"";
+      display:block;
+      width:88px;
+      height:1px;
+      margin:.62rem 0 0;
+      background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+    }
+
+    .prose h3{
+      margin:1.45rem 0 .45rem;
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1.1rem;
+      letter-spacing:.01em;
+    }
+
+    .prose p{ margin:.75rem 0 1rem; color:#e7decb; }
+    .prose strong{ color:#fff4d3; }
+
+    .answer-box{
+      margin:0 0 1.5rem;
+      padding:1.1rem 1.15rem;
+      border-radius:18px;
+      background:
+        radial-gradient(circle at top left, rgba(191,164,106,0.18), transparent 18rem),
+        rgba(15,26,24,0.78);
+    }
+
+    .answer-box .label{
+      display:block;
+      color:#d9c17f;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.78rem;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      margin-bottom:.4rem;
+    }
+
+    .answer-box p{
+      margin:0;
+      color:#f1eadc;
+      font-size:1.08rem;
+      line-height:1.55;
+    }
+
+    .artifact-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:.8rem;
+      margin:1.15rem 0 1.45rem;
+    }
+
+    .artifact-card{
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.21);
+      border-radius:18px;
+      background:rgba(8,15,14,0.42);
+    }
+
+    .artifact-card .icon{
+      display:inline-grid;
+      place-items:center;
+      width:2rem;
+      height:2rem;
+      margin-bottom:.55rem;
+      border-radius:999px;
+      color:#f5e7bb;
+      background:rgba(191,164,106,0.14);
+      border:1px solid rgba(191,164,106,0.24);
+    }
+
+    .artifact-card h3{
+      margin:.15rem 0 .38rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1rem;
+      line-height:1.25;
+    }
+
+    .artifact-card p{
+      margin:0;
+      color:#d8ceb8;
+      font-size:.95rem;
+      line-height:1.5;
+    }
+
+    .note{
+      margin:1.3rem 0;
+      padding:1rem 1.05rem;
+      border-radius:18px;
+      background:rgba(10,17,16,0.54);
+    }
+
+    .note p{ margin:0; color:#d8ceb8; }
+
+    .source-list{
+      margin:1rem 0 0;
+      padding-left:1.1rem;
+      color:#d9cfbb;
+      font-size:.95rem;
+    }
+
+    .source-list li{ margin:.35rem 0; }
+
+    .side-stack{
+      position:sticky;
+      top:1rem;
+      display:grid;
+      gap:1rem;
+    }
+
+    .side-card{
+      border-radius:22px;
+      padding:1rem;
+    }
+
+    .side-card h2{
+      margin-top:0;
+      font-size:1.18rem;
+    }
+
+    .side-card p{
+      margin:.55rem 0 .85rem;
+      color:#d8ceb8;
+      font-size:.96rem;
+      line-height:1.5;
+    }
+
+    .toc{
+      display:grid;
+      gap:.4rem;
+      margin-top:.65rem;
+    }
+
+    .toc a,
+    .link-card{
+      display:block;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.18);
+      background:rgba(8,15,14,0.36);
+      padding:.7rem .78rem;
+      color:#eadcae;
+      text-decoration:none;
+      line-height:1.3;
+    }
+
+    .toc a:hover,
+    .link-card:hover{
+      border-color:rgba(191,164,106,0.42);
+      background:rgba(191,164,106,0.08);
+      text-decoration:none;
+    }
+
+    .link-card{
+      margin:.55rem 0;
+    }
+
+    .link-card span{
+      display:block;
+      color:#a99d84;
+      font-size:.82rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:.15rem;
+    }
+
+    .faq{
+      margin-top:2rem;
+      border-top:1px solid rgba(191,164,106,0.2);
+      padding-top:1rem;
+    }
+
+    details.faq-item{
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      background:rgba(8,15,14,0.32);
+      margin:.7rem 0;
+      overflow:hidden;
+    }
+
+    .faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      padding:.9rem 1rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+    }
+
+    .faq-item summary::-webkit-details-marker{ display:none; }
+
+    .faq-item p{
+      margin:0;
+      padding:0 1rem 1rem;
+      color:#d8ceb8;
+    }
+
+    .next-steps{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:.8rem;
+      margin-top:1rem;
+    }
+
+    .cta-card{
+      display:block;
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.23);
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(191,164,106,0.09), rgba(8,15,14,0.34));
+      text-decoration:none;
+    }
+
+    .cta-card b{
+      display:block;
+      color:#f3e7c7;
+      font-family:"Libre Baskerville", Georgia, serif;
+      line-height:1.25;
+      margin-bottom:.35rem;
+    }
+
+    .cta-card span{
+      display:block;
+      color:#d3c8b1;
+      font-size:.94rem;
+      line-height:1.45;
+    }
+
+    .cta-card:hover{
+      border-color:rgba(191,164,106,0.48);
+      background:linear-gradient(180deg, rgba(191,164,106,0.14), rgba(8,15,14,0.42));
+      text-decoration:none;
+    }
+
+    @media (max-width:900px){
+      .entry-shell{ grid-template-columns:1fr; }
+      .side-stack{ position:static; }
+      .artifact-grid,
+      .next-steps{ grid-template-columns:1fr; }
+      .hero{ min-height:58vh; padding-top:6.5rem; }
+    }
+
+    @media (max-width:560px){
+      main{ padding-top:1.25rem; }
+      .article-card{ border-radius:20px; padding:1rem; }
+      .hero{ padding-bottom:2.15rem; }
+      .meta-pill{ font-size:.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Titanic quick answer · artifacts & evidence</span>
+      <h1>What Happened to Titanic Artifacts?</h1>
+      <p class="page-kicker">Some were recovered and conserved. Many remain at the wreck site. Others have disappeared into decay, sediment, corrosion, or uncertainty — which is why Titanic artifacts need careful language, not just dramatic captions.</p>
+      <div class="meta-row" aria-label="Page context">
+        <span class="meta-pill">RMS Titanic</span>
+        <span class="meta-pill">Artifact recovery</span>
+        <span class="meta-pill">Evidence-first guide</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="entry-shell">
+      <article class="article-card">
+        <div class="prose">
+          <div class="answer-box" id="answer">
+            <span class="label">Short answer</span>
+            <p><strong>Titanic artifacts followed several different paths:</strong> thousands were recovered from the wreck site and conserved; many more still lie on or within the debris field; some remain associated with the wreck structure; and a large number of personal, decorative, and organic materials were lost to the sea long before anyone could document them.</p>
+          </div>
+
+          <h2 id="recovered">Some artifacts were recovered</h2>
+          <p>After Titanic’s wreck was located in 1985, later expeditions documented and, in some cases, recovered objects from the wreck site. RMS Titanic Inc. states that more than 5,500 artifacts have been recovered from the site and placed under ongoing conservation care.</p>
+
+          <p>The recovered material ranges from recognizable passenger-service objects — china, bottles, fittings, luggage pieces, clothing fragments, paper items, and personal effects — to larger structural or mechanical pieces. The most familiar public displays are not just “treasures.” They are objects that survived an unusually harsh chain of events: sinking, impact, deep-ocean pressure, salt water, biological activity, recovery, stabilization, and museum interpretation.</p>
+
+          <div class="artifact-grid" aria-label="Types of Titanic artifacts">
+            <section class="artifact-card">
+              <span class="icon">✦</span>
+              <h3>Shipboard objects</h3>
+              <p>China, tiles, fittings, bottles, fixtures, and service items that help reconstruct daily life aboard the liner.</p>
+            </section>
+            <section class="artifact-card">
+              <span class="icon">✦</span>
+              <h3>Personal effects</h3>
+              <p>Items linked to passengers or crew require special caution because they can carry human stories as well as historical evidence.</p>
+            </section>
+            <section class="artifact-card">
+              <span class="icon">✦</span>
+              <h3>Structural material</h3>
+              <p>Larger fragments may reveal construction, impact damage, deterioration, or the physical behavior of the wreck over time.</p>
+            </section>
+          </div>
+
+          <h2 id="site">Many artifacts are still at the wreck site</h2>
+          <p>The popular image of Titanic often focuses on the bow and stern, but the wreck site also includes a broad debris field. Objects scattered there can preserve evidence about the breakup, sinking, impact, and post-sinking environment. Some items are plainly visible in imagery. Others are partly buried, corroded, collapsed, or difficult to interpret without context.</p>
+
+          <p>That matters because an artifact is not just an isolated object. Its position, relationship to other objects, and condition can be part of the evidence. Removing something may preserve the object physically, but it can also separate it from the setting that helped explain it.</p>
+
+          <div class="note">
+            <p><strong>Curator’s note:</strong> “Recovered” does not mean “saved” in a simple way, and “left in place” does not mean “ignored.” Titanic sits in the tension between conservation, archaeology, law, public memory, and respect for a disaster site where more than 1,500 people died.</p>
+          </div>
+
+          <h2 id="lost">Some artifacts are gone forever</h2>
+          <p>Many Titanic objects were never likely to survive intact. Paper, fabric, food, wood, leather, and other organic materials faced prolonged exposure to salt water, pressure, sediment, bacteria, and time. Even metal objects can deform, corrode, fuse with surrounding material, or become too fragile to move.</p>
+
+          <p>This is one reason Titanic research should avoid overly confident claims. A missing object may have decayed, may remain hidden, may have been dispersed, or may simply not have been documented well enough to identify. Absence of a surviving artifact is not always proof that an object was never there.</p>
+
+          <h2 id="law">Recovery is legally and ethically complicated</h2>
+          <p>Titanic artifact recovery has been shaped by maritime salvage law, court rulings, preservation guidelines, and international concern for underwater cultural heritage. NOAA’s guidance emphasizes in-situ preservation as the preferred policy, especially where recovery would disturb the wreck or treat the site as a source of collectibles rather than as a maritime memorial.</p>
+
+          <p>RMS Titanic Inc. has been recognized in U.S. federal court as salvor-in-possession, while recovered collections have also been subject to preservation and disposition conditions. In practical terms, Titanic artifacts are not best understood as ordinary antiques. They sit inside a legal and moral framework that treats the wreck site, recovered objects, documentation, and public access as connected issues.</p>
+
+          <h2 id="meaning">What Titanic artifacts actually tell us</h2>
+          <p>The strongest Titanic artifacts do more than produce an emotional reaction. They help us ask better questions: How were spaces used? What kinds of materials were aboard? How did the ship break apart? What did passengers and crew carry with them? How did public memory turn ordinary objects into symbols?</p>
+
+          <p>That is also why captions matter. A teacup, shoe, porthole, tile, or fragment of hull plating should not be made to carry more certainty than the evidence supports. The most responsible interpretation usually combines the object itself with recovery records, photographs, conservation notes, passenger and crew accounts, inquiry testimony, deck plans, and the wider history of the ship.</p>
+
+          <section class="faq" id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <details class="faq-item">
+              <summary>Were artifacts taken from inside Titanic?</summary>
+              <p>Some expeditions have documented interior areas, but recovery involving the hull or interior spaces is especially sensitive. Modern policy discussions generally distinguish between debris-field recovery and activity that could disturb the wreck structure itself.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Are Titanic artifacts in museums real?</summary>
+              <p>Many displayed Titanic artifacts are real recovered objects, but visitors should still check the exhibit label. Good labels should identify whether an item is recovered from the wreck site, associated with Titanic in another way, a period object, a replica, or an interpretive reconstruction.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Why not recover everything before it decays?</summary>
+              <p>Because recovery is not automatically preservation. Objects can be damaged by removal, conservation can be difficult and expensive, and the wreck site itself has historical and memorial value. The decision is not simply “save it” versus “leave it.”</p>
+            </details>
+          </section>
+
+          <h2 id="next">Where to go next</h2>
+          <p>This page is meant as a quick entry point. For a fuller route through the evidence, continue into the Titanic collection pages and timeline.</p>
+
+          <div class="next-steps" aria-label="Related Titanic pages">
+            <a class="cta-card" href="/titanic-artifacts-what-survives-and-what-doesnt">
+              <b>Titanic Artifacts: What Survives and What Doesn’t</b>
+              <span>A deeper research collection on surviving objects, lost materials, conservation, and interpretation.</span>
+            </a>
+            <a class="cta-card" href="/titanic">
+              <b>RMS Titanic Hub</b>
+              <span>Start from the main Titanic guide and move through timelines, essays, public rooms, and evidence pages.</span>
+            </a>
+            <a class="cta-card" href="/what-titanic-teaches-about-evidence">
+              <b>What Titanic Teaches About Evidence</b>
+              <span>A careful look at testimony, wreck evidence, myth formation, and matching claims to documentation.</span>
+            </a>
+          </div>
+
+          <h2 id="sources">Source notes</h2>
+          <p>This entry page is written as a curator-minded overview, not a legal opinion. For recovery claims, preservation policy, and current institutional framing, consult primary or near-primary sources first.</p>
+          <ul class="source-list">
+            <li>NOAA, <em>R.M.S. Titanic Frequently Asked Questions</em> and related Titanic preservation guidance.</li>
+            <li>NOAA, <em>R.M.S. Titanic International Agreement</em>.</li>
+            <li>RMS Titanic Inc., artifact and wreck-site information pages.</li>
+            <li>Federal Register / NOAA guidelines for research, exploration, and salvage of RMS Titanic.</li>
+          </ul>
+        </div>
+      </article>
+
+      <aside class="side-stack" aria-label="Page navigation and related links">
+        <section class="side-card">
+          <h2>On this page</h2>
+          <nav class="toc" aria-label="Section links">
+            <a href="#answer">Short answer</a>
+            <a href="#recovered">Recovered artifacts</a>
+            <a href="#site">Still at the wreck site</a>
+            <a href="#lost">Lost or deteriorated</a>
+            <a href="#law">Law and ethics</a>
+            <a href="#meaning">What artifacts tell us</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </section>
+
+        <section class="side-card">
+          <h2>Best next link</h2>
+          <p>For readers who want more than the quick answer, send them into the full artifact collection.</p>
+          <a class="link-card" href="/titanic-artifacts-what-survives-and-what-doesnt">
+            <span>Research collection</span>
+            Titanic Artifacts: What Survives and What Doesn’t
+          </a>
+        </section>
+
+        <section class="side-card">
+          <h2>Titanic paths</h2>
+          <a class="link-card" href="/titanic">
+            <span>Content hub</span>
+            RMS Titanic Hub
+          </a>
+          <a class="link-card" href="/timelines-history/titanic-departure-to-rescue-timeline">
+            <span>Timeline</span>
+            Titanic: Departure to Rescue
+          </a>
+          <a class="link-card" href="/titanic-history-vs-james-cameron-film">
+            <span>Film & history</span>
+            Titanic: History vs. James Cameron’s Film
+          </a>
+        </section>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
