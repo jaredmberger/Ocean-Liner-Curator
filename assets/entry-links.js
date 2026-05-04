@@ -14,6 +14,13 @@
     href: "/ocean-liner-cruise-ship"
   },
   {
+    meta: "Experience · Voyages",
+    title: "What was it like to cross the Atlantic on an ocean liner?",
+    desc:
+      "Boarding, daily routines, weather, and life at sea during a transatlantic crossing.",
+    href: "/what-was-it-like-to-cross-the-atlantic-on-an-ocean-liner"
+  },
+  {
     meta: "History · Transition",
     title: "Why did ocean liners disappear?",
     desc:
@@ -26,13 +33,6 @@
     desc:
       "What was recovered, what remains at the wreck site, and why preservation is complicated.",
     href: "/what-happened-to-titanic-artifacts"
-  },
-  {
-    meta: "Titanic · Life aboard",
-    title: "What was it like aboard Titanic?",
-    desc:
-      "Cabins, meals, routines, and how experience differed across classes.",
-    href: "/what-was-it-like-aboard-titanic"
   },
   {
     meta: "SS United States · Design",
