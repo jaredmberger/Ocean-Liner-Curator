@@ -1558,106 +1558,6 @@ mix-blend-mode:soft-light;
       min-height:0;
     }
   }
-  
-  /* =========================
-   GPT ornamental stage
-   ========================= */
-
-.begin-ornament-stage{
-  position:relative;
-  max-width:760px;
-  margin:0 auto 2.25rem;
-  text-align:center;
-  overflow:visible;
-}
-
-.begin-heading{
-  position:relative;
-  z-index:5;
-}
-
-.begin-ornament{
-  position:absolute;
-  top:46%;
-  z-index:1;
-  pointer-events:none;
-  user-select:none;
-  opacity:.42;
-  filter:saturate(.92) brightness(.96) contrast(1.04);
-}
-
-.begin-ornament.left{
-  right:100%;
-  transform:translate(24px,-50%);
-  width:150px;
-}
-
-.begin-ornament.right{
-  left:100%;
-  transform:translate(-24px,-50%);
-  width:150px;
-}
-
-@media (max-width:1100px){
-  .begin-ornament.left{
-    transform:translate(58px,-50%);
-    width:130px;
-  }
-
-  .begin-ornament.right{
-    transform:translate(-58px,-50%);
-    width:130px;
-  }
-}
-
-@media (max-width:760px){
-  .begin-ornament{
-    display:none;
-  }
-}
-
-/* ========================================
-   Centered mobile ornament backdrop
-   ======================================== */
-
-.gpt-stage::before{
-  content:"";
-  position:absolute;
-  left:50%;
-  top:48%; /* slight lift so it sits behind title, not dead center */
-  transform:translate(-50%,-50%) scale(1.15);
-
-  width:clamp(260px, 70vw, 420px);
-  aspect-ratio:1/1;
-
-  background:url("/gpt-ornament-panel.png") center / contain no-repeat;
-
-  opacity:0;
-  pointer-events:none;
-  z-index:0;
-
-  filter:
-    blur(0.8px)
-    saturate(0.9)
-    brightness(0.9)
-    contrast(1.05);
-
-  transition:opacity .4s ease;
-}
-
-
-/* =========================
-   Activate on smaller screens
-   ========================= */
-
-@media (max-width:700px){
-
-  .gpt-stage::before{
-    opacity:0.095; /* slightly stronger so it reads as intentional */
-    transform:translate(-50%,-50%) scale(1.22);
-  }
-
-}
     
     </style>
 </head>
@@ -1721,20 +1621,8 @@ mix-blend-mode:soft-light;
 
         <section aria-labelledby="choose-path">
           <div class="section-head">
-            <div class="begin-ornament-stage">
-  <img class="begin-ornament left" src="/path/to/ornament-left.png" alt="" aria-hidden="true">
-
-  <div class="begin-heading">
-    <p class="eyebrow">Begin Here</p>
-    <div class="star">★</div>
-    <h2>Choose your path</h2>
-    <div class="rule"></div>
-    <p>Start with the route that matches your interest best: Titanic, individual ships, broader history, collecting and attribution, or liner design and interiors.</p>
-  </div>
-
-  <img class="begin-ornament right" src="/path/to/ornament-right.png" alt="" aria-hidden="true">
-</div>
-            
+            <div class="section-kicker">Begin here<br><span class="section-star">★</span></div>
+            <h2 id="choose-path">Choose your path</h2>
             <p>
               Start with the route that matches your interest best: Titanic, individual ships, broader history, collecting and attribution, or liner design and interiors.
             </p>
@@ -1803,9 +1691,6 @@ mix-blend-mode:soft-light;
           <div class="section-head">
             <div class="section-kicker">Why explore here?<br><span class="section-star">★</span></div>
             <h2 id="why-this-site">Built for serious curiosity</h2>
-            
-           
-            
             <p>
               Ocean Liner Curator is designed to feel welcoming without flattening the history. The aim is not maximal certainty at all costs, but careful interpretation grounded in what can actually be shown.
             </p>
