@@ -11,7 +11,7 @@
     title: "What is the difference between an ocean liner and a cruise ship?",
     desc:
       "Purpose, design, routes, and experience—why liners crossed oceans and cruise ships don’t have to.",
-    href: "/ocean-liner-vs-cruise-ship"
+    href: "/ocean-liner-cruise-ship"
   },
   {
     meta: "History · Transition",
