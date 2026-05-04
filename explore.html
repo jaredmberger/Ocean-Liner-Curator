@@ -1563,78 +1563,72 @@ mix-blend-mode:soft-light;
    GPT ornamental stage
    ========================= */
 
-.gpt-stage{
+.begin-ornament-stage{
   position:relative;
-  width:fit-content;
-  margin:3.25rem auto;
+  max-width:760px;
+  margin:0 auto 2.25rem;
+  text-align:center;
   overflow:visible;
 }
 
-/* card must sit ABOVE ornaments */
-.gpt-card{
+.begin-heading{
   position:relative;
   z-index:5;
 }
 
-/* decorative PNGs */
-.gpt-ornament{
+.begin-ornament{
   position:absolute;
+  top:46%;
   z-index:1;
   pointer-events:none;
   user-select:none;
-    opacity:0.42;
-  filter: saturate(0.92) brightness(0.96);
-  
+  opacity:.42;
+  filter:saturate(.92) brightness(.96) contrast(1.04);
 }
 
-/* LEFT ornament */
-.gpt-ornament.left{
+.begin-ornament.left{
   right:100%;
-  top:52%;
-  transform:translateY(-50%);
-  margin-right:5px;
-
-  width:120px;   /* adjust */
+  transform:translate(24px,-50%);
+  width:150px;
 }
 
-/* RIGHT ornament (this one goes behind card) */
-.gpt-ornament.right{
+.begin-ornament.right{
   left:100%;
-  top:49%;
-  transform:translateY(-50%);
-  margin-left:-92px; /* negative pulls it under the card edge */
-
-  width:220px;   /* adjust */
-  z-index:1;     /* stays under card */
+  transform:translate(-24px,-50%);
+  width:150px;
 }
 
-@media (max-width:820px){
-  .gpt-ornament{
-    opacity:.35;
-    transform:translateY(-50%) scale(.92);
+@media (max-width:1100px){
+  .begin-ornament.left{
+    transform:translate(58px,-50%);
+    width:130px;
+  }
+
+  .begin-ornament.right{
+    transform:translate(-58px,-50%);
+    width:130px;
   }
 }
 
-
-@media (max-width: 700px){
-  .gpt-ornament{
+@media (max-width:760px){
+  .begin-ornament{
     display:none;
   }
 }
 
-/* =========================
-   MOBILE CENTER PANEL WATERMARK
-   ========================= */
+/* ========================================
+   Centered mobile ornament backdrop
+   ======================================== */
 
 .gpt-stage::before{
   content:"";
   position:absolute;
   left:50%;
-  top:50%;
-  transform:translate(-50%,-50%) scale(1.18);
+  top:48%; /* slight lift so it sits behind title, not dead center */
+  transform:translate(-50%,-50%) scale(1.15);
 
-  width:290px;
-  height:290px;
+  width:clamp(260px, 70vw, 420px);
+  aspect-ratio:1/1;
 
   background:url("/gpt-ornament-panel.png") center / contain no-repeat;
 
@@ -1643,16 +1637,24 @@ mix-blend-mode:soft-light;
   z-index:0;
 
   filter:
-    blur(0.7px)
+    blur(0.8px)
     saturate(0.9)
-    brightness(0.92);
+    brightness(0.9)
+    contrast(1.05);
+
+  transition:opacity .4s ease;
 }
 
-/* show only when side ornaments disappear */
+
+/* =========================
+   Activate on smaller screens
+   ========================= */
+
 @media (max-width:700px){
 
   .gpt-stage::before{
-    opacity:0.085;   /* tuning zone */
+    opacity:0.095; /* slightly stronger so it reads as intentional */
+    transform:translate(-50%,-50%) scale(1.22);
   }
 
 }
@@ -1719,8 +1721,20 @@ mix-blend-mode:soft-light;
 
         <section aria-labelledby="choose-path">
           <div class="section-head">
-            <div class="section-kicker">Begin here<br><span class="section-star">★</span></div>
-            <h2 id="choose-path">Choose your path</h2>
+            <div class="begin-ornament-stage">
+  <img class="begin-ornament left" src="/path/to/ornament-left.png" alt="" aria-hidden="true">
+
+  <div class="begin-heading">
+    <p class="eyebrow">Begin Here</p>
+    <div class="star">★</div>
+    <h2>Choose your path</h2>
+    <div class="rule"></div>
+    <p>Start with the route that matches your interest best: Titanic, individual ships, broader history, collecting and attribution, or liner design and interiors.</p>
+  </div>
+
+  <img class="begin-ornament right" src="/path/to/ornament-right.png" alt="" aria-hidden="true">
+</div>
+            
             <p>
               Start with the route that matches your interest best: Titanic, individual ships, broader history, collecting and attribution, or liner design and interiors.
             </p>
@@ -1790,17 +1804,7 @@ mix-blend-mode:soft-light;
             <div class="section-kicker">Why explore here?<br><span class="section-star">★</span></div>
             <h2 id="why-this-site">Built for serious curiosity</h2>
             
-            <div class="gpt-stage">
-            
-            <img src="/honor-left.png"
-       class="gpt-ornament left"
-       alt=""
-       aria-hidden="true">
-
-  <img src="/glory-right.png"
-       class="gpt-ornament right"
-       alt=""
-       aria-hidden="true">
+           
             
             <p>
               Ocean Liner Curator is designed to feel welcoming without flattening the history. The aim is not maximal certainty at all costs, but careful interpretation grounded in what can actually be shown.
