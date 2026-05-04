@@ -5,17 +5,6 @@
   html { background:#0a1110; }
 </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JPZ291Q3RB');
-</script>
-
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0a1110">
@@ -2235,6 +2224,60 @@ footer .orientation-context .note{
   width: 100%;
 }
 
+.hero-brand-card {
+  position: relative;
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.hero-brand-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-hit {
+  position: absolute;
+  z-index: 5;
+  display: block;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* DOCUMENTED */
+.hero-hit-documented {
+  left: 16.2%;
+  top: 80.6%;
+  width: 23.9%;
+  height: 9.3%;
+}
+
+/* ANALYZED */
+.hero-hit-analyzed {
+  left: 40.4%;
+  top: 80.6%;
+  width: 20.4%;
+  height: 9.3%;
+}
+
+/* PRESERVED */
+.hero-hit-preserved {
+  left: 61.1%;
+  top: 80.6%;
+  width: 22.6%;
+  height: 9.3%;
+}
+
+/* Optional hover/focus feedback */
+.hero-hit:hover,
+.hero-hit:focus-visible {
+  outline: 2px solid rgba(191,164,106,0.65);
+  background: rgba(191,164,106,0.08);
+  box-shadow: 0 0 24px rgba(191,164,106,0.18);
+}
+
 </style>
   
 </head>
@@ -2254,6 +2297,12 @@ footer .orientation-context .note{
       width="1080"
       height="540"
     />
+     <a href="/ships/ships" class="hero-hit hero-hit-documented" aria-label="Documented ship guides"></a>
+
+  <a href="/timelines-history" class="hero-hit hero-hit-analyzed" aria-label="Analyzed timelines and history"></a>
+
+  <a href="/collections" class="hero-hit hero-hit-preserved" aria-label="Preserved collection stories"></a>
+    
   </div>
 </section>
 
