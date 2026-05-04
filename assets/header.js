@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---- Google Analytics (gtag site-wide guarded injection) ----
   (function injectGA() {
 
-    const GA_SRC = "https://www.googletagmanager.com/gtag/js?id=AW-17898160620";
+    const GA_SRC = "https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB";
 
     // Prevent double injection
     if (document.querySelector(`script[src^="https://www.googletagmanager.com/gtag/js"]`)) return;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.gtag = function(){ dataLayer.push(arguments); };
 
     gtag('js', new Date());
-    gtag('config', 'AW-17898160620');
+    gtag('config', 'G-JPZ291Q3RB');
 
   })();
 
