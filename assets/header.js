@@ -1,25 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelector(".footer-star")) return;
+document.addEventListener("DOMContentLoaded", async () => {
 
-  const copyright = document.querySelector(".copyright");
-  if (!copyright) return;
+  // ---- Footer star injection ----
+  if (!document.querySelector(".footer-star")) {
+    const copyright = document.querySelector(".copyright");
+    if (copyright) {
+      const star = document.createElement("p");
+      star.className = "footer-star";
+      star.setAttribute("aria-hidden", "true");
+      star.textContent = "★";
+      copyright.insertAdjacentElement("afterend", star);
+    }
+  }
 
-  const star = document.createElement("p");
-  star.className = "footer-star";
-  star.setAttribute("aria-hidden", "true");
-  star.textContent = "★";
-
-  copyright.insertAdjacentElement("afterend", star);
-});
-
-(async function () {
-
-  // ---- Google Analytics (gtag site-wide guarded injection) ----
+  // ---- Google Analytics ----
   (function injectGA() {
-
     const GA_SRC = "https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB";
 
-    // Prevent double injection
     if (document.querySelector(`script[src^="https://www.googletagmanager.com/gtag/js"]`)) return;
 
     const s = document.createElement("script");
@@ -27,16 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
     s.async = true;
     document.head.appendChild(s);
 
-    // Config block
     window.dataLayer = window.dataLayer || [];
     window.gtag = function(){ dataLayer.push(arguments); };
 
     gtag('js', new Date());
     gtag('config', 'G-JPZ291Q3RB');
-
   })();
 
-  // ---- Simple Analytics (site-wide, guarded) ----
+  // ---- Simple Analytics ----
   (function injectSimpleAnalytics() {
     const SRC = "https://scripts.simpleanalyticscdn.com/latest.js";
 
@@ -48,17 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(s);
   })();
 
-
   // ---- Header injection ----
   const mount = document.getElementById("site-header");
-  if (!mount) return;
-
-  try {
-    const res = await fetch("/partials/header.html", { cache: "no-cache" });
-    if (!res.ok) throw new Error("Header fetch failed: " + res.status);
-    mount.innerHTML = await res.text();
-  } catch (err) {
-    console.warn(err);
+  if (mount) {
+    try {
+      const res = await fetch("/partials/header.html", { cache: "no-cache" });
+      if (!res.ok) throw new Error("Header fetch failed: " + res.status);
+      mount.innerHTML = await res.text();
+    } catch (err) {
+      console.warn(err);
+    }
   }
 
-})();
+});
