@@ -1558,6 +1558,78 @@ mix-blend-mode:soft-light;
       min-height:0;
     }
   }
+  
+  /* =========================
+   Ornate “Begin Here” heading
+   anchors centered on star
+   ========================= */
+
+.section-kicker-ornate{
+  position:relative;
+  z-index:2;
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:.15rem;
+  margin-bottom:.15rem;
+  isolation:isolate;
+}
+
+.section-star-anchor{
+  position:relative;
+  z-index:2;
+  display:inline-grid;
+  place-items:center;
+  width:1.4em;
+  height:1.4em;
+  line-height:1;
+}
+
+/* anchor ornament locked to the star */
+.section-star-anchor::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:clamp(260px, 35vw, 420px);
+  aspect-ratio:1 / 1;
+  transform:translate(-50%, -52%);
+  background:url("/engraved-crossed.PNG") center / contain no-repeat;
+  z-index:-1;
+  pointer-events:none;
+
+  opacity:.72;
+  filter:
+    drop-shadow(0 12px 22px rgba(0,0,0,.45))
+    drop-shadow(0 0 10px rgba(191,164,106,.16))
+    saturate(.92)
+    brightness(.92);
+}
+
+/* keeps the text above the ornament */
+.section-head h2,
+.section-head p{
+  position:relative;
+  z-index:3;
+}
+
+/* optional: make this first section breathe a bit more */
+#choose-path{
+  margin-top:.35rem;
+}
+
+/* mobile tuning */
+@media (max-width:700px){
+  .section-star-anchor::before{
+    width:min(82vw, 300px);
+    opacity:.34;
+    filter:
+      drop-shadow(0 10px 18px rgba(0,0,0,.42))
+      saturate(.9)
+      brightness(.9);
+  }
+}
     
     </style>
 </head>
@@ -1621,8 +1693,12 @@ mix-blend-mode:soft-light;
 
         <section aria-labelledby="choose-path">
           <div class="section-head">
-            <div class="section-kicker">Begin here<br><span class="section-star">★</span></div>
-            <h2 id="choose-path">Choose your path</h2>
+            <div class="section-kicker section-kicker-ornate">
+  <span>Begin here</span>
+  <span class="section-star section-star-anchor">★</span>
+</div>
+
+<h2 id="choose-path">Choose your path</h2>
             <p>
               Start with the route that matches your interest best: Titanic, individual ships, broader history, collecting and attribution, or liner design and interiors.
             </p>
