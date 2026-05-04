@@ -50,28 +50,35 @@
       intro:
         "Quick-entry Titanic pages for readers who want a clear answer before moving into deeper evidence and collections.",
       links: [
-        {
-          meta: "Artifacts & evidence",
-          title: "What happened to Titanic artifacts?",
-          desc:
-            "Recovered objects, what remains at the wreck site, conservation, and public memory.",
-          href: "/what-happened-to-titanic-artifacts"
-        },
-        {
-          meta: "Life aboard",
-          title: "What was it like aboard Titanic?",
-          desc:
-            "Cabins, meals, routines, public rooms, and class differences during the voyage.",
-          href: "/what-was-it-like-aboard-titanic"
-        },
-        {
-          meta: "Film & history",
-          title: "How accurate is the Titanic movie?",
-          desc:
-            "What James Cameron’s film gets right, what it simplifies, and where evidence matters.",
-          href: "/titanic-history-vs-movie"
-        }
-      ]
+  {
+    meta: "Artifacts & evidence",
+    title: "What happened to Titanic artifacts?",
+    desc:
+      "Recovered objects, what remains at the wreck site, conservation, and public memory.",
+    href: "/what-happened-to-titanic-artifacts"
+  },
+  {
+    meta: "Life aboard",
+    title: "What was it like aboard Titanic?",
+    desc:
+      "Cabins, meals, routines, public rooms, and class differences during the voyage.",
+    href: "/what-was-it-like-aboard-titanic"
+  },
+  {
+    meta: "Film & history",
+    title: "How accurate is the Titanic movie?",
+    desc:
+      "What the 1997 film gets right, what it simplifies, and where evidence matters.",
+    href: "/how-accurate-is-the-titanic-movie"
+  },
+  {
+    meta: "Timeline",
+    title: "Titanic: Departure to Rescue",
+    desc:
+      "Follow the voyage from Southampton through the sinking and rescue by Carpathia.",
+    href: "/ships/titanic-southampton-to-rescue-timeline"
+  }
+]
     },
 
     unitedStates: {
