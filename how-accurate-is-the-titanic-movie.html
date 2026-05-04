@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How Accurate Is the Titanic Movie? — Ocean Liner Curator</title>
+  <meta name="description" content="A careful, curator-minded answer to how accurate James Cameron’s Titanic is: what the film gets right, what it simplifies, what it fictionalizes, and where evidence matters." />
+  <link rel="canonical" href="https://www.oceanliners.net/how-accurate-is-the-titanic-movie" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="How Accurate Is the Titanic Movie? — Ocean Liner Curator" />
+  <meta property="og:description" content="James Cameron’s Titanic is unusually detail-minded for a historical film, but it still blends evidence, compression, drama, and fiction." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.oceanliners.net/how-accurate-is-the-titanic-movie" />
+  <meta property="og:image" content="https://www.oceanliners.net/images/titanic-movie-accuracy-og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Accurate Is the Titanic Movie?" />
+  <meta name="twitter:description" content="What Titanic gets right, what it simplifies, and where the historical evidence is more complicated." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/images/titanic-movie-accuracy-og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.oceanliners.net/how-accurate-is-the-titanic-movie#webpage",
+        "url": "https://www.oceanliners.net/how-accurate-is-the-titanic-movie",
+        "name": "How Accurate Is the Titanic Movie? — Ocean Liner Curator",
+        "description": "A careful, curator-minded answer to how accurate James Cameron’s Titanic is: what the film gets right, what it simplifies, what it fictionalizes, and where evidence matters.",
+        "isPartOf": {
+          "@id": "https://www.oceanliners.net/#website"
+        },
+        "about": [
+          {
+            "@type": "Movie",
+            "name": "Titanic",
+            "datePublished": "1997",
+            "director": {
+              "@type": "Person",
+              "name": "James Cameron"
+            }
+          },
+          {
+            "@type": "Ship",
+            "name": "RMS Titanic"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.oceanliners.net/how-accurate-is-the-titanic-movie#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.oceanliners.net/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "RMS Titanic Hub",
+            "item": "https://www.oceanliners.net/titanic"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How Accurate Is the Titanic Movie?",
+            "item": "https://www.oceanliners.net/how-accurate-is-the-titanic-movie"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.oceanliners.net/how-accurate-is-the-titanic-movie#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is James Cameron’s Titanic historically accurate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "James Cameron’s Titanic is unusually detailed for a historical film, especially in its sets, shipboard atmosphere, and broad outline of the sinking. However, it also uses fictional main characters, compressed events, invented scenes, and dramatic simplification."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Were Jack and Rose real people?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Jack Dawson and Rose DeWitt Bukater are fictional characters created for the film. They move through a historically inspired setting, but their romance is not a documented Titanic story."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Did Titanic break in half like the movie shows?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the wreck evidence shows that Titanic broke apart before reaching the sea floor. The exact mechanics, angle, timing, and visual appearance of the breakup remain subjects that require careful evidence-based interpretation."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,26,24,0.74);
+      --panel-soft:rgba(15,26,24,0.52);
+      --ink:#efe9dc;
+      --muted:#cfc2a8;
+      --faint:#9f9278;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,0.18);
+      --accent-line:rgba(191,164,106,0.34);
+      --edge:rgba(191,164,106,0.25);
+      --shadow:rgba(0,0,0,0.34);
+      --max:min(1080px, calc(100% - 2rem));
+      --measure:72ch;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Spectral", Georgia, serif;
+      line-height:1.65;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(191,164,106,0.13), transparent 32rem),
+        radial-gradient(circle at 82% 0%, rgba(255,255,255,0.06), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #0b1514 48%, #070d0c 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:0.11;
+      background-image:url('/tile3.png');
+      background-size:360px auto;
+      mix-blend-mode:screen;
+    }
+
+    a{ color:#ead59b; text-decoration:none; }
+    a:hover{ color:#fff1c2; text-decoration:underline; text-underline-offset:0.18em; }
+
+    .hero{
+      position:relative;
+      min-height:62vh;
+      display:grid;
+      align-items:end;
+      padding:7.5rem 0 3rem;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.2);
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.30), rgba(10,17,16,0.9)),
+        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.25), transparent 31rem),
+        linear-gradient(125deg, rgba(10,17,16,0.22), rgba(10,17,16,0.95)),
+        url('/images/titanic-movie-accuracy-hero.jpg') center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:42%;
+      background:linear-gradient(180deg, transparent, #0a1110 92%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:var(--max);
+      margin:0 auto;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      max-width:100%;
+      padding:.42rem .68rem;
+      border:1px solid rgba(191,164,106,0.36);
+      border-radius:999px;
+      background:rgba(10,17,16,0.55);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.74rem;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      line-height:1.25;
+    }
+
+    .hero h1{
+      max-width:920px;
+      margin:.95rem 0 .75rem;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(2.25rem, 7vw, 5.15rem);
+      line-height:1.02;
+      letter-spacing:-.045em;
+      text-wrap:balance;
+      text-shadow:0 16px 34px rgba(0,0,0,0.45);
+    }
+
+    .page-kicker{
+      max-width:760px;
+      margin:0;
+      color:#e5dcc8;
+      font-size:clamp(1.05rem, 2vw, 1.32rem);
+      line-height:1.55;
+      text-shadow:0 10px 24px rgba(0,0,0,0.36);
+    }
+
+    .meta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+      margin-top:1.25rem;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      padding:.38rem .65rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:999px;
+      background:rgba(10,17,16,0.48);
+      color:var(--muted);
+      font-size:.86rem;
+    }
+
+    main{
+      width:var(--max);
+      margin:0 auto;
+      padding:2.4rem 0 4rem;
+    }
+
+    .entry-shell{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) 315px;
+      gap:1.25rem;
+      align-items:start;
+    }
+
+    .article-card,
+    .side-card,
+    .answer-box,
+    .link-card,
+    .note{
+      border:1px solid var(--edge);
+      background:linear-gradient(180deg, rgba(18,31,29,0.82), rgba(11,19,18,0.76));
+      box-shadow:0 18px 45px var(--shadow);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+    }
+
+    .article-card{
+      border-radius:24px;
+      padding:clamp(1.1rem, 3vw, 2rem);
+    }
+
+    .prose{ max-width:var(--measure); }
+
+    .prose h2,
+    .side-card h2{
+      margin:2rem 0 .75rem;
+      color:#f4ead2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(1.42rem, 3vw, 2.1rem);
+      line-height:1.18;
+      letter-spacing:-.025em;
+    }
+
+    .prose h2:first-child{ margin-top:0; }
+
+    .prose h2::after,
+    .side-card h2::after{
+      content:"";
+      display:block;
+      width:88px;
+      height:1px;
+      margin:.62rem 0 0;
+      background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+    }
+
+    .prose h3{
+      margin:1.45rem 0 .45rem;
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1.1rem;
+      letter-spacing:.01em;
+    }
+
+    .prose p{ margin:.75rem 0 1rem; color:#e7decb; }
+    .prose strong{ color:#fff4d3; }
+
+    .answer-box{
+      margin:0 0 1.5rem;
+      padding:1.1rem 1.15rem;
+      border-radius:18px;
+      background:
+        radial-gradient(circle at top left, rgba(191,164,106,0.18), transparent 18rem),
+        rgba(15,26,24,0.78);
+    }
+
+    .answer-box .label{
+      display:block;
+      color:#d9c17f;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.78rem;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      margin-bottom:.4rem;
+    }
+
+    .answer-box p{
+      margin:0;
+      color:#f1eadc;
+      font-size:1.08rem;
+      line-height:1.55;
+    }
+
+    .accuracy-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:.8rem;
+      margin:1.15rem 0 1.45rem;
+    }
+
+    .accuracy-card{
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.21);
+      border-radius:18px;
+      background:rgba(8,15,14,0.42);
+    }
+
+    .accuracy-card .icon{
+      display:inline-grid;
+      place-items:center;
+      width:2rem;
+      height:2rem;
+      margin-bottom:.55rem;
+      border-radius:999px;
+      color:#f5e7bb;
+      background:rgba(191,164,106,0.14);
+      border:1px solid rgba(191,164,106,0.24);
+    }
+
+    .accuracy-card h3{
+      margin:.15rem 0 .38rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1rem;
+      line-height:1.25;
+    }
+
+    .accuracy-card p{
+      margin:0;
+      color:#d8ceb8;
+      font-size:.95rem;
+      line-height:1.5;
+    }
+
+    .comparison-list{
+      display:grid;
+      gap:.75rem;
+      margin:1rem 0 1.35rem;
+    }
+
+    .comparison-item{
+      padding:.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.19);
+      border-radius:17px;
+      background:rgba(8,15,14,0.34);
+    }
+
+    .comparison-item b{
+      display:block;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      margin-bottom:.25rem;
+    }
+
+    .comparison-item span{
+      display:block;
+      color:#d8ceb8;
+      line-height:1.5;
+    }
+
+    .note{
+      margin:1.3rem 0;
+      padding:1rem 1.05rem;
+      border-radius:18px;
+      background:rgba(10,17,16,0.54);
+    }
+
+    .note p{ margin:0; color:#d8ceb8; }
+
+    .source-list{
+      margin:1rem 0 0;
+      padding-left:1.1rem;
+      color:#d9cfbb;
+      font-size:.95rem;
+    }
+
+    .source-list li{ margin:.35rem 0; }
+
+    .side-stack{
+      position:sticky;
+      top:1rem;
+      display:grid;
+      gap:1rem;
+    }
+
+    .side-card{
+      border-radius:22px;
+      padding:1rem;
+    }
+
+    .side-card h2{
+      margin-top:0;
+      font-size:1.18rem;
+    }
+
+    .side-card p{
+      margin:.55rem 0 .85rem;
+      color:#d8ceb8;
+      font-size:.96rem;
+      line-height:1.5;
+    }
+
+    .toc{
+      display:grid;
+      gap:.4rem;
+      margin-top:.65rem;
+    }
+
+    .toc a,
+    .link-card{
+      display:block;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.18);
+      background:rgba(8,15,14,0.36);
+      padding:.7rem .78rem;
+      color:#eadcae;
+      text-decoration:none;
+      line-height:1.3;
+    }
+
+    .toc a:hover,
+    .link-card:hover{
+      border-color:rgba(191,164,106,0.42);
+      background:rgba(191,164,106,0.08);
+      text-decoration:none;
+    }
+
+    .link-card{ margin:.55rem 0; }
+
+    .link-card span{
+      display:block;
+      color:#a99d84;
+      font-size:.82rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:.15rem;
+    }
+
+    .faq{
+      margin-top:2rem;
+      border-top:1px solid rgba(191,164,106,0.2);
+      padding-top:1rem;
+    }
+
+    details.faq-item{
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      background:rgba(8,15,14,0.32);
+      margin:.7rem 0;
+      overflow:hidden;
+    }
+
+    .faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      padding:.9rem 1rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+    }
+
+    .faq-item summary::-webkit-details-marker{ display:none; }
+
+    .faq-item p{
+      margin:0;
+      padding:0 1rem 1rem;
+      color:#d8ceb8;
+    }
+
+    .next-steps{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:.8rem;
+      margin-top:1rem;
+    }
+
+    .cta-card{
+      display:block;
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.23);
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(191,164,106,0.09), rgba(8,15,14,0.34));
+      text-decoration:none;
+    }
+
+    .cta-card b{
+      display:block;
+      color:#f3e7c7;
+      font-family:"Libre Baskerville", Georgia, serif;
+      line-height:1.25;
+      margin-bottom:.35rem;
+    }
+
+    .cta-card span{
+      display:block;
+      color:#d3c8b1;
+      font-size:.94rem;
+      line-height:1.45;
+    }
+
+    .cta-card:hover{
+      border-color:rgba(191,164,106,0.48);
+      background:linear-gradient(180deg, rgba(191,164,106,0.14), rgba(8,15,14,0.42));
+      text-decoration:none;
+    }
+
+    @media (max-width:900px){
+      .entry-shell{ grid-template-columns:1fr; }
+      .side-stack{ position:static; }
+      .accuracy-grid,
+      .next-steps{ grid-template-columns:1fr; }
+      .hero{ min-height:58vh; padding-top:6.5rem; }
+    }
+
+    @media (max-width:560px){
+      main{ padding-top:1.25rem; }
+      .article-card{ border-radius:20px; padding:1rem; }
+      .hero{ padding-bottom:2.15rem; }
+      .meta-pill{ font-size:.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Titanic quick answer · film & evidence</span>
+      <h1>How Accurate Is the Titanic Movie?</h1>
+      <p class="page-kicker">James Cameron’s <em>Titanic</em> is one of the most detail-minded historical films ever made about an ocean liner — but it is still a movie, not a documentary.</p>
+      <div class="meta-row" aria-label="Page context">
+        <span class="meta-pill">RMS Titanic</span>
+        <span class="meta-pill">1997 film</span>
+        <span class="meta-pill">History vs. drama</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="entry-shell">
+      <article class="article-card">
+        <div class="prose">
+          <div class="answer-box" id="answer">
+            <span class="label">Short answer</span>
+            <p><strong>The 1997 <em>Titanic</em> film is broadly accurate in its setting, shipboard atmosphere, and general outline of the disaster,</strong> but it combines historical reconstruction with fictional main characters, compressed timelines, invented dialogue, dramatic symbolism, and simplified moral contrasts.</p>
+          </div>
+
+          <h2 id="accurate">What the movie gets right</h2>
+          <p>The film’s strongest historical value is visual and atmospheric. Its sets, class distinctions, shipboard routines, public rooms, lifeboats, wireless room, promenade spaces, and sinking sequence were built around an unusually serious attempt to recreate the world of Titanic for a popular audience.</p>
+
+          <p>That does not mean every detail is exact. It means the film is often careful in the broad physical setting: Titanic is treated as a working ocean liner with class-separated spaces, shipboard staff, social routines, machinery, and passenger movement rather than as a generic disaster backdrop.</p>
+
+          <div class="accuracy-grid" aria-label="Titanic movie accuracy overview">
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Strongest accuracy</h3>
+              <p>The look and feel of many ship spaces, the broad sequence of the sinking, and the use of real historical figures.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Most simplified</h3>
+              <p>Timelines, character motivations, crowd behavior, and the moral clarity of certain dramatic scenes.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Most fictional</h3>
+              <p>The central romance, many private conversations, and several scenes designed to carry emotional or symbolic weight.</p>
+            </section>
+          </div>
+
+          <h2 id="fictional">Jack and Rose are fictional</h2>
+          <p>The central love story is not a documented Titanic event. Jack Dawson and Rose DeWitt Bukater are fictional characters created to move viewers through different parts of the ship and different layers of Edwardian society.</p>
+
+          <p>That matters because many viewers remember Titanic through Jack and Rose first, and the historical disaster second. The characters are useful as narrative guides, but they should not be treated as evidence for how particular real passengers behaved, spoke, or felt during the voyage.</p>
+
+          <h2 id="simplified">What the film simplifies</h2>
+          <p>Historical films almost always compress time. Titanic’s final hours involved confusion, incomplete information, uneven communication, changing conditions, and decisions made under pressure. The movie often turns that complexity into clear scenes with recognizable emotional beats.</p>
+
+          <div class="comparison-list" aria-label="Movie simplifications">
+            <div class="comparison-item">
+              <b>Class conflict</b>
+              <span>The film emphasizes separation and inequality, which were real parts of ocean liner travel, but dramatic scenes can make the system feel more neatly villainous than the evidence allows.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Officer and crew behavior</b>
+              <span>Real crew actions were varied, pressured, and often difficult to reconstruct. A film has to make individuals legible quickly, which can flatten uncertainty.</span>
+            </div>
+            <div class="comparison-item">
+              <b>The sinking sequence</b>
+              <span>The broad breakup and sinking are grounded in wreck evidence, but precise angles, timing, lighting, sounds, and crowd movements are interpretive reconstructions.</span>
+            </div>
+          </div>
+
+          <h2 id="historical-figures">Real people appear, but not every scene is evidence</h2>
+          <p>The film includes real Titanic figures such as Captain Edward J. Smith, Thomas Andrews, J. Bruce Ismay, Molly Brown, and others. Their presence gives the film historical texture, but scripted dialogue and private moments should be treated cautiously unless they are supported by surviving testimony or contemporary evidence.</p>
+
+          <p>This is especially important with Titanic, because many stories about the ship became famous through repeated retelling. A scene can be emotionally persuasive without being securely documented.</p>
+
+          <div class="note">
+            <p><strong>Curator’s note:</strong> A good historical film can be valuable without being a substitute for evidence. The useful question is not only “did this exact scene happen?” but “what kind of evidence would we need to say that it did?”</p>
+          </div>
+
+          <h2 id="breakup">Did Titanic really break in half?</h2>
+          <p>Yes. The wreck’s condition confirms that Titanic broke apart before reaching the seabed. Earlier public memory often imagined the ship sinking more or less intact, but wreck evidence changed the conversation dramatically after the site was found in 1985.</p>
+
+          <p>The film’s visual treatment of the breakup helped reshape popular understanding. Still, the precise mechanics of the breakup — including angles, stresses, timing, and how the stern behaved — belong in the category of evidence-based reconstruction, not simple certainty.</p>
+
+          <h2 id="best-use">The best way to use the movie</h2>
+          <p>The movie is best treated as a powerful gateway into Titanic history. It can help viewers visualize the ship, understand class separation, feel the scale of the disaster, and remember the human stakes. But it should be followed by sources that separate documented events from dramatized scenes.</p>
+
+          <p>For Ocean Liner Curator, the most useful approach is not to dismiss the movie or accept it uncritically. It is to use it as a starting point: what did the film make visible, what did it simplify, and where does the evidence ask us to slow down?</p>
+
+          <section class="faq" id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <details class="faq-item">
+              <summary>Was Rose based on a real Titanic passenger?</summary>
+              <p>No. Rose is fictional. She may feel plausible because the film places her inside a historically inspired first-class world, but she is not a documented Titanic survivor.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Did passengers really get locked below decks?</summary>
+              <p>The question is complicated. Titanic had class separation and controlled access points, but the film’s dramatic treatment should not be read as a complete documentary account of third-class movement during the evacuation.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Did the band really keep playing?</summary>
+              <p>Survivor accounts support the broad tradition that the musicians played during the sinking, but details such as the final tune remain uncertain and disputed.</p>
+            </details>
+          </section>
+
+          <h2 id="next">Where to go next</h2>
+          <p>This page is meant as a quick entry point. For the deeper comparison, continue into the full film-versus-history page and the broader Titanic evidence path.</p>
+
+          <div class="next-steps" aria-label="Related Titanic pages">
+            <a class="cta-card" href="/titanic-history-vs-movie">
+              <b>Titanic: History vs. James Cameron’s Film</b>
+              <span>A deeper comparison of the film’s historical grounding, dramatic choices, and evidence questions.</span>
+            </a>
+            <a class="cta-card" href="/what-titanic-teaches-about-evidence">
+              <b>What Titanic Teaches About Evidence</b>
+              <span>A careful look at testimony, wreck evidence, myth formation, and matching claims to documentation.</span>
+            </a>
+            <a class="cta-card" href="/titanic">
+              <b>RMS Titanic Hub</b>
+              <span>Start from the main Titanic guide and move through timelines, essays, public rooms, and artifacts.</span>
+            </a>
+          </div>
+
+          <h2 id="sources">Source notes</h2>
+          <p>This entry page summarizes the broad distinction between historical reconstruction and dramatic filmmaking. For deeper work, compare film scenes against inquiry testimony, survivor accounts, wreck evidence, deck plans, and specialist Titanic scholarship.</p>
+          <ul class="source-list">
+            <li>British and American inquiry testimony into the loss of RMS Titanic.</li>
+            <li>Survivor accounts and contemporary reporting, evaluated with caution for memory, repetition, and later myth-making.</li>
+            <li>Wreck-site evidence and post-1985 interpretations of the ship’s breakup and debris field.</li>
+            <li>Specialist Titanic scholarship on ship design, passenger spaces, evacuation, and public memory.</li>
+          </ul>
+        </div>
+      </article>
+
+      <aside class="side-stack" aria-label="Page navigation and related links">
+        <section class="side-card">
+          <h2>On this page</h2>
+          <nav class="toc" aria-label="Section links">
+            <a href="#answer">Short answer</a>
+            <a href="#accurate">What it gets right</a>
+            <a href="#fictional">Jack and Rose</a>
+            <a href="#simplified">What it simplifies</a>
+            <a href="#historical-figures">Real figures</a>
+            <a href="#breakup">The breakup</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </section>
+
+        <section class="side-card">
+          <h2>Best next link</h2>
+          <p>For readers who want the full comparison, send them into your dedicated film-versus-history page.</p>
+          <a class="link-card" href="/titanic-history-vs-movie">
+            <span>Film & history</span>
+            Titanic: History vs. James Cameron’s Film
+          </a>
+        </section>
+
+        <section class="side-card">
+          <h2>Titanic paths</h2>
+          <a class="link-card" href="/titanic">
+            <span>Content hub</span>
+            RMS Titanic Hub
+          </a>
+          <a class="link-card" href="/ships/titanic-southampton-to-rescue-timeline">
+            <span>Timeline</span>
+            Titanic: Departure to Rescue
+          </a>
+          <a class="link-card" href="/what-happened-to-titanic-artifacts">
+            <span>Artifacts</span>
+            What Happened to Titanic Artifacts?
+          </a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+</body>
+</html>
