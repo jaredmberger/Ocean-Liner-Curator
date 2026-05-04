@@ -922,6 +922,8 @@ h1 {
   font-size:.75rem;
   letter-spacing:.14em;
   text-transform:uppercase;
+  text-align:center !important;
+  align-items:center !important;
 }
 
 .entry-links-header h2{
@@ -930,6 +932,8 @@ h1 {
   font-family:"Libre Baskerville", Georgia, serif;
   font-size:clamp(1.4rem, 3vw, 2rem);
   letter-spacing:-.02em;
+  text-align:center !important;
+  align-items:center !important;
 }
 
 .entry-links-header h2::after{
@@ -939,6 +943,8 @@ h1 {
   height:1px;
   margin:.55rem 0 0;
   background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+  text-align:center !important;
+  align-items:center !important;
 }
 
 .entry-links-intro{
