@@ -4,11 +4,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!document.querySelector(".footer-star")) {
     const copyright = document.querySelector(".copyright");
     if (copyright) {
-      const star = document.createElement("p");
-      star.className = "footer-star";
-      star.setAttribute("aria-hidden", "true");
-      star.textContent = "★";
-      copyright.insertAdjacentElement("afterend", star);
+      const star = document.createElement("a");
+
+  star.className = "footer-star";
+
+  star.href = "/";
+
+  star.setAttribute("aria-label", "Return to OceanLiners.net homepage");
+
+  star.textContent = "★";
+
+
     }
   }
 
