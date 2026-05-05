@@ -1077,3 +1077,15 @@ h1 {
   opacity:0.85 !important;
   flex:0 0 48px !important;
 }
+
+a.footer-star,
+a.footer-star:link,
+a.footer-star:visited,
+a.footer-star:hover,
+a.footer-star:active,
+a.footer-star:focus{
+  text-decoration:none !important;
+  border-bottom:none !important;
+  color:var(--olc-accent) !important;
+  cursor:pointer;
+}

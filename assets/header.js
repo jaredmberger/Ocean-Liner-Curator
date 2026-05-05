@@ -1,20 +1,28 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  // ---- Footer star homepage link ----
+  const copyright = document.querySelector(".copyright");
 
-  // ---- Footer star injection ----
-  if (!document.querySelector(".footer-star")) {
-    const copyright = document.querySelector(".copyright");
-    if (copyright) {
+  if (copyright) {
+    const existing = document.querySelector(".footer-star");
+
+    if (existing) {
+      if (existing.tagName.toLowerCase() !== "a") {
+        const link = document.createElement("a");
+        link.className = existing.className;
+        link.href = "/";
+        link.setAttribute("aria-label", "Return to OceanLiners.net homepage");
+        link.textContent = existing.textContent || "★";
+
+        existing.replaceWith(link);
+      }
+    } else {
       const star = document.createElement("a");
+      star.className = "footer-star";
+      star.href = "/";
+      star.setAttribute("aria-label", "Return to OceanLiners.net homepage");
+      star.textContent = "★";
 
-  star.className = "footer-star";
-
-  star.href = "/";
-
-  star.setAttribute("aria-label", "Return to OceanLiners.net homepage");
-
-  star.textContent = "★";
-
-
+      copyright.insertAdjacentElement("afterend", star);
     }
   }
 
@@ -32,8 +40,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.dataLayer = window.dataLayer || [];
     window.gtag = function(){ dataLayer.push(arguments); };
 
-    gtag('js', new Date());
-    gtag('config', 'G-JPZ291Q3RB');
+    gtag("js", new Date());
+    gtag("config", "G-JPZ291Q3RB");
   })();
 
   // ---- Simple Analytics ----
@@ -50,6 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // ---- Header injection ----
   const mount = document.getElementById("site-header");
+
   if (mount) {
     try {
       const res = await fetch("/partials/header.html", { cache: "no-cache" });
@@ -59,5 +68,4 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.warn(err);
     }
   }
-
 });
