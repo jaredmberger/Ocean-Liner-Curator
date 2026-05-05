@@ -14,6 +14,13 @@
     href: "/ocean-liner-cruise-ship"
   },
   {
+    meta: "Basics · Ships",
+    title: "What Was the Golden Age of Ocean Liners?",
+    desc:
+      "The fastest, most reliable way to cross oceans, carry mail, and move people at scale.",
+    href: "/what-was-the-golden-age-of-ocean-liners"
+  },
+  {
     meta: "Experience · Voyages",
     title: "What was it like to cross the Atlantic on an ocean liner?",
     desc:
