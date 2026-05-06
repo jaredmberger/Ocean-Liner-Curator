@@ -4,23 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Ocean Liner Collecting: A Curated Guide — Ocean Liner Curator</title>
-  <meta name="description" content="A practical guide to ocean liner collecting: how to evaluate memorabilia, artifacts, provenance, attribution claims, fakes, evidence, and ship-specific objects with care." />
+  <title><title>Ocean Liner Collecting Guide: Artifacts, Provenance & Attribution — Ocean Liner Curator</title></title>
+  <meta name="description" content="A practical guide to ocean liner collecting: how to evaluate maritime artifacts, memorabilia, provenance, attribution claims, and historical evidence with clarity and restraint." />
 
   <link rel="canonical" href="https://oceanliners.net/ocean-liner-collecting-guide" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0a1110" />
 
   <meta property="og:site_name" content="Ocean Liner Curator" />
-  <meta property="og:title" content="Ocean Liner Collecting: A Curated Guide — Ocean Liner Curator" />
-  <meta property="og:description" content="A practical evidence-first guide to ocean liner collecting: provenance, attribution, fakes, memorabilia, and how to evaluate artifacts with restraint." />
+  <meta property="og:title" content="<title>Ocean Liner Collecting Guide: Artifacts, Provenance & Attribution — Ocean Liner Curator</title>" />
+  <meta property="og:description" content="A practical guide to ocean liner collecting: how to evaluate maritime artifacts, memorabilia, provenance, attribution claims, and historical evidence with clarity and restraint." />
   <meta property="og:url" content="https://oceanliners.net/ocean-liner-collecting-guide" />
   <meta property="og:type" content="article" />
   <meta property="og:image" content="https://oceanliners.net/logo.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ocean Liner Collecting: A Curated Guide — Ocean Liner Curator" />
-  <meta name="twitter:description" content="Evidence-first collecting guidance: provenance, attribution, fakes, and how to evaluate ocean liner artifacts with restraint and clarity." />
+  <meta name="twitter:title" content="<title>Ocean Liner Collecting Guide: Artifacts, Provenance & Attribution — Ocean Liner Curator</title>" />
+  <meta name="twitter:description" content="A practical guide to ocean liner collecting: how to evaluate maritime artifacts, memorabilia, provenance, attribution claims, and historical evidence with clarity and restraint." />
   <meta name="twitter:image" content="https://oceanliners.net/logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -795,6 +795,59 @@
       margin-top:1.8rem;
     }
     
+    .explore-network{
+  max-width:var(--measure);
+  margin:2.6rem auto 2.2rem;
+}
+
+.explore-network-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.85rem;
+  margin-top:1rem;
+}
+
+.explore-network-card{
+  display:block;
+  padding:1rem;
+  border-radius:14px;
+  border:1px solid rgba(191,164,106,0.22);
+  background:
+    linear-gradient(180deg,
+      rgba(191,164,106,0.06),
+      rgba(0,0,0,0.10));
+  color:rgba(230,223,207,0.90);
+  text-decoration:none;
+  line-height:1.55;
+  transition:
+    transform .16s ease,
+    border-color .16s ease,
+    background .16s ease;
+}
+
+.explore-network-card span{
+  display:block;
+  margin-bottom:.4rem;
+  color:var(--accent);
+  font-variant:small-caps;
+  letter-spacing:.08em;
+}
+
+.explore-network-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(191,164,106,0.45);
+  background:
+    linear-gradient(180deg,
+      rgba(191,164,106,0.10),
+      rgba(0,0,0,0.14));
+}
+
+@media (max-width:820px){
+  .explore-network-grid{
+    grid-template-columns:1fr;
+  }
+}
+    
   </style>
 
   <link rel="stylesheet" href="/assets/nav.css" />
@@ -806,7 +859,7 @@
   <section class="hero" aria-label="Curated Guide hero">
     <div class="hero-inner">
       <h1>Ocean Liner Collecting:<br />A Curated Guide</h1>
-      <p>Researching, evaluating, and preserving ocean liner material culture.</p>
+      <p>Researching, evaluating, and preserving ocean liner artifacts, memorabilia, and material culture.</p>
     </div>
   </section>
 
@@ -1020,7 +1073,46 @@ applying the same evidence-first standards used throughout this site.
       </ul>
     </section>
 
-    
+<section class="explore-network" aria-labelledby="explore-network-heading">
+
+  <h2 id="explore-network-heading">
+    Looking to Explore Beyond Collecting?
+  </h2>
+
+  <p>
+    Ocean liner collecting exists within a much larger historical landscape:
+    ships, companies, migration, interiors, design systems, Atlantic crossings,
+    preservation debates, and the material culture surrounding passenger travel.
+  </p>
+
+  <p>
+    If you want broader historical context—or simply want to continue exploring—
+    these sections provide curated entry points into the wider Ocean Liner Curator archive.
+  </p>
+
+  <div class="explore-network-grid">
+
+    <a class="explore-network-card" href="/ships/ships">
+      <span>★ Ship Archive</span>
+      Browse 200+ ship guides covering Atlantic liners, migration-era vessels,
+      express steamers, and later passenger ships across multiple eras.
+    </a>
+
+    <a class="explore-network-card" href="/collections/">
+      <span>★ Research Collections</span>
+      Curated thematic paths through rivalry, preservation, speed records,
+      interiors, design transitions, and maritime change over time.
+    </a>
+
+    <a class="explore-network-card" href="/explore/">
+      <span>★ Explore Ocean Liners</span>
+      A structured starting point for essays, guides, timelines,
+      collecting material, and evidence-first liner history.
+    </a>
+
+  </div>
+
+</section>    
 
     <div class="standards-badge">
       <a href="/sources" aria-label="Sources & Standards">
