@@ -32,200 +32,539 @@
 
   <link rel="stylesheet" href="/assets/nav.css" />
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.oceanliners.net/what-was-the-blue-riband#webpage",
+        "url": "https://www.oceanliners.net/what-was-the-blue-riband",
+        "name": "What Was the Blue Riband? — Ocean Liner Curator",
+        "description": "A careful, curator-minded answer to what the Blue Riband was: Atlantic speed prestige, unofficial records, national rivalry, ocean liner marketing, and why the title mattered.",
+        "isPartOf": {
+          "@id": "https://www.oceanliners.net/#website"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Blue Riband"
+          },
+          {
+            "@type": "Thing",
+            "name": "Transatlantic ocean liner speed records"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.oceanliners.net/what-was-the-blue-riband#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.oceanliners.net/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Research Collections",
+            "item": "https://www.oceanliners.net/collections/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "What Was the Blue Riband?",
+            "item": "https://www.oceanliners.net/what-was-the-blue-riband"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.oceanliners.net/what-was-the-blue-riband#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What was the Blue Riband?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Blue Riband was the unofficial title associated with the fastest transatlantic passenger liner crossing, usually judged by average speed rather than simply elapsed time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was the Blue Riband an official award?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For much of its history, the Blue Riband was an unofficial prestige title recognized by shipping companies, newspapers, and the public. Later trophies, including the Hales Trophy, became associated with transatlantic speed records, but the Blue Riband itself began as a broader tradition of reputation and recognition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why did the Blue Riband matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Blue Riband mattered because Atlantic speed represented engineering power, reliability, commercial prestige, national pride, and modernity during the ocean liner era."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,26,24,0.74);
+      --panel-soft:rgba(15,26,24,0.52);
+      --ink:#efe9dc;
+      --muted:#cfc2a8;
+      --faint:#9f9278;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,0.18);
+      --accent-line:rgba(191,164,106,0.34);
+      --edge:rgba(191,164,106,0.25);
+      --shadow:rgba(0,0,0,0.34);
+      --max:min(1080px, calc(100% - 2rem));
+      --measure:72ch;
+    }
+
+    *{ box-sizing:border-box; }
+
     body{
       margin:0;
-      background:#0a1110;
-      color:#efe9dc;
+      color:var(--ink);
       font-family:"Spectral", Georgia, serif;
       line-height:1.65;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(191,164,106,0.13), transparent 32rem),
+        radial-gradient(circle at 82% 0%, rgba(255,255,255,0.06), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #0b1514 48%, #070d0c 100%);
+      min-height:100vh;
     }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:0.11;
+      background-image:url('/tile3.png');
+      background-size:360px auto;
+      mix-blend-mode:screen;
+    }
+
+    a{ color:#ead59b; text-decoration:none; }
+    a:hover{ color:#fff1c2; text-decoration:underline; text-underline-offset:0.18em; }
 
     .hero{
-      min-height:60vh;
+      position:relative;
+      min-height:62vh;
       display:grid;
       align-items:end;
-      padding:3rem 0;
+      padding:3rem 0 3rem !important;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.2);
       background:
-        linear-gradient(180deg, rgba(10,17,16,.35), rgba(10,17,16,.92)),
+        linear-gradient(180deg, rgba(10,17,16,0.30), rgba(10,17,16,0.9)),
+        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.25), transparent 31rem),
+        linear-gradient(125deg, rgba(10,17,16,0.22), rgba(10,17,16,0.95)),
         url('/images/blue-riband-hero.jpg') center/cover no-repeat;
-      border-bottom:1px solid rgba(191,164,106,.2);
     }
 
-    .hero-inner,
-    main{
-      width:min(1080px, calc(100% - 2rem));
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:42%;
+      background:linear-gradient(180deg, transparent, #0a1110 92%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:var(--max) !important;
       margin:0 auto;
     }
 
     .hero-badge{
-      display:inline-block;
-      padding:.4rem .7rem;
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      max-width:100%;
+      padding:.42rem .68rem;
+      border:1px solid rgba(191,164,106,0.36);
       border-radius:999px;
-      border:1px solid rgba(191,164,106,.35);
-      background:rgba(10,17,16,.55);
+      background:rgba(10,17,16,0.55);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
       color:#eadcae;
-      font-family:"Libre Baskerville", serif;
-      font-size:.75rem;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.74rem;
+      letter-spacing:.11em;
       text-transform:uppercase;
-      letter-spacing:.12em;
+      line-height:1.25;
     }
 
-    h1{
-      font-family:"Libre Baskerville", serif;
-      font-size:clamp(2.5rem,7vw,5rem);
+    .hero h1{
+      max-width:920px;
+      margin:.95rem 0 .75rem;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(2.25rem, 7vw, 5.15rem);
       line-height:1.02;
-      margin:.9rem 0;
+      letter-spacing:-.045em;
+      text-wrap:balance;
+      text-shadow:0 16px 34px rgba(0,0,0,0.45);
     }
 
     .page-kicker{
       max-width:760px;
+      margin:0;
       color:#e5dcc8;
-      font-size:1.15rem;
+      font-size:clamp(1.05rem, 2vw, 1.32rem);
+      line-height:1.55;
+      text-shadow:0 10px 24px rgba(0,0,0,0.36);
+    }
+
+    .meta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+      margin-top:1.25rem;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      padding:.38rem .65rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:999px;
+      background:rgba(10,17,16,0.48);
+      color:var(--muted);
+      font-size:.86rem;
     }
 
     main{
-      padding:2rem 0 4rem;
+      width:var(--max);
+      margin:0 auto;
+      padding:2.4rem 0 4rem;
     }
 
     .entry-shell{
       display:grid;
-      grid-template-columns:minmax(0,1fr) 315px;
+      grid-template-columns:minmax(0, 1fr) 315px;
       gap:1.25rem;
+      align-items:start;
     }
 
     .article-card,
-    .side-card{
-      border:1px solid rgba(191,164,106,.24);
-      border-radius:24px;
-      background:linear-gradient(180deg, rgba(18,31,29,.82), rgba(11,19,18,.76));
-      box-shadow:0 18px 45px rgba(0,0,0,.34);
+    .side-card,
+    .answer-box,
+    .link-card,
+    .note{
+      border:1px solid var(--edge);
+      background:linear-gradient(180deg, rgba(18,31,29,0.82), rgba(11,19,18,0.76));
+      box-shadow:0 18px 45px var(--shadow);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
     }
 
     .article-card{
-      padding:2rem;
+      border-radius:24px;
+      padding:clamp(1.1rem, 3vw, 2rem);
     }
+
+    .prose{ max-width:var(--measure); }
+
+    .prose h2,
+    .side-card h2{
+      margin:2rem 0 .75rem;
+      color:#f4ead2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(1.42rem, 3vw, 2.1rem);
+      line-height:1.18;
+      letter-spacing:-.025em;
+    }
+
+    .prose h2:first-child{ margin-top:0; }
+
+    .prose h2::after,
+    .side-card h2::after{
+      content:"";
+      display:block;
+      width:88px;
+      height:1px;
+      margin:.62rem 0 0;
+      background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+    }
+
+    .prose h3{
+      margin:1.45rem 0 .45rem;
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1.1rem;
+      letter-spacing:.01em;
+    }
+
+    .prose p{ margin:.75rem 0 1rem; color:#e7decb; }
+    .prose strong{ color:#fff4d3; }
 
     .answer-box{
-      padding:1.1rem;
+      margin:0 0 1.5rem;
+      padding:1.1rem 1.15rem;
       border-radius:18px;
-      margin-bottom:1.5rem;
-      border:1px solid rgba(191,164,106,.2);
-      background:rgba(15,26,24,.78);
+      background:
+        radial-gradient(circle at top left, rgba(191,164,106,0.18), transparent 18rem),
+        rgba(15,26,24,0.78);
     }
 
-    .label{
+    .answer-box .label{
       display:block;
-      margin-bottom:.4rem;
       color:#d9c17f;
-      font-family:"Libre Baskerville", serif;
+      font-family:"Libre Baskerville", Georgia, serif;
       font-size:.78rem;
-      text-transform:uppercase;
       letter-spacing:.13em;
+      text-transform:uppercase;
+      margin-bottom:.4rem;
     }
 
-    h2{
-      font-family:"Libre Baskerville", serif;
-      margin-top:2rem;
-      color:#f4ead2;
+    .answer-box p{
+      margin:0;
+      color:#f1eadc;
+      font-size:1.08rem;
+      line-height:1.55;
     }
 
-    p{
-      color:#e7decb;
-    }
-
-    .comparison-grid{
+    .accuracy-grid{
       display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
+      grid-template-columns:repeat(3, minmax(0,1fr));
       gap:.8rem;
-      margin:1.2rem 0;
+      margin:1.15rem 0 1.45rem;
     }
 
-    .comparison-card{
+    .accuracy-card{
+      min-height:100%;
       padding:1rem;
+      border:1px solid rgba(191,164,106,0.21);
       border-radius:18px;
-      border:1px solid rgba(191,164,106,.2);
-      background:rgba(8,15,14,.42);
+      background:rgba(8,15,14,0.42);
     }
 
-    .comparison-card h3{
-      margin:.2rem 0 .35rem;
-      font-family:"Libre Baskerville", serif;
+    .accuracy-card .icon{
+      display:inline-grid;
+      place-items:center;
+      width:2rem;
+      height:2rem;
+      margin-bottom:.55rem;
+      border-radius:999px;
+      color:#f5e7bb;
+      background:rgba(191,164,106,0.14);
+      border:1px solid rgba(191,164,106,0.24);
+    }
+
+    .accuracy-card h3{
+      margin:.15rem 0 .38rem;
       color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
       font-size:1rem;
+      line-height:1.25;
+    }
+
+    .accuracy-card p{
+      margin:0;
+      color:#d8ceb8;
+      font-size:.95rem;
+      line-height:1.5;
+    }
+
+    .comparison-list{
+      display:grid;
+      gap:.75rem;
+      margin:1rem 0 1.35rem;
+    }
+
+    .comparison-item{
+      padding:.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.19);
+      border-radius:17px;
+      background:rgba(8,15,14,0.34);
+    }
+
+    .comparison-item b{
+      display:block;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      margin-bottom:.25rem;
+    }
+
+    .comparison-item span{
+      display:block;
+      color:#d8ceb8;
+      line-height:1.5;
     }
 
     .note{
       margin:1.3rem 0;
-      padding:1rem;
+      padding:1rem 1.05rem;
       border-radius:18px;
-      border:1px solid rgba(191,164,106,.18);
-      background:rgba(10,17,16,.54);
+      background:rgba(10,17,16,0.54);
+    }
+
+    .note p{ margin:0; color:#d8ceb8; }
+
+    .source-list{
+      margin:1rem 0 0;
+      padding-left:1.1rem;
+      color:#d9cfbb;
+      font-size:.95rem;
+    }
+
+    .source-list li{ margin:.35rem 0; }
+
+    .side-stack{
+      position:sticky;
+      top:1rem;
+      display:grid;
+      gap:1rem;
+    }
+
+    .side-card{
+      border-radius:22px;
+      padding:1rem;
+    }
+
+    .side-card h2{
+      margin-top:0;
+      font-size:1.18rem;
+    }
+
+    .side-card p{
+      margin:.55rem 0 .85rem;
+      color:#d8ceb8;
+      font-size:.96rem;
+      line-height:1.5;
+    }
+
+    .toc{
+      display:grid;
+      gap:.4rem;
+      margin-top:.65rem;
+    }
+
+    .toc a,
+    .link-card{
+      display:block;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.18);
+      background:rgba(8,15,14,0.36);
+      padding:.7rem .78rem;
+      color:#eadcae;
+      text-decoration:none;
+      line-height:1.3;
+    }
+
+    .toc a:hover,
+    .link-card:hover{
+      border-color:rgba(191,164,106,0.42);
+      background:rgba(191,164,106,0.08);
+      text-decoration:none;
+    }
+
+    .link-card{ margin:.55rem 0; }
+
+    .link-card span{
+      display:block;
+      color:#a99d84;
+      font-size:.82rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:.15rem;
+    }
+
+    .faq{
+      margin-top:2rem;
+      border-top:1px solid rgba(191,164,106,0.2);
+      padding-top:1rem;
+    }
+
+    details.faq-item{
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      background:rgba(8,15,14,0.32);
+      margin:.7rem 0;
+      overflow:hidden;
+    }
+
+    .faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      padding:.9rem 1rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+    }
+
+    .faq-item summary::-webkit-details-marker{ display:none; }
+
+    .faq-item p{
+      margin:0;
+      padding:0 1rem 1rem;
+      color:#d8ceb8;
     }
 
     .next-steps{
       display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
+      grid-template-columns:repeat(3, minmax(0, 1fr));
       gap:.8rem;
       margin-top:1rem;
     }
 
     .cta-card{
       display:block;
+      min-height:100%;
       padding:1rem;
+      border:1px solid rgba(191,164,106,0.23);
       border-radius:18px;
-      border:1px solid rgba(191,164,106,.23);
-      background:linear-gradient(180deg, rgba(191,164,106,.09), rgba(8,15,14,.34));
+      background:linear-gradient(180deg, rgba(191,164,106,0.09), rgba(8,15,14,0.34));
       text-decoration:none;
-      color:#efe9dc;
     }
 
     .cta-card b{
       display:block;
+      color:#f3e7c7;
+      font-family:"Libre Baskerville", Georgia, serif;
+      line-height:1.25;
       margin-bottom:.35rem;
-      font-family:"Libre Baskerville", serif;
     }
 
-    .side-stack{
-      display:grid;
-      gap:1rem;
-      position:sticky;
-      top:1rem;
-    }
-
-    .side-card{
-      padding:1rem;
-    }
-
-    .toc{
-      display:grid;
-      gap:.45rem;
-    }
-
-    .toc a,
-    .link-card{
+    .cta-card span{
       display:block;
-      padding:.7rem .8rem;
-      border-radius:14px;
-      border:1px solid rgba(191,164,106,.18);
-      background:rgba(8,15,14,.36);
-      color:#eadcae;
+      color:#d3c8b1;
+      font-size:.94rem;
+      line-height:1.45;
+    }
+
+    .cta-card:hover{
+      border-color:rgba(191,164,106,0.48);
+      background:linear-gradient(180deg, rgba(191,164,106,0.14), rgba(8,15,14,0.42));
       text-decoration:none;
     }
 
-    @media(max-width:900px){
-      .entry-shell{
-        grid-template-columns:1fr;
-      }
+    @media (max-width:900px){
+      .entry-shell{ grid-template-columns:1fr; }
+      .side-stack{ position:static; }
+      .accuracy-grid,
+      .next-steps{ grid-template-columns:1fr; }
+      .hero{ min-height:58vh; padding-top:6.5rem; }
+    }
 
-      .comparison-grid,
-      .next-steps{
-        grid-template-columns:1fr;
-      }
-
-      .side-stack{
-        position:static;
-      }
+    @media (max-width:560px){
+      main{ padding-top:1.25rem; }
+      .article-card{ border-radius:20px; padding:1rem; }
+      .hero{ padding-bottom:2.15rem; }
+      .meta-pill{ font-size:.8rem; }
     }
   </style>
 </head>
@@ -237,111 +576,184 @@
     <div class="hero-inner">
       <span class="hero-badge">Ocean liner quick answer · speed & prestige</span>
       <h1>What Was the Blue Riband?</h1>
-      <p class="page-kicker">The Blue Riband was the unofficial title for the fastest transatlantic passenger crossing — a contest shaped by engineering, prestige, national rivalry, and the public imagination of the ocean liner era.</p>
+      <p class="page-kicker">The Blue Riband was the unofficial title attached to the fastest transatlantic passenger crossing — a speed contest that became one of the great symbols of ocean liner prestige.</p>
+      <div class="meta-row" aria-label="Page context">
+        <span class="meta-pill">Atlantic speed</span>
+        <span class="meta-pill">Ocean liner prestige</span>
+        <span class="meta-pill">Blue Riband</span>
+      </div>
     </div>
   </header>
 
   <main>
     <div class="entry-shell">
-
       <article class="article-card">
-        <div class="answer-box" id="answer">
-          <span class="label">Short answer</span>
-          <p><strong>The Blue Riband was an unofficial Atlantic speed title awarded by reputation and public recognition,</strong> not originally by a formal governing body. It became one of the great prestige contests of the ocean liner era, linking speed with national pride, technology, and commercial identity.</p>
-        </div>
-
-        <h2 id="meaning">What the Blue Riband actually meant</h2>
-        <p>The title generally referred to the passenger liner holding the fastest average crossing speed across the Atlantic. Newspapers, shipping companies, passengers, and the public followed these records closely because they symbolized more than transportation alone.</p>
-
-        <p>A fast crossing suggested engineering power, reliability, prestige, and modernity. In practice, the Blue Riband became part publicity victory, part technological benchmark, and part international rivalry.</p>
-
-        <div class="comparison-grid">
-          <div class="comparison-card">
-            <h3>Prestige</h3>
-            <p>Holding the Blue Riband gave a shipping line enormous publicity and symbolic status.</p>
+        <div class="prose">
+          <div class="answer-box" id="answer">
+            <span class="label">Short answer</span>
+            <p><strong>The Blue Riband was the unofficial prestige title for the fastest transatlantic passenger liner crossing,</strong> usually judged by average speed rather than simply total time. It mattered because speed at sea represented engineering power, reliability, national pride, commercial strength, and modernity.</p>
           </div>
 
-          <div class="comparison-card">
-            <h3>Engineering</h3>
-            <p>Record crossings reflected advances in hull design, propulsion, turbines, and shipbuilding.</p>
+          <h2 id="meaning">What the Blue Riband actually meant</h2>
+          <p>The Blue Riband was not originally a formal award handed out by a single authority. It was a reputation, a headline, and a marketing claim that grew into one of the most famous ideas in ocean liner history.</p>
+
+          <p>In general use, the title referred to the passenger liner that had made the fastest crossing of the North Atlantic. The exact framing could depend on direction, route, measurement, and era, but the public meaning was simple: this was the ship to beat.</p>
+
+          <div class="accuracy-grid" aria-label="Blue Riband overview">
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Speed</h3>
+              <p>The title was tied to fast Atlantic crossings, especially average speed over the measured route.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Prestige</h3>
+              <p>Holding the title gave a liner and shipping company enormous public status.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Rivalry</h3>
+              <p>The contest carried national and commercial meaning far beyond the timetable.</p>
+            </section>
           </div>
 
-          <div class="comparison-card">
-            <h3>National rivalry</h3>
-            <p>Britain, Germany, France, Italy, and the United States all treated Atlantic speed as a matter of national prestige.</p>
+          <h2 id="unofficial">It began as an unofficial tradition</h2>
+          <p>One of the most important points is that the Blue Riband was not a neat modern sports championship. It developed through shipping culture, press coverage, company publicity, and public fascination with Atlantic speed.</p>
+
+          <p>That means the Blue Riband can be confusing if treated as a single formal prize with simple rules from beginning to end. Later trophies and record claims added more structure, but the older tradition was broader and more fluid: a liner became famous because people recognized it as the fastest.</p>
+
+          <h2 id="why-mattered">Why speed mattered so much</h2>
+          <p>In the ocean liner era, faster crossings meant more than convenience. Speed suggested technical confidence, dependable machinery, efficient operations, and command of the North Atlantic. It also helped shipping lines advertise superiority in a crowded market.</p>
+
+          <p>A Blue Riband claim could imply that a ship was not merely comfortable, but advanced. Passengers, newspapers, shipbuilders, governments, and rival lines all understood that speed had symbolic weight.</p>
+
+          <div class="comparison-list" aria-label="Why the Blue Riband mattered">
+            <div class="comparison-item">
+              <b>Commercial power</b>
+              <span>A record-setting liner gave a shipping line publicity that ordinary advertising could not easily match.</span>
+            </div>
+            <div class="comparison-item">
+              <b>National image</b>
+              <span>British, German, French, Italian, and American liners all carried national prestige into the Atlantic speed contest.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Engineering confidence</b>
+              <span>Fast crossings represented advances in hull design, engines, turbines, boilers, materials, and operational discipline.</span>
+            </div>
           </div>
+
+          <h2 id="famous-ships">The ships that made the title famous</h2>
+          <p>Many of the most celebrated liners of the Atlantic era became associated with Blue Riband rivalry. Ships such as Mauretania, Bremen, Rex, Normandie, Queen Mary, and SS United States helped turn speed into public drama.</p>
+
+          <p>Each ship belonged to a different moment. Early record-holders advertised the progress of steamship technology itself. Later record-holders became symbols of national ambition, interwar modernity, postwar engineering, and the last great burst of liner prestige before the jet age.</p>
+
+          <h2 id="queen-mary">Queen Mary and the prestige of speed</h2>
+          <p>RMS Queen Mary is one of the ships most closely associated with the Blue Riband story. Her rivalry with other major liners made Atlantic speed feel dramatic, visible, and culturally important. For Cunard, speed was not just a technical achievement; it reinforced the ship’s identity as a national and commercial flagship.</p>
+
+          <p>Queen Mary’s fame shows why the Blue Riband mattered. Passengers might have chosen a ship for schedule, comfort, route, class, or price, but the fastest liner carried an extra aura. It was a sign that the ship belonged at the front of the age.</p>
+
+          <div class="note">
+            <p><strong>Curator’s note:</strong> The Blue Riband is best understood as both a record and a story. The numbers mattered, but so did the public meaning attached to them.</p>
+          </div>
+
+          <h2 id="united-states">Why SS United States still matters to the Blue Riband</h2>
+          <p>SS United States gave the Blue Riband story its postwar climax. On her maiden voyage in 1952, she set a record that made her one of the most important speed liners in history. Her achievement represented American engineering confidence and the final great statement of scheduled transatlantic liner speed.</p>
+
+          <p>Her record also arrived just before the world changed. Jet aircraft would soon reshape transatlantic travel so completely that speed by sea could no longer compete with speed through the air.</p>
+
+          <h2 id="decline">Why the Blue Riband faded</h2>
+          <p>The Blue Riband lost cultural force because the world that made it meaningful changed. Once commercial jet travel became practical and widespread, the fastest ship was no longer the fastest way to cross the Atlantic.</p>
+
+          <p>That did not make the Blue Riband meaningless. Instead, it turned the title into a historical symbol: a reminder of the period when ocean liners were the supreme machines of long-distance passenger travel.</p>
+
+          <section class="faq" id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <details class="faq-item">
+              <summary>Was the Blue Riband a real trophy?</summary>
+              <p>The Blue Riband began as an unofficial prestige title rather than a single formal trophy. Later, the Hales Trophy became associated with transatlantic speed records, but the older Blue Riband tradition was broader than one object.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Was the Blue Riband based on average speed?</summary>
+              <p>Generally, yes. The title is usually discussed in terms of average speed over the measured Atlantic crossing, rather than just the shortest total elapsed time.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Which liner is most associated with the final great Blue Riband record?</summary>
+              <p>SS United States is central to the final phase of the story because her 1952 maiden-voyage record became the great postwar symbol of transatlantic liner speed.</p>
+            </details>
+          </section>
+
+          <h2 id="next">Where to go next</h2>
+          <p>This page is meant as a quick entry point. For a fuller route through speed, prestige, and the end of the liner era, continue into the SS United States, Queen Mary, and broader ocean liner pages.</p>
+
+          <div class="next-steps" aria-label="Related Blue Riband pages">
+            <a class="cta-card" href="/why-was-ss-united-states-so-fast">
+              <b>Why Was SS United States So Fast?</b>
+              <span>How engineering, weight reduction, propulsion, and military-influenced design produced record Atlantic speed.</span>
+            </a>
+            <a class="cta-card" href="/what-made-rms-queen-mary-famous">
+              <b>What Made RMS Queen Mary Famous?</b>
+              <span>How Queen Mary became a symbol of Atlantic prestige, speed, wartime service, and preservation.</span>
+            </a>
+            <a class="cta-card" href="/why-did-ocean-liners-disappear">
+              <b>Why Did Ocean Liners Disappear?</b>
+              <span>How jet travel, economics, and changing expectations reshaped the world that made speed records matter.</span>
+            </a>
+          </div>
+
+          <h2 id="sources">Source notes</h2>
+          <p>This entry page summarizes the Blue Riband as a historical and cultural concept rather than listing every record-holder. For deeper work, compare contemporary shipping reports, company publicity, measured routes, speed tables, and specialist liner scholarship.</p>
+          <ul class="source-list">
+            <li>Contemporary newspaper and shipping coverage of North Atlantic speed records.</li>
+            <li>Cunard, French Line, Norddeutscher Lloyd, United States Lines, and other company publicity surrounding record crossings.</li>
+            <li>Specialist ocean liner scholarship on Mauretania, Bremen, Rex, Normandie, Queen Mary, and SS United States.</li>
+            <li>Histories of the Hales Trophy, the Blue Riband tradition, and the decline of scheduled transatlantic passenger liners.</li>
+          </ul>
         </div>
-
-        <h2 id="unofficial">It began as an unofficial tradition</h2>
-        <p>For much of its history, the Blue Riband was not a formal prize with fixed rules. Instead, the title emerged through shipping culture and public recognition. Newspapers and liner companies tracked crossings and promoted record runs aggressively.</p>
-
-        <p>Only later did formal trophies such as the Hales Trophy become associated with Atlantic speed records. Even then, the broader cultural meaning of the Blue Riband remained larger than any single object or ceremony.</p>
-
-        <h2 id="ships">Which ships became famous for it?</h2>
-        <p>Many of the most celebrated liners of the Atlantic era were associated with the Blue Riband. Ships such as Mauretania, Bremen, Normandie, Queen Mary, and SS United States became famous partly because speed symbolized modern ocean travel at its most ambitious.</p>
-
-        <p>Different eras emphasized different values. Early record holders represented steamship progress itself; later liners reflected industrial competition, national image, and postwar technological confidence.</p>
-
-        <div class="note">
-          <p><strong>Curator’s note:</strong> The Blue Riband mattered because ocean liners were not only transportation systems. They were floating symbols of industrial power, commercial ambition, and national identity.</p>
-        </div>
-
-        <h2 id="united-states">Why SS United States is so important to the story</h2>
-        <p>SS United States remains especially important because she still holds the westbound transatlantic speed record set during her maiden voyage in 1952. Her achievement represented the peak of American liner engineering and the final great phase of Atlantic speed competition.</p>
-
-        <p>By the time the jet age expanded, the meaning of Atlantic speed itself was beginning to change. Aircraft would eventually make even the fastest liner crossings seem slow by comparison.</p>
-
-        <h2 id="decline">Why the Blue Riband faded</h2>
-        <p>The rise of commercial jet travel changed the economics and culture of Atlantic crossings. Once speed by sea stopped being the fastest practical option, the symbolic importance of shaving hours off a voyage declined as well.</p>
-
-        <p>The Blue Riband survived historically and culturally, but the world that made it central to public imagination largely disappeared with the decline of scheduled ocean liner service.</p>
-
-        <h2 id="next">Where to go next</h2>
-
-        <div class="next-steps">
-          <a class="cta-card" href="/why-was-ss-united-states-so-fast">
-            <b>Why Was SS United States So Fast?</b>
-            <span>How engineering, weight reduction, and military-influenced design produced record Atlantic speed.</span>
-          </a>
-
-          <a class="cta-card" href="/why-did-ocean-liners-disappear">
-            <b>Why Did Ocean Liners Disappear?</b>
-            <span>How jet travel and changing economics transformed Atlantic passenger travel.</span>
-          </a>
-
-          <a class="cta-card" href="/ships/ships">
-            <b>Ship Archive</b>
-            <span>Explore more than 200 ocean liner guides across multiple eras and routes.</span>
-          </a>
-        </div>
-
       </article>
 
-      <aside class="side-stack">
-
+      <aside class="side-stack" aria-label="Page navigation and related links">
         <section class="side-card">
           <h2>On this page</h2>
-
-          <nav class="toc">
+          <nav class="toc" aria-label="Section links">
             <a href="#answer">Short answer</a>
             <a href="#meaning">What it meant</a>
             <a href="#unofficial">Unofficial tradition</a>
-            <a href="#ships">Famous ships</a>
+            <a href="#why-mattered">Why speed mattered</a>
+            <a href="#famous-ships">Famous ships</a>
+            <a href="#queen-mary">Queen Mary</a>
             <a href="#united-states">SS United States</a>
-            <a href="#decline">Why it faded</a>
+            <a href="#faq">FAQ</a>
           </nav>
         </section>
 
         <section class="side-card">
           <h2>Best next link</h2>
-
+          <p>For readers who want the clearest ship-specific continuation, send them into the SS United States speed page.</p>
           <a class="link-card" href="/why-was-ss-united-states-so-fast">
+            <span>Speed & engineering</span>
             Why Was SS United States So Fast?
           </a>
         </section>
 
+        <section class="side-card">
+          <h2>Speed paths</h2>
+          <a class="link-card" href="/what-made-rms-queen-mary-famous">
+            <span>RMS Queen Mary</span>
+            What Made Queen Mary Famous?
+          </a>
+          <a class="link-card" href="/why-did-ocean-liners-disappear">
+            <span>End of an era</span>
+            Why Did Ocean Liners Disappear?
+          </a>
+          <a class="link-card" href="/ships/ships">
+            <span>Ship archive</span>
+            Explore More Ocean Liners
+          </a>
+        </section>
       </aside>
-
     </div>
   </main>
 
