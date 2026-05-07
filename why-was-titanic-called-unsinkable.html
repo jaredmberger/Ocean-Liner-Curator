@@ -158,14 +158,14 @@
       min-height:62vh;
       display:grid;
       align-items:end;
-      padding:3rem 0 3rem;
+      padding:3rem 0 3rem !important;
       overflow:hidden;
       border-bottom:1px solid rgba(191,164,106,0.2);
       background:
-        linear-gradient(180deg, rgba(10,17,16,0.28), rgba(10,17,16,0.88)),
-        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.26), transparent 31rem),
-        linear-gradient(125deg, rgba(10,17,16,0.18), rgba(10,17,16,0.94)),
-        url('/images/titanic-unsinkable-hero.jpg') center/cover no-repeat;
+        linear-gradient(180deg, rgba(10,17,16,0.30), rgba(10,17,16,0.9)),
+        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.25), transparent 31rem),
+        linear-gradient(125deg, rgba(10,17,16,0.22), rgba(10,17,16,0.95)),
+        url('/images/titanic-vs-olympic-hero.jpg') center/cover no-repeat;
     }
 
     .hero::after{
@@ -180,8 +180,8 @@
     .hero-inner{
       position:relative;
       z-index:2;
-      width:var(--max);
-      margin:auto auto !important;
+      width:var(--max) !important;
+      margin:0 auto;
     }
 
     .hero-badge{
@@ -189,7 +189,7 @@
       align-items:center;
       gap:.5rem;
       max-width:100%;
-      padding:.42rem .68rem !important;
+      padding:.42rem .68rem;
       border:1px solid rgba(191,164,106,0.36);
       border-radius:999px;
       background:rgba(10,17,16,0.55);
@@ -204,7 +204,7 @@
     }
 
     .hero h1{
-      max-width:940px;
+      max-width:920px;
       margin:.95rem 0 .75rem;
       font-family:"Libre Baskerville", Georgia, serif;
       font-size:clamp(2.25rem, 7vw, 5.15rem);
