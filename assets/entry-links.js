@@ -34,12 +34,12 @@
       "Jet travel, economics, and changing expectations reshaped transatlantic travel.",
     href: "/why-did-ocean-liners-disappear"
   },
-  {
-    meta: "Titanic · Artifacts",
-    title: "What happened to Titanic artifacts?",
+    {
+    meta: "Myth & evidence",
+    title: "Why was Titanic called unsinkable?",
     desc:
-      "What was recovered, what remains at the wreck site, and why preservation is complicated.",
-    href: "/what-happened-to-titanic-artifacts"
+      "How marketing, media language, engineering confidence, and later memory shaped the myth.",
+    href: "/why-was-titanic-called-unsinkable"
   },
   {
     meta: "SS United States · Design",
@@ -53,10 +53,17 @@
 
     titanic: {
       eyebrow: "Titanic start here",
-      heading: "Common Titanic questions",
+      heading: "Start with Titanic"
       intro:
-        "Quick-entry Titanic pages for readers who want a clear answer before moving into deeper evidence and collections.",
+  "A curated path through Titanic myths, evidence, life aboard, artifacts, film history, and the voyage itself.",
       links: [
+  {
+    meta: "Myth & evidence",
+    title: "Why was Titanic called unsinkable?",
+    desc:
+      "How marketing, media language, engineering confidence, and later memory shaped the myth.",
+    href: "/why-was-titanic-called-unsinkable"
+  },
   {
     meta: "Artifacts & evidence",
     title: "What happened to Titanic artifacts?",
