@@ -1631,6 +1631,178 @@ mix-blend-mode:soft-light;
       brightness(.9);
   }
 }
+
+/* =========================
+   Deeper Routes Feature Panel
+   ========================= */
+
+.deeper-routes{
+  position:relative;
+}
+
+.deeper-route-panel{
+  position:relative;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:1rem;
+  margin-top:1.25rem;
+  padding:1rem;
+  overflow:hidden;
+  border:1px solid rgba(191,164,106,.28);
+  border-radius:24px;
+  background:
+    radial-gradient(circle at 50% -12%, rgba(191,164,106,.16), transparent 42%),
+    linear-gradient(120deg, rgba(255,255,255,.035), rgba(255,255,255,.012) 46%, transparent),
+    rgba(15,27,25,.34);
+  box-shadow:
+    0 14px 34px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.04);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+}
+
+.deeper-route-panel::before{
+  content:"★";
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  font-size:7rem;
+  line-height:1;
+  color:rgba(191,164,106,.055);
+  pointer-events:none;
+}
+
+.deeper-route-card{
+  position:relative;
+  z-index:1;
+  min-height:245px;
+  padding:1.25rem 1.2rem;
+  overflow:hidden;
+  border:1px solid rgba(191,164,106,.24);
+  border-radius:20px;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,.04), rgba(255,255,255,.012) 42%, transparent),
+    rgba(10,17,16,.38);
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.deeper-route-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:3px;
+  background:linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity:.75;
+}
+
+.deeper-route-card::after{
+  content:"";
+  position:absolute;
+  right:-46px;
+  bottom:-46px;
+  width:145px;
+  height:145px;
+  border:1px solid rgba(191,164,106,.13);
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(191,164,106,.12), transparent 62%);
+  pointer-events:none;
+}
+
+.route-label{
+  display:inline-flex;
+  margin:0 0 .75rem;
+  padding:.28rem .65rem;
+  border:1px solid rgba(191,164,106,.34);
+  border-radius:999px;
+  background:rgba(10,17,16,.46);
+  color:var(--accent-2);
+  font-size:.72rem;
+  line-height:1.2;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.deeper-route-card h3{
+  margin:0 0 .55rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:1.22rem;
+  color:#f1ead7;
+}
+
+.deeper-route-card p{
+  margin:0;
+  color:var(--muted);
+}
+
+.route-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.65rem;
+  margin-top:1.05rem;
+}
+
+.route-actions a{
+  display:inline-flex;
+  align-items:center;
+  min-height:42px;
+  padding:.58rem .78rem;
+  border:1px solid rgba(191,164,106,.28);
+  border-radius:13px;
+  background:rgba(191,164,106,.075);
+  color:#ecd8a7;
+  font-weight:600;
+  line-height:1.25;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.route-actions a:hover{
+  border-color:rgba(191,164,106,.48);
+  background:rgba(191,164,106,.12);
+  color:#f2dfb0;
+  text-decoration:none;
+}
+
+.deeper-route-gpt{
+  border-color:rgba(191,164,106,.38);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(191,164,106,.15), transparent 34%),
+    linear-gradient(120deg, rgba(255,255,255,.04), rgba(255,255,255,.012) 42%, transparent),
+    rgba(10,17,16,.42);
+}
+
+@media (max-width:920px){
+  .deeper-route-panel{
+    grid-template-columns:1fr;
+  }
+
+  .deeper-route-card{
+    min-height:0;
+  }
+}
+
+@media (max-width:640px){
+  .deeper-route-panel{
+    padding:.75rem;
+    border-radius:21px;
+  }
+
+  .deeper-route-card{
+    padding:1.05rem 1rem;
+  }
+
+  .route-actions{
+    flex-direction:column;
+  }
+
+  .route-actions a{
+    width:100%;
+    justify-content:center;
+    text-align:center;
+  }
+}
     
     </style>
 </head>
@@ -1863,42 +2035,45 @@ mix-blend-mode:soft-light;
           </div>
         </section>
 
-        <section aria-labelledby="deeper-routes">
-          <div class="section-head">
-            <div class="section-kicker">Deeper routes<br><span class="section-star">★</span></div>
-            <h2 id="deeper-routes">Go beyond one ship</h2>
-            <p>
-              Some visitors want a broader interpretive path rather than a single vessel. These routes are ideal for that.
-            </p>
-          </div>
+        <section class="deeper-routes" aria-labelledby="deeper-routes">
+  <div class="section-head">
+    <div class="section-kicker">Deeper routes<br><span class="section-star">★</span></div>
+    <h2 id="deeper-routes">Go beyond one ship</h2>
+    <p>
+      For readers who want method, context, attribution guidance, or research help before narrowing in on a specific vessel.
+    </p>
+  </div>
 
-          <div class="highlights-grid">
-            <div class="highlight-card">
-              <h3>Curated Guides</h3>
-              <p>
-                These pages are built to help collectors and researchers evaluate ocean liner material responsibly, with an emphasis on evidence, limits, understanding provenance, and attribution clarity. These guides are the best place to begin for readers who want a structured understanding of how to go about researching ocean liners and/or collect their material culture.
-              </p>
-              <ul class="mini-list">
-                <li><a href="/ocean-liner-collecting-guide">Ocean Liner Collecting:
-A Curated Guide »</a></li>
-                <li><a href="/ocean-liner-research">Ocean Liner Research:
-Sources, Methods, and Evidence »</a></li>
-              </ul>
-            </div>
+  <div class="deeper-route-panel">
+    <article class="deeper-route-card deeper-route-guides">
+      <span class="route-label">Research route</span>
+      <h3>Curated Guides</h3>
+      <p>
+        Evidence-first guidance for researching ocean liners, evaluating material culture,
+        understanding provenance, and making careful attributions.
+      </p>
 
-            <div class="highlight-card">
-              <h3>Ocean Liner GPT</h3>
-              <p>
-                Ocean Liner GPT is available as an AI assistant,
-applying the same evidence-first standards used throughout this site.
-              </p>
-              <ul class="mini-list">
-              <li><a href="/ocean-liner-gpt">About this tool ⓘ</a></li>
-                <li><a href="https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt">Use Ocean Liner GPT ➚</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
+      <div class="route-actions">
+        <a href="/ocean-liner-collecting-guide">Collecting Guide »</a>
+        <a href="/ocean-liner-research">Research Guide »</a>
+      </div>
+    </article>
+
+    <article class="deeper-route-card deeper-route-gpt">
+      <span class="route-label">AI research tool</span>
+      <h3>Ocean Liner GPT</h3>
+      <p>
+        A guided assistant for liner history questions, source-aware exploration,
+        research direction, and curator-minded interpretation.
+      </p>
+
+      <div class="route-actions">
+        <a href="/ocean-liner-gpt">About this tool ⓘ</a>
+        <a href="https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt">Use Ocean Liner GPT ➚</a>
+      </div>
+    </article>
+  </div>
+</section>
         
         <section aria-labelledby="available-essays">
   <div class="section-head">
