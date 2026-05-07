@@ -970,9 +970,11 @@ h1 {
 
 .entry-links-grid{
   display:grid;
+  align-items:stretch;
   grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
   gap:.8rem;
 }
+
 
 .entry-link-card{
   display:block;
@@ -1019,6 +1021,8 @@ h1 {
   font-size:.92rem;
   line-height:1.45;
 }
+
+
 
 @media (max-width:900px){
   .entry-links-grid{
