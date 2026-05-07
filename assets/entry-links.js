@@ -52,17 +52,24 @@
     },
 
     titanic: {
-      eyebrow: "Titanic start here",
+      eyebrow: "Titanic pathways",
       heading: "Start with Titanic",
       intro:
-  "A curated path through Titanic myths, evidence, life aboard, artifacts, film history, and the voyage itself.",
+"A curated path through Titanic myths, sister ships, life aboard, artifacts, film history, and the voyage itself."
       links: [
   {
     meta: "Myth & evidence",
     title: "Why was Titanic called unsinkable?",
     desc:
-      "How marketing, media language, engineering confidence, and later memory shaped the myth.",
+      "How marketing, engineering confidence, media language, and later memory shaped the myth.",
     href: "/why-was-titanic-called-unsinkable"
+  },
+  {
+    meta: "Sister ships",
+    title: "What is the difference between Titanic and Olympic?",
+    desc:
+      "How the Olympic-class sister ships differed in design, interiors, lifeboats, and service history.",
+    href: "/titanic-vs-olympic"
   },
   {
     meta: "Artifacts & evidence",
