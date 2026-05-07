@@ -55,7 +55,7 @@
       eyebrow: "Titanic pathways",
       heading: "Start with Titanic",
       intro:
-"A curated path through Titanic myths, sister ships, life aboard, artifacts, film history, and the voyage itself."
+"A curated path through Titanic myths, sister ships, life aboard, artifacts, film history, and the voyage itself.",
       links: [
   {
     meta: "Myth & evidence",
@@ -115,6 +115,13 @@
             "Power, weight, fireproofing, and military-influenced engineering behind her record speed.",
           href: "/why-was-ss-united-states-so-fast"
         },
+        {
+  meta: "Atlantic speed · Prestige",
+  title: "What was the Blue Riband?",
+  desc:
+    "How Atlantic speed became one of the great prestige contests of the ocean liner era.",
+  href: "/what-was-the-blue-riband"
+},
         {
           meta: "Life aboard",
           title: "A Voyage Aboard SS United States",
