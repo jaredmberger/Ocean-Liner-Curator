@@ -158,7 +158,8 @@
         "Follow Queen Mary from construction and Atlantic service through war, retirement, and preservation.",
       href: "/ships/rms-queen-mary-timeline"
     }
-  ],
+  ]
+       },  
 
     unitedStates: {
       eyebrow: "SS United States start here",
