@@ -101,6 +101,64 @@
   }
 ]
     },
+    
+    queenMary: {
+  eyebrow: "Queen Mary pathways",
+
+  heading: "Start with Queen Mary",
+
+  intro:
+    "A curated path through RMS Queen Mary’s Atlantic service, wartime transformation, interiors, preservation story, and continuing public memory.",
+
+  links: [
+    {
+      meta: "Overview · Legacy",
+      title: "What made RMS Queen Mary famous?",
+      desc:
+        "Why Queen Mary became one of the defining ocean liners of the twentieth century.",
+      href: "/what-made-rms-queen-mary-famous"
+    },
+
+    {
+      meta: "Life aboard",
+      title: "What was it like aboard Queen Mary?",
+      desc:
+        "Public rooms, routines, Atlantic crossings, and the social atmosphere aboard the liner.",
+      href: "/rms-queen-mary-voyage-reconstructed"
+    },
+
+    {
+      meta: "Atlantic speed",
+      title: "What was the Blue Riband?",
+      desc:
+        "How Atlantic speed became one of the great prestige contests of the liner era.",
+      href: "/what-was-the-blue-riband"
+    },
+
+    {
+      meta: "War service",
+      title: "How Queen Mary Became a Wartime Troopship",
+      desc:
+        "From luxury liner to Grey Ghost: wartime camouflage, troop transport, and military service.",
+      href: "/collections/queen-mary-at-war"
+    },
+
+    {
+      meta: "Preservation",
+      title: "Why Queen Mary Still Matters",
+      desc:
+        "How preservation, tourism, nostalgia, and public memory reshaped the ship after her liner career.",
+      href: "/why-queen-mary-still-matters"
+    },
+
+    {
+      meta: "Timeline",
+      title: "RMS Queen Mary Timeline",
+      desc:
+        "Follow Queen Mary from construction and Atlantic service through war, retirement, and preservation.",
+      href: "/ships/rms-queen-mary-timeline"
+    }
+  ],
 
     unitedStates: {
       eyebrow: "SS United States start here",
