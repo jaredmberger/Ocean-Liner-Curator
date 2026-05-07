@@ -53,7 +53,7 @@
 
     titanic: {
       eyebrow: "Titanic start here",
-      heading: "Start with Titanic"
+      heading: "Start with Titanic",
       intro:
   "A curated path through Titanic myths, evidence, life aboard, artifacts, film history, and the voyage itself.",
       links: [
