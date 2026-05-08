@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>AI Interpretation Policy — Ocean Liner Curator</title>
-  <meta name="description" content="Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator: evidence-first boundaries, limitations, and reader guidance to prevent false certainty." />
+  <meta name="description" content="How Ocean Liner Curator uses AI-assisted tools: evidence-first boundaries, historical limitations, reader guidance, and safeguards against false certainty." />
 
   <link rel="canonical" href="https://oceanliners.net/ai-interpretation-policy" />
 
@@ -17,11 +21,12 @@
     "name": "AI Interpretation Policy — Ocean Liner Curator",
     "url": "https://oceanliners.net/ai-interpretation-policy",
     "isPartOf": { "@id": "https://oceanliners.net/#website" },
-    "description": "Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator: evidence-first boundaries, limitations, and reader guidance to prevent false certainty.",
+    "description": "How Ocean Liner Curator uses AI-assisted tools: evidence-first boundaries, historical limitations, reader guidance, and safeguards against false certainty.",
     "inLanguage": "en"
   }
   </script>
 
+  <link rel="preload" as="image" href="/leviathan-hero.jpg">
   <link rel="preload" as="image" href="/logo.png">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -29,20 +34,19 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
   <meta name="theme-color" content="#0a1110">
+  <meta name="robots" content="index,follow">
 
   <meta property="og:site_name" content="Ocean Liner Curator">
   <meta property="og:title" content="AI Interpretation Policy — Ocean Liner Curator">
-  <meta property="og:description" content="Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator: evidence-first boundaries, limitations, and reader guidance to prevent false certainty.">
+  <meta property="og:description" content="How Ocean Liner Curator uses AI-assisted tools: evidence-first boundaries, historical limitations, reader guidance, and safeguards against false certainty.">
   <meta property="og:url" content="https://oceanliners.net/ai-interpretation-policy">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://oceanliners.net/logo.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="AI Interpretation Policy — Ocean Liner Curator">
-  <meta name="twitter:description" content="Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator: evidence-first boundaries, limitations, and reader guidance to prevent false certainty.">
+  <meta name="twitter:description" content="How Ocean Liner Curator uses AI-assisted tools: evidence-first boundaries, historical limitations, reader guidance, and safeguards against false certainty.">
   <meta name="twitter:image" content="https://oceanliners.net/logo.png">
-
-  <meta name="robots" content="index,follow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,42 +67,57 @@
       --shadow:rgba(0,0,0,0.60);
       --link:rgba(209,187,134,0.95);
       --font-sans:"Spectral", Georgia, "Times New Roman", serif;
-
-      --prose-measure: 72ch;
+      --font-display:"Libre Baskerville", Georgia, serif;
+      --prose-measure:72ch;
     }
 
-    html{ text-rendering: optimizeLegibility; background: var(--bg); }
-    h1,h2,h3{ letter-spacing: -0.02em; }
+    html{
+      text-rendering: optimizeLegibility;
+      scroll-behavior:smooth;
+      background:var(--bg);
+    }
 
     body{
       margin:0;
       font-family:var(--font-sans);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
       font-size:17px;
       line-height:1.55;
       letter-spacing:-0.01em;
       color:var(--text);
-
       background:
         radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
         radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
-
       min-height:100vh;
       display:flex;
       flex-direction:column;
       align-items:center;
       justify-content:flex-start;
-      padding: 0 0 2.25rem;
+      padding:0 0 2.25rem;
     }
 
-    /* ================================
-       Badges
-       ================================ */
+    h1,h2,h3{ letter-spacing:-0.02em; }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:1px;
+    }
+
+    a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+
+    a:focus-visible{
+      outline:2px solid rgba(191,164,106,0.68);
+      outline-offset:4px;
+      border-bottom-color:transparent;
+    }
+
     .badge{
       --brass:#bfa46a;
       display:inline-block;
-      font-variant: small-caps;
+      font-variant:small-caps;
       letter-spacing:0.12em;
       font-size:0.72rem;
       font-weight:600;
@@ -117,105 +136,95 @@
       margin:0 0 0.9rem;
       justify-content:center;
     }
+
     .badge.primary{ border-width:2px; }
 
-    /* =========================
-       HERO (FIXED: single definition, no duplicates, no stray "I")
-       ========================= */
     .hero{
       width:min(780px, calc(100% - 1.5rem));
       margin:1.1rem auto 0;
       border-radius:16px;
       border:1px solid rgba(191,164,106,0.22);
       overflow:hidden;
-
       min-height:52vh;
       max-height:640px;
-
       display:flex;
       align-items:flex-end;
       position:relative;
-
       background:
         linear-gradient(to bottom,
-          rgba(10,17,16,0.70) 0%,
-          rgba(10,17,16,0.05) 45%,
-          rgba(10,17,16,0.72) 100%),
+          rgba(10,17,16,0.74) 0%,
+          rgba(10,17,16,0.08) 42%,
+          rgba(10,17,16,0.78) 100%),
         url("/leviathan-hero.jpg") center/cover no-repeat;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.52),
+        0 0 0 1px rgba(191,164,106,0.06);
     }
 
-    .hero::after{
+    .hero::before{
       content:"";
       position:absolute;
       inset:0;
       pointer-events:none;
       background:
-        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
-        radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
-      opacity:0.55;
+        linear-gradient(90deg, rgba(10,17,16,0.60), transparent 38%, rgba(10,17,16,0.28)),
+        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.11), transparent 60%);
+      opacity:0.75;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:46%;
+      pointer-events:none;
+      background:linear-gradient(to top, rgba(10,17,16,0.88), transparent);
     }
 
     .hero-inner{
       width:100%;
       margin:0;
-      padding: 3.2rem 2.2rem 2.1rem;
+      padding:3.2rem 2.2rem 2.1rem;
       position:relative;
       z-index:1;
     }
 
     .hero h1{
-      margin:0 0 0.55rem 0;
-      font-family:"Libre Baskerville", serif;
-      font-variant: small-caps;
+      margin:0 0 0.55rem;
+      font-family:var(--font-display);
+      font-variant:small-caps;
       letter-spacing:0.09em;
       font-weight:400;
-      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+      text-shadow:0 18px 45px rgba(0,0,0,0.48);
     }
 
     .hero p{
       margin:0;
       max-width:70ch;
-      color: rgba(230,223,207,0.92);
+      color:rgba(230,223,207,0.92);
       font-size:1.02rem;
       line-height:1.65;
-      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+      text-shadow:0 18px 45px rgba(0,0,0,0.45);
     }
 
-    @media (max-width:600px){
-      .hero{ min-height:46vh; border-radius:14px; }
-      .hero-inner{ padding: 2.6rem 1.15rem 1.65rem; }
-    }
-
-    @media (min-width:1300px){
-      .hero{ width:min(1080px, calc(100% - 3rem)); }
-    }
-
-    /* =========================
-       CARD (FIXED: missing semicolon; safari-friendly layering)
-       ========================= */
     .container{
       width:min(780px, calc(100% - 1.5rem));
       margin:0.75rem auto 0;
       text-align:left;
-      background-color: rgba(15,27,25,0.78);
-
+      background-color:var(--panel);
       border:1px solid var(--border);
       border-radius:16px;
-
-      --container-pad-top: clamp(1.75rem, 3.8vh, 2.6rem);
-      padding: var(--container-pad-top) 2.75rem 1.5rem;
-
+      --container-pad-top:clamp(1.75rem, 3.8vh, 2.6rem);
+      padding:var(--container-pad-top) 2.75rem 1.5rem;
       box-shadow:
         0 26px 70px rgba(0,0,0,0.60),
         0 0 0 1px rgba(191,164,106,0.08),
         0 0 80px rgba(191,164,106,0.06);
-
       position:relative;
       overflow:hidden;
       z-index:1;
-
       isolation:isolate;
-      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      -webkit-mask-image:-webkit-radial-gradient(white, black);
     }
 
     .container::before{
@@ -260,34 +269,17 @@
         auto, auto, auto,
         auto,
         auto, auto;
-      background-position:
-        center,
-        center, center, center,
-        center,
-        center, center;
+      background-position:center;
       opacity:0.05;
     }
 
-    .container > *{ position:relative; z-index:1; }
-
-    @media (max-width:520px){
-      .container{
-        width:calc(100% - 1.5rem);
-        margin:0.7rem auto 0;
-        padding:1.9rem 1.25rem;
-        border-radius:14px;
-      }
+    .container > *{
+      position:relative;
+      z-index:1;
     }
 
-    @media (min-width:1300px){
-      .container{ width:min(1080px, calc(100% - 3rem)); }
-    }
-
-    /* =========================
-       THE FIX: single prose column wrapper (same approach as your GPT page)
-       ========================= */
     .prose{
-      max-width: var(--prose-measure);
+      max-width:var(--prose-measure);
       margin-left:auto;
       margin-right:auto;
     }
@@ -302,25 +294,50 @@
     .rule{
       width:140px;
       height:2px;
-      margin:0.9rem auto 1.4rem auto;
+      margin:0.9rem auto 1.4rem;
       background:linear-gradient(90deg, transparent, var(--accent), transparent);
       opacity:0.85;
     }
 
     .page-kicker{
-      margin:0 0 1.4rem 0;
+      margin:0 0 1.35rem;
       font-size:0.98rem;
       line-height:1.65;
       color:var(--muted);
       text-align:left;
     }
 
+    .policy-summary{
+      margin:1.4rem 0 2.1rem;
+      padding:1.1rem 1.15rem;
+      border:1px solid rgba(191,164,106,0.32);
+      border-radius:14px;
+      background:
+        linear-gradient(180deg, rgba(191,164,106,0.10), rgba(191,164,106,0.035)),
+        rgba(10,17,16,0.28);
+      box-shadow:0 14px 34px rgba(0,0,0,0.22);
+    }
+
+    .policy-summary p{
+      margin:0;
+      font-size:1rem;
+      line-height:1.65;
+      color:rgba(230,223,207,0.92);
+    }
+
+    .policy-summary strong{
+      color:var(--accent);
+      font-variant:small-caps;
+      letter-spacing:0.06em;
+    }
+
     .prose h2{
-      margin:2.25rem 0 0.9rem 0;
+      margin:2.25rem 0 0.9rem;
       text-align:left;
       font-size:1.22rem;
       font-weight:600;
       color:var(--text);
+      scroll-margin-top:5.5rem;
     }
 
     .prose h2::after{
@@ -333,18 +350,18 @@
     }
 
     .prose p{
-      margin:0 0 1.55rem 0;
+      margin:0 0 1.55rem;
       font-size:1.06rem;
       line-height:1.72;
     }
 
     .prose ul,
     .prose ol{
-      margin:0.2rem 0 1.55rem 0;
+      margin:0.2rem 0 1.55rem;
       padding-left:1.35rem;
       text-align:left;
       color:rgba(230,223,207,0.92);
-      list-style-position: outside;
+      list-style-position:outside;
     }
 
     .prose li{
@@ -352,26 +369,43 @@
       line-height:1.65;
     }
 
+    .prose li::marker{ color:var(--accent); }
+
     .caps{
-      font-variant: small-caps;
+      font-variant:small-caps;
       letter-spacing:0.08em;
       font-size:0.95em;
       color:rgba(230,223,207,0.9);
     }
 
-    a{
-      color:var(--link);
-      text-decoration:none;
-      border-bottom:1px solid rgba(191,164,106,0.35);
-      padding-bottom:1px;
+    .principle-card{
+      margin:2.2rem 0 0;
+      padding:1.15rem 1.25rem;
+      border:1px solid rgba(191,164,106,0.34);
+      border-radius:14px;
+      background:
+        radial-gradient(500px 260px at 50% 0%, rgba(191,164,106,0.12), transparent 70%),
+        rgba(10,17,16,0.34);
     }
-    a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
-    a:focus-visible{ outline:2px solid rgba(191,164,106,0.6); outline-offset:3px; }
 
-    /* =========================
-       CTA (FIXED: missing wrapper in your original markup)
-       ========================= */
-    .cta{ margin-top:2.2rem; text-align:center; }
+    .principle-card p{
+      margin:0;
+      color:rgba(230,223,207,0.94);
+    }
+
+    .principle-card::before{
+      content:"★";
+      display:block;
+      margin:0 0 0.55rem;
+      color:rgba(191,164,106,0.74);
+      font-size:0.95rem;
+      letter-spacing:0.14em;
+    }
+
+    .cta{
+      margin-top:2.2rem;
+      text-align:center;
+    }
 
     .actions{
       display:flex;
@@ -383,26 +417,22 @@
     }
 
     .button{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-
-  padding:0.9rem 1.35rem;
-  font-size:0.98rem;
-  letter-spacing:0.35px;
-  text-decoration:none;
-
-  min-height:44px; /* important */
-  line-height:1;   /* prevents font metrics shifting */
-
-  color:#0a1110;
-  background:linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
-  border:1px solid rgba(0,0,0,0.35);
-  border-radius:10px;
-
-  transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
-  box-shadow:0 10px 26px rgba(191,164,106,0.22);
-}
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0.9rem 1.35rem;
+      font-size:0.98rem;
+      letter-spacing:0.35px;
+      text-decoration:none;
+      min-height:44px;
+      line-height:1;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:10px;
+      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease, background 0.15s ease;
+      box-shadow:0 10px 26px rgba(191,164,106,0.22);
+    }
 
     a.button.secondary{
       background:transparent;
@@ -417,21 +447,9 @@
       box-shadow:0 14px 34px rgba(0,0,0,0.38);
     }
 
-    a..secondary:hover{
+    a.button.secondary:hover{
       background:rgba(191,164,106,0.10);
       transform:translateY(-1px);
-    }
-
-    @media (max-width:520px){
-      .actions{
-        flex-direction:column;
-        gap:0.85rem;
-        align-items:stretch;
-      }
-      a.button{
-        width:100%;
-        white-space:normal;
-      }
     }
 
     footer{
@@ -440,6 +458,11 @@
       line-height:1.6;
       color:rgba(230,223,207,0.72);
       text-align:center;
+    }
+
+    footer p{
+      font-size:0.9rem !important;
+      color:rgba(230,223,207,0.72);
     }
 
     .flags-footer{
@@ -458,12 +481,68 @@
       margin-top:1.2rem !important;
     }
 
+    @media (min-width:1300px){
+      .hero,
+      .container{ width:min(1080px, calc(100% - 3rem)); }
+    }
+
+    @media (max-width:600px){
+      .hero{
+        min-height:46vh;
+        border-radius:14px;
+      }
+
+      .hero-inner{
+        padding:2.6rem 1.15rem 1.65rem;
+      }
+
+      .hero h1{
+        font-size:clamp(1.8rem, 9vw, 2.4rem);
+        letter-spacing:0.07em;
+      }
+    }
+
     @media (max-width:520px){
-      footer{ margin-top:1.8rem; font-size:0.78rem; }
-      .flags-footer{ width:92px; margin:0.9rem auto 0; opacity:0.35; }
+      body{ font-size:16px; }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:0.7rem auto 0;
+        padding:1.9rem 1.25rem;
+        border-radius:14px;
+      }
+
+      .policy-summary,
+      .principle-card{
+        padding:1rem;
+        border-radius:12px;
+      }
+
+      .actions{
+        flex-direction:column;
+        gap:0.85rem;
+        align-items:stretch;
+      }
+
+      a.button{
+        width:100%;
+        white-space:normal;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:0.78rem;
+      }
+
+      .flags-footer{
+        width:92px;
+        margin:0.9rem auto 0;
+        opacity:0.35;
+      }
     }
 
     @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
       a.button{ transition:none; }
     }
   </style>
@@ -472,26 +551,29 @@
 <body>
   <div id="site-header"></div>
 
-  <section class="hero" aria-label="AI interpretation hero">
+  <section class="hero" aria-label="AI interpretation policy hero">
     <div class="hero-inner">
       <h1>AI Interpretation Policy</h1>
       <p>How AI-assisted tools are used and interpreted across Ocean Liner Curator.</p>
     </div>
   </section>
 
-  <!-- APPLY THE FIX: remove .scope and add .prose wrapper -->
   <main class="container">
     <div class="prose">
 
-      <div class="badge-group">
+      <div class="badge-group" aria-label="Page category">
         <span class="badge primary">Methodology Page</span>
       </div>
 
-      <div class="rule"></div>
+      <div class="rule" aria-hidden="true"></div>
 
       <p class="page-kicker">
         Defines how AI-assisted tools are used and interpreted across Ocean Liner Curator, and how readers should understand AI-supported material in an evidence-first historical context.
       </p>
+
+      <section class="policy-summary" aria-label="Policy summary">
+        <p><strong>In brief:</strong> AI may help organize or compare material, but it does not authenticate objects, establish provenance, assign attribution, determine value, or replace documented evidence.</p>
+      </section>
 
       <h2>Purpose</h2>
       <p>
@@ -502,7 +584,9 @@
 
       <h2>Role of AI Tools</h2>
       <p>
-        AI tools used within <span class="caps">Ocean Liner Curator</span> are employed as <em>assistive research instruments</em>, not as authoritative sources. To put it very clearly, AI use on this site is not generative or appealed to as an authority, rather, is provided as an optional tool to help organize and correlate thoughts and processes.
+        AI tools used within <span class="caps">Ocean Liner Curator</span> are employed as <em>assistive research instruments</em>, not as authoritative sources.
+        Put plainly, AI use on this site is not treated as authorship, evidence, or authority. It is used only as an optional aid for organizing,
+        comparing, and clarifying research material.
       </p>
 
       <p>Their role is limited to:</p>
@@ -524,6 +608,9 @@
       <p>
         AI-generated output is always subordinate to documented evidence and human review.
       </p>
+      <p>
+        When AI-assisted interpretation conflicts with documented evidence, the documented evidence governs.
+      </p>
 
       <h2>Attribution and Authority</h2>
       <p>
@@ -544,7 +631,7 @@
 
       <h2>Transparency and Constraints</h2>
       <p>
-        AI use on this site is intentionally constrained by defined subject scope (historic ocean liners and related material culture),
+        AI use on this site is intentionally constrained by defined subject scope — historic ocean liners and related material culture —
         explicit methodological boundaries, and a preference for transparency over completeness or confidence.
       </p>
       <p>
@@ -576,10 +663,12 @@
       </p>
 
       <h2>Guiding Principle</h2>
-      <p>
-        Artificial intelligence is treated as a tool for <em>clarifying complexity</em>, not resolving uncertainty.
-        Where evidence is incomplete, uncertainty is preserved.
-      </p>
+      <section class="principle-card" aria-label="Guiding principle">
+        <p>
+          Artificial intelligence is treated as a tool for <em>clarifying complexity</em>, not resolving uncertainty.
+          Where evidence is incomplete, uncertainty is preserved.
+        </p>
+      </section>
 
       <footer>
         <p>
