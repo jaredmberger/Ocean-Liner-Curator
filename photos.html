@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Photos — Ocean Liner Curator</title>
-  <meta name="description" content="Curated photographic references from Ocean Liner Curator — ships, interiors, objects, and historical documentation." />
+  <title>Photographic References — Ocean Liner Curator</title>
+  <meta name="description" content="A curated gallery of ocean liner photographic references, including press photos, postcards, ship interiors, sea views, and historical documentation." />
   <link rel="canonical" href="https://www.oceanliners.net/photos/" />
   <meta name="theme-color" content="#0a1110" />
   <meta name="robots" content="index,follow" />
@@ -13,11 +13,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -33,7 +29,7 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 
 /* ---------- Theme Tokens (from your :root) ---------- */
 :root{
---measure: 42rem;
+  --measure: 42rem;
   --bg:#0a1110;
   --panel:rgba(15,27,25,0.78);
   --text:#e6dfcf;
@@ -181,8 +177,6 @@ body{
   z-index:0;
 }
 
-
-
 .container > *{ position:relative; z-index:1; }
 
 /* =========================================================
@@ -218,11 +212,20 @@ p{
   color:var(--muted);
 }
 
-/* ✅ Intro alignment fix: centered block, left-aligned copy */
+/* Intro alignment fix: centered block */
 .intro{
   max-width:var(--measure);
-  margin:0 auto 2.2rem auto;
+  margin:0 auto 1.35rem auto;
   text-align:center;
+}
+
+.gallery-meta{
+  max-width:58rem;
+  margin:-0.35rem auto 2rem;
+  color:rgba(230,223,207,0.68);
+  font-size:0.86rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
 }
 
 /* About link blocks */
@@ -278,7 +281,7 @@ footer{
   transform:translateY(-1px);
 }
 
-/* ✅ Home button + flags spacing fix (single rhythm system) */
+/* Home button + flags spacing fix (single rhythm system) */
 .actions{
   display:flex;
   flex-direction:column;
@@ -296,30 +299,6 @@ footer{
   opacity:0.42;
   filter:saturate(0.85) contrast(0.95) brightness(0.95);
   pointer-events:none;
-}
-
-/* Responsive */
-@media (max-width:520px){
-  .site-header{ padding:0.65rem 0; }
-  .header-inner{
-    width:calc(100% - 1.5rem);
-    padding:0 1.25rem;
-  }
-  .container{
-    width:calc(100% - 1.5rem);
-    margin:1.05rem auto 0;
-    padding:1.9rem 1.25rem;
-    border-radius:14px;
-    background-size:54px 54px;
-  }
-  h1{ font-size:1.9rem; letter-spacing:0.4px; margin-bottom:0.6rem; }
-  .rule{ width:110px; margin:0.9rem auto 1.25rem auto; }
-  p{ font-size:0.98rem; line-height:1.65; margin-bottom:1.15rem; }
-  .tip{ font-size:0.9rem; margin-bottom:1.55rem; }
-  .intro{ margin-bottom:1.55rem; }
-  footer{ margin-top:1.8rem; font-size:0.78rem; }
-  .flags-footer{ width:92px; opacity:0.35; }
-  .actions{ margin-top:1.55rem; gap:0.75rem; }
 }
 
 /* === Logo mount (match /scope exactly) === */
@@ -353,21 +332,13 @@ footer{
   background:rgba(230,223,207,0.06);
 }
 
-@media (max-width:520px){
-  .logo-mount{
-    width:88px;
-    height:88px;
-    padding:8px;
-    margin-bottom:0.75rem;
-    border-radius:14px;
-  }
-  .logo-mount::after{ inset:6px; border-radius:11px; }
-  .logo{ border-radius:11px; }
-}
-}
-
 @media (prefers-reduced-motion: reduce){
-  *{ scroll-behavior:auto !important; }
+  *{
+    animation-duration:0.001ms !important;
+    animation-iteration-count:1 !important;
+    scroll-behavior:auto !important;
+    transition-duration:0.001ms !important;
+  }
 }
 
 /* =========================================================
@@ -387,17 +358,32 @@ footer{
   border-radius: 14px;
   background: rgba(0,0,0,0.12);
   backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow:0 10px 24px rgba(0,0,0,0.32);
+  transition:transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.photo-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(191,164,106,0.38);
+  background:rgba(191,164,106,0.055);
 }
 
 .photo-card img{
   width:100%;
-  height:auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   display:block;
   border-radius: 10px;
   border: 1px solid rgba(191,164,106,0.14);
   cursor: zoom-in;
+}
+
+.photo-card img:focus-visible,
+.lightbox-close:focus-visible,
+.button.secondary:focus-visible{
+  outline:2px solid rgba(191,164,106,0.72);
+  outline-offset:4px;
 }
 
 .photo-card figcaption{
@@ -480,16 +466,50 @@ footer{
   background: rgba(191,164,106,0.10);
 }
 
+@media (min-width: 1100px){
+  .container p{
+    max-width: 72ch;
+  }
+}
+
 @media (min-width: 1300px){
   .container{
     width: min(1080px, calc(100% - 3rem));
   }
 }
 
-@media (min-width: 1100px){
-  .container p{
-    max-width: 72ch;
+/* Responsive */
+@media (max-width:520px){
+  .site-header{ padding:0.65rem 0; }
+  .header-inner{
+    width:calc(100% - 1.5rem);
+    padding:0 1.25rem;
   }
+  .container{
+    width:calc(100% - 1.5rem);
+    margin:1.05rem auto 0;
+    padding:1.9rem 1.25rem;
+    border-radius:14px;
+    background-size:54px 54px;
+  }
+  h1{ font-size:1.9rem; letter-spacing:0.4px; margin-bottom:0.6rem; }
+  .rule{ width:110px; margin:0.9rem auto 1.25rem auto; }
+  p{ font-size:0.98rem; line-height:1.65; margin-bottom:1.15rem; }
+  .tip{ font-size:0.9rem; margin-bottom:1.2rem; }
+  .intro{ margin-bottom:1.2rem; }
+  .gallery-meta{ font-size:0.76rem; line-height:1.55; margin-bottom:1.55rem; }
+  footer{ margin-top:1.8rem; font-size:0.78rem; }
+  .flags-footer{ width:92px; opacity:0.35; }
+  .actions{ margin-top:1.55rem; gap:0.75rem; }
+  .logo-mount{
+    width:88px;
+    height:88px;
+    padding:8px;
+    margin-bottom:0.75rem;
+    border-radius:14px;
+  }
+  .logo-mount::after{ inset:6px; border-radius:11px; }
+  .logo{ border-radius:11px; }
 }
 
 </style>
@@ -500,21 +520,22 @@ footer{
 
 <div id="site-header"></div>
 
-<!-- FIX: open the container main (you were closing later without opening it) -->
 <main class="container">
 
-
   <div class="logo-mount">
-  <img class="logo" src="/logo.png" alt="Ocean Liner Curator" loading="eager" />
-</div>
+    <img class="logo" src="/logo.png" alt="Ocean Liner Curator" loading="eager" />
+  </div>
 
-<h1>Photographic References</h1>
-<div class="rule" aria-hidden="true"></div>
+  <h1>Photographic References</h1>
+  <div class="rule" aria-hidden="true"></div>
 
-  <!-- ✅ intro text alignment corrected -->
   <p class="tip intro">
     A curated selection of photographs used for historical reference, comparative study, and visual context.
     Images are presented as documentation—not decoration.
+  </p>
+
+  <p class="gallery-meta">
+    Press photographs · postcards · interiors · ship portraits · collector documentation
   </p>
 
   <section class="photo-grid" aria-label="Photo gallery">
@@ -529,7 +550,7 @@ footer{
       >
       <figcaption>
         <strong>TRANS-ATLANTIC LINER HITS HEAVY SEAS</strong><br>
-        The trans-atlantic liner Aquitania arrived in New York city November 12 approximately 28 hours late because of heavy seas encountered on the westward crossing. This photograph, taken from the liner's deck shows one of the huge waves as it rolled toward the ship.<br>
+        The transatlantic liner Aquitania arrived in New York City on November 12, approximately 28 hours late because of heavy seas encountered on the westward crossing. This photograph, taken from the liner's deck, shows one of the huge waves as it rolled toward the ship.<br>
         <span class="caption-note">Press photo, c.1931</span>
       </figcaption>
     </figure>
@@ -544,7 +565,7 @@ footer{
       >
       <figcaption>
         <strong>WORLD'S LARGEST CABIN MOTOR SHIP WHICH WILL SAIL FROM LIVERPOOL TO BOSTON ON MAIDEN VOYAGE</strong><br>
-        New York....View of the S.S. Britannic, largest cabin motor vessel in the world as it will leave Liverpool on June 28th to make its maiden voyage to Boston, it has a tonnage of 27,000 and can accomodate 1,500 passengers.<br>
+        New York — View of the S.S. Britannic, largest cabin motor vessel in the world, as it will leave Liverpool on June 28 to make its maiden voyage to Boston. It has a tonnage of 27,000 and can accommodate 1,500 passengers.<br>
         <span class="caption-note">Press photo, c.1930</span>
       </figcaption>
     </figure>
@@ -559,11 +580,11 @@ footer{
       >
       <figcaption>
         <strong>AS THE NEWEST OCEAN GREYHOUND REACHED ITS GOAL</strong><br>
-        New York....With fitting dignity, the handsome new S.S. Britannic of White Star Line draws proudly up to the New World to complete her first ocean crossing under the guidance of capt. F.F. Summers. The new twin screw 27,000 ton liner is Britain's largest motor vessel and the world's largest cabin liner. She was built in Belfast.<br>
+        New York — With fitting dignity, the handsome new S.S. Britannic of White Star Line draws proudly up to the New World to complete her first ocean crossing under the guidance of Capt. F. F. Summers. The new twin-screw, 27,000-ton liner is Britain's largest motor vessel and the world's largest cabin liner. She was built in Belfast.<br>
         <span class="caption-note">Press photo, c.1930</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/photo7.jpg"
@@ -574,43 +595,42 @@ footer{
       >
       <figcaption>
         <strong>NEW ADDITION TO TRANS-ATLANTIC TRAVEL</strong><br>
-        The motor ship Britannic, the largest vessel of its type build in England, and the world's largest cabin liner, photographed when it appeared in New York harbor, July 7, on its maiden trip from Europe. It has 27,000 tons displacement, is 680 feet long and has a beam of 82 feet. She has accommodations for 1,500 passengers, divided equally between cabin, tourist and third class.<br>
+        The motor ship Britannic, the largest vessel of its type built in England and the world's largest cabin liner, photographed when it appeared in New York Harbor, July 7, on its maiden trip from Europe. It has 27,000 tons displacement, is 680 feet long, and has a beam of 82 feet. She has accommodations for 1,500 passengers, divided equally between cabin, tourist, and third class.<br>
         <span class="caption-note">Press photo, c.1930</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/photo4.jpg"
         data-full="/photos/photo4.jpg"
-        data-caption="Aerial view - Statue of Liberty"
-        alt="Aerial view - Statue of Liberty"
+        data-caption="Aerial view — Statue of Liberty"
+        alt="Aerial view of the Statue of Liberty with an unknown ocean liner in the background"
         loading="lazy"
       >
       <figcaption>
-        <strong>Aerial view - Statue of Liberty</strong><br>
-        Aerial view - Statue of Liberty with unknown ocean liner in the background.<br>
-        <span class="caption-note">Press photo, c.1920-1930</span>
+        <strong>Aerial view — Statue of Liberty</strong><br>
+        Aerial view of the Statue of Liberty with an unknown ocean liner in the background.<br>
+        <span class="caption-note">Press photo, c.1920–1930</span>
       </figcaption>
     </figure>
 
-<figure class="photo-card">
+    <figure class="photo-card">
       <img
         src="/photos/photo5.jpg"
         data-full="/photos/photo5.jpg"
-        data-caption="AND THE OCEAN WAVES ROLLED HIGH - Press photo, c.1926"
+        data-caption="AND THE OCEAN WAVES ROLLED HIGH — Press photo, c.1926"
         alt="AND THE OCEAN WAVES ROLLED HIGH"
         loading="lazy"
       >
       <figcaption>
         <strong>AND THE OCEAN WAVES ROLLED HIGH</strong><br>
-        New York - that might have been the expressions of the passengers on the SS Leviathan, giant trans-atlantic steamer as it plowed through one of the roughest and biggest sea storms ever encountered on its trip here.
-The Leviathan arrived today.<br>
+        New York — That might have been the expression of the passengers on the SS Leviathan, giant transatlantic steamer, as it plowed through one of the roughest and biggest sea storms ever encountered on its trip here. The Leviathan arrived today.<br>
         <span class="caption-note">Press photo, c.1926</span>
       </figcaption>
     </figure>
 
-<figure class="photo-card">
+    <figure class="photo-card">
       <img
         src="/photos/photo6.jpg"
         data-full="/photos/photo6.jpg"
@@ -624,7 +644,7 @@ The Leviathan arrived today.<br>
         <span class="caption-note">Press photo, c.1937</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/photo8.jpg"
@@ -635,86 +655,86 @@ The Leviathan arrived today.<br>
       >
       <figcaption>
         <strong>BUCKING HEAVY SEAS IN MID-ATLANTIC</strong><br>
-        New York....Here is a picture made aboard the S.S. Berengaria as the ship plowed through heavy seas. The Berengaria arrived in New York more than two days late, due to storms.<br>
+        New York — Here is a picture made aboard the S.S. Berengaria as the ship plowed through heavy seas. The Berengaria arrived in New York more than two days late due to storms.<br>
         <span class="caption-note">Press photo, c.1926</span>
       </figcaption>
     </figure>
 
-<figure class="photo-card">
+    <figure class="photo-card">
       <img
         src="/photos/mv-britannic/mvb1.JPG"
         data-full="/photos/mv-britannic/mvb1.JPG"
-        data-caption="MV Britannic Interior - 1st Class Entrance"
-        alt="MV Britannic Interiors"
+        data-caption="MV Britannic Interior — 1st Class Entrance"
+        alt="MV Britannic 1st Class Entrance"
         loading="lazy"
       >
       <figcaption>
-        <strong>MV Britannic Interior - 1st Class Entrance</strong><br>
-        MV Britannic Interior - 1st Class Entrance from an early pre-maiden voyage brochure booklet.<br>
+        <strong>MV Britannic Interior — 1st Class Entrance</strong><br>
+        MV Britannic 1st Class Entrance from an early pre-maiden-voyage brochure booklet.<br>
         <span class="caption-note">Illustration, c.1930</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/mv-britannic/mvb2.JPG"
         data-full="/photos/mv-britannic/mvb2.JPG"
-        data-caption="MV Britannic Interior - 1st Class Drawing Room"
-        alt="MV Britannic Interiors"
+        data-caption="MV Britannic Interior — 1st Class Drawing Room"
+        alt="MV Britannic 1st Class Drawing Room"
         loading="lazy"
       >
       <figcaption>
-        <strong>MV Britannic Interior - 1st Class Drawing Room</strong><br>
-        MV Britannic Interior - 1st Class Drawing Room from an early pre-maiden voyage brochure booklet.<br>
+        <strong>MV Britannic Interior — 1st Class Drawing Room</strong><br>
+        MV Britannic 1st Class Drawing Room from an early pre-maiden-voyage brochure booklet.<br>
         <span class="caption-note">Illustration, c.1930</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/mv-britannic/mvb3.JPG"
         data-full="/photos/mv-britannic/mvb3.JPG"
-        data-caption="MV Britannic Interior - 1st Class Long Gallery"
-        alt="MV Britannic Interiors"
+        data-caption="MV Britannic Interior — 1st Class Long Gallery"
+        alt="MV Britannic 1st Class Long Gallery"
         loading="lazy"
       >
       <figcaption>
-        <strong>MV Britannic Interior - 1st Class Long Gallery</strong><br>
-        MV Britannic Interior - 1st Class Long Gallery from an early pre-maiden voyage brochure booklet.<br>
+        <strong>MV Britannic Interior — 1st Class Long Gallery</strong><br>
+        MV Britannic 1st Class Long Gallery from an early pre-maiden-voyage brochure booklet.<br>
         <span class="caption-note">Illustration, c.1930</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/mv-britannic/mvb4.JPG"
         data-full="/photos/mv-britannic/mvb4.JPG"
-        data-caption="MV Britannic Interior - 1st Class Dining Room"
-        alt="MV Britannic Interiors"
+        data-caption="MV Britannic Interior — 1st Class Dining Room"
+        alt="MV Britannic 1st Class Dining Room"
         loading="lazy"
       >
       <figcaption>
-        <strong>MV Britannic Interior - 1st Class Dining Room</strong><br>
-        MV Britannic Interior - 1st Class Dining Room from an early pre-maiden voyage brochure booklet.<br>
+        <strong>MV Britannic Interior — 1st Class Dining Room</strong><br>
+        MV Britannic 1st Class Dining Room from an early pre-maiden-voyage brochure booklet.<br>
         <span class="caption-note">Illustration, c.1930</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/hw-postcard.jpg"
         data-full="/photos/hw-postcard.jpg"
-        data-caption="Postcard of the Harland and Wolff great gantry - Olympic and Titanic"
-        alt="Postcard of the Harland and Wolff great gantry - Olympic and Titanic"
+        data-caption="Postcard of the Harland and Wolff great gantry — Olympic and Titanic"
+        alt="Postcard of the Harland and Wolff great gantry with Olympic and Titanic under construction"
         loading="lazy"
       >
       <figcaption>
-        <strong>Postcard of the Harland and Wolff great gantry - Olympic and Titanic</strong><br>
-        Postcard showing Harland and Wolff's great gantry where both the Olympic and Titanic are under construction.<br>
+        <strong>Postcard of the Harland and Wolff great gantry — Olympic and Titanic</strong><br>
+        Postcard showing Harland and Wolff's great gantry, where both the Olympic and Titanic are under construction.<br>
         <span class="caption-note">Postcard, c.1910s</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/boxer.jpg"
@@ -725,17 +745,17 @@ The Leviathan arrived today.<br>
       >
       <figcaption>
         <strong>Boxer the cat of the SS Canopic</strong><br>
-        Postcard of Boxer, the ship's cat, aboard the White Star Line ship SS Canopic<br>
+        Postcard of Boxer, the ship's cat, aboard the White Star Line ship SS Canopic.<br>
         <span class="caption-note">Postcard, c.1905</span>
       </figcaption>
     </figure>
 
-<figure class="photo-card">
+    <figure class="photo-card">
       <img
         src="/photos/photo9.jpg"
         data-full="/photos/photo9.jpg"
-        data-caption="SS United States - Photo, c.1955"
-        alt="SS United States"
+        data-caption="SS United States — Photo, c.1955"
+        alt="SS United States at sea"
         loading="lazy"
       >
       <figcaption>
@@ -744,12 +764,12 @@ The Leviathan arrived today.<br>
         <span class="caption-note">Photo, c.1955</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/photo10.JPG"
         data-full="/photos/photo10.JPG"
-        data-caption="Bow of the SS Leviathan - Photo, c.1920s"
+        data-caption="Bow of the SS Leviathan — Photo, c.1920s"
         alt="Bow of the SS Leviathan"
         loading="lazy"
       >
@@ -760,108 +780,105 @@ The Leviathan arrived today.<br>
       </figcaption>
     </figure>
 
-<figure class="photo-card">
+    <figure class="photo-card">
       <img
         src="/photos/photo11.jpg"
         data-full="/photos/photo11.jpg"
-        data-caption="New United States Liner - Photo, c.1937"
+        data-caption="New United States Liner — Photo, c.1937"
         alt="New United States Liner"
         loading="lazy"
       >
       <figcaption>
         <strong>New United States Liner</strong><br>
-        Washington D.C. — Here is a drawing of a new liner, sister ship of the Manhattan and Washington of the United States Lines which will cost $15,750,000. It will be constructed as a successor to the liner Leviathan, soon to be scrapped. The new ship will be the largest ever built in an American shipyard and will give the American merchant marine the finest and safest ship afloat. It will be slightly larger than the
-Washington and the Manhattan, with a length of 723 feet and a breadth of 92 feet. It will have a depth to promenade deck of 75 feet and a load-draft displacement of about 34,000 tons.Its speed will be about twenty-two knots an hour; and there will be accommodations for about 1,200 passengers and a crew of about 630.<br>
+        Washington, D.C. — Here is a drawing of a new liner, sister ship of the Manhattan and Washington of the United States Lines, which will cost $15,750,000. It will be constructed as a successor to the liner Leviathan, soon to be scrapped. The new ship will be the largest ever built in an American shipyard and will give the American merchant marine the finest and safest ship afloat. It will be slightly larger than the Washington and the Manhattan, with a length of 723 feet and a breadth of 92 feet. It will have a depth to promenade deck of 75 feet and a load-draft displacement of about 34,000 tons. Its speed will be about twenty-two knots an hour; and there will be accommodations for about 1,200 passengers and a crew of about 630.<br>
         <span class="caption-note">Photo, c.1937</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/photo12.jpg"
         data-full="/photos/photo12.jpg"
-        data-caption="OCEAN LINER REACHES FRANCE AFTER BATTLING GALES - Photo, c.1930"
+        data-caption="OCEAN LINER REACHES FRANCE AFTER BATTLING GALES — Photo, c.1930"
         alt="OCEAN LINER REACHES FRANCE AFTER BATTLING GALES c.1930"
         loading="lazy"
       >
       <figcaption>
         <strong>OCEAN LINER REACHES FRANCE AFTER BATTLING GALES c.1930</strong><br>
-        Le Havre, France...the S.S. Tuscania arriving here from New York in a rough sea following a battle with fierce equinoxial gales which swept the east Atlantic. Several french harbors reported that the largest liners were having difficulty in making their way into port.<br>
+        Le Havre, France — The S.S. Tuscania arriving here from New York in a rough sea following a battle with fierce equinoctial gales which swept the east Atlantic. Several French harbors reported that the largest liners were having difficulty in making their way into port.<br>
         <span class="caption-note">Photo, c.1930</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/photo13.jpg"
         data-full="/photos/photo13.jpg"
-        data-caption="DRYDOCKING THE WORLDS LARGEST LINER"
-        alt="DRYDOCKING THE WORLDS LARGEST LINER"
+        data-caption="DRYDOCKING THE WORLD'S LARGEST LINER"
+        alt="DRYDOCKING THE WORLD'S LARGEST LINER"
         loading="lazy"
       >
       <figcaption>
-        <strong>DRYDOCKING THE WORLDS LARGEST LINER</strong><br>
-        London...above is pictured the giant S.S.Majestic being raised on the floating dry dock by means of powerful pumps. The ship is at Southampton being repaired. The raising of the ship took six hours to complete and was done under the direction of Commander Harvey.<br>
+        <strong>DRYDOCKING THE WORLD'S LARGEST LINER</strong><br>
+        London — Above is pictured the giant S.S. Majestic being raised on the floating dry dock by means of powerful pumps. The ship is at Southampton being repaired. The raising of the ship took six hours to complete and was done under the direction of Commander Harvey.<br>
         <span class="caption-note">Press photo, c.1925</span>
       </figcaption>
     </figure>
-    
+
     <figure class="photo-card">
       <img
         src="/photos/photo14.jpg"
         data-full="/photos/photo14.jpg"
         data-caption="SS Majestic at sea"
-        alt="SS Majestic at sea"
+        alt="Air view of SS Majestic at sea"
         loading="lazy"
       >
       <figcaption>
         <strong>Air view of SS Majestic at sea</strong><br>
-        Air view of the SS Majestic - White Star Line - World's largest ship.<br>
+        Air view of the SS Majestic — White Star Line — world's largest ship.<br>
         <span class="caption-note">Press photo, c.1920s</span>
       </figcaption>
     </figure>
 
-<figure class="photo-card">
+    <figure class="photo-card">
       <img
         src="/photos/ssus-pan.png"
         data-full="/photos/ssus-pan.png"
         data-caption="SS United States and the Manhattan skyline"
-        alt=""SS United States and the Manhattan skyline"
+        alt="SS United States and the Manhattan skyline"
         loading="lazy"
       >
       <figcaption>
         <strong>SS United States and the Manhattan skyline</strong><br>
-        More than six miles of New York City's waterfront are covered in this picture, taken with a new type camera devised by Luis Azarraga, a Philippine born commercial photographer. The picture was taken from a helicopter hovering over the Hudson river. It shows the SS Untied States and takes in the Manhattan skyline from 138th St. to 12th St.<br>
+        More than six miles of New York City's waterfront are covered in this picture, taken with a new type of camera devised by Luis Azarraga, a Philippine-born commercial photographer. The picture was taken from a helicopter hovering over the Hudson River. It shows the SS United States and takes in the Manhattan skyline from 138th Street to 12th Street.<br>
         <span class="caption-note">Press photo, c.1953</span>
       </figcaption>
     </figure>
 
   </section>
 
-  <!-- ✅ spacing system for home button + flags -->
   <div class="actions">
     <a class="button secondary" href="/">Home</a>
-    </div>
-    
-     <div class="footer-stack">
-    <img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true" />
- 
+  </div>
 
-  <footer>
-    <p class="copyright">
+  <div class="footer-stack">
+    <img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true" />
+
+    <footer>
+      <p class="copyright">
         © <span id="year"></span> Ocean Liner Curator.
       </p>
-    </footer></div>
-  </main>
+    </footer>
+  </div>
+</main>
 
-  <script>
-    const year = document.getElementById("year");
-    if (year) year.textContent = new Date().getFullYear();
-  </script>
-
+<script>
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
 
 <!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview">
   <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
 
   <figure class="lightbox-figure">
@@ -876,8 +893,10 @@ Washington and the Manhattan, with a length of 723 feet and a breadth of 92 feet
   const imgEl = document.getElementById('lightboxImg');
   const capEl = document.getElementById('lightboxCaption');
   const closeBtn = document.getElementById('lightboxClose');
+  let lastFocused = null;
 
   function openLightbox(src, alt, caption){
+    lastFocused = document.activeElement;
     imgEl.src = src;
     imgEl.alt = alt || "";
     capEl.textContent = caption || "";
@@ -895,14 +914,30 @@ Washington and the Manhattan, with a length of 723 feet and a breadth of 92 feet
     capEl.textContent = "";
     document.documentElement.style.overflow = '';
     document.body.style.overflow = '';
+
+    if(lastFocused && typeof lastFocused.focus === 'function'){
+      lastFocused.focus();
+    }
   }
 
   document.querySelectorAll('.photo-card img').forEach(img => {
-    img.addEventListener('click', () => {
+    img.setAttribute('tabindex', '0');
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', 'Open larger image');
+
+    function activate(){
       const full = img.getAttribute('data-full') || img.src;
       const alt = img.getAttribute('alt') || "";
       const caption = img.getAttribute('data-caption') || "";
       openLightbox(full, alt, caption);
+    }
+
+    img.addEventListener('click', activate);
+    img.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        activate();
+      }
     });
   });
 
@@ -915,12 +950,11 @@ Washington and the Manhattan, with a length of 723 feet and a breadth of 92 feet
 })();
 </script>
 
- <script src="/assets/header.js" defer></script>
-       <script src="/assets/nav.js" defer></script>
+<script src="/assets/header.js" defer></script>
+<script src="/assets/nav.js" defer></script>
 
 <!-- 100% privacy-first analytics -->
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-
 
 </body>
 </html>
