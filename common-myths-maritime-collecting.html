@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Common Myths in Maritime Collecting — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded guide to common myths in maritime collecting: provenance, ship attribution, rarity, photographs, salvage claims, replicas, and why evidence matters." />
+  <link rel="canonical" href="https://www.oceanliners.net/common-myths-maritime-collecting" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Common Myths in Maritime Collecting — Ocean Liner Curator" />
+  <meta property="og:description" content="Not every maritime object can be tied to a famous ship. A careful guide to common collecting myths around provenance, rarity, photographs, salvage claims, and attribution." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.oceanliners.net/common-myths-maritime-collecting" />
+  <meta property="og:image" content="https://www.oceanliners.net/images/common-myths-maritime-collecting-og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Common Myths in Maritime Collecting" />
+  <meta name="twitter:description" content="A careful guide to common maritime collecting myths: provenance, ship attribution, photographs, rarity, replicas, and evidence." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/images/common-myths-maritime-collecting-og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.oceanliners.net/common-myths-maritime-collecting#webpage",
+        "url": "https://www.oceanliners.net/common-myths-maritime-collecting",
+        "name": "Common Myths in Maritime Collecting — Ocean Liner Curator",
+        "description": "A curator-minded guide to common myths in maritime collecting: provenance, ship attribution, rarity, photographs, salvage claims, replicas, and why evidence matters.",
+        "isPartOf": {
+          "@id": "https://www.oceanliners.net/#website"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Maritime collecting"
+          },
+          {
+            "@type": "Thing",
+            "name": "Ocean liner memorabilia"
+          },
+          {
+            "@type": "Thing",
+            "name": "Provenance"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.oceanliners.net/common-myths-maritime-collecting#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.oceanliners.net/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ocean Liner Collecting Guide",
+            "item": "https://www.oceanliners.net/ocean-liner-collecting-guide"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Common Myths in Maritime Collecting",
+            "item": "https://www.oceanliners.net/common-myths-maritime-collecting"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.oceanliners.net/common-myths-maritime-collecting#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does a maritime object need ship-specific provenance to be collectible?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A maritime object can be collectible because of its type, age, maker, design, line, port association, or broader historical context. Ship-specific provenance can add meaning, but it is not the only source of collecting value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a family story enough to prove an ocean liner artifact came from a specific ship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A family story can be useful context, but it is not the same as proof. Stronger attribution usually requires documentation, markings, photographs, records, chain of custody, or other evidence that connects the object to the claimed ship."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are rare maritime objects always more important?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Rarity matters, but importance also depends on documentation, condition, historical context, interpretive value, and whether the claim being made about the object can be supported."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,26,24,0.74);
+      --panel-soft:rgba(15,26,24,0.52);
+      --ink:#efe9dc;
+      --muted:#cfc2a8;
+      --faint:#9f9278;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,0.18);
+      --accent-line:rgba(191,164,106,0.34);
+      --edge:rgba(191,164,106,0.25);
+      --shadow:rgba(0,0,0,0.34);
+      --max:min(1080px, calc(100% - 2rem));
+      --measure:72ch;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Spectral", Georgia, serif;
+      line-height:1.65;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(191,164,106,0.13), transparent 32rem),
+        radial-gradient(circle at 82% 0%, rgba(255,255,255,0.06), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #0b1514 48%, #070d0c 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:0.11;
+      background-image:url('/tile3.png');
+      background-size:360px auto;
+      mix-blend-mode:screen;
+    }
+
+    a{ color:#ead59b; text-decoration:none; }
+    a:hover{ color:#fff1c2; text-decoration:underline; text-underline-offset:0.18em; }
+
+    .hero{
+      position:relative;
+      min-height:62vh;
+      display:grid;
+      align-items:end;
+      padding:3rem 0 3rem !important;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.2);
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.30), rgba(10,17,16,0.92)),
+        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.25), transparent 31rem),
+        linear-gradient(125deg, rgba(10,17,16,0.26), rgba(10,17,16,0.96)),
+        url('/images/common-myths-maritime-collecting-hero.jpg') center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:42%;
+      background:linear-gradient(180deg, transparent, #0a1110 92%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:var(--max) !important;
+      margin:0 auto;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      max-width:100%;
+      padding:.42rem .68rem;
+      border:1px solid rgba(191,164,106,0.36);
+      border-radius:999px;
+      background:rgba(10,17,16,0.55);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.74rem;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      line-height:1.25;
+    }
+
+    .hero h1{
+      max-width:920px;
+      margin:.95rem 0 .75rem;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(2.25rem, 7vw, 5.15rem);
+      line-height:1.02;
+      letter-spacing:-.045em;
+      text-wrap:balance;
+      text-shadow:0 16px 34px rgba(0,0,0,0.45);
+    }
+
+    .page-kicker{
+      max-width:760px;
+      margin:0;
+      color:#e5dcc8;
+      font-size:clamp(1.05rem, 2vw, 1.32rem);
+      line-height:1.55;
+      text-shadow:0 10px 24px rgba(0,0,0,0.36);
+    }
+
+    .meta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+      margin-top:1.25rem;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      padding:.38rem .65rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:999px;
+      background:rgba(10,17,16,0.48);
+      color:var(--muted);
+      font-size:.86rem;
+    }
+
+    main{
+      width:var(--max);
+      margin:0 auto;
+      padding:2.4rem 0 4rem;
+    }
+
+    .entry-shell{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) 315px;
+      gap:1.25rem;
+      align-items:start;
+    }
+
+    .article-card,
+    .side-card,
+    .answer-box,
+    .link-card,
+    .note{
+      border:1px solid var(--edge);
+      background:linear-gradient(180deg, rgba(18,31,29,0.82), rgba(11,19,18,0.76));
+      box-shadow:0 18px 45px var(--shadow);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+    }
+
+    .article-card{
+      border-radius:24px;
+      padding:clamp(1.1rem, 3vw, 2rem);
+    }
+
+    .prose{ max-width:var(--measure); }
+
+    .prose h2,
+    .side-card h2{
+      margin:2rem 0 .75rem;
+      color:#f4ead2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(1.42rem, 3vw, 2.1rem);
+      line-height:1.18;
+      letter-spacing:-.025em;
+    }
+
+    .prose h2:first-child{ margin-top:0; }
+
+    .prose h2::after,
+    .side-card h2::after{
+      content:"";
+      display:block;
+      width:88px;
+      height:1px;
+      margin:.62rem 0 0;
+      background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+    }
+
+    .prose h3{
+      margin:1.45rem 0 .45rem;
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1.1rem;
+      letter-spacing:.01em;
+    }
+
+    .prose p{ margin:.75rem 0 1rem; color:#e7decb; }
+    .prose strong{ color:#fff4d3; }
+
+    .answer-box{
+      margin:0 0 1.5rem;
+      padding:1.1rem 1.15rem;
+      border-radius:18px;
+      background:
+        radial-gradient(circle at top left, rgba(191,164,106,0.18), transparent 18rem),
+        rgba(15,26,24,0.78);
+    }
+
+    .answer-box .label{
+      display:block;
+      color:#d9c17f;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.78rem;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      margin-bottom:.4rem;
+    }
+
+    .answer-box p{
+      margin:0;
+      color:#f1eadc;
+      font-size:1.08rem;
+      line-height:1.55;
+    }
+
+    .accuracy-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:.8rem;
+      margin:1.15rem 0 1.45rem;
+    }
+
+    .accuracy-card{
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.21);
+      border-radius:18px;
+      background:rgba(8,15,14,0.42);
+    }
+
+    .accuracy-card .icon{
+      display:inline-grid;
+      place-items:center;
+      width:2rem;
+      height:2rem;
+      margin-bottom:.55rem;
+      border-radius:999px;
+      color:#f5e7bb;
+      background:rgba(191,164,106,0.14);
+      border:1px solid rgba(191,164,106,0.24);
+    }
+
+    .accuracy-card h3{
+      margin:.15rem 0 .38rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1rem;
+      line-height:1.25;
+    }
+
+    .accuracy-card p{
+      margin:0;
+      color:#d8ceb8;
+      font-size:.95rem;
+      line-height:1.5;
+    }
+
+    .comparison-list{
+      display:grid;
+      gap:.75rem;
+      margin:1rem 0 1.35rem;
+    }
+
+    .comparison-item{
+      padding:.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.19);
+      border-radius:17px;
+      background:rgba(8,15,14,0.34);
+    }
+
+    .comparison-item b{
+      display:block;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      margin-bottom:.25rem;
+    }
+
+    .comparison-item span{
+      display:block;
+      color:#d8ceb8;
+      line-height:1.5;
+    }
+
+    .note{
+      margin:1.3rem 0;
+      padding:1rem 1.05rem;
+      border-radius:18px;
+      background:rgba(10,17,16,0.54);
+    }
+
+    .note p{ margin:0; color:#d8ceb8; }
+
+    .source-list{
+      margin:1rem 0 0;
+      padding-left:1.1rem;
+      color:#d9cfbb;
+      font-size:.95rem;
+    }
+
+    .source-list li{ margin:.35rem 0; }
+
+    .side-stack{
+      position:sticky;
+      top:1rem;
+      display:grid;
+      gap:1rem;
+    }
+
+    .side-card{
+      border-radius:22px;
+      padding:1rem;
+    }
+
+    .side-card h2{
+      margin-top:0;
+      font-size:1.18rem;
+    }
+
+    .side-card p{
+      margin:.55rem 0 .85rem;
+      color:#d8ceb8;
+      font-size:.96rem;
+      line-height:1.5;
+    }
+
+    .toc{
+      display:grid;
+      gap:.4rem;
+      margin-top:.65rem;
+    }
+
+    .toc a,
+    .link-card{
+      display:block;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.18);
+      background:rgba(8,15,14,0.36);
+      padding:.7rem .78rem;
+      color:#eadcae;
+      text-decoration:none;
+      line-height:1.3;
+    }
+
+    .toc a:hover,
+    .link-card:hover{
+      border-color:rgba(191,164,106,0.42);
+      background:rgba(191,164,106,0.08);
+      text-decoration:none;
+    }
+
+    .link-card{ margin:.55rem 0; }
+
+    .link-card span{
+      display:block;
+      color:#a99d84;
+      font-size:.82rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:.15rem;
+    }
+
+    .faq{
+      margin-top:2rem;
+      border-top:1px solid rgba(191,164,106,0.2);
+      padding-top:1rem;
+    }
+
+    details.faq-item{
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      background:rgba(8,15,14,0.32);
+      margin:.7rem 0;
+      overflow:hidden;
+    }
+
+    .faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      padding:.9rem 1rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+    }
+
+    .faq-item summary::-webkit-details-marker{ display:none; }
+
+    .faq-item p{
+      margin:0;
+      padding:0 1rem 1rem;
+      color:#d8ceb8;
+    }
+
+    .next-steps{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:.8rem;
+      margin-top:1rem;
+    }
+
+    .cta-card{
+      display:block;
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.23);
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(191,164,106,0.09), rgba(8,15,14,0.34));
+      text-decoration:none;
+    }
+
+    .cta-card b{
+      display:block;
+      color:#f3e7c7;
+      font-family:"Libre Baskerville", Georgia, serif;
+      line-height:1.25;
+      margin-bottom:.35rem;
+    }
+
+    .cta-card span{
+      display:block;
+      color:#d3c8b1;
+      font-size:.94rem;
+      line-height:1.45;
+    }
+
+    .cta-card:hover{
+      border-color:rgba(191,164,106,0.48);
+      background:linear-gradient(180deg, rgba(191,164,106,0.14), rgba(8,15,14,0.42));
+      text-decoration:none;
+    }
+
+    @media (max-width:900px){
+      .entry-shell{ grid-template-columns:1fr; }
+      .side-stack{ position:static; }
+      .accuracy-grid,
+      .next-steps{ grid-template-columns:1fr; }
+      .hero{ min-height:58vh; padding-top:6.5rem; }
+    }
+
+    @media (max-width:560px){
+      main{ padding-top:1.25rem; }
+      .article-card{ border-radius:20px; padding:1rem; }
+      .hero{ padding-bottom:2.15rem; }
+      .meta-pill{ font-size:.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Collecting guide · myths & evidence</span>
+      <h1>Common Myths in Maritime Collecting</h1>
+      <p class="page-kicker">Maritime collecting is full of compelling stories, but a good story is not always the same as evidence. These common myths explain why careful attribution matters.</p>
+      <div class="meta-row" aria-label="Page context">
+        <span class="meta-pill">Ocean liner memorabilia</span>
+        <span class="meta-pill">Provenance</span>
+        <span class="meta-pill">Evidence standards</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="entry-shell">
+      <article class="article-card">
+        <div class="prose">
+          <div class="answer-box" id="answer">
+            <span class="label">Short answer</span>
+            <p><strong>The most common myth in maritime collecting is that an interesting object must have belonged to a famous ship.</strong> In reality, many maritime objects are meaningful without ship-specific attribution. The strongest claims depend on evidence: markings, documents, photographs, chain of custody, construction details, and responsible comparison.</p>
+          </div>
+
+          <h2 id="why-myths-spread">Why collecting myths spread so easily</h2>
+          <p>Maritime objects invite stories. A chair, menu, ashtray, deck fitting, key, plate, badge, or fragment can feel close to a vanished world, especially when it is connected—accurately or not—to a famous liner, wreck, company, or port.</p>
+
+          <p>That emotional pull is part of the appeal of collecting. It is also why myths form quickly. A vague family memory can become provenance. A similar pattern can become ship attribution. A dealer description can be repeated until it sounds like documentation. Over time, the claim may become more famous than the evidence behind it.</p>
+
+          <div class="accuracy-grid" aria-label="Maritime collecting myth overview">
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Stories are not proof</h3>
+              <p>Oral history can matter, but it needs support before it becomes a firm attribution.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Similarity is not identity</h3>
+              <p>An object may resemble shipboard material without being traceable to one specific vessel.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Uncertainty is useful</h3>
+              <p>Careful collecting often means describing what is known, what is likely, and what remains unknown.</p>
+            </section>
+          </div>
+
+          <h2 id="myth-famous-ship">Myth 1: If it looks old, it must be from a famous liner</h2>
+          <p>Age alone does not prove ship origin. Many maritime-style objects were used in hotels, clubs, railways, restaurants, private homes, ferries, coastal steamers, cargo ships, naval vessels, and later decorative interiors. Ocean liners influenced design taste, but not every brass fitting or heavy piece of furniture came from a celebrated transatlantic ship.</p>
+
+          <p>A more careful description might say that an object is <em>maritime style</em>, <em>shipboard type</em>, <em>ocean-liner related</em>, or <em>associated with a particular line</em> only if the evidence supports that claim. The famous-ship label should be earned, not assumed.</p>
+
+          <h2 id="myth-family-story">Myth 2: A family story is the same as provenance</h2>
+          <p>Family stories can preserve real information. They can also compress time, omit details, or attach a famous name to an object that passed through several hands. A story that begins as “this came from a ship” may later become “this came from Titanic,” “this came from Olympic,” or “this came from Queen Mary” without any new evidence being added.</p>
+
+          <div class="comparison-list" aria-label="Common collecting myths and better descriptions">
+            <div class="comparison-item">
+              <b>Myth: “The story proves it.”</b>
+              <span>Better: “The story is part of the object’s collecting history, but the attribution still needs supporting documentation.”</span>
+            </div>
+            <div class="comparison-item">
+              <b>Myth: “The seller said it, so it is documented.”</b>
+              <span>Better: “A seller description is a claim. Documentation is the evidence that allows the claim to be tested.”</span>
+            </div>
+            <div class="comparison-item">
+              <b>Myth: “It looks right, so it must be right.”</b>
+              <span>Better: “Visual resemblance can guide research, but it does not prove identity by itself.”</span>
+            </div>
+          </div>
+
+          <h2 id="myth-photo-proof">Myth 3: A photograph of a similar object proves the match</h2>
+          <p>Photographs are powerful evidence, but they must be used carefully. A period photograph may show a similar lamp, chair, carpet, sign, plate, or wall fitting, but similarity does not automatically prove the object in hand is the same object.</p>
+
+          <p>The strongest photographic matches usually depend on distinctive details: damage, construction marks, dimensions, maker’s features, placement, pattern irregularities, labels, or a documented chain connecting the object to the photographed setting. Without those details, a photograph may support a type comparison rather than a specific identification.</p>
+
+          <h2 id="myth-rarity">Myth 4: Rare always means important</h2>
+          <p>Rarity can matter, but it is not the only measure of importance. A rare object with weak attribution may be less historically useful than a common object with excellent documentation. A menu, ticket, brochure, luggage label, deck plan, or marked piece of tableware can sometimes tell a clearer story than an impressive but undocumented architectural fragment.</p>
+
+          <p>For collectors, the better question is not only “How rare is it?” but “What can this object responsibly tell us?”</p>
+
+          <div class="note">
+            <p><strong>Curator’s note:</strong> A modest object with firm context is often more useful than a dramatic object with a dramatic story. Documentation gives even ordinary pieces historical weight.</p>
+          </div>
+
+          <h2 id="myth-salvage">Myth 5: Salvage, scrap, or auction history proves everything</h2>
+          <p>Objects removed during refits, scrapping, dispersals, estate sales, hotel installations, exhibitions, or auctions may have real maritime connections. But each stage can introduce uncertainty. Items can be mixed, relabeled, separated from documentation, or associated with a ship because they passed through the same sale rather than the same original space.</p>
+
+          <p>A sale label or auction description may be valuable evidence, but it is still part of a larger chain. The more specific the claim, the more specific the evidence should be.</p>
+
+          <h2 id="myth-replica">Myth 6: A reproduction has no value</h2>
+          <p>Not every collectible needs to be original ship material. Reproductions, commemorative pieces, exhibition objects, later souvenirs, and interpretive replicas can still have value if they are described honestly. Problems arise when a reproduction is presented as ship-used, period, salvaged, or original without evidence.</p>
+
+          <p>Clear labeling protects both the object and the collector. A reproduction described accurately can be appreciated for what it is. A reproduction described inaccurately becomes a source of confusion.</p>
+
+          <h2 id="myth-condition">Myth 7: Better condition always means better history</h2>
+          <p>Condition affects value, preservation, and display, but it does not automatically determine historical importance. Wear, repair, staining, replacement parts, or altered surfaces can sometimes be part of an object’s history. In other cases, damage may obscure what the object once was.</p>
+
+          <p>The most responsible approach is to describe condition clearly and avoid turning condition into proof. A worn object is not automatically “ship-used,” and a clean object is not automatically fake.</p>
+
+          <h2 id="how-to-respond">How to respond to a collecting claim</h2>
+          <p>The goal is not to dismiss every claim. The goal is to match the strength of the conclusion to the strength of the evidence. Many objects can be described honestly with layered language: documented, attributed, possibly associated, similar to, from the same line, period maritime, later souvenir, reproduction, or unknown.</p>
+
+          <p>That kind of careful wording may feel less exciting than a famous-ship attribution, but it is more durable. It keeps the object useful for future research instead of forcing it into a story it may not support.</p>
+
+          <section class="faq" id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <details class="faq-item">
+              <summary>Can an object still be valuable if the exact ship is unknown?</summary>
+              <p>Yes. An object can be valuable because of its line, maker, date, design, material, use, condition, or broader maritime context. Ship-specific attribution is only one possible form of value.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What is the safest wording for an uncertain maritime object?</summary>
+              <p>Use wording that reflects the evidence. Phrases such as “attributed to,” “possibly associated with,” “maritime-style,” “line-related,” or “unknown origin” are often more responsible than forcing a definite ship attribution.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What counts as strong evidence in maritime collecting?</summary>
+              <p>Strong evidence may include maker marks, ship or line markings, period photographs, bills of sale, inventories, removal records, chain-of-custody documents, matching dimensions, or multiple independent sources that support the same conclusion.</p>
+            </details>
+          </section>
+
+          <h2 id="next">Where to go next</h2>
+          <p>This page is part of the broader collecting and evidence guide. For a stronger framework, continue into provenance, attribution, and evidence standards.</p>
+
+          <div class="next-steps" aria-label="Related collecting and evidence pages">
+            <a class="cta-card" href="/ocean-liner-collecting-guide">
+              <b>Ocean Liner Collecting Guide</b>
+              <span>Start with the broader collecting hub: evidence, provenance, attribution, uncertainty, and responsible descriptions.</span>
+            </a>
+            <a class="cta-card" href="/provenance">
+              <b>Common Problems With Provenance</b>
+              <span>Understand gaps in ownership history, oral claims, dealer descriptions, and chain-of-custody problems.</span>
+            </a>
+            <a class="cta-card" href="/evidence">
+              <b>What Counts as Evidence?</b>
+              <span>A practical framework for deciding what supports a collecting claim and what does not.</span>
+            </a>
+          </div>
+
+          <h2 id="sources">Source notes</h2>
+          <p>This entry page summarizes common patterns in maritime and ocean liner collecting. Stronger object research should compare physical evidence, maker information, sale records, photographs, line documents, catalogues, inventories, and published specialist scholarship.</p>
+          <ul class="source-list">
+            <li>Object markings, maker information, construction details, and material evidence.</li>
+            <li>Chain-of-custody records, bills of sale, auction catalogues, and collection notes.</li>
+            <li>Period photographs, deck plans, company publications, passenger lists, and shipboard inventories where available.</li>
+            <li>Specialist maritime, ocean liner, museum, and collecting scholarship on attribution and provenance.</li>
+          </ul>
+        </div>
+      </article>
+
+      <aside class="side-stack" aria-label="Page navigation and related links">
+        <section class="side-card">
+          <h2>On this page</h2>
+          <nav class="toc" aria-label="Section links">
+            <a href="#answer">Short answer</a>
+            <a href="#why-myths-spread">Why myths spread</a>
+            <a href="#myth-famous-ship">Famous-ship claims</a>
+            <a href="#myth-family-story">Family stories</a>
+            <a href="#myth-photo-proof">Photo evidence</a>
+            <a href="#myth-rarity">Rarity</a>
+            <a href="#myth-salvage">Salvage & auctions</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </section>
+
+        <section class="side-card">
+          <h2>Best next link</h2>
+          <p>For readers who want the full collecting framework, send them into the main guide.</p>
+          <a class="link-card" href="/ocean-liner-collecting-guide">
+            <span>Collecting hub</span>
+            Ocean Liner Collecting Guide
+          </a>
+        </section>
+
+        <section class="side-card">
+          <h2>Evidence paths</h2>
+          <a class="link-card" href="/authentic-memorabilia">
+            <span>Authenticity</span>
+            How to Identify Authentic Ocean Liner Memorabilia
+          </a>
+          <a class="link-card" href="/attribution">
+            <span>Attribution</span>
+            Why Most Ocean Liner Artifacts Cannot Be Reliably Attributed
+          </a>
+          <a class="link-card" href="/unknown">
+            <span>Uncertainty</span>
+            Why “Unknown” Is a Responsible Conclusion
+          </a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+</body>
+</html>
