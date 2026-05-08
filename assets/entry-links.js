@@ -41,13 +41,13 @@
       "How marketing, media language, engineering confidence, and later memory shaped the myth.",
     href: "/why-was-titanic-called-unsinkable"
   },
-  {
-    meta: "SS United States · Design",
-    title: "Why was SS United States so fast?",
-    desc:
-      "Power, weight, and military-influenced engineering behind her record speed.",
-    href: "/why-was-ss-united-states-so-fast"
-  }
+{
+  meta: "Leviathan · History",
+  title: "What Is the SS Leviathan and Why Was It Important?",
+  desc:
+    "From German liner Vaterland to American flagship: why SS Leviathan mattered to wartime transport, Atlantic prestige, and U.S. liner ambition.",
+  href: "/what-is-the-ss-leviathan-and-why-was-it-important"
+}
 ]
     },
 
