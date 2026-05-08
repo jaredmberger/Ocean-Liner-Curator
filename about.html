@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    html { background:#0a1110; }
+    body { background:#0a1110; }
+  </style>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Ocean Liner Curator</title>
-  <meta name="description" content="About Ocean Liner Curator: a curator-minded guide to ocean liner history and memorabilia, built for evidence, clarity, and care." />
+
+  <title>About Ocean Liner Curator — Evidence-First Ocean Liner History</title>
+  <meta name="description" content="About Ocean Liner Curator: an evidence-first guide to ocean liner history, ship guides, maritime collecting, research standards, and Ocean Liner GPT methodology." />
 
   <link rel="canonical" href="https://oceanliners.net/about/" />
   <meta name="theme-color" content="#0a1110" />
   <meta name="robots" content="index,follow" />
 
-  <link rel="preload" as="image" href="/logo.png">
+  <meta property="og:site_name" content="Ocean Liner Curator" />
+  <meta property="og:title" content="About Ocean Liner Curator — Evidence-First Ocean Liner History" />
+  <meta property="og:description" content="A curator-minded guide to ocean liner history, collecting, ship research, and evidence-first interpretation." />
+  <meta property="og:url" content="https://oceanliners.net/about/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://oceanliners.net/about-hero.PNG" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Ocean Liner Curator — Evidence-First Ocean Liner History" />
+  <meta name="twitter:description" content="A curator-minded guide to ocean liner history, collecting, ship research, and evidence-first interpretation." />
+  <meta name="twitter:image" content="https://oceanliners.net/about-hero.PNG" />
+
+  <link rel="preload" as="image" href="/about-hero.PNG" fetchpriority="high">
+
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-48.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
-  <meta name="theme-color" content="#0a1110">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://oceanliners.net/#website",
-    "name": "Ocean Liner Curator",
-    "url": "https://oceanliners.net/",
-    "inLanguage": "en",
-    "publisher": {
-      "@type": "Person",
-      "@id": "https://oceanliners.net/#person",
-      "name": "Ocean Liner Curator",
-      "url": "https://oceanliners.net/",
-      "description": "A curator-minded guide to ocean liner history, collecting, and evidence-first research.",
-      "knowsAbout": [
-        "Ocean liners",
-        "Maritime history",
-        "Ocean liner memorabilia",
-        "Shipping lines",
-        "Maritime collecting"
-      ]
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "@id": "https://oceanliners.net/about/#webpage",
-    "name": "About — Ocean Liner Curator",
-    "url": "https://oceanliners.net/about/",
-    "isPartOf": { "@id": "https://oceanliners.net/#website" },
-    "about": { "@id": "https://oceanliners.net/#person" },
-    "inLanguage": "en"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://oceanliners.net/#website",
+        "name": "Ocean Liner Curator",
+        "url": "https://oceanliners.net/",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://oceanliners.net/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://oceanliners.net/#organization",
+        "name": "Ocean Liner Curator",
+        "url": "https://oceanliners.net/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://oceanliners.net/logo.png"
+        },
+        "description": "A curator-minded guide to ocean liner history, collecting, and evidence-first research.",
+        "knowsAbout": [
+          "Ocean liners",
+          "Maritime history",
+          "Ocean liner memorabilia",
+          "Passenger ships",
+          "Shipping lines",
+          "Maritime collecting"
+        ]
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://oceanliners.net/about/#webpage",
+        "name": "About Ocean Liner Curator",
+        "url": "https://oceanliners.net/about/",
+        "isPartOf": { "@id": "https://oceanliners.net/#website" },
+        "about": { "@id": "https://oceanliners.net/#organization" },
+        "description": "About Ocean Liner Curator: an evidence-first guide to ocean liner history, ship guides, maritime collecting, research standards, and Ocean Liner GPT methodology.",
+        "inLanguage": "en"
+      }
+    ]
   }
   </script>
 
@@ -62,7 +87,7 @@
   <link rel="stylesheet" href="/assets/nav.css">
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing:border-box; }
 
     :root{
       --bg:#0a1110;
@@ -74,25 +99,23 @@
       --shadow:rgba(0,0,0,0.60);
       --link:rgba(209,187,134,0.95);
       --font-sans:"Spectral", Georgia, "Times New Roman", serif;
-
       --prose-measure:72ch;
     }
 
-    html{ text-rendering: optimizeLegibility; background:var(--bg); }
-    h1,h2,h3{ letter-spacing:-0.02em; }
+    html{ text-rendering:optimizeLegibility; background:var(--bg); scroll-behavior:smooth; }
 
     body{
       margin:0;
       font-family:var(--font-sans);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
       font-size:17px;
       line-height:1.6;
       letter-spacing:-0.01em;
       color:var(--text);
-
       background:
         radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
         radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
-
       min-height:100vh;
       display:flex;
       flex-direction:column;
@@ -101,10 +124,12 @@
       padding:0 0 2rem;
     }
 
-    .accent-word{ color: var(--accent); }
+    .accent-word{ color:var(--accent); }
+
+    h1,h2,h3{ letter-spacing:-0.02em; }
 
     /* =========================
-       HERO (FIX: remove duplicates + keep one definition)
+       HERO
        ========================= */
     .hero{
       width:min(780px, calc(100% - 1.5rem));
@@ -112,20 +137,21 @@
       border-radius:16px;
       border:1px solid rgba(191,164,106,0.22);
       overflow:hidden;
-
       min-height:52vh;
       max-height:640px;
-
       display:flex;
       align-items:flex-end;
       position:relative;
-
       background:
         linear-gradient(to bottom,
-          rgba(10,17,16,0.70) 0%,
-          rgba(10,17,16,0.05) 45%,
-          rgba(10,17,16,0.72) 100%),
+          rgba(10,17,16,0.72) 0%,
+          rgba(10,17,16,0.08) 45%,
+          rgba(10,17,16,0.78) 100%),
         url("/about-hero.PNG") center/cover no-repeat;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
     }
 
     .hero::after{
@@ -135,39 +161,59 @@
       pointer-events:none;
       background:
         radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
-        radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.55), transparent 60%);
-      opacity:0.55;
+        radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.58), transparent 60%);
+      opacity:0.58;
     }
 
     .hero-inner{
       width:100%;
       margin:0;
-      padding: 3.2rem 2.2rem 2.1rem;
+      padding:3.2rem 2.2rem 2.1rem;
       position:relative;
       z-index:1;
     }
 
+    .eyebrow{
+      display:inline-block;
+      margin:0 0 0.75rem;
+      padding:0.28rem 0.68rem 0.32rem;
+      border:1px solid rgba(191,164,106,0.55);
+      border-radius:999px;
+      color:rgba(209,187,134,0.95);
+      background:rgba(10,17,16,0.36);
+      font-variant:small-caps;
+      letter-spacing:0.13em;
+      font-size:0.74rem;
+      line-height:1;
+    }
+
     .hero h1{
-      margin:0 0 0.55rem 0;
+      margin:0 0 0.55rem;
       font-family:"Libre Baskerville", serif;
-      font-variant: small-caps;
+      font-variant:small-caps;
       letter-spacing:0.09em;
       font-weight:400;
-      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+      font-size:clamp(2rem, 5vw, 3.25rem);
+      line-height:1.08;
+      text-shadow:0 18px 45px rgba(0,0,0,0.55);
     }
 
     .hero p{
       margin:0;
-      max-width:70ch;
-      color: rgba(230,223,207,0.92);
-      font-size:1.02rem;
+      max-width:68ch;
+      color:rgba(230,223,207,0.92);
+      font-size:1.03rem;
       line-height:1.65;
-      text-shadow: 0 18px 45px rgba(0,0,0,0.45);
+      text-shadow:0 18px 45px rgba(0,0,0,0.50);
     }
 
     @media (max-width:600px){
-      .hero{ min-height:46vh; border-radius:14px; }
-      .hero-inner{ padding: 2.6rem 1.15rem 1.65rem; }
+      .hero{
+        min-height:46vh;
+        border-radius:14px;
+        background-position:center;
+      }
+      .hero-inner{ padding:2.6rem 1.15rem 1.65rem; }
     }
 
     @media (min-width:1300px){
@@ -175,30 +221,24 @@
     }
 
     /* =========================
-       CARD (FIX: consolidate duplicate .container blocks, Safari layering)
+       CARD
        ========================= */
     .container{
       width:min(780px, calc(100% - 1.5rem));
       margin:0.75rem auto 0;
-      background-color: rgba(15,27,25,0.78);
-
+      background-color:var(--panel);
       border:1px solid var(--border);
       border-radius:16px;
-
-      --container-pad-top: clamp(1.25rem, 2.5vh, 2.0rem);
-      padding: var(--container-pad-top) 2.75rem 1.5rem;
-
+      padding:clamp(1.55rem, 3vh, 2.15rem) 2.75rem 1.5rem;
       box-shadow:
         0 26px 70px rgba(0,0,0,0.60),
         0 0 0 1px rgba(191,164,106,0.08),
         0 0 80px rgba(191,164,106,0.06);
-
       position:relative;
       overflow:hidden;
       z-index:1;
-
       isolation:isolate;
-      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      -webkit-mask-image:-webkit-radial-gradient(white, black);
     }
 
     .container::before{
@@ -238,16 +278,8 @@
           rgba(191,164,106,0.065) 49%,
           rgba(191,164,106,0.065) 51%,
           transparent 52.5%);
-      background-size:
-        360px 360px,
-        auto, auto, auto,
-        auto,
-        auto, auto;
-      background-position:
-        center,
-        center, center, center,
-        center,
-        center, center;
+      background-size:360px 360px, auto, auto, auto, auto, auto, auto;
+      background-position:center;
       opacity:0.025;
     }
 
@@ -266,16 +298,12 @@
       .container{ width:min(1080px, calc(100% - 3rem)); }
     }
 
-    /* =========================
-       THE FIX: centered prose column wrapper (prevents centering chaos)
-       ========================= */
     .prose{
-      max-width: var(--prose-measure);
+      max-width:var(--prose-measure);
       margin-left:auto;
       margin-right:auto;
     }
 
-    /* Reset old "container main" rules by making prose own widths */
     .prose :is(section, h2, h3, p, ul, ol, footer, .cta){
       max-width:none;
       margin-left:0;
@@ -284,10 +312,13 @@
 
     h2{
       position:relative;
-      margin:2.25rem 0 0.85rem 0;
+      margin:2.35rem 0 0.85rem;
       font-size:1.25rem;
       letter-spacing:0.3px;
+      color:var(--text);
     }
+
+    h2:first-child{ margin-top:0; }
 
     h2::after{
       content:"";
@@ -298,37 +329,48 @@
       background:linear-gradient(90deg, var(--accent), rgba(191,164,106,0.35), transparent);
     }
 
-    h3{ margin:0.95rem 0 0.35rem 0; font-size:1.06rem; letter-spacing:0.2px; }
+    h3{
+      margin:0.95rem 0 0.35rem;
+      font-size:1.06rem;
+      letter-spacing:0.2px;
+      color:var(--text);
+    }
 
     p{
-      margin:0 0 0.85rem 0;
+      margin:0 0 0.95rem;
       line-height:1.72;
       font-size:1.02rem;
       color:rgba(230,223,207,0.92);
     }
 
-    .muted{ color:var(--muted); font-size:0.98rem; }
+    .muted{
+      color:var(--muted);
+      font-size:0.98rem;
+    }
 
     ul{
-      margin:0.6rem 0 0.2rem 1.1rem;
-      padding:0;
+      margin:0.6rem 0 0.2rem;
+      padding-left:1.25rem;
       line-height:1.7;
-      list-style-position: outside;
+      list-style-position:outside;
     }
+
     li{ margin:0.35rem 0; }
 
     .card{
       border:1px solid rgba(191,164,106,0.22);
       border-radius:12px;
-      padding:1rem 1rem;
-        backdrop-filter: blur(4px) saturate(105%) !important;
-  -webkit-backdrop-filter: blur(4px) saturate(105%) !important;
+      padding:1rem;
+      backdrop-filter:blur(4px) saturate(105%);
+      -webkit-backdrop-filter:blur(4px) saturate(105%);
       background:rgba(0,0,0,0.10);
       margin-top:0.75rem;
     }
 
-    /* Two-column definition card (desktop only) */
+    .card + .card{ margin-top:0.9rem; }
+
     .define-card .define-grid{ display:block; }
+
     @media (min-width:760px){
       .define-card .define-grid{
         display:grid;
@@ -337,11 +379,52 @@
         align-items:start;
         margin-top:0.35rem;
       }
+
       .define-card .define-col{ padding-right:0.25rem; }
+
       .define-card .define-col + .define-col{
         padding-left:1.1rem;
         border-left:1px solid rgba(191,164,106,0.18);
       }
+    }
+
+    .link-grid{
+      display:grid;
+      gap:0.85rem;
+      margin-top:0.9rem;
+    }
+
+    @media (min-width:760px){
+      .link-grid{ grid-template-columns:1fr 1fr; }
+    }
+
+    .link-card{
+      display:block;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:12px;
+      background:rgba(191,164,106,0.045);
+      text-decoration:none;
+      transition:transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .link-card:hover{
+      transform:translateY(-1px);
+      background:rgba(191,164,106,0.075);
+      border-color:rgba(191,164,106,0.44);
+    }
+
+    .link-card strong{
+      display:block;
+      color:var(--link);
+      margin-bottom:0.25rem;
+    }
+
+    .link-card span{
+      display:block;
+      color:rgba(230,223,207,0.76);
+      font-size:0.95rem;
+      line-height:1.55;
     }
 
     a{
@@ -350,10 +433,18 @@
       border-bottom:1px solid rgba(191,164,106,0.35);
       padding-bottom:1px;
     }
+
     a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+
     a:focus-visible{
       outline:2px solid rgba(191,164,106,0.75);
       outline-offset:3px;
+    }
+
+    .link-card,
+    .button,
+    .standards-badge a{
+      border-bottom:1px solid rgba(191,164,106,0.35);
     }
 
     .standards-badge{
@@ -367,15 +458,15 @@
       font-size:0.9rem;
       letter-spacing:0.12em;
       text-transform:uppercase;
-      color:var(--link) !important;
+      color:var(--link);
       border:1px solid rgba(191,164,106,0.45);
       border-radius:999px;
       text-decoration:none;
       background:rgba(191,164,106,0.05);
     }
+
     .standards-badge a:hover{ background:rgba(191,164,106,0.12); }
 
-    /* CTA */
     .cta{ margin-top:2.2rem; text-align:center; }
 
     .actions{
@@ -387,26 +478,23 @@
     }
 
     .button{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0.9rem 1.35rem;
+      font-size:0.98rem;
+      letter-spacing:0.35px;
+      text-decoration:none;
+      min-height:44px;
+      line-height:1;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:10px;
+      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+      box-shadow:0 10px 26px rgba(191,164,106,0.22);
+    }
 
-  padding:0.9rem 1.35rem;
-  font-size:0.98rem;
-  letter-spacing:0.35px;
-  text-decoration:none;
-
-  min-height:44px; /* important */
-  line-height:1;   /* prevents font metrics shifting */
-
-  color:#0a1110;
-  background:linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
-  border:1px solid rgba(0,0,0,0.35);
-  border-radius:10px;
-
-  transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
-  box-shadow:0 10px 26px rgba(191,164,106,0.22);
-}
     .button:hover{
       transform:translateY(-1px);
       filter:brightness(1.03);
@@ -419,6 +507,7 @@
       border:1px solid rgba(191,164,106,0.45);
       box-shadow:none;
     }
+
     .button.secondary:hover{
       background:rgba(191,164,106,0.10);
       transform:translateY(-1px);
@@ -426,7 +515,7 @@
 
     @media (max-width:520px){
       .actions{ flex-direction:column; }
-      .button{ width:100%; text-align:center; }
+      .button{ width:100%; text-align:center; white-space:normal; }
     }
 
     .flags-footer{
@@ -457,40 +546,36 @@
       text-align:center;
     }
 
-    @media (prefers-reduced-motion: reduce){
-      .button{ transition:none; }
+    .established-footer{
+      margin-top:1rem;
+      margin-bottom:0.5rem;
+      font-size:0.75rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:rgba(191,164,106,0.55);
     }
-    
-    /* Keep bullets inside the card border */
-.card ul{
-  margin-left: 0;        /* kill the global left margin */
-  padding-left: 1.25rem; /* control indentation via padding */
-  list-style-position: outside; /* (default) */
-}
 
-/* OPTIONAL: if you want absolute guarantee markers never hang outside */
-.card ul{
-  list-style-position: inside;
-  padding-left: 0.25rem; /* adjust to taste */
-}
+    .footer-star{
+      margin:0.4rem 0 0;
+      color:rgba(191,164,106,0.55);
+      font-size:1rem;
+      line-height:1;
+    }
 
-.established-footer{
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.75rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: rgba(191,164,106,0.55);
-  }
-
+    @media (prefers-reduced-motion:reduce){
+      html{ scroll-behavior:auto; }
+      .button,
+      .link-card{ transition:none; }
+    }
   </style>
 </head>
 
 <body>
   <div id="site-header"></div>
 
-  <section class="hero" aria-label="About page hero">
+  <section class="hero" aria-label="About Ocean Liner Curator">
     <div class="hero-inner">
+      <span class="eyebrow">About the project</span>
       <h1>About Ocean Liner Curator</h1>
       <p>
         A reference work for ocean liner history and material culture—evidence-first, clearly written, and continuously refined.
@@ -498,15 +583,18 @@
     </div>
   </section>
 
-  <div class="container">
-    <!-- APPLY THE FIX: wrap all content in .prose (so text stays centered as a column) -->
+  <main class="container">
     <div class="prose">
       <section>
         <h2>What it is</h2>
         <p>
           Ocean Liner Curator is a long-term reference project dedicated to the evidence-first study of historic
           <a href="/what-are-ocean-liners">ocean liners</a>, passenger steamships, and maritime material culture.
-          It is written to support learning, careful collecting, and research—without drifting into myth, hype, or unsupported certainty. It is focused on historical interpretation, not current events.
+          It supports learning, careful collecting, and research without drifting into myth, hype, or unsupported certainty.
+        </p>
+        <p>
+          The site includes ship guides, research collections, collecting essays, short-answer pages, and methodology notes.
+          Its focus is historical interpretation rather than current maritime news.
         </p>
         <p class="muted">
           Ocean Liner GPT is a guided research assistant used within this project under defined editorial constraints.
@@ -532,8 +620,8 @@
           <h3>Sources &amp; verification</h3>
           <p>Content is developed using a combination of:</p>
           <ul>
-            <li>Primary sources (contemporary newspapers, shipyard records, company publications, photographs, ephemera)</li>
-            <li>Established secondary sources (academic works, recognized maritime historians, museum publications)</li>
+            <li>Primary sources, including contemporary newspapers, company publications, photographs, ephemera, and archival material where available</li>
+            <li>Established secondary sources, including academic works, recognized maritime historians, and museum publications</li>
             <li>Cross-referencing between multiple independent sources where possible</li>
           </ul>
           <p class="muted">
@@ -545,15 +633,18 @@
         <div class="card">
           <h3>Use of digital tools</h3>
           <p>
-            Digital tools may assist with research organization and drafting, but they are not treated as authorities.
-            No material is published without human review and source-checking.
+            Digital tools may assist with research organization, drafting, internal linking, and editorial consistency,
+            but they are not treated as authorities. No material is published without human review and source-checking.
           </p>
           <ul>
             <li>Claims are checked against cited sources</li>
             <li>Interpretation remains human-led</li>
             <li>Uncertainty is stated plainly</li>
           </ul>
-          <p class="muted">The full policy regarding the use of AI can be found at <a href="/ai-interpretation-policy">AI Interpretation Policy</a>.</p>
+          <p class="muted">
+            The full policy regarding AI-assisted work can be found at
+            <a href="/ai-interpretation-policy">AI Interpretation Policy</a>.
+          </p>
         </div>
 
         <div class="card">
@@ -563,16 +654,16 @@
             alignment with available evidence, and reference-work tone. Errors, when identified, are corrected.
           </p>
           <p>
-            Ocean Liner GPT does not publish content independently; all public-facing text is reviewed, edited, and approved by a human curator, and responsibility for accuracy rests entirely with the project, not the tool.
+            Ocean Liner GPT does not publish content independently. Public-facing text is reviewed, edited, and approved by a human curator,
+            and responsibility for accuracy rests with the project rather than the tool.
           </p>
         </div>
 
         <div class="card">
           <h3>Corrections &amp; feedback</h3>
           <p>
-            Source-backed corrections and contextual additions are welcome. If a page contains an error
-            or would benefit from additional context, please reach out via the
-            <a href="/contact">contact page</a> with supporting information where possible.
+            Source-backed corrections and contextual additions are welcome. If a page contains an error or would benefit from additional context,
+            please reach out via the <a href="/contact">contact page</a> with supporting information where possible.
           </p>
         </div>
 
@@ -596,6 +687,7 @@
                 <li>An automated content generator</li>
                 <li>A substitute for archival research</li>
                 <li>A platform for speculation presented as fact</li>
+                <li>A certification or appraisal service</li>
               </ul>
             </div>
           </div>
@@ -606,10 +698,11 @@
         <h2>Ocean Liner GPT — how it is used</h2>
         <p>
           Ocean Liner GPT is a specialized research assistant used within the Ocean Liner Curator project.
-          It is configured with subject boundaries and editorial constraints aligned with this site’s evidence-first standards. For a more detailed look, head to <a href="/ocean-liner-gpt">Ocean Liner GPT &amp; AI Methodology</a>.
+          It is configured with subject boundaries and editorial constraints aligned with this site’s evidence-first standards.
         </p>
         <p class="muted">
           Outputs are treated as working material. Nothing is published without human review, editing, and verification against sources.
+          For a deeper explanation, see <a href="/ocean-liner-gpt">Ocean Liner GPT &amp; AI Methodology</a>.
         </p>
       </section>
 
@@ -617,7 +710,7 @@
         <h2>Ocean Liner GPT modes</h2>
         <div class="card">
           <p><strong><span class="accent-word">Learn</span></strong> — historical context and narrative. Ideal for exploration and curiosity.</p>
-          <p><strong><span class="accent-word">Collect</span></strong> — practical collecting guidance: authenticity, value signals, and pitfalls.</p>
+          <p><strong><span class="accent-word">Collect</span></strong> — practical collecting guidance: authenticity, evidence signals, and pitfalls.</p>
           <p><strong><span class="accent-word">Curate</span></strong> — conservative, museum-level evaluation: provenance, documentation, and restrained conclusions.</p>
         </div>
       </section>
@@ -638,6 +731,28 @@
       </section>
 
       <section>
+        <h2>Explore the project</h2>
+        <div class="link-grid" aria-label="Explore Ocean Liner Curator">
+          <a class="link-card" href="/explore/">
+            <strong>Start Here</strong>
+            <span>A guided entry point to ship guides, research collections, essays, and short answers.</span>
+          </a>
+          <a class="link-card" href="/ships/ships">
+            <strong>Ship Archive</strong>
+            <span>The core archive of ocean liner and passenger ship guides.</span>
+          </a>
+          <a class="link-card" href="/collections/">
+            <strong>Research Collections</strong>
+            <span>Curated paths through themes, rivalries, interiors, timelines, and interpretation.</span>
+          </a>
+          <a class="link-card" href="/ocean-liner-collecting-guide">
+            <strong>Collecting Guide</strong>
+            <span>Evidence-first guidance for evaluating ocean liner memorabilia and attribution claims.</span>
+          </a>
+        </div>
+      </section>
+
+      <section>
         <h2>How to cite this site</h2>
         <p>
           When referencing Ocean Liner Curator, cite the page title, URL, and date accessed.
@@ -651,8 +766,8 @@
           <a class="button secondary" href="https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-curator" target="_blank" rel="noopener" onclick="return confirm('You are leaving Ocean Liner Curator and opening an external site (ChatGPT) in a new tab. Continue?');">
             Open Ocean Liner GPT
           </a>
+          <a class="button secondary" href="/explore/">Start Here</a>
           <a class="button secondary" href="/">Home</a>
-          <a class="button secondary" href="/ocean-liner-gpt">About Ocean Liner GPT</a>
         </div>
 
         <img class="flags-footer" src="/logo-transparent.png" alt="" aria-hidden="true" />
@@ -670,7 +785,7 @@
         </footer>
       </section>
     </div>
-  </div>
+  </main>
 
   <script>
     const year = document.getElementById("year");
