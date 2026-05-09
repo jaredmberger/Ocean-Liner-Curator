@@ -2307,6 +2307,25 @@ footer .orientation-context .note{
     0 0 22px rgba(191,164,106,0.11);
 }
 
+.entry-question-card{
+  text-align: left;
+}
+
+.entry-question-card strong{
+  font-family: "Libre Baskerville", serif;
+  font-variant: small-caps;
+  line-height: 1.45;
+}
+
+.entry-question-card .ornament-star{
+  display:block;
+  text-align:center;
+  margin-bottom:0.45rem;
+}
+
+.entry-question-card .orientation-links{
+  padding-top:1.15rem;
+}
 
 </style>
   
@@ -2497,29 +2516,39 @@ footer .orientation-context .note{
   <footer>
 
     <!-- Footer Orientation Block — Homepage (reveal + stagger 2 cards) -->
-    <section class="orientation-block orientation-context reveal" aria-label="Site orientation">
+    <section class="orientation-block orientation-context reveal" aria-label="Curated entry questions">
 
-      <div class="note orient-card">
-        <span class="ornament-star">★</span>
-        <strong><span style="letter-spacing:0.08em;color: rgba(230,223,207,0.95);">How this site is structured:</span></strong>
-        Ocean Liner Curator emphasizes evidence over exhaustiveness. Essays examine attribution, provenance, and interpretation; short answers address focused questions; and the Ship Archive provides structured guides to individual liners, placing them within broader historical context.
-        <div class="orientation-links">
-          <a href="/sitemap#essays">Essays »</a>
-          <a href="/sitemap#short-answers">Short Answers »</a>
-        </div>
-      </div>
+  <div class="note orient-card entry-question-card">
+    <span class="ornament-star">★</span>
+    <strong>
+      <span style="letter-spacing:0.08em;color: rgba(230,223,207,0.95);">
+        Why can’t most ocean liner artifacts be reliably attributed?
+      </span>
+    </strong>
+    Many objects associated with famous liners lack surviving documentation. This guide explains why certainty is rare — and why restraint matters when interpreting maritime material culture.
 
-      <div class="note orient-card">
-        <span class="ornament-star">★</span>
-        <strong><span style="letter-spacing:0.08em;color: rgba(230,223,207,0.95);">How claims are evaluated:</span></strong>
-        Interpretations are guided by surviving evidence rather than tradition, repetition, or market value. Greater specificity requires proportionally stronger documentation. Where such support is lacking, uncertainty is preserved rather than resolved prematurely. An AI-assisted research tool is also available to explore questions within this framework.
-        <div class="orientation-links">
-          <a href="/evidence">Evidence »</a>
-          <a href="/unknown">“Unknown” Conclusion »</a>
-        </div>
-      </div>
+    <div class="orientation-links">
+      <a href="/attribution">Explore attribution »</a>
+      <a href="/evidence">How evidence is evaluated »</a>
+    </div>
+  </div>
 
-    </section>
+  <div class="note orient-card entry-question-card">
+    <span class="ornament-star">★</span>
+    <strong>
+      <span style="letter-spacing:0.08em;color: rgba(230,223,207,0.95);">
+        What made RMS Queen Mary famous?
+      </span>
+    </strong>
+    Speed, scale, wartime service, celebrity culture, and preservation all shaped Queen Mary’s public memory. This entry gives a clear starting point for one of the defining liners of the twentieth century.
+
+    <div class="orientation-links">
+      <a href="/what-made-rms-queen-mary-famous">Read the answer »</a>
+      <a href="/rms-queen-mary">Queen Mary Hub »</a>
+    </div>
+  </div>
+
+</section>
 
     <!-- REFERENCE LIBRARY (reveal + stagger pills) -->
     <section class="ref-card reveal" aria-label="Reference Library">
