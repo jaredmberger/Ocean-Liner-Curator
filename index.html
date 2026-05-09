@@ -2322,10 +2322,21 @@ footer .orientation-context .note{
 
 .entry-points-grid{
   width: var(--stage);
+  max-width: 100%;
+
   margin: 0 auto 2.4rem auto;
+
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1rem;
+
+  align-items: stretch;
+}
+
+.entry-points-wrap{
+  width: var(--stage);
+  margin: 0 auto;
 }
 
 .entry-question-card{
@@ -2605,6 +2616,8 @@ footer .orientation-context .note{
   <footer>
 
     <!-- Footer Orientation Block — Homepage (reveal + stagger 2 cards) -->
+    
+    <div class="entry-points-wrap">
     <div class="paths-title entry-points-title">Curated Entry Points</div>
 
 <section class="entry-points-grid reveal" aria-label="Curated entry questions">
@@ -2632,6 +2645,7 @@ footer .orientation-context .note{
   </article>
 
 </section>
+</div>
 
     <!-- REFERENCE LIBRARY (reveal + stagger pills) -->
     <section class="ref-card reveal" aria-label="Reference Library">
