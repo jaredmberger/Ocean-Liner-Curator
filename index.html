@@ -326,8 +326,9 @@ body {
      Reference Library Card
      ========================= */
 
-  .ref-card{
-    margin: 1.6rem auto 0;
+ .ref-card{
+  width: min(680px, 100%);
+  margin: 1.6rem auto 0;
     padding: 1.2rem 1.25rem 1.3rem;
     backdrop-filter: blur(2px) !important;
     -webkit-backdrop-filter: blur(2px);
@@ -514,6 +515,10 @@ backdrop-filter: blur(1px);
         rgba(0,0,0,0.15) 100%
       );
   }
+  
+  .entry-points-title{
+  margin: 3.0rem auto 1.6rem auto;
+}
 
   .path-grid{
     display:grid;
@@ -1130,13 +1135,17 @@ backdrop-filter: blur(1px);
     letter-spacing: 0.25px;
   }
 
-  @media (max-width:720px){
-    footer .orientation-context{
-      grid-template-columns: 1fr;
-      gap: 1.4rem;
-      padding: 1rem 0.5rem;
-      margin: 1.7rem auto 2rem auto;
-    }
+ @media (max-width:720px){
+  footer .orientation-context{
+    width: calc(100% - 1.5rem);
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding: 0;
+    margin: 0 auto 2rem auto;
+  }
+}
+
+
 
     footer .orientation-context .note{
       padding: 1.05rem 1rem;
@@ -2307,14 +2316,40 @@ footer .orientation-context .note{
     0 0 22px rgba(191,164,106,0.11);
 }
 
+.entry-points-title{
+  margin: 1.4rem auto 1.35rem auto;
+}
+
+.entry-points-grid{
+  width: var(--stage);
+  margin: 0 auto 2.4rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
 .entry-question-card{
+  margin: 0;
+  padding: 1.1rem 1.2rem;
   text-align: left;
 }
 
 .entry-question-card strong{
+  display:block;
   font-family: "Libre Baskerville", serif;
   font-variant: small-caps;
+  letter-spacing: 0.08em;
   line-height: 1.45;
+  color: rgba(230,223,207,0.95);
+  margin-bottom: 0.65rem;
+}
+
+.entry-question-card p{
+  max-width: none;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 .entry-question-card .ornament-star{
@@ -2325,6 +2360,60 @@ footer .orientation-context .note{
 
 .entry-question-card .orientation-links{
   padding-top:1.15rem;
+}
+
+@media (max-width:720px){
+  .entry-points-grid{
+    width: calc(100% - 1.5rem);
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.entry-points-grid .note{
+  margin: 0;
+  padding: 1.1rem 1.2rem;
+  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(2px);
+  background:
+    radial-gradient(500px 260px at 50% 0%, rgba(191,164,106,0.12), transparent 70%),
+    rgba(10,17,16,0.34);
+  border: 1px solid rgba(191,164,106,0.22);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.32);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-points-grid .note::before{
+  content:"";
+  position:absolute;
+  inset:6px;
+  border: 1px solid rgba(191,164,106,0.14);
+  border-radius: 12px;
+  pointer-events:none;
+}
+
+.entry-points-grid .note::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.045) 0%,
+    rgba(255,255,255,0.015) 30%,
+    transparent 60%
+  );
+  opacity:.40;
+}
+
+.entry-points-grid .note > *{
+  position: relative;
+  z-index: 1;
 }
 
 </style>
@@ -2516,37 +2605,31 @@ footer .orientation-context .note{
   <footer>
 
     <!-- Footer Orientation Block — Homepage (reveal + stagger 2 cards) -->
-    <section class="orientation-block orientation-context reveal" aria-label="Curated entry questions">
+    <div class="paths-title entry-points-title">Curated Entry Points</div>
 
-  <div class="note orient-card entry-question-card">
+<section class="entry-points-grid reveal" aria-label="Curated entry questions">
+
+  <article class="note orient-card entry-question-card">
     <span class="ornament-star">★</span>
-    <strong>
-      <span style="letter-spacing:0.08em;color: rgba(230,223,207,0.95);">
-        Why can’t most ocean liner artifacts be reliably attributed?
-      </span>
-    </strong>
-    Many objects associated with famous liners lack surviving documentation. This guide explains why certainty is rare — and why restraint matters when interpreting maritime material culture.
+    <strong>Why can’t most ocean liner artifacts be reliably attributed?</strong>
+    <p>Many objects associated with famous liners lack surviving documentation. This guide explains why certainty is rare — and why restraint matters when interpreting maritime material culture.</p>
 
     <div class="orientation-links">
       <a href="/attribution">Explore attribution »</a>
       <a href="/evidence">How evidence is evaluated »</a>
     </div>
-  </div>
+  </article>
 
-  <div class="note orient-card entry-question-card">
+  <article class="note orient-card entry-question-card">
     <span class="ornament-star">★</span>
-    <strong>
-      <span style="letter-spacing:0.08em;color: rgba(230,223,207,0.95);">
-        What made RMS Queen Mary famous?
-      </span>
-    </strong>
-    Speed, scale, wartime service, celebrity culture, and preservation all shaped Queen Mary’s public memory. This entry gives a clear starting point for one of the defining liners of the twentieth century.
+    <strong>What made RMS Queen Mary famous?</strong>
+    <p>Speed, scale, wartime service, celebrity culture, and preservation all shaped Queen Mary’s public memory. This entry gives a clear starting point for one of the defining liners of the twentieth century.</p>
 
     <div class="orientation-links">
       <a href="/what-made-rms-queen-mary-famous">Read the answer »</a>
       <a href="/rms-queen-mary">Queen Mary Hub »</a>
     </div>
-  </div>
+  </article>
 
 </section>
 
