@@ -562,6 +562,48 @@
     .gpt-modal-actions button:hover{
       background: rgba(191,164,106,0.1);
     }
+    
+    /* ===== Additional ship photos ===== */
+
+.ship-photo-strip{
+  margin:2.4rem 0 2.2rem;
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:1rem;
+}
+
+.ship-photo-card{
+  margin:0;
+  overflow:hidden;
+  border-radius:14px;
+  border:1px solid rgba(191,164,106,0.28);
+  background:rgba(10,17,16,0.26);
+  box-shadow:0 12px 28px rgba(0,0,0,0.32);
+}
+
+.ship-photo-card img{
+  display:block;
+  width:100%;
+  aspect-ratio:4 / 3;
+  object-fit:cover;
+  object-position:center;
+}
+
+.ship-photo-card figcaption{
+  padding:0.72rem 0.85rem 0.82rem;
+  font-size:0.88rem;
+  line-height:1.45;
+  color:rgba(230,223,207,0.72);
+  text-align:center;
+  border-top:1px solid rgba(191,164,106,0.16);
+}
+
+@media (max-width:620px){
+  .ship-photo-strip{
+    grid-template-columns:1fr;
+  }
+}
+    
   </style>
   <link rel="stylesheet" href="/assets/nav.css">
 </head>
@@ -695,6 +737,34 @@
       </p>
 
       <span class="mini-badge">Evidence-first ship guide</span>
+      
+      <section class="ship-photo-strip" aria-label="Additional MV Britannic images">
+
+  <figure class="ship-photo-card">
+    <img
+      src="/ships/mv-britannic-2.jpg"
+      alt="MV Britannic at sea"
+      loading="lazy"
+      decoding="async"
+    />
+    <figcaption>
+      MV <em>Britannic</em> artist's rendition.
+    </figcaption>
+  </figure>
+
+  <figure class="ship-photo-card">
+    <img
+      src="/ships/mv-britannic-3.jpg"
+      alt="MV Britannic profile view"
+      loading="lazy"
+      decoding="async"
+    />
+    <figcaption>
+      MV <em>Britannic</em> arriving in New York on her maiden voyage.
+    </figcaption>
+  </figure>
+
+</section>
 
       <h2>Sources (Selected)</h2>
       <ul class="sources">
