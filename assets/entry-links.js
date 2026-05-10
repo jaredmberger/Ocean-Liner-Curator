@@ -98,7 +98,22 @@
     desc:
       "Follow the voyage from Southampton through the sinking and rescue by Carpathia.",
     href: "/ships/titanic-southampton-to-rescue-timeline"
-  }
+  },
+  {
+  meta: "Titanic · Interiors",
+  title: "What happened to Titanic’s grand staircase?",
+  desc:
+    "What likely happened to the famous staircase during the sinking, what the wreck shows, and why certainty is limited.",
+  href: "/what-happened-to-titanics-grand-staircase"
+},
+{
+  meta: "Titanic · Sinking",
+  title: "How long did it take Titanic to sink?",
+  desc:
+    "A clear timeline from the iceberg collision to the final plunge, with careful notes on timing and evidence.",
+  href: "/how-long-did-it-take-titanic-to-sink"
+}
+  
 ]
     },
     
