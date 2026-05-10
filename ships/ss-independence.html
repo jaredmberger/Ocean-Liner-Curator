@@ -63,14 +63,76 @@
       padding:0 0 2rem;
     }
 
-    .container{
-      width:min(780px, calc(100% - 1.5rem));
-      margin:1.2rem auto 0;
-      padding:3rem 2.5rem;
-      border-radius:16px;
-      border:1px solid var(--border);
-      background:var(--panel);
-      box-shadow:0 24px 60px rgba(0,0,0,.55);
+        .container {
+      width: min(780px, calc(100% - 1.5rem));
+      margin: 1.1rem auto 0;
+      padding: 3.5rem 2.75rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      text-align: left;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background-color: rgba(15, 27, 25, 0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: 92px 92px;
+      background-position: center 38%;
+      background-repeat: repeat;
+      box-shadow:
+        0 26px 70px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(191, 164, 106, 0.08),
+        0 0 80px rgba(191, 164, 106, 0.06);
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255, 255, 255, 0.07) 0%, rgba(0, 0, 0, 0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 55%);
+    }
+
+    .container::after {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      z-index: 0;
+      opacity: 0.95;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255, 255, 255, 0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.015), transparent 55%),
+        radial-gradient(
+          circle at center,
+          rgba(191, 164, 106, 0.095) 0%,
+          rgba(191, 164, 106, 0.075) 20%,
+          rgba(191, 164, 106, 0.045) 26%,
+          transparent 34%
+        ),
+        linear-gradient(
+          45deg,
+          transparent 47.5%,
+          rgba(191, 164, 106, 0.065) 49%,
+          rgba(191, 164, 106, 0.065) 51%,
+          transparent 52.5%
+        ),
+        linear-gradient(
+          -45deg,
+          transparent 47.5%,
+          rgba(191, 164, 106, 0.065) 49%,
+          rgba(191, 164, 106, 0.065) 51%,
+          transparent 52.5%
+        );
+    }
+
+    .container > * {
+      position: relative;
+      z-index: 1;
     }
 
     .logo-mount{
@@ -225,7 +287,7 @@
   <main class="container">
 
     <div class="logo-mount">
-      <img class="logo" src="/ships/ss-independence.WEBP" alt="SS Independence">
+      <img class="logo" src="/ships/ss-independence.jpg" alt="SS Independence">
     </div>
 
     <h1>SS Independence</h1>
