@@ -150,13 +150,12 @@
       href: "/what-was-the-blue-riband"
     },
 
-    {
-      meta: "War service",
-      title: "How Queen Mary Became a Wartime Troopship",
-      desc:
-        "From luxury liner to Grey Ghost: wartime camouflage, troop transport, and military service.",
-      href: "/collections/queen-mary-at-war"
-    },
+ {
+ meta: "Preservation",
+  title: "Why is Queen Mary in Long Beach?",
+  desc: "Why did RMS Queen Mary end up permanently moored in California? A quick guide to retirement, preservation, tourism, and the ship’s postwar legacy.",
+  href: "/why-is-queen-mary-in-long-beach"
+},
 
     {
       meta: "Preservation",
