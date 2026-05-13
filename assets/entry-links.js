@@ -207,7 +207,40 @@
           href: "/why-ss-united-states-still-matters"
         }
       ]
+    },
+    
+        exploreMore: {
+  eyebrow: "Explore more",
+  heading: "Additional entry points",
+  intro:
+    "Additional short-answer pages, comparisons, and exploratory topics connected to ocean liner history and interpretation.",
+  links: [
+    {
+      meta: "Basics · Ships",
+      title: "Ocean Liners Are Ships — But Not All Ships Are Ocean Liners",
+      desc:
+        "Ocean liners are ships-—but a specific kind of passenger ship.",
+      href: "/ocean-liners-are-ships"
+    },
+
+{
+      meta: "Basics · Ships",
+      title: "What are Ocean Liners?",
+      desc:
+        "Purpose-built machines for the open ocean—scheduled, long-distance transport that shaped design, culture, and the objects that survive today.",
+      href: "/what-are-ocean-liners"
+    },
+
+    {
+      meta: "Basics · Ships",
+      title: "Ocean Liner vs Cruise Ship: What’s the Difference?",
+      desc:
+        "It all comes down to function!",
+      href: "/ocean-liner-vs-cruise-ship"
     }
+  ]
+}
+    
   };
 
   /* Expose globally for homepage rotating cards */
