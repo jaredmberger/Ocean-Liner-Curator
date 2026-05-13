@@ -2701,16 +2701,18 @@ footer > .entry-points-wrap{
     </div>
   </article>
 
-  <article class="note orient-card entry-question-card">
-    <span class="ornament-star">★</span>
-    <strong>What made RMS Queen Mary famous?</strong>
-    <p>Speed, scale, wartime service, celebrity culture, and preservation all shaped Queen Mary’s public memory. This entry gives a clear starting point for one of the defining liners of the twentieth century.</p>
+  <article class="note orient-card entry-question-card" id="rotating-entry-card">
+  <span class="ornament-star">★</span>
+  <strong id="rotating-entry-title">What made RMS Queen Mary famous?</strong>
 
-    <div class="orientation-links">
-      <a href="/what-made-rms-queen-mary-famous">Read the answer »</a>
-      <a href="/rms-queen-mary">Queen Mary Hub »</a>
-    </div>
-  </article>
+  <p id="rotating-entry-desc">
+    Why Queen Mary became one of the defining ocean liners of the twentieth century.
+  </p>
+
+  <div class="orientation-links">
+    <a id="rotating-entry-link" href="/what-made-rms-queen-mary-famous">Read the answer »</a>
+  </div>
+</article>
 
 </section>
 </div>
@@ -2812,6 +2814,7 @@ footer > .entry-points-wrap{
 <script src="/assets/header.js" defer></script>
 <script src="/assets/nav.js" defer></script>
 <script src="/assets/random-ship.js" defer></script>
+<script src="/assets/entry-links.js" defer></script>
 
 <!-- Scroll Reveal Observer (cards sections) -->
 <script>
@@ -3008,6 +3011,43 @@ footer > .entry-points-wrap{
     pin.addEventListener('touchend', resetTilt, { passive: true });
     pin.addEventListener('touchcancel', resetTilt, { passive: true });
   })();
+</script>
+
+<script>
+(function(){
+  function getAllEntryLinks(){
+    const sets = window.OLC_ENTRY_SETS;
+    if (!sets) return [];
+
+    return Object.values(sets)
+      .flatMap(set => Array.isArray(set.links) ? set.links : [])
+      .filter(link => link.title && link.href);
+  }
+
+  function rotateHomepageEntryCard(){
+    const entries = getAllEntryLinks();
+    if (!entries.length) return;
+
+    const titleEl = document.getElementById("rotating-entry-title");
+    const descEl = document.getElementById("rotating-entry-desc");
+    const linkEl = document.getElementById("rotating-entry-link");
+
+    if (!titleEl || !descEl || !linkEl) return;
+
+    const entry = entries[Math.floor(Math.random() * entries.length)];
+
+    titleEl.textContent = entry.title;
+    descEl.textContent = entry.desc || "";
+    linkEl.href = entry.href;
+    linkEl.textContent = "Read the answer »";
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", rotateHomepageEntryCard);
+  } else {
+    rotateHomepageEntryCard();
+  }
+})();
 </script>
 
 
