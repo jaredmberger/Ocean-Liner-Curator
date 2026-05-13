@@ -197,7 +197,7 @@
           title: "A Voyage Aboard SS United States",
           desc:
             "Boarding, meals, public rooms, deck routines, and shipboard service during a typical crossing.",
-          href: "/a-voyage-aboard-ss-united-states"
+          href: "/ss-united-states-voyage-aboard"
         },
         {
           meta: "Legacy",
