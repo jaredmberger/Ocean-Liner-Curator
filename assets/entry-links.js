@@ -73,6 +73,13 @@
           href: "/why-was-titanic-called-unsinkable"
         },
         {
+  meta: "Titanic · Survival",
+  title: "Did anyone survive in the water after Titanic sank?",
+  desc:
+    "A careful answer about the people pulled from the freezing water, collapsible lifeboats, hypothermia, and why survival after immersion was so rare.",
+  href: "/did-anyone-survive-in-the-water-after-titanic-sank"
+},
+        {
           meta: "Sister ships",
           title: "What is the difference between Titanic and Olympic?",
           desc:
