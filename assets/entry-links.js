@@ -269,6 +269,20 @@
     "Express liners, immigrant voyages, weather delays, and why crossing time mattered so much during the liner era.",
   href: "/how-long-did-it-take-to-cross-the-atlantic-by-ocean-liner"
 },
+{
+  meta: "Food · Shipboard life",
+  title: "What Was Food Like on Ocean Liners?",
+  desc:
+    "Dining rooms, menus, class differences, immigrant meals, steward service, and why food at sea was both luxury and logistics.",
+  href: "/what-was-food-like-on-ocean-liners"
+},
+{
+  meta: "Companies · Atlantic rivalry",
+  title: "Why Did Cunard and White Star Matter?",
+  desc:
+    "How two famous liner companies shaped Atlantic travel, speed, comfort, luxury, migration, tragedy, and maritime memory.",
+  href: "/why-did-cunard-and-white-star-matter"
+},
         
         {
           meta: "Basics · Ships",
