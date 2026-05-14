@@ -2495,6 +2495,31 @@ footer > .entry-points-wrap{
   }
 }
 
+.entry-refresh-button{
+  width: fit-content;
+  margin-top: 0.35rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(209,187,134,0.86);
+  font: inherit;
+  font-size: 0.86rem;
+  line-height: 1.4;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(191,164,106,0.35);
+}
+
+.entry-refresh-button:hover{
+  color: rgba(209,187,134,0.98);
+  border-bottom-color: rgba(191,164,106,0.65);
+}
+
+.entry-refresh-button:focus-visible{
+  outline: 2px solid rgba(191,164,106,0.65);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
 </style>
   
 </head>
@@ -2710,8 +2735,17 @@ footer > .entry-points-wrap{
   </p>
 
   <div class="orientation-links">
-    <a id="rotating-entry-link" href="/what-made-rms-queen-mary-famous">Read the answer »</a>
-  </div>
+  <a id="rotating-entry-link" href="/what-made-rms-queen-mary-famous">Read the answer »</a>
+
+  <button
+    type="button"
+    id="rotating-entry-refresh"
+    class="entry-refresh-button"
+    aria-label="Show another curated entry question"
+  >
+    New question ↻
+  </button>
+</div>
 </article>
 
 </section>
@@ -3015,6 +3049,8 @@ footer > .entry-points-wrap{
 
 <script>
 (function(){
+  let lastHref = "";
+
   function getAllEntryLinks(){
     const sets = window.OLC_ENTRY_SETS;
     if (!sets) return [];
@@ -3034,7 +3070,17 @@ footer > .entry-points-wrap{
 
     if (!titleEl || !descEl || !linkEl) return;
 
-    const entry = entries[Math.floor(Math.random() * entries.length)];
+    let entry = entries[Math.floor(Math.random() * entries.length)];
+
+    if (entries.length > 1) {
+      let guard = 0;
+      while (entry.href === lastHref && guard < 10) {
+        entry = entries[Math.floor(Math.random() * entries.length)];
+        guard++;
+      }
+    }
+
+    lastHref = entry.href;
 
     titleEl.textContent = entry.title;
     descEl.textContent = entry.desc || "";
@@ -3042,10 +3088,19 @@ footer > .entry-points-wrap{
     linkEl.textContent = "Read the answer »";
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", rotateHomepageEntryCard);
-  } else {
+  function initRotatingEntryCard(){
     rotateHomepageEntryCard();
+
+    const refreshBtn = document.getElementById("rotating-entry-refresh");
+    if (refreshBtn) {
+      refreshBtn.addEventListener("click", rotateHomepageEntryCard);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initRotatingEntryCard);
+  } else {
+    initRotatingEntryCard();
   }
 })();
 </script>
