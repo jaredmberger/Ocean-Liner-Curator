@@ -261,152 +261,164 @@
   }
 
   function getCycleSets(el) {
-    const cycleAttr = el.dataset.cycleSets;
+  const cycleAttr = el.dataset.cycleSets;
 
-    if (!cycleAttr) {
-      const single = el.dataset.entrySet || "general";
-      return ENTRY_SETS[single] ? [single] : ["general"];
-    }
-
-    const sets = cycleAttr
-      .split(",")
-      .map((item) => item.trim())
-      .filter((item) => ENTRY_SETS[item]);
-
-    return sets.length ? sets : ["general"];
+  if (!cycleAttr) {
+    const single = el.dataset.entrySet || "general";
+    return ENTRY_SETS[single] ? [single] : ["general"];
   }
 
-  function getLimit(el, set) {
-    const raw = Number.parseInt(el.dataset.limit || "", 10);
-    if (Number.isFinite(raw) && raw > 0) return raw;
-    return set.links.length;
-  }
+  const sets = cycleAttr
+    .split(",")
+    .map((item) => item.trim())
+    .filter((item) => ENTRY_SETS[item]);
 
-  function renderCards(set, limit) {
-    return set.links
-      .slice(0, limit)
-      .map(
-        (link) => `
-          <a class="entry-link-card" href="${escapeHTML(link.href)}">
-            <span class="entry-link-meta">${escapeHTML(link.meta)}</span>
-            <b>${escapeHTML(link.title)}</b>
-            <span class="entry-link-desc">${escapeHTML(link.desc)}</span>
-          </a>
-        `
-      )
-      .join("");
-  }
+  return sets.length ? sets : ["general"];
+}
 
-  function renderEntryLinks(el) {
-    const cycleSets = getCycleSets(el);
-    let activeIndex = 0;
+function getLimit(el) {
+  const raw = Number.parseInt(el.dataset.limit || "", 10);
+  return Number.isFinite(raw) && raw > 0 ? raw : 4;
+}
 
-    const headingId =
-      "entry-links-heading-" + Math.random().toString(36).slice(2, 9);
+function renderCards(links) {
+  return links
+    .map(
+      (link) => `
+        <a class="entry-link-card" href="${escapeHTML(link.href)}">
+          <span class="entry-link-meta">${escapeHTML(link.meta)}</span>
+          <b>${escapeHTML(link.title)}</b>
+          <span class="entry-link-desc">${escapeHTML(link.desc)}</span>
+        </a>
+      `
+    )
+    .join("");
+}
 
-    function render() {
-      const setName = cycleSets[activeIndex];
-      const set = ENTRY_SETS[setName] || ENTRY_SETS.general;
-      const limit = getLimit(el, set);
-      const hasCycle = cycleSets.length > 1;
+function renderEntryLinks(el) {
+  const cycleSets = getCycleSets(el);
+  const limit = getLimit(el);
 
-      el.innerHTML = `
-        <section class="entry-links-block" aria-labelledby="${headingId}">
-          <div class="entry-links-inner">
-            <div class="entry-links-header">
-              <span class="entry-links-eyebrow">${escapeHTML(set.eyebrow)}</span>
-              <h2 id="${headingId}">${escapeHTML(set.heading)}</h2>
-              <p class="entry-links-intro">${escapeHTML(set.intro)}</p>
+  let activeCategoryIndex = 0;
+  let activePageIndex = 0;
 
-              ${
-                hasCycle
-                  ? `
-                    <div class="entry-links-cycle-tabs" aria-label="Entry link categories">
-                      ${cycleSets
-                        .map((name, index) => {
-                          const tabSet = ENTRY_SETS[name];
-                          const isActive = index === activeIndex;
+  const headingId =
+    "entry-links-heading-" + Math.random().toString(36).slice(2, 9);
 
-                          return `
-                            <button
-                              class="entry-links-tab${isActive ? " is-active" : ""}"
-                              type="button"
-                              data-entry-cycle-index="${index}"
-                              aria-pressed="${isActive ? "true" : "false"}">
-                              ${escapeHTML(tabSet.eyebrow)}
-                            </button>
-                          `;
-                        })
-                        .join("")}
-                    </div>
-                  `
-                  : ""
-              }
-            </div>
+  function render() {
+    const setName = cycleSets[activeCategoryIndex];
+    const set = ENTRY_SETS[setName] || ENTRY_SETS.general;
 
-            <div class="entry-links-grid">
-              ${renderCards(set, limit)}
-            </div>
+    const totalPages = Math.max(1, Math.ceil(set.links.length / limit));
+    activePageIndex = Math.min(activePageIndex, totalPages - 1);
+
+    const start = activePageIndex * limit;
+    const visibleLinks = set.links.slice(start, start + limit);
+
+    const hasCategories = cycleSets.length > 1;
+    const hasPagination = set.links.length > limit;
+
+    el.innerHTML = `
+      <section class="entry-links-block" aria-labelledby="${headingId}">
+        <div class="entry-links-inner">
+          <div class="entry-links-header">
+            <span class="entry-links-eyebrow">${escapeHTML(set.eyebrow)}</span>
+            <h2 id="${headingId}">${escapeHTML(set.heading)}</h2>
+            <p class="entry-links-intro">${escapeHTML(set.intro)}</p>
 
             ${
-              hasCycle
+              hasCategories
                 ? `
-                  <div class="entry-links-controls" aria-label="Cycle entry links">
-                    <button class="entry-links-control" type="button" data-entry-control="prev">
-                      ‹ Previous
-                    </button>
-                    <span class="entry-links-count">
-                      ${activeIndex + 1} of ${cycleSets.length}
-                    </span>
-                    <button class="entry-links-control" type="button" data-entry-control="next">
-                      Next questions ›
-                    </button>
+                  <div class="entry-links-cycle-tabs" aria-label="Entry link categories">
+                    ${cycleSets
+                      .map((name, index) => {
+                        const tabSet = ENTRY_SETS[name];
+                        const isActive = index === activeCategoryIndex;
+
+                        return `
+                          <button
+                            class="entry-links-tab${isActive ? " is-active" : ""}"
+                            type="button"
+                            data-entry-category-index="${index}"
+                            aria-pressed="${isActive ? "true" : "false"}">
+                            ${escapeHTML(tabSet.eyebrow)}
+                          </button>
+                        `;
+                      })
+                      .join("")}
                   </div>
                 `
                 : ""
             }
           </div>
-        </section>
-      `;
 
-      if (!hasCycle) return;
+          <div class="entry-links-grid">
+            ${renderCards(visibleLinks)}
+          </div>
 
-      el.querySelectorAll("[data-entry-cycle-index]").forEach((button) => {
-        button.addEventListener("click", () => {
-          activeIndex = Number.parseInt(button.dataset.entryCycleIndex, 10);
-          render();
-        });
+          ${
+            hasPagination
+              ? `
+                <div class="entry-links-controls" aria-label="More questions in this category">
+                  <button class="entry-links-control" type="button" data-entry-page-control="prev">
+                    ‹ Previous questions
+                  </button>
+
+                  <span class="entry-links-count">
+                    ${activePageIndex + 1} of ${totalPages}
+                  </span>
+
+                  <button class="entry-links-control" type="button" data-entry-page-control="next">
+                    Next questions ›
+                  </button>
+                </div>
+              `
+              : ""
+          }
+        </div>
+      </section>
+    `;
+
+    el.querySelectorAll("[data-entry-category-index]").forEach((button) => {
+      button.addEventListener("click", () => {
+        activeCategoryIndex = Number.parseInt(
+          button.dataset.entryCategoryIndex,
+          10
+        );
+        activePageIndex = 0;
+        render();
       });
+    });
 
-      const prev = el.querySelector('[data-entry-control="prev"]');
-      const next = el.querySelector('[data-entry-control="next"]');
+    const prev = el.querySelector('[data-entry-page-control="prev"]');
+    const next = el.querySelector('[data-entry-page-control="next"]');
 
-      if (prev) {
-        prev.addEventListener("click", () => {
-          activeIndex =
-            (activeIndex - 1 + cycleSets.length) % cycleSets.length;
-          render();
-        });
-      }
-
-      if (next) {
-        next.addEventListener("click", () => {
-          activeIndex = (activeIndex + 1) % cycleSets.length;
-          render();
-        });
-      }
+    if (prev) {
+      prev.addEventListener("click", () => {
+        activePageIndex =
+          (activePageIndex - 1 + totalPages) % totalPages;
+        render();
+      });
     }
 
-    render();
+    if (next) {
+      next.addEventListener("click", () => {
+        activePageIndex = (activePageIndex + 1) % totalPages;
+        render();
+      });
+    }
   }
 
-  function initEntryLinks() {
-    document.querySelectorAll(".olc-entry-links").forEach(renderEntryLinks);
-  }
+  render();
+}
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initEntryLinks);
-  } else {
-    initEntryLinks();
-  }
+function initEntryLinks() {
+  document.querySelectorAll(".olc-entry-links").forEach(renderEntryLinks);
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initEntryLinks);
+} else {
+  initEntryLinks();
+}
 })();
