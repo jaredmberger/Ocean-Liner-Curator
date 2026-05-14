@@ -2538,6 +2538,43 @@ footer > .entry-points-wrap{
   line-height: 1;
 }
 
+/* =========================
+   Curated Entry Card Corner Glyphs
+   ========================= */
+
+.entry-question-card{
+  position: relative;
+  overflow: hidden;
+  min-height: 210px;
+}
+
+.entry-question-card > *:not(.entry-card-corner-glyph){
+  position: relative;
+  z-index: 2;
+}
+
+.entry-card-corner-glyph{
+  position: absolute;
+  right: 1.15rem;
+  bottom: 1.05rem;
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  opacity: 0.25;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+@media (max-width:520px){
+  .entry-card-corner-glyph{
+    width: 64px;
+    height: 64px;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
 </style>
   
 </head>
@@ -2756,10 +2793,18 @@ footer > .entry-points-wrap{
       Another ship ↻
     </button>
   </div>
+
+  <img
+    class="entry-card-corner-glyph"
+    src="/anchor-glyph.png"
+    alt=""
+    aria-hidden="true"
+  />
 </article>
 
   <article class="note orient-card entry-question-card" id="rotating-entry-card">
   <span class="ornament-star">★</span>
+
   <strong id="rotating-entry-title">What made RMS Queen Mary famous?</strong>
 
   <p id="rotating-entry-desc">
@@ -2767,17 +2812,24 @@ footer > .entry-points-wrap{
   </p>
 
   <div class="orientation-links">
-  <a id="rotating-entry-link" href="/what-made-rms-queen-mary-famous">Read the answer »</a>
+    <a id="rotating-entry-link" href="/what-made-rms-queen-mary-famous">Read the answer »</a>
 
-  <button
-    type="button"
-    id="rotating-entry-refresh"
-    class="entry-refresh-button"
-    aria-label="Show another curated entry question"
-  >
-    New question ↻
-  </button>
-</div>
+    <button
+      type="button"
+      id="rotating-entry-refresh"
+      class="entry-refresh-button"
+      aria-label="Show another curated entry question"
+    >
+      New question ↻
+    </button>
+  </div>
+
+  <img
+    class="entry-card-corner-glyph"
+    src="/compass-glyph.png"
+    alt=""
+    aria-hidden="true"
+  />
 </article>
 
 </section>
