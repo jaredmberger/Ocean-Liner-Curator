@@ -176,7 +176,7 @@
     },
 
     unitedStates: {
-      eyebrow: "SS United States start here",
+      eyebrow: "SS United States pathways",
       heading: "Common SS United States questions",
       intro:
         "Quick-entry pages for understanding the ship’s speed, design, public rooms, preservation story, and legacy.",
