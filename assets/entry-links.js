@@ -6,6 +6,14 @@
       intro:
         "If you’re new to this topic, these quick-entry pages answer the most common questions and lead into deeper material.",
       links: [
+      {
+  meta: "Culture · Memory",
+  title: "Why Ocean Liners Still Fascinate People",
+  desc:
+    "Engineering, migration, luxury, tragedy, national identity, and vanished worlds all help explain why ocean liners still capture attention today.",
+  href: "/why-ocean-liners-still-fascinate-people"
+},
+      
         {
           meta: "Basics · Ships",
           title: "What is the difference between an ocean liner and a cruise ship?",
@@ -238,6 +246,23 @@
             "Purpose-built machines for the open ocean—scheduled, long-distance transport that shaped design, culture, and the objects that survive today.",
           href: "/what-are-ocean-liners"
         },
+        
+        {
+  meta: "Collecting · Artifacts",
+  title: "What Kinds of Ocean Liner Artifacts Survive Most Often?",
+  desc:
+    "Menus, postcards, brochures, photographs, china, silver, souvenirs, and fittings survive for different reasons—and survival alone does not prove attribution.",
+  href: "/what-ocean-liner-artifacts-survive-most-often"
+},
+
+{
+  meta: "Voyages · Atlantic crossings",
+  title: "How Long Did It Take to Cross the Atlantic by Ocean Liner?",
+  desc:
+    "Express liners, immigrant voyages, weather delays, and why crossing time mattered so much during the liner era.",
+  href: "/how-long-did-it-take-to-cross-the-atlantic-by-ocean-liner"
+},
+        
         {
           meta: "Basics · Ships",
           title: "Ocean Liner vs Cruise Ship: What’s the Difference?",
