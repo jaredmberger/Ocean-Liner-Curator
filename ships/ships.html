@@ -2883,6 +2883,61 @@ align-items:center !important;
   color:color-mix(in srgb, var(--hub-accent) 70%, var(--link));
 }
 
+.archive-page-mark{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0.55rem;
+  margin:0.15rem auto 0.95rem;
+  color:rgba(209,187,134,0.95);
+  font-family:"Libre Baskerville", serif;
+  font-variant:small-caps;
+  text-transform:uppercase;
+  letter-spacing:0.16em;
+  font-size:0.86rem;
+  line-height:1;
+}
+
+.archive-page-mark span:first-child{
+  font-size:0.72rem;
+  color:rgba(191,164,106,0.95);
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,0.45));
+}
+
+.archive-page-mark::before,
+.archive-page-mark::after{
+  content:"";
+  width:90px;
+  height:1px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(191,164,106,0.55)
+  );
+}
+
+.archive-page-mark::after{
+  background:linear-gradient(
+    90deg,
+    rgba(191,164,106,0.55),
+    transparent
+  );
+}
+
+@media (max-width:520px){
+  .archive-page-mark{
+    font-size:0.74rem;
+    letter-spacing:0.13em;
+    gap:0.45rem;
+    margin-bottom:0.8rem;
+  }
+
+  .archive-page-mark::before,
+  .archive-page-mark::after{
+    width:48px;
+  }
+}
+
 </style>
  
 </head>
@@ -2932,6 +2987,11 @@ decoding="async"
     alt=""
     aria-hidden="true"
   >
+
+<div class="archive-page-mark" aria-label="Ships Guide">
+  <span aria-hidden="true">★</span>
+  <span>ships.guide</span>
+</div>
 
   <div class="archive-badge__plate">
     <div class="archive-badge__kicker">Archive Scale</div>
