@@ -232,6 +232,14 @@
     },
 
 {
+      meta: "Basics · Voyages",
+      title: "Did All Ocean Liners Carry Immigrants?",
+      desc:
+        "Many liners carried emigrants and immigrant passengers, especially on major transatlantic routes. But not every liner, route, or era had the same migration role.",
+      href: "/did-all-ocean-liners-carry-immigrants"
+    },
+
+{
       meta: "Basics · Ships",
       title: "What are Ocean Liners?",
       desc:
