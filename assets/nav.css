@@ -1130,3 +1130,16 @@ a.footer-star:focus{
   min-width:4.5rem;
   text-align:center;
 }
+
+@media (max-width: 640px){
+
+  .entry-links-controls{
+    gap:.75rem;
+  }
+
+  .entry-links-control{
+    font-size:.85rem;
+    padding:.42rem .9rem;
+  }
+
+}
