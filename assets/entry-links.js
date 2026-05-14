@@ -129,7 +129,6 @@
             "Why Queen Mary became one of the defining ocean liners of the twentieth century.",
           href: "/what-made-rms-queen-mary-famous"
         },
-
         {
           meta: "Life aboard",
           title: "What was it like aboard Queen Mary?",
@@ -137,7 +136,6 @@
             "Public rooms, routines, Atlantic crossings, and the social atmosphere aboard the liner.",
           href: "/rms-queen-mary-voyage-reconstructed"
         },
-
         {
           meta: "Atlantic speed",
           title: "What was the Blue Riband?",
@@ -145,7 +143,6 @@
             "How Atlantic speed became one of the great prestige contests of the liner era.",
           href: "/what-was-the-blue-riband"
         },
-
         {
           meta: "Preservation",
           title: "Why is Queen Mary in Long Beach?",
@@ -153,7 +150,6 @@
             "Why did RMS Queen Mary end up permanently moored in California? A quick guide to retirement, preservation, tourism, and the ship’s postwar legacy.",
           href: "/why-is-queen-mary-in-long-beach"
         },
-
         {
           meta: "Preservation",
           title: "Why Queen Mary Still Matters",
@@ -161,7 +157,6 @@
             "How preservation, tourism, nostalgia, and public memory reshaped the ship after her liner career.",
           href: "/why-queen-mary-still-matters"
         },
-
         {
           meta: "Timeline",
           title: "RMS Queen Mary Timeline",
@@ -208,58 +203,52 @@
         }
       ]
     },
-    
-        exploreMore: {
-  eyebrow: "Explore more",
-  heading: "Additional entry points",
-  intro:
-    "Additional short-answer pages, comparisons, and exploratory topics connected to ocean liner history and interpretation.",
-  links: [
-    {
-      meta: "Basics · Ships",
-      title: "Ocean Liners Are Ships — But Not All Ships Are Ocean Liners",
-      desc:
-        "Ocean liners are ships-—but a specific kind of passenger ship.",
-      href: "/ocean-liners-are-ships"
-    },
-    
-    {
-      meta: "Experience · Voyages",
-      title: "Why Did Ocean Liners Have Classes?",
-      desc:
-        "Ocean liner classes were not just about luxury. They organized price, space, service, immigration control, social expectations, and the physical layout of the ship.",
-      href: "/why-did-ocean-liners-have-classes"
-    },
 
-{
-      meta: "Basics · Voyages",
-      title: "Did All Ocean Liners Carry Immigrants?",
-      desc:
-        "Many liners carried emigrants and immigrant passengers, especially on major transatlantic routes. But not every liner, route, or era had the same migration role.",
-      href: "/did-all-ocean-liners-carry-immigrants"
-    },
-
-{
-      meta: "Basics · Ships",
-      title: "What are Ocean Liners?",
-      desc:
-        "Purpose-built machines for the open ocean—scheduled, long-distance transport that shaped design, culture, and the objects that survive today.",
-      href: "/what-are-ocean-liners"
-    },
-
-    {
-      meta: "Basics · Ships",
-      title: "Ocean Liner vs Cruise Ship: What’s the Difference?",
-      desc:
-        "It all comes down to function!",
-      href: "/ocean-liner-vs-cruise-ship"
+    exploreMore: {
+      eyebrow: "Explore more",
+      heading: "Additional entry points",
+      intro:
+        "Additional short-answer pages, comparisons, and exploratory topics connected to ocean liner history and interpretation.",
+      links: [
+        {
+          meta: "Basics · Ships",
+          title: "Ocean Liners Are Ships — But Not All Ships Are Ocean Liners",
+          desc:
+            "Ocean liners are ships—but a specific kind of passenger ship.",
+          href: "/ocean-liners-are-ships"
+        },
+        {
+          meta: "Experience · Voyages",
+          title: "Why Did Ocean Liners Have Classes?",
+          desc:
+            "Ocean liner classes organized price, space, service, immigration control, social expectations, and ship layout.",
+          href: "/why-did-ocean-liners-have-classes"
+        },
+        {
+          meta: "Basics · Voyages",
+          title: "Did All Ocean Liners Carry Immigrants?",
+          desc:
+            "Many liners carried emigrants and immigrant passengers, especially on major transatlantic routes—but not every liner had the same migration role.",
+          href: "/did-all-ocean-liners-carry-immigrants"
+        },
+        {
+          meta: "Basics · Ships",
+          title: "What are Ocean Liners?",
+          desc:
+            "Purpose-built machines for the open ocean—scheduled, long-distance transport that shaped design, culture, and the objects that survive today.",
+          href: "/what-are-ocean-liners"
+        },
+        {
+          meta: "Basics · Ships",
+          title: "Ocean Liner vs Cruise Ship: What’s the Difference?",
+          desc:
+            "A clear distinction between scheduled ocean transport and leisure-centered cruising.",
+          href: "/ocean-liner-vs-cruise-ship"
+        }
+      ]
     }
-  ]
-}
-    
   };
 
-  /* Expose globally for homepage rotating cards */
   window.OLC_ENTRY_SETS = ENTRY_SETS;
 
   function escapeHTML(value) {
@@ -271,38 +260,144 @@
       .replaceAll("'", "&#039;");
   }
 
+  function getCycleSets(el) {
+    const cycleAttr = el.dataset.cycleSets;
+
+    if (!cycleAttr) {
+      const single = el.dataset.entrySet || "general";
+      return ENTRY_SETS[single] ? [single] : ["general"];
+    }
+
+    const sets = cycleAttr
+      .split(",")
+      .map((item) => item.trim())
+      .filter((item) => ENTRY_SETS[item]);
+
+    return sets.length ? sets : ["general"];
+  }
+
+  function getLimit(el, set) {
+    const raw = Number.parseInt(el.dataset.limit || "", 10);
+    if (Number.isFinite(raw) && raw > 0) return raw;
+    return set.links.length;
+  }
+
+  function renderCards(set, limit) {
+    return set.links
+      .slice(0, limit)
+      .map(
+        (link) => `
+          <a class="entry-link-card" href="${escapeHTML(link.href)}">
+            <span class="entry-link-meta">${escapeHTML(link.meta)}</span>
+            <b>${escapeHTML(link.title)}</b>
+            <span class="entry-link-desc">${escapeHTML(link.desc)}</span>
+          </a>
+        `
+      )
+      .join("");
+  }
+
   function renderEntryLinks(el) {
-    const setName = el.dataset.entrySet || "general";
-    const set = ENTRY_SETS[setName] || ENTRY_SETS.general;
+    const cycleSets = getCycleSets(el);
+    let activeIndex = 0;
 
     const headingId =
       "entry-links-heading-" + Math.random().toString(36).slice(2, 9);
 
-    el.innerHTML = `
-      <section class="entry-links-block" aria-labelledby="${headingId}">
-        <div class="entry-links-inner">
-          <div class="entry-links-header">
-            <span class="entry-links-eyebrow">${escapeHTML(set.eyebrow)}</span>
-            <h2 id="${headingId}">${escapeHTML(set.heading)}</h2>
-            <p class="entry-links-intro">${escapeHTML(set.intro)}</p>
-          </div>
+    function render() {
+      const setName = cycleSets[activeIndex];
+      const set = ENTRY_SETS[setName] || ENTRY_SETS.general;
+      const limit = getLimit(el, set);
+      const hasCycle = cycleSets.length > 1;
 
-          <div class="entry-links-grid">
-            ${set.links
-              .map(
-                (link) => `
-                  <a class="entry-link-card" href="${escapeHTML(link.href)}">
-                    <span class="entry-link-meta">${escapeHTML(link.meta)}</span>
-                    <b>${escapeHTML(link.title)}</b>
-                    <span class="entry-link-desc">${escapeHTML(link.desc)}</span>
-                  </a>
+      el.innerHTML = `
+        <section class="entry-links-block" aria-labelledby="${headingId}">
+          <div class="entry-links-inner">
+            <div class="entry-links-header">
+              <span class="entry-links-eyebrow">${escapeHTML(set.eyebrow)}</span>
+              <h2 id="${headingId}">${escapeHTML(set.heading)}</h2>
+              <p class="entry-links-intro">${escapeHTML(set.intro)}</p>
+
+              ${
+                hasCycle
+                  ? `
+                    <div class="entry-links-cycle-tabs" aria-label="Entry link categories">
+                      ${cycleSets
+                        .map((name, index) => {
+                          const tabSet = ENTRY_SETS[name];
+                          const isActive = index === activeIndex;
+
+                          return `
+                            <button
+                              class="entry-links-tab${isActive ? " is-active" : ""}"
+                              type="button"
+                              data-entry-cycle-index="${index}"
+                              aria-pressed="${isActive ? "true" : "false"}">
+                              ${escapeHTML(tabSet.eyebrow)}
+                            </button>
+                          `;
+                        })
+                        .join("")}
+                    </div>
+                  `
+                  : ""
+              }
+            </div>
+
+            <div class="entry-links-grid">
+              ${renderCards(set, limit)}
+            </div>
+
+            ${
+              hasCycle
+                ? `
+                  <div class="entry-links-controls" aria-label="Cycle entry links">
+                    <button class="entry-links-control" type="button" data-entry-control="prev">
+                      ‹ Previous
+                    </button>
+                    <span class="entry-links-count">
+                      ${activeIndex + 1} of ${cycleSets.length}
+                    </span>
+                    <button class="entry-links-control" type="button" data-entry-control="next">
+                      Next questions ›
+                    </button>
+                  </div>
                 `
-              )
-              .join("")}
+                : ""
+            }
           </div>
-        </div>
-      </section>
-    `;
+        </section>
+      `;
+
+      if (!hasCycle) return;
+
+      el.querySelectorAll("[data-entry-cycle-index]").forEach((button) => {
+        button.addEventListener("click", () => {
+          activeIndex = Number.parseInt(button.dataset.entryCycleIndex, 10);
+          render();
+        });
+      });
+
+      const prev = el.querySelector('[data-entry-control="prev"]');
+      const next = el.querySelector('[data-entry-control="next"]');
+
+      if (prev) {
+        prev.addEventListener("click", () => {
+          activeIndex =
+            (activeIndex - 1 + cycleSets.length) % cycleSets.length;
+          render();
+        });
+      }
+
+      if (next) {
+        next.addEventListener("click", () => {
+          activeIndex = (activeIndex + 1) % cycleSets.length;
+          render();
+        });
+      }
+    }
+
+    render();
   }
 
   function initEntryLinks() {
