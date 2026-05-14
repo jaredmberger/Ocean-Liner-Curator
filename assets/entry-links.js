@@ -222,6 +222,14 @@
         "Ocean liners are ships-—but a specific kind of passenger ship.",
       href: "/ocean-liners-are-ships"
     },
+    
+    {
+      meta: "Experience · Voyages",
+      title: "Why Did Ocean Liners Have Classes?",
+      desc:
+        "Ocean liner classes were not just about luxury. They organized price, space, service, immigration control, social expectations, and the physical layout of the ship.",
+      href: "/why-did-ocean-liners-have-classes"
+    },
 
 {
       meta: "Basics · Ships",
