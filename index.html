@@ -2776,11 +2776,14 @@ footer > .entry-points-wrap{
   <article class="note orient-card entry-question-card">
   <span class="ornament-star">★</span>
 
-  <strong id="ship-entry-title">RMS Olympic</strong>
-
-  <p id="ship-entry-desc">
+  <p
+    id="ship-entry-desc"
+    style="margin-bottom:0.8rem;"
+  >
     Explore a randomly selected ship from the Ship Archive.
   </p>
+
+  <strong id="ship-entry-title">RMS Olympic</strong>
 
   <div class="orientation-links">
     <a id="ship-entry-link" href="/ships/rms-olympic.html">
@@ -3261,7 +3264,7 @@ footer > .entry-points-wrap{
     const shipName = getShipNameFromUrl(ship);
 
     titleEl.textContent = shipName;
-    descEl.textContent = "Explore a randomly selected ship from the Ship Archive.";
+    
 
     linkEl.href = ship;
     linkEl.textContent = "Explore ship guide »";
