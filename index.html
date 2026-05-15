@@ -2780,7 +2780,7 @@ footer > .entry-points-wrap{
     id="ship-entry-desc"
     style="margin-bottom:0.8rem;"
   >
-    Explore a randomly selected ship from the Ship Archive.
+    Explore a randomly selected ship from the Ship Archive:
   </p>
 
   <strong id="ship-entry-title">RMS Olympic</strong>
@@ -3263,7 +3263,7 @@ footer > .entry-points-wrap{
 
     const shipName = getShipNameFromUrl(ship);
 
-    titleEl.textContent = shipName;
+    titleEl.textContent = "➺ " + shipName;
     
 
     linkEl.href = ship;
