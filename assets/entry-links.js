@@ -73,6 +73,13 @@
           href: "/why-was-titanic-called-unsinkable"
         },
         {
+  meta: "Titanic · Memory & culture",
+  title: "Why Do People Still Care About Titanic?",
+  desc:
+    "Why Titanic still fascinates people: tragedy, technology, class, film, artifacts, survivor stories, and the enduring emotional power of the disaster.",
+  href: "/why-do-people-still-care-about-titanic"
+},
+        {
   meta: "Titanic · Survival",
   title: "Did anyone survive in the water after Titanic sank?",
   desc:
