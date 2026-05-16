@@ -2586,6 +2586,44 @@ footer > .entry-points-wrap{
   margin-bottom: 0.2rem;
 }
 
+/* =========================
+   Start Here Card Corner Glyph
+   ========================= */
+
+.start-here-card{
+  position: relative !important;
+  overflow: hidden;
+}
+
+.start-here-card img.start-card-corner-glyph{
+  position: absolute !important;
+  left: auto !important;
+  top: auto !important;
+  right: 1.15rem !important;
+  bottom: 1rem !important;
+
+  display: block !important;
+  width: 66px !important;
+  height: 66px !important;
+  max-width: none !important;
+
+  object-fit: contain;
+  opacity: 0.14;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+@media (max-width:520px){
+  .start-here-card img.start-card-corner-glyph{
+    width: 76px !important;
+    height: 76px !important;
+    right: 0.7rem !important;
+    bottom: 0.35rem !important;
+    opacity: 0.10;
+  }
+}
+
 </style>
   
 </head>
@@ -2688,6 +2726,12 @@ footer > .entry-points-wrap{
         </div>
         <p>A 2-minute orientation: how the site works, and where to begin.</p>
         <a class="card-link start-here-glow" href="/start-here">Start Here »</a>
+        <img
+  class="start-card-corner-glyph"
+  src="/here-pin.png"
+  alt=""
+  aria-hidden="true"
+/>
       </article>
 
       <article class="path-card">
