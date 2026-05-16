@@ -3219,32 +3219,40 @@ footer > .entry-points-wrap{
   }
 
   function getShipNameFromUrl(url){
-    const acronymMap = {
-      ss: "SS",
-      rms: "RMS",
-      mv: "MV",
-      ms: "MS",
-      tss: "TSS",
-      hms: "HMS",
-      qsmv: "QSMV",
-      nyk: "NYK"
-    };
 
-    return url
-      .replace("/ships/", "")
-      .replace(".html", "")
-      .split("-")
-      .map(word => {
-        const lower = word.toLowerCase();
+  const acronymMap = {
+    ss: "SS",
+    rms: "RMS",
+    mv: "MV",
+    ms: "MS",
+    tss: "TSS",
+    hms: "HMS",
+    qsmv: "QSMV",
+    nyk: "NYK"
+  };
 
-        if (acronymMap[lower]) {
-          return acronymMap[lower];
-        }
+  let parts = url
+    .replace("/ships/", "")
+    .replace(".html", "")
+    .split("-");
 
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" ");
+  /* remove trailing 4-digit year */
+  if (/^\d{4}$/.test(parts[parts.length - 1])) {
+    parts.pop();
   }
+
+  return parts
+    .map(word => {
+      const lower = word.toLowerCase();
+
+      if (acronymMap[lower]) {
+        return acronymMap[lower];
+      }
+
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(" ");
+}
 
   function rotateShipCard(){
     const ships = window.OLC_SHIP_URLS || [];
