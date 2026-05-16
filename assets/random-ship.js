@@ -227,7 +227,7 @@
   "/ships/ss-leviathan.html",
   "/ships/ss-warwick-castle.html",
   "/ships/ss-washington.html",
-  "/ships/ss-westernland-red-star.html",
+  "/ships/ss-westernland.html",
   "/ships/ss-winchester-castle.html",
   "/ships/rms-windsor-castle-1921.html",
   "/ships/rms-windsor-castle.html",
