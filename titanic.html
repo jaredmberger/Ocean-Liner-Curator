@@ -9,21 +9,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Titanic — Topic Hub | Ocean Liner Curator</title>
-  <meta name="description" content="A curated hub for RMS Titanic: timelines from departure to rescue, artifact research collections, and short answers clarifying common misunderstandings." />
+  <meta name="description" content="A curated hub for RMS Titanic: timelines from departure to rescue, artifact research collections, short answers, and connected ships from Titanic’s wider ocean liner world." />
   <link rel="canonical" href="https://www.oceanliners.net/titanic/" />
 
   <meta name="theme-color" content="#0a1110" />
   <meta name="robots" content="index,follow" />
 
   <meta property="og:title" content="Titanic — Topic Hub | Ocean Liner Curator" />
-  <meta property="og:description" content="Explore RMS Titanic through curated timelines, artifact research, and evidence-first short answers." />
+  <meta property="og:description" content="Explore RMS Titanic through curated timelines, artifact research, evidence-first short answers, and connected ocean liners." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.oceanliners.net/titanic/" />
   <meta property="og:image" content="https://www.oceanliners.net/ships/rms-titanic.JPG" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Titanic — Topic Hub | Ocean Liner Curator" />
-  <meta name="twitter:description" content="Explore RMS Titanic through curated timelines, artifact research, and evidence-first short answers." />
+  <meta name="twitter:description" content="Explore RMS Titanic through curated timelines, artifact research, evidence-first short answers, and connected ocean liners." />
   <meta name="twitter:image" content="https://www.oceanliners.net/ships/rms-titanic.JPG" />
 
   <link rel="icon" href="/logo.png" type="image/png" />
@@ -41,7 +41,7 @@
     "@id":"https://www.oceanliners.net/titanic/#webpage",
     "name":"Titanic — Topic Hub | Ocean Liner Curator",
     "url":"https://www.oceanliners.net/titanic/",
-    "description":"A curated Titanic hub bringing together timeline, artifacts research, and evidence-first short answers.",
+    "description":"A curated Titanic hub bringing together timeline, artifacts research, evidence-first short answers, and connected ocean liners from Titanic’s wider world.",
     "isPartOf":{
       "@type":"WebSite",
       "@id":"https://www.oceanliners.net/#website",
@@ -52,7 +52,8 @@
       { "@type":"Thing", "name":"RMS Titanic" },
       { "@type":"Thing", "name":"White Star Line" },
       { "@type":"Thing", "name":"Titanic artifacts" },
-      { "@type":"Thing", "name":"Maritime history" }
+      { "@type":"Thing", "name":"Maritime history" },
+      { "@type":"Thing", "name":"Ocean liners" }
     ]
   }
   </script>
@@ -62,9 +63,7 @@
   <style>
     :root{
       --bg:#0a1110;
-      --bg-2:#0d1615;
       --panel:rgba(15,27,25,0.78);
-      --panel-strong:rgba(15,27,25,0.9);
       --text:#e6dfcf;
       --muted:#b6ae9c;
       --accent:#bfa46a;
@@ -74,17 +73,11 @@
       --shadow:rgba(0,0,0,0.58);
       --link:rgba(209,187,134,0.96);
       --maxw:1120px;
-      --contentw:900px;
-      --radius:22px;
-      --radius-sm:16px;
-      --glass-blur:blur(2px);
     }
 
     *{ box-sizing:border-box; }
 
-    html{
-      scroll-behavior:smooth;
-    }
+    html{ scroll-behavior:smooth; }
 
     body{
       margin:0;
@@ -113,19 +106,9 @@
       -webkit-mask-image:linear-gradient(to bottom, rgba(0,0,0,.7), transparent 90%);
     }
 
-    a{
-      color:var(--link);
-      text-decoration:none;
-    }
-
-    a:hover{
-      color:#ecd9ab;
-    }
-
-    img{
-      max-width:100%;
-      display:block;
-    }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ color:#ecd9ab; }
+    img{ max-width:100%; display:block; }
 
     .page-shell{
       position:relative;
@@ -143,8 +126,8 @@
       background:
         linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
         var(--panel);
-      backdrop-filter:var(--glass-blur);
-      -webkit-backdrop-filter:var(--glass-blur);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
       box-shadow:
         0 22px 60px var(--shadow),
         inset 0 1px 0 rgba(255,255,255,0.04);
@@ -186,6 +169,20 @@
       z-index:2;
     }
 
+    .hero-emblem-bg{
+      mix-blend-mode:soft-light;
+      position:absolute;
+      pointer-events:none;
+      z-index:0;
+      width:clamp(260px, 30vw, 380px);
+      aspect-ratio:1 / 1;
+      background:url('/wsl-embed.PNG') center/contain no-repeat;
+      top:55px;
+      left:35px;
+      opacity:0.21;
+      filter:blur(0.2px);
+    }
+
     .eyebrow{
       --eyebrow-accent:#8e7ac8;
       display:inline-flex;
@@ -223,6 +220,16 @@
       text-shadow:0 2px 18px rgba(0,0,0,0.26);
     }
 
+    .eyebrow,
+    h1,
+    .hero-rule,
+    .hero-sub,
+    .hero-actions,
+    .hero-note{
+      position:relative;
+      z-index:2;
+    }
+
     .hero-sub{
       max-width:42rem;
       margin:1.2rem 0 0;
@@ -238,12 +245,17 @@
       opacity:.88;
     }
 
-    .hero-actions{
+    .hero-actions,
+    .closing-actions,
+    .ship-world-actions{
       display:flex;
       flex-wrap:wrap;
       gap:.9rem;
-      margin:1.5rem 0 0;
     }
+
+    .hero-actions{ margin:1.5rem 0 0; }
+    .closing-actions,
+    .ship-world-actions{ justify-content:center; margin-top:1rem; }
 
     .hero-note{
       max-width:46rem;
@@ -395,7 +407,7 @@
 
     .section-kicker{
       display:inline-block;
-      margin:0 0 0;
+      margin:0;
       color:var(--accent-2);
       text-transform:uppercase;
       letter-spacing:.18em;
@@ -432,37 +444,40 @@
       grid-template-columns:repeat(3, minmax(0, 1fr));
     }
 
+    .feature-card,
+    .highlight-card,
+    .ship-world-panel,
+    .ship-world-card,
+    .closing-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      background:
+        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+        rgba(15,27,25,0.42);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+    }
+
     .feature-card{
       display:flex;
       flex-direction:column;
       min-height:100%;
-      background:
-        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
-        rgba(15,27,25,0.42);
-      backdrop-filter: blur(2px) !important;
-      -webkit-backdrop-filter: blur(2px) !important;
-      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
-      position:relative;
-      overflow:hidden;
       border-radius:20px;
-      border:1px solid var(--border);
       transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
     }
 
     .feature-card::before,
     .highlight-card::before,
+    .ship-world-panel::before,
     .closing-card::before{
       content:"";
       position:absolute;
       inset:0;
       pointer-events:none;
       background:
-        linear-gradient(
-          120deg,
-          rgba(255,255,255,0.05) 0%,
-          rgba(255,255,255,0.015) 26%,
-          transparent 56%
-        );
+        linear-gradient(120deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.015) 26%, transparent 56%);
       opacity:.28;
     }
 
@@ -541,9 +556,7 @@
       color:#ecd8a7;
     }
 
-    .feature-link::after{
-      content:"»";
-    }
+    .feature-link::after{ content:"»"; }
 
     .highlights-grid{
       display:grid;
@@ -554,16 +567,7 @@
 
     .highlight-card{
       padding:1.2rem 1.15rem;
-      background:
-        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
-        rgba(15,27,25,0.42);
-      backdrop-filter: blur(2px) !important;
-      -webkit-backdrop-filter: blur(2px) !important;
-      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
-      position:relative;
-      overflow:hidden;
       border-radius:20px;
-      border:1px solid var(--border);
     }
 
     .highlight-card h3{
@@ -599,8 +603,105 @@
       color:var(--accent);
     }
 
-    .mini-list a{
+    .mini-list a{ color:#ecd8a7; }
+
+    .ship-world-panel{
+      margin-top:1.2rem;
+      padding:1.1rem;
+      border-radius:24px;
+      border-color:rgba(191,164,106,0.34);
+      background:
+        radial-gradient(circle at 14% 16%, rgba(191,164,106,0.11), transparent 0 28%),
+        linear-gradient(120deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012)),
+        rgba(15,27,25,0.48);
+      box-shadow:0 14px 34px rgba(0,0,0,0.34);
+    }
+
+    .ship-world-intro{
+      position:relative;
+      z-index:1;
+      max-width:780px;
+      margin:0 auto 1rem;
+      text-align:center;
+      color:var(--muted);
+    }
+
+    .ship-world-grid{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:.9rem;
+    }
+
+    .ship-world-card{
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+      padding:1rem;
+      border-radius:18px;
+      border-color:rgba(191,164,106,0.24);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.012)),
+        rgba(10,17,16,0.34);
+      box-shadow:0 10px 22px rgba(0,0,0,0.24);
+    }
+
+    .ship-world-card::after{
+      content:"★";
+      position:absolute;
+      right:.85rem;
+      bottom:.45rem;
+      color:rgba(191,164,106,0.18);
+      font-size:2.4rem;
+      line-height:1;
+      pointer-events:none;
+    }
+
+    .ship-world-tag{
+      display:inline-flex;
+      width:max-content;
+      max-width:100%;
+      margin:0 0 .55rem;
+      padding:.22rem .55rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:999px;
+      color:var(--accent-2);
+      font-size:.68rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      line-height:1.2;
+      background:rgba(191,164,106,0.06);
+    }
+
+    .ship-world-card h3{
+      margin:0;
+      font-family:"Libre Baskerville", serif;
+      font-size:1.05rem;
+      line-height:1.25;
+      color:#f1ead7;
+    }
+
+    .ship-world-card p{
+      margin:.45rem 0 .8rem;
+      color:var(--muted);
+      font-size:.94rem;
+      flex:1 1 auto;
+    }
+
+    .ship-world-card a{
+      position:relative;
+      z-index:2;
+      display:inline-flex;
+      width:max-content;
+      max-width:100%;
+      font-weight:600;
       color:#ecd8a7;
+    }
+
+    .ship-world-card a::after{
+      content:"»";
+      margin-left:.45rem;
     }
 
     .closing-card{
@@ -608,29 +709,12 @@
       margin:1.2rem auto 0;
       padding:1.35rem 1.25rem;
       text-align:center;
-      background:
-        linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
-        rgba(15,27,25,0.42);
-      backdrop-filter: blur(2px) !important;
-      -webkit-backdrop-filter: blur(2px) !important;
-      box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
-      position:relative;
-      overflow:hidden;
       border-radius:20px;
-      border:1px solid var(--border);
     }
 
     .closing-card p{
       margin:.25rem 0 0;
       color:var(--muted);
-    }
-
-    .closing-actions{
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:.85rem;
-      margin-top:1rem;
     }
 
     footer{
@@ -664,17 +748,9 @@
       opacity:0.85;
     }
 
-    .footer-star::before{
-      right:calc(50% + 18px);
-    }
-
-    .footer-star::after{
-      left:calc(50% + 18px);
-    }
-
-    .copyright{
-      margin:0;
-    }
+    .footer-star::before{ right:calc(50% + 18px); }
+    .footer-star::after{ left:calc(50% + 18px); }
+    .copyright{ margin:0; }
 
     .section-star{
       margin-bottom:0;
@@ -683,6 +759,17 @@
       text-shadow:
         0 0 6px rgba(240,207,88,0.3),
         0 0 12px rgba(240,207,88,0.18);
+    }
+
+    .section-emblem{
+      display:block;
+      width:clamp(60px, 6.8vw, 84px);
+      height:auto;
+      margin:.1rem auto .1rem;
+      object-fit:contain;
+      filter:
+        drop-shadow(0 4px 10px rgba(0,0,0,0.35))
+        drop-shadow(0 0 10px rgba(191,164,106,0.16));
     }
 
     .bottom-hero{
@@ -730,98 +817,10 @@
       filter:saturate(.95) contrast(1.03);
     }
 
-    .bottom-hero-overlay{
-      position:absolute;
-      left:1.2rem;
-      right:1.2rem;
-      bottom:1.2rem;
-      z-index:4;
-      max-width:760px;
-      padding:1rem 1.05rem;
-      border:1px solid rgba(191,164,106,0.22);
-      border-radius:18px;
-      background:rgba(10,17,16,0.56);
-      backdrop-filter:blur(2px);
-      -webkit-backdrop-filter:blur(2px);
-      box-shadow:0 12px 24px rgba(0,0,0,0.24);
-    }
-
-    .bottom-hero-kicker{
-      margin:0 0 .35rem;
-      color:var(--accent-2);
-      font-size:.72rem;
-      letter-spacing:.16em;
-      text-transform:uppercase;
-    }
-
-    .bottom-hero-title{
-      margin:0;
-      font-family:"Libre Baskerville", serif;
-      font-size:clamp(1.35rem, 2.8vw, 2.1rem);
-      line-height:1.15;
-      color:#f1ead7;
-      text-align:left !important;
-    }
-
-    .bottom-hero-text{
-      margin:.55rem 0 0;
-      color:var(--muted);
-      max-width:48rem;
-    }
-
-    .hero-emblem{
-      display:flex;
-      justify-content:center;
-      margin:2rem 0 2.2rem;
-    }
-
-    .hero-emblem img{
-      width:clamp(140px, 18vw, 220px);
-      height:auto;
-      display:block;
-      filter:
-        drop-shadow(0 6px 18px rgba(0,0,0,0.6))
-        drop-shadow(0 0 12px rgba(191,164,106,0.25));
-    }
-
-    .hero-emblem-bg{
-      mix-blend-mode:soft-light;
-      position:absolute;
-      pointer-events:none;
-      z-index:0;
-      width:clamp(260px, 30vw, 380px);
-      aspect-ratio:1 / 1;
-      background:url('/wsl-embed.PNG') center/contain no-repeat;
-      top:55px;
-      left:35px;
-      opacity:0.21;
-      filter:blur(0.2px);
-    }
-
-    .eyebrow,
-    h1,
-    .hero-rule,
-    .hero-sub,
-    .hero-actions,
-    .hero-note{
-      position:relative;
-      z-index:2;
-    }
-
-    .section-emblem{
-      display:block;
-      width:clamp(60px, 6.8vw, 84px);
-      height:auto;
-      margin:.1rem auto .1rem;
-      object-fit:contain;
-      filter:
-        drop-shadow(0 4px 10px rgba(0,0,0,0.35))
-        drop-shadow(0 0 10px rgba(191,164,106,0.16));
-    }
-
     @media (max-width: 1100px){
       .feature-grid,
-      .feature-grid.secondary-grid{
+      .feature-grid.secondary-grid,
+      .ship-world-grid{
         grid-template-columns:repeat(3, minmax(0, 1fr));
       }
     }
@@ -880,7 +879,8 @@
       }
 
       .feature-grid,
-      .feature-grid.secondary-grid{
+      .feature-grid.secondary-grid,
+      .ship-world-grid{
         grid-template-columns:repeat(2, minmax(0, 1fr));
       }
 
@@ -891,14 +891,6 @@
         transform:translateX(-50%);
         opacity:0.09;
         filter:blur(0.2px);
-      }
-
-      h1{
-        max-width:11ch;
-      }
-
-      .hero-sub{
-        max-width:23rem;
       }
     }
 
@@ -921,8 +913,13 @@
       }
 
       .feature-grid,
-      .feature-grid.secondary-grid{
+      .feature-grid.secondary-grid,
+      .ship-world-grid{
         grid-template-columns:1fr;
+      }
+
+      .ship-world-panel{
+        padding:.85rem;
       }
 
       .bottom-hero{
@@ -932,12 +929,6 @@
       .bottom-hero-frame,
       .bottom-hero-frame img{
         min-height:280px;
-      }
-
-      .bottom-hero-overlay{
-        left:.85rem;
-        right:.85rem;
-        bottom:.85rem;
       }
     }
   </style>
@@ -952,13 +943,9 @@
 
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
-
           <div class="hero-emblem-bg" aria-hidden="true"></div>
-
           <div class="eyebrow">Titanic topic hub</div>
-
           <h1 id="page-title">RMS Titanic</h1>
-
           <div class="hero-rule" aria-hidden="true"></div>
 
           <p class="hero-sub">
@@ -967,6 +954,7 @@
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="/ships/titanic-southampton-to-rescue-timeline.html">Departure to Rescue Timeline</a>
+            <a class="btn btn-secondary" href="/ships/ships">Browse the Ship Archive</a>
             <a class="btn btn-secondary" href="/what-titanic-teaches-about-evidence.html">Titanic &amp; Evidence</a>
           </div>
 
@@ -1058,6 +1046,84 @@
           </div>
         </section>
 
+        <section aria-labelledby="titanic-world-ships">
+          <div class="section-head">
+            <div class="section-kicker">Explore more ships<br><span class="section-star">★</span></div>
+            <h2 id="titanic-world-ships">Explore more ships from Titanic’s world</h2>
+            <p>
+              Titanic is best understood as part of a wider liner network: sister ships, rescue ships, rivals, company peers, and other Atlantic liners that shaped the same maritime world.
+            </p>
+          </div>
+
+          <div class="ship-world-panel">
+            <p class="ship-world-intro">
+              Use these ships as a curated pathway outward from Titanic. Start with the most direct connections, then move into rival liners and the broader North Atlantic setting.
+            </p>
+
+            <div class="ship-world-grid">
+              <article class="ship-world-card">
+                <span class="ship-world-tag">Sister ship</span>
+                <h3>RMS Olympic</h3>
+                <p>
+                  Titanic’s elder sister and the ship that carried the Olympic-class design into long commercial service.
+                </p>
+                <a href="/ships/rms-olympic.html">Open ship guide</a>
+              </article>
+
+              <article class="ship-world-card">
+                <span class="ship-world-tag">Olympic-class</span>
+                <h3>HMHS Britannic</h3>
+                <p>
+                  The third Olympic-class ship, completed in a changed safety and wartime context after Titanic.
+                </p>
+                <a href="/ships/rms-britannic.html">Open ship guide</a>
+              </article>
+
+              <article class="ship-world-card">
+                <span class="ship-world-tag">Rescue ship</span>
+                <h3>RMS Carpathia</h3>
+                <p>
+                  The Cunard liner central to Titanic’s rescue story and one of the most important connected ships in the disaster sequence.
+                </p>
+                <a href="/ships/rms-carpathia.html">Open ship guide</a>
+              </article>
+
+              <article class="ship-world-card">
+                <span class="ship-world-tag">White Star context</span>
+                <h3>SS Nomadic</h3>
+                <p>
+                  The surviving Cherbourg tender that helps connect Titanic to passenger transfer, port logistics, and White Star’s wider operating world.
+                </p>
+                <a href="/ships/ss-nomadic.html">Open ship guide</a>
+              </article>
+
+              <article class="ship-world-card">
+                <span class="ship-world-tag">Cunard rival</span>
+                <h3>RMS Lusitania</h3>
+                <p>
+                  A famous Cunard express liner often compared with Titanic in public memory, disaster history, and Atlantic prestige.
+                </p>
+                <a href="/ships/rms-lusitania.html">Open ship guide</a>
+              </article>
+
+              <article class="ship-world-card">
+                <span class="ship-world-tag">Atlantic prestige</span>
+                <h3>RMS Mauretania</h3>
+                <p>
+                  A speed and reliability symbol that helps place Titanic in the competitive North Atlantic liner world before the First World War.
+                </p>
+                <a href="/ships/rms-mauretania.html">Open ship guide</a>
+              </article>
+            </div>
+
+            <div class="ship-world-actions">
+              <a class="btn btn-primary" href="/ships/ships">Browse the Ship Archive</a>
+              <a class="btn btn-secondary" href="/white-star-line-history.html">Explore White Star Line</a>
+              <a class="btn btn-secondary" href="/history-of-major-shipping-lines.html">Major Shipping Lines</a>
+            </div>
+          </div>
+        </section>
+
         <section aria-labelledby="why-this-page">
           <div class="section-head">
             <div class="section-kicker">Why this hub?<img
@@ -1068,7 +1134,7 @@
               ></div>
             <h2 id="why-this-page">A better Titanic starting point</h2>
             <p>
-              Titanic is often encountered as a flattened public-memory subject. This page is meant to restore structure: event sequence, company context, and object-based interpretation in one place.
+              Titanic is often encountered as a flattened public-memory subject. This page is meant to restore structure: event sequence, company context, ship relationships, and object-based interpretation in one place.
             </p>
           </div>
 
@@ -1108,12 +1174,12 @@
 
           <div class="highlights-grid">
             <div class="highlight-card">
-              <h3>Start with related ships</h3>
+              <h3>Continue through related ships</h3>
               <ul class="mini-list">
                 <li><a href="/ships/rms-olympic.html">RMS Olympic — Titanic’s elder sister »</a></li>
                 <li><a href="/ships/rms-britannic.html">HMHS Britannic — the third Olympic-class ship »</a></li>
-                <li><a href="/ships/rms-lusitania.html">RMS Lusitania — another disaster often compared with Titanic »</a></li>
-                <li><a href="/ships/rms-mauretania.html">RMS Mauretania — speed, prestige, and Cunard competition »</a></li>
+                <li><a href="/ships/rms-lusitania.html">RMS Lusitania — disaster, memory, and Cunard rivalry »</a></li>
+                <li><a href="/ships/rms-mauretania.html">RMS Mauretania — speed, prestige, and Atlantic competition »</a></li>
               </ul>
             </div>
 
@@ -1282,22 +1348,24 @@
 
           <div class="highlights-grid">
             <div class="highlight-card">
-              <h3>Related ships</h3>
+              <h3>Related ships and company context</h3>
               <ul class="mini-list">
                 <li><a href="/ships/rms-titanic.html">RMS Titanic ship guide »</a></li>
                 <li><a href="/ships/rms-olympic.html">RMS Olympic ship guide »</a></li>
                 <li><a href="/ships/rms-britannic.html">HMHS Britannic / RMS Britannic ship guide »</a></li>
                 <li><a href="/ships/rms-carpathia.html">RMS Carpathia ship guide »</a></li>
+                <li><a href="/white-star-line-history.html">White Star Line history »</a></li>
               </ul>
             </div>
 
             <div class="highlight-card">
-              <h3>Related history</h3>
+              <h3>Wider exploration</h3>
               <ul class="mini-list">
-                <li><a href="/white-star-line-history.html">White Star Line history »</a></li>
-                <li><a href="/history-of-major-shipping-lines.html">Major shipping line histories »</a></li>
                 <li><a href="/ships/ships">Ship Archive »</a></li>
+                <li><a href="/history-of-major-shipping-lines.html">Major shipping line histories »</a></li>
                 <li><a href="/collections/">Research Collections »</a></li>
+                <li><a href="/ocean-liner-cruise-ship">Ocean liner vs. cruise ship »</a></li>
+                <li><a href="/why-ocean-liners-still-fascinate-people">Why ocean liners still fascinate people »</a></li>
               </ul>
             </div>
           </div>
@@ -1324,9 +1392,9 @@
             </div>
 
             <div class="closing-actions">
-              <a class="btn btn-primary" href="/ships/titanic-southampton-to-rescue-timeline.html">Start with the Timeline</a>
+              <a class="btn btn-primary" href="/ships/ships">Browse the Ship Archive</a>
+              <a class="btn btn-secondary" href="/ships/titanic-southampton-to-rescue-timeline.html">Start with the Timeline</a>
               <a class="btn btn-secondary" href="/what-titanic-teaches-about-evidence.html">Read Titanic &amp; Evidence</a>
-              <a class="btn btn-secondary" href="/ships/ships">Browse the Ship Archive</a>
             </div>
           </div>
         </section>
