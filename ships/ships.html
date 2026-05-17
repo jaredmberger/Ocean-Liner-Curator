@@ -7048,29 +7048,54 @@ async function copyPageLink(){
 
 <script>
 document.addEventListener("click", function(e){
-  const lineJump = e.target.closest("[data-line-jump]");
-  const searchJump = e.target.closest("[data-search-jump]");
-
-  if (!lineJump && !searchJump) return;
+  const card = e.target.closest("[data-line-jump], [data-search-jump]");
+  if (!card) return;
 
   const input = document.getElementById("shipSearchInput");
   const guide = document.getElementById("guide");
 
-  if (lineJump) {
-    e.preventDefault();
-    const line = lineJump.getAttribute("data-line-jump");
-    const chip = Array.from(document.querySelectorAll(".line-chip"))
-      .find(btn => btn.textContent.trim() === line);
+  function norm(s){
+    return (s || "").toLowerCase().replace(/\s+/g, " ").trim();
+  }
 
-    if (chip) chip.click();
+  function scrollToGuide(){
     guide?.scrollIntoView({ behavior:"smooth", block:"start" });
   }
 
-  if (searchJump && input) {
+  const line = card.getAttribute("data-line-jump");
+  const search = card.getAttribute("data-search-jump");
+
+  if (line) {
     e.preventDefault();
-    input.value = searchJump.getAttribute("data-search-jump");
+
+    const wanted = norm(line);
+
+    const chip = Array.from(document.querySelectorAll(".line-chip")).find(btn => {
+      const textWithoutCount = btn.textContent.replace(/\s*\(\d+\)\s*$/, "");
+      const dataLine = btn.getAttribute("data-line") || "";
+
+      return (
+        norm(textWithoutCount) === wanted ||
+        norm(dataLine) === wanted
+      );
+    });
+
+    if (chip) {
+      chip.click();
+    } else {
+      console.warn("No matching line chip found for:", line);
+    }
+
+    scrollToGuide();
+  }
+
+  if (search && input) {
+    e.preventDefault();
+
+    input.value = search;
     input.dispatchEvent(new Event("input", { bubbles:true }));
-    guide?.scrollIntoView({ behavior:"smooth", block:"start" });
+
+    scrollToGuide();
   }
 });
 </script>
