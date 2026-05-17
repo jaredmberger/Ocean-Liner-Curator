@@ -3124,6 +3124,55 @@ decoding="async"
   </div>
 </div>
 
+<img class="archive-divider" src="/engraved-laurel.png" loading="lazy" decoding="async" alt="">
+
+<h2 class="archive-heading">Explore by Story</h2>
+<p>
+  Not sure where to start? These curated paths group ships by era, rivalry, company identity, and historical role.
+</p>
+
+<div class="featured-grid">
+  <a class="featured-card" href="#guide" data-line-jump="White Star Line">
+    <div class="featured-card-top">
+      <span class="featured-card-title">White Star Line Ships</span>
+      <span class="featured-card-meta">Company Path</span>
+    </div>
+    <p class="featured-card-desc">
+      From early Atlantic liners to Olympic, Titanic, Britannic, and the line’s final motor ships.
+    </p>
+  </a>
+
+  <a class="featured-card" href="#guide" data-line-jump="Cunard Line">
+    <div class="featured-card-top">
+      <span class="featured-card-title">Cunard Liners</span>
+      <span class="featured-card-meta">Company Path</span>
+    </div>
+    <p class="featured-card-desc">
+      Explore express liners, rescue ships, Atlantic rivals, and the great Cunard Queens.
+    </p>
+  </a>
+
+  <a class="featured-card" href="/titanic">
+    <div class="featured-card-top">
+      <span class="featured-card-title">Titanic’s World</span>
+      <span class="featured-card-meta">Ship Network</span>
+    </div>
+    <p class="featured-card-desc">
+      Start with Titanic, then move into Olympic, Britannic, Carpathia, Lusitania, Mauretania, and White Star context.
+    </p>
+  </a>
+
+  <a class="featured-card" href="#guide" data-search-jump="Normandie Queen Mary United States France">
+    <div class="featured-card-top">
+      <span class="featured-card-title">Prestige Atlantic Liners</span>
+      <span class="featured-card-meta">Era Path</span>
+    </div>
+    <p class="featured-card-desc">
+      Large national statements of speed, design, modernity, and transatlantic prestige.
+    </p>
+  </a>
+</div>
+
    <img class="archive-divider" src="/engraved-laurel.png" alt="">
   <h2 class="archive-heading" id="guide" style="text-align:center;">
   Ship Guides
@@ -6995,6 +7044,35 @@ async function copyPageLink(){
       }, 450);
     });
   }
+</script>
+
+<script>
+document.addEventListener("click", function(e){
+  const lineJump = e.target.closest("[data-line-jump]");
+  const searchJump = e.target.closest("[data-search-jump]");
+
+  if (!lineJump && !searchJump) return;
+
+  const input = document.getElementById("shipSearchInput");
+  const guide = document.getElementById("guide");
+
+  if (lineJump) {
+    e.preventDefault();
+    const line = lineJump.getAttribute("data-line-jump");
+    const chip = Array.from(document.querySelectorAll(".line-chip"))
+      .find(btn => btn.textContent.trim() === line);
+
+    if (chip) chip.click();
+    guide?.scrollIntoView({ behavior:"smooth", block:"start" });
+  }
+
+  if (searchJump && input) {
+    e.preventDefault();
+    input.value = searchJump.getAttribute("data-search-jump");
+    input.dispatchEvent(new Event("input", { bubbles:true }));
+    guide?.scrollIntoView({ behavior:"smooth", block:"start" });
+  }
+});
 </script>
 
 <div class="bookmark-pop" id="bookmarkPop" role="dialog" aria-live="polite" aria-hidden="true">
