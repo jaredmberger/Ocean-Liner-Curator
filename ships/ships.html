@@ -1783,6 +1783,7 @@ content-visibility: auto;
 
 .featured-card-desc{
   margin:0.75rem;
+text-align: left !important;
   font-size:0.96rem;
   color:rgba(230,223,207,0.82);
   line-height:1.6;
@@ -2599,7 +2600,7 @@ font-weight:600;
 .archive-feature-block .collection-card-meta,
 .archive-feature-block .featured-card-desc,
 .archive-feature-block .collection-card-desc{
-  text-align:left;
+  text-align:left !important;
 }
 
 .archive-feature-block a{
@@ -6732,8 +6733,14 @@ function firstLetterOf(title){
         activeLetter === "#"   ? (letter === "#") :
         (letter === activeLetter);
 
-      const passesSearch =
-        !q || (haystack.get(card) || "").includes(q);
+      const searchTerms = q
+  .split(/\s+/)
+  .filter(Boolean);
+
+const passesSearch =
+  !q || searchTerms.some(term =>
+    (haystack.get(card) || "").includes(term)
+  );
 
       const line = makeLineKey(labelForLine(getLine(card)));
       const passesLine =
