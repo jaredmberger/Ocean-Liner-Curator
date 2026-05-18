@@ -3363,7 +3363,7 @@ decoding="async"
     </p>
   </a>
 
-  <a class="featured-card" href="#guide" data-search-jump="Normandie Queen Mary United States France">
+  <a class="featured-card" href="#guide" data-search-jump="Normandie, Queen Mary, United States, France">
     <div class="featured-card-top">
       <span class="featured-card-title">Prestige Atlantic Liners</span>
       <span class="featured-card-meta">Era Path</span>
@@ -6736,16 +6736,22 @@ function firstLetterOf(title){
         activeLetter === "all" ? true :
         activeLetter === "#"   ? (letter === "#") :
         (letter === activeLetter);
-const searchTerms = q
-  .replace(/\b(rms|ss|mv|hmhs|rmmv|tss|ms)\b/g, "")
-  .split(/\s+/)
+const rawQuery = input ? input.value : "";
+
+const groups = rawQuery
+  .split(",")
+  .map(group =>
+    norm(group)
+      .replace(/\b(rms|ss|mv|hmhs|rmmv|tss|ms)\b/g, "")
+      .trim()
+  )
   .filter(Boolean);
 
 const text = haystack.get(card) || "";
 
 const passesSearch =
-  !searchTerms.length ||
-  searchTerms.every(term => text.includes(term));
+  !groups.length ||
+  groups.some(group => text.includes(group));
 
       const line = makeLineKey(labelForLine(getLine(card)));
       const passesLine =
