@@ -6562,8 +6562,11 @@ Evidence-first maritime documentation (1840–2004)
   }
 
   function getSearchText(card){
-    return norm([getTitle(card), getMeta(card), getDesc(card)].join(" "));
-  }
+  return norm([
+    getTitle(card),
+    getMeta(card)
+  ].join(" "));
+}
 
   const haystack = new Map(cards.map(c => [c, getSearchText(c)]));
 /* =========================
