@@ -29,7 +29,7 @@
   <link rel="icon" href="/logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="/logo.png" />
 
-  <link rel="preload" as="image" href="/wsl-hero.PNG" />
+  <link rel="preload" as="image" href="/wsl-card.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -909,7 +909,7 @@
         left:50%;
         transform:translateX(-50%);
         opacity:0.09;
-        filter:blur(0.2px);
+        
       }
     }
 
@@ -937,6 +937,43 @@
         min-height:280px;
       }
     }
+    
+    /* Stabilize top hero height on window resize / reopen */
+.hero{
+  align-items:center;
+}
+
+.hero-visual{
+  height:100%;
+  min-height:420px;
+}
+
+.hero-frame{
+  height:clamp(420px, 46vw, 520px);
+  min-height:0;
+}
+
+.hero-frame img{
+  height:100%;
+}
+
+@media (max-width: 920px){
+  .hero-visual{
+    min-height:0;
+  }
+
+  .hero-frame{
+    height:clamp(320px, 58vw, 420px);
+    min-height:0;
+  }
+}
+
+@media (max-width: 640px){
+  .hero-frame{
+    height:320px;
+  }
+}
+    
   </style>
 </head>
 
