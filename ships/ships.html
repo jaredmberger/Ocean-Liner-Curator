@@ -2938,6 +2938,191 @@ align-items:center !important;
   }
 }
 
+
+/* =========================
+   White Star featured hub card
+   ========================= */
+
+.white-star-feature{
+  --wsl-accent:#d7c08a;
+
+  display:block;
+  max-width:760px;
+  margin:1.45rem auto 1.9rem;
+  padding:1.15rem 1.2rem 1.2rem;
+  text-align:left;
+  text-decoration:none;
+  position:relative;
+  overflow:hidden;
+
+  border:1px solid rgba(191,164,106,0.36);
+  border-radius:16px;
+
+  background:
+    radial-gradient(circle at 92% 12%, rgba(191,164,106,0.16), transparent 34%),
+    linear-gradient(135deg, rgba(255,255,255,0.045), rgba(255,255,255,0.012) 48%, rgba(0,0,0,0.10)),
+    rgba(10,17,16,0.22);
+
+  box-shadow:
+    0 14px 34px rgba(0,0,0,0.34),
+    inset 0 1px 0 rgba(255,255,255,0.045);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+
+  transition:
+    transform .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease,
+    background .18s ease;
+}
+
+.white-star-feature:hover{
+  transform:translateY(-2px);
+  border-color:rgba(191,164,106,0.56);
+  box-shadow:
+    0 18px 42px rgba(0,0,0,0.38),
+    0 0 0 1px rgba(191,164,106,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.white-star-feature::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:4px;
+  background:linear-gradient(90deg, transparent, rgba(191,164,106,0.85), transparent);
+  pointer-events:none;
+}
+
+.white-star-feature::after{
+  content:"★";
+  position:absolute;
+  right:1rem;
+  bottom:.2rem;
+  font-size:4.8rem;
+  line-height:1;
+  color:rgba(191,164,106,0.16);
+  pointer-events:none;
+}
+
+.white-star-feature__top{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:.75rem;
+  align-items:start;
+  padding-left:2.15rem;
+  margin-bottom:.55rem;
+}
+
+.white-star-feature__top::before{
+  content:"★";
+  position:absolute;
+  left:0;
+  top:.12rem;
+
+  width:1.38rem;
+  height:1.38rem;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:.8rem;
+  line-height:1;
+  color:rgba(191,164,106,0.96);
+
+  background:rgba(15,27,25,0.48);
+  border:1px solid rgba(191,164,106,0.38);
+  border-radius:7px;
+
+  box-shadow:
+    0 6px 16px rgba(0,0,0,0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+.white-star-feature__title{
+  display:block;
+  font-family:"Libre Baskerville", serif;
+  color:#f1ead7;
+  font-size:clamp(1.15rem, 2.2vw, 1.45rem);
+  line-height:1.22;
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:.22em;
+  text-decoration-color:rgba(191,164,106,0.42);
+}
+
+.white-star-feature:hover .white-star-feature__title{
+  text-decoration-color:rgba(191,164,106,0.78);
+}
+
+.white-star-feature__meta{
+  display:inline-flex;
+  align-items:center;
+  white-space:nowrap;
+  padding:.22rem .55rem;
+  border:1px solid rgba(191,164,106,0.26);
+  border-radius:999px;
+  color:rgba(215,192,138,0.9);
+  background:rgba(191,164,106,0.06);
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.white-star-feature__desc{
+  position:relative;
+  z-index:1;
+  margin:.6rem 0 0 2.15rem;
+  max-width:64ch;
+  color:rgba(230,223,207,0.84);
+  font-size:.98rem;
+  line-height:1.62;
+}
+
+.white-star-feature__cta{
+  position:relative;
+  z-index:1;
+  display:inline-flex;
+  margin:.85rem 0 0 2.15rem;
+  color:#ecd8a7;
+  font-weight:600;
+}
+
+.white-star-feature__cta::after{
+  content:"»";
+  margin-left:.45rem;
+}
+
+@media (max-width:560px){
+  .white-star-feature{
+    margin:1.25rem auto 1.65rem;
+    padding:1rem;
+  }
+
+  .white-star-feature__top{
+    grid-template-columns:1fr;
+    gap:.35rem;
+  }
+
+  .white-star-feature__meta{
+    width:max-content;
+  }
+
+  .white-star-feature__desc,
+  .white-star-feature__cta{
+    margin-left:0;
+  }
+
+  .white-star-feature::after{
+    font-size:3.8rem;
+    opacity:.8;
+  }
+}
+
+
 </style>
  
 </head>
@@ -3123,6 +3308,20 @@ decoding="async"
     </div>
   </div>
 </div>
+
+<a class="white-star-feature" href="/white-star-line/">
+  <div class="white-star-feature__top">
+    <span class="white-star-feature__title">White Star Line Exploration Hub</span>
+    <span class="white-star-feature__meta">Featured path</span>
+  </div>
+
+  <p class="white-star-feature__desc">
+    Explore the wider White Star world beyond Titanic: Olympic-class ships, company history,
+    Atlantic competition, surviving tenders, and the broader liner network that shaped public memory.
+  </p>
+
+  <span class="white-star-feature__cta">Open exploration hub</span>
+</a>
 
 <img class="archive-divider" src="/engraved-laurel.png" loading="lazy" decoding="async" alt="">
 
