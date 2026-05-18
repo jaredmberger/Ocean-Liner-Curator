@@ -6736,8 +6736,7 @@ function firstLetterOf(title){
         activeLetter === "all" ? true :
         activeLetter === "#"   ? (letter === "#") :
         (letter === activeLetter);
-
-      const searchTerms = q
+const searchTerms = q
   .replace(/\b(rms|ss|mv|hmhs|rmmv|tss|ms)\b/g, "")
   .split(/\s+/)
   .filter(Boolean);
@@ -6746,8 +6745,7 @@ const text = haystack.get(card) || "";
 
 const passesSearch =
   !searchTerms.length ||
-  searchTerms.every(term => text.includes(term));(haystack.get(card) || "").includes(term)
-  );
+  searchTerms.every(term => text.includes(term));
 
       const line = makeLineKey(labelForLine(getLine(card)));
       const passesLine =
