@@ -6738,12 +6738,15 @@ function firstLetterOf(title){
         (letter === activeLetter);
 
       const searchTerms = q
+  .replace(/\b(rms|ss|mv|hmhs|rmmv|tss|ms)\b/g, "")
   .split(/\s+/)
   .filter(Boolean);
 
+const text = haystack.get(card) || "";
+
 const passesSearch =
-  !q || searchTerms.some(term =>
-    (haystack.get(card) || "").includes(term)
+  !searchTerms.length ||
+  searchTerms.every(term => text.includes(term));(haystack.get(card) || "").includes(term)
   );
 
       const line = makeLineKey(labelForLine(getLine(card)));
