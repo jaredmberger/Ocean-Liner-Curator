@@ -1,0 +1,1484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      html {
+        background: #0a1110;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>White Star Line — Exploration Hub | Ocean Liner Curator</title>
+    <meta
+      name="description"
+      content="A curated White Star Line exploration hub: Titanic, Olympic, Britannic, early Atlantic liners, Big Four ships, tenders, company history, and evidence-first ocean liner context."
+    />
+    <link rel="canonical" href="https://www.oceanliners.net/white-star-line/" />
+
+    <meta name="theme-color" content="#0a1110" />
+    <meta name="robots" content="index,follow" />
+
+    <meta
+      property="og:title"
+      content="White Star Line — Exploration Hub | Ocean Liner Curator"
+    />
+    <meta
+      property="og:description"
+      content="Explore White Star Line through Titanic, Olympic, Britannic, early Atlantic liners, company history, and connected ship guides."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.oceanliners.net/white-star-line/" />
+    <meta property="og:image" content="https://www.oceanliners.net/wsl-hero.PNG" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="White Star Line — Exploration Hub | Ocean Liner Curator"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore White Star Line through Titanic, Olympic, Britannic, early Atlantic liners, company history, and connected ship guides."
+    />
+    <meta name="twitter:image" content="https://www.oceanliners.net/wsl-hero.PNG" />
+
+    <link rel="icon" href="/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <link rel="preload" as="image" href="/wsl-card.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://www.oceanliners.net/white-star-line/#webpage",
+        "name": "White Star Line — Exploration Hub | Ocean Liner Curator",
+        "url": "https://www.oceanliners.net/white-star-line/",
+        "description": "A curated White Star Line hub connecting Titanic, Olympic, Britannic, early Atlantic liners, company history, and evidence-first ocean liner context.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.oceanliners.net/#website",
+          "name": "Ocean Liner Curator",
+          "url": "https://www.oceanliners.net/"
+        },
+        "about": [
+          { "@type": "Thing", "name": "White Star Line" },
+          { "@type": "Thing", "name": "RMS Titanic" },
+          { "@type": "Thing", "name": "RMS Olympic" },
+          { "@type": "Thing", "name": "HMHS Britannic" },
+          { "@type": "Thing", "name": "Ocean liners" },
+          { "@type": "Thing", "name": "Maritime history" }
+        ],
+        "mentions": [
+          { "@type": "Thing", "name": "SS Nomadic" },
+          { "@type": "Thing", "name": "RMS Adriatic" },
+          { "@type": "Thing", "name": "MV Britannic" },
+          { "@type": "Thing", "name": "White Star Line artifacts" }
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="/assets/nav.css" />
+
+    <style>
+      :root {
+        --bg: #0a1110;
+        --panel: rgba(15, 27, 25, 0.78);
+        --text: #e6dfcf;
+        --muted: #b6ae9c;
+        --accent: #bfa46a;
+        --accent-2: #d7c08a;
+        --border: rgba(191, 164, 106, 0.26);
+        --border-strong: rgba(191, 164, 106, 0.38);
+        --shadow: rgba(0, 0, 0, 0.58);
+        --link: rgba(209, 187, 134, 0.96);
+        --maxw: 1120px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        color: var(--text);
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(191, 164, 106, 0.08),
+            transparent 0 28%
+          ),
+          radial-gradient(
+            circle at 20% 18%,
+            rgba(255, 255, 255, 0.03),
+            transparent 0 18%
+          ),
+          linear-gradient(180deg, #0c1413 0%, #0a1110 100%);
+        font-family: "Spectral", serif;
+        line-height: 1.7;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.16;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size:
+          22px 22px,
+          22px 22px;
+        mask-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7),
+          transparent 90%
+        );
+        -webkit-mask-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7),
+          transparent 90%
+        );
+      }
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ecd9ab;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      .page-shell {
+        position: relative;
+        z-index: 1;
+        width: min(var(--maxw), calc(100% - 1.4rem));
+        margin: 0 auto;
+        padding: 1rem 0 2.5rem;
+      }
+      .container {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 30px;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.01)
+          ),
+          var(--panel);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        box-shadow:
+          0 22px 60px var(--shadow),
+          inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+      .container::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background-image: url("/tile3.png");
+        background-size: 280px auto;
+        opacity: 0.06;
+        mix-blend-mode: screen;
+      }
+      .hero {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1.18fr 0.82fr;
+        gap: 1.4rem;
+        align-items: stretch;
+        padding: 1.4rem;
+        border-bottom: 1px solid rgba(191, 164, 106, 0.14);
+        min-height: 520px;
+      }
+      .hero-copy,
+      .hero-visual {
+        position: relative;
+        min-width: 0;
+      }
+      .hero-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem 1rem 1.5rem 1.4rem;
+        z-index: 2;
+      }
+      .hero-emblem-bg {
+        mix-blend-mode: soft-light;
+        position: absolute;
+        pointer-events: none;
+        z-index: 0;
+        width: clamp(260px, 30vw, 380px);
+        aspect-ratio: 1/1;
+        background: url("/engraved-osnc.png") center/contain no-repeat;
+        top: 55px;
+        left: 35px;
+        opacity: 0.21;
+       
+      }
+      .eyebrow {
+        --eyebrow-accent: #bfa46a;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        width: max-content;
+        max-width: 100%;
+        margin: 0 0 1rem;
+        padding: 0.45rem 0.85rem;
+        border: 1px solid
+          color-mix(in srgb, var(--eyebrow-accent) 42%, transparent);
+        border-radius: 999px;
+        background: color-mix(in srgb, var(--eyebrow-accent) 10%, transparent);
+        color: var(--eyebrow-accent);
+        font-size: 0.78rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        line-height: 1.15;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+      .eyebrow::before {
+        content: "✦";
+        font-size: 0.8rem;
+        opacity: 0.92;
+      }
+      h1 {
+        margin: 0;
+        font-family: "Libre Baskerville", serif;
+        font-size: clamp(2.25rem, 5.1vw, 3.5rem);
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        color: #f0e8d7;
+        text-wrap: balance;
+        text-shadow: 0 2px 18px rgba(0, 0, 0, 0.26);
+      }
+      .eyebrow,
+      h1,
+      .hero-rule,
+      .hero-sub,
+      .hero-actions,
+      .hero-note {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-sub {
+        max-width: 42rem;
+        margin: 1.2rem 0 0;
+        font-size: 1.08rem;
+        color: var(--muted);
+      }
+      .hero-rule {
+        width: 160px;
+        height: 2px;
+        margin: 1.3rem 0 1.15rem;
+        background: linear-gradient(90deg, var(--accent), transparent);
+        opacity: 0.88;
+      }
+      .hero-actions,
+      .closing-actions,
+      .ship-world-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+      }
+      .hero-actions {
+        margin: 1.5rem 0 0;
+      }
+      .closing-actions,
+      .ship-world-actions {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+      .hero-note {
+        max-width: 46rem;
+        margin: 1rem 0 0;
+        color: #cdbf9c;
+        font-size: 0.96rem;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        min-height: 48px;
+        padding: 0.82rem 1.15rem;
+        border-radius: 14px;
+        border: 1px solid rgba(0, 0, 0, 0.32);
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        transition:
+          transform 0.18s ease,
+          box-shadow 0.18s ease,
+          border-color 0.18s ease,
+          background 0.18s ease;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.26);
+        text-decoration: none;
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+        text-decoration: none;
+      }
+      .btn-primary {
+        color: #1b1710;
+        background: linear-gradient(180deg, #dbc791 0%, var(--accent) 100%);
+        border-color: rgba(0, 0, 0, 0.28);
+      }
+      .btn-primary:hover {
+        background: linear-gradient(180deg, #e2d09f 0%, #c7ad72 100%);
+        color: #17120b;
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+      }
+      .btn-secondary {
+        color: var(--text);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.02)
+        );
+        border: 1px solid var(--border-strong);
+      }
+      .btn-secondary:hover {
+        border-color: rgba(191, 164, 106, 0.5);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.03)
+        );
+        color: #f1ead9;
+      }
+      .hero-visual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        padding: 0.6rem;
+      }
+      .hero-frame {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 420px;
+        border-radius: 26px;
+        overflow: hidden;
+        border: 1px solid rgba(191, 164, 106, 0.3);
+        background: #0b1211;
+        box-shadow:
+          0 22px 50px rgba(0, 0, 0, 0.36),
+          inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+      .hero-frame::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(10, 17, 16, 0.1),
+            rgba(10, 17, 16, 0.58)
+          ),
+          radial-gradient(
+            circle at 20% 18%,
+            rgba(255, 255, 255, 0.14),
+            transparent 0 30%
+          );
+        z-index: 2;
+        pointer-events: none;
+      }
+      .hero-frame::after {
+        content: "";
+        position: absolute;
+        inset: 14px;
+        border: 1px solid rgba(191, 164, 106, 0.16);
+        border-radius: 18px;
+        pointer-events: none;
+        z-index: 3;
+      }
+      .hero-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.95) contrast(1.02);
+      }
+      .hero-plate {
+        position: absolute;
+        left: 1.1rem;
+        right: 1.1rem;
+        bottom: 1.1rem;
+        z-index: 4;
+        padding: 0.9rem 1rem;
+        border: 1px solid rgba(191, 164, 106, 0.22);
+        border-radius: 16px;
+        background: rgba(10, 17, 16, 0.56);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      }
+      .hero-plate-title {
+        margin: 0;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1rem;
+        color: #f1ead7;
+        text-align: left !important;
+      }
+      .hero-plate p {
+        margin: 0.35rem 0 0;
+        font-size: 0.92rem;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      .main {
+        padding: 0 1.4rem 1.5rem;
+      }
+      section {
+        position: relative;
+        padding: 2.15rem 0 0;
+      }
+      .section-head {
+        max-width: 48rem;
+        margin: 0 auto 1.2rem;
+        text-align: center;
+        padding: 0 1rem;
+      }
+      .section-kicker {
+        display: inline-block;
+        margin: 0;
+        color: var(--accent-2);
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: clamp(1.55rem, 3vw, 2.35rem);
+      }
+      h2 {
+        margin: 0 0 0.8rem !important;
+        font-family: "Libre Baskerville", serif;
+        font-size: clamp(1.45rem, 3vw, 2.25rem);
+        letter-spacing: -0.02em;
+        color: #f0e7d6;
+        text-wrap: balance;
+        text-align: center !important;
+        align-items: center !important;
+        margin-top: 0;
+      }
+      .section-head p {
+        margin: 0 auto;
+        max-width: 48rem;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.2rem;
+      }
+      .feature-grid.secondary-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .feature-card,
+      .highlight-card,
+      .ship-world-panel,
+      .ship-world-card,
+      .closing-card {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background:
+          linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.03) 0%,
+            rgba(255, 255, 255, 0.012) 32%,
+            transparent 70%
+          ),
+          rgba(15, 27, 25, 0.42);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.32);
+      }
+      .feature-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        border-radius: 20px;
+        transition:
+          transform 0.18s ease,
+          box-shadow 0.18s ease,
+          border-color 0.18s ease;
+      }
+      .feature-card::before,
+      .highlight-card::before,
+      .ship-world-panel::before,
+      .closing-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.05) 0%,
+          rgba(255, 255, 255, 0.015) 26%,
+          transparent 56%
+        );
+        opacity: 0.28;
+      }
+      .feature-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(191, 164, 106, 0.42);
+        box-shadow:
+          0 16px 32px rgba(0, 0, 0, 0.28),
+          inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+      .feature-thumb {
+        position: relative;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(191, 164, 106, 0.12);
+        background: #0d1615;
+      }
+      .feature-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.45s ease;
+        filter: saturate(0.95) contrast(1.03);
+      }
+      .feature-card:hover .feature-thumb img {
+        transform: scale(1.04);
+      }
+      .feature-thumb::after {
+        content: "";
+        position: absolute;
+        inset: 10px;
+        border: 1px solid rgba(191, 164, 106, 0.16);
+        border-radius: 14px;
+        pointer-events: none;
+      }
+      .feature-body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+        padding: 1rem 0.95rem 1rem;
+        flex: 1 1 auto;
+      }
+      .feature-label {
+        font-size: 0.72rem;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: var(--accent-2);
+      }
+      .feature-title {
+        margin: 0;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1.02rem;
+        color: #f1ead7;
+      }
+      .feature-body p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.94rem;
+        flex: 1 1 auto;
+      }
+      .feature-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        margin-top: 0.2rem;
+        font-weight: 600;
+        color: #ecd8a7;
+      }
+      .feature-link::after {
+        content: "»";
+      }
+      .highlights-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 1rem;
+        margin-top: 1.2rem;
+      }
+      .highlight-card {
+        padding: 1.2rem 1.15rem;
+        border-radius: 20px;
+      }
+      .highlight-card h3 {
+        margin: 0 0 0.55rem;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1.15rem;
+        color: #f1ead7;
+      }
+      .highlight-card p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .mini-list {
+        margin: 0.9rem 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.6rem;
+      }
+      .mini-list li {
+        position: relative;
+        padding-left: 1rem;
+        color: var(--muted);
+      }
+      .mini-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+      }
+      .mini-list a {
+        color: #ecd8a7;
+      }
+      .ship-world-panel {
+        margin-top: 1.2rem;
+        padding: 1.1rem;
+        border-radius: 24px;
+        border-color: rgba(191, 164, 106, 0.34);
+        background:
+          radial-gradient(
+            circle at 14% 16%,
+            rgba(191, 164, 106, 0.11),
+            transparent 0 28%
+          ),
+          linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.035),
+            rgba(255, 255, 255, 0.012)
+          ),
+          rgba(15, 27, 25, 0.48);
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+      }
+      .ship-world-intro {
+        position: relative;
+        z-index: 1;
+        max-width: 780px;
+        margin: 0 auto 1rem;
+        text-align: center;
+        color: var(--muted);
+      }
+      .ship-world-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.9rem;
+      }
+      .ship-world-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        padding: 1rem;
+        border-radius: 18px;
+        border-color: rgba(191, 164, 106, 0.24);
+        background:
+          linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.04),
+            rgba(255, 255, 255, 0.012)
+          ),
+          rgba(10, 17, 16, 0.34);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
+      }
+      .ship-world-card::after {
+        content: "★";
+        position: absolute;
+        right: 0.85rem;
+        bottom: 0.45rem;
+        color: rgba(191, 164, 106, 0.18);
+        font-size: 2.4rem;
+        line-height: 1;
+        pointer-events: none;
+      }
+      .ship-world-tag {
+        display: inline-flex;
+        width: max-content;
+        max-width: 100%;
+        margin: 0 0 0.55rem;
+        padding: 0.22rem 0.55rem;
+        border: 1px solid rgba(191, 164, 106, 0.24);
+        border-radius: 999px;
+        color: var(--accent-2);
+        font-size: 0.68rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        line-height: 1.2;
+        background: rgba(191, 164, 106, 0.06);
+      }
+      .ship-world-card h3 {
+        margin: 0;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1.05rem;
+        line-height: 1.25;
+        color: #f1ead7;
+      }
+      .ship-world-card p {
+        margin: 0.45rem 0 0.8rem;
+        color: var(--muted);
+        font-size: 0.94rem;
+        flex: 1 1 auto;
+      }
+      .ship-world-card a {
+        position: relative;
+        z-index: 2;
+        display: inline-flex;
+        width: max-content;
+        max-width: 100%;
+        font-weight: 600;
+        color: #ecd8a7;
+      }
+      .ship-world-card a::after {
+        content: "»";
+        margin-left: 0.45rem;
+      }
+      .closing-card {
+        max-width: 780px;
+        margin: 1.2rem auto 0;
+        padding: 1.35rem 1.25rem;
+        text-align: center;
+        border-radius: 20px;
+      }
+      .closing-card p {
+        margin: 0.25rem 0 0;
+        color: var(--muted);
+      }
+      footer {
+        position: relative;
+        margin: 2rem auto 0;
+        text-align: center;
+        padding: 0 1rem 1.15rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        z-index: 2;
+      }
+      .footer-star {
+        position: relative;
+        text-align: center;
+        color: var(--accent);
+        font-size: 0.9rem;
+        margin: 0 0 1rem;
+        line-height: 1;
+        opacity: 0.85;
+      }
+      .footer-star::before,
+      .footer-star::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 48px;
+        height: 1px;
+        background: var(--accent);
+        opacity: 0.85;
+      }
+      .footer-star::before {
+        right: calc(50% + 18px);
+      }
+      .footer-star::after {
+        left: calc(50% + 18px);
+      }
+      .copyright {
+        margin: 0;
+      }
+      .section-star {
+        margin-bottom: 0;
+        display: inline-block;
+        color: #f0cf58;
+        text-shadow:
+          0 0 6px rgba(240, 207, 88, 0.3),
+          0 0 12px rgba(240, 207, 88, 0.18);
+      }
+      .section-emblem {
+        display: block;
+        width: clamp(60px, 6.8vw, 84px);
+        height: auto;
+        margin: 0.1rem auto 0.1rem;
+        object-fit: contain;
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35))
+          drop-shadow(0 0 10px rgba(191, 164, 106, 0.16));
+      }
+      .bottom-hero {
+        padding: 1.2rem 1.4rem 0;
+      }
+      .bottom-hero-frame {
+        position: relative;
+        min-height: 360px;
+        border-radius: 26px;
+        overflow: hidden;
+        border: 1px solid rgba(191, 164, 106, 0.28);
+        background: #0b1211;
+        box-shadow:
+          0 22px 50px rgba(0, 0, 0, 0.34),
+          inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+      .bottom-hero-frame::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(10, 17, 16, 0.1) 0%,
+            rgba(10, 17, 16, 0.42) 48%,
+            rgba(10, 17, 16, 0.82) 100%
+          ),
+          radial-gradient(
+            circle at 18% 20%,
+            rgba(255, 255, 255, 0.12),
+            transparent 0 28%
+          );
+      }
+      .bottom-hero-frame::after {
+        content: "";
+        position: absolute;
+        inset: 14px;
+        border: 1px solid rgba(191, 164, 106, 0.16);
+        border-radius: 18px;
+        pointer-events: none;
+        z-index: 3;
+      }
+      .bottom-hero-frame img {
+        width: 100%;
+        height: 100%;
+        min-height: 360px;
+        object-fit: cover;
+        filter: saturate(0.95) contrast(1.03);
+      }
+      @media (max-width: 1100px) {
+        .feature-grid,
+        .feature-grid.secondary-grid,
+        .ship-world-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 920px) {
+        .hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+        .hero-copy {
+          padding: 0 0.35rem 0.2rem;
+          align-items: center;
+          text-align: center;
+        }
+        .eyebrow {
+          margin: 0 auto 1rem;
+        }
+        h1 {
+          max-width: 12ch;
+          margin-inline: auto;
+        }
+        .hero-rule {
+          margin: 1.3rem auto 1.15rem;
+          background: linear-gradient(
+            90deg,
+            transparent 0%,
+            var(--accent) 50%,
+            transparent 100%
+          );
+        }
+        .hero-sub {
+          max-width: 23rem;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .hero-actions {
+          justify-content: center;
+        }
+        .hero-note {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .hero-visual {
+          padding: 0 0.1rem 0.4rem;
+        }
+        .hero-frame {
+          min-height: 340px;
+        }
+        .highlights-grid {
+          grid-template-columns: 1fr;
+        }
+        .feature-grid,
+        .feature-grid.secondary-grid,
+        .ship-world-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .hero-emblem-bg {
+          width: min(72vw, 320px);
+          top: 92px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0.09;
+          
+        }
+      }
+      @media (max-width: 640px) {
+        .page-shell {
+          width: min(var(--maxw), calc(100% - 0.9rem));
+          padding: 0.7rem 0 2rem;
+        }
+        .container {
+          border-radius: 24px;
+        }
+        .hero {
+          padding: 1rem;
+        }
+        .main {
+          padding: 0 1rem 1.25rem;
+        }
+        .feature-grid,
+        .feature-grid.secondary-grid,
+        .ship-world-grid {
+          grid-template-columns: 1fr;
+        }
+        .ship-world-panel {
+          padding: 0.85rem;
+        }
+        .bottom-hero {
+          padding: 1rem 1rem 0;
+        }
+        .bottom-hero-frame,
+        .bottom-hero-frame img {
+          min-height: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <div class="page-shell">
+      <main class="container">
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <div class="hero-emblem-bg" aria-hidden="true"></div>
+            <div class="eyebrow">White Star Line hub</div>
+            <h1 id="page-title">White Star Line</h1>
+            <div class="hero-rule" aria-hidden="true"></div>
+            <p class="hero-sub">
+              A curated starting point for White Star Line on Ocean Liner Curator:
+              move from Titanic into the company’s wider Atlantic story, including
+              early iron steamers, Olympic-class liners, tenders, Big Four capacity
+              ships, interwar motor liners, and surviving material culture.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="/white-star-line-history.html">White Star Line History</a>
+              <a class="btn btn-secondary" href="/titanic">Titanic Hub</a>
+              <a class="btn btn-secondary" href="/ships/ships">Browse the Ship Archive</a>
+              <a class="btn btn-secondary" href="/collections/">Research Collections</a>
+            </div>
+            <p class="hero-note">
+              Built to keep company history, ship design, service context, and public
+              memory connected—so White Star Line is not reduced to Titanic alone.
+            </p>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-frame">
+              <img
+                src="/wsl-card.jpg"
+                alt="White Star Line themed hero image for the White Star Line exploration hub."
+              />
+              <div class="hero-plate">
+                <h2 class="hero-plate-title">A wider way into White Star Line</h2>
+                <p>
+                  Start with the company, move through the fleet, and then connect
+                  Titanic, Olympic, Britannic, tenders, artifacts, and public memory.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="main">
+          <section aria-labelledby="choose-path">
+            <div class="section-head">
+              <div class="section-kicker">
+                Begin here<br /><span class="section-star">★</span>
+              </div>
+              <h2 id="choose-path">Four strong entry points</h2>
+              <p>
+                These are the clearest ways into White Star Line on the site: the
+                company history, Titanic’s topic hub, the Olympic-class ships, and
+                the wider ship archive.
+              </p>
+            </div>
+            <div class="feature-grid">
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/wsl-hero.PNG" alt="White Star Line feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Company History</div>
+                  <h3 class="feature-title">White Star Line History</h3>
+                  <p>
+                    Follow the company beyond a single famous ship: fleet development,
+                    public image, corporate context, and the broader Atlantic passenger world.
+                  </p>
+                  <a class="feature-link" href="/white-star-line-history.html">Read history</a>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/titanic-funnel-hero.jpg" alt="Titanic-related feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Ship Hub</div>
+                  <h3 class="feature-title">RMS Titanic</h3>
+                  <p>
+                    Use Titanic as one doorway into White Star Line: chronology,
+                    artifacts, public rooms, short answers, and connected ships from the same world.
+                  </p>
+                  <a class="feature-link" href="/titanic">Open Titanic hub</a>
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img
+                    src="/collections/olympic-to-titanic-design-revisions.PNG"
+                    alt="Olympic and Titanic design revisions feature image."
+                  />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Research Collection</div>
+                  <h3 class="feature-title">From Olympic to Titanic</h3>
+                  <p>
+                    A pathway through the adjustments made between Olympic and Titanic:
+                    service experience, selective revision, and commercial presentation.
+                  </p>
+                  <a
+                    class="feature-link"
+                    href="/collections/from-olympic-to-titanic-design-revisions-between-sisters.html"
+                    >Browse collection</a
+                  >
+                </div>
+              </article>
+
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/ships/ship-archive-hero.jpg" alt="Ship archive feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Archive</div>
+                  <h3 class="feature-title">White Star in the Ship Archive</h3>
+                  <p>
+                    Move through individual ship guides from early Atlantic steamers to
+                    Olympic-class liners, tenders, and final company-era motor ships.
+                  </p>
+                  <a class="feature-link" href="/ships/ships">Browse archive</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section aria-labelledby="white-star-ships">
+            <div class="section-head">
+              <div class="section-kicker">
+                Explore the fleet<br /><span class="section-star">★</span>
+              </div>
+              <h2 id="white-star-ships">Explore White Star ships by relationship</h2>
+              <p>
+                White Star Line makes more sense when its ships are seen in groups:
+                early Atlantic development, capacity-first strategy, Olympic-class
+                prestige, tenders, and interwar continuity.
+              </p>
+            </div>
+            <div class="ship-world-panel">
+              <p class="ship-world-intro">
+                Use these ships as a curated route through the company’s wider fleet,
+                from foundational Atlantic liners to the ships most closely tied to
+                Titanic’s public memory.
+              </p>
+              <div class="ship-world-grid">
+                <article class="ship-world-card">
+                  <span class="ship-world-tag">Olympic-class</span>
+                  <h3>RMS Olympic</h3>
+                  <p>
+                    The lead Olympic-class ship and the longest-serving member of the trio,
+                    central to understanding Titanic as a refined sister rather than an isolated design.
+                  </p>
+                  <a href="/why-rms-olympic-matters.html">Why Olympic matters</a>
+                  <a
+                    href="/ships/rms-olympic.html"
+                    style="margin-top: 0.35rem; font-size: 0.9rem; color: var(--muted);"
+                    >Open ship guide</a
+                  >
+                </article>
+                <article class="ship-world-card">
+                  <span class="ship-world-tag">Olympic-class</span>
+                  <h3>RMS Titanic</h3>
+                  <p>
+                    The most famous White Star liner, best approached through chronology,
+                    company context, material evidence, and its relationship to other ships.
+                  </p>
+                  <a href="/ships/rms-titanic.html">Open ship guide</a>
+                </article>
+                <article class="ship-world-card">
+                  <span class="ship-world-tag">Olympic-class</span>
+                  <h3>HMHS Britannic</h3>
+                  <p>
+                    The third Olympic-class ship, completed in a changed safety and wartime
+                    context after Titanic.
+                  </p>
+                  <a href="/ships/rms-britannic.html">Open ship guide</a>
+                </article>
+                <article class="ship-world-card">
+                  <span class="ship-world-tag">Tender</span>
+                  <h3>SS Nomadic</h3>
+                  <p>
+                    The surviving Cherbourg tender that connects White Star Line to passenger
+                    transfer, port logistics, and Titanic’s operational world.
+                  </p>
+                  <a href="/ships/ss-nomadic.html">Open ship guide</a>
+                </article>
+                <article class="ship-world-card">
+                  <span class="ship-world-tag">Big Four</span>
+                  <h3>RMS Adriatic</h3>
+                  <p>
+                    One of White Star’s Big Four capacity-first liners, useful for understanding
+                    the company’s emphasis on scale, comfort, and steady Atlantic service.
+                  </p>
+                  <a href="/ships/rms-adriatic.html">Open ship guide</a>
+                </article>
+                <article class="ship-world-card">
+                  <span class="ship-world-tag">Interwar</span>
+                  <h3>MV Britannic</h3>
+                  <p>
+                    A late White Star motor liner that points toward the company’s final major
+                    new ships before Cunard-White Star consolidation.
+                  </p>
+                  <a href="/ships/mv-britannic.html">Open ship guide</a>
+                </article>
+              </div>
+              <div class="ship-world-actions">
+                <a class="btn btn-primary" href="/ships/ships">Browse the Ship Archive</a>
+                <a class="btn btn-secondary" href="/titanic">Titanic Hub</a>
+                <a class="btn btn-secondary" href="/collections/">Research Collections</a>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="why-this-page">
+            <div class="section-head">
+              <div class="section-kicker">
+                Why this hub?<img
+                  class="section-emblem"
+                  src="/engraved-wsl-flag.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <h2 id="why-this-page">White Star beyond Titanic</h2>
+              <p>
+                Titanic dominates public memory, but White Star Line was a larger company
+                story: ship classes, route strategy, fleet identity, passenger experience,
+                and later corporate change.
+              </p>
+            </div>
+            <div class="highlights-grid">
+              <div class="highlight-card">
+                <h3>Company context first</h3>
+                <p>
+                  White Star Line should not be treated as interchangeable with Titanic.
+                  Company history gives the disaster, the ship, and surviving material a
+                  stronger interpretive frame.
+                </p>
+                <ul class="mini-list">
+                  <li><a href="/white-star-line-history.html">White Star Line history »</a></li>
+                  <li><a href="/is-white-star-line-the-same-as-titanic">Is White Star Line the same as Titanic? »</a></li>
+                </ul>
+              </div>
+              <div class="highlight-card">
+                <h3>Ships as relationships</h3>
+                <p>
+                  White Star’s fleet is best read through relationships: sister ships,
+                  running mates, tenders, classes, service routes, and later renamed or
+                  reassigned identities.
+                </p>
+                <ul class="mini-list">
+                  <li><a href="/collections/from-olympic-to-titanic-design-revisions-between-sisters.html">From Olympic to Titanic »</a></li>
+                  <li><a href="/ships/ships">Ship Archive »</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="titanic-bridge">
+            <div class="section-head">
+              <div class="section-kicker">
+                Titanic bridge<br /><span class="section-star">★</span>
+              </div>
+              <h2 id="titanic-bridge">If Titanic brought you here</h2>
+              <p>
+                Titanic is a powerful entry point, but the White Star story opens outward
+                into Olympic, Britannic, tenders, interiors, artifacts, and broader Atlantic history.
+              </p>
+            </div>
+            <div class="highlights-grid">
+              <div class="highlight-card">
+                <h3>Stay close to Titanic</h3>
+                <ul class="mini-list">
+                  <li><a href="/titanic">RMS Titanic topic hub »</a></li>
+                  <li><a href="/ships/titanic-southampton-to-rescue-timeline.html">Titanic departure-to-rescue timeline »</a></li>
+                  <li><a href="/collections/titanic-artifacts-what-survives-and-what-doesnt.html">Titanic artifacts collection »</a></li>
+                  <li><a href="/titanic-public-rooms.html">Titanic’s famous public rooms »</a></li>
+                </ul>
+              </div>
+              <div class="highlight-card">
+                <h3>Then widen the lens</h3>
+                <ul class="mini-list">
+                  <li><a href="/why-rms-olympic-matters.html">Why RMS Olympic matters »</a></li>
+                  <li><a href="/ships/rms-olympic.html">RMS Olympic ship guide »</a></li>
+                  <li><a href="/ships/rms-britannic.html">HMHS Britannic ship guide »</a></li>
+                  <li><a href="/ships/ss-nomadic.html">SS Nomadic ship guide »</a></li>
+                  <li><a href="/what-titanic-teaches-about-evidence.html">What Titanic teaches about evidence »</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="white-star-paths">
+            <div class="section-head">
+              <div class="section-kicker">
+                Keep exploring<br /><span class="section-star">★</span>
+              </div>
+              <h2 id="white-star-paths">More White Star paths</h2>
+              <p>
+                These pages help connect White Star Line to design revision, artifact
+                interpretation, public memory, company history, and the wider ocean liner archive.
+              </p>
+            </div>
+            <div class="feature-grid secondary-grid">
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/ships/rms-britannic.JPG" alt="Britannic evidence feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Olympic-class context</div>
+                  <h3 class="feature-title">Why HMHS Britannic Matters</h3>
+                  <p>
+                    Britannic’s importance extends beyond disaster memory into wartime conversion,
+                    hospital ship service, and the wider Olympic-class story.
+                  </p>
+                  <a class="feature-link" href="/why-hmhs-britannic-matters.html">Read essay</a>
+                </div>
+              </article>
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/titanic-evidence-hero.jpg" alt="Titanic evidence feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Essay</div>
+                  <h3 class="feature-title">What Titanic Teaches About Evidence</h3>
+                  <p>
+                    Why even a heavily documented maritime disaster requires caution,
+                    source discipline, and interpretive restraint.
+                  </p>
+                  <a class="feature-link" href="/what-titanic-teaches-about-evidence.html">Read essay</a>
+                </div>
+              </article>
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/collections/titanic-artifacts-hero.PNG" alt="Titanic artifacts feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Research Collection</div>
+                  <h3 class="feature-title">Titanic Artifacts</h3>
+                  <p>
+                    A careful look at surviving material, attribution limits, provenance problems,
+                    and what documentation can actually support.
+                  </p>
+                  <a class="feature-link" href="/collections/titanic-artifacts-what-survives-and-what-doesnt.html">Browse collection</a>
+                </div>
+              </article>
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/titanic-myths-hero.JPG" alt="Titanic myths feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Research Collection</div>
+                  <h3 class="feature-title">Titanic Myths That Persist</h3>
+                  <p>
+                    A guide to durable Titanic claims, what the record supports, and why certain
+                    stories remain attached to the ship.
+                  </p>
+                  <a class="feature-link" href="/titanic-myths-that-persist.html">Browse collection</a>
+                </div>
+              </article>
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/titanic-world-knew-hero.WEBP" alt="Titanic in April 1912 feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Research Collection</div>
+                  <h3 class="feature-title">What the World Knew</h3>
+                  <p>
+                    How Titanic was understood in real time: false reassurance, partial lists,
+                    delayed confirmation, and public grief.
+                  </p>
+                  <a class="feature-link" href="/titanic-what-the-world-knew.html">Browse collection</a>
+                </div>
+              </article>
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/assets/postcards/titanic-ocean-bow-alt.JPG" alt="Titanic postcard feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Guide</div>
+                  <h3 class="feature-title">Authentic Titanic Postcards</h3>
+                  <p>
+                    Titanic postcard material ranges from memorial pieces and promotional images
+                    to scarcer archive and collecting references.
+                  </p>
+                  <a class="feature-link" href="/authentic-titanic-postcards.html">Browse postcards</a>
+                </div>
+              </article>
+              <article class="feature-card">
+                <div class="feature-thumb">
+                  <img src="/ships/ship-archive-hero.jpg" alt="Ship archive feature image." />
+                </div>
+                <div class="feature-body">
+                  <div class="feature-label">Archive</div>
+                  <h3 class="feature-title">Browse More White Star Ships</h3>
+                  <p>
+                    Use the Ship Archive’s shipping-line filter to move through White Star ships
+                    by name, year, and fleet context.
+                  </p>
+                  <a class="feature-link" href="/ships/ships">Open archive</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section aria-labelledby="short-answers">
+            <div class="section-head">
+              <div class="section-kicker">
+                Short answers<br /><span class="section-star">★</span>
+              </div>
+              <h2 id="short-answers">Clarify common White Star questions</h2>
+              <p>
+                These shorter pages help separate company history, Titanic memory, artifact
+                claims, and broader ocean liner context.
+              </p>
+            </div>
+            <div class="highlights-grid">
+              <div class="highlight-card">
+                <h3>Titanic and White Star</h3>
+                <ul class="mini-list">
+                  <li><a href="/is-white-star-line-the-same-as-titanic">Is White Star Line the same as Titanic? »</a></li>
+                  <li><a href="/why-didnt-titanic-slow-down">Why didn’t Titanic slow down? »</a></li>
+                  <li><a href="/could-titanic-have-survived-the-collision">Could Titanic have survived the collision? »</a></li>
+                  <li><a href="/how-long-did-it-take-titanic-to-sink.html">How long did Titanic take to sink? »</a></li>
+                </ul>
+              </div>
+              <div class="highlight-card">
+                <h3>Objects and memory</h3>
+                <ul class="mini-list">
+                  <li><a href="/is-this-really-from-titanic">Is this really from Titanic? »</a></li>
+                  <li><a href="/what-happened-to-titanics-grand-staircase.html">What happened to Titanic’s Grand Staircase? »</a></li>
+                  <li><a href="/why-do-people-still-care-about-titanic.html">Why do people still care about Titanic? »</a></li>
+                  <li><a href="/what-was-third-class-like-on-titanic.html">What was third class like on Titanic? »</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="related-reading">
+            <div class="section-head">
+              <div class="section-kicker">
+                Related context<br /><span class="section-star">★</span>
+              </div>
+              <h2 id="related-reading">Keep the wider liner world in view</h2>
+              <p>
+                White Star Line belongs to a larger network of companies, routes, rival fleets,
+                and long-distance passenger travel.
+              </p>
+            </div>
+            <div class="highlights-grid">
+              <div class="highlight-card">
+                <h3>Related ships</h3>
+                <ul class="mini-list">
+                  <li><a href="/ships/rms-oceanic.html">RMS Oceanic ship guide »</a></li>
+                  <li><a href="/ships/rms-celtic.html">RMS Celtic ship guide »</a></li>
+                  <li><a href="/ships/rms-adriatic.html">RMS Adriatic ship guide »</a></li>
+                  <li><a href="/ships/mv-georgic.html">MV Georgic ship guide »</a></li>
+                </ul>
+              </div>
+              <div class="highlight-card">
+                <h3>Related history</h3>
+                <ul class="mini-list">
+                  <li><a href="/history-of-major-shipping-lines.html">Major shipping line histories »</a></li>
+                  <li><a href="/ocean-liner-cruise-ship">Ocean liner vs. cruise ship »</a></li>
+                  <li><a href="/how-long-did-it-take-to-cross-the-atlantic-by-ocean-liner.html">How long did Atlantic crossings take? »</a></li>
+                  <li><a href="/collections/">Research Collections »</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="final-step">
+            <div class="section-head">
+              <div class="section-kicker">
+                Continue exploring<br /><span class="section-star">★</span>
+              </div>
+              <h2 id="final-step">Use White Star as a doorway into the archive</h2>
+              <p>
+                Begin with Titanic if that is what brought you here, then move outward into
+                sister ships, company history, ship classes, and the larger North Atlantic liner world.
+              </p>
+            </div>
+            <div class="closing-card">
+              <h3
+                style="
+                  margin: 0;
+                  font-family: &quot;Libre Baskerville&quot;, serif;
+                  font-size: 1.22rem;
+                  color: #f1ead7;
+                "
+              >
+                A White Star Line hub without flattening the company into one ship
+              </h3>
+              <p>
+                This page is meant to keep Titanic connected to the company, the fleet,
+                the objects, and the evidence—without losing the wider ocean liner story.
+              </p>
+              <div class="closing-actions">
+                <a class="btn btn-primary" href="/ships/ships">Browse the Ship Archive</a>
+                <a class="btn btn-secondary" href="/white-star-line-history.html">Read Company History</a>
+                <a class="btn btn-secondary" href="/titanic">Open Titanic Hub</a>
+                <a class="btn btn-secondary" href="/collections/">Research Collections</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="bottom-hero" aria-label="Closing image for White Star Line">
+          <div class="bottom-hero-frame">
+            <img src="/traffic-hero.PNG" alt="White Star Line themed closing image." />
+          </div>
+        </section>
+        <footer>
+          <div class="footer-star" aria-hidden="true">★</div>
+          <p class="copyright">© Ocean Liner Curator</p>
+        </footer>
+      </main>
+    </div>
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <script src="/assets/header.js" defer></script>
+    <script src="/assets/nav.js" defer></script>
+    <script src="/assets/entry-links.js" defer></script>
+  </body>
+</html>
