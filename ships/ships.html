@@ -2943,16 +2943,18 @@ align-items:center !important;
 
 /* =========================
    White Star featured hub card
-   ========================= */
+========================= */
 
-.white-star-feature{
+.hub-card-featured{
+  grid-column:span 2;
   --wsl-accent:#d7c08a;
 
   display:block;
-  max-width:760px;
-  margin:1.45rem auto 1.9rem;
+  max-width:none;
+  width:100%;
+  margin:0;
   padding:1.15rem 1.2rem 1.2rem;
-  text-align:left;
+  text-align:left !important;
   text-decoration:none;
   position:relative;
   overflow:hidden;
@@ -2968,6 +2970,7 @@ align-items:center !important;
   box-shadow:
     0 14px 34px rgba(0,0,0,0.34),
     inset 0 1px 0 rgba(255,255,255,0.045);
+
   backdrop-filter:blur(2px);
   -webkit-backdrop-filter:blur(2px);
 
@@ -2978,7 +2981,7 @@ align-items:center !important;
     background .18s ease;
 }
 
-.white-star-feature:hover{
+.hub-card-featured:hover{
   transform:translateY(-2px);
   border-color:rgba(191,164,106,0.56);
   box-shadow:
@@ -2987,7 +2990,7 @@ align-items:center !important;
     inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
-.white-star-feature::before{
+.hub-card-featured::before{
   content:"";
   position:absolute;
   inset:0 0 auto;
@@ -2996,7 +2999,7 @@ align-items:center !important;
   pointer-events:none;
 }
 
-.white-star-feature::after{
+.hub-card-featured::after{
   content:"★";
   position:absolute;
   right:1rem;
@@ -3007,7 +3010,7 @@ align-items:center !important;
   pointer-events:none;
 }
 
-.white-star-feature__top{
+.hub-card-featured__top{
   position:relative;
   z-index:1;
   display:grid;
@@ -3018,7 +3021,7 @@ align-items:center !important;
   margin-bottom:.55rem;
 }
 
-.white-star-feature__top::before{
+.hub-card-featured__top::before{
   content:"★";
   position:absolute;
   left:0;
@@ -3044,7 +3047,7 @@ align-items:center !important;
     inset 0 0 0 1px rgba(255,255,255,0.04);
 }
 
-.white-star-feature__title{
+.hub-card-featured__title{
   display:block;
   font-family:"Libre Baskerville", serif;
   color:#f1ead7;
@@ -3056,11 +3059,11 @@ align-items:center !important;
   text-decoration-color:rgba(191,164,106,0.42);
 }
 
-.white-star-feature:hover .white-star-feature__title{
+.hub-card-featured:hover .hub-card-featured__title{
   text-decoration-color:rgba(191,164,106,0.78);
 }
 
-.white-star-feature__meta{
+.hub-card-featured__meta{
   display:inline-flex;
   align-items:center;
   white-space:nowrap;
@@ -3074,7 +3077,7 @@ align-items:center !important;
   text-transform:uppercase;
 }
 
-.white-star-feature__desc{
+.hub-card-featured__desc{
   position:relative;
   z-index:1;
   margin:.6rem 0 0 2.15rem;
@@ -3084,7 +3087,7 @@ align-items:center !important;
   line-height:1.62;
 }
 
-.white-star-feature__cta{
+.hub-card-featured__cta{
   position:relative;
   z-index:1;
   display:inline-flex;
@@ -3093,36 +3096,42 @@ align-items:center !important;
   font-weight:600;
 }
 
-.white-star-feature__cta::after{
+.hub-card-featured__cta::after{
   content:"»";
   margin-left:.45rem;
 }
 
+@media (max-width:900px){
+  .hub-card-featured{
+    grid-column:span 1;
+  }
+}
+
 @media (max-width:560px){
-  .white-star-feature{
-    margin:1.25rem auto 1.65rem;
+  .hub-card-featured{
     padding:1rem;
   }
 
-  .white-star-feature__top{
+  .hub-card-featured__top{
     grid-template-columns:1fr;
     gap:.35rem;
   }
 
-  .white-star-feature__meta{
+  .hub-card-featured__meta{
     width:max-content;
   }
 
-  .white-star-feature__desc,
-  .white-star-feature__cta{
+  .hub-card-featured__desc,
+  .hub-card-featured__cta{
     margin-left:0;
   }
 
-  .white-star-feature::after{
+  .hub-card-featured::after{
     font-size:3.8rem;
     opacity:.8;
   }
 }
+
 
 
 </style>
@@ -3311,18 +3320,18 @@ decoding="async"
   </div>
 </div>
 
-<a class="white-star-feature" href="/white-star-line/">
-  <div class="white-star-feature__top">
-    <span class="white-star-feature__title">White Star Line Exploration Hub</span>
-    <span class="white-star-feature__meta">Featured path</span>
+<a class="hub-card hub-card-featured" href="/white-star-line/">
+  <div class="hub-card-featured__top">
+    <span class="hub-card-featured__title">White Star Line Exploration Hub</span>
+    <span class="hub-card-featured__meta">Featured path</span>
   </div>
 
-  <p class="white-star-feature__desc">
+  <p class="hub-card-featured__desc">
     Explore the wider White Star world beyond Titanic: Olympic-class ships, company history,
     Atlantic competition, surviving tenders, and the broader liner network that shaped public memory.
   </p>
 
-  <span class="white-star-feature__cta">Open exploration hub</span>
+  <span class="hub-card-featured__cta">Open exploration hub</span>
 </a>
 
 <img class="archive-divider" src="/engraved-laurel.png" loading="lazy" decoding="async" alt="">
@@ -3331,6 +3340,7 @@ decoding="async"
 <p>
   Not sure where to start? These curated paths group ships by era, rivalry, company identity, and historical role.
 </p>
+
 
 <div class="featured-grid">
   <a class="featured-card" href="#guide" data-line-jump="White Star Line">
@@ -3363,7 +3373,7 @@ decoding="async"
     </p>
   </a>
 
-  <a class="featured-card" href="#guide" data-search-jump="Normandie, Queen Mary, United States, France">
+  <a class="featured-card" href="#guide" data-search-jump="Normandie Queen Mary United States France">
     <div class="featured-card-top">
       <span class="featured-card-title">Prestige Atlantic Liners</span>
       <span class="featured-card-meta">Era Path</span>
@@ -6562,11 +6572,8 @@ Evidence-first maritime documentation (1840–2004)
   }
 
   function getSearchText(card){
-  return norm([
-    getTitle(card),
-    getMeta(card)
-  ].join(" "));
-}
+    return norm([getTitle(card), getMeta(card), getDesc(card)].join(" "));
+  }
 
   const haystack = new Map(cards.map(c => [c, getSearchText(c)]));
 /* =========================
@@ -6736,22 +6743,15 @@ function firstLetterOf(title){
         activeLetter === "all" ? true :
         activeLetter === "#"   ? (letter === "#") :
         (letter === activeLetter);
-const rawQuery = input ? input.value : "";
 
-const groups = rawQuery
-  .split(",")
-  .map(group =>
-    norm(group)
-      .replace(/\b(rms|ss|mv|hmhs|rmmv|tss|ms)\b/g, "")
-      .trim()
-  )
+      const searchTerms = q
+  .split(/\s+/)
   .filter(Boolean);
 
-const text = haystack.get(card) || "";
-
 const passesSearch =
-  !groups.length ||
-  groups.some(group => text.includes(group));
+  !q || searchTerms.some(term =>
+    (haystack.get(card) || "").includes(term)
+  );
 
       const line = makeLineKey(labelForLine(getLine(card)));
       const passesLine =
