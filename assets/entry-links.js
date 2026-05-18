@@ -94,6 +94,13 @@
           href: "/titanic-vs-olympic"
         },
         {
+  meta: "White Star · Sister Ships",
+  title: "Why RMS Olympic Matters",
+  desc:
+    "Olympic was more than Titanic’s sister ship: she was the lead Olympic-class liner, the long-serving comparison point, and one of White Star’s most important working ships.",
+  href: "/why-rms-olympic-matters.html"
+},
+        {
           meta: "Artifacts & evidence",
           title: "What happened to Titanic artifacts?",
           desc:
