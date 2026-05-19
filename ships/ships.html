@@ -3123,15 +3123,18 @@ align-items:center !important;
   }
 }
 
-.archive-feature-block--wide{
-  grid-column:1 / -1;
+.company-feature{
+  display:flex;
+  flex-direction:column;
+  height:100%;
 }
 
-.archive-feature-block--wide .white-star-feature{
-  width:100%;
-  max-width:none;
-  margin:0;
-  box-sizing:border-box;
+.company-feature .white-star-feature{
+  flex:1;
+}
+
+.cunard-feature{
+  --wsl-accent:#d7c08a;
 }
 
 </style>
@@ -3266,6 +3269,38 @@ decoding="async"
         </a>
       </div>
 
+<div class="archive-feature-block company-feature">
+  <a class="white-star-feature" href="/white-star-line/">
+    <div class="white-star-feature__top">
+      <span class="white-star-feature__title">White Star Line Exploration Hub</span>
+      <span class="white-star-feature__meta">Line Hub</span>
+    </div>
+
+    <p class="white-star-feature__desc">
+      Explore the wider White Star world beyond Titanic: Olympic-class ships, company history,
+      Atlantic competition, surviving tenders, and the broader liner network that shaped public memory.
+    </p>
+
+    <span class="white-star-feature__cta">Open exploration hub</span>
+  </a>
+</div>
+
+<div class="archive-feature-block company-feature">
+  <a class="white-star-feature cunard-feature" href="/cunard-line/">
+    <div class="white-star-feature__top">
+      <span class="white-star-feature__title">Cunard Line Exploration Hub</span>
+      <span class="white-star-feature__meta">Line Hub</span>
+    </div>
+
+    <p class="white-star-feature__desc">
+      Explore Cunard’s long Atlantic story: early steamship service, express liners,
+      wartime service, rescue narratives, company identity, and the great Cunard Queens.
+    </p>
+
+    <span class="white-star-feature__cta">Open exploration hub</span>
+  </a>
+</div>
+
       <div class="archive-feature-block">
         <a class="hub-card ship-hub-card hub-card-titanic" href="/titanic" data-ship-mark="T">
           <div class="hub-card-top">
@@ -3314,21 +3349,7 @@ decoding="async"
         </a>
       </div>
 
-<div class="archive-feature-block archive-feature-block--wide">
-  <a class="white-star-feature" href="/white-star-line/">
-    <div class="white-star-feature__top">
-      <span class="white-star-feature__title">White Star Line Exploration Hub</span>
-      <span class="white-star-feature__meta">Featured path</span>
-    </div>
 
-    <p class="white-star-feature__desc">
-      Explore the wider White Star world beyond Titanic: Olympic-class ships, company history,
-      Atlantic competition, surviving tenders, and the broader liner network that shaped public memory.
-    </p>
-
-    <span class="white-star-feature__cta">Open exploration hub</span>
-  </a>
-</div>
 
     </div>
   </div>
