@@ -2949,7 +2949,7 @@ align-items:center !important;
   --wsl-accent:#d7c08a;
 
   display:block;
-  margin:1.45rem auto 1.9rem;
+  margin:0;
   padding:1.15rem 1.2rem 1.2rem;
   text-align:left;
   text-decoration:none;
@@ -3123,12 +3123,14 @@ align-items:center !important;
   }
 }
 
-.hub-card.hub-card-featured{
+.archive-feature-block--wide{
   grid-column:1 / -1;
+}
+
+.archive-feature-block--wide .white-star-feature{
   width:100%;
   max-width:none;
   margin:0;
-  justify-self:stretch;
   box-sizing:border-box;
 }
 
@@ -3312,25 +3314,25 @@ decoding="async"
         </a>
       </div>
 
+<div class="archive-feature-block archive-feature-block--wide">
+  <a class="white-star-feature" href="/white-star-line/">
+    <div class="white-star-feature__top">
+      <span class="white-star-feature__title">White Star Line Exploration Hub</span>
+      <span class="white-star-feature__meta">Featured path</span>
+    </div>
 
+    <p class="white-star-feature__desc">
+      Explore the wider White Star world beyond Titanic: Olympic-class ships, company history,
+      Atlantic competition, surviving tenders, and the broader liner network that shaped public memory.
+    </p>
+
+    <span class="white-star-feature__cta">Open exploration hub</span>
+  </a>
+</div>
 
     </div>
   </div>
 </div>
-
-<a class="white-star-feature" href="/white-star-line/">
-  <div class="white-star-feature__top">
-    <span class="white-star-feature__title">White Star Line Exploration Hub</span>
-    <span class="white-star-feature__meta">Featured path</span>
-  </div>
-
-  <p class="white-star-feature__desc">
-    Explore the wider White Star world beyond Titanic: Olympic-class ships, company history,
-    Atlantic competition, surviving tenders, and the broader liner network that shaped public memory.
-  </p>
-
-  <span class="white-star-feature__cta">Open exploration hub</span>
-</a>
 
 <img class="archive-divider" src="/engraved-laurel.png" loading="lazy" decoding="async" alt="">
 
