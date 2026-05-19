@@ -1803,6 +1803,76 @@ mix-blend-mode:soft-light;
     text-align:center;
   }
 }
+
+/* =========================
+   Line Hub Cards
+========================= */
+
+.line-hub-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.line-hub-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:4px;
+  background:linear-gradient(90deg, transparent, var(--line-accent), transparent);
+  opacity:.88;
+  pointer-events:none;
+  z-index:4;
+}
+
+.line-hub-card::after{
+  content:attr(data-line-mark);
+  position:absolute;
+  right:.85rem;
+  top:.55rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:2.9rem;
+  line-height:1;
+  color:color-mix(in srgb, var(--line-accent) 42%, transparent);
+  pointer-events:none;
+  z-index:3;
+}
+
+.line-hub-white-star{ --line-accent:#d7c08a; }
+.line-hub-cunard{ --line-accent:#b94d3f; }
+
+.feature-card.line-hub-card{
+  border-color:color-mix(in srgb, var(--line-accent) 46%, rgba(191,164,106,.22)) !important;
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--line-accent) 18%, transparent), transparent 32%),
+    linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 32%, transparent 70%),
+    rgba(15,27,25,0.42) !important;
+}
+
+.feature-card.line-hub-card:hover{
+  border-color:color-mix(in srgb, var(--line-accent) 72%, rgba(191,164,106,.28)) !important;
+}
+
+.feature-card.line-hub-card .feature-label,
+.feature-card.line-hub-card .feature-link{
+  color:color-mix(in srgb, var(--line-accent) 72%, #ecd8a7);
+}
+
+.line-hub-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:1rem;
+  margin-top:1.2rem;
+}
+
+.line-hub-grid .feature-card{
+  height:100%;
+}
+
+@media (max-width:640px){
+  .line-hub-grid{
+    grid-template-columns:1fr;
+  }
+}
     
     </style>
 </head>
@@ -2035,6 +2105,42 @@ mix-blend-mode:soft-light;
             </article>
           </div>
         </section>
+        
+        <section aria-labelledby="line-hubs">
+  <div class="section-head">
+    <div class="section-kicker">Company hubs<br><span class="section-star">★</span></div>
+    <h2 id="line-hubs">Explore by shipping line</h2>
+    <p>
+      Follow the two best-known Atlantic company routes: White Star Line and Cunard Line.
+    </p>
+  </div>
+
+  <div class="line-hub-grid">
+    <article class="feature-card line-hub-card line-hub-white-star" data-line-mark="WSL">
+      <div class="feature-body">
+        <div class="feature-label">Line Hub</div>
+        <h3 class="feature-title">White Star Line</h3>
+        <p>
+          Explore the wider White Star world beyond Titanic: Olympic-class ships, company history,
+          Atlantic competition, surviving tenders, and the broader liner network that shaped public memory.
+        </p>
+        <a class="feature-link" href="/white-star-line/">Open hub</a>
+      </div>
+    </article>
+
+    <article class="feature-card line-hub-card line-hub-cunard" data-line-mark="C">
+      <div class="feature-body">
+        <div class="feature-label">Line Hub</div>
+        <h3 class="feature-title">Cunard Line</h3>
+        <p>
+          Explore Cunard’s long Atlantic story: early steamship service, express liners,
+          wartime service, rescue narratives, company identity, and the great Cunard Queens.
+        </p>
+        <a class="feature-link" href="/cunard-line/">Open hub</a>
+      </div>
+    </article>
+  </div>
+</section>
 
         <section class="deeper-routes" aria-labelledby="deeper-routes">
   <div class="section-head">
