@@ -1825,16 +1825,31 @@ mix-blend-mode:soft-light;
 }
 
 .line-hub-card::after{
-  content:attr(data-line-mark);
+  content:"";
   position:absolute;
-  right:.85rem;
-  top:.55rem;
-  font-family:"Libre Baskerville", serif;
-  font-size:2.9rem;
-  line-height:1;
-  color:color-mix(in srgb, var(--line-accent) 42%, transparent);
+  right:.9rem;
+  top:.75rem;
+  width:56px;
+  height:56px;
+  opacity:.22;
   pointer-events:none;
   z-index:3;
+
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+
+  filter:
+    drop-shadow(0 0 10px rgba(0,0,0,0.22))
+    saturate(.9);
+}
+
+.line-hub-white-star::after{
+  background-image:url("/wsl-glyph.png");
+}
+
+.line-hub-cunard::after{
+  background-image:url("/cunard-glyph.png");
 }
 
 .line-hub-white-star{ --line-accent:#d7c08a; }
