@@ -1,3 +1,38 @@
+/* ==========================================================
+   nav.css — Ocean Liner Curator
+   Unified Stage System: one source of truth for page width
+   ========================================================== */
+
+/* =========================
+   GLOBAL SAFETY
+   ========================= */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+
+
+
+/* Align header padding to main plates */
+.header-inner{
+  padding-left: var(--olc-pad-x) !important;
+  padding-right: var(--olc-pad-x) !important;
+}
+
+/* Radius alignment */
+.container,
+.hero{
+  border-radius: var(--olc-radius) !important;
+}
+
+/* Hero inner should fill hero */
+.hero-inner{ width: 100% !important; }
+
+/* Optional prose helper (if you use it on pages) */
+.prose{
+  max-width: var(--olc-measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* =========================
    TOP MENU BAR
    ========================= */
@@ -297,6 +332,46 @@
   }
 }
 
+/* =========================
+   SUMMARY MARKER FIXES
+   ========================= */
+
+/* iPad Safari sometimes shows a tiny fallback marker for <summary> */
+details > summary{
+  list-style: none !important;
+  display: inline-block;
+}
+
+details > summary::-webkit-details-marker{ display: none !important; }
+details > summary::marker{ content: "" !important; }
+
+summary{
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+summary:focus-visible{
+  outline: 2px solid rgba(191,164,106,0.6);
+  outline-offset: 3px;
+}
+
+summary:focus:not(:focus-visible){ outline: none; }
+
+details{ display: block; }
+
+details > summary{
+  list-style: none !important;
+  display: inline-block !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+details > summary::-webkit-details-marker{
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
 /* If header injection hasn’t happened yet */
 #site-header:empty{
   background: none;
@@ -369,6 +444,54 @@ backdrop-filter: blur(1px);
     margin:0 0 1.35rem;
     background:linear-gradient(90deg, var(--accent), transparent);
     opacity:0.82;
+}
+
+/* ==========================================================
+   UNIVERSAL H2 DECORATIVE RULE — OLC SYSTEM
+   Follows heading alignment automatically
+   ========================================================== */
+
+h2{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+/* decorative brass rule */
+h2::after{
+  content:"";
+  width:140px;
+  height:2px;
+  margin-top:.65rem;
+
+  background:linear-gradient(90deg,var(--accent),transparent);
+  opacity:.82;
+}
+
+/* alignment helpers (optional but powerful) */
+
+h2.center{
+  text-align:center;
+  align-items:center;
+}
+
+h2.right{
+  text-align:right;
+  align-items:flex-end;
+}
+    
+h1 {
+      font-family: "Libre Baskerville", serif;
+      font-variant: small-caps;
+      letter-spacing: 0.08em;
+      font-weight: 400;
+    }
+    
+/* Global editorial column heading alignment */
+.container h2{
+  margin:2.25rem auto 0.7rem auto;
+  max-width:var(--measure);
+  text-align:left;
 }
 
 .footer-star{
