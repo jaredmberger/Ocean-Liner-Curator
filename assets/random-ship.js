@@ -248,7 +248,7 @@
 "/ships/ss-coptic.html",
 "/ships/ss-independence.html",
 "/ships/ss-constitution.html",
-"/ships/ss-columbia-anchor-line.html",
+"/ships/ss-columbia.html",
 "/ships/ss-cleveland.html",
 "/ships/ss-cathay-1924.html",
 "/ships/ss-great-britain-1843.html",
