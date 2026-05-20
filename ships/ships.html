@@ -3064,7 +3064,7 @@ align-items:center !important;
   align-items:center;
   white-space:nowrap;
   padding:.22rem .55rem;
-  border:1px solid rgba(191,164,106,0.26);
+  border:1px solid rgba(191,164,106,0.18);z
   border-radius:999px;
   color:rgba(215,192,138,0.9);
   background:rgba(191,164,106,0.06);
@@ -3135,6 +3135,41 @@ align-items:center !important;
 
 .cunard-feature{
   --wsl-accent:#d7c08a;
+}
+
+/* =========================
+   Color-coded Shipping Line Hub Cards
+   same sizing/style as ship hub cards
+   ========================= */
+
+.hub-card-white-star{ --hub-accent:#d7c08a; }
+.hub-card-cunard{ --hub-accent:#bfa46a; }
+
+.line-hub-card::after{
+  content:"★";
+  position:absolute;
+  right:.85rem;
+  top:.55rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:2.8rem;
+  line-height:1;
+  color:color-mix(in srgb, var(--hub-accent) 20%, transparent);
+  pointer-events:none;
+}
+
+.line-hub-card .hub-card-arrow{
+  position:absolute;
+  right:1rem;
+  bottom:0.2rem;
+  font-size:1rem;
+  color:color-mix(in srgb, var(--hub-accent) 70%, var(--link));
+  font-weight:600;
+  pointer-events:none;
+  transition:transform .15s ease, opacity .15s ease;
+}
+
+.line-hub-card:hover .hub-card-arrow{
+  transform:translateX(2px);
 }
 
 </style>
@@ -3269,35 +3304,31 @@ decoding="async"
         </a>
       </div>
 
-<div class="archive-feature-block company-feature">
-  <a class="white-star-feature" href="/white-star-line/">
-    <div class="white-star-feature__top">
-      <span class="white-star-feature__title">White Star Line Exploration Hub</span>
-      <span class="white-star-feature__meta">Line Hub</span>
+<div class="archive-feature-block">
+  <a class="hub-card ship-hub-card line-hub-card hub-card-white-star" href="/white-star-line/">
+    <div class="hub-card-top">
+      <span class="hub-card-title">White Star Line Exploration Hub</span>
+      <span class="hub-card-meta">Line Hub</span>
     </div>
-
-    <p class="white-star-feature__desc">
+    <p class="hub-card-desc">
       Explore the wider White Star world beyond Titanic: Olympic-class ships, company history,
       Atlantic competition, surviving tenders, and the broader liner network that shaped public memory.
     </p>
-
-    <span class="white-star-feature__cta">Open exploration hub</span>
+    <span class="hub-card-arrow">»</span>
   </a>
 </div>
 
-<div class="archive-feature-block company-feature">
-  <a class="white-star-feature cunard-feature" href="/cunard-line/">
-    <div class="white-star-feature__top">
-      <span class="white-star-feature__title">Cunard Line Exploration Hub</span>
-      <span class="white-star-feature__meta">Line Hub</span>
+<div class="archive-feature-block">
+  <a class="hub-card ship-hub-card line-hub-card hub-card-cunard" href="/cunard-line/">
+    <div class="hub-card-top">
+      <span class="hub-card-title">Cunard Line Exploration Hub</span>
+      <span class="hub-card-meta">Line Hub</span>
     </div>
-
-    <p class="white-star-feature__desc">
+    <p class="hub-card-desc">
       Explore Cunard’s long Atlantic story: early steamship service, express liners,
       wartime service, rescue narratives, company identity, and the great Cunard Queens.
     </p>
-
-    <span class="white-star-feature__cta">Open exploration hub</span>
+    <span class="hub-card-arrow">»</span>
   </a>
 </div>
 
