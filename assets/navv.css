@@ -9,7 +9,75 @@
 *, *::before, *::after { box-sizing: border-box; }
 html, body { overflow-x: clip; }
 
+/* ==========================================================
+   OLC UNIFIED STAGE SYSTEM
+   - Controls all “content column” widths site-wide
+   - Header, hero, containers all align to the same stage
+   ========================================================== */
 
+:root{
+  /* Stage width (default) */
+  --olc-stage: min(780px, calc(100% - 1.5rem));
+
+  /* Stage width (large screens) */
+  --olc-stage-desktop: min(1100px, calc(100% - 3rem));
+
+  /* When to widen (matches your older per-page pattern) */
+  --olc-stage-break: 1300px;
+
+  /* Shared horizontal padding for inner content */
+  --olc-pad-x: 2.75rem;
+  --olc-pad-x-mobile: 1.25rem;
+
+  /* Global rounding */
+  --olc-radius: 16px;
+  --olc-radius-mobile: 14px;
+
+  /* Prose measure (one knob) */
+  --olc-measure: 72ch;
+
+  /* Brass + panel tokens used in nav UI */
+  --olc-accent: #bfa46a;
+  --olc-accent-rgba-22: rgba(191,164,106,0.22);
+  --olc-accent-rgba-24: rgba(191,164,106,0.24);
+  --olc-accent-rgba-28: rgba(191,164,106,0.28);
+  --olc-accent-rgba-35: rgba(191,164,106,0.35);
+  --olc-accent-rgba-65: rgba(191,164,106,0.65);
+  --olc-link: rgba(209,187,134,0.95);
+
+  --olc-panel: rgba(15,27,25,0.96);
+  --olc-header: rgba(15,27,25,0.55);
+  --olc-text-hi: rgba(255,255,255,0.96);
+
+  --olc-link: #cdb57a;
+  --olc-link-hover: #f0e1b7;
+}
+
+
+
+/* Widen stage on large screens */
+@media (min-width:1300px){
+  :root{ --olc-stage: var(--olc-stage-desktop); }
+}
+
+/* Mobile tighten */
+@media (max-width:520px){
+  :root{
+    --olc-pad-x: var(--olc-pad-x-mobile);
+    --olc-radius: var(--olc-radius-mobile);
+  }
+}
+
+/* Apply stage sizing to key alignment points */
+.header-inner,
+.container,
+.paths,
+.page-container{
+  width: var(--olc-stage) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
 /* Align header padding to main plates */
 .header-inner{
