@@ -251,7 +251,8 @@
 "/ships/ss-columbia-anchor-line.html",
 "/ships/ss-cleveland.html",
 "/ships/ss-cathay-1924.html",
-"/ships/ss-great-britain-1843.html"
+"/ships/ss-great-britain-1843.html",
+"/ships/ss-rochambeau.html"
 ];
 
 window.OLC_SHIP_URLS = shipUrls;
