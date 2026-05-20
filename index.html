@@ -3212,64 +3212,6 @@ footer > .entry-points-wrap{
 
 <script>
 (function(){
-  let lastHref = "";
-
-  function getAllEntryLinks(){
-    const sets = window.OLC_ENTRY_SETS;
-    if (!sets) return [];
-
-    return Object.values(sets)
-      .flatMap(set => Array.isArray(set.links) ? set.links : [])
-      .filter(link => link.title && link.href);
-  }
-
-  function rotateHomepageEntryCard(){
-    const entries = getAllEntryLinks();
-    if (!entries.length) return;
-
-    const titleEl = document.getElementById("rotating-entry-title");
-    const descEl = document.getElementById("rotating-entry-desc");
-    const linkEl = document.getElementById("rotating-entry-link");
-
-    if (!titleEl || !descEl || !linkEl) return;
-
-    let entry = entries[Math.floor(Math.random() * entries.length)];
-
-    if (entries.length > 1) {
-      let guard = 0;
-      while (entry.href === lastHref && guard < 10) {
-        entry = entries[Math.floor(Math.random() * entries.length)];
-        guard++;
-      }
-    }
-
-    lastHref = entry.href;
-
-    titleEl.textContent = entry.title;
-    descEl.textContent = entry.desc || "";
-    linkEl.href = entry.href;
-    linkEl.textContent = "Read the answer »";
-  }
-
-  function initRotatingEntryCard(){
-    rotateHomepageEntryCard();
-
-    const refreshBtn = document.getElementById("rotating-entry-refresh");
-    if (refreshBtn) {
-      refreshBtn.addEventListener("click", rotateHomepageEntryCard);
-    }
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initRotatingEntryCard);
-  } else {
-    initRotatingEntryCard();
-  }
-})();
-</script>
-
-<script>
-(function(){
 
   let lastEntryHref = "";
   let lastShipHref = "";
@@ -3285,103 +3227,80 @@ footer > .entry-points-wrap{
 
   function getShipNameFromUrl(url){
 
-  const acronymMap = {
+    const acronymMap = {
+      ss: "🆂🆂",
+      rms: "🆁🅼🆂",
+      mv: "🅼🆅",
+      ms: "🅼🆂",
+      tss: "🆃🆂🆂",
+      hms: "🅷🅼🆂",
+      qsmv: "🆀🆂🅼🆅",
+      rmmv: "🆁🅼🅼🆅",
+      nyk: "🅽🅺🆈"
+    };
 
-    ss: "🆂🆂",
+    const wordOverrides = {
+      us: "United States",
+      ii: "II",
+      latlantique: "L'Atlantique",
+      ngl: ""
+    };
 
-    rms: "🆁🅼🆂",
+    const fullSlugOverrides = {
+      "ss-us": "🆂🆂 United States",
+      "qsmv-dominion-monarch": "🆀🆂🅼🆅 Dominion Monarch",
+      "rmmv-athlone-castle": "🆁🅼🅼🆅 Athlone Castle",
+      "rmmv-stirling-castle": "🆁🅼🅼🆅 Stirling Castle",
+      "ms-neptunia": "🅼🆂 Neptunia",
+      "ms-oceania": "🅼🆂 Oceania"
+    };
 
-    mv: "🅼🆅",
+    let slug = url
+      .replace(/^.*\/ships\//, "")
+      .replace(/\.html$/, "")
+      .replace(/\/$/, "");
 
-    ms: "🅼🆂",
+    if (fullSlugOverrides[slug]) {
+      return fullSlugOverrides[slug];
+    }
 
-    tss: "🆃🆂🆂",
+    let parts = slug.split("-");
 
-    hms: "🅷🅼🆂",
+    if (/^\d{4}$/.test(parts[parts.length - 1])) {
+      parts.pop();
+    }
 
-    qsmv: "🆀🆂🅼🆅",
+    return parts
+      .map(word => {
+        const lower = word.toLowerCase();
 
-    nyk: "🅽🅺🆈"
+        if (Object.prototype.hasOwnProperty.call(wordOverrides, lower)) {
+          return wordOverrides[lower];
+        }
 
-  };
+        if (acronymMap[lower]) {
+          return acronymMap[lower];
+        }
 
-  /* specific filename overrides */
-
-  const wordOverrides = {
-
-    us: "United States",
-    athlone: "🆁🅼🅼🆅 Athlone",
-    neptunia: "🅼🆂 Neptunia",
-    oceania: "🅼🆂 Oceania",
-    ii: "II",
-    ngl: "",
-    latlantique: "L'Atlantique"
-
-  };
-
-  let parts = url
-
-    .replace("/ships/", "")
-
-    .replace(".html", "")
-
-    .split("-");
-
-  /* remove trailing 4-digit year */
-
-  if (/^\d{4}$/.test(parts[parts.length - 1])) {
-
-    parts.pop();
-
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      })
+      .filter(Boolean)
+      .join(" ");
   }
-
-  return parts
-
-    .map(word => {
-
-      const lower = word.toLowerCase();
-
-      /* special-case replacements first */
-
-      if (wordOverrides[lower]) {
-
-        return wordOverrides[lower];
-
-      }
-
-      /* acronym styling */
-
-      if (acronymMap[lower]) {
-
-        return acronymMap[lower];
-
-      }
-
-      /* default capitalization */
-
-      return word.charAt(0).toUpperCase() + word.slice(1);
-
-    })
-
-    .join(" ");
-
-}
 
   function rotateShipCard(){
     const ships = window.OLC_SHIP_URLS || [];
     if (!ships.length) return;
 
     const titleEl = document.getElementById("ship-entry-title");
-    const descEl = document.getElementById("ship-entry-desc");
     const linkEl = document.getElementById("ship-entry-link");
 
-    if (!titleEl || !descEl || !linkEl) return;
+    if (!titleEl || !linkEl) return;
 
     let ship = ships[Math.floor(Math.random() * ships.length)];
 
     if (ships.length > 1) {
       let guard = 0;
-
       while (ship === lastShipHref && guard < 10) {
         ship = ships[Math.floor(Math.random() * ships.length)];
         guard++;
@@ -3390,11 +3309,7 @@ footer > .entry-points-wrap{
 
     lastShipHref = ship;
 
-    const shipName = getShipNameFromUrl(ship);
-
-    titleEl.textContent = "➺ " + shipName;
-    
-
+    titleEl.textContent = "➺ " + getShipNameFromUrl(ship);
     linkEl.href = ship;
     linkEl.textContent = "Explore ship guide »";
   }
@@ -3410,10 +3325,12 @@ footer > .entry-points-wrap{
     if (!titleEl || !descEl || !linkEl) return;
 
     let entry = entries[Math.floor(Math.random() * entries.length)];
+    
+    console.log("Random ship URL:", ship);
+console.log("Parsed ship name:", getShipNameFromUrl(ship));
 
     if (entries.length > 1) {
       let guard = 0;
-
       while (entry.href === lastEntryHref && guard < 10) {
         entry = entries[Math.floor(Math.random() * entries.length)];
         guard++;
