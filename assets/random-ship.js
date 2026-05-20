@@ -218,7 +218,7 @@
   "/ships/ss-tuscania.html",
   "/ships/ss-us.html",
   "/ships/ss-vaterland.html",
-  "/ships/ss-veerendam.html",
+  "/ships/ss-veendam.html",
   "/ships/rms-viceroy-of-india.html",
   "/ships/ss-virginia.html",
   "/ships/ss-cleveland.html",
