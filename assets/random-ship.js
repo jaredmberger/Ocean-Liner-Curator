@@ -149,7 +149,7 @@
 "/ships/ss-minnewaska.html",
 "/ships/ss-leviathan.html",
 "/ships/rms-moldavia.html",
-"/ships/monarch-of-bermuda.html",
+"/ships/ss-monarch-of-bermuda.html",
 "/ships/ss-monterey.html",
 "/ships/ss-mooltan.html",
 "/ships/ss-morro-castle.html",
