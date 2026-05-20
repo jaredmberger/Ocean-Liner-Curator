@@ -3286,37 +3286,79 @@ footer > .entry-points-wrap{
   function getShipNameFromUrl(url){
 
   const acronymMap = {
-    ss: "🅂🅂",
-    rms: "🅁🄼🅂",
-    mv: "🄼🅅",
-    ms: "🄼🅂",
-    tss: "🅃🅂🅂",
-    hms: "🄷🄼🅂",
-    qsmv: "🅀🅂🄼🅅",
-    nyk: "🄽🄺🅈"
+
+    ss: "🆂🆂",
+
+    rms: "🆁🅼🆂",
+
+    mv: "🅼🆅",
+
+    ms: "🅼🆂",
+
+    tss: "🆃🆂🆂",
+
+    hms: "🅷🅼🆂",
+
+    qsmv: "🆀🆂🅼🆅",
+
+    nyk: "🅽🅺🆈"
+
+  };
+
+  /* specific filename overrides */
+
+  const wordOverrides = {
+
+    us: "United States"
+
   };
 
   let parts = url
+
     .replace("/ships/", "")
+
     .replace(".html", "")
+
     .split("-");
 
   /* remove trailing 4-digit year */
+
   if (/^\d{4}$/.test(parts[parts.length - 1])) {
+
     parts.pop();
+
   }
 
   return parts
+
     .map(word => {
+
       const lower = word.toLowerCase();
 
-      if (acronymMap[lower]) {
-        return acronymMap[lower];
+      /* special-case replacements first */
+
+      if (wordOverrides[lower]) {
+
+        return wordOverrides[lower];
+
       }
 
+      /* acronym styling */
+
+      if (acronymMap[lower]) {
+
+        return acronymMap[lower];
+
+      }
+
+      /* default capitalization */
+
       return word.charAt(0).toUpperCase() + word.slice(1);
+
     })
+
     .join(" ");
+
 }
 
   function rotateShipCard(){
