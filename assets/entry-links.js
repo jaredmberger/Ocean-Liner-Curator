@@ -284,6 +284,13 @@
   href: "/how-long-did-it-take-to-cross-the-atlantic-by-ocean-liner"
 },
 {
+  meta: "Speed · Atlantic crossings",
+  title: "Why Did Speed Matter on the Atlantic?",
+  desc:
+    "Speed mattered on the Atlantic because it turned distance into schedule, schedule into reputation, and reputation into commercial power.",
+  href: "/why-speed-mattered-on-the-atlantic"
+},
+{
   meta: "Food · Shipboard life",
   title: "What Was Food Like on Ocean Liners?",
   desc:
