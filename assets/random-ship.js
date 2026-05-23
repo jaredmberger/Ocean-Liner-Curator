@@ -215,7 +215,7 @@
 "/ships/rms-strathnaver.html",
   "/ships/rms-teutonic.html",
   "/ships/rms-transylvania.html",
-  "/ships/ss-tuscania.html",
+  "/ships/ss-tuscania-1921.html",
   "/ships/ss-us.html",
   "/ships/ss-vaterland.html",
   "/ships/ss-veendam.html",
