@@ -528,13 +528,10 @@
 
   .cta{
     margin-top:28px;
-    display:grid;
-    grid-template-columns:minmax(0, 1fr) auto;
-    gap:18px;
-    align-items:center;
+    display:block;
     border:1px solid var(--line);
     border-radius:24px;
-    padding:24px;
+    padding:clamp(22px, 4vw, 34px);
     background:
       linear-gradient(135deg, rgba(191,164,106,.12), rgba(255,255,255,.03)),
       rgba(17,28,24,.86);
@@ -548,12 +545,17 @@
   .cta p{
     margin:0;
     color:var(--muted);
-    max-width:760px;
+    max-width:880px;
+  }
+
+  .cta .button-row{
+    margin-top:20px;
   }
 
   .button-row{
     display:flex;
     flex-wrap:wrap;
+    align-items:center;
     gap:10px;
   }
 
@@ -591,8 +593,7 @@
 
   @media (max-width:920px){
     .lede,
-    .two-col,
-    .cta{
+    .two-col{
       grid-template-columns:1fr;
     }
 
@@ -963,6 +964,8 @@
     </div>
   </main>
 
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
   <script src="/assets/nav.js" defer></script>
 </body>
 </html>
