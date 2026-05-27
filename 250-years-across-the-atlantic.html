@@ -144,30 +144,55 @@
     padding:38px 0 70px;
   }
 
-  .hero{
-    position:relative;
-    overflow:hidden;
-    border:1px solid var(--line);
-    border-radius:30px;
-    background:
-      linear-gradient(135deg, rgba(10,17,16,.94), rgba(15,29,24,.88)),
-      radial-gradient(circle at 75% 20%, rgba(191,164,106,.18), transparent 24rem),
-      linear-gradient(90deg, rgba(191,164,106,.08), transparent);
-    box-shadow:var(--shadow);
-    padding:clamp(28px, 5vw, 62px);
-    isolation:isolate;
-  }
+.hero{
+  position:relative;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(6,10,10,.82),
+      rgba(8,14,13,.72)
+    ),
+    linear-gradient(
+      90deg,
+      rgba(10,17,16,.88) 0%,
+      rgba(10,17,16,.55) 42%,
+      rgba(10,17,16,.82) 100%
+    ),
+    url("/america-250.jpg");
+
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+
+  box-shadow:var(--shadow);
+  padding:clamp(28px, 5vw, 62px);
+  isolation:isolate;
+}
 
   .hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:
-      linear-gradient(90deg, rgba(10,17,16,.15), rgba(10,17,16,.85)),
-      repeating-linear-gradient(135deg, rgba(255,255,255,.045) 0 1px, transparent 1px 14px);
-    opacity:.6;
-    z-index:-2;
-  }
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.03),
+      rgba(0,0,0,.18)
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,.03) 0 1px,
+      transparent 1px 14px
+    );
+
+  opacity:.5;
+  z-index:-2;
+}
 
   .hero::after{
     content:"★";
@@ -870,7 +895,7 @@
         </p>
 
         <div class="ship-links">
-          <a class="ship-card" href="/ships/ss-united-states">
+          <a class="ship-card" href="/ships/ss-us">
             <span class="meta">Prestige · Speed</span>
             <strong>SS United States</strong>
             <span>American industrial confidence, national prestige, and the last great express-liner statement.</span>
