@@ -291,6 +291,13 @@
   href: "/why-speed-mattered-on-the-atlantic"
 },
 {
+  meta: "Passenger transition · Cabin liners",
+  title: "Why Cabin-Class Ships Matter",
+  desc:
+    "Cabin-class ships mattered because they reflected the transition away from the old emigrant-era Atlantic system toward smaller, more flexible, comfort-oriented passenger travel.",
+  href: "/why-cabin-class-ships-matter"
+},
+{
   meta: "Food · Shipboard life",
   title: "What Was Food Like on Ocean Liners?",
   desc:
