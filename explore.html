@@ -1888,6 +1888,77 @@ mix-blend-mode:soft-light;
     grid-template-columns:1fr;
   }
 }
+
+.hero-special-feature{
+  position:relative;
+  margin:1.15rem 0 0;
+  padding:1rem 1.05rem;
+  overflow:hidden;
+  border:1px solid rgba(191,164,106,0.34);
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 92% 15%, rgba(191,164,106,0.16), transparent 34%),
+    linear-gradient(120deg, rgba(255,255,255,0.045), rgba(255,255,255,0.012) 48%, transparent),
+    rgba(15,27,25,0.56);
+  box-shadow:
+    0 12px 26px rgba(0,0,0,0.30),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.hero-special-feature::after{
+  content:"★";
+  position:absolute;
+  right:1rem;
+  top:.75rem;
+  color:rgba(191,164,106,0.22);
+  font-size:2.25rem;
+  line-height:1;
+  pointer-events:none;
+}
+
+.hero-special-label{
+  display:block;
+  margin:0 0 .45rem;
+  color:var(--accent-2);
+  font-size:.74rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+.hero-special-feature h2{
+  margin:0;
+  max-width:34rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:clamp(1.2rem, 2.2vw, 1.65rem);
+  line-height:1.18;
+  color:#f1ead7;
+  text-align:left !important;
+}
+
+.hero-special-feature p{
+  margin:.6rem 0 0;
+  max-width:40rem;
+  color:var(--muted);
+  font-size:.96rem;
+}
+
+.hero-special-link{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  margin-top:.85rem;
+  font-weight:600;
+  color:#ecd8a7;
+}
+
+.hero-special-link::after{
+  content:"»";
+  transition:transform .18s ease;
+}
+
+.hero-special-link:hover::after{
+  transform:translateX(2px);
+}
     
     </style>
 </head>
@@ -1926,6 +1997,17 @@ mix-blend-mode:soft-light;
           <p class="hero-note">
   Use this page as a guided route into the archive, or return to the homepage for the full Ocean Liner Curator overview.
 </p>
+
+<div class="hero-special-feature">
+  <span class="hero-special-label">Special Feature · American 250</span>
+  <h2>250 Years Across the Atlantic</h2>
+  <p>
+    A curator-minded feature connecting the birth of the United States to the long Atlantic story of migration, steamships, ocean liners, wartime crossings, and public memory.
+  </p>
+  <a class="hero-special-link" href="/250-years-across-the-atlantic">
+    Read the special feature
+  </a>
+</div>
 
           <div class="hero-seasonal">
             <span class="hero-seasonal-label">Best first steps</span>
