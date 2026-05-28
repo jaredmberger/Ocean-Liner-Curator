@@ -2624,6 +2624,47 @@ footer > .entry-points-wrap{
   }
 }
 
+.special-feature-banner{
+  width:min(760px, 100%);
+  margin:0 auto 1.25rem;
+}
+
+.special-feature-banner a{
+  display:block;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(191,164,106,0.32);
+  box-shadow:
+    0 18px 42px rgba(0,0,0,0.45),
+    0 0 0 1px rgba(191,164,106,0.08);
+  transition:transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.special-feature-banner a:hover{
+  transform:translateY(-2px);
+  border-color:rgba(191,164,106,0.48);
+  box-shadow:
+    0 22px 52px rgba(0,0,0,0.55),
+    0 0 28px rgba(191,164,106,0.10);
+}
+
+.special-feature-banner img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.special-feature-banner a:focus-visible{
+  outline:2px solid rgba(191,164,106,0.7);
+  outline-offset:4px;
+}
+
+@media (max-width:520px){
+  .special-feature-banner{
+    margin-bottom:1rem;
+  }
+}
+
 </style>
   
 </head>
@@ -2674,6 +2715,16 @@ footer > .entry-points-wrap{
   />
 </a> -->
     
+    <div class="special-feature-banner">
+  <a href="/250-years-across-the-atlantic" aria-label="Explore 250 Years Across the Atlantic">
+    <img
+      src="/250-years-across-the-atlantic-banner.PNG"
+      alt="Special Feature: 250 Years Across the Atlantic"
+      loading="lazy"
+      decoding="async"
+    />
+  </a>
+</div>
     
  <div class="archive-note">
   An evolving reference archive<br>documenting 250+ ocean liners.<br>
