@@ -7246,16 +7246,22 @@ const passesSearch =
 </script>
 
 <script>
-const btn = document.querySelector('.back-to-top');
+document.addEventListener('DOMContentLoaded', () => {
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 500) {
-    btn.style.opacity = '1';
-    btn.style.pointerEvents = 'auto';
-  } else {
-    btn.style.opacity = '0';
-    btn.style.pointerEvents = 'none';
+  const btn = document.querySelector('.back-to-top');
+  if (!btn) return;
+
+  function toggleBackToTop(){
+    if (window.scrollY > 500){
+      btn.classList.add('is-visible');
+    } else {
+      btn.classList.remove('is-visible');
+    }
   }
+
+  window.addEventListener('scroll', toggleBackToTop, { passive:true });
+
+  toggleBackToTop();
 });
 </script>
   
