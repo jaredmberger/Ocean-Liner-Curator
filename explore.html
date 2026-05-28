@@ -1906,13 +1906,29 @@ mix-blend-mode:soft-light;
 }
 
 .hero-special-feature::after{
-  content:"🇺🇸";
+  content:"";
   position:absolute;
   right:1rem;
   top:.75rem;
-  color:rgba(191,164,106,0.22);
-  font-size:2.25rem;
-  line-height:1;
+
+  width:52px;
+  height:52px;
+
+  background-image:url("stars.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  filter:
+  brightness(0)
+  saturate(100%)
+  invert(73%)
+  sepia(23%)
+  saturate(469%)
+  hue-rotate(7deg)
+  brightness(93%)
+  contrast(88%);
+filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
+  opacity:0.22;
   pointer-events:none;
 }
 
