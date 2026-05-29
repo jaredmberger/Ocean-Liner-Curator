@@ -26,23 +26,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
 
-  // ---- Google Analytics ----
-  (function injectGA() {
-    const GA_SRC = "https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB";
-
-    if (document.querySelector(`script[src^="https://www.googletagmanager.com/gtag/js"]`)) return;
-
-    const s = document.createElement("script");
-    s.src = GA_SRC;
-    s.async = true;
-    document.head.appendChild(s);
-
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function(){ dataLayer.push(arguments); };
-
-    gtag("js", new Date());
-    gtag("config", "G-JPZ291Q3RB");
-  })();
 
   // ---- Simple Analytics ----
   (function injectSimpleAnalytics() {
