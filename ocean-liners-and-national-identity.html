@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ocean Liners and National Identity — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded research collection on how ocean liners became expressions of national identity, prestige, migration, diplomacy, technology, and public memory." />
+  <link rel="canonical" href="https://www.oceanliners.net/ocean-liners-and-national-identity" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Ocean Liners and National Identity — Ocean Liner Curator" />
+  <meta property="og:description" content="Ocean liners were more than transport. They became floating statements of national confidence, migration history, technological power, and cultural memory." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.oceanliners.net/ocean-liners-and-national-identity" />
+  <meta property="og:image" content="https://www.oceanliners.net/images/ocean-liners-national-identity-og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ocean Liners and National Identity" />
+  <meta name="twitter:description" content="A curator-minded look at how ocean liners carried national ambition, migration stories, design ideals, and public memory across the Atlantic." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/images/ocean-liners-national-identity-og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.oceanliners.net/ocean-liners-and-national-identity#webpage",
+        "url": "https://www.oceanliners.net/ocean-liners-and-national-identity",
+        "name": "Ocean Liners and National Identity — Ocean Liner Curator",
+        "description": "A curator-minded research collection on how ocean liners became expressions of national identity, prestige, migration, diplomacy, technology, and public memory.",
+        "isPartOf": {
+          "@id": "https://www.oceanliners.net/#website"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Ocean liners"
+          },
+          {
+            "@type": "Thing",
+            "name": "National identity"
+          },
+          {
+            "@type": "Thing",
+            "name": "Transatlantic travel"
+          },
+          {
+            "@type": "Thing",
+            "name": "Maritime history"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.oceanliners.net/ocean-liners-and-national-identity#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.oceanliners.net/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Research Collections",
+            "item": "https://www.oceanliners.net/research-collections"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ocean Liners and National Identity",
+            "item": "https://www.oceanliners.net/ocean-liners-and-national-identity"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.oceanliners.net/ocean-liners-and-national-identity#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How did ocean liners express national identity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ocean liners expressed national identity through names, flags, interiors, technology, speed, public ceremonies, route networks, and the way governments, shipping lines, passengers, and newspapers described them. They were practical ships, but they also became public symbols."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Were ocean liners government propaganda?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sometimes they carried official or semi-official national messages, especially when subsidies, wartime service, or prestige routes were involved. But they should not be reduced to propaganda alone. They were also businesses, workplaces, migrant spaces, tourist spaces, and machines built for regular service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why did famous ocean liners become national symbols?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Famous ocean liners became national symbols because they were visible, expensive, technologically ambitious, and internationally compared. Their departures, arrivals, records, interiors, and disasters gave the public a way to attach national pride, anxiety, memory, and identity to a single ship."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,26,24,0.74);
+      --panel-soft:rgba(15,26,24,0.52);
+      --ink:#efe9dc;
+      --muted:#cfc2a8;
+      --faint:#9f9278;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,0.18);
+      --accent-line:rgba(191,164,106,0.34);
+      --edge:rgba(191,164,106,0.25);
+      --shadow:rgba(0,0,0,0.34);
+      --max:min(1080px, calc(100% - 2rem));
+      --measure:72ch;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Spectral", Georgia, serif;
+      line-height:1.65;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(191,164,106,0.13), transparent 32rem),
+        radial-gradient(circle at 82% 0%, rgba(255,255,255,0.06), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #0b1514 48%, #070d0c 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:0.11;
+      background-image:url('/tile3.png');
+      background-size:360px auto;
+      mix-blend-mode:screen;
+    }
+
+    a{ color:#ead59b; text-decoration:none; }
+    a:hover{ color:#fff1c2; text-decoration:underline; text-underline-offset:0.18em; }
+
+    .hero{
+      position:relative;
+      min-height:62vh;
+      display:grid;
+      align-items:end;
+      padding:3rem 0 3rem !important;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.2);
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.36), rgba(10,17,16,0.92)),
+        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.25), transparent 31rem),
+        linear-gradient(125deg, rgba(10,17,16,0.26), rgba(10,17,16,0.95)),
+        url('/images/ocean-liners-national-identity.jpg') center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:42%;
+      background:linear-gradient(180deg, transparent, #0a1110 92%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:var(--max) !important;
+      margin:0 auto;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      max-width:100%;
+      padding:.42rem .68rem;
+      border:1px solid rgba(191,164,106,0.36);
+      border-radius:999px;
+      background:rgba(10,17,16,0.55);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.74rem;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      line-height:1.25;
+    }
+
+    .hero h1{
+      max-width:920px;
+      margin:.95rem 0 .75rem;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(2.25rem, 7vw, 5.15rem);
+      line-height:1.02;
+      letter-spacing:-.045em;
+      text-wrap:balance;
+      text-shadow:0 16px 34px rgba(0,0,0,0.45);
+    }
+
+    .page-kicker{
+      max-width:760px;
+      margin:0;
+      color:#e5dcc8;
+      font-size:clamp(1.05rem, 2vw, 1.32rem);
+      line-height:1.55;
+      text-shadow:0 10px 24px rgba(0,0,0,0.36);
+    }
+
+    .meta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+      margin-top:1.25rem;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      padding:.38rem .65rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:999px;
+      background:rgba(10,17,16,0.48);
+      color:var(--muted);
+      font-size:.86rem;
+    }
+
+    main{
+      width:var(--max);
+      margin:0 auto;
+      padding:2.4rem 0 4rem;
+    }
+
+    .entry-shell{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) 315px;
+      gap:1.25rem;
+      align-items:start;
+    }
+
+    .article-card,
+    .side-card,
+    .answer-box,
+    .link-card,
+    .note{
+      border:1px solid var(--edge);
+      background:linear-gradient(180deg, rgba(18,31,29,0.82), rgba(11,19,18,0.76));
+      box-shadow:0 18px 45px var(--shadow);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+    }
+
+    .article-card{
+      border-radius:24px;
+      padding:clamp(1.1rem, 3vw, 2rem);
+    }
+
+    .prose{ max-width:var(--measure); }
+
+    .prose h2,
+    .side-card h2{
+      margin:2rem 0 .75rem;
+      color:#f4ead2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(1.42rem, 3vw, 2.1rem);
+      line-height:1.18;
+      letter-spacing:-.025em;
+    }
+
+    .prose h2:first-child{ margin-top:0; }
+
+    .prose h2::after,
+    .side-card h2::after{
+      content:"";
+      display:block;
+      width:88px;
+      height:1px;
+      margin:.62rem 0 0;
+      background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+    }
+
+    .prose h3{
+      margin:1.45rem 0 .45rem;
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1.1rem;
+      letter-spacing:.01em;
+    }
+
+    .prose p{ margin:.75rem 0 1rem; color:#e7decb; }
+    .prose strong{ color:#fff4d3; }
+
+    .answer-box{
+      margin:0 0 1.5rem;
+      padding:1.1rem 1.15rem;
+      border-radius:18px;
+      background:
+        radial-gradient(circle at top left, rgba(191,164,106,0.18), transparent 18rem),
+        rgba(15,26,24,0.78);
+    }
+
+    .answer-box .label{
+      display:block;
+      color:#d9c17f;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.78rem;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      margin-bottom:.4rem;
+    }
+
+    .answer-box p{
+      margin:0;
+      color:#f1eadc;
+      font-size:1.08rem;
+      line-height:1.55;
+    }
+
+    .accuracy-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:.8rem;
+      margin:1.15rem 0 1.45rem;
+    }
+
+    .accuracy-card{
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.21);
+      border-radius:18px;
+      background:rgba(8,15,14,0.42);
+    }
+
+    .accuracy-card .icon{
+      display:inline-grid;
+      place-items:center;
+      width:2rem;
+      height:2rem;
+      margin-bottom:.55rem;
+      border-radius:999px;
+      color:#f5e7bb;
+      background:rgba(191,164,106,0.14);
+      border:1px solid rgba(191,164,106,0.24);
+    }
+
+    .accuracy-card h3{
+      margin:.15rem 0 .38rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1rem;
+      line-height:1.25;
+    }
+
+    .accuracy-card p{
+      margin:0;
+      color:#d8ceb8;
+      font-size:.95rem;
+      line-height:1.5;
+    }
+
+    .comparison-list{
+      display:grid;
+      gap:.75rem;
+      margin:1rem 0 1.35rem;
+    }
+
+    .comparison-item{
+      padding:.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.19);
+      border-radius:17px;
+      background:rgba(8,15,14,0.34);
+    }
+
+    .comparison-item b{
+      display:block;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      margin-bottom:.25rem;
+    }
+
+    .comparison-item span{
+      display:block;
+      color:#d8ceb8;
+      line-height:1.5;
+    }
+
+    .note{
+      margin:1.3rem 0;
+      padding:1rem 1.05rem;
+      border-radius:18px;
+      background:rgba(10,17,16,0.54);
+    }
+
+    .note p{ margin:0; color:#d8ceb8; }
+
+    .source-list{
+      margin:1rem 0 0;
+      padding-left:1.1rem;
+      color:#d9cfbb;
+      font-size:.95rem;
+    }
+
+    .source-list li{ margin:.35rem 0; }
+
+    .side-stack{
+      position:sticky;
+      top:1rem;
+      display:grid;
+      gap:1rem;
+    }
+
+    .side-card{
+      border-radius:22px;
+      padding:1rem;
+    }
+
+    .side-card h2{
+      margin-top:0;
+      font-size:1.18rem;
+    }
+
+    .side-card p{
+      margin:.55rem 0 .85rem;
+      color:#d8ceb8;
+      font-size:.96rem;
+      line-height:1.5;
+    }
+
+    .toc{
+      display:grid;
+      gap:.4rem;
+      margin-top:.65rem;
+    }
+
+    .toc a,
+    .link-card{
+      display:block;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.18);
+      background:rgba(8,15,14,0.36);
+      padding:.7rem .78rem;
+      color:#eadcae;
+      text-decoration:none;
+      line-height:1.3;
+    }
+
+    .toc a:hover,
+    .link-card:hover{
+      border-color:rgba(191,164,106,0.42);
+      background:rgba(191,164,106,0.08);
+      text-decoration:none;
+    }
+
+    .link-card{ margin:.55rem 0; }
+
+    .link-card span{
+      display:block;
+      color:#a99d84;
+      font-size:.82rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:.15rem;
+    }
+
+    .faq{
+      margin-top:2rem;
+      border-top:1px solid rgba(191,164,106,0.2);
+      padding-top:1rem;
+    }
+
+    details.faq-item{
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      background:rgba(8,15,14,0.32);
+      margin:.7rem 0;
+      overflow:hidden;
+    }
+
+    .faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      padding:.9rem 1rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+    }
+
+    .faq-item summary::-webkit-details-marker{ display:none; }
+
+    .faq-item p{
+      margin:0;
+      padding:0 1rem 1rem;
+      color:#d8ceb8;
+    }
+
+    .next-steps{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:.8rem;
+      margin-top:1rem;
+    }
+
+    .cta-card{
+      display:block;
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.23);
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(191,164,106,0.09), rgba(8,15,14,0.34));
+      text-decoration:none;
+    }
+
+    .cta-card b{
+      display:block;
+      color:#f3e7c7;
+      font-family:"Libre Baskerville", Georgia, serif;
+      line-height:1.25;
+      margin-bottom:.35rem;
+    }
+
+    .cta-card span{
+      display:block;
+      color:#d3c8b1;
+      font-size:.94rem;
+      line-height:1.45;
+    }
+
+    .cta-card:hover{
+      border-color:rgba(191,164,106,0.48);
+      background:linear-gradient(180deg, rgba(191,164,106,0.14), rgba(8,15,14,0.42));
+      text-decoration:none;
+    }
+
+    @media (max-width:900px){
+      .entry-shell{ grid-template-columns:1fr; }
+      .side-stack{ position:static; }
+      .accuracy-grid,
+      .next-steps{ grid-template-columns:1fr; }
+      .hero{ min-height:58vh; padding-top:6.5rem; }
+    }
+
+    @media (max-width:560px){
+      main{ padding-top:1.25rem; }
+      .article-card{ border-radius:20px; padding:1rem; }
+      .hero{ padding-bottom:2.15rem; }
+      .meta-pill{ font-size:.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Research collection · ocean liners & identity</span>
+      <h1>Ocean Liners and National Identity</h1>
+      <p class="page-kicker">Ocean liners were not only machines for crossing the sea. They became floating expressions of national ambition, migration, technology, design, diplomacy, and public memory.</p>
+      <div class="meta-row" aria-label="Page context">
+        <span class="meta-pill">Transatlantic history</span>
+        <span class="meta-pill">National prestige</span>
+        <span class="meta-pill">Public memory</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="entry-shell">
+      <article class="article-card">
+        <div class="prose">
+          <div class="answer-box" id="answer">
+            <span class="label">Core idea</span>
+            <p><strong>Ocean liners became national symbols because they made identity visible.</strong> A liner could carry a flag, a language, a design tradition, a migration story, a technological claim, and a public image of national confidence across the world’s busiest passenger routes.</p>
+          </div>
+
+          <h2 id="basic-answer">The basic answer</h2>
+          <p>Ocean liners were built to move people, mail, cargo, and prestige. Their public meaning came from the way those practical functions were wrapped in national symbols: flags at the stern, company colors on the funnels, named routes, press coverage, launch ceremonies, record attempts, interiors, uniforms, menus, and the repeated drama of arrival and departure.</p>
+
+          <p>A famous liner was often treated as a national representative. It entered harbors under a flag, carried citizens and migrants, displayed industrial capability, and invited comparison with rival nations. The ship was a workplace and a commercial object, but it was also a stage on which nations imagined themselves.</p>
+
+          <div class="accuracy-grid" aria-label="National identity themes">
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Flags and routes</h3>
+              <p>Ships made national presence visible in foreign ports through flags, company colors, names, and regular international service.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Technology and pride</h3>
+              <p>Speed, size, engineering, and safety claims became ways to compare national power and industrial confidence.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Memory and loss</h3>
+              <p>Disasters, wartime service, retirement, and preservation often transformed liners into objects of national memory.</p>
+            </section>
+          </div>
+
+          <h2 id="not-just-transport">More than transportation</h2>
+          <p>A liner crossing the Atlantic was a scheduled service, not merely a spectacle. Passengers needed reliable departures, safe arrivals, food, berths, crew labor, navigation, and connections onward by rail or road. But because these services were public, expensive, and international, they became easy to read symbolically.</p>
+
+          <p>The same ship could mean different things to different people. To a government, it might represent strategic mobility or national prestige. To a shipping line, it was a commercial investment. To an emigrant, it was a passage between old and new worlds. To a tourist, it was comfort and modernity. To a newspaper reader, it could become a headline version of national success or failure.</p>
+
+          <div class="note">
+            <p><strong>Curator’s note:</strong> National identity is not a single meaning imposed on a ship. It is a set of meanings produced by design, service, politics, advertising, passenger experience, press coverage, and later memory.</p>
+          </div>
+
+          <h2 id="names-flags-funnels">Names, flags, and funnels</h2>
+          <p>The visual language of a liner mattered. Names could evoke monarchs, nations, regions, cities, historic figures, or ideals. Flags identified nationality. Funnel colors made shipping lines instantly recognizable. Even before a passenger stepped aboard, the ship announced affiliation.</p>
+
+          <p>That symbolism was not always subtle. A great liner entering New York, Southampton, Liverpool, Le Havre, Hamburg, Bremen, Genoa, or Cherbourg could become a moving advertisement for the country and company behind it. The harbor setting turned a ship into public theater: whistles, crowds, tugs, newspapers, photographs, and comparisons with rival vessels.</p>
+
+          <h2 id="speed-size-technology">Speed, size, and technology as identity</h2>
+          <p>Speed was never just speed. On the Atlantic, a fast liner suggested engineering skill, national discipline, powerful machinery, and the ability to compress distance into schedule. Size worked similarly. A larger ship could be promoted as comfort, capacity, and confidence, but also as proof that a nation or company could build at a scale others noticed.</p>
+
+          <p>This is why record-breaking liners so often became national talking points. A ship that captured attention did more than carry passengers. It created a story of national capability that could be repeated in newspapers, advertisements, postcards, paintings, souvenirs, and later museum displays.</p>
+
+          <h2 id="interiors-design">Interiors and design ideals</h2>
+          <p>Interiors also carried identity. Public rooms could suggest aristocratic tradition, modern design, national art movements, technological futurism, or a carefully staged version of cultural refinement. A passenger did not simply occupy space; they moved through an argument about taste, status, and modern life.</p>
+
+          <p>Some liners leaned into historic grandeur. Others emphasized streamlined modernity. Some presented national decorative arts as part of the voyage itself. These choices made the ship feel like a curated environment: part hotel, part embassy, part industrial object, part national showroom.</p>
+
+          <div class="comparison-list" aria-label="Ways ocean liners expressed identity">
+            <div class="comparison-item">
+              <b>Public symbolism</b>
+              <span>Flags, names, launch ceremonies, maiden voyages, press attention, and port arrivals helped turn ships into national events.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Industrial symbolism</b>
+              <span>Engines, speed, tonnage, safety systems, and shipyard capacity made liners symbols of technical achievement.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Cultural symbolism</b>
+              <span>Interiors, menus, music, service style, language, and art could present a ship as a floating expression of national taste.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Human symbolism</b>
+              <span>Migration, tourism, wartime transport, crew life, and family memory gave liners emotional meanings beyond publicity.</span>
+            </div>
+          </div>
+
+          <h2 id="migration">Migration and belonging</h2>
+          <p>National identity was not only created from the top down. It also came from passengers. Ocean liners carried emigrants, returning citizens, tourists, soldiers, diplomats, workers, performers, and families. Each group used the ship differently, and each could attach different meanings to the same crossing.</p>
+
+          <p>For many migrants, the liner was a transitional space. It was neither fully the country left behind nor fully the country ahead. That made the ship a powerful site of memory. Family stories, passenger lists, postcards, menus, trunks, and photographs often preserve the voyage as part of personal and national identity at once.</p>
+
+          <h2 id="wartime-service">Wartime service and national memory</h2>
+          <p>War intensified the symbolic role of ocean liners. Passenger ships could become troopships, hospital ships, armed merchant cruisers, or targets. Their size, speed, and range made them useful, but their fame made their service and loss especially visible.</p>
+
+          <p>When a liner served in war, its identity often changed. Luxury interiors might be stripped or covered. Passenger spaces became military spaces. A ship formerly advertised as comfort could become a tool of national survival. Afterward, wartime service often became part of the ship’s legend.</p>
+
+          <h2 id="diplomacy-prestige">Diplomacy, prestige, and soft power</h2>
+          <p>Ocean liners also worked as instruments of soft power. A ship could welcome international passengers into a carefully managed version of national hospitality. Food, service, language, art, music, and ritual all mattered. The voyage could become a controlled encounter with a nation’s public image.</p>
+
+          <p>This does not mean every passenger accepted the message. Seasickness, class division, labor conditions, delays, accidents, and immigration inspection could complicate the image. But the attempt to project national prestige was real, and it shaped how many liners were built, named, decorated, advertised, and remembered.</p>
+
+          <h2 id="disaster-and-memory">Disaster and identity</h2>
+          <p>Disasters could transform a ship’s meaning almost instantly. A liner once associated with modern confidence might become a symbol of vulnerability, sacrifice, negligence, heroism, class division, or national grief. Public memory often hardens around such events because ships are easy to visualize and personalize.</p>
+
+          <p>Titanic is the clearest example, but it is not the only one. Maritime disasters often become national and international memory sites because they concentrate technology, human experience, regulation, media, and mourning into a single event.</p>
+
+          <h2 id="why-it-matters">Why this matters</h2>
+          <p>Thinking about national identity helps explain why ocean liners still attract attention long after their commercial purpose has faded. They were built for service, but remembered as symbols. Their stories connect engineering to migration, advertising to politics, design to class, and public memory to private family history.</p>
+
+          <p>That is why a curator-minded approach matters. A liner should not be reduced to patriotic myth, nostalgia, or a list of dimensions. Its national meaning should be interpreted through evidence: how it was built, promoted, used, altered, reported, experienced, and remembered.</p>
+
+          <section class="faq" id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <details class="faq-item">
+              <summary>How did ocean liners express national identity?</summary>
+              <p>They expressed national identity through names, flags, funnel colors, interiors, routes, technology, public ceremonies, advertising, press coverage, passenger experience, and later memory.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Were ocean liners symbols of national prestige?</summary>
+              <p>Yes, many were. Especially on major Atlantic routes, large and famous liners were often compared as expressions of industrial power, speed, design, safety, and national confidence.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Did passengers experience national identity differently?</summary>
+              <p>Yes. A tourist, emigrant, crew member, soldier, government official, and newspaper reader could all attach different meanings to the same ship. That is why evidence and context matter.</p>
+            </details>
+          </section>
+
+          <h2 id="next">Where to go next</h2>
+          <p>This research collection connects naturally to ship hubs, line hubs, Atlantic history, and broader questions about why ocean liners mattered beyond transportation.</p>
+
+          <div class="next-steps" aria-label="Related ocean liner pages">
+            <a class="cta-card" href="/why-speed-mattered-on-the-atlantic">
+              <b>Why Speed Mattered on the Atlantic</b>
+              <span>Explore how schedule, prestige, technology, and competition made speed central to ocean liner history.</span>
+            </a>
+            <a class="cta-card" href="/250-years-across-the-atlantic">
+              <b>250 Years Across the Atlantic</b>
+              <span>Connect ocean liners to migration, national identity, memory, and the longer story of Atlantic crossings.</span>
+            </a>
+            <a class="cta-card" href="/ships/ships">
+              <b>Ship Archive</b>
+              <span>Browse 250+ ocean liner guides across the age of steam, migration, luxury travel, war, and decline.</span>
+            </a>
+          </div>
+
+          <h2 id="sources">Source notes</h2>
+          <p>This entry is written as a thematic research collection rather than a single-ship guide. It should be read alongside ship-specific pages, shipping line hubs, route history, advertising material, inquiry records, passenger accounts, and contemporary press coverage.</p>
+          <ul class="source-list">
+            <li>Shipping line advertising, passenger brochures, postcards, menus, and route material.</li>
+            <li>Shipyard, company, and government context for major national liners and prestige services.</li>
+            <li>Passenger and migration evidence, including family histories, passenger lists, and port records.</li>
+            <li>Maritime scholarship on technology, nationalism, migration, wartime service, and public memory.</li>
+          </ul>
+        </div>
+      </article>
+
+      <aside class="side-stack" aria-label="Page navigation and related links">
+        <section class="side-card">
+          <h2>On this page</h2>
+          <nav class="toc" aria-label="Section links">
+            <a href="#answer">Core idea</a>
+            <a href="#basic-answer">Basic answer</a>
+            <a href="#not-just-transport">More than transport</a>
+            <a href="#names-flags-funnels">Names & flags</a>
+            <a href="#speed-size-technology">Speed & technology</a>
+            <a href="#interiors-design">Interiors & design</a>
+            <a href="#migration">Migration</a>
+            <a href="#wartime-service">Wartime service</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </section>
+
+        <section class="side-card">
+          <h2>Best next link</h2>
+          <p>For a broader Atlantic context, connect this page to the special feature.</p>
+          <a class="link-card" href="/250-years-across-the-atlantic">
+            <span>Special feature</span>
+            250 Years Across the Atlantic
+          </a>
+        </section>
+
+        <section class="side-card">
+          <h2>Related paths</h2>
+          <a class="link-card" href="/why-speed-mattered-on-the-atlantic">
+            <span>Atlantic crossings</span>
+            Why Speed Mattered on the Atlantic
+          </a>
+          <a class="link-card" href="/cunard-line">
+            <span>Line hub</span>
+            Cunard Line
+          </a>
+          <a class="link-card" href="/white-star-line">
+            <span>Line hub</span>
+            White Star Line
+          </a>
+          <a class="link-card" href="/ships/ships">
+            <span>Reference archive</span>
+            Ship Archive
+          </a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+</body>
+</html>
