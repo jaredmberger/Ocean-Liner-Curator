@@ -73,6 +73,13 @@
           href: "/why-was-titanic-called-unsinkable"
         },
         {
+  meta: "Safety · Titanic legacy",
+  title: "How Titanic Changed Maritime Safety",
+  desc:
+    "Titanic's loss helped drive lifeboat reforms, continuous radio watches, iceberg patrols, and international safety standards that reshaped passenger shipping.",
+  href: "/how-titanic-changed-maritime-safety"
+},
+        {
   meta: "Titanic · Memory & culture",
   title: "Why Do People Still Care About Titanic?",
   desc:
