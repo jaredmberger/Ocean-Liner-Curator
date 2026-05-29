@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How Titanic Changed Maritime Safety — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded look at how the Titanic disaster changed maritime safety, including lifeboat rules, wireless watchkeeping, ice patrols, boat drills, and the first SOLAS convention." />
+  <link rel="canonical" href="https://www.oceanliners.net/how-titanic-changed-maritime-safety" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="How Titanic Changed Maritime Safety — Ocean Liner Curator" />
+  <meta property="og:description" content="Titanic changed maritime safety by pushing lifeboat capacity, wireless watchkeeping, ice patrols, drills, and international safety rules into a new era." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.oceanliners.net/how-titanic-changed-maritime-safety" />
+  <meta property="og:image" content="https://www.oceanliners.net/images/titanic-maritime-safety-og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Titanic Changed Maritime Safety" />
+  <meta name="twitter:description" content="A careful look at the safety reforms that followed Titanic: lifeboats, wireless radio, ice patrols, drills, and SOLAS." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/images/titanic-maritime-safety-og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.oceanliners.net/how-titanic-changed-maritime-safety#webpage",
+        "url": "https://www.oceanliners.net/how-titanic-changed-maritime-safety",
+        "name": "How Titanic Changed Maritime Safety — Ocean Liner Curator",
+        "description": "A curator-minded look at how the Titanic disaster changed maritime safety, including lifeboat rules, wireless watchkeeping, ice patrols, boat drills, and the first SOLAS convention.",
+        "isPartOf": {
+          "@id": "https://www.oceanliners.net/#website"
+        },
+        "about": [
+          {
+            "@type": "Ship",
+            "name": "RMS Titanic"
+          },
+          {
+            "@type": "Thing",
+            "name": "Maritime safety"
+          },
+          {
+            "@type": "Thing",
+            "name": "International Convention for the Safety of Life at Sea"
+          },
+          {
+            "@type": "Thing",
+            "name": "International Ice Patrol"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.oceanliners.net/how-titanic-changed-maritime-safety#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.oceanliners.net/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "RMS Titanic Hub",
+            "item": "https://www.oceanliners.net/titanic"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How Titanic Changed Maritime Safety",
+            "item": "https://www.oceanliners.net/how-titanic-changed-maritime-safety"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.oceanliners.net/how-titanic-changed-maritime-safety#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How did Titanic change maritime safety?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Titanic helped drive major safety reforms, including lifeboat capacity for everyone aboard, more regular boat drills, continuous wireless radio watchkeeping, better ice reporting, and the first International Convention for the Safety of Life at Sea."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Did Titanic lead to more lifeboats on ships?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. One of the most visible reforms after Titanic was the expectation that passenger ships carry enough lifeboat capacity for all people aboard rather than relying on outdated tonnage-based rules."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What was SOLAS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SOLAS stands for the International Convention for the Safety of Life at Sea. The first version was adopted after the Titanic disaster to create international safety standards for passenger ships and other vessels."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,26,24,0.74);
+      --panel-soft:rgba(15,26,24,0.52);
+      --ink:#efe9dc;
+      --muted:#cfc2a8;
+      --faint:#9f9278;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,0.18);
+      --accent-line:rgba(191,164,106,0.34);
+      --edge:rgba(191,164,106,0.25);
+      --shadow:rgba(0,0,0,0.34);
+      --max:min(1080px, calc(100% - 2rem));
+      --measure:72ch;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Spectral", Georgia, serif;
+      line-height:1.65;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(191,164,106,0.13), transparent 32rem),
+        radial-gradient(circle at 82% 0%, rgba(255,255,255,0.06), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #0b1514 48%, #070d0c 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:0.11;
+      background-image:url('/tile3.png');
+      background-size:360px auto;
+      mix-blend-mode:screen;
+    }
+
+    a{ color:#ead59b; text-decoration:none; }
+    a:hover{ color:#fff1c2; text-decoration:underline; text-underline-offset:0.18em; }
+
+    .hero{
+      position:relative;
+      min-height:62vh;
+      display:grid;
+      align-items:end;
+      padding:3rem 0 3rem !important;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.2);
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.30), rgba(10,17,16,0.9)),
+        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.25), transparent 31rem),
+        linear-gradient(125deg, rgba(10,17,16,0.22), rgba(10,17,16,0.95)),
+        url('/titanic-maritime-safety.jpg') center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:42%;
+      background:linear-gradient(180deg, transparent, #0a1110 92%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:var(--max) !important;
+      margin:0 auto;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      max-width:100%;
+      padding:.42rem .68rem;
+      border:1px solid rgba(191,164,106,0.36);
+      border-radius:999px;
+      background:rgba(10,17,16,0.55);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.74rem;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      line-height:1.25;
+    }
+
+    .hero h1{
+      max-width:920px;
+      margin:.95rem 0 .75rem;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(2.25rem, 7vw, 5.15rem);
+      line-height:1.02;
+      letter-spacing:-.045em;
+      text-wrap:balance;
+      text-shadow:0 16px 34px rgba(0,0,0,0.45);
+    }
+
+    .page-kicker{
+      max-width:760px;
+      margin:0;
+      color:#e5dcc8;
+      font-size:clamp(1.05rem, 2vw, 1.32rem);
+      line-height:1.55;
+      text-shadow:0 10px 24px rgba(0,0,0,0.36);
+    }
+
+    .meta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+      margin-top:1.25rem;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      padding:.38rem .65rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:999px;
+      background:rgba(10,17,16,0.48);
+      color:var(--muted);
+      font-size:.86rem;
+    }
+
+    main{
+      width:var(--max);
+      margin:0 auto;
+      padding:2.4rem 0 4rem;
+    }
+
+    .entry-shell{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) 315px;
+      gap:1.25rem;
+      align-items:start;
+    }
+
+    .article-card,
+    .side-card,
+    .answer-box,
+    .link-card,
+    .note{
+      border:1px solid var(--edge);
+      background:linear-gradient(180deg, rgba(18,31,29,0.82), rgba(11,19,18,0.76));
+      box-shadow:0 18px 45px var(--shadow);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+    }
+
+    .article-card{
+      border-radius:24px;
+      padding:clamp(1.1rem, 3vw, 2rem);
+    }
+
+    .prose{ max-width:var(--measure); }
+
+    .prose h2,
+    .side-card h2{
+      margin:2rem 0 .75rem;
+      color:#f4ead2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(1.42rem, 3vw, 2.1rem);
+      line-height:1.18;
+      letter-spacing:-.025em;
+    }
+
+    .prose h2:first-child{ margin-top:0; }
+
+    .prose h2::after,
+    .side-card h2::after{
+      content:"";
+      display:block;
+      width:88px;
+      height:1px;
+      margin:.62rem 0 0;
+      background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+    }
+
+    .prose h3{
+      margin:1.45rem 0 .45rem;
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1.1rem;
+      letter-spacing:.01em;
+    }
+
+    .prose p{ margin:.75rem 0 1rem; color:#e7decb; }
+    .prose strong{ color:#fff4d3; }
+
+    .answer-box{
+      margin:0 0 1.5rem;
+      padding:1.1rem 1.15rem;
+      border-radius:18px;
+      background:
+        radial-gradient(circle at top left, rgba(191,164,106,0.18), transparent 18rem),
+        rgba(15,26,24,0.78);
+    }
+
+    .answer-box .label{
+      display:block;
+      color:#d9c17f;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.78rem;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      margin-bottom:.4rem;
+    }
+
+    .answer-box p{
+      margin:0;
+      color:#f1eadc;
+      font-size:1.08rem;
+      line-height:1.55;
+    }
+
+    .accuracy-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:.8rem;
+      margin:1.15rem 0 1.45rem;
+    }
+
+    .accuracy-card{
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.21);
+      border-radius:18px;
+      background:rgba(8,15,14,0.42);
+    }
+
+    .accuracy-card .icon{
+      display:inline-grid;
+      place-items:center;
+      width:2rem;
+      height:2rem;
+      margin-bottom:.55rem;
+      border-radius:999px;
+      color:#f5e7bb;
+      background:rgba(191,164,106,0.14);
+      border:1px solid rgba(191,164,106,0.24);
+    }
+
+    .accuracy-card h3{
+      margin:.15rem 0 .38rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:1rem;
+      line-height:1.25;
+    }
+
+    .accuracy-card p{
+      margin:0;
+      color:#d8ceb8;
+      font-size:.95rem;
+      line-height:1.5;
+    }
+
+    .comparison-list{
+      display:grid;
+      gap:.75rem;
+      margin:1rem 0 1.35rem;
+    }
+
+    .comparison-item{
+      padding:.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.19);
+      border-radius:17px;
+      background:rgba(8,15,14,0.34);
+    }
+
+    .comparison-item b{
+      display:block;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      margin-bottom:.25rem;
+    }
+
+    .comparison-item span{
+      display:block;
+      color:#d8ceb8;
+      line-height:1.5;
+    }
+
+    .note{
+      margin:1.3rem 0;
+      padding:1rem 1.05rem;
+      border-radius:18px;
+      background:rgba(10,17,16,0.54);
+    }
+
+    .note p{ margin:0; color:#d8ceb8; }
+
+    .source-list{
+      margin:1rem 0 0;
+      padding-left:1.1rem;
+      color:#d9cfbb;
+      font-size:.95rem;
+    }
+
+    .source-list li{ margin:.35rem 0; }
+
+    .side-stack{
+      position:sticky;
+      top:1rem;
+      display:grid;
+      gap:1rem;
+    }
+
+    .side-card{
+      border-radius:22px;
+      padding:1rem;
+    }
+
+    .side-card h2{
+      margin-top:0;
+      font-size:1.18rem;
+    }
+
+    .side-card p{
+      margin:.55rem 0 .85rem;
+      color:#d8ceb8;
+      font-size:.96rem;
+      line-height:1.5;
+    }
+
+    .toc{
+      display:grid;
+      gap:.4rem;
+      margin-top:.65rem;
+    }
+
+    .toc a,
+    .link-card{
+      display:block;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.18);
+      background:rgba(8,15,14,0.36);
+      padding:.7rem .78rem;
+      color:#eadcae;
+      text-decoration:none;
+      line-height:1.3;
+    }
+
+    .toc a:hover,
+    .link-card:hover{
+      border-color:rgba(191,164,106,0.42);
+      background:rgba(191,164,106,0.08);
+      text-decoration:none;
+    }
+
+    .link-card{ margin:.55rem 0; }
+
+    .link-card span{
+      display:block;
+      color:#a99d84;
+      font-size:.82rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:.15rem;
+    }
+
+    .faq{
+      margin-top:2rem;
+      border-top:1px solid rgba(191,164,106,0.2);
+      padding-top:1rem;
+    }
+
+    details.faq-item{
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      background:rgba(8,15,14,0.32);
+      margin:.7rem 0;
+      overflow:hidden;
+    }
+
+    .faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      padding:.9rem 1rem;
+      color:#f0e4c2;
+      font-family:"Libre Baskerville", Georgia, serif;
+    }
+
+    .faq-item summary::-webkit-details-marker{ display:none; }
+
+    .faq-item p{
+      margin:0;
+      padding:0 1rem 1rem;
+      color:#d8ceb8;
+    }
+
+    .next-steps{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:.8rem;
+      margin-top:1rem;
+    }
+
+    .cta-card{
+      display:block;
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.23);
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(191,164,106,0.09), rgba(8,15,14,0.34));
+      text-decoration:none;
+    }
+
+    .cta-card b{
+      display:block;
+      color:#f3e7c7;
+      font-family:"Libre Baskerville", Georgia, serif;
+      line-height:1.25;
+      margin-bottom:.35rem;
+    }
+
+    .cta-card span{
+      display:block;
+      color:#d3c8b1;
+      font-size:.94rem;
+      line-height:1.45;
+    }
+
+    .cta-card:hover{
+      border-color:rgba(191,164,106,0.48);
+      background:linear-gradient(180deg, rgba(191,164,106,0.14), rgba(8,15,14,0.42));
+      text-decoration:none;
+    }
+
+    @media (max-width:900px){
+      .entry-shell{ grid-template-columns:1fr; }
+      .side-stack{ position:static; }
+      .accuracy-grid,
+      .next-steps{ grid-template-columns:1fr; }
+      .hero{ min-height:58vh; padding-top:6.5rem; }
+    }
+
+    @media (max-width:560px){
+      main{ padding-top:1.25rem; }
+      .article-card{ border-radius:20px; padding:1rem; }
+      .hero{ padding-bottom:2.15rem; }
+      .meta-pill{ font-size:.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Titanic quick answer · safety reforms</span>
+      <h1>How Titanic Changed Maritime Safety</h1>
+      <p class="page-kicker">Titanic did not create maritime safety from nothing, but the disaster exposed how outdated rules, weak assumptions, and fragmented international practice could fail at once.</p>
+      <div class="meta-row" aria-label="Page context">
+        <span class="meta-pill">RMS Titanic</span>
+        <span class="meta-pill">Lifeboat reform</span>
+        <span class="meta-pill">SOLAS</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="entry-shell">
+      <article class="article-card">
+        <div class="prose">
+          <div class="answer-box" id="answer">
+            <span class="label">Short answer</span>
+            <p><strong>Titanic changed maritime safety by forcing governments, shipowners, and regulators to rethink what “safe enough” meant.</strong> After the disaster, reforms focused on lifeboat capacity, lifeboat drills, continuous wireless watchkeeping, ice reporting, North Atlantic ice patrols, and international safety standards through the first SOLAS convention.</p>
+          </div>
+
+          <h2 id="basic-answer">The basic answer</h2>
+          <p>Before Titanic, large passenger ships were often judged safe through a mixture of engineering confidence, compartment design, tonnage-based rules, and customary practice. Titanic’s loss made those assumptions impossible to defend in the same way. A ship could be advanced, prestigious, and legally compliant, yet still leave too many people without a clear route to survival.</p>
+
+          <p>The reforms that followed did not come from one single lesson. They came from several overlapping failures: too few lifeboat places, uncertain evacuation practice, missed or underused ice warnings, limited radio watchkeeping, and the absence of strong international agreement for passenger-ship safety.</p>
+
+          <div class="accuracy-grid" aria-label="Titanic maritime safety reform overview">
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Lifeboats for all</h3>
+              <p>The disaster made it clear that lifeboat capacity had to be tied to people aboard, not simply to a ship’s tonnage.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Radio watchkeeping</h3>
+              <p>Wireless communication became a safety system that needed continuous attention, not just a commercial convenience.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>International rules</h3>
+              <p>Titanic helped push maritime safety toward international standards, including the first Safety of Life at Sea convention.</p>
+            </section>
+          </div>
+
+          <h2 id="lifeboats">Lifeboat capacity became impossible to ignore</h2>
+          <p>The most visible safety issue was lifeboat capacity. Titanic carried more lifeboats than British regulations required at the time, but not enough spaces for everyone aboard. That distinction is central. Titanic was not simply a case of a ship ignoring the law; it was a case of the law failing to match the scale of modern passenger liners.</p>
+
+          <p>After the disaster, the older tonnage-based logic looked dangerously inadequate. The public lesson was direct: every person aboard needed a realistic place in a lifeboat or approved survival craft. Lifeboats could no longer be treated as a partial ferrying system or as a symbolic supplement to a ship thought to be nearly unsinkable.</p>
+
+          <div class="note">
+            <p><strong>Curator’s note:</strong> A careful reading avoids the easy claim that Titanic carried “no lifeboats” or that the issue was simple negligence alone. The deeper problem was a regulatory culture that had not kept pace with ship size, passenger numbers, and worst-case thinking.</p>
+          </div>
+
+          <h2 id="drills">Boat drills and evacuation practice mattered more afterward</h2>
+          <p>Titanic also showed that equipment alone was not enough. Lifeboats had to be loaded, lowered, crewed, and coordinated under pressure. Confusion over capacity, uneven loading, passenger hesitation, and uncertainty among some crew members all shaped the evacuation.</p>
+
+          <p>After Titanic, boat drills became a more serious part of the safety conversation. The point was not only to own boats, but to make sure officers, crew, and passengers understood the process before a crisis. A lifeboat that exists on paper is very different from a lifeboat that can be filled and lowered efficiently in darkness, cold, and fear.</p>
+
+          <h2 id="wireless">Wireless radio became a continuous safety watch</h2>
+          <p>Wireless radio was already transforming ocean travel before Titanic, but the disaster changed how people understood its safety value. Titanic’s distress calls brought Carpathia to the rescue, proving the life-saving power of radio at sea. At the same time, the disaster raised hard questions about messages, attention, and whether nearby ships could reliably receive distress calls at all hours.</p>
+
+          <p>Afterward, continuous wireless watchkeeping became a major reform priority. Radio could not be treated only as a passenger-message business or a modern convenience. It had to function as an always-ready emergency system connecting ships, shore stations, and rescue authorities.</p>
+
+          <h2 id="ice">Ice reporting and North Atlantic patrols became formalized</h2>
+          <p>Titanic struck an iceberg in a known ice-risk environment. Ships had reported ice in the North Atlantic, but the disaster showed that scattered warnings and individual judgment were not enough. The problem required a more systematic approach to observation, reporting, and route awareness.</p>
+
+          <p>One major result was the development of organized ice patrol work in the North Atlantic. The idea was simple but important: if shipping lanes crossed dangerous seasonal ice regions, then ice monitoring had to become a shared safety responsibility rather than a matter of chance reports alone.</p>
+
+          <div class="comparison-list" aria-label="Titanic safety changes by category">
+            <div class="comparison-item">
+              <b>Lifeboats</b>
+              <span>Passenger ships moved toward lifeboat and survival-craft capacity for everyone aboard, not only the minimum required by older tonnage formulas.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Wireless</b>
+              <span>Radio became more clearly tied to continuous distress monitoring, emergency coordination, and safety communication.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Ice patrols</b>
+              <span>North Atlantic ice observation became more organized, helping ships avoid dangerous ice fields rather than relying only on scattered warnings.</span>
+            </div>
+            <div class="comparison-item">
+              <b>International standards</b>
+              <span>The disaster helped drive international rulemaking through the first Safety of Life at Sea convention.</span>
+            </div>
+          </div>
+
+          <h2 id="solas">The first SOLAS convention</h2>
+          <p>Perhaps Titanic’s most important long-term safety legacy was the movement toward international agreement. Ocean liners crossed national boundaries constantly. A safety problem on the North Atlantic could involve a British ship, American passengers, European emigrants, Canadian rescue routes, and international shipping lanes.</p>
+
+          <p>The first International Convention for the Safety of Life at Sea, commonly known as SOLAS, was adopted after the Titanic disaster. It addressed areas such as lifeboats, wireless communication, ice danger, and ship safety practices. Later versions of SOLAS would become one of the central frameworks of modern maritime safety.</p>
+
+          <h2 id="myth">What Titanic did not change by itself</h2>
+          <p>Titanic did not instantly make sea travel risk-free. Nor did it produce every modern safety rule in one stroke. Maritime safety evolved through later disasters, new technology, changing ship design, wartime experience, and repeated revision of international conventions.</p>
+
+          <p>That said, Titanic became a turning point because it made the consequences of complacency publicly undeniable. The disaster gave reformers, investigators, and governments a specific case that exposed weaknesses across the system.</p>
+
+          <h2 id="why-it-mattered">Why the reforms mattered</h2>
+          <p>The deeper legacy of Titanic was not just “more lifeboats.” It was a shift in safety philosophy. Regulators and operators had to think less about what usually worked and more about what could happen when several assumptions failed together.</p>
+
+          <p>That is why Titanic remains important in maritime history. The disaster forced a modern passenger-ship world to confront evacuation, communication, ice risk, and international accountability as connected parts of one safety system.</p>
+
+          <section class="faq" id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <details class="faq-item">
+              <summary>Did Titanic lead to enough lifeboats for everyone?</summary>
+              <p>Yes, the disaster helped force the principle that passenger ships should carry lifeboat or survival-craft capacity for everyone aboard, rather than relying on outdated tonnage-based minimums.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Did Titanic change wireless radio rules?</summary>
+              <p>Yes. Titanic showed that wireless radio could save lives, but only if distress messages could be received and acted on. Continuous radio watchkeeping became a major safety priority after the disaster.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What is Titanic’s connection to SOLAS?</summary>
+              <p>The Titanic disaster helped drive the first International Convention for the Safety of Life at Sea. SOLAS became a major international framework for maritime safety standards.</p>
+            </details>
+          </section>
+
+          <h2 id="next">Where to go next</h2>
+          <p>This page is a quick entry point into Titanic’s safety legacy. For wider context, continue into Titanic’s main hub, the sinking timeline, and related White Star Line material.</p>
+
+          <div class="next-steps" aria-label="Related Titanic pages">
+            <a class="cta-card" href="/titanic">
+              <b>RMS Titanic Hub</b>
+              <span>Start from the main Titanic guide and move through timelines, essays, public rooms, artifacts, and evidence pages.</span>
+            </a>
+            <a class="cta-card" href="/how-long-did-it-take-titanic-to-sink">
+              <b>How Long Did Titanic Take to Sink?</b>
+              <span>Follow the timeline from iceberg impact to the ship’s final disappearance beneath the Atlantic.</span>
+            </a>
+            <a class="cta-card" href="/white-star-line">
+              <b>White Star Line Hub</b>
+              <span>Place Titanic within the broader company history of Olympic, Britannic, Atlantic liners, tenders, and public memory.</span>
+            </a>
+          </div>
+
+          <h2 id="sources">Source notes</h2>
+          <p>This entry summarizes the broad safety reforms associated with the Titanic disaster, including official inquiry concerns, post-disaster regulation, lifeboat and wireless reforms, ice patrol development, and the early Safety of Life at Sea framework. It is intended as an interpretive overview rather than a technical legal history of every later maritime rule.</p>
+          <ul class="source-list">
+            <li>United States and British inquiry material concerning Titanic’s loss, lifeboats, ice warnings, and wireless communication.</li>
+            <li>Early twentieth-century maritime safety reforms and the first International Convention for the Safety of Life at Sea.</li>
+            <li>Historical accounts of North Atlantic ice reporting and the development of organized ice patrol work.</li>
+            <li>Specialist Titanic scholarship on evacuation, regulation, and the disaster’s long-term safety legacy.</li>
+          </ul>
+        </div>
+      </article>
+
+      <aside class="side-stack" aria-label="Page navigation and related links">
+        <section class="side-card">
+          <h2>On this page</h2>
+          <nav class="toc" aria-label="Section links">
+            <a href="#answer">Short answer</a>
+            <a href="#basic-answer">Basic answer</a>
+            <a href="#lifeboats">Lifeboats</a>
+            <a href="#drills">Boat drills</a>
+            <a href="#wireless">Wireless radio</a>
+            <a href="#ice">Ice patrols</a>
+            <a href="#solas">SOLAS</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </section>
+
+        <section class="side-card">
+          <h2>Best next link</h2>
+          <p>For readers who want more Titanic context, send them into the main hub.</p>
+          <a class="link-card" href="/titanic">
+            <span>Content hub</span>
+            RMS Titanic Hub
+          </a>
+        </section>
+
+        <section class="side-card">
+          <h2>Titanic paths</h2>
+          <a class="link-card" href="/how-long-did-it-take-titanic-to-sink">
+            <span>Timeline</span>
+            How Long Did Titanic Take to Sink?
+          </a>
+          <a class="link-card" href="/did-anyone-survive-in-the-water-after-titanic-sank">
+            <span>Lifeboats & survival</span>
+            Did Anyone Survive in the Water?
+          </a>
+          <a class="link-card" href="/what-happened-to-titanic-artifacts">
+            <span>Artifacts & evidence</span>
+            What Happened to Titanic Artifacts?
+          </a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+</body>
+</html>
