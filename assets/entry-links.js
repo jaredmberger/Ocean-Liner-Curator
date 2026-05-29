@@ -254,6 +254,13 @@
           href: "/ocean-liners-are-ships"
         },
         {
+  meta: "Research collection · Maritime culture",
+  title: "Ocean Liners and National Identity",
+  desc:
+    "How nations used ocean liners to project prestige, technology, culture, and power across the Atlantic and around the world.",
+  href: "/ocean-liners-and-national-identity"
+},
+        {
           meta: "Experience · Voyages",
           title: "Why Did Ocean Liners Have Classes?",
           desc:
