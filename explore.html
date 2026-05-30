@@ -1896,13 +1896,20 @@ mix-blend-mode:soft-light;
   overflow:hidden;
   border:1px solid rgba(191,164,106,0.34);
   border-radius:18px;
+
   background:
-    radial-gradient(circle at 92% 15%, rgba(191,164,106,0.16), transparent 34%),
-    linear-gradient(120deg, rgba(255,255,255,0.045), rgba(255,255,255,0.012) 48%, transparent),
-    rgba(15,27,25,0.56);
+  radial-gradient(circle at 92% 15%, rgba(191,164,106,0.14), transparent 34%),
+  radial-gradient(circle at 8% 85%, rgba(160,42,42,0.18), transparent 38%),
+  linear-gradient(
+    135deg,
+    rgba(15,33,67,0.90) 0%,
+    rgba(19,42,84,0.88) 45%,
+    rgba(10,22,46,0.92) 100%
+  );
+
   box-shadow:
     0 12px 26px rgba(0,0,0,0.30),
-    inset 0 1px 0 rgba(255,255,255,0.04);
+    inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
 .hero-special-feature::after{
