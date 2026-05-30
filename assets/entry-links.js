@@ -325,6 +325,13 @@
     "How two famous liner companies shaped Atlantic travel, speed, comfort, luxury, migration, tragedy, and maritime memory.",
   href: "/why-did-cunard-and-white-star-matter"
 },
+{
+  meta: "Atlantic systems · News & communication",
+  title: "How News Crossed the Atlantic Before the Internet",
+  desc:
+    "Before instant communication, Atlantic news moved through ships, mail, newspapers, telegraph cables, wireless, radio, and eventually aircraft.",
+  href: "/how-news-crossed-the-atlantic-before-the-internet"
+},
         
         {
           meta: "Basics · Ships",
