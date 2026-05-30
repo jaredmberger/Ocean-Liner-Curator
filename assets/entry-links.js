@@ -332,6 +332,13 @@
     "Before instant communication, Atlantic news moved through ships, mail, newspapers, telegraph cables, wireless, radio, and eventually aircraft.",
   href: "/how-news-crossed-the-atlantic-before-the-internet"
 },
+{
+  meta: "Atlantic history · Foundations",
+  title: "The Atlantic Before Ocean Liners",
+  desc:
+    "Before steam liners transformed travel, the Atlantic was crossed by sailing ships, packet routes, migrants, merchants, mail, and empire.",
+  href: "/the-atlantic-before-ocean-liners"
+},
         
         {
           meta: "Basics · Ships",
