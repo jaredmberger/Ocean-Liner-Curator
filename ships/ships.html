@@ -3200,7 +3200,9 @@ align-items:center !important;
 
   border:1px solid rgba(191,164,106,.28);
   border-radius:18px;
-
+backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
   background:
     radial-gradient(circle at 92% 15%, rgba(191,164,106,.12), transparent 34%),
     linear-gradient(120deg, rgba(255,255,255,.045), rgba(255,255,255,.015) 48%, transparent),
@@ -3208,10 +3210,6 @@ align-items:center !important;
 
   text-decoration:none;
   color:inherit;
-
-  box-shadow:
-    0 12px 26px rgba(0,0,0,.24),
-    inset 0 1px 0 rgba(255,255,255,.04);
 }
 
 .gpt-callout:hover{
@@ -3246,7 +3244,7 @@ align-items:center !important;
   width:64px;
   height:64px;
 
-  background-image:url("/assets/ocean-liner-gpt-glyph.png");
+  background-image:url("/ai-stars.png");
   background-repeat:no-repeat;
   background-position:center;
   background-size:contain;
