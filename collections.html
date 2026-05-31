@@ -1053,8 +1053,22 @@
   border-left:4px solid #bfa46a;
   border-radius:12px;
 
-  background:rgba(191,164,106,.08);
+  background:rgba(191,164,106,.06);
   color:#ddd3bf;
+
+  /* Frosted glass */
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+
+  /* Glass-style border */
+  border-top:1px solid rgba(255,255,255,.06);
+  border-right:1px solid rgba(255,255,255,.04);
+  border-bottom:1px solid rgba(255,255,255,.04);
+
+  /* Lift off the page */
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.05);
 }
     
     </style>
