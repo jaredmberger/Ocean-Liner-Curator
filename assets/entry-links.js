@@ -13,7 +13,13 @@
     "Engineering, migration, luxury, tragedy, national identity, and vanished worlds all help explain why ocean liners still capture attention today.",
   href: "/why-ocean-liners-still-fascinate-people"
 },
-      
+  {
+  meta: "Explore · Guided discovery",
+  title: "Not sure where to start?",
+  desc:
+    "Ask Ocean Liner GPT about ships, companies, Atlantic crossings, passenger life, and maritime history.",
+  href: "/ocean-liner-gpt"
+},    
         {
           meta: "Basics · Ships",
           title: "What is the difference between an ocean liner and a cruise ship?",
@@ -49,6 +55,13 @@
             "How marketing, media language, engineering confidence, and later memory shaped the myth.",
           href: "/why-was-titanic-called-unsinkable"
         },
+        {
+  meta: "Ocean Liner GPT · Research tool",
+  title: "What can Ocean Liner GPT help with?",
+  desc:
+    "A conversational guide for exploring ships, routes, companies, collecting questions, and Atlantic history.",
+  href: "/what-can-ocean-liner-gpt-help-with"
+},
         {
           meta: "Leviathan · History",
           title: "What Is the SS Leviathan and Why Was It Important?",
@@ -346,7 +359,21 @@
           desc:
             "A clear distinction between scheduled ocean transport and leisure-centered cruising.",
           href: "/ocean-liner-vs-cruise-ship"
-        }
+        },
+        {
+  meta: "Ask Ocean Liner GPT · Discovery",
+  title: "Which ocean liner should I explore next?",
+  desc:
+    "Use Ocean Liner GPT to discover ships, compare liners, and find new paths through maritime history.",
+  href: "/ocean-liner-gpt"
+},
+{
+  meta: "Questions · Ocean Liner GPT",
+  title: "Why did speed matter on the Atlantic?",
+  desc:
+    "Ask Ocean Liner GPT about speed, migration, mail, safety, passenger life, and the wider Atlantic story.",
+  href: "/ocean-liner-gpt"
+}
       ]
     }
   };
