@@ -18,7 +18,7 @@
   title: "Not sure where to start?",
   desc:
     "Ask Ocean Liner GPT about ships, companies, Atlantic crossings, passenger life, and maritime history.",
-  href: "/ocean-liner-gpt"
+  href: "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt"
 },    
         {
           meta: "Basics · Ships",
@@ -365,14 +365,14 @@
   title: "Which ocean liner should I explore next?",
   desc:
     "Use Ocean Liner GPT to discover ships, compare liners, and find new paths through maritime history.",
-  href: "/ocean-liner-gpt"
+  href: "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt"
 },
 {
   meta: "Questions · Ocean Liner GPT",
   title: "Why did speed matter on the Atlantic?",
   desc:
     "Ask Ocean Liner GPT about speed, migration, mail, safety, passenger life, and the wider Atlantic story.",
-  href: "/ocean-liner-gpt"
+  href: "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt"
 }
       ]
     }
