@@ -88,7 +88,7 @@
     const heading = rotatedHeading(pageSlug, clusterKey);
     const items = filterItemsForPage(def.items, pageSlug);
 
-    if (items.length < 2) return "";
+    if (items.length < (def.allowSingle ? 1 : 2)) return "";
 
     const noteBits = [];
     if (def.noteStrong) noteBits.push(`<strong>${def.noteStrong}</strong>`);
@@ -114,12 +114,19 @@
     `;
   }
 
-  const cluster = (noteStrong, note, items, ariaLabel) => ({
-    noteStrong,
-    note,
-    items,
-    ariaLabel
-  });
+  const cluster = (
+  noteStrong,
+  note,
+  items,
+  ariaLabel,
+  allowSingle = false
+) => ({
+  noteStrong,
+  note,
+  items,
+  ariaLabel,
+  allowSingle
+});
 
   /* =========================
      Clusters
@@ -975,3 +982,46 @@
     guide.appendChild(wrapper);
   }
 })();
+
+window.askOceanLinerGPT = function () {
+  const pageURL = window.location.href;
+
+  const prompt = `I'm reading this Ocean Liner Curator page: ${pageURL}.
+Please expand on this topic while maintaining evidence-first standards.
+Clearly distinguish between documented fact, scholarly consensus, and interpretation.`;
+
+  navigator.clipboard.writeText(prompt)
+    .then(() => {
+      const modal = document.getElementById("gpt-modal");
+      if (modal) modal.classList.add("show");
+    })
+    .catch(() => {
+      window.open(
+        "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt",
+        "_blank"
+      );
+    });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("gpt-modal");
+  const continueBtn = document.getElementById("gpt-continue");
+  const cancelBtn = document.getElementById("gpt-cancel");
+
+  if (continueBtn) {
+    continueBtn.addEventListener("click", function () {
+      window.open(
+        "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt",
+        "_blank"
+      );
+
+      if (modal) modal.classList.remove("show");
+    });
+  }
+
+  if (cancelBtn) {
+    cancelBtn.addEventListener("click", function () {
+      if (modal) modal.classList.remove("show");
+    });
+  }
+});
