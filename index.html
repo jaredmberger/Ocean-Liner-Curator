@@ -2349,6 +2349,7 @@ footer .orientation-context .note{
   font-variant: small-caps;
   letter-spacing: 0.08em;
   line-height: 1.45;
+  font-size: 0.88rem;
   color: rgba(230,223,207,0.95);
   margin-bottom: 0.65rem;
   
@@ -3390,8 +3391,8 @@ font-size: 1rem;
 
     lastEntryHref = entry.href;
 
-    titleEl.textContent = entry.title;
-    descEl.textContent = entry.desc || "";
+    titleEl.textContent = "✧ " + entry.title;
+    descEl.textContent = "✧ " + entry.desc || "";
     linkEl.href = entry.href;
     linkEl.textContent = "Read the answer »";
   }
