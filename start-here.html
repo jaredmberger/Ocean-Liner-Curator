@@ -906,6 +906,31 @@
 
   text-wrap:balance;
 }
+
+.gpt-inline-note{
+  margin:1rem 0;
+  padding:.85rem 1rem;
+
+  border-left:4px solid #bfa46a;
+  border-radius:12px;
+
+  background:rgba(191,164,106,.06);
+  color:#ddd3bf;
+
+  /* Frosted glass */
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+
+  /* Glass-style border */
+  border-top:1px solid rgba(255,255,255,.06);
+  border-right:1px solid rgba(255,255,255,.04);
+  border-bottom:1px solid rgba(255,255,255,.04);
+
+  /* Lift off the page */
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.05);
+}
   
 </style>
 
@@ -952,6 +977,12 @@
           <li>Not a news site or content feed optimized for novelty</li>
           <li>Not a fan archive where “claimed” equals “confirmed”</li>
         </ul>
+        
+        <div class="gpt-inline-note">
+  <strong>Ocean Liner GPT:</strong>
+  Looking for a specific ship, route, company, or topic?
+  <a href="/ocean-liner-gpt">Ask Ocean Liner GPT.</a>
+</div>
 
         <section class="ai-transparency">
           <h2>AI Use &amp; Transparency</h2>
