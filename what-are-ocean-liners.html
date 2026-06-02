@@ -348,6 +348,32 @@
       .container::after{inset:-10%;background-size:240px 240px, auto, auto, auto, auto, auto, auto;background-position:center;}
     }
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.button{transition:none;}}
+    
+    .gpt-inline-note{
+  margin:1rem 0;
+  padding:.85rem 1rem;
+
+  border-left:4px solid #bfa46a;
+  border-radius:12px;
+
+  background:rgba(191,164,106,.06);
+  color:#ddd3bf;
+
+  /* Frosted glass */
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+
+  /* Glass-style border */
+  border-top:1px solid rgba(255,255,255,.06);
+  border-right:1px solid rgba(255,255,255,.04);
+  border-bottom:1px solid rgba(255,255,255,.04);
+
+  /* Lift off the page */
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.05);
+}
+    
   </style>
 </head>
 
@@ -464,7 +490,11 @@
       </div>
     </section>
 
-    <p>For a structured overview of how ocean liner artifacts are evaluated—evidence standards, attribution limits, and common pitfalls—start with <a href="/ocean-liner-collecting-guide">Ocean Liner Collecting: A Curated Guide</a>.</p>
+    <div class="gpt-inline-note">
+  <strong>Ocean Liner GPT:</strong>
+  Looking for a specific ship, route, company, or topic?
+  <a href="/ocean-liner-gpt">Ask Ocean Liner GPT.</a>
+</div>
 
     <div class="olc-entry-links" data-entry-set="general"></div>
 
