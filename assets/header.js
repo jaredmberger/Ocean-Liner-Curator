@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", async () => {
+
+let copyright = document.querySelector(".copyright");
+
+if (!copyright) {
+  let footer = document.querySelector("footer");
+
+  if (!footer) {
+    footer = document.createElement("footer");
+    footer.className = "page-footer";
+    document.body.appendChild(footer);
+  }
+
+  copyright = document.createElement("p");
+  copyright.className = "copyright";
+  copyright.textContent =
+    "© 2026 Ocean Liner Curator. All rights reserved.";
+
+  footer.appendChild(copyright);
+}
+
   // ---- Footer star homepage link ----
   const copyright = document.querySelector(".copyright");
 
