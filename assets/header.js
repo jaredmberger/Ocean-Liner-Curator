@@ -25,6 +25,70 @@ document.addEventListener("DOMContentLoaded", async () => {
       copyright.insertAdjacentElement("afterend", star);
     }
   }
+  
+  // ---- Page feedback widget ----
+(function injectPageFeedback(){
+  const copyright = document.querySelector(".copyright");
+  if (!copyright || document.querySelector(".olc-feedback")) return;
+
+  const feedback = document.createElement("section");
+  feedback.className = "olc-feedback";
+  feedback.setAttribute("aria-label", "Page feedback");
+
+  feedback.innerHTML = `
+    <p class="olc-feedback-title">Was this page worth exploring?</p>
+    <div class="olc-feedback-actions">
+      <button type="button" data-feedback="up" aria-label="Thumbs up">↑</button>
+      <button type="button" data-feedback="down" aria-label="Thumbs down">↓</button>
+    </div>
+    <p class="olc-feedback-response" hidden>Thank you — your feedback was sent.</p>
+  `;
+
+  copyright.insertAdjacentElement("beforebegin", feedback);
+
+  feedback.addEventListener("click", async (e) => {
+    const btn = e.target.closest("button[data-feedback]");
+    if (!btn) return;
+
+    const vote = btn.dataset.feedback;
+
+    feedback.querySelectorAll("button").forEach(b => {
+      b.disabled = true;
+      b.classList.toggle("selected", b === btn);
+    });
+
+    // Optional analytics event
+    if (typeof gtag === "function") {
+      gtag("event", "page_feedback", {
+        feedback_vote: vote,
+        page_path: window.location.pathname,
+        page_title: document.title
+      });
+    }
+
+    // Replace this URL with your Formspree endpoint
+    try {
+      await fetch("https://formspree.io/f/xykagjgl", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          vote,
+          page: window.location.href,
+          title: document.title,
+          timestamp: new Date().toISOString()
+        })
+      });
+    } catch (err) {
+      console.warn("Feedback email failed:", err);
+    }
+
+    const response = feedback.querySelector(".olc-feedback-response");
+    if (response) response.hidden = false;
+  });
+})();
 
   // ---- Google Analytics ----
   (function injectGA() {

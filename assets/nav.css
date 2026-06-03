@@ -1143,3 +1143,67 @@ a.footer-star:focus{
   }
 
 }
+
+.olc-feedback{
+  width:min(680px, calc(100% - 2rem));
+  margin:2.25rem auto 1.25rem;
+  padding:1rem 1.15rem;
+  text-align:center;
+
+  border:1px solid rgba(191,164,106,0.24);
+  border-radius:18px;
+  background:rgba(10,17,16,0.18);
+
+  backdrop-filter:blur(2px) saturate(105%);
+  -webkit-backdrop-filter:blur(2px) saturate(105%);
+
+  box-shadow:0 10px 24px rgba(0,0,0,0.32);
+}
+
+.olc-feedback-title{
+  margin:0 0 .75rem;
+  color:rgba(230,223,207,0.88);
+  font-family:"Libre Baskerville", Georgia, serif;
+  font-size:.95rem;
+  letter-spacing:.04em;
+}
+
+.olc-feedback-actions{
+  display:flex;
+  justify-content:center;
+  gap:.8rem;
+}
+
+.olc-feedback button{
+  width:44px;
+  height:44px;
+  border-radius:999px;
+  border:1px solid rgba(191,164,106,0.38);
+  background:rgba(191,164,106,0.08);
+  color:#f4ead2;
+  font-size:1.2rem;
+  cursor:pointer;
+  transition:transform .15s ease, border-color .15s ease, background .15s ease;
+}
+
+.olc-feedback button:hover{
+  transform:translateY(-1px);
+  border-color:rgba(191,164,106,0.65);
+  background:rgba(191,164,106,0.14);
+}
+
+.olc-feedback button.selected{
+  border-color:rgba(191,164,106,0.85);
+  background:rgba(191,164,106,0.20);
+}
+
+.olc-feedback button:disabled{
+  cursor:default;
+  opacity:.85;
+}
+
+.olc-feedback-response{
+  margin:.75rem 0 0;
+  color:rgba(205,187,141,0.9);
+  font-size:.85rem;
+}
