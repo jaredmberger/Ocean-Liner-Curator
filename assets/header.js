@@ -1,121 +1,112 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  // ---- Ensure footer/copyright exists ----
+  let copyright = document.querySelector(".copyright");
 
-let copyright = document.querySelector(".copyright");
+  if (!copyright) {
+    let footer = document.querySelector("footer");
 
-if (!copyright) {
-  let footer = document.querySelector("footer");
+    if (!footer) {
+      footer = document.createElement("footer");
+      footer.className = "page-footer";
+      document.body.appendChild(footer);
+    }
 
-  if (!footer) {
-    footer = document.createElement("footer");
-    footer.className = "page-footer";
-    document.body.appendChild(footer);
+    copyright = document.createElement("p");
+    copyright.className = "copyright";
+    copyright.textContent = "© 2026 Ocean Liner Curator. All rights reserved.";
+
+    footer.appendChild(copyright);
   }
-
-  copyright = document.createElement("p");
-  copyright.className = "copyright";
-  copyright.textContent =
-    "© 2026 Ocean Liner Curator. All rights reserved.";
-
-  footer.appendChild(copyright);
-}
 
   // ---- Footer star homepage link ----
-  const copyright = document.querySelector(".copyright");
+  const existing = document.querySelector(".footer-star");
 
-  if (copyright) {
-    const existing = document.querySelector(".footer-star");
+  if (existing) {
+    if (existing.tagName.toLowerCase() !== "a") {
+      const link = document.createElement("a");
+      link.className = existing.className;
+      link.href = "/";
+      link.setAttribute("aria-label", "Return to OceanLiners.net homepage");
+      link.textContent = existing.textContent || "★";
 
-    if (existing) {
-      if (existing.tagName.toLowerCase() !== "a") {
-        const link = document.createElement("a");
-        link.className = existing.className;
-        link.href = "/";
-        link.setAttribute("aria-label", "Return to OceanLiners.net homepage");
-        link.textContent = existing.textContent || "★";
-
-        existing.replaceWith(link);
-      }
-    } else {
-      const star = document.createElement("a");
-      star.className = "footer-star";
-      star.href = "/";
-      star.setAttribute("aria-label", "Return to OceanLiners.net homepage");
-      star.textContent = "★";
-
-      copyright.insertAdjacentElement("afterend", star);
+      existing.replaceWith(link);
     }
+  } else {
+    const star = document.createElement("a");
+    star.className = "footer-star";
+    star.href = "/";
+    star.setAttribute("aria-label", "Return to OceanLiners.net homepage");
+    star.textContent = "★";
+
+    copyright.insertAdjacentElement("afterend", star);
   }
-  
+
   // ---- Page feedback widget ----
-(function injectPageFeedback(){
+  (function injectPageFeedback() {
+    const excludedPages = [
+      "/"
+    ];
 
-const excludedPages = [
-  "/"
-];
+    if (excludedPages.includes(location.pathname)) return;
 
-if (excludedPages.includes(location.pathname)) return;
+    if (!copyright || document.querySelector(".olc-feedback")) return;
 
-  const copyright = document.querySelector(".copyright");
-  if (!copyright || document.querySelector(".olc-feedback")) return;
+    const feedback = document.createElement("section");
+    feedback.className = "olc-feedback";
+    feedback.setAttribute("aria-label", "Page feedback");
 
-  const feedback = document.createElement("section");
-  feedback.className = "olc-feedback";
-  feedback.setAttribute("aria-label", "Page feedback");
+    feedback.innerHTML = `
+      <p class="olc-feedback-title">Was this page worth exploring?</p>
+      <div class="olc-feedback-actions">
+        <button type="button" data-feedback="up" aria-label="Thumbs up">↑</button>
+        <button type="button" data-feedback="down" aria-label="Thumbs down">↓</button>
+      </div>
+      <p class="olc-feedback-response" hidden>Thank you — your feedback was sent.</p>
+    `;
 
-  feedback.innerHTML = `
-    <p class="olc-feedback-title">Was this page worth exploring?</p>
-    <div class="olc-feedback-actions">
-      <button type="button" data-feedback="up" aria-label="Thumbs up">↑</button>
-      <button type="button" data-feedback="down" aria-label="Thumbs down">↓</button>
-    </div>
-    <p class="olc-feedback-response" hidden>Thank you — your feedback was sent.</p>
-  `;
+    copyright.insertAdjacentElement("beforebegin", feedback);
 
-  copyright.insertAdjacentElement("beforebegin", feedback);
+    feedback.addEventListener("click", async (e) => {
+      const btn = e.target.closest("button[data-feedback]");
+      if (!btn) return;
 
-  feedback.addEventListener("click", async (e) => {
-    const btn = e.target.closest("button[data-feedback]");
-    if (!btn) return;
+      const vote = btn.dataset.feedback;
 
-    const vote = btn.dataset.feedback;
+      feedback.querySelectorAll("button").forEach((b) => {
+        b.disabled = true;
+        b.classList.toggle("selected", b === btn);
+      });
 
-    feedback.querySelectorAll("button").forEach(b => {
-      b.disabled = true;
-      b.classList.toggle("selected", b === btn);
+      if (typeof gtag === "function") {
+        gtag("event", "page_feedback", {
+          feedback_vote: vote,
+          page_path: window.location.pathname,
+          page_title: document.title
+        });
+      }
+
+      try {
+        await fetch("https://formspree.io/f/xykagjgl", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            vote,
+            page: window.location.href,
+            title: document.title,
+            timestamp: new Date().toISOString()
+          })
+        });
+      } catch (err) {
+        console.warn("Feedback email failed:", err);
+      }
+
+      const response = feedback.querySelector(".olc-feedback-response");
+      if (response) response.hidden = false;
     });
-
-    // Optional analytics event
-    if (typeof gtag === "function") {
-      gtag("event", "page_feedback", {
-        feedback_vote: vote,
-        page_path: window.location.pathname,
-        page_title: document.title
-      });
-    }
-
-    // Replace this URL with your Formspree endpoint
-    try {
-      await fetch("https://formspree.io/f/xykagjgl", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          vote,
-          page: window.location.href,
-          title: document.title,
-          timestamp: new Date().toISOString()
-        })
-      });
-    } catch (err) {
-      console.warn("Feedback email failed:", err);
-    }
-
-    const response = feedback.querySelector(".olc-feedback-response");
-    if (response) response.hidden = false;
-  });
-})();
+  })();
 
   // ---- Google Analytics ----
   (function injectGA() {
@@ -129,7 +120,9 @@ if (excludedPages.includes(location.pathname)) return;
     document.head.appendChild(s);
 
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function(){ dataLayer.push(arguments); };
+    window.gtag = function () {
+      dataLayer.push(arguments);
+    };
 
     gtag("js", new Date());
     gtag("config", "G-JPZ291Q3RB");
