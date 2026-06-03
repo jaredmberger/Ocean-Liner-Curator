@@ -28,6 +28,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   
   // ---- Page feedback widget ----
 (function injectPageFeedback(){
+
+const excludedPages = [
+  "/"
+];
+
+if (excludedPages.includes(location.pathname)) return;
+
   const copyright = document.querySelector(".copyright");
   if (!copyright || document.querySelector(".olc-feedback")) return;
 

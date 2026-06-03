@@ -1145,9 +1145,10 @@ a.footer-star:focus{
 }
 
 .olc-feedback{
-  width:min(680px, calc(100% - 2rem));
-  margin:2.25rem auto 1.25rem;
-  padding:1rem 1.15rem;
+  width:auto;
+  max-width:320px;
+  padding:.5rem .75rem;
+  margin:1.25rem auto .75rem;
   text-align:center;
 
   border:1px solid rgba(191,164,106,0.24);
@@ -1161,29 +1162,20 @@ a.footer-star:focus{
 }
 
 .olc-feedback-title{
-  margin:0 0 .75rem;
-  color:rgba(230,223,207,0.88);
-  font-family:"Libre Baskerville", Georgia, serif;
-  font-size:.95rem;
-  letter-spacing:.04em;
+  margin:0 0 .55rem;
+  font-size:.82rem;
+  letter-spacing:.06em;
+  color:rgba(230,223,207,0.78);
 }
 
 .olc-feedback-actions{
-  display:flex;
-  justify-content:center;
-  gap:.8rem;
+  gap:.55rem;
 }
 
 .olc-feedback button{
-  width:44px;
-  height:44px;
-  border-radius:999px;
-  border:1px solid rgba(191,164,106,0.38);
-  background:rgba(191,164,106,0.08);
-  color:#f4ead2;
-  font-size:1.2rem;
-  cursor:pointer;
-  transition:transform .15s ease, border-color .15s ease, background .15s ease;
+  width:38px;
+  height:38px;
+  font-size:1rem;
 }
 
 .olc-feedback button:hover{
