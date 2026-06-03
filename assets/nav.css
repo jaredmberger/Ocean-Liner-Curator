@@ -1209,3 +1209,40 @@ a.footer-star:focus{
   color:rgba(205,187,141,0.9);
   font-size:.85rem;
 }
+
+/* =========================================================
+   OLC Footer Alignment Fix
+   ========================================================= */
+
+.page-footer{
+  width:100%;
+  margin:0 auto;
+  padding:0 1rem 1.5rem;
+  text-align:center;
+}
+
+.page-footer .copyright,
+.copyright{
+  display:block !important;
+  width:100% !important;
+  margin:1.25rem auto .75rem !important;
+  text-align:center !important;
+
+  font-size:0.72rem !important;
+  color:rgba(230,223,207,0.62) !important;
+  opacity:1 !important;
+}
+
+.olc-feedback{
+  margin:2rem auto 1.15rem !important;
+}
+
+.footer-star,
+.footer-star:link,
+.footer-star:visited,
+.footer-star:hover,
+.footer-star:active,
+.footer-star:focus{
+  width:min(320px, calc(100% - 2rem)) !important;
+  margin:1.1rem auto 0 !important;
+}
