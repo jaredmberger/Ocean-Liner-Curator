@@ -1983,14 +1983,10 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
   transform:translateX(2px);
 }
     
-    .path-icon-gpt{
-  width:42px;
-  height:42px;
-
-  background-image:url("/ai-stars.png");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
+    .path-icon img{
+  width:24px;
+  height:24px;
+  display:block;
 }
     
     </style>
@@ -2123,7 +2119,9 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
 
            <a class="path-card" href="/ocean-liner-gpt">
   <div class="path-top">
-    <div class="path-icon path-icon-gpt" aria-hidden="true"></div>
+    <div class="path-icon" aria-hidden="true">
+  <img src="/ai-stars.png" alt="">
+</div>
     <div class="path-title-wrap">
       <h3 class="path-title">Ocean Liner GPT</h3>
       <p class="path-sub">For questions, research, and ship discovery</p>
