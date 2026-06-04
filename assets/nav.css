@@ -1247,3 +1247,43 @@ a.footer-star:focus{
   width:min(320px, calc(100% - 2rem)) !important;
   margin:1.1rem auto 0 !important;
 }
+
+.olc-feedback-detail{
+  margin-top:.9rem;
+}
+
+.olc-feedback-detail label{
+  display:block;
+  margin-bottom:.35rem;
+  color:#d9c17f;
+  font-size:.82rem;
+}
+
+.olc-feedback-detail textarea{
+  width:100%;
+  min-height:90px;
+
+  padding:.65rem;
+  border-radius:10px;
+
+  border:1px solid rgba(191,164,106,.25);
+
+  background:rgba(0,0,0,.18);
+  color:#efe9dc;
+
+  resize:vertical;
+}
+
+.olc-feedback-submit{
+  margin-top:.6rem;
+
+  padding:.5rem .9rem;
+
+  border-radius:999px;
+  border:1px solid rgba(191,164,106,.35);
+
+  background:rgba(191,164,106,.08);
+  color:#efe9dc;
+
+  cursor:pointer;
+}

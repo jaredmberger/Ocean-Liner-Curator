@@ -57,29 +57,36 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     feedback.innerHTML = `
       <p class="olc-feedback-title">Was this page worth exploring?</p>
+
       <div class="olc-feedback-actions">
         <button type="button" data-feedback="up" aria-label="Thumbs up">↑</button>
         <button type="button" data-feedback="down" aria-label="Thumbs down">↓</button>
       </div>
-      <p class="olc-feedback-response" hidden>Thank you — your feedback was sent.</p>
+
+      <div class="olc-feedback-detail" hidden>
+        <label for="olc-feedback-reason">Why?</label>
+        <textarea
+          id="olc-feedback-reason"
+          placeholder="Tell the curator what was missing or could be improved..."
+        ></textarea>
+
+        <button type="button" class="olc-feedback-submit">
+          Send Feedback
+        </button>
+      </div>
+
+      <p class="olc-feedback-response" hidden>
+        Thank you — your feedback was sent.
+      </p>
     `;
 
     copyright.insertAdjacentElement("beforebegin", feedback);
 
-    feedback.addEventListener("click", async (e) => {
-      const btn = e.target.closest("button[data-feedback]");
-      if (!btn) return;
-
-      const vote = btn.dataset.feedback;
-
-      feedback.querySelectorAll("button").forEach((b) => {
-        b.disabled = true;
-        b.classList.toggle("selected", b === btn);
-      });
-
+    async function sendFeedback(vote, reason = "") {
       if (typeof gtag === "function") {
         gtag("event", "page_feedback", {
           feedback_vote: vote,
+          feedback_reason: reason,
           page_path: window.location.pathname,
           page_title: document.title
         });
@@ -94,6 +101,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           },
           body: JSON.stringify({
             vote,
+            reason,
             page: window.location.href,
             title: document.title,
             timestamp: new Date().toISOString()
@@ -105,7 +113,46 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       const response = feedback.querySelector(".olc-feedback-response");
       if (response) response.hidden = false;
+    }
+
+    feedback.addEventListener("click", async (e) => {
+      const btn = e.target.closest("button[data-feedback]");
+      if (!btn) return;
+
+      const vote = btn.dataset.feedback;
+
+      feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
+        b.disabled = true;
+        b.classList.toggle("selected", b === btn);
+      });
+
+      if (vote === "down") {
+        const detail = feedback.querySelector(".olc-feedback-detail");
+        const textarea = feedback.querySelector("#olc-feedback-reason");
+
+        if (detail) detail.hidden = false;
+        if (textarea) textarea.focus();
+
+        return;
+      }
+
+      await sendFeedback("up", "");
     });
+
+    const submit = feedback.querySelector(".olc-feedback-submit");
+
+    if (submit) {
+      submit.addEventListener("click", async () => {
+        const textarea = feedback.querySelector("#olc-feedback-reason");
+        const reason = textarea ? textarea.value.trim() : "";
+
+        submit.disabled = true;
+        await sendFeedback("down", reason);
+
+        const detail = feedback.querySelector(".olc-feedback-detail");
+        if (detail) detail.hidden = true;
+      });
+    }
   })();
 
   // ---- Google Analytics ----
