@@ -659,81 +659,124 @@
     }
   }
   
-  .path-card-america{
+  .sail250-feature-card{
   position:relative;
-  display:flex;
-  flex-direction:column;
+  display:block;
+  overflow:hidden;
 
-  padding:1.15rem;
-  border-radius:20px;
-
-  border:1px solid rgba(191,164,106,0.34);
+  padding:2rem 2.25rem;
+  border-radius:28px;
+  border:1px solid rgba(191,164,106,.34);
 
   background:
-    radial-gradient(circle at 88% 14%, rgba(191,164,106,0.12), transparent 34%),
-    linear-gradient(120deg, rgba(255,255,255,0.045), rgba(255,255,255,0.012) 48%, transparent),
-    rgba(15,27,25,0.56);
+    radial-gradient(circle at 88% 14%, rgba(191,164,106,.10), transparent 32%),
+    radial-gradient(circle at 12% 90%, rgba(191,164,106,.06), transparent 40%),
+    linear-gradient(120deg, rgba(255,255,255,.04), rgba(255,255,255,.012) 48%, transparent),
+    rgba(15,27,25,.56);
 
-  backdrop-filter:blur(2px);
-  -webkit-backdrop-filter:blur(2px);
+  color:#e6dfcf;
+  text-decoration:none;
 
   box-shadow:
-    0 12px 26px rgba(0,0,0,0.30),
-    inset 0 1px 0 rgba(255,255,255,0.04);
+    0 18px 38px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.04);
 
-  overflow:hidden;
   transition:
     transform .18s ease,
     border-color .18s ease,
     box-shadow .18s ease;
 }
 
-.path-card-america:hover{
+.sail250-feature-card:hover{
   transform:translateY(-2px);
-
-  border-color:rgba(191,164,106,0.50);
-
+  border-color:rgba(191,164,106,.52);
   box-shadow:
-    0 18px 34px rgba(0,0,0,0.34),
-    inset 0 1px 0 rgba(255,255,255,0.05);
+    0 24px 46px rgba(0,0,0,.38),
+    inset 0 1px 0 rgba(255,255,255,.05);
 }
 
-.path-card-america::before{
-  content:"";
+.sail250-feature-card::after{
+  content:"★";
   position:absolute;
-  inset:0 auto auto 0;
+  right:2rem;
+  top:1.35rem;
+  color:rgba(191,164,106,.15);
+  font-size:5rem;
+  line-height:1;
+  pointer-events:none;
+}
 
-  width:100%;
-  height:4px;
+.sail250-feature-card > *{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+}
 
-  background:
-    linear-gradient(
-      90deg,
-      #d4b46c,
-      #f0cf58,
-      #d4b46c
-    );
+.sail250-eyebrow{
+  margin-bottom:.75rem;
+  color:#d7c08a;
+  font-size:.82rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+}
 
+.sail250-feature-card h3{
+  margin:0;
+  font-family:"Libre Baskerville", Georgia, serif;
+  font-size:clamp(2rem, 4vw, 3rem);
+  line-height:1.05;
+  color:#f3ead8;
+  letter-spacing:-.03em;
+}
+
+.sail250-rule{
+  width:240px;
+  height:3px;
+  margin:1rem 0 1.25rem;
+  background:linear-gradient(90deg, #bfa46a, transparent);
   opacity:.9;
 }
 
-.path-card-america::after{
-  content:"";
-  position:absolute;
+.sail250-feature-card p{
+  margin:0;
+  color:#d8cfbd;
+  font-size:1.08rem;
+  line-height:1.7;
+}
 
-  right:.9rem;
-  bottom:.8rem;
+.sail250-link{
+  display:inline-block;
+  margin-top:1.2rem;
+  color:#ecd8a7;
+  font-weight:700;
+  font-size:1.05rem;
+}
 
-  width:72px;
-  height:72px;
+.sail250-link::after{
+  content:" »";
+}
 
-  background-image:url("/stars.png");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
+@media (max-width:640px){
+  .sail250-feature-card{
+    padding:1.45rem 1.25rem;
+    border-radius:22px;
+  }
 
-  opacity:.14;
-  pointer-events:none;
+  .sail250-feature-card::after{
+    right:1rem;
+    top:1rem;
+    font-size:3.6rem;
+    opacity:.8;
+  }
+
+  .sail250-eyebrow{
+    font-size:.72rem;
+    letter-spacing:.2em;
+  }
+
+  .sail250-rule{
+    width:170px;
+  }
 }
   
 </style>
@@ -1049,22 +1092,20 @@
       </section>
       <br>
       
-     <a class="path-card path-card-america" href="/250-years-across-the-atlantic">
-  <div class="path-top">
-    <div class="path-icon" aria-hidden="true">★</div>
+     <a class="path-card sail250-feature-card" href="/from-ocean-liners-to-sail250">
+  <div class="sail250-eyebrow">Special Feature · Sail250</div>
 
-    <div class="path-title-wrap">
-      <h3 class="path-title">250 Years Across the Atlantic</h3>
-      <p class="path-sub">A special America 250 feature</p>
-    </div>
-  </div>
+  <h3>From Ocean Liners<br>to Sail250</h3>
+
+  <div class="sail250-rule" aria-hidden="true"></div>
 
   <p>
-    Explore the long Atlantic story connecting migration, trade, steamships, ocean liners, wartime crossings, and the movement of people and ideas between continents.
+    A broader look at maritime symbolism, public memory, and why Americans still gather to celebrate ships long after they ceased to be practical transportation.
   </p>
 
-  <span class="path-link">Explore the feature</span>
+  <span class="sail250-link">Explore the connection</span>
 </a>
+
 
       <section class="cta" aria-labelledby="next-steps">
         <div>
