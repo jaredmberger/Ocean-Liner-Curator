@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  html { background:#0a1110; }
+</style>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0a1110">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Suggestions &amp; Corrections — Ocean Liner Curator | OceanLiners.net</title>
+<meta name="description" content="Send suggestions, corrections, sources, research leads, missing links, or page ideas for Ocean Liner Curator." />
+<link rel="canonical" href="https://www.oceanliners.net/suggestions" />
+<meta name="robots" content="index,follow" />
+
+<meta property="og:title" content="Suggestions &amp; Corrections — Ocean Liner Curator" />
+<meta property="og:description" content="Share corrections, sources, research leads, missing links, or ideas for future OceanLiners.net pages." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.oceanliners.net/suggestions" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0a1110;
+    --panel:#101b19;
+    --panel-2:#13211f;
+    --text:#f3ead7;
+    --muted:#cfc4aa;
+    --muted-2:#9f947c;
+    --brass:#bfa46a;
+    --brass-2:#d8c48a;
+    --line:rgba(191,164,106,.28);
+    --line-soft:rgba(255,255,255,.08);
+    --shadow:0 22px 60px rgba(0,0,0,.38);
+    --radius:22px;
+  }
+
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    min-height:100vh;
+    color:var(--text);
+    font-family:"Spectral", Georgia, serif;
+    line-height:1.62;
+    background:
+      radial-gradient(circle at 18% 7%, rgba(191,164,106,.13), transparent 30%),
+      radial-gradient(circle at 88% 12%, rgba(95,120,152,.12), transparent 32%),
+      linear-gradient(180deg, #0a1110 0%, #0d1715 45%, #08100f 100%);
+  }
+
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.12;
+    background-image:
+      linear-gradient(rgba(191,164,106,.16) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(191,164,106,.16) 1px, transparent 1px);
+    background-size:44px 44px;
+    mask-image:radial-gradient(circle at 50% 20%, black, transparent 75%);
+  }
+
+  a{ color:var(--brass-2); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+
+  .site-shell{
+    width:min(1120px, calc(100% - 2rem));
+    margin:0 auto;
+  }
+
+  .site-header{
+    padding:1.15rem 0;
+    border-bottom:1px solid var(--line-soft);
+    background:rgba(10,17,16,.72);
+    backdrop-filter:blur(12px);
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
+
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+  }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:.7rem;
+    color:var(--text);
+    font-family:"Libre Baskerville", Georgia, serif;
+    font-weight:700;
+    letter-spacing:.02em;
+  }
+
+  .brand-mark{
+    width:34px;
+    height:34px;
+    display:grid;
+    place-items:center;
+    border:1px solid var(--line);
+    border-radius:50%;
+    color:var(--brass-2);
+    background:rgba(191,164,106,.08);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+  }
+
+  .nav-links{
+    display:flex;
+    align-items:center;
+    gap:.85rem;
+    font-size:.95rem;
+    color:var(--muted);
+  }
+
+  .nav-links a{ color:var(--muted); }
+  .nav-links a:hover{ color:var(--brass-2); }
+
+  main{ padding:3rem 0 4.5rem; }
+
+  .hero{
+    position:relative;
+    overflow:hidden;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:
+      radial-gradient(circle at 86% 16%, rgba(191,164,106,.17), transparent 30%),
+      linear-gradient(135deg, rgba(255,255,255,.055), rgba(255,255,255,.012) 48%, transparent),
+      rgba(16,27,25,.82);
+    box-shadow:var(--shadow);
+    padding:clamp(1.35rem, 4vw, 3rem);
+  }
+
+  .hero::after{
+    content:"★";
+    position:absolute;
+    right:clamp(1rem, 4vw, 2.6rem);
+    top:clamp(.7rem, 2.5vw, 1.5rem);
+    color:rgba(191,164,106,.15);
+    font-size:clamp(4.8rem, 12vw, 9rem);
+    line-height:1;
+    pointer-events:none;
+  }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:.45rem;
+    color:var(--brass-2);
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:.78rem;
+    font-weight:700;
+    margin:0 0 .8rem;
+  }
+
+  .eyebrow::before{
+    content:"";
+    width:34px;
+    height:1px;
+    background:var(--brass);
+    opacity:.75;
+  }
+
+  h1,h2,h3{
+    font-family:"Libre Baskerville", Georgia, serif;
+    line-height:1.16;
+    margin:0;
+  }
+
+  h1{
+    max-width:780px;
+    font-size:clamp(2.1rem, 6vw, 4.2rem);
+    letter-spacing:-.035em;
+  }
+
+  .hero-lede{
+    max-width:760px;
+    margin:1rem 0 0;
+    color:var(--muted);
+    font-size:clamp(1.05rem, 2.2vw, 1.28rem);
+  }
+
+  .content-grid{
+    display:grid;
+    grid-template-columns:minmax(0, .82fr) minmax(320px, 1.18fr);
+    gap:1.2rem;
+    margin-top:1.25rem;
+    align-items:start;
+  }
+
+  .card{
+    border:1px solid var(--line);
+    border-radius:20px;
+    background:rgba(16,27,25,.72);
+    box-shadow:0 16px 40px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.04);
+    backdrop-filter:blur(2px);
+    padding:1.25rem;
+  }
+
+  .card h2{
+    color:var(--text);
+    font-size:1.3rem;
+    margin-bottom:.65rem;
+  }
+
+  .card p{ margin:.65rem 0 0; color:var(--muted); }
+
+  .note-list{
+    list-style:none;
+    padding:0;
+    margin:1rem 0 0;
+    display:grid;
+    gap:.7rem;
+  }
+
+  .note-list li{
+    position:relative;
+    padding-left:1.25rem;
+    color:var(--muted);
+  }
+
+  .note-list li::before{
+    content:"✦";
+    position:absolute;
+    left:0;
+    top:.02rem;
+    color:var(--brass-2);
+    font-size:.82rem;
+  }
+
+  form{
+    display:grid;
+    gap:1rem;
+  }
+
+  .form-row{
+    display:grid;
+    gap:.42rem;
+  }
+
+  .form-row.two{
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+  }
+
+  label{
+    color:var(--text);
+    font-weight:700;
+    font-size:.98rem;
+  }
+
+  .hint{
+    color:var(--muted-2);
+    font-size:.9rem;
+    margin-top:-.1rem;
+  }
+
+  input,
+  select,
+  textarea{
+    width:100%;
+    border:1px solid rgba(191,164,106,.32);
+    border-radius:14px;
+    background:rgba(6,12,11,.62);
+    color:var(--text);
+    font:inherit;
+    padding:.8rem .9rem;
+    outline:none;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.035);
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus{
+    border-color:rgba(216,196,138,.78);
+    box-shadow:0 0 0 3px rgba(191,164,106,.13), inset 0 1px 0 rgba(255,255,255,.045);
+  }
+
+  textarea{
+    min-height:180px;
+    resize:vertical;
+  }
+
+  select{ cursor:pointer; }
+
+  ::placeholder{ color:rgba(207,196,170,.58); }
+
+  .submit-row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:.85rem;
+    margin-top:.35rem;
+  }
+
+  button{
+    appearance:none;
+    border:1px solid rgba(216,196,138,.7);
+    border-radius:999px;
+    background:
+      linear-gradient(180deg, rgba(216,196,138,.24), rgba(191,164,106,.12)),
+      rgba(16,27,25,.92);
+    color:var(--text);
+    font:700 .98rem "Spectral", Georgia, serif;
+    padding:.82rem 1.2rem;
+    cursor:pointer;
+    box-shadow:0 12px 26px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.08);
+  }
+
+  button:hover{
+    transform:translateY(-1px);
+    border-color:rgba(216,196,138,.95);
+  }
+
+  .privacy-note{
+    color:var(--muted-2);
+    font-size:.9rem;
+    max-width:520px;
+  }
+
+  .fine-print{
+    margin-top:1rem;
+    padding-top:1rem;
+    border-top:1px solid var(--line-soft);
+    color:var(--muted-2);
+    font-size:.92rem;
+  }
+
+  .footer{
+    padding:2rem 0 2.4rem;
+    border-top:1px solid var(--line-soft);
+    color:var(--muted-2);
+    font-size:.94rem;
+  }
+
+  @media (max-width:860px){
+    .content-grid{ grid-template-columns:1fr; }
+    .form-row.two{ grid-template-columns:1fr; }
+    .nav{ align-items:flex-start; flex-direction:column; }
+    .nav-links{ flex-wrap:wrap; }
+  }
+</style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="site-shell nav">
+    <a class="brand" href="/" aria-label="Ocean Liner Curator home">
+      <span class="brand-mark" aria-hidden="true">★</span>
+      <span>Ocean Liner Curator</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/explore">Explore</a>
+      <a href="/ships">Ship Archive</a>
+      <a href="/collections">Research Collections</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="site-shell">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Visitor Feedback</p>
+      <h1 id="page-title">Suggestions &amp; Corrections</h1>
+      <p class="hero-lede">
+        Ocean Liner Curator is built as an evolving reference archive. If you noticed an error, found a missing link, know of a useful source, or have an idea for a future page, you can send it here.
+      </p>
+    </section>
+
+    <section class="content-grid" aria-label="Suggestion submission form and guidance">
+      <aside class="card">
+        <h2>What to send</h2>
+        <p>
+          The most useful notes are specific: a ship name, page URL, source title, date, publication, archive reference, or a short explanation of what should be changed.
+        </p>
+        <ul class="note-list">
+          <li>Corrections to facts, dates, names, captions, or links</li>
+          <li>Ideas for future ship guides or research pages</li>
+          <li>Sources, citations, photos, catalog records, or archival leads</li>
+          <li>Pages that were hard to find or topics you expected to see</li>
+          <li>Accessibility, navigation, or design issues</li>
+        </ul>
+        <p class="fine-print">
+          Submissions are reviewed manually. A suggestion may inform a future update, but not every submission will receive a direct reply.
+        </p>
+      </aside>
+
+      <section class="card">
+        <h2>Send a suggestion</h2>
+        <form action="https://formspree.io/f/xjgdyvgn" method="POST">
+          <input type="hidden" name="_subject" value="OceanLiners.net Suggestion or Correction" />
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;" aria-hidden="true" />
+
+          <div class="form-row two">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Optional" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="Optional, for replies" />
+            </div>
+          </div>
+
+          <div class="form-row two">
+            <div class="form-row">
+              <label for="type">Submission type</label>
+              <select id="type" name="submission_type" required>
+                <option value="" selected disabled>Select one</option>
+                <option value="Correction">Correction</option>
+                <option value="Missing or broken link">Missing or broken link</option>
+                <option value="Source or citation lead">Source or citation lead</option>
+                <option value="Page idea">Page idea</option>
+                <option value="Ship guide suggestion">Ship guide suggestion</option>
+                <option value="Design or navigation feedback">Design or navigation feedback</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="page-url">Related page URL</label>
+              <input id="page-url" name="related_page_url" type="url" placeholder="https://www.oceanliners.net/..." />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required placeholder="Example: Correction for RMS Olympic ship guide" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Suggestion or correction</label>
+            <p class="hint" id="message-hint">Include enough context to verify the note: page, ship, source, date, or the exact text involved.</p>
+            <textarea id="message" name="message" required aria-describedby="message-hint" placeholder="Write your suggestion, correction, source lead, or page idea here..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="source">Source or reference</label>
+            <input id="source" name="source_or_reference" type="text" placeholder="Optional: book, archive, URL, catalog record, newspaper, etc." />
+          </div>
+
+          <div class="submit-row">
+            <button type="submit">Submit suggestion →</button>
+            <span class="privacy-note">Your message will be sent through Formspree. Please avoid submitting private or sensitive personal information.</span>
+          </div>
+        </form>
+      </section>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="site-shell">
+    <p>© Ocean Liner Curator · Evidence-first maritime history</p>
+  </div>
+</footer>
+</body>
+</html>
