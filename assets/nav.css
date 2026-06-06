@@ -1309,3 +1309,70 @@ a.footer-star:focus{
 .olc-feedback-detail textarea{
   min-height:84px;
 }
+
+.olc-feedback-suggestion,
+.olc-feedback a,
+.satisfaction-suggest-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:.95rem auto 0;
+  padding:.48rem .9rem;
+
+  width:fit-content;
+  max-width:100%;
+
+  color:#d9c17f !important;
+  font-family:"Libre Baskerville", Georgia, serif;
+  font-size:.88rem;
+  line-height:1.35;
+  letter-spacing:.03em;
+  text-align:center;
+
+  text-decoration:none !important;
+  border:1px solid rgba(191,164,106,.34);
+  border-radius:999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(191,164,106,.10),
+      rgba(10,17,16,.20)
+    );
+
+  box-shadow:0 8px 18px rgba(0,0,0,.22);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+
+  transition:
+    transform .16s ease,
+    border-color .16s ease,
+    background .16s ease,
+    color .16s ease;
+}
+
+.olc-feedback-suggestion:hover,
+.olc-feedback a:hover,
+.satisfaction-suggest-link:hover{
+  color:#f0e1b7 !important;
+  border-color:rgba(191,164,106,.62);
+  background:rgba(191,164,106,.13);
+  transform:translateY(-1px);
+}
+
+.olc-feedback-suggestion:focus-visible,
+.olc-feedback a:focus-visible,
+.satisfaction-suggest-link:focus-visible{
+  outline:2px solid rgba(191,164,106,.6);
+  outline-offset:4px;
+}
+
+@media (max-width:520px){
+  .olc-feedback-suggestion,
+  .olc-feedback a,
+  .satisfaction-suggest-link{
+    font-size:.82rem;
+    padding:.46rem .75rem;
+  }
+}
