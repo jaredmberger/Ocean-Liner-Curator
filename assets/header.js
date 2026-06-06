@@ -62,6 +62,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         <button type="button" data-feedback="up" aria-label="Thumbs up">↑</button>
         <button type="button" data-feedback="down" aria-label="Thumbs down">↓</button>
       </div>
+      
+      <a href="/suggestions" class="satisfaction-suggest-link">
+  Have an idea or correction? Send a suggestion →
+</a>
 
       <div class="olc-feedback-detail" hidden>
         <label for="olc-feedback-reason">Why?</label>
