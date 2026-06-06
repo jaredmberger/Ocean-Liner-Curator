@@ -67,6 +67,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   Have an idea or correction? Send a suggestion →
 </a>
 
+<a href="/bot-trap"
+   class="bot-trap"
+   aria-hidden="true"
+   tabindex="-1">
+   hidden
+</a>
+
       <div class="olc-feedback-detail" hidden>
         <label for="olc-feedback-reason">Why?</label>
         <textarea

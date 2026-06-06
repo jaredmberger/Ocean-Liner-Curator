@@ -1376,3 +1376,10 @@ a.footer-star:focus{
     padding:.46rem .75rem;
   }
 }
+ .bot-trap{
+  position:absolute;
+  left:-9999px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
