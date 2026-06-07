@@ -182,6 +182,27 @@
         0 0 0 1px rgba(191,164,106,0.08),
         0 0 80px rgba(191,164,106,0.06);
     }
+    
+    .hero-inner::after{
+  content:"";
+  position:absolute;
+  top:clamp(0.75rem, 2vw, 1.35rem);
+  right:clamp(0.85rem, 2.4vw, 1.65rem);
+  z-index:2;
+
+  width:clamp(64px, 10vw, 118px);
+  height:clamp(64px, 10vw, 118px);
+
+  background-image:url("/ai-stars.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+
+  opacity:.34;
+  filter:drop-shadow(0 14px 26px rgba(0,0,0,.42));
+
+  pointer-events:none;
+}
 
     .container{
       width:min(780px, calc(100% - 1.5rem));
