@@ -1,23 +1,13 @@
 <meta name="robots" content="noindex,nofollow">
-<script>  // ---- Google Analytics ----
-  (function injectGA() {
-    const GA_SRC = "https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB";
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    if (document.querySelector(`script[src^="https://www.googletagmanager.com/gtag/js"]`)) return;
-
-    const s = document.createElement("script");
-    s.src = GA_SRC;
-    s.async = true;
-    document.head.appendChild(s);
-
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      dataLayer.push(arguments);
-    };
-
-    gtag("js", new Date());
-    gtag("config", "G-JPZ291Q3RB");
-  })();</script>
+  gtag('config', 'G-JPZ291Q3RB');
+</script>
 <script src="/assets/header.js" defer></script>
        <script src="/assets/nav.js" defer></script>
        <script src="/assets/entry-links.js" defer></script>
