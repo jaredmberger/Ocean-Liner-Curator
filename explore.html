@@ -1989,7 +1989,13 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
   display:block;
 }
     
-   
+    .bot-trap{
+  position:absolute;
+  left:-9999px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
     
     </style>
 </head>
@@ -2072,8 +2078,14 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
 
 <h2 id="choose-path">Choose your path</h2>
             <p>
-              Start with the route that matches your interest best: Titanic, individual ships, broader history, collecting and attribution, or explore and ask anything with the help of an AI assistant.
+              Start with the route that matches your interest best: Titanic, individual ships, broader history, collecting and attribution, or explore and ask anything with the help of an AI assistant. 
             </p>
+            <a href="/bots/all"
+   class="bot-trap"
+   aria-hidden="true"
+   tabindex="-1">
+   hidden
+</a>
           </div>
 
           <div class="path-grid">
