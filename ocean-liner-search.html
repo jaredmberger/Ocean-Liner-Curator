@@ -460,175 +460,112 @@
   </main>
 
   <script>
-    /*
-      Ocean Liner Curator — Archive Search Page
-      ------------------------------------------------------------
-      This page expects a small Cloudflare Worker endpoint at SEARCH_ENDPOINT.
+  const SEARCH_ENDPOINT =
+    "https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/search";
 
-      Recommended response shape from your Worker:
-      {
-        "results": [
-          {
-            "title": "SS Leviathan — Ship Guide",
-            "url": "https://oceanliners.net/ships/ss-leviathan",
-            "snippet": "A curator-minded reference guide to SS Leviathan...",
-            "score": 0.87
-          }
-        ]
-      }
+  const form = document.getElementById("archiveSearchForm");
+  const input = document.getElementById("archiveSearchInput");
+  const button = document.getElementById("archiveSearchButton");
+  const statusEl = document.getElementById("searchStatus");
+  const resultsEl = document.getElementById("archiveSearchResults");
+  const chips = document.querySelectorAll(".chip[data-query]");
 
-      If your Worker returns a different Cloudflare AI Search shape, adjust
-      normalizeResults() below rather than changing the page markup.
-    */
+  function escapeHtml(value){
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
 
-    const AI_SEARCH_ENDPOINT =
-  "https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/search";
-    const form = document.getElementById("archiveSearchForm");
-    const input = document.getElementById("archiveSearchInput");
-    const button = document.getElementById("archiveSearchButton");
-    const statusEl = document.getElementById("searchStatus");
-    const resultsEl = document.getElementById("archiveSearchResults");
-    const chips = document.querySelectorAll(".chip[data-query]");
+  async function searchArchive(query){
+    const trimmed = query.trim();
 
-    function escapeHtml(value){
-      return String(value ?? "")
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
-    }
-
-    function readableUrl(url){
-      try{
-        const parsed = new URL(url);
-        return parsed.hostname.replace(/^www\./, "") + parsed.pathname;
-      }catch{
-        return url || "OceanLiners.net";
-      }
-    }
-
-    function normalizeResults(payload){
-      const raw = Array.isArray(payload?.results)
-        ? payload.results
-        : Array.isArray(payload?.data)
-          ? payload.data
-          : Array.isArray(payload)
-            ? payload
-            : [];
-
-      return raw.map((item) => {
-        const metadata = item.metadata || item.meta || {};
-        const url = item.url || metadata.url || item.href || item.link || "#";
-        return {
-          title: item.title || metadata.title || item.name || readableUrl(url),
-          url,
-          snippet: item.snippet || item.text || item.content || item.summary || metadata.description || "No preview text was returned for this result.",
-          score: item.score || item.relevance || item.similarity || null
-        };
-      });
-    }
-
-    function renderResults(results, query){
+    if(!trimmed){
+      statusEl.textContent = "Enter a search term first.";
       resultsEl.innerHTML = "";
+      input.focus();
+      return;
+    }
 
-      if(!results.length){
-        resultsEl.innerHTML = `
-          <div class="empty-state">
-            No archive results found for <strong>${escapeHtml(query)}</strong>. Try a ship name, shipping line, event, or broader historical theme.
-          </div>
-        `;
-        return;
+    button.disabled = true;
+    statusEl.textContent = `Searching the archive for “${trimmed}”…`;
+    resultsEl.innerHTML = "";
+
+    try{
+      const response = await fetch(SEARCH_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          messages: [
+            {
+              role: "user",
+              content: trimmed
+            }
+          ]
+        })
+      });
+
+      if(!response.ok){
+        throw new Error(`Search failed with status ${response.status}`);
       }
 
-      const fragment = document.createDocumentFragment();
-      results.forEach((result) => {
-        const card = document.createElement("a");
-        card.className = "result-card";
-        card.href = result.url || "#";
-        if(result.url && result.url.startsWith("http")) card.rel = "noopener";
+      const payload = await response.json();
 
-        const score = result.score !== null && result.score !== undefined
-          ? `<span class="score">${escapeHtml(Number(result.score).toFixed ? Number(result.score).toFixed(2) : result.score)}</span>`
-          : "";
+      const answer =
+        payload?.response ||
+        payload?.answer ||
+        payload?.message ||
+        payload?.choices?.[0]?.message?.content ||
+        JSON.stringify(payload, null, 2);
 
-        card.innerHTML = `
+      statusEl.textContent = `Archive response for “${trimmed}”.`;
+
+      resultsEl.innerHTML = `
+        <div class="result-card" style="cursor:default;">
           <h2 class="result-title">
-            <span>${escapeHtml(result.title)}</span>
-            ${score}
+            <span>Search Result</span>
           </h2>
-          <p class="result-url">${escapeHtml(readableUrl(result.url))}</p>
-          <p class="result-snippet">${escapeHtml(result.snippet)}</p>
-        `;
-        fragment.appendChild(card);
-      });
+          <p class="result-snippet" style="white-space:pre-wrap;">${escapeHtml(answer)}</p>
+        </div>
+      `;
 
-      resultsEl.appendChild(fragment);
+    }catch(error){
+      console.error(error);
+      statusEl.textContent = "Search could not connect.";
+      resultsEl.innerHTML = `
+        <div class="empty-state">
+          The search page is styled correctly, but the Cloudflare endpoint did not return a usable response.
+        </div>
+      `;
+    }finally{
+      button.disabled = false;
     }
+  }
 
-    async function searchArchive(query){
-      const trimmed = query.trim();
-      if(!trimmed){
-        statusEl.textContent = "Enter a search term first.";
-        resultsEl.innerHTML = "";
-        input.focus();
-        return;
-      }
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    searchArchive(input.value);
+  });
 
-      button.disabled = true;
-      statusEl.textContent = `Searching the archive for “${trimmed}”…`;
-      resultsEl.innerHTML = "";
-
-      const url = new URL(SEARCH_ENDPOINT, window.location.origin);
-      url.searchParams.set("q", trimmed);
-
-      try{
-        const response = await fetch(url.toString(), {
-          method:"GET",
-          headers:{ "Accept":"application/json" }
-        });
-
-        if(!response.ok){
-          throw new Error(`Search request failed with status ${response.status}`);
-        }
-
-        const payload = await response.json();
-        const results = normalizeResults(payload);
-        statusEl.textContent = results.length === 1
-          ? `Found 1 result for “${trimmed}”.`
-          : `Found ${results.length} results for “${trimmed}”.`;
-        renderResults(results, trimmed);
-      }catch(error){
-        console.error(error);
-        statusEl.textContent = "Search is not connected yet. Once your Cloudflare Worker route is live, results will appear here.";
-        resultsEl.innerHTML = `
-          <div class="empty-state">
-            This page is ready, but the search endpoint is not returning results yet. Connect <strong>${escapeHtml(SEARCH_ENDPOINT)}</strong> to your Cloudflare AI Search Worker.
-          </div>
-        `;
-      }finally{
-        button.disabled = false;
-      }
-    }
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
+  chips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      input.value = chip.dataset.query || "";
       searchArchive(input.value);
     });
+  });
 
-    chips.forEach((chip) => {
-      chip.addEventListener("click", () => {
-        input.value = chip.dataset.query || "";
-        searchArchive(input.value);
-      });
-    });
+  const initialParams = new URLSearchParams(window.location.search);
+  const initialQuery = initialParams.get("q");
 
-    const initialParams = new URLSearchParams(window.location.search);
-    const initialQuery = initialParams.get("q");
-    if(initialQuery){
-      input.value = initialQuery;
-      searchArchive(initialQuery);
-    }
-  </script>
+  if(initialQuery){
+    input.value = initialQuery;
+    searchArchive(initialQuery);
+  }
+</script>
 </body>
 </html>
