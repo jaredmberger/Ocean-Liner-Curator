@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+    body { background:#0a1110; }
+  </style>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a1110">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Search the Archive — Ocean Liner Curator</title>
+  <meta name="description" content="Search the Ocean Liner Curator archive for ship guides, research collections, essays, reference pages, and ocean liner history." />
+  <link rel="canonical" href="https://oceanliners.net/search" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Search the Archive — Ocean Liner Curator" />
+  <meta property="og:description" content="Search ship guides, research collections, essays, and reference material from Ocean Liner Curator." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oceanliners.net/search" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/search#webpage",
+    "name": "Search the Archive — Ocean Liner Curator",
+    "url": "https://oceanliners.net/search",
+    "description": "Search the Ocean Liner Curator archive for ship guides, research collections, essays, reference pages, and ocean liner history.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Ocean Liner Curator",
+      "url": "https://oceanliners.net"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15, 28, 26, .76);
+      --panel-strong:rgba(13, 24, 23, .92);
+      --text:#f1eadc;
+      --muted:#c9bfa9;
+      --soft:#9f9582;
+      --brass:#bfa46a;
+      --brass-2:#d8c48a;
+      --line:rgba(191,164,106,.28);
+      --line-soft:rgba(241,234,220,.12);
+      --shadow:0 24px 70px rgba(0,0,0,.38);
+      --stage:min(1100px, calc(100% - 2rem));
+      --stage-narrow:min(820px, calc(100% - 2rem));
+    }
+
+    *{ box-sizing:border-box; }
+    html, body{ margin:0; min-height:100%; overflow-x:clip; }
+    body{
+      color:var(--text);
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height:1.65;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(191,164,106,.16), transparent 34rem),
+        radial-gradient(circle at 85% 12%, rgba(120,93,48,.18), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #101917 48%, #08100f 100%);
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.14;
+      background-image:
+        linear-gradient(45deg, rgba(191,164,106,.28) 1px, transparent 1px),
+        linear-gradient(-45deg, rgba(191,164,106,.22) 1px, transparent 1px);
+      background-size:34px 34px;
+      mask-image:radial-gradient(circle at 50% 10%, black, transparent 72%);
+    }
+
+    a{ color:inherit; }
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(10,17,16,.78);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line-soft);
+    }
+
+    .nav{
+      width:var(--stage);
+      margin:0 auto;
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.75rem;
+      text-decoration:none;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:.78rem;
+      color:var(--muted);
+      font-weight:700;
+    }
+
+    .brand-mark{
+      width:34px;
+      height:34px;
+      border:1px solid var(--line);
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      color:var(--brass-2);
+      background:rgba(191,164,106,.08);
+      box-shadow:0 0 0 4px rgba(191,164,106,.04);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:1rem;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      font-size:.92rem;
+      color:var(--muted);
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      border-bottom:1px solid transparent;
+    }
+
+    .nav-links a:hover{ color:var(--text); border-color:var(--brass); }
+
+    main{ position:relative; z-index:1; }
+
+    .hero{
+      width:var(--stage);
+      margin:2rem auto 0;
+      padding:clamp(2rem, 6vw, 5rem) clamp(1.25rem, 4vw, 3.5rem);
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:
+        linear-gradient(135deg, rgba(191,164,106,.16), transparent 38%),
+        linear-gradient(180deg, rgba(14,29,27,.86), rgba(9,17,16,.92));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .hero::after{
+      content:"✦";
+      position:absolute;
+      right:clamp(1.5rem, 5vw, 4rem);
+      top:clamp(1.25rem, 4vw, 3rem);
+      color:rgba(191,164,106,.22);
+      font-size:clamp(4rem, 14vw, 10rem);
+      line-height:1;
+      transform:rotate(8deg);
+    }
+
+    .hero-content{ max-width:760px; position:relative; z-index:1; }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.55rem;
+      color:var(--brass-2);
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:.74rem;
+      font-weight:800;
+      margin-bottom:1rem;
+    }
+
+    .eyebrow::before{
+      content:"";
+      width:34px;
+      height:1px;
+      background:var(--brass);
+    }
+
+    h1{
+      margin:0;
+      font-family:Georgia, "Times New Roman", serif;
+      font-weight:500;
+      font-size:clamp(2.35rem, 7vw, 5.15rem);
+      line-height:.98;
+      letter-spacing:-.045em;
+    }
+
+    .dek{
+      margin:1.25rem 0 0;
+      max-width:690px;
+      color:var(--muted);
+      font-size:clamp(1rem, 2vw, 1.22rem);
+    }
+
+    .search-section{
+      width:var(--stage-narrow);
+      margin:1.5rem auto 4rem;
+    }
+
+    .search-card{
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:var(--panel);
+      backdrop-filter:blur(10px);
+      box-shadow:var(--shadow);
+      padding:clamp(1rem, 3vw, 1.75rem);
+    }
+
+    .search-form{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:.75rem;
+      align-items:center;
+    }
+
+    label{
+      display:block;
+      margin:0 0 .65rem;
+      color:var(--brass-2);
+      text-transform:uppercase;
+      letter-spacing:.13em;
+      font-size:.74rem;
+      font-weight:800;
+    }
+
+    .input-wrap{ grid-column:1 / -1; }
+
+    .query-row{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:.75rem;
+    }
+
+    input[type="search"]{
+      width:100%;
+      min-height:54px;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,.36);
+      background:rgba(5,10,9,.62);
+      color:var(--text);
+      font:inherit;
+      padding:.85rem 1rem;
+      outline:none;
+    }
+
+    input[type="search"]::placeholder{ color:rgba(201,191,169,.62); }
+    input[type="search"]:focus{
+      border-color:var(--brass-2);
+      box-shadow:0 0 0 4px rgba(191,164,106,.13);
+    }
+
+    button{
+      min-height:54px;
+      border:1px solid rgba(191,164,106,.5);
+      border-radius:16px;
+      padding:.85rem 1.1rem;
+      background:linear-gradient(180deg, rgba(216,196,138,.22), rgba(191,164,106,.12));
+      color:var(--text);
+      font:inherit;
+      font-weight:800;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+
+    button:hover{ border-color:var(--brass-2); transform:translateY(-1px); }
+    button:disabled{ opacity:.58; cursor:not-allowed; transform:none; }
+
+    .suggestions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.55rem;
+      margin-top:1rem;
+    }
+
+    .chip{
+      border:1px solid var(--line-soft);
+      border-radius:999px;
+      padding:.45rem .72rem;
+      color:var(--muted);
+      background:rgba(255,255,255,.035);
+      cursor:pointer;
+      font-size:.9rem;
+    }
+
+    .chip:hover{ color:var(--text); border-color:var(--line); }
+
+    .status{
+      min-height:1.6rem;
+      margin:1.1rem 0 0;
+      color:var(--soft);
+      font-size:.94rem;
+    }
+
+    .results{
+      display:grid;
+      gap:.85rem;
+      margin-top:1.15rem;
+    }
+
+    .result-card{
+      display:block;
+      text-decoration:none;
+      border:1px solid var(--line-soft);
+      border-radius:18px;
+      background:rgba(8,15,14,.58);
+      padding:1rem;
+      transition:transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .result-card:hover{
+      transform:translateY(-2px);
+      border-color:var(--line);
+      background:rgba(12,24,22,.72);
+    }
+
+    .result-title{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:1rem;
+      margin:0;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:1.2rem;
+      font-weight:500;
+      line-height:1.25;
+      color:var(--text);
+    }
+
+    .result-url{
+      margin:.35rem 0 0;
+      color:var(--brass-2);
+      font-size:.83rem;
+      word-break:break-word;
+    }
+
+    .result-snippet{
+      margin:.6rem 0 0;
+      color:var(--muted);
+      font-size:.96rem;
+    }
+
+    .score{
+      color:var(--soft);
+      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size:.76rem;
+      white-space:nowrap;
+    }
+
+    .empty-state{
+      border:1px dashed var(--line);
+      border-radius:18px;
+      padding:1.1rem;
+      color:var(--muted);
+      background:rgba(191,164,106,.05);
+    }
+
+    .note{
+      width:var(--stage-narrow);
+      margin:-2.75rem auto 4rem;
+      color:var(--soft);
+      font-size:.9rem;
+      text-align:center;
+    }
+
+    .note code{
+      color:var(--brass-2);
+      background:rgba(0,0,0,.28);
+      padding:.1rem .35rem;
+      border-radius:6px;
+    }
+
+    @media (max-width:720px){
+      .nav{ min-height:auto; padding:1rem 0; align-items:flex-start; flex-direction:column; }
+      .nav-links{ justify-content:flex-start; gap:.75rem; }
+      .query-row{ grid-template-columns:1fr; }
+      button{ width:100%; }
+      .result-title{ flex-direction:column; gap:.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Ocean Liner Curator</span>
+      </a>
+      <div class="nav-links" aria-label="Archive links">
+        <a href="/explore">Explore</a>
+        <a href="/ships">Ship Guides</a>
+        <a href="/collections">Research Collections</a>
+        <a href="/ocean-liner-gpt">Ocean Liner GPT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-content">
+        <div class="eyebrow">Archive Search</div>
+        <h1 id="page-title">Search the Ocean Liner Archive</h1>
+        <p class="dek">
+          Search across ship guides, research collections, essays, reference pages, and interpretive material from Ocean Liner Curator.
+        </p>
+      </div>
+    </section>
+
+    <section class="search-section" aria-labelledby="search-heading">
+      <div class="search-card">
+        <form class="search-form" id="archiveSearchForm">
+          <div class="input-wrap">
+            <label for="archiveSearchInput" id="search-heading">Search the archive</label>
+            <div class="query-row">
+              <input
+                id="archiveSearchInput"
+                name="q"
+                type="search"
+                autocomplete="off"
+                placeholder="Try “Aquitania wartime service,” “immigration,” or “White Star Line interiors”"
+                aria-describedby="searchStatus"
+              />
+              <button id="archiveSearchButton" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="suggestions" aria-label="Suggested searches">
+          <button class="chip" type="button" data-query="SS Leviathan">SS Leviathan</button>
+          <button class="chip" type="button" data-query="Titanic safety changes">Titanic safety changes</button>
+          <button class="chip" type="button" data-query="immigration and ocean liners">Immigration</button>
+          <button class="chip" type="button" data-query="White Star Line">White Star Line</button>
+          <button class="chip" type="button" data-query="wartime service">Wartime service</button>
+        </div>
+
+        <div class="status" id="searchStatus" role="status" aria-live="polite">
+          Enter a subject, ship, line, date, route, or historical theme.
+        </div>
+
+        <div class="results" id="archiveSearchResults" aria-label="Search results"></div>
+      </div>
+    </section>
+
+    <p class="note">
+      
+    </p>
+  </main>
+
+  <script>
+    /*
+      Ocean Liner Curator — Archive Search Page
+      ------------------------------------------------------------
+      This page expects a small Cloudflare Worker endpoint at SEARCH_ENDPOINT.
+
+      Recommended response shape from your Worker:
+      {
+        "results": [
+          {
+            "title": "SS Leviathan — Ship Guide",
+            "url": "https://oceanliners.net/ships/ss-leviathan",
+            "snippet": "A curator-minded reference guide to SS Leviathan...",
+            "score": 0.87
+          }
+        ]
+      }
+
+      If your Worker returns a different Cloudflare AI Search shape, adjust
+      normalizeResults() below rather than changing the page markup.
+    */
+
+    const SEARCH_ENDPOINT = "https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/";
+    const form = document.getElementById("archiveSearchForm");
+    const input = document.getElementById("archiveSearchInput");
+    const button = document.getElementById("archiveSearchButton");
+    const statusEl = document.getElementById("searchStatus");
+    const resultsEl = document.getElementById("archiveSearchResults");
+    const chips = document.querySelectorAll(".chip[data-query]");
+
+    function escapeHtml(value){
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function readableUrl(url){
+      try{
+        const parsed = new URL(url);
+        return parsed.hostname.replace(/^www\./, "") + parsed.pathname;
+      }catch{
+        return url || "OceanLiners.net";
+      }
+    }
+
+    function normalizeResults(payload){
+      const raw = Array.isArray(payload?.results)
+        ? payload.results
+        : Array.isArray(payload?.data)
+          ? payload.data
+          : Array.isArray(payload)
+            ? payload
+            : [];
+
+      return raw.map((item) => {
+        const metadata = item.metadata || item.meta || {};
+        const url = item.url || metadata.url || item.href || item.link || "#";
+        return {
+          title: item.title || metadata.title || item.name || readableUrl(url),
+          url,
+          snippet: item.snippet || item.text || item.content || item.summary || metadata.description || "No preview text was returned for this result.",
+          score: item.score || item.relevance || item.similarity || null
+        };
+      });
+    }
+
+    function renderResults(results, query){
+      resultsEl.innerHTML = "";
+
+      if(!results.length){
+        resultsEl.innerHTML = `
+          <div class="empty-state">
+            No archive results found for <strong>${escapeHtml(query)}</strong>. Try a ship name, shipping line, event, or broader historical theme.
+          </div>
+        `;
+        return;
+      }
+
+      const fragment = document.createDocumentFragment();
+      results.forEach((result) => {
+        const card = document.createElement("a");
+        card.className = "result-card";
+        card.href = result.url || "#";
+        if(result.url && result.url.startsWith("http")) card.rel = "noopener";
+
+        const score = result.score !== null && result.score !== undefined
+          ? `<span class="score">${escapeHtml(Number(result.score).toFixed ? Number(result.score).toFixed(2) : result.score)}</span>`
+          : "";
+
+        card.innerHTML = `
+          <h2 class="result-title">
+            <span>${escapeHtml(result.title)}</span>
+            ${score}
+          </h2>
+          <p class="result-url">${escapeHtml(readableUrl(result.url))}</p>
+          <p class="result-snippet">${escapeHtml(result.snippet)}</p>
+        `;
+        fragment.appendChild(card);
+      });
+
+      resultsEl.appendChild(fragment);
+    }
+
+    async function searchArchive(query){
+      const trimmed = query.trim();
+      if(!trimmed){
+        statusEl.textContent = "Enter a search term first.";
+        resultsEl.innerHTML = "";
+        input.focus();
+        return;
+      }
+
+      button.disabled = true;
+      statusEl.textContent = `Searching the archive for “${trimmed}”…`;
+      resultsEl.innerHTML = "";
+
+      const url = new URL(SEARCH_ENDPOINT, window.location.origin);
+      url.searchParams.set("q", trimmed);
+
+      try{
+        const response = await fetch(url.toString(), {
+          method:"GET",
+          headers:{ "Accept":"application/json" }
+        });
+
+        if(!response.ok){
+          throw new Error(`Search request failed with status ${response.status}`);
+        }
+
+        const payload = await response.json();
+        const results = normalizeResults(payload);
+        statusEl.textContent = results.length === 1
+          ? `Found 1 result for “${trimmed}”.`
+          : `Found ${results.length} results for “${trimmed}”.`;
+        renderResults(results, trimmed);
+      }catch(error){
+        console.error(error);
+        statusEl.textContent = "Search is not connected yet. Once your Cloudflare Worker route is live, results will appear here.";
+        resultsEl.innerHTML = `
+          <div class="empty-state">
+            This page is ready, but the search endpoint is not returning results yet. Connect <strong>${escapeHtml(SEARCH_ENDPOINT)}</strong> to your Cloudflare AI Search Worker.
+          </div>
+        `;
+      }finally{
+        button.disabled = false;
+      }
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      searchArchive(input.value);
+    });
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        input.value = chip.dataset.query || "";
+        searchArchive(input.value);
+      });
+    });
+
+    const initialParams = new URLSearchParams(window.location.search);
+    const initialQuery = initialParams.get("q");
+    if(initialQuery){
+      input.value = initialQuery;
+      searchArchive(initialQuery);
+    }
+  </script>
+</body>
+</html>
