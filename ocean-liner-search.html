@@ -17,6 +17,33 @@
   <link rel="canonical" href="https://oceanliners.net/search" />
   <meta name="robots" content="index,follow" />
 
+  <meta property="og:title" content="Search the Archive — Ocean Liner Curator" />
+  <meta property="og:description" content="Search ship guides, research collections, essays, and reference material from Ocean Liner Curator." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oceanliners.net/search" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/search#webpage",
+    "name": "Search the Archive — Ocean Liner Curator",
+    "url": "https://oceanliners.net/search",
+    "description": "Search the Ocean Liner Curator archive for ship guides, research collections, essays, reference pages, and ocean liner history.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Ocean Liner Curator",
+      "url": "https://oceanliners.net"
+    }
+  }
+  </script>
+
+  <!-- Cloudflare AI Search component -->
+  <script
+    type="module"
+    src="https://70b18965-6ccb-40df-902d-313de9c5c89e.search.ai.cloudflare.com/assets/v0.0.39/search-snippet.es.js">
+  </script>
+
   <style>
     :root{
       --bg:#0a1110;
@@ -30,7 +57,7 @@
       --line-soft:rgba(241,234,220,.12);
       --shadow:0 24px 70px rgba(0,0,0,.38);
       --stage:min(1100px, calc(100% - 2rem));
-      --stage-narrow:min(900px, calc(100% - 2rem));
+      --stage-narrow:min(1100px, calc(100% - 2rem));
     }
 
     *{ box-sizing:border-box; }
@@ -225,13 +252,16 @@
       font-weight:800;
     }
 
-    .cloudflare-search-frame{
+    search-bar-snippet{
+      display:block;
       width:100%;
-      min-height:760px;
-      border:1px solid rgba(191,164,106,.28);
-      border-radius:18px;
-      background:#fff;
-      overflow:hidden;
+
+      --search-snippet-primary-color:#d8c48a;
+      --search-snippet-primary-hover:#f0cf58;
+      --search-snippet-focus-ring:#f0cf58;
+
+      --search-snippet-background:#0f1c1a;
+      --search-snippet-text-color:#f1eadc;
     }
 
     .note{
@@ -253,10 +283,6 @@
       .nav-links{
         justify-content:flex-start;
         gap:.75rem;
-      }
-
-      .cloudflare-search-frame{
-        min-height:720px;
       }
     }
   </style>
@@ -294,13 +320,11 @@
       <div class="search-card">
         <span class="search-label" id="search-heading">Search the archive</span>
 
-        <iframe
-          class="cloudflare-search-frame"
-          src="https://billowing-tooth-ca73-nlweb.75tqx86g8q.workers.dev/snippet.html"
-          title="Search Ocean Liner Curator"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <search-bar-snippet
+          api-url="https://70b18965-6ccb-40df-902d-313de9c5c89e.search.ai.cloudflare.com/"
+          placeholder="Search ships, lines, routes, interiors, and maritime history..."
+          hide-branding="true">
+        </search-bar-snippet>
       </div>
     </section>
 
