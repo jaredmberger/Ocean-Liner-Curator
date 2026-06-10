@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  html { background:#0a1110; }
+  body { background:#0a1110; }
+</style>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0a1110">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Thank You — Ocean Liner Curator</title>
+<meta name="description" content="Thank you for helping improve Ocean Liner Curator." />
+<meta name="robots" content="noindex,follow" />
+
+<link rel="canonical" href="https://oceanliners.net/thank-you" />
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0a1110;
+  --panel:rgba(255,255,255,.04);
+  --border:rgba(191,164,106,.22);
+  --brass:#bfa46a;
+  --text:#ece7db;
+  --muted:#b7b0a1;
+  --max:780px;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+
+html,body{
+  margin:0;
+  min-height:100%;
+  color:var(--text);
+  font-family:"Spectral", serif;
+  overflow-x:hidden;
+}
+
+body{
+  background:
+    radial-gradient(circle at top, rgba(191,164,106,.08), transparent 50%),
+    linear-gradient(180deg, #0d1514 0%, #0a1110 100%);
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.05;
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(191,164,106,.25) 49%, rgba(191,164,106,.25) 51%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(191,164,106,.25) 49%, rgba(191,164,106,.25) 51%, transparent 52%);
+  background-size:64px 64px;
+}
+
+.wrapper{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem 1rem;
+}
+
+.card{
+  width:min(var(--max), 100%);
+  background:var(--panel);
+  backdrop-filter:blur(10px);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:3rem 2rem;
+  position:relative;
+  overflow:hidden;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:24px;
+  padding:1px;
+  background:linear-gradient(
+    135deg,
+    rgba(191,164,106,.35),
+    transparent,
+    rgba(191,164,106,.2)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+}
+
+.badge{
+  width:72px;
+  height:72px;
+  margin:0 auto 1.5rem;
+  border-radius:50%;
+  border:1px solid rgba(191,164,106,.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:2rem;
+  color:var(--brass);
+  background:rgba(191,164,106,.08);
+}
+
+h1{
+  margin:0 0 1rem;
+  text-align:center;
+  font-family:"Libre Baskerville", serif;
+  font-size:clamp(2rem, 4vw, 2.8rem);
+  line-height:1.2;
+}
+
+.lead{
+  max-width:620px;
+  margin:0 auto;
+  text-align:center;
+  color:var(--muted);
+  font-size:1.08rem;
+  line-height:1.8;
+}
+
+.note{
+  margin:2rem auto 0;
+  max-width:620px;
+  padding:1rem 1.25rem;
+  border-left:3px solid var(--brass);
+  background:rgba(191,164,106,.06);
+  color:#d8d0c0;
+}
+
+.actions{
+  margin-top:2.5rem;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:1rem;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.9rem 1.4rem;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.2s ease;
+}
+
+.btn-primary{
+  background:var(--brass);
+  color:#111;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+}
+
+.btn-secondary{
+  border:1px solid rgba(191,164,106,.3);
+  color:var(--text);
+  background:rgba(255,255,255,.03);
+}
+
+.btn-secondary:hover{
+  border-color:var(--brass);
+}
+
+.footer{
+  margin-top:2rem;
+  text-align:center;
+  color:#8e887b;
+  font-size:.95rem;
+}
+
+@media (max-width:640px){
+  .card{
+    padding:2.25rem 1.5rem;
+  }
+
+  .actions{
+    flex-direction:column;
+  }
+
+  .btn{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <main class="card">
+
+    <div class="badge">★</div>
+
+    <h1>Thank You</h1>
+
+    <p class="lead">
+      Your suggestion has been received. Ocean Liner Curator is built through
+      ongoing research, careful review, and contributions from readers who care
+      about preserving maritime history. Thank you for taking the time to help
+      improve the project.
+    </p>
+
+    <div class="note">
+      Every submission is reviewed individually. While not every suggestion
+      results in an immediate change, all feedback helps strengthen the site's
+      accuracy, clarity, and long-term value as a historical resource.
+    </div>
+
+    <div class="actions">
+      <a href="/" class="btn btn-primary">Return Home</a>
+      <a href="/explore" class="btn btn-secondary">Continue Exploring</a>
+    </div>
+
+    <div class="footer">
+      Evidence-first maritime history.
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
