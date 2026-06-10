@@ -227,43 +227,48 @@
       font-size:clamp(1rem, 2vw, 1.22rem);
     }
 
-    .search-section{
-      width:var(--stage-narrow);
-      margin:1.5rem auto 4rem;
-    }
+.search-section{
+  width:var(--stage-narrow);
+  margin:1.5rem auto 10rem;
+  overflow:visible;
+}
 
-    .search-card{
-      border:1px solid var(--line);
-      border-radius:24px;
-      background:var(--panel);
-      backdrop-filter:blur(10px);
-      box-shadow:var(--shadow);
-      padding:clamp(1rem, 3vw, 1.75rem);
-      overflow:hidden;
-    }
+.search-card{
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:var(--panel);
+  backdrop-filter:blur(10px);
+  box-shadow:var(--shadow);
+  padding:clamp(1rem, 3vw, 1.75rem);
+  overflow:visible;
+}
 
-    .search-label{
-      display:block;
-      margin:0 0 .85rem;
-      color:var(--brass-2);
-      text-transform:uppercase;
-      letter-spacing:.13em;
-      font-size:.74rem;
-      font-weight:800;
-    }
+.search-label{
+  display:block;
+  margin:0 0 .85rem;
+  color:var(--brass-2);
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  font-size:.74rem;
+  font-weight:800;
+}
 
-    search-bar-snippet{
-      display:block;
-      width:100%;
+search-bar-snippet{
+  display:block;
+  width:100%;
+  overflow:visible;
 
-      --search-snippet-primary-color:#d8c48a;
-      --search-snippet-primary-hover:#f0cf58;
-      --search-snippet-focus-ring:#f0cf58;
+  --search-snippet-primary-color:#d8c48a;
+  --search-snippet-primary-hover:#f0cf58;
+  --search-snippet-focus-ring:#f0cf58;
+  --search-snippet-background:#0f1c1a;
+  --search-snippet-text-color:#f1eadc;
+}
 
-      --search-snippet-background:#0f1c1a;
-      --search-snippet-text-color:#f1eadc;
-    }
-
+search-bar-snippet,
+search-bar-snippet *{
+  box-sizing:border-box;
+}
     .note{
       width:var(--stage-narrow);
       margin:-2.75rem auto 4rem;
@@ -286,14 +291,12 @@
       }
     }
     
-    .search-card{
-  border:1px solid var(--line);
-  border-radius:24px;
-  background:var(--panel);
-  backdrop-filter:blur(10px);
-  box-shadow:var(--shadow);
-  padding:clamp(1rem, 3vw, 1.75rem);
-  overflow:visible;
+   .search-card{
+  border:none;
+  background:none;
+  backdrop-filter:none;
+  box-shadow:none;
+  padding:0;
 }
 
 search-bar-snippet{
@@ -340,17 +343,17 @@ search-bar-snippet{
       </div>
     </section>
 
-    <section class="search-section" aria-labelledby="search-heading">
-      <div class="search-card">
-        <span class="search-label" id="search-heading">Search the archive</span>
+   <section class="search-section" aria-labelledby="search-heading">
+  <div class="search-card">
+    <span class="search-label" id="search-heading">Search the archive</span>
 
-       <search-bar-snippet
-  api-url="https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/"
-  placeholder="Search ships, lines, routes, interiors, and maritime history..."
-  hide-branding="true">
-</search-bar-snippet>
-      </div>
-    </section>
+    <search-bar-snippet
+      api-url="https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/"
+      placeholder="Search ships, lines, routes, interiors, and maritime history..."
+      hide-branding="true">
+    </search-bar-snippet>
+  </div>
+</section>
 
     <p class="note">
       Powered by the Ocean Liner Curator archive index.
