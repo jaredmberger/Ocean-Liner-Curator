@@ -159,7 +159,7 @@
     }
 
     .hero::after{
-      content:"✦";
+      content:"★";
       position:absolute;
       right:clamp(1.5rem, 5vw, 4rem);
       top:clamp(1.25rem, 4vw, 3rem);
@@ -396,7 +396,7 @@
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-mark" aria-hidden="true">★</span>
         <span>Ocean Liner Curator</span>
       </a>
       <div class="nav-links" aria-label="Archive links">
@@ -516,12 +516,39 @@
 
       const payload = await response.json();
 
-      const answer =
-        payload?.response ||
-        payload?.answer ||
-        payload?.message ||
-        payload?.choices?.[0]?.message?.content ||
-        JSON.stringify(payload, null, 2);
+      const chunks = payload?.result?.chunks || [];
+
+if (!chunks.length) {
+  statusEl.textContent = `No results found for “${trimmed}”.`;
+  resultsEl.innerHTML = `
+    <div class="empty-state">
+      No archive results found for <strong>${escapeHtml(trimmed)}</strong>.
+    </div>
+  `;
+  return;
+}
+
+statusEl.textContent = `Found ${chunks.length} result${chunks.length === 1 ? "" : "s"} for “${trimmed}”.`;
+
+resultsEl.innerHTML = chunks.map((chunk) => {
+  const text = chunk.text || "";
+  const score = chunk.score ? Number(chunk.score).toFixed(2) : "";
+
+  const titleMatch = text.match(/\[([^\]]+)\]\(([^)]+)\)/);
+  const title = titleMatch ? titleMatch[1] : "Archive Result";
+  const url = titleMatch ? titleMatch[2] : "#";
+
+  return `
+    <a class="result-card" href="${escapeHtml(url)}">
+      <h2 class="result-title">
+        <span>${escapeHtml(title)}</span>
+        ${score ? `<span class="score">${score}</span>` : ""}
+      </h2>
+      <p class="result-url">${escapeHtml(url)}</p>
+      <p class="result-snippet">${escapeHtml(text.slice(0, 700))}${text.length > 700 ? "…" : ""}</p>
+    </a>
+  `;
+}).join("");
 
       statusEl.textContent = `Archive response for “${trimmed}”.`;
 
