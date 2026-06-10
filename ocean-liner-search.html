@@ -459,7 +459,7 @@
     </p>
   </main>
 
-  <script>
+ <script>
   const SEARCH_ENDPOINT =
     "https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/search";
 
@@ -477,6 +477,11 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#039;");
+  }
+
+  function firstMarkdownLink(text){
+    const match = String(text || "").match(/\[([^\]]+)\]\(([^)]+)\)/);
+    return match ? { title: match[1], url: match[2] } : null;
   }
 
   async function searchArchive(query){
@@ -510,63 +515,51 @@
         })
       });
 
-      if(!response.ok){
-        throw new Error(`Search failed with status ${response.status}`);
-      }
-
       const payload = await response.json();
+
+      if(!response.ok || payload.success === false){
+        throw new Error(payload.error || `Search failed with status ${response.status}`);
+      }
 
       const chunks = payload?.result?.chunks || [];
 
-if (!chunks.length) {
-  statusEl.textContent = `No results found for “${trimmed}”.`;
-  resultsEl.innerHTML = `
-    <div class="empty-state">
-      No archive results found for <strong>${escapeHtml(trimmed)}</strong>.
-    </div>
-  `;
-  return;
-}
+      if(!chunks.length){
+        statusEl.textContent = `No results found for “${trimmed}”.`;
+        resultsEl.innerHTML = `
+          <div class="empty-state">
+            No archive results found for <strong>${escapeHtml(trimmed)}</strong>.
+          </div>
+        `;
+        return;
+      }
 
-statusEl.textContent = `Found ${chunks.length} result${chunks.length === 1 ? "" : "s"} for “${trimmed}”.`;
+      statusEl.textContent = `Found ${chunks.length} result${chunks.length === 1 ? "" : "s"} for “${trimmed}”.`;
 
-resultsEl.innerHTML = chunks.map((chunk) => {
-  const text = chunk.text || "";
-  const score = chunk.score ? Number(chunk.score).toFixed(2) : "";
+      resultsEl.innerHTML = chunks.map((chunk, index) => {
+        const text = chunk.text || "";
+        const link = firstMarkdownLink(text);
+        const title = link?.title || `Archive Result ${index + 1}`;
+        const url = link?.url || "#";
+        const score = typeof chunk.score === "number" ? chunk.score.toFixed(2) : "";
 
-  const titleMatch = text.match(/\[([^\]]+)\]\(([^)]+)\)/);
-  const title = titleMatch ? titleMatch[1] : "Archive Result";
-  const url = titleMatch ? titleMatch[2] : "#";
-
-  return `
-    <a class="result-card" href="${escapeHtml(url)}">
-      <h2 class="result-title">
-        <span>${escapeHtml(title)}</span>
-        ${score ? `<span class="score">${score}</span>` : ""}
-      </h2>
-      <p class="result-url">${escapeHtml(url)}</p>
-      <p class="result-snippet">${escapeHtml(text.slice(0, 700))}${text.length > 700 ? "…" : ""}</p>
-    </a>
-  `;
-}).join("");
-
-      statusEl.textContent = `Archive response for “${trimmed}”.`;
-
-      resultsEl.innerHTML = `
-        <div class="result-card" style="cursor:default;">
-          <h2 class="result-title">
-            <span>Search Result</span>
-          </h2>
-          <p class="result-snippet" style="white-space:pre-wrap;">${escapeHtml(answer)}</p>
-        </div>
-      `;
+        return `
+          <a class="result-card" href="${escapeHtml(url)}">
+            <h2 class="result-title">
+              <span>${escapeHtml(title)}</span>
+              ${score ? `<span class="score">${score}</span>` : ""}
+            </h2>
+            <p class="result-url">${escapeHtml(url)}</p>
+            <p class="result-snippet">${escapeHtml(text.slice(0, 700))}${text.length > 700 ? "…" : ""}</p>
+          </a>
+        `;
+      }).join("");
 
     }catch(error){
       console.error(error);
       statusEl.textContent = "Search could not connect.";
       resultsEl.innerHTML = `
         <div class="empty-state">
-          The search page is styled correctly, but the Cloudflare endpoint did not return a usable response.
+          ${escapeHtml(error.message || "The Cloudflare endpoint did not return a usable response.")}
         </div>
       `;
     }finally{
@@ -586,9 +579,7 @@ resultsEl.innerHTML = chunks.map((chunk) => {
     });
   });
 
-  const initialParams = new URLSearchParams(window.location.search);
-  const initialQuery = initialParams.get("q");
-
+  const initialQuery = new URLSearchParams(window.location.search).get("q");
   if(initialQuery){
     input.value = initialQuery;
     searchArchive(initialQuery);
