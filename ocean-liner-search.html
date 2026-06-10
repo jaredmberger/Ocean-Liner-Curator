@@ -299,17 +299,19 @@ search-bar-snippet *{
   padding:0;
 }
 
-search-bar-snippet{
+chat-page-snippet{
   display:block;
   width:100%;
-  min-height:620px;
-  overflow:visible;
 
-  --search-snippet-primary-color:#d8c48a;
-  --search-snippet-primary-hover:#f0cf58;
-  --search-snippet-focus-ring:#f0cf58;
-  --search-snippet-background:#0f1c1a;
-  --search-snippet-text-color:#f1eadc;
+  --search-snippet-primary-color:#bfa46a;
+  --search-snippet-primary-hover:#d8c48a;
+
+  --search-snippet-background:#141f1c;
+  --search-snippet-surface:#141f1c;
+
+  --search-snippet-hover-background:#1a2925;
+
+  --search-snippet-border-color:#bfa46a;
 }
     
   </style>
@@ -343,15 +345,15 @@ search-bar-snippet{
       </div>
     </section>
 
-   <section class="search-section" aria-labelledby="search-heading">
+   <section class="search-section">
   <div class="search-card">
-    <span class="search-label" id="search-heading">Search the archive</span>
 
-    <search-bar-snippet
+    <chat-page-snippet
       api-url="https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/"
-      placeholder="Search ships, lines, routes, interiors, and maritime history..."
+      theme="dark"
       hide-branding="true">
-    </search-bar-snippet>
+    </chat-page-snippet>
+
   </div>
 </section>
 
