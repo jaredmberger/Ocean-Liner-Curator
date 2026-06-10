@@ -17,32 +17,10 @@
   <link rel="canonical" href="https://oceanliners.net/search" />
   <meta name="robots" content="index,follow" />
 
-  <meta property="og:title" content="Search the Archive — Ocean Liner Curator" />
-  <meta property="og:description" content="Search ship guides, research collections, essays, and reference material from Ocean Liner Curator." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://oceanliners.net/search" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://oceanliners.net/search#webpage",
-    "name": "Search the Archive — Ocean Liner Curator",
-    "url": "https://oceanliners.net/search",
-    "description": "Search the Ocean Liner Curator archive for ship guides, research collections, essays, reference pages, and ocean liner history.",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "Ocean Liner Curator",
-      "url": "https://oceanliners.net"
-    }
-  }
-  </script>
-
   <style>
     :root{
       --bg:#0a1110;
       --panel:rgba(15, 28, 26, .76);
-      --panel-strong:rgba(13, 24, 23, .92);
       --text:#f1eadc;
       --muted:#c9bfa9;
       --soft:#9f9582;
@@ -52,11 +30,17 @@
       --line-soft:rgba(241,234,220,.12);
       --shadow:0 24px 70px rgba(0,0,0,.38);
       --stage:min(1100px, calc(100% - 2rem));
-      --stage-narrow:min(820px, calc(100% - 2rem));
+      --stage-narrow:min(900px, calc(100% - 2rem));
     }
 
     *{ box-sizing:border-box; }
-    html, body{ margin:0; min-height:100%; overflow-x:clip; }
+
+    html, body{
+      margin:0;
+      min-height:100%;
+      overflow-x:clip;
+    }
+
     body{
       color:var(--text);
       font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -140,9 +124,15 @@
       border-bottom:1px solid transparent;
     }
 
-    .nav-links a:hover{ color:var(--text); border-color:var(--brass); }
+    .nav-links a:hover{
+      color:var(--text);
+      border-color:var(--brass);
+    }
 
-    main{ position:relative; z-index:1; }
+    main{
+      position:relative;
+      z-index:1;
+    }
 
     .hero{
       width:var(--stage);
@@ -169,7 +159,11 @@
       transform:rotate(8deg);
     }
 
-    .hero-content{ max-width:760px; position:relative; z-index:1; }
+    .hero-content{
+      max-width:760px;
+      position:relative;
+      z-index:1;
+    }
 
     .eyebrow{
       display:inline-flex;
@@ -218,18 +212,12 @@
       backdrop-filter:blur(10px);
       box-shadow:var(--shadow);
       padding:clamp(1rem, 3vw, 1.75rem);
+      overflow:hidden;
     }
 
-    .search-form{
-      display:grid;
-      grid-template-columns:1fr auto;
-      gap:.75rem;
-      align-items:center;
-    }
-
-    label{
+    .search-label{
       display:block;
-      margin:0 0 .65rem;
+      margin:0 0 .85rem;
       color:var(--brass-2);
       text-transform:uppercase;
       letter-spacing:.13em;
@@ -237,135 +225,13 @@
       font-weight:800;
     }
 
-    .input-wrap{ grid-column:1 / -1; }
-
-    .query-row{
-      display:grid;
-      grid-template-columns:1fr auto;
-      gap:.75rem;
-    }
-
-    input[type="search"]{
+    .cloudflare-search-frame{
       width:100%;
-      min-height:54px;
-      border-radius:16px;
-      border:1px solid rgba(191,164,106,.36);
-      background:rgba(5,10,9,.62);
-      color:var(--text);
-      font:inherit;
-      padding:.85rem 1rem;
-      outline:none;
-    }
-
-    input[type="search"]::placeholder{ color:rgba(201,191,169,.62); }
-    input[type="search"]:focus{
-      border-color:var(--brass-2);
-      box-shadow:0 0 0 4px rgba(191,164,106,.13);
-    }
-
-    button{
-      min-height:54px;
-      border:1px solid rgba(191,164,106,.5);
-      border-radius:16px;
-      padding:.85rem 1.1rem;
-      background:linear-gradient(180deg, rgba(216,196,138,.22), rgba(191,164,106,.12));
-      color:var(--text);
-      font:inherit;
-      font-weight:800;
-      cursor:pointer;
-      white-space:nowrap;
-    }
-
-    button:hover{ border-color:var(--brass-2); transform:translateY(-1px); }
-    button:disabled{ opacity:.58; cursor:not-allowed; transform:none; }
-
-    .suggestions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:.55rem;
-      margin-top:1rem;
-    }
-
-    .chip{
-      border:1px solid var(--line-soft);
-      border-radius:999px;
-      padding:.45rem .72rem;
-      color:var(--muted);
-      background:rgba(255,255,255,.035);
-      cursor:pointer;
-      font-size:.9rem;
-    }
-
-    .chip:hover{ color:var(--text); border-color:var(--line); }
-
-    .status{
-      min-height:1.6rem;
-      margin:1.1rem 0 0;
-      color:var(--soft);
-      font-size:.94rem;
-    }
-
-    .results{
-      display:grid;
-      gap:.85rem;
-      margin-top:1.15rem;
-    }
-
-    .result-card{
-      display:block;
-      text-decoration:none;
-      border:1px solid var(--line-soft);
+      min-height:760px;
+      border:1px solid rgba(191,164,106,.28);
       border-radius:18px;
-      background:rgba(8,15,14,.58);
-      padding:1rem;
-      transition:transform .18s ease, border-color .18s ease, background .18s ease;
-    }
-
-    .result-card:hover{
-      transform:translateY(-2px);
-      border-color:var(--line);
-      background:rgba(12,24,22,.72);
-    }
-
-    .result-title{
-      display:flex;
-      align-items:baseline;
-      justify-content:space-between;
-      gap:1rem;
-      margin:0;
-      font-family:Georgia, "Times New Roman", serif;
-      font-size:1.2rem;
-      font-weight:500;
-      line-height:1.25;
-      color:var(--text);
-    }
-
-    .result-url{
-      margin:.35rem 0 0;
-      color:var(--brass-2);
-      font-size:.83rem;
-      word-break:break-word;
-    }
-
-    .result-snippet{
-      margin:.6rem 0 0;
-      color:var(--muted);
-      font-size:.96rem;
-    }
-
-    .score{
-      color:var(--soft);
-      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size:.76rem;
-      white-space:nowrap;
-    }
-
-    .empty-state{
-      border:1px dashed var(--line);
-      border-radius:18px;
-      padding:1.1rem;
-      color:var(--muted);
-      background:rgba(191,164,106,.05);
+      background:#fff;
+      overflow:hidden;
     }
 
     .note{
@@ -376,22 +242,26 @@
       text-align:center;
     }
 
-    .note code{
-      color:var(--brass-2);
-      background:rgba(0,0,0,.28);
-      padding:.1rem .35rem;
-      border-radius:6px;
-    }
-
     @media (max-width:720px){
-      .nav{ min-height:auto; padding:1rem 0; align-items:flex-start; flex-direction:column; }
-      .nav-links{ justify-content:flex-start; gap:.75rem; }
-      .query-row{ grid-template-columns:1fr; }
-      button{ width:100%; }
-      .result-title{ flex-direction:column; gap:.25rem; }
+      .nav{
+        min-height:auto;
+        padding:1rem 0;
+        align-items:flex-start;
+        flex-direction:column;
+      }
+
+      .nav-links{
+        justify-content:flex-start;
+        gap:.75rem;
+      }
+
+      .cloudflare-search-frame{
+        min-height:720px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
@@ -399,6 +269,7 @@
         <span class="brand-mark" aria-hidden="true">★</span>
         <span>Ocean Liner Curator</span>
       </a>
+
       <div class="nav-links" aria-label="Archive links">
         <a href="/explore">Explore</a>
         <a href="/ships">Ship Guides</a>
@@ -421,183 +292,21 @@
 
     <section class="search-section" aria-labelledby="search-heading">
       <div class="search-card">
-        <form class="search-form" id="archiveSearchForm">
-          <div class="input-wrap">
-            <label for="archiveSearchInput" id="search-heading">Search the archive</label>
-            <div class="query-row">
-              <input
-                id="archiveSearchInput"
-                name="q"
-                type="search"
-                autocomplete="off"
-                placeholder="Try “Aquitania wartime service,” “immigration,” or “White Star Line interiors”"
-                aria-describedby="searchStatus"
-              />
-              <button id="archiveSearchButton" type="submit">Search</button>
-            </div>
-          </div>
-        </form>
+        <span class="search-label" id="search-heading">Search the archive</span>
 
-        <div class="suggestions" aria-label="Suggested searches">
-          <button class="chip" type="button" data-query="SS Leviathan">SS Leviathan</button>
-          <button class="chip" type="button" data-query="Titanic safety changes">Titanic safety changes</button>
-          <button class="chip" type="button" data-query="immigration and ocean liners">Immigration</button>
-          <button class="chip" type="button" data-query="White Star Line">White Star Line</button>
-          <button class="chip" type="button" data-query="wartime service">Wartime service</button>
-        </div>
-
-        <div class="status" id="searchStatus" role="status" aria-live="polite">
-          Enter a subject, ship, line, date, route, or historical theme.
-        </div>
-
-        <div class="results" id="archiveSearchResults" aria-label="Search results"></div>
+        <iframe
+          class="cloudflare-search-frame"
+          src="https://billowing-tooth-ca73-nlweb.75tqx86g8q.workers.dev/snippet.html"
+          title="Search Ocean Liner Curator"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </section>
 
     <p class="note">
-      
+      Powered by the Ocean Liner Curator archive index.
     </p>
   </main>
-
- <script>
-  const SEARCH_ENDPOINT =
-    "https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/search";
-
-  const form = document.getElementById("archiveSearchForm");
-  const input = document.getElementById("archiveSearchInput");
-  const button = document.getElementById("archiveSearchButton");
-  const statusEl = document.getElementById("searchStatus");
-  const resultsEl = document.getElementById("archiveSearchResults");
-  const chips = document.querySelectorAll(".chip[data-query]");
-
-  function escapeHtml(value){
-    return String(value ?? "")
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
-  }
-
-  function firstMarkdownLink(text){
-    const match = String(text || "").match(/\[([^\]]+)\]\(([^)]+)\)/);
-    return match ? { title: match[1], url: match[2] } : null;
-  }
-
-  async function searchArchive(query){
-    const trimmed = query.trim();
-
-    if(!trimmed){
-      statusEl.textContent = "Enter a search term first.";
-      resultsEl.innerHTML = "";
-      input.focus();
-      return;
-    }
-
-    button.disabled = true;
-    statusEl.textContent = `Searching the archive for “${trimmed}”…`;
-    resultsEl.innerHTML = "";
-
-    try{
-      const response = await fetch(SEARCH_ENDPOINT, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          messages: [
-            {
-              role: "user",
-              content: trimmed
-            }
-          ]
-        })
-      });
-
-      const payload = await response.json();
-
-      if(!response.ok || payload.success === false){
-        throw new Error(payload.error || `Search failed with status ${response.status}`);
-      }
-
-      const chunks = payload?.result?.chunks || [];
-
-      if(!chunks.length){
-        statusEl.textContent = `No results found for “${trimmed}”.`;
-        resultsEl.innerHTML = `
-          <div class="empty-state">
-            No archive results found for <strong>${escapeHtml(trimmed)}</strong>.
-          </div>
-        `;
-        return;
-      }
-
-      statusEl.textContent = `Found ${chunks.length} result${chunks.length === 1 ? "" : "s"} for “${trimmed}”.`;
-
-      resultsEl.innerHTML = chunks.map((chunk, index) => {
-  const rawText = chunk.text || "";
-  const score = typeof chunk.score === "number" ? chunk.score.toFixed(2) : "";
-
-  const links = [...rawText.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)];
-  const internalLink = links.find(match =>
-    match[2].startsWith("/") || match[2].includes("oceanliners.net")
-  );
-
-  const title = internalLink ? internalLink[1] : `Archive Result ${index + 1}`;
-  const url = internalLink ? internalLink[2] : "#";
-
-  const cleanText = rawText
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
-    .replace(/[#*_`]/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
-
-  const snippet =
-    cleanText.length > 260 ? cleanText.slice(0, 260) + "…" : cleanText;
-
-  return `
-    <a class="result-card" href="${escapeHtml(url)}">
-      <h2 class="result-title">
-        <span>${escapeHtml(title)}</span>
-        ${score ? `<span class="score">${score}</span>` : ""}
-      </h2>
-      <p class="result-url">${escapeHtml(url)}</p>
-      <p class="result-snippet">${escapeHtml(snippet)}</p>
-    </a>
-  `;
-}).join("");
-
-    }catch(error){
-      console.error(error);
-      statusEl.textContent = "Search could not connect.";
-      resultsEl.innerHTML = `
-        <div class="empty-state">
-          ${escapeHtml(error.message || "The Cloudflare endpoint did not return a usable response.")}
-        </div>
-      `;
-    }finally{
-      button.disabled = false;
-    }
-  }
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    searchArchive(input.value);
-  });
-
-  chips.forEach((chip) => {
-    chip.addEventListener("click", () => {
-      input.value = chip.dataset.query || "";
-      searchArchive(input.value);
-    });
-  });
-
-  const initialQuery = new URLSearchParams(window.location.search).get("q");
-  if(initialQuery){
-    input.value = initialQuery;
-    searchArchive(initialQuery);
-  }
-</script>
 </body>
 </html>
