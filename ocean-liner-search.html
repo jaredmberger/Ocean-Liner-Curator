@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Search the Archive — Ocean Liner Curator</title>
+  <meta name="description" content="Search the Ocean Liner Curator archive for ship guides, research collections, essays, reference pages, and ocean liner history." />
+  <link rel="canonical" href="https://oceanliners.net/search" />
+  <meta name="robots" content="index,follow" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a1110">
+
+  <meta property="og:title" content="Search the Archive — Ocean Liner Curator" />
+  <meta property="og:description" content="Search ship guides, research collections, essays, and reference material from Ocean Liner Curator." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oceanliners.net/search" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://oceanliners.net/search#webpage",
+    "name": "Search the Archive — Ocean Liner Curator",
+    "url": "https://oceanliners.net/search",
+    "description": "Search the Ocean Liner Curator archive for ship guides, research collections, essays, reference pages, and ocean liner history.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Ocean Liner Curator",
+      "url": "https://oceanliners.net"
+    }
+  }
+  </script>
+
+  <script
+    type="module"
+    src="https://70b18965-6ccb-40df-902d-313de9c5c89e.search.ai.cloudflare.com/assets/v0.0.39/search-snippet.es.js">
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,28,26,.76);
+      --text:#f1eadc;
+      --muted:#c9bfa9;
+      --soft:#9f9582;
+      --brass:#bfa46a;
+      --brass-2:#d8c48a;
+      --line:rgba(191,164,106,.28);
+      --line-soft:rgba(241,234,220,.12);
+      --shadow:0 24px 70px rgba(0,0,0,.38);
+      --stage:min(1100px, calc(100% - 2rem));
+    }
+
+    *{ box-sizing:border-box; }
+
+    html, body{
+      margin:0;
+      min-height:100%;
+      overflow-x:clip;
+      background:#0a1110;
+    }
+
+    body{
+      color:var(--text);
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height:1.65;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(191,164,106,.16), transparent 34rem),
+        radial-gradient(circle at 85% 12%, rgba(120,93,48,.18), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #101917 48%, #08100f 100%);
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.14;
+      background-image:
+        linear-gradient(45deg, rgba(191,164,106,.28) 1px, transparent 1px),
+        linear-gradient(-45deg, rgba(191,164,106,.22) 1px, transparent 1px);
+      background-size:34px 34px;
+      mask-image:radial-gradient(circle at 50% 10%, black, transparent 72%);
+    }
+
+    a{ color:inherit; }
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(10,17,16,.78);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line-soft);
+    }
+
+    .nav{
+      width:var(--stage);
+      margin:0 auto;
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.75rem;
+      text-decoration:none;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:.78rem;
+      color:var(--muted);
+      font-weight:700;
+    }
+
+    .brand-mark{
+      width:34px;
+      height:34px;
+      border:1px solid var(--line);
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      color:var(--brass-2);
+      background:rgba(191,164,106,.08);
+      box-shadow:0 0 0 4px rgba(191,164,106,.04);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:1rem;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      font-size:.92rem;
+      color:var(--muted);
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      border-bottom:1px solid transparent;
+    }
+
+    .nav-links a:hover{
+      color:var(--text);
+      border-color:var(--brass);
+    }
+
+    main{
+      position:relative;
+      z-index:1;
+    }
+
+    .hero{
+      width:var(--stage);
+      margin:2rem auto 0;
+      padding:clamp(2rem, 6vw, 5rem) clamp(1.25rem, 4vw, 3.5rem);
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:
+        linear-gradient(135deg, rgba(191,164,106,.16), transparent 38%),
+        linear-gradient(180deg, rgba(14,29,27,.86), rgba(9,17,16,.92));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .hero::after{
+      content:"★";
+      position:absolute;
+      right:clamp(1.5rem, 5vw, 4rem);
+      top:clamp(1.25rem, 4vw, 3rem);
+      color:rgba(191,164,106,.22);
+      font-size:clamp(4rem, 14vw, 10rem);
+      line-height:1;
+      transform:rotate(8deg);
+    }
+
+    .hero-content{
+      max-width:760px;
+      position:relative;
+      z-index:1;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.55rem;
+      color:var(--brass-2);
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:.74rem;
+      font-weight:800;
+      margin-bottom:1rem;
+    }
+
+    .eyebrow::before{
+      content:"";
+      width:34px;
+      height:1px;
+      background:var(--brass);
+    }
+
+    h1{
+      margin:0;
+      font-family:Georgia, "Times New Roman", serif;
+      font-weight:500;
+      font-size:clamp(2.35rem, 7vw, 5.15rem);
+      line-height:.98;
+      letter-spacing:-.045em;
+    }
+
+    .dek{
+      margin:1.25rem 0 0;
+      max-width:690px;
+      color:var(--muted);
+      font-size:clamp(1rem, 2vw, 1.22rem);
+    }
+
+    .search-section{
+      width:var(--stage);
+      margin:1.5rem auto 3rem;
+    }
+
+    .search-card{
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:var(--panel);
+      backdrop-filter:blur(10px);
+      box-shadow:var(--shadow);
+      padding:clamp(1rem, 3vw, 1.75rem);
+      overflow:visible;
+    }
+
+    .search-label{
+      display:block;
+      margin:0 0 .85rem;
+      color:var(--brass-2);
+      text-transform:uppercase;
+      letter-spacing:.13em;
+      font-size:.74rem;
+      font-weight:800;
+    }
+
+    search-bar-snippet{
+      display:block;
+      width:100%;
+
+      --search-snippet-primary-color:#bfa46a;
+      --search-snippet-primary-hover:#d8c48a;
+      --search-snippet-focus-ring:#d8c48a;
+
+      --search-snippet-background:#141f1c;
+      --search-snippet-surface:#141f1c;
+      --search-snippet-hover-background:#1a2925;
+
+      --search-snippet-text-color:#f1eadc;
+      --search-snippet-border-color:#bfa46a;
+    }
+
+    .note{
+      width:var(--stage);
+      margin:0 auto 4rem;
+      color:var(--soft);
+      font-size:.9rem;
+      text-align:center;
+    }
+
+    @media (max-width:720px){
+      .nav{
+        min-height:auto;
+        padding:1rem 0;
+        align-items:flex-start;
+        flex-direction:column;
+      }
+
+      .nav-links{
+        justify-content:flex-start;
+        gap:.75rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">★</span>
+        <span>Ocean Liner Curator</span>
+      </a>
+
+      <div class="nav-links" aria-label="Archive links">
+        <a href="/explore">Explore</a>
+        <a href="/ships">Ship Guides</a>
+        <a href="/collections">Research Collections</a>
+        <a href="/ocean-liner-gpt">Ocean Liner GPT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-content">
+        <div class="eyebrow">Archive Search</div>
+        <h1 id="page-title">Search the Ocean Liner Archive</h1>
+        <p class="dek">
+          Search across ship guides, research collections, essays, reference pages, and interpretive material from Ocean Liner Curator.
+        </p>
+      </div>
+    </section>
+
+    <section class="search-section" aria-label="Archive search">
+      <div class="search-card">
+        <label class="search-label">Search OceanLiners.net</label>
+
+        <search-bar-snippet
+          api-url="https://70b18965-6ccb-40df-902d-313de9c5c89e.search.ai.cloudflare.com/"
+          placeholder="Search OceanLiners.net"
+          show-url="true"
+          hide-thumbnails="true"
+          hide-branding="true">
+        </search-bar-snippet>
+      </div>
+    </section>
+
+    <p class="note">
+      Powered by the Ocean Liner Curator archive index.
+    </p>
+  </main>
+</body>
+</html>
