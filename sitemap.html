@@ -649,6 +649,32 @@
       --search-snippet-border-color:#bfa46a;
     }
 
+search-bar-snippet{
+  position:relative;
+  z-index:20;
+
+  --search-snippet-background:#0f1c1a;
+  --search-snippet-surface:#0f1c1a;
+  --search-snippet-hover-background:#1a2925;
+  --search-snippet-text-color:#f1eadc;
+  --search-snippet-border-color:#bfa46a;
+}
+
+/* Prevent page content from visually bleeding through the results */
+.search-card{
+  background:#0f1c1a;
+  opacity:1;
+}
+
+/* Give the result area enough room on mobile/tablet */
+.search-section{
+  margin-bottom:12rem;
+}
+
+.olc-search{
+  background:#0f1c1a;
+  border-radius:22px;
+}
     
   </style>
 
@@ -680,7 +706,7 @@
       <div class="search-card">
         <label class="search-label">Search OceanLiners.net</label>
 
-        <search-bar-snippet
+        <search-bar-snippet class="olc-search"
           api-url="https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/"
           placeholder="Search OceanLiners.net"
           show-url="true"
