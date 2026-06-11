@@ -52,10 +52,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<script
-    type="module"
-    src="https://70b18965-6ccb-40df-902d-313de9c5c89e.search.ai.cloudflare.com/assets/v0.0.39/search-snippet.es.js">
-  </script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -608,52 +604,7 @@
       }
     }
     
- .search-section{
-      width:var(--stage);
-      margin:1.5rem auto 3rem;
-    }
 
-    .search-card{
-      border:1px solid var(--line);
-      border-radius:24px;
-      background:var(--panel);
-      backdrop-filter:blur(10px);
-      box-shadow:var(--shadow);
-      padding:clamp(1rem, 3vw, 1.75rem);
-      overflow:visible;
-    }
-
-    .search-label{
-      display:block;
-      margin:0 0 .85rem;
-      color:var(--brass-2);
-      text-transform:uppercase;
-      letter-spacing:.13em;
-      font-size:.74rem;
-      font-weight:800;
-    }
-
-search-bar-snippet{
-  position:relative;
-  z-index:20;
-
-  --search-snippet-background:#0f1c1a;
-  --search-snippet-surface:#0f1c1a;
-  --search-snippet-hover-background:#1a2925;
-  --search-snippet-text-color:#f1eadc;
-  --search-snippet-border-color:#bfa46a;
-}
-
-/* Prevent page content from visually bleeding through the results */
-.search-card{
-  background:#0f1c1a;
-  opacity:1;
-}
-
-.olc-search{
-  background:#0f1c1a;
-  border-radius:22px;
-}
     
   </style>
 
@@ -681,19 +632,6 @@ search-bar-snippet{
       <a href="/ocean-liner-collecting-guide">Ocean Liner Collecting: A Curated Guide</a>.
     </p>
     
-    <section class="search-section" aria-label="Archive search">
-      <div class="search-card">
-        <label class="search-label">Search OceanLiners.net</label>
-
-        <search-bar-snippet class="olc-search"
-          api-url="https://07f60a84-d2b7-42c1-ab45-249abf035e60.search.ai.cloudflare.com/"
-          placeholder="Search OceanLiners.net"
-          show-url="true"
-          hide-thumbnails="true"
-          hide-branding="true">
-        </search-bar-snippet>
-      </div>
-    </section>
 
     <div class="jump-card" aria-label="Page sections">
       <strong>Jump to:</strong>
