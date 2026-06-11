@@ -145,10 +145,10 @@
   }
 
 .hero{
-  position:relative;
-  overflow:hidden;
-  border:1px solid var(--line);
-  border-radius:30px;
+  position:relative !important;
+  overflow:hidden !important;
+  border:1px solid var(--line) !important;
+  border-radius:30px !important;
 
   background:
   linear-gradient(135deg, rgba(6,10,10,.72), rgba(8,14,13,.58)),
@@ -165,9 +165,9 @@
 }
 
   .hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
 
   background:
     linear-gradient(
@@ -186,14 +186,14 @@
 }
 
  .hero::after{
-  content:"";
-  position:absolute;
+  content:"" !important;
+  position:absolute !important;
 
-  top:1.25rem;
-  right:1.25rem;
+  top:1.25rem !important;
+  right:1.25rem !important;
 
-  width:125px;
-  height:125px;
+  width:125px!important;
+  height:125px !important;
 
   background:url("/america-250.png") center/contain no-repeat;
 
