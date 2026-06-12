@@ -858,7 +858,9 @@ Clearly distinguish between documented fact, scholarly consensus, and interpreta
       if (btnContinue) {
         btnContinue.addEventListener("click", () => {
           window.open(
-            "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt",
+            "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt?prompt=I'm reading this Ocean Liner Curator page: ${pageURL}.
+Please expand on this topic while maintaining evidence-first standards.
+Clearly distinguish between documented fact, scholarly consensus, and interpretation.",
             "_blank"
           );
           if (modal) modal.classList.remove("show");
