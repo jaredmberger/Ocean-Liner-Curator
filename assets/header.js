@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         return;
       }
 
-      await sendFeedback("↑", "");
+      await sendFeedback("⬆", "");
     });
 
     const submit = feedback.querySelector(".olc-feedback-submit");
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const reason = textarea ? textarea.value.trim() : "";
 
         submit.disabled = true;
-        await sendFeedback("↓", reason);
+        await sendFeedback("⬇", reason);
 
         const detail = feedback.querySelector(".olc-feedback-detail");
         if (detail) detail.hidden = true;
