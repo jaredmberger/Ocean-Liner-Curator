@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lost Ocean Liner Interiors — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded research collection on vanished ocean liner interiors: dining saloons, smoking rooms, lounges, staircases, cabins, decorative schemes, and the evidence used to interpret them." />
+  <link rel="canonical" href="https://www.oceanliners.net/lost-ocean-liner-interiors" />
+
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Lost Ocean Liner Interiors — Ocean Liner Curator" />
+  <meta property="og:description" content="Ocean liner interiors were floating worlds of design, class, labor, comfort, and display. Most are gone, but photographs, plans, fittings, menus, and passenger accounts preserve part of their story." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.oceanliners.net/lost-ocean-liner-interiors" />
+  <meta property="og:image" content="https://www.oceanliners.net/images/lost-ocean-liner-interiors-og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lost Ocean Liner Interiors" />
+  <meta name="twitter:description" content="A curator-minded look at vanished ocean liner public rooms, cabins, decorative schemes, surviving evidence, and the limits of reconstruction." />
+  <meta name="twitter:image" content="https://www.oceanliners.net/images/lost-ocean-liner-interiors-og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.oceanliners.net/lost-ocean-liner-interiors#webpage",
+        "url": "https://www.oceanliners.net/lost-ocean-liner-interiors",
+        "name": "Lost Ocean Liner Interiors — Ocean Liner Curator",
+        "description": "A curator-minded research collection on vanished ocean liner interiors: dining saloons, smoking rooms, lounges, staircases, cabins, decorative schemes, and the evidence used to interpret them.",
+        "isPartOf": { "@id": "https://www.oceanliners.net/#website" },
+        "about": [
+          { "@type": "Thing", "name": "Ocean liners" },
+          { "@type": "Thing", "name": "Interior design" },
+          { "@type": "Thing", "name": "Maritime history" },
+          { "@type": "Thing", "name": "Historic preservation" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.oceanliners.net/lost-ocean-liner-interiors#breadcrumbs",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.oceanliners.net/" },
+          { "@type": "ListItem", "position": 2, "name": "Research Collections", "item": "https://www.oceanliners.net/research-collections" },
+          { "@type": "ListItem", "position": 3, "name": "Lost Ocean Liner Interiors", "item": "https://www.oceanliners.net/lost-ocean-liner-interiors" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.oceanliners.net/lost-ocean-liner-interiors#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why are so many ocean liner interiors lost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most ocean liners were commercial ships, not preserved buildings. Interiors were altered during refits, wartime conversion, modernization, sale, scrapping, or museum adaptation. Even famous rooms often survive only through photographs, plans, brochures, fittings, and passenger accounts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can lost ocean liner interiors be reconstructed accurately?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some features can be reconstructed with reasonable confidence when plans, photographs, material samples, and contemporary descriptions agree. Other details remain uncertain. Responsible interpretation should distinguish documented evidence from educated reconstruction."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do ocean liner interiors matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ocean liner interiors reveal how ships organized class, comfort, national style, technology, labor, leisure, and social ritual at sea. They help explain the passenger experience beyond speed, tonnage, and famous names."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,26,24,0.74);
+      --panel-soft:rgba(15,26,24,0.52);
+      --ink:#efe9dc;
+      --muted:#cfc2a8;
+      --faint:#9f9278;
+      --accent:#bfa46a;
+      --accent-soft:rgba(191,164,106,0.18);
+      --accent-line:rgba(191,164,106,0.34);
+      --edge:rgba(191,164,106,0.25);
+      --shadow:rgba(0,0,0,0.34);
+      --max:min(1080px, calc(100% - 2rem));
+      --measure:72ch;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Spectral", Georgia, serif;
+      line-height:1.65;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(191,164,106,0.13), transparent 32rem),
+        radial-gradient(circle at 82% 0%, rgba(255,255,255,0.06), transparent 28rem),
+        linear-gradient(180deg, #0a1110 0%, #0b1514 48%, #070d0c 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:0.11;
+      background-image:url('/tile3.png');
+      background-size:360px auto;
+      mix-blend-mode:screen;
+    }
+
+    a{ color:#ead59b; text-decoration:none; }
+    a:hover{ color:#fff1c2; text-decoration:underline; text-underline-offset:0.18em; }
+
+    .hero{
+      position:relative;
+      min-height:62vh;
+      display:grid;
+      align-items:end;
+      padding:3rem 0 3rem !important;
+      overflow:hidden;
+      border-bottom:1px solid rgba(191,164,106,0.2);
+      background:
+        linear-gradient(180deg, rgba(10,17,16,0.34), rgba(10,17,16,0.92)),
+        radial-gradient(circle at 18% 15%, rgba(191,164,106,0.25), transparent 31rem),
+        linear-gradient(125deg, rgba(10,17,16,0.26), rgba(10,17,16,0.95)),
+        url('/images/lost-ocean-liner-interiors.jpg') center/cover no-repeat;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:42%;
+      background:linear-gradient(180deg, transparent, #0a1110 92%);
+      pointer-events:none;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:var(--max) !important;
+      margin:0 auto;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      max-width:100%;
+      padding:.42rem .68rem;
+      border:1px solid rgba(191,164,106,0.36);
+      border-radius:999px;
+      background:rgba(10,17,16,0.55);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+      color:#eadcae;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:.74rem;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      line-height:1.25;
+    }
+
+    .hero h1{
+      max-width:920px;
+      margin:.95rem 0 .75rem;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(2.25rem, 7vw, 5.15rem);
+      line-height:1.02;
+      letter-spacing:-.045em;
+      text-wrap:balance;
+      text-shadow:0 16px 34px rgba(0,0,0,0.45);
+    }
+
+    .page-kicker{
+      max-width:760px;
+      margin:0;
+      color:#e5dcc8;
+      font-size:clamp(1.05rem, 2vw, 1.32rem);
+      line-height:1.55;
+      text-shadow:0 10px 24px rgba(0,0,0,0.36);
+    }
+
+    .meta-row{ display:flex; flex-wrap:wrap; gap:.65rem; margin-top:1.25rem; }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      padding:.38rem .65rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:999px;
+      background:rgba(10,17,16,0.48);
+      color:var(--muted);
+      font-size:.86rem;
+    }
+
+    main{ width:var(--max); margin:0 auto; padding:2.4rem 0 4rem; }
+
+    .entry-shell{ display:grid; grid-template-columns:minmax(0, 1fr) 315px; gap:1.25rem; align-items:start; }
+
+    .article-card, .side-card, .answer-box, .link-card, .note{
+      border:1px solid var(--edge);
+      background:linear-gradient(180deg, rgba(18,31,29,0.82), rgba(11,19,18,0.76));
+      box-shadow:0 18px 45px var(--shadow);
+      backdrop-filter:blur(3px);
+      -webkit-backdrop-filter:blur(3px);
+    }
+
+    .article-card{ border-radius:24px; padding:clamp(1.1rem, 3vw, 2rem); }
+    .prose{ max-width:var(--measure); }
+
+    .prose h2, .side-card h2{
+      margin:2rem 0 .75rem;
+      color:#f4ead2;
+      font-family:"Libre Baskerville", Georgia, serif;
+      font-size:clamp(1.42rem, 3vw, 2.1rem);
+      line-height:1.18;
+      letter-spacing:-.025em;
+    }
+
+    .prose h2:first-child{ margin-top:0; }
+
+    .prose h2::after, .side-card h2::after{
+      content:"";
+      display:block;
+      width:88px;
+      height:1px;
+      margin:.62rem 0 0;
+      background:linear-gradient(90deg, rgba(191,164,106,0.95), transparent);
+    }
+
+    .prose h3{ margin:1.45rem 0 .45rem; color:#eadcae; font-family:"Libre Baskerville", Georgia, serif; font-size:1.1rem; letter-spacing:.01em; }
+    .prose p{ margin:.75rem 0 1rem; color:#e7decb; }
+    .prose strong{ color:#fff4d3; }
+
+    .answer-box{
+      margin:0 0 1.5rem;
+      padding:1.1rem 1.15rem;
+      border-radius:18px;
+      background:radial-gradient(circle at top left, rgba(191,164,106,0.18), transparent 18rem), rgba(15,26,24,0.78);
+    }
+
+    .answer-box .label{ display:block; color:#d9c17f; font-family:"Libre Baskerville", Georgia, serif; font-size:.78rem; letter-spacing:.13em; text-transform:uppercase; margin-bottom:.4rem; }
+    .answer-box p{ margin:0; color:#f1eadc; font-size:1.08rem; line-height:1.55; }
+
+    .accuracy-grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:.8rem; margin:1.15rem 0 1.45rem; }
+    .accuracy-card{ min-height:100%; padding:1rem; border:1px solid rgba(191,164,106,0.21); border-radius:18px; background:rgba(8,15,14,0.42); }
+    .accuracy-card .icon{ display:inline-grid; place-items:center; width:2rem; height:2rem; margin-bottom:.55rem; border-radius:999px; color:#f5e7bb; background:rgba(191,164,106,0.14); border:1px solid rgba(191,164,106,0.24); }
+    .accuracy-card h3{ margin:.15rem 0 .38rem; color:#f0e4c2; font-family:"Libre Baskerville", Georgia, serif; font-size:1rem; line-height:1.25; }
+    .accuracy-card p{ margin:0; color:#d8ceb8; font-size:.95rem; line-height:1.5; }
+
+    .comparison-list{ display:grid; gap:.75rem; margin:1rem 0 1.35rem; }
+    .comparison-item{ padding:.95rem 1rem; border:1px solid rgba(191,164,106,0.19); border-radius:17px; background:rgba(8,15,14,0.34); }
+    .comparison-item b{ display:block; color:#f0e4c2; font-family:"Libre Baskerville", Georgia, serif; margin-bottom:.25rem; }
+    .comparison-item span{ display:block; color:#d8ceb8; line-height:1.5; }
+
+    .note{ margin:1.3rem 0; padding:1rem 1.05rem; border-radius:18px; background:rgba(10,17,16,0.54); }
+    .note p{ margin:0; color:#d8ceb8; }
+
+    .source-list{ margin:1rem 0 0; padding-left:1.1rem; color:#d9cfbb; font-size:.95rem; }
+    .source-list li{ margin:.35rem 0; }
+
+    .side-stack{ position:sticky; top:1rem; display:grid; gap:1rem; }
+    .side-card{ border-radius:22px; padding:1rem; }
+    .side-card h2{ margin-top:0; font-size:1.18rem; }
+    .side-card p{ margin:.55rem 0 .85rem; color:#d8ceb8; font-size:.96rem; line-height:1.5; }
+
+    .toc{ display:grid; gap:.4rem; margin-top:.65rem; }
+    .toc a, .link-card{ display:block; border-radius:14px; border:1px solid rgba(191,164,106,0.18); background:rgba(8,15,14,0.36); padding:.7rem .78rem; color:#eadcae; text-decoration:none; line-height:1.3; }
+    .toc a:hover, .link-card:hover{ border-color:rgba(191,164,106,0.42); background:rgba(191,164,106,0.08); text-decoration:none; }
+    .link-card{ margin:.55rem 0; }
+    .link-card span{ display:block; color:#a99d84; font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; margin-bottom:.15rem; }
+
+    .faq{ margin-top:2rem; border-top:1px solid rgba(191,164,106,0.2); padding-top:1rem; }
+    details.faq-item{ border:1px solid rgba(191,164,106,0.18); border-radius:16px; background:rgba(8,15,14,0.32); margin:.7rem 0; overflow:hidden; }
+    .faq-item summary{ cursor:pointer; list-style:none; padding:.9rem 1rem; color:#f0e4c2; font-family:"Libre Baskerville", Georgia, serif; }
+    .faq-item summary::-webkit-details-marker{ display:none; }
+    .faq-item p{ margin:0; padding:0 1rem 1rem; color:#d8ceb8; }
+
+    .next-steps{ display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:.8rem; margin-top:1rem; }
+    .cta-card{ display:block; min-height:100%; padding:1rem; border:1px solid rgba(191,164,106,0.23); border-radius:18px; background:linear-gradient(180deg, rgba(191,164,106,0.09), rgba(8,15,14,0.34)); text-decoration:none; }
+    .cta-card b{ display:block; color:#f3e7c7; font-family:"Libre Baskerville", Georgia, serif; line-height:1.25; margin-bottom:.35rem; }
+    .cta-card span{ display:block; color:#d3c8b1; font-size:.94rem; line-height:1.45; }
+    .cta-card:hover{ border-color:rgba(191,164,106,0.48); background:linear-gradient(180deg, rgba(191,164,106,0.14), rgba(8,15,14,0.42)); text-decoration:none; }
+
+    @media (max-width:900px){
+      .entry-shell{ grid-template-columns:1fr; }
+      .side-stack{ position:static; }
+      .accuracy-grid, .next-steps{ grid-template-columns:1fr; }
+      .hero{ min-height:58vh; padding-top:6.5rem; }
+    }
+
+    @media (max-width:560px){
+      main{ padding-top:1.25rem; }
+      .article-card{ border-radius:20px; padding:1rem; }
+      .hero{ padding-bottom:2.15rem; }
+      .meta-pill{ font-size:.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Research collection · vanished interiors</span>
+      <h1>Lost Ocean Liner Interiors</h1>
+      <p class="page-kicker">Ocean liner interiors were floating worlds of taste, class, comfort, labor, and display. Most have vanished, but surviving evidence still allows careful interpretation.</p>
+      <div class="meta-row" aria-label="Page context">
+        <span class="meta-pill">Public rooms</span>
+        <span class="meta-pill">Design history</span>
+        <span class="meta-pill">Preservation limits</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="entry-shell">
+      <article class="article-card">
+        <div class="prose">
+          <div class="answer-box" id="answer">
+            <span class="label">Core idea</span>
+            <p><strong>Lost ocean liner interiors matter because they show how ships were experienced, not just how they performed.</strong> Dining saloons, lounges, smoking rooms, staircases, cabins, and service spaces reveal the social, artistic, and practical world of life at sea.</p>
+          </div>
+
+          <h2 id="basic-answer">The basic answer</h2>
+          <p>Most famous ocean liners are remembered through exterior profiles: funnels, bows, tonnage, speed, and silhouettes. Yet for passengers and crew, much of the voyage happened inside. The interior was where meals were served, classes were separated, music was heard, luggage was unpacked, letters were written, promenades began, and the ship became a temporary home.</p>
+
+          <p>Those interiors were not permanent monuments. They were commercial spaces inside working ships. Rooms were refitted, modernized, stripped for wartime service, altered for new classes of travel, damaged, sold, scrapped, or preserved only in fragments. This makes ocean liner interiors one of the most evocative and difficult areas of maritime interpretation.</p>
+
+          <div class="accuracy-grid" aria-label="Interior interpretation themes">
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Surviving evidence</h3>
+              <p>Photographs, plans, brochures, menus, fittings, postcards, and passenger accounts preserve partial views of vanished rooms.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Changing spaces</h3>
+              <p>Interiors changed across refits, class revisions, wartime service, modernization, and post-service adaptation.</p>
+            </section>
+            <section class="accuracy-card">
+              <span class="icon">✦</span>
+              <h3>Careful reconstruction</h3>
+              <p>Some details can be interpreted confidently. Others require caution, especially when evidence is staged, incomplete, or undated.</p>
+            </section>
+          </div>
+
+          <h2 id="why-lost">Why so many interiors were lost</h2>
+          <p>Ocean liners were built to operate, earn revenue, and adapt. Their interiors were part of that business. A room that looked fashionable in one decade could seem outdated in the next. A class arrangement that worked before a war might no longer fit later passenger traffic. A luxurious public room could be simplified, repurposed, or removed as service needs changed.</p>
+
+          <p>Scrapping was the final loss for many ships, but it was not the only one. Interiors could disappear long before the hull was broken up. Wartime conversion might strip decorative spaces for troop accommodation. Refits might erase original schemes. Preservation projects might save a ship but still alter rooms for safety, access, hotel use, museum interpretation, or commercial reuse.</p>
+
+          <div class="note">
+            <p><strong>Curator’s note:</strong> A lost interior is not always a single lost room. It may be a lost version of a room: a specific arrangement, color scheme, furnishing plan, lighting system, class boundary, or decorative layer that changed over time.</p>
+          </div>
+
+          <h2 id="public-rooms">Public rooms as social stages</h2>
+          <p>Grand dining saloons, lounges, smoking rooms, libraries, writing rooms, winter gardens, ballrooms, cafés, verandahs, and staircases were more than decoration. They organized social life. They told passengers where to gather, who belonged where, how formal the voyage should feel, and what kind of world the shipping line wanted to create.</p>
+
+          <p>First-class rooms often received the most publicity because they were visually impressive and commercially useful in advertising. But tourist, second, third, and steerage spaces are equally important historically. They show how comfort, dignity, surveillance, class, migration, and economy were negotiated aboard the same vessel.</p>
+
+          <h2 id="cabins-and-class">Cabins, class, and privacy</h2>
+          <p>Cabins reveal the everyday side of liner interiors. Public rooms created spectacle, but cabins shaped the intimate experience of a crossing: sleep, storage, seasickness, family separation, privacy, ventilation, and access to sanitation. A cabin plan can tell as much about social hierarchy as a grand staircase.</p>
+
+          <p>The evolution from crowded emigrant accommodation to more varied tourist and cabin-class arrangements reflects broader changes in Atlantic travel. Comfort was never distributed evenly. Interior study helps show how class was built into corridors, stairways, dining assignments, deck access, and even the location of bathrooms.</p>
+
+          <h2 id="design-language">Design language and national taste</h2>
+          <p>Ocean liner interiors often presented a deliberate design identity. Some ships emphasized historical revival styles. Others embraced modernism, Art Deco, streamlined forms, national decorative arts, or a carefully controlled blend of tradition and innovation. The result was a floating environment that could act like a hotel, club, exhibition, and national showroom at once.</p>
+
+          <p>These design choices should be read with care. Promotional photographs often show rooms at their most polished, empty, and idealized. Passenger experience could be more crowded, noisy, smoky, or ordinary than the brochure image suggests. The design record is valuable, but it is not the whole story.</p>
+
+          <h2 id="evidence">What evidence survives</h2>
+          <p>Reconstructing a lost interior usually depends on many small sources rather than one perfect record. A photograph may show layout but not color. A deck plan may show room placement but not furnishings. A brochure may describe luxury but exaggerate novelty. A surviving chair, panel, lamp, or menu may confirm a detail while leaving the broader setting uncertain.</p>
+
+          <div class="comparison-list" aria-label="Types of evidence for lost ocean liner interiors">
+            <div class="comparison-item">
+              <b>Photographs and postcards</b>
+              <span>Useful for room appearance, furniture placement, lighting, decorative panels, and public presentation, but often staged or undated.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Deck plans and arrangement drawings</b>
+              <span>Useful for location, circulation, class boundaries, and room relationships, but less useful for color, texture, and atmosphere.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Brochures and advertisements</b>
+              <span>Useful for how shipping lines wanted interiors to be understood, but they can overstate comfort, novelty, or exclusivity.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Surviving fittings and fragments</b>
+              <span>Useful for material evidence, but provenance must be assessed carefully before connecting an object to a specific ship or room.</span>
+            </div>
+            <div class="comparison-item">
+              <b>Passenger and crew accounts</b>
+              <span>Useful for lived experience, crowding, routine, and atmosphere, though memory and perspective can be selective.</span>
+            </div>
+          </div>
+
+          <h2 id="service-spaces">The hidden interiors</h2>
+          <p>Not all important interiors were glamorous. Galleys, pantries, laundries, baggage rooms, mail rooms, crew quarters, engine control spaces, hospitals, barber shops, nurseries, storage areas, and service corridors made the visible passenger world possible.</p>
+
+          <p>These hidden spaces often receive less attention because they were less photographed and less romanticized. Yet they are essential to understanding the liner as a working organism. The splendor of a dining saloon depended on heat, water, ventilation, provisions, linen, dishwashing, steward labor, and carefully managed movement behind the scenes.</p>
+
+          <h2 id="refits">Refits and changing identities</h2>
+          <p>A liner interior was rarely frozen in its maiden-voyage form. Ships were updated to match new markets, technologies, safety expectations, and passenger habits. Electric lighting, bathrooms, elevators, cinemas, tourist-class lounges, air conditioning, and revised dining arrangements could all change the meaning of interior space.</p>
+
+          <p>This creates a common interpretive problem: which interior is being remembered? The original scheme, the most famous version, the wartime version, the postwar refit, the preserved fragment, or the nostalgic reconstruction? A responsible page should identify dates and versions whenever possible.</p>
+
+          <h2 id="color-problem">The problem of color</h2>
+          <p>Many surviving interior images are black and white, retouched, tinted, or reproduced through later publications. Color descriptions may survive in brochures, press accounts, material samples, or restoration notes, but they are not always complete. As a result, colorized images and digital reconstructions should be presented as interpretations unless supported by firm material evidence.</p>
+
+          <p>This does not make reconstruction useless. It means reconstruction should be labeled honestly. A cautious reconstruction can help modern viewers understand space, scale, and atmosphere, but it should not be mistaken for direct documentation.</p>
+
+          <h2 id="preservation">Preservation and fragments</h2>
+          <p>Some ocean liner interiors survive through museum collections, private salvage, architectural reuse, hotel conversions, auction lots, and preserved ships. These fragments can be powerful, but they require provenance. A panel, chair, light fixture, key, sign, or piece of silver becomes historically stronger when its chain of custody is clear.</p>
+
+          <p>Preservation also changes meaning. A room removed from a ship is no longer encountered through the ship’s corridors, sounds, motion, smells, and routines. It becomes an artifact or display. That can save evidence, but it also separates the object from the complete environment that gave it function.</p>
+
+          <h2 id="why-it-matters">Why this matters</h2>
+          <p>Lost interiors help move ocean liner history beyond exterior grandeur. They reveal how ships organized people, labor, aspiration, class, comfort, nationality, leisure, and memory. They remind us that a liner was not simply a hull and engines. It was a designed social world moving across the sea.</p>
+
+          <p>They also encourage humility. Many rooms are known only through partial evidence. Some familiar images show promotional ideals rather than daily use. Some surviving objects have uncertain attribution. The best interpretation preserves wonder without pretending that every detail is known.</p>
+
+          <section class="faq" id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <details class="faq-item">
+              <summary>Why are so many ocean liner interiors gone?</summary>
+              <p>Most liners were altered during refits, wartime conversion, modernization, sale, preservation, or scrapping. Interiors were working commercial spaces, so they changed as passenger markets and ship uses changed.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Can lost interiors be reconstructed accurately?</summary>
+              <p>Sometimes, but only in parts. Strong reconstructions depend on matching evidence from plans, photographs, material samples, written descriptions, and surviving objects. Unsupported details should be labeled as interpretation.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Why study interiors instead of just ships themselves?</summary>
+              <p>Interiors show how people actually experienced the ship. They reveal class, comfort, labor, design, movement, privacy, spectacle, and daily routine in ways exterior measurements cannot.</p>
+            </details>
+          </section>
+
+          <h2 id="next">Where to go next</h2>
+          <p>This collection connects naturally to individual ship guides, public-room pages, photographic references, and object records involving furniture, menus, fittings, keys, postcards, and interior images.</p>
+
+          <div class="next-steps" aria-label="Related ocean liner pages">
+            <a class="cta-card" href="/designs-interiors">
+              <b>Designs &amp; Interiors</b>
+              <span>Explore public rooms, decorative schemes, and the visual language of ocean liner interiors.</span>
+            </a>
+            <a class="cta-card" href="/photos">
+              <b>Photographic References</b>
+              <span>Use photographs as evidence for ship appearance, atmosphere, arrangement, and interpretation.</span>
+            </a>
+            <a class="cta-card" href="/reference-objects">
+              <b>Reference Objects</b>
+              <span>Review artifacts, documents, and material traces connected to ocean liner history.</span>
+            </a>
+          </div>
+
+          <h2 id="sources">Source notes</h2>
+          <p>This entry is written as a thematic research collection. Interior history should be checked against ship-specific evidence, dated plans, photographic captions, refit records, passenger material, auction provenance, and museum documentation whenever possible.</p>
+          <ul class="source-list">
+            <li>Deck plans, general arrangement drawings, and room diagrams for specific ships and periods.</li>
+            <li>Shipping line brochures, postcards, advertisements, menus, and passenger guides.</li>
+            <li>Contemporary photographs, press coverage, and descriptions of public rooms and cabin arrangements.</li>
+            <li>Surviving fittings, furniture, panels, silver, signage, and other artifacts with documented provenance.</li>
+            <li>Maritime scholarship on passenger experience, interior design, class, labor, preservation, and material culture.</li>
+          </ul>
+        </div>
+      </article>
+
+      <aside class="side-stack" aria-label="Page navigation and related links">
+        <section class="side-card">
+          <h2>On this page</h2>
+          <nav class="toc" aria-label="Section links">
+            <a href="#answer">Core idea</a>
+            <a href="#basic-answer">Basic answer</a>
+            <a href="#why-lost">Why interiors were lost</a>
+            <a href="#public-rooms">Public rooms</a>
+            <a href="#cabins-and-class">Cabins &amp; class</a>
+            <a href="#design-language">Design language</a>
+            <a href="#evidence">Evidence</a>
+            <a href="#service-spaces">Hidden interiors</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </section>
+
+        <section class="side-card">
+          <h2>Best next link</h2>
+          <p>For a broader visual context, connect this page to the interiors section.</p>
+          <a class="link-card" href="/designs-interiors">
+            <span>Design history</span>
+            Designs &amp; Interiors
+          </a>
+        </section>
+
+        <section class="side-card">
+          <h2>Related paths</h2>
+          <a class="link-card" href="/floating-cities-ocean-liners">
+            <span>Research collection</span>
+            Floating Cities
+          </a>
+          <a class="link-card" href="/ocean-liners-and-national-identity">
+            <span>Research collection</span>
+            Ocean Liners and National Identity
+          </a>
+          <a class="link-card" href="/photos">
+            <span>Evidence</span>
+            Photographic References
+          </a>
+          <a class="link-card" href="/reference-objects">
+            <span>Material culture</span>
+            Reference Objects
+          </a>
+          <a class="link-card" href="/ships/ships">
+            <span>Reference archive</span>
+            Ship Archive
+          </a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+</body>
+</html>
