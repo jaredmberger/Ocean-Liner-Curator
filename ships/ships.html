@@ -3253,6 +3253,24 @@ backdrop-filter: blur(2px) !important;
   pointer-events:none;
 }
 
+.gpt-inline-note{
+      margin:1rem auto 1.6rem;
+      max-width:var(--measure);
+      padding:.85rem 1rem;
+      border-left:4px solid #bfa46a;
+      border-radius:12px;
+      background:rgba(191,164,106,.06);
+      color:#ddd3bf;
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      border-top:1px solid rgba(255,255,255,.06);
+      border-right:1px solid rgba(255,255,255,.04);
+      border-bottom:1px solid rgba(255,255,255,.04);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,.22),
+        inset 0 1px 0 rgba(255,255,255,.05);
+    }
+
 </style>
  
 </head>
@@ -3359,6 +3377,11 @@ decoding="async"
   </p>
 </a>
    
+<div class="gpt-inline-note">
+      <strong>New to Ocean Liners?</strong>
+      Read <a class="guide-title" href="/history-of-ocean-liners">The History of Ocean Liners →</a>
+    </div>
+
 <img class="archive-divider" src="/engraved-laurel.png" loading="lazy" decoding="async" alt="">
   <h2 class="archive-heading" style="text-align:center;">
   Explore by Path
