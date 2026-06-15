@@ -38,6 +38,33 @@
     console.warn("[related-liners] Could not derive slug from pathname.");
     return;
   }
+  
+  function injectHistoryContext() {
+  if (document.getElementById("history-of-ocean-liners-context")) return;
+
+  const box = document.createElement("section");
+  box.id = "history-of-ocean-liners-context";
+  box.setAttribute("aria-label", "Historical context");
+
+  box.innerHTML = `
+    <h2>Historical Context</h2>
+    <p class="note">
+      This ship formed part of the broader ocean liner era. Explore the technological,
+      social, and historical forces that shaped transoceanic travel.
+    </p>
+    <ul class="sources">
+      <li><a href="/history-of-ocean-liners">Read The History of Ocean Liners »</a></li>
+    </ul>
+  `;
+
+  if (sourcesH2) {
+    guide.insertBefore(box, sourcesH2);
+  } else {
+    guide.appendChild(box);
+  }
+}
+
+injectHistoryContext();
 
   /* =========================
      Deterministic “cluster rotation” headings
