@@ -252,7 +252,8 @@
 "/ships/ss-cleveland.html",
 "/ships/ss-cathay-1924.html",
 "/ships/ss-great-britain-1843.html",
-"/ships/ss-rochambeau.html"
+"/ships/ss-rochambeau.html",
+"/ships/ss-chicago-1908.html"
 ];
 
 window.OLC_SHIP_URLS = shipUrls;
