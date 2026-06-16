@@ -3422,7 +3422,107 @@ window.OCEAN_LINER_THIS_DAY = {
 
   ],
   
-  "08-06": [
+  
+
+  "11-14": [
+
+    {
+
+      year: 1907,
+
+      title: "RMS Mauretania enters service",
+
+      ship: "RMS Mauretania",
+
+      category: "Service",
+
+      summary:
+
+        "Mauretania commenced transatlantic service for Cunard.",
+
+      whyItMatters:
+
+        "She would hold the Blue Riband for more than twenty years and become one of the most celebrated liners ever built.",
+
+      relatedUrl: "/ships/rms-mauretania",
+
+      significance: "high",
+
+      tags: [
+
+        "cunard-line",
+
+        "blue-riband",
+
+        "service-entry"
+
+      ],
+
+      sources: [
+
+        "Cunard archives",
+
+        "Mauretania histories",
+
+        "Great Passenger Ships of the World — Arnold Kludas"
+
+      ]
+
+    }
+
+  ],
+
+  "12-17": [
+
+    {
+
+      year: 1917,
+
+      title: "SS Vaterland continues service as USS Leviathan",
+
+      ship: "SS Leviathan",
+
+      category: "Wartime Service",
+
+      summary:
+
+        "The former German liner continued service under American control during World War I.",
+
+      whyItMatters:
+
+        "Leviathan became one of the most important troop transports operated by the United States.",
+
+      relatedUrl: "/ships/ss-leviathan",
+
+      significance: "medium",
+
+      tags: [
+
+        "united-states",
+
+        "wartime-service",
+
+        "troopship",
+
+        "leviathan"
+
+      ],
+
+      sources: [
+
+        "United States Navy records",
+
+        "Leviathan histories",
+
+        "American wartime transport documentation"
+
+      ]
+
+    }
+
+  ],
+
+"08-06": [
 {
   year: 1902,
   title: "RMS Carpathia launched",
@@ -3751,103 +3851,5 @@ window.OCEAN_LINER_THIS_DAY = {
   sources: ["Aquitania references"]
 }
 ]
-
-  "11-14": [
-
-    {
-
-      year: 1907,
-
-      title: "RMS Mauretania enters service",
-
-      ship: "RMS Mauretania",
-
-      category: "Service",
-
-      summary:
-
-        "Mauretania commenced transatlantic service for Cunard.",
-
-      whyItMatters:
-
-        "She would hold the Blue Riband for more than twenty years and become one of the most celebrated liners ever built.",
-
-      relatedUrl: "/ships/rms-mauretania",
-
-      significance: "high",
-
-      tags: [
-
-        "cunard-line",
-
-        "blue-riband",
-
-        "service-entry"
-
-      ],
-
-      sources: [
-
-        "Cunard archives",
-
-        "Mauretania histories",
-
-        "Great Passenger Ships of the World — Arnold Kludas"
-
-      ]
-
-    }
-
-  ],
-
-  "12-17": [
-
-    {
-
-      year: 1917,
-
-      title: "SS Vaterland continues service as USS Leviathan",
-
-      ship: "SS Leviathan",
-
-      category: "Wartime Service",
-
-      summary:
-
-        "The former German liner continued service under American control during World War I.",
-
-      whyItMatters:
-
-        "Leviathan became one of the most important troop transports operated by the United States.",
-
-      relatedUrl: "/ships/ss-leviathan",
-
-      significance: "medium",
-
-      tags: [
-
-        "united-states",
-
-        "wartime-service",
-
-        "troopship",
-
-        "leviathan"
-
-      ],
-
-      sources: [
-
-        "United States Navy records",
-
-        "Leviathan histories",
-
-        "American wartime transport documentation"
-
-      ]
-
-    }
-
-  ]
 
 };
