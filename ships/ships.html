@@ -3271,6 +3271,27 @@ backdrop-filter: blur(2px) !important;
         inset 0 1px 0 rgba(255,255,255,.05);
     }
 
+.chronology-card{
+  max-width:680px;
+  margin:1rem auto 1rem;
+  text-align:left;
+  position:relative;
+}
+
+.chronology-card .featured-card-desc{
+  margin-bottom:1.5rem;
+}
+
+.chronology-card .featured-card-arrow{
+  position:absolute;
+  right:1rem;
+  bottom:0.2rem;
+  font-size:1rem;
+  color:var(--link);
+  font-weight:600;
+  pointer-events:none;
+}
+
 </style>
  
 </head>
@@ -3377,6 +3398,8 @@ decoding="async"
   </p>
 </a>
    
+<div id="archive-today-card"></div>
+
 <div class="gpt-inline-note">
       <strong>New to Ocean Liners?</strong>
       Read <a class="guide-title" href="/history-of-ocean-liners">The History of Ocean Liners →</a>
@@ -7542,5 +7565,66 @@ document.addEventListener("click", function(e){
 </div>
 
       <a class="button secondary back-to-top" href="#top">↑</a>
+<script src="/assets/this-day-ocean-liners.js?v=2"></script>
+
+<script>
+(function(){
+  const mount = document.getElementById("archive-today-card");
+  const db = window.OCEAN_LINER_THIS_DAY;
+
+  if (!mount || !db) return;
+
+  const today = new Date();
+  const key = String(today.getMonth() + 1).padStart(2, "0") + "-" +
+              String(today.getDate()).padStart(2, "0");
+
+  const events = db[key];
+
+  if (!events || !events.length) {
+    mount.innerHTML = `
+      <a class="featured-card chronology-card" href="/this-day-in-ocean-liner-history">
+        <div class="featured-card-top">
+          <span class="featured-card-title">Today in Ocean Liner History</span>
+          <span class="featured-card-meta">${today.toLocaleDateString("en-US", { month: "long", day: "numeric" })}</span>
+        </div>
+        <p class="featured-card-desc">
+          No entry has been added for today yet. Explore the growing chronology of launches,
+          maiden voyages, records, wartime service, preservation milestones, and other events
+          from ocean liner history.
+        </p>
+        <span class="featured-card-arrow">Open chronology »</span>
+      </a>
+    `;
+    return;
+  }
+
+  const featured = events[0];
+  const dateLabel = today.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric"
+  });
+
+  const eventLabel = featured.year
+    ? `${featured.year} — ${featured.title}`
+    : featured.title;
+
+  mount.innerHTML = `
+    <a class="featured-card chronology-card" href="/this-day-in-ocean-liner-history">
+      <div class="featured-card-top">
+        <span class="featured-card-title">Today in Ocean Liner History</span>
+        <span class="featured-card-meta">${dateLabel}</span>
+      </div>
+
+      <p class="featured-card-desc">
+        <strong>${eventLabel}</strong><br>
+        ${featured.summary || ""}
+      </p>
+
+      <span class="featured-card-arrow">Open chronology »</span>
+    </a>
+  `;
+})();
+</script>
+
 </body>
 </html>
