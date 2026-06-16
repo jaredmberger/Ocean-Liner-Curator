@@ -3421,6 +3421,336 @@ window.OCEAN_LINER_THIS_DAY = {
     }
 
   ],
+  
+  "08-06": [
+{
+  year: 1902,
+  title: "RMS Carpathia launched",
+  summary: "Cunard's future Titanic rescue ship was launched at Swan Hunter's yard on the River Tyne.",
+  significance: "high",
+  tags: ["Carpathia","Cunard Line","Launch"],
+  sources: ["Various Cunard and Carpathia references"]
+}
+],
+
+"08-06": [
+{
+  year: 1929,
+  title: "MV Britannic launched",
+  summary: "White Star Line launched the motor liner Britannic, one of the most successful liners of the Depression era.",
+  significance: "high",
+  tags: ["Britannic","White Star Line","Launch"],
+  sources: ["White Star Line records"]
+}
+],
+
+"08-10": [
+{
+  year: 1870,
+  title: "SS Parthia launched",
+  summary: "Cunard launched Parthia as part of its post-Collins Line modernization program.",
+  significance: "medium",
+  tags: ["Parthia","Cunard Line","Launch"],
+  sources: ["Cunard fleet histories"]
+}
+],
+
+"08-26": [
+{
+  year: 1899,
+  title: "RMS Oceanic arrives at Liverpool before maiden voyage",
+  summary: "White Star's new flagship completed trials and arrived at Liverpool prior to entering service.",
+  significance: "high",
+  tags: ["Oceanic","White Star Line"],
+  sources: ["Oceanic histories"]
+}
+],
+
+"09-04": [
+{
+  year: 1914,
+  title: "SS Tuscania launched",
+  summary: "The Allan Line liner Tuscania entered the water during the opening weeks of the First World War.",
+  significance: "medium",
+  tags: ["Tuscania","Allan Line","Launch"],
+  sources: ["Allan Line references"]
+}
+],
+
+"09-06": [
+{
+  year: 1899,
+  title: "RMS Oceanic departs on maiden voyage",
+  summary: "White Star's flagship departed Liverpool for New York on her maiden crossing.",
+  significance: "high",
+  tags: ["Oceanic","White Star Line","Maiden Voyage"],
+  sources: ["Oceanic records"]
+}
+],
+
+"09-10": [
+{
+  year: 1908,
+  title: "SS Laurentic launched",
+  summary: "White Star launched Laurentic, whose propulsion arrangement influenced Olympic-class development.",
+  significance: "high",
+  tags: ["Laurentic","White Star Line","Launch"],
+  sources: ["White Star histories"]
+}
+],
+
+"09-11": [
+{
+  year: 1919,
+  title: "RMS Arundel Castle launched",
+  summary: "Union-Castle launched one of the last great four-funnel liners.",
+  significance: "medium",
+  tags: ["Arundel Castle","Union-Castle","Launch"],
+  sources: ["Union-Castle references"]
+}
+],
+
+"09-11": [
+{
+  year: 1924,
+  title: "SS Statendam launched",
+  summary: "Holland America Line's new flagship entered the water at Belfast.",
+  significance: "high",
+  tags: ["Statendam","Holland America Line","Launch"],
+  sources: ["Holland America histories"]
+}
+],
+
+"09-20": [
+{
+  year: 1911,
+  title: "RMS Olympic collides with HMS Hawke",
+  summary: "Olympic's collision with HMS Hawke became one of the most famous incidents of her career.",
+  significance: "high",
+  tags: ["Olympic","Collision","White Star Line"],
+  sources: ["Olympic records"]
+}
+],
+
+"09-30": [
+{
+  year: 1914,
+  title: "RMS Aquitania returned to Cunard service",
+  summary: "After a brief period as an armed merchant cruiser, Aquitania returned to company control.",
+  significance: "medium",
+  tags: ["Aquitania","Cunard Line","World War I"],
+  sources: ["Aquitania histories"]
+}
+],
+
+"10-20": [
+{
+  year: 1910,
+  title: "RMS Olympic launched",
+  summary: "The first Olympic-class liner entered the water at Belfast before a massive crowd.",
+  significance: "high",
+  tags: ["Olympic","White Star Line","Launch"],
+  sources: ["Olympic-class references"]
+}
+],
+
+"10-21": [
+{
+  year: 1922,
+  title: "RMS Franconia launched",
+  summary: "Cunard launched Franconia, later a popular Atlantic and cruising liner.",
+  significance: "medium",
+  tags: ["Franconia","Cunard Line","Launch"],
+  sources: ["Cunard fleet histories"]
+}
+],
+
+"10-21": [
+{
+  year: 1922,
+  title: "SS Conte Verde launched",
+  summary: "Lloyd Sabaudo launched one of Italy's best-known interwar liners.",
+  significance: "medium",
+  tags: ["Conte Verde","Italian Line","Launch"],
+  sources: ["Italian liner histories"]
+}
+],
+
+"11-04": [
+{
+  year: 1908,
+  title: "SS George Washington launched",
+  summary: "The giant North German Lloyd liner entered the water at Stettin.",
+  significance: "high",
+  tags: ["George Washington","North German Lloyd","Launch"],
+  sources: ["NDL fleet references"]
+}
+],
+
+"11-10": [
+{
+  year: 1908,
+  title: "SS George Washington formally launched",
+  summary: "The new German flagship became one of the largest liners afloat.",
+  significance: "high",
+  tags: ["George Washington","North German Lloyd"],
+  sources: ["German liner references"]
+}
+],
+
+"11-13": [
+{
+  year: 1890,
+  title: "SS Mongolian launched",
+  summary: "The Allan Line liner entered service during the peak emigrant era.",
+  significance: "medium",
+  tags: ["Mongolian","Allan Line","Launch"],
+  sources: ["Allan Line histories"]
+}
+],
+
+"12-08": [
+{
+  year: 1900,
+  title: "SS Suevic launched",
+  summary: "White Star launched the final member of its Jubilee-class fleet.",
+  significance: "high",
+  tags: ["Suevic","White Star Line","Launch"],
+  sources: ["White Star records"]
+}
+],
+
+"12-24": [
+{
+  year: 1957,
+  title: "RMS Pendennis Castle launched",
+  summary: "Union-Castle's famous mail liner entered the water at Belfast.",
+  significance: "medium",
+  tags: ["Pendennis Castle","Union-Castle","Launch"],
+  sources: ["Union-Castle histories"]
+}
+],
+
+"12-26": [
+{
+  year: 1882,
+  title: "RMS Aurania launched",
+  summary: "Cunard launched Aurania for Liverpool–New York service.",
+  significance: "medium",
+  tags: ["Aurania","Cunard Line","Launch"],
+  sources: ["Cunard fleet records"]
+}
+],
+
+"01-14": [
+{
+  year: 1899,
+  title: "RMS Oceanic launched",
+  summary: "White Star's famous Oceanic entered the water before becoming the line's flagship.",
+  significance: "high",
+  tags: ["Oceanic","White Star Line","Launch"],
+  sources: ["Oceanic histories"]
+}
+],
+
+"02-26": [
+{
+  year: 1914,
+  title: "HMHS Britannic launched",
+  summary: "The third Olympic-class liner entered the water at Belfast.",
+  significance: "high",
+  tags: ["Britannic","White Star Line","Launch"],
+  sources: ["Olympic-class references"]
+}
+],
+
+"03-02": [
+{
+  year: 1911,
+  title: "SS Rochambeau launched",
+  summary: "The French Line launched Rochambeau at Saint-Nazaire.",
+  significance: "medium",
+  tags: ["Rochambeau","French Line","Launch"],
+  sources: ["French Line records"]
+}
+],
+
+"03-21": [
+{
+  year: 2003,
+  title: "Queen Mary 2 launched",
+  summary: "The world's last true ocean liner entered the water at Saint-Nazaire.",
+  significance: "high",
+  tags: ["Queen Mary 2","Cunard Line","Launch"],
+  sources: ["QM2 references"]
+}
+],
+
+"04-19": [
+{
+  year: 1923,
+  title: "RMS Maloja launched",
+  summary: "P&O's new liner entered the water at Belfast.",
+  significance: "medium",
+  tags: ["Maloja","P&O","Launch"],
+  sources: ["P&O fleet histories"]
+}
+],
+
+"05-30": [
+{
+  year: 1914,
+  title: "RMS Aquitania departs on maiden voyage",
+  summary: "Aquitania began her first Atlantic crossing from Liverpool to New York.",
+  significance: "high",
+  tags: ["Aquitania","Cunard Line","Maiden Voyage"],
+  sources: ["Aquitania references"]
+}
+],
+
+"05-31": [
+{
+  year: 1911,
+  title: "RMS Titanic launched",
+  summary: "Titanic entered the water at Belfast during one of the largest launch ceremonies in shipbuilding history.",
+  significance: "high",
+  tags: ["Titanic","White Star Line","Launch"],
+  sources: ["Titanic references"]
+}
+],
+
+"06-14": [
+{
+  year: 1911,
+  title: "RMS Olympic begins maiden voyage",
+  summary: "Olympic departed Southampton for New York under Captain Edward Smith.",
+  significance: "high",
+  tags: ["Olympic","White Star Line","Maiden Voyage"],
+  sources: ["Olympic references"]
+}
+],
+
+"08-05": [
+{
+  year: 1914,
+  title: "RMS Aquitania converted to armed merchant cruiser",
+  summary: "Only weeks after entering service, Aquitania was requisitioned for wartime duties.",
+  significance: "high",
+  tags: ["Aquitania","World War I"],
+  sources: ["Aquitania histories"]
+}
+],
+
+"08-22": [
+{
+  year: 1914,
+  title: "RMS Aquitania collides with Canadian",
+  summary: "During early wartime operations Aquitania collided with another vessel, prompting repairs.",
+  significance: "medium",
+  tags: ["Aquitania","Collision"],
+  sources: ["Aquitania references"]
+}
+]
 
   "11-14": [
 
