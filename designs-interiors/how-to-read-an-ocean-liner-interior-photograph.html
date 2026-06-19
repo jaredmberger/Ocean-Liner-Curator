@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>How to Read an Ocean Liner Interior Photograph — Designs &amp; Interiors — Ocean Liner Curator</title>
-  <meta name="description" content="A curator-minded guide to interpreting ocean liner interior photographs: what visual signals matter, what can mislead, and how to read interiors as historical evidence rather than décor alone." />
+  <title>Reading Ocean Liner Interior Photographs as Historical Evidence — Ocean Liner Curator</title>
+  <meta name="description" content="A curator-minded guide to reading ocean liner interior photographs as historical evidence: room function, caption reliability, design clues, refits, promotional framing, AI-restored images, and responsible attribution." />
 
   <link rel="canonical" href="https://oceanliners.net/designs-interiors/how-to-read-an-ocean-liner-interior-photograph" />
 
@@ -14,10 +14,10 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": "https://oceanliners.net/designs-interiors/how-to-read-an-ocean-liner-interior-photograph#webpage",
-    "name": "How to Read an Ocean Liner Interior Photograph — Designs & Interiors — Ocean Liner Curator",
+    "name": "Reading Ocean Liner Interior Photographs as Historical Evidence — Ocean Liner Curator",
     "url": "https://oceanliners.net/designs-interiors/how-to-read-an-ocean-liner-interior-photograph",
     "isPartOf": { "@id": "https://oceanliners.net/#website" },
-    "description": "A curator-minded guide to interpreting ocean liner interior photographs: what visual signals matter, what can mislead, and how to read interiors as historical evidence rather than décor alone.",
+    "description": "A curator-minded guide to reading ocean liner interior photographs as historical evidence: room function, caption reliability, design clues, refits, promotional framing, AI-restored images, and responsible attribution.",
     "inLanguage": "en"
   }
   </script>
@@ -30,15 +30,15 @@
   <meta name="theme-color" content="#0a1110">
 
   <meta property="og:site_name" content="Ocean Liner Curator">
-  <meta property="og:title" content="How to Read an Ocean Liner Interior Photograph — Designs &amp; Interiors — Ocean Liner Curator">
-  <meta property="og:description" content="A curator-minded guide to interpreting ocean liner interior photographs: what visual signals matter, what can mislead, and how to read interiors as historical evidence rather than décor alone.">
+  <meta property="og:title" content="Reading Ocean Liner Interior Photographs as Historical Evidence — Ocean Liner Curator">
+  <meta property="og:description" content="A curator-minded guide to reading ocean liner interior photographs as historical evidence: room function, caption reliability, design clues, refits, promotional framing, AI-restored images, and responsible attribution.">
   <meta property="og:url" content="https://oceanliners.net/designs-interiors/how-to-read-an-ocean-liner-interior-photograph">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://oceanliners.net/logo.png">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Read an Ocean Liner Interior Photograph — Designs &amp; Interiors — Ocean Liner Curator">
-  <meta name="twitter:description" content="A curator-minded guide to interpreting ocean liner interior photographs: what visual signals matter, what can mislead, and how to read interiors as historical evidence rather than décor alone.">
+  <meta name="twitter:title" content="Reading Ocean Liner Interior Photographs as Historical Evidence — Ocean Liner Curator">
+  <meta name="twitter:description" content="A curator-minded guide to reading ocean liner interior photographs as historical evidence: room function, caption reliability, design clues, refits, promotional framing, AI-restored images, and responsible attribution.">
   <meta name="twitter:image" content="https://oceanliners.net/logo.png">
 
   <meta name="robots" content="index,follow">
@@ -422,6 +422,43 @@
       line-height:1.65;
     }
 
+    .attribution-ladder{
+      max-width:var(--measure);
+      margin:0.25rem auto 1.55rem auto;
+      counter-reset: ladder;
+      list-style:none;
+      padding:0;
+      text-align:left;
+    }
+    .attribution-ladder li{
+      counter-increment: ladder;
+      margin:0 0 0.65rem 0;
+      padding:0.85rem 1rem 0.85rem 3.1rem;
+      border:1px solid rgba(191,164,106,0.20);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+      position:relative;
+    }
+    .attribution-ladder li::before{
+      content:counter(ladder);
+      position:absolute;
+      left:0.95rem;
+      top:0.9rem;
+      width:1.42rem;
+      height:1.42rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.42);
+      color:rgba(230,223,207,0.86);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:0.82rem;
+      line-height:1;
+      background:rgba(191,164,106,0.08);
+    }
+
     footer p, footer .copyright{
       max-width:none;
       margin-left:auto;
@@ -489,7 +526,7 @@
     <img class="logo" src="/logo.png" alt="Ocean Liner Curator logo" />
   </div>
 
-  <h1>How to Read an Ocean Liner Interior Photograph</h1>
+  <h1>Reading Ocean Liner Interior Photographs as Historical Evidence</h1>
   <div class="rule"></div>
 
   <p class="page-kicker">
@@ -503,6 +540,15 @@
     <strong>⁂ Guiding principle:</strong> An interior photograph should be read as both an image of a room and a produced historical object.
     The question is not only <em>what does this space look like?</em> but also <em>what is this image trying to show, conceal, simplify, or persuade?</em>
   </div>
+
+  <h2>Five Questions to Ask First</h2>
+  <ul class="signals" aria-label="Interior photograph first questions">
+    <li><strong>What kind of room is this?</strong> Identify function before judging style.</li>
+    <li><strong>Who was meant to use it?</strong> Consider class, access, status, and passenger movement.</li>
+    <li><strong>When might the image have been made?</strong> Launch condition, refit condition, and later publicity images can look very different.</li>
+    <li><strong>What is the photograph emphasizing?</strong> Camera angle, lighting, emptiness, and cropping are part of the evidence.</li>
+    <li><strong>What evidence is missing?</strong> A secure caption, date, deck plan, brochure, or second view may be needed before making a confident attribution.</li>
+  </ul>
 
   <h2>Quick Read: What an Interior Photograph Can — and Cannot — Do</h2>
 
@@ -555,7 +601,22 @@
     <li><strong>Furnishing density:</strong> Is the room spacious and ceremonial, or compact and efficiently arranged?</li>
   </ul>
 
-  <h2>3) Decorative Language Can Help — But It Can Also Mislead</h2>
+  <h2>3) Treat Captions as Evidence, Not Proof</h2>
+  <p>
+    Captions are important, but they are not always final proof. An original company caption, a period brochure, or a marked press print may carry more weight
+    than a modern repost, dealer description, social media label, auction listing, or uncited online database entry. Even institutional metadata can inherit older mistakes.
+  </p>
+  <p>
+    When a caption identifies a ship, room, date, or class, ask where that caption came from. Was it printed with the image? Written on the back? Added by a collector?
+    Copied from another source? Generated from visual similarity? A caption can be excellent evidence, but it should still be weighed against the image itself and any available supporting documentation.
+  </p>
+
+  <div class="note">
+    <strong>Caption caution:</strong> A confident label attached to an image is not the same thing as a secure attribution.
+    The most useful captions are those that can be connected to a reliable source, date, or chain of transmission.
+  </div>
+
+  <h2>4) Decorative Language Can Help — But It Can Also Mislead</h2>
   <p>
     Paneling style, moldings, murals, textiles, ceiling treatment, chair forms, and ornamental motifs may hint at era, route market,
     or national design preference. These are valuable clues. But many ships shared broad stylistic currents, borrowed from the same design vocabularies,
@@ -571,7 +632,7 @@
     Many liners participated in shared design fashions, and later refits often layered one decorative era over another.
   </div>
 
-  <h2>4) Ask What the Photograph Was Made to Do</h2>
+  <h2>5) Ask What the Photograph Was Made to Do</h2>
   <p>
     Many surviving interior images were publicity photographs. That matters. Promotional interiors were often staged to communicate order,
     spaciousness, refinement, route prestige, and class confidence. The room may be real, but the image is still a crafted argument.
@@ -581,7 +642,7 @@
     A beautiful empty room may reveal as much about advertising priorities as about ordinary shipboard life.
   </p>
 
-  <h2>5) Cropping and Camera Position Are Part of the Evidence</h2>
+  <h2>6) Cropping and Camera Position Are Part of the Evidence</h2>
   <p>
     A photograph does not show “the room.” It shows a chosen view of the room. Wide angles, centered compositions, low crowding, and carefully balanced lighting
     can exaggerate grandeur or calm. Tight crops may hide service doors, connecting passages, less attractive corners, or evidence that would help us understand the room more fully.
@@ -590,7 +651,7 @@
     In other words, framing is interpretive. It tells us what the photographer or publisher believed deserved emphasis.
   </p>
 
-  <h2>6) Refits Matter</h2>
+  <h2>7) Refits Matter</h2>
   <p>
     Many ocean liners changed over time. Interiors were modernized, simplified, repainted, reupholstered, re-lit, subdivided, reclassified, or repurposed.
     A surviving image may show a room long after launch, after transfer between lines, or after shifting passenger markets altered the ship’s social plan.
@@ -599,7 +660,7 @@
     This is one reason caution matters so much. A striking interior image may be entirely authentic and still be misleading if treated as “original” without date context.
   </p>
 
-  <h2>7) Look for Operational Clues, Not Just Decorative Ones</h2>
+  <h2>8) Look for Operational Clues, Not Just Decorative Ones</h2>
   <ul>
     <li><strong>Service doors and sideboards:</strong> may suggest meal flow and staffing patterns.</li>
     <li><strong>Window height and type:</strong> may help indicate deck level or exposure.</li>
@@ -608,7 +669,19 @@
     <li><strong>Furnishing wear or replacement:</strong> may point toward long service life or later modernization.</li>
   </ul>
 
-  <h2>8) Interior Photographs Work Best in Groups, Not Isolation</h2>
+  <h2>9) Be Careful With Colorized, Enhanced, or AI-Restored Images</h2>
+  <p>
+    Modern enhancement can make an interior photograph easier to study, but it can also introduce false certainty.
+    Sharpening, colorization, reconstruction, and AI restoration may invent textures, simplify shadows, alter materials,
+    or make uncertain details appear more definite than they really are.
+  </p>
+  <p>
+    Enhanced images are useful as interpretive aids, but the original photograph remains the stronger evidentiary source.
+    When possible, compare any restored or colorized version against the unaltered image before drawing conclusions about color,
+    fabric, woodwork, lighting, or surface finish.
+  </p>
+
+  <h2>10) Interior Photographs Work Best in Groups, Not Isolation</h2>
   <p>
     A single image can be powerful, but interpretation becomes much stronger when multiple views are compared: different angles of the same room,
     adjacent spaces, deck plans, brochures, ship descriptions, class lists, or refit records. The more an interior can be tied to documentary context,
@@ -618,12 +691,27 @@
     One image may suggest. A set of related sources can begin to support.
   </p>
 
+  <h2>A Practical Attribution Ladder</h2>
+  <p>
+    Not every image deserves the same level of confidence. A restrained description can still be useful, especially when it makes uncertainty visible rather than hiding it.
+  </p>
+  <ol class="attribution-ladder" aria-label="Interior photograph attribution confidence ladder">
+    <li><strong>Securely identified:</strong> the ship, room, date, or source can be supported by reliable captioning or corroborating documentation.</li>
+    <li><strong>Probably identified:</strong> the evidence strongly points to a specific ship or room, but one or more confirming details remain absent.</li>
+    <li><strong>Possibly identified:</strong> the image resembles a known interior or fits a plausible context, but the attribution should remain tentative.</li>
+    <li><strong>Similar to known interiors:</strong> the photograph can be compared to documented spaces without claiming identity.</li>
+    <li><strong>Ocean liner interior, ship unknown:</strong> the image appears to show a liner interior, but the vessel cannot responsibly be named.</li>
+    <li><strong>Passenger interior, vessel unknown:</strong> the photograph suggests a shipboard or transport interior, but even the broader vessel type remains uncertain.</li>
+  </ol>
+
   <h2>Common Reading Errors</h2>
   <ul class="signals" aria-label="Common reading errors list">
     <li><strong>“It looks luxurious, so it must be first class”:</strong> atmosphere matters, but plan, furnishing density, and service context matter more.</li>
     <li><strong>“It looks like a known ship, so it is that ship”:</strong> similarity is a clue, not proof.</li>
+    <li><strong>“The caption says it, so the question is settled”:</strong> captions are evidence, but their source and reliability still matter.</li>
     <li><strong>“This must show the original interior”:</strong> a room may reflect refit history rather than launch condition.</li>
     <li><strong>“The image shows passenger reality”:</strong> promotional photographs often show intended impression rather than ordinary lived experience.</li>
+    <li><strong>“The restored version shows what was really there”:</strong> enhancement may clarify an image, but it may also add details the original source does not prove.</li>
     <li><strong>“Decoration is the whole story”:</strong> function, circulation, and class logic are usually just as important.</li>
   </ul>
 
@@ -641,17 +729,21 @@
     stopping short protects the credibility of the interpretation.
   </p>
   <p>
-    Restraint is especially important because ocean liner imagery is so often recirculated, reposted, cropped, recolored, and detached from its original source.
+    Restraint is especially important because ocean liner imagery is so often recirculated, reposted, cropped, recolored, enhanced, and detached from its original source.
     The image may still be worth studying, but it should be studied honestly.
   </p>
 
   <h2>Related Pages</h2>
   <ul>
+    <li><a href="/photos/">Photographic References</a></li>
     <li><a href="/designs-interiors/decorative-styles">Decorative Styles &amp; National Identity</a></li>
     <li><a href="/designs-interiors/functional-design">Functional Design &amp; Shipboard Logistics</a></li>
     <li><a href="/designs-interiors/public-rooms">Dining Rooms, Lounges &amp; Public Rooms</a></li>
     <li><a href="/designs-interiors/passenger-class-and-spatial-hierarchy">Passenger Class &amp; Spatial Hierarchy</a></li>
     <li><a href="/collectors-notebook/art-deco-vs-edwardian-signals">Art Deco vs Edwardian Signals</a></li>
+    <li><a href="/provenance">Provenance</a></li>
+    <li><a href="/attribution">Attribution</a></li>
+    <li><a href="/ai-interpretation-policy">AI Interpretation Policy</a></li>
     <li><a href="/unknown">When Evidence Is Limited: Why “Unknown” Is a Responsible Conclusion</a></li>
   </ul>
 
