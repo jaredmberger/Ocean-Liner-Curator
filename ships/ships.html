@@ -3319,6 +3319,25 @@ color:rgba(191,164,106,.98);
   pointer-events:none;
 }
 
+.featured-card-chronology{
+  display:block;
+  border:1px solid rgba(191,164,106,0.22);
+  border-radius:14px;
+  backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  background:rgba(191,164,106,.98);
+  padding:0.95rem 1.05rem;
+  text-decoration:none;
+  box-shadow:0 10px 24px rgba(0,0,0,0.32);
+  transition:
+    transform .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease,
+    background .18s ease;
+content-visibility: auto;
+      contain-intrinsic-size: 180px;
+}
+
 </style>
  
 </head>
@@ -7648,7 +7667,7 @@ document.addEventListener("click", function(e){
     : featured.title;
 
   mount.innerHTML = `
-    <a class="featured-card chronology-card"
+    <a class="featured-card-chronology chronology-card"
        href="/this-day-in-ocean-liner-history"
        data-date="${stampDate}">
 
