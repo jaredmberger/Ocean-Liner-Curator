@@ -253,7 +253,9 @@
 "/ships/ss-cathay-1924.html",
 "/ships/ss-great-britain-1843.html",
 "/ships/ss-rochambeau.html",
-"/ships/ss-chicago-1908.html"
+"/ships/ss-chicago-1908.html",
+"/ships/ss-milwaukee.html",
+"/ships/ss-st-louis.html"
 ];
 
 window.OLC_SHIP_URLS = shipUrls;
