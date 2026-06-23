@@ -255,6 +255,7 @@
 "/ships/ss-rochambeau.html",
 "/ships/ss-chicago-1908.html",
 "/ships/ss-milwaukee.html",
+"/ships/ss-canada-1896.html",
 "/ships/ss-st-louis.html"
 ];
 
