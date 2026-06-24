@@ -1997,9 +1997,22 @@
 
     let lastTrigger = null;
 
+    function sanitizeImageUrl(urlValue) {
+      if (!urlValue) return '';
+      try {
+        const parsed = new URL(urlValue, window.location.href);
+        if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+          return parsed.href;
+        }
+      } catch (e) {
+        return '';
+      }
+      return '';
+    }
+
     function openLightbox(src, alt, trigger) {
       lastTrigger = trigger || null;
-      lightboxImg.src = src;
+      lightboxImg.src = sanitizeImageUrl(src);
       lightboxImg.alt = alt || '';
       lightbox.classList.add('is-open');
       lightbox.setAttribute('aria-hidden', 'false');
