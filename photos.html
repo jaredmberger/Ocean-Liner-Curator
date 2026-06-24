@@ -724,9 +724,19 @@ footer{
   const closeBtn = document.getElementById('lightboxClose');
   let lastFocused = null;
 
+  function sanitizeImageUrl(raw){
+    try{
+      const parsed = new URL(raw, window.location.href);
+      if(parsed.protocol === 'http:' || parsed.protocol === 'https:'){
+        return parsed.href;
+      }
+    }catch(_e){}
+    return "";
+  }
+
   function openLightbox(src, alt, caption){
     lastFocused = document.activeElement;
-    imgEl.src = src;
+    imgEl.src = sanitizeImageUrl(src);
     imgEl.alt = alt || "";
     capEl.textContent = caption || "";
     lightbox.classList.add('active');
@@ -755,7 +765,8 @@ footer{
     img.setAttribute('aria-label', 'Open larger image');
 
     function activate(){
-      const full = img.getAttribute('data-full') || img.src;
+      const rawFull = img.getAttribute('data-full') || img.src;
+      const full = sanitizeImageUrl(rawFull) || img.src;
       const alt = img.getAttribute('alt') || "";
       const caption = img.getAttribute('data-caption') || "";
       openLightbox(full, alt, caption);
