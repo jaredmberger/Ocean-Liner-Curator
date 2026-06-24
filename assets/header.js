@@ -126,44 +126,58 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (response) response.hidden = false;
     }
 
-    feedback.addEventListener("click", async (e) => {
-      const btn = e.target.closest("button[data-feedback]");
-      if (!btn) return;
+    let selectedVote = null;
 
-      const vote = btn.dataset.feedback;
+feedback.addEventListener("click", async (e) => {
+  const btn = e.target.closest("button[data-feedback]");
+  if (!btn) return;
 
-      feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
-        b.disabled = true;
-        b.classList.toggle("selected", b === btn);
-      });
+  selectedVote = btn.dataset.feedback;
 
-      if (vote === "down") {
-        const detail = feedback.querySelector(".olc-feedback-detail");
-        const textarea = feedback.querySelector("#olc-feedback-reason");
+  feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
+    b.classList.toggle("selected", b === btn);
+  });
 
-        if (detail) detail.hidden = false;
-        if (textarea) textarea.focus();
+  const detail = feedback.querySelector(".olc-feedback-detail");
+  const textarea = feedback.querySelector("#olc-feedback-reason");
 
-        return;
-      }
+  if (detail) detail.hidden = false;
 
-      await sendFeedback("⬆", "");
+  if (textarea) {
+    textarea.placeholder =
+      selectedVote === "up"
+        ? "What made this page useful or worth exploring?"
+        : "Tell the curator what was missing or could be improved...";
+
+    textarea.focus();
+  }
+});
+
+const submit = feedback.querySelector(".olc-feedback-submit");
+
+if (submit) {
+  submit.addEventListener("click", async () => {
+    const textarea = feedback.querySelector("#olc-feedback-reason");
+    const reason = textarea ? textarea.value.trim() : "";
+
+    if (!selectedVote) return;
+
+    submit.disabled = true;
+
+    await sendFeedback(
+      selectedVote === "up" ? "⬆" : "⬇",
+      reason
+    );
+
+    const detail = feedback.querySelector(".olc-feedback-detail");
+    if (detail) detail.hidden = true;
+
+    feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
+      b.disabled = true;
     });
+  });
+}
 
-    const submit = feedback.querySelector(".olc-feedback-submit");
-
-    if (submit) {
-      submit.addEventListener("click", async () => {
-        const textarea = feedback.querySelector("#olc-feedback-reason");
-        const reason = textarea ? textarea.value.trim() : "";
-
-        submit.disabled = true;
-        await sendFeedback("⬇", reason);
-
-        const detail = feedback.querySelector(".olc-feedback-detail");
-        if (detail) detail.hidden = true;
-      });
-    }
   })();
 
   // ---- Google Analytics ----
