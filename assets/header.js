@@ -143,14 +143,17 @@ feedback.addEventListener("click", async (e) => {
 
   if (detail) detail.hidden = false;
 
-  if (textarea) {
-    textarea.placeholder =
-      selectedVote === "up"
-        ? "What made this page useful or worth exploring?"
-        : "Tell the curator what was missing or could be improved...";
+ if (textarea) {
+  textarea.required = selectedVote === "down";
+  textarea.removeAttribute("aria-invalid");
 
-    textarea.focus();
-  }
+  textarea.placeholder =
+    selectedVote === "up"
+      ? "What made this page useful or worth exploring?"
+      : "Tell the curator what was missing or could be improved...";
+
+  textarea.focus();
+}
 });
 
 const submit = feedback.querySelector(".olc-feedback-submit");
@@ -161,6 +164,20 @@ if (submit) {
     const reason = textarea ? textarea.value.trim() : "";
 
     if (!selectedVote) return;
+
+    if (selectedVote === "down" && !reason) {
+      if (textarea) {
+        textarea.required = true;
+        textarea.setAttribute("aria-invalid", "true");
+        textarea.placeholder = "Please tell the curator what was missing or could be improved...";
+        textarea.focus();
+      }
+      return;
+    }
+
+    if (textarea) {
+      textarea.removeAttribute("aria-invalid");
+    }
 
     submit.disabled = true;
 
