@@ -1368,6 +1368,16 @@ a.footer-star:focus{
   outline-offset:4px;
 }
 
+#olc-feedback-reason.feedback-error {
+  border-color: #c62828;
+  box-shadow: 0 0 0 2px rgba(198, 40, 40, 0.15);
+}
+
+#olc-feedback-reason.feedback-error::placeholder {
+  color: #c62828;
+  opacity: 1;
+}
+
 @media (max-width:520px){
   .olc-feedback-suggestion,
   .olc-feedback a,
@@ -1383,3 +1393,4 @@ a.footer-star:focus{
   height:1px;
   overflow:hidden;
 }
+

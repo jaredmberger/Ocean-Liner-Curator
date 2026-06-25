@@ -43,12 +43,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // ---- Page feedback widget ----
   (function injectPageFeedback() {
-    const excludedPages = [
-      "/"
-    ];
+    const excludedPages = ["/"];
 
     if (excludedPages.includes(location.pathname)) return;
-
     if (!copyright || document.querySelector(".olc-feedback")) return;
 
     const feedback = document.createElement("section");
@@ -64,15 +61,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       </div>
       
       <a href="/suggestions" class="satisfaction-suggest-link">
-  Have an idea or correction? Send a suggestion →
-</a>
+        Have an idea or correction? Send a suggestion →
+      </a>
 
-<a href="/bot-trap"
-   class="bot-trap"
-   aria-hidden="true"
-   tabindex="-1">
-   hidden
-</a>
+      <a href="/bot-trap"
+         class="bot-trap"
+         aria-hidden="true"
+         tabindex="-1">
+         hidden
+      </a>
 
       <div class="olc-feedback-detail" hidden>
         <label for="olc-feedback-reason">Why?</label>
@@ -128,73 +125,75 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let selectedVote = null;
 
-feedback.addEventListener("click", async (e) => {
-  const btn = e.target.closest("button[data-feedback]");
-  if (!btn) return;
+    feedback.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-feedback]");
+      if (!btn) return;
 
-  selectedVote = btn.dataset.feedback;
+      selectedVote = btn.dataset.feedback;
 
-  feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
-    b.classList.toggle("selected", b === btn);
-  });
+      feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
+        b.classList.toggle("selected", b === btn);
+      });
 
-  const detail = feedback.querySelector(".olc-feedback-detail");
-  const textarea = feedback.querySelector("#olc-feedback-reason");
+      const detail = feedback.querySelector(".olc-feedback-detail");
+      const textarea = feedback.querySelector("#olc-feedback-reason");
 
-  if (detail) detail.hidden = false;
+      if (detail) detail.hidden = false;
 
- if (textarea) {
-  textarea.required = selectedVote === "down";
-  textarea.removeAttribute("aria-invalid");
-
-  textarea.placeholder =
-    selectedVote === "up"
-      ? "What made this page useful or worth exploring?"
-      : "Tell the curator what was missing or could be improved...";
-
-  textarea.focus();
-}
-});
-
-const submit = feedback.querySelector(".olc-feedback-submit");
-
-if (submit) {
-  submit.addEventListener("click", async () => {
-    const textarea = feedback.querySelector("#olc-feedback-reason");
-    const reason = textarea ? textarea.value.trim() : "";
-
-    if (!selectedVote) return;
-
-    if (selectedVote === "down" && !reason) {
       if (textarea) {
-        textarea.required = true;
-        textarea.setAttribute("aria-invalid", "true");
-        textarea.placeholder = "Please tell the curator what was missing or could be improved...";
+        textarea.required = selectedVote === "down";
+        textarea.removeAttribute("aria-invalid");
+        textarea.classList.remove("feedback-error");
+
+        textarea.placeholder =
+          selectedVote === "up"
+            ? "What made this page useful or worth exploring?"
+            : "Tell the curator what was missing or could be improved...";
+
         textarea.focus();
       }
-      return;
-    }
-
-    if (textarea) {
-      textarea.removeAttribute("aria-invalid");
-    }
-
-    submit.disabled = true;
-
-    await sendFeedback(
-      selectedVote === "up" ? "⬆" : "⬇",
-      reason
-    );
-
-    const detail = feedback.querySelector(".olc-feedback-detail");
-    if (detail) detail.hidden = true;
-
-    feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
-      b.disabled = true;
     });
-  });
-}
 
+    const submit = feedback.querySelector(".olc-feedback-submit");
+
+    if (submit) {
+      submit.addEventListener("click", async () => {
+        const textarea = feedback.querySelector("#olc-feedback-reason");
+        const reason = textarea ? textarea.value.trim() : "";
+
+        if (!selectedVote) return;
+
+        if (selectedVote === "down" && !reason) {
+          if (textarea) {
+            textarea.required = true;
+            textarea.setAttribute("aria-invalid", "true");
+            textarea.classList.add("feedback-error");
+            textarea.placeholder = "* Please tell the curator what was missing or could be improved...";
+            textarea.focus();
+          }
+          return;
+        }
+
+        if (textarea) {
+          textarea.removeAttribute("aria-invalid");
+          textarea.classList.remove("feedback-error");
+        }
+
+        submit.disabled = true;
+
+        await sendFeedback(
+          selectedVote === "up" ? "⬆" : "⬇",
+          reason
+        );
+
+        const detail = feedback.querySelector(".olc-feedback-detail");
+        if (detail) detail.hidden = true;
+
+        feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
+          b.disabled = true;
+        });
+      });
+    }
   })();
 
   // ---- Google Analytics ----
