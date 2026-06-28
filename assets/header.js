@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     copyright = document.createElement("p");
     copyright.className = "copyright";
-    copyright.textContent = "© 2026 Ocean Liner Curator. All rights reserved.";
+    copyright.textContent = "© 2026 Ocean Liner Curator LLC. All rights reserved.";
 
     footer.appendChild(copyright);
   }
