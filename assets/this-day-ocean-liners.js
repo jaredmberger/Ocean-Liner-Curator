@@ -20,7 +20,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "The ship would become the fastest ocean liner ever built and one of the most important American passenger ships of the twentieth century.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "medium",
 
@@ -1188,7 +1188,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "The departure would inaugurate the career of America’s most technically ambitious ocean liner.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "medium",
 
@@ -1236,7 +1236,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "The ship would capture the Blue Riband and remains the fastest ocean liner ever built.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "high",
 
@@ -1286,7 +1286,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "The timing reinforced the ship’s symbolism as a national achievement in American maritime engineering.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "medium",
 
@@ -1384,7 +1384,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "The crossing demonstrated the extraordinary performance of William Francis Gibbs’s design.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "high",
 
@@ -1434,7 +1434,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "The achievement secured the Blue Riband and established her as the fastest ocean liner ever built.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "high",
 
@@ -1484,7 +1484,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "Public reaction to the crossing turned the ship into a national prestige object almost immediately.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "medium",
 
@@ -1532,7 +1532,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "Her performance in both directions confirmed that her speed was not a one-way accident of conditions.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "medium",
 
@@ -1580,7 +1580,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "The return passage helped confirm her dominance of the North Atlantic speed record.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "medium",
 
@@ -1872,7 +1872,7 @@ window.OCEAN_LINER_THIS_DAY = {
 
         "Her construction reflected Cold War-era concerns with speed, fire safety, and potential troopship conversion.",
 
-      relatedUrl: "/ships/ss-united-states",
+      relatedUrl: "/ships/ss-us",
 
       significance: "low",
 
