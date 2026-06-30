@@ -237,7 +237,7 @@
 "/ships/ss-great-western.html",
 "/ships/ss-leviathan.html",
 "/ships/rms-persia-1855.html",
-"/ships/rms-servia-1881",
+"/ships/rms-servia-1881.html",
 "/ships/ss-montclare.html",
 "/ships/ss-montrose.html",
 "/ships/ss-montcalm.html",
@@ -256,6 +256,11 @@
 "/ships/ss-chicago-1908.html",
 "/ships/ss-milwaukee.html",
 "/ships/ss-canada-1896.html",
+"/ships/ss-assyria.html",
+"/ships/ss-corsican.html",
+"/ships/tall-ships-guide.html",
+"/ships/ss-bothnia.html",
+"/ships/ss-cuba.html",
 "/ships/ss-st-louis.html"
 ];
 
