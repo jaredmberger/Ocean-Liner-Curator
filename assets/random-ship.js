@@ -261,6 +261,9 @@
 "/ships/tall-ships-guide.html",
 "/ships/ss-bothnia.html",
 "/ships/ss-cuba.html",
+"/ships/ss-drottningholm",
+"/ships/ss-finland.html",
+"/ships/ss-gothic-white-star-line.html",
 "/ships/ss-st-louis.html"
 ];
 
