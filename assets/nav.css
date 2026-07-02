@@ -1394,3 +1394,18 @@ a.footer-star:focus{
   overflow:hidden;
 }
 
+.footer-support-link {
+  display: block;
+  width: fit-content;
+  margin: 0.35rem auto 0.55rem;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  color: rgba(230,223,207,0.52);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.footer-support-link:hover {
+  color: rgba(209,187,134,0.85);
+  text-decoration: none;
+}

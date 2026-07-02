@@ -17,6 +17,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     footer.appendChild(copyright);
   }
+  
+  // ---- Support project footer link ----
+let supportLink = document.querySelector(".footer-support-link");
+
+if (!supportLink) {
+  supportLink = document.createElement("a");
+  supportLink.className = "footer-support-link";
+  supportLink.href = "/support";
+  supportLink.textContent = "Support the Project";
+
+  copyright.insertAdjacentElement("afterend", supportLink);
+}
 
   // ---- Footer star homepage link ----
   const existing = document.querySelector(".footer-star");
@@ -38,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     star.setAttribute("aria-label", "Return to OceanLiners.net homepage");
     star.textContent = "★";
 
-    copyright.insertAdjacentElement("afterend", star);
+    supportLink.insertAdjacentElement("afterend", star);
   }
 
   // ---- Page feedback widget ----
