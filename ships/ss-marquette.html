@@ -710,5 +710,63 @@
     </p>
   </footer>
 </main>
+<div id="gpt-modal" class="gpt-modal" aria-hidden="true">
+  <div class="gpt-modal-content" role="dialog" aria-modal="true" aria-label="Research prompt copied">
+    <p class="gpt-modal-title">★ Research prompt copied</p>
+    <p class="gpt-modal-text">
+      You are about to continue your inquiry using Ocean Liner GPT.
+    </p>
+    <div class="gpt-modal-actions">
+      <button id="gpt-continue">Continue</button>
+      <button id="gpt-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
 
+<script>
+  function askOceanLinerGPT() {
+    const pageURL = window.location.href;
+
+    const prompt = `I'm reading this Ocean Liner Curator page: ${pageURL}.
+Please expand on this topic while maintaining evidence-first standards.
+Clearly distinguish between documented fact, scholarly consensus, and interpretation.`;
+
+    navigator.clipboard.writeText(prompt).then(() => {
+      const modal = document.getElementById("gpt-modal");
+      if (modal) modal.classList.add("show");
+    });
+  }
+
+  (function(){
+    const modal = document.getElementById("gpt-modal");
+    const btnContinue = document.getElementById("gpt-continue");
+    const btnCancel = document.getElementById("gpt-cancel");
+
+    if (btnContinue) {
+      btnContinue.addEventListener("click", function() {
+        window.open(
+          "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt",
+          "_blank"
+        );
+        if (modal) modal.classList.remove("show");
+      });
+    }
+
+    if (btnCancel) {
+      btnCancel.addEventListener("click", function() {
+        if (modal) modal.classList.remove("show");
+      });
+    }
+  })();
+
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<script src="/assets/header.js" defer></script>
+<script src="/assets/nav.js" defer></script>
+<script src="/assets/related-liners.js" defer></script>
+
+</body>
+</html>
 
