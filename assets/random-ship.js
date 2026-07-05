@@ -264,6 +264,9 @@
 "/ships/ss-drottningholm",
 "/ships/ss-finland.html",
 "/ships/ss-gothic-white-star-line.html",
+"/ships/ss-macedonia.html",
+"/ships/ss-malta.html",
+"/ships/ss-letitia.html",
 "/ships/ss-st-louis.html"
 ];
 
