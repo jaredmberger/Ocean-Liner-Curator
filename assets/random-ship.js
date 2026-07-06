@@ -268,6 +268,8 @@
 "/ships/ss-malta.html",
 "/ships/ss-letitia.html",
 "/ships/ss-marquette.html",
+"/ships/ss-java.html",
+"/ships/ss-catalonia.html",
 "/ships/ss-st-louis.html"
 ];
 
