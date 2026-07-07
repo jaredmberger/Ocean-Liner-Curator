@@ -270,6 +270,9 @@
 "/ships/ss-marquette.html",
 "/ships/ss-java.html",
 "/ships/ss-catalonia.html",
+"/ships/ss-manchuria.html",
+"/ships/ss-mongolia.html",
+"/ships/ss-lake-michigan.html",
 "/ships/ss-st-louis.html"
 ];
 
