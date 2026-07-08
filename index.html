@@ -2691,6 +2691,64 @@ font-size: 1rem;
 
 </style>
   
+
+<style>
+/* iOS/Safari hardening: if JS fails before reveal observers run, never leave key content invisible forever. */
+.no-js .hero-inner,
+.no-js .reveal,
+.no-js .reveal-stagger,
+.js-boot-fallback .hero-inner,
+.js-boot-fallback .reveal,
+.js-boot-fallback .reveal-stagger{
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+</style>
+<script>
+/* Early, dependency-free diagnostics and graceful fallback. Safe for older Safari. */
+(function () {
+  var root = document.documentElement;
+  root.className = (root.className ? root.className + ' ' : '') + 'no-js';
+
+  window.OLC_SAFE_RUN = function (name, fn) {
+    try {
+      if (typeof fn === 'function') fn();
+    } catch (error) {
+      if (window.console && console.error) {
+        console.error('[OceanLiners.net] ' + name + ' failed:', error);
+      }
+    }
+  };
+
+  window.addEventListener('error', function (event) {
+    if (window.console && console.error) {
+      console.error('[OceanLiners.net JS error]', event.message, event.filename, event.lineno, event.colno);
+    }
+  });
+
+  window.addEventListener('unhandledrejection', function (event) {
+    if (window.console && console.error) {
+      console.error('[OceanLiners.net Promise error]', event.reason);
+    }
+  });
+
+  var clearNoJs = function () {
+    root.className = root.className.replace(/\bno-js\b/g, '').replace(/\s+/g, ' ').replace(/^\s|\s$/g, '');
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', clearNoJs);
+  } else {
+    clearNoJs();
+  }
+
+  /* If Safari beta chokes on a later script, reveal content instead of leaving panels/images hidden. */
+  window.setTimeout(function () {
+    root.className += (root.className ? ' ' : '') + 'js-boot-fallback';
+  }, 2500);
+})();
+</script>
 </head>
 
 <body class="homepage">
@@ -3067,8 +3125,10 @@ font-size: 1rem;
 </section>
 
 <script>
-  const year = document.getElementById("year");
+window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Year stamp', function () {
+  var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+});
 </script>
     
 <!-- 100% privacy-first analytics -->
@@ -3081,11 +3141,17 @@ font-size: 1rem;
 
 <!-- Scroll Reveal Observer (cards sections) -->
 <script>
-(function(){
-  const sections = document.querySelectorAll('.reveal');
+window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Scroll reveal', function () {
+  var sections = document.querySelectorAll('.reveal');
   if(!sections.length) return;
 
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!('IntersectionObserver' in window)) {
+    sections.forEach(function (el) { el.classList.add('is-visible'); });
+    document.querySelectorAll('.reveal-stagger').forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (reduce.matches){
     sections.forEach(el => el.classList.add('is-visible'));
     // also make sure stagger children are visible
@@ -3093,8 +3159,8 @@ font-size: 1rem;
     return;
   }
 
-  const io = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
+  var io = new IntersectionObserver(function (entries, obs) {
+    entries.forEach(function (entry) {
       if(entry.isIntersecting){
         entry.target.classList.add('is-visible');
 
@@ -3104,7 +3170,7 @@ font-size: 1rem;
         }
 
         // if it CONTAINS stagger containers, trigger them as well
-        entry.target.querySelectorAll('.reveal-stagger').forEach(child => {
+        entry.target.querySelectorAll('.reveal-stagger').forEach(function (child) {
           child.classList.add('is-visible');
         });
 
@@ -3117,12 +3183,12 @@ font-size: 1rem;
   });
 
   sections.forEach(el => io.observe(el));
-})();
+});
 </script>
 
 <script>
-(function(){
-  const heroes = document.querySelectorAll('.hero-inner');
+window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
+  var heroes = document.querySelectorAll('.hero-inner');
   if(!heroes.length) return;
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
@@ -3130,11 +3196,11 @@ font-size: 1rem;
     return;
   }
 
-  const show = () => heroes.forEach(hero => hero.classList.add('is-visible'));
+  var show = function () { heroes.forEach(function (hero) { hero.classList.add('is-visible'); }); };
 
   if (document.readyState === 'complete') show();
   else window.addEventListener('load', show, { once:true });
-})();
+});
 </script>
     
 <!-- House External Link Alert (Ocean Liner Curator style) -->
@@ -3178,7 +3244,7 @@ font-size: 1rem;
     overlay.classList.add('is-open');
     overlay.setAttribute('aria-hidden', 'false');
 
-    cancelEls[0]?.focus();
+    if (cancelEls[0]) cancelEls[0].focus();
   }
 
   function closeModal(){
@@ -3278,158 +3344,171 @@ font-size: 1rem;
 
 <script>
 (function(){
+  if (!window.OLC_SAFE_RUN) return;
 
-  let lastEntryHref = "";
-  let lastShipHref = "";
+  window.OLC_SAFE_RUN('Rotating homepage cards', function () {
+    var lastEntryHref = '';
+    var lastShipHref = '';
+    var initialized = false;
+    var retryCount = 0;
+    var retryTimer = null;
 
-  function getAllEntryLinks(){
-    const sets = window.OLC_ENTRY_SETS;
-    if (!sets) return [];
+    function getAllEntryLinks(){
+      var sets = window.OLC_ENTRY_SETS;
+      var links = [];
+      var key;
 
-    return Object.values(sets)
-      .flatMap(set => Array.isArray(set.links) ? set.links : [])
-      .filter(link => link.title && link.href);
-  }
+      if (!sets) return links;
 
-  function getShipNameFromUrl(url){
+      for (key in sets) {
+        if (!Object.prototype.hasOwnProperty.call(sets, key)) continue;
+        if (!sets[key] || !Array.isArray(sets[key].links)) continue;
 
-    const acronymMap = {
-      ss: "🆂🆂",
-      rms: "🆁🅼🆂",
-      mv: "🅼🆅",
-      ms: "🅼🆂",
-      tss: "🆃🆂🆂",
-      hms: "🅷🅼🆂",
-      qsmv: "🆀🆂🅼🆅",
-      rmmv: "🆁🅼🅼🆅",
-      nyk: "🅽🅺🆈"
-    };
+        sets[key].links.forEach(function (link) {
+          if (link && link.title && link.href) links.push(link);
+        });
+      }
 
-    const wordOverrides = {
-      us: "United States",
-      ii: "II",
-      latlantique: "L'Atlantique",
-      ngl: ""
-    };
-
-    const fullSlugOverrides = {
-      "ss-us": "🆂🆂 United States",
-      "dominion-monarch": "🆀🆂🅼🆅 Dominion Monarch",
-      "athlone-castle": "🆁🅼🅼🆅 Athlone Castle",
-      "stirling-castle": "🆁🅼🅼🆅 Stirling Castle",
-      "neptunia": "🅼🆂 Neptunia",
-      "oceania": "🅼🆂 Oceania"
-    };
-
-    let slug = url
-      .replace(/^.*\/ships\//, "")
-      .replace(/\.html$/, "")
-      .replace(/\/$/, "");
-
-    if (fullSlugOverrides[slug]) {
-      return fullSlugOverrides[slug];
+      return links;
     }
 
-    let parts = slug.split("-");
+    function getShipNameFromUrl(url){
+      var acronymMap = {
+        ss: '🆂🆂',
+        rms: '🆁🅼🆂',
+        mv: '🅼🆅',
+        ms: '🅼🆂',
+        tss: '🆃🆂🆂',
+        hms: '🅷🅼🆂',
+        qsmv: '🆀🆂🅼🆅',
+        rmmv: '🆁🅼🅼🆅',
+        nyk: '🅽🅺🆈'
+      };
 
-    if (/^\d{4}$/.test(parts[parts.length - 1])) {
-      parts.pop();
-    }
+      var wordOverrides = {
+        us: 'United States',
+        ii: 'II',
+        latlantique: "L'Atlantique",
+        ngl: ''
+      };
 
-    return parts
-      .map(word => {
-        const lower = word.toLowerCase();
+      var fullSlugOverrides = {
+        'ss-us': '🆂🆂 United States',
+        'dominion-monarch': '🆀🆂🅼🆅 Dominion Monarch',
+        'athlone-castle': '🆁🅼🅼🆅 Athlone Castle',
+        'stirling-castle': '🆁🅼🅼🆅 Stirling Castle',
+        neptunia: '🅼🆂 Neptunia',
+        oceania: '🅼🆂 Oceania'
+      };
 
-        if (Object.prototype.hasOwnProperty.call(wordOverrides, lower)) {
-          return wordOverrides[lower];
-        }
+      var slug = String(url || '')
+        .replace(/^.*\/ships\//, '')
+        .replace(/\.html$/, '')
+        .replace(/\/$/, '');
 
-        if (acronymMap[lower]) {
-          return acronymMap[lower];
-        }
+      var parts;
+      var mapped;
+
+      if (fullSlugOverrides[slug]) return fullSlugOverrides[slug];
+
+      parts = slug.split('-');
+
+      if (/^\d{4}$/.test(parts[parts.length - 1])) parts.pop();
+
+      mapped = parts.map(function (word) {
+        var lower = word.toLowerCase();
+
+        if (Object.prototype.hasOwnProperty.call(wordOverrides, lower)) return wordOverrides[lower];
+        if (acronymMap[lower]) return acronymMap[lower];
 
         return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .filter(Boolean)
-      .join(" ");
-  }
+      }).filter(Boolean);
 
-  function rotateShipCard(){
-    const ships = window.OLC_SHIP_URLS || [];
-    if (!ships.length) return;
+      return mapped.join(' ');
+    }
 
-    const titleEl = document.getElementById("ship-entry-title");
-    const linkEl = document.getElementById("ship-entry-link");
+    function rotateShipCard(){
+      var ships = Array.isArray(window.OLC_SHIP_URLS) ? window.OLC_SHIP_URLS : [];
+      var titleEl = document.getElementById('ship-entry-title');
+      var linkEl = document.getElementById('ship-entry-link');
+      var ship;
+      var guard = 0;
 
-    if (!titleEl || !linkEl) return;
+      if (!ships.length || !titleEl || !linkEl) return false;
 
-    let ship = ships[Math.floor(Math.random() * ships.length)];
+      ship = ships[Math.floor(Math.random() * ships.length)];
 
-    if (ships.length > 1) {
-      let guard = 0;
-      while (ship === lastShipHref && guard < 10) {
+      while (ships.length > 1 && ship === lastShipHref && guard < 10) {
         ship = ships[Math.floor(Math.random() * ships.length)];
-        guard++;
+        guard += 1;
       }
+
+      lastShipHref = ship;
+      titleEl.textContent = '➺ ' + getShipNameFromUrl(ship);
+      linkEl.href = ship;
+      linkEl.textContent = 'Explore ship guide »';
+      return true;
     }
 
-    lastShipHref = ship;
+    function rotateHomepageEntryCard(){
+      var entries = getAllEntryLinks();
+      var titleEl = document.getElementById('rotating-entry-title');
+      var descEl = document.getElementById('rotating-entry-desc');
+      var linkEl = document.getElementById('rotating-entry-link');
+      var entry;
+      var guard = 0;
 
-    titleEl.textContent = "➺ " + getShipNameFromUrl(ship);
-    linkEl.href = ship;
-    linkEl.textContent = "Explore ship guide »";
-  }
+      if (!entries.length || !titleEl || !descEl || !linkEl) return false;
 
-  function rotateHomepageEntryCard(){
-    const entries = getAllEntryLinks();
-    if (!entries.length) return;
+      entry = entries[Math.floor(Math.random() * entries.length)];
 
-    const titleEl = document.getElementById("rotating-entry-title");
-    const descEl = document.getElementById("rotating-entry-desc");
-    const linkEl = document.getElementById("rotating-entry-link");
-
-    if (!titleEl || !descEl || !linkEl) return;
-
-    let entry = entries[Math.floor(Math.random() * entries.length)];
-    
-
-    if (entries.length > 1) {
-      let guard = 0;
-      while (entry.href === lastEntryHref && guard < 10) {
+      while (entries.length > 1 && entry.href === lastEntryHref && guard < 10) {
         entry = entries[Math.floor(Math.random() * entries.length)];
-        guard++;
+        guard += 1;
+      }
+
+      lastEntryHref = entry.href;
+      titleEl.textContent = '✦ ' + entry.title;
+      descEl.textContent = entry.desc ? '✦ ' + entry.desc : '';
+      linkEl.href = entry.href;
+      linkEl.textContent = 'Read the answer »';
+      return true;
+    }
+
+    function wireButtonsOnce(){
+      var shipRefresh = document.getElementById('ship-entry-refresh');
+      var entryRefresh = document.getElementById('rotating-entry-refresh');
+
+      if (initialized) return;
+      initialized = true;
+
+      if (shipRefresh) shipRefresh.addEventListener('click', rotateShipCard);
+      if (entryRefresh) entryRefresh.addEventListener('click', rotateHomepageEntryCard);
+    }
+
+    function initRotatingCards(){
+      var shipReady = rotateShipCard();
+      var entryReady = rotateHomepageEntryCard();
+
+      wireButtonsOnce();
+
+      /* External /assets/random-ship.js and /assets/entry-links.js can arrive late in Safari beta. Retry briefly. */
+      if ((!shipReady || !entryReady) && retryCount < 20) {
+        retryCount += 1;
+        retryTimer = window.setTimeout(initRotatingCards, 150);
+      } else if (retryTimer) {
+        window.clearTimeout(retryTimer);
       }
     }
 
-    lastEntryHref = entry.href;
-
-    titleEl.textContent = "✦ " + entry.title;
-    descEl.textContent = "✦ " + entry.desc || "";
-    linkEl.href = entry.href;
-    linkEl.textContent = "Read the answer »";
-  }
-
-  function initRotatingCards(){
-    rotateShipCard();
-    rotateHomepageEntryCard();
-
-    const shipRefresh = document.getElementById("ship-entry-refresh");
-    if (shipRefresh) {
-      shipRefresh.addEventListener("click", rotateShipCard);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initRotatingCards);
+    } else {
+      initRotatingCards();
     }
 
-    const entryRefresh = document.getElementById("rotating-entry-refresh");
-    if (entryRefresh) {
-      entryRefresh.addEventListener("click", rotateHomepageEntryCard);
-    }
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initRotatingCards);
-  } else {
-    initRotatingCards();
-  }
-
+    window.addEventListener('load', initRotatingCards, { once: true });
+  });
 })();
 </script>
 
