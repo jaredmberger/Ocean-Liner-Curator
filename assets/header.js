@@ -1,49 +1,188 @@
-document.addEventListener("DOMContentLoaded", async () => {
-  // ---- Ensure footer/copyright exists ----
-  let copyright = document.querySelector(".copyright");
+/*
+  Ocean Liner Curator — hardened shared header/footer script
+  Purpose: keep header/nav/footer/feedback/analytics isolated so one failure does not
+  prevent the rest of the page from initializing, with Safari/iOS-friendly header retry.
+*/
+(function () {
+  "use strict";
 
-  if (!copyright) {
-    let footer = document.querySelector("footer");
+  window.OLC = window.OLC || {};
 
-    if (!footer) {
-      footer = document.createElement("footer");
-      footer.className = "page-footer";
-      document.body.appendChild(footer);
-    }
-
-    copyright = document.createElement("p");
-    copyright.className = "copyright";
-    copyright.textContent = "© 2026 Ocean Liner Curator LLC. All rights reserved.";
-
-    footer.appendChild(copyright);
+  if (typeof window.OLC.runFeature !== "function") {
+    window.OLC.runFeature = function runFeature(name, fn) {
+      try {
+        if (typeof fn === "function") return fn();
+      } catch (err) {
+        console.error("[OceanLiners.net] " + name + " failed:", err);
+      }
+      return undefined;
+    };
   }
-  
-  // ---- Support project footer link ----
-let supportLink = document.querySelector(".footer-support-link");
 
-if (!supportLink) {
-  supportLink = document.createElement("a");
-  supportLink.className = "footer-support-link";
-  supportLink.href = "/support";
-  supportLink.textContent = "Support the Project";
+  if (!window.OLC.__errorLoggingBound) {
+    window.OLC.__errorLoggingBound = true;
 
-  copyright.insertAdjacentElement("afterend", supportLink);
-}
+    window.addEventListener("error", function (event) {
+      console.error(
+        "[OceanLiners.net JS error]",
+        event.message,
+        event.filename,
+        event.lineno,
+        event.colno
+      );
+    });
 
-  // ---- Footer star homepage link ----
-  const existing = document.querySelector(".footer-star");
+    window.addEventListener("unhandledrejection", function (event) {
+      console.error("[OceanLiners.net Promise error]", event.reason);
+    });
+  }
 
-  if (existing) {
-    if (existing.tagName.toLowerCase() !== "a") {
-      const link = document.createElement("a");
-      link.className = existing.className;
-      link.href = "/";
-      link.setAttribute("aria-label", "Return to OceanLiners.net homepage");
-      link.textContent = existing.textContent || "★";
-
-      existing.replaceWith(link);
+  function onReady(fn) {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", fn, { once: true });
+    } else {
+      fn();
     }
-  } else {
+  }
+
+  function dispatchHeaderReady(detail) {
+    document.dispatchEvent(new CustomEvent("olc:header-ready", { detail: detail || {} }));
+  }
+
+  function dispatchHeaderFailed(error) {
+    document.dispatchEvent(new CustomEvent("olc:header-failed", { detail: { error: error } }));
+  }
+
+  function sleep(ms) {
+    return new Promise(function (resolve) {
+      window.setTimeout(resolve, ms);
+    });
+  }
+
+  async function fetchTextWithRetry(url, options, tries) {
+    let lastError = null;
+    const totalTries = tries || 3;
+
+    for (let attempt = 1; attempt <= totalTries; attempt++) {
+      try {
+        const res = await fetch(url, options || {});
+        if (!res.ok) throw new Error("Fetch failed: " + res.status + " " + res.statusText);
+        return await res.text();
+      } catch (err) {
+        lastError = err;
+        if (attempt < totalTries) await sleep(150 * attempt);
+      }
+    }
+
+    throw lastError || new Error("Fetch failed: " + url);
+  }
+
+  async function injectHeader() {
+    const mount = document.getElementById("site-header");
+    if (!mount) {
+      dispatchHeaderFailed(new Error("Header mount #site-header not found"));
+      return;
+    }
+
+    if (mount.dataset.olcHeaderLoaded === "true") {
+      dispatchHeaderReady({ mount: mount, alreadyLoaded: true });
+      return;
+    }
+
+    try {
+      const html = await fetchTextWithRetry(
+        "/partials/header.html",
+        {
+          cache: "no-cache",
+          credentials: "same-origin"
+        },
+        3
+      );
+
+      mount.innerHTML = html;
+      mount.dataset.olcHeaderLoaded = "true";
+      dispatchHeaderReady({ mount: mount, source: "/partials/header.html" });
+    } catch (err) {
+      console.warn("[OceanLiners.net] Header fetch failed after retries:", err);
+
+      /* Minimal fail-safe navigation. This only appears if /partials/header.html cannot load. */
+      mount.innerHTML =
+        '<header class="site-header" data-olc-fallback-header="true">' +
+          '<div class="header-inner">' +
+            '<nav class="site-nav" aria-label="Primary navigation">' +
+              '<a class="nav-link" href="/">Home</a>' +
+              '<a class="nav-link" href="/ships/ships">Ship Archive</a>' +
+              '<a class="nav-link" href="/collections">Collections</a>' +
+              '<a class="nav-link" href="/photos">Photos</a>' +
+              '<a class="nav-link" href="/about">About</a>' +
+              '<a class="nav-link" href="/contact">Contact</a>' +
+            '</nav>' +
+          '</div>' +
+        '</header>';
+
+      mount.dataset.olcHeaderLoaded = "fallback";
+      dispatchHeaderFailed(err);
+      dispatchHeaderReady({ mount: mount, fallback: true, error: err });
+    }
+  }
+
+  function ensureFooterCopyright() {
+    let copyright = document.querySelector(".copyright");
+
+    if (!copyright) {
+      let footer = document.querySelector("footer");
+
+      if (!footer) {
+        footer = document.createElement("footer");
+        footer.className = "page-footer";
+        document.body.appendChild(footer);
+      }
+
+      copyright = document.createElement("p");
+      copyright.className = "copyright";
+      copyright.textContent = "© 2026 Ocean Liner Curator LLC. All rights reserved.";
+
+      footer.appendChild(copyright);
+    }
+
+    return copyright;
+  }
+
+  function ensureSupportLink(copyright) {
+    if (!copyright) return null;
+
+    let supportLink = document.querySelector(".footer-support-link");
+
+    if (!supportLink) {
+      supportLink = document.createElement("a");
+      supportLink.className = "footer-support-link";
+      supportLink.href = "/support";
+      supportLink.textContent = "Support the Project";
+
+      copyright.insertAdjacentElement("afterend", supportLink);
+    }
+
+    return supportLink;
+  }
+
+  function ensureFooterStar(supportLink) {
+    const existing = document.querySelector(".footer-star");
+
+    if (existing) {
+      if (existing.tagName && existing.tagName.toLowerCase() !== "a") {
+        const link = document.createElement("a");
+        link.className = existing.className;
+        link.href = "/";
+        link.setAttribute("aria-label", "Return to OceanLiners.net homepage");
+        link.textContent = existing.textContent || "★";
+
+        existing.replaceWith(link);
+      }
+      return;
+    }
+
+    if (!supportLink) return;
+
     const star = document.createElement("a");
     star.className = "footer-star";
     star.href = "/";
@@ -53,8 +192,7 @@ if (!supportLink) {
     supportLink.insertAdjacentElement("afterend", star);
   }
 
-  // ---- Page feedback widget ----
-  (function injectPageFeedback() {
+  function injectPageFeedback(copyright) {
     const excludedPages = ["/"];
 
     if (excludedPages.includes(location.pathname)) return;
@@ -102,11 +240,11 @@ if (!supportLink) {
 
     copyright.insertAdjacentElement("beforebegin", feedback);
 
-    async function sendFeedback(vote, reason = "") {
-      if (typeof gtag === "function") {
-        gtag("event", "page_feedback", {
+    async function sendFeedback(vote, reason) {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "page_feedback", {
           feedback_vote: vote,
-          feedback_reason: reason,
+          feedback_reason: reason || "",
           page_path: window.location.pathname,
           page_title: document.title
         });
@@ -120,8 +258,8 @@ if (!supportLink) {
             "Accept": "application/json"
           },
           body: JSON.stringify({
-            vote,
-            reason,
+            vote: vote,
+            reason: reason || "",
             page: window.location.href,
             title: document.title,
             timestamp: new Date().toISOString()
@@ -137,13 +275,13 @@ if (!supportLink) {
 
     let selectedVote = null;
 
-    feedback.addEventListener("click", (e) => {
+    feedback.addEventListener("click", function (e) {
       const btn = e.target.closest("button[data-feedback]");
       if (!btn) return;
 
       selectedVote = btn.dataset.feedback;
 
-      feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
+      feedback.querySelectorAll("button[data-feedback]").forEach(function (b) {
         b.classList.toggle("selected", b === btn);
       });
 
@@ -169,7 +307,7 @@ if (!supportLink) {
     const submit = feedback.querySelector(".olc-feedback-submit");
 
     if (submit) {
-      submit.addEventListener("click", async () => {
+      submit.addEventListener("click", async function () {
         const textarea = feedback.querySelector("#olc-feedback-reason");
         const reason = textarea ? textarea.value.trim() : "";
 
@@ -193,26 +331,22 @@ if (!supportLink) {
 
         submit.disabled = true;
 
-        await sendFeedback(
-          selectedVote === "up" ? "⬆" : "⬇",
-          reason
-        );
+        await sendFeedback(selectedVote === "up" ? "⬆" : "⬇", reason);
 
         const detail = feedback.querySelector(".olc-feedback-detail");
         if (detail) detail.hidden = true;
 
-        feedback.querySelectorAll("button[data-feedback]").forEach((b) => {
+        feedback.querySelectorAll("button[data-feedback]").forEach(function (b) {
           b.disabled = true;
         });
       });
     }
-  })();
+  }
 
-  // ---- Google Analytics ----
-  (function injectGA() {
+  function injectGA() {
     const GA_SRC = "https://www.googletagmanager.com/gtag/js?id=G-JPZ291Q3RB";
 
-    if (document.querySelector(`script[src^="https://www.googletagmanager.com/gtag/js"]`)) return;
+    if (document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js"]')) return;
 
     const s = document.createElement("script");
     s.src = GA_SRC;
@@ -220,36 +354,45 @@ if (!supportLink) {
     document.head.appendChild(s);
 
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      dataLayer.push(arguments);
+    window.gtag = window.gtag || function () {
+      window.dataLayer.push(arguments);
     };
 
-    gtag("js", new Date());
-    gtag("config", "G-JPZ291Q3RB");
-  })();
+    window.gtag("js", new Date());
+    window.gtag("config", "G-JPZ291Q3RB");
+  }
 
-  // ---- Simple Analytics ----
-  (function injectSimpleAnalytics() {
+  function injectSimpleAnalytics() {
     const SRC = "https://scripts.simpleanalyticscdn.com/latest.js";
 
-    if (document.querySelector(`script[src="${SRC}"]`)) return;
+    if (document.querySelector('script[src="' + SRC + '"]')) return;
 
     const s = document.createElement("script");
     s.src = SRC;
     s.async = true;
     document.head.appendChild(s);
-  })();
-
-  // ---- Header injection ----
-  const mount = document.getElementById("site-header");
-
-  if (mount) {
-    try {
-      const res = await fetch("/partials/header.html", { cache: "no-cache" });
-      if (!res.ok) throw new Error("Header fetch failed: " + res.status);
-      mount.innerHTML = await res.text();
-    } catch (err) {
-      console.warn(err);
-    }
   }
-});
+
+  onReady(function () {
+    /* Header first: this is the most visible shared dependency. */
+    window.OLC.runFeature("Header injection", function () {
+      injectHeader();
+    });
+
+    const copyright = window.OLC.runFeature("Footer copyright", ensureFooterCopyright);
+    const supportLink = window.OLC.runFeature("Footer support link", function () {
+      return ensureSupportLink(copyright);
+    });
+
+    window.OLC.runFeature("Footer star", function () {
+      ensureFooterStar(supportLink);
+    });
+
+    window.OLC.runFeature("Page feedback widget", function () {
+      injectPageFeedback(copyright);
+    });
+
+    window.OLC.runFeature("Google Analytics", injectGA);
+    window.OLC.runFeature("Simple Analytics", injectSimpleAnalytics);
+  });
+})();
