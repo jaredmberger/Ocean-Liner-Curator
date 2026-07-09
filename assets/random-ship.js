@@ -273,6 +273,9 @@
 "/ships/ss-manchuria.html",
 "/ships/ss-mongolia.html",
 "/ships/ss-lake-michigan.html",
+"/ships/ss-la-normandie.html",
+"/ships/ss-mayflower.html",
+"/ships/ss-napoleon-iii.html",
 "/ships/ss-st-louis.html"
 ];
 
