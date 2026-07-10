@@ -3523,25 +3523,22 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
 </button>
 
 <style>
-  #olc-recovery-button {
+ #olc-recovery-button{
     position: fixed;
-    right: 6px;
-    bottom: 6px;
+    left: max(6px, env(safe-area-inset-left));
+    bottom: max(6px, env(safe-area-inset-bottom));
+
     z-index: 2147483647;
 
     width: 18px;
     height: 18px;
-    padding: 0;
 
     border: 0;
     border-radius: 50%;
     background: transparent;
     color: transparent;
-
-    opacity: 0.015;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-  }
+    opacity: .015;
+}
 
   #olc-recovery-button:focus-visible {
     width: 34px;
