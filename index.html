@@ -3512,82 +3512,162 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
 })();
 </script>
 
-<!-- Private Ocean Liner Curator recovery control -->
+<!-- Private OLC cache-recovery control -->
 <button
   type="button"
-  id="olc-recovery-button"
-  aria-label="Reload page components"
-  title="Reload page components"
+  id="olc-deep-recovery"
+  aria-label="Repair cached site resources"
+  title="Repair cached site resources"
 >
   ★
 </button>
 
 <style>
- #olc-recovery-button{
-    position: fixed;
-    left: max(6px, env(safe-area-inset-left));
-    bottom: max(6px, env(safe-area-inset-bottom));
+#olc-deep-recovery{
+  position:fixed;
+  left:max(8px, env(safe-area-inset-left));
+  bottom:max(8px, env(safe-area-inset-bottom));
+  z-index:2147483647;
 
-    z-index: 2147483647;
+  width:24px;
+  height:24px;
+  padding:0;
 
-    width: 18px;
-    height: 18px;
+  border:1px solid transparent;
+  border-radius:50%;
+  background:transparent;
+  color:transparent;
 
-    border: 0;
-    border-radius: 50%;
-    background: transparent;
-    color: transparent;
-    opacity: .015;
+  opacity:0.025;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
 }
 
-  #olc-recovery-button:focus-visible {
-    width: 34px;
-    height: 34px;
-
-    color: #bfa46a;
-    background: #0f1b19;
-    border: 1px solid rgba(191, 164, 106, 0.55);
-    opacity: 1;
-
-    outline: 2px solid rgba(191, 164, 106, 0.7);
-    outline-offset: 3px;
-  }
+#olc-deep-recovery:focus-visible{
+  width:36px;
+  height:36px;
+  opacity:1;
+  color:#bfa46a;
+  background:#0f1b19;
+  border-color:rgba(191,164,106,0.55);
+  outline:2px solid rgba(191,164,106,0.7);
+  outline-offset:3px;
+}
 </style>
 
 <script>
 (function () {
   "use strict";
 
-  const button = document.getElementById("olc-recovery-button");
-
+  const button = document.getElementById("olc-deep-recovery");
   if (!button) return;
 
-  button.addEventListener("click", function () {
+  let running = false;
+
+  async function deepRecover() {
+    if (running) return;
+    running = true;
+    button.disabled = true;
+
+    console.warn("[OLC] Starting deep cache recovery.");
+
     try {
-      const url = new URL(window.location.href);
+      /*
+       * 1. Unregister service workers.
+       */
+      if (
+        "serviceWorker" in navigator &&
+        typeof navigator.serviceWorker.getRegistrations === "function"
+      ) {
+        const registrations =
+          await navigator.serviceWorker.getRegistrations();
+
+        await Promise.allSettled(
+          registrations.map(function (registration) {
+            return registration.unregister();
+          })
+        );
+
+        console.info(
+          "[OLC] Service workers removed:",
+          registrations.length
+        );
+      }
 
       /*
-       * Changing this value forces Safari to request a fresh page URL.
-       * The parameter is removed from the address after the reload.
+       * 2. Delete Cache Storage entries.
        */
-      url.searchParams.set("olc-recover", Date.now().toString());
+      if ("caches" in window) {
+        const cacheNames = await window.caches.keys();
+
+        await Promise.allSettled(
+          cacheNames.map(function (cacheName) {
+            return window.caches.delete(cacheName);
+          })
+        );
+
+        console.info(
+          "[OLC] Cache Storage entries removed:",
+          cacheNames.length
+        );
+      }
+
+      /*
+       * 3. Clear temporary page storage.
+       */
+      try {
+        window.sessionStorage.clear();
+      } catch (error) {
+        console.warn("[OLC] sessionStorage could not be cleared:", error);
+      }
+
+      /*
+       * Enable this only if OceanLiners.net does not store important
+       * visitor preferences in localStorage.
+       */
+      try {
+        window.localStorage.clear();
+      } catch (error) {
+        console.warn("[OLC] localStorage could not be cleared:", error);
+      }
+
+      /*
+       * 4. Briefly allow unregister/delete operations to settle.
+       */
+      await new Promise(function (resolve) {
+        window.setTimeout(resolve, 350);
+      });
+
+      /*
+       * 5. Reload through a unique document URL.
+       */
+      const url = new URL(window.location.href);
+      url.searchParams.set("olc-deep-recover", Date.now().toString());
 
       window.location.replace(url.toString());
     } catch (error) {
-      console.error("[OLC] Recovery reload failed:", error);
-      window.location.reload();
+      console.error("[OLC] Deep recovery failed:", error);
+
+      const fallbackUrl = new URL(window.location.href);
+      fallbackUrl.searchParams.set(
+        "olc-deep-recover",
+        Date.now().toString()
+      );
+
+      window.location.replace(fallbackUrl.toString());
     }
-  });
+  }
+
+  button.addEventListener("click", deepRecover);
 
   /*
-   * Clean the temporary recovery parameter from the visible URL after
-   * the new page has loaded, without causing another reload.
+   * Remove the temporary recovery parameter after a successful load.
    */
   try {
     const currentUrl = new URL(window.location.href);
 
-    if (currentUrl.searchParams.has("olc-recover")) {
-      currentUrl.searchParams.delete("olc-recover");
+    if (currentUrl.searchParams.has("olc-deep-recover")) {
+      currentUrl.searchParams.delete("olc-deep-recover");
 
       window.history.replaceState(
         window.history.state,
@@ -3598,7 +3678,7 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
       );
     }
   } catch (error) {
-    console.warn("[OLC] Could not clean recovery URL:", error);
+    console.warn("[OLC] Recovery URL cleanup failed:", error);
   }
 })();
 </script>
