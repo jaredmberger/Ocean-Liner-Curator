@@ -3512,5 +3512,99 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
 })();
 </script>
 
+<!-- Private Ocean Liner Curator recovery control -->
+<button
+  type="button"
+  id="olc-recovery-button"
+  aria-label="Reload page components"
+  title="Reload page components"
+>
+  ★
+</button>
+
+<style>
+  #olc-recovery-button {
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+    z-index: 2147483647;
+
+    width: 18px;
+    height: 18px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: transparent;
+
+    opacity: 0.015;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #olc-recovery-button:focus-visible {
+    width: 34px;
+    height: 34px;
+
+    color: #bfa46a;
+    background: #0f1b19;
+    border: 1px solid rgba(191, 164, 106, 0.55);
+    opacity: 1;
+
+    outline: 2px solid rgba(191, 164, 106, 0.7);
+    outline-offset: 3px;
+  }
+</style>
+
+<script>
+(function () {
+  "use strict";
+
+  const button = document.getElementById("olc-recovery-button");
+
+  if (!button) return;
+
+  button.addEventListener("click", function () {
+    try {
+      const url = new URL(window.location.href);
+
+      /*
+       * Changing this value forces Safari to request a fresh page URL.
+       * The parameter is removed from the address after the reload.
+       */
+      url.searchParams.set("olc-recover", Date.now().toString());
+
+      window.location.replace(url.toString());
+    } catch (error) {
+      console.error("[OLC] Recovery reload failed:", error);
+      window.location.reload();
+    }
+  });
+
+  /*
+   * Clean the temporary recovery parameter from the visible URL after
+   * the new page has loaded, without causing another reload.
+   */
+  try {
+    const currentUrl = new URL(window.location.href);
+
+    if (currentUrl.searchParams.has("olc-recover")) {
+      currentUrl.searchParams.delete("olc-recover");
+
+      window.history.replaceState(
+        window.history.state,
+        document.title,
+        currentUrl.pathname +
+          currentUrl.search +
+          currentUrl.hash
+      );
+    }
+  } catch (error) {
+    console.warn("[OLC] Could not clean recovery URL:", error);
+  }
+})();
+</script>
+
 </body>
 </html>
