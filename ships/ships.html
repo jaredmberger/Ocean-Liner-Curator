@@ -7179,52 +7179,203 @@ Evidence-first maritime documentation
 (function () {
   "use strict";
 
-  function loadFreshHeaderScript() {
-    if (window.OLC && typeof window.OLC.reloadHeader === "function") {
-      return;
-    }
+  const HEADER_JS = "/assets/header.js";
+  const NAV_JS = "/assets/nav.js";
+  const NAV_CSS = "/assets/nav.css";
 
-    const script = document.createElement("script");
+  let repairRunning = false;
 
-    script.src =
-      "/assets/header.js?repair=" +
-      Date.now();
+  function freshUrl(path) {
+    const separator = path.includes("?") ? "&" : "?";
+    return path + separator + "olc-repair=" + Date.now();
+  }
 
-    script.async = false;
+  function loadScript(path, marker) {
+    return new Promise(function (resolve, reject) {
+      const existingRepair = document.querySelector(
+        'script[data-olc-repair="' + marker + '"]'
+      );
 
-    script.onload = function () {
-      console.info("[OLC] Fresh header.js loaded.");
+      if (existingRepair) {
+        existingRepair.addEventListener("load", resolve, { once: true });
+        existingRepair.addEventListener("error", reject, { once: true });
+        return;
+      }
 
+      const script = document.createElement("script");
+
+      script.src = freshUrl(path);
+      script.async = false;
+      script.dataset.olcRepair = marker;
+
+      script.onload = function () {
+        console.info("[OLC Repair] Loaded:", path);
+        resolve();
+      };
+
+      script.onerror = function () {
+        reject(new Error("Could not load " + path));
+      };
+
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadStyle(path, marker) {
+    return new Promise(function (resolve, reject) {
+      const oldRepair = document.querySelector(
+        'link[data-olc-repair="' + marker + '"]'
+      );
+
+      if (oldRepair) {
+        oldRepair.remove();
+      }
+
+      const link = document.createElement("link");
+
+      link.rel = "stylesheet";
+      link.href = freshUrl(path);
+      link.dataset.olcRepair = marker;
+
+      link.onload = function () {
+        console.info("[OLC Repair] Loaded:", path);
+        resolve();
+      };
+
+      link.onerror = function () {
+        reject(new Error("Could not load " + path));
+      };
+
+      document.head.appendChild(link);
+    });
+  }
+
+  function headerIsHealthy() {
+    return Boolean(
+      window.OLC &&
+      typeof window.OLC.reloadHeader === "function" &&
+      document.querySelector("#site-header .site-header")
+    );
+  }
+
+  function navigationIsHealthy() {
+    return Boolean(
+      window.OLC &&
+      typeof window.OLC.reloadNav === "function" &&
+      document.querySelector(".site-nav")
+    );
+  }
+
+  async function repairSharedInterface() {
+    if (repairRunning) return false;
+
+    repairRunning = true;
+
+    console.warn("[OLC Repair] Starting shared-interface recovery.");
+
+    try {
+      /*
+       * Reload the navigation stylesheet first.
+       * This repairs the raw, unstyled header appearance.
+       */
+      await loadStyle(NAV_CSS, "nav-css");
+
+      /*
+       * Load a fresh header script when the normal script
+       * did not create the OLC namespace or header tools.
+       */
+      if (
+        !window.OLC ||
+        typeof window.OLC.reloadHeader !== "function"
+      ) {
+        await loadScript(HEADER_JS, "header-js");
+      }
+
+      /*
+       * Re-fetch and inject the shared header.
+       */
       if (
         window.OLC &&
         typeof window.OLC.reloadHeader === "function"
       ) {
-        window.OLC.reloadHeader();
+        await window.OLC.reloadHeader();
       }
-    };
 
-    script.onerror = function () {
-      console.error("[OLC] Fresh header.js failed to load.");
-    };
+      /*
+       * Load nav.js after the header exists.
+       */
+      if (
+        !window.OLC ||
+        typeof window.OLC.reloadNav !== "function"
+      ) {
+        await loadScript(NAV_JS, "nav-js");
+      }
 
-    document.head.appendChild(script);
+      /*
+       * Wire the newly injected navigation.
+       */
+      if (
+        window.OLC &&
+        typeof window.OLC.reloadNav === "function"
+      ) {
+        window.OLC.reloadNav();
+      }
+
+      await new Promise(function (resolve) {
+        window.requestAnimationFrame(function () {
+          window.requestAnimationFrame(resolve);
+        });
+      });
+
+      const result = {
+        header: headerIsHealthy(),
+        navigation: navigationIsHealthy(),
+        navCss: Boolean(
+          document.querySelector(
+            'link[data-olc-repair="nav-css"]'
+          )
+        )
+      };
+
+      console.table(result);
+
+      if (!result.header || !result.navigation) {
+        throw new Error(
+          "Recovery completed, but one or more shared components remain unavailable."
+        );
+      }
+
+      console.info("[OLC Repair] Recovery completed successfully.");
+
+      return true;
+    } catch (error) {
+      console.error("[OLC Repair] Recovery failed:", error);
+      return false;
+    } finally {
+      repairRunning = false;
+    }
   }
 
+  /*
+   * Public console command:
+   *
+   * OLCRepair()
+   */
+  window.OLCRepair = repairSharedInterface;
+
+  /*
+   * Automatic check after normal deferred scripts have
+   * had time to initialize.
+   */
   window.setTimeout(function () {
-    const headerMissing =
-      !document.querySelector("#site-header .site-header");
-
-    const olcMissing =
-      !window.OLC;
-
-    if (headerMissing || olcMissing) {
+    if (!headerIsHealthy() || !navigationIsHealthy()) {
       console.warn(
-        "[OLC] Shared header script did not initialize. Loading a fresh copy."
+        "[OLC Repair] Missing shared assets detected; beginning automatic recovery."
       );
 
-      loadFreshHeaderScript();
+      repairSharedInterface();
     }
-  }, 1200);
+  }, 1500);
 })();
 </script>
        
