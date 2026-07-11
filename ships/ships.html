@@ -7174,6 +7174,59 @@ Evidence-first maritime documentation
        <script src="/assets/nav.js" defer></script>
 <script src="/assets/card-click.js" defer></script>
 <script src="/assets/random-ship.js" defer></script>
+
+<script>
+(function () {
+  "use strict";
+
+  function loadFreshHeaderScript() {
+    if (window.OLC && typeof window.OLC.reloadHeader === "function") {
+      return;
+    }
+
+    const script = document.createElement("script");
+
+    script.src =
+      "/assets/header.js?repair=" +
+      Date.now();
+
+    script.async = false;
+
+    script.onload = function () {
+      console.info("[OLC] Fresh header.js loaded.");
+
+      if (
+        window.OLC &&
+        typeof window.OLC.reloadHeader === "function"
+      ) {
+        window.OLC.reloadHeader();
+      }
+    };
+
+    script.onerror = function () {
+      console.error("[OLC] Fresh header.js failed to load.");
+    };
+
+    document.head.appendChild(script);
+  }
+
+  window.setTimeout(function () {
+    const headerMissing =
+      !document.querySelector("#site-header .site-header");
+
+    const olcMissing =
+      !window.OLC;
+
+    if (headerMissing || olcMissing) {
+      console.warn(
+        "[OLC] Shared header script did not initialize. Loading a fresh copy."
+      );
+
+      loadFreshHeaderScript();
+    }
+  }, 1200);
+})();
+</script>
        
        <script>
 window.OLC.onReady("Ship archive filters", function(){
