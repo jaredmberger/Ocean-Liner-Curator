@@ -3139,6 +3139,59 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Year stamp', function () {
 <script src="/assets/random-ship.js" defer></script>
 <script src="/assets/entry-links.js" defer></script>
 
+<script>
+(function () {
+  "use strict";
+
+  function loadFreshHeaderScript() {
+    if (window.OLC && typeof window.OLC.reloadHeader === "function") {
+      return;
+    }
+
+    const script = document.createElement("script");
+
+    script.src =
+      "/assets/header.js?repair=" +
+      Date.now();
+
+    script.async = false;
+
+    script.onload = function () {
+      console.info("[OLC] Fresh header.js loaded.");
+
+      if (
+        window.OLC &&
+        typeof window.OLC.reloadHeader === "function"
+      ) {
+        window.OLC.reloadHeader();
+      }
+    };
+
+    script.onerror = function () {
+      console.error("[OLC] Fresh header.js failed to load.");
+    };
+
+    document.head.appendChild(script);
+  }
+
+  window.setTimeout(function () {
+    const headerMissing =
+      !document.querySelector("#site-header .site-header");
+
+    const olcMissing =
+      !window.OLC;
+
+    if (headerMissing || olcMissing) {
+      console.warn(
+        "[OLC] Shared header script did not initialize. Loading a fresh copy."
+      );
+
+      loadFreshHeaderScript();
+    }
+  }, 1200);
+})();
+</script>
+
 <!-- Scroll Reveal Observer (cards sections) -->
 <script>
 window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Scroll reveal', function () {
