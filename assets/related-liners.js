@@ -216,7 +216,7 @@
         <ul class="sources"><li><a href="/ships/ships"
           data-random-archive-link
           aria-busy="true"
-        >the Ship Archive</a> »</li>
+        >the Ship Archive</a></li>
       </ul>
       </p>
     `;
