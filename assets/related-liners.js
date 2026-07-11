@@ -182,6 +182,7 @@
         link.href = ship.href;
         link.textContent = ship.label;
         link.removeAttribute("aria-busy");
+        link.removeAttribute("data-random-archive-link");
       })
       .catch(function (error) {
         console.warn("[related-liners] Random archive ship unavailable:", error);
