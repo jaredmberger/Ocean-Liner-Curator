@@ -212,11 +212,11 @@
 
       <h2>From the Archives</h2>
       <p class="note">
-        Looking for another ship? Explore
+        Looking for another ship? Explore:
         <ul class="sources"><li><a href="/ships/ships"
           data-random-archive-link
           aria-busy="true"
-        >the Ship Archive</a></li>
+        >the Ship Archive</a> »</li>
       </ul>
       </p>
     `;
