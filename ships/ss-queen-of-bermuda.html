@@ -565,6 +565,230 @@
     .gpt-modal-actions button:hover{
       background: rgba(191,164,106,0.1);
     }
+
+
+    /* Queen of Bermuda sectional drawings + viewport-aware lightbox */
+    .cutaway-section{
+      max-width:680px;
+      margin:1.35rem auto 1.9rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:18px;
+      overflow:hidden;
+      background:rgba(0,0,0,0.14);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+    }
+
+    .cutaway-header{ padding:1.2rem 1.15rem 0.3rem; }
+    .cutaway-header h2{ margin:0 0 0.65rem; max-width:none; }
+    .cutaway-header p{
+      max-width:none;
+      margin:0 0 1rem;
+      color:rgba(230,223,207,0.88);
+    }
+
+    .cutaway-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:1rem;
+      padding:0 1.15rem 1.2rem;
+    }
+
+    .cutaway-card{
+      margin:0;
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      overflow:hidden;
+      background:rgba(191,164,106,0.04);
+      box-shadow:0 8px 22px rgba(0,0,0,0.28);
+    }
+
+    .cutaway-media{
+      position:relative;
+      background:#d8cfbf;
+      border-bottom:1px solid rgba(191,164,106,0.14);
+      overflow:hidden;
+    }
+
+    .cutaway-media::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.08)),
+        radial-gradient(circle at 50% 8%, rgba(255,255,255,0.10), transparent 42%);
+      pointer-events:none;
+    }
+
+    .cutaway-media img{ display:block; width:100%; height:auto; }
+    .cutaway-body{ padding:0.95rem 1rem 1rem; }
+    .cutaway-kicker{
+      display:inline-block;
+      margin:0 0 0.35rem;
+      font-size:0.74rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:rgba(191,164,106,0.9);
+    }
+    .cutaway-body h3{
+      margin:0 0 0.45rem;
+      max-width:none;
+      font-size:1.04rem;
+      color:var(--text);
+    }
+    .cutaway-body p{
+      max-width:none;
+      margin:0;
+      color:rgba(230,223,207,0.86);
+      line-height:1.62;
+      font-size:0.98rem;
+    }
+    .cutaway-note{
+      margin:0 1.15rem 1.15rem;
+      padding:0.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.9);
+    }
+    .cutaway-note p{ max-width:none; margin:0; font-size:0.96rem; }
+
+    .cutaway-trigger{
+      display:block;
+      width:100%;
+      padding:0;
+      margin:0;
+      border:none;
+      background:none;
+      cursor:zoom-in;
+      text-align:inherit;
+      font:inherit;
+      color:inherit;
+    }
+    .cutaway-trigger:focus-visible{
+      outline:2px solid rgba(191,164,106,0.9);
+      outline-offset:-2px;
+    }
+    .cutaway-trigger .cutaway-media{
+      transition:transform 0.22s ease, filter 0.22s ease;
+    }
+    .cutaway-trigger:hover .cutaway-media{
+      transform:scale(1.01);
+      filter:brightness(1.03);
+    }
+    .cutaway-trigger .cutaway-media::before{
+      content:"Click to enlarge";
+      position:absolute;
+      right:0.9rem;
+      bottom:0.9rem;
+      z-index:3;
+      padding:0.38rem 0.62rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.35);
+      background:rgba(10,17,16,0.72);
+      color:rgba(230,223,207,0.92);
+      font-size:0.72rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      opacity:0;
+      transform:translateY(4px);
+      transition:opacity 0.18s ease, transform 0.18s ease;
+      pointer-events:none;
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+    }
+    .cutaway-trigger:hover .cutaway-media::before,
+    .cutaway-trigger:focus-visible .cutaway-media::before{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .lightbox{
+      position:fixed;
+      inset:0;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      height:100vh;
+      height:100dvh;
+      padding:max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+      background:rgba(3,8,8,0.92);
+      opacity:0;
+      visibility:hidden;
+      pointer-events:none;
+      transition:opacity 0.2s ease, visibility 0.2s ease;
+      overscroll-behavior:contain;
+    }
+    .lightbox.is-open{ opacity:1; visibility:visible; pointer-events:auto; }
+    .lightbox-dialog{
+      position:relative;
+      width:min(1400px, 100%);
+      max-width:100%;
+      max-height:calc(100dvh - 2rem);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .lightbox-img{
+      display:block;
+      max-width:100%;
+      max-height:calc(100vh - 2rem);
+      max-height:calc(100dvh - 2rem);
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.28);
+      box-shadow:0 30px 90px rgba(0,0,0,0.55);
+      background:#111;
+    }
+    .lightbox-close{
+      position:absolute;
+      top:0.35rem;
+      right:0.35rem;
+      z-index:2;
+      width:44px;
+      height:44px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:1.35rem;
+      line-height:1;
+      color:var(--text);
+      background:rgba(10,17,16,0.88);
+      border:1px solid rgba(191,164,106,0.32);
+      box-shadow:0 10px 24px rgba(0,0,0,0.35);
+    }
+    .lightbox-close:hover{ background:rgba(191,164,106,0.14); }
+    body.lightbox-open{ overflow:hidden; touch-action:none; }
+
+    @media (max-width:520px){
+      .cutaway-header{ padding:1rem 0.9rem 0.2rem; }
+      .cutaway-grid{ padding:0 0.9rem 1rem; }
+      .cutaway-body{ padding:0.9rem 0.9rem 0.95rem; }
+      .cutaway-note{ margin:0 0.9rem 1rem; }
+      .lightbox{ padding:max(0.75rem, env(safe-area-inset-top)) max(0.75rem, env(safe-area-inset-right)) max(0.75rem, env(safe-area-inset-bottom)) max(0.75rem, env(safe-area-inset-left)); }
+      .lightbox-dialog{ max-height:calc(100dvh - 1.5rem); }
+      .lightbox-img{
+        max-height:calc(100vh - 1.5rem);
+        max-height:calc(100dvh - 1.5rem);
+        border-radius:10px;
+      }
+      .cutaway-trigger .cutaway-media::before{
+        opacity:1;
+        transform:none;
+        font-size:0.68rem;
+        padding:0.34rem 0.56rem;
+      }
+    }
+
+    @media print{
+      .cutaway-trigger{ cursor:default; }
+      .cutaway-trigger .cutaway-media::before,
+      .lightbox{ display:none !important; }
+    }
   </style>
 
   <link rel="stylesheet" href="/assets/nav.css">
@@ -688,6 +912,70 @@
         High-confidence ship-level attribution typically requires the printed ship name, a Hamilton/New York itinerary, or imagery/plan views distinctive to the class.
       </p>
 
+
+      <section class="cutaway-section" aria-labelledby="queen-bermuda-cutaway-heading">
+        <div class="cutaway-header">
+          <h2 id="queen-bermuda-cutaway-heading">Cut-away Views &amp; General Arrangement</h2>
+          <p>
+            These two illustrations provide a visual guide to <em>Queen of Bermuda</em>’s internal arrangement and changing external profile.
+            Select either image to open a larger, viewport-aware view.
+          </p>
+        </div>
+
+        <div class="cutaway-grid">
+          <article class="cutaway-card">
+            <button
+              class="cutaway-trigger"
+              type="button"
+              data-full="/ships/qb-1.jpg"
+              data-alt="Cut-away or general arrangement illustration of SS Queen of Bermuda"
+              aria-label="Enlarge the first SS Queen of Bermuda cut-away image"
+            >
+              <span class="cutaway-media">
+                <img src="/ships/qb-1.jpg" alt="Cut-away or general arrangement illustration of SS Queen of Bermuda" loading="lazy" decoding="async" />
+              </span>
+            </button>
+            <div class="cutaway-body">
+              <span class="cutaway-kicker">General arrangement</span>
+              <h3>Passenger spaces and machinery layout</h3>
+              <p>
+                A sectional view can help identify the relationship between passenger decks, public rooms, service spaces,
+                machinery, and the ship’s purpose-built resort-liner arrangement.
+              </p>
+            </div>
+          </article>
+
+          <article class="cutaway-card">
+            <button
+              class="cutaway-trigger"
+              type="button"
+              data-full="/ships/qb-2.jpg"
+              data-alt="Second cut-away or profile illustration of SS Queen of Bermuda"
+              aria-label="Enlarge the second SS Queen of Bermuda cut-away image"
+            >
+              <span class="cutaway-media">
+                <img src="/ships/qb-2.jpg" alt="Second cut-away or profile illustration of SS Queen of Bermuda" loading="lazy" decoding="async" />
+              </span>
+            </button>
+            <div class="cutaway-body">
+              <span class="cutaway-kicker">Comparative view</span>
+              <h3>Configuration and dating context</h3>
+              <p>
+                A second drawing or profile view is especially useful for comparing prewar and postwar arrangements and for understanding
+                the major 1961–62 reconstruction that replaced the original three-funnel silhouette with a single funnel.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="cutaway-note">
+          <p>
+            <strong>Curatorial note:</strong> Published deck plans and sectional drawings may reflect a particular refit or service period.
+            Treat room names, capacities, and arrangements as era-specific unless the illustration itself clearly identifies its date.
+          </p>
+        </div>
+      </section>
+
       <h2>Service History (Summary)</h2>
       <p>
         <strong>1933–1939: Furness Bermuda Line flagship.</strong> Entering service in 1933, <em>Queen of Bermuda</em> operated the New York–Hamilton run in tandem
@@ -766,6 +1054,14 @@
     </footer>
   </main>
 
+
+  <div class="lightbox" id="image-lightbox" aria-hidden="true">
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Expanded sectional drawing">
+      <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close enlarged image">×</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
+  </div>
+
   <script>
   function askOceanLinerGPT() {
     const pageURL = window.location.href;
@@ -813,6 +1109,73 @@ Clearly distinguish between documented fact, scholarly consensus, and interpreta
   <script src="/assets/header.js" defer></script>
   <script src="/assets/nav.js" defer></script>
   <script src="/assets/related-liners.js" defer></script>
+
+<script>
+  (function () {
+    const triggers = document.querySelectorAll('.cutaway-trigger');
+    const lightbox = document.getElementById('image-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    if (!triggers.length || !lightbox || !lightboxImg || !lightboxClose) return;
+
+    let lastTrigger = null;
+    let savedScrollY = 0;
+
+    function isSafeImageSource(value) {
+      if (!value) return false;
+      try {
+        const url = new URL(value, window.location.href);
+        return url.protocol === 'http:' || url.protocol === 'https:';
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function openLightbox(src, alt, trigger) {
+      if (!isSafeImageSource(src)) return;
+
+      lastTrigger = trigger || null;
+      savedScrollY = window.scrollY;
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('lightbox-open');
+      lightboxClose.focus({ preventScroll: true });
+    }
+
+    function closeLightbox() {
+      if (!lightbox.classList.contains('is-open')) return;
+
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('lightbox-open');
+      lightboxImg.removeAttribute('src');
+      lightboxImg.alt = '';
+      window.scrollTo(0, savedScrollY);
+      if (lastTrigger) lastTrigger.focus({ preventScroll: true });
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        openLightbox(
+          trigger.getAttribute('data-full'),
+          trigger.getAttribute('data-alt'),
+          trigger
+        );
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+    });
+  })();
+</script>
 
 </body>
 </html>
