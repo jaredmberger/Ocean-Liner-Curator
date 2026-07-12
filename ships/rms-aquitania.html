@@ -598,6 +598,231 @@
     .gpt-modal-actions button:hover{
       background: rgba(191,164,106,0.1);
     }
+
+
+    /* Aquitania sectional drawings + viewport-aware lightbox */
+    .cutaway-section{
+      max-width:680px;
+      margin:1.35rem auto 1.9rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:18px;
+      overflow:hidden;
+      background:rgba(0,0,0,0.14);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+    }
+
+    .cutaway-header{ padding:1.2rem 1.15rem 0.3rem; }
+    .cutaway-header h2{ margin:0 0 0.65rem; max-width:none; }
+    .cutaway-header p{
+      max-width:none;
+      margin:0 0 1rem;
+      color:rgba(230,223,207,0.88);
+    }
+
+    .cutaway-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:1rem;
+      padding:0 1.15rem 1.2rem;
+    }
+
+    .cutaway-card{
+      margin:0;
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      overflow:hidden;
+      background:rgba(191,164,106,0.04);
+      box-shadow:0 8px 22px rgba(0,0,0,0.28);
+    }
+
+    .cutaway-media{
+      position:relative;
+      background:#d8cfbf;
+      border-bottom:1px solid rgba(191,164,106,0.14);
+      overflow:hidden;
+    }
+
+    .cutaway-media::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.08)),
+        radial-gradient(circle at 50% 8%, rgba(255,255,255,0.10), transparent 42%);
+      pointer-events:none;
+    }
+
+    .cutaway-media img{ display:block; width:100%; height:auto; }
+    .cutaway-body{ padding:0.95rem 1rem 1rem; }
+    .cutaway-kicker{
+      display:inline-block;
+      margin:0 0 0.35rem;
+      font-size:0.74rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:rgba(191,164,106,0.9);
+    }
+    .cutaway-body h3{
+      margin:0 0 0.45rem;
+      max-width:none;
+      font-size:1.04rem;
+      color:var(--text);
+    }
+    .cutaway-body p{
+      max-width:none;
+      margin:0;
+      color:rgba(230,223,207,0.86);
+      line-height:1.62;
+      font-size:0.98rem;
+    }
+    .cutaway-note{
+      margin:0 1.15rem 1.15rem;
+      padding:0.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.9);
+    }
+    .cutaway-note p{ max-width:none; margin:0; font-size:0.96rem; }
+
+    .cutaway-trigger{
+      display:block;
+      width:100%;
+      padding:0;
+      margin:0;
+      border:none;
+      background:none;
+      cursor:zoom-in;
+      text-align:inherit;
+      font:inherit;
+      color:inherit;
+    }
+    .cutaway-trigger:focus-visible{
+      outline:2px solid rgba(191,164,106,0.9);
+      outline-offset:-2px;
+    }
+    .cutaway-trigger .cutaway-media{
+      transition:transform 0.22s ease, filter 0.22s ease;
+    }
+    .cutaway-trigger:hover .cutaway-media{
+      transform:scale(1.01);
+      filter:brightness(1.03);
+    }
+    .cutaway-trigger .cutaway-media::before{
+      content:"Click to enlarge";
+      position:absolute;
+      right:0.9rem;
+      bottom:0.9rem;
+      z-index:3;
+      padding:0.38rem 0.62rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.35);
+      background:rgba(10,17,16,0.72);
+      color:rgba(230,223,207,0.92);
+      font-size:0.72rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      opacity:0;
+      transform:translateY(4px);
+      transition:opacity 0.18s ease, transform 0.18s ease;
+      pointer-events:none;
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+    }
+    .cutaway-trigger:hover .cutaway-media::before,
+    .cutaway-trigger:focus-visible .cutaway-media::before{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .lightbox{
+      position:fixed;
+      inset:0;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      height:100vh;
+      height:100dvh;
+      padding:max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+      background:rgba(3,8,8,0.92);
+      opacity:0;
+      visibility:hidden;
+      pointer-events:none;
+      transition:opacity 0.2s ease, visibility 0.2s ease;
+      overscroll-behavior:contain;
+    }
+    .lightbox.is-open{ opacity:1; visibility:visible; pointer-events:auto; }
+    .lightbox-dialog{
+      position:relative;
+      width:min(1400px, 100%);
+      max-width:100%;
+      max-height:calc(100dvh - 2rem);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .lightbox-img{
+      display:block;
+      max-width:100%;
+      max-height:calc(100vh - 2rem);
+      max-height:calc(100dvh - 2rem);
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.28);
+      box-shadow:0 30px 90px rgba(0,0,0,0.55);
+      background:#111;
+    }
+    .lightbox-close{
+      position:absolute;
+      top:0.35rem;
+      right:0.35rem;
+      z-index:2;
+      width:44px;
+      height:44px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:1.35rem;
+      line-height:1;
+      color:var(--text);
+      background:rgba(10,17,16,0.88);
+      border:1px solid rgba(191,164,106,0.32);
+      box-shadow:0 10px 24px rgba(0,0,0,0.35);
+    }
+    .lightbox-close:hover{ background:rgba(191,164,106,0.14); }
+    body.lightbox-open{ overflow:hidden; touch-action:none; }
+
+    @media (max-width:520px){
+      .cutaway-header{ padding:1rem 0.9rem 0.2rem; }
+      .cutaway-grid{ padding:0 0.9rem 1rem; }
+      .cutaway-body{ padding:0.9rem 0.9rem 0.95rem; }
+      .cutaway-note{ margin:0 0.9rem 1rem; }
+      .lightbox{ padding:max(0.75rem, env(safe-area-inset-top)) max(0.75rem, env(safe-area-inset-right)) max(0.75rem, env(safe-area-inset-bottom)) max(0.75rem, env(safe-area-inset-left)); }
+      .lightbox-dialog{ max-height:calc(100dvh - 1.5rem); }
+      .lightbox-img{
+        max-height:calc(100vh - 1.5rem);
+        max-height:calc(100dvh - 1.5rem);
+        border-radius:10px;
+      }
+      .cutaway-trigger .cutaway-media::before{
+        opacity:1;
+        transform:none;
+        font-size:0.68rem;
+        padding:0.34rem 0.56rem;
+      }
+    }
+
+    @media print{
+      .cutaway-trigger{ cursor:default; }
+      .cutaway-trigger .cutaway-media::before,
+      .lightbox{ display:none !important; }
+    }
+
   </style>
      <link rel="stylesheet" href="/assets/nav.css">
 </head>
@@ -711,6 +936,64 @@
       In practice, funnel arrangements also served passenger-deck ventilation and public impression; treat simple “four funnels = fastest” claims as shorthand, not proof.
     </p>
 
+
+    <section class="cutaway-section" aria-labelledby="aquitania-cutaway-heading">
+      <div class="cutaway-header">
+        <h2 id="aquitania-cutaway-heading">Sectional drawings: seeing Aquitania from the inside</h2>
+        <p>
+          These two cut-away views place Aquitania’s celebrated interiors within the ship’s complete architectural and mechanical system. They help show how public rooms, accommodation, circulation routes, service spaces, and machinery were layered through the hull.
+        </p>
+      </div>
+
+      <div class="cutaway-grid">
+        <figure class="cutaway-card">
+          <button
+            class="cutaway-trigger"
+            type="button"
+            data-full="/ships/aquitania-1.jpg"
+            data-alt="First sectional cut-away drawing of RMS Aquitania showing interior decks and passenger spaces"
+            aria-label="Open larger view of the first Aquitania sectional drawing">
+            <div class="cutaway-media">
+              <img src="/ships/aquitania-1.jpg" alt="First sectional cut-away drawing of RMS Aquitania showing interior decks and passenger spaces" loading="lazy" decoding="async">
+            </div>
+          </button>
+          <figcaption class="cutaway-body">
+            <span class="cutaway-kicker">Sectional view I</span>
+            <h3>Public rooms within the ship’s structure</h3>
+            <p>
+              This view connects Aquitania’s reputation as the “Ship Beautiful” with the practical arrangement surrounding her interiors. The public rooms were embedded within a working network of decks, passages, cabins, service areas, and structural spaces.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="cutaway-card">
+          <button
+            class="cutaway-trigger"
+            type="button"
+            data-full="/ships/aquitania-2.jpg"
+            data-alt="Second sectional cut-away drawing of RMS Aquitania showing passenger decks, public rooms, and machinery spaces"
+            aria-label="Open larger view of the second Aquitania sectional drawing">
+            <div class="cutaway-media">
+              <img src="/ships/aquitania-2.jpg" alt="Second sectional cut-away drawing of RMS Aquitania showing passenger decks, public rooms, and machinery spaces" loading="lazy" decoding="async">
+            </div>
+          </button>
+          <figcaption class="cutaway-body">
+            <span class="cutaway-kicker">Sectional view II</span>
+            <h3>A complete liner arranged in layers</h3>
+            <p>
+              The second drawing emphasizes the scale of Aquitania’s internal organization. Passenger accommodation and ceremonial rooms existed alongside working zones and machinery, all coordinated within the narrow vertical and horizontal limits of the hull.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="cutaway-note">
+        <p>
+          <strong>Why this matters:</strong> Interior photographs document the appearance of individual spaces, while sectional drawings reveal their relationships. Used together, they make Aquitania easier to understand as a complete ship rather than simply a collection of famous rooms.
+        </p>
+      </div>
+    </section>
+
     <h2>Service History (Summary)</h2>
     <p>
       After entering service in 1914, <em>Aquitania</em> had only a brief peacetime start before World War I altered her trajectory.
@@ -785,6 +1068,13 @@
   </footer>
 </main>
 
+<div class="lightbox" id="image-lightbox" aria-hidden="true">
+  <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Expanded sectional drawing">
+    <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close enlarged image">×</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+</div>
+
 <script>
 function askOceanLinerGPT() {
   const pageURL = window.location.href;
@@ -832,5 +1122,73 @@ document.getElementById("gpt-cancel").addEventListener("click", function() {
    <script src="/assets/header.js" defer></script>
        <script src="/assets/nav.js" defer></script>
 <script src="/assets/related-liners.js" defer></script>
+
+<script>
+  (function () {
+    const triggers = document.querySelectorAll('.cutaway-trigger');
+    const lightbox = document.getElementById('image-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    if (!triggers.length || !lightbox || !lightboxImg || !lightboxClose) return;
+
+    let lastTrigger = null;
+    let savedScrollY = 0;
+
+    function isSafeImageSource(value) {
+      if (!value) return false;
+      try {
+        const url = new URL(value, window.location.href);
+        return url.protocol === 'http:' || url.protocol === 'https:';
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function openLightbox(src, alt, trigger) {
+      if (!isSafeImageSource(src)) return;
+
+      lastTrigger = trigger || null;
+      savedScrollY = window.scrollY;
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('lightbox-open');
+      lightboxClose.focus({ preventScroll: true });
+    }
+
+    function closeLightbox() {
+      if (!lightbox.classList.contains('is-open')) return;
+
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('lightbox-open');
+      lightboxImg.removeAttribute('src');
+      lightboxImg.alt = '';
+      window.scrollTo(0, savedScrollY);
+      if (lastTrigger) lastTrigger.focus({ preventScroll: true });
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        openLightbox(
+          trigger.getAttribute('data-full'),
+          trigger.getAttribute('data-alt'),
+          trigger
+        );
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+    });
+  })();
+</script>
+
 </body>
 </html>
