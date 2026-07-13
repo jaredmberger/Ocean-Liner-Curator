@@ -1227,9 +1227,9 @@ Clearly distinguish between documented fact, scholarly consensus, and interpreta
     triggers.forEach((trigger) => {
       trigger.addEventListener('click', () => {
         openLightbox(
-          trigger.getAttribute('data-full'),
-          trigger.getAttribute('data-alt'),
-          trigger
+  trigger.getAttribute('data-lightbox-src'),
+  trigger.getAttribute('data-lightbox-alt'),
+  trigger
         );
       });
     });
