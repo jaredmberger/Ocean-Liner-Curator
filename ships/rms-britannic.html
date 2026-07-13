@@ -567,6 +567,317 @@
     .gpt-modal-actions button:hover{
       background: rgba(191,164,106,0.1);
     }
+  
+
+    .cutaway-section{
+      max-width:860px;
+      margin:1.15rem auto 1.9rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:18px;
+      overflow:hidden;
+      background:rgba(0,0,0,0.14);
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+      box-shadow:0 10px 24px rgba(0,0,0,0.32);
+    }
+
+    .cutaway-header{
+      padding:1.2rem 1.15rem 0.3rem;
+    }
+
+    .cutaway-header h2{
+      margin:0 0 0.65rem 0;
+      max-width:none;
+    }
+
+    .cutaway-header h2::after{
+      width:88px;
+    }
+
+    .cutaway-header p{
+      max-width:none;
+      margin:0 0 1rem 0;
+      color:rgba(230,223,207,0.88);
+    }
+
+    .cutaway-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:1rem;
+      padding:0 1.15rem 1.2rem;
+    }
+
+    .cutaway-card{
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:16px;
+      overflow:hidden;
+      background:rgba(191,164,106,0.04);
+      box-shadow:0 8px 22px rgba(0,0,0,0.28);
+    }
+
+    .cutaway-media{
+      position:relative;
+      background:#d8cfbf;
+      border-bottom:1px solid rgba(191,164,106,0.14);
+    }
+
+    .cutaway-media::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.08)),
+        radial-gradient(circle at 50% 8%, rgba(255,255,255,0.10), transparent 42%);
+      pointer-events:none;
+    }
+
+    .cutaway-media img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+
+    .cutaway-body{
+      padding:0.95rem 1rem 1rem;
+    }
+
+    .cutaway-kicker{
+      display:inline-block;
+      margin:0 0 0.35rem 0;
+      font-size:0.74rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:rgba(191,164,106,0.9);
+    }
+
+    .cutaway-body h3{
+      margin:0 0 0.45rem 0;
+      max-width:none;
+      font-size:1.04rem;
+      color:var(--text);
+    }
+
+    .cutaway-body p{
+      max-width:none;
+      margin:0;
+      color:rgba(230,223,207,0.86);
+      line-height:1.62;
+      font-size:0.98rem;
+    }
+
+    .cutaway-note{
+      margin:1rem 1.15rem 1.15rem;
+      padding:0.95rem 1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.9);
+    }
+
+    .cutaway-note p{
+      max-width:none;
+      margin:0;
+      font-size:0.96rem;
+    }
+
+    @media (max-width:520px){
+      .cutaway-header{
+        padding:1rem 0.9rem 0.2rem;
+      }
+
+      .cutaway-grid{
+        padding:0 0.9rem 1rem;
+      }
+
+      .cutaway-body{
+        padding:0.9rem 0.9rem 0.95rem;
+      }
+
+      .cutaway-note{
+        margin:0.95rem 0.9rem 1rem;
+      }
+    }
+    
+        .cutaway-trigger{
+      display:block;
+      width:100%;
+      padding:0;
+      margin:0;
+      border:none;
+      background:none;
+      cursor:zoom-in;
+      text-align:inherit;
+      font:inherit;
+      color:inherit;
+    }
+
+    .cutaway-trigger:focus-visible{
+      outline:2px solid rgba(191,164,106,0.9);
+      outline-offset:-2px;
+    }
+
+    .cutaway-trigger .cutaway-media{
+      transition:transform 0.22s ease, filter 0.22s ease;
+    }
+
+    .cutaway-trigger:hover .cutaway-media{
+      transform:scale(1.01);
+      filter:brightness(1.03);
+    }
+
+    .cutaway-trigger .cutaway-media::before{
+      content:"Click to enlarge";
+      position:absolute;
+      right:0.9rem;
+      bottom:0.9rem;
+      z-index:3;
+      padding:0.38rem 0.62rem;
+      border-radius:999px;
+      border:1px solid rgba(191,164,106,0.35);
+      background:rgba(10,17,16,0.72);
+      color:rgba(230,223,207,0.92);
+      font-size:0.72rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      opacity:0;
+      transform:translateY(4px);
+      transition:opacity 0.18s ease, transform 0.18s ease;
+      pointer-events:none;
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+    }
+
+    .cutaway-trigger:hover .cutaway-media::before,
+    .cutaway-trigger:focus-visible .cutaway-media::before{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .lightbox{
+      position:fixed;
+      inset:0;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:1rem;
+      background:rgba(3,8,8,0.92);
+      opacity:0;
+      visibility:hidden;
+      pointer-events:none;
+      transition:opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    .lightbox.is-open{
+      opacity:1;
+      visibility:visible;
+      pointer-events:auto;
+    }
+
+    .lightbox-dialog{
+      position:relative;
+      width:min(1400px, 100%);
+      max-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .lightbox-img{
+      display:block;
+      max-width:100%;
+      max-height:90vh;
+      width:auto;
+      height:auto;
+      border-radius:14px;
+      border:1px solid rgba(191,164,106,0.28);
+      box-shadow:0 30px 90px rgba(0,0,0,0.55);
+      background:#111;
+    }
+
+    .lightbox-close{
+      position:absolute;
+      top:-0.4rem;
+      right:-0.4rem;
+      width:44px;
+      height:44px;
+      border:none;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:1.2rem;
+      line-height:1;
+      color:var(--text);
+      background:rgba(10,17,16,0.88);
+      border:1px solid rgba(191,164,106,0.32);
+      box-shadow:0 10px 24px rgba(0,0,0,0.35);
+    }
+
+    .lightbox-close:hover{
+      background:rgba(191,164,106,0.14);
+    }
+
+    body.lightbox-open{
+      overflow:hidden;
+    }
+
+    @media (max-width:520px){
+      .lightbox{
+        padding:0.75rem;
+      }
+
+      .lightbox-close{
+        top:0.35rem;
+        right:0.35rem;
+      }
+
+      .cutaway-trigger .cutaway-media::before{
+        opacity:1;
+        transform:none;
+        font-size:0.68rem;
+        padding:0.34rem 0.56rem;
+      }
+    }
+    
+    .index-card{
+  position:relative;
+  display:block;
+  border:1px solid rgba(191,164,106,0.22);
+  border-radius:14px;
+  padding:0.95rem 1rem 2.15rem;
+  background:rgba(0,0,0,0.14);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  transition:transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  overflow:hidden;
+}
+
+.index-card::after{
+  content:"»";
+  position:absolute;
+  right:0.95rem;
+  bottom:0.72rem;
+  font-family:"Libre Baskerville", serif;
+  font-size:1.15rem;
+  line-height:1;
+  color:rgba(191,164,106,0.82);
+  opacity:0.88;
+  transition:
+    transform 0.18s ease,
+    color 0.18s ease,
+    opacity 0.18s ease;
+}
+
+.index-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(191,164,106,0.42);
+  background:rgba(191,164,106,0.08);
+}
+
+.index-card:hover::after{
+  transform:translateX(3px);
+  color:rgba(209,187,134,0.98);
+  opacity:1;
+}
   </style>
   
   <link rel="stylesheet" href="/assets/nav.css">
@@ -695,6 +1006,72 @@
       passenger-ship ephemera (menus across seasons, souvenir booklets across years, baggage labels from multiple routes, etc.) does not exist at the same scale.
       When items <em>do</em> appear as “RMS <em>Britannic</em>,” the burden of evidence rises.
     </p>
+
+
+    <section class="cutaway-section" aria-labelledby="cutaway-title">
+      <div class="cutaway-header">
+        <h2 id="cutaway-title">Cut-away Views &amp; General Arrangement</h2>
+        <p>
+          These two illustrations provide a visual guide to RMS/HMHS <em>Britannic</em>’s internal arrangement and the
+          relationship between her passenger spaces, hospital-ship conversion, machinery, and revised safety features.
+          Select either image to open a larger, viewport-aware view.
+        </p>
+      </div>
+
+      <div class="cutaway-grid">
+        <article class="cutaway-card">
+          <button class="cutaway-trigger" type="button"
+            data-lightbox-src="/ships/britannic-1.jpg"
+            data-lightbox-alt="First cut-away or general arrangement illustration of RMS Britannic"
+            aria-label="Enlarge the first RMS Britannic cut-away image">
+            <span class="cutaway-media">
+              <img src="/ships/britannic-1.jpg"
+                alt="First cut-away or general arrangement illustration of RMS Britannic"
+                loading="lazy" decoding="async" />
+            </span>
+          </button>
+          <div class="cutaway-body">
+            <span class="cutaway-kicker">General arrangement · Part 1</span>
+            <h3>Forward section</h3>
+            <p>
+              The first view shows the forward portion of the ship’s arrangement, helping relate passenger decks,
+              public spaces, service areas, hull subdivision, and the structural changes introduced after the loss of
+              <em>Titanic</em>.
+            </p>
+          </div>
+        </article>
+
+        <article class="cutaway-card">
+          <button class="cutaway-trigger" type="button"
+            data-lightbox-src="/ships/britannic-2.jpg"
+            data-lightbox-alt="Second cut-away or general arrangement illustration of RMS Britannic"
+            aria-label="Enlarge the second RMS Britannic cut-away image">
+            <span class="cutaway-media">
+              <img src="/ships/britannic-2.jpg"
+                alt="Second cut-away or general arrangement illustration of RMS Britannic"
+                loading="lazy" decoding="async" />
+            </span>
+          </button>
+          <div class="cutaway-body">
+            <span class="cutaway-kicker">General arrangement · Part 2</span>
+            <h3>Aft section</h3>
+            <p>
+              The second view continues through the after portion of the ship, completing the visual record of cabins,
+              service spaces, machinery, lifeboat arrangements, and the ship’s broader internal organization.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="cutaway-note">
+        <p>
+          <strong>Curatorial note:</strong> Plans and sectional drawings may represent Britannic as designed for
+          passenger service, as completed, or after conversion to a hospital ship. Treat room names, fittings, and
+          arrangements as configuration-specific unless the illustration clearly identifies its date and purpose.
+        </p>
+      </div>
+    </section>
+
 
     <h2>Service History (Summary)</h2>
     <p>
@@ -826,6 +1203,70 @@ Clearly distinguish between documented fact, scholarly consensus, and interpreta
 
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+</script>
+
+<div class="lightbox" id="image-lightbox" aria-hidden="true">
+  <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Expanded image view">
+    <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close enlarged image">×</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+</div>
+
+<script>
+  (function () {
+    const triggers = document.querySelectorAll('.cutaway-trigger');
+    const lightbox = document.getElementById('image-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    if (!triggers.length || !lightbox || !lightboxImg || !lightboxClose) return;
+
+    let lastTrigger = null;
+
+    function openLightbox(src, alt, trigger) {
+      if (!src) return;
+      lastTrigger = trigger || null;
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('lightbox-open');
+      lightboxClose.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('lightbox-open');
+      lightboxImg.src = '';
+      lightboxImg.alt = '';
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        openLightbox(
+          trigger.getAttribute('data-lightbox-src'),
+          trigger.getAttribute('data-lightbox-alt'),
+          trigger
+        );
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+        closeLightbox();
+      }
+    });
+  })();
 </script>
 
 <script src="/assets/header.js" defer></script>
