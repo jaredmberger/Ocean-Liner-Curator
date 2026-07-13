@@ -270,6 +270,7 @@
 "/ships/ss-mayflower.html",
 "/ships/ss-napoleon-iii.html",
 "/ships/ss-friedrich-der-grosse.html",
+"/ships/ss-barbarossa.html",
 "/ships/ss-st-louis.html"
 ];
 
