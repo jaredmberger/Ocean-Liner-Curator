@@ -276,6 +276,7 @@
 "/ships/ss-prinzess-irene.html",
 "/ships/ss-pretoria.html",
 "/ships/ss-moltke.html",
+"/ships/ss-graf-waldersee.html",
 "/ships/ss-st-louis.html"
 ];
 
