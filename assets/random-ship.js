@@ -274,6 +274,8 @@
 "/ships/ss-konigin-luise.html",
 "/ships/ss-grosser-kurfurst.html",
 "/ships/ss-prinzess-irene.html",
+"/ships/ss-pretoria.html",
+"/ships/ss-moltke.html",
 "/ships/ss-st-louis.html"
 ];
 
