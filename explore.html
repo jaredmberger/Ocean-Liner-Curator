@@ -2026,7 +2026,7 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
 
           <div class="hero-actions">
   <a class="btn btn-primary" href="/titanic">Explore Titanic</a>
-  <a class="btn btn-secondary" id="random-ship-button" href="/ships/ships" aria-label="Discover a randomly selected ocean liner guide">✦ Discover a Random Ship</a>
+  <a class="btn btn-secondary" id="random-ship-button" href="/ships/ships" aria-label="Discover a randomly selected ocean liner guide">⚓ Discover a Random Ship</a>
   <a class="btn btn-secondary" href="/ships/ships">Explore the Ship Archive</a>
   <a class="btn btn-secondary" href="/collections">Browse Research Collections</a>
   <a class="btn btn-secondary" href="/">★ Homepage</a>
@@ -2450,85 +2450,86 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
     <script src="/assets/header.js" defer></script>
        <script src="/assets/nav.js" defer></script>
        <script src="/assets/entry-links.js" defer></script>
+  <script src="/assets/random-ship.js"></script>
 
-       <script>
-       (() => {
-         "use strict";
+  <script>
+    (() => {
+      "use strict";
 
-         const button = document.getElementById("random-ship-button");
-         if (!button) return;
+      const button = document.getElementById("random-ship-button");
+      if (!button) return;
 
-         const archiveUrl = "/ships/ships";
-         const excludedPaths = new Set([
-           "/ships/ships",
-           "/ships/ships/",
-           "/ships/",
-           "/ships"
-         ]);
+      const archiveUrl = "/ships/ships";
 
-         const normalizePath = (value) => {
-           try {
-             const url = new URL(value, window.location.origin);
-             return url.pathname.replace(/\/+/g, "/");
-           } catch {
-             return "";
-           }
-         };
+      const chooseRandomShip = () => {
+        const ships = Array.isArray(window.OLC_SHIP_URLS)
+          ? window.OLC_SHIP_URLS
+          : [];
 
-         const prepareRandomShip = async () => {
-           try {
-             const response = await fetch(archiveUrl, {
-               credentials: "same-origin",
-               cache: "no-store"
-             });
+        const eligibleShips = ships
+          .map((item) => {
+            if (typeof item === "string") {
+              return { href: item, label: "" };
+            }
 
-             if (!response.ok) {
-               throw new Error(`Ship archive request failed: ${response.status}`);
-             }
+            if (item && typeof item === "object") {
+              return {
+                href: item.href || item.url || item.path || "",
+                label: item.label || item.title || item.name || ""
+              };
+            }
 
-             const html = await response.text();
-             const documentCopy = new DOMParser().parseFromString(html, "text/html");
+            return null;
+          })
+          .filter((item) => item && item.href);
 
-             const candidates = [...documentCopy.querySelectorAll('a[href]')]
-               .map((link) => ({
-                 href: normalizePath(link.getAttribute("href")),
-                 title: link.textContent.replace(/\s+/g, " ").trim()
-               }))
-               .filter(({ href }) =>
-                 href &&
-                 href.startsWith("/ships/") &&
-                 !excludedPaths.has(href) &&
-                 !href.includes("#")
-               );
+        if (!eligibleShips.length) {
+          button.href = archiveUrl;
+          button.title = "Open the Ship Archive";
+          return;
+        }
 
-             const uniqueShips = [...new Map(
-               candidates.map((ship) => [ship.href, ship])
-             ).values()];
+        const selected =
+          eligibleShips[Math.floor(Math.random() * eligibleShips.length)];
 
-             if (!uniqueShips.length) {
-               throw new Error("No ship-guide links were found in the archive.");
-             }
+        button.href = selected.href;
+        button.dataset.randomShipReady = "true";
 
-             const selected = uniqueShips[
-               Math.floor(Math.random() * uniqueShips.length)
-             ];
+        if (selected.label) {
+          const plainLabel = String(selected.label)
+            .replace(/<[^>]*>/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
 
-             button.href = selected.href;
-             button.dataset.randomShipReady = "true";
+          if (plainLabel && plainLabel.length <= 48) {
+            button.title = `Random selection: ${plainLabel}`;
+          }
+        }
+      };
 
-             if (selected.title && selected.title.length <= 48) {
-               button.title = `Random selection: ${selected.title}`;
-             }
-           } catch (error) {
-             console.warn("Random ship selection was unavailable; using the ship archive instead.", error);
-             button.href = archiveUrl;
-             button.title = "Open the Ship Archive";
-           }
-         };
+      if (Array.isArray(window.OLC_SHIP_URLS) && window.OLC_SHIP_URLS.length) {
+        chooseRandomShip();
+      } else {
+        const randomShipScript = document.querySelector(
+          'script[src*="/assets/random-ship.js"]'
+        );
 
-         prepareRandomShip();
-       })();
-       </script>
+        if (randomShipScript) {
+          randomShipScript.addEventListener("load", chooseRandomShip, {
+            once: true
+          });
+          randomShipScript.addEventListener(
+            "error",
+            () => {
+              button.href = archiveUrl;
+              button.title = "Open the Ship Archive";
+            },
+            { once: true }
+          );
+        }
+      }
+    })();
+  </script>
        
 </body>
 </html>
