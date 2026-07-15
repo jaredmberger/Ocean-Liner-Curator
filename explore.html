@@ -2026,13 +2026,14 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
 
           <div class="hero-actions">
   <a class="btn btn-primary" href="/titanic">Explore Titanic</a>
+  <a class="btn btn-secondary" id="random-ship-button" href="/ships/ships" aria-label="Discover a randomly selected ocean liner guide">✦ Discover a Random Ship</a>
   <a class="btn btn-secondary" href="/ships/ships">Explore the Ship Archive</a>
   <a class="btn btn-secondary" href="/collections">Browse Research Collections</a>
   <a class="btn btn-secondary" href="/">★ Homepage</a>
 </div>
 
           <p class="hero-note">
-  Use this page as a guided route into the archive, or return to the homepage for the full Ocean Liner Curator overview.
+  Whether you’re discovering ocean liners for the first time or researching a specific ship, this page is designed to help you find your way through one of the web’s largest evidence-first collections devoted to transatlantic passenger liners.
 </p>
 
 <div class="hero-special-feature">
@@ -2449,6 +2450,85 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
     <script src="/assets/header.js" defer></script>
        <script src="/assets/nav.js" defer></script>
        <script src="/assets/entry-links.js" defer></script>
+
+       <script>
+       (() => {
+         "use strict";
+
+         const button = document.getElementById("random-ship-button");
+         if (!button) return;
+
+         const archiveUrl = "/ships/ships";
+         const excludedPaths = new Set([
+           "/ships/ships",
+           "/ships/ships/",
+           "/ships/",
+           "/ships"
+         ]);
+
+         const normalizePath = (value) => {
+           try {
+             const url = new URL(value, window.location.origin);
+             return url.pathname.replace(/\/+/g, "/");
+           } catch {
+             return "";
+           }
+         };
+
+         const prepareRandomShip = async () => {
+           try {
+             const response = await fetch(archiveUrl, {
+               credentials: "same-origin",
+               cache: "no-store"
+             });
+
+             if (!response.ok) {
+               throw new Error(`Ship archive request failed: ${response.status}`);
+             }
+
+             const html = await response.text();
+             const documentCopy = new DOMParser().parseFromString(html, "text/html");
+
+             const candidates = [...documentCopy.querySelectorAll('a[href]')]
+               .map((link) => ({
+                 href: normalizePath(link.getAttribute("href")),
+                 title: link.textContent.replace(/\s+/g, " ").trim()
+               }))
+               .filter(({ href }) =>
+                 href &&
+                 href.startsWith("/ships/") &&
+                 !excludedPaths.has(href) &&
+                 !href.includes("#")
+               );
+
+             const uniqueShips = [...new Map(
+               candidates.map((ship) => [ship.href, ship])
+             ).values()];
+
+             if (!uniqueShips.length) {
+               throw new Error("No ship-guide links were found in the archive.");
+             }
+
+             const selected = uniqueShips[
+               Math.floor(Math.random() * uniqueShips.length)
+             ];
+
+             button.href = selected.href;
+             button.dataset.randomShipReady = "true";
+
+             if (selected.title && selected.title.length <= 48) {
+               button.title = `Random selection: ${selected.title}`;
+             }
+           } catch (error) {
+             console.warn("Random ship selection was unavailable; using the ship archive instead.", error);
+             button.href = archiveUrl;
+             button.title = "Open the Ship Archive";
+           }
+         };
+
+         prepareRandomShip();
+       })();
+       </script>
        
 </body>
 </html>
