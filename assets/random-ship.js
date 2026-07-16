@@ -277,6 +277,9 @@
 "/ships/ss-pretoria.html",
 "/ships/ss-moltke.html",
 "/ships/ss-graf-waldersee.html",
+"/ships/ss-patricia.html",
+"/ships/ss-briton.html",
+"/ships/ss-saxon.html",
 "/ships/ss-st-louis.html"
 ];
 
