@@ -280,6 +280,9 @@
 "/ships/ss-patricia.html",
 "/ships/ss-briton.html",
 "/ships/ss-saxon.html",
+"/ships/rms-walmer-castle.html",
+"/ships/ss-armadale-castle.html",
+"/ships/rms-kenilworth-castle.html",
 "/ships/ss-st-louis.html"
 ];
 
