@@ -287,6 +287,7 @@
 "/ships/ss-bulgaria.html",
 "/ships/ss-batavia.html",
 "/ships/ss-belgravia.html",
+"/ships/ss-belgia.html",
 "/ships/ss-st-louis.html"
 ];
 
