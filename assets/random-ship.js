@@ -288,6 +288,11 @@
 "/ships/ss-batavia.html",
 "/ships/ss-belgravia.html",
 "/ships/ss-belgia.html",
+"/ships/ss-rijndam-1901.html",
+"/ships/ss-noordam.html",
+"/ships/ss-new-england.html",
+"/ships/ss-commonwealth.html",
+"/ships/ss-winifredian.html",
 "/ships/ss-st-louis.html"
 ];
 
