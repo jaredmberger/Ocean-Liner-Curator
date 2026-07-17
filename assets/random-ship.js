@@ -283,6 +283,10 @@
 "/ships/rms-walmer-castle.html",
 "/ships/ss-armadale-castle.html",
 "/ships/rms-kenilworth-castle.html",
+"/ships/ss-brasilia.html",
+"/ships/ss-bulgaria.html",
+"/ships/ss-batavia.html",
+"/ships/ss-belgravia.html",
 "/ships/ss-st-louis.html"
 ];
 
