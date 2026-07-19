@@ -1,37 +1,28 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<style>
-  html { background:#0a1110; }
-</style>
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#0a1110">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="#0a1110" name="theme-color"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>The History of Ocean Liners — Ocean Liner Curator | OceanLiners.net</title>
-<meta name="description" content="A curator-minded history of ocean liners: from early steam packets and transatlantic mail contracts to immigration, luxury, national prestige, wartime service, the jet age, and public memory." />
-
-<link rel="canonical" href="https://www.oceanliners.net/history-of-ocean-liners" />
-<meta name="robots" content="index,follow" />
-
-<meta property="og:title" content="The History of Ocean Liners — Ocean Liner Curator" />
-<meta property="og:description" content="From early steamship routes to the great liners of the Atlantic, wartime service, jet-age decline, and maritime memory: an evidence-first introduction to ocean liner history." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.oceanliners.net/history-of-ocean-liners" />
-<meta property="og:site_name" content="OceanLiners.net" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="The History of Ocean Liners — Ocean Liner Curator" />
-<meta name="twitter:description" content="A curator-minded introduction to ocean liner history, from steamship schedules to migration, prestige, war service, and the jet age." />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/assets/nav.css">
+<meta content="A curator-minded history of ocean liners: from early steam packets and transatlantic mail contracts to immigration, luxury, national prestige, wartime service, the jet age, and public memory." name="description">
+<link href="https://www.oceanliners.net/history-of-ocean-liners" rel="canonical"/>
+<meta content="index,follow" name="robots"/>
+<meta content="The History of Ocean Liners — Ocean Liner Curator" property="og:title"/>
+<meta content="From early steamship routes to the great liners of the Atlantic, wartime service, jet-age decline, and maritime memory: an evidence-first introduction to ocean liner history." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.oceanliners.net/history-of-ocean-liners" property="og:url"/>
+<meta content="OceanLiners.net" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="The History of Ocean Liners — Ocean Liner Curator" name="twitter:title"/>
+<meta content="A curator-minded introduction to ocean liner history, from steamship schedules to migration, prestige, war service, and the jet age." name="twitter:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Spectral:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 
 <script type="application/ld+json">
 {
@@ -67,7 +58,6 @@
   ]
 }
 </script>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,505 +86,406 @@
 }
 </script>
 
+</meta></meta></meta>
 <style>
+  *, *::before, *::after { box-sizing: border-box; }
+
   :root{
+    --measure: 46rem;
     --bg:#0a1110;
-    --bg2:#101916;
-    --panel:#111c18;
-    --panel2:#15231e;
-    --ink:#e6dfcf;
+    --panel:rgba(15,27,25,0.82);
+    --text:#e6dfcf;
     --muted:#b6ae9c;
     --soft:#d8cfbc;
     --accent:#bfa46a;
     --accent2:#d8c48c;
-    --line:rgba(191,164,106,.32);
-    --line2:rgba(230,223,207,.12);
-    --shadow:0 24px 70px rgba(0,0,0,.38);
-    --radius:22px;
-    --max:1180px;
+    --border:rgba(191,164,106,0.28);
+    --line2:rgba(230,223,207,0.12);
+    --shadow:rgba(0,0,0,0.60);
+    --font-serif:"Spectral", Georgia, "Times New Roman", serif;
+    --font-display:"Libre Baskerville", Georgia, serif;
   }
 
-  *{ box-sizing:border-box; }
+  html{
+    text-rendering:optimizeLegibility;
+    background:var(--bg);
+  }
 
   body{
     margin:0;
+    min-height:100vh;
+    padding:0 0 2.25rem;
+    color:var(--text);
+    font-family:var(--font-serif);
+    font-size:17px;
+    line-height:1.58;
+    letter-spacing:-0.01em;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
     background:
-      radial-gradient(circle at 18% 0%, rgba(191,164,106,.12), transparent 34rem),
-      radial-gradient(circle at 85% 10%, rgba(94,125,111,.14), transparent 32rem),
-      linear-gradient(180deg, #07100e 0%, var(--bg) 42%, #07100e 100%);
-    color:var(--ink);
-    font-family:"Spectral", Georgia, serif;
-    line-height:1.65;
-  }
-
-  body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    opacity:.045;
-    background-image:
-      linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
-    background-size:42px 42px;
-    mask-image:linear-gradient(to bottom, rgba(0,0,0,.85), transparent 82%);
+      radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+      radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
   }
 
   a{
-    color:var(--accent2);
+    color:rgba(209,187,134,0.96);
     text-decoration:none;
+    border-bottom:1px solid rgba(191,164,106,0.42);
+    padding-bottom:1px;
   }
 
-  a:hover{ text-decoration:underline; }
-
-  .site-shell{
-    width:min(var(--max), calc(100% - 34px));
-    margin:0 auto;
+  a:hover{
+    border-bottom-color:rgba(191,164,106,0.82);
   }
 
-  main{
-    padding:38px 0 70px;
+  .container{
+    width:min(820px, calc(100% - 1.5rem));
+    margin:1.1rem auto 0;
+    padding:3.5rem 2.75rem;
+    position:relative;
+    overflow:hidden;
+    isolation:isolate;
+    text-align:center;
+    border:1px solid var(--border);
+    border-radius:16px;
+    background-color:var(--panel);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+    background-size:92px 92px;
+    background-position:center 38%;
+    box-shadow:
+      0 26px 70px var(--shadow),
+      0 0 0 1px rgba(191,164,106,0.08),
+      0 0 80px rgba(191,164,106,0.06);
   }
 
-.hero{
-  position:relative !important;
-  overflow:hidden !important;
-  border:1px solid var(--line) !important;
-  border-radius:30px !important;
+  .container::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-2;
+    pointer-events:none;
+    background:
+      radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, transparent 55%),
+      radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, transparent 55%);
+  }
 
-  background:
-  linear-gradient(135deg, rgba(6,10,10,.76), rgba(8,14,13,.62)),
-  linear-gradient(90deg, rgba(10,17,16,.86), rgba(10,17,16,.46), rgba(10,17,16,.80)),
-  url("/history-of-ocean-liners.PNG");
+  .container::after{
+    content:"";
+    position:absolute;
+    inset:-20%;
+    z-index:-1;
+    pointer-events:none;
+    opacity:.95;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+      radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+      radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+      radial-gradient(circle at center, rgba(191,164,106,0.095) 0%, rgba(191,164,106,0.075) 20%, rgba(191,164,106,0.045) 26%, transparent 34%),
+      linear-gradient(45deg, transparent 47.5%, rgba(191,164,106,0.065) 49%, rgba(191,164,106,0.065) 51%, transparent 52.5%),
+      linear-gradient(-45deg, transparent 47.5%, rgba(191,164,106,0.065) 49%, rgba(191,164,106,0.065) 51%, transparent 52.5%);
+  }
 
-  background-size:cover;
-  background-position:center center;
-  background-repeat:no-repeat;
+  .logo-mount{
+    width:108px;
+    height:108px;
+    margin:0 auto .95rem;
+    padding:10px;
+    position:relative;
+    border:1px solid rgba(191,164,106,0.55);
+    border-radius:16px;
+    background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10));
+    box-shadow:0 14px 34px rgba(0,0,0,0.42);
+  }
 
-  box-shadow:var(--shadow);
-  padding:clamp(28px, 5vw, 62px);
-  isolation:isolate;
-}
+  .logo-mount::after{
+    content:"";
+    position:absolute;
+    inset:7px;
+    pointer-events:none;
+    border:1px solid rgba(191,164,106,0.22);
+    border-radius:12px;
+  }
 
-  .hero::before{
-  content:"" !important;
-  position:absolute !important;
-  inset:0 !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255,255,255,.03),
-      rgba(0,0,0,.18)
-    ),
-    repeating-linear-gradient(
-      135deg,
-      rgba(255,255,255,.03) 0 1px,
-      transparent 1px 14px
-    );
-
-  opacity:.5;
-  z-index:-2;
-}
-
- .hero::after{
-  content:"★" !important;
-  position:absolute !important;
-  top:1.35rem !important;
-  right:1.7rem !important;
-  color:rgba(191,164,106,.18);
-  font-size:7rem;
-  line-height:1;
-  pointer-events:none;
-}
+  .logo{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:contain;
+    border-radius:12px;
+    background:rgba(230,223,207,0.06);
+  }
 
   .crumbs{
     display:flex;
     flex-wrap:wrap;
-    gap:8px;
-    align-items:center;
+    justify-content:center;
+    gap:.45rem;
+    margin:0 auto 1.25rem;
     color:var(--muted);
-    font-size:.92rem;
-    letter-spacing:.03em;
-    margin-bottom:22px;
+    font-size:.88rem;
   }
 
-  .crumbs span{
-    color:rgba(230,223,207,.36);
+  .crumbs a{
+    border-bottom-color:transparent;
   }
 
   .badge{
     display:inline-flex;
     align-items:center;
-    gap:10px;
-    width:max-content;
-    max-width:100%;
-    border:1px solid var(--line);
-    border-radius:999px;
-    padding:8px 13px;
+    gap:.55rem;
+    margin:0 auto .95rem;
+    padding:.45rem .8rem;
     color:var(--accent2);
-    background:rgba(191,164,106,.08);
-    font-size:.78rem;
-    letter-spacing:.16em;
-    text-transform:uppercase;
+    border:1px solid rgba(191,164,106,0.30);
+    border-radius:999px;
+    background:rgba(191,164,106,0.07);
+    font-size:.76rem;
     font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
   }
 
   .badge .mark{
     display:inline-grid;
     place-items:center;
-    width:24px;
-    height:24px;
-    border:1px solid rgba(191,164,106,.45);
+    width:22px;
+    height:22px;
+    border:1px solid rgba(191,164,106,0.44);
     border-radius:50%;
-    color:var(--accent);
-    background:rgba(10,17,16,.42);
-    letter-spacing:0;
   }
 
-  h1, h2, h3{
-    font-family:"Libre Baskerville", Georgia, serif;
-    line-height:1.15;
-    margin:0;
+  h1,h2,h3{
+    font-family:var(--font-display);
+    letter-spacing:-.025em;
   }
 
   h1{
-    max-width:940px;
-    margin-top:24px;
-    font-size:clamp(2.35rem, 6vw, 5.9rem);
-    letter-spacing:-.055em;
+    margin:0;
+    font-size:clamp(2.15rem, 7vw, 3.45rem);
+    line-height:1.12;
+    font-weight:700;
   }
 
-  .subtitle{
-    max-width:850px;
-    margin:24px 0 0;
-    color:var(--soft);
-    font-size:clamp(1.08rem, 2vw, 1.32rem);
+  .rule{
+    width:140px;
+    height:2px;
+    margin:1.15rem auto 1.65rem;
+    background:linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity:.88;
+  }
+
+  .page-kicker{
+    max-width:70ch;
+    margin:0 auto 1.4rem;
+    color:var(--muted);
+    font-size:1.04rem;
+    line-height:1.72;
   }
 
   .hero-meta{
     display:flex;
     flex-wrap:wrap;
-    gap:10px;
-    margin-top:28px;
+    justify-content:center;
+    gap:.55rem;
+    max-width:var(--measure);
+    margin:.4rem auto 2rem;
   }
 
   .hero-meta span{
+    padding:.45rem .7rem;
+    color:var(--muted);
     border:1px solid var(--line2);
     border-radius:999px;
-    background:rgba(255,255,255,.035);
-    color:var(--muted);
-    padding:8px 12px;
-    font-size:.9rem;
+    background:rgba(255,255,255,.025);
+    font-size:.84rem;
   }
 
-  .section{
-    margin-top:28px;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    background:
-      linear-gradient(180deg, rgba(17,28,24,.92), rgba(11,18,16,.92)),
-      radial-gradient(circle at 95% 0%, rgba(191,164,106,.10), transparent 22rem);
-    box-shadow:0 18px 50px rgba(0,0,0,.25);
-    padding:clamp(22px, 4vw, 38px);
+  .section,
+  .cta{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:0;
+    text-align:left;
+    border:0;
+    background:none;
+    box-shadow:none;
+  }
+
+  .section + .section,
+  .cta{
+    margin-top:2.35rem;
+    padding-top:2.15rem;
+    border-top:1px solid rgba(191,164,106,0.18);
   }
 
   .section-kicker{
+    margin:0 0 .45rem;
     color:var(--accent2);
-    text-transform:uppercase;
-    letter-spacing:.16em;
-    font-size:.78rem;
+    font-size:.76rem;
     font-weight:700;
-    margin:0 0 10px;
+    letter-spacing:.15em;
+    text-transform:uppercase;
   }
 
-  .section h2{
-    font-size:clamp(1.65rem, 3vw, 2.7rem);
-    letter-spacing:-.035em;
-    margin-bottom:14px;
+  .section h2,
+  .cta h2{
+    margin:0 0 .75rem;
+    color:var(--text);
+    font-size:clamp(1.35rem, 4vw, 1.9rem);
+    line-height:1.25;
   }
 
-  .section p{
-    color:var(--soft);
-    margin:14px 0 0;
-    max-width:900px;
+  .section h3{
+    margin:0 0 .45rem;
+    color:var(--text);
+    font-size:1.05rem;
+    line-height:1.35;
+  }
+
+  .section p,
+  .cta p{
+    margin:.75rem 0 0;
+    color:rgba(230,223,207,.92);
+    line-height:1.78;
   }
 
   .lede{
-    display:grid;
-    grid-template-columns:minmax(0, 1.25fr) minmax(280px, .75fr);
-    gap:24px;
-    align-items:start;
+    display:block;
   }
 
-  .short-answer{
-    border:1px solid rgba(191,164,106,.42);
-    border-radius:20px;
-    background:
-      linear-gradient(135deg, rgba(191,164,106,.14), rgba(191,164,106,.04)),
-      rgba(10,17,16,.42);
-    padding:22px;
+  .short-answer,
+  .note-card,
+  .theme-card,
+  .evidence-box,
+  .quote-panel{
+    margin-top:1.15rem;
+    padding:1rem 1.05rem;
+    border:1px solid rgba(191,164,106,0.24);
+    border-radius:14px;
+    background:rgba(191,164,106,0.055);
   }
 
   .short-answer strong{
     display:block;
-    color:var(--accent2);
-    font-family:"Libre Baskerville", Georgia, serif;
-    font-size:1.05rem;
-    margin-bottom:8px;
+    margin-bottom:.35rem;
+    color:var(--text);
+    font-family:var(--font-display);
   }
 
-  .short-answer p{
+  .short-answer p,
+  .note-card p,
+  .theme-card p,
+  .evidence-box p{
     margin:0;
-    color:var(--ink);
   }
 
-  .note-card{
-    border:1px solid var(--line2);
-    border-radius:18px;
-    background:rgba(255,255,255,.035);
-    padding:20px;
+  .quote-panel{
+    border-left:3px solid var(--accent);
+    color:var(--text);
+    font-size:1.08rem;
+    line-height:1.65;
   }
 
-  .note-card .glyph{
-    display:inline-grid;
-    place-items:center;
-    width:42px;
-    height:42px;
-    border:1px solid rgba(191,164,106,.45);
-    border-radius:14px;
-    color:var(--accent);
-    background:rgba(191,164,106,.08);
-    font-size:1.2rem;
-    margin-bottom:12px;
-  }
-
-  .note-card h3{
-    font-size:1.1rem;
-    color:var(--ink);
-    margin-bottom:8px;
-  }
-
-  .note-card p{
-    margin:0;
-    font-size:.98rem;
-    color:var(--muted);
-  }
-
-  .timeline{
+  .timeline,
+  .two-col,
+  .ship-links{
     display:grid;
-    grid-template-columns:repeat(3, minmax(0, 1fr));
-    gap:14px;
-    margin-top:24px;
+    grid-template-columns:1fr;
+    gap:.8rem;
+    margin-top:1.15rem;
   }
 
-  .era-card{
+  .era-card,
+  .ship-card{
+    display:block;
     position:relative;
     overflow:hidden;
-    min-height:265px;
-    border:1px solid var(--line2);
-    border-radius:20px;
-    background:
-      linear-gradient(180deg, rgba(21,35,30,.94), rgba(10,17,16,.94)),
-      radial-gradient(circle at 100% 0%, rgba(191,164,106,.12), transparent 12rem);
-    padding:20px;
+    min-height:0;
+    padding:1rem 1.05rem;
+    border:1px solid rgba(191,164,106,0.20);
+    border-radius:14px;
+    background:rgba(0,0,0,0.12);
   }
 
   .era-card::after{
     content:"★";
     position:absolute;
-    right:16px;
-    bottom:8px;
-    color:rgba(191,164,106,.15);
-    font-size:4.2rem;
+    right:.85rem;
+    bottom:.2rem;
+    color:rgba(191,164,106,.12);
+    font-size:3rem;
     line-height:1;
   }
 
-  .era-card .date{
-    display:inline-block;
+  .era-card .date,
+  .ship-card .meta{
+    display:block;
+    margin-bottom:.35rem;
     color:var(--accent2);
-    font-size:.78rem;
+    font-size:.72rem;
     font-weight:700;
-    letter-spacing:.14em;
+    letter-spacing:.12em;
     text-transform:uppercase;
-    margin-bottom:11px;
   }
 
-  .era-card h3{
-    font-size:1.15rem;
-    letter-spacing:-.02em;
-    margin-bottom:9px;
-    padding-right:28px;
-  }
-
-  .era-card p{
+  .era-card p,
+  .ship-card span:last-child{
     position:relative;
     z-index:1;
-    color:var(--muted);
-    font-size:.96rem;
-    margin:0;
-  }
-
-  .two-col{
-    display:grid;
-    grid-template-columns:repeat(2, minmax(0, 1fr));
-    gap:16px;
-    margin-top:22px;
-  }
-
-  .theme-card{
-    position:relative;
-    overflow:hidden;
-    border:1px solid var(--line2);
-    border-radius:20px;
-    background:rgba(255,255,255,.035);
-    padding:22px;
-  }
-
-  .theme-card::before{
-    content:"";
-    position:absolute;
-    inset:0 auto 0 0;
-    width:4px;
-    background:linear-gradient(var(--accent), transparent);
-    opacity:.75;
-  }
-
-  .theme-card h3{
-    font-size:1.22rem;
-    margin-bottom:9px;
-    color:var(--ink);
-  }
-
-  .theme-card p{
     margin:0;
     color:var(--muted);
-  }
-
-  .quote-panel{
-    margin-top:22px;
-    border-left:3px solid var(--accent);
-    padding:6px 0 6px 20px;
-    color:var(--ink);
-    font-size:clamp(1.08rem, 2vw, 1.35rem);
-    line-height:1.55;
-  }
-
-  .ship-links{
-    display:grid;
-    grid-template-columns:repeat(4, minmax(0, 1fr));
-    gap:14px;
-    margin-top:22px;
+    font-size:.95rem;
+    line-height:1.62;
   }
 
   .ship-card{
-    display:block;
-    position:relative;
-    min-height:165px;
-    border:1px solid var(--line2);
-    border-radius:18px;
-    background:
-      linear-gradient(180deg, rgba(21,35,30,.9), rgba(10,17,16,.9)),
-      radial-gradient(circle at 100% 0%, rgba(191,164,106,.12), transparent 10rem);
-    padding:18px;
-    color:var(--ink);
+    color:var(--text);
+    border-bottom:1px solid rgba(191,164,106,0.20);
   }
 
   .ship-card:hover{
     text-decoration:none;
-    border-color:rgba(191,164,106,.58);
-    transform:translateY(-1px);
-  }
-
-  .ship-card .meta{
-    display:block;
-    color:var(--accent2);
-    text-transform:uppercase;
-    letter-spacing:.14em;
-    font-size:.72rem;
-    font-weight:700;
-    margin-bottom:9px;
+    background:rgba(191,164,106,0.08);
+    border-color:rgba(191,164,106,0.48);
   }
 
   .ship-card strong{
     display:block;
-    font-family:"Libre Baskerville", Georgia, serif;
-    font-size:1.04rem;
-    line-height:1.25;
-    margin-bottom:8px;
+    margin-bottom:.35rem;
+    font-family:var(--font-display);
   }
 
-  .ship-card span:last-child{
-    display:block;
-    color:var(--muted);
-    font-size:.92rem;
-    line-height:1.45;
+  .glyph{
+    display:inline-grid;
+    place-items:center;
+    width:38px;
+    height:38px;
+    margin-bottom:.65rem;
+    border:1px solid rgba(191,164,106,0.42);
+    border-radius:12px;
+    color:var(--accent);
+    background:rgba(191,164,106,0.07);
   }
 
-  .evidence-box{
-    margin-top:22px;
-    border:1px solid rgba(191,164,106,.38);
-    border-radius:20px;
-    background:rgba(191,164,106,.07);
-    padding:22px;
-  }
-
-  .evidence-box h3{
-    font-size:1.18rem;
-    margin-bottom:10px;
-  }
-
-  .evidence-box ul{
-    margin:10px 0 0;
-    padding-left:1.15rem;
-    color:var(--soft);
-  }
-
-  .evidence-box li{
-    margin:.45rem 0;
-  }
-
+  .evidence-box ul,
   .source-list{
-    margin:12px 0 0;
-    padding-left:1.15rem;
-    color:var(--soft);
+    margin:.65rem 0 0;
+    padding-left:1.2rem;
+    color:rgba(230,223,207,.90);
   }
 
+  .evidence-box li,
   .source-list li{
-    margin:.5rem 0;
-  }
-
-  .cta{
-    margin-top:28px;
-    display:block;
-    border:1px solid var(--line);
-    border-radius:24px;
-    padding:clamp(22px, 4vw, 34px);
-    background:
-      linear-gradient(135deg, rgba(191,164,106,.12), rgba(255,255,255,.03)),
-      rgba(17,28,24,.86);
-  }
-
-  .cta h2{
-    font-size:clamp(1.45rem, 3vw, 2.25rem);
-    margin-bottom:8px;
-  }
-
-  .cta p{
-    margin:0;
-    color:var(--muted);
-    max-width:900px;
-  }
-
-  .cta .button-row{
-    margin-top:20px;
+    margin:.45rem 0;
+    line-height:1.65;
   }
 
   .button-row{
     display:flex;
     flex-wrap:wrap;
-    align-items:center;
-    gap:10px;
+    gap:.65rem;
+    margin-top:1.15rem;
   }
 
   .btn{
@@ -602,583 +493,484 @@
     align-items:center;
     justify-content:center;
     min-height:44px;
-    border:1px solid rgba(191,164,106,.48);
-    border-radius:999px;
-    padding:10px 16px;
+    padding:.75rem 1rem;
     color:#0a1110;
-    background:var(--accent2);
+    background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+    border:1px solid rgba(0,0,0,.35);
+    border-radius:12px;
+    box-shadow:0 10px 22px rgba(0,0,0,.24);
     font-weight:700;
-    line-height:1.2;
-    white-space:nowrap;
   }
 
   .btn.secondary{
-    color:var(--accent2);
-    background:rgba(10,17,16,.42);
+    color:var(--text);
+    background:transparent;
+    border-color:rgba(191,164,106,.42);
+    box-shadow:none;
   }
 
   .btn:hover{
     text-decoration:none;
-    filter:brightness(1.05);
+    border-bottom-color:inherit;
+    transform:translateY(-1px);
   }
 
   footer{
-    margin-top:36px;
-    color:rgba(230,223,207,.62);
-    font-size:.92rem;
+    max-width:var(--measure);
+    margin:2.8rem auto 0;
+    color:rgba(230,223,207,.68);
+    font-size:.82rem;
+    line-height:1.6;
     text-align:center;
   }
 
-  @media (max-width:920px){
-    .lede,
-    .two-col{
-      grid-template-columns:1fr;
-    }
-
-    .timeline{
-      grid-template-columns:repeat(2, minmax(0, 1fr));
-    }
-
-    .ship-links{
-      grid-template-columns:repeat(2, minmax(0, 1fr));
-    }
+  .flags-footer{
+    display:block;
+    width:110px;
+    height:auto;
+    margin:1.1rem auto -.2rem;
+    opacity:.42;
+    filter:saturate(.85) contrast(.95) brightness(.95);
+    pointer-events:none;
   }
 
-  @media (max-width:620px){
-    .site-shell{
-      width:min(100% - 24px, var(--max));
+  @media (min-width:700px){
+    .timeline{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+    .two-col{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+    .ship-links{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  }
+
+  @media (max-width:520px){
+    .container{
+      width:calc(100% - 1.5rem);
+      margin:1.05rem auto 0;
+      padding:1.9rem 1.25rem;
+      border-radius:14px;
+      background-size:54px 54px;
     }
 
-    main{
-      padding-top:24px;
+    .logo-mount{
+      width:88px;
+      height:88px;
+      padding:8px;
+      margin-bottom:.75rem;
+      border-radius:14px;
     }
 
-    .hero{
-      border-radius:24px;
-      padding:26px 22px;
+    .logo-mount::after{
+      inset:6px;
+      border-radius:11px;
     }
 
-    .timeline,
-    .ship-links{
-      grid-template-columns:1fr;
-    }
-
-    .hero-meta span{
-      width:100%;
-    }
-
-    .button-row{
-      flex-direction:column;
-    }
-
-    .btn{
-      width:100%;
-    }
+    .logo{ border-radius:11px; }
+    .rule{ width:110px; margin:.9rem auto 1.25rem; }
+    .hero-meta span{ width:100%; text-align:center; }
+    .button-row{ flex-direction:column; }
+    .btn{ width:100%; }
   }
 </style>
+<link href="/assets/nav.css" rel="stylesheet"/>
 </head>
-
-<body>
-  <div id="site-header"></div>
-
-  <main>
-    <div class="site-shell">
-      <section class="hero" aria-labelledby="page-title">
-        <nav class="crumbs" aria-label="Breadcrumb">
-          <a href="/">Home</a>
-          <span>›</span>
-          <a href="/explore/">Explore</a>
-          <span>›</span>
-          <span>The History of Ocean Liners</span>
-        </nav>
-
-        <div class="badge">
-          <span class="mark">★</span>
-          <span>Cornerstone guide · Maritime history</span>
-        </div>
-
-        <h1 id="page-title">The History of Ocean Liners</h1>
-
-        <p class="subtitle">
+<body><div id="site-header"></div><main class="container"><div class="logo-mount"><img alt="Ocean Liner Curator logo" class="logo" src="/logo.png"/></div><nav aria-label="Breadcrumb" class="crumbs">
+<a href="/">Home</a>
+<span>›</span>
+<a href="/explore/">Explore</a>
+<span>›</span>
+<span>The History of Ocean Liners</span>
+</nav><h1 id="page-title">The History of Ocean Liners</h1><div class="rule"></div><p class="page-kicker">
           Ocean liners were more than large passenger ships. They were scheduled machines of migration, mail, empire,
           business, war, tourism, national prestige, and memory — carrying the modern Atlantic world across the sea.
-        </p>
-
-        <div class="hero-meta" aria-label="Page context">
-          <span>Focus: nineteenth and twentieth centuries</span>
-          <span>Scope: technology, people, routes, memory</span>
-          <span>Method: evidence-first interpretation</span>
-        </div>
-      </section>
-
-      <section class="section lede" aria-labelledby="short-answer">
-        <div>
-          <p class="section-kicker">Basic answer</p>
-          <h2 id="short-answer">What was an ocean liner?</h2>
-
-          <p>
+        </p><div aria-label="Page context" class="hero-meta">
+<span>Focus: nineteenth and twentieth centuries</span>
+<span>Scope: technology, people, routes, memory</span>
+<span>Method: evidence-first interpretation</span>
+</div><section aria-labelledby="short-answer" class="section lede">
+<div>
+<p class="section-kicker">Basic answer</p>
+<h2 id="short-answer">What was an ocean liner?</h2>
+<p>
             An ocean liner was a passenger ship built to operate on a regular route between scheduled ports. Unlike a
             cruise ship, whose main purpose is the voyage itself, the ocean liner belonged to a transportation system:
             it carried passengers, mail, luggage, cargo, news, and national ambition between fixed points on the map.
           </p>
-
-          <p>
+<p>
             The most famous liners crossed the North Atlantic, especially between Europe and North America. But ocean
             liners also served imperial, colonial, regional, and long-distance routes around the world. Their history is
             therefore both technological and human: engines, hulls, timetables, and speed records on one side; migration,
             class, labor, war, loss, and memory on the other.
           </p>
-        </div>
-
-        <aside class="short-answer">
-          <strong>Short answer</strong>
-          <p>
+</div>
+<aside class="short-answer">
+<strong>Short answer</strong>
+<p>
             Ocean liners were scheduled long-distance passenger ships. Their importance comes from what they connected:
             people, nations, ports, economies, families, wars, and ideas across oceans.
           </p>
-        </aside>
-      </section>
-
-      <section class="section" aria-labelledby="not-just-luxury">
-        <p class="section-kicker">Curatorial restraint</p>
-        <h2 id="not-just-luxury">Not just floating palaces</h2>
-
-        <p>
+</aside>
+</section><section aria-labelledby="not-just-luxury" class="section">
+<p class="section-kicker">Curatorial restraint</p>
+<h2 id="not-just-luxury">Not just floating palaces</h2>
+<p>
           Popular memory often remembers ocean liners through grand staircases, first-class dining rooms, famous
           passengers, and tragic disasters. Those things matter, but they are not the whole story. A liner was also a
           workplace, a mail carrier, a migration route, a national symbol, a military asset, and a carefully marketed
           public image.
         </p>
-
-        <div class="quote-panel">
+<div class="quote-panel">
           The history of ocean liners is not only the story of luxury at sea. It is the story of how the modern world
           learned to move across oceans on a schedule.
         </div>
-
-        <div class="two-col">
-          <div class="note-card">
-            <span class="glyph">⚓</span>
-            <h3>The liner as system</h3>
-            <p>
+<div class="two-col">
+<div class="note-card">
+<span class="glyph">⚓</span>
+<h3>The liner as system</h3>
+<p>
               A liner only makes sense within a network: ports, piers, rail connections, immigration offices, mail
               contracts, coal or oil supplies, repair yards, agents, crews, and timetables.
             </p>
-          </div>
-
-          <div class="note-card">
-            <span class="glyph">★</span>
-            <h3>The liner as memory</h3>
-            <p>
+</div>
+<div class="note-card">
+<span class="glyph">★</span>
+<h3>The liner as memory</h3>
+<p>
               Menus, tickets, photographs, deck plans, passenger lists, postcards, and souvenirs preserve how ordinary
               crossings became personal evidence of much larger historical forces.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="timeline">
-        <p class="section-kicker">Historical arc</p>
-        <h2 id="timeline">A broad timeline of ocean liner history</h2>
-
-        <p>
+</div>
+</div>
+</section><section aria-labelledby="timeline" class="section">
+<p class="section-kicker">Historical arc</p>
+<h2 id="timeline">A broad timeline of ocean liner history</h2>
+<p>
           The ocean liner did not appear all at once. It developed from earlier sailing packets, steamship experiments,
           mail contracts, industrial shipbuilding, immigration demand, imperial competition, and commercial publicity.
           The timeline below is deliberately broad: exact dates vary by route, line, ship, and national context.
         </p>
-
-        <div class="timeline">
-          <article class="era-card">
-            <span class="date">Before steam</span>
-            <h3>Sail, packets, and uncertainty</h3>
-            <p>
+<div class="timeline">
+<article class="era-card">
+<span class="date">Before steam</span>
+<h3>Sail, packets, and uncertainty</h3>
+<p>
               Before the liner age, ocean travel depended on sailing vessels, weather, wind, and irregular timing.
               Packet services introduced more organized routes, but long-distance passage still remained slow,
               uncomfortable, and uncertain.
             </p>
-          </article>
-
-          <article class="era-card">
-            <span class="date">Early steam age</span>
-            <h3>Power begins to change distance</h3>
-            <p>
+</article>
+<article class="era-card">
+<span class="date">Early steam age</span>
+<h3>Power begins to change distance</h3>
+<p>
               Steam propulsion made regularity increasingly possible. Early steamships were limited by fuel, machinery,
               and cost, but the combination of engines, iron hulls, and improved marine engineering changed what a sea
               passage could be.
             </p>
-          </article>
-
-          <article class="era-card">
-            <span class="date">1840s</span>
-            <h3>The scheduled Atlantic liner emerges</h3>
-            <p>
+</article>
+<article class="era-card">
+<span class="date">1840s</span>
+<h3>The scheduled Atlantic liner emerges</h3>
+<p>
               Regular North Atlantic steamship service made the liner a recognizable institution. Timetables, mail
               contracts, and named routes turned the ocean crossing into a more predictable commercial system.
             </p>
-          </article>
-
-          <article class="era-card">
-            <span class="date">Late 1800s</span>
-            <h3>Immigration, industry, and scale</h3>
-            <p>
+</article>
+<article class="era-card">
+<span class="date">Late 1800s</span>
+<h3>Immigration, industry, and scale</h3>
+<p>
               As migration increased and shipbuilding advanced, liners became larger and more specialized. Steerage,
               second class, and first class existed within the same vessel, making the ship a floating cross-section of
               social hierarchy.
             </p>
-          </article>
-
-          <article class="era-card">
-            <span class="date">1900–1914</span>
-            <h3>The great Atlantic race</h3>
-            <p>
+</article>
+<article class="era-card">
+<span class="date">1900–1914</span>
+<h3>The great Atlantic race</h3>
+<p>
               Speed, size, safety, comfort, and national prestige became public contests. British, German, French,
               Italian, and American interests all used liners to advertise technology, civilization, and power.
             </p>
-          </article>
-
-          <article class="era-card">
-            <span class="date">1914–1945</span>
-            <h3>War transforms the liner</h3>
-            <p>
+</article>
+<article class="era-card">
+<span class="date">1914–1945</span>
+<h3>War transforms the liner</h3>
+<p>
               World wars exposed the double identity of liners. They were passenger ships in peace, but in wartime many
               became troopships, hospital ships, armed merchant cruisers, or losses remembered as national trauma.
             </p>
-          </article>
-
-          <article class="era-card">
-            <span class="date">Interwar years</span>
-            <h3>Modern design and national style</h3>
-            <p>
+</article>
+<article class="era-card">
+<span class="date">Interwar years</span>
+<h3>Modern design and national style</h3>
+<p>
               Between the wars, liners became showcases for Art Deco, modern engineering, cuisine, interiors, publicity,
               and national image. Ships such as Normandie and Queen Mary turned the crossing into a stage of modernity.
             </p>
-          </article>
-
-          <article class="era-card">
-            <span class="date">Postwar era</span>
-            <h3>The last great liners</h3>
-            <p>
+</article>
+<article class="era-card">
+<span class="date">Postwar era</span>
+<h3>The last great liners</h3>
+<p>
               After 1945, liners resumed civilian service, carried emigrants and tourists, and embodied postwar
               confidence. The SS United States represented one of the final great express-liner statements.
             </p>
-          </article>
-
-          <article class="era-card">
-            <span class="date">Jet age</span>
-            <h3>The crossing changes again</h3>
-            <p>
+</article>
+<article class="era-card">
+<span class="date">Jet age</span>
+<h3>The crossing changes again</h3>
+<p>
               Air travel gradually removed the liner's practical advantage for most passengers. Some ships were retired,
               scrapped, converted, preserved, or absorbed into the emerging cruise industry.
             </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="themes">
-        <p class="section-kicker">What the history reveals</p>
-        <h2 id="themes">Six themes that define ocean liner history</h2>
-
-        <div class="two-col">
-          <article class="theme-card">
-            <h3>Schedule</h3>
-            <p>
+</article>
+</div>
+</section><section aria-labelledby="themes" class="section">
+<p class="section-kicker">What the history reveals</p>
+<h2 id="themes">Six themes that define ocean liner history</h2>
+<div class="two-col">
+<article class="theme-card">
+<h3>Schedule</h3>
+<p>
               The liner's central promise was regularity. A ship that sailed on a route at a known time changed the
               ocean from a barrier into a managed corridor.
             </p>
-          </article>
-
-          <article class="theme-card">
-            <h3>Migration</h3>
-            <p>
+</article>
+<article class="theme-card">
+<h3>Migration</h3>
+<p>
               For millions of people, the ocean liner was not glamorous. It was the physical setting of departure,
               separation, inspection, arrival, opportunity, fear, and family history.
             </p>
-          </article>
-
-          <article class="theme-card">
-            <h3>Class</h3>
-            <p>
+</article>
+<article class="theme-card">
+<h3>Class</h3>
+<p>
               Ocean liners physically arranged class divisions. Cabins, dining rooms, promenades, stairways, and deck
               access reveal how social hierarchy was built into the ship itself.
             </p>
-          </article>
-
-          <article class="theme-card">
-            <h3>Technology</h3>
-            <p>
+</article>
+<article class="theme-card">
+<h3>Technology</h3>
+<p>
               Marine engines, hull forms, wireless telegraphy, lifeboat regulations, turbines, oil fuel, refrigeration,
               and navigation equipment all shaped what liners could do and how safe passengers believed them to be.
             </p>
-          </article>
-
-          <article class="theme-card">
-            <h3>National prestige</h3>
-            <p>
+</article>
+<article class="theme-card">
+<h3>National prestige</h3>
+<p>
               A great liner could serve as a national advertisement. Companies and governments used speed, size,
               interiors, flags, routes, and publicity to project identity across the ocean.
             </p>
-            <br>
-            <a href="/ocean-liners-and-national-identity">Read more about ocean liners and national identity »</a>
-          </article>
-
-          <article class="theme-card">
-            <h3>Memory</h3>
-            <p>
+<br/>
+<a href="/ocean-liners-and-national-identity">Read more about ocean liners and national identity »</a>
+</article>
+<article class="theme-card">
+<h3>Memory</h3>
+<p>
               Ocean liners survive through archives, wrecks, preserved ships, family stories, collectibles, photographs,
               and public fascination. Their afterlives are part of their history.
             </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="case-studies">
-        <p class="section-kicker">Ships as case studies</p>
-        <h2 id="case-studies">Key ships that help tell the story</h2>
-
-        <p>
+</article>
+</div>
+</section><section aria-labelledby="case-studies" class="section">
+<p class="section-kicker">Ships as case studies</p>
+<h2 id="case-studies">Key ships that help tell the story</h2>
+<p>
           No small list can represent every ocean liner, shipping line, or route. These ships are useful starting points
           because each opens a different historical question: immigration, technology, disaster, prestige, war service,
           preservation, or decline.
         </p>
-
-        <div class="ship-links">
-          <a class="ship-card" href="/ships/rms-titanic">
-            <span class="meta">Disaster · Class</span>
-            <strong>RMS Titanic</strong>
-            <span>A case study in technology, confidence, class division, regulation, memory, and Atlantic risk.</span>
-          </a>
-
-          <a class="ship-card" href="/ships/rms-olympic">
-            <span class="meta">Service · Longevity</span>
-            <strong>RMS Olympic</strong>
-            <span>The long-serving sister ship that helps separate the Titanic story from the broader White Star context.</span>
-          </a>
-
-          <a class="ship-card" href="/ships/rms-mauretania">
-            <span class="meta">Speed · Cunard</span>
-            <strong>RMS Mauretania</strong>
-            <span>A symbol of turbine-era speed, North Atlantic rivalry, and Edwardian maritime prestige.</span>
-          </a>
-
-          <a class="ship-card" href="/ships/rms-aquitania">
-            <span class="meta">Endurance · War</span>
-            <strong>RMS Aquitania</strong>
-            <span>A long-lived Cunarder whose career links prewar luxury, wartime service, and changing travel patterns.</span>
-          </a>
-
-          <a class="ship-card" href="/ships/ss-leviathan">
-            <span class="meta">War · Reidentity</span>
-            <strong>SS Leviathan</strong>
-            <span>A German-built liner remade into an American transport and later a symbol of U.S. Atlantic ambition.</span>
-          </a>
-
-          <a class="ship-card" href="/ships/ss-normandie">
-            <span class="meta">Design · France</span>
-            <strong>SS Normandie</strong>
-            <span>A landmark of French national style, engineering ambition, and interwar design culture.</span>
-          </a>
-
-          <a class="ship-card" href="/ships/rms-queen-mary">
-            <span class="meta">War · Preservation</span>
-            <strong>RMS Queen Mary</strong>
-            <span>A British express liner remembered for luxury, wartime troop service, and survival as a preserved ship.</span>
-          </a>
-
-          <a class="ship-card" href="/ships/ss-us">
-            <span class="meta">Speed · America</span>
-            <strong>SS United States</strong>
-            <span>American industrial confidence, naval reserve logic, and the last great Atlantic speed record.</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="people">
-        <p class="section-kicker">Human history</p>
-        <h2 id="people">The liner as a moving society</h2>
-
-        <p>
+<div class="ship-links">
+<a class="ship-card" href="/ships/rms-titanic">
+<span class="meta">Disaster · Class</span>
+<strong>RMS Titanic</strong>
+<span>A case study in technology, confidence, class division, regulation, memory, and Atlantic risk.</span>
+</a>
+<a class="ship-card" href="/ships/rms-olympic">
+<span class="meta">Service · Longevity</span>
+<strong>RMS Olympic</strong>
+<span>The long-serving sister ship that helps separate the Titanic story from the broader White Star context.</span>
+</a>
+<a class="ship-card" href="/ships/rms-mauretania">
+<span class="meta">Speed · Cunard</span>
+<strong>RMS Mauretania</strong>
+<span>A symbol of turbine-era speed, North Atlantic rivalry, and Edwardian maritime prestige.</span>
+</a>
+<a class="ship-card" href="/ships/rms-aquitania">
+<span class="meta">Endurance · War</span>
+<strong>RMS Aquitania</strong>
+<span>A long-lived Cunarder whose career links prewar luxury, wartime service, and changing travel patterns.</span>
+</a>
+<a class="ship-card" href="/ships/ss-leviathan">
+<span class="meta">War · Reidentity</span>
+<strong>SS Leviathan</strong>
+<span>A German-built liner remade into an American transport and later a symbol of U.S. Atlantic ambition.</span>
+</a>
+<a class="ship-card" href="/ships/ss-normandie">
+<span class="meta">Design · France</span>
+<strong>SS Normandie</strong>
+<span>A landmark of French national style, engineering ambition, and interwar design culture.</span>
+</a>
+<a class="ship-card" href="/ships/rms-queen-mary">
+<span class="meta">War · Preservation</span>
+<strong>RMS Queen Mary</strong>
+<span>A British express liner remembered for luxury, wartime troop service, and survival as a preserved ship.</span>
+</a>
+<a class="ship-card" href="/ships/ss-us">
+<span class="meta">Speed · America</span>
+<strong>SS United States</strong>
+<span>American industrial confidence, naval reserve logic, and the last great Atlantic speed record.</span>
+</a>
+</div>
+</section><section aria-labelledby="people" class="section">
+<p class="section-kicker">Human history</p>
+<h2 id="people">The liner as a moving society</h2>
+<p>
           The same ship could contain radically different journeys. A first-class passenger might experience the liner
           as a hotel, club, restaurant, and social stage. A migrant in steerage or third class might experience it as a
           crowded threshold between countries. A steward, fireman, trimmer, wireless operator, engineer, cook, nurse, or
           deck officer experienced the liner as labor.
         </p>
-
-        <p>
+<p>
           This is why ocean liner history should be handled carefully. The famous interiors are real evidence, but they
           often preserve the most privileged parts of the ship. A balanced history also asks who served the meals, who
           cleaned the cabins, who traveled below, who was inspected on arrival, who could afford comfort, and who could
           not.
         </p>
-
-        <div class="two-col">
-          <div class="note-card">
-            <span class="glyph">☰</span>
-            <h3>Passenger evidence</h3>
-            <p>
+<div class="two-col">
+<div class="note-card">
+<span class="glyph">☰</span>
+<h3>Passenger evidence</h3>
+<p>
               Passenger lists, tickets, baggage labels, diaries, immigration files, photographs, and family stories can
               connect individual lives to the larger movement of people across oceans.
             </p>
-          </div>
-
-          <div class="note-card">
-            <span class="glyph">✦</span>
-            <h3>Crew evidence</h3>
-            <p>
+</div>
+<div class="note-card">
+<span class="glyph">✦</span>
+<h3>Crew evidence</h3>
+<p>
               Crew agreements, company records, uniforms, pay records, oral histories, and shipboard manuals can reveal
               the labor system that made the elegant public image possible.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="war">
-        <p class="section-kicker">War and emergency</p>
-        <h2 id="war">When passenger ships became strategic assets</h2>
-
-        <p>
+</div>
+</div>
+</section><section aria-labelledby="war" class="section">
+<p class="section-kicker">War and emergency</p>
+<h2 id="war">When passenger ships became strategic assets</h2>
+<p>
           Ocean liners were built for commerce, but their speed, size, range, and passenger capacity made them valuable
           in wartime. Governments used liners and former liners as troop transports, hospital ships, auxiliary cruisers,
           accommodation ships, and emergency carriers. Their civilian glamour could disappear quickly under grey paint,
           blackout rules, convoy orders, and military discipline.
         </p>
-
-        <p>
+<p>
           War also changed how the public understood liners. Sinkings, requisitions, conversions, and troopship voyages
           turned passenger ships into symbols of vulnerability, endurance, sacrifice, and national survival. A liner's
           wartime record is often inseparable from its peacetime reputation.
         </p>
-
-        <div class="quote-panel">
+<div class="quote-panel">
           The ocean liner was never only a peaceful machine. In crisis, the same qualities that made it commercially
           valuable could make it strategically important.
         </div>
-      </section>
-
-      <section class="section" aria-labelledby="decline">
-        <p class="section-kicker">Decline and afterlife</p>
-        <h2 id="decline">The jet age did not erase the ocean liner</h2>
-
-        <p>
+</section><section aria-labelledby="decline" class="section">
+<p class="section-kicker">Decline and afterlife</p>
+<h2 id="decline">The jet age did not erase the ocean liner</h2>
+<p>
           The practical dominance of the ocean liner declined as air travel became faster, more accessible, and more
           commercially decisive. By the mid-twentieth century, the Atlantic crossing was no longer defined primarily by
           piers, gangways, and sailing lists. Airports increasingly replaced terminals; hours replaced days.
         </p>
-
-        <p>
+<p>
           But the liner did not simply vanish. Some vessels were scrapped. Some became cruise ships. A few were
           preserved or repurposed. Others survive through objects, photographs, plans, menus, films, wreck sites, and
           public imagination. The liner's decline as transportation helped create its afterlife as heritage.
         </p>
-
-        <div class="two-col">
-          <article class="theme-card">
-            <h3>From transport to experience</h3>
-            <p>
+<div class="two-col">
+<article class="theme-card">
+<h3>From transport to experience</h3>
+<p>
               Cruising grew from a different logic: the voyage itself became the product. That distinction is one reason
               ocean liners and cruise ships should not be treated as identical.
             </p>
-            <br>
-            <a href="/ocean-liner-vs-cruise-ship">Ocean liner vs cruise ship »</a>
-          </article>
-
-          <article class="theme-card">
-            <h3>From ship to archive</h3>
-            <p>
+<br/>
+<a href="/ocean-liner-vs-cruise-ship">Ocean liner vs cruise ship »</a>
+</article>
+<article class="theme-card">
+<h3>From ship to archive</h3>
+<p>
               Once liners stopped being ordinary transportation, surviving records and artifacts became more important.
               They now help reconstruct how ocean travel actually worked.
             </p>
-            <br>
-            <a href="/collections/">Explore curated research collections »</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="collecting">
-        <p class="section-kicker">Collecting and interpretation</p>
-        <h2 id="collecting">Why objects matter</h2>
-
-        <p>
+<br/>
+<a href="/collections/">Explore curated research collections »</a>
+</article>
+</div>
+</section><section aria-labelledby="collecting" class="section">
+<p class="section-kicker">Collecting and interpretation</p>
+<h2 id="collecting">Why objects matter</h2>
+<p>
           Ocean liner artifacts are useful when they are treated as evidence rather than decoration. A menu may show
           class, route, cuisine, printing style, date, and shipboard ritual. A deck plan may show how space was divided.
           A photograph may document a public room, a pier, a voyage, or a publicity image. A passenger list may connect
           a ship to migration, family history, or a particular crossing.
         </p>
-
-        <div class="evidence-box">
-          <h3>Useful evidence questions</h3>
-          <ul>
-            <li>What ship, line, date, route, or passenger context can be documented?</li>
-            <li>Is the object connected to a specific voyage, or only to a general shipboard setting?</li>
-            <li>Does it reveal class, labor, migration, design, technology, war service, or publicity?</li>
-            <li>What claim does the object actually support?</li>
-            <li>Where should the interpretation remain cautious or unresolved?</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="how-to-read">
-        <p class="section-kicker">Reading the evidence</p>
-        <h2 id="how-to-read">How to study ocean liner history responsibly</h2>
-
-        <p>
+<div class="evidence-box">
+<h3>Useful evidence questions</h3>
+<ul>
+<li>What ship, line, date, route, or passenger context can be documented?</li>
+<li>Is the object connected to a specific voyage, or only to a general shipboard setting?</li>
+<li>Does it reveal class, labor, migration, design, technology, war service, or publicity?</li>
+<li>What claim does the object actually support?</li>
+<li>Where should the interpretation remain cautious or unresolved?</li>
+</ul>
+</div>
+</section><section aria-labelledby="how-to-read" class="section">
+<p class="section-kicker">Reading the evidence</p>
+<h2 id="how-to-read">How to study ocean liner history responsibly</h2>
+<p>
           Ocean liner history can be distorted by nostalgia. The ships were beautiful, but beauty is not the same as a
           complete historical account. Responsible interpretation separates documented fact from company publicity,
           later legend, collector tradition, family memory, and modern enthusiasm.
         </p>
-
-        <div class="two-col">
-          <article class="theme-card">
-            <h3>Start with documented claims</h3>
-            <p>
+<div class="two-col">
+<article class="theme-card">
+<h3>Start with documented claims</h3>
+<p>
               Dates, dimensions, routes, ownership, builders, service changes, and wartime roles should be checked
               against reliable references whenever possible.
             </p>
-          </article>
-
-          <article class="theme-card">
-            <h3>Keep interpretation proportional</h3>
-            <p>
+</article>
+<article class="theme-card">
+<h3>Keep interpretation proportional</h3>
+<p>
               A single object, photograph, or anecdote can be meaningful without proving more than the evidence allows.
               The strongest pages say what is known, what is likely, and what remains uncertain.
             </p>
-          </article>
-        </div>
-
-        <div class="evidence-box">
-          <h3>Selected reference anchors</h3>
-          <ul class="source-list">
-            <li><a href="https://www.britannica.com/technology/ocean-liner">Encyclopaedia Britannica: Ocean liner</a></li>
-            <li><a href="https://www.britannica.com/technology/steamship">Encyclopaedia Britannica: Steamship</a></li>
-            <li><a href="https://www.britannica.com/technology/ship/Passenger-liners-in-the-20th-century">Encyclopaedia Britannica: Passenger liners in the 20th century</a></li>
-            <li><a href="https://www.cunard.com/en-us/about-cunard/history">Cunard: History</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="cta" aria-labelledby="next-steps">
-        <div>
-          <h2 id="next-steps">Continue exploring ocean liner history</h2>
-          <p>
+</article>
+</div>
+<div class="evidence-box">
+<h3>Selected reference anchors</h3>
+<ul class="source-list">
+<li><a href="https://www.britannica.com/technology/ocean-liner">Encyclopaedia Britannica: Ocean liner</a></li>
+<li><a href="https://www.britannica.com/technology/steamship">Encyclopaedia Britannica: Steamship</a></li>
+<li><a href="https://www.britannica.com/technology/ship/Passenger-liners-in-the-20th-century">Encyclopaedia Britannica: Passenger liners in the 20th century</a></li>
+<li><a href="https://www.cunard.com/en-us/about-cunard/history">Cunard: History</a></li>
+</ul>
+</div>
+</section><section aria-labelledby="next-steps" class="cta">
+<div>
+<h2 id="next-steps">Continue exploring ocean liner history</h2>
+<p>
             Use this page as a starting point for ship guides, company histories, research collections, design pages,
             immigration topics, wartime service, and the surviving material culture of the ocean liner age.
           </p>
-        </div>
-
-        <div class="button-row">
-          <a class="btn" href="/ships/ships">Explore the Ship Archive</a>
-          <a class="btn secondary" href="/collections/">Explore Curated Topics</a>
-          <a class="btn secondary" href="/what-are-ocean-liners">Read What Are Ocean Liners?</a>
-          <a class="btn secondary" href="/how-ocean-liners-helped-shape-the-american-century">Read How Ocean Liners Helped Shape the American Century</a>
-        </div>
-      </section>
-
-      <footer>
-        <p>Ocean Liner Curator · OceanLiners.net · Evidence-first maritime history and collecting interpretation</p>
-      </footer>
-    </div>
-  </main>
-
-  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <script src="/assets/header.js" defer></script>
-  <script src="/assets/nav.js" defer></script>
-</body>
+</div>
+<div class="button-row">
+<a class="btn" href="/ships/ships">Explore the Ship Archive</a>
+<a class="btn secondary" href="/collections/">Explore Curated Topics</a>
+<a class="btn secondary" href="/what-are-ocean-liners">Read What Are Ocean Liners?</a>
+<a class="btn secondary" href="/how-ocean-liners-helped-shape-the-american-century">Read How Ocean Liners Helped Shape the American Century</a>
+</div>
+</section><footer><p>Ocean Liner Curator · OceanLiners.net · Evidence-first maritime history and collecting interpretation</p><img alt="" aria-hidden="true" class="flags-footer" src="/engraved-signal.png"/><p class="copyright">© <span id="year"></span> Ocean Liner Curator LLC.</p></footer></main><script>const year=document.getElementById("year");if(year)year.textContent=new Date().getFullYear();</script><script async="" src="https://scripts.simpleanalyticscdn.com/latest.js"></script><script defer="" src="/assets/header.js"></script><script defer="" src="/assets/nav.js"></script></body>
 </html>
