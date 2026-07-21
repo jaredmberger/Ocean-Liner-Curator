@@ -1412,14 +1412,16 @@ a.footer-star:focus{
 
 /* ==========================================================================
    Universal Logo Mount Override
+   Applies only when the mounted image is logo.png
    ========================================================================== */
 
-.logo-mount{
+.logo-mount:has(img[src$="logo.png" i]){
     width:clamp(88px, 18vw, 108px) !important;
     height:clamp(88px, 18vw, 108px) !important;
     margin:0 auto .95rem !important;
     padding:clamp(8px, 1.6vw, 10px) !important;
     position:relative !important;
+    box-sizing:border-box !important;
 
     border:1px solid rgba(191,164,106,.55) !important;
     border-radius:clamp(14px, 2vw, 16px) !important;
@@ -1433,19 +1435,21 @@ a.footer-star:focus{
     box-shadow:0 14px 34px rgba(0,0,0,.42) !important;
 }
 
-.logo-mount::after{
+.logo-mount:has(img[src$="logo.png" i])::after{
     content:"" !important;
     position:absolute !important;
     inset:clamp(6px, 1vw, 7px) !important;
+    display:block !important;
     pointer-events:none !important;
 
     border:1px solid rgba(191,164,106,.22) !important;
     border-radius:clamp(11px, 1.7vw, 12px) !important;
 }
 
-.logo{
+.logo-mount img[src$="logo.png" i]{
     width:100% !important;
     height:100% !important;
+    max-width:none !important;
     display:block !important;
     object-fit:contain !important;
 
