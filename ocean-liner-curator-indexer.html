@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ocean Liner Curator Indexer</title>
+  <title>Ocean Liner Curator Indexer v1.1</title>
   <meta name="description" content="Crawl OceanLiners.net ship guides, extract structured metadata, normalize canonical values, and export site data files." />
   <style>
     :root{
@@ -112,7 +112,7 @@
 <main class="app">
   <header class="hero">
     <p class="eyebrow">Ocean Liner Curator · Publishing Infrastructure</p>
-    <h1>OLC Indexer</h1>
+    <h1>OLC Indexer <small style="font-size:.28em;color:var(--brass);vertical-align:middle">v1.1</small></h1>
     <p class="lede">
       Crawl the Ship Archive, extract structured facts from every ship guide, normalize approved builders,
       detect missing or conflicting metadata, and export the data files that can power indexes, search,
@@ -209,7 +209,12 @@ let abortController = null;
 const FIELD_ALIASES = {
   "ship name":"name","name":"name","vessel":"name",
   "builder":"builderDisplay","built by":"builderDisplay","shipbuilder":"builderDisplay",
-  "operator":"operatorDisplay","shipping line":"lineDisplay","line":"lineDisplay","company":"lineDisplay","owner":"ownerDisplay",
+  "operator":"lineDisplay","shipping line":"lineDisplay","line":"lineDisplay","company":"lineDisplay",
+  "owner / operator":"lineDisplay","owner and operator":"lineDisplay","owner/operator":"lineDisplay",
+  "original operator":"lineDisplay","original owner / operator":"lineDisplay","original owner and operator":"lineDisplay",
+  "original owner/operator":"lineDisplay","original owner":"ownerDisplay",
+  "later operator":"laterOperatorDisplay","subsequent operator":"laterOperatorDisplay",
+  "managing owner":"ownerDisplay","owner":"ownerDisplay",
   "port of registry":"portOfRegistry","registry":"portOfRegistry","registered port":"portOfRegistry",
   "flag":"flagDisplay","country":"countryDisplay","nation":"countryDisplay",
   "built":"builtDate","completed":"completedDate","completion":"completedDate",
@@ -312,6 +317,16 @@ function extractTitle(doc,url){
     .split("-").map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(" ");
 }
 
+function extractSubtitleLine(doc){
+  const subtitle=cleanText(doc.querySelector(".subtitle")?.textContent||"");
+  if(!subtitle) return "";
+  // Most guides use: "Shipping Line · Year · Ship Guide".
+  const parts=subtitle.split(/\s*[·•]\s*/).map(cleanText).filter(Boolean);
+  if(parts.length>=2 && /^(18|19|20)\d{2}$/.test(parts[1])) return parts[0];
+  // Conservative fallback: remove the year and trailing "Ship Guide".
+  return cleanText(subtitle.replace(/\s*[·•]\s*(18|19|20)\d{2}.*$/,""));
+}
+
 function extractLinks(doc,base){
   const seen=new Set();
   const links=[];
@@ -345,6 +360,16 @@ function deriveRecord(url,doc){
 
   for(const [key,item] of Object.entries(facts)) record[key]=item.value;
 
+  // Normalize shipping-line/operator fields into one primary lineDisplay value.
+  // Exact key-fact values take priority; subtitle is a fallback.
+  record.lineDisplay =
+    record.lineDisplay ||
+    record.operatorDisplay ||
+    record.originalOperatorDisplay ||
+    record.originalOwnerOperatorDisplay ||
+    extractSubtitleLine(doc) ||
+    "";
+
   if(record.builderDisplay){
     const b=canonicalBuilder(record.builderDisplay);
     record.builderId=b.id;
@@ -352,7 +377,10 @@ function deriveRecord(url,doc){
     record.builderMappingStatus=b.status;
     record.builderMappingMethod=b.method;
   }
-  if(record.lineDisplay) record.lineId=slugify(record.lineDisplay.split(/[,(·•]/)[0]);
+  if(record.lineDisplay) {
+    record.linePrimaryDisplay=cleanText(record.lineDisplay.split(/\s*[;]\s*/)[0]);
+    record.lineId=slugify(record.linePrimaryDisplay.split(/[,(·•]/)[0]);
+  }
   if(record.countryDisplay) record.countryId=slugify(record.countryDisplay.split(/[,(·•]/)[0]);
   if(record.shipyardDisplay) record.shipyardId=slugify(record.shipyardDisplay.split(/[,(·•]/)[0]);
   if(record.classDisplay) record.classId=slugify(record.classDisplay.replace(/\bclass\b/i,""));
@@ -544,7 +572,7 @@ function buildOutputs(){
   return {
     "ships.json":{schemaVersion:"0.1",generatedAt,count:shipsCore.length,ships:shipsCore},
     "builders.json":{schemaVersion:"0.1",generatedAt,count:derivedBuilders.length,builders:derivedBuilders},
-    "shipping-lines.json":{schemaVersion:"0.1",generatedAt,items:facet("lineDisplay","lineId")},
+    "shipping-lines.json":{schemaVersion:"0.2",generatedAt,items:facet("linePrimaryDisplay","lineId")},
     "countries.json":{schemaVersion:"0.1",generatedAt,items:facet("countryDisplay","countryId")},
     "shipyards.json":{schemaVersion:"0.1",generatedAt,items:facet("shipyardDisplay","shipyardId")},
     "classes.json":{schemaVersion:"0.1",generatedAt,items:facet("classDisplay","classId")},
