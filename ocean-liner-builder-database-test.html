@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ocean Liner Builder Database — Extraction Test</title>
+  <meta
+    name="description"
+    content="A browser-based test page that scans Ocean Liner Curator ship guides, extracts standardized builder fields, and groups ships by builder."
+  />
+
+  <style>
+    :root{
+      --ink:#0a1110;
+      --ink-soft:#111b19;
+      --panel:rgba(18,27,25,.86);
+      --panel-strong:#121c1a;
+      --paper:#e6dfcf;
+      --muted:#bdb5a5;
+      --brass:#bfa46a;
+      --brass-soft:rgba(191,164,106,.22);
+      --line:rgba(191,164,106,.35);
+      --success:#9fc7a9;
+      --warning:#d8bd79;
+      --danger:#d48d86;
+      --shadow:0 22px 60px rgba(0,0,0,.38);
+      --radius:20px;
+    }
+
+    *{box-sizing:border-box}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      min-height:100vh;
+      color:var(--paper);
+      background:
+        radial-gradient(circle at 50% -10%, rgba(191,164,106,.13), transparent 38%),
+        linear-gradient(180deg, #0d1715 0%, var(--ink) 52%, #070d0c 100%);
+      font-family:"Libre Baskerville", Georgia, serif;
+      line-height:1.65;
+    }
+
+    a{color:var(--brass)}
+
+    button,
+    input{
+      font:inherit;
+    }
+
+    .site-shell{
+      width:min(1180px, calc(100% - 32px));
+      margin:0 auto;
+      padding:32px 0 72px;
+    }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      padding:clamp(28px, 6vw, 62px);
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.055), transparent 48%),
+        rgba(12,20,18,.88);
+      box-shadow:var(--shadow);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:10px;
+      pointer-events:none;
+      border:1px solid rgba(191,164,106,.16);
+      border-radius:20px;
+    }
+
+    .eyebrow{
+      margin:0 0 10px;
+      color:var(--brass);
+      font-size:.78rem;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+
+    h1,h2,h3{
+      font-family:"Spectral", Georgia, serif;
+      line-height:1.12;
+    }
+
+    h1{
+      max-width:880px;
+      margin:0;
+      font-size:clamp(2.1rem, 6vw, 4.7rem);
+      font-weight:600;
+    }
+
+    .lede{
+      max-width:820px;
+      margin:18px 0 0;
+      color:#d2cbbb;
+      font-size:clamp(1rem, 2vw, 1.18rem);
+    }
+
+    .panel{
+      margin-top:24px;
+      padding:clamp(20px, 4vw, 34px);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--panel);
+      box-shadow:0 14px 40px rgba(0,0,0,.25);
+      backdrop-filter:blur(12px);
+    }
+
+    .panel h2{
+      margin:0 0 16px;
+      font-size:clamp(1.5rem, 3vw, 2.2rem);
+    }
+
+    .control-grid{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) auto;
+      gap:12px;
+      align-items:end;
+    }
+
+    label{
+      display:block;
+      margin-bottom:7px;
+      color:var(--muted);
+      font-size:.88rem;
+      font-weight:700;
+    }
+
+    input[type="url"],
+    input[type="search"]{
+      width:100%;
+      min-height:48px;
+      padding:11px 14px;
+      color:var(--paper);
+      border:1px solid rgba(191,164,106,.34);
+      border-radius:12px;
+      outline:none;
+      background:rgba(0,0,0,.26);
+    }
+
+    input:focus{
+      border-color:var(--brass);
+      box-shadow:0 0 0 3px rgba(191,164,106,.12);
+    }
+
+    .button-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:16px;
+    }
+
+    button{
+      min-height:46px;
+      padding:10px 17px;
+      cursor:pointer;
+      color:var(--ink);
+      border:1px solid var(--brass);
+      border-radius:999px;
+      background:var(--brass);
+      font-weight:700;
+      transition:transform .18s ease, filter .18s ease;
+    }
+
+    button:hover{transform:translateY(-1px);filter:brightness(1.06)}
+    button:disabled{cursor:not-allowed;opacity:.5;transform:none}
+
+    button.secondary{
+      color:var(--paper);
+      background:transparent;
+    }
+
+    .status{
+      margin-top:18px;
+      padding:14px 16px;
+      border:1px solid rgba(191,164,106,.24);
+      border-radius:13px;
+      color:#d8d0c0;
+      background:rgba(0,0,0,.18);
+    }
+
+    .status[data-tone="success"]{border-color:rgba(159,199,169,.46);color:var(--success)}
+    .status[data-tone="warning"]{border-color:rgba(216,189,121,.5);color:var(--warning)}
+    .status[data-tone="danger"]{border-color:rgba(212,141,134,.5);color:var(--danger)}
+
+    progress{
+      width:100%;
+      height:12px;
+      margin-top:14px;
+      overflow:hidden;
+      border:0;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+    }
+
+    progress::-webkit-progress-bar{background:rgba(255,255,255,.08)}
+    progress::-webkit-progress-value{background:var(--brass)}
+    progress::-moz-progress-bar{background:var(--brass)}
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0, 1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+
+    .stat{
+      padding:16px;
+      border:1px solid rgba(191,164,106,.22);
+      border-radius:14px;
+      background:rgba(0,0,0,.18);
+    }
+
+    .stat strong{
+      display:block;
+      color:var(--brass);
+      font-family:"Spectral", Georgia, serif;
+      font-size:1.8rem;
+      line-height:1;
+    }
+
+    .stat span{
+      display:block;
+      margin-top:7px;
+      color:var(--muted);
+      font-size:.8rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+
+    .toolbar{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) auto;
+      gap:12px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+
+    .builder-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:15px;
+    }
+
+    .builder-card{
+      padding:18px;
+      border:1px solid rgba(191,164,106,.25);
+      border-radius:16px;
+      background:rgba(0,0,0,.17);
+    }
+
+    .builder-card h3{
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      margin:0 0 12px;
+      font-size:1.25rem;
+    }
+
+    .count{
+      flex:0 0 auto;
+      color:var(--brass);
+      font-size:.9rem;
+    }
+
+    .ship-list{
+      display:grid;
+      gap:7px;
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .ship-list a{
+      text-decoration-thickness:1px;
+      text-underline-offset:3px;
+    }
+
+    details{
+      margin-top:14px;
+      border-top:1px solid rgba(191,164,106,.18);
+      padding-top:13px;
+    }
+
+    summary{
+      cursor:pointer;
+      color:var(--brass);
+      font-weight:700;
+    }
+
+    .diagnostic-list{
+      display:grid;
+      gap:9px;
+      padding-left:20px;
+    }
+
+    .diagnostic-list code{
+      color:#e7d9b3;
+      overflow-wrap:anywhere;
+    }
+
+    .empty{
+      padding:28px;
+      text-align:center;
+      color:var(--muted);
+      border:1px dashed rgba(191,164,106,.3);
+      border-radius:16px;
+    }
+
+    .note{
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    [hidden]{display:none !important}
+
+    @media (max-width:820px){
+      .stats{grid-template-columns:repeat(2, minmax(0, 1fr))}
+      .builder-grid{grid-template-columns:1fr}
+    }
+
+    @media (max-width:620px){
+      .site-shell{width:min(100% - 20px, 1180px);padding-top:10px}
+      .hero{border-radius:20px}
+      .control-grid,
+      .toolbar{grid-template-columns:1fr}
+      .stats{grid-template-columns:1fr 1fr}
+      button{width:100%}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="site-shell">
+    <header class="hero">
+      <p class="eyebrow">Ocean Liner Curator · Experimental Reference Tool</p>
+      <h1>Ocean Liner Builders Database</h1>
+      <p class="lede">
+        This prototype scans the Ship Archive, opens each linked ship guide, looks for a
+        standardized <strong>Builder</strong> field, and automatically groups the ships by builder.
+        It does not alter any page or save anything to the website.
+      </p>
+    </header>
+
+    <section class="panel" aria-labelledby="scanner-title">
+      <h2 id="scanner-title">Run the extraction test</h2>
+
+      <div class="control-grid">
+        <div>
+          <label for="archiveUrl">Ship Archive URL</label>
+          <input
+            id="archiveUrl"
+            type="url"
+            value="/ships/ships"
+            placeholder="/ships/ships"
+            autocomplete="off"
+          />
+        </div>
+
+        <button id="scanButton" type="button">Scan Ship Guides</button>
+      </div>
+
+      <div class="button-row">
+        <button id="stopButton" class="secondary" type="button" disabled>Stop Scan</button>
+        <button id="downloadButton" class="secondary" type="button" disabled>Download JSON Results</button>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite">
+        Ready. For fetch access, place this page on the same domain as the ship guides.
+      </div>
+
+      <progress id="progress" value="0" max="1" hidden></progress>
+
+      <div class="stats" aria-label="Extraction summary">
+        <div class="stat"><strong id="linkedCount">0</strong><span>Guide links found</span></div>
+        <div class="stat"><strong id="parsedCount">0</strong><span>Builders extracted</span></div>
+        <div class="stat"><strong id="builderCount">0</strong><span>Unique builders</span></div>
+        <div class="stat"><strong id="failedCount">0</strong><span>Needs review</span></div>
+      </div>
+    </section>
+
+    <section id="resultsPanel" class="panel" aria-labelledby="results-title">
+      <div class="toolbar">
+        <h2 id="results-title">Builder results</h2>
+        <input id="builderSearch" type="search" placeholder="Filter builders or ships…" disabled />
+      </div>
+
+      <div id="results" class="empty">
+        Run the scanner to see whether the existing guide structure can support a builder database.
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="diagnostics-title">
+      <h2 id="diagnostics-title">Diagnostics</h2>
+      <p class="note">
+        Pages listed here were inaccessible, duplicated, or did not expose a recognizable Builder field.
+        This is the section that will reveal whether the template is truly standardized.
+      </p>
+      <div id="diagnostics" class="empty">No diagnostics yet.</div>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const archiveUrlInput = document.getElementById("archiveUrl");
+      const scanButton = document.getElementById("scanButton");
+      const stopButton = document.getElementById("stopButton");
+      const downloadButton = document.getElementById("downloadButton");
+      const builderSearch = document.getElementById("builderSearch");
+      const statusBox = document.getElementById("status");
+      const progress = document.getElementById("progress");
+      const resultsBox = document.getElementById("results");
+      const diagnosticsBox = document.getElementById("diagnostics");
+
+      const linkedCount = document.getElementById("linkedCount");
+      const parsedCount = document.getElementById("parsedCount");
+      const builderCount = document.getElementById("builderCount");
+      const failedCount = document.getElementById("failedCount");
+
+      const state = {
+        abortController: null,
+        records: [],
+        diagnostics: [],
+        archiveUrl: "",
+        running: false
+      };
+
+      const SHIP_PATH_PATTERN = /\/ships\/(?!ships(?:\/|$))[^?#/]+\/?$/i;
+      const BUILDER_LABEL_PATTERN = /^(?:ship\s*)?builder(?:\(s\))?$/i;
+
+      function setStatus(message, tone = "") {
+        statusBox.textContent = message;
+        statusBox.dataset.tone = tone;
+      }
+
+      function cleanText(value) {
+        return String(value || "")
+          .replace(/\u00a0/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+
+      function normalizeBuilder(value) {
+        return cleanText(value)
+          .replace(/^[:\-–—]\s*/, "")
+          .replace(/[.;,\s]+$/, "");
+      }
+
+      function shipNameFromDocument(doc, url) {
+        const selectors = [
+          "main h1",
+          "article h1",
+          ".ship-title",
+          ".page-title",
+          "h1"
+        ];
+
+        for (const selector of selectors) {
+          const text = cleanText(doc.querySelector(selector)?.textContent);
+          if (text) return text.replace(/\s*[—|]\s*Ship Guide.*$/i, "");
+        }
+
+        const title = cleanText(doc.title);
+        if (title) return title.replace(/\s*[—|]\s*.*$/, "");
+
+        return decodeURIComponent(new URL(url).pathname.split("/").filter(Boolean).pop() || "Unknown ship")
+          .replace(/-/g, " ")
+          .replace(/\b\w/g, char => char.toUpperCase());
+      }
+
+      function discoverShipLinks(doc, archiveUrl) {
+        const base = new URL(archiveUrl, window.location.href);
+        const links = new Map();
+
+        for (const anchor of doc.querySelectorAll("a[href]")) {
+          let url;
+          try {
+            url = new URL(anchor.getAttribute("href"), base);
+          } catch {
+            continue;
+          }
+
+          if (url.origin !== base.origin) continue;
+
+          const normalizedPath = url.pathname.replace(/\/+$/, "") || "/";
+          if (!SHIP_PATH_PATTERN.test(normalizedPath)) continue;
+
+          url.hash = "";
+          url.search = "";
+
+          const key = url.href.replace(/\/+$/, "");
+          if (!links.has(key)) {
+            links.set(key, {
+              url: url.href,
+              anchorText: cleanText(anchor.textContent)
+            });
+          }
+        }
+
+        return [...links.values()];
+      }
+
+      function builderFromExplicitAttributes(doc) {
+        const direct = doc.querySelector(
+          '[data-field="builder"], [data-label="builder"], [data-builder], [itemprop="manufacturer"]'
+        );
+
+        if (!direct) return "";
+
+        return normalizeBuilder(
+          direct.getAttribute("data-builder") ||
+          direct.getAttribute("content") ||
+          direct.textContent
+        );
+      }
+
+      function builderFromDefinitionList(doc) {
+        for (const dt of doc.querySelectorAll("dt")) {
+          if (!BUILDER_LABEL_PATTERN.test(cleanText(dt.textContent))) continue;
+          const dd = dt.nextElementSibling;
+          if (dd?.tagName === "DD") return normalizeBuilder(dd.textContent);
+        }
+        return "";
+      }
+
+      function builderFromTable(doc) {
+        for (const row of doc.querySelectorAll("tr")) {
+          const cells = [...row.children].filter(el => /^(TH|TD)$/.test(el.tagName));
+          if (cells.length < 2) continue;
+
+          if (BUILDER_LABEL_PATTERN.test(cleanText(cells[0].textContent))) {
+            return normalizeBuilder(cells.slice(1).map(cell => cell.textContent).join(" "));
+          }
+        }
+        return "";
+      }
+
+      function builderFromStructuredBlocks(doc) {
+        const candidates = doc.querySelectorAll(
+          ".fact, .facts li, .spec, .specification, .specifications li, .detail, .meta-item, .quick-fact, .ship-fact"
+        );
+
+        for (const block of candidates) {
+          const children = [...block.children];
+
+          if (children.length >= 2) {
+            const label = cleanText(children[0].textContent).replace(/:$/, "");
+            if (BUILDER_LABEL_PATTERN.test(label)) {
+              return normalizeBuilder(children.slice(1).map(el => el.textContent).join(" "));
+            }
+          }
+
+          const text = cleanText(block.textContent);
+          const match = text.match(/^(?:ship\s*)?builder(?:\(s\))?\s*:\s*(.+)$/i);
+          if (match) return normalizeBuilder(match[1]);
+        }
+
+        return "";
+      }
+
+      function builderFromNearbyElements(doc) {
+        const labels = doc.querySelectorAll("strong, b, span, p, div, li");
+
+        for (const label of labels) {
+          const labelText = cleanText(label.textContent).replace(/:$/, "");
+          if (!BUILDER_LABEL_PATTERN.test(labelText)) continue;
+
+          const sibling = label.nextElementSibling;
+          if (sibling) {
+            const value = normalizeBuilder(sibling.textContent);
+            if (value && !BUILDER_LABEL_PATTERN.test(value)) return value;
+          }
+
+          const parent = label.parentElement;
+          if (parent) {
+            const parentText = cleanText(parent.textContent);
+            const match = parentText.match(/^(?:ship\s*)?builder(?:\(s\))?\s*:?\s*(.+)$/i);
+            if (match) return normalizeBuilder(match[1]);
+          }
+        }
+
+        return "";
+      }
+
+      function extractBuilder(doc) {
+        return (
+          builderFromExplicitAttributes(doc) ||
+          builderFromDefinitionList(doc) ||
+          builderFromTable(doc) ||
+          builderFromStructuredBlocks(doc) ||
+          builderFromNearbyElements(doc)
+        );
+      }
+
+      async function fetchHtml(url, signal) {
+        const response = await fetch(url, {
+          method: "GET",
+          credentials: "same-origin",
+          cache: "no-store",
+          signal
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        return response.text();
+      }
+
+      async function mapWithConcurrency(items, limit, worker) {
+        let nextIndex = 0;
+
+        async function runner() {
+          while (nextIndex < items.length) {
+            const currentIndex = nextIndex++;
+            await worker(items[currentIndex], currentIndex);
+          }
+        }
+
+        await Promise.all(
+          Array.from({ length: Math.min(limit, items.length) }, () => runner())
+        );
+      }
+
+      function updateStats(totalLinks = Number(linkedCount.textContent) || 0) {
+        linkedCount.textContent = String(totalLinks);
+        parsedCount.textContent = String(state.records.length);
+        builderCount.textContent = String(new Set(state.records.map(r => r.builder)).size);
+        failedCount.textContent = String(state.diagnostics.length);
+      }
+
+      function groupedRecords() {
+        const groups = new Map();
+
+        for (const record of state.records) {
+          if (!groups.has(record.builder)) groups.set(record.builder, []);
+          groups.get(record.builder).push(record);
+        }
+
+        return [...groups.entries()]
+          .map(([builder, ships]) => ({
+            builder,
+            ships: ships.sort((a, b) => a.ship.localeCompare(b.ship))
+          }))
+          .sort((a, b) => {
+            if (b.ships.length !== a.ships.length) return b.ships.length - a.ships.length;
+            return a.builder.localeCompare(b.builder);
+          });
+      }
+
+      function renderResults(filter = "") {
+        const query = cleanText(filter).toLowerCase();
+        const groups = groupedRecords()
+          .map(group => ({
+            ...group,
+            ships: group.ships.filter(record =>
+              !query ||
+              group.builder.toLowerCase().includes(query) ||
+              record.ship.toLowerCase().includes(query)
+            )
+          }))
+          .filter(group =>
+            group.ships.length &&
+            (!query ||
+              group.builder.toLowerCase().includes(query) ||
+              group.ships.some(record => record.ship.toLowerCase().includes(query)))
+          );
+
+        if (!groups.length) {
+          resultsBox.className = "empty";
+          resultsBox.textContent = state.records.length
+            ? "No builders or ships match that filter."
+            : "No builder records have been extracted.";
+          return;
+        }
+
+        resultsBox.className = "builder-grid";
+        resultsBox.replaceChildren();
+
+        for (const group of groups) {
+          const card = document.createElement("article");
+          card.className = "builder-card";
+
+          const heading = document.createElement("h3");
+          const name = document.createElement("span");
+          const count = document.createElement("span");
+
+          name.textContent = group.builder;
+          count.className = "count";
+          count.textContent = `${group.ships.length} ${group.ships.length === 1 ? "ship" : "ships"}`;
+
+          heading.append(name, count);
+
+          const list = document.createElement("ul");
+          list.className = "ship-list";
+
+          for (const record of group.ships) {
+            const item = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = record.url;
+            link.textContent = record.ship;
+            item.appendChild(link);
+            list.appendChild(item);
+          }
+
+          card.append(heading, list);
+          resultsBox.appendChild(card);
+        }
+      }
+
+      function renderDiagnostics() {
+        if (!state.diagnostics.length) {
+          diagnosticsBox.className = "empty";
+          diagnosticsBox.textContent = state.running
+            ? "No problems found so far."
+            : "No extraction problems were found.";
+          return;
+        }
+
+        diagnosticsBox.className = "";
+        diagnosticsBox.replaceChildren();
+
+        const list = document.createElement("ol");
+        list.className = "diagnostic-list";
+
+        for (const item of state.diagnostics) {
+          const li = document.createElement("li");
+          const reason = document.createElement("strong");
+          const url = document.createElement("code");
+
+          reason.textContent = `${item.reason}: `;
+          url.textContent = item.url;
+
+          li.append(reason, url);
+          list.appendChild(li);
+        }
+
+        diagnosticsBox.appendChild(list);
+      }
+
+      function createDownload() {
+        const payload = {
+          generatedAt: new Date().toISOString(),
+          archiveUrl: state.archiveUrl,
+          summary: {
+            records: state.records.length,
+            uniqueBuilders: new Set(state.records.map(r => r.builder)).size,
+            diagnostics: state.diagnostics.length
+          },
+          builders: groupedRecords(),
+          diagnostics: state.diagnostics
+        };
+
+        const blob = new Blob([JSON.stringify(payload, null, 2)], {
+          type: "application/json"
+        });
+
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = "ocean-liner-builder-extraction-test.json";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+        URL.revokeObjectURL(url);
+      }
+
+      async function runScan() {
+        if (state.running) return;
+
+        let archiveUrl;
+        try {
+          archiveUrl = new URL(archiveUrlInput.value.trim(), window.location.href).href;
+        } catch {
+          setStatus("Enter a valid Ship Archive URL.", "danger");
+          return;
+        }
+
+        state.running = true;
+        state.archiveUrl = archiveUrl;
+        state.records = [];
+        state.diagnostics = [];
+        state.abortController = new AbortController();
+
+        scanButton.disabled = true;
+        stopButton.disabled = false;
+        downloadButton.disabled = true;
+        builderSearch.disabled = true;
+        progress.hidden = false;
+        progress.value = 0;
+        progress.max = 1;
+
+        resultsBox.className = "empty";
+        resultsBox.textContent = "Scanning has begun…";
+        renderDiagnostics();
+        updateStats(0);
+        setStatus("Opening the Ship Archive…");
+
+        try {
+          const archiveHtml = await fetchHtml(archiveUrl, state.abortController.signal);
+          const archiveDoc = new DOMParser().parseFromString(archiveHtml, "text/html");
+          const links = discoverShipLinks(archiveDoc, archiveUrl);
+
+          if (!links.length) {
+            throw new Error(
+              "No ship-guide links were found. Confirm the archive URL and its link structure."
+            );
+          }
+
+          linkedCount.textContent = String(links.length);
+          progress.max = links.length;
+          setStatus(`Found ${links.length} ship-guide links. Extracting builder fields…`);
+
+          let completed = 0;
+
+          await mapWithConcurrency(links, 6, async link => {
+            if (state.abortController.signal.aborted) return;
+
+            try {
+              const html = await fetchHtml(link.url, state.abortController.signal);
+              const doc = new DOMParser().parseFromString(html, "text/html");
+              const builder = extractBuilder(doc);
+              const ship = shipNameFromDocument(doc, link.url);
+
+              if (builder) {
+                state.records.push({
+                  ship,
+                  builder,
+                  url: link.url
+                });
+              } else {
+                state.diagnostics.push({
+                  url: link.url,
+                  reason: "Builder field not recognized"
+                });
+              }
+            } catch (error) {
+              if (error.name !== "AbortError") {
+                state.diagnostics.push({
+                  url: link.url,
+                  reason: `Fetch failed (${error.message})`
+                });
+              }
+            } finally {
+              completed += 1;
+              progress.value = completed;
+              updateStats(links.length);
+
+              if (completed % 10 === 0 || completed === links.length) {
+                renderResults(builderSearch.value);
+                renderDiagnostics();
+                setStatus(
+                  `Scanned ${completed} of ${links.length} guides; extracted ${state.records.length} builder records.`
+                );
+              }
+            }
+          });
+
+          if (state.abortController.signal.aborted) {
+            setStatus(
+              `Scan stopped after ${Math.round(progress.value)} of ${links.length} guides.`,
+              "warning"
+            );
+          } else {
+            const successRate = links.length
+              ? Math.round((state.records.length / links.length) * 100)
+              : 0;
+
+            setStatus(
+              `Finished: ${state.records.length} of ${links.length} guides produced a builder record (${successRate}% extraction rate).`,
+              successRate >= 90 ? "success" : successRate >= 70 ? "warning" : "danger"
+            );
+          }
+
+          renderResults(builderSearch.value);
+          renderDiagnostics();
+          builderSearch.disabled = !state.records.length;
+          downloadButton.disabled = !(state.records.length || state.diagnostics.length);
+        } catch (error) {
+          if (error.name === "AbortError") {
+            setStatus("The scan was stopped.", "warning");
+          } else {
+            setStatus(
+              `${error.message} If this file was opened directly from a device, upload it to OceanLiners.net and run it there so same-origin fetching is permitted.`,
+              "danger"
+            );
+          }
+        } finally {
+          state.running = false;
+          scanButton.disabled = false;
+          stopButton.disabled = true;
+          state.abortController = null;
+        }
+      }
+
+      scanButton.addEventListener("click", runScan);
+
+      stopButton.addEventListener("click", () => {
+        state.abortController?.abort();
+      });
+
+      downloadButton.addEventListener("click", createDownload);
+
+      builderSearch.addEventListener("input", event => {
+        renderResults(event.target.value);
+      });
+    })();
+  </script>
+</body>
+</html>
