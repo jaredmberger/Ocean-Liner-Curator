@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Harland & Wolff — Ocean Liner Builder | Ocean Liner Curator</title>
+  <meta
+    name="description"
+    content="An experimental builder reference page grouping 78 Ocean Liner Curator ship guides associated with Harland & Wolff."
+  />
+
+  <style>
+    :root {
+      --ink:#08100f;
+      --ink-soft:#101a18;
+      --panel:rgba(17,27,25,.88);
+      --paper:#eee7d8;
+      --muted:#bdb5a5;
+      --brass:#bfa46a;
+      --brass-soft:rgba(191,164,106,.17);
+      --line:rgba(191,164,106,.32);
+      --shadow:0 24px 70px rgba(0,0,0,.4);
+      --radius:20px;
+    }
+
+    * { box-sizing:border-box; }
+
+    html { scroll-behavior:smooth; }
+
+    body {
+      margin:0;
+      color:var(--paper);
+      background:
+        radial-gradient(circle at 50% -12%, rgba(191,164,106,.16), transparent 36%),
+        linear-gradient(180deg, #0d1715 0%, var(--ink) 56%, #060b0a 100%);
+      font-family:"Libre Baskerville", Georgia, serif;
+      line-height:1.65;
+    }
+
+    a {
+      color:inherit;
+      text-decoration-color:rgba(191,164,106,.72);
+      text-underline-offset:4px;
+    }
+
+    .shell {
+      width:min(1180px, calc(100% - 32px));
+      margin:0 auto;
+      padding:30px 0 80px;
+    }
+
+    .hero {
+      position:relative;
+      overflow:hidden;
+      min-height:520px;
+      display:flex;
+      align-items:flex-end;
+      padding:clamp(28px, 7vw, 72px);
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:
+        linear-gradient(90deg, rgba(5,11,10,.96) 0%, rgba(7,15,13,.8) 54%, rgba(7,15,13,.44) 100%),
+        radial-gradient(circle at 78% 30%, rgba(191,164,106,.17), transparent 27%),
+        linear-gradient(135deg, #17221f, #09100f);
+      box-shadow:var(--shadow);
+    }
+
+    .hero::before {
+      content:"H&W";
+      position:absolute;
+      right:clamp(20px, 7vw, 80px);
+      top:50%;
+      transform:translateY(-52%);
+      color:rgba(191,164,106,.075);
+      font-family:"Spectral", Georgia, serif;
+      font-size:clamp(8rem, 23vw, 18rem);
+      font-weight:700;
+      letter-spacing:-.08em;
+      line-height:1;
+    }
+
+    .hero::after {
+      content:"";
+      position:absolute;
+      inset:10px;
+      border:1px solid rgba(191,164,106,.16);
+      border-radius:20px;
+      pointer-events:none;
+    }
+
+    .hero-content {
+      position:relative;
+      z-index:1;
+      max-width:790px;
+    }
+
+    .eyebrow {
+      margin:0 0 12px;
+      color:var(--brass);
+      font-size:.78rem;
+      font-weight:700;
+      letter-spacing:.17em;
+      text-transform:uppercase;
+    }
+
+    h1,h2,h3 {
+      font-family:"Spectral", Georgia, serif;
+      line-height:1.1;
+    }
+
+    h1 {
+      margin:0;
+      font-size:clamp(3rem, 8vw, 6.5rem);
+      font-weight:600;
+      letter-spacing:-.035em;
+    }
+
+    .lede {
+      max-width:700px;
+      margin:20px 0 0;
+      color:#d4ccbc;
+      font-size:clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .hero-note {
+      margin:18px 0 0;
+      color:var(--muted);
+      font-size:.88rem;
+    }
+
+    .stats {
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:14px;
+      margin-top:24px;
+    }
+
+    .stat {
+      padding:20px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(0,0,0,.21);
+      backdrop-filter:blur(8px);
+    }
+
+    .stat strong {
+      display:block;
+      color:var(--brass);
+      font-family:"Spectral", Georgia, serif;
+      font-size:2rem;
+      line-height:1;
+    }
+
+    .stat span {
+      display:block;
+      margin-top:7px;
+      color:var(--muted);
+      font-size:.76rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .panel {
+      margin-top:24px;
+      padding:clamp(22px, 4vw, 38px);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--panel);
+      box-shadow:0 16px 44px rgba(0,0,0,.24);
+      backdrop-filter:blur(12px);
+    }
+
+    .panel-heading {
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      align-items:end;
+      margin-bottom:22px;
+    }
+
+    .panel h2 {
+      margin:0;
+      font-size:clamp(1.8rem, 4vw, 2.8rem);
+    }
+
+    .panel-copy {
+      max-width:760px;
+      color:var(--muted);
+    }
+
+    .search-wrap {
+      min-width:min(100%, 320px);
+    }
+
+    label {
+      display:block;
+      margin-bottom:7px;
+      color:var(--muted);
+      font-size:.8rem;
+      font-weight:700;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+
+    input {
+      width:100%;
+      min-height:48px;
+      padding:11px 14px;
+      color:var(--paper);
+      border:1px solid rgba(191,164,106,.38);
+      border-radius:12px;
+      outline:none;
+      background:rgba(0,0,0,.25);
+      font:inherit;
+    }
+
+    input:focus {
+      border-color:var(--brass);
+      box-shadow:0 0 0 3px rgba(191,164,106,.12);
+    }
+
+    .ship-grid {
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:14px;
+    }
+
+    .ship-card {
+      min-height:170px;
+      display:flex;
+      flex-direction:column;
+      padding:20px;
+      border:1px solid rgba(191,164,106,.23);
+      border-radius:16px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.035), transparent 55%),
+        rgba(0,0,0,.18);
+      transition:transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .ship-card:hover {
+      transform:translateY(-2px);
+      border-color:rgba(191,164,106,.56);
+      background:rgba(0,0,0,.26);
+    }
+
+    .ship-kicker {
+      margin:0 0 10px;
+      color:var(--brass);
+      font-size:.68rem;
+      font-weight:700;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+    }
+
+    .ship-card h3 {
+      margin:0;
+      font-size:1.32rem;
+    }
+
+    .source-builder {
+      margin:auto 0 0;
+      padding-top:18px;
+      color:var(--muted);
+      font-size:.78rem;
+      line-height:1.45;
+    }
+
+    .empty {
+      display:none;
+      padding:28px;
+      color:var(--muted);
+      text-align:center;
+      border:1px dashed rgba(191,164,106,.32);
+      border-radius:14px;
+    }
+
+    details {
+      border:1px solid rgba(191,164,106,.23);
+      border-radius:14px;
+      background:rgba(0,0,0,.16);
+    }
+
+    summary {
+      padding:17px 20px;
+      cursor:pointer;
+      color:var(--brass);
+      font-weight:700;
+    }
+
+    .table-wrap {
+      overflow:auto;
+      padding:0 20px 20px;
+    }
+
+    table {
+      width:100%;
+      border-collapse:collapse;
+      min-width:620px;
+    }
+
+    th,td {
+      padding:12px 10px;
+      text-align:left;
+      border-bottom:1px solid rgba(191,164,106,.15);
+    }
+
+    th {
+      color:var(--brass);
+      font-size:.74rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    td:last-child, th:last-child {
+      width:110px;
+      text-align:right;
+    }
+
+    .method {
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:14px;
+    }
+
+    .method-step {
+      padding:18px;
+      border-left:3px solid var(--brass);
+      background:rgba(0,0,0,.16);
+    }
+
+    .method-step strong {
+      display:block;
+      margin-bottom:8px;
+      color:var(--brass);
+      font-family:"Spectral", Georgia, serif;
+      font-size:1.15rem;
+    }
+
+    footer {
+      padding:34px 0 0;
+      color:var(--muted);
+      text-align:center;
+      font-size:.82rem;
+    }
+
+    [hidden] { display:none !important; }
+
+    @media (max-width:920px) {
+      .ship-grid { grid-template-columns:repeat(2, minmax(0,1fr)); }
+      .method { grid-template-columns:1fr; }
+    }
+
+    @media (max-width:700px) {
+      .shell { width:min(100% - 20px, 1180px); padding-top:10px; }
+      .hero { min-height:470px; border-radius:20px; }
+      .hero::before { right:20px; opacity:.7; }
+      .stats { grid-template-columns:1fr; }
+      .panel-heading { display:block; }
+      .search-wrap { margin-top:18px; }
+      .ship-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Ocean Liner Builders · Proof of Concept</p>
+        <h1>Harland &amp; Wolff</h1>
+        <p class="lede">
+          A unified reference index of Ocean Liner Curator ship guides associated with
+          Harland &amp; Wolff, generated from the builder information already published
+          across the Ship Archive.
+        </p>
+        <p class="hero-note">
+          Original builder wording is preserved on each ship record; related variants are
+          grouped here under one canonical builder identity.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>78</strong>
+            <span>Documented ships</span>
+          </div>
+          <div class="stat">
+            <strong>18</strong>
+            <span>Source wording variants</span>
+          </div>
+          <div class="stat">
+            <strong>1</strong>
+            <span>Canonical builder</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">Documented Fleet</p>
+          <h2>Ships in the archive</h2>
+          <p class="panel-copy">
+            These records were assembled automatically from existing ship guides. Search by
+            ship name or by any wording contained in the original Builder field.
+          </p>
+        </div>
+
+        <div class="search-wrap">
+          <label for="shipSearch">Search this builder</label>
+          <input id="shipSearch" type="search" placeholder="Olympic, Belfast, Yard No. 315…" />
+        </div>
+      </div>
+
+      <div id="shipGrid" class="ship-grid">
+        
+      <article class="ship-card" data-ship="athlone castle" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/athlone-castle.html">Athlone Castle</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="mv britannic" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/mv-britannic.html">MV Britannic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="mv carnarvon castle" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-carnarvon-castle.html">MV Carnarvon Castle</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="mv georgic" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/mv-georgic.html">MV Georgic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms adriatic" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-adriatic.html">RMS Adriatic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms alcantara" data-source="harland &amp; wolff, belfast (commonly cited)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-alcantara-1926.html">RMS Alcantara</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast (commonly cited)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms andes" data-source="harland &amp; wolff, belfast (yard no. commonly cited: 1005)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-andes-1939.html">RMS Andes</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast (yard no. commonly cited: 1005)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms arundel castle (1921)" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-arundel-castle-1921.html">RMS Arundel Castle (1921)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms asturias (1908)" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-asturias-1908.html">RMS Asturias (1908)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms baltic" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-baltic.html">RMS Baltic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms britannic" data-source="harland &amp; wolff (belfast, ireland)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-britannic-1874.html">RMS Britannic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast, Ireland)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms cedric" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-cedric.html">RMS Cedric</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms celtic" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-celtic.html">RMS Celtic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms laurentic" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-laurentic.html">RMS Laurentic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms megantic" data-source="harland &amp; wolff, belfast (yard no. 358)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-megantic-1909.html">RMS Megantic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast (Yard No. 358)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms oceanic (1899)" data-source="harland &amp; wolff (belfast, northern ireland)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-oceanic-1899.html">RMS Oceanic (1899)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast, Northern Ireland)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms olympic" data-source="harland &amp; wolff (belfast, northern ireland)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-olympic.html">RMS Olympic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast, Northern Ireland)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms republic (1903)" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-republic-1903.html">RMS Republic (1903)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms teutonic (1889)" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-teutonic.html">RMS Teutonic (1889)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms titanic" data-source="harland &amp; wolff (belfast, northern ireland)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-titanic.html">RMS Titanic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast, Northern Ireland)</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms walmer castle" data-source="harland &amp; wolff, belfast · yard no. 342">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-walmer-castle.html">RMS Walmer Castle</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast · Yard No. 342</p>
+      </article>
+
+      <article class="ship-card" data-ship="rms/hmhs britannic" data-source="harland &amp; wolff (belfast, ireland)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/rms-britannic.html">RMS/HMHS Britannic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast, Ireland)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss adriatic (1872)" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-adriatic-1872.html">SS Adriatic (1872)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss afric" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-afric.html">SS Afric</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss amerika (1905)" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-amerika-1905.html">SS Amerika (1905)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss arabic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-arabic.html">SS Arabic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss asturias" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-asturias-1925.html">SS Asturias</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss athenic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-athenic.html">SS Athenic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss atlantic (1873)" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-atlantic-1873.html">SS Atlantic (1873)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss baltic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-baltic-1871.html">SS Baltic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss belgenland" data-source="harland &amp; wolff (belfast), yard no. 391">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-belgenland.html">SS Belgenland</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast), yard no. 391</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss belgia" data-source="harland &amp; wolff, belfast · yard no. 327">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-belgia.html">SS Belgia</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast · Yard No. 327</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss brasilia" data-source="harland &amp; wolff, belfast · yard no. 318">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-brasilia.html">SS Brasilia</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast · Yard No. 318</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss briton" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-briton.html">SS Briton</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss calgaric" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-calgaric.html">SS Calgaric</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss canada (1896)" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-canada-1896.html">SS Canada (1896)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss canberra" data-source="harland &amp; wolff (belfast, northern ireland)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-canberra.html">SS Canberra</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast, Northern Ireland)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss ceramic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-ceramic.html">SS Ceramic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss commonwealth" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-commonwealth.html">SS Commonwealth</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss coptic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-coptic.html">SS Coptic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss corinthic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-corinthic.html">SS Corinthic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss cymric" data-source="harland &amp; wolff, queen’s island, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-cymric.html">SS Cymric</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Queen’s Island, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss doric" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-doric.html">SS Doric</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss germanic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-germanic.html">SS Germanic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss gothic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-gothic-white-star-line.html">SS Gothic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss ionic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-ionic.html">SS Ionic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss lapland" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-lapland.html">SS Lapland</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss laurentic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-laurentic.html">SS Laurentic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss majestic" data-source="harland &amp; wolff (belfast, ireland)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-majestic-1889.html">SS Majestic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast, Ireland)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss maloja" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-maloja.html">SS Maloja</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss medic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-medic.html">SS Medic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss minnetonka" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-minnetonka.html">SS Minnetonka</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss minnewaska" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-minnewaska.html">SS Minnewaska</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss mooltan" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-mooltan.html">SS Mooltan</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss new england" data-source="harland &amp; wolff, belfast · yard no. 315">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-new-england.html">SS New England</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast · Yard No. 315</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss nieuw amsterdam (1906)" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-nieuw-amsterdam-1906.html">SS Nieuw Amsterdam (1906)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss nomadic" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-nomadic.html">SS Nomadic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss noordam" data-source="harland &amp; wolff, belfast · yard no. 338 · slip no. 5">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-noordam.html">SS Noordam</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast · Yard No. 338 · Slip No. 5</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss oceanic (1871)" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-oceanic-1871.html">SS Oceanic (1871)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss pennland" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-pennland.html">SS Pennland</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss persic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-persic.html">SS Persic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss president lincoln" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-president-lincoln.html">SS President Lincoln</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss republic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-republic.html">SS Republic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss rijndam" data-source="harland &amp; wolff, belfast · yard no. 336">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-rijndam-1901.html">SS Rijndam</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast · Yard No. 336</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss romanic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-romanic.html">SS Romanic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss rotterdam (1908)" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-rotterdam-1908.html">SS Rotterdam (1908)</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss runic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-runic.html">SS Runic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss saxon" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-saxon.html">SS Saxon</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss suevic" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-suevic.html">SS Suevic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss traffic" data-source="harland &amp; wolff (belfast)">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-traffic.html">SS Traffic</a></h3>
+        <p class="source-builder">Harland &amp; Wolff (Belfast)</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss veendam" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-veendam.html">SS Veendam</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss volendam" data-source="harland &amp; wolff, govan">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-volendam.html">SS Volendam</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Govan</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss warwick castle" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-warwick-castle.html">SS Warwick Castle</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss westernland" data-source="harland &amp; wolff ltd., belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-westernland.html">SS Westernland</a></h3>
+        <p class="source-builder">Harland &amp; Wolff Ltd., Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss winchester castle" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-winchester-castle.html">SS Winchester Castle</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss winifredian" data-source="harland &amp; wolff, belfast · yard no. 324">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-winifredian.html">SS Winifredian</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast · Yard No. 324</p>
+      </article>
+
+      <article class="ship-card" data-ship="ss zeeland" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/ss-zeeland.html">SS Zeeland</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+
+      <article class="ship-card" data-ship="stirling castle" data-source="harland &amp; wolff, belfast">
+        <p class="ship-kicker">Ocean Liner Curator Ship Guide</p>
+        <h3><a href="https://www.oceanliners.net/ships/stirling-castle.html">Stirling Castle</a></h3>
+        <p class="source-builder">Harland &amp; Wolff, Belfast</p>
+      </article>
+      </div>
+
+      <div id="emptyState" class="empty">
+        No Harland &amp; Wolff ship records match that search.
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">Canonicalization Test</p>
+      <h2>How the grouping works</h2>
+      <p class="panel-copy">
+        The page does not erase or rewrite the builder data in the ship guides. It adds a
+        reference layer that recognizes related descriptions as belonging to the same builder.
+      </p>
+
+      <div class="method">
+        <div class="method-step">
+          <strong>1. Preserve</strong>
+          Keep the full wording already published in each guide, including locations,
+          historical geography, yard numbers, and qualifying notes.
+        </div>
+        <div class="method-step">
+          <strong>2. Associate</strong>
+          Map each recognized wording variant to the canonical identifier
+          <code>harland-wolff</code>.
+        </div>
+        <div class="method-step">
+          <strong>3. Present</strong>
+          Generate one builder page and one unified ship count without editing the individual
+          guides.
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">Source Metadata</p>
+      <h2>Builder wording found in the guides</h2>
+      <p class="panel-copy">
+        The extraction test found 18 distinct Harland &amp; Wolff descriptions.
+        They remain visible here so the normalization process is transparent and auditable.
+      </p>
+
+      <details>
+        <summary>View all 18 source variants</summary>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Original builder wording</th>
+                <th>Guides</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+        <tr>
+          <td>Harland &amp; Wolff, Belfast</td>
+          <td>41</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff (Belfast)</td>
+          <td>16</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff (Belfast, Northern Ireland)</td>
+          <td>4</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff (Belfast, Ireland)</td>
+          <td>3</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff (Belfast), yard no. 391</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff Ltd., Belfast</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast (commonly cited)</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast (Yard No. 358)</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast (yard no. commonly cited: 1005)</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast · Yard No. 315</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast · Yard No. 318</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast · Yard No. 324</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast · Yard No. 327</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast · Yard No. 336</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast · Yard No. 338 · Slip No. 5</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Belfast · Yard No. 342</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Govan</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>Harland &amp; Wolff, Queen’s Island, Belfast</td>
+          <td>1</td>
+        </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <footer>
+      Experimental page generated from Ocean Liner Curator Ship Archive metadata.
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const input = document.getElementById("shipSearch");
+      const cards = [...document.querySelectorAll(".ship-card")];
+      const emptyState = document.getElementById("emptyState");
+
+      input.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+        let visible = 0;
+
+        for (const card of cards) {
+          const haystack = `${card.dataset.ship} ${card.dataset.source}`;
+          const matches = !query || haystack.includes(query);
+          card.hidden = !matches;
+          if (matches) visible += 1;
+        }
+
+        emptyState.style.display = visible ? "none" : "block";
+      });
+    })();
+  </script>
+</body>
+</html>
