@@ -1,0 +1,1075 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-07-21T08:18:14.029459+00:00",
+  "source": {
+    "file": "ocean-liner-builder-extraction-test.json",
+    "archiveUrl": "https://www.oceanliners.net/ships/ships",
+    "sourceGeneratedAt": "2026-07-21T08:05:39.072Z"
+  },
+  "description": "Exact source Builder strings mapped to canonical builder IDs. Source wording is never discarded.",
+  "count": 177,
+  "aliases": [
+    {
+      "source": "AG Vulcan (Hamburg, Germany)",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Vulcan (Stettin)",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Vulcan (Stettin, Germany)",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Vulcan (Vulcan-Werke), Stettin",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Vulcan, Hamburg",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Vulcan, Stettin",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Vulcan, Stettin, Germany",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Vulkan, Stettin",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Weser (Bremen)",
+      "builderId": "ag-weser",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "AG Weser, Bremen",
+      "builderId": "ag-weser",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Alexander Stephen & Sons (Glasgow)",
+      "builderId": "alexander-stephen-sons",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)",
+      "builderId": "alexander-stephen-sons",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland",
+      "builderId": "alexander-stephen-sons",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Alexander Stephen & Sons, Linthouse, Glasgow",
+      "builderId": "alexander-stephen-sons",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Ansaldo (Genoa / Sestri Ponente), Yard No. 918",
+      "builderId": "ansaldo",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Ansaldo (Sestri Ponente / Genoa)",
+      "builderId": "ansaldo",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Ansaldo Shipyard (Genoa)",
+      "builderId": "ansaldo",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Ansaldo Shipyard, Genoa",
+      "builderId": "ansaldo",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy",
+      "builderId": "ansaldo",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Ansaldo Shipyards, Genoa",
+      "builderId": "ansaldo",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)",
+      "builderId": "armstrong-whitworth",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Armstrong Whitworth, Newcastle-upon-Tyne",
+      "builderId": "armstrong-whitworth",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)",
+      "builderId": "armstrong-whitworth",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Ateliers et Chantiers de Bretagne, Saint-Nazaire",
+      "builderId": "ateliers-chantiers-bretagne",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)",
+      "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)",
+      "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France",
+      "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Barclay Curle & Co., Glasgow",
+      "builderId": "barclay-curle-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Barclay, Curle & Company, Glasgow, Scotland",
+      "builderId": "barclay-curle-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Barrow Shipbuilding Company, Barrow-in-Furness",
+      "builderId": "barrow-shipbuilding-company",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)",
+      "builderId": "bethlehem-fore-river",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)",
+      "builderId": "bethlehem-fore-river",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Bethlehem Steel Corporation, Quincy, Massachusetts",
+      "builderId": "bethlehem-steel-corporation",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Blohm & Voss (Hamburg)",
+      "builderId": "blohm-voss",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Blohm & Voss (Hamburg, Germany)",
+      "builderId": "blohm-voss",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Blohm & Voss, Hamburg",
+      "builderId": "blohm-voss",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Blohm & Voss, Hamburg (yard no. commonly cited: 473)",
+      "builderId": "blohm-voss",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Blohm & Voss, Hamburg · Yard No. 125",
+      "builderId": "blohm-voss",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Blohm & Voss, Hamburg · Yard No. 132",
+      "builderId": "blohm-voss",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Blohm & Voss, Hamburg, Germany",
+      "builderId": "blohm-voss",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Bremer Vulkan, Bremen-Vegesack, Germany",
+      "builderId": "bremer-vulkan",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "C. S. Swan & Hunter Ltd., Wallsend-on-Tyne",
+      "builderId": "swan-hunter",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "C.S. Swan & Hunter (Wallsend-on-Tyne, England)",
+      "builderId": "swan-hunter",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Caird & Company, Greenock, Scotland",
+      "builderId": "caird-and-company",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Cammell Laird (Birkenhead, England)",
+      "builderId": "cammell-laird",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Cammell Laird, Birkenhead",
+      "builderId": "cammell-laird",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Cammell, Laird & Co., Birkenhead (England)",
+      "builderId": "cammell-laird",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy",
+      "builderId": "cantiere-navale-di-riva-trigoso",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Cantiere Navale Triestino, Monfalcone",
+      "builderId": "cantiere-navale-triestino",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Cantiere Navale Triestino, Monfalcone (Italy)",
+      "builderId": "cantiere-navale-triestino",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)",
+      "builderId": "cantieri-riuniti-adriatico",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste, Italy",
+      "builderId": "cantieri-riuniti-adriatico",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Cantieri Riuniti dell’Adriatico (Trieste, Italy)",
+      "builderId": "cantieri-riuniti-adriatico",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Cantieri Riuniti dell’Adriatico, Monfalcone",
+      "builderId": "cantieri-riuniti-adriatico",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers & Ateliers de Provence, Port-de-Bouc, France",
+      "builderId": "chantiers-ateliers-provence",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France",
+      "builderId": "ateliers-chantiers-saint-nazaire-penhoet",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers & Ateliers de Saint-Nazaire, Penhoët",
+      "builderId": "ateliers-chantiers-saint-nazaire-penhoet",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France",
+      "builderId": "ateliers-chantiers-saint-nazaire-penhoet",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers de l'Atlantique, Saint-Nazaire",
+      "builderId": "chantiers-de-l-atlantique",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers de l’Atlantique (Saint-Nazaire, France)",
+      "builderId": "chantiers-de-l-atlantique",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers de l’Atlantique, Saint-Nazaire",
+      "builderId": "chantiers-de-l-atlantique",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers de Penhoët (Saint-Nazaire, France)",
+      "builderId": "chantiers-de-penhoet",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)",
+      "builderId": "chantiers-de-penhoet",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers de Penhoët, Saint-Nazaire",
+      "builderId": "chantiers-de-penhoet",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area",
+      "builderId": "chantiers-ateliers-provence",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "D. & W. Henderson Ltd., Glasgow",
+      "builderId": "d-and-w-henderson-ltd",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Deschimag AG Weser, Bremen",
+      "builderId": "ag-weser",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)",
+      "builderId": "ag-weser",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Eastern Shipbuilding Company, New London / Groton, Connecticut",
+      "builderId": "eastern-shipbuilding-company",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "F. Schichau, Danzig (then Germany; now Gdańsk, Poland)",
+      "builderId": "f-schichau",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "F. Schichau, Danzig (then Germany; today Gdańsk)",
+      "builderId": "f-schichau",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "F. Schichau, Danzig, Germany",
+      "builderId": "f-schichau",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow)",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Co., Govan",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Co., Govan (Glasgow)",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Company, Govan",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fairfield Shipbuilding & Engineering Company, Govan, Scotland",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts",
+      "builderId": "bethlehem-fore-river",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Furness, Withy & Co., West Hartlepool, England",
+      "builderId": "furness",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Germaniawerft / Friedrich Krupp, Kiel, Germany",
+      "builderId": "germaniawerft-friedrich-krupp",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)",
+      "builderId": "ansaldo",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Götaverken, Gothenburg (Göteborg), Sweden",
+      "builderId": "gotaverken",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Harland & Wolff (Belfast)",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff (Belfast), yard no. 391",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff (Belfast, Ireland)",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff (Belfast, Northern Ireland)",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff Ltd., Belfast",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast (commonly cited)",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast (Yard No. 358)",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast (yard no. commonly cited: 1005)",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast · Yard No. 315",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast · Yard No. 318",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast · Yard No. 324",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast · Yard No. 327",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast · Yard No. 336",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast · Yard No. 338 · Slip No. 5",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Belfast · Yard No. 342",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Govan",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Harland & Wolff, Queen’s Island, Belfast",
+      "builderId": "harland-wolff",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Hawthorn Leslie & Company, Hebburn",
+      "builderId": "hawthorn-leslie",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland",
+      "builderId": "j-g-thomson",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "J. & G. Thomson & Co., Glasgow",
+      "builderId": "j-g-thomson",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "J. & G. Thomson (Clydebank/Glasgow, Scotland)",
+      "builderId": "j-g-thomson",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "J. & G. Thomson / James & George Thomson, Clydebank",
+      "builderId": "j-g-thomson",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "J. & G. Thomson, Clydebank",
+      "builderId": "j-g-thomson",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "J. & G. Thomson, Clydebank (Scotland)",
+      "builderId": "j-g-thomson",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "J. Scott Russell & Co., Millwall Iron Works (London)",
+      "builderId": "j-scott-russell-and-co",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Jenks Ship Building Company, Port Huron, Michigan",
+      "builderId": "jenks-ship-building-company",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Joh. C. Tecklenborg, Geestemünde (Bremerhaven)",
+      "builderId": "joh-c-tecklenborg",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Joh. C. Tecklenborg, Geestemünde, Germany",
+      "builderId": "joh-c-tecklenborg",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Brown & Co. (Clydebank, Scotland)",
+      "builderId": "john-brown-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Brown & Co. Ltd., Clydebank, Scotland",
+      "builderId": "john-brown-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Brown & Co., Clydebank",
+      "builderId": "john-brown-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Brown & Co., Clydebank (Scotland)",
+      "builderId": "john-brown-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Brown & Co., Clydebank, Scotland",
+      "builderId": "john-brown-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Brown & Company (Clydebank, Scotland)",
+      "builderId": "john-brown-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Brown & Company, Clydebank",
+      "builderId": "john-brown-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Brown & Company, Clydebank (Scotland)",
+      "builderId": "john-brown-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)",
+      "builderId": "fairfield-shipbuilding-engineering-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki",
+      "builderId": "mitsubishi-shipbuilding-and-engineering-co",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)",
+      "builderId": "mitsubishi-shipbuilding-and-engineering-co",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam",
+      "builderId": "nederlandsche-scheepsbouw-maatschappij",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "New York Shipbuilding Company, Camden, New Jersey",
+      "builderId": "new-york-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "New York Shipbuilding Corporation (Camden, New Jersey, USA)",
+      "builderId": "new-york-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "New York Shipbuilding Corporation, Camden, New Jersey",
+      "builderId": "new-york-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)",
+      "builderId": "newport-news-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)",
+      "builderId": "newport-news-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Newport News Shipbuilding & Drydock Company",
+      "builderId": "newport-news-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Newport News Shipbuilding (Virginia, USA)",
+      "builderId": "newport-news-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Newport News Shipbuilding and Dry Dock Company",
+      "builderId": "newport-news-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Newport News Shipbuilding and Dry Dock Company, Virginia",
+      "builderId": "newport-news-shipbuilding",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "R. & W. Hawthorn, Leslie & Co. Ltd., Hebburn-on-Tyne",
+      "builderId": "hawthorn-leslie",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne",
+      "builderId": "hawthorn-leslie",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Robert Duncan & Company (Greenock / Port Glasgow, Scotland)",
+      "builderId": "robert-duncan-and-company-greenock-port-glasgow",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Robert Menzies & Sons, Leith, Scotland",
+      "builderId": "robert-menzies-and-sons",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Robert Napier & Sons, Glasgow",
+      "builderId": "robert-napier-and-sons",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Robert Steele & Co., Greenock",
+      "builderId": "robert-steele-and-co",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Rotterdam Drydock Company (RDM), Rotterdam, Netherlands",
+      "builderId": "rotterdamsche-droogdok-maatschappij",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)",
+      "builderId": "rotterdamsche-droogdok-maatschappij",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Scotts Shipbuilding & Engineering Co. Ltd., Greenock",
+      "builderId": "scotts-shipbuilding-and-engineering-co-ltd",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Stabilimento Tecnico Triestino, Monfalcone",
+      "builderId": "stabilimento-tecnico-triestino",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Stettiner Vulcan (AG Vulcan), Stettin",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Swan Hunter & Wigham Richardson (Wallsend, England)",
+      "builderId": "swan-hunter",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne",
+      "builderId": "swan-hunter",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Swan Hunter and Wigham Richardson, Wallsend",
+      "builderId": "swan-hunter",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Swan Hunter, Wallsend",
+      "builderId": "swan-hunter",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne",
+      "builderId": "swan-hunter",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Thames Ironworks, London",
+      "builderId": "thames-ironworks",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Tod & McGregor, Glasgow",
+      "builderId": "tod-and-mcgregor",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Vickers Ltd, Barrow-in-Furness",
+      "builderId": "vickers",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vickers, Sons & Maxim Ltd., Barrow-in-Furness",
+      "builderId": "vickers",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vickers-Armstrong Ltd., Barrow-in-Furness",
+      "builderId": "vickers",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vickers-Armstrong, Barrow-in-Furness",
+      "builderId": "vickers",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vickers-Armstrongs (Barrow-in-Furness, England)",
+      "builderId": "vickers",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vickers-Armstrongs (Barrow-in-Furness, UK)",
+      "builderId": "vickers",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vickers-Armstrongs, Barrow-in-Furness",
+      "builderId": "vickers",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area",
+      "builderId": "vickers",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vulcan AG, Stettin",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vulcan Werft (Hamburg, Germany)",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)",
+      "builderId": "ag-vulcan",
+      "mappingStatus": "provisional",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "William Beardmore & Co. Ltd (Dalmuir, Scotland)",
+      "builderId": "william-beardmore-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "William Beardmore & Co., Dalmuir",
+      "builderId": "william-beardmore-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "William Beardmore & Co., Dalmuir / Glasgow area",
+      "builderId": "william-beardmore-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "William Beardmore & Company (Dalmuir, River Clyde)",
+      "builderId": "william-beardmore-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "William Beardmore & Company, Dalmuir, Scotland",
+      "builderId": "william-beardmore-company",
+      "mappingStatus": "confirmed",
+      "mappingMethod": "rule"
+    },
+    {
+      "source": "William Cramp & Sons, Philadelphia",
+      "builderId": "william-cramp-and-sons",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "William H. Brown Shipyard, New York",
+      "builderId": "william-h-brown-shipyard",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "William Patterson, Bristol",
+      "builderId": "william-patterson",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Workman, Clark & Co., Belfast",
+      "builderId": "workman",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    },
+    {
+      "source": "Yokohama Dock Co. Ltd. (Yokohama, Japan)",
+      "builderId": "yokohama-dock-co-ltd-yokohama",
+      "mappingStatus": "needs-review",
+      "mappingMethod": "fallback"
+    }
+  ]
+}

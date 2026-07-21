@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.oceanliners.net/data/schemas/ship.schema.json",
+  "title": "Ocean Liner Curator Ship Record",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "url",
+    "builderId",
+    "builderDisplay",
+    "builderMappingStatus"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "builderId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "builderDisplay": {
+      "type": "string",
+      "minLength": 1
+    },
+    "builderMappingStatus": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "provisional",
+        "needs-review"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

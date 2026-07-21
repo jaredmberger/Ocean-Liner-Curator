@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Builder Review Dashboard | Ocean Liner Curator</title>
+  <meta name="description" content="Editorial review dashboard for canonical ocean liner builder mappings." />
+  <style>
+    :root {
+      --ink:#08100f;
+      --ink-2:#101a18;
+      --panel:rgba(15,25,23,.94);
+      --paper:#efe8d8;
+      --muted:#bcb4a5;
+      --brass:#bfa46a;
+      --brass-2:#d8c28b;
+      --line:rgba(191,164,106,.3);
+      --good:#8fb89e;
+      --warn:#d8b978;
+      --danger:#d08e87;
+      --shadow:0 22px 65px rgba(0,0,0,.42);
+      --radius:18px;
+    }
+
+    * { box-sizing:border-box; }
+    html { color-scheme:dark; }
+    body {
+      margin:0;
+      color:var(--paper);
+      background:
+        radial-gradient(circle at 50% -20%, rgba(191,164,106,.16), transparent 35%),
+        linear-gradient(180deg,#101a18 0%,var(--ink) 58%,#050908 100%);
+      font-family:"Libre Baskerville",Georgia,serif;
+      line-height:1.55;
+    }
+
+    button,input,select,textarea { font:inherit; }
+
+    .app {
+      width:min(1480px,calc(100% - 28px));
+      margin:0 auto;
+      padding:22px 0 70px;
+    }
+
+    .masthead {
+      position:relative;
+      overflow:hidden;
+      padding:30px;
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:
+        linear-gradient(110deg,rgba(5,10,9,.97),rgba(16,26,24,.89)),
+        radial-gradient(circle at 85% 30%,rgba(191,164,106,.16),transparent 30%);
+      box-shadow:var(--shadow);
+    }
+
+    .masthead::after {
+      content:"CURATOR";
+      position:absolute;
+      right:25px;
+      top:50%;
+      transform:translateY(-52%);
+      color:rgba(191,164,106,.055);
+      font-size:clamp(4rem,11vw,10rem);
+      font-weight:700;
+      letter-spacing:-.05em;
+      pointer-events:none;
+    }
+
+    .masthead > * { position:relative; z-index:1; }
+    .eyebrow {
+      margin:0 0 8px;
+      color:var(--brass);
+      font-size:.74rem;
+      font-weight:700;
+      letter-spacing:.17em;
+      text-transform:uppercase;
+    }
+    h1,h2,h3 { font-family:"Spectral",Georgia,serif; line-height:1.12; }
+    h1 { margin:0; font-size:clamp(2.2rem,5vw,4.4rem); }
+    .lede { max-width:900px; margin:12px 0 0; color:#d1c8b7; }
+
+    .toolbar {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      margin-top:22px;
+    }
+
+    .btn {
+      min-height:42px;
+      padding:9px 14px;
+      color:var(--paper);
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:rgba(255,255,255,.035);
+      cursor:pointer;
+      transition:.18s ease;
+    }
+    .btn:hover { border-color:var(--brass); transform:translateY(-1px); }
+    .btn.primary { color:#10110e; background:var(--brass); border-color:var(--brass); font-weight:700; }
+    .btn.good { border-color:rgba(143,184,158,.65); }
+    .btn.warn { border-color:rgba(216,185,120,.65); }
+    .btn.danger { border-color:rgba(208,142,135,.65); }
+    .btn.small { min-height:34px; padding:6px 10px; font-size:.8rem; }
+    .btn[disabled] { opacity:.42; cursor:not-allowed; transform:none; }
+
+    .layout {
+      display:grid;
+      grid-template-columns:minmax(300px,390px) minmax(0,1fr);
+      gap:18px;
+      margin-top:18px;
+      align-items:start;
+    }
+
+    .panel {
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--panel);
+      box-shadow:0 15px 40px rgba(0,0,0,.26);
+      backdrop-filter:blur(12px);
+    }
+
+    .sidebar { position:sticky; top:12px; overflow:hidden; }
+    .sidebar-head { padding:18px; border-bottom:1px solid var(--line); }
+    .search {
+      width:100%;
+      min-height:44px;
+      padding:10px 12px;
+      color:var(--paper);
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:rgba(0,0,0,.25);
+      outline:none;
+    }
+    .search:focus { border-color:var(--brass); box-shadow:0 0 0 3px rgba(191,164,106,.1); }
+
+    .filter-row { display:flex; gap:8px; margin-top:10px; }
+    .filter-row select {
+      flex:1;
+      min-width:0;
+      padding:9px;
+      color:var(--paper);
+      border:1px solid var(--line);
+      border-radius:9px;
+      background:#101816;
+    }
+
+    .queue {
+      max-height:calc(100vh - 250px);
+      overflow:auto;
+      padding:8px;
+    }
+
+    .queue-item {
+      width:100%;
+      padding:14px;
+      margin:0 0 7px;
+      color:inherit;
+      text-align:left;
+      border:1px solid transparent;
+      border-radius:12px;
+      background:rgba(255,255,255,.025);
+      cursor:pointer;
+    }
+    .queue-item:hover { border-color:rgba(191,164,106,.35); }
+    .queue-item.active { border-color:var(--brass); background:rgba(191,164,106,.09); }
+    .queue-item.done { opacity:.65; }
+    .queue-title { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }
+    .queue-title strong { font-family:"Spectral",Georgia,serif; font-size:1.08rem; }
+    .queue-meta { margin-top:6px; color:var(--muted); font-size:.78rem; }
+    .status-dot {
+      flex:0 0 auto;
+      width:9px;
+      height:9px;
+      margin-top:6px;
+      border-radius:50%;
+      background:var(--warn);
+      box-shadow:0 0 0 3px rgba(216,185,120,.1);
+    }
+    .done .status-dot { background:var(--good); }
+
+    .workspace { padding:clamp(20px,4vw,34px); min-height:720px; }
+    .empty-state { display:grid; place-items:center; min-height:600px; color:var(--muted); text-align:center; }
+
+    .workspace-head {
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      align-items:flex-start;
+      padding-bottom:20px;
+      border-bottom:1px solid var(--line);
+    }
+    .workspace h2 { margin:0; font-size:clamp(2rem,4vw,3.2rem); }
+    .id-chip {
+      display:inline-block;
+      margin-top:10px;
+      padding:5px 9px;
+      color:var(--brass-2);
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(0,0,0,.2);
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+      font-size:.78rem;
+    }
+
+    .metrics {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:10px;
+      min-width:310px;
+    }
+    .metric {
+      padding:13px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:rgba(0,0,0,.18);
+      text-align:center;
+    }
+    .metric strong { display:block; color:var(--brass); font-size:1.45rem; }
+    .metric span { color:var(--muted); font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; }
+
+    .section { margin-top:24px; }
+    .section h3 { margin:0 0 12px; font-size:1.35rem; }
+    .help { margin:-4px 0 14px; color:var(--muted); font-size:.88rem; }
+
+    .field-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .field label {
+      display:block;
+      margin-bottom:6px;
+      color:var(--muted);
+      font-size:.76rem;
+      font-weight:700;
+      letter-spacing:.07em;
+      text-transform:uppercase;
+    }
+    .field input,.field select,.field textarea {
+      width:100%;
+      min-height:44px;
+      padding:10px 12px;
+      color:var(--paper);
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:rgba(0,0,0,.24);
+      outline:none;
+    }
+    .field textarea { min-height:95px; resize:vertical; }
+    .field input:focus,.field textarea:focus,.field select:focus {
+      border-color:var(--brass);
+      box-shadow:0 0 0 3px rgba(191,164,106,.1);
+    }
+
+    .alias-actions { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; }
+    .alias-list { display:grid; gap:8px; }
+    .alias-row {
+      display:grid;
+      grid-template-columns:34px minmax(0,1fr) minmax(150px,230px);
+      gap:9px;
+      align-items:center;
+      padding:10px;
+      border:1px solid rgba(191,164,106,.2);
+      border-radius:10px;
+      background:rgba(0,0,0,.14);
+    }
+    .alias-row input[type="checkbox"] { width:18px; height:18px; accent-color:var(--brass); }
+    .alias-text { overflow-wrap:anywhere; }
+    .alias-row select {
+      width:100%;
+      padding:7px;
+      color:var(--paper);
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:#101816;
+    }
+
+    .split-box {
+      padding:14px;
+      border:1px dashed rgba(191,164,106,.38);
+      border-radius:12px;
+      background:rgba(191,164,106,.04);
+    }
+    .split-list { display:grid; gap:8px; margin-top:10px; }
+    .split-row {
+      display:grid;
+      grid-template-columns:1fr 1fr auto;
+      gap:8px;
+    }
+
+    .decision-bar {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:26px;
+      padding-top:20px;
+      border-top:1px solid var(--line);
+    }
+
+    .notice {
+      margin-top:14px;
+      padding:12px 14px;
+      border:1px solid rgba(143,184,158,.4);
+      border-radius:10px;
+      color:#cfe0d3;
+      background:rgba(143,184,158,.08);
+      display:none;
+    }
+    .notice.show { display:block; }
+
+    .progress-wrap { margin-top:18px; }
+    .progress-line {
+      height:9px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(0,0,0,.28);
+    }
+    .progress-line span {
+      display:block;
+      height:100%;
+      width:0;
+      background:linear-gradient(90deg,var(--brass),var(--brass-2));
+      transition:width .2s ease;
+    }
+    .progress-label { display:flex; justify-content:space-between; margin-top:6px; color:var(--muted); font-size:.78rem; }
+
+    .modal {
+      position:fixed;
+      inset:0;
+      z-index:100;
+      display:none;
+      place-items:center;
+      padding:20px;
+      background:rgba(0,0,0,.72);
+    }
+    .modal.open { display:grid; }
+    .modal-card {
+      width:min(720px,100%);
+      max-height:90vh;
+      overflow:auto;
+      padding:24px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#101916;
+      box-shadow:var(--shadow);
+    }
+    .modal-card h2 { margin-top:0; }
+    .modal-actions { display:flex; justify-content:flex-end; gap:10px; margin-top:18px; }
+
+    code { color:var(--brass-2); }
+    .hidden { display:none !important; }
+
+    @media (max-width:980px) {
+      .layout { grid-template-columns:1fr; }
+      .sidebar { position:static; }
+      .queue { max-height:360px; }
+      .workspace-head { display:block; }
+      .metrics { min-width:0; margin-top:18px; }
+    }
+
+    @media (max-width:650px) {
+      .app { width:min(100% - 16px,1480px); padding-top:8px; }
+      .masthead { padding:22px; border-radius:17px; }
+      .field-grid,.metrics { grid-template-columns:1fr; }
+      .alias-row { grid-template-columns:30px 1fr; }
+      .alias-row select { grid-column:2; }
+      .split-row { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="masthead">
+      <p class="eyebrow">Ocean Liner Curator · Editorial Data Tool</p>
+      <h1>Builder Review Dashboard</h1>
+      <p class="lede">
+        Review proposed canonical builder identities without rewriting ship guides.
+        Approve straightforward groupings, rename canonical records, split aliases into separate builders,
+        or merge an item into another existing builder.
+      </p>
+
+      <div class="toolbar">
+        <button class="btn primary" id="exportAllBtn">Export Revised Data</button>
+        <button class="btn" id="exportDecisionsBtn">Export Decisions Only</button>
+        <button class="btn" id="importBtn">Import Data</button>
+        <button class="btn" id="saveBrowserBtn">Save in Browser</button>
+        <button class="btn danger" id="resetBtn">Reset Dashboard</button>
+        <input class="hidden" type="file" id="fileInput" accept=".json,application/json" />
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-line"><span id="progressBar"></span></div>
+        <div class="progress-label">
+          <span id="progressText">0 reviewed</span>
+          <span id="queueCount"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="panel sidebar">
+        <div class="sidebar-head">
+          <input class="search" id="searchInput" type="search" placeholder="Search builders or aliases…" />
+          <div class="filter-row">
+            <select id="statusFilter">
+              <option value="all">All items</option>
+              <option value="pending">Pending</option>
+              <option value="reviewed">Reviewed</option>
+              <option value="provisional">Provisional source</option>
+              <option value="needs-review">Needs-review source</option>
+            </select>
+            <select id="sortSelect">
+              <option value="name">Sort: Name</option>
+              <option value="ships-desc">Sort: Most ships</option>
+              <option value="aliases-desc">Sort: Most aliases</option>
+            </select>
+          </div>
+        </div>
+        <div class="queue" id="queueList"></div>
+      </aside>
+
+      <section class="panel workspace" id="workspace">
+        <div class="empty-state" id="emptyState">
+          <div>
+            <p class="eyebrow">Select a record</p>
+            <h2>Choose a builder from the review queue.</h2>
+            <p>Every decision remains local to this browser until you export revised JSON files.</p>
+          </div>
+        </div>
+
+        <div id="editor" class="hidden">
+          <div class="workspace-head">
+            <div>
+              <p class="eyebrow" id="sourceStatus"></p>
+              <h2 id="builderTitle"></h2>
+              <span class="id-chip" id="builderIdChip"></span>
+            </div>
+            <div class="metrics">
+              <div class="metric"><strong id="shipCount">0</strong><span>Ships</span></div>
+              <div class="metric"><strong id="aliasCount">0</strong><span>Aliases</span></div>
+              <div class="metric"><strong id="decisionState">Pending</strong><span>Decision</span></div>
+            </div>
+          </div>
+
+          <section class="section">
+            <h3>Canonical identity</h3>
+            <p class="help">Edit the preferred public name or stable ID. Changing these does not alter the visible wording in ship guides.</p>
+            <div class="field-grid">
+              <div class="field">
+                <label for="canonicalName">Canonical builder name</label>
+                <input id="canonicalName" />
+              </div>
+              <div class="field">
+                <label for="canonicalId">Canonical builder ID</label>
+                <input id="canonicalId" />
+              </div>
+            </div>
+            <div class="field" style="margin-top:12px">
+              <label for="editorialNote">Editorial note or reason</label>
+              <textarea id="editorialNote" placeholder="Example: Retained separately from CRDA because it was a distinct legal company."></textarea>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Published Builder strings</h3>
+            <p class="help">Assign each source string to the primary canonical record or to a split-off builder.</p>
+            <div class="alias-actions">
+              <button class="btn small" id="selectAllAliases">Select all</button>
+              <button class="btn small" id="clearAliasSelection">Clear selection</button>
+              <button class="btn small warn" id="createSplitBtn">Create split from selected</button>
+            </div>
+            <div class="alias-list" id="aliasList"></div>
+          </section>
+
+          <section class="section split-box" id="splitSection">
+            <h3>Split builders</h3>
+            <p class="help">Create additional canonical identities, then assign relevant aliases using the dropdowns above.</p>
+            <div class="split-list" id="splitList"></div>
+            <button class="btn small" id="addSplitBtn">Add split builder</button>
+          </section>
+
+          <section class="section">
+            <h3>Merge into another builder</h3>
+            <p class="help">Use this only when the entire review item belongs under a different existing canonical builder.</p>
+            <div class="field-grid">
+              <div class="field">
+                <label for="mergeTarget">Existing canonical builder</label>
+                <select id="mergeTarget"></select>
+              </div>
+              <div class="field">
+                <label for="mergeNote">Merge note</label>
+                <input id="mergeNote" placeholder="Optional explanation" />
+              </div>
+            </div>
+          </section>
+
+          <div class="decision-bar">
+            <button class="btn primary good" id="acceptBtn">Accept / Save Decision</button>
+            <button class="btn warn" id="savePendingBtn">Save but Keep Pending</button>
+            <button class="btn danger" id="clearDecisionBtn">Clear Decision</button>
+            <button class="btn" id="nextBtn">Next Pending →</button>
+          </div>
+          <div class="notice" id="notice"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="modal" id="importModal" role="dialog" aria-modal="true" aria-labelledby="importTitle">
+    <div class="modal-card">
+      <h2 id="importTitle">Import dashboard data</h2>
+      <p>
+        Import a previously exported <code>builder-review-decisions.json</code>,
+        <code>builder-review-dashboard-state.json</code>, or a canonical data bundle file.
+        Imported decisions are matched by original builder ID.
+      </p>
+      <div class="modal-actions">
+        <button class="btn" id="cancelImportBtn">Cancel</button>
+        <button class="btn primary" id="chooseFileBtn">Choose JSON File</button>
+      </div>
+    </div>
+  </div>
+
+  <script id="embeddedData" type="application/json">{"queue": {"schemaVersion": "0.1", "generatedAt": "2026-07-21T08:18:14.029459+00:00", "source": {"file": "ocean-liner-builder-extraction-test.json", "archiveUrl": "https://www.oceanliners.net/ships/ships", "sourceGeneratedAt": "2026-07-21T08:05:39.072Z"}, "description": "Mappings that should receive editorial review before the data layer is treated as final.", "items": [{"builderId": "ag-vulcan", "proposedName": "AG Vulcan", "mappingStatus": "provisional", "shipCount": 16, "aliases": ["AG Vulcan (Hamburg, Germany)", "AG Vulcan (Stettin)", "AG Vulcan (Stettin, Germany)", "AG Vulcan (Vulcan-Werke), Stettin", "AG Vulcan, Hamburg", "AG Vulcan, Stettin", "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)", "AG Vulcan, Stettin, Germany", "AG Vulkan, Stettin", "Stettiner Vulcan (AG Vulcan), Stettin", "Vulcan AG, Stettin", "Vulcan Werft (Hamburg, Germany)", "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)"]}, {"builderId": "ag-weser", "proposedName": "AG Weser", "mappingStatus": "provisional", "shipCount": 7, "aliases": ["AG Weser (Bremen)", "AG Weser, Bremen", "Deschimag AG Weser, Bremen", "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)"]}, {"builderId": "ansaldo", "proposedName": "Ansaldo", "mappingStatus": "provisional", "shipCount": 7, "aliases": ["Ansaldo (Genoa / Sestri Ponente), Yard No. 918", "Ansaldo (Sestri Ponente / Genoa)", "Ansaldo Shipyard (Genoa)", "Ansaldo Shipyard, Genoa", "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy", "Ansaldo Shipyards, Genoa", "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)"]}, {"builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "proposedName": "Ateliers et Chantiers de Saint-Nazaire Penhoët", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)", "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France"]}, {"builderId": "ateliers-chantiers-saint-nazaire-penhoet", "proposedName": "Ateliers et Chantiers de Saint-Nazaire Penhoët", "mappingStatus": "provisional", "shipCount": 3, "aliases": ["Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France", "Chantiers & Ateliers de Saint-Nazaire, Penhoët", "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France"]}, {"builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire", "proposedName": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)"]}, {"builderId": "barrow-shipbuilding-company", "proposedName": "Barrow Shipbuilding Company", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Barrow Shipbuilding Company, Barrow-in-Furness"]}, {"builderId": "bethlehem-fore-river", "proposedName": "Bethlehem Shipbuilding — Fore River", "mappingStatus": "provisional", "shipCount": 4, "aliases": ["Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)", "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)", "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts"]}, {"builderId": "bethlehem-steel-corporation", "proposedName": "Bethlehem Steel Corporation", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Bethlehem Steel Corporation, Quincy, Massachusetts"]}, {"builderId": "bremer-vulkan", "proposedName": "Bremer Vulkan", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Bremer Vulkan, Bremen-Vegesack, Germany"]}, {"builderId": "caird-and-company", "proposedName": "Caird & Company", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Caird & Company, Greenock, Scotland"]}, {"builderId": "cantiere-navale-di-riva-trigoso", "proposedName": "Cantiere Navale di Riva Trigoso", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy"]}, {"builderId": "d-and-w-henderson-ltd", "proposedName": "D. & W. Henderson Ltd.", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["D. & W. Henderson Ltd., Glasgow"]}, {"builderId": "eastern-shipbuilding-company", "proposedName": "Eastern Shipbuilding Company", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Eastern Shipbuilding Company, New London / Groton, Connecticut"]}, {"builderId": "furness", "proposedName": "Furness", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Furness, Withy & Co., West Hartlepool, England"]}, {"builderId": "germaniawerft-friedrich-krupp", "proposedName": "Germaniawerft / Friedrich Krupp", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Germaniawerft / Friedrich Krupp, Kiel, Germany"]}, {"builderId": "gotaverken", "proposedName": "Götaverken", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Götaverken, Gothenburg (Göteborg), Sweden"]}, {"builderId": "j-scott-russell-and-co", "proposedName": "J. Scott Russell & Co.", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["J. Scott Russell & Co., Millwall Iron Works (London)"]}, {"builderId": "jenks-ship-building-company", "proposedName": "Jenks Ship Building Company", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Jenks Ship Building Company, Port Huron, Michigan"]}, {"builderId": "mitsubishi-shipbuilding-and-engineering-co", "proposedName": "Mitsubishi Shipbuilding & Engineering Co.", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Mitsubishi Shipbuilding & Engineering Co., Nagasaki", "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)"]}, {"builderId": "nederlandsche-scheepsbouw-maatschappij", "proposedName": "Nederlandsche Scheepsbouw Maatschappij", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam"]}, {"builderId": "robert-duncan-and-company-greenock-port-glasgow", "proposedName": "Robert Duncan & Company (Greenock / Port Glasgow", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Duncan & Company (Greenock / Port Glasgow, Scotland)"]}, {"builderId": "robert-menzies-and-sons", "proposedName": "Robert Menzies & Sons", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Menzies & Sons, Leith, Scotland"]}, {"builderId": "robert-napier-and-sons", "proposedName": "Robert Napier & Sons", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Robert Napier & Sons, Glasgow"]}, {"builderId": "robert-steele-and-co", "proposedName": "Robert Steele & Co.", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Steele & Co., Greenock"]}, {"builderId": "scotts-shipbuilding-and-engineering-co-ltd", "proposedName": "Scotts Shipbuilding & Engineering Co. Ltd.", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Scotts Shipbuilding & Engineering Co. Ltd., Greenock"]}, {"builderId": "stabilimento-tecnico-triestino", "proposedName": "Stabilimento Tecnico Triestino", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Stabilimento Tecnico Triestino, Monfalcone"]}, {"builderId": "swan-hunter", "proposedName": "Swan Hunter", "mappingStatus": "provisional", "shipCount": 9, "aliases": ["C. S. Swan & Hunter Ltd., Wallsend-on-Tyne", "C.S. Swan & Hunter (Wallsend-on-Tyne, England)", "Swan Hunter & Wigham Richardson (Wallsend, England)", "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne", "Swan Hunter and Wigham Richardson, Wallsend", "Swan Hunter, Wallsend", "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne"]}, {"builderId": "thames-ironworks", "proposedName": "Thames Ironworks", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Thames Ironworks, London"]}, {"builderId": "tod-and-mcgregor", "proposedName": "Tod & McGregor", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Tod & McGregor, Glasgow"]}, {"builderId": "vickers", "proposedName": "Vickers", "mappingStatus": "provisional", "shipCount": 12, "aliases": ["Vickers Ltd, Barrow-in-Furness", "Vickers, Sons & Maxim Ltd., Barrow-in-Furness", "Vickers-Armstrong Ltd., Barrow-in-Furness", "Vickers-Armstrong, Barrow-in-Furness", "Vickers-Armstrongs (Barrow-in-Furness, England)", "Vickers-Armstrongs (Barrow-in-Furness, UK)", "Vickers-Armstrongs, Barrow-in-Furness", "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area"]}, {"builderId": "william-cramp-and-sons", "proposedName": "William Cramp & Sons", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["William Cramp & Sons, Philadelphia"]}, {"builderId": "william-h-brown-shipyard", "proposedName": "William H. Brown Shipyard", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["William H. Brown Shipyard, New York"]}, {"builderId": "william-patterson", "proposedName": "William Patterson", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["William Patterson, Bristol"]}, {"builderId": "workman", "proposedName": "Workman", "mappingStatus": "needs-review", "shipCount": 3, "aliases": ["Workman, Clark & Co., Belfast"]}, {"builderId": "yokohama-dock-co-ltd-yokohama", "proposedName": "Yokohama Dock Co. Ltd. (Yokohama", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Yokohama Dock Co. Ltd. (Yokohama, Japan)"]}]}, "builders": {"schemaVersion": "0.1", "generatedAt": "2026-07-21T08:18:14.029459+00:00", "source": {"file": "ocean-liner-builder-extraction-test.json", "archiveUrl": "https://www.oceanliners.net/ships/ships", "sourceGeneratedAt": "2026-07-21T08:05:39.072Z"}, "description": "Canonical shipbuilder identities with preserved source aliases and linked ship IDs.", "counts": {"builders": 58, "confirmed": 22, "provisional": 7, "needsReview": 29}, "builders": [{"id": "ag-vulcan", "name": "AG Vulcan", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 16, "aliases": ["AG Vulcan (Hamburg, Germany)", "AG Vulcan (Stettin)", "AG Vulcan (Stettin, Germany)", "AG Vulcan (Vulcan-Werke), Stettin", "AG Vulcan, Hamburg", "AG Vulcan, Stettin", "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)", "AG Vulcan, Stettin, Germany", "AG Vulkan, Stettin", "Stettiner Vulcan (AG Vulcan), Stettin", "Vulcan AG, Stettin", "Vulcan Werft (Hamburg, Germany)", "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)"], "shipIds": ["rms-berengaria", "rms-empress-of-australia", "ss-cap-trafalgar", "ss-deutschland", "ss-empress-of-france", "ss-friedrich-der-grosse", "ss-george-washington", "ss-george-washington-ngl", "ss-imperator", "ss-kaiser-wilhelm-der-grosse", "ss-kaiser-wilhelm-ii", "ss-kaiserin-auguste-victoria", "ss-kronprinz-wilhelm", "ss-kronprinzessin-cecilie", "ss-patricia", "ss-prinzess-irene"]}, {"id": "ag-weser", "name": "AG Weser", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 7, "aliases": ["AG Weser (Bremen)", "AG Weser, Bremen", "Deschimag AG Weser, Bremen", "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)"], "shipIds": ["ss-albertic", "ss-arabic-1920", "ss-berlin-1909", "ss-bremen", "ss-gneisenau", "ss-resolute", "ss-scharnhorst"]}, {"id": "alexander-stephen-sons", "name": "Alexander Stephen & Sons", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 5, "aliases": ["Alexander Stephen & Sons (Glasgow)", "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)", "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland", "Alexander Stephen & Sons, Linthouse, Glasgow"], "shipIds": ["rms-caledonia", "rms-viceroy-of-india", "ss-drottningholm", "ss-marquette", "ss-norge"]}, {"id": "ansaldo", "name": "Ansaldo", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 7, "aliases": ["Ansaldo (Genoa / Sestri Ponente), Yard No. 918", "Ansaldo (Sestri Ponente / Genoa)", "Ansaldo Shipyard (Genoa)", "Ansaldo Shipyard, Genoa", "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy", "Ansaldo Shipyards, Genoa", "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)"], "shipIds": ["ms-augustus", "ss-andrea-doria", "ss-cristoforo-colombo", "ss-leonardo-da-vinci", "ss-michelangelo-1965", "ss-rex", "ss-roma"]}, {"id": "armstrong-whitworth", "name": "Armstrong Whitworth", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 3, "aliases": ["Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)", "Armstrong Whitworth, Newcastle-upon-Tyne", "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)"], "shipIds": ["ms-gripsholm-1925", "rms-ascania", "ss-storstad"]}, {"id": "ateliers-chantiers-bretagne", "name": "Ateliers et Chantiers de Bretagne", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 1, "aliases": ["Ateliers et Chantiers de Bretagne, Saint-Nazaire"], "shipIds": ["ss-bretagne"]}, {"id": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)", "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France"], "shipIds": ["ss-la-bretagne", "ss-latlantique"]}, {"id": "ateliers-chantiers-saint-nazaire-penhoet", "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 3, "aliases": ["Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France", "Chantiers & Ateliers de Saint-Nazaire, Penhoët", "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France"], "shipIds": ["ss-champlain", "ss-chicago-1908", "ss-rochambeau"]}, {"id": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire", "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)"], "shipIds": ["ss-ile-de-france"]}, {"id": "barclay-curle-company", "name": "Barclay, Curle & Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Barclay Curle & Co., Glasgow", "Barclay, Curle & Company, Glasgow, Scotland"], "shipIds": ["ss-cathay-1924", "ss-corsican"]}, {"id": "barrow-shipbuilding-company", "name": "Barrow Shipbuilding Company", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Barrow Shipbuilding Company, Barrow-in-Furness"], "shipIds": ["ss-la-normandie"]}, {"id": "bethlehem-fore-river", "name": "Bethlehem Shipbuilding — Fore River", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 4, "aliases": ["Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)", "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)", "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts"], "shipIds": ["ss-constitution", "ss-lurline-1932", "ss-mariposa", "ss-monterey"]}, {"id": "bethlehem-steel-corporation", "name": "Bethlehem Steel Corporation", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Bethlehem Steel Corporation, Quincy, Massachusetts"], "shipIds": ["ss-independence"]}, {"id": "blohm-voss", "name": "Blohm & Voss", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 22, "aliases": ["Blohm & Voss (Hamburg)", "Blohm & Voss (Hamburg, Germany)", "Blohm & Voss, Hamburg", "Blohm & Voss, Hamburg (yard no. commonly cited: 473)", "Blohm & Voss, Hamburg · Yard No. 125", "Blohm & Voss, Hamburg · Yard No. 132", "Blohm & Voss, Hamburg, Germany"], "shipIds": ["ms-kungsholm-1928", "rms-majestic", "ss-albert-ballin", "ss-barbarossa", "ss-batavia", "ss-belgravia", "ss-bismarck-1914", "ss-bulgaria", "ss-cap-arcona", "ss-cap-polonio", "ss-cleveland", "ss-europa", "ss-graf-waldersee", "ss-hamburg-1925", "ss-konigin-luise", "ss-leviathan", "ss-liberte", "ss-milwaukee", "ss-moltke", "ss-new-york", "ss-pretoria", "ss-vaterland"]}, {"id": "bremer-vulkan", "name": "Bremer Vulkan", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Bremer Vulkan, Bremen-Vegesack, Germany"], "shipIds": ["ss-st-louis"]}, {"id": "caird-and-company", "name": "Caird & Company", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Caird & Company, Greenock, Scotland"], "shipIds": ["rms-moldavia"]}, {"id": "cammell-laird", "name": "Cammell Laird", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 4, "aliases": ["Cammell Laird (Birkenhead, England)", "Cammell Laird, Birkenhead", "Cammell, Laird & Co., Birkenhead (England)"], "shipIds": ["rms-mauretania-ii", "rms-windsor-castle", "ss-bergensfjord", "ss-de-grasse"]}, {"id": "cantiere-navale-di-riva-trigoso", "name": "Cantiere Navale di Riva Trigoso", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy"], "shipIds": ["ss-principessa-mafalda"]}, {"id": "cantiere-navale-triestino", "name": "Cantiere Navale Triestino", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Cantiere Navale Triestino, Monfalcone", "Cantiere Navale Triestino, Monfalcone (Italy)"], "shipIds": ["ms-vulcania", "neptunia"]}, {"id": "cantieri-riuniti-adriatico", "name": "Cantieri Riuniti dell’Adriatico", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 4, "aliases": ["Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)", "Cantieri Riuniti dell’Adriatico (CRDA), Trieste, Italy", "Cantieri Riuniti dell’Adriatico (Trieste, Italy)", "Cantieri Riuniti dell’Adriatico, Monfalcone"], "shipIds": ["ms-saturnia", "oceania", "ss-conte-di-savoia", "ss-raffaello-1965"]}, {"id": "chantiers-de-l-atlantique", "name": "Chantiers de l’Atlantique", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 5, "aliases": ["Chantiers de l'Atlantique, Saint-Nazaire", "Chantiers de l’Atlantique (Saint-Nazaire, France)", "Chantiers de l’Atlantique, Saint-Nazaire"], "shipIds": ["rms-queen-mary-2", "ss-flandre", "ss-france", "ss-france-1912", "ss-pasteur"]}, {"id": "chantiers-de-penhoet", "name": "Chantiers de Penhoët", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 3, "aliases": ["Chantiers de Penhoët (Saint-Nazaire, France)", "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)", "Chantiers de Penhoët, Saint-Nazaire"], "shipIds": ["ss-la-provence", "ss-normandie", "ss-paris"]}, {"id": "chantiers-ateliers-provence", "name": "Chantiers et Ateliers de Provence", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Chantiers & Ateliers de Provence, Port-de-Bouc, France", "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area"], "shipIds": ["ss-espagne", "ss-lafayette"]}, {"id": "d-and-w-henderson-ltd", "name": "D. & W. Henderson Ltd.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["D. & W. Henderson Ltd., Glasgow"], "shipIds": ["ss-columbia"]}, {"id": "eastern-shipbuilding-company", "name": "Eastern Shipbuilding Company", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Eastern Shipbuilding Company, New London / Groton, Connecticut"], "shipIds": ["ss-minnesota"]}, {"id": "f-schichau", "name": "F. Schichau", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 3, "aliases": ["F. Schichau, Danzig (then Germany; now Gdańsk, Poland)", "F. Schichau, Danzig (then Germany; today Gdańsk)", "F. Schichau, Danzig, Germany"], "shipIds": ["rms-homeric", "ss-columbus-1924", "ss-grosser-kurfurst"]}, {"id": "fairfield-shipbuilding-engineering-company", "name": "Fairfield Shipbuilding & Engineering Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 13, "aliases": ["Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)", "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow)", "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)", "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)", "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424", "Fairfield Shipbuilding & Engineering Co., Govan", "Fairfield Shipbuilding & Engineering Co., Govan (Glasgow)", "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow", "Fairfield Shipbuilding & Engineering Company, Govan", "Fairfield Shipbuilding & Engineering Company, Govan, Scotland", "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)"], "shipIds": ["rms-campania", "rms-empress-of-canada", "rms-empress-of-ireland", "rms-empress-of-japan-1929", "rms-empress-of-russia", "rms-etruria-1884", "rms-kenilworth-castle", "rms-transylvania", "rms-umbria-1884", "ss-armadale-castle", "ss-calgarian", "ss-letitia", "ss-tuscania-1921"]}, {"id": "furness", "name": "Furness", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Furness, Withy & Co., West Hartlepool, England"], "shipIds": ["ss-poland"]}, {"id": "germaniawerft-friedrich-krupp", "name": "Germaniawerft / Friedrich Krupp", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Germaniawerft / Friedrich Krupp, Kiel, Germany"], "shipIds": ["ss-assyria"]}, {"id": "gotaverken", "name": "Götaverken", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Götaverken, Gothenburg (Göteborg), Sweden"], "shipIds": ["ms-stockholm"]}, {"id": "harland-wolff", "name": "Harland & Wolff", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 78, "aliases": ["Harland & Wolff (Belfast)", "Harland & Wolff (Belfast), yard no. 391", "Harland & Wolff (Belfast, Ireland)", "Harland & Wolff (Belfast, Northern Ireland)", "Harland & Wolff Ltd., Belfast", "Harland & Wolff, Belfast", "Harland & Wolff, Belfast (commonly cited)", "Harland & Wolff, Belfast (Yard No. 358)", "Harland & Wolff, Belfast (yard no. commonly cited: 1005)", "Harland & Wolff, Belfast · Yard No. 315", "Harland & Wolff, Belfast · Yard No. 318", "Harland & Wolff, Belfast · Yard No. 324", "Harland & Wolff, Belfast · Yard No. 327", "Harland & Wolff, Belfast · Yard No. 336", "Harland & Wolff, Belfast · Yard No. 338 · Slip No. 5", "Harland & Wolff, Belfast · Yard No. 342", "Harland & Wolff, Govan", "Harland & Wolff, Queen’s Island, Belfast"], "shipIds": ["athlone-castle", "mv-britannic", "mv-georgic", "rms-adriatic", "rms-alcantara-1926", "rms-andes-1939", "rms-arundel-castle-1921", "rms-asturias-1908", "rms-baltic", "rms-britannic", "rms-britannic-1874", "rms-cedric", "rms-celtic", "rms-laurentic", "rms-megantic-1909", "rms-oceanic-1899", "rms-olympic", "rms-teutonic", "rms-titanic", "rms-walmer-castle", "ss-adriatic-1872", "ss-afric", "ss-amerika-1905", "ss-arabic", "ss-asturias-1925", "ss-athenic", "ss-atlantic-1873", "ss-baltic-1871", "ss-belgenland", "ss-belgia", "ss-brasilia", "ss-briton", "ss-calgaric", "ss-canada-1896", "ss-canberra", "ss-carnarvon-castle", "ss-ceramic", "ss-commonwealth", "ss-coptic", "ss-corinthic", "ss-cymric", "ss-doric", "ss-germanic", "ss-gothic-white-star-line", "ss-ionic", "ss-lapland", "ss-laurentic", "ss-majestic-1889", "ss-maloja", "ss-medic", "ss-minnetonka", "ss-minnewaska", "ss-mooltan", "ss-new-england", "ss-nieuw-amsterdam-1906", "ss-nomadic", "ss-noordam", "ss-oceanic-1871", "ss-pennland", "ss-persic", "ss-president-lincoln", "ss-republic", "ss-republic-1903", "ss-rijndam-1901", "ss-romanic", "ss-rotterdam-1908", "ss-runic", "ss-saxon", "ss-suevic", "ss-traffic", "ss-veendam", "ss-volendam", "ss-warwick-castle", "ss-westernland", "ss-winchester-castle", "ss-winifredian", "ss-zeeland", "stirling-castle"]}, {"id": "hawthorn-leslie", "name": "Hawthorn Leslie & Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 3, "aliases": ["Hawthorn Leslie & Company, Hebburn", "R. & W. Hawthorn, Leslie & Co. Ltd., Hebburn-on-Tyne", "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne"], "shipIds": ["rms-andania-1922", "ss-cretic", "ss-mayflower"]}, {"id": "j-g-thomson", "name": "J. & G. Thomson", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 7, "aliases": ["J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland", "J. & G. Thomson & Co., Glasgow", "J. & G. Thomson (Clydebank/Glasgow, Scotland)", "J. & G. Thomson / James & George Thomson, Clydebank", "J. & G. Thomson, Clydebank", "J. & G. Thomson, Clydebank (Scotland)"], "shipIds": ["rms-servia-1881", "ss-bothnia", "ss-catalonia", "ss-city-of-new-york-1888", "ss-city-of-paris", "ss-java", "ss-malta"]}, {"id": "j-scott-russell-and-co", "name": "J. Scott Russell & Co.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["J. Scott Russell & Co., Millwall Iron Works (London)"], "shipIds": ["ss-great-eastern"]}, {"id": "jenks-ship-building-company", "name": "Jenks Ship Building Company", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Jenks Ship Building Company, Port Huron, Michigan"], "shipIds": ["ss-eastland"]}, {"id": "joh-c-tecklenborg", "name": "Joh. C. Tecklenborg", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Joh. C. Tecklenborg, Geestemünde (Bremerhaven)", "Joh. C. Tecklenborg, Geestemünde, Germany"], "shipIds": ["ss-prinz-friedrich-wilhelm", "ss-reliance"]}, {"id": "john-brown-company", "name": "John Brown & Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 24, "aliases": ["John Brown & Co. (Clydebank, Scotland)", "John Brown & Co. Ltd., Clydebank, Scotland", "John Brown & Co., Clydebank", "John Brown & Co., Clydebank (Scotland)", "John Brown & Co., Clydebank, Scotland", "John Brown & Company (Clydebank, Scotland)", "John Brown & Company, Clydebank", "John Brown & Company, Clydebank (Scotland)"], "shipIds": ["queen-elizabeth-2", "rms-aquitania", "rms-carinthia", "rms-carmania", "rms-caronia-1947", "rms-empress-of-britain", "rms-franconia", "rms-ivernia", "rms-lusitania", "rms-queen-elizabeth", "rms-queen-mary", "rms-saxonia", "rms-sylvania", "rms-windsor-castle-1921", "ss-arcadia-1954", "ss-caronia", "ss-duchess-of-bedford", "ss-duchess-of-richmond", "ss-duchess-of-york", "ss-kroonland", "ss-montcalm", "ss-montclare", "ss-montrose", "ss-oronsay"]}, {"id": "mitsubishi-shipbuilding-and-engineering-co", "name": "Mitsubishi Shipbuilding & Engineering Co.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Mitsubishi Shipbuilding & Engineering Co., Nagasaki", "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)"], "shipIds": ["asama-maru-1929", "tatsuta-maru-1929"]}, {"id": "nederlandsche-scheepsbouw-maatschappij", "name": "Nederlandsche Scheepsbouw Maatschappij", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam"], "shipIds": ["ss-johan-van-oldenbarnevelt", "ss-marnix-van-st-aldegonde"]}, {"id": "new-york-shipbuilding", "name": "New York Shipbuilding", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 4, "aliases": ["New York Shipbuilding Company, Camden, New Jersey", "New York Shipbuilding Corporation (Camden, New Jersey, USA)", "New York Shipbuilding Corporation, Camden, New Jersey"], "shipIds": ["ss-manchuria", "ss-manhattan", "ss-mongolia", "ss-washington"]}, {"id": "newport-news-shipbuilding", "name": "Newport News Shipbuilding", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 7, "aliases": ["Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)", "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)", "Newport News Shipbuilding & Drydock Company", "Newport News Shipbuilding (Virginia, USA)", "Newport News Shipbuilding and Dry Dock Company", "Newport News Shipbuilding and Dry Dock Company, Virginia"], "shipIds": ["ss-america", "ss-morro-castle", "ss-pennsylvania", "ss-president-coolidge", "ss-president-hoover", "ss-us", "ss-virginia"]}, {"id": "robert-duncan-and-company-greenock-port-glasgow", "name": "Robert Duncan & Company (Greenock / Port Glasgow", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Duncan & Company (Greenock / Port Glasgow, Scotland)"], "shipIds": ["rms-britannia-1840"]}, {"id": "robert-menzies-and-sons", "name": "Robert Menzies & Sons", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Menzies & Sons, Leith, Scotland"], "shipIds": ["ss-sirius"]}, {"id": "robert-napier-and-sons", "name": "Robert Napier & Sons", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Robert Napier & Sons, Glasgow"], "shipIds": ["rms-persia-1855", "rms-scotia-1861"]}, {"id": "robert-steele-and-co", "name": "Robert Steele & Co.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Steele & Co., Greenock"], "shipIds": ["rms-cambria-1845"]}, {"id": "rotterdamsche-droogdok-maatschappij", "name": "Rotterdamsche Droogdok Maatschappij", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Rotterdam Drydock Company (RDM), Rotterdam, Netherlands", "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)"], "shipIds": ["ss-nieuw-amsterdam", "ss-rotterdam-1959"]}, {"id": "scotts-shipbuilding-and-engineering-co-ltd", "name": "Scotts Shipbuilding & Engineering Co. Ltd.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Scotts Shipbuilding & Engineering Co. Ltd., Greenock"], "shipIds": ["rms-alaunia", "rms-andania"]}, {"id": "stabilimento-tecnico-triestino", "name": "Stabilimento Tecnico Triestino", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Stabilimento Tecnico Triestino, Monfalcone"], "shipIds": ["ss-conte-grande"]}, {"id": "swan-hunter", "name": "Swan Hunter", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 9, "aliases": ["C. S. Swan & Hunter Ltd., Wallsend-on-Tyne", "C.S. Swan & Hunter (Wallsend-on-Tyne, England)", "Swan Hunter & Wigham Richardson (Wallsend, England)", "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne", "Swan Hunter and Wigham Richardson, Wallsend", "Swan Hunter, Wallsend", "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne"], "shipIds": ["qsmv-dominion-monarch", "rms-aurania", "rms-carpathia", "rms-franconia-1910", "rms-mauretania", "ss-ascania-1911", "ss-duilio", "ss-giulio-cesare", "ss-lake-michigan"]}, {"id": "thames-ironworks", "name": "Thames Ironworks", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Thames Ironworks, London"], "shipIds": ["ss-napoleon-iii"]}, {"id": "tod-and-mcgregor", "name": "Tod & McGregor", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Tod & McGregor, Glasgow"], "shipIds": ["ss-cuba"]}, {"id": "vickers", "name": "Vickers", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 12, "aliases": ["Vickers Ltd, Barrow-in-Furness", "Vickers, Sons & Maxim Ltd., Barrow-in-Furness", "Vickers-Armstrong Ltd., Barrow-in-Furness", "Vickers-Armstrong, Barrow-in-Furness", "Vickers-Armstrongs (Barrow-in-Furness, England)", "Vickers-Armstrongs (Barrow-in-Furness, UK)", "Vickers-Armstrongs, Barrow-in-Furness", "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area"], "shipIds": ["rms-orontes", "rms-scythia", "rms-strathnaver", "ss-monarch-of-bermuda", "ss-orama", "ss-orford", "ss-oriana", "ss-orion", "ss-orontes", "ss-queen-of-bermuda", "ss-strathaird", "ss-strathmore"]}, {"id": "william-beardmore-company", "name": "William Beardmore & Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 6, "aliases": ["William Beardmore & Co. Ltd (Dalmuir, Scotland)", "William Beardmore & Co., Dalmuir", "William Beardmore & Co., Dalmuir / Glasgow area", "William Beardmore & Company (Dalmuir, River Clyde)", "William Beardmore & Company, Dalmuir, Scotland"], "shipIds": ["rms-cameronia", "rms-lancastria", "ss-conte-biancamano", "ss-conte-rosso", "ss-conte-verde", "ss-duchess-of-atholl"]}, {"id": "william-cramp-and-sons", "name": "William Cramp & Sons", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["William Cramp & Sons, Philadelphia"], "shipIds": ["ss-finland"]}, {"id": "william-h-brown-shipyard", "name": "William H. Brown Shipyard", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["William H. Brown Shipyard, New York"], "shipIds": ["ss-arctic"]}, {"id": "william-patterson", "name": "William Patterson", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["William Patterson, Bristol"], "shipIds": ["ss-great-britain-1843", "ss-great-western"]}, {"id": "workman", "name": "Workman", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 3, "aliases": ["Workman, Clark & Co., Belfast"], "shipIds": ["ms-bermuda", "ss-otranto", "ss-vestris"]}, {"id": "yokohama-dock-co-ltd-yokohama", "name": "Yokohama Dock Co. Ltd. (Yokohama", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Yokohama Dock Co. Ltd. (Yokohama, Japan)"], "shipIds": ["nyk-hikawa-maru"]}]}, "aliases": {"schemaVersion": "0.1", "generatedAt": "2026-07-21T08:18:14.029459+00:00", "source": {"file": "ocean-liner-builder-extraction-test.json", "archiveUrl": "https://www.oceanliners.net/ships/ships", "sourceGeneratedAt": "2026-07-21T08:05:39.072Z"}, "description": "Exact source Builder strings mapped to canonical builder IDs. Source wording is never discarded.", "count": 177, "aliases": [{"source": "AG Vulcan (Hamburg, Germany)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan (Stettin)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan (Stettin, Germany)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan (Vulcan-Werke), Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan, Hamburg", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan, Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan, Stettin, Germany", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulkan, Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Weser (Bremen)", "builderId": "ag-weser", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Weser, Bremen", "builderId": "ag-weser", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Alexander Stephen & Sons (Glasgow)", "builderId": "alexander-stephen-sons", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)", "builderId": "alexander-stephen-sons", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland", "builderId": "alexander-stephen-sons", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Alexander Stephen & Sons, Linthouse, Glasgow", "builderId": "alexander-stephen-sons", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Ansaldo (Genoa / Sestri Ponente), Yard No. 918", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo (Sestri Ponente / Genoa)", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo Shipyard (Genoa)", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo Shipyard, Genoa", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo Shipyards, Genoa", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)", "builderId": "armstrong-whitworth", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Armstrong Whitworth, Newcastle-upon-Tyne", "builderId": "armstrong-whitworth", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)", "builderId": "armstrong-whitworth", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Ateliers et Chantiers de Bretagne, Saint-Nazaire", "builderId": "ateliers-chantiers-bretagne", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Barclay Curle & Co., Glasgow", "builderId": "barclay-curle-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Barclay, Curle & Company, Glasgow, Scotland", "builderId": "barclay-curle-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Barrow Shipbuilding Company, Barrow-in-Furness", "builderId": "barrow-shipbuilding-company", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)", "builderId": "bethlehem-fore-river", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)", "builderId": "bethlehem-fore-river", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Bethlehem Steel Corporation, Quincy, Massachusetts", "builderId": "bethlehem-steel-corporation", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Blohm & Voss (Hamburg)", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss (Hamburg, Germany)", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg (yard no. commonly cited: 473)", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg · Yard No. 125", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg · Yard No. 132", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg, Germany", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Bremer Vulkan, Bremen-Vegesack, Germany", "builderId": "bremer-vulkan", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "C. S. Swan & Hunter Ltd., Wallsend-on-Tyne", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "C.S. Swan & Hunter (Wallsend-on-Tyne, England)", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Caird & Company, Greenock, Scotland", "builderId": "caird-and-company", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Cammell Laird (Birkenhead, England)", "builderId": "cammell-laird", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cammell Laird, Birkenhead", "builderId": "cammell-laird", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cammell, Laird & Co., Birkenhead (England)", "builderId": "cammell-laird", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy", "builderId": "cantiere-navale-di-riva-trigoso", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Cantiere Navale Triestino, Monfalcone", "builderId": "cantiere-navale-triestino", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantiere Navale Triestino, Monfalcone (Italy)", "builderId": "cantiere-navale-triestino", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)", "builderId": "cantieri-riuniti-adriatico", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste, Italy", "builderId": "cantieri-riuniti-adriatico", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantieri Riuniti dell’Adriatico (Trieste, Italy)", "builderId": "cantieri-riuniti-adriatico", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantieri Riuniti dell’Adriatico, Monfalcone", "builderId": "cantieri-riuniti-adriatico", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers & Ateliers de Provence, Port-de-Bouc, France", "builderId": "chantiers-ateliers-provence", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Chantiers & Ateliers de Saint-Nazaire, Penhoët", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Chantiers de l'Atlantique, Saint-Nazaire", "builderId": "chantiers-de-l-atlantique", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de l’Atlantique (Saint-Nazaire, France)", "builderId": "chantiers-de-l-atlantique", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de l’Atlantique, Saint-Nazaire", "builderId": "chantiers-de-l-atlantique", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de Penhoët (Saint-Nazaire, France)", "builderId": "chantiers-de-penhoet", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)", "builderId": "chantiers-de-penhoet", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de Penhoët, Saint-Nazaire", "builderId": "chantiers-de-penhoet", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area", "builderId": "chantiers-ateliers-provence", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "D. & W. Henderson Ltd., Glasgow", "builderId": "d-and-w-henderson-ltd", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Deschimag AG Weser, Bremen", "builderId": "ag-weser", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)", "builderId": "ag-weser", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Eastern Shipbuilding Company, New London / Groton, Connecticut", "builderId": "eastern-shipbuilding-company", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "F. Schichau, Danzig (then Germany; now Gdańsk, Poland)", "builderId": "f-schichau", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "F. Schichau, Danzig (then Germany; today Gdańsk)", "builderId": "f-schichau", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "F. Schichau, Danzig, Germany", "builderId": "f-schichau", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co., Govan", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co., Govan (Glasgow)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Company, Govan", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Company, Govan, Scotland", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts", "builderId": "bethlehem-fore-river", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Furness, Withy & Co., West Hartlepool, England", "builderId": "furness", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Germaniawerft / Friedrich Krupp, Kiel, Germany", "builderId": "germaniawerft-friedrich-krupp", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Götaverken, Gothenburg (Göteborg), Sweden", "builderId": "gotaverken", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Harland & Wolff (Belfast)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff (Belfast), yard no. 391", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff (Belfast, Ireland)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff (Belfast, Northern Ireland)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff Ltd., Belfast", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast (commonly cited)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast (Yard No. 358)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast (yard no. commonly cited: 1005)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 315", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 318", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 324", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 327", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 336", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 338 · Slip No. 5", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 342", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Govan", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Queen’s Island, Belfast", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Hawthorn Leslie & Company, Hebburn", "builderId": "hawthorn-leslie", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson & Co., Glasgow", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson (Clydebank/Glasgow, Scotland)", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson / James & George Thomson, Clydebank", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson, Clydebank", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson, Clydebank (Scotland)", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. Scott Russell & Co., Millwall Iron Works (London)", "builderId": "j-scott-russell-and-co", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Jenks Ship Building Company, Port Huron, Michigan", "builderId": "jenks-ship-building-company", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Joh. C. Tecklenborg, Geestemünde (Bremerhaven)", "builderId": "joh-c-tecklenborg", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Joh. C. Tecklenborg, Geestemünde, Germany", "builderId": "joh-c-tecklenborg", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co. (Clydebank, Scotland)", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co. Ltd., Clydebank, Scotland", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co., Clydebank", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co., Clydebank (Scotland)", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co., Clydebank, Scotland", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Company (Clydebank, Scotland)", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Company, Clydebank", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Company, Clydebank (Scotland)", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki", "builderId": "mitsubishi-shipbuilding-and-engineering-co", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)", "builderId": "mitsubishi-shipbuilding-and-engineering-co", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam", "builderId": "nederlandsche-scheepsbouw-maatschappij", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "New York Shipbuilding Company, Camden, New Jersey", "builderId": "new-york-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "New York Shipbuilding Corporation (Camden, New Jersey, USA)", "builderId": "new-york-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "New York Shipbuilding Corporation, Camden, New Jersey", "builderId": "new-york-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding & Drydock Company", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding (Virginia, USA)", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding and Dry Dock Company", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding and Dry Dock Company, Virginia", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "R. & W. Hawthorn, Leslie & Co. Ltd., Hebburn-on-Tyne", "builderId": "hawthorn-leslie", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne", "builderId": "hawthorn-leslie", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Robert Duncan & Company (Greenock / Port Glasgow, Scotland)", "builderId": "robert-duncan-and-company-greenock-port-glasgow", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Robert Menzies & Sons, Leith, Scotland", "builderId": "robert-menzies-and-sons", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Robert Napier & Sons, Glasgow", "builderId": "robert-napier-and-sons", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Robert Steele & Co., Greenock", "builderId": "robert-steele-and-co", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Rotterdam Drydock Company (RDM), Rotterdam, Netherlands", "builderId": "rotterdamsche-droogdok-maatschappij", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)", "builderId": "rotterdamsche-droogdok-maatschappij", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Scotts Shipbuilding & Engineering Co. Ltd., Greenock", "builderId": "scotts-shipbuilding-and-engineering-co-ltd", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Stabilimento Tecnico Triestino, Monfalcone", "builderId": "stabilimento-tecnico-triestino", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Stettiner Vulcan (AG Vulcan), Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan Hunter & Wigham Richardson (Wallsend, England)", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan Hunter and Wigham Richardson, Wallsend", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan Hunter, Wallsend", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Thames Ironworks, London", "builderId": "thames-ironworks", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Tod & McGregor, Glasgow", "builderId": "tod-and-mcgregor", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Vickers Ltd, Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers, Sons & Maxim Ltd., Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrong Ltd., Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrong, Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrongs (Barrow-in-Furness, England)", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrongs (Barrow-in-Furness, UK)", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrongs, Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vulcan AG, Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vulcan Werft (Hamburg, Germany)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "William Beardmore & Co. Ltd (Dalmuir, Scotland)", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Beardmore & Co., Dalmuir", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Beardmore & Co., Dalmuir / Glasgow area", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Beardmore & Company (Dalmuir, River Clyde)", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Beardmore & Company, Dalmuir, Scotland", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Cramp & Sons, Philadelphia", "builderId": "william-cramp-and-sons", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "William H. Brown Shipyard, New York", "builderId": "william-h-brown-shipyard", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "William Patterson, Bristol", "builderId": "william-patterson", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Workman, Clark & Co., Belfast", "builderId": "workman", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Yokohama Dock Co. Ltd. (Yokohama, Japan)", "builderId": "yokohama-dock-co-ltd-yokohama", "mappingStatus": "needs-review", "mappingMethod": "fallback"}]}, "ships": {"schemaVersion": "0.1", "generatedAt": "2026-07-21T08:18:14.029459+00:00", "source": {"file": "ocean-liner-builder-extraction-test.json", "archiveUrl": "https://www.oceanliners.net/ships/ships", "sourceGeneratedAt": "2026-07-21T08:05:39.072Z"}, "description": "Core ship index derived from the existing Ship Archive builder extraction.", "count": 297, "ships": [{"id": "asama-maru-1929", "name": "Asama Maru", "url": "https://www.oceanliners.net/ships/asama-maru-1929.html", "builderId": "mitsubishi-shipbuilding-and-engineering-co", "builderDisplay": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)", "builderMappingStatus": "needs-review"}, {"id": "athlone-castle", "name": "Athlone Castle", "url": "https://www.oceanliners.net/ships/athlone-castle.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-monarch-of-bermuda", "name": "Monarch of Bermuda", "url": "https://www.oceanliners.net/ships/ss-monarch-of-bermuda.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area", "builderMappingStatus": "provisional"}, {"id": "ms-augustus", "name": "MS Augustus", "url": "https://www.oceanliners.net/ships/ms-augustus.html", "builderId": "ansaldo", "builderDisplay": "Ansaldo Shipyard (Genoa)", "builderMappingStatus": "provisional"}, {"id": "ms-bermuda", "name": "MS Bermuda", "url": "https://www.oceanliners.net/ships/ms-bermuda.html", "builderId": "workman", "builderDisplay": "Workman, Clark & Co., Belfast", "builderMappingStatus": "needs-review"}, {"id": "ms-gripsholm-1925", "name": "MS Gripsholm (1925)", "url": "https://www.oceanliners.net/ships/ms-gripsholm-1925.html", "builderId": "armstrong-whitworth", "builderDisplay": "Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)", "builderMappingStatus": "confirmed"}, {"id": "ss-johan-van-oldenbarnevelt", "name": "MS Johan van Oldenbarnevelt", "url": "https://www.oceanliners.net/ships/ss-johan-van-oldenbarnevelt.html", "builderId": "nederlandsche-scheepsbouw-maatschappij", "builderDisplay": "Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam", "builderMappingStatus": "needs-review"}, {"id": "ms-kungsholm-1928", "name": "MS Kungsholm (1928)", "url": "https://www.oceanliners.net/ships/ms-kungsholm-1928.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg", "builderMappingStatus": "confirmed"}, {"id": "ss-marnix-van-st-aldegonde", "name": "MS Marnix Van St Aldegonde", "url": "https://www.oceanliners.net/ships/ss-marnix-van-st-aldegonde.html", "builderId": "nederlandsche-scheepsbouw-maatschappij", "builderDisplay": "Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam", "builderMappingStatus": "needs-review"}, {"id": "ms-saturnia", "name": "MS Saturnia", "url": "https://www.oceanliners.net/ships/ms-saturnia.html", "builderId": "cantieri-riuniti-adriatico", "builderDisplay": "Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)", "builderMappingStatus": "confirmed"}, {"id": "ms-stockholm", "name": "MS Stockholm", "url": "https://www.oceanliners.net/ships/ms-stockholm.html", "builderId": "gotaverken", "builderDisplay": "Götaverken, Gothenburg (Göteborg), Sweden", "builderMappingStatus": "needs-review"}, {"id": "ms-vulcania", "name": "MS Vulcania", "url": "https://www.oceanliners.net/ships/ms-vulcania.html", "builderId": "cantiere-navale-triestino", "builderDisplay": "Cantiere Navale Triestino, Monfalcone (Italy)", "builderMappingStatus": "confirmed"}, {"id": "mv-britannic", "name": "MV Britannic", "url": "https://www.oceanliners.net/ships/mv-britannic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "ss-carnarvon-castle", "name": "MV Carnarvon Castle", "url": "https://www.oceanliners.net/ships/ss-carnarvon-castle.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "mv-georgic", "name": "MV Georgic", "url": "https://www.oceanliners.net/ships/mv-georgic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "neptunia", "name": "Neptunia", "url": "https://www.oceanliners.net/ships/neptunia.html", "builderId": "cantiere-navale-triestino", "builderDisplay": "Cantiere Navale Triestino, Monfalcone", "builderMappingStatus": "confirmed"}, {"id": "nyk-hikawa-maru", "name": "NYK Hikawa Maru", "url": "https://www.oceanliners.net/ships/nyk-hikawa-maru.html", "builderId": "yokohama-dock-co-ltd-yokohama", "builderDisplay": "Yokohama Dock Co. Ltd. (Yokohama, Japan)", "builderMappingStatus": "needs-review"}, {"id": "oceania", "name": "Oceania", "url": "https://www.oceanliners.net/ships/oceania.html", "builderId": "cantieri-riuniti-adriatico", "builderDisplay": "Cantieri Riuniti dell’Adriatico, Monfalcone", "builderMappingStatus": "confirmed"}, {"id": "qsmv-dominion-monarch", "name": "QSMV Dominion Monarch", "url": "https://www.oceanliners.net/ships/qsmv-dominion-monarch.html", "builderId": "swan-hunter", "builderDisplay": "Swan Hunter and Wigham Richardson, Wallsend", "builderMappingStatus": "provisional"}, {"id": "queen-elizabeth-2", "name": "Queen Elizabeth 2", "url": "https://www.oceanliners.net/ships/queen-elizabeth-2.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company (Clydebank, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-adriatic", "name": "RMS Adriatic", "url": "https://www.oceanliners.net/ships/rms-adriatic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "rms-alaunia", "name": "RMS Alaunia", "url": "https://www.oceanliners.net/ships/rms-alaunia.html", "builderId": "scotts-shipbuilding-and-engineering-co-ltd", "builderDisplay": "Scotts Shipbuilding & Engineering Co. Ltd., Greenock", "builderMappingStatus": "needs-review"}, {"id": "rms-alcantara-1926", "name": "RMS Alcantara", "url": "https://www.oceanliners.net/ships/rms-alcantara-1926.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast (commonly cited)", "builderMappingStatus": "confirmed"}, {"id": "rms-andania", "name": "RMS Andania", "url": "https://www.oceanliners.net/ships/rms-andania.html", "builderId": "scotts-shipbuilding-and-engineering-co-ltd", "builderDisplay": "Scotts Shipbuilding & Engineering Co. Ltd., Greenock", "builderMappingStatus": "needs-review"}, {"id": "rms-andania-1922", "name": "RMS Andania", "url": "https://www.oceanliners.net/ships/rms-andania-1922.html", "builderId": "hawthorn-leslie", "builderDisplay": "Hawthorn Leslie & Company, Hebburn", "builderMappingStatus": "confirmed"}, {"id": "rms-andes-1939", "name": "RMS Andes", "url": "https://www.oceanliners.net/ships/rms-andes-1939.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast (yard no. commonly cited: 1005)", "builderMappingStatus": "confirmed"}, {"id": "rms-aquitania", "name": "RMS Aquitania", "url": "https://www.oceanliners.net/ships/rms-aquitania.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company (Clydebank, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-arundel-castle-1921", "name": "RMS Arundel Castle (1921)", "url": "https://www.oceanliners.net/ships/rms-arundel-castle-1921.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "rms-ascania", "name": "RMS Ascania", "url": "https://www.oceanliners.net/ships/rms-ascania.html", "builderId": "armstrong-whitworth", "builderDisplay": "Armstrong Whitworth, Newcastle-upon-Tyne", "builderMappingStatus": "confirmed"}, {"id": "rms-asturias-1908", "name": "RMS Asturias (1908)", "url": "https://www.oceanliners.net/ships/rms-asturias-1908.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "rms-aurania", "name": "RMS Aurania", "url": "https://www.oceanliners.net/ships/rms-aurania.html", "builderId": "swan-hunter", "builderDisplay": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne", "builderMappingStatus": "provisional"}, {"id": "rms-baltic", "name": "RMS Baltic", "url": "https://www.oceanliners.net/ships/rms-baltic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "rms-berengaria", "name": "RMS Berengaria", "url": "https://www.oceanliners.net/ships/rms-berengaria.html", "builderId": "ag-vulcan", "builderDisplay": "Vulcan Werft (Hamburg, Germany)", "builderMappingStatus": "provisional"}, {"id": "rms-britannia-1840", "name": "RMS Britannia", "url": "https://www.oceanliners.net/ships/rms-britannia-1840.html", "builderId": "robert-duncan-and-company-greenock-port-glasgow", "builderDisplay": "Robert Duncan & Company (Greenock / Port Glasgow, Scotland)", "builderMappingStatus": "needs-review"}, {"id": "rms-britannic-1874", "name": "RMS Britannic", "url": "https://www.oceanliners.net/ships/rms-britannic-1874.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast, Ireland)", "builderMappingStatus": "confirmed"}, {"id": "rms-caledonia", "name": "RMS Caledonia", "url": "https://www.oceanliners.net/ships/rms-caledonia.html", "builderId": "alexander-stephen-sons", "builderDisplay": "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-cambria-1845", "name": "RMS Cambria", "url": "https://www.oceanliners.net/ships/rms-cambria-1845.html", "builderId": "robert-steele-and-co", "builderDisplay": "Robert Steele & Co., Greenock", "builderMappingStatus": "needs-review"}, {"id": "rms-cameronia", "name": "RMS Cameronia", "url": "https://www.oceanliners.net/ships/rms-cameronia.html", "builderId": "william-beardmore-company", "builderDisplay": "William Beardmore & Co. Ltd (Dalmuir, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-campania", "name": "RMS Campania", "url": "https://www.oceanliners.net/ships/rms-campania.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-carinthia", "name": "RMS Carinthia", "url": "https://www.oceanliners.net/ships/rms-carinthia.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "rms-carmania", "name": "RMS Carmania", "url": "https://www.oceanliners.net/ships/rms-carmania.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank (Scotland)", "builderMappingStatus": "confirmed"}, {"id": "ss-caronia", "name": "RMS Caronia", "url": "https://www.oceanliners.net/ships/ss-caronia.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Co., Clydebank", "builderMappingStatus": "confirmed"}, {"id": "rms-caronia-1947", "name": "RMS Caronia (1947)", "url": "https://www.oceanliners.net/ships/rms-caronia-1947.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank (Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-carpathia", "name": "RMS Carpathia", "url": "https://www.oceanliners.net/ships/rms-carpathia.html", "builderId": "swan-hunter", "builderDisplay": "C.S. Swan & Hunter (Wallsend-on-Tyne, England)", "builderMappingStatus": "provisional"}, {"id": "rms-cedric", "name": "RMS Cedric", "url": "https://www.oceanliners.net/ships/rms-cedric.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "rms-celtic", "name": "RMS Celtic", "url": "https://www.oceanliners.net/ships/rms-celtic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "rms-empress-of-australia", "name": "RMS Empress of Australia", "url": "https://www.oceanliners.net/ships/rms-empress-of-australia.html", "builderId": "ag-vulcan", "builderDisplay": "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)", "builderMappingStatus": "provisional"}, {"id": "rms-empress-of-britain", "name": "RMS Empress of Britain", "url": "https://www.oceanliners.net/ships/rms-empress-of-britain.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company (Clydebank, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-empress-of-canada", "name": "RMS Empress of Canada", "url": "https://www.oceanliners.net/ships/rms-empress-of-canada.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co., Govan", "builderMappingStatus": "confirmed"}, {"id": "ss-empress-of-france", "name": "RMS Empress of France", "url": "https://www.oceanliners.net/ships/ss-empress-of-france.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulkan, Stettin", "builderMappingStatus": "provisional"}, {"id": "rms-empress-of-ireland", "name": "RMS Empress of Ireland", "url": "https://www.oceanliners.net/ships/rms-empress-of-ireland.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-empress-of-japan-1929", "name": "RMS Empress of Japan (1929)", "url": "https://www.oceanliners.net/ships/rms-empress-of-japan-1929.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)", "builderMappingStatus": "confirmed"}, {"id": "rms-empress-of-russia", "name": "RMS Empress of Russia", "url": "https://www.oceanliners.net/ships/rms-empress-of-russia.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Company, Govan", "builderMappingStatus": "confirmed"}, {"id": "rms-etruria-1884", "name": "RMS Etruria (1884)", "url": "https://www.oceanliners.net/ships/rms-etruria-1884.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)", "builderMappingStatus": "confirmed"}, {"id": "rms-franconia", "name": "RMS Franconia", "url": "https://www.oceanliners.net/ships/rms-franconia.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Co., Clydebank", "builderMappingStatus": "confirmed"}, {"id": "rms-franconia-1910", "name": "RMS Franconia (1910)", "url": "https://www.oceanliners.net/ships/rms-franconia-1910.html", "builderId": "swan-hunter", "builderDisplay": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne", "builderMappingStatus": "provisional"}, {"id": "rms-homeric", "name": "RMS Homeric (1913)", "url": "https://www.oceanliners.net/ships/rms-homeric.html", "builderId": "f-schichau", "builderDisplay": "F. Schichau, Danzig (then Germany; today Gdańsk)", "builderMappingStatus": "confirmed"}, {"id": "rms-ivernia", "name": "RMS Ivernia", "url": "https://www.oceanliners.net/ships/rms-ivernia.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "rms-kenilworth-castle", "name": "RMS Kenilworth Castle", "url": "https://www.oceanliners.net/ships/rms-kenilworth-castle.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424", "builderMappingStatus": "confirmed"}, {"id": "rms-lancastria", "name": "RMS Lancastria", "url": "https://www.oceanliners.net/ships/rms-lancastria.html", "builderId": "william-beardmore-company", "builderDisplay": "William Beardmore & Company (Dalmuir, River Clyde)", "builderMappingStatus": "confirmed"}, {"id": "rms-laurentic", "name": "RMS Laurentic", "url": "https://www.oceanliners.net/ships/rms-laurentic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "rms-lusitania", "name": "RMS Lusitania", "url": "https://www.oceanliners.net/ships/rms-lusitania.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Co. (Clydebank, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-majestic", "name": "RMS Majestic", "url": "https://www.oceanliners.net/ships/rms-majestic.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss (Hamburg, Germany)", "builderMappingStatus": "confirmed"}, {"id": "rms-mauretania", "name": "RMS Mauretania", "url": "https://www.oceanliners.net/ships/rms-mauretania.html", "builderId": "swan-hunter", "builderDisplay": "Swan Hunter & Wigham Richardson (Wallsend, England)", "builderMappingStatus": "provisional"}, {"id": "rms-mauretania-ii", "name": "RMS Mauretania (II)", "url": "https://www.oceanliners.net/ships/rms-mauretania-ii.html", "builderId": "cammell-laird", "builderDisplay": "Cammell Laird (Birkenhead, England)", "builderMappingStatus": "confirmed"}, {"id": "rms-megantic-1909", "name": "RMS Megantic", "url": "https://www.oceanliners.net/ships/rms-megantic-1909.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast (Yard No. 358)", "builderMappingStatus": "confirmed"}, {"id": "rms-moldavia", "name": "RMS Moldavia", "url": "https://www.oceanliners.net/ships/rms-moldavia.html", "builderId": "caird-and-company", "builderDisplay": "Caird & Company, Greenock, Scotland", "builderMappingStatus": "needs-review"}, {"id": "rms-oceanic-1899", "name": "RMS Oceanic (1899)", "url": "https://www.oceanliners.net/ships/rms-oceanic-1899.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast, Northern Ireland)", "builderMappingStatus": "confirmed"}, {"id": "rms-olympic", "name": "RMS Olympic", "url": "https://www.oceanliners.net/ships/rms-olympic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast, Northern Ireland)", "builderMappingStatus": "confirmed"}, {"id": "rms-orontes", "name": "RMS Orontes", "url": "https://www.oceanliners.net/ships/rms-orontes.html", "builderId": "vickers", "builderDisplay": "Vickers, Sons & Maxim Ltd., Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "rms-persia-1855", "name": "RMS Persia", "url": "https://www.oceanliners.net/ships/rms-persia-1855.html", "builderId": "robert-napier-and-sons", "builderDisplay": "Robert Napier & Sons, Glasgow", "builderMappingStatus": "needs-review"}, {"id": "rms-queen-elizabeth", "name": "RMS Queen Elizabeth", "url": "https://www.oceanliners.net/ships/rms-queen-elizabeth.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company (Clydebank, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-queen-mary", "name": "RMS Queen Mary", "url": "https://www.oceanliners.net/ships/rms-queen-mary.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company (Clydebank, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-queen-mary-2", "name": "RMS Queen Mary 2", "url": "https://www.oceanliners.net/ships/rms-queen-mary-2.html", "builderId": "chantiers-de-l-atlantique", "builderDisplay": "Chantiers de l’Atlantique (Saint-Nazaire, France)", "builderMappingStatus": "confirmed"}, {"id": "ss-republic-1903", "name": "RMS Republic (1903)", "url": "https://www.oceanliners.net/ships/ss-republic-1903.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "rms-saxonia", "name": "RMS Saxonia", "url": "https://www.oceanliners.net/ships/rms-saxonia.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "rms-scotia-1861", "name": "RMS Scotia", "url": "https://www.oceanliners.net/ships/rms-scotia-1861.html", "builderId": "robert-napier-and-sons", "builderDisplay": "Robert Napier & Sons, Glasgow", "builderMappingStatus": "needs-review"}, {"id": "rms-scythia", "name": "RMS Scythia", "url": "https://www.oceanliners.net/ships/rms-scythia.html", "builderId": "vickers", "builderDisplay": "Vickers Ltd, Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "rms-servia-1881", "name": "RMS Servia", "url": "https://www.oceanliners.net/ships/rms-servia-1881.html", "builderId": "j-g-thomson", "builderDisplay": "J. & G. Thomson, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "rms-strathnaver", "name": "RMS Strathnaver", "url": "https://www.oceanliners.net/ships/rms-strathnaver.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrongs (Barrow-in-Furness, England)", "builderMappingStatus": "provisional"}, {"id": "rms-sylvania", "name": "RMS Sylvania", "url": "https://www.oceanliners.net/ships/rms-sylvania.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "rms-teutonic", "name": "RMS Teutonic (1889)", "url": "https://www.oceanliners.net/ships/rms-teutonic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "rms-titanic", "name": "RMS Titanic", "url": "https://www.oceanliners.net/ships/rms-titanic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast, Northern Ireland)", "builderMappingStatus": "confirmed"}, {"id": "rms-transylvania", "name": "RMS Transylvania", "url": "https://www.oceanliners.net/ships/rms-transylvania.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co., Govan (Glasgow)", "builderMappingStatus": "confirmed"}, {"id": "rms-umbria-1884", "name": "RMS Umbria (1884)", "url": "https://www.oceanliners.net/ships/rms-umbria-1884.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)", "builderMappingStatus": "confirmed"}, {"id": "rms-viceroy-of-india", "name": "RMS Viceroy of India", "url": "https://www.oceanliners.net/ships/rms-viceroy-of-india.html", "builderId": "alexander-stephen-sons", "builderDisplay": "Alexander Stephen & Sons (Glasgow)", "builderMappingStatus": "confirmed"}, {"id": "rms-walmer-castle", "name": "RMS Walmer Castle", "url": "https://www.oceanliners.net/ships/rms-walmer-castle.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast · Yard No. 342", "builderMappingStatus": "confirmed"}, {"id": "rms-windsor-castle", "name": "RMS Windsor Castle", "url": "https://www.oceanliners.net/ships/rms-windsor-castle.html", "builderId": "cammell-laird", "builderDisplay": "Cammell, Laird & Co., Birkenhead (England)", "builderMappingStatus": "confirmed"}, {"id": "rms-windsor-castle-1921", "name": "RMS Windsor Castle (1921)", "url": "https://www.oceanliners.net/ships/rms-windsor-castle-1921.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Co., Clydebank (Scotland)", "builderMappingStatus": "confirmed"}, {"id": "rms-britannic", "name": "RMS/HMHS Britannic", "url": "https://www.oceanliners.net/ships/rms-britannic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast, Ireland)", "builderMappingStatus": "confirmed"}, {"id": "ss-adriatic-1872", "name": "SS Adriatic (1872)", "url": "https://www.oceanliners.net/ships/ss-adriatic-1872.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-afric", "name": "SS Afric", "url": "https://www.oceanliners.net/ships/ss-afric.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-albert-ballin", "name": "SS Albert Ballin", "url": "https://www.oceanliners.net/ships/ss-albert-ballin.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg", "builderMappingStatus": "confirmed"}, {"id": "ss-albertic", "name": "SS Albertic", "url": "https://www.oceanliners.net/ships/ss-albertic.html", "builderId": "ag-weser", "builderDisplay": "AG Weser, Bremen", "builderMappingStatus": "provisional"}, {"id": "ss-america", "name": "SS America", "url": "https://www.oceanliners.net/ships/ss-america.html", "builderId": "newport-news-shipbuilding", "builderDisplay": "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)", "builderMappingStatus": "confirmed"}, {"id": "ss-amerika-1905", "name": "SS Amerika (1905)", "url": "https://www.oceanliners.net/ships/ss-amerika-1905.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-andrea-doria", "name": "SS Andrea Doria", "url": "https://www.oceanliners.net/ships/ss-andrea-doria.html", "builderId": "ansaldo", "builderDisplay": "Ansaldo (Genoa / Sestri Ponente), Yard No. 918", "builderMappingStatus": "provisional"}, {"id": "ss-arabic", "name": "SS Arabic", "url": "https://www.oceanliners.net/ships/ss-arabic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-arabic-1920", "name": "SS Arabic (1920)", "url": "https://www.oceanliners.net/ships/ss-arabic-1920.html", "builderId": "ag-weser", "builderDisplay": "AG Weser (Bremen)", "builderMappingStatus": "provisional"}, {"id": "ss-arcadia-1954", "name": "SS Arcadia (1954)", "url": "https://www.oceanliners.net/ships/ss-arcadia-1954.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "ss-arctic", "name": "SS Arctic", "url": "https://www.oceanliners.net/ships/ss-arctic.html", "builderId": "william-h-brown-shipyard", "builderDisplay": "William H. Brown Shipyard, New York", "builderMappingStatus": "needs-review"}, {"id": "ss-armadale-castle", "name": "SS Armadale Castle", "url": "https://www.oceanliners.net/ships/ss-armadale-castle.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424", "builderMappingStatus": "confirmed"}, {"id": "ss-ascania-1911", "name": "SS Ascania", "url": "https://www.oceanliners.net/ships/ss-ascania-1911.html", "builderId": "swan-hunter", "builderDisplay": "Swan Hunter, Wallsend", "builderMappingStatus": "provisional"}, {"id": "ss-assyria", "name": "SS Assyria", "url": "https://www.oceanliners.net/ships/ss-assyria.html", "builderId": "germaniawerft-friedrich-krupp", "builderDisplay": "Germaniawerft / Friedrich Krupp, Kiel, Germany", "builderMappingStatus": "needs-review"}, {"id": "ss-asturias-1925", "name": "SS Asturias", "url": "https://www.oceanliners.net/ships/ss-asturias-1925.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-athenic", "name": "SS Athenic", "url": "https://www.oceanliners.net/ships/ss-athenic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-atlantic-1873", "name": "SS Atlantic (1873)", "url": "https://www.oceanliners.net/ships/ss-atlantic-1873.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "ss-baltic-1871", "name": "SS Baltic", "url": "https://www.oceanliners.net/ships/ss-baltic-1871.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-barbarossa", "name": "SS Barbarossa", "url": "https://www.oceanliners.net/ships/ss-barbarossa.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg, Germany", "builderMappingStatus": "confirmed"}, {"id": "ss-batavia", "name": "SS Batavia", "url": "https://www.oceanliners.net/ships/ss-batavia.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg · Yard No. 132", "builderMappingStatus": "confirmed"}, {"id": "ss-belgenland", "name": "SS Belgenland", "url": "https://www.oceanliners.net/ships/ss-belgenland.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast), yard no. 391", "builderMappingStatus": "confirmed"}, {"id": "ss-belgia", "name": "SS Belgia", "url": "https://www.oceanliners.net/ships/ss-belgia.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast · Yard No. 327", "builderMappingStatus": "confirmed"}, {"id": "ss-belgravia", "name": "SS Belgravia", "url": "https://www.oceanliners.net/ships/ss-belgravia.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg", "builderMappingStatus": "confirmed"}, {"id": "ss-bergensfjord", "name": "SS Bergensfjord", "url": "https://www.oceanliners.net/ships/ss-bergensfjord.html", "builderId": "cammell-laird", "builderDisplay": "Cammell Laird, Birkenhead", "builderMappingStatus": "confirmed"}, {"id": "ss-berlin-1909", "name": "SS Berlin (1909)", "url": "https://www.oceanliners.net/ships/ss-berlin-1909.html", "builderId": "ag-weser", "builderDisplay": "AG Weser, Bremen", "builderMappingStatus": "provisional"}, {"id": "ss-bismarck-1914", "name": "SS Bismarck", "url": "https://www.oceanliners.net/ships/ss-bismarck-1914.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg", "builderMappingStatus": "confirmed"}, {"id": "ss-bothnia", "name": "SS Bothnia", "url": "https://www.oceanliners.net/ships/ss-bothnia.html", "builderId": "j-g-thomson", "builderDisplay": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-brasilia", "name": "SS Brasilia", "url": "https://www.oceanliners.net/ships/ss-brasilia.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast · Yard No. 318", "builderMappingStatus": "confirmed"}, {"id": "ss-bremen", "name": "SS Bremen", "url": "https://www.oceanliners.net/ships/ss-bremen.html", "builderId": "ag-weser", "builderDisplay": "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)", "builderMappingStatus": "provisional"}, {"id": "ss-bretagne", "name": "SS Bretagne", "url": "https://www.oceanliners.net/ships/ss-bretagne.html", "builderId": "ateliers-chantiers-bretagne", "builderDisplay": "Ateliers et Chantiers de Bretagne, Saint-Nazaire", "builderMappingStatus": "confirmed"}, {"id": "ss-briton", "name": "SS Briton", "url": "https://www.oceanliners.net/ships/ss-briton.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-bulgaria", "name": "SS Bulgaria", "url": "https://www.oceanliners.net/ships/ss-bulgaria.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg · Yard No. 125", "builderMappingStatus": "confirmed"}, {"id": "ss-calgarian", "name": "SS Calgarian", "url": "https://www.oceanliners.net/ships/ss-calgarian.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow", "builderMappingStatus": "confirmed"}, {"id": "ss-calgaric", "name": "SS Calgaric", "url": "https://www.oceanliners.net/ships/ss-calgaric.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "ss-canada-1896", "name": "SS Canada (1896)", "url": "https://www.oceanliners.net/ships/ss-canada-1896.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-canberra", "name": "SS Canberra", "url": "https://www.oceanliners.net/ships/ss-canberra.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast, Northern Ireland)", "builderMappingStatus": "confirmed"}, {"id": "ss-cap-arcona", "name": "SS Cap Arcona", "url": "https://www.oceanliners.net/ships/ss-cap-arcona.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss (Hamburg)", "builderMappingStatus": "confirmed"}, {"id": "ss-cap-polonio", "name": "SS Cap Polonio", "url": "https://www.oceanliners.net/ships/ss-cap-polonio.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg", "builderMappingStatus": "confirmed"}, {"id": "ss-cap-trafalgar", "name": "SS Cap Trafalgar", "url": "https://www.oceanliners.net/ships/ss-cap-trafalgar.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan, Hamburg", "builderMappingStatus": "provisional"}, {"id": "ss-catalonia", "name": "SS Catalonia", "url": "https://www.oceanliners.net/ships/ss-catalonia.html", "builderId": "j-g-thomson", "builderDisplay": "J. & G. Thomson / James & George Thomson, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "ss-cathay-1924", "name": "SS Cathay", "url": "https://www.oceanliners.net/ships/ss-cathay-1924.html", "builderId": "barclay-curle-company", "builderDisplay": "Barclay Curle & Co., Glasgow", "builderMappingStatus": "confirmed"}, {"id": "ss-ceramic", "name": "SS Ceramic", "url": "https://www.oceanliners.net/ships/ss-ceramic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-champlain", "name": "SS Champlain", "url": "https://www.oceanliners.net/ships/ss-champlain.html", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "builderDisplay": "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France", "builderMappingStatus": "provisional"}, {"id": "ss-chicago-1908", "name": "SS Chicago (1908)", "url": "https://www.oceanliners.net/ships/ss-chicago-1908.html", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "builderDisplay": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France", "builderMappingStatus": "provisional"}, {"id": "ss-city-of-new-york-1888", "name": "SS City of New York (1888)", "url": "https://www.oceanliners.net/ships/ss-city-of-new-york-1888.html", "builderId": "j-g-thomson", "builderDisplay": "J. & G. Thomson, Clydebank (Scotland)", "builderMappingStatus": "confirmed"}, {"id": "ss-city-of-paris", "name": "SS City of Paris", "url": "https://www.oceanliners.net/ships/ss-city-of-paris.html", "builderId": "j-g-thomson", "builderDisplay": "J. & G. Thomson (Clydebank/Glasgow, Scotland)", "builderMappingStatus": "confirmed"}, {"id": "ss-cleveland", "name": "SS Cleveland", "url": "https://www.oceanliners.net/ships/ss-cleveland.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg", "builderMappingStatus": "confirmed"}, {"id": "ss-columbia", "name": "SS Columbia", "url": "https://www.oceanliners.net/ships/ss-columbia.html", "builderId": "d-and-w-henderson-ltd", "builderDisplay": "D. & W. Henderson Ltd., Glasgow", "builderMappingStatus": "needs-review"}, {"id": "ss-columbus-1924", "name": "SS Columbus (1924)", "url": "https://www.oceanliners.net/ships/ss-columbus-1924.html", "builderId": "f-schichau", "builderDisplay": "F. Schichau, Danzig (then Germany; now Gdańsk, Poland)", "builderMappingStatus": "confirmed"}, {"id": "ss-commonwealth", "name": "SS Commonwealth", "url": "https://www.oceanliners.net/ships/ss-commonwealth.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-constitution", "name": "SS Constitution", "url": "https://www.oceanliners.net/ships/ss-constitution.html", "builderId": "bethlehem-fore-river", "builderDisplay": "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)", "builderMappingStatus": "provisional"}, {"id": "ss-conte-biancamano", "name": "SS Conte Biancamano", "url": "https://www.oceanliners.net/ships/ss-conte-biancamano.html", "builderId": "william-beardmore-company", "builderDisplay": "William Beardmore & Co., Dalmuir / Glasgow area", "builderMappingStatus": "confirmed"}, {"id": "ss-conte-di-savoia", "name": "SS Conte di Savoia", "url": "https://www.oceanliners.net/ships/ss-conte-di-savoia.html", "builderId": "cantieri-riuniti-adriatico", "builderDisplay": "Cantieri Riuniti dell’Adriatico (Trieste, Italy)", "builderMappingStatus": "confirmed"}, {"id": "ss-conte-grande", "name": "SS Conte Grande", "url": "https://www.oceanliners.net/ships/ss-conte-grande.html", "builderId": "stabilimento-tecnico-triestino", "builderDisplay": "Stabilimento Tecnico Triestino, Monfalcone", "builderMappingStatus": "needs-review"}, {"id": "ss-conte-rosso", "name": "SS Conte Rosso", "url": "https://www.oceanliners.net/ships/ss-conte-rosso.html", "builderId": "william-beardmore-company", "builderDisplay": "William Beardmore & Company, Dalmuir, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-conte-verde", "name": "SS Conte Verde", "url": "https://www.oceanliners.net/ships/ss-conte-verde.html", "builderId": "william-beardmore-company", "builderDisplay": "William Beardmore & Co., Dalmuir / Glasgow area", "builderMappingStatus": "confirmed"}, {"id": "ss-coptic", "name": "SS Coptic", "url": "https://www.oceanliners.net/ships/ss-coptic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-corinthic", "name": "SS Corinthic", "url": "https://www.oceanliners.net/ships/ss-corinthic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-corsican", "name": "SS Corsican", "url": "https://www.oceanliners.net/ships/ss-corsican.html", "builderId": "barclay-curle-company", "builderDisplay": "Barclay, Curle & Company, Glasgow, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-cretic", "name": "SS Cretic", "url": "https://www.oceanliners.net/ships/ss-cretic.html", "builderId": "hawthorn-leslie", "builderDisplay": "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne", "builderMappingStatus": "confirmed"}, {"id": "ss-cristoforo-colombo", "name": "SS Cristoforo Colombo", "url": "https://www.oceanliners.net/ships/ss-cristoforo-colombo.html", "builderId": "ansaldo", "builderDisplay": "Ansaldo Shipyards, Genoa", "builderMappingStatus": "provisional"}, {"id": "ss-cuba", "name": "SS Cuba", "url": "https://www.oceanliners.net/ships/ss-cuba.html", "builderId": "tod-and-mcgregor", "builderDisplay": "Tod & McGregor, Glasgow", "builderMappingStatus": "needs-review"}, {"id": "ss-cymric", "name": "SS Cymric", "url": "https://www.oceanliners.net/ships/ss-cymric.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Queen’s Island, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-de-grasse", "name": "SS De Grasse", "url": "https://www.oceanliners.net/ships/ss-de-grasse.html", "builderId": "cammell-laird", "builderDisplay": "Cammell Laird, Birkenhead", "builderMappingStatus": "confirmed"}, {"id": "ss-deutschland", "name": "SS Deutschland (1900)", "url": "https://www.oceanliners.net/ships/ss-deutschland.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan (Stettin)", "builderMappingStatus": "provisional"}, {"id": "ss-doric", "name": "SS Doric", "url": "https://www.oceanliners.net/ships/ss-doric.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "ss-drottningholm", "name": "SS Drottningholm", "url": "https://www.oceanliners.net/ships/ss-drottningholm.html", "builderId": "alexander-stephen-sons", "builderDisplay": "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-duchess-of-atholl", "name": "SS Duchess of Atholl", "url": "https://www.oceanliners.net/ships/ss-duchess-of-atholl.html", "builderId": "william-beardmore-company", "builderDisplay": "William Beardmore & Co., Dalmuir", "builderMappingStatus": "confirmed"}, {"id": "ss-duchess-of-bedford", "name": "SS Duchess of Bedford", "url": "https://www.oceanliners.net/ships/ss-duchess-of-bedford.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "ss-duchess-of-richmond", "name": "SS Duchess of Richmond", "url": "https://www.oceanliners.net/ships/ss-duchess-of-richmond.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "ss-duchess-of-york", "name": "SS Duchess of York", "url": "https://www.oceanliners.net/ships/ss-duchess-of-york.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "ss-duilio", "name": "SS Duilio", "url": "https://www.oceanliners.net/ships/ss-duilio.html", "builderId": "swan-hunter", "builderDisplay": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne", "builderMappingStatus": "provisional"}, {"id": "ss-eastland", "name": "SS Eastland", "url": "https://www.oceanliners.net/ships/ss-eastland.html", "builderId": "jenks-ship-building-company", "builderDisplay": "Jenks Ship Building Company, Port Huron, Michigan", "builderMappingStatus": "needs-review"}, {"id": "ss-espagne", "name": "SS Espagne", "url": "https://www.oceanliners.net/ships/ss-espagne.html", "builderId": "chantiers-ateliers-provence", "builderDisplay": "Chantiers & Ateliers de Provence, Port-de-Bouc, France", "builderMappingStatus": "confirmed"}, {"id": "ss-europa", "name": "SS Europa", "url": "https://www.oceanliners.net/ships/ss-europa.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss (Hamburg, Germany)", "builderMappingStatus": "confirmed"}, {"id": "ss-finland", "name": "SS Finland", "url": "https://www.oceanliners.net/ships/ss-finland.html", "builderId": "william-cramp-and-sons", "builderDisplay": "William Cramp & Sons, Philadelphia", "builderMappingStatus": "needs-review"}, {"id": "ss-flandre", "name": "SS Flandre", "url": "https://www.oceanliners.net/ships/ss-flandre.html", "builderId": "chantiers-de-l-atlantique", "builderDisplay": "Chantiers de l'Atlantique, Saint-Nazaire", "builderMappingStatus": "confirmed"}, {"id": "ss-france", "name": "SS France", "url": "https://www.oceanliners.net/ships/ss-france.html", "builderId": "chantiers-de-l-atlantique", "builderDisplay": "Chantiers de l’Atlantique (Saint-Nazaire, France)", "builderMappingStatus": "confirmed"}, {"id": "ss-france-1912", "name": "SS France (1912)", "url": "https://www.oceanliners.net/ships/ss-france-1912.html", "builderId": "chantiers-de-l-atlantique", "builderDisplay": "Chantiers de l’Atlantique, Saint-Nazaire", "builderMappingStatus": "confirmed"}, {"id": "ss-friedrich-der-grosse", "name": "SS Friedrich der Grosse", "url": "https://www.oceanliners.net/ships/ss-friedrich-der-grosse.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan, Stettin, Germany", "builderMappingStatus": "provisional"}, {"id": "ss-george-washington", "name": "SS George Washington", "url": "https://www.oceanliners.net/ships/ss-george-washington.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan (Vulcan-Werke), Stettin", "builderMappingStatus": "provisional"}, {"id": "ss-george-washington-ngl", "name": "SS George Washington", "url": "https://www.oceanliners.net/ships/ss-george-washington-ngl.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan, Stettin", "builderMappingStatus": "provisional"}, {"id": "ss-germanic", "name": "SS Germanic", "url": "https://www.oceanliners.net/ships/ss-germanic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-giulio-cesare", "name": "SS Giulio Cesare", "url": "https://www.oceanliners.net/ships/ss-giulio-cesare.html", "builderId": "swan-hunter", "builderDisplay": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne", "builderMappingStatus": "provisional"}, {"id": "ss-gneisenau", "name": "SS Gneisenau", "url": "https://www.oceanliners.net/ships/ss-gneisenau.html", "builderId": "ag-weser", "builderDisplay": "Deschimag AG Weser, Bremen", "builderMappingStatus": "provisional"}, {"id": "ss-gothic-white-star-line", "name": "SS Gothic", "url": "https://www.oceanliners.net/ships/ss-gothic-white-star-line.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-graf-waldersee", "name": "SS Graf Waldersee", "url": "https://www.oceanliners.net/ships/ss-graf-waldersee.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg, Germany", "builderMappingStatus": "confirmed"}, {"id": "ss-great-britain-1843", "name": "SS Great Britain", "url": "https://www.oceanliners.net/ships/ss-great-britain-1843.html", "builderId": "william-patterson", "builderDisplay": "William Patterson, Bristol", "builderMappingStatus": "needs-review"}, {"id": "ss-great-eastern", "name": "SS Great Eastern", "url": "https://www.oceanliners.net/ships/ss-great-eastern.html", "builderId": "j-scott-russell-and-co", "builderDisplay": "J. Scott Russell & Co., Millwall Iron Works (London)", "builderMappingStatus": "needs-review"}, {"id": "ss-great-western", "name": "SS Great Western", "url": "https://www.oceanliners.net/ships/ss-great-western.html", "builderId": "william-patterson", "builderDisplay": "William Patterson, Bristol", "builderMappingStatus": "needs-review"}, {"id": "ss-grosser-kurfurst", "name": "SS Grosser Kurfürst", "url": "https://www.oceanliners.net/ships/ss-grosser-kurfurst.html", "builderId": "f-schichau", "builderDisplay": "F. Schichau, Danzig, Germany", "builderMappingStatus": "confirmed"}, {"id": "ss-hamburg-1925", "name": "SS Hamburg", "url": "https://www.oceanliners.net/ships/ss-hamburg-1925.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg (yard no. commonly cited: 473)", "builderMappingStatus": "confirmed"}, {"id": "ss-imperator", "name": "SS Imperator", "url": "https://www.oceanliners.net/ships/ss-imperator.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan (Hamburg, Germany)", "builderMappingStatus": "provisional"}, {"id": "ss-independence", "name": "SS Independence", "url": "https://www.oceanliners.net/ships/ss-independence.html", "builderId": "bethlehem-steel-corporation", "builderDisplay": "Bethlehem Steel Corporation, Quincy, Massachusetts", "builderMappingStatus": "needs-review"}, {"id": "ss-ionic", "name": "SS Ionic", "url": "https://www.oceanliners.net/ships/ss-ionic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-java", "name": "SS Java", "url": "https://www.oceanliners.net/ships/ss-java.html", "builderId": "j-g-thomson", "builderDisplay": "J. & G. Thomson & Co., Glasgow", "builderMappingStatus": "confirmed"}, {"id": "ss-kaiser-wilhelm-der-grosse", "name": "SS Kaiser Wilhelm der Grosse", "url": "https://www.oceanliners.net/ships/ss-kaiser-wilhelm-der-grosse.html", "builderId": "ag-vulcan", "builderDisplay": "Stettiner Vulcan (AG Vulcan), Stettin", "builderMappingStatus": "provisional"}, {"id": "ss-kaiser-wilhelm-ii", "name": "SS Kaiser Wilhelm II", "url": "https://www.oceanliners.net/ships/ss-kaiser-wilhelm-ii.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan (Stettin, Germany)", "builderMappingStatus": "provisional"}, {"id": "ss-kaiserin-auguste-victoria", "name": "SS Kaiserin Auguste Victoria", "url": "https://www.oceanliners.net/ships/ss-kaiserin-auguste-victoria.html", "builderId": "ag-vulcan", "builderDisplay": "Vulcan AG, Stettin", "builderMappingStatus": "provisional"}, {"id": "ss-kronprinz-wilhelm", "name": "SS Kronprinz Wilhelm", "url": "https://www.oceanliners.net/ships/ss-kronprinz-wilhelm.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan, Stettin, Germany", "builderMappingStatus": "provisional"}, {"id": "ss-kronprinzessin-cecilie", "name": "SS Kronprinzessin Cecilie", "url": "https://www.oceanliners.net/ships/ss-kronprinzessin-cecilie.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)", "builderMappingStatus": "provisional"}, {"id": "ss-kroonland", "name": "SS Kroonland", "url": "https://www.oceanliners.net/ships/ss-kroonland.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Co., Clydebank, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-konigin-luise", "name": "SS Königin Luise", "url": "https://www.oceanliners.net/ships/ss-konigin-luise.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg, Germany", "builderMappingStatus": "confirmed"}, {"id": "ss-latlantique", "name": "SS L'Atlantique", "url": "https://www.oceanliners.net/ships/ss-latlantique.html", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "builderDisplay": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)", "builderMappingStatus": "needs-review"}, {"id": "ss-la-bretagne", "name": "SS La Bretagne", "url": "https://www.oceanliners.net/ships/ss-la-bretagne.html", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "builderDisplay": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France", "builderMappingStatus": "needs-review"}, {"id": "ss-la-normandie", "name": "SS La Normandie", "url": "https://www.oceanliners.net/ships/ss-la-normandie.html", "builderId": "barrow-shipbuilding-company", "builderDisplay": "Barrow Shipbuilding Company, Barrow-in-Furness", "builderMappingStatus": "needs-review"}, {"id": "ss-la-provence", "name": "SS La Provence", "url": "https://www.oceanliners.net/ships/ss-la-provence.html", "builderId": "chantiers-de-penhoet", "builderDisplay": "Chantiers de Penhoët, Saint-Nazaire", "builderMappingStatus": "confirmed"}, {"id": "ss-lafayette", "name": "SS Lafayette", "url": "https://www.oceanliners.net/ships/ss-lafayette.html", "builderId": "chantiers-ateliers-provence", "builderDisplay": "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area", "builderMappingStatus": "confirmed"}, {"id": "ss-lake-michigan", "name": "SS Lake Michigan", "url": "https://www.oceanliners.net/ships/ss-lake-michigan.html", "builderId": "swan-hunter", "builderDisplay": "C. S. Swan & Hunter Ltd., Wallsend-on-Tyne", "builderMappingStatus": "provisional"}, {"id": "ss-lapland", "name": "SS Lapland", "url": "https://www.oceanliners.net/ships/ss-lapland.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "ss-laurentic", "name": "SS Laurentic", "url": "https://www.oceanliners.net/ships/ss-laurentic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-leonardo-da-vinci", "name": "SS Leonardo da Vinci", "url": "https://www.oceanliners.net/ships/ss-leonardo-da-vinci.html", "builderId": "ansaldo", "builderDisplay": "Ansaldo Shipyard, Genoa", "builderMappingStatus": "provisional"}, {"id": "ss-letitia", "name": "SS Letitia", "url": "https://www.oceanliners.net/ships/ss-letitia.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Company, Govan, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-leviathan", "name": "SS Leviathan", "url": "https://www.oceanliners.net/ships/ss-leviathan.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss (Hamburg, Germany)", "builderMappingStatus": "confirmed"}, {"id": "ss-liberte", "name": "SS Liberté", "url": "https://www.oceanliners.net/ships/ss-liberte.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg", "builderMappingStatus": "confirmed"}, {"id": "ss-lurline-1932", "name": "SS Lurline (1932)", "url": "https://www.oceanliners.net/ships/ss-lurline-1932.html", "builderId": "bethlehem-fore-river", "builderDisplay": "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)", "builderMappingStatus": "provisional"}, {"id": "ss-majestic-1889", "name": "SS Majestic", "url": "https://www.oceanliners.net/ships/ss-majestic-1889.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast, Ireland)", "builderMappingStatus": "confirmed"}, {"id": "ss-maloja", "name": "SS Maloja", "url": "https://www.oceanliners.net/ships/ss-maloja.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-malta", "name": "SS Malta", "url": "https://www.oceanliners.net/ships/ss-malta.html", "builderId": "j-g-thomson", "builderDisplay": "J. & G. Thomson & Co., Glasgow", "builderMappingStatus": "confirmed"}, {"id": "ss-manchuria", "name": "SS Manchuria", "url": "https://www.oceanliners.net/ships/ss-manchuria.html", "builderId": "new-york-shipbuilding", "builderDisplay": "New York Shipbuilding Company, Camden, New Jersey", "builderMappingStatus": "confirmed"}, {"id": "ss-manhattan", "name": "SS Manhattan (1932)", "url": "https://www.oceanliners.net/ships/ss-manhattan.html", "builderId": "new-york-shipbuilding", "builderDisplay": "New York Shipbuilding Corporation, Camden, New Jersey", "builderMappingStatus": "confirmed"}, {"id": "ss-mariposa", "name": "SS Mariposa", "url": "https://www.oceanliners.net/ships/ss-mariposa.html", "builderId": "bethlehem-fore-river", "builderDisplay": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts", "builderMappingStatus": "provisional"}, {"id": "ss-marquette", "name": "SS Marquette", "url": "https://www.oceanliners.net/ships/ss-marquette.html", "builderId": "alexander-stephen-sons", "builderDisplay": "Alexander Stephen & Sons, Linthouse, Glasgow", "builderMappingStatus": "confirmed"}, {"id": "ss-mayflower", "name": "SS Mayflower", "url": "https://www.oceanliners.net/ships/ss-mayflower.html", "builderId": "hawthorn-leslie", "builderDisplay": "R. & W. Hawthorn, Leslie & Co. Ltd., Hebburn-on-Tyne", "builderMappingStatus": "confirmed"}, {"id": "ss-medic", "name": "SS Medic", "url": "https://www.oceanliners.net/ships/ss-medic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-michelangelo-1965", "name": "SS Michelangelo (1965)", "url": "https://www.oceanliners.net/ships/ss-michelangelo-1965.html", "builderId": "ansaldo", "builderDisplay": "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy", "builderMappingStatus": "provisional"}, {"id": "ss-milwaukee", "name": "SS Milwaukee", "url": "https://www.oceanliners.net/ships/ss-milwaukee.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg, Germany", "builderMappingStatus": "confirmed"}, {"id": "ss-minnesota", "name": "SS Minnesota", "url": "https://www.oceanliners.net/ships/ss-minnesota.html", "builderId": "eastern-shipbuilding-company", "builderDisplay": "Eastern Shipbuilding Company, New London / Groton, Connecticut", "builderMappingStatus": "needs-review"}, {"id": "ss-minnetonka", "name": "SS Minnetonka", "url": "https://www.oceanliners.net/ships/ss-minnetonka.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-minnewaska", "name": "SS Minnewaska", "url": "https://www.oceanliners.net/ships/ss-minnewaska.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-moltke", "name": "SS Moltke", "url": "https://www.oceanliners.net/ships/ss-moltke.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg, Germany", "builderMappingStatus": "confirmed"}, {"id": "ss-mongolia", "name": "SS Mongolia", "url": "https://www.oceanliners.net/ships/ss-mongolia.html", "builderId": "new-york-shipbuilding", "builderDisplay": "New York Shipbuilding Company, Camden, New Jersey", "builderMappingStatus": "confirmed"}, {"id": "ss-montcalm", "name": "SS Montcalm", "url": "https://www.oceanliners.net/ships/ss-montcalm.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Co. Ltd., Clydebank, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-montclare", "name": "SS Montclare", "url": "https://www.oceanliners.net/ships/ss-montclare.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Co. Ltd., Clydebank, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-monterey", "name": "SS Monterey", "url": "https://www.oceanliners.net/ships/ss-monterey.html", "builderId": "bethlehem-fore-river", "builderDisplay": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts", "builderMappingStatus": "provisional"}, {"id": "ss-montrose", "name": "SS Montrose", "url": "https://www.oceanliners.net/ships/ss-montrose.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Co. Ltd., Clydebank, Scotland", "builderMappingStatus": "confirmed"}, {"id": "ss-mooltan", "name": "SS Mooltan", "url": "https://www.oceanliners.net/ships/ss-mooltan.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-morro-castle", "name": "SS Morro Castle", "url": "https://www.oceanliners.net/ships/ss-morro-castle.html", "builderId": "newport-news-shipbuilding", "builderDisplay": "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)", "builderMappingStatus": "confirmed"}, {"id": "ss-napoleon-iii", "name": "SS Napoleon III", "url": "https://www.oceanliners.net/ships/ss-napoleon-iii.html", "builderId": "thames-ironworks", "builderDisplay": "Thames Ironworks, London", "builderMappingStatus": "needs-review"}, {"id": "ss-new-england", "name": "SS New England", "url": "https://www.oceanliners.net/ships/ss-new-england.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast · Yard No. 315", "builderMappingStatus": "confirmed"}, {"id": "ss-new-york", "name": "SS New York", "url": "https://www.oceanliners.net/ships/ss-new-york.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg", "builderMappingStatus": "confirmed"}, {"id": "ss-nieuw-amsterdam", "name": "SS Nieuw Amsterdam", "url": "https://www.oceanliners.net/ships/ss-nieuw-amsterdam.html", "builderId": "rotterdamsche-droogdok-maatschappij", "builderDisplay": "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)", "builderMappingStatus": "confirmed"}, {"id": "ss-nieuw-amsterdam-1906", "name": "SS Nieuw Amsterdam (1906)", "url": "https://www.oceanliners.net/ships/ss-nieuw-amsterdam-1906.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-nomadic", "name": "SS Nomadic", "url": "https://www.oceanliners.net/ships/ss-nomadic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "ss-noordam", "name": "SS Noordam", "url": "https://www.oceanliners.net/ships/ss-noordam.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast · Yard No. 338 · Slip No. 5", "builderMappingStatus": "confirmed"}, {"id": "ss-norge", "name": "SS Norge", "url": "https://www.oceanliners.net/ships/ss-norge.html", "builderId": "alexander-stephen-sons", "builderDisplay": "Alexander Stephen & Sons, Linthouse, Glasgow", "builderMappingStatus": "confirmed"}, {"id": "ss-normandie", "name": "SS Normandie", "url": "https://www.oceanliners.net/ships/ss-normandie.html", "builderId": "chantiers-de-penhoet", "builderDisplay": "Chantiers de Penhoët (Saint-Nazaire, France)", "builderMappingStatus": "confirmed"}, {"id": "ss-oceanic-1871", "name": "SS Oceanic (1871)", "url": "https://www.oceanliners.net/ships/ss-oceanic-1871.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-orama", "name": "SS Orama", "url": "https://www.oceanliners.net/ships/ss-orama.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrong Ltd., Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "ss-orford", "name": "SS Orford", "url": "https://www.oceanliners.net/ships/ss-orford.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrong Ltd., Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "ss-oriana", "name": "SS Oriana", "url": "https://www.oceanliners.net/ships/ss-oriana.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrongs, Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "ss-orion", "name": "SS Orion", "url": "https://www.oceanliners.net/ships/ss-orion.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrong, Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "ss-oronsay", "name": "SS Oronsay", "url": "https://www.oceanliners.net/ships/ss-oronsay.html", "builderId": "john-brown-company", "builderDisplay": "John Brown & Company, Clydebank", "builderMappingStatus": "confirmed"}, {"id": "ss-orontes", "name": "SS Orontes", "url": "https://www.oceanliners.net/ships/ss-orontes.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrong Ltd., Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "ss-otranto", "name": "SS Otranto", "url": "https://www.oceanliners.net/ships/ss-otranto.html", "builderId": "workman", "builderDisplay": "Workman, Clark & Co., Belfast", "builderMappingStatus": "needs-review"}, {"id": "ss-paris", "name": "SS Paris", "url": "https://www.oceanliners.net/ships/ss-paris.html", "builderId": "chantiers-de-penhoet", "builderDisplay": "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)", "builderMappingStatus": "confirmed"}, {"id": "ss-pasteur", "name": "SS Pasteur", "url": "https://www.oceanliners.net/ships/ss-pasteur.html", "builderId": "chantiers-de-l-atlantique", "builderDisplay": "Chantiers de l'Atlantique, Saint-Nazaire", "builderMappingStatus": "confirmed"}, {"id": "ss-patricia", "name": "SS Patricia", "url": "https://www.oceanliners.net/ships/ss-patricia.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan, Stettin, Germany", "builderMappingStatus": "provisional"}, {"id": "ss-pennland", "name": "SS Pennland", "url": "https://www.oceanliners.net/ships/ss-pennland.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "ss-pennsylvania", "name": "SS Pennsylvania", "url": "https://www.oceanliners.net/ships/ss-pennsylvania.html", "builderId": "newport-news-shipbuilding", "builderDisplay": "Newport News Shipbuilding & Drydock Company", "builderMappingStatus": "confirmed"}, {"id": "ss-persic", "name": "SS Persic", "url": "https://www.oceanliners.net/ships/ss-persic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-poland", "name": "SS Poland", "url": "https://www.oceanliners.net/ships/ss-poland.html", "builderId": "furness", "builderDisplay": "Furness, Withy & Co., West Hartlepool, England", "builderMappingStatus": "needs-review"}, {"id": "ss-president-coolidge", "name": "SS President Coolidge", "url": "https://www.oceanliners.net/ships/ss-president-coolidge.html", "builderId": "newport-news-shipbuilding", "builderDisplay": "Newport News Shipbuilding and Dry Dock Company", "builderMappingStatus": "confirmed"}, {"id": "ss-president-hoover", "name": "SS President Hoover", "url": "https://www.oceanliners.net/ships/ss-president-hoover.html", "builderId": "newport-news-shipbuilding", "builderDisplay": "Newport News Shipbuilding and Dry Dock Company, Virginia", "builderMappingStatus": "confirmed"}, {"id": "ss-president-lincoln", "name": "SS President Lincoln", "url": "https://www.oceanliners.net/ships/ss-president-lincoln.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-pretoria", "name": "SS Pretoria", "url": "https://www.oceanliners.net/ships/ss-pretoria.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss, Hamburg, Germany", "builderMappingStatus": "confirmed"}, {"id": "ss-principessa-mafalda", "name": "SS Principessa Mafalda", "url": "https://www.oceanliners.net/ships/ss-principessa-mafalda.html", "builderId": "cantiere-navale-di-riva-trigoso", "builderDisplay": "Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy", "builderMappingStatus": "needs-review"}, {"id": "ss-prinz-friedrich-wilhelm", "name": "SS Prinz Friedrich Wilhelm", "url": "https://www.oceanliners.net/ships/ss-prinz-friedrich-wilhelm.html", "builderId": "joh-c-tecklenborg", "builderDisplay": "Joh. C. Tecklenborg, Geestemünde, Germany", "builderMappingStatus": "confirmed"}, {"id": "ss-prinzess-irene", "name": "SS Prinzess Irene", "url": "https://www.oceanliners.net/ships/ss-prinzess-irene.html", "builderId": "ag-vulcan", "builderDisplay": "AG Vulcan, Stettin, Germany", "builderMappingStatus": "provisional"}, {"id": "ss-queen-of-bermuda", "name": "SS Queen of Bermuda", "url": "https://www.oceanliners.net/ships/ss-queen-of-bermuda.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrongs (Barrow-in-Furness, UK)", "builderMappingStatus": "provisional"}, {"id": "ss-raffaello-1965", "name": "SS Raffaello (1965)", "url": "https://www.oceanliners.net/ships/ss-raffaello-1965.html", "builderId": "cantieri-riuniti-adriatico", "builderDisplay": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste, Italy", "builderMappingStatus": "confirmed"}, {"id": "ss-reliance", "name": "SS Reliance", "url": "https://www.oceanliners.net/ships/ss-reliance.html", "builderId": "joh-c-tecklenborg", "builderDisplay": "Joh. C. Tecklenborg, Geestemünde (Bremerhaven)", "builderMappingStatus": "confirmed"}, {"id": "ss-republic", "name": "SS Republic", "url": "https://www.oceanliners.net/ships/ss-republic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-resolute", "name": "SS Resolute", "url": "https://www.oceanliners.net/ships/ss-resolute.html", "builderId": "ag-weser", "builderDisplay": "AG Weser, Bremen", "builderMappingStatus": "provisional"}, {"id": "ss-rex", "name": "SS Rex", "url": "https://www.oceanliners.net/ships/ss-rex.html", "builderId": "ansaldo", "builderDisplay": "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)", "builderMappingStatus": "provisional"}, {"id": "ss-rijndam-1901", "name": "SS Rijndam", "url": "https://www.oceanliners.net/ships/ss-rijndam-1901.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast · Yard No. 336", "builderMappingStatus": "confirmed"}, {"id": "ss-rochambeau", "name": "SS Rochambeau", "url": "https://www.oceanliners.net/ships/ss-rochambeau.html", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "builderDisplay": "Chantiers & Ateliers de Saint-Nazaire, Penhoët", "builderMappingStatus": "provisional"}, {"id": "ss-roma", "name": "SS Roma", "url": "https://www.oceanliners.net/ships/ss-roma.html", "builderId": "ansaldo", "builderDisplay": "Ansaldo (Sestri Ponente / Genoa)", "builderMappingStatus": "provisional"}, {"id": "ss-romanic", "name": "SS Romanic", "url": "https://www.oceanliners.net/ships/ss-romanic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-rotterdam-1908", "name": "SS Rotterdam (1908)", "url": "https://www.oceanliners.net/ships/ss-rotterdam-1908.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-rotterdam-1959", "name": "SS Rotterdam (1959)", "url": "https://www.oceanliners.net/ships/ss-rotterdam-1959.html", "builderId": "rotterdamsche-droogdok-maatschappij", "builderDisplay": "Rotterdam Drydock Company (RDM), Rotterdam, Netherlands", "builderMappingStatus": "confirmed"}, {"id": "ss-runic", "name": "SS Runic", "url": "https://www.oceanliners.net/ships/ss-runic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-saxon", "name": "SS Saxon", "url": "https://www.oceanliners.net/ships/ss-saxon.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-scharnhorst", "name": "SS Scharnhorst", "url": "https://www.oceanliners.net/ships/ss-scharnhorst.html", "builderId": "ag-weser", "builderDisplay": "Deschimag AG Weser, Bremen", "builderMappingStatus": "provisional"}, {"id": "ss-sirius", "name": "SS Sirius", "url": "https://www.oceanliners.net/ships/ss-sirius.html", "builderId": "robert-menzies-and-sons", "builderDisplay": "Robert Menzies & Sons, Leith, Scotland", "builderMappingStatus": "needs-review"}, {"id": "ss-st-louis", "name": "SS St. Louis", "url": "https://www.oceanliners.net/ships/ss-st-louis.html", "builderId": "bremer-vulkan", "builderDisplay": "Bremer Vulkan, Bremen-Vegesack, Germany", "builderMappingStatus": "needs-review"}, {"id": "ss-storstad", "name": "SS Storstad", "url": "https://www.oceanliners.net/ships/ss-storstad.html", "builderId": "armstrong-whitworth", "builderDisplay": "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)", "builderMappingStatus": "confirmed"}, {"id": "ss-strathaird", "name": "SS Strathaird", "url": "https://www.oceanliners.net/ships/ss-strathaird.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrong, Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "ss-strathmore", "name": "SS Strathmore", "url": "https://www.oceanliners.net/ships/ss-strathmore.html", "builderId": "vickers", "builderDisplay": "Vickers-Armstrong, Barrow-in-Furness", "builderMappingStatus": "provisional"}, {"id": "ss-suevic", "name": "SS Suevic", "url": "https://www.oceanliners.net/ships/ss-suevic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-traffic", "name": "SS Traffic", "url": "https://www.oceanliners.net/ships/ss-traffic.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff (Belfast)", "builderMappingStatus": "confirmed"}, {"id": "ss-tuscania-1921", "name": "SS Tuscania (1921)", "url": "https://www.oceanliners.net/ships/ss-tuscania-1921.html", "builderId": "fairfield-shipbuilding-engineering-company", "builderDisplay": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow)", "builderMappingStatus": "confirmed"}, {"id": "ss-us", "name": "SS United States", "url": "https://www.oceanliners.net/ships/ss-us.html", "builderId": "newport-news-shipbuilding", "builderDisplay": "Newport News Shipbuilding (Virginia, USA)", "builderMappingStatus": "confirmed"}, {"id": "ss-vaterland", "name": "SS Vaterland", "url": "https://www.oceanliners.net/ships/ss-vaterland.html", "builderId": "blohm-voss", "builderDisplay": "Blohm & Voss (Hamburg, Germany)", "builderMappingStatus": "confirmed"}, {"id": "ss-veendam", "name": "SS Veendam", "url": "https://www.oceanliners.net/ships/ss-veendam.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-vestris", "name": "SS Vestris", "url": "https://www.oceanliners.net/ships/ss-vestris.html", "builderId": "workman", "builderDisplay": "Workman, Clark & Co., Belfast", "builderMappingStatus": "needs-review"}, {"id": "ss-virginia", "name": "SS Virginia", "url": "https://www.oceanliners.net/ships/ss-virginia.html", "builderId": "newport-news-shipbuilding", "builderDisplay": "Newport News Shipbuilding & Drydock Company", "builderMappingStatus": "confirmed"}, {"id": "ss-volendam", "name": "SS Volendam", "url": "https://www.oceanliners.net/ships/ss-volendam.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Govan", "builderMappingStatus": "confirmed"}, {"id": "ss-warwick-castle", "name": "SS Warwick Castle", "url": "https://www.oceanliners.net/ships/ss-warwick-castle.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-washington", "name": "SS Washington", "url": "https://www.oceanliners.net/ships/ss-washington.html", "builderId": "new-york-shipbuilding", "builderDisplay": "New York Shipbuilding Corporation (Camden, New Jersey, USA)", "builderMappingStatus": "confirmed"}, {"id": "ss-westernland", "name": "SS Westernland", "url": "https://www.oceanliners.net/ships/ss-westernland.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff Ltd., Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-winchester-castle", "name": "SS Winchester Castle", "url": "https://www.oceanliners.net/ships/ss-winchester-castle.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-winifredian", "name": "SS Winifredian", "url": "https://www.oceanliners.net/ships/ss-winifredian.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast · Yard No. 324", "builderMappingStatus": "confirmed"}, {"id": "ss-zeeland", "name": "SS Zeeland", "url": "https://www.oceanliners.net/ships/ss-zeeland.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "ss-ile-de-france", "name": "SS Île de France", "url": "https://www.oceanliners.net/ships/ss-ile-de-france.html", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire", "builderDisplay": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)", "builderMappingStatus": "needs-review"}, {"id": "stirling-castle", "name": "Stirling Castle", "url": "https://www.oceanliners.net/ships/stirling-castle.html", "builderId": "harland-wolff", "builderDisplay": "Harland & Wolff, Belfast", "builderMappingStatus": "confirmed"}, {"id": "tatsuta-maru-1929", "name": "Tatsuta Maru", "url": "https://www.oceanliners.net/ships/tatsuta-maru-1929.html", "builderId": "mitsubishi-shipbuilding-and-engineering-co", "builderDisplay": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki", "builderMappingStatus": "needs-review"}]}}</script>
+  <script>
+  (() => {
+    "use strict";
+
+    const EMBEDDED = JSON.parse(document.getElementById("embeddedData").textContent);
+    const STORAGE_KEY = "olc-builder-review-dashboard-v1";
+
+    const $ = (id) => document.getElementById(id);
+    const slugify = (value) => value
+      .normalize("NFKD")
+      .replace(/[^\x00-\x7F]/g, "")
+      .toLowerCase()
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+
+    const deepClone = (obj) => JSON.parse(JSON.stringify(obj));
+
+    let baseData = deepClone(EMBEDDED);
+    let decisions = {};
+    let selectedId = null;
+
+    function makeDefaultDecision(item) {
+      return {
+        originalBuilderId: item.builderId,
+        canonicalId: item.builderId,
+        canonicalName: item.proposedName,
+        editorialNote: "",
+        mergeTargetId: "",
+        mergeNote: "",
+        splitBuilders: [],
+        aliasAssignments: Object.fromEntries(item.aliases.map(alias => [alias, item.builderId])),
+        reviewed: false,
+        decisionType: "pending",
+        updatedAt: null
+      };
+    }
+
+    function getItem(id) {
+      return baseData.queue.items.find(item => item.builderId === id);
+    }
+
+    function getDecision(id) {
+      if (!decisions[id]) decisions[id] = makeDefaultDecision(getItem(id));
+      return decisions[id];
+    }
+
+    function getAllCanonicalBuilders() {
+      const map = new Map();
+      for (const b of baseData.builders.builders || []) {
+        map.set(b.id, { id:b.id, name:b.name });
+      }
+      for (const d of Object.values(decisions)) {
+        if (d.canonicalId && d.canonicalName) map.set(d.canonicalId, { id:d.canonicalId, name:d.canonicalName });
+        for (const split of d.splitBuilders || []) {
+          if (split.id && split.name) map.set(split.id, { id:split.id, name:split.name });
+        }
+      }
+      return [...map.values()].sort((a,b) => a.name.localeCompare(b.name));
+    }
+
+    function saveLocal(show=true) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        version:"1.0",
+        savedAt:new Date().toISOString(),
+        decisions
+      }));
+      if (show) showNotice("Dashboard decisions saved in this browser.");
+    }
+
+    function restoreLocal() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        if (saved?.decisions) decisions = saved.decisions;
+      } catch (error) {
+        console.warn("Could not restore dashboard state.", error);
+      }
+    }
+
+    function renderQueue() {
+      const query = $("searchInput").value.trim().toLowerCase();
+      const filter = $("statusFilter").value;
+      const sort = $("sortSelect").value;
+
+      let items = [...baseData.queue.items];
+
+      items = items.filter(item => {
+        const d = getDecision(item.builderId);
+        const haystack = [item.proposedName, item.builderId, ...item.aliases].join(" ").toLowerCase();
+        if (query && !haystack.includes(query)) return false;
+        if (filter === "pending" && d.reviewed) return false;
+        if (filter === "reviewed" && !d.reviewed) return false;
+        if (filter === "provisional" && item.mappingStatus !== "provisional") return false;
+        if (filter === "needs-review" && item.mappingStatus !== "needs-review") return false;
+        return true;
+      });
+
+      if (sort === "ships-desc") items.sort((a,b) => b.shipCount - a.shipCount || a.proposedName.localeCompare(b.proposedName));
+      else if (sort === "aliases-desc") items.sort((a,b) => b.aliases.length - a.aliases.length || a.proposedName.localeCompare(b.proposedName));
+      else items.sort((a,b) => a.proposedName.localeCompare(b.proposedName));
+
+      $("queueList").innerHTML = items.map(item => {
+        const d = getDecision(item.builderId);
+        return `
+          <button class="queue-item ${selectedId===item.builderId ? "active" : ""} ${d.reviewed ? "done" : ""}" data-id="${escapeHtml(item.builderId)}">
+            <div class="queue-title">
+              <strong>${escapeHtml(d.canonicalName || item.proposedName)}</strong>
+              <span class="status-dot"></span>
+            </div>
+            <div class="queue-meta">
+              ${item.shipCount} ships · ${item.aliases.length} aliases · ${d.reviewed ? escapeHtml(d.decisionType) : item.mappingStatus}
+            </div>
+          </button>`;
+      }).join("") || `<p style="padding:18px;color:var(--muted)">No records match the current filters.</p>`;
+
+      document.querySelectorAll(".queue-item").forEach(btn => {
+        btn.addEventListener("click", () => selectItem(btn.dataset.id));
+      });
+
+      updateProgress();
+    }
+
+    function selectItem(id) {
+      selectedId = id;
+      $("emptyState").classList.add("hidden");
+      $("editor").classList.remove("hidden");
+      renderEditor();
+      renderQueue();
+      window.scrollTo({ top:0, behavior:"smooth" });
+    }
+
+    function renderEditor() {
+      const item = getItem(selectedId);
+      const d = getDecision(selectedId);
+
+      $("sourceStatus").textContent = `${item.mappingStatus} source mapping`;
+      $("builderTitle").textContent = d.canonicalName || item.proposedName;
+      $("builderIdChip").textContent = d.canonicalId || item.builderId;
+      $("shipCount").textContent = item.shipCount;
+      $("aliasCount").textContent = item.aliases.length;
+      $("decisionState").textContent = d.reviewed ? d.decisionType : "Pending";
+      $("canonicalName").value = d.canonicalName;
+      $("canonicalId").value = d.canonicalId;
+      $("editorialNote").value = d.editorialNote || "";
+      $("mergeNote").value = d.mergeNote || "";
+
+      renderMergeOptions();
+      renderSplits();
+      renderAliases();
+    }
+
+    function renderMergeOptions() {
+      const d = getDecision(selectedId);
+      const options = [`<option value="">Do not merge</option>`];
+      for (const b of getAllCanonicalBuilders()) {
+        if (b.id === d.canonicalId || b.id === selectedId) continue;
+        options.push(`<option value="${escapeHtml(b.id)}">${escapeHtml(b.name)} — ${escapeHtml(b.id)}</option>`);
+      }
+      $("mergeTarget").innerHTML = options.join("");
+      $("mergeTarget").value = d.mergeTargetId || "";
+    }
+
+    function renderSplits() {
+      const d = getDecision(selectedId);
+      $("splitList").innerHTML = (d.splitBuilders || []).map((split,index) => `
+        <div class="split-row">
+          <input data-split-name="${index}" value="${escapeHtml(split.name)}" placeholder="Canonical name" />
+          <input data-split-id="${index}" value="${escapeHtml(split.id)}" placeholder="canonical-id" />
+          <button class="btn small danger" data-remove-split="${index}">Remove</button>
+        </div>
+      `).join("");
+
+      document.querySelectorAll("[data-split-name]").forEach(input => {
+        input.addEventListener("input", () => {
+          const index = Number(input.dataset.splitName);
+          d.splitBuilders[index].name = input.value;
+          if (!d.splitBuilders[index].idTouched) {
+            d.splitBuilders[index].id = slugify(input.value);
+          }
+          renderSplits();
+          renderAliases();
+        });
+      });
+
+      document.querySelectorAll("[data-split-id]").forEach(input => {
+        input.addEventListener("input", () => {
+          const index = Number(input.dataset.splitId);
+          d.splitBuilders[index].id = slugify(input.value);
+          d.splitBuilders[index].idTouched = true;
+          renderAliases();
+        });
+      });
+
+      document.querySelectorAll("[data-remove-split]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const index = Number(btn.dataset.removeSplit);
+          const removedId = d.splitBuilders[index].id;
+          d.splitBuilders.splice(index,1);
+          for (const alias of Object.keys(d.aliasAssignments)) {
+            if (d.aliasAssignments[alias] === removedId) d.aliasAssignments[alias] = d.canonicalId;
+          }
+          renderSplits();
+          renderAliases();
+        });
+      });
+    }
+
+    function renderAliases() {
+      const item = getItem(selectedId);
+      const d = getDecision(selectedId);
+      const destinations = [
+        { id:d.canonicalId, name:d.canonicalName || d.canonicalId },
+        ...(d.splitBuilders || []).filter(s => s.id && s.name)
+      ];
+
+      $("aliasList").innerHTML = item.aliases.map((alias,index) => {
+        const assigned = d.aliasAssignments[alias] || d.canonicalId;
+        const options = destinations.map(dest =>
+          `<option value="${escapeHtml(dest.id)}" ${dest.id===assigned ? "selected" : ""}>${escapeHtml(dest.name)}</option>`
+        ).join("");
+        return `
+          <div class="alias-row">
+            <input type="checkbox" data-alias-check="${index}" />
+            <div class="alias-text">${escapeHtml(alias)}</div>
+            <select data-alias-select="${index}">${options}</select>
+          </div>`;
+      }).join("");
+
+      document.querySelectorAll("[data-alias-select]").forEach(select => {
+        select.addEventListener("change", () => {
+          const alias = item.aliases[Number(select.dataset.aliasSelect)];
+          d.aliasAssignments[alias] = select.value;
+        });
+      });
+    }
+
+    function addSplit(name="New builder", selectedAliases=[]) {
+      const d = getDecision(selectedId);
+      const existing = new Set([d.canonicalId, ...(d.splitBuilders || []).map(s => s.id)]);
+      let id = slugify(name);
+      let n = 2;
+      while (existing.has(id)) id = `${slugify(name)}-${n++}`;
+
+      d.splitBuilders.push({ id, name, idTouched:false });
+      for (const alias of selectedAliases) d.aliasAssignments[alias] = id;
+      renderSplits();
+      renderAliases();
+    }
+
+    function collectForm() {
+      const d = getDecision(selectedId);
+      const oldCanonical = d.canonicalId;
+      d.canonicalName = $("canonicalName").value.trim() || getItem(selectedId).proposedName;
+      d.canonicalId = slugify($("canonicalId").value.trim() || d.canonicalName);
+      d.editorialNote = $("editorialNote").value.trim();
+      d.mergeTargetId = $("mergeTarget").value;
+      d.mergeNote = $("mergeNote").value.trim();
+
+      if (oldCanonical !== d.canonicalId) {
+        for (const alias of Object.keys(d.aliasAssignments)) {
+          if (d.aliasAssignments[alias] === oldCanonical) d.aliasAssignments[alias] = d.canonicalId;
+        }
+      }
+
+      for (const split of d.splitBuilders || []) {
+        split.id = slugify(split.id || split.name);
+      }
+    }
+
+    function saveDecision(reviewed) {
+      collectForm();
+      const d = getDecision(selectedId);
+
+      if (d.mergeTargetId) {
+        d.decisionType = "merge";
+      } else if ((d.splitBuilders || []).length) {
+        const usedSplitIds = new Set(Object.values(d.aliasAssignments));
+        d.splitBuilders = d.splitBuilders.filter(s => usedSplitIds.has(s.id));
+        d.decisionType = d.splitBuilders.length ? "split" : "accept";
+      } else if (d.canonicalId !== selectedId || d.canonicalName !== getItem(selectedId).proposedName) {
+        d.decisionType = "rename";
+      } else {
+        d.decisionType = "accept";
+      }
+
+      d.reviewed = reviewed;
+      d.updatedAt = new Date().toISOString();
+      saveLocal(false);
+      renderEditor();
+      renderQueue();
+      showNotice(reviewed ? "Editorial decision accepted and saved." : "Draft saved; this record remains pending.");
+    }
+
+    function clearDecision() {
+      decisions[selectedId] = makeDefaultDecision(getItem(selectedId));
+      saveLocal(false);
+      renderEditor();
+      renderQueue();
+      showNotice("Decision cleared and restored to the original proposal.");
+    }
+
+    function nextPending() {
+      const items = [...baseData.queue.items].sort((a,b) => a.proposedName.localeCompare(b.proposedName));
+      const currentIndex = items.findIndex(i => i.builderId === selectedId);
+      const ordered = [...items.slice(currentIndex+1), ...items.slice(0,currentIndex+1)];
+      const next = ordered.find(i => !getDecision(i.builderId).reviewed);
+      if (next) selectItem(next.builderId);
+      else showNotice("Every review item has an accepted decision.");
+    }
+
+    function updateProgress() {
+      const total = baseData.queue.items.length;
+      const reviewed = baseData.queue.items.filter(i => getDecision(i.builderId).reviewed).length;
+      const pct = total ? Math.round(reviewed / total * 100) : 0;
+      $("progressBar").style.width = `${pct}%`;
+      $("progressText").textContent = `${reviewed} reviewed · ${pct}%`;
+      $("queueCount").textContent = `${total} total items`;
+    }
+
+    function showNotice(message) {
+      const el = $("notice");
+      el.textContent = message;
+      el.classList.add("show");
+      clearTimeout(showNotice.timer);
+      showNotice.timer = setTimeout(() => el.classList.remove("show"), 3500);
+    }
+
+    function downloadJson(filename, payload) {
+      const blob = new Blob([JSON.stringify(payload,null,2)], {type:"application/json"});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    function exportDecisions() {
+      downloadJson("builder-review-decisions.json", {
+        schemaVersion:"1.0",
+        exportedAt:new Date().toISOString(),
+        sourceQueueGeneratedAt:baseData.queue.generatedAt || null,
+        decisions:Object.values(decisions).filter(d => d.reviewed)
+      });
+    }
+
+    function buildRevisedData() {
+      const revisedBuilders = deepClone(baseData.builders);
+      const revisedAliases = deepClone(baseData.aliases);
+      const revisedShips = deepClone(baseData.ships);
+
+      const builderMap = new Map((revisedBuilders.builders || []).map(b => [b.id,b]));
+      const aliasMap = new Map((revisedAliases.aliases || []).map(a => [a.source,a]));
+
+      for (const item of baseData.queue.items) {
+        const d = getDecision(item.builderId);
+        if (!d.reviewed) continue;
+
+        if (d.mergeTargetId) {
+          for (const alias of item.aliases) {
+            const rec = aliasMap.get(alias);
+            if (rec) {
+              rec.builderId = d.mergeTargetId;
+              rec.mappingStatus = "confirmed";
+              rec.mappingMethod = "editorial-dashboard";
+            }
+          }
+          for (const ship of revisedShips.ships || []) {
+            if (item.aliases.includes(ship.builderDisplay)) {
+              ship.builderId = d.mergeTargetId;
+              ship.builderMappingStatus = "confirmed";
+            }
+          }
+          builderMap.delete(item.builderId);
+          continue;
+        }
+
+        const destinations = [
+          {id:d.canonicalId,name:d.canonicalName},
+          ...(d.splitBuilders || [])
+        ];
+
+        if (d.canonicalId !== item.builderId) builderMap.delete(item.builderId);
+
+        for (const dest of destinations) {
+          if (!builderMap.has(dest.id)) {
+            builderMap.set(dest.id,{
+              id:dest.id,
+              name:dest.name,
+              type:"shipbuilder",
+              mappingStatus:"confirmed",
+              shipCount:0,
+              aliases:[],
+              shipIds:[]
+            });
+          } else {
+            const b = builderMap.get(dest.id);
+            b.name = dest.name;
+            b.mappingStatus = "confirmed";
+          }
+        }
+
+        for (const alias of item.aliases) {
+          const assignedId = d.aliasAssignments[alias] || d.canonicalId;
+          const rec = aliasMap.get(alias);
+          if (rec) {
+            rec.builderId = assignedId;
+            rec.mappingStatus = "confirmed";
+            rec.mappingMethod = "editorial-dashboard";
+          }
+          for (const ship of revisedShips.ships || []) {
+            if (ship.builderDisplay === alias) {
+              ship.builderId = assignedId;
+              ship.builderMappingStatus = "confirmed";
+            }
+          }
+        }
+      }
+
+      // Recompute aliases, ship IDs, and counts from revised data.
+      const aliasesByBuilder = new Map();
+      for (const a of revisedAliases.aliases || []) {
+        if (!aliasesByBuilder.has(a.builderId)) aliasesByBuilder.set(a.builderId,new Set());
+        aliasesByBuilder.get(a.builderId).add(a.source);
+      }
+      const shipsByBuilder = new Map();
+      for (const ship of revisedShips.ships || []) {
+        if (!shipsByBuilder.has(ship.builderId)) shipsByBuilder.set(ship.builderId,new Set());
+        shipsByBuilder.get(ship.builderId).add(ship.id);
+      }
+
+      for (const [id,b] of builderMap) {
+        b.aliases = [...(aliasesByBuilder.get(id) || [])].sort((a,c)=>a.localeCompare(c));
+        b.shipIds = [...(shipsByBuilder.get(id) || [])].sort();
+        b.shipCount = b.shipIds.length;
+      }
+
+      revisedBuilders.builders = [...builderMap.values()].sort((a,b)=>a.name.localeCompare(b.name));
+      revisedBuilders.counts = {
+        builders:revisedBuilders.builders.length,
+        confirmed:revisedBuilders.builders.filter(b=>b.mappingStatus==="confirmed").length,
+        provisional:revisedBuilders.builders.filter(b=>b.mappingStatus==="provisional").length,
+        needsReview:revisedBuilders.builders.filter(b=>b.mappingStatus==="needs-review").length
+      };
+      revisedBuilders.generatedAt = new Date().toISOString();
+      revisedAliases.generatedAt = revisedBuilders.generatedAt;
+      revisedShips.generatedAt = revisedBuilders.generatedAt;
+
+      return { revisedBuilders, revisedAliases, revisedShips };
+    }
+
+    function exportAll() {
+      const {revisedBuilders,revisedAliases,revisedShips} = buildRevisedData();
+      const pending = baseData.queue.items.filter(i => !getDecision(i.builderId).reviewed).map(i => i.builderId);
+
+      downloadJson("builder-review-dashboard-state.json", {
+        schemaVersion:"1.0",
+        exportedAt:new Date().toISOString(),
+        decisions,
+        pendingBuilderIds:pending,
+        files:{
+          "builders.json":revisedBuilders,
+          "builder-aliases.json":revisedAliases,
+          "ships.json":revisedShips
+        }
+      });
+
+      // Browsers cannot create a zip without an extra library, so also emit each deployable file.
+      setTimeout(()=>downloadJson("builders.revised.json", revisedBuilders),250);
+      setTimeout(()=>downloadJson("builder-aliases.revised.json", revisedAliases),500);
+      setTimeout(()=>downloadJson("ships.revised.json", revisedShips),750);
+    }
+
+    function importPayload(payload) {
+      if (payload.decisions && !Array.isArray(payload.decisions)) {
+        decisions = {...decisions,...payload.decisions};
+      } else if (Array.isArray(payload.decisions)) {
+        for (const d of payload.decisions) decisions[d.originalBuilderId] = d;
+      } else if (payload.items && Array.isArray(payload.items)) {
+        baseData.queue = payload;
+        decisions = {};
+      } else {
+        throw new Error("The JSON file is not a recognized dashboard export or review queue.");
+      }
+      saveLocal(false);
+      renderQueue();
+      if (selectedId && getItem(selectedId)) renderEditor();
+      showNotice("Imported JSON successfully.");
+    }
+
+    function escapeHtml(value="") {
+      return String(value).replace(/[&<>"']/g, char => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+      })[char]);
+    }
+
+    $("searchInput").addEventListener("input", renderQueue);
+    $("statusFilter").addEventListener("change", renderQueue);
+    $("sortSelect").addEventListener("change", renderQueue);
+
+    $("canonicalName").addEventListener("input", () => {
+      const d = getDecision(selectedId);
+      d.canonicalName = $("canonicalName").value;
+      $("builderTitle").textContent = d.canonicalName;
+    });
+    $("canonicalId").addEventListener("input", () => {
+      $("canonicalId").value = slugify($("canonicalId").value);
+      $("builderIdChip").textContent = $("canonicalId").value;
+    });
+
+    $("selectAllAliases").addEventListener("click", () => {
+      document.querySelectorAll("[data-alias-check]").forEach(c => c.checked=true);
+    });
+    $("clearAliasSelection").addEventListener("click", () => {
+      document.querySelectorAll("[data-alias-check]").forEach(c => c.checked=false);
+    });
+    $("createSplitBtn").addEventListener("click", () => {
+      const item = getItem(selectedId);
+      const chosen = [...document.querySelectorAll("[data-alias-check]:checked")]
+        .map(c => item.aliases[Number(c.dataset.aliasCheck)]);
+      if (!chosen.length) return showNotice("Select one or more aliases before creating a split.");
+      addSplit("New split builder", chosen);
+    });
+    $("addSplitBtn").addEventListener("click", () => addSplit());
+
+    $("acceptBtn").addEventListener("click", () => saveDecision(true));
+    $("savePendingBtn").addEventListener("click", () => saveDecision(false));
+    $("clearDecisionBtn").addEventListener("click", clearDecision);
+    $("nextBtn").addEventListener("click", nextPending);
+    $("saveBrowserBtn").addEventListener("click", () => saveLocal(true));
+    $("exportDecisionsBtn").addEventListener("click", exportDecisions);
+    $("exportAllBtn").addEventListener("click", exportAll);
+
+    $("resetBtn").addEventListener("click", () => {
+      if (!confirm("Clear every dashboard decision and restore the embedded review queue?")) return;
+      decisions = {};
+      localStorage.removeItem(STORAGE_KEY);
+      selectedId = null;
+      $("editor").classList.add("hidden");
+      $("emptyState").classList.remove("hidden");
+      renderQueue();
+    });
+
+    $("importBtn").addEventListener("click", () => $("importModal").classList.add("open"));
+    $("cancelImportBtn").addEventListener("click", () => $("importModal").classList.remove("open"));
+    $("chooseFileBtn").addEventListener("click", () => $("fileInput").click());
+    $("fileInput").addEventListener("change", async () => {
+      const file = $("fileInput").files[0];
+      if (!file) return;
+      try {
+        importPayload(JSON.parse(await file.text()));
+        $("importModal").classList.remove("open");
+      } catch (error) {
+        alert(error.message);
+      } finally {
+        $("fileInput").value = "";
+      }
+    });
+
+    restoreLocal();
+    renderQueue();
+    const firstPending = baseData.queue.items.find(i => !getDecision(i.builderId).reviewed);
+    if (firstPending) selectItem(firstPending.builderId);
+  })();
+  </script>
+</body>
+</html>

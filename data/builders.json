@@ -1,0 +1,1130 @@
+{
+  "schemaVersion": "0.1",
+  "generatedAt": "2026-07-21T08:18:14.029459+00:00",
+  "source": {
+    "file": "ocean-liner-builder-extraction-test.json",
+    "archiveUrl": "https://www.oceanliners.net/ships/ships",
+    "sourceGeneratedAt": "2026-07-21T08:05:39.072Z"
+  },
+  "description": "Canonical shipbuilder identities with preserved source aliases and linked ship IDs.",
+  "counts": {
+    "builders": 58,
+    "confirmed": 22,
+    "provisional": 7,
+    "needsReview": 29
+  },
+  "builders": [
+    {
+      "id": "ag-vulcan",
+      "name": "AG Vulcan",
+      "type": "shipbuilder",
+      "mappingStatus": "provisional",
+      "shipCount": 16,
+      "aliases": [
+        "AG Vulcan (Hamburg, Germany)",
+        "AG Vulcan (Stettin)",
+        "AG Vulcan (Stettin, Germany)",
+        "AG Vulcan (Vulcan-Werke), Stettin",
+        "AG Vulcan, Hamburg",
+        "AG Vulcan, Stettin",
+        "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)",
+        "AG Vulcan, Stettin, Germany",
+        "AG Vulkan, Stettin",
+        "Stettiner Vulcan (AG Vulcan), Stettin",
+        "Vulcan AG, Stettin",
+        "Vulcan Werft (Hamburg, Germany)",
+        "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)"
+      ],
+      "shipIds": [
+        "rms-berengaria",
+        "rms-empress-of-australia",
+        "ss-cap-trafalgar",
+        "ss-deutschland",
+        "ss-empress-of-france",
+        "ss-friedrich-der-grosse",
+        "ss-george-washington",
+        "ss-george-washington-ngl",
+        "ss-imperator",
+        "ss-kaiser-wilhelm-der-grosse",
+        "ss-kaiser-wilhelm-ii",
+        "ss-kaiserin-auguste-victoria",
+        "ss-kronprinz-wilhelm",
+        "ss-kronprinzessin-cecilie",
+        "ss-patricia",
+        "ss-prinzess-irene"
+      ]
+    },
+    {
+      "id": "ag-weser",
+      "name": "AG Weser",
+      "type": "shipbuilder",
+      "mappingStatus": "provisional",
+      "shipCount": 7,
+      "aliases": [
+        "AG Weser (Bremen)",
+        "AG Weser, Bremen",
+        "Deschimag AG Weser, Bremen",
+        "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)"
+      ],
+      "shipIds": [
+        "ss-albertic",
+        "ss-arabic-1920",
+        "ss-berlin-1909",
+        "ss-bremen",
+        "ss-gneisenau",
+        "ss-resolute",
+        "ss-scharnhorst"
+      ]
+    },
+    {
+      "id": "alexander-stephen-sons",
+      "name": "Alexander Stephen & Sons",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 5,
+      "aliases": [
+        "Alexander Stephen & Sons (Glasgow)",
+        "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)",
+        "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland",
+        "Alexander Stephen & Sons, Linthouse, Glasgow"
+      ],
+      "shipIds": [
+        "rms-caledonia",
+        "rms-viceroy-of-india",
+        "ss-drottningholm",
+        "ss-marquette",
+        "ss-norge"
+      ]
+    },
+    {
+      "id": "ansaldo",
+      "name": "Ansaldo",
+      "type": "shipbuilder",
+      "mappingStatus": "provisional",
+      "shipCount": 7,
+      "aliases": [
+        "Ansaldo (Genoa / Sestri Ponente), Yard No. 918",
+        "Ansaldo (Sestri Ponente / Genoa)",
+        "Ansaldo Shipyard (Genoa)",
+        "Ansaldo Shipyard, Genoa",
+        "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy",
+        "Ansaldo Shipyards, Genoa",
+        "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)"
+      ],
+      "shipIds": [
+        "ms-augustus",
+        "ss-andrea-doria",
+        "ss-cristoforo-colombo",
+        "ss-leonardo-da-vinci",
+        "ss-michelangelo-1965",
+        "ss-rex",
+        "ss-roma"
+      ]
+    },
+    {
+      "id": "armstrong-whitworth",
+      "name": "Armstrong Whitworth",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 3,
+      "aliases": [
+        "Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)",
+        "Armstrong Whitworth, Newcastle-upon-Tyne",
+        "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)"
+      ],
+      "shipIds": [
+        "ms-gripsholm-1925",
+        "rms-ascania",
+        "ss-storstad"
+      ]
+    },
+    {
+      "id": "ateliers-chantiers-bretagne",
+      "name": "Ateliers et Chantiers de Bretagne",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 1,
+      "aliases": [
+        "Ateliers et Chantiers de Bretagne, Saint-Nazaire"
+      ],
+      "shipIds": [
+        "ss-bretagne"
+      ]
+    },
+    {
+      "id": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
+      "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 2,
+      "aliases": [
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)",
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France"
+      ],
+      "shipIds": [
+        "ss-la-bretagne",
+        "ss-latlantique"
+      ]
+    },
+    {
+      "id": "ateliers-chantiers-saint-nazaire-penhoet",
+      "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët",
+      "type": "shipbuilder",
+      "mappingStatus": "provisional",
+      "shipCount": 3,
+      "aliases": [
+        "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France",
+        "Chantiers & Ateliers de Saint-Nazaire, Penhoët",
+        "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France"
+      ],
+      "shipIds": [
+        "ss-champlain",
+        "ss-chicago-1908",
+        "ss-rochambeau"
+      ]
+    },
+    {
+      "id": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire",
+      "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)"
+      ],
+      "shipIds": [
+        "ss-ile-de-france"
+      ]
+    },
+    {
+      "id": "barclay-curle-company",
+      "name": "Barclay, Curle & Company",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 2,
+      "aliases": [
+        "Barclay Curle & Co., Glasgow",
+        "Barclay, Curle & Company, Glasgow, Scotland"
+      ],
+      "shipIds": [
+        "ss-cathay-1924",
+        "ss-corsican"
+      ]
+    },
+    {
+      "id": "barrow-shipbuilding-company",
+      "name": "Barrow Shipbuilding Company",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Barrow Shipbuilding Company, Barrow-in-Furness"
+      ],
+      "shipIds": [
+        "ss-la-normandie"
+      ]
+    },
+    {
+      "id": "bethlehem-fore-river",
+      "name": "Bethlehem Shipbuilding — Fore River",
+      "type": "shipbuilder",
+      "mappingStatus": "provisional",
+      "shipCount": 4,
+      "aliases": [
+        "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)",
+        "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)",
+        "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts"
+      ],
+      "shipIds": [
+        "ss-constitution",
+        "ss-lurline-1932",
+        "ss-mariposa",
+        "ss-monterey"
+      ]
+    },
+    {
+      "id": "bethlehem-steel-corporation",
+      "name": "Bethlehem Steel Corporation",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Bethlehem Steel Corporation, Quincy, Massachusetts"
+      ],
+      "shipIds": [
+        "ss-independence"
+      ]
+    },
+    {
+      "id": "blohm-voss",
+      "name": "Blohm & Voss",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 22,
+      "aliases": [
+        "Blohm & Voss (Hamburg)",
+        "Blohm & Voss (Hamburg, Germany)",
+        "Blohm & Voss, Hamburg",
+        "Blohm & Voss, Hamburg (yard no. commonly cited: 473)",
+        "Blohm & Voss, Hamburg · Yard No. 125",
+        "Blohm & Voss, Hamburg · Yard No. 132",
+        "Blohm & Voss, Hamburg, Germany"
+      ],
+      "shipIds": [
+        "ms-kungsholm-1928",
+        "rms-majestic",
+        "ss-albert-ballin",
+        "ss-barbarossa",
+        "ss-batavia",
+        "ss-belgravia",
+        "ss-bismarck-1914",
+        "ss-bulgaria",
+        "ss-cap-arcona",
+        "ss-cap-polonio",
+        "ss-cleveland",
+        "ss-europa",
+        "ss-graf-waldersee",
+        "ss-hamburg-1925",
+        "ss-konigin-luise",
+        "ss-leviathan",
+        "ss-liberte",
+        "ss-milwaukee",
+        "ss-moltke",
+        "ss-new-york",
+        "ss-pretoria",
+        "ss-vaterland"
+      ]
+    },
+    {
+      "id": "bremer-vulkan",
+      "name": "Bremer Vulkan",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Bremer Vulkan, Bremen-Vegesack, Germany"
+      ],
+      "shipIds": [
+        "ss-st-louis"
+      ]
+    },
+    {
+      "id": "caird-and-company",
+      "name": "Caird & Company",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Caird & Company, Greenock, Scotland"
+      ],
+      "shipIds": [
+        "rms-moldavia"
+      ]
+    },
+    {
+      "id": "cammell-laird",
+      "name": "Cammell Laird",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 4,
+      "aliases": [
+        "Cammell Laird (Birkenhead, England)",
+        "Cammell Laird, Birkenhead",
+        "Cammell, Laird & Co., Birkenhead (England)"
+      ],
+      "shipIds": [
+        "rms-mauretania-ii",
+        "rms-windsor-castle",
+        "ss-bergensfjord",
+        "ss-de-grasse"
+      ]
+    },
+    {
+      "id": "cantiere-navale-di-riva-trigoso",
+      "name": "Cantiere Navale di Riva Trigoso",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy"
+      ],
+      "shipIds": [
+        "ss-principessa-mafalda"
+      ]
+    },
+    {
+      "id": "cantiere-navale-triestino",
+      "name": "Cantiere Navale Triestino",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 2,
+      "aliases": [
+        "Cantiere Navale Triestino, Monfalcone",
+        "Cantiere Navale Triestino, Monfalcone (Italy)"
+      ],
+      "shipIds": [
+        "ms-vulcania",
+        "neptunia"
+      ]
+    },
+    {
+      "id": "cantieri-riuniti-adriatico",
+      "name": "Cantieri Riuniti dell’Adriatico",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 4,
+      "aliases": [
+        "Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)",
+        "Cantieri Riuniti dell’Adriatico (CRDA), Trieste, Italy",
+        "Cantieri Riuniti dell’Adriatico (Trieste, Italy)",
+        "Cantieri Riuniti dell’Adriatico, Monfalcone"
+      ],
+      "shipIds": [
+        "ms-saturnia",
+        "oceania",
+        "ss-conte-di-savoia",
+        "ss-raffaello-1965"
+      ]
+    },
+    {
+      "id": "chantiers-de-l-atlantique",
+      "name": "Chantiers de l’Atlantique",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 5,
+      "aliases": [
+        "Chantiers de l'Atlantique, Saint-Nazaire",
+        "Chantiers de l’Atlantique (Saint-Nazaire, France)",
+        "Chantiers de l’Atlantique, Saint-Nazaire"
+      ],
+      "shipIds": [
+        "rms-queen-mary-2",
+        "ss-flandre",
+        "ss-france",
+        "ss-france-1912",
+        "ss-pasteur"
+      ]
+    },
+    {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 3,
+      "aliases": [
+        "Chantiers de Penhoët (Saint-Nazaire, France)",
+        "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)",
+        "Chantiers de Penhoët, Saint-Nazaire"
+      ],
+      "shipIds": [
+        "ss-la-provence",
+        "ss-normandie",
+        "ss-paris"
+      ]
+    },
+    {
+      "id": "chantiers-ateliers-provence",
+      "name": "Chantiers et Ateliers de Provence",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 2,
+      "aliases": [
+        "Chantiers & Ateliers de Provence, Port-de-Bouc, France",
+        "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area"
+      ],
+      "shipIds": [
+        "ss-espagne",
+        "ss-lafayette"
+      ]
+    },
+    {
+      "id": "d-and-w-henderson-ltd",
+      "name": "D. & W. Henderson Ltd.",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "D. & W. Henderson Ltd., Glasgow"
+      ],
+      "shipIds": [
+        "ss-columbia"
+      ]
+    },
+    {
+      "id": "eastern-shipbuilding-company",
+      "name": "Eastern Shipbuilding Company",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Eastern Shipbuilding Company, New London / Groton, Connecticut"
+      ],
+      "shipIds": [
+        "ss-minnesota"
+      ]
+    },
+    {
+      "id": "f-schichau",
+      "name": "F. Schichau",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 3,
+      "aliases": [
+        "F. Schichau, Danzig (then Germany; now Gdańsk, Poland)",
+        "F. Schichau, Danzig (then Germany; today Gdańsk)",
+        "F. Schichau, Danzig, Germany"
+      ],
+      "shipIds": [
+        "rms-homeric",
+        "ss-columbus-1924",
+        "ss-grosser-kurfurst"
+      ]
+    },
+    {
+      "id": "fairfield-shipbuilding-engineering-company",
+      "name": "Fairfield Shipbuilding & Engineering Company",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 13,
+      "aliases": [
+        "Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)",
+        "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow)",
+        "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)",
+        "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)",
+        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424",
+        "Fairfield Shipbuilding & Engineering Co., Govan",
+        "Fairfield Shipbuilding & Engineering Co., Govan (Glasgow)",
+        "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow",
+        "Fairfield Shipbuilding & Engineering Company, Govan",
+        "Fairfield Shipbuilding & Engineering Company, Govan, Scotland",
+        "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)"
+      ],
+      "shipIds": [
+        "rms-campania",
+        "rms-empress-of-canada",
+        "rms-empress-of-ireland",
+        "rms-empress-of-japan-1929",
+        "rms-empress-of-russia",
+        "rms-etruria-1884",
+        "rms-kenilworth-castle",
+        "rms-transylvania",
+        "rms-umbria-1884",
+        "ss-armadale-castle",
+        "ss-calgarian",
+        "ss-letitia",
+        "ss-tuscania-1921"
+      ]
+    },
+    {
+      "id": "furness",
+      "name": "Furness",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Furness, Withy & Co., West Hartlepool, England"
+      ],
+      "shipIds": [
+        "ss-poland"
+      ]
+    },
+    {
+      "id": "germaniawerft-friedrich-krupp",
+      "name": "Germaniawerft / Friedrich Krupp",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Germaniawerft / Friedrich Krupp, Kiel, Germany"
+      ],
+      "shipIds": [
+        "ss-assyria"
+      ]
+    },
+    {
+      "id": "gotaverken",
+      "name": "Götaverken",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Götaverken, Gothenburg (Göteborg), Sweden"
+      ],
+      "shipIds": [
+        "ms-stockholm"
+      ]
+    },
+    {
+      "id": "harland-wolff",
+      "name": "Harland & Wolff",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 78,
+      "aliases": [
+        "Harland & Wolff (Belfast)",
+        "Harland & Wolff (Belfast), yard no. 391",
+        "Harland & Wolff (Belfast, Ireland)",
+        "Harland & Wolff (Belfast, Northern Ireland)",
+        "Harland & Wolff Ltd., Belfast",
+        "Harland & Wolff, Belfast",
+        "Harland & Wolff, Belfast (commonly cited)",
+        "Harland & Wolff, Belfast (Yard No. 358)",
+        "Harland & Wolff, Belfast (yard no. commonly cited: 1005)",
+        "Harland & Wolff, Belfast · Yard No. 315",
+        "Harland & Wolff, Belfast · Yard No. 318",
+        "Harland & Wolff, Belfast · Yard No. 324",
+        "Harland & Wolff, Belfast · Yard No. 327",
+        "Harland & Wolff, Belfast · Yard No. 336",
+        "Harland & Wolff, Belfast · Yard No. 338 · Slip No. 5",
+        "Harland & Wolff, Belfast · Yard No. 342",
+        "Harland & Wolff, Govan",
+        "Harland & Wolff, Queen’s Island, Belfast"
+      ],
+      "shipIds": [
+        "athlone-castle",
+        "mv-britannic",
+        "mv-georgic",
+        "rms-adriatic",
+        "rms-alcantara-1926",
+        "rms-andes-1939",
+        "rms-arundel-castle-1921",
+        "rms-asturias-1908",
+        "rms-baltic",
+        "rms-britannic",
+        "rms-britannic-1874",
+        "rms-cedric",
+        "rms-celtic",
+        "rms-laurentic",
+        "rms-megantic-1909",
+        "rms-oceanic-1899",
+        "rms-olympic",
+        "rms-teutonic",
+        "rms-titanic",
+        "rms-walmer-castle",
+        "ss-adriatic-1872",
+        "ss-afric",
+        "ss-amerika-1905",
+        "ss-arabic",
+        "ss-asturias-1925",
+        "ss-athenic",
+        "ss-atlantic-1873",
+        "ss-baltic-1871",
+        "ss-belgenland",
+        "ss-belgia",
+        "ss-brasilia",
+        "ss-briton",
+        "ss-calgaric",
+        "ss-canada-1896",
+        "ss-canberra",
+        "ss-carnarvon-castle",
+        "ss-ceramic",
+        "ss-commonwealth",
+        "ss-coptic",
+        "ss-corinthic",
+        "ss-cymric",
+        "ss-doric",
+        "ss-germanic",
+        "ss-gothic-white-star-line",
+        "ss-ionic",
+        "ss-lapland",
+        "ss-laurentic",
+        "ss-majestic-1889",
+        "ss-maloja",
+        "ss-medic",
+        "ss-minnetonka",
+        "ss-minnewaska",
+        "ss-mooltan",
+        "ss-new-england",
+        "ss-nieuw-amsterdam-1906",
+        "ss-nomadic",
+        "ss-noordam",
+        "ss-oceanic-1871",
+        "ss-pennland",
+        "ss-persic",
+        "ss-president-lincoln",
+        "ss-republic",
+        "ss-republic-1903",
+        "ss-rijndam-1901",
+        "ss-romanic",
+        "ss-rotterdam-1908",
+        "ss-runic",
+        "ss-saxon",
+        "ss-suevic",
+        "ss-traffic",
+        "ss-veendam",
+        "ss-volendam",
+        "ss-warwick-castle",
+        "ss-westernland",
+        "ss-winchester-castle",
+        "ss-winifredian",
+        "ss-zeeland",
+        "stirling-castle"
+      ]
+    },
+    {
+      "id": "hawthorn-leslie",
+      "name": "Hawthorn Leslie & Company",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 3,
+      "aliases": [
+        "Hawthorn Leslie & Company, Hebburn",
+        "R. & W. Hawthorn, Leslie & Co. Ltd., Hebburn-on-Tyne",
+        "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne"
+      ],
+      "shipIds": [
+        "rms-andania-1922",
+        "ss-cretic",
+        "ss-mayflower"
+      ]
+    },
+    {
+      "id": "j-g-thomson",
+      "name": "J. & G. Thomson",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 7,
+      "aliases": [
+        "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland",
+        "J. & G. Thomson & Co., Glasgow",
+        "J. & G. Thomson (Clydebank/Glasgow, Scotland)",
+        "J. & G. Thomson / James & George Thomson, Clydebank",
+        "J. & G. Thomson, Clydebank",
+        "J. & G. Thomson, Clydebank (Scotland)"
+      ],
+      "shipIds": [
+        "rms-servia-1881",
+        "ss-bothnia",
+        "ss-catalonia",
+        "ss-city-of-new-york-1888",
+        "ss-city-of-paris",
+        "ss-java",
+        "ss-malta"
+      ]
+    },
+    {
+      "id": "j-scott-russell-and-co",
+      "name": "J. Scott Russell & Co.",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "J. Scott Russell & Co., Millwall Iron Works (London)"
+      ],
+      "shipIds": [
+        "ss-great-eastern"
+      ]
+    },
+    {
+      "id": "jenks-ship-building-company",
+      "name": "Jenks Ship Building Company",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Jenks Ship Building Company, Port Huron, Michigan"
+      ],
+      "shipIds": [
+        "ss-eastland"
+      ]
+    },
+    {
+      "id": "joh-c-tecklenborg",
+      "name": "Joh. C. Tecklenborg",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 2,
+      "aliases": [
+        "Joh. C. Tecklenborg, Geestemünde (Bremerhaven)",
+        "Joh. C. Tecklenborg, Geestemünde, Germany"
+      ],
+      "shipIds": [
+        "ss-prinz-friedrich-wilhelm",
+        "ss-reliance"
+      ]
+    },
+    {
+      "id": "john-brown-company",
+      "name": "John Brown & Company",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 24,
+      "aliases": [
+        "John Brown & Co. (Clydebank, Scotland)",
+        "John Brown & Co. Ltd., Clydebank, Scotland",
+        "John Brown & Co., Clydebank",
+        "John Brown & Co., Clydebank (Scotland)",
+        "John Brown & Co., Clydebank, Scotland",
+        "John Brown & Company (Clydebank, Scotland)",
+        "John Brown & Company, Clydebank",
+        "John Brown & Company, Clydebank (Scotland)"
+      ],
+      "shipIds": [
+        "queen-elizabeth-2",
+        "rms-aquitania",
+        "rms-carinthia",
+        "rms-carmania",
+        "rms-caronia-1947",
+        "rms-empress-of-britain",
+        "rms-franconia",
+        "rms-ivernia",
+        "rms-lusitania",
+        "rms-queen-elizabeth",
+        "rms-queen-mary",
+        "rms-saxonia",
+        "rms-sylvania",
+        "rms-windsor-castle-1921",
+        "ss-arcadia-1954",
+        "ss-caronia",
+        "ss-duchess-of-bedford",
+        "ss-duchess-of-richmond",
+        "ss-duchess-of-york",
+        "ss-kroonland",
+        "ss-montcalm",
+        "ss-montclare",
+        "ss-montrose",
+        "ss-oronsay"
+      ]
+    },
+    {
+      "id": "mitsubishi-shipbuilding-and-engineering-co",
+      "name": "Mitsubishi Shipbuilding & Engineering Co.",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 2,
+      "aliases": [
+        "Mitsubishi Shipbuilding & Engineering Co., Nagasaki",
+        "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)"
+      ],
+      "shipIds": [
+        "asama-maru-1929",
+        "tatsuta-maru-1929"
+      ]
+    },
+    {
+      "id": "nederlandsche-scheepsbouw-maatschappij",
+      "name": "Nederlandsche Scheepsbouw Maatschappij",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 2,
+      "aliases": [
+        "Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam"
+      ],
+      "shipIds": [
+        "ss-johan-van-oldenbarnevelt",
+        "ss-marnix-van-st-aldegonde"
+      ]
+    },
+    {
+      "id": "new-york-shipbuilding",
+      "name": "New York Shipbuilding",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 4,
+      "aliases": [
+        "New York Shipbuilding Company, Camden, New Jersey",
+        "New York Shipbuilding Corporation (Camden, New Jersey, USA)",
+        "New York Shipbuilding Corporation, Camden, New Jersey"
+      ],
+      "shipIds": [
+        "ss-manchuria",
+        "ss-manhattan",
+        "ss-mongolia",
+        "ss-washington"
+      ]
+    },
+    {
+      "id": "newport-news-shipbuilding",
+      "name": "Newport News Shipbuilding",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 7,
+      "aliases": [
+        "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)",
+        "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)",
+        "Newport News Shipbuilding & Drydock Company",
+        "Newport News Shipbuilding (Virginia, USA)",
+        "Newport News Shipbuilding and Dry Dock Company",
+        "Newport News Shipbuilding and Dry Dock Company, Virginia"
+      ],
+      "shipIds": [
+        "ss-america",
+        "ss-morro-castle",
+        "ss-pennsylvania",
+        "ss-president-coolidge",
+        "ss-president-hoover",
+        "ss-us",
+        "ss-virginia"
+      ]
+    },
+    {
+      "id": "robert-duncan-and-company-greenock-port-glasgow",
+      "name": "Robert Duncan & Company (Greenock / Port Glasgow",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Robert Duncan & Company (Greenock / Port Glasgow, Scotland)"
+      ],
+      "shipIds": [
+        "rms-britannia-1840"
+      ]
+    },
+    {
+      "id": "robert-menzies-and-sons",
+      "name": "Robert Menzies & Sons",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Robert Menzies & Sons, Leith, Scotland"
+      ],
+      "shipIds": [
+        "ss-sirius"
+      ]
+    },
+    {
+      "id": "robert-napier-and-sons",
+      "name": "Robert Napier & Sons",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 2,
+      "aliases": [
+        "Robert Napier & Sons, Glasgow"
+      ],
+      "shipIds": [
+        "rms-persia-1855",
+        "rms-scotia-1861"
+      ]
+    },
+    {
+      "id": "robert-steele-and-co",
+      "name": "Robert Steele & Co.",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Robert Steele & Co., Greenock"
+      ],
+      "shipIds": [
+        "rms-cambria-1845"
+      ]
+    },
+    {
+      "id": "rotterdamsche-droogdok-maatschappij",
+      "name": "Rotterdamsche Droogdok Maatschappij",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 2,
+      "aliases": [
+        "Rotterdam Drydock Company (RDM), Rotterdam, Netherlands",
+        "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)"
+      ],
+      "shipIds": [
+        "ss-nieuw-amsterdam",
+        "ss-rotterdam-1959"
+      ]
+    },
+    {
+      "id": "scotts-shipbuilding-and-engineering-co-ltd",
+      "name": "Scotts Shipbuilding & Engineering Co. Ltd.",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 2,
+      "aliases": [
+        "Scotts Shipbuilding & Engineering Co. Ltd., Greenock"
+      ],
+      "shipIds": [
+        "rms-alaunia",
+        "rms-andania"
+      ]
+    },
+    {
+      "id": "stabilimento-tecnico-triestino",
+      "name": "Stabilimento Tecnico Triestino",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Stabilimento Tecnico Triestino, Monfalcone"
+      ],
+      "shipIds": [
+        "ss-conte-grande"
+      ]
+    },
+    {
+      "id": "swan-hunter",
+      "name": "Swan Hunter",
+      "type": "shipbuilder",
+      "mappingStatus": "provisional",
+      "shipCount": 9,
+      "aliases": [
+        "C. S. Swan & Hunter Ltd., Wallsend-on-Tyne",
+        "C.S. Swan & Hunter (Wallsend-on-Tyne, England)",
+        "Swan Hunter & Wigham Richardson (Wallsend, England)",
+        "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne",
+        "Swan Hunter and Wigham Richardson, Wallsend",
+        "Swan Hunter, Wallsend",
+        "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne"
+      ],
+      "shipIds": [
+        "qsmv-dominion-monarch",
+        "rms-aurania",
+        "rms-carpathia",
+        "rms-franconia-1910",
+        "rms-mauretania",
+        "ss-ascania-1911",
+        "ss-duilio",
+        "ss-giulio-cesare",
+        "ss-lake-michigan"
+      ]
+    },
+    {
+      "id": "thames-ironworks",
+      "name": "Thames Ironworks",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Thames Ironworks, London"
+      ],
+      "shipIds": [
+        "ss-napoleon-iii"
+      ]
+    },
+    {
+      "id": "tod-and-mcgregor",
+      "name": "Tod & McGregor",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Tod & McGregor, Glasgow"
+      ],
+      "shipIds": [
+        "ss-cuba"
+      ]
+    },
+    {
+      "id": "vickers",
+      "name": "Vickers",
+      "type": "shipbuilder",
+      "mappingStatus": "provisional",
+      "shipCount": 12,
+      "aliases": [
+        "Vickers Ltd, Barrow-in-Furness",
+        "Vickers, Sons & Maxim Ltd., Barrow-in-Furness",
+        "Vickers-Armstrong Ltd., Barrow-in-Furness",
+        "Vickers-Armstrong, Barrow-in-Furness",
+        "Vickers-Armstrongs (Barrow-in-Furness, England)",
+        "Vickers-Armstrongs (Barrow-in-Furness, UK)",
+        "Vickers-Armstrongs, Barrow-in-Furness",
+        "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area"
+      ],
+      "shipIds": [
+        "rms-orontes",
+        "rms-scythia",
+        "rms-strathnaver",
+        "ss-monarch-of-bermuda",
+        "ss-orama",
+        "ss-orford",
+        "ss-oriana",
+        "ss-orion",
+        "ss-orontes",
+        "ss-queen-of-bermuda",
+        "ss-strathaird",
+        "ss-strathmore"
+      ]
+    },
+    {
+      "id": "william-beardmore-company",
+      "name": "William Beardmore & Company",
+      "type": "shipbuilder",
+      "mappingStatus": "confirmed",
+      "shipCount": 6,
+      "aliases": [
+        "William Beardmore & Co. Ltd (Dalmuir, Scotland)",
+        "William Beardmore & Co., Dalmuir",
+        "William Beardmore & Co., Dalmuir / Glasgow area",
+        "William Beardmore & Company (Dalmuir, River Clyde)",
+        "William Beardmore & Company, Dalmuir, Scotland"
+      ],
+      "shipIds": [
+        "rms-cameronia",
+        "rms-lancastria",
+        "ss-conte-biancamano",
+        "ss-conte-rosso",
+        "ss-conte-verde",
+        "ss-duchess-of-atholl"
+      ]
+    },
+    {
+      "id": "william-cramp-and-sons",
+      "name": "William Cramp & Sons",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "William Cramp & Sons, Philadelphia"
+      ],
+      "shipIds": [
+        "ss-finland"
+      ]
+    },
+    {
+      "id": "william-h-brown-shipyard",
+      "name": "William H. Brown Shipyard",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "William H. Brown Shipyard, New York"
+      ],
+      "shipIds": [
+        "ss-arctic"
+      ]
+    },
+    {
+      "id": "william-patterson",
+      "name": "William Patterson",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 2,
+      "aliases": [
+        "William Patterson, Bristol"
+      ],
+      "shipIds": [
+        "ss-great-britain-1843",
+        "ss-great-western"
+      ]
+    },
+    {
+      "id": "workman",
+      "name": "Workman",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 3,
+      "aliases": [
+        "Workman, Clark & Co., Belfast"
+      ],
+      "shipIds": [
+        "ms-bermuda",
+        "ss-otranto",
+        "ss-vestris"
+      ]
+    },
+    {
+      "id": "yokohama-dock-co-ltd-yokohama",
+      "name": "Yokohama Dock Co. Ltd. (Yokohama",
+      "type": "shipbuilder",
+      "mappingStatus": "needs-review",
+      "shipCount": 1,
+      "aliases": [
+        "Yokohama Dock Co. Ltd. (Yokohama, Japan)"
+      ],
+      "shipIds": [
+        "nyk-hikawa-maru"
+      ]
+    }
+  ]
+}
