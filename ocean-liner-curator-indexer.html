@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ocean Liner Curator Indexer v1.1</title>
+  <title>Ocean Liner Curator Indexer v1.2</title>
   <meta name="description" content="Crawl OceanLiners.net ship guides, extract structured metadata, normalize canonical values, and export site data files." />
   <style>
     :root{
@@ -112,7 +112,7 @@
 <main class="app">
   <header class="hero">
     <p class="eyebrow">Ocean Liner Curator · Publishing Infrastructure</p>
-    <h1>OLC Indexer <small style="font-size:.28em;color:var(--brass);vertical-align:middle">v1.1</small></h1>
+    <h1>OLC Indexer <small style="font-size:.28em;color:var(--brass);vertical-align:middle">v1.2</small></h1>
     <p class="lede">
       Crawl the Ship Archive, extract structured facts from every ship guide, normalize approved builders,
       detect missing or conflicting metadata, and export the data files that can power indexes, search,
@@ -217,8 +217,14 @@ const FIELD_ALIASES = {
   "managing owner":"ownerDisplay","owner":"ownerDisplay",
   "port of registry":"portOfRegistry","registry":"portOfRegistry","registered port":"portOfRegistry",
   "flag":"flagDisplay","country":"countryDisplay","nation":"countryDisplay",
-  "built":"builtDate","completed":"completedDate","completion":"completedDate",
-  "launched":"launchDate","launch date":"launchDate","maiden voyage":"maidenVoyageDate",
+  "built":"builtDate","year built":"builtDate","built date":"builtDate",
+  "completed":"completedDate","completion":"completedDate","completed date":"completedDate",
+  "launched":"launchDate","launch":"launchDate","launch date":"launchDate",
+  "date launched":"launchDate","year launched":"launchDate","launched date":"launchDate",
+  "built / launched":"builtLaunchedDisplay","built and launched":"builtLaunchedDisplay",
+  "laid down / launched":"laidDownLaunchedDisplay","laid down and launched":"laidDownLaunchedDisplay",
+  "ordered / launched":"orderedLaunchedDisplay","ordered and launched":"orderedLaunchedDisplay",
+  "maiden voyage":"maidenVoyageDate",
   "entered service":"enteredServiceDate","in service":"enteredServiceDate",
   "withdrawn":"withdrawnDate","out of service":"withdrawnDate",
   "fate":"fateDisplay","status":"statusDisplay","final disposition":"fateDisplay",
@@ -250,6 +256,63 @@ function parseNumber(text=""){
 function parseYear(text=""){
   const years = [...text.matchAll(/\b(18|19|20)\d{2}\b/g)].map(m=>Number(m[0]));
   return years.length ? years[0] : null;
+}
+
+function yearNearLaunch(text=""){
+  text=cleanText(text);
+  if(!text) return null;
+
+  // Prefer a year explicitly attached to "launch" or "launched."
+  const after=text.match(/\blaunch(?:ed)?\b(?:\s+on|\s+in|\s*:|\s*-)?\s*(?:[A-Za-z]+\s+\d{1,2},?\s+)?((?:18|19|20)\d{2})\b/i);
+  if(after) return Number(after[1]);
+
+  // Handles combined values such as "1906 / 1907" under "Built / launched":
+  // the launch value is normally the second dated component.
+  const slashYears=[...text.matchAll(/\b(?:18|19|20)\d{2}\b/g)].map(m=>Number(m[0]));
+  if(/[\/|;]/.test(text) && slashYears.length>=2) return slashYears[slashYears.length-1];
+
+  return null;
+}
+
+function extractLaunchYear(record,doc){
+  const candidates=[
+    ["launchDate",record.launchDate],
+    ["builtLaunchedDisplay",record.builtLaunchedDisplay],
+    ["laidDownLaunchedDisplay",record.laidDownLaunchedDisplay],
+    ["orderedLaunchedDisplay",record.orderedLaunchedDisplay]
+  ];
+
+  for(const [source,value] of candidates){
+    if(!value) continue;
+    const explicit=yearNearLaunch(value);
+    if(explicit) return {year:explicit,source,confidence:"high"};
+    if(source==="launchDate"){
+      const direct=parseYear(value);
+      if(direct) return {year:direct,source,confidence:"high"};
+    }
+    const combinedYears=[...String(value).matchAll(/\b(?:18|19|20)\d{2}\b/g)].map(m=>Number(m[0]));
+    if(combinedYears.length>=2) return {year:combinedYears[combinedYears.length-1],source,confidence:"medium"};
+  }
+
+  // Many guide subtitles use “Line · launched 1908 · Ship Guide.”
+  const subtitle=cleanText(doc.querySelector(".subtitle")?.textContent||"");
+  const subtitleYear=yearNearLaunch(subtitle);
+  if(subtitleYear) return {year:subtitleYear,source:"subtitle",confidence:"high"};
+
+  // Inspect concise overview/key-fact text only, not the whole page chronology.
+  const scoped=[
+    doc.querySelector(".subtitle"),
+    doc.querySelector(".overview"),
+    doc.querySelector("#overview"),
+    doc.querySelector("main p"),
+    ...doc.querySelectorAll(".key-facts,.quick-facts,.facts-grid,.spec-grid")
+  ].filter(Boolean);
+  for(const el of scoped){
+    const y=yearNearLaunch(el.textContent||"");
+    if(y) return {year:y,source:"page-summary",confidence:"medium"};
+  }
+
+  return {year:null,source:null,confidence:null};
 }
 function canonicalBuilder(source=""){
   const exact = (canonicalAliases.aliases||[]).find(a=>a.source===source);
@@ -386,7 +449,10 @@ function deriveRecord(url,doc){
   if(record.classDisplay) record.classId=slugify(record.classDisplay.replace(/\bclass\b/i,""));
   if(record.propulsionDisplay) record.propulsionId=slugify(record.propulsionDisplay.split(/[;,]/)[0]);
 
-  record.launchYear=parseYear(record.launchDate||record.launched||"");
+  const launchResolution=extractLaunchYear(record,doc);
+  record.launchYear=launchResolution.year;
+  record.launchYearSource=launchResolution.source;
+  record.launchYearConfidence=launchResolution.confidence;
   record.completedYear=parseYear(record.completedDate||record.builtDate||"");
   record.grossTonnage=parseNumber(record.grossTonnageDisplay||record.tonnageDisplay||"");
   record.lengthValue=parseNumber(record.lengthDisplay||"");
@@ -410,7 +476,8 @@ function validateRecord(r){
   if(!r.builderDisplay) warnings.push({severity:"warning",code:"missing-builder",message:"No Builder field was extracted."});
   if(r.builderDisplay&&r.builderMappingStatus==="unknown") warnings.push({severity:"warning",code:"unknown-builder",message:`Builder is not in the approved alias map: ${r.builderDisplay}`});
   if(!r.lineDisplay) warnings.push({severity:"warning",code:"missing-line",message:"No shipping line/operator field was extracted."});
-  if(!r.launchYear) warnings.push({severity:"info",code:"missing-launch-year",message:"No launch year was extracted."});
+  if(!r.launchYear) warnings.push({severity:"info",code:"missing-launch-year",message:"No launch year was found in a launch field, combined build/launch field, subtitle, or concise page summary."});
+  if(r.launchYear && r.launchYearConfidence==="medium") warnings.push({severity:"info",code:"launch-year-inferred",message:`Launch year ${r.launchYear} was inferred from ${r.launchYearSource}; review if the page contains several construction dates.`});
   if(!r.url) warnings.push({severity:"error",code:"missing-url",message:"No canonical URL was found."});
   if(Object.keys(r.factsRaw||{}).length<3) warnings.push({severity:"warning",code:"few-fields",message:"Fewer than three structured fields were found; template may need a custom selector."});
   return warnings;
