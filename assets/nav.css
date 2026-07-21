@@ -1409,3 +1409,46 @@ a.footer-star:focus{
   color: rgba(209,187,134,0.85);
   text-decoration: none;
 }
+
+/* ==========================================================================
+   Universal Logo Mount Override
+   ========================================================================== */
+
+.logo-mount{
+    width:clamp(88px, 18vw, 108px) !important;
+    height:clamp(88px, 18vw, 108px) !important;
+    margin:0 auto .95rem !important;
+    padding:clamp(8px, 1.6vw, 10px) !important;
+    position:relative !important;
+
+    border:1px solid rgba(191,164,106,.55) !important;
+    border-radius:clamp(14px, 2vw, 16px) !important;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.06),
+        rgba(0,0,0,.10)
+    ) !important;
+
+    box-shadow:0 14px 34px rgba(0,0,0,.42) !important;
+}
+
+.logo-mount::after{
+    content:"" !important;
+    position:absolute !important;
+    inset:clamp(6px, 1vw, 7px) !important;
+    pointer-events:none !important;
+
+    border:1px solid rgba(191,164,106,.22) !important;
+    border-radius:clamp(11px, 1.7vw, 12px) !important;
+}
+
+.logo{
+    width:100% !important;
+    height:100% !important;
+    display:block !important;
+    object-fit:contain !important;
+
+    border-radius:clamp(11px, 1.7vw, 12px) !important;
+    background:rgba(230,223,207,.06) !important;
+}
