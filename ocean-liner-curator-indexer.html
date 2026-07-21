@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocean Liner Curator Indexer</title>
+  <meta name="description" content="Crawl OceanLiners.net ship guides, extract structured metadata, normalize canonical values, and export site data files." />
+  <style>
+    :root{
+      --bg:#07100e;--bg2:#101a18;--panel:rgba(14,24,22,.95);--paper:#eee7d8;
+      --muted:#b9b2a5;--brass:#bfa46a;--brass2:#dbc68f;--line:rgba(191,164,106,.28);
+      --good:#91b89f;--warn:#d8b978;--bad:#d28e87;--shadow:0 22px 70px rgba(0,0,0,.42);
+    }
+    *{box-sizing:border-box}
+    html{color-scheme:dark}
+    body{
+      margin:0;color:var(--paper);font-family:"Libre Baskerville",Georgia,serif;line-height:1.5;
+      background:
+        radial-gradient(circle at 50% -20%,rgba(191,164,106,.17),transparent 36%),
+        linear-gradient(180deg,var(--bg2),var(--bg) 62%,#040807);
+    }
+    button,input,select,textarea{font:inherit}
+    .app{width:min(1500px,calc(100% - 24px));margin:0 auto;padding:18px 0 70px}
+    .hero,.panel{
+      border:1px solid var(--line);background:var(--panel);box-shadow:var(--shadow);
+      backdrop-filter:blur(12px)
+    }
+    .hero{position:relative;overflow:hidden;border-radius:24px;padding:30px}
+    .hero:after{
+      content:"INDEX";position:absolute;right:22px;top:50%;transform:translateY(-53%);
+      font-family:Georgia,serif;font-weight:700;font-size:clamp(5rem,14vw,13rem);
+      color:rgba(191,164,106,.05);pointer-events:none
+    }
+    .hero>*{position:relative;z-index:1}
+    .eyebrow{margin:0 0 7px;color:var(--brass);font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    h1,h2,h3{font-family:"Spectral",Georgia,serif;line-height:1.12}
+    h1{margin:0;font-size:clamp(2.3rem,5vw,4.7rem)}
+    .lede{max-width:950px;color:#d2cabb;margin:12px 0 0}
+    .config{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-top:22px}
+    label{display:block;color:var(--muted);font-size:.73rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:6px}
+    input,select,textarea{
+      width:100%;min-height:44px;padding:10px 12px;color:var(--paper);outline:none;
+      border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.23)
+    }
+    input:focus,select:focus,textarea:focus{border-color:var(--brass);box-shadow:0 0 0 3px rgba(191,164,106,.1)}
+    .buttons{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+    .btn{
+      min-height:42px;padding:9px 14px;color:var(--paper);cursor:pointer;border:1px solid var(--line);
+      border-radius:10px;background:rgba(255,255,255,.035);transition:.17s ease
+    }
+    .btn:hover{border-color:var(--brass);transform:translateY(-1px)}
+    .btn.primary{color:#10120f;background:var(--brass);border-color:var(--brass);font-weight:700}
+    .btn.good{border-color:rgba(145,184,159,.65)}
+    .btn.warn{border-color:rgba(216,185,120,.65)}
+    .btn.bad{border-color:rgba(210,142,135,.65)}
+    .btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+    .progress{margin-top:17px}
+    .bar{height:10px;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:rgba(0,0,0,.26)}
+    .bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brass),var(--brass2));transition:width .18s}
+    .progress-meta{display:flex;justify-content:space-between;margin-top:6px;color:var(--muted);font-size:.78rem}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}
+    .metric{padding:16px;text-align:center;border-radius:15px}
+    .metric strong{display:block;color:var(--brass);font-size:1.75rem}
+    .metric span{color:var(--muted);font-size:.7rem;letter-spacing:.09em;text-transform:uppercase}
+    .layout{display:grid;grid-template-columns:minmax(280px,370px) minmax(0,1fr);gap:16px;margin-top:16px;align-items:start}
+    .panel{border-radius:18px;overflow:hidden}
+    .side{position:sticky;top:12px}
+    .panel-head{padding:18px;border-bottom:1px solid var(--line)}
+    .panel-head h2{margin:0;font-size:1.45rem}
+    .tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+    .tab{padding:7px 9px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);cursor:pointer;font-size:.75rem}
+    .tab.active{color:#111;background:var(--brass);border-color:var(--brass)}
+    .list{max-height:calc(100vh - 260px);overflow:auto;padding:8px}
+    .list-item{
+      display:block;width:100%;padding:12px;margin-bottom:6px;text-align:left;color:inherit;cursor:pointer;
+      border:1px solid transparent;border-radius:11px;background:rgba(255,255,255,.025)
+    }
+    .list-item:hover,.list-item.active{border-color:var(--brass);background:rgba(191,164,106,.08)}
+    .list-title{display:flex;justify-content:space-between;gap:8px}
+    .list-title strong{font-family:"Spectral",Georgia,serif}
+    .badge{flex:none;padding:2px 7px;border-radius:999px;font-size:.65rem;border:1px solid var(--line);color:var(--muted)}
+    .badge.good{color:var(--good);border-color:rgba(145,184,159,.5)}
+    .badge.warn{color:var(--warn);border-color:rgba(216,185,120,.5)}
+    .badge.bad{color:var(--bad);border-color:rgba(210,142,135,.5)}
+    .sub{margin-top:5px;color:var(--muted);font-size:.75rem;overflow-wrap:anywhere}
+    .workspace{padding:clamp(20px,4vw,34px);min-height:720px}
+    .empty{display:grid;place-items:center;min-height:600px;text-align:center;color:var(--muted)}
+    .record-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:18px}
+    .record-head h2{margin:0;font-size:clamp(2rem,4vw,3.25rem)}
+    .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+    .chip{padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:var(--brass2);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem}
+    .section{margin-top:24px}
+    .section h3{margin:0 0 10px}
+    .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+    .fact{padding:11px;border:1px solid rgba(191,164,106,.18);border-radius:10px;background:rgba(0,0,0,.12)}
+    .fact b{display:block;color:var(--muted);font-size:.69rem;letter-spacing:.06em;text-transform:uppercase}
+    .fact span{display:block;margin-top:3px;overflow-wrap:anywhere}
+    .warnings{display:grid;gap:8px}
+    .warning{padding:11px 13px;border-radius:10px;border:1px solid rgba(216,185,120,.4);background:rgba(216,185,120,.07)}
+    .warning.error{border-color:rgba(210,142,135,.45);background:rgba(210,142,135,.07)}
+    pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:14px;border:1px solid var(--line);border-radius:12px;background:rgba(0,0,0,.22);font:12px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+    .log{height:250px;overflow:auto;padding:12px;background:#050a09;color:#cfc7b8;font:12px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+    .log div{padding:2px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+    .notice{display:none;margin-top:12px;padding:11px;border:1px solid rgba(145,184,159,.42);border-radius:10px;background:rgba(145,184,159,.08);color:#d2e4d7}
+    .notice.show{display:block}
+    .hidden{display:none!important}
+    @media(max-width:1050px){.layout{grid-template-columns:1fr}.side{position:static}.list{max-height:360px}.config{grid-template-columns:1fr 1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.app{width:calc(100% - 14px);padding-top:7px}.hero{padding:21px;border-radius:17px}.config,.grid,.facts{grid-template-columns:1fr}.record-head{display:block}}
+  </style>
+</head>
+<body>
+<main class="app">
+  <header class="hero">
+    <p class="eyebrow">Ocean Liner Curator · Publishing Infrastructure</p>
+    <h1>OLC Indexer</h1>
+    <p class="lede">
+      Crawl the Ship Archive, extract structured facts from every ship guide, normalize approved builders,
+      detect missing or conflicting metadata, and export the data files that can power indexes, search,
+      relationships, statistics, and future reference pages.
+    </p>
+
+    <div class="config">
+      <div>
+        <label for="archiveUrl">Ship Archive URL</label>
+        <input id="archiveUrl" value="https://www.oceanliners.net/ships/ships" />
+      </div>
+      <div>
+        <label for="concurrency">Concurrent requests</label>
+        <select id="concurrency">
+          <option>2</option><option selected>4</option><option>6</option><option>8</option>
+        </select>
+      </div>
+      <div>
+        <label for="delay">Delay between requests</label>
+        <select id="delay">
+          <option value="0">No delay</option>
+          <option value="150" selected>150 ms</option>
+          <option value="300">300 ms</option>
+          <option value="500">500 ms</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn primary" id="runBtn">Run Full Index</button>
+      <button class="btn" id="discoverBtn">Discover Ship URLs Only</button>
+      <button class="btn good" id="exportBtn" disabled>Export Data Bundle</button>
+      <button class="btn" id="importBuilderBtn">Import Revised Builder Files</button>
+      <button class="btn bad" id="clearBtn">Clear Results</button>
+      <input class="hidden" id="builderFileInput" type="file" accept=".json,application/json" multiple />
+    </div>
+
+    <div class="progress">
+      <div class="bar"><span id="progressBar"></span></div>
+      <div class="progress-meta"><span id="progressText">Ready</span><span id="progressCount"></span></div>
+    </div>
+    <div class="notice" id="notice"></div>
+  </header>
+
+  <section class="grid">
+    <div class="panel metric"><strong id="mShips">0</strong><span>Ships indexed</span></div>
+    <div class="panel metric"><strong id="mWarnings">0</strong><span>Warnings</span></div>
+    <div class="panel metric"><strong id="mFields">0</strong><span>Distinct fields</span></div>
+    <div class="panel metric"><strong id="mUnknownBuilders">0</strong><span>Unknown builders</span></div>
+  </section>
+
+  <div class="layout">
+    <aside class="panel side">
+      <div class="panel-head">
+        <h2>Indexer Results</h2>
+        <div class="tabs">
+          <button class="tab active" data-tab="ships">Ships</button>
+          <button class="tab" data-tab="warnings">Warnings</button>
+          <button class="tab" data-tab="fields">Field Inventory</button>
+          <button class="tab" data-tab="log">Run Log</button>
+        </div>
+      </div>
+      <div class="list" id="resultList"></div>
+    </aside>
+
+    <section class="panel workspace">
+      <div class="empty" id="emptyState">
+        <div>
+          <p class="eyebrow">No index generated yet</p>
+          <h2>Run the indexer to begin.</h2>
+          <p>The first run creates a complete audit of what your current templates expose.</p>
+        </div>
+      </div>
+      <div id="recordView" class="hidden"></div>
+    </section>
+  </div>
+</main>
+
+<script id="canonicalData" type="application/json">{"builders": {"schemaVersion": "0.1", "generatedAt": "2026-07-21T08:18:14.029459+00:00", "source": {"file": "ocean-liner-builder-extraction-test.json", "archiveUrl": "https://www.oceanliners.net/ships/ships", "sourceGeneratedAt": "2026-07-21T08:05:39.072Z"}, "description": "Canonical shipbuilder identities with preserved source aliases and linked ship IDs.", "counts": {"builders": 58, "confirmed": 22, "provisional": 7, "needsReview": 29}, "builders": [{"id": "ag-vulcan", "name": "AG Vulcan", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 16, "aliases": ["AG Vulcan (Hamburg, Germany)", "AG Vulcan (Stettin)", "AG Vulcan (Stettin, Germany)", "AG Vulcan (Vulcan-Werke), Stettin", "AG Vulcan, Hamburg", "AG Vulcan, Stettin", "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)", "AG Vulcan, Stettin, Germany", "AG Vulkan, Stettin", "Stettiner Vulcan (AG Vulcan), Stettin", "Vulcan AG, Stettin", "Vulcan Werft (Hamburg, Germany)", "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)"], "shipIds": ["rms-berengaria", "rms-empress-of-australia", "ss-cap-trafalgar", "ss-deutschland", "ss-empress-of-france", "ss-friedrich-der-grosse", "ss-george-washington", "ss-george-washington-ngl", "ss-imperator", "ss-kaiser-wilhelm-der-grosse", "ss-kaiser-wilhelm-ii", "ss-kaiserin-auguste-victoria", "ss-kronprinz-wilhelm", "ss-kronprinzessin-cecilie", "ss-patricia", "ss-prinzess-irene"]}, {"id": "ag-weser", "name": "AG Weser", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 7, "aliases": ["AG Weser (Bremen)", "AG Weser, Bremen", "Deschimag AG Weser, Bremen", "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)"], "shipIds": ["ss-albertic", "ss-arabic-1920", "ss-berlin-1909", "ss-bremen", "ss-gneisenau", "ss-resolute", "ss-scharnhorst"]}, {"id": "alexander-stephen-sons", "name": "Alexander Stephen & Sons", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 5, "aliases": ["Alexander Stephen & Sons (Glasgow)", "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)", "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland", "Alexander Stephen & Sons, Linthouse, Glasgow"], "shipIds": ["rms-caledonia", "rms-viceroy-of-india", "ss-drottningholm", "ss-marquette", "ss-norge"]}, {"id": "ansaldo", "name": "Ansaldo", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 7, "aliases": ["Ansaldo (Genoa / Sestri Ponente), Yard No. 918", "Ansaldo (Sestri Ponente / Genoa)", "Ansaldo Shipyard (Genoa)", "Ansaldo Shipyard, Genoa", "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy", "Ansaldo Shipyards, Genoa", "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)"], "shipIds": ["ms-augustus", "ss-andrea-doria", "ss-cristoforo-colombo", "ss-leonardo-da-vinci", "ss-michelangelo-1965", "ss-rex", "ss-roma"]}, {"id": "armstrong-whitworth", "name": "Armstrong Whitworth", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 3, "aliases": ["Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)", "Armstrong Whitworth, Newcastle-upon-Tyne", "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)"], "shipIds": ["ms-gripsholm-1925", "rms-ascania", "ss-storstad"]}, {"id": "ateliers-chantiers-bretagne", "name": "Ateliers et Chantiers de Bretagne", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 1, "aliases": ["Ateliers et Chantiers de Bretagne, Saint-Nazaire"], "shipIds": ["ss-bretagne"]}, {"id": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)", "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France"], "shipIds": ["ss-la-bretagne", "ss-latlantique"]}, {"id": "ateliers-chantiers-saint-nazaire-penhoet", "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 3, "aliases": ["Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France", "Chantiers & Ateliers de Saint-Nazaire, Penhoët", "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France"], "shipIds": ["ss-champlain", "ss-chicago-1908", "ss-rochambeau"]}, {"id": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire", "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)"], "shipIds": ["ss-ile-de-france"]}, {"id": "barclay-curle-company", "name": "Barclay, Curle & Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Barclay Curle & Co., Glasgow", "Barclay, Curle & Company, Glasgow, Scotland"], "shipIds": ["ss-cathay-1924", "ss-corsican"]}, {"id": "barrow-shipbuilding-company", "name": "Barrow Shipbuilding Company", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Barrow Shipbuilding Company, Barrow-in-Furness"], "shipIds": ["ss-la-normandie"]}, {"id": "bethlehem-fore-river", "name": "Bethlehem Shipbuilding — Fore River", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 4, "aliases": ["Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)", "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)", "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts"], "shipIds": ["ss-constitution", "ss-lurline-1932", "ss-mariposa", "ss-monterey"]}, {"id": "bethlehem-steel-corporation", "name": "Bethlehem Steel Corporation", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Bethlehem Steel Corporation, Quincy, Massachusetts"], "shipIds": ["ss-independence"]}, {"id": "blohm-voss", "name": "Blohm & Voss", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 22, "aliases": ["Blohm & Voss (Hamburg)", "Blohm & Voss (Hamburg, Germany)", "Blohm & Voss, Hamburg", "Blohm & Voss, Hamburg (yard no. commonly cited: 473)", "Blohm & Voss, Hamburg · Yard No. 125", "Blohm & Voss, Hamburg · Yard No. 132", "Blohm & Voss, Hamburg, Germany"], "shipIds": ["ms-kungsholm-1928", "rms-majestic", "ss-albert-ballin", "ss-barbarossa", "ss-batavia", "ss-belgravia", "ss-bismarck-1914", "ss-bulgaria", "ss-cap-arcona", "ss-cap-polonio", "ss-cleveland", "ss-europa", "ss-graf-waldersee", "ss-hamburg-1925", "ss-konigin-luise", "ss-leviathan", "ss-liberte", "ss-milwaukee", "ss-moltke", "ss-new-york", "ss-pretoria", "ss-vaterland"]}, {"id": "bremer-vulkan", "name": "Bremer Vulkan", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Bremer Vulkan, Bremen-Vegesack, Germany"], "shipIds": ["ss-st-louis"]}, {"id": "caird-and-company", "name": "Caird & Company", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Caird & Company, Greenock, Scotland"], "shipIds": ["rms-moldavia"]}, {"id": "cammell-laird", "name": "Cammell Laird", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 4, "aliases": ["Cammell Laird (Birkenhead, England)", "Cammell Laird, Birkenhead", "Cammell, Laird & Co., Birkenhead (England)"], "shipIds": ["rms-mauretania-ii", "rms-windsor-castle", "ss-bergensfjord", "ss-de-grasse"]}, {"id": "cantiere-navale-di-riva-trigoso", "name": "Cantiere Navale di Riva Trigoso", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy"], "shipIds": ["ss-principessa-mafalda"]}, {"id": "cantiere-navale-triestino", "name": "Cantiere Navale Triestino", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Cantiere Navale Triestino, Monfalcone", "Cantiere Navale Triestino, Monfalcone (Italy)"], "shipIds": ["ms-vulcania", "neptunia"]}, {"id": "cantieri-riuniti-adriatico", "name": "Cantieri Riuniti dell’Adriatico", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 4, "aliases": ["Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)", "Cantieri Riuniti dell’Adriatico (CRDA), Trieste, Italy", "Cantieri Riuniti dell’Adriatico (Trieste, Italy)", "Cantieri Riuniti dell’Adriatico, Monfalcone"], "shipIds": ["ms-saturnia", "oceania", "ss-conte-di-savoia", "ss-raffaello-1965"]}, {"id": "chantiers-de-l-atlantique", "name": "Chantiers de l’Atlantique", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 5, "aliases": ["Chantiers de l'Atlantique, Saint-Nazaire", "Chantiers de l’Atlantique (Saint-Nazaire, France)", "Chantiers de l’Atlantique, Saint-Nazaire"], "shipIds": ["rms-queen-mary-2", "ss-flandre", "ss-france", "ss-france-1912", "ss-pasteur"]}, {"id": "chantiers-de-penhoet", "name": "Chantiers de Penhoët", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 3, "aliases": ["Chantiers de Penhoët (Saint-Nazaire, France)", "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)", "Chantiers de Penhoët, Saint-Nazaire"], "shipIds": ["ss-la-provence", "ss-normandie", "ss-paris"]}, {"id": "chantiers-ateliers-provence", "name": "Chantiers et Ateliers de Provence", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Chantiers & Ateliers de Provence, Port-de-Bouc, France", "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area"], "shipIds": ["ss-espagne", "ss-lafayette"]}, {"id": "d-and-w-henderson-ltd", "name": "D. & W. Henderson Ltd.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["D. & W. Henderson Ltd., Glasgow"], "shipIds": ["ss-columbia"]}, {"id": "eastern-shipbuilding-company", "name": "Eastern Shipbuilding Company", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Eastern Shipbuilding Company, New London / Groton, Connecticut"], "shipIds": ["ss-minnesota"]}, {"id": "f-schichau", "name": "F. Schichau", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 3, "aliases": ["F. Schichau, Danzig (then Germany; now Gdańsk, Poland)", "F. Schichau, Danzig (then Germany; today Gdańsk)", "F. Schichau, Danzig, Germany"], "shipIds": ["rms-homeric", "ss-columbus-1924", "ss-grosser-kurfurst"]}, {"id": "fairfield-shipbuilding-engineering-company", "name": "Fairfield Shipbuilding & Engineering Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 13, "aliases": ["Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)", "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow)", "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)", "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)", "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424", "Fairfield Shipbuilding & Engineering Co., Govan", "Fairfield Shipbuilding & Engineering Co., Govan (Glasgow)", "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow", "Fairfield Shipbuilding & Engineering Company, Govan", "Fairfield Shipbuilding & Engineering Company, Govan, Scotland", "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)"], "shipIds": ["rms-campania", "rms-empress-of-canada", "rms-empress-of-ireland", "rms-empress-of-japan-1929", "rms-empress-of-russia", "rms-etruria-1884", "rms-kenilworth-castle", "rms-transylvania", "rms-umbria-1884", "ss-armadale-castle", "ss-calgarian", "ss-letitia", "ss-tuscania-1921"]}, {"id": "furness", "name": "Furness", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Furness, Withy & Co., West Hartlepool, England"], "shipIds": ["ss-poland"]}, {"id": "germaniawerft-friedrich-krupp", "name": "Germaniawerft / Friedrich Krupp", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Germaniawerft / Friedrich Krupp, Kiel, Germany"], "shipIds": ["ss-assyria"]}, {"id": "gotaverken", "name": "Götaverken", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Götaverken, Gothenburg (Göteborg), Sweden"], "shipIds": ["ms-stockholm"]}, {"id": "harland-wolff", "name": "Harland & Wolff", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 78, "aliases": ["Harland & Wolff (Belfast)", "Harland & Wolff (Belfast), yard no. 391", "Harland & Wolff (Belfast, Ireland)", "Harland & Wolff (Belfast, Northern Ireland)", "Harland & Wolff Ltd., Belfast", "Harland & Wolff, Belfast", "Harland & Wolff, Belfast (commonly cited)", "Harland & Wolff, Belfast (Yard No. 358)", "Harland & Wolff, Belfast (yard no. commonly cited: 1005)", "Harland & Wolff, Belfast · Yard No. 315", "Harland & Wolff, Belfast · Yard No. 318", "Harland & Wolff, Belfast · Yard No. 324", "Harland & Wolff, Belfast · Yard No. 327", "Harland & Wolff, Belfast · Yard No. 336", "Harland & Wolff, Belfast · Yard No. 338 · Slip No. 5", "Harland & Wolff, Belfast · Yard No. 342", "Harland & Wolff, Govan", "Harland & Wolff, Queen’s Island, Belfast"], "shipIds": ["athlone-castle", "mv-britannic", "mv-georgic", "rms-adriatic", "rms-alcantara-1926", "rms-andes-1939", "rms-arundel-castle-1921", "rms-asturias-1908", "rms-baltic", "rms-britannic", "rms-britannic-1874", "rms-cedric", "rms-celtic", "rms-laurentic", "rms-megantic-1909", "rms-oceanic-1899", "rms-olympic", "rms-teutonic", "rms-titanic", "rms-walmer-castle", "ss-adriatic-1872", "ss-afric", "ss-amerika-1905", "ss-arabic", "ss-asturias-1925", "ss-athenic", "ss-atlantic-1873", "ss-baltic-1871", "ss-belgenland", "ss-belgia", "ss-brasilia", "ss-briton", "ss-calgaric", "ss-canada-1896", "ss-canberra", "ss-carnarvon-castle", "ss-ceramic", "ss-commonwealth", "ss-coptic", "ss-corinthic", "ss-cymric", "ss-doric", "ss-germanic", "ss-gothic-white-star-line", "ss-ionic", "ss-lapland", "ss-laurentic", "ss-majestic-1889", "ss-maloja", "ss-medic", "ss-minnetonka", "ss-minnewaska", "ss-mooltan", "ss-new-england", "ss-nieuw-amsterdam-1906", "ss-nomadic", "ss-noordam", "ss-oceanic-1871", "ss-pennland", "ss-persic", "ss-president-lincoln", "ss-republic", "ss-republic-1903", "ss-rijndam-1901", "ss-romanic", "ss-rotterdam-1908", "ss-runic", "ss-saxon", "ss-suevic", "ss-traffic", "ss-veendam", "ss-volendam", "ss-warwick-castle", "ss-westernland", "ss-winchester-castle", "ss-winifredian", "ss-zeeland", "stirling-castle"]}, {"id": "hawthorn-leslie", "name": "Hawthorn Leslie & Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 3, "aliases": ["Hawthorn Leslie & Company, Hebburn", "R. & W. Hawthorn, Leslie & Co. Ltd., Hebburn-on-Tyne", "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne"], "shipIds": ["rms-andania-1922", "ss-cretic", "ss-mayflower"]}, {"id": "j-g-thomson", "name": "J. & G. Thomson", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 7, "aliases": ["J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland", "J. & G. Thomson & Co., Glasgow", "J. & G. Thomson (Clydebank/Glasgow, Scotland)", "J. & G. Thomson / James & George Thomson, Clydebank", "J. & G. Thomson, Clydebank", "J. & G. Thomson, Clydebank (Scotland)"], "shipIds": ["rms-servia-1881", "ss-bothnia", "ss-catalonia", "ss-city-of-new-york-1888", "ss-city-of-paris", "ss-java", "ss-malta"]}, {"id": "j-scott-russell-and-co", "name": "J. Scott Russell & Co.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["J. Scott Russell & Co., Millwall Iron Works (London)"], "shipIds": ["ss-great-eastern"]}, {"id": "jenks-ship-building-company", "name": "Jenks Ship Building Company", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Jenks Ship Building Company, Port Huron, Michigan"], "shipIds": ["ss-eastland"]}, {"id": "joh-c-tecklenborg", "name": "Joh. C. Tecklenborg", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Joh. C. Tecklenborg, Geestemünde (Bremerhaven)", "Joh. C. Tecklenborg, Geestemünde, Germany"], "shipIds": ["ss-prinz-friedrich-wilhelm", "ss-reliance"]}, {"id": "john-brown-company", "name": "John Brown & Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 24, "aliases": ["John Brown & Co. (Clydebank, Scotland)", "John Brown & Co. Ltd., Clydebank, Scotland", "John Brown & Co., Clydebank", "John Brown & Co., Clydebank (Scotland)", "John Brown & Co., Clydebank, Scotland", "John Brown & Company (Clydebank, Scotland)", "John Brown & Company, Clydebank", "John Brown & Company, Clydebank (Scotland)"], "shipIds": ["queen-elizabeth-2", "rms-aquitania", "rms-carinthia", "rms-carmania", "rms-caronia-1947", "rms-empress-of-britain", "rms-franconia", "rms-ivernia", "rms-lusitania", "rms-queen-elizabeth", "rms-queen-mary", "rms-saxonia", "rms-sylvania", "rms-windsor-castle-1921", "ss-arcadia-1954", "ss-caronia", "ss-duchess-of-bedford", "ss-duchess-of-richmond", "ss-duchess-of-york", "ss-kroonland", "ss-montcalm", "ss-montclare", "ss-montrose", "ss-oronsay"]}, {"id": "mitsubishi-shipbuilding-and-engineering-co", "name": "Mitsubishi Shipbuilding & Engineering Co.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Mitsubishi Shipbuilding & Engineering Co., Nagasaki", "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)"], "shipIds": ["asama-maru-1929", "tatsuta-maru-1929"]}, {"id": "nederlandsche-scheepsbouw-maatschappij", "name": "Nederlandsche Scheepsbouw Maatschappij", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam"], "shipIds": ["ss-johan-van-oldenbarnevelt", "ss-marnix-van-st-aldegonde"]}, {"id": "new-york-shipbuilding", "name": "New York Shipbuilding", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 4, "aliases": ["New York Shipbuilding Company, Camden, New Jersey", "New York Shipbuilding Corporation (Camden, New Jersey, USA)", "New York Shipbuilding Corporation, Camden, New Jersey"], "shipIds": ["ss-manchuria", "ss-manhattan", "ss-mongolia", "ss-washington"]}, {"id": "newport-news-shipbuilding", "name": "Newport News Shipbuilding", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 7, "aliases": ["Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)", "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)", "Newport News Shipbuilding & Drydock Company", "Newport News Shipbuilding (Virginia, USA)", "Newport News Shipbuilding and Dry Dock Company", "Newport News Shipbuilding and Dry Dock Company, Virginia"], "shipIds": ["ss-america", "ss-morro-castle", "ss-pennsylvania", "ss-president-coolidge", "ss-president-hoover", "ss-us", "ss-virginia"]}, {"id": "robert-duncan-and-company-greenock-port-glasgow", "name": "Robert Duncan & Company (Greenock / Port Glasgow", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Duncan & Company (Greenock / Port Glasgow, Scotland)"], "shipIds": ["rms-britannia-1840"]}, {"id": "robert-menzies-and-sons", "name": "Robert Menzies & Sons", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Menzies & Sons, Leith, Scotland"], "shipIds": ["ss-sirius"]}, {"id": "robert-napier-and-sons", "name": "Robert Napier & Sons", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Robert Napier & Sons, Glasgow"], "shipIds": ["rms-persia-1855", "rms-scotia-1861"]}, {"id": "robert-steele-and-co", "name": "Robert Steele & Co.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Robert Steele & Co., Greenock"], "shipIds": ["rms-cambria-1845"]}, {"id": "rotterdamsche-droogdok-maatschappij", "name": "Rotterdamsche Droogdok Maatschappij", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 2, "aliases": ["Rotterdam Drydock Company (RDM), Rotterdam, Netherlands", "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)"], "shipIds": ["ss-nieuw-amsterdam", "ss-rotterdam-1959"]}, {"id": "scotts-shipbuilding-and-engineering-co-ltd", "name": "Scotts Shipbuilding & Engineering Co. Ltd.", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["Scotts Shipbuilding & Engineering Co. Ltd., Greenock"], "shipIds": ["rms-alaunia", "rms-andania"]}, {"id": "stabilimento-tecnico-triestino", "name": "Stabilimento Tecnico Triestino", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Stabilimento Tecnico Triestino, Monfalcone"], "shipIds": ["ss-conte-grande"]}, {"id": "swan-hunter", "name": "Swan Hunter", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 9, "aliases": ["C. S. Swan & Hunter Ltd., Wallsend-on-Tyne", "C.S. Swan & Hunter (Wallsend-on-Tyne, England)", "Swan Hunter & Wigham Richardson (Wallsend, England)", "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne", "Swan Hunter and Wigham Richardson, Wallsend", "Swan Hunter, Wallsend", "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne"], "shipIds": ["qsmv-dominion-monarch", "rms-aurania", "rms-carpathia", "rms-franconia-1910", "rms-mauretania", "ss-ascania-1911", "ss-duilio", "ss-giulio-cesare", "ss-lake-michigan"]}, {"id": "thames-ironworks", "name": "Thames Ironworks", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Thames Ironworks, London"], "shipIds": ["ss-napoleon-iii"]}, {"id": "tod-and-mcgregor", "name": "Tod & McGregor", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Tod & McGregor, Glasgow"], "shipIds": ["ss-cuba"]}, {"id": "vickers", "name": "Vickers", "type": "shipbuilder", "mappingStatus": "provisional", "shipCount": 12, "aliases": ["Vickers Ltd, Barrow-in-Furness", "Vickers, Sons & Maxim Ltd., Barrow-in-Furness", "Vickers-Armstrong Ltd., Barrow-in-Furness", "Vickers-Armstrong, Barrow-in-Furness", "Vickers-Armstrongs (Barrow-in-Furness, England)", "Vickers-Armstrongs (Barrow-in-Furness, UK)", "Vickers-Armstrongs, Barrow-in-Furness", "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area"], "shipIds": ["rms-orontes", "rms-scythia", "rms-strathnaver", "ss-monarch-of-bermuda", "ss-orama", "ss-orford", "ss-oriana", "ss-orion", "ss-orontes", "ss-queen-of-bermuda", "ss-strathaird", "ss-strathmore"]}, {"id": "william-beardmore-company", "name": "William Beardmore & Company", "type": "shipbuilder", "mappingStatus": "confirmed", "shipCount": 6, "aliases": ["William Beardmore & Co. Ltd (Dalmuir, Scotland)", "William Beardmore & Co., Dalmuir", "William Beardmore & Co., Dalmuir / Glasgow area", "William Beardmore & Company (Dalmuir, River Clyde)", "William Beardmore & Company, Dalmuir, Scotland"], "shipIds": ["rms-cameronia", "rms-lancastria", "ss-conte-biancamano", "ss-conte-rosso", "ss-conte-verde", "ss-duchess-of-atholl"]}, {"id": "william-cramp-and-sons", "name": "William Cramp & Sons", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["William Cramp & Sons, Philadelphia"], "shipIds": ["ss-finland"]}, {"id": "william-h-brown-shipyard", "name": "William H. Brown Shipyard", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["William H. Brown Shipyard, New York"], "shipIds": ["ss-arctic"]}, {"id": "william-patterson", "name": "William Patterson", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 2, "aliases": ["William Patterson, Bristol"], "shipIds": ["ss-great-britain-1843", "ss-great-western"]}, {"id": "workman", "name": "Workman", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 3, "aliases": ["Workman, Clark & Co., Belfast"], "shipIds": ["ms-bermuda", "ss-otranto", "ss-vestris"]}, {"id": "yokohama-dock-co-ltd-yokohama", "name": "Yokohama Dock Co. Ltd. (Yokohama", "type": "shipbuilder", "mappingStatus": "needs-review", "shipCount": 1, "aliases": ["Yokohama Dock Co. Ltd. (Yokohama, Japan)"], "shipIds": ["nyk-hikawa-maru"]}]}, "builderAliases": {"schemaVersion": "0.1", "generatedAt": "2026-07-21T08:18:14.029459+00:00", "source": {"file": "ocean-liner-builder-extraction-test.json", "archiveUrl": "https://www.oceanliners.net/ships/ships", "sourceGeneratedAt": "2026-07-21T08:05:39.072Z"}, "description": "Exact source Builder strings mapped to canonical builder IDs. Source wording is never discarded.", "count": 177, "aliases": [{"source": "AG Vulcan (Hamburg, Germany)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan (Stettin)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan (Stettin, Germany)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan (Vulcan-Werke), Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan, Hamburg", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan, Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulcan, Stettin, Germany", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Vulkan, Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Weser (Bremen)", "builderId": "ag-weser", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "AG Weser, Bremen", "builderId": "ag-weser", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Alexander Stephen & Sons (Glasgow)", "builderId": "alexander-stephen-sons", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)", "builderId": "alexander-stephen-sons", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland", "builderId": "alexander-stephen-sons", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Alexander Stephen & Sons, Linthouse, Glasgow", "builderId": "alexander-stephen-sons", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Ansaldo (Genoa / Sestri Ponente), Yard No. 918", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo (Sestri Ponente / Genoa)", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo Shipyard (Genoa)", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo Shipyard, Genoa", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Ansaldo Shipyards, Genoa", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)", "builderId": "armstrong-whitworth", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Armstrong Whitworth, Newcastle-upon-Tyne", "builderId": "armstrong-whitworth", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)", "builderId": "armstrong-whitworth", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Ateliers et Chantiers de Bretagne, Saint-Nazaire", "builderId": "ateliers-chantiers-bretagne", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France", "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Barclay Curle & Co., Glasgow", "builderId": "barclay-curle-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Barclay, Curle & Company, Glasgow, Scotland", "builderId": "barclay-curle-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Barrow Shipbuilding Company, Barrow-in-Furness", "builderId": "barrow-shipbuilding-company", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)", "builderId": "bethlehem-fore-river", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)", "builderId": "bethlehem-fore-river", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Bethlehem Steel Corporation, Quincy, Massachusetts", "builderId": "bethlehem-steel-corporation", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Blohm & Voss (Hamburg)", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss (Hamburg, Germany)", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg (yard no. commonly cited: 473)", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg · Yard No. 125", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg · Yard No. 132", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Blohm & Voss, Hamburg, Germany", "builderId": "blohm-voss", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Bremer Vulkan, Bremen-Vegesack, Germany", "builderId": "bremer-vulkan", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "C. S. Swan & Hunter Ltd., Wallsend-on-Tyne", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "C.S. Swan & Hunter (Wallsend-on-Tyne, England)", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Caird & Company, Greenock, Scotland", "builderId": "caird-and-company", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Cammell Laird (Birkenhead, England)", "builderId": "cammell-laird", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cammell Laird, Birkenhead", "builderId": "cammell-laird", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cammell, Laird & Co., Birkenhead (England)", "builderId": "cammell-laird", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy", "builderId": "cantiere-navale-di-riva-trigoso", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Cantiere Navale Triestino, Monfalcone", "builderId": "cantiere-navale-triestino", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantiere Navale Triestino, Monfalcone (Italy)", "builderId": "cantiere-navale-triestino", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)", "builderId": "cantieri-riuniti-adriatico", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste, Italy", "builderId": "cantieri-riuniti-adriatico", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantieri Riuniti dell’Adriatico (Trieste, Italy)", "builderId": "cantieri-riuniti-adriatico", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Cantieri Riuniti dell’Adriatico, Monfalcone", "builderId": "cantieri-riuniti-adriatico", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers & Ateliers de Provence, Port-de-Bouc, France", "builderId": "chantiers-ateliers-provence", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Chantiers & Ateliers de Saint-Nazaire, Penhoët", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France", "builderId": "ateliers-chantiers-saint-nazaire-penhoet", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Chantiers de l'Atlantique, Saint-Nazaire", "builderId": "chantiers-de-l-atlantique", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de l’Atlantique (Saint-Nazaire, France)", "builderId": "chantiers-de-l-atlantique", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de l’Atlantique, Saint-Nazaire", "builderId": "chantiers-de-l-atlantique", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de Penhoët (Saint-Nazaire, France)", "builderId": "chantiers-de-penhoet", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)", "builderId": "chantiers-de-penhoet", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers de Penhoët, Saint-Nazaire", "builderId": "chantiers-de-penhoet", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area", "builderId": "chantiers-ateliers-provence", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "D. & W. Henderson Ltd., Glasgow", "builderId": "d-and-w-henderson-ltd", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Deschimag AG Weser, Bremen", "builderId": "ag-weser", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)", "builderId": "ag-weser", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Eastern Shipbuilding Company, New London / Groton, Connecticut", "builderId": "eastern-shipbuilding-company", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "F. Schichau, Danzig (then Germany; now Gdańsk, Poland)", "builderId": "f-schichau", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "F. Schichau, Danzig (then Germany; today Gdańsk)", "builderId": "f-schichau", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "F. Schichau, Danzig, Germany", "builderId": "f-schichau", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co., Govan", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co., Govan (Glasgow)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Company, Govan", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fairfield Shipbuilding & Engineering Company, Govan, Scotland", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts", "builderId": "bethlehem-fore-river", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Furness, Withy & Co., West Hartlepool, England", "builderId": "furness", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Germaniawerft / Friedrich Krupp, Kiel, Germany", "builderId": "germaniawerft-friedrich-krupp", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)", "builderId": "ansaldo", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Götaverken, Gothenburg (Göteborg), Sweden", "builderId": "gotaverken", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Harland & Wolff (Belfast)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff (Belfast), yard no. 391", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff (Belfast, Ireland)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff (Belfast, Northern Ireland)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff Ltd., Belfast", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast (commonly cited)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast (Yard No. 358)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast (yard no. commonly cited: 1005)", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 315", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 318", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 324", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 327", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 336", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 338 · Slip No. 5", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Belfast · Yard No. 342", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Govan", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Harland & Wolff, Queen’s Island, Belfast", "builderId": "harland-wolff", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Hawthorn Leslie & Company, Hebburn", "builderId": "hawthorn-leslie", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson & Co., Glasgow", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson (Clydebank/Glasgow, Scotland)", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson / James & George Thomson, Clydebank", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson, Clydebank", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. & G. Thomson, Clydebank (Scotland)", "builderId": "j-g-thomson", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "J. Scott Russell & Co., Millwall Iron Works (London)", "builderId": "j-scott-russell-and-co", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Jenks Ship Building Company, Port Huron, Michigan", "builderId": "jenks-ship-building-company", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Joh. C. Tecklenborg, Geestemünde (Bremerhaven)", "builderId": "joh-c-tecklenborg", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Joh. C. Tecklenborg, Geestemünde, Germany", "builderId": "joh-c-tecklenborg", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co. (Clydebank, Scotland)", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co. Ltd., Clydebank, Scotland", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co., Clydebank", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co., Clydebank (Scotland)", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Co., Clydebank, Scotland", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Company (Clydebank, Scotland)", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Company, Clydebank", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Brown & Company, Clydebank (Scotland)", "builderId": "john-brown-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)", "builderId": "fairfield-shipbuilding-engineering-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki", "builderId": "mitsubishi-shipbuilding-and-engineering-co", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)", "builderId": "mitsubishi-shipbuilding-and-engineering-co", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam", "builderId": "nederlandsche-scheepsbouw-maatschappij", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "New York Shipbuilding Company, Camden, New Jersey", "builderId": "new-york-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "New York Shipbuilding Corporation (Camden, New Jersey, USA)", "builderId": "new-york-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "New York Shipbuilding Corporation, Camden, New Jersey", "builderId": "new-york-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding & Drydock Company", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding (Virginia, USA)", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding and Dry Dock Company", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Newport News Shipbuilding and Dry Dock Company, Virginia", "builderId": "newport-news-shipbuilding", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "R. & W. Hawthorn, Leslie & Co. Ltd., Hebburn-on-Tyne", "builderId": "hawthorn-leslie", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne", "builderId": "hawthorn-leslie", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Robert Duncan & Company (Greenock / Port Glasgow, Scotland)", "builderId": "robert-duncan-and-company-greenock-port-glasgow", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Robert Menzies & Sons, Leith, Scotland", "builderId": "robert-menzies-and-sons", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Robert Napier & Sons, Glasgow", "builderId": "robert-napier-and-sons", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Robert Steele & Co., Greenock", "builderId": "robert-steele-and-co", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Rotterdam Drydock Company (RDM), Rotterdam, Netherlands", "builderId": "rotterdamsche-droogdok-maatschappij", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)", "builderId": "rotterdamsche-droogdok-maatschappij", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "Scotts Shipbuilding & Engineering Co. Ltd., Greenock", "builderId": "scotts-shipbuilding-and-engineering-co-ltd", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Stabilimento Tecnico Triestino, Monfalcone", "builderId": "stabilimento-tecnico-triestino", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Stettiner Vulcan (AG Vulcan), Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan Hunter & Wigham Richardson (Wallsend, England)", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan Hunter and Wigham Richardson, Wallsend", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan Hunter, Wallsend", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne", "builderId": "swan-hunter", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Thames Ironworks, London", "builderId": "thames-ironworks", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Tod & McGregor, Glasgow", "builderId": "tod-and-mcgregor", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Vickers Ltd, Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers, Sons & Maxim Ltd., Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrong Ltd., Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrong, Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrongs (Barrow-in-Furness, England)", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrongs (Barrow-in-Furness, UK)", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrongs, Barrow-in-Furness", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area", "builderId": "vickers", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vulcan AG, Stettin", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vulcan Werft (Hamburg, Germany)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)", "builderId": "ag-vulcan", "mappingStatus": "provisional", "mappingMethod": "rule"}, {"source": "William Beardmore & Co. Ltd (Dalmuir, Scotland)", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Beardmore & Co., Dalmuir", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Beardmore & Co., Dalmuir / Glasgow area", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Beardmore & Company (Dalmuir, River Clyde)", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Beardmore & Company, Dalmuir, Scotland", "builderId": "william-beardmore-company", "mappingStatus": "confirmed", "mappingMethod": "rule"}, {"source": "William Cramp & Sons, Philadelphia", "builderId": "william-cramp-and-sons", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "William H. Brown Shipyard, New York", "builderId": "william-h-brown-shipyard", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "William Patterson, Bristol", "builderId": "william-patterson", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Workman, Clark & Co., Belfast", "builderId": "workman", "mappingStatus": "needs-review", "mappingMethod": "fallback"}, {"source": "Yokohama Dock Co. Ltd. (Yokohama, Japan)", "builderId": "yokohama-dock-co-ltd-yokohama", "mappingStatus": "needs-review", "mappingMethod": "fallback"}]}}</script>
+<script>
+(() => {
+"use strict";
+
+const $ = id => document.getElementById(id);
+const EMBEDDED = JSON.parse($("canonicalData").textContent);
+
+let canonicalBuilders = EMBEDDED.builders;
+let canonicalAliases = EMBEDDED.builderAliases;
+let result = null;
+let activeTab = "ships";
+let selectedKey = null;
+let abortController = null;
+
+const FIELD_ALIASES = {
+  "ship name":"name","name":"name","vessel":"name",
+  "builder":"builderDisplay","built by":"builderDisplay","shipbuilder":"builderDisplay",
+  "operator":"operatorDisplay","shipping line":"lineDisplay","line":"lineDisplay","company":"lineDisplay","owner":"ownerDisplay",
+  "port of registry":"portOfRegistry","registry":"portOfRegistry","registered port":"portOfRegistry",
+  "flag":"flagDisplay","country":"countryDisplay","nation":"countryDisplay",
+  "built":"builtDate","completed":"completedDate","completion":"completedDate",
+  "launched":"launchDate","launch date":"launchDate","maiden voyage":"maidenVoyageDate",
+  "entered service":"enteredServiceDate","in service":"enteredServiceDate",
+  "withdrawn":"withdrawnDate","out of service":"withdrawnDate",
+  "fate":"fateDisplay","status":"statusDisplay","final disposition":"fateDisplay",
+  "class":"classDisplay","type":"typeDisplay",
+  "tonnage":"tonnageDisplay","gross tonnage":"grossTonnageDisplay","grt":"grossTonnageDisplay",
+  "length":"lengthDisplay","beam":"beamDisplay","width":"beamDisplay","draft":"draftDisplay","draught":"draftDisplay",
+  "propulsion":"propulsionDisplay","engines":"enginesDisplay","engine":"enginesDisplay",
+  "speed":"speedDisplay","service speed":"serviceSpeedDisplay","maximum speed":"maximumSpeedDisplay",
+  "capacity":"capacityDisplay","passengers":"passengerCapacityDisplay","crew":"crewDisplay",
+  "yard number":"yardNumber","yard no.":"yardNumber","shipyard":"shipyardDisplay",
+  "sister ships":"sisterShipsDisplay","sisters":"sisterShipsDisplay"
+};
+
+function slugify(value=""){
+  return value.normalize("NFKD").replace(/[^\x00-\x7F]/g,"").toLowerCase()
+    .replace(/&/g," and ").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
+}
+function cleanText(value=""){return value.replace(/\s+/g," ").trim()}
+function normalizeLabel(value=""){
+  return cleanText(value).toLowerCase().replace(/[:：]\s*$/,"").replace(/[–—]/g,"-");
+}
+function delay(ms){return new Promise(r=>setTimeout(r,ms))}
+function absUrl(url,base){try{return new URL(url,base).href}catch{return url}}
+function escapeHtml(v=""){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
+function parseNumber(text=""){
+  const m = text.replace(/,/g,"").match(/-?\d+(?:\.\d+)?/);
+  return m ? Number(m[0]) : null;
+}
+function parseYear(text=""){
+  const years = [...text.matchAll(/\b(18|19|20)\d{2}\b/g)].map(m=>Number(m[0]));
+  return years.length ? years[0] : null;
+}
+function canonicalBuilder(source=""){
+  const exact = (canonicalAliases.aliases||[]).find(a=>a.source===source);
+  if(exact) return {id:exact.builderId,status:exact.mappingStatus||"confirmed",method:"exact-alias"};
+  const lower = cleanText(source).toLowerCase();
+  const loose = (canonicalAliases.aliases||[]).find(a=>cleanText(a.source).toLowerCase()===lower);
+  if(loose) return {id:loose.builderId,status:loose.mappingStatus||"confirmed",method:"case-normalized-alias"};
+  return {id:slugify(source.split(/[,(·•]/)[0]),status:"unknown",method:"generated"};
+}
+function canonicalName(id){
+  return (canonicalBuilders.builders||[]).find(b=>b.id===id)?.name || id;
+}
+
+function addFact(map,label,value,source){
+  label=cleanText(label); value=cleanText(value);
+  if(!label||!value||label.length>100||value.length>1200) return;
+  const norm=normalizeLabel(label);
+  const key=FIELD_ALIASES[norm] || slugify(norm);
+  if(!map[key]) map[key]={label,value,source};
+}
+
+function extractFacts(doc){
+  const map={};
+
+  doc.querySelectorAll("dt").forEach(dt=>{
+    const dd=dt.nextElementSibling;
+    if(dd?.tagName==="DD") addFact(map,dt.textContent,dd.textContent,"definition-list");
+  });
+
+  doc.querySelectorAll("table tr").forEach(tr=>{
+    const cells=[...tr.querySelectorAll("th,td")];
+    if(cells.length>=2) addFact(map,cells[0].textContent,cells.slice(1).map(c=>c.textContent).join(" "), "table");
+  });
+
+  const labelSelectors=[
+    ".fact-label",".quick-fact-label",".spec-label",".detail-label",".label",
+    "[data-label]",".meta-label",".ship-fact-label",".fact dt",".spec dt"
+  ];
+  doc.querySelectorAll(labelSelectors.join(",")).forEach(label=>{
+    let value = label.nextElementSibling;
+    if(!value && label.parentElement) {
+      value = label.parentElement.querySelector(".fact-value,.quick-fact-value,.spec-value,.detail-value,.value,dd");
+    }
+    const explicit=label.getAttribute("data-label");
+    addFact(map,explicit||label.textContent,value?.textContent||"","label-value");
+  });
+
+  doc.querySelectorAll("li,p,div").forEach(el=>{
+    if(el.children.length>4) return;
+    const text=cleanText(el.textContent);
+    if(text.length<4||text.length>260) return;
+    const m=text.match(/^([^:]{2,45}):\s*(.{1,210})$/);
+    if(m) addFact(map,m[1],m[2],"colon-text");
+  });
+
+  return map;
+}
+
+function extractTitle(doc,url){
+  const h1=cleanText(doc.querySelector("h1")?.textContent||"");
+  if(h1) return h1.replace(/\s*[|—-]\s*Ship Guide.*$/i,"").trim();
+  const og=doc.querySelector('meta[property="og:title"]')?.content;
+  if(og) return cleanText(og).replace(/\s*[|—-]\s*.*$/,"");
+  return slugify(new URL(url).pathname.split("/").filter(Boolean).pop()||"ship")
+    .split("-").map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(" ");
+}
+
+function extractLinks(doc,base){
+  const seen=new Set();
+  const links=[];
+  doc.querySelectorAll("a[href]").forEach(a=>{
+    const href=absUrl(a.getAttribute("href"),base);
+    try{
+      const u=new URL(href);
+      const p=u.pathname.replace(/\/+$/,"");
+      const looksShip=/\/ships\/[^/]+$/i.test(p) && !/\/ships\/ships$/i.test(p);
+      const guideSignal=/ship guide|view guide|explore ship/i.test(cleanText(a.textContent));
+      if((looksShip||guideSignal)&&!seen.has(u.href)){
+        seen.add(u.href);links.push(u.href);
+      }
+    }catch{}
+  });
+  return links;
+}
+
+function deriveRecord(url,doc){
+  const title=extractTitle(doc,url);
+  const facts=extractFacts(doc);
+  const canonicalUrl=doc.querySelector('link[rel="canonical"]')?.href || url;
+  const record={
+    id:slugify(new URL(canonicalUrl).pathname.split("/").filter(Boolean).pop()||title),
+    name:title,
+    url:canonicalUrl,
+    sourceUrl:url,
+    extractedAt:new Date().toISOString(),
+    factsRaw:Object.fromEntries(Object.entries(facts).map(([k,v])=>[k,v.value]))
+  };
+
+  for(const [key,item] of Object.entries(facts)) record[key]=item.value;
+
+  if(record.builderDisplay){
+    const b=canonicalBuilder(record.builderDisplay);
+    record.builderId=b.id;
+    record.builderName=canonicalName(b.id);
+    record.builderMappingStatus=b.status;
+    record.builderMappingMethod=b.method;
+  }
+  if(record.lineDisplay) record.lineId=slugify(record.lineDisplay.split(/[,(·•]/)[0]);
+  if(record.countryDisplay) record.countryId=slugify(record.countryDisplay.split(/[,(·•]/)[0]);
+  if(record.shipyardDisplay) record.shipyardId=slugify(record.shipyardDisplay.split(/[,(·•]/)[0]);
+  if(record.classDisplay) record.classId=slugify(record.classDisplay.replace(/\bclass\b/i,""));
+  if(record.propulsionDisplay) record.propulsionId=slugify(record.propulsionDisplay.split(/[;,]/)[0]);
+
+  record.launchYear=parseYear(record.launchDate||record.launched||"");
+  record.completedYear=parseYear(record.completedDate||record.builtDate||"");
+  record.grossTonnage=parseNumber(record.grossTonnageDisplay||record.tonnageDisplay||"");
+  record.lengthValue=parseNumber(record.lengthDisplay||"");
+  record.beamValue=parseNumber(record.beamDisplay||"");
+  record.draftValue=parseNumber(record.draftDisplay||"");
+  record.serviceSpeedKnots=parseNumber(record.serviceSpeedDisplay||record.speedDisplay||"");
+  record.maximumSpeedKnots=parseNumber(record.maximumSpeedDisplay||"");
+
+  record.searchText=cleanText([
+    record.name,record.builderDisplay,record.lineDisplay,record.countryDisplay,
+    record.classDisplay,record.shipyardDisplay,record.fateDisplay,record.statusDisplay,
+    ...Object.values(record.factsRaw)
+  ].filter(Boolean).join(" "));
+
+  return record;
+}
+
+function validateRecord(r){
+  const warnings=[];
+  if(!r.name) warnings.push({severity:"error",code:"missing-name",message:"No ship name was extracted."});
+  if(!r.builderDisplay) warnings.push({severity:"warning",code:"missing-builder",message:"No Builder field was extracted."});
+  if(r.builderDisplay&&r.builderMappingStatus==="unknown") warnings.push({severity:"warning",code:"unknown-builder",message:`Builder is not in the approved alias map: ${r.builderDisplay}`});
+  if(!r.lineDisplay) warnings.push({severity:"warning",code:"missing-line",message:"No shipping line/operator field was extracted."});
+  if(!r.launchYear) warnings.push({severity:"info",code:"missing-launch-year",message:"No launch year was extracted."});
+  if(!r.url) warnings.push({severity:"error",code:"missing-url",message:"No canonical URL was found."});
+  if(Object.keys(r.factsRaw||{}).length<3) warnings.push({severity:"warning",code:"few-fields",message:"Fewer than three structured fields were found; template may need a custom selector."});
+  return warnings;
+}
+
+async function fetchHtml(url,signal){
+  const res=await fetch(url,{signal,cache:"no-store",credentials:"omit"});
+  if(!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  return await res.text();
+}
+
+async function discover(){
+  setRunning(true);
+  clearData();
+  abortController=new AbortController();
+  const archive=$("archiveUrl").value.trim();
+  log(`Fetching archive: ${archive}`);
+  try{
+    const html=await fetchHtml(archive,abortController.signal);
+    const doc=new DOMParser().parseFromString(html,"text/html");
+    const urls=extractLinks(doc,archive);
+    result={meta:{archiveUrl:archive,generatedAt:new Date().toISOString()},urls,ships:[],warnings:[],fieldInventory:[],logs:[]};
+    log(`Discovered ${urls.length} candidate ship-guide URLs.`);
+    updateMetrics();renderActive();
+    $("progressText").textContent="Discovery complete";
+    $("progressCount").textContent=`${urls.length} URLs`;
+  }catch(e){log(`ERROR: ${e.message}`);showNotice(`Discovery failed: ${e.message}`)}
+  finally{setRunning(false)}
+}
+
+async function runIndex(){
+  setRunning(true);
+  clearData();
+  abortController=new AbortController();
+  const archive=$("archiveUrl").value.trim();
+  const concurrency=Number($("concurrency").value);
+  const pause=Number($("delay").value);
+  result={meta:{schemaVersion:"0.1",archiveUrl:archive,generatedAt:new Date().toISOString()},urls:[],ships:[],warnings:[],fieldInventory:[],logs:[]};
+
+  try{
+    log(`Fetching archive: ${archive}`);
+    const archiveHtml=await fetchHtml(archive,abortController.signal);
+    const archiveDoc=new DOMParser().parseFromString(archiveHtml,"text/html");
+    result.urls=extractLinks(archiveDoc,archive);
+    log(`Discovered ${result.urls.length} candidate ship-guide URLs.`);
+    if(!result.urls.length) throw new Error("No ship-guide links were found on the archive page.");
+
+    let cursor=0,done=0;
+    async function worker(workerId){
+      while(cursor<result.urls.length){
+        const index=cursor++;
+        const url=result.urls[index];
+        try{
+          if(pause) await delay(pause);
+          const html=await fetchHtml(url,abortController.signal);
+          const doc=new DOMParser().parseFromString(html,"text/html");
+          const ship=deriveRecord(url,doc);
+          ship.warnings=validateRecord(ship);
+          result.ships.push(ship);
+          for(const w of ship.warnings) result.warnings.push({...w,shipId:ship.id,shipName:ship.name,url:ship.url});
+          log(`OK ${ship.name} · ${Object.keys(ship.factsRaw).length} fields`);
+        }catch(e){
+          result.warnings.push({severity:"error",code:"fetch-failed",message:e.message,shipId:null,shipName:url,url});
+          log(`ERROR ${url} · ${e.message}`);
+        }
+        done++;
+        updateProgress(done,result.urls.length);
+        if(done%8===0){updateMetrics();renderActive();}
+      }
+    }
+    await Promise.all(Array.from({length:concurrency},(_,i)=>worker(i+1)));
+    finalizeResult();
+    log(`Finished. ${result.ships.length} ships indexed; ${result.warnings.length} warnings.`);
+    $("progressText").textContent="Index complete";
+    $("exportBtn").disabled=false;
+    renderActive();updateMetrics();
+  }catch(e){
+    log(`FATAL: ${e.message}`);
+    showNotice(`Indexing failed: ${e.message}`);
+  }finally{setRunning(false)}
+}
+
+function finalizeResult(){
+  result.ships.sort((a,b)=>a.name.localeCompare(b.name));
+  const fieldMap=new Map();
+  result.ships.forEach(ship=>{
+    Object.entries(ship.factsRaw||{}).forEach(([key,value])=>{
+      if(!fieldMap.has(key))fieldMap.set(key,{key,count:0,examples:new Set()});
+      const item=fieldMap.get(key);item.count++;if(item.examples.size<5)item.examples.add(value);
+    });
+  });
+  result.fieldInventory=[...fieldMap.values()].map(x=>({...x,examples:[...x.examples]})).sort((a,b)=>b.count-a.count||a.key.localeCompare(b.key));
+
+  const idCounts={};
+  result.ships.forEach(s=>idCounts[s.id]=(idCounts[s.id]||0)+1);
+  Object.entries(idCounts).filter(([,n])=>n>1).forEach(([id,n])=>{
+    result.warnings.push({severity:"error",code:"duplicate-id",message:`Duplicate canonical ship ID appears ${n} times: ${id}`,shipId:id,shipName:id,url:""});
+  });
+}
+
+function buildOutputs(){
+  const generatedAt=new Date().toISOString();
+  const shipsCore=result.ships.map(s=>{
+    const copy={...s};delete copy.warnings;delete copy.searchText;return copy;
+  });
+  const buildersMap=new Map();
+  shipsCore.forEach(s=>{
+    if(!s.builderId)return;
+    if(!buildersMap.has(s.builderId))buildersMap.set(s.builderId,{
+      id:s.builderId,name:s.builderName||canonicalName(s.builderId),mappingStatus:s.builderMappingStatus||"unknown",
+      aliases:new Set(),shipIds:new Set()
+    });
+    const b=buildersMap.get(s.builderId);
+    if(s.builderDisplay)b.aliases.add(s.builderDisplay);b.shipIds.add(s.id);
+  });
+  const derivedBuilders=[...buildersMap.values()].map(b=>({
+    id:b.id,name:b.name,mappingStatus:b.mappingStatus,
+    shipCount:b.shipIds.size,aliases:[...b.aliases].sort(),shipIds:[...b.shipIds].sort()
+  })).sort((a,b)=>a.name.localeCompare(b.name));
+
+  function facet(field,idField){
+    const m=new Map();
+    shipsCore.forEach(s=>{
+      const id=s[idField],name=s[field];if(!id||!name)return;
+      if(!m.has(id))m.set(id,{id,name,shipIds:new Set()});
+      m.get(id).shipIds.add(s.id);
+    });
+    return [...m.values()].map(x=>({id:x.id,name:x.name,shipCount:x.shipIds.size,shipIds:[...x.shipIds].sort()})).sort((a,b)=>a.name.localeCompare(b.name));
+  }
+
+  const relationships=[];
+  shipsCore.forEach(s=>{
+    if(s.builderId)relationships.push({from:s.id,type:"built-by",to:s.builderId});
+    if(s.lineId)relationships.push({from:s.id,type:"operated-by",to:s.lineId});
+    if(s.countryId)relationships.push({from:s.id,type:"associated-country",to:s.countryId});
+    if(s.shipyardId)relationships.push({from:s.id,type:"built-at",to:s.shipyardId});
+    if(s.classId)relationships.push({from:s.id,type:"member-of-class",to:s.classId});
+  });
+
+  const searchIndex=result.ships.map(s=>({
+    id:s.id,title:s.name,url:s.url,builderId:s.builderId||null,lineId:s.lineId||null,
+    launchYear:s.launchYear||null,text:s.searchText
+  }));
+
+  const stats={
+    generatedAt,
+    shipCount:shipsCore.length,
+    builderCount:derivedBuilders.length,
+    lineCount:facet("lineDisplay","lineId").length,
+    countryCount:facet("countryDisplay","countryId").length,
+    warningCount:result.warnings.length,
+    unknownBuilderCount:shipsCore.filter(s=>s.builderMappingStatus==="unknown").length,
+    launchYearRange:{
+      earliest:Math.min(...shipsCore.map(s=>s.launchYear).filter(Boolean)),
+      latest:Math.max(...shipsCore.map(s=>s.launchYear).filter(Boolean))
+    }
+  };
+
+  return {
+    "ships.json":{schemaVersion:"0.1",generatedAt,count:shipsCore.length,ships:shipsCore},
+    "builders.json":{schemaVersion:"0.1",generatedAt,count:derivedBuilders.length,builders:derivedBuilders},
+    "shipping-lines.json":{schemaVersion:"0.1",generatedAt,items:facet("lineDisplay","lineId")},
+    "countries.json":{schemaVersion:"0.1",generatedAt,items:facet("countryDisplay","countryId")},
+    "shipyards.json":{schemaVersion:"0.1",generatedAt,items:facet("shipyardDisplay","shipyardId")},
+    "classes.json":{schemaVersion:"0.1",generatedAt,items:facet("classDisplay","classId")},
+    "propulsion.json":{schemaVersion:"0.1",generatedAt,items:facet("propulsionDisplay","propulsionId")},
+    "relationships.json":{schemaVersion:"0.1",generatedAt,count:relationships.length,relationships},
+    "search-index.json":{schemaVersion:"0.1",generatedAt,count:searchIndex.length,items:searchIndex},
+    "statistics.json":stats,
+    "validation-report.json":{schemaVersion:"0.1",generatedAt,count:result.warnings.length,warnings:result.warnings},
+    "field-inventory.json":{schemaVersion:"0.1",generatedAt,count:result.fieldInventory.length,fields:result.fieldInventory}
+  };
+}
+
+function downloadJson(name,data){
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+  const url=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function exportBundle(){
+  if(!result?.ships?.length)return;
+  const files=buildOutputs();
+  downloadJson("olc-indexer-bundle.json",{schemaVersion:"0.1",generatedAt:new Date().toISOString(),files});
+  let i=1;
+  for(const [name,data] of Object.entries(files))setTimeout(()=>downloadJson(name,data),i++*220);
+  showNotice("Export started. Your browser will download the combined bundle and each deployable JSON file.");
+}
+
+function setRunning(running){
+  $("runBtn").disabled=running;$("discoverBtn").disabled=running;$("clearBtn").disabled=running;
+  $("runBtn").textContent=running?"Indexing…":"Run Full Index";
+}
+function clearData(){
+  result=null;selectedKey=null;$("exportBtn").disabled=true;
+  $("progressBar").style.width="0%";$("progressText").textContent="Ready";$("progressCount").textContent="";
+  $("mShips").textContent="0";$("mWarnings").textContent="0";$("mFields").textContent="0";$("mUnknownBuilders").textContent="0";
+  $("resultList").innerHTML="";$("recordView").classList.add("hidden");$("emptyState").classList.remove("hidden");
+}
+function updateProgress(done,total){
+  const pct=Math.round(done/total*100);$("progressBar").style.width=`${pct}%`;
+  $("progressText").textContent=`Indexing ${pct}%`;$("progressCount").textContent=`${done} / ${total}`;
+}
+function updateMetrics(){
+  $("mShips").textContent=result?.ships?.length||0;
+  $("mWarnings").textContent=result?.warnings?.length||0;
+  $("mFields").textContent=result?.fieldInventory?.length||0;
+  $("mUnknownBuilders").textContent=result?.ships?.filter(s=>s.builderMappingStatus==="unknown").length||0;
+}
+function log(message){
+  const stamp=new Date().toLocaleTimeString();
+  if(result)result.logs.push(`[${stamp}] ${message}`);
+  if(activeTab==="log")renderActive();
+}
+function showNotice(message){
+  const n=$("notice");n.textContent=message;n.classList.add("show");
+  clearTimeout(showNotice.timer);showNotice.timer=setTimeout(()=>n.classList.remove("show"),4500);
+}
+
+function renderActive(){
+  if(!result){return}
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t.dataset.tab===activeTab));
+  const list=$("resultList");
+
+  if(activeTab==="ships"){
+    list.innerHTML=(result.ships||[]).map(s=>`
+      <button class="list-item ${selectedKey===s.id?"active":""}" data-key="${escapeHtml(s.id)}">
+        <div class="list-title"><strong>${escapeHtml(s.name)}</strong>
+        <span class="badge ${s.warnings?.some(w=>w.severity==="error")?"bad":s.warnings?.length?"warn":"good"}">${s.warnings?.length||0}</span></div>
+        <div class="sub">${escapeHtml(s.builderDisplay||"No builder")} · ${Object.keys(s.factsRaw||{}).length} fields</div>
+      </button>`).join("")||`<p class="sub" style="padding:12px">No ship records yet.</p>`;
+  }else if(activeTab==="warnings"){
+    list.innerHTML=(result.warnings||[]).map((w,i)=>`
+      <button class="list-item ${selectedKey===String(i)?"active":""}" data-key="${i}">
+        <div class="list-title"><strong>${escapeHtml(w.shipName||w.code)}</strong><span class="badge ${w.severity==="error"?"bad":"warn"}">${escapeHtml(w.severity)}</span></div>
+        <div class="sub">${escapeHtml(w.message)}</div>
+      </button>`).join("")||`<p class="sub" style="padding:12px">No warnings.</p>`;
+  }else if(activeTab==="fields"){
+    list.innerHTML=(result.fieldInventory||[]).map(f=>`
+      <button class="list-item ${selectedKey===f.key?"active":""}" data-key="${escapeHtml(f.key)}">
+        <div class="list-title"><strong>${escapeHtml(f.key)}</strong><span class="badge">${f.count}</span></div>
+        <div class="sub">${escapeHtml(f.examples?.[0]||"")}</div>
+      </button>`).join("")||`<p class="sub" style="padding:12px">Field inventory appears after indexing completes.</p>`;
+  }else{
+    list.innerHTML=`<div class="log">${(result.logs||[]).map(x=>`<div>${escapeHtml(x)}</div>`).join("")}</div>`;
+  }
+
+  list.querySelectorAll("[data-key]").forEach(btn=>btn.addEventListener("click",()=>{
+    selectedKey=btn.dataset.key;renderActive();renderDetail();
+  }));
+  if(activeTab==="log"){
+    $("recordView").classList.add("hidden");$("emptyState").classList.remove("hidden");
+    $("emptyState").innerHTML=`<div><p class="eyebrow">Live run log</p><h2>Operational messages appear at left.</h2></div>`;
+  }
+}
+function renderDetail(){
+  const view=$("recordView");$("emptyState").classList.add("hidden");view.classList.remove("hidden");
+  if(activeTab==="ships"){
+    const s=result.ships.find(x=>x.id===selectedKey);if(!s)return;
+    view.innerHTML=`
+      <div class="record-head"><div><p class="eyebrow">Indexed ship record</p><h2>${escapeHtml(s.name)}</h2>
+      <div class="chips"><span class="chip">${escapeHtml(s.id)}</span><span class="chip">${Object.keys(s.factsRaw||{}).length} fields</span></div></div></div>
+      <section class="section"><h3>Normalized metadata</h3><div class="facts">
+      ${Object.entries(s).filter(([k,v])=>!["factsRaw","warnings","searchText","extractedAt","sourceUrl"].includes(k)&&v!==null&&v!==undefined&&v!=="")
+        .map(([k,v])=>`<div class="fact"><b>${escapeHtml(k)}</b><span>${escapeHtml(typeof v==="object"?JSON.stringify(v):v)}</span></div>`).join("")}
+      </div></section>
+      <section class="section"><h3>Validation</h3><div class="warnings">
+      ${(s.warnings||[]).map(w=>`<div class="warning ${w.severity==="error"?"error":""}"><strong>${escapeHtml(w.code)}</strong><br>${escapeHtml(w.message)}</div>`).join("")||`<div class="warning" style="border-color:rgba(145,184,159,.4)">No warnings for this record.</div>`}
+      </div></section>
+      <section class="section"><h3>Raw extracted fields</h3><pre>${escapeHtml(JSON.stringify(s.factsRaw,null,2))}</pre></section>`;
+  }else if(activeTab==="warnings"){
+    const w=result.warnings[Number(selectedKey)];if(!w)return;
+    view.innerHTML=`<p class="eyebrow">${escapeHtml(w.severity)} · ${escapeHtml(w.code)}</p><h2>${escapeHtml(w.shipName||"Indexer warning")}</h2>
+      <section class="section"><div class="warning ${w.severity==="error"?"error":""}">${escapeHtml(w.message)}</div></section>
+      <section class="section"><h3>Source</h3><pre>${escapeHtml(w.url||"No URL recorded")}</pre></section>`;
+  }else if(activeTab==="fields"){
+    const f=result.fieldInventory.find(x=>x.key===selectedKey);if(!f)return;
+    view.innerHTML=`<p class="eyebrow">Extracted field inventory</p><h2>${escapeHtml(f.key)}</h2>
+      <section class="section"><div class="metric panel" style="max-width:220px"><strong>${f.count}</strong><span>Ship records</span></div></section>
+      <section class="section"><h3>Examples</h3>${(f.examples||[]).map(x=>`<pre>${escapeHtml(x)}</pre>`).join("")}</section>`;
+  }
+}
+
+async function importBuilderFiles(files){
+  for(const file of files){
+    const data=JSON.parse(await file.text());
+    if(Array.isArray(data.builders))canonicalBuilders=data;
+    else if(Array.isArray(data.aliases))canonicalAliases=data;
+    else if(data.files?.["builders.json"])canonicalBuilders=data.files["builders.json"];
+    if(data.files?.["builder-aliases.json"])canonicalAliases=data.files["builder-aliases.json"];
+  }
+  showNotice(`Builder data loaded: ${(canonicalBuilders.builders||[]).length} canonical builders and ${(canonicalAliases.aliases||[]).length} aliases.`);
+}
+
+$("runBtn").addEventListener("click",runIndex);
+$("discoverBtn").addEventListener("click",discover);
+$("exportBtn").addEventListener("click",exportBundle);
+$("clearBtn").addEventListener("click",()=>{abortController?.abort();clearData()});
+$("importBuilderBtn").addEventListener("click",()=>$("builderFileInput").click());
+$("builderFileInput").addEventListener("change",async()=>{try{await importBuilderFiles([...$("builderFileInput").files])}catch(e){alert(e.message)}finally{$("builderFileInput").value=""}});
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{activeTab=t.dataset.tab;selectedKey=null;renderActive()}));
+
+clearData();
+})();
+</script>
+</body>
+</html>
