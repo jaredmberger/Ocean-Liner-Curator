@@ -28,7 +28,6 @@
 "/ships/ss-atlantic-1873.html",
 "/ships/athlone-castle.html",
 "/ships/ms-augustus.html",
-"/ships/rms-andania.html",
 "/ships/ss-baltic-1871.html",
 "/ships/rms-baltic.html",
 "/ships/ss-belgenland.html",
@@ -215,7 +214,6 @@
   "/ships/ss-veendam.html",
   "/ships/rms-viceroy-of-india.html",
   "/ships/ss-virginia.html",
-  "/ships/ss-cleveland.html",
   "/ships/ss-volendam.html",
   "/ships/ms-vulcania.html",
   "/ships/ss-warwick-castle.html",
@@ -254,7 +252,7 @@
 "/ships/tall-ships-guide.html",
 "/ships/ss-bothnia.html",
 "/ships/ss-cuba.html",
-"/ships/ss-drottningholm",
+"/ships/ss-drottningholm.html",
 "/ships/ss-finland.html",
 "/ships/ss-gothic-white-star-line.html",
 "/ships/ss-macedonia.html",
@@ -293,7 +291,16 @@
 "/ships/ss-new-england.html",
 "/ships/ss-commonwealth.html",
 "/ships/ss-winifredian.html",
-"/ships/ss-st-louis.html"
+"/ships/ss-st-louis.html",
+"/ships/rms-aurania.html",
+"/ships/rms-sylvania.html",
+"/ships/rms-titanic.html",
+"/ships/rms-umbria-1884.html",
+"/ships/ss-poland.html",
+"/ships/ss-suevic.html",
+"/ships/ss-traffic.html",
+"/ships/ss-vestris.html",
+"/ships/tatsuta-maru-1929.html"
 ];
 
 window.OLC_SHIP_URLS = shipUrls;

@@ -956,7 +956,126 @@
         { href: "/ships/ss-rotterdam-1908", label: "SS <em>Rotterdam</em> (1908)", tail: "Holland America Line · 1908" }
       ],
       "Early Holland America liners"
-    )
+    ),
+
+    /* =========================================================
+       TEMPORARY EXPANSION — July 2026
+       These manual groups provide immediate coverage while the
+       canonical catalog/relationship system is being developed.
+    ========================================================= */
+
+    ngl_barbarossa_group: cluster(
+      "Related Liners.",
+      "Norddeutscher Lloyd passenger ships associated with the Barbarossa-class generation and the company’s large turn-of-the-century emigrant and express network.",
+      [
+        { href: "/ships/ss-friedrich-der-grosse", label: "SS <em>Friedrich der Grosse</em>", tail: "Norddeutscher Lloyd" },
+        { href: "/ships/ss-barbarossa", label: "SS <em>Barbarossa</em>", tail: "Norddeutscher Lloyd" },
+        { href: "/ships/ss-konigin-luise", label: "SS <em>Königin Luise</em>", tail: "Norddeutscher Lloyd" },
+        { href: "/ships/ss-grosser-kurfurst", label: "SS <em>Grosser Kurfürst</em>", tail: "Norddeutscher Lloyd" },
+        { href: "/ships/ss-prinzess-irene", label: "SS <em>Prinzess Irene</em>", tail: "Norddeutscher Lloyd" }
+      ],
+      "Norddeutscher Lloyd Barbarossa-era liners"
+    ),
+
+    hapag_p_class_group: cluster(
+      "Related Liners.",
+      "Hamburg America Line passenger ships from the company’s large P-class and closely associated late-1890s Atlantic fleet.",
+      [
+        { href: "/ships/ss-pretoria", label: "SS <em>Pretoria</em>", tail: "Hamburg America Line" },
+        { href: "/ships/ss-patricia", label: "SS <em>Patricia</em>", tail: "Hamburg America Line" },
+        { href: "/ships/ss-graf-waldersee", label: "SS <em>Graf Waldersee</em>", tail: "Hamburg America Line" },
+        { href: "/ships/ss-pennsylvania", label: "SS <em>Pennsylvania</em>", tail: "Hamburg America Line" }
+      ],
+      "Hamburg America Line P-class group"
+    ),
+
+    union_castle_early_mail: cluster(
+      "Related Liners.",
+      "Union-Castle and predecessor-era mail steamers associated with the Cape route before the better-known interwar Castle liners.",
+      [
+        { href: "/ships/rms-walmer-castle", label: "RMS <em>Walmer Castle</em>", tail: "Cape mail service" },
+        { href: "/ships/ss-armadale-castle", label: "SS <em>Armadale Castle</em>", tail: "Union-Castle Line" },
+        { href: "/ships/rms-kenilworth-castle", label: "RMS <em>Kenilworth Castle</em>", tail: "Union-Castle Line" },
+        { href: "/ships/ss-briton", label: "SS <em>Briton</em>", tail: "South African mail service" },
+        { href: "/ships/ss-saxon", label: "SS <em>Saxon</em>", tail: "South African mail service" }
+      ],
+      "Early Union-Castle and Cape mail liners"
+    ),
+
+    holland_america_early_1900s: cluster(
+      "Related Liners.",
+      "Holland America Line ships associated with the company’s early-20th-century North Atlantic expansion before the interwar fleet.",
+      [
+        { href: "/ships/ss-rijndam-1901", label: "SS <em>Rijndam</em> (1901)", tail: "Holland America Line" },
+        { href: "/ships/ss-noordam", label: "SS <em>Noordam</em>", tail: "Holland America Line" },
+        { href: "/ships/ss-nieuw-amsterdam-1906", label: "SS <em>Nieuw Amsterdam</em> (1906)", tail: "Holland America Line" },
+        { href: "/ships/ss-rotterdam-1908", label: "SS <em>Rotterdam</em> (1908)", tail: "Holland America Line" }
+      ],
+      "Early-20th-century Holland America liners"
+    ),
+
+    dominion_line_group: cluster(
+      "Related Liners.",
+      "Dominion Line passenger ships associated with the company’s Liverpool–Canada service and turn-of-the-century fleet development.",
+      [
+        { href: "/ships/ss-new-england", label: "SS <em>New England</em>", tail: "Dominion Line" },
+        { href: "/ships/ss-commonwealth", label: "SS <em>Commonwealth</em>", tail: "Dominion Line" },
+        { href: "/ships/ss-mayflower", label: "SS <em>Mayflower</em>", tail: "Dominion Line" },
+        { href: "/ships/ss-canada-1896", label: "SS <em>Canada</em> (1896)", tail: "Dominion Line" }
+      ],
+      "Dominion Line Canadian-service ships"
+    ),
+
+    cunard_early_steamers: cluster(
+      "Related Liners.",
+      "Cunard ships associated with the line’s expanding Victorian network before the great express-liner era.",
+      [
+        { href: "/ships/ss-bothnia", label: "SS <em>Bothnia</em>", tail: "Cunard Line" },
+        { href: "/ships/ss-java", label: "SS <em>Java</em>", tail: "Cunard Line" },
+        { href: "/ships/ss-catalonia", label: "SS <em>Catalonia</em>", tail: "Cunard Line" },
+        { href: "/ships/ss-malta", label: "SS <em>Malta</em>", tail: "Cunard Line" },
+        { href: "/ships/rms-aurania", label: "RMS <em>Aurania</em>", tail: "Cunard Line" }
+      ],
+      "Victorian Cunard steamers"
+    ),
+
+    white_star_australasian: cluster(
+      "Related Liners.",
+      "White Star Line ships associated with the Australian and New Zealand trades, including large cargo-passenger liners and long-serving route companions.",
+      [
+        { href: "/ships/ss-athenic", label: "SS <em>Athenic</em>", tail: "White Star Line" },
+        { href: "/ships/ss-corinthic", label: "SS <em>Corinthic</em>", tail: "White Star Line" },
+        { href: "/ships/ss-ionic", label: "SS <em>Ionic</em>", tail: "White Star Line" },
+        { href: "/ships/ss-gothic-white-star-line", label: "SS <em>Gothic</em>", tail: "White Star Line" },
+        { href: "/ships/ss-ceramic", label: "SS <em>Ceramic</em>", tail: "White Star Line" },
+        { href: "/ships/ss-suevic", label: "SS <em>Suevic</em>", tail: "White Star Line" }
+      ],
+      "White Star Australasian-service liners"
+    ),
+
+    hapag_b_named_group: cluster(
+      "Related Liners.",
+      "Hamburg America Line ships sharing the company’s late-19th-century B-name fleet identity and emigrant-service context.",
+      [
+        { href: "/ships/ss-bulgaria", label: "SS <em>Bulgaria</em>", tail: "Hamburg America Line" },
+        { href: "/ships/ss-batavia", label: "SS <em>Batavia</em>", tail: "Hamburg America Line" },
+        { href: "/ships/ss-belgravia", label: "SS <em>Belgravia</em>", tail: "Hamburg America Line" },
+        { href: "/ships/ss-belgia", label: "SS <em>Belgia</em>", tail: "Hamburg America Line" }
+      ],
+      "Hamburg America Line B-name ships"
+    ),
+
+    american_line_express: cluster(
+      "Related Liners.",
+      "American Line ships associated with the company’s late-19th- and early-20th-century express service and its inherited Inman Line prestige fleet.",
+      [
+        { href: "/ships/ss-st-louis", label: "SS <em>St. Louis</em>", tail: "American Line" },
+        { href: "/ships/ss-new-york", label: "SS <em>New York</em>", tail: "American Line" },
+        { href: "/ships/ss-city-of-paris", label: "SS <em>City of Paris</em>", tail: "Inman Line / American Line" },
+        { href: "/ships/ss-city-of-new-york-1888", label: "SS <em>City of New York</em>", tail: "Inman Line / American Line" }
+      ],
+      "American Line and inherited Inman express liners"
+    ),
   };
 
   /* =========================
@@ -986,7 +1105,7 @@
     "ss-persic": ["white_star_jubilee"],
     "ss-afric": ["white_star_jubilee"],
     "ss-romanic": ["white_star_jubilee"],
-    "ss-suevic": ["white_star_jubilee"],
+    "ss-suevic": ["white_star_jubilee", "white_star_australasian"],
 
     "rms-queen-mary": ["cunard_queens"],
     "rms-queen-elizabeth": ["cunard_queens"],
@@ -1055,11 +1174,11 @@
     "ss-volendam": ["holland_america_interwar"],
     "ss-statendam-1929": ["holland_america_interwar"],
     "ss-nieuw-amsterdam": ["holland_america_interwar"],
-    "ss-rotterdam-1908": ["rotterdam_pair", "hal_early_generation"],
+    "ss-rotterdam-1908": ["rotterdam_pair", "hal_early_generation", "holland_america_early_1900s"],
     "ss-rotterdam-1959": ["rotterdam_pair"],
     "ss-kroonland": ["hal_early_generation"],
     "ss-zeeland": ["hal_early_generation"],
-    "ss-nieuw-amsterdam-1906": ["hal_early_generation"],
+    "ss-nieuw-amsterdam-1906": ["hal_early_generation", "holland_america_early_1900s"],
 
     "rms-cameronia": ["anchor_interwar"],
     "rms-caledonia": ["anchor_interwar"],
@@ -1142,7 +1261,48 @@
     "ss-albert-ballin": ["hapag_ballin_group"],
 
     "ss-minnewaska": ["minnewaska_atlantic_transport"],
-    "ss-minneapolis": ["minnewaska_atlantic_transport"]
+    "ss-minneapolis": ["minnewaska_atlantic_transport"],
+
+    /* Temporary expansion mappings — July 2026 */
+    "ss-friedrich-der-grosse": ["ngl_barbarossa_group"],
+    "ss-barbarossa": ["ngl_barbarossa_group"],
+    "ss-konigin-luise": ["ngl_barbarossa_group"],
+    "ss-grosser-kurfurst": ["ngl_barbarossa_group"],
+    "ss-prinzess-irene": ["ngl_barbarossa_group"],
+    "ss-pretoria": ["hapag_p_class_group"],
+    "ss-patricia": ["hapag_p_class_group"],
+    "ss-graf-waldersee": ["hapag_p_class_group"],
+    "ss-pennsylvania": ["hapag_p_class_group"],
+    "rms-walmer-castle": ["union_castle_early_mail"],
+    "ss-armadale-castle": ["union_castle_early_mail"],
+    "rms-kenilworth-castle": ["union_castle_early_mail"],
+    "ss-briton": ["union_castle_early_mail"],
+    "ss-saxon": ["union_castle_early_mail"],
+    "ss-rijndam-1901": ["holland_america_early_1900s"],
+    "ss-noordam": ["holland_america_early_1900s"],
+    "ss-new-england": ["dominion_line_group"],
+    "ss-commonwealth": ["dominion_line_group"],
+    "ss-mayflower": ["dominion_line_group"],
+    "ss-canada-1896": ["dominion_line_group"],
+    "ss-bothnia": ["cunard_early_steamers"],
+    "ss-java": ["cunard_early_steamers"],
+    "ss-catalonia": ["cunard_early_steamers"],
+    "ss-malta": ["cunard_early_steamers"],
+    "rms-aurania": ["cunard_early_steamers"],
+    "ss-athenic": ["white_star_australasian"],
+    "ss-corinthic": ["white_star_australasian"],
+    "ss-ionic": ["white_star_australasian"],
+    "ss-gothic-white-star-line": ["white_star_australasian"],
+    "ss-ceramic": ["white_star_australasian"],
+    "ss-bulgaria": ["hapag_b_named_group"],
+    "ss-batavia": ["hapag_b_named_group"],
+    "ss-belgravia": ["hapag_b_named_group"],
+    "ss-belgia": ["hapag_b_named_group"],
+    "ss-st-louis": ["american_line_express"],
+    "ss-new-york": ["american_line_express"],
+    "ss-city-of-paris": ["american_line_express"],
+    "ss-city-of-new-york-1888": ["american_line_express"]
+
   };
 
   const keys = MAP[slug];
