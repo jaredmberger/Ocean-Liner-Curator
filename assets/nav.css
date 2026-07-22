@@ -1456,3 +1456,14 @@ a.footer-star:focus{
     border-radius:clamp(11px, 1.7vw, 12px) !important;
     background:rgba(230,223,207,.06) !important;
 }
+
+.short-answer,
+.ship-card,
+  .note-card,
+  .theme-card,
+  .evidence-box,
+  .quote-panel{
+   backdrop-filter:blur(3px) !important;
+  -webkit-backdrop-filter:blur(3px) !important;
+  box-shadow:0 18px 45px rgba(0,0,0,0.34) !important;
+  }
