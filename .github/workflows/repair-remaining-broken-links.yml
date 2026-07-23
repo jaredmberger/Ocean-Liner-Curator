@@ -1,9 +1,8 @@
 name: Repair remaining broken links
 
 on:
-  push:
-    branches:
-      - repair-remaining-broken-links
+  pull_request:
+    types: [opened, synchronize]
 
 permissions:
   contents: write
