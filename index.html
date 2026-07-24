@@ -2692,63 +2692,6 @@ font-size: 1rem;
 </style>
   
 
-<style>
-/* iOS/Safari hardening: if JS fails before reveal observers run, never leave key content invisible forever. */
-.no-js .hero-inner,
-.no-js .reveal,
-.no-js .reveal-stagger,
-.js-boot-fallback .hero-inner,
-.js-boot-fallback .reveal,
-.js-boot-fallback .reveal-stagger{
-  opacity: 1 !important;
-  transform: none !important;
-  transition: none !important;
-}
-</style>
-<script>
-/* Early, dependency-free diagnostics and graceful fallback. Safe for older Safari. */
-(function () {
-  var root = document.documentElement;
-  root.className = (root.className ? root.className + ' ' : '') + 'no-js';
-
-  window.OLC_SAFE_RUN = function (name, fn) {
-    try {
-      if (typeof fn === 'function') fn();
-    } catch (error) {
-      if (window.console && console.error) {
-        console.error('[OceanLiners.net] ' + name + ' failed:', error);
-      }
-    }
-  };
-
-  window.addEventListener('error', function (event) {
-    if (window.console && console.error) {
-      console.error('[OceanLiners.net JS error]', event.message, event.filename, event.lineno, event.colno);
-    }
-  });
-
-  window.addEventListener('unhandledrejection', function (event) {
-    if (window.console && console.error) {
-      console.error('[OceanLiners.net Promise error]', event.reason);
-    }
-  });
-
-  var clearNoJs = function () {
-    root.className = root.className.replace(/\bno-js\b/g, '').replace(/\s+/g, ' ').replace(/^\s|\s$/g, '');
-  };
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', clearNoJs);
-  } else {
-    clearNoJs();
-  }
-
-  /* If Safari beta chokes on a later script, reveal content instead of leaving panels/images hidden. */
-  window.setTimeout(function () {
-    root.className += (root.className ? ' ' : '') + 'js-boot-fallback';
-  }, 2500);
-})();
-</script>
 </head>
 
 <body class="homepage">
@@ -3126,10 +3069,10 @@ font-size: 1rem;
 </section>
 
 <script>
-window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Year stamp', function () {
+(function () {
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
-});
+})();
 </script>
     
 <!-- 100% privacy-first analytics -->
@@ -3140,291 +3083,10 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Year stamp', function () {
 <script src="/assets/random-ship.js" defer></script>
 <script src="/assets/entry-links.js" defer></script>
 
-<!-- Ocean Liner Curator — Shared Interface Repair Script -->
-<script>
-(function () {
-  "use strict";
-
-  const ASSETS = {
-    navCss: "/assets/nav.css",
-    headerJs: "/assets/header.js",
-    navJs: "/assets/nav.js",
-    randomShipJs: "/assets/random-ship.js",
-    entryLinksJs: "/assets/entry-links.js"
-  };
-
-  const REPAIR_DELAY_MS = 1600;
-  let repairRunning = false;
-
-  function freshUrl(path) {
-    const separator = path.includes("?") ? "&" : "?";
-    return path + separator + "olc-repair=" + Date.now();
-  }
-
-  function wait(ms) {
-    return new Promise(function (resolve) {
-      window.setTimeout(resolve, ms);
-    });
-  }
-
-  function nextFrame() {
-    return new Promise(function (resolve) {
-      if (typeof window.requestAnimationFrame === "function") {
-        window.requestAnimationFrame(resolve);
-      } else {
-        window.setTimeout(resolve, 16);
-      }
-    });
-  }
-
-  async function settleDom() {
-    await nextFrame();
-    await nextFrame();
-  }
-
-  function loadScript(path, marker) {
-    return new Promise(function (resolve, reject) {
-      const previous = document.querySelector('script[data-olc-repair="' + marker + '"]');
-      if (previous) previous.remove();
-
-      const script = document.createElement("script");
-      script.src = freshUrl(path);
-      script.async = false;
-      script.dataset.olcRepair = marker;
-
-      script.onload = function () {
-        console.info("[OLC Repair] Loaded script:", path);
-        resolve(script);
-      };
-
-      script.onerror = function () {
-        reject(new Error("Could not load script: " + path));
-      };
-
-      document.head.appendChild(script);
-    });
-  }
-
-  function loadStyle(path, marker) {
-    return new Promise(function (resolve, reject) {
-      const previous = document.querySelector('link[data-olc-repair="' + marker + '"]');
-      if (previous) previous.remove();
-
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = freshUrl(path);
-      link.dataset.olcRepair = marker;
-
-      link.onload = function () {
-        console.info("[OLC Repair] Loaded stylesheet:", path);
-        resolve(link);
-      };
-
-      link.onerror = function () {
-        reject(new Error("Could not load stylesheet: " + path));
-      };
-
-      document.head.appendChild(link);
-    });
-  }
-
-  function headerIsHealthy() {
-    return Boolean(
-      window.OLC &&
-      typeof window.OLC.reloadHeader === "function" &&
-      document.querySelector("#site-header .site-header")
-    );
-  }
-
-  function navigationIsHealthy() {
-    return Boolean(
-      window.OLC &&
-      typeof window.OLC.reloadNav === "function" &&
-      document.querySelector(".site-nav")
-    );
-  }
-
-  function randomShipDataIsHealthy() {
-    return Boolean(
-      Array.isArray(window.OLC_SHIP_URLS) &&
-      window.OLC_SHIP_URLS.length > 0
-    );
-  }
-
-  function entryDataIsHealthy() {
-    return Boolean(
-      window.OLC_ENTRY_SETS &&
-      typeof window.OLC_ENTRY_SETS === "object"
-    );
-  }
-
-  function triggerRandomShipRefresh() {
-    if (window.OLC && typeof window.OLC.reloadRandomShip === "function") {
-      try {
-        window.OLC.reloadRandomShip();
-        return true;
-      } catch (error) {
-        console.warn("[OLC Repair] OLC.reloadRandomShip() failed:", error);
-      }
-    }
-
-    const button = document.getElementById("ship-entry-refresh");
-    if (button && typeof button.click === "function") {
-      button.click();
-      return true;
-    }
-
-    document.dispatchEvent(new CustomEvent("olc:random-ship-ready", {
-      detail: {
-        shipCount: Array.isArray(window.OLC_SHIP_URLS) ? window.OLC_SHIP_URLS.length : 0
-      }
-    }));
-
-    return false;
-  }
-
-  function triggerEntryCardRefresh() {
-    if (window.OLC && typeof window.OLC.reloadEntryCards === "function") {
-      try {
-        window.OLC.reloadEntryCards();
-        return true;
-      } catch (error) {
-        console.warn("[OLC Repair] OLC.reloadEntryCards() failed:", error);
-      }
-    }
-
-    const button = document.getElementById("rotating-entry-refresh");
-    if (button && typeof button.click === "function") {
-      button.click();
-      return true;
-    }
-
-    document.dispatchEvent(new CustomEvent("olc:entry-links-ready", {
-      detail: {
-        entrySetsAvailable: entryDataIsHealthy()
-      }
-    }));
-
-    return false;
-  }
-
-  function getRepairStatus() {
-    return {
-      header: headerIsHealthy(),
-      navigation: navigationIsHealthy(),
-      navCssRepairLoaded: Boolean(document.querySelector('link[data-olc-repair="nav-css"]')),
-      randomShipData: randomShipDataIsHealthy(),
-      entryLinksData: entryDataIsHealthy(),
-      randomShipCardPresent: Boolean(document.getElementById("ship-entry-title")),
-      rotatingEntryCardPresent: Boolean(document.getElementById("rotating-entry-title"))
-    };
-  }
-
-  async function repairSharedInterface() {
-    if (repairRunning) {
-      console.warn("[OLC Repair] Repair is already running.");
-      return false;
-    }
-
-    repairRunning = true;
-    console.warn("[OLC Repair] Starting full shared-interface recovery.");
-
-    try {
-      await loadStyle(ASSETS.navCss, "nav-css");
-
-      if (!window.OLC || typeof window.OLC.reloadHeader !== "function") {
-        await loadScript(ASSETS.headerJs, "header-js");
-      }
-
-      if (window.OLC && typeof window.OLC.reloadHeader === "function") {
-        await window.OLC.reloadHeader();
-      } else {
-        throw new Error("header.js loaded, but OLC.reloadHeader() is unavailable.");
-      }
-
-      await settleDom();
-
-      if (!window.OLC || typeof window.OLC.reloadNav !== "function") {
-        await loadScript(ASSETS.navJs, "nav-js");
-      }
-
-      if (window.OLC && typeof window.OLC.reloadNav === "function") {
-        window.OLC.reloadNav();
-      } else {
-        throw new Error("nav.js loaded, but OLC.reloadNav() is unavailable.");
-      }
-
-      await loadScript(ASSETS.randomShipJs, "random-ship-js");
-      await loadScript(ASSETS.entryLinksJs, "entry-links-js");
-
-      await settleDom();
-      await wait(50);
-
-      const randomShipTriggered = triggerRandomShipRefresh();
-      const entryCardTriggered = triggerEntryCardRefresh();
-
-      document.dispatchEvent(new CustomEvent("olc:shared-assets-repaired", {
-        detail: {
-          randomShipTriggered: randomShipTriggered,
-          entryCardTriggered: entryCardTriggered,
-          shipCount: Array.isArray(window.OLC_SHIP_URLS) ? window.OLC_SHIP_URLS.length : 0,
-          entrySetsAvailable: entryDataIsHealthy()
-        }
-      }));
-
-      await settleDom();
-
-      const status = getRepairStatus();
-      console.table(status);
-
-      if (!status.header || !status.navigation) {
-        throw new Error("Recovery completed, but the header or navigation remains unavailable.");
-      }
-
-      if (!status.randomShipData) {
-        console.warn("[OLC Repair] random-ship.js loaded, but OLC_SHIP_URLS is unavailable.");
-      }
-
-      if (!status.entryLinksData) {
-        console.warn("[OLC Repair] entry-links.js loaded, but OLC_ENTRY_SETS is unavailable.");
-      }
-
-      console.info("[OLC Repair] Full shared-interface recovery completed.");
-      return true;
-    } catch (error) {
-      console.error("[OLC Repair] Recovery failed:", error);
-      return false;
-    } finally {
-      repairRunning = false;
-    }
-  }
-
-  window.OLCRepair = repairSharedInterface;
-
-  window.OLCRepairStatus = function () {
-    const status = getRepairStatus();
-    console.table(status);
-    return status;
-  };
-
-  window.setTimeout(function () {
-    const needsRepair =
-      !headerIsHealthy() ||
-      !navigationIsHealthy() ||
-      !randomShipDataIsHealthy() ||
-      !entryDataIsHealthy();
-
-    if (needsRepair) {
-      console.warn("[OLC Repair] Missing or inactive shared assets detected. Starting automatic recovery.");
-      repairSharedInterface();
-    }
-  }, REPAIR_DELAY_MS);
-})();
-</script>
 
 <!-- Scroll Reveal Observer (cards sections) -->
 <script>
-window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Scroll reveal', function () {
+(function () {
   var sections = document.querySelectorAll('.reveal');
   if(!sections.length) return;
 
@@ -3466,11 +3128,11 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Scroll reveal', function () {
   });
 
   sections.forEach(el => io.observe(el));
-});
+})();
 </script>
 
 <script>
-window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
+(function () {
   var heroes = document.querySelectorAll('.hero-inner');
   if(!heroes.length) return;
 
@@ -3483,7 +3145,7 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
 
   if (document.readyState === 'complete') show();
   else window.addEventListener('load', show, { once:true });
-});
+})();
 </script>
     
 <!-- House External Link Alert (Ocean Liner Curator style) -->
@@ -3627,9 +3289,6 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
 
 <script>
 (function(){
-  if (!window.OLC_SAFE_RUN) return;
-
-  window.OLC_SAFE_RUN('Rotating homepage cards', function () {
     var lastEntryHref = '';
     var lastShipHref = '';
     var initialized = false;
@@ -3792,182 +3451,9 @@ window.OLC_SAFE_RUN && window.OLC_SAFE_RUN('Hero reveal', function () {
     }
 
     window.addEventListener('load', initRotatingCards, { once: true });
-  });
 })();
 </script>
 
-<!-- Private OLC cache-recovery control -->
-<button
-  type="button"
-  id="olc-deep-recovery"
-  aria-label="Repair cached site resources"
-  title="Repair cached site resources"
->
-  ★
-</button>
-
-<style>
-#olc-deep-recovery{
-  position:fixed;
-  left:max(8px, env(safe-area-inset-left));
-  bottom:max(8px, env(safe-area-inset-bottom));
-  z-index:2147483647;
-
-  width:24px;
-  height:24px;
-  padding:0;
-
-  border:1px solid transparent;
-  border-radius:50%;
-  background:transparent;
-  color:transparent;
-
-  opacity:1;
-  cursor:pointer;
-  -webkit-tap-highlight-color:transparent;
-}
-
-#olc-deep-recovery:focus-visible{
-  width:36px;
-  height:36px;
-  opacity:1;
-  color:#bfa46a;
-  background:#0f1b19;
-  border-color:rgba(191,164,106,0.55);
-  outline:2px solid rgba(191,164,106,0.7);
-  outline-offset:3px;
-}
-</style>
-
-<script>
-(function () {
-  "use strict";
-
-  const button = document.getElementById("olc-deep-recovery");
-  if (!button) return;
-
-  let running = false;
-
-  async function deepRecover() {
-    if (running) return;
-    running = true;
-    button.disabled = true;
-
-    console.warn("[OLC] Starting deep cache recovery.");
-
-    try {
-      /*
-       * 1. Unregister service workers.
-       */
-      if (
-        "serviceWorker" in navigator &&
-        typeof navigator.serviceWorker.getRegistrations === "function"
-      ) {
-        const registrations =
-          await navigator.serviceWorker.getRegistrations();
-
-        await Promise.allSettled(
-          registrations.map(function (registration) {
-            return registration.unregister();
-          })
-        );
-
-        console.info(
-          "[OLC] Service workers removed:",
-          registrations.length
-        );
-      }
-
-      /*
-       * 2. Delete Cache Storage entries.
-       */
-      if ("caches" in window) {
-        const cacheNames = await window.caches.keys();
-
-        await Promise.allSettled(
-          cacheNames.map(function (cacheName) {
-            return window.caches.delete(cacheName);
-          })
-        );
-
-        console.info(
-          "[OLC] Cache Storage entries removed:",
-          cacheNames.length
-        );
-      }
-
-      /*
-       * 3. Clear temporary page storage.
-       */
-      try {
-        window.sessionStorage.clear();
-      } catch (error) {
-        console.warn("[OLC] sessionStorage could not be cleared:", error);
-      }
-
-      /*
-       * Enable this only if OceanLiners.net does not store important
-       * visitor preferences in localStorage.
-       */
-      try {
-        window.localStorage.clear();
-      } catch (error) {
-        console.warn("[OLC] localStorage could not be cleared:", error);
-      }
-
-      /*
-       * 4. Briefly allow unregister/delete operations to settle.
-       */
-      await new Promise(function (resolve) {
-        window.setTimeout(resolve, 350);
-      });
-
-      /*
-       * 5. Reload through a unique document URL.
-       */
-      const url = new URL(window.location.href);
-      url.searchParams.set("olc-deep-recover", Date.now().toString());
-
-      window.location.replace(url.toString());
-    } catch (error) {
-      console.error("[OLC] Deep recovery failed:", error);
-
-      const fallbackUrl = new URL(window.location.href);
-      fallbackUrl.searchParams.set(
-        "olc-deep-recover",
-        Date.now().toString()
-      );
-
-      window.location.replace(fallbackUrl.toString());
-    }
-  }
-
-  button.addEventListener("click", deepRecover);
-
-  /*
-   * Remove the temporary recovery parameter after a successful load.
-   */
-  try {
-    const currentUrl = new URL(window.location.href);
-
-    if (currentUrl.searchParams.has("olc-deep-recover")) {
-      currentUrl.searchParams.delete("olc-deep-recover");
-
-      window.history.replaceState(
-        window.history.state,
-        document.title,
-        currentUrl.pathname +
-          currentUrl.search +
-          currentUrl.hash
-      );
-    }
-  } catch (error) {
-    console.warn("[OLC] Recovery URL cleanup failed:", error);
-  }
-})();
-</script>
-
-<script src="/assets/olc-diagnostics.js?v=20260710-1" defer></script>
 
 </body>
 </html>
