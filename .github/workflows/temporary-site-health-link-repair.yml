@@ -1,16 +1,13 @@
 name: Temporary site health link repair
 
 on:
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize, reopened]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   repair:
-    if: github.head_ref == 'fix/broken-links-2026-08-03-v2'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repair branch
