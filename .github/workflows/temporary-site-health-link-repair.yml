@@ -1,15 +1,16 @@
 name: Temporary site health link repair
 
 on:
-  push:
+  pull_request:
     branches: [main]
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
 
 jobs:
   repair:
-    if: github.event.head_commit.message == 'Run temporary site health link repair'
+    if: github.head_ref == 'fix/broken-links-2026-08-03-v2'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repair branch
@@ -45,8 +46,6 @@ jobs:
                   continue
               seen.add(spec)
 
-              # This is not a real broken link. The health scanner parsed a JS string
-              # used to dynamically build event.relatedUrl as though it were literal HTML.
               if file_path == 'this-day-in-ocean-liner-history.html' and 'escapeHTML(event.relatedUrl)' in old_url:
                   skipped.append((file_path, old_url, 'scanner false positive: dynamic JS URL'))
                   continue
