@@ -32,12 +32,6 @@ jobs:
           with manifest.open('r', encoding='utf-8', newline='') as f:
               rows = list(csv.DictReader(f, delimiter='\t'))
 
-          def url_pattern(url):
-              # Site-health output may normalize a terminal slash even when the
-              # repository href omits it. Match only that final slash flexibly.
-              core = url[:-1] if url.endswith('/') else url
-              return re.escape(core) + r'/?'
-
           seen = set()
           for row in rows:
               file_path = row['repo_file'].strip()
@@ -60,14 +54,14 @@ jobs:
 
               text = path.read_text(encoding='utf-8')
               original = text
-              old_pat = url_pattern(old_url)
+              match_url = re.escape(old_url.rstrip('/')) + r'/?' if old_url.endswith('/') else re.escape(old_url)
 
               if action == 'replace':
                   if not new_url:
                       failures.append((file_path, old_url, 'replace action missing new_url'))
                       continue
                   pattern = re.compile(
-                      r'(?P<prefix>\bhref\s*=\s*)(?P<q>[\"\'])' + old_pat + r'(?P=q)',
+                      r'(?P<prefix>\bhref\s*=\s*)(?P<q>[\"\'])' + match_url + r'(?P=q)',
                       re.IGNORECASE,
                   )
                   text, count = pattern.subn(
@@ -81,7 +75,7 @@ jobs:
 
               elif action == 'remove_link':
                   pattern = re.compile(
-                      r'<a\b(?=[^>]*\bhref\s*=\s*(?P<q>[\"\'])' + old_pat + r'(?P=q))[^>]*>(?P<body>.*?)</a\s*>',
+                      r'<a\b(?=[^>]*\bhref\s*=\s*(?P<q>[\"\'])' + match_url + r'(?P=q))[^>]*>(?P<body>.*?)</a\s*>',
                       re.IGNORECASE | re.DOTALL,
                   )
                   text, count = pattern.subn(lambda m: m.group('body'), text)
@@ -117,13 +111,12 @@ jobs:
           import re
           from pathlib import Path
 
+          manifest = Path('.maintenance/oceanliners-link-repair-manifest-2026-08-03.csv')
           failures = []
-          with Path('.maintenance/oceanliners-link-repair-manifest-2026-08-03.csv').open('r', encoding='utf-8', newline='') as f:
-              rows = list(csv.DictReader(f, delimiter='\t'))
+          changed_files = set()
 
-          def url_pattern(url):
-              core = url[:-1] if url.endswith('/') else url
-              return re.escape(core) + r'/?'
+          with manifest.open('r', encoding='utf-8', newline='') as f:
+              rows = list(csv.DictReader(f, delimiter='\t'))
 
           for row in rows:
               file_path = row['repo_file'].strip()
@@ -133,18 +126,25 @@ jobs:
               path = Path(file_path)
               if not path.is_file():
                   continue
+              changed_files.add(path)
               text = path.read_text(encoding='utf-8')
-              pattern = re.compile(
-                  r'\bhref\s*=\s*([\"\'])' + url_pattern(old_url) + r'\1',
-                  re.IGNORECASE,
-              )
-              if pattern.search(text):
+              match_url = re.escape(old_url.rstrip('/')) + r'/?' if old_url.endswith('/') else re.escape(old_url)
+              href_pattern = re.compile(r'\bhref\s*=\s*([\"\'])' + match_url + r'\1', re.IGNORECASE)
+              if href_pattern.search(text):
                   failures.append((file_path, old_url))
 
           if failures:
               for item in failures:
                   print('OLD URL HREF REMAINS', *item, sep='\t')
               raise SystemExit(f'{len(failures)} targeted old URL hrefs remain')
+
+          # Normalize trailing spaces/tabs only in files touched by this repair manifest.
+          for path in changed_files:
+              text = path.read_text(encoding='utf-8')
+              cleaned = '\n'.join(line.rstrip(' \t') for line in text.split('\n'))
+              if cleaned != text:
+                  path.write_text(cleaned, encoding='utf-8')
+
           print('Verification passed: all targeted real dead URL hrefs are absent.')
           PY
 
