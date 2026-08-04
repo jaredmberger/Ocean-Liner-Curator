@@ -17,21 +17,27 @@ jobs:
         with:
           ref: fix/ss-columbia-duplicate-document
           fetch-depth: 0
-      - name: Repair concatenated HTML document
+      - name: Preserve related-liners include
         shell: python
         run: |
           from pathlib import Path
           path = Path('ships/ss-columbia.html')
           text = path.read_text(encoding='utf-8')
-          marker = '<script src="/assets/nav.js"<!DOCTYPE html>'
-          if marker not in text:
-              raise SystemExit('Expected corruption marker not found; refusing to modify file.')
-          fixed = text.split(marker, 1)[0] + '<script src="/assets/nav.js" defer></script>\n</body>\n</html>\n'
-          path.write_text(fixed, encoding='utf-8')
-      - name: Commit repaired page
+          nav = '  <script src="/assets/nav.js" defer></script>\n'
+          related = '  <script src="/assets/related-liners.js" defer></script>\n'
+          if related not in text:
+              if nav not in text:
+                  raise SystemExit('Expected nav.js include not found; refusing to modify file.')
+              text = text.replace(nav, nav + related, 1)
+              path.write_text(text, encoding='utf-8')
+      - name: Commit preservation fix if needed
         run: |
+          if git diff --quiet -- ships/ss-columbia.html; then
+            echo "No additional change needed."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add ships/ss-columbia.html
-          git commit -m "Repair duplicated SS Columbia document"
+          git commit -m "Preserve related liners on SS Columbia"
           git push origin HEAD:fix/ss-columbia-duplicate-document
