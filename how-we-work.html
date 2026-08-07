@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html { background:#0a1110; }
+    body { background:#0a1110; }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How We Work — Research & Editorial Method | Ocean Liner Curator</title>
+  <meta name="description" content="How Ocean Liner Curator researches, evaluates, writes, reviews, revises, and preserves historical material using evidence-first editorial standards." />
+
+  <link rel="canonical" href="https://oceanliners.net/how-we-work/" />
+  <meta name="theme-color" content="#0a1110" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:site_name" content="Ocean Liner Curator" />
+  <meta property="og:title" content="How We Work — Research & Editorial Method | Ocean Liner Curator" />
+  <meta property="og:description" content="A plain-language guide to the research, source evaluation, editorial review, revision, and preservation practices behind Ocean Liner Curator." />
+  <meta property="og:url" content="https://oceanliners.net/how-we-work/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://oceanliners.net/about-hero.PNG" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How We Work — Research & Editorial Method | Ocean Liner Curator" />
+  <meta name="twitter:description" content="A plain-language guide to the research, source evaluation, editorial review, revision, and preservation practices behind Ocean Liner Curator." />
+  <meta name="twitter:image" content="https://oceanliners.net/about-hero.PNG" />
+
+  <link rel="preload" as="image" href="/about-hero.PNG" fetchpriority="high">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a1110">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://oceanliners.net/#website",
+        "name": "Ocean Liner Curator",
+        "url": "https://oceanliners.net/",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://oceanliners.net/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://oceanliners.net/#organization",
+        "name": "Ocean Liner Curator LLC",
+        "legalName": "Ocean Liner Curator LLC",
+        "url": "https://oceanliners.net/about-ocean-liner-curator-llc/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://oceanliners.net/logo.png"
+        },
+        "description": "The legal, publishing, and administrative steward of Ocean Liner Curator, an independent maritime research and reference institution."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://oceanliners.net/how-we-work/#webpage",
+        "name": "How We Work",
+        "url": "https://oceanliners.net/how-we-work/",
+        "isPartOf": { "@id": "https://oceanliners.net/#website" },
+        "publisher": { "@id": "https://oceanliners.net/#organization" },
+        "description": "How Ocean Liner Curator researches, evaluates, writes, reviews, revises, and preserves historical material using evidence-first editorial standards.",
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/nav.css">
+
+  <style>
+    *, *::before, *::after { box-sizing:border-box; }
+
+    :root{
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+      --prose-measure:72ch;
+    }
+
+    html{ text-rendering:optimizeLegibility; background:var(--bg); scroll-behavior:smooth; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:17px;
+      line-height:1.6;
+      letter-spacing:-0.01em;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding:0 0 2rem;
+    }
+
+    .accent-word{ color:var(--accent); }
+
+    h1,h2,h3{ letter-spacing:-0.02em; }
+
+    /* =========================
+       HERO
+       ========================= */
+    .hero{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      border-radius:16px;
+      border:1px solid rgba(191,164,106,0.22);
+      overflow:hidden;
+      min-height:52vh;
+      max-height:640px;
+      display:flex;
+      align-items:flex-end;
+      position:relative;
+      background:
+        linear-gradient(to bottom,
+          rgba(10,17,16,0.72) 0%,
+          rgba(10,17,16,0.08) 45%,
+          rgba(10,17,16,0.78) 100%),
+        url("/how-we-work-hero.JPG") center/cover no-repeat;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.10), transparent 60%),
+        radial-gradient(1200px 700px at 50% 110%, rgba(0,0,0,0.58), transparent 60%);
+      opacity:0.58;
+    }
+
+    .hero-inner{
+      width:100%;
+      margin:0;
+      padding:3.2rem 2.2rem 2.1rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      margin:0 0 0.75rem;
+      padding:0.28rem 0.68rem 0.32rem;
+      border:1px solid rgba(191,164,106,0.55);
+      border-radius:999px;
+      color:rgba(209,187,134,0.95);
+      background:rgba(10,17,16,0.36);
+      font-variant:small-caps;
+      letter-spacing:0.13em;
+      font-size:0.74rem;
+      line-height:1;
+    }
+
+    .hero h1{
+      margin:0 0 0.55rem;
+      font-family:"Libre Baskerville", serif;
+      font-variant:small-caps;
+      letter-spacing:0.09em;
+      font-weight:400;
+      font-size:clamp(2rem, 5vw, 3.25rem);
+      line-height:1.08;
+      text-shadow:0 18px 45px rgba(0,0,0,0.55);
+    }
+
+    .hero p{
+      margin:0;
+      max-width:68ch;
+      color:rgba(230,223,207,0.92);
+      font-size:1.03rem;
+      line-height:1.65;
+      text-shadow:0 18px 45px rgba(0,0,0,0.50);
+    }
+
+    @media (max-width:600px){
+      .hero{
+        min-height:46vh;
+        border-radius:14px;
+        background-position:center;
+      }
+      .hero-inner{ padding:2.6rem 1.15rem 1.65rem; }
+    }
+
+    @media (min-width:1300px){
+      .hero{ width:min(1080px, calc(100% - 3rem)); }
+    }
+
+    /* =========================
+       CARD
+       ========================= */
+    .container{
+      width:min(780px, calc(100% - 1.5rem));
+      margin:0.75rem auto 0;
+      background-color:var(--panel);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:clamp(1.55rem, 3vh, 2.15rem) 2.75rem 1.5rem;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+      isolation:isolate;
+      -webkit-mask-image:-webkit-radial-gradient(white, black);
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      pointer-events:none;
+      z-index:0;
+      background:
+        url("/tile2.png") repeat,
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+        radial-gradient(circle at center,
+          rgba(191,164,106,0.095) 0%,
+          rgba(191,164,106,0.075) 20%,
+          rgba(191,164,106,0.045) 26%,
+          transparent 34%),
+        linear-gradient(45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%),
+        linear-gradient(-45deg,
+          transparent 47.5%,
+          rgba(191,164,106,0.065) 49%,
+          rgba(191,164,106,0.065) 51%,
+          transparent 52.5%);
+      background-size:360px 360px, auto, auto, auto, auto, auto, auto;
+      background-position:center;
+      opacity:0.025;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    @media (max-width:520px){
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:0.7rem auto 0;
+        padding:1.65rem 1.15rem;
+        border-radius:12px;
+      }
+    }
+
+    @media (min-width:1300px){
+      .container{ width:min(1080px, calc(100% - 3rem)); }
+    }
+
+    .prose{
+      max-width:var(--prose-measure);
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .prose :is(section, h2, h3, p, ul, ol, footer, .cta){
+      max-width:none;
+      margin-left:0;
+      margin-right:0;
+    }
+
+    h2{
+      position:relative;
+      margin:2.35rem 0 0.85rem;
+      font-size:1.25rem;
+      letter-spacing:0.3px;
+      color:var(--text);
+    }
+
+    h2:first-child{ margin-top:0; }
+
+    h2::after{
+      content:"";
+      display:block;
+      width:72px;
+      height:1px;
+      margin-top:0.45rem;
+      background:linear-gradient(90deg, var(--accent), rgba(191,164,106,0.35), transparent);
+    }
+
+    h3{
+      margin:0.95rem 0 0.35rem;
+      font-size:1.25rem;
+      letter-spacing:0.2px;
+      color:var(--text);
+    }
+
+    p{
+      margin:0 0 0.95rem;
+      line-height:1.72;
+      font-size:1.02rem;
+      color:rgba(230,223,207,0.92);
+    }
+
+    .muted{
+      color:var(--muted);
+      font-size:0.98rem;
+    }
+
+    ul{
+      margin:0.6rem 0 0.2rem;
+      padding-left:1.25rem;
+      line-height:1.7;
+      list-style-position:outside;
+    }
+
+    li{ margin:0.35rem 0; }
+
+    .card{
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:12px;
+      padding:1rem;
+      backdrop-filter:blur(4px) saturate(105%);
+      -webkit-backdrop-filter:blur(4px) saturate(105%);
+      background:rgba(0,0,0,0.10);
+      margin-top:0.75rem;
+    }
+
+    .card + .card{ margin-top:0.9rem; }
+
+    .define-card .define-grid{ display:block; }
+
+    @media (min-width:760px){
+      .define-card .define-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:1.1rem;
+        align-items:start;
+        margin-top:0.35rem;
+      }
+
+      .define-card .define-col{ padding-right:0.25rem; }
+
+      .define-card .define-col + .define-col{
+        padding-left:1.1rem;
+        border-left:1px solid rgba(191,164,106,0.18);
+      }
+    }
+
+    .link-grid{
+      display:grid;
+      gap:0.85rem;
+      margin-top:0.9rem;
+    }
+
+    @media (min-width:760px){
+      .link-grid{ grid-template-columns:1fr 1fr; }
+    }
+
+    .link-card{
+      display:block;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:12px;
+      background:rgba(191,164,106,0.045);
+      backdrop-filter:blur(2px) saturate(105%);
+      -webkit-backdrop-filter:blur(2px) saturate(105%);
+          box-shadow:0 10px 24px rgba(0,0,0,0.32) !important;
+      text-decoration:none;
+      transition:transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .link-card:hover{
+      transform:translateY(-1px);
+      background:rgba(191,164,106,0.075);
+      border-color:rgba(191,164,106,0.44);
+    }
+
+    .link-card strong{
+      display:block;
+      color:var(--link);
+      margin-bottom:0.25rem;
+    }
+
+    .link-card span{
+      display:block;
+      color:rgba(230,223,207,0.76);
+      font-size:0.95rem;
+      line-height:1.55;
+    }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:1px;
+    }
+
+    a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
+
+    a:focus-visible{
+      outline:2px solid rgba(191,164,106,0.75);
+      outline-offset:3px;
+    }
+
+    .link-card,
+    .button,
+    .standards-badge a{
+      border-bottom:1px solid rgba(191,164,106,0.35);
+    }
+
+    .standards-badge{
+      margin:2.1rem 0 0;
+      text-align:left;
+    }
+
+    .standards-badge a{
+      display:inline-block;
+      padding:0.3rem 0.7rem;
+      font-size:0.9rem;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:var(--link);
+      border:1px solid rgba(191,164,106,0.45);
+      border-radius:999px;
+      text-decoration:none;
+      background:rgba(191,164,106,0.05);
+    }
+
+    .standards-badge a:hover{ background:rgba(191,164,106,0.12); }
+
+    .cta{ margin-top:2.2rem; text-align:center; }
+
+    .actions{
+      display:flex;
+      justify-content:center;
+      gap:0.75rem;
+      flex-wrap:wrap;
+      margin-top:0.6rem;
+    }
+
+    .button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0.9rem 1.35rem;
+      font-size:0.98rem;
+      letter-spacing:0.35px;
+      text-decoration:none;
+      min-height:44px;
+      line-height:1;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d1bb86 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:10px;
+      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+      box-shadow:0 10px 26px rgba(191,164,106,0.22);
+    }
+
+    .button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(191,164,106,0.32);
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+
+    .button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+      transform:translateY(-1px);
+    }
+
+    @media (max-width:520px){
+      .actions{ flex-direction:column; }
+      .button{ width:100%; text-align:center; white-space:normal; }
+    }
+
+    .flags-footer{
+      display:block;
+      width:108px;
+      height:auto;
+      margin:1.1rem auto 0;
+      opacity:0.42;
+      filter:saturate(0.85) contrast(0.95) brightness(0.95);
+      pointer-events:none;
+    }
+
+    footer{
+      margin-top:2rem;
+      padding-top:1.25rem;
+      border-top:1px solid rgba(191,164,106,0.18);
+      color:rgba(230,223,207,0.70);
+      font-size:0.82rem;
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .copyright{
+      font-size:0.72rem;
+      opacity:0.55;
+      margin-top:1.2rem;
+      max-width:none;
+      text-align:center;
+    }
+
+    .established-footer{
+      margin-top:1rem;
+      margin-bottom:0.5rem;
+      font-size:0.75rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:rgba(191,164,106,0.55);
+    }
+
+    .footer-star{
+      margin:0.4rem 0 0;
+      color:rgba(191,164,106,0.55);
+      font-size:1rem;
+      line-height:1;
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      html{ scroll-behavior:auto; }
+      .button,
+      .link-card{ transition:none; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <section class="hero" aria-label="How Ocean Liner Curator works">
+    <div class="hero-inner">
+      <span class="eyebrow">Research &amp; editorial method</span>
+      <h1>How We Work</h1>
+      <p>
+        A plain-language account of how Ocean Liner Curator researches, evaluates, writes, reviews, revises, and preserves historical material.
+      </p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="prose">
+
+      <section>
+        <h2>Our approach</h2>
+        <p>
+          Ocean Liner Curator is built as an evidence-first historical reference. The goal is not to make every subject sound certain,
+          complete, or dramatic. The goal is to make the strongest account the available evidence can responsibly support.
+        </p>
+        <p>
+          Research begins with a question, a ship, an object, a claim, or a historical relationship. From there, information is gathered,
+          compared, placed in context, and reviewed before it becomes part of the public reference work.
+        </p>
+        <p class="muted">
+          The process is deliberately revisable. A published page is not treated as permanently finished simply because it is online.
+        </p>
+      </section>
+
+      <section>
+        <h2>The working principles</h2>
+
+        <div class="card">
+          <h3>Evidence before repetition</h3>
+          <p>
+            A claim does not become reliable merely because it appears on many websites or has been repeated for decades.
+            Where possible, commonly repeated statements are traced back to contemporary records, company material, archival sources,
+            photographs, period publications, or reputable historical scholarship.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Context before certainty</h3>
+          <p>
+            Historical evidence can be incomplete, contradictory, imprecise, or shaped by the assumptions of its own period.
+            When the record does not justify certainty, Ocean Liner Curator says so rather than filling the gap with speculation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Clarity without sensationalism</h3>
+          <p>
+            Ocean liner history contains disasters, rivalries, remarkable engineering, social inequality, wartime service, commercial ambition,
+            and extraordinary human stories. Those subjects do not need exaggeration to be interesting. The editorial preference is for
+            proportion, context, and clear explanation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Revision is part of the work</h3>
+          <p>
+            New evidence, better sources, corrected dates, improved attribution, and stronger interpretations can change a page.
+            Corrections are not regarded as failures of the reference work; they are part of maintaining one responsibly.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>From question to publication</h2>
+        <p>
+          Not every page follows an identical path, but the research and editorial process generally moves through the same stages.
+        </p>
+
+        <div class="card">
+          <h3>1. Define the question</h3>
+          <p>
+            The first step is identifying what the page or record is actually trying to establish. A useful research question is narrower
+            than “tell the story” and specific enough to distinguish known facts from assumptions, interpretation, and unresolved points.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>2. Gather sources</h3>
+          <p>
+            Sources may include contemporary newspapers, shipping-company publications, passenger material, photographs, plans, menus,
+            brochures, archival documents, museum records, scholarly works, recognized maritime histories, and other relevant evidence.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>3. Compare and cross-check</h3>
+          <p>
+            Important facts are compared across sources where possible. Differences are examined rather than automatically harmonized.
+            A later source may correct an earlier one, but a newer publication is not assumed to be more accurate simply because it is newer.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>4. Separate evidence from interpretation</h3>
+          <p>
+            Documentary facts, reasonable inference, historical interpretation, and unresolved questions are not treated as interchangeable.
+            The wording of a page should reflect the strength of the underlying evidence.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>5. Draft for the reader</h3>
+          <p>
+            Research is translated into clear public-facing prose without stripping away the qualifications that matter.
+            The objective is accessibility without false simplicity.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>6. Review before publication</h3>
+          <p>
+            Public-facing material is reviewed by a human curator for factual consistency, source alignment, clarity, internal coherence,
+            and conformity with Ocean Liner Curator’s editorial standards.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>7. Revisit when necessary</h3>
+          <p>
+            Publication is not the end of the research process. Pages may be corrected, expanded, reorganized, or reinterpreted when stronger
+            evidence becomes available or when existing material can be made clearer.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>How sources are weighed</h2>
+        <p>
+          Source type matters, but no category of source is automatically infallible. A contemporary company brochure can be authoritative
+          about one fact and promotional about another. A newspaper may preserve invaluable eyewitness reporting while also repeating an early error.
+          A respected secondary work may synthesize decades of research yet still depend on an incorrect earlier source.
+        </p>
+
+        <div class="card define-card">
+          <div class="define-grid">
+            <div class="define-col">
+              <p><strong><span class="accent-word">We look for:</span></strong></p>
+              <ul>
+                <li>Proximity to the event, object, or subject</li>
+                <li>Identifiable authorship or institutional origin</li>
+                <li>Specific supporting evidence</li>
+                <li>Consistency with independent sources</li>
+                <li>Clear provenance and context</li>
+                <li>Evidence that can be checked by others</li>
+              </ul>
+            </div>
+
+            <div class="define-col">
+              <p><strong><span class="accent-word">We are cautious about:</span></strong></p>
+              <ul>
+                <li>Claims repeated without an identifiable source</li>
+                <li>Marketing language presented as neutral description</li>
+                <li>Retrospective stories that cannot be independently supported</li>
+                <li>Exact claims derived from ambiguous photographs or objects</li>
+                <li>Confident language where the surviving record is incomplete</li>
+                <li>Apparent consensus created by sources copying one another</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted">
+          More detail is available in <a href="/sources">Sources &amp; Standards</a> and the
+          <a href="/definitive-guide/">Definitive Guide to Research Standards</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>When the answer is uncertain</h2>
+        <p>
+          Historical research often produces degrees of confidence rather than a binary choice between “known” and “unknown.”
+          Ocean Liner Curator uses wording such as <em>documented</em>, <em>reported</em>, <em>attributed</em>, <em>likely</em>,
+          <em>possibly</em>, <em>disputed</em>, or <em>unknown</em> when those distinctions matter.
+        </p>
+        <p>
+          An unresolved question is preferable to a neat answer unsupported by evidence. Where reasonable interpretations differ,
+          the disagreement may itself be part of the historical record worth preserving.
+        </p>
+      </section>
+
+      <section>
+        <h2>Objects, photographs &amp; attribution</h2>
+        <p>
+          Material culture requires a different kind of caution. A physical object may be authentic to a period without being demonstrably
+          connected to the ship claimed for it. A photograph may be correctly dated but incorrectly captioned. A fitting can resemble a known
+          shipboard design without documented provenance linking it to that vessel.
+        </p>
+        <p>
+          Attribution therefore depends on the total evidence: markings, construction, provenance, documentary history, comparison material,
+          period imagery, known ownership, and the quality of the chain connecting an object or image to a specific ship.
+        </p>
+        <p class="muted">
+          The aim is not to dismiss uncertain material, but to describe its evidentiary status accurately.
+        </p>
+      </section>
+
+      <section>
+        <h2>Digital tools &amp; AI</h2>
+        <p>
+          Ocean Liner Curator uses digital tools to help organize research, inspect large bodies of material, maintain internal consistency,
+          identify relationships between pages, assist with drafting, and support technical publishing work.
+        </p>
+        <p>
+          AI-assisted tools, including Ocean Liner GPT and general-purpose language models, are treated as tools rather than historical authorities.
+          They may help structure or test work, but their output does not establish a fact.
+        </p>
+        <div class="card">
+          <p><strong>For public-facing material:</strong></p>
+          <ul>
+            <li>AI-generated claims are not accepted merely because they are plausible</li>
+            <li>Historical assertions are checked against sources</li>
+            <li>Interpretation remains human-led</li>
+            <li>Published material receives human review</li>
+            <li>Responsibility for the final work rests with Ocean Liner Curator, not the tool used to assist with it</li>
+          </ul>
+        </div>
+        <p class="muted">
+          See the <a href="/ai-interpretation-policy">AI Interpretation Policy</a> and
+          <a href="/ocean-liner-gpt">Ocean Liner GPT &amp; AI Methodology</a> for the fuller policy.
+        </p>
+      </section>
+
+      <section>
+        <h2>Corrections, changes &amp; revision</h2>
+        <p>
+          Ocean Liner Curator is a maintained reference rather than a frozen publication. Errors can be corrected, descriptions clarified,
+          sources strengthened, and interpretations revised.
+        </p>
+        <p>
+          Source-backed corrections and contextual additions are welcome. When a reader identifies a possible problem, the preferred response
+          is to examine the evidence rather than defend existing wording simply because it has already been published.
+        </p>
+        <p>
+          Readers can use the feedback mechanism available on individual pages or the <a href="/contact">contact page</a>.
+          Supporting sources are especially helpful.
+        </p>
+      </section>
+
+      <section>
+        <h2>Preservation &amp; continuity</h2>
+        <p>
+          The work is not limited to publishing individual pages. Ocean Liner Curator also develops structured records, internal research systems,
+          archival references, digital tools, and reusable datasets intended to make the accumulated knowledge easier to maintain and preserve.
+        </p>
+        <p>
+          That work supports a larger goal: historical information should remain understandable, traceable, and usable beyond the moment in which
+          it was first collected.
+        </p>
+      </section>
+
+      <section>
+        <h2>Institutional responsibility</h2>
+        <p>
+          <strong>Ocean Liner Curator</strong> is the public-facing research and reference institution responsible for the historical work,
+          editorial standards, collections context, and educational material presented through the site.
+        </p>
+        <p>
+          <strong>Ocean Liner Curator LLC</strong> is its legal, publishing, and administrative steward. The LLC supports the institution’s
+          continuity, digital infrastructure, intellectual property, formal agreements, software development, and preservation work.
+        </p>
+        <p class="muted">
+          The organizational structure supports the research mission; it does not replace it.
+        </p>
+      </section>
+
+      <section>
+        <h2>What evidence-first means here</h2>
+        <div class="card">
+          <p>
+            Evidence-first does not mean that every historical question has a definitive answer. It means the strength of the conclusion should
+            never exceed the strength of the evidence supporting it.
+          </p>
+          <p>
+            When something is known, say what is known. When it is probable, explain why. When sources disagree, preserve the disagreement.
+            When the answer is unknown, leave room for the unknown.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Related standards &amp; policies</h2>
+        <div class="link-grid" aria-label="Related Ocean Liner Curator standards and policies">
+          <a class="link-card" href="/sources">
+            <strong>Sources &amp; Standards</strong>
+            <span>Source types, reference practice, and standards used throughout the project.</span>
+          </a>
+          <a class="link-card" href="/definitive-guide/">
+            <strong>Definitive Guide</strong>
+            <span>The fuller reference handbook for research, attribution, authenticity, and uncertainty.</span>
+          </a>
+          <a class="link-card" href="/provenance">
+            <strong>Provenance</strong>
+            <span>How documentary history and evidentiary chains are treated when evaluating material culture.</span>
+          </a>
+          <a class="link-card" href="/ai-interpretation-policy">
+            <strong>AI Interpretation Policy</strong>
+            <span>The role, limits, and review requirements for AI-assisted work.</span>
+          </a>
+          <a class="link-card" href="/about/">
+            <strong>About Ocean Liner Curator</strong>
+            <span>The institution, its scope, public mission, and relationship to Ocean Liner Curator LLC.</span>
+          </a>
+          <a class="link-card" href="/contact">
+            <strong>Corrections &amp; Contact</strong>
+            <span>Submit source-backed corrections, additional context, or research questions.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="cta" aria-label="Primary actions">
+        <div class="actions">
+          <a class="button secondary" href="/explore/">Explore the Project</a>
+          <a class="button secondary" href="/sources">Sources &amp; Standards</a>
+          <a class="button secondary" href="/about/">About</a>
+        </div>
+
+        <img class="flags-footer" src="/logo-transparent.png" alt="" aria-hidden="true" />
+
+        <footer>
+          <p>
+            <strong>Ocean Liner Curator is an independent maritime research and reference institution published and stewarded by Ocean Liner Curator LLC.</strong>
+          </p>
+          <p>
+            This page describes the project’s working method in plain language. Individual research questions may require different kinds
+            of evidence, and no methodology can eliminate every historical uncertainty. The standard is to make those limits visible rather
+            than conceal them.
+          </p>
+
+          <p class="copyright">
+            © <span id="year"></span> Ocean Liner Curator LLC.
+          </p>
+          <p class="established-footer">Established 2025</p>
+          <p class="footer-star" aria-hidden="true">★</p>
+        </footer>
+      </section>
+
+    </div>
+  </main>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/header.js" defer></script>
+  <script src="/assets/nav.js" defer></script>
+
+  <!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>
