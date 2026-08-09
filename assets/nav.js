@@ -7,12 +7,37 @@
   - Retain a MutationObserver as a fallback.
   - Prevent duplicate event listeners when navigation is reinitialized.
   - Allow manual repair and diagnostics from the browser console.
+  - Load the CuratorOS Error Bus browser reporter site-wide.
 */
 
 (function () {
   "use strict";
 
   window.OLC = window.OLC || {};
+
+  /*
+   * Public-site failsafe reporting.
+   *
+   * This single shared loader means pages using nav.js automatically gain
+   * client-side exception, promise, resource, and fetch failure reporting.
+   * It is intentionally independent of the navigation initialization below.
+   */
+  if (!window.OLC.__errorBusReporterRequested) {
+    window.OLC.__errorBusReporterRequested = true;
+
+    try {
+      const reporter = document.createElement("script");
+      reporter.src = "https://errors.oceanliners.net/client-reporter.js?v=20260809-public-1";
+      reporter.async = true;
+      reporter.dataset.curatorErrorReporter = "public-site";
+      reporter.onerror = function () {
+        console.warn("[OceanLiners.net] Error Bus browser reporter could not be loaded.");
+      };
+      document.head.appendChild(reporter);
+    } catch (error) {
+      console.warn("[OceanLiners.net] Error Bus reporter loader failed:", error);
+    }
+  }
 
   let observer = null;
   let outsideClickBound = false;
@@ -360,7 +385,10 @@
             .olcNavReady === "true",
 
         observerActive:
-          Boolean(observer)
+          Boolean(observer),
+
+        errorBusReporterRequested:
+          Boolean(window.OLC.__errorBusReporterRequested)
       };
 
       console.table(status);
