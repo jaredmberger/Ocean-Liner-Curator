@@ -777,20 +777,31 @@ Please expand on this topic while maintaining evidence-first standards.
 Clearly distinguish between documented fact, scholarly consensus, and interpretation.`;
 
       navigator.clipboard.writeText(prompt).then(() => {
-        document.getElementById("gpt-modal").classList.add("show");
+        const modal = document.getElementById("gpt-modal");
+        if (modal) modal.classList.add("show");
       });
     }
 
-    document.getElementById("gpt-continue").addEventListener("click", function() {
-      window.open(
-        "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt",
-        "_blank"
-      );
-      document.getElementById("gpt-modal").classList.remove("show");
-    });
+    window.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("gpt-modal");
+      const continueButton = document.getElementById("gpt-continue");
+      const cancelButton = document.getElementById("gpt-cancel");
 
-    document.getElementById("gpt-cancel").addEventListener("click", function() {
-      document.getElementById("gpt-modal").classList.remove("show");
+      if (continueButton && modal) {
+        continueButton.addEventListener("click", function() {
+          window.open(
+            "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt",
+            "_blank"
+          );
+          modal.classList.remove("show");
+        });
+      }
+
+      if (cancelButton && modal) {
+        cancelButton.addEventListener("click", function() {
+          modal.classList.remove("show");
+        });
+      }
     });
   </script>
 
