@@ -193,9 +193,84 @@
     return status;
   };
 
+  /*
+   * Homepage CuratorOS status lamp.
+   *
+   * This is intentionally binary and independent of Site Health or tool
+   * warnings. Green means CuratorOS itself answered its health endpoint.
+   * Red is used only when CuratorOS cannot be reached or fails the heartbeat.
+   */
+  function installCuratorOSStatusLamp() {
+    if (window.location.pathname !== "/") return;
+    if (document.getElementById("curatoros-status")) return;
+
+    const style = document.createElement("style");
+    style.id = "curatoros-status-style";
+    style.textContent = [
+      ".curatoros-status{display:flex;align-items:center;justify-content:center;gap:.42rem;width:max-content;margin:1.15rem auto 0;color:rgba(182,174,156,.50);font-size:.64rem;line-height:1;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:color 160ms ease,opacity 160ms ease}",
+      ".curatoros-status:hover{color:rgba(209,187,134,.76)}",
+      ".curatoros-status:focus-visible{outline:1px solid rgba(191,164,106,.58);outline-offset:4px;border-radius:3px}",
+      ".curatoros-status__light{width:6px;height:6px;border-radius:50%;background:#63c174;box-shadow:0 0 6px rgba(99,193,116,.60);flex:0 0 auto;transition:background 160ms ease,box-shadow 160ms ease}",
+      ".curatoros-status.is-offline .curatoros-status__light{background:#b95353;box-shadow:0 0 6px rgba(185,83,83,.58)}",
+      ".curatoros-status.is-offline{color:rgba(182,174,156,.44)}",
+      "@media (prefers-reduced-motion:reduce){.curatoros-status,.curatoros-status__light{transition:none}}"
+    ].join("");
+    document.head.appendChild(style);
+
+    const lamp = document.createElement("a");
+    lamp.id = "curatoros-status";
+    lamp.className = "curatoros-status";
+    lamp.href = "https://curator.oceanliners.net/";
+    lamp.target = "_blank";
+    lamp.rel = "noopener";
+    lamp.setAttribute("aria-label", "CuratorOS status: online");
+    lamp.innerHTML = '<span class="curatoros-status__light" aria-hidden="true"></span><span class="curatoros-status__text">CuratorOS Online</span>';
+
+    const endCap = document.querySelector(".hero.end-cap");
+    if (endCap) {
+      endCap.insertAdjacentElement("afterend", lamp);
+    } else {
+      document.body.appendChild(lamp);
+    }
+
+    const controller = typeof AbortController === "function" ? new AbortController() : null;
+    const timeout = window.setTimeout(function () {
+      if (controller) controller.abort();
+    }, 5000);
+
+    fetch("https://curator.oceanliners.net/health", {
+      method: "GET",
+      cache: "no-store",
+      credentials: "omit",
+      signal: controller ? controller.signal : undefined
+    })
+      .then(function (response) {
+        if (!response.ok) throw new Error("CuratorOS heartbeat HTTP " + response.status);
+        return response.json();
+      })
+      .then(function (data) {
+        if (!data || data.ok !== true) throw new Error("CuratorOS heartbeat invalid");
+        lamp.classList.remove("is-offline");
+        lamp.querySelector(".curatoros-status__text").textContent = "CuratorOS Online";
+        lamp.setAttribute("aria-label", "CuratorOS status: online");
+      })
+      .catch(function () {
+        lamp.classList.add("is-offline");
+        lamp.querySelector(".curatoros-status__text").textContent = "CuratorOS Offline";
+        lamp.setAttribute("aria-label", "CuratorOS status: offline");
+      })
+      .finally(function () {
+        window.clearTimeout(timeout);
+      });
+  }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initializeNavigation, { once: true });
+    document.addEventListener("DOMContentLoaded", function () {
+      initializeNavigation();
+      installCuratorOSStatusLamp();
+    }, { once: true });
   } else {
     initializeNavigation();
+    installCuratorOSStatusLamp();
   }
 })();
