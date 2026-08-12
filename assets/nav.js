@@ -224,7 +224,7 @@
     lamp.target = "_blank";
     lamp.rel = "noopener";
     lamp.setAttribute("aria-label", "CuratorOS status: online");
-    lamp.innerHTML = '<span class="curatoros-status__light" aria-hidden="true"></span><span class="curatoros-status__text">CuratorOS Online</span>';
+    lamp.innerHTML = '<span class="curatoros-status__light" aria-hidden="true"></span><span class="curatoros-status__text">Curator★OS Online</span>';
 
     const endCap = document.querySelector(".hero.end-cap");
     if (endCap) {
@@ -251,12 +251,12 @@
       .then(function (data) {
         if (!data || data.ok !== true) throw new Error("CuratorOS heartbeat invalid");
         lamp.classList.remove("is-offline");
-        lamp.querySelector(".curatoros-status__text").textContent = "CuratorOS Online";
+        lamp.querySelector(".curatoros-status__text").textContent = "Curator★OS Online";
         lamp.setAttribute("aria-label", "CuratorOS status: online");
       })
       .catch(function () {
         lamp.classList.add("is-offline");
-        lamp.querySelector(".curatoros-status__text").textContent = "CuratorOS Offline";
+        lamp.querySelector(".curatoros-status__text").textContent = "Curator★OS Offline";
         lamp.setAttribute("aria-label", "CuratorOS status: offline");
       })
       .finally(function () {
