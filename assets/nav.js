@@ -220,7 +220,7 @@
     const lamp = document.createElement("a");
     lamp.id = "curatoros-status";
     lamp.className = "curatoros-status";
-    lamp.href = "https://curator.oceanliners.net/";
+    lamp.href = "https://curatoros.app";
     lamp.target = "_blank";
     lamp.rel = "noopener";
     lamp.setAttribute("aria-label", "CuratorOS status: online");
