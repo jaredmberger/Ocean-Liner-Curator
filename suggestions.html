@@ -399,9 +399,20 @@
 
       <section class="card">
         <h2>Send a suggestion</h2>
-        <form action="https://formspree.io/f/xjgdyvgn" method="POST">
+        <form action="https://formspree.io/f/xjgdyvgn" method="POST" id="feedback-form">
           <input type="hidden" name="_subject" value="OceanLiners.net Suggestion or Correction" />
+          <input type="hidden" name="originating_page_url" id="originating-page-url" value="" />
+          <input type="hidden" name="originating_page_title" id="originating-page-title" value="" />
+          <input type="hidden" name="browser_referrer" id="browser-referrer" value="" />
+          <input type="hidden" name="feedback_form_url" id="feedback-form-url" value="" />
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;" aria-hidden="true" />
+
+          <div class="form-row" id="context-row" hidden>
+            <div style="border:1px solid rgba(191,164,106,.28);border-radius:14px;background:rgba(191,164,106,.07);padding:.8rem .9rem;">
+              <strong style="display:block;color:var(--brass-2);margin-bottom:.18rem;">Page context detected</strong>
+              <span class="hint" id="context-summary" style="display:block;margin:0;">This page will be included automatically with your submission.</span>
+            </div>
+          </div>
 
           <div class="form-row two">
             <div class="form-row">
@@ -465,5 +476,49 @@
     <p>© Ocean Liner Curator · Evidence-first maritime history</p>
   </div>
 </footer>
+
+<script>
+(function () {
+  const sameOriginUrl = (value) => {
+    if (!value) return null;
+    try {
+      const url = new URL(value, window.location.origin);
+      return url.origin === window.location.origin ? url : null;
+    } catch {
+      return null;
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const fromParam = params.get('from') || params.get('source') || params.get('page');
+  const explicitUrl = sameOriginUrl(fromParam);
+  const referrerUrl = sameOriginUrl(document.referrer);
+  const originUrl = explicitUrl || referrerUrl;
+
+  const relatedPageField = document.getElementById('page-url');
+  const originField = document.getElementById('originating-page-url');
+  const originTitleField = document.getElementById('originating-page-title');
+  const referrerField = document.getElementById('browser-referrer');
+  const formUrlField = document.getElementById('feedback-form-url');
+  const contextRow = document.getElementById('context-row');
+  const contextSummary = document.getElementById('context-summary');
+
+  if (referrerField) referrerField.value = document.referrer || '';
+  if (formUrlField) formUrlField.value = window.location.href;
+
+  if (originUrl) {
+    const normalized = originUrl.href;
+    if (originField) originField.value = normalized;
+    if (relatedPageField && !relatedPageField.value) relatedPageField.value = normalized;
+    if (originTitleField) originTitleField.value = params.get('title') || '';
+
+    if (contextRow && contextSummary) {
+      contextRow.hidden = false;
+      contextSummary.textContent = `This submission will automatically include: ${normalized}`;
+    }
+  }
+})();
+</script>
+
 </body>
 </html>
