@@ -1,0 +1,76 @@
+name: Build device archive
+
+on:
+  push:
+    branches:
+      - main
+      - device-archive-v2
+    paths:
+      - 'ships/ships.html'
+      - 'ships/**/*.html'
+      - 'ships/**/*.jpg'
+      - 'ships/**/*.jpeg'
+      - 'ships/**/*.png'
+      - 'ships/**/*.webp'
+      - 'ships/**/*.JPG'
+      - 'ships/**/*.JPEG'
+      - 'ships/**/*.PNG'
+      - 'ships/**/*.WEBP'
+      - 'scripts/build-device-archive.py'
+      - '.github/workflows/device-archive.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'ships/ships.html'
+      - 'ships/**/*.html'
+      - 'ships/**/*.jpg'
+      - 'ships/**/*.jpeg'
+      - 'ships/**/*.png'
+      - 'ships/**/*.webp'
+      - 'ships/**/*.JPG'
+      - 'ships/**/*.JPEG'
+      - 'ships/**/*.PNG'
+      - 'ships/**/*.WEBP'
+      - 'scripts/build-device-archive.py'
+      - '.github/workflows/device-archive.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate device feeds
+        run: python scripts/build-device-archive.py
+
+      - name: Verify generated output on pull requests
+        if: github.event_name == 'pull_request'
+        run: git diff --exit-code -- api/device
+
+      - name: Commit generated output
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          if git diff --quiet -- api/device; then
+            echo 'Device feeds are already current.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add api/device
+          git commit -m 'Regenerate device archive feed'
+          git push
