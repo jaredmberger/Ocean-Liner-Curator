@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 from datetime import date
 from html import unescape
 from html.parser import HTMLParser
@@ -50,6 +51,28 @@ def local_page_from_href(href: str) -> Path | None:
         if html_candidate.is_file():
             return html_candidate
     return None
+
+
+def tracked_ship_paths() -> set[str]:
+    """Return tracked ships/* paths without requiring image blobs to be checked out."""
+    try:
+        output = subprocess.check_output(
+            ["git", "-C", str(ROOT), "ls-files", "ships"],
+            text=True,
+        )
+        return {line.strip() for line in output.splitlines() if line.strip()}
+    except Exception:
+        ships_dir = ROOT / "ships"
+        if not ships_dir.is_dir():
+            return set()
+        return {
+            str(path.relative_to(ROOT)).replace("\\", "/")
+            for path in ships_dir.iterdir()
+            if path.is_file()
+        }
+
+
+TRACKED_SHIPS = tracked_ship_paths()
 
 
 class ArchiveParser(HTMLParser):
@@ -133,7 +156,6 @@ def extract_canonical(page_html: str, fallback_href: str) -> str:
 
 
 def extract_builder(page_html: str) -> str:
-    # Optional only: pages use several templates, so accept a few common fact-table forms.
     patterns = [
         r'Builder\s*</[^>]+>\s*<[^>]+>(.*?)</[^>]+>',
         r'Built\s+by\s*</[^>]+>\s*<[^>]+>(.*?)</[^>]+>',
@@ -149,24 +171,22 @@ def extract_builder(page_html: str) -> str:
     return ""
 
 
-def image_url_for(slug: str, page_html: str, page_path: Path | None) -> tuple[str, bool]:
-    ships_dir = ROOT / "ships"
-
-    # Prefer an image whose filename exactly matches the guide slug.
+def image_url_for(slug: str, page_html: str) -> tuple[str, bool]:
+    # Prefer a tracked image whose filename exactly matches the guide slug.
     for ext in IMAGE_EXTS:
-        candidate = ships_dir / f"{slug}{ext}"
-        if candidate.is_file():
-            return f"{SITE}/ships/{candidate.name}", True
+        rel = f"ships/{slug}{ext}"
+        if rel in TRACKED_SHIPS:
+            return f"{SITE}/{rel}", True
 
-    # Then accept slug-prefixed images, shortest filename first.
-    prefixed = []
-    if ships_dir.is_dir():
-        for candidate in ships_dir.glob(f"{slug}*"):
-            if candidate.is_file() and candidate.suffix in IMAGE_EXTS:
-                prefixed.append(candidate)
+    # Then accept slug-prefixed tracked images, shortest filename first.
+    prefix = f"ships/{slug}"
+    prefixed = [
+        rel for rel in TRACKED_SHIPS
+        if rel.startswith(prefix) and Path(rel).suffix in IMAGE_EXTS
+    ]
     if prefixed:
-        prefixed.sort(key=lambda p: (len(p.name), p.name.lower()))
-        return f"{SITE}/ships/{prefixed[0].name}", True
+        prefixed.sort(key=lambda p: (len(Path(p).name), Path(p).name.lower()))
+        return f"{SITE}/{prefixed[0]}", True
 
     # Finally inspect the ship page for a content image, excluding site chrome.
     candidates = []
@@ -183,7 +203,6 @@ def image_url_for(slug: str, page_html: str, page_path: Path | None) -> tuple[st
     if candidates:
         return candidates[0], True
 
-    # Keep the legacy field usable while explicitly marking that no ship image was found.
     return f"{SITE}/logo.png", False
 
 
@@ -192,7 +211,7 @@ def build_record(card: dict) -> dict:
     slug = slug_from_href(href)
     page_path = local_page_from_href(href)
     page_html = page_path.read_text(encoding="utf-8", errors="replace") if page_path else ""
-    image, has_image = image_url_for(slug, page_html, page_path)
+    image, has_image = image_url_for(slug, page_html)
     canonical = extract_canonical(page_html, href)
 
     return {
@@ -222,7 +241,6 @@ def main() -> None:
     parser.feed(ARCHIVE_HTML.read_text(encoding="utf-8", errors="replace"))
     records = [build_record(card) for card in parser.cards]
 
-    # De-duplicate conservatively by id, preserving archive order.
     unique = []
     seen = set()
     for record in records:
