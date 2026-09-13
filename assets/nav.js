@@ -274,3 +274,16 @@
     installCuratorOSStatusLamp();
   }
 })();
+
+/* Homepage-only archive search loader. */
+(function () {
+  "use strict";
+  if (window.location.pathname !== "/") return;
+  if (document.querySelector('script[data-olc-home-search]')) return;
+
+  const script = document.createElement("script");
+  script.src = "/assets/home-search.js?v=20260912";
+  script.defer = true;
+  script.dataset.olcHomeSearch = "true";
+  document.head.appendChild(script);
+})();
