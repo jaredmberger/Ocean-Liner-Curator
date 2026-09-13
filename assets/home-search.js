@@ -66,18 +66,40 @@
     }
     .home-archive-search__button:hover{border-color:rgba(191,164,106,.7);color:#fff}
     .home-archive-search__button:focus-visible,
-    .home-archive-search__input:focus-visible{
+    .home-archive-search__input:focus-visible,
+    .home-archive-search__close:focus-visible{
       outline:2px solid rgba(191,164,106,.58);
       outline-offset:2px;
     }
     .home-archive-search__state{
+      position:relative;
       margin:.8rem 0 0;
       padding:.75rem 0 0;
       border-top:1px solid rgba(191,164,106,.15);
       text-align:left;
     }
+    .home-archive-search__close{
+      position:absolute;
+      top:.48rem;
+      right:0;
+      width:1.75rem;
+      height:1.75rem;
+      padding:0;
+      border:1px solid rgba(191,164,106,.24);
+      border-radius:999px;
+      background:rgba(10,17,16,.42);
+      color:rgba(182,174,156,.82);
+      font:inherit;
+      font-size:1rem;
+      line-height:1;
+      cursor:pointer;
+    }
+    .home-archive-search__close:hover{
+      color:#fff;
+      border-color:rgba(191,164,106,.58);
+    }
     .home-archive-search__status{
-      margin:0 0 .55rem;
+      margin:0 2.15rem .55rem;
       color:rgba(182,174,156,.82);
       font-size:.78rem;
       letter-spacing:.035em;
@@ -152,9 +174,10 @@
       <button class="home-archive-search__button" type="submit">Search</button>
     </form>
     <div class="home-archive-search__state" id="home-archive-search-state" hidden>
+      <button class="home-archive-search__close" id="home-archive-search-close" type="button" aria-label="Close search results">×</button>
       <p class="home-archive-search__status" id="home-archive-search-status" aria-live="polite"></p>
       <ol class="home-archive-search__results" id="home-archive-search-results"></ol>
-      <a class="home-archive-search__all" href="/tools/search">View all search results »</a>
+      <a class="home-archive-search__all" id="home-archive-search-all" href="/tools/search">View all search results »</a>
     </div>
   `;
 
@@ -165,6 +188,8 @@
   const state = section.querySelector("#home-archive-search-state");
   const status = section.querySelector("#home-archive-search-status");
   const list = section.querySelector("#home-archive-search-results");
+  const closeButton = section.querySelector("#home-archive-search-close");
+  const allLink = section.querySelector("#home-archive-search-all");
   let generation = 0;
   let enginePromise;
   let searchArchivePromise;
@@ -191,21 +216,23 @@
     return searchArchivePromise;
   }
 
-  function clearResults() {
+  function hideResults(clearQuery) {
     generation += 1;
     list.replaceChildren();
     state.hidden = true;
     status.textContent = "";
+    if (clearQuery) input.value = "";
   }
 
   async function runSearch() {
     const term = input.value.trim();
     if (!term) {
-      clearResults();
+      hideResults(true);
       return;
     }
 
     const id = ++generation;
+    allLink.href = "/tools/search?q=" + encodeURIComponent(term);
     state.hidden = false;
     list.replaceChildren();
     status.textContent = "Searching the archive…";
@@ -268,14 +295,18 @@
     runSearch();
   });
 
+  closeButton.addEventListener("click", function () {
+    hideResults(false);
+    input.focus();
+  });
+
   input.addEventListener("input", function () {
-    if (!input.value) clearResults();
+    if (!input.value) hideResults(true);
   });
 
   input.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-      input.value = "";
-      clearResults();
+      hideResults(true);
       input.blur();
     }
   });
