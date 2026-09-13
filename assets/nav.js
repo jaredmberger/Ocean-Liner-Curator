@@ -287,3 +287,16 @@
   script.dataset.olcHomeSearch = "true";
   document.head.appendChild(script);
 })();
+
+/* Ship Archive-only jump-to-search loader. */
+(function () {
+  "use strict";
+  if (window.location.pathname !== "/ships/ships" && window.location.pathname !== "/ships/ships/") return;
+  if (document.querySelector('script[data-olc-archive-jump]')) return;
+
+  const script = document.createElement("script");
+  script.src = "/assets/archive-jump.js?v=20260913";
+  script.defer = true;
+  script.dataset.olcArchiveJump = "true";
+  document.head.appendChild(script);
+})();
