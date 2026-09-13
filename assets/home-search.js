@@ -32,10 +32,26 @@
       gap:.5rem;
       width:100%;
     }
-    .home-archive-search__input{
+    .home-archive-search__field{
+      position:relative;
       min-width:0;
       flex:1 1 auto;
-      padding:.82rem .95rem;
+    }
+    .home-archive-search__glyph{
+      position:absolute;
+      left:.9rem;
+      top:50%;
+      transform:translateY(-50%);
+      color:rgba(191,164,106,.78);
+      font-size:1.05rem;
+      line-height:1;
+      pointer-events:none;
+      z-index:1;
+    }
+    .home-archive-search__input{
+      width:100%;
+      min-width:0;
+      padding:.82rem .95rem .82rem 2.35rem;
       border:1px solid rgba(191,164,106,.32);
       border-radius:12px;
       background:rgba(10,17,16,.56);
@@ -154,7 +170,8 @@
     .home-archive-search__all:hover{border-bottom-color:rgba(191,164,106,.72)}
     @media(max-width:520px){
       .home-archive-search__form{gap:.42rem}
-      .home-archive-search__input{padding:.78rem .82rem;font-size:.9rem}
+      .home-archive-search__glyph{left:.78rem}
+      .home-archive-search__input{padding:.78rem .82rem .78rem 2.12rem;font-size:.9rem}
       .home-archive-search__button{padding:.75rem .85rem;font-size:.84rem}
     }
     @media(prefers-reduced-motion:reduce){
@@ -170,7 +187,10 @@
   section.innerHTML = `
     <label class="home-archive-search__label" for="home-archive-query">Search the archive</label>
     <form class="home-archive-search__form" id="home-archive-search-form" role="search">
-      <input class="home-archive-search__input" id="home-archive-query" type="search" autocomplete="off" spellcheck="false" placeholder="Ships, lines, people, places, topics…" aria-label="Search the archive">
+      <div class="home-archive-search__field">
+        <span class="home-archive-search__glyph" aria-hidden="true">⌕</span>
+        <input class="home-archive-search__input" id="home-archive-query" type="search" autocomplete="off" spellcheck="false" placeholder="Ships, lines, people, places, topics…" aria-label="Search the archive">
+      </div>
       <button class="home-archive-search__button" type="submit">Search</button>
     </form>
     <div class="home-archive-search__state" id="home-archive-search-state" hidden>
