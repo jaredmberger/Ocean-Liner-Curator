@@ -14,20 +14,45 @@
   style.id = "home-archive-search-style";
   style.textContent = `
     .home-archive-search{
-      width:min(700px,100%);
+      width:min(680px,100%);
       margin:1rem auto 1.5rem;
-      padding:1rem 1rem 1.05rem;
-      border:1px solid rgba(191,164,106,.24);
-      border-radius:18px;
-      background:
-        linear-gradient(180deg,rgba(255,255,255,.026),rgba(255,255,255,.01)),
-        rgba(10,17,16,.42);
-      box-shadow:
-        0 12px 28px rgba(0,0,0,.20),
-        inset 0 1px 0 rgba(255,255,255,.03);
+      padding:1.2rem 1.25rem 1.3rem;
       backdrop-filter:blur(2px);
       -webkit-backdrop-filter:blur(2px);
+      background:
+        radial-gradient(500px 260px at 50% 0%,rgba(191,164,106,.12),transparent 70%),
+        rgba(10,17,16,.34);
+      border:1px solid rgba(191,164,106,.22);
+      border-radius:16px;
+      box-shadow:0 10px 24px rgba(0,0,0,.32);
+      position:relative;
+      overflow:hidden;
       text-align:center;
+    }
+    .home-archive-search::before{
+      content:"";
+      position:absolute;
+      inset:6px;
+      border:1px solid rgba(191,164,106,.14);
+      border-radius:12px;
+      pointer-events:none;
+    }
+    .home-archive-search::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:linear-gradient(
+        120deg,
+        rgba(255,255,255,.045) 0%,
+        rgba(255,255,255,.015) 30%,
+        transparent 60%
+      );
+      opacity:.40;
+    }
+    .home-archive-search > *{
+      position:relative;
+      z-index:1;
     }
     .home-archive-search__label{
       display:block;
@@ -180,7 +205,7 @@
     }
     .home-archive-search__all:hover{border-bottom-color:rgba(191,164,106,.72)}
     @media(max-width:520px){
-      .home-archive-search{padding:.85rem .8rem .9rem;border-radius:16px}
+      .home-archive-search{padding:1rem .95rem 1.05rem}
       .home-archive-search__form{gap:.42rem}
       .home-archive-search__glyph{left:.78rem}
       .home-archive-search__input{padding:.78rem .82rem .78rem 2.12rem;font-size:.9rem}
