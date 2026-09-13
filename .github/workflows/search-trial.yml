@@ -1,0 +1,28 @@
+name: Build search trial
+on:
+  pull_request:
+    paths: ['**.html', 'tools/search/**', '.github/workflows/search-trial.yml']
+  push:
+    branches: [main]
+    paths: ['**.html', 'tools/search/**', '.github/workflows/search-trial.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: tools/search/package-lock.json
+      - run: npm ci --prefix tools/search
+      - run: npm run build --prefix tools/search
+      - run: npm test --prefix tools/search
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ocean-liner-search-trial
+          path: tools/search/dist/
+          retention-days: 7

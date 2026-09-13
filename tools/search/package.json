@@ -1,0 +1,11 @@
+{
+  "name": "ocean-liner-search-trial",
+  "private": true,
+  "type": "module",
+  "scripts": {"build": "node build.mjs", "test": "node check.mjs"},
+  "engines": {"node": ">=22.12"},
+  "dependencies": {
+    "cheerio": "1.2.0",
+    "pagefind": "1.5.2"
+  }
+}
