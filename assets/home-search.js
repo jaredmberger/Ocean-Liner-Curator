@@ -7,13 +7,15 @@
 
   const archiveNote = document.querySelector(".archive-note");
   if (!archiveNote || !archiveNote.parentNode) return;
+  const archiveCta = archiveNote.querySelector(".archive-cta-stack");
+  if (!archiveCta) return;
 
   const style = document.createElement("style");
   style.id = "home-archive-search-style";
   style.textContent = `
     .home-archive-search{
       width:min(680px,100%);
-      margin:.75rem auto 2.15rem;
+      margin:1rem auto 1.5rem;
       text-align:center;
     }
     .home-archive-search__label{
@@ -156,7 +158,7 @@
     </div>
   `;
 
-  archiveNote.parentNode.insertBefore(section, archiveNote);
+  archiveNote.insertBefore(section, archiveCta);
 
   const form = section.querySelector("#home-archive-search-form");
   const input = section.querySelector("#home-archive-query");
