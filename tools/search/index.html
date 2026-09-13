@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Search trial — Ocean Liner Curator</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./search.css">
+  <script src="./search.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <p class="masthead">★ &nbsp; Ocean Liner Curator</p>
+    <p class="trial">Search preview</p>
+    <h1>A way into the collection.</h1>
+    <p class="intro">Find a ship, explore a subject, or follow a question into the archive.</p>
+    <section class="archive-search" aria-label="Search the collection">
+      <form role="search" id="search-form">
+        <label for="query">Search ships and subjects</label>
+        <div class="input-row"><input id="query" name="q" type="search" maxlength="200" placeholder="Try Olympic, interiors, or immigration" autocomplete="off" aria-describedby="search-hint"><button type="submit">Search</button></div>
+        <p id="search-hint">Search published ship guides, articles, and reference pages.</p>
+      </form>
+      <div class="suggestions" aria-label="Example searches"><span>Explore:</span><button type="button" data-query="Olympic">Olympic</button><button type="button" data-query="Britannic">Britannic</button><button type="button" data-query="Art Deco">Art Deco</button><button type="button" data-query="immigration">Immigration</button></div>
+      <div id="search-state" hidden>
+        <div class="result-toolbar"><p id="status" role="status" aria-live="polite"></p><button type="button" id="close-results">Close results</button></div>
+        <ol id="results"></ol>
+        <button id="more" type="button" hidden>Show more results</button>
+      </div>
+      <noscript><p>Enable JavaScript to search, or <a href="https://oceanliners.net/ships/ships">browse the Ship Archive</a>.</p></noscript>
+    </section>
+    <p class="browse">Prefer to browse? <a href="https://oceanliners.net/ships/ships">Explore the Ship Archive →</a></p>
+  </main>
+</body>
+</html>
