@@ -13,7 +13,7 @@
   style.textContent = `
     .home-archive-search{
       width:min(680px,100%);
-      margin:1.6rem auto 1.35rem;
+      margin:.75rem auto 2.15rem;
       text-align:center;
     }
     .home-archive-search__label{
