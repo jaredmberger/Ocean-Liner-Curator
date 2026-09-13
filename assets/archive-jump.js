@@ -6,18 +6,21 @@
   if (document.getElementById("archive-search-jump")) return;
 
   const guide = document.getElementById("guide");
-  const featuredGrid = document.querySelector(".featured-grid");
-  if (!guide || !featuredGrid || !featuredGrid.parentNode) return;
+  const archiveScale = document.getElementById("archiveScale");
+  if (!guide || !archiveScale || !archiveScale.parentNode) return;
 
   const style = document.createElement("style");
   style.id = "archive-search-jump-style";
   style.textContent = `
+    .archive-search-jump-wrap{
+      text-align:center;
+      margin:.55rem auto 1.35rem;
+    }
     .archive-search-jump{
       display:inline-flex;
       align-items:center;
       justify-content:center;
       gap:.38rem;
-      margin:.15rem auto 1.35rem;
       padding:.42rem .82rem;
       border:1px solid rgba(191,164,106,.24);
       border-radius:999px;
@@ -45,7 +48,7 @@
   document.head.appendChild(style);
 
   const wrap = document.createElement("div");
-  wrap.style.textAlign = "center";
+  wrap.className = "archive-search-jump-wrap";
 
   const link = document.createElement("a");
   link.id = "archive-search-jump";
@@ -60,5 +63,5 @@
   });
 
   wrap.appendChild(link);
-  featuredGrid.parentNode.insertBefore(wrap, featuredGrid);
+  archiveScale.insertAdjacentElement("afterend", wrap);
 })();
