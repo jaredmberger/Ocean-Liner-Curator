@@ -67,3 +67,9 @@ document.querySelector('#close-results').addEventListener('click', closeResults)
 query.addEventListener('keydown', event => {if(event.key === 'Escape') closeResults();});
 query.addEventListener('input', () => {if (!query.value) closeResults();});
 more.addEventListener('click', () => {showBatch(generation).catch(() => {status.textContent = 'Could not load more results. Please try again.'; more.disabled = false;});});
+
+const initialQuery = new URLSearchParams(window.location.search).get('q');
+if (initialQuery && initialQuery.trim()) {
+  query.value = initialQuery.trim();
+  search();
+}
