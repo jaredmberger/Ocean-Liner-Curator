@@ -15,19 +15,33 @@ export function normalizeShipName(value) {
     .trim();
 }
 
+const INTENT_TITLE_ALIASES = new Map([
+  ['white star ships', 'White Star Line'],
+  ['white star line ships', 'White Star Line'],
+  ['what happened to ocean liners', 'Why Did Ocean Liners Disappear?'],
+  ['what happened to the ocean liners', 'Why Did Ocean Liners Disappear?'],
+  ['where did ocean liners go', 'Why Did Ocean Liners Disappear?']
+]);
+
+export function intentTitleFor(value) {
+  return INTENT_TITLE_ALIASES.get(normalizeSearchKey(value)) || '';
+}
+
 export async function searchArchive(pagefind, term) {
   if (!/[\p{L}\p{N}]/u.test(term)) return {results:[]};
   // Submitted one-word searches must match a word, not shrink to an unrelated prefix.
   const singleWord = /^\S+$/.test(term) && !term.includes('"');
-  const [regular, exactShip, exactTitle, strict] = await Promise.all([
+  const intentTitle = intentTitleFor(term);
+  const [regular, exactShip, exactTitle, intentMatch, strict] = await Promise.all([
     pagefind.search(term),
     pagefind.search(null, {filters:{ship:normalizeShipName(term)}}),
     pagefind.search(null, {filters:{title_key:normalizeTitleKey(term)}}),
+    intentTitle ? pagefind.search(null, {filters:{title_key:normalizeTitleKey(intentTitle)}}) : Promise.resolve({results:[]}),
     singleWord ? pagefind.search(`"${term}"`) : Promise.resolve(null)
   ]);
   const seen = new Set();
   const prioritized = [];
-  for (const result of [...exactShip.results, ...exactTitle.results]) {
+  for (const result of [...exactShip.results, ...exactTitle.results, ...intentMatch.results]) {
     if (seen.has(result.id)) continue;
     seen.add(result.id);
     prioritized.push(result);
