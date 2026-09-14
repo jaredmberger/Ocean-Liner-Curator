@@ -3,33 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
-  <title>Search trial — Ocean Liner Curator</title>
-  <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="./search.css">
-  <script src="./search.js" type="module"></script>
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0a1110">
+  <title>Search the Archive — Ocean Liner Curator</title>
+  <meta name="description" content="Search OceanLiners.net for historic ocean liners, ship guides, articles, interiors, shipping lines, and reference material.">
+  <link rel="canonical" href="https://oceanliners.net/tools/search/">
+  <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./search.css?v=20260914a">
+  <script src="./search.js?v=20260914a" type="module"></script>
 </head>
 <body>
   <main>
-    <p class="masthead">★ &nbsp; Ocean Liner Curator</p>
-    <p class="trial">Search preview</p>
-    <h1>A way into the collection.</h1>
-    <p class="intro">Find a ship, explore a subject, or follow a question into the archive.</p>
-    <section class="archive-search" aria-label="Search the collection">
+    <a class="brand" href="/" aria-label="Ocean Liner Curator home"><span aria-hidden="true">★</span> Ocean Liner Curator</a>
+
+    <header class="hero">
+      <p class="kicker">Search the archive</p>
+      <h1>Find your way into the collection.</h1>
+      <p class="intro">Search ships, people, interiors, shipping lines, events, and subjects across published OceanLiners.net pages.</p>
+    </header>
+
+    <section class="archive-search" aria-label="Search the OceanLiners.net archive">
       <form role="search" id="search-form">
-        <label for="query">Search ships and subjects</label>
-        <div class="input-row"><input id="query" name="q" type="search" maxlength="200" placeholder="Try Olympic, interiors, or immigration" autocomplete="off" aria-describedby="search-hint"><button type="submit">Search</button></div>
-        <p id="search-hint">Search published ship guides, articles, and reference pages.</p>
+        <label for="query">What are you looking for?</label>
+        <div class="input-row">
+          <input id="query" name="q" type="search" maxlength="200" placeholder="Try Olympic, Art Deco, Cunard, or immigration" autocomplete="off" enterkeyhint="search" aria-describedby="search-hint">
+          <button type="submit">Search</button>
+        </div>
+        <p id="search-hint">Results include ship guides, articles, hubs, and reference pages.</p>
       </form>
-      <div class="suggestions" aria-label="Example searches"><span>Explore:</span><button type="button" data-query="Olympic">Olympic</button><button type="button" data-query="Britannic">Britannic</button><button type="button" data-query="Art Deco">Art Deco</button><button type="button" data-query="immigration">Immigration</button></div>
+
+      <div class="suggestions" aria-label="Example searches">
+        <span>Try:</span>
+        <button type="button" data-query="Olympic">Olympic</button>
+        <button type="button" data-query="Normandie">Normandie</button>
+        <button type="button" data-query="Art Deco">Art Deco</button>
+        <button type="button" data-query="Cunard">Cunard</button>
+        <button type="button" data-query="immigration">Immigration</button>
+      </div>
+
       <div id="search-state" hidden>
-        <div class="result-toolbar"><p id="status" role="status" aria-live="polite"></p><button type="button" id="close-results">Close results</button></div>
+        <div class="result-toolbar">
+          <p id="status" role="status" aria-live="polite"></p>
+          <button type="button" id="close-results">Clear</button>
+        </div>
         <ol id="results"></ol>
         <button id="more" type="button" hidden>Show more results</button>
       </div>
-      <noscript><p>Enable JavaScript to search, or <a href="https://oceanliners.net/ships/ships">browse the Ship Archive</a>.</p></noscript>
+
+      <noscript><p>Enable JavaScript to search, or <a href="/ships/ships">browse the Ship Archive</a>.</p></noscript>
     </section>
-    <p class="browse">Prefer to browse? <a href="https://oceanliners.net/ships/ships">Explore the Ship Archive →</a></p>
+
+    <nav class="browse" aria-label="Browse alternatives">
+      <span>Prefer to browse?</span>
+      <a href="/ships/ships">Ship Archive</a>
+      <a href="/sitemap">Complete Index</a>
+      <a href="/explore">Explore</a>
+    </nav>
   </main>
 </body>
 </html>
