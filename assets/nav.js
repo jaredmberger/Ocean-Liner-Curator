@@ -15,13 +15,6 @@
 
   window.OLC = window.OLC || {};
 
-  /*
-   * Public-site failsafe reporting.
-   *
-   * This single shared loader means pages using nav.js automatically gain
-   * client-side exception, promise, resource, and fetch failure reporting.
-   * It is intentionally independent of the navigation initialization below.
-   */
   if (!window.OLC.__errorBusReporterRequested) {
     window.OLC.__errorBusReporterRequested = true;
 
@@ -193,13 +186,6 @@
     return status;
   };
 
-  /*
-   * Homepage CuratorOS status lamp.
-   *
-   * This is intentionally binary and independent of Site Health or tool
-   * warnings. Green means CuratorOS itself answered its health endpoint.
-   * Red is used only when CuratorOS cannot be reached or fails the heartbeat.
-   */
   function installCuratorOSStatusLamp() {
     if (window.location.pathname !== "/") return;
     if (document.getElementById("curatoros-status")) return;
@@ -282,9 +268,23 @@
   if (document.querySelector('script[data-olc-home-search]')) return;
 
   const script = document.createElement("script");
-  script.src = "/assets/home-search.js?v=20260912";
+  script.src = "/assets/home-search.js?v=20260913c";
   script.defer = true;
   script.dataset.olcHomeSearch = "true";
+  document.head.appendChild(script);
+})();
+
+/* Complete Index-only archive search loader. */
+(function () {
+  "use strict";
+  const path = window.location.pathname;
+  if (path !== "/sitemap" && path !== "/sitemap/" && path !== "/sitemap.html") return;
+  if (document.querySelector('script[data-olc-sitemap-search]')) return;
+
+  const script = document.createElement("script");
+  script.src = "/assets/sitemap-search.js?v=20260914";
+  script.defer = true;
+  script.dataset.olcSitemapSearch = "true";
   document.head.appendChild(script);
 })();
 
