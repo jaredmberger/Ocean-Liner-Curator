@@ -22,6 +22,20 @@ const queries = [
   'Deutschland', 'America',
   'White Star Line', 'The White Star Line',
   'Art Deco', 'interiors', 'immigration', 'troop transport', 'ships used as troop transports',
+  'White Star ships',
+  'Cunard ships',
+  'fastest ocean liners',
+  'ships used during the war',
+  'ocean liners used in World War II',
+  'immigrant ships',
+  'ships that carried immigrants',
+  'French ocean liners',
+  'German ocean liners',
+  'Italian ocean liners',
+  'famous ocean liner interiors',
+  'ocean liner dining rooms',
+  'what happened to ocean liners',
+  'why did ocean liners disappear',
   'zzzxqvunknown'
 ];
 const report = [];
@@ -65,6 +79,12 @@ const whiteStar = byQuery('White Star Line');
 assert.equal(whiteStar.top[0].title, 'White Star Line', 'Exact page-title matches should rank first');
 assert.equal(byQuery('The White Star Line').top[0].title, 'White Star Line', 'Leading article should not prevent an exact title match');
 for (const query of ['Art Deco','interiors','immigration','troop transport']) assert.ok(byQuery(query).count > 0, query);
+for (const query of [
+  'White Star ships','Cunard ships','fastest ocean liners','ships used during the war',
+  'ocean liners used in World War II','immigrant ships','ships that carried immigrants',
+  'French ocean liners','German ocean liners','Italian ocean liners','famous ocean liner interiors',
+  'ocean liner dining rooms','what happened to ocean liners','why did ocean liners disappear'
+]) assert.ok(byQuery(query).count > 0, `Natural-language query should return results: ${query}`);
 assert.equal(report.at(-1).count, 0);
 await writeFile(new URL('./dist/query-report.json', import.meta.url), JSON.stringify(report,null,2));
 console.log(JSON.stringify(report.map(({query,count,milliseconds,loadedBytes,top})=>({query,count,milliseconds,loadedBytes,top:top.map(r=>`${r.type}: ${r.title}`)})),null,2));
