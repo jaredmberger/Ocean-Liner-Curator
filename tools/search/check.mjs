@@ -13,7 +13,7 @@ globalThis.fetch = async (input, ...args) => {
   return new Response(content, {headers:{'Content-Type':'application/wasm'}});
 };
 const pagefind = await import('./dist/pagefind/pagefind.js');
-const queries = ['Olympic', 'Britannic', 'Britannic 1930', 'Leviathan', 'Art Deco', 'interiors', 'immigration', 'troop transport', 'White Star Line', 'ships used as troop transports', 'zzzxqvunknown'];
+const queries = ['Olympic', 'Britannic', 'Britannic 1930', 'Leviathan', 'White Star Line', 'Art Deco', 'interiors', 'immigration', 'troop transport', 'ships used as troop transports', 'zzzxqvunknown'];
 const report = [];
 for (const query of queries) {
   const before = bytes;
@@ -30,6 +30,8 @@ for (const query of queries) {
 const olympic = report.find(r => r.query === 'Olympic');
 assert.equal(olympic.top[0].url, 'https://oceanliners.net/ships/rms-olympic', 'Olympic guide should rank first');
 assert.ok(report.find(r=>r.query==='Britannic').top.filter(r=>r.type==='Ship guide').length >= 3, 'Distinguish Britannic vessels');
+const whiteStar = report.find(r => r.query === 'White Star Line');
+assert.equal(whiteStar.top[0].title, 'White Star Line', 'Exact page-title matches should rank first');
 for (const query of ['Art Deco','interiors','immigration','troop transport']) assert.ok(report.find(r=>r.query===query).count > 0, query);
 assert.equal(report.at(-1).count, 0);
 await writeFile(new URL('./dist/query-report.json', import.meta.url), JSON.stringify(report,null,2));
