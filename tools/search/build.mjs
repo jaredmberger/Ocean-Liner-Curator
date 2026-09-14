@@ -4,7 +4,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { load } from 'cheerio';
 import * as pagefind from 'pagefind';
-import { normalizeSearchKey, normalizeShipName } from './search-engine.js';
+import { normalizeTitleKey, normalizeShipName } from './search-engine.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '../..');
@@ -40,11 +40,17 @@ for (const path of paths.sort()) {
   body.find('h1').remove();
   const text = body.text().replace(/\s+/g, ' ').trim();
   if (text.length < 100 || !title) { report.skipped.push({path, reason: 'Insufficient article text'}); continue; }
-  const names = type === 'Ship guide' ? [...new Set([normalizeShipName(title),normalizeShipName(title.replace(/\([^)]*\)/g,''))])] : [];
+
+  const titleSources = [title, pageTitle, title.replace(/\([^)]*\)$/,'').trim()].filter(Boolean);
+  const titleKeys = [...new Set(titleSources.map(normalizeTitleKey).filter(Boolean))];
+  const titleFilters = titleKeys.map(key => `<meta data-pagefind-filter="title_key[content]" content="${escape(key)}">`).join('');
+
+  const names = type === 'Ship guide'
+    ? [...new Set(titleSources.map(normalizeShipName).filter(Boolean))]
+    : [];
   const shipFilters = names.map(name => `<meta data-pagefind-filter="ship[content]" content="${escape(name)}">`).join('');
-  const titleKey = normalizeSearchKey(title.replace(/\([^)]*\)$/,'').trim());
-  const titleFilter = `<meta data-pagefind-filter="title_key[content]" content="${escape(titleKey)}">`;
-  const html = `<html lang="en"><head><title>${escape(title)}</title>${shipFilters}${titleFilter}</head><body><main data-pagefind-body><h1 data-pagefind-meta="title" data-pagefind-weight="5">${escape(title)}</h1><span data-pagefind-meta="type" data-pagefind-filter="type">${type}</span>${body.html()}</main></body></html>`;
+
+  const html = `<html lang="en"><head><title>${escape(title)}</title>${shipFilters}${titleFilters}</head><body><main data-pagefind-body><h1 data-pagefind-meta="title" data-pagefind-weight="5">${escape(title)}</h1><span data-pagefind-meta="type" data-pagefind-filter="type">${type}</span>${body.html()}</main></body></html>`;
   const doc = {path, url, title, type, html, text};
   const previous = documents.get(url);
   if (previous) {
