@@ -17,7 +17,9 @@ const queries = [
   'Olympic', 'RMS Olympic',
   'Britannic', 'Britannic 1930',
   'Leviathan', 'S.S. Leviathan',
-  'Queen Mary', 'Mauretania', 'Deutschland', 'America',
+  'Queen Mary', 'Queen Mary 2',
+  'Mauretania', 'Mauretania 1939',
+  'Deutschland', 'America',
   'White Star Line', 'The White Star Line',
   'Art Deco', 'interiors', 'immigration', 'troop transport', 'ships used as troop transports',
   'zzzxqvunknown'
@@ -35,16 +37,34 @@ for (const query of queries) {
   assert.equal(new Set(result.results.map(r => r.id)).size, result.results.length);
   report.push({query, count:result.results.length, milliseconds:Math.round(performance.now()-start), loadedBytes:bytes-before, top});
 }
-const olympic = report.find(r => r.query === 'Olympic');
+const byQuery = query => report.find(r => r.query === query);
+const olympic = byQuery('Olympic');
 assert.equal(olympic.top[0].url, 'https://oceanliners.net/ships/rms-olympic', 'Olympic guide should rank first');
-assert.equal(report.find(r=>r.query==='RMS Olympic').top[0].url, olympic.top[0].url, 'RMS prefix should resolve to Olympic guide');
-assert.ok(report.find(r=>r.query==='Britannic').top.filter(r=>r.type==='Ship guide').length >= 3, 'Distinguish Britannic vessels');
-const leviathan = report.find(r=>r.query==='Leviathan');
-assert.equal(report.find(r=>r.query==='S.S. Leviathan').top[0].url, leviathan.top[0].url, 'Punctuated SS prefix should resolve to Leviathan guide');
-const whiteStar = report.find(r => r.query === 'White Star Line');
+assert.equal(byQuery('RMS Olympic').top[0].url, olympic.top[0].url, 'RMS prefix should resolve to Olympic guide');
+
+const britannic = byQuery('Britannic');
+assert.ok(britannic.top.slice(0,3).every(r=>r.type==='Ship guide'), 'Bare Britannic should group the three matching ship guides first');
+assert.equal(byQuery('Britannic 1930').top[0].title, 'MV Britannic (1930)', 'Year-qualified Britannic should select the 1930 vessel');
+
+const leviathan = byQuery('Leviathan');
+assert.equal(byQuery('S.S. Leviathan').top[0].url, leviathan.top[0].url, 'Punctuated SS prefix should resolve to Leviathan guide');
+
+const queenMary = byQuery('Queen Mary');
+assert.equal(queenMary.top[0].title, 'RMS Queen Mary (1936)', 'Bare Queen Mary should rank the historic liner first');
+assert.ok(queenMary.top.some(r=>r.title==='RMS Queen Mary 2 (2004)'), 'Bare Queen Mary should still surface Queen Mary 2 nearby');
+assert.equal(byQuery('Queen Mary 2').top[0].title, 'RMS Queen Mary 2 (2004)', 'Queen Mary 2 should resolve directly to the 2004 ship');
+
+const mauretania = byQuery('Mauretania');
+assert.deepEqual(mauretania.top.slice(0,2).map(r=>r.title), ['RMS Mauretania (1907)','RMS Mauretania (II) (1939)'], 'Bare Mauretania should group both Cunard liners first');
+assert.equal(byQuery('Mauretania 1939').top[0].title, 'RMS Mauretania (II) (1939)', 'Year-qualified Mauretania should select the 1939 vessel');
+
+assert.equal(byQuery('Deutschland').top[0].title, 'SS Deutschland (1900)', 'Deutschland should rank its ship guide first');
+assert.equal(byQuery('America').top[0].title, 'SS America (1940)', 'Generic-word ship names should still rank the exact ship guide first');
+
+const whiteStar = byQuery('White Star Line');
 assert.equal(whiteStar.top[0].title, 'White Star Line', 'Exact page-title matches should rank first');
-assert.equal(report.find(r=>r.query==='The White Star Line').top[0].title, 'White Star Line', 'Leading article should not prevent an exact title match');
-for (const query of ['Art Deco','interiors','immigration','troop transport']) assert.ok(report.find(r=>r.query===query).count > 0, query);
+assert.equal(byQuery('The White Star Line').top[0].title, 'White Star Line', 'Leading article should not prevent an exact title match');
+for (const query of ['Art Deco','interiors','immigration','troop transport']) assert.ok(byQuery(query).count > 0, query);
 assert.equal(report.at(-1).count, 0);
 await writeFile(new URL('./dist/query-report.json', import.meta.url), JSON.stringify(report,null,2));
 console.log(JSON.stringify(report.map(({query,count,milliseconds,loadedBytes,top})=>({query,count,milliseconds,loadedBytes,top:top.map(r=>`${r.type}: ${r.title}`)})),null,2));
