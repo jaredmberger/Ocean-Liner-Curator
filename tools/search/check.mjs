@@ -78,6 +78,10 @@ assert.equal(byQuery('America').top[0].title, 'SS America (1940)', 'Generic-word
 const whiteStar = byQuery('White Star Line');
 assert.equal(whiteStar.top[0].title, 'White Star Line', 'Exact page-title matches should rank first');
 assert.equal(byQuery('The White Star Line').top[0].title, 'White Star Line', 'Leading article should not prevent an exact title match');
+assert.equal(byQuery('White Star ships').top[0].title, 'White Star Line', 'Broad White Star ship intent should lead with the line hub');
+assert.equal(byQuery('what happened to ocean liners').top[0].title, 'Why Did Ocean Liners Disappear?', 'Natural-language disappearance intent should lead with the dedicated explainer');
+assert.equal(byQuery('why did ocean liners disappear').top[0].title, 'Why Did Ocean Liners Disappear?', 'Direct disappearance query should lead with the dedicated explainer');
+
 for (const query of ['Art Deco','interiors','immigration','troop transport']) assert.ok(byQuery(query).count > 0, query);
 for (const query of [
   'White Star ships','Cunard ships','fastest ocean liners','ships used during the war',
