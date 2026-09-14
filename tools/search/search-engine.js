@@ -3,9 +3,15 @@ export function normalizeSearchKey(value) {
     .replace(/[^a-z0-9]+/g,' ').trim();
 }
 
+export function normalizeTitleKey(value) {
+  return normalizeSearchKey(value)
+    .replace(/^the\s+/,'')
+    .trim();
+}
+
 export function normalizeShipName(value) {
   return normalizeSearchKey(value)
-    .replace(/^(?:(?:rms|ss|s s|hmhs|hmt|hms|mv|ms|ts|rmmv)(?:\s+|$))+/,'')
+    .replace(/^(?:(?:rms|ss|s s|hmhs|hmt|hms|mv|ms|ts|rmmv|qsmv)(?:\s+|$))+/,'')
     .trim();
 }
 
@@ -16,7 +22,7 @@ export async function searchArchive(pagefind, term) {
   const [regular, exactShip, exactTitle, strict] = await Promise.all([
     pagefind.search(term),
     pagefind.search(null, {filters:{ship:normalizeShipName(term)}}),
-    pagefind.search(null, {filters:{title_key:normalizeSearchKey(term)}}),
+    pagefind.search(null, {filters:{title_key:normalizeTitleKey(term)}}),
     singleWord ? pagefind.search(`"${term}"`) : Promise.resolve(null)
   ]);
   const seen = new Set();
