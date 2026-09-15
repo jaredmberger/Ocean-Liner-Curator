@@ -1,0 +1,78 @@
+name: Publish builder intelligence
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ships/**.html'
+      - 'tools/search/builder-audit.mjs'
+      - 'tools/search/builder-aliases.json'
+      - 'tools/search/package.json'
+      - 'tools/search/package-lock.json'
+      - '.github/workflows/publish-builder-intelligence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-builder-intelligence
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tools/search/package-lock.json
+
+      - name: Install search tooling
+        run: npm ci --prefix tools/search
+
+      - name: Generate builder audit
+        run: npm run audit:builders --prefix tools/search
+
+      - name: Build CuratorOS intelligence feed
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const audit = JSON.parse(fs.readFileSync('tools/search/dist/builders-audit.json', 'utf8'));
+          const feed = {
+            schemaVersion: 1,
+            generatedAt: audit.generatedAt,
+            source: audit.source,
+            summary: audit.summary,
+            missing: audit.missing,
+            topBuilders: audit.builders.slice(0, 12).map(builder => ({
+              id: builder.key.replace(/\s+/g, '-'),
+              name: builder.canonicalName,
+              shipCount: builder.shipCount,
+              firstLaunchYear: builder.firstLaunchYear,
+              lastLaunchYear: builder.lastLaunchYear,
+              locations: builder.locations.slice(0, 6),
+              operators: builder.operators.slice(0, 8)
+            }))
+          };
+          fs.mkdirSync('data', { recursive: true });
+          fs.writeFileSync('data/curatoros-builders.json', JSON.stringify(feed, null, 2) + '\n');
+          NODE
+
+      - name: Publish changed feed
+        run: |
+          if git diff --quiet -- data/curatoros-builders.json; then
+            echo 'Builder intelligence feed is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/curatoros-builders.json
+          git commit -m 'Update CuratorOS builder intelligence feed'
+          git push
