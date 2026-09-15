@@ -25,6 +25,84 @@
     document.head.appendChild(style);
   }
 
+  function installCollapsibleFilters() {
+    if (document.getElementById("archive-advanced-filters")) return;
+
+    const controls = document.querySelector(".controls-card .ship-controls");
+    const az = controls && controls.querySelector(".ship-az");
+    const lineDisclosure = controls && controls.querySelector(".line-disclosure");
+    if (!controls || !az || !lineDisclosure) return;
+
+    if (!document.getElementById("archive-collapsible-filters-style")) {
+      const style = document.createElement("style");
+      style.id = "archive-collapsible-filters-style";
+      style.textContent = `
+        .archive-advanced-filters{
+          margin:.72rem 0 0;
+          border:1px solid rgba(191,164,106,.20);
+          border-radius:12px;
+          background:rgba(255,255,255,.018);
+          overflow:hidden;
+        }
+        .archive-advanced-filters__summary{
+          display:flex;
+          align-items:center;
+          justify-content:space-between;
+          gap:.8rem;
+          cursor:pointer;
+          list-style:none;
+          padding:.58rem .78rem;
+          color:rgba(209,187,134,.94);
+          font-size:.86rem;
+          line-height:1.25;
+          letter-spacing:.02em;
+          -webkit-tap-highlight-color:transparent;
+        }
+        .archive-advanced-filters__summary::-webkit-details-marker{display:none}
+        .archive-advanced-filters__summary::after{
+          content:"+";
+          color:rgba(230,223,207,.72);
+          font-size:1.05rem;
+          line-height:1;
+          transition:transform 160ms ease;
+        }
+        .archive-advanced-filters[open]>.archive-advanced-filters__summary::after{content:"−"}
+        .archive-advanced-filters[open]>.archive-advanced-filters__summary{
+          border-bottom:1px solid rgba(191,164,106,.16);
+        }
+        .archive-advanced-filters__body{padding:.05rem .78rem .78rem}
+        .archive-advanced-filters__body .ship-az{margin-top:.72rem}
+        .archive-advanced-filters__body .line-disclosure{margin-top:.72rem}
+        @media(max-width:620px){
+          .controls-card{padding-top:.5rem!important;padding-bottom:.9rem!important}
+          .controls-card .section-title{margin-bottom:.7rem!important}
+          .archive-advanced-filters__summary{padding:.52rem .68rem}
+          .archive-advanced-filters__body{padding:.02rem .68rem .68rem}
+        }
+        @media(prefers-reduced-motion:reduce){.archive-advanced-filters__summary::after{transition:none}}
+      `;
+      document.head.appendChild(style);
+    }
+
+    const disclosure = document.createElement("details");
+    disclosure.className = "archive-advanced-filters";
+    disclosure.id = "archive-advanced-filters";
+
+    const summary = document.createElement("summary");
+    summary.className = "archive-advanced-filters__summary";
+    summary.innerHTML = '<span>Browse &amp; filter by letter or shipping line</span>';
+
+    const body = document.createElement("div");
+    body.className = "archive-advanced-filters__body";
+
+    const first = az.compareDocumentPosition(lineDisclosure) & Node.DOCUMENT_POSITION_FOLLOWING ? az : lineDisclosure;
+    first.parentNode.insertBefore(disclosure, first);
+    disclosure.appendChild(summary);
+    disclosure.appendChild(body);
+    body.appendChild(az);
+    body.appendChild(lineDisclosure);
+  }
+
   function installSearchJump() {
     if (document.getElementById("archive-search-jump")) return;
     const guide = document.getElementById("guide");
@@ -64,6 +142,6 @@
     }
   }
 
-  function initialize(){installFloatingControls();installSearchJump();installReferencePathCards();}
+  function initialize(){installFloatingControls();installCollapsibleFilters();installSearchJump();installReferencePathCards();}
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialize, { once: true }); else initialize();
 })();
