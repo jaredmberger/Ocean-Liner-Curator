@@ -4,6 +4,27 @@
 
   if (window.location.pathname !== "/ships/ships" && window.location.pathname !== "/ships/ships/") return;
 
+  function installFloatingControls() {
+    if (document.getElementById("archive-floating-controls-style")) return;
+    const style = document.createElement("style");
+    style.id = "archive-floating-controls-style";
+    style.textContent = `
+      .container{overflow:visible!important}
+      .container::before,.container::after{border-radius:inherit}
+      .controls-card{
+        position:sticky!important;
+        top:.5rem;
+        z-index:40;
+        background:rgba(10,17,16,.94)!important;
+        backdrop-filter:blur(8px)!important;
+        -webkit-backdrop-filter:blur(8px)!important;
+        box-shadow:0 14px 34px rgba(0,0,0,.34),0 0 0 1px rgba(191,164,106,.05);
+      }
+      @media(max-width:620px){.controls-card{top:.25rem}}
+    `;
+    document.head.appendChild(style);
+  }
+
   function installSearchJump() {
     if (document.getElementById("archive-search-jump")) return;
     const guide = document.getElementById("guide");
@@ -43,6 +64,6 @@
     }
   }
 
-  function initialize(){installSearchJump();installReferencePathCards();}
+  function initialize(){installFloatingControls();installSearchJump();installReferencePathCards();}
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialize, { once: true }); else initialize();
 })();
