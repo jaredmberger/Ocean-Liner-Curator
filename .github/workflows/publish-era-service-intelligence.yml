@@ -1,0 +1,45 @@
+name: Publish era and service intelligence
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ships/**.html'
+      - 'tools/search/era-service-intelligence.mjs'
+      - '.github/workflows/publish-era-service-intelligence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-era-service-intelligence
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tools/search/package-lock.json
+      - name: Install search tooling
+        run: npm ci --prefix tools/search
+      - name: Generate era and service intelligence
+        run: node tools/search/era-service-intelligence.mjs
+      - name: Publish changed feed
+        run: |
+          if [ -z "$(git status --porcelain -- data/curatoros-eras.json)" ]; then
+            echo 'Era intelligence feed is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/curatoros-eras.json
+          git commit -m 'Update CuratorOS era intelligence feed'
+          git push
