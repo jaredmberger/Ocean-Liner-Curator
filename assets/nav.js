@@ -300,3 +300,16 @@
   script.dataset.olcArchiveJump = "true";
   document.head.appendChild(script);
 })();
+
+/* Ship-guide reference-path loader. */
+(function () {
+  "use strict";
+  const path = window.location.pathname.replace(/\/$/, "");
+  if (!/^\/ships\/(?!ships$)[^/]+$/.test(path)) return;
+  if (document.querySelector('script[data-olc-ship-reference-links]')) return;
+  const script = document.createElement("script");
+  script.src = "/assets/ship-reference-links.js?v=20260915";
+  script.defer = true;
+  script.dataset.olcShipReferenceLinks = "true";
+  document.head.appendChild(script);
+})();
