@@ -3,7 +3,7 @@
 
   const state = { data: null, query: '', letter: 'All' };
   const $ = id => document.getElementById(id);
-  const escapeHtml = value => String(value || '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const escapeHtml = value => String(value || '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[ch]));
   const normalize = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
   function yearRange(builder) {
@@ -45,6 +45,19 @@
     </article>`;
   }
 
+  function openHashTarget() {
+    if (!location.hash) return;
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!target) return;
+    const button = target.querySelector('.builder-head');
+    const body = target.querySelector('.builder-body');
+    if (button && body) {
+      button.setAttribute('aria-expanded', 'true');
+      body.hidden = false;
+    }
+    requestAnimationFrame(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  }
+
   function render() {
     if (!state.data) return;
     const query = normalize(state.query.trim());
@@ -70,10 +83,11 @@
         body.hidden = open;
       });
     });
+    openHashTarget();
   }
 
   function renderLetters(builders) {
-    const letters = [...new Set(builders.map(builder => builder.name.charAt(0).toUpperCase()).filter(/[A-Z]/.test.bind(/[A-Z]/)))].sort();
+    const letters = [...new Set(builders.map(builder => builder.name.charAt(0).toUpperCase()).filter(letter => /[A-Z]/.test(letter)))].sort();
     $('letter-filter').innerHTML = ['All', ...letters].map(letter => `<button type="button" data-letter="${letter}" class="${letter === 'All' ? 'active' : ''}">${letter}</button>`).join('');
     $('letter-filter').addEventListener('click', event => {
       const button = event.target.closest('button[data-letter]');
@@ -105,4 +119,5 @@
     state.query = event.target.value;
     render();
   });
+  window.addEventListener('hashchange', openHashTarget);
 })();
