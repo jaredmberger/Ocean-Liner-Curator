@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-15T08:13:47.641Z",
+  "source": "Tracked ships/*.html pages identified as Ship Guides",
+  "summary": {
+    "trackedShipHtmlFiles": 314,
+    "shipGuides": 302,
+    "canonicalBuilders": 95,
+    "guidesWithBuilder": 300,
+    "guidesMissingBuilder": 2,
+    "guidesMissingOperator": 0,
+    "operatorValuesRecoveredFromSubtitle": 16,
+    "guidesMissingLaunch": 4,
+    "builderVariantGroups": 26,
+    "suspiciousLaunchDatesWithoutYear": 0
+  },
+  "missing": {
+    "builder": [
+      {
+        "ship": "RMS Lucania",
+        "path": "ships/rms-lucania.html"
+      },
+      {
+        "ship": "SS Macedonia",
+        "path": "ships/ss-macedonia.html"
+      }
+    ],
+    "operator": [],
+    "launched": [
+      {
+        "ship": "SS Adriatic (1872)",
+        "path": "ships/ss-adriatic-1872.html"
+      },
+      {
+        "ship": "SS France (1912)",
+        "path": "ships/ss-france-1912.html"
+      },
+      {
+        "ship": "SS Nieuw Amsterdam (1906)",
+        "path": "ships/ss-nieuw-amsterdam-1906.html"
+      },
+      {
+        "ship": "SS President Lincoln",
+        "path": "ships/ss-president-lincoln.html"
+      }
+    ]
+  },
+  "topBuilders": [
+    {
+      "id": "harland-and-wolff",
+      "name": "Harland & Wolff",
+      "shipCount": 77,
+      "firstLaunchYear": null,
+      "lastLaunchYear": 1960,
+      "locations": [
+        "Belfast",
+        "Belfast, 1921–24",
+        "Belfast, Ireland",
+        "Belfast, Northern Ireland",
+        "Govan"
+      ],
+      "operators": [
+        "Atlantic Transport Line",
+        "Atlantic Transport Line; initially chartered to the National Line",
+        "Dominion Line",
+        "Dominion Line; later associated with White Star-Dominion service / Leyland Line reporting in later sources",
+        "Hamburg America Line",
+        "Hamburg America Line (HAPAG)",
+        "Holland America Line",
+        "Holland America Line (NASM)"
+      ]
+    },
+    {
+      "id": "john-brown-and-company",
+      "name": "John Brown & Company",
+      "shipCount": 20,
+      "firstLaunchYear": 1904,
+      "lastLaunchYear": 1967,
+      "locations": [
+        "Clydebank",
+        "Clydebank, Scotland",
+        "Scotland"
+      ],
+      "operators": [
+        "Canadian Pacific (Canadian Pacific Railway / Canadian Pacific Steamships)",
+        "Canadian Pacific Steamships Ltd.",
+        "Cunard (then Cunard White Star Line)",
+        "Cunard Line",
+        "Cunard Line (operated 1969–2008)",
+        "Cunard Steamship Company / Cunard Line",
+        "Cunard-White Star Line",
+        "Cunard-White Star Line (later Cunard Line)"
+      ]
+    },
+    {
+      "id": "blohm-and-voss",
+      "name": "Blohm & Voss",
+      "shipCount": 16,
+      "firstLaunchYear": 1898,
+      "lastLaunchYear": 1928,
+      "locations": [
+        "Hamburg",
+        "Hamburg, Germany"
+      ],
+      "operators": [
+        "Compagnie Générale Transatlantique (French Line)",
+        "Hamburg America Line",
+        "Hamburg America Line (HAPAG)",
+        "Hamburg America Line / HAPAG",
+        "Hamburg Süd (Hamburg-Südamerikanische Dampfschifffahrts-Gesellschaft)",
+        "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd / Hamburg South America Line)",
+        "Hamburg-America Line (HAPAG)",
+        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
+      ]
+    },
+    {
+      "id": "ag-vulcan",
+      "name": "AG Vulcan",
+      "shipCount": 12,
+      "firstLaunchYear": 1897,
+      "lastLaunchYear": 1913,
+      "locations": [
+        "Hamburg",
+        "Hamburg, Germany",
+        "Stettin",
+        "Stettin, Germany",
+        "then Germany; today Szczecin, Poland"
+      ],
+      "operators": [
+        "Canadian Pacific",
+        "Hamburg America Line (HAPAG)",
+        "Hamburg America Line (HAPAG) (as Tirpitz)",
+        "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)",
+        "Norddeutscher Lloyd (Bremen)",
+        "Norddeutscher Lloyd (North German Lloyd)",
+        "Norddeutscher Lloyd / North German Lloyd"
+      ]
+    },
+    {
+      "id": "vickers-armstrongs",
+      "name": "Vickers-Armstrongs",
+      "shipCount": 11,
+      "firstLaunchYear": 1924,
+      "lastLaunchYear": 1959,
+      "locations": [
+        "Barrow-in-Furness",
+        "Barrow-in-Furness, England",
+        "Barrow-in-Furness, UK",
+        "Walker-on-Tyne / Newcastle area"
+      ],
+      "operators": [
+        "Furness Bermuda Line",
+        "Furness, Withy & Co. · Furness Bermuda Line",
+        "Orient Steam Navigation Company (Orient Line)",
+        "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
+        "Peninsular & Oriental Steam Navigation Co. (P&O)",
+        "Peninsular and Oriental Steam Navigation Company (P&O)"
+      ]
+    },
+    {
+      "id": "fairfield-shipbuilding-and-engineering-co",
+      "name": "Fairfield Shipbuilding & Engineering Co.",
+      "shipCount": 7,
+      "firstLaunchYear": 1892,
+      "lastLaunchYear": 1929,
+      "locations": [
+        "Glasgow",
+        "Govan",
+        "Govan, Clyde",
+        "Govan, Glasgow",
+        "Govan, Glasgow, Scotland",
+        "Govan, Scotland"
+      ],
+      "operators": [
+        "Anchor Line (Henderson Bros) Ltd (Cunard subsidiary)",
+        "Anchor Line (UK)",
+        "Canadian Pacific Railway / Canadian Pacific Steamships (Atlantic service)",
+        "Canadian Pacific Steamships",
+        "Canadian Pacific Steamships / Canadian Pacific Line",
+        "Canadian Pacific Steamships / Canadian Pacific Railway",
+        "Cunard Line"
+      ]
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co",
+      "name": "Newport News Shipbuilding & Dry Dock Co.",
+      "shipCount": 7,
+      "firstLaunchYear": 1928,
+      "lastLaunchYear": 1951,
+      "locations": [
+        "Newport News, Virginia, USA",
+        "Virginia",
+        "Virginia, USA"
+      ],
+      "operators": [
+        "Dollar Steamship Line",
+        "Dollar Steamship Lines",
+        "Panama Pacific Line",
+        "United States Lines",
+        "Ward Line (New York & Cuba Mail SS Co.) / AGWI Navigation Co. (commonly cited)"
+      ]
+    },
+    {
+      "id": "blohm-and-voss-hamburg",
+      "name": "Blohm & Voss, Hamburg",
+      "shipCount": 6,
+      "firstLaunchYear": 1896,
+      "lastLaunchYear": 1929,
+      "locations": [
+        "Germany"
+      ],
+      "operators": [
+        "Hamburg-Amerika Line (HAPAG)",
+        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
+        "Norddeutscher Lloyd (North German Lloyd)"
+      ]
+    },
+    {
+      "id": "swan-hunter-and-wigham-richardson",
+      "name": "Swan Hunter & Wigham Richardson",
+      "shipCount": 6,
+      "firstLaunchYear": 1906,
+      "lastLaunchYear": 1938,
+      "locations": [
+        "Newcastle-on-Tyne",
+        "Wallsend",
+        "Wallsend, England",
+        "Wallsend-on-Tyne"
+      ],
+      "operators": [
+        "Cunard Line",
+        "Navigazione Generale Italiana",
+        "Shaw, Savill & Albion Line"
+      ]
+    },
+    {
+      "id": "ansaldo",
+      "name": "Ansaldo",
+      "shipCount": 5,
+      "firstLaunchYear": 1926,
+      "lastLaunchYear": 1958,
+      "locations": [
+        "Genoa",
+        "Sestri Ponente / Genoa"
+      ],
+      "operators": [
+        "Italian Line (Italia Flotte Riunite / later Italian Line naming is source-dependent; commonly cited as “Italian Line”)",
+        "Italian Line (Italia di Navigazione)",
+        "Navigazione Generale Italiana (NGI)",
+        "Navigazione Generale Italiana (NGI); later Italian Line (Italia Line)"
+      ]
+    },
+    {
+      "id": "chantiers-de-l-atlantique",
+      "name": "Chantiers de l’Atlantique",
+      "shipCount": 5,
+      "firstLaunchYear": null,
+      "lastLaunchYear": 2003,
+      "locations": [
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "operators": [
+        "Compagnie Générale Transatlantique (CGT / French Line)",
+        "Compagnie Générale Transatlantique (CGT) — “French Line”",
+        "Compagnie de Navigation Sud-Atlantique",
+        "Cunard Line"
+      ]
+    },
+    {
+      "id": "j-and-g-thomson",
+      "name": "J. & G. Thomson",
+      "shipCount": 5,
+      "firstLaunchYear": 1865,
+      "lastLaunchYear": 1888,
+      "locations": [
+        "Clydebank",
+        "Clydebank/Glasgow, Scotland",
+        "Glasgow",
+        "Scotland"
+      ],
+      "operators": [
+        "Cunard Line",
+        "Inman & International Steamship Co. (Inman Line)",
+        "Inman Line (later controlled/merged into International Navigation / American Line)"
+      ]
+    }
+  ]
+}
