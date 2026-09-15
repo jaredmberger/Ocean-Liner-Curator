@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '../..');
 const archivePath = resolve(root, 'ships/ships.html');
+const explorePath = resolve(root, 'explore.html');
 
 let html = await readFile(archivePath, 'utf8');
 const before = html;
@@ -78,4 +79,15 @@ if (html === before) {
 } else {
   await writeFile(archivePath, html, 'utf8');
   console.log(`Normalized Ship Archive source (${Object.keys(correctedDescriptions).length} card descriptions; span ${span}).`);
+}
+
+// Keep Explore canonical, Open Graph, schema, and absolute image URLs on the site's non-www canonical host.
+let exploreHtml = await readFile(explorePath, 'utf8');
+const exploreBefore = exploreHtml;
+exploreHtml = exploreHtml.replaceAll('https://www.oceanliners.net', 'https://oceanliners.net');
+if (exploreHtml === exploreBefore) {
+  console.log('Explore canonical host already normalized.');
+} else {
+  await writeFile(explorePath, exploreHtml, 'utf8');
+  console.log('Normalized Explore canonical host to https://oceanliners.net.');
 }
