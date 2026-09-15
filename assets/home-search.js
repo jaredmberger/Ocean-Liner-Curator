@@ -15,8 +15,8 @@
   style.textContent = `
     .home-archive-search{
       width:min(680px,100%);
-      margin:1rem auto 1.5rem;
-      padding:1.2rem 1.25rem 1.3rem;
+      margin:.7rem auto 1.05rem;
+      padding:1rem 1.1rem 1.05rem;
       backdrop-filter:blur(2px);
       -webkit-backdrop-filter:blur(2px);
       background:
@@ -56,16 +56,16 @@
     }
     .home-archive-search__label{
       display:block;
-      margin:0 0 .55rem;
+      margin:0 0 .42rem;
       color:rgba(230,223,207,.88);
-      font-size:.82rem;
+      font-size:.8rem;
       font-variant:small-caps;
       letter-spacing:.08em;
     }
     .home-archive-search__form{
       display:flex;
       align-items:stretch;
-      gap:.5rem;
+      gap:.45rem;
       width:100%;
     }
     .home-archive-search__field{
@@ -75,11 +75,11 @@
     }
     .home-archive-search__glyph{
       position:absolute;
-      left:.9rem;
+      left:.86rem;
       top:50%;
       transform:translateY(-50%);
       color:rgba(191,164,106,.78);
-      font-size:1.05rem;
+      font-size:1.02rem;
       line-height:1;
       pointer-events:none;
       z-index:1;
@@ -87,36 +87,42 @@
     .home-archive-search__input{
       width:100%;
       min-width:0;
-      padding:.82rem .95rem .82rem 2.35rem;
+      padding:.76rem .9rem .76rem 2.28rem;
       border:1px solid rgba(191,164,106,.32);
       border-radius:12px;
       background:rgba(10,17,16,.56);
       color:#e6dfcf;
       font:inherit;
-      font-size:.95rem;
+      font-size:.94rem;
       line-height:1.2;
       outline:none;
       box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 8px 20px rgba(0,0,0,.18);
       -webkit-appearance:none;
       appearance:none;
+      transition:border-color 150ms ease,box-shadow 150ms ease,background-color 150ms ease;
     }
     .home-archive-search__input::placeholder{color:rgba(182,174,156,.68)}
     .home-archive-search__input:focus{
       border-color:rgba(191,164,106,.68);
+      background:rgba(10,17,16,.68);
       box-shadow:0 0 0 3px rgba(191,164,106,.09),0 8px 20px rgba(0,0,0,.18);
     }
     .home-archive-search__button{
       flex:0 0 auto;
-      padding:.78rem 1rem;
+      min-width:5.2rem;
+      padding:.74rem .95rem;
       border:1px solid rgba(191,164,106,.42);
       border-radius:12px;
       background:linear-gradient(180deg,rgba(191,164,106,.14),rgba(10,17,16,.30));
       color:rgba(230,223,207,.94);
       font:inherit;
-      font-size:.9rem;
+      font-size:.88rem;
+      line-height:1.2;
       cursor:pointer;
+      transition:border-color 150ms ease,color 150ms ease,background-color 150ms ease,transform 150ms ease;
     }
     .home-archive-search__button:hover{border-color:rgba(191,164,106,.7);color:#fff}
+    .home-archive-search__button:active{transform:translateY(1px)}
     .home-archive-search__button:focus-visible,
     .home-archive-search__input:focus-visible,
     .home-archive-search__close:focus-visible{
@@ -125,17 +131,23 @@
     }
     .home-archive-search__state{
       position:relative;
-      margin:.8rem 0 0;
-      padding:.75rem 0 0;
+      margin:.62rem 0 0;
+      padding:.62rem 0 0;
       border-top:1px solid rgba(191,164,106,.15);
       text-align:left;
+      animation:homeArchiveSearchReveal 160ms ease-out both;
+    }
+    .home-archive-search__state[hidden]{display:none!important}
+    @keyframes homeArchiveSearchReveal{
+      from{opacity:0;transform:translateY(-3px)}
+      to{opacity:1;transform:translateY(0)}
     }
     .home-archive-search__close{
       position:absolute;
-      top:.48rem;
+      top:.38rem;
       right:0;
-      width:1.75rem;
-      height:1.75rem;
+      width:1.7rem;
+      height:1.7rem;
       padding:0;
       border:1px solid rgba(191,164,106,.24);
       border-radius:999px;
@@ -151,9 +163,10 @@
       border-color:rgba(191,164,106,.58);
     }
     .home-archive-search__status{
-      margin:0 2.15rem .55rem;
+      margin:0 2.1rem .42rem;
       color:rgba(182,174,156,.82);
-      font-size:.78rem;
+      font-size:.76rem;
+      line-height:1.35;
       letter-spacing:.035em;
       text-align:center;
     }
@@ -164,22 +177,24 @@
     }
     .home-archive-search__result{
       margin:0;
-      padding:.7rem .1rem;
+      padding:.62rem .08rem;
       border-bottom:1px solid rgba(191,164,106,.12);
+      overflow-wrap:anywhere;
     }
-    .home-archive-search__result:last-child{border-bottom:0}
+    .home-archive-search__result:last-child{border-bottom:0;padding-bottom:.48rem}
     .home-archive-search__type{
-      margin:0 0 .12rem;
+      margin:0 0 .1rem;
       color:rgba(182,174,156,.68);
-      font-size:.68rem;
+      font-size:.66rem;
       letter-spacing:.08em;
       text-transform:uppercase;
     }
     .home-archive-search__title{
-      margin:0 0 .2rem;
-      font-size:1rem;
+      margin:0 0 .16rem;
+      font-size:.98rem;
       line-height:1.3;
       letter-spacing:-.01em;
+      overflow-wrap:anywhere;
     }
     .home-archive-search__title a{
       color:rgba(209,187,134,.98);
@@ -190,29 +205,36 @@
     .home-archive-search__excerpt{
       margin:0;
       color:rgba(182,174,156,.86);
-      font-size:.82rem;
-      line-height:1.48;
+      font-size:.81rem;
+      line-height:1.44;
+      overflow-wrap:anywhere;
     }
     .home-archive-search__all{
       display:block;
       width:max-content;
       max-width:100%;
-      margin:.7rem auto 0;
+      margin:.58rem auto 0;
       color:rgba(209,187,134,.92);
-      font-size:.8rem;
+      font-size:.78rem;
+      line-height:1.3;
       text-decoration:none;
+      text-align:center;
       border-bottom:1px solid rgba(191,164,106,.32);
     }
     .home-archive-search__all:hover{border-bottom-color:rgba(191,164,106,.72)}
     @media(max-width:520px){
-      .home-archive-search{padding:1rem .95rem 1.05rem}
-      .home-archive-search__form{gap:.42rem}
-      .home-archive-search__glyph{left:.78rem}
-      .home-archive-search__input{padding:.78rem .82rem .78rem 2.12rem;font-size:.9rem}
-      .home-archive-search__button{padding:.75rem .85rem;font-size:.84rem}
+      .home-archive-search{margin:.6rem auto .9rem;padding:.88rem .82rem .92rem}
+      .home-archive-search__label{margin-bottom:.38rem;font-size:.76rem}
+      .home-archive-search__form{gap:.38rem}
+      .home-archive-search__glyph{left:.74rem}
+      .home-archive-search__input{padding:.72rem .76rem .72rem 2.02rem;font-size:.88rem}
+      .home-archive-search__button{min-width:4.75rem;padding:.69rem .72rem;font-size:.82rem}
+      .home-archive-search__state{margin-top:.55rem;padding-top:.55rem}
+      .home-archive-search__result{padding:.56rem .05rem}
     }
     @media(prefers-reduced-motion:reduce){
       .home-archive-search__button,.home-archive-search__input{transition:none}
+      .home-archive-search__state{animation:none}
     }
   `;
   document.head.appendChild(style);
@@ -277,6 +299,7 @@
     generation += 1;
     list.replaceChildren();
     state.hidden = true;
+    state.removeAttribute("aria-busy");
     status.textContent = "";
     if (clearQuery) input.value = "";
   }
@@ -291,6 +314,7 @@
     const id = ++generation;
     allLink.href = "/tools/search?q=" + encodeURIComponent(term);
     state.hidden = false;
+    state.setAttribute("aria-busy", "true");
     list.replaceChildren();
     status.textContent = "Searching the archive…";
 
@@ -303,6 +327,7 @@
 
       const top = searchResult.results.slice(0, 4);
       if (!top.length) {
+        state.removeAttribute("aria-busy");
         status.textContent = "No results. Try a ship name or fewer words.";
         return;
       }
@@ -339,9 +364,11 @@
       });
 
       list.appendChild(fragment);
+      state.removeAttribute("aria-busy");
       status.textContent = searchResult.results.length + " result" + (searchResult.results.length === 1 ? "" : "s") + " · Showing " + resultData.length;
     } catch (error) {
       if (id !== generation) return;
+      state.removeAttribute("aria-busy");
       console.warn("[OceanLiners.net] Homepage search could not load:", error);
       status.textContent = "Search could not load. Open the full search page below.";
     }
