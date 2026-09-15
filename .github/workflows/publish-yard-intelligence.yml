@@ -1,0 +1,51 @@
+name: Publish yard intelligence
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ships/**.html'
+      - 'tools/search/builder-audit.mjs'
+      - 'tools/search/builder-aliases.json'
+      - 'tools/search/yard-intelligence.mjs'
+      - 'tools/search/package.json'
+      - 'tools/search/package-lock.json'
+      - '.github/workflows/publish-yard-intelligence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-yard-intelligence
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tools/search/package-lock.json
+      - name: Install search tooling
+        run: npm ci --prefix tools/search
+      - name: Generate builder audit
+        run: npm run audit:builders --prefix tools/search
+      - name: Generate yard intelligence
+        run: node tools/search/yard-intelligence.mjs
+      - name: Publish changed feed
+        run: |
+          if [ -z "$(git status --porcelain -- data/curatoros-yards.json)" ]; then
+            echo 'Yard intelligence feed is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/curatoros-yards.json
+          git commit -m 'Update CuratorOS yard intelligence feed'
+          git push
