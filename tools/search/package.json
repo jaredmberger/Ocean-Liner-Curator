@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs",
+    "build": "node build.mjs && node builder-audit.mjs",
     "test": "node check.mjs",
     "audit:builders": "node builder-audit.mjs"
   },
