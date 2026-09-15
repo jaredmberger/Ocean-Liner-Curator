@@ -1,4 +1,4 @@
-/* Ocean Liner Curator — Ship Archive search/filter jump + Shipbuilders path card */
+/* Ocean Liner Curator — Ship Archive search/filter jump + reference path cards */
 (function () {
   "use strict";
 
@@ -68,39 +68,58 @@
     archiveScale.insertAdjacentElement("afterend", wrap);
   }
 
-  function installShipbuildersPathCard() {
-    if (document.getElementById("archive-shipbuilders-path")) return;
-
+  function installReferencePathCards() {
     const row = document.querySelector(".hub-links-grid .archive-feature-row");
     if (!row) return;
 
-    const block = document.createElement("div");
-    block.className = "archive-feature-block";
-    block.id = "archive-shipbuilders-path";
-    block.innerHTML = `
-      <a class="hub-card" href="/shipbuilders">
-        <div class="hub-card-top">
-          <span class="hub-card-title">Shipbuilders</span>
-          <span class="hub-card-meta">Reference Index</span>
-        </div>
-        <p class="hub-card-desc">
-          Browse the archive by the yards and companies that built the ships, with documented vessels, launch years, operators, and ship-specific yard context.
-        </p>
-      </a>
-    `;
+    let shipbuildersBlock = document.getElementById("archive-shipbuilders-path");
+    if (!shipbuildersBlock) {
+      shipbuildersBlock = document.createElement("div");
+      shipbuildersBlock.className = "archive-feature-block";
+      shipbuildersBlock.id = "archive-shipbuilders-path";
+      shipbuildersBlock.innerHTML = `
+        <a class="hub-card" href="/shipbuilders">
+          <div class="hub-card-top">
+            <span class="hub-card-title">Shipbuilders</span>
+            <span class="hub-card-meta">Reference Index</span>
+          </div>
+          <p class="hub-card-desc">
+            Browse the archive by the yards and companies that built the ships, with documented vessels, launch years, operators, and ship-specific yard context.
+          </p>
+        </a>
+      `;
 
-    const collectionLink = Array.from(row.querySelectorAll("a.hub-card")).find(function (link) {
-      return link.getAttribute("href") === "/collections";
-    });
-    const collectionBlock = collectionLink && collectionLink.closest(".archive-feature-block");
+      const collectionLink = Array.from(row.querySelectorAll("a.hub-card")).find(function (link) {
+        return link.getAttribute("href") === "/collections";
+      });
+      const collectionBlock = collectionLink && collectionLink.closest(".archive-feature-block");
 
-    if (collectionBlock) collectionBlock.insertAdjacentElement("afterend", block);
-    else row.insertBefore(block, row.firstChild);
+      if (collectionBlock) collectionBlock.insertAdjacentElement("afterend", shipbuildersBlock);
+      else row.insertBefore(shipbuildersBlock, row.firstChild);
+    }
+
+    if (!document.getElementById("archive-shipping-lines-path")) {
+      const shippingLinesBlock = document.createElement("div");
+      shippingLinesBlock.className = "archive-feature-block";
+      shippingLinesBlock.id = "archive-shipping-lines-path";
+      shippingLinesBlock.innerHTML = `
+        <a class="hub-card" href="/shipping-lines">
+          <div class="hub-card-top">
+            <span class="hub-card-title">Shipping Lines</span>
+            <span class="hub-card-meta">Reference Index</span>
+          </div>
+          <p class="hub-card-desc">
+            Browse the archive by shipping line and operator, with documented ships, service periods, associated builders, and preserved historical naming context.
+          </p>
+        </a>
+      `;
+      shipbuildersBlock.insertAdjacentElement("afterend", shippingLinesBlock);
+    }
   }
 
   function initialize() {
     installSearchJump();
-    installShipbuildersPathCard();
+    installReferencePathCards();
   }
 
   if (document.readyState === "loading") {
