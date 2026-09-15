@@ -1,0 +1,56 @@
+name: Publish operator intelligence
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ships/**.html'
+      - 'tools/search/builder-audit.mjs'
+      - 'tools/search/operator-intelligence.mjs'
+      - 'tools/search/operator-aliases.json'
+      - 'tools/search/package.json'
+      - 'tools/search/package-lock.json'
+      - '.github/workflows/publish-operator-intelligence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-operator-intelligence
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tools/search/package-lock.json
+
+      - name: Install search tooling
+        run: npm ci --prefix tools/search
+
+      - name: Generate ship facts audit
+        run: npm run audit:builders --prefix tools/search
+
+      - name: Generate operator intelligence
+        run: node tools/search/operator-intelligence.mjs
+
+      - name: Publish changed feed
+        run: |
+          if [ -z "$(git status --porcelain -- data/curatoros-operators.json)" ]; then
+            echo 'Operator intelligence feed is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/curatoros-operators.json
+          git commit -m 'Update CuratorOS operator intelligence feed'
+          git push
