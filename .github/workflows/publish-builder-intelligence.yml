@@ -43,7 +43,6 @@ jobs:
         run: |
           node <<'NODE'
           const fs = require('fs');
-          const path = require('path');
           const audit = JSON.parse(fs.readFileSync('tools/search/dist/builders-audit.json', 'utf8'));
           const feed = {
             schemaVersion: 1,
@@ -67,7 +66,7 @@ jobs:
 
       - name: Publish changed feed
         run: |
-          if git diff --quiet -- data/curatoros-builders.json; then
+          if [ -z "$(git status --porcelain -- data/curatoros-builders.json)" ]; then
             echo 'Builder intelligence feed is already current.'
             exit 0
           fi
