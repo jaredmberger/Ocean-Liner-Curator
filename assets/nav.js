@@ -106,3 +106,27 @@
 (function(){"use strict";const path=window.location.pathname;if(path!=="/sitemap"&&path!=="/sitemap/"&&path!=="/sitemap.html")return;if(document.querySelector('script[data-olc-sitemap-search]'))return;const script=document.createElement("script");script.src="/assets/sitemap-search.js?v=20260914";script.defer=true;script.dataset.olcSitemapSearch="true";document.head.appendChild(script);})();
 (function(){"use strict";if(window.location.pathname!=="/ships/ships"&&window.location.pathname!=="/ships/ships/")return;if(document.querySelector('script[data-olc-archive-jump]'))return;const script=document.createElement("script");script.src="/assets/archive-jump.js?v=20260915f";script.defer=true;script.dataset.olcArchiveJump="true";document.head.appendChild(script);})();
 (function(){"use strict";const path=window.location.pathname.replace(/\/$/,"");if(!/^\/ships\/(?!ships$)[^/]+$/.test(path))return;if(document.querySelector('script[data-olc-ship-reference-links]'))return;const script=document.createElement("script");script.src="/assets/ship-reference-links.js?v=20260915b";script.defer=true;script.dataset.olcShipReferenceLinks="true";document.head.appendChild(script);})();
+
+(function(){
+  "use strict";
+  const path=window.location.pathname.replace(/\/$/,"");
+  if(path!=="/explore")return;
+  if(document.getElementById("olc-explore-polish"))return;
+  const style=document.createElement("style");
+  style.id="olc-explore-polish";
+  style.textContent=`
+    @media (min-width:641px){
+      .hero-sub{margin-top:1.05rem}
+      .hero-rule{margin-top:1.15rem;margin-bottom:1rem}
+      .hero-actions{margin-top:1.3rem}
+      .hero-note{margin-top:.85rem}
+    }
+    @media (min-width:701px){
+      .section-star-anchor::before{width:clamp(245px,33vw,390px);opacity:.18}
+    }
+    @media (min-width:601px){
+      .memorial-pin{margin-bottom:3.75rem}
+    }
+  `;
+  document.head.appendChild(style);
+})();
