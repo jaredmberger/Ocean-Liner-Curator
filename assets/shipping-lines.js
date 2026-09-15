@@ -49,6 +49,19 @@
     </article>`;
   }
 
+  function openHashTarget() {
+    if (!location.hash) return;
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!target) return;
+    const button = target.querySelector('.line-head');
+    const body = target.querySelector('.line-body');
+    if (button && body) {
+      button.setAttribute('aria-expanded', 'true');
+      body.hidden = false;
+    }
+    requestAnimationFrame(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  }
+
   function render() {
     const query = normalize(state.query.trim());
     const lines = state.lines.filter(line => {
@@ -73,6 +86,7 @@
         body.hidden = open;
       });
     });
+    openHashTarget();
   }
 
   function renderLetters(lines) {
@@ -133,4 +147,5 @@
     state.query = event.target.value;
     render();
   });
+  window.addEventListener('hashchange', openHashTarget);
 })();
