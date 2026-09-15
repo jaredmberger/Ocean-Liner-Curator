@@ -1,0 +1,3522 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-15T08:28:36.552Z",
+  "source": "Explicit class and sister-ship wording in tracked ship guides",
+  "summary": {
+    "shipGuides": 302,
+    "guidesWithExplicitClass": 12,
+    "canonicalClasses": 9,
+    "explicitSisterLinks": 14,
+    "unresolvedSisterMentions": 93
+  },
+  "classes": [
+    {
+      "id": "olympic",
+      "name": "Olympic",
+      "rawValues": [
+        "Olympic"
+      ],
+      "shipCount": 3,
+      "ships": [
+        {
+          "name": "RMS Olympic",
+          "path": "ships/rms-olympic.html",
+          "url": "/ships/rms-olympic",
+          "launchYear": "1911"
+        },
+        {
+          "name": "RMS Titanic",
+          "path": "ships/rms-titanic.html",
+          "url": "/ships/rms-titanic",
+          "launchYear": "1912"
+        },
+        {
+          "name": "RMS/HMHS Britannic",
+          "path": "ships/rms-britannic.html",
+          "url": "/ships/rms-britannic",
+          "launchYear": "1914"
+        }
+      ]
+    },
+    {
+      "id": "athenic",
+      "name": "Athenic",
+      "rawValues": [
+        "Athenic"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS Corinthic",
+          "path": "ships/ss-corinthic.html",
+          "url": "/ships/ss-corinthic",
+          "launchYear": "1902"
+        },
+        {
+          "name": "SS Ionic",
+          "path": "ships/ss-ionic.html",
+          "url": "/ships/ss-ionic",
+          "launchYear": "1903"
+        }
+      ]
+    },
+    {
+      "id": "jubilee",
+      "name": "Jubilee",
+      "rawValues": [
+        "Jubilee"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS Persic",
+          "path": "ships/ss-persic.html",
+          "url": "/ships/ss-persic",
+          "launchYear": "1899"
+        },
+        {
+          "name": "SS Runic",
+          "path": "ships/ss-runic.html",
+          "url": "/ships/ss-runic",
+          "launchYear": "1901"
+        }
+      ]
+    },
+    {
+      "id": "barbarossa",
+      "name": "Barbarossa",
+      "rawValues": [
+        "Barbarossa"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Friedrich der Grosse",
+          "path": "ships/ss-friedrich-der-grosse.html",
+          "url": "/ships/ss-friedrich-der-grosse",
+          "launchYear": "1896"
+        }
+      ]
+    },
+    {
+      "id": "hamburg-america-line-s-imperator",
+      "name": "Hamburg America Line’s Imperator",
+      "rawValues": [
+        "Hamburg America Line’s Imperator"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Bismarck",
+          "path": "ships/ss-bismarck-1914.html",
+          "url": "/ships/ss-bismarck-1914",
+          "launchYear": "1914"
+        }
+      ]
+    },
+    {
+      "id": "saxonia",
+      "name": "Saxonia",
+      "rawValues": [
+        "Saxonia"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "RMS Sylvania",
+          "path": "ships/rms-sylvania.html",
+          "url": "/ships/rms-sylvania",
+          "launchYear": "1957"
+        }
+      ]
+    },
+    {
+      "id": "strath",
+      "name": "Strath",
+      "rawValues": [
+        "Strath"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Strathaird",
+          "path": "ships/ss-strathaird.html",
+          "url": "/ships/ss-strathaird",
+          "launchYear": "1931"
+        }
+      ]
+    },
+    {
+      "id": "the-athenic",
+      "name": "The Athenic",
+      "rawValues": [
+        "The Athenic"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Corinthic",
+          "path": "ships/ss-corinthic.html",
+          "url": "/ships/ss-corinthic",
+          "launchYear": "1902"
+        }
+      ]
+    },
+    {
+      "id": "the-manhattan",
+      "name": "The Manhattan",
+      "rawValues": [
+        "The Manhattan"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Washington",
+          "path": "ships/ss-washington.html",
+          "url": "/ships/ss-washington",
+          "launchYear": "1933"
+        }
+      ]
+    }
+  ],
+  "sisterLinks": [
+    {
+      "a": {
+        "name": "RMS Andania",
+        "path": "ships/rms-andania.html",
+        "url": "/ships/rms-andania"
+      },
+      "b": {
+        "name": "RMS Alaunia",
+        "path": "ships/rms-alaunia.html",
+        "url": "/ships/rms-alaunia"
+      },
+      "evidenceFrom": "ships/rms-andania.html"
+    },
+    {
+      "a": {
+        "name": "RMS Lucania",
+        "path": "ships/rms-lucania.html",
+        "url": "/ships/rms-lucania"
+      },
+      "b": {
+        "name": "RMS Campania",
+        "path": "ships/rms-campania.html",
+        "url": "/ships/rms-campania"
+      },
+      "evidenceFrom": "ships/rms-lucania.html"
+    },
+    {
+      "a": {
+        "name": "RMS Olympic",
+        "path": "ships/rms-olympic.html",
+        "url": "/ships/rms-olympic"
+      },
+      "b": {
+        "name": "RMS Titanic",
+        "path": "ships/rms-titanic.html",
+        "url": "/ships/rms-titanic"
+      },
+      "evidenceFrom": "ships/rms-olympic.html"
+    },
+    {
+      "a": {
+        "name": "SS Batavia",
+        "path": "ships/ss-batavia.html",
+        "url": "/ships/ss-batavia"
+      },
+      "b": {
+        "name": "SS Bulgaria",
+        "path": "ships/ss-bulgaria.html",
+        "url": "/ships/ss-bulgaria"
+      },
+      "evidenceFrom": "ships/ss-batavia.html"
+    },
+    {
+      "a": {
+        "name": "SS Bothnia",
+        "path": "ships/ss-bothnia.html",
+        "url": "/ships/ss-bothnia"
+      },
+      "b": {
+        "name": "RMS Scythia",
+        "path": "ships/rms-scythia.html",
+        "url": "/ships/rms-scythia"
+      },
+      "evidenceFrom": "ships/ss-bothnia.html"
+    },
+    {
+      "a": {
+        "name": "SS Constitution",
+        "path": "ships/ss-constitution.html",
+        "url": "/ships/ss-constitution"
+      },
+      "b": {
+        "name": "SS Independence",
+        "path": "ships/ss-independence.html",
+        "url": "/ships/ss-independence"
+      },
+      "evidenceFrom": "ships/ss-constitution.html"
+    },
+    {
+      "a": {
+        "name": "SS Cristoforo Colombo",
+        "path": "ships/ss-cristoforo-colombo.html",
+        "url": "/ships/ss-cristoforo-colombo"
+      },
+      "b": {
+        "name": "SS Andrea Doria",
+        "path": "ships/ss-andrea-doria.html",
+        "url": "/ships/ss-andrea-doria"
+      },
+      "evidenceFrom": "ships/ss-cristoforo-colombo.html"
+    },
+    {
+      "a": {
+        "name": "SS Duilio",
+        "path": "ships/ss-duilio.html",
+        "url": "/ships/ss-duilio"
+      },
+      "b": {
+        "name": "SS Giulio Cesare",
+        "path": "ships/ss-giulio-cesare.html",
+        "url": "/ships/ss-giulio-cesare"
+      },
+      "evidenceFrom": "ships/ss-duilio.html"
+    },
+    {
+      "a": {
+        "name": "SS Gneisenau",
+        "path": "ships/ss-gneisenau.html",
+        "url": "/ships/ss-gneisenau"
+      },
+      "b": {
+        "name": "SS Scharnhorst",
+        "path": "ships/ss-scharnhorst.html",
+        "url": "/ships/ss-scharnhorst"
+      },
+      "evidenceFrom": "ships/ss-gneisenau.html"
+    },
+    {
+      "a": {
+        "name": "SS Manhattan (1932)",
+        "path": "ships/ss-manhattan.html",
+        "url": "/ships/ss-manhattan"
+      },
+      "b": {
+        "name": "SS Washington",
+        "path": "ships/ss-washington.html",
+        "url": "/ships/ss-washington"
+      },
+      "evidenceFrom": "ships/ss-manhattan.html"
+    },
+    {
+      "a": {
+        "name": "SS Noordam",
+        "path": "ships/ss-noordam.html",
+        "url": "/ships/ss-noordam"
+      },
+      "b": {
+        "name": "SS Rijndam",
+        "path": "ships/ss-rijndam-1901.html",
+        "url": "/ships/ss-rijndam-1901"
+      },
+      "evidenceFrom": "ships/ss-noordam.html"
+    },
+    {
+      "a": {
+        "name": "SS Reliance",
+        "path": "ships/ss-reliance.html",
+        "url": "/ships/ss-reliance"
+      },
+      "b": {
+        "name": "SS Resolute",
+        "path": "ships/ss-resolute.html",
+        "url": "/ships/ss-resolute"
+      },
+      "evidenceFrom": "ships/ss-reliance.html"
+    },
+    {
+      "a": {
+        "name": "SS St. Louis",
+        "path": "ships/ss-st-louis.html",
+        "url": "/ships/ss-st-louis"
+      },
+      "b": {
+        "name": "SS Milwaukee",
+        "path": "ships/ss-milwaukee.html",
+        "url": "/ships/ss-milwaukee"
+      },
+      "evidenceFrom": "ships/ss-st-louis.html"
+    },
+    {
+      "a": {
+        "name": "Tatsuta Maru",
+        "path": "ships/tatsuta-maru-1929.html",
+        "url": "/ships/tatsuta-maru-1929"
+      },
+      "b": {
+        "name": "Asama Maru",
+        "path": "ships/asama-maru-1929.html",
+        "url": "/ships/asama-maru-1929"
+      },
+      "evidenceFrom": "ships/tatsuta-maru-1929.html"
+    }
+  ],
+  "unresolvedSisterMentions": [
+    {
+      "ship": "Oceania",
+      "path": "ships/oceania.html",
+      "mentioned": "rescued",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Oceania",
+      "path": "ships/oceania.html",
+      "mentioned": "but the loss was still severe",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Alaunia",
+      "path": "ships/rms-alaunia.html",
+      "mentioned": "Andania",
+      "candidateCount": 2
+    },
+    {
+      "ship": "RMS Alaunia",
+      "path": "ships/rms-alaunia.html",
+      "mentioned": "Aurania Loss Mined off Eastbourne",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Alaunia",
+      "path": "ships/rms-alaunia.html",
+      "mentioned": "East Sussex",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Andania",
+      "path": "ships/rms-andania-1922.html",
+      "mentioned": "Antonia",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Andania",
+      "path": "ships/rms-andania-1922.html",
+      "mentioned": "Ausonia",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Andania",
+      "path": "ships/rms-andania-1922.html",
+      "mentioned": "sank o",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Andania",
+      "path": "ships/rms-andania.html",
+      "mentioned": "Aurania Loss Torpedoed by U-46 near Rathlin Island",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Andania",
+      "path": "ships/rms-andania.html",
+      "mentioned": "27 January 1918",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Aurania",
+      "path": "ships/rms-aurania.html",
+      "mentioned": "Andania",
+      "candidateCount": 2
+    },
+    {
+      "ship": "RMS Aurania",
+      "path": "ships/rms-aurania.html",
+      "mentioned": "Alaunia Wartime career Exclusively troop",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Aurania",
+      "path": "ships/rms-aurania.html",
+      "mentioned": "then stranded near Tobermory",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Aurania",
+      "path": "ships/rms-aurania.html",
+      "mentioned": "became",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Caledonia",
+      "path": "ships/rms-caledonia.html",
+      "mentioned": "California · RMS Transylvania Tonnage 17",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Caledonia",
+      "path": "ships/rms-caledonia.html",
+      "mentioned": "046 GRT Dimensions Length 552 ft · Beam 70",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Cambria",
+      "path": "ships/rms-cambria-1845.html",
+      "mentioned": "Hibernia Later service changes Crimean War transport in 1854",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Empress of Russia",
+      "path": "ships/rms-empress-of-russia.html",
+      "mentioned": "involved in",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Olympic",
+      "path": "ships/rms-olympic.html",
+      "mentioned": "Britannic",
+      "candidateCount": 2
+    },
+    {
+      "ship": "RMS Olympic",
+      "path": "ships/rms-olympic.html",
+      "mentioned": "Olympic had the longest working career of the three",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Olympic",
+      "path": "ships/rms-olympic.html",
+      "mentioned": "became a defining “early modern” North Atlantic liner—large",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Olympic",
+      "path": "ships/rms-olympic.html",
+      "mentioned": "steady",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Olympic",
+      "path": "ships/rms-olympic.html",
+      "mentioned": "repeatedly refit as technolo",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Asturias",
+      "path": "ships/ss-asturias-1925.html",
+      "mentioned": "Alcantara Builder Harland & Wolff",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Baltic",
+      "path": "ships/ss-baltic-1871.html",
+      "mentioned": "same formative building program",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Baltic",
+      "path": "ships/ss-baltic-1871.html",
+      "mentioned": "rather than in isolation",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Bothnia",
+      "path": "ships/ss-bothnia.html",
+      "mentioned": "Gallia",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Bothnia",
+      "path": "ships/ss-bothnia.html",
+      "mentioned": "commonly listed as close sisters Fate Withdrawn/sold in 1898",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Bretagne",
+      "path": "ships/ss-bretagne.html",
+      "mentioned": "Provence Route context Marseille-based service",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Bretagne",
+      "path": "ships/ss-bretagne.html",
+      "mentioned": "especially to North Africa",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Bretagne",
+      "path": "ships/ss-bretagne.html",
+      "mentioned": "other French imperial or post-imperial destinations",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Bretagne",
+      "path": "ships/ss-bretagne.html",
+      "mentioned": "route emphasis varying over time Career end",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cathay",
+      "path": "ships/ss-cathay-1924.html",
+      "mentioned": "Comorin",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cathay",
+      "path": "ships/ss-cathay-1924.html",
+      "mentioned": "Chitral Later wartime role Armed merchant cruiser",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cathay",
+      "path": "ships/ss-cathay-1924.html",
+      "mentioned": "then troop ship Final fate Bombed",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cathay",
+      "path": "ships/ss-cathay-1924.html",
+      "mentioned": "sunk off Bougie",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cathay",
+      "path": "ships/ss-cathay-1924.html",
+      "mentioned": "Algeria",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cathay",
+      "path": "ships/ss-cathay-1924.html",
+      "mentioned": "in November 1942 Interwar liner figures are generally",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Constitution",
+      "path": "ships/ss-constitution.html",
+      "mentioned": "Independence Note on figures",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cristoforo Colombo",
+      "path": "ships/ss-cristoforo-colombo.html",
+      "mentioned": "Andrea Doria Builder Ansaldo Shipyards",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cristoforo Colombo",
+      "path": "ships/ss-cristoforo-colombo.html",
+      "mentioned": "Genoa Launched 10 May 1953 Entered service 1954",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duchess of Atholl",
+      "path": "ships/ss-duchess-of-atholl.html",
+      "mentioned": "finished before her despite the earlier launch",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "mentioned": "Naples",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "mentioned": "South American ports",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "mentioned": "especially Buenos Aires",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "mentioned": "Giulio Cesare Gross tonnage Often cited around 24",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "mentioned": "281 GRT in ship-reference sources",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Finland",
+      "path": "ships/ss-finland.html",
+      "mentioned": "Kroonland Wartime service Served as USAT Finland",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Germanic",
+      "path": "ships/ss-germanic.html",
+      "mentioned": "Britannic Blue Riband context Held eastbound",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Gneisenau",
+      "path": "ships/ss-gneisenau.html",
+      "mentioned": "Potsdam Builder Deschimag AG Weser",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Kaiser Wilhelm der Grosse",
+      "path": "ships/ss-kaiser-wilhelm-der-grosse.html",
+      "mentioned": "together",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Majestic",
+      "path": "ships/ss-majestic-1889.html",
+      "mentioned": "Teutonic",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Manhattan (1932)",
+      "path": "ships/ss-manhattan.html",
+      "mentioned": "but designed primarily for reliable service",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Manhattan (1932)",
+      "path": "ships/ss-manhattan.html",
+      "mentioned": "modern comfort",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Manhattan (1932)",
+      "path": "ships/ss-manhattan.html",
+      "mentioned": "Manhattan class” · sister ship",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Michelangelo (1965)",
+      "path": "ships/ss-michelangelo-1965.html",
+      "mentioned": "Raffaello",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Michelangelo (1965)",
+      "path": "ships/ss-michelangelo-1965.html",
+      "mentioned": "she embodied a late-modern Italian “ship of state” idea",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Minnesota",
+      "path": "ships/ss-minnesota.html",
+      "mentioned": "Dakota Type Ocean liner / passenger-cargo ship",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Minnesota",
+      "path": "ships/ss-minnesota.html",
+      "mentioned": "later troop transport Gross tonnage About 13",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Minnesota",
+      "path": "ships/ss-minnesota.html",
+      "mentioned": "544 GRT Length About 622 ft Beam About 73",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Morro Castle",
+      "path": "ships/ss-morro-castle.html",
+      "mentioned": "Oriente Builder Newport News Shipbuilding & Dry Dock Co",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Noordam",
+      "path": "ships/ss-noordam.html",
+      "mentioned": "belonged to the same broad group as the larger Potsdam",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Orion",
+      "path": "ships/ss-orion.html",
+      "mentioned": "Orcades Type Ocean liner",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Orion",
+      "path": "ships/ss-orion.html",
+      "mentioned": "later troopship Gross tonnage 23",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Orion",
+      "path": "ships/ss-orion.html",
+      "mentioned": "twin screws Power About 24",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Pennsylvania",
+      "path": "ships/ss-pennsylvania.html",
+      "mentioned": "California",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Pennsylvania",
+      "path": "ships/ss-pennsylvania.html",
+      "mentioned": "Virginia Final fate Laid up in 1958",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Pennsylvania",
+      "path": "ships/ss-pennsylvania.html",
+      "mentioned": "after 1938 rebui",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Persic",
+      "path": "ships/ss-persic.html",
+      "mentioned": "that ended in total loss",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Persic",
+      "path": "ships/ss-persic.html",
+      "mentioned": "Persic survived major wartime damage",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Persic",
+      "path": "ships/ss-persic.html",
+      "mentioned": "resumed service",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS President Coolidge",
+      "path": "ships/ss-president-coolidge.html",
+      "mentioned": "President Hoover Builder Newport News Shipbuilding",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS President Hoover",
+      "path": "ships/ss-president-hoover.html",
+      "mentioned": "President Coolidge Builder Newport News Shipbuilding",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS President Hoover",
+      "path": "ships/ss-president-hoover.html",
+      "mentioned": "Dry Dock Company",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Raffaello (1965)",
+      "path": "ships/ss-raffaello-1965.html",
+      "mentioned": "Michelangelo",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Raffaello (1965)",
+      "path": "ships/ss-raffaello-1965.html",
+      "mentioned": "she was designed for high-speed North Atlantic service",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Reliance",
+      "path": "ships/ss-reliance.html",
+      "mentioned": "Resolute (built separately",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Resolute",
+      "path": "ships/ss-resolute.html",
+      "mentioned": "Reliance Interwar operators Royal Holland Lloyd",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Roma",
+      "path": "ships/ss-roma.html",
+      "mentioned": "Augustus Notable incident Collision",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS St. Louis",
+      "path": "ships/ss-st-louis.html",
+      "mentioned": "but her historical memory is dominated by one event",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS St. Louis",
+      "path": "ships/ss-st-louis.html",
+      "mentioned": "Milwaukee Compare St",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS St. Louis",
+      "path": "ships/ss-st-louis.html",
+      "mentioned": "Milwaukee Tonnage About 16",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS St. Louis",
+      "path": "ships/ss-st-louis.html",
+      "mentioned": "732 GRT Length / Beam Approximately 174",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Strathaird",
+      "path": "ships/ss-strathaird.html",
+      "mentioned": "such as Strathnaver",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Traffic",
+      "path": "ships/ss-traffic.html",
+      "mentioned": "Nomadic Fate Lost during World War II (1941",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Traffic",
+      "path": "ships/ss-traffic.html",
+      "mentioned": "collision",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Virginia",
+      "path": "ships/ss-virginia.html",
+      "mentioned": "California",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Virginia",
+      "path": "ships/ss-virginia.html",
+      "mentioned": "Pennsylvania Final fate Laid up in 1958",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Virginia",
+      "path": "ships/ss-virginia.html",
+      "mentioned": "after 1938 rebu",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Virginia",
+      "path": "ships/ss-virginia.html",
+      "mentioned": "Ask Ocean Liner GPT Ship Guides Index Home Note",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Tatsuta Maru",
+      "path": "ships/tatsuta-maru-1929.html",
+      "mentioned": "Chichibu Maru",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Tatsuta Maru",
+      "path": "ships/tatsuta-maru-1929.html",
+      "mentioned": "modern motor-ship engineering",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Tatsuta Maru",
+      "path": "ships/tatsuta-maru-1929.html",
+      "mentioned": "refined accommodations",
+      "candidateCount": 0
+    }
+  ],
+  "ships": [
+    {
+      "name": "Asama Maru",
+      "path": "ships/asama-maru-1929.html",
+      "url": "/ships/asama-maru-1929",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "Athlone Castle",
+      "path": "ships/athlone-castle.html",
+      "url": "/ships/athlone-castle",
+      "launchYear": "1936",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "Monarch of Bermuda",
+      "path": "ships/monarch-of-bermuda.html",
+      "url": "/ships/monarch-of-bermuda",
+      "launchYear": "1931",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Augustus",
+      "path": "ships/ms-augustus.html",
+      "url": "/ships/ms-augustus",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Bermuda",
+      "path": "ships/ms-bermuda.html",
+      "url": "/ships/ms-bermuda",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Gripsholm (1925)",
+      "path": "ships/ms-gripsholm-1925.html",
+      "url": "/ships/ms-gripsholm-1925",
+      "launchYear": "1925",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Kungsholm (1928)",
+      "path": "ships/ms-kungsholm-1928.html",
+      "url": "/ships/ms-kungsholm-1928",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Saturnia",
+      "path": "ships/ms-saturnia.html",
+      "url": "/ships/ms-saturnia",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Stockholm",
+      "path": "ships/ms-stockholm.html",
+      "url": "/ships/ms-stockholm",
+      "launchYear": "1946",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Vulcania",
+      "path": "ships/ms-vulcania.html",
+      "url": "/ships/ms-vulcania",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MV Britannic",
+      "path": "ships/mv-britannic.html",
+      "url": "/ships/mv-britannic",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MV Georgic",
+      "path": "ships/mv-georgic.html",
+      "url": "/ships/mv-georgic",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "Neptunia",
+      "path": "ships/neptunia.html",
+      "url": "/ships/neptunia",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "NYK Hikawa Maru",
+      "path": "ships/nyk-hikawa-maru.html",
+      "url": "/ships/nyk-hikawa-maru",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "Oceania",
+      "path": "ships/oceania.html",
+      "url": "/ships/oceania",
+      "launchYear": "1933",
+      "classes": [],
+      "sisters": [
+        "rescued",
+        "but the loss was still severe"
+      ]
+    },
+    {
+      "name": "QSMV Dominion Monarch",
+      "path": "ships/qsmv-dominion-monarch.html",
+      "url": "/ships/qsmv-dominion-monarch",
+      "launchYear": "1939",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "Queen Elizabeth 2",
+      "path": "ships/queen-elizabeth-2.html",
+      "url": "/ships/queen-elizabeth-2",
+      "launchYear": "1969",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Adriatic",
+      "path": "ships/rms-adriatic.html",
+      "url": "/ships/rms-adriatic",
+      "launchYear": "1907",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Alaunia",
+      "path": "ships/rms-alaunia.html",
+      "url": "/ships/rms-alaunia",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": [
+        "Andania",
+        "Aurania Loss Mined off Eastbourne",
+        "East Sussex"
+      ]
+    },
+    {
+      "name": "RMS Alcantara",
+      "path": "ships/rms-alcantara-1926.html",
+      "url": "/ships/rms-alcantara-1926",
+      "launchYear": "1926",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Andania",
+      "path": "ships/rms-andania-1922.html",
+      "url": "/ships/rms-andania-1922",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": [
+        "Antonia",
+        "Ausonia",
+        "sank o"
+      ]
+    },
+    {
+      "name": "RMS Andania",
+      "path": "ships/rms-andania.html",
+      "url": "/ships/rms-andania",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": [
+        "Alaunia",
+        "Aurania Loss Torpedoed by U-46 near Rathlin Island",
+        "27 January 1918"
+      ]
+    },
+    {
+      "name": "RMS Andes",
+      "path": "ships/rms-andes-1939.html",
+      "url": "/ships/rms-andes-1939",
+      "launchYear": "1939",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Aquitania",
+      "path": "ships/rms-aquitania.html",
+      "url": "/ships/rms-aquitania",
+      "launchYear": "1914",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Arundel Castle (1921)",
+      "path": "ships/rms-arundel-castle-1921.html",
+      "url": "/ships/rms-arundel-castle-1921",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Ascania",
+      "path": "ships/rms-ascania.html",
+      "url": "/ships/rms-ascania",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Asturias (1908)",
+      "path": "ships/rms-asturias-1908.html",
+      "url": "/ships/rms-asturias-1908",
+      "launchYear": "1908",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Aurania",
+      "path": "ships/rms-aurania.html",
+      "url": "/ships/rms-aurania",
+      "launchYear": "1916",
+      "classes": [],
+      "sisters": [
+        "Andania",
+        "Alaunia Wartime career Exclusively troop",
+        "then stranded near Tobermory",
+        "became"
+      ]
+    },
+    {
+      "name": "RMS Baltic",
+      "path": "ships/rms-baltic.html",
+      "url": "/ships/rms-baltic",
+      "launchYear": "1904",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Berengaria",
+      "path": "ships/rms-berengaria.html",
+      "url": "/ships/rms-berengaria",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Britannia",
+      "path": "ships/rms-britannia-1840.html",
+      "url": "/ships/rms-britannia-1840",
+      "launchYear": "1840",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Britannic",
+      "path": "ships/rms-britannic-1874.html",
+      "url": "/ships/rms-britannic-1874",
+      "launchYear": "1874",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS/HMHS Britannic",
+      "path": "ships/rms-britannic.html",
+      "url": "/ships/rms-britannic",
+      "launchYear": "1914",
+      "classes": [
+        "Olympic"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "RMS Caledonia",
+      "path": "ships/rms-caledonia.html",
+      "url": "/ships/rms-caledonia",
+      "launchYear": "1925",
+      "classes": [],
+      "sisters": [
+        "California · RMS Transylvania Tonnage 17",
+        "046 GRT Dimensions Length 552 ft · Beam 70"
+      ]
+    },
+    {
+      "name": "RMS Cambria",
+      "path": "ships/rms-cambria-1845.html",
+      "url": "/ships/rms-cambria-1845",
+      "launchYear": "1845",
+      "classes": [],
+      "sisters": [
+        "Hibernia Later service changes Crimean War transport in 1854"
+      ]
+    },
+    {
+      "name": "RMS Cameronia",
+      "path": "ships/rms-cameronia.html",
+      "url": "/ships/rms-cameronia",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Campania",
+      "path": "ships/rms-campania.html",
+      "url": "/ships/rms-campania",
+      "launchYear": "1893",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Carinthia",
+      "path": "ships/rms-carinthia.html",
+      "url": "/ships/rms-carinthia",
+      "launchYear": "1956",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Carmania",
+      "path": "ships/rms-carmania.html",
+      "url": "/ships/rms-carmania",
+      "launchYear": "1905",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Caronia (1947)",
+      "path": "ships/rms-caronia-1947.html",
+      "url": "/ships/rms-caronia-1947",
+      "launchYear": "1947",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Carpathia",
+      "path": "ships/rms-carpathia.html",
+      "url": "/ships/rms-carpathia",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Cedric",
+      "path": "ships/rms-cedric.html",
+      "url": "/ships/rms-cedric",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Celtic",
+      "path": "ships/rms-celtic.html",
+      "url": "/ships/rms-celtic",
+      "launchYear": "1901",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Empress of Australia",
+      "path": "ships/rms-empress-of-australia.html",
+      "url": "/ships/rms-empress-of-australia",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Empress of Britain",
+      "path": "ships/rms-empress-of-britain.html",
+      "url": "/ships/rms-empress-of-britain",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Empress of Canada",
+      "path": "ships/rms-empress-of-canada.html",
+      "url": "/ships/rms-empress-of-canada",
+      "launchYear": "1920",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Empress of Ireland",
+      "path": "ships/rms-empress-of-ireland.html",
+      "url": "/ships/rms-empress-of-ireland",
+      "launchYear": "1906",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Empress of Japan (1929)",
+      "path": "ships/rms-empress-of-japan-1929.html",
+      "url": "/ships/rms-empress-of-japan-1929",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Empress of Russia",
+      "path": "ships/rms-empress-of-russia.html",
+      "url": "/ships/rms-empress-of-russia",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": [
+        "involved in"
+      ]
+    },
+    {
+      "name": "RMS Etruria (1884)",
+      "path": "ships/rms-etruria-1884.html",
+      "url": "/ships/rms-etruria-1884",
+      "launchYear": "1884",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Franconia (1910)",
+      "path": "ships/rms-franconia-1910.html",
+      "url": "/ships/rms-franconia-1910",
+      "launchYear": "1910",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Franconia",
+      "path": "ships/rms-franconia.html",
+      "url": "/ships/rms-franconia",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Homeric (1913)",
+      "path": "ships/rms-homeric.html",
+      "url": "/ships/rms-homeric",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Ivernia",
+      "path": "ships/rms-ivernia.html",
+      "url": "/ships/rms-ivernia",
+      "launchYear": "1955",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Kenilworth Castle",
+      "path": "ships/rms-kenilworth-castle.html",
+      "url": "/ships/rms-kenilworth-castle",
+      "launchYear": "1904",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Lancastria",
+      "path": "ships/rms-lancastria.html",
+      "url": "/ships/rms-lancastria",
+      "launchYear": "1920",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Laurentic",
+      "path": "ships/rms-laurentic.html",
+      "url": "/ships/rms-laurentic",
+      "launchYear": "1909",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Lucania",
+      "path": "ships/rms-lucania.html",
+      "url": "/ships/rms-lucania",
+      "launchYear": "1893",
+      "classes": [],
+      "sisters": [
+        "Campania"
+      ]
+    },
+    {
+      "name": "RMS Lusitania",
+      "path": "ships/rms-lusitania.html",
+      "url": "/ships/rms-lusitania",
+      "launchYear": "1907",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Majestic",
+      "path": "ships/rms-majestic.html",
+      "url": "/ships/rms-majestic",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Mauretania (II)",
+      "path": "ships/rms-mauretania-ii.html",
+      "url": "/ships/rms-mauretania-ii",
+      "launchYear": "1939",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Mauretania",
+      "path": "ships/rms-mauretania.html",
+      "url": "/ships/rms-mauretania",
+      "launchYear": "1907",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Megantic",
+      "path": "ships/rms-megantic-1909.html",
+      "url": "/ships/rms-megantic-1909",
+      "launchYear": "1909",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Moldavia",
+      "path": "ships/rms-moldavia.html",
+      "url": "/ships/rms-moldavia",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Oceanic (1899)",
+      "path": "ships/rms-oceanic-1899.html",
+      "url": "/ships/rms-oceanic-1899",
+      "launchYear": "1899",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Olympic",
+      "path": "ships/rms-olympic.html",
+      "url": "/ships/rms-olympic",
+      "launchYear": "1911",
+      "classes": [
+        "Olympic"
+      ],
+      "sisters": [
+        "Titanic",
+        "Britannic",
+        "Olympic had the longest working career of the three",
+        "became a defining “early modern” North Atlantic liner—large",
+        "steady",
+        "repeatedly refit as technolo"
+      ]
+    },
+    {
+      "name": "RMS Orontes",
+      "path": "ships/rms-orontes.html",
+      "url": "/ships/rms-orontes",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Persia",
+      "path": "ships/rms-persia-1855.html",
+      "url": "/ships/rms-persia-1855",
+      "launchYear": "1855",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Queen Elizabeth",
+      "path": "ships/rms-queen-elizabeth.html",
+      "url": "/ships/rms-queen-elizabeth",
+      "launchYear": "1938",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Queen Mary 2",
+      "path": "ships/rms-queen-mary-2.html",
+      "url": "/ships/rms-queen-mary-2",
+      "launchYear": "2004",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Queen Mary",
+      "path": "ships/rms-queen-mary.html",
+      "url": "/ships/rms-queen-mary",
+      "launchYear": "1936",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Saxonia",
+      "path": "ships/rms-saxonia.html",
+      "url": "/ships/rms-saxonia",
+      "launchYear": "1954",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Scotia",
+      "path": "ships/rms-scotia-1861.html",
+      "url": "/ships/rms-scotia-1861",
+      "launchYear": "1861",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Scythia",
+      "path": "ships/rms-scythia.html",
+      "url": "/ships/rms-scythia",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Servia",
+      "path": "ships/rms-servia-1881.html",
+      "url": "/ships/rms-servia-1881",
+      "launchYear": "1881",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Strathnaver",
+      "path": "ships/rms-strathnaver.html",
+      "url": "/ships/rms-strathnaver",
+      "launchYear": "1931",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Sylvania",
+      "path": "ships/rms-sylvania.html",
+      "url": "/ships/rms-sylvania",
+      "launchYear": "1957",
+      "classes": [
+        "Saxonia"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "RMS Teutonic (1889)",
+      "path": "ships/rms-teutonic.html",
+      "url": "/ships/rms-teutonic",
+      "launchYear": "1889",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Titanic",
+      "path": "ships/rms-titanic.html",
+      "url": "/ships/rms-titanic",
+      "launchYear": "1912",
+      "classes": [
+        "Olympic"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "RMS Transylvania",
+      "path": "ships/rms-transylvania.html",
+      "url": "/ships/rms-transylvania",
+      "launchYear": "1925",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Umbria (1884)",
+      "path": "ships/rms-umbria-1884.html",
+      "url": "/ships/rms-umbria-1884",
+      "launchYear": "1884",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Viceroy of India",
+      "path": "ships/rms-viceroy-of-india.html",
+      "url": "/ships/rms-viceroy-of-india",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Walmer Castle",
+      "path": "ships/rms-walmer-castle.html",
+      "url": "/ships/rms-walmer-castle",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Windsor Castle (1921)",
+      "path": "ships/rms-windsor-castle-1921.html",
+      "url": "/ships/rms-windsor-castle-1921",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Windsor Castle",
+      "path": "ships/rms-windsor-castle.html",
+      "url": "/ships/rms-windsor-castle",
+      "launchYear": "1960",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Adriatic (1872)",
+      "path": "ships/ss-adriatic-1872.html",
+      "url": "/ships/ss-adriatic-1872",
+      "launchYear": "1872",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Afric",
+      "path": "ships/ss-afric.html",
+      "url": "/ships/ss-afric",
+      "launchYear": "1899",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Albert Ballin",
+      "path": "ships/ss-albert-ballin.html",
+      "url": "/ships/ss-albert-ballin",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Albertic",
+      "path": "ships/ss-albertic.html",
+      "url": "/ships/ss-albertic",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS America",
+      "path": "ships/ss-america.html",
+      "url": "/ships/ss-america",
+      "launchYear": "1940",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Amerika (1905)",
+      "path": "ships/ss-amerika-1905.html",
+      "url": "/ships/ss-amerika-1905",
+      "launchYear": "1905",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Andrea Doria",
+      "path": "ships/ss-andrea-doria.html",
+      "url": "/ships/ss-andrea-doria",
+      "launchYear": "1953",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Arabic (1920)",
+      "path": "ships/ss-arabic-1920.html",
+      "url": "/ships/ss-arabic-1920",
+      "launchYear": "1920",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Arabic",
+      "path": "ships/ss-arabic.html",
+      "url": "/ships/ss-arabic",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Arcadia (1954)",
+      "path": "ships/ss-arcadia-1954.html",
+      "url": "/ships/ss-arcadia-1954",
+      "launchYear": "1954",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Arctic",
+      "path": "ships/ss-arctic.html",
+      "url": "/ships/ss-arctic",
+      "launchYear": "1850",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Armadale Castle",
+      "path": "ships/ss-armadale-castle.html",
+      "url": "/ships/ss-armadale-castle",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Ascania",
+      "path": "ships/ss-ascania-1911.html",
+      "url": "/ships/ss-ascania-1911",
+      "launchYear": "1911",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Assyria",
+      "path": "ships/ss-assyria.html",
+      "url": "/ships/ss-assyria",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Asturias",
+      "path": "ships/ss-asturias-1925.html",
+      "url": "/ships/ss-asturias-1925",
+      "launchYear": "1925",
+      "classes": [],
+      "sisters": [
+        "Alcantara Builder Harland & Wolff"
+      ]
+    },
+    {
+      "name": "SS Athenic",
+      "path": "ships/ss-athenic.html",
+      "url": "/ships/ss-athenic",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Atlantic (1873)",
+      "path": "ships/ss-atlantic-1873.html",
+      "url": "/ships/ss-atlantic-1873",
+      "launchYear": "1873",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Baltic",
+      "path": "ships/ss-baltic-1871.html",
+      "url": "/ships/ss-baltic-1871",
+      "launchYear": "1871",
+      "classes": [],
+      "sisters": [
+        "same formative building program",
+        "rather than in isolation"
+      ]
+    },
+    {
+      "name": "SS Barbarossa",
+      "path": "ships/ss-barbarossa.html",
+      "url": "/ships/ss-barbarossa",
+      "launchYear": "1896",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Batavia",
+      "path": "ships/ss-batavia.html",
+      "url": "/ships/ss-batavia",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": [
+        "Bulgaria"
+      ]
+    },
+    {
+      "name": "SS Belgenland",
+      "path": "ships/ss-belgenland.html",
+      "url": "/ships/ss-belgenland",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Belgia",
+      "path": "ships/ss-belgia.html",
+      "url": "/ships/ss-belgia",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Belgravia",
+      "path": "ships/ss-belgravia.html",
+      "url": "/ships/ss-belgravia",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Bergensfjord",
+      "path": "ships/ss-bergensfjord.html",
+      "url": "/ships/ss-bergensfjord",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Berlin (1909)",
+      "path": "ships/ss-berlin-1909.html",
+      "url": "/ships/ss-berlin-1909",
+      "launchYear": "1909",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Bismarck",
+      "path": "ships/ss-bismarck-1914.html",
+      "url": "/ships/ss-bismarck-1914",
+      "launchYear": "1914",
+      "classes": [
+        "Hamburg America Line’s Imperator"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "SS Bothnia",
+      "path": "ships/ss-bothnia.html",
+      "url": "/ships/ss-bothnia",
+      "launchYear": "1874",
+      "classes": [],
+      "sisters": [
+        "Scythia",
+        "Gallia",
+        "commonly listed as close sisters Fate Withdrawn/sold in 1898"
+      ]
+    },
+    {
+      "name": "SS Brasilia",
+      "path": "ships/ss-brasilia.html",
+      "url": "/ships/ss-brasilia",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Bremen",
+      "path": "ships/ss-bremen.html",
+      "url": "/ships/ss-bremen",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Bretagne",
+      "path": "ships/ss-bretagne.html",
+      "url": "/ships/ss-bretagne",
+      "launchYear": "1951",
+      "classes": [],
+      "sisters": [
+        "Provence Route context Marseille-based service",
+        "especially to North Africa",
+        "other French imperial or post-imperial destinations",
+        "route emphasis varying over time Career end"
+      ]
+    },
+    {
+      "name": "SS Briton",
+      "path": "ships/ss-briton.html",
+      "url": "/ships/ss-briton",
+      "launchYear": "1897",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Bulgaria",
+      "path": "ships/ss-bulgaria.html",
+      "url": "/ships/ss-bulgaria",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Calgarian",
+      "path": "ships/ss-calgarian.html",
+      "url": "/ships/ss-calgarian",
+      "launchYear": "1914",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Calgaric",
+      "path": "ships/ss-calgaric.html",
+      "url": "/ships/ss-calgaric",
+      "launchYear": "1917",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Canada (1896)",
+      "path": "ships/ss-canada-1896.html",
+      "url": "/ships/ss-canada-1896",
+      "launchYear": "1896",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Canberra",
+      "path": "ships/ss-canberra.html",
+      "url": "/ships/ss-canberra",
+      "launchYear": "1961",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Cap Arcona",
+      "path": "ships/ss-cap-arcona.html",
+      "url": "/ships/ss-cap-arcona",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Cap Polonio",
+      "path": "ships/ss-cap-polonio.html",
+      "url": "/ships/ss-cap-polonio",
+      "launchYear": "1914",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Cap Trafalgar",
+      "path": "ships/ss-cap-trafalgar.html",
+      "url": "/ships/ss-cap-trafalgar",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MV Carnarvon Castle",
+      "path": "ships/ss-carnarvon-castle.html",
+      "url": "/ships/ss-carnarvon-castle",
+      "launchYear": "1926",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Caronia",
+      "path": "ships/ss-caronia.html",
+      "url": "/ships/ss-caronia",
+      "launchYear": "1905",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Catalonia",
+      "path": "ships/ss-catalonia.html",
+      "url": "/ships/ss-catalonia",
+      "launchYear": "1881",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Cathay",
+      "path": "ships/ss-cathay-1924.html",
+      "url": "/ships/ss-cathay-1924",
+      "launchYear": "1924",
+      "classes": [],
+      "sisters": [
+        "Comorin",
+        "Chitral Later wartime role Armed merchant cruiser",
+        "then troop ship Final fate Bombed",
+        "sunk off Bougie",
+        "Algeria",
+        "in November 1942 Interwar liner figures are generally"
+      ]
+    },
+    {
+      "name": "SS Ceramic",
+      "path": "ships/ss-ceramic.html",
+      "url": "/ships/ss-ceramic",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Champlain",
+      "path": "ships/ss-champlain.html",
+      "url": "/ships/ss-champlain",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Chicago (1908)",
+      "path": "ships/ss-chicago-1908.html",
+      "url": "/ships/ss-chicago-1908",
+      "launchYear": "1908",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS City of New York (1888)",
+      "path": "ships/ss-city-of-new-york-1888.html",
+      "url": "/ships/ss-city-of-new-york-1888",
+      "launchYear": "1888",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS City of Paris",
+      "path": "ships/ss-city-of-paris.html",
+      "url": "/ships/ss-city-of-paris",
+      "launchYear": "1889",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Cleveland",
+      "path": "ships/ss-cleveland.html",
+      "url": "/ships/ss-cleveland",
+      "launchYear": "1908",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Columbia",
+      "path": "ships/ss-columbia-anchor-line.html",
+      "url": "/ships/ss-columbia-anchor-line",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Columbia",
+      "path": "ships/ss-columbia.html",
+      "url": "/ships/ss-columbia",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Columbus (1924)",
+      "path": "ships/ss-columbus-1924.html",
+      "url": "/ships/ss-columbus-1924",
+      "launchYear": "1924",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Commonwealth",
+      "path": "ships/ss-commonwealth.html",
+      "url": "/ships/ss-commonwealth",
+      "launchYear": "1900",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Constitution",
+      "path": "ships/ss-constitution.html",
+      "url": "/ships/ss-constitution",
+      "launchYear": "1951",
+      "classes": [],
+      "sisters": [
+        "Independence",
+        "Independence Note on figures"
+      ]
+    },
+    {
+      "name": "SS Conte Biancamano",
+      "path": "ships/ss-conte-biancamano.html",
+      "url": "/ships/ss-conte-biancamano",
+      "launchYear": "1925",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Conte di Savoia",
+      "path": "ships/ss-conte-di-savoia.html",
+      "url": "/ships/ss-conte-di-savoia",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Conte Grande",
+      "path": "ships/ss-conte-grande.html",
+      "url": "/ships/ss-conte-grande",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Conte Rosso",
+      "path": "ships/ss-conte-rosso.html",
+      "url": "/ships/ss-conte-rosso",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Conte Verde",
+      "path": "ships/ss-conte-verde.html",
+      "url": "/ships/ss-conte-verde",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Coptic",
+      "path": "ships/ss-coptic.html",
+      "url": "/ships/ss-coptic",
+      "launchYear": "1881",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Corinthic",
+      "path": "ships/ss-corinthic.html",
+      "url": "/ships/ss-corinthic",
+      "launchYear": "1902",
+      "classes": [
+        "Athenic",
+        "The Athenic"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "SS Corsican",
+      "path": "ships/ss-corsican.html",
+      "url": "/ships/ss-corsican",
+      "launchYear": "1907",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Cretic",
+      "path": "ships/ss-cretic.html",
+      "url": "/ships/ss-cretic",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Cristoforo Colombo",
+      "path": "ships/ss-cristoforo-colombo.html",
+      "url": "/ships/ss-cristoforo-colombo",
+      "launchYear": "1954",
+      "classes": [],
+      "sisters": [
+        "Andrea Doria",
+        "Andrea Doria Builder Ansaldo Shipyards",
+        "Genoa Launched 10 May 1953 Entered service 1954"
+      ]
+    },
+    {
+      "name": "SS Cuba",
+      "path": "ships/ss-cuba.html",
+      "url": "/ships/ss-cuba",
+      "launchYear": "1864",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Cymric",
+      "path": "ships/ss-cymric.html",
+      "url": "/ships/ss-cymric",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS De Grasse",
+      "path": "ships/ss-de-grasse.html",
+      "url": "/ships/ss-de-grasse",
+      "launchYear": "1924",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Deutschland (1900)",
+      "path": "ships/ss-deutschland.html",
+      "url": "/ships/ss-deutschland",
+      "launchYear": "1900",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Doric",
+      "path": "ships/ss-doric.html",
+      "url": "/ships/ss-doric",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Drottningholm",
+      "path": "ships/ss-drottningholm.html",
+      "url": "/ships/ss-drottningholm",
+      "launchYear": "1904",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Duchess of Atholl",
+      "path": "ships/ss-duchess-of-atholl.html",
+      "url": "/ships/ss-duchess-of-atholl",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": [
+        "finished before her despite the earlier launch"
+      ]
+    },
+    {
+      "name": "SS Duchess of Bedford",
+      "path": "ships/ss-duchess-of-bedford.html",
+      "url": "/ships/ss-duchess-of-bedford",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Duchess of Richmond",
+      "path": "ships/ss-duchess-of-richmond.html",
+      "url": "/ships/ss-duchess-of-richmond",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Duchess of York",
+      "path": "ships/ss-duchess-of-york.html",
+      "url": "/ships/ss-duchess-of-york",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "url": "/ships/ss-duilio",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": [
+        "Giulio Cesare",
+        "Naples",
+        "South American ports",
+        "especially Buenos Aires",
+        "Giulio Cesare Gross tonnage Often cited around 24",
+        "281 GRT in ship-reference sources"
+      ]
+    },
+    {
+      "name": "SS Eastland",
+      "path": "ships/ss-eastland.html",
+      "url": "/ships/ss-eastland",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Empress of France",
+      "path": "ships/ss-empress-of-france.html",
+      "url": "/ships/ss-empress-of-france",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Espagne",
+      "path": "ships/ss-espagne.html",
+      "url": "/ships/ss-espagne",
+      "launchYear": "1910",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Europa",
+      "path": "ships/ss-europa.html",
+      "url": "/ships/ss-europa",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Finland",
+      "path": "ships/ss-finland.html",
+      "url": "/ships/ss-finland",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": [
+        "Kroonland Wartime service Served as USAT Finland"
+      ]
+    },
+    {
+      "name": "SS Flandre",
+      "path": "ships/ss-flandre.html",
+      "url": "/ships/ss-flandre",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS France (1912)",
+      "path": "ships/ss-france-1912.html",
+      "url": "/ships/ss-france-1912",
+      "launchYear": "1912",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS France",
+      "path": "ships/ss-france.html",
+      "url": "/ships/ss-france",
+      "launchYear": "1962",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Friedrich der Grosse",
+      "path": "ships/ss-friedrich-der-grosse.html",
+      "url": "/ships/ss-friedrich-der-grosse",
+      "launchYear": "1896",
+      "classes": [
+        "Barbarossa"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "SS George Washington",
+      "path": "ships/ss-george-washington-ngl.html",
+      "url": "/ships/ss-george-washington-ngl",
+      "launchYear": "1909",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS George Washington",
+      "path": "ships/ss-george-washington.html",
+      "url": "/ships/ss-george-washington",
+      "launchYear": "1908",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Germanic",
+      "path": "ships/ss-germanic.html",
+      "url": "/ships/ss-germanic",
+      "launchYear": "1874",
+      "classes": [],
+      "sisters": [
+        "Britannic Blue Riband context Held eastbound"
+      ]
+    },
+    {
+      "name": "SS Giulio Cesare",
+      "path": "ships/ss-giulio-cesare.html",
+      "url": "/ships/ss-giulio-cesare",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Gneisenau",
+      "path": "ships/ss-gneisenau.html",
+      "url": "/ships/ss-gneisenau",
+      "launchYear": "1935",
+      "classes": [],
+      "sisters": [
+        "Scharnhorst",
+        "Potsdam Builder Deschimag AG Weser"
+      ]
+    },
+    {
+      "name": "SS Gothic",
+      "path": "ships/ss-gothic-white-star-line.html",
+      "url": "/ships/ss-gothic-white-star-line",
+      "launchYear": "1893",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Graf Waldersee",
+      "path": "ships/ss-graf-waldersee.html",
+      "url": "/ships/ss-graf-waldersee",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Great Britain",
+      "path": "ships/ss-great-britain-1843.html",
+      "url": "/ships/ss-great-britain-1843",
+      "launchYear": "1843",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Great Eastern",
+      "path": "ships/ss-great-eastern.html",
+      "url": "/ships/ss-great-eastern",
+      "launchYear": "1858",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Great Western",
+      "path": "ships/ss-great-western.html",
+      "url": "/ships/ss-great-western",
+      "launchYear": "1838",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Grosser Kurfürst",
+      "path": "ships/ss-grosser-kurfurst.html",
+      "url": "/ships/ss-grosser-kurfurst",
+      "launchYear": "1899",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Hamburg",
+      "path": "ships/ss-hamburg-1925.html",
+      "url": "/ships/ss-hamburg-1925",
+      "launchYear": "1925",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Île de France",
+      "path": "ships/ss-ile-de-france.html",
+      "url": "/ships/ss-ile-de-france",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Imperator",
+      "path": "ships/ss-imperator.html",
+      "url": "/ships/ss-imperator",
+      "launchYear": "1913",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Independence",
+      "path": "ships/ss-independence.html",
+      "url": "/ships/ss-independence",
+      "launchYear": "1951",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Ionic",
+      "path": "ships/ss-ionic.html",
+      "url": "/ships/ss-ionic",
+      "launchYear": "1903",
+      "classes": [
+        "Athenic"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "SS Java",
+      "path": "ships/ss-java.html",
+      "url": "/ships/ss-java",
+      "launchYear": "1865",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Johan van Oldenbarnevelt",
+      "path": "ships/ss-johan-van-oldenbarnevelt.html",
+      "url": "/ships/ss-johan-van-oldenbarnevelt",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Kaiser Wilhelm der Grosse",
+      "path": "ships/ss-kaiser-wilhelm-der-grosse.html",
+      "url": "/ships/ss-kaiser-wilhelm-der-grosse",
+      "launchYear": "1897",
+      "classes": [],
+      "sisters": [
+        "together"
+      ]
+    },
+    {
+      "name": "SS Kaiser Wilhelm II",
+      "path": "ships/ss-kaiser-wilhelm-ii.html",
+      "url": "/ships/ss-kaiser-wilhelm-ii",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Kaiserin Auguste Victoria",
+      "path": "ships/ss-kaiserin-auguste-victoria.html",
+      "url": "/ships/ss-kaiserin-auguste-victoria",
+      "launchYear": "1906",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Königin Luise",
+      "path": "ships/ss-konigin-luise.html",
+      "url": "/ships/ss-konigin-luise",
+      "launchYear": "1896",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Kronprinz Wilhelm",
+      "path": "ships/ss-kronprinz-wilhelm.html",
+      "url": "/ships/ss-kronprinz-wilhelm",
+      "launchYear": "1901",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Kronprinzessin Cecilie",
+      "path": "ships/ss-kronprinzessin-cecilie.html",
+      "url": "/ships/ss-kronprinzessin-cecilie",
+      "launchYear": "1907",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Kroonland",
+      "path": "ships/ss-kroonland.html",
+      "url": "/ships/ss-kroonland",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS La Bretagne",
+      "path": "ships/ss-la-bretagne.html",
+      "url": "/ships/ss-la-bretagne",
+      "launchYear": "1886",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS La Normandie",
+      "path": "ships/ss-la-normandie.html",
+      "url": "/ships/ss-la-normandie",
+      "launchYear": "1883",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS La Provence",
+      "path": "ships/ss-la-provence.html",
+      "url": "/ships/ss-la-provence",
+      "launchYear": "1905",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Lafayette",
+      "path": "ships/ss-lafayette.html",
+      "url": "/ships/ss-lafayette",
+      "launchYear": "1915",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Lake Michigan",
+      "path": "ships/ss-lake-michigan.html",
+      "url": "/ships/ss-lake-michigan",
+      "launchYear": "1901",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Lapland",
+      "path": "ships/ss-lapland.html",
+      "url": "/ships/ss-lapland",
+      "launchYear": "1909",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS L'Atlantique",
+      "path": "ships/ss-latlantique.html",
+      "url": "/ships/ss-latlantique",
+      "launchYear": "1931",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Laurentic",
+      "path": "ships/ss-laurentic.html",
+      "url": "/ships/ss-laurentic",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Leonardo da Vinci",
+      "path": "ships/ss-leonardo-da-vinci.html",
+      "url": "/ships/ss-leonardo-da-vinci",
+      "launchYear": "1960",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Letitia",
+      "path": "ships/ss-letitia.html",
+      "url": "/ships/ss-letitia",
+      "launchYear": "1924",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Leviathan",
+      "path": "ships/ss-leviathan.html",
+      "url": "/ships/ss-leviathan",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Liberté",
+      "path": "ships/ss-liberte.html",
+      "url": "/ships/ss-liberte",
+      "launchYear": "1950",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Lurline (1932)",
+      "path": "ships/ss-lurline-1932.html",
+      "url": "/ships/ss-lurline-1932",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Macedonia",
+      "path": "ships/ss-macedonia.html",
+      "url": "/ships/ss-macedonia",
+      "launchYear": "1873",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Majestic",
+      "path": "ships/ss-majestic-1889.html",
+      "url": "/ships/ss-majestic-1889",
+      "launchYear": "1889",
+      "classes": [],
+      "sisters": [
+        "Teutonic"
+      ]
+    },
+    {
+      "name": "SS Maloja",
+      "path": "ships/ss-maloja.html",
+      "url": "/ships/ss-maloja",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Malta",
+      "path": "ships/ss-malta.html",
+      "url": "/ships/ss-malta",
+      "launchYear": "1865",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Manchuria",
+      "path": "ships/ss-manchuria.html",
+      "url": "/ships/ss-manchuria",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Manhattan (1932)",
+      "path": "ships/ss-manhattan.html",
+      "url": "/ships/ss-manhattan",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": [
+        "Washington",
+        "but designed primarily for reliable service",
+        "modern comfort",
+        "Manhattan class” · sister ship"
+      ]
+    },
+    {
+      "name": "SS Mariposa",
+      "path": "ships/ss-mariposa.html",
+      "url": "/ships/ss-mariposa",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Marnix Van St Aldegonde",
+      "path": "ships/ss-marnix-van-st-aldegonde.html",
+      "url": "/ships/ss-marnix-van-st-aldegonde",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Marquette",
+      "path": "ships/ss-marquette.html",
+      "url": "/ships/ss-marquette",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Mayflower",
+      "path": "ships/ss-mayflower.html",
+      "url": "/ships/ss-mayflower",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Medic",
+      "path": "ships/ss-medic.html",
+      "url": "/ships/ss-medic",
+      "launchYear": "1899",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Michelangelo (1965)",
+      "path": "ships/ss-michelangelo-1965.html",
+      "url": "/ships/ss-michelangelo-1965",
+      "launchYear": "1965",
+      "classes": [],
+      "sisters": [
+        "Raffaello",
+        "she embodied a late-modern Italian “ship of state” idea"
+      ]
+    },
+    {
+      "name": "SS Milwaukee",
+      "path": "ships/ss-milwaukee.html",
+      "url": "/ships/ss-milwaukee",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Minnesota",
+      "path": "ships/ss-minnesota.html",
+      "url": "/ships/ss-minnesota",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": [
+        "Dakota Type Ocean liner / passenger-cargo ship",
+        "later troop transport Gross tonnage About 13",
+        "544 GRT Length About 622 ft Beam About 73"
+      ]
+    },
+    {
+      "name": "SS Minnetonka",
+      "path": "ships/ss-minnetonka.html",
+      "url": "/ships/ss-minnetonka",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Minnewaska",
+      "path": "ships/ss-minnewaska.html",
+      "url": "/ships/ss-minnewaska",
+      "launchYear": "1908",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Moltke",
+      "path": "ships/ss-moltke.html",
+      "url": "/ships/ss-moltke",
+      "launchYear": "1901",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "Monarch of Bermuda",
+      "path": "ships/ss-monarch-of-bermuda.html",
+      "url": "/ships/ss-monarch-of-bermuda",
+      "launchYear": "1931",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Mongolia",
+      "path": "ships/ss-mongolia.html",
+      "url": "/ships/ss-mongolia",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Montcalm",
+      "path": "ships/ss-montcalm.html",
+      "url": "/ships/ss-montcalm",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Montclare",
+      "path": "ships/ss-montclare.html",
+      "url": "/ships/ss-montclare",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Monterey",
+      "path": "ships/ss-monterey.html",
+      "url": "/ships/ss-monterey",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Montrose",
+      "path": "ships/ss-montrose.html",
+      "url": "/ships/ss-montrose",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Mooltan",
+      "path": "ships/ss-mooltan.html",
+      "url": "/ships/ss-mooltan",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Morro Castle",
+      "path": "ships/ss-morro-castle.html",
+      "url": "/ships/ss-morro-castle",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": [
+        "Oriente Builder Newport News Shipbuilding & Dry Dock Co"
+      ]
+    },
+    {
+      "name": "SS Napoleon III",
+      "path": "ships/ss-napoleon-iii.html",
+      "url": "/ships/ss-napoleon-iii",
+      "launchYear": "1865",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS New England",
+      "path": "ships/ss-new-england.html",
+      "url": "/ships/ss-new-england",
+      "launchYear": "1898",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS New York",
+      "path": "ships/ss-new-york.html",
+      "url": "/ships/ss-new-york",
+      "launchYear": "1927",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Nieuw Amsterdam (1906)",
+      "path": "ships/ss-nieuw-amsterdam-1906.html",
+      "url": "/ships/ss-nieuw-amsterdam-1906",
+      "launchYear": "1906",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Nieuw Amsterdam",
+      "path": "ships/ss-nieuw-amsterdam.html",
+      "url": "/ships/ss-nieuw-amsterdam",
+      "launchYear": "1937",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Nomadic",
+      "path": "ships/ss-nomadic.html",
+      "url": "/ships/ss-nomadic",
+      "launchYear": "1911",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Noordam",
+      "path": "ships/ss-noordam.html",
+      "url": "/ships/ss-noordam",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": [
+        "Rijndam",
+        "belonged to the same broad group as the larger Potsdam"
+      ]
+    },
+    {
+      "name": "SS Norge",
+      "path": "ships/ss-norge.html",
+      "url": "/ships/ss-norge",
+      "launchYear": "1889",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Normandie",
+      "path": "ships/ss-normandie.html",
+      "url": "/ships/ss-normandie",
+      "launchYear": "1935",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Oceanic (1871)",
+      "path": "ships/ss-oceanic-1871.html",
+      "url": "/ships/ss-oceanic-1871",
+      "launchYear": "1871",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Orama",
+      "path": "ships/ss-orama.html",
+      "url": "/ships/ss-orama",
+      "launchYear": "1924",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Orford",
+      "path": "ships/ss-orford.html",
+      "url": "/ships/ss-orford",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Oriana",
+      "path": "ships/ss-oriana.html",
+      "url": "/ships/ss-oriana",
+      "launchYear": "1959",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Orion",
+      "path": "ships/ss-orion.html",
+      "url": "/ships/ss-orion",
+      "launchYear": "1934",
+      "classes": [],
+      "sisters": [
+        "Orcades Type Ocean liner",
+        "later troopship Gross tonnage 23",
+        "twin screws Power About 24"
+      ]
+    },
+    {
+      "name": "SS Oronsay",
+      "path": "ships/ss-oronsay.html",
+      "url": "/ships/ss-oronsay",
+      "launchYear": "1924",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Orontes",
+      "path": "ships/ss-orontes.html",
+      "url": "/ships/ss-orontes",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Otranto",
+      "path": "ships/ss-otranto.html",
+      "url": "/ships/ss-otranto",
+      "launchYear": "1909",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Paris",
+      "path": "ships/ss-paris.html",
+      "url": "/ships/ss-paris",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Pasteur",
+      "path": "ships/ss-pasteur.html",
+      "url": "/ships/ss-pasteur",
+      "launchYear": "1939",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Patricia",
+      "path": "ships/ss-patricia.html",
+      "url": "/ships/ss-patricia",
+      "launchYear": "1899",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Pennland",
+      "path": "ships/ss-pennland.html",
+      "url": "/ships/ss-pennland",
+      "launchYear": "1926",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Pennsylvania",
+      "path": "ships/ss-pennsylvania.html",
+      "url": "/ships/ss-pennsylvania",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": [
+        "California",
+        "Virginia Final fate Laid up in 1958",
+        "after 1938 rebui"
+      ]
+    },
+    {
+      "name": "SS Persic",
+      "path": "ships/ss-persic.html",
+      "url": "/ships/ss-persic",
+      "launchYear": "1899",
+      "classes": [
+        "Jubilee"
+      ],
+      "sisters": [
+        "that ended in total loss",
+        "Persic survived major wartime damage",
+        "resumed service"
+      ]
+    },
+    {
+      "name": "SS Poland",
+      "path": "ships/ss-poland.html",
+      "url": "/ships/ss-poland",
+      "launchYear": "1902",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS President Coolidge",
+      "path": "ships/ss-president-coolidge.html",
+      "url": "/ships/ss-president-coolidge",
+      "launchYear": "1931",
+      "classes": [],
+      "sisters": [
+        "President Hoover Builder Newport News Shipbuilding"
+      ]
+    },
+    {
+      "name": "SS President Hoover",
+      "path": "ships/ss-president-hoover.html",
+      "url": "/ships/ss-president-hoover",
+      "launchYear": "1931",
+      "classes": [],
+      "sisters": [
+        "President Coolidge Builder Newport News Shipbuilding",
+        "Dry Dock Company"
+      ]
+    },
+    {
+      "name": "SS President Lincoln",
+      "path": "ships/ss-president-lincoln.html",
+      "url": "/ships/ss-president-lincoln",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Pretoria",
+      "path": "ships/ss-pretoria.html",
+      "url": "/ships/ss-pretoria",
+      "launchYear": "1897",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Principessa Mafalda",
+      "path": "ships/ss-principessa-mafalda.html",
+      "url": "/ships/ss-principessa-mafalda",
+      "launchYear": "1909",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Prinz Friedrich Wilhelm",
+      "path": "ships/ss-prinz-friedrich-wilhelm.html",
+      "url": "/ships/ss-prinz-friedrich-wilhelm",
+      "launchYear": "1908",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Prinzess Irene",
+      "path": "ships/ss-prinzess-irene.html",
+      "url": "/ships/ss-prinzess-irene",
+      "launchYear": "1900",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Queen of Bermuda",
+      "path": "ships/ss-queen-of-bermuda.html",
+      "url": "/ships/ss-queen-of-bermuda",
+      "launchYear": "1933",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Raffaello (1965)",
+      "path": "ships/ss-raffaello-1965.html",
+      "url": "/ships/ss-raffaello-1965",
+      "launchYear": "1965",
+      "classes": [],
+      "sisters": [
+        "Michelangelo",
+        "she was designed for high-speed North Atlantic service"
+      ]
+    },
+    {
+      "name": "SS Reliance",
+      "path": "ships/ss-reliance.html",
+      "url": "/ships/ss-reliance",
+      "launchYear": "1914",
+      "classes": [],
+      "sisters": [
+        "Resolute (built separately",
+        "Resolute"
+      ]
+    },
+    {
+      "name": "RMS Republic (1903)",
+      "path": "ships/ss-republic-1903.html",
+      "url": "/ships/ss-republic-1903",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Republic",
+      "path": "ships/ss-republic.html",
+      "url": "/ships/ss-republic",
+      "launchYear": "1924",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Resolute",
+      "path": "ships/ss-resolute.html",
+      "url": "/ships/ss-resolute",
+      "launchYear": "1914",
+      "classes": [],
+      "sisters": [
+        "Reliance Interwar operators Royal Holland Lloyd"
+      ]
+    },
+    {
+      "name": "SS Rex",
+      "path": "ships/ss-rex.html",
+      "url": "/ships/ss-rex",
+      "launchYear": "1932",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Rijndam",
+      "path": "ships/ss-rijndam-1901.html",
+      "url": "/ships/ss-rijndam-1901",
+      "launchYear": "1901",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Rochambeau",
+      "path": "ships/ss-rochambeau.html",
+      "url": "/ships/ss-rochambeau",
+      "launchYear": "1911",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Roma",
+      "path": "ships/ss-roma.html",
+      "url": "/ships/ss-roma",
+      "launchYear": "1926",
+      "classes": [],
+      "sisters": [
+        "Augustus Notable incident Collision"
+      ]
+    },
+    {
+      "name": "SS Romanic",
+      "path": "ships/ss-romanic.html",
+      "url": "/ships/ss-romanic",
+      "launchYear": "1903",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Rotterdam (1908)",
+      "path": "ships/ss-rotterdam-1908.html",
+      "url": "/ships/ss-rotterdam-1908",
+      "launchYear": "1908",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Rotterdam (1959)",
+      "path": "ships/ss-rotterdam-1959.html",
+      "url": "/ships/ss-rotterdam-1959",
+      "launchYear": "1959",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Runic",
+      "path": "ships/ss-runic.html",
+      "url": "/ships/ss-runic",
+      "launchYear": "1901",
+      "classes": [
+        "Jubilee"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "SS Saxon",
+      "path": "ships/ss-saxon.html",
+      "url": "/ships/ss-saxon",
+      "launchYear": "1900",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Scharnhorst",
+      "path": "ships/ss-scharnhorst.html",
+      "url": "/ships/ss-scharnhorst",
+      "launchYear": "1935",
+      "classes": [],
+      "sisters": [
+        "Gneisenau"
+      ]
+    },
+    {
+      "name": "SS Sirius",
+      "path": "ships/ss-sirius.html",
+      "url": "/ships/ss-sirius",
+      "launchYear": "1837",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS St. Louis",
+      "path": "ships/ss-st-louis.html",
+      "url": "/ships/ss-st-louis",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": [
+        "Milwaukee",
+        "but her historical memory is dominated by one event",
+        "Milwaukee Compare St",
+        "Milwaukee Tonnage About 16",
+        "732 GRT Length / Beam Approximately 174"
+      ]
+    },
+    {
+      "name": "SS Statendam",
+      "path": "ships/ss-statendam-1929.html",
+      "url": "/ships/ss-statendam-1929",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Storstad",
+      "path": "ships/ss-storstad.html",
+      "url": "/ships/ss-storstad",
+      "launchYear": "1911",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Strathaird",
+      "path": "ships/ss-strathaird.html",
+      "url": "/ships/ss-strathaird",
+      "launchYear": "1931",
+      "classes": [
+        "Strath"
+      ],
+      "sisters": [
+        "such as Strathnaver"
+      ]
+    },
+    {
+      "name": "SS Strathmore",
+      "path": "ships/ss-strathmore.html",
+      "url": "/ships/ss-strathmore",
+      "launchYear": "1935",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Suevic",
+      "path": "ships/ss-suevic.html",
+      "url": "/ships/ss-suevic",
+      "launchYear": "1901",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Traffic",
+      "path": "ships/ss-traffic.html",
+      "url": "/ships/ss-traffic",
+      "launchYear": "1911",
+      "classes": [],
+      "sisters": [
+        "Nomadic Fate Lost during World War II (1941",
+        "collision"
+      ]
+    },
+    {
+      "name": "SS Tuscania (1921)",
+      "path": "ships/ss-tuscania-1921.html",
+      "url": "/ships/ss-tuscania-1921",
+      "launchYear": "1921",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS United States",
+      "path": "ships/ss-us.html",
+      "url": "/ships/ss-us",
+      "launchYear": "1952",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Vaterland",
+      "path": "ships/ss-vaterland.html",
+      "url": "/ships/ss-vaterland",
+      "launchYear": "1914",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Veendam",
+      "path": "ships/ss-veendam.html",
+      "url": "/ships/ss-veendam",
+      "launchYear": "1923",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Vestris",
+      "path": "ships/ss-vestris.html",
+      "url": "/ships/ss-vestris",
+      "launchYear": "1912",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Virginia",
+      "path": "ships/ss-virginia.html",
+      "url": "/ships/ss-virginia",
+      "launchYear": "1928",
+      "classes": [],
+      "sisters": [
+        "California",
+        "Pennsylvania Final fate Laid up in 1958",
+        "after 1938 rebu",
+        "Ask Ocean Liner GPT Ship Guides Index Home Note"
+      ]
+    },
+    {
+      "name": "SS Volendam",
+      "path": "ships/ss-volendam.html",
+      "url": "/ships/ss-volendam",
+      "launchYear": "1922",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Warwick Castle",
+      "path": "ships/ss-warwick-castle.html",
+      "url": "/ships/ss-warwick-castle",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Washington",
+      "path": "ships/ss-washington.html",
+      "url": "/ships/ss-washington",
+      "launchYear": "1933",
+      "classes": [
+        "The Manhattan"
+      ],
+      "sisters": []
+    },
+    {
+      "name": "SS Westernland",
+      "path": "ships/ss-westernland.html",
+      "url": "/ships/ss-westernland",
+      "launchYear": "1918",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Winchester Castle",
+      "path": "ships/ss-winchester-castle.html",
+      "url": "/ships/ss-winchester-castle",
+      "launchYear": "1930",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Winifredian",
+      "path": "ships/ss-winifredian.html",
+      "url": "/ships/ss-winifredian",
+      "launchYear": "1899",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Zeeland",
+      "path": "ships/ss-zeeland.html",
+      "url": "/ships/ss-zeeland",
+      "launchYear": "1901",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "Stirling Castle",
+      "path": "ships/stirling-castle.html",
+      "url": "/ships/stirling-castle",
+      "launchYear": "1936",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "Tatsuta Maru",
+      "path": "ships/tatsuta-maru-1929.html",
+      "url": "/ships/tatsuta-maru-1929",
+      "launchYear": "1929",
+      "classes": [],
+      "sisters": [
+        "Asama Maru",
+        "Chichibu Maru",
+        "modern motor-ship engineering",
+        "refined accommodations"
+      ]
+    }
+  ]
+}
