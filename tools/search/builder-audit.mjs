@@ -18,6 +18,7 @@ const clean = value => String(value || '').replace(/\s+/g, ' ').trim();
 const normalize = value => clean(value)
   .normalize('NFD').replace(/\p{M}/gu, '')
   .toLowerCase()
+  .replace(/[’‘]/g, "'")
   .replace(/&/g, ' and ')
   .replace(/[^a-z0-9]+/g, ' ')
   .replace(/\s+/g, ' ')
@@ -27,11 +28,42 @@ function physicalUrl(path) {
   return '/' + path.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/^\//, '');
 }
 
+const annotationPattern = /\b(?:yard|yard no|yard number|commonly cited|often cited|ship no|hull no|building no)\b/i;
+const corporateTailPattern = /\b(?:co\.?|company|ltd\.?|limited|sons?|works|shipbuilding|engineering|yard|yards|werft|werft ag|corporation|corp\.?)\b/i;
+
 function splitBuilder(raw) {
-  const value = clean(raw);
-  const match = value.match(/^(.*?)\s*\(([^()]*)\)\s*$/);
-  if (!match) return { name: value, location: null };
-  return { name: clean(match[1]), location: clean(match[2]) || null };
+  const original = clean(raw);
+  let working = original;
+  const notes = [];
+  const locations = [];
+
+  // Peel trailing parentheticals one at a time. Yard/citation notes are not locations.
+  while (true) {
+    const match = working.match(/^(.*?)\s*\(([^()]*)\)\s*$/);
+    if (!match) break;
+    const inside = clean(match[2]);
+    working = clean(match[1]);
+    if (annotationPattern.test(inside)) notes.unshift(inside);
+    else locations.unshift(inside);
+  }
+
+  // Many guides use "Company, City" instead of "Company (City)".
+  // Treat only the final comma segment as a probable location, and avoid corporate suffixes.
+  const lastComma = working.lastIndexOf(',');
+  if (lastComma > 0) {
+    const before = clean(working.slice(0, lastComma));
+    const tail = clean(working.slice(lastComma + 1));
+    if (tail && !corporateTailPattern.test(tail) && tail.length <= 48) {
+      working = before;
+      locations.unshift(tail);
+    }
+  }
+
+  return {
+    name: working || original,
+    locations: [...new Set(locations.filter(Boolean))],
+    notes: [...new Set(notes.filter(Boolean))]
+  };
 }
 
 function factRows($) {
@@ -42,6 +74,13 @@ function factRows($) {
     if (label && value) rows.push({ label, value });
   });
   return rows;
+}
+
+function subtitleOperator(subtitle) {
+  if (!subtitle) return null;
+  const first = clean(subtitle.split(/\s*[·•]\s*/)[0]);
+  if (!first || /^\d{4}$/.test(first) || /ship guide/i.test(first)) return null;
+  return first;
 }
 
 const records = [];
@@ -59,10 +98,15 @@ for (const path of paths) {
   }
 
   const rows = factRows($);
-  const findRow = predicate => rows.find(row => predicate(normalize(row.label)));
-  const builderRow = findRow(label => label === 'builder' || label === 'shipbuilder' || label === 'ship builder' || label === 'built by');
-  const operatorRow = findRow(label => label === 'operator' || label === 'operator as built' || label === 'shipping line' || label === 'line');
-  const launchedRow = findRow(label => label === 'launched' || label === 'launch date');
+  const normalizedRows = rows.map(row => ({ ...row, normalizedLabel: normalize(row.label) }));
+  const findRow = predicate => normalizedRows.find(row => predicate(row.normalizedLabel));
+
+  const builderRow = findRow(label => label === 'builder' || label === 'shipbuilder' || label === 'ship builder' || label === 'built by' || label.startsWith('builder '));
+  const operatorRow =
+    findRow(label => /\bas built\b/.test(label) && /\boperator\b/.test(label)) ||
+    findRow(label => /\boperator\b/.test(label) && !/later/.test(label)) ||
+    findRow(label => label === 'shipping line' || label === 'line' || label === 'company');
+  const launchedRow = findRow(label => label === 'launched' || label === 'launch date' || label.startsWith('launched '));
   const completedRow = findRow(label => label === 'completed' || label === 'completion' || label === 'entered service');
 
   const h1 = clean($('h1').first().text()) || titleTag.split(/\s+[|—]\s+/)[0];
@@ -73,8 +117,10 @@ for (const path of paths) {
   }
 
   const rawBuilder = builderRow?.value || null;
-  const builderParts = rawBuilder ? splitBuilder(rawBuilder) : { name: null, location: null };
+  const builderParts = rawBuilder ? splitBuilder(rawBuilder) : { name: null, locations: [], notes: [] };
   const launchYear = launchedRow?.value.match(/\b(?:18|19|20)\d{2}\b/)?.[0] || null;
+  const operatorFromSubtitle = subtitleOperator(subtitle);
+  const operator = operatorRow?.value || operatorFromSubtitle || null;
 
   records.push({
     path,
@@ -82,9 +128,11 @@ for (const path of paths) {
     ship: h1,
     builder: rawBuilder,
     builderName: builderParts.name,
-    builderLocation: builderParts.location,
+    builderLocations: builderParts.locations,
+    builderNotes: builderParts.notes,
     builderKey: builderParts.name ? normalize(builderParts.name) : null,
-    operator: operatorRow?.value || null,
+    operator,
+    operatorSource: operatorRow ? `facts:${operatorRow.label}` : operatorFromSubtitle ? 'subtitle' : null,
     launched: launchedRow?.value || null,
     launchYear,
     completed: completedRow?.value || null
@@ -100,6 +148,7 @@ for (const record of records) {
       names: new Set(),
       rawValues: new Set(),
       locations: new Set(),
+      notes: new Set(),
       operators: new Set(),
       ships: []
     });
@@ -107,17 +156,19 @@ for (const record of records) {
   const entry = builders.get(record.builderKey);
   entry.names.add(record.builderName);
   entry.rawValues.add(record.builder);
-  if (record.builderLocation) entry.locations.add(record.builderLocation);
+  record.builderLocations.forEach(location => entry.locations.add(location));
+  record.builderNotes.forEach(note => entry.notes.add(note));
   if (record.operator) entry.operators.add(record.operator);
   entry.ships.push({ ship: record.ship, url: record.url, launchYear: record.launchYear, operator: record.operator });
 }
 
 const builderGroups = [...builders.values()].map(entry => ({
   key: entry.key,
-  canonicalNameCandidate: [...entry.names].sort((a, b) => b.length - a.length || a.localeCompare(b))[0],
+  canonicalNameCandidate: [...entry.names].sort((a, b) => a.length - b.length || a.localeCompare(b))[0],
   names: [...entry.names].sort(),
   rawValues: [...entry.rawValues].sort(),
   locations: [...entry.locations].sort(),
+  notes: [...entry.notes].sort(),
   operators: [...entry.operators].sort(),
   shipCount: entry.ships.length,
   launchYears: entry.ships.map(ship => Number(ship.launchYear)).filter(Number.isFinite).sort((a, b) => a - b),
@@ -130,8 +181,9 @@ const missing = {
   launched: records.filter(record => !record.launched).map(record => ({ ship: record.ship, path: record.path }))
 };
 
-const variantGroups = builderGroups.filter(group => group.names.length > 1 || group.rawValues.length > 1 || group.locations.length > 1);
+const variantGroups = builderGroups.filter(group => group.names.length > 1 || group.rawValues.length > 1 || group.locations.length > 1 || group.notes.length > 1);
 const suspiciousLaunchYears = records.filter(record => record.launched && !record.launchYear).map(record => ({ ship: record.ship, path: record.path, launched: record.launched }));
+const operatorFallbacks = records.filter(record => record.operatorSource === 'subtitle').map(record => ({ ship: record.ship, path: record.path, operator: record.operator }));
 
 const report = {
   generatedAt: new Date().toISOString(),
@@ -143,11 +195,13 @@ const report = {
     guidesWithBuilder: records.length - missing.builder.length,
     guidesMissingBuilder: missing.builder.length,
     guidesMissingOperator: missing.operator.length,
+    operatorValuesRecoveredFromSubtitle: operatorFallbacks.length,
     guidesMissingLaunch: missing.launched.length,
     builderVariantGroups: variantGroups.length,
     suspiciousLaunchDatesWithoutYear: suspiciousLaunchYears.length
   },
   missing,
+  operatorFallbacks,
   suspiciousLaunchYears,
   variantGroups,
   builders: builderGroups,
@@ -168,5 +222,6 @@ if (variantGroups.length) console.log('Builder naming/location variants:', varia
   names: group.names,
   rawValues: group.rawValues,
   locations: group.locations,
+  notes: group.notes,
   shipCount: group.shipCount
 })));
