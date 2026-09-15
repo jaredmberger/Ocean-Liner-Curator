@@ -1,4 +1,4 @@
-/* Ocean Liner Curator — Ship Archive search/filter jump link */
+/* Ocean Liner Curator — Ship Archive search/filter jump links */
 (function () {
   "use strict";
 
@@ -13,7 +13,11 @@
   style.id = "archive-search-jump-style";
   style.textContent = `
     .archive-search-jump-wrap{
-      text-align:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+      flex-wrap:wrap;
       margin:.55rem auto 1.35rem;
     }
     .archive-search-jump{
@@ -50,18 +54,23 @@
   const wrap = document.createElement("div");
   wrap.className = "archive-search-jump-wrap";
 
-  const link = document.createElement("a");
-  link.id = "archive-search-jump";
-  link.className = "archive-search-jump";
-  link.href = "#guide";
-  link.innerHTML = 'Jump to search &amp; filters <span class="archive-search-jump__arrow" aria-hidden="true">↓</span>';
+  const jump = document.createElement("a");
+  jump.id = "archive-search-jump";
+  jump.className = "archive-search-jump";
+  jump.href = "#guide";
+  jump.innerHTML = 'Jump to search &amp; filters <span class="archive-search-jump__arrow" aria-hidden="true">↓</span>';
 
-  link.addEventListener("click", function (event) {
+  jump.addEventListener("click", function (event) {
     event.preventDefault();
     guide.scrollIntoView({ behavior: "smooth", block: "start" });
     if (history.replaceState) history.replaceState(null, "", "#guide");
   });
 
-  wrap.appendChild(link);
+  const builders = document.createElement("a");
+  builders.className = "archive-search-jump";
+  builders.href = "/shipbuilders";
+  builders.textContent = "Browse by shipbuilder";
+
+  wrap.append(jump, builders);
   archiveScale.insertAdjacentElement("afterend", wrap);
 })();
