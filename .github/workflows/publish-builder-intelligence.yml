@@ -45,7 +45,7 @@ jobs:
           const fs = require('fs');
           const audit = JSON.parse(fs.readFileSync('tools/search/dist/builders-audit.json', 'utf8'));
           const feed = {
-            schemaVersion: 1,
+            schemaVersion: 2,
             generatedAt: audit.generatedAt,
             source: audit.source,
             summary: audit.summary,
@@ -58,6 +58,25 @@ jobs:
               lastLaunchYear: builder.lastLaunchYear,
               locations: builder.locations.slice(0, 6),
               operators: builder.operators.slice(0, 8)
+            })),
+            builders: audit.builders.map(builder => ({
+              id: builder.key.replace(/\s+/g, '-'),
+              name: builder.canonicalName,
+              names: builder.names,
+              rawValues: builder.rawValues,
+              shipCount: builder.shipCount
+            })),
+            ships: audit.records.map(record => ({
+              name: record.ship,
+              path: record.path,
+              url: record.url.replace('https://oceanliners.net', ''),
+              launchYear: record.launchYear,
+              builderRaw: record.builder,
+              builders: record.builderIdentities.map(identity => ({
+                id: identity.canonicalKey.replace(/\s+/g, '-'),
+                name: identity.canonicalName,
+                raw: identity.raw
+              }))
             }))
           };
           fs.mkdirSync('data', { recursive: true });
