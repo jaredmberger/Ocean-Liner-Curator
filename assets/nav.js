@@ -131,3 +131,68 @@
   `;
   document.head.appendChild(style);
 })();
+
+(function(){
+  "use strict";
+  const path=window.location.pathname.replace(/\/$/,"");
+  if(path!=="/ships/ships")return;
+
+  function compactArchiveFilterRow(){
+    if(document.getElementById("archive-compact-filter-row"))return true;
+    const filters=document.getElementById("archive-advanced-filters");
+    const reset=document.querySelector(".controls-card .ship-actions .reset-chip");
+    if(!filters||!reset)return false;
+
+    if(!document.getElementById("archive-compact-filter-row-style")){
+      const style=document.createElement("style");
+      style.id="archive-compact-filter-row-style";
+      style.textContent=`
+        .archive-compact-filter-row{
+          display:grid;
+          grid-template-columns:minmax(0,1fr) auto;
+          align-items:start;
+          gap:.55rem;
+          margin:.34rem 0 0;
+        }
+        .archive-compact-filter-row .archive-advanced-filters{
+          margin:0;
+          min-width:0;
+        }
+        .archive-compact-filter-row .archive-advanced-filters__summary{
+          padding:.45rem .68rem;
+        }
+        .archive-compact-filter-row .reset-chip{
+          margin:0!important;
+          white-space:nowrap;
+          align-self:start;
+        }
+        @media(max-width:620px){
+          .archive-compact-filter-row{gap:.42rem;margin-top:.28rem}
+          .archive-compact-filter-row .archive-advanced-filters__summary{padding:.42rem .58rem;font-size:.8rem}
+          .archive-compact-filter-row .reset-chip{padding-left:.62rem!important;padding-right:.62rem!important}
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    const row=document.createElement("div");
+    row.id="archive-compact-filter-row";
+    row.className="archive-compact-filter-row";
+    filters.parentNode.insertBefore(row,filters);
+    row.appendChild(filters);
+    row.appendChild(reset);
+    return true;
+  }
+
+  function initialize(){
+    if(compactArchiveFilterRow())return;
+    let attempts=0;
+    const timer=window.setInterval(function(){
+      attempts+=1;
+      if(compactArchiveFilterRow()||attempts>=40)window.clearInterval(timer);
+    },100);
+  }
+
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initialize,{once:true});
+  else initialize();
+})();
