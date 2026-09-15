@@ -1,8 +1,12 @@
 {
-  "name": "ocean-liner-search-trial",
+  "name": "ocean-liner-search",
   "private": true,
   "type": "module",
-  "scripts": {"build": "node build.mjs", "test": "node check.mjs"},
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node check.mjs",
+    "audit:builders": "node builder-audit.mjs"
+  },
   "engines": {"node": ">=22.12"},
   "dependencies": {
     "cheerio": "1.2.0",
