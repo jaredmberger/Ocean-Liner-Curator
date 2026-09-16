@@ -60,6 +60,102 @@ const fixes = [
     label: 'Launched',
     value: '8 October 1903',
     insertAfter: ['builder']
+  },
+  {
+    path: 'ships/ss-asturias-1925.html',
+    label: 'Operator',
+    value: 'Royal Mail Steam Packet Company / Royal Mail Lines',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-batavia.html',
+    label: 'Operator',
+    value: 'Hamburg America Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-belgravia.html',
+    label: 'Operator',
+    value: 'Hamburg America Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-bismarck-1914.html',
+    label: 'Operator',
+    value: 'Hamburg America Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-brasilia.html',
+    label: 'Operator',
+    value: 'Hamburg America Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-bulgaria.html',
+    label: 'Operator',
+    value: 'Hamburg America Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-commonwealth.html',
+    label: 'Operator',
+    value: 'Dominion Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-drottningholm.html',
+    label: 'Operator',
+    value: 'Swedish American Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-eastland.html',
+    label: 'Operator (original)',
+    value: 'Michigan Steamship Company',
+    insertAfter: ['original owner', 'owner']
+  },
+  {
+    path: 'ships/ss-empress-of-france.html',
+    label: 'Operator',
+    value: 'Canadian Pacific',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-new-england.html',
+    label: 'Operator',
+    value: 'Dominion Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-pennland.html',
+    label: 'Operator',
+    value: 'Red Star Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-poland.html',
+    label: 'Operator',
+    value: 'Dominion Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-rijndam-1901.html',
+    label: 'Operator',
+    value: 'Holland America Line',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-storstad.html',
+    label: 'Operator',
+    value: 'A. F. Klaveness',
+    insertAfter: ['owner', 'builder']
+  },
+  {
+    path: 'ships/ss-westernland.html',
+    label: 'Operator',
+    value: 'Red Star Line',
+    insertAfter: ['owner', 'builder']
   }
 ];
 
