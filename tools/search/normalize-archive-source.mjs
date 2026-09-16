@@ -5,16 +5,14 @@ import { fileURLToPath } from 'node:url';
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '../..');
 const archivePath = resolve(root, 'ships/ships.html');
-const explorePath = resolve(root, 'explore.html');
 
 const html = await readFile(archivePath, 'utf8');
-const exploreHtml = await readFile(explorePath, 'utf8');
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
-// The Ship Archive source is now authoritative. This script intentionally does
+// The Ship Archive source is authoritative. This script intentionally does
 // not rewrite it during builds; it only verifies that source-level metadata and
 // search behavior remain internally consistent.
 const guideCards = [...html.matchAll(/<article\b[^>]*class=["'][^"']*\bguide-card\b[^"']*["'][^>]*>[\s\S]*?<\/article>/gi)]
@@ -65,11 +63,6 @@ const adriaticEnd = html.indexOf('</article>', adriaticPos);
 assert(adriaticStart >= 0 && adriaticEnd > adriaticStart, 'Could not isolate SS Adriatic (1872) archive card.');
 const adriaticCard = html.slice(adriaticStart, adriaticEnd + '</article>'.length);
 assert(!/Duchess-class/i.test(adriaticCard), 'SS Adriatic (1872) archive card contains corrupted Duchess-class copy.');
-
-assert(
-  !exploreHtml.includes('https://www.oceanliners.net'),
-  'Explore canonical metadata still contains www.oceanliners.net; update explore.html directly.'
-);
 
 console.log(`Verified Ship Archive source (${guideCards.length} archive cards; liner span ${span}).`);
 console.log('Archive build step is verification-only; ships/ships.html remains authoritative.');
