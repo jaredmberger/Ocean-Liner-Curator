@@ -14,7 +14,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ship Archive — ships.guide | OceanLiners.net</title>
 <meta name="description" content="Browse 300+ ocean liner ship guides spanning 1837–2004, including Cunard, White Star, French Line, and more—curated with evidence-first standards." />
-
 <link rel="canonical" href="https://oceanliners.net/ships/ships" />
 
 
@@ -116,8 +115,7 @@
 
   <meta property="og:site_name" content="Ocean Liner Curator">
   <meta property="og:title" content="Ship Guides — Ocean Liner Curator">
- <meta name="description" content="Ocean liner ships list: 300+ vessels from 1838–2004, including Titanic, Queen Mary, Leviathan, and SS United States. A complete, curated archive.">
-  <meta property="og:url" content="https://oceanliners.net/ships">
+<meta property="og:url" content="https://oceanliners.net/ships/ships">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://oceanliners.net/logo.png">
 
@@ -3521,7 +3519,7 @@ decoding="async"
     </div>
 
     <div class="archive-badge__note" id="badgeNote">
-      Calculated live from 233 ship guides on this page.
+      Calculating archive coverage…
     </div>
   </div>
 </section>
@@ -3818,8 +3816,7 @@ decoding="async"
     <a class="guide-title" href="/ships/ss-adriatic-1872.html">SS Adriatic (1872)</a>
     <div class="guide-meta">White Star Line · 1872</div>
   </div>
-  <p class="guide-desc">An early White Star Line North Atlantic liner built during the company’s formative post-1870 fleet expansion.
-      She belonged to the transitional generation of iron screw steamers that still carried auxiliary sail while serving increasingly regularized passenger and emigrant traffic between Liverpool and New York.</p>
+  <p class="guide-desc">One of Canadian Pacific’s interwar Duchess-class liners for seasonal Montreal–Liverpool service.</p>
   <span class="mini-badge">✓ Reviewed using curatorial standards</span>
 </article>
 
@@ -7699,7 +7696,8 @@ window.OLC.onReady("Ship archive filters", function(){
   function getSearchText(card){
   return norm([
     getTitle(card),
-    getMeta(card)
+    getMeta(card),
+    card.querySelector(".guide-desc")?.textContent || ""
   ].join(" "));
 }
 
