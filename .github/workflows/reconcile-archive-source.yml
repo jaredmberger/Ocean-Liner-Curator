@@ -18,23 +18,67 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+      - name: Repair authoritative archive descriptions
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'ships/ships.html';
+          let html = fs.readFileSync(path, 'utf8');
 
-      - name: Normalize archive source
+          function replaceDescription(href, description) {
+            const marker = `href="${href}"`;
+            const pos = html.indexOf(marker);
+            if (pos < 0) throw new Error(`Archive card not found for ${href}`);
+            const start = html.lastIndexOf('<article', pos);
+            const end = html.indexOf('</article>', pos);
+            if (start < 0 || end < start) throw new Error(`Could not isolate archive card for ${href}`);
+            const close = end + '</article>'.length;
+            const article = html.slice(start, close);
+            const next = article.replace(
+              /<p\s+class=["']guide-desc["'][^>]*>[\s\S]*?<\/p>/i,
+              `<p class="guide-desc">${description}</p>`
+            );
+            if (next === article) throw new Error(`Archive description not found for ${href}`);
+            html = html.slice(0, start) + next + html.slice(close);
+          }
+
+          replaceDescription(
+            '/ships/ss-adriatic-1872.html',
+            'An early White Star Line North Atlantic liner built during the company’s formative post-1870 fleet expansion. She belonged to the transitional generation of iron screw steamers that still carried auxiliary sail while serving increasingly regularized passenger and emigrant traffic between Liverpool and New York.'
+          );
+          replaceDescription(
+            '/ships/rms-carpathia.html',
+            'A Cunard liner best remembered for rescuing <em>Titanic</em>’s survivors on 15 April 1912; she was later torpedoed and sunk by U-55 in 1918.'
+          );
+          replaceDescription(
+            '/ships/ss-catalonia.html',
+            'A Cunard transatlantic steamship of the early 1880s, representative of the line’s practical passenger-and-cargo service.'
+          );
+
+          const duchessDescription = 'One of Canadian Pacific’s interwar Duchess-class liners for seasonal Montreal–Liverpool service.';
+          for (const href of [
+            '/ships/ss-duchess-of-atholl.html',
+            '/ships/ss-duchess-of-bedford.html',
+            '/ships/ss-duchess-of-richmond.html',
+            '/ships/ss-duchess-of-york.html'
+          ]) replaceDescription(href, duchessDescription);
+
+          fs.writeFileSync(path, html);
+          NODE
+
+      - name: Verify authoritative archive source
         run: node tools/search/normalize-archive-source.mjs
 
-      - name: Commit reconciled archive source
+      - name: Commit repaired archive source
         shell: bash
         run: |
           if git diff --quiet -- ships/ships.html; then
-            echo "ships/ships.html is already reconciled."
+            echo "ships/ships.html already contains the repaired descriptions."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add ships/ships.html
-          git commit -m "Reconcile Ship Archive source [skip ci]"
+          git commit -m "Repair Ship Archive source descriptions [skip ci]"
           git push
