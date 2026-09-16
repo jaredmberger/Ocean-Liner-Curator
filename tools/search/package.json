@@ -3,11 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node normalize-archive-source.mjs && node build.mjs && node builder-audit.mjs && node data-quality-audit.mjs",
+    "build": "node normalize-guide-facts.mjs && node normalize-archive-source.mjs && node build.mjs && node builder-audit.mjs && node data-quality-audit.mjs",
     "test": "node check.mjs",
-    "audit:builders": "node builder-audit.mjs",
-    "audit:data": "node builder-audit.mjs && node data-quality-audit.mjs",
-    "normalize:archive": "node normalize-archive-source.mjs"
+    "audit:builders": "node normalize-guide-facts.mjs && node builder-audit.mjs",
+    "audit:data": "node normalize-guide-facts.mjs && node builder-audit.mjs && node data-quality-audit.mjs",
+    "normalize:archive": "node normalize-archive-source.mjs",
+    "normalize:guides": "node normalize-guide-facts.mjs"
   },
   "engines": {"node": ">=22.12"},
   "dependencies": {
