@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T08:37:39.895Z",
+  "generatedAt": "2026-09-16T02:28:58.315Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 302,
-    "guidesWithServiceStart": 298,
+    "shipGuides": 301,
+    "guidesWithServiceStart": 297,
     "guidesWithExplicitServiceEnd": 236,
     "eras": 10,
     "decades": 15
@@ -1101,278 +1101,6 @@
       ]
     },
     {
-      "name": "Interwar express-liner era",
-      "shipCount": 38,
-      "ships": [
-        {
-          "name": "Athlone Castle",
-          "path": "ships/athlone-castle.html",
-          "url": "/ships/athlone-castle",
-          "serviceStartYear": "1936",
-          "serviceEndYear": "1965"
-        },
-        {
-          "name": "Monarch of Bermuda",
-          "path": "ships/monarch-of-bermuda.html",
-          "url": "/ships/monarch-of-bermuda",
-          "serviceStartYear": "1931",
-          "serviceEndYear": null
-        },
-        {
-          "name": "MV Britannic",
-          "path": "ships/mv-britannic.html",
-          "url": "/ships/mv-britannic",
-          "serviceStartYear": "1930",
-          "serviceEndYear": "1961"
-        },
-        {
-          "name": "MV Georgic",
-          "path": "ships/mv-georgic.html",
-          "url": "/ships/mv-georgic",
-          "serviceStartYear": "1932",
-          "serviceEndYear": "1956"
-        },
-        {
-          "name": "Neptunia",
-          "path": "ships/neptunia.html",
-          "url": "/ships/neptunia",
-          "serviceStartYear": "1932",
-          "serviceEndYear": "1940"
-        },
-        {
-          "name": "NYK Hikawa Maru",
-          "path": "ships/nyk-hikawa-maru.html",
-          "url": "/ships/nyk-hikawa-maru",
-          "serviceStartYear": "1930",
-          "serviceEndYear": "1960"
-        },
-        {
-          "name": "Oceania",
-          "path": "ships/oceania.html",
-          "url": "/ships/oceania",
-          "serviceStartYear": "1933",
-          "serviceEndYear": null
-        },
-        {
-          "name": "RMS Empress of Britain",
-          "path": "ships/rms-empress-of-britain.html",
-          "url": "/ships/rms-empress-of-britain",
-          "serviceStartYear": "1931",
-          "serviceEndYear": "1940"
-        },
-        {
-          "name": "RMS Empress of Japan (1929)",
-          "path": "ships/rms-empress-of-japan-1929.html",
-          "url": "/ships/rms-empress-of-japan-1929",
-          "serviceStartYear": "1930",
-          "serviceEndYear": "1966"
-        },
-        {
-          "name": "RMS Queen Mary",
-          "path": "ships/rms-queen-mary.html",
-          "url": "/ships/rms-queen-mary",
-          "serviceStartYear": "1936",
-          "serviceEndYear": "1967"
-        },
-        {
-          "name": "RMS Strathnaver",
-          "path": "ships/rms-strathnaver.html",
-          "url": "/ships/rms-strathnaver",
-          "serviceStartYear": "1931",
-          "serviceEndYear": "1962"
-        },
-        {
-          "name": "SS Champlain",
-          "path": "ships/ss-champlain.html",
-          "url": "/ships/ss-champlain",
-          "serviceStartYear": "1932",
-          "serviceEndYear": "1940"
-        },
-        {
-          "name": "SS Conte di Savoia",
-          "path": "ships/ss-conte-di-savoia.html",
-          "url": "/ships/ss-conte-di-savoia",
-          "serviceStartYear": "1932",
-          "serviceEndYear": "1950"
-        },
-        {
-          "name": "SS Europa",
-          "path": "ships/ss-europa.html",
-          "url": "/ships/ss-europa",
-          "serviceStartYear": "1930",
-          "serviceEndYear": "1963"
-        },
-        {
-          "name": "SS Gneisenau",
-          "path": "ships/ss-gneisenau.html",
-          "url": "/ships/ss-gneisenau",
-          "serviceStartYear": "1935",
-          "serviceEndYear": null
-        },
-        {
-          "name": "MS Johan van Oldenbarnevelt",
-          "path": "ships/ss-johan-van-oldenbarnevelt.html",
-          "url": "/ships/ss-johan-van-oldenbarnevelt",
-          "serviceStartYear": "1930",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS L'Atlantique",
-          "path": "ships/ss-latlantique.html",
-          "url": "/ships/ss-latlantique",
-          "serviceStartYear": "1931",
-          "serviceEndYear": "1936"
-        },
-        {
-          "name": "SS Lurline (1932)",
-          "path": "ships/ss-lurline-1932.html",
-          "url": "/ships/ss-lurline-1932",
-          "serviceStartYear": "1932",
-          "serviceEndYear": "1987"
-        },
-        {
-          "name": "SS Manhattan (1932)",
-          "path": "ships/ss-manhattan.html",
-          "url": "/ships/ss-manhattan",
-          "serviceStartYear": "1931",
-          "serviceEndYear": "1965"
-        },
-        {
-          "name": "SS Mariposa",
-          "path": "ships/ss-mariposa.html",
-          "url": "/ships/ss-mariposa",
-          "serviceStartYear": "1932",
-          "serviceEndYear": "1974"
-        },
-        {
-          "name": "MS Marnix Van St Aldegonde",
-          "path": "ships/ss-marnix-van-st-aldegonde.html",
-          "url": "/ships/ss-marnix-van-st-aldegonde",
-          "serviceStartYear": "1930",
-          "serviceEndYear": null
-        },
-        {
-          "name": "Monarch of Bermuda",
-          "path": "ships/ss-monarch-of-bermuda.html",
-          "url": "/ships/ss-monarch-of-bermuda",
-          "serviceStartYear": "1931",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS Monterey",
-          "path": "ships/ss-monterey.html",
-          "url": "/ships/ss-monterey",
-          "serviceStartYear": "1932",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS Morro Castle",
-          "path": "ships/ss-morro-castle.html",
-          "url": "/ships/ss-morro-castle",
-          "serviceStartYear": "1930",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS Nieuw Amsterdam",
-          "path": "ships/ss-nieuw-amsterdam.html",
-          "url": "/ships/ss-nieuw-amsterdam",
-          "serviceStartYear": "1938",
-          "serviceEndYear": "1974"
-        },
-        {
-          "name": "SS Normandie",
-          "path": "ships/ss-normandie.html",
-          "url": "/ships/ss-normandie",
-          "serviceStartYear": "1935",
-          "serviceEndYear": "1939"
-        },
-        {
-          "name": "SS Orion",
-          "path": "ships/ss-orion.html",
-          "url": "/ships/ss-orion",
-          "serviceStartYear": "1935",
-          "serviceEndYear": "1963"
-        },
-        {
-          "name": "SS President Coolidge",
-          "path": "ships/ss-president-coolidge.html",
-          "url": "/ships/ss-president-coolidge",
-          "serviceStartYear": "1931",
-          "serviceEndYear": "1942"
-        },
-        {
-          "name": "SS President Hoover",
-          "path": "ships/ss-president-hoover.html",
-          "url": "/ships/ss-president-hoover",
-          "serviceStartYear": "1931",
-          "serviceEndYear": "1937"
-        },
-        {
-          "name": "SS Queen of Bermuda",
-          "path": "ships/ss-queen-of-bermuda.html",
-          "url": "/ships/ss-queen-of-bermuda",
-          "serviceStartYear": "1933",
-          "serviceEndYear": "1966"
-        },
-        {
-          "name": "SS Rex",
-          "path": "ships/ss-rex.html",
-          "url": "/ships/ss-rex",
-          "serviceStartYear": "1932",
-          "serviceEndYear": "1944"
-        },
-        {
-          "name": "SS Scharnhorst",
-          "path": "ships/ss-scharnhorst.html",
-          "url": "/ships/ss-scharnhorst",
-          "serviceStartYear": "1935",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS Strathaird",
-          "path": "ships/ss-strathaird.html",
-          "url": "/ships/ss-strathaird",
-          "serviceStartYear": "1932",
-          "serviceEndYear": "1961"
-        },
-        {
-          "name": "SS Strathmore",
-          "path": "ships/ss-strathmore.html",
-          "url": "/ships/ss-strathmore",
-          "serviceStartYear": "1935",
-          "serviceEndYear": "1969"
-        },
-        {
-          "name": "SS Warwick Castle",
-          "path": "ships/ss-warwick-castle.html",
-          "url": "/ships/ss-warwick-castle",
-          "serviceStartYear": "1931",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS Washington",
-          "path": "ships/ss-washington.html",
-          "url": "/ships/ss-washington",
-          "serviceStartYear": "1933",
-          "serviceEndYear": "1965"
-        },
-        {
-          "name": "Stirling Castle",
-          "path": "ships/stirling-castle.html",
-          "url": "/ships/stirling-castle",
-          "serviceStartYear": "1936",
-          "serviceEndYear": "1966"
-        },
-        {
-          "name": "Tatsuta Maru",
-          "path": "ships/tatsuta-maru-1929.html",
-          "url": "/ships/tatsuta-maru-1929",
-          "serviceStartYear": "1930",
-          "serviceEndYear": "1943"
-        }
-      ]
-    },
-    {
       "name": "Late Victorian expansion",
       "shipCount": 38,
       "ships": [
@@ -1641,6 +1369,271 @@
           "url": "/ships/ss-winifredian",
           "serviceStartYear": "1899",
           "serviceEndYear": "1929"
+        }
+      ]
+    },
+    {
+      "name": "Interwar express-liner era",
+      "shipCount": 37,
+      "ships": [
+        {
+          "name": "Athlone Castle",
+          "path": "ships/athlone-castle.html",
+          "url": "/ships/athlone-castle",
+          "serviceStartYear": "1936",
+          "serviceEndYear": "1965"
+        },
+        {
+          "name": "MV Britannic",
+          "path": "ships/mv-britannic.html",
+          "url": "/ships/mv-britannic",
+          "serviceStartYear": "1930",
+          "serviceEndYear": "1961"
+        },
+        {
+          "name": "MV Georgic",
+          "path": "ships/mv-georgic.html",
+          "url": "/ships/mv-georgic",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1956"
+        },
+        {
+          "name": "Neptunia",
+          "path": "ships/neptunia.html",
+          "url": "/ships/neptunia",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1940"
+        },
+        {
+          "name": "NYK Hikawa Maru",
+          "path": "ships/nyk-hikawa-maru.html",
+          "url": "/ships/nyk-hikawa-maru",
+          "serviceStartYear": "1930",
+          "serviceEndYear": "1960"
+        },
+        {
+          "name": "Oceania",
+          "path": "ships/oceania.html",
+          "url": "/ships/oceania",
+          "serviceStartYear": "1933",
+          "serviceEndYear": null
+        },
+        {
+          "name": "RMS Empress of Britain",
+          "path": "ships/rms-empress-of-britain.html",
+          "url": "/ships/rms-empress-of-britain",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1940"
+        },
+        {
+          "name": "RMS Empress of Japan (1929)",
+          "path": "ships/rms-empress-of-japan-1929.html",
+          "url": "/ships/rms-empress-of-japan-1929",
+          "serviceStartYear": "1930",
+          "serviceEndYear": "1966"
+        },
+        {
+          "name": "RMS Queen Mary",
+          "path": "ships/rms-queen-mary.html",
+          "url": "/ships/rms-queen-mary",
+          "serviceStartYear": "1936",
+          "serviceEndYear": "1967"
+        },
+        {
+          "name": "RMS Strathnaver",
+          "path": "ships/rms-strathnaver.html",
+          "url": "/ships/rms-strathnaver",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1962"
+        },
+        {
+          "name": "SS Champlain",
+          "path": "ships/ss-champlain.html",
+          "url": "/ships/ss-champlain",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1940"
+        },
+        {
+          "name": "SS Conte di Savoia",
+          "path": "ships/ss-conte-di-savoia.html",
+          "url": "/ships/ss-conte-di-savoia",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1950"
+        },
+        {
+          "name": "SS Europa",
+          "path": "ships/ss-europa.html",
+          "url": "/ships/ss-europa",
+          "serviceStartYear": "1930",
+          "serviceEndYear": "1963"
+        },
+        {
+          "name": "SS Gneisenau",
+          "path": "ships/ss-gneisenau.html",
+          "url": "/ships/ss-gneisenau",
+          "serviceStartYear": "1935",
+          "serviceEndYear": null
+        },
+        {
+          "name": "MS Johan van Oldenbarnevelt",
+          "path": "ships/ss-johan-van-oldenbarnevelt.html",
+          "url": "/ships/ss-johan-van-oldenbarnevelt",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS L'Atlantique",
+          "path": "ships/ss-latlantique.html",
+          "url": "/ships/ss-latlantique",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1936"
+        },
+        {
+          "name": "SS Lurline (1932)",
+          "path": "ships/ss-lurline-1932.html",
+          "url": "/ships/ss-lurline-1932",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1987"
+        },
+        {
+          "name": "SS Manhattan (1932)",
+          "path": "ships/ss-manhattan.html",
+          "url": "/ships/ss-manhattan",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1965"
+        },
+        {
+          "name": "SS Mariposa",
+          "path": "ships/ss-mariposa.html",
+          "url": "/ships/ss-mariposa",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1974"
+        },
+        {
+          "name": "MS Marnix Van St Aldegonde",
+          "path": "ships/ss-marnix-van-st-aldegonde.html",
+          "url": "/ships/ss-marnix-van-st-aldegonde",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
+        },
+        {
+          "name": "Monarch of Bermuda",
+          "path": "ships/ss-monarch-of-bermuda.html",
+          "url": "/ships/ss-monarch-of-bermuda",
+          "serviceStartYear": "1931",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Monterey",
+          "path": "ships/ss-monterey.html",
+          "url": "/ships/ss-monterey",
+          "serviceStartYear": "1932",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Morro Castle",
+          "path": "ships/ss-morro-castle.html",
+          "url": "/ships/ss-morro-castle",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Nieuw Amsterdam",
+          "path": "ships/ss-nieuw-amsterdam.html",
+          "url": "/ships/ss-nieuw-amsterdam",
+          "serviceStartYear": "1938",
+          "serviceEndYear": "1974"
+        },
+        {
+          "name": "SS Normandie",
+          "path": "ships/ss-normandie.html",
+          "url": "/ships/ss-normandie",
+          "serviceStartYear": "1935",
+          "serviceEndYear": "1939"
+        },
+        {
+          "name": "SS Orion",
+          "path": "ships/ss-orion.html",
+          "url": "/ships/ss-orion",
+          "serviceStartYear": "1935",
+          "serviceEndYear": "1963"
+        },
+        {
+          "name": "SS President Coolidge",
+          "path": "ships/ss-president-coolidge.html",
+          "url": "/ships/ss-president-coolidge",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1942"
+        },
+        {
+          "name": "SS President Hoover",
+          "path": "ships/ss-president-hoover.html",
+          "url": "/ships/ss-president-hoover",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1937"
+        },
+        {
+          "name": "SS Queen of Bermuda",
+          "path": "ships/ss-queen-of-bermuda.html",
+          "url": "/ships/ss-queen-of-bermuda",
+          "serviceStartYear": "1933",
+          "serviceEndYear": "1966"
+        },
+        {
+          "name": "SS Rex",
+          "path": "ships/ss-rex.html",
+          "url": "/ships/ss-rex",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1944"
+        },
+        {
+          "name": "SS Scharnhorst",
+          "path": "ships/ss-scharnhorst.html",
+          "url": "/ships/ss-scharnhorst",
+          "serviceStartYear": "1935",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Strathaird",
+          "path": "ships/ss-strathaird.html",
+          "url": "/ships/ss-strathaird",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1961"
+        },
+        {
+          "name": "SS Strathmore",
+          "path": "ships/ss-strathmore.html",
+          "url": "/ships/ss-strathmore",
+          "serviceStartYear": "1935",
+          "serviceEndYear": "1969"
+        },
+        {
+          "name": "SS Warwick Castle",
+          "path": "ships/ss-warwick-castle.html",
+          "url": "/ships/ss-warwick-castle",
+          "serviceStartYear": "1931",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Washington",
+          "path": "ships/ss-washington.html",
+          "url": "/ships/ss-washington",
+          "serviceStartYear": "1933",
+          "serviceEndYear": "1965"
+        },
+        {
+          "name": "Stirling Castle",
+          "path": "ships/stirling-castle.html",
+          "url": "/ships/stirling-castle",
+          "serviceStartYear": "1936",
+          "serviceEndYear": "1966"
+        },
+        {
+          "name": "Tatsuta Maru",
+          "path": "ships/tatsuta-maru-1929.html",
+          "url": "/ships/tatsuta-maru-1929",
+          "serviceStartYear": "1930",
+          "serviceEndYear": "1943"
         }
       ]
     },
@@ -3117,7 +3110,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 42,
+      "shipCount": 41,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -3125,13 +3118,6 @@
           "url": "/ships/athlone-castle",
           "serviceStartYear": "1936",
           "serviceEndYear": "1965"
-        },
-        {
-          "name": "Monarch of Bermuda",
-          "path": "ships/monarch-of-bermuda.html",
-          "url": "/ships/monarch-of-bermuda",
-          "serviceStartYear": "1931",
-          "serviceEndYear": null
         },
         {
           "name": "MV Britannic",
@@ -4357,17 +4343,6 @@
       "era": "Interwar express-liner era",
       "decade": "1930s",
       "endEvidence": "Withdrawn in 1965 and scrapped at Kaohsiung"
-    },
-    {
-      "name": "Monarch of Bermuda",
-      "path": "ships/monarch-of-bermuda.html",
-      "url": "/ships/monarch-of-bermuda",
-      "launchYear": "1931",
-      "serviceStartYear": "1931",
-      "serviceEndYear": null,
-      "era": "Interwar express-liner era",
-      "decade": "1930s",
-      "endEvidence": null
     },
     {
       "name": "MS Augustus",
