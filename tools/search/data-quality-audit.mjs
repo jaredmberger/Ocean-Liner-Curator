@@ -51,11 +51,11 @@ for (const record of records) {
   } catch {}
 }
 
-// A few long-established archive links use older slugs than the guide canonical/file path.
-// Treat these as aliases for audit matching rather than creating duplicate archive cards.
-const archiveGuideAliases = new Map([
-  ['/ships/ss-monarch-of-bermuda', '/ships/monarch-of-bermuda'],
-  ['/ships/ss-columbia', '/ships/ss-columbia-anchor-line']
+// These are duplicate guide identities already represented by the long-established
+// archive-linked guide. They must not cause the audit to request a second archive card.
+const duplicateGuideIdentities = new Map([
+  ['/ships/ss-monarch-of-bermuda', ['/ships/monarch-of-bermuda']],
+  ['/ships/ss-columbia', ['/ships/ss-columbia-anchor-line']]
 ]);
 
 const $ = load(archiveHtml);
@@ -90,13 +90,18 @@ const archiveLinePresentationDifferences = [];
 
 for (const card of archiveCards) {
   if (specialArchiveHrefs.has(card.href)) continue;
-  const matchedHref = archiveGuideAliases.get(card.href) || card.href;
-  const record = recordsByPath.get(matchedHref) || recordsByUrl.get(matchedHref);
+  const record = recordsByPath.get(card.href) || recordsByUrl.get(card.href);
   if (!record) {
     archiveWithoutGuide.push({ title: card.title, href: card.hrefRaw });
     continue;
   }
   matchedGuidePaths.add(record.path);
+
+  // Mark known duplicate guide files as represented by the same archive identity.
+  for (const duplicateHref of duplicateGuideIdentities.get(card.href) || []) {
+    const duplicateRecord = recordsByPath.get(duplicateHref) || recordsByUrl.get(duplicateHref);
+    if (duplicateRecord) matchedGuidePaths.add(duplicateRecord.path);
+  }
 
   if (card.dataYear && card.metaYear && card.dataYear !== card.metaYear) {
     archiveYearSelfMismatches.push({ ship: card.title, href: card.hrefRaw, dataYear: card.dataYear, metaYear: card.metaYear });
@@ -195,7 +200,7 @@ const reviewRequired = {
 
 const informational = {
   specialArchiveReferences,
-  archiveGuideAliases: [...archiveGuideAliases.entries()].map(([archiveHref, guideHref]) => ({ archiveHref, guideHref }))
+  knownDuplicateGuideIdentities: [...duplicateGuideIdentities.entries()].map(([archiveHref, duplicateGuideHrefs]) => ({ archiveHref, duplicateGuideHrefs }))
 };
 const countItems = object => Object.values(object).reduce((sum, value) => sum + (Array.isArray(value) ? value.length : 0), 0);
 const summary = {
@@ -212,11 +217,11 @@ const summary = {
   operatorSubtitleFallbackCount: (audit.operatorFallbacks || []).length,
   builderVariantGroupCount: (audit.variantGroups || []).length,
   specialArchiveReferenceCount: specialArchiveReferences.length,
-  archiveGuideAliasCount: archiveGuideAliases.size
+  knownDuplicateGuideIdentityCount: duplicateGuideIdentities.size
 };
 
 const report = {
-  schemaVersion: 3,
+  schemaVersion: 4,
   generatedAt: summary.generatedAt,
   source: 'Ship guide facts + ships/ships.html archive cards + alias maps',
   summary,
