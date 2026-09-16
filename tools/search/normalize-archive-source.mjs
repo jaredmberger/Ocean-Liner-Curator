@@ -25,6 +25,14 @@ function replaceCardDescription(source, href, description) {
   });
 }
 
+function insertCardBefore(source, beforeHref, cardHref, cardHtml) {
+  if (source.includes(`href="${cardHref}"`) || source.includes(`href='${cardHref}'`)) return source;
+  const target = new RegExp(`<article\\b[^>]*class=["'][^"']*\\bguide-card\\b[^"']*["'][^>]*>[\\s\\S]*?href=["']${escapeRegExp(beforeHref)}["'][\\s\\S]*?<\\/article>`, 'i');
+  const match = source.match(target);
+  if (!match || match.index == null) throw new Error(`Archive insertion anchor not found: ${beforeHref}`);
+  return source.slice(0, match.index) + cardHtml + '\n\n' + source.slice(match.index);
+}
+
 const correctedDescriptions = {
   '/ships/rms-carpathia.html': 'A Cunard liner best remembered for rescuing <em>Titanic</em>’s survivors on 15 April 1912; she was later torpedoed and sunk by U-55 in 1918.',
   '/ships/ss-catalonia.html': 'A Cunard transatlantic steamship of the early 1880s, representative of the line’s practical passenger-and-cargo service.',
@@ -34,6 +42,20 @@ const correctedDescriptions = {
   '/ships/ss-duchess-of-york.html': 'One of Canadian Pacific’s interwar Duchess-class liners for seasonal Montreal–Liverpool service.'
 };
 for (const [href, description] of Object.entries(correctedDescriptions)) html = replaceCardDescription(html, href, description);
+
+html = insertCardBefore(
+  html,
+  '/ships/ss-commonwealth.html',
+  '/ships/ss-columbia-anchor-line.html',
+  `<!-- CARD -->\n<article class="guide-card" data-line="Anchor Line" data-year="1902">\n  <div class="guide-top">\n    <a class="guide-title" href="/ships/ss-columbia-anchor-line.html">SS Columbia</a>\n    <div class="guide-meta">Anchor Line · 1902</div>\n  </div>\n  <p class="guide-desc">An Anchor Line transatlantic liner for Glasgow–New York service whose career later included wartime conversion and successive renaming phases.</p>\n  <span class="mini-badge">✓ Reviewed using curatorial standards</span>\n</article>`
+);
+
+html = insertCardBefore(
+  html,
+  '/ships/ss-mongolia.html',
+  '/ships/monarch-of-bermuda.html',
+  `<!-- CARD -->\n<article class="guide-card" data-line="Furness Bermuda Line" data-year="1931">\n  <div class="guide-top">\n    <a class="guide-title" href="/ships/monarch-of-bermuda.html">Monarch of Bermuda</a>\n    <div class="guide-meta">Furness Bermuda Line · 1931</div>\n  </div>\n  <p class="guide-desc">A purpose-built luxury liner for the New York–Bermuda trade whose later career included extensive wartime troopship service.</p>\n  <span class="mini-badge">✓ Reviewed using curatorial standards</span>\n</article>`
+);
 
 // Derive the ocean-liner span from archive ship cards only. Tall Ships is an intentional
 // special reference card covering the age of sail and must not define the liner chronology.
