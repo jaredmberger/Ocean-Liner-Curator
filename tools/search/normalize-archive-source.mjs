@@ -44,9 +44,15 @@ for (const [href, description] of Object.entries(correctedDescriptions)) {
   html = replaceCardDescription(html, href, description);
 }
 
-// Derive the archive span from the card data rather than maintaining a second manual date range.
-const years = [...html.matchAll(/data-year=["'](\d{4})["']/g)].map(match => Number(match[1])).filter(Number.isFinite);
-if (!years.length) throw new Error('No archive data-year values found');
+// Derive the archive span only from actual Ship Archive cards. Other page features may
+// legitimately use their own data-year attributes and must not affect archive coverage.
+const guideCardOpenTags = [...html.matchAll(/<article\b[^>]*class=["'][^"']*\bguide-card\b[^"']*["'][^>]*>/gi)].map(match => match[0]);
+const years = guideCardOpenTags
+  .map(tag => tag.match(/\bdata-year=["'](\d{4})["']/i)?.[1])
+  .filter(Boolean)
+  .map(Number)
+  .filter(Number.isFinite);
+if (!years.length) throw new Error('No Ship Archive guide-card data-year values found');
 const firstYear = Math.min(...years);
 const lastYear = Math.max(...years);
 const span = `${firstYear}–${lastYear}`;
