@@ -59,6 +59,34 @@
       items: [
         ["/ships/ms-saturnia", "MS <em>Saturnia</em>", "sister ship"]
       ]
+    },
+    "rms-arundel-castle-1921": {
+      heading: "Sister Ships",
+      note: "Arundel Castle and Windsor Castle were sister Cape Mail liners whose original four-funnel profiles and later 1937 modernizations closely paralleled one another.",
+      items: [
+        ["/ships/rms-windsor-castle-1921", "RMS <em>Windsor Castle</em> (1921)", "sister ship"]
+      ]
+    },
+    "rms-windsor-castle-1921": {
+      heading: "Sister Ships",
+      note: "Windsor Castle and Arundel Castle were sister Cape Mail liners whose original four-funnel profiles and later 1937 modernizations closely paralleled one another.",
+      items: [
+        ["/ships/rms-arundel-castle-1921", "RMS <em>Arundel Castle</em>", "sister ship"]
+      ]
+    },
+    "ss-city-of-new-york-1888": {
+      heading: "Near-Sister Express Pair",
+      note: "City of New York and City of Paris were closely related Inman express liners built as a paired late-1880s challenge in the North Atlantic speed trade.",
+      items: [
+        ["/ships/ss-city-of-paris", "SS <em>City of Paris</em>", "near-sister and express running mate"]
+      ]
+    },
+    "ss-city-of-paris": {
+      heading: "Near-Sister Express Pair",
+      note: "City of Paris and City of New York were closely related Inman express liners built as a paired late-1880s challenge in the North Atlantic speed trade.",
+      items: [
+        ["/ships/ss-city-of-new-york-1888", "SS <em>City of New York</em> (1888)", "near-sister and express running mate"]
+      ]
     }
   };
 
