@@ -11,6 +11,32 @@ function rowHtml(label, value) {
   return `\n        <div class="fact-row">\n          <div class="fact-label">${label}</div>\n          <div class="fact-value">${value}</div>\n        </div>`;
 }
 
+function replaceBalancedFactsFragment(source, replacement, path) {
+  const startMatch = /<div\s+class=["'][^"']*\bfacts\b[^"']*["'][^>]*>/i.exec(source);
+  if (!startMatch) throw new Error(`${path}: facts table not found`);
+
+  const start = startMatch.index;
+  const tokenPattern = /<div\b[^>]*>|<\/div>/gi;
+  tokenPattern.lastIndex = start;
+
+  let depth = 0;
+  let end = -1;
+  let token;
+
+  while ((token = tokenPattern.exec(source))) {
+    if (/^<div\b/i.test(token[0])) depth += 1;
+    else depth -= 1;
+
+    if (depth === 0) {
+      end = tokenPattern.lastIndex;
+      break;
+    }
+  }
+
+  if (end < 0) throw new Error(`${path}: could not locate balanced facts table boundary`);
+  return source.slice(0, start) + replacement + source.slice(end);
+}
+
 // France already records both dates, but in one compound row that the structured-data
 // extractor cannot distinguish safely. Split the row without changing either fact.
 {
@@ -184,28 +210,10 @@ for (const fix of fixes) {
   if (anchor && anchor.length) anchor.after(rowHtml(fix.label, fix.value));
   else facts.prepend(rowHtml(fix.label, fix.value));
 
-  // Serialize only the facts fragment; the rest of each legacy guide remains byte-for-byte unchanged.
-  const originalFactsMatch = source.match(/<div\s+class=["']facts["'][^>]*>[\s\S]*?<\/div>\s*(?=<h2|<p\s+class=["']note|<div\s+class=["']mini-badge|<\/div>)/i);
-  if (!originalFactsMatch) {
-    const anchorLabels = fix.insertAfter || [];
-    let updated = source;
-    let inserted = false;
-    for (const preferred of anchorLabels) {
-      const rowPattern = new RegExp(`(<div\\s+class=["']fact-row["'][^>]*>[\\s\\S]*?<div\\s+class=["']fact-label["'][^>]*>[^<]*${preferred}[^<]*<\\/div>[\\s\\S]*?<div\\s+class=["']fact-value["'][^>]*>[\\s\\S]*?<\\/div>\\s*<\\/div>)`, 'i');
-      if (rowPattern.test(updated)) {
-        updated = updated.replace(rowPattern, `$1${rowHtml(fix.label, fix.value)}`);
-        inserted = true;
-        break;
-      }
-    }
-    if (!inserted) throw new Error(`${fix.path}: could not safely locate insertion point`);
-    await writeFile(file, updated, 'utf8');
-    console.log(`${fix.path}: added ${fix.label}`);
-    continue;
-  }
-
+  // Replace the complete .facts element using balanced div boundaries. The old
+  // regex could stop at a nested fact-row closing tag and corrupt the page.
   const serializedFacts = $.html(facts);
-  const updated = source.replace(originalFactsMatch[0], serializedFacts);
+  const updated = replaceBalancedFactsFragment(source, serializedFacts, fix.path);
   await writeFile(file, updated, 'utf8');
   console.log(`${fix.path}: added ${fix.label}`);
 }
