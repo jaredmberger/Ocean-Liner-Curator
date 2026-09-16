@@ -51,6 +51,13 @@ for (const record of records) {
   } catch {}
 }
 
+// A few long-established archive links use older slugs than the guide canonical/file path.
+// Treat these as aliases for audit matching rather than creating duplicate archive cards.
+const archiveGuideAliases = new Map([
+  ['/ships/ss-monarch-of-bermuda', '/ships/monarch-of-bermuda'],
+  ['/ships/ss-columbia', '/ships/ss-columbia-anchor-line']
+]);
+
 const $ = load(archiveHtml);
 const archiveCards = [];
 $('.guide-card').each((_, element) => {
@@ -83,7 +90,8 @@ const archiveLinePresentationDifferences = [];
 
 for (const card of archiveCards) {
   if (specialArchiveHrefs.has(card.href)) continue;
-  const record = recordsByPath.get(card.href) || recordsByUrl.get(card.href);
+  const matchedHref = archiveGuideAliases.get(card.href) || card.href;
+  const record = recordsByPath.get(matchedHref) || recordsByUrl.get(matchedHref);
   if (!record) {
     archiveWithoutGuide.push({ title: card.title, href: card.hrefRaw });
     continue;
@@ -185,7 +193,10 @@ const reviewRequired = {
   repeatedNormalizedTitles
 };
 
-const informational = { specialArchiveReferences };
+const informational = {
+  specialArchiveReferences,
+  archiveGuideAliases: [...archiveGuideAliases.entries()].map(([archiveHref, guideHref]) => ({ archiveHref, guideHref }))
+};
 const countItems = object => Object.values(object).reduce((sum, value) => sum + (Array.isArray(value) ? value.length : 0), 0);
 const summary = {
   generatedAt: new Date().toISOString(),
@@ -200,11 +211,12 @@ const summary = {
   archiveWithoutGuideCount: archiveWithoutGuide.length,
   operatorSubtitleFallbackCount: (audit.operatorFallbacks || []).length,
   builderVariantGroupCount: (audit.variantGroups || []).length,
-  specialArchiveReferenceCount: specialArchiveReferences.length
+  specialArchiveReferenceCount: specialArchiveReferences.length,
+  archiveGuideAliasCount: archiveGuideAliases.size
 };
 
 const report = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   generatedAt: summary.generatedAt,
   source: 'Ship guide facts + ships/ships.html archive cards + alias maps',
   summary,
