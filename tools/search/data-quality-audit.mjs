@@ -66,26 +66,23 @@ $('.guide-card').each((_, element) => {
   const metaParts = meta.split('·').map(clean).filter(Boolean);
   const metaLine = metaParts[0] || null;
   const metaYear = metaParts.find(part => /^(?:18|19|20)\d{2}$/.test(part)) || null;
-  archiveCards.push({
-    href,
-    hrefRaw,
-    title: clean(link.text()),
-    description,
-    dataLine: dataLine || null,
-    dataYear: dataYear || null,
-    metaLine,
-    metaYear
-  });
+  archiveCards.push({ href, hrefRaw, title: clean(link.text()), description, dataLine: dataLine || null, dataYear: dataYear || null, metaLine, metaYear });
 });
 
-const archiveByHref = new Map(archiveCards.map(card => [card.href, card]));
+const specialArchiveHrefs = new Set(['/ships/tall-ships-guide']);
+const specialArchiveReferences = archiveCards
+  .filter(card => specialArchiveHrefs.has(card.href))
+  .map(card => ({ title: card.title, href: card.hrefRaw, dataYear: card.dataYear, meta: [card.metaLine, card.metaYear].filter(Boolean).join(' · ') || null }));
+
 const matchedGuidePaths = new Set();
 const archiveWithoutGuide = [];
-const archiveYearMismatches = [];
-const archiveOperatorMismatches = [];
-const archiveInternalMismatches = [];
+const archiveYearConventionDifferences = [];
+const archiveOperatorDifferences = [];
+const archiveYearSelfMismatches = [];
+const archiveLinePresentationDifferences = [];
 
 for (const card of archiveCards) {
+  if (specialArchiveHrefs.has(card.href)) continue;
   const record = recordsByPath.get(card.href) || recordsByUrl.get(card.href);
   if (!record) {
     archiveWithoutGuide.push({ title: card.title, href: card.hrefRaw });
@@ -94,17 +91,13 @@ for (const card of archiveCards) {
   matchedGuidePaths.add(record.path);
 
   if (card.dataYear && card.metaYear && card.dataYear !== card.metaYear) {
-    archiveInternalMismatches.push({
-      type: 'archive-year-self-mismatch',
-      ship: card.title,
-      href: card.hrefRaw,
-      dataYear: card.dataYear,
-      metaYear: card.metaYear
-    });
+    archiveYearSelfMismatches.push({ ship: card.title, href: card.hrefRaw, dataYear: card.dataYear, metaYear: card.metaYear });
   }
 
+  // Archive years often represent service/name identity years rather than launch years.
+  // Keep differences visible for curatorial review; never classify them as automatic errors.
   if (record.launchYear && card.dataYear && String(record.launchYear) !== String(card.dataYear)) {
-    archiveYearMismatches.push({
+    archiveYearConventionDifferences.push({
       ship: record.ship,
       path: record.path,
       guideLaunchYear: record.launchYear,
@@ -116,7 +109,7 @@ for (const card of archiveCards) {
   const guideOperator = canonicalOperator(record.operator);
   const archiveOperator = canonicalOperator(card.dataLine || card.metaLine);
   if (guideOperator && archiveOperator && normalize(guideOperator) !== normalize(archiveOperator)) {
-    archiveOperatorMismatches.push({
+    archiveOperatorDifferences.push({
       ship: record.ship,
       path: record.path,
       guideOperator: record.operator,
@@ -127,13 +120,7 @@ for (const card of archiveCards) {
   }
 
   if (card.dataLine && card.metaLine && normalize(card.dataLine) !== normalize(card.metaLine)) {
-    archiveInternalMismatches.push({
-      type: 'archive-line-self-mismatch',
-      ship: card.title,
-      href: card.hrefRaw,
-      dataLine: card.dataLine,
-      metaLine: card.metaLine
-    });
+    archiveLinePresentationDifferences.push({ ship: card.title, href: card.hrefRaw, dataLine: card.dataLine, metaLine: card.metaLine });
   }
 }
 
@@ -175,8 +162,7 @@ const safeStructural = {
   missingOperator: audit.missing?.operator || [],
   missingLaunch: audit.missing?.launched || [],
   suspiciousLaunchDatesWithoutYear: audit.suspiciousLaunchYears || [],
-  archiveYearMismatches,
-  archiveInternalMismatches,
+  archiveYearSelfMismatches,
   archiveWithoutGuide,
   guidesMissingFromArchive,
   duplicateCanonicals,
@@ -185,7 +171,9 @@ const safeStructural = {
 
 const reviewRequired = {
   operatorValuesRecoveredFromSubtitle: audit.operatorFallbacks || [],
-  archiveOperatorMismatches,
+  archiveYearConventionDifferences,
+  archiveOperatorDifferences,
+  archiveLinePresentationDifferences,
   builderVariantGroups: (audit.variantGroups || []).map(group => ({
     canonicalName: group.canonicalName,
     names: group.names,
@@ -197,28 +185,32 @@ const reviewRequired = {
   repeatedNormalizedTitles
 };
 
+const informational = { specialArchiveReferences };
 const countItems = object => Object.values(object).reduce((sum, value) => sum + (Array.isArray(value) ? value.length : 0), 0);
 const summary = {
   generatedAt: new Date().toISOString(),
   shipGuides: records.length,
   archiveCards: archiveCards.length,
+  oceanLinerArchiveCards: archiveCards.length - specialArchiveReferences.length,
   safeStructuralIssueCount: countItems(safeStructural),
   reviewRequiredIssueCount: countItems(reviewRequired),
-  archiveYearMismatchCount: archiveYearMismatches.length,
-  archiveOperatorMismatchCount: archiveOperatorMismatches.length,
+  archiveYearConventionDifferenceCount: archiveYearConventionDifferences.length,
+  archiveOperatorDifferenceCount: archiveOperatorDifferences.length,
   guidesMissingFromArchiveCount: guidesMissingFromArchive.length,
   archiveWithoutGuideCount: archiveWithoutGuide.length,
   operatorSubtitleFallbackCount: (audit.operatorFallbacks || []).length,
-  builderVariantGroupCount: (audit.variantGroups || []).length
+  builderVariantGroupCount: (audit.variantGroups || []).length,
+  specialArchiveReferenceCount: specialArchiveReferences.length
 };
 
 const report = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   generatedAt: summary.generatedAt,
   source: 'Ship guide facts + ships/ships.html archive cards + alias maps',
   summary,
   safeStructural,
-  reviewRequired
+  reviewRequired,
+  informational
 };
 
 await mkdir(dist, { recursive: true });
@@ -226,8 +218,7 @@ await writeFile(resolve(dist, 'data-quality-audit.json'), JSON.stringify(report,
 
 console.log('Ship guide data quality audit');
 console.log(JSON.stringify(summary, null, 2));
-if (archiveYearMismatches.length) console.log('Archive year mismatches:', archiveYearMismatches.slice(0, 40));
-if (archiveOperatorMismatches.length) console.log('Archive operator mismatches:', archiveOperatorMismatches.slice(0, 40));
+if (archiveYearSelfMismatches.length) console.log('Archive year self-mismatches:', archiveYearSelfMismatches.slice(0, 40));
 if (guidesMissingFromArchive.length) console.log('Guides missing from archive:', guidesMissingFromArchive.slice(0, 40));
 if (archiveWithoutGuide.length) console.log('Archive cards without matched guide:', archiveWithoutGuide.slice(0, 40));
 if ((audit.operatorFallbacks || []).length) console.log('Operator subtitle fallbacks:', audit.operatorFallbacks.slice(0, 40));
