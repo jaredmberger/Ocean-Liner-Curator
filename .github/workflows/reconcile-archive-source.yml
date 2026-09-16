@@ -18,6 +18,7 @@ jobs:
         with:
           fetch-depth: 0
 
+      # One-time repair pass now that archive verification is source-only.
       - name: Repair authoritative archive descriptions
         shell: bash
         run: |
