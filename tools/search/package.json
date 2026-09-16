@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node normalize-archive-source.mjs && node build.mjs && node builder-audit.mjs",
+    "build": "node normalize-archive-source.mjs && node build.mjs && node builder-audit.mjs && node data-quality-audit.mjs",
     "test": "node check.mjs",
     "audit:builders": "node builder-audit.mjs",
+    "audit:data": "node builder-audit.mjs && node data-quality-audit.mjs",
     "normalize:archive": "node normalize-archive-source.mjs"
   },
   "engines": {"node": ">=22.12"},
