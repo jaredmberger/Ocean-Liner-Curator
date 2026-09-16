@@ -7,6 +7,29 @@ const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '../..');
 const clean = value => String(value || '').replace(/\s+/g, ' ').trim().toLowerCase();
 
+function rowHtml(label, value) {
+  return `\n        <div class="fact-row">\n          <div class="fact-label">${label}</div>\n          <div class="fact-value">${value}</div>\n        </div>`;
+}
+
+// France already records both dates, but in one compound row that the structured-data
+// extractor cannot distinguish safely. Split the row without changing either fact.
+{
+  const path = 'ships/ss-france-1912.html';
+  const file = resolve(root, path);
+  let source = await readFile(file, 'utf8');
+  if (!/<div\s+class=["']fact-label["'][^>]*>Launched<\/div>/i.test(source)) {
+    const compound = /<div\s+class=["']fact-row["'][^>]*>\s*<div\s+class=["']fact-label["'][^>]*>Laid down \/ launched \(commonly cited\)<\/div>\s*<div\s+class=["']fact-value["'][^>]*>Laid down Feb 1909 · launched 20 Sep 1910<\/div>\s*<\/div>/i;
+    if (!compound.test(source)) throw new Error(`${path}: expected combined launch row not found`);
+    source = source.replace(compound,
+      `${rowHtml('Laid down (commonly cited)', 'February 1909')}${rowHtml('Launched', '20 September 1910')}`
+    );
+    await writeFile(file, source, 'utf8');
+    console.log(`${path}: split laid-down and launch facts`);
+  } else {
+    console.log(`${path}: launch fact already normalized`);
+  }
+}
+
 const fixes = [
   {
     path: 'ships/rms-lucania.html',
@@ -44,17 +67,13 @@ function factLabels($) {
   return $('.fact-row .fact-label').map((_, el) => clean($(el).text())).get();
 }
 
-function rowHtml(label, value) {
-  return `\n        <div class="fact-row">\n          <div class="fact-label">${label}</div>\n          <div class="fact-value">${value}</div>\n        </div>`;
-}
-
 for (const fix of fixes) {
   const file = resolve(root, fix.path);
   const source = await readFile(file, 'utf8');
   const $ = load(source, { decodeEntities: false });
   const labels = factLabels($);
   const wanted = clean(fix.label);
-  if (labels.some(label => label === wanted || label.startsWith(wanted + ' ') || label.includes('/ ' + wanted))) {
+  if (labels.some(label => label === wanted || label.startsWith(wanted + ' '))) {
     console.log(`${fix.path}: ${fix.label} already present`);
     continue;
   }
@@ -69,15 +88,14 @@ for (const fix of fixes) {
   if (anchor && anchor.length) anchor.after(rowHtml(fix.label, fix.value));
   else facts.prepend(rowHtml(fix.label, fix.value));
 
-  // Cheerio serialization would reformat the whole legacy guide. Replace only the facts block in source.
+  // Serialize only the facts fragment; the rest of each legacy guide remains byte-for-byte unchanged.
   const originalFactsMatch = source.match(/<div\s+class=["']facts["'][^>]*>[\s\S]*?<\/div>\s*(?=<h2|<p\s+class=["']note|<div\s+class=["']mini-badge|<\/div>)/i);
   if (!originalFactsMatch) {
-    // Fall back to a narrow string insertion around the chosen label rather than rewriting the page.
     const anchorLabels = fix.insertAfter || [];
     let updated = source;
     let inserted = false;
     for (const preferred of anchorLabels) {
-      const rowPattern = new RegExp(`(<div\\s+class=["']fact-row["'][^>]*>[\\s\\S]*?<div\\s+class=["']fact-label["'][^>]*>[^<]*${preferred}[^<]*<\\/div>[\\s\\S]*?<\\/div>\\s*<\\/div>)`, 'i');
+      const rowPattern = new RegExp(`(<div\\s+class=["']fact-row["'][^>]*>[\\s\\S]*?<div\\s+class=["']fact-label["'][^>]*>[^<]*${preferred}[^<]*<\\/div>[\\s\\S]*?<div\\s+class=["']fact-value["'][^>]*>[\\s\\S]*?<\\/div>\\s*<\\/div>)`, 'i');
       if (rowPattern.test(updated)) {
         updated = updated.replace(rowPattern, `$1${rowHtml(fix.label, fix.value)}`);
         inserted = true;
@@ -90,7 +108,6 @@ for (const fix of fixes) {
     continue;
   }
 
-  // Safer direct DOM-fragment replacement: serialize only .facts, preserving the rest of the document byte-for-byte.
   const serializedFacts = $.html(facts);
   const updated = source.replace(originalFactsMatch[0], serializedFacts);
   await writeFile(file, updated, 'utf8');
