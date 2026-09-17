@@ -1,28 +1,28 @@
 // Ocean Liner Curator — This Day in Ocean Liner History
-// Authoritative calendar data for /api/on-this-day.
-// Multiple events on the same date belong in the SAME array; do not duplicate object keys.
-// Exact launch events may be sourced from structured ship-guide facts.
+// SINGLE AUTHORITATIVE chronology for /api/on-this-day and the public This Day page.
+// Events must represent a documented occurrence on the exact month/day key below.
+// Multiple legitimate events on the same date belong in the SAME array.
+// Do not add broad "during this period" context merely to fill an otherwise empty date.
 
 window.OCEAN_LINER_THIS_DAY = {
-  "01-09": [
+  "01-08": [
     {
-      "year": 1950,
-      "title": "SS United States construction milestone period",
-      "ship": "SS United States",
-      "category": "Construction",
-      "summary": "By early 1950, work on SS United States was advancing toward the completion and trial stages of the future American express liner.",
-      "whyItMatters": "The ship would become the fastest ocean liner ever built and one of the most important American passenger ships of the twentieth century.",
-      "relatedUrl": "/ships/ss-us",
+      "year": 1971,
+      "title": "RMS Queen Elizabeth 2 assists passengers from Antilles",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Rescue",
+      "summary": "Queen Elizabeth 2 assisted passengers from the French liner Antilles after the vessel ran aground and burned in the Caribbean.",
+      "whyItMatters": "The episode illustrates the continuing rescue role of major passenger liners in the jet-age era.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
       "significance": "medium",
       "tags": [
-        "united-states-lines",
-        "american-liners",
-        "construction"
+        "qe2",
+        "cunard-line",
+        "rescue"
       ],
       "sources": [
-        "SS United States Conservancy historical materials",
-        "United States Lines publicity and technical summaries",
-        "Great Passenger Ships — William H. Miller"
+        "QE2 historical chronology",
+        "Contemporary passenger-ship accounts"
       ]
     }
   ],
@@ -43,6 +43,28 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Institut national de l’audiovisuel (INA) — France historical feature"
+      ]
+    }
+  ],
+  "01-12": [
+    {
+      "year": 2004,
+      "title": "Queen Mary 2 begins her maiden voyage",
+      "ship": "RMS Queen Mary 2",
+      "category": "Maiden Voyage",
+      "summary": "Queen Mary 2 departed Southampton for Fort Lauderdale on her maiden voyage, carrying 2,620 passengers.",
+      "whyItMatters": "Her entry into service restored a purpose-built ocean liner to the North Atlantic tradition in the twenty-first century.",
+      "relatedUrl": "/ships/rms-queen-mary-2",
+      "significance": "high",
+      "tags": [
+        "queen-mary-2",
+        "cunard-line",
+        "maiden-voyage",
+        "modern-liner"
+      ],
+      "sources": [
+        "Cunard Queen Mary 2 history",
+        "Contemporary maiden-voyage reporting"
       ]
     }
   ],
@@ -78,6 +100,30 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Italian Line vessel chronologies",
         "SS Andrea Doria service histories"
+      ]
+    }
+  ],
+  "01-23": [
+    {
+      "year": 1909,
+      "title": "RMS Republic collides with SS Florida off Nantucket",
+      "ship": "RMS Republic",
+      "category": "Collision / Rescue",
+      "summary": "In dense fog off Nantucket, the White Star liner Republic collided with the Italian liner Florida and suffered severe damage.",
+      "whyItMatters": "Republic’s Marconi operator Jack Binns transmitted a CQD distress call that brought rescuing ships to the scene, making the accident a landmark demonstration of wireless telegraphy in maritime rescue.",
+      "relatedUrl": "/ships/rms-republic",
+      "significance": "high",
+      "tags": [
+        "republic",
+        "white-star-line",
+        "collision",
+        "wireless",
+        "cqd",
+        "rescue"
+      ],
+      "sources": [
+        "Library of Congress — Guglielmo Marconi: Topics in Chronicling America",
+        "Royal Museums Greenwich — Lifesaving award, S.S. Republic"
       ]
     }
   ],
@@ -124,21 +170,46 @@ window.OCEAN_LINER_THIS_DAY = {
   "02-08": [
     {
       "year": 1950,
-      "title": "Keel laid for SS United States",
+      "title": "Keel of SS United States is laid at Newport News",
       "ship": "SS United States",
       "category": "Construction",
-      "summary": "The keel of SS United States was laid at Newport News Shipbuilding in Virginia.",
-      "whyItMatters": "The event marked the physical beginning of construction for the ship that would become the fastest ocean liner ever built.",
+      "summary": "The keel of SS United States was laid in a graving dock at Newport News Shipbuilding in Virginia.",
+      "whyItMatters": "Construction formally began on the liner that would become America's flagship and the fastest ocean liner ever built.",
       "relatedUrl": "/ships/ss-us",
-      "significance": "medium",
+      "significance": "high",
       "tags": [
+        "ss-united-states",
         "united-states-lines",
         "construction",
-        "american-liners"
+        "newport-news"
       ],
       "sources": [
-        "The Mariners' Museum vessel records",
-        "SS United States Conservancy historical materials"
+        "SS United States Conservancy",
+        "Newport News Shipbuilding records",
+        "A Man and His Ship — Steven Ujifusa"
+      ]
+    }
+  ],
+  "02-09": [
+    {
+      "year": 1942,
+      "title": "SS Normandie burns at Pier 88 in New York",
+      "ship": "SS Normandie / USS Lafayette",
+      "category": "Disaster",
+      "summary": "While being converted into the troop transport USS Lafayette, the former French liner Normandie caught fire at her New York berth and later capsized.",
+      "whyItMatters": "The fire destroyed one of the supreme achievements of interwar liner design before she could enter Allied wartime service.",
+      "relatedUrl": "/ships/ss-normandie",
+      "significance": "high",
+      "tags": [
+        "normandie",
+        "french-line",
+        "world-war-ii",
+        "fire"
+      ],
+      "sources": [
+        "United States National Archives",
+        "Hudson River Maritime Museum",
+        "Contemporary New York fire records"
       ]
     }
   ],
@@ -210,6 +281,29 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "03-07": [
+    {
+      "year": 1940,
+      "title": "RMS Queen Elizabeth completes her secret maiden crossing",
+      "ship": "RMS Queen Elizabeth",
+      "category": "Wartime Service",
+      "summary": "Unfinished and unannounced, Queen Elizabeth reached New York after a secret wartime passage from the Clyde.",
+      "whyItMatters": "The deception protected Britain's newest and largest liner from enemy attack and brought her alongside Queen Mary, Normandie, and Mauretania in New York.",
+      "relatedUrl": "/ships/rms-queen-elizabeth",
+      "significance": "high",
+      "tags": [
+        "queen-elizabeth",
+        "cunard-white-star",
+        "world-war-ii",
+        "secret-voyage"
+      ],
+      "sources": [
+        "Cunard wartime histories",
+        "Naval Historical Society of Australia",
+        "Contemporary March 1940 press reports"
+      ]
+    }
+  ],
   "03-19": [
     {
       "year": 1930,
@@ -248,6 +342,49 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "03-27": [
+    {
+      "year": 1934,
+      "title": "North Atlantic Shipping Bill clears the way for Queen Mary",
+      "ship": "RMS Queen Mary",
+      "category": "Construction",
+      "summary": "British government support connected with the North Atlantic Shipping Bill helped make possible completion of Cunard's suspended hull 534.",
+      "whyItMatters": "The measure helped rescue Britain's express-liner program during the Depression and enabled the Queen Mary and Queen Elizabeth service.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "queen-mary",
+        "cunard",
+        "construction"
+      ],
+      "sources": [
+        "Queen Mary historical timeline",
+        "British parliamentary records"
+      ]
+    }
+  ],
+  "04-01": [
+    {
+      "year": 1873,
+      "title": "White Star liner SS Atlantic is wrecked off Nova Scotia",
+      "ship": "SS Atlantic",
+      "category": "Disaster",
+      "summary": "Atlantic struck rocks near Mars Head, Nova Scotia, while diverting toward Halifax and sank with catastrophic loss of life.",
+      "whyItMatters": "The wreck was the world’s deadliest known merchant-ship disaster at the time and became an early defining tragedy in White Star Line history.",
+      "relatedUrl": "/ships/ss-atlantic",
+      "significance": "high",
+      "tags": [
+        "atlantic",
+        "white-star-line",
+        "shipwreck",
+        "nova-scotia"
+      ],
+      "sources": [
+        "Nova Scotia Archives — Where the Land Meets the Sea: Shipwrecks of Nova Scotia",
+        "The Mariners’ Museum — The Wreck of the Atlantic"
+      ]
+    }
+  ],
   "04-02": [
     {
       "year": 1912,
@@ -267,6 +404,27 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Encyclopedia Titanica — Titanic sea trials and delivery research",
         "Contemporary officer testimony"
+      ]
+    }
+  ],
+  "04-03": [
+    {
+      "year": 1934,
+      "title": "Construction resumes on the future RMS Queen Mary",
+      "ship": "RMS Queen Mary",
+      "category": "Construction",
+      "summary": "Work resumed at John Brown & Company on Cunard hull 534 after more than two years of suspension during the Depression.",
+      "whyItMatters": "Restarting the project transformed an endangered unfinished hull into one of the defining Atlantic liners of the twentieth century.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "queen-mary",
+        "clydebank",
+        "construction"
+      ],
+      "sources": [
+        "Queen Mary historical timeline",
+        "John Brown shipyard histories"
       ]
     }
   ],
@@ -308,6 +466,29 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "04-08": [
+    {
+      "year": 1838,
+      "title": "SS Great Western begins her maiden Atlantic voyage",
+      "ship": "SS Great Western",
+      "category": "Maiden Voyage",
+      "summary": "Great Western departed Bristol for New York on the first voyage of the first steamship purpose-built for regular transatlantic service.",
+      "whyItMatters": "Her successful design demonstrated the commercial practicality of large purpose-built Atlantic steamships and helped establish the ocean liner model.",
+      "relatedUrl": "/250-years-across-the-atlantic",
+      "significance": "high",
+      "tags": [
+        "great-western",
+        "brunel",
+        "steamship",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "Merseyside Maritime Museum",
+        "MIT Museum",
+        "The First Atlantic Liner — Helen Doe"
+      ]
+    }
+  ],
   "04-10": [
     {
       "year": 1912,
@@ -328,6 +509,28 @@ window.OCEAN_LINER_THIS_DAY = {
         "British Wreck Commissioner's Inquiry",
         "United States Senate Inquiry",
         "Titanic: An Illustrated History — Don Lynch & Ken Marschall"
+      ]
+    }
+  ],
+  "04-13": [
+    {
+      "year": 1913,
+      "title": "SS Vaterland, later SS Leviathan, is launched",
+      "ship": "SS Vaterland / SS Leviathan",
+      "category": "Launch",
+      "summary": "Vaterland was launched at Hamburg as one of Germany's immense prewar passenger liners; she later became the American liner Leviathan.",
+      "whyItMatters": "Her career crossed national identities, wartime troop transport, and interwar American passenger service.",
+      "relatedUrl": "/ships/ss-leviathan",
+      "significance": "high",
+      "tags": [
+        "vaterland",
+        "leviathan",
+        "hamburg-america-line",
+        "launch"
+      ],
+      "sources": [
+        "U.S. Naval History and Heritage Command",
+        "Leviathan ship histories"
       ]
     }
   ],
@@ -396,6 +599,25 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Encyclopedia Titanica — Carpathia arrives in New York, 18 April 1912"
       ]
+    },
+    {
+      "year": 2018,
+      "title": "Queen Elizabeth 2 opens as a floating hotel in Dubai",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Preservation",
+      "summary": "After years laid up in Dubai, Queen Elizabeth 2 reopened in a new role as a permanently moored hotel and heritage attraction.",
+      "whyItMatters": "The reopening gave one of the last great purpose-built transatlantic liners a viable post-service role.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "qe2",
+        "preservation",
+        "dubai"
+      ],
+      "sources": [
+        "QE2 Dubai historical chronology",
+        "Contemporary opening coverage"
+      ]
     }
   ],
   "04-19": [
@@ -436,46 +658,70 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "05-01": [
+    {
+      "year": 1915,
+      "title": "RMS Lusitania departs New York on her final voyage",
+      "ship": "RMS Lusitania",
+      "category": "Final Voyage",
+      "summary": "Lusitania left Pier 54 in New York for Liverpool on the voyage that would end off the coast of Ireland six days later.",
+      "whyItMatters": "Her departure occurred amid public warnings about submarine warfare and preceded one of the most consequential liner losses of the First World War.",
+      "relatedUrl": "/ships/rms-lusitania",
+      "significance": "high",
+      "tags": [
+        "lusitania",
+        "cunard-line",
+        "world-war-i",
+        "final-voyage"
+      ],
+      "sources": [
+        "Library of Congress newspaper collections",
+        "The Lusitania Resource",
+        "Cunard voyage histories"
+      ]
+    }
+  ],
   "05-02": [
     {
       "year": 1969,
-      "title": "Queen Elizabeth 2 begins maiden voyage",
-      "ship": "Queen Elizabeth 2",
+      "title": "RMS Queen Elizabeth 2 begins her official maiden voyage",
+      "ship": "RMS Queen Elizabeth 2",
       "category": "Maiden Voyage",
-      "summary": "Queen Elizabeth 2 departed Southampton for New York on her maiden voyage.",
-      "whyItMatters": "QE2 became Cunard’s defining late-twentieth-century liner and sustained regular transatlantic passenger service deep into the jet age.",
-      "relatedUrl": "/ships/queen-elizabeth-2",
+      "summary": "Queen Elizabeth 2 departed Southampton on her official maiden voyage to New York, with a call at Le Havre.",
+      "whyItMatters": "QE2 entered service as scheduled ocean travel yielded to aviation, yet became one of the longest-lived transatlantic passenger ships.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
       "significance": "high",
       "tags": [
-        "cunard-line",
         "qe2",
+        "cunard-line",
         "maiden-voyage"
       ],
       "sources": [
-        "The QE2 Story historical chronology"
+        "QE2 abstract log",
+        "Cunard histories"
       ]
     }
   ],
   "05-07": [
     {
       "year": 1915,
-      "title": "RMS Lusitania sunk off Ireland",
+      "title": "RMS Lusitania is torpedoed and sunk",
       "ship": "RMS Lusitania",
       "category": "Disaster",
-      "summary": "Lusitania was torpedoed by German U-boat U-20 off the coast of Ireland and sank shortly afterward.",
-      "whyItMatters": "The loss became one of the defining maritime events of World War I and had major international political consequences.",
+      "summary": "German submarine U-20 torpedoed Lusitania off the Old Head of Kinsale; the liner sank in approximately eighteen minutes with heavy loss of life.",
+      "whyItMatters": "The disaster transformed public opinion about submarine warfare and became a defining event in the history of civilian passenger shipping during war.",
       "relatedUrl": "/ships/rms-lusitania",
       "significance": "high",
       "tags": [
-        "cunard-line",
         "lusitania",
+        "cunard-line",
         "world-war-i",
         "disaster"
       ],
       "sources": [
-        "The Lusitania Resource",
-        "British and American inquiry records",
-        "Contemporary Cunard records"
+        "UK National Archives",
+        "Imperial War Museums",
+        "Library of Congress"
       ]
     }
   ],
@@ -502,6 +748,25 @@ window.OCEAN_LINER_THIS_DAY = {
   ],
   "05-11": [
     {
+      "year": 1934,
+      "title": "Cunard and White Star assets transfer into Cunard-White Star",
+      "ship": "Multiple liners",
+      "category": "Company History",
+      "summary": "The effective merger of the two great British North Atlantic rivals brought Cunard and White Star assets together in Cunard-White Star.",
+      "whyItMatters": "The merger reshaped British transatlantic competition and framed the service careers of Queen Mary and Queen Elizabeth.",
+      "relatedUrl": "/cunard",
+      "significance": "high",
+      "tags": [
+        "cunard-white-star",
+        "merger",
+        "company-history"
+      ],
+      "sources": [
+        "Queen Mary historical timeline",
+        "Cunard corporate histories"
+      ]
+    },
+    {
       "year": 1960,
       "title": "SS France launched",
       "ship": "SS France",
@@ -519,6 +784,27 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Compagnie Générale Transatlantique histories",
         "French liner histories"
+      ]
+    }
+  ],
+  "05-12": [
+    {
+      "year": 1982,
+      "title": "Queen Elizabeth 2 sails as a troop transport for the Falklands War",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Wartime Service",
+      "summary": "Requisitioned for wartime service, Queen Elizabeth 2 sailed from Southampton carrying troops toward the South Atlantic.",
+      "whyItMatters": "The conversion echoed the wartime histories of earlier Cunard express liners and showed a modern liner could still be adapted for national service.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "high",
+      "tags": [
+        "qe2",
+        "falklands-war",
+        "troopship"
+      ],
+      "sources": [
+        "QE2 historical chronology",
+        "British wartime transport histories"
       ]
     }
   ],
@@ -563,24 +849,6 @@ window.OCEAN_LINER_THIS_DAY = {
     }
   ],
   "05-27": [
-    {
-      "year": 1936,
-      "title": "RMS Queen Mary begins maiden voyage",
-      "ship": "RMS Queen Mary",
-      "category": "Maiden Voyage",
-      "summary": "Queen Mary departed on her maiden voyage, inaugurating Cunard White Star’s new flagship service.",
-      "whyItMatters": "Her entry into service opened one of the defining chapters of twentieth-century North Atlantic passenger travel.",
-      "relatedUrl": "/ships/rms-queen-mary",
-      "significance": "high",
-      "tags": [
-        "queen-mary",
-        "cunard",
-        "maiden-voyage"
-      ],
-      "sources": [
-        "Royal Museums Greenwich — RMS Queen Mary maiden-voyage passenger list"
-      ]
-    },
     {
       "year": 1936,
       "title": "RMS Queen Mary departs on maiden voyage",
@@ -680,6 +948,25 @@ window.OCEAN_LINER_THIS_DAY = {
   "05-31": [
     {
       "year": 1911,
+      "title": "RMS Titanic is launched at Belfast",
+      "ship": "RMS Titanic",
+      "category": "Launch",
+      "summary": "Titanic was launched from Harland & Wolff's slipway in Belfast before entering her fitting-out stage.",
+      "whyItMatters": "The launch marked completion of Titanic's hull and remains one of the best-documented construction milestones of the Olympic class.",
+      "relatedUrl": "/titanic",
+      "significance": "high",
+      "tags": [
+        "titanic",
+        "white-star-line",
+        "launch"
+      ],
+      "sources": [
+        "The Shipbuilder",
+        "Harland & Wolff and Titanic histories"
+      ]
+    },
+    {
+      "year": 1911,
       "title": "RMS Titanic launched",
       "summary": "Titanic entered the water at Belfast during one of the largest launch ceremonies in shipbuilding history.",
       "significance": "high",
@@ -696,23 +983,23 @@ window.OCEAN_LINER_THIS_DAY = {
   "06-07": [
     {
       "year": 1906,
-      "title": "RMS Lusitania launched",
+      "title": "RMS Lusitania is launched at Clydebank",
       "ship": "RMS Lusitania",
       "category": "Launch",
-      "summary": "Lusitania was launched at John Brown & Company’s Clydebank shipyard.",
-      "whyItMatters": "The launch marked the arrival of Cunard’s new turbine-powered express generation and a major British response to German Atlantic competition.",
+      "summary": "Lusitania was launched from John Brown & Company's Clydebank yard for Cunard.",
+      "whyItMatters": "The launch introduced Britain's first four-funnelled liner and a turbine-powered answer to German dominance of the express Atlantic trade.",
       "relatedUrl": "/ships/rms-lusitania",
       "significance": "high",
       "tags": [
-        "cunard-line",
         "lusitania",
+        "cunard-line",
         "launch",
-        "turbine-liner"
+        "clydebank"
       ],
       "sources": [
-        "The Lusitania Resource",
-        "Cunard histories",
-        "Contemporary shipbuilding reports"
+        "National Museums Liverpool",
+        "John Brown shipyard histories",
+        "Cunard histories"
       ]
     }
   ],
@@ -734,6 +1021,25 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Hamburg America Line histories",
         "Norway Heritage — SS Imperator chronology"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Queen Elizabeth 2 returns from Falklands service",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Wartime Service",
+      "summary": "Queen Elizabeth 2 returned safely to Southampton after completing her emergency troopship role during the Falklands conflict.",
+      "whyItMatters": "Her return closed one of the most dramatic episodes in the late history of the transatlantic liner as a military auxiliary.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "qe2",
+        "falklands-war",
+        "troopship"
+      ],
+      "sources": [
+        "QE2 historical chronology",
+        "British wartime transport histories"
       ]
     }
   ],
@@ -826,28 +1132,6 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "06-18": [
-    {
-      "year": 1815,
-      "title": "Transatlantic packet service era continues to develop",
-      "ship": "Early sailing packets",
-      "category": "Context",
-      "summary": "By the early nineteenth century, scheduled packet services were helping create the commercial and cultural foundations later inherited by ocean liners.",
-      "whyItMatters": "Ocean liners did not emerge suddenly; they developed from earlier systems of scheduled transatlantic passenger and mail service.",
-      "relatedUrl": "/250-years-across-the-atlantic",
-      "significance": "low",
-      "tags": [
-        "packet-ships",
-        "transatlantic-history",
-        "context"
-      ],
-      "sources": [
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "Maritime commerce histories",
-        "Transatlantic packet service studies"
-      ]
-    }
-  ],
   "06-19": [
     {
       "year": 1901,
@@ -871,26 +1155,6 @@ window.OCEAN_LINER_THIS_DAY = {
     }
   ],
   "06-20": [
-    {
-      "year": 1889,
-      "title": "Teutonic-era express service reshapes White Star identity",
-      "ship": "RMS Teutonic",
-      "category": "Context",
-      "summary": "The late 1880s and early 1890s marked White Star Line’s participation in the era of fast auxiliary cruisers and express Atlantic steamers.",
-      "whyItMatters": "Ships such as Teutonic connected commercial prestige with imperial defense planning and transatlantic speed.",
-      "relatedUrl": "",
-      "significance": "low",
-      "tags": [
-        "white-star-line",
-        "express-liners",
-        "auxiliary-cruiser"
-      ],
-      "sources": [
-        "White Star Line histories",
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "Royal Navy auxiliary cruiser studies"
-      ]
-    },
     {
       "year": 1914,
       "title": "RMS Majestic launched",
@@ -932,90 +1196,26 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "06-22": [
-    {
-      "year": 1897,
-      "title": "German express liners challenge British dominance",
-      "ship": "Kaiser Wilhelm der Grosse",
-      "category": "Context",
-      "summary": "The late 1890s saw German express liners challenging British dominance in North Atlantic speed and prestige.",
-      "whyItMatters": "German competition helped intensify the international prestige race that defined the great liner era.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "north-german-lloyd",
-        "german-liners",
-        "blue-riband",
-        "context"
-      ],
-      "sources": [
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "Great Passenger Ships of the World — Arnold Kludas",
-        "Ocean liner speed and Blue Riband histories"
-      ]
-    }
-  ],
   "06-23": [
     {
-      "year": 1930,
-      "title": "Bremen and Europa symbolize interwar German liner recovery",
-      "ship": "SS Bremen / SS Europa",
-      "category": "Context",
-      "summary": "By 1930, Bremen and Europa had established North German Lloyd as a major force in the interwar express liner market.",
-      "whyItMatters": "The ships restored German prestige after World War I and pushed the technology and style of high-speed transatlantic service.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "north-german-lloyd",
-        "bremen",
-        "europa",
-        "interwar-liners"
-      ],
-      "sources": [
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "Great Passenger Ships of the World — Arnold Kludas",
-        "North German Lloyd histories"
-      ]
-    },
-    {
       "year": 1951,
-      "title": "SS United States launched",
+      "title": "SS United States is launched at Newport News",
       "ship": "SS United States",
       "category": "Launch",
-      "summary": "SS United States was launched and christened at Newport News Shipbuilding.",
-      "whyItMatters": "The launch introduced the hull of the American liner that would capture the Blue Riband on her maiden voyage the following year.",
+      "summary": "SS United States was christened and floated from her building dock at Newport News, Virginia.",
+      "whyItMatters": "The launch brought America close to fielding the powerful express liner that would capture the Blue Riband on her maiden voyage.",
       "relatedUrl": "/ships/ss-us",
       "significance": "high",
       "tags": [
+        "ss-united-states",
         "united-states-lines",
-        "american-liners",
-        "launch"
+        "launch",
+        "newport-news"
       ],
       "sources": [
-        "The Mariners’ Museum vessel records",
-        "SS United States Conservancy historical materials"
-      ]
-    }
-  ],
-  "06-24": [
-    {
-      "year": 1935,
-      "title": "Cunard White Star operates in a changing Atlantic market",
-      "ship": "RMS Queen Mary",
-      "category": "Context",
-      "summary": "The mid-1930s marked the consolidation of Cunard White Star and the coming of Queen Mary as Britain’s answer to renewed European competition.",
-      "whyItMatters": "The period shows how national prestige, economics, and competition shaped the final generation of great express liners.",
-      "relatedUrl": "/ships/rms-queen-mary",
-      "significance": "low",
-      "tags": [
-        "cunard-white-star",
-        "queen-mary",
-        "interwar-liners"
-      ],
-      "sources": [
-        "Cunard histories",
-        "The Queen Mary — James Steele",
-        "Interwar transatlantic shipping studies"
+        "SS United States Conservancy",
+        "Newport News Shipbuilding records",
+        "A Man and His Ship — Steven Ujifusa"
       ]
     }
   ],
@@ -1063,28 +1263,6 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "06-27": [
-    {
-      "year": 1914,
-      "title": "The final prewar summer of the great Atlantic liners",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "The summer of 1914 was the last peacetime season before World War I transformed the Atlantic passenger trade.",
-      "whyItMatters": "The outbreak of war only weeks later changed liner service, ownership, routes, and public perception for years.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "world-war-i",
-        "prewar-atlantic",
-        "context"
-      ],
-      "sources": [
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "World War I maritime histories",
-        "Company service records"
-      ]
-    }
-  ],
   "06-28": [
     {
       "year": 1911,
@@ -1104,28 +1282,6 @@ window.OCEAN_LINER_THIS_DAY = {
         "Olympic, Titanic, Britannic — Mark Chirnside",
         "White Star Line sailing records",
         "Contemporary newspaper coverage"
-      ]
-    }
-  ],
-  "06-29": [
-    {
-      "year": 1900,
-      "title": "North German Lloyd liners lie at Hoboken before disaster",
-      "ship": "SS Saale / SS Main / SS Bremen",
-      "category": "Context",
-      "summary": "On the eve of the Hoboken pier fire, several North German Lloyd liners were moored along the company’s New Jersey waterfront.",
-      "whyItMatters": "The setting illustrates the density and danger of turn-of-the-century liner terminals before modern fire and safety controls.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "north-german-lloyd",
-        "hoboken",
-        "port-history"
-      ],
-      "sources": [
-        "Contemporary New York and New Jersey press coverage",
-        "North German Lloyd histories",
-        "Maritime disaster studies"
       ]
     }
   ],
@@ -1197,24 +1353,6 @@ window.OCEAN_LINER_THIS_DAY = {
     }
   ],
   "07-03": [
-    {
-      "year": 1952,
-      "title": "SS United States begins maiden voyage",
-      "ship": "SS United States",
-      "category": "Maiden Voyage",
-      "summary": "SS United States departed New York on her maiden eastbound crossing.",
-      "whyItMatters": "The voyage immediately demonstrated the extraordinary speed built into William Francis Gibbs’s American flagship.",
-      "relatedUrl": "/ships/ss-us",
-      "significance": "high",
-      "tags": [
-        "united-states-lines",
-        "ss-united-states",
-        "maiden-voyage"
-      ],
-      "sources": [
-        "SS United States Conservancy — The Maiden Voyage"
-      ]
-    },
     {
       "year": 1952,
       "title": "SS United States departs on her maiden voyage",
@@ -1301,29 +1439,6 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "07-06": [
-    {
-      "year": 1952,
-      "title": "SS United States nears completion of record maiden crossing",
-      "ship": "SS United States",
-      "category": "Record",
-      "summary": "During her maiden crossing, SS United States was on pace to challenge the existing eastbound Atlantic speed record.",
-      "whyItMatters": "The crossing demonstrated the extraordinary performance of William Francis Gibbs’s design.",
-      "relatedUrl": "/ships/ss-us",
-      "significance": "high",
-      "tags": [
-        "united-states-lines",
-        "blue-riband",
-        "record",
-        "american-liners"
-      ],
-      "sources": [
-        "SS United States Conservancy historical materials",
-        "United States Lines publicity material",
-        "Great Passenger Ships — William H. Miller"
-      ]
-    }
-  ],
   "07-07": [
     {
       "year": 1952,
@@ -1339,50 +1454,6 @@ window.OCEAN_LINER_THIS_DAY = {
         "blue-riband",
         "record",
         "maiden-voyage"
-      ],
-      "sources": [
-        "SS United States Conservancy historical materials",
-        "United States Lines publicity material",
-        "Great Passenger Ships — William H. Miller"
-      ]
-    }
-  ],
-  "07-08": [
-    {
-      "year": 1952,
-      "title": "SS United States celebrated after record crossing",
-      "ship": "SS United States",
-      "category": "Record",
-      "summary": "Following her record maiden crossing, SS United States became an international symbol of American speed and engineering.",
-      "whyItMatters": "Public reaction to the crossing turned the ship into a national prestige object almost immediately.",
-      "relatedUrl": "/ships/ss-us",
-      "significance": "medium",
-      "tags": [
-        "united-states-lines",
-        "blue-riband",
-        "public-memory"
-      ],
-      "sources": [
-        "SS United States Conservancy historical materials",
-        "United States Lines publicity material",
-        "Contemporary press coverage"
-      ]
-    }
-  ],
-  "07-09": [
-    {
-      "year": 1952,
-      "title": "SS United States prepares for her westbound return record attempt",
-      "ship": "SS United States",
-      "category": "Record",
-      "summary": "After her eastbound record, SS United States prepared for the return passage that would also challenge westbound speed records.",
-      "whyItMatters": "Her performance in both directions confirmed that her speed was not a one-way accident of conditions.",
-      "relatedUrl": "/ships/ss-us",
-      "significance": "medium",
-      "tags": [
-        "united-states-lines",
-        "blue-riband",
-        "record"
       ],
       "sources": [
         "SS United States Conservancy historical materials",
@@ -1413,118 +1484,6 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "07-11": [
-    {
-      "year": 1935,
-      "title": "Interwar liner competition intensifies after Normandie’s debut",
-      "ship": "SS Normandie",
-      "category": "Context",
-      "summary": "In the summer after Normandie’s maiden voyage, the North Atlantic market adjusted to the arrival of France’s new flagship.",
-      "whyItMatters": "Normandie’s service intensified the prestige race among France, Britain, Germany, and Italy.",
-      "relatedUrl": "/ships/ss-normandie",
-      "significance": "medium",
-      "tags": [
-        "french-line",
-        "interwar-liners",
-        "national-prestige"
-      ],
-      "sources": [
-        "Normandie: France’s Legendary Art Deco Ocean Liner",
-        "Compagnie Générale Transatlantique records",
-        "Interwar shipping histories"
-      ]
-    }
-  ],
-  "07-12": [
-    {
-      "year": 1907,
-      "title": "Cunard’s turbine express liners near completion era",
-      "ship": "RMS Lusitania / RMS Mauretania",
-      "category": "Construction",
-      "summary": "In 1907, Cunard’s new turbine-powered express liners were nearing the service that would transform the North Atlantic speed race.",
-      "whyItMatters": "Lusitania and Mauretania represented a major technical leap in propulsion, scale, and national maritime prestige.",
-      "relatedUrl": "/ships/rms-mauretania",
-      "significance": "medium",
-      "tags": [
-        "cunard-line",
-        "lusitania",
-        "mauretania",
-        "blue-riband"
-      ],
-      "sources": [
-        "Cunard histories",
-        "Great Passenger Ships of the World — Arnold Kludas",
-        "North Atlantic Seaway — N. R. P. Bonsor"
-      ]
-    }
-  ],
-  "07-13": [
-    {
-      "year": 1930,
-      "title": "The interwar Atlantic becomes a high-speed design laboratory",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "By the early 1930s, the North Atlantic was shaped by competition among Bremen, Europa, Rex, Normandie, and Queen Mary.",
-      "whyItMatters": "The period produced some of the most technically and artistically ambitious liners ever built.",
-      "relatedUrl": "/collections/floating-cities",
-      "significance": "low",
-      "tags": [
-        "interwar-liners",
-        "blue-riband",
-        "design-history"
-      ],
-      "sources": [
-        "Great Passenger Ships of the World — Arnold Kludas",
-        "Ocean liner design histories",
-        "Interwar shipping studies"
-      ]
-    }
-  ],
-  "07-14": [
-    {
-      "year": 1935,
-      "title": "French national prestige at sea reaches a high point",
-      "ship": "SS Normandie",
-      "category": "Context",
-      "summary": "During her first season, Normandie became a powerful expression of French national identity and industrial design.",
-      "whyItMatters": "Normandie shows how ocean liners could function as floating national symbols, not merely transportation.",
-      "relatedUrl": "/ocean-liners-and-national-identity",
-      "significance": "medium",
-      "tags": [
-        "french-line",
-        "normandie",
-        "national-symbol",
-        "bastille-day"
-      ],
-      "sources": [
-        "Normandie: France’s Legendary Art Deco Ocean Liner",
-        "French Line histories",
-        "Ocean liners and national identity studies"
-      ]
-    }
-  ],
-  "07-15": [
-    {
-      "year": 1840,
-      "title": "Cunard’s early Atlantic service establishes regular steamship expectations",
-      "ship": "RMS Britannia",
-      "category": "Context",
-      "summary": "In July 1840, Cunard’s early steamship service helped establish expectations for regular scheduled transatlantic steam crossings.",
-      "whyItMatters": "The shift toward reliable steam schedules laid the groundwork for the later ocean liner age.",
-      "relatedUrl": "/250-years-across-the-atlantic",
-      "significance": "high",
-      "tags": [
-        "cunard-line",
-        "steamship",
-        "transatlantic-history"
-      ],
-      "sources": [
-        "Cunard histories",
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "Maritime steamship histories"
-      ]
-    }
-  ],
   "07-16": [
     {
       "year": 1929,
@@ -1544,26 +1503,6 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Norddeutscher Lloyd vessel chronologies",
         "Bremen service histories"
-      ]
-    },
-    {
-      "year": 1951,
-      "title": "SS United States in final fitting-out era",
-      "ship": "SS United States",
-      "category": "Construction",
-      "summary": "In mid-1951, SS United States was moving through the final stages of construction and preparation before trials and service.",
-      "whyItMatters": "Her construction reflected Cold War-era concerns with speed, fire safety, and potential troopship conversion.",
-      "relatedUrl": "/ships/ss-us",
-      "significance": "low",
-      "tags": [
-        "united-states-lines",
-        "construction",
-        "cold-war"
-      ],
-      "sources": [
-        "SS United States Conservancy historical materials",
-        "United States Lines technical summaries",
-        "Great Passenger Ships — William H. Miller"
       ]
     }
   ],
@@ -1586,29 +1525,6 @@ window.OCEAN_LINER_THIS_DAY = {
         "United States Lines histories",
         "Leviathan histories",
         "North Atlantic Seaway — N. R. P. Bonsor"
-      ]
-    }
-  ],
-  "07-18": [
-    {
-      "year": 1936,
-      "title": "Queen Mary and Normandie define the mid-1930s Atlantic rivalry",
-      "ship": "RMS Queen Mary / SS Normandie",
-      "category": "Context",
-      "summary": "By summer 1936, Queen Mary and Normandie represented the most visible rivalry in luxury transatlantic travel.",
-      "whyItMatters": "The rivalry shows how speed, national pride, and design identity shaped public understanding of ocean liners.",
-      "relatedUrl": "/ocean-liners-and-national-identity",
-      "significance": "medium",
-      "tags": [
-        "queen-mary",
-        "normandie",
-        "blue-riband",
-        "interwar-liners"
-      ],
-      "sources": [
-        "Cunard histories",
-        "Normandie histories",
-        "Interwar shipping studies"
       ]
     }
   ],
@@ -1652,28 +1568,6 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "07-20": [
-    {
-      "year": 1969,
-      "title": "The jet age continues to erode transatlantic liner service",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "By the late 1960s, jet aircraft had largely overtaken ocean liners as the dominant means of transatlantic passenger travel.",
-      "whyItMatters": "The decline of liner service explains why many famous ships were withdrawn, repurposed, or scrapped.",
-      "relatedUrl": "/what-was-the-golden-age-of-ocean-liners",
-      "significance": "medium",
-      "tags": [
-        "jet-age",
-        "decline",
-        "transatlantic-service"
-      ],
-      "sources": [
-        "Postwar passenger shipping histories",
-        "Air travel and ocean liner transition studies",
-        "Company service records"
-      ]
-    }
-  ],
   "07-21": [
     {
       "year": 1909,
@@ -1694,51 +1588,6 @@ window.OCEAN_LINER_THIS_DAY = {
         "Olympic, Titanic, Britannic — Mark Chirnside",
         "Harland & Wolff histories",
         "White Star Line construction records"
-      ]
-    }
-  ],
-  "07-22": [
-    {
-      "year": 1932,
-      "title": "Italian liner Rex represents Mediterranean express ambition",
-      "ship": "SS Rex",
-      "category": "Context",
-      "summary": "In the early 1930s, Rex became one of Italy’s most important entries in the competition for Atlantic prestige.",
-      "whyItMatters": "Rex demonstrates how the ocean liner race extended beyond Britain, Germany, France, and the United States.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "italian-line",
-        "rex",
-        "blue-riband",
-        "interwar-liners"
-      ],
-      "sources": [
-        "Italian Line histories",
-        "Great Passenger Ships of the World — Arnold Kludas",
-        "Blue Riband histories"
-      ]
-    }
-  ],
-  "07-23": [
-    {
-      "year": 1914,
-      "title": "Atlantic liners approach the disruption of World War I",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "In late July 1914, the international crisis in Europe was about to reshape transatlantic shipping.",
-      "whyItMatters": "The outbreak of war converted passenger liners into troopships, armed merchant cruisers, hospital ships, and interned assets.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "world-war-i",
-        "prewar-atlantic",
-        "transatlantic-service"
-      ],
-      "sources": [
-        "World War I maritime histories",
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "Company wartime records"
       ]
     }
   ],
@@ -1766,6 +1615,26 @@ window.OCEAN_LINER_THIS_DAY = {
     }
   ],
   "07-25": [
+    {
+      "year": 1917,
+      "title": "Former Vaterland is commissioned as USS Leviathan",
+      "ship": "USS Leviathan",
+      "category": "Wartime Service",
+      "summary": "The seized Hamburg-America liner Vaterland was commissioned into the United States Navy as a troop transport; she received the name Leviathan soon afterward.",
+      "whyItMatters": "Her commissioning began the transformation of a German prestige liner into one of America's most important First World War troopships.",
+      "relatedUrl": "/ships/ss-leviathan",
+      "significance": "high",
+      "tags": [
+        "vaterland",
+        "leviathan",
+        "united-states-navy",
+        "world-war-i"
+      ],
+      "sources": [
+        "U.S. Naval History and Heritage Command",
+        "Dictionary of American Naval Fighting Ships"
+      ]
+    },
     {
       "year": 1956,
       "title": "SS Andrea Doria and MS Stockholm collide",
@@ -1849,29 +1718,6 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "07-27": [
-    {
-      "year": 1918,
-      "title": "Olympic-class wartime service demonstrates liner adaptability",
-      "ship": "RMS Olympic",
-      "category": "Wartime Service",
-      "summary": "During World War I, Olympic served as a troop transport and demonstrated the adaptability of large passenger liners.",
-      "whyItMatters": "Her wartime career helped build the reputation that later fed her nickname, Old Reliable.",
-      "relatedUrl": "/ships/rms-olympic",
-      "significance": "low",
-      "tags": [
-        "white-star-line",
-        "olympic",
-        "world-war-i",
-        "troopship"
-      ],
-      "sources": [
-        "Olympic, Titanic, Britannic — Mark Chirnside",
-        "White Star Line wartime records",
-        "World War I transport histories"
-      ]
-    }
-  ],
   "07-28": [
     {
       "year": 1914,
@@ -1914,118 +1760,6 @@ window.OCEAN_LINER_THIS_DAY = {
         "Olympic, Titanic, Britannic — Mark Chirnside",
         "Harland & Wolff histories",
         "White Star Line histories"
-      ]
-    }
-  ],
-  "07-30": [
-    {
-      "year": 1938,
-      "title": "RMS Queen Elizabeth nears completion before wartime disruption",
-      "ship": "RMS Queen Elizabeth",
-      "category": "Construction",
-      "summary": "In the late 1930s, Queen Elizabeth was nearing completion as Cunard’s next great express liner.",
-      "whyItMatters": "Her career would be immediately reshaped by World War II, delaying normal passenger service and turning her into a troopship.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "cunard-line",
-        "queen-elizabeth",
-        "construction",
-        "world-war-ii"
-      ],
-      "sources": [
-        "Cunard histories",
-        "Queen Elizabeth histories",
-        "World War II transport records"
-      ]
-    }
-  ],
-  "07-31": [
-    {
-      "year": 1936,
-      "title": "The great liner rivalry enters its peak interwar phase",
-      "ship": "RMS Queen Mary / SS Normandie",
-      "category": "Context",
-      "summary": "By summer 1936, Queen Mary and Normandie were both central to public fascination with speed, luxury, and national prestige.",
-      "whyItMatters": "Their rivalry represents one of the high points of the ocean liner as national symbol.",
-      "relatedUrl": "/ocean-liners-and-national-identity",
-      "significance": "medium",
-      "tags": [
-        "queen-mary",
-        "normandie",
-        "interwar-liners",
-        "national-symbol"
-      ],
-      "sources": [
-        "Cunard histories",
-        "Normandie histories",
-        "Interwar liner studies"
-      ]
-    }
-  ],
-  "08-01": [
-    {
-      "year": 1914,
-      "title": "German liners face sudden wartime uncertainty",
-      "ship": "Multiple German liners",
-      "category": "Wartime Service",
-      "summary": "At the start of August 1914, German liners overseas faced internment, seizure, or diversion as war spread across Europe.",
-      "whyItMatters": "The fate of German liners during World War I reshaped postwar fleets and led to major transfers of ships between nations.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "world-war-i",
-        "german-liners",
-        "internment"
-      ],
-      "sources": [
-        "World War I maritime histories",
-        "North German Lloyd histories",
-        "Hamburg America Line histories"
-      ]
-    }
-  ],
-  "08-02": [
-    {
-      "year": 1914,
-      "title": "Atlantic liner schedules unravel as war begins",
-      "ship": "Multiple liners",
-      "category": "Wartime Service",
-      "summary": "As Europe entered war, commercial Atlantic liner schedules became uncertain and increasingly subject to naval and government control.",
-      "whyItMatters": "The transition shows how quickly civilian passenger networks could become part of wartime strategy.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "world-war-i",
-        "wartime-service",
-        "transatlantic-service"
-      ],
-      "sources": [
-        "World War I maritime histories",
-        "Company wartime records",
-        "Contemporary press coverage"
-      ]
-    }
-  ],
-  "08-03": [
-    {
-      "year": 1914,
-      "title": "Prewar transatlantic travel gives way to wartime disruption",
-      "ship": "Multiple liners",
-      "category": "Wartime Service",
-      "summary": "In early August 1914, passengers, crews, and shipping companies faced abrupt disruption as European war expanded.",
-      "whyItMatters": "Ocean liners were among the first civilian systems visibly affected by the geopolitical crisis.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "world-war-i",
-        "passenger-travel",
-        "transatlantic-service"
-      ],
-      "sources": [
-        "World War I maritime histories",
-        "Company sailing records",
-        "Contemporary newspaper coverage"
       ]
     }
   ],
@@ -2123,29 +1857,6 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "08-07": [
-    {
-      "year": 1935,
-      "title": "Normandie’s first season reshapes liner interiors",
-      "ship": "SS Normandie",
-      "category": "Design",
-      "summary": "Normandie’s early service introduced passengers and the public to one of the most celebrated interior design programs at sea.",
-      "whyItMatters": "Her interiors helped define the ocean liner as a floating expression of modern design and national culture.",
-      "relatedUrl": "/collections/lost-interiors",
-      "significance": "medium",
-      "tags": [
-        "normandie",
-        "french-line",
-        "interiors",
-        "art-deco"
-      ],
-      "sources": [
-        "Normandie: France’s Legendary Art Deco Ocean Liner",
-        "French Line design histories",
-        "Ocean liner interior studies"
-      ]
-    }
-  ],
   "08-08": [
     {
       "year": 1845,
@@ -2163,48 +1874,6 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "SS Great Britain Trust — voyage records"
-      ]
-    },
-    {
-      "year": 1920,
-      "title": "Postwar liner service rebuilds after World War I",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "After World War I, transatlantic operators worked to rebuild services, reassign ships, and respond to changed migration and travel patterns.",
-      "whyItMatters": "The postwar period reshaped fleets and helped produce the 1920s generation of famous liners.",
-      "relatedUrl": "",
-      "significance": "low",
-      "tags": [
-        "postwar-service",
-        "migration",
-        "transatlantic-service"
-      ],
-      "sources": [
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "Postwar passenger shipping histories",
-        "Company service records"
-      ]
-    }
-  ],
-  "08-09": [
-    {
-      "year": 1936,
-      "title": "Queen Mary’s early service builds Cunard White Star prestige",
-      "ship": "RMS Queen Mary",
-      "category": "Service",
-      "summary": "During her first season, Queen Mary helped restore British prestige in the high-profile North Atlantic express trade.",
-      "whyItMatters": "Her early service positioned her as Britain’s most visible answer to Normandie and other continental competitors.",
-      "relatedUrl": "/ships/rms-queen-mary",
-      "significance": "medium",
-      "tags": [
-        "queen-mary",
-        "cunard-white-star",
-        "interwar-liners"
-      ],
-      "sources": [
-        "Cunard histories",
-        "The Queen Mary — James Steele",
-        "Interwar shipping histories"
       ]
     }
   ],
@@ -2224,93 +1893,69 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
-  "08-11": [
+  "08-15": [
     {
-      "year": 1929,
-      "title": "Ocean liners operate at the edge of the Depression era",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "In 1929, Atlantic passenger lines still operated in a market of luxury travel, immigration, and competition just before the Great Depression.",
-      "whyItMatters": "The coming economic crisis would deeply affect passenger demand and shipping company finances.",
+      "year": 1914,
+      "title": "Panama Canal officially opens with the transit of SS Ancon",
+      "ship": "SS Ancon",
+      "category": "Maritime Infrastructure",
+      "summary": "The Panama Canal officially opened to traffic as the steamship Ancon made the ceremonial first official transit of the completed canal.",
+      "whyItMatters": "Ancon was not a classic North Atlantic ocean liner, but the canal transformed the geography of long-distance passenger and cargo steamship travel by linking Atlantic and Pacific routes without requiring the long passage around South America.",
+      "relatedUrl": "/250-years-across-the-atlantic",
+      "significance": "high",
+      "tags": [
+        "panama-canal",
+        "ancon",
+        "steamship",
+        "maritime-infrastructure"
+      ],
+      "sources": [
+        "Panama Canal Authority historical chronology",
+        "Library of Congress Panama Canal historical materials"
+      ]
+    }
+  ],
+  "08-16": [
+    {
+      "year": 1917,
+      "title": "White Star liner SS Delphic is sunk during wartime service",
+      "ship": "SS Delphic",
+      "category": "Wartime Loss",
+      "summary": "The White Star passenger-and-cargo liner Delphic was torpedoed and sunk by the German submarine UC-72 while under wartime requisition and sailing from Cardiff toward Montevideo.",
+      "whyItMatters": "Delphic's loss shows how civilian liner fleets were absorbed into wartime transport systems and exposed to submarine warfare far beyond their normal passenger routes.",
       "relatedUrl": "",
-      "significance": "low",
+      "significance": "high",
       "tags": [
-        "interwar-liners",
-        "great-depression",
-        "transatlantic-service"
+        "delphic",
+        "white-star-line",
+        "world-war-i",
+        "wartime-loss"
       ],
       "sources": [
-        "Interwar shipping histories",
-        "Company annual reports",
-        "North Atlantic Seaway — N. R. P. Bonsor"
+        "Uboat.net World War I ship-loss database",
+        "Shipwrecked Mariners' Society"
       ]
     }
   ],
-  "08-12": [
+  "08-19": [
     {
-      "year": 1902,
-      "title": "Large liner terminals become part of urban waterfront life",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "By the early twentieth century, ocean liner terminals shaped the waterfronts of New York, Liverpool, Southampton, Hamburg, and other major ports.",
-      "whyItMatters": "Ocean liner history is also port history: ships depended on complex urban systems of piers, rail connections, customs, and immigration processing.",
-      "relatedUrl": "/collections/floating-cities",
-      "significance": "low",
-      "tags": [
-        "port-history",
-        "new-york",
-        "liverpool",
-        "southampton"
-      ],
-      "sources": [
-        "Port history studies",
-        "North Atlantic Seaway — N. R. P. Bonsor",
-        "Company terminal records"
-      ]
-    }
-  ],
-  "08-13": [
-    {
-      "year": 1939,
-      "title": "Late-summer liner service approaches another world war",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "In August 1939, ocean liner operators were again approaching a wartime rupture in normal Atlantic passenger service.",
-      "whyItMatters": "World War II would transform the remaining great liners into strategic troopships and reshape the postwar passenger trade.",
+      "year": 1915,
+      "title": "White Star liner SS Arabic is torpedoed and sunk",
+      "ship": "SS Arabic",
+      "category": "Wartime Loss",
+      "summary": "Arabic was torpedoed by a German submarine off Ireland while on a wartime Atlantic voyage, causing civilian deaths including American passengers.",
+      "whyItMatters": "The sinking intensified diplomatic tensions over submarine warfare only months after Lusitania and became part of the escalating dispute between Germany and the United States.",
       "relatedUrl": "",
-      "significance": "medium",
+      "significance": "high",
       "tags": [
-        "world-war-ii",
-        "prewar-atlantic",
-        "wartime-service"
+        "arabic",
+        "white-star-line",
+        "world-war-i",
+        "submarine-warfare"
       ],
       "sources": [
-        "World War II maritime histories",
-        "Company wartime records",
-        "Contemporary press coverage"
-      ]
-    }
-  ],
-  "08-14": [
-    {
-      "year": 1945,
-      "title": "Postwar transition begins for wartime liners",
-      "ship": "Multiple liners",
-      "category": "Context",
-      "summary": "With the end of World War II approaching in August 1945, many liners faced transition from wartime transport toward repatriation, refit, or eventual passenger service.",
-      "whyItMatters": "The postwar period produced both a short revival of liner travel and the conditions that would eventually lead to its decline.",
-      "relatedUrl": "/what-was-the-golden-age-of-ocean-liners",
-      "significance": "medium",
-      "tags": [
-        "world-war-ii",
-        "postwar-service",
-        "troopship",
-        "transatlantic-service"
-      ],
-      "sources": [
-        "World War II transport records",
-        "Postwar passenger shipping histories",
-        "Company refit and service records"
+        "Library of Congress",
+        "Contemporary United States diplomatic and newspaper records"
       ]
     }
   ],
@@ -2327,6 +1972,26 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Aquitania references"
       ]
+    },
+    {
+      "year": 1925,
+      "title": "RMS Carinthia begins her maiden voyage",
+      "ship": "RMS Carinthia",
+      "category": "Maiden Voyage",
+      "summary": "Cunard's new Carinthia departed Liverpool for New York on her maiden voyage, entering service as part of the company's postwar passenger fleet.",
+      "whyItMatters": "Carinthia represents Cunard's 1920s generation of intermediate liners between the prewar express era and the prestige ships of the 1930s.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "carinthia",
+        "cunard-line",
+        "maiden-voyage",
+        "interwar-liners"
+      ],
+      "sources": [
+        "Chatham Marconi RMS Carinthia history",
+        "Cunard fleet histories"
+      ]
     }
   ],
   "08-26": [
@@ -2341,6 +2006,93 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Oceanic histories"
+      ]
+    }
+  ],
+  "08-27": [
+    {
+      "year": 1870,
+      "title": "White Star's first SS Oceanic is launched",
+      "ship": "SS Oceanic",
+      "category": "Launch",
+      "summary": "Oceanic was launched at Belfast as the first new steamship built for Thomas Ismay's reorganized White Star Line and the first of the line's ships built by Harland & Wolff.",
+      "whyItMatters": "Oceanic began the long White Star–Harland & Wolff relationship and introduced passenger-accommodation ideas that helped redefine Atlantic liner design in the 1870s.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "oceanic",
+        "white-star-line",
+        "harland-and-wolff",
+        "launch"
+      ],
+      "sources": [
+        "White Star Line History chronology",
+        "Historical steam-navigation references"
+      ]
+    }
+  ],
+  "08-29": [
+    {
+      "year": 2002,
+      "title": "Queen Elizabeth 2 logs five million miles at sea",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Service",
+      "summary": "During her long Cunard career, Queen Elizabeth 2 reached a cumulative five million miles traveled at sea.",
+      "whyItMatters": "The milestone captures the extraordinary longevity and intensity of QE2's working life across crossings and cruising.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "qe2",
+        "cunard-line",
+        "service-milestone"
+      ],
+      "sources": [
+        "QE2 historical chronology",
+        "Cunard service histories"
+      ]
+    }
+  ],
+  "08-30": [
+    {
+      "year": 1939,
+      "title": "RMS Queen Mary departs on her final peacetime voyage before World War II",
+      "ship": "RMS Queen Mary",
+      "category": "Final Peacetime Voyage",
+      "summary": "Queen Mary departed Southampton on what became her final peacetime voyage before the outbreak of the Second World War transformed her career.",
+      "whyItMatters": "Within weeks the great express liner would leave normal passenger service and eventually become one of the most important Allied troop transports of the war.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "queen-mary",
+        "cunard-white-star",
+        "world-war-ii",
+        "wartime-transition"
+      ],
+      "sources": [
+        "Queen Mary official historical timeline",
+        "Cunard wartime histories"
+      ]
+    }
+  ],
+  "08-31": [
+    {
+      "year": 1936,
+      "title": "RMS Queen Mary wins the Blue Riband",
+      "ship": "RMS Queen Mary",
+      "category": "Record Crossing",
+      "summary": "At the end of her sixth round-trip voyage, Queen Mary secured the Blue Riband from Normandie with record North Atlantic crossing performances.",
+      "whyItMatters": "The achievement established Queen Mary as a true speed rival to Normandie and intensified one of the most famous competitive periods in transatlantic liner history.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "queen-mary",
+        "blue-riband",
+        "cunard-white-star",
+        "record-crossing"
+      ],
+      "sources": [
+        "Queen Mary official historical timeline",
+        "Cunard and transatlantic speed-record histories"
       ]
     }
   ],
@@ -2362,6 +2114,73 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "SS Great Britain Trust — voyage records"
       ]
+    },
+    {
+      "year": 1985,
+      "title": "Wreck of RMS Titanic is discovered",
+      "ship": "RMS Titanic",
+      "category": "Discovery",
+      "summary": "A joint French-American expedition located Titanic's wreck in the North Atlantic, confirming the ship's resting place after seventy-three years.",
+      "whyItMatters": "The discovery opened a new era of archaeological study, imaging, preservation debate, and direct examination of the disaster site.",
+      "relatedUrl": "/titanic",
+      "significance": "high",
+      "tags": [
+        "titanic",
+        "wreck-discovery",
+        "maritime-archaeology",
+        "north-atlantic"
+      ],
+      "sources": [
+        "NOAA Maritime Heritage Program",
+        "Woods Hole Oceanographic Institution",
+        "French Research Institute for Exploitation of the Sea"
+      ]
+    }
+  ],
+  "09-02": [
+    {
+      "year": 1871,
+      "title": "White Star liner SS Baltic is completed",
+      "ship": "SS Baltic",
+      "category": "Construction",
+      "summary": "Harland & Wolff completed Baltic, the third ship of White Star Line's pioneering Oceanic class.",
+      "whyItMatters": "Baltic belonged to the group that established the reorganized White Star Line's emphasis on passenger comfort and its enduring partnership with Harland & Wolff.",
+      "relatedUrl": "/white-star-line",
+      "significance": "medium",
+      "tags": [
+        "baltic",
+        "white-star-line",
+        "oceanic-class",
+        "harland-and-wolff"
+      ],
+      "sources": [
+        "Harland & Wolff ship records",
+        "White Star Line fleet histories",
+        "North Atlantic Seaway — N. R. P. Bonsor"
+      ]
+    }
+  ],
+  "09-03": [
+    {
+      "year": 1939,
+      "title": "SS Athenia is torpedoed on the first day of the Atlantic war",
+      "ship": "SS Athenia",
+      "category": "Wartime Loss",
+      "summary": "German submarine U-30 torpedoed the Donaldson Atlantic passenger liner Athenia west of Ireland only hours after Britain declared war on Germany.",
+      "whyItMatters": "Athenia became the first British passenger ship lost to enemy action in the Second World War, immediately demonstrating the danger facing civilian Atlantic travel.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "athenia",
+        "donaldson-atlantic-line",
+        "world-war-ii",
+        "wartime-loss"
+      ],
+      "sources": [
+        "Imperial War Museums",
+        "The National WWII Museum",
+        "Commonwealth War Graves Commission"
+      ]
     }
   ],
   "09-04": [
@@ -2377,6 +2196,29 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Allan Line references"
+      ]
+    }
+  ],
+  "09-05": [
+    {
+      "year": 1939,
+      "title": "Nieuw Amsterdam leaves New York amid the outbreak of war",
+      "ship": "SS Nieuw Amsterdam",
+      "category": "Wartime Transition",
+      "summary": "Nieuw Amsterdam departed Hoboken for Rotterdam as war engulfed Europe; the Royal Navy later detained and inspected her in the English Channel.",
+      "whyItMatters": "The voyage illustrates how abruptly neutral passenger liners became entangled in blockade controls and wartime uncertainty.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "nieuw-amsterdam",
+        "holland-america-line",
+        "world-war-ii",
+        "neutral-shipping"
+      ],
+      "sources": [
+        "Holland America Line histories",
+        "Contemporary New York and Dutch press reports",
+        "North Atlantic Seaway — N. R. P. Bonsor"
       ]
     }
   ],
@@ -2397,11 +2239,11 @@ window.OCEAN_LINER_THIS_DAY = {
     },
     {
       "year": 1917,
-      "title": "Vaterland renamed USS Leviathan",
+      "title": "Former German liner Vaterland is renamed Leviathan",
       "ship": "USS Leviathan",
       "category": "Wartime Service",
-      "summary": "The seized German liner Vaterland was formally renamed Leviathan for United States Navy service.",
-      "whyItMatters": "Under her new name she became one of the largest and most productive troop transports of World War I.",
+      "summary": "The seized German liner Vaterland was renamed Leviathan while under United States control during the First World War.",
+      "whyItMatters": "The renaming symbolized the ship's transformation from German prestige liner into an American troop transport and later passenger flagship.",
       "relatedUrl": "/ships/ss-leviathan",
       "significance": "high",
       "tags": [
@@ -2410,29 +2252,77 @@ window.OCEAN_LINER_THIS_DAY = {
         "world-war-i"
       ],
       "sources": [
-        "Naval History and Heritage Command — Leviathan (SP-1326)"
+        "U.S. Naval History and Heritage Command",
+        "United States Navy records"
       ]
     }
   ],
   "09-07": [
     {
       "year": 1907,
-      "title": "RMS Lusitania departs on maiden voyage",
+      "title": "RMS Lusitania begins her maiden voyage",
       "ship": "RMS Lusitania",
       "category": "Maiden Voyage",
-      "summary": "Lusitania departed Liverpool for New York on her maiden crossing.",
-      "whyItMatters": "Her entry into service inaugurated Cunard’s new turbine express era and soon returned the Blue Riband to Britain.",
+      "summary": "Lusitania departed Liverpool for New York on her first commercial Atlantic crossing.",
+      "whyItMatters": "Her entry into service introduced Cunard's turbine-powered express program and renewed British competition for the fastest North Atlantic passage.",
       "relatedUrl": "/ships/rms-lusitania",
       "significance": "high",
       "tags": [
-        "cunard-line",
         "lusitania",
-        "maiden-voyage"
+        "cunard-line",
+        "maiden-voyage",
+        "express-liner"
       ],
       "sources": [
-        "The Lusitania Resource",
-        "Friends of the Lusitania",
-        "Cunard histories"
+        "National Museums Liverpool",
+        "Cunard histories",
+        "Contemporary Liverpool press reports"
+      ]
+    }
+  ],
+  "09-08": [
+    {
+      "year": 1914,
+      "title": "HMS Oceanic is wrecked off Foula",
+      "ship": "RMS Oceanic / HMS Oceanic",
+      "category": "Wartime Loss",
+      "summary": "The requisitioned White Star liner Oceanic ran aground on the Shaalds of Foula in the Shetland Islands while serving as an armed merchant cruiser.",
+      "whyItMatters": "Oceanic was the first Allied passenger liner lost during the First World War, ending the career of White Star's pre-Olympic flagship.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "oceanic",
+        "white-star-line",
+        "world-war-i",
+        "shipwreck"
+      ],
+      "sources": [
+        "UK Hydrographic Office wreck records",
+        "Royal Navy wartime records",
+        "White Star Line histories"
+      ]
+    }
+  ],
+  "09-09": [
+    {
+      "year": 1939,
+      "title": "Île de France reaches New York with refugees from wartime Europe",
+      "ship": "SS Île de France",
+      "category": "Wartime Transition",
+      "summary": "Île de France arrived in New York carrying 1,777 passengers after leaving Le Havre as France entered the Second World War.",
+      "whyItMatters": "The crowded, darkened crossing became her final civilian voyage before wartime conversion and captured the sudden collapse of normal Atlantic passenger service.",
+      "relatedUrl": "/ships/ss-ile-de-france",
+      "significance": "high",
+      "tags": [
+        "ile-de-france",
+        "french-line",
+        "world-war-ii",
+        "refugees"
+      ],
+      "sources": [
+        "Contemporary New York Times reporting",
+        "French Line histories",
+        "The Ile de France and the Golden Age of Transatlantic Travel — Thomas Kepler"
       ]
     }
   ],
@@ -2485,6 +2375,94 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Holland America histories"
       ]
+    },
+    {
+      "year": 1995,
+      "title": "Queen Elizabeth 2 encounters a massive wave during Hurricane Luis",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Service",
+      "summary": "On a westbound Atlantic crossing, Queen Elizabeth 2 encountered severe conditions associated with Hurricane Luis and was struck by an exceptionally large wave.",
+      "whyItMatters": "The incident became a modern example of the North Atlantic's continuing power even for a large, capable passenger liner.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "qe2",
+        "hurricane-luis",
+        "north-atlantic"
+      ],
+      "sources": [
+        "QE2 historical chronology",
+        "Contemporary maritime reporting"
+      ]
+    }
+  ],
+  "09-12": [
+    {
+      "year": 1916,
+      "title": "French liner SS Paris is launched at Saint-Nazaire",
+      "ship": "SS Paris",
+      "category": "Launch",
+      "summary": "Paris was launched from the Penhoët yard during the First World War so her slipway could be cleared for urgent wartime construction.",
+      "whyItMatters": "Although completion was delayed until 1921, Paris became France's largest liner and an important bridge between prewar luxury and early Art Deco design.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "paris",
+        "french-line",
+        "launch",
+        "saint-nazaire"
+      ],
+      "sources": [
+        "Compagnie Générale Transatlantique histories",
+        "GG Archives SS Paris collection",
+        "The Great Ocean Liners"
+      ]
+    }
+  ],
+  "09-13": [
+    {
+      "year": 1907,
+      "title": "RMS Lusitania arrives in New York on her maiden voyage",
+      "ship": "RMS Lusitania",
+      "category": "Maiden Voyage",
+      "summary": "Lusitania reached New York at the end of her first westbound crossing from Liverpool.",
+      "whyItMatters": "Her arrival introduced American audiences to Cunard's immense turbine-powered express liner and renewed Britain's challenge for North Atlantic speed supremacy.",
+      "relatedUrl": "/ships/rms-lusitania",
+      "significance": "high",
+      "tags": [
+        "lusitania",
+        "cunard-line",
+        "maiden-voyage",
+        "new-york"
+      ],
+      "sources": [
+        "National Museums Liverpool",
+        "Cunard histories",
+        "Contemporary New York press reports"
+      ]
+    }
+  ],
+  "09-14": [
+    {
+      "year": 1914,
+      "title": "Converted liners Carmania and Cap Trafalgar fight in the South Atlantic",
+      "ship": "HMS Carmania / SMS Cap Trafalgar",
+      "category": "Wartime Service",
+      "summary": "The former Cunard liner Carmania fought and sank the German liner Cap Trafalgar off Trindade Island; both ships had been converted into armed merchant cruisers.",
+      "whyItMatters": "The remarkable engagement was the First World War's best-known duel between former passenger liners and exposed the risks of converting prestige ships into improvised warships.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "carmania",
+        "cap-trafalgar",
+        "world-war-i",
+        "armed-merchant-cruiser"
+      ],
+      "sources": [
+        "Royal Museums Greenwich",
+        "Royal Navy wartime records",
+        "Imperial German Navy records"
+      ]
     }
   ],
   "09-15": [
@@ -2504,6 +2482,98 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "SS Great Britain Trust — voyage records"
+      ]
+    }
+  ],
+  "09-16": [
+    {
+      "year": 1962,
+      "title": "Italian liner Michelangelo is launched at Genoa",
+      "ship": "SS Michelangelo",
+      "category": "Launch",
+      "summary": "Michelangelo was launched from the Ansaldo yard at Sestri Ponente, Genoa, for the Italian Line.",
+      "whyItMatters": "She and her sister Raffaello represented Italy's final major attempt to sustain prestigious scheduled Atlantic liner service in the jet age.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "michelangelo",
+        "italian-line",
+        "launch",
+        "jet-age"
+      ],
+      "sources": [
+        "Italian Line fleet histories",
+        "Ansaldo shipyard records",
+        "The Great Ocean Liners"
+      ]
+    }
+  ],
+  "09-17": [
+    {
+      "year": 1940,
+      "title": "SS City of Benares is sunk while carrying child evacuees",
+      "ship": "SS City of Benares",
+      "category": "Wartime Loss",
+      "summary": "German submarine U-48 torpedoed the Ellerman liner City of Benares in the North Atlantic while she carried children being evacuated from wartime Britain.",
+      "whyItMatters": "The heavy loss of young evacuees ended the Children's Overseas Reception Board's organized sea evacuation program and became one of the most poignant passenger-ship tragedies of the war.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "city-of-benares",
+        "world-war-ii",
+        "child-evacuees",
+        "wartime-loss"
+      ],
+      "sources": [
+        "Imperial War Museums",
+        "UK National Archives",
+        "Commonwealth War Graves Commission"
+      ]
+    }
+  ],
+  "09-18": [
+    {
+      "year": 1941,
+      "title": "Italian liners Oceania and Neptunia are sunk off Libya",
+      "ship": "MV Oceania / MV Neptunia",
+      "category": "Wartime Loss",
+      "summary": "British submarine HMS Upholder torpedoed and sank the converted Italian liners Oceania and Neptunia while they transported troops toward North Africa.",
+      "whyItMatters": "Their simultaneous loss demonstrates how interwar passenger liners became high-capacity military transports—and major targets—during the Mediterranean campaign.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "oceania",
+        "neptunia",
+        "italian-line",
+        "world-war-ii"
+      ],
+      "sources": [
+        "Royal Navy submarine patrol records",
+        "Italian wartime shipping records",
+        "Uboat.net Allied warship database"
+      ]
+    }
+  ],
+  "09-19": [
+    {
+      "year": 1897,
+      "title": "Kaiser Wilhelm der Grosse begins her maiden voyage",
+      "ship": "SS Kaiser Wilhelm der Grosse",
+      "category": "Maiden Voyage",
+      "summary": "North German Lloyd's new four-funnelled express liner departed Bremerhaven for Southampton and New York on her first commercial voyage.",
+      "whyItMatters": "Her entry into service marked Germany's arrival as a dominant force in the prestige Atlantic trade and established the four-funnel silhouette as a symbol of speed and power.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "kaiser-wilhelm-der-grosse",
+        "north-german-lloyd",
+        "maiden-voyage",
+        "four-funnel-liner"
+      ],
+      "sources": [
+        "North German Lloyd histories",
+        "North Atlantic Seaway — N. R. P. Bonsor",
+        "Great Passenger Ships of the World — Arnold Kludas"
       ]
     }
   ],
@@ -2563,42 +2633,114 @@ window.OCEAN_LINER_THIS_DAY = {
     },
     {
       "year": 1967,
-      "title": "Queen Elizabeth 2 launched",
-      "ship": "Queen Elizabeth 2",
+      "title": "RMS Queen Elizabeth 2 is launched at Clydebank",
+      "ship": "RMS Queen Elizabeth 2",
       "category": "Launch",
-      "summary": "Queen Elizabeth 2 was launched at John Brown’s Clydebank shipyard.",
-      "whyItMatters": "QE2 became the defining late-twentieth-century Cunard liner and sustained a transatlantic liner tradition deep into the jet age.",
-      "relatedUrl": "/ships/queen-elizabeth-2",
+      "summary": "Queen Elizabeth II launched Cunard's new liner at John Brown's Clydebank yard, giving the ship the name Queen Elizabeth 2.",
+      "whyItMatters": "QE2 became the principal bridge between the classic express-liner era and the modern passenger-ship age.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
       "significance": "high",
       "tags": [
-        "cunard-line",
         "qe2",
+        "cunard-line",
         "launch",
-        "postwar-liners"
+        "clydebank"
       ],
       "sources": [
-        "QE2 historical chronology",
+        "West Dunbartonshire Council shipbuilding history",
         "Cunard histories"
+      ]
+    }
+  ],
+  "09-21": [
+    {
+      "year": 1907,
+      "title": "RMS Lusitania begins her first eastbound crossing",
+      "ship": "RMS Lusitania",
+      "category": "Maiden Voyage",
+      "summary": "After her inaugural arrival in New York, Lusitania departed on her first return voyage to Europe.",
+      "whyItMatters": "The sailing completed the new liner's first round trip and began the sustained express service through which Cunard challenged its German rivals.",
+      "relatedUrl": "/ships/rms-lusitania",
+      "significance": "medium",
+      "tags": [
+        "lusitania",
+        "cunard-line",
+        "maiden-voyage",
+        "eastbound-crossing"
+      ],
+      "sources": [
+        "Cunard voyage records",
+        "Lusitania chronologies",
+        "Contemporary New York sailing reports"
+      ]
+    }
+  ],
+  "09-23": [
+    {
+      "year": 1957,
+      "title": "Keel of SS Canberra is laid at Belfast",
+      "ship": "SS Canberra",
+      "category": "Construction",
+      "summary": "The first keel plates for P&O-Orient's yard number 1621, the future Canberra, were laid on Harland & Wolff's slipway 14.",
+      "whyItMatters": "Construction began on Harland & Wolff's last great passenger liner, a ship later celebrated for both migrant service and her Falklands War role.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "canberra",
+        "p-and-o",
+        "harland-and-wolff",
+        "construction"
+      ],
+      "sources": [
+        "Harland & Wolff records",
+        "P&O heritage records",
+        "The Great Ocean Liners"
+      ]
+    }
+  ],
+  "09-24": [
+    {
+      "year": 1898,
+      "title": "Transpacific passenger liner America Maru is completed",
+      "ship": "SS America Maru",
+      "category": "Construction",
+      "summary": "Wigham Richardson completed America Maru for Toyo Kisen's new transpacific passenger service linking Asia, Honolulu, and San Francisco.",
+      "whyItMatters": "The ship was part of Japan's emergence in long-distance scheduled passenger shipping and later served as an armed merchantman, hospital ship, and wartime transport.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "america-maru",
+        "toyo-kisen",
+        "transpacific",
+        "passenger-liner"
+      ],
+      "sources": [
+        "Wigham Richardson builder records",
+        "CombinedFleet America Maru chronology",
+        "Transpacific Steam — E. Mowbray Tate"
       ]
     }
   ],
   "09-26": [
     {
       "year": 1934,
-      "title": "RMS Queen Mary launched",
+      "title": "RMS Queen Mary is launched and named at Clydebank",
       "ship": "RMS Queen Mary",
       "category": "Launch",
-      "summary": "Cunard’s new express liner Queen Mary was launched at John Brown’s Clydebank yard.",
-      "whyItMatters": "The launch introduced the hull that would become one of the most famous ocean liners of the twentieth century.",
+      "summary": "Cunard hull 534 was launched at John Brown & Company and named Queen Mary.",
+      "whyItMatters": "The launch introduced the ship that became Britain's best-known interwar Atlantic liner and a central rival to Normandie.",
       "relatedUrl": "/ships/rms-queen-mary",
       "significance": "high",
       "tags": [
         "queen-mary",
-        "cunard",
-        "launch"
+        "cunard-white-star",
+        "launch",
+        "clydebank"
       ],
       "sources": [
-        "Royal Museums Greenwich — Queen Mary launch commemorative record"
+        "Royal Museums Greenwich",
+        "Science Museum Group",
+        "Queen Mary historical records"
       ]
     },
     {
@@ -2776,6 +2918,28 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "10-28": [
+    {
+      "year": 1940,
+      "title": "RMS Empress of Britain is sunk during wartime service",
+      "ship": "RMS Empress of Britain",
+      "category": "Wartime Loss",
+      "summary": "After being damaged by German aircraft two days earlier, the Canadian Pacific liner Empress of Britain was torpedoed by U-32 while under tow west of Ireland and sank.",
+      "whyItMatters": "At more than 42,000 gross tons, she was the largest merchant ship sunk by a U-boat during the Second World War and one of the largest liners lost in wartime.",
+      "relatedUrl": "/ships/rms-empress-of-britain",
+      "significance": "high",
+      "tags": [
+        "empress-of-britain",
+        "canadian-pacific",
+        "world-war-ii",
+        "u-boat",
+        "wartime-loss"
+      ],
+      "sources": [
+        "Uboat.net — Empress of Britain vessel record"
+      ]
+    }
+  ],
   "10-29": [
     {
       "year": 1919,
@@ -2813,6 +2977,29 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Compagnie Générale Transatlantique records",
         "Normandie histories"
+      ]
+    }
+  ],
+  "10-31": [
+    {
+      "year": 1967,
+      "title": "RMS Queen Mary leaves Southampton for the final time",
+      "ship": "RMS Queen Mary",
+      "category": "Final Voyage",
+      "summary": "Queen Mary departed Southampton on her last voyage, a multi-port passage around Cape Horn to her new permanent home in Long Beach.",
+      "whyItMatters": "The departure closed three decades of celebrated Cunard service and began the liner's transition from working ship to preserved landmark.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "queen-mary",
+        "cunard-line",
+        "final-voyage",
+        "preservation"
+      ],
+      "sources": [
+        "Queen Mary official historical timeline",
+        "Cunard histories",
+        "Contemporary final-voyage records"
       ]
     }
   ],
@@ -2867,6 +3054,28 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "11-12": [
+    {
+      "year": 1928,
+      "title": "SS Vestris sinks off the American coast",
+      "ship": "SS Vestris",
+      "category": "Disaster",
+      "summary": "The Lamport and Holt passenger liner Vestris foundered after developing a severe list in heavy weather while bound from New York toward South America.",
+      "whyItMatters": "The loss of 111 people and failures surrounding evacuation and lifesaving arrangements made the disaster an important episode in interwar passenger-ship safety history.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "vestris",
+        "lamport-and-holt",
+        "shipwreck",
+        "maritime-safety"
+      ],
+      "sources": [
+        "Naval History and Heritage Command — Davis II (Destroyer No. 65)",
+        "Library of Congress — Vestris disaster photographs"
+      ]
+    }
+  ],
   "11-13": [
     {
       "year": 1890,
@@ -2908,46 +3117,26 @@ window.OCEAN_LINER_THIS_DAY = {
   "11-16": [
     {
       "year": 1907,
-      "title": "RMS Mauretania begins maiden voyage",
+      "title": "RMS Mauretania begins her maiden Atlantic voyage",
       "ship": "RMS Mauretania",
       "category": "Maiden Voyage",
-      "summary": "Mauretania departed Liverpool on her maiden voyage to New York.",
-      "whyItMatters": "Her entry into service completed Cunard’s new pair of turbine express liners and began a remarkably long record-setting career.",
+      "summary": "Mauretania departed Liverpool for New York on her first transatlantic voyage.",
+      "whyItMatters": "Her entry into service completed Cunard's turbine-powered express pair and began a career closely associated with speed records.",
       "relatedUrl": "/ships/rms-mauretania",
       "significance": "high",
       "tags": [
-        "cunard-line",
         "mauretania",
-        "maiden-voyage",
-        "blue-riband"
+        "cunard-line",
+        "maiden-voyage"
       ],
       "sources": [
-        "Cunard histories",
-        "Mauretania histories",
-        "Contemporary sailing records"
+        "Smithsonian collections",
+        "Aberdeen City museum collections",
+        "Cunard histories"
       ]
     }
   ],
   "11-21": [
-    {
-      "year": 1916,
-      "title": "HMHS Britannic sinks after striking a mine",
-      "ship": "HMHS Britannic",
-      "category": "Disaster",
-      "summary": "Britannic struck a mine in the Kea Channel while serving as a hospital ship and sank less than an hour later.",
-      "whyItMatters": "The loss ended the career of the third Olympic-class liner before she could ever enter the passenger service for which she had been built.",
-      "relatedUrl": "/ships/rms-britannic",
-      "significance": "high",
-      "tags": [
-        "britannic",
-        "white-star-line",
-        "world-war-i",
-        "hospital-ship"
-      ],
-      "sources": [
-        "Royal Museums Greenwich — RMS Titanic fact sheet"
-      ]
-    },
     {
       "year": 1916,
       "title": "HMHS Britannic sinks in the Aegean",
@@ -2971,6 +3160,28 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "11-27": [
+    {
+      "year": 2008,
+      "title": "Queen Elizabeth 2 is formally handed over in Dubai",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Preservation",
+      "summary": "Following retirement from Cunard service, QE2 was formally transferred to her new owners and berthed in Dubai.",
+      "whyItMatters": "The transfer ended nearly forty years of Cunard operation and began her transition from working liner to preserved hospitality use.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "qe2",
+        "retirement",
+        "dubai",
+        "preservation"
+      ],
+      "sources": [
+        "QE2 historical chronology",
+        "Contemporary handover coverage"
+      ]
+    }
+  ],
   "12-08": [
     {
       "year": 1900,
@@ -2984,6 +3195,29 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "White Star records"
+      ]
+    }
+  ],
+  "12-09": [
+    {
+      "year": 1967,
+      "title": "RMS Queen Mary arrives at her permanent home in Long Beach",
+      "ship": "RMS Queen Mary",
+      "category": "Preservation",
+      "summary": "After her final voyage around Cape Horn, Queen Mary arrived in Long Beach, California, to begin her new life as a permanently moored attraction.",
+      "whyItMatters": "Her arrival preserved one of the defining liners of the twentieth century when most contemporaries were being scrapped.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "queen-mary",
+        "long-beach",
+        "preservation",
+        "final-voyage"
+      ],
+      "sources": [
+        "Queen Mary official historical timeline",
+        "City of Long Beach historical records",
+        "Contemporary arrival coverage"
       ]
     }
   ],
@@ -3075,6 +3309,27 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Cunard fleet records"
+      ]
+    }
+  ],
+  "12-30": [
+    {
+      "year": 1933,
+      "title": "Agreement is reached to merge Cunard and White Star",
+      "ship": "Multiple liners",
+      "category": "Company History",
+      "summary": "An agreement was reached for the merger of Cunard and White Star, setting the stage for Cunard-White Star and renewed work on Britain's express-liner program.",
+      "whyItMatters": "The agreement joined two historic rivals and created the structure under which Queen Mary and Queen Elizabeth would enter service.",
+      "relatedUrl": "/cunard",
+      "significance": "high",
+      "tags": [
+        "cunard",
+        "white-star-line",
+        "merger"
+      ],
+      "sources": [
+        "Queen Mary historical timeline",
+        "Cunard corporate histories"
       ]
     }
   ]
