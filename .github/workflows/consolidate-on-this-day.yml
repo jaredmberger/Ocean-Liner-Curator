@@ -1,0 +1,208 @@
+name: Consolidate On This Day chronology
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/consolidate-on-this-day.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Merge and audit chronology
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const vm = require('vm');
+
+          const primaryPath = 'assets/this-day-ocean-liners.js';
+          const additionsPath = 'assets/this-day-ocean-liners-additions.js';
+          const pagePath = 'this-day-in-ocean-liner-history.html';
+
+          const sandbox = { window: {} };
+          vm.createContext(sandbox);
+          vm.runInContext(fs.readFileSync(primaryPath, 'utf8'), sandbox);
+          const primaryOnly = JSON.parse(JSON.stringify(sandbox.window.OCEAN_LINER_THIS_DAY || {}));
+          vm.runInContext(fs.readFileSync(additionsPath, 'utf8'), sandbox);
+          const merged = JSON.parse(JSON.stringify(sandbox.window.OCEAN_LINER_THIS_DAY || {}));
+
+          const beforeDates = Object.values(merged).filter(v => Array.isArray(v) && v.length).length;
+          const beforeEvents = Object.values(merged).reduce((n, v) => n + (Array.isArray(v) ? v.length : 0), 0);
+
+          const vagueTitlePatterns = [
+            /construction milestone period/i,
+            /nears completion/i,
+            /near completion era/i,
+            /final fitting-out era/i,
+            /prepares for .*record/i,
+            /celebrated after .*crossing/i,
+            /wartime service demonstrates/i,
+            /takes shape as industrial monuments/i,
+            /early service builds .*prestige/i,
+            /first season reshapes/i,
+            /symbolize(?:s)? .*recovery/i,
+            /schedules unravel as war begins/i,
+            /gives way to wartime disruption/i,
+            /face sudden wartime uncertainty/i,
+            /national prestige at sea reaches a high point/i,
+            /rivalry enters its peak interwar phase/i,
+            /early Atlantic service establishes regular steamship expectations/i
+          ];
+
+          const removed = [];
+          const deduped = [];
+
+          function normalizeText(value) {
+            return String(value || '')
+              .toLowerCase()
+              .normalize('NFKD')
+              .replace(/[’']/g, '')
+              .replace(/\b(rms|ss|hmhs|hms|uss|sms|mv)\b/g, '')
+              .replace(/britanic/g, 'britannic')
+              .replace(/[^a-z0-9]+/g, ' ')
+              .trim();
+          }
+
+          function richness(event) {
+            let score = 0;
+            score += String(event.summary || '').length;
+            score += String(event.whyItMatters || '').length * 1.5;
+            score += Array.isArray(event.sources) ? event.sources.length * 60 : 0;
+            score += Array.isArray(event.tags) ? event.tags.length * 15 : 0;
+            if (event.relatedUrl) score += 30;
+            if (event.category) score += 10;
+            if (event.ship) score += 10;
+            return score;
+          }
+
+          function shouldRemove(dateKey, event) {
+            if (!event || typeof event !== 'object') return 'invalid event';
+            if (String(event.category || '').toLowerCase() === 'context') return 'broad context, not an exact-date event';
+            if (vagueTitlePatterns.some(rx => rx.test(String(event.title || '')))) return 'approximate/date-padding title';
+            if (dateKey === '01-30' && Number(event.year) === 1858 && /Great Eastern/i.test(String(event.title || ''))) {
+              return 'date correction: completed Great Eastern launch belongs on January 31';
+            }
+            return null;
+          }
+
+          const cleaned = {};
+          for (const dateKey of Object.keys(merged).sort()) {
+            const events = Array.isArray(merged[dateKey]) ? merged[dateKey] : [];
+            const kept = [];
+            const semantic = new Map();
+            const exact = new Map();
+
+            for (const event of events) {
+              const reason = shouldRemove(dateKey, event);
+              if (reason) {
+                removed.push({ dateKey, year: event && event.year, title: event && event.title, reason });
+                continue;
+              }
+
+              const exactKey = `${event.year || ''}|${normalizeText(event.title)}`;
+              if (exact.has(exactKey)) {
+                const priorIndex = exact.get(exactKey);
+                const prior = kept[priorIndex];
+                if (richness(event) > richness(prior)) kept[priorIndex] = event;
+                deduped.push({ dateKey, title: event.title, reason: 'exact event duplicate' });
+                continue;
+              }
+
+              const ship = normalizeText(event.ship);
+              const category = normalizeText(event.category);
+              const semanticKey = ship && category ? `${event.year || ''}|${ship}|${category}` : '';
+              if (semanticKey && semantic.has(semanticKey)) {
+                const priorIndex = semantic.get(semanticKey);
+                const prior = kept[priorIndex];
+                if (richness(event) > richness(prior)) {
+                  kept[priorIndex] = event;
+                  exact.delete(`${prior.year || ''}|${normalizeText(prior.title)}`);
+                  exact.set(exactKey, priorIndex);
+                }
+                deduped.push({ dateKey, title: event.title, reason: 'same ship/year/category event duplicate' });
+                continue;
+              }
+
+              const index = kept.length;
+              kept.push(event);
+              exact.set(exactKey, index);
+              if (semanticKey) semantic.set(semanticKey, index);
+            }
+
+            if (kept.length) {
+              kept.sort((a, b) => Number(a.year || 0) - Number(b.year || 0) || String(a.title || '').localeCompare(String(b.title || '')));
+              cleaned[dateKey] = kept;
+            }
+          }
+
+          const afterDates = Object.keys(cleaned).length;
+          const afterEvents = Object.values(cleaned).reduce((n, v) => n + v.length, 0);
+
+          const header = `// Ocean Liner Curator — This Day in Ocean Liner History\n// SINGLE AUTHORITATIVE chronology for /api/on-this-day and the public This Day page.\n// Events must represent a documented occurrence on the exact month/day key below.\n// Multiple legitimate events on the same date belong in the SAME array.\n// Do not add broad \"during this period\" context merely to fill an otherwise empty date.\n\n`;
+          fs.writeFileSync(primaryPath, header + 'window.OCEAN_LINER_THIS_DAY = ' + JSON.stringify(cleaned, null, 2) + ';\n');
+
+          let page = fs.readFileSync(pagePath, 'utf8');
+          page = page.replace(/<script src="\/assets\/this-day-ocean-liners\.js(?:\?[^\"]*)?" defer><\/script>/, '<script src="/assets/this-day-ocean-liners.js?v=20260917a" defer></script>');
+          page = page.replace(/\n?<script src="\/assets\/this-day-ocean-liners-additions\.js[^\"]*" defer><\/script>/, '');
+          fs.writeFileSync(pagePath, page);
+
+          console.log(JSON.stringify({
+            primaryDatesBeforeMerge: Object.keys(primaryOnly).length,
+            mergedDatesBeforeAudit: beforeDates,
+            mergedEventsBeforeAudit: beforeEvents,
+            authoritativeDatesAfterAudit: afterDates,
+            authoritativeEventsAfterAudit: afterEvents,
+            removedCount: removed.length,
+            deduplicatedCount: deduped.length,
+            removed,
+            deduped
+          }, null, 2));
+          NODE
+
+      - name: Validate consolidated chronology
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const vm = require('vm');
+          const sandbox = { window: {} };
+          vm.createContext(sandbox);
+          vm.runInContext(fs.readFileSync('assets/this-day-ocean-liners.js', 'utf8'), sandbox);
+          const data = sandbox.window.OCEAN_LINER_THIS_DAY || {};
+          if (!Object.keys(data).length) throw new Error('Chronology is empty');
+          for (const [date, events] of Object.entries(data)) {
+            if (!/^\d{2}-\d{2}$/.test(date) || !Array.isArray(events) || !events.length) throw new Error(`Invalid date entry: ${date}`);
+            for (const event of events) {
+              if (String(event.category || '').toLowerCase() === 'context') throw new Error(`Context filler remains on ${date}: ${event.title}`);
+            }
+          }
+          const page = fs.readFileSync('this-day-in-ocean-liner-history.html', 'utf8');
+          if (page.includes('this-day-ocean-liners-additions.js')) throw new Error('Public page still loads additions layer');
+          console.log(`Validated ${Object.keys(data).length} populated dates and ${Object.values(data).reduce((n,v)=>n+v.length,0)} events.`);
+          NODE
+
+      - name: Remove obsolete second layer and temporary audit machinery
+        shell: bash
+        run: |
+          git rm -f assets/this-day-ocean-liners-additions.js
+          git rm -f tools/search/audit-on-this-day-gaps.mjs || true
+          git rm -f .github/workflows/audit-on-this-day-gaps.yml || true
+          git rm -f .github/workflows/consolidate-on-this-day.yml
+
+      - name: Commit consolidation
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/this-day-ocean-liners.js this-day-in-ocean-liner-history.html
+          git commit -m 'Consolidate and audit On This Day chronology [skip ci]'
+          git push
