@@ -34,7 +34,8 @@ for (const path of paths.sort()) {
   let title = $('h1').first().text().replace(/\s+/g, ' ').trim() || pageTitle;
   const type = path.startsWith('ships/') && /ship guide/i.test($('title').text() + ' ' + $('.subtitle').first().text()) && !/\/(ships|index)\.html$/.test(path) ? 'Ship guide' : /hub/i.test($('title').text()) ? 'Hub' : 'Article & reference';
   const year = $('.subtitle').first().text().match(/\b(?:18|19|20)\d{2}\b/)?.[0];
-  if (type === 'Ship guide' && year && !title.includes(year)) title += ` (${year})`;
+  const titleAlreadyHasYear = /\b(?:18|19|20)\d{2}\b/.test(title);
+  if (type === 'Ship guide' && year && !titleAlreadyHasYear) title += ` (${year})`;
   $('script, style, noscript, nav, footer, form, button, input, select, textarea, template, [hidden], [aria-hidden="true"], [role="dialog"], #site-header, .secondary-nav, .ask-gpt-wrap, .about-link, .gpt-modal').remove();
   const body = $('main').length ? $('main') : $('body');
   body.find('h1').remove();
