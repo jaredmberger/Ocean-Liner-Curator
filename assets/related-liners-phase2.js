@@ -229,6 +229,46 @@
         ["ss-prinzess-irene", "/ships/ss-prinzess-irene", "SS <em>Prinzess Irene</em>", "Barbarossa-class sister"],
         ["ss-grosser-kurfurst", "/ships/ss-grosser-kurfurst", "SS <em>Grosser Kurfürst</em>", "enlarged half-sister"]
       ]
+    ),
+    group(
+      "Sister Ships",
+      "Campania and Lucania were Cunard sister express liners of the 1890s, built as a closely matched pair for the company’s premier North Atlantic service.",
+      [
+        ["rms-campania", "/ships/rms-campania", "RMS <em>Campania</em>", "sister ship"],
+        ["rms-lucania", "/ships/rms-lucania", "RMS <em>Lucania</em>", "sister ship"]
+      ]
+    ),
+    group(
+      "Sister Ships",
+      "Etruria and Umbria were closely matched Cunard sister express liners of the mid-1880s, representing the company’s leading North Atlantic generation before Campania and Lucania.",
+      [
+        ["rms-etruria-1884", "/ships/rms-etruria-1884", "RMS <em>Etruria</em>", "sister ship"],
+        ["rms-umbria-1884", "/ships/rms-umbria-1884", "RMS <em>Umbria</em>", "sister ship"]
+      ]
+    ),
+    group(
+      "Sister Ships — Propulsion Comparison",
+      "Laurentic and Megantic were closely matched sister liners whose differing machinery arrangements gave their operators a practical comparison between propulsion systems in otherwise closely related ships.",
+      [
+        ["rms-laurentic", "/ships/rms-laurentic", "RMS <em>Laurentic</em>", "sister ship with differing machinery"],
+        ["rms-megantic-1909", "/ships/rms-megantic-1909", "RMS <em>Megantic</em>", "sister ship with differing machinery"]
+      ]
+    ),
+    group(
+      "Manhattan-class Sisters",
+      "Manhattan and Washington were sister liners built for United States Lines in the early 1930s, forming the company’s principal American-built transatlantic pair before the postwar era.",
+      [
+        ["ss-manhattan", "/ships/ss-manhattan", "SS <em>Manhattan</em>", "Manhattan-class sister"],
+        ["ss-washington", "/ships/ss-washington", "SS <em>Washington</em>", "Manhattan-class sister"]
+      ]
+    ),
+    group(
+      "Sister Ships",
+      "Bremen and Europa were Norddeutscher Lloyd sister express liners conceived as a paired interwar flagship generation; they were built by different yards and were closely related rather than literal duplicates.",
+      [
+        ["ss-bremen", "/ships/ss-bremen", "SS <em>Bremen</em>", "sister express liner"],
+        ["ss-europa", "/ships/ss-europa", "SS <em>Europa</em>", "sister express liner"]
+      ]
     )
   ];
 
