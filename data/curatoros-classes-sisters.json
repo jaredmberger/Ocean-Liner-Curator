@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T02:30:41.597Z",
+  "generatedAt": "2026-09-17T20:42:19.086Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
-    "guidesWithExplicitClass": 12,
-    "canonicalClasses": 8,
-    "explicitSisterLinks": 14,
-    "unresolvedSisterMentions": 93
+    "guidesWithExplicitClass": 15,
+    "canonicalClasses": 7,
+    "explicitSisterLinks": 13,
+    "unresolvedSisterMentions": 87
   },
   "classes": [
     {
@@ -16,8 +16,18 @@
       "rawValues": [
         "Olympic"
       ],
-      "shipCount": 3,
+      "shipCount": 7,
       "ships": [
+        {
+          "name": "RMS Laurentic",
+          "path": "ships/rms-laurentic.html",
+          "url": "/ships/rms-laurentic"
+        },
+        {
+          "name": "RMS Megantic",
+          "path": "ships/rms-megantic-1909.html",
+          "url": "/ships/rms-megantic-1909"
+        },
         {
           "name": "RMS Olympic",
           "path": "ships/rms-olympic.html",
@@ -32,6 +42,16 @@
           "name": "RMS/HMHS Britannic",
           "path": "ships/rms-britannic.html",
           "url": "/ships/rms-britannic"
+        },
+        {
+          "name": "SS Nomadic",
+          "path": "ships/ss-nomadic.html",
+          "url": "/ships/ss-nomadic"
+        },
+        {
+          "name": "SS Traffic",
+          "path": "ships/ss-traffic.html",
+          "url": "/ships/ss-traffic"
         }
       ]
     },
@@ -91,21 +111,6 @@
       ]
     },
     {
-      "id": "imperator",
-      "name": "Imperator",
-      "rawValues": [
-        "Imperator"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Bismarck",
-          "path": "ships/ss-bismarck-1914.html",
-          "url": "/ships/ss-bismarck-1914"
-        }
-      ]
-    },
-    {
       "id": "manhattan",
       "name": "Manhattan",
       "rawValues": [
@@ -121,6 +126,21 @@
       ]
     },
     {
+      "id": "prewar-program-the-imperator",
+      "name": "Prewar Program The Imperator",
+      "rawValues": [
+        "Prewar Program The Imperator"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Bismarck (1914)",
+          "path": "ships/ss-bismarck-1914.html",
+          "url": "/ships/ss-bismarck-1914"
+        }
+      ]
+    },
+    {
       "id": "saxonia",
       "name": "Saxonia",
       "rawValues": [
@@ -132,21 +152,6 @@
           "name": "RMS Sylvania",
           "path": "ships/rms-sylvania.html",
           "url": "/ships/rms-sylvania"
-        }
-      ]
-    },
-    {
-      "id": "strath",
-      "name": "Strath",
-      "rawValues": [
-        "Strath"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Strathaird",
-          "path": "ships/ss-strathaird.html",
-          "url": "/ships/ss-strathaird"
         }
       ]
     }
@@ -188,6 +193,19 @@
         "name": "RMS Titanic",
         "path": "ships/rms-titanic.html",
         "url": "/ships/rms-titanic"
+      },
+      "evidenceFrom": "ships/rms-olympic.html"
+    },
+    {
+      "a": {
+        "name": "RMS Olympic",
+        "path": "ships/rms-olympic.html",
+        "url": "/ships/rms-olympic"
+      },
+      "b": {
+        "name": "RMS Britannic",
+        "path": "ships/rms-britannic-1874.html",
+        "url": "/ships/rms-britannic-1874"
       },
       "evidenceFrom": "ships/rms-olympic.html"
     },
@@ -297,19 +315,6 @@
     },
     {
       "a": {
-        "name": "SS Reliance",
-        "path": "ships/ss-reliance.html",
-        "url": "/ships/ss-reliance"
-      },
-      "b": {
-        "name": "SS Resolute",
-        "path": "ships/ss-resolute.html",
-        "url": "/ships/ss-resolute"
-      },
-      "evidenceFrom": "ships/ss-reliance.html"
-    },
-    {
-      "a": {
         "name": "SS St. Louis",
         "path": "ships/ss-st-louis.html",
         "url": "/ships/ss-st-louis"
@@ -320,19 +325,6 @@
         "url": "/ships/ss-milwaukee"
       },
       "evidenceFrom": "ships/ss-st-louis.html"
-    },
-    {
-      "a": {
-        "name": "Tatsuta Maru",
-        "path": "ships/tatsuta-maru-1929.html",
-        "url": "/ships/tatsuta-maru-1929"
-      },
-      "b": {
-        "name": "Asama Maru",
-        "path": "ships/asama-maru-1929.html",
-        "url": "/ships/asama-maru-1929"
-      },
-      "evidenceFrom": "ships/tatsuta-maru-1929.html"
     }
   ],
   "unresolvedSisterMentions": [
@@ -445,10 +437,22 @@
       "candidateCount": 0
     },
     {
-      "ship": "RMS Olympic",
-      "path": "ships/rms-olympic.html",
-      "mentioned": "Britannic",
-      "candidateCount": 2
+      "ship": "RMS Etruria (1884)",
+      "path": "ships/rms-etruria-1884.html",
+      "mentioned": "Umbria",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Lucania",
+      "path": "ships/rms-lucania.html",
+      "mentioned": "early 1890s",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Lucania",
+      "path": "ships/rms-lucania.html",
+      "mentioned": "paired",
+      "candidateCount": 0
     },
     {
       "ship": "RMS Olympic",
@@ -472,6 +476,12 @@
       "ship": "RMS Olympic",
       "path": "ships/rms-olympic.html",
       "mentioned": "repeatedly refit as technolo",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Umbria (1884)",
+      "path": "ships/rms-umbria-1884.html",
+      "mentioned": "Etruria",
       "candidateCount": 0
     },
     {
@@ -697,12 +707,6 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Morro Castle",
-      "path": "ships/ss-morro-castle.html",
-      "mentioned": "Oriente Builder Newport News Shipbuilding & Dry Dock Co",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Noordam",
       "path": "ships/ss-noordam.html",
       "mentioned": "belonged to the same broad group as the larger Potsdam",
@@ -793,18 +797,6 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Reliance",
-      "path": "ships/ss-reliance.html",
-      "mentioned": "Resolute (built separately",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Resolute",
-      "path": "ships/ss-resolute.html",
-      "mentioned": "Reliance Interwar operators Royal Holland Lloyd",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Roma",
       "path": "ships/ss-roma.html",
       "mentioned": "Augustus Notable incident Collision",
@@ -835,24 +827,6 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Strathaird",
-      "path": "ships/ss-strathaird.html",
-      "mentioned": "such as Strathnaver",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Traffic",
-      "path": "ships/ss-traffic.html",
-      "mentioned": "Nomadic Fate Lost during World War II (1941",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Traffic",
-      "path": "ships/ss-traffic.html",
-      "mentioned": "collision",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Virginia",
       "path": "ships/ss-virginia.html",
       "mentioned": "California",
@@ -874,24 +848,6 @@
       "ship": "SS Virginia",
       "path": "ships/ss-virginia.html",
       "mentioned": "Ask Ocean Liner GPT Ship Guides Index Home Note",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Tatsuta Maru",
-      "path": "ships/tatsuta-maru-1929.html",
-      "mentioned": "Chichibu Maru",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Tatsuta Maru",
-      "path": "ships/tatsuta-maru-1929.html",
-      "mentioned": "modern motor-ship engineering",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Tatsuta Maru",
-      "path": "ships/tatsuta-maru-1929.html",
-      "mentioned": "refined accommodations",
       "candidateCount": 0
     }
   ],
@@ -960,7 +916,7 @@
       "sisters": []
     },
     {
-      "name": "MV Britannic",
+      "name": "MV Britannic (1930)",
       "path": "ships/mv-britannic.html",
       "url": "/ships/mv-britannic",
       "classes": [],
@@ -1012,7 +968,7 @@
       "sisters": []
     },
     {
-      "name": "RMS Adriatic",
+      "name": "RMS Adriatic (1907)",
       "path": "ships/rms-adriatic.html",
       "url": "/ships/rms-adriatic",
       "classes": [],
@@ -1266,7 +1222,9 @@
       "path": "ships/rms-etruria-1884.html",
       "url": "/ships/rms-etruria-1884",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Umbria"
+      ]
     },
     {
       "name": "RMS Franconia (1910)",
@@ -1314,7 +1272,9 @@
       "name": "RMS Laurentic",
       "path": "ships/rms-laurentic.html",
       "url": "/ships/rms-laurentic",
-      "classes": [],
+      "classes": [
+        "Olympic"
+      ],
       "sisters": []
     },
     {
@@ -1323,6 +1283,8 @@
       "url": "/ships/rms-lucania",
       "classes": [],
       "sisters": [
+        "early 1890s",
+        "paired",
         "Campania"
       ]
     },
@@ -1358,7 +1320,9 @@
       "name": "RMS Megantic",
       "path": "ships/rms-megantic-1909.html",
       "url": "/ships/rms-megantic-1909",
-      "classes": [],
+      "classes": [
+        "Olympic"
+      ],
       "sisters": []
     },
     {
@@ -1498,7 +1462,9 @@
       "path": "ships/rms-umbria-1884.html",
       "url": "/ships/rms-umbria-1884",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Etruria"
+      ]
     },
     {
       "name": "RMS Viceroy of India",
@@ -1711,11 +1677,11 @@
       "sisters": []
     },
     {
-      "name": "SS Bismarck",
+      "name": "SS Bismarck (1914)",
       "path": "ships/ss-bismarck-1914.html",
       "url": "/ships/ss-bismarck-1914",
       "classes": [
-        "Imperator"
+        "Prewar Program The Imperator"
       ],
       "sisters": []
     },
@@ -2239,7 +2205,7 @@
       "sisters": []
     },
     {
-      "name": "SS Hamburg",
+      "name": "SS Hamburg (1925)",
       "path": "ships/ss-hamburg-1925.html",
       "url": "/ships/ss-hamburg-1925",
       "classes": [],
@@ -2618,9 +2584,7 @@
       "path": "ships/ss-morro-castle.html",
       "url": "/ships/ss-morro-castle",
       "classes": [],
-      "sisters": [
-        "Oriente Builder Newport News Shipbuilding & Dry Dock Co"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Napoleon III",
@@ -2661,7 +2625,9 @@
       "name": "SS Nomadic",
       "path": "ships/ss-nomadic.html",
       "url": "/ships/ss-nomadic",
-      "classes": [],
+      "classes": [
+        "Olympic"
+      ],
       "sisters": []
     },
     {
@@ -2883,10 +2849,7 @@
       "path": "ships/ss-reliance.html",
       "url": "/ships/ss-reliance",
       "classes": [],
-      "sisters": [
-        "Resolute (built separately",
-        "Resolute"
-      ]
+      "sisters": []
     },
     {
       "name": "RMS Republic (1903)",
@@ -2907,9 +2870,7 @@
       "path": "ships/ss-resolute.html",
       "url": "/ships/ss-resolute",
       "classes": [],
-      "sisters": [
-        "Reliance Interwar operators Royal Holland Lloyd"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Rex",
@@ -3025,12 +2986,8 @@
       "name": "SS Strathaird",
       "path": "ships/ss-strathaird.html",
       "url": "/ships/ss-strathaird",
-      "classes": [
-        "Strath"
-      ],
-      "sisters": [
-        "such as Strathnaver"
-      ]
+      "classes": [],
+      "sisters": []
     },
     {
       "name": "SS Strathmore",
@@ -3050,11 +3007,10 @@
       "name": "SS Traffic",
       "path": "ships/ss-traffic.html",
       "url": "/ships/ss-traffic",
-      "classes": [],
-      "sisters": [
-        "Nomadic Fate Lost during World War II (1941",
-        "collision"
-      ]
+      "classes": [
+        "Olympic"
+      ],
+      "sisters": []
     },
     {
       "name": "SS Tuscania (1921)",
@@ -3166,12 +3122,7 @@
       "path": "ships/tatsuta-maru-1929.html",
       "url": "/ships/tatsuta-maru-1929",
       "classes": [],
-      "sisters": [
-        "Asama Maru",
-        "Chichibu Maru",
-        "modern motor-ship engineering",
-        "refined accommodations"
-      ]
+      "sisters": []
     }
   ]
 }
