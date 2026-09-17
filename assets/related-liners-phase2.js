@@ -264,6 +264,33 @@
     ),
     group(
       "Sister Ships",
+      "Lusitania and Mauretania were Cunard sister express liners, built as the company’s turbine-powered answer to German competition on the North Atlantic and among the defining liners of the prewar express era.",
+      [
+        ["rms-lusitania", "/ships/rms-lusitania", "RMS <em>Lusitania</em>", "sister express liner"],
+        ["rms-mauretania", "/ships/rms-mauretania", "RMS <em>Mauretania</em>", "sister express liner"]
+      ]
+    ),
+    group(
+      "Imperator-class Sisters",
+      "Imperator, Vaterland, and Bismarck formed Hamburg America Line’s three-ship Imperator class. After World War I, the ships continued under new identities as Berengaria, Leviathan, and Majestic respectively.",
+      [
+        ["ss-imperator", "/ships/ss-imperator", "SS <em>Imperator</em> / RMS <em>Berengaria</em>", "Imperator-class sister"],
+        ["ss-leviathan", "/ships/ss-leviathan", "SS <em>Vaterland</em> / SS <em>Leviathan</em>", "Imperator-class sister"],
+        ["rms-majestic", "/ships/rms-majestic", "SS <em>Bismarck</em> / RMS <em>Majestic</em>", "Imperator-class sister"]
+      ]
+    ),
+    group(
+      "Saxonia-class Sisters",
+      "Saxonia, Ivernia, Carinthia, and Sylvania formed Cunard’s four-ship postwar Saxonia class, built for the company’s Liverpool–Montreal service and later adapted as passenger markets changed.",
+      [
+        ["rms-saxonia", "/ships/rms-saxonia", "RMS <em>Saxonia</em>", "Saxonia-class sister"],
+        ["rms-ivernia", "/ships/rms-ivernia", "RMS <em>Ivernia</em>", "Saxonia-class sister"],
+        ["rms-carinthia", "/ships/rms-carinthia", "RMS <em>Carinthia</em>", "Saxonia-class sister"],
+        ["rms-sylvania", "/ships/rms-sylvania", "RMS <em>Sylvania</em>", "Saxonia-class sister"]
+      ]
+    ),
+    group(
+      "Sister Ships",
       "Bremen and Europa were Norddeutscher Lloyd sister express liners conceived as a paired interwar flagship generation; they were built by different yards and were closely related rather than literal duplicates.",
       [
         ["ss-bremen", "/ships/ss-bremen", "SS <em>Bremen</em>", "sister express liner"],
