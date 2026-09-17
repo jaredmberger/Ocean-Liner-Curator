@@ -26,6 +26,26 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "01-11": [
+    {
+      "year": 1962,
+      "title": "SS France formally inaugurated",
+      "ship": "SS France",
+      "category": "Service",
+      "summary": "France was formally inaugurated shortly before beginning her first transatlantic season for the French Line.",
+      "whyItMatters": "The ceremony marked the public debut of France as the last great purpose-built French transatlantic liner.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "french-line",
+        "france",
+        "service-entry"
+      ],
+      "sources": [
+        "Institut national de l’audiovisuel (INA) — France historical feature"
+      ]
+    }
+  ],
   "01-14": [
     {
       "year": 1899,
@@ -39,6 +59,45 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Oceanic histories"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "SS Andrea Doria begins maiden voyage",
+      "ship": "SS Andrea Doria",
+      "category": "Maiden Voyage",
+      "summary": "Andrea Doria began her maiden voyage from Genoa to New York for the Italian Line.",
+      "whyItMatters": "Her entry into service introduced one of the most celebrated postwar Italian liners and a major symbol of Italy’s revived passenger fleet.",
+      "relatedUrl": "/ships/ss-andrea-doria",
+      "significance": "high",
+      "tags": [
+        "italian-line",
+        "andrea-doria",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "Italian Line vessel chronologies",
+        "SS Andrea Doria service histories"
+      ]
+    }
+  ],
+  "02-03": [
+    {
+      "year": 1962,
+      "title": "SS France departs on maiden transatlantic voyage",
+      "ship": "SS France",
+      "category": "Maiden Voyage",
+      "summary": "France departed Le Havre for New York on her first transatlantic crossing.",
+      "whyItMatters": "The voyage introduced the French Line’s final great flagship to the North Atlantic at the beginning of the jet age.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "french-line",
+        "france",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "Institut national de l’audiovisuel (INA) — France historical feature"
       ]
     }
   ],
@@ -131,6 +190,28 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "03-19": [
+    {
+      "year": 1930,
+      "title": "SS Europa begins maiden voyage",
+      "ship": "SS Europa",
+      "category": "Maiden Voyage",
+      "summary": "Europa departed on her maiden voyage from Bremerhaven to New York.",
+      "whyItMatters": "Europa immediately joined Bremen at the forefront of German interwar express service and captured the Blue Riband on her first crossing.",
+      "relatedUrl": "/ships/ss-europa",
+      "significance": "high",
+      "tags": [
+        "north-german-lloyd",
+        "europa",
+        "maiden-voyage",
+        "blue-riband"
+      ],
+      "sources": [
+        "Bremen Passenger Lists / Die Maus vessel chronology",
+        "Norddeutscher Lloyd histories"
+      ]
+    }
+  ],
   "03-21": [
     {
       "year": 2003,
@@ -144,6 +225,28 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "QM2 references"
+      ]
+    }
+  ],
+  "04-02": [
+    {
+      "year": 1912,
+      "title": "RMS Titanic completes sea trials and is accepted by White Star Line",
+      "ship": "RMS Titanic",
+      "category": "Construction",
+      "summary": "Titanic completed her sea trials off Belfast and was accepted by White Star Line before departing for Southampton.",
+      "whyItMatters": "The successful trials marked the formal transition from construction to service only eight days before her maiden voyage.",
+      "relatedUrl": "/titanic",
+      "significance": "high",
+      "tags": [
+        "white-star-line",
+        "titanic",
+        "sea-trials",
+        "construction"
+      ],
+      "sources": [
+        "Encyclopedia Titanica — Titanic sea trials and delivery research",
+        "Contemporary officer testimony"
       ]
     }
   ],
@@ -272,6 +375,26 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "05-02": [
+    {
+      "year": 1969,
+      "title": "Queen Elizabeth 2 begins maiden voyage",
+      "ship": "Queen Elizabeth 2",
+      "category": "Maiden Voyage",
+      "summary": "Queen Elizabeth 2 departed Southampton for New York on her maiden voyage.",
+      "whyItMatters": "QE2 became Cunard’s defining late-twentieth-century liner and sustained regular transatlantic passenger service deep into the jet age.",
+      "relatedUrl": "/ships/queen-elizabeth-2",
+      "significance": "high",
+      "tags": [
+        "cunard-line",
+        "qe2",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "The QE2 Story historical chronology"
+      ]
+    }
+  ],
   "05-07": [
     {
       "year": 1915,
@@ -295,6 +418,27 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "05-10": [
+    {
+      "year": 1922,
+      "title": "RMS Majestic begins maiden voyage",
+      "ship": "RMS Majestic",
+      "category": "Maiden Voyage",
+      "summary": "Majestic departed Southampton for New York on her maiden voyage for White Star Line.",
+      "whyItMatters": "Her entry into service gave White Star the world’s largest passenger ship and completed the line’s postwar express trio with Olympic and Homeric.",
+      "relatedUrl": "/ships/rms-majestic",
+      "significance": "high",
+      "tags": [
+        "white-star-line",
+        "majestic",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "White Star Line histories",
+        "GG Archives — RMS Majestic chronology"
+      ]
+    }
+  ],
   "05-11": [
     {
       "year": 1960,
@@ -314,6 +458,27 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Compagnie Générale Transatlantique histories",
         "French liner histories"
+      ]
+    }
+  ],
+  "05-14": [
+    {
+      "year": 1914,
+      "title": "SS Vaterland begins maiden voyage",
+      "ship": "SS Vaterland",
+      "category": "Maiden Voyage",
+      "summary": "Vaterland began her maiden voyage for Hamburg America Line.",
+      "whyItMatters": "The voyage introduced the second Imperator-class giant, later seized by the United States and transformed into SS Leviathan.",
+      "relatedUrl": "/ships/ss-leviathan",
+      "significance": "high",
+      "tags": [
+        "hamburg-america-line",
+        "vaterland",
+        "leviathan",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "Great Ocean Liners — SS Vaterland facts and chronology"
       ]
     }
   ],
@@ -433,6 +598,27 @@ window.OCEAN_LINER_THIS_DAY = {
         "The Lusitania Resource",
         "Cunard histories",
         "Contemporary shipbuilding reports"
+      ]
+    }
+  ],
+  "06-11": [
+    {
+      "year": 1913,
+      "title": "SS Imperator begins maiden voyage",
+      "ship": "SS Imperator",
+      "category": "Maiden Voyage",
+      "summary": "Imperator departed Hamburg on her maiden voyage to New York via Southampton and Cherbourg.",
+      "whyItMatters": "Her debut introduced Hamburg America Line’s unprecedented new generation of giant liners and briefly made her the largest ship afloat.",
+      "relatedUrl": "/ships/ss-imperator",
+      "significance": "high",
+      "tags": [
+        "hamburg-america-line",
+        "imperator",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "Hamburg America Line histories",
+        "Norway Heritage — SS Imperator chronology"
       ]
     }
   ],
@@ -920,6 +1106,25 @@ window.OCEAN_LINER_THIS_DAY = {
   ],
   "07-04": [
     {
+      "year": 1840,
+      "title": "RMS Britannia begins Cunard’s first transatlantic crossing",
+      "ship": "RMS Britannia",
+      "category": "Maiden Voyage",
+      "summary": "Britannia departed Liverpool for Boston on Cunard’s first regularly scheduled transatlantic steamship crossing.",
+      "whyItMatters": "The sailing established the service tradition from which Cunard’s transatlantic liner operation developed.",
+      "relatedUrl": "/250-years-across-the-atlantic",
+      "significance": "high",
+      "tags": [
+        "cunard-line",
+        "britannia",
+        "transatlantic-history",
+        "steamship"
+      ],
+      "sources": [
+        "Cunard historical materials — first transatlantic crossing, 4 July 1840"
+      ]
+    },
+    {
       "year": 1952,
       "title": "SS United States makes her first Independence Day crossing",
       "ship": "SS United States",
@@ -1188,6 +1393,26 @@ window.OCEAN_LINER_THIS_DAY = {
     }
   ],
   "07-16": [
+    {
+      "year": 1929,
+      "title": "SS Bremen begins maiden voyage and record crossing",
+      "ship": "SS Bremen",
+      "category": "Maiden Voyage",
+      "summary": "Bremen departed on her maiden voyage from Bremerhaven to New York and captured the Blue Riband on the crossing.",
+      "whyItMatters": "The record restored German prominence in North Atlantic express service and helped define the technological ambitions of the interwar liner era.",
+      "relatedUrl": "/ships/ss-bremen",
+      "significance": "high",
+      "tags": [
+        "north-german-lloyd",
+        "bremen",
+        "maiden-voyage",
+        "blue-riband"
+      ],
+      "sources": [
+        "Norddeutscher Lloyd vessel chronologies",
+        "Bremen service histories"
+      ]
+    },
     {
       "year": 1951,
       "title": "SS United States in final fitting-out era",
