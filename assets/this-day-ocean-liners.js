@@ -291,7 +291,7 @@ window.OCEAN_LINER_THIS_DAY = {
       "ship": "SS Normandie",
       "category": "Maiden Voyage",
       "summary": "Normandie departed Le Havre on her maiden voyage to New York.",
-      "whyItRatters": "Her debut introduced one of the most celebrated combinations of speed, scale, engineering, and Art Deco design in ocean liner history.",
+      "whyItMatters": "Her debut introduced one of the most celebrated combinations of speed, scale, engineering, and Art Deco design in ocean liner history.",
       "relatedUrl": "/ships/ss-normandie",
       "significance": "high",
       "tags": [
@@ -346,7 +346,7 @@ window.OCEAN_LINER_THIS_DAY = {
       "ship": "RMS Lusitania",
       "category": "Launch",
       "summary": "Lusitania was launched at John Brown & Company’s Clydebank shipyard.",
-      "whyItRatters": "The launch marked the arrival of Cunard’s new turbine-powered express generation and a major British response to German Atlantic competition.",
+      "whyItMatters": "The launch marked the arrival of Cunard’s new turbine-powered express generation and a major British response to German Atlantic competition.",
       "relatedUrl": "/ships/rms-lusitania",
       "significance": "high",
       "tags": [
@@ -369,7 +369,7 @@ window.OCEAN_LINER_THIS_DAY = {
       "ship": "RMS Olympic",
       "category": "Maiden Voyage",
       "summary": "RMS Olympic departed Southampton on her maiden voyage to New York.",
-      "whyItRatters": "Olympic’s first voyage introduced the lead ship of White Star Line’s Olympic class into transatlantic service.",
+      "whyItMatters": "Olympic’s first voyage introduced the lead ship of White Star Line’s Olympic class into transatlantic service.",
       "relatedUrl": "/ships/rms-olympic",
       "significance": "high",
       "tags": [
@@ -1603,7 +1603,7 @@ window.OCEAN_LINER_THIS_DAY = {
       "ship": "RMS Queen Mary",
       "category": "Wartime Service",
       "summary": "During World War II, Queen Mary carried large numbers of Allied personnel as a fast troopship.",
-      "whyItRatters": "Her wartime service demonstrated the strategic value of speed and capacity in a former luxury liner.",
+      "whyItMatters": "Her wartime service demonstrated the strategic value of speed and capacity in a former luxury liner.",
       "relatedUrl": "/ships/rms-queen-mary",
       "significance": "medium",
       "tags": [
@@ -1899,7 +1899,7 @@ window.OCEAN_LINER_THIS_DAY = {
       "ship": "RMS Arundel Castle",
       "category": "Launch",
       "summary": "Union-Castle launched Arundel Castle, one of the last great four-funnel liners.",
-      "whyItRatters": "Arundel Castle became a distinctive interwar Cape mail liner and later underwent a major modernization.",
+      "whyItMatters": "Arundel Castle became a distinctive interwar Cape mail liner and later underwent a major modernization.",
       "relatedUrl": "/ships/rms-arundel-castle-1921",
       "significance": "medium",
       "tags": [
@@ -1934,7 +1934,7 @@ window.OCEAN_LINER_THIS_DAY = {
       "ship": "RMS Mauretania",
       "category": "Launch",
       "summary": "Mauretania was launched at Swan, Hunter & Wigham Richardson on the River Tyne.",
-      "whyItRatters": "She became one of the most successful express liners of her era and later held the Blue Riband for more than two decades.",
+      "whyItMatters": "She became one of the most successful express liners of her era and later held the Blue Riband for more than two decades.",
       "relatedUrl": "/ships/rms-mauretania",
       "significance": "high",
       "tags": [
@@ -2199,7 +2199,7 @@ window.OCEAN_LINER_THIS_DAY = {
       "ship": "RMS Mauretania",
       "category": "Maiden Voyage",
       "summary": "Mauretania departed Liverpool on her maiden voyage to New York.",
-      "whyItRatters": "Her entry into service completed Cunard’s new pair of turbine express liners and began a remarkably long record-setting career.",
+      "whyItMatters": "Her entry into service completed Cunard’s new pair of turbine express liners and began a remarkably long record-setting career.",
       "relatedUrl": "/ships/rms-mauretania",
       "significance": "high",
       "tags": [
