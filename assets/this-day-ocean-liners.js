@@ -1,6 +1,7 @@
 // Ocean Liner Curator — This Day in Ocean Liner History
 // Authoritative calendar data for /api/on-this-day.
 // Multiple events on the same date belong in the SAME array; do not duplicate object keys.
+// Exact launch events may be sourced from structured ship-guide facts.
 
 window.OCEAN_LINER_THIS_DAY = {
   "01-09": [
@@ -62,6 +63,42 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "02-10": [
+    {
+      "year": 1914,
+      "title": "SS Reliance launched",
+      "ship": "SS Reliance",
+      "category": "Launch",
+      "summary": "SS Reliance was launched, marking a major construction milestone before fitting-out and entry into service.",
+      "whyItMatters": "The launch marked the point at which SS Reliance entered the water and moved from hull construction toward fitting-out and service.",
+      "relatedUrl": "/ships/ss-reliance",
+      "significance": "medium",
+      "tags": [
+        "launch"
+      ],
+      "sources": [
+        "Ocean Liner Curator ship guide — structured launch fact (February 10, 1914 (as Johann Heinrich Burchard)"
+      ]
+    }
+  ],
+  "02-25": [
+    {
+      "year": 1902,
+      "title": "SS Mayflower launched",
+      "ship": "SS Mayflower",
+      "category": "Launch",
+      "summary": "SS Mayflower was launched, marking a major construction milestone before fitting-out and entry into service.",
+      "whyItMatters": "The launch marked the point at which SS Mayflower entered the water and moved from hull construction toward fitting-out and service.",
+      "relatedUrl": "/ships/ss-mayflower",
+      "significance": "medium",
+      "tags": [
+        "launch"
+      ],
+      "sources": [
+        "Ocean Liner Curator ship guide — structured launch fact (February 25, 1902, as Hanoverian)"
+      ]
+    }
+  ],
   "02-26": [
     {
       "year": 1914,
@@ -107,6 +144,24 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "QM2 references"
+      ]
+    }
+  ],
+  "04-07": [
+    {
+      "year": 1898,
+      "title": "SS Romanic launched",
+      "ship": "SS Romanic",
+      "category": "Launch",
+      "summary": "SS Romanic was launched, marking a major construction milestone before fitting-out and entry into service.",
+      "whyItMatters": "The launch marked the point at which SS Romanic entered the water and moved from hull construction toward fitting-out and service.",
+      "relatedUrl": "/ships/ss-romanic",
+      "significance": "medium",
+      "tags": [
+        "launch"
+      ],
+      "sources": [
+        "Ocean Liner Curator ship guide — structured launch fact (7 April 1898 (as New England)"
       ]
     }
   ],
@@ -259,6 +314,25 @@ window.OCEAN_LINER_THIS_DAY = {
       "sources": [
         "Compagnie Générale Transatlantique histories",
         "French liner histories"
+      ]
+    }
+  ],
+  "05-23": [
+    {
+      "year": 1912,
+      "title": "RMS Berengaria launched",
+      "ship": "RMS Berengaria",
+      "category": "Launch",
+      "summary": "RMS Berengaria was launched, marking a major construction milestone before fitting-out and entry into service.",
+      "whyItMatters": "The launch marked the point at which RMS Berengaria entered the water and moved from hull construction toward fitting-out and service.",
+      "relatedUrl": "/ships/rms-berengaria",
+      "significance": "medium",
+      "tags": [
+        "launch",
+        "cunard-line-as-rms-berengaria"
+      ],
+      "sources": [
+        "Ocean Liner Curator ship guide — structured launch fact (May 23, 1912 (as Imperator)"
       ]
     }
   ],
@@ -514,6 +588,23 @@ window.OCEAN_LINER_THIS_DAY = {
         "White Star Line histories",
         "North Atlantic Seaway — N. R. P. Bonsor",
         "Royal Navy auxiliary cruiser studies"
+      ]
+    },
+    {
+      "year": 1914,
+      "title": "RMS Majestic launched",
+      "ship": "RMS Majestic",
+      "category": "Launch",
+      "summary": "RMS Majestic was launched, marking a major construction milestone before fitting-out and entry into service.",
+      "whyItMatters": "The launch marked the point at which RMS Majestic entered the water and moved from hull construction toward fitting-out and service.",
+      "relatedUrl": "/ships/rms-majestic",
+      "significance": "medium",
+      "tags": [
+        "launch",
+        "white-star-line-as-rms-majestic"
+      ],
+      "sources": [
+        "Ocean Liner Curator ship guide — structured launch fact (June 20, 1914 (as Bismarck)"
       ]
     }
   ],
@@ -2044,6 +2135,24 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "10-05": [
+    {
+      "year": 1899,
+      "title": "SS Belgia launched",
+      "ship": "SS Belgia",
+      "category": "Launch",
+      "summary": "SS Belgia was launched, marking a major construction milestone before fitting-out and entry into service.",
+      "whyItMatters": "The launch marked the point at which SS Belgia entered the water and moved from hull construction toward fitting-out and service.",
+      "relatedUrl": "/ships/ss-belgia",
+      "significance": "medium",
+      "tags": [
+        "launch"
+      ],
+      "sources": [
+        "Ocean Liner Curator ship guide — structured launch fact (5 October 1899, as Michigan)"
+      ]
+    }
+  ],
   "10-20": [
     {
       "year": 1910,
@@ -2256,6 +2365,22 @@ window.OCEAN_LINER_THIS_DAY = {
     }
   ],
   "12-17": [
+    {
+      "year": 1913,
+      "title": "RMS Homeric (1913) launched",
+      "ship": "RMS Homeric (1913)",
+      "category": "Launch",
+      "summary": "RMS Homeric (1913) was launched, marking a major construction milestone before fitting-out and entry into service.",
+      "whyItMatters": "The launch marked the point at which RMS Homeric (1913) entered the water and moved from hull construction toward fitting-out and service.",
+      "relatedUrl": "/ships/rms-homeric",
+      "significance": "medium",
+      "tags": [
+        "launch"
+      ],
+      "sources": [
+        "Ocean Liner Curator ship guide — structured launch fact (17 December 1913 (as Columbus)"
+      ]
+    },
     {
       "year": 1917,
       "title": "SS Vaterland continues service as USS Leviathan",
