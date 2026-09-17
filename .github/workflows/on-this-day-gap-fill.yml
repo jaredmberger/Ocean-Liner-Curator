@@ -1,0 +1,63 @@
+name: One-time On This Day gap fill
+
+on:
+  push:
+    paths:
+      - '.github/workflows/on-this-day-gap-fill.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  gap-fill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add vetted chronology events
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          const dataPath = 'assets/this-day-ocean-liners-additions.js';
+          let source = fs.readFileSync(dataPath, 'utf8');
+
+          const entries = [
+            ['01-23', '  "01-23": [{"year":1909,"title":"RMS Republic collides with SS Florida off Nantucket","ship":"RMS Republic","category":"Collision / Rescue","summary":"In dense fog off Nantucket, the White Star liner Republic collided with the Italian liner Florida and suffered severe damage.","whyItMatters":"Republic’s Marconi operator Jack Binns transmitted a CQD distress call that brought rescuing ships to the scene, making the accident a landmark demonstration of wireless telegraphy in maritime rescue.","relatedUrl":"/ships/rms-republic","significance":"high","tags":["republic","white-star-line","collision","wireless","cqd","rescue"],"sources":["Library of Congress — Guglielmo Marconi: Topics in Chronicling America","Royal Museums Greenwich — Lifesaving award, S.S. Republic"]}]'],
+            ['04-01', '  "04-01": [{"year":1873,"title":"White Star liner SS Atlantic is wrecked off Nova Scotia","ship":"SS Atlantic","category":"Disaster","summary":"Atlantic struck rocks near Mars Head, Nova Scotia, while diverting toward Halifax and sank with catastrophic loss of life.","whyItMatters":"The wreck was the world’s deadliest known merchant-ship disaster at the time and became an early defining tragedy in White Star Line history.","relatedUrl":"/ships/ss-atlantic","significance":"high","tags":["atlantic","white-star-line","shipwreck","nova-scotia"],"sources":["Nova Scotia Archives — Where the Land Meets the Sea: Shipwrecks of Nova Scotia","The Mariners’ Museum — The Wreck of the Atlantic"]}]'],
+            ['10-28', '  "10-28": [{"year":1940,"title":"RMS Empress of Britain is sunk during wartime service","ship":"RMS Empress of Britain","category":"Wartime Loss","summary":"After being damaged by German aircraft two days earlier, the Canadian Pacific liner Empress of Britain was torpedoed by U-32 while under tow west of Ireland and sank.","whyItMatters":"At more than 42,000 gross tons, she was the largest merchant ship sunk by a U-boat during the Second World War and one of the largest liners lost in wartime.","relatedUrl":"/ships/rms-empress-of-britain","significance":"high","tags":["empress-of-britain","canadian-pacific","world-war-ii","u-boat","wartime-loss"],"sources":["Uboat.net — Empress of Britain vessel record"]}]'],
+            ['11-12', '  "11-12": [{"year":1928,"title":"SS Vestris sinks off the American coast","ship":"SS Vestris","category":"Disaster","summary":"The Lamport and Holt passenger liner Vestris foundered after developing a severe list in heavy weather while bound from New York toward South America.","whyItMatters":"The loss of 111 people and failures surrounding evacuation and lifesaving arrangements made the disaster an important episode in interwar passenger-ship safety history.","relatedUrl":"","significance":"high","tags":["vestris","lamport-and-holt","shipwreck","maritime-safety"],"sources":["Naval History and Heritage Command — Davis II (Destroyer No. 65)","Library of Congress — Vestris disaster photographs"]}]']
+          ];
+
+          const missing = entries.filter(([key]) => !source.includes(`"${key}":`));
+          if (missing.length) {
+            const marker = '\n};\n\n  Object.entries(additions)';
+            const idx = source.indexOf(marker);
+            if (idx === -1) throw new Error('Could not locate additions object terminator');
+
+            let head = source.slice(0, idx).replace(/\s+$/, '');
+            if (!head.endsWith(',')) head += ',';
+            const block = missing.map(([, entry]) => entry).join(',\n');
+            source = head + '\n' + block + source.slice(idx);
+            fs.writeFileSync(dataPath, source);
+          }
+
+          const pagePath = 'this-day-in-ocean-liner-history.html';
+          let page = fs.readFileSync(pagePath, 'utf8');
+          page = page.replace('/assets/this-day-ocean-liners-additions.js?v=5', '/assets/this-day-ocean-liners-additions.js?v=6');
+          fs.writeFileSync(pagePath, page);
+          NODE
+
+      - name: Commit vetted additions
+        run: |
+          if git diff --quiet; then
+            echo 'No changes needed.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/this-day-ocean-liners-additions.js this-day-in-ocean-liner-history.html
+          git commit -m 'Add vetted On This Day chronology events [skip ci]'
+          git push
