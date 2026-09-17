@@ -18,7 +18,7 @@ function assert(condition, message) {
 // Guide HTML is authoritative. This script intentionally performs no writes.
 // It verifies the structured facts that were formerly injected during builds.
 const expectedFacts = [
-  ['ships/rms-lucania.html', 'Builder', 'Fairfield Shipbuilding & Engineering Co., Glasgow'],
+  ['ships/rms-lucania.html', 'Builder', 'Fairfield Shipbuilding & Engineering Co., Govan, Scotland'],
   ['ships/ss-macedonia.html', 'Builder', 'Sir James Laing & Sons, Sunderland'],
   ['ships/ss-adriatic-1872.html', 'Launched', '17 October 1871'],
   ['ships/ss-nieuw-amsterdam-1906.html', 'Launched', '28 September 1905'],
