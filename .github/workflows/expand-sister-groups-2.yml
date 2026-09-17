@@ -1,0 +1,74 @@
+name: Expand curated sister/class relationships II
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/expand-sister-groups-2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add curated groups and cache bust loader
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          const phasePath = 'assets/related-liners-phase2.js';
+          let phase = fs.readFileSync(phasePath, 'utf8');
+
+          const marker = `    group(\n      "Sister Ships",\n      "Bremen and Europa were Norddeutscher Lloyd sister express liners conceived as a paired interwar flagship generation; they were built by different yards and were closely related rather than literal duplicates."`;
+          if (!phase.includes(marker)) throw new Error('Could not locate insertion marker in related-liners-phase2.js');
+
+          const additions = `    group(\n      "Sister Ships",\n      "Lusitania and Mauretania were Cunard sister express liners, built as the company’s turbine-powered answer to German competition on the North Atlantic and among the defining liners of the prewar express era.",\n      [\n        ["rms-lusitania", "/ships/rms-lusitania", "RMS <em>Lusitania</em>", "sister express liner"],\n        ["rms-mauretania", "/ships/rms-mauretania", "RMS <em>Mauretania</em>", "sister express liner"]\n      ]\n    ),\n    group(\n      "Imperator-class Sisters",\n      "Imperator, Vaterland, and Bismarck formed Hamburg America Line’s three-ship Imperator class. After World War I, the ships continued under new identities as Berengaria, Leviathan, and Majestic respectively.",\n      [\n        ["ss-imperator", "/ships/ss-imperator", "SS <em>Imperator</em> / RMS <em>Berengaria</em>", "Imperator-class sister"],\n        ["ss-leviathan", "/ships/ss-leviathan", "SS <em>Vaterland</em> / SS <em>Leviathan</em>", "Imperator-class sister"],\n        ["rms-majestic", "/ships/rms-majestic", "SS <em>Bismarck</em> / RMS <em>Majestic</em>", "Imperator-class sister"]\n      ]\n    ),\n    group(\n      "Saxonia-class Sisters",\n      "Saxonia, Ivernia, Carinthia, and Sylvania formed Cunard’s four-ship postwar Saxonia class, built for the company’s Liverpool–Montreal service and later adapted as passenger markets changed.",\n      [\n        ["rms-saxonia", "/ships/rms-saxonia", "RMS <em>Saxonia</em>", "Saxonia-class sister"],\n        ["rms-ivernia", "/ships/rms-ivernia", "RMS <em>Ivernia</em>", "Saxonia-class sister"],\n        ["rms-carinthia", "/ships/rms-carinthia", "RMS <em>Carinthia</em>", "Saxonia-class sister"],\n        ["rms-sylvania", "/ships/rms-sylvania", "RMS <em>Sylvania</em>", "Saxonia-class sister"]\n      ]\n    ),\n`;
+
+          if (!phase.includes('"Imperator-class Sisters"')) {
+            phase = phase.replace(marker, additions + marker);
+            fs.writeFileSync(phasePath, phase);
+          }
+
+          const navPath = 'assets/nav.js';
+          let nav = fs.readFileSync(navPath, 'utf8');
+          const oldLoader = '/assets/related-liners-phase2.js?v=20260917a';
+          const newLoader = '/assets/related-liners-phase2.js?v=20260917b';
+          if (!nav.includes(oldLoader) && !nav.includes(newLoader)) throw new Error('Could not locate phase-two loader in nav.js');
+          nav = nav.replace(oldLoader, newLoader);
+          fs.writeFileSync(navPath, nav);
+          NODE
+
+      - name: Validate additions
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const phase = fs.readFileSync('assets/related-liners-phase2.js', 'utf8');
+          const nav = fs.readFileSync('assets/nav.js', 'utf8');
+          for (const text of ['Lusitania and Mauretania', 'Imperator-class Sisters', 'Saxonia-class Sisters']) {
+            if (!phase.includes(text)) throw new Error(`Missing relationship group: ${text}`);
+          }
+          for (const path of [
+            'ships/rms-lusitania.html','ships/rms-mauretania.html',
+            'ships/ss-imperator.html','ships/ss-leviathan.html','ships/rms-majestic.html',
+            'ships/rms-saxonia.html','ships/rms-ivernia.html','ships/rms-carinthia.html','ships/rms-sylvania.html'
+          ]) {
+            if (!fs.existsSync(path)) throw new Error(`Missing guide: ${path}`);
+          }
+          if (!nav.includes('/assets/related-liners-phase2.js?v=20260917b')) throw new Error('Loader cache bust missing');
+          console.log('Validated three new curated relationship groups across nine ship guides.');
+          NODE
+
+      - name: Remove one-time workflow and commit
+        run: |
+          git rm -f .github/workflows/expand-sister-groups-2.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/related-liners-phase2.js assets/nav.js
+          git commit -m 'Expand curated sister ship relationships II [skip ci]'
+          git push
