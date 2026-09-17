@@ -1,0 +1,149 @@
+name: One-time ship guide quality audit
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ship-guide-quality-audit.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Audit ship-guide depth and completeness
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+
+          const dir = 'ships';
+          const files = fs.readdirSync(dir)
+            .filter(f => f.endsWith('.html') && f !== 'ships.html')
+            .sort();
+
+          const decode = s => s
+            .replace(/&nbsp;/gi,' ')
+            .replace(/&amp;/gi,'&')
+            .replace(/&quot;/gi,'"')
+            .replace(/&#39;|&apos;/gi,"'")
+            .replace(/&lt;/gi,'<')
+            .replace(/&gt;/gi,'>')
+            .replace(/&#\d+;/g,' ');
+
+          function visibleText(html) {
+            let s = html
+              .replace(/<head[\s\S]*?<\/head>/gi,' ')
+              .replace(/<script[\s\S]*?<\/script>/gi,' ')
+              .replace(/<style[\s\S]*?<\/style>/gi,' ')
+              .replace(/<!--([\s\S]*?)-->/g,' ')
+              .replace(/<svg[\s\S]*?<\/svg>/gi,' ')
+              .replace(/<[^>]+>/g,' ');
+            return decode(s).replace(/\s+/g,' ').trim();
+          }
+
+          function count(re, s) { return (s.match(re) || []).length; }
+          function cap(n, max) { return Math.max(0, Math.min(max, n)); }
+
+          const rows = [];
+          for (const file of files) {
+            const html = fs.readFileSync(path.join(dir,file),'utf8');
+            const text = visibleText(html);
+            const words = text ? text.split(/\s+/).filter(Boolean).length : 0;
+            const title = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || file.replace(/\.html$/,''))
+              .replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
+
+            const h2 = count(/<h2\b/gi, html);
+            const paragraphs = count(/<p\b/gi, html);
+            const factRows = count(/class=["'][^"']*\bfact-row\b/gi, html);
+            const bodyImgs = count(/<img\b/gi, html);
+            const shipLinks = count(/href=["']\/ships\/(?!ships(?:["'/?#]))[^"']+/gi, html);
+
+            const sourceSection = /<h2[^>]*>\s*Sources?\s*<\/h2>/i.test(html);
+            let sourceLinks = 0;
+            const sourceIdx = html.search(/<h2[^>]*>\s*Sources?\s*<\/h2>/i);
+            if (sourceIdx >= 0) {
+              const tail = html.slice(sourceIdx);
+              const nextH2 = tail.slice(1).search(/<h2\b/i);
+              const section = nextH2 >= 0 ? tail.slice(0,nextH2+1) : tail;
+              sourceLinks = count(/<a\b[^>]*href=/gi, section);
+            }
+            if (!sourceLinks) {
+              const sourcesLists = [...html.matchAll(/<ul[^>]*class=["'][^"']*\bsources\b[^"']*["'][^>]*>([\s\S]*?)<\/ul>/gi)];
+              sourceLinks = Math.max(0, ...sourcesLists.map(m => count(/<a\b[^>]*href=/gi,m[1])));
+            }
+
+            const hasOverview = /<h2[^>]*>[^<]*Overview[^<]*<\/h2>/i.test(html);
+            const hasWhy = /<h2[^>]*>[^<]*(Why .* Matters|Significance|Legacy|Interpret|Historical Context)[^<]*<\/h2>/i.test(html);
+            const hasKeyFacts = /<h2[^>]*>[^<]*Key Facts?[^<]*<\/h2>/i.test(html) || factRows >= 4;
+            const hasBuilder = /class=["'][^"']*fact-label[^"']*["'][^>]*>\s*Builder\b/i.test(html) || />\s*Builder\s*</i.test(html);
+            const hasLaunch = /class=["'][^"']*fact-label[^"']*["'][^>]*>\s*Launch(ed)?\b/i.test(html) || />\s*Launch(ed)?\s*</i.test(html);
+            const hasOperator = />\s*(Operator|Line|Owner)\b[^<]*</i.test(html);
+            const hasMaiden = /Maiden Voyage/i.test(html);
+
+            let score = 0;
+            score += cap(words / 40, 30);                 // 1200 words = full 30
+            score += cap(sourceLinks * 4, 20);            // 5 sources = full 20
+            score += cap(factRows * 1.25, 15);            // 12 facts = full 15
+            score += cap(h2 * 1.4, 10);                   // ~7 sections = full 10
+            score += cap(bodyImgs * 2.5, 10);             // 4 images = full 10
+            score += cap(shipLinks * 1.5, 6);             // 4 internal ship links = full 6
+            score += hasOverview ? 2 : 0;
+            score += hasWhy ? 3 : 0;
+            score += hasKeyFacts ? 2 : 0;
+            score += [hasBuilder,hasLaunch,hasOperator,hasMaiden].filter(Boolean).length * 0.5;
+            score += sourceSection ? 2 : 0;
+            score = Math.round(cap(score,100));
+
+            const flags = [];
+            if (words < 450) flags.push('thin narrative');
+            else if (words < 750) flags.push('moderate narrative depth');
+            if (sourceLinks < 2) flags.push('very light sourcing');
+            else if (sourceLinks < 4) flags.push('light sourcing');
+            if (factRows < 6) flags.push('sparse key facts');
+            if (bodyImgs < 2) flags.push('sparse imagery');
+            if (h2 < 4) flags.push('few substantive sections');
+            if (!hasWhy) flags.push('no explicit significance/interpretive section');
+            if (shipLinks < 2) flags.push('low internal connectivity');
+
+            rows.push({
+              file, title, score, words, sources:sourceLinks, facts:factRows,
+              images:bodyImgs, sections:h2, shipLinks, hasWhy, flags
+            });
+          }
+
+          rows.sort((a,b) => a.score-b.score || a.words-b.words || a.file.localeCompare(b.file));
+          const bands = {
+            priority: rows.filter(r=>r.score<50).length,
+            develop: rows.filter(r=>r.score>=50 && r.score<65).length,
+            solid: rows.filter(r=>r.score>=65 && r.score<80).length,
+            strong: rows.filter(r=>r.score>=80).length
+          };
+          console.log('AUDIT_SUMMARY ' + JSON.stringify({guides:rows.length,bands}));
+          console.log('LOWEST_40_BEGIN');
+          rows.slice(0,40).forEach((r,i)=>console.log(JSON.stringify({rank:i+1,...r})));
+          console.log('LOWEST_40_END');
+
+          console.log('SOURCE_LIGHT_BEGIN');
+          rows.filter(r=>r.sources<3).sort((a,b)=>a.sources-b.sources || a.score-b.score).slice(0,30)
+            .forEach(r=>console.log(JSON.stringify(r)));
+          console.log('SOURCE_LIGHT_END');
+
+          console.log('THIN_NARRATIVE_BEGIN');
+          rows.filter(r=>r.words<600).sort((a,b)=>a.words-b.words).slice(0,30)
+            .forEach(r=>console.log(JSON.stringify(r)));
+          console.log('THIN_NARRATIVE_END');
+          NODE
+
+      - name: Remove one-time workflow
+        run: |
+          git rm -f .github/workflows/ship-guide-quality-audit.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Remove one-time ship guide quality audit [skip ci]'
+          git push
