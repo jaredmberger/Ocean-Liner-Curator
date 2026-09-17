@@ -377,6 +377,27 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "04-18": [
+    {
+      "year": 1912,
+      "title": "RMS Carpathia arrives in New York with Titanic survivors",
+      "ship": "RMS Carpathia",
+      "category": "Rescue",
+      "summary": "Carpathia reached New York on the evening of April 18 carrying the survivors rescued from Titanic’s lifeboats.",
+      "whyItMatters": "The arrival completed one of the most famous maritime rescue operations in history and brought the disaster’s survivors to safety.",
+      "relatedUrl": "/ships/rms-carpathia",
+      "significance": "high",
+      "tags": [
+        "carpathia",
+        "titanic",
+        "rescue",
+        "cunard"
+      ],
+      "sources": [
+        "Encyclopedia Titanica — Carpathia arrives in New York, 18 April 1912"
+      ]
+    }
+  ],
   "04-19": [
     {
       "year": 1923,
@@ -583,6 +604,24 @@ window.OCEAN_LINER_THIS_DAY = {
   ],
   "05-29": [
     {
+      "year": 1914,
+      "title": "RMS Empress of Ireland sinks in the St. Lawrence",
+      "ship": "RMS Empress of Ireland",
+      "category": "Disaster",
+      "summary": "Empress of Ireland sank after colliding with the Norwegian collier Storstad in fog near Rimouski, Quebec.",
+      "whyItMatters": "The loss of more than one thousand people made the sinking Canada’s deadliest peacetime maritime disaster.",
+      "relatedUrl": "/ships/rms-empress-of-ireland",
+      "significance": "high",
+      "tags": [
+        "empress-of-ireland",
+        "canadian-pacific",
+        "disaster"
+      ],
+      "sources": [
+        "Canadian Museum of History — Empress of Ireland collection and sinking records"
+      ]
+    },
+    {
       "year": 1935,
       "title": "SS Normandie begins maiden voyage",
       "ship": "SS Normandie",
@@ -605,6 +644,24 @@ window.OCEAN_LINER_THIS_DAY = {
     }
   ],
   "05-30": [
+    {
+      "year": 1914,
+      "title": "RMS Aquitania begins maiden voyage",
+      "ship": "RMS Aquitania",
+      "category": "Maiden Voyage",
+      "summary": "Aquitania sailed from Liverpool on her maiden voyage to New York for Cunard.",
+      "whyItMatters": "The voyage began a remarkably long career that would span both world wars and more than three decades of passenger service.",
+      "relatedUrl": "/ships/rms-aquitania",
+      "significance": "high",
+      "tags": [
+        "aquitania",
+        "cunard",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "Royal Museums Greenwich — HMHS Aquitania history"
+      ]
+    },
     {
       "year": 1914,
       "title": "RMS Aquitania departs on maiden voyage",
@@ -1730,6 +1787,25 @@ window.OCEAN_LINER_THIS_DAY = {
         "Andrea Doria collision histories",
         "Contemporary press coverage"
       ]
+    },
+    {
+      "year": 1956,
+      "title": "SS Andrea Doria collides with MS Stockholm",
+      "ship": "SS Andrea Doria",
+      "category": "Disaster",
+      "summary": "Andrea Doria and Stockholm collided in heavy fog south of Nantucket late on July 25.",
+      "whyItMatters": "The collision led to one of the largest peacetime maritime rescue operations of the twentieth century and became a major case study in radar-era navigation.",
+      "relatedUrl": "/ships/ss-andrea-doria",
+      "significance": "high",
+      "tags": [
+        "andrea-doria",
+        "stockholm",
+        "collision",
+        "rescue"
+      ],
+      "sources": [
+        "HISTORY — Ocean liners collide off Nantucket"
+      ]
     }
   ],
   "07-26": [
@@ -2468,6 +2544,24 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     },
     {
+      "year": 1937,
+      "title": "RMS Olympic leaves Jarrow for final demolition",
+      "ship": "RMS Olympic",
+      "category": "Final Disposition",
+      "summary": "After two years of partial dismantling at Jarrow, Olympic was towed to Inverkeithing for final demolition.",
+      "whyItMatters": "The move marked the final stage in the dismantling of the first Olympic-class liner and one of White Star Line’s longest-serving ships.",
+      "relatedUrl": "/ships/rms-olympic",
+      "significance": "medium",
+      "tags": [
+        "olympic",
+        "white-star-line",
+        "scrapping"
+      ],
+      "sources": [
+        "Royal Museums Greenwich — Olympic partially broken-up at Jarrow"
+      ]
+    },
+    {
       "year": 1967,
       "title": "Queen Elizabeth 2 launched",
       "ship": "Queen Elizabeth 2",
@@ -2566,6 +2660,27 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "10-02": [
+    {
+      "year": 1942,
+      "title": "RMS Queen Mary collides with HMS Curacoa",
+      "ship": "RMS Queen Mary",
+      "category": "Wartime Service",
+      "summary": "While carrying more than ten thousand American troops, Queen Mary collided with the escort cruiser HMS Curacoa off Ireland and cut the smaller ship in two.",
+      "whyItMatters": "The wartime collision was one of the gravest incidents in Queen Mary’s troopship career and resulted in heavy loss of life aboard Curacoa.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "queen-mary",
+        "curacoa",
+        "world-war-ii",
+        "collision"
+      ],
+      "sources": [
+        "Royal Museums Greenwich — HMS Curacoa collection record"
+      ]
+    }
+  ],
   "10-05": [
     {
       "year": 1899,
@@ -2581,6 +2696,26 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Ocean Liner Curator ship guide — structured launch fact (5 October 1899, as Michigan)"
+      ]
+    }
+  ],
+  "10-13": [
+    {
+      "year": 1935,
+      "title": "RMS Olympic arrives at Jarrow for scrapping",
+      "ship": "RMS Olympic",
+      "category": "Final Disposition",
+      "summary": "Olympic arrived at Jarrow to begin dismantling after her withdrawal from service.",
+      "whyItMatters": "Her arrival marked the practical end of a career that had spanned nearly a quarter century, including wartime troop service and decades on the North Atlantic.",
+      "relatedUrl": "/ships/rms-olympic",
+      "significance": "medium",
+      "tags": [
+        "olympic",
+        "white-star-line",
+        "scrapping"
+      ],
+      "sources": [
+        "Royal Museums Greenwich — RMS Titanic fact sheet, Olympic chronology"
       ]
     }
   ],
@@ -2794,6 +2929,25 @@ window.OCEAN_LINER_THIS_DAY = {
     }
   ],
   "11-21": [
+    {
+      "year": 1916,
+      "title": "HMHS Britannic sinks after striking a mine",
+      "ship": "HMHS Britannic",
+      "category": "Disaster",
+      "summary": "Britannic struck a mine in the Kea Channel while serving as a hospital ship and sank less than an hour later.",
+      "whyItMatters": "The loss ended the career of the third Olympic-class liner before she could ever enter the passenger service for which she had been built.",
+      "relatedUrl": "/ships/rms-britannic",
+      "significance": "high",
+      "tags": [
+        "britannic",
+        "white-star-line",
+        "world-war-i",
+        "hospital-ship"
+      ],
+      "sources": [
+        "Royal Museums Greenwich — RMS Titanic fact sheet"
+      ]
+    },
     {
       "year": 1916,
       "title": "HMHS Britannic sinks in the Aegean",
