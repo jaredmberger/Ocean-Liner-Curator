@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-18T09:24:43.206Z",
+  "generatedAt": "2026-09-18T09:39:39.530Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 312,
@@ -10,7 +10,7 @@
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 8,
-    "guidesMissingLaunch": 5,
+    "guidesMissingLaunch": 4,
     "builderVariantGroups": 30,
     "suspiciousLaunchDatesWithoutYear": 1
   },
@@ -31,10 +31,6 @@
         "path": "ships/ss-kroonland.html"
       },
       {
-        "ship": "SS Minnetonka (1902)",
-        "path": "ships/ss-minnetonka.html"
-      },
-      {
         "ship": "SS New York (1927)",
         "path": "ships/ss-new-york.html"
       }
@@ -45,7 +41,7 @@
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
       "shipCount": 72,
-      "firstLaunchYear": null,
+      "firstLaunchYear": 1870,
       "lastLaunchYear": 1960,
       "locations": [
         "Belfast",
@@ -82,7 +78,7 @@
         "Cunard Line (operated 1969–2008)",
         "Cunard White Star / Cunard Line",
         "Cunard-White Star Line; later Cunard Line",
-        "Orient Steam Navigation Company"
+        "Orient Steam Navigation Company (Orient Line)"
       ]
     },
     {
@@ -141,11 +137,10 @@
       "operators": [
         "Furness Bermuda Line",
         "Furness, Withy & Co. / Furness Bermuda Line",
-        "Orient Steam Navigation Company",
         "Orient Steam Navigation Company (Orient Line)",
         "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
         "P&O Steam Navigation Company; later P&O-Orient Lines",
-        "Peninsular and Oriental Steam Navigation Company"
+        "Peninsular and Oriental Steam Navigation Company (P&O)"
       ]
     },
     {
@@ -4585,7 +4580,7 @@
       "name": "SS Minnetonka (1902)",
       "path": "ships/ss-minnetonka.html",
       "url": "/ships/ss-minnetonka",
-      "launchYear": null,
+      "launchYear": "1901",
       "builderRaw": "Harland & Wolff, Belfast",
       "builders": [
         {
