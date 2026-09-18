@@ -55,480 +55,7 @@
   </script>
 
   <!-- Fonts -->
-  <style type="text/css">
-    @font-face {
-      font-family: Spectral;
-      font-style: normal;
-      font-weight: 400;
-      src: url(/cf-fonts/s/spectral/5.0.11/latin/400/normal.woff2);
-      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: Spectral;
-      font-style: normal;
-      font-weight: 500;
-      src: url(/cf-fonts/s/spectral/5.0.11/latin/500/normal.woff2);
-      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: Spectral;
-      font-style: normal;
-      font-weight: 600;
-      src: url(/cf-fonts/s/spectral/5.0.11/latin/600/normal.woff2);
-      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: Spectral;
-      font-style: normal;
-      font-weight: 700;
-      src: url(/cf-fonts/s/spectral/5.0.11/latin/700/normal.woff2);
-      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-      font-display: swap;
-    }
-
-    html {
-      background: #0a1110;
-      text-rendering: optimizeLegibility;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-
-    :root {
-      --bg: #0a1110;
-      --panel: rgba(15, 27, 25, 0.78);
-      --text: #e6dfcf;
-      --muted: #b6ae9c;
-      --accent: #bfa46a;
-      --border: rgba(191, 164, 106, 0.28);
-      --shadow: rgba(0, 0, 0, 0.6);
-      --link: rgba(209, 187, 134, 0.95);
-      --font-sans: "Spectral", Georgia, "Times New Roman", serif;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 0 0 2.25rem;
-      font-family: var(--font-sans);
-      font-size: 17px;
-      line-height: 1.55;
-      letter-spacing: -0.01em;
-      color: var(--text);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      background:
-        radial-gradient(900px 600px at 50% 18%, rgba(24, 40, 38, 0.95) 0%, rgba(10, 17, 16, 1) 62%),
-        radial-gradient(1200px 900px at 50% 110%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 60%);
-    }
-
-    h1,
-    h2,
-    h3 {
-      letter-spacing: -0.02em;
-    }
-
-    .container {
-      width: min(780px, calc(100% - 1.5rem));
-      margin: 1.1rem auto 0;
-      padding: 3.5rem 2.75rem;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      text-align: center;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background-color: rgba(15, 27, 25, 0.78);
-      background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
-      background-size: 92px 92px;
-      background-position: center 38%;
-      background-repeat: repeat;
-      box-shadow:
-        0 26px 70px rgba(0, 0, 0, 0.6),
-        0 0 0 1px rgba(191, 164, 106, 0.08),
-        0 0 80px rgba(191, 164, 106, 0.06);
-    }
-
-    .container::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      background:
-        radial-gradient(800px 500px at 50% 18%, rgba(255, 255, 255, 0.07) 0%, rgba(0, 0, 0, 0) 55%),
-        radial-gradient(900px 700px at 50% 120%, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 55%);
-    }
-
-    .container > * {
-      position: relative;
-      z-index: 1;
-    }
-
-    .logo-mount {
-      width: min(680px, 100%);
-      height: 260px;
-      margin: 0 auto 1.05rem;
-      padding: 10px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(191, 164, 106, 0.55);
-      border-radius: 16px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.1));
-      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.42);
-    }
-
-    .logo-mount::after {
-      content: "";
-      position: absolute;
-      inset: 7px;
-      border: 1px solid rgba(191, 164, 106, 0.22);
-      border-radius: 12px;
-      pointer-events: none;
-    }
-
-    .logo {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 12px;
-      background: rgba(230, 223, 207, 0.06);
-    }
-
-    h1 {
-      margin: 0 0 0.35rem;
-      font-family: "Libre Baskerville", Georgia, serif;
-      font-variant: small-caps;
-      letter-spacing: 0.09em;
-    }
-
-    .subtitle {
-      max-width: 64ch;
-      margin: 0 auto 1.1rem;
-      color: rgba(230, 223, 207, 0.72);
-      font-size: 0.98rem;
-      line-height: 1.6;
-    }
-
-    .rule {
-      width: 140px;
-      height: 2px;
-      margin: 1.1rem auto 1.6rem;
-      opacity: 0.85;
-      background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    }
-
-    .guide {
-      max-width: 680px;
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    .guide h2 {
-      margin: 2.1rem 0 0.85rem;
-      font-size: 1.18rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-    }
-
-    .guide p {
-      margin: 0 0 1.15rem;
-      font-size: 1.02rem;
-      line-height: 1.72;
-      color: rgba(230, 223, 207, 0.88);
-    }
-
-    .note {
-      margin: 0.15rem 0 0;
-      font-size: 0.96rem;
-      color: var(--muted);
-    }
-
-    .facts {
-      margin-top: 0.25rem;
-      overflow: hidden;
-      border: 1px solid rgba(191, 164, 106, 0.22);
-      border-radius: 14px;
-      background: rgba(10, 17, 16, 0.18);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
-    }
-
-    .fact-row {
-      display: grid;
-      grid-template-columns: 1fr 1.55fr;
-      gap: 1rem;
-      padding: 0.8rem 1rem;
-      border-top: 1px solid rgba(191, 164, 106, 0.14);
-    }
-
-    .fact-row:first-child {
-      border-top: none;
-    }
-
-    .fact-label {
-      color: rgba(230, 223, 207, 0.7);
-      font-size: 0.93rem;
-    }
-
-    .fact-value {
-      color: rgba(230, 223, 207, 0.9);
-      font-size: 0.98rem;
-    }
-
-    .mini-badge {
-      display: inline-block;
-      margin-top: 0.85rem;
-      padding: 0.32rem 0.55rem;
-      border: 1px solid rgba(191, 164, 106, 0.28);
-      border-radius: 10px;
-      color: rgba(230, 223, 207, 0.78);
-      font-size: 0.74rem;
-      letter-spacing: 0.05em;
-      opacity: 0.92;
-    }
-
-    .sources {
-      margin: 0;
-      padding-left: 1.05rem;
-      padding-bottom: 2rem;
-      color: rgba(230, 223, 207, 0.86);
-    }
-
-    .sources li {
-      margin: 0.35rem 0;
-    }
-
-    .sources a,
-    .about-link a {
-      color: rgba(209, 187, 134, 0.9);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(191, 164, 106, 0.35);
-    }
-
-    .sources a:hover,
-    .about-link a:hover {
-      border-bottom-color: rgba(191, 164, 106, 0.65);
-    }
-
-    .ask-gpt-wrap {
-      margin-top: 0.5rem;
-      text-align: center;
-    }
-
-    .ask-gpt {
-      background: transparent;
-      border: 1px solid rgba(191, 164, 106, 0.6);
-      color: #bfa46a;
-      padding: 0.7rem 1.2rem;
-      font-family: "Libre Baskerville", Georgia, serif;
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .ask-gpt:hover {
-      background: rgba(191, 164, 106, 0.08);
-      border-color: #bfa46a;
-    }
-
-    .about-link {
-      margin-top: 2.4rem;
-      font-size: 0.9rem;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .secondary-nav {
-      display: flex;
-      justify-content: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-
-    .secondary-nav a {
-      display: inline-block;
-      padding: 0.38rem 0.7rem;
-      font-size: 0.85rem;
-      color: var(--link);
-      text-decoration: none;
-      border: 1px solid rgba(191, 164, 106, 0.35);
-      border-radius: 9px;
-      background: transparent;
-    }
-
-    .secondary-nav a:hover {
-      border-color: rgba(191, 164, 106, 0.65);
-    }
-
-    footer {
-      max-width: 74ch;
-      margin: 2.8rem auto 0;
-      text-align: center;
-      font-size: 0.82rem;
-      line-height: 1.6;
-      color: rgba(230, 223, 207, 0.72);
-    }
-
-    .flags-footer {
-      display: block;
-      width: 108px;
-      height: auto;
-      margin: 1.1rem auto -0.2rem;
-      opacity: 0.42;
-      filter: saturate(0.85) contrast(0.95) brightness(0.95);
-      pointer-events: none;
-    }
-
-    .copyright {
-      margin-top: 1.2rem;
-      font-size: 0.72rem;
-      opacity: 0.55;
-    }
-
-    .gpt-modal {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    .gpt-modal.show {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .gpt-modal-content {
-      max-width: 420px;
-      padding: 2rem;
-      text-align: center;
-      font-family: "Spectral", serif;
-      color: #bfa46a;
-      background: #0a1110;
-      border: 1px solid rgba(191, 164, 106, 0.6);
-    }
-
-    .gpt-modal-title {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .gpt-modal-text {
-      margin-bottom: 1.5rem;
-      font-size: 0.9rem;
-      color: rgba(191, 164, 106, 0.8);
-    }
-
-    .gpt-modal-actions button {
-      margin: 0 0.5rem;
-      padding: 0.6rem 1.2rem;
-      background: transparent;
-      border: 1px solid rgba(191, 164, 106, 0.6);
-      color: #bfa46a;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .gpt-modal-actions button:hover {
-      background: rgba(191, 164, 106, 0.1);
-    }
-
-    @media (max-width: 520px) {
-      .container {
-        width: calc(100% - 1.5rem);
-        margin-top: 1.05rem;
-        padding: 1.9rem 1.25rem;
-        border-radius: 14px;
-        background-size: 54px 54px;
-      }
-
-      .logo-mount {
-        width: 100%;
-        height: 180px;
-        padding: 8px;
-        margin-bottom: 0.85rem;
-        border-radius: 14px;
-      }
-
-      .logo-mount::after {
-        inset: 6px;
-        border-radius: 11px;
-      }
-
-      .logo {
-        border-radius: 11px;
-      }
-
-      h1 {
-        margin-bottom: 0.25rem;
-        font-size: 1.75rem;
-        letter-spacing: 0.4px;
-      }
-
-      .rule {
-        width: 110px;
-        margin: 0.9rem auto 1.25rem;
-      }
-
-      .fact-row {
-        grid-template-columns: 1fr;
-        gap: 0.35rem;
-      }
-
-      .secondary-nav {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .secondary-nav a {
-        text-align: center;
-      }
-
-      footer {
-        margin-top: 1.8rem;
-        font-size: 0.78rem;
-      }
-
-      .flags-footer {
-        width: 92px;
-        margin: 0.9rem auto 0;
-        opacity: 0.35;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .ask-gpt,
-      .sources a,
-      .about-link a,
-      .secondary-nav a,
-      .gpt-modal,
-      .gpt-modal-actions button {
-        transition: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/ship-guide.css" />
   <link rel="stylesheet" href="/assets/nav.css" />
 </head>
 
@@ -545,124 +72,51 @@
     <div class="rule"></div>
 
     <div class="guide">
-      <h2>Overview</h2>
-      <p>
-        SS <em>La Bretagne</em> was a French Line ocean liner built at Saint-Nazaire for Compagnie Générale Transatlantique’s Le Havre–New York service.
-        Entering service in 1886, she belonged to the important late nineteenth-century group of CGT liners that helped modernize the company’s North Atlantic presence.
-      </p>
-      <p class="note">
-        This page treats <em>La Bretagne</em> as a transitional French liner: steel-hulled, steam-driven, still visually tied to earlier sail-era forms,
-        and later modified as marine engineering and passenger expectations changed.
-      </p>
+    <h2>Overview</h2>
+    <p>SS <em>La Bretagne</em> was one of the four large French Line “province” liners ordered for the Le Havre–New York mail service in the mid-1880s. Launched at Saint-Nazaire on 9 September 1885 and entering service in August 1886, she belonged to the generation that gave Compagnie Générale Transatlantique a more competitive, modern North Atlantic fleet before the company’s twentieth-century prestige liners.</p>
+    <p>Her long career is best read in four phases: original CGT transatlantic service, the major 1895 modernization, Compagnie de Navigation Sud-Atlantique service from 1912, and wartime use as a hospital ship and troop transport before her final <em>Alésia</em> identity.</p>
 
-      <h2>Key Facts</h2>
-      <div class="facts" role="table" aria-label="Key facts table">
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Owner / operator as built</div>
-          <div class="fact-value" role="cell">Compagnie Générale Transatlantique / French Line</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Builder</div>
-          <div class="fact-value" role="cell">Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Launched</div>
-          <div class="fact-value" role="cell">September 9, 1885</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Maiden voyage</div>
-          <div class="fact-value" role="cell">August 14, 1886 (Le Havre → New York)</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Primary CGT route</div>
-          <div class="fact-value" role="cell">Le Havre–New York</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Later owner</div>
-          <div class="fact-value" role="cell">Compagnie de Navigation Sud-Atlantique, from 1912</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Later name</div>
-          <div class="fact-value" role="cell">SS <em>Alesia</em> (late South Atlantic service)</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Tonnage</div>
-          <div class="fact-value" role="cell">Commonly cited around 6,756–7,112 GRT, depending on source and measurement convention</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Length / beam</div>
-          <div class="fact-value" role="cell">About 495 ft between perpendiculars / about 51–52 ft beam; about 508 ft overall in some listings</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Propulsion as built</div>
-          <div class="fact-value" role="cell">Single screw; compound / triple-expansion steam machinery is reported differently by source phase</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">1895 modernization</div>
-          <div class="fact-value" role="cell">Machinery updated and masts reduced from four to two</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Speed</div>
-          <div class="fact-value" role="cell">About 17 knots</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Passenger capacity as built</div>
-          <div class="fact-value" role="cell">Roughly 400 first class, 60–65 second class, and about 600 third class</div>
-        </div>
-        <div class="fact-row" role="row">
-          <div class="fact-label" role="cell">Fate</div>
-          <div class="fact-value" role="cell">Sold for scrapping in 1923; lost after grounding near Texel while under tow to breakers</div>
-        </div>
-      </div>
+    <h2>Key Facts</h2>
+    <div class="facts" role="table" aria-label="SS La Bretagne key facts">
+      <div class="fact-row"><div class="fact-label">Operator as built</div><div class="fact-value">Compagnie Générale Transatlantique (French Line)</div></div>
+      <div class="fact-row"><div class="fact-label">Builder</div><div class="fact-value">Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire</div></div>
+      <div class="fact-row"><div class="fact-label">Launched</div><div class="fact-value">9 September 1885</div></div>
+      <div class="fact-row"><div class="fact-label">Maiden voyage</div><div class="fact-value">14 August 1886 · Le Havre to New York</div></div>
+      <div class="fact-row"><div class="fact-label">Tonnage</div><div class="fact-value">About 6,756 GRT in contemporary/reference listings</div></div>
+      <div class="fact-row"><div class="fact-label">Length / beam</div><div class="fact-value">About 151 m / 15.8 m</div></div>
+      <div class="fact-row"><div class="fact-label">Propulsion</div><div class="fact-value">Single screw; machinery substantially renewed in 1895 with quadruple-expansion engines and new boilers</div></div>
+      <div class="fact-row"><div class="fact-label">Speed</div><div class="fact-value">About 17 knots</div></div>
+      <div class="fact-row"><div class="fact-label">As-built passenger accommodation</div><div class="fact-value">About 390 first, 65 second, and 600 third class</div></div>
+      <div class="fact-row"><div class="fact-label">1895 refit</div><div class="fact-value">New boilers and machinery; funnels raised; mast count reduced from four to two</div></div>
+      <div class="fact-row"><div class="fact-label">South Atlantic transfer</div><div class="fact-value">Sold to Compagnie de Navigation Sud-Atlantique in 1912</div></div>
+      <div class="fact-row"><div class="fact-label">Wartime roles</div><div class="fact-value">Hospital ship from 1914; later Bretagne II and briefly a troop transport in 1917</div></div>
+      <div class="fact-row"><div class="fact-label">Later name</div><div class="fact-value"><em>Alésia</em>, from 1919</div></div>
+      <div class="fact-row"><div class="fact-label">Fate</div><div class="fact-value">Sold for demolition in 1923; tow parted and ship grounded at Texel in December 1923</div></div>
+    </div>
 
-      <p class="note">
-        Note on figures: published figures vary because sources may describe her pre-1895 configuration, post-refit arrangement,
-        CGT service, or later South Atlantic / <em>Alesia</em> phase.
-      </p>
+    <h2>A French Mail-Liner Generation</h2>
+    <p><em>La Bretagne</em> belonged to a four-ship CGT program with <em>La Champagne</em>, <em>La Bourgogne</em>, and <em>La Gascogne</em>. The vessels were tied to the renewal of France’s transatlantic mail arrangements and were expected to maintain speeds above the standards of earlier company tonnage.</p>
+    <p>Her original two-funnel, four-masted appearance captures the transition from the visual language of sailing ships toward a more recognizably modern steam-liner silhouette. That makes dated photography especially useful for determining whether an image predates or follows the 1895 rebuilding.</p>
 
-      <h2>Design &amp; Construction Context</h2>
-      <p>
-        <em>La Bretagne</em> was part of a French Line fleet-renewal program that included ships such as <em>La Champagne</em>,
-        <em>La Bourgogne</em>, and <em>La Gascogne</em>. These vessels helped CGT answer competitive pressure on the North Atlantic while meeting French mail-service requirements.
-      </p>
-      <p>
-        Her original appearance—with two funnels and four masts—shows the overlap between older visual traditions and modern steamship technology.
-        The 1895 modernization, including reduced mast arrangement and improved machinery, placed her more firmly within the late nineteenth-century steam-liner profile.
-      </p>
+    <h2>The 1895 Modernization</h2>
+    <p>The 1895 overhaul was much more than cosmetic. Contemporary and later French accounts describe new boilers and quadruple-expansion machinery, raised funnels, and removal of two masts. Passenger capacity was also altered. The refit effectively created a second visual and mechanical phase within the same CGT career.</p>
+    <p>For curatorial work, pre- and post-1895 material should not be casually mixed. A four-masted photograph and a two-masted postcard may depict the same ship but document materially different configurations.</p>
 
-      <h2>Service History (Summary)</h2>
-      <p>
-        <em>La Bretagne</em> entered Le Havre–New York service in August 1886 and spent decades as part of the French Line’s Atlantic passenger network.
-        She carried a mix of cabin passengers, emigrants, mail, and cargo during a period when France’s transatlantic service was becoming more regular and more competitive.
-      </p>
-      <p>
-        In 1912, she was sold to Compagnie de Navigation Sud-Atlantique for service between France and South America.
-        She continued under her original name for part of that career before later operating as SS <em>Alesia</em>.
-      </p>
-      <p>
-        In 1923, the aging liner was sold for scrapping. While being towed toward the breakers, her towline parted and she grounded near Texel,
-        becoming a total loss before demolition could proceed in the ordinary way.
-      </p>
+    <h2>From New York to South America</h2>
+    <p><em>La Bretagne</em> remained in French Line North Atlantic service until 1912, when she transferred to the newly organized Compagnie de Navigation Sud-Atlantique. Her commercial geography then shifted from Le Havre–New York to South American service from Bordeaux.</p>
+    <p>This change matters for ephemera attribution. A route card or passenger document from the Sud-Atlantique period belongs to a different company, service network, and marketing context than the better-known CGT material even though the ship initially retained the same name.</p>
 
-      <h2>Historical Significance</h2>
-      <p>
-        <em>La Bretagne</em> matters because she belongs to the generation that made French Line’s North Atlantic service more modern,
-        consistent, and internationally visible before the company’s later prestige liners.
-      </p>
-      <p>
-        She also illustrates the extended working lives of nineteenth-century liners.
-        A ship built for Le Havre–New York service could later be sold into South Atlantic work, renamed, and remain commercially useful long after newer liners had displaced her from the main prestige route.
-      </p>
+    <h2>Hospital Ship and Troop Transport</h2>
+    <p>In August 1914, wartime requirements transformed the liner into a hospital ship. French sources describe a capacity of roughly 550 beds. In October 1916 she was styled <em>Bretagne II</em>, and in 1917 she was briefly employed as a troop transport, including service to Dakar, before being released from wartime duty.</p>
+    <p>This entire phase was missing from the previous guide and is important because it separates civilian passenger evidence from military medical and troop-movement documentation.</p>
 
-      <h2>Interpretive Notes</h2>
-      <p>
-        For collecting and research, <em>La Bretagne</em> material should be matched to phase: original CGT transatlantic service,
-        post-1895 refit appearance, Compagnie de Navigation Sud-Atlantique service, or the later <em>Alesia</em> identity.
-      </p>
-      <p>
-        Photographs are especially date-sensitive because her mast arrangement changed. A four-masted image likely represents her earlier configuration,
-        while a two-masted image points to the post-1895 appearance. That distinction can help avoid misdating postcards, prints, or album captions.
-      </p>
+    <h2>Alésia and the 1923 Loss</h2>
+    <p>Renamed <em>Alésia</em> in 1919 while awaiting possible return to service, the aging liner never resumed a normal peacetime passenger career. She was eventually sold for demolition in 1923.</p>
+    <p>While under tow toward the Netherlands in December 1923, the towline parted near Texel and the ship grounded, becoming a total loss before conventional breaking could take place.</p>
+
+    <h2>Why La Bretagne Matters</h2>
+    <p><em>La Bretagne</em> is a strong example of how a long-lived nineteenth-century liner could repeatedly change meaning without changing hull identity: mail liner, modernized emigrant/passenger ship, South Atlantic liner, hospital ship, troop transport, and finally <em>Alésia</em>.</p>
+    <p>For attribution, mast arrangement, operator, route, wartime status, and name are all useful chronological anchors. Her career rewards phase-specific cataloging rather than one generic “French Line” label.</p>
 
       <span class="mini-badge">Evidence-first ship guide</span>
 
@@ -672,10 +126,8 @@
       </p>
       <ul class="sources">
         <li><a href="/sources">Ocean Liner Curator — Sources (master bibliography)</a></li>
-        <li><a href="https://www.norwayheritage.com/p_ship.asp?sh=labre" target="_blank" rel="noopener">Norway Heritage — S/S La Bretagne, French Line</a></li>
-        <li><a href="https://www.ggarchives.com/OceanTravel/ImmigrantShips/LaBretagne.html" target="_blank" rel="noopener">Gjenvick-Gjønvik Archives — SS La Bretagne archival collection</a></li>
-        <li><a href="https://www.titanicinquiry.org/ships/labretagne.php" target="_blank" rel="noopener">Titanic Inquiry Project — La Bretagne, French Line</a></li>
-        <li><a href="https://www.loc.gov/" target="_blank" rel="noopener">Library of Congress — historical collections entry point</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/SS_La_Bretagne" rel="noopener noreferrer">SS <em>La Bretagne</em> — chronology and published bibliography</a></li>
+        <li><a href="https://archives-maritimes.blogspot.com/2013/03/le-transatlantique-la-bretagne.html" rel="noopener noreferrer">Archives maritimes — <em>La Bretagne</em>, 1895 modernization and wartime service</a></li>
       </ul>
     </div>
 
