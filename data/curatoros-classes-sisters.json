@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T20:42:19.086Z",
+  "generatedAt": "2026-09-18T08:21:23.944Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithExplicitClass": 15,
-    "canonicalClasses": 7,
-    "explicitSisterLinks": 13,
-    "unresolvedSisterMentions": 87
+    "canonicalClasses": 8,
+    "explicitSisterLinks": 9,
+    "unresolvedSisterMentions": 65
   },
   "classes": [
     {
@@ -76,26 +76,6 @@
       ]
     },
     {
-      "id": "jubilee",
-      "name": "Jubilee",
-      "rawValues": [
-        "Jubilee"
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "SS Persic",
-          "path": "ships/ss-persic.html",
-          "url": "/ships/ss-persic"
-        },
-        {
-          "name": "SS Runic",
-          "path": "ships/ss-runic.html",
-          "url": "/ships/ss-runic"
-        }
-      ]
-    },
-    {
       "id": "barbarossa",
       "name": "Barbarossa",
       "rawValues": [
@@ -107,6 +87,36 @@
           "name": "SS Friedrich der Grosse",
           "path": "ships/ss-friedrich-der-grosse.html",
           "url": "/ships/ss-friedrich-der-grosse"
+        }
+      ]
+    },
+    {
+      "id": "canadian-pacific-duchess",
+      "name": "Canadian Pacific Duchess",
+      "rawValues": [
+        "Canadian Pacific Duchess"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Duchess of Richmond",
+          "path": "ships/ss-duchess-of-richmond.html",
+          "url": "/ships/ss-duchess-of-richmond"
+        }
+      ]
+    },
+    {
+      "id": "duchess",
+      "name": "Duchess",
+      "rawValues": [
+        "Duchess"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Duchess of York",
+          "path": "ships/ss-duchess-of-york.html",
+          "url": "/ships/ss-duchess-of-york"
         }
       ]
     },
@@ -126,6 +136,21 @@
       ]
     },
     {
+      "id": "oceanic",
+      "name": "Oceanic",
+      "rawValues": [
+        "Oceanic"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Baltic (1871)",
+          "path": "ships/ss-baltic-1871.html",
+          "url": "/ships/ss-baltic-1871"
+        }
+      ]
+    },
+    {
       "id": "prewar-program-the-imperator",
       "name": "Prewar Program The Imperator",
       "rawValues": [
@@ -139,36 +164,21 @@
           "url": "/ships/ss-bismarck-1914"
         }
       ]
-    },
-    {
-      "id": "saxonia",
-      "name": "Saxonia",
-      "rawValues": [
-        "Saxonia"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "RMS Sylvania",
-          "path": "ships/rms-sylvania.html",
-          "url": "/ships/rms-sylvania"
-        }
-      ]
     }
   ],
   "sisterLinks": [
     {
       "a": {
-        "name": "RMS Andania",
-        "path": "ships/rms-andania.html",
-        "url": "/ships/rms-andania"
+        "name": "RMS Britannic (1874)",
+        "path": "ships/rms-britannic-1874.html",
+        "url": "/ships/rms-britannic-1874"
       },
       "b": {
-        "name": "RMS Alaunia",
-        "path": "ships/rms-alaunia.html",
-        "url": "/ships/rms-alaunia"
+        "name": "SS Germanic",
+        "path": "ships/ss-germanic.html",
+        "url": "/ships/ss-germanic"
       },
-      "evidenceFrom": "ships/rms-andania.html"
+      "evidenceFrom": "ships/rms-britannic-1874.html"
     },
     {
       "a": {
@@ -193,19 +203,6 @@
         "name": "RMS Titanic",
         "path": "ships/rms-titanic.html",
         "url": "/ships/rms-titanic"
-      },
-      "evidenceFrom": "ships/rms-olympic.html"
-    },
-    {
-      "a": {
-        "name": "RMS Olympic",
-        "path": "ships/rms-olympic.html",
-        "url": "/ships/rms-olympic"
-      },
-      "b": {
-        "name": "RMS Britannic",
-        "path": "ships/rms-britannic-1874.html",
-        "url": "/ships/rms-britannic-1874"
       },
       "evidenceFrom": "ships/rms-olympic.html"
     },
@@ -263,19 +260,6 @@
     },
     {
       "a": {
-        "name": "SS Duilio",
-        "path": "ships/ss-duilio.html",
-        "url": "/ships/ss-duilio"
-      },
-      "b": {
-        "name": "SS Giulio Cesare",
-        "path": "ships/ss-giulio-cesare.html",
-        "url": "/ships/ss-giulio-cesare"
-      },
-      "evidenceFrom": "ships/ss-duilio.html"
-    },
-    {
-      "a": {
         "name": "SS Gneisenau",
         "path": "ships/ss-gneisenau.html",
         "url": "/ships/ss-gneisenau"
@@ -299,32 +283,6 @@
         "url": "/ships/ss-washington"
       },
       "evidenceFrom": "ships/ss-manhattan.html"
-    },
-    {
-      "a": {
-        "name": "SS Noordam",
-        "path": "ships/ss-noordam.html",
-        "url": "/ships/ss-noordam"
-      },
-      "b": {
-        "name": "SS Rijndam",
-        "path": "ships/ss-rijndam-1901.html",
-        "url": "/ships/ss-rijndam-1901"
-      },
-      "evidenceFrom": "ships/ss-noordam.html"
-    },
-    {
-      "a": {
-        "name": "SS St. Louis",
-        "path": "ships/ss-st-louis.html",
-        "url": "/ships/ss-st-louis"
-      },
-      "b": {
-        "name": "SS Milwaukee",
-        "path": "ships/ss-milwaukee.html",
-        "url": "/ships/ss-milwaukee"
-      },
-      "evidenceFrom": "ships/ss-st-louis.html"
     }
   ],
   "unresolvedSisterMentions": [
@@ -338,24 +296,6 @@
       "ship": "Oceania",
       "path": "ships/oceania.html",
       "mentioned": "but the loss was still severe",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Alaunia",
-      "path": "ships/rms-alaunia.html",
-      "mentioned": "Andania",
-      "candidateCount": 2
-    },
-    {
-      "ship": "RMS Alaunia",
-      "path": "ships/rms-alaunia.html",
-      "mentioned": "Aurania Loss Mined off Eastbourne",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Alaunia",
-      "path": "ships/rms-alaunia.html",
-      "mentioned": "East Sussex",
       "candidateCount": 0
     },
     {
@@ -379,6 +319,12 @@
     {
       "ship": "RMS Andania",
       "path": "ships/rms-andania.html",
+      "mentioned": "Alaunia",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Andania",
+      "path": "ships/rms-andania.html",
       "mentioned": "Aurania Loss Torpedoed by U-46 near Rathlin Island",
       "candidateCount": 0
     },
@@ -386,30 +332,6 @@
       "ship": "RMS Andania",
       "path": "ships/rms-andania.html",
       "mentioned": "27 January 1918",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Aurania",
-      "path": "ships/rms-aurania.html",
-      "mentioned": "Andania",
-      "candidateCount": 2
-    },
-    {
-      "ship": "RMS Aurania",
-      "path": "ships/rms-aurania.html",
-      "mentioned": "Alaunia Wartime career Exclusively troop",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Aurania",
-      "path": "ships/rms-aurania.html",
-      "mentioned": "then stranded near Tobermory",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Aurania",
-      "path": "ships/rms-aurania.html",
-      "mentioned": "became",
       "candidateCount": 0
     },
     {
@@ -431,12 +353,6 @@
       "candidateCount": 0
     },
     {
-      "ship": "RMS Empress of Russia",
-      "path": "ships/rms-empress-of-russia.html",
-      "mentioned": "involved in",
-      "candidateCount": 0
-    },
-    {
       "ship": "RMS Etruria (1884)",
       "path": "ships/rms-etruria-1884.html",
       "mentioned": "Umbria",
@@ -445,13 +361,13 @@
     {
       "ship": "RMS Lucania",
       "path": "ships/rms-lucania.html",
-      "mentioned": "early 1890s",
+      "mentioned": "faster of Cunard's great 1890s express pair",
       "candidateCount": 0
     },
     {
-      "ship": "RMS Lucania",
-      "path": "ships/rms-lucania.html",
-      "mentioned": "paired",
+      "ship": "RMS Olympic",
+      "path": "ships/rms-olympic.html",
+      "mentioned": "Britannic",
       "candidateCount": 0
     },
     {
@@ -485,21 +401,15 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Asturias",
-      "path": "ships/ss-asturias-1925.html",
-      "mentioned": "Alcantara Builder Harland & Wolff",
+      "ship": "RMS Windsor Castle (1921)",
+      "path": "ships/rms-windsor-castle-1921.html",
+      "mentioned": "Arundel Castle",
       "candidateCount": 0
     },
     {
-      "ship": "SS Baltic",
-      "path": "ships/ss-baltic-1871.html",
-      "mentioned": "same formative building program",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Baltic",
-      "path": "ships/ss-baltic-1871.html",
-      "mentioned": "rather than in isolation",
+      "ship": "RMS Windsor Castle (1921)",
+      "path": "ships/rms-windsor-castle-1921.html",
+      "mentioned": "second of Union-Castle's great four-funnel Cape Mail liners",
       "candidateCount": 0
     },
     {
@@ -593,51 +503,15 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Duchess of Atholl",
-      "path": "ships/ss-duchess-of-atholl.html",
-      "mentioned": "finished before her despite the earlier launch",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duilio",
-      "path": "ships/ss-duilio.html",
-      "mentioned": "Naples",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duilio",
-      "path": "ships/ss-duilio.html",
-      "mentioned": "South American ports",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duilio",
-      "path": "ships/ss-duilio.html",
-      "mentioned": "especially Buenos Aires",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duilio",
-      "path": "ships/ss-duilio.html",
-      "mentioned": "Giulio Cesare Gross tonnage Often cited around 24",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duilio",
-      "path": "ships/ss-duilio.html",
-      "mentioned": "281 GRT in ship-reference sources",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Finland",
-      "path": "ships/ss-finland.html",
-      "mentioned": "Kroonland Wartime service Served as USAT Finland",
+      "ship": "SS Germanic",
+      "path": "ships/ss-germanic.html",
+      "mentioned": "Britannic",
       "candidateCount": 0
     },
     {
       "ship": "SS Germanic",
       "path": "ships/ss-germanic.html",
-      "mentioned": "Britannic Blue Riband context Held eastbound",
+      "mentioned": "one of White Star's most remarkably long-lived early liners",
       "candidateCount": 0
     },
     {
@@ -647,13 +521,7 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Kaiser Wilhelm der Grosse",
-      "path": "ships/ss-kaiser-wilhelm-der-grosse.html",
-      "mentioned": "together",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Majestic",
+      "ship": "RMS Majestic (1889)",
       "path": "ships/ss-majestic-1889.html",
       "mentioned": "Teutonic",
       "candidateCount": 0
@@ -709,6 +577,12 @@
     {
       "ship": "SS Noordam",
       "path": "ships/ss-noordam.html",
+      "mentioned": "Rijndam",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Noordam",
+      "path": "ships/ss-noordam.html",
       "mentioned": "belonged to the same broad group as the larger Potsdam",
       "candidateCount": 0
     },
@@ -749,24 +623,6 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Persic",
-      "path": "ships/ss-persic.html",
-      "mentioned": "that ended in total loss",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Persic",
-      "path": "ships/ss-persic.html",
-      "mentioned": "Persic survived major wartime damage",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Persic",
-      "path": "ships/ss-persic.html",
-      "mentioned": "resumed service",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS President Coolidge",
       "path": "ships/ss-president-coolidge.html",
       "mentioned": "President Hoover Builder Newport News Shipbuilding",
@@ -794,36 +650,6 @@
       "ship": "SS Raffaello (1965)",
       "path": "ships/ss-raffaello-1965.html",
       "mentioned": "she was designed for high-speed North Atlantic service",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Roma",
-      "path": "ships/ss-roma.html",
-      "mentioned": "Augustus Notable incident Collision",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS St. Louis",
-      "path": "ships/ss-st-louis.html",
-      "mentioned": "but her historical memory is dominated by one event",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS St. Louis",
-      "path": "ships/ss-st-louis.html",
-      "mentioned": "Milwaukee Compare St",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS St. Louis",
-      "path": "ships/ss-st-louis.html",
-      "mentioned": "Milwaukee Tonnage About 16",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS St. Louis",
-      "path": "ships/ss-st-louis.html",
-      "mentioned": "732 GRT Length / Beam Approximately 174",
       "candidateCount": 0
     },
     {
@@ -902,7 +728,7 @@
       "sisters": []
     },
     {
-      "name": "MS Stockholm",
+      "name": "MS Stockholm (1948)",
       "path": "ships/ms-stockholm.html",
       "url": "/ships/ms-stockholm",
       "classes": [],
@@ -975,15 +801,11 @@
       "sisters": []
     },
     {
-      "name": "RMS Alaunia",
+      "name": "RMS Alaunia (1913)",
       "path": "ships/rms-alaunia.html",
       "url": "/ships/rms-alaunia",
       "classes": [],
-      "sisters": [
-        "Andania",
-        "Aurania Loss Mined off Eastbourne",
-        "East Sussex"
-      ]
+      "sisters": []
     },
     {
       "name": "RMS Alcantara",
@@ -1050,16 +872,11 @@
       "sisters": []
     },
     {
-      "name": "RMS Aurania",
+      "name": "RMS Aurania (1916)",
       "path": "ships/rms-aurania.html",
       "url": "/ships/rms-aurania",
       "classes": [],
-      "sisters": [
-        "Andania",
-        "Alaunia Wartime career Exclusively troop",
-        "then stranded near Tobermory",
-        "became"
-      ]
+      "sisters": []
     },
     {
       "name": "RMS Baltic",
@@ -1083,11 +900,13 @@
       "sisters": []
     },
     {
-      "name": "RMS Britannic",
+      "name": "RMS Britannic (1874)",
       "path": "ships/rms-britannic-1874.html",
       "url": "/ships/rms-britannic-1874",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Germanic"
+      ]
     },
     {
       "name": "RMS/HMHS Britannic",
@@ -1132,7 +951,7 @@
       "sisters": []
     },
     {
-      "name": "RMS Carinthia",
+      "name": "RMS Carinthia (1956)",
       "path": "ships/rms-carinthia.html",
       "url": "/ships/rms-carinthia",
       "classes": [],
@@ -1188,7 +1007,7 @@
       "sisters": []
     },
     {
-      "name": "RMS Empress of Canada",
+      "name": "RMS Empress of Canada (1922)",
       "path": "ships/rms-empress-of-canada.html",
       "url": "/ships/rms-empress-of-canada",
       "classes": [],
@@ -1213,9 +1032,7 @@
       "path": "ships/rms-empress-of-russia.html",
       "url": "/ships/rms-empress-of-russia",
       "classes": [],
-      "sisters": [
-        "involved in"
-      ]
+      "sisters": []
     },
     {
       "name": "RMS Etruria (1884)",
@@ -1248,7 +1065,7 @@
       "sisters": []
     },
     {
-      "name": "RMS Ivernia",
+      "name": "RMS Ivernia (1955)",
       "path": "ships/rms-ivernia.html",
       "url": "/ships/rms-ivernia",
       "classes": [],
@@ -1283,9 +1100,8 @@
       "url": "/ships/rms-lucania",
       "classes": [],
       "sisters": [
-        "early 1890s",
-        "paired",
-        "Campania"
+        "Campania",
+        "faster of Cunard's great 1890s express pair"
       ]
     },
     {
@@ -1391,7 +1207,7 @@
       "sisters": []
     },
     {
-      "name": "RMS Saxonia",
+      "name": "RMS Saxonia (1954)",
       "path": "ships/rms-saxonia.html",
       "url": "/ships/rms-saxonia",
       "classes": [],
@@ -1426,12 +1242,10 @@
       "sisters": []
     },
     {
-      "name": "RMS Sylvania",
+      "name": "RMS Sylvania (1957)",
       "path": "ships/rms-sylvania.html",
       "url": "/ships/rms-sylvania",
-      "classes": [
-        "Saxonia"
-      ],
+      "classes": [],
       "sisters": []
     },
     {
@@ -1485,7 +1299,10 @@
       "path": "ships/rms-windsor-castle-1921.html",
       "url": "/ships/rms-windsor-castle-1921",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Arundel Castle",
+        "second of Union-Castle's great four-funnel Cape Mail liners"
+      ]
     },
     {
       "name": "RMS Windsor Castle",
@@ -1544,14 +1361,14 @@
       "sisters": []
     },
     {
-      "name": "SS Arabic (1920)",
+      "name": "SS Arabic (1921)",
       "path": "ships/ss-arabic-1920.html",
       "url": "/ships/ss-arabic-1920",
       "classes": [],
       "sisters": []
     },
     {
-      "name": "SS Arabic",
+      "name": "SS Arabic (1903)",
       "path": "ships/ss-arabic.html",
       "url": "/ships/ss-arabic",
       "classes": [],
@@ -1579,7 +1396,7 @@
       "sisters": []
     },
     {
-      "name": "SS Ascania",
+      "name": "SS Ascania (1911)",
       "path": "ships/ss-ascania-1911.html",
       "url": "/ships/ss-ascania-1911",
       "classes": [],
@@ -1593,13 +1410,11 @@
       "sisters": []
     },
     {
-      "name": "SS Asturias",
+      "name": "RMS Asturias (1925)",
       "path": "ships/ss-asturias-1925.html",
       "url": "/ships/ss-asturias-1925",
       "classes": [],
-      "sisters": [
-        "Alcantara Builder Harland & Wolff"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Athenic",
@@ -1616,14 +1431,13 @@
       "sisters": []
     },
     {
-      "name": "SS Baltic",
+      "name": "SS Baltic (1871)",
       "path": "ships/ss-baltic-1871.html",
       "url": "/ships/ss-baltic-1871",
-      "classes": [],
-      "sisters": [
-        "same formative building program",
-        "rather than in isolation"
-      ]
+      "classes": [
+        "Oceanic"
+      ],
+      "sisters": []
     },
     {
       "name": "SS Barbarossa",
@@ -1793,7 +1607,7 @@
       "sisters": []
     },
     {
-      "name": "RMS Caronia",
+      "name": "RMS Caronia (1904)",
       "path": "ships/ss-caronia.html",
       "url": "/ships/ss-caronia",
       "classes": [],
@@ -2016,9 +1830,7 @@
       "path": "ships/ss-duchess-of-atholl.html",
       "url": "/ships/ss-duchess-of-atholl",
       "classes": [],
-      "sisters": [
-        "finished before her despite the earlier launch"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Duchess of Bedford",
@@ -2031,14 +1843,18 @@
       "name": "SS Duchess of Richmond",
       "path": "ships/ss-duchess-of-richmond.html",
       "url": "/ships/ss-duchess-of-richmond",
-      "classes": [],
+      "classes": [
+        "Canadian Pacific Duchess"
+      ],
       "sisters": []
     },
     {
       "name": "SS Duchess of York",
       "path": "ships/ss-duchess-of-york.html",
       "url": "/ships/ss-duchess-of-york",
-      "classes": [],
+      "classes": [
+        "Duchess"
+      ],
       "sisters": []
     },
     {
@@ -2046,14 +1862,7 @@
       "path": "ships/ss-duilio.html",
       "url": "/ships/ss-duilio",
       "classes": [],
-      "sisters": [
-        "Giulio Cesare",
-        "Naples",
-        "South American ports",
-        "especially Buenos Aires",
-        "Giulio Cesare Gross tonnage Often cited around 24",
-        "281 GRT in ship-reference sources"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Eastland",
@@ -2088,9 +1897,7 @@
       "path": "ships/ss-finland.html",
       "url": "/ships/ss-finland",
       "classes": [],
-      "sisters": [
-        "Kroonland Wartime service Served as USAT Finland"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Flandre",
@@ -2142,7 +1949,8 @@
       "url": "/ships/ss-germanic",
       "classes": [],
       "sisters": [
-        "Britannic Blue Riband context Held eastbound"
+        "Britannic",
+        "one of White Star's most remarkably long-lived early liners"
       ]
     },
     {
@@ -2260,9 +2068,7 @@
       "path": "ships/ss-kaiser-wilhelm-der-grosse.html",
       "url": "/ships/ss-kaiser-wilhelm-der-grosse",
       "classes": [],
-      "sisters": [
-        "together"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Kaiser Wilhelm II",
@@ -2328,7 +2134,7 @@
       "sisters": []
     },
     {
-      "name": "SS Lafayette",
+      "name": "SS Lafayette (1915)",
       "path": "ships/ss-lafayette.html",
       "url": "/ships/ss-lafayette",
       "classes": [],
@@ -2405,7 +2211,7 @@
       "sisters": []
     },
     {
-      "name": "SS Majestic",
+      "name": "RMS Majestic (1889)",
       "path": "ships/ss-majestic-1889.html",
       "url": "/ships/ss-majestic-1889",
       "classes": [],
@@ -2414,7 +2220,7 @@
       ]
     },
     {
-      "name": "SS Maloja",
+      "name": "RMS Maloja (1923)",
       "path": "ships/ss-maloja.html",
       "url": "/ships/ss-maloja",
       "classes": [],
@@ -2510,14 +2316,14 @@
       ]
     },
     {
-      "name": "SS Minnetonka",
+      "name": "SS Minnetonka (1902)",
       "path": "ships/ss-minnetonka.html",
       "url": "/ships/ss-minnetonka",
       "classes": [],
       "sisters": []
     },
     {
-      "name": "SS Minnewaska",
+      "name": "SS Minnewaska (1908)",
       "path": "ships/ss-minnewaska.html",
       "url": "/ships/ss-minnewaska",
       "classes": [],
@@ -2573,7 +2379,7 @@
       "sisters": []
     },
     {
-      "name": "SS Mooltan",
+      "name": "RMS Mooltan (1923)",
       "path": "ships/ss-mooltan.html",
       "url": "/ships/ss-mooltan",
       "classes": [],
@@ -2601,7 +2407,7 @@
       "sisters": []
     },
     {
-      "name": "SS New York",
+      "name": "SS New York (1927)",
       "path": "ships/ss-new-york.html",
       "url": "/ships/ss-new-york",
       "classes": [],
@@ -2694,14 +2500,14 @@
       ]
     },
     {
-      "name": "SS Oronsay",
+      "name": "SS Oronsay (1925)",
       "path": "ships/ss-oronsay.html",
       "url": "/ships/ss-oronsay",
       "classes": [],
       "sisters": []
     },
     {
-      "name": "SS Orontes",
+      "name": "SS Orontes (1929)",
       "path": "ships/ss-orontes.html",
       "url": "/ships/ss-orontes",
       "classes": [],
@@ -2757,14 +2563,8 @@
       "name": "SS Persic",
       "path": "ships/ss-persic.html",
       "url": "/ships/ss-persic",
-      "classes": [
-        "Jubilee"
-      ],
-      "sisters": [
-        "that ended in total loss",
-        "Persic survived major wartime damage",
-        "resumed service"
-      ]
+      "classes": [],
+      "sisters": []
     },
     {
       "name": "SS Poland",
@@ -2880,7 +2680,7 @@
       "sisters": []
     },
     {
-      "name": "SS Rijndam",
+      "name": "SS Rijndam (1901)",
       "path": "ships/ss-rijndam-1901.html",
       "url": "/ships/ss-rijndam-1901",
       "classes": [],
@@ -2898,9 +2698,7 @@
       "path": "ships/ss-roma.html",
       "url": "/ships/ss-roma",
       "classes": [],
-      "sisters": [
-        "Augustus Notable incident Collision"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Romanic",
@@ -2924,12 +2722,10 @@
       "sisters": []
     },
     {
-      "name": "SS Runic",
+      "name": "SS Runic (1900)",
       "path": "ships/ss-runic.html",
       "url": "/ships/ss-runic",
-      "classes": [
-        "Jubilee"
-      ],
+      "classes": [],
       "sisters": []
     },
     {
@@ -2956,20 +2752,14 @@
       "sisters": []
     },
     {
-      "name": "SS St. Louis",
+      "name": "MS St. Louis",
       "path": "ships/ss-st-louis.html",
       "url": "/ships/ss-st-louis",
       "classes": [],
-      "sisters": [
-        "Milwaukee",
-        "but her historical memory is dominated by one event",
-        "Milwaukee Compare St",
-        "Milwaukee Tonnage About 16",
-        "732 GRT Length / Beam Approximately 174"
-      ]
+      "sisters": []
     },
     {
-      "name": "SS Statendam",
+      "name": "SS Statendam (1929)",
       "path": "ships/ss-statendam-1929.html",
       "url": "/ships/ss-statendam-1929",
       "classes": [],
@@ -2990,7 +2780,7 @@
       "sisters": []
     },
     {
-      "name": "SS Strathmore",
+      "name": "RMS Strathmore",
       "path": "ships/ss-strathmore.html",
       "url": "/ships/ss-strathmore",
       "classes": [],
