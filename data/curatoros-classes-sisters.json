@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T10:30:20.673Z",
+  "generatedAt": "2026-09-18T19:17:10.192Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
-    "guidesWithExplicitClass": 14,
-    "canonicalClasses": 6,
+    "guidesWithExplicitClass": 15,
+    "canonicalClasses": 7,
     "explicitSisterLinks": 11,
-    "unresolvedSisterMentions": 75
+    "unresolvedSisterMentions": 74
   },
   "classes": [
     {
@@ -137,6 +137,21 @@
           "name": "SS Bismarck (1914)",
           "path": "ships/ss-bismarck-1914.html",
           "url": "/ships/ss-bismarck-1914"
+        }
+      ]
+    },
+    {
+      "id": "strath",
+      "name": "Strath",
+      "rawValues": [
+        "Strath"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Strathaird",
+          "path": "ships/ss-strathaird.html",
+          "url": "/ships/ss-strathaird"
         }
       ]
     }
@@ -399,18 +414,6 @@
       "ship": "RMS Umbria (1884)",
       "path": "ships/rms-umbria-1884.html",
       "mentioned": "Etruria",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Windsor Castle (1921)",
-      "path": "ships/rms-windsor-castle-1921.html",
-      "mentioned": "Arundel Castle",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Windsor Castle (1921)",
-      "path": "ships/rms-windsor-castle-1921.html",
-      "mentioned": "second of Union-Castle's great four-funnel Cape Mail liners",
       "candidateCount": 0
     },
     {
@@ -711,6 +714,12 @@
       "ship": "MS St. Louis",
       "path": "ships/ss-st-louis.html",
       "mentioned": "Milwaukee Compare St",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Strathaird",
+      "path": "ships/ss-strathaird.html",
+      "mentioned": "such as Strathnaver",
       "candidateCount": 0
     },
     {
@@ -1362,10 +1371,7 @@
       "path": "ships/rms-windsor-castle-1921.html",
       "url": "/ships/rms-windsor-castle-1921",
       "classes": [],
-      "sisters": [
-        "Arundel Castle",
-        "second of Union-Castle's great four-funnel Cape Mail liners"
-      ]
+      "sisters": []
     },
     {
       "name": "RMS Windsor Castle",
@@ -2852,8 +2858,12 @@
       "name": "SS Strathaird",
       "path": "ships/ss-strathaird.html",
       "url": "/ships/ss-strathaird",
-      "classes": [],
-      "sisters": []
+      "classes": [
+        "Strath"
+      ],
+      "sisters": [
+        "such as Strathnaver"
+      ]
     },
     {
       "name": "RMS Strathmore",
