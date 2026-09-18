@@ -1,47 +1,42 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-15T08:18:03.203Z",
+  "generatedAt": "2026-09-18T08:14:43.245Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 314,
-    "shipGuides": 302,
-    "canonicalBuilders": 95,
+    "trackedShipHtmlFiles": 312,
+    "shipGuides": 300,
+    "canonicalBuilders": 98,
     "guidesWithBuilder": 300,
-    "guidesMissingBuilder": 2,
+    "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
-    "operatorValuesRecoveredFromSubtitle": 16,
-    "guidesMissingLaunch": 4,
-    "builderVariantGroups": 26,
-    "suspiciousLaunchDatesWithoutYear": 0
+    "operatorValuesRecoveredFromSubtitle": 7,
+    "guidesMissingLaunch": 5,
+    "builderVariantGroups": 30,
+    "suspiciousLaunchDatesWithoutYear": 1
   },
   "missing": {
-    "builder": [
-      {
-        "ship": "RMS Lucania",
-        "path": "ships/rms-lucania.html"
-      },
-      {
-        "ship": "SS Macedonia",
-        "path": "ships/ss-macedonia.html"
-      }
-    ],
+    "builder": [],
     "operator": [],
     "launched": [
       {
-        "ship": "SS Adriatic (1872)",
-        "path": "ships/ss-adriatic-1872.html"
+        "ship": "SS Deutschland (1900)",
+        "path": "ships/ss-deutschland.html"
       },
       {
-        "ship": "SS France (1912)",
-        "path": "ships/ss-france-1912.html"
+        "ship": "SS Duchess of Richmond",
+        "path": "ships/ss-duchess-of-richmond.html"
       },
       {
-        "ship": "SS Nieuw Amsterdam (1906)",
-        "path": "ships/ss-nieuw-amsterdam-1906.html"
+        "ship": "SS Kroonland",
+        "path": "ships/ss-kroonland.html"
       },
       {
-        "ship": "SS President Lincoln",
-        "path": "ships/ss-president-lincoln.html"
+        "ship": "SS Minnetonka (1902)",
+        "path": "ships/ss-minnetonka.html"
+      },
+      {
+        "ship": "SS New York (1927)",
+        "path": "ships/ss-new-york.html"
       }
     ]
   },
@@ -49,12 +44,11 @@
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 77,
+      "shipCount": 72,
       "firstLaunchYear": null,
       "lastLaunchYear": 1960,
       "locations": [
         "Belfast",
-        "Belfast, 1921–24",
         "Belfast, Ireland",
         "Belfast, Northern Ireland",
         "Govan"
@@ -63,40 +57,39 @@
         "Atlantic Transport Line",
         "Atlantic Transport Line; initially chartered to the National Line",
         "Dominion Line",
-        "Dominion Line; later associated with White Star-Dominion service / Leyland Line reporting in later sources",
+        "Dominion Line / White Star Line",
+        "Dominion Line; later White Star-Dominion context",
         "Hamburg America Line",
         "Hamburg America Line (HAPAG)",
-        "Holland America Line",
-        "Holland America Line (NASM)"
+        "Hamburg-America Line"
       ]
     },
     {
       "id": "john-brown-and-company",
       "name": "John Brown & Company",
-      "shipCount": 20,
-      "firstLaunchYear": 1904,
+      "shipCount": 23,
+      "firstLaunchYear": null,
       "lastLaunchYear": 1967,
       "locations": [
         "Clydebank",
-        "Clydebank, Scotland",
-        "Scotland"
+        "Clydebank, Scotland"
       ],
       "operators": [
-        "Canadian Pacific (Canadian Pacific Railway / Canadian Pacific Steamships)",
-        "Canadian Pacific Steamships Ltd.",
-        "Cunard (then Cunard White Star Line)",
+        "Canadian Pacific Railway / Canadian Pacific Steamships",
+        "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
+        "Canadian Pacific Steamships",
         "Cunard Line",
         "Cunard Line (operated 1969–2008)",
-        "Cunard Steamship Company / Cunard Line",
-        "Cunard-White Star Line",
-        "Cunard-White Star Line (later Cunard Line)"
+        "Cunard White Star / Cunard Line",
+        "Cunard-White Star Line; later Cunard Line",
+        "Orient Steam Navigation Company"
       ]
     },
     {
       "id": "blohm-and-voss",
       "name": "Blohm & Voss",
-      "shipCount": 16,
-      "firstLaunchYear": 1898,
+      "shipCount": 17,
+      "firstLaunchYear": null,
       "lastLaunchYear": 1928,
       "locations": [
         "Hamburg",
@@ -107,21 +100,20 @@
         "Hamburg America Line",
         "Hamburg America Line (HAPAG)",
         "Hamburg America Line / HAPAG",
-        "Hamburg Süd (Hamburg-Südamerikanische Dampfschifffahrts-Gesellschaft)",
-        "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd / Hamburg South America Line)",
-        "Hamburg-America Line (HAPAG)",
-        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
+        "Hamburg Süd",
+        "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft",
+        "Hamburg-America Line",
+        "Norddeutscher Lloyd"
       ]
     },
     {
       "id": "ag-vulcan",
       "name": "AG Vulcan",
-      "shipCount": 12,
+      "shipCount": 10,
       "firstLaunchYear": 1897,
       "lastLaunchYear": 1913,
       "locations": [
         "Hamburg",
-        "Hamburg, Germany",
         "Stettin",
         "Stettin, Germany",
         "then Germany; today Szczecin, Poland"
@@ -129,9 +121,9 @@
       "operators": [
         "Canadian Pacific",
         "Hamburg America Line (HAPAG)",
-        "Hamburg America Line (HAPAG) (as Tirpitz)",
-        "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)",
-        "Norddeutscher Lloyd (Bremen)",
+        "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft",
+        "Hamburg-America Line",
+        "Norddeutscher Lloyd",
         "Norddeutscher Lloyd (North German Lloyd)",
         "Norddeutscher Lloyd / North German Lloyd"
       ]
@@ -139,45 +131,42 @@
     {
       "id": "vickers-armstrongs",
       "name": "Vickers-Armstrongs",
-      "shipCount": 11,
+      "shipCount": 10,
       "firstLaunchYear": 1924,
       "lastLaunchYear": 1959,
       "locations": [
         "Barrow-in-Furness",
-        "Barrow-in-Furness, England",
-        "Barrow-in-Furness, UK",
-        "Walker-on-Tyne / Newcastle area"
+        "High Walker"
       ],
       "operators": [
         "Furness Bermuda Line",
-        "Furness, Withy & Co. · Furness Bermuda Line",
+        "Furness, Withy & Co. / Furness Bermuda Line",
+        "Orient Steam Navigation Company",
         "Orient Steam Navigation Company (Orient Line)",
         "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-        "Peninsular & Oriental Steam Navigation Co. (P&O)",
-        "Peninsular and Oriental Steam Navigation Company (P&O)"
+        "P&O Steam Navigation Company; later P&O-Orient Lines",
+        "Peninsular and Oriental Steam Navigation Company"
       ]
     },
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
-      "shipCount": 7,
+      "shipCount": 9,
       "firstLaunchYear": 1892,
       "lastLaunchYear": 1929,
       "locations": [
         "Glasgow",
         "Govan",
-        "Govan, Clyde",
-        "Govan, Glasgow",
-        "Govan, Glasgow, Scotland",
-        "Govan, Scotland"
+        "Govan, Glasgow"
       ],
       "operators": [
         "Anchor Line (Henderson Bros) Ltd (Cunard subsidiary)",
         "Anchor Line (UK)",
-        "Canadian Pacific Railway / Canadian Pacific Steamships (Atlantic service)",
+        "Canadian Pacific",
+        "Canadian Pacific Railway / Canadian Pacific Steamship Company",
+        "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
         "Canadian Pacific Steamships",
         "Canadian Pacific Steamships / Canadian Pacific Line",
-        "Canadian Pacific Steamships / Canadian Pacific Railway",
         "Cunard Line"
       ]
     },
@@ -197,13 +186,49 @@
         "Dollar Steamship Lines",
         "Panama Pacific Line",
         "United States Lines",
-        "Ward Line (New York & Cuba Mail SS Co.) / AGWI Navigation Co. (commonly cited)"
+        "Ward Line / AGWI interests"
+      ]
+    },
+    {
+      "id": "swan-hunter-and-wigham-richardson",
+      "name": "Swan Hunter & Wigham Richardson",
+      "shipCount": 6,
+      "firstLaunchYear": 1902,
+      "lastLaunchYear": 1938,
+      "locations": [
+        "Newcastle-on-Tyne",
+        "Wallsend",
+        "Wallsend, England"
+      ],
+      "operators": [
+        "Cunard Line",
+        "Cunard Line; British Government hire throughout active career",
+        "Navigazione Generale Italiana",
+        "Shaw, Savill & Albion Line"
+      ]
+    },
+    {
+      "id": "william-beardmore-and-co",
+      "name": "William Beardmore & Co.",
+      "shipCount": 6,
+      "firstLaunchYear": 1919,
+      "lastLaunchYear": 1927,
+      "locations": [
+        "Dalmuir",
+        "Dalmuir, River Clyde",
+        "Dalmuir, Scotland"
+      ],
+      "operators": [
+        "Anchor Line (Cunard-associated)",
+        "Anchor Line (Henderson Bros / Anchor Line (1935) Ltd often cited)",
+        "Canadian Pacific Steamships",
+        "Lloyd Sabaudo"
       ]
     },
     {
       "id": "blohm-and-voss-hamburg",
       "name": "Blohm & Voss, Hamburg",
-      "shipCount": 6,
+      "shipCount": 5,
       "firstLaunchYear": 1896,
       "lastLaunchYear": 1929,
       "locations": [
@@ -216,73 +241,34 @@
       ]
     },
     {
-      "id": "swan-hunter-and-wigham-richardson",
-      "name": "Swan Hunter & Wigham Richardson",
-      "shipCount": 6,
-      "firstLaunchYear": 1906,
-      "lastLaunchYear": 1938,
-      "locations": [
-        "Newcastle-on-Tyne",
-        "Wallsend",
-        "Wallsend, England",
-        "Wallsend-on-Tyne"
-      ],
-      "operators": [
-        "Cunard Line",
-        "Navigazione Generale Italiana",
-        "Shaw, Savill & Albion Line"
-      ]
-    },
-    {
-      "id": "ansaldo",
-      "name": "Ansaldo",
-      "shipCount": 5,
-      "firstLaunchYear": 1926,
-      "lastLaunchYear": 1958,
-      "locations": [
-        "Genoa",
-        "Sestri Ponente / Genoa"
-      ],
-      "operators": [
-        "Italian Line (Italia Flotte Riunite / later Italian Line naming is source-dependent; commonly cited as “Italian Line”)",
-        "Italian Line (Italia di Navigazione)",
-        "Navigazione Generale Italiana (NGI)",
-        "Navigazione Generale Italiana (NGI); later Italian Line (Italia Line)"
-      ]
-    },
-    {
-      "id": "chantiers-de-l-atlantique",
-      "name": "Chantiers de l’Atlantique",
-      "shipCount": 5,
+      "id": "ag-weser",
+      "name": "AG Weser",
+      "shipCount": 4,
       "firstLaunchYear": null,
-      "lastLaunchYear": 2003,
+      "lastLaunchYear": 1920,
       "locations": [
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
+        "Bremen"
       ],
       "operators": [
-        "Compagnie Générale Transatlantique (CGT / French Line)",
-        "Compagnie Générale Transatlantique (CGT) — “French Line”",
-        "Compagnie de Navigation Sud-Atlantique",
-        "Cunard Line"
+        "Norddeutscher Lloyd",
+        "Oceanic Steam Navigation Company / White Star Line",
+        "United American Lines / Hamburg America Line",
+        "White Star Line; later chartered to Red Star Line"
       ]
     },
     {
-      "id": "j-and-g-thomson",
-      "name": "J. & G. Thomson",
-      "shipCount": 5,
-      "firstLaunchYear": 1865,
-      "lastLaunchYear": 1888,
+      "id": "ansaldo-sestri-ponente",
+      "name": "Ansaldo, Sestri Ponente",
+      "shipCount": 4,
+      "firstLaunchYear": 1916,
+      "lastLaunchYear": 1951,
       "locations": [
-        "Clydebank",
-        "Clydebank/Glasgow, Scotland",
-        "Glasgow",
-        "Scotland"
+        "Genoa"
       ],
       "operators": [
-        "Cunard Line",
-        "Inman & International Steamship Co. (Inman Line)",
-        "Inman Line (later controlled/merged into International Navigation / American Line)"
+        "Italia Flotte Riunite / Italian Line",
+        "Italia di Navigazione / Italian Line",
+        "Navigazione Generale Italiana"
       ]
     }
   ],
@@ -291,29 +277,60 @@
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
       "names": [
-        "Harland & Wolff",
-        "Harland & Wolff Ltd."
+        "Harland & Wolff"
       ],
       "rawValues": [
         "Harland & Wolff (Belfast)",
-        "Harland & Wolff (Belfast, 1921–24)",
         "Harland & Wolff (Belfast, Ireland)",
         "Harland & Wolff (Belfast, Northern Ireland)",
-        "Harland & Wolff Ltd., Belfast",
         "Harland & Wolff, Belfast",
-        "Harland & Wolff, Belfast (Yard No. 358)",
-        "Harland & Wolff, Belfast (commonly cited)",
-        "Harland & Wolff, Belfast (yard no. commonly cited: 1005)",
         "Harland & Wolff, Belfast · Yard No. 315",
         "Harland & Wolff, Belfast · Yard No. 318",
         "Harland & Wolff, Belfast · Yard No. 324",
         "Harland & Wolff, Belfast · Yard No. 327",
-        "Harland & Wolff, Belfast · Yard No. 336",
         "Harland & Wolff, Belfast · Yard No. 338 · Slip No. 5",
         "Harland & Wolff, Belfast · Yard No. 342",
-        "Harland & Wolff, Govan"
+        "Harland & Wolff, Belfast · yard no. 1005",
+        "Harland & Wolff, Belfast · yard no. 1621",
+        "Harland & Wolff, Belfast · yard no. 208",
+        "Harland & Wolff, Belfast · yard no. 209",
+        "Harland & Wolff, Belfast · yard no. 300",
+        "Harland & Wolff, Belfast · yard no. 316",
+        "Harland & Wolff, Belfast · yard no. 333",
+        "Harland & Wolff, Belfast · yard no. 336",
+        "Harland & Wolff, Belfast · yard no. 340",
+        "Harland & Wolff, Belfast · yard no. 345",
+        "Harland & Wolff, Belfast · yard no. 388",
+        "Harland & Wolff, Belfast · yard no. 390",
+        "Harland & Wolff, Belfast · yard no. 391",
+        "Harland & Wolff, Belfast · yard no. 393",
+        "Harland & Wolff, Belfast · yard no. 394",
+        "Harland & Wolff, Belfast · yard no. 397",
+        "Harland & Wolff, Belfast · yard no. 399",
+        "Harland & Wolff, Belfast · yard no. 430",
+        "Harland & Wolff, Belfast · yard no. 442",
+        "Harland & Wolff, Belfast · yard no. 455",
+        "Harland & Wolff, Belfast · yard no. 457",
+        "Harland & Wolff, Belfast · yard no. 507",
+        "Harland & Wolff, Belfast · yard no. 573",
+        "Harland & Wolff, Belfast · yard no. 586",
+        "Harland & Wolff, Belfast · yard no. 587",
+        "Harland & Wolff, Belfast · yard no. 588",
+        "Harland & Wolff, Belfast · yard no. 73",
+        "Harland & Wolff, Belfast · yard no. 75",
+        "Harland & Wolff, Belfast · yard no. 77",
+        "Harland & Wolff, Belfast · yard no. 807",
+        "Harland & Wolff, Belfast · yard no. 825",
+        "Harland & Wolff, Belfast · yard no. 83",
+        "Harland & Wolff, Belfast · yard no. 840",
+        "Harland & Wolff, Belfast · yard no. 85",
+        "Harland & Wolff, Belfast · yard no. 896",
+        "Harland & Wolff, Belfast · yard no. 942",
+        "Harland & Wolff, Govan · yard no. 454",
+        "Harland & Wolff, Govan · yard no. 649",
+        "Harland & Wolff, Govan · yard no. 650"
       ],
-      "shipCount": 77
+      "shipCount": 72
     },
     {
       "id": "john-brown-and-company",
@@ -325,12 +342,26 @@
       "rawValues": [
         "John Brown & Co. (Clydebank, Scotland)",
         "John Brown & Co., Clydebank",
-        "John Brown & Co., Clydebank (Scotland)",
+        "John Brown & Co., Clydebank · yard no. 342",
+        "John Brown & Co., Clydebank · yard no. 362",
+        "John Brown & Co., Clydebank · yard no. 456",
+        "John Brown & Co., Clydebank · yard no. 464",
+        "John Brown & Co., Clydebank · yard no. 465",
+        "John Brown & Co., Clydebank · yard no. 500",
+        "John Brown & Co., Clydebank · yard no. 518",
+        "John Brown & Co., Clydebank · yard no. 523",
+        "John Brown & Co., Clydebank · yard no. 524",
+        "John Brown & Co., Clydebank · yard no. 692",
+        "John Brown & Co., Clydebank · yard no. 693",
+        "John Brown & Co., Clydebank · yard no. 699",
+        "John Brown & Co., Clydebank · yard no. 704",
         "John Brown & Company (Clydebank, Scotland)",
-        "John Brown & Company, Clydebank",
-        "John Brown & Company, Clydebank (Scotland)"
+        "John Brown & Company, Clydebank · yard no. 530",
+        "John Brown & Company, Clydebank · yard no. 534",
+        "John Brown & Company, Clydebank · yard no. 552",
+        "John Brown & Company, Clydebank · yard no. 675"
       ],
-      "shipCount": 20
+      "shipCount": 23
     },
     {
       "id": "blohm-and-voss",
@@ -339,42 +370,37 @@
         "Blohm & Voss"
       ],
       "rawValues": [
-        "Blohm & Voss (Hamburg)",
         "Blohm & Voss (Hamburg, Germany)",
         "Blohm & Voss, Hamburg",
-        "Blohm & Voss, Hamburg (yard no. commonly cited: 473)",
         "Blohm & Voss, Hamburg · Yard No. 125",
-        "Blohm & Voss, Hamburg · Yard No. 132"
+        "Blohm & Voss, Hamburg · Yard No. 132",
+        "Blohm & Voss, Hamburg · yard no. 214",
+        "Blohm & Voss, Hamburg · yard no. 221",
+        "Blohm & Voss, Hamburg · yard no. 403",
+        "Blohm & Voss, Hamburg · yard no. 473",
+        "Blohm & Voss, Hamburg · yard no. 476",
+        "Blohm & Voss, Hamburg · yard no. 477",
+        "Blohm & Voss, Hamburg · yard no. 479"
       ],
-      "shipCount": 16
+      "shipCount": 17
     },
     {
       "id": "ag-vulcan",
       "name": "AG Vulcan",
       "names": [
         "AG Vulcan",
-        "AG Vulcan (Vulcan-Werke)",
         "AG Vulkan",
-        "Stettiner Vulcan (AG Vulcan)",
-        "Vulcan AG",
-        "Vulcan Werft",
-        "Vulcan-Werke"
+        "Vulcan AG"
       ],
       "rawValues": [
-        "AG Vulcan (Hamburg, Germany)",
-        "AG Vulcan (Stettin)",
         "AG Vulcan (Stettin, Germany)",
-        "AG Vulcan (Vulcan-Werke), Stettin",
-        "AG Vulcan, Hamburg",
+        "AG Vulcan, Hamburg · yard no. 334",
         "AG Vulcan, Stettin",
         "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)",
         "AG Vulkan, Stettin",
-        "Stettiner Vulcan (AG Vulcan), Stettin",
-        "Vulcan AG, Stettin",
-        "Vulcan Werft (Hamburg, Germany)",
-        "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)"
+        "Vulcan AG, Stettin"
       ],
-      "shipCount": 12
+      "shipCount": 10
     },
     {
       "id": "vickers-armstrongs",
@@ -382,35 +408,39 @@
       "names": [
         "Vickers-Armstrong",
         "Vickers-Armstrong Ltd.",
-        "Vickers-Armstrongs"
+        "Vickers-Armstrongs",
+        "Vickers-Armstrongs Ltd"
       ],
       "rawValues": [
         "Vickers-Armstrong Ltd., Barrow-in-Furness",
         "Vickers-Armstrong, Barrow-in-Furness",
-        "Vickers-Armstrongs (Barrow-in-Furness, England)",
-        "Vickers-Armstrongs (Barrow-in-Furness, UK)",
-        "Vickers-Armstrongs, Barrow-in-Furness",
-        "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area"
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 637",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 663",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 664",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 681",
+        "Vickers-Armstrongs Ltd, High Walker · yard no. 1",
+        "Vickers-Armstrongs, Barrow-in-Furness"
       ],
-      "shipCount": 11
+      "shipCount": 10
     },
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
       "names": [
-        "Fairfield Shipbuilding & Engineering Co.",
-        "Fairfield Shipbuilding & Engineering Company"
+        "Fairfield Shipbuilding & Engineering Co."
       ],
       "rawValues": [
-        "Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)",
         "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow)",
-        "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)",
-        "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)",
         "Fairfield Shipbuilding & Engineering Co., Govan",
         "Fairfield Shipbuilding & Engineering Co., Govan (Glasgow)",
-        "Fairfield Shipbuilding & Engineering Company, Govan"
+        "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 418",
+        "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 443",
+        "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 484",
+        "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 528",
+        "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 529",
+        "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 634"
       ],
-      "shipCount": 7
+      "shipCount": 9
     },
     {
       "id": "newport-news-shipbuilding-and-dry-dock-co",
@@ -425,22 +455,11 @@
         "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)",
         "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)",
         "Newport News Shipbuilding & Drydock Company",
-        "Newport News Shipbuilding (Virginia, USA)",
         "Newport News Shipbuilding and Dry Dock Company",
-        "Newport News Shipbuilding and Dry Dock Company, Virginia"
+        "Newport News Shipbuilding and Dry Dock Company, Virginia",
+        "Newport News Shipbuilding, Virginia"
       ],
       "shipCount": 7
-    },
-    {
-      "id": "blohm-and-voss-hamburg",
-      "name": "Blohm & Voss, Hamburg",
-      "names": [
-        "Blohm & Voss, Hamburg"
-      ],
-      "rawValues": [
-        "Blohm & Voss, Hamburg, Germany"
-      ],
-      "shipCount": 6
     },
     {
       "id": "swan-hunter-and-wigham-richardson",
@@ -454,57 +473,12 @@
       "rawValues": [
         "Swan Hunter & Wigham Richardson (Wallsend, England)",
         "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne",
+        "Swan Hunter & Wigham Richardson, Wallsend",
         "Swan Hunter and Wigham Richardson, Wallsend",
-        "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne"
+        "Swan, Hunter & Wigham Richardson, Wallsend",
+        "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965"
       ],
       "shipCount": 6
-    },
-    {
-      "id": "ansaldo",
-      "name": "Ansaldo",
-      "names": [
-        "Ansaldo",
-        "Ansaldo Shipyard",
-        "Ansaldo Shipyards",
-        "Gio. Ansaldo & C."
-      ],
-      "rawValues": [
-        "Ansaldo (Sestri Ponente / Genoa)",
-        "Ansaldo Shipyard (Genoa)",
-        "Ansaldo Shipyard, Genoa",
-        "Ansaldo Shipyards, Genoa",
-        "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)"
-      ],
-      "shipCount": 5
-    },
-    {
-      "id": "chantiers-de-l-atlantique",
-      "name": "Chantiers de l’Atlantique",
-      "names": [
-        "Chantiers de l'Atlantique",
-        "Chantiers de l’Atlantique"
-      ],
-      "rawValues": [
-        "Chantiers de l'Atlantique, Saint-Nazaire",
-        "Chantiers de l’Atlantique (Saint-Nazaire, France)",
-        "Chantiers de l’Atlantique, Saint-Nazaire"
-      ],
-      "shipCount": 5
-    },
-    {
-      "id": "j-and-g-thomson",
-      "name": "J. & G. Thomson",
-      "names": [
-        "J. & G. Thomson",
-        "J. & G. Thomson & Co."
-      ],
-      "rawValues": [
-        "J. & G. Thomson & Co., Glasgow",
-        "J. & G. Thomson (Clydebank/Glasgow, Scotland)",
-        "J. & G. Thomson, Clydebank",
-        "J. & G. Thomson, Clydebank (Scotland)"
-      ],
-      "shipCount": 5
     },
     {
       "id": "william-beardmore-and-co",
@@ -516,11 +490,104 @@
       ],
       "rawValues": [
         "William Beardmore & Co. Ltd (Dalmuir, Scotland)",
-        "William Beardmore & Co., Dalmuir",
-        "William Beardmore & Co., Dalmuir / Glasgow area",
+        "William Beardmore & Co., Dalmuir · yard no. 611",
+        "William Beardmore & Co., Dalmuir · yard no. 612",
+        "William Beardmore & Co., Dalmuir · yard no. 640",
+        "William Beardmore & Co., Dalmuir · yard no. 648",
         "William Beardmore & Company (Dalmuir, River Clyde)"
       ],
+      "shipCount": 6
+    },
+    {
+      "id": "blohm-and-voss-hamburg",
+      "name": "Blohm & Voss, Hamburg",
+      "names": [
+        "Blohm & Voss, Hamburg"
+      ],
+      "rawValues": [
+        "Blohm & Voss, Hamburg, Germany"
+      ],
       "shipCount": 5
+    },
+    {
+      "id": "ag-weser",
+      "name": "AG Weser",
+      "names": [
+        "AG Weser"
+      ],
+      "rawValues": [
+        "AG Weser, Bremen",
+        "AG Weser, Bremen · yard no. 193"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "ansaldo-sestri-ponente",
+      "name": "Ansaldo, Sestri Ponente",
+      "names": [
+        "Ansaldo, Sestri Ponente"
+      ],
+      "rawValues": [
+        "Ansaldo, Sestri Ponente, Genoa",
+        "Ansaldo, Sestri Ponente, Genoa · hull no. 296",
+        "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "cammell-laird",
+      "name": "Cammell Laird",
+      "names": [
+        "Cammell Laird",
+        "Cammell Laird & Co."
+      ],
+      "rawValues": [
+        "Cammell Laird & Co., Birkenhead · yard no. 886",
+        "Cammell Laird (Birkenhead, England)",
+        "Cammell Laird, Birkenhead · yard no. 1287",
+        "Cammell Laird, Birkenhead · yard no. 787"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "harland-and-wolff-queen-s-island",
+      "name": "Harland & Wolff, Queen's Island",
+      "names": [
+        "Harland & Wolff, Queen's Island"
+      ],
+      "rawValues": [
+        "Harland & Wolff, Queen's Island, Belfast · yard no. 335",
+        "Harland & Wolff, Queen's Island, Belfast · yard no. 337",
+        "Harland & Wolff, Queen's Island, Belfast · yard no. 352",
+        "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "j-and-g-thomson",
+      "name": "J. & G. Thomson",
+      "names": [
+        "J. & G. Thomson",
+        "J. & G. Thomson & Co."
+      ],
+      "rawValues": [
+        "J. & G. Thomson & Co., Glasgow",
+        "J. & G. Thomson (Clydebank/Glasgow, Scotland)",
+        "J. & G. Thomson, Clydebank"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "a-g-vulcan",
+      "name": "A.G. Vulcan",
+      "names": [
+        "A.G. Vulcan"
+      ],
+      "rawValues": [
+        "A.G. Vulcan, Hamburg",
+        "A.G. Vulcan, Stettin"
+      ],
+      "shipCount": 3
     },
     {
       "id": "ag-vulcan-stettin",
@@ -531,84 +598,58 @@
       "rawValues": [
         "AG Vulcan, Stettin, Germany"
       ],
-      "shipCount": 4
+      "shipCount": 3
     },
     {
-      "id": "ag-weser",
-      "name": "AG Weser",
+      "id": "alexander-stephen-and-sons-linthouse",
+      "name": "Alexander Stephen & Sons, Linthouse",
       "names": [
-        "AG Weser"
+        "Alexander Stephen & Sons, Linthouse"
       ],
       "rawValues": [
-        "AG Weser (Bremen)",
-        "AG Weser, Bremen"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "cammell-laird",
-      "name": "Cammell Laird",
-      "names": [
-        "Cammell Laird",
-        "Cammell, Laird & Co."
-      ],
-      "rawValues": [
-        "Cammell Laird (Birkenhead, England)",
-        "Cammell Laird, Birkenhead",
-        "Cammell, Laird & Co., Birkenhead (England)"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "armstrong-whitworth-and-co",
-      "name": "Armstrong Whitworth & Co.",
-      "names": [
-        "Armstrong Whitworth",
-        "Armstrong Whitworth & Co. Ltd.",
-        "Armstrong, Whitworth & Co."
-      ],
-      "rawValues": [
-        "Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)",
-        "Armstrong Whitworth, Newcastle-upon-Tyne",
-        "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)"
+        "Alexander Stephen & Sons, Linthouse, Glasgow",
+        "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
       ],
       "shipCount": 3
     },
     {
-      "id": "cantieri-riuniti-dell-adriatico",
-      "name": "Cantieri Riuniti dell'Adriatico",
+      "id": "ansaldo",
+      "name": "Ansaldo",
       "names": [
-        "Cantieri Riuniti dell'Adriatico",
-        "Cantieri Riuniti dell’Adriatico"
+        "Ansaldo",
+        "Ansaldo Shipyard",
+        "Ansaldo Shipyards"
       ],
       "rawValues": [
-        "Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)",
-        "Cantieri Riuniti dell’Adriatico (Trieste, Italy)",
-        "Cantieri Riuniti dell’Adriatico, Monfalcone"
+        "Ansaldo Shipyard, Genoa",
+        "Ansaldo Shipyards, Genoa",
+        "Ansaldo, Genoa"
       ],
       "shipCount": 3
     },
     {
-      "id": "chantiers-de-penhoet",
-      "name": "Chantiers de Penhoët",
+      "id": "chantiers-de-l-atlantique",
+      "name": "Chantiers de l’Atlantique",
       "names": [
-        "Chantiers de Penhoët"
+        "Chantiers de l'Atlantique",
+        "Chantiers de l’Atlantique"
       ],
       "rawValues": [
-        "Chantiers de Penhoët (Saint-Nazaire, France)",
-        "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)",
-        "Chantiers de Penhoët, Saint-Nazaire"
+        "Chantiers de l'Atlantique, Saint-Nazaire",
+        "Chantiers de l’Atlantique (Saint-Nazaire, France)"
       ],
       "shipCount": 3
     },
     {
-      "id": "john-brown-and-co-ltd-clydebank",
-      "name": "John Brown & Co. Ltd., Clydebank",
+      "id": "f-schichau",
+      "name": "F. Schichau",
       "names": [
-        "John Brown & Co. Ltd., Clydebank"
+        "F. Schichau"
       ],
       "rawValues": [
-        "John Brown & Co. Ltd., Clydebank, Scotland"
+        "F. Schichau, Danzig",
+        "F. Schichau, Danzig · yard no. 891",
+        "F. Schichau, Danzig · yard no. 929"
       ],
       "shipCount": 3
     },
@@ -623,7 +664,7 @@
       "rawValues": [
         "Hawthorn Leslie & Company, Hebburn",
         "R. & W. Hawthorn, Leslie & Co. Ltd., Hebburn-on-Tyne",
-        "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne"
+        "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne · yard no. 381"
       ],
       "shipCount": 3
     },
@@ -651,13 +692,15 @@
       "shipCount": 2
     },
     {
-      "id": "alexander-stephen-and-sons-linthouse",
-      "name": "Alexander Stephen & Sons, Linthouse",
+      "id": "armstrong-whitworth-and-co",
+      "name": "Armstrong Whitworth & Co.",
       "names": [
-        "Alexander Stephen & Sons, Linthouse"
+        "Armstrong Whitworth",
+        "Armstrong, Whitworth & Co."
       ],
       "rawValues": [
-        "Alexander Stephen & Sons, Linthouse, Glasgow"
+        "Armstrong Whitworth, Newcastle-upon-Tyne",
+        "Armstrong, Whitworth & Co. (Newcastle / Low Walker, UK)"
       ],
       "shipCount": 2
     },
@@ -668,8 +711,21 @@
         "Ateliers et Chantiers de Saint-Nazaire Penhoët"
       ],
       "rawValues": [
-        "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)",
-        "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)"
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët · yard P6",
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "barclay-curle-and-company",
+      "name": "Barclay, Curle & Company",
+      "names": [
+        "Barclay Curle & Co.",
+        "Barclay, Curle & Co."
+      ],
+      "rawValues": [
+        "Barclay Curle & Co., Glasgow",
+        "Barclay, Curle & Co., Glasgow · yard no. 467"
       ],
       "shipCount": 2
     },
@@ -681,18 +737,19 @@
       ],
       "rawValues": [
         "Cantiere Navale Triestino, Monfalcone",
-        "Cantiere Navale Triestino, Monfalcone (Italy)"
+        "Cantiere Navale Triestino, Monfalcone · yard no. 161"
       ],
       "shipCount": 2
     },
     {
-      "id": "d-and-w-henderson-ltd",
-      "name": "D. & W. Henderson Ltd.",
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
       "names": [
-        "D. & W. Henderson Ltd."
+        "Chantiers de Penhoët"
       ],
       "rawValues": [
-        "D. & W. Henderson Ltd., Glasgow"
+        "Chantiers de Penhoët (Saint-Nazaire, France)",
+        "Chantiers de Penhoët, Saint-Nazaire"
       ],
       "shipCount": 2
     },
@@ -708,18 +765,6 @@
       "shipCount": 2
     },
     {
-      "id": "f-schichau",
-      "name": "F. Schichau",
-      "names": [
-        "F. Schichau"
-      ],
-      "rawValues": [
-        "F. Schichau, Danzig (then Germany; now Gdańsk, Poland)",
-        "F. Schichau, Danzig (then Germany; today Gdańsk)"
-      ],
-      "shipCount": 2
-    },
-    {
       "id": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
       "name": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
       "names": [
@@ -727,6 +772,18 @@
       ],
       "rawValues": [
         "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "fairfield-shipbuilding-and-engineering-co-govan",
+      "name": "Fairfield Shipbuilding & Engineering Co., Govan",
+      "names": [
+        "Fairfield Shipbuilding & Engineering Co., Govan"
+      ],
+      "rawValues": [
+        "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow",
+        "Fairfield Shipbuilding & Engineering Co., Govan, Scotland"
       ],
       "shipCount": 2
     },
@@ -748,19 +805,8 @@
         "John Elder & Co."
       ],
       "rawValues": [
-        "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "mitsubishi-shipbuilding-and-engineering-co",
-      "name": "Mitsubishi Shipbuilding & Engineering Co.",
-      "names": [
-        "Mitsubishi Shipbuilding & Engineering Co."
-      ],
-      "rawValues": [
-        "Mitsubishi Shipbuilding & Engineering Co., Nagasaki",
-        "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)"
+        "John Elder & Co., Glasgow · yard no. 286",
+        "John Elder & Co., Govan · yard no. 285"
       ],
       "shipCount": 2
     },
@@ -798,13 +844,13 @@
       "shipCount": 2
     },
     {
-      "id": "scotts-shipbuilding-and-engineering-co-ltd",
-      "name": "Scotts Shipbuilding & Engineering Co. Ltd.",
+      "id": "william-cramp-and-sons",
+      "name": "William Cramp & Sons",
       "names": [
-        "Scotts Shipbuilding & Engineering Co. Ltd."
+        "William Cramp & Sons"
       ],
       "rawValues": [
-        "Scotts Shipbuilding & Engineering Co. Ltd., Greenock"
+        "William Cramp & Sons, Philadelphia"
       ],
       "shipCount": 2
     },
@@ -820,24 +866,13 @@
       "shipCount": 2
     },
     {
-      "id": "alexander-stephen-and-sons-linthouse-glasgow",
-      "name": "Alexander Stephen & Sons, Linthouse / Glasgow",
+      "id": "a-g-weser-deschimag",
+      "name": "A.G. Weser / Deschimag",
       "names": [
-        "Alexander Stephen & Sons, Linthouse / Glasgow"
+        "A.G. Weser / Deschimag"
       ],
       "rawValues": [
-        "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "ansaldo-genoa-sestri-ponente-yard-no-918",
-      "name": "Ansaldo (Genoa / Sestri Ponente), Yard No. 918",
-      "names": [
-        "Ansaldo (Genoa / Sestri Ponente), Yard No. 918"
-      ],
-      "rawValues": [
-        "Ansaldo (Genoa / Sestri Ponente), Yard No. 918"
+        "A.G. Weser / Deschimag, Bremen · yard no. 872"
       ],
       "shipCount": 1
     },
@@ -849,6 +884,17 @@
       ],
       "rawValues": [
         "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente), Italy"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "armstrong-whitworth-and-co-high-walker",
+      "name": "Armstrong, Whitworth & Co., High Walker",
+      "names": [
+        "Armstrong, Whitworth & Co., High Walker"
+      ],
+      "rawValues": [
+        "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999"
       ],
       "shipCount": 1
     },
@@ -871,28 +917,6 @@
       ],
       "rawValues": [
         "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire, France"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "barclay-curle-and-company",
-      "name": "Barclay, Curle & Company",
-      "names": [
-        "Barclay Curle & Co."
-      ],
-      "rawValues": [
-        "Barclay Curle & Co., Glasgow"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "barclay-curle-and-company-glasgow",
-      "name": "Barclay, Curle & Company, Glasgow",
-      "names": [
-        "Barclay, Curle & Company, Glasgow"
-      ],
-      "rawValues": [
-        "Barclay, Curle & Company, Glasgow, Scotland"
       ],
       "shipCount": 1
     },
@@ -930,24 +954,24 @@
       "shipCount": 1
     },
     {
-      "id": "bethlehem-steel-corporation-quincy",
-      "name": "Bethlehem Steel Corporation, Quincy",
+      "id": "bethlehem-steel-corporation-fore-river-shipyard-quincy",
+      "name": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy",
       "names": [
-        "Bethlehem Steel Corporation, Quincy"
+        "Bethlehem Steel Corporation, Fore River Shipyard, Quincy"
       ],
       "rawValues": [
-        "Bethlehem Steel Corporation, Quincy, Massachusetts"
+        "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618"
       ],
       "shipCount": 1
     },
     {
-      "id": "bremer-vulkan-bremen-vegesack",
-      "name": "Bremer Vulkan, Bremen-Vegesack",
+      "id": "bremer-vulkan",
+      "name": "Bremer Vulkan",
       "names": [
-        "Bremer Vulkan, Bremen-Vegesack"
+        "Bremer Vulkan"
       ],
       "rawValues": [
-        "Bremer Vulkan, Bremen-Vegesack, Germany"
+        "Bremer Vulkan, Bremen-Vegesack · yard no. 670"
       ],
       "shipCount": 1
     },
@@ -959,17 +983,6 @@
       ],
       "rawValues": [
         "C. S. Swan & Hunter Ltd., Wallsend-on-Tyne"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "c-s-swan-and-hunter",
-      "name": "C.S. Swan & Hunter",
-      "names": [
-        "C.S. Swan & Hunter"
-      ],
-      "rawValues": [
-        "C.S. Swan & Hunter (Wallsend-on-Tyne, England)"
       ],
       "shipCount": 1
     },
@@ -996,6 +1009,28 @@
       "shipCount": 1
     },
     {
+      "id": "cantiere-san-marco",
+      "name": "Cantiere San Marco",
+      "names": [
+        "Cantiere San Marco"
+      ],
+      "rawValues": [
+        "Cantiere San Marco, Trieste · yard no. 783"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "cantieri-riuniti-dell-adriatico",
+      "name": "Cantieri Riuniti dell’Adriatico",
+      "names": [
+        "Cantieri Riuniti dell’Adriatico"
+      ],
+      "rawValues": [
+        "Cantieri Riuniti dell’Adriatico, Monfalcone"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "cantieri-riuniti-dell-adriatico-crda-trieste",
       "name": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste",
       "names": [
@@ -1007,13 +1042,24 @@
       "shipCount": 1
     },
     {
-      "id": "chantiers-and-ateliers-de-provence-port-de-bouc",
-      "name": "Chantiers & Ateliers de Provence, Port-de-Bouc",
+      "id": "chantiers-and-ateliers-de-penhoet",
+      "name": "Chantiers & Ateliers de Penhoët",
       "names": [
-        "Chantiers & Ateliers de Provence, Port-de-Bouc"
+        "Chantiers & Ateliers de Penhoët"
       ],
       "rawValues": [
-        "Chantiers & Ateliers de Provence, Port-de-Bouc, France"
+        "Chantiers & Ateliers de Penhoët, Saint-Nazaire"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "chantiers-and-ateliers-de-provence",
+      "name": "Chantiers & Ateliers de Provence",
+      "names": [
+        "Chantiers & Ateliers de Provence"
+      ],
+      "rawValues": [
+        "Chantiers & Ateliers de Provence, Port-de-Bouc · yard no. 30"
       ],
       "shipCount": 1
     },
@@ -1040,13 +1086,13 @@
       "shipCount": 1
     },
     {
-      "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet",
-      "name": "Chantiers & Ateliers de Saint-Nazaire, Penhoët",
+      "id": "chantiers-de-penhoet-saint-nazaire",
+      "name": "Chantiers de Penhoët / Saint-Nazaire",
       "names": [
-        "Chantiers & Ateliers de Saint-Nazaire, Penhoët"
+        "Chantiers de Penhoët / Saint-Nazaire"
       ],
       "rawValues": [
-        "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France"
+        "Chantiers de Penhoët / Saint-Nazaire · yard designation R8 commonly cited"
       ],
       "shipCount": 1
     },
@@ -1057,18 +1103,18 @@
         "Chantiers et Ateliers de Provence"
       ],
       "rawValues": [
-        "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area"
+        "Chantiers et Ateliers de Provence, Port-de-Bouc"
       ],
       "shipCount": 1
     },
     {
-      "id": "deutsche-schiff-und-maschinenbau-deschimag-ag-weser",
-      "name": "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser”",
+      "id": "d-and-w-henderson-ltd",
+      "name": "D. & W. Henderson Ltd.",
       "names": [
-        "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser”"
+        "D. & W. Henderson Ltd."
       ],
       "rawValues": [
-        "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)"
+        "D. & W. Henderson Ltd., Glasgow"
       ],
       "shipCount": 1
     },
@@ -1080,28 +1126,6 @@
       ],
       "rawValues": [
         "Eastern Shipbuilding Company, New London / Groton, Connecticut"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "f-schichau-danzig",
-      "name": "F. Schichau, Danzig",
-      "names": [
-        "F. Schichau, Danzig"
-      ],
-      "rawValues": [
-        "F. Schichau, Danzig, Germany"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "fairfield-shipbuilding-and-engineering-co-govan",
-      "name": "Fairfield Shipbuilding & Engineering Co., Govan",
-      "names": [
-        "Fairfield Shipbuilding & Engineering Co., Govan"
-      ],
-      "rawValues": [
-        "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow"
       ],
       "shipCount": 1
     },
@@ -1139,35 +1163,35 @@
       "shipCount": 1
     },
     {
-      "id": "gotaverken-gothenburg-goteborg",
-      "name": "Götaverken, Gothenburg (Göteborg)",
+      "id": "gotaverken",
+      "name": "Götaverken",
       "names": [
-        "Götaverken, Gothenburg (Göteborg)"
+        "Götaverken"
       ],
       "rawValues": [
-        "Götaverken, Gothenburg (Göteborg), Sweden"
+        "Götaverken, Gothenburg"
       ],
       "shipCount": 1
     },
     {
-      "id": "harland-and-wolff-belfast-yard-no-391",
-      "name": "Harland & Wolff (Belfast), yard no. 391",
+      "id": "harland-and-wolff-ltd-queen-s-island",
+      "name": "Harland & Wolff Ltd., Queen’s Island",
       "names": [
-        "Harland & Wolff (Belfast), yard no. 391"
+        "Harland & Wolff Ltd., Queen’s Island"
       ],
       "rawValues": [
-        "Harland & Wolff (Belfast), yard no. 391"
+        "Harland & Wolff Ltd., Queen’s Island, Belfast"
       ],
       "shipCount": 1
     },
     {
-      "id": "harland-and-wolff-queen-s-island",
-      "name": "Harland & Wolff, Queen’s Island",
+      "id": "harland-and-wolff-belfast-completed-by-wilton-s",
+      "name": "Harland & Wolff, Belfast; completed by Wilton's",
       "names": [
-        "Harland & Wolff, Queen’s Island"
+        "Harland & Wolff, Belfast; completed by Wilton's"
       ],
       "rawValues": [
-        "Harland & Wolff, Queen’s Island, Belfast"
+        "Harland & Wolff, Belfast; completed by Wilton's, Schiedam"
       ],
       "shipCount": 1
     },
@@ -1194,6 +1218,17 @@
       "shipCount": 1
     },
     {
+      "id": "j-and-g-thomson-clydebank",
+      "name": "J. & G. Thomson, Clydebank",
+      "names": [
+        "J. & G. Thomson, Clydebank"
+      ],
+      "rawValues": [
+        "J. & G. Thomson, Clydebank, Scotland"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "j-scott-russell-and-co-millwall-iron-works",
       "name": "J. Scott Russell & Co., Millwall Iron Works",
       "names": [
@@ -1201,6 +1236,17 @@
       ],
       "rawValues": [
         "J. Scott Russell & Co., Millwall Iron Works (London)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "j-c-tecklenborg",
+      "name": "J.C. Tecklenborg",
+      "names": [
+        "J.C. Tecklenborg"
+      ],
+      "rawValues": [
+        "J.C. Tecklenborg, Geestemünde · yard no. 256"
       ],
       "shipCount": 1
     },
@@ -1216,17 +1262,6 @@
       "shipCount": 1
     },
     {
-      "id": "joh-c-tecklenborg",
-      "name": "Joh. C. Tecklenborg",
-      "names": [
-        "Joh. C. Tecklenborg"
-      ],
-      "rawValues": [
-        "Joh. C. Tecklenborg, Geestemünde (Bremerhaven)"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "joh-c-tecklenborg-geestemunde",
       "name": "Joh. C. Tecklenborg, Geestemünde",
       "names": [
@@ -1238,13 +1273,35 @@
       "shipCount": 1
     },
     {
-      "id": "john-brown-and-co-clydebank",
-      "name": "John Brown & Co., Clydebank",
+      "id": "mitsubishi-shipbuilding-and-engineering-co",
+      "name": "Mitsubishi Shipbuilding & Engineering Co.",
       "names": [
-        "John Brown & Co., Clydebank"
+        "Mitsubishi Shipbuilding & Engineering Co."
       ],
       "rawValues": [
-        "John Brown & Co., Clydebank, Scotland"
+        "Mitsubishi Shipbuilding & Engineering Co., Nagasaki · yard no. 451"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "mitsubishi-shipbuilding-co",
+      "name": "Mitsubishi Shipbuilding Co.",
+      "names": [
+        "Mitsubishi Shipbuilding Co."
+      ],
+      "rawValues": [
+        "Mitsubishi Shipbuilding Co., Nagasaki · yard no. 450"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "monfalcone-shipyard",
+      "name": "Monfalcone shipyard",
+      "names": [
+        "Monfalcone shipyard"
+      ],
+      "rawValues": [
+        "Monfalcone shipyard · yard no. 160; contemporary corporate context tied to Cantiere Navale Triestino, later sources often use CRDA"
       ],
       "shipCount": 1
     },
@@ -1321,7 +1378,62 @@
         "Rotterdamsche Droogdok Maatschappij"
       ],
       "rawValues": [
-        "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)"
+        "Rotterdamsche Droogdok Maatschappij, Rotterdam · yard no. 200"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "saint-nazaire-penhoet",
+      "name": "Saint-Nazaire / Penhoët",
+      "names": [
+        "Saint-Nazaire / Penhoët"
+      ],
+      "rawValues": [
+        "Saint-Nazaire / Penhoët"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "saint-nazaire-penhoet-shipbuilding-complex",
+      "name": "Saint-Nazaire / Penhoët shipbuilding complex",
+      "names": [
+        "Saint-Nazaire / Penhoët shipbuilding complex"
+      ],
+      "rawValues": [
+        "Saint-Nazaire / Penhoët shipbuilding complex"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "scotts-shipbuilding-and-engineering-co",
+      "name": "Scotts Shipbuilding & Engineering Co.",
+      "names": [
+        "Scotts Shipbuilding & Engineering Co."
+      ],
+      "rawValues": [
+        "Scotts Shipbuilding & Engineering Co., Greenock · yard no. 447"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "scotts-shipbuilding-and-engineering-co-ltd",
+      "name": "Scotts Shipbuilding & Engineering Co. Ltd.",
+      "names": [
+        "Scotts Shipbuilding & Engineering Co. Ltd."
+      ],
+      "rawValues": [
+        "Scotts Shipbuilding & Engineering Co. Ltd., Greenock"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "sir-james-laing-and-sons",
+      "name": "Sir James Laing & Sons",
+      "names": [
+        "Sir James Laing & Sons"
+      ],
+      "rawValues": [
+        "Sir James Laing & Sons, Sunderland"
       ],
       "shipCount": 1
     },
@@ -1332,7 +1444,7 @@
         "Stabilimento Tecnico Triestino"
       ],
       "rawValues": [
-        "Stabilimento Tecnico Triestino, Monfalcone"
+        "Stabilimento Tecnico Triestino, Trieste"
       ],
       "shipCount": 1
     },
@@ -1343,7 +1455,7 @@
         "Swan Hunter"
       ],
       "rawValues": [
-        "Swan Hunter, Wallsend"
+        "Swan Hunter, Wallsend · yard no. 869"
       ],
       "shipCount": 1
     },
@@ -1381,39 +1493,6 @@
       "shipCount": 1
     },
     {
-      "id": "vickers-sons-and-maxim-ltd",
-      "name": "Vickers, Sons & Maxim Ltd.",
-      "names": [
-        "Vickers, Sons & Maxim Ltd."
-      ],
-      "rawValues": [
-        "Vickers, Sons & Maxim Ltd., Barrow-in-Furness"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "william-beardmore-and-company-dalmuir",
-      "name": "William Beardmore & Company, Dalmuir",
-      "names": [
-        "William Beardmore & Company, Dalmuir"
-      ],
-      "rawValues": [
-        "William Beardmore & Company, Dalmuir, Scotland"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "william-cramp-and-sons",
-      "name": "William Cramp & Sons",
-      "names": [
-        "William Cramp & Sons"
-      ],
-      "rawValues": [
-        "William Cramp & Sons, Philadelphia"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "william-h-brown-shipyard",
       "name": "William H. Brown Shipyard",
       "names": [
@@ -1421,17 +1500,6 @@
       ],
       "rawValues": [
         "William H. Brown Shipyard, New York"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "wilton-s",
-      "name": "Wilton’s",
-      "names": [
-        "Wilton’s"
-      ],
-      "rawValues": [
-        "Wilton’s (Schiedam, 1927–29)"
       ],
       "shipCount": 1
     },
@@ -1452,13 +1520,13 @@
       "name": "Asama Maru",
       "path": "ships/asama-maru-1929.html",
       "url": "/ships/asama-maru-1929",
-      "launchYear": "1929",
-      "builderRaw": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)",
+      "launchYear": "1928",
+      "builderRaw": "Mitsubishi Shipbuilding Co., Nagasaki · yard no. 450",
       "builders": [
         {
-          "id": "mitsubishi-shipbuilding-and-engineering-co",
-          "name": "Mitsubishi Shipbuilding & Engineering Co.",
-          "raw": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki (commonly cited)"
+          "id": "mitsubishi-shipbuilding-co",
+          "name": "Mitsubishi Shipbuilding Co.",
+          "raw": "Mitsubishi Shipbuilding Co., Nagasaki · yard no. 450"
         }
       ]
     },
@@ -1467,26 +1535,12 @@
       "path": "ships/athlone-castle.html",
       "url": "/ships/athlone-castle",
       "launchYear": "1935",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 942",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
-        }
-      ]
-    },
-    {
-      "name": "Monarch of Bermuda",
-      "path": "ships/monarch-of-bermuda.html",
-      "url": "/ships/monarch-of-bermuda",
-      "launchYear": "1931",
-      "builderRaw": "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area",
-      "builders": [
-        {
-          "id": "vickers-armstrongs",
-          "name": "Vickers-Armstrongs",
-          "raw": "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area"
+          "raw": "Harland & Wolff, Belfast · yard no. 942"
         }
       ]
     },
@@ -1495,12 +1549,12 @@
       "path": "ships/ms-augustus.html",
       "url": "/ships/ms-augustus",
       "launchYear": "1926",
-      "builderRaw": "Ansaldo Shipyard (Genoa)",
+      "builderRaw": "Ansaldo, Genoa",
       "builders": [
         {
           "id": "ansaldo",
           "name": "Ansaldo",
-          "raw": "Ansaldo Shipyard (Genoa)"
+          "raw": "Ansaldo, Genoa"
         }
       ]
     },
@@ -1523,12 +1577,12 @@
       "path": "ships/ms-gripsholm-1925.html",
       "url": "/ships/ms-gripsholm-1925",
       "launchYear": "1924",
-      "builderRaw": "Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)",
+      "builderRaw": "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999",
       "builders": [
         {
-          "id": "armstrong-whitworth-and-co",
-          "name": "Armstrong Whitworth & Co.",
-          "raw": "Armstrong Whitworth & Co. Ltd., Newcastle upon Tyne (U.K.)"
+          "id": "armstrong-whitworth-and-co-high-walker",
+          "name": "Armstrong, Whitworth & Co., High Walker",
+          "raw": "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999"
         }
       ]
     },
@@ -1537,12 +1591,12 @@
       "path": "ships/ms-kungsholm-1928.html",
       "url": "/ships/ms-kungsholm-1928",
       "launchYear": "1928",
-      "builderRaw": "Blohm & Voss, Hamburg",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 477",
       "builders": [
         {
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
-          "raw": "Blohm & Voss, Hamburg"
+          "raw": "Blohm & Voss, Hamburg · yard no. 477"
         }
       ]
     },
@@ -1551,26 +1605,26 @@
       "path": "ships/ms-saturnia.html",
       "url": "/ships/ms-saturnia",
       "launchYear": "1925",
-      "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)",
+      "builderRaw": "Monfalcone shipyard · yard no. 160; contemporary corporate context tied to Cantiere Navale Triestino, later sources often use CRDA",
       "builders": [
         {
-          "id": "cantieri-riuniti-dell-adriatico",
-          "name": "Cantieri Riuniti dell'Adriatico",
-          "raw": "Cantieri Riuniti dell'Adriatico, Monfalcone (Trieste)"
+          "id": "monfalcone-shipyard",
+          "name": "Monfalcone shipyard",
+          "raw": "Monfalcone shipyard · yard no. 160; contemporary corporate context tied to Cantiere Navale Triestino, later sources often use CRDA"
         }
       ]
     },
     {
-      "name": "MS Stockholm",
+      "name": "MS Stockholm (1948)",
       "path": "ships/ms-stockholm.html",
       "url": "/ships/ms-stockholm",
       "launchYear": "1946",
-      "builderRaw": "Götaverken, Gothenburg (Göteborg), Sweden",
+      "builderRaw": "Götaverken, Gothenburg",
       "builders": [
         {
-          "id": "gotaverken-gothenburg-goteborg",
-          "name": "Götaverken, Gothenburg (Göteborg)",
-          "raw": "Götaverken, Gothenburg (Göteborg), Sweden"
+          "id": "gotaverken",
+          "name": "Götaverken",
+          "raw": "Götaverken, Gothenburg"
         }
       ]
     },
@@ -1579,26 +1633,26 @@
       "path": "ships/ms-vulcania.html",
       "url": "/ships/ms-vulcania",
       "launchYear": "1926",
-      "builderRaw": "Cantiere Navale Triestino, Monfalcone (Italy)",
+      "builderRaw": "Cantiere Navale Triestino, Monfalcone · yard no. 161",
       "builders": [
         {
           "id": "cantiere-navale-triestino",
           "name": "Cantiere Navale Triestino",
-          "raw": "Cantiere Navale Triestino, Monfalcone (Italy)"
+          "raw": "Cantiere Navale Triestino, Monfalcone · yard no. 161"
         }
       ]
     },
     {
-      "name": "MV Britannic",
+      "name": "MV Britannic (1930)",
       "path": "ships/mv-britannic.html",
       "url": "/ships/mv-britannic",
       "launchYear": "1929",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 807",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 807"
         }
       ]
     },
@@ -1607,12 +1661,12 @@
       "path": "ships/mv-georgic.html",
       "url": "/ships/mv-georgic",
       "launchYear": "1931",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 896",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 896"
         }
       ]
     },
@@ -1687,30 +1741,30 @@
       ]
     },
     {
-      "name": "RMS Adriatic",
+      "name": "RMS Adriatic (1907)",
       "path": "ships/rms-adriatic.html",
       "url": "/ships/rms-adriatic",
       "launchYear": "1906",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 358",
       "builders": [
         {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "id": "harland-and-wolff-queen-s-island",
+          "name": "Harland & Wolff, Queen's Island",
+          "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
         }
       ]
     },
     {
-      "name": "RMS Alaunia",
+      "name": "RMS Alaunia (1913)",
       "path": "ships/rms-alaunia.html",
       "url": "/ships/rms-alaunia",
       "launchYear": "1913",
-      "builderRaw": "Scotts Shipbuilding & Engineering Co. Ltd., Greenock",
+      "builderRaw": "Scotts Shipbuilding & Engineering Co., Greenock · yard no. 447",
       "builders": [
         {
-          "id": "scotts-shipbuilding-and-engineering-co-ltd",
-          "name": "Scotts Shipbuilding & Engineering Co. Ltd.",
-          "raw": "Scotts Shipbuilding & Engineering Co. Ltd., Greenock"
+          "id": "scotts-shipbuilding-and-engineering-co",
+          "name": "Scotts Shipbuilding & Engineering Co.",
+          "raw": "Scotts Shipbuilding & Engineering Co., Greenock · yard no. 447"
         }
       ]
     },
@@ -1719,12 +1773,12 @@
       "path": "ships/rms-alcantara-1926.html",
       "url": "/ships/rms-alcantara-1926",
       "launchYear": "1926",
-      "builderRaw": "Harland & Wolff, Belfast (commonly cited)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 586",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast (commonly cited)"
+          "raw": "Harland & Wolff, Belfast · yard no. 586"
         }
       ]
     },
@@ -1761,12 +1815,12 @@
       "path": "ships/rms-andes-1939.html",
       "url": "/ships/rms-andes-1939",
       "launchYear": "1939",
-      "builderRaw": "Harland & Wolff, Belfast (yard no. commonly cited: 1005)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 1005",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast (yard no. commonly cited: 1005)"
+          "raw": "Harland & Wolff, Belfast · yard no. 1005"
         }
       ]
     },
@@ -1789,12 +1843,12 @@
       "path": "ships/rms-arundel-castle-1921.html",
       "url": "/ships/rms-arundel-castle-1921",
       "launchYear": "1919",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 455",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 455"
         }
       ]
     },
@@ -1817,26 +1871,26 @@
       "path": "ships/rms-asturias-1908.html",
       "url": "/ships/rms-asturias-1908",
       "launchYear": "1907",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 388",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 388"
         }
       ]
     },
     {
-      "name": "RMS Aurania",
+      "name": "RMS Aurania (1916)",
       "path": "ships/rms-aurania.html",
       "url": "/ships/rms-aurania",
       "launchYear": "1916",
-      "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne",
+      "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965",
       "builders": [
         {
           "id": "swan-hunter-and-wigham-richardson",
           "name": "Swan Hunter & Wigham Richardson",
-          "raw": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne"
+          "raw": "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965"
         }
       ]
     },
@@ -1845,12 +1899,12 @@
       "path": "ships/rms-baltic.html",
       "url": "/ships/rms-baltic",
       "launchYear": "1903",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 352",
       "builders": [
         {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "id": "harland-and-wolff-queen-s-island",
+          "name": "Harland & Wolff, Queen's Island",
+          "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 352"
         }
       ]
     },
@@ -1859,12 +1913,12 @@
       "path": "ships/rms-berengaria.html",
       "url": "/ships/rms-berengaria",
       "launchYear": "1912",
-      "builderRaw": "Vulcan Werft (Hamburg, Germany)",
+      "builderRaw": "A.G. Vulcan, Hamburg",
       "builders": [
         {
-          "id": "ag-vulcan",
-          "name": "AG Vulcan",
-          "raw": "Vulcan Werft (Hamburg, Germany)"
+          "id": "a-g-vulcan",
+          "name": "A.G. Vulcan",
+          "raw": "A.G. Vulcan, Hamburg"
         }
       ]
     },
@@ -1883,16 +1937,16 @@
       ]
     },
     {
-      "name": "RMS Britannic",
+      "name": "RMS Britannic (1874)",
       "path": "ships/rms-britannic-1874.html",
       "url": "/ships/rms-britannic-1874",
       "launchYear": "1874",
-      "builderRaw": "Harland & Wolff (Belfast, Ireland)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 83",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast, Ireland)"
+          "raw": "Harland & Wolff, Belfast · yard no. 83"
         }
       ]
     },
@@ -1957,132 +2011,6 @@
       "path": "ships/rms-campania.html",
       "url": "/ships/rms-campania",
       "launchYear": "1892",
-      "builderRaw": "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)",
-      "builders": [
-        {
-          "id": "fairfield-shipbuilding-and-engineering-co",
-          "name": "Fairfield Shipbuilding & Engineering Co.",
-          "raw": "Fairfield Shipbuilding & Engineering Co. (Govan, Scotland)"
-        }
-      ]
-    },
-    {
-      "name": "RMS Carinthia",
-      "path": "ships/rms-carinthia.html",
-      "url": "/ships/rms-carinthia",
-      "launchYear": "1955",
-      "builderRaw": "John Brown & Company, Clydebank",
-      "builders": [
-        {
-          "id": "john-brown-and-company",
-          "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
-        }
-      ]
-    },
-    {
-      "name": "RMS Carmania",
-      "path": "ships/rms-carmania.html",
-      "url": "/ships/rms-carmania",
-      "launchYear": "1905",
-      "builderRaw": "John Brown & Company, Clydebank (Scotland)",
-      "builders": [
-        {
-          "id": "john-brown-and-company",
-          "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank (Scotland)"
-        }
-      ]
-    },
-    {
-      "name": "RMS Caronia (1947)",
-      "path": "ships/rms-caronia-1947.html",
-      "url": "/ships/rms-caronia-1947",
-      "launchYear": "1947",
-      "builderRaw": "John Brown & Company, Clydebank (Scotland)",
-      "builders": [
-        {
-          "id": "john-brown-and-company",
-          "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank (Scotland)"
-        }
-      ]
-    },
-    {
-      "name": "RMS Carpathia",
-      "path": "ships/rms-carpathia.html",
-      "url": "/ships/rms-carpathia",
-      "launchYear": "1902",
-      "builderRaw": "C.S. Swan & Hunter (Wallsend-on-Tyne, England)",
-      "builders": [
-        {
-          "id": "c-s-swan-and-hunter",
-          "name": "C.S. Swan & Hunter",
-          "raw": "C.S. Swan & Hunter (Wallsend-on-Tyne, England)"
-        }
-      ]
-    },
-    {
-      "name": "RMS Cedric",
-      "path": "ships/rms-cedric.html",
-      "url": "/ships/rms-cedric",
-      "launchYear": "1902",
-      "builderRaw": "Harland & Wolff (Belfast)",
-      "builders": [
-        {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
-        }
-      ]
-    },
-    {
-      "name": "RMS Celtic",
-      "path": "ships/rms-celtic.html",
-      "url": "/ships/rms-celtic",
-      "launchYear": "1901",
-      "builderRaw": "Harland & Wolff (Belfast)",
-      "builders": [
-        {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
-        }
-      ]
-    },
-    {
-      "name": "RMS Empress of Australia",
-      "path": "ships/rms-empress-of-australia.html",
-      "url": "/ships/rms-empress-of-australia",
-      "launchYear": "1913",
-      "builderRaw": "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)",
-      "builders": [
-        {
-          "id": "ag-vulcan",
-          "name": "AG Vulcan",
-          "raw": "Vulcan-Werke (Stettin) (commonly cited for Tirpitz; confirm in registers for exact yard wording)"
-        }
-      ]
-    },
-    {
-      "name": "RMS Empress of Britain",
-      "path": "ships/rms-empress-of-britain.html",
-      "url": "/ships/rms-empress-of-britain",
-      "launchYear": "1930",
-      "builderRaw": "John Brown & Company (Clydebank, Scotland)",
-      "builders": [
-        {
-          "id": "john-brown-and-company",
-          "name": "John Brown & Company",
-          "raw": "John Brown & Company (Clydebank, Scotland)"
-        }
-      ]
-    },
-    {
-      "name": "RMS Empress of Canada",
-      "path": "ships/rms-empress-of-canada.html",
-      "url": "/ships/rms-empress-of-canada",
-      "launchYear": "1920",
       "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan",
       "builders": [
         {
@@ -2093,16 +2021,142 @@
       ]
     },
     {
-      "name": "RMS Empress of Ireland",
-      "path": "ships/rms-empress-of-ireland.html",
-      "url": "/ships/rms-empress-of-ireland",
-      "launchYear": "1906",
-      "builderRaw": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)",
+      "name": "RMS Carinthia (1956)",
+      "path": "ships/rms-carinthia.html",
+      "url": "/ships/rms-carinthia",
+      "launchYear": "1955",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 699",
+      "builders": [
+        {
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co., Clydebank · yard no. 699"
+        }
+      ]
+    },
+    {
+      "name": "RMS Carmania",
+      "path": "ships/rms-carmania.html",
+      "url": "/ships/rms-carmania",
+      "launchYear": "1905",
+      "builderRaw": "John Brown & Co., Clydebank",
+      "builders": [
+        {
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co., Clydebank"
+        }
+      ]
+    },
+    {
+      "name": "RMS Caronia (1947)",
+      "path": "ships/rms-caronia-1947.html",
+      "url": "/ships/rms-caronia-1947",
+      "launchYear": "1947",
+      "builderRaw": "John Brown & Co., Clydebank",
+      "builders": [
+        {
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co., Clydebank"
+        }
+      ]
+    },
+    {
+      "name": "RMS Carpathia",
+      "path": "ships/rms-carpathia.html",
+      "url": "/ships/rms-carpathia",
+      "launchYear": "1902",
+      "builderRaw": "Swan Hunter & Wigham Richardson, Wallsend",
+      "builders": [
+        {
+          "id": "swan-hunter-and-wigham-richardson",
+          "name": "Swan Hunter & Wigham Richardson",
+          "raw": "Swan Hunter & Wigham Richardson, Wallsend"
+        }
+      ]
+    },
+    {
+      "name": "RMS Cedric",
+      "path": "ships/rms-cedric.html",
+      "url": "/ships/rms-cedric",
+      "launchYear": "1902",
+      "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 337",
+      "builders": [
+        {
+          "id": "harland-and-wolff-queen-s-island",
+          "name": "Harland & Wolff, Queen's Island",
+          "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 337"
+        }
+      ]
+    },
+    {
+      "name": "RMS Celtic",
+      "path": "ships/rms-celtic.html",
+      "url": "/ships/rms-celtic",
+      "launchYear": "1901",
+      "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 335",
+      "builders": [
+        {
+          "id": "harland-and-wolff-queen-s-island",
+          "name": "Harland & Wolff, Queen's Island",
+          "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 335"
+        }
+      ]
+    },
+    {
+      "name": "RMS Empress of Australia",
+      "path": "ships/rms-empress-of-australia.html",
+      "url": "/ships/rms-empress-of-australia",
+      "launchYear": "1913",
+      "builderRaw": "AG Vulcan, Stettin",
+      "builders": [
+        {
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
+          "raw": "AG Vulcan, Stettin"
+        }
+      ]
+    },
+    {
+      "name": "RMS Empress of Britain",
+      "path": "ships/rms-empress-of-britain.html",
+      "url": "/ships/rms-empress-of-britain",
+      "launchYear": "1930",
+      "builderRaw": "John Brown & Company, Clydebank · yard no. 530",
+      "builders": [
+        {
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Company, Clydebank · yard no. 530"
+        }
+      ]
+    },
+    {
+      "name": "RMS Empress of Canada (1922)",
+      "path": "ships/rms-empress-of-canada.html",
+      "url": "/ships/rms-empress-of-canada",
+      "launchYear": "1920",
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 528",
       "builders": [
         {
           "id": "fairfield-shipbuilding-and-engineering-co",
           "name": "Fairfield Shipbuilding & Engineering Co.",
-          "raw": "Fairfield Shipbuilding & Engineering Co. (Govan, Glasgow, Scotland)"
+          "raw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 528"
+        }
+      ]
+    },
+    {
+      "name": "RMS Empress of Ireland",
+      "path": "ships/rms-empress-of-ireland.html",
+      "url": "/ships/rms-empress-of-ireland",
+      "launchYear": "1906",
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 443",
+      "builders": [
+        {
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
+          "raw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 443"
         }
       ]
     },
@@ -2111,12 +2165,12 @@
       "path": "ships/rms-empress-of-japan-1929.html",
       "url": "/ships/rms-empress-of-japan-1929",
       "launchYear": "1929",
-      "builderRaw": "Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)",
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 634",
       "builders": [
         {
           "id": "fairfield-shipbuilding-and-engineering-co",
           "name": "Fairfield Shipbuilding & Engineering Co.",
-          "raw": "Fairfield Shipbuilding & Engineering Co. (Govan, Clyde)"
+          "raw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 634"
         }
       ]
     },
@@ -2125,12 +2179,12 @@
       "path": "ships/rms-empress-of-russia.html",
       "url": "/ships/rms-empress-of-russia",
       "launchYear": "1912",
-      "builderRaw": "Fairfield Shipbuilding & Engineering Company, Govan",
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 484",
       "builders": [
         {
           "id": "fairfield-shipbuilding-and-engineering-co",
           "name": "Fairfield Shipbuilding & Engineering Co.",
-          "raw": "Fairfield Shipbuilding & Engineering Company, Govan"
+          "raw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 484"
         }
       ]
     },
@@ -2139,12 +2193,12 @@
       "path": "ships/rms-etruria-1884.html",
       "url": "/ships/rms-etruria-1884",
       "launchYear": "1884",
-      "builderRaw": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)",
+      "builderRaw": "John Elder & Co., Glasgow · yard no. 286",
       "builders": [
         {
           "id": "john-elder-and-co",
           "name": "John Elder & Co.",
-          "raw": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)"
+          "raw": "John Elder & Co., Glasgow · yard no. 286"
         }
       ]
     },
@@ -2153,12 +2207,12 @@
       "path": "ships/rms-franconia-1910.html",
       "url": "/ships/rms-franconia-1910",
       "launchYear": "1910",
-      "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne",
+      "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend",
       "builders": [
         {
           "id": "swan-hunter-and-wigham-richardson",
           "name": "Swan Hunter & Wigham Richardson",
-          "raw": "Swan, Hunter & Wigham Richardson, Wallsend-on-Tyne"
+          "raw": "Swan, Hunter & Wigham Richardson, Wallsend"
         }
       ]
     },
@@ -2181,26 +2235,26 @@
       "path": "ships/rms-homeric.html",
       "url": "/ships/rms-homeric",
       "launchYear": "1913",
-      "builderRaw": "F. Schichau, Danzig (then Germany; today Gdańsk)",
+      "builderRaw": "F. Schichau, Danzig · yard no. 891",
       "builders": [
         {
           "id": "f-schichau",
           "name": "F. Schichau",
-          "raw": "F. Schichau, Danzig (then Germany; today Gdańsk)"
+          "raw": "F. Schichau, Danzig · yard no. 891"
         }
       ]
     },
     {
-      "name": "RMS Ivernia",
+      "name": "RMS Ivernia (1955)",
       "path": "ships/rms-ivernia.html",
       "url": "/ships/rms-ivernia",
       "launchYear": "1954",
-      "builderRaw": "John Brown & Company, Clydebank",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 693",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
+          "raw": "John Brown & Co., Clydebank · yard no. 693"
         }
       ]
     },
@@ -2237,12 +2291,12 @@
       "path": "ships/rms-laurentic.html",
       "url": "/ships/rms-laurentic",
       "launchYear": "1908",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 394",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 394"
         }
       ]
     },
@@ -2251,8 +2305,14 @@
       "path": "ships/rms-lucania.html",
       "url": "/ships/rms-lucania",
       "launchYear": "1893",
-      "builderRaw": null,
-      "builders": []
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan, Scotland",
+      "builders": [
+        {
+          "id": "fairfield-shipbuilding-and-engineering-co-govan",
+          "name": "Fairfield Shipbuilding & Engineering Co., Govan",
+          "raw": "Fairfield Shipbuilding & Engineering Co., Govan, Scotland"
+        }
+      ]
     },
     {
       "name": "RMS Lusitania",
@@ -2315,12 +2375,12 @@
       "path": "ships/rms-megantic-1909.html",
       "url": "/ships/rms-megantic-1909",
       "launchYear": "1908",
-      "builderRaw": "Harland & Wolff, Belfast (Yard No. 358)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 399",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast (Yard No. 358)"
+          "raw": "Harland & Wolff, Belfast · yard no. 399"
         }
       ]
     },
@@ -2371,12 +2431,12 @@
       "path": "ships/rms-orontes.html",
       "url": "/ships/rms-orontes",
       "launchYear": "1902",
-      "builderRaw": "Vickers, Sons & Maxim Ltd., Barrow-in-Furness",
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 418",
       "builders": [
         {
-          "id": "vickers-sons-and-maxim-ltd",
-          "name": "Vickers, Sons & Maxim Ltd.",
-          "raw": "Vickers, Sons & Maxim Ltd., Barrow-in-Furness"
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
+          "raw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 418"
         }
       ]
     },
@@ -2399,12 +2459,12 @@
       "path": "ships/rms-queen-elizabeth.html",
       "url": "/ships/rms-queen-elizabeth",
       "launchYear": "1938",
-      "builderRaw": "John Brown & Company (Clydebank, Scotland)",
+      "builderRaw": "John Brown & Company, Clydebank · yard no. 552",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company (Clydebank, Scotland)"
+          "raw": "John Brown & Company, Clydebank · yard no. 552"
         }
       ]
     },
@@ -2427,26 +2487,26 @@
       "path": "ships/rms-queen-mary.html",
       "url": "/ships/rms-queen-mary",
       "launchYear": "1934",
-      "builderRaw": "John Brown & Company (Clydebank, Scotland)",
+      "builderRaw": "John Brown & Company, Clydebank · yard no. 534",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company (Clydebank, Scotland)"
+          "raw": "John Brown & Company, Clydebank · yard no. 534"
         }
       ]
     },
     {
-      "name": "RMS Saxonia",
+      "name": "RMS Saxonia (1954)",
       "path": "ships/rms-saxonia.html",
       "url": "/ships/rms-saxonia",
       "launchYear": "1954",
-      "builderRaw": "John Brown & Company, Clydebank",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 692",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
+          "raw": "John Brown & Co., Clydebank · yard no. 692"
         }
       ]
     },
@@ -2497,26 +2557,26 @@
       "path": "ships/rms-strathnaver.html",
       "url": "/ships/rms-strathnaver",
       "launchYear": "1931",
-      "builderRaw": "Vickers-Armstrongs (Barrow-in-Furness, England)",
+      "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 663",
       "builders": [
         {
           "id": "vickers-armstrongs",
           "name": "Vickers-Armstrongs",
-          "raw": "Vickers-Armstrongs (Barrow-in-Furness, England)"
+          "raw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 663"
         }
       ]
     },
     {
-      "name": "RMS Sylvania",
+      "name": "RMS Sylvania (1957)",
       "path": "ships/rms-sylvania.html",
       "url": "/ships/rms-sylvania",
       "launchYear": "1956",
-      "builderRaw": "John Brown & Company, Clydebank",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 704",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
+          "raw": "John Brown & Co., Clydebank · yard no. 704"
         }
       ]
     },
@@ -2525,12 +2585,12 @@
       "path": "ships/rms-teutonic.html",
       "url": "/ships/rms-teutonic",
       "launchYear": "1889",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 208",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 208"
         }
       ]
     },
@@ -2567,12 +2627,12 @@
       "path": "ships/rms-umbria-1884.html",
       "url": "/ships/rms-umbria-1884",
       "launchYear": "1884",
-      "builderRaw": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)",
+      "builderRaw": "John Elder & Co., Govan · yard no. 285",
       "builders": [
         {
           "id": "john-elder-and-co",
           "name": "John Elder & Co.",
-          "raw": "John Elder & Co. (Fairfield Shipbuilding, Govan, Clyde)"
+          "raw": "John Elder & Co., Govan · yard no. 285"
         }
       ]
     },
@@ -2609,12 +2669,12 @@
       "path": "ships/rms-windsor-castle-1921.html",
       "url": "/ships/rms-windsor-castle-1921",
       "launchYear": "1921",
-      "builderRaw": "John Brown & Co., Clydebank (Scotland)",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 456",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Co., Clydebank (Scotland)"
+          "raw": "John Brown & Co., Clydebank · yard no. 456"
         }
       ]
     },
@@ -2623,12 +2683,12 @@
       "path": "ships/rms-windsor-castle.html",
       "url": "/ships/rms-windsor-castle",
       "launchYear": "1959",
-      "builderRaw": "Cammell, Laird & Co., Birkenhead (England)",
+      "builderRaw": "Cammell Laird, Birkenhead · yard no. 1287",
       "builders": [
         {
           "id": "cammell-laird",
           "name": "Cammell Laird",
-          "raw": "Cammell, Laird & Co., Birkenhead (England)"
+          "raw": "Cammell Laird, Birkenhead · yard no. 1287"
         }
       ]
     },
@@ -2636,13 +2696,13 @@
       "name": "SS Adriatic (1872)",
       "path": "ships/ss-adriatic-1872.html",
       "url": "/ships/ss-adriatic-1872",
-      "launchYear": null,
-      "builderRaw": "Harland & Wolff, Belfast",
+      "launchYear": "1871",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 77",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 77"
         }
       ]
     },
@@ -2665,12 +2725,12 @@
       "path": "ships/ss-albert-ballin.html",
       "url": "/ships/ss-albert-ballin",
       "launchYear": "1922",
-      "builderRaw": "Blohm & Voss, Hamburg",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 403",
       "builders": [
         {
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
-          "raw": "Blohm & Voss, Hamburg"
+          "raw": "Blohm & Voss, Hamburg · yard no. 403"
         }
       ]
     },
@@ -2721,40 +2781,40 @@
       "path": "ships/ss-andrea-doria.html",
       "url": "/ships/ss-andrea-doria",
       "launchYear": "1951",
-      "builderRaw": "Ansaldo (Genoa / Sestri Ponente), Yard No. 918",
+      "builderRaw": "Ansaldo, Sestri Ponente, Genoa · yard no. 918",
       "builders": [
         {
-          "id": "ansaldo-genoa-sestri-ponente-yard-no-918",
-          "name": "Ansaldo (Genoa / Sestri Ponente), Yard No. 918",
-          "raw": "Ansaldo (Genoa / Sestri Ponente), Yard No. 918"
+          "id": "ansaldo-sestri-ponente",
+          "name": "Ansaldo, Sestri Ponente",
+          "raw": "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
         }
       ]
     },
     {
-      "name": "SS Arabic (1920)",
+      "name": "SS Arabic (1921)",
       "path": "ships/ss-arabic-1920.html",
       "url": "/ships/ss-arabic-1920",
       "launchYear": "1908",
-      "builderRaw": "AG Weser (Bremen)",
+      "builderRaw": "AG Weser, Bremen",
       "builders": [
         {
           "id": "ag-weser",
           "name": "AG Weser",
-          "raw": "AG Weser (Bremen)"
+          "raw": "AG Weser, Bremen"
         }
       ]
     },
     {
-      "name": "SS Arabic",
+      "name": "SS Arabic (1903)",
       "path": "ships/ss-arabic.html",
       "url": "/ships/ss-arabic",
       "launchYear": "1902",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 340",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 340"
         }
       ]
     },
@@ -2763,12 +2823,12 @@
       "path": "ships/ss-arcadia-1954.html",
       "url": "/ships/ss-arcadia-1954",
       "launchYear": "1953",
-      "builderRaw": "John Brown & Company, Clydebank",
+      "builderRaw": "John Brown & Company, Clydebank · yard no. 675",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
+          "raw": "John Brown & Company, Clydebank · yard no. 675"
         }
       ]
     },
@@ -2801,16 +2861,16 @@
       ]
     },
     {
-      "name": "SS Ascania",
+      "name": "SS Ascania (1911)",
       "path": "ships/ss-ascania-1911.html",
       "url": "/ships/ss-ascania-1911",
       "launchYear": "1911",
-      "builderRaw": "Swan Hunter, Wallsend",
+      "builderRaw": "Swan Hunter, Wallsend · yard no. 869",
       "builders": [
         {
           "id": "swan-hunter",
           "name": "Swan Hunter",
-          "raw": "Swan Hunter, Wallsend"
+          "raw": "Swan Hunter, Wallsend · yard no. 869"
         }
       ]
     },
@@ -2829,16 +2889,16 @@
       ]
     },
     {
-      "name": "SS Asturias",
+      "name": "RMS Asturias (1925)",
       "path": "ships/ss-asturias-1925.html",
       "url": "/ships/ss-asturias-1925",
       "launchYear": "1925",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 507",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 507"
         }
       ]
     },
@@ -2871,16 +2931,16 @@
       ]
     },
     {
-      "name": "SS Baltic",
+      "name": "SS Baltic (1871)",
       "path": "ships/ss-baltic-1871.html",
       "url": "/ships/ss-baltic-1871",
       "launchYear": "1871",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 75",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 75"
         }
       ]
     },
@@ -2889,12 +2949,12 @@
       "path": "ships/ss-barbarossa.html",
       "url": "/ships/ss-barbarossa",
       "launchYear": "1896",
-      "builderRaw": "Blohm & Voss, Hamburg, Germany",
+      "builderRaw": "Blohm & Voss, Hamburg",
       "builders": [
         {
-          "id": "blohm-and-voss-hamburg",
-          "name": "Blohm & Voss, Hamburg",
-          "raw": "Blohm & Voss, Hamburg, Germany"
+          "id": "blohm-and-voss",
+          "name": "Blohm & Voss",
+          "raw": "Blohm & Voss, Hamburg"
         }
       ]
     },
@@ -2917,12 +2977,12 @@
       "path": "ships/ss-belgenland.html",
       "url": "/ships/ss-belgenland",
       "launchYear": "1914",
-      "builderRaw": "Harland & Wolff (Belfast), yard no. 391",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 391",
       "builders": [
         {
-          "id": "harland-and-wolff-belfast-yard-no-391",
-          "name": "Harland & Wolff (Belfast), yard no. 391",
-          "raw": "Harland & Wolff (Belfast), yard no. 391"
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast · yard no. 391"
         }
       ]
     },
@@ -2959,12 +3019,12 @@
       "path": "ships/ss-bergensfjord.html",
       "url": "/ships/ss-bergensfjord",
       "launchYear": "1913",
-      "builderRaw": "Cammell Laird, Birkenhead",
+      "builderRaw": "Cammell Laird, Birkenhead · yard no. 787",
       "builders": [
         {
           "id": "cammell-laird",
           "name": "Cammell Laird",
-          "raw": "Cammell Laird, Birkenhead"
+          "raw": "Cammell Laird, Birkenhead · yard no. 787"
         }
       ]
     },
@@ -2983,16 +3043,16 @@
       ]
     },
     {
-      "name": "SS Bismarck",
+      "name": "SS Bismarck (1914)",
       "path": "ships/ss-bismarck-1914.html",
       "url": "/ships/ss-bismarck-1914",
       "launchYear": "1914",
-      "builderRaw": "Blohm & Voss, Hamburg",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 214",
       "builders": [
         {
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
-          "raw": "Blohm & Voss, Hamburg"
+          "raw": "Blohm & Voss, Hamburg · yard no. 214"
         }
       ]
     },
@@ -3029,12 +3089,12 @@
       "path": "ships/ss-bremen.html",
       "url": "/ships/ss-bremen",
       "launchYear": "1928",
-      "builderRaw": "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)",
+      "builderRaw": "A.G. Weser / Deschimag, Bremen · yard no. 872",
       "builders": [
         {
-          "id": "deutsche-schiff-und-maschinenbau-deschimag-ag-weser",
-          "name": "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser”",
-          "raw": "Deutsche Schiff- und Maschinenbau (Deschimag) / AG “Weser” (Bremen)"
+          "id": "a-g-weser-deschimag",
+          "name": "A.G. Weser / Deschimag",
+          "raw": "A.G. Weser / Deschimag, Bremen · yard no. 872"
         }
       ]
     },
@@ -3099,12 +3159,12 @@
       "path": "ships/ss-calgaric.html",
       "url": "/ships/ss-calgaric",
       "launchYear": "1917",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 442",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 442"
         }
       ]
     },
@@ -3113,12 +3173,12 @@
       "path": "ships/ss-canada-1896.html",
       "url": "/ships/ss-canada-1896",
       "launchYear": "1896",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 300",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 300"
         }
       ]
     },
@@ -3127,12 +3187,12 @@
       "path": "ships/ss-canberra.html",
       "url": "/ships/ss-canberra",
       "launchYear": "1960",
-      "builderRaw": "Harland & Wolff (Belfast, Northern Ireland)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 1621",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast, Northern Ireland)"
+          "raw": "Harland & Wolff, Belfast · yard no. 1621"
         }
       ]
     },
@@ -3141,12 +3201,12 @@
       "path": "ships/ss-cap-arcona.html",
       "url": "/ships/ss-cap-arcona",
       "launchYear": "1927",
-      "builderRaw": "Blohm & Voss (Hamburg)",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 476",
       "builders": [
         {
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
-          "raw": "Blohm & Voss (Hamburg)"
+          "raw": "Blohm & Voss, Hamburg · yard no. 476"
         }
       ]
     },
@@ -3155,12 +3215,12 @@
       "path": "ships/ss-cap-polonio.html",
       "url": "/ships/ss-cap-polonio",
       "launchYear": "1914",
-      "builderRaw": "Blohm & Voss, Hamburg",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 221",
       "builders": [
         {
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
-          "raw": "Blohm & Voss, Hamburg"
+          "raw": "Blohm & Voss, Hamburg · yard no. 221"
         }
       ]
     },
@@ -3169,12 +3229,12 @@
       "path": "ships/ss-cap-trafalgar.html",
       "url": "/ships/ss-cap-trafalgar",
       "launchYear": "1913",
-      "builderRaw": "AG Vulcan, Hamburg",
+      "builderRaw": "AG Vulcan, Hamburg · yard no. 334",
       "builders": [
         {
           "id": "ag-vulcan",
           "name": "AG Vulcan",
-          "raw": "AG Vulcan, Hamburg"
+          "raw": "AG Vulcan, Hamburg · yard no. 334"
         }
       ]
     },
@@ -3193,16 +3253,16 @@
       ]
     },
     {
-      "name": "RMS Caronia",
+      "name": "RMS Caronia (1904)",
       "path": "ships/ss-caronia.html",
       "url": "/ships/ss-caronia",
       "launchYear": "1904",
-      "builderRaw": "John Brown & Co., Clydebank",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 362",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Co., Clydebank"
+          "raw": "John Brown & Co., Clydebank · yard no. 362"
         }
       ]
     },
@@ -3239,12 +3299,12 @@
       "path": "ships/ss-ceramic.html",
       "url": "/ships/ss-ceramic",
       "launchYear": "1912",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 430",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 430"
         }
       ]
     },
@@ -3253,12 +3313,12 @@
       "path": "ships/ss-champlain.html",
       "url": "/ships/ss-champlain",
       "launchYear": "1931",
-      "builderRaw": "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France",
+      "builderRaw": "Saint-Nazaire / Penhoët",
       "builders": [
         {
-          "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet",
-          "name": "Chantiers & Ateliers de Saint-Nazaire, Penhoët",
-          "raw": "Chantiers & Ateliers de Saint-Nazaire, Penhoët, France"
+          "id": "saint-nazaire-penhoet",
+          "name": "Saint-Nazaire / Penhoët",
+          "raw": "Saint-Nazaire / Penhoët"
         }
       ]
     },
@@ -3281,12 +3341,12 @@
       "path": "ships/ss-city-of-new-york-1888.html",
       "url": "/ships/ss-city-of-new-york-1888",
       "launchYear": "1888",
-      "builderRaw": "J. & G. Thomson, Clydebank (Scotland)",
+      "builderRaw": "J. & G. Thomson, Clydebank, Scotland",
       "builders": [
         {
-          "id": "j-and-g-thomson",
-          "name": "J. & G. Thomson",
-          "raw": "J. & G. Thomson, Clydebank (Scotland)"
+          "id": "j-and-g-thomson-clydebank",
+          "name": "J. & G. Thomson, Clydebank",
+          "raw": "J. & G. Thomson, Clydebank, Scotland"
         }
       ]
     },
@@ -3320,20 +3380,6 @@
     },
     {
       "name": "SS Columbia",
-      "path": "ships/ss-columbia-anchor-line.html",
-      "url": "/ships/ss-columbia-anchor-line",
-      "launchYear": "1902",
-      "builderRaw": "D. & W. Henderson Ltd., Glasgow",
-      "builders": [
-        {
-          "id": "d-and-w-henderson-ltd",
-          "name": "D. & W. Henderson Ltd.",
-          "raw": "D. & W. Henderson Ltd., Glasgow"
-        }
-      ]
-    },
-    {
-      "name": "SS Columbia",
       "path": "ships/ss-columbia.html",
       "url": "/ships/ss-columbia",
       "launchYear": "1902",
@@ -3351,12 +3397,12 @@
       "path": "ships/ss-columbus-1924.html",
       "url": "/ships/ss-columbus-1924",
       "launchYear": "1922",
-      "builderRaw": "F. Schichau, Danzig (then Germany; now Gdańsk, Poland)",
+      "builderRaw": "F. Schichau, Danzig · yard no. 929",
       "builders": [
         {
           "id": "f-schichau",
           "name": "F. Schichau",
-          "raw": "F. Schichau, Danzig (then Germany; now Gdańsk, Poland)"
+          "raw": "F. Schichau, Danzig · yard no. 929"
         }
       ]
     },
@@ -3393,12 +3439,12 @@
       "path": "ships/ss-conte-biancamano.html",
       "url": "/ships/ss-conte-biancamano",
       "launchYear": "1925",
-      "builderRaw": "William Beardmore & Co., Dalmuir / Glasgow area",
+      "builderRaw": "William Beardmore & Co., Dalmuir · yard no. 640",
       "builders": [
         {
           "id": "william-beardmore-and-co",
           "name": "William Beardmore & Co.",
-          "raw": "William Beardmore & Co., Dalmuir / Glasgow area"
+          "raw": "William Beardmore & Co., Dalmuir · yard no. 640"
         }
       ]
     },
@@ -3407,12 +3453,12 @@
       "path": "ships/ss-conte-di-savoia.html",
       "url": "/ships/ss-conte-di-savoia",
       "launchYear": "1931",
-      "builderRaw": "Cantieri Riuniti dell’Adriatico (Trieste, Italy)",
+      "builderRaw": "Cantiere San Marco, Trieste · yard no. 783",
       "builders": [
         {
-          "id": "cantieri-riuniti-dell-adriatico",
-          "name": "Cantieri Riuniti dell’Adriatico",
-          "raw": "Cantieri Riuniti dell’Adriatico (Trieste, Italy)"
+          "id": "cantiere-san-marco",
+          "name": "Cantiere San Marco",
+          "raw": "Cantiere San Marco, Trieste · yard no. 783"
         }
       ]
     },
@@ -3421,12 +3467,12 @@
       "path": "ships/ss-conte-grande.html",
       "url": "/ships/ss-conte-grande",
       "launchYear": "1927",
-      "builderRaw": "Stabilimento Tecnico Triestino, Monfalcone",
+      "builderRaw": "Stabilimento Tecnico Triestino, Trieste",
       "builders": [
         {
           "id": "stabilimento-tecnico-triestino",
           "name": "Stabilimento Tecnico Triestino",
-          "raw": "Stabilimento Tecnico Triestino, Monfalcone"
+          "raw": "Stabilimento Tecnico Triestino, Trieste"
         }
       ]
     },
@@ -3435,12 +3481,12 @@
       "path": "ships/ss-conte-rosso.html",
       "url": "/ships/ss-conte-rosso",
       "launchYear": "1921",
-      "builderRaw": "William Beardmore & Company, Dalmuir, Scotland",
+      "builderRaw": "William Beardmore & Co., Dalmuir · yard no. 611",
       "builders": [
         {
-          "id": "william-beardmore-and-company-dalmuir",
-          "name": "William Beardmore & Company, Dalmuir",
-          "raw": "William Beardmore & Company, Dalmuir, Scotland"
+          "id": "william-beardmore-and-co",
+          "name": "William Beardmore & Co.",
+          "raw": "William Beardmore & Co., Dalmuir · yard no. 611"
         }
       ]
     },
@@ -3449,12 +3495,12 @@
       "path": "ships/ss-conte-verde.html",
       "url": "/ships/ss-conte-verde",
       "launchYear": "1922",
-      "builderRaw": "William Beardmore & Co., Dalmuir / Glasgow area",
+      "builderRaw": "William Beardmore & Co., Dalmuir · yard no. 612",
       "builders": [
         {
           "id": "william-beardmore-and-co",
           "name": "William Beardmore & Co.",
-          "raw": "William Beardmore & Co., Dalmuir / Glasgow area"
+          "raw": "William Beardmore & Co., Dalmuir · yard no. 612"
         }
       ]
     },
@@ -3491,12 +3537,12 @@
       "path": "ships/ss-corsican.html",
       "url": "/ships/ss-corsican",
       "launchYear": "1907",
-      "builderRaw": "Barclay, Curle & Company, Glasgow, Scotland",
+      "builderRaw": "Barclay, Curle & Co., Glasgow · yard no. 467",
       "builders": [
         {
-          "id": "barclay-curle-and-company-glasgow",
-          "name": "Barclay, Curle & Company, Glasgow",
-          "raw": "Barclay, Curle & Company, Glasgow, Scotland"
+          "id": "barclay-curle-and-company",
+          "name": "Barclay, Curle & Company",
+          "raw": "Barclay, Curle & Co., Glasgow · yard no. 467"
         }
       ]
     },
@@ -3505,12 +3551,12 @@
       "path": "ships/ss-cretic.html",
       "url": "/ships/ss-cretic",
       "launchYear": "1902",
-      "builderRaw": "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne",
+      "builderRaw": "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne · yard no. 381",
       "builders": [
         {
           "id": "r-and-w-hawthorn-leslie-and-co",
           "name": "R. & W. Hawthorn, Leslie & Co.",
-          "raw": "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne"
+          "raw": "R. & W. Hawthorn, Leslie & Co., Hebburn-on-Tyne · yard no. 381"
         }
       ]
     },
@@ -3547,12 +3593,12 @@
       "path": "ships/ss-cymric.html",
       "url": "/ships/ss-cymric",
       "launchYear": "1897",
-      "builderRaw": "Harland & Wolff, Queen’s Island, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 316",
       "builders": [
         {
-          "id": "harland-and-wolff-queen-s-island",
-          "name": "Harland & Wolff, Queen’s Island",
-          "raw": "Harland & Wolff, Queen’s Island, Belfast"
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast · yard no. 316"
         }
       ]
     },
@@ -3561,12 +3607,12 @@
       "path": "ships/ss-de-grasse.html",
       "url": "/ships/ss-de-grasse",
       "launchYear": "1924",
-      "builderRaw": "Cammell Laird, Birkenhead",
+      "builderRaw": "Cammell Laird & Co., Birkenhead · yard no. 886",
       "builders": [
         {
           "id": "cammell-laird",
           "name": "Cammell Laird",
-          "raw": "Cammell Laird, Birkenhead"
+          "raw": "Cammell Laird & Co., Birkenhead · yard no. 886"
         }
       ]
     },
@@ -3574,13 +3620,13 @@
       "name": "SS Deutschland (1900)",
       "path": "ships/ss-deutschland.html",
       "url": "/ships/ss-deutschland",
-      "launchYear": "1900",
-      "builderRaw": "AG Vulcan (Stettin)",
+      "launchYear": null,
+      "builderRaw": "A.G. Vulcan, Stettin",
       "builders": [
         {
-          "id": "ag-vulcan",
-          "name": "AG Vulcan",
-          "raw": "AG Vulcan (Stettin)"
+          "id": "a-g-vulcan",
+          "name": "A.G. Vulcan",
+          "raw": "A.G. Vulcan, Stettin"
         }
       ]
     },
@@ -3589,12 +3635,12 @@
       "path": "ships/ss-doric.html",
       "url": "/ships/ss-doric",
       "launchYear": "1922",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 573",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 573"
         }
       ]
     },
@@ -3603,12 +3649,12 @@
       "path": "ships/ss-drottningholm.html",
       "url": "/ships/ss-drottningholm",
       "launchYear": "1904",
-      "builderRaw": "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland",
+      "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow",
       "builders": [
         {
-          "id": "alexander-stephen-and-sons-linthouse-glasgow",
-          "name": "Alexander Stephen & Sons, Linthouse / Glasgow",
-          "raw": "Alexander Stephen & Sons, Linthouse / Glasgow, Scotland"
+          "id": "alexander-stephen-and-sons-linthouse",
+          "name": "Alexander Stephen & Sons, Linthouse",
+          "raw": "Alexander Stephen & Sons, Linthouse, Glasgow"
         }
       ]
     },
@@ -3617,12 +3663,12 @@
       "path": "ships/ss-duchess-of-atholl.html",
       "url": "/ships/ss-duchess-of-atholl",
       "launchYear": "1927",
-      "builderRaw": "William Beardmore & Co., Dalmuir",
+      "builderRaw": "William Beardmore & Co., Dalmuir · yard no. 648",
       "builders": [
         {
           "id": "william-beardmore-and-co",
           "name": "William Beardmore & Co.",
-          "raw": "William Beardmore & Co., Dalmuir"
+          "raw": "William Beardmore & Co., Dalmuir · yard no. 648"
         }
       ]
     },
@@ -3631,12 +3677,12 @@
       "path": "ships/ss-duchess-of-bedford.html",
       "url": "/ships/ss-duchess-of-bedford",
       "launchYear": "1928",
-      "builderRaw": "John Brown & Company, Clydebank",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 518",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
+          "raw": "John Brown & Co., Clydebank · yard no. 518"
         }
       ]
     },
@@ -3644,13 +3690,13 @@
       "name": "SS Duchess of Richmond",
       "path": "ships/ss-duchess-of-richmond.html",
       "url": "/ships/ss-duchess-of-richmond",
-      "launchYear": "1928",
-      "builderRaw": "John Brown & Company, Clydebank",
+      "launchYear": null,
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 523",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
+          "raw": "John Brown & Co., Clydebank · yard no. 523"
         }
       ]
     },
@@ -3659,12 +3705,12 @@
       "path": "ships/ss-duchess-of-york.html",
       "url": "/ships/ss-duchess-of-york",
       "launchYear": "1928",
-      "builderRaw": "John Brown & Company, Clydebank",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 524",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
+          "raw": "John Brown & Co., Clydebank · yard no. 524"
         }
       ]
     },
@@ -3672,13 +3718,13 @@
       "name": "SS Duilio",
       "path": "ships/ss-duilio.html",
       "url": "/ships/ss-duilio",
-      "launchYear": "1921",
-      "builderRaw": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne",
+      "launchYear": "1916",
+      "builderRaw": "Ansaldo, Sestri Ponente, Genoa",
       "builders": [
         {
-          "id": "swan-hunter-and-wigham-richardson",
-          "name": "Swan Hunter & Wigham Richardson",
-          "raw": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne"
+          "id": "ansaldo-sestri-ponente",
+          "name": "Ansaldo, Sestri Ponente",
+          "raw": "Ansaldo, Sestri Ponente, Genoa"
         }
       ]
     },
@@ -3715,12 +3761,12 @@
       "path": "ships/ss-espagne.html",
       "url": "/ships/ss-espagne",
       "launchYear": "1909",
-      "builderRaw": "Chantiers & Ateliers de Provence, Port-de-Bouc, France",
+      "builderRaw": "Chantiers & Ateliers de Provence, Port-de-Bouc · yard no. 30",
       "builders": [
         {
-          "id": "chantiers-and-ateliers-de-provence-port-de-bouc",
-          "name": "Chantiers & Ateliers de Provence, Port-de-Bouc",
-          "raw": "Chantiers & Ateliers de Provence, Port-de-Bouc, France"
+          "id": "chantiers-and-ateliers-de-provence",
+          "name": "Chantiers & Ateliers de Provence",
+          "raw": "Chantiers & Ateliers de Provence, Port-de-Bouc · yard no. 30"
         }
       ]
     },
@@ -3729,12 +3775,12 @@
       "path": "ships/ss-europa.html",
       "url": "/ships/ss-europa",
       "launchYear": "1928",
-      "builderRaw": "Blohm & Voss (Hamburg, Germany)",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 479",
       "builders": [
         {
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
-          "raw": "Blohm & Voss (Hamburg, Germany)"
+          "raw": "Blohm & Voss, Hamburg · yard no. 479"
         }
       ]
     },
@@ -3770,13 +3816,13 @@
       "name": "SS France (1912)",
       "path": "ships/ss-france-1912.html",
       "url": "/ships/ss-france-1912",
-      "launchYear": null,
-      "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire",
+      "launchYear": "1910",
+      "builderRaw": "Saint-Nazaire / Penhoët shipbuilding complex",
       "builders": [
         {
-          "id": "chantiers-de-l-atlantique",
-          "name": "Chantiers de l’Atlantique",
-          "raw": "Chantiers de l’Atlantique, Saint-Nazaire"
+          "id": "saint-nazaire-penhoet-shipbuilding-complex",
+          "name": "Saint-Nazaire / Penhoët shipbuilding complex",
+          "raw": "Saint-Nazaire / Penhoët shipbuilding complex"
         }
       ]
     },
@@ -3827,12 +3873,12 @@
       "path": "ships/ss-george-washington.html",
       "url": "/ships/ss-george-washington",
       "launchYear": "1908",
-      "builderRaw": "AG Vulcan (Vulcan-Werke), Stettin",
+      "builderRaw": "AG Vulcan, Stettin",
       "builders": [
         {
           "id": "ag-vulcan",
           "name": "AG Vulcan",
-          "raw": "AG Vulcan (Vulcan-Werke), Stettin"
+          "raw": "AG Vulcan, Stettin"
         }
       ]
     },
@@ -3841,12 +3887,12 @@
       "path": "ships/ss-germanic.html",
       "url": "/ships/ss-germanic",
       "launchYear": "1874",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 85",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 85"
         }
       ]
     },
@@ -3953,26 +3999,26 @@
       "path": "ships/ss-grosser-kurfurst.html",
       "url": "/ships/ss-grosser-kurfurst",
       "launchYear": "1899",
-      "builderRaw": "F. Schichau, Danzig, Germany",
+      "builderRaw": "F. Schichau, Danzig",
       "builders": [
         {
-          "id": "f-schichau-danzig",
-          "name": "F. Schichau, Danzig",
-          "raw": "F. Schichau, Danzig, Germany"
+          "id": "f-schichau",
+          "name": "F. Schichau",
+          "raw": "F. Schichau, Danzig"
         }
       ]
     },
     {
-      "name": "SS Hamburg",
+      "name": "SS Hamburg (1925)",
       "path": "ships/ss-hamburg-1925.html",
       "url": "/ships/ss-hamburg-1925",
       "launchYear": "1925",
-      "builderRaw": "Blohm & Voss, Hamburg (yard no. commonly cited: 473)",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 473",
       "builders": [
         {
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
-          "raw": "Blohm & Voss, Hamburg (yard no. commonly cited: 473)"
+          "raw": "Blohm & Voss, Hamburg · yard no. 473"
         }
       ]
     },
@@ -3981,12 +4027,12 @@
       "path": "ships/ss-ile-de-france.html",
       "url": "/ships/ss-ile-de-france",
       "launchYear": "1926",
-      "builderRaw": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)",
+      "builderRaw": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire",
       "builders": [
         {
           "id": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
           "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët",
-          "raw": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire, France)"
+          "raw": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire"
         }
       ]
     },
@@ -3995,12 +4041,12 @@
       "path": "ships/ss-imperator.html",
       "url": "/ships/ss-imperator",
       "launchYear": "1912",
-      "builderRaw": "AG Vulcan (Hamburg, Germany)",
+      "builderRaw": "A.G. Vulcan, Hamburg",
       "builders": [
         {
-          "id": "ag-vulcan",
-          "name": "AG Vulcan",
-          "raw": "AG Vulcan (Hamburg, Germany)"
+          "id": "a-g-vulcan",
+          "name": "A.G. Vulcan",
+          "raw": "A.G. Vulcan, Hamburg"
         }
       ]
     },
@@ -4009,12 +4055,12 @@
       "path": "ships/ss-independence.html",
       "url": "/ships/ss-independence",
       "launchYear": "1950",
-      "builderRaw": "Bethlehem Steel Corporation, Quincy, Massachusetts",
+      "builderRaw": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618",
       "builders": [
         {
-          "id": "bethlehem-steel-corporation-quincy",
-          "name": "Bethlehem Steel Corporation, Quincy",
-          "raw": "Bethlehem Steel Corporation, Quincy, Massachusetts"
+          "id": "bethlehem-steel-corporation-fore-river-shipyard-quincy",
+          "name": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy",
+          "raw": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618"
         }
       ]
     },
@@ -4065,12 +4111,12 @@
       "path": "ships/ss-kaiser-wilhelm-der-grosse.html",
       "url": "/ships/ss-kaiser-wilhelm-der-grosse",
       "launchYear": "1897",
-      "builderRaw": "Stettiner Vulcan (AG Vulcan), Stettin",
+      "builderRaw": "AG Vulcan, Stettin",
       "builders": [
         {
           "id": "ag-vulcan",
           "name": "AG Vulcan",
-          "raw": "Stettiner Vulcan (AG Vulcan), Stettin"
+          "raw": "AG Vulcan, Stettin"
         }
       ]
     },
@@ -4121,12 +4167,12 @@
       "path": "ships/ss-kronprinz-wilhelm.html",
       "url": "/ships/ss-kronprinz-wilhelm",
       "launchYear": "1901",
-      "builderRaw": "AG Vulcan, Stettin, Germany",
+      "builderRaw": "AG Vulcan, Stettin",
       "builders": [
         {
-          "id": "ag-vulcan-stettin",
-          "name": "AG Vulcan, Stettin",
-          "raw": "AG Vulcan, Stettin, Germany"
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
+          "raw": "AG Vulcan, Stettin"
         }
       ]
     },
@@ -4148,13 +4194,13 @@
       "name": "SS Kroonland",
       "path": "ships/ss-kroonland.html",
       "url": "/ships/ss-kroonland",
-      "launchYear": "1902",
-      "builderRaw": "John Brown & Co., Clydebank, Scotland",
+      "launchYear": null,
+      "builderRaw": "William Cramp & Sons, Philadelphia",
       "builders": [
         {
-          "id": "john-brown-and-co-clydebank",
-          "name": "John Brown & Co., Clydebank",
-          "raw": "John Brown & Co., Clydebank, Scotland"
+          "id": "william-cramp-and-sons",
+          "name": "William Cramp & Sons",
+          "raw": "William Cramp & Sons, Philadelphia"
         }
       ]
     },
@@ -4201,16 +4247,16 @@
       ]
     },
     {
-      "name": "SS Lafayette",
+      "name": "SS Lafayette (1915)",
       "path": "ships/ss-lafayette.html",
       "url": "/ships/ss-lafayette",
       "launchYear": "1914",
-      "builderRaw": "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area",
+      "builderRaw": "Chantiers et Ateliers de Provence, Port-de-Bouc",
       "builders": [
         {
           "id": "chantiers-et-ateliers-de-provence",
           "name": "Chantiers et Ateliers de Provence",
-          "raw": "Chantiers et Ateliers de Provence, Port-de-Bouc / Marseille area"
+          "raw": "Chantiers et Ateliers de Provence, Port-de-Bouc"
         }
       ]
     },
@@ -4233,12 +4279,12 @@
       "path": "ships/ss-lapland.html",
       "url": "/ships/ss-lapland",
       "launchYear": "1908",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 393",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 393"
         }
       ]
     },
@@ -4247,12 +4293,12 @@
       "path": "ships/ss-latlantique.html",
       "url": "/ships/ss-latlantique",
       "launchYear": "1930",
-      "builderRaw": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)",
+      "builderRaw": "Ateliers et Chantiers de Saint-Nazaire Penhoët · yard P6",
       "builders": [
         {
           "id": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
           "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët",
-          "raw": "Ateliers et Chantiers de Saint-Nazaire Penhoët (Saint-Nazaire)"
+          "raw": "Ateliers et Chantiers de Saint-Nazaire Penhoët · yard P6"
         }
       ]
     },
@@ -4345,34 +4391,40 @@
       "path": "ships/ss-macedonia.html",
       "url": "/ships/ss-macedonia",
       "launchYear": "1864",
-      "builderRaw": null,
-      "builders": []
-    },
-    {
-      "name": "SS Majestic",
-      "path": "ships/ss-majestic-1889.html",
-      "url": "/ships/ss-majestic-1889",
-      "launchYear": "1889",
-      "builderRaw": "Harland & Wolff (Belfast, Ireland)",
+      "builderRaw": "Sir James Laing & Sons, Sunderland",
       "builders": [
         {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast, Ireland)"
+          "id": "sir-james-laing-and-sons",
+          "name": "Sir James Laing & Sons",
+          "raw": "Sir James Laing & Sons, Sunderland"
         }
       ]
     },
     {
-      "name": "SS Maloja",
-      "path": "ships/ss-maloja.html",
-      "url": "/ships/ss-maloja",
-      "launchYear": "1923",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "name": "RMS Majestic (1889)",
+      "path": "ships/ss-majestic-1889.html",
+      "url": "/ships/ss-majestic-1889",
+      "launchYear": "1889",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 209",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 209"
+        }
+      ]
+    },
+    {
+      "name": "RMS Maloja (1923)",
+      "path": "ships/ss-maloja.html",
+      "url": "/ships/ss-maloja",
+      "launchYear": "1923",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 588",
+      "builders": [
+        {
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast · yard no. 588"
         }
       ]
     },
@@ -4451,12 +4503,12 @@
       "path": "ships/ss-marquette.html",
       "url": "/ships/ss-marquette",
       "launchYear": "1897",
-      "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow",
+      "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373",
       "builders": [
         {
           "id": "alexander-stephen-and-sons-linthouse",
           "name": "Alexander Stephen & Sons, Linthouse",
-          "raw": "Alexander Stephen & Sons, Linthouse, Glasgow"
+          "raw": "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
         }
       ]
     },
@@ -4531,10 +4583,10 @@
       ]
     },
     {
-      "name": "SS Minnetonka",
+      "name": "SS Minnetonka (1902)",
       "path": "ships/ss-minnetonka.html",
       "url": "/ships/ss-minnetonka",
-      "launchYear": "1901",
+      "launchYear": null,
       "builderRaw": "Harland & Wolff, Belfast",
       "builders": [
         {
@@ -4545,16 +4597,16 @@
       ]
     },
     {
-      "name": "SS Minnewaska",
+      "name": "SS Minnewaska (1908)",
       "path": "ships/ss-minnewaska.html",
       "url": "/ships/ss-minnewaska",
       "launchYear": "1908",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 397",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 397"
         }
       ]
     },
@@ -4577,12 +4629,12 @@
       "path": "ships/ss-monarch-of-bermuda.html",
       "url": "/ships/ss-monarch-of-bermuda",
       "launchYear": "1931",
-      "builderRaw": "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area",
+      "builderRaw": "Vickers-Armstrongs Ltd, High Walker · yard no. 1",
       "builders": [
         {
           "id": "vickers-armstrongs",
           "name": "Vickers-Armstrongs",
-          "raw": "Vickers-Armstrongs, Walker-on-Tyne / Newcastle area"
+          "raw": "Vickers-Armstrongs Ltd, High Walker · yard no. 1"
         }
       ]
     },
@@ -4605,12 +4657,12 @@
       "path": "ships/ss-montcalm.html",
       "url": "/ships/ss-montcalm",
       "launchYear": "1920",
-      "builderRaw": "John Brown & Co. Ltd., Clydebank, Scotland",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 464",
       "builders": [
         {
-          "id": "john-brown-and-co-ltd-clydebank",
-          "name": "John Brown & Co. Ltd., Clydebank",
-          "raw": "John Brown & Co. Ltd., Clydebank, Scotland"
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co., Clydebank · yard no. 464"
         }
       ]
     },
@@ -4619,12 +4671,12 @@
       "path": "ships/ss-montclare.html",
       "url": "/ships/ss-montclare",
       "launchYear": "1921",
-      "builderRaw": "John Brown & Co. Ltd., Clydebank, Scotland",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 465",
       "builders": [
         {
-          "id": "john-brown-and-co-ltd-clydebank",
-          "name": "John Brown & Co. Ltd., Clydebank",
-          "raw": "John Brown & Co. Ltd., Clydebank, Scotland"
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co., Clydebank · yard no. 465"
         }
       ]
     },
@@ -4647,26 +4699,26 @@
       "path": "ships/ss-montrose.html",
       "url": "/ships/ss-montrose",
       "launchYear": "1920",
-      "builderRaw": "John Brown & Co. Ltd., Clydebank, Scotland",
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 529",
       "builders": [
         {
-          "id": "john-brown-and-co-ltd-clydebank",
-          "name": "John Brown & Co. Ltd., Clydebank",
-          "raw": "John Brown & Co. Ltd., Clydebank, Scotland"
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
+          "raw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 529"
         }
       ]
     },
     {
-      "name": "SS Mooltan",
+      "name": "RMS Mooltan (1923)",
       "path": "ships/ss-mooltan.html",
       "url": "/ships/ss-mooltan",
       "launchYear": "1923",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 587",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 587"
         }
       ]
     },
@@ -4713,10 +4765,10 @@
       ]
     },
     {
-      "name": "SS New York",
+      "name": "SS New York (1927)",
       "path": "ships/ss-new-york.html",
       "url": "/ships/ss-new-york",
-      "launchYear": "1926",
+      "launchYear": null,
       "builderRaw": "Blohm & Voss, Hamburg",
       "builders": [
         {
@@ -4730,7 +4782,7 @@
       "name": "SS Nieuw Amsterdam (1906)",
       "path": "ships/ss-nieuw-amsterdam-1906.html",
       "url": "/ships/ss-nieuw-amsterdam-1906",
-      "launchYear": null,
+      "launchYear": "1905",
       "builderRaw": "Harland & Wolff, Belfast",
       "builders": [
         {
@@ -4745,12 +4797,12 @@
       "path": "ships/ss-nieuw-amsterdam.html",
       "url": "/ships/ss-nieuw-amsterdam",
       "launchYear": "1937",
-      "builderRaw": "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)",
+      "builderRaw": "Rotterdamsche Droogdok Maatschappij, Rotterdam · yard no. 200",
       "builders": [
         {
           "id": "rotterdamsche-droogdok-maatschappij-rdm",
           "name": "Rotterdamsche Droogdok Maatschappij (RDM)",
-          "raw": "Rotterdamsche Droogdok Maatschappij (Rotterdam, Netherlands)"
+          "raw": "Rotterdamsche Droogdok Maatschappij, Rotterdam · yard no. 200"
         }
       ]
     },
@@ -4759,12 +4811,12 @@
       "path": "ships/ss-nomadic.html",
       "url": "/ships/ss-nomadic",
       "launchYear": "1911",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff Ltd., Queen’s Island, Belfast",
       "builders": [
         {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "id": "harland-and-wolff-ltd-queen-s-island",
+          "name": "Harland & Wolff Ltd., Queen’s Island",
+          "raw": "Harland & Wolff Ltd., Queen’s Island, Belfast"
         }
       ]
     },
@@ -4815,12 +4867,12 @@
       "path": "ships/ss-oceanic-1871.html",
       "url": "/ships/ss-oceanic-1871",
       "launchYear": "1870",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 73",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 73"
         }
       ]
     },
@@ -4881,30 +4933,30 @@
       ]
     },
     {
-      "name": "SS Oronsay",
+      "name": "SS Oronsay (1925)",
       "path": "ships/ss-oronsay.html",
       "url": "/ships/ss-oronsay",
       "launchYear": "1924",
-      "builderRaw": "John Brown & Company, Clydebank",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 500",
       "builders": [
         {
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
-          "raw": "John Brown & Company, Clydebank"
+          "raw": "John Brown & Co., Clydebank · yard no. 500"
         }
       ]
     },
     {
-      "name": "SS Orontes",
+      "name": "SS Orontes (1929)",
       "path": "ships/ss-orontes.html",
       "url": "/ships/ss-orontes",
       "launchYear": "1929",
-      "builderRaw": "Vickers-Armstrong Ltd., Barrow-in-Furness",
+      "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 637",
       "builders": [
         {
           "id": "vickers-armstrongs",
           "name": "Vickers-Armstrongs",
-          "raw": "Vickers-Armstrong Ltd., Barrow-in-Furness"
+          "raw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 637"
         }
       ]
     },
@@ -4927,12 +4979,12 @@
       "path": "ships/ss-paris.html",
       "url": "/ships/ss-paris",
       "launchYear": "1916",
-      "builderRaw": "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)",
+      "builderRaw": "Chantiers & Ateliers de Penhoët, Saint-Nazaire",
       "builders": [
         {
-          "id": "chantiers-de-penhoet",
-          "name": "Chantiers de Penhoët",
-          "raw": "Chantiers de Penhoët (Saint-Nazaire, France) (commonly cited)"
+          "id": "chantiers-and-ateliers-de-penhoet",
+          "name": "Chantiers & Ateliers de Penhoët",
+          "raw": "Chantiers & Ateliers de Penhoët, Saint-Nazaire"
         }
       ]
     },
@@ -4941,12 +4993,12 @@
       "path": "ships/ss-pasteur.html",
       "url": "/ships/ss-pasteur",
       "launchYear": "1938",
-      "builderRaw": "Chantiers de l'Atlantique, Saint-Nazaire",
+      "builderRaw": "Chantiers de Penhoët / Saint-Nazaire · yard designation R8 commonly cited",
       "builders": [
         {
-          "id": "chantiers-de-l-atlantique",
-          "name": "Chantiers de l'Atlantique",
-          "raw": "Chantiers de l'Atlantique, Saint-Nazaire"
+          "id": "chantiers-de-penhoet-saint-nazaire",
+          "name": "Chantiers de Penhoët / Saint-Nazaire",
+          "raw": "Chantiers de Penhoët / Saint-Nazaire · yard designation R8 commonly cited"
         }
       ]
     },
@@ -4969,12 +5021,12 @@
       "path": "ships/ss-pennland.html",
       "url": "/ships/ss-pennland",
       "launchYear": "1920",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 457",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast · yard no. 457"
         }
       ]
     },
@@ -5052,7 +5104,7 @@
       "name": "SS President Lincoln",
       "path": "ships/ss-president-lincoln.html",
       "url": "/ships/ss-president-lincoln",
-      "launchYear": null,
+      "launchYear": "1903",
       "builderRaw": "Harland & Wolff, Belfast",
       "builders": [
         {
@@ -5123,12 +5175,12 @@
       "path": "ships/ss-queen-of-bermuda.html",
       "url": "/ships/ss-queen-of-bermuda",
       "launchYear": "1932",
-      "builderRaw": "Vickers-Armstrongs (Barrow-in-Furness, UK)",
+      "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 681",
       "builders": [
         {
           "id": "vickers-armstrongs",
           "name": "Vickers-Armstrongs",
-          "raw": "Vickers-Armstrongs (Barrow-in-Furness, UK)"
+          "raw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 681"
         }
       ]
     },
@@ -5151,12 +5203,12 @@
       "path": "ships/ss-reliance.html",
       "url": "/ships/ss-reliance",
       "launchYear": "1914",
-      "builderRaw": "Joh. C. Tecklenborg, Geestemünde (Bremerhaven)",
+      "builderRaw": "J.C. Tecklenborg, Geestemünde · yard no. 256",
       "builders": [
         {
-          "id": "joh-c-tecklenborg",
-          "name": "Joh. C. Tecklenborg",
-          "raw": "Joh. C. Tecklenborg, Geestemünde (Bremerhaven)"
+          "id": "j-c-tecklenborg",
+          "name": "J.C. Tecklenborg",
+          "raw": "J.C. Tecklenborg, Geestemünde · yard no. 256"
         }
       ]
     },
@@ -5165,12 +5217,12 @@
       "path": "ships/ss-republic-1903.html",
       "url": "/ships/ss-republic-1903",
       "launchYear": "1903",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 345",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 345"
         }
       ]
     },
@@ -5192,13 +5244,13 @@
       "name": "SS Resolute",
       "path": "ships/ss-resolute.html",
       "url": "/ships/ss-resolute",
-      "launchYear": "1914",
-      "builderRaw": "AG Weser, Bremen",
+      "launchYear": null,
+      "builderRaw": "AG Weser, Bremen · yard no. 193",
       "builders": [
         {
           "id": "ag-weser",
           "name": "AG Weser",
-          "raw": "AG Weser, Bremen"
+          "raw": "AG Weser, Bremen · yard no. 193"
         }
       ]
     },
@@ -5207,26 +5259,26 @@
       "path": "ships/ss-rex.html",
       "url": "/ships/ss-rex",
       "launchYear": "1931",
-      "builderRaw": "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)",
+      "builderRaw": "Ansaldo, Sestri Ponente, Genoa · hull no. 296",
       "builders": [
         {
-          "id": "ansaldo",
-          "name": "Ansaldo",
-          "raw": "Gio. Ansaldo & C. (Sestri Ponente yard, Genoa, Italy)"
+          "id": "ansaldo-sestri-ponente",
+          "name": "Ansaldo, Sestri Ponente",
+          "raw": "Ansaldo, Sestri Ponente, Genoa · hull no. 296"
         }
       ]
     },
     {
-      "name": "SS Rijndam",
+      "name": "SS Rijndam (1901)",
       "path": "ships/ss-rijndam-1901.html",
       "url": "/ships/ss-rijndam-1901",
       "launchYear": "1901",
-      "builderRaw": "Harland & Wolff, Belfast · Yard No. 336",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 336",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast · Yard No. 336"
+          "raw": "Harland & Wolff, Belfast · yard no. 336"
         }
       ]
     },
@@ -5249,12 +5301,12 @@
       "path": "ships/ss-roma.html",
       "url": "/ships/ss-roma",
       "launchYear": "1926",
-      "builderRaw": "Ansaldo (Sestri Ponente / Genoa)",
+      "builderRaw": "Ansaldo, Sestri Ponente, Genoa",
       "builders": [
         {
-          "id": "ansaldo",
-          "name": "Ansaldo",
-          "raw": "Ansaldo (Sestri Ponente / Genoa)"
+          "id": "ansaldo-sestri-ponente",
+          "name": "Ansaldo, Sestri Ponente",
+          "raw": "Ansaldo, Sestri Ponente, Genoa"
         }
       ]
     },
@@ -5277,12 +5329,12 @@
       "path": "ships/ss-rotterdam-1908.html",
       "url": "/ships/ss-rotterdam-1908",
       "launchYear": "1908",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 390",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 390"
         }
       ]
     },
@@ -5301,7 +5353,7 @@
       ]
     },
     {
-      "name": "SS Runic",
+      "name": "SS Runic (1900)",
       "path": "ships/ss-runic.html",
       "url": "/ships/ss-runic",
       "launchYear": "1900",
@@ -5357,35 +5409,30 @@
       ]
     },
     {
-      "name": "SS St. Louis",
+      "name": "MS St. Louis",
       "path": "ships/ss-st-louis.html",
       "url": "/ships/ss-st-louis",
       "launchYear": "1928",
-      "builderRaw": "Bremer Vulkan, Bremen-Vegesack, Germany",
+      "builderRaw": "Bremer Vulkan, Bremen-Vegesack · yard no. 670",
       "builders": [
         {
-          "id": "bremer-vulkan-bremen-vegesack",
-          "name": "Bremer Vulkan, Bremen-Vegesack",
-          "raw": "Bremer Vulkan, Bremen-Vegesack, Germany"
+          "id": "bremer-vulkan",
+          "name": "Bremer Vulkan",
+          "raw": "Bremer Vulkan, Bremen-Vegesack · yard no. 670"
         }
       ]
     },
     {
-      "name": "SS Statendam",
+      "name": "SS Statendam (1929)",
       "path": "ships/ss-statendam-1929.html",
       "url": "/ships/ss-statendam-1929",
       "launchYear": "1924",
-      "builderRaw": "Harland & Wolff (Belfast, 1921–24) · Wilton’s (Schiedam, 1927–29)",
+      "builderRaw": "Harland & Wolff, Belfast; completed by Wilton's, Schiedam",
       "builders": [
         {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast, 1921–24)"
-        },
-        {
-          "id": "wilton-s",
-          "name": "Wilton’s",
-          "raw": "Wilton’s (Schiedam, 1927–29)"
+          "id": "harland-and-wolff-belfast-completed-by-wilton-s",
+          "name": "Harland & Wolff, Belfast; completed by Wilton's",
+          "raw": "Harland & Wolff, Belfast; completed by Wilton's, Schiedam"
         }
       ]
     },
@@ -5408,17 +5455,17 @@
       "path": "ships/ss-strathaird.html",
       "url": "/ships/ss-strathaird",
       "launchYear": "1931",
-      "builderRaw": "Vickers-Armstrong, Barrow-in-Furness",
+      "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 664",
       "builders": [
         {
           "id": "vickers-armstrongs",
           "name": "Vickers-Armstrongs",
-          "raw": "Vickers-Armstrong, Barrow-in-Furness"
+          "raw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 664"
         }
       ]
     },
     {
-      "name": "SS Strathmore",
+      "name": "RMS Strathmore",
       "path": "ships/ss-strathmore.html",
       "url": "/ships/ss-strathmore",
       "launchYear": "1935",
@@ -5436,12 +5483,12 @@
       "path": "ships/ss-suevic.html",
       "url": "/ships/ss-suevic",
       "launchYear": "1900",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 333",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 333"
         }
       ]
     },
@@ -5450,12 +5497,12 @@
       "path": "ships/ss-traffic.html",
       "url": "/ships/ss-traffic",
       "launchYear": "1911",
-      "builderRaw": "Harland & Wolff (Belfast)",
+      "builderRaw": "Harland & Wolff, Belfast",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast)"
+          "raw": "Harland & Wolff, Belfast"
         }
       ]
     },
@@ -5478,12 +5525,12 @@
       "path": "ships/ss-us.html",
       "url": "/ships/ss-us",
       "launchYear": "1951",
-      "builderRaw": "Newport News Shipbuilding (Virginia, USA)",
+      "builderRaw": "Newport News Shipbuilding, Virginia",
       "builders": [
         {
           "id": "newport-news-shipbuilding-and-dry-dock-co",
           "name": "Newport News Shipbuilding & Dry Dock Co.",
-          "raw": "Newport News Shipbuilding (Virginia, USA)"
+          "raw": "Newport News Shipbuilding, Virginia"
         }
       ]
     },
@@ -5492,12 +5539,12 @@
       "path": "ships/ss-vaterland.html",
       "url": "/ships/ss-vaterland",
       "launchYear": "1913",
-      "builderRaw": "Blohm & Voss (Hamburg, Germany)",
+      "builderRaw": "Blohm & Voss, Hamburg",
       "builders": [
         {
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
-          "raw": "Blohm & Voss (Hamburg, Germany)"
+          "raw": "Blohm & Voss, Hamburg"
         }
       ]
     },
@@ -5506,12 +5553,12 @@
       "path": "ships/ss-veendam.html",
       "url": "/ships/ss-veendam",
       "launchYear": "1922",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Govan · yard no. 650",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Govan · yard no. 650"
         }
       ]
     },
@@ -5548,12 +5595,12 @@
       "path": "ships/ss-volendam.html",
       "url": "/ships/ss-volendam",
       "launchYear": "1922",
-      "builderRaw": "Harland & Wolff, Govan",
+      "builderRaw": "Harland & Wolff, Govan · yard no. 649",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Govan"
+          "raw": "Harland & Wolff, Govan · yard no. 649"
         }
       ]
     },
@@ -5562,12 +5609,12 @@
       "path": "ships/ss-warwick-castle.html",
       "url": "/ships/ss-warwick-castle",
       "launchYear": "1930",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 840",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 840"
         }
       ]
     },
@@ -5589,13 +5636,13 @@
       "name": "SS Westernland",
       "path": "ships/ss-westernland.html",
       "url": "/ships/ss-westernland",
-      "launchYear": "1918",
-      "builderRaw": "Harland & Wolff Ltd., Belfast",
+      "launchYear": "1917",
+      "builderRaw": "Harland & Wolff, Govan · yard no. 454",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff Ltd., Belfast"
+          "raw": "Harland & Wolff, Govan · yard no. 454"
         }
       ]
     },
@@ -5604,12 +5651,12 @@
       "path": "ships/ss-winchester-castle.html",
       "url": "/ships/ss-winchester-castle",
       "launchYear": "1929",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 825",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 825"
         }
       ]
     },
@@ -5632,12 +5679,12 @@
       "path": "ships/ss-zeeland.html",
       "url": "/ships/ss-zeeland",
       "launchYear": "1900",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "John Brown & Co., Clydebank · yard no. 342",
       "builders": [
         {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co., Clydebank · yard no. 342"
         }
       ]
     },
@@ -5660,12 +5707,12 @@
       "path": "ships/tatsuta-maru-1929.html",
       "url": "/ships/tatsuta-maru-1929",
       "launchYear": "1929",
-      "builderRaw": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki",
+      "builderRaw": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki · yard no. 451",
       "builders": [
         {
           "id": "mitsubishi-shipbuilding-and-engineering-co",
           "name": "Mitsubishi Shipbuilding & Engineering Co.",
-          "raw": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki"
+          "raw": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki · yard no. 451"
         }
       ]
     }
