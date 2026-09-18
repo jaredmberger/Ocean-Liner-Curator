@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T19:38:18.338Z",
+  "generatedAt": "2026-09-18T22:29:23.189Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithOperator": 300,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 83,
+    "canonicalOperators": 85,
     "aliasedOperatorGroups": 20
   },
   "operators": [
@@ -30,6 +30,7 @@
       "id": "cunard-line",
       "name": "Cunard Line",
       "rawValues": [
+        "Cunard",
         "Cunard Line",
         "Cunard Line (operated 1969–2008)",
         "Cunard Line / British & North American Royal Mail Steam Packet Company",
@@ -92,8 +93,8 @@
       "name": "Holland America Line",
       "rawValues": [
         "Holland America Line",
-        "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij)",
-        "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart-Maatschappij / NASM)"
+        "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart-Maatschappij / NASM)",
+        "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij"
       ],
       "shipCount": 8
     },
@@ -135,25 +136,6 @@
       "shipCount": 7
     },
     {
-      "id": "united-states-lines",
-      "name": "United States Lines",
-      "rawValues": [
-        "United States Lines",
-        "United States Lines (with U.S. Shipping Board ownership/oversight early on)"
-      ],
-      "shipCount": 6
-    },
-    {
-      "id": "italian-line",
-      "name": "Italian Line",
-      "rawValues": [
-        "Italia di Navigazione / Italian Line",
-        "Italian Line (Italia Società di Navigazione)",
-        "Italian Line (Italia di Navigazione)"
-      ],
-      "shipCount": 5
-    },
-    {
       "id": "navigazione-generale-italiana-ngi",
       "name": "Navigazione Generale Italiana (NGI)",
       "rawValues": [
@@ -171,13 +153,21 @@
       "shipCount": 5
     },
     {
+      "id": "united-states-lines",
+      "name": "United States Lines",
+      "rawValues": [
+        "United States Lines"
+      ],
+      "shipCount": 5
+    },
+    {
       "id": "anchor-line",
       "name": "Anchor Line",
       "rawValues": [
         "Anchor Line",
         "Anchor Line (Cunard-associated)",
         "Anchor Line (Glasgow)",
-        "Anchor Line (UK)"
+        "Anchor Line (Henderson Bros.)"
       ],
       "shipCount": 4
     },
@@ -205,6 +195,16 @@
         "Cunard White Star / Cunard Line",
         "Cunard-White Star Line (later Cunard Line)",
         "Cunard-White Star Line; later Cunard Line"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "italian-line",
+      "name": "Italian Line",
+      "rawValues": [
+        "Italia di Navigazione / Italian Line",
+        "Italian Line (Italia Società di Navigazione)",
+        "Italian Line (Italia di Navigazione)"
       ],
       "shipCount": 4
     },
@@ -288,7 +288,8 @@
       "id": "furness-bermuda-line",
       "name": "Furness Bermuda Line",
       "rawValues": [
-        "Furness Bermuda Line"
+        "Furness Bermuda Line",
+        "Furness Bermuda Line / Furness, Withy group"
       ],
       "shipCount": 2
     },
@@ -481,6 +482,14 @@
       "name": "Inman Line",
       "rawValues": [
         "Inman Line (later controlled/merged into International Navigation / American Line)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "italia-societa-di-navigazione-italian-line",
+      "name": "Italia Società di Navigazione / Italian Line",
+      "rawValues": [
+        "Italia Società di Navigazione / Italian Line"
       ],
       "shipCount": 1
     },
@@ -693,6 +702,14 @@
       "shipCount": 1
     },
     {
+      "id": "united-states-lines-on-behalf-of-the-u-s-shipping-board",
+      "name": "United States Lines on behalf of the U.S. Shipping Board",
+      "rawValues": [
+        "United States Lines on behalf of the U.S. Shipping Board"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "ward-line-agwi-interests",
       "name": "Ward Line / AGWI interests",
       "rawValues": [
@@ -755,7 +772,7 @@
       "path": "ships/ms-bermuda.html",
       "url": "/ships/ms-bermuda",
       "launchYear": "1927",
-      "operatorRaw": "Furness Bermuda Line",
+      "operatorRaw": "Furness Bermuda Line / Furness, Withy group",
       "operator": "Furness Bermuda Line"
     },
     {
@@ -1275,7 +1292,7 @@
       "path": "ships/rms-queen-mary-2.html",
       "url": "/ships/rms-queen-mary-2",
       "launchYear": "2003",
-      "operatorRaw": "Cunard Line",
+      "operatorRaw": "Cunard",
       "operator": "Cunard Line"
     },
     {
@@ -1355,7 +1372,7 @@
       "path": "ships/rms-transylvania.html",
       "url": "/ships/rms-transylvania",
       "launchYear": "1925",
-      "operatorRaw": "Anchor Line (UK)",
+      "operatorRaw": "Anchor Line (Henderson Bros.)",
       "operator": "Anchor Line"
     },
     {
@@ -2098,8 +2115,8 @@
       "name": "SS Gneisenau",
       "path": "ships/ss-gneisenau.html",
       "url": "/ships/ss-gneisenau",
-      "launchYear": "1934",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "launchYear": "1935",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
@@ -2347,8 +2364,8 @@
       "path": "ships/ss-leviathan.html",
       "url": "/ships/ss-leviathan",
       "launchYear": "1913",
-      "operatorRaw": "United States Lines (with U.S. Shipping Board ownership/oversight early on)",
-      "operator": "United States Lines"
+      "operatorRaw": "United States Lines on behalf of the U.S. Shipping Board",
+      "operator": "United States Lines on behalf of the U.S. Shipping Board"
     },
     {
       "name": "SS Liberté",
@@ -2459,8 +2476,8 @@
       "path": "ships/ss-michelangelo-1965.html",
       "url": "/ships/ss-michelangelo-1965",
       "launchYear": "1962",
-      "operatorRaw": "Italian Line (Italia Società di Navigazione)",
-      "operator": "Italian Line"
+      "operatorRaw": "Italia Società di Navigazione / Italian Line",
+      "operator": "Italia Società di Navigazione / Italian Line"
     },
     {
       "name": "SS Milwaukee",
@@ -2915,7 +2932,7 @@
       "path": "ships/ss-rotterdam-1959.html",
       "url": "/ships/ss-rotterdam-1959",
       "launchYear": "1958",
-      "operatorRaw": "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij)",
+      "operatorRaw": "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij",
       "operator": "Holland America Line"
     },
     {
