@@ -47,102 +47,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    :root{
-      --bg:#0a1110; --panel:rgba(15,27,25,0.78); --text:#e6dfcf; --muted:#b6ae9c;
-      --accent:#bfa46a; --border:rgba(191,164,106,0.28); --shadow:rgba(0,0,0,0.60);
-      --link:rgba(209,187,134,0.95); --font-sans:"Spectral", Georgia, "Times New Roman", serif;
-    }
-    html{ text-rendering: optimizeLegibility; }
-    h1,h2,h3{ letter-spacing: -0.02em; }
-    body{
-      margin:0; font-family:var(--font-sans); -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale; font-size:17px; line-height:1.55; letter-spacing:-0.01em;
-      color:var(--text);
-      background:
-        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
-        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
-      min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
-      padding:0 0 2.25rem;
-    }
-    .site-header{ width:100%; margin:0; padding:0.75rem 0; background:rgba(15,27,25,0.55); border-bottom:1px solid rgba(191,164,106,0.22); position:relative; z-index:5000; }
-    .header-inner{ width:min(780px, calc(100% - 1.5rem)); margin:0 auto; padding:0 2.75rem; }
-    .site-nav{ display:flex; align-items:center; gap:1.1rem; flex-wrap:wrap; font-size:0.95rem; }
-    .nav-link{ color:var(--link); text-decoration:none; border-bottom:1px solid rgba(191,164,106,0.35); padding-bottom:2px; }
-    .nav-link:hover{ border-bottom-color:rgba(191,164,106,0.65); }
-    .nav-dropdown{ position:relative; }
-    .nav-dropdown summary{ cursor:pointer; list-style:none; display:inline-block; -webkit-tap-highlight-color:transparent; }
-    .nav-dropdown summary::-webkit-details-marker{ display:none; }
-    .dropdown-panel{ position:absolute; top:1.8rem; left:0; min-width:240px; background:rgba(15,27,25,0.95); border:1px solid rgba(191,164,106,0.28); border-radius:12px; padding:0.75rem; display:flex; flex-direction:column; gap:0.35rem; z-index:6000; box-shadow:0 18px 45px rgba(0,0,0,0.45); }
-    .dropdown-panel a{ color:var(--link); text-decoration:none; border-bottom:1px solid rgba(191,164,106,0.25); padding:0.2rem 0; }
-    .dropdown-panel a:hover{ border-bottom-color:rgba(191,164,106,0.55); }
-
-    .container{
-      width:min(780px, calc(100% - 1.5rem)); margin:1.1rem auto 0; text-align:center;
-      background-color:rgba(15,27,25,0.78);
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
-      background-size:92px 92px; background-position:center 38%; background-repeat:repeat;
-      border:1px solid var(--border); border-radius:16px; padding:3.5rem 2.75rem;
-      box-shadow:0 26px 70px rgba(0,0,0,0.60), 0 0 0 1px rgba(191,164,106,0.08), 0 0 80px rgba(191,164,106,0.06);
-      position:relative; overflow:hidden; z-index:1;
-    }
-    .container::before{ content:""; position:absolute; inset:0; background:radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%), radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%); pointer-events:none; z-index:0; }
-    .container::after{ content:""; position:absolute; inset:-20%; background:radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%), radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%), radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%), radial-gradient(circle at center, rgba(191,164,106,0.095) 0%, rgba(191,164,106,0.075) 20%, rgba(191,164,106,0.045) 26%, transparent 34%), linear-gradient(45deg, transparent 47.5%, rgba(191,164,106,0.065) 49%, rgba(191,164,106,0.065) 51%, transparent 52.5%), linear-gradient(-45deg, transparent 47.5%, rgba(191,164,106,0.065) 49%, rgba(191,164,106,0.065) 51%, transparent 52.5%); pointer-events:none; z-index:0; opacity:0.95; }
-    .container > *{ position:relative; z-index:1; }
-    .secondary-nav{ display:flex; justify-content:center; gap:0.75rem; flex-wrap:wrap; }
-    .secondary-nav a{ display:inline-block; padding:0.38rem 0.7rem; font-size:0.85rem; color:var(--link); text-decoration:none; border:1px solid rgba(191,164,106,0.35); border-radius:9px; background:transparent; }
-    .secondary-nav a:hover{ border-color:rgba(191,164,106,0.65); }
-
-    .logo-mount{ width:min(680px, 100%); height:260px; margin:0 auto 1.05rem auto; padding:10px; border-radius:16px; border:1px solid rgba(191,164,106,0.55); background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.10)); box-shadow:0 14px 34px rgba(0,0,0,0.42); position:relative; overflow:hidden; }
-    .logo-mount::after{ content:""; position:absolute; inset:7px; border-radius:12px; border:1px solid rgba(191,164,106,0.22); pointer-events:none; }
-    .logo{ width:100%; height:100%; display:block; object-fit:cover; object-position:center; border-radius:12px; background:rgba(230,223,207,0.06); }
-    h1{ margin:0 0 0.35rem 0; font-family:"Libre Baskerville", serif; font-variant:small-caps; letter-spacing:0.09em; }
-    .subtitle{ margin:0 auto 1.1rem; color:rgba(230,223,207,0.72); font-size:0.98rem; max-width:64ch; line-height:1.6; }
-    .rule{ width:140px; height:2px; margin:1.1rem auto 1.6rem auto; background:linear-gradient(90deg, transparent, var(--accent), transparent); opacity:0.85; }
-    .guide{ text-align:left; max-width:680px; margin:0 auto; }
-    .guide h2{ margin:2.1rem 0 0.85rem; font-size:1.18rem; font-weight:600; letter-spacing:-0.01em; text-align:left; }
-    .guide p{ margin:0 0 1.15rem; max-width:none; font-size:1.02rem; line-height:1.72; color:rgba(230,223,207,0.88); text-align:left; }
-    .note{ margin:0.15rem 0 0; font-size:0.96rem; color:var(--muted); }
-    .facts{ margin-top:0.25rem; border:1px solid rgba(191,164,106,0.22); border-radius:14px; overflow:hidden; background:rgba(10,17,16,0.18); box-shadow:0 10px 24px rgba(0,0,0,0.28); }
-    .fact-row{ display:grid; grid-template-columns:1fr 1.55fr; gap:1rem; padding:0.8rem 1rem; border-top:1px solid rgba(191,164,106,0.14); }
-    .fact-row:first-child{ border-top:none; }
-    .fact-label{ color:rgba(230,223,207,0.70); font-size:0.93rem; }
-    .fact-value{ color:rgba(230,223,207,0.90); font-size:0.98rem; }
-    .mini-badge{ display:inline-block; margin-top:0.85rem; padding:0.32rem 0.55rem; font-size:0.74rem; letter-spacing:0.05em; border:1px solid rgba(191,164,106,0.28); color:rgba(230,223,207,0.78); border-radius:10px; opacity:0.92; }
-    .sources{ margin:0; padding-left:1.05rem; padding-bottom:2rem; color:rgba(230,223,207,0.86); }
-    .sources li{ margin:0.35rem 0; }
-    .sources a{ color:rgba(209,187,134,0.9); text-decoration:none; border-bottom:1px solid rgba(191,164,106,0.35); }
-    .sources a:hover{ border-bottom-color:rgba(191,164,106,0.65); }
-    .about-link{ margin-top:2.4rem; font-size:0.9rem; color:var(--muted); text-align:center; }
-    .about-link a{ color:rgba(209,187,134,0.9); text-decoration:none; border-bottom:1px solid rgba(191,164,106,0.35); }
-    footer{ margin-top:2.8rem; font-size:0.82rem; line-height:1.6; color:rgba(230,223,207,0.72); max-width:74ch; margin-left:auto; margin-right:auto; text-align:center; }
-    .flags-footer{ display:block; width:108px; height:auto; margin:1.1rem auto -0.2rem; opacity:0.42; filter:saturate(0.85) contrast(0.95) brightness(0.95); pointer-events:none; }
-    .copyright{ font-size:0.72rem; opacity:0.55; margin-top:1.2rem; }
-    @media (max-width:520px){
-      .site-header{ padding:0.65rem 0; }
-      .header-inner{ width:calc(100% - 1.5rem); padding:0 1.25rem; }
-      .container{ width:calc(100% - 1.5rem); margin:1.05rem auto 0; padding:1.9rem 1.25rem; border-radius:14px; background-size:54px 54px; }
-      .logo-mount{ width:100%; height:180px; padding:8px; margin-bottom:0.85rem; border-radius:14px; }
-      .logo-mount::after{ inset:6px; border-radius:11px; }
-      .logo{ border-radius:11px; }
-      h1{ font-size:1.75rem; letter-spacing:0.4px; margin-bottom:0.25rem; }
-      .rule{ width:110px; margin:0.9rem auto 1.25rem auto; }
-      .fact-row{ grid-template-columns:1fr; gap:0.35rem; }
-      footer{ margin-top:1.8rem; font-size:0.78rem; }
-      .flags-footer{ width:92px; margin:0.9rem auto 0; opacity:0.35; }
-    }
-    @media (prefers-reduced-motion: reduce){ .nav-link, .sources a{ transition:none; } }
-    .ask-gpt{ background:transparent; border:1px solid rgba(191,164,106,0.6); color:#bfa46a; padding:0.7rem 1.2rem; font-family:"Libre Baskerville", serif; letter-spacing:0.05em; text-transform:uppercase; font-size:0.9rem; cursor:pointer; transition:all 0.2s ease; }
-    .ask-gpt:hover{ background:rgba(191,164,106,0.08); border-color:#bfa46a; }
-    .gpt-modal{ position:fixed; inset:0; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s ease; z-index:9999; }
-    .gpt-modal.show{ opacity:1; pointer-events:auto; }
-    .gpt-modal-content{ background:#0a1110; border:1px solid rgba(191,164,106,0.6); padding:2rem; max-width:420px; text-align:center; font-family:"Spectral", serif; color:#bfa46a; }
-    .gpt-modal-title{ font-size:1rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:1rem; }
-    .gpt-modal-text{ font-size:0.9rem; margin-bottom:1.5rem; color:rgba(191,164,106,0.8); }
-    .gpt-modal-actions button{ background:transparent; border:1px solid rgba(191,164,106,0.6); color:#bfa46a; padding:0.6rem 1.2rem; margin:0 0.5rem; cursor:pointer; transition:all 0.2s ease; }
-    .gpt-modal-actions button:hover{ background:rgba(191,164,106,0.1); }
-  </style>
+  <link rel="stylesheet" href="/assets/ship-guide.css" />
   <link rel="stylesheet" href="/assets/nav.css">
 </head>
 
@@ -160,155 +65,63 @@
 
   <div class="guide">
     <h2>Overview</h2>
-    <p>
-      SS <em>Gothic</em> was a White Star Line passenger-and-cargo liner built by Harland &amp; Wolff at Belfast and launched in 1893. Although her name is sometimes encountered in general ocean-liner lists, she belongs less to the glamour category of express North Atlantic liners and more to White Star’s wider imperial and refrigerated-cargo network: a ship designed to move people, mail, and perishable cargo across long-distance routes.
-    </p>
-    <p>
-      Her most important early association was the United Kingdom–New Zealand service, operated in the White Star orbit alongside Shaw, Savill &amp; Albion interests. In that role, <em>Gothic</em> helped connect Britain and New Zealand through passenger movement and refrigerated cargo, especially the frozen-meat trade that shaped late nineteenth-century maritime logistics.
-    </p>
-    <p class="note">
-      Identity note: this page concerns the 1893 White Star Line <em>Gothic</em>, later <em>Gothland</em>. It is not the 1948 Shaw, Savill &amp; Albion <em>Gothic</em> used as a royal yacht during the 1953–54 Commonwealth tour.
-    </p>
-
-    <div class="facts" style="margin:1.25rem 0 1.4rem;">
-      <div class="fact-row">
-        <div class="fact-label">Research caution</div>
-        <div class="fact-value">
-          The name <em>Gothic</em> was reused and reassigned across different companies and eras. Always confirm whether a source refers to the 1893 White Star ship, the later name <em>Gothland</em>, or the twentieth-century Shaw Savill vessel.
-        </div>
-      </div>
-    </div>
+    <p>SS <em>Gothic</em> was a White Star Line passenger-cargo liner built by Harland &amp; Wolff for the long Britain–New Zealand trade. Launched on 28 June 1893 and completed on 28 November, she began her maiden voyage from London on 28 December 1893, reaching Wellington on 9 February 1894 via Plymouth, Cape Town, and Hobart.</p>
+    <p>Her later career was unusually fluid. A severe 1906 cargo fire led to an eight-month repair and major refit, after which she moved into Red Star Line service as <em>Gothland</em>. She later alternated between White Star and Red Star control, changing names and routes several times before final retirement in 1925 and scrapping in 1926.</p>
 
     <h2>Key Facts</h2>
-    <div class="facts" role="table" aria-label="Key facts table">
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Operator</div>
-        <div class="fact-value" role="cell">White Star Line / Oceanic Steam Navigation Company; later Red Star Line under the name <em>Gothland</em></div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Builder</div>
-        <div class="fact-value" role="cell">Harland &amp; Wolff, Belfast</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Yard number</div>
-        <div class="fact-value" role="cell">267</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Launched</div>
-        <div class="fact-value" role="cell">June 28, 1893</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Completed / handed over</div>
-        <div class="fact-value" role="cell">November 28, 1893</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Maiden voyage</div>
-        <div class="fact-value" role="cell">December 28, 1893</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Primary early route</div>
-        <div class="fact-value" role="cell">United Kingdom ↔ New Zealand service, commonly described via Cape Town</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Tonnage</div>
-        <div class="fact-value" role="cell">About 7,755 GRT</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Length / Beam</div>
-        <div class="fact-value" role="cell">About 490–493 ft long / 53 ft beam, depending on measurement convention</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Propulsion</div>
-        <div class="fact-value" role="cell">Twin screws; triple-expansion steam engines</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Service speed</div>
-        <div class="fact-value" role="cell">Often cited around 14 knots</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Passenger accommodation</div>
-        <div class="fact-value" role="cell">Modest passenger capacity compared with major express liners; early figures are commonly given as first- and third-class accommodation</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Cargo role</div>
-        <div class="fact-value" role="cell">Passenger and cargo liner with refrigerated cargo capacity for New Zealand trade</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Later names</div>
-        <div class="fact-value" role="cell"><em>Gothland</em> during Red Star Line service; name reverted during later White Star use</div>
-      </div>
-      <div class="fact-row" role="row">
-        <div class="fact-label" role="cell">Fate</div>
-        <div class="fact-value" role="cell">Sold for breaking up after service ended in the mid-1920s; scrapped in 1926</div>
-      </div>
+    <div class="facts" role="table" aria-label="SS Gothic key facts">
+      <div class="fact-row"><div class="fact-label">Operator as built</div><div class="fact-value">White Star Line / Oceanic Steam Navigation Company</div></div>
+      <div class="fact-row"><div class="fact-label">Builder</div><div class="fact-value">Harland &amp; Wolff, Belfast · yard no. 267</div></div>
+      <div class="fact-row"><div class="fact-label">Launched</div><div class="fact-value">28 June 1893</div></div>
+      <div class="fact-row"><div class="fact-label">Completed</div><div class="fact-value">28 November 1893</div></div>
+      <div class="fact-row"><div class="fact-label">Maiden voyage</div><div class="fact-value">28 December 1893 · London to Wellington</div></div>
+      <div class="fact-row"><div class="fact-label">First Wellington arrival</div><div class="fact-value">9 February 1894</div></div>
+      <div class="fact-row"><div class="fact-label">Tonnage</div><div class="fact-value">7,755 GRT</div></div>
+      <div class="fact-row"><div class="fact-label">Length / beam</div><div class="fact-value">About 493 ft / 53 ft</div></div>
+      <div class="fact-row"><div class="fact-label">Propulsion</div><div class="fact-value">Two triple-expansion engines · twin screws</div></div>
+      <div class="fact-row"><div class="fact-label">Speed</div><div class="fact-value">About 14.5 knots</div></div>
+      <div class="fact-row"><div class="fact-label">Primary early role</div><div class="fact-value">Passenger and refrigerated-cargo service to New Zealand</div></div>
+      <div class="fact-row"><div class="fact-label">1906 casualty</div><div class="fact-value">Major cargo fire; beached and flooded at Plymouth; eight-month repair/refit</div></div>
+      <div class="fact-row"><div class="fact-label">Later names</div><div class="fact-value"><em>Gothland</em> 1907–11 · <em>Gothic</em> 1911–13 · <em>Gothland</em> 1913–25</div></div>
+      <div class="fact-row"><div class="fact-label">1914 casualty</div><div class="fact-value">Grounded in the Isles of Scilly; repaired</div></div>
+      <div class="fact-row"><div class="fact-label">Fate</div><div class="fact-value">Retired 1925; broken up in 1926</div></div>
     </div>
 
-    <p class="note">
-      Note on specifications: published figures for length, tonnage, and passenger accommodation vary slightly across secondary sources and by refit period. For attribution work, the safest method is to match a document or artifact to a date, operator, route, and ship name in use at that time.
-    </p>
+    <h2>New Zealand Passenger and Refrigerated-Cargo Service</h2>
+    <p><em>Gothic</em> was built for a route where cargo earning power mattered as much as passenger accommodation. Refrigerated holds linked New Zealand agricultural production with British consumers, while the passenger side of the service supported migration, official travel, and long-distance family movement.</p>
+    <p>This makes her a particularly useful White Star counterexample to the company’s North Atlantic celebrity image. The economic center of the ship’s work was mixed traffic, not express speed.</p>
 
-    <h2>Design &amp; Construction (Context)</h2>
-    <p>
-      <em>Gothic</em> was built during a period when White Star’s fleet was not only about the Liverpool–New York express service. The company also operated and supplied ships for longer imperial routes where cargo earning power mattered as much as passenger prestige. Her refrigerated spaces are an important part of that story: they connect the ship to the late Victorian transformation of food supply, shipping technology, and colonial trade.
-    </p>
-    <p>
-      Unlike the great publicity liners, <em>Gothic</em> is best read as a working ocean liner: technically substantial, commercially useful, and tied to specific route economies. Her historical interest lies in that mixture of passenger service, cargo specialization, and corporate reassignment.
-    </p>
+    <h2>The 1893–94 Maiden Voyage</h2>
+    <p>The ship left London on 28 December 1893, called at Plymouth, Cape Town, and Hobart, and reached Wellington on 9 February 1894. Contemporary reports described the voyage as uneventful and noted the ship’s exceptional size for Australasian ports at the time.</p>
+    <p>For collecting, the maiden-voyage route is a strong provenance framework because the port sequence helps distinguish New Zealand-service material from later Atlantic <em>Gothland</em> records.</p>
 
-    <h2>Service History (Summary)</h2>
-    <p>
-      After completion in late 1893, <em>Gothic</em> entered service for White Star and became associated with the long New Zealand route. Sources commonly describe her operating between Britain and New Zealand via Cape Town, a service that placed her in a different category from the better-known Atlantic express liners. Her role was not simply to carry passengers; she also carried refrigerated cargo and helped support a regular commercial link between hemispheres.
-    </p>
-    <p>
-      Her career later became more complicated. She transferred between White Star and Red Star Line service, using the name <em>Gothland</em> during Red Star operation. Those changes matter because surviving tickets, postcards, passenger lists, and printed ephemera may use different company names even when they refer to the same hull.
-    </p>
+    <h2>The 1906 Fire and Refit</h2>
+    <p>In June 1906 a fire developed in cargo space while <em>Gothic</em> was returning from New Zealand. The fire re-intensified as the ship approached Britain. Passengers were landed at Plymouth, and the vessel was eventually beached and flooded to control the blaze.</p>
+    <p>Repairs lasted roughly eight months and included substantial passenger-space changes. This is a major configuration breakpoint: pre-1906 plans and capacity figures should not automatically be projected onto the post-repair ship.</p>
 
-    <h2>1906 Fire and Refit</h2>
-    <p>
-      One of the major incidents in <em>Gothic</em>’s career was a fire in 1906 while she was inbound from New Zealand. Accounts describe serious damage to cargo and passenger areas, followed by repairs and refitting. For collectors and researchers, this creates a useful dividing line: material before and after the fire may reflect different accommodation arrangements, service emphases, or printed descriptions.
-    </p>
-    <p>
-      Any object described as connected to the fire, repairs, or refit should be treated carefully. A strong claim would ideally include a dated document, a named owner or crew connection, or a source that ties the item to the incident rather than merely to the ship’s name.
-    </p>
+    <h2>Gothland and Red Star Service</h2>
+    <p>After the repair period, the ship moved to Red Star Line service and became <em>Gothland</em>. Her operating geography shifted from the New Zealand trade to European–North American routes such as Antwerp–Philadelphia.</p>
+    <p>She returned to White Star control as <em>Gothic</em> in 1911, then went back to Red Star as <em>Gothland</em> in 1913. Those repeated changes make operator and year essential cataloging fields.</p>
 
-    <h2>White Star, Red Star, and the Name <em>Gothland</em></h2>
-    <p>
-      The later career of <em>Gothic</em> illustrates the corporate complexity of early twentieth-century Atlantic shipping. Under Red Star Line she operated as <em>Gothland</em>, and later references may describe Antwerp, Philadelphia, Quebec, Montreal, New York, or other service patterns depending on the period being discussed.
-    </p>
-    <p>
-      This is especially important for evidence-first cataloging. A postcard captioned <em>Gothland</em> is not automatically unrelated to White Star’s <em>Gothic</em>; it may represent the same vessel under another operator. Conversely, a generic “Gothic” label is not enough to prove White Star association without date and context.
-    </p>
+    <h2>Grounding, War, and Final Service</h2>
+    <p>In June 1914 <em>Gothland</em> grounded in the Isles of Scilly while carrying passengers. The ship was repaired and later continued irregular wartime service, including voyages associated with relief work.</p>
+    <p>After the war she underwent further refit and returned to Atlantic immigrant service. A final White Star-linked voyage from Naples to New York occurred in 1921 while she still carried the name <em>Gothland</em>. She remained intermittently active until her final sailing in 1925.</p>
 
-    <h2>Collecting Profile</h2>
-    <p>
-      Surviving material connected to <em>Gothic</em> may include postcards, passenger-list references, immigration records, printed route material, shipping notices, photographs, and later fleet-list references. Because she was not one of White Star’s most famous liners, high-quality documentation can be more valuable than decorative appeal.
-    </p>
-    <p>
-      Useful evidence anchors include: the vessel name in use at the time, operator marks, route references, port pairings, dated passenger records, Harland &amp; Wolff construction references, and whether the item’s format matches White Star, Red Star, or later commemorative production.
-    </p>
+    <h2>Passenger Capacity After the 1906 Fire</h2><p>The eight-month repair after the 1906 fire did more than restore damaged spaces. Published summaries indicate that accommodation was reconfigured, with cargo space converted for additional passenger use. This means capacity figures attached to the 1890s ship should not be assumed to describe the later <em>Gothland</em> period.</p><p>For deck plans and interior photographs, the fire is therefore a hard provenance breakpoint. Dating an image to “before 1906” or “after the 1906 refit” can be more informative than a generic ship-name label.</p><h2>Boer War and Relief Context</h2><p>During 1902, <em>Gothic</em> carried New Zealand troops home from South Africa after the Boer War, adding a military-repatriation episode to an otherwise commercial New Zealand career. During the First World War, later <em>Gothland</em> service included irregular Atlantic voyages and relief-related work.</p><p>These episodes should not be allowed to dominate the ship’s biography, but they matter when interpreting military or humanitarian documents that otherwise seem disconnected from a passenger-cargo liner.</p><h2>Collecting Across Gothic and Gothland</h2><p>The repeated name and operator changes create an unusually rich but confusing paper trail. White Star material from 1893–1907 belongs to <em>Gothic</em>; Red Star material from 1907–11 belongs to <em>Gothland</em>; White Star restored the name <em>Gothic</em> in 1911; Red Star again used <em>Gothland</em> from 1913. The 1921 White Star voyage under the <em>Gothland</em> name is the notable exception.</p><p>For attribution, date, line imprint, route, and ship name must be read together. A postcard marked <em>Gothland</em> can still document a hull originally built for White Star, while an undated “Gothic” item may refer to another ship entirely.</p><h2>Name Reuse and Later Gothic</h2><p>The 1893 vessel should not be confused with Shaw, Savill &amp; Albion’s much later <em>Gothic</em> of 1948, which is famous for royal-tour service. Builder, year, operator, and the name <em>Gothland</em> are especially useful discriminators when cataloging photographs or ephemera.</p><p>Her long career also demonstrates how one hull could move between imperial cargo service, immigrant transport, relief work, and multiple corporate identities without losing its underlying continuity.</p><p>That continuity matters.</p><h2>Why Gothic Matters</h2>
+    <p><em>Gothic</em> matters because she combines two overlooked themes: White Star’s New Zealand refrigerated-cargo network and the fluid corporate world of White Star/Red Star transfers within the wider IMM system.</p>
+    <p>For attribution, date and operator are decisive. “Gothic” generally points to White Star phases; “Gothland” usually points to Red Star service, except for the exceptional 1921 White Star voyage under the later name.</p>
 
-    <h2>Interpretive Notes</h2>
-    <p>
-      <em>Gothic</em> is a good reminder that White Star history is broader than <em>Oceanic</em>, <em>Olympic</em>, and <em>Titanic</em>. Her importance is quieter but real: she represents the company’s participation in long-distance trade, refrigerated cargo movement, and route systems that tied Britain to New Zealand and other imperial markets.
-    </p>
-    <p>
-      The best interpretation avoids forcing her into the mold of a luxury legend. She is better understood as a practical ocean liner whose working life reflects the economic machinery behind the passenger-and-cargo liner age.
-    </p>
-
-    <span class="mini-badge">Evidence-first ship guide</span>
+      <span class="mini-badge">Evidence-first ship guide</span>
 
     <h2>Sources (Selected)</h2>
     <p class="note">
       This list is intentionally conservative.
     </p>
     <ul class="sources">
-      <li><a href="/sources">Ocean Liner Curator — Sources (master bibliography)</a></li>
-      <li><a href="https://www.titanicbelfast.com/history-of-titanic/ship-fact-files/gothic-fact-file/" target="_blank" rel="noopener">Titanic Belfast — <em>Gothic</em> Fact File</a></li>
-      <li><a href="https://www.norwayheritage.com/p_ship.asp?sh=gotho" target="_blank" rel="noopener">Norway Heritage — S/S <em>Gothic</em>, White Star Line</a></li>
-      <li><a href="https://www.whitestarhistory.com/gothic" target="_blank" rel="noopener">White Star History — SS <em>Gothic</em></a></li>
-      <li><a href="https://www.benjidog.co.uk/TheShipsList/WhiteStarLine.php" target="_blank" rel="noopener">TheShipsList — White Star Line fleet list</a></li>
-      <li><a href="https://en.wikipedia.org/wiki/SS_Gothic_(1893)" target="_blank" rel="noopener">Wikipedia — SS <em>Gothic</em> (1893) (use as a pointer map; verify key claims in primary sources)</a></li>
-    </ul>
+        <li><a href="/sources">Ocean Liner Curator — Sources (master bibliography)</a></li>
+        <li><a href="https://www.whitestarhistory.com/gothic" rel="noopener noreferrer">White Star History — SS <em>Gothic</em></a></li>
+        <li><a href="https://en.wikipedia.org/wiki/SS_Gothic_(1893)" rel="noopener noreferrer">SS <em>Gothic</em> (1893) — chronology and bibliography</a></li>
+      </ul>
   </div>
 
   <p>
