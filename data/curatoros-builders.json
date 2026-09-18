@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-18T23:19:35.560Z",
+  "generatedAt": "2026-09-18T23:53:45.494Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 312,
@@ -9,7 +9,7 @@
     "guidesWithBuilder": 300,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
-    "operatorValuesRecoveredFromSubtitle": 9,
+    "operatorValuesRecoveredFromSubtitle": 10,
     "guidesMissingLaunch": 2,
     "builderVariantGroups": 31,
     "suspiciousLaunchDatesWithoutYear": 1
@@ -278,6 +278,7 @@
         "Harland & Wolff, Belfast · yard no. 1621",
         "Harland & Wolff, Belfast · yard no. 208",
         "Harland & Wolff, Belfast · yard no. 209",
+        "Harland & Wolff, Belfast · yard no. 267",
         "Harland & Wolff, Belfast · yard no. 300",
         "Harland & Wolff, Belfast · yard no. 316",
         "Harland & Wolff, Belfast · yard no. 327",
@@ -1280,6 +1281,17 @@
       "shipCount": 1
     },
     {
+      "id": "malcolmson-and-co",
+      "name": "Malcolmson & Co.",
+      "names": [
+        "Malcolmson & Co."
+      ],
+      "rawValues": [
+        "Malcolmson & Co., Waterford"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "mitsubishi-shipbuilding-and-engineering-co",
       "name": "Mitsubishi Shipbuilding & Engineering Co.",
       "names": [
@@ -1408,17 +1420,6 @@
       ],
       "rawValues": [
         "Scotts Shipbuilding & Engineering Co. Ltd., Greenock"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "sir-james-laing-and-sons",
-      "name": "Sir James Laing & Sons",
-      "names": [
-        "Sir James Laing & Sons"
-      ],
-      "rawValues": [
-        "Sir James Laing & Sons, Sunderland"
       ],
       "shipCount": 1
     },
@@ -3914,12 +3915,12 @@
       "path": "ships/ss-gothic-white-star-line.html",
       "url": "/ships/ss-gothic-white-star-line",
       "launchYear": "1893",
-      "builderRaw": "Harland & Wolff, Belfast",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 267",
       "builders": [
         {
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
-          "raw": "Harland & Wolff, Belfast"
+          "raw": "Harland & Wolff, Belfast · yard no. 267"
         }
       ]
     },
@@ -4375,13 +4376,13 @@
       "name": "SS Macedonia",
       "path": "ships/ss-macedonia.html",
       "url": "/ships/ss-macedonia",
-      "launchYear": "1864",
-      "builderRaw": "Sir James Laing & Sons, Sunderland",
+      "launchYear": "1863",
+      "builderRaw": "Malcolmson & Co., Waterford",
       "builders": [
         {
-          "id": "sir-james-laing-and-sons",
-          "name": "Sir James Laing & Sons",
-          "raw": "Sir James Laing & Sons, Sunderland"
+          "id": "malcolmson-and-co",
+          "name": "Malcolmson & Co.",
+          "raw": "Malcolmson & Co., Waterford"
         }
       ]
     },
