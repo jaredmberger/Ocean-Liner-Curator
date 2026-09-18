@@ -1,48 +1,44 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T02:01:16.754Z",
+  "generatedAt": "2026-09-18T10:10:14.539Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 302,
-    "guidesWithOperator": 302,
+    "shipGuides": 300,
+    "guidesWithOperator": 300,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 88,
-    "aliasedOperatorGroups": 19
+    "canonicalOperators": 83,
+    "aliasedOperatorGroups": 20
   },
   "operators": [
     {
       "id": "white-star-line",
       "name": "White Star Line",
       "rawValues": [
+        "Oceanic Steam Navigation Co. (White Star Line)",
         "Oceanic Steam Navigation Co. / White Star Line",
         "Oceanic Steam Navigation Company (White Star Line)",
         "Oceanic Steam Navigation Company / White Star Line",
         "White Star Line",
-        "White Star Line (Oceanic Steam Navigation Co. Ltd.)",
-        "White Star Line (Oceanic Steam Navigation Co.)",
-        "White Star Line (Oceanic Steam Navigation Company)",
         "White Star Line (commercial passenger service planned, but not realized)",
-        "White Star Line (later Cunard–White Star, 1934)",
-        "White Star Line (later also chartered to Red Star Line)",
-        "White Star Line / Oceanic Steam Navigation Company; later Red Star Line under the name Gothland"
+        "White Star Line / Oceanic Steam Navigation Co.",
+        "White Star Line / Oceanic Steam Navigation Company; later Red Star Line under the name Gothland",
+        "White Star Line; briefly Cunard-White Star after the 1934 merger"
       ],
-      "shipCount": 38
+      "shipCount": 37
     },
     {
       "id": "cunard-line",
       "name": "Cunard Line",
       "rawValues": [
-        "Cunard (then Cunard White Star Line)",
         "Cunard Line",
-        "Cunard Line (Cunard Steamship Company)",
         "Cunard Line (operated 1969–2008)",
         "Cunard Line / British & North American Royal Mail Steam Packet Company",
         "Cunard Line / Cunard Steamship Company Ltd.",
+        "Cunard Line; British Government hire throughout active career",
         "Cunard Line; later Cunard-White Star during the merger era, then Cunard again",
-        "Cunard Steamship Company (Cunard Line)",
-        "Cunard Steamship Company / Cunard Line"
+        "Cunard Steamship Company"
       ],
-      "shipCount": 35
+      "shipCount": 34
     },
     {
       "id": "hamburg-america-line-hapag",
@@ -51,103 +47,92 @@
         "Hamburg America Line",
         "Hamburg America Line (HAPAG)",
         "Hamburg America Line / HAPAG",
+        "Hamburg-America Line",
         "Hamburg-America Line (HAPAG)",
         "Hamburg-Amerika Line (HAPAG)"
       ],
-      "shipCount": 22
+      "shipCount": 23
     },
     {
       "id": "norddeutscher-lloyd-north-german-lloyd",
       "name": "Norddeutscher Lloyd (North German Lloyd)",
       "rawValues": [
-        "Norddeutscher Lloyd (Bremen)",
+        "Norddeutscher Lloyd",
         "Norddeutscher Lloyd (North German Lloyd)",
         "Norddeutscher Lloyd / North German Lloyd"
       ],
-      "shipCount": 17
+      "shipCount": 18
     },
     {
       "id": "compagnie-generale-transatlantique-french-line",
       "name": "Compagnie Générale Transatlantique (French Line)",
       "rawValues": [
+        "Compagnie Générale Transatlantique",
         "Compagnie Générale Transatlantique (CGT / French Line)",
         "Compagnie Générale Transatlantique (French Line / C.G.T.)",
         "Compagnie Générale Transatlantique (French Line)",
         "Compagnie Générale Transatlantique / French Line"
       ],
-      "shipCount": 12
-    },
-    {
-      "id": "p-and-o",
-      "name": "P&O",
-      "rawValues": [
-        "P&O (Peninsular and Oriental Steam Navigation Co.)",
-        "Peninsular & Oriental Steam Navigation Co. (P&O)",
-        "Peninsular & Oriental Steam Navigation Company (P&O)",
-        "Peninsular and Oriental Steam Navigation Company (P&O)"
-      ],
-      "shipCount": 9
-    },
-    {
-      "id": "holland-america-line",
-      "name": "Holland America Line",
-      "rawValues": [
-        "Holland America Line",
-        "Holland America Line (NASM)",
-        "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij / NASM)",
-        "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij)",
-        "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart-Maatschappij / NASM)"
-      ],
-      "shipCount": 8
-    },
-    {
-      "id": "orient-line",
-      "name": "Orient Line",
-      "rawValues": [
-        "Orient Steam Navigation Company (Orient Line)"
-      ],
-      "shipCount": 7
+      "shipCount": 15
     },
     {
       "id": "canadian-pacific",
       "name": "Canadian Pacific",
       "rawValues": [
         "Canadian Pacific",
-        "Canadian Pacific (Canadian Pacific Railway / Canadian Pacific Steamships)",
-        "Canadian Pacific Railway / Canadian Pacific Steamships (Atlantic service)",
+        "Canadian Pacific Railway / Canadian Pacific Steamship Company",
+        "Canadian Pacific Railway / Canadian Pacific Steamships",
         "Canadian Pacific Steamships",
-        "Canadian Pacific Steamships / Canadian Pacific Line",
-        "Canadian Pacific Steamships / Canadian Pacific Railway"
+        "Canadian Pacific Steamships / Canadian Pacific Line"
       ],
-      "shipCount": 6
+      "shipCount": 10
+    },
+    {
+      "id": "holland-america-line",
+      "name": "Holland America Line",
+      "rawValues": [
+        "Holland America Line",
+        "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij)",
+        "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart-Maatschappij / NASM)"
+      ],
+      "shipCount": 8
     },
     {
       "id": "dominion-line",
       "name": "Dominion Line",
       "rawValues": [
         "Dominion Line",
-        "Dominion Line; later associated with White Star-Dominion service / Leyland Line reporting in later sources"
+        "Dominion Line / White Star Line",
+        "Dominion Line; later White Star-Dominion context"
       ],
-      "shipCount": 6
+      "shipCount": 7
     },
     {
-      "id": "italian-line",
-      "name": "Italian Line",
+      "id": "orient-line",
+      "name": "Orient Line",
       "rawValues": [
-        "Italian Line (Italia Flotte Riunite / later Italian Line naming is source-dependent; commonly cited as “Italian Line”)",
-        "Italian Line (Italia Società di Navigazione)",
-        "Italian Line (Italia di Navigazione)",
-        "Italian Line (Società di navigazione Italia / Italia di Navigazione)"
+        "Orient Steam Navigation Company",
+        "Orient Steam Navigation Company (Orient Line)"
       ],
-      "shipCount": 6
+      "shipCount": 7
     },
     {
-      "id": "union-castle-mail-steamship-company",
-      "name": "Union-Castle Mail Steamship Company",
+      "id": "p-and-o",
+      "name": "P&O",
       "rawValues": [
-        "Union-Castle Mail Steamship Company"
+        "P&O / P&O-Orient Lines",
+        "Peninsular & Oriental Steam Navigation Company (P&O)",
+        "Peninsular and Oriental Steam Navigation Company (P&O)"
       ],
-      "shipCount": 6
+      "shipCount": 7
+    },
+    {
+      "id": "union-castle-line",
+      "name": "Union-Castle Line",
+      "rawValues": [
+        "Union-Castle Line"
+      ],
+      "shipCount": 7
     },
     {
       "id": "united-states-lines",
@@ -159,6 +144,33 @@
       "shipCount": 6
     },
     {
+      "id": "italian-line",
+      "name": "Italian Line",
+      "rawValues": [
+        "Italia di Navigazione / Italian Line",
+        "Italian Line (Italia Società di Navigazione)",
+        "Italian Line (Italia di Navigazione)"
+      ],
+      "shipCount": 5
+    },
+    {
+      "id": "navigazione-generale-italiana-ngi",
+      "name": "Navigazione Generale Italiana (NGI)",
+      "rawValues": [
+        "Navigazione Generale Italiana",
+        "Navigazione Generale Italiana (NGI)"
+      ],
+      "shipCount": 5
+    },
+    {
+      "id": "red-star-line",
+      "name": "Red Star Line",
+      "rawValues": [
+        "Red Star Line"
+      ],
+      "shipCount": 5
+    },
+    {
       "id": "anchor-line",
       "name": "Anchor Line",
       "rawValues": [
@@ -167,16 +179,7 @@
         "Anchor Line (Glasgow)",
         "Anchor Line (UK)"
       ],
-      "shipCount": 5
-    },
-    {
-      "id": "compagnie-generale-transatlantique-cgt-french-line",
-      "name": "Compagnie Générale Transatlantique (CGT) — “French Line”",
-      "rawValues": [
-        "Compagnie Générale Transatlantique (CGT) / “French Line”",
-        "Compagnie Générale Transatlantique (CGT) — “French Line”"
-      ],
-      "shipCount": 5
+      "shipCount": 4
     },
     {
       "id": "atlantic-transport-line",
@@ -188,10 +191,20 @@
       "shipCount": 4
     },
     {
-      "id": "canadian-pacific-steamships-ltd",
-      "name": "Canadian Pacific Steamships Ltd.",
+      "id": "cosulich-societa-triestina-di-navigazione",
+      "name": "Cosulich Società Triestina di Navigazione",
       "rawValues": [
-        "Canadian Pacific Steamships Ltd."
+        "Cosulich Società Triestina di Navigazione"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "cunard-white-star-line",
+      "name": "Cunard-White Star Line",
+      "rawValues": [
+        "Cunard White Star / Cunard Line",
+        "Cunard-White Star Line (later Cunard Line)",
+        "Cunard-White Star Line; later Cunard Line"
       ],
       "shipCount": 4
     },
@@ -204,44 +217,18 @@
       "shipCount": 4
     },
     {
-      "id": "navigazione-generale-italiana-ngi",
-      "name": "Navigazione Generale Italiana (NGI)",
+      "id": "union-castle-mail-steamship-company",
+      "name": "Union-Castle Mail Steamship Company",
       "rawValues": [
-        "Navigazione Generale Italiana",
-        "Navigazione Generale Italiana (NGI)"
+        "Union-Castle Mail Steamship Company"
       ],
       "shipCount": 4
     },
     {
-      "id": "red-star-line",
-      "name": "Red Star Line",
+      "id": "canadian-pacific-railway-co-canadian-pacific-steamships",
+      "name": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
       "rawValues": [
-        "Red Star Line"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "canadian-pacific-railway-co-canadian-pacific-steamships-ltd",
-      "name": "Canadian Pacific Railway Co. / Canadian Pacific Steamships Ltd.",
-      "rawValues": [
-        "Canadian Pacific Railway Co. / Canadian Pacific Steamships Ltd."
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "cunard-white-star-line",
-      "name": "Cunard-White Star Line",
-      "rawValues": [
-        "Cunard-White Star Line",
-        "Cunard-White Star Line (later Cunard Line)"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "furness-bermuda-line",
-      "name": "Furness Bermuda Line",
-      "rawValues": [
-        "Furness Bermuda Line"
+        "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
       ],
       "shipCount": 3
     },
@@ -249,27 +236,19 @@
       "id": "hamburg-sud",
       "name": "Hamburg Süd",
       "rawValues": [
-        "Hamburg Süd (Hamburg-Südamerikanische Dampfschifffahrts-Gesellschaft)",
+        "Hamburg Süd",
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd / Hamburg South America Line)",
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)"
       ],
       "shipCount": 3
     },
     {
-      "id": "hamburg-amerikanische-packetfahrt-actien-gesellschaft-hapag-hamburg-america-line",
-      "name": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
+      "id": "allan-line",
+      "name": "Allan Line",
       "rawValues": [
-        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
+        "Allan Line"
       ],
-      "shipCount": 3
-    },
-    {
-      "id": "nippon-yusen-kaisha-nyk-line",
-      "name": "Nippon Yusen Kaisha (NYK Line)",
-      "rawValues": [
-        "Nippon Yusen Kaisha (NYK Line)"
-      ],
-      "shipCount": 3
+      "shipCount": 2
     },
     {
       "id": "american-export-lines",
@@ -288,18 +267,11 @@
       "shipCount": 2
     },
     {
-      "id": "cosulich-societa-triestina-di-navigazione",
-      "name": "Cosulich Società Triestina di Navigazione",
+      "id": "compagnie-generale-transatlantique-cgt-french-line",
+      "name": "Compagnie Générale Transatlantique (CGT) — “French Line”",
       "rawValues": [
-        "Cosulich Società Triestina di Navigazione"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "cosulich-societa-triestina-di-navigazione-cosulich-line",
-      "name": "Cosulich Società Triestina di Navigazione (Cosulich Line)",
-      "rawValues": [
-        "Cosulich Società Triestina di Navigazione (Cosulich Line)"
+        "Compagnie Générale Transatlantique (CGT) / “French Line”",
+        "Compagnie Générale Transatlantique (CGT) — “French Line”"
       ],
       "shipCount": 2
     },
@@ -313,6 +285,14 @@
       "shipCount": 2
     },
     {
+      "id": "furness-bermuda-line",
+      "name": "Furness Bermuda Line",
+      "rawValues": [
+        "Furness Bermuda Line"
+      ],
+      "shipCount": 2
+    },
+    {
       "id": "great-western-steamship-company",
       "name": "Great Western Steamship Company",
       "rawValues": [
@@ -321,10 +301,42 @@
       "shipCount": 2
     },
     {
+      "id": "hamburg-amerikanische-packetfahrt-actien-gesellschaft-hapag-hamburg-america-line",
+      "name": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
+      "rawValues": [
+        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "italia-flotte-riunite-italian-line",
+      "name": "Italia Flotte Riunite / Italian Line",
+      "rawValues": [
+        "Italia Flotte Riunite / Italian Line"
+      ],
+      "shipCount": 2
+    },
+    {
       "id": "matson-lines-matson-navigation-company",
       "name": "Matson Lines / Matson Navigation Company",
       "rawValues": [
         "Matson Lines / Matson Navigation Company"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "nippon-yusen-kaisha-nyk-line",
+      "name": "Nippon Yusen Kaisha (NYK Line)",
+      "rawValues": [
+        "Nippon Yusen Kaisha (NYK Line)"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "p-and-o-steam-navigation-company-later-p-and-o-orient-lines",
+      "name": "P&O Steam Navigation Company; later P&O-Orient Lines",
+      "rawValues": [
+        "P&O Steam Navigation Company; later P&O-Orient Lines"
       ],
       "shipCount": 2
     },
@@ -345,14 +357,6 @@
       "shipCount": 2
     },
     {
-      "id": "royal-mail-lines-royal-mail-steam-packet-co-group",
-      "name": "Royal Mail Lines (Royal Mail Steam Packet Co. group)",
-      "rawValues": [
-        "Royal Mail Lines (Royal Mail Steam Packet Co. group)"
-      ],
-      "shipCount": 2
-    },
-    {
       "id": "stoomvaart-maatschappij-nederland-netherland-line",
       "name": "Stoomvaart Maatschappij Nederland (Netherland Line)",
       "rawValues": [
@@ -361,26 +365,10 @@
       "shipCount": 2
     },
     {
-      "id": "swedish-american-line-svenska-amerika-linien",
-      "name": "Swedish American Line (Svenska Amerika Linien)",
+      "id": "swedish-american-line",
+      "name": "Swedish American Line",
       "rawValues": [
-        "Swedish American Line (Svenska Amerika Linien)"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "union-castle-line",
-      "name": "Union-Castle Line",
-      "rawValues": [
-        "Union-Castle Line"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "union-castle-line-union-castle-mail-steamship-co",
-      "name": "Union-Castle Line (Union-Castle Mail Steamship Co.)",
-      "rawValues": [
-        "Union-Castle Line (Union-Castle Mail Steamship Co.)"
+        "Swedish American Line"
       ],
       "shipCount": 2
     },
@@ -389,22 +377,6 @@
       "name": "A. F. Klaveness",
       "rawValues": [
         "A. F. Klaveness"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "allan-line",
-      "name": "Allan Line",
-      "rawValues": [
-        "Allan Line"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "allan-line-later-canadian-pacific-line-canadian-pacific-steamships",
-      "name": "Allan Line; later Canadian Pacific Line / Canadian Pacific Steamships",
-      "rawValues": [
-        "Allan Line; later Canadian Pacific Line / Canadian Pacific Steamships"
       ],
       "shipCount": 1
     },
@@ -473,14 +445,6 @@
       "shipCount": 1
     },
     {
-      "id": "completed-for-italia-flotte-riunite-italian-line-ordered-for-lloyd-sabaudo-commonly-reported",
-      "name": "Completed for Italia Flotte Riunite (Italian Line); ordered for Lloyd Sabaudo (commonly reported)",
-      "rawValues": [
-        "Completed for Italia Flotte Riunite (Italian Line); ordered for Lloyd Sabaudo (commonly reported)"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "eastern-steam-navigation-co-commonly-cited-for-the-initial-period",
       "name": "Eastern Steam Navigation Co. (commonly cited for the initial period)",
       "rawValues": [
@@ -489,26 +453,10 @@
       "shipCount": 1
     },
     {
-      "id": "frederick-leyland-and-co-leyland-line",
-      "name": "Frederick Leyland & Co. / Leyland Line",
+      "id": "furness-withy-and-co",
+      "name": "Furness, Withy & Co.",
       "rawValues": [
-        "Frederick Leyland & Co. / Leyland Line"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "furness-withy-and-co-furness-bermuda-line",
-      "name": "Furness, Withy & Co. · Furness Bermuda Line",
-      "rawValues": [
-        "Furness, Withy & Co. · Furness Bermuda Line"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "great-lakes-passenger-ship",
-      "name": "Great Lakes passenger ship",
-      "rawValues": [
-        "Great Lakes passenger ship"
+        "Furness, Withy & Co. / Furness Bermuda Line"
       ],
       "shipCount": 1
     },
@@ -521,18 +469,10 @@
       "shipCount": 1
     },
     {
-      "id": "hamburg-america-line-hapag-as-tirpitz",
-      "name": "Hamburg America Line (HAPAG) (as Tirpitz)",
+      "id": "inman-and-international-steamship-co",
+      "name": "Inman & International Steamship Co.",
       "rawValues": [
-        "Hamburg America Line (HAPAG) (as Tirpitz)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "inman-and-international-steamship-co-inman-line",
-      "name": "Inman & International Steamship Co. (Inman Line)",
-      "rawValues": [
-        "Inman & International Steamship Co. (Inman Line)"
+        "Inman & International Steamship Co."
       ],
       "shipCount": 1
     },
@@ -569,10 +509,18 @@
       "shipCount": 1
     },
     {
-      "id": "navigazione-generale-italiana-ngi-later-italian-line-italia-line",
-      "name": "Navigazione Generale Italiana (NGI); later Italian Line (Italia Line)",
+      "id": "michigan-steamship-company",
+      "name": "Michigan Steamship Company",
       "rawValues": [
-        "Navigazione Generale Italiana (NGI); later Italian Line (Italia Line)"
+        "Michigan Steamship Company"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "nippon-yusen-kaisha-nyk",
+      "name": "Nippon Yusen Kaisha (NYK)",
+      "rawValues": [
+        "Nippon Yusen Kaisha (NYK)"
       ],
       "shipCount": 1
     },
@@ -589,6 +537,14 @@
       "name": "Norwegian America Line",
       "rawValues": [
         "Norwegian America Line"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "oceanic-steam-navigation-co-ltd-white-star-line",
+      "name": "Oceanic Steam Navigation Co. Ltd. (White Star Line)",
+      "rawValues": [
+        "Oceanic Steam Navigation Co. Ltd. (White Star Line)"
       ],
       "shipCount": 1
     },
@@ -617,34 +573,18 @@
       "shipCount": 1
     },
     {
-      "id": "pacific-steam-navigation-company-royal-mail-group-context",
-      "name": "Pacific Steam Navigation Company (Royal Mail group context)",
+      "id": "red-star-line-international-mercantile-marine",
+      "name": "Red Star Line / International Mercantile Marine",
       "rawValues": [
-        "Pacific Steam Navigation Company (Royal Mail group context)"
+        "Red Star Line / International Mercantile Marine"
       ],
       "shipCount": 1
     },
     {
-      "id": "red-star-line-societe-anonyme-de-navigation-belge-americaine",
-      "name": "Red Star Line (Société Anonyme de Navigation Belge-Américaine)",
+      "id": "red-star-line-international-navigation-company",
+      "name": "Red Star Line / International Navigation Company",
       "rawValues": [
-        "Red Star Line (Société Anonyme de Navigation Belge-Américaine)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "red-star-line-within-the-international-mercantile-marine-orbit",
-      "name": "Red Star Line (within the International Mercantile Marine orbit)",
-      "rawValues": [
-        "Red Star Line (within the International Mercantile Marine orbit)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "red-star-line-also-operated-or-chartered-within-the-international-mercantile-marine-system-including-american-line-white-star-line-and-panama-pacific-line-contexts",
-      "name": "Red Star Line; also operated or chartered within the International Mercantile Marine system, including American Line, White Star Line, and Panama Pacific Line contexts",
-      "rawValues": [
-        "Red Star Line; also operated or chartered within the International Mercantile Marine system, including American Line, White Star Line, and Panama Pacific Line contexts"
+        "Red Star Line / International Navigation Company"
       ],
       "shipCount": 1
     },
@@ -653,6 +593,22 @@
       "name": "Rederi AB Sverige-Nordamerika (Swedish American Line), 1923–1926",
       "rawValues": [
         "Rederi AB Sverige-Nordamerika (Swedish American Line), 1923–1926"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "royal-mail-group-royal-mail-lines-from-1932",
+      "name": "Royal Mail group; Royal Mail Lines from 1932",
+      "rawValues": [
+        "Royal Mail group; Royal Mail Lines from 1932"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "royal-mail-lines",
+      "name": "Royal Mail Lines",
+      "rawValues": [
+        "Royal Mail Lines"
       ],
       "shipCount": 1
     },
@@ -705,10 +661,10 @@
       "shipCount": 1
     },
     {
-      "id": "swedish-american-line",
-      "name": "Swedish American Line",
+      "id": "swedish-american-line-svenska-amerika-linien",
+      "name": "Swedish American Line (Svenska Amerika Linien)",
       "rawValues": [
-        "Swedish American Line"
+        "Swedish American Line (Svenska Amerika Linien)"
       ],
       "shipCount": 1
     },
@@ -729,34 +685,26 @@
       "shipCount": 1
     },
     {
-      "id": "union-castle-mail-steamship-co-union-castle-line",
-      "name": "Union-Castle Mail Steamship Co. (Union-Castle Line)",
+      "id": "united-american-lines-hamburg-america-line",
+      "name": "United American Lines / Hamburg America Line",
       "rawValues": [
-        "Union-Castle Mail Steamship Co. (Union-Castle Line)"
+        "United American Lines / Hamburg America Line"
       ],
       "shipCount": 1
     },
     {
-      "id": "ward-line-new-york-and-cuba-mail-ss-co-agwi-navigation-co-commonly-cited",
-      "name": "Ward Line (New York & Cuba Mail SS Co.) / AGWI Navigation Co. (commonly cited)",
+      "id": "ward-line-agwi-interests",
+      "name": "Ward Line / AGWI interests",
       "rawValues": [
-        "Ward Line (New York & Cuba Mail SS Co.) / AGWI Navigation Co. (commonly cited)"
+        "Ward Line / AGWI interests"
       ],
       "shipCount": 1
     },
     {
-      "id": "white-star-line-1922-1934-cunard-white-star-line-1934-1935",
-      "name": "White Star Line (1922–1934) · Cunard-White Star Line (1934–1935)",
+      "id": "white-star-line-later-cunard-white-star-line",
+      "name": "White Star Line · later Cunard-White Star Line",
       "rawValues": [
-        "White Star Line (1922–1934) · Cunard-White Star Line (1934–1935)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "white-star-line-1923-1934-cunard-white-star-line-1934-1935",
-      "name": "White Star Line (1923–1934); Cunard White Star Line (1934–1935)",
-      "rawValues": [
-        "White Star Line (1923–1934); Cunard White Star Line (1934–1935)"
+        "White Star Line · later Cunard-White Star Line"
       ],
       "shipCount": 1
     },
@@ -767,6 +715,14 @@
         "White Star Line in associated New Zealand service with Shaw, Savill & Albion interests"
       ],
       "shipCount": 1
+    },
+    {
+      "id": "white-star-line-1923-34-cunard-white-star-1934-35",
+      "name": "White Star Line, 1923–34 · Cunard-White Star, 1934–35",
+      "rawValues": [
+        "White Star Line, 1923–34 · Cunard-White Star, 1934–35"
+      ],
+      "shipCount": 1
     }
   ],
   "ships": [
@@ -774,7 +730,7 @@
       "name": "Asama Maru",
       "path": "ships/asama-maru-1929.html",
       "url": "/ships/asama-maru-1929",
-      "launchYear": "1929",
+      "launchYear": "1928",
       "operatorRaw": "Nippon Yusen Kaisha (NYK Line)",
       "operator": "Nippon Yusen Kaisha (NYK Line)"
     },
@@ -787,20 +743,12 @@
       "operator": "Union-Castle Line"
     },
     {
-      "name": "Monarch of Bermuda",
-      "path": "ships/monarch-of-bermuda.html",
-      "url": "/ships/monarch-of-bermuda",
-      "launchYear": "1931",
-      "operatorRaw": "Furness Bermuda Line",
-      "operator": "Furness Bermuda Line"
-    },
-    {
       "name": "MS Augustus",
       "path": "ships/ms-augustus.html",
       "url": "/ships/ms-augustus",
       "launchYear": "1926",
-      "operatorRaw": "Navigazione Generale Italiana (NGI); later Italian Line (Italia Line)",
-      "operator": "Navigazione Generale Italiana (NGI); later Italian Line (Italia Line)"
+      "operatorRaw": "Navigazione Generale Italiana",
+      "operator": "Navigazione Generale Italiana (NGI)"
     },
     {
       "name": "MS Bermuda",
@@ -815,8 +763,8 @@
       "path": "ships/ms-gripsholm-1925.html",
       "url": "/ships/ms-gripsholm-1925",
       "launchYear": "1924",
-      "operatorRaw": "Swedish American Line (Svenska Amerika Linien)",
-      "operator": "Swedish American Line (Svenska Amerika Linien)"
+      "operatorRaw": "Swedish American Line",
+      "operator": "Swedish American Line"
     },
     {
       "name": "MS Kungsholm (1928)",
@@ -831,11 +779,11 @@
       "path": "ships/ms-saturnia.html",
       "url": "/ships/ms-saturnia",
       "launchYear": "1925",
-      "operatorRaw": "Cosulich Società Triestina di Navigazione (Cosulich Line)",
-      "operator": "Cosulich Società Triestina di Navigazione (Cosulich Line)"
+      "operatorRaw": "Cosulich Società Triestina di Navigazione",
+      "operator": "Cosulich Società Triestina di Navigazione"
     },
     {
-      "name": "MS Stockholm",
+      "name": "MS Stockholm (1948)",
       "path": "ships/ms-stockholm.html",
       "url": "/ships/ms-stockholm",
       "launchYear": "1946",
@@ -847,15 +795,15 @@
       "path": "ships/ms-vulcania.html",
       "url": "/ships/ms-vulcania",
       "launchYear": "1926",
-      "operatorRaw": "Cosulich Società Triestina di Navigazione (Cosulich Line)",
-      "operator": "Cosulich Società Triestina di Navigazione (Cosulich Line)"
+      "operatorRaw": "Cosulich Società Triestina di Navigazione",
+      "operator": "Cosulich Società Triestina di Navigazione"
     },
     {
-      "name": "MV Britannic",
+      "name": "MV Britannic (1930)",
       "path": "ships/mv-britannic.html",
       "url": "/ships/mv-britannic",
       "launchYear": "1929",
-      "operatorRaw": "White Star Line",
+      "operatorRaw": "White Star Line / Oceanic Steam Navigation Co.",
       "operator": "White Star Line"
     },
     {
@@ -863,7 +811,7 @@
       "path": "ships/mv-georgic.html",
       "url": "/ships/mv-georgic",
       "launchYear": "1931",
-      "operatorRaw": "White Star Line",
+      "operatorRaw": "White Star Line / Oceanic Steam Navigation Co.",
       "operator": "White Star Line"
     },
     {
@@ -907,15 +855,15 @@
       "operator": "Cunard Line"
     },
     {
-      "name": "RMS Adriatic",
+      "name": "RMS Adriatic (1907)",
       "path": "ships/rms-adriatic.html",
       "url": "/ships/rms-adriatic",
       "launchYear": "1906",
-      "operatorRaw": "White Star Line (later Cunard–White Star, 1934)",
+      "operatorRaw": "White Star Line; briefly Cunard-White Star after the 1934 merger",
       "operator": "White Star Line"
     },
     {
-      "name": "RMS Alaunia",
+      "name": "RMS Alaunia (1913)",
       "path": "ships/rms-alaunia.html",
       "url": "/ships/rms-alaunia",
       "launchYear": "1913",
@@ -927,8 +875,8 @@
       "path": "ships/rms-alcantara-1926.html",
       "url": "/ships/rms-alcantara-1926",
       "launchYear": "1926",
-      "operatorRaw": "Royal Mail Lines (Royal Mail Steam Packet Co. group)",
-      "operator": "Royal Mail Lines (Royal Mail Steam Packet Co. group)"
+      "operatorRaw": "Royal Mail group; Royal Mail Lines from 1932",
+      "operator": "Royal Mail group; Royal Mail Lines from 1932"
     },
     {
       "name": "RMS Andania",
@@ -951,8 +899,8 @@
       "path": "ships/rms-andes-1939.html",
       "url": "/ships/rms-andes-1939",
       "launchYear": "1939",
-      "operatorRaw": "Royal Mail Lines (Royal Mail Steam Packet Co. group)",
-      "operator": "Royal Mail Lines (Royal Mail Steam Packet Co. group)"
+      "operatorRaw": "Royal Mail Lines",
+      "operator": "Royal Mail Lines"
     },
     {
       "name": "RMS Aquitania",
@@ -967,8 +915,8 @@
       "path": "ships/rms-arundel-castle-1921.html",
       "url": "/ships/rms-arundel-castle-1921",
       "launchYear": "1919",
-      "operatorRaw": "Union-Castle Line (Union-Castle Mail Steamship Co.)",
-      "operator": "Union-Castle Line (Union-Castle Mail Steamship Co.)"
+      "operatorRaw": "Union-Castle Line",
+      "operator": "Union-Castle Line"
     },
     {
       "name": "RMS Ascania",
@@ -987,11 +935,11 @@
       "operator": "Royal Mail Steam Packet Co. (Royal Mail Line)"
     },
     {
-      "name": "RMS Aurania",
+      "name": "RMS Aurania (1916)",
       "path": "ships/rms-aurania.html",
       "url": "/ships/rms-aurania",
       "launchYear": "1916",
-      "operatorRaw": "Cunard Line",
+      "operatorRaw": "Cunard Line; British Government hire throughout active career",
       "operator": "Cunard Line"
     },
     {
@@ -999,7 +947,7 @@
       "path": "ships/rms-baltic.html",
       "url": "/ships/rms-baltic",
       "launchYear": "1903",
-      "operatorRaw": "White Star Line",
+      "operatorRaw": "White Star Line / Oceanic Steam Navigation Co.",
       "operator": "White Star Line"
     },
     {
@@ -1007,7 +955,7 @@
       "path": "ships/rms-berengaria.html",
       "url": "/ships/rms-berengaria",
       "launchYear": "1912",
-      "operatorRaw": "Hamburg America Line (HAPAG)",
+      "operatorRaw": "Hamburg America Line",
       "operator": "Hamburg America Line (HAPAG)"
     },
     {
@@ -1019,7 +967,7 @@
       "operator": "British & North American Royal Mail Steam Packet Company (Cunard Line)"
     },
     {
-      "name": "RMS Britannic",
+      "name": "RMS Britannic (1874)",
       "path": "ships/rms-britannic-1874.html",
       "url": "/ships/rms-britannic-1874",
       "launchYear": "1874",
@@ -1067,7 +1015,7 @@
       "operator": "Cunard Line"
     },
     {
-      "name": "RMS Carinthia",
+      "name": "RMS Carinthia (1956)",
       "path": "ships/rms-carinthia.html",
       "url": "/ships/rms-carinthia",
       "launchYear": "1955",
@@ -1087,15 +1035,15 @@
       "path": "ships/rms-caronia-1947.html",
       "url": "/ships/rms-caronia-1947",
       "launchYear": "1947",
-      "operatorRaw": "Cunard (then Cunard White Star Line)",
-      "operator": "Cunard Line"
+      "operatorRaw": "Cunard White Star / Cunard Line",
+      "operator": "Cunard-White Star Line"
     },
     {
       "name": "RMS Carpathia",
       "path": "ships/rms-carpathia.html",
       "url": "/ships/rms-carpathia",
       "launchYear": "1902",
-      "operatorRaw": "Cunard Line (Cunard Steamship Company)",
+      "operatorRaw": "Cunard Line",
       "operator": "Cunard Line"
     },
     {
@@ -1103,7 +1051,7 @@
       "path": "ships/rms-cedric.html",
       "url": "/ships/rms-cedric",
       "launchYear": "1902",
-      "operatorRaw": "White Star Line",
+      "operatorRaw": "White Star Line / Oceanic Steam Navigation Co.",
       "operator": "White Star Line"
     },
     {
@@ -1111,7 +1059,7 @@
       "path": "ships/rms-celtic.html",
       "url": "/ships/rms-celtic",
       "launchYear": "1901",
-      "operatorRaw": "White Star Line",
+      "operatorRaw": "White Star Line / Oceanic Steam Navigation Co.",
       "operator": "White Star Line"
     },
     {
@@ -1119,19 +1067,19 @@
       "path": "ships/rms-empress-of-australia.html",
       "url": "/ships/rms-empress-of-australia",
       "launchYear": "1913",
-      "operatorRaw": "Hamburg America Line (HAPAG) (as Tirpitz)",
-      "operator": "Hamburg America Line (HAPAG) (as Tirpitz)"
+      "operatorRaw": "Hamburg-America Line",
+      "operator": "Hamburg America Line (HAPAG)"
     },
     {
       "name": "RMS Empress of Britain",
       "path": "ships/rms-empress-of-britain.html",
       "url": "/ships/rms-empress-of-britain",
       "launchYear": "1930",
-      "operatorRaw": "Canadian Pacific (Canadian Pacific Railway / Canadian Pacific Steamships)",
+      "operatorRaw": "Canadian Pacific Railway / Canadian Pacific Steamships",
       "operator": "Canadian Pacific"
     },
     {
-      "name": "RMS Empress of Canada",
+      "name": "RMS Empress of Canada (1922)",
       "path": "ships/rms-empress-of-canada.html",
       "url": "/ships/rms-empress-of-canada",
       "launchYear": "1920",
@@ -1143,7 +1091,7 @@
       "path": "ships/rms-empress-of-ireland.html",
       "url": "/ships/rms-empress-of-ireland",
       "launchYear": "1906",
-      "operatorRaw": "Canadian Pacific Railway / Canadian Pacific Steamships (Atlantic service)",
+      "operatorRaw": "Canadian Pacific Railway / Canadian Pacific Steamship Company",
       "operator": "Canadian Pacific"
     },
     {
@@ -1159,7 +1107,7 @@
       "path": "ships/rms-empress-of-russia.html",
       "url": "/ships/rms-empress-of-russia",
       "launchYear": "1912",
-      "operatorRaw": "Canadian Pacific Steamships / Canadian Pacific Railway",
+      "operatorRaw": "Canadian Pacific",
       "operator": "Canadian Pacific"
     },
     {
@@ -1167,7 +1115,7 @@
       "path": "ships/rms-etruria-1884.html",
       "url": "/ships/rms-etruria-1884",
       "launchYear": "1884",
-      "operatorRaw": "Cunard Steamship Company (Cunard Line)",
+      "operatorRaw": "Cunard Steamship Company",
       "operator": "Cunard Line"
     },
     {
@@ -1191,11 +1139,11 @@
       "path": "ships/rms-homeric.html",
       "url": "/ships/rms-homeric",
       "launchYear": "1913",
-      "operatorRaw": "White Star Line (1922–1934) · Cunard-White Star Line (1934–1935)",
-      "operator": "White Star Line (1922–1934) · Cunard-White Star Line (1934–1935)"
+      "operatorRaw": "White Star Line · later Cunard-White Star Line",
+      "operator": "White Star Line · later Cunard-White Star Line"
     },
     {
-      "name": "RMS Ivernia",
+      "name": "RMS Ivernia (1955)",
       "path": "ships/rms-ivernia.html",
       "url": "/ships/rms-ivernia",
       "launchYear": "1954",
@@ -1223,7 +1171,7 @@
       "path": "ships/rms-laurentic.html",
       "url": "/ships/rms-laurentic",
       "launchYear": "1908",
-      "operatorRaw": "White Star Line (Oceanic Steam Navigation Co.)",
+      "operatorRaw": "Oceanic Steam Navigation Co. (White Star Line)",
       "operator": "White Star Line"
     },
     {
@@ -1271,7 +1219,7 @@
       "path": "ships/rms-megantic-1909.html",
       "url": "/ships/rms-megantic-1909",
       "launchYear": "1908",
-      "operatorRaw": "White Star Line",
+      "operatorRaw": "Oceanic Steam Navigation Co. (White Star Line)",
       "operator": "White Star Line"
     },
     {
@@ -1303,7 +1251,7 @@
       "path": "ships/rms-orontes.html",
       "url": "/ships/rms-orontes",
       "launchYear": "1902",
-      "operatorRaw": "Orient Steam Navigation Company (Orient Line)",
+      "operatorRaw": "Orient Steam Navigation Company",
       "operator": "Orient Line"
     },
     {
@@ -1319,7 +1267,7 @@
       "path": "ships/rms-queen-elizabeth.html",
       "url": "/ships/rms-queen-elizabeth",
       "launchYear": "1938",
-      "operatorRaw": "Cunard-White Star Line (later Cunard Line)",
+      "operatorRaw": "Cunard-White Star Line; later Cunard Line",
       "operator": "Cunard-White Star Line"
     },
     {
@@ -1335,11 +1283,11 @@
       "path": "ships/rms-queen-mary.html",
       "url": "/ships/rms-queen-mary",
       "launchYear": "1934",
-      "operatorRaw": "Cunard-White Star Line",
+      "operatorRaw": "Cunard-White Star Line; later Cunard Line",
       "operator": "Cunard-White Star Line"
     },
     {
-      "name": "RMS Saxonia",
+      "name": "RMS Saxonia (1954)",
       "path": "ships/rms-saxonia.html",
       "url": "/ships/rms-saxonia",
       "launchYear": "1954",
@@ -1375,11 +1323,11 @@
       "path": "ships/rms-strathnaver.html",
       "url": "/ships/rms-strathnaver",
       "launchYear": "1931",
-      "operatorRaw": "Peninsular & Oriental Steam Navigation Co. (P&O)",
-      "operator": "P&O"
+      "operatorRaw": "P&O Steam Navigation Company; later P&O-Orient Lines",
+      "operator": "P&O Steam Navigation Company; later P&O-Orient Lines"
     },
     {
-      "name": "RMS Sylvania",
+      "name": "RMS Sylvania (1957)",
       "path": "ships/rms-sylvania.html",
       "url": "/ships/rms-sylvania",
       "launchYear": "1956",
@@ -1415,7 +1363,7 @@
       "path": "ships/rms-umbria-1884.html",
       "url": "/ships/rms-umbria-1884",
       "launchYear": "1884",
-      "operatorRaw": "Cunard Steamship Company (Cunard Line)",
+      "operatorRaw": "Cunard Steamship Company",
       "operator": "Cunard Line"
     },
     {
@@ -1439,16 +1387,16 @@
       "path": "ships/rms-windsor-castle-1921.html",
       "url": "/ships/rms-windsor-castle-1921",
       "launchYear": "1921",
-      "operatorRaw": "Union-Castle Line (Union-Castle Mail Steamship Co.)",
-      "operator": "Union-Castle Line (Union-Castle Mail Steamship Co.)"
+      "operatorRaw": "Union-Castle Line",
+      "operator": "Union-Castle Line"
     },
     {
       "name": "RMS Windsor Castle",
       "path": "ships/rms-windsor-castle.html",
       "url": "/ships/rms-windsor-castle",
       "launchYear": "1959",
-      "operatorRaw": "Union-Castle Mail Steamship Co. (Union-Castle Line)",
-      "operator": "Union-Castle Mail Steamship Co. (Union-Castle Line)"
+      "operatorRaw": "Union-Castle Mail Steamship Company",
+      "operator": "Union-Castle Mail Steamship Company"
     },
     {
       "name": "SS Adriatic (1872)",
@@ -1463,7 +1411,7 @@
       "path": "ships/ss-afric.html",
       "url": "/ships/ss-afric",
       "launchYear": "1898",
-      "operatorRaw": "White Star Line",
+      "operatorRaw": "White Star Line / Oceanic Steam Navigation Co.",
       "operator": "White Star Line"
     },
     {
@@ -1503,19 +1451,19 @@
       "path": "ships/ss-andrea-doria.html",
       "url": "/ships/ss-andrea-doria",
       "launchYear": "1951",
-      "operatorRaw": "Italian Line (Società di navigazione Italia / Italia di Navigazione)",
+      "operatorRaw": "Italia di Navigazione / Italian Line",
       "operator": "Italian Line"
     },
     {
-      "name": "SS Arabic (1920)",
+      "name": "SS Arabic (1921)",
       "path": "ships/ss-arabic-1920.html",
       "url": "/ships/ss-arabic-1920",
       "launchYear": "1908",
-      "operatorRaw": "White Star Line (later also chartered to Red Star Line)",
-      "operator": "White Star Line"
+      "operatorRaw": "Norddeutscher Lloyd",
+      "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
-      "name": "SS Arabic",
+      "name": "SS Arabic (1903)",
       "path": "ships/ss-arabic.html",
       "url": "/ships/ss-arabic",
       "launchYear": "1902",
@@ -1547,7 +1495,7 @@
       "operator": "Union-Castle Mail Steamship Company"
     },
     {
-      "name": "SS Ascania",
+      "name": "SS Ascania (1911)",
       "path": "ships/ss-ascania-1911.html",
       "url": "/ships/ss-ascania-1911",
       "launchYear": "1911",
@@ -1563,7 +1511,7 @@
       "operator": "Anchor Line during her Assyria period"
     },
     {
-      "name": "SS Asturias",
+      "name": "RMS Asturias (1925)",
       "path": "ships/ss-asturias-1925.html",
       "url": "/ships/ss-asturias-1925",
       "launchYear": "1925",
@@ -1587,7 +1535,7 @@
       "operator": "White Star Line"
     },
     {
-      "name": "SS Baltic",
+      "name": "SS Baltic (1871)",
       "path": "ships/ss-baltic-1871.html",
       "url": "/ships/ss-baltic-1871",
       "launchYear": "1871",
@@ -1599,7 +1547,7 @@
       "path": "ships/ss-barbarossa.html",
       "url": "/ships/ss-barbarossa",
       "launchYear": "1896",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
@@ -1647,11 +1595,11 @@
       "path": "ships/ss-berlin-1909.html",
       "url": "/ships/ss-berlin-1909",
       "launchYear": "1908",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
-      "name": "SS Bismarck",
+      "name": "SS Bismarck (1914)",
       "path": "ships/ss-bismarck-1914.html",
       "url": "/ships/ss-bismarck-1914",
       "launchYear": "1914",
@@ -1679,7 +1627,7 @@
       "path": "ships/ss-bremen.html",
       "url": "/ships/ss-bremen",
       "launchYear": "1928",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
@@ -1719,15 +1667,15 @@
       "path": "ships/ss-calgaric.html",
       "url": "/ships/ss-calgaric",
       "launchYear": "1917",
-      "operatorRaw": "Pacific Steam Navigation Company (Royal Mail group context)",
-      "operator": "Pacific Steam Navigation Company (Royal Mail group context)"
+      "operatorRaw": "White Star Line",
+      "operator": "White Star Line"
     },
     {
       "name": "SS Canada (1896)",
       "path": "ships/ss-canada-1896.html",
       "url": "/ships/ss-canada-1896",
       "launchYear": "1896",
-      "operatorRaw": "Dominion Line; later associated with White Star-Dominion service / Leyland Line reporting in later sources",
+      "operatorRaw": "Dominion Line; later White Star-Dominion context",
       "operator": "Dominion Line"
     },
     {
@@ -1735,7 +1683,7 @@
       "path": "ships/ss-canberra.html",
       "url": "/ships/ss-canberra",
       "launchYear": "1960",
-      "operatorRaw": "P&O (Peninsular and Oriental Steam Navigation Co.)",
+      "operatorRaw": "P&O / P&O-Orient Lines",
       "operator": "P&O"
     },
     {
@@ -1743,7 +1691,7 @@
       "path": "ships/ss-cap-arcona.html",
       "url": "/ships/ss-cap-arcona",
       "launchYear": "1927",
-      "operatorRaw": "Hamburg Süd (Hamburg-Südamerikanische Dampfschifffahrts-Gesellschaft)",
+      "operatorRaw": "Hamburg Süd",
       "operator": "Hamburg Süd"
     },
     {
@@ -1767,15 +1715,15 @@
       "path": "ships/ss-carnarvon-castle.html",
       "url": "/ships/ss-carnarvon-castle",
       "launchYear": "1926",
-      "operatorRaw": "Union-Castle Mail Steamship Company",
-      "operator": "Union-Castle Mail Steamship Company"
+      "operatorRaw": "Union-Castle Line",
+      "operator": "Union-Castle Line"
     },
     {
-      "name": "RMS Caronia",
+      "name": "RMS Caronia (1904)",
       "path": "ships/ss-caronia.html",
       "url": "/ships/ss-caronia",
       "launchYear": "1904",
-      "operatorRaw": "Cunard Steamship Company / Cunard Line",
+      "operatorRaw": "Cunard Line",
       "operator": "Cunard Line"
     },
     {
@@ -1807,7 +1755,7 @@
       "path": "ships/ss-champlain.html",
       "url": "/ships/ss-champlain",
       "launchYear": "1931",
-      "operatorRaw": "Compagnie Générale Transatlantique (CGT / French Line)",
+      "operatorRaw": "Compagnie Générale Transatlantique",
       "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
@@ -1823,8 +1771,8 @@
       "path": "ships/ss-city-of-new-york-1888.html",
       "url": "/ships/ss-city-of-new-york-1888",
       "launchYear": "1888",
-      "operatorRaw": "Inman & International Steamship Co. (Inman Line)",
-      "operator": "Inman & International Steamship Co. (Inman Line)"
+      "operatorRaw": "Inman & International Steamship Co.",
+      "operator": "Inman & International Steamship Co."
     },
     {
       "name": "SS City of Paris",
@@ -1841,14 +1789,6 @@
       "launchYear": "1908",
       "operatorRaw": "Hamburg America Line / HAPAG",
       "operator": "Hamburg America Line (HAPAG)"
-    },
-    {
-      "name": "SS Columbia",
-      "path": "ships/ss-columbia-anchor-line.html",
-      "url": "/ships/ss-columbia-anchor-line",
-      "launchYear": "1902",
-      "operatorRaw": "Anchor Line",
-      "operator": "Anchor Line"
     },
     {
       "name": "SS Columbia",
@@ -1895,8 +1835,8 @@
       "path": "ships/ss-conte-di-savoia.html",
       "url": "/ships/ss-conte-di-savoia",
       "launchYear": "1931",
-      "operatorRaw": "Completed for Italia Flotte Riunite (Italian Line); ordered for Lloyd Sabaudo (commonly reported)",
-      "operator": "Completed for Italia Flotte Riunite (Italian Line); ordered for Lloyd Sabaudo (commonly reported)"
+      "operatorRaw": "Italia Flotte Riunite / Italian Line",
+      "operator": "Italia Flotte Riunite / Italian Line"
     },
     {
       "name": "SS Conte Grande",
@@ -1943,16 +1883,16 @@
       "path": "ships/ss-corsican.html",
       "url": "/ships/ss-corsican",
       "launchYear": "1907",
-      "operatorRaw": "Allan Line; later Canadian Pacific Line / Canadian Pacific Steamships",
-      "operator": "Allan Line; later Canadian Pacific Line / Canadian Pacific Steamships"
+      "operatorRaw": "Allan Line",
+      "operator": "Allan Line"
     },
     {
       "name": "SS Cretic",
       "path": "ships/ss-cretic.html",
       "url": "/ships/ss-cretic",
       "launchYear": "1902",
-      "operatorRaw": "Frederick Leyland & Co. / Leyland Line",
-      "operator": "Frederick Leyland & Co. / Leyland Line"
+      "operatorRaw": "White Star Line",
+      "operator": "White Star Line"
     },
     {
       "name": "SS Cristoforo Colombo",
@@ -1975,7 +1915,7 @@
       "path": "ships/ss-cymric.html",
       "url": "/ships/ss-cymric",
       "launchYear": "1897",
-      "operatorRaw": "White Star Line (Oceanic Steam Navigation Co. Ltd.)",
+      "operatorRaw": "White Star Line",
       "operator": "White Star Line"
     },
     {
@@ -1983,7 +1923,7 @@
       "path": "ships/ss-de-grasse.html",
       "url": "/ships/ss-de-grasse",
       "launchYear": "1924",
-      "operatorRaw": "Compagnie Générale Transatlantique (CGT / French Line)",
+      "operatorRaw": "Compagnie Générale Transatlantique",
       "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
@@ -1999,8 +1939,8 @@
       "path": "ships/ss-doric.html",
       "url": "/ships/ss-doric",
       "launchYear": "1922",
-      "operatorRaw": "White Star Line (1923–1934); Cunard White Star Line (1934–1935)",
-      "operator": "White Star Line (1923–1934); Cunard White Star Line (1934–1935)"
+      "operatorRaw": "White Star Line, 1923–34 · Cunard-White Star, 1934–35",
+      "operator": "White Star Line, 1923–34 · Cunard-White Star, 1934–35"
     },
     {
       "name": "SS Drottningholm",
@@ -2015,38 +1955,38 @@
       "path": "ships/ss-duchess-of-atholl.html",
       "url": "/ships/ss-duchess-of-atholl",
       "launchYear": "1927",
-      "operatorRaw": "Canadian Pacific Steamships Ltd.",
-      "operator": "Canadian Pacific Steamships Ltd."
+      "operatorRaw": "Canadian Pacific Steamships",
+      "operator": "Canadian Pacific"
     },
     {
       "name": "SS Duchess of Bedford",
       "path": "ships/ss-duchess-of-bedford.html",
       "url": "/ships/ss-duchess-of-bedford",
       "launchYear": "1928",
-      "operatorRaw": "Canadian Pacific Steamships Ltd.",
-      "operator": "Canadian Pacific Steamships Ltd."
+      "operatorRaw": "Canadian Pacific Steamships",
+      "operator": "Canadian Pacific"
     },
     {
       "name": "SS Duchess of Richmond",
       "path": "ships/ss-duchess-of-richmond.html",
       "url": "/ships/ss-duchess-of-richmond",
-      "launchYear": "1928",
-      "operatorRaw": "Canadian Pacific Steamships Ltd.",
-      "operator": "Canadian Pacific Steamships Ltd."
+      "launchYear": null,
+      "operatorRaw": "Canadian Pacific Steamships",
+      "operator": "Canadian Pacific"
     },
     {
       "name": "SS Duchess of York",
       "path": "ships/ss-duchess-of-york.html",
       "url": "/ships/ss-duchess-of-york",
       "launchYear": "1928",
-      "operatorRaw": "Canadian Pacific Steamships Ltd.",
-      "operator": "Canadian Pacific Steamships Ltd."
+      "operatorRaw": "Canadian Pacific Steamships",
+      "operator": "Canadian Pacific"
     },
     {
       "name": "SS Duilio",
       "path": "ships/ss-duilio.html",
       "url": "/ships/ss-duilio",
-      "launchYear": "1921",
+      "launchYear": "1916",
       "operatorRaw": "Navigazione Generale Italiana",
       "operator": "Navigazione Generale Italiana (NGI)"
     },
@@ -2055,8 +1995,8 @@
       "path": "ships/ss-eastland.html",
       "url": "/ships/ss-eastland",
       "launchYear": "1903",
-      "operatorRaw": "Great Lakes passenger ship",
-      "operator": "Great Lakes passenger ship"
+      "operatorRaw": "Michigan Steamship Company",
+      "operator": "Michigan Steamship Company"
     },
     {
       "name": "RMS Empress of France",
@@ -2071,7 +2011,7 @@
       "path": "ships/ss-espagne.html",
       "url": "/ships/ss-espagne",
       "launchYear": "1909",
-      "operatorRaw": "Compagnie Générale Transatlantique (French Line)",
+      "operatorRaw": "Compagnie Générale Transatlantique",
       "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
@@ -2079,7 +2019,7 @@
       "path": "ships/ss-europa.html",
       "url": "/ships/ss-europa",
       "launchYear": "1928",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
@@ -2087,8 +2027,8 @@
       "path": "ships/ss-finland.html",
       "url": "/ships/ss-finland",
       "launchYear": "1902",
-      "operatorRaw": "Red Star Line; also operated or chartered within the International Mercantile Marine system, including American Line, White Star Line, and Panama Pacific Line contexts",
-      "operator": "Red Star Line; also operated or chartered within the International Mercantile Marine system, including American Line, White Star Line, and Panama Pacific Line contexts"
+      "operatorRaw": "Red Star Line / International Navigation Company",
+      "operator": "Red Star Line / International Navigation Company"
     },
     {
       "name": "SS Flandre",
@@ -2102,9 +2042,9 @@
       "name": "SS France (1912)",
       "path": "ships/ss-france-1912.html",
       "url": "/ships/ss-france-1912",
-      "launchYear": null,
-      "operatorRaw": "Compagnie Générale Transatlantique (CGT) — “French Line”",
-      "operator": "Compagnie Générale Transatlantique (CGT) — “French Line”"
+      "launchYear": "1910",
+      "operatorRaw": "Compagnie Générale Transatlantique (French Line)",
+      "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
       "name": "SS France",
@@ -2135,7 +2075,7 @@
       "path": "ships/ss-george-washington.html",
       "url": "/ships/ss-george-washington",
       "launchYear": "1908",
-      "operatorRaw": "Norddeutscher Lloyd (Bremen)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
@@ -2207,11 +2147,11 @@
       "path": "ships/ss-grosser-kurfurst.html",
       "url": "/ships/ss-grosser-kurfurst",
       "launchYear": "1899",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
-      "name": "SS Hamburg",
+      "name": "SS Hamburg (1925)",
       "path": "ships/ss-hamburg-1925.html",
       "url": "/ships/ss-hamburg-1925",
       "launchYear": "1925",
@@ -2223,8 +2163,8 @@
       "path": "ships/ss-ile-de-france.html",
       "url": "/ships/ss-ile-de-france",
       "launchYear": "1926",
-      "operatorRaw": "Compagnie Générale Transatlantique (CGT) / “French Line”",
-      "operator": "Compagnie Générale Transatlantique (CGT) / “French Line”"
+      "operatorRaw": "Compagnie Générale Transatlantique (French Line)",
+      "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
       "name": "SS Imperator",
@@ -2279,7 +2219,7 @@
       "path": "ships/ss-kaiser-wilhelm-ii.html",
       "url": "/ships/ss-kaiser-wilhelm-ii",
       "launchYear": "1902",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
@@ -2303,7 +2243,7 @@
       "path": "ships/ss-kronprinz-wilhelm.html",
       "url": "/ships/ss-kronprinz-wilhelm",
       "launchYear": "1901",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
@@ -2311,16 +2251,16 @@
       "path": "ships/ss-kronprinzessin-cecilie.html",
       "url": "/ships/ss-kronprinzessin-cecilie",
       "launchYear": "1906",
-      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
       "name": "SS Kroonland",
       "path": "ships/ss-kroonland.html",
       "url": "/ships/ss-kroonland",
-      "launchYear": "1902",
-      "operatorRaw": "Red Star Line (within the International Mercantile Marine orbit)",
-      "operator": "Red Star Line (within the International Mercantile Marine orbit)"
+      "launchYear": null,
+      "operatorRaw": "Red Star Line / International Mercantile Marine",
+      "operator": "Red Star Line / International Mercantile Marine"
     },
     {
       "name": "SS La Bretagne",
@@ -2347,11 +2287,11 @@
       "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
-      "name": "SS Lafayette",
+      "name": "SS Lafayette (1915)",
       "path": "ships/ss-lafayette.html",
       "url": "/ships/ss-lafayette",
       "launchYear": "1914",
-      "operatorRaw": "Compagnie Générale Transatlantique (French Line)",
+      "operatorRaw": "Compagnie Générale Transatlantique",
       "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
@@ -2367,8 +2307,8 @@
       "path": "ships/ss-lapland.html",
       "url": "/ships/ss-lapland",
       "launchYear": "1908",
-      "operatorRaw": "Red Star Line (Société Anonyme de Navigation Belge-Américaine)",
-      "operator": "Red Star Line (Société Anonyme de Navigation Belge-Américaine)"
+      "operatorRaw": "Red Star Line",
+      "operator": "Red Star Line"
     },
     {
       "name": "SS L'Atlantique",
@@ -2435,15 +2375,15 @@
       "operator": "Anchor Line, Glasgow"
     },
     {
-      "name": "SS Majestic",
+      "name": "RMS Majestic (1889)",
       "path": "ships/ss-majestic-1889.html",
       "url": "/ships/ss-majestic-1889",
       "launchYear": "1889",
-      "operatorRaw": "White Star Line (Oceanic Steam Navigation Co.)",
+      "operatorRaw": "White Star Line",
       "operator": "White Star Line"
     },
     {
-      "name": "SS Maloja",
+      "name": "RMS Maloja (1923)",
       "path": "ships/ss-maloja.html",
       "url": "/ships/ss-maloja",
       "launchYear": "1923",
@@ -2539,7 +2479,7 @@
       "operator": "Great Northern Steamship Company (owned by James J. Hill)"
     },
     {
-      "name": "SS Minnetonka",
+      "name": "SS Minnetonka (1902)",
       "path": "ships/ss-minnetonka.html",
       "url": "/ships/ss-minnetonka",
       "launchYear": "1901",
@@ -2547,7 +2487,7 @@
       "operator": "Atlantic Transport Line"
     },
     {
-      "name": "SS Minnewaska",
+      "name": "SS Minnewaska (1908)",
       "path": "ships/ss-minnewaska.html",
       "url": "/ships/ss-minnewaska",
       "launchYear": "1908",
@@ -2583,16 +2523,16 @@
       "path": "ships/ss-montcalm.html",
       "url": "/ships/ss-montcalm",
       "launchYear": "1920",
-      "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships Ltd.",
-      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships Ltd."
+      "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
+      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
     },
     {
       "name": "SS Montclare",
       "path": "ships/ss-montclare.html",
       "url": "/ships/ss-montclare",
       "launchYear": "1921",
-      "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships Ltd.",
-      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships Ltd."
+      "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
+      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
     },
     {
       "name": "SS Monterey",
@@ -2607,11 +2547,11 @@
       "path": "ships/ss-montrose.html",
       "url": "/ships/ss-montrose",
       "launchYear": "1920",
-      "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships Ltd.",
-      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships Ltd."
+      "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
+      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
     },
     {
-      "name": "SS Mooltan",
+      "name": "RMS Mooltan (1923)",
       "path": "ships/ss-mooltan.html",
       "url": "/ships/ss-mooltan",
       "launchYear": "1923",
@@ -2623,8 +2563,8 @@
       "path": "ships/ss-morro-castle.html",
       "url": "/ships/ss-morro-castle",
       "launchYear": "1930",
-      "operatorRaw": "Ward Line (New York & Cuba Mail SS Co.) / AGWI Navigation Co. (commonly cited)",
-      "operator": "Ward Line (New York & Cuba Mail SS Co.) / AGWI Navigation Co. (commonly cited)"
+      "operatorRaw": "Ward Line / AGWI interests",
+      "operator": "Ward Line / AGWI interests"
     },
     {
       "name": "SS Napoleon III",
@@ -2643,7 +2583,7 @@
       "operator": "Dominion Line"
     },
     {
-      "name": "SS New York",
+      "name": "SS New York (1927)",
       "path": "ships/ss-new-york.html",
       "url": "/ships/ss-new-york",
       "launchYear": "1926",
@@ -2663,7 +2603,7 @@
       "path": "ships/ss-nieuw-amsterdam.html",
       "url": "/ships/ss-nieuw-amsterdam",
       "launchYear": "1937",
-      "operatorRaw": "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij / NASM)",
+      "operatorRaw": "Holland America Line",
       "operator": "Holland America Line"
     },
     {
@@ -2671,8 +2611,8 @@
       "path": "ships/ss-nomadic.html",
       "url": "/ships/ss-nomadic",
       "launchYear": "1911",
-      "operatorRaw": "White Star Line",
-      "operator": "White Star Line"
+      "operatorRaw": "Oceanic Steam Navigation Co. Ltd. (White Star Line)",
+      "operator": "Oceanic Steam Navigation Co. Ltd. (White Star Line)"
     },
     {
       "name": "SS Noordam",
@@ -2703,7 +2643,7 @@
       "path": "ships/ss-oceanic-1871.html",
       "url": "/ships/ss-oceanic-1871",
       "launchYear": "1870",
-      "operatorRaw": "White Star Line (Oceanic Steam Navigation Company)",
+      "operatorRaw": "White Star Line",
       "operator": "White Star Line"
     },
     {
@@ -2739,7 +2679,7 @@
       "operator": "Orient Line"
     },
     {
-      "name": "SS Oronsay",
+      "name": "SS Oronsay (1925)",
       "path": "ships/ss-oronsay.html",
       "url": "/ships/ss-oronsay",
       "launchYear": "1924",
@@ -2747,7 +2687,7 @@
       "operator": "Orient Line"
     },
     {
-      "name": "SS Orontes",
+      "name": "SS Orontes (1929)",
       "path": "ships/ss-orontes.html",
       "url": "/ships/ss-orontes",
       "launchYear": "1929",
@@ -2767,8 +2707,8 @@
       "path": "ships/ss-paris.html",
       "url": "/ships/ss-paris",
       "launchYear": "1916",
-      "operatorRaw": "Compagnie Générale Transatlantique (CGT) — “French Line”",
-      "operator": "Compagnie Générale Transatlantique (CGT) — “French Line”"
+      "operatorRaw": "Compagnie Générale Transatlantique",
+      "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
       "name": "SS Pasteur",
@@ -2879,8 +2819,8 @@
       "path": "ships/ss-queen-of-bermuda.html",
       "url": "/ships/ss-queen-of-bermuda",
       "launchYear": "1932",
-      "operatorRaw": "Furness, Withy & Co. · Furness Bermuda Line",
-      "operator": "Furness, Withy & Co. · Furness Bermuda Line"
+      "operatorRaw": "Furness, Withy & Co. / Furness Bermuda Line",
+      "operator": "Furness, Withy & Co."
     },
     {
       "name": "SS Raffaello (1965)",
@@ -2895,7 +2835,7 @@
       "path": "ships/ss-reliance.html",
       "url": "/ships/ss-reliance",
       "launchYear": "1914",
-      "operatorRaw": "Hamburg America Line (HAPAG)",
+      "operatorRaw": "Hamburg America Line",
       "operator": "Hamburg America Line (HAPAG)"
     },
     {
@@ -2903,7 +2843,7 @@
       "path": "ships/ss-republic-1903.html",
       "url": "/ships/ss-republic-1903",
       "launchYear": "1903",
-      "operatorRaw": "Dominion Line",
+      "operatorRaw": "Dominion Line / White Star Line",
       "operator": "Dominion Line"
     },
     {
@@ -2918,20 +2858,20 @@
       "name": "SS Resolute",
       "path": "ships/ss-resolute.html",
       "url": "/ships/ss-resolute",
-      "launchYear": "1914",
-      "operatorRaw": "Hamburg America Line (HAPAG)",
-      "operator": "Hamburg America Line (HAPAG)"
+      "launchYear": null,
+      "operatorRaw": "United American Lines / Hamburg America Line",
+      "operator": "United American Lines / Hamburg America Line"
     },
     {
       "name": "SS Rex",
       "path": "ships/ss-rex.html",
       "url": "/ships/ss-rex",
       "launchYear": "1931",
-      "operatorRaw": "Italian Line (Italia Flotte Riunite / later Italian Line naming is source-dependent; commonly cited as “Italian Line”)",
-      "operator": "Italian Line"
+      "operatorRaw": "Italia Flotte Riunite / Italian Line",
+      "operator": "Italia Flotte Riunite / Italian Line"
     },
     {
-      "name": "SS Rijndam",
+      "name": "SS Rijndam (1901)",
       "path": "ships/ss-rijndam-1901.html",
       "url": "/ships/ss-rijndam-1901",
       "launchYear": "1901",
@@ -2951,7 +2891,7 @@
       "path": "ships/ss-roma.html",
       "url": "/ships/ss-roma",
       "launchYear": "1926",
-      "operatorRaw": "Navigazione Generale Italiana (NGI)",
+      "operatorRaw": "Navigazione Generale Italiana",
       "operator": "Navigazione Generale Italiana (NGI)"
     },
     {
@@ -2959,15 +2899,15 @@
       "path": "ships/ss-romanic.html",
       "url": "/ships/ss-romanic",
       "launchYear": "1898",
-      "operatorRaw": "White Star Line",
-      "operator": "White Star Line"
+      "operatorRaw": "Dominion Line",
+      "operator": "Dominion Line"
     },
     {
       "name": "SS Rotterdam (1908)",
       "path": "ships/ss-rotterdam-1908.html",
       "url": "/ships/ss-rotterdam-1908",
       "launchYear": "1908",
-      "operatorRaw": "Holland America Line (NASM)",
+      "operatorRaw": "Holland America Line",
       "operator": "Holland America Line"
     },
     {
@@ -2979,7 +2919,7 @@
       "operator": "Holland America Line"
     },
     {
-      "name": "SS Runic",
+      "name": "SS Runic (1900)",
       "path": "ships/ss-runic.html",
       "url": "/ships/ss-runic",
       "launchYear": "1900",
@@ -3011,19 +2951,19 @@
       "operator": "Saint George Steam Packet Company, Cork"
     },
     {
-      "name": "SS St. Louis",
+      "name": "MS St. Louis",
       "path": "ships/ss-st-louis.html",
       "url": "/ships/ss-st-louis",
       "launchYear": "1928",
-      "operatorRaw": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
-      "operator": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
+      "operatorRaw": "Hamburg-America Line (HAPAG)",
+      "operator": "Hamburg America Line (HAPAG)"
     },
     {
-      "name": "SS Statendam",
+      "name": "SS Statendam (1929)",
       "path": "ships/ss-statendam-1929.html",
       "url": "/ships/ss-statendam-1929",
       "launchYear": "1924",
-      "operatorRaw": "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij / NASM)",
+      "operatorRaw": "Holland America Line",
       "operator": "Holland America Line"
     },
     {
@@ -3039,11 +2979,11 @@
       "path": "ships/ss-strathaird.html",
       "url": "/ships/ss-strathaird",
       "launchYear": "1931",
-      "operatorRaw": "Peninsular and Oriental Steam Navigation Company (P&O)",
-      "operator": "P&O"
+      "operatorRaw": "P&O Steam Navigation Company; later P&O-Orient Lines",
+      "operator": "P&O Steam Navigation Company; later P&O-Orient Lines"
     },
     {
-      "name": "SS Strathmore",
+      "name": "RMS Strathmore",
       "path": "ships/ss-strathmore.html",
       "url": "/ships/ss-strathmore",
       "launchYear": "1935",
@@ -3095,7 +3035,7 @@
       "path": "ships/ss-veendam.html",
       "url": "/ships/ss-veendam",
       "launchYear": "1922",
-      "operatorRaw": "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij)",
+      "operatorRaw": "Holland America Line",
       "operator": "Holland America Line"
     },
     {
@@ -3119,7 +3059,7 @@
       "path": "ships/ss-volendam.html",
       "url": "/ships/ss-volendam",
       "launchYear": "1922",
-      "operatorRaw": "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart Maatschappij)",
+      "operatorRaw": "Holland America Line",
       "operator": "Holland America Line"
     },
     {
@@ -3127,8 +3067,8 @@
       "path": "ships/ss-warwick-castle.html",
       "url": "/ships/ss-warwick-castle",
       "launchYear": "1930",
-      "operatorRaw": "Union-Castle Mail Steamship Company",
-      "operator": "Union-Castle Mail Steamship Company"
+      "operatorRaw": "Union-Castle Line",
+      "operator": "Union-Castle Line"
     },
     {
       "name": "SS Washington",
@@ -3142,7 +3082,7 @@
       "name": "SS Westernland",
       "path": "ships/ss-westernland.html",
       "url": "/ships/ss-westernland",
-      "launchYear": "1918",
+      "launchYear": "1917",
       "operatorRaw": "Red Star Line",
       "operator": "Red Star Line"
     },
@@ -3151,8 +3091,8 @@
       "path": "ships/ss-winchester-castle.html",
       "url": "/ships/ss-winchester-castle",
       "launchYear": "1929",
-      "operatorRaw": "Union-Castle Mail Steamship Company",
-      "operator": "Union-Castle Mail Steamship Company"
+      "operatorRaw": "Union-Castle Line",
+      "operator": "Union-Castle Line"
     },
     {
       "name": "SS Winifredian",
@@ -3183,8 +3123,8 @@
       "path": "ships/tatsuta-maru-1929.html",
       "url": "/ships/tatsuta-maru-1929",
       "launchYear": "1929",
-      "operatorRaw": "Nippon Yusen Kaisha (NYK Line)",
-      "operator": "Nippon Yusen Kaisha (NYK Line)"
+      "operatorRaw": "Nippon Yusen Kaisha (NYK)",
+      "operator": "Nippon Yusen Kaisha (NYK)"
     }
   ]
 }
