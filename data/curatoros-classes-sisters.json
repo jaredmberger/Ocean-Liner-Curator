@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T10:25:22.657Z",
+  "generatedAt": "2026-09-18T10:30:20.673Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithExplicitClass": 14,
     "canonicalClasses": 6,
-    "explicitSisterLinks": 10,
-    "unresolvedSisterMentions": 72
+    "explicitSisterLinks": 11,
+    "unresolvedSisterMentions": 75
   },
   "classes": [
     {
@@ -232,6 +232,19 @@
         "url": "/ships/ss-andrea-doria"
       },
       "evidenceFrom": "ships/ss-cristoforo-colombo.html"
+    },
+    {
+      "a": {
+        "name": "SS Duilio",
+        "path": "ships/ss-duilio.html",
+        "url": "/ships/ss-duilio"
+      },
+      "b": {
+        "name": "SS Giulio Cesare",
+        "path": "ships/ss-giulio-cesare.html",
+        "url": "/ships/ss-giulio-cesare"
+      },
+      "evidenceFrom": "ships/ss-duilio.html"
     },
     {
       "a": {
@@ -512,6 +525,24 @@
       "ship": "SS Duchess of York",
       "path": "ships/ss-duchess-of-york.html",
       "mentioned": "lost in wartime service",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "mentioned": "Naples",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "mentioned": "South American ports",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duilio",
+      "path": "ships/ss-duilio.html",
+      "mentioned": "especially Buenos Aires",
       "candidateCount": 0
     },
     {
@@ -1897,7 +1928,12 @@
       "path": "ships/ss-duilio.html",
       "url": "/ships/ss-duilio",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Giulio Cesare",
+        "Naples",
+        "South American ports",
+        "especially Buenos Aires"
+      ]
     },
     {
       "name": "SS Eastland",
