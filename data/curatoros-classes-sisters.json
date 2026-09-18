@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T09:57:18.637Z",
+  "generatedAt": "2026-09-18T10:25:22.657Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
-    "guidesWithExplicitClass": 16,
-    "canonicalClasses": 8,
-    "explicitSisterLinks": 9,
-    "unresolvedSisterMentions": 68
+    "guidesWithExplicitClass": 14,
+    "canonicalClasses": 6,
+    "explicitSisterLinks": 10,
+    "unresolvedSisterMentions": 72
   },
   "classes": [
     {
@@ -107,36 +107,6 @@
           "name": "SS Friedrich der Grosse",
           "path": "ships/ss-friedrich-der-grosse.html",
           "url": "/ships/ss-friedrich-der-grosse"
-        }
-      ]
-    },
-    {
-      "id": "canadian-pacific-duchess",
-      "name": "Canadian Pacific Duchess",
-      "rawValues": [
-        "Canadian Pacific Duchess"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Duchess of Richmond",
-          "path": "ships/ss-duchess-of-richmond.html",
-          "url": "/ships/ss-duchess-of-richmond"
-        }
-      ]
-    },
-    {
-      "id": "duchess",
-      "name": "Duchess",
-      "rawValues": [
-        "Duchess"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Duchess of York",
-          "path": "ships/ss-duchess-of-york.html",
-          "url": "/ships/ss-duchess-of-york"
         }
       ]
     },
@@ -288,6 +258,19 @@
         "url": "/ships/ss-washington"
       },
       "evidenceFrom": "ships/ss-manhattan.html"
+    },
+    {
+      "a": {
+        "name": "MS St. Louis",
+        "path": "ships/ss-st-louis.html",
+        "url": "/ships/ss-st-louis"
+      },
+      "b": {
+        "name": "SS Milwaukee",
+        "path": "ships/ss-milwaukee.html",
+        "url": "/ships/ss-milwaukee"
+      },
+      "evidenceFrom": "ships/ss-st-louis.html"
     }
   ],
   "unresolvedSisterMentions": [
@@ -520,6 +503,18 @@
       "candidateCount": 0
     },
     {
+      "ship": "SS Duchess of Atholl",
+      "path": "ships/ss-duchess-of-atholl.html",
+      "mentioned": "finished before her despite the earlier launch",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Duchess of York",
+      "path": "ships/ss-duchess-of-york.html",
+      "mentioned": "lost in wartime service",
+      "candidateCount": 0
+    },
+    {
       "ship": "SS Germanic",
       "path": "ships/ss-germanic.html",
       "mentioned": "Britannic",
@@ -673,6 +668,18 @@
       "ship": "SS Raffaello (1965)",
       "path": "ships/ss-raffaello-1965.html",
       "mentioned": "she was designed for high-speed North Atlantic service",
+      "candidateCount": 0
+    },
+    {
+      "ship": "MS St. Louis",
+      "path": "ships/ss-st-louis.html",
+      "mentioned": "but her historical memory is dominated by one event",
+      "candidateCount": 0
+    },
+    {
+      "ship": "MS St. Louis",
+      "path": "ships/ss-st-louis.html",
+      "mentioned": "Milwaukee Compare St",
       "candidateCount": 0
     },
     {
@@ -1858,7 +1865,9 @@
       "path": "ships/ss-duchess-of-atholl.html",
       "url": "/ships/ss-duchess-of-atholl",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "finished before her despite the earlier launch"
+      ]
     },
     {
       "name": "SS Duchess of Bedford",
@@ -1871,19 +1880,17 @@
       "name": "SS Duchess of Richmond",
       "path": "ships/ss-duchess-of-richmond.html",
       "url": "/ships/ss-duchess-of-richmond",
-      "classes": [
-        "Canadian Pacific Duchess"
-      ],
+      "classes": [],
       "sisters": []
     },
     {
       "name": "SS Duchess of York",
       "path": "ships/ss-duchess-of-york.html",
       "url": "/ships/ss-duchess-of-york",
-      "classes": [
-        "Duchess"
-      ],
-      "sisters": []
+      "classes": [],
+      "sisters": [
+        "lost in wartime service"
+      ]
     },
     {
       "name": "SS Duilio",
@@ -2785,7 +2792,11 @@
       "path": "ships/ss-st-louis.html",
       "url": "/ships/ss-st-louis",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Milwaukee",
+        "but her historical memory is dominated by one event",
+        "Milwaukee Compare St"
+      ]
     },
     {
       "name": "SS Statendam (1929)",
