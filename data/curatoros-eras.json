@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T10:15:46.768Z",
+  "generatedAt": "2026-09-18T19:53:10.722Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
     "shipGuides": 300,
     "guidesWithServiceStart": 295,
-    "guidesWithExplicitServiceEnd": 233,
+    "guidesWithExplicitServiceEnd": 234,
     "eras": 10,
     "decades": 15
   },
@@ -830,7 +830,7 @@
           "path": "ships/ss-conte-biancamano.html",
           "url": "/ships/ss-conte-biancamano",
           "serviceStartYear": "1925",
-          "serviceEndYear": null
+          "serviceEndYear": "1960"
         },
         {
           "name": "SS Conte Grande",
@@ -1054,7 +1054,7 @@
           "path": "ships/ss-roma.html",
           "url": "/ships/ss-roma",
           "serviceStartYear": "1926",
-          "serviceEndYear": "1943"
+          "serviceEndYear": "1952"
         },
         {
           "name": "MS St. Louis",
@@ -2349,7 +2349,7 @@
           "path": "ships/ss-conte-biancamano.html",
           "url": "/ships/ss-conte-biancamano",
           "serviceStartYear": "1925",
-          "serviceEndYear": null
+          "serviceEndYear": "1960"
         },
         {
           "name": "SS Conte Grande",
@@ -2573,7 +2573,7 @@
           "path": "ships/ss-roma.html",
           "url": "/ships/ss-roma",
           "serviceStartYear": "1926",
-          "serviceEndYear": "1943"
+          "serviceEndYear": "1952"
         },
         {
           "name": "MS St. Louis",
@@ -5807,10 +5807,10 @@
       "url": "/ships/ss-conte-biancamano",
       "launchYear": "1925",
       "serviceStartYear": "1925",
-      "serviceEndYear": null,
+      "serviceEndYear": "1960",
       "era": "Interwar recovery",
       "decade": "1920s",
-      "endEvidence": null
+      "endEvidence": "Withdrawn from service in 1960"
     },
     {
       "name": "SS Conte di Savoia",
@@ -7270,10 +7270,10 @@
       "url": "/ships/ss-roma",
       "launchYear": "1926",
       "serviceStartYear": "1926",
-      "serviceEndYear": "1943",
+      "serviceEndYear": "1952",
       "era": "Interwar recovery",
       "decade": "1920s",
-      "endEvidence": "1943 armisticeFinal fatePartially sunk during wartime sabotage; raised and scrapped"
+      "endEvidence": "scrapped by 1952"
     },
     {
       "name": "SS Romanic",
