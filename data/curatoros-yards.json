@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T09:31:51.290Z",
+  "generatedAt": "2026-09-18T10:03:16.688Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
     "shipGuides": 300,
@@ -226,6 +226,13 @@
           "name": "SS Athenic",
           "path": "ships/ss-athenic.html",
           "url": "/ships/ss-athenic",
+          "launchYear": "1901",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "SS Minnetonka (1902)",
+          "path": "ships/ss-minnetonka.html",
+          "url": "/ships/ss-minnetonka",
           "launchYear": "1901",
           "builder": "Harland & Wolff"
         },
@@ -557,13 +564,6 @@
           "url": "/ships/ss-canberra",
           "launchYear": "1960",
           "builder": "Harland & Wolff"
-        },
-        {
-          "name": "SS Minnetonka (1902)",
-          "path": "ships/ss-minnetonka.html",
-          "url": "/ships/ss-minnetonka",
-          "launchYear": null,
-          "builder": "Harland & Wolff"
         }
       ]
     },
@@ -886,6 +886,13 @@
           "builder": "Blohm & Voss"
         },
         {
+          "name": "SS New York (1927)",
+          "path": "ships/ss-new-york.html",
+          "url": "/ships/ss-new-york",
+          "launchYear": "1926",
+          "builder": "Blohm & Voss"
+        },
+        {
           "name": "SS Cap Arcona",
           "path": "ships/ss-cap-arcona.html",
           "url": "/ships/ss-cap-arcona",
@@ -911,13 +918,6 @@
           "path": "ships/ss-liberte.html",
           "url": "/ships/ss-liberte",
           "launchYear": "1928",
-          "builder": "Blohm & Voss"
-        },
-        {
-          "name": "SS New York (1927)",
-          "path": "ships/ss-new-york.html",
-          "url": "/ships/ss-new-york",
-          "launchYear": null,
           "builder": "Blohm & Voss"
         }
       ]
@@ -1355,6 +1355,13 @@
           "builder": "AG Vulcan"
         },
         {
+          "name": "SS Deutschland (1900)",
+          "path": "ships/ss-deutschland.html",
+          "url": "/ships/ss-deutschland",
+          "launchYear": "1900",
+          "builder": "A.G. Vulcan"
+        },
+        {
           "name": "SS Kronprinz Wilhelm",
           "path": "ships/ss-kronprinz-wilhelm.html",
           "url": "/ships/ss-kronprinz-wilhelm",
@@ -1409,13 +1416,6 @@
           "url": "/ships/ss-empress-of-france",
           "launchYear": "1913",
           "builder": "AG Vulcan"
-        },
-        {
-          "name": "SS Deutschland (1900)",
-          "path": "ships/ss-deutschland.html",
-          "url": "/ships/ss-deutschland",
-          "launchYear": null,
-          "builder": "A.G. Vulcan"
         }
       ]
     },
@@ -5032,7 +5032,7 @@
       "name": "SS Deutschland (1900)",
       "path": "ships/ss-deutschland.html",
       "url": "/ships/ss-deutschland",
-      "launchYear": null,
+      "launchYear": "1900",
       "assignments": [
         {
           "builder": "A.G. Vulcan",
@@ -5996,7 +5996,7 @@
       "name": "SS Minnetonka (1902)",
       "path": "ships/ss-minnetonka.html",
       "url": "/ships/ss-minnetonka",
-      "launchYear": null,
+      "launchYear": "1901",
       "assignments": [
         {
           "builder": "Harland & Wolff",
@@ -6178,7 +6178,7 @@
       "name": "SS New York (1927)",
       "path": "ships/ss-new-york.html",
       "url": "/ships/ss-new-york",
-      "launchYear": null,
+      "launchYear": "1926",
       "assignments": [
         {
           "builder": "Blohm & Voss",
