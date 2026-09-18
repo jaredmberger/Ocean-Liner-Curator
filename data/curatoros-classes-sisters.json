@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T20:51:18.886Z",
+  "generatedAt": "2026-09-18T23:45:01.101Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
-    "guidesWithExplicitClass": 15,
-    "canonicalClasses": 7,
-    "explicitSisterLinks": 11,
-    "unresolvedSisterMentions": 74
+    "guidesWithExplicitClass": 17,
+    "canonicalClasses": 9,
+    "explicitSisterLinks": 10,
+    "unresolvedSisterMentions": 66
   },
   "classes": [
     {
@@ -56,22 +56,22 @@
       ]
     },
     {
-      "id": "athenic",
-      "name": "Athenic",
+      "id": "imperator",
+      "name": "Imperator",
       "rawValues": [
-        "Athenic"
+        "Imperator"
       ],
       "shipCount": 2,
       "ships": [
         {
-          "name": "SS Corinthic",
-          "path": "ships/ss-corinthic.html",
-          "url": "/ships/ss-corinthic"
+          "name": "RMS Majestic",
+          "path": "ships/rms-majestic.html",
+          "url": "/ships/rms-majestic"
         },
         {
-          "name": "SS Ionic",
-          "path": "ships/ss-ionic.html",
-          "url": "/ships/ss-ionic"
+          "name": "SS Leviathan",
+          "path": "ships/ss-leviathan.html",
+          "url": "/ships/ss-leviathan"
         }
       ]
     },
@@ -92,6 +92,21 @@
           "name": "SS Baltic (1871)",
           "path": "ships/ss-baltic-1871.html",
           "url": "/ships/ss-baltic-1871"
+        }
+      ]
+    },
+    {
+      "id": "athenic",
+      "name": "Athenic",
+      "rawValues": [
+        "Athenic"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Ionic",
+          "path": "ships/ss-ionic.html",
+          "url": "/ships/ss-ionic"
         }
       ]
     },
@@ -122,6 +137,21 @@
           "name": "SS Washington",
           "path": "ships/ss-washington.html",
           "url": "/ships/ss-washington"
+        }
+      ]
+    },
+    {
+      "id": "passenger-cargo-economics-the-athenic",
+      "name": "Passenger-Cargo Economics The Athenic",
+      "rawValues": [
+        "Passenger-Cargo Economics The Athenic"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Corinthic",
+          "path": "ships/ss-corinthic.html",
+          "url": "/ships/ss-corinthic"
         }
       ]
     },
@@ -263,29 +293,16 @@
     },
     {
       "a": {
-        "name": "SS Gneisenau",
-        "path": "ships/ss-gneisenau.html",
-        "url": "/ships/ss-gneisenau"
-      },
-      "b": {
         "name": "SS Scharnhorst",
         "path": "ships/ss-scharnhorst.html",
         "url": "/ships/ss-scharnhorst"
       },
-      "evidenceFrom": "ships/ss-gneisenau.html"
-    },
-    {
-      "a": {
-        "name": "SS Manhattan (1932)",
-        "path": "ships/ss-manhattan.html",
-        "url": "/ships/ss-manhattan"
-      },
       "b": {
-        "name": "SS Washington",
-        "path": "ships/ss-washington.html",
-        "url": "/ships/ss-washington"
+        "name": "SS Gneisenau",
+        "path": "ships/ss-gneisenau.html",
+        "url": "/ships/ss-gneisenau"
       },
-      "evidenceFrom": "ships/ss-manhattan.html"
+      "evidenceFrom": "ships/ss-scharnhorst.html"
     },
     {
       "a": {
@@ -567,45 +584,9 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Gneisenau",
-      "path": "ships/ss-gneisenau.html",
-      "mentioned": "Potsdam Builder Deschimag AG Weser",
-      "candidateCount": 0
-    },
-    {
       "ship": "RMS Majestic (1889)",
       "path": "ships/ss-majestic-1889.html",
       "mentioned": "Teutonic",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Manhattan (1932)",
-      "path": "ships/ss-manhattan.html",
-      "mentioned": "but designed primarily for reliable service",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Manhattan (1932)",
-      "path": "ships/ss-manhattan.html",
-      "mentioned": "modern comfort",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Manhattan (1932)",
-      "path": "ships/ss-manhattan.html",
-      "mentioned": "Manhattan class” · sister ship",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Michelangelo (1965)",
-      "path": "ships/ss-michelangelo-1965.html",
-      "mentioned": "Raffaello",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Michelangelo (1965)",
-      "path": "ships/ss-michelangelo-1965.html",
-      "mentioned": "she embodied a late-modern Italian “ship of state” idea",
       "candidateCount": 0
     },
     {
@@ -690,18 +671,6 @@
       "ship": "SS President Hoover",
       "path": "ships/ss-president-hoover.html",
       "mentioned": "Dry Dock Company",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Raffaello (1965)",
-      "path": "ships/ss-raffaello-1965.html",
-      "mentioned": "Michelangelo",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Raffaello (1965)",
-      "path": "ships/ss-raffaello-1965.html",
-      "mentioned": "she was designed for high-speed North Atlantic service",
       "candidateCount": 0
     },
     {
@@ -1187,7 +1156,9 @@
       "name": "RMS Majestic",
       "path": "ships/rms-majestic.html",
       "url": "/ships/rms-majestic",
-      "classes": [],
+      "classes": [
+        "Imperator"
+      ],
       "sisters": []
     },
     {
@@ -1826,7 +1797,7 @@
       "path": "ships/ss-corinthic.html",
       "url": "/ships/ss-corinthic",
       "classes": [
-        "Athenic"
+        "Passenger-Cargo Economics The Athenic"
       ],
       "sisters": []
     },
@@ -2043,10 +2014,7 @@
       "path": "ships/ss-gneisenau.html",
       "url": "/ships/ss-gneisenau",
       "classes": [],
-      "sisters": [
-        "Scharnhorst",
-        "Potsdam Builder Deschimag AG Weser"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Gothic",
@@ -2264,7 +2232,9 @@
       "name": "SS Leviathan",
       "path": "ships/ss-leviathan.html",
       "url": "/ships/ss-leviathan",
-      "classes": [],
+      "classes": [
+        "Imperator"
+      ],
       "sisters": []
     },
     {
@@ -2323,12 +2293,7 @@
       "path": "ships/ss-manhattan.html",
       "url": "/ships/ss-manhattan",
       "classes": [],
-      "sisters": [
-        "Washington",
-        "but designed primarily for reliable service",
-        "modern comfort",
-        "Manhattan class” · sister ship"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Mariposa",
@@ -2370,10 +2335,7 @@
       "path": "ships/ss-michelangelo-1965.html",
       "url": "/ships/ss-michelangelo-1965",
       "classes": [],
-      "sisters": [
-        "Raffaello",
-        "she embodied a late-modern Italian “ship of state” idea"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Milwaukee",
@@ -2717,10 +2679,7 @@
       "path": "ships/ss-raffaello-1965.html",
       "url": "/ships/ss-raffaello-1965",
       "classes": [],
-      "sisters": [
-        "Michelangelo",
-        "she was designed for high-speed North Atlantic service"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Reliance",
