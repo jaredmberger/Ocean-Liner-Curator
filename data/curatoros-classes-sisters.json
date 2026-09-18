@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T08:37:58.374Z",
+  "generatedAt": "2026-09-18T09:57:18.637Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithExplicitClass": 16,
     "canonicalClasses": 8,
     "explicitSisterLinks": 9,
-    "unresolvedSisterMentions": 66
+    "unresolvedSisterMentions": 68
   },
   "classes": [
     {
@@ -415,6 +415,18 @@
       "ship": "RMS Windsor Castle (1921)",
       "path": "ships/rms-windsor-castle-1921.html",
       "mentioned": "second of Union-Castle's great four-funnel Cape Mail liners",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Asturias (1925)",
+      "path": "ships/ss-asturias-1925.html",
+      "mentioned": "Alcantara Builder Harland & Wolff",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Asturias (1925)",
+      "path": "ships/ss-asturias-1925.html",
+      "mentioned": "Belfast · yard no",
       "candidateCount": 0
     },
     {
@@ -1427,7 +1439,10 @@
       "path": "ships/ss-asturias-1925.html",
       "url": "/ships/ss-asturias-1925",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Alcantara Builder Harland & Wolff",
+        "Belfast · yard no"
+      ]
     },
     {
       "name": "SS Athenic",
