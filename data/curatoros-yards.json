@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T20:47:16.151Z",
+  "generatedAt": "2026-09-18T23:07:28.687Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
     "shipGuides": 300,
     "guidesWithDocumentedYard": 292,
     "guidesWithoutDocumentedYard": 8,
-    "canonicalYardLocations": 60,
-    "multiYardShips": 4
+    "canonicalYardLocations": 59,
+    "multiYardShips": 3
   },
   "yards": [
     {
@@ -933,14 +933,13 @@
         "Alexander Stephen & Sons, Linthouse",
         "Barclay, Curle & Company",
         "D. & W. Henderson Ltd.",
-        "Fairfield Shipbuilding & Engineering Co.",
         "Fairfield Shipbuilding & Engineering Co., Govan",
         "J. & G. Thomson",
         "John Elder & Co.",
         "Robert Napier & Sons",
         "Tod & McGregor"
       ],
-      "shipCount": 15,
+      "shipCount": 14,
       "ships": [
         {
           "name": "RMS Persia",
@@ -1032,13 +1031,6 @@
           "url": "/ships/ss-cathay-1924",
           "launchYear": "1924",
           "builder": "Barclay, Curle & Company"
-        },
-        {
-          "name": "RMS Transylvania",
-          "path": "ships/rms-transylvania.html",
-          "url": "/ships/rms-transylvania",
-          "launchYear": "1925",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
         },
         {
           "name": "RMS Viceroy of India",
@@ -1420,220 +1412,6 @@
       ]
     },
     {
-      "id": "saint-nazaire",
-      "name": "Saint-Nazaire",
-      "rawValues": [
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
-      ],
-      "builders": [
-        "Ateliers et Chantiers de Bretagne",
-        "Ateliers et Chantiers de Saint-Nazaire Penhoët",
-        "Chantiers & Ateliers de Penhoët",
-        "Chantiers de Penhoët",
-        "Chantiers de l'Atlantique",
-        "Chantiers de l’Atlantique"
-      ],
-      "shipCount": 8,
-      "ships": [
-        {
-          "name": "SS La Provence",
-          "path": "ships/ss-la-provence.html",
-          "url": "/ships/ss-la-provence",
-          "launchYear": "1905",
-          "builder": "Chantiers de Penhoët"
-        },
-        {
-          "name": "SS Flandre",
-          "path": "ships/ss-flandre.html",
-          "url": "/ships/ss-flandre",
-          "launchYear": "1913",
-          "builder": "Chantiers de l'Atlantique"
-        },
-        {
-          "name": "SS Paris",
-          "path": "ships/ss-paris.html",
-          "url": "/ships/ss-paris",
-          "launchYear": "1916",
-          "builder": "Chantiers & Ateliers de Penhoët"
-        },
-        {
-          "name": "SS Île de France",
-          "path": "ships/ss-ile-de-france.html",
-          "url": "/ships/ss-ile-de-france",
-          "launchYear": "1926",
-          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
-        },
-        {
-          "name": "SS Normandie",
-          "path": "ships/ss-normandie.html",
-          "url": "/ships/ss-normandie",
-          "launchYear": "1932",
-          "builder": "Chantiers de Penhoët"
-        },
-        {
-          "name": "SS Bretagne",
-          "path": "ships/ss-bretagne.html",
-          "url": "/ships/ss-bretagne",
-          "launchYear": "1951",
-          "builder": "Ateliers et Chantiers de Bretagne"
-        },
-        {
-          "name": "SS France",
-          "path": "ships/ss-france.html",
-          "url": "/ships/ss-france",
-          "launchYear": "1960",
-          "builder": "Chantiers de l’Atlantique"
-        },
-        {
-          "name": "RMS Queen Mary 2",
-          "path": "ships/rms-queen-mary-2.html",
-          "url": "/ships/rms-queen-mary-2",
-          "launchYear": "2003",
-          "builder": "Chantiers de l’Atlantique"
-        }
-      ]
-    },
-    {
-      "id": "scotland",
-      "name": "Scotland",
-      "rawValues": [
-        "Scotland"
-      ],
-      "builders": [
-        "Caird & Company, Greenock",
-        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
-        "Fairfield Shipbuilding & Engineering Co., Govan",
-        "Fairfield Shipbuilding & Engineering Company, Govan",
-        "J. & G. Thomson & Co., Clydebank / Glasgow area",
-        "J. & G. Thomson, Clydebank",
-        "Robert Menzies & Sons, Leith"
-      ],
-      "shipCount": 8,
-      "ships": [
-        {
-          "name": "SS Sirius",
-          "path": "ships/ss-sirius.html",
-          "url": "/ships/ss-sirius",
-          "launchYear": "1837",
-          "builder": "Robert Menzies & Sons, Leith"
-        },
-        {
-          "name": "SS Bothnia",
-          "path": "ships/ss-bothnia.html",
-          "url": "/ships/ss-bothnia",
-          "launchYear": "1874",
-          "builder": "J. & G. Thomson & Co., Clydebank / Glasgow area"
-        },
-        {
-          "name": "SS City of New York (1888)",
-          "path": "ships/ss-city-of-new-york-1888.html",
-          "url": "/ships/ss-city-of-new-york-1888",
-          "launchYear": "1888",
-          "builder": "J. & G. Thomson, Clydebank"
-        },
-        {
-          "name": "RMS Lucania",
-          "path": "ships/rms-lucania.html",
-          "url": "/ships/rms-lucania",
-          "launchYear": "1893",
-          "builder": "Fairfield Shipbuilding & Engineering Co., Govan"
-        },
-        {
-          "name": "RMS Kenilworth Castle",
-          "path": "ships/rms-kenilworth-castle.html",
-          "url": "/ships/rms-kenilworth-castle",
-          "launchYear": "1903",
-          "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
-        },
-        {
-          "name": "RMS Moldavia",
-          "path": "ships/rms-moldavia.html",
-          "url": "/ships/rms-moldavia",
-          "launchYear": "1903",
-          "builder": "Caird & Company, Greenock"
-        },
-        {
-          "name": "SS Armadale Castle",
-          "path": "ships/ss-armadale-castle.html",
-          "url": "/ships/ss-armadale-castle",
-          "launchYear": "1903",
-          "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
-        },
-        {
-          "name": "SS Letitia",
-          "path": "ships/ss-letitia.html",
-          "url": "/ships/ss-letitia",
-          "launchYear": "1924",
-          "builder": "Fairfield Shipbuilding & Engineering Company, Govan"
-        }
-      ]
-    },
-    {
-      "id": "bremen",
-      "name": "Bremen",
-      "rawValues": [
-        "Bremen"
-      ],
-      "builders": [
-        "A.G. Weser / Deschimag",
-        "AG Weser",
-        "Deschimag AG Weser"
-      ],
-      "shipCount": 7,
-      "ships": [
-        {
-          "name": "SS Arabic (1921)",
-          "path": "ships/ss-arabic-1920.html",
-          "url": "/ships/ss-arabic-1920",
-          "launchYear": "1908",
-          "builder": "AG Weser"
-        },
-        {
-          "name": "SS Berlin (1909)",
-          "path": "ships/ss-berlin-1909.html",
-          "url": "/ships/ss-berlin-1909",
-          "launchYear": "1908",
-          "builder": "AG Weser"
-        },
-        {
-          "name": "SS Albertic",
-          "path": "ships/ss-albertic.html",
-          "url": "/ships/ss-albertic",
-          "launchYear": "1920",
-          "builder": "AG Weser"
-        },
-        {
-          "name": "SS Bremen",
-          "path": "ships/ss-bremen.html",
-          "url": "/ships/ss-bremen",
-          "launchYear": "1928",
-          "builder": "A.G. Weser / Deschimag"
-        },
-        {
-          "name": "SS Gneisenau",
-          "path": "ships/ss-gneisenau.html",
-          "url": "/ships/ss-gneisenau",
-          "launchYear": "1934",
-          "builder": "Deschimag AG Weser"
-        },
-        {
-          "name": "SS Scharnhorst",
-          "path": "ships/ss-scharnhorst.html",
-          "url": "/ships/ss-scharnhorst",
-          "launchYear": "1934",
-          "builder": "Deschimag AG Weser"
-        },
-        {
-          "name": "SS Resolute",
-          "path": "ships/ss-resolute.html",
-          "url": "/ships/ss-resolute",
-          "launchYear": null,
-          "builder": "AG Weser"
-        }
-      ]
-    },
-    {
       "id": "genoa",
       "name": "Genoa",
       "rawValues": [
@@ -1643,7 +1421,7 @@
         "Ansaldo",
         "Ansaldo, Sestri Ponente"
       ],
-      "shipCount": 7,
+      "shipCount": 8,
       "ships": [
         {
           "name": "SS Duilio",
@@ -1693,6 +1471,220 @@
           "url": "/ships/ss-leonardo-da-vinci",
           "launchYear": "1958",
           "builder": "Ansaldo"
+        },
+        {
+          "name": "SS Michelangelo (1965)",
+          "path": "ships/ss-michelangelo-1965.html",
+          "url": "/ships/ss-michelangelo-1965",
+          "launchYear": "1962",
+          "builder": "Ansaldo, Sestri Ponente"
+        }
+      ]
+    },
+    {
+      "id": "saint-nazaire",
+      "name": "Saint-Nazaire",
+      "rawValues": [
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "builders": [
+        "Ateliers et Chantiers de Bretagne",
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët",
+        "Chantiers & Ateliers de Penhoët",
+        "Chantiers de Penhoët",
+        "Chantiers de l'Atlantique",
+        "Chantiers de l’Atlantique"
+      ],
+      "shipCount": 8,
+      "ships": [
+        {
+          "name": "SS La Bretagne",
+          "path": "ships/ss-la-bretagne.html",
+          "url": "/ships/ss-la-bretagne",
+          "launchYear": "1885",
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
+        },
+        {
+          "name": "SS La Provence",
+          "path": "ships/ss-la-provence.html",
+          "url": "/ships/ss-la-provence",
+          "launchYear": "1905",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Flandre",
+          "path": "ships/ss-flandre.html",
+          "url": "/ships/ss-flandre",
+          "launchYear": "1913",
+          "builder": "Chantiers de l'Atlantique"
+        },
+        {
+          "name": "SS Paris",
+          "path": "ships/ss-paris.html",
+          "url": "/ships/ss-paris",
+          "launchYear": "1916",
+          "builder": "Chantiers & Ateliers de Penhoët"
+        },
+        {
+          "name": "SS Île de France",
+          "path": "ships/ss-ile-de-france.html",
+          "url": "/ships/ss-ile-de-france",
+          "launchYear": "1926",
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
+        },
+        {
+          "name": "SS Normandie",
+          "path": "ships/ss-normandie.html",
+          "url": "/ships/ss-normandie",
+          "launchYear": "1932",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Bretagne",
+          "path": "ships/ss-bretagne.html",
+          "url": "/ships/ss-bretagne",
+          "launchYear": "1951",
+          "builder": "Ateliers et Chantiers de Bretagne"
+        },
+        {
+          "name": "SS France",
+          "path": "ships/ss-france.html",
+          "url": "/ships/ss-france",
+          "launchYear": "1960",
+          "builder": "Chantiers de l’Atlantique"
+        }
+      ]
+    },
+    {
+      "id": "bremen",
+      "name": "Bremen",
+      "rawValues": [
+        "Bremen"
+      ],
+      "builders": [
+        "A.G. Weser / Deschimag",
+        "AG Weser",
+        "Deschimag AG Weser",
+        "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
+      ],
+      "shipCount": 7,
+      "ships": [
+        {
+          "name": "SS Arabic (1921)",
+          "path": "ships/ss-arabic-1920.html",
+          "url": "/ships/ss-arabic-1920",
+          "launchYear": "1908",
+          "builder": "AG Weser"
+        },
+        {
+          "name": "SS Berlin (1909)",
+          "path": "ships/ss-berlin-1909.html",
+          "url": "/ships/ss-berlin-1909",
+          "launchYear": "1908",
+          "builder": "AG Weser"
+        },
+        {
+          "name": "SS Albertic",
+          "path": "ships/ss-albertic.html",
+          "url": "/ships/ss-albertic",
+          "launchYear": "1920",
+          "builder": "AG Weser"
+        },
+        {
+          "name": "SS Bremen",
+          "path": "ships/ss-bremen.html",
+          "url": "/ships/ss-bremen",
+          "launchYear": "1928",
+          "builder": "A.G. Weser / Deschimag"
+        },
+        {
+          "name": "SS Scharnhorst",
+          "path": "ships/ss-scharnhorst.html",
+          "url": "/ships/ss-scharnhorst",
+          "launchYear": "1934",
+          "builder": "Deschimag AG Weser"
+        },
+        {
+          "name": "SS Gneisenau",
+          "path": "ships/ss-gneisenau.html",
+          "url": "/ships/ss-gneisenau",
+          "launchYear": "1935",
+          "builder": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
+        },
+        {
+          "name": "SS Resolute",
+          "path": "ships/ss-resolute.html",
+          "url": "/ships/ss-resolute",
+          "launchYear": null,
+          "builder": "AG Weser"
+        }
+      ]
+    },
+    {
+      "id": "scotland",
+      "name": "Scotland",
+      "rawValues": [
+        "Scotland"
+      ],
+      "builders": [
+        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
+        "Fairfield Shipbuilding & Engineering Co., Govan",
+        "Fairfield Shipbuilding & Engineering Company, Govan",
+        "J. & G. Thomson & Co., Clydebank / Glasgow area",
+        "J. & G. Thomson, Clydebank",
+        "Robert Menzies & Sons, Leith"
+      ],
+      "shipCount": 7,
+      "ships": [
+        {
+          "name": "SS Sirius",
+          "path": "ships/ss-sirius.html",
+          "url": "/ships/ss-sirius",
+          "launchYear": "1837",
+          "builder": "Robert Menzies & Sons, Leith"
+        },
+        {
+          "name": "SS Bothnia",
+          "path": "ships/ss-bothnia.html",
+          "url": "/ships/ss-bothnia",
+          "launchYear": "1874",
+          "builder": "J. & G. Thomson & Co., Clydebank / Glasgow area"
+        },
+        {
+          "name": "SS City of New York (1888)",
+          "path": "ships/ss-city-of-new-york-1888.html",
+          "url": "/ships/ss-city-of-new-york-1888",
+          "launchYear": "1888",
+          "builder": "J. & G. Thomson, Clydebank"
+        },
+        {
+          "name": "RMS Lucania",
+          "path": "ships/rms-lucania.html",
+          "url": "/ships/rms-lucania",
+          "launchYear": "1893",
+          "builder": "Fairfield Shipbuilding & Engineering Co., Govan"
+        },
+        {
+          "name": "RMS Kenilworth Castle",
+          "path": "ships/rms-kenilworth-castle.html",
+          "url": "/ships/rms-kenilworth-castle",
+          "launchYear": "1903",
+          "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
+        },
+        {
+          "name": "SS Armadale Castle",
+          "path": "ships/ss-armadale-castle.html",
+          "url": "/ships/ss-armadale-castle",
+          "launchYear": "1903",
+          "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
+        },
+        {
+          "name": "SS Letitia",
+          "path": "ships/ss-letitia.html",
+          "url": "/ships/ss-letitia",
+          "launchYear": "1924",
+          "builder": "Fairfield Shipbuilding & Engineering Company, Govan"
         }
       ]
     },
@@ -1804,6 +1796,50 @@
       ]
     },
     {
+      "id": "greenock",
+      "name": "Greenock",
+      "rawValues": [
+        "Greenock"
+      ],
+      "builders": [
+        "Caird & Company",
+        "Robert Steele & Co.",
+        "Scotts Shipbuilding & Engineering Co.",
+        "Scotts Shipbuilding & Engineering Co. Ltd."
+      ],
+      "shipCount": 4,
+      "ships": [
+        {
+          "name": "RMS Cambria",
+          "path": "ships/rms-cambria-1845.html",
+          "url": "/ships/rms-cambria-1845",
+          "launchYear": "1844",
+          "builder": "Robert Steele & Co."
+        },
+        {
+          "name": "RMS Moldavia",
+          "path": "ships/rms-moldavia.html",
+          "url": "/ships/rms-moldavia",
+          "launchYear": "1903",
+          "builder": "Caird & Company"
+        },
+        {
+          "name": "RMS Alaunia (1913)",
+          "path": "ships/rms-alaunia.html",
+          "url": "/ships/rms-alaunia",
+          "launchYear": "1913",
+          "builder": "Scotts Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "RMS Andania",
+          "path": "ships/rms-andania.html",
+          "url": "/ships/rms-andania",
+          "launchYear": "1913",
+          "builder": "Scotts Shipbuilding & Engineering Co. Ltd."
+        }
+      ]
+    },
+    {
       "id": "birkenhead",
       "name": "Birkenhead",
       "rawValues": [
@@ -1868,78 +1904,6 @@
           "url": "/ships/ss-columbus-1924",
           "launchYear": "1922",
           "builder": "F. Schichau"
-        }
-      ]
-    },
-    {
-      "id": "greenock",
-      "name": "Greenock",
-      "rawValues": [
-        "Greenock"
-      ],
-      "builders": [
-        "Robert Steele & Co.",
-        "Scotts Shipbuilding & Engineering Co.",
-        "Scotts Shipbuilding & Engineering Co. Ltd."
-      ],
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "RMS Cambria",
-          "path": "ships/rms-cambria-1845.html",
-          "url": "/ships/rms-cambria-1845",
-          "launchYear": "1844",
-          "builder": "Robert Steele & Co."
-        },
-        {
-          "name": "RMS Alaunia (1913)",
-          "path": "ships/rms-alaunia.html",
-          "url": "/ships/rms-alaunia",
-          "launchYear": "1913",
-          "builder": "Scotts Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "RMS Andania",
-          "path": "ships/rms-andania.html",
-          "url": "/ships/rms-andania",
-          "launchYear": "1913",
-          "builder": "Scotts Shipbuilding & Engineering Co. Ltd."
-        }
-      ]
-    },
-    {
-      "id": "italy",
-      "name": "Italy",
-      "rawValues": [
-        "Italy"
-      ],
-      "builders": [
-        "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente)",
-        "Cantiere Navale di Riva Trigoso, Riva Trigoso",
-        "Cantieri Riuniti dell’Adriatico (CRDA), Trieste"
-      ],
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "SS Principessa Mafalda",
-          "path": "ships/ss-principessa-mafalda.html",
-          "url": "/ships/ss-principessa-mafalda",
-          "launchYear": "1908",
-          "builder": "Cantiere Navale di Riva Trigoso, Riva Trigoso"
-        },
-        {
-          "name": "SS Michelangelo (1965)",
-          "path": "ships/ss-michelangelo-1965.html",
-          "url": "/ships/ss-michelangelo-1965",
-          "launchYear": "1962",
-          "builder": "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente)"
-        },
-        {
-          "name": "SS Raffaello (1965)",
-          "path": "ships/ss-raffaello-1965.html",
-          "url": "/ships/ss-raffaello-1965",
-          "launchYear": "1963",
-          "builder": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste"
         }
       ]
     },
@@ -2137,24 +2101,24 @@
         "France"
       ],
       "builders": [
-        "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire",
-        "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire"
+        "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire",
+        "Chantiers de l’Atlantique, Saint-Nazaire"
       ],
       "shipCount": 2,
       "ships": [
-        {
-          "name": "SS La Bretagne",
-          "path": "ships/ss-la-bretagne.html",
-          "url": "/ships/ss-la-bretagne",
-          "launchYear": "1885",
-          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire"
-        },
         {
           "name": "SS Chicago (1908)",
           "path": "ships/ss-chicago-1908.html",
           "url": "/ships/ss-chicago-1908",
           "launchYear": "1907",
           "builder": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire"
+        },
+        {
+          "name": "RMS Queen Mary 2",
+          "path": "ships/rms-queen-mary-2.html",
+          "url": "/ships/rms-queen-mary-2",
+          "launchYear": "2003",
+          "builder": "Chantiers de l’Atlantique, Saint-Nazaire"
         }
       ]
     },
@@ -2182,6 +2146,34 @@
           "url": "/ships/ss-mayflower",
           "launchYear": "1902",
           "builder": "R. & W. Hawthorn, Leslie & Co."
+        }
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "rawValues": [
+        "Italy"
+      ],
+      "builders": [
+        "Cantiere Navale di Riva Trigoso, Riva Trigoso",
+        "Cantieri Riuniti dell’Adriatico (CRDA), Trieste"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS Principessa Mafalda",
+          "path": "ships/ss-principessa-mafalda.html",
+          "url": "/ships/ss-principessa-mafalda",
+          "launchYear": "1908",
+          "builder": "Cantiere Navale di Riva Trigoso, Riva Trigoso"
+        },
+        {
+          "name": "SS Raffaello (1965)",
+          "path": "ships/ss-raffaello-1965.html",
+          "url": "/ships/ss-raffaello-1965",
+          "launchYear": "1963",
+          "builder": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste"
         }
       ]
     },
@@ -2350,6 +2342,33 @@
           "url": "/ships/ss-constitution",
           "launchYear": "1950",
           "builder": "Bethlehem Steel Corporation"
+        }
+      ]
+    },
+    {
+      "id": "rotterdam",
+      "name": "Rotterdam",
+      "rawValues": [
+        "Rotterdam"
+      ],
+      "builders": [
+        "Rotterdamsche Droogdok Maatschappij (RDM)"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS Nieuw Amsterdam",
+          "path": "ships/ss-nieuw-amsterdam.html",
+          "url": "/ships/ss-nieuw-amsterdam",
+          "launchYear": "1937",
+          "builder": "Rotterdamsche Droogdok Maatschappij (RDM)"
+        },
+        {
+          "name": "SS Rotterdam (1959)",
+          "path": "ships/ss-rotterdam-1959.html",
+          "url": "/ships/ss-rotterdam-1959",
+          "launchYear": "1958",
+          "builder": "Rotterdamsche Droogdok Maatschappij (RDM)"
         }
       ]
     },
@@ -2689,26 +2708,6 @@
       ]
     },
     {
-      "id": "netherlands",
-      "name": "Netherlands",
-      "rawValues": [
-        "Netherlands"
-      ],
-      "builders": [
-        "Rotterdam Drydock Company (RDM), Rotterdam"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Rotterdam (1959)",
-          "path": "ships/ss-rotterdam-1959.html",
-          "url": "/ships/ss-rotterdam-1959",
-          "launchYear": "1958",
-          "builder": "Rotterdam Drydock Company (RDM), Rotterdam"
-        }
-      ]
-    },
-    {
       "id": "new-york",
       "name": "New York",
       "rawValues": [
@@ -2729,13 +2728,13 @@
       ]
     },
     {
-      "id": "newcastle-low-walker-uk",
-      "name": "Newcastle / Low Walker, UK",
+      "id": "newcastle",
+      "name": "Newcastle",
       "rawValues": [
-        "Newcastle / Low Walker, UK"
+        "Newcastle"
       ],
       "builders": [
-        "Armstrong Whitworth & Co."
+        "Armstrong, Whitworth & Co., Low Walker"
       ],
       "shipCount": 1,
       "ships": [
@@ -2744,7 +2743,7 @@
           "path": "ships/ss-storstad.html",
           "url": "/ships/ss-storstad",
           "launchYear": "1910",
-          "builder": "Armstrong Whitworth & Co."
+          "builder": "Armstrong, Whitworth & Co., Low Walker"
         }
       ]
     },
@@ -2805,26 +2804,6 @@
           "url": "/ships/ss-rochambeau",
           "launchYear": "1911",
           "builder": "Chantiers & Ateliers de Saint-Nazaire"
-        }
-      ]
-    },
-    {
-      "id": "rotterdam",
-      "name": "Rotterdam",
-      "rawValues": [
-        "Rotterdam"
-      ],
-      "builders": [
-        "Rotterdamsche Droogdok Maatschappij (RDM)"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Nieuw Amsterdam",
-          "path": "ships/ss-nieuw-amsterdam.html",
-          "url": "/ships/ss-nieuw-amsterdam",
-          "launchYear": "1937",
-          "builder": "Rotterdamsche Droogdok Maatschappij (RDM)"
         }
       ]
     },
@@ -3798,10 +3777,10 @@
       "launchYear": "1903",
       "assignments": [
         {
-          "builder": "Caird & Company, Greenock",
-          "builderId": "caird-and-company-greenock",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "Caird & Company",
+          "builderId": "caird-and-company",
+          "location": "Greenock",
+          "locationRaw": "Greenock"
         }
       ]
     },
@@ -3882,10 +3861,10 @@
       "launchYear": "2003",
       "assignments": [
         {
-          "builder": "Chantiers de l’Atlantique",
-          "builderId": "chantiers-de-l-atlantique",
-          "location": "Saint-Nazaire",
-          "locationRaw": "Saint-Nazaire, France"
+          "builder": "Chantiers de l’Atlantique, Saint-Nazaire",
+          "builderId": "chantiers-de-l-atlantique-saint-nazaire",
+          "location": "France",
+          "locationRaw": "France"
         }
       ]
     },
@@ -4026,12 +4005,6 @@
           "builderId": "fairfield-shipbuilding-and-engineering-co",
           "location": "Govan",
           "locationRaw": "Govan"
-        },
-        {
-          "builder": "Fairfield Shipbuilding & Engineering Co.",
-          "builderId": "fairfield-shipbuilding-and-engineering-co",
-          "location": "Glasgow",
-          "locationRaw": "Glasgow"
         }
       ]
     },
@@ -5319,11 +5292,11 @@
       "name": "SS Gneisenau",
       "path": "ships/ss-gneisenau.html",
       "url": "/ships/ss-gneisenau",
-      "launchYear": "1934",
+      "launchYear": "1935",
       "assignments": [
         {
-          "builder": "Deschimag AG Weser",
-          "builderId": "deschimag-ag-weser",
+          "builder": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
+          "builderId": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
           "location": "Bremen",
           "locationRaw": "Bremen"
         }
@@ -5622,10 +5595,10 @@
       "launchYear": "1885",
       "assignments": [
         {
-          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire",
-          "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet-saint-nazaire",
-          "location": "France",
-          "locationRaw": "France"
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët",
+          "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire"
         }
       ]
     },
@@ -5758,7 +5731,7 @@
           "builder": "Blohm & Voss",
           "builderId": "blohm-and-voss",
           "location": "Hamburg",
-          "locationRaw": "Hamburg, Germany"
+          "locationRaw": "Hamburg"
         }
       ]
     },
@@ -5957,10 +5930,10 @@
       "launchYear": "1962",
       "assignments": [
         {
-          "builder": "Ansaldo Shipyards (Ansaldo), Genoa (Sestri Ponente)",
-          "builderId": "ansaldo-shipyards-ansaldo-genoa-sestri-ponente",
-          "location": "Italy",
-          "locationRaw": "Italy"
+          "builder": "Ansaldo, Sestri Ponente",
+          "builderId": "ansaldo-sestri-ponente",
+          "location": "Genoa",
+          "locationRaw": "Genoa"
         }
       ]
     },
@@ -6734,10 +6707,10 @@
       "launchYear": "1958",
       "assignments": [
         {
-          "builder": "Rotterdam Drydock Company (RDM), Rotterdam",
-          "builderId": "rotterdam-drydock-company-rdm-rotterdam",
-          "location": "Netherlands",
-          "locationRaw": "Netherlands"
+          "builder": "Rotterdamsche Droogdok Maatschappij (RDM)",
+          "builderId": "rotterdamsche-droogdok-maatschappij-rdm",
+          "location": "Rotterdam",
+          "locationRaw": "Rotterdam"
         }
       ]
     },
@@ -6832,10 +6805,10 @@
       "launchYear": "1910",
       "assignments": [
         {
-          "builder": "Armstrong Whitworth & Co.",
-          "builderId": "armstrong-whitworth-and-co",
-          "location": "Newcastle / Low Walker, UK",
-          "locationRaw": "Newcastle / Low Walker, UK"
+          "builder": "Armstrong, Whitworth & Co., Low Walker",
+          "builderId": "armstrong-whitworth-and-co-low-walker",
+          "location": "Newcastle",
+          "locationRaw": "Newcastle"
         }
       ]
     },
