@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-18T09:39:39.530Z",
+  "generatedAt": "2026-09-18T10:58:09.689Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 312,
@@ -10,7 +10,7 @@
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 8,
-    "guidesMissingLaunch": 4,
+    "guidesMissingLaunch": 2,
     "builderVariantGroups": 30,
     "suspiciousLaunchDatesWithoutYear": 1
   },
@@ -19,20 +19,12 @@
     "operator": [],
     "launched": [
       {
-        "ship": "SS Deutschland (1900)",
-        "path": "ships/ss-deutschland.html"
-      },
-      {
         "ship": "SS Duchess of Richmond",
         "path": "ships/ss-duchess-of-richmond.html"
       },
       {
         "ship": "SS Kroonland",
         "path": "ships/ss-kroonland.html"
-      },
-      {
-        "ship": "SS New York (1927)",
-        "path": "ships/ss-new-york.html"
       }
     ]
   },
@@ -57,7 +49,7 @@
         "Dominion Line; later White Star-Dominion context",
         "Hamburg America Line",
         "Hamburg America Line (HAPAG)",
-        "Hamburg-America Line"
+        "Holland America Line"
       ]
     },
     {
@@ -85,7 +77,7 @@
       "id": "blohm-and-voss",
       "name": "Blohm & Voss",
       "shipCount": 17,
-      "firstLaunchYear": null,
+      "firstLaunchYear": 1896,
       "lastLaunchYear": 1928,
       "locations": [
         "Hamburg",
@@ -98,8 +90,8 @@
         "Hamburg America Line / HAPAG",
         "Hamburg Süd",
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd / Hamburg South America Line)",
-        "Hamburg-America Line",
-        "Norddeutscher Lloyd"
+        "Hamburg-America Line (HAPAG)",
+        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
       ]
     },
     {
@@ -3614,7 +3606,7 @@
       "name": "SS Deutschland (1900)",
       "path": "ships/ss-deutschland.html",
       "url": "/ships/ss-deutschland",
-      "launchYear": null,
+      "launchYear": "1900",
       "builderRaw": "A.G. Vulcan, Stettin",
       "builders": [
         {
@@ -4762,7 +4754,7 @@
       "name": "SS New York (1927)",
       "path": "ships/ss-new-york.html",
       "url": "/ships/ss-new-york",
-      "launchYear": null,
+      "launchYear": "1926",
       "builderRaw": "Blohm & Voss, Hamburg",
       "builders": [
         {
