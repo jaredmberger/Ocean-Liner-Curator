@@ -19,7 +19,7 @@ function assert(condition, message) {
 // It verifies the structured facts that were formerly injected during builds.
 const expectedFacts = [
   ['ships/rms-lucania.html', 'Builder', 'Fairfield Shipbuilding & Engineering Co., Govan, Scotland'],
-  ['ships/ss-macedonia.html', 'Builder', 'Sir James Laing & Sons, Sunderland'],
+  ['ships/ss-macedonia.html', 'Builder', 'Malcolmson & Co., Waterford'],
   ['ships/ss-adriatic-1872.html', 'Launched', '17 October 1871'],
   ['ships/ss-nieuw-amsterdam-1906.html', 'Launched', '28 September 1905'],
   ['ships/ss-president-lincoln.html', 'Launched', '8 October 1903'],
