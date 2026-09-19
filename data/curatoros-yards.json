@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T23:07:28.687Z",
+  "generatedAt": "2026-09-19T02:04:35.833Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
     "shipGuides": 300,
@@ -24,7 +24,7 @@
         "Harland & Wolff, Queen's Island",
         "Workman, Clark & Co."
       ],
-      "shipCount": 77,
+      "shipCount": 78,
       "ships": [
         {
           "name": "SS Atlantic (1873)",
@@ -284,6 +284,13 @@
           "url": "/ships/rms-baltic",
           "launchYear": "1903",
           "builder": "Harland & Wolff, Queen's Island"
+        },
+        {
+          "name": "RMS Kenilworth Castle",
+          "path": "ships/rms-kenilworth-castle.html",
+          "url": "/ships/rms-kenilworth-castle",
+          "launchYear": "1903",
+          "builder": "Harland & Wolff"
         },
         {
           "name": "RMS Republic (1903)",
@@ -770,8 +777,7 @@
       "id": "hamburg",
       "name": "Hamburg",
       "rawValues": [
-        "Hamburg",
-        "Hamburg, Germany"
+        "Hamburg"
       ],
       "builders": [
         "A.G. Vulcan",
@@ -1045,8 +1051,7 @@
       "id": "govan",
       "name": "Govan",
       "rawValues": [
-        "Govan",
-        "Govan, Glasgow"
+        "Govan"
       ],
       "builders": [
         "Fairfield Shipbuilding & Engineering Co.",
@@ -1157,7 +1162,8 @@
       "builders": [
         "Barrow Shipbuilding Company",
         "Vickers Ltd",
-        "Vickers-Armstrongs"
+        "Vickers-Armstrongs",
+        "Vickers-Armstrongs (Shipbuilders) Ltd."
       ],
       "shipCount": 11,
       "ships": [
@@ -1236,7 +1242,7 @@
           "path": "ships/ss-oriana.html",
           "url": "/ships/ss-oriana",
           "launchYear": "1959",
-          "builder": "Vickers-Armstrongs"
+          "builder": "Vickers-Armstrongs (Shipbuilders) Ltd."
         }
       ]
     },
@@ -1266,7 +1272,7 @@
           "path": "ships/ss-konigin-luise.html",
           "url": "/ships/ss-konigin-luise",
           "launchYear": "1896",
-          "builder": "Blohm & Voss, Hamburg"
+          "builder": "AG Vulcan, Stettin"
         },
         {
           "name": "SS Pretoria",
@@ -1337,7 +1343,7 @@
         "A.G. Vulcan",
         "AG Vulcan"
       ],
-      "shipCount": 10,
+      "shipCount": 9,
       "ships": [
         {
           "name": "SS Kaiser Wilhelm der Grosse",
@@ -1399,13 +1405,6 @@
           "name": "RMS Empress of Australia",
           "path": "ships/rms-empress-of-australia.html",
           "url": "/ships/rms-empress-of-australia",
-          "launchYear": "1913",
-          "builder": "AG Vulcan"
-        },
-        {
-          "name": "RMS Empress of France",
-          "path": "ships/ss-empress-of-france.html",
-          "url": "/ships/ss-empress-of-france",
           "launchYear": "1913",
           "builder": "AG Vulcan"
         }
@@ -1565,7 +1564,6 @@
       "builders": [
         "A.G. Weser / Deschimag",
         "AG Weser",
-        "Deschimag AG Weser",
         "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
       ],
       "shipCount": 7,
@@ -1603,7 +1601,7 @@
           "path": "ships/ss-scharnhorst.html",
           "url": "/ships/ss-scharnhorst",
           "launchYear": "1934",
-          "builder": "Deschimag AG Weser"
+          "builder": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
         },
         {
           "name": "SS Gneisenau",
@@ -1633,7 +1631,8 @@
         "Fairfield Shipbuilding & Engineering Company, Govan",
         "J. & G. Thomson & Co., Clydebank / Glasgow area",
         "J. & G. Thomson, Clydebank",
-        "Robert Menzies & Sons, Leith"
+        "Robert Menzies & Sons, Leith",
+        "William Beardmore & Company, Dalmuir"
       ],
       "shipCount": 7,
       "ships": [
@@ -1666,18 +1665,18 @@
           "builder": "Fairfield Shipbuilding & Engineering Co., Govan"
         },
         {
-          "name": "RMS Kenilworth Castle",
-          "path": "ships/rms-kenilworth-castle.html",
-          "url": "/ships/rms-kenilworth-castle",
-          "launchYear": "1903",
-          "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
-        },
-        {
           "name": "SS Armadale Castle",
           "path": "ships/ss-armadale-castle.html",
           "url": "/ships/ss-armadale-castle",
           "launchYear": "1903",
           "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
+        },
+        {
+          "name": "RMS Empress of France",
+          "path": "ships/ss-empress-of-france.html",
+          "url": "/ships/ss-empress-of-france",
+          "launchYear": "1913",
+          "builder": "William Beardmore & Company, Dalmuir"
         },
         {
           "name": "SS Letitia",
@@ -1840,6 +1839,49 @@
       ]
     },
     {
+      "id": "monfalcone",
+      "name": "Monfalcone",
+      "rawValues": [
+        "Monfalcone"
+      ],
+      "builders": [
+        "Cantiere Navale Triestino",
+        "Cantieri Riuniti dell’Adriatico",
+        "Cantieri Riuniti dell’Adriatico, San Marco yard"
+      ],
+      "shipCount": 4,
+      "ships": [
+        {
+          "name": "MS Vulcania",
+          "path": "ships/ms-vulcania.html",
+          "url": "/ships/ms-vulcania",
+          "launchYear": "1926",
+          "builder": "Cantiere Navale Triestino"
+        },
+        {
+          "name": "Neptunia",
+          "path": "ships/neptunia.html",
+          "url": "/ships/neptunia",
+          "launchYear": "1931",
+          "builder": "Cantiere Navale Triestino"
+        },
+        {
+          "name": "Oceania",
+          "path": "ships/oceania.html",
+          "url": "/ships/oceania",
+          "launchYear": "1932",
+          "builder": "Cantieri Riuniti dell’Adriatico"
+        },
+        {
+          "name": "SS Raffaello (1965)",
+          "path": "ships/ss-raffaello-1965.html",
+          "url": "/ships/ss-raffaello-1965",
+          "launchYear": "1963",
+          "builder": "Cantieri Riuniti dell’Adriatico, San Marco yard"
+        }
+      ]
+    },
+    {
       "id": "birkenhead",
       "name": "Birkenhead",
       "rawValues": [
@@ -1939,41 +1981,6 @@
           "url": "/ships/ss-independence",
           "launchYear": "1950",
           "builder": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy"
-        }
-      ]
-    },
-    {
-      "id": "monfalcone",
-      "name": "Monfalcone",
-      "rawValues": [
-        "Monfalcone"
-      ],
-      "builders": [
-        "Cantiere Navale Triestino",
-        "Cantieri Riuniti dell’Adriatico"
-      ],
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "MS Vulcania",
-          "path": "ships/ms-vulcania.html",
-          "url": "/ships/ms-vulcania",
-          "launchYear": "1926",
-          "builder": "Cantiere Navale Triestino"
-        },
-        {
-          "name": "Neptunia",
-          "path": "ships/neptunia.html",
-          "url": "/ships/neptunia",
-          "launchYear": "1931",
-          "builder": "Cantiere Navale Triestino"
-        },
-        {
-          "name": "Oceania",
-          "path": "ships/oceania.html",
-          "url": "/ships/oceania",
-          "launchYear": "1932",
-          "builder": "Cantieri Riuniti dell’Adriatico"
         }
       ]
     },
@@ -2146,34 +2153,6 @@
           "url": "/ships/ss-mayflower",
           "launchYear": "1902",
           "builder": "R. & W. Hawthorn, Leslie & Co."
-        }
-      ]
-    },
-    {
-      "id": "italy",
-      "name": "Italy",
-      "rawValues": [
-        "Italy"
-      ],
-      "builders": [
-        "Cantiere Navale di Riva Trigoso, Riva Trigoso",
-        "Cantieri Riuniti dell’Adriatico (CRDA), Trieste"
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "SS Principessa Mafalda",
-          "path": "ships/ss-principessa-mafalda.html",
-          "url": "/ships/ss-principessa-mafalda",
-          "launchYear": "1908",
-          "builder": "Cantiere Navale di Riva Trigoso, Riva Trigoso"
-        },
-        {
-          "name": "SS Raffaello (1965)",
-          "path": "ships/ss-raffaello-1965.html",
-          "url": "/ships/ss-raffaello-1965",
-          "launchYear": "1963",
-          "builder": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste"
         }
       ]
     },
@@ -2668,6 +2647,26 @@
       ]
     },
     {
+      "id": "italy",
+      "name": "Italy",
+      "rawValues": [
+        "Italy"
+      ],
+      "builders": [
+        "Cantiere Navale di Riva Trigoso, Riva Trigoso"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Principessa Mafalda",
+          "path": "ships/ss-principessa-mafalda.html",
+          "url": "/ships/ss-principessa-mafalda",
+          "launchYear": "1908",
+          "builder": "Cantiere Navale di Riva Trigoso, Riva Trigoso"
+        }
+      ]
+    },
+    {
       "id": "linthouse-glasgow-scotland",
       "name": "Linthouse, Glasgow, Scotland",
       "rawValues": [
@@ -2828,26 +2827,6 @@
       ]
     },
     {
-      "id": "sunderland",
-      "name": "Sunderland",
-      "rawValues": [
-        "Sunderland"
-      ],
-      "builders": [
-        "Sir James Laing & Sons"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Macedonia",
-          "path": "ships/ss-macedonia.html",
-          "url": "/ships/ss-macedonia",
-          "launchYear": "1864",
-          "builder": "Sir James Laing & Sons"
-        }
-      ]
-    },
-    {
       "id": "then-germany-today-szczecin-poland",
       "name": "then Germany; today Szczecin, Poland",
       "rawValues": [
@@ -2884,6 +2863,26 @@
           "url": "/ships/ss-america",
           "launchYear": "1939",
           "builder": "Newport News Shipbuilding & Dry Dock Co."
+        }
+      ]
+    },
+    {
+      "id": "waterford",
+      "name": "Waterford",
+      "rawValues": [
+        "Waterford"
+      ],
+      "builders": [
+        "Malcolmson & Co."
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Macedonia",
+          "path": "ships/ss-macedonia.html",
+          "url": "/ships/ss-macedonia",
+          "launchYear": "1863",
+          "builder": "Malcolmson & Co."
         }
       ]
     },
@@ -3651,10 +3650,10 @@
       "launchYear": "1903",
       "assignments": [
         {
-          "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
-          "builderId": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Belfast",
+          "locationRaw": "Belfast"
         }
       ]
     },
@@ -3724,7 +3723,7 @@
           "builder": "Blohm & Voss",
           "builderId": "blohm-and-voss",
           "location": "Hamburg",
-          "locationRaw": "Hamburg, Germany"
+          "locationRaw": "Hamburg"
         }
       ]
     },
@@ -5134,10 +5133,10 @@
       "launchYear": "1913",
       "assignments": [
         {
-          "builder": "AG Vulcan",
-          "builderId": "ag-vulcan",
-          "location": "Stettin",
-          "locationRaw": "Stettin"
+          "builder": "William Beardmore & Company, Dalmuir",
+          "builderId": "william-beardmore-and-company-dalmuir",
+          "location": "Scotland",
+          "locationRaw": "Scotland"
         }
       ]
     },
@@ -5214,7 +5213,7 @@
           "builder": "Chantiers de l’Atlantique",
           "builderId": "chantiers-de-l-atlantique",
           "location": "Saint-Nazaire",
-          "locationRaw": "Saint-Nazaire, France"
+          "locationRaw": "Saint-Nazaire"
         }
       ]
     },
@@ -5533,8 +5532,8 @@
       "launchYear": "1896",
       "assignments": [
         {
-          "builder": "Blohm & Voss, Hamburg",
-          "builderId": "blohm-and-voss-hamburg",
+          "builder": "AG Vulcan, Stettin",
+          "builderId": "ag-vulcan-stettin",
           "location": "Germany",
           "locationRaw": "Germany"
         }
@@ -5773,13 +5772,13 @@
       "name": "SS Macedonia",
       "path": "ships/ss-macedonia.html",
       "url": "/ships/ss-macedonia",
-      "launchYear": "1864",
+      "launchYear": "1863",
       "assignments": [
         {
-          "builder": "Sir James Laing & Sons",
-          "builderId": "sir-james-laing-and-sons",
-          "location": "Sunderland",
-          "locationRaw": "Sunderland"
+          "builder": "Malcolmson & Co.",
+          "builderId": "malcolmson-and-co",
+          "location": "Waterford",
+          "locationRaw": "Waterford"
         }
       ]
     },
@@ -6294,8 +6293,8 @@
       "launchYear": "1959",
       "assignments": [
         {
-          "builder": "Vickers-Armstrongs",
-          "builderId": "vickers-armstrongs",
+          "builder": "Vickers-Armstrongs (Shipbuilders) Ltd.",
+          "builderId": "vickers-armstrongs-shipbuilders-ltd",
           "location": "Barrow-in-Furness",
           "locationRaw": "Barrow-in-Furness"
         }
@@ -6553,10 +6552,10 @@
       "launchYear": "1963",
       "assignments": [
         {
-          "builder": "Cantieri Riuniti dell’Adriatico (CRDA), Trieste",
-          "builderId": "cantieri-riuniti-dell-adriatico-crda-trieste",
-          "location": "Italy",
-          "locationRaw": "Italy"
+          "builder": "Cantieri Riuniti dell’Adriatico, San Marco yard",
+          "builderId": "cantieri-riuniti-dell-adriatico-san-marco-yard",
+          "location": "Monfalcone",
+          "locationRaw": "Monfalcone"
         }
       ]
     },
@@ -6749,8 +6748,8 @@
       "launchYear": "1934",
       "assignments": [
         {
-          "builder": "Deschimag AG Weser",
-          "builderId": "deschimag-ag-weser",
+          "builder": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
+          "builderId": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
           "location": "Bremen",
           "locationRaw": "Bremen"
         }
@@ -6878,7 +6877,7 @@
           "builder": "Fairfield Shipbuilding & Engineering Co.",
           "builderId": "fairfield-shipbuilding-and-engineering-co",
           "location": "Govan",
-          "locationRaw": "Govan, Glasgow"
+          "locationRaw": "Govan"
         }
       ]
     },
