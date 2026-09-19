@@ -305,6 +305,51 @@
         items: [["/ships/ss-mongolia", "SS <em>Mongolia</em>", "sister ship"]]
       }
     ]
+  ,
+    "neptunia": [
+      {
+        heading: "Sister Ship",
+        note: "Neptunia and Oceania were sister motor liners of the same Italian interwar generation. Both later served as troop transports and were sunk during the same convoy attack on 18 September 1941.",
+        items: [["/ships/oceania", "MS <em>Oceania</em>", "sister ship"]]
+      }
+    ],
+    "oceania": [
+      {
+        heading: "Sister Ship",
+        note: "Oceania and Neptunia were sister motor liners of the same Italian interwar generation. Both later served as troop transports and were sunk during the same convoy attack on 18 September 1941.",
+        items: [["/ships/neptunia", "MS <em>Neptunia</em>", "sister ship"]]
+      }
+    ],
+    "ss-orama": [
+      {
+        heading: "Orient Line Sisters",
+        note: "Orama, Orford, and Orontes belonged to the closely related Orient Line group built for the long Britain–Australia service through the Mediterranean and Suez.",
+        items: [
+          ["/ships/ss-orford", "SS <em>Orford</em>", "sister ship"],
+          ["/ships/rms-orontes", "RMS <em>Orontes</em>", "sister ship"]
+        ]
+      }
+    ],
+    "ss-orford": [
+      {
+        heading: "Orient Line Sisters",
+        note: "Orford, Orama, and Orontes belonged to the closely related Orient Line group built for the long Britain–Australia service through the Mediterranean and Suez.",
+        items: [
+          ["/ships/ss-orama", "SS <em>Orama</em>", "sister ship"],
+          ["/ships/rms-orontes", "RMS <em>Orontes</em>", "sister ship"]
+        ]
+      }
+    ],
+    "rms-orontes": [
+      {
+        heading: "Orient Line Sisters",
+        note: "Orontes, Orama, and Orford belonged to the closely related Orient Line group built for the long Britain–Australia service through the Mediterranean and Suez.",
+        items: [
+          ["/ships/ss-orama", "SS <em>Orama</em>", "sister ship"],
+          ["/ships/ss-orford", "SS <em>Orford</em>", "sister ship"]
+        ]
+      }
+    ]
   };
 
   function normalizePath(href) {
