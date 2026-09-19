@@ -625,6 +625,28 @@
         ]
       }
     ]
+  ,
+    "ss-empress-of-france": [
+      {
+        heading: "Sister Ship",
+        note: "Before becoming Empress of France, the ship was Allan Line’s Alsatian, built as the sister of Calgarian for the Liverpool–Canada service.",
+        items: [["/ships/ss-calgarian", "SS <em>Calgarian</em>", "sister ship from the Allan Line period"]]
+      }
+    ],
+    "ss-calgarian": [
+      {
+        heading: "Sister Ship",
+        note: "Calgarian was the sister of Allan Line’s Alsatian, which later entered Canadian Pacific service under the name Empress of France.",
+        items: [["/ships/ss-empress-of-france", "RMS <em>Empress of France</em>", "former <em>Alsatian</em>; sister ship"]]
+      }
+    ],
+    "rms-asturias-1908": [
+      {
+        heading: "Namesake Across Generations",
+        note: "Royal Mail revived the Asturias name for a much larger 1925 motor liner, creating a direct namesake link between two different generations of the company’s South American fleet.",
+        items: [["/ships/ss-asturias-1925", "SS <em>Asturias</em> (1925)", "later Royal Mail namesake"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
