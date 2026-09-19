@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T22:29:23.189Z",
+  "generatedAt": "2026-09-19T00:33:20.636Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithOperator": 300,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 85,
-    "aliasedOperatorGroups": 20
+    "canonicalOperators": 83,
+    "aliasedOperatorGroups": 19
   },
   "operators": [
     {
@@ -21,10 +21,10 @@
         "White Star Line",
         "White Star Line (commercial passenger service planned, but not realized)",
         "White Star Line / Oceanic Steam Navigation Co.",
-        "White Star Line / Oceanic Steam Navigation Company; later Red Star Line under the name Gothland",
+        "White Star Line / Oceanic Steam Navigation Company",
         "White Star Line; briefly Cunard-White Star after the 1934 merger"
       ],
-      "shipCount": 37
+      "shipCount": 38
     },
     {
       "id": "cunard-line",
@@ -74,7 +74,7 @@
         "Compagnie Générale Transatlantique (French Line)",
         "Compagnie Générale Transatlantique / French Line"
       ],
-      "shipCount": 15
+      "shipCount": 16
     },
     {
       "id": "canadian-pacific",
@@ -136,6 +136,17 @@
       "shipCount": 7
     },
     {
+      "id": "anchor-line",
+      "name": "Anchor Line",
+      "rawValues": [
+        "Anchor Line",
+        "Anchor Line (Cunard-associated)",
+        "Anchor Line (Glasgow)",
+        "Anchor Line (Henderson Bros.)"
+      ],
+      "shipCount": 6
+    },
+    {
       "id": "navigazione-generale-italiana-ngi",
       "name": "Navigazione Generale Italiana (NGI)",
       "rawValues": [
@@ -161,26 +172,6 @@
       "shipCount": 5
     },
     {
-      "id": "anchor-line",
-      "name": "Anchor Line",
-      "rawValues": [
-        "Anchor Line",
-        "Anchor Line (Cunard-associated)",
-        "Anchor Line (Glasgow)",
-        "Anchor Line (Henderson Bros.)"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "atlantic-transport-line",
-      "name": "Atlantic Transport Line",
-      "rawValues": [
-        "Atlantic Transport Line",
-        "Atlantic Transport Line; initially chartered to the National Line"
-      ],
-      "shipCount": 4
-    },
-    {
       "id": "cosulich-societa-triestina-di-navigazione",
       "name": "Cosulich Società Triestina di Navigazione",
       "rawValues": [
@@ -195,16 +186,6 @@
         "Cunard White Star / Cunard Line",
         "Cunard-White Star Line (later Cunard Line)",
         "Cunard-White Star Line; later Cunard Line"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "italian-line",
-      "name": "Italian Line",
-      "rawValues": [
-        "Italia di Navigazione / Italian Line",
-        "Italian Line (Italia Società di Navigazione)",
-        "Italian Line (Italia di Navigazione)"
       ],
       "shipCount": 4
     },
@@ -225,6 +206,14 @@
       "shipCount": 4
     },
     {
+      "id": "atlantic-transport-line",
+      "name": "Atlantic Transport Line",
+      "rawValues": [
+        "Atlantic Transport Line"
+      ],
+      "shipCount": 3
+    },
+    {
       "id": "canadian-pacific-railway-co-canadian-pacific-steamships",
       "name": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
       "rawValues": [
@@ -239,6 +228,15 @@
         "Hamburg Süd",
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd / Hamburg South America Line)",
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)"
+      ],
+      "shipCount": 3
+    },
+    {
+      "id": "italian-line",
+      "name": "Italian Line",
+      "rawValues": [
+        "Italia di Navigazione / Italian Line",
+        "Italian Line (Italia di Navigazione)"
       ],
       "shipCount": 3
     },
@@ -263,15 +261,6 @@
       "name": "Compagnie de Navigation Sud-Atlantique",
       "rawValues": [
         "Compagnie de Navigation Sud-Atlantique"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "compagnie-generale-transatlantique-cgt-french-line",
-      "name": "Compagnie Générale Transatlantique (CGT) — “French Line”",
-      "rawValues": [
-        "Compagnie Générale Transatlantique (CGT) / “French Line”",
-        "Compagnie Générale Transatlantique (CGT) — “French Line”"
       ],
       "shipCount": 2
     },
@@ -314,6 +303,14 @@
       "name": "Italia Flotte Riunite / Italian Line",
       "rawValues": [
         "Italia Flotte Riunite / Italian Line"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "italia-societa-di-navigazione-italian-line",
+      "name": "Italia Società di Navigazione / Italian Line",
+      "rawValues": [
+        "Italia Società di Navigazione / Italian Line"
       ],
       "shipCount": 2
     },
@@ -390,26 +387,10 @@
       "shipCount": 1
     },
     {
-      "id": "anchor-line-henderson-bros-ltd-cunard-subsidiary",
-      "name": "Anchor Line (Henderson Bros) Ltd (Cunard subsidiary)",
-      "rawValues": [
-        "Anchor Line (Henderson Bros) Ltd (Cunard subsidiary)"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "anchor-line-during-her-assyria-period",
       "name": "Anchor Line during her Assyria period",
       "rawValues": [
         "Anchor Line during her Assyria period"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "anchor-line-glasgow",
-      "name": "Anchor Line, Glasgow",
-      "rawValues": [
-        "Anchor Line, Glasgow"
       ],
       "shipCount": 1
     },
@@ -442,6 +423,14 @@
       "name": "Collins Line (New York and Liverpool United States Mail Steamship Company)",
       "rawValues": [
         "Collins Line (New York and Liverpool United States Mail Steamship Company)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "compagnie-generale-transatlantique-cgt-french-line",
+      "name": "Compagnie Générale Transatlantique (CGT) / “French Line”",
+      "rawValues": [
+        "Compagnie Générale Transatlantique (CGT) / “French Line”"
       ],
       "shipCount": 1
     },
@@ -482,14 +471,6 @@
       "name": "Inman Line",
       "rawValues": [
         "Inman Line (later controlled/merged into International Navigation / American Line)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "italia-societa-di-navigazione-italian-line",
-      "name": "Italia Società di Navigazione / Italian Line",
-      "rawValues": [
-        "Italia Società di Navigazione / Italian Line"
       ],
       "shipCount": 1
     },
@@ -726,10 +707,10 @@
       "shipCount": 1
     },
     {
-      "id": "white-star-line-in-associated-new-zealand-service-with-shaw-savill-and-albion-interests",
-      "name": "White Star Line in associated New Zealand service with Shaw, Savill & Albion interests",
+      "id": "white-star-line-in-associated-service-with-shaw-savill-and-albion",
+      "name": "White Star Line in associated service with Shaw, Savill & Albion",
       "rawValues": [
-        "White Star Line in associated New Zealand service with Shaw, Savill & Albion interests"
+        "White Star Line in associated service with Shaw, Savill & Albion"
       ],
       "shipCount": 1
     },
@@ -1212,8 +1193,8 @@
       "path": "ships/rms-majestic.html",
       "url": "/ships/rms-majestic",
       "launchYear": "1914",
-      "operatorRaw": "Hamburg America Line (HAPAG)",
-      "operator": "Hamburg America Line (HAPAG)"
+      "operatorRaw": "White Star Line",
+      "operator": "White Star Line"
     },
     {
       "name": "RMS Mauretania (II)",
@@ -1588,8 +1569,8 @@
       "path": "ships/ss-belgia.html",
       "url": "/ships/ss-belgia",
       "launchYear": "1899",
-      "operatorRaw": "Atlantic Transport Line; initially chartered to the National Line",
-      "operator": "Atlantic Transport Line"
+      "operatorRaw": "Hamburg America Line (HAPAG)",
+      "operator": "Hamburg America Line (HAPAG)"
     },
     {
       "name": "SS Belgravia",
@@ -1884,7 +1865,7 @@
       "path": "ships/ss-coptic.html",
       "url": "/ships/ss-coptic",
       "launchYear": "1881",
-      "operatorRaw": "Oceanic Steam Navigation Company / White Star Line",
+      "operatorRaw": "White Star Line / Oceanic Steam Navigation Company",
       "operator": "White Star Line"
     },
     {
@@ -1892,8 +1873,8 @@
       "path": "ships/ss-corinthic.html",
       "url": "/ships/ss-corinthic",
       "launchYear": "1902",
-      "operatorRaw": "White Star Line in associated New Zealand service with Shaw, Savill & Albion interests",
-      "operator": "White Star Line in associated New Zealand service with Shaw, Savill & Albion interests"
+      "operatorRaw": "White Star Line in associated service with Shaw, Savill & Albion",
+      "operator": "White Star Line in associated service with Shaw, Savill & Albion"
     },
     {
       "name": "SS Corsican",
@@ -2068,8 +2049,8 @@
       "path": "ships/ss-france.html",
       "url": "/ships/ss-france",
       "launchYear": "1960",
-      "operatorRaw": "Compagnie Générale Transatlantique (CGT) — “French Line”",
-      "operator": "Compagnie Générale Transatlantique (CGT) — “French Line”"
+      "operatorRaw": "Compagnie Générale Transatlantique / French Line",
+      "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
       "name": "SS Friedrich der Grosse",
@@ -2124,7 +2105,7 @@
       "path": "ships/ss-gothic-white-star-line.html",
       "url": "/ships/ss-gothic-white-star-line",
       "launchYear": "1893",
-      "operatorRaw": "White Star Line / Oceanic Steam Navigation Company; later Red Star Line under the name Gothland",
+      "operatorRaw": "White Star Line / Oceanic Steam Navigation Company",
       "operator": "White Star Line"
     },
     {
@@ -2284,7 +2265,7 @@
       "path": "ships/ss-la-bretagne.html",
       "url": "/ships/ss-la-bretagne",
       "launchYear": "1885",
-      "operatorRaw": "Compagnie Générale Transatlantique / French Line",
+      "operatorRaw": "Compagnie Générale Transatlantique (French Line)",
       "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
@@ -2387,9 +2368,9 @@
       "name": "SS Macedonia",
       "path": "ships/ss-macedonia.html",
       "url": "/ships/ss-macedonia",
-      "launchYear": "1864",
-      "operatorRaw": "Anchor Line, Glasgow",
-      "operator": "Anchor Line, Glasgow"
+      "launchYear": "1863",
+      "operatorRaw": "Anchor Line",
+      "operator": "Anchor Line"
     },
     {
       "name": "RMS Majestic (1889)",
@@ -2844,8 +2825,8 @@
       "path": "ships/ss-raffaello-1965.html",
       "url": "/ships/ss-raffaello-1965",
       "launchYear": "1963",
-      "operatorRaw": "Italian Line (Italia Società di Navigazione)",
-      "operator": "Italian Line"
+      "operatorRaw": "Italia Società di Navigazione / Italian Line",
+      "operator": "Italia Società di Navigazione / Italian Line"
     },
     {
       "name": "SS Reliance",
@@ -3028,8 +3009,8 @@
       "path": "ships/ss-tuscania-1921.html",
       "url": "/ships/ss-tuscania-1921",
       "launchYear": "1921",
-      "operatorRaw": "Anchor Line (Henderson Bros) Ltd (Cunard subsidiary)",
-      "operator": "Anchor Line (Henderson Bros) Ltd (Cunard subsidiary)"
+      "operatorRaw": "Anchor Line",
+      "operator": "Anchor Line"
     },
     {
       "name": "SS United States",
