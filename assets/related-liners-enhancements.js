@@ -647,6 +647,24 @@
         items: [["/ships/ss-asturias-1925", "SS <em>Asturias</em> (1925)", "later Royal Mail namesake"]]
       }
     ]
+  ,
+    "rms-servia-1881": [
+      {
+        heading: "Cunard Express Succession",
+        note: "Servia marked Cunard’s early-1880s transition to large steel construction; Etruria and Umbria followed almost immediately as the company’s next paired express generation on the North Atlantic.",
+        items: [
+          ["/ships/rms-etruria-1884", "RMS <em>Etruria</em>", "next Cunard express generation"],
+          ["/ships/rms-umbria-1884", "RMS <em>Umbria</em>", "next Cunard express generation"]
+        ]
+      }
+    ],
+    "ss-minnetonka": [
+      {
+        heading: "Atlantic Transport Line “Minnie” Family",
+        note: "Minnetonka belonged to Atlantic Transport Line’s distinctive “Minnie” family of large London–New York passenger-cargo liners; Minnewaska carried that same service tradition into the next prewar generation.",
+        items: [["/ships/ss-minnewaska", "SS <em>Minnewaska</em>", "later Atlantic Transport Line “Minnie” liner"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
