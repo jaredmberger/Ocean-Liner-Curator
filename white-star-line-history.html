@@ -419,6 +419,49 @@
       outline-offset: 3px;
     }
 
+    /* Historic advertising references */
+    .advertising-gallery{
+      width:min(100%, var(--measure));
+      margin:1.1rem auto 1.7rem;
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:1rem;
+      align-items:start;
+    }
+
+    .advertising-gallery figure{
+      margin:0;
+      padding:0.7rem;
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:14px;
+      background:rgba(10,17,16,0.36);
+      box-shadow:0 12px 30px rgba(0,0,0,0.24);
+    }
+
+    .advertising-gallery img{
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius:9px;
+      background:rgba(230,223,207,0.04);
+    }
+
+    .advertising-gallery figcaption{
+      margin:0.7rem 0 0;
+      color:var(--muted);
+      font-size:0.84rem;
+      line-height:1.5;
+      text-align:left;
+    }
+
+    @media (max-width:680px){
+      .advertising-gallery{
+        grid-template-columns:1fr;
+        gap:0.9rem;
+      }
+      .advertising-gallery figure{ padding:0.6rem; }
+    }
+
     /* Small helper for compact timelines */
     .timeline{
       margin:0.55rem auto 1.35rem auto;
@@ -723,6 +766,35 @@
     <li>Suppliers, printers, and outfitters often served multiple lines—creating design overlap that can confuse later attribution.</li>
     <li>Refits and redeployments were common, meaning “period-correct” does not automatically mean “ship-specific.”</li>
   </ul>
+
+  <h2>Selling the White Star Image</h2>
+  <p>
+    White Star's public identity was built not only aboard ship, but also on paper. Period advertising translated the line's ships, routes, service,
+    and visual vocabulary into a recognizable commercial image for prospective passengers. These surviving advertisements are useful historical
+    references in their own right: they show how the company presented itself to the traveling public rather than how later generations remembered it.
+  </p>
+
+  <div class="advertising-gallery" aria-label="Vintage White Star Line advertisements">
+    <figure>
+      <img src="/white-star-ad-1.png"
+           alt="Vintage White Star Line advertisement"
+           loading="lazy"
+           decoding="async">
+      <figcaption>
+        Vintage White Star Line advertising from the project reference collection.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="/white-star-ad-2.jpg"
+           alt="Vintage White Star Line advertisement"
+           loading="lazy"
+           decoding="async">
+      <figcaption>
+        A second surviving White Star Line advertisement, preserving the line's period visual presentation.
+      </figcaption>
+    </figure>
+  </div>
 
   <h2>1902: International Mercantile Marine and a New Corporate Context</h2>
   <p>
