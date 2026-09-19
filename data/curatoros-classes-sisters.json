@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T01:54:27.565Z",
+  "generatedAt": "2026-09-19T02:24:03.712Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithExplicitClass": 17,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 10,
-    "unresolvedSisterMentions": 68
+    "explicitSisterLinks": 11,
+    "unresolvedSisterMentions": 77
   },
   "classes": [
     {
@@ -189,6 +189,19 @@
   "sisterLinks": [
     {
       "a": {
+        "name": "Neptunia",
+        "path": "ships/neptunia.html",
+        "url": "/ships/neptunia"
+      },
+      "b": {
+        "name": "Oceania",
+        "path": "ships/oceania.html",
+        "url": "/ships/oceania"
+      },
+      "evidenceFrom": "ships/neptunia.html"
+    },
+    {
+      "a": {
         "name": "RMS Britannic (1874)",
         "path": "ships/rms-britannic-1874.html",
         "url": "/ships/rms-britannic-1874"
@@ -319,6 +332,42 @@
     }
   ],
   "unresolvedSisterMentions": [
+    {
+      "ship": "Neptunia",
+      "path": "ships/neptunia.html",
+      "mentioned": "she carried troops",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Neptunia",
+      "path": "ships/neptunia.html",
+      "mentioned": "matériel toward Libya as part of the North African war",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Neptunia",
+      "path": "ships/neptunia.html",
+      "mentioned": "lost on the same date",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Neptunia",
+      "path": "ships/neptunia.html",
+      "mentioned": "in the same operation",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Neptunia",
+      "path": "ships/neptunia.html",
+      "mentioned": "casualty",
+      "candidateCount": 0
+    },
+    {
+      "ship": "Neptunia",
+      "path": "ships/neptunia.html",
+      "mentioned": "rescue figures must be attributed carefully",
+      "candidateCount": 0
+    },
     {
       "ship": "Oceania",
       "path": "ships/oceania.html",
@@ -536,6 +585,18 @@
       "candidateCount": 0
     },
     {
+      "ship": "SS Cristoforo Colombo",
+      "path": "ships/ss-cristoforo-colombo.html",
+      "mentioned": "that survived Andrea Doria",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cristoforo Colombo",
+      "path": "ships/ss-cristoforo-colombo.html",
+      "mentioned": "but that framing can obscure her own long service record",
+      "candidateCount": 0
+    },
+    {
       "ship": "SS Duchess of Atholl",
       "path": "ships/ss-duchess-of-atholl.html",
       "mentioned": "finished before her despite the earlier launch",
@@ -605,6 +666,12 @@
       "ship": "SS Minnesota",
       "path": "ships/ss-minnesota.html",
       "mentioned": "544 GRT Length About 622 ft Beam About 73",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Minnesota",
+      "path": "ships/ss-minnesota.html",
+      "mentioned": "Dakota made Minnesota commercially difficult to operate",
       "candidateCount": 0
     },
     {
@@ -811,7 +878,15 @@
       "path": "ships/neptunia.html",
       "url": "/ships/neptunia",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Oceania",
+        "she carried troops",
+        "matériel toward Libya as part of the North African war",
+        "lost on the same date",
+        "in the same operation",
+        "casualty",
+        "rescue figures must be attributed carefully"
+      ]
     },
     {
       "name": "NYK Hikawa Maru",
@@ -1835,7 +1910,9 @@
       "sisters": [
         "Andrea Doria",
         "Andrea Doria Builder Ansaldo Shipyards",
-        "Genoa Launched 10 May 1953 Entered service 1954"
+        "Genoa Launched 10 May 1953 Entered service 1954",
+        "that survived Andrea Doria",
+        "but that framing can obscure her own long service record"
       ]
     },
     {
@@ -2364,7 +2441,8 @@
       "sisters": [
         "Dakota Type Ocean liner / passenger-cargo ship",
         "later troop transport Gross tonnage About 13",
-        "544 GRT Length About 622 ft Beam About 73"
+        "544 GRT Length About 622 ft Beam About 73",
+        "Dakota made Minnesota commercially difficult to operate"
       ]
     },
     {
