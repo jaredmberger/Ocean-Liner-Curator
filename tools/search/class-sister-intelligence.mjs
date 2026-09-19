@@ -10,6 +10,23 @@ const paths=execFileSync('git',['ls-files','-z','ships/*.html'],{cwd:root,encodi
 const clean=v=>String(v||'').replace(/\s+/g,' ').trim();
 const norm=v=>clean(v).normalize('NFD').replace(/\p{M}/gu,'').toLowerCase().replace(/[’‘]/g,"'").replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();
 const shipPrefix=/^(?:RMS|SS|S\.S\.|MV|MS|HMHS|HMT|HMS|TS|RMMV|QSMV)\s+/i;
+const connectorWords=new Set(['of','the','de','del','di','la','le','von','der']);
+const sisterNoise=/\b(?:builder|shipyard|shipyards|company|route|service|fleet|loss|lost|sinking|survivor|survivors|passenger|passengers|crew|operation|casualty|rescued|compare|figure|figures|historical|memory|same|date|world|line|liner|liners|steamship|steamships|built|carried|troops|material|matériel|war)\b/i;
+
+function baseShipName(value){
+  return clean(value)
+    .replace(shipPrefix,'')
+    .replace(/\s*\((?:18|19|20)\d{2}\)\s*$/,'')
+    .trim();
+}
+
+function plausibleSisterName(value){
+  const text=clean(value);
+  if(text.length<3||text.length>55||sisterNoise.test(text)||/[,:;]/.test(text))return false;
+  const words=text.split(/\s+/);
+  if(words.length>5)return false;
+  return words.every(word=>connectorWords.has(word.toLowerCase())||/^[A-ZÀ-ÖØ-Þ][A-Za-zÀ-ÖØ-öø-ÿ'’.-]*$/.test(word));
+}
 
 function canonicalClass(raw){
   let value=clean(raw).replace(/-class$/i,'').trim();
@@ -41,7 +58,7 @@ for(const path of paths){
     const segment=clean(m[1]).replace(/\([^)]*\)/g,'');
     for(const raw of segment.split(/,|\band\b|\bwith\b/i)){
       const candidate=clean(raw).replace(/^(?:the\s+)?/i,'').replace(shipPrefix,'').replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9'’.-]+$/g,'');
-      if(candidate.length>=3&&candidate.length<=60&&!/^(?:three|two|other|her|his|its|the|a|an)$/i.test(candidate))sisters.add(candidate);
+      if(candidate.length>=3&&candidate.length<=60&&!/^(?:three|two|other|her|his|its|the|a|an)$/i.test(candidate)&&plausibleSisterName(candidate))sisters.add(candidate);
     }
   }
 
@@ -49,7 +66,7 @@ for(const path of paths){
 }
 
 const byName=new Map();
-for(const r of records){const base=norm(r.name.replace(shipPrefix,''));if(base){if(!byName.has(base))byName.set(base,[]);byName.get(base).push(r)}}
+for(const r of records){const base=norm(baseShipName(r.name));if(base){if(!byName.has(base))byName.set(base,[]);byName.get(base).push(r)}}
 
 const classes=new Map();
 for(const r of records){
@@ -63,7 +80,7 @@ for(const r of records){
 const sisterLinks=[];const unresolved=[];const seen=new Set();
 for(const r of records){
   for(const sisterName of r.sisters){
-    const candidates=byName.get(norm(sisterName.replace(shipPrefix,'')))||[];
+    const candidates=byName.get(norm(baseShipName(sisterName)))||[];
     if(candidates.length===1){const other=candidates[0];if(other.path===r.path)continue;const pair=[r.path,other.path].sort();const key=pair.join('|');if(seen.has(key))continue;seen.add(key);sisterLinks.push({a:{name:r.name,path:r.path,url:r.url},b:{name:other.name,path:other.path,url:other.url},evidenceFrom:r.path});}
     else unresolved.push({ship:r.name,path:r.path,mentioned:sisterName,candidateCount:candidates.length});
   }
