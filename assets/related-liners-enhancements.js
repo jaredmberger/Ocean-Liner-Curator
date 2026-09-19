@@ -499,6 +499,21 @@
         items: [["/ships/ss-us", "SS <em>United States</em>", "later flagship and running mate"]]
       }
     ]
+  ,
+    "ss-gneisenau": [
+      {
+        heading: "Far East Express Sisters",
+        note: "Gneisenau and Scharnhorst were sister ships in Norddeutscher Lloyd’s three-ship mid-1930s Far East express class; Potsdam completed the trio.",
+        items: [["/ships/ss-scharnhorst", "SS <em>Scharnhorst</em>", "sister ship"]]
+      }
+    ],
+    "ss-scharnhorst": [
+      {
+        heading: "Far East Express Sisters",
+        note: "Scharnhorst and Gneisenau were sister ships in Norddeutscher Lloyd’s three-ship mid-1930s Far East express class; Potsdam completed the trio.",
+        items: [["/ships/ss-gneisenau", "SS <em>Gneisenau</em>", "sister ship"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
