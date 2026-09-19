@@ -401,6 +401,36 @@
         ]
       }
     ]
+  ,
+    "rms-andania": [
+      {
+        heading: "Cunard 1913 Canadian-service Trio",
+        note: "Andania, Alaunia, and Aurania formed a closely related Cunard trio built for Canadian and St. Lawrence service immediately before the First World War.",
+        items: [
+          ["/ships/rms-alaunia", "RMS <em>Alaunia</em>", "same 1913 Cunard Canadian-service group"],
+          ["/ships/rms-aurania", "RMS <em>Aurania</em>", "same 1913 Cunard Canadian-service group"]
+        ]
+      },
+      {
+        heading: "Namesake Across Eras",
+        note: "Cunard reused the Andania name after the First World War for a new 1922 cabin liner, creating a direct namesake link between two different generations of Canadian-service ships.",
+        items: [["/ships/rms-andania-1922", "RMS <em>Andania</em> (1922)", "later Cunard namesake"]]
+      }
+    ],
+    "rms-andania-1922": [
+      {
+        heading: "Namesake Across Eras",
+        note: "The 1922 Andania revived a Cunard name previously carried by the 1913 liner lost during the First World War.",
+        items: [["/ships/rms-andania", "RMS <em>Andania</em> (1913)", "earlier Cunard namesake"]]
+      }
+    ],
+    "ss-liberte": [
+      {
+        heading: "Linked Identity",
+        note: "Liberté was the former German liner Europa, transferred to France after the Second World War and rebuilt for French Line service under a new name.",
+        items: [["/ships/ss-europa", "SS <em>Europa</em>", "same ship before transfer and rebuilding"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
