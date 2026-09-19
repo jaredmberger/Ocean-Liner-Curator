@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T21:04:04.035Z",
+  "generatedAt": "2026-09-19T00:20:03.501Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
     "shipGuides": 300,
-    "guidesWithServiceStart": 295,
-    "guidesWithExplicitServiceEnd": 234,
+    "guidesWithServiceStart": 296,
+    "guidesWithExplicitServiceEnd": 232,
     "eras": 10,
     "decades": 15
   },
   "eras": [
     {
       "name": "Edwardian / pre-war peak",
-      "shipCount": 86,
+      "shipCount": 87,
       "ships": [
         {
           "name": "RMS Adriatic (1907)",
@@ -117,7 +117,7 @@
           "path": "ships/rms-kenilworth-castle.html",
           "url": "/ships/rms-kenilworth-castle",
           "serviceStartYear": "1903",
-          "serviceEndYear": "1936"
+          "serviceEndYear": "1937"
         },
         {
           "name": "RMS Laurentic",
@@ -152,7 +152,7 @@
           "path": "ships/rms-moldavia.html",
           "url": "/ships/rms-moldavia",
           "serviceStartYear": "1903",
-          "serviceEndYear": "1918"
+          "serviceEndYear": null
         },
         {
           "name": "RMS Olympic",
@@ -428,6 +428,13 @@
           "serviceEndYear": "1934"
         },
         {
+          "name": "SS Leviathan",
+          "path": "ships/ss-leviathan.html",
+          "url": "/ships/ss-leviathan",
+          "serviceStartYear": "1913",
+          "serviceEndYear": "1938"
+        },
+        {
           "name": "SS Manchuria",
           "path": "ships/ss-manchuria.html",
           "url": "/ships/ss-manchuria",
@@ -585,8 +592,8 @@
           "name": "SS Storstad",
           "path": "ships/ss-storstad.html",
           "url": "/ships/ss-storstad",
-          "serviceStartYear": "1910",
-          "serviceEndYear": "1917"
+          "serviceStartYear": "1911",
+          "serviceEndYear": null
         },
         {
           "name": "SS Suevic",
@@ -620,7 +627,7 @@
     },
     {
       "name": "Interwar recovery",
-      "shipCount": 69,
+      "shipCount": 70,
       "ships": [
         {
           "name": "Asama Maru",
@@ -733,6 +740,13 @@
           "url": "/ships/rms-lancastria",
           "serviceStartYear": "1920",
           "serviceEndYear": null
+        },
+        {
+          "name": "RMS Majestic",
+          "path": "ships/rms-majestic.html",
+          "url": "/ships/rms-majestic",
+          "serviceStartYear": "1922",
+          "serviceEndYear": "1939"
         },
         {
           "name": "RMS Scythia",
@@ -1074,7 +1088,7 @@
           "name": "SS Tuscania (1921)",
           "path": "ships/ss-tuscania-1921.html",
           "url": "/ships/ss-tuscania-1921",
-          "serviceStartYear": "1921",
+          "serviceStartYear": "1922",
           "serviceEndYear": "1961"
         },
         {
@@ -1241,8 +1255,8 @@
           "name": "SS Manhattan (1932)",
           "path": "ships/ss-manhattan.html",
           "url": "/ships/ss-manhattan",
-          "serviceStartYear": "1931",
-          "serviceEndYear": "1965"
+          "serviceStartYear": "1932",
+          "serviceEndYear": null
         },
         {
           "name": "SS Mariposa",
@@ -1577,7 +1591,7 @@
           "path": "ships/ss-la-normandie.html",
           "url": "/ships/ss-la-normandie",
           "serviceStartYear": "1883",
-          "serviceEndYear": null
+          "serviceEndYear": "1912"
         },
         {
           "name": "RMS Majestic (1889)",
@@ -1619,7 +1633,7 @@
           "path": "ships/ss-patricia.html",
           "url": "/ships/ss-patricia",
           "serviceStartYear": "1899",
-          "serviceEndYear": "1921"
+          "serviceEndYear": "1922"
         },
         {
           "name": "SS Persic",
@@ -1653,7 +1667,7 @@
     },
     {
       "name": "Pioneer steam era",
-      "shipCount": 20,
+      "shipCount": 21,
       "ships": [
         {
           "name": "RMS Britannia",
@@ -1768,6 +1782,13 @@
           "serviceEndYear": "1895"
         },
         {
+          "name": "SS Macedonia",
+          "path": "ships/ss-macedonia.html",
+          "url": "/ships/ss-macedonia",
+          "serviceStartYear": "1863",
+          "serviceEndYear": "1881"
+        },
+        {
           "name": "SS Malta",
           "path": "ships/ss-malta.html",
           "url": "/ships/ss-malta",
@@ -1799,7 +1820,7 @@
     },
     {
       "name": "First World War era",
-      "shipCount": 16,
+      "shipCount": 14,
       "ships": [
         {
           "name": "RMS Aquitania",
@@ -1828,13 +1849,6 @@
           "url": "/ships/rms-cameronia",
           "serviceStartYear": "1919",
           "serviceEndYear": "1957"
-        },
-        {
-          "name": "RMS Majestic",
-          "path": "ships/rms-majestic.html",
-          "url": "/ships/rms-majestic",
-          "serviceStartYear": "1914",
-          "serviceEndYear": "1939"
         },
         {
           "name": "SS Belgenland",
@@ -1884,13 +1898,6 @@
           "url": "/ships/ss-lafayette",
           "serviceStartYear": "1915",
           "serviceEndYear": "1940"
-        },
-        {
-          "name": "SS Leviathan",
-          "path": "ships/ss-leviathan.html",
-          "url": "/ships/ss-leviathan",
-          "serviceStartYear": "1914",
-          "serviceEndYear": "1938"
         },
         {
           "name": "SS Reliance",
@@ -2048,7 +2055,7 @@
           "name": "SS France",
           "path": "ships/ss-france.html",
           "url": "/ships/ss-france",
-          "serviceStartYear": "1962",
+          "serviceStartYear": "1960",
           "serviceEndYear": "2008"
         },
         {
@@ -2070,13 +2077,13 @@
           "path": "ships/ss-oriana.html",
           "url": "/ships/ss-oriana",
           "serviceStartYear": "1960",
-          "serviceEndYear": "1986"
+          "serviceEndYear": "2005"
         },
         {
           "name": "SS Raffaello (1965)",
           "path": "ships/ss-raffaello-1965.html",
           "url": "/ships/ss-raffaello-1965",
-          "serviceStartYear": "1965",
+          "serviceStartYear": "1963",
           "serviceEndYear": "1983"
         }
       ]
@@ -2139,7 +2146,7 @@
   "decades": [
     {
       "name": "1920s",
-      "shipCount": 69,
+      "shipCount": 70,
       "ships": [
         {
           "name": "Asama Maru",
@@ -2252,6 +2259,13 @@
           "url": "/ships/rms-lancastria",
           "serviceStartYear": "1920",
           "serviceEndYear": null
+        },
+        {
+          "name": "RMS Majestic",
+          "path": "ships/rms-majestic.html",
+          "url": "/ships/rms-majestic",
+          "serviceStartYear": "1922",
+          "serviceEndYear": "1939"
         },
         {
           "name": "RMS Scythia",
@@ -2593,7 +2607,7 @@
           "name": "SS Tuscania (1921)",
           "path": "ships/ss-tuscania-1921.html",
           "url": "/ships/ss-tuscania-1921",
-          "serviceStartYear": "1921",
+          "serviceStartYear": "1922",
           "serviceEndYear": "1961"
         },
         {
@@ -2691,7 +2705,7 @@
           "path": "ships/rms-kenilworth-castle.html",
           "url": "/ships/rms-kenilworth-castle",
           "serviceStartYear": "1903",
-          "serviceEndYear": "1936"
+          "serviceEndYear": "1937"
         },
         {
           "name": "RMS Laurentic",
@@ -2726,7 +2740,7 @@
           "path": "ships/rms-moldavia.html",
           "url": "/ships/rms-moldavia",
           "serviceStartYear": "1903",
-          "serviceEndYear": "1918"
+          "serviceEndYear": null
         },
         {
           "name": "RMS Orontes",
@@ -3249,8 +3263,8 @@
           "name": "SS Manhattan (1932)",
           "path": "ships/ss-manhattan.html",
           "url": "/ships/ss-manhattan",
-          "serviceStartYear": "1931",
-          "serviceEndYear": "1965"
+          "serviceStartYear": "1932",
+          "serviceEndYear": null
         },
         {
           "name": "SS Mariposa",
@@ -3396,7 +3410,7 @@
     },
     {
       "name": "1910s",
-      "shipCount": 36,
+      "shipCount": 35,
       "ships": [
         {
           "name": "RMS Alaunia (1913)",
@@ -3467,13 +3481,6 @@
           "url": "/ships/rms-franconia-1910",
           "serviceStartYear": "1911",
           "serviceEndYear": null
-        },
-        {
-          "name": "RMS Majestic",
-          "path": "ships/rms-majestic.html",
-          "url": "/ships/rms-majestic",
-          "serviceStartYear": "1914",
-          "serviceEndYear": "1939"
         },
         {
           "name": "RMS Olympic",
@@ -3591,7 +3598,7 @@
           "name": "SS Leviathan",
           "path": "ships/ss-leviathan.html",
           "url": "/ships/ss-leviathan",
-          "serviceStartYear": "1914",
+          "serviceStartYear": "1913",
           "serviceEndYear": "1938"
         },
         {
@@ -3619,8 +3626,8 @@
           "name": "SS Storstad",
           "path": "ships/ss-storstad.html",
           "url": "/ships/ss-storstad",
-          "serviceStartYear": "1910",
-          "serviceEndYear": "1917"
+          "serviceStartYear": "1911",
+          "serviceEndYear": null
         },
         {
           "name": "SS Traffic",
@@ -3815,7 +3822,7 @@
           "path": "ships/ss-patricia.html",
           "url": "/ships/ss-patricia",
           "serviceStartYear": "1899",
-          "serviceEndYear": "1921"
+          "serviceEndYear": "1922"
         },
         {
           "name": "SS Persic",
@@ -4009,7 +4016,7 @@
           "path": "ships/ss-la-normandie.html",
           "url": "/ships/ss-la-normandie",
           "serviceStartYear": "1883",
-          "serviceEndYear": null
+          "serviceEndYear": "1912"
         },
         {
           "name": "SS Norge",
@@ -4049,7 +4056,7 @@
           "name": "SS France",
           "path": "ships/ss-france.html",
           "url": "/ships/ss-france",
-          "serviceStartYear": "1962",
+          "serviceStartYear": "1960",
           "serviceEndYear": "2008"
         },
         {
@@ -4071,13 +4078,13 @@
           "path": "ships/ss-oriana.html",
           "url": "/ships/ss-oriana",
           "serviceStartYear": "1960",
-          "serviceEndYear": "1986"
+          "serviceEndYear": "2005"
         },
         {
           "name": "SS Raffaello (1965)",
           "path": "ships/ss-raffaello-1965.html",
           "url": "/ships/ss-raffaello-1965",
-          "serviceStartYear": "1965",
+          "serviceStartYear": "1963",
           "serviceEndYear": "1983"
         }
       ]
@@ -4139,7 +4146,7 @@
     },
     {
       "name": "1860s",
-      "shipCount": 5,
+      "shipCount": 6,
       "ships": [
         {
           "name": "RMS Scotia",
@@ -4161,6 +4168,13 @@
           "url": "/ships/ss-java",
           "serviceStartYear": "1865",
           "serviceEndYear": "1895"
+        },
+        {
+          "name": "SS Macedonia",
+          "path": "ships/ss-macedonia.html",
+          "url": "/ships/ss-macedonia",
+          "serviceStartYear": "1863",
+          "serviceEndYear": "1881"
         },
         {
           "name": "SS Malta",
@@ -4883,10 +4897,10 @@
       "url": "/ships/rms-kenilworth-castle",
       "launchYear": "1903",
       "serviceStartYear": "1903",
-      "serviceEndYear": "1936",
+      "serviceEndYear": "1937",
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
-      "endEvidence": "Laid up in 1935; arrived at Blyth for breaking on 12 June 1936"
+      "endEvidence": "Sold for demolition and broken up in 1937"
     },
     {
       "name": "RMS Lancastria",
@@ -4937,11 +4951,11 @@
       "path": "ships/rms-majestic.html",
       "url": "/ships/rms-majestic",
       "launchYear": "1914",
-      "serviceStartYear": "1914",
+      "serviceStartYear": "1922",
       "serviceEndYear": "1939",
-      "era": "First World War era",
-      "decade": "1910s",
-      "endEvidence": "Fire and sinking in 1939; later raised and scrapped (scrapping completed in the early 1940s)"
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "scrapped in 1939"
     },
     {
       "name": "RMS Mauretania (II)",
@@ -4982,10 +4996,10 @@
       "url": "/ships/rms-moldavia",
       "launchYear": "1903",
       "serviceStartYear": "1903",
-      "serviceEndYear": "1918",
+      "serviceEndYear": null,
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
-      "endEvidence": "Torpedoed and sunk on May 23, 1918, off Beachy Head while carrying U.S. troops"
+      "endEvidence": null
     },
     {
       "name": "RMS Oceanic (1899)",
@@ -5194,7 +5208,7 @@
       "serviceEndYear": "1932",
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
-      "endEvidence": "Sold for breaking in 1932 and dismantled at Blyth by Hughes Bolckow"
+      "endEvidence": "Sold for £13,500 in 1932 and broken up at Blyth by Hughes Bolckow in February"
     },
     {
       "name": "RMS Windsor Castle (1921)",
@@ -5865,7 +5879,7 @@
       "serviceEndYear": "1926",
       "era": "Late Victorian expansion",
       "decade": "1880s",
-      "endEvidence": "Scrapped at Osaka, Japan, 1926"
+      "endEvidence": "Scrapped at Osaka in 1926"
     },
     {
       "name": "SS Corinthic",
@@ -5876,7 +5890,7 @@
       "serviceEndYear": "1931",
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
-      "endEvidence": "Withdrawn in 1931"
+      "endEvidence": "scrapped in 1931"
     },
     {
       "name": "SS Corsican",
@@ -5920,7 +5934,7 @@
       "serviceEndYear": "1887",
       "era": "Pioneer steam era",
       "decade": "1860s",
-      "endEvidence": "Wrecked near Aldbrough, Yorkshire, November 6, 1887"
+      "endEvidence": "Wrecked near Aldbrough, Yorkshire, 6 November 1887"
     },
     {
       "name": "SS Cymric",
@@ -6114,11 +6128,11 @@
       "path": "ships/ss-france.html",
       "url": "/ships/ss-france",
       "launchYear": "1960",
-      "serviceStartYear": "1962",
+      "serviceStartYear": "1960",
       "serviceEndYear": "2008",
       "era": "Jet-age transition",
       "decade": "1960s",
-      "endEvidence": "Scrapped at Alang; demolition generally reported as completed in late 2008"
+      "endEvidence": "Broken up at Alang; demolition completed in 2008"
     },
     {
       "name": "SS Friedrich der Grosse",
@@ -6140,7 +6154,7 @@
       "serviceEndYear": "1951",
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
-      "endEvidence": "1951; sold for scrap"
+      "endEvidence": "Damaged by fire and sold for scrapping in 1951"
     },
     {
       "name": "SS George Washington",
@@ -6195,7 +6209,7 @@
       "serviceEndYear": "1926",
       "era": "Late Victorian expansion",
       "decade": "1890s",
-      "endEvidence": "Sold for breaking up after service ended in the mid-1920s; scrapped in 1926"
+      "endEvidence": "Retired 1925; broken up in 1926"
     },
     {
       "name": "SS Graf Waldersee",
@@ -6206,7 +6220,7 @@
       "serviceEndYear": "1922",
       "era": "Late Victorian expansion",
       "decade": "1890s",
-      "endEvidence": "Sold for scrapping in 1921 and broken up in Germany by 1922"
+      "endEvidence": "Decommissioned 25 November 1919; transferred to British control and broken up in 1922"
     },
     {
       "name": "SS Great Britain",
@@ -6415,18 +6429,18 @@
       "serviceEndYear": "1923",
       "era": "Late Victorian expansion",
       "decade": "1880s",
-      "endEvidence": "Sold for scrapping in 1923; lost after grounding near Texel while under tow to breakers"
+      "endEvidence": "Sold for demolition in 1923; tow parted and ship grounded at Texel in December 1923"
     },
     {
       "name": "SS La Normandie",
       "path": "ships/ss-la-normandie.html",
       "url": "/ships/ss-la-normandie",
-      "launchYear": null,
+      "launchYear": "1882",
       "serviceStartYear": "1883",
-      "serviceEndYear": null,
+      "serviceEndYear": "1912",
       "era": "Late Victorian expansion",
       "decade": "1880s",
-      "endEvidence": null
+      "endEvidence": "Sold for demolition in 1912"
     },
     {
       "name": "SS La Provence",
@@ -6521,11 +6535,11 @@
       "path": "ships/ss-leviathan.html",
       "url": "/ships/ss-leviathan",
       "launchYear": "1913",
-      "serviceStartYear": "1914",
+      "serviceStartYear": "1913",
       "serviceEndYear": "1938",
-      "era": "First World War era",
+      "era": "Edwardian / pre-war peak",
       "decade": "1910s",
-      "endEvidence": "Sold for scrap (1938); broken up after World War II (Rosyth, Scotland)"
+      "endEvidence": "broken up at Rosyth in 1938"
     },
     {
       "name": "SS Liberté",
@@ -6553,12 +6567,12 @@
       "name": "SS Macedonia",
       "path": "ships/ss-macedonia.html",
       "url": "/ships/ss-macedonia",
-      "launchYear": null,
-      "serviceStartYear": null,
+      "launchYear": "1863",
+      "serviceStartYear": "1863",
       "serviceEndYear": "1881",
-      "era": null,
-      "decade": null,
-      "endEvidence": "Wrecked north of the Mull of Kintyre, May 30, 1881, while bound from New York to Glasgow; no loss of life reported"
+      "era": "Pioneer steam era",
+      "decade": "1860s",
+      "endEvidence": "Wrecked near the Mull of Kintyre, 30 May 1881"
     },
     {
       "name": "RMS Majestic (1889)",
@@ -6591,7 +6605,7 @@
       "serviceEndYear": "1889",
       "era": "Pioneer steam era",
       "decade": "1860s",
-      "endEvidence": "1866–1889"
+      "endEvidence": "Wrecked off Cape Cornwall, 1889"
     },
     {
       "name": "SS Manchuria",
@@ -6609,11 +6623,11 @@
       "path": "ships/ss-manhattan.html",
       "url": "/ships/ss-manhattan",
       "launchYear": "1931",
-      "serviceStartYear": "1931",
-      "serviceEndYear": "1965",
+      "serviceStartYear": "1932",
+      "serviceEndYear": null,
       "era": "Interwar express-liner era",
       "decade": "1930s",
-      "endEvidence": "Never returned to commercial service after WWII · sold for scrap 1965"
+      "endEvidence": null
     },
     {
       "name": "SS Mariposa",
@@ -6679,7 +6693,7 @@
       "serviceEndYear": "1991",
       "era": "Jet-age transition",
       "decade": "1960s",
-      "endEvidence": "Sold to Iran (mid/late 1970s); later scrapped at Gadani, Pakistan (1991)"
+      "endEvidence": "Scrapped at Gadani, Pakistan, 1991"
     },
     {
       "name": "SS Milwaukee",
@@ -6734,7 +6748,7 @@
       "serviceEndYear": "1925",
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
-      "endEvidence": "Withdrawn and sold for scrapping in 1925"
+      "endEvidence": "Final commercial service in 1925; sold for scrapping that year"
     },
     {
       "name": "Monarch of Bermuda",
@@ -6962,10 +6976,10 @@
       "url": "/ships/ss-oriana",
       "launchYear": "1959",
       "serviceStartYear": "1960",
-      "serviceEndYear": "1986",
+      "serviceEndYear": "2005",
       "era": "Jet-age transition",
       "decade": "1960s",
-      "endEvidence": "Withdrawn 1986"
+      "endEvidence": "Hotel/attraction afterlife in Japan and China; storm damage and sinking at Dalian in 2004; broken up after refloating in 2005"
     },
     {
       "name": "SS Orion",
@@ -7039,10 +7053,10 @@
       "url": "/ships/ss-patricia",
       "launchYear": "1899",
       "serviceStartYear": "1899",
-      "serviceEndYear": "1921",
+      "serviceEndYear": "1922",
       "era": "Late Victorian expansion",
       "decade": "1890s",
-      "endEvidence": "Scrapped at Blyth, England, in 1921"
+      "endEvidence": "Sold for scrap in 1921; broken up in 1922"
     },
     {
       "name": "SS Pennland",
@@ -7130,7 +7144,7 @@
       "serviceEndYear": "1921",
       "era": "Late Victorian expansion",
       "decade": "1890s",
-      "endEvidence": "Sold to British shipbreakers in November 1921"
+      "endEvidence": "Transferred to the U.S. Shipping Board 25 November 1919, later to British control; scrapped in November 1921"
     },
     {
       "name": "SS Principessa Mafalda",
@@ -7181,11 +7195,11 @@
       "path": "ships/ss-raffaello-1965.html",
       "url": "/ships/ss-raffaello-1965",
       "launchYear": "1963",
-      "serviceStartYear": "1965",
+      "serviceStartYear": "1963",
       "serviceEndYear": "1983",
       "era": "Jet-age transition",
       "decade": "1960s",
-      "endEvidence": "Damaged during the Iran–Iraq War (1983) and partially sank; remains a wreck off Bushehr"
+      "endEvidence": "Hit during the Iran–Iraq War in 1983 and partially sank; wreck remains off Bushehr"
     },
     {
       "name": "SS Reliance",
@@ -7379,11 +7393,11 @@
       "path": "ships/ss-storstad.html",
       "url": "/ships/ss-storstad",
       "launchYear": "1910",
-      "serviceStartYear": "1910",
-      "serviceEndYear": "1917",
+      "serviceStartYear": "1911",
+      "serviceEndYear": null,
       "era": "Edwardian / pre-war peak",
       "decade": "1910s",
-      "endEvidence": "Torpedoed and sunk on 8 March 1917 (commonly cited; WWI loss)"
+      "endEvidence": null
     },
     {
       "name": "SS Strathaird",
@@ -7434,11 +7448,11 @@
       "path": "ships/ss-tuscania-1921.html",
       "url": "/ships/ss-tuscania-1921",
       "launchYear": "1921",
-      "serviceStartYear": "1921",
+      "serviceStartYear": "1922",
       "serviceEndYear": "1961",
       "era": "Interwar recovery",
       "decade": "1920s",
-      "endEvidence": "Broken up at Onomichi, Hiroshima (1961)"
+      "endEvidence": "Broken up at Onomichi, Japan, in 1961"
     },
     {
       "name": "SS United States",
