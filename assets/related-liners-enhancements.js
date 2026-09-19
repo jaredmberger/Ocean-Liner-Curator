@@ -586,6 +586,45 @@
         items: [["/ships/rms-titanic", "RMS <em>Titanic</em>", "surviving crew carried home aboard Lapland"]]
       }
     ]
+  ,
+    "rms-caronia-1947": [
+      {
+        heading: "Planned Postwar Running Mate",
+        note: "Caronia originated as Cunard White Star’s planned postwar running mate to the 1939 Mauretania, with broadly comparable transatlantic speed and scale before her design emphasis shifted more strongly toward cruising.",
+        items: [["/ships/rms-mauretania-ii", "RMS <em>Mauretania</em> (II)", "intended postwar running mate"]]
+      }
+    ],
+    "rms-mauretania-ii": [
+      {
+        heading: "Planned Postwar Running Mate",
+        note: "After the Second World War Cunard White Star ordered the ship that became Caronia as a running mate to Mauretania; the newer liner’s role evolved toward dual-purpose cruising before completion.",
+        items: [["/ships/rms-caronia-1947", "RMS <em>Caronia</em> (1947)", "planned postwar running mate"]]
+      }
+    ],
+    "ss-george-washington-ngl": [
+      {
+        heading: "Linked Identity",
+        note: "This North German Lloyd George Washington is the same physical ship later represented in the archive through her American wartime and United States Lines service.",
+        items: [["/ships/ss-george-washington", "SS <em>George Washington</em>", "same ship in later American service"]]
+      }
+    ],
+    "ss-george-washington": [
+      {
+        heading: "Linked Identity",
+        note: "The American-service George Washington was the former North German Lloyd liner of the same name, seized by the United States in 1917 and subsequently used in military and civilian American service.",
+        items: [["/ships/ss-george-washington-ngl", "SS <em>George Washington</em> — NDL", "same ship in original German service"]]
+      }
+    ],
+    "ss-calgaric": [
+      {
+        heading: "White Star Canadian-service Running Mates",
+        note: "As Calgaric, the ship appeared in White Star’s Liverpool–Quebec–Montreal schedules alongside Doric and the second Laurentic, making them direct Canadian-service running mates in the interwar fleet.",
+        items: [
+          ["/ships/ss-doric", "SS <em>Doric</em>", "Canadian-service running mate"],
+          ["/ships/ss-laurentic", "SS <em>Laurentic</em> (1927)", "Canadian-service running mate"]
+        ]
+      }
+    ]
   };
 
   function normalizePath(href) {
