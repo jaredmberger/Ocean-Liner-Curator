@@ -576,3 +576,6 @@ footer {
       .cutaway-trigger .cutaway-media::before,
       .lightbox{ display:none !important; }
     }
+
+/* Britannic cutaway width preservation */
+.britannic-guide .cutaway-section{max-width:860px;}
