@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T01:22:13.913Z",
+  "generatedAt": "2026-09-19T02:38:21.089Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
     "shipGuides": 300,
-    "guidesWithServiceStart": 296,
+    "guidesWithServiceStart": 295,
     "guidesWithExplicitServiceEnd": 236,
     "eras": 10,
     "decades": 15
@@ -12,7 +12,7 @@
   "eras": [
     {
       "name": "Edwardian / pre-war peak",
-      "shipCount": 87,
+      "shipCount": 86,
       "ships": [
         {
           "name": "RMS Adriatic (1907)",
@@ -314,13 +314,6 @@
           "url": "/ships/ss-eastland",
           "serviceStartYear": "1903",
           "serviceEndYear": null
-        },
-        {
-          "name": "RMS Empress of France",
-          "path": "ships/ss-empress-of-france.html",
-          "url": "/ships/ss-empress-of-france",
-          "serviceStartYear": "1913",
-          "serviceEndYear": "1949"
         },
         {
           "name": "SS Espagne",
@@ -3410,7 +3403,7 @@
     },
     {
       "name": "1910s",
-      "shipCount": 35,
+      "shipCount": 34,
       "ships": [
         {
           "name": "RMS Alaunia (1913)",
@@ -3551,13 +3544,6 @@
           "url": "/ships/ss-ceramic",
           "serviceStartYear": "1913",
           "serviceEndYear": null
-        },
-        {
-          "name": "RMS Empress of France",
-          "path": "ships/ss-empress-of-france.html",
-          "url": "/ships/ss-empress-of-france",
-          "serviceStartYear": "1913",
-          "serviceEndYear": "1949"
         },
         {
           "name": "SS Espagne",
@@ -6061,12 +6047,12 @@
       "name": "RMS Empress of France",
       "path": "ships/ss-empress-of-france.html",
       "url": "/ships/ss-empress-of-france",
-      "launchYear": "1913",
-      "serviceStartYear": "1913",
-      "serviceEndYear": "1949",
-      "era": "Edwardian / pre-war peak",
-      "decade": "1910s",
-      "endEvidence": "Withdrawn after the war and scrapped in 1949"
+      "launchYear": null,
+      "serviceStartYear": null,
+      "serviceEndYear": "1935",
+      "era": null,
+      "decade": null,
+      "endEvidence": "Laid up after withdrawal and scrapped in 1935"
     },
     {
       "name": "SS Espagne",
