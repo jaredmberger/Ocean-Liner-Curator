@@ -665,6 +665,28 @@
         items: [["/ships/ss-minnewaska", "SS <em>Minnewaska</em>", "later Atlantic Transport Line “Minnie” liner"]]
       }
     ]
+  ,
+    "ss-milwaukee": [
+      {
+        heading: "Sister Ship",
+        note: "Milwaukee and St. Louis were sister ships in Hamburg America Line’s late-1920s passenger fleet, closely associated with both transatlantic service and the line’s expanding cruise business.",
+        items: [["/ships/ss-st-louis", "MS <em>St. Louis</em>", "sister ship"]]
+      }
+    ],
+    "ss-amerika-1905": [
+      {
+        heading: "HAPAG Flagship-era Succession",
+        note: "Amerika and Kaiserin Auguste Victoria belonged to successive stages of Hamburg America Line’s prewar expansion into very large prestige liners, with Kaiserin Auguste Victoria following immediately in 1906 as the larger flagship statement.",
+        items: [["/ships/ss-kaiserin-auguste-victoria", "SS <em>Kaiserin Auguste Victoria</em>", "immediate larger HAPAG flagship-era successor"]]
+      }
+    ],
+    "ss-kaiserin-auguste-victoria": [
+      {
+        heading: "HAPAG Flagship-era Succession",
+        note: "Kaiserin Auguste Victoria followed Amerika in Hamburg America Line’s rapid prewar move toward larger prestige liners and briefly became the world’s largest passenger ship.",
+        items: [["/ships/ss-amerika-1905", "SS <em>Amerika</em> (1905)", "immediate predecessor in HAPAG’s large-liner expansion"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
