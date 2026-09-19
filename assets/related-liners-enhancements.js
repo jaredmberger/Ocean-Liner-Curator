@@ -246,6 +246,65 @@
         items: [["/ships/ss-great-western", "SS <em>Great Western</em>", "earlier company pioneer"]]
       }
     ]
+  ,
+    "rms-alcantara-1926": [
+      {
+        heading: "Sister Ship",
+        note: "Alcantara and Asturias were closely paired Royal Mail liners built for the company’s South American service and represented the same interwar modernization program.",
+        items: [["/ships/ss-asturias-1925", "SS <em>Asturias</em> (1925)", "sister ship"]]
+      }
+    ],
+    "ss-asturias-1925": [
+      {
+        heading: "Sister Ship",
+        note: "Asturias and Alcantara were closely paired Royal Mail liners built for the company’s South American service and represented the same interwar modernization program.",
+        items: [["/ships/rms-alcantara-1926", "RMS <em>Alcantara</em>", "sister ship"]]
+      }
+    ],
+    "ss-montcalm": [
+      {
+        heading: "Canadian Pacific “Mont” Group",
+        note: "Montcalm, Montclare, and Montrose belonged to Canadian Pacific’s closely related postwar “Mont” group for the Britain–Canada passenger and emigrant trade.",
+        items: [
+          ["/ships/ss-montclare", "SS <em>Montclare</em>", "sister / near-sister"],
+          ["/ships/ss-montrose", "SS <em>Montrose</em>", "sister / near-sister"]
+        ]
+      }
+    ],
+    "ss-montclare": [
+      {
+        heading: "Canadian Pacific “Mont” Group",
+        note: "Montclare, Montcalm, and Montrose belonged to Canadian Pacific’s closely related postwar “Mont” group for the Britain–Canada passenger and emigrant trade.",
+        items: [
+          ["/ships/ss-montcalm", "SS <em>Montcalm</em>", "sister / near-sister"],
+          ["/ships/ss-montrose", "SS <em>Montrose</em>", "sister / near-sister"]
+        ]
+      }
+    ],
+    "ss-montrose": [
+      {
+        heading: "Canadian Pacific “Mont” Group",
+        note: "Montrose, Montcalm, and Montclare belonged to Canadian Pacific’s closely related postwar “Mont” group for the Britain–Canada passenger and emigrant trade.",
+        items: [
+          ["/ships/ss-montcalm", "SS <em>Montcalm</em>", "sister / near-sister"],
+          ["/ships/ss-montclare", "SS <em>Montclare</em>", "sister / near-sister"]
+        ]
+      }
+    ],
+    "ss-mongolia": [
+      {
+        heading: "Sister Ship",
+        note: "Mongolia and Manchuria were sister passenger-and-cargo liners built in the United States for Pacific Mail’s ambitious trans-Pacific service.",
+        items: [["/ships/ss-manchuria", "SS <em>Manchuria</em>", "sister ship"]]
+      }
+    ],
+    "ss-manchuria": [
+      {
+        heading: "Sister Ship",
+        note: "Manchuria and Mongolia were sister passenger-and-cargo liners built in the United States for Pacific Mail’s ambitious trans-Pacific service.",
+        items: [["/ships/ss-mongolia", "SS <em>Mongolia</em>", "sister ship"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
