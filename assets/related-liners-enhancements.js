@@ -470,6 +470,35 @@
         ]
       }
     ]
+  ,
+    "ss-finland": [
+      {
+        heading: "Sister Ship",
+        note: "Finland and Kroonland were American-built sister ships for the Red Star Line and later served together in other International Mercantile Marine operations.",
+        items: [["/ships/ss-kroonland", "SS <em>Kroonland</em>", "sister ship"]]
+      }
+    ],
+    "ss-virginia": [
+      {
+        heading: "Panama Pacific Sisters",
+        note: "Virginia and Pennsylvania were members of Panama Pacific Line’s three-ship class of American-built turbo-electric intercoastal liners, together with California.",
+        items: [["/ships/ss-pennsylvania", "SS <em>Pennsylvania</em>", "sister ship"]]
+      }
+    ],
+    "ss-conte-verde": [
+      {
+        heading: "Sister Ship",
+        note: "Conte Verde and Conte Rosso were sister liners built by William Beardmore for Lloyd Sabaudo’s expanding Italian passenger services.",
+        items: [["/ships/ss-conte-rosso", "SS <em>Conte Rosso</em>", "sister ship"]]
+      }
+    ],
+    "ss-america": [
+      {
+        heading: "United States Lines Flagship Succession",
+        note: "America was William Francis Gibbs’s major prewar United States Lines design and served as the company’s flagship before United States entered service in 1952; she then became the newer liner’s running mate.",
+        items: [["/ships/ss-us", "SS <em>United States</em>", "later flagship and running mate"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
