@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-19T02:27:35.154Z",
+  "generatedAt": "2026-09-19T07:16:14.033Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 312,
-    "shipGuides": 300,
-    "canonicalBuilders": 99,
-    "guidesWithBuilder": 300,
+    "trackedShipHtmlFiles": 313,
+    "shipGuides": 301,
+    "canonicalBuilders": 100,
+    "guidesWithBuilder": 301,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 10,
@@ -155,8 +155,8 @@
     {
       "id": "newport-news-shipbuilding-and-dry-dock-co",
       "name": "Newport News Shipbuilding & Dry Dock Co.",
-      "shipCount": 7,
-      "firstLaunchYear": 1928,
+      "shipCount": 8,
+      "firstLaunchYear": 1927,
       "lastLaunchYear": 1951,
       "locations": [
         "Newport News, Virginia, USA",
@@ -428,18 +428,20 @@
       "names": [
         "Newport News Shipbuilding",
         "Newport News Shipbuilding & Dry Dock Co.",
+        "Newport News Shipbuilding & Dry Dock Company",
         "Newport News Shipbuilding & Drydock Company",
         "Newport News Shipbuilding and Dry Dock Company"
       ],
       "rawValues": [
         "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)",
         "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)",
+        "Newport News Shipbuilding & Dry Dock Company",
         "Newport News Shipbuilding & Drydock Company",
         "Newport News Shipbuilding and Dry Dock Company",
         "Newport News Shipbuilding and Dry Dock Company, Virginia",
         "Newport News Shipbuilding, Virginia"
       ],
-      "shipCount": 7
+      "shipCount": 8
     },
     {
       "id": "swan-hunter-and-wigham-richardson",
@@ -1328,6 +1330,17 @@
       ],
       "rawValues": [
         "New York Shipbuilding Corporation, Camden, New Jersey"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "newport-news",
+      "name": "Newport News",
+      "names": [
+        "Newport News"
+      ],
+      "rawValues": [
+        "Newport News, Virginia"
       ],
       "shipCount": 1
     },
@@ -3158,6 +3171,25 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast · yard no. 442"
+        }
+      ]
+    },
+    {
+      "name": "SS California",
+      "path": "ships/ss-california.html",
+      "url": "/ships/ss-california",
+      "launchYear": "1927",
+      "builderRaw": "Newport News Shipbuilding & Dry Dock Company · Newport News, Virginia",
+      "builders": [
+        {
+          "id": "newport-news-shipbuilding-and-dry-dock-co",
+          "name": "Newport News Shipbuilding & Dry Dock Co.",
+          "raw": "Newport News Shipbuilding & Dry Dock Company"
+        },
+        {
+          "id": "newport-news",
+          "name": "Newport News",
+          "raw": "Newport News, Virginia"
         }
       ]
     },
