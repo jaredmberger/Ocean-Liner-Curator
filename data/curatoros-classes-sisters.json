@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T06:54:14.178Z",
+  "generatedAt": "2026-09-19T07:52:13.191Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 300,
+    "shipGuides": 302,
     "guidesWithExplicitClass": 17,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 15,
-    "unresolvedSisterMentions": 13
+    "explicitSisterLinks": 18,
+    "unresolvedSisterMentions": 11
   },
   "classes": [
     {
@@ -332,6 +332,19 @@
     },
     {
       "a": {
+        "name": "SS Iberia (1954)",
+        "path": "ships/ss-iberia.html",
+        "url": "/ships/ss-iberia"
+      },
+      "b": {
+        "name": "SS Arcadia (1954)",
+        "path": "ships/ss-arcadia-1954.html",
+        "url": "/ships/ss-arcadia-1954"
+      },
+      "evidenceFrom": "ships/ss-iberia.html"
+    },
+    {
+      "a": {
         "name": "RMS Majestic (1889)",
         "path": "ships/ss-majestic-1889.html",
         "url": "/ships/ss-majestic-1889"
@@ -358,6 +371,19 @@
     },
     {
       "a": {
+        "name": "SS Pennsylvania",
+        "path": "ships/ss-pennsylvania.html",
+        "url": "/ships/ss-pennsylvania"
+      },
+      "b": {
+        "name": "SS California",
+        "path": "ships/ss-california.html",
+        "url": "/ships/ss-california"
+      },
+      "evidenceFrom": "ships/ss-pennsylvania.html"
+    },
+    {
+      "a": {
         "name": "SS Scharnhorst",
         "path": "ships/ss-scharnhorst.html",
         "url": "/ships/ss-scharnhorst"
@@ -381,6 +407,19 @@
         "url": "/ships/ss-milwaukee"
       },
       "evidenceFrom": "ships/ss-st-louis.html"
+    },
+    {
+      "a": {
+        "name": "SS Virginia",
+        "path": "ships/ss-virginia.html",
+        "url": "/ships/ss-virginia"
+      },
+      "b": {
+        "name": "SS California",
+        "path": "ships/ss-california.html",
+        "url": "/ships/ss-california"
+      },
+      "evidenceFrom": "ships/ss-virginia.html"
     }
   ],
   "unresolvedSisterMentions": [
@@ -445,21 +484,9 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Pennsylvania",
-      "path": "ships/ss-pennsylvania.html",
-      "mentioned": "California",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Scharnhorst",
       "path": "ships/ss-scharnhorst.html",
       "mentioned": "Werk AG Weser",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Virginia",
-      "path": "ships/ss-virginia.html",
-      "mentioned": "California",
       "candidateCount": 0
     }
   ],
@@ -1332,6 +1359,13 @@
       "sisters": []
     },
     {
+      "name": "SS California",
+      "path": "ships/ss-california.html",
+      "url": "/ships/ss-california",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "SS Canada (1896)",
       "path": "ships/ss-canada-1896.html",
       "url": "/ships/ss-canada-1896",
@@ -1776,6 +1810,15 @@
       "url": "/ships/ss-hamburg-1925",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "SS Iberia (1954)",
+      "path": "ships/ss-iberia.html",
+      "url": "/ships/ss-iberia",
+      "classes": [],
+      "sisters": [
+        "Arcadia"
+      ]
     },
     {
       "name": "SS Île de France",
