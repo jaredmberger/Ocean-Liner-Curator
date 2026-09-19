@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T02:53:38.921Z",
+  "generatedAt": "2026-09-19T06:54:14.178Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithExplicitClass": 17,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 11,
-    "unresolvedSisterMentions": 79
+    "explicitSisterLinks": 15,
+    "unresolvedSisterMentions": 13
   },
   "classes": [
     {
@@ -202,6 +202,19 @@
     },
     {
       "a": {
+        "name": "RMS Andania",
+        "path": "ships/rms-andania.html",
+        "url": "/ships/rms-andania"
+      },
+      "b": {
+        "name": "RMS Alaunia (1913)",
+        "path": "ships/rms-alaunia.html",
+        "url": "/ships/rms-alaunia"
+      },
+      "evidenceFrom": "ships/rms-andania.html"
+    },
+    {
+      "a": {
         "name": "RMS Britannic (1874)",
         "path": "ships/rms-britannic-1874.html",
         "url": "/ships/rms-britannic-1874"
@@ -212,6 +225,19 @@
         "url": "/ships/ss-germanic"
       },
       "evidenceFrom": "ships/rms-britannic-1874.html"
+    },
+    {
+      "a": {
+        "name": "RMS Etruria (1884)",
+        "path": "ships/rms-etruria-1884.html",
+        "url": "/ships/rms-etruria-1884"
+      },
+      "b": {
+        "name": "RMS Umbria (1884)",
+        "path": "ships/rms-umbria-1884.html",
+        "url": "/ships/rms-umbria-1884"
+      },
+      "evidenceFrom": "ships/rms-etruria-1884.html"
     },
     {
       "a": {
@@ -306,6 +332,32 @@
     },
     {
       "a": {
+        "name": "RMS Majestic (1889)",
+        "path": "ships/ss-majestic-1889.html",
+        "url": "/ships/ss-majestic-1889"
+      },
+      "b": {
+        "name": "RMS Teutonic (1889)",
+        "path": "ships/rms-teutonic.html",
+        "url": "/ships/rms-teutonic"
+      },
+      "evidenceFrom": "ships/ss-majestic-1889.html"
+    },
+    {
+      "a": {
+        "name": "SS Noordam",
+        "path": "ships/ss-noordam.html",
+        "url": "/ships/ss-noordam"
+      },
+      "b": {
+        "name": "SS Rijndam (1901)",
+        "path": "ships/ss-rijndam-1901.html",
+        "url": "/ships/ss-rijndam-1901"
+      },
+      "evidenceFrom": "ships/ss-noordam.html"
+    },
+    {
+      "a": {
         "name": "SS Scharnhorst",
         "path": "ships/ss-scharnhorst.html",
         "url": "/ships/ss-scharnhorst"
@@ -333,54 +385,6 @@
   ],
   "unresolvedSisterMentions": [
     {
-      "ship": "Neptunia",
-      "path": "ships/neptunia.html",
-      "mentioned": "she carried troops",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Neptunia",
-      "path": "ships/neptunia.html",
-      "mentioned": "matériel toward Libya as part of the North African war",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Neptunia",
-      "path": "ships/neptunia.html",
-      "mentioned": "lost on the same date",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Neptunia",
-      "path": "ships/neptunia.html",
-      "mentioned": "in the same operation",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Neptunia",
-      "path": "ships/neptunia.html",
-      "mentioned": "casualty",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Neptunia",
-      "path": "ships/neptunia.html",
-      "mentioned": "rescue figures must be attributed carefully",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Oceania",
-      "path": "ships/oceania.html",
-      "mentioned": "rescued",
-      "candidateCount": 0
-    },
-    {
-      "ship": "Oceania",
-      "path": "ships/oceania.html",
-      "mentioned": "but the loss was still severe",
-      "candidateCount": 0
-    },
-    {
       "ship": "RMS Andania",
       "path": "ships/rms-andania-1922.html",
       "mentioned": "Antonia",
@@ -393,141 +397,15 @@
       "candidateCount": 0
     },
     {
-      "ship": "RMS Andania",
-      "path": "ships/rms-andania-1922.html",
-      "mentioned": "sank o",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Andania",
-      "path": "ships/rms-andania.html",
-      "mentioned": "Alaunia",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Andania",
-      "path": "ships/rms-andania.html",
-      "mentioned": "Aurania Loss Torpedoed by U-46 near Rathlin Island",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Andania",
-      "path": "ships/rms-andania.html",
-      "mentioned": "27 January 1918",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Caledonia",
-      "path": "ships/rms-caledonia.html",
-      "mentioned": "California · RMS Transylvania Tonnage 17",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Caledonia",
-      "path": "ships/rms-caledonia.html",
-      "mentioned": "046 GRT Dimensions Length 552 ft · Beam 70",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Cambria",
-      "path": "ships/rms-cambria-1845.html",
-      "mentioned": "Hibernia Later service changes Crimean War transport in 1854",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Etruria (1884)",
-      "path": "ships/rms-etruria-1884.html",
-      "mentioned": "Umbria",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Lucania",
-      "path": "ships/rms-lucania.html",
-      "mentioned": "faster of Cunard's great 1890s express pair",
-      "candidateCount": 0
-    },
-    {
       "ship": "RMS Olympic",
       "path": "ships/rms-olympic.html",
       "mentioned": "Britannic",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Olympic",
-      "path": "ships/rms-olympic.html",
-      "mentioned": "Olympic had the longest working career of the three",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Olympic",
-      "path": "ships/rms-olympic.html",
-      "mentioned": "became a defining “early modern” North Atlantic liner—large",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Olympic",
-      "path": "ships/rms-olympic.html",
-      "mentioned": "steady",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Olympic",
-      "path": "ships/rms-olympic.html",
-      "mentioned": "repeatedly refit as technolo",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Umbria (1884)",
-      "path": "ships/rms-umbria-1884.html",
-      "mentioned": "Etruria",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Asturias (1925)",
-      "path": "ships/ss-asturias-1925.html",
-      "mentioned": "Alcantara Builder Harland & Wolff",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Asturias (1925)",
-      "path": "ships/ss-asturias-1925.html",
-      "mentioned": "Belfast · yard no",
-      "candidateCount": 0
+      "candidateCount": 2
     },
     {
       "ship": "SS Bothnia",
       "path": "ships/ss-bothnia.html",
       "mentioned": "Gallia",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Bothnia",
-      "path": "ships/ss-bothnia.html",
-      "mentioned": "commonly listed as close sisters Fate Withdrawn/sold in 1898",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Bretagne",
-      "path": "ships/ss-bretagne.html",
-      "mentioned": "Provence Route context Marseille-based service",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Bretagne",
-      "path": "ships/ss-bretagne.html",
-      "mentioned": "especially to North Africa",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Bretagne",
-      "path": "ships/ss-bretagne.html",
-      "mentioned": "other French imperial or post-imperial destinations",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Bretagne",
-      "path": "ships/ss-bretagne.html",
-      "mentioned": "route emphasis varying over time Career end",
       "candidateCount": 0
     },
     {
@@ -539,31 +417,7 @@
     {
       "ship": "SS Cathay",
       "path": "ships/ss-cathay-1924.html",
-      "mentioned": "Chitral Later wartime role Armed merchant cruiser",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cathay",
-      "path": "ships/ss-cathay-1924.html",
-      "mentioned": "then troop ship Final fate Bombed",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cathay",
-      "path": "ships/ss-cathay-1924.html",
-      "mentioned": "sunk off Bougie",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cathay",
-      "path": "ships/ss-cathay-1924.html",
       "mentioned": "Algeria",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cathay",
-      "path": "ships/ss-cathay-1924.html",
-      "mentioned": "in November 1942 Interwar liner figures are generally",
       "candidateCount": 0
     },
     {
@@ -573,82 +427,16 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS City of Paris",
-      "path": "ships/ss-city-of-paris.html",
-      "mentioned": "White Star in the premium express trade",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Constitution",
-      "path": "ships/ss-constitution.html",
-      "mentioned": "Independence Note on figures",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cristoforo Colombo",
-      "path": "ships/ss-cristoforo-colombo.html",
-      "mentioned": "Andrea Doria Builder Ansaldo Shipyards",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cristoforo Colombo",
-      "path": "ships/ss-cristoforo-colombo.html",
-      "mentioned": "Genoa Launched 10 May 1953 Entered service 1954",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cristoforo Colombo",
-      "path": "ships/ss-cristoforo-colombo.html",
-      "mentioned": "that survived Andrea Doria",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cristoforo Colombo",
-      "path": "ships/ss-cristoforo-colombo.html",
-      "mentioned": "but that framing can obscure her own long service record",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duchess of Atholl",
-      "path": "ships/ss-duchess-of-atholl.html",
-      "mentioned": "finished before her despite the earlier launch",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duchess of York",
-      "path": "ships/ss-duchess-of-york.html",
-      "mentioned": "lost in wartime service",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Duilio",
       "path": "ships/ss-duilio.html",
       "mentioned": "Naples",
       "candidateCount": 0
     },
     {
-      "ship": "SS Duilio",
-      "path": "ships/ss-duilio.html",
-      "mentioned": "South American ports",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duilio",
-      "path": "ships/ss-duilio.html",
-      "mentioned": "especially Buenos Aires",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Germanic",
       "path": "ships/ss-germanic.html",
       "mentioned": "Britannic",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Germanic",
-      "path": "ships/ss-germanic.html",
-      "mentioned": "one of the most remarkably long-lived ships ever associated",
-      "candidateCount": 0
+      "candidateCount": 2
     },
     {
       "ship": "SS Germanic",
@@ -657,99 +445,9 @@
       "candidateCount": 0
     },
     {
-      "ship": "RMS Majestic (1889)",
-      "path": "ships/ss-majestic-1889.html",
-      "mentioned": "Teutonic",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Minnesota",
-      "path": "ships/ss-minnesota.html",
-      "mentioned": "Dakota Type Ocean liner / passenger-cargo ship",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Minnesota",
-      "path": "ships/ss-minnesota.html",
-      "mentioned": "later troop transport Gross tonnage About 13",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Minnesota",
-      "path": "ships/ss-minnesota.html",
-      "mentioned": "544 GRT Length About 622 ft Beam About 73",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Minnesota",
-      "path": "ships/ss-minnesota.html",
-      "mentioned": "Dakota made Minnesota commercially difficult to operate",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Noordam",
-      "path": "ships/ss-noordam.html",
-      "mentioned": "Rijndam",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Noordam",
-      "path": "ships/ss-noordam.html",
-      "mentioned": "belonged to the same broad group as the larger Potsdam",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Orion",
-      "path": "ships/ss-orion.html",
-      "mentioned": "Orcades Type Ocean liner",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Orion",
-      "path": "ships/ss-orion.html",
-      "mentioned": "later troopship Gross tonnage 23",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Orion",
-      "path": "ships/ss-orion.html",
-      "mentioned": "twin screws Power About 24",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Pennsylvania",
       "path": "ships/ss-pennsylvania.html",
       "mentioned": "California",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Pennsylvania",
-      "path": "ships/ss-pennsylvania.html",
-      "mentioned": "Virginia Final fate Laid up in 1958",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Pennsylvania",
-      "path": "ships/ss-pennsylvania.html",
-      "mentioned": "after 1938 rebui",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS President Coolidge",
-      "path": "ships/ss-president-coolidge.html",
-      "mentioned": "President Hoover Builder Newport News Shipbuilding",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS President Hoover",
-      "path": "ships/ss-president-hoover.html",
-      "mentioned": "President Coolidge Builder Newport News Shipbuilding",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS President Hoover",
-      "path": "ships/ss-president-hoover.html",
-      "mentioned": "Dry Dock Company",
       "candidateCount": 0
     },
     {
@@ -759,51 +457,9 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Scharnhorst",
-      "path": "ships/ss-scharnhorst.html",
-      "mentioned": "Bremen · yard no",
-      "candidateCount": 0
-    },
-    {
-      "ship": "MS St. Louis",
-      "path": "ships/ss-st-louis.html",
-      "mentioned": "but her historical memory is dominated by one event",
-      "candidateCount": 0
-    },
-    {
-      "ship": "MS St. Louis",
-      "path": "ships/ss-st-louis.html",
-      "mentioned": "Milwaukee Compare St",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Strathaird",
-      "path": "ships/ss-strathaird.html",
-      "mentioned": "such as Strathnaver",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Virginia",
       "path": "ships/ss-virginia.html",
       "mentioned": "California",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Virginia",
-      "path": "ships/ss-virginia.html",
-      "mentioned": "Pennsylvania Final fate Laid up in 1958",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Virginia",
-      "path": "ships/ss-virginia.html",
-      "mentioned": "after 1938 rebu",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Virginia",
-      "path": "ships/ss-virginia.html",
-      "mentioned": "Ask Ocean Liner GPT Ship Guides Index Home Note",
       "candidateCount": 0
     }
   ],
@@ -891,13 +547,7 @@
       "url": "/ships/neptunia",
       "classes": [],
       "sisters": [
-        "Oceania",
-        "she carried troops",
-        "matériel toward Libya as part of the North African war",
-        "lost on the same date",
-        "in the same operation",
-        "casualty",
-        "rescue figures must be attributed carefully"
+        "Oceania"
       ]
     },
     {
@@ -912,10 +562,7 @@
       "path": "ships/oceania.html",
       "url": "/ships/oceania",
       "classes": [],
-      "sisters": [
-        "rescued",
-        "but the loss was still severe"
-      ]
+      "sisters": []
     },
     {
       "name": "QSMV Dominion Monarch",
@@ -959,8 +606,7 @@
       "classes": [],
       "sisters": [
         "Antonia",
-        "Ausonia",
-        "sank o"
+        "Ausonia"
       ]
     },
     {
@@ -969,9 +615,7 @@
       "url": "/ships/rms-andania",
       "classes": [],
       "sisters": [
-        "Alaunia",
-        "Aurania Loss Torpedoed by U-46 near Rathlin Island",
-        "27 January 1918"
+        "Alaunia"
       ]
     },
     {
@@ -1062,19 +706,14 @@
       "path": "ships/rms-caledonia.html",
       "url": "/ships/rms-caledonia",
       "classes": [],
-      "sisters": [
-        "California · RMS Transylvania Tonnage 17",
-        "046 GRT Dimensions Length 552 ft · Beam 70"
-      ]
+      "sisters": []
     },
     {
       "name": "RMS Cambria",
       "path": "ships/rms-cambria-1845.html",
       "url": "/ships/rms-cambria-1845",
       "classes": [],
-      "sisters": [
-        "Hibernia Later service changes Crimean War transport in 1854"
-      ]
+      "sisters": []
     },
     {
       "name": "RMS Cameronia",
@@ -1240,8 +879,7 @@
       "url": "/ships/rms-lucania",
       "classes": [],
       "sisters": [
-        "Campania",
-        "faster of Cunard's great 1890s express pair"
+        "Campania"
       ]
     },
     {
@@ -1306,11 +944,7 @@
       ],
       "sisters": [
         "Titanic",
-        "Britannic",
-        "Olympic had the longest working career of the three",
-        "became a defining “early modern” North Atlantic liner—large",
-        "steady",
-        "repeatedly refit as technolo"
+        "Britannic"
       ]
     },
     {
@@ -1553,10 +1187,7 @@
       "path": "ships/ss-asturias-1925.html",
       "url": "/ships/ss-asturias-1925",
       "classes": [],
-      "sisters": [
-        "Alcantara Builder Harland & Wolff",
-        "Belfast · yard no"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Athenic",
@@ -1648,8 +1279,7 @@
       "classes": [],
       "sisters": [
         "Scythia",
-        "Gallia",
-        "commonly listed as close sisters Fate Withdrawn/sold in 1898"
+        "Gallia"
       ]
     },
     {
@@ -1671,12 +1301,7 @@
       "path": "ships/ss-bretagne.html",
       "url": "/ships/ss-bretagne",
       "classes": [],
-      "sisters": [
-        "Provence Route context Marseille-based service",
-        "especially to North Africa",
-        "other French imperial or post-imperial destinations",
-        "route emphasis varying over time Career end"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Briton",
@@ -1769,11 +1394,7 @@
       "classes": [],
       "sisters": [
         "Comorin",
-        "Chitral Later wartime role Armed merchant cruiser",
-        "then troop ship Final fate Bombed",
-        "sunk off Bougie",
-        "Algeria",
-        "in November 1942 Interwar liner figures are generally"
+        "Algeria"
       ]
     },
     {
@@ -1810,8 +1431,7 @@
       "url": "/ships/ss-city-of-paris",
       "classes": [],
       "sisters": [
-        "Cunard",
-        "White Star in the premium express trade"
+        "Cunard"
       ]
     },
     {
@@ -1848,8 +1468,7 @@
       "url": "/ships/ss-constitution",
       "classes": [],
       "sisters": [
-        "Independence",
-        "Independence Note on figures"
+        "Independence"
       ]
     },
     {
@@ -1923,11 +1542,7 @@
       "url": "/ships/ss-cristoforo-colombo",
       "classes": [],
       "sisters": [
-        "Andrea Doria",
-        "Andrea Doria Builder Ansaldo Shipyards",
-        "Genoa Launched 10 May 1953 Entered service 1954",
-        "that survived Andrea Doria",
-        "but that framing can obscure her own long service record"
+        "Andrea Doria"
       ]
     },
     {
@@ -1977,9 +1592,7 @@
       "path": "ships/ss-duchess-of-atholl.html",
       "url": "/ships/ss-duchess-of-atholl",
       "classes": [],
-      "sisters": [
-        "finished before her despite the earlier launch"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Duchess of Bedford",
@@ -2000,9 +1613,7 @@
       "path": "ships/ss-duchess-of-york.html",
       "url": "/ships/ss-duchess-of-york",
       "classes": [],
-      "sisters": [
-        "lost in wartime service"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Duilio",
@@ -2011,9 +1622,7 @@
       "classes": [],
       "sisters": [
         "Giulio Cesare",
-        "Naples",
-        "South American ports",
-        "especially Buenos Aires"
+        "Naples"
       ]
     },
     {
@@ -2102,7 +1711,6 @@
       "classes": [],
       "sisters": [
         "Britannic",
-        "one of the most remarkably long-lived ships ever associated",
         "White Star"
       ]
     },
@@ -2453,12 +2061,7 @@
       "path": "ships/ss-minnesota.html",
       "url": "/ships/ss-minnesota",
       "classes": [],
-      "sisters": [
-        "Dakota Type Ocean liner / passenger-cargo ship",
-        "later troop transport Gross tonnage About 13",
-        "544 GRT Length About 622 ft Beam About 73",
-        "Dakota made Minnesota commercially difficult to operate"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Minnetonka (1902)",
@@ -2587,8 +2190,7 @@
       "url": "/ships/ss-noordam",
       "classes": [],
       "sisters": [
-        "Rijndam",
-        "belonged to the same broad group as the larger Potsdam"
+        "Rijndam"
       ]
     },
     {
@@ -2638,11 +2240,7 @@
       "path": "ships/ss-orion.html",
       "url": "/ships/ss-orion",
       "classes": [],
-      "sisters": [
-        "Orcades Type Ocean liner",
-        "later troopship Gross tonnage 23",
-        "twin screws Power About 24"
-      ]
+      "sisters": []
     },
     {
       "name": "SS Oronsay (1925)",
@@ -2699,9 +2297,7 @@
       "url": "/ships/ss-pennsylvania",
       "classes": [],
       "sisters": [
-        "California",
-        "Virginia Final fate Laid up in 1958",
-        "after 1938 rebui"
+        "California"
       ]
     },
     {
@@ -2723,19 +2319,14 @@
       "path": "ships/ss-president-coolidge.html",
       "url": "/ships/ss-president-coolidge",
       "classes": [],
-      "sisters": [
-        "President Hoover Builder Newport News Shipbuilding"
-      ]
+      "sisters": []
     },
     {
       "name": "SS President Hoover",
       "path": "ships/ss-president-hoover.html",
       "url": "/ships/ss-president-hoover",
       "classes": [],
-      "sisters": [
-        "President Coolidge Builder Newport News Shipbuilding",
-        "Dry Dock Company"
-      ]
+      "sisters": []
     },
     {
       "name": "SS President Lincoln",
@@ -2884,8 +2475,7 @@
       "classes": [],
       "sisters": [
         "Gneisenau",
-        "Werk AG Weser",
-        "Bremen · yard no"
+        "Werk AG Weser"
       ]
     },
     {
@@ -2901,9 +2491,7 @@
       "url": "/ships/ss-st-louis",
       "classes": [],
       "sisters": [
-        "Milwaukee",
-        "but her historical memory is dominated by one event",
-        "Milwaukee Compare St"
+        "Milwaukee"
       ]
     },
     {
@@ -2927,9 +2515,7 @@
       "classes": [
         "Strath"
       ],
-      "sisters": [
-        "such as Strathnaver"
-      ]
+      "sisters": []
     },
     {
       "name": "RMS Strathmore",
@@ -2995,10 +2581,7 @@
       "url": "/ships/ss-virginia",
       "classes": [],
       "sisters": [
-        "California",
-        "Pennsylvania Final fate Laid up in 1958",
-        "after 1938 rebu",
-        "Ask Ocean Liner GPT Ship Guides Index Home Note"
+        "California"
       ]
     },
     {
