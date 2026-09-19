@@ -350,6 +350,57 @@
         ]
       }
     ]
+  ,
+    "ss-columbus-1924": [
+      {
+        heading: "North German Lloyd Flagship Succession",
+        note: "Columbus was North German Lloyd’s principal large postwar liner before the arrival of the faster Bremen and Europa at the end of the 1920s.",
+        items: [
+          ["/ships/ss-bremen", "SS <em>Bremen</em>", "later NDL express flagship"],
+          ["/ships/ss-europa", "SS <em>Europa</em>", "later NDL express flagship"]
+        ]
+      }
+    ],
+    "rms-queen-mary-2": [
+      {
+        heading: "Cunard Transatlantic Succession",
+        note: "Queen Mary 2 entered service in 2004 as Cunard’s new flagship and direct transatlantic successor to Queen Elizabeth 2, while carrying forward the name and prestige tradition established by Queen Mary.",
+        items: [
+          ["/ships/queen-elizabeth-2", "RMS <em>Queen Elizabeth 2</em>", "immediate Cunard flagship predecessor"],
+          ["/ships/rms-queen-mary", "RMS <em>Queen Mary</em>", "namesake and earlier Cunard flagship"]
+        ]
+      }
+    ],
+    "ss-cap-trafalgar": [
+      {
+        heading: "Hamburg Süd South Atlantic Flagships",
+        note: "Cap Trafalgar, Cap Polonio, and Cap Arcona represent successive generations of Hamburg Süd prestige liners built for the Germany–South America passenger trade.",
+        items: [
+          ["/ships/ss-cap-polonio", "SS <em>Cap Polonio</em>", "later Hamburg Süd South Atlantic flagship"],
+          ["/ships/ss-cap-arcona", "SS <em>Cap Arcona</em>", "later Hamburg Süd South Atlantic flagship"]
+        ]
+      }
+    ],
+    "ss-cap-polonio": [
+      {
+        heading: "Hamburg Süd South Atlantic Flagships",
+        note: "Cap Polonio followed Cap Trafalgar in Hamburg Süd’s South American passenger tradition and was later superseded as the company’s prestige ship by Cap Arcona.",
+        items: [
+          ["/ships/ss-cap-trafalgar", "SS <em>Cap Trafalgar</em>", "earlier Hamburg Süd prestige liner"],
+          ["/ships/ss-cap-arcona", "SS <em>Cap Arcona</em>", "later Hamburg Süd flagship"]
+        ]
+      }
+    ],
+    "ss-cap-arcona": [
+      {
+        heading: "Hamburg Süd South Atlantic Flagships",
+        note: "Cap Arcona became Hamburg Süd’s leading South Atlantic prestige liner in 1927, succeeding the earlier Cap Polonio and continuing a flagship tradition that had included Cap Trafalgar before the First World War.",
+        items: [
+          ["/ships/ss-cap-polonio", "SS <em>Cap Polonio</em>", "immediate earlier Hamburg Süd prestige liner"],
+          ["/ships/ss-cap-trafalgar", "SS <em>Cap Trafalgar</em>", "prewar Hamburg Süd flagship generation"]
+        ]
+      }
+    ]
   };
 
   function normalizePath(href) {
