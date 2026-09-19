@@ -35,7 +35,7 @@ const expectedFacts = [
   ['ships/ss-empress-of-france.html', 'Operator', 'Canadian Pacific'],
   ['ships/ss-new-england.html', 'Operator', 'Dominion Line'],
   ['ships/ss-pennland.html', 'Operator', 'Red Star Line'],
-  ['ships/ss-poland.html', 'Operator', 'Dominion Line'],
+  ['ships/ss-poland.html', 'Operator', 'Atlantic Transport Line; later operated for Red Star Line and White Star Line'],
   ['ships/ss-rijndam-1901.html', 'Operator', 'Holland America Line'],
   ['ships/ss-storstad.html', 'Operator', 'A. F. Klaveness'],
   ['ships/ss-westernland.html', 'Operator', 'Red Star Line']
