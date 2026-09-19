@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T02:24:03.712Z",
+  "generatedAt": "2026-09-19T02:53:38.921Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithExplicitClass": 17,
     "canonicalClasses": 9,
     "explicitSisterLinks": 11,
-    "unresolvedSisterMentions": 77
+    "unresolvedSisterMentions": 79
   },
   "classes": [
     {
@@ -564,6 +564,18 @@
       "ship": "SS Cathay",
       "path": "ships/ss-cathay-1924.html",
       "mentioned": "in November 1942 Interwar liner figures are generally",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS City of Paris",
+      "path": "ships/ss-city-of-paris.html",
+      "mentioned": "Cunard",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS City of Paris",
+      "path": "ships/ss-city-of-paris.html",
+      "mentioned": "White Star in the premium express trade",
       "candidateCount": 0
     },
     {
@@ -1797,7 +1809,10 @@
       "path": "ships/ss-city-of-paris.html",
       "url": "/ships/ss-city-of-paris",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Cunard",
+        "White Star in the premium express trade"
+      ]
     },
     {
       "name": "SS Cleveland",
