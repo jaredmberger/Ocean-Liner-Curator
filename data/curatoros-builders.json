@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-18T23:53:45.494Z",
+  "generatedAt": "2026-09-19T02:27:35.154Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 312,
     "shipGuides": 300,
-    "canonicalBuilders": 98,
+    "canonicalBuilders": 99,
     "guidesWithBuilder": 300,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 10,
     "guidesMissingLaunch": 2,
-    "builderVariantGroups": 31,
+    "builderVariantGroups": 33,
     "suspiciousLaunchDatesWithoutYear": 1
   },
   "missing": {
@@ -32,7 +32,7 @@
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 72,
+      "shipCount": 73,
       "firstLaunchYear": 1870,
       "lastLaunchYear": 1960,
       "locations": [
@@ -96,7 +96,7 @@
     {
       "id": "ag-vulcan",
       "name": "AG Vulcan",
-      "shipCount": 10,
+      "shipCount": 9,
       "firstLaunchYear": 1897,
       "lastLaunchYear": 1913,
       "locations": [
@@ -106,32 +106,12 @@
         "then Germany; today Szczecin, Poland"
       ],
       "operators": [
-        "Canadian Pacific",
         "Hamburg America Line (HAPAG)",
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)",
         "Hamburg-America Line",
         "Norddeutscher Lloyd",
         "Norddeutscher Lloyd (North German Lloyd)",
         "Norddeutscher Lloyd / North German Lloyd"
-      ]
-    },
-    {
-      "id": "vickers-armstrongs",
-      "name": "Vickers-Armstrongs",
-      "shipCount": 10,
-      "firstLaunchYear": 1924,
-      "lastLaunchYear": 1959,
-      "locations": [
-        "Barrow-in-Furness",
-        "High Walker"
-      ],
-      "operators": [
-        "Furness Bermuda Line",
-        "Furness, Withy & Co. / Furness Bermuda Line",
-        "Orient Steam Navigation Company (Orient Line)",
-        "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-        "P&O Steam Navigation Company; later P&O-Orient Lines",
-        "Peninsular and Oriental Steam Navigation Company (P&O)"
       ]
     },
     {
@@ -152,6 +132,24 @@
         "Canadian Pacific Steamships",
         "Canadian Pacific Steamships / Canadian Pacific Line",
         "Cunard Line"
+      ]
+    },
+    {
+      "id": "vickers-armstrongs",
+      "name": "Vickers-Armstrongs",
+      "shipCount": 9,
+      "firstLaunchYear": 1924,
+      "lastLaunchYear": 1935,
+      "locations": [
+        "Barrow-in-Furness",
+        "High Walker"
+      ],
+      "operators": [
+        "Furness Bermuda Line",
+        "Furness, Withy & Co. / Furness Bermuda Line",
+        "Orient Steam Navigation Company (Orient Line)",
+        "P&O Steam Navigation Company; later P&O-Orient Lines",
+        "Peninsular and Oriental Steam Navigation Company (P&O)"
       ]
     },
     {
@@ -226,17 +224,16 @@
       ]
     },
     {
-      "id": "blohm-and-voss-hamburg",
-      "name": "Blohm & Voss, Hamburg",
-      "shipCount": 5,
+      "id": "ag-vulcan-stettin",
+      "name": "AG Vulcan, Stettin",
+      "shipCount": 4,
       "firstLaunchYear": 1896,
-      "lastLaunchYear": 1929,
+      "lastLaunchYear": 1900,
       "locations": [
         "Germany"
       ],
       "operators": [
         "Hamburg-Amerika Line (HAPAG)",
-        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
         "Norddeutscher Lloyd (North German Lloyd)"
       ]
     },
@@ -287,6 +284,7 @@
         "Harland & Wolff, Belfast · yard no. 340",
         "Harland & Wolff, Belfast · yard no. 343",
         "Harland & Wolff, Belfast · yard no. 345",
+        "Harland & Wolff, Belfast · yard no. 356",
         "Harland & Wolff, Belfast · yard no. 388",
         "Harland & Wolff, Belfast · yard no. 390",
         "Harland & Wolff, Belfast · yard no. 391",
@@ -317,7 +315,7 @@
         "Harland & Wolff, Govan · yard no. 649",
         "Harland & Wolff, Govan · yard no. 650"
       ],
-      "shipCount": 72
+      "shipCount": 73
     },
     {
       "id": "john-brown-and-company",
@@ -375,7 +373,6 @@
       "name": "AG Vulcan",
       "names": [
         "AG Vulcan",
-        "AG Vulkan",
         "Vulcan AG"
       ],
       "rawValues": [
@@ -384,31 +381,9 @@
         "AG Vulcan, Stettin",
         "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)",
         "AG Vulcan, Stettin · yard no. 286",
-        "AG Vulkan, Stettin",
         "Vulcan AG, Stettin"
       ],
-      "shipCount": 10
-    },
-    {
-      "id": "vickers-armstrongs",
-      "name": "Vickers-Armstrongs",
-      "names": [
-        "Vickers-Armstrong",
-        "Vickers-Armstrong Ltd.",
-        "Vickers-Armstrongs",
-        "Vickers-Armstrongs Ltd"
-      ],
-      "rawValues": [
-        "Vickers-Armstrong Ltd., Barrow-in-Furness",
-        "Vickers-Armstrong, Barrow-in-Furness",
-        "Vickers-Armstrong, Barrow-in-Furness · yard no. 637",
-        "Vickers-Armstrong, Barrow-in-Furness · yard no. 663",
-        "Vickers-Armstrong, Barrow-in-Furness · yard no. 664",
-        "Vickers-Armstrong, Barrow-in-Furness · yard no. 681",
-        "Vickers-Armstrongs Ltd, High Walker · yard no. 1",
-        "Vickers-Armstrongs, Barrow-in-Furness"
-      ],
-      "shipCount": 10
+      "shipCount": 9
     },
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
@@ -425,6 +400,25 @@
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 529",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 595",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 634"
+      ],
+      "shipCount": 9
+    },
+    {
+      "id": "vickers-armstrongs",
+      "name": "Vickers-Armstrongs",
+      "names": [
+        "Vickers-Armstrong",
+        "Vickers-Armstrong Ltd.",
+        "Vickers-Armstrongs Ltd"
+      ],
+      "rawValues": [
+        "Vickers-Armstrong Ltd., Barrow-in-Furness",
+        "Vickers-Armstrong, Barrow-in-Furness",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 637",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 663",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 664",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 681",
+        "Vickers-Armstrongs Ltd, High Walker · yard no. 1"
       ],
       "shipCount": 9
     },
@@ -498,15 +492,16 @@
       "shipCount": 5
     },
     {
-      "id": "blohm-and-voss-hamburg",
-      "name": "Blohm & Voss, Hamburg",
+      "id": "ag-vulcan-stettin",
+      "name": "AG Vulcan, Stettin",
       "names": [
-        "Blohm & Voss, Hamburg"
+        "AG Vulcan, Stettin"
       ],
       "rawValues": [
-        "Blohm & Voss, Hamburg, Germany"
+        "AG Vulcan, Stettin, Germany",
+        "AG Vulcan, Stettin, Germany · yard no. 232"
       ],
-      "shipCount": 5
+      "shipCount": 4
     },
     {
       "id": "ag-weser",
@@ -517,6 +512,17 @@
       "rawValues": [
         "AG Weser, Bremen",
         "AG Weser, Bremen · yard no. 193"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "blohm-and-voss-hamburg",
+      "name": "Blohm & Voss, Hamburg",
+      "names": [
+        "Blohm & Voss, Hamburg"
+      ],
+      "rawValues": [
+        "Blohm & Voss, Hamburg, Germany"
       ],
       "shipCount": 4
     },
@@ -572,17 +578,6 @@
       "rawValues": [
         "A.G. Vulcan, Hamburg",
         "A.G. Vulcan, Stettin"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "ag-vulcan-stettin",
-      "name": "AG Vulcan, Stettin",
-      "names": [
-        "AG Vulcan, Stettin"
-      ],
-      "rawValues": [
-        "AG Vulcan, Stettin, Germany"
       ],
       "shipCount": 3
     },
@@ -728,13 +723,14 @@
       "shipCount": 2
     },
     {
-      "id": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
-      "name": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
+      "id": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
+      "name": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
       "names": [
-        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
+        "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
       ],
       "rawValues": [
-        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424"
+        "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 891",
+        "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 893"
       ],
       "shipCount": 2
     },
@@ -1105,28 +1101,6 @@
       "shipCount": 1
     },
     {
-      "id": "deschimag-ag-weser",
-      "name": "Deschimag AG Weser",
-      "names": [
-        "Deschimag AG Weser"
-      ],
-      "rawValues": [
-        "Deschimag AG Weser, Bremen"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
-      "name": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
-      "names": [
-        "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
-      ],
-      "rawValues": [
-        "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 893"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "eastern-shipbuilding-company-new-london-groton",
       "name": "Eastern Shipbuilding Company, New London / Groton",
       "names": [
@@ -1134,6 +1108,17 @@
       ],
       "rawValues": [
         "Eastern Shipbuilding Company, New London / Groton, Connecticut"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
+      "name": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
+      "names": [
+        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
+      ],
+      "rawValues": [
+        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424"
       ],
       "shipCount": 1
     },
@@ -1475,6 +1460,28 @@
       ],
       "rawValues": [
         "Vickers Ltd, Barrow-in-Furness"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "vickers-armstrongs-shipbuilders-ltd",
+      "name": "Vickers-Armstrongs (Shipbuilders) Ltd.",
+      "names": [
+        "Vickers-Armstrongs (Shipbuilders) Ltd."
+      ],
+      "rawValues": [
+        "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "william-beardmore-and-company-dalmuir",
+      "name": "William Beardmore & Company, Dalmuir",
+      "names": [
+        "William Beardmore & Company, Dalmuir"
+      ],
+      "rawValues": [
+        "William Beardmore & Company, Dalmuir, Scotland · yard no. 509"
       ],
       "shipCount": 1
     },
@@ -2249,12 +2256,12 @@
       "path": "ships/rms-kenilworth-castle.html",
       "url": "/ships/rms-kenilworth-castle",
       "launchYear": "1903",
-      "builderRaw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 356",
       "builders": [
         {
-          "id": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
-          "name": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
-          "raw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424"
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast · yard no. 356"
         }
       ]
     },
@@ -3733,12 +3740,12 @@
       "path": "ships/ss-empress-of-france.html",
       "url": "/ships/ss-empress-of-france",
       "launchYear": "1913",
-      "builderRaw": "AG Vulkan, Stettin",
+      "builderRaw": "William Beardmore & Company, Dalmuir, Scotland · yard no. 509",
       "builders": [
         {
-          "id": "ag-vulcan",
-          "name": "AG Vulcan",
-          "raw": "AG Vulkan, Stettin"
+          "id": "william-beardmore-and-company-dalmuir",
+          "name": "William Beardmore & Company, Dalmuir",
+          "raw": "William Beardmore & Company, Dalmuir, Scotland · yard no. 509"
         }
       ]
     },
@@ -4139,12 +4146,12 @@
       "path": "ships/ss-konigin-luise.html",
       "url": "/ships/ss-konigin-luise",
       "launchYear": "1896",
-      "builderRaw": "Blohm & Voss, Hamburg, Germany",
+      "builderRaw": "AG Vulcan, Stettin, Germany · yard no. 232",
       "builders": [
         {
-          "id": "blohm-and-voss-hamburg",
-          "name": "Blohm & Voss, Hamburg",
-          "raw": "Blohm & Voss, Hamburg, Germany"
+          "id": "ag-vulcan-stettin",
+          "name": "AG Vulcan, Stettin",
+          "raw": "AG Vulcan, Stettin, Germany · yard no. 232"
         }
       ]
     },
@@ -4895,12 +4902,12 @@
       "path": "ships/ss-oriana.html",
       "url": "/ships/ss-oriana",
       "launchYear": "1959",
-      "builderRaw": "Vickers-Armstrongs, Barrow-in-Furness",
+      "builderRaw": "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061",
       "builders": [
         {
-          "id": "vickers-armstrongs",
-          "name": "Vickers-Armstrongs",
-          "raw": "Vickers-Armstrongs, Barrow-in-Furness"
+          "id": "vickers-armstrongs-shipbuilders-ltd",
+          "name": "Vickers-Armstrongs (Shipbuilders) Ltd.",
+          "raw": "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061"
         }
       ]
     },
@@ -5371,12 +5378,12 @@
       "path": "ships/ss-scharnhorst.html",
       "url": "/ships/ss-scharnhorst",
       "launchYear": "1934",
-      "builderRaw": "Deschimag AG Weser, Bremen",
+      "builderRaw": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 891",
       "builders": [
         {
-          "id": "deschimag-ag-weser",
-          "name": "Deschimag AG Weser",
-          "raw": "Deschimag AG Weser, Bremen"
+          "id": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
+          "name": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
+          "raw": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 891"
         }
       ]
     },
