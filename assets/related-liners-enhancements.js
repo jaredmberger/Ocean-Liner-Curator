@@ -514,6 +514,49 @@
         items: [["/ships/ss-gneisenau", "SS <em>Gneisenau</em>", "sister ship"]]
       }
     ]
+  ,
+    "rms-britannia-1840": [
+      {
+        heading: "Cunard’s Founding Paddle Fleet",
+        note: "Britannia belonged to Cunard’s original wooden paddle-steamer family; Cambria represented the enlarged later development of that founding transatlantic fleet.",
+        items: [["/ships/rms-cambria-1845", "RMS <em>Cambria</em>", "later enlarged member of Cunard’s founding paddle family"]]
+      }
+    ],
+    "rms-cambria-1845": [
+      {
+        heading: "Cunard’s Founding Paddle Fleet",
+        note: "Cambria was an enlarged development of Cunard’s original Britannia-class wooden paddle steamers and carried forward the same Liverpool–Halifax–Boston mail-service concept.",
+        items: [["/ships/rms-britannia-1840", "RMS <em>Britannia</em> (1840)", "founding Cunard predecessor generation"]]
+      }
+    ],
+    "rms-persia-1855": [
+      {
+        heading: "Cunard Iron Paddle Express Pair",
+        note: "Scotia was originally conceived as a sister to Persia and ultimately entered service as a larger development of her design; the two then operated together on Cunard’s New York express route.",
+        items: [["/ships/rms-scotia-1861", "RMS <em>Scotia</em>", "larger near-sister and express running mate"]]
+      }
+    ],
+    "rms-scotia-1861": [
+      {
+        heading: "Cunard Iron Paddle Express Pair",
+        note: "Scotia was originally planned as a sister to Persia but emerged as a larger development of the earlier liner; the two subsequently served together on Cunard’s New York express route.",
+        items: [["/ships/rms-persia-1855", "RMS <em>Persia</em>", "near-sister and express running mate"]]
+      }
+    ],
+    "ss-la-normandie": [
+      {
+        heading: "French Line 1880s Fleet Renewal",
+        note: "La Normandie served as the prototype for French Line’s next high-speed North Atlantic generation, whose production ships included La Bretagne.",
+        items: [["/ships/ss-la-bretagne", "SS <em>La Bretagne</em>", "later production-generation successor"]]
+      }
+    ],
+    "ss-la-bretagne": [
+      {
+        heading: "French Line 1880s Fleet Renewal",
+        note: "La Bretagne belonged to the four-ship high-speed generation developed after La Normandie demonstrated French Line’s new North Atlantic design direction.",
+        items: [["/ships/ss-la-normandie", "SS <em>La Normandie</em>", "prototype predecessor"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
