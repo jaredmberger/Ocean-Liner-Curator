@@ -664,7 +664,7 @@
       "Related Liners.",
       "Furness Bermuda Line’s paired New York–Bermuda flagships—closely linked in route identity and collecting context.",
       [
-        { href: "/ships/monarch-of-bermuda", label: "Monarch of Bermuda", tail: "1931" },
+        { href: "/ships/ss-monarch-of-bermuda", label: "Monarch of Bermuda", tail: "1931" },
         { href: "/ships/ss-queen-of-bermuda", label: "SS <em>Queen of Bermuda</em>", tail: "1933" }
       ],
       "Furness Bermuda pair"
@@ -739,7 +739,7 @@
       [
         { href: "/ships/ss-belgenland", label: "SS <em>Belgenland</em>", tail: "Red Star Line · 1923" },
         { href: "/ships/ss-pennland", label: "SS <em>Pennland</em>", tail: "Red Star Line · 1922" },
-        { href: "/ships/ss-westernland-red-star", label: "SS <em>Westernland</em>", tail: "Red Star Line · 1929" }
+        { href: "/ships/ss-westernland", label: "SS <em>Westernland</em>", tail: "Red Star Line · 1929" }
       ],
       "Red Star interwar liners"
     ),
@@ -769,7 +769,7 @@
       "Related Liners.",
       "White Star Line ships associated with the company’s pre-Olympic Atlantic development—large liners that bridged the gap between the Victorian era and the Olympic-class generation.",
       [
-        { href: "/ships/rms-oceanic", label: "RMS <em>Oceanic</em>", tail: "White Star Line · 1899" },
+        { href: "/ships/rms-oceanic-1899", label: "RMS <em>Oceanic</em>", tail: "White Star Line · 1899" },
         { href: "/ships/ss-cymric", label: "SS <em>Cymric</em>", tail: "White Star Line · 1898" },
         { href: "/ships/ss-republic-1903", label: "SS <em>Republic</em> (1903)", tail: "White Star Line · 1903" },
         { href: "/ships/rms-laurentic", label: "RMS <em>Laurentic</em>", tail: "White Star Line · 1909" },
@@ -782,9 +782,8 @@
       "Related Liners.",
       "Major Hamburg America Line ships associated with the company’s Atlantic presence across the late imperial and interwar eras.",
       [
-        { href: "/ships/ss-amerika", label: "SS <em>Amerika</em>", tail: "HAPAG · 1905" },
+        { href: "/ships/ss-amerika-1905", label: "SS <em>Amerika</em>", tail: "HAPAG · 1905" },
         { href: "/ships/ss-deutschland", label: "SS <em>Deutschland</em>", tail: "HAPAG · 1900" },
-        { href: "/ships/ss-george-washington", label: "SS <em>George Washington</em>", tail: "HAPAG · 1909" },
         { href: "/ships/ss-reliance", label: "SS <em>Reliance</em>", tail: "HAPAG · 1914" },
         { href: "/ships/ss-resolute", label: "SS <em>Resolute</em>", tail: "HAPAG · 1914" },
         { href: "/ships/ss-hamburg-1925", label: "SS <em>Hamburg</em>", tail: "HAPAG · 1925" }
@@ -889,7 +888,7 @@
       "Related Liners.",
       "P&amp;O’s interwar and early postwar Strath liners—important to Britain–Australia imperial passenger service.",
       [
-        { href: "/ships/rms-strathaird", label: "RMS <em>Strathaird</em>", tail: "P&amp;O · 1932" },
+        { href: "/ships/ss-strathaird", label: "RMS <em>Strathaird</em>", tail: "P&amp;O · 1932" },
         { href: "/ships/rms-strathnaver", label: "RMS <em>Strathnaver</em>", tail: "P&amp;O · 1931" },
         { href: "/ships/ss-strathmore", label: "SS <em>Strathmore</em>", tail: "P&amp;O · 1935" }
       ],
@@ -915,21 +914,11 @@
       [
         { href: "/ships/ss-albert-ballin", label: "SS <em>Albert Ballin</em>", tail: "HAPAG · 1923" },
         { href: "/ships/ss-deutschland", label: "SS <em>Deutschland</em>", tail: "HAPAG · 1900" },
-        { href: "/ships/ss-amerika", label: "SS <em>Amerika</em>", tail: "HAPAG · 1905" },
+        { href: "/ships/ss-amerika-1905", label: "SS <em>Amerika</em>", tail: "HAPAG · 1905" },
         { href: "/ships/ss-imperator", label: "SS <em>Imperator</em>", tail: "HAPAG · 1913" },
         { href: "/ships/ss-hamburg-1925", label: "SS <em>Hamburg</em>", tail: "HAPAG · 1925" }
       ],
       "HAPAG Atlantic prestige ships"
-    ),
-
-    minnewaska_atlantic_transport: cluster(
-      "Related Liners.",
-      "Atlantic Transport Line ships associated with the company’s large early-20th-century passenger service.",
-      [
-        { href: "/ships/ss-minnewaska", label: "SS <em>Minnewaska</em>", tail: "Atlantic Transport Line · 1909" },
-        { href: "/ships/ss-minneapolis", label: "SS <em>Minneapolis</em>", tail: "Atlantic Transport Line · 1900" }
-      ],
-      "Atlantic Transport Line passenger ships"
     ),
 
     canadian_pacific_duchess_empress: cluster(
@@ -1203,7 +1192,7 @@
     "rms-empress-of-ireland": ["empress_canada_atlantic", "canadian_pacific_duchess_empress"],
     "rms-empress-of-britain": ["empress_canada_atlantic", "canadian_pacific_atlantic_interwar", "canadian_pacific_duchess_empress"],
 
-    "monarch-of-bermuda": ["bermuda_pair"],
+    "ss-monarch-of-bermuda": ["bermuda_pair"],
     "ss-queen-of-bermuda": ["bermuda_pair"],
 
     "ss-atlantic-1873": ["white_star_1870s"],
@@ -1211,7 +1200,7 @@
     "ss-germanic": ["white_star_1870s"],
     "rms-laurentic": ["white_star_canadian_pair", "white_star_oceanic_family"],
     "rms-megantic-1909": ["white_star_canadian_pair", "white_star_oceanic_family"],
-    "rms-oceanic": ["white_star_oceanic_family"],
+    "rms-oceanic-1899": ["white_star_oceanic_family"],
     "ss-cymric": ["white_star_oceanic_family"],
     "ss-republic-1903": ["white_star_oceanic_family"],
 
@@ -1229,7 +1218,7 @@
 
     "ss-belgenland": ["red_star_interwar"],
     "ss-pennland": ["red_star_interwar"],
-    "ss-westernland-red-star": ["red_star_interwar"],
+    "ss-westernland": ["red_star_interwar"],
 
     "ss-berlin-1909": ["berlin_arabic_republic"],
     "ss-arabic-1920": ["berlin_arabic_republic"],
@@ -1237,8 +1226,7 @@
 
     "ss-reliance": ["reliance_resolute", "hapag_atlantic"],
     "ss-resolute": ["reliance_resolute", "hapag_atlantic"],
-    "ss-amerika": ["hapag_atlantic", "hapag_ballin_group"],
-    "ss-george-washington": ["hapag_atlantic"],
+    "ss-amerika-1905": ["hapag_atlantic", "hapag_ballin_group"],
     "ss-hamburg-1925": ["hapag_atlantic", "hapag_ballin_group"],
 
     "ss-duchess-of-bedford": ["duchess_quartet", "canadian_pacific_atlantic_interwar", "canadian_pacific_duchess_empress"],
@@ -1251,7 +1239,7 @@
     "ss-otranto": ["orient_interwar"],
     "ss-oronsay": ["orient_interwar"],
 
-    "rms-strathaird": ["po_strath_group"],
+    "ss-strathaird": ["po_strath_group"],
     "ss-strathmore": ["po_strath_group"],
 
     "ss-warwick-castle": ["union_castle_named_group"],
@@ -1259,10 +1247,6 @@
     "ss-carnarvon-castle": ["union_castle_named_group"],
 
     "ss-albert-ballin": ["hapag_ballin_group"],
-
-    "ss-minnewaska": ["minnewaska_atlantic_transport"],
-    "ss-minneapolis": ["minnewaska_atlantic_transport"],
-
     /* Temporary expansion mappings — July 2026 */
     "ss-friedrich-der-grosse": ["ngl_barbarossa_group"],
     "ss-barbarossa": ["ngl_barbarossa_group"],
