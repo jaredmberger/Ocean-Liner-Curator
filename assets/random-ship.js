@@ -11,6 +11,8 @@
 "/ships/ss-amerika-1905.html",
 "/ships/rms-andania.html",
 "/ships/rms-andania-1922.html",
+"/ships/rms-antonia.html",
+"/ships/rms-ausonia.html",
 "/ships/rms-andes-1939.html",
 "/ships/ss-andrea-doria.html",
 "/ships/ss-ascania-1911.html",
