@@ -557,6 +557,35 @@
         items: [["/ships/ss-la-normandie", "SS <em>La Normandie</em>", "prototype predecessor"]]
       }
     ]
+  ,
+    "ss-mooltan": [
+      {
+        heading: "P&O Paired Liners",
+        note: "Mooltan and Maloja were P&O’s paired 20,000-ton liners of 1923, closely related in design and built consecutively at Harland & Wolff for long-distance service through Suez.",
+        items: [["/ships/ss-maloja", "RMS <em>Maloja</em>", "close sister and running mate"]]
+      }
+    ],
+    "ss-maloja": [
+      {
+        heading: "P&O Paired Liners",
+        note: "Maloja and Mooltan were P&O’s paired 20,000-ton liners of 1923, closely related in design and built consecutively at Harland & Wolff for long-distance service through Suez.",
+        items: [["/ships/ss-mooltan", "RMS <em>Mooltan</em>", "close sister and running mate"]]
+      }
+    ],
+    "ss-laurentic": [
+      {
+        heading: "Namesake Across Generations",
+        note: "The 1927 Laurentic was the second White Star liner to carry the name, directly succeeding the earlier 1909 Laurentic in company naming tradition and Canadian-service history.",
+        items: [["/ships/rms-laurentic", "RMS <em>Laurentic</em> (1909)", "earlier White Star namesake"]]
+      }
+    ],
+    "ss-lapland": [
+      {
+        heading: "Titanic Aftermath",
+        note: "Lapland carried surviving members of Titanic’s crew back to Britain after the disaster, creating a direct and well-documented link between the Red Star liner and Titanic’s immediate aftermath.",
+        items: [["/ships/rms-titanic", "RMS <em>Titanic</em>", "surviving crew carried home aboard Lapland"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
