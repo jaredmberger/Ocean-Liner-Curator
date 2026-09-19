@@ -506,6 +506,17 @@
       "Cunard Saxonia-class liners"
     ),
 
+    cunard_a_class_1922: cluster(
+      "A-Class Sister Ships.",
+      "Andania, Antonia, and Ausonia formed Cunard’s original 1922 A-class trio of intermediate passenger-refrigerated-cargo liners for the Canadian trade. Aurania, Alaunia, and Ascania followed as a second related trio in the mid-1920s.",
+      [
+        { href: "/ships/rms-andania-1922", label: "RMS <em>Andania</em>", tail: "Cunard Line · 1922" },
+        { href: "/ships/rms-antonia", label: "RMS <em>Antonia</em>", tail: "Cunard Line · 1922" },
+        { href: "/ships/rms-ausonia", label: "RMS <em>Ausonia</em>", tail: "Cunard Line · 1922" }
+      ],
+      "Cunard original 1922 A-class trio"
+    ),
+
     kaiser_class: cluster(
       "Related Liners.",
       "Norddeutscher Lloyd’s Kaiser-class express liners—the famous German four-funnel prestige group before the First World War.",
@@ -1167,6 +1178,10 @@
     "rms-ivernia": ["saxonia_class"],
     "rms-carinthia": ["saxonia_class"],
     "rms-sylvania": ["saxonia_class"],
+
+    "rms-andania-1922": ["cunard_a_class_1922"],
+    "rms-antonia": ["cunard_a_class_1922"],
+    "rms-ausonia": ["cunard_a_class_1922"],
 
     "ss-lurline-1932": ["matson_white_ships"],
     "ss-mariposa": ["matson_white_ships"],
