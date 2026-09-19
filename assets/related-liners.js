@@ -972,10 +972,20 @@
       [
         { href: "/ships/ss-pretoria", label: "SS <em>Pretoria</em>", tail: "Hamburg America Line" },
         { href: "/ships/ss-patricia", label: "SS <em>Patricia</em>", tail: "Hamburg America Line" },
-        { href: "/ships/ss-graf-waldersee", label: "SS <em>Graf Waldersee</em>", tail: "Hamburg America Line" },
-        { href: "/ships/ss-pennsylvania", label: "SS <em>Pennsylvania</em>", tail: "Hamburg America Line" }
+        { href: "/ships/ss-graf-waldersee", label: "SS <em>Graf Waldersee</em>", tail: "Hamburg America Line" }
       ],
       "Hamburg America Line P-class group"
+    ),
+
+    panama_pacific_trio: cluster(
+      "Sister Ships.",
+      "Panama Pacific Line’s three American-built turbo-electric intercoastal liners, created for New York–California service through the Panama Canal and later rebuilt as Uruguay, Brazil, and Argentina.",
+      [
+        { href: "/ships/ss-california", label: "SS <em>California</em>", tail: "lead ship · later <em>Uruguay</em>" },
+        { href: "/ships/ss-virginia", label: "SS <em>Virginia</em>", tail: "later <em>Brazil</em>" },
+        { href: "/ships/ss-pennsylvania", label: "SS <em>Pennsylvania</em>", tail: "later <em>Argentina</em>" }
+      ],
+      "Panama Pacific turbo-electric sisters"
     ),
 
     union_castle_early_mail: cluster(
@@ -1256,7 +1266,9 @@
     "ss-pretoria": ["hapag_p_class_group"],
     "ss-patricia": ["hapag_p_class_group"],
     "ss-graf-waldersee": ["hapag_p_class_group"],
-    "ss-pennsylvania": ["hapag_p_class_group"],
+    "ss-california": ["panama_pacific_trio"],
+    "ss-virginia": ["panama_pacific_trio"],
+    "ss-pennsylvania": ["panama_pacific_trio"],
     "rms-walmer-castle": ["union_castle_early_mail"],
     "ss-armadale-castle": ["union_castle_early_mail"],
     "rms-kenilworth-castle": ["union_castle_early_mail"],

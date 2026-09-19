@@ -43,6 +43,7 @@
 "/ships/rms-britannic.html",
 "/ships/mv-britannic.html",
 "/ships/rms-caledonia.html",
+"/ships/ss-california.html",
 "/ships/ss-calgarian.html",
 "/ships/ss-calgaric.html",
 "/ships/rms-cameronia.html",
