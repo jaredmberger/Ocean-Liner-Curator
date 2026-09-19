@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T00:39:22.870Z",
+  "generatedAt": "2026-09-19T00:57:29.758Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "shipGuides": 300,
     "guidesWithOperator": 300,
     "guidesMissingOperator": 0,
     "canonicalOperators": 83,
-    "aliasedOperatorGroups": 19
+    "aliasedOperatorGroups": 20
   },
   "operators": [
     {
@@ -99,16 +99,6 @@
       "shipCount": 8
     },
     {
-      "id": "dominion-line",
-      "name": "Dominion Line",
-      "rawValues": [
-        "Dominion Line",
-        "Dominion Line / White Star Line",
-        "Dominion Line; later White Star-Dominion context"
-      ],
-      "shipCount": 7
-    },
-    {
       "id": "orient-line",
       "name": "Orient Line",
       "rawValues": [
@@ -147,6 +137,16 @@
       "shipCount": 6
     },
     {
+      "id": "dominion-line",
+      "name": "Dominion Line",
+      "rawValues": [
+        "Dominion Line",
+        "Dominion Line / White Star Line",
+        "Dominion Line; later White Star-Dominion context"
+      ],
+      "shipCount": 6
+    },
+    {
       "id": "navigazione-generale-italiana-ngi",
       "name": "Navigazione Generale Italiana (NGI)",
       "rawValues": [
@@ -170,6 +170,15 @@
         "United States Lines"
       ],
       "shipCount": 5
+    },
+    {
+      "id": "atlantic-transport-line",
+      "name": "Atlantic Transport Line",
+      "rawValues": [
+        "Atlantic Transport Line",
+        "Atlantic Transport Line; later operated for Red Star Line and White Star Line"
+      ],
+      "shipCount": 4
     },
     {
       "id": "cosulich-societa-triestina-di-navigazione",
@@ -204,14 +213,6 @@
         "Union-Castle Mail Steamship Company"
       ],
       "shipCount": 4
-    },
-    {
-      "id": "atlantic-transport-line",
-      "name": "Atlantic Transport Line",
-      "rawValues": [
-        "Atlantic Transport Line"
-      ],
-      "shipCount": 3
     },
     {
       "id": "canadian-pacific-railway-co-canadian-pacific-steamships",
@@ -2753,8 +2754,8 @@
       "path": "ships/ss-poland.html",
       "url": "/ships/ss-poland",
       "launchYear": "1897",
-      "operatorRaw": "Dominion Line",
-      "operator": "Dominion Line"
+      "operatorRaw": "Atlantic Transport Line; later operated for Red Star Line and White Star Line",
+      "operator": "Atlantic Transport Line"
     },
     {
       "name": "SS President Coolidge",
