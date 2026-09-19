@@ -431,6 +431,45 @@
         items: [["/ships/ss-europa", "SS <em>Europa</em>", "same ship before transfer and rebuilding"]]
       }
     ]
+  ,
+    "ms-bermuda": [
+      {
+        heading: "Bermuda Service Succession",
+        note: "Bermuda was Furness Bermuda Line’s modern New York–Bermuda liner before fire destroyed her. Monarch of Bermuda and Queen of Bermuda then carried the route forward as the company’s celebrated paired flagships.",
+        items: [
+          ["/ships/ss-monarch-of-bermuda", "<em>Monarch of Bermuda</em>", "later Furness Bermuda Line flagship"],
+          ["/ships/ss-queen-of-bermuda", "SS <em>Queen of Bermuda</em>", "replacement-era running mate"]
+        ]
+      }
+    ],
+    "ss-drottningholm": [
+      {
+        heading: "Swedish American Line Succession",
+        note: "Drottningholm was acquired for Swedish American Line service in 1919; Gripsholm followed in 1925 as the company’s first purpose-built new liner and marked a new generation of the line’s Atlantic fleet.",
+        items: [["/ships/ms-gripsholm-1925", "MS <em>Gripsholm</em>", "first purpose-built Swedish American Line successor generation"]]
+      }
+    ],
+    "ss-great-eastern": [
+      {
+        heading: "Brunel Steamship Lineage",
+        note: "Great Eastern was Isambard Kingdom Brunel’s third great ocean-going steamship project, following Great Western and Great Britain and pushing his ideas about scale and long-distance steam navigation to their extreme.",
+        items: [
+          ["/ships/ss-great-western", "SS <em>Great Western</em>", "earlier Brunel steamship"],
+          ["/ships/ss-great-britain-1843", "SS <em>Great Britain</em>", "earlier Brunel steamship"]
+        ]
+      }
+    ],
+    "rms-empress-of-canada": [
+      {
+        heading: "Canadian Pacific Pacific Empresses",
+        note: "Empress of Canada belonged to Canadian Pacific’s broader interwar Pacific and trans-Pacific Empress fleet, alongside ships such as Empress of Australia, Empress of Russia, and the later Empress of Japan.",
+        items: [
+          ["/ships/rms-empress-of-australia", "RMS <em>Empress of Australia</em>", "Canadian Pacific Pacific-service contemporary"],
+          ["/ships/rms-empress-of-russia", "RMS <em>Empress of Russia</em>", "Canadian Pacific Pacific-service predecessor generation"],
+          ["/ships/rms-empress-of-japan-1929", "RMS <em>Empress of Japan</em>", "later Canadian Pacific Pacific flagship"]
+        ]
+      }
+    ]
   };
 
   function normalizePath(href) {
