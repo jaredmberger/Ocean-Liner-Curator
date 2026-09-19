@@ -733,6 +733,17 @@
       "P&O liners"
     ),
 
+
+    arcadia_iberia_pair: cluster(
+      "Near-Sister Ships.",
+      "Arcadia and Iberia were closely related P&O postwar liners completed in 1954 for the Britain–Australia service. Built at different yards, they were near-sisters rather than exact yard-identical duplicates.",
+      [
+        { href: "/ships/ss-arcadia-1954", label: "SS <em>Arcadia</em>", tail: "P&amp;O · 1954" },
+        { href: "/ships/ss-iberia", label: "SS <em>Iberia</em>", tail: "P&amp;O · 1954" }
+      ],
+      "P&O postwar near-sisters"
+    ),
+
     red_star_interwar: cluster(
       "Related Liners.",
       "Red Star Line ships tied to the line’s interwar and IMM-era Atlantic identity.",
@@ -1225,6 +1236,8 @@
     "rms-strathnaver": ["pando_flagships", "po_strath_group"],
     "rms-viceroy-of-india": ["pando_flagships"],
     "ss-canberra": ["pando_flagships"],
+    "ss-arcadia-1954": ["arcadia_iberia_pair"],
+    "ss-iberia": ["arcadia_iberia_pair"],
 
     "ss-belgenland": ["red_star_interwar"],
     "ss-pennland": ["red_star_interwar"],
