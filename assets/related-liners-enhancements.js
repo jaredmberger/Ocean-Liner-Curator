@@ -149,6 +149,103 @@
         ]
       }
     ]
+  ,
+    "rms-carpathia": [
+      {
+        heading: "Titanic Rescue",
+        note: "Carpathia is inseparable from Titanic’s loss: the Cunard liner reached the disaster area on 15 April 1912 and took aboard the survivors from Titanic’s lifeboats.",
+        items: [["/ships/rms-titanic", "RMS <em>Titanic</em>", "ship whose survivors Carpathia rescued"]]
+      }
+    ],
+    "rms-titanic": [
+      {
+        heading: "Rescue Ship",
+        note: "Carpathia reached Titanic’s lifeboats on the morning of 15 April 1912 and carried the survivors onward to New York.",
+        items: [["/ships/rms-carpathia", "RMS <em>Carpathia</em>", "rescued Titanic’s survivors"]]
+      }
+    ],
+    "rms-empress-of-ireland": [
+      {
+        heading: "Collision Counterpart",
+        note: "Empress of Ireland and the Norwegian collier Storstad collided in dense fog in the St. Lawrence River on 29 May 1914, a disaster that caused the liner to sink rapidly.",
+        items: [["/ships/ss-storstad", "SS <em>Storstad</em>", "colliding vessel in the 1914 disaster"]]
+      }
+    ],
+    "ss-storstad": [
+      {
+        heading: "Collision Counterpart",
+        note: "Storstad is historically linked to Empress of Ireland through their collision in dense fog in the St. Lawrence River on 29 May 1914.",
+        items: [["/ships/rms-empress-of-ireland", "RMS <em>Empress of Ireland</em>", "liner lost after the collision"]]
+      }
+    ],
+    "rms-homeric": [
+      {
+        heading: "White Star’s 1920s Flagship Trio",
+        note: "Homeric operated with Olympic and Majestic as White Star Line’s principal three-ship North Atlantic combination during much of the 1920s.",
+        items: [
+          ["/ships/rms-olympic", "RMS <em>Olympic</em>", "White Star running mate"],
+          ["/ships/rms-majestic", "RMS <em>Majestic</em>", "White Star running mate"]
+        ]
+      }
+    ],
+    "rms-olympic": [
+      {
+        heading: "White Star’s 1920s Flagship Trio",
+        note: "During the 1920s Olympic operated with the newly acquired Majestic and Homeric as White Star Line’s principal North Atlantic flagship combination.",
+        items: [
+          ["/ships/rms-homeric", "RMS <em>Homeric</em>", "White Star running mate"],
+          ["/ships/rms-majestic", "RMS <em>Majestic</em>", "White Star running mate"]
+        ]
+      }
+    ],
+    "rms-majestic": [
+      {
+        heading: "White Star’s 1920s Flagship Trio",
+        note: "During the 1920s Majestic operated with Olympic and Homeric as White Star Line’s principal North Atlantic flagship combination.",
+        items: [
+          ["/ships/rms-olympic", "RMS <em>Olympic</em>", "White Star running mate"],
+          ["/ships/rms-homeric", "RMS <em>Homeric</em>", "White Star running mate"]
+        ]
+      }
+    ],
+    "ss-monarch-of-bermuda": [
+      {
+        heading: "Bermuda Running Mate",
+        note: "Monarch of Bermuda and Queen of Bermuda formed Furness Bermuda Line’s celebrated purpose-built pair for the New York–Bermuda passenger trade.",
+        items: [["/ships/ss-queen-of-bermuda", "SS <em>Queen of Bermuda</em>", "Furness Bermuda Line running mate"]]
+      }
+    ],
+    "ss-queen-of-bermuda": [
+      {
+        heading: "Bermuda Running Mate",
+        note: "Queen of Bermuda joined Monarch of Bermuda in Furness Bermuda Line’s purpose-built luxury service between New York and Bermuda.",
+        items: [["/ships/ss-monarch-of-bermuda", "<em>Monarch of Bermuda</em>", "Furness Bermuda Line running mate"]]
+      }
+    ],
+    "ss-great-western": [
+      {
+        heading: "1838 Steam Atlantic Breakthrough",
+        note: "Sirius and Great Western made the breakthrough transatlantic steam passages of April 1838; Sirius arrived first, while Great Western demonstrated the practicality of a purpose-built Atlantic steamer.",
+        items: [
+          ["/ships/ss-sirius", "SS <em>Sirius</em>", "fellow pioneer of the April 1838 steam crossings"],
+          ["/ships/ss-great-britain-1843", "SS <em>Great Britain</em>", "later Great Western Steamship Company successor"]
+        ]
+      }
+    ],
+    "ss-sirius": [
+      {
+        heading: "1838 Steam Atlantic Breakthrough",
+        note: "Sirius and Great Western made the breakthrough transatlantic steam passages of April 1838, establishing an enduring historical link between the two pioneering vessels.",
+        items: [["/ships/ss-great-western", "SS <em>Great Western</em>", "fellow pioneer of the April 1838 steam crossings"]]
+      }
+    ],
+    "ss-great-britain-1843": [
+      {
+        heading: "Great Western Steamship Lineage",
+        note: "Great Britain followed Great Western for the same company and pushed ocean-going steamship design further through her iron hull and screw propulsion.",
+        items: [["/ships/ss-great-western", "SS <em>Great Western</em>", "earlier company pioneer"]]
+      }
+    ]
   };
 
   function normalizePath(href) {
