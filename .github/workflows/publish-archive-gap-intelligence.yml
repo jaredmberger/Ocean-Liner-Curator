@@ -1,0 +1,68 @@
+name: Publish archive gap intelligence
+
+on:
+  pull_request:
+    paths:
+      - 'ships/**.html'
+      - 'assets/related-liners.js'
+      - 'assets/related-liners-phase2.js'
+      - 'assets/related-liners-enhancements.js'
+      - 'data/curatoros-operators.json'
+      - 'data/curatoros-yards.json'
+      - 'data/curatoros-eras.json'
+      - 'data/curatoros-classes-sisters.json'
+      - 'tools/search/archive-gap-intelligence.mjs'
+      - '.github/workflows/publish-archive-gap-intelligence.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ships/**.html'
+      - 'assets/related-liners.js'
+      - 'assets/related-liners-phase2.js'
+      - 'assets/related-liners-enhancements.js'
+      - 'data/curatoros-operators.json'
+      - 'data/curatoros-yards.json'
+      - 'data/curatoros-eras.json'
+      - 'data/curatoros-classes-sisters.json'
+      - 'tools/search/archive-gap-intelligence.mjs'
+      - '.github/workflows/publish-archive-gap-intelligence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-archive-gap-intelligence
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate archive gap intelligence
+        run: node tools/search/archive-gap-intelligence.mjs
+
+      - name: Validate generated feed
+        run: |
+          node -e "const fs=require('fs'); const d=JSON.parse(fs.readFileSync('data/curatoros-archive-gaps.json','utf8')); if(!d.summary || !Array.isArray(d.relationshipUncoveredShips)) process.exit(1); console.log(d.summary);"
+
+      - name: Publish changed feed
+        if: github.event_name != 'pull_request'
+        run: |
+          if [ -z "$(git status --porcelain -- data/curatoros-archive-gaps.json)" ]; then
+            echo 'Archive gap intelligence feed is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/curatoros-archive-gaps.json
+          git commit -m 'Update CuratorOS archive gap intelligence feed'
+          git push
