@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T00:52:50.786Z",
+  "generatedAt": "2026-09-19T01:10:12.173Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
     "shipGuides": 300,
     "guidesWithServiceStart": 296,
-    "guidesWithExplicitServiceEnd": 234,
+    "guidesWithExplicitServiceEnd": 236,
     "eras": 10,
     "decades": 15
   },
@@ -271,7 +271,7 @@
           "path": "ships/ss-commonwealth.html",
           "url": "/ships/ss-commonwealth",
           "serviceStartYear": "1900",
-          "serviceEndYear": null
+          "serviceEndYear": "1925"
         },
         {
           "name": "SS Corinthic",
@@ -1576,8 +1576,8 @@
           "name": "SS Königin Luise",
           "path": "ships/ss-konigin-luise.html",
           "url": "/ships/ss-konigin-luise",
-          "serviceStartYear": "1897",
-          "serviceEndYear": "1924"
+          "serviceStartYear": "1896",
+          "serviceEndYear": "1935"
         },
         {
           "name": "SS La Bretagne",
@@ -2824,7 +2824,7 @@
           "path": "ships/ss-commonwealth.html",
           "url": "/ships/ss-commonwealth",
           "serviceStartYear": "1900",
-          "serviceEndYear": null
+          "serviceEndYear": "1925"
         },
         {
           "name": "SS Corinthic",
@@ -3786,8 +3786,8 @@
           "name": "SS Königin Luise",
           "path": "ships/ss-konigin-luise.html",
           "url": "/ships/ss-konigin-luise",
-          "serviceStartYear": "1897",
-          "serviceEndYear": "1924"
+          "serviceStartYear": "1896",
+          "serviceEndYear": "1935"
         },
         {
           "name": "RMS Majestic (1889)",
@@ -5799,10 +5799,10 @@
       "url": "/ships/ss-commonwealth",
       "launchYear": "1900",
       "serviceStartYear": "1900",
-      "serviceEndYear": null,
+      "serviceEndYear": "1925",
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
-      "endEvidence": null
+      "endEvidence": "withdrawn and broken up at Briton Ferry in 1925"
     },
     {
       "name": "SS Constitution",
@@ -6381,11 +6381,11 @@
       "path": "ships/ss-konigin-luise.html",
       "url": "/ships/ss-konigin-luise",
       "launchYear": "1896",
-      "serviceStartYear": "1897",
-      "serviceEndYear": "1924",
+      "serviceStartYear": "1896",
+      "serviceEndYear": "1935",
       "era": "Late Victorian expansion",
       "decade": "1890s",
-      "endEvidence": "Sold for scrapping in 1924"
+      "endEvidence": "scrapped in 1935"
     },
     {
       "name": "SS Kronprinz Wilhelm",
@@ -7097,10 +7097,10 @@
       "url": "/ships/ss-poland",
       "launchYear": null,
       "serviceStartYear": null,
-      "serviceEndYear": null,
+      "serviceEndYear": "1925",
       "era": null,
       "decade": null,
-      "endEvidence": null
+      "endEvidence": "1925, briefly receiving the name Natale, and was broken up"
     },
     {
       "name": "SS President Coolidge",
