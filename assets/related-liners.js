@@ -755,6 +755,17 @@
       "P&O postwar near-sisters"
     ),
 
+    po_c_class_1925: cluster(
+      "C-Class Sister Ships.",
+      "Cathay, Comorin, and Chitral formed P&O’s three-ship mid-1920s C-class group for the Australia trade, combining passenger accommodation with substantial refrigerated-cargo capacity and later diverging into very different wartime careers.",
+      [
+        { href: "/ships/ss-cathay-1924", label: "SS <em>Cathay</em>", tail: "P&amp;O · entered service 1925" },
+        { href: "/ships/ss-comorin", label: "SS <em>Comorin</em>", tail: "P&amp;O · 1925" },
+        { href: "/ships/ss-chitral", label: "SS <em>Chitral</em>", tail: "P&amp;O · 1925" }
+      ],
+      "P&O C-class sisters"
+    ),
+
     red_star_interwar: cluster(
       "Related Liners.",
       "Red Star Line ships tied to the line’s interwar and IMM-era Atlantic identity.",
@@ -1253,6 +1264,9 @@
     "ss-canberra": ["pando_flagships"],
     "ss-arcadia-1954": ["arcadia_iberia_pair"],
     "ss-iberia": ["arcadia_iberia_pair"],
+    "ss-cathay-1924": ["po_c_class_1925"],
+    "ss-comorin": ["po_c_class_1925"],
+    "ss-chitral": ["po_c_class_1925"],
 
     "ss-belgenland": ["red_star_interwar"],
     "ss-pennland": ["red_star_interwar"],
