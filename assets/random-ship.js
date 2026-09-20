@@ -247,6 +247,8 @@
 "/ships/ss-cleveland.html",
 "/ships/ss-chitral.html",
 "/ships/ss-cathay-1924.html",
+"/ships/ss-chitral.html",
+"/ships/ss-comorin.html",
 "/ships/ss-comorin.html",
 "/ships/ss-great-britain-1843.html",
 "/ships/ss-rochambeau.html",
