@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-19T07:16:14.033Z",
+  "generatedAt": "2026-09-20T03:32:53.724Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 313,
-    "shipGuides": 301,
+    "trackedShipHtmlFiles": 318,
+    "shipGuides": 306,
     "canonicalBuilders": 100,
-    "guidesWithBuilder": 301,
+    "guidesWithBuilder": 306,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 10,
     "guidesMissingLaunch": 2,
-    "builderVariantGroups": 33,
+    "builderVariantGroups": 35,
     "suspiciousLaunchDatesWithoutYear": 1
   },
   "missing": {
@@ -32,7 +32,7 @@
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 73,
+      "shipCount": 74,
       "firstLaunchYear": 1870,
       "lastLaunchYear": 1960,
       "locations": [
@@ -272,6 +272,7 @@
         "Harland & Wolff, Belfast · Yard No. 342",
         "Harland & Wolff, Belfast · yard no. 1005",
         "Harland & Wolff, Belfast · yard no. 142",
+        "Harland & Wolff, Belfast · yard no. 1476",
         "Harland & Wolff, Belfast · yard no. 1621",
         "Harland & Wolff, Belfast · yard no. 208",
         "Harland & Wolff, Belfast · yard no. 209",
@@ -315,7 +316,7 @@
         "Harland & Wolff, Govan · yard no. 649",
         "Harland & Wolff, Govan · yard no. 650"
       ],
-      "shipCount": 73
+      "shipCount": 74
     },
     {
       "id": "john-brown-and-company",
@@ -584,6 +585,19 @@
       "shipCount": 3
     },
     {
+      "id": "alexander-stephen-and-sons",
+      "name": "Alexander Stephen & Sons",
+      "names": [
+        "Alexander Stephen & Sons"
+      ],
+      "rawValues": [
+        "Alexander Stephen & Sons (Glasgow)",
+        "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)",
+        "Alexander Stephen & Sons, Govan · yard no. 504"
+      ],
+      "shipCount": 3
+    },
+    {
       "id": "alexander-stephen-and-sons-linthouse",
       "name": "Alexander Stephen & Sons, Linthouse",
       "names": [
@@ -619,6 +633,20 @@
       "rawValues": [
         "Ateliers et Chantiers de Saint-Nazaire Penhoët · yard P6",
         "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire"
+      ],
+      "shipCount": 3
+    },
+    {
+      "id": "barclay-curle-and-company",
+      "name": "Barclay, Curle & Company",
+      "names": [
+        "Barclay Curle & Co.",
+        "Barclay, Curle & Co."
+      ],
+      "rawValues": [
+        "Barclay Curle & Co., Glasgow",
+        "Barclay, Curle & Co., Glasgow · yard no. 467",
+        "Barclay, Curle & Co., Glasgow · yard no. 603"
       ],
       "shipCount": 3
     },
@@ -663,27 +691,15 @@
       "shipCount": 3
     },
     {
-      "id": "alexander-stephen-and-sons",
-      "name": "Alexander Stephen & Sons",
+      "id": "armstrong-whitworth-and-co",
+      "name": "Armstrong Whitworth & Co.",
       "names": [
-        "Alexander Stephen & Sons"
+        "Armstrong Whitworth",
+        "Armstrong, Whitworth & Co. Ltd."
       ],
       "rawValues": [
-        "Alexander Stephen & Sons (Glasgow)",
-        "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "barclay-curle-and-company",
-      "name": "Barclay, Curle & Company",
-      "names": [
-        "Barclay Curle & Co.",
-        "Barclay, Curle & Co."
-      ],
-      "rawValues": [
-        "Barclay Curle & Co., Glasgow",
-        "Barclay, Curle & Co., Glasgow · yard no. 467"
+        "Armstrong Whitworth, Newcastle-upon-Tyne",
+        "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970"
       ],
       "shipCount": 2
     },
@@ -817,6 +833,19 @@
       "shipCount": 2
     },
     {
+      "id": "vickers-ltd",
+      "name": "Vickers Ltd.",
+      "names": [
+        "Vickers Ltd",
+        "Vickers Ltd."
+      ],
+      "rawValues": [
+        "Vickers Ltd, Barrow-in-Furness",
+        "Vickers Ltd., Barrow-in-Furness · yard no. 498"
+      ],
+      "shipCount": 2
+    },
+    {
       "id": "william-cramp-and-sons",
       "name": "William Cramp & Sons",
       "names": [
@@ -846,17 +875,6 @@
       ],
       "rawValues": [
         "A.G. Weser / Deschimag, Bremen · yard no. 872"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "armstrong-whitworth-and-co",
-      "name": "Armstrong Whitworth & Co.",
-      "names": [
-        "Armstrong Whitworth"
-      ],
-      "rawValues": [
-        "Armstrong Whitworth, Newcastle-upon-Tyne"
       ],
       "shipCount": 1
     },
@@ -1466,17 +1484,6 @@
       "shipCount": 1
     },
     {
-      "id": "vickers-ltd",
-      "name": "Vickers Ltd",
-      "names": [
-        "Vickers Ltd"
-      ],
-      "rawValues": [
-        "Vickers Ltd, Barrow-in-Furness"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "vickers-armstrongs-shipbuilders-ltd",
       "name": "Vickers-Armstrongs (Shipbuilders) Ltd.",
       "names": [
@@ -1831,6 +1838,20 @@
       ]
     },
     {
+      "name": "RMS Antonia (1922)",
+      "path": "ships/rms-antonia.html",
+      "url": "/ships/rms-antonia",
+      "launchYear": "1921",
+      "builderRaw": "Vickers Ltd., Barrow-in-Furness · yard no. 498",
+      "builders": [
+        {
+          "id": "vickers-ltd",
+          "name": "Vickers Ltd.",
+          "raw": "Vickers Ltd., Barrow-in-Furness · yard no. 498"
+        }
+      ]
+    },
+    {
       "name": "RMS Aquitania",
       "path": "ships/rms-aquitania.html",
       "url": "/ships/rms-aquitania",
@@ -1897,6 +1918,20 @@
           "id": "swan-hunter-and-wigham-richardson",
           "name": "Swan Hunter & Wigham Richardson",
           "raw": "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965"
+        }
+      ]
+    },
+    {
+      "name": "RMS Ausonia (1922)",
+      "path": "ships/rms-ausonia.html",
+      "url": "/ships/rms-ausonia",
+      "launchYear": "1921",
+      "builderRaw": "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970",
+      "builders": [
+        {
+          "id": "armstrong-whitworth-and-co",
+          "name": "Armstrong Whitworth & Co.",
+          "raw": "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970"
         }
       ]
     },
@@ -3362,6 +3397,20 @@
       ]
     },
     {
+      "name": "SS Chitral (1925)",
+      "path": "ships/ss-chitral.html",
+      "url": "/ships/ss-chitral",
+      "launchYear": "1925",
+      "builderRaw": "Alexander Stephen & Sons, Govan · yard no. 504",
+      "builders": [
+        {
+          "id": "alexander-stephen-and-sons",
+          "name": "Alexander Stephen & Sons",
+          "raw": "Alexander Stephen & Sons, Govan · yard no. 504"
+        }
+      ]
+    },
+    {
       "name": "SS City of New York (1888)",
       "path": "ships/ss-city-of-new-york-1888.html",
       "url": "/ships/ss-city-of-new-york-1888",
@@ -3442,6 +3491,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS Comorin (1925)",
+      "path": "ships/ss-comorin.html",
+      "url": "/ships/ss-comorin",
+      "launchYear": "1924",
+      "builderRaw": "Barclay, Curle & Co., Glasgow · yard no. 603",
+      "builders": [
+        {
+          "id": "barclay-curle-and-company",
+          "name": "Barclay, Curle & Company",
+          "raw": "Barclay, Curle & Co., Glasgow · yard no. 603"
         }
       ]
     },
@@ -4044,6 +4107,20 @@
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg · yard no. 473"
+        }
+      ]
+    },
+    {
+      "name": "SS Iberia (1954)",
+      "path": "ships/ss-iberia.html",
+      "url": "/ships/ss-iberia",
+      "launchYear": "1954",
+      "builderRaw": "Harland & Wolff, Belfast · yard no. 1476",
+      "builders": [
+        {
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast · yard no. 1476"
         }
       ]
     },
