@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T10:08:25.000Z",
+  "generatedAt": "2026-09-20T03:35:21.271Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -12,9 +12,9 @@
   },
   "summary": {
     "shipGuides": 300,
-    "relationshipCovered": 262,
-    "relationshipUncovered": 38,
-    "relationshipCoveragePct": 87.3,
+    "relationshipCovered": 263,
+    "relationshipUncovered": 37,
+    "relationshipCoveragePct": 87.7,
     "canonicalOperators": 83,
     "thinOperators": 59,
     "canonicalYardLocations": 59,
@@ -410,15 +410,6 @@
         "operator": "Norddeutscher Lloyd (North German Lloyd)",
         "signalStrength": "high-context",
         "rationale": "Unlinked ship within a well-represented operator group of 18 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Cathay",
-        "slug": "ss-cathay-1924",
-        "url": "/ships/ss-cathay-1924",
-        "operator": "P&O",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 7 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -1055,21 +1046,6 @@
         "coveragePct": 94.4
       },
       {
-        "name": "P&O",
-        "total": 7,
-        "covered": 6,
-        "uncovered": [
-          {
-            "name": "SS Cathay",
-            "slug": "ss-cathay-1924",
-            "url": "/ships/ss-cathay-1924",
-            "launchYear": "1924"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 85.7
-      },
-      {
         "name": "Allan Line",
         "total": 3,
         "covered": 2,
@@ -1327,6 +1303,14 @@
       },
       {
         "name": "Orient Line",
+        "total": 7,
+        "covered": 7,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "P&O",
         "total": 7,
         "covered": 7,
         "uncovered": [],
@@ -1842,9 +1826,9 @@
       {
         "era": "Interwar recovery",
         "shipCount": 70,
-        "relationshipCovered": 66,
-        "relationshipUncovered": 4,
-        "relationshipCoveragePct": 94.3
+        "relationshipCovered": 67,
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 95.7
       },
       {
         "era": "Edwardian / pre-war peak",
@@ -1921,9 +1905,9 @@
       {
         "decade": "1920s",
         "shipCount": 70,
-        "relationshipCovered": 66,
-        "relationshipUncovered": 4,
-        "relationshipCoveragePct": 94.3
+        "relationshipCovered": 67,
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 95.7
       },
       {
         "decade": "1930s",
@@ -2025,13 +2009,6 @@
       "url": "/ships/ss-brasilia",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1897"
-    },
-    {
-      "name": "SS Cathay",
-      "slug": "ss-cathay-1924",
-      "url": "/ships/ss-cathay-1924",
-      "operator": "P&O",
-      "launchYear": "1924"
     },
     {
       "name": "SS Chicago (1908)",
