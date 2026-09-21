@@ -325,6 +325,18 @@
      Clusters
   ========================= */
   const CLUSTERS = {
+    champollion_mariette: cluster(
+      "Messageries Maritimes Levant Sisters.",
+      "The sister ships built for the Marseille–Alexandria–Beirut service; Champollion was extensively rebuilt in 1934 while Mariette Pacha retained the original form.",
+      [
+        { href: "/ships/ss-champollion", label: "SS <em>Champollion</em>", tail: "entered service 1925 · rebuilt 1934" },
+        { href: "/ships/ss-mariette-pacha", label: "SS <em>Mariette Pacha</em>", tail: "entered service 1926 · original configuration retained" }
+      ],
+      "Messageries Maritimes Levant sisters",
+      true
+    ),
+
+
     nzsc_rangi_sisters: cluster(
       "New Zealand Shipping Company Sisters.",
       "The 1929 John Brown motor-liner sisters built for the Britain–New Zealand route via the Panama Canal.",
@@ -1150,6 +1162,10 @@
      Slug -> cluster keys
   ========================= */
   const MAP = {
+    "ss-champollion": ["champollion_mariette"],
+    "ss-mariette-pacha": ["champollion_mariette"],
+
+
     "rms-rangitiki": ["nzsc_rangi_sisters"],
     "rms-rangitata": ["nzsc_rangi_sisters"],
     "rms-rangitane": ["nzsc_rangi_sisters"],
