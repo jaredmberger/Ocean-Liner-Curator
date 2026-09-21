@@ -191,6 +191,7 @@
 "/ships/queen-elizabeth-2.html",
 "/ships/rms-queen-mary.html",
 "/ships/rms-rangitiki.html",
+"/ships/rms-rangitata.html",
 "/ships/rms-queen-mary-2.html",
 "/ships/ss-queen-of-bermuda.html",
 "/ships/ss-raffaello-1965.html",
