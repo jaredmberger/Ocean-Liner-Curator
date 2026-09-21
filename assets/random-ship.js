@@ -34,6 +34,7 @@
 "/ships/rms-baltic.html",
 "/ships/ss-belgenland.html",
 "/ships/ms-batory.html",
+"/ships/ms-pilsudski.html",
 "/ships/rms-berengaria.html",
 "/ships/ss-bergensfjord.html",
 "/ships/ss-berlin-1909.html",
