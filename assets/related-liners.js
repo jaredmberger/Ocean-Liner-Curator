@@ -325,6 +325,18 @@
      Clusters
   ========================= */
   const CLUSTERS = {
+    mm_far_east_motor_liners: cluster(
+      "Messageries Maritimes Far East Motor Liners.",
+      "Closely related interwar motor liners built for the Marseille–Far East route, with dramatically different careers.",
+      [
+        { href: "/ships/ms-georges-philippar", label: "MS <em>Georges Philippar</em>", tail: "entered service 1932 · lost on first commercial round voyage" },
+        { href: "/ships/ms-felix-roussel", label: "MS <em>Félix Roussel</em>", tail: "entered service 1931 · served through 1955 with Messageries Maritimes" }
+      ],
+      "Messageries Maritimes Far East motor liners",
+      true
+    ),
+
+
     champollion_mariette: cluster(
       "Messageries Maritimes Levant Sisters.",
       "The sister ships built for the Marseille–Alexandria–Beirut service; Champollion was extensively rebuilt in 1934 while Mariette Pacha retained the original form.",
@@ -1162,6 +1174,10 @@
      Slug -> cluster keys
   ========================= */
   const MAP = {
+    "ms-georges-philippar": ["mm_far_east_motor_liners"],
+    "ms-felix-roussel": ["mm_far_east_motor_liners"],
+
+
     "ss-champollion": ["champollion_mariette"],
     "ss-mariette-pacha": ["champollion_mariette"],
 
