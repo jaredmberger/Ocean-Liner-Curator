@@ -267,6 +267,7 @@
 "/ships/ss-bothnia.html",
 "/ships/ss-cuba.html",
 "/ships/ss-drottningholm.html",
+"/ships/ms-felix-roussel.html",
 "/ships/ss-finland.html",
 "/ships/ss-gothic-white-star-line.html",
 "/ships/ss-macedonia.html",
