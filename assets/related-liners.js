@@ -330,7 +330,8 @@
       "The 1929 John Brown motor-liner sisters built for the Britain–New Zealand route via the Panama Canal.",
       [
         { href: "/ships/rms-rangitiki", label: "RMS <em>Rangitiki</em>", tail: "entered service 1929" },
-        { href: "/ships/rms-rangitata", label: "RMS <em>Rangitata</em>", tail: "entered service 1929" }
+        { href: "/ships/rms-rangitata", label: "RMS <em>Rangitata</em>", tail: "entered service 1929" },
+        { href: "/ships/rms-rangitane", label: "RMS <em>Rangitane</em>", tail: "entered service 1929 · lost 1940" }
       ],
       "Rangitiki-class sisters",
       true
@@ -1151,6 +1152,7 @@
   const MAP = {
     "rms-rangitiki": ["nzsc_rangi_sisters"],
     "rms-rangitata": ["nzsc_rangi_sisters"],
+    "rms-rangitane": ["nzsc_rangi_sisters"],
 
 
     "ms-pilsudski": ["polish_interwar_pair"],
