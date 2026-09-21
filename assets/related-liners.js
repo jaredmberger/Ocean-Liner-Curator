@@ -325,6 +325,18 @@
      Clusters
   ========================= */
   const CLUSTERS = {
+    polish_interwar_pair: cluster(
+      "Polish Transatlantic Sisters.",
+      "Gdynia-America Line’s modern interwar sister ships, built together at Monfalcone for Poland’s North Atlantic service.",
+      [
+        { href: "/ships/ms-pilsudski", label: "MS <em>Piłsudski</em>", tail: "entered service 1935 · lost 1939" },
+        { href: "/ships/ms-batory", label: "MS <em>Batory</em>", tail: "entered service 1936 · served until 1969" }
+      ],
+      "Gdynia-America Line sisters",
+      true
+    ),
+
+
     imperator_class: cluster(
       "Related Liners.",
       "Hamburg America Line’s “Imperator-class” trio—later redistributed after World War I.",
@@ -1125,6 +1137,10 @@
      Slug -> cluster keys
   ========================= */
   const MAP = {
+    "ms-pilsudski": ["polish_interwar_pair"],
+    "ms-batory": ["polish_interwar_pair"],
+
+
     "ss-imperator": ["imperator_class", "hapag_ballin_group"],
     "ss-vaterland": ["imperator_class"],
     "ss-bismarck-1914": ["imperator_class"],
