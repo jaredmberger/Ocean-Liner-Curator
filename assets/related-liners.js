@@ -572,6 +572,17 @@
       "Swedish American Line ships"
     ),
 
+    netherland_line_east_indies: cluster(
+      "Dutch East Indies Liners.",
+      "Major Netherland Line motor liners built for the long Netherlands–Dutch East Indies passenger route, linking interwar colonial service with wartime and postwar transformation.",
+      [
+        { href: "/ships/ss-johan-van-oldenbarnevelt", label: "MS <em>Johan van Oldenbarnevelt</em>", tail: "Netherland Line · 1930" },
+        { href: "/ships/ss-marnix-van-st-aldegonde", label: "MS <em>Marnix van St Aldegonde</em>", tail: "Netherland Line · 1930" },
+        { href: "/ships/ms-oranje", label: "MS <em>Oranje</em>", tail: "Netherland Line · 1939" }
+      ],
+      "Netherland Line East Indies liners"
+    ),
+
     holland_america_interwar: cluster(
       "Related Liners.",
       "Holland America Line ships associated with interwar rebuilding, long-haul Atlantic service, and the line’s evolving flagship profile.",
@@ -1201,6 +1212,10 @@
     "asama-maru-1929": ["nyk_pacific_trio"],
     "tatsuta-maru-1929": ["nyk_pacific_trio"],
     "nyk-hikawa-maru": ["nyk_pacific_trio"],
+
+    "ss-johan-van-oldenbarnevelt": ["netherland_line_east_indies"],
+    "ss-marnix-van-st-aldegonde": ["netherland_line_east_indies"],
+    "ms-oranje": ["netherland_line_east_indies"],
 
     "ms-gripsholm-1925": ["swedish_american_diesel"],
     "ms-kungsholm-1928": ["swedish_american_diesel"],
