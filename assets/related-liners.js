@@ -325,6 +325,18 @@
      Clusters
   ========================= */
   const CLUSTERS = {
+    nzsc_rangi_sisters: cluster(
+      "New Zealand Shipping Company Sisters.",
+      "The 1929 John Brown motor-liner sisters built for the Britain–New Zealand route via the Panama Canal.",
+      [
+        { href: "/ships/rms-rangitiki", label: "RMS <em>Rangitiki</em>", tail: "entered service 1929" },
+        { href: "/ships/rms-rangitata", label: "RMS <em>Rangitata</em>", tail: "entered service 1929" }
+      ],
+      "Rangitiki-class sisters",
+      true
+    ),
+
+
     polish_interwar_pair: cluster(
       "Polish Transatlantic Sisters.",
       "Gdynia-America Line’s modern interwar sister ships, built together at Monfalcone for Poland’s North Atlantic service.",
@@ -1137,6 +1149,10 @@
      Slug -> cluster keys
   ========================= */
   const MAP = {
+    "rms-rangitiki": ["nzsc_rangi_sisters"],
+    "rms-rangitata": ["nzsc_rangi_sisters"],
+
+
     "ms-pilsudski": ["polish_interwar_pair"],
     "ms-batory": ["polish_interwar_pair"],
 
