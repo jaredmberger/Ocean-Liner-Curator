@@ -100,6 +100,7 @@
 "/ships/rms-franconia-1910.html",
 "/ships/rms-franconia.html",
 "/ships/ss-george-washington.html",
+"/ships/ms-georges-philippar.html",
 "/ships/mv-georgic.html",
 "/ships/ss-germanic.html",
 "/ships/ss-giulio-cesare.html",
