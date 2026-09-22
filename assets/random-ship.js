@@ -14,6 +14,7 @@
 "/ships/rms-antonia.html",
 "/ships/rms-ausonia.html",
 "/ships/rms-andes-1939.html",
+"/ships/ss-andre-lebon.html",
 "/ships/ss-andrea-doria.html",
 "/ships/ss-ascania-1911.html",
 "/ships/rms-ascania.html",
