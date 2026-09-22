@@ -172,6 +172,7 @@
 "/ships/rms-olympic.html",
 "/ships/ms-oranje.html",
 "/ships/ss-orama.html",
+"/ships/rms-orcades.html",
 "/ships/ss-orford.html",
 "/ships/ss-oriana.html",
 "/ships/ss-orion.html",
