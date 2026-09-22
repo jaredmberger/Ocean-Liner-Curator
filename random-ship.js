@@ -31,6 +31,7 @@
     "/ships/rms-asturias-1908",
     "/ships/ss-asturias-1925",
     "/ships/ss-athenic",
+    "/ships/ss-athos-ii",
     "/ships/ss-atlantic-1873",
     "/ships/athlone-castle",
     "/ships/ms-augustus",

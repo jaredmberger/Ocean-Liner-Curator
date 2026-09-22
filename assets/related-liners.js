@@ -325,6 +325,17 @@
      Clusters
   ========================= */
   const CLUSTERS = {
+    mm_american_transports: cluster(
+      "Messageries Maritimes Liners in American Wartime Service.",
+      "French passenger liners employed in American military transport under different arrangements: Athos II through the War Shipping Administration, and Maréchal Joffre as the commissioned USS Rochambeau. This is a service connection, not a sister-ship grouping.",
+      [
+        { href: "/ships/ss-athos-ii", label: "SS <em>Athos II</em>", tail: "WSA troop transport allocated to the U.S. Army" },
+        { href: "/ships/ss-marechal-joffre", label: "SS <em>Maréchal Joffre</em>", tail: "USS Rochambeau (AP-63) · U.S. Navy transport" }
+      ],
+      "Messageries Maritimes liners in American wartime service",
+      true
+    ),
+
     georges_philippar_rescue_chain: cluster(
       "Georges Philippar Rescue Connection.",
       "André Lebon received hundreds of survivors rescued from the burning Georges Philippar by the Soviet tanker Sovietskaïa Neft and carried them to Djibouti.",
@@ -1187,6 +1198,9 @@
      Slug -> cluster keys
   ========================= */
   const MAP = {
+    "ss-athos-ii": ["mm_american_transports"],
+    "ss-marechal-joffre": ["mm_american_transports"],
+
     "ss-andre-lebon": ["georges_philippar_rescue_chain"],
 
     "ms-georges-philippar": ["mm_far_east_motor_liners", "georges_philippar_rescue_chain"],
