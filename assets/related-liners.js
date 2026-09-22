@@ -330,7 +330,8 @@
       "Closely related interwar motor liners built for the Marseille–Far East route, with dramatically different careers.",
       [
         { href: "/ships/ms-georges-philippar", label: "MS <em>Georges Philippar</em>", tail: "entered service 1932 · lost on first commercial round voyage" },
-        { href: "/ships/ms-felix-roussel", label: "MS <em>Félix Roussel</em>", tail: "entered service 1931 · served through 1955 with Messageries Maritimes" }
+        { href: "/ships/ms-felix-roussel", label: "MS <em>Félix Roussel</em>", tail: "entered service 1931 · served through 1955 with Messageries Maritimes" },
+        { href: "/ships/ms-aramis", label: "MS <em>Aramis</em>", tail: "entered service 1932 · later Teia Maru · lost 1944" }
       ],
       "Messageries Maritimes Far East motor liners",
       true
@@ -1176,6 +1177,7 @@
   const MAP = {
     "ms-georges-philippar": ["mm_far_east_motor_liners"],
     "ms-felix-roussel": ["mm_far_east_motor_liners"],
+    "ms-aramis": ["mm_far_east_motor_liners"],
 
 
     "ss-champollion": ["champollion_mariette"],

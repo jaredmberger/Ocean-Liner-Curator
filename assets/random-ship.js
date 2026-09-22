@@ -18,6 +18,7 @@
 "/ships/ss-ascania-1911.html",
 "/ships/rms-ascania.html",
 "/ships/rms-aquitania.html",
+"/ships/ms-aramis.html",
 "/ships/ss-arabic.html",
 "/ships/ss-arabic-1920.html",
 "/ships/ss-arcadia-1954.html",
