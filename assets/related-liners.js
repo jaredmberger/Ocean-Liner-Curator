@@ -991,9 +991,10 @@
 
     orient_interwar: cluster(
       "Related Liners.",
-      "Orient Line ships associated with the interwar England–Australia service and the line’s modernized passenger fleet.",
+      "Orient Line ships associated with the interwar England–Australia service and the line’s modernized passenger fleet. Orion and Orcades were sister ships and the modern core of this group.",
       [
         { href: "/ships/ss-orion", label: "SS <em>Orion</em>", tail: "Orient Line · 1935" },
+        { href: "/ships/rms-orcades", label: "RMS <em>Orcades</em>", tail: "Orient Line · 1937 · sister of Orion" },
         { href: "/ships/ss-orontes", label: "SS <em>Orontes</em>", tail: "Orient Line · 1929" },
         { href: "/ships/ss-otranto", label: "SS <em>Otranto</em>", tail: "Orient Line · 1925" },
         { href: "/ships/ss-oronsay", label: "SS <em>Oronsay</em>", tail: "Orient Line · 1925" }
@@ -1397,6 +1398,7 @@
     "ss-duchess-of-york": ["duchess_quartet", "canadian_pacific_atlantic_interwar", "canadian_pacific_duchess_empress"],
     "ss-duchess-of-atholl": ["duchess_quartet", "canadian_pacific_atlantic_interwar", "canadian_pacific_duchess_empress"],
 
+    "rms-orcades": ["orient_interwar"],
     "ss-orion": ["orient_interwar"],
     "ss-orontes": ["orient_interwar"],
     "ss-otranto": ["orient_interwar"],
