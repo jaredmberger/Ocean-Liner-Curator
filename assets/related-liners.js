@@ -325,6 +325,18 @@
      Clusters
   ========================= */
   const CLUSTERS = {
+    georges_philippar_rescue_chain: cluster(
+      "Georges Philippar Rescue Connection.",
+      "André Lebon received hundreds of survivors rescued from the burning Georges Philippar by the Soviet tanker Sovietskaïa Neft and carried them to Djibouti.",
+      [
+        { href: "/ships/ms-georges-philippar", label: "MS <em>Georges Philippar</em>", tail: "lost by fire in 1932" },
+        { href: "/ships/ss-andre-lebon", label: "SS <em>André Lebon</em>", tail: "carried transferred survivors to Djibouti" }
+      ],
+      "Georges Philippar rescue connection",
+      true
+    ),
+
+
     mm_far_east_motor_liners: cluster(
       "Messageries Maritimes Far East Motor Liners.",
       "Closely related interwar motor liners built for the Marseille–Far East route, with dramatically different careers.",
@@ -1175,7 +1187,9 @@
      Slug -> cluster keys
   ========================= */
   const MAP = {
-    "ms-georges-philippar": ["mm_far_east_motor_liners"],
+    "ss-andre-lebon": ["georges_philippar_rescue_chain"],
+
+    "ms-georges-philippar": ["mm_far_east_motor_liners", "georges_philippar_rescue_chain"],
     "ms-felix-roussel": ["mm_far_east_motor_liners"],
     "ms-aramis": ["mm_far_east_motor_liners"],
 
