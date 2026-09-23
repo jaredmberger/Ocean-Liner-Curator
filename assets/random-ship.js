@@ -122,6 +122,7 @@
 "/ships/ss-imperator.html",
 "/ships/ss-ionic.html",
 "/ships/rms-ivernia.html",
+"/ships/mv-jean-laborde.html",
 "/ships/ss-johan-van-oldenbarnevelt.html",
 "/ships/ss-kaiser-wilhelm-der-grosse.html",
 "/ships/ss-kaiser-wilhelm-ii.html",
