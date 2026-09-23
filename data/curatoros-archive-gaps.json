@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T08:51:33.676Z",
+  "generatedAt": "2026-09-23T09:06:10.699Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -12,9 +12,9 @@
   },
   "summary": {
     "shipGuides": 327,
-    "relationshipCovered": 296,
-    "relationshipUncovered": 31,
-    "relationshipCoveragePct": 90.5,
+    "relationshipCovered": 303,
+    "relationshipUncovered": 24,
+    "relationshipCoveragePct": 92.7,
     "canonicalOperators": 87,
     "thinOperators": 59,
     "canonicalYardLocations": 62,
@@ -188,60 +188,6 @@
     "relationshipResearchCandidates": [
       {
         "type": "relationship-gap",
-        "ship": "SS Chicago (1908)",
-        "slug": "ss-chicago-1908",
-        "url": "/ships/ss-chicago-1908",
-        "operator": "Compagnie Générale Transatlantique (French Line)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Espagne",
-        "slug": "ss-espagne",
-        "url": "/ships/ss-espagne",
-        "operator": "Compagnie Générale Transatlantique (French Line)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Flandre",
-        "slug": "ss-flandre",
-        "url": "/ships/ss-flandre",
-        "operator": "Compagnie Générale Transatlantique (French Line)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Lafayette (1915)",
-        "slug": "ss-lafayette",
-        "url": "/ships/ss-lafayette",
-        "operator": "Compagnie Générale Transatlantique (French Line)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Napoleon III",
-        "slug": "ss-napoleon-iii",
-        "url": "/ships/ss-napoleon-iii",
-        "operator": "Compagnie Générale Transatlantique (French Line)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Rochambeau",
-        "slug": "ss-rochambeau",
-        "url": "/ships/ss-rochambeau",
-        "operator": "Compagnie Générale Transatlantique (French Line)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "SS Brasilia",
         "slug": "ss-brasilia",
         "url": "/ships/ss-brasilia",
@@ -275,24 +221,6 @@
         "operator": "Hamburg America Line (HAPAG)",
         "signalStrength": "high-context",
         "rationale": "Unlinked ship within a well-represented operator group of 23 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "RMS Scythia",
-        "slug": "rms-scythia",
-        "url": "/ships/rms-scythia",
-        "operator": "Cunard Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 36 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Cuba",
-        "slug": "ss-cuba",
-        "url": "/ships/ss-cuba",
-        "operator": "Cunard Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 36 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -341,12 +269,21 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Prinz Friedrich Wilhelm",
-        "slug": "ss-prinz-friedrich-wilhelm",
-        "url": "/ships/ss-prinz-friedrich-wilhelm",
-        "operator": "Norddeutscher Lloyd (North German Lloyd)",
+        "ship": "SS Cuba",
+        "slug": "ss-cuba",
+        "url": "/ships/ss-cuba",
+        "operator": "Cunard Line",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 18 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 36 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Napoleon III",
+        "slug": "ss-napoleon-iii",
+        "url": "/ships/ss-napoleon-iii",
+        "operator": "Compagnie Générale Transatlantique (French Line)",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -767,51 +704,6 @@
   "coverage": {
     "operators": [
       {
-        "name": "Compagnie Générale Transatlantique (French Line)",
-        "total": 16,
-        "covered": 10,
-        "uncovered": [
-          {
-            "name": "SS Chicago (1908)",
-            "slug": "ss-chicago-1908",
-            "url": "/ships/ss-chicago-1908",
-            "launchYear": "1907"
-          },
-          {
-            "name": "SS Espagne",
-            "slug": "ss-espagne",
-            "url": "/ships/ss-espagne",
-            "launchYear": "1909"
-          },
-          {
-            "name": "SS Flandre",
-            "slug": "ss-flandre",
-            "url": "/ships/ss-flandre",
-            "launchYear": "1913"
-          },
-          {
-            "name": "SS Lafayette (1915)",
-            "slug": "ss-lafayette",
-            "url": "/ships/ss-lafayette",
-            "launchYear": "1914"
-          },
-          {
-            "name": "SS Napoleon III",
-            "slug": "ss-napoleon-iii",
-            "url": "/ships/ss-napoleon-iii",
-            "launchYear": "1865"
-          },
-          {
-            "name": "SS Rochambeau",
-            "slug": "ss-rochambeau",
-            "url": "/ships/ss-rochambeau",
-            "launchYear": "1911"
-          }
-        ],
-        "uncoveredCount": 6,
-        "coveragePct": 62.5
-      },
-      {
         "name": "Hamburg America Line (HAPAG)",
         "total": 23,
         "covered": 19,
@@ -843,27 +735,6 @@
         ],
         "uncoveredCount": 4,
         "coveragePct": 82.6
-      },
-      {
-        "name": "Cunard Line",
-        "total": 36,
-        "covered": 34,
-        "uncovered": [
-          {
-            "name": "RMS Scythia",
-            "slug": "rms-scythia",
-            "url": "/ships/rms-scythia",
-            "launchYear": "1920"
-          },
-          {
-            "name": "SS Cuba",
-            "slug": "ss-cuba",
-            "url": "/ships/ss-cuba",
-            "launchYear": "1864"
-          }
-        ],
-        "uncoveredCount": 2,
-        "coveragePct": 94.4
       },
       {
         "name": "Anchor Line",
@@ -923,19 +794,34 @@
         "coveragePct": 97.4
       },
       {
-        "name": "Norddeutscher Lloyd (North German Lloyd)",
-        "total": 18,
-        "covered": 17,
+        "name": "Cunard Line",
+        "total": 36,
+        "covered": 35,
         "uncovered": [
           {
-            "name": "SS Prinz Friedrich Wilhelm",
-            "slug": "ss-prinz-friedrich-wilhelm",
-            "url": "/ships/ss-prinz-friedrich-wilhelm",
-            "launchYear": "1907"
+            "name": "SS Cuba",
+            "slug": "ss-cuba",
+            "url": "/ships/ss-cuba",
+            "launchYear": "1864"
           }
         ],
         "uncoveredCount": 1,
-        "coveragePct": 94.4
+        "coveragePct": 97.2
+      },
+      {
+        "name": "Compagnie Générale Transatlantique (French Line)",
+        "total": 16,
+        "covered": 15,
+        "uncovered": [
+          {
+            "name": "SS Napoleon III",
+            "slug": "ss-napoleon-iii",
+            "url": "/ships/ss-napoleon-iii",
+            "launchYear": "1865"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 93.8
       },
       {
         "name": "Allan Line",
@@ -1131,6 +1017,14 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 0
+      },
+      {
+        "name": "Norddeutscher Lloyd (North German Lloyd)",
+        "total": 18,
+        "covered": 18,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
       },
       {
         "name": "P&O",
@@ -1694,9 +1588,9 @@
       {
         "era": "First World War era",
         "shipCount": 15,
-        "relationshipCovered": 13,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 86.7
+        "relationshipCovered": 15,
+        "relationshipUncovered": 0,
+        "relationshipCoveragePct": 100
       },
       {
         "era": "Postwar liner renaissance",
@@ -1729,16 +1623,16 @@
       {
         "era": "Interwar recovery",
         "shipCount": 80,
-        "relationshipCovered": 78,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 97.5
+        "relationshipCovered": 79,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 98.8
       },
       {
         "era": "Edwardian / pre-war peak",
         "shipCount": 86,
-        "relationshipCovered": 72,
-        "relationshipUncovered": 14,
-        "relationshipCoveragePct": 83.7
+        "relationshipCovered": 76,
+        "relationshipUncovered": 10,
+        "relationshipCoveragePct": 88.4
       }
     ],
     "decades": [
@@ -1794,23 +1688,23 @@
       {
         "decade": "1900s",
         "shipCount": 66,
-        "relationshipCovered": 56,
-        "relationshipUncovered": 10,
-        "relationshipCoveragePct": 84.8
+        "relationshipCovered": 58,
+        "relationshipUncovered": 8,
+        "relationshipCoveragePct": 87.9
       },
       {
         "decade": "1910s",
         "shipCount": 35,
-        "relationshipCovered": 29,
-        "relationshipUncovered": 6,
-        "relationshipCoveragePct": 82.9
+        "relationshipCovered": 33,
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 94.3
       },
       {
         "decade": "1920s",
         "shipCount": 80,
-        "relationshipCovered": 78,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 97.5
+        "relationshipCovered": 79,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 98.8
       },
       {
         "decade": "1930s",
@@ -1858,13 +1752,6 @@
       "launchYear": "1938"
     },
     {
-      "name": "RMS Scythia",
-      "slug": "rms-scythia",
-      "url": "/ships/rms-scythia",
-      "operator": "Cunard Line",
-      "launchYear": "1920"
-    },
-    {
       "name": "SS Arctic",
       "slug": "ss-arctic",
       "url": "/ships/ss-arctic",
@@ -1891,13 +1778,6 @@
       "url": "/ships/ss-brasilia",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1897"
-    },
-    {
-      "name": "SS Chicago (1908)",
-      "slug": "ss-chicago-1908",
-      "url": "/ships/ss-chicago-1908",
-      "operator": "Compagnie Générale Transatlantique (French Line)",
-      "launchYear": "1907"
     },
     {
       "name": "SS Cleveland",
@@ -1940,27 +1820,6 @@
       "url": "/ships/ss-eastland",
       "operator": "Michigan Steamship Company",
       "launchYear": "1903"
-    },
-    {
-      "name": "SS Espagne",
-      "slug": "ss-espagne",
-      "url": "/ships/ss-espagne",
-      "operator": "Compagnie Générale Transatlantique (French Line)",
-      "launchYear": "1909"
-    },
-    {
-      "name": "SS Flandre",
-      "slug": "ss-flandre",
-      "url": "/ships/ss-flandre",
-      "operator": "Compagnie Générale Transatlantique (French Line)",
-      "launchYear": "1913"
-    },
-    {
-      "name": "SS Lafayette (1915)",
-      "slug": "ss-lafayette",
-      "url": "/ships/ss-lafayette",
-      "operator": "Compagnie Générale Transatlantique (French Line)",
-      "launchYear": "1914"
     },
     {
       "name": "SS Lake Michigan",
@@ -2038,20 +1897,6 @@
       "url": "/ships/ss-president-lincoln",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1903"
-    },
-    {
-      "name": "SS Prinz Friedrich Wilhelm",
-      "slug": "ss-prinz-friedrich-wilhelm",
-      "url": "/ships/ss-prinz-friedrich-wilhelm",
-      "operator": "Norddeutscher Lloyd (North German Lloyd)",
-      "launchYear": "1907"
-    },
-    {
-      "name": "SS Rochambeau",
-      "slug": "ss-rochambeau",
-      "url": "/ships/ss-rochambeau",
-      "operator": "Compagnie Générale Transatlantique (French Line)",
-      "launchYear": "1911"
     },
     {
       "name": "SS Vestris",
