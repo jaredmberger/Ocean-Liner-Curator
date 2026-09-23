@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T02:38:21.089Z",
+  "generatedAt": "2026-09-23T07:55:38.935Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 300,
-    "guidesWithServiceStart": 295,
-    "guidesWithExplicitServiceEnd": 236,
+    "shipGuides": 327,
+    "guidesWithServiceStart": 321,
+    "guidesWithExplicitServiceEnd": 257,
     "eras": 10,
     "decades": 15
   },
@@ -620,7 +620,7 @@
     },
     {
       "name": "Interwar recovery",
-      "shipCount": 70,
+      "shipCount": 80,
       "ships": [
         {
           "name": "Asama Maru",
@@ -686,6 +686,13 @@
           "serviceEndYear": null
         },
         {
+          "name": "RMS Antonia (1922)",
+          "path": "ships/rms-antonia.html",
+          "url": "/ships/rms-antonia",
+          "serviceStartYear": "1922",
+          "serviceEndYear": "1948"
+        },
+        {
           "name": "RMS Arundel Castle (1921)",
           "path": "ships/rms-arundel-castle-1921.html",
           "url": "/ships/rms-arundel-castle-1921",
@@ -698,6 +705,13 @@
           "url": "/ships/rms-ascania",
           "serviceStartYear": "1925",
           "serviceEndYear": "1957"
+        },
+        {
+          "name": "RMS Ausonia (1922)",
+          "path": "ships/rms-ausonia.html",
+          "url": "/ships/rms-ausonia",
+          "serviceStartYear": "1922",
+          "serviceEndYear": "1965"
         },
         {
           "name": "RMS Caledonia",
@@ -740,6 +754,20 @@
           "url": "/ships/rms-majestic",
           "serviceStartYear": "1922",
           "serviceEndYear": "1939"
+        },
+        {
+          "name": "RMS Rangitata (1929)",
+          "path": "ships/rms-rangitata.html",
+          "url": "/ships/rms-rangitata",
+          "serviceStartYear": "1929",
+          "serviceEndYear": "1962"
+        },
+        {
+          "name": "RMS Rangitiki (1929)",
+          "path": "ships/rms-rangitiki.html",
+          "url": "/ships/rms-rangitiki",
+          "serviceStartYear": "1929",
+          "serviceEndYear": "1962"
         },
         {
           "name": "RMS Scythia",
@@ -791,6 +819,13 @@
           "serviceEndYear": "1957"
         },
         {
+          "name": "SS Athos II (1927)",
+          "path": "ships/ss-athos-ii.html",
+          "url": "/ships/ss-athos-ii",
+          "serviceStartYear": "1927",
+          "serviceEndYear": "1959"
+        },
+        {
           "name": "SS Bismarck (1914)",
           "path": "ships/ss-bismarck-1914.html",
           "url": "/ships/ss-bismarck-1914",
@@ -803,6 +838,13 @@
           "url": "/ships/ss-bremen",
           "serviceStartYear": "1929",
           "serviceEndYear": "1941"
+        },
+        {
+          "name": "SS California",
+          "path": "ships/ss-california.html",
+          "url": "/ships/ss-california",
+          "serviceStartYear": "1928",
+          "serviceEndYear": "1937"
         },
         {
           "name": "SS Cap Arcona",
@@ -826,11 +868,32 @@
           "serviceEndYear": null
         },
         {
+          "name": "SS Champollion (1925)",
+          "path": "ships/ss-champollion.html",
+          "url": "/ships/ss-champollion",
+          "serviceStartYear": "1925",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Chitral (1925)",
+          "path": "ships/ss-chitral.html",
+          "url": "/ships/ss-chitral",
+          "serviceStartYear": "1925",
+          "serviceEndYear": "1953"
+        },
+        {
           "name": "SS Columbus (1924)",
           "path": "ships/ss-columbus-1924.html",
           "url": "/ships/ss-columbus-1924",
           "serviceStartYear": "1924",
           "serviceEndYear": "1939"
+        },
+        {
+          "name": "SS Comorin (1925)",
+          "path": "ships/ss-comorin.html",
+          "url": "/ships/ss-comorin",
+          "serviceStartYear": "1925",
+          "serviceEndYear": null
         },
         {
           "name": "SS Conte Biancamano",
@@ -957,6 +1020,13 @@
           "url": "/ships/ss-maloja",
           "serviceStartYear": "1923",
           "serviceEndYear": "1954"
+        },
+        {
+          "name": "SS Mariette Pacha (1926)",
+          "path": "ships/ss-mariette-pacha.html",
+          "url": "/ships/ss-mariette-pacha",
+          "serviceStartYear": "1926",
+          "serviceEndYear": "1944"
         },
         {
           "name": "SS Milwaukee",
@@ -1116,7 +1186,7 @@
     },
     {
       "name": "Interwar express-liner era",
-      "shipCount": 38,
+      "shipCount": 46,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -1124,6 +1194,41 @@
           "url": "/ships/athlone-castle",
           "serviceStartYear": "1936",
           "serviceEndYear": "1965"
+        },
+        {
+          "name": "MS Aramis (1932)",
+          "path": "ships/ms-aramis.html",
+          "url": "/ships/ms-aramis",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1944"
+        },
+        {
+          "name": "MS Batory (1936)",
+          "path": "ships/ms-batory.html",
+          "url": "/ships/ms-batory",
+          "serviceStartYear": "1936",
+          "serviceEndYear": "1971"
+        },
+        {
+          "name": "MS Félix Roussel (1931)",
+          "path": "ships/ms-felix-roussel.html",
+          "url": "/ships/ms-felix-roussel",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1974"
+        },
+        {
+          "name": "MS Georges Philippar (1932)",
+          "path": "ships/ms-georges-philippar.html",
+          "url": "/ships/ms-georges-philippar",
+          "serviceStartYear": "1932",
+          "serviceEndYear": null
+        },
+        {
+          "name": "MS Piłsudski (1935)",
+          "path": "ships/ms-pilsudski.html",
+          "url": "/ships/ms-pilsudski",
+          "serviceStartYear": "1934",
+          "serviceEndYear": null
         },
         {
           "name": "MV Britannic (1930)",
@@ -1138,6 +1243,13 @@
           "url": "/ships/mv-georgic",
           "serviceStartYear": "1932",
           "serviceEndYear": "1956"
+        },
+        {
+          "name": "MV Jean Laborde (1931)",
+          "path": "ships/mv-jean-laborde.html",
+          "url": "/ships/mv-jean-laborde",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1948"
         },
         {
           "name": "Neptunia",
@@ -1173,6 +1285,13 @@
           "url": "/ships/rms-empress-of-japan-1929",
           "serviceStartYear": "1930",
           "serviceEndYear": "1966"
+        },
+        {
+          "name": "RMS Orcades (1937)",
+          "path": "ships/rms-orcades.html",
+          "url": "/ships/rms-orcades",
+          "serviceStartYear": "1937",
+          "serviceEndYear": null
         },
         {
           "name": "RMS Queen Elizabeth",
@@ -1250,6 +1369,13 @@
           "url": "/ships/ss-manhattan",
           "serviceStartYear": "1932",
           "serviceEndYear": null
+        },
+        {
+          "name": "SS Maréchal Joffre (1933)",
+          "path": "ships/ss-marechal-joffre.html",
+          "url": "/ships/ss-marechal-joffre",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1960"
         },
         {
           "name": "SS Mariposa",
@@ -1812,8 +1938,154 @@
       ]
     },
     {
+      "name": "Postwar liner renaissance",
+      "shipCount": 20,
+      "ships": [
+        {
+          "name": "MS Stockholm (1948)",
+          "path": "ships/ms-stockholm.html",
+          "url": "/ships/ms-stockholm",
+          "serviceStartYear": "1946",
+          "serviceEndYear": "2025"
+        },
+        {
+          "name": "RMS Carinthia (1956)",
+          "path": "ships/rms-carinthia.html",
+          "url": "/ships/rms-carinthia",
+          "serviceStartYear": "1956",
+          "serviceEndYear": "2005"
+        },
+        {
+          "name": "RMS Caronia (1947)",
+          "path": "ships/rms-caronia-1947.html",
+          "url": "/ships/rms-caronia-1947",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1974"
+        },
+        {
+          "name": "RMS Ivernia (1955)",
+          "path": "ships/rms-ivernia.html",
+          "url": "/ships/rms-ivernia",
+          "serviceStartYear": "1955",
+          "serviceEndYear": "2004"
+        },
+        {
+          "name": "RMS Orcades (1948)",
+          "path": "ships/rms-orcades-1948.html",
+          "url": "/ships/rms-orcades-1948",
+          "serviceStartYear": "1948",
+          "serviceEndYear": "1973"
+        },
+        {
+          "name": "RMS Oronsay (1951)",
+          "path": "ships/rms-oronsay.html",
+          "url": "/ships/rms-oronsay",
+          "serviceStartYear": "1951",
+          "serviceEndYear": "1975"
+        },
+        {
+          "name": "RMS Orsova (1954)",
+          "path": "ships/rms-orsova.html",
+          "url": "/ships/rms-orsova",
+          "serviceStartYear": "1954",
+          "serviceEndYear": "1974"
+        },
+        {
+          "name": "RMS Saxonia (1954)",
+          "path": "ships/rms-saxonia.html",
+          "url": "/ships/rms-saxonia",
+          "serviceStartYear": "1954",
+          "serviceEndYear": "1999"
+        },
+        {
+          "name": "RMS Sylvania (1957)",
+          "path": "ships/rms-sylvania.html",
+          "url": "/ships/rms-sylvania",
+          "serviceStartYear": "1957",
+          "serviceEndYear": "2004"
+        },
+        {
+          "name": "SS Andrea Doria",
+          "path": "ships/ss-andrea-doria.html",
+          "url": "/ships/ss-andrea-doria",
+          "serviceStartYear": "1953",
+          "serviceEndYear": "1956"
+        },
+        {
+          "name": "SS Arcadia (1954)",
+          "path": "ships/ss-arcadia-1954.html",
+          "url": "/ships/ss-arcadia-1954",
+          "serviceStartYear": "1954",
+          "serviceEndYear": "1979"
+        },
+        {
+          "name": "SS Bretagne",
+          "path": "ships/ss-bretagne.html",
+          "url": "/ships/ss-bretagne",
+          "serviceStartYear": "1952",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Chusan (1950)",
+          "path": "ships/ss-chusan.html",
+          "url": "/ships/ss-chusan",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1973"
+        },
+        {
+          "name": "SS Constitution",
+          "path": "ships/ss-constitution.html",
+          "url": "/ships/ss-constitution",
+          "serviceStartYear": "1951",
+          "serviceEndYear": "1997"
+        },
+        {
+          "name": "SS Cristoforo Colombo",
+          "path": "ships/ss-cristoforo-colombo.html",
+          "url": "/ships/ss-cristoforo-colombo",
+          "serviceStartYear": "1954",
+          "serviceEndYear": "1982"
+        },
+        {
+          "name": "SS Himalaya (1949)",
+          "path": "ships/ss-himalaya.html",
+          "url": "/ships/ss-himalaya",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1975"
+        },
+        {
+          "name": "SS Iberia (1954)",
+          "path": "ships/ss-iberia.html",
+          "url": "/ships/ss-iberia",
+          "serviceStartYear": "1954",
+          "serviceEndYear": "1973"
+        },
+        {
+          "name": "SS Independence",
+          "path": "ships/ss-independence.html",
+          "url": "/ships/ss-independence",
+          "serviceStartYear": "1951",
+          "serviceEndYear": "2010"
+        },
+        {
+          "name": "SS Rotterdam (1959)",
+          "path": "ships/ss-rotterdam-1959.html",
+          "url": "/ships/ss-rotterdam-1959",
+          "serviceStartYear": "1959",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS United States",
+          "path": "ships/ss-us.html",
+          "url": "/ships/ss-us",
+          "serviceStartYear": "1952",
+          "serviceEndYear": null
+        }
+      ]
+    },
+    {
       "name": "First World War era",
-      "shipCount": 14,
+      "shipCount": 15,
       "ships": [
         {
           "name": "RMS Aquitania",
@@ -1842,6 +2114,13 @@
           "url": "/ships/rms-cameronia",
           "serviceStartYear": "1919",
           "serviceEndYear": "1957"
+        },
+        {
+          "name": "SS André Lebon (1915)",
+          "path": "ships/ss-andre-lebon.html",
+          "url": "/ships/ss-andre-lebon",
+          "serviceStartYear": "1915",
+          "serviceEndYear": null
         },
         {
           "name": "SS Belgenland",
@@ -1916,110 +2195,6 @@
       ]
     },
     {
-      "name": "Postwar liner renaissance",
-      "shipCount": 14,
-      "ships": [
-        {
-          "name": "MS Stockholm (1948)",
-          "path": "ships/ms-stockholm.html",
-          "url": "/ships/ms-stockholm",
-          "serviceStartYear": "1946",
-          "serviceEndYear": "2025"
-        },
-        {
-          "name": "RMS Carinthia (1956)",
-          "path": "ships/rms-carinthia.html",
-          "url": "/ships/rms-carinthia",
-          "serviceStartYear": "1956",
-          "serviceEndYear": "2005"
-        },
-        {
-          "name": "RMS Caronia (1947)",
-          "path": "ships/rms-caronia-1947.html",
-          "url": "/ships/rms-caronia-1947",
-          "serviceStartYear": "1949",
-          "serviceEndYear": "1974"
-        },
-        {
-          "name": "RMS Ivernia (1955)",
-          "path": "ships/rms-ivernia.html",
-          "url": "/ships/rms-ivernia",
-          "serviceStartYear": "1955",
-          "serviceEndYear": "2004"
-        },
-        {
-          "name": "RMS Saxonia (1954)",
-          "path": "ships/rms-saxonia.html",
-          "url": "/ships/rms-saxonia",
-          "serviceStartYear": "1954",
-          "serviceEndYear": "1999"
-        },
-        {
-          "name": "RMS Sylvania (1957)",
-          "path": "ships/rms-sylvania.html",
-          "url": "/ships/rms-sylvania",
-          "serviceStartYear": "1957",
-          "serviceEndYear": "2004"
-        },
-        {
-          "name": "SS Andrea Doria",
-          "path": "ships/ss-andrea-doria.html",
-          "url": "/ships/ss-andrea-doria",
-          "serviceStartYear": "1953",
-          "serviceEndYear": "1956"
-        },
-        {
-          "name": "SS Arcadia (1954)",
-          "path": "ships/ss-arcadia-1954.html",
-          "url": "/ships/ss-arcadia-1954",
-          "serviceStartYear": "1954",
-          "serviceEndYear": "1979"
-        },
-        {
-          "name": "SS Bretagne",
-          "path": "ships/ss-bretagne.html",
-          "url": "/ships/ss-bretagne",
-          "serviceStartYear": "1952",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS Constitution",
-          "path": "ships/ss-constitution.html",
-          "url": "/ships/ss-constitution",
-          "serviceStartYear": "1951",
-          "serviceEndYear": "1997"
-        },
-        {
-          "name": "SS Cristoforo Colombo",
-          "path": "ships/ss-cristoforo-colombo.html",
-          "url": "/ships/ss-cristoforo-colombo",
-          "serviceStartYear": "1954",
-          "serviceEndYear": "1982"
-        },
-        {
-          "name": "SS Independence",
-          "path": "ships/ss-independence.html",
-          "url": "/ships/ss-independence",
-          "serviceStartYear": "1951",
-          "serviceEndYear": "2010"
-        },
-        {
-          "name": "SS Rotterdam (1959)",
-          "path": "ships/ss-rotterdam-1959.html",
-          "url": "/ships/ss-rotterdam-1959",
-          "serviceStartYear": "1959",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS United States",
-          "path": "ships/ss-us.html",
-          "url": "/ships/ss-us",
-          "serviceStartYear": "1952",
-          "serviceEndYear": null
-        }
-      ]
-    },
-    {
       "name": "Jet-age transition",
       "shipCount": 8,
       "ships": [
@@ -2083,8 +2258,15 @@
     },
     {
       "name": "Second World War era",
-      "shipCount": 5,
+      "shipCount": 6,
       "ships": [
+        {
+          "name": "MS Oranje (1939)",
+          "path": "ships/ms-oranje.html",
+          "url": "/ships/ms-oranje",
+          "serviceStartYear": "1939",
+          "serviceEndYear": "1979"
+        },
         {
           "name": "QSMV Dominion Monarch",
           "path": "ships/qsmv-dominion-monarch.html",
@@ -2139,7 +2321,7 @@
   "decades": [
     {
       "name": "1920s",
-      "shipCount": 70,
+      "shipCount": 80,
       "ships": [
         {
           "name": "Asama Maru",
@@ -2205,6 +2387,13 @@
           "serviceEndYear": null
         },
         {
+          "name": "RMS Antonia (1922)",
+          "path": "ships/rms-antonia.html",
+          "url": "/ships/rms-antonia",
+          "serviceStartYear": "1922",
+          "serviceEndYear": "1948"
+        },
+        {
           "name": "RMS Arundel Castle (1921)",
           "path": "ships/rms-arundel-castle-1921.html",
           "url": "/ships/rms-arundel-castle-1921",
@@ -2217,6 +2406,13 @@
           "url": "/ships/rms-ascania",
           "serviceStartYear": "1925",
           "serviceEndYear": "1957"
+        },
+        {
+          "name": "RMS Ausonia (1922)",
+          "path": "ships/rms-ausonia.html",
+          "url": "/ships/rms-ausonia",
+          "serviceStartYear": "1922",
+          "serviceEndYear": "1965"
         },
         {
           "name": "RMS Caledonia",
@@ -2259,6 +2455,20 @@
           "url": "/ships/rms-majestic",
           "serviceStartYear": "1922",
           "serviceEndYear": "1939"
+        },
+        {
+          "name": "RMS Rangitata (1929)",
+          "path": "ships/rms-rangitata.html",
+          "url": "/ships/rms-rangitata",
+          "serviceStartYear": "1929",
+          "serviceEndYear": "1962"
+        },
+        {
+          "name": "RMS Rangitiki (1929)",
+          "path": "ships/rms-rangitiki.html",
+          "url": "/ships/rms-rangitiki",
+          "serviceStartYear": "1929",
+          "serviceEndYear": "1962"
         },
         {
           "name": "RMS Scythia",
@@ -2310,6 +2520,13 @@
           "serviceEndYear": "1957"
         },
         {
+          "name": "SS Athos II (1927)",
+          "path": "ships/ss-athos-ii.html",
+          "url": "/ships/ss-athos-ii",
+          "serviceStartYear": "1927",
+          "serviceEndYear": "1959"
+        },
+        {
           "name": "SS Bismarck (1914)",
           "path": "ships/ss-bismarck-1914.html",
           "url": "/ships/ss-bismarck-1914",
@@ -2322,6 +2539,13 @@
           "url": "/ships/ss-bremen",
           "serviceStartYear": "1929",
           "serviceEndYear": "1941"
+        },
+        {
+          "name": "SS California",
+          "path": "ships/ss-california.html",
+          "url": "/ships/ss-california",
+          "serviceStartYear": "1928",
+          "serviceEndYear": "1937"
         },
         {
           "name": "SS Cap Arcona",
@@ -2345,11 +2569,32 @@
           "serviceEndYear": null
         },
         {
+          "name": "SS Champollion (1925)",
+          "path": "ships/ss-champollion.html",
+          "url": "/ships/ss-champollion",
+          "serviceStartYear": "1925",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Chitral (1925)",
+          "path": "ships/ss-chitral.html",
+          "url": "/ships/ss-chitral",
+          "serviceStartYear": "1925",
+          "serviceEndYear": "1953"
+        },
+        {
           "name": "SS Columbus (1924)",
           "path": "ships/ss-columbus-1924.html",
           "url": "/ships/ss-columbus-1924",
           "serviceStartYear": "1924",
           "serviceEndYear": "1939"
+        },
+        {
+          "name": "SS Comorin (1925)",
+          "path": "ships/ss-comorin.html",
+          "url": "/ships/ss-comorin",
+          "serviceStartYear": "1925",
+          "serviceEndYear": null
         },
         {
           "name": "SS Conte Biancamano",
@@ -2476,6 +2721,13 @@
           "url": "/ships/ss-maloja",
           "serviceStartYear": "1923",
           "serviceEndYear": "1954"
+        },
+        {
+          "name": "SS Mariette Pacha (1926)",
+          "path": "ships/ss-mariette-pacha.html",
+          "url": "/ships/ss-mariette-pacha",
+          "serviceStartYear": "1926",
+          "serviceEndYear": "1944"
         },
         {
           "name": "SS Milwaukee",
@@ -3103,7 +3355,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 42,
+      "shipCount": 51,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -3111,6 +3363,48 @@
           "url": "/ships/athlone-castle",
           "serviceStartYear": "1936",
           "serviceEndYear": "1965"
+        },
+        {
+          "name": "MS Aramis (1932)",
+          "path": "ships/ms-aramis.html",
+          "url": "/ships/ms-aramis",
+          "serviceStartYear": "1932",
+          "serviceEndYear": "1944"
+        },
+        {
+          "name": "MS Batory (1936)",
+          "path": "ships/ms-batory.html",
+          "url": "/ships/ms-batory",
+          "serviceStartYear": "1936",
+          "serviceEndYear": "1971"
+        },
+        {
+          "name": "MS Félix Roussel (1931)",
+          "path": "ships/ms-felix-roussel.html",
+          "url": "/ships/ms-felix-roussel",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1974"
+        },
+        {
+          "name": "MS Georges Philippar (1932)",
+          "path": "ships/ms-georges-philippar.html",
+          "url": "/ships/ms-georges-philippar",
+          "serviceStartYear": "1932",
+          "serviceEndYear": null
+        },
+        {
+          "name": "MS Oranje (1939)",
+          "path": "ships/ms-oranje.html",
+          "url": "/ships/ms-oranje",
+          "serviceStartYear": "1939",
+          "serviceEndYear": "1979"
+        },
+        {
+          "name": "MS Piłsudski (1935)",
+          "path": "ships/ms-pilsudski.html",
+          "url": "/ships/ms-pilsudski",
+          "serviceStartYear": "1934",
+          "serviceEndYear": null
         },
         {
           "name": "MV Britannic (1930)",
@@ -3125,6 +3419,13 @@
           "url": "/ships/mv-georgic",
           "serviceStartYear": "1932",
           "serviceEndYear": "1956"
+        },
+        {
+          "name": "MV Jean Laborde (1931)",
+          "path": "ships/mv-jean-laborde.html",
+          "url": "/ships/mv-jean-laborde",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1948"
         },
         {
           "name": "Neptunia",
@@ -3181,6 +3482,13 @@
           "url": "/ships/rms-mauretania-ii",
           "serviceStartYear": "1939",
           "serviceEndYear": "1965"
+        },
+        {
+          "name": "RMS Orcades (1937)",
+          "path": "ships/rms-orcades.html",
+          "url": "/ships/rms-orcades",
+          "serviceStartYear": "1937",
+          "serviceEndYear": null
         },
         {
           "name": "RMS Queen Elizabeth",
@@ -3258,6 +3566,13 @@
           "url": "/ships/ss-manhattan",
           "serviceStartYear": "1932",
           "serviceEndYear": null
+        },
+        {
+          "name": "SS Maréchal Joffre (1933)",
+          "path": "ships/ss-marechal-joffre.html",
+          "url": "/ships/ss-marechal-joffre",
+          "serviceStartYear": "1931",
+          "serviceEndYear": "1960"
         },
         {
           "name": "SS Mariposa",
@@ -3403,7 +3718,7 @@
     },
     {
       "name": "1910s",
-      "shipCount": 34,
+      "shipCount": 35,
       "ships": [
         {
           "name": "RMS Alaunia (1913)",
@@ -3487,6 +3802,13 @@
           "path": "ships/rms-titanic.html",
           "url": "/ships/rms-titanic",
           "serviceStartYear": "1912",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS André Lebon (1915)",
+          "path": "ships/ss-andre-lebon.html",
+          "url": "/ships/ss-andre-lebon",
+          "serviceStartYear": "1915",
           "serviceEndYear": null
         },
         {
@@ -3842,7 +4164,7 @@
     },
     {
       "name": "1950s",
-      "shipCount": 12,
+      "shipCount": 15,
       "ships": [
         {
           "name": "RMS Carinthia (1956)",
@@ -3857,6 +4179,20 @@
           "url": "/ships/rms-ivernia",
           "serviceStartYear": "1955",
           "serviceEndYear": "2004"
+        },
+        {
+          "name": "RMS Oronsay (1951)",
+          "path": "ships/rms-oronsay.html",
+          "url": "/ships/rms-oronsay",
+          "serviceStartYear": "1951",
+          "serviceEndYear": "1975"
+        },
+        {
+          "name": "RMS Orsova (1954)",
+          "path": "ships/rms-orsova.html",
+          "url": "/ships/rms-orsova",
+          "serviceStartYear": "1954",
+          "serviceEndYear": "1974"
         },
         {
           "name": "RMS Saxonia (1954)",
@@ -3906,6 +4242,13 @@
           "url": "/ships/ss-cristoforo-colombo",
           "serviceStartYear": "1954",
           "serviceEndYear": "1982"
+        },
+        {
+          "name": "SS Iberia (1954)",
+          "path": "ships/ss-iberia.html",
+          "url": "/ships/ss-iberia",
+          "serviceStartYear": "1954",
+          "serviceEndYear": "1973"
         },
         {
           "name": "SS Independence",
@@ -4179,6 +4522,54 @@
       ]
     },
     {
+      "name": "1940s",
+      "shipCount": 6,
+      "ships": [
+        {
+          "name": "MS Stockholm (1948)",
+          "path": "ships/ms-stockholm.html",
+          "url": "/ships/ms-stockholm",
+          "serviceStartYear": "1946",
+          "serviceEndYear": "2025"
+        },
+        {
+          "name": "RMS Caronia (1947)",
+          "path": "ships/rms-caronia-1947.html",
+          "url": "/ships/rms-caronia-1947",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1974"
+        },
+        {
+          "name": "RMS Orcades (1948)",
+          "path": "ships/rms-orcades-1948.html",
+          "url": "/ships/rms-orcades-1948",
+          "serviceStartYear": "1948",
+          "serviceEndYear": "1973"
+        },
+        {
+          "name": "SS America",
+          "path": "ships/ss-america.html",
+          "url": "/ships/ss-america",
+          "serviceStartYear": "1940",
+          "serviceEndYear": "1994"
+        },
+        {
+          "name": "SS Chusan (1950)",
+          "path": "ships/ss-chusan.html",
+          "url": "/ships/ss-chusan",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1973"
+        },
+        {
+          "name": "SS Himalaya (1949)",
+          "path": "ships/ss-himalaya.html",
+          "url": "/ships/ss-himalaya",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1975"
+        }
+      ]
+    },
+    {
       "name": "1840s",
       "shipCount": 3,
       "ships": [
@@ -4229,33 +4620,6 @@
           "url": "/ships/ss-great-eastern",
           "serviceStartYear": "1859",
           "serviceEndYear": "1890"
-        }
-      ]
-    },
-    {
-      "name": "1940s",
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "MS Stockholm (1948)",
-          "path": "ships/ms-stockholm.html",
-          "url": "/ships/ms-stockholm",
-          "serviceStartYear": "1946",
-          "serviceEndYear": "2025"
-        },
-        {
-          "name": "RMS Caronia (1947)",
-          "path": "ships/rms-caronia-1947.html",
-          "url": "/ships/rms-caronia-1947",
-          "serviceStartYear": "1949",
-          "serviceEndYear": "1974"
-        },
-        {
-          "name": "SS America",
-          "path": "ships/ss-america.html",
-          "url": "/ships/ss-america",
-          "serviceStartYear": "1940",
-          "serviceEndYear": "1994"
         }
       ]
     },
@@ -4317,6 +4681,17 @@
       "endEvidence": "Retired 1965; broken up at Kaohsiung, Taiwan"
     },
     {
+      "name": "MS Aramis (1932)",
+      "path": "ships/ms-aramis.html",
+      "url": "/ships/ms-aramis",
+      "launchYear": "1931",
+      "serviceStartYear": "1932",
+      "serviceEndYear": "1944",
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": "Torpedoed and sunk by USS Rasher · 18 August 1944"
+    },
+    {
       "name": "MS Augustus",
       "path": "ships/ms-augustus.html",
       "url": "/ships/ms-augustus",
@@ -4328,6 +4703,17 @@
       "endEvidence": "Scuttled at Genoa in 1944; recovered after the war and demolished"
     },
     {
+      "name": "MS Batory (1936)",
+      "path": "ships/ms-batory.html",
+      "url": "/ships/ms-batory",
+      "launchYear": "1935",
+      "serviceStartYear": "1936",
+      "serviceEndYear": "1971",
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": "Used briefly as a hotel ship; scrapped in Hong Kong in 1971–72"
+    },
+    {
       "name": "MS Bermuda",
       "path": "ships/ms-bermuda.html",
       "url": "/ships/ms-bermuda",
@@ -4337,6 +4723,28 @@
       "era": "Interwar recovery",
       "decade": "1920s",
       "endEvidence": "Wrecked off the northwest coast of Scotland, 30 April 1933, while under tow for scrapping"
+    },
+    {
+      "name": "MS Félix Roussel (1931)",
+      "path": "ships/ms-felix-roussel.html",
+      "url": "/ships/ms-felix-roussel",
+      "launchYear": "1929",
+      "serviceStartYear": "1931",
+      "serviceEndYear": "1974",
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": "broken up at Bilbao in 1974"
+    },
+    {
+      "name": "MS Georges Philippar (1932)",
+      "path": "ships/ms-georges-philippar.html",
+      "url": "/ships/ms-georges-philippar",
+      "launchYear": "1930",
+      "serviceStartYear": "1932",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
     },
     {
       "name": "MS Gripsholm (1925)",
@@ -4359,6 +4767,28 @@
       "era": "Interwar recovery",
       "decade": "1920s",
       "endEvidence": "Broken up at Bilbao, Spain, 1965"
+    },
+    {
+      "name": "MS Oranje (1939)",
+      "path": "ships/ms-oranje.html",
+      "url": "/ships/ms-oranje",
+      "launchYear": "1938",
+      "serviceStartYear": "1939",
+      "serviceEndYear": "1979",
+      "era": "Second World War era",
+      "decade": "1930s",
+      "endEvidence": "Fire-damaged in 1979; sank while under tow for scrapping on 24 September 1979"
+    },
+    {
+      "name": "MS Piłsudski (1935)",
+      "path": "ships/ms-pilsudski.html",
+      "url": "/ships/ms-pilsudski",
+      "launchYear": "1934",
+      "serviceStartYear": "1934",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
     },
     {
       "name": "MS Saturnia",
@@ -4414,6 +4844,17 @@
       "era": "Interwar express-liner era",
       "decade": "1930s",
       "endEvidence": "Withdrawn 1956; broken up at Faslane, Scotland"
+    },
+    {
+      "name": "MV Jean Laborde (1931)",
+      "path": "ships/mv-jean-laborde.html",
+      "url": "/ships/mv-jean-laborde",
+      "launchYear": "1929",
+      "serviceStartYear": "1931",
+      "serviceEndYear": "1948",
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": "Declared beyond repair and broken up in 1948"
     },
     {
       "name": "Neptunia",
@@ -4537,6 +4978,17 @@
       "endEvidence": "Withdrawn May 1971; broken up at Ghent"
     },
     {
+      "name": "RMS Antonia (1922)",
+      "path": "ships/rms-antonia.html",
+      "url": "/ships/rms-antonia",
+      "launchYear": "1921",
+      "serviceStartYear": "1922",
+      "serviceEndYear": "1948",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Broken up at Troon, Scotland, 1948"
+    },
+    {
       "name": "RMS Aquitania",
       "path": "ships/rms-aquitania.html",
       "url": "/ships/rms-aquitania",
@@ -4590,6 +5042,17 @@
       "era": "First World War era",
       "decade": "1910s",
       "endEvidence": null
+    },
+    {
+      "name": "RMS Ausonia (1922)",
+      "path": "ships/rms-ausonia.html",
+      "url": "/ships/rms-ausonia",
+      "launchYear": "1921",
+      "serviceStartYear": "1922",
+      "serviceEndYear": "1965",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Sold 1965 and broken up at Castellón, Spain"
     },
     {
       "name": "RMS Baltic",
@@ -5010,6 +5473,39 @@
       "endEvidence": "1911–1935 (withdrawn April 12, 1935)"
     },
     {
+      "name": "RMS Orcades (1948)",
+      "path": "ships/rms-orcades-1948.html",
+      "url": "/ships/rms-orcades-1948",
+      "launchYear": "1947",
+      "serviceStartYear": "1948",
+      "serviceEndYear": "1973",
+      "era": "Postwar liner renaissance",
+      "decade": "1940s",
+      "endEvidence": "Broken up at Kaohsiung, Taiwan, 1973"
+    },
+    {
+      "name": "RMS Orcades (1937)",
+      "path": "ships/rms-orcades.html",
+      "url": "/ships/rms-orcades",
+      "launchYear": "1936",
+      "serviceStartYear": "1937",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
+    },
+    {
+      "name": "RMS Oronsay (1951)",
+      "path": "ships/rms-oronsay.html",
+      "url": "/ships/rms-oronsay",
+      "launchYear": "1950",
+      "serviceStartYear": "1951",
+      "serviceEndYear": "1975",
+      "era": "Postwar liner renaissance",
+      "decade": "1950s",
+      "endEvidence": "Scrapped at Kaohsiung, Taiwan, 1975"
+    },
+    {
       "name": "RMS Orontes",
       "path": "ships/rms-orontes.html",
       "url": "/ships/rms-orontes",
@@ -5019,6 +5515,17 @@
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
       "endEvidence": "Broken up in the mid-1920s; sources differ between 1925 and 1926"
+    },
+    {
+      "name": "RMS Orsova (1954)",
+      "path": "ships/rms-orsova.html",
+      "url": "/ships/rms-orsova",
+      "launchYear": "1953",
+      "serviceStartYear": "1954",
+      "serviceEndYear": "1974",
+      "era": "Postwar liner renaissance",
+      "decade": "1950s",
+      "endEvidence": "left service in 1974"
     },
     {
       "name": "RMS Persia",
@@ -5063,6 +5570,39 @@
       "era": "Interwar express-liner era",
       "decade": "1930s",
       "endEvidence": null
+    },
+    {
+      "name": "RMS Rangitane (1929)",
+      "path": "ships/rms-rangitane.html",
+      "url": "/ships/rms-rangitane",
+      "launchYear": null,
+      "serviceStartYear": null,
+      "serviceEndYear": "1940",
+      "era": null,
+      "decade": null,
+      "endEvidence": "Sunk by German surface raiders · 27 November 1940"
+    },
+    {
+      "name": "RMS Rangitata (1929)",
+      "path": "ships/rms-rangitata.html",
+      "url": "/ships/rms-rangitata",
+      "launchYear": "1929",
+      "serviceStartYear": "1929",
+      "serviceEndYear": "1962",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Broken up at Split, Yugoslavia, in 1962"
+    },
+    {
+      "name": "RMS Rangitiki (1929)",
+      "path": "ships/rms-rangitiki.html",
+      "url": "/ships/rms-rangitiki",
+      "launchYear": "1928",
+      "serviceStartYear": "1929",
+      "serviceEndYear": "1962",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Broken up at Valencia, Spain, in 1962"
     },
     {
       "name": "RMS Saxonia (1954)",
@@ -5285,6 +5825,17 @@
       "endEvidence": "scrapped in 1957"
     },
     {
+      "name": "SS André Lebon (1915)",
+      "path": "ships/ss-andre-lebon.html",
+      "url": "/ships/ss-andre-lebon",
+      "launchYear": "1913",
+      "serviceStartYear": "1915",
+      "serviceEndYear": null,
+      "era": "First World War era",
+      "decade": "1910s",
+      "endEvidence": null
+    },
+    {
       "name": "SS Andrea Doria",
       "path": "ships/ss-andrea-doria.html",
       "url": "/ships/ss-andrea-doria",
@@ -5393,6 +5944,17 @@
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
       "endEvidence": "scrapped in Hamburg in 1962"
+    },
+    {
+      "name": "SS Athos II (1927)",
+      "path": "ships/ss-athos-ii.html",
+      "url": "/ships/ss-athos-ii",
+      "launchYear": "1925",
+      "serviceStartYear": "1927",
+      "serviceEndYear": "1959",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Sold for demolition at La Spezia, Italy, August 1959"
     },
     {
       "name": "SS Atlantic (1873)",
@@ -5593,6 +6155,17 @@
       "endEvidence": "Laid up 1933; sold for breaking in Scotland, 1934–35 depending source convention"
     },
     {
+      "name": "SS California",
+      "path": "ships/ss-california.html",
+      "url": "/ships/ss-california",
+      "launchYear": "1927",
+      "serviceStartYear": "1928",
+      "serviceEndYear": "1937",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "withdrawn in 1937"
+    },
+    {
       "name": "SS Canada (1896)",
       "path": "ships/ss-canada-1896.html",
       "url": "/ships/ss-canada-1896",
@@ -5714,6 +6287,17 @@
       "endEvidence": null
     },
     {
+      "name": "SS Champollion (1925)",
+      "path": "ships/ss-champollion.html",
+      "url": "/ships/ss-champollion",
+      "launchYear": "1924",
+      "serviceStartYear": "1925",
+      "serviceEndYear": null,
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": null
+    },
+    {
       "name": "SS Chicago (1908)",
       "path": "ships/ss-chicago-1908.html",
       "url": "/ships/ss-chicago-1908",
@@ -5723,6 +6307,28 @@
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
       "endEvidence": "Scrapped at Saint-Nazaire in the mid-to-late 1930s; sources commonly cite 1936 or early 1937"
+    },
+    {
+      "name": "SS Chitral (1925)",
+      "path": "ships/ss-chitral.html",
+      "url": "/ships/ss-chitral",
+      "launchYear": "1925",
+      "serviceStartYear": "1925",
+      "serviceEndYear": "1953",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Broken up at Dalmuir, Scotland, 1953"
+    },
+    {
+      "name": "SS Chusan (1950)",
+      "path": "ships/ss-chusan.html",
+      "url": "/ships/ss-chusan",
+      "launchYear": "1949",
+      "serviceStartYear": "1949",
+      "serviceEndYear": "1973",
+      "era": "Postwar liner renaissance",
+      "decade": "1940s",
+      "endEvidence": "Scrapped at Kaohsiung, Taiwan, 1973"
     },
     {
       "name": "SS City of New York (1888)",
@@ -5789,6 +6395,17 @@
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
       "endEvidence": "withdrawn and broken up at Briton Ferry in 1925"
+    },
+    {
+      "name": "SS Comorin (1925)",
+      "path": "ships/ss-comorin.html",
+      "url": "/ships/ss-comorin",
+      "launchYear": "1924",
+      "serviceStartYear": "1925",
+      "serviceEndYear": null,
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": null
     },
     {
       "name": "SS Constitution",
@@ -6264,6 +6881,28 @@
       "endEvidence": null
     },
     {
+      "name": "SS Himalaya (1949)",
+      "path": "ships/ss-himalaya.html",
+      "url": "/ships/ss-himalaya",
+      "launchYear": "1948",
+      "serviceStartYear": "1949",
+      "serviceEndYear": "1975",
+      "era": "Postwar liner renaissance",
+      "decade": "1940s",
+      "endEvidence": "Scrapped at Kaohsiung, Taiwan, 1975"
+    },
+    {
+      "name": "SS Iberia (1954)",
+      "path": "ships/ss-iberia.html",
+      "url": "/ships/ss-iberia",
+      "launchYear": "1954",
+      "serviceStartYear": "1954",
+      "serviceEndYear": "1973",
+      "era": "Postwar liner renaissance",
+      "decade": "1950s",
+      "endEvidence": "Scrapped at Kaohsiung, Taiwan, 1973"
+    },
+    {
       "name": "SS Île de France",
       "path": "ships/ss-ile-de-france.html",
       "url": "/ships/ss-ile-de-france",
@@ -6614,6 +7253,28 @@
       "era": "Interwar express-liner era",
       "decade": "1930s",
       "endEvidence": null
+    },
+    {
+      "name": "SS Maréchal Joffre (1933)",
+      "path": "ships/ss-marechal-joffre.html",
+      "url": "/ships/ss-marechal-joffre",
+      "launchYear": "1931",
+      "serviceStartYear": "1931",
+      "serviceEndYear": "1960",
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": "Broken up at Osaka, Japan, in 1960"
+    },
+    {
+      "name": "SS Mariette Pacha (1926)",
+      "path": "ships/ss-mariette-pacha.html",
+      "url": "/ships/ss-mariette-pacha",
+      "launchYear": "1925",
+      "serviceStartYear": "1926",
+      "serviceEndYear": "1944",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Scuttled by explosives at Marseille · 21 August 1944"
     },
     {
       "name": "SS Mariposa",

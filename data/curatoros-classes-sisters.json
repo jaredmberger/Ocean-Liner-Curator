@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T07:52:13.191Z",
+  "generatedAt": "2026-09-23T07:55:40.031Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 302,
+    "shipGuides": 327,
     "guidesWithExplicitClass": 17,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 18,
-    "unresolvedSisterMentions": 11
+    "explicitSisterLinks": 22,
+    "unresolvedSisterMentions": 8
   },
   "classes": [
     {
@@ -203,6 +203,19 @@
     {
       "a": {
         "name": "RMS Andania",
+        "path": "ships/rms-andania-1922.html",
+        "url": "/ships/rms-andania-1922"
+      },
+      "b": {
+        "name": "RMS Antonia (1922)",
+        "path": "ships/rms-antonia.html",
+        "url": "/ships/rms-antonia"
+      },
+      "evidenceFrom": "ships/rms-andania-1922.html"
+    },
+    {
+      "a": {
+        "name": "RMS Andania",
         "path": "ships/rms-andania.html",
         "url": "/ships/rms-andania"
       },
@@ -293,6 +306,19 @@
     },
     {
       "a": {
+        "name": "SS Cathay",
+        "path": "ships/ss-cathay-1924.html",
+        "url": "/ships/ss-cathay-1924"
+      },
+      "b": {
+        "name": "SS Comorin (1925)",
+        "path": "ships/ss-comorin.html",
+        "url": "/ships/ss-comorin"
+      },
+      "evidenceFrom": "ships/ss-cathay-1924.html"
+    },
+    {
+      "a": {
         "name": "SS Constitution",
         "path": "ships/ss-constitution.html",
         "url": "/ships/ss-constitution"
@@ -355,6 +381,32 @@
         "url": "/ships/rms-teutonic"
       },
       "evidenceFrom": "ships/ss-majestic-1889.html"
+    },
+    {
+      "a": {
+        "name": "SS Maréchal Joffre (1933)",
+        "path": "ships/ss-marechal-joffre.html",
+        "url": "/ships/ss-marechal-joffre"
+      },
+      "b": {
+        "name": "MV Jean Laborde (1931)",
+        "path": "ships/mv-jean-laborde.html",
+        "url": "/ships/mv-jean-laborde"
+      },
+      "evidenceFrom": "ships/ss-marechal-joffre.html"
+    },
+    {
+      "a": {
+        "name": "SS Mariette Pacha (1926)",
+        "path": "ships/ss-mariette-pacha.html",
+        "url": "/ships/ss-mariette-pacha"
+      },
+      "b": {
+        "name": "SS Champollion (1925)",
+        "path": "ships/ss-champollion.html",
+        "url": "/ships/ss-champollion"
+      },
+      "evidenceFrom": "ships/ss-mariette-pacha.html"
     },
     {
       "a": {
@@ -424,18 +476,6 @@
   ],
   "unresolvedSisterMentions": [
     {
-      "ship": "RMS Andania",
-      "path": "ships/rms-andania-1922.html",
-      "mentioned": "Antonia",
-      "candidateCount": 0
-    },
-    {
-      "ship": "RMS Andania",
-      "path": "ships/rms-andania-1922.html",
-      "mentioned": "Ausonia",
-      "candidateCount": 0
-    },
-    {
       "ship": "RMS Olympic",
       "path": "ships/rms-olympic.html",
       "mentioned": "Britannic",
@@ -445,12 +485,6 @@
       "ship": "SS Bothnia",
       "path": "ships/ss-bothnia.html",
       "mentioned": "Gallia",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cathay",
-      "path": "ships/ss-cathay-1924.html",
-      "mentioned": "Comorin",
       "candidateCount": 0
     },
     {
@@ -506,6 +540,13 @@
       "sisters": []
     },
     {
+      "name": "MS Aramis (1932)",
+      "path": "ships/ms-aramis.html",
+      "url": "/ships/ms-aramis",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "MS Augustus",
       "path": "ships/ms-augustus.html",
       "url": "/ships/ms-augustus",
@@ -513,9 +554,30 @@
       "sisters": []
     },
     {
+      "name": "MS Batory (1936)",
+      "path": "ships/ms-batory.html",
+      "url": "/ships/ms-batory",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "MS Bermuda",
       "path": "ships/ms-bermuda.html",
       "url": "/ships/ms-bermuda",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Félix Roussel (1931)",
+      "path": "ships/ms-felix-roussel.html",
+      "url": "/ships/ms-felix-roussel",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Georges Philippar (1932)",
+      "path": "ships/ms-georges-philippar.html",
+      "url": "/ships/ms-georges-philippar",
       "classes": [],
       "sisters": []
     },
@@ -530,6 +592,20 @@
       "name": "MS Kungsholm (1928)",
       "path": "ships/ms-kungsholm-1928.html",
       "url": "/ships/ms-kungsholm-1928",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Oranje (1939)",
+      "path": "ships/ms-oranje.html",
+      "url": "/ships/ms-oranje",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Piłsudski (1935)",
+      "path": "ships/ms-pilsudski.html",
+      "url": "/ships/ms-pilsudski",
       "classes": [],
       "sisters": []
     },
@@ -565,6 +641,13 @@
       "name": "MV Georgic",
       "path": "ships/mv-georgic.html",
       "url": "/ships/mv-georgic",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MV Jean Laborde (1931)",
+      "path": "ships/mv-jean-laborde.html",
+      "url": "/ships/mv-jean-laborde",
       "classes": [],
       "sisters": []
     },
@@ -632,8 +715,7 @@
       "url": "/ships/rms-andania-1922",
       "classes": [],
       "sisters": [
-        "Antonia",
-        "Ausonia"
+        "Antonia"
       ]
     },
     {
@@ -649,6 +731,13 @@
       "name": "RMS Andes",
       "path": "ships/rms-andes-1939.html",
       "url": "/ships/rms-andes-1939",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Antonia (1922)",
+      "path": "ships/rms-antonia.html",
+      "url": "/ships/rms-antonia",
       "classes": [],
       "sisters": []
     },
@@ -684,6 +773,13 @@
       "name": "RMS Aurania (1916)",
       "path": "ships/rms-aurania.html",
       "url": "/ships/rms-aurania",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Ausonia (1922)",
+      "path": "ships/rms-ausonia.html",
+      "url": "/ships/rms-ausonia",
       "classes": [],
       "sisters": []
     },
@@ -975,9 +1071,37 @@
       ]
     },
     {
+      "name": "RMS Orcades (1948)",
+      "path": "ships/rms-orcades-1948.html",
+      "url": "/ships/rms-orcades-1948",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Orcades (1937)",
+      "path": "ships/rms-orcades.html",
+      "url": "/ships/rms-orcades",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Oronsay (1951)",
+      "path": "ships/rms-oronsay.html",
+      "url": "/ships/rms-oronsay",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "RMS Orontes",
       "path": "ships/rms-orontes.html",
       "url": "/ships/rms-orontes",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Orsova (1954)",
+      "path": "ships/rms-orsova.html",
+      "url": "/ships/rms-orsova",
       "classes": [],
       "sisters": []
     },
@@ -1006,6 +1130,27 @@
       "name": "RMS Queen Mary",
       "path": "ships/rms-queen-mary.html",
       "url": "/ships/rms-queen-mary",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Rangitane (1929)",
+      "path": "ships/rms-rangitane.html",
+      "url": "/ships/rms-rangitane",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Rangitata (1929)",
+      "path": "ships/rms-rangitata.html",
+      "url": "/ships/rms-rangitata",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Rangitiki (1929)",
+      "path": "ships/rms-rangitiki.html",
+      "url": "/ships/rms-rangitiki",
       "classes": [],
       "sisters": []
     },
@@ -1154,6 +1299,13 @@
       "sisters": []
     },
     {
+      "name": "SS André Lebon (1915)",
+      "path": "ships/ss-andre-lebon.html",
+      "url": "/ships/ss-andre-lebon",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "SS Andrea Doria",
       "path": "ships/ss-andrea-doria.html",
       "url": "/ships/ss-andrea-doria",
@@ -1220,6 +1372,13 @@
       "name": "SS Athenic",
       "path": "ships/ss-athenic.html",
       "url": "/ships/ss-athenic",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Athos II (1927)",
+      "path": "ships/ss-athos-ii.html",
+      "url": "/ships/ss-athos-ii",
       "classes": [],
       "sisters": []
     },
@@ -1446,9 +1605,30 @@
       "sisters": []
     },
     {
+      "name": "SS Champollion (1925)",
+      "path": "ships/ss-champollion.html",
+      "url": "/ships/ss-champollion",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "SS Chicago (1908)",
       "path": "ships/ss-chicago-1908.html",
       "url": "/ships/ss-chicago-1908",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Chitral (1925)",
+      "path": "ships/ss-chitral.html",
+      "url": "/ships/ss-chitral",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Chusan (1950)",
+      "path": "ships/ss-chusan.html",
+      "url": "/ships/ss-chusan",
       "classes": [],
       "sisters": []
     },
@@ -1493,6 +1673,13 @@
       "name": "SS Commonwealth",
       "path": "ships/ss-commonwealth.html",
       "url": "/ships/ss-commonwealth",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Comorin (1925)",
+      "path": "ships/ss-comorin.html",
+      "url": "/ships/ss-comorin",
       "classes": [],
       "sisters": []
     },
@@ -1812,6 +1999,13 @@
       "sisters": []
     },
     {
+      "name": "SS Himalaya (1949)",
+      "path": "ships/ss-himalaya.html",
+      "url": "/ships/ss-himalaya",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "SS Iberia (1954)",
       "path": "ships/ss-iberia.html",
       "url": "/ships/ss-iberia",
@@ -2049,6 +2243,24 @@
       "url": "/ships/ss-manhattan",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "SS Maréchal Joffre (1933)",
+      "path": "ships/ss-marechal-joffre.html",
+      "url": "/ships/ss-marechal-joffre",
+      "classes": [],
+      "sisters": [
+        "Jean Laborde"
+      ]
+    },
+    {
+      "name": "SS Mariette Pacha (1926)",
+      "path": "ships/ss-mariette-pacha.html",
+      "url": "/ships/ss-mariette-pacha",
+      "classes": [],
+      "sisters": [
+        "Champollion"
+      ]
     },
     {
       "name": "SS Mariposa",

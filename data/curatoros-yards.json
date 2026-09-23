@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T02:46:02.952Z",
+  "generatedAt": "2026-09-23T07:55:37.583Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 300,
-    "guidesWithDocumentedYard": 292,
-    "guidesWithoutDocumentedYard": 8,
-    "canonicalYardLocations": 59,
+    "shipGuides": 327,
+    "guidesWithDocumentedYard": 318,
+    "guidesWithoutDocumentedYard": 9,
+    "canonicalYardLocations": 62,
     "multiYardShips": 3
   },
   "yards": [
@@ -24,7 +24,7 @@
         "Harland & Wolff, Queen's Island",
         "Workman, Clark & Co."
       ],
-      "shipCount": 78,
+      "shipCount": 79,
       "ships": [
         {
           "name": "SS Atlantic (1873)",
@@ -566,6 +566,13 @@
           "builder": "Harland & Wolff"
         },
         {
+          "name": "SS Iberia (1954)",
+          "path": "ships/ss-iberia.html",
+          "url": "/ships/ss-iberia",
+          "launchYear": "1954",
+          "builder": "Harland & Wolff"
+        },
+        {
           "name": "SS Canberra",
           "path": "ships/ss-canberra.html",
           "url": "/ships/ss-canberra",
@@ -587,7 +594,7 @@
         "J. & G. Thomson / James & George Thomson",
         "John Brown & Company"
       ],
-      "shipCount": 26,
+      "shipCount": 29,
       "ships": [
         {
           "name": "RMS Servia",
@@ -681,6 +688,13 @@
           "builder": "John Brown & Company"
         },
         {
+          "name": "RMS Rangitiki (1929)",
+          "path": "ships/rms-rangitiki.html",
+          "url": "/ships/rms-rangitiki",
+          "launchYear": "1928",
+          "builder": "John Brown & Company"
+        },
+        {
           "name": "SS Duchess of Bedford",
           "path": "ships/ss-duchess-of-bedford.html",
           "url": "/ships/ss-duchess-of-bedford",
@@ -692,6 +706,20 @@
           "path": "ships/ss-duchess-of-york.html",
           "url": "/ships/ss-duchess-of-york",
           "launchYear": "1928",
+          "builder": "John Brown & Company"
+        },
+        {
+          "name": "RMS Rangitane (1929)",
+          "path": "ships/rms-rangitane.html",
+          "url": "/ships/rms-rangitane",
+          "launchYear": "1929",
+          "builder": "John Brown & Company"
+        },
+        {
+          "name": "RMS Rangitata (1929)",
+          "path": "ships/rms-rangitata.html",
+          "url": "/ships/rms-rangitata",
+          "launchYear": "1929",
           "builder": "John Brown & Company"
         },
         {
@@ -929,6 +957,142 @@
       ]
     },
     {
+      "id": "barrow-in-furness",
+      "name": "Barrow-in-Furness",
+      "rawValues": [
+        "Barrow-in-Furness"
+      ],
+      "builders": [
+        "Barrow Shipbuilding Company",
+        "Vickers Ltd",
+        "Vickers Ltd.",
+        "Vickers-Armstrongs",
+        "Vickers-Armstrongs (Shipbuilders) Ltd."
+      ],
+      "shipCount": 17,
+      "ships": [
+        {
+          "name": "SS La Normandie",
+          "path": "ships/ss-la-normandie.html",
+          "url": "/ships/ss-la-normandie",
+          "launchYear": "1882",
+          "builder": "Barrow Shipbuilding Company"
+        },
+        {
+          "name": "RMS Scythia",
+          "path": "ships/rms-scythia.html",
+          "url": "/ships/rms-scythia",
+          "launchYear": "1920",
+          "builder": "Vickers Ltd"
+        },
+        {
+          "name": "RMS Antonia (1922)",
+          "path": "ships/rms-antonia.html",
+          "url": "/ships/rms-antonia",
+          "launchYear": "1921",
+          "builder": "Vickers Ltd."
+        },
+        {
+          "name": "SS Orama",
+          "path": "ships/ss-orama.html",
+          "url": "/ships/ss-orama",
+          "launchYear": "1924",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Orford",
+          "path": "ships/ss-orford.html",
+          "url": "/ships/ss-orford",
+          "launchYear": "1927",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Orontes (1929)",
+          "path": "ships/ss-orontes.html",
+          "url": "/ships/ss-orontes",
+          "launchYear": "1929",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Strathnaver",
+          "path": "ships/rms-strathnaver.html",
+          "url": "/ships/rms-strathnaver",
+          "launchYear": "1931",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Strathaird",
+          "path": "ships/ss-strathaird.html",
+          "url": "/ships/ss-strathaird",
+          "launchYear": "1931",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Queen of Bermuda",
+          "path": "ships/ss-queen-of-bermuda.html",
+          "url": "/ships/ss-queen-of-bermuda",
+          "launchYear": "1932",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Orion",
+          "path": "ships/ss-orion.html",
+          "url": "/ships/ss-orion",
+          "launchYear": "1934",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Strathmore",
+          "path": "ships/ss-strathmore.html",
+          "url": "/ships/ss-strathmore",
+          "launchYear": "1935",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Orcades (1948)",
+          "path": "ships/rms-orcades-1948.html",
+          "url": "/ships/rms-orcades-1948",
+          "launchYear": "1947",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Himalaya (1949)",
+          "path": "ships/ss-himalaya.html",
+          "url": "/ships/ss-himalaya",
+          "launchYear": "1948",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Chusan (1950)",
+          "path": "ships/ss-chusan.html",
+          "url": "/ships/ss-chusan",
+          "launchYear": "1949",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Oronsay (1951)",
+          "path": "ships/rms-oronsay.html",
+          "url": "/ships/rms-oronsay",
+          "launchYear": "1950",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Orsova (1954)",
+          "path": "ships/rms-orsova.html",
+          "url": "/ships/rms-orsova",
+          "launchYear": "1953",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Oriana",
+          "path": "ships/ss-oriana.html",
+          "url": "/ships/ss-oriana",
+          "launchYear": "1959",
+          "builder": "Vickers-Armstrongs (Shipbuilders) Ltd."
+        }
+      ]
+    },
+    {
       "id": "glasgow",
       "name": "Glasgow",
       "rawValues": [
@@ -945,7 +1109,7 @@
         "Robert Napier & Sons",
         "Tod & McGregor"
       ],
-      "shipCount": 14,
+      "shipCount": 15,
       "ships": [
         {
           "name": "RMS Persia",
@@ -1039,6 +1203,13 @@
           "builder": "Barclay, Curle & Company"
         },
         {
+          "name": "SS Comorin (1925)",
+          "path": "ships/ss-comorin.html",
+          "url": "/ships/ss-comorin",
+          "launchYear": "1924",
+          "builder": "Barclay, Curle & Company"
+        },
+        {
           "name": "RMS Viceroy of India",
           "path": "ships/rms-viceroy-of-india.html",
           "url": "/ships/rms-viceroy-of-india",
@@ -1054,11 +1225,12 @@
         "Govan"
       ],
       "builders": [
+        "Alexander Stephen & Sons",
         "Fairfield Shipbuilding & Engineering Co.",
         "Harland & Wolff",
         "John Elder & Co."
       ],
-      "shipCount": 13,
+      "shipCount": 14,
       "ships": [
         {
           "name": "RMS Umbria (1884)",
@@ -1145,104 +1317,18 @@
           "builder": "Fairfield Shipbuilding & Engineering Co."
         },
         {
+          "name": "SS Chitral (1925)",
+          "path": "ships/ss-chitral.html",
+          "url": "/ships/ss-chitral",
+          "launchYear": "1925",
+          "builder": "Alexander Stephen & Sons"
+        },
+        {
           "name": "RMS Empress of Japan (1929)",
           "path": "ships/rms-empress-of-japan-1929.html",
           "url": "/ships/rms-empress-of-japan-1929",
           "launchYear": "1929",
           "builder": "Fairfield Shipbuilding & Engineering Co."
-        }
-      ]
-    },
-    {
-      "id": "barrow-in-furness",
-      "name": "Barrow-in-Furness",
-      "rawValues": [
-        "Barrow-in-Furness"
-      ],
-      "builders": [
-        "Barrow Shipbuilding Company",
-        "Vickers Ltd",
-        "Vickers-Armstrongs",
-        "Vickers-Armstrongs (Shipbuilders) Ltd."
-      ],
-      "shipCount": 11,
-      "ships": [
-        {
-          "name": "SS La Normandie",
-          "path": "ships/ss-la-normandie.html",
-          "url": "/ships/ss-la-normandie",
-          "launchYear": "1882",
-          "builder": "Barrow Shipbuilding Company"
-        },
-        {
-          "name": "RMS Scythia",
-          "path": "ships/rms-scythia.html",
-          "url": "/ships/rms-scythia",
-          "launchYear": "1920",
-          "builder": "Vickers Ltd"
-        },
-        {
-          "name": "SS Orama",
-          "path": "ships/ss-orama.html",
-          "url": "/ships/ss-orama",
-          "launchYear": "1924",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Orford",
-          "path": "ships/ss-orford.html",
-          "url": "/ships/ss-orford",
-          "launchYear": "1927",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Orontes (1929)",
-          "path": "ships/ss-orontes.html",
-          "url": "/ships/ss-orontes",
-          "launchYear": "1929",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "RMS Strathnaver",
-          "path": "ships/rms-strathnaver.html",
-          "url": "/ships/rms-strathnaver",
-          "launchYear": "1931",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Strathaird",
-          "path": "ships/ss-strathaird.html",
-          "url": "/ships/ss-strathaird",
-          "launchYear": "1931",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Queen of Bermuda",
-          "path": "ships/ss-queen-of-bermuda.html",
-          "url": "/ships/ss-queen-of-bermuda",
-          "launchYear": "1932",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Orion",
-          "path": "ships/ss-orion.html",
-          "url": "/ships/ss-orion",
-          "launchYear": "1934",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "RMS Strathmore",
-          "path": "ships/ss-strathmore.html",
-          "url": "/ships/ss-strathmore",
-          "launchYear": "1935",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Oriana",
-          "path": "ships/ss-oriana.html",
-          "url": "/ships/ss-oriana",
-          "launchYear": "1959",
-          "builder": "Vickers-Armstrongs (Shipbuilders) Ltd."
         }
       ]
     },
@@ -1254,11 +1340,12 @@
       ],
       "builders": [
         "AG Vulcan, Stettin",
+        "AG Weser, Bremen",
         "Blohm & Voss, Hamburg",
         "Germaniawerft / Friedrich Krupp, Kiel",
         "Joh. C. Tecklenborg, Geestemünde"
       ],
-      "shipCount": 10,
+      "shipCount": 11,
       "ships": [
         {
           "name": "SS Friedrich der Grosse",
@@ -1324,11 +1411,108 @@
           "builder": "Germaniawerft / Friedrich Krupp, Kiel"
         },
         {
+          "name": "SS Athos II (1927)",
+          "path": "ships/ss-athos-ii.html",
+          "url": "/ships/ss-athos-ii",
+          "launchYear": "1925",
+          "builder": "AG Weser, Bremen"
+        },
+        {
           "name": "SS Milwaukee",
           "path": "ships/ss-milwaukee.html",
           "url": "/ships/ss-milwaukee",
           "launchYear": "1929",
           "builder": "Blohm & Voss, Hamburg"
+        }
+      ]
+    },
+    {
+      "id": "saint-nazaire",
+      "name": "Saint-Nazaire",
+      "rawValues": [
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "builders": [
+        "Ateliers et Chantiers de Bretagne",
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët",
+        "Ateliers et Chantiers de la Loire",
+        "Chantiers & Ateliers de Penhoët",
+        "Chantiers de Penhoët",
+        "Chantiers de l'Atlantique",
+        "Chantiers de l’Atlantique"
+      ],
+      "shipCount": 10,
+      "ships": [
+        {
+          "name": "SS La Bretagne",
+          "path": "ships/ss-la-bretagne.html",
+          "url": "/ships/ss-la-bretagne",
+          "launchYear": "1885",
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
+        },
+        {
+          "name": "SS La Provence",
+          "path": "ships/ss-la-provence.html",
+          "url": "/ships/ss-la-provence",
+          "launchYear": "1905",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Flandre",
+          "path": "ships/ss-flandre.html",
+          "url": "/ships/ss-flandre",
+          "launchYear": "1913",
+          "builder": "Chantiers de l'Atlantique"
+        },
+        {
+          "name": "SS Paris",
+          "path": "ships/ss-paris.html",
+          "url": "/ships/ss-paris",
+          "launchYear": "1916",
+          "builder": "Chantiers & Ateliers de Penhoët"
+        },
+        {
+          "name": "SS Île de France",
+          "path": "ships/ss-ile-de-france.html",
+          "url": "/ships/ss-ile-de-france",
+          "launchYear": "1926",
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
+        },
+        {
+          "name": "MS Félix Roussel (1931)",
+          "path": "ships/ms-felix-roussel.html",
+          "url": "/ships/ms-felix-roussel",
+          "launchYear": "1929",
+          "builder": "Ateliers et Chantiers de la Loire"
+        },
+        {
+          "name": "MS Georges Philippar (1932)",
+          "path": "ships/ms-georges-philippar.html",
+          "url": "/ships/ms-georges-philippar",
+          "launchYear": "1930",
+          "builder": "Ateliers et Chantiers de la Loire"
+        },
+        {
+          "name": "SS Normandie",
+          "path": "ships/ss-normandie.html",
+          "url": "/ships/ss-normandie",
+          "launchYear": "1932",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Bretagne",
+          "path": "ships/ss-bretagne.html",
+          "url": "/ships/ss-bretagne",
+          "launchYear": "1951",
+          "builder": "Ateliers et Chantiers de Bretagne"
+        },
+        {
+          "name": "SS France",
+          "path": "ships/ss-france.html",
+          "url": "/ships/ss-france",
+          "launchYear": "1960",
+          "builder": "Chantiers de l’Atlantique"
         }
       ]
     },
@@ -1477,81 +1661,6 @@
           "url": "/ships/ss-michelangelo-1965",
           "launchYear": "1962",
           "builder": "Ansaldo, Sestri Ponente"
-        }
-      ]
-    },
-    {
-      "id": "saint-nazaire",
-      "name": "Saint-Nazaire",
-      "rawValues": [
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
-      ],
-      "builders": [
-        "Ateliers et Chantiers de Bretagne",
-        "Ateliers et Chantiers de Saint-Nazaire Penhoët",
-        "Chantiers & Ateliers de Penhoët",
-        "Chantiers de Penhoët",
-        "Chantiers de l'Atlantique",
-        "Chantiers de l’Atlantique"
-      ],
-      "shipCount": 8,
-      "ships": [
-        {
-          "name": "SS La Bretagne",
-          "path": "ships/ss-la-bretagne.html",
-          "url": "/ships/ss-la-bretagne",
-          "launchYear": "1885",
-          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
-        },
-        {
-          "name": "SS La Provence",
-          "path": "ships/ss-la-provence.html",
-          "url": "/ships/ss-la-provence",
-          "launchYear": "1905",
-          "builder": "Chantiers de Penhoët"
-        },
-        {
-          "name": "SS Flandre",
-          "path": "ships/ss-flandre.html",
-          "url": "/ships/ss-flandre",
-          "launchYear": "1913",
-          "builder": "Chantiers de l'Atlantique"
-        },
-        {
-          "name": "SS Paris",
-          "path": "ships/ss-paris.html",
-          "url": "/ships/ss-paris",
-          "launchYear": "1916",
-          "builder": "Chantiers & Ateliers de Penhoët"
-        },
-        {
-          "name": "SS Île de France",
-          "path": "ships/ss-ile-de-france.html",
-          "url": "/ships/ss-ile-de-france",
-          "launchYear": "1926",
-          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
-        },
-        {
-          "name": "SS Normandie",
-          "path": "ships/ss-normandie.html",
-          "url": "/ships/ss-normandie",
-          "launchYear": "1932",
-          "builder": "Chantiers de Penhoët"
-        },
-        {
-          "name": "SS Bretagne",
-          "path": "ships/ss-bretagne.html",
-          "url": "/ships/ss-bretagne",
-          "launchYear": "1951",
-          "builder": "Ateliers et Chantiers de Bretagne"
-        },
-        {
-          "name": "SS France",
-          "path": "ships/ss-france.html",
-          "url": "/ships/ss-france",
-          "launchYear": "1960",
-          "builder": "Chantiers de l’Atlantique"
         }
       ]
     },
@@ -1754,6 +1863,64 @@
       ]
     },
     {
+      "id": "monfalcone",
+      "name": "Monfalcone",
+      "rawValues": [
+        "Monfalcone"
+      ],
+      "builders": [
+        "Cantiere Navale Triestino",
+        "Cantieri Riuniti dell'Adriatico",
+        "Cantieri Riuniti dell’Adriatico",
+        "Cantieri Riuniti dell’Adriatico, San Marco yard"
+      ],
+      "shipCount": 6,
+      "ships": [
+        {
+          "name": "MS Vulcania",
+          "path": "ships/ms-vulcania.html",
+          "url": "/ships/ms-vulcania",
+          "launchYear": "1926",
+          "builder": "Cantiere Navale Triestino"
+        },
+        {
+          "name": "Neptunia",
+          "path": "ships/neptunia.html",
+          "url": "/ships/neptunia",
+          "launchYear": "1931",
+          "builder": "Cantiere Navale Triestino"
+        },
+        {
+          "name": "Oceania",
+          "path": "ships/oceania.html",
+          "url": "/ships/oceania",
+          "launchYear": "1932",
+          "builder": "Cantieri Riuniti dell’Adriatico"
+        },
+        {
+          "name": "MS Piłsudski (1935)",
+          "path": "ships/ms-pilsudski.html",
+          "url": "/ships/ms-pilsudski",
+          "launchYear": "1934",
+          "builder": "Cantieri Riuniti dell'Adriatico"
+        },
+        {
+          "name": "MS Batory (1936)",
+          "path": "ships/ms-batory.html",
+          "url": "/ships/ms-batory",
+          "launchYear": "1935",
+          "builder": "Cantieri Riuniti dell'Adriatico"
+        },
+        {
+          "name": "SS Raffaello (1965)",
+          "path": "ships/ss-raffaello-1965.html",
+          "url": "/ships/ss-raffaello-1965",
+          "launchYear": "1963",
+          "builder": "Cantieri Riuniti dell’Adriatico, San Marco yard"
+        }
+      ]
+    },
+    {
       "id": "dalmuir",
       "name": "Dalmuir",
       "rawValues": [
@@ -1839,45 +2006,78 @@
       ]
     },
     {
-      "id": "monfalcone",
-      "name": "Monfalcone",
+      "id": "la-ciotat",
+      "name": "La Ciotat",
       "rawValues": [
-        "Monfalcone"
+        "La Ciotat"
       ],
       "builders": [
-        "Cantiere Navale Triestino",
-        "Cantieri Riuniti dell’Adriatico",
-        "Cantieri Riuniti dell’Adriatico, San Marco yard"
+        "Société Provençale de Constructions Navales"
       ],
       "shipCount": 4,
       "ships": [
         {
-          "name": "MS Vulcania",
-          "path": "ships/ms-vulcania.html",
-          "url": "/ships/ms-vulcania",
-          "launchYear": "1926",
-          "builder": "Cantiere Navale Triestino"
+          "name": "SS Champollion (1925)",
+          "path": "ships/ss-champollion.html",
+          "url": "/ships/ss-champollion",
+          "launchYear": "1924",
+          "builder": "Société Provençale de Constructions Navales"
         },
         {
-          "name": "Neptunia",
-          "path": "ships/neptunia.html",
-          "url": "/ships/neptunia",
+          "name": "SS Mariette Pacha (1926)",
+          "path": "ships/ss-mariette-pacha.html",
+          "url": "/ships/ss-mariette-pacha",
+          "launchYear": "1925",
+          "builder": "Société Provençale de Constructions Navales"
+        },
+        {
+          "name": "MV Jean Laborde (1931)",
+          "path": "ships/mv-jean-laborde.html",
+          "url": "/ships/mv-jean-laborde",
+          "launchYear": "1929",
+          "builder": "Société Provençale de Constructions Navales"
+        },
+        {
+          "name": "SS Maréchal Joffre (1933)",
+          "path": "ships/ss-marechal-joffre.html",
+          "url": "/ships/ss-marechal-joffre",
           "launchYear": "1931",
-          "builder": "Cantiere Navale Triestino"
+          "builder": "Société Provençale de Constructions Navales"
+        }
+      ]
+    },
+    {
+      "id": "amsterdam",
+      "name": "Amsterdam",
+      "rawValues": [
+        "Amsterdam"
+      ],
+      "builders": [
+        "N.V. Nederlandsche Scheepsbouw-Maatschappij",
+        "Nederlandsche Scheepsbouw Maatschappij (NSM)"
+      ],
+      "shipCount": 3,
+      "ships": [
+        {
+          "name": "MS Johan van Oldenbarnevelt",
+          "path": "ships/ss-johan-van-oldenbarnevelt.html",
+          "url": "/ships/ss-johan-van-oldenbarnevelt",
+          "launchYear": "1929",
+          "builder": "Nederlandsche Scheepsbouw Maatschappij (NSM)"
         },
         {
-          "name": "Oceania",
-          "path": "ships/oceania.html",
-          "url": "/ships/oceania",
-          "launchYear": "1932",
-          "builder": "Cantieri Riuniti dell’Adriatico"
+          "name": "MS Marnix Van St Aldegonde",
+          "path": "ships/ss-marnix-van-st-aldegonde.html",
+          "url": "/ships/ss-marnix-van-st-aldegonde",
+          "launchYear": "1929",
+          "builder": "Nederlandsche Scheepsbouw Maatschappij (NSM)"
         },
         {
-          "name": "SS Raffaello (1965)",
-          "path": "ships/ss-raffaello-1965.html",
-          "url": "/ships/ss-raffaello-1965",
-          "launchYear": "1963",
-          "builder": "Cantieri Riuniti dell’Adriatico, San Marco yard"
+          "name": "MS Oranje (1939)",
+          "path": "ships/ms-oranje.html",
+          "url": "/ships/ms-oranje",
+          "launchYear": "1938",
+          "builder": "N.V. Nederlandsche Scheepsbouw-Maatschappij"
         }
       ]
     },
@@ -2020,29 +2220,37 @@
       ]
     },
     {
-      "id": "amsterdam",
-      "name": "Amsterdam",
+      "id": "virginia",
+      "name": "Virginia",
       "rawValues": [
-        "Amsterdam"
+        "Virginia"
       ],
       "builders": [
-        "Nederlandsche Scheepsbouw Maatschappij (NSM)"
+        "Newport News",
+        "Newport News Shipbuilding & Dry Dock Co."
       ],
-      "shipCount": 2,
+      "shipCount": 3,
       "ships": [
         {
-          "name": "MS Johan van Oldenbarnevelt",
-          "path": "ships/ss-johan-van-oldenbarnevelt.html",
-          "url": "/ships/ss-johan-van-oldenbarnevelt",
-          "launchYear": "1929",
-          "builder": "Nederlandsche Scheepsbouw Maatschappij (NSM)"
+          "name": "SS California",
+          "path": "ships/ss-california.html",
+          "url": "/ships/ss-california",
+          "launchYear": "1927",
+          "builder": "Newport News"
         },
         {
-          "name": "MS Marnix Van St Aldegonde",
-          "path": "ships/ss-marnix-van-st-aldegonde.html",
-          "url": "/ships/ss-marnix-van-st-aldegonde",
-          "launchYear": "1929",
-          "builder": "Nederlandsche Scheepsbouw Maatschappij (NSM)"
+          "name": "SS President Hoover",
+          "path": "ships/ss-president-hoover.html",
+          "url": "/ships/ss-president-hoover",
+          "launchYear": "1930",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
+        },
+        {
+          "name": "SS United States",
+          "path": "ships/ss-us.html",
+          "url": "/ships/ss-us",
+          "launchYear": "1951",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
         }
       ]
     },
@@ -2070,6 +2278,34 @@
           "url": "/ships/ss-great-britain-1843",
           "launchYear": "1843",
           "builder": "William Patterson"
+        }
+      ]
+    },
+    {
+      "id": "england",
+      "name": "England",
+      "rawValues": [
+        "England"
+      ],
+      "builders": [
+        "Furness, Withy & Co., West Hartlepool",
+        "Vickers-Armstrongs Ltd., Barrow-in-Furness"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS Poland",
+          "path": "ships/ss-poland.html",
+          "url": "/ships/ss-poland",
+          "launchYear": "1897",
+          "builder": "Furness, Withy & Co., West Hartlepool"
+        },
+        {
+          "name": "RMS Orcades (1937)",
+          "path": "ships/rms-orcades.html",
+          "url": "/ships/rms-orcades",
+          "launchYear": "1936",
+          "builder": "Vickers-Armstrongs Ltd., Barrow-in-Furness"
         }
       ]
     },
@@ -2380,33 +2616,6 @@
       ]
     },
     {
-      "id": "virginia",
-      "name": "Virginia",
-      "rawValues": [
-        "Virginia"
-      ],
-      "builders": [
-        "Newport News Shipbuilding & Dry Dock Co."
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "SS President Hoover",
-          "path": "ships/ss-president-hoover.html",
-          "url": "/ships/ss-president-hoover",
-          "launchYear": "1930",
-          "builder": "Newport News Shipbuilding & Dry Dock Co."
-        },
-        {
-          "name": "SS United States",
-          "path": "ships/ss-us.html",
-          "url": "/ships/ss-us",
-          "launchYear": "1951",
-          "builder": "Newport News Shipbuilding & Dry Dock Co."
-        }
-      ]
-    },
-    {
       "id": "birkenhead-england",
       "name": "Birkenhead, England",
       "rawValues": [
@@ -2527,26 +2736,6 @@
       ]
     },
     {
-      "id": "england",
-      "name": "England",
-      "rawValues": [
-        "England"
-      ],
-      "builders": [
-        "Furness, Withy & Co., West Hartlepool"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Poland",
-          "path": "ships/ss-poland.html",
-          "url": "/ships/ss-poland",
-          "launchYear": "1897",
-          "builder": "Furness, Withy & Co., West Hartlepool"
-        }
-      ]
-    },
-    {
       "id": "geestemunde",
       "name": "Geestemünde",
       "rawValues": [
@@ -2647,6 +2836,26 @@
       ]
     },
     {
+      "id": "high-walker-on-tyne",
+      "name": "High Walker-on-Tyne",
+      "rawValues": [
+        "High Walker-on-Tyne"
+      ],
+      "builders": [
+        "Armstrong Whitworth & Co."
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "RMS Ausonia (1922)",
+          "path": "ships/rms-ausonia.html",
+          "url": "/ships/rms-ausonia",
+          "launchYear": "1921",
+          "builder": "Armstrong Whitworth & Co."
+        }
+      ]
+    },
+    {
       "id": "italy",
       "name": "Italy",
       "rawValues": [
@@ -2663,6 +2872,26 @@
           "url": "/ships/ss-principessa-mafalda",
           "launchYear": "1908",
           "builder": "Cantiere Navale di Riva Trigoso, Riva Trigoso"
+        }
+      ]
+    },
+    {
+      "id": "la-seyne",
+      "name": "La Seyne",
+      "rawValues": [
+        "La Seyne"
+      ],
+      "builders": [
+        "Forges et Chantiers de la Méditerranée"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "MS Aramis (1932)",
+          "path": "ships/ms-aramis.html",
+          "url": "/ships/ms-aramis",
+          "launchYear": "1931",
+          "builder": "Forges et Chantiers de la Méditerranée"
         }
       ]
     },
@@ -2937,6 +3166,20 @@
       ]
     },
     {
+      "name": "MS Aramis (1932)",
+      "path": "ships/ms-aramis.html",
+      "url": "/ships/ms-aramis",
+      "launchYear": "1931",
+      "assignments": [
+        {
+          "builder": "Forges et Chantiers de la Méditerranée",
+          "builderId": "forges-et-chantiers-de-la-mediterranee",
+          "location": "La Seyne",
+          "locationRaw": "La Seyne"
+        }
+      ]
+    },
+    {
       "name": "MS Augustus",
       "path": "ships/ms-augustus.html",
       "url": "/ships/ms-augustus",
@@ -2951,6 +3194,20 @@
       ]
     },
     {
+      "name": "MS Batory (1936)",
+      "path": "ships/ms-batory.html",
+      "url": "/ships/ms-batory",
+      "launchYear": "1935",
+      "assignments": [
+        {
+          "builder": "Cantieri Riuniti dell'Adriatico",
+          "builderId": "cantieri-riuniti-dell-adriatico",
+          "location": "Monfalcone",
+          "locationRaw": "Monfalcone"
+        }
+      ]
+    },
+    {
       "name": "MS Bermuda",
       "path": "ships/ms-bermuda.html",
       "url": "/ships/ms-bermuda",
@@ -2961,6 +3218,34 @@
           "builderId": "workman-clark-and-co",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "MS Félix Roussel (1931)",
+      "path": "ships/ms-felix-roussel.html",
+      "url": "/ships/ms-felix-roussel",
+      "launchYear": "1929",
+      "assignments": [
+        {
+          "builder": "Ateliers et Chantiers de la Loire",
+          "builderId": "ateliers-et-chantiers-de-la-loire",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire"
+        }
+      ]
+    },
+    {
+      "name": "MS Georges Philippar (1932)",
+      "path": "ships/ms-georges-philippar.html",
+      "url": "/ships/ms-georges-philippar",
+      "launchYear": "1930",
+      "assignments": [
+        {
+          "builder": "Ateliers et Chantiers de la Loire",
+          "builderId": "ateliers-et-chantiers-de-la-loire",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire"
         }
       ]
     },
@@ -2989,6 +3274,34 @@
           "builderId": "blohm-and-voss",
           "location": "Hamburg",
           "locationRaw": "Hamburg"
+        }
+      ]
+    },
+    {
+      "name": "MS Oranje (1939)",
+      "path": "ships/ms-oranje.html",
+      "url": "/ships/ms-oranje",
+      "launchYear": "1938",
+      "assignments": [
+        {
+          "builder": "N.V. Nederlandsche Scheepsbouw-Maatschappij",
+          "builderId": "n-v-nederlandsche-scheepsbouw-maatschappij",
+          "location": "Amsterdam",
+          "locationRaw": "Amsterdam"
+        }
+      ]
+    },
+    {
+      "name": "MS Piłsudski (1935)",
+      "path": "ships/ms-pilsudski.html",
+      "url": "/ships/ms-pilsudski",
+      "launchYear": "1934",
+      "assignments": [
+        {
+          "builder": "Cantieri Riuniti dell'Adriatico",
+          "builderId": "cantieri-riuniti-dell-adriatico",
+          "location": "Monfalcone",
+          "locationRaw": "Monfalcone"
         }
       ]
     },
@@ -3052,6 +3365,20 @@
           "builderId": "harland-and-wolff",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "MV Jean Laborde (1931)",
+      "path": "ships/mv-jean-laborde.html",
+      "url": "/ships/mv-jean-laborde",
+      "launchYear": "1929",
+      "assignments": [
+        {
+          "builder": "Société Provençale de Constructions Navales",
+          "builderId": "societe-provencale-de-constructions-navales",
+          "location": "La Ciotat",
+          "locationRaw": "La Ciotat"
         }
       ]
     },
@@ -3210,6 +3537,20 @@
       ]
     },
     {
+      "name": "RMS Antonia (1922)",
+      "path": "ships/rms-antonia.html",
+      "url": "/ships/rms-antonia",
+      "launchYear": "1921",
+      "assignments": [
+        {
+          "builder": "Vickers Ltd.",
+          "builderId": "vickers-ltd",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness"
+        }
+      ]
+    },
+    {
       "name": "RMS Aquitania",
       "path": "ships/rms-aquitania.html",
       "url": "/ships/rms-aquitania",
@@ -3276,6 +3617,20 @@
           "builderId": "swan-hunter-and-wigham-richardson",
           "location": "Wallsend",
           "locationRaw": "Wallsend"
+        }
+      ]
+    },
+    {
+      "name": "RMS Ausonia (1922)",
+      "path": "ships/rms-ausonia.html",
+      "url": "/ships/rms-ausonia",
+      "launchYear": "1921",
+      "assignments": [
+        {
+          "builder": "Armstrong Whitworth & Co.",
+          "builderId": "armstrong-whitworth-and-co",
+          "location": "High Walker-on-Tyne",
+          "locationRaw": "High Walker-on-Tyne"
         }
       ]
     },
@@ -3812,6 +4167,48 @@
       ]
     },
     {
+      "name": "RMS Orcades (1948)",
+      "path": "ships/rms-orcades-1948.html",
+      "url": "/ships/rms-orcades-1948",
+      "launchYear": "1947",
+      "assignments": [
+        {
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness"
+        }
+      ]
+    },
+    {
+      "name": "RMS Orcades (1937)",
+      "path": "ships/rms-orcades.html",
+      "url": "/ships/rms-orcades",
+      "launchYear": "1936",
+      "assignments": [
+        {
+          "builder": "Vickers-Armstrongs Ltd., Barrow-in-Furness",
+          "builderId": "vickers-armstrongs-ltd-barrow-in-furness",
+          "location": "England",
+          "locationRaw": "England"
+        }
+      ]
+    },
+    {
+      "name": "RMS Oronsay (1951)",
+      "path": "ships/rms-oronsay.html",
+      "url": "/ships/rms-oronsay",
+      "launchYear": "1950",
+      "assignments": [
+        {
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness"
+        }
+      ]
+    },
+    {
       "name": "RMS Orontes",
       "path": "ships/rms-orontes.html",
       "url": "/ships/rms-orontes",
@@ -3822,6 +4219,20 @@
           "builderId": "fairfield-shipbuilding-and-engineering-co",
           "location": "Govan",
           "locationRaw": "Govan"
+        }
+      ]
+    },
+    {
+      "name": "RMS Orsova (1954)",
+      "path": "ships/rms-orsova.html",
+      "url": "/ships/rms-orsova",
+      "launchYear": "1953",
+      "assignments": [
+        {
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness"
         }
       ]
     },
@@ -3872,6 +4283,48 @@
       "path": "ships/rms-queen-mary.html",
       "url": "/ships/rms-queen-mary",
       "launchYear": "1934",
+      "assignments": [
+        {
+          "builder": "John Brown & Company",
+          "builderId": "john-brown-and-company",
+          "location": "Clydebank",
+          "locationRaw": "Clydebank"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitane (1929)",
+      "path": "ships/rms-rangitane.html",
+      "url": "/ships/rms-rangitane",
+      "launchYear": "1929",
+      "assignments": [
+        {
+          "builder": "John Brown & Company",
+          "builderId": "john-brown-and-company",
+          "location": "Clydebank",
+          "locationRaw": "Clydebank"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitata (1929)",
+      "path": "ships/rms-rangitata.html",
+      "url": "/ships/rms-rangitata",
+      "launchYear": "1929",
+      "assignments": [
+        {
+          "builder": "John Brown & Company",
+          "builderId": "john-brown-and-company",
+          "location": "Clydebank",
+          "locationRaw": "Clydebank"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitiki (1929)",
+      "path": "ships/rms-rangitiki.html",
+      "url": "/ships/rms-rangitiki",
+      "launchYear": "1928",
       "assignments": [
         {
           "builder": "John Brown & Company",
@@ -4162,6 +4615,13 @@
       ]
     },
     {
+      "name": "SS André Lebon (1915)",
+      "path": "ships/ss-andre-lebon.html",
+      "url": "/ships/ss-andre-lebon",
+      "launchYear": "1913",
+      "assignments": []
+    },
+    {
       "name": "SS Andrea Doria",
       "path": "ships/ss-andrea-doria.html",
       "url": "/ships/ss-andrea-doria",
@@ -4298,6 +4758,20 @@
           "builderId": "harland-and-wolff",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS Athos II (1927)",
+      "path": "ships/ss-athos-ii.html",
+      "url": "/ships/ss-athos-ii",
+      "launchYear": "1925",
+      "assignments": [
+        {
+          "builder": "AG Weser, Bremen",
+          "builderId": "ag-weser-bremen",
+          "location": "Germany",
+          "locationRaw": "Germany"
         }
       ]
     },
@@ -4554,6 +5028,20 @@
       ]
     },
     {
+      "name": "SS California",
+      "path": "ships/ss-california.html",
+      "url": "/ships/ss-california",
+      "launchYear": "1927",
+      "assignments": [
+        {
+          "builder": "Newport News",
+          "builderId": "newport-news",
+          "location": "Virginia",
+          "locationRaw": "Virginia"
+        }
+      ]
+    },
+    {
       "name": "SS Canada (1896)",
       "path": "ships/ss-canada-1896.html",
       "url": "/ships/ss-canada-1896",
@@ -4701,6 +5189,20 @@
       "assignments": []
     },
     {
+      "name": "SS Champollion (1925)",
+      "path": "ships/ss-champollion.html",
+      "url": "/ships/ss-champollion",
+      "launchYear": "1924",
+      "assignments": [
+        {
+          "builder": "Société Provençale de Constructions Navales",
+          "builderId": "societe-provencale-de-constructions-navales",
+          "location": "La Ciotat",
+          "locationRaw": "La Ciotat"
+        }
+      ]
+    },
+    {
       "name": "SS Chicago (1908)",
       "path": "ships/ss-chicago-1908.html",
       "url": "/ships/ss-chicago-1908",
@@ -4711,6 +5213,34 @@
           "builderId": "chantiers-and-ateliers-de-saint-nazaire-penhoet-saint-nazaire",
           "location": "France",
           "locationRaw": "France"
+        }
+      ]
+    },
+    {
+      "name": "SS Chitral (1925)",
+      "path": "ships/ss-chitral.html",
+      "url": "/ships/ss-chitral",
+      "launchYear": "1925",
+      "assignments": [
+        {
+          "builder": "Alexander Stephen & Sons",
+          "builderId": "alexander-stephen-and-sons",
+          "location": "Govan",
+          "locationRaw": "Govan"
+        }
+      ]
+    },
+    {
+      "name": "SS Chusan (1950)",
+      "path": "ships/ss-chusan.html",
+      "url": "/ships/ss-chusan",
+      "launchYear": "1949",
+      "assignments": [
+        {
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness"
         }
       ]
     },
@@ -4795,6 +5325,20 @@
           "builderId": "harland-and-wolff",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS Comorin (1925)",
+      "path": "ships/ss-comorin.html",
+      "url": "/ships/ss-comorin",
+      "launchYear": "1924",
+      "assignments": [
+        {
+          "builder": "Barclay, Curle & Company",
+          "builderId": "barclay-curle-and-company",
+          "location": "Glasgow",
+          "locationRaw": "Glasgow"
         }
       ]
     },
@@ -5400,6 +5944,34 @@
       ]
     },
     {
+      "name": "SS Himalaya (1949)",
+      "path": "ships/ss-himalaya.html",
+      "url": "/ships/ss-himalaya",
+      "launchYear": "1948",
+      "assignments": [
+        {
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness"
+        }
+      ]
+    },
+    {
+      "name": "SS Iberia (1954)",
+      "path": "ships/ss-iberia.html",
+      "url": "/ships/ss-iberia",
+      "launchYear": "1954",
+      "assignments": [
+        {
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Belfast",
+          "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
       "name": "SS Île de France",
       "path": "ships/ss-ile-de-france.html",
       "url": "/ships/ss-ile-de-france",
@@ -5849,6 +6421,34 @@
           "builderId": "new-york-shipbuilding-corporation-camden",
           "location": "New Jersey",
           "locationRaw": "New Jersey"
+        }
+      ]
+    },
+    {
+      "name": "SS Maréchal Joffre (1933)",
+      "path": "ships/ss-marechal-joffre.html",
+      "url": "/ships/ss-marechal-joffre",
+      "launchYear": "1931",
+      "assignments": [
+        {
+          "builder": "Société Provençale de Constructions Navales",
+          "builderId": "societe-provencale-de-constructions-navales",
+          "location": "La Ciotat",
+          "locationRaw": "La Ciotat"
+        }
+      ]
+    },
+    {
+      "name": "SS Mariette Pacha (1926)",
+      "path": "ships/ss-mariette-pacha.html",
+      "url": "/ships/ss-mariette-pacha",
+      "launchYear": "1925",
+      "assignments": [
+        {
+          "builder": "Société Provençale de Constructions Navales",
+          "builderId": "societe-provencale-de-constructions-navales",
+          "location": "La Ciotat",
+          "locationRaw": "La Ciotat"
         }
       ]
     },

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T02:20:46.701Z",
+  "generatedAt": "2026-09-23T07:55:37.583Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 300,
-    "guidesWithOperator": 300,
+    "shipGuides": 327,
+    "guidesWithOperator": 327,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 83,
+    "canonicalOperators": 87,
     "aliasedOperatorGroups": 20
   },
   "operators": [
@@ -36,10 +36,11 @@
         "Cunard Line / British & North American Royal Mail Steam Packet Company",
         "Cunard Line / Cunard Steamship Company Ltd.",
         "Cunard Line; British Government hire throughout active career",
+        "Cunard Line; later Cunard White Star",
         "Cunard Line; later Cunard-White Star during the merger era, then Cunard again",
         "Cunard Steamship Company"
       ],
-      "shipCount": 34
+      "shipCount": 36
     },
     {
       "id": "hamburg-america-line-hapag",
@@ -77,6 +78,29 @@
       "shipCount": 16
     },
     {
+      "id": "p-and-o",
+      "name": "P&O",
+      "rawValues": [
+        "P&O / P&O-Orient Lines",
+        "P&O; later P&O-Orient and P&O",
+        "Peninsular & Oriental Steam Navigation Company",
+        "Peninsular & Oriental Steam Navigation Company (P&O)",
+        "Peninsular and Oriental Steam Navigation Company (P&O)"
+      ],
+      "shipCount": 12
+    },
+    {
+      "id": "orient-line",
+      "name": "Orient Line",
+      "rawValues": [
+        "Orient Steam Navigation Company",
+        "Orient Steam Navigation Company (Orient Line)",
+        "Orient Steam Navigation Company; later P&O-Orient / P&O",
+        "Orient Steam Navigation Company; later P&O-Orient and P&O"
+      ],
+      "shipCount": 11
+    },
+    {
       "id": "canadian-pacific",
       "name": "Canadian Pacific",
       "rawValues": [
@@ -89,6 +113,14 @@
       "shipCount": 9
     },
     {
+      "id": "compagnie-des-messageries-maritimes",
+      "name": "Compagnie des Messageries Maritimes",
+      "rawValues": [
+        "Compagnie des Messageries Maritimes"
+      ],
+      "shipCount": 8
+    },
+    {
       "id": "holland-america-line",
       "name": "Holland America Line",
       "rawValues": [
@@ -97,25 +129,6 @@
         "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij"
       ],
       "shipCount": 8
-    },
-    {
-      "id": "orient-line",
-      "name": "Orient Line",
-      "rawValues": [
-        "Orient Steam Navigation Company",
-        "Orient Steam Navigation Company (Orient Line)"
-      ],
-      "shipCount": 7
-    },
-    {
-      "id": "p-and-o",
-      "name": "P&O",
-      "rawValues": [
-        "P&O / P&O-Orient Lines",
-        "Peninsular & Oriental Steam Navigation Company (P&O)",
-        "Peninsular and Oriental Steam Navigation Company (P&O)"
-      ],
-      "shipCount": 7
     },
     {
       "id": "union-castle-line",
@@ -250,6 +263,30 @@
       "shipCount": 3
     },
     {
+      "id": "new-zealand-shipping-company",
+      "name": "New Zealand Shipping Company",
+      "rawValues": [
+        "New Zealand Shipping Company"
+      ],
+      "shipCount": 3
+    },
+    {
+      "id": "panama-pacific-line",
+      "name": "Panama Pacific Line",
+      "rawValues": [
+        "Panama Pacific Line"
+      ],
+      "shipCount": 3
+    },
+    {
+      "id": "stoomvaart-maatschappij-nederland-netherland-line",
+      "name": "Stoomvaart Maatschappij Nederland (Netherland Line)",
+      "rawValues": [
+        "Stoomvaart Maatschappij Nederland (Netherland Line)"
+      ],
+      "shipCount": 3
+    },
+    {
       "id": "american-export-lines",
       "name": "American Export Lines",
       "rawValues": [
@@ -280,6 +317,14 @@
       "rawValues": [
         "Furness Bermuda Line",
         "Furness Bermuda Line / Furness, Withy group"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "gdynia-america-line",
+      "name": "Gdynia-America Line",
+      "rawValues": [
+        "Gdynia-America Line"
       ],
       "shipCount": 2
     },
@@ -344,22 +389,6 @@
       "name": "Pacific Mail Steamship Company",
       "rawValues": [
         "Pacific Mail Steamship Company"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "panama-pacific-line",
-      "name": "Panama Pacific Line",
-      "rawValues": [
-        "Panama Pacific Line"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "stoomvaart-maatschappij-nederland-netherland-line",
-      "name": "Stoomvaart Maatschappij Nederland (Netherland Line)",
-      "rawValues": [
-        "Stoomvaart Maatschappij Nederland (Netherland Line)"
       ],
       "shipCount": 2
     },
@@ -496,6 +525,14 @@
       "name": "Matson Navigation Co. (Matson Line)",
       "rawValues": [
         "Matson Navigation Co. (Matson Line)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "messageries-maritimes",
+      "name": "Messageries Maritimes",
+      "rawValues": [
+        "Messageries Maritimes"
       ],
       "shipCount": 1
     },
@@ -742,6 +779,14 @@
       "operator": "Union-Castle Line"
     },
     {
+      "name": "MS Aramis (1932)",
+      "path": "ships/ms-aramis.html",
+      "url": "/ships/ms-aramis",
+      "launchYear": "1931",
+      "operatorRaw": "Compagnie des Messageries Maritimes",
+      "operator": "Compagnie des Messageries Maritimes"
+    },
+    {
       "name": "MS Augustus",
       "path": "ships/ms-augustus.html",
       "url": "/ships/ms-augustus",
@@ -750,12 +795,36 @@
       "operator": "Navigazione Generale Italiana (NGI)"
     },
     {
+      "name": "MS Batory (1936)",
+      "path": "ships/ms-batory.html",
+      "url": "/ships/ms-batory",
+      "launchYear": "1935",
+      "operatorRaw": "Gdynia-America Line",
+      "operator": "Gdynia-America Line"
+    },
+    {
       "name": "MS Bermuda",
       "path": "ships/ms-bermuda.html",
       "url": "/ships/ms-bermuda",
       "launchYear": "1927",
       "operatorRaw": "Furness Bermuda Line / Furness, Withy group",
       "operator": "Furness Bermuda Line"
+    },
+    {
+      "name": "MS Félix Roussel (1931)",
+      "path": "ships/ms-felix-roussel.html",
+      "url": "/ships/ms-felix-roussel",
+      "launchYear": "1929",
+      "operatorRaw": "Compagnie des Messageries Maritimes",
+      "operator": "Compagnie des Messageries Maritimes"
+    },
+    {
+      "name": "MS Georges Philippar (1932)",
+      "path": "ships/ms-georges-philippar.html",
+      "url": "/ships/ms-georges-philippar",
+      "launchYear": "1930",
+      "operatorRaw": "Compagnie des Messageries Maritimes",
+      "operator": "Compagnie des Messageries Maritimes"
     },
     {
       "name": "MS Gripsholm (1925)",
@@ -772,6 +841,22 @@
       "launchYear": "1928",
       "operatorRaw": "Swedish American Line (Svenska Amerika Linien)",
       "operator": "Swedish American Line (Svenska Amerika Linien)"
+    },
+    {
+      "name": "MS Oranje (1939)",
+      "path": "ships/ms-oranje.html",
+      "url": "/ships/ms-oranje",
+      "launchYear": "1938",
+      "operatorRaw": "Stoomvaart Maatschappij Nederland (Netherland Line)",
+      "operator": "Stoomvaart Maatschappij Nederland (Netherland Line)"
+    },
+    {
+      "name": "MS Piłsudski (1935)",
+      "path": "ships/ms-pilsudski.html",
+      "url": "/ships/ms-pilsudski",
+      "launchYear": "1934",
+      "operatorRaw": "Gdynia-America Line",
+      "operator": "Gdynia-America Line"
     },
     {
       "name": "MS Saturnia",
@@ -812,6 +897,14 @@
       "launchYear": "1931",
       "operatorRaw": "White Star Line / Oceanic Steam Navigation Co.",
       "operator": "White Star Line"
+    },
+    {
+      "name": "MV Jean Laborde (1931)",
+      "path": "ships/mv-jean-laborde.html",
+      "url": "/ships/mv-jean-laborde",
+      "launchYear": "1929",
+      "operatorRaw": "Messageries Maritimes",
+      "operator": "Messageries Maritimes"
     },
     {
       "name": "Neptunia",
@@ -902,6 +995,14 @@
       "operator": "Royal Mail Lines"
     },
     {
+      "name": "RMS Antonia (1922)",
+      "path": "ships/rms-antonia.html",
+      "url": "/ships/rms-antonia",
+      "launchYear": "1921",
+      "operatorRaw": "Cunard Line",
+      "operator": "Cunard Line"
+    },
+    {
       "name": "RMS Aquitania",
       "path": "ships/rms-aquitania.html",
       "url": "/ships/rms-aquitania",
@@ -939,6 +1040,14 @@
       "url": "/ships/rms-aurania",
       "launchYear": "1916",
       "operatorRaw": "Cunard Line; British Government hire throughout active career",
+      "operator": "Cunard Line"
+    },
+    {
+      "name": "RMS Ausonia (1922)",
+      "path": "ships/rms-ausonia.html",
+      "url": "/ships/rms-ausonia",
+      "launchYear": "1921",
+      "operatorRaw": "Cunard Line; later Cunard White Star",
       "operator": "Cunard Line"
     },
     {
@@ -1246,11 +1355,43 @@
       "operator": "White Star Line"
     },
     {
+      "name": "RMS Orcades (1948)",
+      "path": "ships/rms-orcades-1948.html",
+      "url": "/ships/rms-orcades-1948",
+      "launchYear": "1947",
+      "operatorRaw": "Orient Steam Navigation Company; later P&O-Orient and P&O",
+      "operator": "Orient Line"
+    },
+    {
+      "name": "RMS Orcades (1937)",
+      "path": "ships/rms-orcades.html",
+      "url": "/ships/rms-orcades",
+      "launchYear": "1936",
+      "operatorRaw": "Orient Steam Navigation Company (Orient Line)",
+      "operator": "Orient Line"
+    },
+    {
+      "name": "RMS Oronsay (1951)",
+      "path": "ships/rms-oronsay.html",
+      "url": "/ships/rms-oronsay",
+      "launchYear": "1950",
+      "operatorRaw": "Orient Steam Navigation Company; later P&O-Orient and P&O",
+      "operator": "Orient Line"
+    },
+    {
       "name": "RMS Orontes",
       "path": "ships/rms-orontes.html",
       "url": "/ships/rms-orontes",
       "launchYear": "1902",
       "operatorRaw": "Orient Steam Navigation Company",
+      "operator": "Orient Line"
+    },
+    {
+      "name": "RMS Orsova (1954)",
+      "path": "ships/rms-orsova.html",
+      "url": "/ships/rms-orsova",
+      "launchYear": "1953",
+      "operatorRaw": "Orient Steam Navigation Company; later P&O-Orient / P&O",
       "operator": "Orient Line"
     },
     {
@@ -1284,6 +1425,30 @@
       "launchYear": "1934",
       "operatorRaw": "Cunard-White Star Line; later Cunard Line",
       "operator": "Cunard-White Star Line"
+    },
+    {
+      "name": "RMS Rangitane (1929)",
+      "path": "ships/rms-rangitane.html",
+      "url": "/ships/rms-rangitane",
+      "launchYear": "1929",
+      "operatorRaw": "New Zealand Shipping Company",
+      "operator": "New Zealand Shipping Company"
+    },
+    {
+      "name": "RMS Rangitata (1929)",
+      "path": "ships/rms-rangitata.html",
+      "url": "/ships/rms-rangitata",
+      "launchYear": "1929",
+      "operatorRaw": "New Zealand Shipping Company",
+      "operator": "New Zealand Shipping Company"
+    },
+    {
+      "name": "RMS Rangitiki (1929)",
+      "path": "ships/rms-rangitiki.html",
+      "url": "/ships/rms-rangitiki",
+      "launchYear": "1928",
+      "operatorRaw": "New Zealand Shipping Company",
+      "operator": "New Zealand Shipping Company"
     },
     {
       "name": "RMS Saxonia (1954)",
@@ -1446,6 +1611,14 @@
       "operator": "Hamburg America Line (HAPAG)"
     },
     {
+      "name": "SS André Lebon (1915)",
+      "path": "ships/ss-andre-lebon.html",
+      "url": "/ships/ss-andre-lebon",
+      "launchYear": "1913",
+      "operatorRaw": "Compagnie des Messageries Maritimes",
+      "operator": "Compagnie des Messageries Maritimes"
+    },
+    {
       "name": "SS Andrea Doria",
       "path": "ships/ss-andrea-doria.html",
       "url": "/ships/ss-andrea-doria",
@@ -1524,6 +1697,14 @@
       "launchYear": "1901",
       "operatorRaw": "White Star Line",
       "operator": "White Star Line"
+    },
+    {
+      "name": "SS Athos II (1927)",
+      "path": "ships/ss-athos-ii.html",
+      "url": "/ships/ss-athos-ii",
+      "launchYear": "1925",
+      "operatorRaw": "Compagnie des Messageries Maritimes",
+      "operator": "Compagnie des Messageries Maritimes"
     },
     {
       "name": "SS Atlantic (1873)",
@@ -1670,6 +1851,14 @@
       "operator": "White Star Line"
     },
     {
+      "name": "SS California",
+      "path": "ships/ss-california.html",
+      "url": "/ships/ss-california",
+      "launchYear": "1927",
+      "operatorRaw": "Panama Pacific Line",
+      "operator": "Panama Pacific Line"
+    },
+    {
       "name": "SS Canada (1896)",
       "path": "ships/ss-canada-1896.html",
       "url": "/ships/ss-canada-1896",
@@ -1758,12 +1947,36 @@
       "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
+      "name": "SS Champollion (1925)",
+      "path": "ships/ss-champollion.html",
+      "url": "/ships/ss-champollion",
+      "launchYear": "1924",
+      "operatorRaw": "Compagnie des Messageries Maritimes",
+      "operator": "Compagnie des Messageries Maritimes"
+    },
+    {
       "name": "SS Chicago (1908)",
       "path": "ships/ss-chicago-1908.html",
       "url": "/ships/ss-chicago-1908",
       "launchYear": "1907",
       "operatorRaw": "Compagnie Générale Transatlantique (French Line)",
       "operator": "Compagnie Générale Transatlantique (French Line)"
+    },
+    {
+      "name": "SS Chitral (1925)",
+      "path": "ships/ss-chitral.html",
+      "url": "/ships/ss-chitral",
+      "launchYear": "1925",
+      "operatorRaw": "Peninsular & Oriental Steam Navigation Company (P&O)",
+      "operator": "P&O"
+    },
+    {
+      "name": "SS Chusan (1950)",
+      "path": "ships/ss-chusan.html",
+      "url": "/ships/ss-chusan",
+      "launchYear": "1949",
+      "operatorRaw": "Peninsular & Oriental Steam Navigation Company",
+      "operator": "P&O"
     },
     {
       "name": "SS City of New York (1888)",
@@ -1812,6 +2025,14 @@
       "launchYear": "1900",
       "operatorRaw": "Dominion Line",
       "operator": "Dominion Line"
+    },
+    {
+      "name": "SS Comorin (1925)",
+      "path": "ships/ss-comorin.html",
+      "url": "/ships/ss-comorin",
+      "launchYear": "1924",
+      "operatorRaw": "Peninsular & Oriental Steam Navigation Company (P&O)",
+      "operator": "P&O"
     },
     {
       "name": "SS Constitution",
@@ -2158,6 +2379,22 @@
       "operator": "Hamburg America Line (HAPAG)"
     },
     {
+      "name": "SS Himalaya (1949)",
+      "path": "ships/ss-himalaya.html",
+      "url": "/ships/ss-himalaya",
+      "launchYear": "1948",
+      "operatorRaw": "P&O; later P&O-Orient and P&O",
+      "operator": "P&O"
+    },
+    {
+      "name": "SS Iberia (1954)",
+      "path": "ships/ss-iberia.html",
+      "url": "/ships/ss-iberia",
+      "launchYear": "1954",
+      "operatorRaw": "Peninsular & Oriental Steam Navigation Company (P&O)",
+      "operator": "P&O"
+    },
+    {
       "name": "SS Île de France",
       "path": "ships/ss-ile-de-france.html",
       "url": "/ships/ss-ile-de-france",
@@ -2412,6 +2649,22 @@
       "launchYear": "1931",
       "operatorRaw": "United States Lines",
       "operator": "United States Lines"
+    },
+    {
+      "name": "SS Maréchal Joffre (1933)",
+      "path": "ships/ss-marechal-joffre.html",
+      "url": "/ships/ss-marechal-joffre",
+      "launchYear": "1931",
+      "operatorRaw": "Compagnie des Messageries Maritimes",
+      "operator": "Compagnie des Messageries Maritimes"
+    },
+    {
+      "name": "SS Mariette Pacha (1926)",
+      "path": "ships/ss-mariette-pacha.html",
+      "url": "/ships/ss-mariette-pacha",
+      "launchYear": "1925",
+      "operatorRaw": "Compagnie des Messageries Maritimes",
+      "operator": "Compagnie des Messageries Maritimes"
     },
     {
       "name": "SS Mariposa",

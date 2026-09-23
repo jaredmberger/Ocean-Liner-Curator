@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T05:05:50.129Z",
+  "generatedAt": "2026-09-23T07:55:40.103Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,37 +11,23 @@
     ]
   },
   "summary": {
-    "shipGuides": 300,
-    "relationshipCovered": 263,
-    "relationshipUncovered": 37,
-    "relationshipCoveragePct": 87.7,
-    "canonicalOperators": 83,
+    "shipGuides": 327,
+    "relationshipCovered": 291,
+    "relationshipUncovered": 36,
+    "relationshipCoveragePct": 89,
+    "canonicalOperators": 87,
     "thinOperators": 59,
-    "canonicalYardLocations": 59,
-    "guidesWithoutDocumentedYard": 8,
+    "canonicalYardLocations": 62,
+    "guidesWithoutDocumentedYard": 9,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 18,
-    "unresolvedSisterMentions": 11,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 9
+    "explicitSisterLinks": 22,
+    "unresolvedSisterMentions": 8,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 6
   },
   "signals": {
     "sisterShipResearchCandidates": [
-      {
-        "ship": "RMS Andania",
-        "path": "ships/rms-andania-1922.html",
-        "mentioned": "Antonia",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "RMS Andania",
-        "path": "ships/rms-andania-1922.html",
-        "mentioned": "Ausonia",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
       {
         "ship": "SS Bothnia",
         "path": "ships/ss-bothnia.html",
@@ -53,13 +39,6 @@
         "ship": "SS Cathay",
         "path": "ships/ss-cathay-1924.html",
         "mentioned": "Algeria",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "SS Cathay",
-        "path": "ships/ss-cathay-1924.html",
-        "mentioned": "Comorin",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -94,20 +73,6 @@
     ],
     "unresolvedSisterMentions": [
       {
-        "ship": "RMS Andania",
-        "path": "ships/rms-andania-1922.html",
-        "mentioned": "Antonia",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "RMS Andania",
-        "path": "ships/rms-andania-1922.html",
-        "mentioned": "Ausonia",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
         "ship": "RMS Olympic",
         "path": "ships/rms-olympic.html",
         "mentioned": "Britannic",
@@ -118,13 +83,6 @@
         "ship": "SS Bothnia",
         "path": "ships/ss-bothnia.html",
         "mentioned": "Gallia",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "SS Cathay",
-        "path": "ships/ss-cathay-1924.html",
-        "mentioned": "Comorin",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -177,6 +135,12 @@
         "path": "ships/ms-saturnia.html",
         "url": "/ships/ms-saturnia",
         "launchYear": "1925"
+      },
+      {
+        "name": "SS André Lebon (1915)",
+        "path": "ships/ss-andre-lebon.html",
+        "url": "/ships/ss-andre-lebon",
+        "launchYear": "1913"
       },
       {
         "name": "SS Champlain",
@@ -346,7 +310,7 @@
         "url": "/ships/rms-scythia",
         "operator": "Cunard Line",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 34 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 36 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -355,7 +319,7 @@
         "url": "/ships/ss-ascania-1911",
         "operator": "Cunard Line",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 34 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 36 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -364,7 +328,7 @@
         "url": "/ships/ss-cuba",
         "operator": "Cunard Line",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 34 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 36 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -512,15 +476,6 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Oriana",
-        "slug": "ss-oriana",
-        "url": "/ships/ss-oriana",
-        "operator": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "SS Norge",
         "slug": "ss-norge",
         "url": "/ships/ss-norge",
@@ -634,6 +589,11 @@
       },
       {
         "operator": "Matson Navigation Co. (Matson Line)",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Messageries Maritimes",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -798,6 +758,11 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
+        "operator": "Gdynia-America Line",
+        "shipCount": 2,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
         "operator": "Great Western Steamship Company",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
@@ -834,16 +799,6 @@
       },
       {
         "operator": "Pacific Mail Steamship Company",
-        "shipCount": 2,
-        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
-      },
-      {
-        "operator": "Panama Pacific Line",
-        "shipCount": 2,
-        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
-      },
-      {
-        "operator": "Stoomvaart Maatschappij Nederland (Netherland Line)",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -963,8 +918,8 @@
       },
       {
         "name": "Cunard Line",
-        "total": 34,
-        "covered": 31,
+        "total": 36,
+        "covered": 33,
         "uncovered": [
           {
             "name": "RMS Scythia",
@@ -986,7 +941,7 @@
           }
         ],
         "uncoveredCount": 3,
-        "coveragePct": 91.2
+        "coveragePct": 91.7
       },
       {
         "name": "Anchor Line",
@@ -1211,21 +1166,6 @@
         "coveragePct": 0
       },
       {
-        "name": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS Oriana",
-            "slug": "ss-oriana",
-            "url": "/ships/ss-oriana",
-            "launchYear": "1959"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
-      },
-      {
         "name": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
         "total": 1,
         "covered": 0,
@@ -1286,6 +1226,22 @@
         "coveragePct": 0
       },
       {
+        "name": "P&O",
+        "total": 12,
+        "covered": 12,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Orient Line",
+        "total": 11,
+        "covered": 11,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "Canadian Pacific",
         "total": 9,
         "covered": 9,
@@ -1294,7 +1250,7 @@
         "coveragePct": 100
       },
       {
-        "name": "Holland America Line",
+        "name": "Compagnie des Messageries Maritimes",
         "total": 8,
         "covered": 8,
         "uncovered": [],
@@ -1302,17 +1258,9 @@
         "coveragePct": 100
       },
       {
-        "name": "Orient Line",
-        "total": 7,
-        "covered": 7,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
-        "name": "P&O",
-        "total": 7,
-        "covered": 7,
+        "name": "Holland America Line",
+        "total": 8,
+        "covered": 8,
         "uncovered": [],
         "uncoveredCount": 0,
         "coveragePct": 100
@@ -1406,6 +1354,30 @@
         "coveragePct": 100
       },
       {
+        "name": "New Zealand Shipping Company",
+        "total": 3,
+        "covered": 3,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Panama Pacific Line",
+        "total": 3,
+        "covered": 3,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Stoomvaart Maatschappij Nederland (Netherland Line)",
+        "total": 3,
+        "covered": 3,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "American Export Lines",
         "total": 2,
         "covered": 2,
@@ -1431,6 +1403,14 @@
       },
       {
         "name": "Furness Bermuda Line",
+        "total": 2,
+        "covered": 2,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Gdynia-America Line",
         "total": 2,
         "covered": 2,
         "uncovered": [],
@@ -1495,22 +1475,6 @@
       },
       {
         "name": "Pacific Mail Steamship Company",
-        "total": 2,
-        "covered": 2,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
-        "name": "Panama Pacific Line",
-        "total": 2,
-        "covered": 2,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
-        "name": "Stoomvaart Maatschappij Nederland (Netherland Line)",
         "total": 2,
         "covered": 2,
         "uncovered": [],
@@ -1598,6 +1562,14 @@
         "coveragePct": 100
       },
       {
+        "name": "Messageries Maritimes",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "Nippon Yusen Kaisha (NYK)",
         "total": 1,
         "covered": 1,
@@ -1615,6 +1587,14 @@
       },
       {
         "name": "Oceanic Steam Navigation Co. Ltd. (White Star Line)",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
         "total": 1,
         "covered": 1,
         "uncovered": [],
@@ -1776,29 +1756,29 @@
       },
       {
         "era": "Second World War era",
-        "shipCount": 5,
-        "relationshipCovered": 3,
+        "shipCount": 6,
+        "relationshipCovered": 4,
         "relationshipUncovered": 2,
-        "relationshipCoveragePct": 60
+        "relationshipCoveragePct": 66.7
       },
       {
         "era": "Jet-age transition",
         "shipCount": 8,
-        "relationshipCovered": 6,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 75
+        "relationshipCovered": 7,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 87.5
       },
       {
         "era": "First World War era",
-        "shipCount": 14,
-        "relationshipCovered": 12,
+        "shipCount": 15,
+        "relationshipCovered": 13,
         "relationshipUncovered": 2,
-        "relationshipCoveragePct": 85.7
+        "relationshipCoveragePct": 86.7
       },
       {
         "era": "Postwar liner renaissance",
-        "shipCount": 14,
-        "relationshipCovered": 14,
+        "shipCount": 20,
+        "relationshipCovered": 20,
         "relationshipUncovered": 0,
         "relationshipCoveragePct": 100
       },
@@ -1810,13 +1790,6 @@
         "relationshipCoveragePct": 81
       },
       {
-        "era": "Interwar express-liner era",
-        "shipCount": 38,
-        "relationshipCovered": 37,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 97.4
-      },
-      {
         "era": "Late Victorian expansion",
         "shipCount": 38,
         "relationshipCovered": 33,
@@ -1824,11 +1797,18 @@
         "relationshipCoveragePct": 86.8
       },
       {
+        "era": "Interwar express-liner era",
+        "shipCount": 46,
+        "relationshipCovered": 45,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 97.8
+      },
+      {
         "era": "Interwar recovery",
-        "shipCount": 70,
-        "relationshipCovered": 67,
+        "shipCount": 80,
+        "relationshipCovered": 77,
         "relationshipUncovered": 3,
-        "relationshipCoveragePct": 95.7
+        "relationshipCoveragePct": 96.3
       },
       {
         "era": "Edwardian / pre-war peak",
@@ -1897,45 +1877,45 @@
       },
       {
         "decade": "1910s",
-        "shipCount": 34,
-        "relationshipCovered": 27,
+        "shipCount": 35,
+        "relationshipCovered": 28,
         "relationshipUncovered": 7,
-        "relationshipCoveragePct": 79.4
+        "relationshipCoveragePct": 80
       },
       {
         "decade": "1920s",
-        "shipCount": 70,
-        "relationshipCovered": 67,
+        "shipCount": 80,
+        "relationshipCovered": 77,
         "relationshipUncovered": 3,
-        "relationshipCoveragePct": 95.7
+        "relationshipCoveragePct": 96.3
       },
       {
         "decade": "1930s",
-        "shipCount": 42,
-        "relationshipCovered": 39,
+        "shipCount": 51,
+        "relationshipCovered": 48,
         "relationshipUncovered": 3,
-        "relationshipCoveragePct": 92.9
+        "relationshipCoveragePct": 94.1
       },
       {
         "decade": "1940s",
-        "shipCount": 3,
-        "relationshipCovered": 3,
+        "shipCount": 6,
+        "relationshipCovered": 6,
         "relationshipUncovered": 0,
         "relationshipCoveragePct": 100
       },
       {
         "decade": "1950s",
-        "shipCount": 12,
-        "relationshipCovered": 12,
+        "shipCount": 15,
+        "relationshipCovered": 15,
         "relationshipUncovered": 0,
         "relationshipCoveragePct": 100
       },
       {
         "decade": "1960s",
         "shipCount": 8,
-        "relationshipCovered": 6,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 75
+        "relationshipCovered": 7,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 87.5
       },
       {
         "decade": "2000s",
@@ -2156,13 +2136,6 @@
       "url": "/ships/ss-norge",
       "operator": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
       "launchYear": "1881"
-    },
-    {
-      "name": "SS Oriana",
-      "slug": "ss-oriana",
-      "url": "/ships/ss-oriana",
-      "operator": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-      "launchYear": "1959"
     },
     {
       "name": "SS Poland",
