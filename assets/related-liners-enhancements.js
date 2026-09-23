@@ -53,6 +53,44 @@
   };
 
   const manualRelationships = {
+    "ss-leonardo-da-vinci": [
+      {
+        heading: "Italian Line Postwar Succession",
+        note: "Leonardo da Vinci entered service as the effective replacement for the lost Andrea Doria and later shared the Italian Line’s North Atlantic world with the larger Michelangelo and Raffaello.",
+        items: [
+          ["/ships/ss-andrea-doria", "SS <em>Andrea Doria</em>", "postwar predecessor whose loss Leonardo da Vinci was built to replace"],
+          ["/ships/ss-michelangelo-1965", "SS <em>Michelangelo</em>", "later Italian Line flagship generation"],
+          ["/ships/ss-raffaello-1965", "SS <em>Raffaello</em>", "later Italian Line flagship generation"]
+        ]
+      }
+    ],
+    "ss-andrea-doria": [
+      {
+        heading: "Italian Line Postwar Succession",
+        note: "After Andrea Doria was lost in 1956, Italian Line built Leonardo da Vinci to fill the commercial and symbolic gap in its North Atlantic fleet.",
+        items: [
+          ["/ships/ss-leonardo-da-vinci", "SS <em>Leonardo da Vinci</em>", "effective postwar replacement"]
+        ]
+      }
+    ],
+    "ss-michelangelo-1965": [
+      {
+        heading: "Italian Line Postwar Succession",
+        note: "Michelangelo belonged to the final Italian Line flagship generation that followed Leonardo da Vinci in the company’s late North Atlantic passenger service.",
+        items: [
+          ["/ships/ss-leonardo-da-vinci", "SS <em>Leonardo da Vinci</em>", "earlier postwar Italian Line flagship"]
+        ]
+      }
+    ],
+    "ss-raffaello-1965": [
+      {
+        heading: "Italian Line Postwar Succession",
+        note: "Raffaello belonged to the final Italian Line flagship generation that followed Leonardo da Vinci in the company’s late North Atlantic passenger service.",
+        items: [
+          ["/ships/ss-leonardo-da-vinci", "SS <em>Leonardo da Vinci</em>", "earlier postwar Italian Line flagship"]
+        ]
+      }
+    ],
     "rms-lusitania": [
       {
         heading: "Cunard Flagship Generation",
