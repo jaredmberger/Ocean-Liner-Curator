@@ -53,6 +53,24 @@
   };
 
   const manualRelationships = {
+    "ss-ascania-1911": [
+      {
+        heading: "Namesakes Across Eras",
+        note: "Cunard later reused the Ascania name for a larger interwar Canadian-service liner. The two ships belonged to different generations but both served the company’s Southampton–Québec–Montréal trade.",
+        items: [
+          ["/ships/rms-ascania", "RMS <em>Ascania</em> (1925)", "later Cunard namesake on Canadian service"]
+        ]
+      }
+    ],
+    "rms-ascania": [
+      {
+        heading: "Namesakes Across Eras",
+        note: "The interwar Ascania revived a Cunard name previously carried by the 1911 Canadian-service liner, linking two different generations of the company’s Southampton–Québec–Montréal trade.",
+        items: [
+          ["/ships/ss-ascania-1911", "SS <em>Ascania</em> (1911)", "earlier Cunard namesake on Canadian service"]
+        ]
+      }
+    ],
     "ss-leonardo-da-vinci": [
       {
         heading: "Italian Line Postwar Succession",
