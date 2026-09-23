@@ -829,6 +829,18 @@
     ),
 
 
+    pando_postwar_fleet: cluster(
+      "Postwar P&O Passenger Fleet.",
+      "Major postwar P&O passenger liners spanning the Far East, Australia, Pacific, and cruise trades. They were not a single sister class, but together show the company’s postwar transition.",
+      [
+        { href: "/ships/ss-chusan", label: "SS <em>Chusan</em>", tail: "P&amp;O · 1950 · Far East" },
+        { href: "/ships/ss-arcadia-1954", label: "SS <em>Arcadia</em>", tail: "P&amp;O · 1954 · Australia" },
+        { href: "/ships/ss-iberia", label: "SS <em>Iberia</em>", tail: "P&amp;O · 1954 · Australia" },
+        { href: "/ships/ss-canberra", label: "SS <em>Canberra</em>", tail: "P&amp;O · 1961 · Australia" }
+      ],
+      "P&O postwar passenger liners"
+    ),
+
     arcadia_iberia_pair: cluster(
       "Near-Sister Ships.",
       "Arcadia and Iberia were closely related P&O postwar liners completed in 1954 for the Britain–Australia service. Built at different yards, they were near-sisters rather than exact yard-identical duplicates.",
@@ -1385,9 +1397,10 @@
     "rms-moldavia": ["pando_flagships"],
     "rms-strathnaver": ["pando_flagships", "po_strath_group"],
     "rms-viceroy-of-india": ["pando_flagships"],
-    "ss-canberra": ["pando_flagships"],
-    "ss-arcadia-1954": ["arcadia_iberia_pair"],
-    "ss-iberia": ["arcadia_iberia_pair"],
+    "ss-canberra": ["pando_flagships", "pando_postwar_fleet"],
+    "ss-arcadia-1954": ["arcadia_iberia_pair", "pando_postwar_fleet"],
+    "ss-iberia": ["arcadia_iberia_pair", "pando_postwar_fleet"],
+    "ss-chusan": ["pando_postwar_fleet"],
     "ss-cathay-1924": ["pando_c_class_1925"],
     "ss-comorin": ["pando_c_class_1925"],
     "ss-chitral": ["pando_c_class_1925"],
