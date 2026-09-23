@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T09:06:10.699Z",
+  "generatedAt": "2026-09-23T09:13:53.747Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -12,9 +12,9 @@
   },
   "summary": {
     "shipGuides": 327,
-    "relationshipCovered": 303,
-    "relationshipUncovered": 24,
-    "relationshipCoveragePct": 92.7,
+    "relationshipCovered": 305,
+    "relationshipUncovered": 22,
+    "relationshipCoveragePct": 93.3,
     "canonicalOperators": 87,
     "thinOperators": 59,
     "canonicalYardLocations": 62,
@@ -224,24 +224,6 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Columbia",
-        "slug": "ss-columbia",
-        "url": "/ships/ss-columbia",
-        "operator": "Anchor Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 6 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Macedonia",
-        "slug": "ss-macedonia",
-        "url": "/ships/ss-macedonia",
-        "operator": "Anchor Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 6 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "SS Marquette",
         "slug": "ss-marquette",
         "url": "/ships/ss-marquette",
@@ -287,19 +269,19 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "SS Macedonia",
+        "slug": "ss-macedonia",
+        "url": "/ships/ss-macedonia",
+        "operator": "Anchor Line",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 6 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Corsican",
         "slug": "ss-corsican",
         "url": "/ships/ss-corsican",
         "operator": "Allan Line",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Assyria",
-        "slug": "ss-assyria",
-        "url": "/ships/ss-assyria",
-        "operator": "Anchor Line during her Assyria period",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -737,27 +719,6 @@
         "coveragePct": 82.6
       },
       {
-        "name": "Anchor Line",
-        "total": 6,
-        "covered": 4,
-        "uncovered": [
-          {
-            "name": "SS Columbia",
-            "slug": "ss-columbia",
-            "url": "/ships/ss-columbia",
-            "launchYear": "1902"
-          },
-          {
-            "name": "SS Macedonia",
-            "slug": "ss-macedonia",
-            "url": "/ships/ss-macedonia",
-            "launchYear": "1863"
-          }
-        ],
-        "uncoveredCount": 2,
-        "coveragePct": 66.7
-      },
-      {
         "name": "Atlantic Transport Line",
         "total": 4,
         "covered": 2,
@@ -824,6 +785,21 @@
         "coveragePct": 93.8
       },
       {
+        "name": "Anchor Line",
+        "total": 6,
+        "covered": 5,
+        "uncovered": [
+          {
+            "name": "SS Macedonia",
+            "slug": "ss-macedonia",
+            "url": "/ships/ss-macedonia",
+            "launchYear": "1863"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 83.3
+      },
+      {
         "name": "Allan Line",
         "total": 3,
         "covered": 2,
@@ -837,21 +813,6 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 66.7
-      },
-      {
-        "name": "Anchor Line during her Assyria period",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS Assyria",
-            "slug": "ss-assyria",
-            "url": "/ships/ss-assyria",
-            "launchYear": "1908"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
       },
       {
         "name": "Anchor-Donaldson Line; later Donaldson Atlantic Line and Donaldson Brothers & Black management in postwar service",
@@ -1315,6 +1276,14 @@
         "coveragePct": 100
       },
       {
+        "name": "Anchor Line during her Assyria period",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "British & North American Royal Mail Steam Packet Company (Cunard Line)",
         "total": 1,
         "covered": 1,
@@ -1630,9 +1599,9 @@
       {
         "era": "Edwardian / pre-war peak",
         "shipCount": 86,
-        "relationshipCovered": 76,
-        "relationshipUncovered": 10,
-        "relationshipCoveragePct": 88.4
+        "relationshipCovered": 77,
+        "relationshipUncovered": 9,
+        "relationshipCoveragePct": 89.5
       }
     ],
     "decades": [
@@ -1688,9 +1657,9 @@
       {
         "decade": "1900s",
         "shipCount": 66,
-        "relationshipCovered": 58,
-        "relationshipUncovered": 8,
-        "relationshipCoveragePct": 87.9
+        "relationshipCovered": 59,
+        "relationshipUncovered": 7,
+        "relationshipCoveragePct": 89.4
       },
       {
         "decade": "1910s",
@@ -1759,13 +1728,6 @@
       "launchYear": "1850"
     },
     {
-      "name": "SS Assyria",
-      "slug": "ss-assyria",
-      "url": "/ships/ss-assyria",
-      "operator": "Anchor Line during her Assyria period",
-      "launchYear": "1908"
-    },
-    {
       "name": "SS Bergensfjord",
       "slug": "ss-bergensfjord",
       "url": "/ships/ss-bergensfjord",
@@ -1785,13 +1747,6 @@
       "url": "/ships/ss-cleveland",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1908"
-    },
-    {
-      "name": "SS Columbia",
-      "slug": "ss-columbia",
-      "url": "/ships/ss-columbia",
-      "operator": "Anchor Line",
-      "launchYear": "1902"
     },
     {
       "name": "SS Coptic",
