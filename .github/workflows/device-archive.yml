@@ -36,6 +36,9 @@ on:
       - 'ships/**/*.PNG'
       - 'ships/**/*.WEBP'
       - 'scripts/build-device-archive.py'
+      - 'scripts/sync-ship-sitemaps.py'
+      - 'sitemap.xml'
+      - 'sitemaps/sitemap-ships.xml'
       - '.github/workflows/device-archive.yml'
   workflow_dispatch:
 
