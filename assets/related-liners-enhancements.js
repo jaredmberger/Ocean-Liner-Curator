@@ -71,6 +71,55 @@
         ]
       }
     ],
+    "ss-chicago-1908": [
+      {
+        heading: "French Line Design & Service Lineage",
+        note: "Chicago became an important template within French Line’s prewar fleet. Rochambeau was developed as a larger version of the same basic concept, and both ships later shared the company’s wartime New York service.",
+        items: [
+          ["/ships/ss-rochambeau", "SS <em>Rochambeau</em>", "larger French Line development and route contemporary"],
+          ["/ships/ss-espagne", "SS <em>Espagne</em>", "French Line wartime New York-service running mate"]
+        ]
+      }
+    ],
+    "ss-rochambeau": [
+      {
+        heading: "French Line Design & Service Lineage",
+        note: "Rochambeau was designed as an enlarged development of Chicago. Experience with Rochambeau’s machinery and arrangement then influenced the later Flandre and Lafayette.",
+        items: [
+          ["/ships/ss-chicago-1908", "SS <em>Chicago</em> (1908)", "earlier French Line design predecessor"],
+          ["/ships/ss-flandre", "SS <em>Flandre</em>", "later French Line design influenced by Rochambeau"],
+          ["/ships/ss-lafayette", "SS <em>Lafayette</em> (1915)", "later French Line design influenced by Rochambeau"]
+        ]
+      }
+    ],
+    "ss-flandre": [
+      {
+        heading: "French Line Design Lineage",
+        note: "French Line’s experience with Rochambeau helped inform the design of Flandre, linking the ships as successive stages in the company’s prewar passenger-fleet development.",
+        items: [
+          ["/ships/ss-rochambeau", "SS <em>Rochambeau</em>", "earlier French Line design influence"]
+        ]
+      }
+    ],
+    "ss-lafayette": [
+      {
+        heading: "French Line Design Lineage",
+        note: "Lafayette belonged to the French Line design generation that followed Rochambeau, whose machinery and operating experience influenced the newer ship’s development.",
+        items: [
+          ["/ships/ss-rochambeau", "SS <em>Rochambeau</em>", "earlier French Line design influence"]
+        ]
+      }
+    ],
+    "ss-espagne": [
+      {
+        heading: "French Line Wartime Atlantic Service",
+        note: "During the First World War, Espagne joined Chicago and Rochambeau among the smaller French Line ships maintaining New York service after the larger France was withdrawn.",
+        items: [
+          ["/ships/ss-chicago-1908", "SS <em>Chicago</em> (1908)", "French Line wartime New York-service running mate"],
+          ["/ships/ss-rochambeau", "SS <em>Rochambeau</em>", "French Line wartime New York-service running mate"]
+        ]
+      }
+    ],
     "ss-albertic": [
       {
         heading: "White Star Canadian Service",
