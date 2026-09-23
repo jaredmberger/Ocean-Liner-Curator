@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T08:38:19.304Z",
+  "generatedAt": "2026-09-23T08:51:33.676Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -12,9 +12,9 @@
   },
   "summary": {
     "shipGuides": 327,
-    "relationshipCovered": 294,
-    "relationshipUncovered": 33,
-    "relationshipCoveragePct": 89.9,
+    "relationshipCovered": 296,
+    "relationshipUncovered": 31,
+    "relationshipCoveragePct": 90.5,
     "canonicalOperators": 87,
     "thinOperators": 59,
     "canonicalYardLocations": 62,
@@ -278,33 +278,6 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Albertic",
-        "slug": "ss-albertic",
-        "url": "/ships/ss-albertic",
-        "operator": "White Star Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Coptic",
-        "slug": "ss-coptic",
-        "url": "/ships/ss-coptic",
-        "operator": "White Star Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Cretic",
-        "slug": "ss-cretic",
-        "url": "/ships/ss-cretic",
-        "operator": "White Star Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "RMS Scythia",
         "slug": "rms-scythia",
         "url": "/ships/rms-scythia",
@@ -356,6 +329,15 @@
         "operator": "Atlantic Transport Line",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Coptic",
+        "slug": "ss-coptic",
+        "url": "/ships/ss-coptic",
+        "operator": "White Star Line",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -863,33 +845,6 @@
         "coveragePct": 82.6
       },
       {
-        "name": "White Star Line",
-        "total": 38,
-        "covered": 35,
-        "uncovered": [
-          {
-            "name": "SS Albertic",
-            "slug": "ss-albertic",
-            "url": "/ships/ss-albertic",
-            "launchYear": "1920"
-          },
-          {
-            "name": "SS Coptic",
-            "slug": "ss-coptic",
-            "url": "/ships/ss-coptic",
-            "launchYear": "1881"
-          },
-          {
-            "name": "SS Cretic",
-            "slug": "ss-cretic",
-            "url": "/ships/ss-cretic",
-            "launchYear": "1902"
-          }
-        ],
-        "uncoveredCount": 3,
-        "coveragePct": 92.1
-      },
-      {
         "name": "Cunard Line",
         "total": 36,
         "covered": 34,
@@ -951,6 +906,21 @@
         ],
         "uncoveredCount": 2,
         "coveragePct": 50
+      },
+      {
+        "name": "White Star Line",
+        "total": 38,
+        "covered": 37,
+        "uncovered": [
+          {
+            "name": "SS Coptic",
+            "slug": "ss-coptic",
+            "url": "/ships/ss-coptic",
+            "launchYear": "1881"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 97.4
       },
       {
         "name": "Norddeutscher Lloyd (North German Lloyd)",
@@ -1759,16 +1729,16 @@
       {
         "era": "Interwar recovery",
         "shipCount": 80,
-        "relationshipCovered": 77,
-        "relationshipUncovered": 3,
-        "relationshipCoveragePct": 96.3
+        "relationshipCovered": 78,
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 97.5
       },
       {
         "era": "Edwardian / pre-war peak",
         "shipCount": 86,
-        "relationshipCovered": 71,
-        "relationshipUncovered": 15,
-        "relationshipCoveragePct": 82.6
+        "relationshipCovered": 72,
+        "relationshipUncovered": 14,
+        "relationshipCoveragePct": 83.7
       }
     ],
     "decades": [
@@ -1824,9 +1794,9 @@
       {
         "decade": "1900s",
         "shipCount": 66,
-        "relationshipCovered": 55,
-        "relationshipUncovered": 11,
-        "relationshipCoveragePct": 83.3
+        "relationshipCovered": 56,
+        "relationshipUncovered": 10,
+        "relationshipCoveragePct": 84.8
       },
       {
         "decade": "1910s",
@@ -1838,9 +1808,9 @@
       {
         "decade": "1920s",
         "shipCount": 80,
-        "relationshipCovered": 77,
-        "relationshipUncovered": 3,
-        "relationshipCoveragePct": 96.3
+        "relationshipCovered": 78,
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 97.5
       },
       {
         "decade": "1930s",
@@ -1892,13 +1862,6 @@
       "slug": "rms-scythia",
       "url": "/ships/rms-scythia",
       "operator": "Cunard Line",
-      "launchYear": "1920"
-    },
-    {
-      "name": "SS Albertic",
-      "slug": "ss-albertic",
-      "url": "/ships/ss-albertic",
-      "operator": "White Star Line",
       "launchYear": "1920"
     },
     {
@@ -1963,13 +1926,6 @@
       "url": "/ships/ss-corsican",
       "operator": "Allan Line",
       "launchYear": "1907"
-    },
-    {
-      "name": "SS Cretic",
-      "slug": "ss-cretic",
-      "url": "/ships/ss-cretic",
-      "operator": "White Star Line",
-      "launchYear": "1902"
     },
     {
       "name": "SS Cuba",
