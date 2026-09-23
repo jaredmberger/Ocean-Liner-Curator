@@ -308,6 +308,11 @@
         heading: "Sister Ship",
         note: "Alcantara and Asturias were closely paired Royal Mail liners built for the company’s South American service and represented the same interwar modernization program.",
         items: [["/ships/ss-asturias-1925", "SS <em>Asturias</em> (1925)", "sister ship"]]
+      },
+      {
+        heading: "Royal Mail South America Succession",
+        note: "Royal Mail planned Andes as a larger, faster addition to the South America fleet developed around Asturias and Alcantara; after the Second World War, Alcantara and Andes served together on the route.",
+        items: [["/ships/rms-andes-1939", "RMS <em>Andes</em>", "later Royal Mail South America running mate"]]
       }
     ],
     "ss-asturias-1925": [
@@ -315,6 +320,21 @@
         heading: "Sister Ship",
         note: "Asturias and Alcantara were closely paired Royal Mail liners built for the company’s South American service and represented the same interwar modernization program.",
         items: [["/ships/rms-alcantara-1926", "RMS <em>Alcantara</em>", "sister ship"]]
+      },
+      {
+        heading: "Royal Mail South America Succession",
+        note: "Andes was conceived as the larger, faster next major Royal Mail liner for the same South America service in which Asturias and Alcantara had formed the interwar core.",
+        items: [["/ships/rms-andes-1939", "RMS <em>Andes</em>", "later Royal Mail South America flagship"]]
+      }
+    ],
+    "rms-andes-1939": [
+      {
+        heading: "Royal Mail South America Succession",
+        note: "Andes was designed as a larger, faster addition to Royal Mail’s South America fleet after the modernization of Asturias and Alcantara. After wartime service, Andes and Alcantara operated together on the route.",
+        items: [
+          ["/ships/ss-asturias-1925", "SS <em>Asturias</em> (1925)", "earlier Royal Mail South America flagship"],
+          ["/ships/rms-alcantara-1926", "RMS <em>Alcantara</em>", "Royal Mail South America running mate"]
+        ]
       }
     ],
     "ss-montcalm": [
