@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T07:55:40.103Z",
+  "generatedAt": "2026-09-23T08:38:19.304Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -12,9 +12,9 @@
   },
   "summary": {
     "shipGuides": 327,
-    "relationshipCovered": 291,
-    "relationshipUncovered": 36,
-    "relationshipCoveragePct": 89,
+    "relationshipCovered": 294,
+    "relationshipUncovered": 33,
+    "relationshipCoveragePct": 89.9,
     "canonicalOperators": 87,
     "thinOperators": 59,
     "canonicalYardLocations": 62,
@@ -314,15 +314,6 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Ascania (1911)",
-        "slug": "ss-ascania-1911",
-        "url": "/ships/ss-ascania-1911",
-        "operator": "Cunard Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 36 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "SS Cuba",
         "slug": "ss-cuba",
         "url": "/ships/ss-cuba",
@@ -381,15 +372,6 @@
         "slug": "ss-corsican",
         "url": "/ships/ss-corsican",
         "operator": "Allan Line",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Leonardo da Vinci",
-        "slug": "ss-leonardo-da-vinci",
-        "url": "/ships/ss-leonardo-da-vinci",
-        "operator": "Italian Line",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -480,15 +462,6 @@
         "slug": "ss-norge",
         "url": "/ships/ss-norge",
         "operator": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "RMS Andes",
-        "slug": "rms-andes-1939",
-        "url": "/ships/rms-andes-1939",
-        "operator": "Royal Mail Lines",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -919,7 +892,7 @@
       {
         "name": "Cunard Line",
         "total": 36,
-        "covered": 33,
+        "covered": 34,
         "uncovered": [
           {
             "name": "RMS Scythia",
@@ -928,20 +901,14 @@
             "launchYear": "1920"
           },
           {
-            "name": "SS Ascania (1911)",
-            "slug": "ss-ascania-1911",
-            "url": "/ships/ss-ascania-1911",
-            "launchYear": "1911"
-          },
-          {
             "name": "SS Cuba",
             "slug": "ss-cuba",
             "url": "/ships/ss-cuba",
             "launchYear": "1864"
           }
         ],
-        "uncoveredCount": 3,
-        "coveragePct": 91.7
+        "uncoveredCount": 2,
+        "coveragePct": 94.4
       },
       {
         "name": "Anchor Line",
@@ -1010,21 +977,6 @@
             "slug": "ss-corsican",
             "url": "/ships/ss-corsican",
             "launchYear": "1907"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 66.7
-      },
-      {
-        "name": "Italian Line",
-        "total": 3,
-        "covered": 2,
-        "uncovered": [
-          {
-            "name": "SS Leonardo da Vinci",
-            "slug": "ss-leonardo-da-vinci",
-            "url": "/ships/ss-leonardo-da-vinci",
-            "launchYear": "1958"
           }
         ],
         "uncoveredCount": 1,
@@ -1175,21 +1127,6 @@
             "slug": "ss-norge",
             "url": "/ships/ss-norge",
             "launchYear": "1881"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
-      },
-      {
-        "name": "Royal Mail Lines",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "RMS Andes",
-            "slug": "rms-andes-1939",
-            "url": "/ships/rms-andes-1939",
-            "launchYear": "1939"
           }
         ],
         "uncoveredCount": 1,
@@ -1347,6 +1284,14 @@
       },
       {
         "name": "Hamburg Süd",
+        "total": 3,
+        "covered": 3,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Italian Line",
         "total": 3,
         "covered": 3,
         "uncovered": [],
@@ -1642,6 +1587,14 @@
         "coveragePct": 100
       },
       {
+        "name": "Royal Mail Lines",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "Royal Mail Steam Packet Co. (Royal Mail Line)",
         "total": 1,
         "covered": 1,
@@ -1757,16 +1710,16 @@
       {
         "era": "Second World War era",
         "shipCount": 6,
-        "relationshipCovered": 4,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 66.7
+        "relationshipCovered": 5,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 83.3
       },
       {
         "era": "Jet-age transition",
         "shipCount": 8,
-        "relationshipCovered": 7,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 87.5
+        "relationshipCovered": 8,
+        "relationshipUncovered": 0,
+        "relationshipCoveragePct": 100
       },
       {
         "era": "First World War era",
@@ -1813,9 +1766,9 @@
       {
         "era": "Edwardian / pre-war peak",
         "shipCount": 86,
-        "relationshipCovered": 70,
-        "relationshipUncovered": 16,
-        "relationshipCoveragePct": 81.4
+        "relationshipCovered": 71,
+        "relationshipUncovered": 15,
+        "relationshipCoveragePct": 82.6
       }
     ],
     "decades": [
@@ -1878,9 +1831,9 @@
       {
         "decade": "1910s",
         "shipCount": 35,
-        "relationshipCovered": 28,
-        "relationshipUncovered": 7,
-        "relationshipCoveragePct": 80
+        "relationshipCovered": 29,
+        "relationshipUncovered": 6,
+        "relationshipCoveragePct": 82.9
       },
       {
         "decade": "1920s",
@@ -1892,9 +1845,9 @@
       {
         "decade": "1930s",
         "shipCount": 51,
-        "relationshipCovered": 48,
-        "relationshipUncovered": 3,
-        "relationshipCoveragePct": 94.1
+        "relationshipCovered": 49,
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 96.1
       },
       {
         "decade": "1940s",
@@ -1913,9 +1866,9 @@
       {
         "decade": "1960s",
         "shipCount": 8,
-        "relationshipCovered": 7,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 87.5
+        "relationshipCovered": 8,
+        "relationshipUncovered": 0,
+        "relationshipCoveragePct": 100
       },
       {
         "decade": "2000s",
@@ -1933,13 +1886,6 @@
       "url": "/ships/qsmv-dominion-monarch",
       "operator": "Shaw, Savill & Albion Line",
       "launchYear": "1938"
-    },
-    {
-      "name": "RMS Andes",
-      "slug": "rms-andes-1939",
-      "url": "/ships/rms-andes-1939",
-      "operator": "Royal Mail Lines",
-      "launchYear": "1939"
     },
     {
       "name": "RMS Scythia",
@@ -1961,13 +1907,6 @@
       "url": "/ships/ss-arctic",
       "operator": "Collins Line (New York and Liverpool United States Mail Steamship Company)",
       "launchYear": "1850"
-    },
-    {
-      "name": "SS Ascania (1911)",
-      "slug": "ss-ascania-1911",
-      "url": "/ships/ss-ascania-1911",
-      "operator": "Cunard Line",
-      "launchYear": "1911"
     },
     {
       "name": "SS Assyria",
@@ -2073,13 +2012,6 @@
       "url": "/ships/ss-lake-michigan",
       "operator": "Built for Beaver Line / Elder Dempster; later Canadian Pacific Line / Canadian Pacific Ocean Services context",
       "launchYear": "1901"
-    },
-    {
-      "name": "SS Leonardo da Vinci",
-      "slug": "ss-leonardo-da-vinci",
-      "url": "/ships/ss-leonardo-da-vinci",
-      "operator": "Italian Line",
-      "launchYear": "1958"
     },
     {
       "name": "SS Letitia",
