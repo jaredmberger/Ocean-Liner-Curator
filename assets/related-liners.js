@@ -336,6 +336,17 @@
       true
     ),
 
+    jean_laborde_joffre: cluster(
+      "Messageries Maritimes Sister Ships.",
+      "Jean Laborde and Maréchal Joffre were identical sister ships built at La Ciotat for the Indian Ocean service. Président Doumer was a very close relative of the same family but differed in details such as funnel and boat arrangement.",
+      [
+        { href: "/ships/mv-jean-laborde", label: "MV <em>Jean Laborde</em>", tail: "Messageries Maritimes · entered service 1931" },
+        { href: "/ships/ss-marechal-joffre", label: "SS <em>Maréchal Joffre</em>", tail: "Messageries Maritimes · entered service 1933 · later USS Rochambeau" }
+      ],
+      "Jean Laborde and Maréchal Joffre sister ships",
+      true
+    ),
+
     georges_philippar_rescue_chain: cluster(
       "Georges Philippar Rescue Connection.",
       "André Lebon received hundreds of survivors rescued from the burning Georges Philippar by the Soviet tanker Sovietskaïa Neft and carried them to Djibouti.",
@@ -1225,7 +1236,9 @@
   ========================= */
   const MAP = {
     "ss-athos-ii": ["mm_american_transports"],
-    "ss-marechal-joffre": ["mm_american_transports"],
+    "ss-marechal-joffre": ["mm_american_transports", "jean_laborde_joffre"],
+
+    "mv-jean-laborde": ["jean_laborde_joffre"],
 
     "ss-andre-lebon": ["georges_philippar_rescue_chain"],
 
