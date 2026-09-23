@@ -53,6 +53,27 @@
   };
 
   const manualRelationships = {
+    "ss-albertic": [
+      {
+        heading: "White Star Canadian Service",
+        note: "Albertic joined White Star’s late-1920s Canadian service alongside Calgaric, Doric, Laurentic, Megantic, and Regina. These ships were route running mates rather than a single sister-ship class.",
+        items: [
+          ["/ships/ss-calgaric", "SS <em>Calgaric</em>", "White Star Canadian-service running mate"],
+          ["/ships/ss-doric", "SS <em>Doric</em>", "White Star Canadian-service running mate"],
+          ["/ships/ss-laurentic", "SS <em>Laurentic</em> (1927)", "White Star Canadian-service running mate"]
+        ]
+      }
+    ],
+    "ss-cretic": [
+      {
+        heading: "White Star Mediterranean Service",
+        note: "Cretic operated within White Star’s Mediterranean passenger service alongside ships including Romanic and Republic, forming part of the same route network rather than a sister-ship class.",
+        items: [
+          ["/ships/ss-romanic", "SS <em>Romanic</em>", "White Star Mediterranean-service running mate"],
+          ["/ships/ss-republic-1903", "RMS <em>Republic</em> (1903)", "White Star Mediterranean-service running mate"]
+        ]
+      }
+    ],
     "ss-ascania-1911": [
       {
         heading: "Namesakes Across Eras",
