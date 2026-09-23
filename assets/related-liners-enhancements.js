@@ -53,6 +53,26 @@
   };
 
   const manualRelationships = {
+    "ss-assyria": [
+      {
+        heading: "Anchor Line North Atlantic Fleet",
+        note: "Assyria and Columbia both appeared in Anchor Line’s early-1920s fleet alongside the new Cameronia, serving within the company’s Glasgow–New York passenger network.",
+        items: [
+          ["/ships/ss-columbia", "SS <em>Columbia</em>", "Anchor Line North Atlantic fleetmate"],
+          ["/ships/rms-cameronia", "RMS <em>Cameronia</em>", "larger contemporary Anchor Line fleetmate"]
+        ]
+      }
+    ],
+    "ss-columbia": [
+      {
+        heading: "Anchor Line North Atlantic Fleet",
+        note: "Columbia remained part of Anchor Line’s early-1920s fleet alongside Assyria and the new Cameronia, within the company’s Glasgow–New York passenger network.",
+        items: [
+          ["/ships/ss-assyria", "SS <em>Assyria</em>", "Anchor Line North Atlantic fleetmate"],
+          ["/ships/rms-cameronia", "RMS <em>Cameronia</em>", "larger contemporary Anchor Line fleetmate"]
+        ]
+      }
+    ],
     "rms-scythia": [
       {
         heading: "Postwar Cunard Service",
