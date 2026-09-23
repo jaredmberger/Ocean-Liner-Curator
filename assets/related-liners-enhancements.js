@@ -53,6 +53,62 @@
   };
 
   const manualRelationships = {
+    "ss-ascania-1911": [
+      {
+        heading: "Namesakes Across Eras",
+        note: "Cunard later reused the Ascania name for a larger interwar Canadian-service liner. The two ships belonged to different generations but both served the company’s Southampton–Québec–Montréal trade.",
+        items: [
+          ["/ships/rms-ascania", "RMS <em>Ascania</em> (1925)", "later Cunard namesake on Canadian service"]
+        ]
+      }
+    ],
+    "rms-ascania": [
+      {
+        heading: "Namesakes Across Eras",
+        note: "The interwar Ascania revived a Cunard name previously carried by the 1911 Canadian-service liner, linking two different generations of the company’s Southampton–Québec–Montréal trade.",
+        items: [
+          ["/ships/ss-ascania-1911", "SS <em>Ascania</em> (1911)", "earlier Cunard namesake on Canadian service"]
+        ]
+      }
+    ],
+    "ss-leonardo-da-vinci": [
+      {
+        heading: "Italian Line Postwar Succession",
+        note: "Leonardo da Vinci entered service as the effective replacement for the lost Andrea Doria and later shared the Italian Line’s North Atlantic world with the larger Michelangelo and Raffaello.",
+        items: [
+          ["/ships/ss-andrea-doria", "SS <em>Andrea Doria</em>", "postwar predecessor whose loss Leonardo da Vinci was built to replace"],
+          ["/ships/ss-michelangelo-1965", "SS <em>Michelangelo</em>", "later Italian Line flagship generation"],
+          ["/ships/ss-raffaello-1965", "SS <em>Raffaello</em>", "later Italian Line flagship generation"]
+        ]
+      }
+    ],
+    "ss-andrea-doria": [
+      {
+        heading: "Italian Line Postwar Succession",
+        note: "After Andrea Doria was lost in 1956, Italian Line built Leonardo da Vinci to fill the commercial and symbolic gap in its North Atlantic fleet.",
+        items: [
+          ["/ships/ss-leonardo-da-vinci", "SS <em>Leonardo da Vinci</em>", "effective postwar replacement"]
+        ]
+      }
+    ],
+    "ss-michelangelo-1965": [
+      {
+        heading: "Italian Line Postwar Succession",
+        note: "Michelangelo belonged to the final Italian Line flagship generation that followed Leonardo da Vinci in the company’s late North Atlantic passenger service.",
+        items: [
+          ["/ships/ss-leonardo-da-vinci", "SS <em>Leonardo da Vinci</em>", "earlier postwar Italian Line flagship"]
+        ]
+      }
+    ],
+    "ss-raffaello-1965": [
+      {
+        heading: "Italian Line Postwar Succession",
+        note: "Raffaello belonged to the final Italian Line flagship generation that followed Leonardo da Vinci in the company’s late North Atlantic passenger service.",
+        items: [
+          ["/ships/ss-leonardo-da-vinci", "SS <em>Leonardo da Vinci</em>", "earlier postwar Italian Line flagship"]
+        ]
+      }
+    ],
     "rms-lusitania": [
       {
         heading: "Cunard Flagship Generation",
@@ -252,6 +308,11 @@
         heading: "Sister Ship",
         note: "Alcantara and Asturias were closely paired Royal Mail liners built for the company’s South American service and represented the same interwar modernization program.",
         items: [["/ships/ss-asturias-1925", "SS <em>Asturias</em> (1925)", "sister ship"]]
+      },
+      {
+        heading: "Royal Mail South America Succession",
+        note: "Royal Mail planned Andes as a larger, faster addition to the South America fleet developed around Asturias and Alcantara; after the Second World War, Alcantara and Andes served together on the route.",
+        items: [["/ships/rms-andes-1939", "RMS <em>Andes</em>", "later Royal Mail South America running mate"]]
       }
     ],
     "ss-asturias-1925": [
@@ -259,6 +320,21 @@
         heading: "Sister Ship",
         note: "Asturias and Alcantara were closely paired Royal Mail liners built for the company’s South American service and represented the same interwar modernization program.",
         items: [["/ships/rms-alcantara-1926", "RMS <em>Alcantara</em>", "sister ship"]]
+      },
+      {
+        heading: "Royal Mail South America Succession",
+        note: "Andes was conceived as the larger, faster next major Royal Mail liner for the same South America service in which Asturias and Alcantara had formed the interwar core.",
+        items: [["/ships/rms-andes-1939", "RMS <em>Andes</em>", "later Royal Mail South America flagship"]]
+      }
+    ],
+    "rms-andes-1939": [
+      {
+        heading: "Royal Mail South America Succession",
+        note: "Andes was designed as a larger, faster addition to Royal Mail’s South America fleet after the modernization of Asturias and Alcantara. After wartime service, Andes and Alcantara operated together on the route.",
+        items: [
+          ["/ships/ss-asturias-1925", "SS <em>Asturias</em> (1925)", "earlier Royal Mail South America flagship"],
+          ["/ships/rms-alcantara-1926", "RMS <em>Alcantara</em>", "Royal Mail South America running mate"]
+        ]
       }
     ],
     "ss-montcalm": [
