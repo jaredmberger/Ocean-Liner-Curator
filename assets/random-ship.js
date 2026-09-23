@@ -1,5 +1,6 @@
 (() => {
   const shipUrls = [
+    "/ships/ss-athos-ii",
 "/ships/ss-adriatic-1872.html",
 "/ships/rms-adriatic.html",
 "/ships/ss-afric.html",
