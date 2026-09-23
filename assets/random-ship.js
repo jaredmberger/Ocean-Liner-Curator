@@ -177,6 +177,7 @@
 "/ships/ss-oriana.html",
 "/ships/ss-orion.html",
 "/ships/ss-oronsay.html",
+"/ships/rms-oronsay.html",
 "/ships/rms-orsova.html",
 "/ships/rms-orontes.html",
 "/ships/ss-orontes.html",
