@@ -833,6 +833,7 @@
       "Postwar P&O Passenger Fleet.",
       "Major postwar P&O passenger liners spanning the Far East, Australia, Pacific, and cruise trades. They were not a single sister class, but together show the company’s postwar transition.",
       [
+        { href: "/ships/ss-himalaya", label: "SS <em>Himalaya</em>", tail: "P&amp;O · 1949 · Australia" },
         { href: "/ships/ss-chusan", label: "SS <em>Chusan</em>", tail: "P&amp;O · 1950 · Far East" },
         { href: "/ships/ss-arcadia-1954", label: "SS <em>Arcadia</em>", tail: "P&amp;O · 1954 · Australia" },
         { href: "/ships/ss-iberia", label: "SS <em>Iberia</em>", tail: "P&amp;O · 1954 · Australia" },
@@ -1400,6 +1401,7 @@
     "ss-canberra": ["pando_flagships", "pando_postwar_fleet"],
     "ss-arcadia-1954": ["arcadia_iberia_pair", "pando_postwar_fleet"],
     "ss-iberia": ["arcadia_iberia_pair", "pando_postwar_fleet"],
+    "ss-himalaya": ["pando_postwar_fleet"],
     "ss-chusan": ["pando_postwar_fleet"],
     "ss-cathay-1924": ["pando_c_class_1925"],
     "ss-comorin": ["pando_c_class_1925"],
