@@ -53,6 +53,24 @@
   };
 
   const manualRelationships = {
+    "rms-scythia": [
+      {
+        heading: "Postwar Cunard Service",
+        note: "After the Second World War, Scythia returned to passenger and repatriation work and operated alongside the larger Aquitania on Canadian service.",
+        items: [
+          ["/ships/rms-aquitania", "RMS <em>Aquitania</em>", "postwar Cunard running mate"]
+        ]
+      }
+    ],
+    "ss-prinz-friedrich-wilhelm": [
+      {
+        heading: "North German Lloyd Saturday Service",
+        note: "Prinz Friedrich Wilhelm and Berlin were similarly sized North German Lloyd liners assigned to the company’s Bremen–New York Saturday service in the years before the First World War.",
+        items: [
+          ["/ships/ss-berlin-1909", "SS <em>Berlin</em> (1909)", "North German Lloyd Saturday-service running mate"]
+        ]
+      }
+    ],
     "ss-albertic": [
       {
         heading: "White Star Canadian Service",
