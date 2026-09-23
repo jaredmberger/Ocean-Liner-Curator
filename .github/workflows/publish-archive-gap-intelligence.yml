@@ -47,22 +47,50 @@ jobs:
         with:
           node-version: 22
 
-      - name: Generate archive gap intelligence
-        run: node tools/search/archive-gap-intelligence.mjs
+      - name: Install search intelligence dependencies
+        run: npm ci --prefix tools/search
 
-      - name: Validate generated feed
+      - name: Refresh CuratorOS archive intelligence
         run: |
-          node -e "const fs=require('fs'); const d=JSON.parse(fs.readFileSync('data/curatoros-archive-gaps.json','utf8')); if(!d.summary || !Array.isArray(d.relationshipUncoveredShips)) process.exit(1); console.log(d.summary);"
+          node tools/search/builder-audit.mjs
+          node tools/search/operator-intelligence.mjs
+          node tools/search/yard-intelligence.mjs
+          node tools/search/era-service-intelligence.mjs
+          node tools/search/class-sister-intelligence.mjs
+          node tools/search/archive-gap-intelligence.mjs
 
-      - name: Publish changed feed
+      - name: Validate generated feeds
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const feeds = [
+            'data/curatoros-operators.json',
+            'data/curatoros-yards.json',
+            'data/curatoros-eras.json',
+            'data/curatoros-classes-sisters.json',
+            'data/curatoros-archive-gaps.json'
+          ];
+          for (const file of feeds) {
+            const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+            if (!data.summary) throw new Error(`${file} has no summary`);
+            console.log(file, data.summary);
+          }
+          const operators = JSON.parse(fs.readFileSync('data/curatoros-operators.json', 'utf8'));
+          const gaps = JSON.parse(fs.readFileSync('data/curatoros-archive-gaps.json', 'utf8'));
+          if (operators.summary.shipGuides !== gaps.summary.shipGuides) {
+            throw new Error(`CuratorOS guide-count mismatch: operators=${operators.summary.shipGuides}, gaps=${gaps.summary.shipGuides}`);
+          }
+          NODE
+
+      - name: Publish changed feeds
         if: github.event_name != 'pull_request'
         run: |
-          if [ -z "$(git status --porcelain -- data/curatoros-archive-gaps.json)" ]; then
-            echo 'Archive gap intelligence feed is already current.'
+          if [ -z "$(git status --porcelain -- data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json tools/search/builders-data.json)" ]; then
+            echo 'CuratorOS archive intelligence feeds are already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/curatoros-archive-gaps.json
-          git commit -m 'Update CuratorOS archive gap intelligence feed'
+          git add data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json tools/search/builders-data.json
+          git commit -m 'Refresh CuratorOS archive intelligence feeds'
           git push
