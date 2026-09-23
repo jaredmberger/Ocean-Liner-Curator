@@ -1006,6 +1006,7 @@
       "Postwar Orient Line.",
       "Postwar Orient Line liners built for Britain–Australia and Pacific service as scheduled passenger traffic increasingly overlapped with cruising.",
       [
+        { href: "/ships/rms-orcades-1948", label: "RMS <em>Orcades</em>", tail: "Orient Line · 1948" },
         { href: "/ships/rms-oronsay", label: "RMS <em>Oronsay</em>", tail: "Orient Line · 1951" },
         { href: "/ships/rms-orsova", label: "RMS <em>Orsova</em>", tail: "Orient Line · 1954" },
         { href: "/ships/ss-oriana", label: "SS <em>Oriana</em>", tail: "Orient Line · 1960 · later P&O" }
@@ -1409,6 +1410,7 @@
     "ss-duchess-of-york": ["duchess_quartet", "canadian_pacific_atlantic_interwar", "canadian_pacific_duchess_empress"],
     "ss-duchess-of-atholl": ["duchess_quartet", "canadian_pacific_atlantic_interwar", "canadian_pacific_duchess_empress"],
 
+    "rms-orcades-1948": ["orient_postwar"],
     "rms-oronsay": ["orient_postwar"],
     "rms-orsova": ["orient_postwar"],
     "ss-oriana": ["orient_postwar"],
