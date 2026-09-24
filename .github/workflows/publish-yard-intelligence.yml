@@ -1,16 +1,6 @@
 name: Publish yard intelligence
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'ships/**.html'
-      - 'tools/search/builder-audit.mjs'
-      - 'tools/search/builder-aliases.json'
-      - 'tools/search/yard-intelligence.mjs'
-      - 'tools/search/package.json'
-      - 'tools/search/package-lock.json'
-      - '.github/workflows/publish-yard-intelligence.yml'
   workflow_dispatch:
 
 permissions:
