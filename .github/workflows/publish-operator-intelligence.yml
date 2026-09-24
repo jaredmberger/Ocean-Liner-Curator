@@ -1,16 +1,6 @@
 name: Publish operator intelligence
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'ships/**.html'
-      - 'tools/search/builder-audit.mjs'
-      - 'tools/search/operator-intelligence.mjs'
-      - 'tools/search/operator-aliases.json'
-      - 'tools/search/package.json'
-      - 'tools/search/package-lock.json'
-      - '.github/workflows/publish-operator-intelligence.yml'
   workflow_dispatch:
 
 permissions:
