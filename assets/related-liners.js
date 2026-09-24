@@ -1020,7 +1020,7 @@
         { href: "/ships/ss-orion", label: "SS <em>Orion</em>", tail: "Orient Line · 1935" },
         { href: "/ships/rms-orcades", label: "RMS <em>Orcades</em>", tail: "Orient Line · 1937 · sister of Orion" },
         { href: "/ships/ss-orontes", label: "SS <em>Orontes</em>", tail: "Orient Line · 1929" },
-        { href: "/ships/ss-otranto", label: "SS <em>Otranto</em>", tail: "Orient Line · 1925" },
+        { href: "/ships/ss-otranto", label: "SS <em>Otranto</em>", tail: "Orient Line · 1909" },
         { href: "/ships/ss-oronsay", label: "SS <em>Oronsay</em>", tail: "Orient Line · 1925" }
       ],
       "Orient Line interwar liners"
