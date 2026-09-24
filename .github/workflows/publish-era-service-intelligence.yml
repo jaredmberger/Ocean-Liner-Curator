@@ -1,12 +1,6 @@
 name: Publish era and service intelligence
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'ships/**.html'
-      - 'tools/search/era-service-intelligence.mjs'
-      - '.github/workflows/publish-era-service-intelligence.yml'
   workflow_dispatch:
 
 permissions:
