@@ -7,11 +7,16 @@ on:
       - 'assets/related-liners.js'
       - 'assets/related-liners-phase2.js'
       - 'assets/related-liners-enhancements.js'
-      - 'data/curatoros-operators.json'
-      - 'data/curatoros-yards.json'
-      - 'data/curatoros-eras.json'
-      - 'data/curatoros-classes-sisters.json'
+      - 'tools/search/builder-audit.mjs'
+      - 'tools/search/builder-aliases.json'
+      - 'tools/search/operator-intelligence.mjs'
+      - 'tools/search/operator-aliases.json'
+      - 'tools/search/yard-intelligence.mjs'
+      - 'tools/search/era-service-intelligence.mjs'
+      - 'tools/search/class-sister-intelligence.mjs'
       - 'tools/search/archive-gap-intelligence.mjs'
+      - 'tools/search/package.json'
+      - 'tools/search/package-lock.json'
       - '.github/workflows/publish-archive-gap-intelligence.yml'
   push:
     branches: [main]
@@ -20,11 +25,16 @@ on:
       - 'assets/related-liners.js'
       - 'assets/related-liners-phase2.js'
       - 'assets/related-liners-enhancements.js'
-      - 'data/curatoros-operators.json'
-      - 'data/curatoros-yards.json'
-      - 'data/curatoros-eras.json'
-      - 'data/curatoros-classes-sisters.json'
+      - 'tools/search/builder-audit.mjs'
+      - 'tools/search/builder-aliases.json'
+      - 'tools/search/operator-intelligence.mjs'
+      - 'tools/search/operator-aliases.json'
+      - 'tools/search/yard-intelligence.mjs'
+      - 'tools/search/era-service-intelligence.mjs'
+      - 'tools/search/class-sister-intelligence.mjs'
       - 'tools/search/archive-gap-intelligence.mjs'
+      - 'tools/search/package.json'
+      - 'tools/search/package-lock.json'
       - '.github/workflows/publish-archive-gap-intelligence.yml'
   workflow_dispatch:
 
@@ -58,12 +68,54 @@ jobs:
           node tools/search/era-service-intelligence.mjs
           node tools/search/class-sister-intelligence.mjs
           node tools/search/archive-gap-intelligence.mjs
+          node <<'NODE'
+          const fs = require('fs');
+          const audit = JSON.parse(fs.readFileSync('tools/search/dist/builders-audit.json', 'utf8'));
+          const feed = {
+            schemaVersion: 2,
+            generatedAt: audit.generatedAt,
+            source: audit.source,
+            summary: audit.summary,
+            missing: audit.missing,
+            topBuilders: audit.builders.slice(0, 12).map(builder => ({
+              id: builder.key.replace(/\s+/g, '-'),
+              name: builder.canonicalName,
+              shipCount: builder.shipCount,
+              firstLaunchYear: builder.firstLaunchYear,
+              lastLaunchYear: builder.lastLaunchYear,
+              locations: builder.locations.slice(0, 6),
+              operators: builder.operators.slice(0, 8)
+            })),
+            builders: audit.builders.map(builder => ({
+              id: builder.key.replace(/\s+/g, '-'),
+              name: builder.canonicalName,
+              names: builder.names,
+              rawValues: builder.rawValues,
+              shipCount: builder.shipCount
+            })),
+            ships: audit.records.map(record => ({
+              name: record.ship,
+              path: record.path,
+              url: record.url.replace('https://oceanliners.net', ''),
+              launchYear: record.launchYear,
+              builderRaw: record.builder,
+              builders: record.builderIdentities.map(identity => ({
+                id: identity.canonicalKey.replace(/\s+/g, '-'),
+                name: identity.canonicalName,
+                raw: identity.raw
+              }))
+            }))
+          };
+          fs.mkdirSync('data', { recursive: true });
+          fs.writeFileSync('data/curatoros-builders.json', JSON.stringify(feed, null, 2) + '\n');
+          NODE
 
       - name: Validate generated feeds
         run: |
           node - <<'NODE'
           const fs = require('fs');
           const feeds = [
+            'data/curatoros-builders.json',
             'data/curatoros-operators.json',
             'data/curatoros-yards.json',
             'data/curatoros-eras.json',
@@ -85,12 +137,12 @@ jobs:
       - name: Publish changed feeds
         if: github.event_name != 'pull_request'
         run: |
-          if [ -z "$(git status --porcelain -- data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json tools/search/builders-data.json)" ]; then
+          if [ -z "$(git status --porcelain -- data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json tools/search/builders-data.json)" ]; then
             echo 'CuratorOS archive intelligence feeds are already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json tools/search/builders-data.json
+          git add data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json tools/search/builders-data.json
           git commit -m 'Refresh CuratorOS archive intelligence feeds'
           git push
