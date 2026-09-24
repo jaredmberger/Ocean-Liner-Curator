@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-20T03:32:53.724Z",
+  "generatedAt": "2026-09-24T05:38:15.113Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 318,
-    "shipGuides": 306,
-    "canonicalBuilders": 100,
-    "guidesWithBuilder": 306,
+    "trackedShipHtmlFiles": 339,
+    "shipGuides": 327,
+    "canonicalBuilders": 107,
+    "guidesWithBuilder": 327,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 10,
     "guidesMissingLaunch": 2,
-    "builderVariantGroups": 35,
+    "builderVariantGroups": 37,
     "suspiciousLaunchDatesWithoutYear": 1
   },
   "missing": {
@@ -55,7 +55,7 @@
     {
       "id": "john-brown-and-company",
       "name": "John Brown & Company",
-      "shipCount": 23,
+      "shipCount": 26,
       "firstLaunchYear": null,
       "lastLaunchYear": 1967,
       "locations": [
@@ -70,7 +70,7 @@
         "Cunard Line (operated 1969–2008)",
         "Cunard White Star / Cunard Line",
         "Cunard-White Star Line; later Cunard Line",
-        "Orient Steam Navigation Company (Orient Line)"
+        "New Zealand Shipping Company"
       ]
     },
     {
@@ -91,6 +91,27 @@
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd / Hamburg South America Line)",
         "Hamburg-America Line (HAPAG)",
         "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
+      ]
+    },
+    {
+      "id": "vickers-armstrongs",
+      "name": "Vickers-Armstrongs",
+      "shipCount": 14,
+      "firstLaunchYear": 1924,
+      "lastLaunchYear": 1953,
+      "locations": [
+        "Barrow-in-Furness",
+        "High Walker"
+      ],
+      "operators": [
+        "Furness Bermuda Line",
+        "Furness, Withy & Co. / Furness Bermuda Line",
+        "Orient Steam Navigation Company (Orient Line)",
+        "Orient Steam Navigation Company; later P&O-Orient / P&O",
+        "Orient Steam Navigation Company; later P&O-Orient and P&O",
+        "P&O Steam Navigation Company; later P&O-Orient Lines",
+        "P&O; later P&O-Orient and P&O",
+        "Peninsular & Oriental Steam Navigation Company"
       ]
     },
     {
@@ -132,24 +153,6 @@
         "Canadian Pacific Steamships",
         "Canadian Pacific Steamships / Canadian Pacific Line",
         "Cunard Line"
-      ]
-    },
-    {
-      "id": "vickers-armstrongs",
-      "name": "Vickers-Armstrongs",
-      "shipCount": 9,
-      "firstLaunchYear": 1924,
-      "lastLaunchYear": 1935,
-      "locations": [
-        "Barrow-in-Furness",
-        "High Walker"
-      ],
-      "operators": [
-        "Furness Bermuda Line",
-        "Furness, Withy & Co. / Furness Bermuda Line",
-        "Orient Steam Navigation Company (Orient Line)",
-        "P&O Steam Navigation Company; later P&O-Orient Lines",
-        "Peninsular and Oriental Steam Navigation Company (P&O)"
       ]
     },
     {
@@ -323,10 +326,14 @@
       "name": "John Brown & Company",
       "names": [
         "John Brown & Co.",
+        "John Brown & Co. Ltd.",
         "John Brown & Company"
       ],
       "rawValues": [
         "John Brown & Co. (Clydebank, Scotland)",
+        "John Brown & Co. Ltd., Clydebank · yard no. 516",
+        "John Brown & Co. Ltd., Clydebank · yard no. 517",
+        "John Brown & Co. Ltd., Clydebank · yard no. 518",
         "John Brown & Co., Clydebank",
         "John Brown & Co., Clydebank · yard no. 342",
         "John Brown & Co., Clydebank · yard no. 362",
@@ -347,7 +354,7 @@
         "John Brown & Company, Clydebank · yard no. 552",
         "John Brown & Company, Clydebank · yard no. 675"
       ],
-      "shipCount": 23
+      "shipCount": 26
     },
     {
       "id": "blohm-and-voss",
@@ -368,6 +375,32 @@
         "Blohm & Voss, Hamburg · yard no. 479"
       ],
       "shipCount": 17
+    },
+    {
+      "id": "vickers-armstrongs",
+      "name": "Vickers-Armstrongs",
+      "names": [
+        "Vickers-Armstrong",
+        "Vickers-Armstrong Ltd.",
+        "Vickers-Armstrongs",
+        "Vickers-Armstrongs Ltd",
+        "Vickers-Armstrongs Ltd."
+      ],
+      "rawValues": [
+        "Vickers-Armstrong Ltd., Barrow-in-Furness",
+        "Vickers-Armstrong, Barrow-in-Furness",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 637",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 663",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 664",
+        "Vickers-Armstrong, Barrow-in-Furness · yard no. 681",
+        "Vickers-Armstrongs Ltd, High Walker · yard no. 1",
+        "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 1021",
+        "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 950",
+        "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 951",
+        "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 964",
+        "Vickers-Armstrongs, Barrow-in-Furness · yard no. 976"
+      ],
+      "shipCount": 14
     },
     {
       "id": "ag-vulcan",
@@ -401,25 +434,6 @@
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 529",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 595",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 634"
-      ],
-      "shipCount": 9
-    },
-    {
-      "id": "vickers-armstrongs",
-      "name": "Vickers-Armstrongs",
-      "names": [
-        "Vickers-Armstrong",
-        "Vickers-Armstrong Ltd.",
-        "Vickers-Armstrongs Ltd"
-      ],
-      "rawValues": [
-        "Vickers-Armstrong Ltd., Barrow-in-Furness",
-        "Vickers-Armstrong, Barrow-in-Furness",
-        "Vickers-Armstrong, Barrow-in-Furness · yard no. 637",
-        "Vickers-Armstrong, Barrow-in-Furness · yard no. 663",
-        "Vickers-Armstrong, Barrow-in-Furness · yard no. 664",
-        "Vickers-Armstrong, Barrow-in-Furness · yard no. 681",
-        "Vickers-Armstrongs Ltd, High Walker · yard no. 1"
       ],
       "shipCount": 9
     },
@@ -573,6 +587,18 @@
       "shipCount": 4
     },
     {
+      "id": "societe-provencale-de-constructions-navales",
+      "name": "Société Provençale de Constructions Navales",
+      "names": [
+        "Société Provençale de Constructions Navales"
+      ],
+      "rawValues": [
+        "Société Provençale de Constructions Navales, La Ciotat",
+        "Société Provençale de Constructions Navales, La Ciotat · yard no. 149"
+      ],
+      "shipCount": 4
+    },
+    {
       "id": "a-g-vulcan",
       "name": "A.G. Vulcan",
       "names": [
@@ -651,6 +677,20 @@
       "shipCount": 3
     },
     {
+      "id": "cantieri-riuniti-dell-adriatico",
+      "name": "Cantieri Riuniti dell'Adriatico",
+      "names": [
+        "Cantieri Riuniti dell'Adriatico",
+        "Cantieri Riuniti dell’Adriatico"
+      ],
+      "rawValues": [
+        "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1126",
+        "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1127",
+        "Cantieri Riuniti dell’Adriatico, Monfalcone"
+      ],
+      "shipCount": 3
+    },
+    {
       "id": "f-schichau",
       "name": "F. Schichau",
       "names": [
@@ -700,6 +740,17 @@
       "rawValues": [
         "Armstrong Whitworth, Newcastle-upon-Tyne",
         "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "ateliers-et-chantiers-de-la-loire",
+      "name": "Ateliers et Chantiers de la Loire",
+      "names": [
+        "Ateliers et Chantiers de la Loire"
+      ],
+      "rawValues": [
+        "Ateliers et Chantiers de la Loire, Saint-Nazaire"
       ],
       "shipCount": 2
     },
@@ -879,6 +930,17 @@
       "shipCount": 1
     },
     {
+      "id": "ag-weser-bremen",
+      "name": "AG Weser, Bremen",
+      "names": [
+        "AG Weser, Bremen"
+      ],
+      "rawValues": [
+        "AG Weser, Bremen, Germany"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "armstrong-whitworth-and-co-high-walker",
       "name": "Armstrong, Whitworth & Co., High Walker",
       "names": [
@@ -1011,17 +1073,6 @@
       "shipCount": 1
     },
     {
-      "id": "cantieri-riuniti-dell-adriatico",
-      "name": "Cantieri Riuniti dell’Adriatico",
-      "names": [
-        "Cantieri Riuniti dell’Adriatico"
-      ],
-      "rawValues": [
-        "Cantieri Riuniti dell’Adriatico, Monfalcone"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "cantieri-riuniti-dell-adriatico-san-marco-yard",
       "name": "Cantieri Riuniti dell’Adriatico, San Marco yard",
       "names": [
@@ -1110,6 +1161,17 @@
       "shipCount": 1
     },
     {
+      "id": "chantiers-navals-de-la-ciotat",
+      "name": "Chantiers Navals de La Ciotat",
+      "names": [
+        "Chantiers Navals de La Ciotat"
+      ],
+      "rawValues": [
+        "Chantiers Navals de La Ciotat"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "d-and-w-henderson-ltd",
       "name": "D. & W. Henderson Ltd.",
       "names": [
@@ -1150,6 +1212,17 @@
       ],
       "rawValues": [
         "Fairfield Shipbuilding & Engineering Company, Govan, Scotland"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "forges-et-chantiers-de-la-mediterranee",
+      "name": "Forges et Chantiers de la Méditerranée",
+      "names": [
+        "Forges et Chantiers de la Méditerranée"
+      ],
+      "rawValues": [
+        "Forges et Chantiers de la Méditerranée, La Seyne"
       ],
       "shipCount": 1
     },
@@ -1330,6 +1403,17 @@
       "shipCount": 1
     },
     {
+      "id": "n-v-nederlandsche-scheepsbouw-maatschappij",
+      "name": "N.V. Nederlandsche Scheepsbouw-Maatschappij",
+      "names": [
+        "N.V. Nederlandsche Scheepsbouw-Maatschappij"
+      ],
+      "rawValues": [
+        "N.V. Nederlandsche Scheepsbouw-Maatschappij, Amsterdam · yard no. 270"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "new-york-shipbuilding-company",
       "name": "New York Shipbuilding Company",
       "names": [
@@ -1495,6 +1579,17 @@
       "shipCount": 1
     },
     {
+      "id": "vickers-armstrongs-ltd-barrow-in-furness",
+      "name": "Vickers-Armstrongs Ltd., Barrow-in-Furness",
+      "names": [
+        "Vickers-Armstrongs Ltd., Barrow-in-Furness"
+      ],
+      "rawValues": [
+        "Vickers-Armstrongs Ltd., Barrow-in-Furness, England"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "william-beardmore-and-company-dalmuir",
       "name": "William Beardmore & Company, Dalmuir",
       "names": [
@@ -1558,6 +1653,20 @@
       ]
     },
     {
+      "name": "MS Aramis (1932)",
+      "path": "ships/ms-aramis.html",
+      "url": "/ships/ms-aramis",
+      "launchYear": "1931",
+      "builderRaw": "Forges et Chantiers de la Méditerranée, La Seyne",
+      "builders": [
+        {
+          "id": "forges-et-chantiers-de-la-mediterranee",
+          "name": "Forges et Chantiers de la Méditerranée",
+          "raw": "Forges et Chantiers de la Méditerranée, La Seyne"
+        }
+      ]
+    },
+    {
       "name": "MS Augustus",
       "path": "ships/ms-augustus.html",
       "url": "/ships/ms-augustus",
@@ -1572,6 +1681,20 @@
       ]
     },
     {
+      "name": "MS Batory (1936)",
+      "path": "ships/ms-batory.html",
+      "url": "/ships/ms-batory",
+      "launchYear": "1935",
+      "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1127",
+      "builders": [
+        {
+          "id": "cantieri-riuniti-dell-adriatico",
+          "name": "Cantieri Riuniti dell'Adriatico",
+          "raw": "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1127"
+        }
+      ]
+    },
+    {
       "name": "MS Bermuda",
       "path": "ships/ms-bermuda.html",
       "url": "/ships/ms-bermuda",
@@ -1582,6 +1705,34 @@
           "id": "workman-clark-and-co",
           "name": "Workman, Clark & Co.",
           "raw": "Workman, Clark & Co., Belfast · yard no. 494"
+        }
+      ]
+    },
+    {
+      "name": "MS Félix Roussel (1931)",
+      "path": "ships/ms-felix-roussel.html",
+      "url": "/ships/ms-felix-roussel",
+      "launchYear": "1929",
+      "builderRaw": "Ateliers et Chantiers de la Loire, Saint-Nazaire",
+      "builders": [
+        {
+          "id": "ateliers-et-chantiers-de-la-loire",
+          "name": "Ateliers et Chantiers de la Loire",
+          "raw": "Ateliers et Chantiers de la Loire, Saint-Nazaire"
+        }
+      ]
+    },
+    {
+      "name": "MS Georges Philippar (1932)",
+      "path": "ships/ms-georges-philippar.html",
+      "url": "/ships/ms-georges-philippar",
+      "launchYear": "1930",
+      "builderRaw": "Ateliers et Chantiers de la Loire, Saint-Nazaire",
+      "builders": [
+        {
+          "id": "ateliers-et-chantiers-de-la-loire",
+          "name": "Ateliers et Chantiers de la Loire",
+          "raw": "Ateliers et Chantiers de la Loire, Saint-Nazaire"
         }
       ]
     },
@@ -1610,6 +1761,34 @@
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg · yard no. 477"
+        }
+      ]
+    },
+    {
+      "name": "MS Oranje (1939)",
+      "path": "ships/ms-oranje.html",
+      "url": "/ships/ms-oranje",
+      "launchYear": "1938",
+      "builderRaw": "N.V. Nederlandsche Scheepsbouw-Maatschappij, Amsterdam · yard no. 270",
+      "builders": [
+        {
+          "id": "n-v-nederlandsche-scheepsbouw-maatschappij",
+          "name": "N.V. Nederlandsche Scheepsbouw-Maatschappij",
+          "raw": "N.V. Nederlandsche Scheepsbouw-Maatschappij, Amsterdam · yard no. 270"
+        }
+      ]
+    },
+    {
+      "name": "MS Piłsudski (1935)",
+      "path": "ships/ms-pilsudski.html",
+      "url": "/ships/ms-pilsudski",
+      "launchYear": "1934",
+      "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1126",
+      "builders": [
+        {
+          "id": "cantieri-riuniti-dell-adriatico",
+          "name": "Cantieri Riuniti dell'Adriatico",
+          "raw": "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1126"
         }
       ]
     },
@@ -1680,6 +1859,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast · yard no. 896"
+        }
+      ]
+    },
+    {
+      "name": "MV Jean Laborde (1931)",
+      "path": "ships/mv-jean-laborde.html",
+      "url": "/ships/mv-jean-laborde",
+      "launchYear": "1929",
+      "builderRaw": "Société Provençale de Constructions Navales, La Ciotat",
+      "builders": [
+        {
+          "id": "societe-provencale-de-constructions-navales",
+          "name": "Société Provençale de Constructions Navales",
+          "raw": "Société Provençale de Constructions Navales, La Ciotat"
         }
       ]
     },
@@ -2468,6 +2661,48 @@
       ]
     },
     {
+      "name": "RMS Orcades (1948)",
+      "path": "ships/rms-orcades-1948.html",
+      "url": "/ships/rms-orcades-1948",
+      "launchYear": "1947",
+      "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 950",
+      "builders": [
+        {
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
+          "raw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 950"
+        }
+      ]
+    },
+    {
+      "name": "RMS Orcades (1937)",
+      "path": "ships/rms-orcades.html",
+      "url": "/ships/rms-orcades",
+      "launchYear": "1936",
+      "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness, England",
+      "builders": [
+        {
+          "id": "vickers-armstrongs-ltd-barrow-in-furness",
+          "name": "Vickers-Armstrongs Ltd., Barrow-in-Furness",
+          "raw": "Vickers-Armstrongs Ltd., Barrow-in-Furness, England"
+        }
+      ]
+    },
+    {
+      "name": "RMS Oronsay (1951)",
+      "path": "ships/rms-oronsay.html",
+      "url": "/ships/rms-oronsay",
+      "launchYear": "1950",
+      "builderRaw": "Vickers-Armstrongs, Barrow-in-Furness · yard no. 976",
+      "builders": [
+        {
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
+          "raw": "Vickers-Armstrongs, Barrow-in-Furness · yard no. 976"
+        }
+      ]
+    },
+    {
       "name": "RMS Orontes",
       "path": "ships/rms-orontes.html",
       "url": "/ships/rms-orontes",
@@ -2478,6 +2713,20 @@
           "id": "fairfield-shipbuilding-and-engineering-co",
           "name": "Fairfield Shipbuilding & Engineering Co.",
           "raw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 418"
+        }
+      ]
+    },
+    {
+      "name": "RMS Orsova (1954)",
+      "path": "ships/rms-orsova.html",
+      "url": "/ships/rms-orsova",
+      "launchYear": "1953",
+      "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 1021",
+      "builders": [
+        {
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
+          "raw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 1021"
         }
       ]
     },
@@ -2534,6 +2783,48 @@
           "id": "john-brown-and-company",
           "name": "John Brown & Company",
           "raw": "John Brown & Company, Clydebank · yard no. 534"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitane (1929)",
+      "path": "ships/rms-rangitane.html",
+      "url": "/ships/rms-rangitane",
+      "launchYear": "1929",
+      "builderRaw": "John Brown & Co. Ltd., Clydebank · yard no. 518",
+      "builders": [
+        {
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co. Ltd., Clydebank · yard no. 518"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitata (1929)",
+      "path": "ships/rms-rangitata.html",
+      "url": "/ships/rms-rangitata",
+      "launchYear": "1929",
+      "builderRaw": "John Brown & Co. Ltd., Clydebank · yard no. 517",
+      "builders": [
+        {
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co. Ltd., Clydebank · yard no. 517"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitiki (1929)",
+      "path": "ships/rms-rangitiki.html",
+      "url": "/ships/rms-rangitiki",
+      "launchYear": "1928",
+      "builderRaw": "John Brown & Co. Ltd., Clydebank · yard no. 516",
+      "builders": [
+        {
+          "id": "john-brown-and-company",
+          "name": "John Brown & Company",
+          "raw": "John Brown & Co. Ltd., Clydebank · yard no. 516"
         }
       ]
     },
@@ -2818,6 +3109,20 @@
       ]
     },
     {
+      "name": "SS André Lebon (1915)",
+      "path": "ships/ss-andre-lebon.html",
+      "url": "/ships/ss-andre-lebon",
+      "launchYear": "1913",
+      "builderRaw": "Chantiers Navals de La Ciotat",
+      "builders": [
+        {
+          "id": "chantiers-navals-de-la-ciotat",
+          "name": "Chantiers Navals de La Ciotat",
+          "raw": "Chantiers Navals de La Ciotat"
+        }
+      ]
+    },
+    {
       "name": "SS Andrea Doria",
       "path": "ships/ss-andrea-doria.html",
       "url": "/ships/ss-andrea-doria",
@@ -2954,6 +3259,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS Athos II (1927)",
+      "path": "ships/ss-athos-ii.html",
+      "url": "/ships/ss-athos-ii",
+      "launchYear": "1925",
+      "builderRaw": "AG Weser, Bremen, Germany",
+      "builders": [
+        {
+          "id": "ag-weser-bremen",
+          "name": "AG Weser, Bremen",
+          "raw": "AG Weser, Bremen, Germany"
         }
       ]
     },
@@ -3383,6 +3702,20 @@
       ]
     },
     {
+      "name": "SS Champollion (1925)",
+      "path": "ships/ss-champollion.html",
+      "url": "/ships/ss-champollion",
+      "launchYear": "1924",
+      "builderRaw": "Société Provençale de Constructions Navales, La Ciotat · yard no. 149",
+      "builders": [
+        {
+          "id": "societe-provencale-de-constructions-navales",
+          "name": "Société Provençale de Constructions Navales",
+          "raw": "Société Provençale de Constructions Navales, La Ciotat · yard no. 149"
+        }
+      ]
+    },
+    {
       "name": "SS Chicago (1908)",
       "path": "ships/ss-chicago-1908.html",
       "url": "/ships/ss-chicago-1908",
@@ -3407,6 +3740,20 @@
           "id": "alexander-stephen-and-sons",
           "name": "Alexander Stephen & Sons",
           "raw": "Alexander Stephen & Sons, Govan · yard no. 504"
+        }
+      ]
+    },
+    {
+      "name": "SS Chusan (1950)",
+      "path": "ships/ss-chusan.html",
+      "url": "/ships/ss-chusan",
+      "launchYear": "1949",
+      "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 964",
+      "builders": [
+        {
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
+          "raw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 964"
         }
       ]
     },
@@ -4111,6 +4458,20 @@
       ]
     },
     {
+      "name": "SS Himalaya (1949)",
+      "path": "ships/ss-himalaya.html",
+      "url": "/ships/ss-himalaya",
+      "launchYear": "1948",
+      "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 951",
+      "builders": [
+        {
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
+          "raw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 951"
+        }
+      ]
+    },
+    {
       "name": "SS Iberia (1954)",
       "path": "ships/ss-iberia.html",
       "url": "/ships/ss-iberia",
@@ -4569,6 +4930,34 @@
           "id": "new-york-shipbuilding-corporation-camden",
           "name": "New York Shipbuilding Corporation, Camden",
           "raw": "New York Shipbuilding Corporation, Camden, New Jersey"
+        }
+      ]
+    },
+    {
+      "name": "SS Maréchal Joffre (1933)",
+      "path": "ships/ss-marechal-joffre.html",
+      "url": "/ships/ss-marechal-joffre",
+      "launchYear": "1931",
+      "builderRaw": "Société Provençale de Constructions Navales, La Ciotat",
+      "builders": [
+        {
+          "id": "societe-provencale-de-constructions-navales",
+          "name": "Société Provençale de Constructions Navales",
+          "raw": "Société Provençale de Constructions Navales, La Ciotat"
+        }
+      ]
+    },
+    {
+      "name": "SS Mariette Pacha (1926)",
+      "path": "ships/ss-mariette-pacha.html",
+      "url": "/ships/ss-mariette-pacha",
+      "launchYear": "1925",
+      "builderRaw": "Société Provençale de Constructions Navales, La Ciotat",
+      "builders": [
+        {
+          "id": "societe-provencale-de-constructions-navales",
+          "name": "Société Provençale de Constructions Navales",
+          "raw": "Société Provençale de Constructions Navales, La Ciotat"
         }
       ]
     },
