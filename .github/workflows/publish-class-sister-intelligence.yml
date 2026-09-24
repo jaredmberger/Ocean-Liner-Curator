@@ -1,14 +1,6 @@
 name: Publish class and sister ship intelligence
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'ships/**.html'
-      - 'tools/search/class-sister-intelligence.mjs'
-      - 'tools/search/package.json'
-      - 'tools/search/package-lock.json'
-      - '.github/workflows/publish-class-sister-intelligence.yml'
   workflow_dispatch:
 
 permissions:
