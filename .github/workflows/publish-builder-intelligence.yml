@@ -1,15 +1,6 @@
 name: Publish builder intelligence
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'ships/**.html'
-      - 'tools/search/builder-audit.mjs'
-      - 'tools/search/builder-aliases.json'
-      - 'tools/search/package.json'
-      - 'tools/search/package-lock.json'
-      - '.github/workflows/publish-builder-intelligence.yml'
   workflow_dispatch:
 
 permissions:
