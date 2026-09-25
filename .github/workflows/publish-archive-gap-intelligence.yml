@@ -77,6 +77,7 @@ jobs:
             source: audit.source,
             summary: audit.summary,
             missing: audit.missing,
+            suspiciousLaunchYears: audit.suspiciousLaunchYears,
             topBuilders: audit.builders.slice(0, 12).map(builder => ({
               id: builder.key.replace(/\s+/g, '-'),
               name: builder.canonicalName,
