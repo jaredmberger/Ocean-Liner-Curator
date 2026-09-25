@@ -163,7 +163,9 @@ for (const path of paths) {
     findRow(label => /\bas built\b/.test(label) && /\boperator\b/.test(label)) ||
     findRow(label => /\boperator\b/.test(label) && !/later/.test(label)) ||
     findRow(label => label === 'shipping line' || label === 'line' || label === 'company');
-  const launchedRow = findRow(label => label === 'launched' || label === 'launch date' || label.startsWith('launched '));
+  const launchedRow =
+    findRow(label => label === 'launched' || label === 'launch date') ||
+    findRow(label => label.startsWith('launched ') && label !== 'launched as');
   const builtRow = findRow(label => label === 'built' || label.startsWith('built '));
   const completedRow = findRow(label => label === 'completed' || label === 'completion' || label === 'entered service');
 
