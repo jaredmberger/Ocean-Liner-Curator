@@ -18,6 +18,11 @@ on:
       - 'ships/**/*.WEBP'
       - 'scripts/build-device-archive.py'
       - 'scripts/sync-ship-sitemaps.py'
+      - 'scripts/build-curatoros-integrity.py'
+      - 'random-ship.js'
+      - 'assets/random-ship.js'
+      - 'data/builders.json'
+      - 'data/curatoros-*.json'
       - 'sitemap.xml'
       - 'sitemaps/sitemap-ships.xml'
       - '.github/workflows/device-archive.yml'
@@ -37,6 +42,11 @@ on:
       - 'ships/**/*.WEBP'
       - 'scripts/build-device-archive.py'
       - 'scripts/sync-ship-sitemaps.py'
+      - 'scripts/build-curatoros-integrity.py'
+      - 'random-ship.js'
+      - 'assets/random-ship.js'
+      - 'data/builders.json'
+      - 'data/curatoros-*.json'
       - 'sitemap.xml'
       - 'sitemaps/sitemap-ships.xml'
       - '.github/workflows/device-archive.yml'
@@ -59,6 +69,11 @@ jobs:
             ships/*.html
             scripts/build-device-archive.py
             scripts/sync-ship-sitemaps.py
+            scripts/build-curatoros-integrity.py
+            random-ship.js
+            assets/random-ship.js
+            data/builders.json
+            data/curatoros-*.json
             sitemap.xml
             sitemaps/sitemap-ships.xml
             api/device
@@ -75,9 +90,12 @@ jobs:
       - name: Sync ship sitemaps
         run: python scripts/sync-ship-sitemaps.py
 
+      - name: Generate CuratorOS integrity manifest
+        run: python scripts/build-curatoros-integrity.py
+
       - name: Verify generated output on pull requests
         if: github.event_name == 'pull_request'
-        run: git diff --exit-code -- api/device sitemap.xml sitemaps/sitemap-ships.xml
+        run: git diff --exit-code -- api/device sitemap.xml sitemaps/sitemap-ships.xml random-ship.js assets/random-ship.js
 
       - name: Commit generated output
         if: github.event_name != 'pull_request'

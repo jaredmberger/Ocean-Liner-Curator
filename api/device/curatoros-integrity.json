@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "project": "Ocean Liner Curator",
+  "system": "CuratorOS",
+  "status": "healthy",
+  "generatedFrom": {
+    "archiveGenerated": "2026-09-25"
+  },
+  "counts": {
+    "archive": 330,
+    "randomEligible": 329,
+    "sitemapShips": 330,
+    "deviceDetails": 330,
+    "errors": 0,
+    "warnings": 0
+  },
+  "freshness": {
+    "archive": {
+      "file": "api/device/archive.json",
+      "exists": true,
+      "status": "ok",
+      "generatedAt": "2026-09-25",
+      "count": 330
+    },
+    "builders": {
+      "file": "data/builders.json",
+      "exists": true,
+      "status": "ok",
+      "generatedAt": "2026-07-21T08:18:14.029459+00:00",
+      "counts": {
+        "builders": 58,
+        "confirmed": 22,
+        "provisional": 7,
+        "needsReview": 29
+      }
+    },
+    "intelligenceFeeds": [
+      {
+        "file": "data/curatoros-archive-gaps.json",
+        "exists": true,
+        "status": "ok",
+        "generatedAt": "2026-09-25T08:07:56.790Z"
+      },
+      {
+        "file": "data/curatoros-builders.json",
+        "exists": true,
+        "status": "ok",
+        "generatedAt": "2026-09-25T08:07:54.219Z"
+      },
+      {
+        "file": "data/curatoros-classes-sisters.json",
+        "exists": true,
+        "status": "ok",
+        "generatedAt": "2026-09-25T08:07:56.722Z"
+      },
+      {
+        "file": "data/curatoros-eras.json",
+        "exists": true,
+        "status": "ok",
+        "generatedAt": "2026-09-25T08:07:55.494Z"
+      },
+      {
+        "file": "data/curatoros-operators.json",
+        "exists": true,
+        "status": "ok",
+        "generatedAt": "2026-09-25T08:07:54.219Z"
+      },
+      {
+        "file": "data/curatoros-yards.json",
+        "exists": true,
+        "status": "ok",
+        "generatedAt": "2026-09-25T08:07:54.219Z"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "archive-minimum",
+      "ok": true,
+      "severity": "error",
+      "count": 330,
+      "minimum": 300
+    },
+    {
+      "name": "archive-declared-count",
+      "ok": true,
+      "severity": "error",
+      "declared": 330,
+      "actual": 330
+    },
+    {
+      "name": "ship-sitemap-reconciliation",
+      "ok": true,
+      "severity": "error",
+      "missing": [],
+      "extra": [],
+      "match": true
+    },
+    {
+      "name": "device-detail-reconciliation",
+      "ok": true,
+      "severity": "error",
+      "missing": [],
+      "extra": [],
+      "match": true
+    },
+    {
+      "name": "random-ship-reconciliation",
+      "ok": true,
+      "severity": "error",
+      "expectedCount": 329,
+      "intentionalExclusions": [
+        "tall-ships-guide"
+      ],
+      "files": [
+        {
+          "file": "random-ship.js",
+          "count": 329,
+          "missing": [],
+          "extra": [],
+          "match": true
+        },
+        {
+          "file": "assets/random-ship.js",
+          "count": 329,
+          "missing": [],
+          "extra": [],
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "builder-references-resolve",
+      "ok": true,
+      "severity": "warning",
+      "unknownShipReferences": [],
+      "note": "Incomplete builder coverage is allowed; only references to nonexistent archive IDs are flagged."
+    },
+    {
+      "name": "curatoros-intelligence-feeds-readable",
+      "ok": true,
+      "severity": "warning",
+      "affected": []
+    }
+  ]
+}
