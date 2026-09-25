@@ -1,20 +1,22 @@
 {
-  "generatedAt": "2026-09-25T05:18:12.709Z",
+  "generatedAt": "2026-09-25T07:47:53.498Z",
   "summary": {
     "shipGuides": 327,
-    "canonicalBuilders": 104,
+    "canonicalBuilders": 80,
     "guidesWithBuilder": 327
   },
   "builders": [
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 74,
+      "shipCount": 79,
       "locations": [
         "Belfast",
         "Belfast, Ireland",
         "Belfast, Northern Ireland",
-        "Govan"
+        "Govan",
+        "Queen's Island, Belfast",
+        "Queen’s Island, Belfast"
       ],
       "firstLaunchYear": 1870,
       "lastLaunchYear": 1960,
@@ -202,6 +204,13 @@
           "builderRaw": "Harland & Wolff, Belfast · yard no. 333"
         },
         {
+          "name": "RMS Celtic",
+          "url": "/ships/rms-celtic",
+          "launchYear": "1901",
+          "operator": "White Star Line / Oceanic Steam Navigation Co.",
+          "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 335"
+        },
+        {
           "name": "RMS Walmer Castle",
           "url": "/ships/rms-walmer-castle",
           "launchYear": "1901",
@@ -237,6 +246,13 @@
           "builderRaw": "Harland & Wolff, Belfast · yard no. 336"
         },
         {
+          "name": "RMS Cedric",
+          "url": "/ships/rms-cedric",
+          "launchYear": "1902",
+          "operator": "White Star Line / Oceanic Steam Navigation Co.",
+          "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 337"
+        },
+        {
           "name": "SS Arabic (1903)",
           "url": "/ships/ss-arabic",
           "launchYear": "1902",
@@ -256,6 +272,13 @@
           "launchYear": "1902",
           "operator": "White Star Line",
           "builderRaw": "Harland & Wolff, Belfast"
+        },
+        {
+          "name": "RMS Baltic",
+          "url": "/ships/rms-baltic",
+          "launchYear": "1903",
+          "operator": "White Star Line / Oceanic Steam Navigation Co.",
+          "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 352"
         },
         {
           "name": "RMS Kenilworth Castle",
@@ -298,6 +321,13 @@
           "launchYear": "1905",
           "operator": "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart-Maatschappij / NASM)",
           "builderRaw": "Harland & Wolff, Belfast"
+        },
+        {
+          "name": "RMS Adriatic (1907)",
+          "url": "/ships/rms-adriatic",
+          "launchYear": "1906",
+          "operator": "White Star Line; briefly Cunard-White Star after the 1934 merger",
+          "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
         },
         {
           "name": "RMS Asturias (1908)",
@@ -354,6 +384,13 @@
           "launchYear": "1911",
           "operator": "White Star Line",
           "builderRaw": "Harland & Wolff (Belfast, Northern Ireland)"
+        },
+        {
+          "name": "SS Nomadic",
+          "url": "/ships/ss-nomadic",
+          "launchYear": "1911",
+          "operator": "Oceanic Steam Navigation Co. Ltd. (White Star Line)",
+          "builderRaw": "Harland & Wolff Ltd., Queen’s Island, Belfast"
         },
         {
           "name": "SS Traffic",
@@ -737,12 +774,13 @@
     {
       "id": "blohm-and-voss",
       "name": "Blohm & Voss",
-      "shipCount": 17,
+      "shipCount": 21,
       "locations": [
-        "Hamburg"
+        "Hamburg",
+        "Hamburg, Germany"
       ],
       "firstLaunchYear": 1896,
-      "lastLaunchYear": 1928,
+      "lastLaunchYear": 1929,
       "ships": [
         {
           "name": "SS Barbarossa",
@@ -752,11 +790,25 @@
           "builderRaw": "Blohm & Voss, Hamburg"
         },
         {
+          "name": "SS Pretoria",
+          "url": "/ships/ss-pretoria",
+          "launchYear": "1897",
+          "operator": "Hamburg-Amerika Line (HAPAG)",
+          "builderRaw": "Blohm & Voss, Hamburg, Germany"
+        },
+        {
           "name": "SS Bulgaria",
           "url": "/ships/ss-bulgaria",
           "launchYear": "1898",
           "operator": "Hamburg America Line",
           "builderRaw": "Blohm & Voss, Hamburg · Yard No. 125"
+        },
+        {
+          "name": "SS Graf Waldersee",
+          "url": "/ships/ss-graf-waldersee",
+          "launchYear": "1898",
+          "operator": "Hamburg-Amerika Line (HAPAG)",
+          "builderRaw": "Blohm & Voss, Hamburg, Germany"
         },
         {
           "name": "SS Batavia",
@@ -771,6 +823,13 @@
           "launchYear": "1899",
           "operator": "Hamburg America Line",
           "builderRaw": "Blohm & Voss, Hamburg"
+        },
+        {
+          "name": "SS Moltke",
+          "url": "/ships/ss-moltke",
+          "launchYear": "1901",
+          "operator": "Hamburg-Amerika Line (HAPAG)",
+          "builderRaw": "Blohm & Voss, Hamburg, Germany"
         },
         {
           "name": "SS Cleveland",
@@ -862,19 +921,154 @@
           "launchYear": "1928",
           "operator": "Compagnie Générale Transatlantique (French Line)",
           "builderRaw": "Blohm & Voss, Hamburg"
+        },
+        {
+          "name": "SS Milwaukee",
+          "url": "/ships/ss-milwaukee",
+          "launchYear": "1929",
+          "operator": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
+          "builderRaw": "Blohm & Voss, Hamburg, Germany"
+        }
+      ]
+    },
+    {
+      "id": "ag-vulcan",
+      "name": "AG Vulcan",
+      "shipCount": 16,
+      "locations": [
+        "Hamburg",
+        "Stettin",
+        "Stettin, Germany",
+        "then Germany; today Szczecin, Poland"
+      ],
+      "firstLaunchYear": 1896,
+      "lastLaunchYear": 1913,
+      "ships": [
+        {
+          "name": "SS Friedrich der Grosse",
+          "url": "/ships/ss-friedrich-der-grosse",
+          "launchYear": "1896",
+          "operator": "Norddeutscher Lloyd (North German Lloyd)",
+          "builderRaw": "AG Vulcan, Stettin, Germany"
+        },
+        {
+          "name": "SS Königin Luise",
+          "url": "/ships/ss-konigin-luise",
+          "launchYear": "1896",
+          "operator": "Norddeutscher Lloyd (North German Lloyd)",
+          "builderRaw": "AG Vulcan, Stettin, Germany · yard no. 232"
+        },
+        {
+          "name": "SS Kaiser Wilhelm der Grosse",
+          "url": "/ships/ss-kaiser-wilhelm-der-grosse",
+          "launchYear": "1897",
+          "operator": "Norddeutscher Lloyd (North German Lloyd)",
+          "builderRaw": "AG Vulcan, Stettin"
+        },
+        {
+          "name": "SS Patricia",
+          "url": "/ships/ss-patricia",
+          "launchYear": "1899",
+          "operator": "Hamburg-Amerika Line (HAPAG)",
+          "builderRaw": "AG Vulcan, Stettin, Germany"
+        },
+        {
+          "name": "SS Deutschland (1900)",
+          "url": "/ships/ss-deutschland",
+          "launchYear": "1900",
+          "operator": "Hamburg America Line (HAPAG)",
+          "builderRaw": "A.G. Vulcan, Stettin"
+        },
+        {
+          "name": "SS Prinzess Irene",
+          "url": "/ships/ss-prinzess-irene",
+          "launchYear": "1900",
+          "operator": "Norddeutscher Lloyd (North German Lloyd)",
+          "builderRaw": "AG Vulcan, Stettin, Germany"
+        },
+        {
+          "name": "SS Kronprinz Wilhelm",
+          "url": "/ships/ss-kronprinz-wilhelm",
+          "launchYear": "1901",
+          "operator": "Norddeutscher Lloyd",
+          "builderRaw": "AG Vulcan, Stettin"
+        },
+        {
+          "name": "SS Kaiser Wilhelm II",
+          "url": "/ships/ss-kaiser-wilhelm-ii",
+          "launchYear": "1902",
+          "operator": "Norddeutscher Lloyd",
+          "builderRaw": "AG Vulcan (Stettin, Germany)"
+        },
+        {
+          "name": "SS Kaiserin Auguste Victoria",
+          "url": "/ships/ss-kaiserin-auguste-victoria",
+          "launchYear": "1905",
+          "operator": "Hamburg America Line (HAPAG)",
+          "builderRaw": "Vulcan AG, Stettin"
+        },
+        {
+          "name": "SS Kronprinzessin Cecilie",
+          "url": "/ships/ss-kronprinzessin-cecilie",
+          "launchYear": "1906",
+          "operator": "Norddeutscher Lloyd",
+          "builderRaw": "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)"
+        },
+        {
+          "name": "SS George Washington",
+          "url": "/ships/ss-george-washington-ngl",
+          "launchYear": "1908",
+          "operator": "Norddeutscher Lloyd / North German Lloyd",
+          "builderRaw": "AG Vulcan, Stettin · yard no. 286"
+        },
+        {
+          "name": "SS George Washington",
+          "url": "/ships/ss-george-washington",
+          "launchYear": "1908",
+          "operator": "Norddeutscher Lloyd",
+          "builderRaw": "AG Vulcan, Stettin"
+        },
+        {
+          "name": "RMS Berengaria",
+          "url": "/ships/rms-berengaria",
+          "launchYear": "1912",
+          "operator": "Hamburg America Line",
+          "builderRaw": "A.G. Vulcan, Hamburg"
+        },
+        {
+          "name": "SS Imperator",
+          "url": "/ships/ss-imperator",
+          "launchYear": "1912",
+          "operator": "Hamburg America Line (HAPAG)",
+          "builderRaw": "A.G. Vulcan, Hamburg"
+        },
+        {
+          "name": "RMS Empress of Australia",
+          "url": "/ships/rms-empress-of-australia",
+          "launchYear": "1913",
+          "operator": "Hamburg-America Line",
+          "builderRaw": "AG Vulcan, Stettin"
+        },
+        {
+          "name": "SS Cap Trafalgar",
+          "url": "/ships/ss-cap-trafalgar",
+          "launchYear": "1913",
+          "operator": "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)",
+          "builderRaw": "AG Vulcan, Hamburg · yard no. 334"
         }
       ]
     },
     {
       "id": "vickers-armstrongs",
       "name": "Vickers-Armstrongs",
-      "shipCount": 14,
+      "shipCount": 16,
       "locations": [
         "Barrow-in-Furness",
+        "Barrow-in-Furness, England",
         "High Walker"
       ],
       "firstLaunchYear": 1924,
-      "lastLaunchYear": 1953,
+      "lastLaunchYear": 1959,
       "ships": [
         {
           "name": "SS Orama",
@@ -940,6 +1134,13 @@
           "builderRaw": "Vickers-Armstrong, Barrow-in-Furness"
         },
         {
+          "name": "RMS Orcades (1937)",
+          "url": "/ships/rms-orcades",
+          "launchYear": "1936",
+          "operator": "Orient Steam Navigation Company (Orient Line)",
+          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness, England"
+        },
+        {
           "name": "RMS Orcades (1948)",
           "url": "/ships/rms-orcades-1948",
           "launchYear": "1947",
@@ -973,93 +1174,24 @@
           "launchYear": "1953",
           "operator": "Orient Steam Navigation Company; later P&O-Orient / P&O",
           "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 1021"
-        }
-      ]
-    },
-    {
-      "id": "ag-vulcan",
-      "name": "AG Vulcan",
-      "shipCount": 9,
-      "locations": [
-        "Hamburg",
-        "Stettin",
-        "Stettin, Germany",
-        "then Germany; today Szczecin, Poland"
-      ],
-      "firstLaunchYear": 1897,
-      "lastLaunchYear": 1913,
-      "ships": [
-        {
-          "name": "SS Kaiser Wilhelm der Grosse",
-          "url": "/ships/ss-kaiser-wilhelm-der-grosse",
-          "launchYear": "1897",
-          "operator": "Norddeutscher Lloyd (North German Lloyd)",
-          "builderRaw": "AG Vulcan, Stettin"
         },
         {
-          "name": "SS Kronprinz Wilhelm",
-          "url": "/ships/ss-kronprinz-wilhelm",
-          "launchYear": "1901",
-          "operator": "Norddeutscher Lloyd",
-          "builderRaw": "AG Vulcan, Stettin"
-        },
-        {
-          "name": "SS Kaiser Wilhelm II",
-          "url": "/ships/ss-kaiser-wilhelm-ii",
-          "launchYear": "1902",
-          "operator": "Norddeutscher Lloyd",
-          "builderRaw": "AG Vulcan (Stettin, Germany)"
-        },
-        {
-          "name": "SS Kaiserin Auguste Victoria",
-          "url": "/ships/ss-kaiserin-auguste-victoria",
-          "launchYear": "1905",
-          "operator": "Hamburg America Line (HAPAG)",
-          "builderRaw": "Vulcan AG, Stettin"
-        },
-        {
-          "name": "SS Kronprinzessin Cecilie",
-          "url": "/ships/ss-kronprinzessin-cecilie",
-          "launchYear": "1906",
-          "operator": "Norddeutscher Lloyd",
-          "builderRaw": "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)"
-        },
-        {
-          "name": "SS George Washington",
-          "url": "/ships/ss-george-washington-ngl",
-          "launchYear": "1908",
-          "operator": "Norddeutscher Lloyd / North German Lloyd",
-          "builderRaw": "AG Vulcan, Stettin · yard no. 286"
-        },
-        {
-          "name": "SS George Washington",
-          "url": "/ships/ss-george-washington",
-          "launchYear": "1908",
-          "operator": "Norddeutscher Lloyd",
-          "builderRaw": "AG Vulcan, Stettin"
-        },
-        {
-          "name": "RMS Empress of Australia",
-          "url": "/ships/rms-empress-of-australia",
-          "launchYear": "1913",
-          "operator": "Hamburg-America Line",
-          "builderRaw": "AG Vulcan, Stettin"
-        },
-        {
-          "name": "SS Cap Trafalgar",
-          "url": "/ships/ss-cap-trafalgar",
-          "launchYear": "1913",
-          "operator": "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)",
-          "builderRaw": "AG Vulcan, Hamburg · yard no. 334"
+          "name": "SS Oriana",
+          "url": "/ships/ss-oriana",
+          "launchYear": "1959",
+          "operator": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
+          "builderRaw": "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061"
         }
       ]
     },
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
-      "shipCount": 9,
+      "shipCount": 13,
       "locations": [
-        "Govan"
+        "Govan",
+        "Govan, Glasgow",
+        "Govan, Scotland"
       ],
       "firstLaunchYear": 1892,
       "lastLaunchYear": 1929,
@@ -1072,11 +1204,25 @@
           "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan"
         },
         {
+          "name": "RMS Lucania",
+          "url": "/ships/rms-lucania",
+          "launchYear": "1893",
+          "operator": "Cunard Line",
+          "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan, Scotland"
+        },
+        {
           "name": "RMS Orontes",
           "url": "/ships/rms-orontes",
           "launchYear": "1902",
           "operator": "Orient Steam Navigation Company",
           "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 418"
+        },
+        {
+          "name": "SS Armadale Castle",
+          "url": "/ships/ss-armadale-castle",
+          "launchYear": "1903",
+          "operator": "Union-Castle Mail Steamship Company",
+          "builderRaw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424"
         },
         {
           "name": "RMS Empress of Ireland",
@@ -1091,6 +1237,13 @@
           "launchYear": "1912",
           "operator": "Canadian Pacific",
           "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 484"
+        },
+        {
+          "name": "SS Calgarian",
+          "url": "/ships/ss-calgarian",
+          "launchYear": "1913",
+          "operator": "Allan Line",
+          "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow"
         },
         {
           "name": "RMS Empress of Canada (1922)",
@@ -1114,6 +1267,13 @@
           "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 595"
         },
         {
+          "name": "SS Letitia",
+          "url": "/ships/ss-letitia",
+          "launchYear": "1924",
+          "operator": "Anchor-Donaldson Line; later Donaldson Atlantic Line and Donaldson Brothers & Black management in postwar service",
+          "builderRaw": "Fairfield Shipbuilding & Engineering Company, Govan, Scotland"
+        },
+        {
           "name": "RMS Transylvania",
           "url": "/ships/rms-transylvania",
           "launchYear": "1925",
@@ -1130,73 +1290,227 @@
       ]
     },
     {
-      "id": "swan-hunter-and-wigham-richardson",
-      "name": "Swan Hunter & Wigham Richardson",
-      "shipCount": 6,
+      "id": "ansaldo",
+      "name": "Ansaldo",
+      "shipCount": 8,
       "locations": [
-        "Newcastle-on-Tyne",
-        "Wallsend",
-        "Wallsend, England"
+        "Genoa",
+        "Sestri Ponente, Genoa"
       ],
-      "firstLaunchYear": 1902,
+      "firstLaunchYear": 1916,
+      "lastLaunchYear": 1962,
+      "ships": [
+        {
+          "name": "SS Duilio",
+          "url": "/ships/ss-duilio",
+          "launchYear": "1916",
+          "operator": "Navigazione Generale Italiana",
+          "builderRaw": "Ansaldo, Sestri Ponente, Genoa"
+        },
+        {
+          "name": "MS Augustus",
+          "url": "/ships/ms-augustus",
+          "launchYear": "1926",
+          "operator": "Navigazione Generale Italiana",
+          "builderRaw": "Ansaldo, Genoa"
+        },
+        {
+          "name": "SS Roma",
+          "url": "/ships/ss-roma",
+          "launchYear": "1926",
+          "operator": "Navigazione Generale Italiana",
+          "builderRaw": "Ansaldo, Sestri Ponente, Genoa"
+        },
+        {
+          "name": "SS Rex",
+          "url": "/ships/ss-rex",
+          "launchYear": "1931",
+          "operator": "Italia Flotte Riunite / Italian Line",
+          "builderRaw": "Ansaldo, Sestri Ponente, Genoa · hull no. 296"
+        },
+        {
+          "name": "SS Andrea Doria",
+          "url": "/ships/ss-andrea-doria",
+          "launchYear": "1951",
+          "operator": "Italia di Navigazione / Italian Line",
+          "builderRaw": "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
+        },
+        {
+          "name": "SS Cristoforo Colombo",
+          "url": "/ships/ss-cristoforo-colombo",
+          "launchYear": "1953",
+          "operator": "Italian Line (Italia di Navigazione)",
+          "builderRaw": "Ansaldo Shipyards, Genoa"
+        },
+        {
+          "name": "SS Leonardo da Vinci",
+          "url": "/ships/ss-leonardo-da-vinci",
+          "launchYear": "1958",
+          "operator": "Italian Line (Italia di Navigazione)",
+          "builderRaw": "Ansaldo Shipyard, Genoa"
+        },
+        {
+          "name": "SS Michelangelo (1965)",
+          "url": "/ships/ss-michelangelo-1965",
+          "launchYear": "1962",
+          "operator": "Italia Società di Navigazione / Italian Line",
+          "builderRaw": "Ansaldo, Sestri Ponente, Genoa"
+        }
+      ]
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co",
+      "name": "Newport News Shipbuilding & Dry Dock Co.",
+      "shipCount": 8,
+      "locations": [
+        "Newport News, Virginia",
+        "Newport News, Virginia, USA",
+        "Virginia",
+        "Virginia, USA"
+      ],
+      "firstLaunchYear": 1927,
+      "lastLaunchYear": 1951,
+      "ships": [
+        {
+          "name": "SS California",
+          "url": "/ships/ss-california",
+          "launchYear": "1927",
+          "operator": "Panama Pacific Line",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Company · Newport News, Virginia"
+        },
+        {
+          "name": "SS Virginia",
+          "url": "/ships/ss-virginia",
+          "launchYear": "1928",
+          "operator": "Panama Pacific Line",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
+        },
+        {
+          "name": "SS Pennsylvania",
+          "url": "/ships/ss-pennsylvania",
+          "launchYear": "1929",
+          "operator": "Panama Pacific Line",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
+        },
+        {
+          "name": "SS Morro Castle",
+          "url": "/ships/ss-morro-castle",
+          "launchYear": "1930",
+          "operator": "Ward Line / AGWI interests",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)"
+        },
+        {
+          "name": "SS President Hoover",
+          "url": "/ships/ss-president-hoover",
+          "launchYear": "1930",
+          "operator": "Dollar Steamship Line",
+          "builderRaw": "Newport News Shipbuilding and Dry Dock Company, Virginia"
+        },
+        {
+          "name": "SS President Coolidge",
+          "url": "/ships/ss-president-coolidge",
+          "launchYear": "1931",
+          "operator": "Dollar Steamship Lines",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
+        },
+        {
+          "name": "SS America",
+          "url": "/ships/ss-america",
+          "launchYear": "1939",
+          "operator": "United States Lines",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)"
+        },
+        {
+          "name": "SS United States",
+          "url": "/ships/ss-us",
+          "launchYear": "1951",
+          "operator": "United States Lines",
+          "builderRaw": "Newport News Shipbuilding, Virginia"
+        }
+      ]
+    },
+    {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "shipCount": 7,
+      "locations": [
+        "Penhoët",
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "firstLaunchYear": 1905,
       "lastLaunchYear": 1938,
       "ships": [
         {
-          "name": "RMS Carpathia",
-          "url": "/ships/rms-carpathia",
-          "launchYear": "1902",
-          "operator": "Cunard Line",
-          "builderRaw": "Swan Hunter & Wigham Richardson, Wallsend"
+          "name": "SS La Provence",
+          "url": "/ships/ss-la-provence",
+          "launchYear": "1905",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
         },
         {
-          "name": "RMS Mauretania",
-          "url": "/ships/rms-mauretania",
-          "launchYear": "1906",
-          "operator": "Cunard Line",
-          "builderRaw": "Swan Hunter & Wigham Richardson (Wallsend, England)"
-        },
-        {
-          "name": "RMS Franconia (1910)",
-          "url": "/ships/rms-franconia-1910",
+          "name": "SS France (1912)",
+          "url": "/ships/ss-france-1912",
           "launchYear": "1910",
-          "operator": "Cunard Line",
-          "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend"
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
         },
         {
-          "name": "RMS Aurania (1916)",
-          "url": "/ships/rms-aurania",
+          "name": "SS Rochambeau",
+          "url": "/ships/ss-rochambeau",
+          "launchYear": "1911",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers & Ateliers de Saint-Nazaire, Penhoët"
+        },
+        {
+          "name": "SS Paris",
+          "url": "/ships/ss-paris",
           "launchYear": "1916",
-          "operator": "Cunard Line; British Government hire throughout active career",
-          "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965"
+          "operator": "Compagnie Générale Transatlantique",
+          "builderRaw": "Chantiers & Ateliers de Penhoët, Saint-Nazaire"
         },
         {
-          "name": "SS Giulio Cesare",
-          "url": "/ships/ss-giulio-cesare",
-          "launchYear": "1920",
-          "operator": "Navigazione Generale Italiana",
-          "builderRaw": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne"
+          "name": "SS Champlain",
+          "url": "/ships/ss-champlain",
+          "launchYear": "1931",
+          "operator": "Compagnie Générale Transatlantique",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
         },
         {
-          "name": "QSMV Dominion Monarch",
-          "url": "/ships/qsmv-dominion-monarch",
+          "name": "SS Normandie",
+          "url": "/ships/ss-normandie",
+          "launchYear": "1932",
+          "operator": "Compagnie Générale Transatlantique (CGT) / “French Line”",
+          "builderRaw": "Chantiers de Penhoët (Saint-Nazaire, France)"
+        },
+        {
+          "name": "SS Pasteur",
+          "url": "/ships/ss-pasteur",
           "launchYear": "1938",
-          "operator": "Shaw, Savill & Albion Line",
-          "builderRaw": "Swan Hunter and Wigham Richardson, Wallsend"
+          "operator": "Compagnie de Navigation Sud-Atlantique",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
         }
       ]
     },
     {
       "id": "william-beardmore-and-co",
       "name": "William Beardmore & Co.",
-      "shipCount": 6,
+      "shipCount": 7,
       "locations": [
         "Dalmuir",
         "Dalmuir, River Clyde",
         "Dalmuir, Scotland"
       ],
-      "firstLaunchYear": 1919,
+      "firstLaunchYear": 1913,
       "lastLaunchYear": 1927,
       "ships": [
+        {
+          "name": "RMS Empress of France",
+          "url": "/ships/ss-empress-of-france",
+          "launchYear": "1913",
+          "operator": "Allan Line",
+          "builderRaw": "William Beardmore & Company, Dalmuir, Scotland · yard no. 509"
+        },
         {
           "name": "RMS Cameronia",
           "url": "/ships/rms-cameronia",
@@ -1242,198 +1556,130 @@
       ]
     },
     {
-      "id": "ansaldo-sestri-ponente",
-      "name": "Ansaldo, Sestri Ponente",
-      "shipCount": 5,
+      "id": "alexander-stephen-and-sons",
+      "name": "Alexander Stephen & Sons",
+      "shipCount": 6,
       "locations": [
-        "Genoa"
+        "Glasgow",
+        "Govan",
+        "Linthouse, Glasgow",
+        "Linthouse, Glasgow, Scotland"
       ],
-      "firstLaunchYear": 1916,
-      "lastLaunchYear": 1962,
+      "firstLaunchYear": 1881,
+      "lastLaunchYear": 1928,
       "ships": [
         {
-          "name": "SS Duilio",
-          "url": "/ships/ss-duilio",
-          "launchYear": "1916",
-          "operator": "Navigazione Generale Italiana",
-          "builderRaw": "Ansaldo, Sestri Ponente, Genoa"
+          "name": "SS Norge",
+          "url": "/ships/ss-norge",
+          "launchYear": "1881",
+          "operator": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
+          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow"
         },
         {
-          "name": "SS Roma",
-          "url": "/ships/ss-roma",
-          "launchYear": "1926",
-          "operator": "Navigazione Generale Italiana",
-          "builderRaw": "Ansaldo, Sestri Ponente, Genoa"
+          "name": "SS Marquette",
+          "url": "/ships/ss-marquette",
+          "launchYear": "1897",
+          "operator": "Atlantic Transport Line",
+          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
         },
         {
-          "name": "SS Rex",
-          "url": "/ships/ss-rex",
-          "launchYear": "1931",
-          "operator": "Italia Flotte Riunite / Italian Line",
-          "builderRaw": "Ansaldo, Sestri Ponente, Genoa · hull no. 296"
+          "name": "SS Drottningholm",
+          "url": "/ships/ss-drottningholm",
+          "launchYear": "1904",
+          "operator": "Swedish American Line",
+          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow"
         },
         {
-          "name": "SS Andrea Doria",
-          "url": "/ships/ss-andrea-doria",
-          "launchYear": "1951",
-          "operator": "Italia di Navigazione / Italian Line",
-          "builderRaw": "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
+          "name": "RMS Caledonia",
+          "url": "/ships/rms-caledonia",
+          "launchYear": "1925",
+          "operator": "Anchor Line (Glasgow)",
+          "builderRaw": "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)"
         },
         {
-          "name": "SS Michelangelo (1965)",
-          "url": "/ships/ss-michelangelo-1965",
-          "launchYear": "1962",
-          "operator": "Italia Società di Navigazione / Italian Line",
-          "builderRaw": "Ansaldo, Sestri Ponente, Genoa"
+          "name": "SS Chitral (1925)",
+          "url": "/ships/ss-chitral",
+          "launchYear": "1925",
+          "operator": "Peninsular & Oriental Steam Navigation Company (P&O)",
+          "builderRaw": "Alexander Stephen & Sons, Govan · yard no. 504"
+        },
+        {
+          "name": "RMS Viceroy of India",
+          "url": "/ships/rms-viceroy-of-india",
+          "launchYear": "1928",
+          "operator": "P&O Steam Navigation Company",
+          "builderRaw": "Alexander Stephen & Sons (Glasgow)"
         }
       ]
     },
     {
-      "id": "chantiers-de-penhoet",
-      "name": "Chantiers de Penhoët",
-      "shipCount": 5,
+      "id": "j-and-g-thomson",
+      "name": "J. & G. Thomson",
+      "shipCount": 6,
       "locations": [
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
+        "Clydebank",
+        "Clydebank / Glasgow area, Scotland",
+        "Clydebank, Scotland",
+        "Clydebank/Glasgow, Scotland",
+        "Glasgow"
       ],
-      "firstLaunchYear": 1905,
-      "lastLaunchYear": 1938,
+      "firstLaunchYear": 1865,
+      "lastLaunchYear": 1888,
       "ships": [
         {
-          "name": "SS La Provence",
-          "url": "/ships/ss-la-provence",
-          "launchYear": "1905",
-          "operator": "Compagnie Générale Transatlantique (French Line)",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+          "name": "SS Java",
+          "url": "/ships/ss-java",
+          "launchYear": "1865",
+          "operator": "Cunard Line",
+          "builderRaw": "J. & G. Thomson & Co., Glasgow"
         },
         {
-          "name": "SS France (1912)",
-          "url": "/ships/ss-france-1912",
-          "launchYear": "1910",
-          "operator": "Compagnie Générale Transatlantique (French Line)",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+          "name": "SS Malta",
+          "url": "/ships/ss-malta",
+          "launchYear": "1865",
+          "operator": "Cunard Line",
+          "builderRaw": "J. & G. Thomson & Co., Glasgow"
         },
         {
-          "name": "SS Champlain",
-          "url": "/ships/ss-champlain",
-          "launchYear": "1931",
-          "operator": "Compagnie Générale Transatlantique",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+          "name": "SS Bothnia",
+          "url": "/ships/ss-bothnia",
+          "launchYear": "1874",
+          "operator": "Cunard Line / British & North American Royal Mail Steam Packet Company",
+          "builderRaw": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland"
         },
         {
-          "name": "SS Normandie",
-          "url": "/ships/ss-normandie",
-          "launchYear": "1932",
-          "operator": "Compagnie Générale Transatlantique (CGT) / “French Line”",
-          "builderRaw": "Chantiers de Penhoët (Saint-Nazaire, France)"
+          "name": "RMS Servia",
+          "url": "/ships/rms-servia-1881",
+          "launchYear": "1881",
+          "operator": "Cunard Line",
+          "builderRaw": "J. & G. Thomson, Clydebank"
         },
         {
-          "name": "SS Pasteur",
-          "url": "/ships/ss-pasteur",
-          "launchYear": "1938",
-          "operator": "Compagnie de Navigation Sud-Atlantique",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
-        }
-      ]
-    },
-    {
-      "id": "newport-news-shipbuilding-and-dry-dock-co",
-      "name": "Newport News Shipbuilding & Dry Dock Co.",
-      "shipCount": 5,
-      "locations": [
-        "Newport News, Virginia, USA",
-        "Virginia",
-        "Virginia, USA"
-      ],
-      "firstLaunchYear": 1927,
-      "lastLaunchYear": 1951,
-      "ships": [
-        {
-          "name": "SS California",
-          "url": "/ships/ss-california",
-          "launchYear": "1927",
-          "operator": "Panama Pacific Line",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Company · Newport News, Virginia"
+          "name": "SS City of New York (1888)",
+          "url": "/ships/ss-city-of-new-york-1888",
+          "launchYear": "1888",
+          "operator": "Inman & International Steamship Co.",
+          "builderRaw": "J. & G. Thomson, Clydebank, Scotland"
         },
         {
-          "name": "SS Morro Castle",
-          "url": "/ships/ss-morro-castle",
-          "launchYear": "1930",
-          "operator": "Ward Line / AGWI interests",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)"
-        },
-        {
-          "name": "SS President Hoover",
-          "url": "/ships/ss-president-hoover",
-          "launchYear": "1930",
-          "operator": "Dollar Steamship Line",
-          "builderRaw": "Newport News Shipbuilding and Dry Dock Company, Virginia"
-        },
-        {
-          "name": "SS America",
-          "url": "/ships/ss-america",
-          "launchYear": "1939",
-          "operator": "United States Lines",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)"
-        },
-        {
-          "name": "SS United States",
-          "url": "/ships/ss-us",
-          "launchYear": "1951",
-          "operator": "United States Lines",
-          "builderRaw": "Newport News Shipbuilding, Virginia"
-        }
-      ]
-    },
-    {
-      "id": "ag-vulcan-stettin",
-      "name": "AG Vulcan, Stettin",
-      "shipCount": 4,
-      "locations": [
-        "Germany"
-      ],
-      "firstLaunchYear": 1896,
-      "lastLaunchYear": 1900,
-      "ships": [
-        {
-          "name": "SS Friedrich der Grosse",
-          "url": "/ships/ss-friedrich-der-grosse",
-          "launchYear": "1896",
-          "operator": "Norddeutscher Lloyd (North German Lloyd)",
-          "builderRaw": "AG Vulcan, Stettin, Germany"
-        },
-        {
-          "name": "SS Königin Luise",
-          "url": "/ships/ss-konigin-luise",
-          "launchYear": "1896",
-          "operator": "Norddeutscher Lloyd (North German Lloyd)",
-          "builderRaw": "AG Vulcan, Stettin, Germany · yard no. 232"
-        },
-        {
-          "name": "SS Patricia",
-          "url": "/ships/ss-patricia",
-          "launchYear": "1899",
-          "operator": "Hamburg-Amerika Line (HAPAG)",
-          "builderRaw": "AG Vulcan, Stettin, Germany"
-        },
-        {
-          "name": "SS Prinzess Irene",
-          "url": "/ships/ss-prinzess-irene",
-          "launchYear": "1900",
-          "operator": "Norddeutscher Lloyd (North German Lloyd)",
-          "builderRaw": "AG Vulcan, Stettin, Germany"
+          "name": "SS City of Paris",
+          "url": "/ships/ss-city-of-paris",
+          "launchYear": "1888",
+          "operator": "Inman Line (later controlled/merged into International Navigation / American Line)",
+          "builderRaw": "J. & G. Thomson (Clydebank/Glasgow, Scotland)"
         }
       ]
     },
     {
       "id": "ag-weser",
       "name": "AG Weser",
-      "shipCount": 4,
+      "shipCount": 5,
       "locations": [
-        "Bremen"
+        "Bremen",
+        "Bremen, Germany"
       ],
       "firstLaunchYear": null,
-      "lastLaunchYear": 1920,
+      "lastLaunchYear": 1925,
       "ships": [
         {
           "name": "SS Arabic (1921)",
@@ -1457,6 +1703,13 @@
           "builderRaw": "AG Weser, Bremen"
         },
         {
+          "name": "SS Athos II (1927)",
+          "url": "/ships/ss-athos-ii",
+          "launchYear": "1925",
+          "operator": "Compagnie des Messageries Maritimes",
+          "builderRaw": "AG Weser, Bremen, Germany"
+        },
+        {
           "name": "SS Resolute",
           "url": "/ships/ss-resolute",
           "launchYear": null,
@@ -1466,42 +1719,45 @@
       ]
     },
     {
-      "id": "blohm-and-voss-hamburg",
-      "name": "Blohm & Voss, Hamburg",
+      "id": "armstrong-whitworth-and-co",
+      "name": "Armstrong Whitworth & Co.",
       "shipCount": 4,
       "locations": [
-        "Germany"
+        "High Walker, Newcastle upon Tyne",
+        "High Walker-on-Tyne",
+        "Low Walker, Newcastle",
+        "Newcastle-upon-Tyne"
       ],
-      "firstLaunchYear": 1897,
-      "lastLaunchYear": 1929,
+      "firstLaunchYear": 1910,
+      "lastLaunchYear": 1924,
       "ships": [
         {
-          "name": "SS Pretoria",
-          "url": "/ships/ss-pretoria",
-          "launchYear": "1897",
-          "operator": "Hamburg-Amerika Line (HAPAG)",
-          "builderRaw": "Blohm & Voss, Hamburg, Germany"
+          "name": "SS Storstad",
+          "url": "/ships/ss-storstad",
+          "launchYear": "1910",
+          "operator": "A. F. Klaveness",
+          "builderRaw": "Armstrong, Whitworth & Co., Low Walker, Newcastle · yard no. 824"
         },
         {
-          "name": "SS Graf Waldersee",
-          "url": "/ships/ss-graf-waldersee",
-          "launchYear": "1898",
-          "operator": "Hamburg-Amerika Line (HAPAG)",
-          "builderRaw": "Blohm & Voss, Hamburg, Germany"
+          "name": "RMS Ausonia (1922)",
+          "url": "/ships/rms-ausonia",
+          "launchYear": "1921",
+          "operator": "Cunard Line; later Cunard White Star",
+          "builderRaw": "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970"
         },
         {
-          "name": "SS Moltke",
-          "url": "/ships/ss-moltke",
-          "launchYear": "1901",
-          "operator": "Hamburg-Amerika Line (HAPAG)",
-          "builderRaw": "Blohm & Voss, Hamburg, Germany"
+          "name": "RMS Ascania",
+          "url": "/ships/rms-ascania",
+          "launchYear": "1923",
+          "operator": "Cunard Line",
+          "builderRaw": "Armstrong Whitworth, Newcastle-upon-Tyne"
         },
         {
-          "name": "SS Milwaukee",
-          "url": "/ships/ss-milwaukee",
-          "launchYear": "1929",
-          "operator": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
-          "builderRaw": "Blohm & Voss, Hamburg, Germany"
+          "name": "MS Gripsholm (1925)",
+          "url": "/ships/ms-gripsholm-1925",
+          "launchYear": "1924",
+          "operator": "Swedish American Line",
+          "builderRaw": "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999"
         }
       ]
     },
@@ -1547,84 +1803,43 @@
       ]
     },
     {
-      "id": "harland-and-wolff-queen-s-island",
-      "name": "Harland & Wolff, Queen's Island",
+      "id": "new-york-shipbuilding-company",
+      "name": "New York Shipbuilding Company",
       "shipCount": 4,
       "locations": [
-        "Belfast"
+        "Camden, New Jersey",
+        "Camden, New Jersey, USA"
       ],
-      "firstLaunchYear": 1901,
-      "lastLaunchYear": 1906,
+      "firstLaunchYear": 1903,
+      "lastLaunchYear": 1932,
       "ships": [
         {
-          "name": "RMS Celtic",
-          "url": "/ships/rms-celtic",
-          "launchYear": "1901",
-          "operator": "White Star Line / Oceanic Steam Navigation Co.",
-          "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 335"
-        },
-        {
-          "name": "RMS Cedric",
-          "url": "/ships/rms-cedric",
-          "launchYear": "1902",
-          "operator": "White Star Line / Oceanic Steam Navigation Co.",
-          "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 337"
-        },
-        {
-          "name": "RMS Baltic",
-          "url": "/ships/rms-baltic",
+          "name": "SS Manchuria",
+          "url": "/ships/ss-manchuria",
           "launchYear": "1903",
-          "operator": "White Star Line / Oceanic Steam Navigation Co.",
-          "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 352"
+          "operator": "Pacific Mail Steamship Company",
+          "builderRaw": "New York Shipbuilding Company, Camden, New Jersey"
         },
         {
-          "name": "RMS Adriatic (1907)",
-          "url": "/ships/rms-adriatic",
-          "launchYear": "1906",
-          "operator": "White Star Line; briefly Cunard-White Star after the 1934 merger",
-          "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
-        }
-      ]
-    },
-    {
-      "id": "j-and-g-thomson",
-      "name": "J. & G. Thomson",
-      "shipCount": 4,
-      "locations": [
-        "Clydebank",
-        "Clydebank/Glasgow, Scotland",
-        "Glasgow"
-      ],
-      "firstLaunchYear": 1865,
-      "lastLaunchYear": 1888,
-      "ships": [
-        {
-          "name": "SS Java",
-          "url": "/ships/ss-java",
-          "launchYear": "1865",
-          "operator": "Cunard Line",
-          "builderRaw": "J. & G. Thomson & Co., Glasgow"
+          "name": "SS Mongolia",
+          "url": "/ships/ss-mongolia",
+          "launchYear": "1903",
+          "operator": "Pacific Mail Steamship Company",
+          "builderRaw": "New York Shipbuilding Company, Camden, New Jersey"
         },
         {
-          "name": "SS Malta",
-          "url": "/ships/ss-malta",
-          "launchYear": "1865",
-          "operator": "Cunard Line",
-          "builderRaw": "J. & G. Thomson & Co., Glasgow"
+          "name": "SS Manhattan (1932)",
+          "url": "/ships/ss-manhattan",
+          "launchYear": "1931",
+          "operator": "United States Lines",
+          "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey"
         },
         {
-          "name": "RMS Servia",
-          "url": "/ships/rms-servia-1881",
-          "launchYear": "1881",
-          "operator": "Cunard Line",
-          "builderRaw": "J. & G. Thomson, Clydebank"
-        },
-        {
-          "name": "SS City of Paris",
-          "url": "/ships/ss-city-of-paris",
-          "launchYear": "1888",
-          "operator": "Inman Line (later controlled/merged into International Navigation / American Line)",
-          "builderRaw": "J. & G. Thomson (Clydebank/Glasgow, Scotland)"
+          "name": "SS Washington",
+          "url": "/ships/ss-washington",
+          "launchYear": "1932",
+          "operator": "United States Lines",
+          "builderRaw": "New York Shipbuilding Corporation (Camden, New Jersey, USA)"
         }
       ]
     },
@@ -1669,137 +1884,44 @@
       ]
     },
     {
-      "id": "a-g-vulcan",
-      "name": "A.G. Vulcan",
-      "shipCount": 3,
+      "id": "swan-hunter-and-wigham-richardson",
+      "name": "Swan Hunter & Wigham Richardson",
+      "shipCount": 4,
       "locations": [
-        "Hamburg",
-        "Stettin"
+        "Newcastle-on-Tyne",
+        "Wallsend",
+        "Wallsend, England"
       ],
-      "firstLaunchYear": 1900,
-      "lastLaunchYear": 1912,
+      "firstLaunchYear": 1902,
+      "lastLaunchYear": 1938,
       "ships": [
         {
-          "name": "SS Deutschland (1900)",
-          "url": "/ships/ss-deutschland",
-          "launchYear": "1900",
-          "operator": "Hamburg America Line (HAPAG)",
-          "builderRaw": "A.G. Vulcan, Stettin"
+          "name": "RMS Carpathia",
+          "url": "/ships/rms-carpathia",
+          "launchYear": "1902",
+          "operator": "Cunard Line",
+          "builderRaw": "Swan Hunter & Wigham Richardson, Wallsend"
         },
         {
-          "name": "RMS Berengaria",
-          "url": "/ships/rms-berengaria",
-          "launchYear": "1912",
-          "operator": "Hamburg America Line",
-          "builderRaw": "A.G. Vulcan, Hamburg"
+          "name": "RMS Mauretania",
+          "url": "/ships/rms-mauretania",
+          "launchYear": "1906",
+          "operator": "Cunard Line",
+          "builderRaw": "Swan Hunter & Wigham Richardson (Wallsend, England)"
         },
         {
-          "name": "SS Imperator",
-          "url": "/ships/ss-imperator",
-          "launchYear": "1912",
-          "operator": "Hamburg America Line (HAPAG)",
-          "builderRaw": "A.G. Vulcan, Hamburg"
-        }
-      ]
-    },
-    {
-      "id": "alexander-stephen-and-sons",
-      "name": "Alexander Stephen & Sons",
-      "shipCount": 3,
-      "locations": [
-        "Glasgow",
-        "Govan",
-        "Linthouse, Glasgow, Scotland"
-      ],
-      "firstLaunchYear": 1925,
-      "lastLaunchYear": 1928,
-      "ships": [
-        {
-          "name": "RMS Caledonia",
-          "url": "/ships/rms-caledonia",
-          "launchYear": "1925",
-          "operator": "Anchor Line (Glasgow)",
-          "builderRaw": "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)"
-        },
-        {
-          "name": "SS Chitral (1925)",
-          "url": "/ships/ss-chitral",
-          "launchYear": "1925",
-          "operator": "Peninsular & Oriental Steam Navigation Company (P&O)",
-          "builderRaw": "Alexander Stephen & Sons, Govan · yard no. 504"
-        },
-        {
-          "name": "RMS Viceroy of India",
-          "url": "/ships/rms-viceroy-of-india",
-          "launchYear": "1928",
-          "operator": "P&O Steam Navigation Company",
-          "builderRaw": "Alexander Stephen & Sons (Glasgow)"
-        }
-      ]
-    },
-    {
-      "id": "alexander-stephen-and-sons-linthouse",
-      "name": "Alexander Stephen & Sons, Linthouse",
-      "shipCount": 3,
-      "locations": [
-        "Glasgow"
-      ],
-      "firstLaunchYear": 1881,
-      "lastLaunchYear": 1904,
-      "ships": [
-        {
-          "name": "SS Norge",
-          "url": "/ships/ss-norge",
-          "launchYear": "1881",
-          "operator": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
-          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow"
-        },
-        {
-          "name": "SS Marquette",
-          "url": "/ships/ss-marquette",
-          "launchYear": "1897",
-          "operator": "Atlantic Transport Line",
-          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
-        },
-        {
-          "name": "SS Drottningholm",
-          "url": "/ships/ss-drottningholm",
-          "launchYear": "1904",
-          "operator": "Swedish American Line",
-          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow"
-        }
-      ]
-    },
-    {
-      "id": "ansaldo",
-      "name": "Ansaldo",
-      "shipCount": 3,
-      "locations": [
-        "Genoa"
-      ],
-      "firstLaunchYear": 1926,
-      "lastLaunchYear": 1958,
-      "ships": [
-        {
-          "name": "MS Augustus",
-          "url": "/ships/ms-augustus",
-          "launchYear": "1926",
+          "name": "SS Giulio Cesare",
+          "url": "/ships/ss-giulio-cesare",
+          "launchYear": "1920",
           "operator": "Navigazione Generale Italiana",
-          "builderRaw": "Ansaldo, Genoa"
+          "builderRaw": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne"
         },
         {
-          "name": "SS Cristoforo Colombo",
-          "url": "/ships/ss-cristoforo-colombo",
-          "launchYear": "1953",
-          "operator": "Italian Line (Italia di Navigazione)",
-          "builderRaw": "Ansaldo Shipyards, Genoa"
-        },
-        {
-          "name": "SS Leonardo da Vinci",
-          "url": "/ships/ss-leonardo-da-vinci",
-          "launchYear": "1958",
-          "operator": "Italian Line (Italia di Navigazione)",
-          "builderRaw": "Ansaldo Shipyard, Genoa"
+          "name": "QSMV Dominion Monarch",
+          "url": "/ships/qsmv-dominion-monarch",
+          "launchYear": "1938",
+          "operator": "Shaw, Savill & Albion Line",
+          "builderRaw": "Swan Hunter and Wigham Richardson, Wallsend"
         }
       ]
     },
@@ -1936,6 +2058,40 @@
       ]
     },
     {
+      "id": "chantiers-de-l-atlantique",
+      "name": "Chantiers de l’Atlantique",
+      "shipCount": 3,
+      "locations": [
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "firstLaunchYear": 1913,
+      "lastLaunchYear": 2003,
+      "ships": [
+        {
+          "name": "SS Flandre",
+          "url": "/ships/ss-flandre",
+          "launchYear": "1913",
+          "operator": "Compagnie Générale Transatlantique (CGT / French Line)",
+          "builderRaw": "Chantiers de l'Atlantique, Saint-Nazaire"
+        },
+        {
+          "name": "SS France",
+          "url": "/ships/ss-france",
+          "launchYear": "1960",
+          "operator": "Compagnie Générale Transatlantique / French Line",
+          "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire · yard G19"
+        },
+        {
+          "name": "RMS Queen Mary 2",
+          "url": "/ships/rms-queen-mary-2",
+          "launchYear": "2003",
+          "operator": "Cunard",
+          "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire, France"
+        }
+      ]
+    },
+    {
       "id": "f-schichau",
       "name": "F. Schichau",
       "shipCount": 3,
@@ -1965,39 +2121,6 @@
           "launchYear": "1922",
           "operator": "Norddeutscher Lloyd (North German Lloyd), Bremen",
           "builderRaw": "F. Schichau, Danzig · yard no. 929"
-        }
-      ]
-    },
-    {
-      "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
-      "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
-      "shipCount": 3,
-      "locations": [
-        "Virginia"
-      ],
-      "firstLaunchYear": 1928,
-      "lastLaunchYear": 1931,
-      "ships": [
-        {
-          "name": "SS Virginia",
-          "url": "/ships/ss-virginia",
-          "launchYear": "1928",
-          "operator": "Panama Pacific Line",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
-        },
-        {
-          "name": "SS Pennsylvania",
-          "url": "/ships/ss-pennsylvania",
-          "launchYear": "1929",
-          "operator": "Panama Pacific Line",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
-        },
-        {
-          "name": "SS President Coolidge",
-          "url": "/ships/ss-president-coolidge",
-          "launchYear": "1931",
-          "operator": "Dollar Steamship Lines",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
         }
       ]
     },
@@ -2069,33 +2192,6 @@
       ]
     },
     {
-      "id": "armstrong-whitworth-and-co",
-      "name": "Armstrong Whitworth & Co.",
-      "shipCount": 2,
-      "locations": [
-        "High Walker-on-Tyne",
-        "Newcastle-upon-Tyne"
-      ],
-      "firstLaunchYear": 1921,
-      "lastLaunchYear": 1923,
-      "ships": [
-        {
-          "name": "RMS Ausonia (1922)",
-          "url": "/ships/rms-ausonia",
-          "launchYear": "1921",
-          "operator": "Cunard Line; later Cunard White Star",
-          "builderRaw": "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970"
-        },
-        {
-          "name": "RMS Ascania",
-          "url": "/ships/rms-ascania",
-          "launchYear": "1923",
-          "operator": "Cunard Line",
-          "builderRaw": "Armstrong Whitworth, Newcastle-upon-Tyne"
-        }
-      ]
-    },
-    {
       "id": "ateliers-et-chantiers-de-la-loire",
       "name": "Ateliers et Chantiers de la Loire",
       "shipCount": 2,
@@ -2122,37 +2218,37 @@
       ]
     },
     {
-      "id": "chantiers-de-l-atlantique",
-      "name": "Chantiers de l'Atlantique",
+      "id": "bethlehem-steel-corporation-fore-river-shipyard",
+      "name": "Bethlehem Steel Corporation, Fore River Shipyard",
       "shipCount": 2,
       "locations": [
-        "Saint-Nazaire"
+        "Quincy, Massachusetts"
       ],
-      "firstLaunchYear": 1913,
-      "lastLaunchYear": 1960,
+      "firstLaunchYear": 1950,
+      "lastLaunchYear": 1950,
       "ships": [
         {
-          "name": "SS Flandre",
-          "url": "/ships/ss-flandre",
-          "launchYear": "1913",
-          "operator": "Compagnie Générale Transatlantique (CGT / French Line)",
-          "builderRaw": "Chantiers de l'Atlantique, Saint-Nazaire"
+          "name": "SS Constitution",
+          "url": "/ships/ss-constitution",
+          "launchYear": "1950",
+          "operator": "American Export Lines",
+          "builderRaw": "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)"
         },
         {
-          "name": "SS France",
-          "url": "/ships/ss-france",
-          "launchYear": "1960",
-          "operator": "Compagnie Générale Transatlantique / French Line",
-          "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire · yard G19"
+          "name": "SS Independence",
+          "url": "/ships/ss-independence",
+          "launchYear": "1950",
+          "operator": "American Export Lines",
+          "builderRaw": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618"
         }
       ]
     },
     {
-      "id": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
-      "name": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
+      "id": "deutsche-schiff-und-maschinenbau-ag",
+      "name": "Deutsche Schiff- und Maschinenbau AG",
       "shipCount": 2,
       "locations": [
-        "Bremen"
+        "Werk AG Weser, Bremen"
       ],
       "firstLaunchYear": 1934,
       "lastLaunchYear": 1935,
@@ -2174,38 +2270,11 @@
       ]
     },
     {
-      "id": "fairfield-shipbuilding-and-engineering-co-govan",
-      "name": "Fairfield Shipbuilding & Engineering Co., Govan",
+      "id": "fore-river-shipyard-bethlehem-shipbuilding-corporation",
+      "name": "Fore River Shipyard, Bethlehem Shipbuilding Corporation",
       "shipCount": 2,
       "locations": [
-        "Glasgow",
-        "Scotland"
-      ],
-      "firstLaunchYear": 1893,
-      "lastLaunchYear": 1913,
-      "ships": [
-        {
-          "name": "RMS Lucania",
-          "url": "/ships/rms-lucania",
-          "launchYear": "1893",
-          "operator": "Cunard Line",
-          "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan, Scotland"
-        },
-        {
-          "name": "SS Calgarian",
-          "url": "/ships/ss-calgarian",
-          "launchYear": "1913",
-          "operator": "Allan Line",
-          "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow"
-        }
-      ]
-    },
-    {
-      "id": "fore-river-shipyard-bethlehem-shipbuilding-corporation-quincy",
-      "name": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy",
-      "shipCount": 2,
-      "locations": [
-        "Massachusetts"
+        "Quincy, Massachusetts"
       ],
       "firstLaunchYear": 1931,
       "lastLaunchYear": 1931,
@@ -2280,32 +2349,6 @@
       ]
     },
     {
-      "id": "new-york-shipbuilding-company-camden",
-      "name": "New York Shipbuilding Company, Camden",
-      "shipCount": 2,
-      "locations": [
-        "New Jersey"
-      ],
-      "firstLaunchYear": 1903,
-      "lastLaunchYear": 1903,
-      "ships": [
-        {
-          "name": "SS Manchuria",
-          "url": "/ships/ss-manchuria",
-          "launchYear": "1903",
-          "operator": "Pacific Mail Steamship Company",
-          "builderRaw": "New York Shipbuilding Company, Camden, New Jersey"
-        },
-        {
-          "name": "SS Mongolia",
-          "url": "/ships/ss-mongolia",
-          "launchYear": "1903",
-          "operator": "Pacific Mail Steamship Company",
-          "builderRaw": "New York Shipbuilding Company, Camden, New Jersey"
-        }
-      ]
-    },
-    {
       "id": "robert-napier-and-sons",
       "name": "Robert Napier & Sons",
       "shipCount": 2,
@@ -2354,6 +2397,32 @@
           "launchYear": "1958",
           "operator": "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij",
           "builderRaw": "Rotterdamsche Droogdok Maatschappij, Rotterdam"
+        }
+      ]
+    },
+    {
+      "id": "swan",
+      "name": "Swan",
+      "shipCount": 2,
+      "locations": [
+        "Hunter & Wigham Richardson, Wallsend"
+      ],
+      "firstLaunchYear": 1910,
+      "lastLaunchYear": 1916,
+      "ships": [
+        {
+          "name": "RMS Franconia (1910)",
+          "url": "/ships/rms-franconia-1910",
+          "launchYear": "1910",
+          "operator": "Cunard Line",
+          "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend"
+        },
+        {
+          "name": "RMS Aurania (1916)",
+          "url": "/ships/rms-aurania",
+          "launchYear": "1916",
+          "operator": "Cunard Line; British Government hire throughout active career",
+          "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965"
         }
       ]
     },
@@ -2455,63 +2524,6 @@
       ]
     },
     {
-      "id": "ag-weser-bremen",
-      "name": "AG Weser, Bremen",
-      "shipCount": 1,
-      "locations": [
-        "Germany"
-      ],
-      "firstLaunchYear": 1925,
-      "lastLaunchYear": 1925,
-      "ships": [
-        {
-          "name": "SS Athos II (1927)",
-          "url": "/ships/ss-athos-ii",
-          "launchYear": "1925",
-          "operator": "Compagnie des Messageries Maritimes",
-          "builderRaw": "AG Weser, Bremen, Germany"
-        }
-      ]
-    },
-    {
-      "id": "armstrong-whitworth-and-co-high-walker",
-      "name": "Armstrong, Whitworth & Co., High Walker",
-      "shipCount": 1,
-      "locations": [
-        "Newcastle upon Tyne"
-      ],
-      "firstLaunchYear": 1924,
-      "lastLaunchYear": 1924,
-      "ships": [
-        {
-          "name": "MS Gripsholm (1925)",
-          "url": "/ships/ms-gripsholm-1925",
-          "launchYear": "1924",
-          "operator": "Swedish American Line",
-          "builderRaw": "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999"
-        }
-      ]
-    },
-    {
-      "id": "armstrong-whitworth-and-co-low-walker",
-      "name": "Armstrong, Whitworth & Co., Low Walker",
-      "shipCount": 1,
-      "locations": [
-        "Newcastle"
-      ],
-      "firstLaunchYear": 1910,
-      "lastLaunchYear": 1910,
-      "ships": [
-        {
-          "name": "SS Storstad",
-          "url": "/ships/ss-storstad",
-          "launchYear": "1910",
-          "operator": "A. F. Klaveness",
-          "builderRaw": "Armstrong, Whitworth & Co., Low Walker, Newcastle · yard no. 824"
-        }
-      ]
-    },
-    {
       "id": "ateliers-et-chantiers-de-bretagne",
       "name": "Ateliers et Chantiers de Bretagne",
       "shipCount": 1,
@@ -2550,11 +2562,10 @@
       ]
     },
     {
-      "id": "bethlehem-shipbuilding-corp",
-      "name": "Bethlehem Shipbuilding Corp.",
+      "id": "bethlehem-shipbuilding-corp-fore-river-shipyard",
+      "name": "Bethlehem Shipbuilding Corp., Fore River Shipyard",
       "shipCount": 1,
       "locations": [
-        "Fore River Shipyard",
         "Quincy, Massachusetts"
       ],
       "firstLaunchYear": 1932,
@@ -2566,45 +2577,6 @@
           "launchYear": "1932",
           "operator": "Matson Navigation Co. (Matson Line)",
           "builderRaw": "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)"
-        }
-      ]
-    },
-    {
-      "id": "bethlehem-steel-corporation",
-      "name": "Bethlehem Steel Corporation",
-      "shipCount": 1,
-      "locations": [
-        "Fore River Shipyard",
-        "Quincy, Massachusetts"
-      ],
-      "firstLaunchYear": 1950,
-      "lastLaunchYear": 1950,
-      "ships": [
-        {
-          "name": "SS Constitution",
-          "url": "/ships/ss-constitution",
-          "launchYear": "1950",
-          "operator": "American Export Lines",
-          "builderRaw": "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)"
-        }
-      ]
-    },
-    {
-      "id": "bethlehem-steel-corporation-fore-river-shipyard-quincy",
-      "name": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy",
-      "shipCount": 1,
-      "locations": [
-        "Massachusetts"
-      ],
-      "firstLaunchYear": 1950,
-      "lastLaunchYear": 1950,
-      "ships": [
-        {
-          "name": "SS Independence",
-          "url": "/ships/ss-independence",
-          "launchYear": "1950",
-          "operator": "American Export Lines",
-          "builderRaw": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618"
         }
       ]
     },
@@ -2666,11 +2638,11 @@
       ]
     },
     {
-      "id": "cantiere-navale-di-riva-trigoso-riva-trigoso",
-      "name": "Cantiere Navale di Riva Trigoso, Riva Trigoso",
+      "id": "cantiere-navale-di-riva-trigoso",
+      "name": "Cantiere Navale di Riva Trigoso",
       "shipCount": 1,
       "locations": [
-        "Italy"
+        "Riva Trigoso, Italy"
       ],
       "firstLaunchYear": 1908,
       "lastLaunchYear": 1908,
@@ -2723,25 +2695,6 @@
       ]
     },
     {
-      "id": "chantiers-and-ateliers-de-penhoet",
-      "name": "Chantiers & Ateliers de Penhoët",
-      "shipCount": 1,
-      "locations": [
-        "Saint-Nazaire"
-      ],
-      "firstLaunchYear": 1916,
-      "lastLaunchYear": 1916,
-      "ships": [
-        {
-          "name": "SS Paris",
-          "url": "/ships/ss-paris",
-          "launchYear": "1916",
-          "operator": "Compagnie Générale Transatlantique",
-          "builderRaw": "Chantiers & Ateliers de Penhoët, Saint-Nazaire"
-        }
-      ]
-    },
-    {
       "id": "chantiers-and-ateliers-de-provence",
       "name": "Chantiers & Ateliers de Provence",
       "shipCount": 1,
@@ -2761,30 +2714,11 @@
       ]
     },
     {
-      "id": "chantiers-and-ateliers-de-saint-nazaire",
-      "name": "Chantiers & Ateliers de Saint-Nazaire",
+      "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet",
+      "name": "Chantiers & Ateliers de Saint-Nazaire / Penhoët",
       "shipCount": 1,
       "locations": [
-        "Penhoët"
-      ],
-      "firstLaunchYear": 1911,
-      "lastLaunchYear": 1911,
-      "ships": [
-        {
-          "name": "SS Rochambeau",
-          "url": "/ships/ss-rochambeau",
-          "launchYear": "1911",
-          "operator": "Compagnie Générale Transatlantique (French Line)",
-          "builderRaw": "Chantiers & Ateliers de Saint-Nazaire, Penhoët"
-        }
-      ]
-    },
-    {
-      "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet-saint-nazaire",
-      "name": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire",
-      "shipCount": 1,
-      "locations": [
-        "France"
+        "Saint-Nazaire, France"
       ],
       "firstLaunchYear": 1907,
       "lastLaunchYear": 1907,
@@ -2795,25 +2729,6 @@
           "launchYear": "1907",
           "operator": "Compagnie Générale Transatlantique (French Line)",
           "builderRaw": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France"
-        }
-      ]
-    },
-    {
-      "id": "chantiers-de-l-atlantique-saint-nazaire",
-      "name": "Chantiers de l’Atlantique, Saint-Nazaire",
-      "shipCount": 1,
-      "locations": [
-        "France"
-      ],
-      "firstLaunchYear": 2003,
-      "lastLaunchYear": 2003,
-      "ships": [
-        {
-          "name": "RMS Queen Mary 2",
-          "url": "/ships/rms-queen-mary-2",
-          "launchYear": "2003",
-          "operator": "Cunard",
-          "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire, France"
         }
       ]
     },
@@ -2875,11 +2790,11 @@
       ]
     },
     {
-      "id": "eastern-shipbuilding-company-new-london-groton",
-      "name": "Eastern Shipbuilding Company, New London / Groton",
+      "id": "eastern-shipbuilding-company",
+      "name": "Eastern Shipbuilding Company",
       "shipCount": 1,
       "locations": [
-        "Connecticut"
+        "New London / Groton, Connecticut"
       ],
       "firstLaunchYear": 1903,
       "lastLaunchYear": 1903,
@@ -2890,44 +2805,6 @@
           "launchYear": "1903",
           "operator": "Great Northern Steamship Company (owned by James J. Hill)",
           "builderRaw": "Eastern Shipbuilding Company, New London / Groton, Connecticut"
-        }
-      ]
-    },
-    {
-      "id": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
-      "name": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
-      "shipCount": 1,
-      "locations": [
-        "Scotland"
-      ],
-      "firstLaunchYear": 1903,
-      "lastLaunchYear": 1903,
-      "ships": [
-        {
-          "name": "SS Armadale Castle",
-          "url": "/ships/ss-armadale-castle",
-          "launchYear": "1903",
-          "operator": "Union-Castle Mail Steamship Company",
-          "builderRaw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424"
-        }
-      ]
-    },
-    {
-      "id": "fairfield-shipbuilding-and-engineering-company-govan",
-      "name": "Fairfield Shipbuilding & Engineering Company, Govan",
-      "shipCount": 1,
-      "locations": [
-        "Scotland"
-      ],
-      "firstLaunchYear": 1924,
-      "lastLaunchYear": 1924,
-      "ships": [
-        {
-          "name": "SS Letitia",
-          "url": "/ships/ss-letitia",
-          "launchYear": "1924",
-          "operator": "Anchor-Donaldson Line; later Donaldson Atlantic Line and Donaldson Brothers & Black management in postwar service",
-          "builderRaw": "Fairfield Shipbuilding & Engineering Company, Govan, Scotland"
         }
       ]
     },
@@ -2951,11 +2828,11 @@
       ]
     },
     {
-      "id": "furness-withy-and-co-west-hartlepool",
-      "name": "Furness, Withy & Co., West Hartlepool",
+      "id": "furness-withy-and-co",
+      "name": "Furness, Withy & Co.",
       "shipCount": 1,
       "locations": [
-        "England"
+        "West Hartlepool, England"
       ],
       "firstLaunchYear": 1897,
       "lastLaunchYear": 1897,
@@ -2970,11 +2847,11 @@
       ]
     },
     {
-      "id": "germaniawerft-friedrich-krupp-kiel",
-      "name": "Germaniawerft / Friedrich Krupp, Kiel",
+      "id": "germaniawerft-friedrich-krupp",
+      "name": "Germaniawerft / Friedrich Krupp",
       "shipCount": 1,
       "locations": [
-        "Germany"
+        "Kiel, Germany"
       ],
       "firstLaunchYear": 1908,
       "lastLaunchYear": 1908,
@@ -3004,25 +2881,6 @@
           "launchYear": "1946",
           "operator": "Swedish America Line (Svenska Amerika Linien)",
           "builderRaw": "Götaverken, Gothenburg"
-        }
-      ]
-    },
-    {
-      "id": "harland-and-wolff-ltd-queen-s-island",
-      "name": "Harland & Wolff Ltd., Queen’s Island",
-      "shipCount": 1,
-      "locations": [
-        "Belfast"
-      ],
-      "firstLaunchYear": 1911,
-      "lastLaunchYear": 1911,
-      "ships": [
-        {
-          "name": "SS Nomadic",
-          "url": "/ships/ss-nomadic",
-          "launchYear": "1911",
-          "operator": "Oceanic Steam Navigation Co. Ltd. (White Star Line)",
-          "builderRaw": "Harland & Wolff Ltd., Queen’s Island, Belfast"
         }
       ]
     },
@@ -3065,44 +2923,6 @@
       ]
     },
     {
-      "id": "j-and-g-thomson-and-co-clydebank-glasgow-area",
-      "name": "J. & G. Thomson & Co., Clydebank / Glasgow area",
-      "shipCount": 1,
-      "locations": [
-        "Scotland"
-      ],
-      "firstLaunchYear": 1874,
-      "lastLaunchYear": 1874,
-      "ships": [
-        {
-          "name": "SS Bothnia",
-          "url": "/ships/ss-bothnia",
-          "launchYear": "1874",
-          "operator": "Cunard Line / British & North American Royal Mail Steam Packet Company",
-          "builderRaw": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland"
-        }
-      ]
-    },
-    {
-      "id": "j-and-g-thomson-clydebank",
-      "name": "J. & G. Thomson, Clydebank",
-      "shipCount": 1,
-      "locations": [
-        "Scotland"
-      ],
-      "firstLaunchYear": 1888,
-      "lastLaunchYear": 1888,
-      "ships": [
-        {
-          "name": "SS City of New York (1888)",
-          "url": "/ships/ss-city-of-new-york-1888",
-          "launchYear": "1888",
-          "operator": "Inman & International Steamship Co.",
-          "builderRaw": "J. & G. Thomson, Clydebank, Scotland"
-        }
-      ]
-    },
-    {
       "id": "j-scott-russell-and-co-millwall-iron-works",
       "name": "J. Scott Russell & Co., Millwall Iron Works",
       "shipCount": 1,
@@ -3141,11 +2961,11 @@
       ]
     },
     {
-      "id": "jenks-ship-building-company-port-huron",
-      "name": "Jenks Ship Building Company, Port Huron",
+      "id": "jenks-ship-building-company",
+      "name": "Jenks Ship Building Company",
       "shipCount": 1,
       "locations": [
-        "Michigan"
+        "Port Huron, Michigan"
       ],
       "firstLaunchYear": 1903,
       "lastLaunchYear": 1903,
@@ -3160,11 +2980,11 @@
       ]
     },
     {
-      "id": "joh-c-tecklenborg-geestemunde",
-      "name": "Joh. C. Tecklenborg, Geestemünde",
+      "id": "joh-c-tecklenborg",
+      "name": "Joh. C. Tecklenborg",
       "shipCount": 1,
       "locations": [
-        "Germany"
+        "Geestemünde, Germany"
       ],
       "firstLaunchYear": 1907,
       "lastLaunchYear": 1907,
@@ -3255,44 +3075,6 @@
       ]
     },
     {
-      "id": "new-york-shipbuilding-company",
-      "name": "New York Shipbuilding Company",
-      "shipCount": 1,
-      "locations": [
-        "Camden, New Jersey, USA"
-      ],
-      "firstLaunchYear": 1932,
-      "lastLaunchYear": 1932,
-      "ships": [
-        {
-          "name": "SS Washington",
-          "url": "/ships/ss-washington",
-          "launchYear": "1932",
-          "operator": "United States Lines",
-          "builderRaw": "New York Shipbuilding Corporation (Camden, New Jersey, USA)"
-        }
-      ]
-    },
-    {
-      "id": "new-york-shipbuilding-corporation-camden",
-      "name": "New York Shipbuilding Corporation, Camden",
-      "shipCount": 1,
-      "locations": [
-        "New Jersey"
-      ],
-      "firstLaunchYear": 1931,
-      "lastLaunchYear": 1931,
-      "ships": [
-        {
-          "name": "SS Manhattan (1932)",
-          "url": "/ships/ss-manhattan",
-          "launchYear": "1931",
-          "operator": "United States Lines",
-          "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey"
-        }
-      ]
-    },
-    {
       "id": "newport-news",
       "name": "Newport News",
       "shipCount": 1,
@@ -3331,11 +3113,11 @@
       ]
     },
     {
-      "id": "robert-menzies-and-sons-leith",
-      "name": "Robert Menzies & Sons, Leith",
+      "id": "robert-menzies-and-sons",
+      "name": "Robert Menzies & Sons",
       "shipCount": 1,
       "locations": [
-        "Scotland"
+        "Leith, Scotland"
       ],
       "firstLaunchYear": 1837,
       "lastLaunchYear": 1837,
@@ -3479,63 +3261,6 @@
           "launchYear": "1864",
           "operator": "Cunard Line",
           "builderRaw": "Tod & McGregor, Glasgow"
-        }
-      ]
-    },
-    {
-      "id": "vickers-armstrongs-shipbuilders-ltd",
-      "name": "Vickers-Armstrongs (Shipbuilders) Ltd.",
-      "shipCount": 1,
-      "locations": [
-        "Barrow-in-Furness"
-      ],
-      "firstLaunchYear": 1959,
-      "lastLaunchYear": 1959,
-      "ships": [
-        {
-          "name": "SS Oriana",
-          "url": "/ships/ss-oriana",
-          "launchYear": "1959",
-          "operator": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-          "builderRaw": "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061"
-        }
-      ]
-    },
-    {
-      "id": "vickers-armstrongs-ltd-barrow-in-furness",
-      "name": "Vickers-Armstrongs Ltd., Barrow-in-Furness",
-      "shipCount": 1,
-      "locations": [
-        "England"
-      ],
-      "firstLaunchYear": 1936,
-      "lastLaunchYear": 1936,
-      "ships": [
-        {
-          "name": "RMS Orcades (1937)",
-          "url": "/ships/rms-orcades",
-          "launchYear": "1936",
-          "operator": "Orient Steam Navigation Company (Orient Line)",
-          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness, England"
-        }
-      ]
-    },
-    {
-      "id": "william-beardmore-and-company-dalmuir",
-      "name": "William Beardmore & Company, Dalmuir",
-      "shipCount": 1,
-      "locations": [
-        "Scotland"
-      ],
-      "firstLaunchYear": 1913,
-      "lastLaunchYear": 1913,
-      "ships": [
-        {
-          "name": "RMS Empress of France",
-          "url": "/ships/ss-empress-of-france",
-          "launchYear": "1913",
-          "operator": "Allan Line",
-          "builderRaw": "William Beardmore & Company, Dalmuir, Scotland · yard no. 509"
         }
       ]
     },

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T05:18:12.709Z",
+  "generatedAt": "2026-09-25T07:47:53.498Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "shipGuides": 327,
     "guidesWithOperator": 327,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 87,
-    "aliasedOperatorGroups": 20
+    "canonicalOperators": 75,
+    "aliasedOperatorGroups": 24
   },
   "operators": [
     {
@@ -16,6 +16,7 @@
       "rawValues": [
         "Oceanic Steam Navigation Co. (White Star Line)",
         "Oceanic Steam Navigation Co. / White Star Line",
+        "Oceanic Steam Navigation Co. Ltd. (White Star Line)",
         "Oceanic Steam Navigation Company (White Star Line)",
         "Oceanic Steam Navigation Company / White Star Line",
         "White Star Line",
@@ -24,7 +25,7 @@
         "White Star Line / Oceanic Steam Navigation Company",
         "White Star Line; briefly Cunard-White Star after the 1934 merger"
       ],
-      "shipCount": 38
+      "shipCount": 39
     },
     {
       "id": "cunard-line",
@@ -51,9 +52,10 @@
         "Hamburg America Line / HAPAG",
         "Hamburg-America Line",
         "Hamburg-America Line (HAPAG)",
-        "Hamburg-Amerika Line (HAPAG)"
+        "Hamburg-Amerika Line (HAPAG)",
+        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
       ],
-      "shipCount": 23
+      "shipCount": 25
     },
     {
       "id": "norddeutscher-lloyd-north-german-lloyd",
@@ -61,9 +63,10 @@
       "rawValues": [
         "Norddeutscher Lloyd",
         "Norddeutscher Lloyd (North German Lloyd)",
+        "Norddeutscher Lloyd (North German Lloyd), Bremen",
         "Norddeutscher Lloyd / North German Lloyd"
       ],
-      "shipCount": 18
+      "shipCount": 19
     },
     {
       "id": "compagnie-generale-transatlantique-french-line",
@@ -71,21 +74,37 @@
       "rawValues": [
         "Compagnie Générale Transatlantique",
         "Compagnie Générale Transatlantique (CGT / French Line)",
+        "Compagnie Générale Transatlantique (CGT) / “French Line”",
         "Compagnie Générale Transatlantique (French Line / C.G.T.)",
         "Compagnie Générale Transatlantique (French Line)",
         "Compagnie Générale Transatlantique / French Line"
       ],
-      "shipCount": 16
+      "shipCount": 17
     },
     {
       "id": "p-and-o",
       "name": "P&O",
       "rawValues": [
         "P&O / P&O-Orient Lines",
+        "P&O Steam Navigation Company",
+        "P&O Steam Navigation Company; later P&O-Orient Lines",
         "P&O; later P&O-Orient and P&O",
         "Peninsular & Oriental Steam Navigation Company",
         "Peninsular & Oriental Steam Navigation Company (P&O)",
         "Peninsular and Oriental Steam Navigation Company (P&O)"
+      ],
+      "shipCount": 15
+    },
+    {
+      "id": "canadian-pacific",
+      "name": "Canadian Pacific",
+      "rawValues": [
+        "Canadian Pacific",
+        "Canadian Pacific Railway / Canadian Pacific Steamship Company",
+        "Canadian Pacific Railway / Canadian Pacific Steamships",
+        "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
+        "Canadian Pacific Steamships",
+        "Canadian Pacific Steamships / Canadian Pacific Line"
       ],
       "shipCount": 12
     },
@@ -95,30 +114,29 @@
       "rawValues": [
         "Orient Steam Navigation Company",
         "Orient Steam Navigation Company (Orient Line)",
+        "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
         "Orient Steam Navigation Company; later P&O-Orient / P&O",
         "Orient Steam Navigation Company; later P&O-Orient and P&O"
       ],
-      "shipCount": 11
+      "shipCount": 12
     },
     {
-      "id": "canadian-pacific",
-      "name": "Canadian Pacific",
+      "id": "union-castle-line",
+      "name": "Union-Castle Line",
       "rawValues": [
-        "Canadian Pacific",
-        "Canadian Pacific Railway / Canadian Pacific Steamship Company",
-        "Canadian Pacific Railway / Canadian Pacific Steamships",
-        "Canadian Pacific Steamships",
-        "Canadian Pacific Steamships / Canadian Pacific Line"
+        "Union-Castle Line",
+        "Union-Castle Mail Steamship Company"
       ],
-      "shipCount": 9
+      "shipCount": 11
     },
     {
       "id": "compagnie-des-messageries-maritimes",
       "name": "Compagnie des Messageries Maritimes",
       "rawValues": [
-        "Compagnie des Messageries Maritimes"
+        "Compagnie des Messageries Maritimes",
+        "Messageries Maritimes"
       ],
-      "shipCount": 8
+      "shipCount": 9
     },
     {
       "id": "holland-america-line",
@@ -129,14 +147,6 @@
         "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij"
       ],
       "shipCount": 8
-    },
-    {
-      "id": "union-castle-line",
-      "name": "Union-Castle Line",
-      "rawValues": [
-        "Union-Castle Line"
-      ],
-      "shipCount": 7
     },
     {
       "id": "anchor-line",
@@ -220,26 +230,10 @@
       "shipCount": 4
     },
     {
-      "id": "union-castle-mail-steamship-company",
-      "name": "Union-Castle Mail Steamship Company",
-      "rawValues": [
-        "Union-Castle Mail Steamship Company"
-      ],
-      "shipCount": 4
-    },
-    {
       "id": "allan-line",
       "name": "Allan Line",
       "rawValues": [
         "Allan Line"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "canadian-pacific-railway-co-canadian-pacific-steamships",
-      "name": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
-      "rawValues": [
-        "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
       ],
       "shipCount": 3
     },
@@ -263,10 +257,28 @@
       "shipCount": 3
     },
     {
+      "id": "matson-navigation-company",
+      "name": "Matson Navigation Company",
+      "rawValues": [
+        "Matson Lines / Matson Navigation Company",
+        "Matson Navigation Co. (Matson Line)"
+      ],
+      "shipCount": 3
+    },
+    {
       "id": "new-zealand-shipping-company",
       "name": "New Zealand Shipping Company",
       "rawValues": [
         "New Zealand Shipping Company"
+      ],
+      "shipCount": 3
+    },
+    {
+      "id": "nippon-yusen-kaisha-nyk-line",
+      "name": "Nippon Yusen Kaisha (NYK Line)",
+      "rawValues": [
+        "Nippon Yusen Kaisha (NYK Line)",
+        "Nippon Yusen Kaisha (NYK)"
       ],
       "shipCount": 3
     },
@@ -337,14 +349,6 @@
       "shipCount": 2
     },
     {
-      "id": "hamburg-amerikanische-packetfahrt-actien-gesellschaft-hapag-hamburg-america-line",
-      "name": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
-      "rawValues": [
-        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
-      ],
-      "shipCount": 2
-    },
-    {
       "id": "italia-flotte-riunite-italian-line",
       "name": "Italia Flotte Riunite / Italian Line",
       "rawValues": [
@@ -357,30 +361,6 @@
       "name": "Italia Società di Navigazione / Italian Line",
       "rawValues": [
         "Italia Società di Navigazione / Italian Line"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "matson-lines-matson-navigation-company",
-      "name": "Matson Lines / Matson Navigation Company",
-      "rawValues": [
-        "Matson Lines / Matson Navigation Company"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "nippon-yusen-kaisha-nyk-line",
-      "name": "Nippon Yusen Kaisha (NYK Line)",
-      "rawValues": [
-        "Nippon Yusen Kaisha (NYK Line)"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "p-and-o-steam-navigation-company-later-p-and-o-orient-lines",
-      "name": "P&O Steam Navigation Company; later P&O-Orient Lines",
-      "rawValues": [
-        "P&O Steam Navigation Company; later P&O-Orient Lines"
       ],
       "shipCount": 2
     },
@@ -457,14 +437,6 @@
       "shipCount": 1
     },
     {
-      "id": "compagnie-generale-transatlantique-cgt-french-line",
-      "name": "Compagnie Générale Transatlantique (CGT) / “French Line”",
-      "rawValues": [
-        "Compagnie Générale Transatlantique (CGT) / “French Line”"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "eastern-steam-navigation-co-commonly-cited-for-the-initial-period",
       "name": "Eastern Steam Navigation Co. (commonly cited for the initial period)",
       "rawValues": [
@@ -521,42 +493,10 @@
       "shipCount": 1
     },
     {
-      "id": "matson-navigation-co-matson-line",
-      "name": "Matson Navigation Co. (Matson Line)",
-      "rawValues": [
-        "Matson Navigation Co. (Matson Line)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "messageries-maritimes",
-      "name": "Messageries Maritimes",
-      "rawValues": [
-        "Messageries Maritimes"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "michigan-steamship-company",
       "name": "Michigan Steamship Company",
       "rawValues": [
         "Michigan Steamship Company"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "nippon-yusen-kaisha-nyk",
-      "name": "Nippon Yusen Kaisha (NYK)",
-      "rawValues": [
-        "Nippon Yusen Kaisha (NYK)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "norddeutscher-lloyd-north-german-lloyd-bremen",
-      "name": "Norddeutscher Lloyd (North German Lloyd), Bremen",
-      "rawValues": [
-        "Norddeutscher Lloyd (North German Lloyd), Bremen"
       ],
       "shipCount": 1
     },
@@ -569,34 +509,10 @@
       "shipCount": 1
     },
     {
-      "id": "oceanic-steam-navigation-co-ltd-white-star-line",
-      "name": "Oceanic Steam Navigation Co. Ltd. (White Star Line)",
-      "rawValues": [
-        "Oceanic Steam Navigation Co. Ltd. (White Star Line)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "orient-steam-navigation-company-orient-line-transferred-to-p-and-o-ownership-in-1966",
-      "name": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-      "rawValues": [
-        "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "originally-theodore-c-engels-and-co-as-pieter-de-coninck-later-thingvalla-line-later-scandinavian-america-line-dfds-as-norge",
       "name": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
       "rawValues": [
         "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "p-and-o-steam-navigation-company",
-      "name": "P&O Steam Navigation Company",
-      "rawValues": [
-        "P&O Steam Navigation Company"
       ],
       "shipCount": 1
     },
@@ -904,7 +820,7 @@
       "url": "/ships/mv-jean-laborde",
       "launchYear": "1929",
       "operatorRaw": "Messageries Maritimes",
-      "operator": "Messageries Maritimes"
+      "operator": "Compagnie des Messageries Maritimes"
     },
     {
       "name": "Neptunia",
@@ -1264,7 +1180,7 @@
       "url": "/ships/rms-kenilworth-castle",
       "launchYear": "1903",
       "operatorRaw": "Union-Castle Mail Steamship Company",
-      "operator": "Union-Castle Mail Steamship Company"
+      "operator": "Union-Castle Line"
     },
     {
       "name": "RMS Lancastria",
@@ -1488,7 +1404,7 @@
       "url": "/ships/rms-strathnaver",
       "launchYear": "1931",
       "operatorRaw": "P&O Steam Navigation Company; later P&O-Orient Lines",
-      "operator": "P&O Steam Navigation Company; later P&O-Orient Lines"
+      "operator": "P&O"
     },
     {
       "name": "RMS Sylvania (1957)",
@@ -1536,7 +1452,7 @@
       "url": "/ships/rms-viceroy-of-india",
       "launchYear": "1928",
       "operatorRaw": "P&O Steam Navigation Company",
-      "operator": "P&O Steam Navigation Company"
+      "operator": "P&O"
     },
     {
       "name": "RMS Walmer Castle",
@@ -1544,7 +1460,7 @@
       "url": "/ships/rms-walmer-castle",
       "launchYear": "1901",
       "operatorRaw": "Union-Castle Mail Steamship Company",
-      "operator": "Union-Castle Mail Steamship Company"
+      "operator": "Union-Castle Line"
     },
     {
       "name": "RMS Windsor Castle (1921)",
@@ -1560,7 +1476,7 @@
       "url": "/ships/rms-windsor-castle",
       "launchYear": "1959",
       "operatorRaw": "Union-Castle Mail Steamship Company",
-      "operator": "Union-Castle Mail Steamship Company"
+      "operator": "Union-Castle Line"
     },
     {
       "name": "SS Adriatic (1872)",
@@ -1664,7 +1580,7 @@
       "url": "/ships/ss-armadale-castle",
       "launchYear": "1903",
       "operatorRaw": "Union-Castle Mail Steamship Company",
-      "operator": "Union-Castle Mail Steamship Company"
+      "operator": "Union-Castle Line"
     },
     {
       "name": "SS Ascania (1911)",
@@ -2016,7 +1932,7 @@
       "url": "/ships/ss-columbus-1924",
       "launchYear": "1922",
       "operatorRaw": "Norddeutscher Lloyd (North German Lloyd), Bremen",
-      "operator": "Norddeutscher Lloyd (North German Lloyd), Bremen"
+      "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
       "name": "SS Commonwealth",
@@ -2600,7 +2516,7 @@
       "url": "/ships/ss-lurline-1932",
       "launchYear": "1932",
       "operatorRaw": "Matson Navigation Co. (Matson Line)",
-      "operator": "Matson Navigation Co. (Matson Line)"
+      "operator": "Matson Navigation Company"
     },
     {
       "name": "SS Macedonia",
@@ -2672,7 +2588,7 @@
       "url": "/ships/ss-mariposa",
       "launchYear": "1931",
       "operatorRaw": "Matson Lines / Matson Navigation Company",
-      "operator": "Matson Lines / Matson Navigation Company"
+      "operator": "Matson Navigation Company"
     },
     {
       "name": "MS Marnix Van St Aldegonde",
@@ -2720,7 +2636,7 @@
       "url": "/ships/ss-milwaukee",
       "launchYear": "1929",
       "operatorRaw": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
-      "operator": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
+      "operator": "Hamburg America Line (HAPAG)"
     },
     {
       "name": "SS Minnesota",
@@ -2776,7 +2692,7 @@
       "url": "/ships/ss-montcalm",
       "launchYear": "1920",
       "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
-      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
+      "operator": "Canadian Pacific"
     },
     {
       "name": "SS Montclare",
@@ -2784,7 +2700,7 @@
       "url": "/ships/ss-montclare",
       "launchYear": "1921",
       "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
-      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
+      "operator": "Canadian Pacific"
     },
     {
       "name": "SS Monterey",
@@ -2792,7 +2708,7 @@
       "url": "/ships/ss-monterey",
       "launchYear": "1931",
       "operatorRaw": "Matson Lines / Matson Navigation Company",
-      "operator": "Matson Lines / Matson Navigation Company"
+      "operator": "Matson Navigation Company"
     },
     {
       "name": "SS Montrose",
@@ -2800,7 +2716,7 @@
       "url": "/ships/ss-montrose",
       "launchYear": "1920",
       "operatorRaw": "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
-      "operator": "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
+      "operator": "Canadian Pacific"
     },
     {
       "name": "RMS Mooltan (1923)",
@@ -2864,7 +2780,7 @@
       "url": "/ships/ss-nomadic",
       "launchYear": "1911",
       "operatorRaw": "Oceanic Steam Navigation Co. Ltd. (White Star Line)",
-      "operator": "Oceanic Steam Navigation Co. Ltd. (White Star Line)"
+      "operator": "White Star Line"
     },
     {
       "name": "SS Noordam",
@@ -2888,7 +2804,7 @@
       "url": "/ships/ss-normandie",
       "launchYear": "1932",
       "operatorRaw": "Compagnie Générale Transatlantique (CGT) / “French Line”",
-      "operator": "Compagnie Générale Transatlantique (CGT) / “French Line”"
+      "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
       "name": "SS Oceanic (1871)",
@@ -2920,7 +2836,7 @@
       "url": "/ships/ss-oriana",
       "launchYear": "1959",
       "operatorRaw": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-      "operator": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966"
+      "operator": "Orient Line"
     },
     {
       "name": "SS Orion",
@@ -3232,7 +3148,7 @@
       "url": "/ships/ss-strathaird",
       "launchYear": "1931",
       "operatorRaw": "P&O Steam Navigation Company; later P&O-Orient Lines",
-      "operator": "P&O Steam Navigation Company; later P&O-Orient Lines"
+      "operator": "P&O"
     },
     {
       "name": "RMS Strathmore",
@@ -3280,7 +3196,7 @@
       "url": "/ships/ss-vaterland",
       "launchYear": "1913",
       "operatorRaw": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
-      "operator": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
+      "operator": "Hamburg America Line (HAPAG)"
     },
     {
       "name": "SS Veendam",
@@ -3376,7 +3292,7 @@
       "url": "/ships/tatsuta-maru-1929",
       "launchYear": "1929",
       "operatorRaw": "Nippon Yusen Kaisha (NYK)",
-      "operator": "Nippon Yusen Kaisha (NYK)"
+      "operator": "Nippon Yusen Kaisha (NYK Line)"
     }
   ]
 }

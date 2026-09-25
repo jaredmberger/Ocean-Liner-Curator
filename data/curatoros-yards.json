@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T05:18:12.709Z",
+  "generatedAt": "2026-09-25T07:47:53.498Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
     "shipGuides": 327,
     "guidesWithDocumentedYard": 327,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 62,
-    "multiYardShips": 3
+    "canonicalYardLocations": 68,
+    "multiYardShips": 0
   },
   "yards": [
     {
@@ -20,11 +20,9 @@
       ],
       "builders": [
         "Harland & Wolff",
-        "Harland & Wolff Ltd., Queen’s Island",
-        "Harland & Wolff, Queen's Island",
         "Workman, Clark & Co."
       ],
-      "shipCount": 79,
+      "shipCount": 74,
       "ships": [
         {
           "name": "SS Atlantic (1873)",
@@ -209,13 +207,6 @@
           "builder": "Harland & Wolff"
         },
         {
-          "name": "RMS Celtic",
-          "path": "ships/rms-celtic.html",
-          "url": "/ships/rms-celtic",
-          "launchYear": "1901",
-          "builder": "Harland & Wolff, Queen's Island"
-        },
-        {
           "name": "RMS Walmer Castle",
           "path": "ships/rms-walmer-castle.html",
           "url": "/ships/rms-walmer-castle",
@@ -251,13 +242,6 @@
           "builder": "Harland & Wolff"
         },
         {
-          "name": "RMS Cedric",
-          "path": "ships/rms-cedric.html",
-          "url": "/ships/rms-cedric",
-          "launchYear": "1902",
-          "builder": "Harland & Wolff, Queen's Island"
-        },
-        {
           "name": "SS Arabic (1903)",
           "path": "ships/ss-arabic.html",
           "url": "/ships/ss-arabic",
@@ -277,13 +261,6 @@
           "url": "/ships/ss-ionic",
           "launchYear": "1902",
           "builder": "Harland & Wolff"
-        },
-        {
-          "name": "RMS Baltic",
-          "path": "ships/rms-baltic.html",
-          "url": "/ships/rms-baltic",
-          "launchYear": "1903",
-          "builder": "Harland & Wolff, Queen's Island"
         },
         {
           "name": "RMS Kenilworth Castle",
@@ -326,13 +303,6 @@
           "url": "/ships/ss-nieuw-amsterdam-1906",
           "launchYear": "1905",
           "builder": "Harland & Wolff"
-        },
-        {
-          "name": "RMS Adriatic (1907)",
-          "path": "ships/rms-adriatic.html",
-          "url": "/ships/rms-adriatic",
-          "launchYear": "1906",
-          "builder": "Harland & Wolff, Queen's Island"
         },
         {
           "name": "RMS Asturias (1908)",
@@ -396,13 +366,6 @@
           "url": "/ships/rms-titanic",
           "launchYear": "1911",
           "builder": "Harland & Wolff"
-        },
-        {
-          "name": "SS Nomadic",
-          "path": "ships/ss-nomadic.html",
-          "url": "/ships/ss-nomadic",
-          "launchYear": "1911",
-          "builder": "Harland & Wolff Ltd., Queen’s Island"
         },
         {
           "name": "SS Traffic",
@@ -594,7 +557,7 @@
         "J. & G. Thomson / James & George Thomson",
         "John Brown & Company"
       ],
-      "shipCount": 29,
+      "shipCount": 30,
       "ships": [
         {
           "name": "RMS Servia",
@@ -609,6 +572,13 @@
           "url": "/ships/ss-catalonia",
           "launchYear": "1881",
           "builder": "J. & G. Thomson / James & George Thomson"
+        },
+        {
+          "name": "SS City of New York (1888)",
+          "path": "ships/ss-city-of-new-york-1888.html",
+          "url": "/ships/ss-city-of-new-york-1888",
+          "launchYear": "1888",
+          "builder": "J. & G. Thomson"
         },
         {
           "name": "SS City of Paris",
@@ -805,14 +775,14 @@
       "id": "hamburg",
       "name": "Hamburg",
       "rawValues": [
-        "Hamburg"
+        "Hamburg",
+        "Hamburg, Germany"
       ],
       "builders": [
-        "A.G. Vulcan",
         "AG Vulcan",
         "Blohm & Voss"
       ],
-      "shipCount": 20,
+      "shipCount": 24,
       "ships": [
         {
           "name": "SS Barbarossa",
@@ -822,9 +792,23 @@
           "builder": "Blohm & Voss"
         },
         {
+          "name": "SS Pretoria",
+          "path": "ships/ss-pretoria.html",
+          "url": "/ships/ss-pretoria",
+          "launchYear": "1897",
+          "builder": "Blohm & Voss"
+        },
+        {
           "name": "SS Bulgaria",
           "path": "ships/ss-bulgaria.html",
           "url": "/ships/ss-bulgaria",
+          "launchYear": "1898",
+          "builder": "Blohm & Voss"
+        },
+        {
+          "name": "SS Graf Waldersee",
+          "path": "ships/ss-graf-waldersee.html",
+          "url": "/ships/ss-graf-waldersee",
           "launchYear": "1898",
           "builder": "Blohm & Voss"
         },
@@ -843,6 +827,13 @@
           "builder": "Blohm & Voss"
         },
         {
+          "name": "SS Moltke",
+          "path": "ships/ss-moltke.html",
+          "url": "/ships/ss-moltke",
+          "launchYear": "1901",
+          "builder": "Blohm & Voss"
+        },
+        {
           "name": "SS Cleveland",
           "path": "ships/ss-cleveland.html",
           "url": "/ships/ss-cleveland",
@@ -854,14 +845,14 @@
           "path": "ships/rms-berengaria.html",
           "url": "/ships/rms-berengaria",
           "launchYear": "1912",
-          "builder": "A.G. Vulcan"
+          "builder": "AG Vulcan"
         },
         {
           "name": "SS Imperator",
           "path": "ships/ss-imperator.html",
           "url": "/ships/ss-imperator",
           "launchYear": "1912",
-          "builder": "A.G. Vulcan"
+          "builder": "AG Vulcan"
         },
         {
           "name": "SS Cap Trafalgar",
@@ -953,6 +944,13 @@
           "url": "/ships/ss-liberte",
           "launchYear": "1928",
           "builder": "Blohm & Voss"
+        },
+        {
+          "name": "SS Milwaukee",
+          "path": "ships/ss-milwaukee.html",
+          "url": "/ships/ss-milwaukee",
+          "launchYear": "1929",
+          "builder": "Blohm & Voss"
         }
       ]
     },
@@ -960,16 +958,16 @@
       "id": "barrow-in-furness",
       "name": "Barrow-in-Furness",
       "rawValues": [
-        "Barrow-in-Furness"
+        "Barrow-in-Furness",
+        "Barrow-in-Furness, England"
       ],
       "builders": [
         "Barrow Shipbuilding Company",
         "Vickers Ltd",
         "Vickers Ltd.",
-        "Vickers-Armstrongs",
-        "Vickers-Armstrongs (Shipbuilders) Ltd."
+        "Vickers-Armstrongs"
       ],
-      "shipCount": 17,
+      "shipCount": 18,
       "ships": [
         {
           "name": "SS La Normandie",
@@ -1049,6 +1047,13 @@
           "builder": "Vickers-Armstrongs"
         },
         {
+          "name": "RMS Orcades (1937)",
+          "path": "ships/rms-orcades.html",
+          "url": "/ships/rms-orcades",
+          "launchYear": "1936",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
           "name": "RMS Orcades (1948)",
           "path": "ships/rms-orcades-1948.html",
           "url": "/ships/rms-orcades-1948",
@@ -1088,133 +1093,7 @@
           "path": "ships/ss-oriana.html",
           "url": "/ships/ss-oriana",
           "launchYear": "1959",
-          "builder": "Vickers-Armstrongs (Shipbuilders) Ltd."
-        }
-      ]
-    },
-    {
-      "id": "glasgow",
-      "name": "Glasgow",
-      "rawValues": [
-        "Glasgow"
-      ],
-      "builders": [
-        "Alexander Stephen & Sons",
-        "Alexander Stephen & Sons, Linthouse",
-        "Barclay, Curle & Company",
-        "D. & W. Henderson Ltd.",
-        "Fairfield Shipbuilding & Engineering Co., Govan",
-        "J. & G. Thomson",
-        "John Elder & Co.",
-        "Robert Napier & Sons",
-        "Tod & McGregor"
-      ],
-      "shipCount": 15,
-      "ships": [
-        {
-          "name": "RMS Persia",
-          "path": "ships/rms-persia-1855.html",
-          "url": "/ships/rms-persia-1855",
-          "launchYear": "1855",
-          "builder": "Robert Napier & Sons"
-        },
-        {
-          "name": "RMS Scotia",
-          "path": "ships/rms-scotia-1861.html",
-          "url": "/ships/rms-scotia-1861",
-          "launchYear": "1861",
-          "builder": "Robert Napier & Sons"
-        },
-        {
-          "name": "SS Cuba",
-          "path": "ships/ss-cuba.html",
-          "url": "/ships/ss-cuba",
-          "launchYear": "1864",
-          "builder": "Tod & McGregor"
-        },
-        {
-          "name": "SS Java",
-          "path": "ships/ss-java.html",
-          "url": "/ships/ss-java",
-          "launchYear": "1865",
-          "builder": "J. & G. Thomson"
-        },
-        {
-          "name": "SS Malta",
-          "path": "ships/ss-malta.html",
-          "url": "/ships/ss-malta",
-          "launchYear": "1865",
-          "builder": "J. & G. Thomson"
-        },
-        {
-          "name": "SS Norge",
-          "path": "ships/ss-norge.html",
-          "url": "/ships/ss-norge",
-          "launchYear": "1881",
-          "builder": "Alexander Stephen & Sons, Linthouse"
-        },
-        {
-          "name": "RMS Etruria (1884)",
-          "path": "ships/rms-etruria-1884.html",
-          "url": "/ships/rms-etruria-1884",
-          "launchYear": "1884",
-          "builder": "John Elder & Co."
-        },
-        {
-          "name": "SS Marquette",
-          "path": "ships/ss-marquette.html",
-          "url": "/ships/ss-marquette",
-          "launchYear": "1897",
-          "builder": "Alexander Stephen & Sons, Linthouse"
-        },
-        {
-          "name": "SS Columbia",
-          "path": "ships/ss-columbia.html",
-          "url": "/ships/ss-columbia",
-          "launchYear": "1902",
-          "builder": "D. & W. Henderson Ltd."
-        },
-        {
-          "name": "SS Drottningholm",
-          "path": "ships/ss-drottningholm.html",
-          "url": "/ships/ss-drottningholm",
-          "launchYear": "1904",
-          "builder": "Alexander Stephen & Sons, Linthouse"
-        },
-        {
-          "name": "SS Corsican",
-          "path": "ships/ss-corsican.html",
-          "url": "/ships/ss-corsican",
-          "launchYear": "1907",
-          "builder": "Barclay, Curle & Company"
-        },
-        {
-          "name": "SS Calgarian",
-          "path": "ships/ss-calgarian.html",
-          "url": "/ships/ss-calgarian",
-          "launchYear": "1913",
-          "builder": "Fairfield Shipbuilding & Engineering Co., Govan"
-        },
-        {
-          "name": "SS Cathay",
-          "path": "ships/ss-cathay-1924.html",
-          "url": "/ships/ss-cathay-1924",
-          "launchYear": "1924",
-          "builder": "Barclay, Curle & Company"
-        },
-        {
-          "name": "SS Comorin (1925)",
-          "path": "ships/ss-comorin.html",
-          "url": "/ships/ss-comorin",
-          "launchYear": "1924",
-          "builder": "Barclay, Curle & Company"
-        },
-        {
-          "name": "RMS Viceroy of India",
-          "path": "ships/rms-viceroy-of-india.html",
-          "url": "/ships/rms-viceroy-of-india",
-          "launchYear": "1928",
-          "builder": "Alexander Stephen & Sons"
+          "builder": "Vickers-Armstrongs"
         }
       ]
     },
@@ -1222,7 +1101,9 @@
       "id": "govan",
       "name": "Govan",
       "rawValues": [
-        "Govan"
+        "Govan",
+        "Govan, Glasgow",
+        "Govan, Scotland"
       ],
       "builders": [
         "Alexander Stephen & Sons",
@@ -1230,7 +1111,7 @@
         "Harland & Wolff",
         "John Elder & Co."
       ],
-      "shipCount": 14,
+      "shipCount": 18,
       "ships": [
         {
           "name": "RMS Umbria (1884)",
@@ -1247,10 +1128,24 @@
           "builder": "Fairfield Shipbuilding & Engineering Co."
         },
         {
+          "name": "RMS Lucania",
+          "path": "ships/rms-lucania.html",
+          "url": "/ships/rms-lucania",
+          "launchYear": "1893",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
           "name": "RMS Orontes",
           "path": "ships/rms-orontes.html",
           "url": "/ships/rms-orontes",
           "launchYear": "1902",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Armadale Castle",
+          "path": "ships/ss-armadale-castle.html",
+          "url": "/ships/ss-armadale-castle",
+          "launchYear": "1903",
           "builder": "Fairfield Shipbuilding & Engineering Co."
         },
         {
@@ -1265,6 +1160,13 @@
           "path": "ships/rms-empress-of-russia.html",
           "url": "/ships/rms-empress-of-russia",
           "launchYear": "1912",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Calgarian",
+          "path": "ships/ss-calgarian.html",
+          "url": "/ships/ss-calgarian",
+          "launchYear": "1913",
           "builder": "Fairfield Shipbuilding & Engineering Co."
         },
         {
@@ -1310,6 +1212,13 @@
           "builder": "Harland & Wolff"
         },
         {
+          "name": "SS Letitia",
+          "path": "ships/ss-letitia.html",
+          "url": "/ships/ss-letitia",
+          "launchYear": "1924",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
           "name": "RMS Transylvania",
           "path": "ships/rms-transylvania.html",
           "url": "/ships/rms-transylvania",
@@ -1343,12 +1252,12 @@
         "Ateliers et Chantiers de Bretagne",
         "Ateliers et Chantiers de Saint-Nazaire Penhoët",
         "Ateliers et Chantiers de la Loire",
-        "Chantiers & Ateliers de Penhoët",
+        "Chantiers & Ateliers de Saint-Nazaire / Penhoët",
         "Chantiers de Penhoët",
         "Chantiers de l'Atlantique",
         "Chantiers de l’Atlantique"
       ],
-      "shipCount": 14,
+      "shipCount": 16,
       "ships": [
         {
           "name": "SS La Bretagne",
@@ -1363,6 +1272,13 @@
           "url": "/ships/ss-la-provence",
           "launchYear": "1905",
           "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Chicago (1908)",
+          "path": "ships/ss-chicago-1908.html",
+          "url": "/ships/ss-chicago-1908",
+          "launchYear": "1907",
+          "builder": "Chantiers & Ateliers de Saint-Nazaire / Penhoët"
         },
         {
           "name": "SS France (1912)",
@@ -1383,7 +1299,7 @@
           "path": "ships/ss-paris.html",
           "url": "/ships/ss-paris",
           "launchYear": "1916",
-          "builder": "Chantiers & Ateliers de Penhoët"
+          "builder": "Chantiers de Penhoët"
         },
         {
           "name": "SS Île de France",
@@ -1447,100 +1363,13 @@
           "url": "/ships/ss-france",
           "launchYear": "1960",
           "builder": "Chantiers de l’Atlantique"
-        }
-      ]
-    },
-    {
-      "id": "germany",
-      "name": "Germany",
-      "rawValues": [
-        "Germany"
-      ],
-      "builders": [
-        "AG Vulcan, Stettin",
-        "AG Weser, Bremen",
-        "Blohm & Voss, Hamburg",
-        "Germaniawerft / Friedrich Krupp, Kiel",
-        "Joh. C. Tecklenborg, Geestemünde"
-      ],
-      "shipCount": 11,
-      "ships": [
-        {
-          "name": "SS Friedrich der Grosse",
-          "path": "ships/ss-friedrich-der-grosse.html",
-          "url": "/ships/ss-friedrich-der-grosse",
-          "launchYear": "1896",
-          "builder": "AG Vulcan, Stettin"
         },
         {
-          "name": "SS Königin Luise",
-          "path": "ships/ss-konigin-luise.html",
-          "url": "/ships/ss-konigin-luise",
-          "launchYear": "1896",
-          "builder": "AG Vulcan, Stettin"
-        },
-        {
-          "name": "SS Pretoria",
-          "path": "ships/ss-pretoria.html",
-          "url": "/ships/ss-pretoria",
-          "launchYear": "1897",
-          "builder": "Blohm & Voss, Hamburg"
-        },
-        {
-          "name": "SS Graf Waldersee",
-          "path": "ships/ss-graf-waldersee.html",
-          "url": "/ships/ss-graf-waldersee",
-          "launchYear": "1898",
-          "builder": "Blohm & Voss, Hamburg"
-        },
-        {
-          "name": "SS Patricia",
-          "path": "ships/ss-patricia.html",
-          "url": "/ships/ss-patricia",
-          "launchYear": "1899",
-          "builder": "AG Vulcan, Stettin"
-        },
-        {
-          "name": "SS Prinzess Irene",
-          "path": "ships/ss-prinzess-irene.html",
-          "url": "/ships/ss-prinzess-irene",
-          "launchYear": "1900",
-          "builder": "AG Vulcan, Stettin"
-        },
-        {
-          "name": "SS Moltke",
-          "path": "ships/ss-moltke.html",
-          "url": "/ships/ss-moltke",
-          "launchYear": "1901",
-          "builder": "Blohm & Voss, Hamburg"
-        },
-        {
-          "name": "SS Prinz Friedrich Wilhelm",
-          "path": "ships/ss-prinz-friedrich-wilhelm.html",
-          "url": "/ships/ss-prinz-friedrich-wilhelm",
-          "launchYear": "1907",
-          "builder": "Joh. C. Tecklenborg, Geestemünde"
-        },
-        {
-          "name": "SS Assyria",
-          "path": "ships/ss-assyria.html",
-          "url": "/ships/ss-assyria",
-          "launchYear": "1908",
-          "builder": "Germaniawerft / Friedrich Krupp, Kiel"
-        },
-        {
-          "name": "SS Athos II (1927)",
-          "path": "ships/ss-athos-ii.html",
-          "url": "/ships/ss-athos-ii",
-          "launchYear": "1925",
-          "builder": "AG Weser, Bremen"
-        },
-        {
-          "name": "SS Milwaukee",
-          "path": "ships/ss-milwaukee.html",
-          "url": "/ships/ss-milwaukee",
-          "launchYear": "1929",
-          "builder": "Blohm & Voss, Hamburg"
+          "name": "RMS Queen Mary 2",
+          "path": "ships/rms-queen-mary-2.html",
+          "url": "/ships/rms-queen-mary-2",
+          "launchYear": "2003",
+          "builder": "Chantiers de l’Atlantique"
         }
       ]
     },
@@ -1552,11 +1381,24 @@
         "Stettin, Germany"
       ],
       "builders": [
-        "A.G. Vulcan",
         "AG Vulcan"
       ],
-      "shipCount": 9,
+      "shipCount": 12,
       "ships": [
+        {
+          "name": "SS Friedrich der Grosse",
+          "path": "ships/ss-friedrich-der-grosse.html",
+          "url": "/ships/ss-friedrich-der-grosse",
+          "launchYear": "1896",
+          "builder": "AG Vulcan"
+        },
+        {
+          "name": "SS Königin Luise",
+          "path": "ships/ss-konigin-luise.html",
+          "url": "/ships/ss-konigin-luise",
+          "launchYear": "1896",
+          "builder": "AG Vulcan"
+        },
         {
           "name": "SS Kaiser Wilhelm der Grosse",
           "path": "ships/ss-kaiser-wilhelm-der-grosse.html",
@@ -1565,11 +1407,25 @@
           "builder": "AG Vulcan"
         },
         {
+          "name": "SS Patricia",
+          "path": "ships/ss-patricia.html",
+          "url": "/ships/ss-patricia",
+          "launchYear": "1899",
+          "builder": "AG Vulcan"
+        },
+        {
           "name": "SS Deutschland (1900)",
           "path": "ships/ss-deutschland.html",
           "url": "/ships/ss-deutschland",
           "launchYear": "1900",
-          "builder": "A.G. Vulcan"
+          "builder": "AG Vulcan"
+        },
+        {
+          "name": "SS Prinzess Irene",
+          "path": "ships/ss-prinzess-irene.html",
+          "url": "/ships/ss-prinzess-irene",
+          "launchYear": "1900",
+          "builder": "AG Vulcan"
         },
         {
           "name": "SS Kronprinz Wilhelm",
@@ -1590,13 +1446,6 @@
           "path": "ships/ss-kaiserin-auguste-victoria.html",
           "url": "/ships/ss-kaiserin-auguste-victoria",
           "launchYear": "1905",
-          "builder": "AG Vulcan"
-        },
-        {
-          "name": "SS Kronprinzessin Cecilie",
-          "path": "ships/ss-kronprinzessin-cecilie.html",
-          "url": "/ships/ss-kronprinzessin-cecilie",
-          "launchYear": "1906",
           "builder": "AG Vulcan"
         },
         {
@@ -1623,136 +1472,98 @@
       ]
     },
     {
-      "id": "genoa",
-      "name": "Genoa",
+      "id": "glasgow",
+      "name": "Glasgow",
       "rawValues": [
-        "Genoa"
+        "Glasgow"
       ],
       "builders": [
-        "Ansaldo",
-        "Ansaldo, Sestri Ponente"
+        "Alexander Stephen & Sons",
+        "Barclay, Curle & Company",
+        "D. & W. Henderson Ltd.",
+        "J. & G. Thomson",
+        "John Elder & Co.",
+        "Robert Napier & Sons",
+        "Tod & McGregor"
       ],
-      "shipCount": 8,
+      "shipCount": 11,
       "ships": [
         {
-          "name": "SS Duilio",
-          "path": "ships/ss-duilio.html",
-          "url": "/ships/ss-duilio",
-          "launchYear": "1916",
-          "builder": "Ansaldo, Sestri Ponente"
+          "name": "RMS Persia",
+          "path": "ships/rms-persia-1855.html",
+          "url": "/ships/rms-persia-1855",
+          "launchYear": "1855",
+          "builder": "Robert Napier & Sons"
         },
         {
-          "name": "MS Augustus",
-          "path": "ships/ms-augustus.html",
-          "url": "/ships/ms-augustus",
-          "launchYear": "1926",
-          "builder": "Ansaldo"
+          "name": "RMS Scotia",
+          "path": "ships/rms-scotia-1861.html",
+          "url": "/ships/rms-scotia-1861",
+          "launchYear": "1861",
+          "builder": "Robert Napier & Sons"
         },
         {
-          "name": "SS Roma",
-          "path": "ships/ss-roma.html",
-          "url": "/ships/ss-roma",
-          "launchYear": "1926",
-          "builder": "Ansaldo, Sestri Ponente"
+          "name": "SS Cuba",
+          "path": "ships/ss-cuba.html",
+          "url": "/ships/ss-cuba",
+          "launchYear": "1864",
+          "builder": "Tod & McGregor"
         },
         {
-          "name": "SS Rex",
-          "path": "ships/ss-rex.html",
-          "url": "/ships/ss-rex",
-          "launchYear": "1931",
-          "builder": "Ansaldo, Sestri Ponente"
+          "name": "SS Java",
+          "path": "ships/ss-java.html",
+          "url": "/ships/ss-java",
+          "launchYear": "1865",
+          "builder": "J. & G. Thomson"
         },
         {
-          "name": "SS Andrea Doria",
-          "path": "ships/ss-andrea-doria.html",
-          "url": "/ships/ss-andrea-doria",
-          "launchYear": "1951",
-          "builder": "Ansaldo, Sestri Ponente"
+          "name": "SS Malta",
+          "path": "ships/ss-malta.html",
+          "url": "/ships/ss-malta",
+          "launchYear": "1865",
+          "builder": "J. & G. Thomson"
         },
         {
-          "name": "SS Cristoforo Colombo",
-          "path": "ships/ss-cristoforo-colombo.html",
-          "url": "/ships/ss-cristoforo-colombo",
-          "launchYear": "1953",
-          "builder": "Ansaldo"
+          "name": "RMS Etruria (1884)",
+          "path": "ships/rms-etruria-1884.html",
+          "url": "/ships/rms-etruria-1884",
+          "launchYear": "1884",
+          "builder": "John Elder & Co."
         },
         {
-          "name": "SS Leonardo da Vinci",
-          "path": "ships/ss-leonardo-da-vinci.html",
-          "url": "/ships/ss-leonardo-da-vinci",
-          "launchYear": "1958",
-          "builder": "Ansaldo"
+          "name": "SS Columbia",
+          "path": "ships/ss-columbia.html",
+          "url": "/ships/ss-columbia",
+          "launchYear": "1902",
+          "builder": "D. & W. Henderson Ltd."
         },
         {
-          "name": "SS Michelangelo (1965)",
-          "path": "ships/ss-michelangelo-1965.html",
-          "url": "/ships/ss-michelangelo-1965",
-          "launchYear": "1962",
-          "builder": "Ansaldo, Sestri Ponente"
-        }
-      ]
-    },
-    {
-      "id": "bremen",
-      "name": "Bremen",
-      "rawValues": [
-        "Bremen"
-      ],
-      "builders": [
-        "A.G. Weser / Deschimag",
-        "AG Weser",
-        "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
-      ],
-      "shipCount": 7,
-      "ships": [
-        {
-          "name": "SS Arabic (1921)",
-          "path": "ships/ss-arabic-1920.html",
-          "url": "/ships/ss-arabic-1920",
-          "launchYear": "1908",
-          "builder": "AG Weser"
+          "name": "SS Corsican",
+          "path": "ships/ss-corsican.html",
+          "url": "/ships/ss-corsican",
+          "launchYear": "1907",
+          "builder": "Barclay, Curle & Company"
         },
         {
-          "name": "SS Berlin (1909)",
-          "path": "ships/ss-berlin-1909.html",
-          "url": "/ships/ss-berlin-1909",
-          "launchYear": "1908",
-          "builder": "AG Weser"
+          "name": "SS Cathay",
+          "path": "ships/ss-cathay-1924.html",
+          "url": "/ships/ss-cathay-1924",
+          "launchYear": "1924",
+          "builder": "Barclay, Curle & Company"
         },
         {
-          "name": "SS Albertic",
-          "path": "ships/ss-albertic.html",
-          "url": "/ships/ss-albertic",
-          "launchYear": "1920",
-          "builder": "AG Weser"
+          "name": "SS Comorin (1925)",
+          "path": "ships/ss-comorin.html",
+          "url": "/ships/ss-comorin",
+          "launchYear": "1924",
+          "builder": "Barclay, Curle & Company"
         },
         {
-          "name": "SS Bremen",
-          "path": "ships/ss-bremen.html",
-          "url": "/ships/ss-bremen",
+          "name": "RMS Viceroy of India",
+          "path": "ships/rms-viceroy-of-india.html",
+          "url": "/ships/rms-viceroy-of-india",
           "launchYear": "1928",
-          "builder": "A.G. Weser / Deschimag"
-        },
-        {
-          "name": "SS Scharnhorst",
-          "path": "ships/ss-scharnhorst.html",
-          "url": "/ships/ss-scharnhorst",
-          "launchYear": "1934",
-          "builder": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
-        },
-        {
-          "name": "SS Gneisenau",
-          "path": "ships/ss-gneisenau.html",
-          "url": "/ships/ss-gneisenau",
-          "launchYear": "1935",
-          "builder": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
-        },
-        {
-          "name": "SS Resolute",
-          "path": "ships/ss-resolute.html",
-          "url": "/ships/ss-resolute",
-          "launchYear": null,
-          "builder": "AG Weser"
+          "builder": "Alexander Stephen & Sons"
         }
       ]
     },
@@ -1822,193 +1633,51 @@
       ]
     },
     {
-      "id": "scotland",
-      "name": "Scotland",
+      "id": "bremen",
+      "name": "Bremen",
       "rawValues": [
-        "Scotland"
+        "Bremen"
       ],
       "builders": [
-        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
-        "Fairfield Shipbuilding & Engineering Co., Govan",
-        "Fairfield Shipbuilding & Engineering Company, Govan",
-        "J. & G. Thomson & Co., Clydebank / Glasgow area",
-        "J. & G. Thomson, Clydebank",
-        "Robert Menzies & Sons, Leith",
-        "William Beardmore & Company, Dalmuir"
+        "A.G. Weser / Deschimag",
+        "AG Weser"
       ],
-      "shipCount": 7,
+      "shipCount": 5,
       "ships": [
         {
-          "name": "SS Sirius",
-          "path": "ships/ss-sirius.html",
-          "url": "/ships/ss-sirius",
-          "launchYear": "1837",
-          "builder": "Robert Menzies & Sons, Leith"
+          "name": "SS Arabic (1921)",
+          "path": "ships/ss-arabic-1920.html",
+          "url": "/ships/ss-arabic-1920",
+          "launchYear": "1908",
+          "builder": "AG Weser"
         },
         {
-          "name": "SS Bothnia",
-          "path": "ships/ss-bothnia.html",
-          "url": "/ships/ss-bothnia",
-          "launchYear": "1874",
-          "builder": "J. & G. Thomson & Co., Clydebank / Glasgow area"
+          "name": "SS Berlin (1909)",
+          "path": "ships/ss-berlin-1909.html",
+          "url": "/ships/ss-berlin-1909",
+          "launchYear": "1908",
+          "builder": "AG Weser"
         },
         {
-          "name": "SS City of New York (1888)",
-          "path": "ships/ss-city-of-new-york-1888.html",
-          "url": "/ships/ss-city-of-new-york-1888",
-          "launchYear": "1888",
-          "builder": "J. & G. Thomson, Clydebank"
+          "name": "SS Albertic",
+          "path": "ships/ss-albertic.html",
+          "url": "/ships/ss-albertic",
+          "launchYear": "1920",
+          "builder": "AG Weser"
         },
         {
-          "name": "RMS Lucania",
-          "path": "ships/rms-lucania.html",
-          "url": "/ships/rms-lucania",
-          "launchYear": "1893",
-          "builder": "Fairfield Shipbuilding & Engineering Co., Govan"
-        },
-        {
-          "name": "SS Armadale Castle",
-          "path": "ships/ss-armadale-castle.html",
-          "url": "/ships/ss-armadale-castle",
-          "launchYear": "1903",
-          "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
-        },
-        {
-          "name": "RMS Empress of France",
-          "path": "ships/ss-empress-of-france.html",
-          "url": "/ships/ss-empress-of-france",
-          "launchYear": "1913",
-          "builder": "William Beardmore & Company, Dalmuir"
-        },
-        {
-          "name": "SS Letitia",
-          "path": "ships/ss-letitia.html",
-          "url": "/ships/ss-letitia",
-          "launchYear": "1924",
-          "builder": "Fairfield Shipbuilding & Engineering Company, Govan"
-        }
-      ]
-    },
-    {
-      "id": "wallsend",
-      "name": "Wallsend",
-      "rawValues": [
-        "Wallsend",
-        "Wallsend, England",
-        "Wallsend-on-Tyne"
-      ],
-      "builders": [
-        "C. S. Swan & Hunter Ltd.",
-        "Swan Hunter",
-        "Swan Hunter & Wigham Richardson"
-      ],
-      "shipCount": 7,
-      "ships": [
-        {
-          "name": "SS Lake Michigan",
-          "path": "ships/ss-lake-michigan.html",
-          "url": "/ships/ss-lake-michigan",
-          "launchYear": "1901",
-          "builder": "C. S. Swan & Hunter Ltd."
-        },
-        {
-          "name": "RMS Carpathia",
-          "path": "ships/rms-carpathia.html",
-          "url": "/ships/rms-carpathia",
-          "launchYear": "1902",
-          "builder": "Swan Hunter & Wigham Richardson"
-        },
-        {
-          "name": "RMS Mauretania",
-          "path": "ships/rms-mauretania.html",
-          "url": "/ships/rms-mauretania",
-          "launchYear": "1906",
-          "builder": "Swan Hunter & Wigham Richardson"
-        },
-        {
-          "name": "RMS Franconia (1910)",
-          "path": "ships/rms-franconia-1910.html",
-          "url": "/ships/rms-franconia-1910",
-          "launchYear": "1910",
-          "builder": "Swan Hunter & Wigham Richardson"
-        },
-        {
-          "name": "SS Ascania (1911)",
-          "path": "ships/ss-ascania-1911.html",
-          "url": "/ships/ss-ascania-1911",
-          "launchYear": "1911",
-          "builder": "Swan Hunter"
-        },
-        {
-          "name": "RMS Aurania (1916)",
-          "path": "ships/rms-aurania.html",
-          "url": "/ships/rms-aurania",
-          "launchYear": "1916",
-          "builder": "Swan Hunter & Wigham Richardson"
-        },
-        {
-          "name": "QSMV Dominion Monarch",
-          "path": "ships/qsmv-dominion-monarch.html",
-          "url": "/ships/qsmv-dominion-monarch",
-          "launchYear": "1938",
-          "builder": "Swan Hunter & Wigham Richardson"
-        }
-      ]
-    },
-    {
-      "id": "virginia",
-      "name": "Virginia",
-      "rawValues": [
-        "Virginia"
-      ],
-      "builders": [
-        "Newport News",
-        "Newport News Shipbuilding & Dry Dock Co.",
-        "Newport News Shipbuilding & Dry Dock Co., Newport News"
-      ],
-      "shipCount": 6,
-      "ships": [
-        {
-          "name": "SS California",
-          "path": "ships/ss-california.html",
-          "url": "/ships/ss-california",
-          "launchYear": "1927",
-          "builder": "Newport News"
-        },
-        {
-          "name": "SS Virginia",
-          "path": "ships/ss-virginia.html",
-          "url": "/ships/ss-virginia",
+          "name": "SS Bremen",
+          "path": "ships/ss-bremen.html",
+          "url": "/ships/ss-bremen",
           "launchYear": "1928",
-          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News"
+          "builder": "A.G. Weser / Deschimag"
         },
         {
-          "name": "SS Pennsylvania",
-          "path": "ships/ss-pennsylvania.html",
-          "url": "/ships/ss-pennsylvania",
-          "launchYear": "1929",
-          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News"
-        },
-        {
-          "name": "SS President Hoover",
-          "path": "ships/ss-president-hoover.html",
-          "url": "/ships/ss-president-hoover",
-          "launchYear": "1930",
-          "builder": "Newport News Shipbuilding & Dry Dock Co."
-        },
-        {
-          "name": "SS President Coolidge",
-          "path": "ships/ss-president-coolidge.html",
-          "url": "/ships/ss-president-coolidge",
-          "launchYear": "1931",
-          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News"
-        },
-        {
-          "name": "SS United States",
-          "path": "ships/ss-us.html",
-          "url": "/ships/ss-us",
-          "launchYear": "1951",
-          "builder": "Newport News Shipbuilding & Dry Dock Co."
+          "name": "SS Resolute",
+          "path": "ships/ss-resolute.html",
+          "url": "/ships/ss-resolute",
+          "launchYear": null,
+          "builder": "AG Weser"
         }
       ]
     },
@@ -2058,6 +1727,205 @@
           "url": "/ships/ss-marechal-joffre",
           "launchYear": "1931",
           "builder": "Société Provençale de Constructions Navales"
+        }
+      ]
+    },
+    {
+      "id": "queen-s-island-belfast",
+      "name": "Queen's Island, Belfast",
+      "rawValues": [
+        "Queen's Island, Belfast",
+        "Queen’s Island, Belfast"
+      ],
+      "builders": [
+        "Harland & Wolff"
+      ],
+      "shipCount": 5,
+      "ships": [
+        {
+          "name": "RMS Celtic",
+          "path": "ships/rms-celtic.html",
+          "url": "/ships/rms-celtic",
+          "launchYear": "1901",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "RMS Cedric",
+          "path": "ships/rms-cedric.html",
+          "url": "/ships/rms-cedric",
+          "launchYear": "1902",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "RMS Baltic",
+          "path": "ships/rms-baltic.html",
+          "url": "/ships/rms-baltic",
+          "launchYear": "1903",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "RMS Adriatic (1907)",
+          "path": "ships/rms-adriatic.html",
+          "url": "/ships/rms-adriatic",
+          "launchYear": "1906",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "SS Nomadic",
+          "path": "ships/ss-nomadic.html",
+          "url": "/ships/ss-nomadic",
+          "launchYear": "1911",
+          "builder": "Harland & Wolff"
+        }
+      ]
+    },
+    {
+      "id": "quincy-massachusetts",
+      "name": "Quincy, Massachusetts",
+      "rawValues": [
+        "Quincy, Massachusetts"
+      ],
+      "builders": [
+        "Bethlehem Shipbuilding Corp., Fore River Shipyard",
+        "Bethlehem Steel Corporation, Fore River Shipyard",
+        "Fore River Shipyard, Bethlehem Shipbuilding Corporation"
+      ],
+      "shipCount": 5,
+      "ships": [
+        {
+          "name": "SS Mariposa",
+          "path": "ships/ss-mariposa.html",
+          "url": "/ships/ss-mariposa",
+          "launchYear": "1931",
+          "builder": "Fore River Shipyard, Bethlehem Shipbuilding Corporation"
+        },
+        {
+          "name": "SS Monterey",
+          "path": "ships/ss-monterey.html",
+          "url": "/ships/ss-monterey",
+          "launchYear": "1931",
+          "builder": "Fore River Shipyard, Bethlehem Shipbuilding Corporation"
+        },
+        {
+          "name": "SS Lurline (1932)",
+          "path": "ships/ss-lurline-1932.html",
+          "url": "/ships/ss-lurline-1932",
+          "launchYear": "1932",
+          "builder": "Bethlehem Shipbuilding Corp., Fore River Shipyard"
+        },
+        {
+          "name": "SS Constitution",
+          "path": "ships/ss-constitution.html",
+          "url": "/ships/ss-constitution",
+          "launchYear": "1950",
+          "builder": "Bethlehem Steel Corporation, Fore River Shipyard"
+        },
+        {
+          "name": "SS Independence",
+          "path": "ships/ss-independence.html",
+          "url": "/ships/ss-independence",
+          "launchYear": "1950",
+          "builder": "Bethlehem Steel Corporation, Fore River Shipyard"
+        }
+      ]
+    },
+    {
+      "id": "sestri-ponente-genoa",
+      "name": "Sestri Ponente, Genoa",
+      "rawValues": [
+        "Sestri Ponente, Genoa"
+      ],
+      "builders": [
+        "Ansaldo"
+      ],
+      "shipCount": 5,
+      "ships": [
+        {
+          "name": "SS Duilio",
+          "path": "ships/ss-duilio.html",
+          "url": "/ships/ss-duilio",
+          "launchYear": "1916",
+          "builder": "Ansaldo"
+        },
+        {
+          "name": "SS Roma",
+          "path": "ships/ss-roma.html",
+          "url": "/ships/ss-roma",
+          "launchYear": "1926",
+          "builder": "Ansaldo"
+        },
+        {
+          "name": "SS Rex",
+          "path": "ships/ss-rex.html",
+          "url": "/ships/ss-rex",
+          "launchYear": "1931",
+          "builder": "Ansaldo"
+        },
+        {
+          "name": "SS Andrea Doria",
+          "path": "ships/ss-andrea-doria.html",
+          "url": "/ships/ss-andrea-doria",
+          "launchYear": "1951",
+          "builder": "Ansaldo"
+        },
+        {
+          "name": "SS Michelangelo (1965)",
+          "path": "ships/ss-michelangelo-1965.html",
+          "url": "/ships/ss-michelangelo-1965",
+          "launchYear": "1962",
+          "builder": "Ansaldo"
+        }
+      ]
+    },
+    {
+      "id": "wallsend",
+      "name": "Wallsend",
+      "rawValues": [
+        "Wallsend",
+        "Wallsend, England",
+        "Wallsend-on-Tyne"
+      ],
+      "builders": [
+        "C. S. Swan & Hunter Ltd.",
+        "Swan Hunter",
+        "Swan Hunter & Wigham Richardson"
+      ],
+      "shipCount": 5,
+      "ships": [
+        {
+          "name": "SS Lake Michigan",
+          "path": "ships/ss-lake-michigan.html",
+          "url": "/ships/ss-lake-michigan",
+          "launchYear": "1901",
+          "builder": "C. S. Swan & Hunter Ltd."
+        },
+        {
+          "name": "RMS Carpathia",
+          "path": "ships/rms-carpathia.html",
+          "url": "/ships/rms-carpathia",
+          "launchYear": "1902",
+          "builder": "Swan Hunter & Wigham Richardson"
+        },
+        {
+          "name": "RMS Mauretania",
+          "path": "ships/rms-mauretania.html",
+          "url": "/ships/rms-mauretania",
+          "launchYear": "1906",
+          "builder": "Swan Hunter & Wigham Richardson"
+        },
+        {
+          "name": "SS Ascania (1911)",
+          "path": "ships/ss-ascania-1911.html",
+          "url": "/ships/ss-ascania-1911",
+          "launchYear": "1911",
+          "builder": "Swan Hunter"
+        },
+        {
+          "name": "QSMV Dominion Monarch",
+          "path": "ships/qsmv-dominion-monarch.html",
+          "url": "/ships/qsmv-dominion-monarch",
+          "launchYear": "1938",
+          "builder": "Swan Hunter & Wigham Richardson"
         }
       ]
     },
@@ -2147,6 +2015,48 @@
       ]
     },
     {
+      "id": "newport-news-virginia",
+      "name": "Newport News, Virginia",
+      "rawValues": [
+        "Newport News, Virginia",
+        "Newport News, Virginia, USA"
+      ],
+      "builders": [
+        "Newport News Shipbuilding & Dry Dock Co."
+      ],
+      "shipCount": 4,
+      "ships": [
+        {
+          "name": "SS Virginia",
+          "path": "ships/ss-virginia.html",
+          "url": "/ships/ss-virginia",
+          "launchYear": "1928",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
+        },
+        {
+          "name": "SS Pennsylvania",
+          "path": "ships/ss-pennsylvania.html",
+          "url": "/ships/ss-pennsylvania",
+          "launchYear": "1929",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
+        },
+        {
+          "name": "SS Morro Castle",
+          "path": "ships/ss-morro-castle.html",
+          "url": "/ships/ss-morro-castle",
+          "launchYear": "1930",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
+        },
+        {
+          "name": "SS President Coolidge",
+          "path": "ships/ss-president-coolidge.html",
+          "url": "/ships/ss-president-coolidge",
+          "launchYear": "1931",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
+        }
+      ]
+    },
+    {
       "id": "amsterdam",
       "name": "Amsterdam",
       "rawValues": [
@@ -2216,6 +2126,40 @@
       ]
     },
     {
+      "id": "camden-new-jersey",
+      "name": "Camden, New Jersey",
+      "rawValues": [
+        "Camden, New Jersey"
+      ],
+      "builders": [
+        "New York Shipbuilding Company"
+      ],
+      "shipCount": 3,
+      "ships": [
+        {
+          "name": "SS Manchuria",
+          "path": "ships/ss-manchuria.html",
+          "url": "/ships/ss-manchuria",
+          "launchYear": "1903",
+          "builder": "New York Shipbuilding Company"
+        },
+        {
+          "name": "SS Mongolia",
+          "path": "ships/ss-mongolia.html",
+          "url": "/ships/ss-mongolia",
+          "launchYear": "1903",
+          "builder": "New York Shipbuilding Company"
+        },
+        {
+          "name": "SS Manhattan (1932)",
+          "path": "ships/ss-manhattan.html",
+          "url": "/ships/ss-manhattan",
+          "launchYear": "1931",
+          "builder": "New York Shipbuilding Company"
+        }
+      ]
+    },
+    {
       "id": "danzig",
       "name": "Danzig",
       "rawValues": [
@@ -2250,72 +2194,105 @@
       ]
     },
     {
-      "id": "massachusetts",
-      "name": "Massachusetts",
+      "id": "genoa",
+      "name": "Genoa",
       "rawValues": [
-        "Massachusetts"
+        "Genoa"
       ],
       "builders": [
-        "Bethlehem Steel Corporation, Fore River Shipyard, Quincy",
-        "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy"
+        "Ansaldo"
       ],
       "shipCount": 3,
       "ships": [
         {
-          "name": "SS Mariposa",
-          "path": "ships/ss-mariposa.html",
-          "url": "/ships/ss-mariposa",
-          "launchYear": "1931",
-          "builder": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy"
+          "name": "MS Augustus",
+          "path": "ships/ms-augustus.html",
+          "url": "/ships/ms-augustus",
+          "launchYear": "1926",
+          "builder": "Ansaldo"
         },
         {
-          "name": "SS Monterey",
-          "path": "ships/ss-monterey.html",
-          "url": "/ships/ss-monterey",
-          "launchYear": "1931",
-          "builder": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy"
+          "name": "SS Cristoforo Colombo",
+          "path": "ships/ss-cristoforo-colombo.html",
+          "url": "/ships/ss-cristoforo-colombo",
+          "launchYear": "1953",
+          "builder": "Ansaldo"
         },
         {
-          "name": "SS Independence",
-          "path": "ships/ss-independence.html",
-          "url": "/ships/ss-independence",
-          "launchYear": "1950",
-          "builder": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy"
+          "name": "SS Leonardo da Vinci",
+          "path": "ships/ss-leonardo-da-vinci.html",
+          "url": "/ships/ss-leonardo-da-vinci",
+          "launchYear": "1958",
+          "builder": "Ansaldo"
         }
       ]
     },
     {
-      "id": "new-jersey",
-      "name": "New Jersey",
+      "id": "linthouse-glasgow",
+      "name": "Linthouse, Glasgow",
       "rawValues": [
-        "New Jersey"
+        "Linthouse, Glasgow"
       ],
       "builders": [
-        "New York Shipbuilding Company, Camden",
-        "New York Shipbuilding Corporation, Camden"
+        "Alexander Stephen & Sons"
       ],
       "shipCount": 3,
       "ships": [
         {
-          "name": "SS Manchuria",
-          "path": "ships/ss-manchuria.html",
-          "url": "/ships/ss-manchuria",
-          "launchYear": "1903",
-          "builder": "New York Shipbuilding Company, Camden"
+          "name": "SS Norge",
+          "path": "ships/ss-norge.html",
+          "url": "/ships/ss-norge",
+          "launchYear": "1881",
+          "builder": "Alexander Stephen & Sons"
         },
         {
-          "name": "SS Mongolia",
-          "path": "ships/ss-mongolia.html",
-          "url": "/ships/ss-mongolia",
-          "launchYear": "1903",
-          "builder": "New York Shipbuilding Company, Camden"
+          "name": "SS Marquette",
+          "path": "ships/ss-marquette.html",
+          "url": "/ships/ss-marquette",
+          "launchYear": "1897",
+          "builder": "Alexander Stephen & Sons"
         },
         {
-          "name": "SS Manhattan (1932)",
-          "path": "ships/ss-manhattan.html",
-          "url": "/ships/ss-manhattan",
-          "launchYear": "1931",
-          "builder": "New York Shipbuilding Corporation, Camden"
+          "name": "SS Drottningholm",
+          "path": "ships/ss-drottningholm.html",
+          "url": "/ships/ss-drottningholm",
+          "launchYear": "1904",
+          "builder": "Alexander Stephen & Sons"
+        }
+      ]
+    },
+    {
+      "id": "virginia",
+      "name": "Virginia",
+      "rawValues": [
+        "Virginia"
+      ],
+      "builders": [
+        "Newport News",
+        "Newport News Shipbuilding & Dry Dock Co."
+      ],
+      "shipCount": 3,
+      "ships": [
+        {
+          "name": "SS California",
+          "path": "ships/ss-california.html",
+          "url": "/ships/ss-california",
+          "launchYear": "1927",
+          "builder": "Newport News"
+        },
+        {
+          "name": "SS President Hoover",
+          "path": "ships/ss-president-hoover.html",
+          "url": "/ships/ss-president-hoover",
+          "launchYear": "1930",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
+        },
+        {
+          "name": "SS United States",
+          "path": "ships/ss-us.html",
+          "url": "/ships/ss-us",
+          "launchYear": "1951",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
         }
       ]
     },
@@ -2347,86 +2324,29 @@
       ]
     },
     {
-      "id": "england",
-      "name": "England",
+      "id": "dalmuir-scotland",
+      "name": "Dalmuir, Scotland",
       "rawValues": [
-        "England"
+        "Dalmuir, Scotland"
       ],
       "builders": [
-        "Furness, Withy & Co., West Hartlepool",
-        "Vickers-Armstrongs Ltd., Barrow-in-Furness"
+        "William Beardmore & Co."
       ],
       "shipCount": 2,
       "ships": [
         {
-          "name": "SS Poland",
-          "path": "ships/ss-poland.html",
-          "url": "/ships/ss-poland",
-          "launchYear": "1897",
-          "builder": "Furness, Withy & Co., West Hartlepool"
+          "name": "RMS Empress of France",
+          "path": "ships/ss-empress-of-france.html",
+          "url": "/ships/ss-empress-of-france",
+          "launchYear": "1913",
+          "builder": "William Beardmore & Co."
         },
         {
-          "name": "RMS Orcades (1937)",
-          "path": "ships/rms-orcades.html",
-          "url": "/ships/rms-orcades",
-          "launchYear": "1936",
-          "builder": "Vickers-Armstrongs Ltd., Barrow-in-Furness"
-        }
-      ]
-    },
-    {
-      "id": "fore-river-shipyard",
-      "name": "Fore River Shipyard",
-      "rawValues": [
-        "Fore River Shipyard"
-      ],
-      "builders": [
-        "Bethlehem Shipbuilding Corp.",
-        "Bethlehem Steel Corporation"
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "SS Lurline (1932)",
-          "path": "ships/ss-lurline-1932.html",
-          "url": "/ships/ss-lurline-1932",
-          "launchYear": "1932",
-          "builder": "Bethlehem Shipbuilding Corp."
-        },
-        {
-          "name": "SS Constitution",
-          "path": "ships/ss-constitution.html",
-          "url": "/ships/ss-constitution",
-          "launchYear": "1950",
-          "builder": "Bethlehem Steel Corporation"
-        }
-      ]
-    },
-    {
-      "id": "france",
-      "name": "France",
-      "rawValues": [
-        "France"
-      ],
-      "builders": [
-        "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire",
-        "Chantiers de l’Atlantique, Saint-Nazaire"
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "SS Chicago (1908)",
-          "path": "ships/ss-chicago-1908.html",
-          "url": "/ships/ss-chicago-1908",
-          "launchYear": "1907",
-          "builder": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire"
-        },
-        {
-          "name": "RMS Queen Mary 2",
-          "path": "ships/rms-queen-mary-2.html",
-          "url": "/ships/rms-queen-mary-2",
-          "launchYear": "2003",
-          "builder": "Chantiers de l’Atlantique, Saint-Nazaire"
+          "name": "RMS Cameronia",
+          "path": "ships/rms-cameronia.html",
+          "url": "/ships/rms-cameronia",
+          "launchYear": "1919",
+          "builder": "William Beardmore & Co."
         }
       ]
     },
@@ -2454,6 +2374,33 @@
           "url": "/ships/ss-mayflower",
           "launchYear": "1902",
           "builder": "R. & W. Hawthorn, Leslie & Co."
+        }
+      ]
+    },
+    {
+      "id": "hunter-and-wigham-richardson-wallsend",
+      "name": "Hunter & Wigham Richardson, Wallsend",
+      "rawValues": [
+        "Hunter & Wigham Richardson, Wallsend"
+      ],
+      "builders": [
+        "Swan"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "RMS Franconia (1910)",
+          "path": "ships/rms-franconia-1910.html",
+          "url": "/ships/rms-franconia-1910",
+          "launchYear": "1910",
+          "builder": "Swan"
+        },
+        {
+          "name": "RMS Aurania (1916)",
+          "path": "ships/rms-aurania.html",
+          "url": "/ships/rms-aurania",
+          "launchYear": "1916",
+          "builder": "Swan"
         }
       ]
     },
@@ -2514,35 +2461,6 @@
       ]
     },
     {
-      "id": "newcastle-upon-tyne",
-      "name": "Newcastle upon Tyne",
-      "rawValues": [
-        "Newcastle upon Tyne",
-        "Newcastle-upon-Tyne"
-      ],
-      "builders": [
-        "Armstrong Whitworth & Co.",
-        "Armstrong, Whitworth & Co., High Walker"
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "RMS Ascania",
-          "path": "ships/rms-ascania.html",
-          "url": "/ships/rms-ascania",
-          "launchYear": "1923",
-          "builder": "Armstrong Whitworth & Co."
-        },
-        {
-          "name": "MS Gripsholm (1925)",
-          "path": "ships/ms-gripsholm-1925.html",
-          "url": "/ships/ms-gripsholm-1925",
-          "launchYear": "1924",
-          "builder": "Armstrong, Whitworth & Co., High Walker"
-        }
-      ]
-    },
-    {
       "id": "philadelphia",
       "name": "Philadelphia",
       "rawValues": [
@@ -2594,34 +2512,6 @@
           "url": "/ships/ss-lafayette",
           "launchYear": "1914",
           "builder": "Chantiers et Ateliers de Provence"
-        }
-      ]
-    },
-    {
-      "id": "quincy-massachusetts",
-      "name": "Quincy, Massachusetts",
-      "rawValues": [
-        "Quincy, Massachusetts"
-      ],
-      "builders": [
-        "Bethlehem Shipbuilding Corp.",
-        "Bethlehem Steel Corporation"
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "SS Lurline (1932)",
-          "path": "ships/ss-lurline-1932.html",
-          "url": "/ships/ss-lurline-1932",
-          "launchYear": "1932",
-          "builder": "Bethlehem Shipbuilding Corp."
-        },
-        {
-          "name": "SS Constitution",
-          "path": "ships/ss-constitution.html",
-          "url": "/ships/ss-constitution",
-          "launchYear": "1950",
-          "builder": "Bethlehem Steel Corporation"
         }
       ]
     },
@@ -2681,6 +2571,33 @@
       ]
     },
     {
+      "id": "werk-ag-weser-bremen",
+      "name": "Werk AG Weser, Bremen",
+      "rawValues": [
+        "Werk AG Weser, Bremen"
+      ],
+      "builders": [
+        "Deutsche Schiff- und Maschinenbau AG"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS Scharnhorst",
+          "path": "ships/ss-scharnhorst.html",
+          "url": "/ships/ss-scharnhorst",
+          "launchYear": "1934",
+          "builder": "Deutsche Schiff- und Maschinenbau AG"
+        },
+        {
+          "name": "SS Gneisenau",
+          "path": "ships/ss-gneisenau.html",
+          "url": "/ships/ss-gneisenau",
+          "launchYear": "1935",
+          "builder": "Deutsche Schiff- und Maschinenbau AG"
+        }
+      ]
+    },
+    {
       "id": "birkenhead-england",
       "name": "Birkenhead, England",
       "rawValues": [
@@ -2721,6 +2638,26 @@
       ]
     },
     {
+      "id": "bremen-germany",
+      "name": "Bremen, Germany",
+      "rawValues": [
+        "Bremen, Germany"
+      ],
+      "builders": [
+        "AG Weser"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Athos II (1927)",
+          "path": "ships/ss-athos-ii.html",
+          "url": "/ships/ss-athos-ii",
+          "launchYear": "1925",
+          "builder": "AG Weser"
+        }
+      ]
+    },
+    {
       "id": "camden-new-jersey-usa",
       "name": "Camden, New Jersey, USA",
       "rawValues": [
@@ -2741,22 +2678,22 @@
       ]
     },
     {
-      "id": "connecticut",
-      "name": "Connecticut",
+      "id": "clydebank-glasgow-area-scotland",
+      "name": "Clydebank / Glasgow area, Scotland",
       "rawValues": [
-        "Connecticut"
+        "Clydebank / Glasgow area, Scotland"
       ],
       "builders": [
-        "Eastern Shipbuilding Company, New London / Groton"
+        "J. & G. Thomson"
       ],
       "shipCount": 1,
       "ships": [
         {
-          "name": "SS Minnesota",
-          "path": "ships/ss-minnesota.html",
-          "url": "/ships/ss-minnesota",
-          "launchYear": "1903",
-          "builder": "Eastern Shipbuilding Company, New London / Groton"
+          "name": "SS Bothnia",
+          "path": "ships/ss-bothnia.html",
+          "url": "/ships/ss-bothnia",
+          "launchYear": "1874",
+          "builder": "J. & G. Thomson"
         }
       ]
     },
@@ -2781,26 +2718,6 @@
       ]
     },
     {
-      "id": "dalmuir-scotland",
-      "name": "Dalmuir, Scotland",
-      "rawValues": [
-        "Dalmuir, Scotland"
-      ],
-      "builders": [
-        "William Beardmore & Co."
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "RMS Cameronia",
-          "path": "ships/rms-cameronia.html",
-          "url": "/ships/rms-cameronia",
-          "launchYear": "1919",
-          "builder": "William Beardmore & Co."
-        }
-      ]
-    },
-    {
       "id": "geestemunde",
       "name": "Geestemünde",
       "rawValues": [
@@ -2817,6 +2734,26 @@
           "url": "/ships/ss-reliance",
           "launchYear": "1914",
           "builder": "J.C. Tecklenborg"
+        }
+      ]
+    },
+    {
+      "id": "geestemunde-germany",
+      "name": "Geestemünde, Germany",
+      "rawValues": [
+        "Geestemünde, Germany"
+      ],
+      "builders": [
+        "Joh. C. Tecklenborg"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Prinz Friedrich Wilhelm",
+          "path": "ships/ss-prinz-friedrich-wilhelm.html",
+          "url": "/ships/ss-prinz-friedrich-wilhelm",
+          "launchYear": "1907",
+          "builder": "Joh. C. Tecklenborg"
         }
       ]
     },
@@ -2921,22 +2858,42 @@
       ]
     },
     {
-      "id": "italy",
-      "name": "Italy",
+      "id": "high-walker-newcastle-upon-tyne",
+      "name": "High Walker, Newcastle upon Tyne",
       "rawValues": [
-        "Italy"
+        "High Walker, Newcastle upon Tyne"
       ],
       "builders": [
-        "Cantiere Navale di Riva Trigoso, Riva Trigoso"
+        "Armstrong Whitworth & Co."
       ],
       "shipCount": 1,
       "ships": [
         {
-          "name": "SS Principessa Mafalda",
-          "path": "ships/ss-principessa-mafalda.html",
-          "url": "/ships/ss-principessa-mafalda",
+          "name": "MS Gripsholm (1925)",
+          "path": "ships/ms-gripsholm-1925.html",
+          "url": "/ships/ms-gripsholm-1925",
+          "launchYear": "1924",
+          "builder": "Armstrong Whitworth & Co."
+        }
+      ]
+    },
+    {
+      "id": "kiel-germany",
+      "name": "Kiel, Germany",
+      "rawValues": [
+        "Kiel, Germany"
+      ],
+      "builders": [
+        "Germaniawerft / Friedrich Krupp"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Assyria",
+          "path": "ships/ss-assyria.html",
+          "url": "/ships/ss-assyria",
           "launchYear": "1908",
-          "builder": "Cantiere Navale di Riva Trigoso, Riva Trigoso"
+          "builder": "Germaniawerft / Friedrich Krupp"
         }
       ]
     },
@@ -2961,6 +2918,26 @@
       ]
     },
     {
+      "id": "leith-scotland",
+      "name": "Leith, Scotland",
+      "rawValues": [
+        "Leith, Scotland"
+      ],
+      "builders": [
+        "Robert Menzies & Sons"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Sirius",
+          "path": "ships/ss-sirius.html",
+          "url": "/ships/ss-sirius",
+          "launchYear": "1837",
+          "builder": "Robert Menzies & Sons"
+        }
+      ]
+    },
+    {
       "id": "linthouse-glasgow-scotland",
       "name": "Linthouse, Glasgow, Scotland",
       "rawValues": [
@@ -2981,22 +2958,42 @@
       ]
     },
     {
-      "id": "michigan",
-      "name": "Michigan",
+      "id": "low-walker-newcastle",
+      "name": "Low Walker, Newcastle",
       "rawValues": [
-        "Michigan"
+        "Low Walker, Newcastle"
       ],
       "builders": [
-        "Jenks Ship Building Company, Port Huron"
+        "Armstrong Whitworth & Co."
       ],
       "shipCount": 1,
       "ships": [
         {
-          "name": "SS Eastland",
-          "path": "ships/ss-eastland.html",
-          "url": "/ships/ss-eastland",
+          "name": "SS Storstad",
+          "path": "ships/ss-storstad.html",
+          "url": "/ships/ss-storstad",
+          "launchYear": "1910",
+          "builder": "Armstrong Whitworth & Co."
+        }
+      ]
+    },
+    {
+      "id": "new-london-groton-connecticut",
+      "name": "New London / Groton, Connecticut",
+      "rawValues": [
+        "New London / Groton, Connecticut"
+      ],
+      "builders": [
+        "Eastern Shipbuilding Company"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Minnesota",
+          "path": "ships/ss-minnesota.html",
+          "url": "/ships/ss-minnesota",
           "launchYear": "1903",
-          "builder": "Jenks Ship Building Company, Port Huron"
+          "builder": "Eastern Shipbuilding Company"
         }
       ]
     },
@@ -3021,26 +3018,6 @@
       ]
     },
     {
-      "id": "newcastle",
-      "name": "Newcastle",
-      "rawValues": [
-        "Newcastle"
-      ],
-      "builders": [
-        "Armstrong, Whitworth & Co., Low Walker"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS Storstad",
-          "path": "ships/ss-storstad.html",
-          "url": "/ships/ss-storstad",
-          "launchYear": "1910",
-          "builder": "Armstrong, Whitworth & Co., Low Walker"
-        }
-      ]
-    },
-    {
       "id": "newcastle-on-tyne",
       "name": "Newcastle-on-Tyne",
       "rawValues": [
@@ -3061,22 +3038,22 @@
       ]
     },
     {
-      "id": "newport-news-virginia",
-      "name": "Newport News, Virginia",
+      "id": "newcastle-upon-tyne",
+      "name": "Newcastle-upon-Tyne",
       "rawValues": [
-        "Newport News, Virginia, USA"
+        "Newcastle-upon-Tyne"
       ],
       "builders": [
-        "Newport News Shipbuilding & Dry Dock Co."
+        "Armstrong Whitworth & Co."
       ],
       "shipCount": 1,
       "ships": [
         {
-          "name": "SS Morro Castle",
-          "path": "ships/ss-morro-castle.html",
-          "url": "/ships/ss-morro-castle",
-          "launchYear": "1930",
-          "builder": "Newport News Shipbuilding & Dry Dock Co."
+          "name": "RMS Ascania",
+          "path": "ships/rms-ascania.html",
+          "url": "/ships/rms-ascania",
+          "launchYear": "1923",
+          "builder": "Armstrong Whitworth & Co."
         }
       ]
     },
@@ -3087,7 +3064,7 @@
         "Penhoët"
       ],
       "builders": [
-        "Chantiers & Ateliers de Saint-Nazaire"
+        "Chantiers de Penhoët"
       ],
       "shipCount": 1,
       "ships": [
@@ -3096,7 +3073,47 @@
           "path": "ships/ss-rochambeau.html",
           "url": "/ships/ss-rochambeau",
           "launchYear": "1911",
-          "builder": "Chantiers & Ateliers de Saint-Nazaire"
+          "builder": "Chantiers de Penhoët"
+        }
+      ]
+    },
+    {
+      "id": "port-huron-michigan",
+      "name": "Port Huron, Michigan",
+      "rawValues": [
+        "Port Huron, Michigan"
+      ],
+      "builders": [
+        "Jenks Ship Building Company"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Eastland",
+          "path": "ships/ss-eastland.html",
+          "url": "/ships/ss-eastland",
+          "launchYear": "1903",
+          "builder": "Jenks Ship Building Company"
+        }
+      ]
+    },
+    {
+      "id": "riva-trigoso-italy",
+      "name": "Riva Trigoso, Italy",
+      "rawValues": [
+        "Riva Trigoso, Italy"
+      ],
+      "builders": [
+        "Cantiere Navale di Riva Trigoso"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Principessa Mafalda",
+          "path": "ships/ss-principessa-mafalda.html",
+          "url": "/ships/ss-principessa-mafalda",
+          "launchYear": "1908",
+          "builder": "Cantiere Navale di Riva Trigoso"
         }
       ]
     },
@@ -3177,6 +3194,26 @@
           "url": "/ships/ss-macedonia",
           "launchYear": "1863",
           "builder": "Malcolmson & Co."
+        }
+      ]
+    },
+    {
+      "id": "west-hartlepool-england",
+      "name": "West Hartlepool, England",
+      "rawValues": [
+        "West Hartlepool, England"
+      ],
+      "builders": [
+        "Furness, Withy & Co."
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Poland",
+          "path": "ships/ss-poland.html",
+          "url": "/ships/ss-poland",
+          "launchYear": "1897",
+          "builder": "Furness, Withy & Co."
         }
       ]
     },
@@ -3321,10 +3358,10 @@
       "launchYear": "1924",
       "assignments": [
         {
-          "builder": "Armstrong, Whitworth & Co., High Walker",
-          "builderId": "armstrong-whitworth-and-co-high-walker",
-          "location": "Newcastle upon Tyne",
-          "locationRaw": "Newcastle upon Tyne"
+          "builder": "Armstrong Whitworth & Co.",
+          "builderId": "armstrong-whitworth-and-co",
+          "location": "High Walker, Newcastle upon Tyne",
+          "locationRaw": "High Walker, Newcastle upon Tyne"
         }
       ]
     },
@@ -3531,10 +3568,10 @@
       "launchYear": "1906",
       "assignments": [
         {
-          "builder": "Harland & Wolff, Queen's Island",
-          "builderId": "harland-and-wolff-queen-s-island",
-          "location": "Belfast",
-          "locationRaw": "Belfast"
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Queen's Island, Belfast",
+          "locationRaw": "Queen's Island, Belfast"
         }
       ]
     },
@@ -3685,10 +3722,10 @@
       "launchYear": "1916",
       "assignments": [
         {
-          "builder": "Swan Hunter & Wigham Richardson",
-          "builderId": "swan-hunter-and-wigham-richardson",
-          "location": "Wallsend",
-          "locationRaw": "Wallsend"
+          "builder": "Swan",
+          "builderId": "swan",
+          "location": "Hunter & Wigham Richardson, Wallsend",
+          "locationRaw": "Hunter & Wigham Richardson, Wallsend"
         }
       ]
     },
@@ -3713,10 +3750,10 @@
       "launchYear": "1903",
       "assignments": [
         {
-          "builder": "Harland & Wolff, Queen's Island",
-          "builderId": "harland-and-wolff-queen-s-island",
-          "location": "Belfast",
-          "locationRaw": "Belfast"
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Queen's Island, Belfast",
+          "locationRaw": "Queen's Island, Belfast"
         }
       ]
     },
@@ -3727,8 +3764,8 @@
       "launchYear": "1912",
       "assignments": [
         {
-          "builder": "A.G. Vulcan",
-          "builderId": "a-g-vulcan",
+          "builder": "AG Vulcan",
+          "builderId": "ag-vulcan",
           "location": "Hamburg",
           "locationRaw": "Hamburg"
         }
@@ -3895,10 +3932,10 @@
       "launchYear": "1902",
       "assignments": [
         {
-          "builder": "Harland & Wolff, Queen's Island",
-          "builderId": "harland-and-wolff-queen-s-island",
-          "location": "Belfast",
-          "locationRaw": "Belfast"
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Queen's Island, Belfast",
+          "locationRaw": "Queen's Island, Belfast"
         }
       ]
     },
@@ -3909,10 +3946,10 @@
       "launchYear": "1901",
       "assignments": [
         {
-          "builder": "Harland & Wolff, Queen's Island",
-          "builderId": "harland-and-wolff-queen-s-island",
-          "location": "Belfast",
-          "locationRaw": "Belfast"
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Queen's Island, Belfast",
+          "locationRaw": "Queen's Island, Belfast"
         }
       ]
     },
@@ -4021,10 +4058,10 @@
       "launchYear": "1910",
       "assignments": [
         {
-          "builder": "Swan Hunter & Wigham Richardson",
-          "builderId": "swan-hunter-and-wigham-richardson",
-          "location": "Wallsend",
-          "locationRaw": "Wallsend"
+          "builder": "Swan",
+          "builderId": "swan",
+          "location": "Hunter & Wigham Richardson, Wallsend",
+          "locationRaw": "Hunter & Wigham Richardson, Wallsend"
         }
       ]
     },
@@ -4119,10 +4156,10 @@
       "launchYear": "1893",
       "assignments": [
         {
-          "builder": "Fairfield Shipbuilding & Engineering Co., Govan",
-          "builderId": "fairfield-shipbuilding-and-engineering-co-govan",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "Fairfield Shipbuilding & Engineering Co.",
+          "builderId": "fairfield-shipbuilding-and-engineering-co",
+          "location": "Govan",
+          "locationRaw": "Govan, Scotland"
         }
       ]
     },
@@ -4259,10 +4296,10 @@
       "launchYear": "1936",
       "assignments": [
         {
-          "builder": "Vickers-Armstrongs Ltd., Barrow-in-Furness",
-          "builderId": "vickers-armstrongs-ltd-barrow-in-furness",
-          "location": "England",
-          "locationRaw": "England"
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness, England"
         }
       ]
     },
@@ -4343,10 +4380,10 @@
       "launchYear": "2003",
       "assignments": [
         {
-          "builder": "Chantiers de l’Atlantique, Saint-Nazaire",
-          "builderId": "chantiers-de-l-atlantique-saint-nazaire",
-          "location": "France",
-          "locationRaw": "France"
+          "builder": "Chantiers de l’Atlantique",
+          "builderId": "chantiers-de-l-atlantique",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire, France"
         }
       ]
     },
@@ -4707,10 +4744,10 @@
       "launchYear": "1951",
       "assignments": [
         {
-          "builder": "Ansaldo, Sestri Ponente",
-          "builderId": "ansaldo-sestri-ponente",
-          "location": "Genoa",
-          "locationRaw": "Genoa"
+          "builder": "Ansaldo",
+          "builderId": "ansaldo",
+          "location": "Sestri Ponente, Genoa",
+          "locationRaw": "Sestri Ponente, Genoa"
         }
       ]
     },
@@ -4777,10 +4814,10 @@
       "launchYear": "1903",
       "assignments": [
         {
-          "builder": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
-          "builderId": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "Fairfield Shipbuilding & Engineering Co.",
+          "builderId": "fairfield-shipbuilding-and-engineering-co",
+          "location": "Govan",
+          "locationRaw": "Govan, Scotland"
         }
       ]
     },
@@ -4805,10 +4842,10 @@
       "launchYear": "1908",
       "assignments": [
         {
-          "builder": "Germaniawerft / Friedrich Krupp, Kiel",
-          "builderId": "germaniawerft-friedrich-krupp-kiel",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "Germaniawerft / Friedrich Krupp",
+          "builderId": "germaniawerft-friedrich-krupp",
+          "location": "Kiel, Germany",
+          "locationRaw": "Kiel, Germany"
         }
       ]
     },
@@ -4847,10 +4884,10 @@
       "launchYear": "1925",
       "assignments": [
         {
-          "builder": "AG Weser, Bremen",
-          "builderId": "ag-weser-bremen",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "AG Weser",
+          "builderId": "ag-weser",
+          "location": "Bremen, Germany",
+          "locationRaw": "Bremen, Germany"
         }
       ]
     },
@@ -5001,10 +5038,10 @@
       "launchYear": "1874",
       "assignments": [
         {
-          "builder": "J. & G. Thomson & Co., Clydebank / Glasgow area",
-          "builderId": "j-and-g-thomson-and-co-clydebank-glasgow-area",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "J. & G. Thomson",
+          "builderId": "j-and-g-thomson",
+          "location": "Clydebank / Glasgow area, Scotland",
+          "locationRaw": "Clydebank / Glasgow area, Scotland"
         }
       ]
     },
@@ -5085,10 +5122,10 @@
       "launchYear": "1913",
       "assignments": [
         {
-          "builder": "Fairfield Shipbuilding & Engineering Co., Govan",
-          "builderId": "fairfield-shipbuilding-and-engineering-co-govan",
-          "location": "Glasgow",
-          "locationRaw": "Glasgow"
+          "builder": "Fairfield Shipbuilding & Engineering Co.",
+          "builderId": "fairfield-shipbuilding-and-engineering-co",
+          "location": "Govan",
+          "locationRaw": "Govan, Glasgow"
         }
       ]
     },
@@ -5295,10 +5332,10 @@
       "launchYear": "1907",
       "assignments": [
         {
-          "builder": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire",
-          "builderId": "chantiers-and-ateliers-de-saint-nazaire-penhoet-saint-nazaire",
-          "location": "France",
-          "locationRaw": "France"
+          "builder": "Chantiers & Ateliers de Saint-Nazaire / Penhoët",
+          "builderId": "chantiers-and-ateliers-de-saint-nazaire-penhoet",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire, France"
         }
       ]
     },
@@ -5337,10 +5374,10 @@
       "launchYear": "1888",
       "assignments": [
         {
-          "builder": "J. & G. Thomson, Clydebank",
-          "builderId": "j-and-g-thomson-clydebank",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "J. & G. Thomson",
+          "builderId": "j-and-g-thomson",
+          "location": "Clydebank",
+          "locationRaw": "Clydebank, Scotland"
         }
       ]
     },
@@ -5435,14 +5472,8 @@
       "launchYear": "1950",
       "assignments": [
         {
-          "builder": "Bethlehem Steel Corporation",
-          "builderId": "bethlehem-steel-corporation",
-          "location": "Fore River Shipyard",
-          "locationRaw": "Fore River Shipyard"
-        },
-        {
-          "builder": "Bethlehem Steel Corporation",
-          "builderId": "bethlehem-steel-corporation",
+          "builder": "Bethlehem Steel Corporation, Fore River Shipyard",
+          "builderId": "bethlehem-steel-corporation-fore-river-shipyard",
           "location": "Quincy, Massachusetts",
           "locationRaw": "Quincy, Massachusetts"
         }
@@ -5637,8 +5668,8 @@
       "launchYear": "1900",
       "assignments": [
         {
-          "builder": "A.G. Vulcan",
-          "builderId": "a-g-vulcan",
+          "builder": "AG Vulcan",
+          "builderId": "ag-vulcan",
           "location": "Stettin",
           "locationRaw": "Stettin"
         }
@@ -5665,10 +5696,10 @@
       "launchYear": "1904",
       "assignments": [
         {
-          "builder": "Alexander Stephen & Sons, Linthouse",
-          "builderId": "alexander-stephen-and-sons-linthouse",
-          "location": "Glasgow",
-          "locationRaw": "Glasgow"
+          "builder": "Alexander Stephen & Sons",
+          "builderId": "alexander-stephen-and-sons",
+          "location": "Linthouse, Glasgow",
+          "locationRaw": "Linthouse, Glasgow"
         }
       ]
     },
@@ -5735,10 +5766,10 @@
       "launchYear": "1916",
       "assignments": [
         {
-          "builder": "Ansaldo, Sestri Ponente",
-          "builderId": "ansaldo-sestri-ponente",
-          "location": "Genoa",
-          "locationRaw": "Genoa"
+          "builder": "Ansaldo",
+          "builderId": "ansaldo",
+          "location": "Sestri Ponente, Genoa",
+          "locationRaw": "Sestri Ponente, Genoa"
         }
       ]
     },
@@ -5749,10 +5780,10 @@
       "launchYear": "1903",
       "assignments": [
         {
-          "builder": "Jenks Ship Building Company, Port Huron",
-          "builderId": "jenks-ship-building-company-port-huron",
-          "location": "Michigan",
-          "locationRaw": "Michigan"
+          "builder": "Jenks Ship Building Company",
+          "builderId": "jenks-ship-building-company",
+          "location": "Port Huron, Michigan",
+          "locationRaw": "Port Huron, Michigan"
         }
       ]
     },
@@ -5763,10 +5794,10 @@
       "launchYear": "1913",
       "assignments": [
         {
-          "builder": "William Beardmore & Company, Dalmuir",
-          "builderId": "william-beardmore-and-company-dalmuir",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "William Beardmore & Co.",
+          "builderId": "william-beardmore-and-co",
+          "location": "Dalmuir, Scotland",
+          "locationRaw": "Dalmuir, Scotland"
         }
       ]
     },
@@ -5861,10 +5892,10 @@
       "launchYear": "1896",
       "assignments": [
         {
-          "builder": "AG Vulcan, Stettin",
-          "builderId": "ag-vulcan-stettin",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "AG Vulcan",
+          "builderId": "ag-vulcan",
+          "location": "Stettin",
+          "locationRaw": "Stettin, Germany"
         }
       ]
     },
@@ -5931,10 +5962,10 @@
       "launchYear": "1935",
       "assignments": [
         {
-          "builder": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
-          "builderId": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
-          "location": "Bremen",
-          "locationRaw": "Bremen"
+          "builder": "Deutsche Schiff- und Maschinenbau AG",
+          "builderId": "deutsche-schiff-und-maschinenbau-ag",
+          "location": "Werk AG Weser, Bremen",
+          "locationRaw": "Werk AG Weser, Bremen"
         }
       ]
     },
@@ -5959,10 +5990,10 @@
       "launchYear": "1898",
       "assignments": [
         {
-          "builder": "Blohm & Voss, Hamburg",
-          "builderId": "blohm-and-voss-hamburg",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "Blohm & Voss",
+          "builderId": "blohm-and-voss",
+          "location": "Hamburg",
+          "locationRaw": "Hamburg, Germany"
         }
       ]
     },
@@ -6085,8 +6116,8 @@
       "launchYear": "1912",
       "assignments": [
         {
-          "builder": "A.G. Vulcan",
-          "builderId": "a-g-vulcan",
+          "builder": "AG Vulcan",
+          "builderId": "ag-vulcan",
           "location": "Hamburg",
           "locationRaw": "Hamburg"
         }
@@ -6099,10 +6130,10 @@
       "launchYear": "1950",
       "assignments": [
         {
-          "builder": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy",
-          "builderId": "bethlehem-steel-corporation-fore-river-shipyard-quincy",
-          "location": "Massachusetts",
-          "locationRaw": "Massachusetts"
+          "builder": "Bethlehem Steel Corporation, Fore River Shipyard",
+          "builderId": "bethlehem-steel-corporation-fore-river-shipyard",
+          "location": "Quincy, Massachusetts",
+          "locationRaw": "Quincy, Massachusetts"
         }
       ]
     },
@@ -6197,10 +6228,10 @@
       "launchYear": "1896",
       "assignments": [
         {
-          "builder": "AG Vulcan, Stettin",
-          "builderId": "ag-vulcan-stettin",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "AG Vulcan",
+          "builderId": "ag-vulcan",
+          "location": "Stettin",
+          "locationRaw": "Stettin, Germany"
         }
       ]
     },
@@ -6224,12 +6255,6 @@
       "url": "/ships/ss-kronprinzessin-cecilie",
       "launchYear": "1906",
       "assignments": [
-        {
-          "builder": "AG Vulcan",
-          "builderId": "ag-vulcan",
-          "location": "Stettin",
-          "locationRaw": "Stettin"
-        },
         {
           "builder": "AG Vulcan",
           "builderId": "ag-vulcan",
@@ -6385,10 +6410,10 @@
       "launchYear": "1924",
       "assignments": [
         {
-          "builder": "Fairfield Shipbuilding & Engineering Company, Govan",
-          "builderId": "fairfield-shipbuilding-and-engineering-company-govan",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "Fairfield Shipbuilding & Engineering Co.",
+          "builderId": "fairfield-shipbuilding-and-engineering-co",
+          "location": "Govan",
+          "locationRaw": "Govan, Scotland"
         }
       ]
     },
@@ -6427,14 +6452,8 @@
       "launchYear": "1932",
       "assignments": [
         {
-          "builder": "Bethlehem Shipbuilding Corp.",
-          "builderId": "bethlehem-shipbuilding-corp",
-          "location": "Fore River Shipyard",
-          "locationRaw": "Fore River Shipyard"
-        },
-        {
-          "builder": "Bethlehem Shipbuilding Corp.",
-          "builderId": "bethlehem-shipbuilding-corp",
+          "builder": "Bethlehem Shipbuilding Corp., Fore River Shipyard",
+          "builderId": "bethlehem-shipbuilding-corp-fore-river-shipyard",
           "location": "Quincy, Massachusetts",
           "locationRaw": "Quincy, Massachusetts"
         }
@@ -6503,10 +6522,10 @@
       "launchYear": "1903",
       "assignments": [
         {
-          "builder": "New York Shipbuilding Company, Camden",
-          "builderId": "new-york-shipbuilding-company-camden",
-          "location": "New Jersey",
-          "locationRaw": "New Jersey"
+          "builder": "New York Shipbuilding Company",
+          "builderId": "new-york-shipbuilding-company",
+          "location": "Camden, New Jersey",
+          "locationRaw": "Camden, New Jersey"
         }
       ]
     },
@@ -6517,10 +6536,10 @@
       "launchYear": "1931",
       "assignments": [
         {
-          "builder": "New York Shipbuilding Corporation, Camden",
-          "builderId": "new-york-shipbuilding-corporation-camden",
-          "location": "New Jersey",
-          "locationRaw": "New Jersey"
+          "builder": "New York Shipbuilding Company",
+          "builderId": "new-york-shipbuilding-company",
+          "location": "Camden, New Jersey",
+          "locationRaw": "Camden, New Jersey"
         }
       ]
     },
@@ -6559,10 +6578,10 @@
       "launchYear": "1931",
       "assignments": [
         {
-          "builder": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy",
-          "builderId": "fore-river-shipyard-bethlehem-shipbuilding-corporation-quincy",
-          "location": "Massachusetts",
-          "locationRaw": "Massachusetts"
+          "builder": "Fore River Shipyard, Bethlehem Shipbuilding Corporation",
+          "builderId": "fore-river-shipyard-bethlehem-shipbuilding-corporation",
+          "location": "Quincy, Massachusetts",
+          "locationRaw": "Quincy, Massachusetts"
         }
       ]
     },
@@ -6587,10 +6606,10 @@
       "launchYear": "1897",
       "assignments": [
         {
-          "builder": "Alexander Stephen & Sons, Linthouse",
-          "builderId": "alexander-stephen-and-sons-linthouse",
-          "location": "Glasgow",
-          "locationRaw": "Glasgow"
+          "builder": "Alexander Stephen & Sons",
+          "builderId": "alexander-stephen-and-sons",
+          "location": "Linthouse, Glasgow",
+          "locationRaw": "Linthouse, Glasgow"
         }
       ]
     },
@@ -6629,10 +6648,10 @@
       "launchYear": "1962",
       "assignments": [
         {
-          "builder": "Ansaldo, Sestri Ponente",
-          "builderId": "ansaldo-sestri-ponente",
-          "location": "Genoa",
-          "locationRaw": "Genoa"
+          "builder": "Ansaldo",
+          "builderId": "ansaldo",
+          "location": "Sestri Ponente, Genoa",
+          "locationRaw": "Sestri Ponente, Genoa"
         }
       ]
     },
@@ -6643,10 +6662,10 @@
       "launchYear": "1929",
       "assignments": [
         {
-          "builder": "Blohm & Voss, Hamburg",
-          "builderId": "blohm-and-voss-hamburg",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "Blohm & Voss",
+          "builderId": "blohm-and-voss",
+          "location": "Hamburg",
+          "locationRaw": "Hamburg, Germany"
         }
       ]
     },
@@ -6657,10 +6676,10 @@
       "launchYear": "1903",
       "assignments": [
         {
-          "builder": "Eastern Shipbuilding Company, New London / Groton",
-          "builderId": "eastern-shipbuilding-company-new-london-groton",
-          "location": "Connecticut",
-          "locationRaw": "Connecticut"
+          "builder": "Eastern Shipbuilding Company",
+          "builderId": "eastern-shipbuilding-company",
+          "location": "New London / Groton, Connecticut",
+          "locationRaw": "New London / Groton, Connecticut"
         }
       ]
     },
@@ -6699,10 +6718,10 @@
       "launchYear": "1901",
       "assignments": [
         {
-          "builder": "Blohm & Voss, Hamburg",
-          "builderId": "blohm-and-voss-hamburg",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "Blohm & Voss",
+          "builderId": "blohm-and-voss",
+          "location": "Hamburg",
+          "locationRaw": "Hamburg, Germany"
         }
       ]
     },
@@ -6727,10 +6746,10 @@
       "launchYear": "1903",
       "assignments": [
         {
-          "builder": "New York Shipbuilding Company, Camden",
-          "builderId": "new-york-shipbuilding-company-camden",
-          "location": "New Jersey",
-          "locationRaw": "New Jersey"
+          "builder": "New York Shipbuilding Company",
+          "builderId": "new-york-shipbuilding-company",
+          "location": "Camden, New Jersey",
+          "locationRaw": "Camden, New Jersey"
         }
       ]
     },
@@ -6769,10 +6788,10 @@
       "launchYear": "1931",
       "assignments": [
         {
-          "builder": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy",
-          "builderId": "fore-river-shipyard-bethlehem-shipbuilding-corporation-quincy",
-          "location": "Massachusetts",
-          "locationRaw": "Massachusetts"
+          "builder": "Fore River Shipyard, Bethlehem Shipbuilding Corporation",
+          "builderId": "fore-river-shipyard-bethlehem-shipbuilding-corporation",
+          "location": "Quincy, Massachusetts",
+          "locationRaw": "Quincy, Massachusetts"
         }
       ]
     },
@@ -6895,10 +6914,10 @@
       "launchYear": "1911",
       "assignments": [
         {
-          "builder": "Harland & Wolff Ltd., Queen’s Island",
-          "builderId": "harland-and-wolff-ltd-queen-s-island",
-          "location": "Belfast",
-          "locationRaw": "Belfast"
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Queen’s Island, Belfast",
+          "locationRaw": "Queen’s Island, Belfast"
         }
       ]
     },
@@ -6923,10 +6942,10 @@
       "launchYear": "1881",
       "assignments": [
         {
-          "builder": "Alexander Stephen & Sons, Linthouse",
-          "builderId": "alexander-stephen-and-sons-linthouse",
-          "location": "Glasgow",
-          "locationRaw": "Glasgow"
+          "builder": "Alexander Stephen & Sons",
+          "builderId": "alexander-stephen-and-sons",
+          "location": "Linthouse, Glasgow",
+          "locationRaw": "Linthouse, Glasgow"
         }
       ]
     },
@@ -6993,8 +7012,8 @@
       "launchYear": "1959",
       "assignments": [
         {
-          "builder": "Vickers-Armstrongs (Shipbuilders) Ltd.",
-          "builderId": "vickers-armstrongs-shipbuilders-ltd",
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
           "location": "Barrow-in-Furness",
           "locationRaw": "Barrow-in-Furness"
         }
@@ -7063,8 +7082,8 @@
       "launchYear": "1916",
       "assignments": [
         {
-          "builder": "Chantiers & Ateliers de Penhoët",
-          "builderId": "chantiers-and-ateliers-de-penhoet",
+          "builder": "Chantiers de Penhoët",
+          "builderId": "chantiers-de-penhoet",
           "location": "Saint-Nazaire",
           "locationRaw": "Saint-Nazaire"
         }
@@ -7091,10 +7110,10 @@
       "launchYear": "1899",
       "assignments": [
         {
-          "builder": "AG Vulcan, Stettin",
-          "builderId": "ag-vulcan-stettin",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "AG Vulcan",
+          "builderId": "ag-vulcan",
+          "location": "Stettin",
+          "locationRaw": "Stettin, Germany"
         }
       ]
     },
@@ -7119,10 +7138,10 @@
       "launchYear": "1929",
       "assignments": [
         {
-          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News",
-          "builderId": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
-          "location": "Virginia",
-          "locationRaw": "Virginia"
+          "builder": "Newport News Shipbuilding & Dry Dock Co.",
+          "builderId": "newport-news-shipbuilding-and-dry-dock-co",
+          "location": "Newport News, Virginia",
+          "locationRaw": "Newport News, Virginia"
         }
       ]
     },
@@ -7147,10 +7166,10 @@
       "launchYear": "1897",
       "assignments": [
         {
-          "builder": "Furness, Withy & Co., West Hartlepool",
-          "builderId": "furness-withy-and-co-west-hartlepool",
-          "location": "England",
-          "locationRaw": "England"
+          "builder": "Furness, Withy & Co.",
+          "builderId": "furness-withy-and-co",
+          "location": "West Hartlepool, England",
+          "locationRaw": "West Hartlepool, England"
         }
       ]
     },
@@ -7161,10 +7180,10 @@
       "launchYear": "1931",
       "assignments": [
         {
-          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News",
-          "builderId": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
-          "location": "Virginia",
-          "locationRaw": "Virginia"
+          "builder": "Newport News Shipbuilding & Dry Dock Co.",
+          "builderId": "newport-news-shipbuilding-and-dry-dock-co",
+          "location": "Newport News, Virginia",
+          "locationRaw": "Newport News, Virginia"
         }
       ]
     },
@@ -7203,10 +7222,10 @@
       "launchYear": "1897",
       "assignments": [
         {
-          "builder": "Blohm & Voss, Hamburg",
-          "builderId": "blohm-and-voss-hamburg",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "Blohm & Voss",
+          "builderId": "blohm-and-voss",
+          "location": "Hamburg",
+          "locationRaw": "Hamburg, Germany"
         }
       ]
     },
@@ -7217,10 +7236,10 @@
       "launchYear": "1908",
       "assignments": [
         {
-          "builder": "Cantiere Navale di Riva Trigoso, Riva Trigoso",
-          "builderId": "cantiere-navale-di-riva-trigoso-riva-trigoso",
-          "location": "Italy",
-          "locationRaw": "Italy"
+          "builder": "Cantiere Navale di Riva Trigoso",
+          "builderId": "cantiere-navale-di-riva-trigoso",
+          "location": "Riva Trigoso, Italy",
+          "locationRaw": "Riva Trigoso, Italy"
         }
       ]
     },
@@ -7231,10 +7250,10 @@
       "launchYear": "1907",
       "assignments": [
         {
-          "builder": "Joh. C. Tecklenborg, Geestemünde",
-          "builderId": "joh-c-tecklenborg-geestemunde",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "Joh. C. Tecklenborg",
+          "builderId": "joh-c-tecklenborg",
+          "location": "Geestemünde, Germany",
+          "locationRaw": "Geestemünde, Germany"
         }
       ]
     },
@@ -7245,10 +7264,10 @@
       "launchYear": "1900",
       "assignments": [
         {
-          "builder": "AG Vulcan, Stettin",
-          "builderId": "ag-vulcan-stettin",
-          "location": "Germany",
-          "locationRaw": "Germany"
+          "builder": "AG Vulcan",
+          "builderId": "ag-vulcan",
+          "location": "Stettin",
+          "locationRaw": "Stettin, Germany"
         }
       ]
     },
@@ -7343,10 +7362,10 @@
       "launchYear": "1931",
       "assignments": [
         {
-          "builder": "Ansaldo, Sestri Ponente",
-          "builderId": "ansaldo-sestri-ponente",
-          "location": "Genoa",
-          "locationRaw": "Genoa"
+          "builder": "Ansaldo",
+          "builderId": "ansaldo",
+          "location": "Sestri Ponente, Genoa",
+          "locationRaw": "Sestri Ponente, Genoa"
         }
       ]
     },
@@ -7371,8 +7390,8 @@
       "launchYear": "1911",
       "assignments": [
         {
-          "builder": "Chantiers & Ateliers de Saint-Nazaire",
-          "builderId": "chantiers-and-ateliers-de-saint-nazaire",
+          "builder": "Chantiers de Penhoët",
+          "builderId": "chantiers-de-penhoet",
           "location": "Penhoët",
           "locationRaw": "Penhoët"
         }
@@ -7385,10 +7404,10 @@
       "launchYear": "1926",
       "assignments": [
         {
-          "builder": "Ansaldo, Sestri Ponente",
-          "builderId": "ansaldo-sestri-ponente",
-          "location": "Genoa",
-          "locationRaw": "Genoa"
+          "builder": "Ansaldo",
+          "builderId": "ansaldo",
+          "location": "Sestri Ponente, Genoa",
+          "locationRaw": "Sestri Ponente, Genoa"
         }
       ]
     },
@@ -7469,10 +7488,10 @@
       "launchYear": "1934",
       "assignments": [
         {
-          "builder": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
-          "builderId": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
-          "location": "Bremen",
-          "locationRaw": "Bremen"
+          "builder": "Deutsche Schiff- und Maschinenbau AG",
+          "builderId": "deutsche-schiff-und-maschinenbau-ag",
+          "location": "Werk AG Weser, Bremen",
+          "locationRaw": "Werk AG Weser, Bremen"
         }
       ]
     },
@@ -7483,10 +7502,10 @@
       "launchYear": "1837",
       "assignments": [
         {
-          "builder": "Robert Menzies & Sons, Leith",
-          "builderId": "robert-menzies-and-sons-leith",
-          "location": "Scotland",
-          "locationRaw": "Scotland"
+          "builder": "Robert Menzies & Sons",
+          "builderId": "robert-menzies-and-sons",
+          "location": "Leith, Scotland",
+          "locationRaw": "Leith, Scotland"
         }
       ]
     },
@@ -7525,10 +7544,10 @@
       "launchYear": "1910",
       "assignments": [
         {
-          "builder": "Armstrong, Whitworth & Co., Low Walker",
-          "builderId": "armstrong-whitworth-and-co-low-walker",
-          "location": "Newcastle",
-          "locationRaw": "Newcastle"
+          "builder": "Armstrong Whitworth & Co.",
+          "builderId": "armstrong-whitworth-and-co",
+          "location": "Low Walker, Newcastle",
+          "locationRaw": "Low Walker, Newcastle"
         }
       ]
     },
@@ -7665,10 +7684,10 @@
       "launchYear": "1928",
       "assignments": [
         {
-          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News",
-          "builderId": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
-          "location": "Virginia",
-          "locationRaw": "Virginia"
+          "builder": "Newport News Shipbuilding & Dry Dock Co.",
+          "builderId": "newport-news-shipbuilding-and-dry-dock-co",
+          "location": "Newport News, Virginia",
+          "locationRaw": "Newport News, Virginia"
         }
       ]
     },

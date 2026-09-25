@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-25T05:18:12.709Z",
+  "generatedAt": "2026-09-25T07:47:53.498Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 339,
     "shipGuides": 327,
-    "canonicalBuilders": 104,
+    "canonicalBuilders": 80,
     "guidesWithBuilder": 327,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 10,
     "guidesMissingLaunch": 2,
-    "builderVariantGroups": 37,
+    "builderVariantGroups": 32,
     "suspiciousLaunchDatesWithoutYear": 1
   },
   "missing": {
@@ -32,14 +32,16 @@
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 74,
+      "shipCount": 79,
       "firstLaunchYear": 1870,
       "lastLaunchYear": 1960,
       "locations": [
         "Belfast",
         "Belfast, Ireland",
         "Belfast, Northern Ireland",
-        "Govan"
+        "Govan",
+        "Queen's Island, Belfast",
+        "Queen’s Island, Belfast"
       ],
       "operators": [
         "Atlantic Transport Line",
@@ -76,11 +78,12 @@
     {
       "id": "blohm-and-voss",
       "name": "Blohm & Voss",
-      "shipCount": 17,
+      "shipCount": 21,
       "firstLaunchYear": 1896,
-      "lastLaunchYear": 1928,
+      "lastLaunchYear": 1929,
       "locations": [
-        "Hamburg"
+        "Hamburg",
+        "Hamburg, Germany"
       ],
       "operators": [
         "Compagnie Générale Transatlantique (French Line)",
@@ -90,35 +93,14 @@
         "Hamburg Süd",
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd / Hamburg South America Line)",
         "Hamburg-America Line (HAPAG)",
-        "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
-      ]
-    },
-    {
-      "id": "vickers-armstrongs",
-      "name": "Vickers-Armstrongs",
-      "shipCount": 14,
-      "firstLaunchYear": 1924,
-      "lastLaunchYear": 1953,
-      "locations": [
-        "Barrow-in-Furness",
-        "High Walker"
-      ],
-      "operators": [
-        "Furness Bermuda Line",
-        "Furness, Withy & Co. / Furness Bermuda Line",
-        "Orient Steam Navigation Company (Orient Line)",
-        "Orient Steam Navigation Company; later P&O-Orient / P&O",
-        "Orient Steam Navigation Company; later P&O-Orient and P&O",
-        "P&O Steam Navigation Company; later P&O-Orient Lines",
-        "P&O; later P&O-Orient and P&O",
-        "Peninsular & Oriental Steam Navigation Company"
+        "Hamburg-Amerika Line (HAPAG)"
       ]
     },
     {
       "id": "ag-vulcan",
       "name": "AG Vulcan",
-      "shipCount": 9,
-      "firstLaunchYear": 1897,
+      "shipCount": 16,
+      "firstLaunchYear": 1896,
       "lastLaunchYear": 1913,
       "locations": [
         "Hamburg",
@@ -127,93 +109,106 @@
         "then Germany; today Szczecin, Poland"
       ],
       "operators": [
+        "Hamburg America Line",
         "Hamburg America Line (HAPAG)",
         "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)",
         "Hamburg-America Line",
+        "Hamburg-Amerika Line (HAPAG)",
         "Norddeutscher Lloyd",
         "Norddeutscher Lloyd (North German Lloyd)",
         "Norddeutscher Lloyd / North German Lloyd"
       ]
     },
     {
+      "id": "vickers-armstrongs",
+      "name": "Vickers-Armstrongs",
+      "shipCount": 16,
+      "firstLaunchYear": 1924,
+      "lastLaunchYear": 1959,
+      "locations": [
+        "Barrow-in-Furness",
+        "Barrow-in-Furness, England",
+        "High Walker"
+      ],
+      "operators": [
+        "Furness Bermuda Line",
+        "Furness, Withy & Co. / Furness Bermuda Line",
+        "Orient Steam Navigation Company (Orient Line)",
+        "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
+        "Orient Steam Navigation Company; later P&O-Orient / P&O",
+        "Orient Steam Navigation Company; later P&O-Orient and P&O",
+        "P&O Steam Navigation Company; later P&O-Orient Lines",
+        "P&O; later P&O-Orient and P&O"
+      ]
+    },
+    {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
-      "shipCount": 9,
+      "shipCount": 13,
       "firstLaunchYear": 1892,
       "lastLaunchYear": 1929,
       "locations": [
-        "Govan"
+        "Govan",
+        "Govan, Glasgow",
+        "Govan, Scotland"
       ],
       "operators": [
+        "Allan Line",
         "Anchor Line",
         "Anchor Line (Henderson Bros.)",
+        "Anchor-Donaldson Line; later Donaldson Atlantic Line and Donaldson Brothers & Black management in postwar service",
         "Canadian Pacific",
         "Canadian Pacific Railway / Canadian Pacific Steamship Company",
         "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
-        "Canadian Pacific Steamships",
-        "Canadian Pacific Steamships / Canadian Pacific Line",
-        "Cunard Line"
+        "Canadian Pacific Steamships"
       ]
     },
     {
-      "id": "swan-hunter-and-wigham-richardson",
-      "name": "Swan Hunter & Wigham Richardson",
-      "shipCount": 6,
-      "firstLaunchYear": 1902,
-      "lastLaunchYear": 1938,
-      "locations": [
-        "Newcastle-on-Tyne",
-        "Wallsend",
-        "Wallsend, England"
-      ],
-      "operators": [
-        "Cunard Line",
-        "Cunard Line; British Government hire throughout active career",
-        "Navigazione Generale Italiana",
-        "Shaw, Savill & Albion Line"
-      ]
-    },
-    {
-      "id": "william-beardmore-and-co",
-      "name": "William Beardmore & Co.",
-      "shipCount": 6,
-      "firstLaunchYear": 1919,
-      "lastLaunchYear": 1927,
-      "locations": [
-        "Dalmuir",
-        "Dalmuir, River Clyde",
-        "Dalmuir, Scotland"
-      ],
-      "operators": [
-        "Anchor Line (Cunard-associated)",
-        "Anchor Line (Henderson Bros / Anchor Line (1935) Ltd often cited)",
-        "Canadian Pacific Steamships",
-        "Lloyd Sabaudo"
-      ]
-    },
-    {
-      "id": "ansaldo-sestri-ponente",
-      "name": "Ansaldo, Sestri Ponente",
-      "shipCount": 5,
+      "id": "ansaldo",
+      "name": "Ansaldo",
+      "shipCount": 8,
       "firstLaunchYear": 1916,
       "lastLaunchYear": 1962,
       "locations": [
-        "Genoa"
+        "Genoa",
+        "Sestri Ponente, Genoa"
       ],
       "operators": [
         "Italia Flotte Riunite / Italian Line",
         "Italia Società di Navigazione / Italian Line",
         "Italia di Navigazione / Italian Line",
+        "Italian Line (Italia di Navigazione)",
         "Navigazione Generale Italiana"
+      ]
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co",
+      "name": "Newport News Shipbuilding & Dry Dock Co.",
+      "shipCount": 8,
+      "firstLaunchYear": 1927,
+      "lastLaunchYear": 1951,
+      "locations": [
+        "Newport News, Virginia",
+        "Newport News, Virginia, USA",
+        "Virginia",
+        "Virginia, USA"
+      ],
+      "operators": [
+        "Dollar Steamship Line",
+        "Dollar Steamship Lines",
+        "Panama Pacific Line",
+        "United States Lines",
+        "Ward Line / AGWI interests"
       ]
     },
     {
       "id": "chantiers-de-penhoet",
       "name": "Chantiers de Penhoët",
-      "shipCount": 5,
+      "shipCount": 7,
       "firstLaunchYear": 1905,
       "lastLaunchYear": 1938,
       "locations": [
+        "Penhoët",
         "Saint-Nazaire",
         "Saint-Nazaire, France"
       ],
@@ -225,35 +220,63 @@
       ]
     },
     {
-      "id": "newport-news-shipbuilding-and-dry-dock-co",
-      "name": "Newport News Shipbuilding & Dry Dock Co.",
-      "shipCount": 5,
-      "firstLaunchYear": 1927,
-      "lastLaunchYear": 1951,
+      "id": "william-beardmore-and-co",
+      "name": "William Beardmore & Co.",
+      "shipCount": 7,
+      "firstLaunchYear": 1913,
+      "lastLaunchYear": 1927,
       "locations": [
-        "Newport News, Virginia, USA",
-        "Virginia",
-        "Virginia, USA"
+        "Dalmuir",
+        "Dalmuir, River Clyde",
+        "Dalmuir, Scotland"
       ],
       "operators": [
-        "Dollar Steamship Line",
-        "Panama Pacific Line",
-        "United States Lines",
-        "Ward Line / AGWI interests"
+        "Allan Line",
+        "Anchor Line (Cunard-associated)",
+        "Anchor Line (Henderson Bros / Anchor Line (1935) Ltd often cited)",
+        "Canadian Pacific Steamships",
+        "Lloyd Sabaudo"
       ]
     },
     {
-      "id": "ag-vulcan-stettin",
-      "name": "AG Vulcan, Stettin",
-      "shipCount": 4,
-      "firstLaunchYear": 1896,
-      "lastLaunchYear": 1900,
+      "id": "alexander-stephen-and-sons",
+      "name": "Alexander Stephen & Sons",
+      "shipCount": 6,
+      "firstLaunchYear": 1881,
+      "lastLaunchYear": 1928,
       "locations": [
-        "Germany"
+        "Glasgow",
+        "Govan",
+        "Linthouse, Glasgow",
+        "Linthouse, Glasgow, Scotland"
       ],
       "operators": [
-        "Hamburg-Amerika Line (HAPAG)",
-        "Norddeutscher Lloyd (North German Lloyd)"
+        "Anchor Line (Glasgow)",
+        "Atlantic Transport Line",
+        "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
+        "P&O Steam Navigation Company",
+        "Peninsular & Oriental Steam Navigation Company (P&O)",
+        "Swedish American Line"
+      ]
+    },
+    {
+      "id": "j-and-g-thomson",
+      "name": "J. & G. Thomson",
+      "shipCount": 6,
+      "firstLaunchYear": 1865,
+      "lastLaunchYear": 1888,
+      "locations": [
+        "Clydebank",
+        "Clydebank / Glasgow area, Scotland",
+        "Clydebank, Scotland",
+        "Clydebank/Glasgow, Scotland",
+        "Glasgow"
+      ],
+      "operators": [
+        "Cunard Line",
+        "Cunard Line / British & North American Royal Mail Steam Packet Company",
+        "Inman & International Steamship Co.",
+        "Inman Line (later controlled/merged into International Navigation / American Line)"
       ]
     }
   ],
@@ -262,12 +285,14 @@
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
       "names": [
-        "Harland & Wolff"
+        "Harland & Wolff",
+        "Harland & Wolff Ltd."
       ],
       "rawValues": [
         "Harland & Wolff (Belfast)",
         "Harland & Wolff (Belfast, Ireland)",
         "Harland & Wolff (Belfast, Northern Ireland)",
+        "Harland & Wolff Ltd., Queen’s Island, Belfast",
         "Harland & Wolff, Belfast",
         "Harland & Wolff, Belfast · Yard No. 315",
         "Harland & Wolff, Belfast · Yard No. 318",
@@ -318,9 +343,13 @@
         "Harland & Wolff, Belfast · yard no. 942",
         "Harland & Wolff, Govan · yard no. 454",
         "Harland & Wolff, Govan · yard no. 649",
-        "Harland & Wolff, Govan · yard no. 650"
+        "Harland & Wolff, Govan · yard no. 650",
+        "Harland & Wolff, Queen's Island, Belfast · yard no. 335",
+        "Harland & Wolff, Queen's Island, Belfast · yard no. 337",
+        "Harland & Wolff, Queen's Island, Belfast · yard no. 352",
+        "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
       ],
-      "shipCount": 74
+      "shipCount": 79
     },
     {
       "id": "john-brown-and-company",
@@ -373,9 +402,33 @@
         "Blohm & Voss, Hamburg · yard no. 473",
         "Blohm & Voss, Hamburg · yard no. 476",
         "Blohm & Voss, Hamburg · yard no. 477",
-        "Blohm & Voss, Hamburg · yard no. 479"
+        "Blohm & Voss, Hamburg · yard no. 479",
+        "Blohm & Voss, Hamburg, Germany"
       ],
-      "shipCount": 17
+      "shipCount": 21
+    },
+    {
+      "id": "ag-vulcan",
+      "name": "AG Vulcan",
+      "names": [
+        "A.G. Vulcan",
+        "AG Vulcan",
+        "AG Vulcan, Stettin",
+        "Vulcan AG"
+      ],
+      "rawValues": [
+        "A.G. Vulcan, Hamburg",
+        "A.G. Vulcan, Stettin",
+        "AG Vulcan (Stettin, Germany)",
+        "AG Vulcan, Hamburg · yard no. 334",
+        "AG Vulcan, Stettin",
+        "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)",
+        "AG Vulcan, Stettin · yard no. 286",
+        "AG Vulcan, Stettin, Germany",
+        "AG Vulcan, Stettin, Germany · yard no. 232",
+        "Vulcan AG, Stettin"
+      ],
+      "shipCount": 16
     },
     {
       "id": "vickers-armstrongs",
@@ -384,6 +437,7 @@
         "Vickers-Armstrong",
         "Vickers-Armstrong Ltd.",
         "Vickers-Armstrongs",
+        "Vickers-Armstrongs (Shipbuilders) Ltd.",
         "Vickers-Armstrongs Ltd",
         "Vickers-Armstrongs Ltd."
       ],
@@ -394,39 +448,27 @@
         "Vickers-Armstrong, Barrow-in-Furness · yard no. 663",
         "Vickers-Armstrong, Barrow-in-Furness · yard no. 664",
         "Vickers-Armstrong, Barrow-in-Furness · yard no. 681",
+        "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061",
         "Vickers-Armstrongs Ltd, High Walker · yard no. 1",
         "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 1021",
         "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 950",
         "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 951",
         "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 964",
+        "Vickers-Armstrongs Ltd., Barrow-in-Furness, England",
         "Vickers-Armstrongs, Barrow-in-Furness · yard no. 976"
       ],
-      "shipCount": 14
-    },
-    {
-      "id": "ag-vulcan",
-      "name": "AG Vulcan",
-      "names": [
-        "AG Vulcan",
-        "Vulcan AG"
-      ],
-      "rawValues": [
-        "AG Vulcan (Stettin, Germany)",
-        "AG Vulcan, Hamburg · yard no. 334",
-        "AG Vulcan, Stettin",
-        "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)",
-        "AG Vulcan, Stettin · yard no. 286",
-        "Vulcan AG, Stettin"
-      ],
-      "shipCount": 9
+      "shipCount": 16
     },
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
       "names": [
-        "Fairfield Shipbuilding & Engineering Co."
+        "Fairfield Shipbuilding & Engineering Co.",
+        "Fairfield Shipbuilding & Engineering Co. Ltd.",
+        "Fairfield Shipbuilding & Engineering Company"
       ],
       "rawValues": [
+        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424",
         "Fairfield Shipbuilding & Engineering Co., Govan",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 418",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 443",
@@ -434,28 +476,66 @@
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 528",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 529",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 595",
-        "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 634"
+        "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 634",
+        "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow",
+        "Fairfield Shipbuilding & Engineering Co., Govan, Scotland",
+        "Fairfield Shipbuilding & Engineering Company, Govan, Scotland"
       ],
-      "shipCount": 9
+      "shipCount": 13
     },
     {
-      "id": "swan-hunter-and-wigham-richardson",
-      "name": "Swan Hunter & Wigham Richardson",
+      "id": "ansaldo",
+      "name": "Ansaldo",
       "names": [
-        "Swan Hunter & Wigham Richardson",
-        "Swan Hunter & Wigham Richardson Ltd.",
-        "Swan Hunter and Wigham Richardson",
-        "Swan, Hunter & Wigham Richardson"
+        "Ansaldo",
+        "Ansaldo Shipyard",
+        "Ansaldo Shipyards"
       ],
       "rawValues": [
-        "Swan Hunter & Wigham Richardson (Wallsend, England)",
-        "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne",
-        "Swan Hunter & Wigham Richardson, Wallsend",
-        "Swan Hunter and Wigham Richardson, Wallsend",
-        "Swan, Hunter & Wigham Richardson, Wallsend",
-        "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965"
+        "Ansaldo Shipyard, Genoa",
+        "Ansaldo Shipyards, Genoa",
+        "Ansaldo, Genoa",
+        "Ansaldo, Sestri Ponente, Genoa",
+        "Ansaldo, Sestri Ponente, Genoa · hull no. 296",
+        "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
       ],
-      "shipCount": 6
+      "shipCount": 8
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co",
+      "name": "Newport News Shipbuilding & Dry Dock Co.",
+      "names": [
+        "Newport News Shipbuilding",
+        "Newport News Shipbuilding & Dry Dock Co.",
+        "Newport News Shipbuilding & Dry Dock Company",
+        "Newport News Shipbuilding and Dry Dock Company"
+      ],
+      "rawValues": [
+        "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)",
+        "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)",
+        "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia",
+        "Newport News Shipbuilding & Dry Dock Company",
+        "Newport News Shipbuilding and Dry Dock Company, Virginia",
+        "Newport News Shipbuilding, Virginia"
+      ],
+      "shipCount": 8
+    },
+    {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "names": [
+        "Chantiers & Ateliers de Penhoët",
+        "Chantiers & Ateliers de Saint-Nazaire",
+        "Chantiers de Penhoët"
+      ],
+      "rawValues": [
+        "Chantiers & Ateliers de Penhoët, Saint-Nazaire",
+        "Chantiers & Ateliers de Saint-Nazaire, Penhoët",
+        "Chantiers de Penhoët (Saint-Nazaire, France)",
+        "Chantiers de Penhoët, Saint-Nazaire",
+        "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
+      ],
+      "shipCount": 7
     },
     {
       "id": "william-beardmore-and-co",
@@ -471,65 +551,41 @@
         "William Beardmore & Co., Dalmuir · yard no. 612",
         "William Beardmore & Co., Dalmuir · yard no. 640",
         "William Beardmore & Co., Dalmuir · yard no. 648",
-        "William Beardmore & Company (Dalmuir, River Clyde)"
+        "William Beardmore & Company (Dalmuir, River Clyde)",
+        "William Beardmore & Company, Dalmuir, Scotland · yard no. 509"
+      ],
+      "shipCount": 7
+    },
+    {
+      "id": "alexander-stephen-and-sons",
+      "name": "Alexander Stephen & Sons",
+      "names": [
+        "Alexander Stephen & Sons"
+      ],
+      "rawValues": [
+        "Alexander Stephen & Sons (Glasgow)",
+        "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)",
+        "Alexander Stephen & Sons, Govan · yard no. 504",
+        "Alexander Stephen & Sons, Linthouse, Glasgow",
+        "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
       ],
       "shipCount": 6
     },
     {
-      "id": "ansaldo-sestri-ponente",
-      "name": "Ansaldo, Sestri Ponente",
+      "id": "j-and-g-thomson",
+      "name": "J. & G. Thomson",
       "names": [
-        "Ansaldo, Sestri Ponente"
+        "J. & G. Thomson",
+        "J. & G. Thomson & Co."
       ],
       "rawValues": [
-        "Ansaldo, Sestri Ponente, Genoa",
-        "Ansaldo, Sestri Ponente, Genoa · hull no. 296",
-        "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
+        "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland",
+        "J. & G. Thomson & Co., Glasgow",
+        "J. & G. Thomson (Clydebank/Glasgow, Scotland)",
+        "J. & G. Thomson, Clydebank",
+        "J. & G. Thomson, Clydebank, Scotland"
       ],
-      "shipCount": 5
-    },
-    {
-      "id": "chantiers-de-penhoet",
-      "name": "Chantiers de Penhoët",
-      "names": [
-        "Chantiers de Penhoët"
-      ],
-      "rawValues": [
-        "Chantiers de Penhoët (Saint-Nazaire, France)",
-        "Chantiers de Penhoët, Saint-Nazaire",
-        "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
-      ],
-      "shipCount": 5
-    },
-    {
-      "id": "newport-news-shipbuilding-and-dry-dock-co",
-      "name": "Newport News Shipbuilding & Dry Dock Co.",
-      "names": [
-        "Newport News Shipbuilding",
-        "Newport News Shipbuilding & Dry Dock Co.",
-        "Newport News Shipbuilding & Dry Dock Company",
-        "Newport News Shipbuilding and Dry Dock Company"
-      ],
-      "rawValues": [
-        "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)",
-        "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)",
-        "Newport News Shipbuilding & Dry Dock Company",
-        "Newport News Shipbuilding and Dry Dock Company, Virginia",
-        "Newport News Shipbuilding, Virginia"
-      ],
-      "shipCount": 5
-    },
-    {
-      "id": "ag-vulcan-stettin",
-      "name": "AG Vulcan, Stettin",
-      "names": [
-        "AG Vulcan, Stettin"
-      ],
-      "rawValues": [
-        "AG Vulcan, Stettin, Germany",
-        "AG Vulcan, Stettin, Germany · yard no. 232"
-      ],
-      "shipCount": 4
+      "shipCount": 6
     },
     {
       "id": "ag-weser",
@@ -539,18 +595,24 @@
       ],
       "rawValues": [
         "AG Weser, Bremen",
-        "AG Weser, Bremen · yard no. 193"
+        "AG Weser, Bremen · yard no. 193",
+        "AG Weser, Bremen, Germany"
       ],
-      "shipCount": 4
+      "shipCount": 5
     },
     {
-      "id": "blohm-and-voss-hamburg",
-      "name": "Blohm & Voss, Hamburg",
+      "id": "armstrong-whitworth-and-co",
+      "name": "Armstrong Whitworth & Co.",
       "names": [
-        "Blohm & Voss, Hamburg"
+        "Armstrong Whitworth",
+        "Armstrong, Whitworth & Co.",
+        "Armstrong, Whitworth & Co. Ltd."
       ],
       "rawValues": [
-        "Blohm & Voss, Hamburg, Germany"
+        "Armstrong Whitworth, Newcastle-upon-Tyne",
+        "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970",
+        "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999",
+        "Armstrong, Whitworth & Co., Low Walker, Newcastle · yard no. 824"
       ],
       "shipCount": 4
     },
@@ -570,30 +632,16 @@
       "shipCount": 4
     },
     {
-      "id": "harland-and-wolff-queen-s-island",
-      "name": "Harland & Wolff, Queen's Island",
+      "id": "new-york-shipbuilding-company",
+      "name": "New York Shipbuilding Company",
       "names": [
-        "Harland & Wolff, Queen's Island"
+        "New York Shipbuilding Company",
+        "New York Shipbuilding Corporation"
       ],
       "rawValues": [
-        "Harland & Wolff, Queen's Island, Belfast · yard no. 335",
-        "Harland & Wolff, Queen's Island, Belfast · yard no. 337",
-        "Harland & Wolff, Queen's Island, Belfast · yard no. 352",
-        "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "j-and-g-thomson",
-      "name": "J. & G. Thomson",
-      "names": [
-        "J. & G. Thomson",
-        "J. & G. Thomson & Co."
-      ],
-      "rawValues": [
-        "J. & G. Thomson & Co., Glasgow",
-        "J. & G. Thomson (Clydebank/Glasgow, Scotland)",
-        "J. & G. Thomson, Clydebank"
+        "New York Shipbuilding Company, Camden, New Jersey",
+        "New York Shipbuilding Corporation (Camden, New Jersey, USA)",
+        "New York Shipbuilding Corporation, Camden, New Jersey"
       ],
       "shipCount": 4
     },
@@ -610,56 +658,20 @@
       "shipCount": 4
     },
     {
-      "id": "a-g-vulcan",
-      "name": "A.G. Vulcan",
+      "id": "swan-hunter-and-wigham-richardson",
+      "name": "Swan Hunter & Wigham Richardson",
       "names": [
-        "A.G. Vulcan"
+        "Swan Hunter & Wigham Richardson",
+        "Swan Hunter & Wigham Richardson Ltd.",
+        "Swan Hunter and Wigham Richardson"
       ],
       "rawValues": [
-        "A.G. Vulcan, Hamburg",
-        "A.G. Vulcan, Stettin"
+        "Swan Hunter & Wigham Richardson (Wallsend, England)",
+        "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne",
+        "Swan Hunter & Wigham Richardson, Wallsend",
+        "Swan Hunter and Wigham Richardson, Wallsend"
       ],
-      "shipCount": 3
-    },
-    {
-      "id": "alexander-stephen-and-sons",
-      "name": "Alexander Stephen & Sons",
-      "names": [
-        "Alexander Stephen & Sons"
-      ],
-      "rawValues": [
-        "Alexander Stephen & Sons (Glasgow)",
-        "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)",
-        "Alexander Stephen & Sons, Govan · yard no. 504"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "alexander-stephen-and-sons-linthouse",
-      "name": "Alexander Stephen & Sons, Linthouse",
-      "names": [
-        "Alexander Stephen & Sons, Linthouse"
-      ],
-      "rawValues": [
-        "Alexander Stephen & Sons, Linthouse, Glasgow",
-        "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "ansaldo",
-      "name": "Ansaldo",
-      "names": [
-        "Ansaldo",
-        "Ansaldo Shipyard",
-        "Ansaldo Shipyards"
-      ],
-      "rawValues": [
-        "Ansaldo Shipyard, Genoa",
-        "Ansaldo Shipyards, Genoa",
-        "Ansaldo, Genoa"
-      ],
-      "shipCount": 3
+      "shipCount": 4
     },
     {
       "id": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
@@ -715,6 +727,20 @@
       "shipCount": 3
     },
     {
+      "id": "chantiers-de-l-atlantique",
+      "name": "Chantiers de l’Atlantique",
+      "names": [
+        "Chantiers de l'Atlantique",
+        "Chantiers de l’Atlantique"
+      ],
+      "rawValues": [
+        "Chantiers de l'Atlantique, Saint-Nazaire",
+        "Chantiers de l’Atlantique, Saint-Nazaire · yard G19",
+        "Chantiers de l’Atlantique, Saint-Nazaire, France"
+      ],
+      "shipCount": 3
+    },
+    {
       "id": "f-schichau",
       "name": "F. Schichau",
       "names": [
@@ -724,17 +750,6 @@
         "F. Schichau, Danzig",
         "F. Schichau, Danzig · yard no. 891",
         "F. Schichau, Danzig · yard no. 929"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
-      "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
-      "names": [
-        "Newport News Shipbuilding & Dry Dock Co., Newport News"
-      ],
-      "rawValues": [
-        "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
       ],
       "shipCount": 3
     },
@@ -766,19 +781,6 @@
       "shipCount": 3
     },
     {
-      "id": "armstrong-whitworth-and-co",
-      "name": "Armstrong Whitworth & Co.",
-      "names": [
-        "Armstrong Whitworth",
-        "Armstrong, Whitworth & Co. Ltd."
-      ],
-      "rawValues": [
-        "Armstrong Whitworth, Newcastle-upon-Tyne",
-        "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970"
-      ],
-      "shipCount": 2
-    },
-    {
       "id": "ateliers-et-chantiers-de-la-loire",
       "name": "Ateliers et Chantiers de la Loire",
       "names": [
@@ -790,23 +792,22 @@
       "shipCount": 2
     },
     {
-      "id": "chantiers-de-l-atlantique",
-      "name": "Chantiers de l'Atlantique",
+      "id": "bethlehem-steel-corporation-fore-river-shipyard",
+      "name": "Bethlehem Steel Corporation, Fore River Shipyard",
       "names": [
-        "Chantiers de l'Atlantique",
-        "Chantiers de l’Atlantique"
+        "Bethlehem Steel Corporation, Fore River Shipyard"
       ],
       "rawValues": [
-        "Chantiers de l'Atlantique, Saint-Nazaire",
-        "Chantiers de l’Atlantique, Saint-Nazaire · yard G19"
+        "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)",
+        "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618"
       ],
       "shipCount": 2
     },
     {
-      "id": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
-      "name": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
+      "id": "deutsche-schiff-und-maschinenbau-ag",
+      "name": "Deutsche Schiff- und Maschinenbau AG",
       "names": [
-        "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser"
+        "Deutsche Schiff- und Maschinenbau AG"
       ],
       "rawValues": [
         "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 891",
@@ -815,22 +816,10 @@
       "shipCount": 2
     },
     {
-      "id": "fairfield-shipbuilding-and-engineering-co-govan",
-      "name": "Fairfield Shipbuilding & Engineering Co., Govan",
+      "id": "fore-river-shipyard-bethlehem-shipbuilding-corporation",
+      "name": "Fore River Shipyard, Bethlehem Shipbuilding Corporation",
       "names": [
-        "Fairfield Shipbuilding & Engineering Co., Govan"
-      ],
-      "rawValues": [
-        "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow",
-        "Fairfield Shipbuilding & Engineering Co., Govan, Scotland"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "fore-river-shipyard-bethlehem-shipbuilding-corporation-quincy",
-      "name": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy",
-      "names": [
-        "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy"
+        "Fore River Shipyard, Bethlehem Shipbuilding Corporation"
       ],
       "rawValues": [
         "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts"
@@ -861,17 +850,6 @@
       "shipCount": 2
     },
     {
-      "id": "new-york-shipbuilding-company-camden",
-      "name": "New York Shipbuilding Company, Camden",
-      "names": [
-        "New York Shipbuilding Company, Camden"
-      ],
-      "rawValues": [
-        "New York Shipbuilding Company, Camden, New Jersey"
-      ],
-      "shipCount": 2
-    },
-    {
       "id": "robert-napier-and-sons",
       "name": "Robert Napier & Sons",
       "names": [
@@ -891,6 +869,18 @@
       "rawValues": [
         "Rotterdamsche Droogdok Maatschappij, Rotterdam",
         "Rotterdamsche Droogdok Maatschappij, Rotterdam · yard no. 200"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "swan",
+      "name": "Swan",
+      "names": [
+        "Swan"
+      ],
+      "rawValues": [
+        "Swan, Hunter & Wigham Richardson, Wallsend",
+        "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965"
       ],
       "shipCount": 2
     },
@@ -941,39 +931,6 @@
       "shipCount": 1
     },
     {
-      "id": "ag-weser-bremen",
-      "name": "AG Weser, Bremen",
-      "names": [
-        "AG Weser, Bremen"
-      ],
-      "rawValues": [
-        "AG Weser, Bremen, Germany"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "armstrong-whitworth-and-co-high-walker",
-      "name": "Armstrong, Whitworth & Co., High Walker",
-      "names": [
-        "Armstrong, Whitworth & Co., High Walker"
-      ],
-      "rawValues": [
-        "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "armstrong-whitworth-and-co-low-walker",
-      "name": "Armstrong, Whitworth & Co., Low Walker",
-      "names": [
-        "Armstrong, Whitworth & Co., Low Walker"
-      ],
-      "rawValues": [
-        "Armstrong, Whitworth & Co., Low Walker, Newcastle · yard no. 824"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "ateliers-et-chantiers-de-bretagne",
       "name": "Ateliers et Chantiers de Bretagne",
       "names": [
@@ -996,35 +953,13 @@
       "shipCount": 1
     },
     {
-      "id": "bethlehem-shipbuilding-corp",
-      "name": "Bethlehem Shipbuilding Corp.",
+      "id": "bethlehem-shipbuilding-corp-fore-river-shipyard",
+      "name": "Bethlehem Shipbuilding Corp., Fore River Shipyard",
       "names": [
-        "Bethlehem Shipbuilding Corp."
+        "Bethlehem Shipbuilding Corp., Fore River Shipyard"
       ],
       "rawValues": [
         "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "bethlehem-steel-corporation",
-      "name": "Bethlehem Steel Corporation",
-      "names": [
-        "Bethlehem Steel Corporation"
-      ],
-      "rawValues": [
-        "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "bethlehem-steel-corporation-fore-river-shipyard-quincy",
-      "name": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy",
-      "names": [
-        "Bethlehem Steel Corporation, Fore River Shipyard, Quincy"
-      ],
-      "rawValues": [
-        "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618"
       ],
       "shipCount": 1
     },
@@ -1062,10 +997,10 @@
       "shipCount": 1
     },
     {
-      "id": "cantiere-navale-di-riva-trigoso-riva-trigoso",
-      "name": "Cantiere Navale di Riva Trigoso, Riva Trigoso",
+      "id": "cantiere-navale-di-riva-trigoso",
+      "name": "Cantiere Navale di Riva Trigoso",
       "names": [
-        "Cantiere Navale di Riva Trigoso, Riva Trigoso"
+        "Cantiere Navale di Riva Trigoso"
       ],
       "rawValues": [
         "Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy"
@@ -1095,17 +1030,6 @@
       "shipCount": 1
     },
     {
-      "id": "chantiers-and-ateliers-de-penhoet",
-      "name": "Chantiers & Ateliers de Penhoët",
-      "names": [
-        "Chantiers & Ateliers de Penhoët"
-      ],
-      "rawValues": [
-        "Chantiers & Ateliers de Penhoët, Saint-Nazaire"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "chantiers-and-ateliers-de-provence",
       "name": "Chantiers & Ateliers de Provence",
       "names": [
@@ -1117,35 +1041,13 @@
       "shipCount": 1
     },
     {
-      "id": "chantiers-and-ateliers-de-saint-nazaire",
-      "name": "Chantiers & Ateliers de Saint-Nazaire",
+      "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet",
+      "name": "Chantiers & Ateliers de Saint-Nazaire / Penhoët",
       "names": [
-        "Chantiers & Ateliers de Saint-Nazaire"
-      ],
-      "rawValues": [
-        "Chantiers & Ateliers de Saint-Nazaire, Penhoët"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet-saint-nazaire",
-      "name": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire",
-      "names": [
-        "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire"
+        "Chantiers & Ateliers de Saint-Nazaire / Penhoët"
       ],
       "rawValues": [
         "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "chantiers-de-l-atlantique-saint-nazaire",
-      "name": "Chantiers de l’Atlantique, Saint-Nazaire",
-      "names": [
-        "Chantiers de l’Atlantique, Saint-Nazaire"
-      ],
-      "rawValues": [
-        "Chantiers de l’Atlantique, Saint-Nazaire, France"
       ],
       "shipCount": 1
     },
@@ -1183,35 +1085,13 @@
       "shipCount": 1
     },
     {
-      "id": "eastern-shipbuilding-company-new-london-groton",
-      "name": "Eastern Shipbuilding Company, New London / Groton",
+      "id": "eastern-shipbuilding-company",
+      "name": "Eastern Shipbuilding Company",
       "names": [
-        "Eastern Shipbuilding Company, New London / Groton"
+        "Eastern Shipbuilding Company"
       ],
       "rawValues": [
         "Eastern Shipbuilding Company, New London / Groton, Connecticut"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
-      "name": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
-      "names": [
-        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan"
-      ],
-      "rawValues": [
-        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "fairfield-shipbuilding-and-engineering-company-govan",
-      "name": "Fairfield Shipbuilding & Engineering Company, Govan",
-      "names": [
-        "Fairfield Shipbuilding & Engineering Company, Govan"
-      ],
-      "rawValues": [
-        "Fairfield Shipbuilding & Engineering Company, Govan, Scotland"
       ],
       "shipCount": 1
     },
@@ -1227,10 +1107,10 @@
       "shipCount": 1
     },
     {
-      "id": "furness-withy-and-co-west-hartlepool",
-      "name": "Furness, Withy & Co., West Hartlepool",
+      "id": "furness-withy-and-co",
+      "name": "Furness, Withy & Co.",
       "names": [
-        "Furness, Withy & Co., West Hartlepool"
+        "Furness, Withy & Co."
       ],
       "rawValues": [
         "Furness, Withy & Co., West Hartlepool, England"
@@ -1238,10 +1118,10 @@
       "shipCount": 1
     },
     {
-      "id": "germaniawerft-friedrich-krupp-kiel",
-      "name": "Germaniawerft / Friedrich Krupp, Kiel",
+      "id": "germaniawerft-friedrich-krupp",
+      "name": "Germaniawerft / Friedrich Krupp",
       "names": [
-        "Germaniawerft / Friedrich Krupp, Kiel"
+        "Germaniawerft / Friedrich Krupp"
       ],
       "rawValues": [
         "Germaniawerft / Friedrich Krupp, Kiel, Germany"
@@ -1256,17 +1136,6 @@
       ],
       "rawValues": [
         "Götaverken, Gothenburg"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "harland-and-wolff-ltd-queen-s-island",
-      "name": "Harland & Wolff Ltd., Queen’s Island",
-      "names": [
-        "Harland & Wolff Ltd., Queen’s Island"
-      ],
-      "rawValues": [
-        "Harland & Wolff Ltd., Queen’s Island, Belfast"
       ],
       "shipCount": 1
     },
@@ -1293,28 +1162,6 @@
       "shipCount": 1
     },
     {
-      "id": "j-and-g-thomson-and-co-clydebank-glasgow-area",
-      "name": "J. & G. Thomson & Co., Clydebank / Glasgow area",
-      "names": [
-        "J. & G. Thomson & Co., Clydebank / Glasgow area"
-      ],
-      "rawValues": [
-        "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "j-and-g-thomson-clydebank",
-      "name": "J. & G. Thomson, Clydebank",
-      "names": [
-        "J. & G. Thomson, Clydebank"
-      ],
-      "rawValues": [
-        "J. & G. Thomson, Clydebank, Scotland"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "j-scott-russell-and-co-millwall-iron-works",
       "name": "J. Scott Russell & Co., Millwall Iron Works",
       "names": [
@@ -1337,10 +1184,10 @@
       "shipCount": 1
     },
     {
-      "id": "jenks-ship-building-company-port-huron",
-      "name": "Jenks Ship Building Company, Port Huron",
+      "id": "jenks-ship-building-company",
+      "name": "Jenks Ship Building Company",
       "names": [
-        "Jenks Ship Building Company, Port Huron"
+        "Jenks Ship Building Company"
       ],
       "rawValues": [
         "Jenks Ship Building Company, Port Huron, Michigan"
@@ -1348,10 +1195,10 @@
       "shipCount": 1
     },
     {
-      "id": "joh-c-tecklenborg-geestemunde",
-      "name": "Joh. C. Tecklenborg, Geestemünde",
+      "id": "joh-c-tecklenborg",
+      "name": "Joh. C. Tecklenborg",
       "names": [
-        "Joh. C. Tecklenborg, Geestemünde"
+        "Joh. C. Tecklenborg"
       ],
       "rawValues": [
         "Joh. C. Tecklenborg, Geestemünde, Germany"
@@ -1403,28 +1250,6 @@
       "shipCount": 1
     },
     {
-      "id": "new-york-shipbuilding-company",
-      "name": "New York Shipbuilding Company",
-      "names": [
-        "New York Shipbuilding Corporation"
-      ],
-      "rawValues": [
-        "New York Shipbuilding Corporation (Camden, New Jersey, USA)"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "new-york-shipbuilding-corporation-camden",
-      "name": "New York Shipbuilding Corporation, Camden",
-      "names": [
-        "New York Shipbuilding Corporation, Camden"
-      ],
-      "rawValues": [
-        "New York Shipbuilding Corporation, Camden, New Jersey"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "newport-news",
       "name": "Newport News",
       "names": [
@@ -1447,10 +1272,10 @@
       "shipCount": 1
     },
     {
-      "id": "robert-menzies-and-sons-leith",
-      "name": "Robert Menzies & Sons, Leith",
+      "id": "robert-menzies-and-sons",
+      "name": "Robert Menzies & Sons",
       "names": [
-        "Robert Menzies & Sons, Leith"
+        "Robert Menzies & Sons"
       ],
       "rawValues": [
         "Robert Menzies & Sons, Leith, Scotland"
@@ -1531,39 +1356,6 @@
       ],
       "rawValues": [
         "Tod & McGregor, Glasgow"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "vickers-armstrongs-shipbuilders-ltd",
-      "name": "Vickers-Armstrongs (Shipbuilders) Ltd.",
-      "names": [
-        "Vickers-Armstrongs (Shipbuilders) Ltd."
-      ],
-      "rawValues": [
-        "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "vickers-armstrongs-ltd-barrow-in-furness",
-      "name": "Vickers-Armstrongs Ltd., Barrow-in-Furness",
-      "names": [
-        "Vickers-Armstrongs Ltd., Barrow-in-Furness"
-      ],
-      "rawValues": [
-        "Vickers-Armstrongs Ltd., Barrow-in-Furness, England"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "william-beardmore-and-company-dalmuir",
-      "name": "William Beardmore & Company, Dalmuir",
-      "names": [
-        "William Beardmore & Company, Dalmuir"
-      ],
-      "rawValues": [
-        "William Beardmore & Company, Dalmuir, Scotland · yard no. 509"
       ],
       "shipCount": 1
     },
@@ -1711,8 +1503,8 @@
       "builderRaw": "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999",
       "builders": [
         {
-          "id": "armstrong-whitworth-and-co-high-walker",
-          "name": "Armstrong, Whitworth & Co., High Walker",
+          "id": "armstrong-whitworth-and-co",
+          "name": "Armstrong Whitworth & Co.",
           "raw": "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999"
         }
       ]
@@ -1921,8 +1713,8 @@
       "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 358",
       "builders": [
         {
-          "id": "harland-and-wolff-queen-s-island",
-          "name": "Harland & Wolff, Queen's Island",
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
         }
       ]
@@ -2075,8 +1867,8 @@
       "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965",
       "builders": [
         {
-          "id": "swan-hunter-and-wigham-richardson",
-          "name": "Swan Hunter & Wigham Richardson",
+          "id": "swan",
+          "name": "Swan",
           "raw": "Swan, Hunter & Wigham Richardson, Wallsend · yard no. 965"
         }
       ]
@@ -2103,8 +1895,8 @@
       "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 352",
       "builders": [
         {
-          "id": "harland-and-wolff-queen-s-island",
-          "name": "Harland & Wolff, Queen's Island",
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 352"
         }
       ]
@@ -2117,8 +1909,8 @@
       "builderRaw": "A.G. Vulcan, Hamburg",
       "builders": [
         {
-          "id": "a-g-vulcan",
-          "name": "A.G. Vulcan",
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
           "raw": "A.G. Vulcan, Hamburg"
         }
       ]
@@ -2285,8 +2077,8 @@
       "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 337",
       "builders": [
         {
-          "id": "harland-and-wolff-queen-s-island",
-          "name": "Harland & Wolff, Queen's Island",
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 337"
         }
       ]
@@ -2299,8 +2091,8 @@
       "builderRaw": "Harland & Wolff, Queen's Island, Belfast · yard no. 335",
       "builders": [
         {
-          "id": "harland-and-wolff-queen-s-island",
-          "name": "Harland & Wolff, Queen's Island",
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 335"
         }
       ]
@@ -2411,8 +2203,8 @@
       "builderRaw": "Swan, Hunter & Wigham Richardson, Wallsend",
       "builders": [
         {
-          "id": "swan-hunter-and-wigham-richardson",
-          "name": "Swan Hunter & Wigham Richardson",
+          "id": "swan",
+          "name": "Swan",
           "raw": "Swan, Hunter & Wigham Richardson, Wallsend"
         }
       ]
@@ -2509,8 +2301,8 @@
       "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan, Scotland",
       "builders": [
         {
-          "id": "fairfield-shipbuilding-and-engineering-co-govan",
-          "name": "Fairfield Shipbuilding & Engineering Co., Govan",
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
           "raw": "Fairfield Shipbuilding & Engineering Co., Govan, Scotland"
         }
       ]
@@ -2649,8 +2441,8 @@
       "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness, England",
       "builders": [
         {
-          "id": "vickers-armstrongs-ltd-barrow-in-furness",
-          "name": "Vickers-Armstrongs Ltd., Barrow-in-Furness",
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
           "raw": "Vickers-Armstrongs Ltd., Barrow-in-Furness, England"
         }
       ]
@@ -2733,8 +2525,8 @@
       "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire, France",
       "builders": [
         {
-          "id": "chantiers-de-l-atlantique-saint-nazaire",
-          "name": "Chantiers de l’Atlantique, Saint-Nazaire",
+          "id": "chantiers-de-l-atlantique",
+          "name": "Chantiers de l’Atlantique",
           "raw": "Chantiers de l’Atlantique, Saint-Nazaire, France"
         }
       ]
@@ -3097,8 +2889,8 @@
       "builderRaw": "Ansaldo, Sestri Ponente, Genoa · yard no. 918",
       "builders": [
         {
-          "id": "ansaldo-sestri-ponente",
-          "name": "Ansaldo, Sestri Ponente",
+          "id": "ansaldo",
+          "name": "Ansaldo",
           "raw": "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
         }
       ]
@@ -3167,8 +2959,8 @@
       "builderRaw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424",
       "builders": [
         {
-          "id": "fairfield-shipbuilding-and-engineering-co-ltd-govan",
-          "name": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan",
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
           "raw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424"
         }
       ]
@@ -3195,8 +2987,8 @@
       "builderRaw": "Germaniawerft / Friedrich Krupp, Kiel, Germany",
       "builders": [
         {
-          "id": "germaniawerft-friedrich-krupp-kiel",
-          "name": "Germaniawerft / Friedrich Krupp, Kiel",
+          "id": "germaniawerft-friedrich-krupp",
+          "name": "Germaniawerft / Friedrich Krupp",
           "raw": "Germaniawerft / Friedrich Krupp, Kiel, Germany"
         }
       ]
@@ -3237,8 +3029,8 @@
       "builderRaw": "AG Weser, Bremen, Germany",
       "builders": [
         {
-          "id": "ag-weser-bremen",
-          "name": "AG Weser, Bremen",
+          "id": "ag-weser",
+          "name": "AG Weser",
           "raw": "AG Weser, Bremen, Germany"
         }
       ]
@@ -3391,8 +3183,8 @@
       "builderRaw": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland",
       "builders": [
         {
-          "id": "j-and-g-thomson-and-co-clydebank-glasgow-area",
-          "name": "J. & G. Thomson & Co., Clydebank / Glasgow area",
+          "id": "j-and-g-thomson",
+          "name": "J. & G. Thomson",
           "raw": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland"
         }
       ]
@@ -3475,8 +3267,8 @@
       "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow",
       "builders": [
         {
-          "id": "fairfield-shipbuilding-and-engineering-co-govan",
-          "name": "Fairfield Shipbuilding & Engineering Co., Govan",
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
           "raw": "Fairfield Shipbuilding & Engineering Co., Govan, Glasgow"
         }
       ]
@@ -3690,8 +3482,8 @@
       "builderRaw": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France",
       "builders": [
         {
-          "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet-saint-nazaire",
-          "name": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire",
+          "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet",
+          "name": "Chantiers & Ateliers de Saint-Nazaire / Penhoët",
           "raw": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France"
         }
       ]
@@ -3732,8 +3524,8 @@
       "builderRaw": "J. & G. Thomson, Clydebank, Scotland",
       "builders": [
         {
-          "id": "j-and-g-thomson-clydebank",
-          "name": "J. & G. Thomson, Clydebank",
+          "id": "j-and-g-thomson",
+          "name": "J. & G. Thomson",
           "raw": "J. & G. Thomson, Clydebank, Scotland"
         }
       ]
@@ -3830,8 +3622,8 @@
       "builderRaw": "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)",
       "builders": [
         {
-          "id": "bethlehem-steel-corporation",
-          "name": "Bethlehem Steel Corporation",
+          "id": "bethlehem-steel-corporation-fore-river-shipyard",
+          "name": "Bethlehem Steel Corporation, Fore River Shipyard",
           "raw": "Bethlehem Steel Corporation, Fore River Shipyard (Quincy, Massachusetts)"
         }
       ]
@@ -4026,8 +3818,8 @@
       "builderRaw": "A.G. Vulcan, Stettin",
       "builders": [
         {
-          "id": "a-g-vulcan",
-          "name": "A.G. Vulcan",
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
           "raw": "A.G. Vulcan, Stettin"
         }
       ]
@@ -4054,8 +3846,8 @@
       "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow",
       "builders": [
         {
-          "id": "alexander-stephen-and-sons-linthouse",
-          "name": "Alexander Stephen & Sons, Linthouse",
+          "id": "alexander-stephen-and-sons",
+          "name": "Alexander Stephen & Sons",
           "raw": "Alexander Stephen & Sons, Linthouse, Glasgow"
         }
       ]
@@ -4124,8 +3916,8 @@
       "builderRaw": "Ansaldo, Sestri Ponente, Genoa",
       "builders": [
         {
-          "id": "ansaldo-sestri-ponente",
-          "name": "Ansaldo, Sestri Ponente",
+          "id": "ansaldo",
+          "name": "Ansaldo",
           "raw": "Ansaldo, Sestri Ponente, Genoa"
         }
       ]
@@ -4138,8 +3930,8 @@
       "builderRaw": "Jenks Ship Building Company, Port Huron, Michigan",
       "builders": [
         {
-          "id": "jenks-ship-building-company-port-huron",
-          "name": "Jenks Ship Building Company, Port Huron",
+          "id": "jenks-ship-building-company",
+          "name": "Jenks Ship Building Company",
           "raw": "Jenks Ship Building Company, Port Huron, Michigan"
         }
       ]
@@ -4152,8 +3944,8 @@
       "builderRaw": "William Beardmore & Company, Dalmuir, Scotland · yard no. 509",
       "builders": [
         {
-          "id": "william-beardmore-and-company-dalmuir",
-          "name": "William Beardmore & Company, Dalmuir",
+          "id": "william-beardmore-and-co",
+          "name": "William Beardmore & Co.",
           "raw": "William Beardmore & Company, Dalmuir, Scotland · yard no. 509"
         }
       ]
@@ -4250,8 +4042,8 @@
       "builderRaw": "AG Vulcan, Stettin, Germany",
       "builders": [
         {
-          "id": "ag-vulcan-stettin",
-          "name": "AG Vulcan, Stettin",
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
           "raw": "AG Vulcan, Stettin, Germany"
         }
       ]
@@ -4320,8 +4112,8 @@
       "builderRaw": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 893",
       "builders": [
         {
-          "id": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
-          "name": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
+          "id": "deutsche-schiff-und-maschinenbau-ag",
+          "name": "Deutsche Schiff- und Maschinenbau AG",
           "raw": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 893"
         }
       ]
@@ -4348,8 +4140,8 @@
       "builderRaw": "Blohm & Voss, Hamburg, Germany",
       "builders": [
         {
-          "id": "blohm-and-voss-hamburg",
-          "name": "Blohm & Voss, Hamburg",
+          "id": "blohm-and-voss",
+          "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg, Germany"
         }
       ]
@@ -4474,8 +4266,8 @@
       "builderRaw": "A.G. Vulcan, Hamburg",
       "builders": [
         {
-          "id": "a-g-vulcan",
-          "name": "A.G. Vulcan",
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
           "raw": "A.G. Vulcan, Hamburg"
         }
       ]
@@ -4488,8 +4280,8 @@
       "builderRaw": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618",
       "builders": [
         {
-          "id": "bethlehem-steel-corporation-fore-river-shipyard-quincy",
-          "name": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy",
+          "id": "bethlehem-steel-corporation-fore-river-shipyard",
+          "name": "Bethlehem Steel Corporation, Fore River Shipyard",
           "raw": "Bethlehem Steel Corporation, Fore River Shipyard, Quincy, Massachusetts · yard no. 1618"
         }
       ]
@@ -4586,8 +4378,8 @@
       "builderRaw": "AG Vulcan, Stettin, Germany · yard no. 232",
       "builders": [
         {
-          "id": "ag-vulcan-stettin",
-          "name": "AG Vulcan, Stettin",
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
           "raw": "AG Vulcan, Stettin, Germany · yard no. 232"
         }
       ]
@@ -4768,8 +4560,8 @@
       "builderRaw": "Fairfield Shipbuilding & Engineering Company, Govan, Scotland",
       "builders": [
         {
-          "id": "fairfield-shipbuilding-and-engineering-company-govan",
-          "name": "Fairfield Shipbuilding & Engineering Company, Govan",
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
           "raw": "Fairfield Shipbuilding & Engineering Company, Govan, Scotland"
         }
       ]
@@ -4810,8 +4602,8 @@
       "builderRaw": "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)",
       "builders": [
         {
-          "id": "bethlehem-shipbuilding-corp",
-          "name": "Bethlehem Shipbuilding Corp.",
+          "id": "bethlehem-shipbuilding-corp-fore-river-shipyard",
+          "name": "Bethlehem Shipbuilding Corp., Fore River Shipyard",
           "raw": "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)"
         }
       ]
@@ -4880,8 +4672,8 @@
       "builderRaw": "New York Shipbuilding Company, Camden, New Jersey",
       "builders": [
         {
-          "id": "new-york-shipbuilding-company-camden",
-          "name": "New York Shipbuilding Company, Camden",
+          "id": "new-york-shipbuilding-company",
+          "name": "New York Shipbuilding Company",
           "raw": "New York Shipbuilding Company, Camden, New Jersey"
         }
       ]
@@ -4894,8 +4686,8 @@
       "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey",
       "builders": [
         {
-          "id": "new-york-shipbuilding-corporation-camden",
-          "name": "New York Shipbuilding Corporation, Camden",
+          "id": "new-york-shipbuilding-company",
+          "name": "New York Shipbuilding Company",
           "raw": "New York Shipbuilding Corporation, Camden, New Jersey"
         }
       ]
@@ -4936,8 +4728,8 @@
       "builderRaw": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts",
       "builders": [
         {
-          "id": "fore-river-shipyard-bethlehem-shipbuilding-corporation-quincy",
-          "name": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy",
+          "id": "fore-river-shipyard-bethlehem-shipbuilding-corporation",
+          "name": "Fore River Shipyard, Bethlehem Shipbuilding Corporation",
           "raw": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts"
         }
       ]
@@ -4964,8 +4756,8 @@
       "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373",
       "builders": [
         {
-          "id": "alexander-stephen-and-sons-linthouse",
-          "name": "Alexander Stephen & Sons, Linthouse",
+          "id": "alexander-stephen-and-sons",
+          "name": "Alexander Stephen & Sons",
           "raw": "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
         }
       ]
@@ -5006,8 +4798,8 @@
       "builderRaw": "Ansaldo, Sestri Ponente, Genoa",
       "builders": [
         {
-          "id": "ansaldo-sestri-ponente",
-          "name": "Ansaldo, Sestri Ponente",
+          "id": "ansaldo",
+          "name": "Ansaldo",
           "raw": "Ansaldo, Sestri Ponente, Genoa"
         }
       ]
@@ -5020,8 +4812,8 @@
       "builderRaw": "Blohm & Voss, Hamburg, Germany",
       "builders": [
         {
-          "id": "blohm-and-voss-hamburg",
-          "name": "Blohm & Voss, Hamburg",
+          "id": "blohm-and-voss",
+          "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg, Germany"
         }
       ]
@@ -5034,8 +4826,8 @@
       "builderRaw": "Eastern Shipbuilding Company, New London / Groton, Connecticut",
       "builders": [
         {
-          "id": "eastern-shipbuilding-company-new-london-groton",
-          "name": "Eastern Shipbuilding Company, New London / Groton",
+          "id": "eastern-shipbuilding-company",
+          "name": "Eastern Shipbuilding Company",
           "raw": "Eastern Shipbuilding Company, New London / Groton, Connecticut"
         }
       ]
@@ -5076,8 +4868,8 @@
       "builderRaw": "Blohm & Voss, Hamburg, Germany",
       "builders": [
         {
-          "id": "blohm-and-voss-hamburg",
-          "name": "Blohm & Voss, Hamburg",
+          "id": "blohm-and-voss",
+          "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg, Germany"
         }
       ]
@@ -5104,8 +4896,8 @@
       "builderRaw": "New York Shipbuilding Company, Camden, New Jersey",
       "builders": [
         {
-          "id": "new-york-shipbuilding-company-camden",
-          "name": "New York Shipbuilding Company, Camden",
+          "id": "new-york-shipbuilding-company",
+          "name": "New York Shipbuilding Company",
           "raw": "New York Shipbuilding Company, Camden, New Jersey"
         }
       ]
@@ -5146,8 +4938,8 @@
       "builderRaw": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts",
       "builders": [
         {
-          "id": "fore-river-shipyard-bethlehem-shipbuilding-corporation-quincy",
-          "name": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy",
+          "id": "fore-river-shipyard-bethlehem-shipbuilding-corporation",
+          "name": "Fore River Shipyard, Bethlehem Shipbuilding Corporation",
           "raw": "Fore River Shipyard, Bethlehem Shipbuilding Corporation, Quincy, Massachusetts"
         }
       ]
@@ -5272,8 +5064,8 @@
       "builderRaw": "Harland & Wolff Ltd., Queen’s Island, Belfast",
       "builders": [
         {
-          "id": "harland-and-wolff-ltd-queen-s-island",
-          "name": "Harland & Wolff Ltd., Queen’s Island",
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
           "raw": "Harland & Wolff Ltd., Queen’s Island, Belfast"
         }
       ]
@@ -5300,8 +5092,8 @@
       "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow",
       "builders": [
         {
-          "id": "alexander-stephen-and-sons-linthouse",
-          "name": "Alexander Stephen & Sons, Linthouse",
+          "id": "alexander-stephen-and-sons",
+          "name": "Alexander Stephen & Sons",
           "raw": "Alexander Stephen & Sons, Linthouse, Glasgow"
         }
       ]
@@ -5370,8 +5162,8 @@
       "builderRaw": "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061",
       "builders": [
         {
-          "id": "vickers-armstrongs-shipbuilders-ltd",
-          "name": "Vickers-Armstrongs (Shipbuilders) Ltd.",
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
           "raw": "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061"
         }
       ]
@@ -5440,8 +5232,8 @@
       "builderRaw": "Chantiers & Ateliers de Penhoët, Saint-Nazaire",
       "builders": [
         {
-          "id": "chantiers-and-ateliers-de-penhoet",
-          "name": "Chantiers & Ateliers de Penhoët",
+          "id": "chantiers-de-penhoet",
+          "name": "Chantiers de Penhoët",
           "raw": "Chantiers & Ateliers de Penhoët, Saint-Nazaire"
         }
       ]
@@ -5468,8 +5260,8 @@
       "builderRaw": "AG Vulcan, Stettin, Germany",
       "builders": [
         {
-          "id": "ag-vulcan-stettin",
-          "name": "AG Vulcan, Stettin",
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
           "raw": "AG Vulcan, Stettin, Germany"
         }
       ]
@@ -5496,8 +5288,8 @@
       "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia",
       "builders": [
         {
-          "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
-          "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "id": "newport-news-shipbuilding-and-dry-dock-co",
+          "name": "Newport News Shipbuilding & Dry Dock Co.",
           "raw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
         }
       ]
@@ -5524,8 +5316,8 @@
       "builderRaw": "Furness, Withy & Co., West Hartlepool, England",
       "builders": [
         {
-          "id": "furness-withy-and-co-west-hartlepool",
-          "name": "Furness, Withy & Co., West Hartlepool",
+          "id": "furness-withy-and-co",
+          "name": "Furness, Withy & Co.",
           "raw": "Furness, Withy & Co., West Hartlepool, England"
         }
       ]
@@ -5538,8 +5330,8 @@
       "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia",
       "builders": [
         {
-          "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
-          "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "id": "newport-news-shipbuilding-and-dry-dock-co",
+          "name": "Newport News Shipbuilding & Dry Dock Co.",
           "raw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
         }
       ]
@@ -5580,8 +5372,8 @@
       "builderRaw": "Blohm & Voss, Hamburg, Germany",
       "builders": [
         {
-          "id": "blohm-and-voss-hamburg",
-          "name": "Blohm & Voss, Hamburg",
+          "id": "blohm-and-voss",
+          "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg, Germany"
         }
       ]
@@ -5594,8 +5386,8 @@
       "builderRaw": "Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy",
       "builders": [
         {
-          "id": "cantiere-navale-di-riva-trigoso-riva-trigoso",
-          "name": "Cantiere Navale di Riva Trigoso, Riva Trigoso",
+          "id": "cantiere-navale-di-riva-trigoso",
+          "name": "Cantiere Navale di Riva Trigoso",
           "raw": "Cantiere Navale di Riva Trigoso, Riva Trigoso, Italy"
         }
       ]
@@ -5608,8 +5400,8 @@
       "builderRaw": "Joh. C. Tecklenborg, Geestemünde, Germany",
       "builders": [
         {
-          "id": "joh-c-tecklenborg-geestemunde",
-          "name": "Joh. C. Tecklenborg, Geestemünde",
+          "id": "joh-c-tecklenborg",
+          "name": "Joh. C. Tecklenborg",
           "raw": "Joh. C. Tecklenborg, Geestemünde, Germany"
         }
       ]
@@ -5622,8 +5414,8 @@
       "builderRaw": "AG Vulcan, Stettin, Germany",
       "builders": [
         {
-          "id": "ag-vulcan-stettin",
-          "name": "AG Vulcan, Stettin",
+          "id": "ag-vulcan",
+          "name": "AG Vulcan",
           "raw": "AG Vulcan, Stettin, Germany"
         }
       ]
@@ -5720,8 +5512,8 @@
       "builderRaw": "Ansaldo, Sestri Ponente, Genoa · hull no. 296",
       "builders": [
         {
-          "id": "ansaldo-sestri-ponente",
-          "name": "Ansaldo, Sestri Ponente",
+          "id": "ansaldo",
+          "name": "Ansaldo",
           "raw": "Ansaldo, Sestri Ponente, Genoa · hull no. 296"
         }
       ]
@@ -5748,8 +5540,8 @@
       "builderRaw": "Chantiers & Ateliers de Saint-Nazaire, Penhoët",
       "builders": [
         {
-          "id": "chantiers-and-ateliers-de-saint-nazaire",
-          "name": "Chantiers & Ateliers de Saint-Nazaire",
+          "id": "chantiers-de-penhoet",
+          "name": "Chantiers de Penhoët",
           "raw": "Chantiers & Ateliers de Saint-Nazaire, Penhoët"
         }
       ]
@@ -5762,8 +5554,8 @@
       "builderRaw": "Ansaldo, Sestri Ponente, Genoa",
       "builders": [
         {
-          "id": "ansaldo-sestri-ponente",
-          "name": "Ansaldo, Sestri Ponente",
+          "id": "ansaldo",
+          "name": "Ansaldo",
           "raw": "Ansaldo, Sestri Ponente, Genoa"
         }
       ]
@@ -5846,8 +5638,8 @@
       "builderRaw": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 891",
       "builders": [
         {
-          "id": "deutsche-schiff-und-maschinenbau-ag-werk-ag-weser",
-          "name": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser",
+          "id": "deutsche-schiff-und-maschinenbau-ag",
+          "name": "Deutsche Schiff- und Maschinenbau AG",
           "raw": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 891"
         }
       ]
@@ -5860,8 +5652,8 @@
       "builderRaw": "Robert Menzies & Sons, Leith, Scotland",
       "builders": [
         {
-          "id": "robert-menzies-and-sons-leith",
-          "name": "Robert Menzies & Sons, Leith",
+          "id": "robert-menzies-and-sons",
+          "name": "Robert Menzies & Sons",
           "raw": "Robert Menzies & Sons, Leith, Scotland"
         }
       ]
@@ -5902,8 +5694,8 @@
       "builderRaw": "Armstrong, Whitworth & Co., Low Walker, Newcastle · yard no. 824",
       "builders": [
         {
-          "id": "armstrong-whitworth-and-co-low-walker",
-          "name": "Armstrong, Whitworth & Co., Low Walker",
+          "id": "armstrong-whitworth-and-co",
+          "name": "Armstrong Whitworth & Co.",
           "raw": "Armstrong, Whitworth & Co., Low Walker, Newcastle · yard no. 824"
         }
       ]
@@ -6042,8 +5834,8 @@
       "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia",
       "builders": [
         {
-          "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
-          "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "id": "newport-news-shipbuilding-and-dry-dock-co",
+          "name": "Newport News Shipbuilding & Dry Dock Co.",
           "raw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
         }
       ]
