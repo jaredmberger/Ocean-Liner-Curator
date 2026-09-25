@@ -472,6 +472,7 @@
       [
         { href: "/ships/ss-leviathan", label: "SS <em>Leviathan</em>", tail: "former HAPAG <em>Vaterland</em>" },
         { href: "/ships/ss-president-harding", label: "SS <em>President Harding</em>", tail: "United States Lines · 1922–1940" },
+        { href: "/ships/ss-president-roosevelt", label: "SS <em>President Roosevelt</em>", tail: "United States Lines · from 1922" },
         { href: "/ships/ss-manhattan", label: "SS <em>Manhattan</em>", tail: "entered service 1932" },
         { href: "/ships/ss-us", label: "SS <em>United States</em>", tail: "entered service 1952" }
       ],
@@ -1294,6 +1295,7 @@
     "ss-europa": ["german_interwar", "greyhounds", "interwar_prestige"],
 
     "ss-president-harding": ["usl_flagships"],
+    "ss-president-roosevelt": ["usl_flagships"],
     "ss-manhattan": ["usl_flagships", "manhattan_washington"],
     "ss-us": ["usl_flagships"],
     "ss-washington": ["manhattan_washington"],
