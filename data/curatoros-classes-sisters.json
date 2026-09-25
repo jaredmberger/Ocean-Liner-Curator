@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T04:58:19.251Z",
+  "generatedAt": "2026-09-25T05:01:34.629Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 327,
     "guidesWithExplicitClass": 17,
     "canonicalClasses": 9,
     "explicitSisterLinks": 36,
-    "unresolvedSisterMentions": 16
+    "unresolvedSisterMentions": 13
   },
   "classes": [
     {
@@ -700,21 +700,9 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS City of Paris",
-      "path": "ships/ss-city-of-paris.html",
-      "mentioned": "Cunard",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Cleveland",
       "path": "ships/ss-cleveland.html",
       "mentioned": "Cincinnati",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Duilio",
-      "path": "ships/ss-duilio.html",
-      "mentioned": "Naples",
       "candidateCount": 0
     },
     {
@@ -722,12 +710,6 @@
       "path": "ships/ss-germanic.html",
       "mentioned": "Britannic",
       "candidateCount": 2
-    },
-    {
-      "ship": "SS Germanic",
-      "path": "ships/ss-germanic.html",
-      "mentioned": "White Star",
-      "candidateCount": 0
     },
     {
       "ship": "SS Minnesota",
@@ -1903,8 +1885,7 @@
       "url": "/ships/ss-city-of-paris",
       "classes": [],
       "sisters": [
-        "City of New York",
-        "Cunard"
+        "City of New York"
       ]
     },
     {
@@ -2106,8 +2087,7 @@
       "url": "/ships/ss-duilio",
       "classes": [],
       "sisters": [
-        "Giulio Cesare",
-        "Naples"
+        "Giulio Cesare"
       ]
     },
     {
@@ -2195,8 +2175,7 @@
       "url": "/ships/ss-germanic",
       "classes": [],
       "sisters": [
-        "Britannic",
-        "White Star"
+        "Britannic"
       ]
     },
     {
