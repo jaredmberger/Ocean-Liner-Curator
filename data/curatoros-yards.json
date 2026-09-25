@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T05:01:32.132Z",
+  "generatedAt": "2026-09-25T05:18:12.709Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
     "shipGuides": 327,
-    "guidesWithDocumentedYard": 318,
-    "guidesWithoutDocumentedYard": 9,
+    "guidesWithDocumentedYard": 327,
+    "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 62,
     "multiYardShips": 3
   },
@@ -1333,6 +1333,124 @@
       ]
     },
     {
+      "id": "saint-nazaire",
+      "name": "Saint-Nazaire",
+      "rawValues": [
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "builders": [
+        "Ateliers et Chantiers de Bretagne",
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët",
+        "Ateliers et Chantiers de la Loire",
+        "Chantiers & Ateliers de Penhoët",
+        "Chantiers de Penhoët",
+        "Chantiers de l'Atlantique",
+        "Chantiers de l’Atlantique"
+      ],
+      "shipCount": 14,
+      "ships": [
+        {
+          "name": "SS La Bretagne",
+          "path": "ships/ss-la-bretagne.html",
+          "url": "/ships/ss-la-bretagne",
+          "launchYear": "1885",
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
+        },
+        {
+          "name": "SS La Provence",
+          "path": "ships/ss-la-provence.html",
+          "url": "/ships/ss-la-provence",
+          "launchYear": "1905",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS France (1912)",
+          "path": "ships/ss-france-1912.html",
+          "url": "/ships/ss-france-1912",
+          "launchYear": "1910",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Flandre",
+          "path": "ships/ss-flandre.html",
+          "url": "/ships/ss-flandre",
+          "launchYear": "1913",
+          "builder": "Chantiers de l'Atlantique"
+        },
+        {
+          "name": "SS Paris",
+          "path": "ships/ss-paris.html",
+          "url": "/ships/ss-paris",
+          "launchYear": "1916",
+          "builder": "Chantiers & Ateliers de Penhoët"
+        },
+        {
+          "name": "SS Île de France",
+          "path": "ships/ss-ile-de-france.html",
+          "url": "/ships/ss-ile-de-france",
+          "launchYear": "1926",
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
+        },
+        {
+          "name": "MS Félix Roussel (1931)",
+          "path": "ships/ms-felix-roussel.html",
+          "url": "/ships/ms-felix-roussel",
+          "launchYear": "1929",
+          "builder": "Ateliers et Chantiers de la Loire"
+        },
+        {
+          "name": "MS Georges Philippar (1932)",
+          "path": "ships/ms-georges-philippar.html",
+          "url": "/ships/ms-georges-philippar",
+          "launchYear": "1930",
+          "builder": "Ateliers et Chantiers de la Loire"
+        },
+        {
+          "name": "SS L'Atlantique",
+          "path": "ships/ss-latlantique.html",
+          "url": "/ships/ss-latlantique",
+          "launchYear": "1930",
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
+        },
+        {
+          "name": "SS Champlain",
+          "path": "ships/ss-champlain.html",
+          "url": "/ships/ss-champlain",
+          "launchYear": "1931",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Normandie",
+          "path": "ships/ss-normandie.html",
+          "url": "/ships/ss-normandie",
+          "launchYear": "1932",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Pasteur",
+          "path": "ships/ss-pasteur.html",
+          "url": "/ships/ss-pasteur",
+          "launchYear": "1938",
+          "builder": "Chantiers de Penhoët"
+        },
+        {
+          "name": "SS Bretagne",
+          "path": "ships/ss-bretagne.html",
+          "url": "/ships/ss-bretagne",
+          "launchYear": "1951",
+          "builder": "Ateliers et Chantiers de Bretagne"
+        },
+        {
+          "name": "SS France",
+          "path": "ships/ss-france.html",
+          "url": "/ships/ss-france",
+          "launchYear": "1960",
+          "builder": "Chantiers de l’Atlantique"
+        }
+      ]
+    },
+    {
       "id": "germany",
       "name": "Germany",
       "rawValues": [
@@ -1423,96 +1541,6 @@
           "url": "/ships/ss-milwaukee",
           "launchYear": "1929",
           "builder": "Blohm & Voss, Hamburg"
-        }
-      ]
-    },
-    {
-      "id": "saint-nazaire",
-      "name": "Saint-Nazaire",
-      "rawValues": [
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
-      ],
-      "builders": [
-        "Ateliers et Chantiers de Bretagne",
-        "Ateliers et Chantiers de Saint-Nazaire Penhoët",
-        "Ateliers et Chantiers de la Loire",
-        "Chantiers & Ateliers de Penhoët",
-        "Chantiers de Penhoët",
-        "Chantiers de l'Atlantique",
-        "Chantiers de l’Atlantique"
-      ],
-      "shipCount": 10,
-      "ships": [
-        {
-          "name": "SS La Bretagne",
-          "path": "ships/ss-la-bretagne.html",
-          "url": "/ships/ss-la-bretagne",
-          "launchYear": "1885",
-          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
-        },
-        {
-          "name": "SS La Provence",
-          "path": "ships/ss-la-provence.html",
-          "url": "/ships/ss-la-provence",
-          "launchYear": "1905",
-          "builder": "Chantiers de Penhoët"
-        },
-        {
-          "name": "SS Flandre",
-          "path": "ships/ss-flandre.html",
-          "url": "/ships/ss-flandre",
-          "launchYear": "1913",
-          "builder": "Chantiers de l'Atlantique"
-        },
-        {
-          "name": "SS Paris",
-          "path": "ships/ss-paris.html",
-          "url": "/ships/ss-paris",
-          "launchYear": "1916",
-          "builder": "Chantiers & Ateliers de Penhoët"
-        },
-        {
-          "name": "SS Île de France",
-          "path": "ships/ss-ile-de-france.html",
-          "url": "/ships/ss-ile-de-france",
-          "launchYear": "1926",
-          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
-        },
-        {
-          "name": "MS Félix Roussel (1931)",
-          "path": "ships/ms-felix-roussel.html",
-          "url": "/ships/ms-felix-roussel",
-          "launchYear": "1929",
-          "builder": "Ateliers et Chantiers de la Loire"
-        },
-        {
-          "name": "MS Georges Philippar (1932)",
-          "path": "ships/ms-georges-philippar.html",
-          "url": "/ships/ms-georges-philippar",
-          "launchYear": "1930",
-          "builder": "Ateliers et Chantiers de la Loire"
-        },
-        {
-          "name": "SS Normandie",
-          "path": "ships/ss-normandie.html",
-          "url": "/ships/ss-normandie",
-          "launchYear": "1932",
-          "builder": "Chantiers de Penhoët"
-        },
-        {
-          "name": "SS Bretagne",
-          "path": "ships/ss-bretagne.html",
-          "url": "/ships/ss-bretagne",
-          "launchYear": "1951",
-          "builder": "Ateliers et Chantiers de Bretagne"
-        },
-        {
-          "name": "SS France",
-          "path": "ships/ss-france.html",
-          "url": "/ships/ss-france",
-          "launchYear": "1960",
-          "builder": "Chantiers de l’Atlantique"
         }
       ]
     },
@@ -1729,6 +1757,71 @@
       ]
     },
     {
+      "id": "monfalcone",
+      "name": "Monfalcone",
+      "rawValues": [
+        "Monfalcone"
+      ],
+      "builders": [
+        "Cantiere Navale Triestino",
+        "Cantieri Riuniti dell'Adriatico",
+        "Cantieri Riuniti dell’Adriatico",
+        "Cantieri Riuniti dell’Adriatico, San Marco yard"
+      ],
+      "shipCount": 7,
+      "ships": [
+        {
+          "name": "MS Saturnia",
+          "path": "ships/ms-saturnia.html",
+          "url": "/ships/ms-saturnia",
+          "launchYear": "1925",
+          "builder": "Cantiere Navale Triestino"
+        },
+        {
+          "name": "MS Vulcania",
+          "path": "ships/ms-vulcania.html",
+          "url": "/ships/ms-vulcania",
+          "launchYear": "1926",
+          "builder": "Cantiere Navale Triestino"
+        },
+        {
+          "name": "Neptunia",
+          "path": "ships/neptunia.html",
+          "url": "/ships/neptunia",
+          "launchYear": "1931",
+          "builder": "Cantiere Navale Triestino"
+        },
+        {
+          "name": "Oceania",
+          "path": "ships/oceania.html",
+          "url": "/ships/oceania",
+          "launchYear": "1932",
+          "builder": "Cantieri Riuniti dell’Adriatico"
+        },
+        {
+          "name": "MS Piłsudski (1935)",
+          "path": "ships/ms-pilsudski.html",
+          "url": "/ships/ms-pilsudski",
+          "launchYear": "1934",
+          "builder": "Cantieri Riuniti dell'Adriatico"
+        },
+        {
+          "name": "MS Batory (1936)",
+          "path": "ships/ms-batory.html",
+          "url": "/ships/ms-batory",
+          "launchYear": "1935",
+          "builder": "Cantieri Riuniti dell'Adriatico"
+        },
+        {
+          "name": "SS Raffaello (1965)",
+          "path": "ships/ss-raffaello-1965.html",
+          "url": "/ships/ss-raffaello-1965",
+          "launchYear": "1963",
+          "builder": "Cantieri Riuniti dell’Adriatico, San Marco yard"
+        }
+      ]
+    },
+    {
       "id": "scotland",
       "name": "Scotland",
       "rawValues": [
@@ -1863,60 +1956,108 @@
       ]
     },
     {
-      "id": "monfalcone",
-      "name": "Monfalcone",
+      "id": "virginia",
+      "name": "Virginia",
       "rawValues": [
-        "Monfalcone"
+        "Virginia"
       ],
       "builders": [
-        "Cantiere Navale Triestino",
-        "Cantieri Riuniti dell'Adriatico",
-        "Cantieri Riuniti dell’Adriatico",
-        "Cantieri Riuniti dell’Adriatico, San Marco yard"
+        "Newport News",
+        "Newport News Shipbuilding & Dry Dock Co.",
+        "Newport News Shipbuilding & Dry Dock Co., Newport News"
       ],
       "shipCount": 6,
       "ships": [
         {
-          "name": "MS Vulcania",
-          "path": "ships/ms-vulcania.html",
-          "url": "/ships/ms-vulcania",
-          "launchYear": "1926",
-          "builder": "Cantiere Navale Triestino"
+          "name": "SS California",
+          "path": "ships/ss-california.html",
+          "url": "/ships/ss-california",
+          "launchYear": "1927",
+          "builder": "Newport News"
         },
         {
-          "name": "Neptunia",
-          "path": "ships/neptunia.html",
-          "url": "/ships/neptunia",
+          "name": "SS Virginia",
+          "path": "ships/ss-virginia.html",
+          "url": "/ships/ss-virginia",
+          "launchYear": "1928",
+          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News"
+        },
+        {
+          "name": "SS Pennsylvania",
+          "path": "ships/ss-pennsylvania.html",
+          "url": "/ships/ss-pennsylvania",
+          "launchYear": "1929",
+          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News"
+        },
+        {
+          "name": "SS President Hoover",
+          "path": "ships/ss-president-hoover.html",
+          "url": "/ships/ss-president-hoover",
+          "launchYear": "1930",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
+        },
+        {
+          "name": "SS President Coolidge",
+          "path": "ships/ss-president-coolidge.html",
+          "url": "/ships/ss-president-coolidge",
           "launchYear": "1931",
-          "builder": "Cantiere Navale Triestino"
+          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News"
         },
         {
-          "name": "Oceania",
-          "path": "ships/oceania.html",
-          "url": "/ships/oceania",
-          "launchYear": "1932",
-          "builder": "Cantieri Riuniti dell’Adriatico"
+          "name": "SS United States",
+          "path": "ships/ss-us.html",
+          "url": "/ships/ss-us",
+          "launchYear": "1951",
+          "builder": "Newport News Shipbuilding & Dry Dock Co."
+        }
+      ]
+    },
+    {
+      "id": "la-ciotat",
+      "name": "La Ciotat",
+      "rawValues": [
+        "La Ciotat"
+      ],
+      "builders": [
+        "Chantiers Navals de La Ciotat",
+        "Société Provençale de Constructions Navales"
+      ],
+      "shipCount": 5,
+      "ships": [
+        {
+          "name": "SS André Lebon (1915)",
+          "path": "ships/ss-andre-lebon.html",
+          "url": "/ships/ss-andre-lebon",
+          "launchYear": "1913",
+          "builder": "Chantiers Navals de La Ciotat"
         },
         {
-          "name": "MS Piłsudski (1935)",
-          "path": "ships/ms-pilsudski.html",
-          "url": "/ships/ms-pilsudski",
-          "launchYear": "1934",
-          "builder": "Cantieri Riuniti dell'Adriatico"
+          "name": "SS Champollion (1925)",
+          "path": "ships/ss-champollion.html",
+          "url": "/ships/ss-champollion",
+          "launchYear": "1924",
+          "builder": "Société Provençale de Constructions Navales"
         },
         {
-          "name": "MS Batory (1936)",
-          "path": "ships/ms-batory.html",
-          "url": "/ships/ms-batory",
-          "launchYear": "1935",
-          "builder": "Cantieri Riuniti dell'Adriatico"
+          "name": "SS Mariette Pacha (1926)",
+          "path": "ships/ss-mariette-pacha.html",
+          "url": "/ships/ss-mariette-pacha",
+          "launchYear": "1925",
+          "builder": "Société Provençale de Constructions Navales"
         },
         {
-          "name": "SS Raffaello (1965)",
-          "path": "ships/ss-raffaello-1965.html",
-          "url": "/ships/ss-raffaello-1965",
-          "launchYear": "1963",
-          "builder": "Cantieri Riuniti dell’Adriatico, San Marco yard"
+          "name": "MV Jean Laborde (1931)",
+          "path": "ships/mv-jean-laborde.html",
+          "url": "/ships/mv-jean-laborde",
+          "launchYear": "1929",
+          "builder": "Société Provençale de Constructions Navales"
+        },
+        {
+          "name": "SS Maréchal Joffre (1933)",
+          "path": "ships/ss-marechal-joffre.html",
+          "url": "/ships/ss-marechal-joffre",
+          "launchYear": "1931",
+          "builder": "Société Provençale de Constructions Navales"
         }
       ]
     },
@@ -2002,47 +2143,6 @@
           "url": "/ships/rms-andania",
           "launchYear": "1913",
           "builder": "Scotts Shipbuilding & Engineering Co. Ltd."
-        }
-      ]
-    },
-    {
-      "id": "la-ciotat",
-      "name": "La Ciotat",
-      "rawValues": [
-        "La Ciotat"
-      ],
-      "builders": [
-        "Société Provençale de Constructions Navales"
-      ],
-      "shipCount": 4,
-      "ships": [
-        {
-          "name": "SS Champollion (1925)",
-          "path": "ships/ss-champollion.html",
-          "url": "/ships/ss-champollion",
-          "launchYear": "1924",
-          "builder": "Société Provençale de Constructions Navales"
-        },
-        {
-          "name": "SS Mariette Pacha (1926)",
-          "path": "ships/ss-mariette-pacha.html",
-          "url": "/ships/ss-mariette-pacha",
-          "launchYear": "1925",
-          "builder": "Société Provençale de Constructions Navales"
-        },
-        {
-          "name": "MV Jean Laborde (1931)",
-          "path": "ships/mv-jean-laborde.html",
-          "url": "/ships/mv-jean-laborde",
-          "launchYear": "1929",
-          "builder": "Société Provençale de Constructions Navales"
-        },
-        {
-          "name": "SS Maréchal Joffre (1933)",
-          "path": "ships/ss-marechal-joffre.html",
-          "url": "/ships/ss-marechal-joffre",
-          "launchYear": "1931",
-          "builder": "Société Provençale de Constructions Navales"
         }
       ]
     },
@@ -2216,41 +2316,6 @@
           "url": "/ships/ss-manhattan",
           "launchYear": "1931",
           "builder": "New York Shipbuilding Corporation, Camden"
-        }
-      ]
-    },
-    {
-      "id": "virginia",
-      "name": "Virginia",
-      "rawValues": [
-        "Virginia"
-      ],
-      "builders": [
-        "Newport News",
-        "Newport News Shipbuilding & Dry Dock Co."
-      ],
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "SS California",
-          "path": "ships/ss-california.html",
-          "url": "/ships/ss-california",
-          "launchYear": "1927",
-          "builder": "Newport News"
-        },
-        {
-          "name": "SS President Hoover",
-          "path": "ships/ss-president-hoover.html",
-          "url": "/ships/ss-president-hoover",
-          "launchYear": "1930",
-          "builder": "Newport News Shipbuilding & Dry Dock Co."
-        },
-        {
-          "name": "SS United States",
-          "path": "ships/ss-us.html",
-          "url": "/ships/ss-us",
-          "launchYear": "1951",
-          "builder": "Newport News Shipbuilding & Dry Dock Co."
         }
       ]
     },
@@ -3310,7 +3375,14 @@
       "path": "ships/ms-saturnia.html",
       "url": "/ships/ms-saturnia",
       "launchYear": "1925",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Cantiere Navale Triestino",
+          "builderId": "cantiere-navale-triestino",
+          "location": "Monfalcone",
+          "locationRaw": "Monfalcone"
+        }
+      ]
     },
     {
       "name": "MS Stockholm (1948)",
@@ -4619,7 +4691,14 @@
       "path": "ships/ss-andre-lebon.html",
       "url": "/ships/ss-andre-lebon",
       "launchYear": "1913",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Chantiers Navals de La Ciotat",
+          "builderId": "chantiers-navals-de-la-ciotat",
+          "location": "La Ciotat",
+          "locationRaw": "La Ciotat"
+        }
+      ]
     },
     {
       "name": "SS Andrea Doria",
@@ -5186,7 +5265,14 @@
       "path": "ships/ss-champlain.html",
       "url": "/ships/ss-champlain",
       "launchYear": "1931",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Chantiers de Penhoët",
+          "builderId": "chantiers-de-penhoet",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire"
+        }
+      ]
     },
     {
       "name": "SS Champollion (1925)",
@@ -5745,7 +5831,14 @@
       "path": "ships/ss-france-1912.html",
       "url": "/ships/ss-france-1912",
       "launchYear": "1910",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Chantiers de Penhoët",
+          "builderId": "chantiers-de-penhoet",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire"
+        }
+      ]
     },
     {
       "name": "SS France",
@@ -6248,7 +6341,14 @@
       "path": "ships/ss-latlantique.html",
       "url": "/ships/ss-latlantique",
       "launchYear": "1930",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët",
+          "builderId": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire"
+        }
+      ]
     },
     {
       "name": "SS Laurentic",
@@ -6975,7 +7075,14 @@
       "path": "ships/ss-pasteur.html",
       "url": "/ships/ss-pasteur",
       "launchYear": "1938",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Chantiers de Penhoët",
+          "builderId": "chantiers-de-penhoet",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire"
+        }
+      ]
     },
     {
       "name": "SS Patricia",
@@ -7010,7 +7117,14 @@
       "path": "ships/ss-pennsylvania.html",
       "url": "/ships/ss-pennsylvania",
       "launchYear": "1929",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "builderId": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
+          "location": "Virginia",
+          "locationRaw": "Virginia"
+        }
+      ]
     },
     {
       "name": "SS Persic",
@@ -7045,7 +7159,14 @@
       "path": "ships/ss-president-coolidge.html",
       "url": "/ships/ss-president-coolidge",
       "launchYear": "1931",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "builderId": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
+          "location": "Virginia",
+          "locationRaw": "Virginia"
+        }
+      ]
     },
     {
       "name": "SS President Hoover",
@@ -7542,7 +7663,14 @@
       "path": "ships/ss-virginia.html",
       "url": "/ships/ss-virginia",
       "launchYear": "1928",
-      "assignments": []
+      "assignments": [
+        {
+          "builder": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "builderId": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
+          "location": "Virginia",
+          "locationRaw": "Virginia"
+        }
+      ]
     },
     {
       "name": "SS Volendam",

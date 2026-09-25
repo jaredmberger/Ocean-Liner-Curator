@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-25T05:01:32.132Z",
+  "generatedAt": "2026-09-25T05:18:12.709Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 339,
     "shipGuides": 327,
-    "canonicalBuilders": 107,
+    "canonicalBuilders": 104,
     "guidesWithBuilder": 327,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
@@ -156,25 +156,6 @@
       ]
     },
     {
-      "id": "newport-news-shipbuilding-and-dry-dock-co",
-      "name": "Newport News Shipbuilding & Dry Dock Co.",
-      "shipCount": 8,
-      "firstLaunchYear": 1927,
-      "lastLaunchYear": 1951,
-      "locations": [
-        "Newport News, Virginia, USA",
-        "Virginia",
-        "Virginia, USA"
-      ],
-      "operators": [
-        "Dollar Steamship Line",
-        "Dollar Steamship Lines",
-        "Panama Pacific Line",
-        "United States Lines",
-        "Ward Line / AGWI interests"
-      ]
-    },
-    {
       "id": "swan-hunter-and-wigham-richardson",
       "name": "Swan Hunter & Wigham Richardson",
       "shipCount": 6,
@@ -227,6 +208,41 @@
       ]
     },
     {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "shipCount": 5,
+      "firstLaunchYear": 1905,
+      "lastLaunchYear": 1938,
+      "locations": [
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "operators": [
+        "Compagnie Générale Transatlantique",
+        "Compagnie Générale Transatlantique (CGT) / “French Line”",
+        "Compagnie Générale Transatlantique (French Line)",
+        "Compagnie de Navigation Sud-Atlantique"
+      ]
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co",
+      "name": "Newport News Shipbuilding & Dry Dock Co.",
+      "shipCount": 5,
+      "firstLaunchYear": 1927,
+      "lastLaunchYear": 1951,
+      "locations": [
+        "Newport News, Virginia, USA",
+        "Virginia",
+        "Virginia, USA"
+      ],
+      "operators": [
+        "Dollar Steamship Line",
+        "Panama Pacific Line",
+        "United States Lines",
+        "Ward Line / AGWI interests"
+      ]
+    },
+    {
       "id": "ag-vulcan-stettin",
       "name": "AG Vulcan, Stettin",
       "shipCount": 4,
@@ -238,21 +254,6 @@
       "operators": [
         "Hamburg-Amerika Line (HAPAG)",
         "Norddeutscher Lloyd (North German Lloyd)"
-      ]
-    },
-    {
-      "id": "ag-weser",
-      "name": "AG Weser",
-      "shipCount": 4,
-      "firstLaunchYear": null,
-      "lastLaunchYear": 1920,
-      "locations": [
-        "Bremen"
-      ],
-      "operators": [
-        "Norddeutscher Lloyd",
-        "Oceanic Steam Navigation Company / White Star Line",
-        "United American Lines / Hamburg America Line"
       ]
     }
   ],
@@ -438,27 +439,6 @@
       "shipCount": 9
     },
     {
-      "id": "newport-news-shipbuilding-and-dry-dock-co",
-      "name": "Newport News Shipbuilding & Dry Dock Co.",
-      "names": [
-        "Newport News Shipbuilding",
-        "Newport News Shipbuilding & Dry Dock Co.",
-        "Newport News Shipbuilding & Dry Dock Company",
-        "Newport News Shipbuilding & Drydock Company",
-        "Newport News Shipbuilding and Dry Dock Company"
-      ],
-      "rawValues": [
-        "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)",
-        "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)",
-        "Newport News Shipbuilding & Dry Dock Company",
-        "Newport News Shipbuilding & Drydock Company",
-        "Newport News Shipbuilding and Dry Dock Company",
-        "Newport News Shipbuilding and Dry Dock Company, Virginia",
-        "Newport News Shipbuilding, Virginia"
-      ],
-      "shipCount": 8
-    },
-    {
       "id": "swan-hunter-and-wigham-richardson",
       "name": "Swan Hunter & Wigham Richardson",
       "names": [
@@ -505,6 +485,37 @@
         "Ansaldo, Sestri Ponente, Genoa",
         "Ansaldo, Sestri Ponente, Genoa · hull no. 296",
         "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
+      ],
+      "shipCount": 5
+    },
+    {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "names": [
+        "Chantiers de Penhoët"
+      ],
+      "rawValues": [
+        "Chantiers de Penhoët (Saint-Nazaire, France)",
+        "Chantiers de Penhoët, Saint-Nazaire",
+        "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
+      ],
+      "shipCount": 5
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co",
+      "name": "Newport News Shipbuilding & Dry Dock Co.",
+      "names": [
+        "Newport News Shipbuilding",
+        "Newport News Shipbuilding & Dry Dock Co.",
+        "Newport News Shipbuilding & Dry Dock Company",
+        "Newport News Shipbuilding and Dry Dock Company"
+      ],
+      "rawValues": [
+        "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)",
+        "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)",
+        "Newport News Shipbuilding & Dry Dock Company",
+        "Newport News Shipbuilding and Dry Dock Company, Virginia",
+        "Newport News Shipbuilding, Virginia"
       ],
       "shipCount": 5
     },
@@ -657,8 +668,8 @@
         "Ateliers et Chantiers de Saint-Nazaire Penhoët"
       ],
       "rawValues": [
-        "Ateliers et Chantiers de Saint-Nazaire Penhoët · yard P6",
-        "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire"
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire",
+        "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire · yard P6"
       ],
       "shipCount": 3
     },
@@ -673,6 +684,19 @@
         "Barclay Curle & Co., Glasgow",
         "Barclay, Curle & Co., Glasgow · yard no. 467",
         "Barclay, Curle & Co., Glasgow · yard no. 603"
+      ],
+      "shipCount": 3
+    },
+    {
+      "id": "cantiere-navale-triestino",
+      "name": "Cantiere Navale Triestino",
+      "names": [
+        "Cantiere Navale Triestino"
+      ],
+      "rawValues": [
+        "Cantiere Navale Triestino, Monfalcone",
+        "Cantiere Navale Triestino, Monfalcone · yard no. 160",
+        "Cantiere Navale Triestino, Monfalcone · yard no. 161"
       ],
       "shipCount": 3
     },
@@ -700,6 +724,17 @@
         "F. Schichau, Danzig",
         "F. Schichau, Danzig · yard no. 891",
         "F. Schichau, Danzig · yard no. 929"
+      ],
+      "shipCount": 3
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
+      "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+      "names": [
+        "Newport News Shipbuilding & Dry Dock Co., Newport News"
+      ],
+      "rawValues": [
+        "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
       ],
       "shipCount": 3
     },
@@ -755,18 +790,6 @@
       "shipCount": 2
     },
     {
-      "id": "cantiere-navale-triestino",
-      "name": "Cantiere Navale Triestino",
-      "names": [
-        "Cantiere Navale Triestino"
-      ],
-      "rawValues": [
-        "Cantiere Navale Triestino, Monfalcone",
-        "Cantiere Navale Triestino, Monfalcone · yard no. 161"
-      ],
-      "shipCount": 2
-    },
-    {
       "id": "chantiers-de-l-atlantique",
       "name": "Chantiers de l'Atlantique",
       "names": [
@@ -776,18 +799,6 @@
       "rawValues": [
         "Chantiers de l'Atlantique, Saint-Nazaire",
         "Chantiers de l’Atlantique, Saint-Nazaire · yard G19"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "chantiers-de-penhoet",
-      "name": "Chantiers de Penhoët",
-      "names": [
-        "Chantiers de Penhoët"
-      ],
-      "rawValues": [
-        "Chantiers de Penhoët (Saint-Nazaire, France)",
-        "Chantiers de Penhoët, Saint-Nazaire"
       ],
       "shipCount": 2
     },
@@ -1139,17 +1150,6 @@
       "shipCount": 1
     },
     {
-      "id": "chantiers-de-penhoet-saint-nazaire",
-      "name": "Chantiers de Penhoët / Saint-Nazaire",
-      "names": [
-        "Chantiers de Penhoët / Saint-Nazaire"
-      ],
-      "rawValues": [
-        "Chantiers de Penhoët / Saint-Nazaire · yard designation R8 commonly cited"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "chantiers-et-ateliers-de-provence",
       "name": "Chantiers et Ateliers de Provence",
       "names": [
@@ -1167,7 +1167,7 @@
         "Chantiers Navals de La Ciotat"
       ],
       "rawValues": [
-        "Chantiers Navals de La Ciotat"
+        "Chantiers Navals de La Ciotat, La Ciotat"
       ],
       "shipCount": 1
     },
@@ -1392,17 +1392,6 @@
       "shipCount": 1
     },
     {
-      "id": "monfalcone-shipyard",
-      "name": "Monfalcone shipyard",
-      "names": [
-        "Monfalcone shipyard"
-      ],
-      "rawValues": [
-        "Monfalcone shipyard · yard no. 160; contemporary corporate context tied to Cantiere Navale Triestino, later sources often use CRDA"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "n-v-nederlandsche-scheepsbouw-maatschappij",
       "name": "N.V. Nederlandsche Scheepsbouw-Maatschappij",
       "names": [
@@ -1476,28 +1465,6 @@
       ],
       "rawValues": [
         "Robert Steele & Co., Greenock"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "saint-nazaire-penhoet",
-      "name": "Saint-Nazaire / Penhoët",
-      "names": [
-        "Saint-Nazaire / Penhoët"
-      ],
-      "rawValues": [
-        "Saint-Nazaire / Penhoët"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "saint-nazaire-penhoet-shipbuilding-complex",
-      "name": "Saint-Nazaire / Penhoët shipbuilding complex",
-      "names": [
-        "Saint-Nazaire / Penhoët shipbuilding complex"
-      ],
-      "rawValues": [
-        "Saint-Nazaire / Penhoët shipbuilding complex"
       ],
       "shipCount": 1
     },
@@ -1797,12 +1764,12 @@
       "path": "ships/ms-saturnia.html",
       "url": "/ships/ms-saturnia",
       "launchYear": "1925",
-      "builderRaw": "Monfalcone shipyard · yard no. 160; contemporary corporate context tied to Cantiere Navale Triestino, later sources often use CRDA",
+      "builderRaw": "Cantiere Navale Triestino, Monfalcone · yard no. 160",
       "builders": [
         {
-          "id": "monfalcone-shipyard",
-          "name": "Monfalcone shipyard",
-          "raw": "Monfalcone shipyard · yard no. 160; contemporary corporate context tied to Cantiere Navale Triestino, later sources often use CRDA"
+          "id": "cantiere-navale-triestino",
+          "name": "Cantiere Navale Triestino",
+          "raw": "Cantiere Navale Triestino, Monfalcone · yard no. 160"
         }
       ]
     },
@@ -3113,12 +3080,12 @@
       "path": "ships/ss-andre-lebon.html",
       "url": "/ships/ss-andre-lebon",
       "launchYear": "1913",
-      "builderRaw": "Chantiers Navals de La Ciotat",
+      "builderRaw": "Chantiers Navals de La Ciotat, La Ciotat",
       "builders": [
         {
           "id": "chantiers-navals-de-la-ciotat",
           "name": "Chantiers Navals de La Ciotat",
-          "raw": "Chantiers Navals de La Ciotat"
+          "raw": "Chantiers Navals de La Ciotat, La Ciotat"
         }
       ]
     },
@@ -3692,12 +3659,12 @@
       "path": "ships/ss-champlain.html",
       "url": "/ships/ss-champlain",
       "launchYear": "1931",
-      "builderRaw": "Saint-Nazaire / Penhoët",
+      "builderRaw": "Chantiers de Penhoët, Saint-Nazaire",
       "builders": [
         {
-          "id": "saint-nazaire-penhoet",
-          "name": "Saint-Nazaire / Penhoët",
-          "raw": "Saint-Nazaire / Penhoët"
+          "id": "chantiers-de-penhoet",
+          "name": "Chantiers de Penhoët",
+          "raw": "Chantiers de Penhoët, Saint-Nazaire"
         }
       ]
     },
@@ -4252,12 +4219,12 @@
       "path": "ships/ss-france-1912.html",
       "url": "/ships/ss-france-1912",
       "launchYear": "1910",
-      "builderRaw": "Saint-Nazaire / Penhoët shipbuilding complex",
+      "builderRaw": "Chantiers de Penhoët, Saint-Nazaire",
       "builders": [
         {
-          "id": "saint-nazaire-penhoet-shipbuilding-complex",
-          "name": "Saint-Nazaire / Penhoët shipbuilding complex",
-          "raw": "Saint-Nazaire / Penhoët shipbuilding complex"
+          "id": "chantiers-de-penhoet",
+          "name": "Chantiers de Penhoët",
+          "raw": "Chantiers de Penhoët, Saint-Nazaire"
         }
       ]
     },
@@ -4756,12 +4723,12 @@
       "path": "ships/ss-latlantique.html",
       "url": "/ships/ss-latlantique",
       "launchYear": "1930",
-      "builderRaw": "Ateliers et Chantiers de Saint-Nazaire Penhoët · yard P6",
+      "builderRaw": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire · yard P6",
       "builders": [
         {
           "id": "ateliers-et-chantiers-de-saint-nazaire-penhoet",
           "name": "Ateliers et Chantiers de Saint-Nazaire Penhoët",
-          "raw": "Ateliers et Chantiers de Saint-Nazaire Penhoët · yard P6"
+          "raw": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire · yard P6"
         }
       ]
     },
@@ -5484,12 +5451,12 @@
       "path": "ships/ss-pasteur.html",
       "url": "/ships/ss-pasteur",
       "launchYear": "1938",
-      "builderRaw": "Chantiers de Penhoët / Saint-Nazaire · yard designation R8 commonly cited",
+      "builderRaw": "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited",
       "builders": [
         {
-          "id": "chantiers-de-penhoet-saint-nazaire",
-          "name": "Chantiers de Penhoët / Saint-Nazaire",
-          "raw": "Chantiers de Penhoët / Saint-Nazaire · yard designation R8 commonly cited"
+          "id": "chantiers-de-penhoet",
+          "name": "Chantiers de Penhoët",
+          "raw": "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
         }
       ]
     },
@@ -5526,12 +5493,12 @@
       "path": "ships/ss-pennsylvania.html",
       "url": "/ships/ss-pennsylvania",
       "launchYear": "1929",
-      "builderRaw": "Newport News Shipbuilding & Drydock Company",
+      "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia",
       "builders": [
         {
-          "id": "newport-news-shipbuilding-and-dry-dock-co",
-          "name": "Newport News Shipbuilding & Dry Dock Co.",
-          "raw": "Newport News Shipbuilding & Drydock Company"
+          "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
+          "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "raw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
         }
       ]
     },
@@ -5568,12 +5535,12 @@
       "path": "ships/ss-president-coolidge.html",
       "url": "/ships/ss-president-coolidge",
       "launchYear": "1931",
-      "builderRaw": "Newport News Shipbuilding and Dry Dock Company",
+      "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia",
       "builders": [
         {
-          "id": "newport-news-shipbuilding-and-dry-dock-co",
-          "name": "Newport News Shipbuilding & Dry Dock Co.",
-          "raw": "Newport News Shipbuilding and Dry Dock Company"
+          "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
+          "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "raw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
         }
       ]
     },
@@ -6072,12 +6039,12 @@
       "path": "ships/ss-virginia.html",
       "url": "/ships/ss-virginia",
       "launchYear": "1928",
-      "builderRaw": "Newport News Shipbuilding & Drydock Company",
+      "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia",
       "builders": [
         {
-          "id": "newport-news-shipbuilding-and-dry-dock-co",
-          "name": "Newport News Shipbuilding & Dry Dock Co.",
-          "raw": "Newport News Shipbuilding & Drydock Company"
+          "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
+          "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+          "raw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
         }
       ]
     },

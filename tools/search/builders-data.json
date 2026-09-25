@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-25T05:01:32.132Z",
+  "generatedAt": "2026-09-25T05:18:12.709Z",
   "summary": {
     "shipGuides": 327,
-    "canonicalBuilders": 107,
+    "canonicalBuilders": 104,
     "guidesWithBuilder": 327
   },
   "builders": [
@@ -1130,76 +1130,6 @@
       ]
     },
     {
-      "id": "newport-news-shipbuilding-and-dry-dock-co",
-      "name": "Newport News Shipbuilding & Dry Dock Co.",
-      "shipCount": 8,
-      "locations": [
-        "Newport News, Virginia, USA",
-        "Virginia",
-        "Virginia, USA"
-      ],
-      "firstLaunchYear": 1927,
-      "lastLaunchYear": 1951,
-      "ships": [
-        {
-          "name": "SS California",
-          "url": "/ships/ss-california",
-          "launchYear": "1927",
-          "operator": "Panama Pacific Line",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Company · Newport News, Virginia"
-        },
-        {
-          "name": "SS Virginia",
-          "url": "/ships/ss-virginia",
-          "launchYear": "1928",
-          "operator": "Panama Pacific Line",
-          "builderRaw": "Newport News Shipbuilding & Drydock Company"
-        },
-        {
-          "name": "SS Pennsylvania",
-          "url": "/ships/ss-pennsylvania",
-          "launchYear": "1929",
-          "operator": "Panama Pacific Line",
-          "builderRaw": "Newport News Shipbuilding & Drydock Company"
-        },
-        {
-          "name": "SS Morro Castle",
-          "url": "/ships/ss-morro-castle",
-          "launchYear": "1930",
-          "operator": "Ward Line / AGWI interests",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)"
-        },
-        {
-          "name": "SS President Hoover",
-          "url": "/ships/ss-president-hoover",
-          "launchYear": "1930",
-          "operator": "Dollar Steamship Line",
-          "builderRaw": "Newport News Shipbuilding and Dry Dock Company, Virginia"
-        },
-        {
-          "name": "SS President Coolidge",
-          "url": "/ships/ss-president-coolidge",
-          "launchYear": "1931",
-          "operator": "Dollar Steamship Lines",
-          "builderRaw": "Newport News Shipbuilding and Dry Dock Company"
-        },
-        {
-          "name": "SS America",
-          "url": "/ships/ss-america",
-          "launchYear": "1939",
-          "operator": "United States Lines",
-          "builderRaw": "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)"
-        },
-        {
-          "name": "SS United States",
-          "url": "/ships/ss-us",
-          "launchYear": "1951",
-          "operator": "United States Lines",
-          "builderRaw": "Newport News Shipbuilding, Virginia"
-        }
-      ]
-    },
-    {
       "id": "swan-hunter-and-wigham-richardson",
       "name": "Swan Hunter & Wigham Richardson",
       "shipCount": 6,
@@ -1355,6 +1285,103 @@
           "launchYear": "1962",
           "operator": "Italia Società di Navigazione / Italian Line",
           "builderRaw": "Ansaldo, Sestri Ponente, Genoa"
+        }
+      ]
+    },
+    {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "shipCount": 5,
+      "locations": [
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "firstLaunchYear": 1905,
+      "lastLaunchYear": 1938,
+      "ships": [
+        {
+          "name": "SS La Provence",
+          "url": "/ships/ss-la-provence",
+          "launchYear": "1905",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+        },
+        {
+          "name": "SS France (1912)",
+          "url": "/ships/ss-france-1912",
+          "launchYear": "1910",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+        },
+        {
+          "name": "SS Champlain",
+          "url": "/ships/ss-champlain",
+          "launchYear": "1931",
+          "operator": "Compagnie Générale Transatlantique",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+        },
+        {
+          "name": "SS Normandie",
+          "url": "/ships/ss-normandie",
+          "launchYear": "1932",
+          "operator": "Compagnie Générale Transatlantique (CGT) / “French Line”",
+          "builderRaw": "Chantiers de Penhoët (Saint-Nazaire, France)"
+        },
+        {
+          "name": "SS Pasteur",
+          "url": "/ships/ss-pasteur",
+          "launchYear": "1938",
+          "operator": "Compagnie de Navigation Sud-Atlantique",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
+        }
+      ]
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co",
+      "name": "Newport News Shipbuilding & Dry Dock Co.",
+      "shipCount": 5,
+      "locations": [
+        "Newport News, Virginia, USA",
+        "Virginia",
+        "Virginia, USA"
+      ],
+      "firstLaunchYear": 1927,
+      "lastLaunchYear": 1951,
+      "ships": [
+        {
+          "name": "SS California",
+          "url": "/ships/ss-california",
+          "launchYear": "1927",
+          "operator": "Panama Pacific Line",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Company · Newport News, Virginia"
+        },
+        {
+          "name": "SS Morro Castle",
+          "url": "/ships/ss-morro-castle",
+          "launchYear": "1930",
+          "operator": "Ward Line / AGWI interests",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co. (Newport News, Virginia, USA)"
+        },
+        {
+          "name": "SS President Hoover",
+          "url": "/ships/ss-president-hoover",
+          "launchYear": "1930",
+          "operator": "Dollar Steamship Line",
+          "builderRaw": "Newport News Shipbuilding and Dry Dock Company, Virginia"
+        },
+        {
+          "name": "SS America",
+          "url": "/ships/ss-america",
+          "launchYear": "1939",
+          "operator": "United States Lines",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co. (Virginia, USA)"
+        },
+        {
+          "name": "SS United States",
+          "url": "/ships/ss-us",
+          "launchYear": "1951",
+          "operator": "United States Lines",
+          "builderRaw": "Newport News Shipbuilding, Virginia"
         }
       ]
     },
@@ -1805,7 +1832,7 @@
           "url": "/ships/ss-latlantique",
           "launchYear": "1930",
           "operator": "Compagnie de Navigation Sud-Atlantique",
-          "builderRaw": "Ateliers et Chantiers de Saint-Nazaire Penhoët · yard P6"
+          "builderRaw": "Ateliers et Chantiers de Saint-Nazaire Penhoët, Saint-Nazaire · yard P6"
         }
       ]
     },
@@ -1839,6 +1866,39 @@
           "launchYear": "1924",
           "operator": "Peninsular & Oriental Steam Navigation Company (P&O)",
           "builderRaw": "Barclay, Curle & Co., Glasgow · yard no. 603"
+        }
+      ]
+    },
+    {
+      "id": "cantiere-navale-triestino",
+      "name": "Cantiere Navale Triestino",
+      "shipCount": 3,
+      "locations": [
+        "Monfalcone"
+      ],
+      "firstLaunchYear": 1925,
+      "lastLaunchYear": 1931,
+      "ships": [
+        {
+          "name": "MS Saturnia",
+          "url": "/ships/ms-saturnia",
+          "launchYear": "1925",
+          "operator": "Cosulich Società Triestina di Navigazione",
+          "builderRaw": "Cantiere Navale Triestino, Monfalcone · yard no. 160"
+        },
+        {
+          "name": "MS Vulcania",
+          "url": "/ships/ms-vulcania",
+          "launchYear": "1926",
+          "operator": "Cosulich Società Triestina di Navigazione",
+          "builderRaw": "Cantiere Navale Triestino, Monfalcone · yard no. 161"
+        },
+        {
+          "name": "Neptunia",
+          "url": "/ships/neptunia",
+          "launchYear": "1931",
+          "operator": "Cosulich Società Triestina di Navigazione",
+          "builderRaw": "Cantiere Navale Triestino, Monfalcone"
         }
       ]
     },
@@ -1905,6 +1965,39 @@
           "launchYear": "1922",
           "operator": "Norddeutscher Lloyd (North German Lloyd), Bremen",
           "builderRaw": "F. Schichau, Danzig · yard no. 929"
+        }
+      ]
+    },
+    {
+      "id": "newport-news-shipbuilding-and-dry-dock-co-newport-news",
+      "name": "Newport News Shipbuilding & Dry Dock Co., Newport News",
+      "shipCount": 3,
+      "locations": [
+        "Virginia"
+      ],
+      "firstLaunchYear": 1928,
+      "lastLaunchYear": 1931,
+      "ships": [
+        {
+          "name": "SS Virginia",
+          "url": "/ships/ss-virginia",
+          "launchYear": "1928",
+          "operator": "Panama Pacific Line",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
+        },
+        {
+          "name": "SS Pennsylvania",
+          "url": "/ships/ss-pennsylvania",
+          "launchYear": "1929",
+          "operator": "Panama Pacific Line",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
+        },
+        {
+          "name": "SS President Coolidge",
+          "url": "/ships/ss-president-coolidge",
+          "launchYear": "1931",
+          "operator": "Dollar Steamship Lines",
+          "builderRaw": "Newport News Shipbuilding & Dry Dock Co., Newport News, Virginia"
         }
       ]
     },
@@ -2029,32 +2122,6 @@
       ]
     },
     {
-      "id": "cantiere-navale-triestino",
-      "name": "Cantiere Navale Triestino",
-      "shipCount": 2,
-      "locations": [
-        "Monfalcone"
-      ],
-      "firstLaunchYear": 1926,
-      "lastLaunchYear": 1931,
-      "ships": [
-        {
-          "name": "MS Vulcania",
-          "url": "/ships/ms-vulcania",
-          "launchYear": "1926",
-          "operator": "Cosulich Società Triestina di Navigazione",
-          "builderRaw": "Cantiere Navale Triestino, Monfalcone · yard no. 161"
-        },
-        {
-          "name": "Neptunia",
-          "url": "/ships/neptunia",
-          "launchYear": "1931",
-          "operator": "Cosulich Società Triestina di Navigazione",
-          "builderRaw": "Cantiere Navale Triestino, Monfalcone"
-        }
-      ]
-    },
-    {
       "id": "chantiers-de-l-atlantique",
       "name": "Chantiers de l'Atlantique",
       "shipCount": 2,
@@ -2077,33 +2144,6 @@
           "launchYear": "1960",
           "operator": "Compagnie Générale Transatlantique / French Line",
           "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire · yard G19"
-        }
-      ]
-    },
-    {
-      "id": "chantiers-de-penhoet",
-      "name": "Chantiers de Penhoët",
-      "shipCount": 2,
-      "locations": [
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
-      ],
-      "firstLaunchYear": 1905,
-      "lastLaunchYear": 1932,
-      "ships": [
-        {
-          "name": "SS La Provence",
-          "url": "/ships/ss-la-provence",
-          "launchYear": "1905",
-          "operator": "Compagnie Générale Transatlantique (French Line)",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
-        },
-        {
-          "name": "SS Normandie",
-          "url": "/ships/ss-normandie",
-          "launchYear": "1932",
-          "operator": "Compagnie Générale Transatlantique (CGT) / “French Line”",
-          "builderRaw": "Chantiers de Penhoët (Saint-Nazaire, France)"
         }
       ]
     },
@@ -2778,23 +2818,6 @@
       ]
     },
     {
-      "id": "chantiers-de-penhoet-saint-nazaire",
-      "name": "Chantiers de Penhoët / Saint-Nazaire",
-      "shipCount": 1,
-      "locations": [],
-      "firstLaunchYear": 1938,
-      "lastLaunchYear": 1938,
-      "ships": [
-        {
-          "name": "SS Pasteur",
-          "url": "/ships/ss-pasteur",
-          "launchYear": "1938",
-          "operator": "Compagnie de Navigation Sud-Atlantique",
-          "builderRaw": "Chantiers de Penhoët / Saint-Nazaire · yard designation R8 commonly cited"
-        }
-      ]
-    },
-    {
       "id": "chantiers-et-ateliers-de-provence",
       "name": "Chantiers et Ateliers de Provence",
       "shipCount": 1,
@@ -2817,7 +2840,9 @@
       "id": "chantiers-navals-de-la-ciotat",
       "name": "Chantiers Navals de La Ciotat",
       "shipCount": 1,
-      "locations": [],
+      "locations": [
+        "La Ciotat"
+      ],
       "firstLaunchYear": 1913,
       "lastLaunchYear": 1913,
       "ships": [
@@ -2826,7 +2851,7 @@
           "url": "/ships/ss-andre-lebon",
           "launchYear": "1913",
           "operator": "Compagnie des Messageries Maritimes",
-          "builderRaw": "Chantiers Navals de La Ciotat"
+          "builderRaw": "Chantiers Navals de La Ciotat, La Ciotat"
         }
       ]
     },
@@ -3211,23 +3236,6 @@
       ]
     },
     {
-      "id": "monfalcone-shipyard",
-      "name": "Monfalcone shipyard",
-      "shipCount": 1,
-      "locations": [],
-      "firstLaunchYear": 1925,
-      "lastLaunchYear": 1925,
-      "ships": [
-        {
-          "name": "MS Saturnia",
-          "url": "/ships/ms-saturnia",
-          "launchYear": "1925",
-          "operator": "Cosulich Società Triestina di Navigazione",
-          "builderRaw": "Monfalcone shipyard · yard no. 160; contemporary corporate context tied to Cantiere Navale Triestino, later sources often use CRDA"
-        }
-      ]
-    },
-    {
       "id": "n-v-nederlandsche-scheepsbouw-maatschappij",
       "name": "N.V. Nederlandsche Scheepsbouw-Maatschappij",
       "shipCount": 1,
@@ -3357,40 +3365,6 @@
           "launchYear": "1844",
           "operator": "Cunard Line",
           "builderRaw": "Robert Steele & Co., Greenock"
-        }
-      ]
-    },
-    {
-      "id": "saint-nazaire-penhoet",
-      "name": "Saint-Nazaire / Penhoët",
-      "shipCount": 1,
-      "locations": [],
-      "firstLaunchYear": 1931,
-      "lastLaunchYear": 1931,
-      "ships": [
-        {
-          "name": "SS Champlain",
-          "url": "/ships/ss-champlain",
-          "launchYear": "1931",
-          "operator": "Compagnie Générale Transatlantique",
-          "builderRaw": "Saint-Nazaire / Penhoët"
-        }
-      ]
-    },
-    {
-      "id": "saint-nazaire-penhoet-shipbuilding-complex",
-      "name": "Saint-Nazaire / Penhoët shipbuilding complex",
-      "shipCount": 1,
-      "locations": [],
-      "firstLaunchYear": 1910,
-      "lastLaunchYear": 1910,
-      "ships": [
-        {
-          "name": "SS France (1912)",
-          "url": "/ships/ss-france-1912",
-          "launchYear": "1910",
-          "operator": "Compagnie Générale Transatlantique (French Line)",
-          "builderRaw": "Saint-Nazaire / Penhoët shipbuilding complex"
         }
       ]
     },
