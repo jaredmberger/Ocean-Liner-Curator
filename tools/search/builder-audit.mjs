@@ -317,3 +317,4 @@ if (variantGroups.length) console.log('Builder naming/location variants:', varia
   notes: group.notes,
   shipCount: group.shipCount
 })));
+if (suspiciousLaunchYears.length) console.log('Suspicious launch dates without year:', suspiciousLaunchYears.slice(0, 25));
