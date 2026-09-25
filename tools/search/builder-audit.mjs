@@ -57,13 +57,37 @@ function splitBuilder(raw) {
     }
   }
 
-  const lastComma = working.lastIndexOf(',');
-  if (lastComma > 0) {
-    const before = clean(working.slice(0, lastComma));
-    const tail = clean(working.slice(lastComma + 1));
-    if (tail && !corporateTailPattern.test(tail) && tail.length <= 48) {
-      working = before;
-      locations.unshift(tail);
+  // Prefer a two-part geographic tail when both trailing comma-delimited
+  // segments look like locations. This keeps values such as
+  // "Newport News, Virginia" or "Queen's Island, Belfast" together instead
+  // of accidentally folding the first place name into the builder identity.
+  const commaParts = working.split(',').map(clean);
+  if (commaParts.length >= 3) {
+    const penultimate = commaParts.at(-2);
+    const final = commaParts.at(-1);
+    if (
+      penultimate &&
+      final &&
+      !penultimate.includes(';') &&
+      !corporateTailPattern.test(penultimate) &&
+      !corporateTailPattern.test(final) &&
+      penultimate.length <= 40 &&
+      final.length <= 32
+    ) {
+      working = clean(commaParts.slice(0, -2).join(', '));
+      locations.unshift(`${penultimate}, ${final}`);
+    }
+  }
+
+  if (!locations.length) {
+    const lastComma = working.lastIndexOf(',');
+    if (lastComma > 0) {
+      const before = clean(working.slice(0, lastComma));
+      const tail = clean(working.slice(lastComma + 1));
+      if (tail && !corporateTailPattern.test(tail) && tail.length <= 48) {
+        working = before;
+        locations.unshift(tail);
+      }
     }
   }
 
