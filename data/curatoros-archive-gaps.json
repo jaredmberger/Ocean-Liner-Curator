@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T23:28:09.805Z",
+  "generatedAt": "2026-09-25T04:58:19.301Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -22,12 +22,26 @@
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 22,
-    "unresolvedSisterMentions": 8,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 6
+    "explicitSisterLinks": 36,
+    "unresolvedSisterMentions": 16,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 11
   },
   "signals": {
     "sisterShipResearchCandidates": [
+      {
+        "ship": "RMS Cambria",
+        "path": "ships/rms-cambria-1845.html",
+        "mentioned": "Hibernia",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS Bergensfjord",
+        "path": "ships/ss-bergensfjord.html",
+        "mentioned": "Kristianiafjord",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
       {
         "ship": "SS Bothnia",
         "path": "ships/ss-bothnia.html",
@@ -36,9 +50,9 @@
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
-        "ship": "SS Cathay",
-        "path": "ships/ss-cathay-1924.html",
-        "mentioned": "Algeria",
+        "ship": "SS Bretagne",
+        "path": "ships/ss-bretagne.html",
+        "mentioned": "Provence",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -46,6 +60,13 @@
         "ship": "SS City of Paris",
         "path": "ships/ss-city-of-paris.html",
         "mentioned": "Cunard",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS Cleveland",
+        "path": "ships/ss-cleveland.html",
+        "mentioned": "Cincinnati",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -64,14 +85,49 @@
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
+        "ship": "SS Minnesota",
+        "path": "ships/ss-minnesota.html",
+        "mentioned": "Dakota",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
         "ship": "SS Scharnhorst",
         "path": "ships/ss-scharnhorst.html",
-        "mentioned": "Werk AG Weser",
+        "mentioned": "Potsdam",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS Winifredian",
+        "path": "ships/ss-winifredian.html",
+        "mentioned": "Devonian",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       }
     ],
     "unresolvedSisterMentions": [
+      {
+        "ship": "MV Georgic",
+        "path": "ships/mv-georgic.html",
+        "mentioned": "Britannic",
+        "candidateCount": 2,
+        "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
+      {
+        "ship": "RMS Cambria",
+        "path": "ships/rms-cambria-1845.html",
+        "mentioned": "Hibernia",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "RMS Carmania",
+        "path": "ships/rms-carmania.html",
+        "mentioned": "Caronia",
+        "candidateCount": 2,
+        "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
       {
         "ship": "RMS Olympic",
         "path": "ships/rms-olympic.html",
@@ -80,6 +136,13 @@
         "signal": "Ambiguous archive match; identity disambiguation needed"
       },
       {
+        "ship": "SS Bergensfjord",
+        "path": "ships/ss-bergensfjord.html",
+        "mentioned": "Kristianiafjord",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
         "ship": "SS Bothnia",
         "path": "ships/ss-bothnia.html",
         "mentioned": "Gallia",
@@ -87,9 +150,9 @@
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
-        "ship": "SS Cathay",
-        "path": "ships/ss-cathay-1924.html",
-        "mentioned": "Algeria",
+        "ship": "SS Bretagne",
+        "path": "ships/ss-bretagne.html",
+        "mentioned": "Provence",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -97,6 +160,13 @@
         "ship": "SS City of Paris",
         "path": "ships/ss-city-of-paris.html",
         "mentioned": "Cunard",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS Cleveland",
+        "path": "ships/ss-cleveland.html",
+        "mentioned": "Cincinnati",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -122,9 +192,30 @@
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
+        "ship": "SS Minnesota",
+        "path": "ships/ss-minnesota.html",
+        "mentioned": "Dakota",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS Orion",
+        "path": "ships/ss-orion.html",
+        "mentioned": "Orcades",
+        "candidateCount": 2,
+        "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
+      {
         "ship": "SS Scharnhorst",
         "path": "ships/ss-scharnhorst.html",
-        "mentioned": "Werk AG Weser",
+        "mentioned": "Potsdam",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS Winifredian",
+        "path": "ships/ss-winifredian.html",
+        "mentioned": "Devonian",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       }

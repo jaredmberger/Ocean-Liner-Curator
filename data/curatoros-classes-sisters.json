@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T23:28:09.734Z",
+  "generatedAt": "2026-09-25T04:58:19.251Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
     "shipGuides": 327,
     "guidesWithExplicitClass": 17,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 22,
-    "unresolvedSisterMentions": 8
+    "explicitSisterLinks": 36,
+    "unresolvedSisterMentions": 16
   },
   "classes": [
     {
@@ -189,6 +189,32 @@
   "sisterLinks": [
     {
       "a": {
+        "name": "MS Piłsudski (1935)",
+        "path": "ships/ms-pilsudski.html",
+        "url": "/ships/ms-pilsudski"
+      },
+      "b": {
+        "name": "MS Batory (1936)",
+        "path": "ships/ms-batory.html",
+        "url": "/ships/ms-batory"
+      },
+      "evidenceFrom": "ships/ms-pilsudski.html"
+    },
+    {
+      "a": {
+        "name": "MV Jean Laborde (1931)",
+        "path": "ships/mv-jean-laborde.html",
+        "url": "/ships/mv-jean-laborde"
+      },
+      "b": {
+        "name": "SS Maréchal Joffre (1933)",
+        "path": "ships/ss-marechal-joffre.html",
+        "url": "/ships/ss-marechal-joffre"
+      },
+      "evidenceFrom": "ships/mv-jean-laborde.html"
+    },
+    {
+      "a": {
         "name": "Neptunia",
         "path": "ships/neptunia.html",
         "url": "/ships/neptunia"
@@ -228,6 +254,19 @@
     },
     {
       "a": {
+        "name": "RMS Andania",
+        "path": "ships/rms-andania.html",
+        "url": "/ships/rms-andania"
+      },
+      "b": {
+        "name": "RMS Aurania (1916)",
+        "path": "ships/rms-aurania.html",
+        "url": "/ships/rms-aurania"
+      },
+      "evidenceFrom": "ships/rms-andania.html"
+    },
+    {
+      "a": {
         "name": "RMS Britannic (1874)",
         "path": "ships/rms-britannic-1874.html",
         "url": "/ships/rms-britannic-1874"
@@ -238,6 +277,19 @@
         "url": "/ships/ss-germanic"
       },
       "evidenceFrom": "ships/rms-britannic-1874.html"
+    },
+    {
+      "a": {
+        "name": "RMS Campania",
+        "path": "ships/rms-campania.html",
+        "url": "/ships/rms-campania"
+      },
+      "b": {
+        "name": "RMS Lucania",
+        "path": "ships/rms-lucania.html",
+        "url": "/ships/rms-lucania"
+      },
+      "evidenceFrom": "ships/rms-campania.html"
     },
     {
       "a": {
@@ -254,19 +306,6 @@
     },
     {
       "a": {
-        "name": "RMS Lucania",
-        "path": "ships/rms-lucania.html",
-        "url": "/ships/rms-lucania"
-      },
-      "b": {
-        "name": "RMS Campania",
-        "path": "ships/rms-campania.html",
-        "url": "/ships/rms-campania"
-      },
-      "evidenceFrom": "ships/rms-lucania.html"
-    },
-    {
-      "a": {
         "name": "RMS Olympic",
         "path": "ships/rms-olympic.html",
         "url": "/ships/rms-olympic"
@@ -277,6 +316,58 @@
         "url": "/ships/rms-titanic"
       },
       "evidenceFrom": "ships/rms-olympic.html"
+    },
+    {
+      "a": {
+        "name": "SS Arcadia (1954)",
+        "path": "ships/ss-arcadia-1954.html",
+        "url": "/ships/ss-arcadia-1954"
+      },
+      "b": {
+        "name": "SS Iberia (1954)",
+        "path": "ships/ss-iberia.html",
+        "url": "/ships/ss-iberia"
+      },
+      "evidenceFrom": "ships/ss-arcadia-1954.html"
+    },
+    {
+      "a": {
+        "name": "RMS Asturias (1925)",
+        "path": "ships/ss-asturias-1925.html",
+        "url": "/ships/ss-asturias-1925"
+      },
+      "b": {
+        "name": "RMS Alcantara",
+        "path": "ships/rms-alcantara-1926.html",
+        "url": "/ships/rms-alcantara-1926"
+      },
+      "evidenceFrom": "ships/ss-asturias-1925.html"
+    },
+    {
+      "a": {
+        "name": "SS Batavia",
+        "path": "ships/ss-batavia.html",
+        "url": "/ships/ss-batavia"
+      },
+      "b": {
+        "name": "SS Belgravia",
+        "path": "ships/ss-belgravia.html",
+        "url": "/ships/ss-belgravia"
+      },
+      "evidenceFrom": "ships/ss-batavia.html"
+    },
+    {
+      "a": {
+        "name": "SS Batavia",
+        "path": "ships/ss-batavia.html",
+        "url": "/ships/ss-batavia"
+      },
+      "b": {
+        "name": "SS Belgia",
+        "path": "ships/ss-belgia.html",
+        "url": "/ships/ss-belgia"
+      },
+      "evidenceFrom": "ships/ss-batavia.html"
     },
     {
       "a": {
@@ -306,6 +397,32 @@
     },
     {
       "a": {
+        "name": "SS California",
+        "path": "ships/ss-california.html",
+        "url": "/ships/ss-california"
+      },
+      "b": {
+        "name": "SS Virginia",
+        "path": "ships/ss-virginia.html",
+        "url": "/ships/ss-virginia"
+      },
+      "evidenceFrom": "ships/ss-california.html"
+    },
+    {
+      "a": {
+        "name": "SS California",
+        "path": "ships/ss-california.html",
+        "url": "/ships/ss-california"
+      },
+      "b": {
+        "name": "SS Pennsylvania",
+        "path": "ships/ss-pennsylvania.html",
+        "url": "/ships/ss-pennsylvania"
+      },
+      "evidenceFrom": "ships/ss-california.html"
+    },
+    {
+      "a": {
         "name": "SS Cathay",
         "path": "ships/ss-cathay-1924.html",
         "url": "/ships/ss-cathay-1924"
@@ -319,6 +436,45 @@
     },
     {
       "a": {
+        "name": "SS Cathay",
+        "path": "ships/ss-cathay-1924.html",
+        "url": "/ships/ss-cathay-1924"
+      },
+      "b": {
+        "name": "SS Chitral (1925)",
+        "path": "ships/ss-chitral.html",
+        "url": "/ships/ss-chitral"
+      },
+      "evidenceFrom": "ships/ss-cathay-1924.html"
+    },
+    {
+      "a": {
+        "name": "SS Champollion (1925)",
+        "path": "ships/ss-champollion.html",
+        "url": "/ships/ss-champollion"
+      },
+      "b": {
+        "name": "SS Mariette Pacha (1926)",
+        "path": "ships/ss-mariette-pacha.html",
+        "url": "/ships/ss-mariette-pacha"
+      },
+      "evidenceFrom": "ships/ss-champollion.html"
+    },
+    {
+      "a": {
+        "name": "SS City of Paris",
+        "path": "ships/ss-city-of-paris.html",
+        "url": "/ships/ss-city-of-paris"
+      },
+      "b": {
+        "name": "SS City of New York (1888)",
+        "path": "ships/ss-city-of-new-york-1888.html",
+        "url": "/ships/ss-city-of-new-york-1888"
+      },
+      "evidenceFrom": "ships/ss-city-of-paris.html"
+    },
+    {
+      "a": {
         "name": "SS Constitution",
         "path": "ships/ss-constitution.html",
         "url": "/ships/ss-constitution"
@@ -329,6 +485,32 @@
         "url": "/ships/ss-independence"
       },
       "evidenceFrom": "ships/ss-constitution.html"
+    },
+    {
+      "a": {
+        "name": "SS Corinthic",
+        "path": "ships/ss-corinthic.html",
+        "url": "/ships/ss-corinthic"
+      },
+      "b": {
+        "name": "SS Athenic",
+        "path": "ships/ss-athenic.html",
+        "url": "/ships/ss-athenic"
+      },
+      "evidenceFrom": "ships/ss-corinthic.html"
+    },
+    {
+      "a": {
+        "name": "SS Corinthic",
+        "path": "ships/ss-corinthic.html",
+        "url": "/ships/ss-corinthic"
+      },
+      "b": {
+        "name": "SS Ionic",
+        "path": "ships/ss-ionic.html",
+        "url": "/ships/ss-ionic"
+      },
+      "evidenceFrom": "ships/ss-corinthic.html"
     },
     {
       "a": {
@@ -358,19 +540,6 @@
     },
     {
       "a": {
-        "name": "SS Iberia (1954)",
-        "path": "ships/ss-iberia.html",
-        "url": "/ships/ss-iberia"
-      },
-      "b": {
-        "name": "SS Arcadia (1954)",
-        "path": "ships/ss-arcadia-1954.html",
-        "url": "/ships/ss-arcadia-1954"
-      },
-      "evidenceFrom": "ships/ss-iberia.html"
-    },
-    {
-      "a": {
         "name": "RMS Majestic (1889)",
         "path": "ships/ss-majestic-1889.html",
         "url": "/ships/ss-majestic-1889"
@@ -384,29 +553,42 @@
     },
     {
       "a": {
-        "name": "SS Maréchal Joffre (1933)",
-        "path": "ships/ss-marechal-joffre.html",
-        "url": "/ships/ss-marechal-joffre"
+        "name": "SS Manhattan (1932)",
+        "path": "ships/ss-manhattan.html",
+        "url": "/ships/ss-manhattan"
       },
       "b": {
-        "name": "MV Jean Laborde (1931)",
-        "path": "ships/mv-jean-laborde.html",
-        "url": "/ships/mv-jean-laborde"
+        "name": "SS Washington",
+        "path": "ships/ss-washington.html",
+        "url": "/ships/ss-washington"
       },
-      "evidenceFrom": "ships/ss-marechal-joffre.html"
+      "evidenceFrom": "ships/ss-manhattan.html"
     },
     {
       "a": {
-        "name": "SS Mariette Pacha (1926)",
-        "path": "ships/ss-mariette-pacha.html",
-        "url": "/ships/ss-mariette-pacha"
+        "name": "SS Michelangelo (1965)",
+        "path": "ships/ss-michelangelo-1965.html",
+        "url": "/ships/ss-michelangelo-1965"
       },
       "b": {
-        "name": "SS Champollion (1925)",
-        "path": "ships/ss-champollion.html",
-        "url": "/ships/ss-champollion"
+        "name": "SS Raffaello (1965)",
+        "path": "ships/ss-raffaello-1965.html",
+        "url": "/ships/ss-raffaello-1965"
       },
-      "evidenceFrom": "ships/ss-mariette-pacha.html"
+      "evidenceFrom": "ships/ss-michelangelo-1965.html"
+    },
+    {
+      "a": {
+        "name": "SS Milwaukee",
+        "path": "ships/ss-milwaukee.html",
+        "url": "/ships/ss-milwaukee"
+      },
+      "b": {
+        "name": "MS St. Louis",
+        "path": "ships/ss-st-louis.html",
+        "url": "/ships/ss-st-louis"
+      },
+      "evidenceFrom": "ships/ss-milwaukee.html"
     },
     {
       "a": {
@@ -428,11 +610,24 @@
         "url": "/ships/ss-pennsylvania"
       },
       "b": {
-        "name": "SS California",
-        "path": "ships/ss-california.html",
-        "url": "/ships/ss-california"
+        "name": "SS Virginia",
+        "path": "ships/ss-virginia.html",
+        "url": "/ships/ss-virginia"
       },
       "evidenceFrom": "ships/ss-pennsylvania.html"
+    },
+    {
+      "a": {
+        "name": "SS President Coolidge",
+        "path": "ships/ss-president-coolidge.html",
+        "url": "/ships/ss-president-coolidge"
+      },
+      "b": {
+        "name": "SS President Hoover",
+        "path": "ships/ss-president-hoover.html",
+        "url": "/ships/ss-president-hoover"
+      },
+      "evidenceFrom": "ships/ss-president-coolidge.html"
     },
     {
       "a": {
@@ -449,37 +644,48 @@
     },
     {
       "a": {
-        "name": "MS St. Louis",
-        "path": "ships/ss-st-louis.html",
-        "url": "/ships/ss-st-louis"
+        "name": "SS Veendam",
+        "path": "ships/ss-veendam.html",
+        "url": "/ships/ss-veendam"
       },
       "b": {
-        "name": "SS Milwaukee",
-        "path": "ships/ss-milwaukee.html",
-        "url": "/ships/ss-milwaukee"
+        "name": "SS Volendam",
+        "path": "ships/ss-volendam.html",
+        "url": "/ships/ss-volendam"
       },
-      "evidenceFrom": "ships/ss-st-louis.html"
-    },
-    {
-      "a": {
-        "name": "SS Virginia",
-        "path": "ships/ss-virginia.html",
-        "url": "/ships/ss-virginia"
-      },
-      "b": {
-        "name": "SS California",
-        "path": "ships/ss-california.html",
-        "url": "/ships/ss-california"
-      },
-      "evidenceFrom": "ships/ss-virginia.html"
+      "evidenceFrom": "ships/ss-veendam.html"
     }
   ],
   "unresolvedSisterMentions": [
+    {
+      "ship": "MV Georgic",
+      "path": "ships/mv-georgic.html",
+      "mentioned": "Britannic",
+      "candidateCount": 2
+    },
+    {
+      "ship": "RMS Cambria",
+      "path": "ships/rms-cambria-1845.html",
+      "mentioned": "Hibernia",
+      "candidateCount": 0
+    },
+    {
+      "ship": "RMS Carmania",
+      "path": "ships/rms-carmania.html",
+      "mentioned": "Caronia",
+      "candidateCount": 2
+    },
     {
       "ship": "RMS Olympic",
       "path": "ships/rms-olympic.html",
       "mentioned": "Britannic",
       "candidateCount": 2
+    },
+    {
+      "ship": "SS Bergensfjord",
+      "path": "ships/ss-bergensfjord.html",
+      "mentioned": "Kristianiafjord",
+      "candidateCount": 0
     },
     {
       "ship": "SS Bothnia",
@@ -488,15 +694,21 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Cathay",
-      "path": "ships/ss-cathay-1924.html",
-      "mentioned": "Algeria",
+      "ship": "SS Bretagne",
+      "path": "ships/ss-bretagne.html",
+      "mentioned": "Provence",
       "candidateCount": 0
     },
     {
       "ship": "SS City of Paris",
       "path": "ships/ss-city-of-paris.html",
       "mentioned": "Cunard",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Cleveland",
+      "path": "ships/ss-cleveland.html",
+      "mentioned": "Cincinnati",
       "candidateCount": 0
     },
     {
@@ -518,9 +730,27 @@
       "candidateCount": 0
     },
     {
+      "ship": "SS Minnesota",
+      "path": "ships/ss-minnesota.html",
+      "mentioned": "Dakota",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Orion",
+      "path": "ships/ss-orion.html",
+      "mentioned": "Orcades",
+      "candidateCount": 2
+    },
+    {
       "ship": "SS Scharnhorst",
       "path": "ships/ss-scharnhorst.html",
-      "mentioned": "Werk AG Weser",
+      "mentioned": "Potsdam",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS Winifredian",
+      "path": "ships/ss-winifredian.html",
+      "mentioned": "Devonian",
       "candidateCount": 0
     }
   ],
@@ -607,7 +837,9 @@
       "path": "ships/ms-pilsudski.html",
       "url": "/ships/ms-pilsudski",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Batory"
+      ]
     },
     {
       "name": "MS Saturnia",
@@ -642,14 +874,18 @@
       "path": "ships/mv-georgic.html",
       "url": "/ships/mv-georgic",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Britannic"
+      ]
     },
     {
       "name": "MV Jean Laborde (1931)",
       "path": "ships/mv-jean-laborde.html",
       "url": "/ships/mv-jean-laborde",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Maréchal Joffre"
+      ]
     },
     {
       "name": "Neptunia",
@@ -724,7 +960,8 @@
       "url": "/ships/rms-andania",
       "classes": [],
       "sisters": [
-        "Alaunia"
+        "Alaunia",
+        "Aurania"
       ]
     },
     {
@@ -836,7 +1073,9 @@
       "path": "ships/rms-cambria-1845.html",
       "url": "/ships/rms-cambria-1845",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Hibernia"
+      ]
     },
     {
       "name": "RMS Cameronia",
@@ -850,7 +1089,9 @@
       "path": "ships/rms-campania.html",
       "url": "/ships/rms-campania",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Lucania"
+      ]
     },
     {
       "name": "RMS Carinthia (1956)",
@@ -864,7 +1105,9 @@
       "path": "ships/rms-carmania.html",
       "url": "/ships/rms-carmania",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Caronia"
+      ]
     },
     {
       "name": "RMS Caronia (1947)",
@@ -1331,7 +1574,9 @@
       "path": "ships/ss-arcadia-1954.html",
       "url": "/ships/ss-arcadia-1954",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Iberia"
+      ]
     },
     {
       "name": "SS Arctic",
@@ -1366,7 +1611,9 @@
       "path": "ships/ss-asturias-1925.html",
       "url": "/ships/ss-asturias-1925",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Alcantara"
+      ]
     },
     {
       "name": "SS Athenic",
@@ -1411,6 +1658,8 @@
       "url": "/ships/ss-batavia",
       "classes": [],
       "sisters": [
+        "Belgravia",
+        "Belgia",
         "Bulgaria"
       ]
     },
@@ -1440,7 +1689,9 @@
       "path": "ships/ss-bergensfjord.html",
       "url": "/ships/ss-bergensfjord",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Kristianiafjord"
+      ]
     },
     {
       "name": "SS Berlin (1909)",
@@ -1487,7 +1738,9 @@
       "path": "ships/ss-bretagne.html",
       "url": "/ships/ss-bretagne",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Provence"
+      ]
     },
     {
       "name": "SS Briton",
@@ -1522,7 +1775,10 @@
       "path": "ships/ss-california.html",
       "url": "/ships/ss-california",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Virginia",
+        "Pennsylvania"
+      ]
     },
     {
       "name": "SS Canada (1896)",
@@ -1587,7 +1843,7 @@
       "classes": [],
       "sisters": [
         "Comorin",
-        "Algeria"
+        "Chitral"
       ]
     },
     {
@@ -1609,7 +1865,9 @@
       "path": "ships/ss-champollion.html",
       "url": "/ships/ss-champollion",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Mariette Pacha"
+      ]
     },
     {
       "name": "SS Chicago (1908)",
@@ -1645,6 +1903,7 @@
       "url": "/ships/ss-city-of-paris",
       "classes": [],
       "sisters": [
+        "City of New York",
         "Cunard"
       ]
     },
@@ -1653,7 +1912,9 @@
       "path": "ships/ss-cleveland.html",
       "url": "/ships/ss-cleveland",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Cincinnati"
+      ]
     },
     {
       "name": "SS Columbia",
@@ -1741,7 +2002,10 @@
       "classes": [
         "Passenger-Cargo Economics The Athenic"
       ],
-      "sisters": []
+      "sisters": [
+        "Athenic",
+        "Ionic"
+      ]
     },
     {
       "name": "SS Corsican",
@@ -2033,7 +2297,9 @@
       "path": "ships/ss-independence.html",
       "url": "/ships/ss-independence",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Constitution"
+      ]
     },
     {
       "name": "SS Ionic",
@@ -2242,7 +2508,9 @@
       "path": "ships/ss-manhattan.html",
       "url": "/ships/ss-manhattan",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Washington"
+      ]
     },
     {
       "name": "SS Maréchal Joffre (1933)",
@@ -2302,21 +2570,27 @@
       "path": "ships/ss-michelangelo-1965.html",
       "url": "/ships/ss-michelangelo-1965",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Raffaello"
+      ]
     },
     {
       "name": "SS Milwaukee",
       "path": "ships/ss-milwaukee.html",
       "url": "/ships/ss-milwaukee",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "St. Louis"
+      ]
     },
     {
       "name": "SS Minnesota",
       "path": "ships/ss-minnesota.html",
       "url": "/ships/ss-minnesota",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Dakota"
+      ]
     },
     {
       "name": "SS Minnetonka (1902)",
@@ -2495,7 +2769,9 @@
       "path": "ships/ss-orion.html",
       "url": "/ships/ss-orion",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Orcades"
+      ]
     },
     {
       "name": "SS Oronsay (1925)",
@@ -2552,7 +2828,8 @@
       "url": "/ships/ss-pennsylvania",
       "classes": [],
       "sisters": [
-        "California"
+        "California",
+        "Virginia"
       ]
     },
     {
@@ -2574,14 +2851,18 @@
       "path": "ships/ss-president-coolidge.html",
       "url": "/ships/ss-president-coolidge",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "President Hoover"
+      ]
     },
     {
       "name": "SS President Hoover",
       "path": "ships/ss-president-hoover.html",
       "url": "/ships/ss-president-hoover",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "President Coolidge"
+      ]
     },
     {
       "name": "SS President Lincoln",
@@ -2630,7 +2911,9 @@
       "path": "ships/ss-raffaello-1965.html",
       "url": "/ships/ss-raffaello-1965",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Michelangelo"
+      ]
     },
     {
       "name": "SS Reliance",
@@ -2730,7 +3013,7 @@
       "classes": [],
       "sisters": [
         "Gneisenau",
-        "Werk AG Weser"
+        "Potsdam"
       ]
     },
     {
@@ -2821,7 +3104,9 @@
       "path": "ships/ss-veendam.html",
       "url": "/ships/ss-veendam",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Volendam"
+      ]
     },
     {
       "name": "SS Vestris",
@@ -2836,7 +3121,8 @@
       "url": "/ships/ss-virginia",
       "classes": [],
       "sisters": [
-        "California"
+        "California",
+        "Pennsylvania"
       ]
     },
     {
@@ -2844,7 +3130,9 @@
       "path": "ships/ss-volendam.html",
       "url": "/ships/ss-volendam",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Veendam"
+      ]
     },
     {
       "name": "SS Warwick Castle",
@@ -2881,7 +3169,9 @@
       "path": "ships/ss-winifredian.html",
       "url": "/ships/ss-winifredian",
       "classes": [],
-      "sisters": []
+      "sisters": [
+        "Devonian"
+      ]
     },
     {
       "name": "SS Zeeland",
