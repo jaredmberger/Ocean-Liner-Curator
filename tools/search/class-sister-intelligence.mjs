@@ -54,13 +54,37 @@ for(const path of paths){
     const value=canonicalClass(m[1]);if(value)classes.add(value);
   }
 
-  for(const m of body.matchAll(/\b(?:sister ship(?:s)?(?:\s+were|\s+was|\s+included|\s+include|\s+of|\s+to)?|sister(?:s)?\s+of)\s+([^.;:]{2,180})/gi)){
-    const segment=clean(m[1]).replace(/\([^)]*\)/g,'');
-    for(const raw of segment.split(/,|\band\b|\bwith\b/i)){
-      const candidate=clean(raw).replace(/^(?:the\s+)?/i,'').replace(shipPrefix,'').replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9'’.-]+$/g,'');
+  const addSisterCandidates=segment=>{
+    const value=clean(segment).replace(/\([^)]*\)/g,'');
+    for(const raw of value.split(/,|\band\b|\bwith\b/i)){
+      let candidate=clean(raw)
+        .replace(/^(?:the\s+)?/i,'')
+        .replace(shipPrefix,'')
+        .replace(/\b(?:were|was|is|are|became|becoming|built|entered|served|operated|represented|belonged|joined|followed|later|then|while|which|whose|that)\b.*$/i,'')
+        .replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9'’.-]+$/g,'');
       if(candidate.length>=3&&candidate.length<=60&&!/^(?:three|two|other|her|his|its|the|a|an)$/i.test(candidate)&&plausibleSisterName(candidate))sisters.add(candidate);
     }
-  }
+  };
+
+  // Fact rows are authoritative structured fields. Parse the value separately so
+  // adjacent labels/headings cannot bleed into a sister-ship name.
+  $('.fact-row').each((_,el)=>{
+    const label=clean($(el).find('.fact-label').first().text());
+    if(!/\bsister(?:\s+ships?)?\b/i.test(label))return;
+    const value=clean($(el).find('.fact-value').first().text());
+    if(value)addSisterCandidates(value.replace(/^(?:sister ship(?:s)?\s*[:—-]?\s*)/i,''));
+  });
+
+  // Narrative extraction is deliberately block-scoped. Flattening all of <main>
+  // caused paragraph, heading, and fact-row boundaries to disappear, producing
+  // false candidates such as company names, ports, and shipyards.
+  $('p,li').each((_,el)=>{
+    const block=clean($(el).text());
+    if(!block||!/sister/i.test(block))return;
+    for(const m of block.matchAll(/\b(?:sister ship(?:s)?(?:\s+were|\s+was|\s+included|\s+include|\s+of|\s+to)?|sister(?:s)?\s+of)\s+([^.;:]{2,180})/gi)){
+      addSisterCandidates(m[1]);
+    }
+  });
 
   records.push({name:title,path,url:'/'+path.replace(/\.html$/,''),classes:[...classes],sisters:[...sisters]});
 }
