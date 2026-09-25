@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-25T07:47:53.498Z",
+  "generatedAt": "2026-09-25T08:07:54.219Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 339,
@@ -10,24 +10,16 @@
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 10,
-    "guidesMissingLaunch": 2,
+    "guidesMissingLaunch": 0,
     "builderVariantGroups": 32,
-    "suspiciousLaunchDatesWithoutYear": 1
+    "suspiciousLaunchDatesWithoutYear": 0
   },
   "missing": {
     "builder": [],
     "operator": [],
-    "launched": [
-      {
-        "ship": "SS Duchess of Richmond",
-        "path": "ships/ss-duchess-of-richmond.html"
-      },
-      {
-        "ship": "SS Kroonland",
-        "path": "ships/ss-kroonland.html"
-      }
-    ]
+    "launched": []
   },
+  "suspiciousLaunchYears": [],
   "topBuilders": [
     {
       "id": "harland-and-wolff",
@@ -58,7 +50,7 @@
       "id": "john-brown-and-company",
       "name": "John Brown & Company",
       "shipCount": 26,
-      "firstLaunchYear": null,
+      "firstLaunchYear": 1900,
       "lastLaunchYear": 1967,
       "locations": [
         "Clydebank",
@@ -3884,7 +3876,7 @@
       "name": "SS Duchess of Richmond",
       "path": "ships/ss-duchess-of-richmond.html",
       "url": "/ships/ss-duchess-of-richmond",
-      "launchYear": null,
+      "launchYear": "1928",
       "builderRaw": "John Brown & Co., Clydebank · yard no. 523",
       "builders": [
         {
@@ -4416,7 +4408,7 @@
       "name": "SS Kroonland",
       "path": "ships/ss-kroonland.html",
       "url": "/ships/ss-kroonland",
-      "launchYear": null,
+      "launchYear": "1902",
       "builderRaw": "William Cramp & Sons, Philadelphia",
       "builders": [
         {
@@ -5494,7 +5486,7 @@
       "name": "SS Resolute",
       "path": "ships/ss-resolute.html",
       "url": "/ships/ss-resolute",
-      "launchYear": null,
+      "launchYear": "1914",
       "builderRaw": "AG Weser, Bremen · yard no. 193",
       "builders": [
         {

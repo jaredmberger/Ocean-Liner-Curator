@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T07:47:53.498Z",
+  "generatedAt": "2026-09-25T08:07:54.219Z",
   "summary": {
     "shipGuides": 327,
     "canonicalBuilders": 80,
@@ -584,7 +584,7 @@
         "Clydebank",
         "Clydebank, Scotland"
       ],
-      "firstLaunchYear": null,
+      "firstLaunchYear": 1900,
       "lastLaunchYear": 1967,
       "ships": [
         {
@@ -670,6 +670,13 @@
           "launchYear": "1928",
           "operator": "Canadian Pacific Steamships",
           "builderRaw": "John Brown & Co., Clydebank · yard no. 518"
+        },
+        {
+          "name": "SS Duchess of Richmond",
+          "url": "/ships/ss-duchess-of-richmond",
+          "launchYear": "1928",
+          "operator": "Canadian Pacific Steamships",
+          "builderRaw": "John Brown & Co., Clydebank · yard no. 523"
         },
         {
           "name": "SS Duchess of York",
@@ -761,13 +768,6 @@
           "launchYear": "1967",
           "operator": "Cunard Line (operated 1969–2008)",
           "builderRaw": "John Brown & Company (Clydebank, Scotland)"
-        },
-        {
-          "name": "SS Duchess of Richmond",
-          "url": "/ships/ss-duchess-of-richmond",
-          "launchYear": null,
-          "operator": "Canadian Pacific Steamships",
-          "builderRaw": "John Brown & Co., Clydebank · yard no. 523"
         }
       ]
     },
@@ -1678,7 +1678,7 @@
         "Bremen",
         "Bremen, Germany"
       ],
-      "firstLaunchYear": null,
+      "firstLaunchYear": 1908,
       "lastLaunchYear": 1925,
       "ships": [
         {
@@ -1696,6 +1696,13 @@
           "builderRaw": "AG Weser, Bremen"
         },
         {
+          "name": "SS Resolute",
+          "url": "/ships/ss-resolute",
+          "launchYear": "1914",
+          "operator": "United American Lines / Hamburg America Line",
+          "builderRaw": "AG Weser, Bremen · yard no. 193"
+        },
+        {
           "name": "SS Albertic",
           "url": "/ships/ss-albertic",
           "launchYear": "1920",
@@ -1708,13 +1715,6 @@
           "launchYear": "1925",
           "operator": "Compagnie des Messageries Maritimes",
           "builderRaw": "AG Weser, Bremen, Germany"
-        },
-        {
-          "name": "SS Resolute",
-          "url": "/ships/ss-resolute",
-          "launchYear": null,
-          "operator": "United American Lines / Hamburg America Line",
-          "builderRaw": "AG Weser, Bremen · yard no. 193"
         }
       ]
     },
@@ -2459,7 +2459,7 @@
       "locations": [
         "Philadelphia"
       ],
-      "firstLaunchYear": null,
+      "firstLaunchYear": 1902,
       "lastLaunchYear": 1902,
       "ships": [
         {
@@ -2472,7 +2472,7 @@
         {
           "name": "SS Kroonland",
           "url": "/ships/ss-kroonland",
-          "launchYear": null,
+          "launchYear": "1902",
           "operator": "Red Star Line / International Mercantile Marine",
           "builderRaw": "William Cramp & Sons, Philadelphia"
         }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T07:47:53.498Z",
+  "generatedAt": "2026-09-25T08:07:54.219Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
     "shipGuides": 327,
@@ -672,6 +672,13 @@
           "builder": "John Brown & Company"
         },
         {
+          "name": "SS Duchess of Richmond",
+          "path": "ships/ss-duchess-of-richmond.html",
+          "url": "/ships/ss-duchess-of-richmond",
+          "launchYear": "1928",
+          "builder": "John Brown & Company"
+        },
+        {
           "name": "SS Duchess of York",
           "path": "ships/ss-duchess-of-york.html",
           "url": "/ships/ss-duchess-of-york",
@@ -760,13 +767,6 @@
           "path": "ships/queen-elizabeth-2.html",
           "url": "/ships/queen-elizabeth-2",
           "launchYear": "1967",
-          "builder": "John Brown & Company"
-        },
-        {
-          "name": "SS Duchess of Richmond",
-          "path": "ships/ss-duchess-of-richmond.html",
-          "url": "/ships/ss-duchess-of-richmond",
-          "launchYear": null,
           "builder": "John Brown & Company"
         }
       ]
@@ -1659,6 +1659,13 @@
           "builder": "AG Weser"
         },
         {
+          "name": "SS Resolute",
+          "path": "ships/ss-resolute.html",
+          "url": "/ships/ss-resolute",
+          "launchYear": "1914",
+          "builder": "AG Weser"
+        },
+        {
           "name": "SS Albertic",
           "path": "ships/ss-albertic.html",
           "url": "/ships/ss-albertic",
@@ -1671,13 +1678,6 @@
           "url": "/ships/ss-bremen",
           "launchYear": "1928",
           "builder": "A.G. Weser / Deschimag"
-        },
-        {
-          "name": "SS Resolute",
-          "path": "ships/ss-resolute.html",
-          "url": "/ships/ss-resolute",
-          "launchYear": null,
-          "builder": "AG Weser"
         }
       ]
     },
@@ -2482,7 +2482,7 @@
           "name": "SS Kroonland",
           "path": "ships/ss-kroonland.html",
           "url": "/ships/ss-kroonland",
-          "launchYear": null,
+          "launchYear": "1902",
           "builder": "William Cramp & Sons"
         }
       ]
@@ -5735,7 +5735,7 @@
       "name": "SS Duchess of Richmond",
       "path": "ships/ss-duchess-of-richmond.html",
       "url": "/ships/ss-duchess-of-richmond",
-      "launchYear": null,
+      "launchYear": "1928",
       "assignments": [
         {
           "builder": "John Brown & Company",
@@ -6267,7 +6267,7 @@
       "name": "SS Kroonland",
       "path": "ships/ss-kroonland.html",
       "url": "/ships/ss-kroonland",
-      "launchYear": null,
+      "launchYear": "1902",
       "assignments": [
         {
           "builder": "William Cramp & Sons",
@@ -7345,7 +7345,7 @@
       "name": "SS Resolute",
       "path": "ships/ss-resolute.html",
       "url": "/ships/ss-resolute",
-      "launchYear": null,
+      "launchYear": "1914",
       "assignments": [
         {
           "builder": "AG Weser",
