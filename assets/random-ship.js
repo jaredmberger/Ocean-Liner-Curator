@@ -193,6 +193,7 @@
 "/ships/ss-pennsylvania.html",
 "/ships/ss-persic.html",
 "/ships/ss-president-coolidge.html",
+"/ships/ss-president-harding.html",
 "/ships/ss-president-hoover.html",
 "/ships/ss-president-lincoln.html",
 "/ships/ss-principessa-mafalda.html",
