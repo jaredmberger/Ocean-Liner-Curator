@@ -55,12 +55,18 @@ for(const path of paths){
   }
 
   const addSisterCandidates=segment=>{
-    const value=clean(segment).replace(/\([^)]*\)/g,'');
+    let value=clean(segment).replace(/\([^)]*\)/g,'');
+    // Trim prose before splitting name lists. Splitting first allowed later
+    // conjunctions/prepositions in the sentence to manufacture candidates
+    // such as "White Star" and "Naples".
+    value=value
+      .replace(/\band\s+(?:one|a|an|the)\b.*$/i,'')
+      .replace(/\b(?:represented|belonged|associated|linked|became|becoming|built|entered|served|operated|joined|followed|later|then|while|which|whose|that|where|when)\b.*$/i,'')
+      .trim();
     for(const raw of value.split(/,|\band\b|\bwith\b/i)){
       let candidate=clean(raw)
         .replace(/^(?:the\s+)?/i,'')
         .replace(shipPrefix,'')
-        .replace(/\b(?:were|was|is|are|became|becoming|built|entered|served|operated|represented|belonged|joined|followed|later|then|while|which|whose|that)\b.*$/i,'')
         .replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9'’.-]+$/g,'');
       if(candidate.length>=3&&candidate.length<=60&&!/^(?:three|two|other|her|his|its|the|a|an)$/i.test(candidate)&&plausibleSisterName(candidate))sisters.add(candidate);
     }
