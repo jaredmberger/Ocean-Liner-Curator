@@ -11,8 +11,6 @@ from __future__ import annotations
 
 import json
 import re
-import subprocess
-from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,31 +30,6 @@ INTELLIGENCE_FEEDS = [
 ]
 RANDOM_EXCLUSIONS = {"tall-ships-guide"}
 MIN_ARCHIVE_COUNT = 300
-
-
-def git_value(*args: str) -> str:
-    try:
-        return subprocess.check_output(
-            ["git", "-C", str(ROOT), *args], text=True, stderr=subprocess.DEVNULL
-        ).strip()
-    except Exception:
-        return ""
-
-
-def parse_iso(value: str | None):
-    if not value:
-        return None
-    try:
-        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
-    except ValueError:
-        return None
-
-
-def file_git_timestamp(path: Path) -> str | None:
-    rel = path.relative_to(ROOT).as_posix()
-    value = git_value("log", "-1", "--format=%cI", "--", rel)
-    parsed = parse_iso(value)
-    return parsed.isoformat().replace("+00:00", "Z") if parsed else None
 
 
 def slugs_from_random(path: Path) -> set[str]:
@@ -92,11 +65,9 @@ def feed_summary(path: Path) -> dict:
     except Exception as exc:
         item.update(status="invalid-json", error=str(exc))
         return item
-    generated = payload.get("generatedAt") or payload.get("generated")
     item.update(
         status="ok",
-        generatedAt=generated,
-        sourceCommitAt=file_git_timestamp(path),
+        generatedAt=payload.get("generatedAt") or payload.get("generated"),
     )
     counts = payload.get("counts")
     if isinstance(counts, dict):
@@ -186,18 +157,12 @@ def main() -> None:
     errors = [c for c in checks if not c["ok"] and c["severity"] == "error"]
     warnings = [c for c in checks if not c["ok"] and c["severity"] == "warning"]
 
-    head_sha = git_value("rev-parse", "HEAD")
-    head_time = git_value("show", "-s", "--format=%cI", "HEAD")
-    parsed_head = parse_iso(head_time)
-
     manifest = {
         "schema": 1,
         "project": "Ocean Liner Curator",
         "system": "CuratorOS",
         "status": "healthy" if not errors else "error",
         "generatedFrom": {
-            "commit": head_sha or None,
-            "commitAt": parsed_head.isoformat().replace("+00:00", "Z") if parsed_head else None,
             "archiveGenerated": archive.get("generated"),
         },
         "counts": {
