@@ -66,3 +66,18 @@ Before enabling: verify mobile rendering, index load size on a cold connection,
 deployment build command and cache behavior, and canonical result URLs on the
 live site. Regular build/hosting usage still applies, although search has no
 metered AI calls. Do not merge this trial as a substitute for that integration.
+
+
+## Effectiveness telemetry
+
+Production search surfaces emit a small set of analytics events so search usefulness can be measured without storing visitor query text:
+
+- `archive_search_submit`
+- `archive_search_results`
+- `archive_search_zero_results`
+- `archive_search_result_click`
+- `archive_search_view_all` (homepage only)
+
+Events identify the search surface (`homepage` or `standalone`) and may include coarse metadata such as query character/word count, result count, clicked result position/type, and destination path. **Raw search terms are never sent as analytics parameters.**
+
+The dispatcher prefers Cloudflare Zaraz when available, with compatible fallbacks for `gtag`, `dataLayer`, and a local `olc:analytics` CustomEvent. Analytics availability never blocks search.

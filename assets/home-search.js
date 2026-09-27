@@ -273,6 +273,37 @@
   let enginePromise;
   let searchArchivePromise;
 
+  function queryShape(term) {
+    const normalized = String(term || "").trim();
+    return {
+      query_length: normalized.length,
+      query_words: normalized ? normalized.split(/\s+/).length : 0
+    };
+  }
+
+  function trackSearchEvent(name, details) {
+    const payload = Object.assign({ search_surface: "homepage" }, details || {});
+    try {
+      if (window.zaraz && typeof window.zaraz.track === "function") {
+        window.zaraz.track(name, payload);
+        return;
+      }
+      if (typeof window.gtag === "function") {
+        window.gtag("event", name, payload);
+        return;
+      }
+      if (Array.isArray(window.dataLayer)) {
+        window.dataLayer.push(Object.assign({ event: name }, payload));
+        return;
+      }
+      window.dispatchEvent(new CustomEvent("olc:analytics", {
+        detail: { event: name, parameters: payload }
+      }));
+    } catch (error) {
+      console.debug("[OceanLiners.net] Search analytics unavailable:", error);
+    }
+  }
+
   function getEngine() {
     if (!enginePromise) {
       enginePromise = import("/tools/search/pagefind/pagefind.js").catch(function (error) {
@@ -312,6 +343,7 @@
     }
 
     const id = ++generation;
+    trackSearchEvent("archive_search_submit", queryShape(term));
     allLink.href = "/tools/search?q=" + encodeURIComponent(term);
     state.hidden = false;
     state.setAttribute("aria-busy", "true");
@@ -328,6 +360,7 @@
       const top = searchResult.results.slice(0, 4);
       if (!top.length) {
         state.removeAttribute("aria-busy");
+        trackSearchEvent("archive_search_zero_results", Object.assign(queryShape(term), { result_count: 0 }));
         status.textContent = "No results. Try a ship name or fewer words.";
         return;
       }
@@ -335,8 +368,10 @@
       const resultData = await Promise.all(top.map(function (result) { return result.data(); }));
       if (id !== generation) return;
 
+      trackSearchEvent("archive_search_results", Object.assign(queryShape(term), { result_count: searchResult.results.length }));
+
       const fragment = document.createDocumentFragment();
-      resultData.forEach(function (result) {
+      resultData.forEach(function (result, index) {
         const url = new URL(result.url, "https://oceanliners.net");
         if (url.origin !== "https://oceanliners.net") return;
 
@@ -352,6 +387,13 @@
         const link = document.createElement("a");
         link.href = url.href;
         link.textContent = (result.meta && result.meta.title) || "Untitled reference";
+        link.addEventListener("click", function () {
+          trackSearchEvent("archive_search_result_click", {
+            result_position: index + 1,
+            result_type: (result.meta && result.meta.type) || "Reference",
+            result_path: url.pathname
+          });
+        });
         heading.appendChild(link);
 
         const excerpt = document.createElement("p");
@@ -377,6 +419,10 @@
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     runSearch();
+  });
+
+  allLink.addEventListener("click", function () {
+    trackSearchEvent("archive_search_view_all", { visible_results: list.children.length });
   });
 
   closeButton.addEventListener("click", function () {

@@ -14,6 +14,37 @@ let matches = [];
 let shown = 0;
 const batchSize = 6;
 
+function queryShape(term) {
+  const normalized = String(term || '').trim();
+  return {
+    query_length: normalized.length,
+    query_words: normalized ? normalized.split(/\s+/).length : 0
+  };
+}
+
+function trackSearchEvent(name, details = {}) {
+  const payload = { search_surface: 'standalone', ...details };
+  try {
+    if (window.zaraz && typeof window.zaraz.track === 'function') {
+      window.zaraz.track(name, payload);
+      return;
+    }
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, payload);
+      return;
+    }
+    if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({ event: name, ...payload });
+      return;
+    }
+    window.dispatchEvent(new CustomEvent('olc:analytics', {
+      detail: { event: name, parameters: payload }
+    }));
+  } catch (error) {
+    console.debug('[OceanLiners.net] Search analytics unavailable:', error);
+  }
+}
+
 async function getEngine() {
   if (!engine) {
     engine = import('./pagefind/pagefind.js').catch(error => {
@@ -86,6 +117,14 @@ async function showBatch(id) {
     const link = document.createElement('a');
     link.href = url.href;
     link.textContent = result.meta?.title || url.pathname;
+    const resultPosition = shown + appended + 1;
+    link.addEventListener('click', () => {
+      trackSearchEvent('archive_search_result_click', {
+        result_position: resultPosition,
+        result_type: resultType(result.meta),
+        result_path: url.pathname
+      });
+    });
     title.append(link);
 
     const excerpt = document.createElement('p');
@@ -124,6 +163,7 @@ async function search({ historyMode = 'push' } = {}) {
   }
 
   const id = ++generation;
+  trackSearchEvent('archive_search_submit', queryShape(term));
   state.hidden = false;
   list.replaceChildren();
   more.hidden = true;
@@ -140,9 +180,12 @@ async function search({ historyMode = 'push' } = {}) {
     shown = 0;
 
     if (!matches.length) {
+      trackSearchEvent('archive_search_zero_results', { ...queryShape(term), result_count: 0 });
       status.textContent = `No results for “${term}”. Try a ship name, broader subject, or fewer words.`;
       return;
     }
+
+    trackSearchEvent('archive_search_results', { ...queryShape(term), result_count: matches.length });
 
     await showBatch(id);
   } catch (error) {
