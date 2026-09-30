@@ -658,6 +658,16 @@
       "NYK Pacific liners"
     ),
 
+    hapag_cincinnati_cleveland: cluster(
+      "Related Liners.",
+      "Hamburg America Line's large intermediate sister ships built for mixed passenger, emigrant, and freight service before the First World War.",
+      [
+        { href: "/ships/ss-cincinnati", label: "SS <em>Cincinnati</em>", tail: "HAPAG · 1909" },
+        { href: "/ships/ss-cleveland", label: "SS <em>Cleveland</em>", tail: "HAPAG · 1909" }
+      ],
+      "Cincinnati and Cleveland"
+    ),
+
     norwegian_america_founders: cluster(
       "Related Liners.",
       "The original purpose-built Norwegian America Line transatlantic pair that established direct Norway–New York service in 1913.",
@@ -1480,6 +1490,8 @@
 
     "ss-bergensfjord": ["norwegian_america_founders"],
     "ss-kristianiafjord": ["norwegian_america_founders"],
+    "ss-cincinnati": ["hapag_cincinnati_cleveland"],
+    "ss-cleveland": ["hapag_cincinnati_cleveland"],
     "ss-berlin-1909": ["berlin_arabic_republic"],
     "ss-arabic-1920": ["berlin_arabic_republic"],
     "ss-republic": ["berlin_arabic_republic"],

@@ -7,10 +7,10 @@
     "archiveGenerated": "2026-09-30"
   },
   "counts": {
-    "archive": 337,
-    "randomEligible": 336,
-    "sitemapShips": 337,
-    "deviceDetails": 337,
+    "archive": 338,
+    "randomEligible": 337,
+    "sitemapShips": 338,
+    "deviceDetails": 338,
     "errors": 0,
     "warnings": 0
   },
@@ -20,7 +20,7 @@
       "exists": true,
       "status": "ok",
       "generatedAt": "2026-09-30",
-      "count": 337
+      "count": 338
     },
     "builders": {
       "file": "data/builders.json",
@@ -78,15 +78,15 @@
       "name": "archive-minimum",
       "ok": true,
       "severity": "error",
-      "count": 337,
+      "count": 338,
       "minimum": 300
     },
     {
       "name": "archive-declared-count",
       "ok": true,
       "severity": "error",
-      "declared": 337,
-      "actual": 337
+      "declared": 338,
+      "actual": 338
     },
     {
       "name": "ship-sitemap-reconciliation",
@@ -108,21 +108,21 @@
       "name": "random-ship-reconciliation",
       "ok": true,
       "severity": "error",
-      "expectedCount": 336,
+      "expectedCount": 337,
       "intentionalExclusions": [
         "tall-ships-guide"
       ],
       "files": [
         {
           "file": "random-ship.js",
-          "count": 336,
+          "count": 337,
           "missing": [],
           "extra": [],
           "match": true
         },
         {
           "file": "assets/random-ship.js",
-          "count": 336,
+          "count": 337,
           "missing": [],
           "extra": [],
           "match": true
