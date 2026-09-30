@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T08:07:56.722Z",
+  "generatedAt": "2026-09-30T08:19:23.447Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 327,
+    "shipGuides": 330,
     "guidesWithExplicitClass": 17,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 36,
+    "explicitSisterLinks": 37,
     "unresolvedSisterMentions": 13
   },
   "classes": [
@@ -631,6 +631,19 @@
     },
     {
       "a": {
+        "name": "SS President Harding (1921)",
+        "path": "ships/ss-president-harding.html",
+        "url": "/ships/ss-president-harding"
+      },
+      "b": {
+        "name": "SS President Roosevelt (1922)",
+        "path": "ships/ss-president-roosevelt.html",
+        "url": "/ships/ss-president-roosevelt"
+      },
+      "evidenceFrom": "ships/ss-president-harding.html"
+    },
+    {
+      "a": {
         "name": "SS Scharnhorst",
         "path": "ships/ss-scharnhorst.html",
         "url": "/ships/ss-scharnhorst"
@@ -1202,6 +1215,13 @@
       "name": "RMS Kenilworth Castle",
       "path": "ships/rms-kenilworth-castle.html",
       "url": "/ships/rms-kenilworth-castle",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "RMS Laconia (1921)",
+      "path": "ships/rms-laconia.html",
+      "url": "/ships/rms-laconia",
       "classes": [],
       "sisters": []
     },
@@ -2835,6 +2855,15 @@
       ]
     },
     {
+      "name": "SS President Harding (1921)",
+      "path": "ships/ss-president-harding.html",
+      "url": "/ships/ss-president-harding",
+      "classes": [],
+      "sisters": [
+        "President Roosevelt"
+      ]
+    },
+    {
       "name": "SS President Hoover",
       "path": "ships/ss-president-hoover.html",
       "url": "/ships/ss-president-hoover",
@@ -2849,6 +2878,15 @@
       "url": "/ships/ss-president-lincoln",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "SS President Roosevelt (1922)",
+      "path": "ships/ss-president-roosevelt.html",
+      "url": "/ships/ss-president-roosevelt",
+      "classes": [],
+      "sisters": [
+        "President Harding"
+      ]
     },
     {
       "name": "SS Pretoria",

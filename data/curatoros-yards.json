@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T08:07:54.219Z",
+  "generatedAt": "2026-09-30T08:19:20.984Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 327,
-    "guidesWithDocumentedYard": 327,
+    "shipGuides": 330,
+    "guidesWithDocumentedYard": 330,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 68,
     "multiYardShips": 0
@@ -1633,6 +1633,65 @@
       ]
     },
     {
+      "id": "wallsend",
+      "name": "Wallsend",
+      "rawValues": [
+        "Wallsend",
+        "Wallsend, England",
+        "Wallsend-on-Tyne"
+      ],
+      "builders": [
+        "C. S. Swan & Hunter Ltd.",
+        "Swan Hunter",
+        "Swan Hunter & Wigham Richardson"
+      ],
+      "shipCount": 6,
+      "ships": [
+        {
+          "name": "SS Lake Michigan",
+          "path": "ships/ss-lake-michigan.html",
+          "url": "/ships/ss-lake-michigan",
+          "launchYear": "1901",
+          "builder": "C. S. Swan & Hunter Ltd."
+        },
+        {
+          "name": "RMS Carpathia",
+          "path": "ships/rms-carpathia.html",
+          "url": "/ships/rms-carpathia",
+          "launchYear": "1902",
+          "builder": "Swan Hunter & Wigham Richardson"
+        },
+        {
+          "name": "RMS Mauretania",
+          "path": "ships/rms-mauretania.html",
+          "url": "/ships/rms-mauretania",
+          "launchYear": "1906",
+          "builder": "Swan Hunter & Wigham Richardson"
+        },
+        {
+          "name": "SS Ascania (1911)",
+          "path": "ships/ss-ascania-1911.html",
+          "url": "/ships/ss-ascania-1911",
+          "launchYear": "1911",
+          "builder": "Swan Hunter"
+        },
+        {
+          "name": "RMS Laconia (1921)",
+          "path": "ships/rms-laconia.html",
+          "url": "/ships/rms-laconia",
+          "launchYear": "1921",
+          "builder": "Swan Hunter & Wigham Richardson"
+        },
+        {
+          "name": "QSMV Dominion Monarch",
+          "path": "ships/qsmv-dominion-monarch.html",
+          "url": "/ships/qsmv-dominion-monarch",
+          "launchYear": "1938",
+          "builder": "Swan Hunter & Wigham Richardson"
+        }
+      ]
+    },
+    {
       "id": "bremen",
       "name": "Bremen",
       "rawValues": [
@@ -1678,6 +1737,54 @@
           "url": "/ships/ss-bremen",
           "launchYear": "1928",
           "builder": "A.G. Weser / Deschimag"
+        }
+      ]
+    },
+    {
+      "id": "camden-new-jersey",
+      "name": "Camden, New Jersey",
+      "rawValues": [
+        "Camden, New Jersey"
+      ],
+      "builders": [
+        "New York Shipbuilding Company"
+      ],
+      "shipCount": 5,
+      "ships": [
+        {
+          "name": "SS Manchuria",
+          "path": "ships/ss-manchuria.html",
+          "url": "/ships/ss-manchuria",
+          "launchYear": "1903",
+          "builder": "New York Shipbuilding Company"
+        },
+        {
+          "name": "SS Mongolia",
+          "path": "ships/ss-mongolia.html",
+          "url": "/ships/ss-mongolia",
+          "launchYear": "1903",
+          "builder": "New York Shipbuilding Company"
+        },
+        {
+          "name": "SS President Harding (1921)",
+          "path": "ships/ss-president-harding.html",
+          "url": "/ships/ss-president-harding",
+          "launchYear": "1920",
+          "builder": "New York Shipbuilding Company"
+        },
+        {
+          "name": "SS Manhattan (1932)",
+          "path": "ships/ss-manhattan.html",
+          "url": "/ships/ss-manhattan",
+          "launchYear": "1931",
+          "builder": "New York Shipbuilding Company"
+        },
+        {
+          "name": "SS President Roosevelt (1922)",
+          "path": "ships/ss-president-roosevelt.html",
+          "url": "/ships/ss-president-roosevelt",
+          "launchYear": null,
+          "builder": "New York Shipbuilding Company"
         }
       ]
     },
@@ -1878,58 +1985,6 @@
       ]
     },
     {
-      "id": "wallsend",
-      "name": "Wallsend",
-      "rawValues": [
-        "Wallsend",
-        "Wallsend, England",
-        "Wallsend-on-Tyne"
-      ],
-      "builders": [
-        "C. S. Swan & Hunter Ltd.",
-        "Swan Hunter",
-        "Swan Hunter & Wigham Richardson"
-      ],
-      "shipCount": 5,
-      "ships": [
-        {
-          "name": "SS Lake Michigan",
-          "path": "ships/ss-lake-michigan.html",
-          "url": "/ships/ss-lake-michigan",
-          "launchYear": "1901",
-          "builder": "C. S. Swan & Hunter Ltd."
-        },
-        {
-          "name": "RMS Carpathia",
-          "path": "ships/rms-carpathia.html",
-          "url": "/ships/rms-carpathia",
-          "launchYear": "1902",
-          "builder": "Swan Hunter & Wigham Richardson"
-        },
-        {
-          "name": "RMS Mauretania",
-          "path": "ships/rms-mauretania.html",
-          "url": "/ships/rms-mauretania",
-          "launchYear": "1906",
-          "builder": "Swan Hunter & Wigham Richardson"
-        },
-        {
-          "name": "SS Ascania (1911)",
-          "path": "ships/ss-ascania-1911.html",
-          "url": "/ships/ss-ascania-1911",
-          "launchYear": "1911",
-          "builder": "Swan Hunter"
-        },
-        {
-          "name": "QSMV Dominion Monarch",
-          "path": "ships/qsmv-dominion-monarch.html",
-          "url": "/ships/qsmv-dominion-monarch",
-          "launchYear": "1938",
-          "builder": "Swan Hunter & Wigham Richardson"
-        }
-      ]
-    },
-    {
       "id": "dalmuir",
       "name": "Dalmuir",
       "rawValues": [
@@ -2122,40 +2177,6 @@
           "url": "/ships/rms-windsor-castle",
           "launchYear": "1959",
           "builder": "Cammell Laird"
-        }
-      ]
-    },
-    {
-      "id": "camden-new-jersey",
-      "name": "Camden, New Jersey",
-      "rawValues": [
-        "Camden, New Jersey"
-      ],
-      "builders": [
-        "New York Shipbuilding Company"
-      ],
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "SS Manchuria",
-          "path": "ships/ss-manchuria.html",
-          "url": "/ships/ss-manchuria",
-          "launchYear": "1903",
-          "builder": "New York Shipbuilding Company"
-        },
-        {
-          "name": "SS Mongolia",
-          "path": "ships/ss-mongolia.html",
-          "url": "/ships/ss-mongolia",
-          "launchYear": "1903",
-          "builder": "New York Shipbuilding Company"
-        },
-        {
-          "name": "SS Manhattan (1932)",
-          "path": "ships/ss-manhattan.html",
-          "url": "/ships/ss-manhattan",
-          "launchYear": "1931",
-          "builder": "New York Shipbuilding Company"
         }
       ]
     },
@@ -4118,6 +4139,20 @@
           "builderId": "harland-and-wolff",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "RMS Laconia (1921)",
+      "path": "ships/rms-laconia.html",
+      "url": "/ships/rms-laconia",
+      "launchYear": "1921",
+      "assignments": [
+        {
+          "builder": "Swan Hunter & Wigham Richardson",
+          "builderId": "swan-hunter-and-wigham-richardson",
+          "location": "Wallsend",
+          "locationRaw": "Wallsend"
         }
       ]
     },
@@ -7188,6 +7223,20 @@
       ]
     },
     {
+      "name": "SS President Harding (1921)",
+      "path": "ships/ss-president-harding.html",
+      "url": "/ships/ss-president-harding",
+      "launchYear": "1920",
+      "assignments": [
+        {
+          "builder": "New York Shipbuilding Company",
+          "builderId": "new-york-shipbuilding-company",
+          "location": "Camden, New Jersey",
+          "locationRaw": "Camden, New Jersey"
+        }
+      ]
+    },
+    {
       "name": "SS President Hoover",
       "path": "ships/ss-president-hoover.html",
       "url": "/ships/ss-president-hoover",
@@ -7212,6 +7261,20 @@
           "builderId": "harland-and-wolff",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS President Roosevelt (1922)",
+      "path": "ships/ss-president-roosevelt.html",
+      "url": "/ships/ss-president-roosevelt",
+      "launchYear": null,
+      "assignments": [
+        {
+          "builder": "New York Shipbuilding Company",
+          "builderId": "new-york-shipbuilding-company",
+          "location": "Camden, New Jersey",
+          "locationRaw": "Camden, New Jersey"
         }
       ]
     },

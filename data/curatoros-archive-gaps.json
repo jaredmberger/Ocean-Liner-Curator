@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T08:07:56.790Z",
+  "generatedAt": "2026-09-30T08:19:23.514Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,8 +11,8 @@
     ]
   },
   "summary": {
-    "shipGuides": 327,
-    "relationshipCovered": 305,
+    "shipGuides": 330,
+    "relationshipCovered": 308,
     "relationshipUncovered": 22,
     "relationshipCoveragePct": 93.3,
     "canonicalOperators": 75,
@@ -22,7 +22,7 @@
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 9,
-    "explicitSisterLinks": 36,
+    "explicitSisterLinks": 37,
     "unresolvedSisterMentions": 13,
     "unresolvedSisterMentionsWithNoArchiveMatch": 8
   },
@@ -250,7 +250,7 @@
         "url": "/ships/ss-cuba",
         "operator": "Cunard Line",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 36 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 37 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -690,8 +690,8 @@
       },
       {
         "name": "Cunard Line",
-        "total": 36,
-        "covered": 35,
+        "total": 37,
+        "covered": 36,
         "uncovered": [
           {
             "name": "SS Cuba",
@@ -701,7 +701,7 @@
           }
         ],
         "uncoveredCount": 1,
-        "coveragePct": 97.2
+        "coveragePct": 97.3
       },
       {
         "name": "Compagnie Générale Transatlantique (French Line)",
@@ -970,6 +970,14 @@
         "coveragePct": 100
       },
       {
+        "name": "United States Lines",
+        "total": 7,
+        "covered": 7,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "Dominion Line",
         "total": 6,
         "covered": 6,
@@ -987,14 +995,6 @@
       },
       {
         "name": "Red Star Line",
-        "total": 5,
-        "covered": 5,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
-        "name": "United States Lines",
         "total": 5,
         "covered": 5,
         "uncovered": [],
@@ -1429,8 +1429,8 @@
       },
       {
         "era": "Interwar recovery",
-        "shipCount": 80,
-        "relationshipCovered": 79,
+        "shipCount": 83,
+        "relationshipCovered": 82,
         "relationshipUncovered": 1,
         "relationshipCoveragePct": 98.8
       },
@@ -1508,8 +1508,8 @@
       },
       {
         "decade": "1920s",
-        "shipCount": 80,
-        "relationshipCovered": 79,
+        "shipCount": 83,
+        "relationshipCovered": 82,
         "relationshipUncovered": 1,
         "relationshipCoveragePct": 98.8
       },

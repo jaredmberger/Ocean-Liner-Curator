@@ -1,23 +1,28 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-25T08:07:54.219Z",
+  "generatedAt": "2026-09-30T08:19:20.984Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 339,
-    "shipGuides": 327,
+    "trackedShipHtmlFiles": 342,
+    "shipGuides": 330,
     "canonicalBuilders": 80,
-    "guidesWithBuilder": 327,
+    "guidesWithBuilder": 330,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 10,
-    "guidesMissingLaunch": 0,
+    "guidesMissingLaunch": 1,
     "builderVariantGroups": 32,
     "suspiciousLaunchDatesWithoutYear": 0
   },
   "missing": {
     "builder": [],
     "operator": [],
-    "launched": []
+    "launched": [
+      {
+        "ship": "SS President Roosevelt (1922)",
+        "path": "ships/ss-president-roosevelt.html"
+      }
+    ]
   },
   "suspiciousLaunchYears": [],
   "topBuilders": [
@@ -580,6 +585,22 @@
       "shipCount": 6
     },
     {
+      "id": "new-york-shipbuilding-company",
+      "name": "New York Shipbuilding Company",
+      "names": [
+        "New York Shipbuilding Company",
+        "New York Shipbuilding Corporation"
+      ],
+      "rawValues": [
+        "New York Shipbuilding Company, Camden, New Jersey",
+        "New York Shipbuilding Corporation (Camden, New Jersey, USA)",
+        "New York Shipbuilding Corporation, Camden, New Jersey",
+        "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 252",
+        "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 255"
+      ],
+      "shipCount": 6
+    },
+    {
       "id": "ag-weser",
       "name": "AG Weser",
       "names": [
@@ -589,6 +610,24 @@
         "AG Weser, Bremen",
         "AG Weser, Bremen · yard no. 193",
         "AG Weser, Bremen, Germany"
+      ],
+      "shipCount": 5
+    },
+    {
+      "id": "swan-hunter-and-wigham-richardson",
+      "name": "Swan Hunter & Wigham Richardson",
+      "names": [
+        "Swan Hunter & Wigham Richardson",
+        "Swan Hunter & Wigham Richardson Ltd.",
+        "Swan Hunter and Wigham Richardson",
+        "Swan, Hunter & Wigham Richardson Ltd."
+      ],
+      "rawValues": [
+        "Swan Hunter & Wigham Richardson (Wallsend, England)",
+        "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne",
+        "Swan Hunter & Wigham Richardson, Wallsend",
+        "Swan Hunter and Wigham Richardson, Wallsend",
+        "Swan, Hunter & Wigham Richardson Ltd., Wallsend · yard no. 1125"
       ],
       "shipCount": 5
     },
@@ -624,20 +663,6 @@
       "shipCount": 4
     },
     {
-      "id": "new-york-shipbuilding-company",
-      "name": "New York Shipbuilding Company",
-      "names": [
-        "New York Shipbuilding Company",
-        "New York Shipbuilding Corporation"
-      ],
-      "rawValues": [
-        "New York Shipbuilding Company, Camden, New Jersey",
-        "New York Shipbuilding Corporation (Camden, New Jersey, USA)",
-        "New York Shipbuilding Corporation, Camden, New Jersey"
-      ],
-      "shipCount": 4
-    },
-    {
       "id": "societe-provencale-de-constructions-navales",
       "name": "Société Provençale de Constructions Navales",
       "names": [
@@ -646,22 +671,6 @@
       "rawValues": [
         "Société Provençale de Constructions Navales, La Ciotat",
         "Société Provençale de Constructions Navales, La Ciotat · yard no. 149"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "swan-hunter-and-wigham-richardson",
-      "name": "Swan Hunter & Wigham Richardson",
-      "names": [
-        "Swan Hunter & Wigham Richardson",
-        "Swan Hunter & Wigham Richardson Ltd.",
-        "Swan Hunter and Wigham Richardson"
-      ],
-      "rawValues": [
-        "Swan Hunter & Wigham Richardson (Wallsend, England)",
-        "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne",
-        "Swan Hunter & Wigham Richardson, Wallsend",
-        "Swan Hunter and Wigham Richardson, Wallsend"
       ],
       "shipCount": 4
     },
@@ -2254,6 +2263,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast · yard no. 356"
+        }
+      ]
+    },
+    {
+      "name": "RMS Laconia (1921)",
+      "path": "ships/rms-laconia.html",
+      "url": "/ships/rms-laconia",
+      "launchYear": "1921",
+      "builderRaw": "Swan, Hunter & Wigham Richardson Ltd., Wallsend · yard no. 1125",
+      "builders": [
+        {
+          "id": "swan-hunter-and-wigham-richardson",
+          "name": "Swan Hunter & Wigham Richardson",
+          "raw": "Swan, Hunter & Wigham Richardson Ltd., Wallsend · yard no. 1125"
         }
       ]
     },
@@ -5329,6 +5352,20 @@
       ]
     },
     {
+      "name": "SS President Harding (1921)",
+      "path": "ships/ss-president-harding.html",
+      "url": "/ships/ss-president-harding",
+      "launchYear": "1920",
+      "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 255",
+      "builders": [
+        {
+          "id": "new-york-shipbuilding-company",
+          "name": "New York Shipbuilding Company",
+          "raw": "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 255"
+        }
+      ]
+    },
+    {
       "name": "SS President Hoover",
       "path": "ships/ss-president-hoover.html",
       "url": "/ships/ss-president-hoover",
@@ -5353,6 +5390,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS President Roosevelt (1922)",
+      "path": "ships/ss-president-roosevelt.html",
+      "url": "/ships/ss-president-roosevelt",
+      "launchYear": null,
+      "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 252",
+      "builders": [
+        {
+          "id": "new-york-shipbuilding-company",
+          "name": "New York Shipbuilding Company",
+          "raw": "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 252"
         }
       ]
     },

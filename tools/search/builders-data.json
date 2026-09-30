@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-25T08:07:54.219Z",
+  "generatedAt": "2026-09-30T08:19:20.984Z",
   "summary": {
-    "shipGuides": 327,
+    "shipGuides": 330,
     "canonicalBuilders": 80,
-    "guidesWithBuilder": 327
+    "guidesWithBuilder": 330
   },
   "builders": [
     {
@@ -1671,6 +1671,61 @@
       ]
     },
     {
+      "id": "new-york-shipbuilding-company",
+      "name": "New York Shipbuilding Company",
+      "shipCount": 6,
+      "locations": [
+        "Camden, New Jersey",
+        "Camden, New Jersey, USA"
+      ],
+      "firstLaunchYear": null,
+      "lastLaunchYear": 1932,
+      "ships": [
+        {
+          "name": "SS Manchuria",
+          "url": "/ships/ss-manchuria",
+          "launchYear": "1903",
+          "operator": "Pacific Mail Steamship Company",
+          "builderRaw": "New York Shipbuilding Company, Camden, New Jersey"
+        },
+        {
+          "name": "SS Mongolia",
+          "url": "/ships/ss-mongolia",
+          "launchYear": "1903",
+          "operator": "Pacific Mail Steamship Company",
+          "builderRaw": "New York Shipbuilding Company, Camden, New Jersey"
+        },
+        {
+          "name": "SS President Harding (1921)",
+          "url": "/ships/ss-president-harding",
+          "launchYear": "1920",
+          "operator": "United States Lines",
+          "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 255"
+        },
+        {
+          "name": "SS Manhattan (1932)",
+          "url": "/ships/ss-manhattan",
+          "launchYear": "1931",
+          "operator": "United States Lines",
+          "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey"
+        },
+        {
+          "name": "SS Washington",
+          "url": "/ships/ss-washington",
+          "launchYear": "1932",
+          "operator": "United States Lines",
+          "builderRaw": "New York Shipbuilding Corporation (Camden, New Jersey, USA)"
+        },
+        {
+          "name": "SS President Roosevelt (1922)",
+          "url": "/ships/ss-president-roosevelt",
+          "launchYear": null,
+          "operator": "United States Lines",
+          "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 252"
+        }
+      ]
+    },
+    {
       "id": "ag-weser",
       "name": "AG Weser",
       "shipCount": 5,
@@ -1715,6 +1770,55 @@
           "launchYear": "1925",
           "operator": "Compagnie des Messageries Maritimes",
           "builderRaw": "AG Weser, Bremen, Germany"
+        }
+      ]
+    },
+    {
+      "id": "swan-hunter-and-wigham-richardson",
+      "name": "Swan Hunter & Wigham Richardson",
+      "shipCount": 5,
+      "locations": [
+        "Newcastle-on-Tyne",
+        "Wallsend",
+        "Wallsend, England"
+      ],
+      "firstLaunchYear": 1902,
+      "lastLaunchYear": 1938,
+      "ships": [
+        {
+          "name": "RMS Carpathia",
+          "url": "/ships/rms-carpathia",
+          "launchYear": "1902",
+          "operator": "Cunard Line",
+          "builderRaw": "Swan Hunter & Wigham Richardson, Wallsend"
+        },
+        {
+          "name": "RMS Mauretania",
+          "url": "/ships/rms-mauretania",
+          "launchYear": "1906",
+          "operator": "Cunard Line",
+          "builderRaw": "Swan Hunter & Wigham Richardson (Wallsend, England)"
+        },
+        {
+          "name": "SS Giulio Cesare",
+          "url": "/ships/ss-giulio-cesare",
+          "launchYear": "1920",
+          "operator": "Navigazione Generale Italiana",
+          "builderRaw": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne"
+        },
+        {
+          "name": "RMS Laconia (1921)",
+          "url": "/ships/rms-laconia",
+          "launchYear": "1921",
+          "operator": "Cunard Steam Ship Company; Cunard White Star from 1934",
+          "builderRaw": "Swan, Hunter & Wigham Richardson Ltd., Wallsend · yard no. 1125"
+        },
+        {
+          "name": "QSMV Dominion Monarch",
+          "url": "/ships/qsmv-dominion-monarch",
+          "launchYear": "1938",
+          "operator": "Shaw, Savill & Albion Line",
+          "builderRaw": "Swan Hunter and Wigham Richardson, Wallsend"
         }
       ]
     },
@@ -1803,47 +1907,6 @@
       ]
     },
     {
-      "id": "new-york-shipbuilding-company",
-      "name": "New York Shipbuilding Company",
-      "shipCount": 4,
-      "locations": [
-        "Camden, New Jersey",
-        "Camden, New Jersey, USA"
-      ],
-      "firstLaunchYear": 1903,
-      "lastLaunchYear": 1932,
-      "ships": [
-        {
-          "name": "SS Manchuria",
-          "url": "/ships/ss-manchuria",
-          "launchYear": "1903",
-          "operator": "Pacific Mail Steamship Company",
-          "builderRaw": "New York Shipbuilding Company, Camden, New Jersey"
-        },
-        {
-          "name": "SS Mongolia",
-          "url": "/ships/ss-mongolia",
-          "launchYear": "1903",
-          "operator": "Pacific Mail Steamship Company",
-          "builderRaw": "New York Shipbuilding Company, Camden, New Jersey"
-        },
-        {
-          "name": "SS Manhattan (1932)",
-          "url": "/ships/ss-manhattan",
-          "launchYear": "1931",
-          "operator": "United States Lines",
-          "builderRaw": "New York Shipbuilding Corporation, Camden, New Jersey"
-        },
-        {
-          "name": "SS Washington",
-          "url": "/ships/ss-washington",
-          "launchYear": "1932",
-          "operator": "United States Lines",
-          "builderRaw": "New York Shipbuilding Corporation (Camden, New Jersey, USA)"
-        }
-      ]
-    },
-    {
       "id": "societe-provencale-de-constructions-navales",
       "name": "Société Provençale de Constructions Navales",
       "shipCount": 4,
@@ -1880,48 +1943,6 @@
           "launchYear": "1931",
           "operator": "Compagnie des Messageries Maritimes",
           "builderRaw": "Société Provençale de Constructions Navales, La Ciotat"
-        }
-      ]
-    },
-    {
-      "id": "swan-hunter-and-wigham-richardson",
-      "name": "Swan Hunter & Wigham Richardson",
-      "shipCount": 4,
-      "locations": [
-        "Newcastle-on-Tyne",
-        "Wallsend",
-        "Wallsend, England"
-      ],
-      "firstLaunchYear": 1902,
-      "lastLaunchYear": 1938,
-      "ships": [
-        {
-          "name": "RMS Carpathia",
-          "url": "/ships/rms-carpathia",
-          "launchYear": "1902",
-          "operator": "Cunard Line",
-          "builderRaw": "Swan Hunter & Wigham Richardson, Wallsend"
-        },
-        {
-          "name": "RMS Mauretania",
-          "url": "/ships/rms-mauretania",
-          "launchYear": "1906",
-          "operator": "Cunard Line",
-          "builderRaw": "Swan Hunter & Wigham Richardson (Wallsend, England)"
-        },
-        {
-          "name": "SS Giulio Cesare",
-          "url": "/ships/ss-giulio-cesare",
-          "launchYear": "1920",
-          "operator": "Navigazione Generale Italiana",
-          "builderRaw": "Swan Hunter & Wigham Richardson Ltd., Newcastle-on-Tyne"
-        },
-        {
-          "name": "QSMV Dominion Monarch",
-          "url": "/ships/qsmv-dominion-monarch",
-          "launchYear": "1938",
-          "operator": "Shaw, Savill & Albion Line",
-          "builderRaw": "Swan Hunter and Wigham Richardson, Wallsend"
         }
       ]
     },

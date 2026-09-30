@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T08:07:54.219Z",
+  "generatedAt": "2026-09-30T08:19:20.984Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 327,
-    "guidesWithOperator": 327,
+    "shipGuides": 330,
+    "guidesWithOperator": 330,
     "guidesMissingOperator": 0,
     "canonicalOperators": 75,
     "aliasedOperatorGroups": 24
@@ -39,9 +39,10 @@
         "Cunard Line; British Government hire throughout active career",
         "Cunard Line; later Cunard White Star",
         "Cunard Line; later Cunard-White Star during the merger era, then Cunard again",
+        "Cunard Steam Ship Company; Cunard White Star from 1934",
         "Cunard Steamship Company"
       ],
-      "shipCount": 36
+      "shipCount": 37
     },
     {
       "id": "hamburg-america-line-hapag",
@@ -149,6 +150,14 @@
       "shipCount": 8
     },
     {
+      "id": "united-states-lines",
+      "name": "United States Lines",
+      "rawValues": [
+        "United States Lines"
+      ],
+      "shipCount": 7
+    },
+    {
       "id": "anchor-line",
       "name": "Anchor Line",
       "rawValues": [
@@ -183,14 +192,6 @@
       "name": "Red Star Line",
       "rawValues": [
         "Red Star Line"
-      ],
-      "shipCount": 5
-    },
-    {
-      "id": "united-states-lines",
-      "name": "United States Lines",
-      "rawValues": [
-        "United States Lines"
       ],
       "shipCount": 5
     },
@@ -1181,6 +1182,14 @@
       "launchYear": "1903",
       "operatorRaw": "Union-Castle Mail Steamship Company",
       "operator": "Union-Castle Line"
+    },
+    {
+      "name": "RMS Laconia (1921)",
+      "path": "ships/rms-laconia.html",
+      "url": "/ships/rms-laconia",
+      "launchYear": "1921",
+      "operatorRaw": "Cunard Steam Ship Company; Cunard White Star from 1934",
+      "operator": "Cunard Line"
     },
     {
       "name": "RMS Lancastria",
@@ -2935,6 +2944,14 @@
       "operator": "Dollar Steamship Line"
     },
     {
+      "name": "SS President Harding (1921)",
+      "path": "ships/ss-president-harding.html",
+      "url": "/ships/ss-president-harding",
+      "launchYear": "1920",
+      "operatorRaw": "United States Lines",
+      "operator": "United States Lines"
+    },
+    {
       "name": "SS President Hoover",
       "path": "ships/ss-president-hoover.html",
       "url": "/ships/ss-president-hoover",
@@ -2949,6 +2966,14 @@
       "launchYear": "1903",
       "operatorRaw": "Hamburg America Line (HAPAG)",
       "operator": "Hamburg America Line (HAPAG)"
+    },
+    {
+      "name": "SS President Roosevelt (1922)",
+      "path": "ships/ss-president-roosevelt.html",
+      "url": "/ships/ss-president-roosevelt",
+      "launchYear": null,
+      "operatorRaw": "United States Lines",
+      "operator": "United States Lines"
     },
     {
       "name": "SS Pretoria",

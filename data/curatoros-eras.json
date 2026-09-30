@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T08:07:55.494Z",
+  "generatedAt": "2026-09-30T08:19:22.232Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 327,
-    "guidesWithServiceStart": 321,
-    "guidesWithExplicitServiceEnd": 257,
+    "shipGuides": 330,
+    "guidesWithServiceStart": 324,
+    "guidesWithExplicitServiceEnd": 259,
     "eras": 10,
     "decades": 15
   },
@@ -620,7 +620,7 @@
     },
     {
       "name": "Interwar recovery",
-      "shipCount": 80,
+      "shipCount": 83,
       "ships": [
         {
           "name": "Asama Maru",
@@ -740,6 +740,13 @@
           "url": "/ships/rms-homeric",
           "serviceStartYear": "1921",
           "serviceEndYear": "1936"
+        },
+        {
+          "name": "RMS Laconia (1921)",
+          "path": "ships/rms-laconia.html",
+          "url": "/ships/rms-laconia",
+          "serviceStartYear": "1922",
+          "serviceEndYear": null
         },
         {
           "name": "RMS Lancastria",
@@ -1118,6 +1125,20 @@
           "url": "/ships/ss-pennsylvania",
           "serviceStartYear": "1929",
           "serviceEndYear": "1964"
+        },
+        {
+          "name": "SS President Harding (1921)",
+          "path": "ships/ss-president-harding.html",
+          "url": "/ships/ss-president-harding",
+          "serviceStartYear": "1921",
+          "serviceEndYear": "1940"
+        },
+        {
+          "name": "SS President Roosevelt (1922)",
+          "path": "ships/ss-president-roosevelt.html",
+          "url": "/ships/ss-president-roosevelt",
+          "serviceStartYear": "1922",
+          "serviceEndYear": "1948"
         },
         {
           "name": "SS Resolute",
@@ -2321,7 +2342,7 @@
   "decades": [
     {
       "name": "1920s",
-      "shipCount": 80,
+      "shipCount": 83,
       "ships": [
         {
           "name": "Asama Maru",
@@ -2441,6 +2462,13 @@
           "url": "/ships/rms-homeric",
           "serviceStartYear": "1921",
           "serviceEndYear": "1936"
+        },
+        {
+          "name": "RMS Laconia (1921)",
+          "path": "ships/rms-laconia.html",
+          "url": "/ships/rms-laconia",
+          "serviceStartYear": "1922",
+          "serviceEndYear": null
         },
         {
           "name": "RMS Lancastria",
@@ -2819,6 +2847,20 @@
           "url": "/ships/ss-pennsylvania",
           "serviceStartYear": "1929",
           "serviceEndYear": "1964"
+        },
+        {
+          "name": "SS President Harding (1921)",
+          "path": "ships/ss-president-harding.html",
+          "url": "/ships/ss-president-harding",
+          "serviceStartYear": "1921",
+          "serviceEndYear": "1940"
+        },
+        {
+          "name": "SS President Roosevelt (1922)",
+          "path": "ships/ss-president-roosevelt.html",
+          "url": "/ships/ss-president-roosevelt",
+          "serviceStartYear": "1922",
+          "serviceEndYear": "1948"
         },
         {
           "name": "SS Resolute",
@@ -5352,6 +5394,17 @@
       "endEvidence": "Withdrawn May 1936; contemporary/fleet sources place demolition at Newport across 1936–37"
     },
     {
+      "name": "RMS Laconia (1921)",
+      "path": "ships/rms-laconia.html",
+      "url": "/ships/rms-laconia",
+      "launchYear": "1921",
+      "serviceStartYear": "1922",
+      "serviceEndYear": null,
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": null
+    },
+    {
       "name": "RMS Lancastria",
       "path": "ships/rms-lancastria.html",
       "url": "/ships/rms-lancastria",
@@ -7761,6 +7814,17 @@
       "endEvidence": "Struck mines and was lost at Espiritu Santo on 26 October 1942"
     },
     {
+      "name": "SS President Harding (1921)",
+      "path": "ships/ss-president-harding.html",
+      "url": "/ships/ss-president-harding",
+      "launchYear": "1920",
+      "serviceStartYear": "1921",
+      "serviceEndYear": "1940",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Bombed in the Scheldt, 14 May 1940; subsequently a total loss"
+    },
+    {
       "name": "SS President Hoover",
       "path": "ships/ss-president-hoover.html",
       "url": "/ships/ss-president-hoover",
@@ -7781,6 +7845,17 @@
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
       "endEvidence": null
+    },
+    {
+      "name": "SS President Roosevelt (1922)",
+      "path": "ships/ss-president-roosevelt.html",
+      "url": "/ships/ss-president-roosevelt",
+      "launchYear": null,
+      "serviceStartYear": "1922",
+      "serviceEndYear": "1948",
+      "era": "Interwar recovery",
+      "decade": "1920s",
+      "endEvidence": "Decommissioned 7 March 1946; scrapped in 1948"
     },
     {
       "name": "SS Pretoria",
