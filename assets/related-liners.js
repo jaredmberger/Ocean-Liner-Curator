@@ -773,6 +773,7 @@
       "Related Liners.",
       "Canadian Pacific’s Empress ships associated especially with Pacific and trans-Pacific service.",
       [
+        { href: "/ships/rms-empress-of-asia", label: "RMS <em>Empress of Asia</em>", tail: "Canadian Pacific · 1913" },
         { href: "/ships/rms-empress-of-australia", label: "RMS <em>Empress of Australia</em>", tail: "Canadian Pacific · 1922" },
         { href: "/ships/rms-empress-of-japan-1929", label: "RMS <em>Empress of Japan</em>", tail: "Canadian Pacific · 1929" },
         { href: "/ships/rms-empress-of-russia", label: "RMS <em>Empress of Russia</em>", tail: "Canadian Pacific · 1913" }
@@ -1423,6 +1424,7 @@
     "ss-conte-grande": ["italian_broad_interwar"],
     "ss-conte-rosso": ["italian_broad_interwar"],
 
+    "rms-empress-of-asia": ["empress_pacific"],
     "rms-empress-of-australia": ["empress_pacific"],
     "rms-empress-of-japan-1929": ["empress_pacific"],
     "rms-empress-of-russia": ["empress_pacific"],
