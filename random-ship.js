@@ -135,6 +135,7 @@
 "/ships/ss-latlantique.html",
 "/ships/ss-la-provence.html",
 "/ships/ss-lafayette.html",
+"/ships/rms-laconia.html",
 "/ships/rms-lancastria.html",
 "/ships/ss-lapland.html",
 "/ships/rms-laurentic.html",
