@@ -93,6 +93,7 @@
 "/ships/ss-duchess-of-york.html",
 "/ships/ss-duilio.html",
 "/ships/ss-eastland.html",
+"/ships/rms-empress-of-asia.html",
 "/ships/rms-empress-of-australia.html",
 "/ships/rms-empress-of-britain.html",
 "/ships/rms-empress-of-canada.html",
