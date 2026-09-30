@@ -805,7 +805,6 @@
       [
         { href: "/ships/rms-laconia", label: "RMS <em>Laconia</em>", tail: "Cunard Line · 1922" },
         { href: "/ships/rms-franconia", label: "RMS <em>Franconia</em> (1923)", tail: "Cunard Line · 1923" },
-        { href: "/ships/rms-scythia", label: "RMS <em>Scythia</em>", tail: "Cunard Line · 1921" },
         { href: "/ships/rms-berengaria", label: "RMS <em>Berengaria</em>", tail: "Cunard Line · 1922" }
       ],
       "Cunard interwar liners"
@@ -1418,7 +1417,6 @@
 
     "rms-laconia": ["cunard_interwar_workhorses"],
     "rms-franconia": ["cunard_franconia_pair", "cunard_interwar_workhorses"],
-    "rms-scythia": ["cunard_interwar_workhorses"],
     "rms-berengaria": ["imperator_class", "cunard_interwar_workhorses"],
     "rms-etruria-1884": ["cunard_1880s_pair"],
     "rms-umbria-1884": ["cunard_1880s_pair"],
