@@ -505,6 +505,17 @@
       "Italian Line Atlantic liners"
     ),
 
+    ndl_express_evolution: cluster(
+      "Related Liners.",
+      "Norddeutscher Lloyd express liners showing the transition from the late single-screw steamship era to the four-funnel prestige generation.",
+      [
+        { href: "/ships/ss-lahn", label: "SS <em>Lahn</em>", tail: "Norddeutscher Lloyd · 1888" },
+        { href: "/ships/ss-kaiser-wilhelm-der-grosse", label: "SS <em>Kaiser Wilhelm der Grosse</em>", tail: "Norddeutscher Lloyd · 1897" },
+        { href: "/ships/ss-kronprinz-wilhelm", label: "SS <em>Kronprinz Wilhelm</em>", tail: "Norddeutscher Lloyd · 1901" }
+      ],
+      "North German Lloyd express evolution"
+    ),
+
     white_star_victorian_duo: cluster(
       "Related Liners.",
       "White Star Line’s late-Victorian running mates—built by Harland &amp; Wolff and often paired in period discussion.",
@@ -1313,9 +1324,10 @@
 
     "rms-lusitania": ["greyhounds"],
     "rms-mauretania": ["greyhounds"],
-    "ss-kaiser-wilhelm-der-grosse": ["greyhounds", "kaiser_class"],
+    "ss-lahn": ["ndl_express_evolution"],
+    "ss-kaiser-wilhelm-der-grosse": ["greyhounds", "kaiser_class", "ndl_express_evolution"],
     "ss-deutschland": ["greyhounds", "hapag_atlantic", "hapag_ballin_group"],
-    "ss-kronprinz-wilhelm": ["kaiser_class"],
+    "ss-kronprinz-wilhelm": ["kaiser_class", "ndl_express_evolution"],
     "ss-kaiser-wilhelm-ii": ["kaiser_class"],
     "ss-kronprinzessin-cecilie": ["kaiser_class"],
 
