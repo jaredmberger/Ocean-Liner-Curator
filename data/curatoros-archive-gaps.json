@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:19:23.514Z",
+  "generatedAt": "2026-09-30T08:36:01.651Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,17 +11,17 @@
     ]
   },
   "summary": {
-    "shipGuides": 330,
-    "relationshipCovered": 308,
+    "shipGuides": 332,
+    "relationshipCovered": 310,
     "relationshipUncovered": 22,
-    "relationshipCoveragePct": 93.3,
+    "relationshipCoveragePct": 93.4,
     "canonicalOperators": 75,
     "thinOperators": 47,
     "canonicalYardLocations": 68,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
-    "canonicalClasses": 9,
+    "canonicalClasses": 10,
     "explicitSisterLinks": 37,
     "unresolvedSisterMentions": 13,
     "unresolvedSisterMentionsWithNoArchiveMatch": 8
@@ -259,7 +259,7 @@
         "url": "/ships/ss-napoleon-iii",
         "operator": "Compagnie Générale Transatlantique (French Line)",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 17 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 18 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -705,8 +705,8 @@
       },
       {
         "name": "Compagnie Générale Transatlantique (French Line)",
-        "total": 17,
-        "covered": 16,
+        "total": 18,
+        "covered": 17,
         "uncovered": [
           {
             "name": "SS Napoleon III",
@@ -716,7 +716,7 @@
           }
         ],
         "uncoveredCount": 1,
-        "coveragePct": 94.1
+        "coveragePct": 94.4
       },
       {
         "name": "Anchor Line",
@@ -915,8 +915,8 @@
       },
       {
         "name": "Norddeutscher Lloyd (North German Lloyd)",
-        "total": 19,
-        "covered": 19,
+        "total": 20,
+        "covered": 20,
         "uncovered": [],
         "uncoveredCount": 0,
         "coveragePct": 100
@@ -1415,10 +1415,10 @@
       },
       {
         "era": "Late Victorian expansion",
-        "shipCount": 38,
-        "relationshipCovered": 33,
+        "shipCount": 40,
+        "relationshipCovered": 35,
         "relationshipUncovered": 5,
-        "relationshipCoveragePct": 86.8
+        "relationshipCoveragePct": 87.5
       },
       {
         "era": "Interwar express-liner era",
@@ -1480,17 +1480,17 @@
       },
       {
         "decade": "1880s",
-        "shipCount": 11,
-        "relationshipCovered": 9,
+        "shipCount": 12,
+        "relationshipCovered": 10,
         "relationshipUncovered": 2,
-        "relationshipCoveragePct": 81.8
+        "relationshipCoveragePct": 83.3
       },
       {
         "decade": "1890s",
-        "shipCount": 27,
-        "relationshipCovered": 24,
+        "shipCount": 28,
+        "relationshipCovered": 25,
         "relationshipUncovered": 3,
-        "relationshipCoveragePct": 88.9
+        "relationshipCoveragePct": 89.3
       },
       {
         "decade": "1900s",

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-30T08:19:20.984Z",
+  "generatedAt": "2026-09-30T08:35:59.375Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 342,
-    "shipGuides": 330,
+    "trackedShipHtmlFiles": 344,
+    "shipGuides": 332,
     "canonicalBuilders": 80,
-    "guidesWithBuilder": 330,
+    "guidesWithBuilder": 332,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 10,
@@ -141,8 +141,8 @@
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
-      "shipCount": 13,
-      "firstLaunchYear": 1892,
+      "shipCount": 14,
+      "firstLaunchYear": 1887,
       "lastLaunchYear": 1929,
       "locations": [
         "Govan",
@@ -179,6 +179,24 @@
       ]
     },
     {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "shipCount": 8,
+      "firstLaunchYear": 1890,
+      "lastLaunchYear": 1938,
+      "locations": [
+        "Penhoët",
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "operators": [
+        "Compagnie Générale Transatlantique",
+        "Compagnie Générale Transatlantique (CGT) / “French Line”",
+        "Compagnie Générale Transatlantique (French Line)",
+        "Compagnie de Navigation Sud-Atlantique"
+      ]
+    },
+    {
       "id": "newport-news-shipbuilding-and-dry-dock-co",
       "name": "Newport News Shipbuilding & Dry Dock Co.",
       "shipCount": 8,
@@ -196,24 +214,6 @@
         "Panama Pacific Line",
         "United States Lines",
         "Ward Line / AGWI interests"
-      ]
-    },
-    {
-      "id": "chantiers-de-penhoet",
-      "name": "Chantiers de Penhoët",
-      "shipCount": 7,
-      "firstLaunchYear": 1905,
-      "lastLaunchYear": 1938,
-      "locations": [
-        "Penhoët",
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
-      ],
-      "operators": [
-        "Compagnie Générale Transatlantique",
-        "Compagnie Générale Transatlantique (CGT) / “French Line”",
-        "Compagnie Générale Transatlantique (French Line)",
-        "Compagnie de Navigation Sud-Atlantique"
       ]
     },
     {
@@ -465,6 +465,7 @@
         "Fairfield Shipbuilding & Engineering Company"
       ],
       "rawValues": [
+        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 325",
         "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424",
         "Fairfield Shipbuilding & Engineering Co., Govan",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 418",
@@ -478,7 +479,7 @@
         "Fairfield Shipbuilding & Engineering Co., Govan, Scotland",
         "Fairfield Shipbuilding & Engineering Company, Govan, Scotland"
       ],
-      "shipCount": 13
+      "shipCount": 14
     },
     {
       "id": "ansaldo",
@@ -495,6 +496,24 @@
         "Ansaldo, Sestri Ponente, Genoa",
         "Ansaldo, Sestri Ponente, Genoa · hull no. 296",
         "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
+      ],
+      "shipCount": 8
+    },
+    {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "names": [
+        "Chantiers & Ateliers de Penhoët",
+        "Chantiers & Ateliers de Saint-Nazaire",
+        "Chantiers de Penhoët"
+      ],
+      "rawValues": [
+        "Chantiers & Ateliers de Penhoët, Saint-Nazaire",
+        "Chantiers & Ateliers de Saint-Nazaire, Penhoët",
+        "Chantiers de Penhoët (Saint-Nazaire, France)",
+        "Chantiers de Penhoët, Saint-Nazaire",
+        "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited",
+        "Chantiers de Penhoët, Saint-Nazaire, France"
       ],
       "shipCount": 8
     },
@@ -516,23 +535,6 @@
         "Newport News Shipbuilding, Virginia"
       ],
       "shipCount": 8
-    },
-    {
-      "id": "chantiers-de-penhoet",
-      "name": "Chantiers de Penhoët",
-      "names": [
-        "Chantiers & Ateliers de Penhoët",
-        "Chantiers & Ateliers de Saint-Nazaire",
-        "Chantiers de Penhoët"
-      ],
-      "rawValues": [
-        "Chantiers & Ateliers de Penhoët, Saint-Nazaire",
-        "Chantiers & Ateliers de Saint-Nazaire, Penhoët",
-        "Chantiers de Penhoët (Saint-Nazaire, France)",
-        "Chantiers de Penhoët, Saint-Nazaire",
-        "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
-      ],
-      "shipCount": 7
     },
     {
       "id": "william-beardmore-and-co",
@@ -4484,6 +4486,20 @@
       ]
     },
     {
+      "name": "SS La Touraine (1891)",
+      "path": "ships/ss-la-touraine.html",
+      "url": "/ships/ss-la-touraine",
+      "launchYear": "1890",
+      "builderRaw": "Chantiers de Penhoët, Saint-Nazaire, France",
+      "builders": [
+        {
+          "id": "chantiers-de-penhoet",
+          "name": "Chantiers de Penhoët",
+          "raw": "Chantiers de Penhoët, Saint-Nazaire, France"
+        }
+      ]
+    },
+    {
       "name": "SS Lafayette (1915)",
       "path": "ships/ss-lafayette.html",
       "url": "/ships/ss-lafayette",
@@ -4494,6 +4510,20 @@
           "id": "chantiers-et-ateliers-de-provence",
           "name": "Chantiers et Ateliers de Provence",
           "raw": "Chantiers et Ateliers de Provence, Port-de-Bouc"
+        }
+      ]
+    },
+    {
+      "name": "SS Lahn (1887)",
+      "path": "ships/ss-lahn.html",
+      "url": "/ships/ss-lahn",
+      "launchYear": "1887",
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 325",
+      "builders": [
+        {
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
+          "raw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 325"
         }
       ]
     },

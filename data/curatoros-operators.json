@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:19:20.984Z",
+  "generatedAt": "2026-09-30T08:35:59.375Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 330,
-    "guidesWithOperator": 330,
+    "shipGuides": 332,
+    "guidesWithOperator": 332,
     "guidesMissingOperator": 0,
     "canonicalOperators": 75,
     "aliasedOperatorGroups": 24
@@ -67,7 +67,7 @@
         "Norddeutscher Lloyd (North German Lloyd), Bremen",
         "Norddeutscher Lloyd / North German Lloyd"
       ],
-      "shipCount": 19
+      "shipCount": 20
     },
     {
       "id": "compagnie-generale-transatlantique-french-line",
@@ -80,7 +80,7 @@
         "Compagnie Générale Transatlantique (French Line)",
         "Compagnie Générale Transatlantique / French Line"
       ],
-      "shipCount": 17
+      "shipCount": 18
     },
     {
       "id": "p-and-o",
@@ -2448,12 +2448,28 @@
       "operator": "Compagnie Générale Transatlantique (French Line)"
     },
     {
+      "name": "SS La Touraine (1891)",
+      "path": "ships/ss-la-touraine.html",
+      "url": "/ships/ss-la-touraine",
+      "launchYear": "1890",
+      "operatorRaw": "Compagnie Générale Transatlantique (French Line)",
+      "operator": "Compagnie Générale Transatlantique (French Line)"
+    },
+    {
       "name": "SS Lafayette (1915)",
       "path": "ships/ss-lafayette.html",
       "url": "/ships/ss-lafayette",
       "launchYear": "1914",
       "operatorRaw": "Compagnie Générale Transatlantique",
       "operator": "Compagnie Générale Transatlantique (French Line)"
+    },
+    {
+      "name": "SS Lahn (1887)",
+      "path": "ships/ss-lahn.html",
+      "url": "/ships/ss-lahn",
+      "launchYear": "1887",
+      "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
+      "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
       "name": "SS Lake Michigan",

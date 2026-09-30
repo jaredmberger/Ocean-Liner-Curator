@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-30T08:19:20.984Z",
+  "generatedAt": "2026-09-30T08:35:59.375Z",
   "summary": {
-    "shipGuides": 330,
+    "shipGuides": 332,
     "canonicalBuilders": 80,
-    "guidesWithBuilder": 330
+    "guidesWithBuilder": 332
   },
   "builders": [
     {
@@ -1187,15 +1187,22 @@
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
-      "shipCount": 13,
+      "shipCount": 14,
       "locations": [
         "Govan",
         "Govan, Glasgow",
         "Govan, Scotland"
       ],
-      "firstLaunchYear": 1892,
+      "firstLaunchYear": 1887,
       "lastLaunchYear": 1929,
       "ships": [
+        {
+          "name": "SS Lahn (1887)",
+          "url": "/ships/ss-lahn",
+          "launchYear": "1887",
+          "operator": "Norddeutscher Lloyd (North German Lloyd)",
+          "builderRaw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 325"
+        },
         {
           "name": "RMS Campania",
           "url": "/ships/rms-campania",
@@ -1359,6 +1366,76 @@
       ]
     },
     {
+      "id": "chantiers-de-penhoet",
+      "name": "Chantiers de Penhoët",
+      "shipCount": 8,
+      "locations": [
+        "Penhoët",
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "firstLaunchYear": 1890,
+      "lastLaunchYear": 1938,
+      "ships": [
+        {
+          "name": "SS La Touraine (1891)",
+          "url": "/ships/ss-la-touraine",
+          "launchYear": "1890",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire, France"
+        },
+        {
+          "name": "SS La Provence",
+          "url": "/ships/ss-la-provence",
+          "launchYear": "1905",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+        },
+        {
+          "name": "SS France (1912)",
+          "url": "/ships/ss-france-1912",
+          "launchYear": "1910",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+        },
+        {
+          "name": "SS Rochambeau",
+          "url": "/ships/ss-rochambeau",
+          "launchYear": "1911",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Chantiers & Ateliers de Saint-Nazaire, Penhoët"
+        },
+        {
+          "name": "SS Paris",
+          "url": "/ships/ss-paris",
+          "launchYear": "1916",
+          "operator": "Compagnie Générale Transatlantique",
+          "builderRaw": "Chantiers & Ateliers de Penhoët, Saint-Nazaire"
+        },
+        {
+          "name": "SS Champlain",
+          "url": "/ships/ss-champlain",
+          "launchYear": "1931",
+          "operator": "Compagnie Générale Transatlantique",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
+        },
+        {
+          "name": "SS Normandie",
+          "url": "/ships/ss-normandie",
+          "launchYear": "1932",
+          "operator": "Compagnie Générale Transatlantique (CGT) / “French Line”",
+          "builderRaw": "Chantiers de Penhoët (Saint-Nazaire, France)"
+        },
+        {
+          "name": "SS Pasteur",
+          "url": "/ships/ss-pasteur",
+          "launchYear": "1938",
+          "operator": "Compagnie de Navigation Sud-Atlantique",
+          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
+        }
+      ]
+    },
+    {
       "id": "newport-news-shipbuilding-and-dry-dock-co",
       "name": "Newport News Shipbuilding & Dry Dock Co.",
       "shipCount": 8,
@@ -1426,69 +1503,6 @@
           "launchYear": "1951",
           "operator": "United States Lines",
           "builderRaw": "Newport News Shipbuilding, Virginia"
-        }
-      ]
-    },
-    {
-      "id": "chantiers-de-penhoet",
-      "name": "Chantiers de Penhoët",
-      "shipCount": 7,
-      "locations": [
-        "Penhoët",
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
-      ],
-      "firstLaunchYear": 1905,
-      "lastLaunchYear": 1938,
-      "ships": [
-        {
-          "name": "SS La Provence",
-          "url": "/ships/ss-la-provence",
-          "launchYear": "1905",
-          "operator": "Compagnie Générale Transatlantique (French Line)",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
-        },
-        {
-          "name": "SS France (1912)",
-          "url": "/ships/ss-france-1912",
-          "launchYear": "1910",
-          "operator": "Compagnie Générale Transatlantique (French Line)",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
-        },
-        {
-          "name": "SS Rochambeau",
-          "url": "/ships/ss-rochambeau",
-          "launchYear": "1911",
-          "operator": "Compagnie Générale Transatlantique (French Line)",
-          "builderRaw": "Chantiers & Ateliers de Saint-Nazaire, Penhoët"
-        },
-        {
-          "name": "SS Paris",
-          "url": "/ships/ss-paris",
-          "launchYear": "1916",
-          "operator": "Compagnie Générale Transatlantique",
-          "builderRaw": "Chantiers & Ateliers de Penhoët, Saint-Nazaire"
-        },
-        {
-          "name": "SS Champlain",
-          "url": "/ships/ss-champlain",
-          "launchYear": "1931",
-          "operator": "Compagnie Générale Transatlantique",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire"
-        },
-        {
-          "name": "SS Normandie",
-          "url": "/ships/ss-normandie",
-          "launchYear": "1932",
-          "operator": "Compagnie Générale Transatlantique (CGT) / “French Line”",
-          "builderRaw": "Chantiers de Penhoët (Saint-Nazaire, France)"
-        },
-        {
-          "name": "SS Pasteur",
-          "url": "/ships/ss-pasteur",
-          "launchYear": "1938",
-          "operator": "Compagnie de Navigation Sud-Atlantique",
-          "builderRaw": "Chantiers de Penhoët, Saint-Nazaire · yard designation R8 commonly cited"
         }
       ]
     },

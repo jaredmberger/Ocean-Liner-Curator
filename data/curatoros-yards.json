@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:19:20.984Z",
+  "generatedAt": "2026-09-30T08:35:59.375Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 330,
-    "guidesWithDocumentedYard": 330,
+    "shipGuides": 332,
+    "guidesWithDocumentedYard": 332,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 68,
     "multiYardShips": 0
@@ -955,6 +955,157 @@
       ]
     },
     {
+      "id": "govan",
+      "name": "Govan",
+      "rawValues": [
+        "Govan",
+        "Govan, Glasgow",
+        "Govan, Scotland"
+      ],
+      "builders": [
+        "Alexander Stephen & Sons",
+        "Fairfield Shipbuilding & Engineering Co.",
+        "Harland & Wolff",
+        "John Elder & Co."
+      ],
+      "shipCount": 19,
+      "ships": [
+        {
+          "name": "RMS Umbria (1884)",
+          "path": "ships/rms-umbria-1884.html",
+          "url": "/ships/rms-umbria-1884",
+          "launchYear": "1884",
+          "builder": "John Elder & Co."
+        },
+        {
+          "name": "SS Lahn (1887)",
+          "path": "ships/ss-lahn.html",
+          "url": "/ships/ss-lahn",
+          "launchYear": "1887",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "RMS Campania",
+          "path": "ships/rms-campania.html",
+          "url": "/ships/rms-campania",
+          "launchYear": "1892",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "RMS Lucania",
+          "path": "ships/rms-lucania.html",
+          "url": "/ships/rms-lucania",
+          "launchYear": "1893",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "RMS Orontes",
+          "path": "ships/rms-orontes.html",
+          "url": "/ships/rms-orontes",
+          "launchYear": "1902",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Armadale Castle",
+          "path": "ships/ss-armadale-castle.html",
+          "url": "/ships/ss-armadale-castle",
+          "launchYear": "1903",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "RMS Empress of Ireland",
+          "path": "ships/rms-empress-of-ireland.html",
+          "url": "/ships/rms-empress-of-ireland",
+          "launchYear": "1906",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "RMS Empress of Russia",
+          "path": "ships/rms-empress-of-russia.html",
+          "url": "/ships/rms-empress-of-russia",
+          "launchYear": "1912",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Calgarian",
+          "path": "ships/ss-calgarian.html",
+          "url": "/ships/ss-calgarian",
+          "launchYear": "1913",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Westernland",
+          "path": "ships/ss-westernland.html",
+          "url": "/ships/ss-westernland",
+          "launchYear": "1917",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "RMS Empress of Canada (1922)",
+          "path": "ships/rms-empress-of-canada.html",
+          "url": "/ships/rms-empress-of-canada",
+          "launchYear": "1920",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Montrose",
+          "path": "ships/ss-montrose.html",
+          "url": "/ships/ss-montrose",
+          "launchYear": "1920",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Tuscania (1921)",
+          "path": "ships/ss-tuscania-1921.html",
+          "url": "/ships/ss-tuscania-1921",
+          "launchYear": "1921",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Veendam",
+          "path": "ships/ss-veendam.html",
+          "url": "/ships/ss-veendam",
+          "launchYear": "1922",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "SS Volendam",
+          "path": "ships/ss-volendam.html",
+          "url": "/ships/ss-volendam",
+          "launchYear": "1922",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "SS Letitia",
+          "path": "ships/ss-letitia.html",
+          "url": "/ships/ss-letitia",
+          "launchYear": "1924",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "RMS Transylvania",
+          "path": "ships/rms-transylvania.html",
+          "url": "/ships/rms-transylvania",
+          "launchYear": "1925",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "SS Chitral (1925)",
+          "path": "ships/ss-chitral.html",
+          "url": "/ships/ss-chitral",
+          "launchYear": "1925",
+          "builder": "Alexander Stephen & Sons"
+        },
+        {
+          "name": "RMS Empress of Japan (1929)",
+          "path": "ships/rms-empress-of-japan-1929.html",
+          "url": "/ships/rms-empress-of-japan-1929",
+          "launchYear": "1929",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        }
+      ]
+    },
+    {
       "id": "barrow-in-furness",
       "name": "Barrow-in-Furness",
       "rawValues": [
@@ -1098,150 +1249,6 @@
       ]
     },
     {
-      "id": "govan",
-      "name": "Govan",
-      "rawValues": [
-        "Govan",
-        "Govan, Glasgow",
-        "Govan, Scotland"
-      ],
-      "builders": [
-        "Alexander Stephen & Sons",
-        "Fairfield Shipbuilding & Engineering Co.",
-        "Harland & Wolff",
-        "John Elder & Co."
-      ],
-      "shipCount": 18,
-      "ships": [
-        {
-          "name": "RMS Umbria (1884)",
-          "path": "ships/rms-umbria-1884.html",
-          "url": "/ships/rms-umbria-1884",
-          "launchYear": "1884",
-          "builder": "John Elder & Co."
-        },
-        {
-          "name": "RMS Campania",
-          "path": "ships/rms-campania.html",
-          "url": "/ships/rms-campania",
-          "launchYear": "1892",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "RMS Lucania",
-          "path": "ships/rms-lucania.html",
-          "url": "/ships/rms-lucania",
-          "launchYear": "1893",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "RMS Orontes",
-          "path": "ships/rms-orontes.html",
-          "url": "/ships/rms-orontes",
-          "launchYear": "1902",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "SS Armadale Castle",
-          "path": "ships/ss-armadale-castle.html",
-          "url": "/ships/ss-armadale-castle",
-          "launchYear": "1903",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "RMS Empress of Ireland",
-          "path": "ships/rms-empress-of-ireland.html",
-          "url": "/ships/rms-empress-of-ireland",
-          "launchYear": "1906",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "RMS Empress of Russia",
-          "path": "ships/rms-empress-of-russia.html",
-          "url": "/ships/rms-empress-of-russia",
-          "launchYear": "1912",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "SS Calgarian",
-          "path": "ships/ss-calgarian.html",
-          "url": "/ships/ss-calgarian",
-          "launchYear": "1913",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "SS Westernland",
-          "path": "ships/ss-westernland.html",
-          "url": "/ships/ss-westernland",
-          "launchYear": "1917",
-          "builder": "Harland & Wolff"
-        },
-        {
-          "name": "RMS Empress of Canada (1922)",
-          "path": "ships/rms-empress-of-canada.html",
-          "url": "/ships/rms-empress-of-canada",
-          "launchYear": "1920",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "SS Montrose",
-          "path": "ships/ss-montrose.html",
-          "url": "/ships/ss-montrose",
-          "launchYear": "1920",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "SS Tuscania (1921)",
-          "path": "ships/ss-tuscania-1921.html",
-          "url": "/ships/ss-tuscania-1921",
-          "launchYear": "1921",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "SS Veendam",
-          "path": "ships/ss-veendam.html",
-          "url": "/ships/ss-veendam",
-          "launchYear": "1922",
-          "builder": "Harland & Wolff"
-        },
-        {
-          "name": "SS Volendam",
-          "path": "ships/ss-volendam.html",
-          "url": "/ships/ss-volendam",
-          "launchYear": "1922",
-          "builder": "Harland & Wolff"
-        },
-        {
-          "name": "SS Letitia",
-          "path": "ships/ss-letitia.html",
-          "url": "/ships/ss-letitia",
-          "launchYear": "1924",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "RMS Transylvania",
-          "path": "ships/rms-transylvania.html",
-          "url": "/ships/rms-transylvania",
-          "launchYear": "1925",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        },
-        {
-          "name": "SS Chitral (1925)",
-          "path": "ships/ss-chitral.html",
-          "url": "/ships/ss-chitral",
-          "launchYear": "1925",
-          "builder": "Alexander Stephen & Sons"
-        },
-        {
-          "name": "RMS Empress of Japan (1929)",
-          "path": "ships/rms-empress-of-japan-1929.html",
-          "url": "/ships/rms-empress-of-japan-1929",
-          "launchYear": "1929",
-          "builder": "Fairfield Shipbuilding & Engineering Co."
-        }
-      ]
-    },
-    {
       "id": "saint-nazaire",
       "name": "Saint-Nazaire",
       "rawValues": [
@@ -1257,7 +1264,7 @@
         "Chantiers de l'Atlantique",
         "Chantiers de l’Atlantique"
       ],
-      "shipCount": 16,
+      "shipCount": 17,
       "ships": [
         {
           "name": "SS La Bretagne",
@@ -1265,6 +1272,13 @@
           "url": "/ships/ss-la-bretagne",
           "launchYear": "1885",
           "builder": "Ateliers et Chantiers de Saint-Nazaire Penhoët"
+        },
+        {
+          "name": "SS La Touraine (1891)",
+          "path": "ships/ss-la-touraine.html",
+          "url": "/ships/ss-la-touraine",
+          "launchYear": "1890",
+          "builder": "Chantiers de Penhoët"
         },
         {
           "name": "SS La Provence",
@@ -6355,6 +6369,20 @@
       ]
     },
     {
+      "name": "SS La Touraine (1891)",
+      "path": "ships/ss-la-touraine.html",
+      "url": "/ships/ss-la-touraine",
+      "launchYear": "1890",
+      "assignments": [
+        {
+          "builder": "Chantiers de Penhoët",
+          "builderId": "chantiers-de-penhoet",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire, France"
+        }
+      ]
+    },
+    {
       "name": "SS Lafayette (1915)",
       "path": "ships/ss-lafayette.html",
       "url": "/ships/ss-lafayette",
@@ -6365,6 +6393,20 @@
           "builderId": "chantiers-et-ateliers-de-provence",
           "location": "Port-de-Bouc",
           "locationRaw": "Port-de-Bouc"
+        }
+      ]
+    },
+    {
+      "name": "SS Lahn (1887)",
+      "path": "ships/ss-lahn.html",
+      "url": "/ships/ss-lahn",
+      "launchYear": "1887",
+      "assignments": [
+        {
+          "builder": "Fairfield Shipbuilding & Engineering Co.",
+          "builderId": "fairfield-shipbuilding-and-engineering-co",
+          "location": "Govan",
+          "locationRaw": "Govan, Glasgow"
         }
       ]
     },

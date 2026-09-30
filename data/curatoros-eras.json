@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:19:22.232Z",
+  "generatedAt": "2026-09-30T08:36:00.532Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 330,
-    "guidesWithServiceStart": 324,
-    "guidesWithExplicitServiceEnd": 259,
+    "shipGuides": 332,
+    "guidesWithServiceStart": 326,
+    "guidesWithExplicitServiceEnd": 261,
     "eras": 10,
     "decades": 15
   },
@@ -1535,7 +1535,7 @@
     },
     {
       "name": "Late Victorian expansion",
-      "shipCount": 38,
+      "shipCount": 40,
       "ships": [
         {
           "name": "RMS Campania",
@@ -1732,6 +1732,20 @@
           "url": "/ships/ss-la-normandie",
           "serviceStartYear": "1883",
           "serviceEndYear": "1912"
+        },
+        {
+          "name": "SS La Touraine (1891)",
+          "path": "ships/ss-la-touraine.html",
+          "url": "/ships/ss-la-touraine",
+          "serviceStartYear": "1891",
+          "serviceEndYear": "1923"
+        },
+        {
+          "name": "SS Lahn (1887)",
+          "path": "ships/ss-lahn.html",
+          "url": "/ships/ss-lahn",
+          "serviceStartYear": "1887",
+          "serviceEndYear": "1927"
         },
         {
           "name": "RMS Majestic (1889)",
@@ -4011,7 +4025,7 @@
     },
     {
       "name": "1890s",
-      "shipCount": 27,
+      "shipCount": 28,
       "ships": [
         {
           "name": "RMS Campania",
@@ -4138,6 +4152,13 @@
           "url": "/ships/ss-konigin-luise",
           "serviceStartYear": "1896",
           "serviceEndYear": "1935"
+        },
+        {
+          "name": "SS La Touraine (1891)",
+          "path": "ships/ss-la-touraine.html",
+          "url": "/ships/ss-la-touraine",
+          "serviceStartYear": "1891",
+          "serviceEndYear": "1923"
         },
         {
           "name": "RMS Majestic (1889)",
@@ -4317,7 +4338,7 @@
     },
     {
       "name": "1880s",
-      "shipCount": 11,
+      "shipCount": 12,
       "ships": [
         {
           "name": "RMS Etruria (1884)",
@@ -4388,6 +4409,13 @@
           "url": "/ships/ss-la-normandie",
           "serviceStartYear": "1883",
           "serviceEndYear": "1912"
+        },
+        {
+          "name": "SS Lahn (1887)",
+          "path": "ships/ss-lahn.html",
+          "url": "/ships/ss-lahn",
+          "serviceStartYear": "1887",
+          "serviceEndYear": "1927"
         },
         {
           "name": "SS Norge",
@@ -7132,6 +7160,17 @@
       "endEvidence": "Torpedoed and sunk in the Mediterranean on February 26, 1916, while carrying troops toward Salonika"
     },
     {
+      "name": "SS La Touraine (1891)",
+      "path": "ships/ss-la-touraine.html",
+      "url": "/ships/ss-la-touraine",
+      "launchYear": "1890",
+      "serviceStartYear": "1891",
+      "serviceEndYear": "1923",
+      "era": "Late Victorian expansion",
+      "decade": "1890s",
+      "endEvidence": "Withdrawn after more than three decades of service; scrapped in France in 1923–24"
+    },
+    {
       "name": "SS Lafayette (1915)",
       "path": "ships/ss-lafayette.html",
       "url": "/ships/ss-lafayette",
@@ -7141,6 +7180,17 @@
       "era": "First World War era",
       "decade": "1910s",
       "endEvidence": "Mined near the mouth of the Gironde, 19 June 1940"
+    },
+    {
+      "name": "SS Lahn (1887)",
+      "path": "ships/ss-lahn.html",
+      "url": "/ships/ss-lahn",
+      "launchYear": "1887",
+      "serviceStartYear": "1887",
+      "serviceEndYear": "1927",
+      "era": "Late Victorian expansion",
+      "decade": "1880s",
+      "endEvidence": "broken up around 1927"
     },
     {
       "name": "SS Lake Michigan",

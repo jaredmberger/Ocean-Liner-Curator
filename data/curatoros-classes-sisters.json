@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:19:23.447Z",
+  "generatedAt": "2026-09-30T08:36:01.595Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 330,
-    "guidesWithExplicitClass": 17,
-    "canonicalClasses": 9,
+    "shipGuides": 332,
+    "guidesWithExplicitClass": 18,
+    "canonicalClasses": 10,
     "explicitSisterLinks": 37,
     "unresolvedSisterMentions": 13
   },
@@ -122,6 +122,21 @@
           "name": "SS Friedrich der Grosse",
           "path": "ships/ss-friedrich-der-grosse.html",
           "url": "/ships/ss-friedrich-der-grosse"
+        }
+      ]
+    },
+    {
+      "id": "kaiser",
+      "name": "Kaiser",
+      "rawValues": [
+        "Kaiser"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Lahn (1887)",
+          "path": "ships/ss-lahn.html",
+          "url": "/ships/ss-lahn"
         }
       ]
     },
@@ -2394,10 +2409,26 @@
       "sisters": []
     },
     {
+      "name": "SS La Touraine (1891)",
+      "path": "ships/ss-la-touraine.html",
+      "url": "/ships/ss-la-touraine",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "SS Lafayette (1915)",
       "path": "ships/ss-lafayette.html",
       "url": "/ships/ss-lafayette",
       "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Lahn (1887)",
+      "path": "ships/ss-lahn.html",
+      "url": "/ships/ss-lahn",
+      "classes": [
+        "Kaiser"
+      ],
       "sisters": []
     },
     {
