@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T17:59:37.622Z",
+  "generatedAt": "2026-09-30T18:35:45.833Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 335,
-    "guidesWithDocumentedYard": 335,
+    "shipGuides": 339,
+    "guidesWithDocumentedYard": 339,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 70,
+    "canonicalYardLocations": 71,
     "multiYardShips": 0
   },
   "yards": [
@@ -782,7 +782,7 @@
         "AG Vulcan",
         "Blohm & Voss"
       ],
-      "shipCount": 24,
+      "shipCount": 25,
       "ships": [
         {
           "name": "SS Barbarossa",
@@ -823,6 +823,13 @@
           "name": "SS Belgravia",
           "path": "ships/ss-belgravia.html",
           "url": "/ships/ss-belgravia",
+          "launchYear": "1899",
+          "builder": "Blohm & Voss"
+        },
+        {
+          "name": "SS Potsdam (1900)",
+          "path": "ships/ss-potsdam.html",
+          "url": "/ships/ss-potsdam",
           "launchYear": "1899",
           "builder": "Blohm & Voss"
         },
@@ -2006,6 +2013,48 @@
       ]
     },
     {
+      "id": "birkenhead",
+      "name": "Birkenhead",
+      "rawValues": [
+        "Birkenhead"
+      ],
+      "builders": [
+        "Cammell Laird",
+        "Cammell, Laird & Co. Ltd."
+      ],
+      "shipCount": 4,
+      "ships": [
+        {
+          "name": "SS Kristianiafjord (1913)",
+          "path": "ships/ss-kristianiafjord.html",
+          "url": "/ships/ss-kristianiafjord",
+          "launchYear": "1912",
+          "builder": "Cammell, Laird & Co. Ltd."
+        },
+        {
+          "name": "SS Bergensfjord",
+          "path": "ships/ss-bergensfjord.html",
+          "url": "/ships/ss-bergensfjord",
+          "launchYear": "1913",
+          "builder": "Cammell Laird"
+        },
+        {
+          "name": "SS De Grasse",
+          "path": "ships/ss-de-grasse.html",
+          "url": "/ships/ss-de-grasse",
+          "launchYear": "1924",
+          "builder": "Cammell Laird"
+        },
+        {
+          "name": "RMS Windsor Castle",
+          "path": "ships/rms-windsor-castle.html",
+          "url": "/ships/rms-windsor-castle",
+          "launchYear": "1959",
+          "builder": "Cammell Laird"
+        }
+      ]
+    },
+    {
       "id": "dalmuir",
       "name": "Dalmuir",
       "rawValues": [
@@ -2043,6 +2092,47 @@
           "url": "/ships/ss-duchess-of-atholl",
           "launchYear": "1927",
           "builder": "William Beardmore & Co."
+        }
+      ]
+    },
+    {
+      "id": "danzig",
+      "name": "Danzig",
+      "rawValues": [
+        "Danzig"
+      ],
+      "builders": [
+        "F. Schichau"
+      ],
+      "shipCount": 4,
+      "ships": [
+        {
+          "name": "SS Grosser Kurfürst",
+          "path": "ships/ss-grosser-kurfurst.html",
+          "url": "/ships/ss-grosser-kurfurst",
+          "launchYear": "1899",
+          "builder": "F. Schichau"
+        },
+        {
+          "name": "SS Cincinnati (1909)",
+          "path": "ships/ss-cincinnati.html",
+          "url": "/ships/ss-cincinnati",
+          "launchYear": "1908",
+          "builder": "F. Schichau"
+        },
+        {
+          "name": "RMS Homeric (1913)",
+          "path": "ships/rms-homeric.html",
+          "url": "/ships/rms-homeric",
+          "launchYear": "1913",
+          "builder": "F. Schichau"
+        },
+        {
+          "name": "SS Columbus (1924)",
+          "path": "ships/ss-columbus-1924.html",
+          "url": "/ships/ss-columbus-1924",
+          "launchYear": "1922",
+          "builder": "F. Schichau"
         }
       ]
     },
@@ -2164,74 +2254,6 @@
           "url": "/ships/ms-oranje",
           "launchYear": "1938",
           "builder": "N.V. Nederlandsche Scheepsbouw-Maatschappij"
-        }
-      ]
-    },
-    {
-      "id": "birkenhead",
-      "name": "Birkenhead",
-      "rawValues": [
-        "Birkenhead"
-      ],
-      "builders": [
-        "Cammell Laird"
-      ],
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "SS Bergensfjord",
-          "path": "ships/ss-bergensfjord.html",
-          "url": "/ships/ss-bergensfjord",
-          "launchYear": "1913",
-          "builder": "Cammell Laird"
-        },
-        {
-          "name": "SS De Grasse",
-          "path": "ships/ss-de-grasse.html",
-          "url": "/ships/ss-de-grasse",
-          "launchYear": "1924",
-          "builder": "Cammell Laird"
-        },
-        {
-          "name": "RMS Windsor Castle",
-          "path": "ships/rms-windsor-castle.html",
-          "url": "/ships/rms-windsor-castle",
-          "launchYear": "1959",
-          "builder": "Cammell Laird"
-        }
-      ]
-    },
-    {
-      "id": "danzig",
-      "name": "Danzig",
-      "rawValues": [
-        "Danzig"
-      ],
-      "builders": [
-        "F. Schichau"
-      ],
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "SS Grosser Kurfürst",
-          "path": "ships/ss-grosser-kurfurst.html",
-          "url": "/ships/ss-grosser-kurfurst",
-          "launchYear": "1899",
-          "builder": "F. Schichau"
-        },
-        {
-          "name": "RMS Homeric (1913)",
-          "path": "ships/rms-homeric.html",
-          "url": "/ships/rms-homeric",
-          "launchYear": "1913",
-          "builder": "F. Schichau"
-        },
-        {
-          "name": "SS Columbus (1924)",
-          "path": "ships/ss-columbus-1924.html",
-          "url": "/ships/ss-columbus-1924",
-          "launchYear": "1922",
-          "builder": "F. Schichau"
         }
       ]
     },
@@ -2856,6 +2878,26 @@
           "url": "/ships/rms-britannia-1840",
           "launchYear": "1840",
           "builder": "Robert Duncan & Company"
+        }
+      ]
+    },
+    {
+      "id": "groton-connecticut",
+      "name": "Groton, Connecticut",
+      "rawValues": [
+        "Groton, Connecticut"
+      ],
+      "builders": [
+        "Eastern Shipbuilding Company"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Dakota (1905)",
+          "path": "ships/ss-dakota.html",
+          "url": "/ships/ss-dakota",
+          "launchYear": "1904",
+          "builder": "Eastern Shipbuilding Company"
         }
       ]
     },
@@ -5492,6 +5534,20 @@
       ]
     },
     {
+      "name": "SS Cincinnati (1909)",
+      "path": "ships/ss-cincinnati.html",
+      "url": "/ships/ss-cincinnati",
+      "launchYear": "1908",
+      "assignments": [
+        {
+          "builder": "F. Schichau",
+          "builderId": "f-schichau",
+          "location": "Danzig",
+          "locationRaw": "Danzig"
+        }
+      ]
+    },
+    {
       "name": "SS City of New York (1888)",
       "path": "ships/ss-city-of-new-york-1888.html",
       "url": "/ships/ss-city-of-new-york-1888",
@@ -5768,6 +5824,20 @@
           "builderId": "harland-and-wolff",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS Dakota (1905)",
+      "path": "ships/ss-dakota.html",
+      "url": "/ships/ss-dakota",
+      "launchYear": "1904",
+      "assignments": [
+        {
+          "builder": "Eastern Shipbuilding Company",
+          "builderId": "eastern-shipbuilding-company",
+          "location": "Groton, Connecticut",
+          "locationRaw": "Groton, Connecticut"
         }
       ]
     },
@@ -6370,6 +6440,20 @@
           "builderId": "ag-vulcan",
           "location": "Stettin",
           "locationRaw": "Stettin, Germany"
+        }
+      ]
+    },
+    {
+      "name": "SS Kristianiafjord (1913)",
+      "path": "ships/ss-kristianiafjord.html",
+      "url": "/ships/ss-kristianiafjord",
+      "launchYear": "1912",
+      "assignments": [
+        {
+          "builder": "Cammell, Laird & Co. Ltd.",
+          "builderId": "cammell-laird-and-co-ltd",
+          "location": "Birkenhead",
+          "locationRaw": "Birkenhead"
         }
       ]
     },
@@ -7336,6 +7420,20 @@
           "builderId": "furness-withy-and-co",
           "location": "West Hartlepool, England",
           "locationRaw": "West Hartlepool, England"
+        }
+      ]
+    },
+    {
+      "name": "SS Potsdam (1900)",
+      "path": "ships/ss-potsdam.html",
+      "url": "/ships/ss-potsdam",
+      "launchYear": "1899",
+      "assignments": [
+        {
+          "builder": "Blohm & Voss",
+          "builderId": "blohm-and-voss",
+          "location": "Hamburg",
+          "locationRaw": "Hamburg"
         }
       ]
     },

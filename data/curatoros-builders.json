@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-30T17:59:37.622Z",
+  "generatedAt": "2026-09-30T18:35:45.833Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 347,
-    "shipGuides": 335,
-    "canonicalBuilders": 82,
-    "guidesWithBuilder": 335,
+    "trackedShipHtmlFiles": 351,
+    "shipGuides": 339,
+    "canonicalBuilders": 83,
+    "guidesWithBuilder": 339,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
     "guidesMissingLaunch": 1,
-    "builderVariantGroups": 32,
+    "builderVariantGroups": 33,
     "suspiciousLaunchDatesWithoutYear": 0
   },
   "missing": {
@@ -75,7 +75,7 @@
     {
       "id": "blohm-and-voss",
       "name": "Blohm & Voss",
-      "shipCount": 21,
+      "shipCount": 22,
       "firstLaunchYear": 1896,
       "lastLaunchYear": 1929,
       "locations": [
@@ -393,6 +393,7 @@
         "Blohm & Voss, Hamburg",
         "Blohm & Voss, Hamburg · Yard No. 125",
         "Blohm & Voss, Hamburg · Yard No. 132",
+        "Blohm & Voss, Hamburg · yard no. 139",
         "Blohm & Voss, Hamburg · yard no. 214",
         "Blohm & Voss, Hamburg · yard no. 221",
         "Blohm & Voss, Hamburg · yard no. 403",
@@ -402,7 +403,7 @@
         "Blohm & Voss, Hamburg · yard no. 479",
         "Blohm & Voss, Hamburg, Germany"
       ],
-      "shipCount": 21
+      "shipCount": 22
     },
     {
       "id": "ag-vulcan",
@@ -666,6 +667,20 @@
       "shipCount": 4
     },
     {
+      "id": "f-schichau",
+      "name": "F. Schichau",
+      "names": [
+        "F. Schichau"
+      ],
+      "rawValues": [
+        "F. Schichau, Danzig",
+        "F. Schichau, Danzig · yard no. 804",
+        "F. Schichau, Danzig · yard no. 891",
+        "F. Schichau, Danzig · yard no. 929"
+      ],
+      "shipCount": 4
+    },
+    {
       "id": "societe-provencale-de-constructions-navales",
       "name": "Société Provençale de Constructions Navales",
       "names": [
@@ -745,19 +760,6 @@
       "shipCount": 3
     },
     {
-      "id": "f-schichau",
-      "name": "F. Schichau",
-      "names": [
-        "F. Schichau"
-      ],
-      "rawValues": [
-        "F. Schichau, Danzig",
-        "F. Schichau, Danzig · yard no. 891",
-        "F. Schichau, Danzig · yard no. 929"
-      ],
-      "shipCount": 3
-    },
-    {
       "id": "r-and-w-hawthorn-leslie-and-co",
       "name": "R. & W. Hawthorn, Leslie & Co.",
       "names": [
@@ -816,6 +818,18 @@
       "rawValues": [
         "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 891",
         "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 893"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "eastern-shipbuilding-company",
+      "name": "Eastern Shipbuilding Company",
+      "names": [
+        "Eastern Shipbuilding Company"
+      ],
+      "rawValues": [
+        "Eastern Shipbuilding Company, Groton, Connecticut · yard no. 2",
+        "Eastern Shipbuilding Company, New London / Groton, Connecticut"
       ],
       "shipCount": 2
     },
@@ -1001,6 +1015,17 @@
       "shipCount": 1
     },
     {
+      "id": "cammell-laird-and-co-ltd",
+      "name": "Cammell, Laird & Co. Ltd.",
+      "names": [
+        "Cammell, Laird & Co. Ltd."
+      ],
+      "rawValues": [
+        "Cammell, Laird & Co. Ltd., Birkenhead · yard no. 784"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "cantiere-navale-di-riva-trigoso",
       "name": "Cantiere Navale di Riva Trigoso",
       "names": [
@@ -1085,17 +1110,6 @@
       ],
       "rawValues": [
         "D. & W. Henderson Ltd., Glasgow"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "eastern-shipbuilding-company",
-      "name": "Eastern Shipbuilding Company",
-      "names": [
-        "Eastern Shipbuilding Company"
-      ],
-      "rawValues": [
-        "Eastern Shipbuilding Company, New London / Groton, Connecticut"
       ],
       "shipCount": 1
     },
@@ -3585,6 +3599,20 @@
       ]
     },
     {
+      "name": "SS Cincinnati (1909)",
+      "path": "ships/ss-cincinnati.html",
+      "url": "/ships/ss-cincinnati",
+      "launchYear": "1908",
+      "builderRaw": "F. Schichau, Danzig · yard no. 804",
+      "builders": [
+        {
+          "id": "f-schichau",
+          "name": "F. Schichau",
+          "raw": "F. Schichau, Danzig · yard no. 804"
+        }
+      ]
+    },
+    {
       "name": "SS City of New York (1888)",
       "path": "ships/ss-city-of-new-york-1888.html",
       "url": "/ships/ss-city-of-new-york-1888",
@@ -3861,6 +3889,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast · yard no. 316"
+        }
+      ]
+    },
+    {
+      "name": "SS Dakota (1905)",
+      "path": "ships/ss-dakota.html",
+      "url": "/ships/ss-dakota",
+      "launchYear": "1904",
+      "builderRaw": "Eastern Shipbuilding Company, Groton, Connecticut · yard no. 2",
+      "builders": [
+        {
+          "id": "eastern-shipbuilding-company",
+          "name": "Eastern Shipbuilding Company",
+          "raw": "Eastern Shipbuilding Company, Groton, Connecticut · yard no. 2"
         }
       ]
     },
@@ -4463,6 +4505,20 @@
           "id": "ag-vulcan",
           "name": "AG Vulcan",
           "raw": "AG Vulcan, Stettin, Germany · yard no. 232"
+        }
+      ]
+    },
+    {
+      "name": "SS Kristianiafjord (1913)",
+      "path": "ships/ss-kristianiafjord.html",
+      "url": "/ships/ss-kristianiafjord",
+      "launchYear": "1912",
+      "builderRaw": "Cammell, Laird & Co. Ltd., Birkenhead · yard no. 784",
+      "builders": [
+        {
+          "id": "cammell-laird-and-co-ltd",
+          "name": "Cammell, Laird & Co. Ltd.",
+          "raw": "Cammell, Laird & Co. Ltd., Birkenhead · yard no. 784"
         }
       ]
     },
@@ -5429,6 +5485,20 @@
           "id": "furness-withy-and-co",
           "name": "Furness, Withy & Co.",
           "raw": "Furness, Withy & Co., West Hartlepool, England"
+        }
+      ]
+    },
+    {
+      "name": "SS Potsdam (1900)",
+      "path": "ships/ss-potsdam.html",
+      "url": "/ships/ss-potsdam",
+      "launchYear": "1899",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 139",
+      "builders": [
+        {
+          "id": "blohm-and-voss",
+          "name": "Blohm & Voss",
+          "raw": "Blohm & Voss, Hamburg · yard no. 139"
         }
       ]
     },

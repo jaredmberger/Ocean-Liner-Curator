@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T17:59:38.759Z",
+  "generatedAt": "2026-09-30T18:35:46.622Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 335,
-    "guidesWithServiceStart": 329,
-    "guidesWithExplicitServiceEnd": 262,
+    "shipGuides": 339,
+    "guidesWithServiceStart": 333,
+    "guidesWithExplicitServiceEnd": 264,
     "eras": 10,
     "decades": 15
   },
   "eras": [
     {
       "name": "Edwardian / pre-war peak",
-      "shipCount": 88,
+      "shipCount": 92,
       "ships": [
         {
           "name": "RMS Adriatic (1907)",
@@ -260,6 +260,13 @@
           "serviceEndYear": "1937"
         },
         {
+          "name": "SS Cincinnati (1909)",
+          "path": "ships/ss-cincinnati.html",
+          "url": "/ships/ss-cincinnati",
+          "serviceStartYear": "1909",
+          "serviceEndYear": "1918"
+        },
+        {
           "name": "SS Cleveland",
           "path": "ships/ss-cleveland.html",
           "url": "/ships/ss-cleveland",
@@ -300,6 +307,13 @@
           "url": "/ships/ss-cretic",
           "serviceStartYear": "1902",
           "serviceEndYear": "1929"
+        },
+        {
+          "name": "SS Dakota (1905)",
+          "path": "ships/ss-dakota.html",
+          "url": "/ships/ss-dakota",
+          "serviceStartYear": "1905",
+          "serviceEndYear": null
         },
         {
           "name": "SS Deutschland (1900)",
@@ -391,6 +405,13 @@
           "url": "/ships/ss-kaiserin-auguste-victoria",
           "serviceStartYear": "1906",
           "serviceEndYear": "1930"
+        },
+        {
+          "name": "SS Kristianiafjord (1913)",
+          "path": "ships/ss-kristianiafjord.html",
+          "url": "/ships/ss-kristianiafjord",
+          "serviceStartYear": "1913",
+          "serviceEndYear": null
         },
         {
           "name": "SS Kronprinz Wilhelm",
@@ -517,6 +538,13 @@
           "url": "/ships/ss-otranto",
           "serviceStartYear": "1909",
           "serviceEndYear": null
+        },
+        {
+          "name": "SS Potsdam (1900)",
+          "path": "ships/ss-potsdam.html",
+          "url": "/ships/ss-potsdam",
+          "serviceStartYear": "1900",
+          "serviceEndYear": "1944"
         },
         {
           "name": "SS President Lincoln",
@@ -2964,7 +2992,7 @@
     },
     {
       "name": "1900s",
-      "shipCount": 67,
+      "shipCount": 70,
       "ships": [
         {
           "name": "RMS Adriatic (1907)",
@@ -3128,6 +3156,13 @@
           "serviceEndYear": "1937"
         },
         {
+          "name": "SS Cincinnati (1909)",
+          "path": "ships/ss-cincinnati.html",
+          "url": "/ships/ss-cincinnati",
+          "serviceStartYear": "1909",
+          "serviceEndYear": "1918"
+        },
+        {
           "name": "SS Cleveland",
           "path": "ships/ss-cleveland.html",
           "url": "/ships/ss-cleveland",
@@ -3168,6 +3203,13 @@
           "url": "/ships/ss-cretic",
           "serviceStartYear": "1902",
           "serviceEndYear": "1929"
+        },
+        {
+          "name": "SS Dakota (1905)",
+          "path": "ships/ss-dakota.html",
+          "url": "/ships/ss-dakota",
+          "serviceStartYear": "1905",
+          "serviceEndYear": null
         },
         {
           "name": "SS Deutschland (1900)",
@@ -3350,6 +3392,13 @@
           "url": "/ships/ss-otranto",
           "serviceStartYear": "1909",
           "serviceEndYear": null
+        },
+        {
+          "name": "SS Potsdam (1900)",
+          "path": "ships/ss-potsdam.html",
+          "url": "/ships/ss-potsdam",
+          "serviceStartYear": "1900",
+          "serviceEndYear": "1944"
         },
         {
           "name": "SS President Lincoln",
@@ -3802,7 +3851,7 @@
     },
     {
       "name": "1910s",
-      "shipCount": 36,
+      "shipCount": 37,
       "ships": [
         {
           "name": "RMS Alaunia (1913)",
@@ -3983,6 +4032,13 @@
           "name": "SS Imperator",
           "path": "ships/ss-imperator.html",
           "url": "/ships/ss-imperator",
+          "serviceStartYear": "1913",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Kristianiafjord (1913)",
+          "path": "ships/ss-kristianiafjord.html",
+          "url": "/ships/ss-kristianiafjord",
           "serviceStartYear": "1913",
           "serviceEndYear": null
         },
@@ -6476,6 +6532,17 @@
       "endEvidence": "Scrapped at Kaohsiung, Taiwan, 1973"
     },
     {
+      "name": "SS Cincinnati (1909)",
+      "path": "ships/ss-cincinnati.html",
+      "url": "/ships/ss-cincinnati",
+      "launchYear": "1908",
+      "serviceStartYear": "1909",
+      "serviceEndYear": "1918",
+      "era": "Edwardian / pre-war peak",
+      "decade": "1900s",
+      "endEvidence": "Torpedoed by U-86 on 1 July 1918; sank 2 July"
+    },
+    {
       "name": "SS City of New York (1888)",
       "path": "ships/ss-city-of-new-york-1888.html",
       "url": "/ships/ss-city-of-new-york-1888",
@@ -6693,6 +6760,17 @@
       "serviceEndYear": null,
       "era": "Late Victorian expansion",
       "decade": "1890s",
+      "endEvidence": null
+    },
+    {
+      "name": "SS Dakota (1905)",
+      "path": "ships/ss-dakota.html",
+      "url": "/ships/ss-dakota",
+      "launchYear": "1904",
+      "serviceStartYear": "1905",
+      "serviceEndYear": null,
+      "era": "Edwardian / pre-war peak",
+      "decade": "1900s",
       "endEvidence": null
     },
     {
@@ -7167,6 +7245,17 @@
       "era": "Late Victorian expansion",
       "decade": "1890s",
       "endEvidence": "scrapped in 1935"
+    },
+    {
+      "name": "SS Kristianiafjord (1913)",
+      "path": "ships/ss-kristianiafjord.html",
+      "url": "/ships/ss-kristianiafjord",
+      "launchYear": "1912",
+      "serviceStartYear": "1913",
+      "serviceEndYear": null,
+      "era": "Edwardian / pre-war peak",
+      "decade": "1910s",
+      "endEvidence": null
     },
     {
       "name": "SS Kronprinz Wilhelm",
@@ -7926,6 +8015,17 @@
       "era": null,
       "decade": null,
       "endEvidence": "1925, briefly receiving the name Natale, and was broken up"
+    },
+    {
+      "name": "SS Potsdam (1900)",
+      "path": "ships/ss-potsdam.html",
+      "url": "/ships/ss-potsdam",
+      "launchYear": "1899",
+      "serviceStartYear": "1900",
+      "serviceEndYear": "1944",
+      "era": "Edwardian / pre-war peak",
+      "decade": "1900s",
+      "endEvidence": "1944; wreck raised and scrapped"
     },
     {
       "name": "SS President Coolidge",

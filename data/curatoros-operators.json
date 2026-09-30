@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T17:59:37.622Z",
+  "generatedAt": "2026-09-30T18:35:45.833Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 335,
-    "guidesWithOperator": 335,
+    "shipGuides": 339,
+    "guidesWithOperator": 339,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 77,
+    "canonicalOperators": 79,
     "aliasedOperatorGroups": 24
   },
   "operators": [
@@ -56,7 +56,7 @@
         "Hamburg-Amerika Line (HAPAG)",
         "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line"
       ],
-      "shipCount": 25
+      "shipCount": 26
     },
     {
       "id": "norddeutscher-lloyd-north-german-lloyd",
@@ -147,7 +147,7 @@
         "Holland America Line (Nederlandsch-Amerikaansche Stoomvaart-Maatschappij / NASM)",
         "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij"
       ],
-      "shipCount": 8
+      "shipCount": 9
     },
     {
       "id": "united-states-lines",
@@ -438,6 +438,14 @@
       "shipCount": 1
     },
     {
+      "id": "den-norske-amerikalinje-norwegian-america-line",
+      "name": "Den Norske Amerikalinje / Norwegian America Line",
+      "rawValues": [
+        "Den Norske Amerikalinje / Norwegian America Line"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "eastern-steam-navigation-co-commonly-cited-for-the-initial-period",
       "name": "Eastern Steam Navigation Co. (commonly cited for the initial period)",
       "rawValues": [
@@ -450,6 +458,14 @@
       "name": "Furness, Withy & Co.",
       "rawValues": [
         "Furness, Withy & Co. / Furness Bermuda Line"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "great-northern-steamship-company",
+      "name": "Great Northern Steamship Company",
+      "rawValues": [
+        "Great Northern Steamship Company"
       ],
       "shipCount": 1
     },
@@ -1936,6 +1952,14 @@
       "operator": "P&O"
     },
     {
+      "name": "SS Cincinnati (1909)",
+      "path": "ships/ss-cincinnati.html",
+      "url": "/ships/ss-cincinnati",
+      "launchYear": "1908",
+      "operatorRaw": "Hamburg America Line / HAPAG",
+      "operator": "Hamburg America Line (HAPAG)"
+    },
+    {
       "name": "SS City of New York (1888)",
       "path": "ships/ss-city-of-new-york-1888.html",
       "url": "/ships/ss-city-of-new-york-1888",
@@ -2094,6 +2118,14 @@
       "launchYear": "1897",
       "operatorRaw": "White Star Line",
       "operator": "White Star Line"
+    },
+    {
+      "name": "SS Dakota (1905)",
+      "path": "ships/ss-dakota.html",
+      "url": "/ships/ss-dakota",
+      "launchYear": "1904",
+      "operatorRaw": "Great Northern Steamship Company",
+      "operator": "Great Northern Steamship Company"
     },
     {
       "name": "SS De Grasse",
@@ -2438,6 +2470,14 @@
       "launchYear": "1896",
       "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
+    },
+    {
+      "name": "SS Kristianiafjord (1913)",
+      "path": "ships/ss-kristianiafjord.html",
+      "url": "/ships/ss-kristianiafjord",
+      "launchYear": "1912",
+      "operatorRaw": "Den Norske Amerikalinje / Norwegian America Line",
+      "operator": "Den Norske Amerikalinje / Norwegian America Line"
     },
     {
       "name": "SS Kronprinz Wilhelm",
@@ -2990,6 +3030,14 @@
       "launchYear": "1897",
       "operatorRaw": "Atlantic Transport Line; later operated for Red Star Line and White Star Line",
       "operator": "Atlantic Transport Line"
+    },
+    {
+      "name": "SS Potsdam (1900)",
+      "path": "ships/ss-potsdam.html",
+      "url": "/ships/ss-potsdam",
+      "launchYear": "1899",
+      "operatorRaw": "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij",
+      "operator": "Holland America Line"
     },
     {
       "name": "SS President Coolidge",

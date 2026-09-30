@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T17:59:39.846Z",
+  "generatedAt": "2026-09-30T18:35:47.431Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,20 +11,20 @@
     ]
   },
   "summary": {
-    "shipGuides": 335,
-    "relationshipCovered": 312,
-    "relationshipUncovered": 23,
-    "relationshipCoveragePct": 93.1,
-    "canonicalOperators": 77,
-    "thinOperators": 49,
-    "canonicalYardLocations": 70,
+    "shipGuides": 339,
+    "relationshipCovered": 319,
+    "relationshipUncovered": 20,
+    "relationshipCoveragePct": 94.1,
+    "canonicalOperators": 79,
+    "thinOperators": 51,
+    "canonicalYardLocations": 71,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 38,
-    "unresolvedSisterMentions": 14,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 9
+    "explicitSisterLinks": 42,
+    "unresolvedSisterMentions": 10,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 5
   },
   "signals": {
     "sisterShipResearchCandidates": [
@@ -32,13 +32,6 @@
         "ship": "RMS Cambria",
         "path": "ships/rms-cambria-1845.html",
         "mentioned": "Hibernia",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "SS Bergensfjord",
-        "path": "ships/ss-bergensfjord.html",
-        "mentioned": "Kristianiafjord",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -53,27 +46,6 @@
         "ship": "SS Bretagne",
         "path": "ships/ss-bretagne.html",
         "mentioned": "Provence",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "SS Cleveland",
-        "path": "ships/ss-cleveland.html",
-        "mentioned": "Cincinnati",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "SS Minnesota",
-        "path": "ships/ss-minnesota.html",
-        "mentioned": "Dakota",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "SS Scharnhorst",
-        "path": "ships/ss-scharnhorst.html",
-        "mentioned": "Potsdam",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -122,13 +94,6 @@
         "signal": "Ambiguous archive match; identity disambiguation needed"
       },
       {
-        "ship": "SS Bergensfjord",
-        "path": "ships/ss-bergensfjord.html",
-        "mentioned": "Kristianiafjord",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
         "ship": "SS Bothnia",
         "path": "ships/ss-bothnia.html",
         "mentioned": "Gallia",
@@ -139,13 +104,6 @@
         "ship": "SS Bretagne",
         "path": "ships/ss-bretagne.html",
         "mentioned": "Provence",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "SS Cleveland",
-        "path": "ships/ss-cleveland.html",
-        "mentioned": "Cincinnati",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -164,25 +122,11 @@
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
-        "ship": "SS Minnesota",
-        "path": "ships/ss-minnesota.html",
-        "mentioned": "Dakota",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
         "ship": "SS Orion",
         "path": "ships/ss-orion.html",
         "mentioned": "Orcades",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
-      },
-      {
-        "ship": "SS Scharnhorst",
-        "path": "ships/ss-scharnhorst.html",
-        "mentioned": "Potsdam",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
         "ship": "SS Winifredian",
@@ -201,16 +145,7 @@
         "url": "/ships/ss-brasilia",
         "operator": "Hamburg America Line (HAPAG)",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 25 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Cleveland",
-        "slug": "ss-cleveland",
-        "url": "/ships/ss-cleveland",
-        "operator": "Hamburg America Line (HAPAG)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 25 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 26 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -219,7 +154,7 @@
         "url": "/ships/ss-moltke",
         "operator": "Hamburg America Line (HAPAG)",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 25 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 26 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -228,7 +163,7 @@
         "url": "/ships/ss-president-lincoln",
         "operator": "Hamburg America Line (HAPAG)",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 25 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 26 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -322,15 +257,6 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Minnesota",
-        "slug": "ss-minnesota",
-        "url": "/ships/ss-minnesota",
-        "operator": "Great Northern Steamship Company (owned by James J. Hill)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "SS Vestris",
         "slug": "ss-vestris",
         "url": "/ships/ss-vestris",
@@ -362,15 +288,6 @@
         "slug": "ss-eastland",
         "url": "/ships/ss-eastland",
         "operator": "Michigan Steamship Company",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Bergensfjord",
-        "slug": "ss-bergensfjord",
-        "url": "/ships/ss-bergensfjord",
-        "operator": "Norwegian America Line",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -439,12 +356,22 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
+        "operator": "Den Norske Amerikalinje / Norwegian America Line",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
         "operator": "Eastern Steam Navigation Co. (commonly cited for the initial period)",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
         "operator": "Furness, Withy & Co.",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Great Northern Steamship Company",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -654,20 +581,14 @@
     "operators": [
       {
         "name": "Hamburg America Line (HAPAG)",
-        "total": 25,
-        "covered": 21,
+        "total": 26,
+        "covered": 23,
         "uncovered": [
           {
             "name": "SS Brasilia",
             "slug": "ss-brasilia",
             "url": "/ships/ss-brasilia",
             "launchYear": "1897"
-          },
-          {
-            "name": "SS Cleveland",
-            "slug": "ss-cleveland",
-            "url": "/ships/ss-cleveland",
-            "launchYear": "1908"
           },
           {
             "name": "SS Moltke",
@@ -682,8 +603,8 @@
             "launchYear": "1903"
           }
         ],
-        "uncoveredCount": 4,
-        "coveragePct": 84
+        "uncoveredCount": 3,
+        "coveragePct": 88.5
       },
       {
         "name": "Atlantic Transport Line",
@@ -827,21 +748,6 @@
         "coveragePct": 0
       },
       {
-        "name": "Great Northern Steamship Company (owned by James J. Hill)",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS Minnesota",
-            "slug": "ss-minnesota",
-            "url": "/ships/ss-minnesota",
-            "launchYear": "1903"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
-      },
-      {
         "name": "Lamport & Holt Line (Liverpool, Brazil and River Plate Steam Navigation Co.)",
         "total": 1,
         "covered": 0,
@@ -896,21 +802,6 @@
             "slug": "ss-eastland",
             "url": "/ships/ss-eastland",
             "launchYear": "1903"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
-      },
-      {
-        "name": "Norwegian America Line",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS Bergensfjord",
-            "slug": "ss-bergensfjord",
-            "url": "/ships/ss-bergensfjord",
-            "launchYear": "1913"
           }
         ],
         "uncoveredCount": 1,
@@ -1011,8 +902,8 @@
       },
       {
         "name": "Holland America Line",
-        "total": 8,
-        "covered": 8,
+        "total": 9,
+        "covered": 9,
         "uncovered": [],
         "uncoveredCount": 0,
         "coveragePct": 100
@@ -1242,6 +1133,14 @@
         "coveragePct": 100
       },
       {
+        "name": "Den Norske Amerikalinje / Norwegian America Line",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "Eastern Steam Navigation Co. (commonly cited for the initial period)",
         "total": 1,
         "covered": 1,
@@ -1258,6 +1157,22 @@
         "coveragePct": 100
       },
       {
+        "name": "Great Northern Steamship Company",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Great Northern Steamship Company (owned by James J. Hill)",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "Inman & International Steamship Co.",
         "total": 1,
         "covered": 1,
@@ -1267,6 +1182,14 @@
       },
       {
         "name": "Inman Line",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Norwegian America Line",
         "total": 1,
         "covered": 1,
         "uncovered": [],
@@ -1492,10 +1415,10 @@
       },
       {
         "era": "Edwardian / pre-war peak",
-        "shipCount": 88,
-        "relationshipCovered": 78,
-        "relationshipUncovered": 10,
-        "relationshipCoveragePct": 88.6
+        "shipCount": 92,
+        "relationshipCovered": 85,
+        "relationshipUncovered": 7,
+        "relationshipCoveragePct": 92.4
       }
     ],
     "decades": [
@@ -1550,17 +1473,17 @@
       },
       {
         "decade": "1900s",
-        "shipCount": 67,
-        "relationshipCovered": 59,
-        "relationshipUncovered": 8,
-        "relationshipCoveragePct": 88.1
+        "shipCount": 70,
+        "relationshipCovered": 64,
+        "relationshipUncovered": 6,
+        "relationshipCoveragePct": 91.4
       },
       {
         "decade": "1910s",
-        "shipCount": 36,
-        "relationshipCovered": 34,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 94.4
+        "shipCount": 37,
+        "relationshipCovered": 36,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 97.3
       },
       {
         "decade": "1920s",
@@ -1622,25 +1545,11 @@
       "launchYear": "1850"
     },
     {
-      "name": "SS Bergensfjord",
-      "slug": "ss-bergensfjord",
-      "url": "/ships/ss-bergensfjord",
-      "operator": "Norwegian America Line",
-      "launchYear": "1913"
-    },
-    {
       "name": "SS Brasilia",
       "slug": "ss-brasilia",
       "url": "/ships/ss-brasilia",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1897"
-    },
-    {
-      "name": "SS Cleveland",
-      "slug": "ss-cleveland",
-      "url": "/ships/ss-cleveland",
-      "operator": "Hamburg America Line (HAPAG)",
-      "launchYear": "1908"
     },
     {
       "name": "SS Coptic",
@@ -1704,13 +1613,6 @@
       "url": "/ships/ss-marquette",
       "operator": "Atlantic Transport Line",
       "launchYear": "1897"
-    },
-    {
-      "name": "SS Minnesota",
-      "slug": "ss-minnesota",
-      "url": "/ships/ss-minnesota",
-      "operator": "Great Northern Steamship Company (owned by James J. Hill)",
-      "launchYear": "1903"
     },
     {
       "name": "SS Moltke",

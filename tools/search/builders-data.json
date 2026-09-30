@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-30T17:59:37.622Z",
+  "generatedAt": "2026-09-30T18:35:45.833Z",
   "summary": {
-    "shipGuides": 335,
-    "canonicalBuilders": 82,
-    "guidesWithBuilder": 335
+    "shipGuides": 339,
+    "canonicalBuilders": 83,
+    "guidesWithBuilder": 339
   },
   "builders": [
     {
@@ -774,7 +774,7 @@
     {
       "id": "blohm-and-voss",
       "name": "Blohm & Voss",
-      "shipCount": 21,
+      "shipCount": 22,
       "locations": [
         "Hamburg",
         "Hamburg, Germany"
@@ -823,6 +823,13 @@
           "launchYear": "1899",
           "operator": "Hamburg America Line",
           "builderRaw": "Blohm & Voss, Hamburg"
+        },
+        {
+          "name": "SS Potsdam (1900)",
+          "url": "/ships/ss-potsdam",
+          "launchYear": "1899",
+          "operator": "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij",
+          "builderRaw": "Blohm & Voss, Hamburg · yard no. 139"
         },
         {
           "name": "SS Moltke",
@@ -1928,6 +1935,46 @@
       ]
     },
     {
+      "id": "f-schichau",
+      "name": "F. Schichau",
+      "shipCount": 4,
+      "locations": [
+        "Danzig"
+      ],
+      "firstLaunchYear": 1899,
+      "lastLaunchYear": 1922,
+      "ships": [
+        {
+          "name": "SS Grosser Kurfürst",
+          "url": "/ships/ss-grosser-kurfurst",
+          "launchYear": "1899",
+          "operator": "Norddeutscher Lloyd",
+          "builderRaw": "F. Schichau, Danzig"
+        },
+        {
+          "name": "SS Cincinnati (1909)",
+          "url": "/ships/ss-cincinnati",
+          "launchYear": "1908",
+          "operator": "Hamburg America Line / HAPAG",
+          "builderRaw": "F. Schichau, Danzig · yard no. 804"
+        },
+        {
+          "name": "RMS Homeric (1913)",
+          "url": "/ships/rms-homeric",
+          "launchYear": "1913",
+          "operator": "White Star Line · later Cunard-White Star Line",
+          "builderRaw": "F. Schichau, Danzig · yard no. 891"
+        },
+        {
+          "name": "SS Columbus (1924)",
+          "url": "/ships/ss-columbus-1924",
+          "launchYear": "1922",
+          "operator": "Norddeutscher Lloyd (North German Lloyd), Bremen",
+          "builderRaw": "F. Schichau, Danzig · yard no. 929"
+        }
+      ]
+    },
+    {
       "id": "societe-provencale-de-constructions-navales",
       "name": "Société Provençale de Constructions Navales",
       "shipCount": 4,
@@ -2134,39 +2181,6 @@
       ]
     },
     {
-      "id": "f-schichau",
-      "name": "F. Schichau",
-      "shipCount": 3,
-      "locations": [
-        "Danzig"
-      ],
-      "firstLaunchYear": 1899,
-      "lastLaunchYear": 1922,
-      "ships": [
-        {
-          "name": "SS Grosser Kurfürst",
-          "url": "/ships/ss-grosser-kurfurst",
-          "launchYear": "1899",
-          "operator": "Norddeutscher Lloyd",
-          "builderRaw": "F. Schichau, Danzig"
-        },
-        {
-          "name": "RMS Homeric (1913)",
-          "url": "/ships/rms-homeric",
-          "launchYear": "1913",
-          "operator": "White Star Line · later Cunard-White Star Line",
-          "builderRaw": "F. Schichau, Danzig · yard no. 891"
-        },
-        {
-          "name": "SS Columbus (1924)",
-          "url": "/ships/ss-columbus-1924",
-          "launchYear": "1922",
-          "operator": "Norddeutscher Lloyd (North German Lloyd), Bremen",
-          "builderRaw": "F. Schichau, Danzig · yard no. 929"
-        }
-      ]
-    },
-    {
       "id": "r-and-w-hawthorn-leslie-and-co",
       "name": "R. & W. Hawthorn, Leslie & Co.",
       "shipCount": 3,
@@ -2308,6 +2322,33 @@
           "launchYear": "1935",
           "operator": "Norddeutscher Lloyd",
           "builderRaw": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 893"
+        }
+      ]
+    },
+    {
+      "id": "eastern-shipbuilding-company",
+      "name": "Eastern Shipbuilding Company",
+      "shipCount": 2,
+      "locations": [
+        "Groton, Connecticut",
+        "New London / Groton, Connecticut"
+      ],
+      "firstLaunchYear": 1903,
+      "lastLaunchYear": 1904,
+      "ships": [
+        {
+          "name": "SS Minnesota",
+          "url": "/ships/ss-minnesota",
+          "launchYear": "1903",
+          "operator": "Great Northern Steamship Company (owned by James J. Hill)",
+          "builderRaw": "Eastern Shipbuilding Company, New London / Groton, Connecticut"
+        },
+        {
+          "name": "SS Dakota (1905)",
+          "url": "/ships/ss-dakota",
+          "launchYear": "1904",
+          "operator": "Great Northern Steamship Company",
+          "builderRaw": "Eastern Shipbuilding Company, Groton, Connecticut · yard no. 2"
         }
       ]
     },
@@ -2680,6 +2721,25 @@
       ]
     },
     {
+      "id": "cammell-laird-and-co-ltd",
+      "name": "Cammell, Laird & Co. Ltd.",
+      "shipCount": 1,
+      "locations": [
+        "Birkenhead"
+      ],
+      "firstLaunchYear": 1912,
+      "lastLaunchYear": 1912,
+      "ships": [
+        {
+          "name": "SS Kristianiafjord (1913)",
+          "url": "/ships/ss-kristianiafjord",
+          "launchYear": "1912",
+          "operator": "Den Norske Amerikalinje / Norwegian America Line",
+          "builderRaw": "Cammell, Laird & Co. Ltd., Birkenhead · yard no. 784"
+        }
+      ]
+    },
+    {
       "id": "cantiere-navale-di-riva-trigoso",
       "name": "Cantiere Navale di Riva Trigoso",
       "shipCount": 1,
@@ -2828,25 +2888,6 @@
           "launchYear": "1902",
           "operator": "Anchor Line",
           "builderRaw": "D. & W. Henderson Ltd., Glasgow"
-        }
-      ]
-    },
-    {
-      "id": "eastern-shipbuilding-company",
-      "name": "Eastern Shipbuilding Company",
-      "shipCount": 1,
-      "locations": [
-        "New London / Groton, Connecticut"
-      ],
-      "firstLaunchYear": 1903,
-      "lastLaunchYear": 1903,
-      "ships": [
-        {
-          "name": "SS Minnesota",
-          "url": "/ships/ss-minnesota",
-          "launchYear": "1903",
-          "operator": "Great Northern Steamship Company (owned by James J. Hill)",
-          "builderRaw": "Eastern Shipbuilding Company, New London / Groton, Connecticut"
         }
       ]
     },

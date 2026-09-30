@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T17:59:39.782Z",
+  "generatedAt": "2026-09-30T18:35:47.381Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 335,
+    "shipGuides": 339,
     "guidesWithExplicitClass": 18,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 38,
-    "unresolvedSisterMentions": 14
+    "explicitSisterLinks": 42,
+    "unresolvedSisterMentions": 10
   },
   "classes": [
     {
@@ -412,6 +412,19 @@
     },
     {
       "a": {
+        "name": "SS Bergensfjord",
+        "path": "ships/ss-bergensfjord.html",
+        "url": "/ships/ss-bergensfjord"
+      },
+      "b": {
+        "name": "SS Kristianiafjord (1913)",
+        "path": "ships/ss-kristianiafjord.html",
+        "url": "/ships/ss-kristianiafjord"
+      },
+      "evidenceFrom": "ships/ss-bergensfjord.html"
+    },
+    {
+      "a": {
         "name": "SS Bothnia",
         "path": "ships/ss-bothnia.html",
         "url": "/ships/ss-bothnia"
@@ -490,6 +503,19 @@
     },
     {
       "a": {
+        "name": "SS Cincinnati (1909)",
+        "path": "ships/ss-cincinnati.html",
+        "url": "/ships/ss-cincinnati"
+      },
+      "b": {
+        "name": "SS Cleveland",
+        "path": "ships/ss-cleveland.html",
+        "url": "/ships/ss-cleveland"
+      },
+      "evidenceFrom": "ships/ss-cincinnati.html"
+    },
+    {
+      "a": {
         "name": "SS City of Paris",
         "path": "ships/ss-city-of-paris.html",
         "url": "/ships/ss-city-of-paris"
@@ -552,6 +578,19 @@
         "url": "/ships/ss-andrea-doria"
       },
       "evidenceFrom": "ships/ss-cristoforo-colombo.html"
+    },
+    {
+      "a": {
+        "name": "SS Dakota (1905)",
+        "path": "ships/ss-dakota.html",
+        "url": "/ships/ss-dakota"
+      },
+      "b": {
+        "name": "SS Minnesota",
+        "path": "ships/ss-minnesota.html",
+        "url": "/ships/ss-minnesota"
+      },
+      "evidenceFrom": "ships/ss-dakota.html"
     },
     {
       "a": {
@@ -685,6 +724,19 @@
     },
     {
       "a": {
+        "name": "SS Scharnhorst",
+        "path": "ships/ss-scharnhorst.html",
+        "url": "/ships/ss-scharnhorst"
+      },
+      "b": {
+        "name": "SS Potsdam (1900)",
+        "path": "ships/ss-potsdam.html",
+        "url": "/ships/ss-potsdam"
+      },
+      "evidenceFrom": "ships/ss-scharnhorst.html"
+    },
+    {
+      "a": {
         "name": "SS Veendam",
         "path": "ships/ss-veendam.html",
         "url": "/ships/ss-veendam"
@@ -723,12 +775,6 @@
       "candidateCount": 2
     },
     {
-      "ship": "SS Bergensfjord",
-      "path": "ships/ss-bergensfjord.html",
-      "mentioned": "Kristianiafjord",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Bothnia",
       "path": "ships/ss-bothnia.html",
       "mentioned": "Gallia",
@@ -738,12 +784,6 @@
       "ship": "SS Bretagne",
       "path": "ships/ss-bretagne.html",
       "mentioned": "Provence",
-      "candidateCount": 0
-    },
-    {
-      "ship": "SS Cleveland",
-      "path": "ships/ss-cleveland.html",
-      "mentioned": "Cincinnati",
       "candidateCount": 0
     },
     {
@@ -759,22 +799,10 @@
       "candidateCount": 0
     },
     {
-      "ship": "SS Minnesota",
-      "path": "ships/ss-minnesota.html",
-      "mentioned": "Dakota",
-      "candidateCount": 0
-    },
-    {
       "ship": "SS Orion",
       "path": "ships/ss-orion.html",
       "mentioned": "Orcades",
       "candidateCount": 2
-    },
-    {
-      "ship": "SS Scharnhorst",
-      "path": "ships/ss-scharnhorst.html",
-      "mentioned": "Potsdam",
-      "candidateCount": 0
     },
     {
       "ship": "SS Winifredian",
@@ -1943,6 +1971,15 @@
       "sisters": []
     },
     {
+      "name": "SS Cincinnati (1909)",
+      "path": "ships/ss-cincinnati.html",
+      "url": "/ships/ss-cincinnati",
+      "classes": [],
+      "sisters": [
+        "Cleveland"
+      ]
+    },
+    {
       "name": "SS City of New York (1888)",
       "path": "ships/ss-city-of-new-york-1888.html",
       "url": "/ships/ss-city-of-new-york-1888",
@@ -2094,6 +2131,15 @@
       "url": "/ships/ss-cymric",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "SS Dakota (1905)",
+      "path": "ships/ss-dakota.html",
+      "url": "/ships/ss-dakota",
+      "classes": [],
+      "sisters": [
+        "Minnesota"
+      ]
     },
     {
       "name": "SS De Grasse",
@@ -2409,6 +2455,15 @@
       "url": "/ships/ss-konigin-luise",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "SS Kristianiafjord (1913)",
+      "path": "ships/ss-kristianiafjord.html",
+      "url": "/ships/ss-kristianiafjord",
+      "classes": [],
+      "sisters": [
+        "Bergensfjord"
+      ]
     },
     {
       "name": "SS Kronprinz Wilhelm",
@@ -2917,6 +2972,13 @@
       "name": "SS Poland",
       "path": "ships/ss-poland.html",
       "url": "/ships/ss-poland",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Potsdam (1900)",
+      "path": "ships/ss-potsdam.html",
+      "url": "/ships/ss-potsdam",
       "classes": [],
       "sisters": []
     },
