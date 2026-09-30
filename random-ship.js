@@ -131,6 +131,7 @@
 "/ships/ss-kaiser-wilhelm-der-grosse.html",
 "/ships/ss-kaiser-wilhelm-ii.html",
 "/ships/ss-kaiserin-auguste-victoria.html",
+"/ships/ss-kristianiafjord.html",
 "/ships/ss-kronprinz-wilhelm.html",
 "/ships/ss-kronprinzessin-cecilie.html",
 "/ships/ss-kroonland.html",

@@ -658,6 +658,16 @@
       "NYK Pacific liners"
     ),
 
+    norwegian_america_founders: cluster(
+      "Related Liners.",
+      "The original purpose-built Norwegian America Line transatlantic pair that established direct Norway–New York service in 1913.",
+      [
+        { href: "/ships/ss-kristianiafjord", label: "SS <em>Kristianiafjord</em>", tail: "Norwegian America Line · 1913" },
+        { href: "/ships/ss-bergensfjord", label: "SS <em>Bergensfjord</em>", tail: "Norwegian America Line · 1913" }
+      ],
+      "Norwegian America Line founding pair"
+    ),
+
     swedish_american_diesel: cluster(
       "Related Liners.",
       "Swedish American Line ships often noted in discussions of diesel propulsion, Scandinavian Atlantic style, and mid-century continuity.",
@@ -1468,6 +1478,8 @@
     "ss-pennland": ["red_star_interwar"],
     "ss-westernland": ["red_star_interwar"],
 
+    "ss-bergensfjord": ["norwegian_america_founders"],
+    "ss-kristianiafjord": ["norwegian_america_founders"],
     "ss-berlin-1909": ["berlin_arabic_republic"],
     "ss-arabic-1920": ["berlin_arabic_republic"],
     "ss-republic": ["berlin_arabic_republic"],
