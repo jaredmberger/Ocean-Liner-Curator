@@ -669,6 +669,17 @@
       "Swedish American Line ships"
     ),
 
+    dutch_postwar_indies: cluster(
+      "Related Liners.",
+      "Dutch passenger liners whose postwar careers were shaped by the end of the traditional Netherlands–Indonesia service and the search for new long-distance passenger markets.",
+      [
+        { href: "/ships/ms-willem-ruys", label: "MS <em>Willem Ruys</em>", tail: "Royal Rotterdam Lloyd · 1947" },
+        { href: "/ships/ms-oranje", label: "MS <em>Oranje</em>", tail: "Netherland Line · 1939" },
+        { href: "/ships/ss-johan-van-oldenbarnevelt", label: "MS <em>Johan van Oldenbarnevelt</em>", tail: "Netherland Line · 1930" }
+      ],
+      "Dutch postwar Indonesia-route liners"
+    ),
+
     netherland_line_east_indies: cluster(
       "Dutch East Indies Liners.",
       "Major Netherland Line motor liners built for the long Netherlands–Dutch East Indies passenger route, linking interwar colonial service with wartime and postwar transformation.",
@@ -1376,9 +1387,10 @@
     "tatsuta-maru-1929": ["nyk_pacific_trio"],
     "nyk-hikawa-maru": ["nyk_pacific_trio"],
 
-    "ss-johan-van-oldenbarnevelt": ["netherland_line_east_indies"],
+    "ms-willem-ruys": ["dutch_postwar_indies"],
+    "ss-johan-van-oldenbarnevelt": ["netherland_line_east_indies", "dutch_postwar_indies"],
     "ss-marnix-van-st-aldegonde": ["netherland_line_east_indies"],
-    "ms-oranje": ["netherland_line_east_indies"],
+    "ms-oranje": ["netherland_line_east_indies", "dutch_postwar_indies"],
 
     "ms-gripsholm-1925": ["swedish_american_diesel"],
     "ms-kungsholm-1928": ["swedish_american_diesel"],
