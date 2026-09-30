@@ -963,6 +963,7 @@
       "Related Liners.",
       "French liners tracing the line from Belle Époque prestige into the interwar Atlantic luxury tradition.",
       [
+        { href: "/ships/ss-la-touraine", label: "SS <em>La Touraine</em>", tail: "French Line · 1891" },
         { href: "/ships/ss-la-provence", label: "SS <em>La Provence</em>", tail: "French Line · 1906" },
         { href: "/ships/ss-france-1912", label: "SS <em>France</em> (1912)", tail: "French Line · 1912" },
         { href: "/ships/ss-paris", label: "SS <em>Paris</em>", tail: "French Line · 1921" },
@@ -1341,6 +1342,7 @@
     "ss-france": ["french_line_atlantic"],
     "ss-champlain": ["french_line_interwar"],
     "ss-paris": ["french_line_interwar", "french_line_prewar"],
+    "ss-la-touraine": ["french_line_prewar"],
     "ss-la-provence": ["french_line_prewar"],
     "ss-de-grasse": ["french_line_prewar"],
     "ss-bretagne": ["french_line_prewar"],
