@@ -134,6 +134,7 @@
 "/ships/ms-kungsholm-1928.html",
 "/ships/ss-latlantique.html",
 "/ships/ss-la-provence.html",
+"/ships/ss-lahn.html",
 "/ships/ss-la-touraine.html",
 "/ships/ss-lafayette.html",
 "/ships/rms-laconia.html",
