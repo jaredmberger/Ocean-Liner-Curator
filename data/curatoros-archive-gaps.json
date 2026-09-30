@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:36:01.651Z",
+  "generatedAt": "2026-09-30T17:59:39.846Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,20 +11,20 @@
     ]
   },
   "summary": {
-    "shipGuides": 332,
-    "relationshipCovered": 310,
-    "relationshipUncovered": 22,
-    "relationshipCoveragePct": 93.4,
-    "canonicalOperators": 75,
-    "thinOperators": 47,
-    "canonicalYardLocations": 68,
+    "shipGuides": 335,
+    "relationshipCovered": 312,
+    "relationshipUncovered": 23,
+    "relationshipCoveragePct": 93.1,
+    "canonicalOperators": 77,
+    "thinOperators": 49,
+    "canonicalYardLocations": 70,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 37,
-    "unresolvedSisterMentions": 13,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 8
+    "explicitSisterLinks": 38,
+    "unresolvedSisterMentions": 14,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 9
   },
   "signals": {
     "sisterShipResearchCandidates": [
@@ -81,6 +81,13 @@
         "ship": "SS Winifredian",
         "path": "ships/ss-winifredian.html",
         "mentioned": "Devonian",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "TSS Hibernia (1899)",
+        "path": "ships/ss-hibernia.html",
+        "mentioned": "Anglia",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       }
@@ -148,6 +155,13 @@
         "mentioned": "Britannic",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
+      {
+        "ship": "TSS Hibernia (1899)",
+        "path": "ships/ss-hibernia.html",
+        "mentioned": "Anglia",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
         "ship": "SS Minnesota",
@@ -335,6 +349,15 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "TSS Hibernia (1899)",
+        "slug": "ss-hibernia",
+        "url": "/ships/ss-hibernia",
+        "operator": "London & North Western Railway",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Eastland",
         "slug": "ss-eastland",
         "url": "/ships/ss-eastland",
@@ -451,6 +474,11 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
+        "operator": "London & North Western Railway",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
         "operator": "Michigan Steamship Company",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
@@ -477,6 +505,11 @@
       },
       {
         "operator": "Rederi AB Sverige-Nordamerika (Swedish American Line), 1923–1926",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Rotterdamsche Lloyd / Koninklijke Rotterdamsche Lloyd (Royal Rotterdam Lloyd)",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -839,6 +872,21 @@
         "coveragePct": 0
       },
       {
+        "name": "London & North Western Railway",
+        "total": 1,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "TSS Hibernia (1899)",
+            "slug": "ss-hibernia",
+            "url": "/ships/ss-hibernia",
+            "launchYear": "1899"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 0
+      },
+      {
         "name": "Michigan Steamship Company",
         "total": 1,
         "covered": 0,
@@ -931,8 +979,8 @@
       },
       {
         "name": "Canadian Pacific",
-        "total": 12,
-        "covered": 12,
+        "total": 13,
+        "covered": 13,
         "uncovered": [],
         "uncoveredCount": 0,
         "coveragePct": 100
@@ -1250,6 +1298,14 @@
         "coveragePct": 100
       },
       {
+        "name": "Rotterdamsche Lloyd / Koninklijke Rotterdamsche Lloyd (Royal Rotterdam Lloyd)",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "Royal Mail group; Royal Mail Lines from 1932",
         "total": 1,
         "covered": 1,
@@ -1400,18 +1456,18 @@
         "relationshipCoveragePct": 100
       },
       {
-        "era": "Postwar liner renaissance",
-        "shipCount": 20,
-        "relationshipCovered": 20,
-        "relationshipUncovered": 0,
-        "relationshipCoveragePct": 100
-      },
-      {
         "era": "Pioneer steam era",
         "shipCount": 21,
         "relationshipCovered": 17,
         "relationshipUncovered": 4,
         "relationshipCoveragePct": 81
+      },
+      {
+        "era": "Postwar liner renaissance",
+        "shipCount": 21,
+        "relationshipCovered": 21,
+        "relationshipUncovered": 0,
+        "relationshipCoveragePct": 100
       },
       {
         "era": "Late Victorian expansion",
@@ -1436,10 +1492,10 @@
       },
       {
         "era": "Edwardian / pre-war peak",
-        "shipCount": 86,
-        "relationshipCovered": 77,
-        "relationshipUncovered": 9,
-        "relationshipCoveragePct": 89.5
+        "shipCount": 88,
+        "relationshipCovered": 78,
+        "relationshipUncovered": 10,
+        "relationshipCoveragePct": 88.6
       }
     ],
     "decades": [
@@ -1494,17 +1550,17 @@
       },
       {
         "decade": "1900s",
-        "shipCount": 66,
+        "shipCount": 67,
         "relationshipCovered": 59,
-        "relationshipUncovered": 7,
-        "relationshipCoveragePct": 89.4
+        "relationshipUncovered": 8,
+        "relationshipCoveragePct": 88.1
       },
       {
         "decade": "1910s",
-        "shipCount": 35,
-        "relationshipCovered": 33,
+        "shipCount": 36,
+        "relationshipCovered": 34,
         "relationshipUncovered": 2,
-        "relationshipCoveragePct": 94.3
+        "relationshipCoveragePct": 94.4
       },
       {
         "decade": "1920s",
@@ -1522,8 +1578,8 @@
       },
       {
         "decade": "1940s",
-        "shipCount": 6,
-        "relationshipCovered": 6,
+        "shipCount": 7,
+        "relationshipCovered": 7,
         "relationshipUncovered": 0,
         "relationshipCoveragePct": 100
       },
@@ -1613,6 +1669,13 @@
       "url": "/ships/ss-eastland",
       "operator": "Michigan Steamship Company",
       "launchYear": "1903"
+    },
+    {
+      "name": "TSS Hibernia (1899)",
+      "slug": "ss-hibernia",
+      "url": "/ships/ss-hibernia",
+      "operator": "London & North Western Railway",
+      "launchYear": "1899"
     },
     {
       "name": "SS Lake Michigan",

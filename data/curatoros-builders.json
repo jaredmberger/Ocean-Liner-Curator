@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-30T08:35:59.375Z",
+  "generatedAt": "2026-09-30T17:59:37.622Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 344,
-    "shipGuides": 332,
-    "canonicalBuilders": 80,
-    "guidesWithBuilder": 332,
+    "trackedShipHtmlFiles": 347,
+    "shipGuides": 335,
+    "canonicalBuilders": 82,
+    "guidesWithBuilder": 335,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
-    "operatorValuesRecoveredFromSubtitle": 10,
+    "operatorValuesRecoveredFromSubtitle": 11,
     "guidesMissingLaunch": 1,
     "builderVariantGroups": 32,
     "suspiciousLaunchDatesWithoutYear": 0
@@ -141,7 +141,7 @@
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
-      "shipCount": 14,
+      "shipCount": 15,
       "firstLaunchYear": 1887,
       "lastLaunchYear": 1929,
       "locations": [
@@ -156,8 +156,8 @@
         "Anchor-Donaldson Line; later Donaldson Atlantic Line and Donaldson Brothers & Black management in postwar service",
         "Canadian Pacific",
         "Canadian Pacific Railway / Canadian Pacific Steamship Company",
-        "Canadian Pacific Railway Co. / Canadian Pacific Steamships",
-        "Canadian Pacific Steamships"
+        "Canadian Pacific Railway / Canadian Pacific Steamships",
+        "Canadian Pacific Railway Co. / Canadian Pacific Steamships"
       ]
     },
     {
@@ -466,6 +466,7 @@
       ],
       "rawValues": [
         "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 325",
+        "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 485",
         "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Scotland · Yard No. 424",
         "Fairfield Shipbuilding & Engineering Co., Govan",
         "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 418",
@@ -479,7 +480,7 @@
         "Fairfield Shipbuilding & Engineering Co., Govan, Scotland",
         "Fairfield Shipbuilding & Engineering Company, Govan, Scotland"
       ],
-      "shipCount": 14
+      "shipCount": 15
     },
     {
       "id": "ansaldo",
@@ -1242,6 +1243,17 @@
       "shipCount": 1
     },
     {
+      "id": "n-v-koninklijke-maatschappij-de-schelde",
+      "name": "N.V. Koninklijke Maatschappij De Schelde",
+      "names": [
+        "N.V. Koninklijke Maatschappij De Schelde"
+      ],
+      "rawValues": [
+        "N.V. Koninklijke Maatschappij De Schelde, Vlissingen · yard no. 214"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "n-v-nederlandsche-scheepsbouw-maatschappij",
       "name": "N.V. Nederlandsche Scheepsbouw-Maatschappij",
       "names": [
@@ -1359,6 +1371,17 @@
       ],
       "rawValues": [
         "Tod & McGregor, Glasgow"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "william-denny-and-brothers",
+      "name": "William Denny & Brothers",
+      "names": [
+        "William Denny & Brothers"
+      ],
+      "rawValues": [
+        "William Denny & Brothers, Dumbarton · yard no. 618"
       ],
       "shipCount": 1
     },
@@ -1593,6 +1616,20 @@
           "id": "cantiere-navale-triestino",
           "name": "Cantiere Navale Triestino",
           "raw": "Cantiere Navale Triestino, Monfalcone · yard no. 161"
+        }
+      ]
+    },
+    {
+      "name": "MS Willem Ruys (1947)",
+      "path": "ships/ms-willem-ruys.html",
+      "url": "/ships/ms-willem-ruys",
+      "launchYear": "1946",
+      "builderRaw": "N.V. Koninklijke Maatschappij De Schelde, Vlissingen · yard no. 214",
+      "builders": [
+        {
+          "id": "n-v-koninklijke-maatschappij-de-schelde",
+          "name": "N.V. Koninklijke Maatschappij De Schelde",
+          "raw": "N.V. Koninklijke Maatschappij De Schelde, Vlissingen · yard no. 214"
         }
       ]
     },
@@ -2097,6 +2134,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Queen's Island, Belfast · yard no. 335"
+        }
+      ]
+    },
+    {
+      "name": "RMS Empress of Asia (1913)",
+      "path": "ships/rms-empress-of-asia.html",
+      "url": "/ships/rms-empress-of-asia",
+      "launchYear": "1912",
+      "builderRaw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 485",
+      "builders": [
+        {
+          "id": "fairfield-shipbuilding-and-engineering-co",
+          "name": "Fairfield Shipbuilding & Engineering Co.",
+          "raw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 485"
         }
       ]
     },
@@ -4230,6 +4281,20 @@
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg · yard no. 473"
+        }
+      ]
+    },
+    {
+      "name": "TSS Hibernia (1899)",
+      "path": "ships/ss-hibernia.html",
+      "url": "/ships/ss-hibernia",
+      "launchYear": "1899",
+      "builderRaw": "William Denny & Brothers, Dumbarton · yard no. 618",
+      "builders": [
+        {
+          "id": "william-denny-and-brothers",
+          "name": "William Denny & Brothers",
+          "raw": "William Denny & Brothers, Dumbarton · yard no. 618"
         }
       ]
     },

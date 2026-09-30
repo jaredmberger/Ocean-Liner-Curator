@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:36:01.595Z",
+  "generatedAt": "2026-09-30T17:59:39.782Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 332,
+    "shipGuides": 335,
     "guidesWithExplicitClass": 18,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 37,
-    "unresolvedSisterMentions": 13
+    "explicitSisterLinks": 38,
+    "unresolvedSisterMentions": 14
   },
   "classes": [
     {
@@ -305,6 +305,19 @@
         "url": "/ships/rms-lucania"
       },
       "evidenceFrom": "ships/rms-campania.html"
+    },
+    {
+      "a": {
+        "name": "RMS Empress of Asia (1913)",
+        "path": "ships/rms-empress-of-asia.html",
+        "url": "/ships/rms-empress-of-asia"
+      },
+      "b": {
+        "name": "RMS Empress of Russia",
+        "path": "ships/rms-empress-of-russia.html",
+        "url": "/ships/rms-empress-of-russia"
+      },
+      "evidenceFrom": "ships/rms-empress-of-asia.html"
     },
     {
       "a": {
@@ -740,6 +753,12 @@
       "candidateCount": 2
     },
     {
+      "ship": "TSS Hibernia (1899)",
+      "path": "ships/ss-hibernia.html",
+      "mentioned": "Anglia",
+      "candidateCount": 0
+    },
+    {
       "ship": "SS Minnesota",
       "path": "ships/ss-minnesota.html",
       "mentioned": "Dakota",
@@ -869,6 +888,13 @@
       "name": "MS Vulcania",
       "path": "ships/ms-vulcania.html",
       "url": "/ships/ms-vulcania",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "MS Willem Ruys (1947)",
+      "path": "ships/ms-willem-ruys.html",
+      "url": "/ships/ms-willem-ruys",
       "classes": [],
       "sisters": []
     },
@@ -1146,6 +1172,15 @@
       "url": "/ships/rms-celtic",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "RMS Empress of Asia (1913)",
+      "path": "ships/rms-empress-of-asia.html",
+      "url": "/ships/rms-empress-of-asia",
+      "classes": [],
+      "sisters": [
+        "Empress of Russia"
+      ]
     },
     {
       "name": "RMS Empress of Australia",
@@ -2275,6 +2310,15 @@
       "url": "/ships/ss-hamburg-1925",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "TSS Hibernia (1899)",
+      "path": "ships/ss-hibernia.html",
+      "url": "/ships/ss-hibernia",
+      "classes": [],
+      "sisters": [
+        "Anglia"
+      ]
     },
     {
       "name": "SS Himalaya (1949)",

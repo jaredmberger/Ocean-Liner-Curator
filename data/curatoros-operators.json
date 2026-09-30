@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:35:59.375Z",
+  "generatedAt": "2026-09-30T17:59:37.622Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 332,
-    "guidesWithOperator": 332,
+    "shipGuides": 335,
+    "guidesWithOperator": 335,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 75,
+    "canonicalOperators": 77,
     "aliasedOperatorGroups": 24
   },
   "operators": [
@@ -107,7 +107,7 @@
         "Canadian Pacific Steamships",
         "Canadian Pacific Steamships / Canadian Pacific Line"
       ],
-      "shipCount": 12
+      "shipCount": 13
     },
     {
       "id": "orient-line",
@@ -494,6 +494,14 @@
       "shipCount": 1
     },
     {
+      "id": "london-and-north-western-railway",
+      "name": "London & North Western Railway",
+      "rawValues": [
+        "London & North Western Railway"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "michigan-steamship-company",
       "name": "Michigan Steamship Company",
       "rawValues": [
@@ -538,6 +546,14 @@
       "name": "Rederi AB Sverige-Nordamerika (Swedish American Line), 1923–1926",
       "rawValues": [
         "Rederi AB Sverige-Nordamerika (Swedish American Line), 1923–1926"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "rotterdamsche-lloyd-koninklijke-rotterdamsche-lloyd-royal-rotterdam-lloyd",
+      "name": "Rotterdamsche Lloyd / Koninklijke Rotterdamsche Lloyd (Royal Rotterdam Lloyd)",
+      "rawValues": [
+        "Rotterdamsche Lloyd / Koninklijke Rotterdamsche Lloyd (Royal Rotterdam Lloyd)"
       ],
       "shipCount": 1
     },
@@ -798,6 +814,14 @@
       "launchYear": "1926",
       "operatorRaw": "Cosulich Società Triestina di Navigazione",
       "operator": "Cosulich Società Triestina di Navigazione"
+    },
+    {
+      "name": "MS Willem Ruys (1947)",
+      "path": "ships/ms-willem-ruys.html",
+      "url": "/ships/ms-willem-ruys",
+      "launchYear": "1946",
+      "operatorRaw": "Rotterdamsche Lloyd / Koninklijke Rotterdamsche Lloyd (Royal Rotterdam Lloyd)",
+      "operator": "Rotterdamsche Lloyd / Koninklijke Rotterdamsche Lloyd (Royal Rotterdam Lloyd)"
     },
     {
       "name": "MV Britannic (1930)",
@@ -1086,6 +1110,14 @@
       "launchYear": "1901",
       "operatorRaw": "White Star Line / Oceanic Steam Navigation Co.",
       "operator": "White Star Line"
+    },
+    {
+      "name": "RMS Empress of Asia (1913)",
+      "path": "ships/rms-empress-of-asia.html",
+      "url": "/ships/rms-empress-of-asia",
+      "launchYear": "1912",
+      "operatorRaw": "Canadian Pacific Railway / Canadian Pacific Steamships",
+      "operator": "Canadian Pacific"
     },
     {
       "name": "RMS Empress of Australia",
@@ -2302,6 +2334,14 @@
       "launchYear": "1925",
       "operatorRaw": "Hamburg America Line (HAPAG)",
       "operator": "Hamburg America Line (HAPAG)"
+    },
+    {
+      "name": "TSS Hibernia (1899)",
+      "path": "ships/ss-hibernia.html",
+      "url": "/ships/ss-hibernia",
+      "launchYear": "1899",
+      "operatorRaw": "London & North Western Railway",
+      "operator": "London & North Western Railway"
     },
     {
       "name": "SS Himalaya (1949)",

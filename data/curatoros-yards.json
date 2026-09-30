@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:35:59.375Z",
+  "generatedAt": "2026-09-30T17:59:37.622Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 332,
-    "guidesWithDocumentedYard": 332,
+    "shipGuides": 335,
+    "guidesWithDocumentedYard": 335,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 68,
+    "canonicalYardLocations": 70,
     "multiYardShips": 0
   },
   "yards": [
@@ -968,7 +968,7 @@
         "Harland & Wolff",
         "John Elder & Co."
       ],
-      "shipCount": 19,
+      "shipCount": 20,
       "ships": [
         {
           "name": "RMS Umbria (1884)",
@@ -1017,6 +1017,13 @@
           "path": "ships/rms-empress-of-ireland.html",
           "url": "/ships/rms-empress-of-ireland",
           "launchYear": "1906",
+          "builder": "Fairfield Shipbuilding & Engineering Co."
+        },
+        {
+          "name": "RMS Empress of Asia (1913)",
+          "path": "ships/rms-empress-of-asia.html",
+          "url": "/ships/rms-empress-of-asia",
+          "launchYear": "1912",
           "builder": "Fairfield Shipbuilding & Engineering Co."
         },
         {
@@ -2753,6 +2760,26 @@
       ]
     },
     {
+      "id": "dumbarton",
+      "name": "Dumbarton",
+      "rawValues": [
+        "Dumbarton"
+      ],
+      "builders": [
+        "William Denny & Brothers"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "TSS Hibernia (1899)",
+          "path": "ships/ss-hibernia.html",
+          "url": "/ships/ss-hibernia",
+          "launchYear": "1899",
+          "builder": "William Denny & Brothers"
+        }
+      ]
+    },
+    {
       "id": "geestemunde",
       "name": "Geestemünde",
       "rawValues": [
@@ -3213,6 +3240,26 @@
       ]
     },
     {
+      "id": "vlissingen",
+      "name": "Vlissingen",
+      "rawValues": [
+        "Vlissingen"
+      ],
+      "builders": [
+        "N.V. Koninklijke Maatschappij De Schelde"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "MS Willem Ruys (1947)",
+          "path": "ships/ms-willem-ruys.html",
+          "url": "/ships/ms-willem-ruys",
+          "launchYear": "1946",
+          "builder": "N.V. Koninklijke Maatschappij De Schelde"
+        }
+      ]
+    },
+    {
       "id": "waterford",
       "name": "Waterford",
       "rawValues": [
@@ -3481,6 +3528,20 @@
           "builderId": "cantiere-navale-triestino",
           "location": "Monfalcone",
           "locationRaw": "Monfalcone"
+        }
+      ]
+    },
+    {
+      "name": "MS Willem Ruys (1947)",
+      "path": "ships/ms-willem-ruys.html",
+      "url": "/ships/ms-willem-ruys",
+      "launchYear": "1946",
+      "assignments": [
+        {
+          "builder": "N.V. Koninklijke Maatschappij De Schelde",
+          "builderId": "n-v-koninklijke-maatschappij-de-schelde",
+          "location": "Vlissingen",
+          "locationRaw": "Vlissingen"
         }
       ]
     },
@@ -3985,6 +4046,20 @@
           "builderId": "harland-and-wolff",
           "location": "Queen's Island, Belfast",
           "locationRaw": "Queen's Island, Belfast"
+        }
+      ]
+    },
+    {
+      "name": "RMS Empress of Asia (1913)",
+      "path": "ships/rms-empress-of-asia.html",
+      "url": "/ships/rms-empress-of-asia",
+      "launchYear": "1912",
+      "assignments": [
+        {
+          "builder": "Fairfield Shipbuilding & Engineering Co.",
+          "builderId": "fairfield-shipbuilding-and-engineering-co",
+          "location": "Govan",
+          "locationRaw": "Govan, Glasgow"
         }
       ]
     },
@@ -6113,6 +6188,20 @@
           "builderId": "blohm-and-voss",
           "location": "Hamburg",
           "locationRaw": "Hamburg"
+        }
+      ]
+    },
+    {
+      "name": "TSS Hibernia (1899)",
+      "path": "ships/ss-hibernia.html",
+      "url": "/ships/ss-hibernia",
+      "launchYear": "1899",
+      "assignments": [
+        {
+          "builder": "William Denny & Brothers",
+          "builderId": "william-denny-and-brothers",
+          "location": "Dumbarton",
+          "locationRaw": "Dumbarton"
         }
       ]
     },

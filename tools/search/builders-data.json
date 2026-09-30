@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-30T08:35:59.375Z",
+  "generatedAt": "2026-09-30T17:59:37.622Z",
   "summary": {
-    "shipGuides": 332,
-    "canonicalBuilders": 80,
-    "guidesWithBuilder": 332
+    "shipGuides": 335,
+    "canonicalBuilders": 82,
+    "guidesWithBuilder": 335
   },
   "builders": [
     {
@@ -1187,7 +1187,7 @@
     {
       "id": "fairfield-shipbuilding-and-engineering-co",
       "name": "Fairfield Shipbuilding & Engineering Co.",
-      "shipCount": 14,
+      "shipCount": 15,
       "locations": [
         "Govan",
         "Govan, Glasgow",
@@ -1237,6 +1237,13 @@
           "launchYear": "1906",
           "operator": "Canadian Pacific Railway / Canadian Pacific Steamship Company",
           "builderRaw": "Fairfield Shipbuilding & Engineering Co., Govan · yard no. 443"
+        },
+        {
+          "name": "RMS Empress of Asia (1913)",
+          "url": "/ships/rms-empress-of-asia",
+          "launchYear": "1912",
+          "operator": "Canadian Pacific Railway / Canadian Pacific Steamships",
+          "builderRaw": "Fairfield Shipbuilding & Engineering Co. Ltd., Govan, Glasgow · yard no. 485"
         },
         {
           "name": "RMS Empress of Russia",
@@ -3091,6 +3098,25 @@
       ]
     },
     {
+      "id": "n-v-koninklijke-maatschappij-de-schelde",
+      "name": "N.V. Koninklijke Maatschappij De Schelde",
+      "shipCount": 1,
+      "locations": [
+        "Vlissingen"
+      ],
+      "firstLaunchYear": 1946,
+      "lastLaunchYear": 1946,
+      "ships": [
+        {
+          "name": "MS Willem Ruys (1947)",
+          "url": "/ships/ms-willem-ruys",
+          "launchYear": "1946",
+          "operator": "Rotterdamsche Lloyd / Koninklijke Rotterdamsche Lloyd (Royal Rotterdam Lloyd)",
+          "builderRaw": "N.V. Koninklijke Maatschappij De Schelde, Vlissingen · yard no. 214"
+        }
+      ]
+    },
+    {
       "id": "n-v-nederlandsche-scheepsbouw-maatschappij",
       "name": "N.V. Nederlandsche Scheepsbouw-Maatschappij",
       "shipCount": 1,
@@ -3296,6 +3322,25 @@
           "launchYear": "1864",
           "operator": "Cunard Line",
           "builderRaw": "Tod & McGregor, Glasgow"
+        }
+      ]
+    },
+    {
+      "id": "william-denny-and-brothers",
+      "name": "William Denny & Brothers",
+      "shipCount": 1,
+      "locations": [
+        "Dumbarton"
+      ],
+      "firstLaunchYear": 1899,
+      "lastLaunchYear": 1899,
+      "ships": [
+        {
+          "name": "TSS Hibernia (1899)",
+          "url": "/ships/ss-hibernia",
+          "launchYear": "1899",
+          "operator": "London & North Western Railway",
+          "builderRaw": "William Denny & Brothers, Dumbarton · yard no. 618"
         }
       ]
     },
