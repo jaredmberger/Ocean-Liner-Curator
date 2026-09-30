@@ -48,6 +48,7 @@
 "/ships/rms-britannia-1840.html",
 "/ships/rms-britannic-1874.html",
 "/ships/rms-britannic.html",
+"/ships/ms-willem-ruys.html",
 "/ships/mv-britannic.html",
 "/ships/rms-caledonia.html",
 "/ships/ss-california.html",
