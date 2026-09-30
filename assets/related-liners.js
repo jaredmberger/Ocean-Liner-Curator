@@ -658,6 +658,16 @@
       "NYK Pacific liners"
     ),
 
+    great_northern_pair: cluster(
+      "Related Liners.",
+      "James J. Hill's paired Great Northern Steamship Company giants built for American trans-Pacific passenger and cargo service.",
+      [
+        { href: "/ships/ss-dakota", label: "SS <em>Dakota</em>", tail: "Great Northern · 1905" },
+        { href: "/ships/ss-minnesota", label: "SS <em>Minnesota</em>", tail: "Great Northern · 1905" }
+      ],
+      "Dakota and Minnesota"
+    ),
+
     hapag_cincinnati_cleveland: cluster(
       "Related Liners.",
       "Hamburg America Line's large intermediate sister ships built for mixed passenger, emigrant, and freight service before the First World War.",
@@ -1490,6 +1500,8 @@
 
     "ss-bergensfjord": ["norwegian_america_founders"],
     "ss-kristianiafjord": ["norwegian_america_founders"],
+    "ss-dakota": ["great_northern_pair"],
+    "ss-minnesota": ["great_northern_pair"],
     "ss-cincinnati": ["hapag_cincinnati_cleveland"],
     "ss-cleveland": ["hapag_cincinnati_cleveland"],
     "ss-berlin-1909": ["berlin_arabic_republic"],
