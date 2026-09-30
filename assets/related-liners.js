@@ -1226,6 +1226,7 @@
       "Related Liners.",
       "Holland America Line ships associated with the company’s early-20th-century North Atlantic expansion before the interwar fleet.",
       [
+        { href: "/ships/ss-potsdam", label: "SS <em>Potsdam</em> (1900)", tail: "Holland America Line" },
         { href: "/ships/ss-rijndam-1901", label: "SS <em>Rijndam</em> (1901)", tail: "Holland America Line" },
         { href: "/ships/ss-noordam", label: "SS <em>Noordam</em>", tail: "Holland America Line" },
         { href: "/ships/ss-nieuw-amsterdam-1906", label: "SS <em>Nieuw Amsterdam</em> (1906)", tail: "Holland America Line" },
@@ -1554,6 +1555,7 @@
     "rms-kenilworth-castle": ["union_castle_early_mail"],
     "ss-briton": ["union_castle_early_mail"],
     "ss-saxon": ["union_castle_early_mail"],
+    "ss-potsdam": ["holland_america_early_1900s"],
     "ss-rijndam-1901": ["holland_america_early_1900s"],
     "ss-noordam": ["holland_america_early_1900s"],
     "ss-new-england": ["dominion_line_group"],
