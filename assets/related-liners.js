@@ -799,6 +799,18 @@
       "Laurentic and Megantic"
     ),
 
+    cunard_interwar_workhorses: cluster(
+      "Related Liners.",
+      "Cunard liners of the 1920s that carried the company through the interwar transition between the prewar express generation and the later Queen era.",
+      [
+        { href: "/ships/rms-laconia", label: "RMS <em>Laconia</em>", tail: "Cunard Line · 1922" },
+        { href: "/ships/rms-franconia", label: "RMS <em>Franconia</em> (1923)", tail: "Cunard Line · 1923" },
+        { href: "/ships/rms-scythia", label: "RMS <em>Scythia</em>", tail: "Cunard Line · 1921" },
+        { href: "/ships/rms-berengaria", label: "RMS <em>Berengaria</em>", tail: "Cunard Line · 1922" }
+      ],
+      "Cunard interwar liners"
+    ),
+
     cunard_1880s_pair: cluster(
       "Related Liners.",
       "Cunard’s paired mid-1880s express liners—major ships of the pre-Campania/Lucania era.",
@@ -1265,7 +1277,6 @@
     "ss-imperator": ["imperator_class", "hapag_ballin_group"],
     "ss-vaterland": ["imperator_class"],
     "ss-bismarck-1914": ["imperator_class"],
-    "rms-berengaria": ["imperator_class"],
     "ss-leviathan": ["imperator_class", "usl_flagships"],
     "rms-majestic": ["imperator_class"],
 
@@ -1405,10 +1416,13 @@
     "ss-cymric": ["white_star_oceanic_family"],
     "ss-republic-1903": ["white_star_oceanic_family"],
 
+    "rms-laconia": ["cunard_interwar_workhorses"],
+    "rms-franconia": ["cunard_franconia_pair", "cunard_interwar_workhorses"],
+    "rms-scythia": ["cunard_interwar_workhorses"],
+    "rms-berengaria": ["imperator_class", "cunard_interwar_workhorses"],
     "rms-etruria-1884": ["cunard_1880s_pair"],
     "rms-umbria-1884": ["cunard_1880s_pair"],
     "rms-franconia-1910": ["cunard_franconia_pair"],
-    "rms-franconia": ["cunard_franconia_pair"],
 
     "rms-arundel-castle-1921": ["union_castle_pair_1921", "union_castle_named_group"],
     "rms-windsor-castle-1921": ["union_castle_pair_1921", "union_castle_named_group"],
