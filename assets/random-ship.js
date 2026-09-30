@@ -84,6 +84,7 @@
 "/ships/ss-corinthic.html",
 "/ships/ss-cristoforo-colombo.html",
 "/ships/ss-cymric.html",
+"/ships/ss-dakota.html",
 "/ships/ss-de-grasse.html",
 "/ships/ss-deutschland.html",
 "/ships/qsmv-dominion-monarch.html",
