@@ -201,6 +201,7 @@
 "/ships/ss-pennland.html",
 "/ships/ss-pennsylvania.html",
 "/ships/ss-persic.html",
+"/ships/ss-potsdam.html",
 "/ships/ss-president-coolidge.html",
 "/ships/ss-president-harding.html",
 "/ships/ss-president-hoover.html",
