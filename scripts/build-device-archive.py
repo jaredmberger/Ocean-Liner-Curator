@@ -23,7 +23,7 @@ DEVICE_DIR = ROOT / "api" / "device"
 DETAIL_DIR = DEVICE_DIR / "ships"
 SITE = "https://oceanliners.net"
 
-IMAGE_EXTS = (".jpg", ".jpeg", ".png", ".webp", ".JPG", ".JPEG", ".PNG", ".WEBP")
+IMAGE_EXTS = (".jpg", ".jpeg", ".png", ".webp", ".avif", ".JPG", ".JPEG", ".PNG", ".WEBP", ".AVIF")
 SKIP_IMAGE_WORDS = ("logo", "favicon", "icon", "glyph", "flag", "tile", "badge", "star", "arrow")
 
 
