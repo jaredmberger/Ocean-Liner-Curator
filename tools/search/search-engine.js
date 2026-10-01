@@ -15,6 +15,21 @@ export function normalizeShipName(value) {
     .trim();
 }
 
+const QUERY_ALIASES = new Map([
+  ['usl', 'United States Lines'],
+  ['ndl', 'North German Lloyd'],
+  ['ngl', 'North German Lloyd'],
+  ['cgt', 'French Line'],
+  ['hal', 'Holland America Line'],
+  ['hapag', 'Hamburg America Line'],
+  ['nyk', 'NYK Line'],
+  ['cws', 'Cunard-White Star Line']
+]);
+
+export function searchAliasFor(value) {
+  return QUERY_ALIASES.get(normalizeSearchKey(value)) || '';
+}
+
 const INTENT_TITLE_ALIASES = new Map([
   ['white star ships', 'White Star Line'],
   ['white star line ships', 'White Star Line'],
@@ -37,7 +52,7 @@ export async function searchArchive(pagefind, term) {
     pagefind.search(null, {filters:{ship:normalizeShipName(term)}}),
     pagefind.search(null, {filters:{title_key:normalizeTitleKey(term)}}),
     intentTitle ? pagefind.search(null, {filters:{title_key:normalizeTitleKey(intentTitle)}}) : Promise.resolve({results:[]}),
-    singleWord ? pagefind.search(`"${term}"`) : Promise.resolve(null)
+    singleWord ? pagefind.search(`"${effectiveTerm}"`) : Promise.resolve(null)
   ]);
   const seen = new Set();
   const prioritized = [];
