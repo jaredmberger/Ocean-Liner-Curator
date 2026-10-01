@@ -72,6 +72,13 @@ def sort_key(name: str) -> str:
     }))
 
 
+def identity_key(name: str) -> str:
+    """Compare vessel identity while ignoring prefix and optional year qualifiers."""
+    text = clean(name)
+    text = re.sub(r"\s*\(\d{4}\)\s*$", "", text)
+    return sort_key(text)
+
+
 def tracked_paths() -> set[str]:
     output = subprocess.check_output(
         ["git", "-c", "core.quotePath=false", "-C", str(ROOT), "ls-tree", "-r", "--name-only", "HEAD"], text=True
@@ -243,15 +250,32 @@ def main() -> None:
         page_h1 = clean(h1_match.group(1)) if h1_match else ""
         expected_path = f"/ships/{slug}"
 
+        intentional_identity_aliases = {
+            "ss-gothic-white-star-line": {"ss gothic", "ss gothic (white star line)"},
+            "nyk-hikawa-maru": {"hikawa maru", "nyk hikawa maru"},
+            "queen-elizabeth-2": {"queen elizabeth 2", "rms queen elizabeth 2", "queen elizabeth 2 (qe2)"},
+            "tall-ships-guide": {"tall ships"},
+        }
+
+        def accepted_identity(value: str) -> bool:
+            aliases = intentional_identity_aliases.get(slug)
+            if not aliases:
+                return False
+            normalized = clean(value).casefold()
+            normalized = re.sub(r"\s+[—-]\s+(?:ship|reference) guide\b.*$", "", normalized, flags=re.I)
+            return normalized in aliases
+
         if not page_h1:
             error("missing-h1", slug=slug)
-        elif sort_key(page_h1) != sort_key(card["name"]):
+        elif identity_key(page_h1) != identity_key(card["name"]) and not accepted_identity(page_h1):
             warn("card-h1-name-mismatch", slug=slug, card=card["name"], h1=page_h1)
 
         if not page_title:
             error("missing-title", slug=slug)
-        elif sort_key(card["name"]) not in sort_key(page_title):
-            warn("card-title-name-mismatch", slug=slug, card=card["name"], title=page_title)
+        else:
+            title_identity = re.split(r"\s+[—-]\s+(?:Ship|Reference) Guide\b", page_title, maxsplit=1, flags=re.I)[0]
+            if identity_key(card["name"]) != identity_key(title_identity) and not accepted_identity(title_identity):
+                warn("card-title-name-mismatch", slug=slug, card=card["name"], title=page_title)
 
         if not canon_match:
             error("missing-canonical", slug=slug)
@@ -521,6 +545,15 @@ def main() -> None:
             print(f"Operator normalization warnings: {len(operator_items)}")
             for item in operator_items:
                 print(f"OPERATOR_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        identity_items = [item for item in warnings if item.get("code") in {"card-h1-name-mismatch", "card-title-name-mismatch"}]
+        if identity_items:
+            print(f"Identity naming warnings: {len(identity_items)}")
+            for item in identity_items:
+                print(f"IDENTITY_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        warning_counts = Counter(item.get("code", "unknown") for item in warnings)
+        print("Remaining warning categories:")
+        for code, count in sorted(warning_counts.items(), key=lambda item: (-item[1], item[0])):
+            print(f"WARNING_CATEGORY {code}: {count}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
