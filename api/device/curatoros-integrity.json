@@ -7,10 +7,10 @@
     "archiveGenerated": "2026-10-01"
   },
   "counts": {
-    "archive": 344,
-    "randomEligible": 343,
-    "sitemapShips": 344,
-    "deviceDetails": 344,
+    "archive": 345,
+    "randomEligible": 344,
+    "sitemapShips": 345,
+    "deviceDetails": 345,
     "errors": 0,
     "warnings": 0
   },
@@ -20,7 +20,7 @@
       "exists": true,
       "status": "ok",
       "generatedAt": "2026-10-01",
-      "count": 344
+      "count": 345
     },
     "builders": {
       "file": "data/builders.json",
@@ -39,37 +39,37 @@
         "file": "data/curatoros-archive-gaps.json",
         "exists": true,
         "status": "ok",
-        "generatedAt": "2026-10-01T03:44:28.372Z"
+        "generatedAt": "2026-10-01T03:51:44.472Z"
       },
       {
         "file": "data/curatoros-builders.json",
         "exists": true,
         "status": "ok",
-        "generatedAt": "2026-10-01T03:44:26.669Z"
+        "generatedAt": "2026-10-01T03:51:41.866Z"
       },
       {
         "file": "data/curatoros-classes-sisters.json",
         "exists": true,
         "status": "ok",
-        "generatedAt": "2026-10-01T03:44:28.319Z"
+        "generatedAt": "2026-10-01T03:51:44.409Z"
       },
       {
         "file": "data/curatoros-eras.json",
         "exists": true,
         "status": "ok",
-        "generatedAt": "2026-10-01T03:44:27.541Z"
+        "generatedAt": "2026-10-01T03:51:43.172Z"
       },
       {
         "file": "data/curatoros-operators.json",
         "exists": true,
         "status": "ok",
-        "generatedAt": "2026-10-01T03:44:26.669Z"
+        "generatedAt": "2026-10-01T03:51:41.866Z"
       },
       {
         "file": "data/curatoros-yards.json",
         "exists": true,
         "status": "ok",
-        "generatedAt": "2026-10-01T03:44:26.669Z"
+        "generatedAt": "2026-10-01T03:51:41.866Z"
       }
     ]
   },
@@ -78,15 +78,15 @@
       "name": "archive-minimum",
       "ok": true,
       "severity": "error",
-      "count": 344,
+      "count": 345,
       "minimum": 300
     },
     {
       "name": "archive-declared-count",
       "ok": true,
       "severity": "error",
-      "declared": 344,
-      "actual": 344
+      "declared": 345,
+      "actual": 345
     },
     {
       "name": "ship-sitemap-reconciliation",
@@ -108,21 +108,21 @@
       "name": "random-ship-reconciliation",
       "ok": true,
       "severity": "error",
-      "expectedCount": 343,
+      "expectedCount": 344,
       "intentionalExclusions": [
         "tall-ships-guide"
       ],
       "files": [
         {
           "file": "random-ship.js",
-          "count": 343,
+          "count": 344,
           "missing": [],
           "extra": [],
           "match": true
         },
         {
           "file": "assets/random-ship.js",
-          "count": 343,
+          "count": 344,
           "missing": [],
           "extra": [],
           "match": true
