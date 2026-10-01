@@ -521,6 +521,10 @@ def main() -> None:
             print(f"Operator normalization warnings: {len(operator_items)}")
             for item in operator_items:
                 print(f"OPERATOR_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        warning_counts = Counter(item.get("code", "unknown") for item in warnings)
+        print("Remaining warning categories:")
+        for code, count in sorted(warning_counts.items(), key=lambda item: (-item[1], item[0])):
+            print(f"WARNING_CATEGORY {code}: {count}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
