@@ -437,10 +437,15 @@ def main() -> None:
         stem = re.sub(r"\s+\d+$", "", stem)
         return stem.casefold()
 
+    intentional_alternate_images = {
+        "ships/rms-carinthia 2.jpg",
+    }
+
     orphan_images = sorted(
         image
         for image in (tracked_images - referenced_images)
-        if image_candidate_slug(image) in {slug.casefold() for slug in archive_slugs}
+        if image not in intentional_alternate_images
+        and image_candidate_slug(image) in {slug.casefold() for slug in archive_slugs}
     )
     for image in orphan_images:
         warn("orphan-ship-image", image=image)
