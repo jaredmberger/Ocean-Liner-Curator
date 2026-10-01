@@ -516,6 +516,11 @@ def main() -> None:
             print(f"Source hygiene warnings: {len(source_items)}")
             for item in source_items:
                 print(f"SOURCE_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        operator_items = [item for item in warnings if item.get("code") == "operator-name-variants"]
+        if operator_items:
+            print(f"Operator naming warnings: {len(operator_items)}")
+            for item in operator_items:
+                print(f"OPERATOR_WARNING: {json.dumps(item, ensure_ascii=False)}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
