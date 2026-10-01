@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:35:30.255Z",
+  "generatedAt": "2026-10-01T19:05:13.988Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 346,
-    "guidesWithServiceStart": 340,
-    "guidesWithExplicitServiceEnd": 266,
+    "shipGuides": 350,
+    "guidesWithServiceStart": 344,
+    "guidesWithExplicitServiceEnd": 270,
     "eras": 10,
     "decades": 15
   },
   "eras": [
     {
       "name": "Edwardian / pre-war peak",
-      "shipCount": 92,
+      "shipCount": 94,
       "ships": [
         {
           "name": "RMS Adriatic (1907)",
@@ -55,6 +55,13 @@
           "url": "/ships/rms-berengaria",
           "serviceStartYear": "1913",
           "serviceEndYear": "1939"
+        },
+        {
+          "name": "RMS Canopic",
+          "path": "ships/rms-canopic.html",
+          "url": "/ships/rms-canopic",
+          "serviceStartYear": "1900",
+          "serviceEndYear": "1925"
         },
         {
           "name": "RMS Carmania",
@@ -475,6 +482,13 @@
           "url": "/ships/ss-mayflower",
           "serviceStartYear": "1902",
           "serviceEndYear": "1929"
+        },
+        {
+          "name": "SS Minnehaha (1900)",
+          "path": "ships/ss-minnehaha.html",
+          "url": "/ships/ss-minnehaha",
+          "serviceStartYear": "1900",
+          "serviceEndYear": "1917"
         },
         {
           "name": "SS Minnesota",
@@ -1584,7 +1598,7 @@
     },
     {
       "name": "Late Victorian expansion",
-      "shipCount": 41,
+      "shipCount": 43,
       "ships": [
         {
           "name": "RMS Campania",
@@ -1713,6 +1727,13 @@
           "serviceEndYear": "1923"
         },
         {
+          "name": "SS City of Rome (1881)",
+          "path": "ships/ss-city-of-rome.html",
+          "url": "/ships/ss-city-of-rome",
+          "serviceStartYear": "1881",
+          "serviceEndYear": "1902"
+        },
+        {
           "name": "SS Coptic",
           "path": "ships/ss-coptic.html",
           "url": "/ships/ss-coptic",
@@ -1774,6 +1795,13 @@
           "url": "/ships/ss-konigin-luise",
           "serviceStartYear": "1896",
           "serviceEndYear": "1935"
+        },
+        {
+          "name": "SS La Bourgogne",
+          "path": "ships/ss-la-bourgogne.html",
+          "url": "/ships/ss-la-bourgogne",
+          "serviceStartYear": "1886",
+          "serviceEndYear": "1898"
         },
         {
           "name": "SS La Bretagne",
@@ -3041,7 +3069,7 @@
     },
     {
       "name": "1900s",
-      "shipCount": 70,
+      "shipCount": 72,
       "ships": [
         {
           "name": "RMS Adriatic (1907)",
@@ -3063,6 +3091,13 @@
           "url": "/ships/rms-baltic",
           "serviceStartYear": "1904",
           "serviceEndYear": "1933"
+        },
+        {
+          "name": "RMS Canopic",
+          "path": "ships/rms-canopic.html",
+          "url": "/ships/rms-canopic",
+          "serviceStartYear": "1900",
+          "serviceEndYear": "1925"
         },
         {
           "name": "RMS Carmania",
@@ -3385,6 +3420,13 @@
           "url": "/ships/ss-mayflower",
           "serviceStartYear": "1902",
           "serviceEndYear": "1929"
+        },
+        {
+          "name": "SS Minnehaha (1900)",
+          "path": "ships/ss-minnehaha.html",
+          "url": "/ships/ss-minnehaha",
+          "serviceStartYear": "1900",
+          "serviceEndYear": "1917"
         },
         {
           "name": "SS Minnesota",
@@ -4373,6 +4415,117 @@
       ]
     },
     {
+      "name": "1880s",
+      "shipCount": 15,
+      "ships": [
+        {
+          "name": "RMS Etruria (1884)",
+          "path": "ships/rms-etruria-1884.html",
+          "url": "/ships/rms-etruria-1884",
+          "serviceStartYear": "1885",
+          "serviceEndYear": "1909"
+        },
+        {
+          "name": "RMS Servia",
+          "path": "ships/rms-servia-1881.html",
+          "url": "/ships/rms-servia-1881",
+          "serviceStartYear": "1881",
+          "serviceEndYear": "1902"
+        },
+        {
+          "name": "RMS Teutonic (1889)",
+          "path": "ships/rms-teutonic.html",
+          "url": "/ships/rms-teutonic",
+          "serviceStartYear": "1889",
+          "serviceEndYear": "1921"
+        },
+        {
+          "name": "RMS Umbria (1884)",
+          "path": "ships/rms-umbria-1884.html",
+          "url": "/ships/rms-umbria-1884",
+          "serviceStartYear": "1884",
+          "serviceEndYear": "1910"
+        },
+        {
+          "name": "SS Catalonia",
+          "path": "ships/ss-catalonia.html",
+          "url": "/ships/ss-catalonia",
+          "serviceStartYear": "1881",
+          "serviceEndYear": "1901"
+        },
+        {
+          "name": "SS City of New York (1888)",
+          "path": "ships/ss-city-of-new-york-1888.html",
+          "url": "/ships/ss-city-of-new-york-1888",
+          "serviceStartYear": "1888",
+          "serviceEndYear": "1923"
+        },
+        {
+          "name": "SS City of Paris",
+          "path": "ships/ss-city-of-paris.html",
+          "url": "/ships/ss-city-of-paris",
+          "serviceStartYear": "1889",
+          "serviceEndYear": "1923"
+        },
+        {
+          "name": "SS City of Rome (1881)",
+          "path": "ships/ss-city-of-rome.html",
+          "url": "/ships/ss-city-of-rome",
+          "serviceStartYear": "1881",
+          "serviceEndYear": "1902"
+        },
+        {
+          "name": "SS Coptic",
+          "path": "ships/ss-coptic.html",
+          "url": "/ships/ss-coptic",
+          "serviceStartYear": "1881",
+          "serviceEndYear": "1926"
+        },
+        {
+          "name": "SS Elbe (1881)",
+          "path": "ships/ss-elbe-1881.html",
+          "url": "/ships/ss-elbe-1881",
+          "serviceStartYear": "1881",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS La Bourgogne",
+          "path": "ships/ss-la-bourgogne.html",
+          "url": "/ships/ss-la-bourgogne",
+          "serviceStartYear": "1886",
+          "serviceEndYear": "1898"
+        },
+        {
+          "name": "SS La Bretagne",
+          "path": "ships/ss-la-bretagne.html",
+          "url": "/ships/ss-la-bretagne",
+          "serviceStartYear": "1886",
+          "serviceEndYear": "1923"
+        },
+        {
+          "name": "SS La Normandie",
+          "path": "ships/ss-la-normandie.html",
+          "url": "/ships/ss-la-normandie",
+          "serviceStartYear": "1883",
+          "serviceEndYear": "1912"
+        },
+        {
+          "name": "SS Lahn (1887)",
+          "path": "ships/ss-lahn.html",
+          "url": "/ships/ss-lahn",
+          "serviceStartYear": "1887",
+          "serviceEndYear": "1927"
+        },
+        {
+          "name": "SS Norge",
+          "path": "ships/ss-norge.html",
+          "url": "/ships/ss-norge",
+          "serviceStartYear": "1881",
+          "serviceEndYear": "1904"
+        }
+      ]
+    },
+    {
       "name": "1950s",
       "shipCount": 15,
       "ships": [
@@ -4480,103 +4633,6 @@
           "url": "/ships/ss-us",
           "serviceStartYear": "1952",
           "serviceEndYear": null
-        }
-      ]
-    },
-    {
-      "name": "1880s",
-      "shipCount": 13,
-      "ships": [
-        {
-          "name": "RMS Etruria (1884)",
-          "path": "ships/rms-etruria-1884.html",
-          "url": "/ships/rms-etruria-1884",
-          "serviceStartYear": "1885",
-          "serviceEndYear": "1909"
-        },
-        {
-          "name": "RMS Servia",
-          "path": "ships/rms-servia-1881.html",
-          "url": "/ships/rms-servia-1881",
-          "serviceStartYear": "1881",
-          "serviceEndYear": "1902"
-        },
-        {
-          "name": "RMS Teutonic (1889)",
-          "path": "ships/rms-teutonic.html",
-          "url": "/ships/rms-teutonic",
-          "serviceStartYear": "1889",
-          "serviceEndYear": "1921"
-        },
-        {
-          "name": "RMS Umbria (1884)",
-          "path": "ships/rms-umbria-1884.html",
-          "url": "/ships/rms-umbria-1884",
-          "serviceStartYear": "1884",
-          "serviceEndYear": "1910"
-        },
-        {
-          "name": "SS Catalonia",
-          "path": "ships/ss-catalonia.html",
-          "url": "/ships/ss-catalonia",
-          "serviceStartYear": "1881",
-          "serviceEndYear": "1901"
-        },
-        {
-          "name": "SS City of New York (1888)",
-          "path": "ships/ss-city-of-new-york-1888.html",
-          "url": "/ships/ss-city-of-new-york-1888",
-          "serviceStartYear": "1888",
-          "serviceEndYear": "1923"
-        },
-        {
-          "name": "SS City of Paris",
-          "path": "ships/ss-city-of-paris.html",
-          "url": "/ships/ss-city-of-paris",
-          "serviceStartYear": "1889",
-          "serviceEndYear": "1923"
-        },
-        {
-          "name": "SS Coptic",
-          "path": "ships/ss-coptic.html",
-          "url": "/ships/ss-coptic",
-          "serviceStartYear": "1881",
-          "serviceEndYear": "1926"
-        },
-        {
-          "name": "SS Elbe (1881)",
-          "path": "ships/ss-elbe-1881.html",
-          "url": "/ships/ss-elbe-1881",
-          "serviceStartYear": "1881",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS La Bretagne",
-          "path": "ships/ss-la-bretagne.html",
-          "url": "/ships/ss-la-bretagne",
-          "serviceStartYear": "1886",
-          "serviceEndYear": "1923"
-        },
-        {
-          "name": "SS La Normandie",
-          "path": "ships/ss-la-normandie.html",
-          "url": "/ships/ss-la-normandie",
-          "serviceStartYear": "1883",
-          "serviceEndYear": "1912"
-        },
-        {
-          "name": "SS Lahn (1887)",
-          "path": "ships/ss-lahn.html",
-          "url": "/ships/ss-lahn",
-          "serviceStartYear": "1887",
-          "serviceEndYear": "1927"
-        },
-        {
-          "name": "SS Norge",
-          "path": "ships/ss-norge.html",
-          "url": "/ships/ss-norge",
-          "serviceStartYear": "1881",
-          "serviceEndYear": "1904"
         }
       ]
     },
@@ -5429,6 +5485,17 @@
       "era": "Late Victorian expansion",
       "decade": "1890s",
       "endEvidence": "Sank in the Firth of Forth after collisions in severe weather, 5 November 1918"
+    },
+    {
+      "name": "RMS Canopic",
+      "path": "ships/rms-canopic.html",
+      "url": "/ships/rms-canopic",
+      "launchYear": "1900",
+      "serviceStartYear": "1900",
+      "serviceEndYear": "1925",
+      "era": "Edwardian / pre-war peak",
+      "decade": "1900s",
+      "endEvidence": "Broken up at Briton Ferry, Wales, in 1925"
     },
     {
       "name": "RMS Carinthia (1956)",
@@ -6696,6 +6763,17 @@
       "endEvidence": "Sold out of service; scrapped in 1923 (Italy commonly cited)"
     },
     {
+      "name": "SS City of Rome (1881)",
+      "path": "ships/ss-city-of-rome.html",
+      "url": "/ships/ss-city-of-rome",
+      "launchYear": "1881",
+      "serviceStartYear": "1881",
+      "serviceEndYear": "1902",
+      "era": "Late Victorian expansion",
+      "decade": "1880s",
+      "endEvidence": "Withdrawn and broken up in 1902"
+    },
+    {
       "name": "SS Cleveland",
       "path": "ships/ss-cleveland.html",
       "url": "/ships/ss-cleveland",
@@ -7444,6 +7522,17 @@
       "endEvidence": "Scrapped in 1927"
     },
     {
+      "name": "SS La Bourgogne",
+      "path": "ships/ss-la-bourgogne.html",
+      "url": "/ships/ss-la-bourgogne",
+      "launchYear": "1885",
+      "serviceStartYear": "1886",
+      "serviceEndYear": "1898",
+      "era": "Late Victorian expansion",
+      "decade": "1880s",
+      "endEvidence": "Sank after collision with Cromartyshire, 4 July 1898"
+    },
+    {
       "name": "SS La Bretagne",
       "path": "ships/ss-la-bretagne.html",
       "url": "/ships/ss-la-bretagne",
@@ -7772,6 +7861,17 @@
       "era": "Interwar recovery",
       "decade": "1920s",
       "endEvidence": "Badly damaged by fire at Liverpool on March 1, 1946; later refloated and scrapped at Dalmuir in 1947"
+    },
+    {
+      "name": "SS Minnehaha (1900)",
+      "path": "ships/ss-minnehaha.html",
+      "url": "/ships/ss-minnehaha",
+      "launchYear": "1900",
+      "serviceStartYear": "1900",
+      "serviceEndYear": "1917",
+      "era": "Edwardian / pre-war peak",
+      "decade": "1900s",
+      "endEvidence": "Sunk by German submarine U-48 on 7 September 1917"
     },
     {
       "name": "SS Minnesota",

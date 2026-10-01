@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:35:28.900Z",
+  "generatedAt": "2026-10-01T19:05:12.921Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 346,
-    "guidesWithDocumentedYard": 346,
+    "shipGuides": 350,
+    "guidesWithDocumentedYard": 350,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 73,
+    "canonicalYardLocations": 74,
     "multiYardShips": 0
   },
   "yards": [
@@ -22,7 +22,7 @@
         "Harland & Wolff",
         "Workman, Clark & Co."
       ],
-      "shipCount": 74,
+      "shipCount": 76,
       "ships": [
         {
           "name": "SS Atlantic (1873)",
@@ -186,9 +186,23 @@
           "builder": "Harland & Wolff"
         },
         {
+          "name": "RMS Canopic",
+          "path": "ships/rms-canopic.html",
+          "url": "/ships/rms-canopic",
+          "launchYear": "1900",
+          "builder": "Harland & Wolff"
+        },
+        {
           "name": "SS Commonwealth",
           "path": "ships/ss-commonwealth.html",
           "url": "/ships/ss-commonwealth",
+          "launchYear": "1900",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "SS Minnehaha (1900)",
+          "path": "ships/ss-minnehaha.html",
+          "url": "/ships/ss-minnehaha",
           "launchYear": "1900",
           "builder": "Harland & Wolff"
         },
@@ -1139,8 +1153,15 @@
         "Vickers Ltd.",
         "Vickers-Armstrongs"
       ],
-      "shipCount": 18,
+      "shipCount": 19,
       "ships": [
+        {
+          "name": "SS City of Rome (1881)",
+          "path": "ships/ss-city-of-rome.html",
+          "url": "/ships/ss-city-of-rome",
+          "launchYear": "1881",
+          "builder": "Barrow Shipbuilding Company"
+        },
         {
           "name": "SS La Normandie",
           "path": "ships/ss-la-normandie.html",
@@ -3100,6 +3121,26 @@
       ]
     },
     {
+      "id": "la-seyne-sur-mer-france",
+      "name": "La Seyne-sur-Mer, France",
+      "rawValues": [
+        "La Seyne-sur-Mer, France"
+      ],
+      "builders": [
+        "Société Nouvelle des Forges et Chantiers de la Méditerranée"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS La Bourgogne",
+          "path": "ships/ss-la-bourgogne.html",
+          "url": "/ships/ss-la-bourgogne",
+          "launchYear": "1885",
+          "builder": "Société Nouvelle des Forges et Chantiers de la Méditerranée"
+        }
+      ]
+    },
+    {
       "id": "leith-scotland",
       "name": "Leith, Scotland",
       "rawValues": [
@@ -4082,6 +4123,20 @@
           "builderId": "fairfield-shipbuilding-and-engineering-co",
           "location": "Govan",
           "locationRaw": "Govan"
+        }
+      ]
+    },
+    {
+      "name": "RMS Canopic",
+      "path": "ships/rms-canopic.html",
+      "url": "/ships/rms-canopic",
+      "launchYear": "1900",
+      "assignments": [
+        {
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Belfast",
+          "locationRaw": "Belfast"
         }
       ]
     },
@@ -5696,6 +5751,20 @@
       ]
     },
     {
+      "name": "SS City of Rome (1881)",
+      "path": "ships/ss-city-of-rome.html",
+      "url": "/ships/ss-city-of-rome",
+      "launchYear": "1881",
+      "assignments": [
+        {
+          "builder": "Barrow Shipbuilding Company",
+          "builderId": "barrow-shipbuilding-company",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness, England"
+        }
+      ]
+    },
+    {
       "name": "SS Cleveland",
       "path": "ships/ss-cleveland.html",
       "url": "/ships/ss-cleveland",
@@ -6648,6 +6717,20 @@
       ]
     },
     {
+      "name": "SS La Bourgogne",
+      "path": "ships/ss-la-bourgogne.html",
+      "url": "/ships/ss-la-bourgogne",
+      "launchYear": "1885",
+      "assignments": [
+        {
+          "builder": "Société Nouvelle des Forges et Chantiers de la Méditerranée",
+          "builderId": "societe-nouvelle-des-forges-et-chantiers-de-la-mediterranee",
+          "location": "La Seyne-sur-Mer, France",
+          "locationRaw": "La Seyne-sur-Mer, France"
+        }
+      ]
+    },
+    {
       "name": "SS La Bretagne",
       "path": "ships/ss-la-bretagne.html",
       "url": "/ships/ss-la-bretagne",
@@ -7064,6 +7147,20 @@
           "builderId": "blohm-and-voss",
           "location": "Hamburg",
           "locationRaw": "Hamburg, Germany"
+        }
+      ]
+    },
+    {
+      "name": "SS Minnehaha (1900)",
+      "path": "ships/ss-minnehaha.html",
+      "url": "/ships/ss-minnehaha",
+      "launchYear": "1900",
+      "assignments": [
+        {
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Belfast",
+          "locationRaw": "Belfast"
         }
       ]
     },

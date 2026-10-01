@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:35:31.605Z",
+  "generatedAt": "2026-10-01T19:05:15.184Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,20 +11,20 @@
     ]
   },
   "summary": {
-    "shipGuides": 346,
+    "shipGuides": 350,
     "relationshipCovered": 322,
-    "relationshipUncovered": 24,
-    "relationshipCoveragePct": 93.1,
+    "relationshipUncovered": 28,
+    "relationshipCoveragePct": 92,
     "canonicalOperators": 81,
     "thinOperators": 52,
-    "canonicalYardLocations": 73,
+    "canonicalYardLocations": 74,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 42,
-    "unresolvedSisterMentions": 11,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 5
+    "explicitSisterLinks": 43,
+    "unresolvedSisterMentions": 13,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 7
   },
   "signals": {
     "sisterShipResearchCandidates": [
@@ -46,6 +46,20 @@
         "ship": "SS Bretagne",
         "path": "ships/ss-bretagne.html",
         "mentioned": "Provence",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS La Bourgogne",
+        "path": "ships/ss-la-bourgogne.html",
+        "mentioned": "La Champagne",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS La Bourgogne",
+        "path": "ships/ss-la-bourgogne.html",
+        "mentioned": "La Gascogne",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -122,6 +136,20 @@
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
+        "ship": "SS La Bourgogne",
+        "path": "ships/ss-la-bourgogne.html",
+        "mentioned": "La Champagne",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS La Bourgogne",
+        "path": "ships/ss-la-bourgogne.html",
+        "mentioned": "La Gascogne",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
         "ship": "SS Orion",
         "path": "ships/ss-orion.html",
         "mentioned": "Orcades",
@@ -174,6 +202,33 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "SS Marquette",
+        "slug": "ss-marquette",
+        "url": "/ships/ss-marquette",
+        "operator": "Atlantic Transport Line",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 5 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Minnehaha (1900)",
+        "slug": "ss-minnehaha",
+        "url": "/ships/ss-minnehaha",
+        "operator": "Atlantic Transport Line",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 5 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Poland",
+        "slug": "ss-poland",
+        "url": "/ships/ss-poland",
+        "operator": "Atlantic Transport Line",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 5 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Arabia (1852)",
         "slug": "ss-arabia-1852",
         "url": "/ships/ss-arabia-1852",
@@ -201,21 +256,21 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Marquette",
-        "slug": "ss-marquette",
-        "url": "/ships/ss-marquette",
-        "operator": "Atlantic Transport Line",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+        "ship": "SS La Bourgogne",
+        "slug": "ss-la-bourgogne",
+        "url": "/ships/ss-la-bourgogne",
+        "operator": "Compagnie Générale Transatlantique (French Line)",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 19 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Poland",
-        "slug": "ss-poland",
-        "url": "/ships/ss-poland",
-        "operator": "Atlantic Transport Line",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+        "ship": "SS Napoleon III",
+        "slug": "ss-napoleon-iii",
+        "url": "/ships/ss-napoleon-iii",
+        "operator": "Compagnie Générale Transatlantique (French Line)",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 19 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -237,12 +292,12 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Napoleon III",
-        "slug": "ss-napoleon-iii",
-        "url": "/ships/ss-napoleon-iii",
-        "operator": "Compagnie Générale Transatlantique (French Line)",
+        "ship": "RMS Canopic",
+        "slug": "rms-canopic",
+        "url": "/ships/rms-canopic",
+        "operator": "Dominion Line",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 18 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 7 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -259,6 +314,15 @@
         "slug": "ss-corsican",
         "url": "/ships/ss-corsican",
         "operator": "Allan Line",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS City of Rome (1881)",
+        "slug": "ss-city-of-rome",
+        "url": "/ships/ss-city-of-rome",
+        "operator": "Inman Line",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -425,11 +489,6 @@
       },
       {
         "operator": "Inman & International Steamship Co.",
-        "shipCount": 1,
-        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
-      },
-      {
-        "operator": "Inman Line",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -604,6 +663,11 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
+        "operator": "Inman Line",
+        "shipCount": 2,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
         "operator": "Italia Flotte Riunite / Italian Line",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
@@ -655,6 +719,33 @@
         "coveragePct": 88.5
       },
       {
+        "name": "Atlantic Transport Line",
+        "total": 5,
+        "covered": 2,
+        "uncovered": [
+          {
+            "name": "SS Marquette",
+            "slug": "ss-marquette",
+            "url": "/ships/ss-marquette",
+            "launchYear": "1897"
+          },
+          {
+            "name": "SS Minnehaha (1900)",
+            "slug": "ss-minnehaha",
+            "url": "/ships/ss-minnehaha",
+            "launchYear": "1900"
+          },
+          {
+            "name": "SS Poland",
+            "slug": "ss-poland",
+            "url": "/ships/ss-poland",
+            "launchYear": "1897"
+          }
+        ],
+        "uncoveredCount": 3,
+        "coveragePct": 40
+      },
+      {
         "name": "British and North American Royal Mail Steam Packet Company (Cunard)",
         "total": 4,
         "covered": 1,
@@ -682,25 +773,25 @@
         "coveragePct": 25
       },
       {
-        "name": "Atlantic Transport Line",
-        "total": 4,
-        "covered": 2,
+        "name": "Compagnie Générale Transatlantique (French Line)",
+        "total": 19,
+        "covered": 17,
         "uncovered": [
           {
-            "name": "SS Marquette",
-            "slug": "ss-marquette",
-            "url": "/ships/ss-marquette",
-            "launchYear": "1897"
+            "name": "SS La Bourgogne",
+            "slug": "ss-la-bourgogne",
+            "url": "/ships/ss-la-bourgogne",
+            "launchYear": "1885"
           },
           {
-            "name": "SS Poland",
-            "slug": "ss-poland",
-            "url": "/ships/ss-poland",
-            "launchYear": "1897"
+            "name": "SS Napoleon III",
+            "slug": "ss-napoleon-iii",
+            "url": "/ships/ss-napoleon-iii",
+            "launchYear": "1865"
           }
         ],
         "uncoveredCount": 2,
-        "coveragePct": 50
+        "coveragePct": 89.5
       },
       {
         "name": "White Star Line",
@@ -733,19 +824,19 @@
         "coveragePct": 97.4
       },
       {
-        "name": "Compagnie Générale Transatlantique (French Line)",
-        "total": 18,
-        "covered": 17,
+        "name": "Dominion Line",
+        "total": 7,
+        "covered": 6,
         "uncovered": [
           {
-            "name": "SS Napoleon III",
-            "slug": "ss-napoleon-iii",
-            "url": "/ships/ss-napoleon-iii",
-            "launchYear": "1865"
+            "name": "RMS Canopic",
+            "slug": "rms-canopic",
+            "url": "/ships/rms-canopic",
+            "launchYear": "1900"
           }
         ],
         "uncoveredCount": 1,
-        "coveragePct": 94.4
+        "coveragePct": 85.7
       },
       {
         "name": "Anchor Line",
@@ -776,6 +867,21 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 66.7
+      },
+      {
+        "name": "Inman Line",
+        "total": 2,
+        "covered": 1,
+        "uncovered": [
+          {
+            "name": "SS City of Rome (1881)",
+            "slug": "ss-city-of-rome",
+            "url": "/ships/ss-city-of-rome",
+            "launchYear": "1881"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 50
       },
       {
         "name": "Anchor-Donaldson Line; later Donaldson Atlantic Line and Donaldson Brothers & Black management in postwar service",
@@ -1002,14 +1108,6 @@
         "name": "United States Lines",
         "total": 7,
         "covered": 7,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
-        "name": "Dominion Line",
-        "total": 6,
-        "covered": 6,
         "uncovered": [],
         "uncoveredCount": 0,
         "coveragePct": 100
@@ -1271,14 +1369,6 @@
         "coveragePct": 100
       },
       {
-        "name": "Inman Line",
-        "total": 1,
-        "covered": 1,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
         "name": "Norwegian America Line",
         "total": 1,
         "covered": 1,
@@ -1484,10 +1574,10 @@
       },
       {
         "era": "Late Victorian expansion",
-        "shipCount": 41,
+        "shipCount": 43,
         "relationshipCovered": 35,
-        "relationshipUncovered": 6,
-        "relationshipCoveragePct": 85.4
+        "relationshipUncovered": 8,
+        "relationshipCoveragePct": 81.4
       },
       {
         "era": "Interwar express-liner era",
@@ -1505,10 +1595,10 @@
       },
       {
         "era": "Edwardian / pre-war peak",
-        "shipCount": 92,
+        "shipCount": 94,
         "relationshipCovered": 85,
-        "relationshipUncovered": 7,
-        "relationshipCoveragePct": 92.4
+        "relationshipUncovered": 9,
+        "relationshipCoveragePct": 90.4
       }
     ],
     "decades": [
@@ -1549,10 +1639,10 @@
       },
       {
         "decade": "1880s",
-        "shipCount": 13,
+        "shipCount": 15,
         "relationshipCovered": 10,
-        "relationshipUncovered": 3,
-        "relationshipCoveragePct": 76.9
+        "relationshipUncovered": 5,
+        "relationshipCoveragePct": 66.7
       },
       {
         "decade": "1890s",
@@ -1563,10 +1653,10 @@
       },
       {
         "decade": "1900s",
-        "shipCount": 70,
+        "shipCount": 72,
         "relationshipCovered": 64,
-        "relationshipUncovered": 6,
-        "relationshipCoveragePct": 91.4
+        "relationshipUncovered": 8,
+        "relationshipCoveragePct": 88.9
       },
       {
         "decade": "1910s",
@@ -1628,6 +1718,13 @@
       "launchYear": "1938"
     },
     {
+      "name": "RMS Canopic",
+      "slug": "rms-canopic",
+      "url": "/ships/rms-canopic",
+      "operator": "Dominion Line",
+      "launchYear": "1900"
+    },
+    {
       "name": "SS Arabia (1852)",
       "slug": "ss-arabia-1852",
       "url": "/ships/ss-arabia-1852",
@@ -1654,6 +1751,13 @@
       "url": "/ships/ss-brasilia",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1897"
+    },
+    {
+      "name": "SS City of Rome (1881)",
+      "slug": "ss-city-of-rome",
+      "url": "/ships/ss-city-of-rome",
+      "operator": "Inman Line",
+      "launchYear": "1881"
     },
     {
       "name": "SS Coptic",
@@ -1705,6 +1809,13 @@
       "launchYear": "1899"
     },
     {
+      "name": "SS La Bourgogne",
+      "slug": "ss-la-bourgogne",
+      "url": "/ships/ss-la-bourgogne",
+      "operator": "Compagnie Générale Transatlantique (French Line)",
+      "launchYear": "1885"
+    },
+    {
       "name": "SS Lake Michigan",
       "slug": "ss-lake-michigan",
       "url": "/ships/ss-lake-michigan",
@@ -1731,6 +1842,13 @@
       "url": "/ships/ss-marquette",
       "operator": "Atlantic Transport Line",
       "launchYear": "1897"
+    },
+    {
+      "name": "SS Minnehaha (1900)",
+      "slug": "ss-minnehaha",
+      "url": "/ships/ss-minnehaha",
+      "operator": "Atlantic Transport Line",
+      "launchYear": "1900"
     },
     {
       "name": "SS Moltke",

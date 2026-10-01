@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-01T08:35:28.900Z",
+  "generatedAt": "2026-10-01T19:05:12.921Z",
   "summary": {
-    "shipGuides": 346,
-    "canonicalBuilders": 85,
-    "guidesWithBuilder": 346
+    "shipGuides": 350,
+    "canonicalBuilders": 86,
+    "guidesWithBuilder": 350
   },
   "builders": [
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 79,
+      "shipCount": 81,
       "locations": [
         "Belfast",
         "Belfast, Ireland",
@@ -183,10 +183,24 @@
           "builderRaw": "Harland & Wolff, Belfast · Yard No. 324"
         },
         {
+          "name": "RMS Canopic",
+          "url": "/ships/rms-canopic",
+          "launchYear": "1900",
+          "operator": "Dominion Line",
+          "builderRaw": "Harland & Wolff, Belfast"
+        },
+        {
           "name": "SS Commonwealth",
           "url": "/ships/ss-commonwealth",
           "launchYear": "1900",
           "operator": "Dominion Line",
+          "builderRaw": "Harland & Wolff, Belfast"
+        },
+        {
+          "name": "SS Minnehaha (1900)",
+          "url": "/ships/ss-minnehaha",
+          "launchYear": "1900",
+          "operator": "Atlantic Transport Line",
           "builderRaw": "Harland & Wolff, Belfast"
         },
         {
@@ -2357,6 +2371,33 @@
       ]
     },
     {
+      "id": "barrow-shipbuilding-company",
+      "name": "Barrow Shipbuilding Company",
+      "shipCount": 2,
+      "locations": [
+        "Barrow-in-Furness",
+        "Barrow-in-Furness, England"
+      ],
+      "firstLaunchYear": 1881,
+      "lastLaunchYear": 1882,
+      "ships": [
+        {
+          "name": "SS City of Rome (1881)",
+          "url": "/ships/ss-city-of-rome",
+          "launchYear": "1881",
+          "operator": "Inman Line",
+          "builderRaw": "Barrow Shipbuilding Company, Barrow-in-Furness, England"
+        },
+        {
+          "name": "SS La Normandie",
+          "url": "/ships/ss-la-normandie",
+          "launchYear": "1882",
+          "operator": "Compagnie Générale Transatlantique / French Line",
+          "builderRaw": "Barrow Shipbuilding Company, Barrow-in-Furness"
+        }
+      ]
+    },
+    {
       "id": "bethlehem-steel-corporation-fore-river-shipyard",
       "name": "Bethlehem Steel Corporation, Fore River Shipyard",
       "shipCount": 2,
@@ -2679,25 +2720,6 @@
           "launchYear": "1951",
           "operator": "Société Générale de Transports Maritimes (SGTM)",
           "builderRaw": "Ateliers et Chantiers de Bretagne, Saint-Nazaire"
-        }
-      ]
-    },
-    {
-      "id": "barrow-shipbuilding-company",
-      "name": "Barrow Shipbuilding Company",
-      "shipCount": 1,
-      "locations": [
-        "Barrow-in-Furness"
-      ],
-      "firstLaunchYear": 1882,
-      "lastLaunchYear": 1882,
-      "ships": [
-        {
-          "name": "SS La Normandie",
-          "url": "/ships/ss-la-normandie",
-          "launchYear": "1882",
-          "operator": "Compagnie Générale Transatlantique / French Line",
-          "builderRaw": "Barrow Shipbuilding Company, Barrow-in-Furness"
         }
       ]
     },
@@ -3363,6 +3385,25 @@
           "launchYear": "1913",
           "operator": "Cunard Line",
           "builderRaw": "Scotts Shipbuilding & Engineering Co. Ltd., Greenock"
+        }
+      ]
+    },
+    {
+      "id": "societe-nouvelle-des-forges-et-chantiers-de-la-mediterranee",
+      "name": "Société Nouvelle des Forges et Chantiers de la Méditerranée",
+      "shipCount": 1,
+      "locations": [
+        "La Seyne-sur-Mer, France"
+      ],
+      "firstLaunchYear": 1885,
+      "lastLaunchYear": 1885,
+      "ships": [
+        {
+          "name": "SS La Bourgogne",
+          "url": "/ships/ss-la-bourgogne",
+          "launchYear": "1885",
+          "operator": "Compagnie Générale Transatlantique (French Line)",
+          "builderRaw": "Société Nouvelle des Forges et Chantiers de la Méditerranée, La Seyne-sur-Mer, France"
         }
       ]
     },

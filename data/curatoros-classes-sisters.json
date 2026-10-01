@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:35:31.535Z",
+  "generatedAt": "2026-10-01T19:05:15.062Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 346,
+    "shipGuides": 350,
     "guidesWithExplicitClass": 18,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 42,
-    "unresolvedSisterMentions": 11
+    "explicitSisterLinks": 43,
+    "unresolvedSisterMentions": 13
   },
   "classes": [
     {
@@ -620,6 +620,19 @@
     },
     {
       "a": {
+        "name": "SS La Bourgogne",
+        "path": "ships/ss-la-bourgogne.html",
+        "url": "/ships/ss-la-bourgogne"
+      },
+      "b": {
+        "name": "SS La Bretagne",
+        "path": "ships/ss-la-bretagne.html",
+        "url": "/ships/ss-la-bretagne"
+      },
+      "evidenceFrom": "ships/ss-la-bourgogne.html"
+    },
+    {
+      "a": {
         "name": "RMS Majestic (1889)",
         "path": "ships/ss-majestic-1889.html",
         "url": "/ships/ss-majestic-1889"
@@ -796,6 +809,18 @@
       "ship": "TSS Hibernia (1899)",
       "path": "ships/ss-hibernia.html",
       "mentioned": "Anglia",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS La Bourgogne",
+      "path": "ships/ss-la-bourgogne.html",
+      "mentioned": "La Champagne",
+      "candidateCount": 0
+    },
+    {
+      "ship": "SS La Bourgogne",
+      "path": "ships/ss-la-bourgogne.html",
+      "mentioned": "La Gascogne",
       "candidateCount": 0
     },
     {
@@ -1162,6 +1187,13 @@
       "sisters": [
         "Lucania"
       ]
+    },
+    {
+      "name": "RMS Canopic",
+      "path": "ships/rms-canopic.html",
+      "url": "/ships/rms-canopic",
+      "classes": [],
+      "sisters": []
     },
     {
       "name": "RMS Carinthia (1956)",
@@ -2025,6 +2057,13 @@
       ]
     },
     {
+      "name": "SS City of Rome (1881)",
+      "path": "ships/ss-city-of-rome.html",
+      "url": "/ships/ss-city-of-rome",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "SS Cleveland",
       "path": "ships/ss-cleveland.html",
       "url": "/ships/ss-cleveland",
@@ -2530,6 +2569,17 @@
       "sisters": []
     },
     {
+      "name": "SS La Bourgogne",
+      "path": "ships/ss-la-bourgogne.html",
+      "url": "/ships/ss-la-bourgogne",
+      "classes": [],
+      "sisters": [
+        "La Champagne",
+        "La Bretagne",
+        "La Gascogne"
+      ]
+    },
+    {
       "name": "SS La Bretagne",
       "path": "ships/ss-la-bretagne.html",
       "url": "/ships/ss-la-bretagne",
@@ -2754,6 +2804,13 @@
       "sisters": [
         "St. Louis"
       ]
+    },
+    {
+      "name": "SS Minnehaha (1900)",
+      "path": "ships/ss-minnehaha.html",
+      "url": "/ships/ss-minnehaha",
+      "classes": [],
+      "sisters": []
     },
     {
       "name": "SS Minnesota",

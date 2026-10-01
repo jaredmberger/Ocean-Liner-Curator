@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T08:35:28.900Z",
+  "generatedAt": "2026-10-01T19:05:12.921Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 358,
-    "shipGuides": 346,
-    "canonicalBuilders": 85,
-    "guidesWithBuilder": 346,
+    "trackedShipHtmlFiles": 362,
+    "shipGuides": 350,
+    "canonicalBuilders": 86,
+    "guidesWithBuilder": 350,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
     "guidesMissingLaunch": 2,
-    "builderVariantGroups": 35,
+    "builderVariantGroups": 36,
     "suspiciousLaunchDatesWithoutYear": 0
   },
   "missing": {
@@ -33,7 +33,7 @@
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 79,
+      "shipCount": 81,
       "firstLaunchYear": 1870,
       "lastLaunchYear": 1960,
       "locations": [
@@ -351,7 +351,7 @@
         "Harland & Wolff, Queen's Island, Belfast · yard no. 352",
         "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
       ],
-      "shipCount": 79
+      "shipCount": 81
     },
     {
       "id": "john-brown-and-company",
@@ -830,6 +830,18 @@
       "shipCount": 2
     },
     {
+      "id": "barrow-shipbuilding-company",
+      "name": "Barrow Shipbuilding Company",
+      "names": [
+        "Barrow Shipbuilding Company"
+      ],
+      "rawValues": [
+        "Barrow Shipbuilding Company, Barrow-in-Furness",
+        "Barrow Shipbuilding Company, Barrow-in-Furness, England"
+      ],
+      "shipCount": 2
+    },
+    {
       "id": "bethlehem-steel-corporation-fore-river-shipyard",
       "name": "Bethlehem Steel Corporation, Fore River Shipyard",
       "names": [
@@ -977,17 +989,6 @@
       ],
       "rawValues": [
         "Ateliers et Chantiers de Bretagne, Saint-Nazaire"
-      ],
-      "shipCount": 1
-    },
-    {
-      "id": "barrow-shipbuilding-company",
-      "name": "Barrow Shipbuilding Company",
-      "names": [
-        "Barrow Shipbuilding Company"
-      ],
-      "rawValues": [
-        "Barrow Shipbuilding Company, Barrow-in-Furness"
       ],
       "shipCount": 1
     },
@@ -1373,6 +1374,17 @@
       ],
       "rawValues": [
         "Scotts Shipbuilding & Engineering Co. Ltd., Greenock"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "societe-nouvelle-des-forges-et-chantiers-de-la-mediterranee",
+      "name": "Société Nouvelle des Forges et Chantiers de la Méditerranée",
+      "names": [
+        "Société Nouvelle des Forges et Chantiers de la Méditerranée"
+      ],
+      "rawValues": [
+        "Société Nouvelle des Forges et Chantiers de la Méditerranée, La Seyne-sur-Mer, France"
       ],
       "shipCount": 1
     },
@@ -2096,6 +2108,20 @@
           "id": "fairfield-shipbuilding-and-engineering-co",
           "name": "Fairfield Shipbuilding & Engineering Co.",
           "raw": "Fairfield Shipbuilding & Engineering Co., Govan"
+        }
+      ]
+    },
+    {
+      "name": "RMS Canopic",
+      "path": "ships/rms-canopic.html",
+      "url": "/ships/rms-canopic",
+      "launchYear": "1900",
+      "builderRaw": "Harland & Wolff, Belfast",
+      "builders": [
+        {
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast"
         }
       ]
     },
@@ -3715,6 +3741,20 @@
       ]
     },
     {
+      "name": "SS City of Rome (1881)",
+      "path": "ships/ss-city-of-rome.html",
+      "url": "/ships/ss-city-of-rome",
+      "launchYear": "1881",
+      "builderRaw": "Barrow Shipbuilding Company, Barrow-in-Furness, England",
+      "builders": [
+        {
+          "id": "barrow-shipbuilding-company",
+          "name": "Barrow Shipbuilding Company",
+          "raw": "Barrow Shipbuilding Company, Barrow-in-Furness, England"
+        }
+      ]
+    },
+    {
       "name": "SS Cleveland",
       "path": "ships/ss-cleveland.html",
       "url": "/ships/ss-cleveland",
@@ -4667,6 +4707,20 @@
       ]
     },
     {
+      "name": "SS La Bourgogne",
+      "path": "ships/ss-la-bourgogne.html",
+      "url": "/ships/ss-la-bourgogne",
+      "launchYear": "1885",
+      "builderRaw": "Société Nouvelle des Forges et Chantiers de la Méditerranée, La Seyne-sur-Mer, France",
+      "builders": [
+        {
+          "id": "societe-nouvelle-des-forges-et-chantiers-de-la-mediterranee",
+          "name": "Société Nouvelle des Forges et Chantiers de la Méditerranée",
+          "raw": "Société Nouvelle des Forges et Chantiers de la Méditerranée, La Seyne-sur-Mer, France"
+        }
+      ]
+    },
+    {
       "name": "SS La Bretagne",
       "path": "ships/ss-la-bretagne.html",
       "url": "/ships/ss-la-bretagne",
@@ -5083,6 +5137,20 @@
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg, Germany"
+        }
+      ]
+    },
+    {
+      "name": "SS Minnehaha (1900)",
+      "path": "ships/ss-minnehaha.html",
+      "url": "/ships/ss-minnehaha",
+      "launchYear": "1900",
+      "builderRaw": "Harland & Wolff, Belfast",
+      "builders": [
+        {
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast"
         }
       ]
     },
