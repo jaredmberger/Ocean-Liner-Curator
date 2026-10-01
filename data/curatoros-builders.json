@@ -1,23 +1,27 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-30T18:35:45.833Z",
+  "generatedAt": "2026-10-01T03:44:26.669Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 351,
-    "shipGuides": 339,
-    "canonicalBuilders": 83,
-    "guidesWithBuilder": 339,
+    "trackedShipHtmlFiles": 354,
+    "shipGuides": 342,
+    "canonicalBuilders": 84,
+    "guidesWithBuilder": 342,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
-    "guidesMissingLaunch": 1,
-    "builderVariantGroups": 33,
+    "guidesMissingLaunch": 2,
+    "builderVariantGroups": 34,
     "suspiciousLaunchDatesWithoutYear": 0
   },
   "missing": {
     "builder": [],
     "operator": [],
     "launched": [
+      {
+        "ship": "SS Hibernia (1843)",
+        "path": "ships/ss-hibernia-1843.html"
+      },
       {
         "ship": "SS President Roosevelt (1922)",
         "path": "ships/ss-president-roosevelt.html"
@@ -75,9 +79,9 @@
     {
       "id": "blohm-and-voss",
       "name": "Blohm & Voss",
-      "shipCount": 22,
+      "shipCount": 23,
       "firstLaunchYear": 1896,
-      "lastLaunchYear": 1929,
+      "lastLaunchYear": 1935,
       "locations": [
         "Hamburg",
         "Hamburg, Germany"
@@ -401,9 +405,10 @@
         "Blohm & Voss, Hamburg · yard no. 476",
         "Blohm & Voss, Hamburg · yard no. 477",
         "Blohm & Voss, Hamburg · yard no. 479",
+        "Blohm & Voss, Hamburg · yard no. 497",
         "Blohm & Voss, Hamburg, Germany"
       ],
-      "shipCount": 22
+      "shipCount": 23
     },
     {
       "id": "ag-vulcan",
@@ -879,6 +884,18 @@
       "shipCount": 2
     },
     {
+      "id": "robert-steele-and-co",
+      "name": "Robert Steele & Co.",
+      "names": [
+        "Robert Steele & Co."
+      ],
+      "rawValues": [
+        "Robert Steele & Co., Greenock",
+        "Robert Steele & Co., Greenock, Scotland · yard no. 114A"
+      ],
+      "shipCount": 2
+    },
+    {
       "id": "rotterdamsche-droogdok-maatschappij-rdm",
       "name": "Rotterdamsche Droogdok Maatschappij (RDM)",
       "names": [
@@ -1312,13 +1329,13 @@
       "shipCount": 1
     },
     {
-      "id": "robert-steele-and-co",
-      "name": "Robert Steele & Co.",
+      "id": "robert-steele-and-son",
+      "name": "Robert Steele & Son",
       "names": [
-        "Robert Steele & Co."
+        "Robert Steele & Son"
       ],
       "rawValues": [
-        "Robert Steele & Co., Greenock"
+        "Robert Steele & Son, Greenock, Scotland"
       ],
       "shipCount": 1
     },
@@ -3062,6 +3079,20 @@
       ]
     },
     {
+      "name": "SS Asia (1850)",
+      "path": "ships/ss-asia-1850.html",
+      "url": "/ships/ss-asia-1850",
+      "launchYear": "1850",
+      "builderRaw": "Robert Steele & Co., Greenock, Scotland · yard no. 114A",
+      "builders": [
+        {
+          "id": "robert-steele-and-co",
+          "name": "Robert Steele & Co.",
+          "raw": "Robert Steele & Co., Greenock, Scotland · yard no. 114A"
+        }
+      ]
+    },
+    {
       "name": "SS Assyria",
       "path": "ships/ss-assyria.html",
       "url": "/ships/ss-assyria",
@@ -4327,6 +4358,20 @@
       ]
     },
     {
+      "name": "SS Hibernia (1843)",
+      "path": "ships/ss-hibernia-1843.html",
+      "url": "/ships/ss-hibernia-1843",
+      "launchYear": null,
+      "builderRaw": "Robert Steele & Son, Greenock, Scotland",
+      "builders": [
+        {
+          "id": "robert-steele-and-son",
+          "name": "Robert Steele & Son",
+          "raw": "Robert Steele & Son, Greenock, Scotland"
+        }
+      ]
+    },
+    {
       "name": "TSS Hibernia (1899)",
       "path": "ships/ss-hibernia.html",
       "url": "/ships/ss-hibernia",
@@ -5485,6 +5530,20 @@
           "id": "furness-withy-and-co",
           "name": "Furness, Withy & Co.",
           "raw": "Furness, Withy & Co., West Hartlepool, England"
+        }
+      ]
+    },
+    {
+      "name": "SS Potsdam (1935)",
+      "path": "ships/ss-potsdam-1935.html",
+      "url": "/ships/ss-potsdam-1935",
+      "launchYear": "1935",
+      "builderRaw": "Blohm & Voss, Hamburg · yard no. 497",
+      "builders": [
+        {
+          "id": "blohm-and-voss",
+          "name": "Blohm & Voss",
+          "raw": "Blohm & Voss, Hamburg · yard no. 497"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T18:35:47.431Z",
+  "generatedAt": "2026-10-01T03:44:28.372Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,27 +11,27 @@
     ]
   },
   "summary": {
-    "shipGuides": 339,
+    "shipGuides": 342,
     "relationshipCovered": 319,
-    "relationshipUncovered": 20,
-    "relationshipCoveragePct": 94.1,
-    "canonicalOperators": 79,
-    "thinOperators": 51,
-    "canonicalYardLocations": 71,
+    "relationshipUncovered": 23,
+    "relationshipCoveragePct": 93.3,
+    "canonicalOperators": 80,
+    "thinOperators": 52,
+    "canonicalYardLocations": 72,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
     "explicitSisterLinks": 42,
-    "unresolvedSisterMentions": 10,
+    "unresolvedSisterMentions": 11,
     "unresolvedSisterMentionsWithNoArchiveMatch": 5
   },
   "signals": {
     "sisterShipResearchCandidates": [
       {
-        "ship": "RMS Cambria",
-        "path": "ships/rms-cambria-1845.html",
-        "mentioned": "Hibernia",
+        "ship": "SS Asia (1850)",
+        "path": "ships/ss-asia-1850.html",
+        "mentioned": "Africa",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -73,13 +73,6 @@
         "signal": "Ambiguous archive match; identity disambiguation needed"
       },
       {
-        "ship": "RMS Cambria",
-        "path": "ships/rms-cambria-1845.html",
-        "mentioned": "Hibernia",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
         "ship": "RMS Carmania",
         "path": "ships/rms-carmania.html",
         "mentioned": "Caronia",
@@ -92,6 +85,13 @@
         "mentioned": "Britannic",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
+      {
+        "ship": "SS Asia (1850)",
+        "path": "ships/ss-asia-1850.html",
+        "mentioned": "Africa",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
         "ship": "SS Bothnia",
@@ -125,6 +125,13 @@
         "ship": "SS Orion",
         "path": "ships/ss-orion.html",
         "mentioned": "Orcades",
+        "candidateCount": 2,
+        "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
+      {
+        "ship": "SS Scharnhorst",
+        "path": "ships/ss-scharnhorst.html",
+        "mentioned": "Potsdam",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
       },
@@ -185,6 +192,24 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "SS Asia (1850)",
+        "slug": "ss-asia-1850",
+        "url": "/ships/ss-asia-1850",
+        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Hibernia (1843)",
+        "slug": "ss-hibernia-1843",
+        "url": "/ships/ss-hibernia-1843",
+        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Coptic",
         "slug": "ss-coptic",
         "url": "/ships/ss-coptic",
@@ -200,6 +225,15 @@
         "operator": "Cunard Line",
         "signalStrength": "high-context",
         "rationale": "Unlinked ship within a well-represented operator group of 37 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Potsdam (1935)",
+        "slug": "ss-potsdam-1935",
+        "url": "/ships/ss-potsdam-1935",
+        "operator": "Norddeutscher Lloyd (North German Lloyd)",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 21 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -531,6 +565,11 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
+        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "shipCount": 2,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
         "operator": "Compagnie de Navigation Sud-Atlantique",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
@@ -628,6 +667,27 @@
         "coveragePct": 50
       },
       {
+        "name": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "total": 2,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "SS Asia (1850)",
+            "slug": "ss-asia-1850",
+            "url": "/ships/ss-asia-1850",
+            "launchYear": "1850"
+          },
+          {
+            "name": "SS Hibernia (1843)",
+            "slug": "ss-hibernia-1843",
+            "url": "/ships/ss-hibernia-1843",
+            "launchYear": null
+          }
+        ],
+        "uncoveredCount": 2,
+        "coveragePct": 0
+      },
+      {
         "name": "White Star Line",
         "total": 39,
         "covered": 38,
@@ -656,6 +716,21 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 97.3
+      },
+      {
+        "name": "Norddeutscher Lloyd (North German Lloyd)",
+        "total": 21,
+        "covered": 20,
+        "uncovered": [
+          {
+            "name": "SS Potsdam (1935)",
+            "slug": "ss-potsdam-1935",
+            "url": "/ships/ss-potsdam-1935",
+            "launchYear": "1935"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 95.2
       },
       {
         "name": "Compagnie Générale Transatlantique (French Line)",
@@ -851,14 +926,6 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 0
-      },
-      {
-        "name": "Norddeutscher Lloyd (North German Lloyd)",
-        "total": 20,
-        "covered": 20,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
       },
       {
         "name": "P&O",
@@ -1379,18 +1446,18 @@
         "relationshipCoveragePct": 100
       },
       {
-        "era": "Pioneer steam era",
-        "shipCount": 21,
-        "relationshipCovered": 17,
-        "relationshipUncovered": 4,
-        "relationshipCoveragePct": 81
-      },
-      {
         "era": "Postwar liner renaissance",
         "shipCount": 21,
         "relationshipCovered": 21,
         "relationshipUncovered": 0,
         "relationshipCoveragePct": 100
+      },
+      {
+        "era": "Pioneer steam era",
+        "shipCount": 23,
+        "relationshipCovered": 17,
+        "relationshipUncovered": 6,
+        "relationshipCoveragePct": 73.9
       },
       {
         "era": "Late Victorian expansion",
@@ -1401,10 +1468,10 @@
       },
       {
         "era": "Interwar express-liner era",
-        "shipCount": 46,
+        "shipCount": 47,
         "relationshipCovered": 45,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 97.8
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 95.7
       },
       {
         "era": "Interwar recovery",
@@ -1431,17 +1498,17 @@
       },
       {
         "decade": "1840s",
-        "shipCount": 3,
+        "shipCount": 4,
         "relationshipCovered": 3,
-        "relationshipUncovered": 0,
-        "relationshipCoveragePct": 100
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 75
       },
       {
         "decade": "1850s",
-        "shipCount": 3,
+        "shipCount": 4,
         "relationshipCovered": 2,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 66.7
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 50
       },
       {
         "decade": "1860s",
@@ -1494,10 +1561,10 @@
       },
       {
         "decade": "1930s",
-        "shipCount": 51,
+        "shipCount": 52,
         "relationshipCovered": 49,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 96.1
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 94.2
       },
       {
         "decade": "1940s",
@@ -1545,6 +1612,13 @@
       "launchYear": "1850"
     },
     {
+      "name": "SS Asia (1850)",
+      "slug": "ss-asia-1850",
+      "url": "/ships/ss-asia-1850",
+      "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+      "launchYear": "1850"
+    },
+    {
       "name": "SS Brasilia",
       "slug": "ss-brasilia",
       "url": "/ships/ss-brasilia",
@@ -1578,6 +1652,13 @@
       "url": "/ships/ss-eastland",
       "operator": "Michigan Steamship Company",
       "launchYear": "1903"
+    },
+    {
+      "name": "SS Hibernia (1843)",
+      "slug": "ss-hibernia-1843",
+      "url": "/ships/ss-hibernia-1843",
+      "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+      "launchYear": null
     },
     {
       "name": "TSS Hibernia (1899)",
@@ -1648,6 +1729,13 @@
       "url": "/ships/ss-poland",
       "operator": "Atlantic Transport Line",
       "launchYear": "1897"
+    },
+    {
+      "name": "SS Potsdam (1935)",
+      "slug": "ss-potsdam-1935",
+      "url": "/ships/ss-potsdam-1935",
+      "operator": "Norddeutscher Lloyd (North German Lloyd)",
+      "launchYear": "1935"
     },
     {
       "name": "SS President Lincoln",

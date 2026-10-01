@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-30T18:35:45.833Z",
+  "generatedAt": "2026-10-01T03:44:26.669Z",
   "summary": {
-    "shipGuides": 339,
-    "canonicalBuilders": 83,
-    "guidesWithBuilder": 339
+    "shipGuides": 342,
+    "canonicalBuilders": 84,
+    "guidesWithBuilder": 342
   },
   "builders": [
     {
@@ -774,13 +774,13 @@
     {
       "id": "blohm-and-voss",
       "name": "Blohm & Voss",
-      "shipCount": 22,
+      "shipCount": 23,
       "locations": [
         "Hamburg",
         "Hamburg, Germany"
       ],
       "firstLaunchYear": 1896,
-      "lastLaunchYear": 1929,
+      "lastLaunchYear": 1935,
       "ships": [
         {
           "name": "SS Barbarossa",
@@ -935,6 +935,13 @@
           "launchYear": "1929",
           "operator": "Hamburg-Amerikanische Packetfahrt-Actien-Gesellschaft (HAPAG) / Hamburg America Line",
           "builderRaw": "Blohm & Voss, Hamburg, Germany"
+        },
+        {
+          "name": "SS Potsdam (1935)",
+          "url": "/ships/ss-potsdam-1935",
+          "launchYear": "1935",
+          "operator": "Norddeutscher Lloyd (North German Lloyd)",
+          "builderRaw": "Blohm & Voss, Hamburg · yard no. 497"
         }
       ]
     },
@@ -2458,6 +2465,33 @@
       ]
     },
     {
+      "id": "robert-steele-and-co",
+      "name": "Robert Steele & Co.",
+      "shipCount": 2,
+      "locations": [
+        "Greenock",
+        "Greenock, Scotland"
+      ],
+      "firstLaunchYear": 1844,
+      "lastLaunchYear": 1850,
+      "ships": [
+        {
+          "name": "RMS Cambria",
+          "url": "/ships/rms-cambria-1845",
+          "launchYear": "1844",
+          "operator": "Cunard Line",
+          "builderRaw": "Robert Steele & Co., Greenock"
+        },
+        {
+          "name": "SS Asia (1850)",
+          "url": "/ships/ss-asia-1850",
+          "launchYear": "1850",
+          "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+          "builderRaw": "Robert Steele & Co., Greenock, Scotland · yard no. 114A"
+        }
+      ]
+    },
+    {
       "id": "rotterdamsche-droogdok-maatschappij-rdm",
       "name": "Rotterdamsche Droogdok Maatschappij (RDM)",
       "shipCount": 2,
@@ -3234,21 +3268,21 @@
       ]
     },
     {
-      "id": "robert-steele-and-co",
-      "name": "Robert Steele & Co.",
+      "id": "robert-steele-and-son",
+      "name": "Robert Steele & Son",
       "shipCount": 1,
       "locations": [
-        "Greenock"
+        "Greenock, Scotland"
       ],
-      "firstLaunchYear": 1844,
-      "lastLaunchYear": 1844,
+      "firstLaunchYear": null,
+      "lastLaunchYear": null,
       "ships": [
         {
-          "name": "RMS Cambria",
-          "url": "/ships/rms-cambria-1845",
-          "launchYear": "1844",
-          "operator": "Cunard Line",
-          "builderRaw": "Robert Steele & Co., Greenock"
+          "name": "SS Hibernia (1843)",
+          "url": "/ships/ss-hibernia-1843",
+          "launchYear": null,
+          "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+          "builderRaw": "Robert Steele & Son, Greenock, Scotland"
         }
       ]
     },

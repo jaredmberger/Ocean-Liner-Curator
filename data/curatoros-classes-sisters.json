@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T18:35:47.381Z",
+  "generatedAt": "2026-10-01T03:44:28.319Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 339,
+    "shipGuides": 342,
     "guidesWithExplicitClass": 18,
     "canonicalClasses": 10,
     "explicitSisterLinks": 42,
-    "unresolvedSisterMentions": 10
+    "unresolvedSisterMentions": 11
   },
   "classes": [
     {
@@ -292,6 +292,19 @@
         "url": "/ships/ss-germanic"
       },
       "evidenceFrom": "ships/rms-britannic-1874.html"
+    },
+    {
+      "a": {
+        "name": "RMS Cambria",
+        "path": "ships/rms-cambria-1845.html",
+        "url": "/ships/rms-cambria-1845"
+      },
+      "b": {
+        "name": "SS Hibernia (1843)",
+        "path": "ships/ss-hibernia-1843.html",
+        "url": "/ships/ss-hibernia-1843"
+      },
+      "evidenceFrom": "ships/rms-cambria-1845.html"
     },
     {
       "a": {
@@ -724,19 +737,6 @@
     },
     {
       "a": {
-        "name": "SS Scharnhorst",
-        "path": "ships/ss-scharnhorst.html",
-        "url": "/ships/ss-scharnhorst"
-      },
-      "b": {
-        "name": "SS Potsdam (1900)",
-        "path": "ships/ss-potsdam.html",
-        "url": "/ships/ss-potsdam"
-      },
-      "evidenceFrom": "ships/ss-scharnhorst.html"
-    },
-    {
-      "a": {
         "name": "SS Veendam",
         "path": "ships/ss-veendam.html",
         "url": "/ships/ss-veendam"
@@ -757,12 +757,6 @@
       "candidateCount": 2
     },
     {
-      "ship": "RMS Cambria",
-      "path": "ships/rms-cambria-1845.html",
-      "mentioned": "Hibernia",
-      "candidateCount": 0
-    },
-    {
       "ship": "RMS Carmania",
       "path": "ships/rms-carmania.html",
       "mentioned": "Caronia",
@@ -773,6 +767,12 @@
       "path": "ships/rms-olympic.html",
       "mentioned": "Britannic",
       "candidateCount": 2
+    },
+    {
+      "ship": "SS Asia (1850)",
+      "path": "ships/ss-asia-1850.html",
+      "mentioned": "Africa",
+      "candidateCount": 0
     },
     {
       "ship": "SS Bothnia",
@@ -802,6 +802,12 @@
       "ship": "SS Orion",
       "path": "ships/ss-orion.html",
       "mentioned": "Orcades",
+      "candidateCount": 2
+    },
+    {
+      "ship": "SS Scharnhorst",
+      "path": "ships/ss-scharnhorst.html",
+      "mentioned": "Potsdam",
       "candidateCount": 2
     },
     {
@@ -1680,6 +1686,15 @@
       "sisters": []
     },
     {
+      "name": "SS Asia (1850)",
+      "path": "ships/ss-asia-1850.html",
+      "url": "/ships/ss-asia-1850",
+      "classes": [],
+      "sisters": [
+        "Africa"
+      ]
+    },
+    {
       "name": "SS Assyria",
       "path": "ships/ss-assyria.html",
       "url": "/ships/ss-assyria",
@@ -2358,6 +2373,13 @@
       "sisters": []
     },
     {
+      "name": "SS Hibernia (1843)",
+      "path": "ships/ss-hibernia-1843.html",
+      "url": "/ships/ss-hibernia-1843",
+      "classes": [],
+      "sisters": []
+    },
+    {
       "name": "TSS Hibernia (1899)",
       "path": "ships/ss-hibernia.html",
       "url": "/ships/ss-hibernia",
@@ -2972,6 +2994,13 @@
       "name": "SS Poland",
       "path": "ships/ss-poland.html",
       "url": "/ships/ss-poland",
+      "classes": [],
+      "sisters": []
+    },
+    {
+      "name": "SS Potsdam (1935)",
+      "path": "ships/ss-potsdam-1935.html",
+      "url": "/ships/ss-potsdam-1935",
       "classes": [],
       "sisters": []
     },

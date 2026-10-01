@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T18:35:46.622Z",
+  "generatedAt": "2026-10-01T03:44:27.541Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 339,
-    "guidesWithServiceStart": 333,
-    "guidesWithExplicitServiceEnd": 264,
+    "shipGuides": 342,
+    "guidesWithServiceStart": 336,
+    "guidesWithExplicitServiceEnd": 266,
     "eras": 10,
     "decades": 15
   },
@@ -1249,7 +1249,7 @@
     },
     {
       "name": "Interwar express-liner era",
-      "shipCount": 46,
+      "shipCount": 47,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -1495,6 +1495,13 @@
           "url": "/ships/ss-orion",
           "serviceStartYear": "1935",
           "serviceEndYear": "1963"
+        },
+        {
+          "name": "SS Potsdam (1935)",
+          "path": "ships/ss-potsdam-1935.html",
+          "url": "/ships/ss-potsdam-1935",
+          "serviceStartYear": "1935",
+          "serviceEndYear": "1976"
         },
         {
           "name": "SS President Coolidge",
@@ -1863,7 +1870,7 @@
     },
     {
       "name": "Pioneer steam era",
-      "shipCount": 21,
+      "shipCount": 23,
       "ships": [
         {
           "name": "RMS Britannia",
@@ -1913,6 +1920,13 @@
           "url": "/ships/ss-arctic",
           "serviceStartYear": "1850",
           "serviceEndYear": "1854"
+        },
+        {
+          "name": "SS Asia (1850)",
+          "path": "ships/ss-asia-1850.html",
+          "url": "/ships/ss-asia-1850",
+          "serviceStartYear": "1850",
+          "serviceEndYear": "1876"
         },
         {
           "name": "SS Atlantic (1873)",
@@ -1969,6 +1983,13 @@
           "url": "/ships/ss-great-western",
           "serviceStartYear": "1838",
           "serviceEndYear": "1856"
+        },
+        {
+          "name": "SS Hibernia (1843)",
+          "path": "ships/ss-hibernia-1843.html",
+          "url": "/ships/ss-hibernia-1843",
+          "serviceStartYear": "1843",
+          "serviceEndYear": null
         },
         {
           "name": "SS Java",
@@ -3488,7 +3509,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 51,
+      "shipCount": 52,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -3769,6 +3790,13 @@
           "url": "/ships/ss-pasteur",
           "serviceStartYear": "1939",
           "serviceEndYear": "1980"
+        },
+        {
+          "name": "SS Potsdam (1935)",
+          "path": "ships/ss-potsdam-1935.html",
+          "url": "/ships/ss-potsdam-1935",
+          "serviceStartYear": "1935",
+          "serviceEndYear": "1976"
         },
         {
           "name": "SS President Coolidge",
@@ -4739,7 +4767,7 @@
     },
     {
       "name": "1840s",
-      "shipCount": 3,
+      "shipCount": 4,
       "ships": [
         {
           "name": "RMS Britannia",
@@ -4761,12 +4789,19 @@
           "url": "/ships/ss-great-britain-1843",
           "serviceStartYear": "1845",
           "serviceEndYear": null
+        },
+        {
+          "name": "SS Hibernia (1843)",
+          "path": "ships/ss-hibernia-1843.html",
+          "url": "/ships/ss-hibernia-1843",
+          "serviceStartYear": "1843",
+          "serviceEndYear": null
         }
       ]
     },
     {
       "name": "1850s",
-      "shipCount": 3,
+      "shipCount": 4,
       "ships": [
         {
           "name": "RMS Persia",
@@ -4781,6 +4816,13 @@
           "url": "/ships/ss-arctic",
           "serviceStartYear": "1850",
           "serviceEndYear": "1854"
+        },
+        {
+          "name": "SS Asia (1850)",
+          "path": "ships/ss-asia-1850.html",
+          "url": "/ships/ss-asia-1850",
+          "serviceStartYear": "1850",
+          "serviceEndYear": "1876"
         },
         {
           "name": "SS Great Eastern",
@@ -6114,6 +6156,17 @@
       "endEvidence": "Grounded east of Cape Ray, Newfoundland, 13 June 1918; total loss with no deaths"
     },
     {
+      "name": "SS Asia (1850)",
+      "path": "ships/ss-asia-1850.html",
+      "url": "/ships/ss-asia-1850",
+      "launchYear": "1850",
+      "serviceStartYear": "1850",
+      "serviceEndYear": "1876",
+      "era": "Pioneer steam era",
+      "decade": "1850s",
+      "endEvidence": "Destroyed by fire at Bombay, 12 December 1876"
+    },
+    {
       "name": "SS Assyria",
       "path": "ships/ss-assyria.html",
       "url": "/ships/ss-assyria",
@@ -7104,6 +7157,17 @@
       "endEvidence": null
     },
     {
+      "name": "SS Hibernia (1843)",
+      "path": "ships/ss-hibernia-1843.html",
+      "url": "/ships/ss-hibernia-1843",
+      "launchYear": null,
+      "serviceStartYear": "1843",
+      "serviceEndYear": null,
+      "era": "Pioneer steam era",
+      "decade": "1840s",
+      "endEvidence": null
+    },
+    {
       "name": "TSS Hibernia (1899)",
       "path": "ships/ss-hibernia.html",
       "url": "/ships/ss-hibernia",
@@ -8015,6 +8079,17 @@
       "era": null,
       "decade": null,
       "endEvidence": "1925, briefly receiving the name Natale, and was broken up"
+    },
+    {
+      "name": "SS Potsdam (1935)",
+      "path": "ships/ss-potsdam-1935.html",
+      "url": "/ships/ss-potsdam-1935",
+      "launchYear": "1935",
+      "serviceStartYear": "1935",
+      "serviceEndYear": "1976",
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": "withdrawn and scrapped at Gadani in 1976"
     },
     {
       "name": "SS Potsdam (1900)",
