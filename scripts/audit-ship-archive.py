@@ -521,6 +521,11 @@ def main() -> None:
             print(f"Operator normalization warnings: {len(operator_items)}")
             for item in operator_items:
                 print(f"OPERATOR_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        identity_items = [item for item in warnings if item.get("code") in {"card-h1-name-mismatch", "card-title-name-mismatch"}]
+        if identity_items:
+            print(f"Identity naming warnings: {len(identity_items)}")
+            for item in identity_items:
+                print(f"IDENTITY_WARNING: {json.dumps(item, ensure_ascii=False)}")
         warning_counts = Counter(item.get("code", "unknown") for item in warnings)
         print("Remaining warning categories:")
         for code, count in sorted(warning_counts.items(), key=lambda item: (-item[1], item[0])):
