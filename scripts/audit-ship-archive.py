@@ -550,6 +550,11 @@ def main() -> None:
             print(f"Identity naming warnings: {len(identity_items)}")
             for item in identity_items:
                 print(f"IDENTITY_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        multi_image_items = [item for item in warnings if item.get("code") == "multiple-ship-image-references"]
+        if multi_image_items:
+            print(f"Multiple ship-image warnings: {len(multi_image_items)}")
+            for item in multi_image_items:
+                print(f"MULTI_IMAGE_WARNING: {json.dumps(item, ensure_ascii=False)}")
         warning_counts = Counter(item.get("code", "unknown") for item in warnings)
         print("Remaining warning categories:")
         for code, count in sorted(warning_counts.items(), key=lambda item: (-item[1], item[0])):
