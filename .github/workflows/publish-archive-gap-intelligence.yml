@@ -15,6 +15,7 @@ on:
       - 'tools/search/era-service-intelligence.mjs'
       - 'tools/search/class-sister-intelligence.mjs'
       - 'tools/search/archive-gap-intelligence.mjs'
+      - 'tools/search/inbound-link-intelligence.mjs'
       - 'tools/search/package.json'
       - 'tools/search/package-lock.json'
       - '.github/workflows/publish-archive-gap-intelligence.yml'
@@ -33,6 +34,7 @@ on:
       - 'tools/search/era-service-intelligence.mjs'
       - 'tools/search/class-sister-intelligence.mjs'
       - 'tools/search/archive-gap-intelligence.mjs'
+      - 'tools/search/inbound-link-intelligence.mjs'
       - 'tools/search/package.json'
       - 'tools/search/package-lock.json'
       - '.github/workflows/publish-archive-gap-intelligence.yml'
@@ -68,6 +70,7 @@ jobs:
           node tools/search/era-service-intelligence.mjs
           node tools/search/class-sister-intelligence.mjs
           node tools/search/archive-gap-intelligence.mjs
+          node tools/search/inbound-link-intelligence.mjs
           node <<'NODE'
           const fs = require('fs');
           const audit = JSON.parse(fs.readFileSync('tools/search/dist/builders-audit.json', 'utf8'));
@@ -121,7 +124,8 @@ jobs:
             'data/curatoros-yards.json',
             'data/curatoros-eras.json',
             'data/curatoros-classes-sisters.json',
-            'data/curatoros-archive-gaps.json'
+            'data/curatoros-archive-gaps.json',
+            'data/curatoros-inbound-links.json'
           ];
           for (const file of feeds) {
             const data = JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -130,20 +134,24 @@ jobs:
           }
           const operators = JSON.parse(fs.readFileSync('data/curatoros-operators.json', 'utf8'));
           const gaps = JSON.parse(fs.readFileSync('data/curatoros-archive-gaps.json', 'utf8'));
+          const inbound = JSON.parse(fs.readFileSync('data/curatoros-inbound-links.json', 'utf8'));
           if (operators.summary.shipGuides !== gaps.summary.shipGuides) {
             throw new Error(`CuratorOS guide-count mismatch: operators=${operators.summary.shipGuides}, gaps=${gaps.summary.shipGuides}`);
+          }
+          if (operators.summary.shipGuides !== inbound.summary.shipGuides) {
+            throw new Error(`CuratorOS guide-count mismatch: operators=${operators.summary.shipGuides}, inbound=${inbound.summary.shipGuides}`);
           }
           NODE
 
       - name: Publish changed feeds
         if: github.event_name != 'pull_request'
         run: |
-          if [ -z "$(git status --porcelain -- data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json tools/search/builders-data.json)" ]; then
+          if [ -z "$(git status --porcelain -- data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json data/curatoros-inbound-links.json tools/search/builders-data.json)" ]; then
             echo 'CuratorOS archive intelligence feeds are already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json tools/search/builders-data.json
+          git add data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json data/curatoros-inbound-links.json tools/search/builders-data.json
           git commit -m 'Refresh CuratorOS archive intelligence feeds'
           git push
