@@ -176,8 +176,19 @@ def main() -> None:
     name_groups = defaultdict(list)
     for card in cards:
         name_groups[sort_key(card["name"])].append(card["href"])
+
+    intentional_namesake_groups = {
+        frozenset({
+            "/ships/ss-george-washington-ngl.html",
+            "/ships/ss-george-washington.html",
+        }),
+    }
+
     for name, hrefs in sorted(name_groups.items()):
         if len(hrefs) > 1:
+            href_set = frozenset(hrefs)
+            if href_set in intentional_namesake_groups:
+                continue
             warn("possible-namesake", normalizedName=name, hrefs=hrefs)
 
     breaks = []
