@@ -20,6 +20,7 @@ const queries = [
   'Queen Mary', 'Queen Mary 2',
   'Mauretania', 'Mauretania 1939',
   'Deutschland', 'America',
+  'USL', 'NDL', 'NGL', 'CGT', 'HAL', 'HAPAG', 'NYK', 'CWS',
   'White Star Line', 'The White Star Line',
   'Art Deco', 'interiors', 'immigration', 'troop transport', 'ships used as troop transports',
   'White Star ships',
@@ -74,6 +75,10 @@ assert.equal(byQuery('Mauretania 1939').top[0].title, 'RMS Mauretania (II) (1939
 
 assert.equal(byQuery('Deutschland').top[0].title, 'SS Deutschland (1900)', 'Deutschland should rank its ship guide first');
 assert.equal(byQuery('America').top[0].title, 'SS America (1940)', 'Generic-word ship names should still rank the exact ship guide first');
+
+for (const query of ['USL','NDL','NGL','CGT','HAL','HAPAG','NYK','CWS']) {
+  assert.ok(byQuery(query).count > 0, `Common shipping-line alias should return results: ${query}`);
+}
 
 const whiteStar = byQuery('White Star Line');
 assert.equal(whiteStar.top[0].title, 'White Star Line', 'Exact page-title matches should rank first');

@@ -15,6 +15,21 @@ export function normalizeShipName(value) {
     .trim();
 }
 
+const QUERY_ALIASES = new Map([
+  ['usl', 'United States Lines'],
+  ['ndl', 'North German Lloyd'],
+  ['ngl', 'North German Lloyd'],
+  ['cgt', 'French Line'],
+  ['hal', 'Holland America Line'],
+  ['hapag', 'Hamburg America Line'],
+  ['nyk', 'NYK Line'],
+  ['cws', 'Cunard-White Star Line']
+]);
+
+export function searchAliasFor(value) {
+  return QUERY_ALIASES.get(normalizeSearchKey(value)) || '';
+}
+
 const INTENT_TITLE_ALIASES = new Map([
   ['white star ships', 'White Star Line'],
   ['white star line ships', 'White Star Line'],
@@ -31,13 +46,15 @@ export async function searchArchive(pagefind, term) {
   if (!/[\p{L}\p{N}]/u.test(term)) return {results:[]};
   // Submitted one-word searches must match a word, not shrink to an unrelated prefix.
   const singleWord = /^\S+$/.test(term) && !term.includes('"');
+  const aliasedTerm = searchAliasFor(term);
+  const effectiveTerm = aliasedTerm || term;
   const intentTitle = intentTitleFor(term);
   const [regular, exactShip, exactTitle, intentMatch, strict] = await Promise.all([
-    pagefind.search(term),
-    pagefind.search(null, {filters:{ship:normalizeShipName(term)}}),
-    pagefind.search(null, {filters:{title_key:normalizeTitleKey(term)}}),
+    pagefind.search(effectiveTerm),
+    pagefind.search(null, {filters:{ship:normalizeShipName(effectiveTerm)}}),
+    pagefind.search(null, {filters:{title_key:normalizeTitleKey(effectiveTerm)}}),
     intentTitle ? pagefind.search(null, {filters:{title_key:normalizeTitleKey(intentTitle)}}) : Promise.resolve({results:[]}),
-    singleWord ? pagefind.search(`"${term}"`) : Promise.resolve(null)
+    singleWord ? pagefind.search(`"${effectiveTerm}"`) : Promise.resolve(null)
   ]);
   const seen = new Set();
   const prioritized = [];
