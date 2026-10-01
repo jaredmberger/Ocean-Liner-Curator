@@ -57,6 +57,7 @@
 "/ships/rms-cameronia.html",
 "/ships/rms-campania.html",
 "/ships/ss-canberra.html",
+"/ships/rms-canopic.html",
 "/ships/ss-chusan.html",
 "/ships/ss-cap-arcona.html",
 "/ships/ss-cap-polonio.html",
