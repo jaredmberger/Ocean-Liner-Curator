@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:26:45.805Z",
+  "generatedAt": "2026-10-01T08:30:56.130Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,11 +12,11 @@
   },
   "summary": {
     "shipGuides": 346,
-    "editorialOrphans": 66,
-    "oneEditorialInbound": 163,
+    "editorialOrphans": 59,
+    "oneEditorialInbound": 168,
     "threePlusEditorialInbound": 44,
-    "totalEditorialInboundLinks": 564,
-    "averageEditorialInbound": 1.63
+    "totalEditorialInboundLinks": 573,
+    "averageEditorialInbound": 1.66
   },
   "orphanedShips": [
     {
@@ -185,50 +185,6 @@
       "sources": []
     },
     {
-      "name": "RMS Rangitane (1929)",
-      "slug": "rms-rangitane",
-      "url": "/ships/rms-rangitane",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Rangitata (1929)",
-      "slug": "rms-rangitata",
-      "url": "/ships/rms-rangitata",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Rangitiki (1929)",
-      "slug": "rms-rangitiki",
-      "url": "/ships/rms-rangitiki",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Transylvania",
-      "slug": "rms-transylvania",
-      "url": "/ships/rms-transylvania",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Assyria",
       "slug": "ss-assyria",
       "url": "/ships/ss-assyria",
@@ -309,17 +265,6 @@
       "name": "SS City of New York (1888)",
       "slug": "ss-city-of-new-york-1888",
       "url": "/ships/ss-city-of-new-york-1888",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Columbia",
-      "slug": "ss-columbia",
-      "url": "/ships/ss-columbia",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -526,17 +471,6 @@
       "sources": []
     },
     {
-      "name": "SS Macedonia",
-      "slug": "ss-macedonia",
-      "url": "/ships/ss-macedonia",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Manchuria",
       "slug": "ss-manchuria",
       "url": "/ships/ss-manchuria",
@@ -694,17 +628,6 @@
       "name": "SS Resolute",
       "slug": "ss-resolute",
       "url": "/ships/ss-resolute",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Tuscania (1921)",
-      "slug": "ss-tuscania-1921",
-      "url": "/ships/ss-tuscania-1921",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -1109,25 +1032,6 @@
       ]
     },
     {
-      "name": "RMS Caledonia",
-      "slug": "rms-caledonia",
-      "url": "/ships/rms-caledonia",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/rms-transylvania.html",
-          "sourceRoute": "/ships/rms-transylvania",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Carmania",
       "slug": "rms-carmania",
       "url": "/ships/rms-carmania",
@@ -1375,25 +1279,6 @@
       ]
     },
     {
-      "name": "RMS Lancastria",
-      "slug": "rms-lancastria",
-      "url": "/ships/rms-lancastria",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Laurentic",
       "slug": "rms-laurentic",
       "url": "/ships/rms-laurentic",
@@ -1546,6 +1431,63 @@
       ]
     },
     {
+      "name": "RMS Rangitane (1929)",
+      "slug": "rms-rangitane",
+      "url": "/ships/rms-rangitane",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitata (1929)",
+      "slug": "rms-rangitata",
+      "url": "/ships/rms-rangitata",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitiki (1929)",
+      "slug": "rms-rangitiki",
+      "url": "/ships/rms-rangitiki",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "RMS Republic (1903)",
       "slug": "ss-republic-1903",
       "url": "/ships/ss-republic-1903",
@@ -1599,6 +1541,25 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Transylvania",
+      "slug": "rms-transylvania",
+      "url": "/ships/rms-transylvania",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -2283,6 +2244,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Columbia",
+      "slug": "ss-columbia",
+      "url": "/ships/ss-columbia",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -3005,6 +2985,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Macedonia",
+      "slug": "ss-macedonia",
+      "url": "/ships/ss-macedonia",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -3750,6 +3749,25 @@
       ]
     },
     {
+      "name": "SS Tuscania (1921)",
+      "slug": "ss-tuscania-1921",
+      "url": "/ships/ss-tuscania-1921",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Washington",
       "slug": "ss-washington",
       "url": "/ships/ss-washington",
@@ -4012,50 +4030,6 @@
       "sources": []
     },
     {
-      "name": "RMS Rangitane (1929)",
-      "slug": "rms-rangitane",
-      "url": "/ships/rms-rangitane",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Rangitata (1929)",
-      "slug": "rms-rangitata",
-      "url": "/ships/rms-rangitata",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Rangitiki (1929)",
-      "slug": "rms-rangitiki",
-      "url": "/ships/rms-rangitiki",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Transylvania",
-      "slug": "rms-transylvania",
-      "url": "/ships/rms-transylvania",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Assyria",
       "slug": "ss-assyria",
       "url": "/ships/ss-assyria",
@@ -4136,17 +4110,6 @@
       "name": "SS City of New York (1888)",
       "slug": "ss-city-of-new-york-1888",
       "url": "/ships/ss-city-of-new-york-1888",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Columbia",
-      "slug": "ss-columbia",
-      "url": "/ships/ss-columbia",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4353,17 +4316,6 @@
       "sources": []
     },
     {
-      "name": "SS Macedonia",
-      "slug": "ss-macedonia",
-      "url": "/ships/ss-macedonia",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Manchuria",
       "slug": "ss-manchuria",
       "url": "/ships/ss-manchuria",
@@ -4521,17 +4473,6 @@
       "name": "SS Resolute",
       "slug": "ss-resolute",
       "url": "/ships/ss-resolute",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Tuscania (1921)",
-      "slug": "ss-tuscania-1921",
-      "url": "/ships/ss-tuscania-1921",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4934,25 +4875,6 @@
       ]
     },
     {
-      "name": "RMS Caledonia",
-      "slug": "rms-caledonia",
-      "url": "/ships/rms-caledonia",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/rms-transylvania.html",
-          "sourceRoute": "/ships/rms-transylvania",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Carmania",
       "slug": "rms-carmania",
       "url": "/ships/rms-carmania",
@@ -5200,25 +5122,6 @@
       ]
     },
     {
-      "name": "RMS Lancastria",
-      "slug": "rms-lancastria",
-      "url": "/ships/rms-lancastria",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Laurentic",
       "slug": "rms-laurentic",
       "url": "/ships/rms-laurentic",
@@ -5371,6 +5274,63 @@
       ]
     },
     {
+      "name": "RMS Rangitane (1929)",
+      "slug": "rms-rangitane",
+      "url": "/ships/rms-rangitane",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitata (1929)",
+      "slug": "rms-rangitata",
+      "url": "/ships/rms-rangitata",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitiki (1929)",
+      "slug": "rms-rangitiki",
+      "url": "/ships/rms-rangitiki",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "RMS Republic (1903)",
       "slug": "ss-republic-1903",
       "url": "/ships/ss-republic-1903",
@@ -5424,6 +5384,25 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Transylvania",
+      "slug": "rms-transylvania",
+      "url": "/ships/rms-transylvania",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -6108,6 +6087,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Columbia",
+      "slug": "ss-columbia",
+      "url": "/ships/ss-columbia",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -6830,6 +6828,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Macedonia",
+      "slug": "ss-macedonia",
+      "url": "/ships/ss-macedonia",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -7575,6 +7592,25 @@
       ]
     },
     {
+      "name": "SS Tuscania (1921)",
+      "slug": "ss-tuscania-1921",
+      "url": "/ships/ss-tuscania-1921",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Washington",
       "slug": "ss-washington",
       "url": "/ships/ss-washington",
@@ -7895,6 +7931,31 @@
       ]
     },
     {
+      "name": "RMS Caledonia",
+      "slug": "rms-caledonia",
+      "url": "/ships/rms-caledonia",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/rms-transylvania.html",
+          "sourceRoute": "/ships/rms-transylvania",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "RMS Cambria",
       "slug": "rms-cambria-1845",
       "url": "/ships/rms-cambria-1845",
@@ -8040,6 +8101,31 @@
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "RMS Lancastria",
+      "slug": "rms-lancastria",
+      "url": "/ships/rms-lancastria",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide"
         }
       ]
