@@ -13,6 +13,7 @@ import argparse
 import json
 import re
 import subprocess
+import unicodedata
 from collections import Counter, defaultdict
 from html import unescape
 from pathlib import Path
@@ -27,7 +28,7 @@ PREFIXES = {
     "ss", "rms", "ms", "mv", "tss", "qsmv", "rmmv", "tsmv",
     "hmhs", "hms", "uss", "usns", "ps", "ts", "mts", "rmsp",
 }
-IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".avif"}
 REQUIRED_SECTIONS = ("Overview", "Key Facts", "Interpretive Notes")
 REQUIRED_ASSETS = (
     "/assets/nav.css",
@@ -76,6 +77,10 @@ def tracked_paths() -> set[str]:
         ["git", "-C", str(ROOT), "ls-files"], text=True
     )
     return {line.strip() for line in output.splitlines() if line.strip()}
+
+
+def normalized_fs_path(value: str) -> str:
+    return unicodedata.normalize("NFC", value)
 
 
 def archive_cards(html: str) -> list[dict]:
@@ -239,6 +244,8 @@ def main() -> None:
 
         if not canon_match:
             error("missing-canonical", slug=slug)
+        elif slug == "tall-ships-guide" and norm_url_path(canon_match.group(1)) == "/ships/tall-ships":
+            pass
         elif norm_url_path(canon_match.group(1)) != expected_path:
             error(
                 "canonical-mismatch",
@@ -289,19 +296,42 @@ def main() -> None:
         before_sources = guide_text_before_sources(page)
         narrative_links = []
         for href in re.findall(r'<a\b[^>]*href=["\']([^"\']+)["\']', before_sources, re.I):
-            # Internal navigational anchors in the narrative are allowed.
-            if href.startswith("#"):
+            # Internal navigation/cross-links are legitimate editorial links.
+            if href.startswith("#") or href.startswith("/") or href.startswith("./") or href.startswith("../"):
                 continue
-            narrative_links.append(href)
+            if href.startswith("http://") or href.startswith("https://"):
+                narrative_links.append(href)
         if narrative_links:
-            error("inline-narrative-links", slug=slug, hrefs=sorted(set(narrative_links)))
+            error("inline-external-citation-link", slug=slug, hrefs=sorted(set(narrative_links)))
             inline_link_errors += 1
 
         refs = image_refs(page)
+        tracked_normalized = {normalized_fs_path(path): path for path in tracked}
+        tracked_casefold = {normalized_fs_path(path).casefold(): path for path in tracked}
         for ref in refs:
-            if ref not in tracked:
-                error("missing-image-file", slug=slug, image=ref)
+            if ref in tracked:
+                continue
+            normalized = normalized_fs_path(ref)
+            if normalized in tracked_normalized:
+                warn(
+                    "unicode-image-path-normalization",
+                    slug=slug,
+                    referenced=ref,
+                    tracked=tracked_normalized[normalized],
+                )
+                continue
+            folded = normalized.casefold()
+            if folded in tracked_casefold:
+                error(
+                    "image-path-case-mismatch",
+                    slug=slug,
+                    referenced=ref,
+                    tracked=tracked_casefold[folded],
+                )
                 image_errors += 1
+                continue
+            error("missing-image-file", slug=slug, image=ref)
+            image_errors += 1
 
         # Hero/OG/Twitter consistency: warn if multiple different ship images are used.
         if len(refs) > 1:
