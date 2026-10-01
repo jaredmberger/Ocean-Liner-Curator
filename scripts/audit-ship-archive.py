@@ -381,7 +381,18 @@ def main() -> None:
     referenced_images = set()
     for page in guide_html_by_slug.values():
         referenced_images.update(image_refs(page))
-    orphan_images = sorted(tracked_images - referenced_images)
+
+    def image_candidate_slug(path: str) -> str:
+        stem = Path(path).stem
+        # Common legacy duplicate convention, e.g. "rms-carinthia 2.jpg".
+        stem = re.sub(r"\s+\d+$", "", stem)
+        return stem.casefold()
+
+    orphan_images = sorted(
+        image
+        for image in (tracked_images - referenced_images)
+        if image_candidate_slug(image) in {slug.casefold() for slug in archive_slugs}
+    )
     for image in orphan_images:
         warn("orphan-ship-image", image=image)
 
