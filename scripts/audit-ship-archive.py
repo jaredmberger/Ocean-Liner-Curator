@@ -72,6 +72,13 @@ def sort_key(name: str) -> str:
     }))
 
 
+def identity_key(name: str) -> str:
+    """Compare vessel identity while ignoring prefix and optional year qualifiers."""
+    text = clean(name)
+    text = re.sub(r"\s*\(\d{4}\)\s*$", "", text)
+    return sort_key(text)
+
+
 def tracked_paths() -> set[str]:
     output = subprocess.check_output(
         ["git", "-c", "core.quotePath=false", "-C", str(ROOT), "ls-tree", "-r", "--name-only", "HEAD"], text=True
@@ -245,13 +252,15 @@ def main() -> None:
 
         if not page_h1:
             error("missing-h1", slug=slug)
-        elif sort_key(page_h1) != sort_key(card["name"]):
+        elif identity_key(page_h1) != identity_key(card["name"]):
             warn("card-h1-name-mismatch", slug=slug, card=card["name"], h1=page_h1)
 
         if not page_title:
             error("missing-title", slug=slug)
-        elif sort_key(card["name"]) not in sort_key(page_title):
-            warn("card-title-name-mismatch", slug=slug, card=card["name"], title=page_title)
+        else:
+            title_identity = re.split(r"\s+[—-]\s+Ship Guide\b", page_title, maxsplit=1, flags=re.I)[0]
+            if identity_key(card["name"]) != identity_key(title_identity):
+                warn("card-title-name-mismatch", slug=slug, card=card["name"], title=page_title)
 
         if not canon_match:
             error("missing-canonical", slug=slug)
