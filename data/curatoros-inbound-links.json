@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:30:56.130Z",
+  "generatedAt": "2026-10-01T08:35:33.123Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,11 +12,11 @@
   },
   "summary": {
     "shipGuides": 346,
-    "editorialOrphans": 59,
-    "oneEditorialInbound": 168,
-    "threePlusEditorialInbound": 44,
-    "totalEditorialInboundLinks": 573,
-    "averageEditorialInbound": 1.66
+    "editorialOrphans": 52,
+    "oneEditorialInbound": 169,
+    "threePlusEditorialInbound": 45,
+    "totalEditorialInboundLinks": 587,
+    "averageEditorialInbound": 1.7
   },
   "orphanedShips": [
     {
@@ -152,28 +152,6 @@
       "sources": []
     },
     {
-      "name": "RMS Cameronia",
-      "slug": "rms-cameronia",
-      "url": "/ships/rms-cameronia",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Empress of France",
-      "slug": "ss-empress-of-france",
-      "url": "/ships/ss-empress-of-france",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "RMS Mauretania (II)",
       "slug": "rms-mauretania-ii",
       "url": "/ships/rms-mauretania-ii",
@@ -199,17 +177,6 @@
       "name": "SS Bretagne",
       "slug": "ss-bretagne",
       "url": "/ships/ss-bretagne",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Calgarian",
-      "slug": "ss-calgarian",
-      "url": "/ships/ss-calgarian",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -287,17 +254,6 @@
       "name": "SS Conte Grande",
       "slug": "ss-conte-grande",
       "url": "/ships/ss-conte-grande",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Corsican",
-      "slug": "ss-corsican",
-      "url": "/ships/ss-corsican",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -482,28 +438,6 @@
       "sources": []
     },
     {
-      "name": "SS Marquette",
-      "slug": "ss-marquette",
-      "url": "/ships/ss-marquette",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Mayflower",
-      "slug": "ss-mayflower",
-      "url": "/ships/ss-mayflower",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Minnesota",
       "slug": "ss-minnesota",
       "url": "/ships/ss-minnesota",
@@ -573,17 +507,6 @@
       "name": "SS Pennsylvania",
       "slug": "ss-pennsylvania",
       "url": "/ships/ss-pennsylvania",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Poland",
-      "slug": "ss-poland",
-      "url": "/ships/ss-poland",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -1032,6 +955,25 @@
       ]
     },
     {
+      "name": "RMS Cameronia",
+      "slug": "rms-cameronia",
+      "url": "/ships/rms-cameronia",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "RMS Carmania",
       "slug": "rms-carmania",
       "url": "/ships/rms-carmania",
@@ -1161,6 +1103,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Empress of France",
+      "slug": "ss-empress-of-france",
+      "url": "/ships/ss-empress-of-france",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -1484,25 +1445,6 @@
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
           "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Republic (1903)",
-      "slug": "ss-republic-1903",
-      "url": "/ships/ss-republic-1903",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -1982,28 +1924,28 @@
       ]
     },
     {
-      "name": "SS Calgaric",
-      "slug": "ss-calgaric",
-      "url": "/ships/ss-calgaric",
+      "name": "SS Calgarian",
+      "slug": "ss-calgarian",
+      "url": "/ships/ss-calgarian",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "hub-history": 1
+        "collection": 1
       },
       "sources": [
         {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
     {
-      "name": "SS Canada (1896)",
-      "slug": "ss-canada-1896",
-      "url": "/ships/ss-canada-1896",
+      "name": "SS Calgaric",
+      "slug": "ss-calgaric",
+      "url": "/ships/ss-calgaric",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -2286,25 +2228,6 @@
       ]
     },
     {
-      "name": "SS Commonwealth",
-      "slug": "ss-commonwealth",
-      "url": "/ships/ss-commonwealth",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Comorin (1925)",
       "slug": "ss-comorin",
       "url": "/ships/ss-comorin",
@@ -2396,6 +2319,25 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Corsican",
+      "slug": "ss-corsican",
+      "url": "/ships/ss-corsican",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -3084,6 +3026,44 @@
       ]
     },
     {
+      "name": "SS Marquette",
+      "slug": "ss-marquette",
+      "url": "/ships/ss-marquette",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Mayflower",
+      "slug": "ss-mayflower",
+      "url": "/ships/ss-mayflower",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Michelangelo (1965)",
       "slug": "ss-michelangelo-1965",
       "url": "/ships/ss-michelangelo-1965",
@@ -3099,25 +3079,6 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Minnewaska (1908)",
-      "slug": "ss-minnewaska",
-      "url": "/ships/ss-minnewaska",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -3174,25 +3135,6 @@
         {
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS New England",
-      "slug": "ss-new-england",
-      "url": "/ships/ss-new-england",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
         }
       ]
@@ -3365,6 +3307,25 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Poland",
+      "slug": "ss-poland",
+      "url": "/ships/ss-poland",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -3555,25 +3516,6 @@
           "sourcePath": "ships/ss-conte-grande.html",
           "sourceRoute": "/ships/ss-conte-grande",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Romanic",
-      "slug": "ss-romanic",
-      "url": "/ships/ss-romanic",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -3997,28 +3939,6 @@
       "sources": []
     },
     {
-      "name": "RMS Cameronia",
-      "slug": "rms-cameronia",
-      "url": "/ships/rms-cameronia",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Empress of France",
-      "slug": "ss-empress-of-france",
-      "url": "/ships/ss-empress-of-france",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "RMS Mauretania (II)",
       "slug": "rms-mauretania-ii",
       "url": "/ships/rms-mauretania-ii",
@@ -4044,17 +3964,6 @@
       "name": "SS Bretagne",
       "slug": "ss-bretagne",
       "url": "/ships/ss-bretagne",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Calgarian",
-      "slug": "ss-calgarian",
-      "url": "/ships/ss-calgarian",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4132,17 +4041,6 @@
       "name": "SS Conte Grande",
       "slug": "ss-conte-grande",
       "url": "/ships/ss-conte-grande",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Corsican",
-      "slug": "ss-corsican",
-      "url": "/ships/ss-corsican",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4327,28 +4225,6 @@
       "sources": []
     },
     {
-      "name": "SS Marquette",
-      "slug": "ss-marquette",
-      "url": "/ships/ss-marquette",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Mayflower",
-      "slug": "ss-mayflower",
-      "url": "/ships/ss-mayflower",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Minnesota",
       "slug": "ss-minnesota",
       "url": "/ships/ss-minnesota",
@@ -4418,17 +4294,6 @@
       "name": "SS Pennsylvania",
       "slug": "ss-pennsylvania",
       "url": "/ships/ss-pennsylvania",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Poland",
-      "slug": "ss-poland",
-      "url": "/ships/ss-poland",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4875,6 +4740,25 @@
       ]
     },
     {
+      "name": "RMS Cameronia",
+      "slug": "rms-cameronia",
+      "url": "/ships/rms-cameronia",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "RMS Carmania",
       "slug": "rms-carmania",
       "url": "/ships/rms-carmania",
@@ -5004,6 +4888,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Empress of France",
+      "slug": "ss-empress-of-france",
+      "url": "/ships/ss-empress-of-france",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -5327,25 +5230,6 @@
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
           "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Republic (1903)",
-      "slug": "ss-republic-1903",
-      "url": "/ships/ss-republic-1903",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -5825,28 +5709,28 @@
       ]
     },
     {
-      "name": "SS Calgaric",
-      "slug": "ss-calgaric",
-      "url": "/ships/ss-calgaric",
+      "name": "SS Calgarian",
+      "slug": "ss-calgarian",
+      "url": "/ships/ss-calgarian",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "hub-history": 1
+        "collection": 1
       },
       "sources": [
         {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
     {
-      "name": "SS Canada (1896)",
-      "slug": "ss-canada-1896",
-      "url": "/ships/ss-canada-1896",
+      "name": "SS Calgaric",
+      "slug": "ss-calgaric",
+      "url": "/ships/ss-calgaric",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -6129,25 +6013,6 @@
       ]
     },
     {
-      "name": "SS Commonwealth",
-      "slug": "ss-commonwealth",
-      "url": "/ships/ss-commonwealth",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Comorin (1925)",
       "slug": "ss-comorin",
       "url": "/ships/ss-comorin",
@@ -6239,6 +6104,25 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Corsican",
+      "slug": "ss-corsican",
+      "url": "/ships/ss-corsican",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -6927,6 +6811,44 @@
       ]
     },
     {
+      "name": "SS Marquette",
+      "slug": "ss-marquette",
+      "url": "/ships/ss-marquette",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Mayflower",
+      "slug": "ss-mayflower",
+      "url": "/ships/ss-mayflower",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Michelangelo (1965)",
       "slug": "ss-michelangelo-1965",
       "url": "/ships/ss-michelangelo-1965",
@@ -6942,25 +6864,6 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Minnewaska (1908)",
-      "slug": "ss-minnewaska",
-      "url": "/ships/ss-minnewaska",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -7017,25 +6920,6 @@
         {
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS New England",
-      "slug": "ss-new-england",
-      "url": "/ships/ss-new-england",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
         }
       ]
@@ -7208,6 +7092,25 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Poland",
+      "slug": "ss-poland",
+      "url": "/ships/ss-poland",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -7398,25 +7301,6 @@
           "sourcePath": "ships/ss-conte-grande.html",
           "sourceRoute": "/ships/ss-conte-grande",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Romanic",
-      "slug": "ss-romanic",
-      "url": "/ships/ss-romanic",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -8280,6 +8164,31 @@
       ]
     },
     {
+      "name": "RMS Republic (1903)",
+      "slug": "ss-republic-1903",
+      "url": "/ships/ss-republic-1903",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "RMS Saxonia (1954)",
       "slug": "rms-saxonia",
       "url": "/ships/rms-saxonia",
@@ -8677,6 +8586,56 @@
       ]
     },
     {
+      "name": "SS Canada (1896)",
+      "slug": "ss-canada-1896",
+      "url": "/ships/ss-canada-1896",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Commonwealth",
+      "slug": "ss-commonwealth",
+      "url": "/ships/ss-commonwealth",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Coptic",
       "slug": "ss-coptic",
       "url": "/ships/ss-coptic",
@@ -9050,27 +9009,27 @@
       ]
     },
     {
-      "name": "SS Minnetonka (1902)",
-      "slug": "ss-minnetonka",
-      "url": "/ships/ss-minnetonka",
+      "name": "SS Minnewaska (1908)",
+      "slug": "ss-minnewaska",
+      "url": "/ships/ss-minnewaska",
       "inboundTotal": 3,
       "editorialInbound": 2,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "hub-history": 1,
-        "ship-guide": 1
+        "collection": 1,
+        "hub-history": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ss-minnewaska.html",
-          "sourceRoute": "/ships/ss-minnewaska",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9121,6 +9080,31 @@
           "sourcePath": "ships/ss-montclare.html",
           "sourceRoute": "/ships/ss-montclare",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS New England",
+      "slug": "ss-new-england",
+      "url": "/ships/ss-new-england",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -9391,6 +9375,31 @@
         {
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Romanic",
+      "slug": "ss-romanic",
+      "url": "/ships/ss-romanic",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
         }
       ]
@@ -9991,6 +10000,37 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Minnetonka (1902)",
+      "slug": "ss-minnetonka",
+      "url": "/ships/ss-minnetonka",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ss-minnewaska.html",
+          "sourceRoute": "/ships/ss-minnewaska",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
