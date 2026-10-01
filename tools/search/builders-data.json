@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-01T03:44:26.669Z",
+  "generatedAt": "2026-10-01T03:51:41.866Z",
   "summary": {
-    "shipGuides": 342,
+    "shipGuides": 343,
     "canonicalBuilders": 84,
-    "guidesWithBuilder": 342
+    "guidesWithBuilder": 343
   },
   "builders": [
     {
@@ -2222,6 +2222,40 @@
       ]
     },
     {
+      "id": "robert-steele-and-co",
+      "name": "Robert Steele & Co.",
+      "shipCount": 3,
+      "locations": [
+        "Greenock",
+        "Greenock, Scotland"
+      ],
+      "firstLaunchYear": 1844,
+      "lastLaunchYear": 1852,
+      "ships": [
+        {
+          "name": "RMS Cambria",
+          "url": "/ships/rms-cambria-1845",
+          "launchYear": "1844",
+          "operator": "Cunard Line",
+          "builderRaw": "Robert Steele & Co., Greenock"
+        },
+        {
+          "name": "SS Asia (1850)",
+          "url": "/ships/ss-asia-1850",
+          "launchYear": "1850",
+          "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+          "builderRaw": "Robert Steele & Co., Greenock, Scotland · yard no. 114A"
+        },
+        {
+          "name": "SS Arabia (1852)",
+          "url": "/ships/ss-arabia-1852",
+          "launchYear": "1852",
+          "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+          "builderRaw": "Robert Steele & Co., Greenock, Scotland"
+        }
+      ]
+    },
+    {
       "id": "workman-clark-and-co",
       "name": "Workman, Clark & Co.",
       "shipCount": 3,
@@ -2461,33 +2495,6 @@
           "launchYear": "1861",
           "operator": "Cunard Line",
           "builderRaw": "Robert Napier & Sons, Glasgow"
-        }
-      ]
-    },
-    {
-      "id": "robert-steele-and-co",
-      "name": "Robert Steele & Co.",
-      "shipCount": 2,
-      "locations": [
-        "Greenock",
-        "Greenock, Scotland"
-      ],
-      "firstLaunchYear": 1844,
-      "lastLaunchYear": 1850,
-      "ships": [
-        {
-          "name": "RMS Cambria",
-          "url": "/ships/rms-cambria-1845",
-          "launchYear": "1844",
-          "operator": "Cunard Line",
-          "builderRaw": "Robert Steele & Co., Greenock"
-        },
-        {
-          "name": "SS Asia (1850)",
-          "url": "/ships/ss-asia-1850",
-          "launchYear": "1850",
-          "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
-          "builderRaw": "Robert Steele & Co., Greenock, Scotland · yard no. 114A"
         }
       ]
     },

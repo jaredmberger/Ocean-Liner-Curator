@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T03:44:26.669Z",
+  "generatedAt": "2026-10-01T03:51:41.866Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 354,
-    "shipGuides": 342,
+    "trackedShipHtmlFiles": 355,
+    "shipGuides": 343,
     "canonicalBuilders": 84,
-    "guidesWithBuilder": 342,
+    "guidesWithBuilder": 343,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -780,6 +780,19 @@
       "shipCount": 3
     },
     {
+      "id": "robert-steele-and-co",
+      "name": "Robert Steele & Co.",
+      "names": [
+        "Robert Steele & Co."
+      ],
+      "rawValues": [
+        "Robert Steele & Co., Greenock",
+        "Robert Steele & Co., Greenock, Scotland",
+        "Robert Steele & Co., Greenock, Scotland · yard no. 114A"
+      ],
+      "shipCount": 3
+    },
+    {
       "id": "workman-clark-and-co",
       "name": "Workman, Clark & Co.",
       "names": [
@@ -880,18 +893,6 @@
       ],
       "rawValues": [
         "Robert Napier & Sons, Glasgow"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "robert-steele-and-co",
-      "name": "Robert Steele & Co.",
-      "names": [
-        "Robert Steele & Co."
-      ],
-      "rawValues": [
-        "Robert Steele & Co., Greenock",
-        "Robert Steele & Co., Greenock, Scotland · yard no. 114A"
       ],
       "shipCount": 2
     },
@@ -2991,6 +2992,20 @@
           "id": "ansaldo",
           "name": "Ansaldo",
           "raw": "Ansaldo, Sestri Ponente, Genoa · yard no. 918"
+        }
+      ]
+    },
+    {
+      "name": "SS Arabia (1852)",
+      "path": "ships/ss-arabia-1852.html",
+      "url": "/ships/ss-arabia-1852",
+      "launchYear": "1852",
+      "builderRaw": "Robert Steele & Co., Greenock, Scotland",
+      "builders": [
+        {
+          "id": "robert-steele-and-co",
+          "name": "Robert Steele & Co.",
+          "raw": "Robert Steele & Co., Greenock, Scotland"
         }
       ]
     },

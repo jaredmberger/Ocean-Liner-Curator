@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T03:44:27.541Z",
+  "generatedAt": "2026-10-01T03:51:43.172Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 342,
-    "guidesWithServiceStart": 336,
+    "shipGuides": 343,
+    "guidesWithServiceStart": 337,
     "guidesWithExplicitServiceEnd": 266,
     "eras": 10,
     "decades": 15
@@ -1870,7 +1870,7 @@
     },
     {
       "name": "Pioneer steam era",
-      "shipCount": 23,
+      "shipCount": 24,
       "ships": [
         {
           "name": "RMS Britannia",
@@ -1913,6 +1913,13 @@
           "url": "/ships/ss-adriatic-1872",
           "serviceStartYear": "1872",
           "serviceEndYear": "1899"
+        },
+        {
+          "name": "SS Arabia (1852)",
+          "path": "ships/ss-arabia-1852.html",
+          "url": "/ships/ss-arabia-1852",
+          "serviceStartYear": "1853",
+          "serviceEndYear": null
         },
         {
           "name": "SS Arctic",
@@ -4766,6 +4773,47 @@
       ]
     },
     {
+      "name": "1850s",
+      "shipCount": 5,
+      "ships": [
+        {
+          "name": "RMS Persia",
+          "path": "ships/rms-persia-1855.html",
+          "url": "/ships/rms-persia-1855",
+          "serviceStartYear": "1856",
+          "serviceEndYear": "1872"
+        },
+        {
+          "name": "SS Arabia (1852)",
+          "path": "ships/ss-arabia-1852.html",
+          "url": "/ships/ss-arabia-1852",
+          "serviceStartYear": "1853",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Arctic",
+          "path": "ships/ss-arctic.html",
+          "url": "/ships/ss-arctic",
+          "serviceStartYear": "1850",
+          "serviceEndYear": "1854"
+        },
+        {
+          "name": "SS Asia (1850)",
+          "path": "ships/ss-asia-1850.html",
+          "url": "/ships/ss-asia-1850",
+          "serviceStartYear": "1850",
+          "serviceEndYear": "1876"
+        },
+        {
+          "name": "SS Great Eastern",
+          "path": "ships/ss-great-eastern.html",
+          "url": "/ships/ss-great-eastern",
+          "serviceStartYear": "1859",
+          "serviceEndYear": "1890"
+        }
+      ]
+    },
+    {
       "name": "1840s",
       "shipCount": 4,
       "ships": [
@@ -4796,40 +4844,6 @@
           "url": "/ships/ss-hibernia-1843",
           "serviceStartYear": "1843",
           "serviceEndYear": null
-        }
-      ]
-    },
-    {
-      "name": "1850s",
-      "shipCount": 4,
-      "ships": [
-        {
-          "name": "RMS Persia",
-          "path": "ships/rms-persia-1855.html",
-          "url": "/ships/rms-persia-1855",
-          "serviceStartYear": "1856",
-          "serviceEndYear": "1872"
-        },
-        {
-          "name": "SS Arctic",
-          "path": "ships/ss-arctic.html",
-          "url": "/ships/ss-arctic",
-          "serviceStartYear": "1850",
-          "serviceEndYear": "1854"
-        },
-        {
-          "name": "SS Asia (1850)",
-          "path": "ships/ss-asia-1850.html",
-          "url": "/ships/ss-asia-1850",
-          "serviceStartYear": "1850",
-          "serviceEndYear": "1876"
-        },
-        {
-          "name": "SS Great Eastern",
-          "path": "ships/ss-great-eastern.html",
-          "url": "/ships/ss-great-eastern",
-          "serviceStartYear": "1859",
-          "serviceEndYear": "1890"
         }
       ]
     },
@@ -6088,6 +6102,17 @@
       "era": "Postwar liner renaissance",
       "decade": "1950s",
       "endEvidence": "Sank 26 July 1956 after remaining afloat for roughly 11 hours"
+    },
+    {
+      "name": "SS Arabia (1852)",
+      "path": "ships/ss-arabia-1852.html",
+      "url": "/ships/ss-arabia-1852",
+      "launchYear": "1852",
+      "serviceStartYear": "1853",
+      "serviceEndYear": null,
+      "era": "Pioneer steam era",
+      "decade": "1850s",
+      "endEvidence": null
     },
     {
       "name": "SS Arabic (1921)",

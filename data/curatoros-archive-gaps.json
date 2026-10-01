@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T03:44:28.372Z",
+  "generatedAt": "2026-10-01T03:51:44.472Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,12 +11,12 @@
     ]
   },
   "summary": {
-    "shipGuides": 342,
+    "shipGuides": 343,
     "relationshipCovered": 319,
-    "relationshipUncovered": 23,
-    "relationshipCoveragePct": 93.3,
+    "relationshipUncovered": 24,
+    "relationshipCoveragePct": 93,
     "canonicalOperators": 80,
-    "thinOperators": 52,
+    "thinOperators": 51,
     "canonicalYardLocations": 72,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
@@ -174,19 +174,10 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Marquette",
-        "slug": "ss-marquette",
-        "url": "/ships/ss-marquette",
-        "operator": "Atlantic Transport Line",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Poland",
-        "slug": "ss-poland",
-        "url": "/ships/ss-poland",
-        "operator": "Atlantic Transport Line",
+        "ship": "SS Arabia (1852)",
+        "slug": "ss-arabia-1852",
+        "url": "/ships/ss-arabia-1852",
+        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -205,6 +196,24 @@
         "slug": "ss-hibernia-1843",
         "url": "/ships/ss-hibernia-1843",
         "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Marquette",
+        "slug": "ss-marquette",
+        "url": "/ships/ss-marquette",
+        "operator": "Atlantic Transport Line",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Poland",
+        "slug": "ss-poland",
+        "url": "/ships/ss-poland",
+        "operator": "Atlantic Transport Line",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -565,11 +574,6 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
-        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
-        "shipCount": 2,
-        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
-      },
-      {
         "operator": "Compagnie de Navigation Sud-Atlantique",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
@@ -646,6 +650,33 @@
         "coveragePct": 88.5
       },
       {
+        "name": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "total": 3,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "SS Arabia (1852)",
+            "slug": "ss-arabia-1852",
+            "url": "/ships/ss-arabia-1852",
+            "launchYear": "1852"
+          },
+          {
+            "name": "SS Asia (1850)",
+            "slug": "ss-asia-1850",
+            "url": "/ships/ss-asia-1850",
+            "launchYear": "1850"
+          },
+          {
+            "name": "SS Hibernia (1843)",
+            "slug": "ss-hibernia-1843",
+            "url": "/ships/ss-hibernia-1843",
+            "launchYear": null
+          }
+        ],
+        "uncoveredCount": 3,
+        "coveragePct": 0
+      },
+      {
         "name": "Atlantic Transport Line",
         "total": 4,
         "covered": 2,
@@ -665,27 +696,6 @@
         ],
         "uncoveredCount": 2,
         "coveragePct": 50
-      },
-      {
-        "name": "British and North American Royal Mail Steam Packet Company (Cunard)",
-        "total": 2,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS Asia (1850)",
-            "slug": "ss-asia-1850",
-            "url": "/ships/ss-asia-1850",
-            "launchYear": "1850"
-          },
-          {
-            "name": "SS Hibernia (1843)",
-            "slug": "ss-hibernia-1843",
-            "url": "/ships/ss-hibernia-1843",
-            "launchYear": null
-          }
-        ],
-        "uncoveredCount": 2,
-        "coveragePct": 0
       },
       {
         "name": "White Star Line",
@@ -1454,10 +1464,10 @@
       },
       {
         "era": "Pioneer steam era",
-        "shipCount": 23,
+        "shipCount": 24,
         "relationshipCovered": 17,
-        "relationshipUncovered": 6,
-        "relationshipCoveragePct": 73.9
+        "relationshipUncovered": 7,
+        "relationshipCoveragePct": 70.8
       },
       {
         "era": "Late Victorian expansion",
@@ -1505,10 +1515,10 @@
       },
       {
         "decade": "1850s",
-        "shipCount": 4,
+        "shipCount": 5,
         "relationshipCovered": 2,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 50
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 40
       },
       {
         "decade": "1860s",
@@ -1603,6 +1613,13 @@
       "url": "/ships/qsmv-dominion-monarch",
       "operator": "Shaw, Savill & Albion Line",
       "launchYear": "1938"
+    },
+    {
+      "name": "SS Arabia (1852)",
+      "slug": "ss-arabia-1852",
+      "url": "/ships/ss-arabia-1852",
+      "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+      "launchYear": "1852"
     },
     {
       "name": "SS Arctic",
