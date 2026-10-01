@@ -30,7 +30,7 @@ assert(years.length > 0, 'No ocean-liner archive data-year values found.');
 const firstYear = Math.min(...years);
 const lastYear = Math.max(...years);
 const span = `${firstYear}–${lastYear}`;
-const expectedDescription = `Browse 300+ ocean liner ship guides spanning ${span}, including Cunard, White Star, French Line, and more—curated with evidence-first standards.`;
+const expectedDescription = `Browse 350+ ocean liner ship guides spanning ${span}, including Cunard, White Star, French Line, and more—curated with evidence-first standards.`;
 
 assert(
   html.includes(`<meta name="description" content="${expectedDescription}" />`),
