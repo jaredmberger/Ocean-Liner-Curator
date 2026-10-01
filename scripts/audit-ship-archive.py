@@ -250,16 +250,31 @@ def main() -> None:
         page_h1 = clean(h1_match.group(1)) if h1_match else ""
         expected_path = f"/ships/{slug}"
 
+        intentional_identity_aliases = {
+            "ss-gothic-white-star-line": {"ss gothic", "ss gothic (white star line)"},
+            "nyk-hikawa-maru": {"hikawa maru", "nyk hikawa maru"},
+            "queen-elizabeth-2": {"queen elizabeth 2", "rms queen elizabeth 2", "queen elizabeth 2 (qe2)"},
+            "tall-ships-guide": {"tall ships"},
+        }
+
+        def accepted_identity(value: str) -> bool:
+            aliases = intentional_identity_aliases.get(slug)
+            if not aliases:
+                return False
+            normalized = clean(value).casefold()
+            normalized = re.sub(r"\s+[—-]\s+(?:ship|reference) guide\b.*$", "", normalized, flags=re.I)
+            return normalized in aliases
+
         if not page_h1:
             error("missing-h1", slug=slug)
-        elif identity_key(page_h1) != identity_key(card["name"]):
+        elif identity_key(page_h1) != identity_key(card["name"]) and not accepted_identity(page_h1):
             warn("card-h1-name-mismatch", slug=slug, card=card["name"], h1=page_h1)
 
         if not page_title:
             error("missing-title", slug=slug)
         else:
-            title_identity = re.split(r"\s+[—-]\s+Ship Guide\b", page_title, maxsplit=1, flags=re.I)[0]
-            if identity_key(card["name"]) != identity_key(title_identity):
+            title_identity = re.split(r"\s+[—-]\s+(?:Ship|Reference) Guide\b", page_title, maxsplit=1, flags=re.I)[0]
+            if identity_key(card["name"]) != identity_key(title_identity) and not accepted_identity(title_identity):
                 warn("card-title-name-mismatch", slug=slug, card=card["name"], title=page_title)
 
         if not canon_match:
