@@ -46,11 +46,13 @@ export async function searchArchive(pagefind, term) {
   if (!/[\p{L}\p{N}]/u.test(term)) return {results:[]};
   // Submitted one-word searches must match a word, not shrink to an unrelated prefix.
   const singleWord = /^\S+$/.test(term) && !term.includes('"');
+  const aliasedTerm = searchAliasFor(term);
+  const effectiveTerm = aliasedTerm || term;
   const intentTitle = intentTitleFor(term);
   const [regular, exactShip, exactTitle, intentMatch, strict] = await Promise.all([
-    pagefind.search(term),
-    pagefind.search(null, {filters:{ship:normalizeShipName(term)}}),
-    pagefind.search(null, {filters:{title_key:normalizeTitleKey(term)}}),
+    pagefind.search(effectiveTerm),
+    pagefind.search(null, {filters:{ship:normalizeShipName(effectiveTerm)}}),
+    pagefind.search(null, {filters:{title_key:normalizeTitleKey(effectiveTerm)}}),
     intentTitle ? pagefind.search(null, {filters:{title_key:normalizeTitleKey(intentTitle)}}) : Promise.resolve({results:[]}),
     singleWord ? pagefind.search(`"${effectiveTerm}"`) : Promise.resolve(null)
   ]);
