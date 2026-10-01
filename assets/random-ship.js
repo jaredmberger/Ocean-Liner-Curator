@@ -269,6 +269,7 @@
 "/ships/ss-montrose.html",
 "/ships/ss-montcalm.html",
 "/ships/ss-george-washington-ngl.html",
+"/ships/ss-la-bourgogne.html",
 "/ships/ss-la-bretagne.html",
 "/ships/ss-espagne.html",
 "/ships/ss-cretic.html",
