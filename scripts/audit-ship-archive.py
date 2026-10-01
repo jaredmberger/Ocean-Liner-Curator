@@ -74,7 +74,7 @@ def sort_key(name: str) -> str:
 
 def tracked_paths() -> set[str]:
     output = subprocess.check_output(
-        ["git", "-C", str(ROOT), "ls-files"], text=True
+        ["git", "-C", str(ROOT), "ls-tree", "-r", "--name-only", "HEAD"], text=True
     )
     return {line.strip() for line in output.splitlines() if line.strip()}
 
