@@ -372,9 +372,25 @@ def main() -> None:
             error("missing-image-file", slug=slug, image=ref)
             image_errors += 1
 
-        # Hero/OG/Twitter consistency: warn if multiple different ship images are used.
-        if len(refs) > 1:
-            warn("multiple-ship-image-references", slug=slug, images=sorted(refs))
+        # Hero/OG/Twitter consistency: secondary cutaways, profiles, and gallery
+        # images are legitimate. Warn only when multiple different primary images
+        # are assigned to the hero/social-image roles.
+        primary_refs = set()
+        for raw in re.findall(
+            r'<meta\b[^>]*(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]*content=["\']([^"\']+)["\']'
+            r'|<meta\b[^>]*content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\'](?:og:image|twitter:image)["\']'
+            r'|<img\b[^>]*class=["\'][^"\']*\blogo\b[^"\']*["\'][^>]*src=["\']([^"\']+)["\']',
+            page,
+            re.I,
+        ):
+            candidate = next((part for part in raw if part), "")
+            if not candidate:
+                continue
+            path = urlparse(candidate).path
+            if path.lower().startswith("/ships/") and Path(path).suffix.lower() in IMAGE_EXTS:
+                primary_refs.add(path.lstrip("/"))
+        if len(primary_refs) > 1:
+            warn("multiple-ship-image-references", slug=slug, images=sorted(primary_refs))
 
     stats["inlineLinkErrors"] = inline_link_errors
     stats["imageErrors"] = image_errors
