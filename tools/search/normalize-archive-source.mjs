@@ -49,9 +49,19 @@ assert(
   'Ship Archive badge note is stale; keep the source-level placeholder and let runtime calculate coverage.'
 );
 assert(
+  /function getSearchText\(card\)[\s\S]*?dataset\.aliases[\s\S]*?guide-desc[\s\S]*?\.join\(" "\)/.test(html),
+  'Ship Archive source search must include explicit identity aliases and .guide-desc text.'
+);
+
+for (const alias of ['Vaterland','Imperator','Bismarck','Columbus','Tyrrhenia','Ypiranga','Pittsburgh','Regina','Achille Lauro']) {
+  assert(
+    new RegExp(`data-aliases=["'][^"']*\\b${alias.replace(/[.*+?^$()|[\]\\]/g, '\\assert(
   /function getSearchText\(card\)[\s\S]*?guide-desc[\s\S]*?\.join\(" "\)/.test(html),
   'Ship Archive source search must include .guide-desc text.'
-);
+);')}\\b[^"']*["']`, 'i').test(html),
+    `Ship Archive identity alias is missing: ${alias}`
+  );
+}
 
 // Guard against the historical cross-card regex corruption that once placed a
 // Duchess-class description on SS Adriatic (1872).
