@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:02:29.627Z",
+  "generatedAt": "2026-10-01T08:05:06.437Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,50 +12,17 @@
   },
   "summary": {
     "shipGuides": 346,
-    "editorialOrphans": 125,
-    "oneEditorialInbound": 131,
-    "threePlusEditorialInbound": 38,
-    "totalEditorialInboundLinks": 467,
-    "averageEditorialInbound": 1.35
+    "editorialOrphans": 106,
+    "oneEditorialInbound": 147,
+    "threePlusEditorialInbound": 39,
+    "totalEditorialInboundLinks": 493,
+    "averageEditorialInbound": 1.42
   },
   "orphanedShips": [
-    {
-      "name": "MS Aramis (1932)",
-      "slug": "ms-aramis",
-      "url": "/ships/ms-aramis",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
     {
       "name": "MS Batory (1936)",
       "slug": "ms-batory",
       "url": "/ships/ms-batory",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Félix Roussel (1931)",
-      "slug": "ms-felix-roussel",
-      "url": "/ships/ms-felix-roussel",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Georges Philippar (1932)",
-      "slug": "ms-georges-philippar",
-      "url": "/ships/ms-georges-philippar",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -144,17 +111,6 @@
       "name": "MS Willem Ruys (1947)",
       "slug": "ms-willem-ruys",
       "url": "/ships/ms-willem-ruys",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MV Jean Laborde (1931)",
-      "slug": "mv-jean-laborde",
-      "url": "/ships/mv-jean-laborde",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -427,17 +383,6 @@
       "sources": []
     },
     {
-      "name": "SS André Lebon (1915)",
-      "slug": "ss-andre-lebon",
-      "url": "/ships/ss-andre-lebon",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Arabia (1852)",
       "slug": "ss-arabia-1852",
       "url": "/ships/ss-arabia-1852",
@@ -485,17 +430,6 @@
       "name": "SS Assyria",
       "slug": "ss-assyria",
       "url": "/ships/ss-assyria",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Athos II (1927)",
-      "slug": "ss-athos-ii",
-      "url": "/ships/ss-athos-ii",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -573,39 +507,6 @@
       "name": "SS Cathay",
       "slug": "ss-cathay-1924",
       "url": "/ships/ss-cathay-1924",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Champlain",
-      "slug": "ss-champlain",
-      "url": "/ships/ss-champlain",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Champollion (1925)",
-      "slug": "ss-champollion",
-      "url": "/ships/ss-champollion",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Chicago (1908)",
-      "slug": "ss-chicago-1908",
-      "url": "/ships/ss-chicago-1908",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -746,17 +647,6 @@
       "sources": []
     },
     {
-      "name": "SS De Grasse",
-      "slug": "ss-de-grasse",
-      "url": "/ships/ss-de-grasse",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Drottningholm",
       "slug": "ss-drottningholm",
       "url": "/ships/ss-drottningholm",
@@ -812,31 +702,9 @@
       "sources": []
     },
     {
-      "name": "SS Espagne",
-      "slug": "ss-espagne",
-      "url": "/ships/ss-espagne",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Finland",
       "slug": "ss-finland",
       "url": "/ships/ss-finland",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Flandre",
-      "slug": "ss-flandre",
-      "url": "/ships/ss-flandre",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -944,39 +812,6 @@
       "sources": []
     },
     {
-      "name": "SS La Bretagne",
-      "slug": "ss-la-bretagne",
-      "url": "/ships/ss-la-bretagne",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS La Normandie",
-      "slug": "ss-la-normandie",
-      "url": "/ships/ss-la-normandie",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS La Touraine (1891)",
-      "slug": "ss-la-touraine",
-      "url": "/ships/ss-la-touraine",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Lake Michigan",
       "slug": "ss-lake-michigan",
       "url": "/ships/ss-lake-michigan",
@@ -1035,28 +870,6 @@
       "name": "SS Manchuria",
       "slug": "ss-manchuria",
       "url": "/ships/ss-manchuria",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Maréchal Joffre (1933)",
-      "slug": "ss-marechal-joffre",
-      "url": "/ships/ss-marechal-joffre",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Mariette Pacha (1926)",
-      "slug": "ss-mariette-pacha",
-      "url": "/ships/ss-mariette-pacha",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -1134,17 +947,6 @@
       "name": "SS Morro Castle",
       "slug": "ss-morro-castle",
       "url": "/ships/ss-morro-castle",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Napoleon III",
-      "slug": "ss-napoleon-iii",
-      "url": "/ships/ss-napoleon-iii",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -1307,17 +1109,6 @@
       "sources": []
     },
     {
-      "name": "SS Rochambeau",
-      "slug": "ss-rochambeau",
-      "url": "/ships/ss-rochambeau",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Rotterdam (1959)",
       "slug": "ss-rotterdam-1959",
       "url": "/ships/ss-rotterdam-1959",
@@ -1435,6 +1226,25 @@
       ]
     },
     {
+      "name": "MS Aramis (1932)",
+      "slug": "ms-aramis",
+      "url": "/ships/ms-aramis",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "MS Augustus",
       "slug": "ms-augustus",
       "url": "/ships/ms-augustus",
@@ -1469,6 +1279,44 @@
           "sourcePath": "collections/cabin-liner-transition.html",
           "sourceRoute": "/collections/cabin-liner-transition",
           "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "MS Félix Roussel (1931)",
+      "slug": "ms-felix-roussel",
+      "url": "/ships/ms-felix-roussel",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MS Georges Philippar (1932)",
+      "slug": "ms-georges-philippar",
+      "url": "/ships/ms-georges-philippar",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -1544,6 +1392,25 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MV Jean Laborde (1931)",
+      "slug": "mv-jean-laborde",
+      "url": "/ships/mv-jean-laborde",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -2119,6 +1986,25 @@
       ]
     },
     {
+      "name": "SS André Lebon (1915)",
+      "slug": "ss-andre-lebon",
+      "url": "/ships/ss-andre-lebon",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Arabic (1903)",
       "slug": "ss-arabic",
       "url": "/ships/ss-arabic",
@@ -2190,6 +2076,25 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Athos II (1927)",
+      "slug": "ss-athos-ii",
+      "url": "/ships/ss-athos-ii",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -2423,6 +2328,63 @@
       ]
     },
     {
+      "name": "SS Champlain",
+      "slug": "ss-champlain",
+      "url": "/ships/ss-champlain",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Champollion (1925)",
+      "slug": "ss-champollion",
+      "url": "/ships/ss-champollion",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Chicago (1908)",
+      "slug": "ss-chicago-1908",
+      "url": "/ships/ss-chicago-1908",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Cincinnati (1909)",
       "slug": "ss-cincinnati",
       "url": "/ships/ss-cincinnati",
@@ -2613,6 +2575,25 @@
       ]
     },
     {
+      "name": "SS De Grasse",
+      "slug": "ss-de-grasse",
+      "url": "/ships/ss-de-grasse",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Duchess of Bedford",
       "slug": "ss-duchess-of-bedford",
       "url": "/ships/ss-duchess-of-bedford",
@@ -2666,6 +2647,44 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Espagne",
+      "slug": "ss-espagne",
+      "url": "/ships/ss-espagne",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Flandre",
+      "slug": "ss-flandre",
+      "url": "/ships/ss-flandre",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -2898,21 +2917,59 @@
       ]
     },
     {
-      "name": "SS La Provence",
-      "slug": "ss-la-provence",
-      "url": "/ships/ss-la-provence",
+      "name": "SS La Bretagne",
+      "slug": "ss-la-bretagne",
+      "url": "/ships/ss-la-bretagne",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "ship-guide": 1
+        "hub-history": 1
       },
       "sources": [
         {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS La Normandie",
+      "slug": "ss-la-normandie",
+      "url": "/ships/ss-la-normandie",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS La Touraine (1891)",
+      "slug": "ss-la-touraine",
+      "url": "/ships/ss-la-touraine",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -2993,25 +3050,6 @@
       ]
     },
     {
-      "name": "SS Liberté",
-      "slug": "ss-liberte",
-      "url": "/ships/ss-liberte",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Malta",
       "slug": "ss-malta",
       "url": "/ships/ss-malta",
@@ -3046,6 +3084,44 @@
           "sourcePath": "collections/tourist-third-cabin-democratization.html",
           "sourceRoute": "/collections/tourist-third-cabin-democratization",
           "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Maréchal Joffre (1933)",
+      "slug": "ss-marechal-joffre",
+      "url": "/ships/ss-marechal-joffre",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Mariette Pacha (1926)",
+      "slug": "ss-mariette-pacha",
+      "url": "/ships/ss-mariette-pacha",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -3160,6 +3236,25 @@
           "sourcePath": "ships/ss-montclare.html",
           "sourceRoute": "/ships/ss-montclare",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Napoleon III",
+      "slug": "ss-napoleon-iii",
+      "url": "/ships/ss-napoleon-iii",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -3311,25 +3406,6 @@
         {
           "sourcePath": "ships/rms-orontes.html",
           "sourceRoute": "/ships/rms-orontes",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Paris",
-      "slug": "ss-paris",
-      "url": "/ships/ss-paris",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -3520,6 +3596,25 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Rochambeau",
+      "slug": "ss-rochambeau",
+      "url": "/ships/ss-rochambeau",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -3888,42 +3983,9 @@
   ],
   "ships": [
     {
-      "name": "MS Aramis (1932)",
-      "slug": "ms-aramis",
-      "url": "/ships/ms-aramis",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "MS Batory (1936)",
       "slug": "ms-batory",
       "url": "/ships/ms-batory",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Félix Roussel (1931)",
-      "slug": "ms-felix-roussel",
-      "url": "/ships/ms-felix-roussel",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Georges Philippar (1932)",
-      "slug": "ms-georges-philippar",
-      "url": "/ships/ms-georges-philippar",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4012,17 +4074,6 @@
       "name": "MS Willem Ruys (1947)",
       "slug": "ms-willem-ruys",
       "url": "/ships/ms-willem-ruys",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MV Jean Laborde (1931)",
-      "slug": "mv-jean-laborde",
-      "url": "/ships/mv-jean-laborde",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4295,17 +4346,6 @@
       "sources": []
     },
     {
-      "name": "SS André Lebon (1915)",
-      "slug": "ss-andre-lebon",
-      "url": "/ships/ss-andre-lebon",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Arabia (1852)",
       "slug": "ss-arabia-1852",
       "url": "/ships/ss-arabia-1852",
@@ -4353,17 +4393,6 @@
       "name": "SS Assyria",
       "slug": "ss-assyria",
       "url": "/ships/ss-assyria",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Athos II (1927)",
-      "slug": "ss-athos-ii",
-      "url": "/ships/ss-athos-ii",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4441,39 +4470,6 @@
       "name": "SS Cathay",
       "slug": "ss-cathay-1924",
       "url": "/ships/ss-cathay-1924",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Champlain",
-      "slug": "ss-champlain",
-      "url": "/ships/ss-champlain",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Champollion (1925)",
-      "slug": "ss-champollion",
-      "url": "/ships/ss-champollion",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Chicago (1908)",
-      "slug": "ss-chicago-1908",
-      "url": "/ships/ss-chicago-1908",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4614,17 +4610,6 @@
       "sources": []
     },
     {
-      "name": "SS De Grasse",
-      "slug": "ss-de-grasse",
-      "url": "/ships/ss-de-grasse",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Drottningholm",
       "slug": "ss-drottningholm",
       "url": "/ships/ss-drottningholm",
@@ -4680,31 +4665,9 @@
       "sources": []
     },
     {
-      "name": "SS Espagne",
-      "slug": "ss-espagne",
-      "url": "/ships/ss-espagne",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Finland",
       "slug": "ss-finland",
       "url": "/ships/ss-finland",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Flandre",
-      "slug": "ss-flandre",
-      "url": "/ships/ss-flandre",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4812,39 +4775,6 @@
       "sources": []
     },
     {
-      "name": "SS La Bretagne",
-      "slug": "ss-la-bretagne",
-      "url": "/ships/ss-la-bretagne",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS La Normandie",
-      "slug": "ss-la-normandie",
-      "url": "/ships/ss-la-normandie",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS La Touraine (1891)",
-      "slug": "ss-la-touraine",
-      "url": "/ships/ss-la-touraine",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Lake Michigan",
       "slug": "ss-lake-michigan",
       "url": "/ships/ss-lake-michigan",
@@ -4903,28 +4833,6 @@
       "name": "SS Manchuria",
       "slug": "ss-manchuria",
       "url": "/ships/ss-manchuria",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Maréchal Joffre (1933)",
-      "slug": "ss-marechal-joffre",
-      "url": "/ships/ss-marechal-joffre",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Mariette Pacha (1926)",
-      "slug": "ss-mariette-pacha",
-      "url": "/ships/ss-mariette-pacha",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -5002,17 +4910,6 @@
       "name": "SS Morro Castle",
       "slug": "ss-morro-castle",
       "url": "/ships/ss-morro-castle",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Napoleon III",
-      "slug": "ss-napoleon-iii",
-      "url": "/ships/ss-napoleon-iii",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -5175,17 +5072,6 @@
       "sources": []
     },
     {
-      "name": "SS Rochambeau",
-      "slug": "ss-rochambeau",
-      "url": "/ships/ss-rochambeau",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Rotterdam (1959)",
       "slug": "ss-rotterdam-1959",
       "url": "/ships/ss-rotterdam-1959",
@@ -5301,6 +5187,25 @@
       ]
     },
     {
+      "name": "MS Aramis (1932)",
+      "slug": "ms-aramis",
+      "url": "/ships/ms-aramis",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "MS Augustus",
       "slug": "ms-augustus",
       "url": "/ships/ms-augustus",
@@ -5335,6 +5240,44 @@
           "sourcePath": "collections/cabin-liner-transition.html",
           "sourceRoute": "/collections/cabin-liner-transition",
           "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "MS Félix Roussel (1931)",
+      "slug": "ms-felix-roussel",
+      "url": "/ships/ms-felix-roussel",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MS Georges Philippar (1932)",
+      "slug": "ms-georges-philippar",
+      "url": "/ships/ms-georges-philippar",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -5410,6 +5353,25 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MV Jean Laborde (1931)",
+      "slug": "mv-jean-laborde",
+      "url": "/ships/mv-jean-laborde",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -5985,6 +5947,25 @@
       ]
     },
     {
+      "name": "SS André Lebon (1915)",
+      "slug": "ss-andre-lebon",
+      "url": "/ships/ss-andre-lebon",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Arabic (1903)",
       "slug": "ss-arabic",
       "url": "/ships/ss-arabic",
@@ -6056,6 +6037,25 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Athos II (1927)",
+      "slug": "ss-athos-ii",
+      "url": "/ships/ss-athos-ii",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -6289,6 +6289,63 @@
       ]
     },
     {
+      "name": "SS Champlain",
+      "slug": "ss-champlain",
+      "url": "/ships/ss-champlain",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Champollion (1925)",
+      "slug": "ss-champollion",
+      "url": "/ships/ss-champollion",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Chicago (1908)",
+      "slug": "ss-chicago-1908",
+      "url": "/ships/ss-chicago-1908",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Cincinnati (1909)",
       "slug": "ss-cincinnati",
       "url": "/ships/ss-cincinnati",
@@ -6479,6 +6536,25 @@
       ]
     },
     {
+      "name": "SS De Grasse",
+      "slug": "ss-de-grasse",
+      "url": "/ships/ss-de-grasse",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Duchess of Bedford",
       "slug": "ss-duchess-of-bedford",
       "url": "/ships/ss-duchess-of-bedford",
@@ -6532,6 +6608,44 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Espagne",
+      "slug": "ss-espagne",
+      "url": "/ships/ss-espagne",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Flandre",
+      "slug": "ss-flandre",
+      "url": "/ships/ss-flandre",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -6764,21 +6878,59 @@
       ]
     },
     {
-      "name": "SS La Provence",
-      "slug": "ss-la-provence",
-      "url": "/ships/ss-la-provence",
+      "name": "SS La Bretagne",
+      "slug": "ss-la-bretagne",
+      "url": "/ships/ss-la-bretagne",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "ship-guide": 1
+        "hub-history": 1
       },
       "sources": [
         {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS La Normandie",
+      "slug": "ss-la-normandie",
+      "url": "/ships/ss-la-normandie",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS La Touraine (1891)",
+      "slug": "ss-la-touraine",
+      "url": "/ships/ss-la-touraine",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -6859,25 +7011,6 @@
       ]
     },
     {
-      "name": "SS Liberté",
-      "slug": "ss-liberte",
-      "url": "/ships/ss-liberte",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Malta",
       "slug": "ss-malta",
       "url": "/ships/ss-malta",
@@ -6912,6 +7045,44 @@
           "sourcePath": "collections/tourist-third-cabin-democratization.html",
           "sourceRoute": "/collections/tourist-third-cabin-democratization",
           "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Maréchal Joffre (1933)",
+      "slug": "ss-marechal-joffre",
+      "url": "/ships/ss-marechal-joffre",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Mariette Pacha (1926)",
+      "slug": "ss-mariette-pacha",
+      "url": "/ships/ss-mariette-pacha",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -7026,6 +7197,25 @@
           "sourcePath": "ships/ss-montclare.html",
           "sourceRoute": "/ships/ss-montclare",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Napoleon III",
+      "slug": "ss-napoleon-iii",
+      "url": "/ships/ss-napoleon-iii",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -7177,25 +7367,6 @@
         {
           "sourcePath": "ships/rms-orontes.html",
           "sourceRoute": "/ships/rms-orontes",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Paris",
-      "slug": "ss-paris",
-      "url": "/ships/ss-paris",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -7386,6 +7557,25 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Rochambeau",
+      "slug": "ss-rochambeau",
+      "url": "/ships/ss-rochambeau",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -8647,31 +8837,6 @@
       ]
     },
     {
-      "name": "SS France (1912)",
-      "slug": "ss-france-1912",
-      "url": "/ships/ss-france-1912",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/french-atlantic-flagships.html",
-          "sourceRoute": "/collections/french-atlantic-flagships",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "designs-interiors.html",
-          "sourceRoute": "/designs-interiors",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS George Washington",
       "slug": "ss-george-washington-ngl",
       "url": "/ships/ss-george-washington-ngl",
@@ -8774,6 +8939,56 @@
       "name": "SS Kronprinzessin Cecilie",
       "slug": "ss-kronprinzessin-cecilie",
       "url": "/ships/ss-kronprinzessin-cecilie",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS La Provence",
+      "slug": "ss-la-provence",
+      "url": "/ships/ss-la-provence",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Liberté",
+      "slug": "ss-liberte",
+      "url": "/ships/ss-liberte",
       "inboundTotal": 3,
       "editorialInbound": 2,
       "baselineInbound": 1,
@@ -8917,6 +9132,31 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Paris",
+      "slug": "ss-paris",
+      "url": "/ships/ss-paris",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9377,6 +9617,36 @@
       ]
     },
     {
+      "name": "SS France (1912)",
+      "slug": "ss-france-1912",
+      "url": "/ships/ss-france-1912",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/french-atlantic-flagships.html",
+          "sourceRoute": "/collections/french-atlantic-flagships",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Nomadic",
       "slug": "ss-nomadic",
       "url": "/ships/ss-nomadic",
@@ -9686,41 +9956,6 @@
       ]
     },
     {
-      "name": "SS France",
-      "slug": "ss-france",
-      "url": "/ships/ss-france",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 2,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/french-atlantic-flagships.html",
-          "sourceRoute": "/collections/french-atlantic-flagships",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
-          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Kaiser Wilhelm II",
       "slug": "ss-kaiser-wilhelm-ii",
       "url": "/ships/ss-kaiser-wilhelm-ii",
@@ -9746,6 +9981,47 @@
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS France",
+      "slug": "ss-france",
+      "url": "/ships/ss-france",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/french-atlantic-flagships.html",
+          "sourceRoute": "/collections/french-atlantic-flagships",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
         },
         {
@@ -9981,13 +10257,13 @@
       "name": "SS Île de France",
       "slug": "ss-ile-de-france",
       "url": "/ships/ss-ile-de-france",
-      "inboundTotal": 7,
-      "editorialInbound": 6,
+      "inboundTotal": 8,
+      "editorialInbound": 7,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
         "collection": 1,
-        "hub-history": 3,
+        "hub-history": 4,
         "ship-guide": 2
       },
       "sources": [
@@ -10009,6 +10285,11 @@
         {
           "sourcePath": "designs-interiors/public-rooms.html",
           "sourceRoute": "/designs-interiors/public-rooms",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         },
         {
@@ -10259,88 +10540,6 @@
       ]
     },
     {
-      "name": "SS Normandie",
-      "slug": "ss-normandie",
-      "url": "/ships/ss-normandie",
-      "inboundTotal": 14,
-      "editorialInbound": 13,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 3,
-        "hub-history": 5,
-        "article-reference": 2,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
-          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/floating-palaces-interior-innovation.html",
-          "sourceRoute": "/collections/floating-palaces-interior-innovation",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/french-atlantic-flagships.html",
-          "sourceRoute": "/collections/french-atlantic-flagships",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "designs-interiors.html",
-          "sourceRoute": "/designs-interiors",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "designs-interiors/decorative-styles.html",
-          "sourceRoute": "/designs-interiors/decorative-styles",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "designs-interiors/grand-staircases-at-sea.html",
-          "sourceRoute": "/designs-interiors/grand-staircases-at-sea",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "designs-interiors/public-rooms.html",
-          "sourceRoute": "/designs-interiors/public-rooms",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "from-ocean-liners-to-sail250.html",
-          "sourceRoute": "/from-ocean-liners-to-sail250",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "why-ss-normandie-matters.html",
-          "sourceRoute": "/why-ss-normandie-matters",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "RMS Queen Mary",
       "slug": "rms-queen-mary",
       "url": "/ships/rms-queen-mary",
@@ -10510,6 +10709,93 @@
         {
           "sourcePath": "why-ss-leviathan-matters.html",
           "sourceRoute": "/why-ss-leviathan-matters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS Normandie",
+      "slug": "ss-normandie",
+      "url": "/ships/ss-normandie",
+      "inboundTotal": 15,
+      "editorialInbound": 14,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 3,
+        "hub-history": 6,
+        "article-reference": 2,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
+          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/french-atlantic-flagships.html",
+          "sourceRoute": "/collections/french-atlantic-flagships",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "designs-interiors/decorative-styles.html",
+          "sourceRoute": "/designs-interiors/decorative-styles",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "designs-interiors/grand-staircases-at-sea.html",
+          "sourceRoute": "/designs-interiors/grand-staircases-at-sea",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "designs-interiors/public-rooms.html",
+          "sourceRoute": "/designs-interiors/public-rooms",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "from-ocean-liners-to-sail250.html",
+          "sourceRoute": "/from-ocean-liners-to-sail250",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "why-ss-normandie-matters.html",
+          "sourceRoute": "/why-ss-normandie-matters",
           "sourceCategory": "article-reference"
         }
       ]
