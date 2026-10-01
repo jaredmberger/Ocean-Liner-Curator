@@ -254,16 +254,14 @@ def main() -> None:
                 expected=f"https://oceanliners.net{expected_path}",
             )
 
-        # Year consistency is review-only because launch/service years legitimately differ.
+        # Archive year is card metadata, not necessarily the guide's H1
+        # disambiguation year. Launch, order, acquisition, and service-entry years
+        # can legitimately differ. Only enforce consistency within the archive card.
         if card["year"] and re.fullmatch(r"\d{4}", card["year"]):
             year = card["year"]
             title_year = re.search(r"\((\d{4})\)", card["name"])
-            h1_year = re.search(r"\((\d{4})\)", page_h1)
             if title_year and title_year.group(1) != year:
                 warn("card-name-year-mismatch", slug=slug, dataYear=year, cardName=card["name"])
-                years_flagged += 1
-            if h1_year and h1_year.group(1) != year:
-                warn("h1-year-mismatch", slug=slug, dataYear=year, h1=page_h1)
                 years_flagged += 1
 
         if card["line"]:
@@ -481,7 +479,7 @@ def main() -> None:
             print(f"Orphan image warnings: {len(orphan_images)}")
             for item in orphan_images:
                 print(f"ORPHAN_IMAGE: {json.dumps(item, ensure_ascii=False)}")
-        year_items = [item for item in warnings if item.get("code") in {"card-name-year-mismatch", "h1-year-mismatch"}]
+        year_items = [item for item in warnings if item.get("code") == "card-name-year-mismatch"]
         if year_items:
             print(f"Year consistency warnings: {len(year_items)}")
             for item in year_items:
