@@ -288,6 +288,7 @@
 "/ships/ss-assyria.html",
 "/ships/ss-asia-1850.html",
 "/ships/ss-arabia-1852.html",
+"/ships/ss-china-1862.html",
 "/ships/ss-corsican.html",
 "/ships/tall-ships-guide.html",
 "/ships/ss-bothnia.html",
