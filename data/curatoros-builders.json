@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T03:51:41.866Z",
+  "generatedAt": "2026-10-01T03:57:01.826Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 355,
-    "shipGuides": 343,
+    "trackedShipHtmlFiles": 356,
+    "shipGuides": 344,
     "canonicalBuilders": 84,
-    "guidesWithBuilder": 343,
+    "guidesWithBuilder": 344,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
     "guidesMissingLaunch": 2,
-    "builderVariantGroups": 34,
+    "builderVariantGroups": 35,
     "suspiciousLaunchDatesWithoutYear": 0
   },
   "missing": {
@@ -780,6 +780,18 @@
       "shipCount": 3
     },
     {
+      "id": "robert-napier-and-sons",
+      "name": "Robert Napier & Sons",
+      "names": [
+        "Robert Napier & Sons"
+      ],
+      "rawValues": [
+        "Robert Napier & Sons, Glasgow",
+        "Robert Napier & Sons, Glasgow, Scotland"
+      ],
+      "shipCount": 3
+    },
+    {
       "id": "robert-steele-and-co",
       "name": "Robert Steele & Co.",
       "names": [
@@ -882,17 +894,6 @@
       ],
       "rawValues": [
         "Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "robert-napier-and-sons",
-      "name": "Robert Napier & Sons",
-      "names": [
-        "Robert Napier & Sons"
-      ],
-      "rawValues": [
-        "Robert Napier & Sons, Glasgow"
       ],
       "shipCount": 2
     },
@@ -3613,6 +3614,20 @@
           "id": "chantiers-and-ateliers-de-saint-nazaire-penhoet",
           "name": "Chantiers & Ateliers de Saint-Nazaire / Penhoët",
           "raw": "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France"
+        }
+      ]
+    },
+    {
+      "name": "SS China (1862)",
+      "path": "ships/ss-china-1862.html",
+      "url": "/ships/ss-china-1862",
+      "launchYear": "1861",
+      "builderRaw": "Robert Napier & Sons, Glasgow, Scotland",
+      "builders": [
+        {
+          "id": "robert-napier-and-sons",
+          "name": "Robert Napier & Sons",
+          "raw": "Robert Napier & Sons, Glasgow, Scotland"
         }
       ]
     },

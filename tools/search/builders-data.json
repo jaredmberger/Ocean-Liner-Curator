@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-01T03:51:41.866Z",
+  "generatedAt": "2026-10-01T03:57:01.826Z",
   "summary": {
-    "shipGuides": 343,
+    "shipGuides": 344,
     "canonicalBuilders": 84,
-    "guidesWithBuilder": 343
+    "guidesWithBuilder": 344
   },
   "builders": [
     {
@@ -2222,6 +2222,40 @@
       ]
     },
     {
+      "id": "robert-napier-and-sons",
+      "name": "Robert Napier & Sons",
+      "shipCount": 3,
+      "locations": [
+        "Glasgow",
+        "Glasgow, Scotland"
+      ],
+      "firstLaunchYear": 1855,
+      "lastLaunchYear": 1861,
+      "ships": [
+        {
+          "name": "RMS Persia",
+          "url": "/ships/rms-persia-1855",
+          "launchYear": "1855",
+          "operator": "Cunard Line",
+          "builderRaw": "Robert Napier & Sons, Glasgow"
+        },
+        {
+          "name": "RMS Scotia",
+          "url": "/ships/rms-scotia-1861",
+          "launchYear": "1861",
+          "operator": "Cunard Line",
+          "builderRaw": "Robert Napier & Sons, Glasgow"
+        },
+        {
+          "name": "SS China (1862)",
+          "url": "/ships/ss-china-1862",
+          "launchYear": "1861",
+          "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+          "builderRaw": "Robert Napier & Sons, Glasgow, Scotland"
+        }
+      ]
+    },
+    {
       "id": "robert-steele-and-co",
       "name": "Robert Steele & Co.",
       "shipCount": 3,
@@ -2469,32 +2503,6 @@
           "launchYear": "1929",
           "operator": "Stoomvaart Maatschappij Nederland (Netherland Line)",
           "builderRaw": "Nederlandsche Scheepsbouw Maatschappij (NSM), Amsterdam"
-        }
-      ]
-    },
-    {
-      "id": "robert-napier-and-sons",
-      "name": "Robert Napier & Sons",
-      "shipCount": 2,
-      "locations": [
-        "Glasgow"
-      ],
-      "firstLaunchYear": 1855,
-      "lastLaunchYear": 1861,
-      "ships": [
-        {
-          "name": "RMS Persia",
-          "url": "/ships/rms-persia-1855",
-          "launchYear": "1855",
-          "operator": "Cunard Line",
-          "builderRaw": "Robert Napier & Sons, Glasgow"
-        },
-        {
-          "name": "RMS Scotia",
-          "url": "/ships/rms-scotia-1861",
-          "launchYear": "1861",
-          "operator": "Cunard Line",
-          "builderRaw": "Robert Napier & Sons, Glasgow"
         }
       ]
     },

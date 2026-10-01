@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T03:51:43.172Z",
+  "generatedAt": "2026-10-01T03:57:02.927Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 343,
-    "guidesWithServiceStart": 337,
+    "shipGuides": 344,
+    "guidesWithServiceStart": 338,
     "guidesWithExplicitServiceEnd": 266,
     "eras": 10,
     "decades": 15
@@ -1870,7 +1870,7 @@
     },
     {
       "name": "Pioneer steam era",
-      "shipCount": 24,
+      "shipCount": 25,
       "ships": [
         {
           "name": "RMS Britannia",
@@ -1955,6 +1955,13 @@
           "url": "/ships/ss-bothnia",
           "serviceStartYear": "1874",
           "serviceEndYear": "1899"
+        },
+        {
+          "name": "SS China (1862)",
+          "path": "ships/ss-china-1862.html",
+          "url": "/ships/ss-china-1862",
+          "serviceStartYear": "1862",
+          "serviceEndYear": null
         },
         {
           "name": "SS Cuba",
@@ -4615,6 +4622,61 @@
       ]
     },
     {
+      "name": "1860s",
+      "shipCount": 7,
+      "ships": [
+        {
+          "name": "RMS Scotia",
+          "path": "ships/rms-scotia-1861.html",
+          "url": "/ships/rms-scotia-1861",
+          "serviceStartYear": "1862",
+          "serviceEndYear": "1876"
+        },
+        {
+          "name": "SS China (1862)",
+          "path": "ships/ss-china-1862.html",
+          "url": "/ships/ss-china-1862",
+          "serviceStartYear": "1862",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Cuba",
+          "path": "ships/ss-cuba.html",
+          "url": "/ships/ss-cuba",
+          "serviceStartYear": "1864",
+          "serviceEndYear": "1887"
+        },
+        {
+          "name": "SS Java",
+          "path": "ships/ss-java.html",
+          "url": "/ships/ss-java",
+          "serviceStartYear": "1865",
+          "serviceEndYear": "1895"
+        },
+        {
+          "name": "SS Macedonia",
+          "path": "ships/ss-macedonia.html",
+          "url": "/ships/ss-macedonia",
+          "serviceStartYear": "1863",
+          "serviceEndYear": "1881"
+        },
+        {
+          "name": "SS Malta",
+          "path": "ships/ss-malta.html",
+          "url": "/ships/ss-malta",
+          "serviceStartYear": "1866",
+          "serviceEndYear": "1889"
+        },
+        {
+          "name": "SS Napoleon III",
+          "path": "ships/ss-napoleon-iii.html",
+          "url": "/ships/ss-napoleon-iii",
+          "serviceStartYear": "1866",
+          "serviceEndYear": "1873"
+        }
+      ]
+    },
+    {
       "name": "1870s",
       "shipCount": 7,
       "ships": [
@@ -4721,54 +4783,6 @@
           "url": "/ships/ss-himalaya",
           "serviceStartYear": "1949",
           "serviceEndYear": "1975"
-        }
-      ]
-    },
-    {
-      "name": "1860s",
-      "shipCount": 6,
-      "ships": [
-        {
-          "name": "RMS Scotia",
-          "path": "ships/rms-scotia-1861.html",
-          "url": "/ships/rms-scotia-1861",
-          "serviceStartYear": "1862",
-          "serviceEndYear": "1876"
-        },
-        {
-          "name": "SS Cuba",
-          "path": "ships/ss-cuba.html",
-          "url": "/ships/ss-cuba",
-          "serviceStartYear": "1864",
-          "serviceEndYear": "1887"
-        },
-        {
-          "name": "SS Java",
-          "path": "ships/ss-java.html",
-          "url": "/ships/ss-java",
-          "serviceStartYear": "1865",
-          "serviceEndYear": "1895"
-        },
-        {
-          "name": "SS Macedonia",
-          "path": "ships/ss-macedonia.html",
-          "url": "/ships/ss-macedonia",
-          "serviceStartYear": "1863",
-          "serviceEndYear": "1881"
-        },
-        {
-          "name": "SS Malta",
-          "path": "ships/ss-malta.html",
-          "url": "/ships/ss-malta",
-          "serviceStartYear": "1866",
-          "serviceEndYear": "1889"
-        },
-        {
-          "name": "SS Napoleon III",
-          "path": "ships/ss-napoleon-iii.html",
-          "url": "/ships/ss-napoleon-iii",
-          "serviceStartYear": "1866",
-          "serviceEndYear": "1873"
         }
       ]
     },
@@ -6586,6 +6600,17 @@
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
       "endEvidence": "Scrapped at Saint-Nazaire in the mid-to-late 1930s; sources commonly cite 1936 or early 1937"
+    },
+    {
+      "name": "SS China (1862)",
+      "path": "ships/ss-china-1862.html",
+      "url": "/ships/ss-china-1862",
+      "launchYear": "1861",
+      "serviceStartYear": "1862",
+      "serviceEndYear": null,
+      "era": "Pioneer steam era",
+      "decade": "1860s",
+      "endEvidence": null
     },
     {
       "name": "SS Chitral (1925)",

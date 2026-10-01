@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T03:51:41.866Z",
+  "generatedAt": "2026-10-01T03:57:01.826Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 343,
-    "guidesWithDocumentedYard": 343,
+    "shipGuides": 344,
+    "guidesWithDocumentedYard": 344,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 72,
+    "canonicalYardLocations": 73,
     "multiYardShips": 0
   },
   "yards": [
@@ -2884,6 +2884,26 @@
       ]
     },
     {
+      "id": "glasgow-scotland",
+      "name": "Glasgow, Scotland",
+      "rawValues": [
+        "Glasgow, Scotland"
+      ],
+      "builders": [
+        "Robert Napier & Sons"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS China (1862)",
+          "path": "ships/ss-china-1862.html",
+          "url": "/ships/ss-china-1862",
+          "launchYear": "1861",
+          "builder": "Robert Napier & Sons"
+        }
+      ]
+    },
+    {
       "id": "gothenburg",
       "name": "Gothenburg",
       "rawValues": [
@@ -5572,6 +5592,20 @@
           "builderId": "chantiers-and-ateliers-de-saint-nazaire-penhoet",
           "location": "Saint-Nazaire",
           "locationRaw": "Saint-Nazaire, France"
+        }
+      ]
+    },
+    {
+      "name": "SS China (1862)",
+      "path": "ships/ss-china-1862.html",
+      "url": "/ships/ss-china-1862",
+      "launchYear": "1861",
+      "assignments": [
+        {
+          "builder": "Robert Napier & Sons",
+          "builderId": "robert-napier-and-sons",
+          "location": "Glasgow, Scotland",
+          "locationRaw": "Glasgow, Scotland"
         }
       ]
     },
