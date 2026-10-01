@@ -166,6 +166,7 @@
 "/ships/ss-medic.html",
 "/ships/rms-megantic-1909.html",
 "/ships/ss-michelangelo-1965.html",
+"/ships/ss-minnehaha.html",
 "/ships/ss-minnesota.html",
 "/ships/ss-minnetonka.html",
 "/ships/ss-minnewaska.html",
