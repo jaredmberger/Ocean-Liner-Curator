@@ -686,16 +686,32 @@
   ,
     "ss-gneisenau": [
       {
-        heading: "Far East Express Sisters",
-        note: "Gneisenau and Scharnhorst were sister ships in Norddeutscher Lloyd’s three-ship mid-1930s Far East express class; Potsdam completed the trio.",
-        items: [["/ships/ss-scharnhorst", "SS <em>Scharnhorst</em>", "sister ship"]]
+        heading: "Far East Express Group",
+        note: "Gneisenau and Scharnhorst were sister ships. Potsdam joined them in Norddeutscher Lloyd’s accelerated mid-1930s East Asia service but differed materially in hull form and machinery.",
+        items: [
+          ["/ships/ss-scharnhorst", "SS <em>Scharnhorst</em>", "sister ship"],
+          ["/ships/ss-potsdam-1935", "SS <em>Potsdam</em> (1935)", "same East Asia express service; distinct design"]
+        ]
       }
     ],
     "ss-scharnhorst": [
       {
-        heading: "Far East Express Sisters",
-        note: "Scharnhorst and Gneisenau were sister ships in Norddeutscher Lloyd’s three-ship mid-1930s Far East express class; Potsdam completed the trio.",
-        items: [["/ships/ss-gneisenau", "SS <em>Gneisenau</em>", "sister ship"]]
+        heading: "Far East Express Group",
+        note: "Scharnhorst and Gneisenau were sister ships. Potsdam joined them in Norddeutscher Lloyd’s accelerated mid-1930s East Asia service but differed materially in hull form and machinery.",
+        items: [
+          ["/ships/ss-gneisenau", "SS <em>Gneisenau</em>", "sister ship"],
+          ["/ships/ss-potsdam-1935", "SS <em>Potsdam</em> (1935)", "same East Asia express service; distinct design"]
+        ]
+      }
+    ],
+    "ss-potsdam-1935": [
+      {
+        heading: "Far East Express Group",
+        note: "Potsdam operated with Scharnhorst and Gneisenau in Norddeutscher Lloyd’s accelerated East Asia service. The ships shared a service concept, but Potsdam was not a sister and used materially different machinery and design features.",
+        items: [
+          ["/ships/ss-scharnhorst", "SS <em>Scharnhorst</em>", "same East Asia express service"],
+          ["/ships/ss-gneisenau", "SS <em>Gneisenau</em>", "same East Asia express service"]
+        ]
       }
     ]
   ,
@@ -711,6 +727,24 @@
         heading: "Cunard’s Founding Paddle Fleet",
         note: "Cambria was an enlarged development of Cunard’s original Britannia-class wooden paddle steamers and carried forward the same Liverpool–Halifax–Boston mail-service concept.",
         items: [["/ships/rms-britannia-1840", "RMS <em>Britannia</em> (1840)", "founding Cunard predecessor generation"]]
+      }
+    ],
+    "ss-china-1862": [
+      {
+        heading: "Cunard Screw-Liner Development",
+        note: "China demonstrated the commercial value of iron construction and screw propulsion in Cunard’s Atlantic mail service; Java and later Russia carried that technical direction forward.",
+        items: [
+          ["/ships/ss-russia-1867", "SS <em>Russia</em> (1867)", "later Cunard screw-liner development"]
+        ]
+      }
+    ],
+    "ss-russia-1867": [
+      {
+        heading: "Cunard Screw-Liner Development",
+        note: "Russia followed the earlier China in Cunard’s transition toward iron screw liners, showing how quickly screw propulsion progressed from economical alternative to serious Atlantic speed contender.",
+        items: [
+          ["/ships/ss-china-1862", "SS <em>China</em> (1862)", "earlier Cunard screw-liner predecessor"]
+        ]
       }
     ],
     "rms-persia-1855": [
