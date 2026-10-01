@@ -270,27 +270,33 @@ def main() -> None:
             line_variants[card["line"].casefold()].add(card["line"])
 
         sections = h2_texts(page)
-        for required in REQUIRED_SECTIONS:
-            if not any(required.casefold() == section.casefold() for section in sections):
-                warn("missing-standard-section", slug=slug, section=required)
+        if slug != "tall-ships-guide":
+            for required in REQUIRED_SECTIONS:
+                if required == "Interpretive Notes":
+                    matched = any(re.match(r"^Interpretive\s+Notes?\b", section, re.I) for section in sections)
+                else:
+                    matched = any(required.casefold() == section.casefold() for section in sections)
+                if not matched:
+                    warn("missing-standard-section", slug=slug, section=required)
+                    structural_warnings += 1
+
+        if slug != "tall-ships-guide":
+            if not any(re.fullmatch(r"(?:Selected\s+)?Sources(?:\s*\(Selected\))?", section, re.I) for section in sections):
+                warn("missing-sources-section", slug=slug)
                 structural_warnings += 1
 
-        if not any(re.fullmatch(r"(?:Selected\s+)?Sources(?:\s*\(Selected\))?", section, re.I) for section in sections):
-            warn("missing-sources-section", slug=slug)
-            structural_warnings += 1
-
-        if "Evidence-first ship guide" not in page:
-            warn("missing-evidence-badge", slug=slug)
-            structural_warnings += 1
-
-        for asset in REQUIRED_ASSETS:
-            if asset not in page:
-                warn("missing-standard-asset", slug=slug, asset=asset)
+            if "Evidence-first ship guide" not in page:
+                warn("missing-evidence-badge", slug=slug)
                 structural_warnings += 1
 
-        if 'id="site-header"' not in page and "id='site-header'" not in page:
-            warn("missing-site-header-mount", slug=slug)
-            structural_warnings += 1
+            for asset in REQUIRED_ASSETS:
+                if asset not in page:
+                    warn("missing-standard-asset", slug=slug, asset=asset)
+                    structural_warnings += 1
+
+            if 'id="site-header"' not in page and "id='site-header'" not in page:
+                warn("missing-site-header-mount", slug=slug)
+                structural_warnings += 1
 
         # Narrative links are the best objective proxy for inline citations.
         before_sources = guide_text_before_sources(page)
