@@ -19,6 +19,7 @@ on:
       - 'scripts/build-device-archive.py'
       - 'scripts/sync-ship-sitemaps.py'
       - 'scripts/build-curatoros-integrity.py'
+      - 'scripts/audit-ship-archive.py'
       - 'random-ship.js'
       - 'assets/random-ship.js'
       - 'data/builders.json'
@@ -43,6 +44,7 @@ on:
       - 'scripts/build-device-archive.py'
       - 'scripts/sync-ship-sitemaps.py'
       - 'scripts/build-curatoros-integrity.py'
+      - 'scripts/audit-ship-archive.py'
       - 'random-ship.js'
       - 'assets/random-ship.js'
       - 'data/builders.json'
@@ -70,8 +72,10 @@ jobs:
             scripts/build-device-archive.py
             scripts/sync-ship-sitemaps.py
             scripts/build-curatoros-integrity.py
+            scripts/audit-ship-archive.py
             random-ship.js
             assets/random-ship.js
+            assets/related-liners.js
             data/builders.json
             data/curatoros-*.json
             sitemap.xml
@@ -83,6 +87,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Audit ship archive consistency
+        run: python scripts/audit-ship-archive.py
 
       - name: Generate device feeds
         run: python scripts/build-device-archive.py
