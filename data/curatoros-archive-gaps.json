@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T07:40:51.103Z",
+  "generatedAt": "2026-10-01T07:47:07.678Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -12,9 +12,9 @@
   },
   "summary": {
     "shipGuides": 346,
-    "relationshipCovered": 319,
-    "relationshipUncovered": 27,
-    "relationshipCoveragePct": 92.2,
+    "relationshipCovered": 322,
+    "relationshipUncovered": 24,
+    "relationshipCoveragePct": 93.1,
     "canonicalOperators": 81,
     "thinOperators": 52,
     "canonicalYardLocations": 73,
@@ -147,42 +147,6 @@
     "relationshipResearchCandidates": [
       {
         "type": "relationship-gap",
-        "ship": "SS Arabia (1852)",
-        "slug": "ss-arabia-1852",
-        "url": "/ships/ss-arabia-1852",
-        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Asia (1850)",
-        "slug": "ss-asia-1850",
-        "url": "/ships/ss-asia-1850",
-        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS China (1862)",
-        "slug": "ss-china-1862",
-        "url": "/ships/ss-china-1862",
-        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Hibernia (1843)",
-        "slug": "ss-hibernia-1843",
-        "url": "/ships/ss-hibernia-1843",
-        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "SS Brasilia",
         "slug": "ss-brasilia",
         "url": "/ships/ss-brasilia",
@@ -210,21 +174,30 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Cuba",
-        "slug": "ss-cuba",
-        "url": "/ships/ss-cuba",
-        "operator": "Cunard Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
+        "ship": "SS Arabia (1852)",
+        "slug": "ss-arabia-1852",
+        "url": "/ships/ss-arabia-1852",
+        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Russia (1867)",
-        "slug": "ss-russia-1867",
-        "url": "/ships/ss-russia-1867",
-        "operator": "Cunard Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
+        "ship": "SS Asia (1850)",
+        "slug": "ss-asia-1850",
+        "url": "/ships/ss-asia-1850",
+        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Hibernia (1843)",
+        "slug": "ss-hibernia-1843",
+        "url": "/ships/ss-hibernia-1843",
+        "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
       {
         "type": "relationship-gap",
@@ -255,12 +228,12 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Potsdam (1935)",
-        "slug": "ss-potsdam-1935",
-        "url": "/ships/ss-potsdam-1935",
-        "operator": "Norddeutscher Lloyd (North German Lloyd)",
+        "ship": "SS Cuba",
+        "slug": "ss-cuba",
+        "url": "/ships/ss-cuba",
+        "operator": "Cunard Line",
         "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 21 archive guides; worth checking for class, running-mate, route, or succession links."
+        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -655,39 +628,6 @@
   "coverage": {
     "operators": [
       {
-        "name": "British and North American Royal Mail Steam Packet Company (Cunard)",
-        "total": 4,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS Arabia (1852)",
-            "slug": "ss-arabia-1852",
-            "url": "/ships/ss-arabia-1852",
-            "launchYear": "1852"
-          },
-          {
-            "name": "SS Asia (1850)",
-            "slug": "ss-asia-1850",
-            "url": "/ships/ss-asia-1850",
-            "launchYear": "1850"
-          },
-          {
-            "name": "SS China (1862)",
-            "slug": "ss-china-1862",
-            "url": "/ships/ss-china-1862",
-            "launchYear": "1861"
-          },
-          {
-            "name": "SS Hibernia (1843)",
-            "slug": "ss-hibernia-1843",
-            "url": "/ships/ss-hibernia-1843",
-            "launchYear": null
-          }
-        ],
-        "uncoveredCount": 4,
-        "coveragePct": 0
-      },
-      {
         "name": "Hamburg America Line (HAPAG)",
         "total": 26,
         "covered": 23,
@@ -715,25 +655,31 @@
         "coveragePct": 88.5
       },
       {
-        "name": "Cunard Line",
-        "total": 38,
-        "covered": 36,
+        "name": "British and North American Royal Mail Steam Packet Company (Cunard)",
+        "total": 4,
+        "covered": 1,
         "uncovered": [
           {
-            "name": "SS Cuba",
-            "slug": "ss-cuba",
-            "url": "/ships/ss-cuba",
-            "launchYear": "1864"
+            "name": "SS Arabia (1852)",
+            "slug": "ss-arabia-1852",
+            "url": "/ships/ss-arabia-1852",
+            "launchYear": "1852"
           },
           {
-            "name": "SS Russia (1867)",
-            "slug": "ss-russia-1867",
-            "url": "/ships/ss-russia-1867",
-            "launchYear": "1867"
+            "name": "SS Asia (1850)",
+            "slug": "ss-asia-1850",
+            "url": "/ships/ss-asia-1850",
+            "launchYear": "1850"
+          },
+          {
+            "name": "SS Hibernia (1843)",
+            "slug": "ss-hibernia-1843",
+            "url": "/ships/ss-hibernia-1843",
+            "launchYear": null
           }
         ],
-        "uncoveredCount": 2,
-        "coveragePct": 94.7
+        "uncoveredCount": 3,
+        "coveragePct": 25
       },
       {
         "name": "Atlantic Transport Line",
@@ -772,19 +718,19 @@
         "coveragePct": 97.4
       },
       {
-        "name": "Norddeutscher Lloyd (North German Lloyd)",
-        "total": 21,
-        "covered": 20,
+        "name": "Cunard Line",
+        "total": 38,
+        "covered": 37,
         "uncovered": [
           {
-            "name": "SS Potsdam (1935)",
-            "slug": "ss-potsdam-1935",
-            "url": "/ships/ss-potsdam-1935",
-            "launchYear": "1935"
+            "name": "SS Cuba",
+            "slug": "ss-cuba",
+            "url": "/ships/ss-cuba",
+            "launchYear": "1864"
           }
         ],
         "uncoveredCount": 1,
-        "coveragePct": 95.2
+        "coveragePct": 97.4
       },
       {
         "name": "Compagnie Générale Transatlantique (French Line)",
@@ -995,6 +941,14 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 0
+      },
+      {
+        "name": "Norddeutscher Lloyd (North German Lloyd)",
+        "total": 21,
+        "covered": 21,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
       },
       {
         "name": "P&O",
@@ -1524,9 +1478,9 @@
       {
         "era": "Pioneer steam era",
         "shipCount": 26,
-        "relationshipCovered": 17,
-        "relationshipUncovered": 9,
-        "relationshipCoveragePct": 65.4
+        "relationshipCovered": 19,
+        "relationshipUncovered": 7,
+        "relationshipCoveragePct": 73.1
       },
       {
         "era": "Late Victorian expansion",
@@ -1538,9 +1492,9 @@
       {
         "era": "Interwar express-liner era",
         "shipCount": 47,
-        "relationshipCovered": 45,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 95.7
+        "relationshipCovered": 46,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 97.9
       },
       {
         "era": "Interwar recovery",
@@ -1582,9 +1536,9 @@
       {
         "decade": "1860s",
         "shipCount": 8,
-        "relationshipCovered": 3,
-        "relationshipUncovered": 5,
-        "relationshipCoveragePct": 37.5
+        "relationshipCovered": 5,
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 62.5
       },
       {
         "decade": "1870s",
@@ -1631,9 +1585,9 @@
       {
         "decade": "1930s",
         "shipCount": 52,
-        "relationshipCovered": 49,
-        "relationshipUncovered": 3,
-        "relationshipCoveragePct": 94.2
+        "relationshipCovered": 50,
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 96.2
       },
       {
         "decade": "1940s",
@@ -1700,13 +1654,6 @@
       "url": "/ships/ss-brasilia",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1897"
-    },
-    {
-      "name": "SS China (1862)",
-      "slug": "ss-china-1862",
-      "url": "/ships/ss-china-1862",
-      "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
-      "launchYear": "1861"
     },
     {
       "name": "SS Coptic",
@@ -1821,25 +1768,11 @@
       "launchYear": "1897"
     },
     {
-      "name": "SS Potsdam (1935)",
-      "slug": "ss-potsdam-1935",
-      "url": "/ships/ss-potsdam-1935",
-      "operator": "Norddeutscher Lloyd (North German Lloyd)",
-      "launchYear": "1935"
-    },
-    {
       "name": "SS President Lincoln",
       "slug": "ss-president-lincoln",
       "url": "/ships/ss-president-lincoln",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1903"
-    },
-    {
-      "name": "SS Russia (1867)",
-      "slug": "ss-russia-1867",
-      "url": "/ships/ss-russia-1867",
-      "operator": "Cunard Line",
-      "launchYear": "1867"
     },
     {
       "name": "SS Vestris",
