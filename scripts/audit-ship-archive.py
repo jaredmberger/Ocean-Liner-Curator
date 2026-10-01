@@ -356,7 +356,19 @@ def main() -> None:
         and path.endswith(".html")
         and Path(path).name != "ships.html"
     }
-    known_nonship = {"tall-ships-guide"}
+    known_nonship = {
+        "tall-ships-guide",
+        "index",
+        "ocean-liner-evolution-map",
+        "ocean-liner-speed-record-table",
+        "propulsion-technology-timeline",
+        "rms-queen-mary-timeline",
+        "routes-and-trade-lanes-timeline",
+        "ss-leviathan-timeline",
+        "ss-united-states-timeline",
+        "timeline-1900-1960",
+        "titanic-southampton-to-rescue-timeline",
+    }
     orphan_guides = sorted(tracked_guides - archive_slugs - known_nonship)
     for slug in orphan_guides:
         warn("orphan-guide-html", slug=slug, file=f"ships/{slug}.html")
