@@ -20,6 +20,7 @@ SHIP_SITEMAP = ROOT / "sitemaps" / "sitemap-ships.xml"
 RANDOM_FILES = [ROOT / "random-ship.js", ROOT / "assets" / "random-ship.js"]
 DETAIL_DIR = ROOT / "api" / "device" / "ships"
 BUILDERS = ROOT / "data" / "builders.json"
+CONSISTENCY_REPORT = ROOT / "api" / "device" / "archive-consistency.json"
 INTELLIGENCE_FEEDS = [
     ROOT / "data" / "curatoros-archive-gaps.json",
     ROOT / "data" / "curatoros-builders.json",
@@ -55,7 +56,7 @@ def diff(expected: set[str], actual: set[str]) -> dict:
     }
 
 
-def feed_summary(path: Path) -> dict:
+def feed_summary(path: Path, include_generated_at: bool = True) -> dict:
     item = {"file": path.relative_to(ROOT).as_posix(), "exists": path.is_file()}
     if not path.is_file():
         item["status"] = "missing"
@@ -65,10 +66,9 @@ def feed_summary(path: Path) -> dict:
     except Exception as exc:
         item.update(status="invalid-json", error=str(exc))
         return item
-    item.update(
-        status="ok",
-        generatedAt=payload.get("generatedAt") or payload.get("generated"),
-    )
+    item["status"] = "ok"
+    if include_generated_at:
+        item["generatedAt"] = payload.get("generatedAt") or payload.get("generated")
     counts = payload.get("counts")
     if isinstance(counts, dict):
         item["counts"] = counts
@@ -145,13 +145,31 @@ def main() -> None:
         note="Incomplete builder coverage is allowed; only references to nonexistent archive IDs are flagged.",
     )
 
-    intelligence = [feed_summary(path) for path in INTELLIGENCE_FEEDS]
+    intelligence = [feed_summary(path, include_generated_at=False) for path in INTELLIGENCE_FEEDS]
     missing_or_invalid = [x["file"] for x in intelligence if x.get("status") != "ok"]
     add(
         "curatoros-intelligence-feeds-readable",
         not missing_or_invalid,
         severity="warning",
         affected=missing_or_invalid,
+    )
+
+    consistency = feed_summary(CONSISTENCY_REPORT, include_generated_at=False)
+    consistency_errors = None
+    consistency_warnings = None
+    if CONSISTENCY_REPORT.is_file():
+        try:
+            consistency_payload = json.loads(CONSISTENCY_REPORT.read_text(encoding="utf-8"))
+            consistency_errors = consistency_payload.get("counts", {}).get("errors")
+            consistency_warnings = consistency_payload.get("counts", {}).get("warnings")
+        except Exception:
+            pass
+    add(
+        "ship-archive-consistency",
+        consistency.get("status") == "ok" and consistency_errors == 0,
+        report=consistency,
+        errors=consistency_errors,
+        warnings=consistency_warnings,
     )
 
     errors = [c for c in checks if not c["ok"] and c["severity"] == "error"]
@@ -176,6 +194,7 @@ def main() -> None:
         "freshness": {
             "archive": feed_summary(ARCHIVE),
             "builders": builder_report,
+            "archiveConsistency": consistency,
             "intelligenceFeeds": intelligence,
         },
         "checks": checks,

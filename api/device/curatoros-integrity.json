@@ -34,42 +34,54 @@
         "needsReview": 29
       }
     },
+    "archiveConsistency": {
+      "file": "api/device/archive-consistency.json",
+      "exists": true,
+      "status": "ok",
+      "counts": {
+        "errors": 0,
+        "warnings": 260,
+        "archiveCards": 347,
+        "inlineLinkErrors": 0,
+        "imageErrors": 0,
+        "structuralWarnings": 95,
+        "yearWarnings": 11,
+        "orphanGuides": 10,
+        "orphanImages": 19,
+        "relatedLinerRefs": 227,
+        "relatedLinerUnresolved": 0
+      }
+    },
     "intelligenceFeeds": [
       {
         "file": "data/curatoros-archive-gaps.json",
         "exists": true,
-        "status": "ok",
-        "generatedAt": "2026-10-01T04:09:02.541Z"
+        "status": "ok"
       },
       {
         "file": "data/curatoros-builders.json",
         "exists": true,
-        "status": "ok",
-        "generatedAt": "2026-10-01T04:09:00.302Z"
+        "status": "ok"
       },
       {
         "file": "data/curatoros-classes-sisters.json",
         "exists": true,
-        "status": "ok",
-        "generatedAt": "2026-10-01T04:09:02.378Z"
+        "status": "ok"
       },
       {
         "file": "data/curatoros-eras.json",
         "exists": true,
-        "status": "ok",
-        "generatedAt": "2026-10-01T04:09:01.375Z"
+        "status": "ok"
       },
       {
         "file": "data/curatoros-operators.json",
         "exists": true,
-        "status": "ok",
-        "generatedAt": "2026-10-01T04:09:00.302Z"
+        "status": "ok"
       },
       {
         "file": "data/curatoros-yards.json",
         "exists": true,
-        "status": "ok",
-        "generatedAt": "2026-10-01T04:09:00.302Z"
+        "status": "ok"
       }
     ]
   },
@@ -141,6 +153,31 @@
       "ok": true,
       "severity": "warning",
       "affected": []
+    },
+    {
+      "name": "ship-archive-consistency",
+      "ok": true,
+      "severity": "error",
+      "report": {
+        "file": "api/device/archive-consistency.json",
+        "exists": true,
+        "status": "ok",
+        "counts": {
+          "errors": 0,
+          "warnings": 260,
+          "archiveCards": 347,
+          "inlineLinkErrors": 0,
+          "imageErrors": 0,
+          "structuralWarnings": 95,
+          "yearWarnings": 11,
+          "orphanGuides": 10,
+          "orphanImages": 19,
+          "relatedLinerRefs": 227,
+          "relatedLinerUnresolved": 0
+        }
+      },
+      "errors": 0,
+      "warnings": 260
     }
   ]
 }

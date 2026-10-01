@@ -19,6 +19,7 @@ on:
       - 'scripts/build-device-archive.py'
       - 'scripts/sync-ship-sitemaps.py'
       - 'scripts/build-curatoros-integrity.py'
+      - 'scripts/audit-ship-archive.py'
       - 'random-ship.js'
       - 'assets/random-ship.js'
       - 'data/builders.json'
@@ -43,6 +44,7 @@ on:
       - 'scripts/build-device-archive.py'
       - 'scripts/sync-ship-sitemaps.py'
       - 'scripts/build-curatoros-integrity.py'
+      - 'scripts/audit-ship-archive.py'
       - 'random-ship.js'
       - 'assets/random-ship.js'
       - 'data/builders.json'
@@ -70,8 +72,10 @@ jobs:
             scripts/build-device-archive.py
             scripts/sync-ship-sitemaps.py
             scripts/build-curatoros-integrity.py
+            scripts/audit-ship-archive.py
             random-ship.js
             assets/random-ship.js
+            assets/related-liners.js
             data/builders.json
             data/curatoros-*.json
             sitemap.xml
@@ -84,6 +88,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Audit ship archive consistency
+        run: python scripts/audit-ship-archive.py
+
       - name: Generate device feeds
         run: python scripts/build-device-archive.py
 
@@ -95,7 +102,7 @@ jobs:
 
       - name: Verify generated output on pull requests
         if: github.event_name == 'pull_request'
-        run: git diff --exit-code -- api/device sitemap.xml sitemaps/sitemap-ships.xml random-ship.js assets/random-ship.js
+        run: git diff --exit-code -- api/device sitemap.xml sitemaps/sitemap-ships.xml random-ship.js assets/random-ship.js ':(exclude)api/device/archive-consistency.json'
 
       - name: Commit generated output
         if: github.event_name != 'pull_request'
