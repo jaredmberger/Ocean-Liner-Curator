@@ -7,10 +7,10 @@
     "archiveGenerated": "2026-10-01"
   },
   "counts": {
-    "archive": 347,
-    "randomEligible": 346,
-    "sitemapShips": 347,
-    "deviceDetails": 347,
+    "archive": 348,
+    "randomEligible": 347,
+    "sitemapShips": 348,
+    "deviceDetails": 348,
     "errors": 0,
     "warnings": 0
   },
@@ -90,15 +90,15 @@
       "name": "archive-minimum",
       "ok": true,
       "severity": "error",
-      "count": 347,
+      "count": 348,
       "minimum": 300
     },
     {
       "name": "archive-declared-count",
       "ok": true,
       "severity": "error",
-      "declared": 347,
-      "actual": 347
+      "declared": 348,
+      "actual": 348
     },
     {
       "name": "ship-sitemap-reconciliation",
@@ -120,21 +120,21 @@
       "name": "random-ship-reconciliation",
       "ok": true,
       "severity": "error",
-      "expectedCount": 346,
+      "expectedCount": 347,
       "intentionalExclusions": [
         "tall-ships-guide"
       ],
       "files": [
         {
           "file": "random-ship.js",
-          "count": 346,
+          "count": 347,
           "missing": [],
           "extra": [],
           "match": true
         },
         {
           "file": "assets/random-ship.js",
-          "count": 346,
+          "count": 347,
           "missing": [],
           "extra": [],
           "match": true
