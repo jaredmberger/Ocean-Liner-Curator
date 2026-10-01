@@ -435,6 +435,18 @@ def main() -> None:
     for item in errors:
         print(f"ERROR {item['code']}: {json.dumps(item, ensure_ascii=False)}")
     if warnings:
+        structural_codes = {
+            "missing-standard-section",
+            "missing-sources-section",
+            "missing-evidence-badge",
+            "missing-standard-asset",
+            "missing-site-header-mount",
+        }
+        structural = [item for item in warnings if item.get("code") in structural_codes]
+        if structural:
+            print(f"Structural warnings: {len(structural)}")
+            for item in structural:
+                print(f"STRUCTURAL {item['code']}: {json.dumps(item, ensure_ascii=False)}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
