@@ -500,6 +500,11 @@ def main() -> None:
             print(f"Namesake warnings: {len(namesake_items)}")
             for item in namesake_items:
                 print(f"NAMESAKE_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        source_items = [item for item in warnings if item.get("code") in {"duplicate-source-url", "no-external-selected-source"}]
+        if source_items:
+            print(f"Source hygiene warnings: {len(source_items)}")
+            for item in source_items:
+                print(f"SOURCE_WARNING: {json.dumps(item, ensure_ascii=False)}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
