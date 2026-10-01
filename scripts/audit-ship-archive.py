@@ -416,13 +416,24 @@ def main() -> None:
         )
         if not section:
             continue
-        hrefs = re.findall(r'<a\b[^>]*href=["\']([^"\']+)["\']', section.group(1), re.I)
+        source_html = section.group(1)
+        hrefs = re.findall(r'<a\b[^>]*href=["\']([^"\']+)["\']', source_html, re.I)
         duplicates = [href for href, count in Counter(hrefs).items() if count > 1]
         if duplicates:
             warn("duplicate-source-url", slug=slug, hrefs=sorted(duplicates))
-        external = [href for href in hrefs if href.startswith("http")]
-        if not external:
-            warn("no-external-selected-source", slug=slug)
+
+        # A selected source does not need to be hyperlinked to be useful.
+        # Count substantive bibliography entries, excluding the generic master bibliography.
+        list_items = [
+            clean(item)
+            for item in re.findall(r"<li\b[^>]*>([\s\S]*?)</li>", source_html, re.I)
+        ]
+        specific_items = [
+            item for item in list_items
+            if item and "Ocean Liner Curator — Sources" not in item
+        ]
+        if not specific_items:
+            warn("no-specific-selected-source", slug=slug)
 
     # 10. Related Liners references must resolve to archive guides.
     if RELATED.is_file():
@@ -500,6 +511,11 @@ def main() -> None:
             print(f"Namesake warnings: {len(namesake_items)}")
             for item in namesake_items:
                 print(f"NAMESAKE_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        source_items = [item for item in warnings if item.get("code") in {"duplicate-source-url", "no-specific-selected-source"}]
+        if source_items:
+            print(f"Source hygiene warnings: {len(source_items)}")
+            for item in source_items:
+                print(f"SOURCE_WARNING: {json.dumps(item, ensure_ascii=False)}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
