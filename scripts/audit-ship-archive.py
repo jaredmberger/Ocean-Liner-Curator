@@ -176,8 +176,19 @@ def main() -> None:
     name_groups = defaultdict(list)
     for card in cards:
         name_groups[sort_key(card["name"])].append(card["href"])
+
+    intentional_namesake_groups = {
+        frozenset({
+            "/ships/ss-george-washington-ngl.html",
+            "/ships/ss-george-washington.html",
+        }),
+    }
+
     for name, hrefs in sorted(name_groups.items()):
         if len(hrefs) > 1:
+            href_set = frozenset(hrefs)
+            if href_set in intentional_namesake_groups:
+                continue
             warn("possible-namesake", normalizedName=name, hrefs=hrefs)
 
     breaks = []
@@ -484,6 +495,11 @@ def main() -> None:
             print(f"Year consistency warnings: {len(year_items)}")
             for item in year_items:
                 print(f"YEAR_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        namesake_items = [item for item in warnings if item.get("code") == "possible-namesake"]
+        if namesake_items:
+            print(f"Namesake warnings: {len(namesake_items)}")
+            for item in namesake_items:
+                print(f"NAMESAKE_WARNING: {json.dumps(item, ensure_ascii=False)}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
