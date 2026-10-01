@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:24:06.077Z",
+  "generatedAt": "2026-10-01T08:26:45.805Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,11 +12,11 @@
   },
   "summary": {
     "shipGuides": 346,
-    "editorialOrphans": 74,
-    "oneEditorialInbound": 161,
-    "threePlusEditorialInbound": 40,
-    "totalEditorialInboundLinks": 545,
-    "averageEditorialInbound": 1.58
+    "editorialOrphans": 66,
+    "oneEditorialInbound": 163,
+    "threePlusEditorialInbound": 44,
+    "totalEditorialInboundLinks": 564,
+    "averageEditorialInbound": 1.63
   },
   "orphanedShips": [
     {
@@ -372,17 +372,6 @@
       "sources": []
     },
     {
-      "name": "SS Cristoforo Colombo",
-      "slug": "ss-cristoforo-colombo",
-      "url": "/ships/ss-cristoforo-colombo",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Dakota (1905)",
       "slug": "ss-dakota",
       "url": "/ships/ss-dakota",
@@ -507,17 +496,6 @@
       "name": "SS Lake Michigan",
       "slug": "ss-lake-michigan",
       "url": "/ships/ss-lake-michigan",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Leonardo da Vinci",
-      "slug": "ss-leonardo-da-vinci",
-      "url": "/ships/ss-leonardo-da-vinci",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -680,17 +658,6 @@
       "sources": []
     },
     {
-      "name": "SS Potsdam (1900)",
-      "slug": "ss-potsdam",
-      "url": "/ships/ss-potsdam",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS President Coolidge",
       "slug": "ss-president-coolidge",
       "url": "/ships/ss-president-coolidge",
@@ -702,31 +669,9 @@
       "sources": []
     },
     {
-      "name": "SS President Harding (1921)",
-      "slug": "ss-president-harding",
-      "url": "/ships/ss-president-harding",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS President Hoover",
       "slug": "ss-president-hoover",
       "url": "/ships/ss-president-hoover",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS President Roosevelt (1922)",
-      "slug": "ss-president-roosevelt",
-      "url": "/ships/ss-president-roosevelt",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -749,28 +694,6 @@
       "name": "SS Resolute",
       "slug": "ss-resolute",
       "url": "/ships/ss-resolute",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Rotterdam (1959)",
-      "slug": "ss-rotterdam-1959",
-      "url": "/ships/ss-rotterdam-1959",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Statendam (1929)",
-      "slug": "ss-statendam-1929",
-      "url": "/ships/ss-statendam-1929",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -804,17 +727,6 @@
       "name": "SS Virginia",
       "slug": "ss-virginia",
       "url": "/ships/ss-virginia",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Washington",
-      "slug": "ss-washington",
-      "url": "/ships/ss-washington",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -2508,6 +2420,25 @@
       ]
     },
     {
+      "name": "SS Cristoforo Colombo",
+      "slug": "ss-cristoforo-colombo",
+      "url": "/ships/ss-cristoforo-colombo",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Cuba",
       "slug": "ss-cuba",
       "url": "/ships/ss-cuba",
@@ -3059,6 +2990,25 @@
       ]
     },
     {
+      "name": "SS Leonardo da Vinci",
+      "slug": "ss-leonardo-da-vinci",
+      "url": "/ships/ss-leonardo-da-vinci",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Malta",
       "slug": "ss-malta",
       "url": "/ships/ss-malta",
@@ -3074,25 +3024,6 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Manhattan (1932)",
-      "slug": "ss-manhattan",
-      "url": "/ships/ss-manhattan",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/tourist-third-cabin-democratization.html",
-          "sourceRoute": "/collections/tourist-third-cabin-democratization",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -3287,25 +3218,6 @@
       ]
     },
     {
-      "name": "SS Nieuw Amsterdam",
-      "slug": "ss-nieuw-amsterdam",
-      "url": "/ships/ss-nieuw-amsterdam",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/tourist-third-cabin-democratization.html",
-          "sourceRoute": "/collections/tourist-third-cabin-democratization",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Noordam",
       "slug": "ss-noordam",
       "url": "/ships/ss-noordam",
@@ -3458,9 +3370,66 @@
       ]
     },
     {
+      "name": "SS Potsdam (1900)",
+      "slug": "ss-potsdam",
+      "url": "/ships/ss-potsdam",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Potsdam (1935)",
       "slug": "ss-potsdam-1935",
       "url": "/ships/ss-potsdam-1935",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS President Harding (1921)",
+      "slug": "ss-president-harding",
+      "url": "/ships/ss-president-harding",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS President Roosevelt (1922)",
+      "slug": "ss-president-roosevelt",
+      "url": "/ships/ss-president-roosevelt",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -3553,44 +3522,6 @@
       ]
     },
     {
-      "name": "SS Republic",
-      "slug": "ss-republic",
-      "url": "/ships/ss-republic",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Rijndam (1901)",
-      "slug": "ss-rijndam-1901",
-      "url": "/ships/ss-rijndam-1901",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Rochambeau",
       "slug": "ss-rochambeau",
       "url": "/ships/ss-rochambeau",
@@ -3643,6 +3574,25 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Rotterdam (1959)",
+      "slug": "ss-rotterdam-1959",
+      "url": "/ships/ss-rotterdam-1959",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -3743,6 +3693,25 @@
       ]
     },
     {
+      "name": "SS Statendam (1929)",
+      "slug": "ss-statendam-1929",
+      "url": "/ships/ss-statendam-1929",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Storstad",
       "slug": "ss-storstad",
       "url": "/ships/ss-storstad",
@@ -3781,9 +3750,9 @@
       ]
     },
     {
-      "name": "SS Veendam",
-      "slug": "ss-veendam",
-      "url": "/ships/ss-veendam",
+      "name": "SS Washington",
+      "slug": "ss-washington",
+      "url": "/ships/ss-washington",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -3793,27 +3762,8 @@
       },
       "sources": [
         {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Volendam",
-      "slug": "ss-volendam",
-      "url": "/ships/ss-volendam",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -4249,17 +4199,6 @@
       "sources": []
     },
     {
-      "name": "SS Cristoforo Colombo",
-      "slug": "ss-cristoforo-colombo",
-      "url": "/ships/ss-cristoforo-colombo",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Dakota (1905)",
       "slug": "ss-dakota",
       "url": "/ships/ss-dakota",
@@ -4384,17 +4323,6 @@
       "name": "SS Lake Michigan",
       "slug": "ss-lake-michigan",
       "url": "/ships/ss-lake-michigan",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Leonardo da Vinci",
-      "slug": "ss-leonardo-da-vinci",
-      "url": "/ships/ss-leonardo-da-vinci",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4557,17 +4485,6 @@
       "sources": []
     },
     {
-      "name": "SS Potsdam (1900)",
-      "slug": "ss-potsdam",
-      "url": "/ships/ss-potsdam",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS President Coolidge",
       "slug": "ss-president-coolidge",
       "url": "/ships/ss-president-coolidge",
@@ -4579,31 +4496,9 @@
       "sources": []
     },
     {
-      "name": "SS President Harding (1921)",
-      "slug": "ss-president-harding",
-      "url": "/ships/ss-president-harding",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS President Hoover",
       "slug": "ss-president-hoover",
       "url": "/ships/ss-president-hoover",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS President Roosevelt (1922)",
-      "slug": "ss-president-roosevelt",
-      "url": "/ships/ss-president-roosevelt",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4626,28 +4521,6 @@
       "name": "SS Resolute",
       "slug": "ss-resolute",
       "url": "/ships/ss-resolute",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Rotterdam (1959)",
-      "slug": "ss-rotterdam-1959",
-      "url": "/ships/ss-rotterdam-1959",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Statendam (1929)",
-      "slug": "ss-statendam-1929",
-      "url": "/ships/ss-statendam-1929",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4681,17 +4554,6 @@
       "name": "SS Virginia",
       "slug": "ss-virginia",
       "url": "/ships/ss-virginia",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Washington",
-      "slug": "ss-washington",
-      "url": "/ships/ss-washington",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -6383,6 +6245,25 @@
       ]
     },
     {
+      "name": "SS Cristoforo Colombo",
+      "slug": "ss-cristoforo-colombo",
+      "url": "/ships/ss-cristoforo-colombo",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Cuba",
       "slug": "ss-cuba",
       "url": "/ships/ss-cuba",
@@ -6934,6 +6815,25 @@
       ]
     },
     {
+      "name": "SS Leonardo da Vinci",
+      "slug": "ss-leonardo-da-vinci",
+      "url": "/ships/ss-leonardo-da-vinci",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Malta",
       "slug": "ss-malta",
       "url": "/ships/ss-malta",
@@ -6949,25 +6849,6 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Manhattan (1932)",
-      "slug": "ss-manhattan",
-      "url": "/ships/ss-manhattan",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/tourist-third-cabin-democratization.html",
-          "sourceRoute": "/collections/tourist-third-cabin-democratization",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -7162,25 +7043,6 @@
       ]
     },
     {
-      "name": "SS Nieuw Amsterdam",
-      "slug": "ss-nieuw-amsterdam",
-      "url": "/ships/ss-nieuw-amsterdam",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/tourist-third-cabin-democratization.html",
-          "sourceRoute": "/collections/tourist-third-cabin-democratization",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Noordam",
       "slug": "ss-noordam",
       "url": "/ships/ss-noordam",
@@ -7333,9 +7195,66 @@
       ]
     },
     {
+      "name": "SS Potsdam (1900)",
+      "slug": "ss-potsdam",
+      "url": "/ships/ss-potsdam",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Potsdam (1935)",
       "slug": "ss-potsdam-1935",
       "url": "/ships/ss-potsdam-1935",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS President Harding (1921)",
+      "slug": "ss-president-harding",
+      "url": "/ships/ss-president-harding",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS President Roosevelt (1922)",
+      "slug": "ss-president-roosevelt",
+      "url": "/ships/ss-president-roosevelt",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -7428,44 +7347,6 @@
       ]
     },
     {
-      "name": "SS Republic",
-      "slug": "ss-republic",
-      "url": "/ships/ss-republic",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Rijndam (1901)",
-      "slug": "ss-rijndam-1901",
-      "url": "/ships/ss-rijndam-1901",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Rochambeau",
       "slug": "ss-rochambeau",
       "url": "/ships/ss-rochambeau",
@@ -7518,6 +7399,25 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Rotterdam (1959)",
+      "slug": "ss-rotterdam-1959",
+      "url": "/ships/ss-rotterdam-1959",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -7618,6 +7518,25 @@
       ]
     },
     {
+      "name": "SS Statendam (1929)",
+      "slug": "ss-statendam-1929",
+      "url": "/ships/ss-statendam-1929",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Storstad",
       "slug": "ss-storstad",
       "url": "/ships/ss-storstad",
@@ -7656,9 +7575,9 @@
       ]
     },
     {
-      "name": "SS Veendam",
-      "slug": "ss-veendam",
-      "url": "/ships/ss-veendam",
+      "name": "SS Washington",
+      "slug": "ss-washington",
+      "url": "/ships/ss-washington",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -7668,27 +7587,8 @@
       },
       "sources": [
         {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Volendam",
-      "slug": "ss-volendam",
-      "url": "/ships/ss-volendam",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -8544,56 +8444,6 @@
       ]
     },
     {
-      "name": "SS America",
-      "slug": "ss-america",
-      "url": "/ships/ss-america",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
-          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Andrea Doria",
-      "slug": "ss-andrea-doria",
-      "url": "/ships/ss-andrea-doria",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
-          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Arctic",
       "slug": "ss-arctic",
       "url": "/ships/ss-arctic",
@@ -9039,6 +8889,31 @@
       ]
     },
     {
+      "name": "SS Manhattan (1932)",
+      "slug": "ss-manhattan",
+      "url": "/ships/ss-manhattan",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/tourist-third-cabin-democratization.html",
+          "sourceRoute": "/collections/tourist-third-cabin-democratization",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "SS Medic",
       "slug": "ss-medic",
       "url": "/ships/ss-medic",
@@ -9164,27 +9039,27 @@
       ]
     },
     {
-      "name": "SS Nieuw Amsterdam (1906)",
-      "slug": "ss-nieuw-amsterdam-1906",
-      "url": "/ships/ss-nieuw-amsterdam-1906",
+      "name": "SS Nieuw Amsterdam",
+      "slug": "ss-nieuw-amsterdam",
+      "url": "/ships/ss-nieuw-amsterdam",
       "inboundTotal": 3,
       "editorialInbound": 2,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "hub-history": 1,
-        "ship-guide": 1
+        "collection": 1,
+        "hub-history": 1
       },
       "sources": [
         {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
+          "sourcePath": "collections/tourist-third-cabin-democratization.html",
+          "sourceRoute": "/collections/tourist-third-cabin-democratization",
+          "sourceCategory": "collection"
         },
         {
-          "sourcePath": "ships/ss-nieuw-amsterdam.html",
-          "sourceRoute": "/ships/ss-nieuw-amsterdam",
-          "sourceCategory": "ship-guide"
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -9387,16 +9262,15 @@
       ]
     },
     {
-      "name": "SS Rotterdam (1908)",
-      "slug": "ss-rotterdam-1908",
-      "url": "/ships/ss-rotterdam-1908",
+      "name": "SS Republic",
+      "slug": "ss-republic",
+      "url": "/ships/ss-republic",
       "inboundTotal": 3,
       "editorialInbound": 2,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "hub-history": 1,
-        "ship-guide": 1
+        "hub-history": 2
       },
       "sources": [
         {
@@ -9405,9 +9279,33 @@
           "sourceCategory": "hub-history"
         },
         {
-          "sourcePath": "ships/ss-nieuw-amsterdam-1906.html",
-          "sourceRoute": "/ships/ss-nieuw-amsterdam-1906",
-          "sourceCategory": "ship-guide"
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Rijndam (1901)",
+      "slug": "ss-rijndam-1901",
+      "url": "/ships/ss-rijndam-1901",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -9458,6 +9356,54 @@
           "sourcePath": "ships/ss-medic.html",
           "sourceRoute": "/ships/ss-medic",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Veendam",
+      "slug": "ss-veendam",
+      "url": "/ships/ss-veendam",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Volendam",
+      "slug": "ss-volendam",
+      "url": "/ships/ss-volendam",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -9721,6 +9667,37 @@
       ]
     },
     {
+      "name": "SS America",
+      "slug": "ss-america",
+      "url": "/ships/ss-america",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Amerika (1905)",
       "slug": "ss-amerika-1905",
       "url": "/ships/ss-amerika-1905",
@@ -9747,6 +9724,37 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Andrea Doria",
+      "slug": "ss-andrea-doria",
+      "url": "/ships/ss-andrea-doria",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
+          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9901,6 +9909,36 @@
       ]
     },
     {
+      "name": "SS Nieuw Amsterdam (1906)",
+      "slug": "ss-nieuw-amsterdam-1906",
+      "url": "/ships/ss-nieuw-amsterdam-1906",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 2,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ss-nieuw-amsterdam.html",
+          "sourceRoute": "/ships/ss-nieuw-amsterdam",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Nomadic",
       "slug": "ss-nomadic",
       "url": "/ships/ss-nomadic",
@@ -9954,6 +9992,36 @@
         {
           "sourcePath": "ships/timeline-1900-1960.html",
           "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Rotterdam (1908)",
+      "slug": "ss-rotterdam-1908",
+      "url": "/ships/ss-rotterdam-1908",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 2,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ss-nieuw-amsterdam-1906.html",
+          "sourceRoute": "/ships/ss-nieuw-amsterdam-1906",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -11182,103 +11250,6 @@
       ]
     },
     {
-      "name": "SS United States",
-      "slug": "ss-us",
-      "url": "/ships/ss-us",
-      "inboundTotal": 17,
-      "editorialInbound": 16,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 6,
-        "collection": 5,
-        "hub-history": 1,
-        "ship-guide": 4
-      },
-      "sources": [
-        {
-          "sourcePath": "250-years-across-the-atlantic.html",
-          "sourceRoute": "/250-years-across-the-atlantic",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/blue-riband-era.html",
-          "sourceRoute": "/collections/blue-riband-era",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/from-leviathan-to-united-states.html",
-          "sourceRoute": "/collections/from-leviathan-to-united-states",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
-          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
-          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "from-ocean-liners-to-sail250.html",
-          "sourceRoute": "/from-ocean-liners-to-sail250",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
-          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ss-united-states-timeline.html",
-          "sourceRoute": "/ships/ss-united-states-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ss-united-states-public-rooms.html",
-          "sourceRoute": "/ss-united-states-public-rooms",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ss-united-states.html",
-          "sourceRoute": "/ss-united-states",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-ss-leviathan-matters.html",
-          "sourceRoute": "/why-ss-leviathan-matters",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "RMS Olympic",
       "slug": "rms-olympic",
       "url": "/ships/rms-olympic",
@@ -11376,6 +11347,108 @@
         {
           "sourcePath": "why-rms-olympic-matters.html",
           "sourceRoute": "/why-rms-olympic-matters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS United States",
+      "slug": "ss-us",
+      "url": "/ships/ss-us",
+      "inboundTotal": 18,
+      "editorialInbound": 17,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 6,
+        "collection": 5,
+        "hub-history": 2,
+        "ship-guide": 4
+      },
+      "sources": [
+        {
+          "sourcePath": "250-years-across-the-atlantic.html",
+          "sourceRoute": "/250-years-across-the-atlantic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/from-leviathan-to-united-states.html",
+          "sourceRoute": "/collections/from-leviathan-to-united-states",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
+          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "from-ocean-liners-to-sail250.html",
+          "sourceRoute": "/from-ocean-liners-to-sail250",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
+          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-united-states-timeline.html",
+          "sourceRoute": "/ships/ss-united-states-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ss-united-states-public-rooms.html",
+          "sourceRoute": "/ss-united-states-public-rooms",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ss-united-states.html",
+          "sourceRoute": "/ss-united-states",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-ss-leviathan-matters.html",
+          "sourceRoute": "/why-ss-leviathan-matters",
           "sourceCategory": "article-reference"
         }
       ]
