@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-01T03:57:01.826Z",
+  "generatedAt": "2026-10-01T04:03:09.020Z",
   "summary": {
-    "shipGuides": 344,
+    "shipGuides": 345,
     "canonicalBuilders": 84,
-    "guidesWithBuilder": 344
+    "guidesWithBuilder": 345
   },
   "builders": [
     {
@@ -1528,6 +1528,72 @@
       ]
     },
     {
+      "id": "j-and-g-thomson",
+      "name": "J. & G. Thomson",
+      "shipCount": 7,
+      "locations": [
+        "Clydebank",
+        "Clydebank / Glasgow area, Scotland",
+        "Clydebank, Scotland",
+        "Clydebank/Glasgow, Scotland",
+        "Glasgow",
+        "Glasgow, Scotland"
+      ],
+      "firstLaunchYear": 1865,
+      "lastLaunchYear": 1888,
+      "ships": [
+        {
+          "name": "SS Java",
+          "url": "/ships/ss-java",
+          "launchYear": "1865",
+          "operator": "Cunard Line",
+          "builderRaw": "J. & G. Thomson & Co., Glasgow"
+        },
+        {
+          "name": "SS Malta",
+          "url": "/ships/ss-malta",
+          "launchYear": "1865",
+          "operator": "Cunard Line",
+          "builderRaw": "J. & G. Thomson & Co., Glasgow"
+        },
+        {
+          "name": "SS Russia (1867)",
+          "url": "/ships/ss-russia-1867",
+          "launchYear": "1867",
+          "operator": "Cunard Line",
+          "builderRaw": "J. & G. Thomson & Co., Glasgow, Scotland"
+        },
+        {
+          "name": "SS Bothnia",
+          "url": "/ships/ss-bothnia",
+          "launchYear": "1874",
+          "operator": "Cunard Line / British & North American Royal Mail Steam Packet Company",
+          "builderRaw": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland"
+        },
+        {
+          "name": "RMS Servia",
+          "url": "/ships/rms-servia-1881",
+          "launchYear": "1881",
+          "operator": "Cunard Line",
+          "builderRaw": "J. & G. Thomson, Clydebank"
+        },
+        {
+          "name": "SS City of New York (1888)",
+          "url": "/ships/ss-city-of-new-york-1888",
+          "launchYear": "1888",
+          "operator": "Inman & International Steamship Co.",
+          "builderRaw": "J. & G. Thomson, Clydebank, Scotland"
+        },
+        {
+          "name": "SS City of Paris",
+          "url": "/ships/ss-city-of-paris",
+          "launchYear": "1888",
+          "operator": "Inman Line (later controlled/merged into International Navigation / American Line)",
+          "builderRaw": "J. & G. Thomson (Clydebank/Glasgow, Scotland)"
+        }
+      ]
+    },
+    {
       "id": "william-beardmore-and-co",
       "name": "William Beardmore & Co.",
       "shipCount": 7,
@@ -1644,64 +1710,6 @@
           "launchYear": "1928",
           "operator": "P&O Steam Navigation Company",
           "builderRaw": "Alexander Stephen & Sons (Glasgow)"
-        }
-      ]
-    },
-    {
-      "id": "j-and-g-thomson",
-      "name": "J. & G. Thomson",
-      "shipCount": 6,
-      "locations": [
-        "Clydebank",
-        "Clydebank / Glasgow area, Scotland",
-        "Clydebank, Scotland",
-        "Clydebank/Glasgow, Scotland",
-        "Glasgow"
-      ],
-      "firstLaunchYear": 1865,
-      "lastLaunchYear": 1888,
-      "ships": [
-        {
-          "name": "SS Java",
-          "url": "/ships/ss-java",
-          "launchYear": "1865",
-          "operator": "Cunard Line",
-          "builderRaw": "J. & G. Thomson & Co., Glasgow"
-        },
-        {
-          "name": "SS Malta",
-          "url": "/ships/ss-malta",
-          "launchYear": "1865",
-          "operator": "Cunard Line",
-          "builderRaw": "J. & G. Thomson & Co., Glasgow"
-        },
-        {
-          "name": "SS Bothnia",
-          "url": "/ships/ss-bothnia",
-          "launchYear": "1874",
-          "operator": "Cunard Line / British & North American Royal Mail Steam Packet Company",
-          "builderRaw": "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland"
-        },
-        {
-          "name": "RMS Servia",
-          "url": "/ships/rms-servia-1881",
-          "launchYear": "1881",
-          "operator": "Cunard Line",
-          "builderRaw": "J. & G. Thomson, Clydebank"
-        },
-        {
-          "name": "SS City of New York (1888)",
-          "url": "/ships/ss-city-of-new-york-1888",
-          "launchYear": "1888",
-          "operator": "Inman & International Steamship Co.",
-          "builderRaw": "J. & G. Thomson, Clydebank, Scotland"
-        },
-        {
-          "name": "SS City of Paris",
-          "url": "/ships/ss-city-of-paris",
-          "launchYear": "1888",
-          "operator": "Inman Line (later controlled/merged into International Navigation / American Line)",
-          "builderRaw": "J. & G. Thomson (Clydebank/Glasgow, Scotland)"
         }
       ]
     },

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T03:57:01.826Z",
+  "generatedAt": "2026-10-01T04:03:09.020Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 344,
-    "guidesWithDocumentedYard": 344,
+    "shipGuides": 345,
+    "guidesWithDocumentedYard": 345,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 73,
     "multiYardShips": 0
@@ -2457,6 +2457,34 @@
       ]
     },
     {
+      "id": "glasgow-scotland",
+      "name": "Glasgow, Scotland",
+      "rawValues": [
+        "Glasgow, Scotland"
+      ],
+      "builders": [
+        "J. & G. Thomson",
+        "Robert Napier & Sons"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS China (1862)",
+          "path": "ships/ss-china-1862.html",
+          "url": "/ships/ss-china-1862",
+          "launchYear": "1861",
+          "builder": "Robert Napier & Sons"
+        },
+        {
+          "name": "SS Russia (1867)",
+          "path": "ships/ss-russia-1867.html",
+          "url": "/ships/ss-russia-1867",
+          "launchYear": "1867",
+          "builder": "J. & G. Thomson"
+        }
+      ]
+    },
+    {
       "id": "hebburn-on-tyne",
       "name": "Hebburn-on-Tyne",
       "rawValues": [
@@ -2880,26 +2908,6 @@
           "url": "/ships/ss-prinz-friedrich-wilhelm",
           "launchYear": "1907",
           "builder": "Joh. C. Tecklenborg"
-        }
-      ]
-    },
-    {
-      "id": "glasgow-scotland",
-      "name": "Glasgow, Scotland",
-      "rawValues": [
-        "Glasgow, Scotland"
-      ],
-      "builders": [
-        "Robert Napier & Sons"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS China (1862)",
-          "path": "ships/ss-china-1862.html",
-          "url": "/ships/ss-china-1862",
-          "launchYear": "1861",
-          "builder": "Robert Napier & Sons"
         }
       ]
     },
@@ -7888,6 +7896,20 @@
           "builderId": "harland-and-wolff",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS Russia (1867)",
+      "path": "ships/ss-russia-1867.html",
+      "url": "/ships/ss-russia-1867",
+      "launchYear": "1867",
+      "assignments": [
+        {
+          "builder": "J. & G. Thomson",
+          "builderId": "j-and-g-thomson",
+          "location": "Glasgow, Scotland",
+          "locationRaw": "Glasgow, Scotland"
         }
       ]
     },

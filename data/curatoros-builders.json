@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T03:57:01.826Z",
+  "generatedAt": "2026-10-01T04:03:09.020Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 356,
-    "shipGuides": 344,
+    "trackedShipHtmlFiles": 357,
+    "shipGuides": 345,
     "canonicalBuilders": 84,
-    "guidesWithBuilder": 344,
+    "guidesWithBuilder": 345,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -221,6 +221,27 @@
       ]
     },
     {
+      "id": "j-and-g-thomson",
+      "name": "J. & G. Thomson",
+      "shipCount": 7,
+      "firstLaunchYear": 1865,
+      "lastLaunchYear": 1888,
+      "locations": [
+        "Clydebank",
+        "Clydebank / Glasgow area, Scotland",
+        "Clydebank, Scotland",
+        "Clydebank/Glasgow, Scotland",
+        "Glasgow",
+        "Glasgow, Scotland"
+      ],
+      "operators": [
+        "Cunard Line",
+        "Cunard Line / British & North American Royal Mail Steam Packet Company",
+        "Inman & International Steamship Co.",
+        "Inman Line (later controlled/merged into International Navigation / American Line)"
+      ]
+    },
+    {
       "id": "william-beardmore-and-co",
       "name": "William Beardmore & Co.",
       "shipCount": 7,
@@ -258,26 +279,6 @@
         "P&O Steam Navigation Company",
         "Peninsular & Oriental Steam Navigation Company (P&O)",
         "Swedish American Line"
-      ]
-    },
-    {
-      "id": "j-and-g-thomson",
-      "name": "J. & G. Thomson",
-      "shipCount": 6,
-      "firstLaunchYear": 1865,
-      "lastLaunchYear": 1888,
-      "locations": [
-        "Clydebank",
-        "Clydebank / Glasgow area, Scotland",
-        "Clydebank, Scotland",
-        "Clydebank/Glasgow, Scotland",
-        "Glasgow"
-      ],
-      "operators": [
-        "Cunard Line",
-        "Cunard Line / British & North American Royal Mail Steam Packet Company",
-        "Inman & International Steamship Co.",
-        "Inman Line (later controlled/merged into International Navigation / American Line)"
       ]
     }
   ],
@@ -544,6 +545,23 @@
       "shipCount": 8
     },
     {
+      "id": "j-and-g-thomson",
+      "name": "J. & G. Thomson",
+      "names": [
+        "J. & G. Thomson",
+        "J. & G. Thomson & Co."
+      ],
+      "rawValues": [
+        "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland",
+        "J. & G. Thomson & Co., Glasgow",
+        "J. & G. Thomson & Co., Glasgow, Scotland",
+        "J. & G. Thomson (Clydebank/Glasgow, Scotland)",
+        "J. & G. Thomson, Clydebank",
+        "J. & G. Thomson, Clydebank, Scotland"
+      ],
+      "shipCount": 7
+    },
+    {
       "id": "william-beardmore-and-co",
       "name": "William Beardmore & Co.",
       "names": [
@@ -574,22 +592,6 @@
         "Alexander Stephen & Sons, Govan · yard no. 504",
         "Alexander Stephen & Sons, Linthouse, Glasgow",
         "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
-      ],
-      "shipCount": 6
-    },
-    {
-      "id": "j-and-g-thomson",
-      "name": "J. & G. Thomson",
-      "names": [
-        "J. & G. Thomson",
-        "J. & G. Thomson & Co."
-      ],
-      "rawValues": [
-        "J. & G. Thomson & Co., Clydebank / Glasgow area, Scotland",
-        "J. & G. Thomson & Co., Glasgow",
-        "J. & G. Thomson (Clydebank/Glasgow, Scotland)",
-        "J. & G. Thomson, Clydebank",
-        "J. & G. Thomson, Clydebank, Scotland"
       ],
       "shipCount": 6
     },
@@ -5910,6 +5912,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast"
+        }
+      ]
+    },
+    {
+      "name": "SS Russia (1867)",
+      "path": "ships/ss-russia-1867.html",
+      "url": "/ships/ss-russia-1867",
+      "launchYear": "1867",
+      "builderRaw": "J. & G. Thomson & Co., Glasgow, Scotland",
+      "builders": [
+        {
+          "id": "j-and-g-thomson",
+          "name": "J. & G. Thomson",
+          "raw": "J. & G. Thomson & Co., Glasgow, Scotland"
         }
       ]
     },

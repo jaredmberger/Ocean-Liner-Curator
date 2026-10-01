@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T03:57:02.927Z",
+  "generatedAt": "2026-10-01T04:03:09.872Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 344,
-    "guidesWithServiceStart": 338,
+    "shipGuides": 345,
+    "guidesWithServiceStart": 339,
     "guidesWithExplicitServiceEnd": 266,
     "eras": 10,
     "decades": 15
@@ -1870,7 +1870,7 @@
     },
     {
       "name": "Pioneer steam era",
-      "shipCount": 25,
+      "shipCount": 26,
       "ships": [
         {
           "name": "RMS Britannia",
@@ -2039,6 +2039,13 @@
           "url": "/ships/ss-oceanic-1871",
           "serviceStartYear": "1871",
           "serviceEndYear": "1896"
+        },
+        {
+          "name": "SS Russia (1867)",
+          "path": "ships/ss-russia-1867.html",
+          "url": "/ships/ss-russia-1867",
+          "serviceStartYear": "1867",
+          "serviceEndYear": null
         },
         {
           "name": "SS Sirius",
@@ -4560,6 +4567,68 @@
       ]
     },
     {
+      "name": "1860s",
+      "shipCount": 8,
+      "ships": [
+        {
+          "name": "RMS Scotia",
+          "path": "ships/rms-scotia-1861.html",
+          "url": "/ships/rms-scotia-1861",
+          "serviceStartYear": "1862",
+          "serviceEndYear": "1876"
+        },
+        {
+          "name": "SS China (1862)",
+          "path": "ships/ss-china-1862.html",
+          "url": "/ships/ss-china-1862",
+          "serviceStartYear": "1862",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Cuba",
+          "path": "ships/ss-cuba.html",
+          "url": "/ships/ss-cuba",
+          "serviceStartYear": "1864",
+          "serviceEndYear": "1887"
+        },
+        {
+          "name": "SS Java",
+          "path": "ships/ss-java.html",
+          "url": "/ships/ss-java",
+          "serviceStartYear": "1865",
+          "serviceEndYear": "1895"
+        },
+        {
+          "name": "SS Macedonia",
+          "path": "ships/ss-macedonia.html",
+          "url": "/ships/ss-macedonia",
+          "serviceStartYear": "1863",
+          "serviceEndYear": "1881"
+        },
+        {
+          "name": "SS Malta",
+          "path": "ships/ss-malta.html",
+          "url": "/ships/ss-malta",
+          "serviceStartYear": "1866",
+          "serviceEndYear": "1889"
+        },
+        {
+          "name": "SS Napoleon III",
+          "path": "ships/ss-napoleon-iii.html",
+          "url": "/ships/ss-napoleon-iii",
+          "serviceStartYear": "1866",
+          "serviceEndYear": "1873"
+        },
+        {
+          "name": "SS Russia (1867)",
+          "path": "ships/ss-russia-1867.html",
+          "url": "/ships/ss-russia-1867",
+          "serviceStartYear": "1867",
+          "serviceEndYear": null
+        }
+      ]
+    },
+    {
       "name": "1960s",
       "shipCount": 8,
       "ships": [
@@ -4618,61 +4687,6 @@
           "url": "/ships/ss-raffaello-1965",
           "serviceStartYear": "1963",
           "serviceEndYear": "1983"
-        }
-      ]
-    },
-    {
-      "name": "1860s",
-      "shipCount": 7,
-      "ships": [
-        {
-          "name": "RMS Scotia",
-          "path": "ships/rms-scotia-1861.html",
-          "url": "/ships/rms-scotia-1861",
-          "serviceStartYear": "1862",
-          "serviceEndYear": "1876"
-        },
-        {
-          "name": "SS China (1862)",
-          "path": "ships/ss-china-1862.html",
-          "url": "/ships/ss-china-1862",
-          "serviceStartYear": "1862",
-          "serviceEndYear": null
-        },
-        {
-          "name": "SS Cuba",
-          "path": "ships/ss-cuba.html",
-          "url": "/ships/ss-cuba",
-          "serviceStartYear": "1864",
-          "serviceEndYear": "1887"
-        },
-        {
-          "name": "SS Java",
-          "path": "ships/ss-java.html",
-          "url": "/ships/ss-java",
-          "serviceStartYear": "1865",
-          "serviceEndYear": "1895"
-        },
-        {
-          "name": "SS Macedonia",
-          "path": "ships/ss-macedonia.html",
-          "url": "/ships/ss-macedonia",
-          "serviceStartYear": "1863",
-          "serviceEndYear": "1881"
-        },
-        {
-          "name": "SS Malta",
-          "path": "ships/ss-malta.html",
-          "url": "/ships/ss-malta",
-          "serviceStartYear": "1866",
-          "serviceEndYear": "1889"
-        },
-        {
-          "name": "SS Napoleon III",
-          "path": "ships/ss-napoleon-iii.html",
-          "url": "/ships/ss-napoleon-iii",
-          "serviceStartYear": "1866",
-          "serviceEndYear": "1873"
         }
       ]
     },
@@ -8403,6 +8417,17 @@
       "serviceEndYear": null,
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
+      "endEvidence": null
+    },
+    {
+      "name": "SS Russia (1867)",
+      "path": "ships/ss-russia-1867.html",
+      "url": "/ships/ss-russia-1867",
+      "launchYear": "1867",
+      "serviceStartYear": "1867",
+      "serviceEndYear": null,
+      "era": "Pioneer steam era",
+      "decade": "1860s",
       "endEvidence": null
     },
     {

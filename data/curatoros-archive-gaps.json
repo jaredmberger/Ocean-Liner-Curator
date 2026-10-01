@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T03:57:04.035Z",
+  "generatedAt": "2026-10-01T04:03:10.676Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,10 +11,10 @@
     ]
   },
   "summary": {
-    "shipGuides": 344,
+    "shipGuides": 345,
     "relationshipCovered": 319,
-    "relationshipUncovered": 25,
-    "relationshipCoveragePct": 92.7,
+    "relationshipUncovered": 26,
+    "relationshipCoveragePct": 92.5,
     "canonicalOperators": 80,
     "thinOperators": 51,
     "canonicalYardLocations": 73,
@@ -210,6 +210,24 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "SS Cuba",
+        "slug": "ss-cuba",
+        "url": "/ships/ss-cuba",
+        "operator": "Cunard Line",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Russia (1867)",
+        "slug": "ss-russia-1867",
+        "url": "/ships/ss-russia-1867",
+        "operator": "Cunard Line",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Marquette",
         "slug": "ss-marquette",
         "url": "/ships/ss-marquette",
@@ -234,15 +252,6 @@
         "operator": "White Star Line",
         "signalStrength": "high-context",
         "rationale": "Unlinked ship within a well-represented operator group of 39 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Cuba",
-        "slug": "ss-cuba",
-        "url": "/ships/ss-cuba",
-        "operator": "Cunard Line",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 37 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -692,6 +701,27 @@
         "coveragePct": 88.5
       },
       {
+        "name": "Cunard Line",
+        "total": 38,
+        "covered": 36,
+        "uncovered": [
+          {
+            "name": "SS Cuba",
+            "slug": "ss-cuba",
+            "url": "/ships/ss-cuba",
+            "launchYear": "1864"
+          },
+          {
+            "name": "SS Russia (1867)",
+            "slug": "ss-russia-1867",
+            "url": "/ships/ss-russia-1867",
+            "launchYear": "1867"
+          }
+        ],
+        "uncoveredCount": 2,
+        "coveragePct": 94.7
+      },
+      {
         "name": "Atlantic Transport Line",
         "total": 4,
         "covered": 2,
@@ -726,21 +756,6 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 97.4
-      },
-      {
-        "name": "Cunard Line",
-        "total": 37,
-        "covered": 36,
-        "uncovered": [
-          {
-            "name": "SS Cuba",
-            "slug": "ss-cuba",
-            "url": "/ships/ss-cuba",
-            "launchYear": "1864"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 97.3
       },
       {
         "name": "Norddeutscher Lloyd (North German Lloyd)",
@@ -1479,10 +1494,10 @@
       },
       {
         "era": "Pioneer steam era",
-        "shipCount": 25,
+        "shipCount": 26,
         "relationshipCovered": 17,
-        "relationshipUncovered": 8,
-        "relationshipCoveragePct": 68
+        "relationshipUncovered": 9,
+        "relationshipCoveragePct": 65.4
       },
       {
         "era": "Late Victorian expansion",
@@ -1537,10 +1552,10 @@
       },
       {
         "decade": "1860s",
-        "shipCount": 7,
+        "shipCount": 8,
         "relationshipCovered": 3,
-        "relationshipUncovered": 4,
-        "relationshipCoveragePct": 42.9
+        "relationshipUncovered": 5,
+        "relationshipCoveragePct": 37.5
       },
       {
         "decade": "1870s",
@@ -1782,6 +1797,13 @@
       "url": "/ships/ss-president-lincoln",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1903"
+    },
+    {
+      "name": "SS Russia (1867)",
+      "slug": "ss-russia-1867",
+      "url": "/ships/ss-russia-1867",
+      "operator": "Cunard Line",
+      "launchYear": "1867"
     },
     {
       "name": "SS Vestris",
