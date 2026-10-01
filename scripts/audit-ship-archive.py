@@ -484,6 +484,11 @@ def main() -> None:
             print(f"Year consistency warnings: {len(year_items)}")
             for item in year_items:
                 print(f"YEAR_WARNING: {json.dumps(item, ensure_ascii=False)}")
+        namesake_items = [item for item in warnings if item.get("code") == "possible-namesake"]
+        if namesake_items:
+            print(f"Namesake warnings: {len(namesake_items)}")
+            for item in namesake_items:
+                print(f"NAMESAKE_WARNING: {json.dumps(item, ensure_ascii=False)}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
