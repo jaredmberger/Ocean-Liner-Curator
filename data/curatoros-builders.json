@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T04:03:09.020Z",
+  "generatedAt": "2026-10-01T04:09:00.302Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 357,
-    "shipGuides": 345,
-    "canonicalBuilders": 84,
-    "guidesWithBuilder": 345,
+    "trackedShipHtmlFiles": 358,
+    "shipGuides": 346,
+    "canonicalBuilders": 85,
+    "guidesWithBuilder": 346,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -1241,6 +1241,17 @@
       ],
       "rawValues": [
         "Joh. C. Tecklenborg, Geestemünde, Germany"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "john-elder-and-co-govan",
+      "name": "John Elder & Co., Govan",
+      "names": [
+        "John Elder & Co., Govan"
+      ],
+      "rawValues": [
+        "John Elder & Co., Govan, Glasgow, Scotland"
       ],
       "shipCount": 1
     },
@@ -4106,6 +4117,20 @@
           "id": "jenks-ship-building-company",
           "name": "Jenks Ship Building Company",
           "raw": "Jenks Ship Building Company, Port Huron, Michigan"
+        }
+      ]
+    },
+    {
+      "name": "SS Elbe (1881)",
+      "path": "ships/ss-elbe-1881.html",
+      "url": "/ships/ss-elbe-1881",
+      "launchYear": "1881",
+      "builderRaw": "John Elder & Co., Govan, Glasgow, Scotland",
+      "builders": [
+        {
+          "id": "john-elder-and-co-govan",
+          "name": "John Elder & Co., Govan",
+          "raw": "John Elder & Co., Govan, Glasgow, Scotland"
         }
       ]
     },

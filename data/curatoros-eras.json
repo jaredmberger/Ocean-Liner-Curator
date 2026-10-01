@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T04:03:09.872Z",
+  "generatedAt": "2026-10-01T04:09:01.375Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 345,
-    "guidesWithServiceStart": 339,
+    "shipGuides": 346,
+    "guidesWithServiceStart": 340,
     "guidesWithExplicitServiceEnd": 266,
     "eras": 10,
     "decades": 15
@@ -1584,7 +1584,7 @@
     },
     {
       "name": "Late Victorian expansion",
-      "shipCount": 40,
+      "shipCount": 41,
       "ships": [
         {
           "name": "RMS Campania",
@@ -1724,6 +1724,13 @@
           "path": "ships/ss-cymric.html",
           "url": "/ships/ss-cymric",
           "serviceStartYear": "1898",
+          "serviceEndYear": null
+        },
+        {
+          "name": "SS Elbe (1881)",
+          "path": "ships/ss-elbe-1881.html",
+          "url": "/ships/ss-elbe-1881",
+          "serviceStartYear": "1881",
           "serviceEndYear": null
         },
         {
@@ -4478,7 +4485,7 @@
     },
     {
       "name": "1880s",
-      "shipCount": 12,
+      "shipCount": 13,
       "ships": [
         {
           "name": "RMS Etruria (1884)",
@@ -4535,6 +4542,13 @@
           "url": "/ships/ss-coptic",
           "serviceStartYear": "1881",
           "serviceEndYear": "1926"
+        },
+        {
+          "name": "SS Elbe (1881)",
+          "path": "ships/ss-elbe-1881.html",
+          "url": "/ships/ss-elbe-1881",
+          "serviceStartYear": "1881",
+          "serviceEndYear": null
         },
         {
           "name": "SS La Bretagne",
@@ -6998,6 +7012,17 @@
       "serviceEndYear": null,
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
+      "endEvidence": null
+    },
+    {
+      "name": "SS Elbe (1881)",
+      "path": "ships/ss-elbe-1881.html",
+      "url": "/ships/ss-elbe-1881",
+      "launchYear": "1881",
+      "serviceStartYear": "1881",
+      "serviceEndYear": null,
+      "era": "Late Victorian expansion",
+      "decade": "1880s",
       "endEvidence": null
     },
     {

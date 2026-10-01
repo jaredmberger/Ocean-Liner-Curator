@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T04:03:09.020Z",
+  "generatedAt": "2026-10-01T04:09:00.302Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 345,
-    "guidesWithDocumentedYard": 345,
+    "shipGuides": 346,
+    "guidesWithDocumentedYard": 346,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 73,
     "multiYardShips": 0
@@ -2299,6 +2299,42 @@
       ]
     },
     {
+      "id": "glasgow-scotland",
+      "name": "Glasgow, Scotland",
+      "rawValues": [
+        "Glasgow, Scotland"
+      ],
+      "builders": [
+        "J. & G. Thomson",
+        "John Elder & Co., Govan",
+        "Robert Napier & Sons"
+      ],
+      "shipCount": 3,
+      "ships": [
+        {
+          "name": "SS China (1862)",
+          "path": "ships/ss-china-1862.html",
+          "url": "/ships/ss-china-1862",
+          "launchYear": "1861",
+          "builder": "Robert Napier & Sons"
+        },
+        {
+          "name": "SS Russia (1867)",
+          "path": "ships/ss-russia-1867.html",
+          "url": "/ships/ss-russia-1867",
+          "launchYear": "1867",
+          "builder": "J. & G. Thomson"
+        },
+        {
+          "name": "SS Elbe (1881)",
+          "path": "ships/ss-elbe-1881.html",
+          "url": "/ships/ss-elbe-1881",
+          "launchYear": "1881",
+          "builder": "John Elder & Co., Govan"
+        }
+      ]
+    },
+    {
       "id": "greenock-scotland",
       "name": "Greenock, Scotland",
       "rawValues": [
@@ -2453,34 +2489,6 @@
           "url": "/ships/rms-cameronia",
           "launchYear": "1919",
           "builder": "William Beardmore & Co."
-        }
-      ]
-    },
-    {
-      "id": "glasgow-scotland",
-      "name": "Glasgow, Scotland",
-      "rawValues": [
-        "Glasgow, Scotland"
-      ],
-      "builders": [
-        "J. & G. Thomson",
-        "Robert Napier & Sons"
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "SS China (1862)",
-          "path": "ships/ss-china-1862.html",
-          "url": "/ships/ss-china-1862",
-          "launchYear": "1861",
-          "builder": "Robert Napier & Sons"
-        },
-        {
-          "name": "SS Russia (1867)",
-          "path": "ships/ss-russia-1867.html",
-          "url": "/ships/ss-russia-1867",
-          "launchYear": "1867",
-          "builder": "J. & G. Thomson"
         }
       ]
     },
@@ -6090,6 +6098,20 @@
           "builderId": "jenks-ship-building-company",
           "location": "Port Huron, Michigan",
           "locationRaw": "Port Huron, Michigan"
+        }
+      ]
+    },
+    {
+      "name": "SS Elbe (1881)",
+      "path": "ships/ss-elbe-1881.html",
+      "url": "/ships/ss-elbe-1881",
+      "launchYear": "1881",
+      "assignments": [
+        {
+          "builder": "John Elder & Co., Govan",
+          "builderId": "john-elder-and-co-govan",
+          "location": "Glasgow, Scotland",
+          "locationRaw": "Glasgow, Scotland"
         }
       ]
     },

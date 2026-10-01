@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T04:03:10.676Z",
+  "generatedAt": "2026-10-01T04:09:02.541Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,12 +11,12 @@
     ]
   },
   "summary": {
-    "shipGuides": 345,
+    "shipGuides": 346,
     "relationshipCovered": 319,
-    "relationshipUncovered": 26,
-    "relationshipCoveragePct": 92.5,
-    "canonicalOperators": 80,
-    "thinOperators": 51,
+    "relationshipUncovered": 27,
+    "relationshipCoveragePct": 92.2,
+    "canonicalOperators": 81,
+    "thinOperators": 52,
     "canonicalYardLocations": 73,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
@@ -354,6 +354,15 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "SS Elbe (1881)",
+        "slug": "ss-elbe-1881",
+        "url": "/ships/ss-elbe-1881",
+        "operator": "Norddeutscher Lloyd, Bremen",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Norge",
         "slug": "ss-norge",
         "url": "/ships/ss-norge",
@@ -468,6 +477,11 @@
       },
       {
         "operator": "Michigan Steamship Company",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Norddeutscher Lloyd, Bremen",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -917,6 +931,21 @@
             "slug": "ss-eastland",
             "url": "/ships/ss-eastland",
             "launchYear": "1903"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 0
+      },
+      {
+        "name": "Norddeutscher Lloyd, Bremen",
+        "total": 1,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "SS Elbe (1881)",
+            "slug": "ss-elbe-1881",
+            "url": "/ships/ss-elbe-1881",
+            "launchYear": "1881"
           }
         ],
         "uncoveredCount": 1,
@@ -1501,10 +1530,10 @@
       },
       {
         "era": "Late Victorian expansion",
-        "shipCount": 40,
+        "shipCount": 41,
         "relationshipCovered": 35,
-        "relationshipUncovered": 5,
-        "relationshipCoveragePct": 87.5
+        "relationshipUncovered": 6,
+        "relationshipCoveragePct": 85.4
       },
       {
         "era": "Interwar express-liner era",
@@ -1566,10 +1595,10 @@
       },
       {
         "decade": "1880s",
-        "shipCount": 12,
+        "shipCount": 13,
         "relationshipCovered": 10,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 83.3
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 76.9
       },
       {
         "decade": "1890s",
@@ -1706,6 +1735,13 @@
       "url": "/ships/ss-eastland",
       "operator": "Michigan Steamship Company",
       "launchYear": "1903"
+    },
+    {
+      "name": "SS Elbe (1881)",
+      "slug": "ss-elbe-1881",
+      "url": "/ships/ss-elbe-1881",
+      "operator": "Norddeutscher Lloyd, Bremen",
+      "launchYear": "1881"
     },
     {
       "name": "SS Hibernia (1843)",
