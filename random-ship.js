@@ -76,6 +76,7 @@
 "/ships/ss-cincinnati.html",
 "/ships/ss-city-of-new-york-1888.html",
 "/ships/ss-city-of-paris.html",
+"/ships/ss-city-of-rome.html",
 "/ships/ss-columbus-1924.html",
 "/ships/ss-conte-biancamano.html",
 "/ships/ss-conte-di-savoia.html",
