@@ -53,14 +53,25 @@ assert(
   'Ship Archive source search must include explicit identity aliases and .guide-desc text.'
 );
 
-for (const alias of ['Vaterland','Imperator','Bismarck','Columbus','Tyrrhenia','Ypiranga','Pittsburgh','Regina','Achille Lauro']) {
-  assert(
-    new RegExp(`data-aliases=["'][^"']*\\b${alias.replace(/[.*+?^$()|[\]\\]/g, '\\assert(
-  /function getSearchText\(card\)[\s\S]*?guide-desc[\s\S]*?\.join\(" "\)/.test(html),
-  'Ship Archive source search must include .guide-desc text.'
-);')}\\b[^"']*["']`, 'i').test(html),
-    `Ship Archive identity alias is missing: ${alias}`
-  );
+const requiredIdentityAliases = [
+  ['Vaterland', '/ships/ss-leviathan.html'],
+  ['Imperator', '/ships/rms-berengaria.html'],
+  ['Bismarck', '/ships/rms-majestic.html'],
+  ['Columbus', '/ships/rms-homeric.html'],
+  ['Tyrrhenia', '/ships/rms-lancastria.html'],
+  ['Ypiranga', '/ships/ss-assyria.html'],
+  ['Pittsburgh', '/ships/ss-pennland.html'],
+  ['Regina', '/ships/ss-westernland.html'],
+  ['Achille Lauro', '/ships/ms-willem-ruys.html']
+];
+
+for (const [alias, href] of requiredIdentityAliases) {
+  const pos = html.indexOf(`href="${href}"`);
+  assert(pos >= 0, `Archive card not found for identity alias ${alias}: ${href}`);
+  const start = html.lastIndexOf('<article', pos);
+  const end = html.indexOf('</article>', pos);
+  const card = html.slice(start, end + '</article>'.length);
+  assert(card.includes(`data-aliases="`) && card.includes(alias), `Ship Archive identity alias is missing: ${alias} -> ${href}`);
 }
 
 // Guard against the historical cross-card regex corruption that once placed a
