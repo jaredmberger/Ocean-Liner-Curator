@@ -3,7 +3,8 @@ name: Publish archive gap intelligence
 on:
   pull_request:
     paths:
-      - 'ships/**.html'
+      - '*.html'
+      - '**/*.html'
       - 'assets/related-liners.js'
       - 'assets/related-liners-phase2.js'
       - 'assets/related-liners-enhancements.js'
@@ -22,7 +23,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'ships/**.html'
+      - '*.html'
+      - '**/*.html'
       - 'assets/related-liners.js'
       - 'assets/related-liners-phase2.js'
       - 'assets/related-liners-enhancements.js'
