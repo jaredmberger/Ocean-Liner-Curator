@@ -465,6 +465,11 @@ def main() -> None:
             print(f"Structural warnings: {len(structural)}")
             for item in structural:
                 print(f"STRUCTURAL {item['code']}: {json.dumps(item, ensure_ascii=False)}")
+        orphan_images = [item for item in warnings if item.get("code") == "orphan-ship-image"]
+        if orphan_images:
+            print(f"Orphan image warnings: {len(orphan_images)}")
+            for item in orphan_images:
+                print(f"ORPHAN_IMAGE: {json.dumps(item, ensure_ascii=False)}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
