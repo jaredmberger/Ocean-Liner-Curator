@@ -481,6 +481,11 @@ def main() -> None:
             print(f"Orphan image warnings: {len(orphan_images)}")
             for item in orphan_images:
                 print(f"ORPHAN_IMAGE: {json.dumps(item, ensure_ascii=False)}")
+        year_items = [item for item in warnings if item.get("code") in {"card-name-year-mismatch", "h1-year-mismatch"}]
+        if year_items:
+            print(f"Year consistency warnings: {len(year_items)}")
+            for item in year_items:
+                print(f"YEAR_WARNING: {json.dumps(item, ensure_ascii=False)}")
         print(f"Warnings recorded in {OUT.relative_to(ROOT)}")
 
     if errors or (args.fail_on_warnings and warnings):
