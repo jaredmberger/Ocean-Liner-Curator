@@ -17,82 +17,235 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://oceanliners.net/collections/french-atlantic-flagships-hero.PNG" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="stylesheet" href="/assets/nav.css" />
 <style>
-@font-face{font-family:Spectral;font-style:normal;font-weight:400;src:url(/cf-fonts/s/spectral/5.0.11/latin/400/normal.woff2);font-display:swap}
-@font-face{font-family:Spectral;font-style:normal;font-weight:600;src:url(/cf-fonts/s/spectral/5.0.11/latin/600/normal.woff2);font-display:swap}
-:root{--bg:#0a1110;--panel:rgba(15,27,25,.8);--text:#e6dfcf;--muted:#b6ae9c;--accent:#bfa46a;--border:rgba(191,164,106,.28);--link:#d5bd86}
-*{box-sizing:border-box}html{background:var(--bg);scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:Spectral,Georgia,serif;font-size:17px;line-height:1.68;background:radial-gradient(900px 600px at 50% 10%,rgba(31,48,45,.9),#0a1110 65%)}
-a{color:var(--link)}.shell{width:min(1120px,calc(100% - 1.4rem));margin:1rem auto 2.5rem}.hero{position:relative;min-height:520px;border:1px solid var(--border);border-radius:24px;overflow:hidden;background:linear-gradient(90deg,rgba(10,17,16,.94) 0%,rgba(10,17,16,.72) 48%,rgba(10,17,16,.25) 100%),url("/collections/french-atlantic-flagships-hero.PNG") center/cover no-repeat;box-shadow:0 24px 70px rgba(0,0,0,.42)}
-.hero-copy{max-width:660px;padding:clamp(2rem,6vw,5rem)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;color:var(--accent);margin-bottom:.8rem}h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:#f0e7d6}h1{font-size:clamp(2.3rem,6vw,4.5rem);line-height:1.02;margin:.2rem 0 1rem}.hero p{font-size:1.08rem;color:#d0c7b5;max-width:58ch}.hero-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.25rem}.btn{display:inline-block;text-decoration:none;border:1px solid rgba(191,164,106,.4);border-radius:10px;padding:.65rem .9rem;background:rgba(10,17,16,.55)}
-.panel{margin-top:1rem;padding:clamp(1.2rem,4vw,2.3rem);border:1px solid var(--border);border-radius:18px;background:var(--panel)}.intro-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.2rem}.timeline{display:grid;gap:.7rem}.milestone{border-left:2px solid rgba(191,164,106,.55);padding:.15rem 0 .15rem .9rem}.milestone strong{color:var(--accent)}.note{padding:1rem;border:1px solid rgba(191,164,106,.22);border-radius:12px;background:rgba(191,164,106,.05);color:var(--muted)}
-h2{font-size:1.55rem;margin:0 0 .75rem}.era{margin-top:1.6rem}.ship-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}.ship-card{display:flex;flex-direction:column;gap:.25rem;min-height:125px;padding:1rem;border:1px solid rgba(191,164,106,.2);border-radius:12px;background:rgba(0,0,0,.14);text-decoration:none}.ship-card:hover{border-color:rgba(191,164,106,.5);transform:translateY(-1px)}.ship-card strong{font-size:1.05rem;color:#efe5d2}.ship-card span:last-child{margin-top:auto;font-size:.82rem;color:var(--link)}.ship-year{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-.related{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}.related a{padding:1rem;border:1px solid rgba(191,164,106,.2);border-radius:12px;text-decoration:none;background:rgba(0,0,0,.12)}.sources li{margin:.5rem 0}.footer{text-align:center;color:var(--muted);font-size:.82rem;margin:1.8rem auto 0;max-width:76ch}
-@media(max-width:820px){.intro-grid{grid-template-columns:1fr}.ship-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.related{grid-template-columns:1fr}.hero{min-height:430px;background-position:62% center}}
-@media(max-width:500px){.ship-grid{grid-template-columns:1fr}.hero-copy{padding:1.5rem}.hero{min-height:460px}.panel{padding:1rem}}
-</style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","@id":"https://oceanliners.net/french-line#webpage","name":"French Line — Compagnie Générale Transatlantique | Ocean Liner Curator","url":"https://oceanliners.net/french-line","description":"A curated French Line hub connecting company history, major eras, and 19 documented ship guides.","isPartOf":{"@id":"https://oceanliners.net/#website"},"about":{"@type":"Organization","name":"Compagnie Générale Transatlantique"},"inLanguage":"en"}
-</script>
-</head>
+*,*::before,*::after{box-sizing:border-box}
+:root{--measure:46rem;--bg:#0a1110;--panel:rgba(15,27,25,.82);--text:#e6dfcf;--muted:#b6ae9c;--soft:#d8cfbc;--accent:#bfa46a;--accent2:#d8c48c;--border:rgba(191,164,106,.28);--line2:rgba(230,223,207,.12);--shadow:rgba(0,0,0,.60);--font-serif:"Spectral",Georgia,"Times New Roman",serif;--font-display:"Libre Baskerville",Georgia,serif}
+html{text-rendering:optimizeLegibility;background:var(--bg)}
+body{margin:0;min-height:100vh;padding:0 0 2.25rem;color:var(--text);font-family:var(--font-serif);font-size:17px;line-height:1.58;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;background:radial-gradient(900px 600px at 50% 18%,rgba(24,40,38,.95) 0%,rgba(10,17,16,1) 62%),radial-gradient(1200px 900px at 50% 110%,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 60%)}
+a{color:rgba(209,187,134,.96);text-decoration:none;border-bottom:1px solid rgba(191,164,106,.42);padding-bottom:1px}a:hover{border-bottom-color:rgba(191,164,106,.82)}
+.container{width:min(820px,calc(100% - 1.5rem));margin:1.1rem auto 0;padding:2.1rem 2.75rem 3.5rem;position:relative;overflow:hidden;isolation:isolate;text-align:center;border:1px solid var(--border);border-radius:16px;background-color:var(--panel);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");background-size:92px 92px;background-position:center 38%;box-shadow:0 26px 70px var(--shadow),0 0 0 1px rgba(191,164,106,.08),0 0 80px rgba(191,164,106,.06)}
+.container::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(800px 500px at 50% 18%,rgba(255,255,255,.07) 0%,transparent 55%),radial-gradient(900px 700px at 50% 120%,rgba(0,0,0,.35) 0%,transparent 55%)}
+.hero-image{position:relative;overflow:hidden;width:100%;aspect-ratio:16/8.3;margin:0 auto 1.35rem;border:1px solid rgba(191,164,106,.34);border-radius:14px;background:#0b1211;box-shadow:0 14px 34px rgba(0,0,0,.34)}
+.hero-image img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.94) contrast(1.03)}
+.hero-image::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,rgba(10,17,16,.04),rgba(10,17,16,.36))}
+.crumbs{display:flex;flex-wrap:wrap;justify-content:center;gap:.45rem;margin:0 auto 1.25rem;color:var(--muted);font-size:.88rem}.crumbs a{border-bottom-color:transparent}
+.badge{display:inline-flex;align-items:center;gap:.55rem;margin:0 auto .95rem;padding:.45rem .8rem;color:var(--accent2);border:1px solid rgba(191,164,106,.30);border-radius:999px;background:rgba(191,164,106,.07);font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.badge .mark{display:inline-grid;place-items:center;width:22px;height:22px;border:1px solid rgba(191,164,106,.44);border-radius:50%}
+h1,h2,h3{font-family:var(--font-display);letter-spacing:-.025em}h1{margin:0;font-size:clamp(2.15rem,7vw,3.45rem);line-height:1.12;font-weight:700}
+.rule{width:140px;height:2px;margin:1.15rem auto 1.65rem;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.88}
+.page-kicker{max-width:70ch;margin:0 auto 1.4rem;color:var(--muted);font-size:1.04rem;line-height:1.72}
+.hero-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:.55rem;max-width:var(--measure);margin:.4rem auto 2rem}.hero-meta span{padding:.45rem .7rem;color:var(--muted);border:1px solid var(--line2);border-radius:999px;background:rgba(255,255,255,.025);font-size:.84rem}
+.section,.cta{max-width:var(--measure);margin:0 auto;padding:0;text-align:left;border:0;background:none;box-shadow:none}.section+.section,.cta{margin-top:2.35rem;padding-top:2.15rem;border-top:1px solid rgba(191,164,106,.18)}
+.section-kicker{margin:0 0 .45rem;color:var(--accent2);font-size:.76rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.section h2,.cta h2{margin:0 0 .75rem;color:var(--text);font-size:clamp(1.35rem,4vw,1.9rem);line-height:1.25}.section h3{margin:0 0 .45rem;color:var(--text);font-size:1.05rem;line-height:1.35}
+.section p,.cta p{margin:.75rem 0 0;color:rgba(230,223,207,.92);line-height:1.78}
+.short-answer,.note-card,.evidence-box,.quote-panel{margin-top:1.15rem;padding:1rem 1.05rem;border:1px solid rgba(191,164,106,.24);border-radius:14px;background:rgba(191,164,106,.055)}
+.short-answer strong{display:block;margin-bottom:.35rem;color:var(--text);font-family:var(--font-display)}.short-answer p,.note-card p,.evidence-box p{margin:0}
+.quote-panel{border-left:3px solid var(--accent);color:var(--text);font-size:1.08rem;line-height:1.65}
+.timeline,.two-col,.ship-links{display:grid;grid-template-columns:1fr;gap:.8rem;margin-top:1.15rem}
+.era-card,.ship-card{display:block;position:relative;overflow:hidden;min-height:0;padding:1rem 1.05rem;border:1px solid rgba(191,164,106,.20);border-radius:14px;background:rgba(0,0,0,.12)}
+.era-card::after{content:"★";position:absolute;right:.85rem;bottom:.2rem;color:rgba(191,164,106,.12);font-size:3rem;line-height:1}
+.era-card .date,.ship-card .meta{display:block;margin-bottom:.35rem;color:var(--accent2);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.era-card p,.ship-card span:last-child{position:relative;z-index:1;margin:0;color:var(--muted);font-size:.95rem;line-height:1.62}
+.ship-card{color:var(--text);border-bottom:1px solid rgba(191,164,106,.20)}.ship-card:hover{text-decoration:none;background:rgba(191,164,106,.08);border-color:rgba(191,164,106,.48)}
+.ship-card strong{display:block;margin-bottom:.35rem;font-family:var(--font-display)}
+.button-row{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.15rem}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.75rem 1rem;color:#0a1110;background:linear-gradient(180deg,#d7c08a 0%,var(--accent) 100%);border:1px solid rgba(0,0,0,.35);border-radius:12px;box-shadow:0 10px 22px rgba(0,0,0,.24);font-weight:700}.btn.secondary{color:var(--text);background:transparent;border-color:rgba(191,164,106,.42);box-shadow:none}.btn:hover{text-decoration:none;border-bottom-color:inherit;transform:translateY(-1px)}
+.source-list{margin:.65rem 0 0;padding-left:1.2rem;color:rgba(230,223,207,.90)}.source-list li{margin:.45rem 0;line-height:1.65}
+footer{max-width:var(--measure);margin:2.8rem auto 0;color:rgba(230,223,207,.68);font-size:.82rem;line-height:1.6;text-align:center}
+.flags-footer{display:block;width:110px;height:auto;margin:1.1rem auto -.2rem;opacity:.42;filter:saturate(.85) contrast(.95) brightness(.95);pointer-events:none}
+@media(min-width:700px){.timeline,.two-col,.ship-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.container{width:calc(100% - 1.5rem);margin:1.05rem auto 0;padding:1rem 1.25rem 1.9rem;border-radius:14px;background-size:54px 54px}.hero-image{aspect-ratio:4/3;margin-bottom:1.1rem}.rule{width:110px;margin:.9rem auto 1.25rem}.hero-meta span{width:100%;text-align:center}.button-row{flex-direction:column}.btn{width:100%}}
+</style><link href="/assets/nav.css" rel="stylesheet"/></head>
 <body>
 <div id="site-header"></div>
-<main class="shell">
-<section class="hero">
-<div class="hero-copy">
-<div class="eyebrow">Shipping Line Exploration Hub</div>
+<main class="container">
+<div class="hero-image"><img src="/collections/french-atlantic-flagships-hero.PNG" alt="French Line ocean liner imagery" /></div>
+<nav aria-label="Breadcrumb" class="crumbs"><a href="/">Home</a><span>›</span><a href="/shipping-lines">Shipping Lines</a><span>›</span><span>French Line</span></nav>
+<div class="badge"><span class="mark">★</span> Shipping Line Exploration Hub</div>
 <h1>French Line</h1>
-<p><strong>Compagnie Générale Transatlantique</strong> connected France with New York and a wider Atlantic world for more than a century. This hub follows the company from nineteenth-century mail steamers through <em>Île de France</em>, <em>Normandie</em>, and the final transatlantic flagship <em>France</em>.</p>
-<div class="hero-actions"><a class="btn" href="#ships">Explore 19 ship guides</a><a class="btn" href="/collections/french-atlantic-flagships.html">French Atlantic Flagships</a><a class="btn" href="/shipping-lines">Shipping Lines Index</a></div>
-</div>
-</section>
+<div class="rule"></div>
+<p class="page-kicker">Compagnie Générale Transatlantique connected France with New York and a wider Atlantic world for more than a century, from nineteenth-century mail steamers to <em>Île de France</em>, <em>Normandie</em>, and the final transatlantic flagship <em>France</em>.</p>
+<div class="hero-meta"><span>Founded: 1855 / renamed 1861</span><span>Core route: Le Havre–New York</span><span>Archive: 19 ship guides</span></div>
 
-<section class="panel intro-grid">
-<div>
+<section class="section">
+<p class="section-kicker">Basic answer</p>
 <h2>A French transatlantic system</h2>
 <p>The company began as Compagnie Générale Maritime in 1855 and became Compagnie Générale Transatlantique in 1861. State-supported mail contracts helped define its early purpose. In 1864 the company inaugurated regular Le Havre–New York service, a route that became one of the central threads of French passenger shipping.</p>
 <p>That history was never only about prestige flagships. CGT operated mail steamers, migrant carriers, intermediate liners, colonial-route vessels, wartime transports, rebuilt ships, and national showpieces. The famous ships make sense only when seen inside that larger operating system.</p>
-</div>
+<aside class="short-answer"><strong>Short answer</strong><p>The French Line was both a transportation network and a national showcase: practical route service on one hand, highly visible design and prestige on the other.</p></aside>
+</section>
+
+<section class="section">
+<p class="section-kicker">Historical arc</p>
+<h2>A broad French Line chronology</h2>
 <div class="timeline">
-<div class="milestone"><strong>1855</strong><br>Compagnie Générale Maritime founded by the Pereire brothers.</div>
-<div class="milestone"><strong>1861</strong><br>The company becomes Compagnie Générale Transatlantique.</div>
-<div class="milestone"><strong>1864</strong><br>Regular Le Havre–New York service begins.</div>
-<div class="milestone"><strong>1935</strong><br><em>Normandie</em> enters service and captures the Blue Riband.</div>
-<div class="milestone"><strong>1962</strong><br><em>France</em> enters transatlantic service.</div>
-<div class="milestone"><strong>1974–1976</strong><br>The Le Havre–New York era ends; CGT later merges into Compagnie Générale Maritime.</div>
+<article class="era-card"><span class="date">1855</span><h3>Compagnie Générale Maritime</h3><p>The Pereire brothers establish the company that would become CGT.</p></article>
+<article class="era-card"><span class="date">1861</span><h3>Compagnie Générale Transatlantique</h3><p>The company takes the name by which the French Line is best known.</p></article>
+<article class="era-card"><span class="date">1864</span><h3>Le Havre–New York</h3><p>Regular North Atlantic service begins and becomes a defining company route.</p></article>
+<article class="era-card"><span class="date">1880s–1914</span><h3>Fleet modernization</h3><p>Express steamers and larger passenger ships strengthen CGT's competitive Atlantic position.</p></article>
+<article class="era-card"><span class="date">1920s–1930s</span><h3>French modernity at sea</h3><p><em>Paris</em>, <em>Île de France</em>, and <em>Normandie</em> turn design and national style into major elements of the crossing.</p></article>
+<article class="era-card"><span class="date">1935</span><h3>Normandie</h3><p>The new flagship enters service and captures the Blue Riband.</p></article>
+<article class="era-card"><span class="date">1950s–1962</span><h3>Postwar continuity</h3><p><em>Liberté</em> and then <em>France</em> carry the French Line identity into the postwar Atlantic.</p></article>
+<article class="era-card"><span class="date">1974–1976</span><h3>End of an era</h3><p>The Le Havre–New York passenger era ends and CGT is absorbed into a new corporate structure.</p></article>
 </div>
 </section>
 
-<section class="panel">
-<h2>How to read the French Line story</h2>
-<div class="related">
-<a href="/collections/french-atlantic-flagships.html"><strong>Prestige &amp; national identity</strong><br><span>How <em>France</em>, <em>Île de France</em>, <em>Normandie</em>, and later <em>France</em> projected a distinct French Atlantic image.</span></a>
-<a href="/designs-interiors/french-british-german-and-italian-interior-traditions.html"><strong>Design &amp; interiors</strong><br><span>French decorative traditions in comparison with British, German, and Italian liner design.</span></a>
-<a href="/history-of-major-shipping-lines.html"><strong>International context</strong><br><span>Place the French Line alongside Cunard, White Star, HAPAG, NDL, Holland America, Italian Line, and others.</span></a>
+<section class="section">
+<p class="section-kicker">How to read the story</p>
+<h2>Three ways into the French Line</h2>
+<div class="two-col">
+<div class="note-card"><h3>Prestige and national identity</h3><p>The great flagships projected a distinctly French idea of modernity, cuisine, décor, and Atlantic prestige.</p><p><a href="/collections/french-atlantic-flagships.html">Explore French Atlantic Flagships »</a></p></div>
+<div class="note-card"><h3>Design and interiors</h3><p>French liner interiors developed a recognizable relationship to decorative arts, luxury, and national presentation.</p><p><a href="/designs-interiors/french-british-german-and-italian-interior-traditions.html">Explore interior traditions »</a></p></div>
+<div class="note-card"><h3>The working fleet</h3><p>Intermediate liners, migrant carriers, and route vessels reveal the commercial system beneath the famous flagships.</p><p><a href="#ships">Browse the ship guides below »</a></p></div>
+<div class="note-card"><h3>International context</h3><p>CGT competed within a larger world of British, German, Dutch, Italian, American, and Canadian lines.</p><p><a href="/history-of-major-shipping-lines.html">Compare the major lines »</a></p></div>
 </div>
-<div class="note" style="margin-top:1rem"><strong>Scope:</strong> this is an exploration hub, not a complete fleet list. It links the French Line ships currently documented as individual guides in Ocean Liner Curator and uses those guides as entry points into the wider company story.</div>
+<div class="quote-panel">The French Line story is larger than <em>Normandie</em>. Its history becomes clearer when the flagships are read alongside the ordinary ships that kept routes functioning year after year.</div>
 </section>
 
-<section class="panel" id="ships">
+<section class="section" id="ships">
+<p class="section-kicker">Ships as case studies</p>
 <h2>French Line ships in the archive</h2>
 <p>These 19 guides span nearly a century of CGT passenger service, from the first generation of iron transatlantic steamers to the final purpose-built French Atlantic flagship.</p>
-<section class="era"><h2>Early Atlantic foundations</h2><div class="ship-grid"><a class="ship-card" href="/ships/ss-napoleon-iii.html"><span class="ship-year">1865</span><strong>SS Napoleon III</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-la-normandie.html"><span class="ship-year">1883</span><strong>SS La Normandie</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-la-bourgogne.html"><span class="ship-year">1886</span><strong>SS La Bourgogne</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-la-bretagne.html"><span class="ship-year">1886</span><strong>SS La Bretagne</strong><span>Open ship guide »</span></a></div></section><section class="era"><h2>Belle Époque expansion</h2><div class="ship-grid"><a class="ship-card" href="/ships/ss-la-touraine.html"><span class="ship-year">1891</span><strong>SS La Touraine (1891)</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-la-provence.html"><span class="ship-year">1905</span><strong>SS La Provence</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-chicago-1908.html"><span class="ship-year">1908</span><strong>SS Chicago</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-espagne.html"><span class="ship-year">1910</span><strong>SS Espagne</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-rochambeau.html"><span class="ship-year">1911</span><strong>SS Rochambeau</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-france-1912.html"><span class="ship-year">1912</span><strong>SS France (1912)</strong><span>Open ship guide »</span></a></div></section><section class="era"><h2>War and route diversification</h2><div class="ship-grid"><a class="ship-card" href="/ships/ss-flandre.html"><span class="ship-year">1913</span><strong>SS Flandre</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-lafayette.html"><span class="ship-year">1914</span><strong>SS Lafayette</strong><span>Open ship guide »</span></a></div></section><section class="era"><h2>Interwar modernity</h2><div class="ship-grid"><a class="ship-card" href="/ships/ss-paris.html"><span class="ship-year">1921</span><strong>SS Paris</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-de-grasse.html"><span class="ship-year">1924</span><strong>SS De Grasse</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-ile-de-france.html"><span class="ship-year">1927</span><strong>SS Ile de France</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-champlain.html"><span class="ship-year">1932</span><strong>SS Champlain</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-normandie.html"><span class="ship-year">1935</span><strong>SS Normandie</strong><span>Open ship guide »</span></a></div></section><section class="era"><h2>Postwar continuity and final flagship</h2><div class="ship-grid"><a class="ship-card" href="/ships/ss-liberte.html"><span class="ship-year">1950</span><strong>SS Liberté</strong><span>Open ship guide »</span></a><a class="ship-card" href="/ships/ss-france.html"><span class="ship-year">1962</span><strong>SS France (1962)</strong><span>Open ship guide »</span></a></div></section>
 </section>
 
-<section class="panel">
+<section class="section">
+<p class="section-kicker">Early Atlantic foundations</p>
+<div class="ship-links">
+<a class="ship-card" href="/ships/ss-napoleon-iii.html">
+<span class="meta">1865 · Early iron steamship</span>
+<strong>SS Napoleon III</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-la-normandie.html">
+<span class="meta">1883 · Express service</span>
+<strong>SS La Normandie</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-la-bourgogne.html">
+<span class="meta">1886 · Mail liner · loss</span>
+<strong>SS La Bourgogne</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-la-bretagne.html">
+<span class="meta">1886 · Le Havre–New York</span>
+<strong>SS La Bretagne</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+</div>
+</section>
+<section class="section">
+<p class="section-kicker">Belle Époque expansion</p>
+<div class="ship-links">
+<a class="ship-card" href="/ships/ss-la-touraine.html">
+<span class="meta">1891 · Express liner</span>
+<strong>SS La Touraine (1891)</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-la-provence.html">
+<span class="meta">1905 · Prestige · speed</span>
+<strong>SS La Provence</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-chicago-1908.html">
+<span class="meta">1908 · Migration · service</span>
+<strong>SS Chicago</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-espagne.html">
+<span class="meta">1910 · Route versatility</span>
+<strong>SS Espagne</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-rochambeau.html">
+<span class="meta">1911 · Passenger · emigrant</span>
+<strong>SS Rochambeau</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-france-1912.html">
+<span class="meta">1912 · Luxury · prestige</span>
+<strong>SS France (1912)</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+</div>
+</section>
+<section class="section">
+<p class="section-kicker">War and route diversification</p>
+<div class="ship-links">
+<a class="ship-card" href="/ships/ss-flandre.html">
+<span class="meta">1913 · Route liner</span>
+<strong>SS Flandre</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-lafayette.html">
+<span class="meta">1914 · Bordeaux–New York</span>
+<strong>SS Lafayette</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+</div>
+</section>
+<section class="section">
+<p class="section-kicker">Interwar modernity</p>
+<div class="ship-links">
+<a class="ship-card" href="/ships/ss-paris.html">
+<span class="meta">1921 · Interwar flagship</span>
+<strong>SS Paris</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-de-grasse.html">
+<span class="meta">1924 · Interwar · postwar</span>
+<strong>SS De Grasse</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-ile-de-france.html">
+<span class="meta">1927 · Art Deco</span>
+<strong>SS Ile de France</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-champlain.html">
+<span class="meta">1932 · Modern intermediate</span>
+<strong>SS Champlain</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-normandie.html">
+<span class="meta">1935 · Design · speed</span>
+<strong>SS Normandie</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+</div>
+</section>
+<section class="section">
+<p class="section-kicker">Postwar continuity and final flagship</p>
+<div class="ship-links">
+<a class="ship-card" href="/ships/ss-liberte.html">
+<span class="meta">1950 · Rebuilt flagship</span>
+<strong>SS Liberté</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+<a class="ship-card" href="/ships/ss-france.html">
+<span class="meta">1962 · Final flagship</span>
+<strong>SS France (1962)</strong>
+<span>Open the Ocean Liner Curator ship guide.</span>
+</a>
+</div>
+</section>
+
+<section class="section">
+<p class="section-kicker">Sources and method</p>
 <h2>Selected research sources</h2>
-<ul class="sources">
-<li><a href="https://www.frenchlines.com/archives/" rel="noopener noreferrer">French Lines &amp; Compagnies — Archives</a>, preserving CGT technical, administrative, personnel, voyage, plan, advertising, and related records.</li>
+<ul class="source-list">
+<li><a href="https://www.frenchlines.com/archives/" rel="noopener noreferrer">French Lines &amp; Compagnies — Archives</a>.</li>
 <li><a href="https://www.frenchlines.com/wp-content/uploads/2021/10/FLC_Dossier%20Pedagogique_A-bord-de-la-French-Line.pdf" rel="noopener noreferrer">French Lines &amp; Compagnies — historical chronology of the French Line</a>.</li>
 <li><a href="https://www.frenchlines.com/product/1864-1890-quand-les-paquebots-avaient-des-voiles/" rel="noopener noreferrer">French Lines &amp; Compagnies — origins of the Le Havre–New York service</a>.</li>
 <li><a href="/sources">Ocean Liner Curator — Sources &amp; methodology</a>.</li>
 </ul>
+<div class="button-row"><a class="btn" href="/shipping-lines">Shipping Lines Index</a><a class="btn secondary" href="/collections/french-atlantic-flagships.html">French Atlantic Flagships</a></div>
 </section>
 
-<div class="footer">
+<footer>
 <p>Ocean Liner Curator uses AI as a research assistant, not as an authority. Historical claims are treated with source discipline, conflicting evidence is preserved where relevant, and uncertainty is not converted into false precision.</p>
+<img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true" />
 <p>© <span id="year"></span> Ocean Liner Curator.</p>
-</div>
+</footer>
 </main>
 <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 <script src="/assets/header.js" defer></script><script src="/assets/nav.js" defer></script>
