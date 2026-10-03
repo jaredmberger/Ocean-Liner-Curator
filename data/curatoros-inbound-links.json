@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T07:10:30.841Z",
+  "generatedAt": "2026-10-03T07:23:07.252Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -15,8 +15,8 @@
     "editorialOrphans": 53,
     "oneEditorialInbound": 159,
     "threePlusEditorialInbound": 52,
-    "totalEditorialInboundLinks": 662,
-    "averageEditorialInbound": 1.89
+    "totalEditorialInboundLinks": 668,
+    "averageEditorialInbound": 1.91
   },
   "orphanedShips": [
     {
@@ -10422,47 +10422,6 @@
       ]
     },
     {
-      "name": "SS Kaiser Wilhelm der Grosse",
-      "slug": "ss-kaiser-wilhelm-der-grosse",
-      "url": "/ships/ss-kaiser-wilhelm-der-grosse",
-      "inboundTotal": 6,
-      "editorialInbound": 5,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 2,
-        "hub-history": 1,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/blue-riband-era.html",
-          "sourceRoute": "/collections/blue-riband-era",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/german-prestige-liners.html",
-          "sourceRoute": "/collections/german-prestige-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Vaterland",
       "slug": "ss-vaterland",
       "url": "/ships/ss-vaterland",
@@ -10639,6 +10598,53 @@
         {
           "sourcePath": "ships/timeline-1900-1960.html",
           "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Kaiser Wilhelm der Grosse",
+      "slug": "ss-kaiser-wilhelm-der-grosse",
+      "url": "/ships/ss-kaiser-wilhelm-der-grosse",
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "collection": 2,
+        "hub-history": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "british-vs-german-ocean-liners-before-1914.html",
+          "sourceRoute": "/british-vs-german-ocean-liners-before-1914",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -11356,108 +11362,6 @@
       ]
     },
     {
-      "name": "SS United States",
-      "slug": "ss-us",
-      "url": "/ships/ss-us",
-      "inboundTotal": 18,
-      "editorialInbound": 17,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 6,
-        "collection": 5,
-        "hub-history": 2,
-        "ship-guide": 4
-      },
-      "sources": [
-        {
-          "sourcePath": "250-years-across-the-atlantic.html",
-          "sourceRoute": "/250-years-across-the-atlantic",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/blue-riband-era.html",
-          "sourceRoute": "/collections/blue-riband-era",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/from-leviathan-to-united-states.html",
-          "sourceRoute": "/collections/from-leviathan-to-united-states",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
-          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
-          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "from-ocean-liners-to-sail250.html",
-          "sourceRoute": "/from-ocean-liners-to-sail250",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
-          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ss-united-states-timeline.html",
-          "sourceRoute": "/ships/ss-united-states-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ss-united-states-public-rooms.html",
-          "sourceRoute": "/ss-united-states-public-rooms",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ss-united-states.html",
-          "sourceRoute": "/ss-united-states",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-ss-leviathan-matters.html",
-          "sourceRoute": "/why-ss-leviathan-matters",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "RMS Queen Mary",
       "slug": "rms-queen-mary",
       "url": "/ships/rms-queen-mary",
@@ -11692,6 +11596,133 @@
         {
           "sourcePath": "why-did-ocean-liners-carry-musicians.html",
           "sourceRoute": "/why-did-ocean-liners-carry-musicians",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS United States",
+      "slug": "ss-us",
+      "url": "/ships/ss-us",
+      "inboundTotal": 23,
+      "editorialInbound": 22,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 11,
+        "collection": 5,
+        "hub-history": 2,
+        "ship-guide": 4
+      },
+      "sources": [
+        {
+          "sourcePath": "250-years-across-the-atlantic.html",
+          "sourceRoute": "/250-years-across-the-atlantic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/from-leviathan-to-united-states.html",
+          "sourceRoute": "/collections/from-leviathan-to-united-states",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
+          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "from-ocean-liners-to-sail250.html",
+          "sourceRoute": "/from-ocean-liners-to-sail250",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
+          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-provisioned.html",
+          "sourceRoute": "/how-ocean-liners-were-provisioned",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-the-liner-system-worked.html",
+          "sourceRoute": "/how-the-liner-system-worked",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "prewar-vs-postwar-ocean-liner-travel.html",
+          "sourceRoute": "/prewar-vs-postwar-ocean-liner-travel",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-united-states-timeline.html",
+          "sourceRoute": "/ships/ss-united-states-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "speed-vs-comfort-what-ocean-liner-companies-optimized-for.html",
+          "sourceRoute": "/speed-vs-comfort-what-ocean-liner-companies-optimized-for",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ss-united-states-public-rooms.html",
+          "sourceRoute": "/ss-united-states-public-rooms",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ss-united-states.html",
+          "sourceRoute": "/ss-united-states",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "who-worked-in-ocean-liner-engine-rooms.html",
+          "sourceRoute": "/who-worked-in-ocean-liner-engine-rooms",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-ss-leviathan-matters.html",
+          "sourceRoute": "/why-ss-leviathan-matters",
           "sourceCategory": "article-reference"
         }
       ]
