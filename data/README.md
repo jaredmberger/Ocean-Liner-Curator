@@ -1,6 +1,6 @@
 # Ocean Liner Curator canonical data — version 0.1
 
-This is the first reversible canonical-data layer generated from the builder extraction test.
+This is the first reversible canonical data layer generated from the builder extraction test.
 
 ## Files
 
