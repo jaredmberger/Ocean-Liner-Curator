@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T03:52:45.356Z",
+  "generatedAt": "2026-10-03T04:09:16.103Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -14,9 +14,9 @@
     "shipGuides": 350,
     "editorialOrphans": 53,
     "oneEditorialInbound": 159,
-    "threePlusEditorialInbound": 50,
-    "totalEditorialInboundLinks": 625,
-    "averageEditorialInbound": 1.79
+    "threePlusEditorialInbound": 51,
+    "totalEditorialInboundLinks": 642,
+    "averageEditorialInbound": 1.83
   },
   "orphanedShips": [
     {
@@ -7507,30 +7507,6 @@
       ]
     },
     {
-      "name": "RMS Canopic",
-      "slug": "rms-canopic",
-      "url": "/ships/rms-canopic",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "how-passenger-manifests-and-immigration-worked.html",
-          "sourceRoute": "/how-passenger-manifests-and-immigration-worked",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-ocean-liners-carried-cargo.html",
-          "sourceRoute": "/why-ocean-liners-carried-cargo",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "RMS Carinthia (1956)",
       "slug": "rms-carinthia",
       "url": "/ships/rms-carinthia",
@@ -9511,6 +9487,35 @@
       ]
     },
     {
+      "name": "RMS Canopic",
+      "slug": "rms-canopic",
+      "url": "/ships/rms-canopic",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "how-passenger-manifests-and-immigration-worked.html",
+          "sourceRoute": "/how-passenger-manifests-and-immigration-worked",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-the-ships-surgeon-do-on-an-ocean-liner.html",
+          "sourceRoute": "/what-did-the-ships-surgeon-do-on-an-ocean-liner",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-ocean-liners-carried-cargo.html",
+          "sourceRoute": "/why-ocean-liners-carried-cargo",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "RMS Cedric",
       "slug": "rms-cedric",
       "url": "/ships/rms-cedric",
@@ -10158,42 +10163,6 @@
       ]
     },
     {
-      "name": "RMS Aquitania",
-      "slug": "rms-aquitania",
-      "url": "/ships/rms-aquitania",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 2,
-        "article-reference": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/the-superliner-race.html",
-          "sourceRoute": "/collections/the-superliner-race",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "why-rms-aquitania-matters.html",
-          "sourceRoute": "/why-rms-aquitania-matters",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "RMS Celtic",
       "slug": "rms-celtic",
       "url": "/ships/rms-celtic",
@@ -10442,6 +10411,47 @@
       ]
     },
     {
+      "name": "RMS Aquitania",
+      "slug": "rms-aquitania",
+      "url": "/ships/rms-aquitania",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 2,
+        "article-reference": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/the-superliner-race.html",
+          "sourceRoute": "/collections/the-superliner-race",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "what-did-the-ships-surgeon-do-on-an-ocean-liner.html",
+          "sourceRoute": "/what-did-the-ships-surgeon-do-on-an-ocean-liner",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-rms-aquitania-matters.html",
+          "sourceRoute": "/why-rms-aquitania-matters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "SS Kaiser Wilhelm der Grosse",
       "slug": "ss-kaiser-wilhelm-der-grosse",
       "url": "/ships/ss-kaiser-wilhelm-der-grosse",
@@ -10618,53 +10628,6 @@
       ]
     },
     {
-      "name": "RMS Carpathia",
-      "slug": "rms-carpathia",
-      "url": "/ships/rms-carpathia",
-      "inboundTotal": 7,
-      "editorialInbound": 6,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 2,
-        "ship-guide": 2,
-        "article-reference": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
-          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "why-rms-carpathia-matters.html",
-          "sourceRoute": "/why-rms-carpathia-matters",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "SS Bremen",
       "slug": "ss-bremen",
       "url": "/ships/ss-bremen",
@@ -10711,16 +10674,68 @@
       ]
     },
     {
+      "name": "RMS Carpathia",
+      "slug": "rms-carpathia",
+      "url": "/ships/rms-carpathia",
+      "inboundTotal": 8,
+      "editorialInbound": 7,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 2,
+        "ship-guide": 2,
+        "article-reference": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "what-did-wireless-operators-do-on-ocean-liners.html",
+          "sourceRoute": "/what-did-wireless-operators-do-on-ocean-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-rms-carpathia-matters.html",
+          "sourceRoute": "/why-rms-carpathia-matters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "SS France",
       "slug": "ss-france",
       "url": "/ships/ss-france",
-      "inboundTotal": 7,
-      "editorialInbound": 6,
+      "inboundTotal": 9,
+      "editorialInbound": 8,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
         "collection": 2,
-        "article-reference": 1,
+        "article-reference": 3,
         "hub-history": 1,
         "ship-guide": 2
       },
@@ -10754,61 +10769,15 @@
           "sourcePath": "ships/timeline-1900-1960.html",
           "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "RMS Lusitania",
-      "slug": "rms-lusitania",
-      "url": "/ships/rms-lusitania",
-      "inboundTotal": 9,
-      "editorialInbound": 8,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 2,
-        "article-reference": 3,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
         },
         {
-          "sourcePath": "from-ocean-liners-to-sail250.html",
-          "sourceRoute": "/from-ocean-liners-to-sail250",
+          "sourcePath": "what-did-ocean-liner-stewards-do.html",
+          "sourceRoute": "/what-did-ocean-liner-stewards-do",
           "sourceCategory": "article-reference"
         },
         {
-          "sourcePath": "lusitania-sinking-timeline.html",
-          "sourceRoute": "/lusitania-sinking-timeline",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "why-rms-lusitania-matters.html",
-          "sourceRoute": "/why-rms-lusitania-matters",
+          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
+          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
           "sourceCategory": "article-reference"
         }
       ]
@@ -10870,77 +10839,15 @@
       ]
     },
     {
-      "name": "SS Île de France",
-      "slug": "ss-ile-de-france",
-      "url": "/ships/ss-ile-de-france",
+      "name": "RMS Lusitania",
+      "slug": "rms-lusitania",
+      "url": "/ships/rms-lusitania",
       "inboundTotal": 10,
       "editorialInbound": 9,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "collection": 1,
-        "hub-history": 4,
-        "article-reference": 2,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/french-atlantic-flagships.html",
-          "sourceRoute": "/collections/french-atlantic-flagships",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "designs-interiors.html",
-          "sourceRoute": "/designs-interiors",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "designs-interiors/decorative-styles.html",
-          "sourceRoute": "/designs-interiors/decorative-styles",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "designs-interiors/public-rooms.html",
-          "sourceRoute": "/designs-interiors/public-rooms",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "french-line.html",
-          "sourceRoute": "/french-line",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "what-happened-on-ocean-liner-turnaround-day.html",
-          "sourceRoute": "/what-happened-on-ocean-liner-turnaround-day",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
-      "name": "RMS Mauretania",
-      "slug": "rms-mauretania",
-      "url": "/ships/rms-mauretania",
-      "inboundTotal": 11,
-      "editorialInbound": 10,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 3,
+        "hub-history": 2,
         "article-reference": 4,
         "ship-guide": 3
       },
@@ -10951,18 +10858,13 @@
           "sourceCategory": "hub-history"
         },
         {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "how-mail-contracts-shaped-ocean-liners.html",
-          "sourceRoute": "/how-mail-contracts-shaped-ocean-liners",
+          "sourcePath": "from-ocean-liners-to-sail250.html",
+          "sourceRoute": "/from-ocean-liners-to-sail250",
           "sourceCategory": "article-reference"
         },
         {
-          "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
-          "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
+          "sourcePath": "lusitania-sinking-timeline.html",
+          "sourceRoute": "/lusitania-sinking-timeline",
           "sourceCategory": "article-reference"
         },
         {
@@ -10986,13 +10888,13 @@
           "sourceCategory": "hub-history"
         },
         {
-          "sourcePath": "why-rms-lusitania-matters.html",
-          "sourceRoute": "/why-rms-lusitania-matters",
+          "sourcePath": "what-did-wireless-operators-do-on-ocean-liners.html",
+          "sourceRoute": "/what-did-wireless-operators-do-on-ocean-liners",
           "sourceCategory": "article-reference"
         },
         {
-          "sourcePath": "why-rms-mauretania-matters.html",
-          "sourceRoute": "/why-rms-mauretania-matters",
+          "sourcePath": "why-rms-lusitania-matters.html",
+          "sourceRoute": "/why-rms-lusitania-matters",
           "sourceCategory": "article-reference"
         }
       ]
@@ -11060,6 +10962,144 @@
         {
           "sourcePath": "why-hmhs-britannic-matters.html",
           "sourceRoute": "/why-hmhs-britannic-matters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS Île de France",
+      "slug": "ss-ile-de-france",
+      "url": "/ships/ss-ile-de-france",
+      "inboundTotal": 11,
+      "editorialInbound": 10,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 4,
+        "article-reference": 3,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/french-atlantic-flagships.html",
+          "sourceRoute": "/collections/french-atlantic-flagships",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "designs-interiors/decorative-styles.html",
+          "sourceRoute": "/designs-interiors/decorative-styles",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "designs-interiors/public-rooms.html",
+          "sourceRoute": "/designs-interiors/public-rooms",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "french-line.html",
+          "sourceRoute": "/french-line",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "what-did-an-ocean-liner-purser-do.html",
+          "sourceRoute": "/what-did-an-ocean-liner-purser-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-happened-on-ocean-liner-turnaround-day.html",
+          "sourceRoute": "/what-happened-on-ocean-liner-turnaround-day",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "RMS Mauretania",
+      "slug": "rms-mauretania",
+      "url": "/ships/rms-mauretania",
+      "inboundTotal": 12,
+      "editorialInbound": 11,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 3,
+        "article-reference": 5,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "how-mail-contracts-shaped-ocean-liners.html",
+          "sourceRoute": "/how-mail-contracts-shaped-ocean-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
+          "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "who-worked-in-ocean-liner-engine-rooms.html",
+          "sourceRoute": "/who-worked-in-ocean-liner-engine-rooms",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-rms-lusitania-matters.html",
+          "sourceRoute": "/why-rms-lusitania-matters",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-rms-mauretania-matters.html",
+          "sourceRoute": "/why-rms-mauretania-matters",
           "sourceCategory": "article-reference"
         }
       ]
@@ -11244,200 +11284,6 @@
       ]
     },
     {
-      "name": "RMS Queen Mary",
-      "slug": "rms-queen-mary",
-      "url": "/ships/rms-queen-mary",
-      "inboundTotal": 17,
-      "editorialInbound": 16,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 7,
-        "collection": 3,
-        "hub-history": 2,
-        "ship-guide": 4
-      },
-      "sources": [
-        {
-          "sourcePath": "250-years-across-the-atlantic.html",
-          "sourceRoute": "/250-years-across-the-atlantic",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
-          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/floating-palaces-interior-innovation.html",
-          "sourceRoute": "/collections/floating-palaces-interior-innovation",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/queen-mary-at-war.html",
-          "sourceRoute": "/collections/queen-mary-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
-          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
-          "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-ocean-liners-were-provisioned.html",
-          "sourceRoute": "/how-ocean-liners-were-provisioned",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "queen-mary-public-rooms.html",
-          "sourceRoute": "/queen-mary-public-rooms",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "rms-queen-mary.html",
-          "sourceRoute": "/rms-queen-mary",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/rms-queen-mary-timeline.html",
-          "sourceRoute": "/ships/rms-queen-mary-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "why-is-queen-mary-in-long-beach.html",
-          "sourceRoute": "/why-is-queen-mary-in-long-beach",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
-      "name": "RMS Titanic",
-      "slug": "rms-titanic",
-      "url": "/ships/rms-titanic",
-      "inboundTotal": 17,
-      "editorialInbound": 16,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 4,
-        "collection": 5,
-        "hub-history": 4,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "250-years-across-the-atlantic.html",
-          "sourceRoute": "/250-years-across-the-atlantic",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "authentic-titanic-postcards.html",
-          "sourceRoute": "/authentic-titanic-postcards",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
-          "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
-          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/olympic-class-liners.html",
-          "sourceRoute": "/collections/olympic-class-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/the-superliner-race.html",
-          "sourceRoute": "/collections/the-superliner-race",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
-          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
-          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-ocean-liners-were-provisioned.html",
-          "sourceRoute": "/how-ocean-liners-were-provisioned",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS United States",
       "slug": "ss-us",
       "url": "/ships/ss-us",
@@ -11540,17 +11386,246 @@
       ]
     },
     {
+      "name": "RMS Queen Mary",
+      "slug": "rms-queen-mary",
+      "url": "/ships/rms-queen-mary",
+      "inboundTotal": 20,
+      "editorialInbound": 19,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 10,
+        "collection": 3,
+        "hub-history": 2,
+        "ship-guide": 4
+      },
+      "sources": [
+        {
+          "sourcePath": "250-years-across-the-atlantic.html",
+          "sourceRoute": "/250-years-across-the-atlantic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
+          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/queen-mary-at-war.html",
+          "sourceRoute": "/collections/queen-mary-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
+          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
+          "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-provisioned.html",
+          "sourceRoute": "/how-ocean-liners-were-provisioned",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "queen-mary-public-rooms.html",
+          "sourceRoute": "/queen-mary-public-rooms",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "rms-queen-mary.html",
+          "sourceRoute": "/rms-queen-mary",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/rms-queen-mary-timeline.html",
+          "sourceRoute": "/ships/rms-queen-mary-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "what-did-an-ocean-liner-purser-do.html",
+          "sourceRoute": "/what-did-an-ocean-liner-purser-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-ocean-liner-stewards-do.html",
+          "sourceRoute": "/what-did-ocean-liner-stewards-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
+          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-is-queen-mary-in-long-beach.html",
+          "sourceRoute": "/why-is-queen-mary-in-long-beach",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "RMS Titanic",
+      "slug": "rms-titanic",
+      "url": "/ships/rms-titanic",
+      "inboundTotal": 21,
+      "editorialInbound": 20,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 8,
+        "collection": 5,
+        "hub-history": 4,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "250-years-across-the-atlantic.html",
+          "sourceRoute": "/250-years-across-the-atlantic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "authentic-titanic-postcards.html",
+          "sourceRoute": "/authentic-titanic-postcards",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
+          "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
+          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/olympic-class-liners.html",
+          "sourceRoute": "/collections/olympic-class-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/the-superliner-race.html",
+          "sourceRoute": "/collections/the-superliner-race",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
+          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
+          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-provisioned.html",
+          "sourceRoute": "/how-ocean-liners-were-provisioned",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "what-did-ocean-liner-stewards-do.html",
+          "sourceRoute": "/what-did-ocean-liner-stewards-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-the-ships-surgeon-do-on-an-ocean-liner.html",
+          "sourceRoute": "/what-did-the-ships-surgeon-do-on-an-ocean-liner",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-wireless-operators-do-on-ocean-liners.html",
+          "sourceRoute": "/what-did-wireless-operators-do-on-ocean-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
+          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "RMS Olympic",
       "slug": "rms-olympic",
       "url": "/ships/rms-olympic",
-      "inboundTotal": 22,
-      "editorialInbound": 21,
+      "inboundTotal": 24,
+      "editorialInbound": 23,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
         "collection": 7,
         "hub-history": 6,
-        "article-reference": 6,
+        "article-reference": 8,
         "ship-guide": 2
       },
       "sources": [
@@ -11645,6 +11720,11 @@
           "sourceCategory": "hub-history"
         },
         {
+          "sourcePath": "what-did-an-ocean-liner-purser-do.html",
+          "sourceRoute": "/what-did-an-ocean-liner-purser-do",
+          "sourceCategory": "article-reference"
+        },
+        {
           "sourcePath": "what-happened-on-ocean-liner-turnaround-day.html",
           "sourceRoute": "/what-happened-on-ocean-liner-turnaround-day",
           "sourceCategory": "article-reference"
@@ -11653,6 +11733,11 @@
           "sourcePath": "white-star-line.html",
           "sourceRoute": "/white-star-line",
           "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "who-worked-in-ocean-liner-engine-rooms.html",
+          "sourceRoute": "/who-worked-in-ocean-liner-engine-rooms",
+          "sourceCategory": "article-reference"
         },
         {
           "sourcePath": "why-rms-olympic-matters.html",
