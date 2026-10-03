@@ -3007,7 +3007,7 @@ window.OCEAN_LINER_THIS_DAY = {
       "category": "Maiden Voyage",
       "summary": "Celtic departed Liverpool for New York on her first voyage for White Star Line.",
       "whyItMatters": "Her entry into service strengthened White Star's early scheduled Atlantic fleet during the company's formative years.",
-      "relatedUrl": "/ships/rms-celtic",
+      "relatedUrl": "",
       "significance": "medium",
       "tags": [
         "white-star-line",
