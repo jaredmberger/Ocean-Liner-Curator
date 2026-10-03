@@ -2802,6 +2802,26 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "10-01": [
+    {
+      "year": 1872,
+      "title": "White Star Line begins carrying U.S. mail under a new contract",
+      "ship": "White Star Line fleet",
+      "category": "Mail Service",
+      "summary": "A U.S. Post Office contract for White Star Line to carry United States mail to the United Kingdom took effect on October 1, 1872.",
+      "whyItMatters": "Mail contracts helped make liner schedules part of national communications infrastructure and reinforced the importance of regular, dependable Atlantic service.",
+      "relatedUrl": "/how-mail-contracts-shaped-ocean-liners",
+      "significance": "medium",
+      "tags": [
+        "white-star-line",
+        "mail",
+        "scheduled-service"
+      ],
+      "sources": [
+        "White Star Line Memorial Foundation — company chronology"
+      ]
+    }
+  ],
   "10-02": [
     {
       "year": 1942,
@@ -2823,6 +2843,26 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "10-04": [
+    {
+      "year": 1872,
+      "title": "SS Gaelic launched at Belfast",
+      "ship": "SS Gaelic",
+      "category": "Launch",
+      "summary": "Gaelic was launched at Belfast after being built for the Bibby Line and acquired by White Star while still under construction.",
+      "whyItMatters": "Her launch illustrates White Star Line's early experimentation beyond its best-known Liverpool–New York passenger service, including cargo and South American operations.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "white-star-line",
+        "gaelic",
+        "launch"
+      ],
+      "sources": [
+        "White Star Line Memorial Foundation — company chronology"
+      ]
+    }
+  ],
   "10-05": [
     {
       "year": 1899,
@@ -2838,6 +2878,27 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Ocean Liner Curator ship guide — structured launch fact (5 October 1899, as Michigan)"
+      ]
+    }
+  ],
+  "10-07": [
+    {
+      "year": 1957,
+      "title": "Keel of SS France is laid at Saint-Nazaire",
+      "ship": "SS France",
+      "category": "Construction",
+      "summary": "The keel of the future SS France was laid at Chantiers de l'Atlantique in Saint-Nazaire.",
+      "whyItMatters": "The milestone formally began construction of the French Line's final purpose-built transatlantic flagship.",
+      "relatedUrl": "/ships/ss-france",
+      "significance": "high",
+      "tags": [
+        "french-line",
+        "france",
+        "construction",
+        "saint-nazaire"
+      ],
+      "sources": [
+        "The Mariners' Museum and Park — SS France vessel record"
       ]
     }
   ],
@@ -2858,6 +2919,26 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Royal Museums Greenwich — RMS Titanic fact sheet, Olympic chronology"
+      ]
+    }
+  ],
+  "10-17": [
+    {
+      "year": 1871,
+      "title": "SS Adriatic launched for White Star Line",
+      "ship": "SS Adriatic",
+      "category": "Launch",
+      "summary": "Adriatic was launched at Belfast as a sister to Celtic during White Star Line's first generation of steamship expansion.",
+      "whyItMatters": "The ship belonged to the fleet that established White Star's early Atlantic identity before the company's later turn toward much larger liners.",
+      "relatedUrl": "/ships/ss-adriatic-1872",
+      "significance": "medium",
+      "tags": [
+        "white-star-line",
+        "adriatic",
+        "launch"
+      ],
+      "sources": [
+        "White Star Line Memorial Foundation — company chronology"
       ]
     }
   ],
@@ -2915,6 +2996,26 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "Italian liner histories"
+      ]
+    }
+  ],
+  "10-24": [
+    {
+      "year": 1872,
+      "title": "SS Celtic begins her maiden voyage",
+      "ship": "SS Celtic",
+      "category": "Maiden Voyage",
+      "summary": "Celtic departed Liverpool for New York on her first voyage for White Star Line.",
+      "whyItMatters": "Her entry into service strengthened White Star's early scheduled Atlantic fleet during the company's formative years.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "white-star-line",
+        "celtic",
+        "maiden-voyage"
+      ],
+      "sources": [
+        "White Star Line Memorial Foundation — company chronology"
       ]
     }
   ],
@@ -2980,7 +3081,47 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "10-30": [
+    {
+      "year": 1947,
+      "title": "RMS Caronia launched at Clydebank",
+      "ship": "RMS Caronia",
+      "category": "Launch",
+      "summary": "Cunard's new Caronia was launched at John Brown & Company at Clydebank by Princess Elizabeth.",
+      "whyItMatters": "Caronia was conceived for both transatlantic service and extensive cruising, making her an important bridge between the traditional liner and the postwar cruise-oriented passenger ship.",
+      "relatedUrl": "/ships/rms-caronia-1947",
+      "significance": "medium",
+      "tags": [
+        "cunard-line",
+        "caronia",
+        "launch",
+        "cruising"
+      ],
+      "sources": [
+        "Chris Frame's Cunard Page — Caronia history"
+      ]
+    }
+  ],
   "10-31": [
+    {
+      "year": 1956,
+      "title": "RMS Sylvania launched at Clydebank",
+      "ship": "RMS Sylvania",
+      "category": "Launch",
+      "summary": "Sylvania, the fourth and final member of Cunard's postwar Saxonia class, was launched by John Brown & Company at Clydebank.",
+      "whyItMatters": "Her launch represented one of Cunard's last major investments in a conventional passenger liner built primarily for scheduled transatlantic service.",
+      "relatedUrl": "/ships/rms-sylvania",
+      "significance": "medium",
+      "tags": [
+        "cunard-line",
+        "sylvania",
+        "launch",
+        "postwar-liners"
+      ],
+      "sources": [
+        "Ocean Liner Curator — RMS Sylvania ship guide"
+      ]
+    },
     {
       "year": 1967,
       "title": "RMS Queen Mary leaves Southampton for the final time",
