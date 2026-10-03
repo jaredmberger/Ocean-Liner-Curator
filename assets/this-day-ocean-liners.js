@@ -2922,6 +2922,28 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "10-16": [
+    {
+      "year": 1946,
+      "title": "RMS Queen Elizabeth begins her commercial maiden voyage",
+      "ship": "RMS Queen Elizabeth",
+      "category": "Maiden Voyage",
+      "summary": "After wartime troop service and postwar refit, Queen Elizabeth began her first commercial transatlantic voyage from Southampton.",
+      "whyItMatters": "The sailing finally introduced the ship to the civilian role for which she had been designed and completed Cunard's celebrated two-ship express service with Queen Mary.",
+      "relatedUrl": "/ships/rms-queen-elizabeth",
+      "significance": "high",
+      "tags": [
+        "cunard-line",
+        "queen-elizabeth",
+        "maiden-voyage",
+        "postwar-liners"
+      ],
+      "sources": [
+        "Ocean Liner Curator — RMS Queen Elizabeth ship guide",
+        "Cunard historical chronology"
+      ]
+    }
+  ],
   "10-17": [
     {
       "year": 1871,
@@ -2999,6 +3021,27 @@ window.OCEAN_LINER_THIS_DAY = {
       ]
     }
   ],
+  "10-22": [
+    {
+      "year": 1908,
+      "title": "SS Principessa Mafalda launched",
+      "ship": "SS Principessa Mafalda",
+      "category": "Launch",
+      "summary": "Principessa Mafalda was launched at Riva Trigoso for Navigazione Generale Italiana.",
+      "whyItMatters": "She became a major Italy–South America liner, carrying both prestige passengers and large numbers of migrants between the Mediterranean and the River Plate.",
+      "relatedUrl": "/ships/ss-principessa-mafalda",
+      "significance": "medium",
+      "tags": [
+        "italian-liners",
+        "principessa-mafalda",
+        "launch",
+        "south-atlantic"
+      ],
+      "sources": [
+        "Ocean Liner Curator — SS Principessa Mafalda ship guide"
+      ]
+    }
+  ],
   "10-24": [
     {
       "year": 1872,
@@ -3016,6 +3059,87 @@ window.OCEAN_LINER_THIS_DAY = {
       ],
       "sources": [
         "White Star Line Memorial Foundation — company chronology"
+      ]
+    }
+  ],
+  "10-25": [
+    {
+      "year": 1927,
+      "title": "SS Principessa Mafalda sinks off Brazil",
+      "ship": "SS Principessa Mafalda",
+      "category": "Disaster",
+      "summary": "Principessa Mafalda sank off the Brazilian coast after failure of her starboard propeller shaft during a voyage from Genoa toward Buenos Aires.",
+      "whyItMatters": "The disaster became one of the best-known losses in Italian merchant-shipping history and highlights the importance of South Atlantic migration routes in liner history.",
+      "relatedUrl": "/ships/ss-principessa-mafalda",
+      "significance": "high",
+      "tags": [
+        "italian-liners",
+        "principessa-mafalda",
+        "disaster",
+        "south-atlantic"
+      ],
+      "sources": [
+        "Ocean Liner Curator — SS Principessa Mafalda ship guide"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "SS France is withdrawn from French Line service",
+      "ship": "SS France",
+      "category": "Final Service",
+      "summary": "The French Line withdrew France from service after the crew dispute and strike that ended her transatlantic career.",
+      "whyItMatters": "Her withdrawal symbolized the collapse of the traditional state-supported transatlantic liner model in the jet age.",
+      "relatedUrl": "/ships/ss-france",
+      "significance": "high",
+      "tags": [
+        "french-line",
+        "france",
+        "withdrawal",
+        "jet-age"
+      ],
+      "sources": [
+        "The Mariners' Museum and Park — SS France vessel record",
+        "Ocean Liner Curator — SS France ship guide"
+      ]
+    }
+  ],
+  "10-26": [
+    {
+      "year": 1850,
+      "title": "SS Arctic begins her maiden voyage",
+      "ship": "SS Arctic",
+      "category": "Maiden Voyage",
+      "summary": "The Collins Line paddle steamer Arctic entered service from New York on her first transatlantic voyage.",
+      "whyItMatters": "Arctic belonged to the most serious American commercial challenge to Cunard in the early steam-liner era, combining mail service, speed, luxury, and national prestige.",
+      "relatedUrl": "/ships/ss-arctic",
+      "significance": "high",
+      "tags": [
+        "collins-line",
+        "arctic",
+        "maiden-voyage",
+        "mail-steamer"
+      ],
+      "sources": [
+        "Ocean Liner Curator — SS Arctic ship guide"
+      ]
+    },
+    {
+      "year": 1912,
+      "title": "SS Vestris begins her first New York sailing",
+      "ship": "SS Vestris",
+      "category": "Service",
+      "summary": "Vestris began her first sailing from New York in the passenger-cargo service linking the United States, Caribbean, and River Plate.",
+      "whyItMatters": "The voyage illustrates the importance of liner routes beyond the North Atlantic express trade, especially mixed passenger-cargo links to South America.",
+      "relatedUrl": "/ships/ss-vestris",
+      "significance": "medium",
+      "tags": [
+        "lamport-and-holt",
+        "vestris",
+        "south-america",
+        "passenger-cargo"
+      ],
+      "sources": [
+        "Ocean Liner Curator — SS Vestris ship guide"
       ]
     }
   ],
