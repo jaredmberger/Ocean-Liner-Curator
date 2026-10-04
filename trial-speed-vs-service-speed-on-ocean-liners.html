@@ -1,0 +1,739 @@
+<!DOCTYPE html><html lang="en"><head><style>html{background:#0a1110}</style><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Trial Speed vs Service Speed on Ocean Liners — Ocean Liner Curator</title><meta name="description" content="Why ocean liner trial speeds, maximum speeds, service speeds, and record crossing averages are different measurements and should not be compared as though they mean the same thing."/><link rel="canonical" href="https://oceanliners.net/trial-speed-vs-service-speed-on-ocean-liners"/><link as="image" href="/logo.png" rel="preload"/><link href="/favicon.ico" rel="icon" sizes="any"/><link href="/favicon-32.png" rel="icon" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><meta name="theme-color" content="#0a1110"/><meta name="robots" content="index,follow"/><meta property="og:site_name" content="Ocean Liner Curator"/><meta property="og:title" content="Trial Speed vs Service Speed on Ocean Liners — Ocean Liner Curator"/><meta property="og:description" content="Why ocean liner trial speeds, maximum speeds, service speeds, and record crossing averages are different measurements and should not be compared as though they mean the same thing."/><meta property="og:url" content="https://oceanliners.net/trial-speed-vs-service-speed-on-ocean-liners"/><meta property="og:type" content="article"/><meta property="og:image" content="https://oceanliners.net/logo.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Trial Speed vs Service Speed on Ocean Liners"/><meta name="twitter:description" content="Why ocean liner trial speeds, maximum speeds, service speeds, and record crossing averages are different measurements and should not be compared as though they mean the same thing."/><meta name="twitter:image" content="https://oceanliners.net/logo.png"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"/><link href="/assets/nav.css" rel="stylesheet"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Trial Speed vs Service Speed on Ocean Liners","description":"Why ocean liner trial speeds, maximum speeds, service speeds, and record crossing averages are different measurements and should not be compared as though they mean the same thing.","url":"https://oceanliners.net/trial-speed-vs-service-speed-on-ocean-liners","publisher":{"@type":"Organization","name":"Ocean Liner Curator","url":"https://oceanliners.net/"},"inLanguage":"en"}</script><style>html{background:#0a1110}</style>
+<style>
+    html { background:#0a1110; }
+  </style>
+<style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root{
+      --measure: 42rem;
+      --bg:#0a1110;
+      --panel:rgba(15,27,25,0.78);
+      --text:#e6dfcf;
+      --muted:#b6ae9c;
+      --accent:#bfa46a;
+      --accent-2:#d7c08a;
+      --border:rgba(191,164,106,0.28);
+      --shadow:rgba(0,0,0,0.60);
+      --link:rgba(209,187,134,0.95);
+      --font-sans:"Spectral", Georgia, "Times New Roman", serif;
+      --font-display:"Libre Baskerville", Georgia, serif;
+    }
+
+    html{
+      text-rendering: optimizeLegibility;
+      scroll-behavior:smooth;
+    }
+
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size:17px;
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 50% 18%, rgba(24,40,38,0.95) 0%, rgba(10,17,16,1) 62%),
+        radial-gradient(1200px 900px at 50% 110%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding:0 0 2.25rem;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:0.09;
+      background-image:url('/tile3.png');
+      background-size:360px auto;
+      mix-blend-mode:screen;
+    }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+    }
+
+    a:hover{
+      color:#ecd9ab;
+      text-decoration:underline;
+      text-underline-offset:.18em;
+    }
+
+    .site-header{
+      width:100%;
+      margin:0;
+      padding:0.75rem 0;
+      background:rgba(15,27,25,0.55);
+      border-bottom:1px solid rgba(191,164,106,0.22);
+      position:relative;
+      z-index:5000;
+    }
+
+    .header-inner{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:0 auto;
+      padding:0 2.75rem;
+    }
+
+    .site-nav{
+      display:flex;
+      align-items:center;
+      gap:1.1rem;
+      flex-wrap:wrap;
+      font-size:0.95rem;
+    }
+
+    .nav-link{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.35);
+      padding-bottom:2px;
+    }
+
+    .nav-link:hover{ border-bottom-color: rgba(191,164,106,0.65); }
+
+    .nav-dropdown{ position:relative; }
+
+    .nav-dropdown summary{
+      cursor:pointer;
+      list-style:none;
+      display:inline-block;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .nav-dropdown summary::-webkit-details-marker{ display:none; }
+
+    .dropdown-panel{
+      position:absolute;
+      top:1.8rem;
+      left:0;
+      min-width:240px;
+      background:rgba(15,27,25,0.95);
+      border:1px solid rgba(191,164,106,0.28);
+      border-radius:12px;
+      padding:0.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+      z-index:6000;
+      box-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .dropdown-panel a{
+      color:var(--link);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.25);
+      padding:0.2rem 0;
+    }
+
+    .dropdown-panel a:hover{ border-bottom-color: rgba(191,164,106,0.55); }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      width:min(960px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      min-height:52vh;
+      max-height:660px;
+      display:flex;
+      align-items:flex-start;
+      border-radius:18px;
+      border:1px solid rgba(191,164,106,0.24);
+      background:
+        linear-gradient(to bottom, rgba(10,17,16,0.78) 0%, rgba(10,17,16,0.12) 46%, rgba(10,17,16,0.82) 100%),
+        radial-gradient(900px 520px at 50% 22%, rgba(191,164,106,0.12), transparent 60%),
+        url("/britannia-hero.PNG") center/cover no-repeat;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.55),
+        0 0 0 1px rgba(191,164,106,0.07);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:14px;
+      pointer-events:none;
+      border:1px solid rgba(191,164,106,0.14);
+      border-radius:13px;
+      z-index:1;
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:100%;
+      padding:clamp(2.45rem, 6vw, 4.1rem) clamp(1.15rem, 4vw, 2.6rem) 2.1rem;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      margin:0 0 .9rem;
+      padding:.38rem .72rem;
+      border:1px solid rgba(191,164,106,0.34);
+      border-radius:999px;
+      background:rgba(10,17,16,0.48);
+      color:#eadcae;
+      font-family:var(--font-display);
+      font-size:.72rem;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      line-height:1.2;
+    }
+
+    .hero-badge::before{
+      content:"✦";
+      opacity:.9;
+    }
+
+    .hero h1{
+      max-width:850px;
+      margin:0 0 .72rem;
+      font-family:var(--font-display);
+      font-size:clamp(2rem, 6vw, 4rem);
+      line-height:1.08;
+      letter-spacing:-0.045em;
+      font-weight:700;
+      color:#f3ead7;
+      text-shadow:0 18px 45px rgba(0,0,0,0.5);
+      text-wrap:balance;
+    }
+
+    .hero p{
+      margin:0;
+      max-width:62ch;
+      color:rgba(230,223,207,0.92);
+      font-size:clamp(1rem, 2vw, 1.18rem);
+      line-height:1.6;
+      text-shadow:0 18px 45px rgba(0,0,0,0.45);
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.7rem;
+      margin-top:1.25rem;
+    }
+
+    .container{
+      width:min(860px, calc(100% - 1.5rem));
+      margin:1.1rem auto 0;
+      text-align:center;
+      background-color:rgba(15,27,25,0.78);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:92px 92px;
+      background-position:center 38%;
+      background-repeat:repeat;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:clamp(1.45rem, 3.8vh, 2.4rem) 2.75rem 1.5rem;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,0.60),
+        0 0 0 1px rgba(191,164,106,0.08),
+        0 0 80px rgba(191,164,106,0.06);
+      position:relative;
+      overflow:hidden;
+      z-index:1;
+    }
+
+    .container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 500px at 50% 18%, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .container::after{
+      content:"";
+      position:absolute;
+      inset:-20%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.03), transparent 38%),
+        radial-gradient(circle at 70% 35%, rgba(255,255,255,0.02), transparent 44%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.015), transparent 55%),
+        radial-gradient(circle at center, rgba(191,164,106,0.095) 0%, rgba(191,164,106,0.075) 20%, rgba(191,164,106,0.045) 26%, transparent 34%),
+        linear-gradient(45deg, transparent 47.5%, rgba(191,164,106,0.065) 49%, rgba(191,164,106,0.065) 51%, transparent 52.5%),
+        linear-gradient(-45deg, transparent 47.5%, rgba(191,164,106,0.065) 49%, rgba(191,164,106,0.065) 51%, transparent 52.5%);
+      pointer-events:none;
+      z-index:0;
+      opacity:0.95;
+    }
+
+    .container > *{ position:relative; z-index:1; }
+
+    .page-kicker{
+      margin:0 auto 1.4rem;
+      max-width:70ch;
+      font-size:1.04rem;
+      line-height:1.72;
+      color:var(--muted);
+      text-align:left;
+    }
+
+    .scope p,
+    .scope ul,
+    .scope .note{ text-align:left; }
+
+    .scope h2{
+      margin:2.25rem auto .7rem;
+      max-width:var(--measure);
+      font-family:var(--font-display);
+      font-size:1.34rem;
+      line-height:1.25;
+      font-weight:700;
+      color:var(--text);
+      letter-spacing:-0.02em;
+      text-align:left;
+    }
+
+    .scope h2::after{
+      content:"";
+      display:block;
+      width:78px;
+      height:1px;
+      margin:.55rem 0 0;
+      background:linear-gradient(90deg, rgba(191,164,106,0.9), transparent);
+    }
+
+    .scope p{
+      max-width:var(--measure);
+      line-height:1.78;
+      margin:0 auto 1.15rem;
+    }
+
+    .scope ul{
+      margin:.55rem auto 1.35rem;
+      padding-left:1.2rem;
+      max-width:var(--measure);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope li{
+      margin:.45rem 0;
+      line-height:1.65;
+    }
+
+    .scope .note{
+      margin:.85rem auto 1.55rem;
+      max-width:var(--measure);
+      padding:.95rem;
+      border:1px solid rgba(191,164,106,0.26);
+      border-radius:14px;
+      background:rgba(191,164,106,0.06);
+      color:rgba(230,223,207,0.92);
+    }
+
+    .scope .note strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    .answer-box{
+      margin:0 auto 1.55rem;
+      max-width:var(--measure);
+      padding:1.05rem 1.1rem;
+      border:1px solid rgba(191,164,106,0.34);
+      border-radius:16px;
+      background:
+        radial-gradient(circle at top left, rgba(191,164,106,0.18), transparent 18rem),
+        rgba(10,17,16,0.42);
+      text-align:left;
+    }
+
+    .answer-box .label{
+      display:block;
+      color:#d9c17f;
+      font-family:var(--font-display);
+      font-size:.78rem;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      margin-bottom:.38rem;
+    }
+
+    .answer-box p{
+      margin:0;
+      color:#f1eadc;
+      font-size:1.08rem;
+      line-height:1.6;
+    }
+
+    .comparison-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:.8rem;
+      max-width:var(--measure);
+      margin:1rem auto 1.55rem;
+      text-align:left;
+    }
+
+    .comparison-card{
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:16px;
+      background:rgba(0,0,0,0.14);
+    }
+
+    .comparison-card b{
+      display:block;
+      color:#f0e4c2;
+      font-family:var(--font-display);
+      font-size:1rem;
+      line-height:1.25;
+      margin-bottom:.35rem;
+    }
+
+    .comparison-card span{
+      display:block;
+      color:rgba(230,223,207,0.84);
+      font-size:.94rem;
+      line-height:1.5;
+    }
+
+    .deflist{
+      margin:.2rem auto 1.35rem;
+      max-width:var(--measure);
+      padding:.95rem 1.05rem;
+      border:1px solid rgba(191,164,106,0.22);
+      border-radius:14px;
+      background:rgba(0,0,0,0.12);
+      text-align:left;
+    }
+
+    .defrow{
+      display:flex;
+      gap:.75rem;
+      padding:.65rem 0;
+      border-top:1px solid rgba(191,164,106,0.14);
+    }
+
+    .defrow:first-child{
+      border-top:none;
+      padding-top:.1rem;
+    }
+
+    .defterm{
+      min-width:11.5rem;
+      font-weight:700;
+      color:#bfa46a;
+    }
+
+    .defdesc{
+      color:rgba(230,223,207,0.90);
+      line-height:1.65;
+    }
+
+    .scope p a,
+    .scope li a,
+    .scope .note a{
+      color:rgba(209,187,134,0.95);
+      text-decoration:none;
+      border-bottom:1px solid rgba(191,164,106,0.45);
+      padding-bottom:1px;
+    }
+
+    .scope p a:hover,
+    .scope li a:hover,
+    .scope .note a:hover{
+      border-bottom-color:rgba(191,164,106,0.75);
+    }
+
+    .faq-block{
+      margin-top:1.85rem;
+      padding-top:.8rem;
+      border-top:1px solid rgba(191,164,106,0.18);
+    }
+
+    details.faq-item{
+      max-width:var(--measure);
+      margin:.7rem auto;
+      border:1px solid rgba(191,164,106,0.18);
+      border-radius:14px;
+      background:rgba(0,0,0,0.14);
+      overflow:hidden;
+      text-align:left;
+    }
+
+    .faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      padding:.88rem 1rem;
+      color:#f0e4c2;
+      font-family:var(--font-display);
+      line-height:1.3;
+    }
+
+    .faq-item summary::-webkit-details-marker{ display:none; }
+
+    .faq-item p{
+      margin:0;
+      padding:0 1rem 1rem;
+      color:rgba(230,223,207,0.82);
+    }
+
+    .path-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:.8rem;
+      max-width:var(--measure);
+      margin:1rem auto 1.3rem;
+      text-align:left;
+    }
+
+    .path-card{
+      display:block;
+      min-height:100%;
+      padding:1rem;
+      border:1px solid rgba(191,164,106,0.24);
+      border-radius:16px;
+      background:linear-gradient(180deg, rgba(191,164,106,0.08), rgba(0,0,0,0.16));
+      color:var(--text);
+      text-decoration:none;
+    }
+
+    .path-card b{
+      display:block;
+      color:#f3e7c7;
+      font-family:var(--font-display);
+      line-height:1.25;
+      margin-bottom:.35rem;
+    }
+
+    .path-card span{
+      display:block;
+      color:rgba(230,223,207,0.78);
+      font-size:.94rem;
+      line-height:1.45;
+    }
+
+    .path-card:hover{
+      border-color:rgba(191,164,106,0.48);
+      background:linear-gradient(180deg, rgba(191,164,106,0.13), rgba(0,0,0,0.18));
+      text-decoration:none;
+    }
+
+    footer{
+      margin-top:2.8rem;
+      font-size:.82rem;
+      line-height:1.6;
+      color:rgba(230,223,207,0.72);
+      max-width:74ch;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .flags-footer{
+      display:block;
+      width:108px;
+      height:auto;
+      margin:1.1rem auto -.2rem;
+      opacity:.42;
+      filter:saturate(.85) contrast(.95) brightness(.95);
+      pointer-events:none;
+    }
+
+    .copyright{
+      font-size:.72rem;
+      opacity:.55;
+      margin-top:1.2rem;
+    }
+
+    a.button{
+      display:inline-block;
+      padding:.95rem 1.9rem;
+      font-size:1rem;
+      letter-spacing:.4px;
+      text-decoration:none;
+      color:#0a1110;
+      background:linear-gradient(180deg, #d7c08a 0%, var(--accent) 100%);
+      border:1px solid rgba(0,0,0,0.35);
+      border-radius:12px;
+      box-shadow:0 12px 26px rgba(0,0,0,0.35);
+      transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    }
+
+    a.button:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+      box-shadow:0 14px 34px rgba(0,0,0,0.38);
+      text-decoration:none;
+    }
+
+    a.button.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(191,164,106,0.45);
+      box-shadow:none;
+    }
+
+    a.button.secondary:hover{
+      background:rgba(191,164,106,0.10);
+    }
+
+    .scope footer p,
+    .scope footer .copyright{
+      text-align:center;
+      margin-top:1.8rem;
+    }
+
+    @media (max-width:700px){
+      .comparison-grid,
+      .path-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:520px){
+      .site-header{ padding:.65rem 0; }
+
+      .header-inner{
+        width:calc(100% - 1.5rem);
+        padding:0 1.25rem;
+      }
+
+      .hero{
+        width:calc(100% - 1rem);
+        min-height:44vh;
+        border-radius:15px;
+      }
+
+      .hero-inner{
+        padding:2.35rem 1rem 1.45rem;
+      }
+
+      .container{
+        width:calc(100% - 1.5rem);
+        margin:1.05rem auto 0;
+        padding:1.55rem 1.25rem;
+        border-radius:14px;
+        background-size:54px 54px;
+      }
+
+      p{
+        font-size:.98rem;
+        line-height:1.65;
+        margin-bottom:1.15rem;
+      }
+
+      .defrow{
+        flex-direction:column;
+        gap:.25rem;
+      }
+
+      .defterm{
+        min-width:auto;
+      }
+
+      a.button{
+        width:100%;
+        padding:.95rem 1.1rem;
+      }
+
+      footer{
+        margin-top:1.8rem;
+        font-size:.78rem;
+      }
+
+      .flags-footer{
+        width:92px;
+        margin:.9rem auto 0;
+        opacity:.35;
+      }
+    }
+
+    @media (min-width:1300px){
+      .container,
+      .hero{
+        width:min(1080px, calc(100% - 3rem));
+      }
+    }
+
+    @media (min-width:1100px){
+      .container p{
+        max-width:72ch;
+      }
+    }
+  </style>
+<style id="collision-layout-overrides">
+/* Collision-layout conversion: preserves original article content and components. */
+:root{
+  --measure:42rem; --bg:#0a1110; --panel:rgba(15,27,25,.78);
+  --text:#e6dfcf; --ink:#e6dfcf; --muted:#b6ae9c; --faint:#9f9278;
+  --accent:#bfa46a; --accent-2:#d7c08a; --border:rgba(191,164,106,.28);
+  --edge:rgba(191,164,106,.25); --shadow:rgba(0,0,0,.60);
+  --link:rgba(209,187,134,.95); --max:min(860px,calc(100% - 1.5rem));
+}
+html{background:#0a1110;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0!important; min-height:100vh; display:flex!important; flex-direction:column;
+  align-items:center!important; justify-content:flex-start; padding:0 0 2.25rem!important;
+  color:var(--text)!important; font-family:"Spectral",Georgia,"Times New Roman",serif!important;
+  font-size:17px; line-height:1.55; letter-spacing:-.01em;
+  background:radial-gradient(900px 600px at 50% 18%,rgba(24,40,38,.95) 0%,rgba(10,17,16,1) 62%),radial-gradient(1200px 900px at 50% 110%,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 60%)!important;
+}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.09;background-image:url('/tile3.png');background-size:360px auto;mix-blend-mode:screen;z-index:0}
+#site-header,.site-header{width:100%!important;position:relative;z-index:5000}
+a{color:var(--link)!important;text-decoration:none}a:hover{color:#ecd9ab!important;text-decoration:underline;text-underline-offset:.18em}
+main.container.scope{
+  width:min(860px,calc(100% - 1.5rem))!important; max-width:none!important; margin:1.1rem auto 0!important;
+  padding:3.5rem 2.75rem!important; text-align:center; position:relative; overflow:hidden; z-index:1;
+  background-color:rgba(15,27,25,.78)!important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='rgba(191,164,106,0.03)' stroke-width='1'%3E%3Cpath d='M0.5 0.5H79.5V79.5H0.5Z'/%3E%3Cpath d='M0.5 0.5L79.5 79.5M79.5 0.5L0.5 79.5'/%3E%3C/g%3E%3C/svg%3E")!important;
+  background-size:92px 92px!important; background-position:center 38%!important; background-repeat:repeat!important;
+  border:1px solid var(--border)!important; border-radius:16px!important;
+  box-shadow:0 26px 70px rgba(0,0,0,.60),0 0 0 1px rgba(191,164,106,.08),0 0 80px rgba(191,164,106,.06)!important;
+}
+main.container.scope::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 500px at 50% 18%,rgba(255,255,255,.07) 0%,rgba(0,0,0,0) 55%),radial-gradient(900px 700px at 50% 120%,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 55%);pointer-events:none;z-index:0}
+main.container.scope::after{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.03),transparent 38%),radial-gradient(circle at 70% 35%,rgba(255,255,255,.02),transparent 44%),radial-gradient(circle at 50% 80%,rgba(255,255,255,.015),transparent 55%),radial-gradient(circle at center,rgba(191,164,106,.095) 0%,rgba(191,164,106,.075) 20%,rgba(191,164,106,.045) 26%,transparent 34%),linear-gradient(45deg,transparent 47.5%,rgba(191,164,106,.065) 49%,rgba(191,164,106,.065) 51%,transparent 52.5%),linear-gradient(-45deg,transparent 47.5%,rgba(191,164,106,.065) 49%,rgba(191,164,106,.065) 51%,transparent 52.5%);pointer-events:none;z-index:0;opacity:.95}
+main.container.scope>*{position:relative;z-index:1}
+.logo-mount{display:flex;justify-content:center;margin:0 auto 1.45rem}.logo{display:block;width:min(270px,72vw);height:auto;filter:drop-shadow(0 12px 28px rgba(0,0,0,.48))}
+.hero-badge{display:inline-flex!important;align-items:center;justify-content:center;gap:.5rem;max-width:100%;margin:0 auto .95rem!important;padding:.42rem .68rem!important;border:1px solid rgba(191,164,106,.36)!important;border-radius:999px!important;background:rgba(10,17,16,.55)!important;color:#eadcae!important;font-family:"Libre Baskerville",Georgia,serif!important;font-size:.72rem!important;letter-spacing:.11em!important;text-transform:uppercase!important;line-height:1.25!important}
+main.container.scope>h1{max-width:760px;margin:0 auto .9rem!important;font-family:"Libre Baskerville",Georgia,serif!important;font-size:clamp(2rem,6vw,4.1rem)!important;line-height:1.06!important;letter-spacing:-.04em!important;text-align:center!important;text-transform:none!important;font-variant:normal!important;text-wrap:balance;color:var(--text)!important}
+.rule{width:min(180px,38%);height:1px;margin:1.35rem auto;background:linear-gradient(90deg,transparent,var(--accent),transparent)}
+.page-kicker{max-width:690px!important;margin:0 auto!important;color:#d5cbb8!important;font-size:1.08rem!important;line-height:1.65!important;text-align:center!important}
+.meta-row{display:flex!important;flex-wrap:wrap;justify-content:center!important;gap:.55rem!important;margin:1.25rem auto 0!important}.meta-pill{display:inline-flex!important;align-items:center;padding:.36rem .62rem!important;border:1px solid rgba(191,164,106,.24)!important;border-radius:999px!important;background:rgba(10,17,16,.36)!important;color:#cfc2a8!important;font-size:.83rem!important;line-height:1.2!important}
+.article-content{max-width:var(--measure);margin:2.25rem auto 0;text-align:left}
+.article-content>*{max-width:100%}.article-content>p,.article-content>ul,.article-content>ol{margin-left:auto;margin-right:auto}
+.article-content h2{margin:2.45rem 0 .85rem!important;padding-top:.15rem;font-family:"Libre Baskerville",Georgia,serif!important;font-size:clamp(1.35rem,3vw,1.85rem)!important;line-height:1.25!important;letter-spacing:-.025em!important;color:#efe7d7!important;text-align:left!important;text-transform:none!important;font-variant:normal!important}
+.article-content h3{font-family:"Libre Baskerville",Georgia,serif!important;color:#ead9b0!important;letter-spacing:-.015em!important;text-transform:none!important;font-variant:normal!important}
+.article-content p,.article-content li{color:var(--text)}
+.article-content img{max-width:100%;height:auto}
+.article-content .entry-shell,.article-content .content-grid,.article-content .layout,.article-content .main-grid{display:block!important;width:100%!important;max-width:100%!important;margin:0!important;padding:0!important}
+.article-content article,.article-content aside,.article-content .article-card,.article-content .prose{width:100%!important;max-width:100%!important;margin:0!important;padding:0!important;background:none!important;border:0!important;box-shadow:none!important}
+.article-content aside{margin-top:2rem!important}
+.answer-box,.note,.callout,.evidence-note,.scope-note,.collector-note{border:1px solid rgba(191,164,106,.28)!important;border-left:3px solid var(--accent)!important;border-radius:12px!important;background:rgba(10,17,16,.42)!important;padding:1.05rem 1.15rem!important;box-shadow:none!important}
+.accuracy-card,.fact-card,.comparison-card,.artifact-card,.side-card,.link-card,.card,.faq-item,.timeline-item{background:rgba(10,17,16,.38)!important;border-color:rgba(191,164,106,.24)!important;box-shadow:none!important}
+.accuracy-grid,.card-grid,.comparison-grid,.artifact-grid,.fact-grid{max-width:100%!important}
+table{width:100%;border-collapse:collapse;display:block;overflow-x:auto}th,td{border-color:rgba(191,164,106,.2)!important}
+footer{margin-top:2.6rem!important;padding-top:1.5rem!important;border-top:1px solid rgba(191,164,106,.18)!important;text-align:center!important}
+.button,.btn{display:inline-flex!important;align-items:center;justify-content:center;border:1px solid rgba(191,164,106,.42)!important;border-radius:999px!important;padding:.65rem 1rem!important;background:rgba(191,164,106,.10)!important;color:#ead9ac!important;text-decoration:none!important}
+@media(max-width:680px){main.container.scope{padding:2.35rem 1.2rem!important;border-radius:14px!important}.article-content{margin-top:1.8rem}.logo{width:min(230px,75vw)}main.container.scope>h1{font-size:clamp(1.8rem,10vw,2.75rem)!important}.article-content h2{margin-top:2rem!important}.meta-row{gap:.4rem!important}}
+</style></head><body><div id="site-header"></div><main class="container scope"><div class="logo-mount"><img alt="Ocean Liner Curator logo" class="logo" src="/logo.png"/></div><span class="hero-badge">Evidence & methodology · performance</span><h1>Trial Speed vs Service Speed on Ocean Liners</h1><div class="rule"></div><p class="page-kicker">A liner can have several legitimate speed figures. Trial speed, maximum speed, normal service speed, and average speed over a record crossing answer different questions.</p><div class="article-content"><div class="answer-box"><span class="label">Short answer</span><p><strong>Trial speed is not service speed.</strong> One measures what a ship achieved under test conditions; the other reflects what it could sustain economically and reliably in regular operation.</p></div>
+<h2>Common speed figures</h2><div class="deflist">
+<div class="defrow"><div class="defterm">Trial speed</div><div class="defdesc">A speed achieved during sea trials under controlled conditions, often with a light load and freshly tuned machinery.</div></div>
+<div class="defrow"><div class="defterm">Maximum speed</div><div class="defdesc">The highest speed the vessel was known or estimated to reach, sometimes briefly.</div></div>
+<div class="defrow"><div class="defterm">Service speed</div><div class="defdesc">The practical speed maintained in normal scheduled operation, allowing for fuel economy, weather, machinery wear, and timetable margin.</div></div>
+<div class="defrow"><div class="defterm">Crossing average</div><div class="defdesc">Average speed over a defined voyage or measured record course, which may differ substantially from instantaneous maximum speed.</div></div>
+</div>
+<h2>Why inflated comparisons happen</h2><p>Publicity often favored the highest impressive number available. Later summaries may place a trial speed beside another ship’s service speed, creating a comparison that looks precise but is methodologically invalid.</p>
+<div class="note"><strong>Comparison rule:</strong> use the same type of speed measurement, over the same kind of interval, before deciding one ship was faster than another.</div>
+<h2>Speed also changed over a career</h2><p>Boiler condition, propeller changes, machinery refits, fuel conversion, hull fouling, wartime restrictions, and aging could all affect performance.</p>
+<div class="path-grid"><a class="path-card" href="/why-ocean-liner-specifications-disagree"><b>Why Specifications Disagree</b><span>Speed is one of several specifications whose meaning depends on context.</span></a><a class="path-card" href="/evidence-methodology"><b>Evidence &amp; Methodology</b><span>Return to the methodology hub.</span></a></div><footer><p>Ocean Liner Curator — evidence-first maritime history. Where the evidence does not support certainty, uncertainty is preserved.</p><img class="flags-footer" src="/signal-flags.png" alt="" aria-hidden="true"/><p class="copyright">© <span id="year"></span> Ocean Liner Curator.</p></footer></div></main><script>document.getElementById("year").textContent=new Date().getFullYear();</script><script src="/assets/header.js" defer></script><script src="/assets/nav.js" defer></script></body></html>
