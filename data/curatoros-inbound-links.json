@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T03:05:51.824Z",
+  "generatedAt": "2026-10-04T06:59:39.319Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,28 +12,17 @@
   },
   "summary": {
     "shipGuides": 350,
-    "editorialOrphans": 51,
-    "oneEditorialInbound": 159,
-    "threePlusEditorialInbound": 52,
-    "totalEditorialInboundLinks": 688,
-    "averageEditorialInbound": 1.97
+    "editorialOrphans": 50,
+    "oneEditorialInbound": 160,
+    "threePlusEditorialInbound": 53,
+    "totalEditorialInboundLinks": 708,
+    "averageEditorialInbound": 2.02
   },
   "orphanedShips": [
     {
       "name": "MS Batory (1936)",
       "slug": "ms-batory",
       "url": "/ships/ms-batory",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Gripsholm (1925)",
-      "slug": "ms-gripsholm-1925",
-      "url": "/ships/ms-gripsholm-1925",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -712,6 +701,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MS Gripsholm (1925)",
+      "slug": "ms-gripsholm-1925",
+      "url": "/ships/ms-gripsholm-1925",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
+          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
+          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -3617,17 +3625,6 @@
       "sources": []
     },
     {
-      "name": "MS Gripsholm (1925)",
-      "slug": "ms-gripsholm-1925",
-      "url": "/ships/ms-gripsholm-1925",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
       "url": "/ships/ms-kungsholm-1928",
@@ -4296,6 +4293,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MS Gripsholm (1925)",
+      "slug": "ms-gripsholm-1925",
+      "url": "/ships/ms-gripsholm-1925",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
+          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
+          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -7488,31 +7504,6 @@
       ]
     },
     {
-      "name": "RMS Caronia (1947)",
-      "slug": "rms-caronia-1947",
-      "url": "/ships/rms-caronia-1947",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "british-vs-italian-postwar-flagships.html",
-          "sourceRoute": "/british-vs-italian-postwar-flagships",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Empress of Ireland",
       "slug": "rms-empress-of-ireland",
       "url": "/ships/rms-empress-of-ireland",
@@ -9468,6 +9459,36 @@
       ]
     },
     {
+      "name": "RMS Caronia (1947)",
+      "slug": "rms-caronia-1947",
+      "url": "/ships/rms-caronia-1947",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "british-vs-italian-postwar-flagships.html",
+          "sourceRoute": "/british-vs-italian-postwar-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "migrant-traffic-vs-tourist-traffic.html",
+          "sourceRoute": "/migrant-traffic-vs-tourist-traffic",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "RMS Cedric",
       "slug": "rms-cedric",
       "url": "/ships/rms-cedric",
@@ -10056,42 +10077,6 @@
       ]
     },
     {
-      "name": "RMS Celtic",
-      "slug": "rms-celtic",
-      "url": "/ships/rms-celtic",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 2,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/white-stars-big-four.html",
-          "sourceRoute": "/collections/white-stars-big-four",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Oceanic (1899)",
       "slug": "rms-oceanic-1899",
       "url": "/ships/rms-oceanic-1899",
@@ -10411,23 +10396,23 @@
       ]
     },
     {
-      "name": "MV Britannic (1930)",
-      "slug": "mv-britannic",
-      "url": "/ships/mv-britannic",
-      "inboundTotal": 7,
-      "editorialInbound": 6,
+      "name": "RMS Celtic",
+      "slug": "rms-celtic",
+      "url": "/ships/rms-celtic",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
         "collection": 1,
         "hub-history": 2,
         "ship-guide": 1,
-        "article-reference": 2
+        "article-reference": 1
       },
       "sources": [
         {
-          "sourcePath": "collections/tourist-third-cabin-democratization.html",
-          "sourceRoute": "/collections/tourist-third-cabin-democratization",
+          "sourcePath": "collections/white-stars-big-four.html",
+          "sourceRoute": "/collections/white-stars-big-four",
           "sourceCategory": "collection"
         },
         {
@@ -10441,19 +10426,14 @@
           "sourceCategory": "ship-guide"
         },
         {
+          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
+          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
           "sourcePath": "white-star-line.html",
           "sourceRoute": "/white-star-line",
           "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "why-cabin-class-ships-matter.html",
-          "sourceRoute": "/why-cabin-class-ships-matter",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-mv-britannic-matters.html",
-          "sourceRoute": "/why-mv-britannic-matters",
-          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -10501,50 +10481,6 @@
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "RMS Canopic",
-      "slug": "rms-canopic",
-      "url": "/ships/rms-canopic",
-      "inboundTotal": 7,
-      "editorialInbound": 6,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 6
-      },
-      "sources": [
-        {
-          "sourcePath": "express-liners-vs-intermediate-liners.html",
-          "sourceRoute": "/express-liners-vs-intermediate-liners",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "first-class-vs-third-class-on-ocean-liners.html",
-          "sourceRoute": "/first-class-vs-third-class-on-ocean-liners",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-passenger-manifests-and-immigration-worked.html",
-          "sourceRoute": "/how-passenger-manifests-and-immigration-worked",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
-          "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "what-did-the-ships-surgeon-do-on-an-ocean-liner.html",
-          "sourceRoute": "/what-did-the-ships-surgeon-do-on-an-ocean-liner",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-ocean-liners-carried-cargo.html",
-          "sourceRoute": "/why-ocean-liners-carried-cargo",
-          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -10642,56 +10578,9 @@
       ]
     },
     {
-      "name": "SS Vaterland",
-      "slug": "ss-vaterland",
-      "url": "/ships/ss-vaterland",
-      "inboundTotal": 7,
-      "editorialInbound": 6,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1,
-        "article-reference": 1,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/german-prestige-liners.html",
-          "sourceRoute": "/collections/german-prestige-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "olympic-class-vs-imperator-class.html",
-          "sourceRoute": "/olympic-class-vs-imperator-class",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ss-leviathan-timeline.html",
-          "sourceRoute": "/ships/ss-leviathan-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "RMS Aquitania",
-      "slug": "rms-aquitania",
-      "url": "/ships/rms-aquitania",
+      "name": "MV Britannic (1930)",
+      "slug": "mv-britannic",
+      "url": "/ships/mv-britannic",
       "inboundTotal": 8,
       "editorialInbound": 7,
       "baselineInbound": 1,
@@ -10699,33 +10588,83 @@
       "byCategory": {
         "collection": 1,
         "hub-history": 2,
-        "article-reference": 4
+        "ship-guide": 1,
+        "article-reference": 3
       },
       "sources": [
         {
-          "sourcePath": "collections/the-superliner-race.html",
-          "sourceRoute": "/collections/the-superliner-race",
+          "sourcePath": "collections/tourist-third-cabin-democratization.html",
+          "sourceRoute": "/collections/tourist-third-cabin-democratization",
           "sourceCategory": "collection"
         },
         {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
         },
         {
-          "sourcePath": "cunard-vs-white-star-different-atlantic-strategies.html",
-          "sourceRoute": "/cunard-vs-white-star-different-atlantic-strategies",
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
+          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
           "sourceCategory": "article-reference"
         },
         {
-          "sourcePath": "french-vs-british-flagships-between-the-wars.html",
-          "sourceRoute": "/french-vs-british-flagships-between-the-wars",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
           "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "why-cabin-class-ships-matter.html",
+          "sourceRoute": "/why-cabin-class-ships-matter",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-mv-britannic-matters.html",
+          "sourceRoute": "/why-mv-britannic-matters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "RMS Canopic",
+      "slug": "rms-canopic",
+      "url": "/ships/rms-canopic",
+      "inboundTotal": 8,
+      "editorialInbound": 7,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 7
+      },
+      "sources": [
+        {
+          "sourcePath": "express-liners-vs-intermediate-liners.html",
+          "sourceRoute": "/express-liners-vs-intermediate-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "first-class-vs-third-class-on-ocean-liners.html",
+          "sourceRoute": "/first-class-vs-third-class-on-ocean-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-passenger-manifests-and-immigration-worked.html",
+          "sourceRoute": "/how-passenger-manifests-and-immigration-worked",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "migrant-traffic-vs-tourist-traffic.html",
+          "sourceRoute": "/migrant-traffic-vs-tourist-traffic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
+          "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
+          "sourceCategory": "article-reference"
         },
         {
           "sourcePath": "what-did-the-ships-surgeon-do-on-an-ocean-liner.html",
@@ -10733,8 +10672,8 @@
           "sourceCategory": "article-reference"
         },
         {
-          "sourcePath": "why-rms-aquitania-matters.html",
-          "sourceRoute": "/why-rms-aquitania-matters",
+          "sourcePath": "why-ocean-liners-carried-cargo.html",
+          "sourceRoute": "/why-ocean-liners-carried-cargo",
           "sourceCategory": "article-reference"
         }
       ]
@@ -10787,6 +10726,114 @@
         {
           "sourcePath": "why-rms-carpathia-matters.html",
           "sourceRoute": "/why-rms-carpathia-matters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS Vaterland",
+      "slug": "ss-vaterland",
+      "url": "/ships/ss-vaterland",
+      "inboundTotal": 8,
+      "editorialInbound": 7,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1,
+        "article-reference": 2,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "olympic-class-vs-imperator-class.html",
+          "sourceRoute": "/olympic-class-vs-imperator-class",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-leviathan-timeline.html",
+          "sourceRoute": "/ships/ss-leviathan-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "standardized-sister-ships-vs-revised-sisters.html",
+          "sourceRoute": "/standardized-sister-ships-vs-revised-sisters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "RMS Aquitania",
+      "slug": "rms-aquitania",
+      "url": "/ships/rms-aquitania",
+      "inboundTotal": 9,
+      "editorialInbound": 8,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 2,
+        "article-reference": 5
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/the-superliner-race.html",
+          "sourceRoute": "/collections/the-superliner-race",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "cunard-vs-white-star-different-atlantic-strategies.html",
+          "sourceRoute": "/cunard-vs-white-star-different-atlantic-strategies",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "french-vs-british-flagships-between-the-wars.html",
+          "sourceRoute": "/french-vs-british-flagships-between-the-wars",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
+          "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-the-ships-surgeon-do-on-an-ocean-liner.html",
+          "sourceRoute": "/what-did-the-ships-surgeon-do-on-an-ocean-liner",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-rms-aquitania-matters.html",
+          "sourceRoute": "/why-rms-aquitania-matters",
           "sourceCategory": "article-reference"
         }
       ]
@@ -10982,73 +11029,6 @@
       ]
     },
     {
-      "name": "SS Imperator",
-      "slug": "ss-imperator",
-      "url": "/ships/ss-imperator",
-      "inboundTotal": 11,
-      "editorialInbound": 10,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 2,
-        "collection": 5,
-        "hub-history": 1,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "british-vs-german-ocean-liners-before-1914.html",
-          "sourceRoute": "/british-vs-german-ocean-liners-before-1914",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
-          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/floating-palaces-interior-innovation.html",
-          "sourceRoute": "/collections/floating-palaces-interior-innovation",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/german-prestige-liners.html",
-          "sourceRoute": "/collections/german-prestige-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/the-imperator-class-as-a-design-system.html",
-          "sourceRoute": "/collections/the-imperator-class-as-a-design-system",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/the-superliner-race.html",
-          "sourceRoute": "/collections/the-superliner-race",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "olympic-class-vs-imperator-class.html",
-          "sourceRoute": "/olympic-class-vs-imperator-class",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Île de France",
       "slug": "ss-ile-de-france",
       "url": "/ships/ss-ile-de-france",
@@ -11121,15 +11101,87 @@
       ]
     },
     {
-      "name": "SS Leviathan",
-      "slug": "ss-leviathan",
-      "url": "/ships/ss-leviathan",
-      "inboundTotal": 15,
-      "editorialInbound": 14,
+      "name": "SS Imperator",
+      "slug": "ss-imperator",
+      "url": "/ships/ss-imperator",
+      "inboundTotal": 12,
+      "editorialInbound": 11,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "article-reference": 6,
+        "article-reference": 3,
+        "collection": 5,
+        "hub-history": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "british-vs-german-ocean-liners-before-1914.html",
+          "sourceRoute": "/british-vs-german-ocean-liners-before-1914",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
+          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/the-imperator-class-as-a-design-system.html",
+          "sourceRoute": "/collections/the-imperator-class-as-a-design-system",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/the-superliner-race.html",
+          "sourceRoute": "/collections/the-superliner-race",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "olympic-class-vs-imperator-class.html",
+          "sourceRoute": "/olympic-class-vs-imperator-class",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "standardized-sister-ships-vs-revised-sisters.html",
+          "sourceRoute": "/standardized-sister-ships-vs-revised-sisters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS Leviathan",
+      "slug": "ss-leviathan",
+      "url": "/ships/ss-leviathan",
+      "inboundTotal": 17,
+      "editorialInbound": 16,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 8,
         "collection": 4,
         "hub-history": 1,
         "ship-guide": 3
@@ -11178,6 +11230,16 @@
         {
           "sourcePath": "leviathan-public-rooms.html",
           "sourceRoute": "/leviathan-public-rooms",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "migrant-traffic-vs-tourist-traffic.html",
+          "sourceRoute": "/migrant-traffic-vs-tourist-traffic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
+          "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
           "sourceCategory": "article-reference"
         },
         {
@@ -11313,12 +11375,12 @@
       "name": "RMS Mauretania",
       "slug": "rms-mauretania",
       "url": "/ships/rms-mauretania",
-      "inboundTotal": 20,
-      "editorialInbound": 19,
+      "inboundTotal": 24,
+      "editorialInbound": 23,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "article-reference": 13,
+        "article-reference": 17,
         "hub-history": 3,
         "ship-guide": 3
       },
@@ -11369,8 +11431,18 @@
           "sourceCategory": "article-reference"
         },
         {
+          "sourcePath": "migrant-traffic-vs-tourist-traffic.html",
+          "sourceRoute": "/migrant-traffic-vs-tourist-traffic",
+          "sourceCategory": "article-reference"
+        },
+        {
           "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
           "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
+          "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
           "sourceCategory": "article-reference"
         },
         {
@@ -11399,6 +11471,16 @@
           "sourceCategory": "article-reference"
         },
         {
+          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
+          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
+          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
           "sourcePath": "titanic.html",
           "sourceRoute": "/titanic",
           "sourceCategory": "hub-history"
@@ -11421,137 +11503,15 @@
       ]
     },
     {
-      "name": "RMS Queen Mary",
-      "slug": "rms-queen-mary",
-      "url": "/ships/rms-queen-mary",
-      "inboundTotal": 22,
-      "editorialInbound": 21,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 12,
-        "collection": 3,
-        "hub-history": 2,
-        "ship-guide": 4
-      },
-      "sources": [
-        {
-          "sourcePath": "250-years-across-the-atlantic.html",
-          "sourceRoute": "/250-years-across-the-atlantic",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "coal-fired-vs-oil-fired-ocean-liners.html",
-          "sourceRoute": "/coal-fired-vs-oil-fired-ocean-liners",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
-          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/floating-palaces-interior-innovation.html",
-          "sourceRoute": "/collections/floating-palaces-interior-innovation",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/queen-mary-at-war.html",
-          "sourceRoute": "/collections/queen-mary-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "french-vs-british-flagships-between-the-wars.html",
-          "sourceRoute": "/french-vs-british-flagships-between-the-wars",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
-          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
-          "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-ocean-liners-were-provisioned.html",
-          "sourceRoute": "/how-ocean-liners-were-provisioned",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "queen-mary-public-rooms.html",
-          "sourceRoute": "/queen-mary-public-rooms",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "rms-queen-mary.html",
-          "sourceRoute": "/rms-queen-mary",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/rms-queen-mary-timeline.html",
-          "sourceRoute": "/ships/rms-queen-mary-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "what-did-an-ocean-liner-purser-do.html",
-          "sourceRoute": "/what-did-an-ocean-liner-purser-do",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "what-did-ocean-liner-stewards-do.html",
-          "sourceRoute": "/what-did-ocean-liner-stewards-do",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
-          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-is-queen-mary-in-long-beach.html",
-          "sourceRoute": "/why-is-queen-mary-in-long-beach",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "RMS Titanic",
       "slug": "rms-titanic",
       "url": "/ships/rms-titanic",
-      "inboundTotal": 23,
-      "editorialInbound": 22,
+      "inboundTotal": 24,
+      "editorialInbound": 23,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "article-reference": 10,
+        "article-reference": 11,
         "collection": 5,
         "hub-history": 4,
         "ship-guide": 3
@@ -11638,6 +11598,11 @@
           "sourceCategory": "ship-guide"
         },
         {
+          "sourcePath": "standardized-sister-ships-vs-revised-sisters.html",
+          "sourceRoute": "/standardized-sister-ships-vs-revised-sisters",
+          "sourceCategory": "article-reference"
+        },
+        {
           "sourcePath": "titanic.html",
           "sourceRoute": "/titanic",
           "sourceCategory": "hub-history"
@@ -11670,15 +11635,152 @@
       ]
     },
     {
-      "name": "SS United States",
-      "slug": "ss-us",
-      "url": "/ships/ss-us",
-      "inboundTotal": 24,
-      "editorialInbound": 23,
+      "name": "RMS Queen Mary",
+      "slug": "rms-queen-mary",
+      "url": "/ships/rms-queen-mary",
+      "inboundTotal": 25,
+      "editorialInbound": 24,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "article-reference": 12,
+        "article-reference": 15,
+        "collection": 3,
+        "hub-history": 2,
+        "ship-guide": 4
+      },
+      "sources": [
+        {
+          "sourcePath": "250-years-across-the-atlantic.html",
+          "sourceRoute": "/250-years-across-the-atlantic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "coal-fired-vs-oil-fired-ocean-liners.html",
+          "sourceRoute": "/coal-fired-vs-oil-fired-ocean-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
+          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/queen-mary-at-war.html",
+          "sourceRoute": "/collections/queen-mary-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "french-vs-british-flagships-between-the-wars.html",
+          "sourceRoute": "/french-vs-british-flagships-between-the-wars",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
+          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
+          "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-provisioned.html",
+          "sourceRoute": "/how-ocean-liners-were-provisioned",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
+          "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "queen-mary-public-rooms.html",
+          "sourceRoute": "/queen-mary-public-rooms",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "rms-queen-mary.html",
+          "sourceRoute": "/rms-queen-mary",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/rms-queen-mary-timeline.html",
+          "sourceRoute": "/ships/rms-queen-mary-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
+          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
+          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-an-ocean-liner-purser-do.html",
+          "sourceRoute": "/what-did-an-ocean-liner-purser-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-ocean-liner-stewards-do.html",
+          "sourceRoute": "/what-did-ocean-liner-stewards-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
+          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-is-queen-mary-in-long-beach.html",
+          "sourceRoute": "/why-is-queen-mary-in-long-beach",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS United States",
+      "slug": "ss-us",
+      "url": "/ships/ss-us",
+      "inboundTotal": 25,
+      "editorialInbound": 24,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 13,
         "collection": 5,
         "hub-history": 2,
         "ship-guide": 4
@@ -11790,6 +11892,11 @@
           "sourceCategory": "article-reference"
         },
         {
+          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
+          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
           "sourcePath": "who-worked-in-ocean-liner-engine-rooms.html",
           "sourceRoute": "/who-worked-in-ocean-liner-engine-rooms",
           "sourceCategory": "article-reference"
@@ -11805,12 +11912,12 @@
       "name": "RMS Olympic",
       "slug": "rms-olympic",
       "url": "/ships/rms-olympic",
-      "inboundTotal": 31,
-      "editorialInbound": 30,
+      "inboundTotal": 32,
+      "editorialInbound": 31,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "article-reference": 15,
+        "article-reference": 16,
         "collection": 7,
         "hub-history": 6,
         "ship-guide": 2
@@ -11934,6 +12041,11 @@
         {
           "sourcePath": "speed-vs-comfort-what-ocean-liner-companies-optimized-for.html",
           "sourceRoute": "/speed-vs-comfort-what-ocean-liner-companies-optimized-for",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "standardized-sister-ships-vs-revised-sisters.html",
+          "sourceRoute": "/standardized-sister-ships-vs-revised-sisters",
           "sourceCategory": "article-reference"
         },
         {
