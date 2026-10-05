@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T09:11:20.553Z",
+  "generatedAt": "2026-10-05T09:20:06.172Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -14,9 +14,9 @@
     "shipGuides": 350,
     "editorialOrphans": 45,
     "oneEditorialInbound": 146,
-    "threePlusEditorialInbound": 59,
-    "totalEditorialInboundLinks": 778,
-    "averageEditorialInbound": 2.22
+    "threePlusEditorialInbound": 60,
+    "totalEditorialInboundLinks": 781,
+    "averageEditorialInbound": 2.23
   },
   "orphanedShips": [
     {
@@ -8301,31 +8301,6 @@
       ]
     },
     {
-      "name": "SS Leonardo da Vinci",
-      "slug": "ss-leonardo-da-vinci",
-      "url": "/ships/ss-leonardo-da-vinci",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/italian-ocean-liners.html",
-          "sourceRoute": "/collections/italian-ocean-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Manhattan (1932)",
       "slug": "ss-manhattan",
       "url": "/ships/ss-manhattan",
@@ -9411,37 +9386,6 @@
       ]
     },
     {
-      "name": "SS Cristoforo Colombo",
-      "slug": "ss-cristoforo-colombo",
-      "url": "/ships/ss-cristoforo-colombo",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "collection": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "british-vs-italian-postwar-flagships.html",
-          "sourceRoute": "/british-vs-italian-postwar-flagships",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/italian-ocean-liners.html",
-          "sourceRoute": "/collections/italian-ocean-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Deutschland (1900)",
       "slug": "ss-deutschland",
       "url": "/ships/ss-deutschland",
@@ -9499,6 +9443,37 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Leonardo da Vinci",
+      "slug": "ss-leonardo-da-vinci",
+      "url": "/ships/ss-leonardo-da-vinci",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "andrea-doria-colombo-leonardo-design-evolution.html",
+          "sourceRoute": "/andrea-doria-colombo-leonardo-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -9822,6 +9797,42 @@
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Cristoforo Colombo",
+      "slug": "ss-cristoforo-colombo",
+      "url": "/ships/ss-cristoforo-colombo",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "andrea-doria-colombo-leonardo-design-evolution.html",
+          "sourceRoute": "/andrea-doria-colombo-leonardo-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "british-vs-italian-postwar-flagships.html",
+          "sourceRoute": "/british-vs-italian-postwar-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -10383,53 +10394,6 @@
       ]
     },
     {
-      "name": "SS Andrea Doria",
-      "slug": "ss-andrea-doria",
-      "url": "/ships/ss-andrea-doria",
-      "inboundTotal": 7,
-      "editorialInbound": 6,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "collection": 3,
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "british-vs-italian-postwar-flagships.html",
-          "sourceRoute": "/british-vs-italian-postwar-flagships",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/italian-ocean-liners.html",
-          "sourceRoute": "/collections/italian-ocean-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
-          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
-          "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Kaiser Wilhelm der Grosse",
       "slug": "ss-kaiser-wilhelm-der-grosse",
       "url": "/ships/ss-kaiser-wilhelm-der-grosse",
@@ -10522,6 +10486,58 @@
           "sourcePath": "why-ocean-liners-carried-cargo.html",
           "sourceRoute": "/why-ocean-liners-carried-cargo",
           "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS Andrea Doria",
+      "slug": "ss-andrea-doria",
+      "url": "/ships/ss-andrea-doria",
+      "inboundTotal": 8,
+      "editorialInbound": 7,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "collection": 3,
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "andrea-doria-colombo-leonardo-design-evolution.html",
+          "sourceRoute": "/andrea-doria-colombo-leonardo-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "british-vs-italian-postwar-flagships.html",
+          "sourceRoute": "/british-vs-italian-postwar-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
+          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
+          "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
