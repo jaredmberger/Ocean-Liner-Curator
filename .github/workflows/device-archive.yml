@@ -46,6 +46,7 @@ on:
       - 'scripts/sync-ship-sitemaps.py'
       - 'scripts/build-curatoros-integrity.py'
       - 'scripts/audit-ship-archive.py'
+      - 'scripts/stabilize-generated-json.py'
       - 'random-ship.js'
       - 'assets/random-ship.js'
       - 'data/builders.json'
