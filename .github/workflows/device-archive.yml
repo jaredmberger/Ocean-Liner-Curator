@@ -20,6 +20,7 @@ on:
       - 'scripts/sync-ship-sitemaps.py'
       - 'scripts/build-curatoros-integrity.py'
       - 'scripts/audit-ship-archive.py'
+      - 'scripts/stabilize-generated-json.py'
       - 'random-ship.js'
       - 'assets/random-ship.js'
       - 'data/builders.json'
@@ -73,6 +74,7 @@ jobs:
             scripts/sync-ship-sitemaps.py
             scripts/build-curatoros-integrity.py
             scripts/audit-ship-archive.py
+            scripts/stabilize-generated-json.py
             random-ship.js
             assets/random-ship.js
             assets/related-liners.js
@@ -99,6 +101,14 @@ jobs:
 
       - name: Generate CuratorOS integrity manifest
         run: python scripts/build-curatoros-integrity.py
+
+      - name: Stabilize volatile generated metadata
+        run: |
+          python scripts/stabilize-generated-json.py \
+            api/device/archive.json \
+            api/device/archive-index.json \
+            api/device/featured.json \
+            api/device/curatoros-integrity.json
 
       - name: Verify generated output on pull requests
         if: github.event_name == 'pull_request'
