@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T07:29:04.403Z",
+  "generatedAt": "2026-10-05T07:54:57.916Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,11 +12,11 @@
   },
   "summary": {
     "shipGuides": 350,
-    "editorialOrphans": 48,
-    "oneEditorialInbound": 150,
-    "threePlusEditorialInbound": 56,
-    "totalEditorialInboundLinks": 750,
-    "averageEditorialInbound": 2.14
+    "editorialOrphans": 45,
+    "oneEditorialInbound": 146,
+    "threePlusEditorialInbound": 58,
+    "totalEditorialInboundLinks": 762,
+    "averageEditorialInbound": 2.18
   },
   "orphanedShips": [
     {
@@ -174,31 +174,9 @@
       "sources": []
     },
     {
-      "name": "SS Cap Arcona",
-      "slug": "ss-cap-arcona",
-      "url": "/ships/ss-cap-arcona",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Cap Polonio",
       "slug": "ss-cap-polonio",
       "url": "/ships/ss-cap-polonio",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Cap Trafalgar",
-      "slug": "ss-cap-trafalgar",
-      "url": "/ships/ss-cap-trafalgar",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -364,17 +342,6 @@
       "name": "SS Kroonland",
       "slug": "ss-kroonland",
       "url": "/ships/ss-kroonland",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS L'Atlantique",
-      "slug": "ss-latlantique",
-      "url": "/ships/ss-latlantique",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -778,25 +745,6 @@
       ]
     },
     {
-      "name": "RMS Alcantara",
-      "slug": "rms-alcantara-1926",
-      "url": "/ships/rms-alcantara-1926",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Antonia (1922)",
       "slug": "rms-antonia",
       "url": "/ships/rms-antonia",
@@ -811,25 +759,6 @@
         {
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "RMS Asturias (1908)",
-      "slug": "rms-asturias-1908",
-      "url": "/ships/rms-asturias-1908",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
         }
       ]
@@ -1785,6 +1714,44 @@
       ]
     },
     {
+      "name": "SS Cap Arcona",
+      "slug": "ss-cap-arcona",
+      "url": "/ships/ss-cap-arcona",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Cap Trafalgar",
+      "slug": "ss-cap-trafalgar",
+      "url": "/ships/ss-cap-trafalgar",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Catalonia",
       "slug": "ss-catalonia",
       "url": "/ships/ss-catalonia",
@@ -2070,25 +2037,6 @@
       ]
     },
     {
-      "name": "SS Conte Verde",
-      "slug": "ss-conte-verde",
-      "url": "/ships/ss-conte-verde",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-conte-rosso.html",
-          "sourceRoute": "/ships/ss-conte-rosso",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Corinthic",
       "slug": "ss-corinthic",
       "url": "/ships/ss-corinthic",
@@ -2184,25 +2132,6 @@
       ]
     },
     {
-      "name": "SS Duilio",
-      "slug": "ss-duilio",
-      "url": "/ships/ss-duilio",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Friedrich der Grosse",
       "slug": "ss-friedrich-der-grosse",
       "url": "/ships/ss-friedrich-der-grosse",
@@ -2218,25 +2147,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Giulio Cesare",
-      "slug": "ss-giulio-cesare",
-      "url": "/ships/ss-giulio-cesare",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -2446,6 +2356,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS L'Atlantique",
+      "slug": "ss-latlantique",
+      "url": "/ships/ss-latlantique",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -3020,25 +2949,6 @@
       ]
     },
     {
-      "name": "SS Principessa Mafalda",
-      "slug": "ss-principessa-mafalda",
-      "url": "/ships/ss-principessa-mafalda",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
-          "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "SS Prinzess Irene",
       "slug": "ss-prinzess-irene",
       "url": "/ships/ss-prinzess-irene",
@@ -3282,25 +3192,6 @@
           "sourcePath": "collections/immigrant-era-atlantic-liners.html",
           "sourceRoute": "/collections/immigrant-era-atlantic-liners",
           "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "SS Vestris",
-      "slug": "ss-vestris",
-      "url": "/ships/ss-vestris",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
-          "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
-          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -3556,31 +3447,9 @@
       "sources": []
     },
     {
-      "name": "SS Cap Arcona",
-      "slug": "ss-cap-arcona",
-      "url": "/ships/ss-cap-arcona",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Cap Polonio",
       "slug": "ss-cap-polonio",
       "url": "/ships/ss-cap-polonio",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Cap Trafalgar",
-      "slug": "ss-cap-trafalgar",
-      "url": "/ships/ss-cap-trafalgar",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3746,17 +3615,6 @@
       "name": "SS Kroonland",
       "slug": "ss-kroonland",
       "url": "/ships/ss-kroonland",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS L'Atlantique",
-      "slug": "ss-latlantique",
-      "url": "/ships/ss-latlantique",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4158,25 +4016,6 @@
       ]
     },
     {
-      "name": "RMS Alcantara",
-      "slug": "rms-alcantara-1926",
-      "url": "/ships/rms-alcantara-1926",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Antonia (1922)",
       "slug": "rms-antonia",
       "url": "/ships/rms-antonia",
@@ -4191,25 +4030,6 @@
         {
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "RMS Asturias (1908)",
-      "slug": "rms-asturias-1908",
-      "url": "/ships/rms-asturias-1908",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
         }
       ]
@@ -5165,6 +4985,44 @@
       ]
     },
     {
+      "name": "SS Cap Arcona",
+      "slug": "ss-cap-arcona",
+      "url": "/ships/ss-cap-arcona",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Cap Trafalgar",
+      "slug": "ss-cap-trafalgar",
+      "url": "/ships/ss-cap-trafalgar",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Catalonia",
       "slug": "ss-catalonia",
       "url": "/ships/ss-catalonia",
@@ -5450,25 +5308,6 @@
       ]
     },
     {
-      "name": "SS Conte Verde",
-      "slug": "ss-conte-verde",
-      "url": "/ships/ss-conte-verde",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-conte-rosso.html",
-          "sourceRoute": "/ships/ss-conte-rosso",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Corinthic",
       "slug": "ss-corinthic",
       "url": "/ships/ss-corinthic",
@@ -5564,25 +5403,6 @@
       ]
     },
     {
-      "name": "SS Duilio",
-      "slug": "ss-duilio",
-      "url": "/ships/ss-duilio",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Friedrich der Grosse",
       "slug": "ss-friedrich-der-grosse",
       "url": "/ships/ss-friedrich-der-grosse",
@@ -5598,25 +5418,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Giulio Cesare",
-      "slug": "ss-giulio-cesare",
-      "url": "/ships/ss-giulio-cesare",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -5826,6 +5627,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS L'Atlantique",
+      "slug": "ss-latlantique",
+      "url": "/ships/ss-latlantique",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -6400,25 +6220,6 @@
       ]
     },
     {
-      "name": "SS Principessa Mafalda",
-      "slug": "ss-principessa-mafalda",
-      "url": "/ships/ss-principessa-mafalda",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
-          "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "SS Prinzess Irene",
       "slug": "ss-prinzess-irene",
       "url": "/ships/ss-prinzess-irene",
@@ -6666,25 +6467,6 @@
       ]
     },
     {
-      "name": "SS Vestris",
-      "slug": "ss-vestris",
-      "url": "/ships/ss-vestris",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
-          "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "SS Washington",
       "slug": "ss-washington",
       "url": "/ships/ss-washington",
@@ -6775,31 +6557,6 @@
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "MS Augustus",
-      "slug": "ms-augustus",
-      "url": "/ships/ms-augustus",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/italian-ocean-liners.html",
-          "sourceRoute": "/collections/italian-ocean-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/ss-roma.html",
-          "sourceRoute": "/ships/ss-roma",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -6905,6 +6662,31 @@
       ]
     },
     {
+      "name": "RMS Alcantara",
+      "slug": "rms-alcantara-1926",
+      "url": "/ships/rms-alcantara-1926",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "RMS Andania",
       "slug": "rms-andania-1922",
       "url": "/ships/rms-andania-1922",
@@ -6955,31 +6737,6 @@
       ]
     },
     {
-      "name": "RMS Andes",
-      "slug": "rms-andes-1939",
-      "url": "/ships/rms-andes-1939",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Arundel Castle (1921)",
       "slug": "rms-arundel-castle-1921",
       "url": "/ships/rms-arundel-castle-1921",
@@ -7025,6 +6782,31 @@
         {
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Asturias (1908)",
+      "slug": "rms-asturias-1908",
+      "url": "/ships/rms-asturias-1908",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
         }
       ]
@@ -8023,6 +7805,31 @@
       ]
     },
     {
+      "name": "SS Conte Verde",
+      "slug": "ss-conte-verde",
+      "url": "/ships/ss-conte-verde",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ss-conte-rosso.html",
+          "sourceRoute": "/ships/ss-conte-rosso",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Coptic",
       "slug": "ss-coptic",
       "url": "/ships/ss-coptic",
@@ -8172,6 +7979,31 @@
       ]
     },
     {
+      "name": "SS Duilio",
+      "slug": "ss-duilio",
+      "url": "/ships/ss-duilio",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Espagne",
       "slug": "ss-espagne",
       "url": "/ships/ss-espagne",
@@ -8263,6 +8095,31 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Giulio Cesare",
+      "slug": "ss-giulio-cesare",
+      "url": "/ships/ss-giulio-cesare",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
@@ -8818,6 +8675,31 @@
       ]
     },
     {
+      "name": "SS Principessa Mafalda",
+      "slug": "ss-principessa-mafalda",
+      "url": "/ships/ss-principessa-mafalda",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
+          "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "SS Prinz Friedrich Wilhelm",
       "slug": "ss-prinz-friedrich-wilhelm",
       "url": "/ships/ss-prinz-friedrich-wilhelm",
@@ -9064,6 +8946,31 @@
       ]
     },
     {
+      "name": "SS Vestris",
+      "slug": "ss-vestris",
+      "url": "/ships/ss-vestris",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "north-atlantic-vs-south-atlantic-liner-routes.html",
+          "sourceRoute": "/north-atlantic-vs-south-atlantic-liner-routes",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "SS Volendam",
       "slug": "ss-volendam",
       "url": "/ships/ss-volendam",
@@ -9190,6 +9097,66 @@
           "sourcePath": "ships/stirling-castle.html",
           "sourceRoute": "/ships/stirling-castle",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "MS Augustus",
+      "slug": "ms-augustus",
+      "url": "/ships/ms-augustus",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ss-roma.html",
+          "sourceRoute": "/ships/ss-roma",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "RMS Andes",
+      "slug": "rms-andes-1939",
+      "url": "/ships/rms-andes-1939",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
+          "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
         }
       ]
     },
