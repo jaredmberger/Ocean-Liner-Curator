@@ -17,6 +17,7 @@ on:
       - 'tools/search/class-sister-intelligence.mjs'
       - 'tools/search/archive-gap-intelligence.mjs'
       - 'tools/search/inbound-link-intelligence.mjs'
+      - 'tools/search/discoverability-intelligence.mjs'
       - 'tools/search/package.json'
       - 'tools/search/package-lock.json'
       - 'scripts/stabilize-generated-json.py'
@@ -38,6 +39,7 @@ on:
       - 'tools/search/class-sister-intelligence.mjs'
       - 'tools/search/archive-gap-intelligence.mjs'
       - 'tools/search/inbound-link-intelligence.mjs'
+      - 'tools/search/discoverability-intelligence.mjs'
       - 'tools/search/package.json'
       - 'tools/search/package-lock.json'
       - 'scripts/stabilize-generated-json.py'
@@ -75,6 +77,7 @@ jobs:
           node tools/search/class-sister-intelligence.mjs
           node tools/search/archive-gap-intelligence.mjs
           node tools/search/inbound-link-intelligence.mjs
+          node tools/search/discoverability-intelligence.mjs
           node <<'NODE'
           const fs = require('fs');
           const audit = JSON.parse(fs.readFileSync('tools/search/dist/builders-audit.json', 'utf8'));
@@ -129,7 +132,8 @@ jobs:
             'data/curatoros-eras.json',
             'data/curatoros-classes-sisters.json',
             'data/curatoros-archive-gaps.json',
-            'data/curatoros-inbound-links.json'
+            'data/curatoros-inbound-links.json',
+            'data/curatoros-discoverability.json'
           ];
           for (const file of feeds) {
             const data = JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -157,17 +161,18 @@ jobs:
             data/curatoros-classes-sisters.json \
             data/curatoros-archive-gaps.json \
             data/curatoros-inbound-links.json \
+            data/curatoros-discoverability.json \
             tools/search/builders-data.json
 
       - name: Publish changed feeds
         if: github.event_name != 'pull_request'
         run: |
-          if [ -z "$(git status --porcelain -- data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json data/curatoros-inbound-links.json tools/search/builders-data.json)" ]; then
+          if [ -z "$(git status --porcelain -- data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json data/curatoros-inbound-links.json data/curatoros-discoverability.json tools/search/builders-data.json)" ]; then
             echo 'CuratorOS archive intelligence feeds are already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json data/curatoros-inbound-links.json tools/search/builders-data.json
+          git add data/curatoros-builders.json data/curatoros-operators.json data/curatoros-yards.json data/curatoros-eras.json data/curatoros-classes-sisters.json data/curatoros-archive-gaps.json data/curatoros-inbound-links.json data/curatoros-discoverability.json tools/search/builders-data.json
           git commit -m 'Refresh CuratorOS archive intelligence feeds'
           git push
