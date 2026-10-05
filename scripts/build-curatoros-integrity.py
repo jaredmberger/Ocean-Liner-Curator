@@ -25,7 +25,6 @@ INTELLIGENCE_FEEDS = [
     ROOT / "data" / "curatoros-archive-gaps.json",
     ROOT / "data" / "curatoros-builders.json",
     ROOT / "data" / "curatoros-classes-sisters.json",
-    ROOT / "data" / "curatoros-discoverability.json",
     ROOT / "data" / "curatoros-eras.json",
     ROOT / "data" / "curatoros-operators.json",
     ROOT / "data" / "curatoros-yards.json",
