@@ -19,6 +19,7 @@ on:
       - 'tools/search/inbound-link-intelligence.mjs'
       - 'tools/search/package.json'
       - 'tools/search/package-lock.json'
+      - 'scripts/stabilize-generated-json.py'
       - '.github/workflows/publish-archive-gap-intelligence.yml'
   push:
     branches: [main]
@@ -39,6 +40,7 @@ on:
       - 'tools/search/inbound-link-intelligence.mjs'
       - 'tools/search/package.json'
       - 'tools/search/package-lock.json'
+      - 'scripts/stabilize-generated-json.py'
       - '.github/workflows/publish-archive-gap-intelligence.yml'
   workflow_dispatch:
 
@@ -144,6 +146,18 @@ jobs:
             throw new Error(`CuratorOS guide-count mismatch: operators=${operators.summary.shipGuides}, inbound=${inbound.summary.shipGuides}`);
           }
           NODE
+
+      - name: Stabilize volatile generated metadata
+        run: |
+          python3 scripts/stabilize-generated-json.py \
+            data/curatoros-builders.json \
+            data/curatoros-operators.json \
+            data/curatoros-yards.json \
+            data/curatoros-eras.json \
+            data/curatoros-classes-sisters.json \
+            data/curatoros-archive-gaps.json \
+            data/curatoros-inbound-links.json \
+            tools/search/builders-data.json
 
       - name: Publish changed feeds
         if: github.event_name != 'pull_request'
