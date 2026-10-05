@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T03:32:18.802Z",
+  "generatedAt": "2026-10-05T05:25:48.421Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,24 +12,13 @@
   },
   "summary": {
     "shipGuides": 350,
-    "editorialOrphans": 50,
-    "oneEditorialInbound": 159,
+    "editorialOrphans": 49,
+    "oneEditorialInbound": 153,
     "threePlusEditorialInbound": 55,
-    "totalEditorialInboundLinks": 723,
-    "averageEditorialInbound": 2.07
+    "totalEditorialInboundLinks": 735,
+    "averageEditorialInbound": 2.1
   },
   "orphanedShips": [
-    {
-      "name": "MS Batory (1936)",
-      "slug": "ms-batory",
-      "url": "/ships/ms-batory",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
     {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
@@ -648,6 +637,25 @@
       ]
     },
     {
+      "name": "MS Batory (1936)",
+      "slug": "ms-batory",
+      "url": "/ships/ms-batory",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "MS Bermuda",
       "slug": "ms-bermuda",
       "url": "/ships/ms-bermuda",
@@ -1142,25 +1150,6 @@
       ]
     },
     {
-      "name": "RMS Ivernia (1955)",
-      "slug": "rms-ivernia",
-      "url": "/ships/rms-ivernia",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Kenilworth Castle",
       "slug": "rms-kenilworth-castle",
       "url": "/ships/rms-kenilworth-castle",
@@ -1354,44 +1343,6 @@
       "name": "RMS Rangitane (1929)",
       "slug": "rms-rangitane",
       "url": "/ships/rms-rangitane",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Rangitata (1929)",
-      "slug": "rms-rangitata",
-      "url": "/ships/rms-rangitata",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Rangitiki (1929)",
-      "slug": "rms-rangitiki",
-      "url": "/ships/rms-rangitiki",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -1617,25 +1568,6 @@
       ]
     },
     {
-      "name": "SS Arcadia (1954)",
-      "slug": "ss-arcadia-1954",
-      "url": "/ships/ss-arcadia-1954",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Armadale Castle",
       "slug": "ss-armadale-castle",
       "url": "/ships/ss-armadale-castle",
@@ -1707,25 +1639,6 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Athos II (1927)",
-      "slug": "ss-athos-ii",
-      "url": "/ships/ss-athos-ii",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -2506,44 +2419,6 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Himalaya (1949)",
-      "slug": "ss-himalaya",
-      "url": "/ships/ss-himalaya",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "SS Iberia (1954)",
-      "slug": "ss-iberia",
-      "url": "/ships/ss-iberia",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -3595,17 +3470,6 @@
   ],
   "ships": [
     {
-      "name": "MS Batory (1936)",
-      "slug": "ms-batory",
-      "url": "/ships/ms-batory",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
       "url": "/ships/ms-kungsholm-1928",
@@ -4221,6 +4085,25 @@
       ]
     },
     {
+      "name": "MS Batory (1936)",
+      "slug": "ms-batory",
+      "url": "/ships/ms-batory",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "MS Bermuda",
       "slug": "ms-bermuda",
       "url": "/ships/ms-bermuda",
@@ -4715,25 +4598,6 @@
       ]
     },
     {
-      "name": "RMS Ivernia (1955)",
-      "slug": "rms-ivernia",
-      "url": "/ships/rms-ivernia",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Kenilworth Castle",
       "slug": "rms-kenilworth-castle",
       "url": "/ships/rms-kenilworth-castle",
@@ -4927,44 +4791,6 @@
       "name": "RMS Rangitane (1929)",
       "slug": "rms-rangitane",
       "url": "/ships/rms-rangitane",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Rangitata (1929)",
-      "slug": "rms-rangitata",
-      "url": "/ships/rms-rangitata",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Rangitiki (1929)",
-      "slug": "rms-rangitiki",
-      "url": "/ships/rms-rangitiki",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -5190,25 +5016,6 @@
       ]
     },
     {
-      "name": "SS Arcadia (1954)",
-      "slug": "ss-arcadia-1954",
-      "url": "/ships/ss-arcadia-1954",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Armadale Castle",
       "slug": "ss-armadale-castle",
       "url": "/ships/ss-armadale-castle",
@@ -5280,25 +5087,6 @@
         {
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Athos II (1927)",
-      "slug": "ss-athos-ii",
-      "url": "/ships/ss-athos-ii",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -6079,44 +5867,6 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Himalaya (1949)",
-      "slug": "ss-himalaya",
-      "url": "/ships/ss-himalaya",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "SS Iberia (1954)",
-      "slug": "ss-iberia",
-      "url": "/ships/ss-iberia",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -7591,6 +7341,31 @@
       ]
     },
     {
+      "name": "RMS Ivernia (1955)",
+      "slug": "rms-ivernia",
+      "url": "/ships/rms-ivernia",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "RMS Lancastria",
       "slug": "rms-lancastria",
       "url": "/ships/rms-lancastria",
@@ -7736,6 +7511,54 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitata (1929)",
+      "slug": "rms-rangitata",
+      "url": "/ships/rms-rangitata",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "RMS Rangitiki (1929)",
+      "slug": "rms-rangitiki",
+      "url": "/ships/rms-rangitiki",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -7990,6 +7813,30 @@
       ]
     },
     {
+      "name": "SS Arcadia (1954)",
+      "slug": "ss-arcadia-1954",
+      "url": "/ships/ss-arcadia-1954",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Arctic",
       "slug": "ss-arctic",
       "url": "/ships/ss-arctic",
@@ -8010,6 +7857,31 @@
           "sourcePath": "collections/the-birth-of-the-modern-passenger-ship-1838-1875.html",
           "sourceRoute": "/collections/the-birth-of-the-modern-passenger-ship-1838-1875",
           "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Athos II (1927)",
+      "slug": "ss-athos-ii",
+      "url": "/ships/ss-athos-ii",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -8531,6 +8403,54 @@
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Himalaya (1949)",
+      "slug": "ss-himalaya",
+      "url": "/ships/ss-himalaya",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Iberia (1954)",
+      "slug": "ss-iberia",
+      "url": "/ships/ss-iberia",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -9519,36 +9439,6 @@
       ]
     },
     {
-      "name": "RMS Strathnaver",
-      "slug": "rms-strathnaver",
-      "url": "/ships/rms-strathnaver",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 2,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS America",
       "slug": "ss-america",
       "url": "/ships/ss-america",
@@ -10043,6 +9933,41 @@
       ]
     },
     {
+      "name": "RMS Strathnaver",
+      "slug": "rms-strathnaver",
+      "url": "/ships/rms-strathnaver",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 3,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Adriatic (1872)",
       "slug": "ss-adriatic-1872",
       "url": "/ships/ss-adriatic-1872",
@@ -10112,41 +10037,6 @@
           "sourcePath": "ships/timeline-1900-1960.html",
           "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Canberra",
-      "slug": "ss-canberra",
-      "url": "/ships/ss-canberra",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 3,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
-          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/what-defines-an-ocean-liner.html",
-          "sourceRoute": "/collections/what-defines-an-ocean-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -10327,47 +10217,6 @@
       ]
     },
     {
-      "name": "MV Georgic",
-      "slug": "mv-georgic",
-      "url": "/ships/mv-georgic",
-      "inboundTotal": 6,
-      "editorialInbound": 5,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 2,
-        "hub-history": 2,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/tourist-third-cabin-democratization.html",
-          "sourceRoute": "/collections/tourist-third-cabin-democratization",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Celtic",
       "slug": "rms-celtic",
       "url": "/ships/rms-celtic",
@@ -10447,6 +10296,92 @@
           "sourcePath": "ships/timeline-1900-1960.html",
           "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Canberra",
+      "slug": "ss-canberra",
+      "url": "/ships/ss-canberra",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 4,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/what-defines-an-ocean-liner.html",
+          "sourceRoute": "/collections/what-defines-an-ocean-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MV Georgic",
+      "slug": "mv-georgic",
+      "url": "/ships/mv-georgic",
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 3,
+        "hub-history": 2,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/tourist-third-cabin-democratization.html",
+          "sourceRoute": "/collections/tourist-third-cabin-democratization",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -10541,58 +10476,6 @@
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "MV Britannic (1930)",
-      "slug": "mv-britannic",
-      "url": "/ships/mv-britannic",
-      "inboundTotal": 8,
-      "editorialInbound": 7,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 2,
-        "ship-guide": 1,
-        "article-reference": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/tourist-third-cabin-democratization.html",
-          "sourceRoute": "/collections/tourist-third-cabin-democratization",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
-          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "why-cabin-class-ships-matter.html",
-          "sourceRoute": "/why-cabin-class-ships-matter",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-mv-britannic-matters.html",
-          "sourceRoute": "/why-mv-britannic-matters",
-          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -10796,6 +10679,63 @@
         {
           "sourcePath": "standardized-sister-ships-vs-revised-sisters.html",
           "sourceRoute": "/standardized-sister-ships-vs-revised-sisters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "MV Britannic (1930)",
+      "slug": "mv-britannic",
+      "url": "/ships/mv-britannic",
+      "inboundTotal": 9,
+      "editorialInbound": 8,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 2,
+        "ship-guide": 1,
+        "article-reference": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/tourist-third-cabin-democratization.html",
+          "sourceRoute": "/collections/tourist-third-cabin-democratization",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
+          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "why-cabin-class-ships-matter.html",
+          "sourceRoute": "/why-cabin-class-ships-matter",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-mv-britannic-matters.html",
+          "sourceRoute": "/why-mv-britannic-matters",
           "sourceCategory": "article-reference"
         }
       ]
