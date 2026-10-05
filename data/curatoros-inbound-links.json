@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T08:06:48.881Z",
+  "generatedAt": "2026-10-05T08:40:28.910Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -15,8 +15,8 @@
     "editorialOrphans": 45,
     "oneEditorialInbound": 146,
     "threePlusEditorialInbound": 59,
-    "totalEditorialInboundLinks": 770,
-    "averageEditorialInbound": 2.2
+    "totalEditorialInboundLinks": 773,
+    "averageEditorialInbound": 2.21
   },
   "orphanedShips": [
     {
@@ -11067,15 +11067,15 @@
       "name": "RMS/HMHS Britannic",
       "slug": "rms-britannic",
       "url": "/ships/rms-britannic",
-      "inboundTotal": 13,
-      "editorialInbound": 12,
+      "inboundTotal": 14,
+      "editorialInbound": 13,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
         "collection": 6,
         "hub-history": 3,
-        "ship-guide": 2,
-        "article-reference": 1
+        "article-reference": 2,
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -11112,6 +11112,11 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "olympic-titanic-britannic-design-evolution.html",
+          "sourceRoute": "/olympic-titanic-britannic-design-evolution",
+          "sourceCategory": "article-reference"
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
@@ -11350,143 +11355,6 @@
         {
           "sourcePath": "why-ss-normandie-matters.html",
           "sourceRoute": "/why-ss-normandie-matters",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
-      "name": "RMS Titanic",
-      "slug": "rms-titanic",
-      "url": "/ships/rms-titanic",
-      "inboundTotal": 25,
-      "editorialInbound": 24,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 11,
-        "collection": 6,
-        "hub-history": 4,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "250-years-across-the-atlantic.html",
-          "sourceRoute": "/250-years-across-the-atlantic",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "authentic-titanic-postcards.html",
-          "sourceRoute": "/authentic-titanic-postcards",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
-          "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
-          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/olympic-class-liners.html",
-          "sourceRoute": "/collections/olympic-class-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
-          "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/the-superliner-race.html",
-          "sourceRoute": "/collections/the-superliner-race",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
-          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "first-class-vs-third-class-on-ocean-liners.html",
-          "sourceRoute": "/first-class-vs-third-class-on-ocean-liners",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
-          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-ocean-liners-were-provisioned.html",
-          "sourceRoute": "/how-ocean-liners-were-provisioned",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "olympic-class-vs-imperator-class.html",
-          "sourceRoute": "/olympic-class-vs-imperator-class",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "standardized-sister-ships-vs-revised-sisters.html",
-          "sourceRoute": "/standardized-sister-ships-vs-revised-sisters",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "what-did-ocean-liner-stewards-do.html",
-          "sourceRoute": "/what-did-ocean-liner-stewards-do",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "what-did-the-ships-surgeon-do-on-an-ocean-liner.html",
-          "sourceRoute": "/what-did-the-ships-surgeon-do-on-an-ocean-liner",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "what-did-wireless-operators-do-on-ocean-liners.html",
-          "sourceRoute": "/what-did-wireless-operators-do-on-ocean-liners",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
-          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
           "sourceCategory": "article-reference"
         }
       ]
@@ -11776,6 +11644,148 @@
       ]
     },
     {
+      "name": "RMS Titanic",
+      "slug": "rms-titanic",
+      "url": "/ships/rms-titanic",
+      "inboundTotal": 26,
+      "editorialInbound": 25,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 12,
+        "collection": 6,
+        "hub-history": 4,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "250-years-across-the-atlantic.html",
+          "sourceRoute": "/250-years-across-the-atlantic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "authentic-titanic-postcards.html",
+          "sourceRoute": "/authentic-titanic-postcards",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
+          "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
+          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/olympic-class-liners.html",
+          "sourceRoute": "/collections/olympic-class-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
+          "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/the-superliner-race.html",
+          "sourceRoute": "/collections/the-superliner-race",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
+          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "first-class-vs-third-class-on-ocean-liners.html",
+          "sourceRoute": "/first-class-vs-third-class-on-ocean-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
+          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-provisioned.html",
+          "sourceRoute": "/how-ocean-liners-were-provisioned",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "olympic-class-vs-imperator-class.html",
+          "sourceRoute": "/olympic-class-vs-imperator-class",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "olympic-titanic-britannic-design-evolution.html",
+          "sourceRoute": "/olympic-titanic-britannic-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "standardized-sister-ships-vs-revised-sisters.html",
+          "sourceRoute": "/standardized-sister-ships-vs-revised-sisters",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "what-did-ocean-liner-stewards-do.html",
+          "sourceRoute": "/what-did-ocean-liner-stewards-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-the-ships-surgeon-do-on-an-ocean-liner.html",
+          "sourceRoute": "/what-did-the-ships-surgeon-do-on-an-ocean-liner",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-wireless-operators-do-on-ocean-liners.html",
+          "sourceRoute": "/what-did-wireless-operators-do-on-ocean-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
+          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "SS United States",
       "slug": "ss-us",
       "url": "/ships/ss-us",
@@ -11921,12 +11931,12 @@
       "name": "RMS Olympic",
       "slug": "rms-olympic",
       "url": "/ships/rms-olympic",
-      "inboundTotal": 35,
-      "editorialInbound": 34,
+      "inboundTotal": 36,
+      "editorialInbound": 35,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "article-reference": 16,
+        "article-reference": 17,
         "collection": 10,
         "hub-history": 6,
         "ship-guide": 2
@@ -12045,6 +12055,11 @@
         {
           "sourcePath": "olympic-class-vs-imperator-class.html",
           "sourceRoute": "/olympic-class-vs-imperator-class",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "olympic-titanic-britannic-design-evolution.html",
+          "sourceRoute": "/olympic-titanic-britannic-design-evolution",
           "sourceCategory": "article-reference"
         },
         {
