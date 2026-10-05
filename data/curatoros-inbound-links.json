@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T05:25:48.421Z",
+  "generatedAt": "2026-10-05T06:12:15.595Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -13,10 +13,10 @@
   "summary": {
     "shipGuides": 350,
     "editorialOrphans": 49,
-    "oneEditorialInbound": 153,
-    "threePlusEditorialInbound": 55,
-    "totalEditorialInboundLinks": 735,
-    "averageEditorialInbound": 2.1
+    "oneEditorialInbound": 150,
+    "threePlusEditorialInbound": 56,
+    "totalEditorialInboundLinks": 742,
+    "averageEditorialInbound": 2.12
   },
   "orphanedShips": [
     {
@@ -614,25 +614,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "MS Augustus",
-      "slug": "ms-augustus",
-      "url": "/ships/ms-augustus",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-roma.html",
-          "sourceRoute": "/ships/ss-roma",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -2575,25 +2556,6 @@
       ]
     },
     {
-      "name": "SS Leonardo da Vinci",
-      "slug": "ss-leonardo-da-vinci",
-      "url": "/ships/ss-leonardo-da-vinci",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Macedonia",
       "slug": "ss-macedonia",
       "url": "/ships/ss-macedonia",
@@ -3141,25 +3103,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Roma",
-      "slug": "ss-roma",
-      "url": "/ships/ss-roma",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-conte-grande.html",
-          "sourceRoute": "/ships/ss-conte-grande",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -4066,25 +4009,6 @@
       ]
     },
     {
-      "name": "MS Augustus",
-      "slug": "ms-augustus",
-      "url": "/ships/ms-augustus",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-roma.html",
-          "sourceRoute": "/ships/ss-roma",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "MS Batory (1936)",
       "slug": "ms-batory",
       "url": "/ships/ms-batory",
@@ -6023,25 +5947,6 @@
       ]
     },
     {
-      "name": "SS Leonardo da Vinci",
-      "slug": "ss-leonardo-da-vinci",
-      "url": "/ships/ss-leonardo-da-vinci",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Macedonia",
       "slug": "ss-macedonia",
       "url": "/ships/ss-macedonia",
@@ -6593,25 +6498,6 @@
       ]
     },
     {
-      "name": "SS Roma",
-      "slug": "ss-roma",
-      "url": "/ships/ss-roma",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-conte-grande.html",
-          "sourceRoute": "/ships/ss-conte-grande",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Rotterdam (1959)",
       "slug": "ss-rotterdam-1959",
       "url": "/ships/ss-rotterdam-1959",
@@ -6911,6 +6797,31 @@
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "MS Augustus",
+      "slug": "ms-augustus",
+      "url": "/ships/ms-augustus",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ss-roma.html",
+          "sourceRoute": "/ships/ss-roma",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -8133,31 +8044,6 @@
       ]
     },
     {
-      "name": "SS Cristoforo Colombo",
-      "slug": "ss-cristoforo-colombo",
-      "url": "/ships/ss-cristoforo-colombo",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "british-vs-italian-postwar-flagships.html",
-          "sourceRoute": "/british-vs-italian-postwar-flagships",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Cymric",
       "slug": "ss-cymric",
       "url": "/ships/ss-cymric",
@@ -8571,6 +8457,31 @@
           "sourcePath": "french-line.html",
           "sourceRoute": "/french-line",
           "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Leonardo da Vinci",
+      "slug": "ss-leonardo-da-vinci",
+      "url": "/ships/ss-leonardo-da-vinci",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
         },
         {
           "sourcePath": "history-of-major-shipping-lines.html",
@@ -9022,6 +8933,31 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Roma",
+      "slug": "ss-roma",
+      "url": "/ships/ss-roma",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ss-conte-grande.html",
+          "sourceRoute": "/ships/ss-conte-grande",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9530,32 +9466,33 @@
       ]
     },
     {
-      "name": "SS Conte di Savoia",
-      "slug": "ss-conte-di-savoia",
-      "url": "/ships/ss-conte-di-savoia",
+      "name": "SS Cristoforo Colombo",
+      "slug": "ss-cristoforo-colombo",
+      "url": "/ships/ss-cristoforo-colombo",
       "inboundTotal": 4,
       "editorialInbound": 3,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "hub-history": 1,
-        "ship-guide": 2
+        "article-reference": 1,
+        "collection": 1,
+        "hub-history": 1
       },
       "sources": [
         {
-          "sourcePath": "designs-interiors.html",
-          "sourceRoute": "/designs-interiors",
+          "sourcePath": "british-vs-italian-postwar-flagships.html",
+          "sourceRoute": "/british-vs-italian-postwar-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9803,35 +9740,6 @@
       ]
     },
     {
-      "name": "SS Rex",
-      "slug": "ss-rex",
-      "url": "/ships/ss-rex",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Rotterdam (1908)",
       "slug": "ss-rotterdam-1908",
       "url": "/ships/ss-rotterdam-1908",
@@ -10004,34 +9912,33 @@
       ]
     },
     {
-      "name": "SS Andrea Doria",
-      "slug": "ss-andrea-doria",
-      "url": "/ships/ss-andrea-doria",
+      "name": "SS Conte di Savoia",
+      "slug": "ss-conte-di-savoia",
+      "url": "/ships/ss-conte-di-savoia",
       "inboundTotal": 5,
       "editorialInbound": 4,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "article-reference": 1,
         "collection": 1,
         "hub-history": 1,
-        "ship-guide": 1
+        "ship-guide": 2
       },
       "sources": [
         {
-          "sourcePath": "british-vs-italian-postwar-flagships.html",
-          "sourceRoute": "/british-vs-italian-postwar-flagships",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
-          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
           "sourceCategory": "collection"
         },
         {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
           "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
@@ -10217,6 +10124,41 @@
       ]
     },
     {
+      "name": "SS Rex",
+      "slug": "ss-rex",
+      "url": "/ships/ss-rex",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "RMS Celtic",
       "slug": "rms-celtic",
       "url": "/ships/rms-celtic",
@@ -10291,6 +10233,48 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Andrea Doria",
+      "slug": "ss-andrea-doria",
+      "url": "/ships/ss-andrea-doria",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "collection": 2,
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "british-vs-italian-postwar-flagships.html",
+          "sourceRoute": "/british-vs-italian-postwar-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
+          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
