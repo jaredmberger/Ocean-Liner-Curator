@@ -149,7 +149,7 @@ jobs:
 
       - name: Stabilize volatile generated metadata
         run: |
-          python scripts/stabilize-generated-json.py \
+          python3 scripts/stabilize-generated-json.py \
             data/curatoros-builders.json \
             data/curatoros-operators.json \
             data/curatoros-yards.json \
