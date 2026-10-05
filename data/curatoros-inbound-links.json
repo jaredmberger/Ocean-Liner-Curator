@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T08:40:28.910Z",
+  "generatedAt": "2026-10-05T08:56:28.815Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -15,8 +15,8 @@
     "editorialOrphans": 45,
     "oneEditorialInbound": 146,
     "threePlusEditorialInbound": 59,
-    "totalEditorialInboundLinks": 773,
-    "averageEditorialInbound": 2.21
+    "totalEditorialInboundLinks": 776,
+    "averageEditorialInbound": 2.22
   },
   "orphanedShips": [
     {
@@ -9503,37 +9503,6 @@
       ]
     },
     {
-      "name": "SS Liberté",
-      "slug": "ss-liberte",
-      "url": "/ships/ss-liberte",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "french-line.html",
-          "sourceRoute": "/french-line",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Minnetonka (1902)",
       "slug": "ss-minnetonka",
       "url": "/ships/ss-minnetonka",
@@ -9893,42 +9862,6 @@
       ]
     },
     {
-      "name": "SS Europa",
-      "slug": "ss-europa",
-      "url": "/ships/ss-europa",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS France (1912)",
       "slug": "ss-france-1912",
       "url": "/ships/ss-france-1912",
@@ -10031,6 +9964,42 @@
           "sourcePath": "why-ocean-liners-carried-cargo.html",
           "sourceRoute": "/why-ocean-liners-carried-cargo",
           "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS Liberté",
+      "slug": "ss-liberte",
+      "url": "/ships/ss-liberte",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "bremen-europa-liberte-design-evolution.html",
+          "sourceRoute": "/bremen-europa-liberte-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "french-line.html",
+          "sourceRoute": "/french-line",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -10263,6 +10232,48 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Europa",
+      "slug": "ss-europa",
+      "url": "/ships/ss-europa",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "collection": 1,
+        "hub-history": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "bremen-europa-liberte-design-evolution.html",
+          "sourceRoute": "/bremen-europa-liberte-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -10503,57 +10514,6 @@
       ]
     },
     {
-      "name": "SS Bremen",
-      "slug": "ss-bremen",
-      "url": "/ships/ss-bremen",
-      "inboundTotal": 8,
-      "editorialInbound": 7,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 3,
-        "hub-history": 1,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/blue-riband-era.html",
-          "sourceRoute": "/collections/blue-riband-era",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/german-prestige-liners.html",
-          "sourceRoute": "/collections/german-prestige-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Vaterland",
       "slug": "ss-vaterland",
       "url": "/ships/ss-vaterland",
@@ -10659,6 +10619,63 @@
           "sourcePath": "why-rms-carpathia-matters.html",
           "sourceRoute": "/why-rms-carpathia-matters",
           "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS Bremen",
+      "slug": "ss-bremen",
+      "url": "/ships/ss-bremen",
+      "inboundTotal": 9,
+      "editorialInbound": 8,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "collection": 3,
+        "hub-history": 1,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "bremen-europa-liberte-design-evolution.html",
+          "sourceRoute": "/bremen-europa-liberte-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
