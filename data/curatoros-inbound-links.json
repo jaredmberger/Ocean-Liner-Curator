@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:25:57.813Z",
+  "generatedAt": "2026-10-06T07:41:53.318Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,11 +12,11 @@
   },
   "summary": {
     "shipGuides": 350,
-    "editorialOrphans": 45,
-    "oneEditorialInbound": 144,
-    "threePlusEditorialInbound": 60,
-    "totalEditorialInboundLinks": 787,
-    "averageEditorialInbound": 2.25
+    "editorialOrphans": 44,
+    "oneEditorialInbound": 145,
+    "threePlusEditorialInbound": 62,
+    "totalEditorialInboundLinks": 793,
+    "averageEditorialInbound": 2.27
   },
   "orphanedShips": [
     {
@@ -122,17 +122,6 @@
       "name": "QSMV Dominion Monarch",
       "slug": "qsmv-dominion-monarch",
       "url": "/ships/qsmv-dominion-monarch",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Mauretania (II)",
-      "slug": "rms-mauretania-ii",
-      "url": "/ships/rms-mauretania-ii",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -1083,6 +1072,25 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Mauretania (II)",
+      "slug": "rms-mauretania-ii",
+      "url": "/ships/rms-mauretania-ii",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -3365,17 +3373,6 @@
       "sources": []
     },
     {
-      "name": "RMS Mauretania (II)",
-      "slug": "rms-mauretania-ii",
-      "url": "/ships/rms-mauretania-ii",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Assyria",
       "slug": "ss-assyria",
       "url": "/ships/ss-assyria",
@@ -4316,6 +4313,25 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Mauretania (II)",
+      "slug": "rms-mauretania-ii",
+      "url": "/ships/rms-mauretania-ii",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -6536,31 +6552,6 @@
       ]
     },
     {
-      "name": "Queen Elizabeth 2",
-      "slug": "queen-elizabeth-2",
-      "url": "/ships/queen-elizabeth-2",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Alcantara",
       "slug": "rms-alcantara-1926",
       "url": "/ships/rms-alcantara-1926",
@@ -7179,31 +7170,6 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "RMS Saxonia (1954)",
-      "slug": "rms-saxonia",
-      "url": "/ships/rms-saxonia",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/rms-ivernia.html",
-          "sourceRoute": "/ships/rms-ivernia",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9055,6 +9021,37 @@
       ]
     },
     {
+      "name": "Queen Elizabeth 2",
+      "slug": "queen-elizabeth-2",
+      "url": "/ships/queen-elizabeth-2",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1,
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "RMS Andes",
       "slug": "rms-andes-1939",
       "url": "/ships/rms-andes-1939",
@@ -9111,36 +9108,6 @@
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "RMS Caronia (1947)",
-      "slug": "rms-caronia-1947",
-      "url": "/ships/rms-caronia-1947",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 2,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "british-vs-italian-postwar-flagships.html",
-          "sourceRoute": "/british-vs-italian-postwar-flagships",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "migrant-traffic-vs-tourist-traffic.html",
-          "sourceRoute": "/migrant-traffic-vs-tourist-traffic",
-          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -9202,6 +9169,37 @@
         {
           "sourcePath": "ships/timeline-1900-1960.html",
           "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "RMS Saxonia (1954)",
+      "slug": "rms-saxonia",
+      "url": "/ships/rms-saxonia",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1,
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/rms-ivernia.html",
+          "sourceRoute": "/ships/rms-ivernia",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -9643,6 +9641,41 @@
       ]
     },
     {
+      "name": "RMS Caronia (1947)",
+      "slug": "rms-caronia-1947",
+      "url": "/ships/rms-caronia-1947",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 3,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "british-vs-italian-postwar-flagships.html",
+          "sourceRoute": "/british-vs-italian-postwar-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "migrant-traffic-vs-tourist-traffic.html",
+          "sourceRoute": "/migrant-traffic-vs-tourist-traffic",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "RMS Cedric",
       "slug": "rms-cedric",
       "url": "/ships/rms-cedric",
@@ -10005,47 +10038,6 @@
       ]
     },
     {
-      "name": "RMS Queen Elizabeth",
-      "slug": "rms-queen-elizabeth",
-      "url": "/ships/rms-queen-elizabeth",
-      "inboundTotal": 6,
-      "editorialInbound": 5,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "collection": 2,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "british-vs-italian-postwar-flagships.html",
-          "sourceRoute": "/british-vs-italian-postwar-flagships",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/queen-mary-at-war.html",
-          "sourceRoute": "/collections/queen-mary-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Strathnaver",
       "slug": "rms-strathnaver",
       "url": "/ships/rms-strathnaver",
@@ -10387,6 +10379,52 @@
           "sourcePath": "white-star-line.html",
           "sourceRoute": "/white-star-line",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Queen Elizabeth",
+      "slug": "rms-queen-elizabeth",
+      "url": "/ships/rms-queen-elizabeth",
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "collection": 2,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "british-vs-italian-postwar-flagships.html",
+          "sourceRoute": "/british-vs-italian-postwar-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/queen-mary-at-war.html",
+          "sourceRoute": "/collections/queen-mary-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -11544,148 +11582,6 @@
       ]
     },
     {
-      "name": "RMS Queen Mary",
-      "slug": "rms-queen-mary",
-      "url": "/ships/rms-queen-mary",
-      "inboundTotal": 26,
-      "editorialInbound": 25,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 15,
-        "collection": 4,
-        "hub-history": 2,
-        "ship-guide": 4
-      },
-      "sources": [
-        {
-          "sourcePath": "250-years-across-the-atlantic.html",
-          "sourceRoute": "/250-years-across-the-atlantic",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "coal-fired-vs-oil-fired-ocean-liners.html",
-          "sourceRoute": "/coal-fired-vs-oil-fired-ocean-liners",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
-          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/floating-palaces-interior-innovation.html",
-          "sourceRoute": "/collections/floating-palaces-interior-innovation",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/queen-mary-at-war.html",
-          "sourceRoute": "/collections/queen-mary-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "french-vs-british-flagships-between-the-wars.html",
-          "sourceRoute": "/french-vs-british-flagships-between-the-wars",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-ocean-liners.html",
-          "sourceRoute": "/history-of-ocean-liners",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
-          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
-          "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "how-ocean-liners-were-provisioned.html",
-          "sourceRoute": "/how-ocean-liners-were-provisioned",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
-          "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "queen-mary-public-rooms.html",
-          "sourceRoute": "/queen-mary-public-rooms",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "rms-queen-mary.html",
-          "sourceRoute": "/rms-queen-mary",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/rms-queen-mary-timeline.html",
-          "sourceRoute": "/ships/rms-queen-mary-timeline",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
-          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
-          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "what-did-an-ocean-liner-purser-do.html",
-          "sourceRoute": "/what-did-an-ocean-liner-purser-do",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "what-did-ocean-liner-stewards-do.html",
-          "sourceRoute": "/what-did-ocean-liner-stewards-do",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
-          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "why-is-queen-mary-in-long-beach.html",
-          "sourceRoute": "/why-is-queen-mary-in-long-beach",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "RMS Titanic",
       "slug": "rms-titanic",
       "url": "/ships/rms-titanic",
@@ -11965,6 +11861,153 @@
         {
           "sourcePath": "why-ss-leviathan-matters.html",
           "sourceRoute": "/why-ss-leviathan-matters",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "RMS Queen Mary",
+      "slug": "rms-queen-mary",
+      "url": "/ships/rms-queen-mary",
+      "inboundTotal": 27,
+      "editorialInbound": 26,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 16,
+        "collection": 4,
+        "hub-history": 2,
+        "ship-guide": 4
+      },
+      "sources": [
+        {
+          "sourcePath": "250-years-across-the-atlantic.html",
+          "sourceRoute": "/250-years-across-the-atlantic",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "coal-fired-vs-oil-fired-ocean-liners.html",
+          "sourceRoute": "/coal-fired-vs-oil-fired-ocean-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
+          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/queen-mary-at-war.html",
+          "sourceRoute": "/collections/queen-mary-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "french-vs-british-flagships-between-the-wars.html",
+          "sourceRoute": "/french-vs-british-flagships-between-the-wars",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "how-ocean-liners-helped-shape-the-american-century.html",
+          "sourceRoute": "/how-ocean-liners-helped-shape-the-american-century",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
+          "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-provisioned.html",
+          "sourceRoute": "/how-ocean-liners-were-provisioned",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
+          "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "queen-mary-public-rooms.html",
+          "sourceRoute": "/queen-mary-public-rooms",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "rms-queen-mary.html",
+          "sourceRoute": "/rms-queen-mary",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/rms-queen-mary-timeline.html",
+          "sourceRoute": "/ships/rms-queen-mary-timeline",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
+          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
+          "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-an-ocean-liner-purser-do.html",
+          "sourceRoute": "/what-did-an-ocean-liner-purser-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "what-did-ocean-liner-stewards-do.html",
+          "sourceRoute": "/what-did-ocean-liner-stewards-do",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-did-ocean-liners-carry-musicians.html",
+          "sourceRoute": "/why-did-ocean-liners-carry-musicians",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "why-is-queen-mary-in-long-beach.html",
+          "sourceRoute": "/why-is-queen-mary-in-long-beach",
           "sourceCategory": "article-reference"
         }
       ]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:26:00.649Z",
+  "generatedAt": "2026-10-06T07:41:57.588Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,21 +17,21 @@
     ]
   },
   "summary": {
-    "trackedHtml": 652,
-    "indexablePages": 636,
-    "priorityPages": 88,
+    "trackedHtml": 653,
+    "indexablePages": 637,
+    "priorityPages": 89,
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 19,
-    "priorityWithThreePlusEditorialInbound": 55
+    "priorityWithThreePlusEditorialInbound": 56
   },
   "categories": {
     "article-reference": {
       "pages": 192,
       "searchEligible": 191,
       "sitemapListed": 87,
-      "editorialInbound": 1415,
-      "averageEditorialInbound": 7.37
+      "editorialInbound": 1417,
+      "averageEditorialInbound": 7.38
     },
     "bridge-page": {
       "pages": 11,
@@ -48,11 +48,11 @@
       "averageEditorialInbound": 3.21
     },
     "comparative-history": {
-      "pages": 32,
-      "searchEligible": 32,
-      "sitemapListed": 28,
-      "editorialInbound": 393,
-      "averageEditorialInbound": 12.28
+      "pages": 33,
+      "searchEligible": 33,
+      "sitemapListed": 29,
+      "editorialInbound": 404,
+      "averageEditorialInbound": 12.24
     },
     "evidence-methodology": {
       "pages": 11,
@@ -72,8 +72,8 @@
       "pages": 353,
       "searchEligible": 353,
       "sitemapListed": 350,
-      "editorialInbound": 787,
-      "averageEditorialInbound": 2.23
+      "editorialInbound": 793,
+      "averageEditorialInbound": 2.25
     }
   },
   "signals": {
@@ -888,12 +888,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "hub": 1,
+        "comparative-history": 1,
         "article-reference": 1
       },
       "sources": [
@@ -907,6 +908,12 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
@@ -6182,12 +6189,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 430,
-      "editorialInbound": 428,
+      "inboundTotal": 431,
+      "editorialInbound": 429,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
-        "comparative-history": 6,
+        "comparative-history": 7,
         "collection": 32,
         "evidence-methodology": 1,
         "ship-guide": 346
@@ -6413,6 +6420,12 @@
           "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
           "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
@@ -14322,11 +14335,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 21,
-      "editorialInbound": 19,
+      "inboundTotal": 22,
+      "editorialInbound": 20,
       "baselineInbound": 2,
       "byCategory": {
-        "comparative-history": 17,
+        "comparative-history": 18,
         "collection": 1,
         "ship-guide": 1
       },
@@ -14353,6 +14366,12 @@
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
@@ -14710,6 +14729,73 @@
           "sourcePath": "white-star-intermediate-liners-and-olympic-class.html",
           "sourceRoute": "/white-star-intermediate-liners-and-olympic-class",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "cunard-postwar-fleet-strategy.html",
+      "route": "/cunard-postwar-fleet-strategy",
+      "title": "Cunard’s Postwar Fleet Strategy: Queens, Caronia, Canada, and QE2",
+      "category": "comparative-history",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 9,
+      "editorialInbound": 8,
+      "baselineInbound": 1,
+      "byCategory": {
+        "comparative-history": 1,
+        "article-reference": 1,
+        "ship-guide": 6
+      },
+      "sources": [
+        {
+          "sourcePath": "british-vs-italian-postwar-flagships.html",
+          "sourceRoute": "/british-vs-italian-postwar-flagships",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "history-of-cunard.html",
+          "sourceRoute": "/history-of-cunard",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/queen-elizabeth-2.html",
+          "sourceRoute": "/ships/queen-elizabeth-2",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-caronia-1947.html",
+          "sourceRoute": "/ships/rms-caronia-1947",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-mauretania-ii.html",
+          "sourceRoute": "/ships/rms-mauretania-ii",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-queen-elizabeth.html",
+          "sourceRoute": "/ships/rms-queen-elizabeth",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-queen-mary.html",
+          "sourceRoute": "/ships/rms-queen-mary",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-saxonia.html",
+          "sourceRoute": "/ships/rms-saxonia",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -15576,11 +15662,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 11,
-      "editorialInbound": 10,
+      "inboundTotal": 12,
+      "editorialInbound": 11,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
+        "comparative-history": 1,
         "article-reference": 6,
         "ship-guide": 3
       },
@@ -15589,6 +15676,12 @@
           "sourcePath": "collections/postwar-migration-liner.html",
           "sourceRoute": "/collections/postwar-migration-liner",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
@@ -16002,11 +16095,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 22,
-      "editorialInbound": 20,
+      "inboundTotal": 23,
+      "editorialInbound": 21,
       "baselineInbound": 2,
       "byCategory": {
-        "comparative-history": 16,
+        "comparative-history": 17,
         "ship-guide": 4
       },
       "sources": [
@@ -16025,6 +16118,12 @@
         {
           "sourcePath": "coal-fired-vs-oil-fired-ocean-liners.html",
           "sourceRoute": "/coal-fired-vs-oil-fired-ocean-liners",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
@@ -19153,11 +19252,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
         "hub": 1,
+        "comparative-history": 1,
         "article-reference": 1
       },
       "sources": [
@@ -19165,6 +19265,12 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
@@ -20057,11 +20163,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
-        "comparative-history": 2,
+        "comparative-history": 3,
         "hub": 1
       },
       "sources": [
@@ -20075,6 +20181,12 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
@@ -21080,11 +21192,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "comparative-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/rms-megantic-1909.html",
@@ -21597,11 +21718,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 5,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
-        "comparative-history": 1,
+        "comparative-history": 2,
         "collection": 2,
         "article-reference": 1,
         "ship-guide": 1
@@ -21626,6 +21747,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
@@ -21647,12 +21774,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 26,
-      "editorialInbound": 25,
+      "inboundTotal": 27,
+      "editorialInbound": 26,
       "baselineInbound": 1,
       "byCategory": {
         "article-reference": 13,
-        "comparative-history": 5,
+        "comparative-history": 6,
         "collection": 4,
         "hub": 1,
         "ship-guide": 2
@@ -21698,6 +21825,12 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
@@ -21966,11 +22099,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
         "hub": 1,
+        "comparative-history": 1,
         "ship-guide": 1
       },
       "sources": [
@@ -21978,6 +22112,12 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-postwar-fleet-strategy.html",
+          "sourceRoute": "/cunard-postwar-fleet-strategy",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
