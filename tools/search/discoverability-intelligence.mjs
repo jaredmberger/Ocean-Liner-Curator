@@ -71,6 +71,7 @@ function pageCategory(path, $, title) {
   if (evidenceMethodologyPages.has(path)) return 'evidence-methodology';
   if (
     path === 'comparative-liner-history.html' ||
+    path === 'white-star-intermediate-liners-and-olympic-class.html' ||
     /-vs-/.test(path) ||
     /design-evolution\.html$/i.test(path) ||
     /flagship-study\.html$/i.test(path)
