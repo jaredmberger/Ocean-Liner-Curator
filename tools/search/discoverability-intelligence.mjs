@@ -72,6 +72,7 @@ function pageCategory(path, $, title) {
   if (
     path === 'comparative-liner-history.html' ||
     path === 'white-star-intermediate-liners-and-olympic-class.html' ||
+    path === 'cunard-postwar-fleet-strategy.html' ||
     /-vs-/.test(path) ||
     /design-evolution\.html$/i.test(path) ||
     /flagship-study\.html$/i.test(path)
