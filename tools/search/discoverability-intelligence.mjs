@@ -42,6 +42,13 @@ function internalRoute(raw, baseRoute = '/') {
   }
 }
 
+const hubPages = new Set([
+  'titanic.html',
+  'white-star-line.html',
+  'cunard-line.html',
+  'ships/ships.html'
+]);
+
 const evidenceMethodologyPages = new Set([
   'evidence-methodology.html',
   'gross-tonnage-is-not-weight.html',
@@ -68,7 +75,7 @@ function pageCategory(path, $, title) {
     /design-evolution\.html$/i.test(path) ||
     /flagship-study\.html$/i.test(path)
   ) return 'comparative-history';
-  if (/hub/i.test(title) || /(?:titanic|white-star-line|cunard).*hub/i.test(combined)) return 'hub';
+  if (hubPages.has(path) || /\bhub\b/i.test(title)) return 'hub';
   return 'article-reference';
 }
 
