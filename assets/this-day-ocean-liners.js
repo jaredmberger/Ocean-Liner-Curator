@@ -3597,5 +3597,201 @@ window.OCEAN_LINER_THIS_DAY = {
         "Cunard corporate histories"
       ]
     }
+  ],
+  "10-10": [
+    {
+      "year": 1931,
+      "title": "SS Monterey is launched",
+      "ship": "SS Monterey",
+      "category": "Launch",
+      "summary": "Matson's SS Monterey was launched at the Fore River Shipyard in Quincy, Massachusetts.",
+      "whyItMatters": "Monterey became one of Matson's best-known Pacific liners, linking the American West Coast with Hawaii, the South Pacific, Australia, and New Zealand.",
+      "relatedUrl": "/ships/ss-monterey",
+      "significance": "medium",
+      "tags": ["matson-line","monterey","launch","pacific-liners"],
+      "sources": ["Ocean Liner Curator — SS Monterey ship guide"]
+    }
+  ],
+  "10-11": [
+    {
+      "year": 1927,
+      "title": "SS Principessa Mafalda departs on her final voyage",
+      "ship": "SS Principessa Mafalda",
+      "category": "Final Voyage",
+      "summary": "Principessa Mafalda departed Genoa for Buenos Aires on what became her final voyage.",
+      "whyItMatters": "The voyage ended with the liner's loss off Brazil on October 25, making the departure an important marker in the history of Italian South Atlantic passenger service.",
+      "relatedUrl": "/ships/ss-principessa-mafalda",
+      "significance": "high",
+      "tags": ["principessa-mafalda","italian-liners","south-atlantic","final-voyage"],
+      "sources": ["Ocean Liner Curator — SS Principessa Mafalda ship guide"]
+    }
+  ],
+  "10-12": [
+    {
+      "year": 1922,
+      "title": "SS Volendam is completed",
+      "ship": "SS Volendam",
+      "category": "Completion",
+      "summary": "Holland America Line's SS Volendam was completed after fitting-out at Harland & Wolff's Govan yard.",
+      "whyItMatters": "Volendam joined Holland America's interwar rebuilding program and became an important passenger, migrant, and cargo liner on the Rotterdam-New York route.",
+      "relatedUrl": "/ships/ss-volendam",
+      "significance": "medium",
+      "tags": ["volendam","holland-america-line","completion","interwar-liners"],
+      "sources": ["Ocean Liner Curator — SS Volendam ship guide"]
+    }
+  ],
+  "10-27": [
+    {
+      "year": 1951,
+      "title": "MS Giulio Cesare begins her maiden voyage",
+      "ship": "MS Giulio Cesare",
+      "category": "Maiden Voyage",
+      "summary": "Italian Line motor liner Giulio Cesare entered service on her maiden voyage.",
+      "whyItMatters": "Giulio Cesare and her sister Augustus represented a major postwar Italian investment in motor-liner service to South America and later the North Atlantic.",
+      "relatedUrl": "/ships/ss-giulio-cesare",
+      "significance": "medium",
+      "tags": ["giulio-cesare","italian-line","maiden-voyage","motor-liner"],
+      "sources": ["Ocean Liner Curator — Giulio Cesare ship guide"]
+    }
+  ],
+  "11-01": [
+    {
+      "year": 1884,
+      "title": "RMS Umbria begins her maiden voyage",
+      "ship": "RMS Umbria",
+      "category": "Maiden Voyage",
+      "summary": "Cunard's RMS Umbria departed Liverpool on her maiden voyage to New York via Queenstown.",
+      "whyItMatters": "Umbria belonged to Cunard's late-Victorian express generation and later became a westbound Atlantic record holder.",
+      "relatedUrl": "/ships/rms-umbria-1884",
+      "significance": "medium",
+      "tags": ["umbria","cunard-line","maiden-voyage","victorian-liners"],
+      "sources": ["Ocean Liner Curator — RMS Umbria ship guide"]
+    }
+  ],
+  "11-02": [
+    {
+      "year": 1923,
+      "title": "RMS Maloja begins her maiden voyage",
+      "ship": "RMS Maloja",
+      "category": "Maiden Voyage",
+      "summary": "P&O's RMS Maloja began her initial maiden voyage after completion at Harland & Wolff.",
+      "whyItMatters": "Maloja became part of P&O's interwar long-distance passenger network linking Britain with India, Asia, and Australia.",
+      "relatedUrl": "/ships/ss-maloja",
+      "significance": "medium",
+      "tags": ["maloja","p-and-o","maiden-voyage","empire-routes"],
+      "sources": ["Ocean Liner Curator — RMS Maloja ship guide"]
+    }
+  ],
+  "11-11": [
+    {
+      "year": 1920,
+      "title": "SS Pittsburgh is launched",
+      "ship": "SS Pittsburgh / SS Pennland",
+      "category": "Launch",
+      "summary": "The future SS Pennland was launched at Belfast as Pittsburgh after wartime delays had interrupted her construction.",
+      "whyItMatters": "The ship's delayed completion illustrates how World War I disrupted liner construction and how prewar designs entered a very different postwar passenger market.",
+      "relatedUrl": "/ships/ss-pennland",
+      "significance": "medium",
+      "tags": ["pittsburgh","pennland","white-star-line","launch"],
+      "sources": ["Ocean Liner Curator — SS Pennland ship guide"]
+    }
+  ],
+  "11-15": [
+    {
+      "year": 1924,
+      "title": "SS Orama begins her maiden Australia sailing",
+      "ship": "SS Orama",
+      "category": "Maiden Voyage",
+      "summary": "Orient Line's SS Orama began her first Australia-bound passenger voyage.",
+      "whyItMatters": "Orama represented the interwar rebuilding of the Britain-Australia passenger route and the importance of long-distance imperial and migrant travel outside the North Atlantic.",
+      "relatedUrl": "/ships/ss-orama",
+      "significance": "medium",
+      "tags": ["orama","orient-line","maiden-voyage","australia-route"],
+      "sources": ["Ocean Liner Curator — SS Orama ship guide"]
+    }
+  ],
+  "11-17": [
+    {
+      "year": 1997,
+      "title": "SS Constitution sinks while under tow",
+      "ship": "SS Constitution",
+      "category": "Loss",
+      "summary": "The former American Export Lines liner Constitution sank in the Pacific while being towed toward a scrapyard.",
+      "whyItMatters": "Her loss ended the career of one of the best-known postwar American Mediterranean liners and illustrates how some classic passenger ships disappeared after decades of later cruise service.",
+      "relatedUrl": "/ships/ss-constitution",
+      "significance": "medium",
+      "tags": ["constitution","american-export-lines","loss","postwar-liners"],
+      "sources": ["Ocean Liner Curator — SS Constitution ship guide"]
+    }
+  ],
+  "11-23": [
+    {
+      "year": 1912,
+      "title": "SS Kristianiafjord is launched",
+      "ship": "SS Kristianiafjord",
+      "category": "Launch",
+      "summary": "Kristianiafjord was launched for the Norwegian America Line at Cammell Laird in Birkenhead.",
+      "whyItMatters": "She became the line's first purpose-built ocean liner and helped establish direct Norwegian passenger and mail service to North America.",
+      "relatedUrl": "/ships/ss-kristianiafjord",
+      "significance": "high",
+      "tags": ["kristianiafjord","norwegian-america-line","launch","migration"],
+      "sources": ["Ocean Liner Curator — SS Kristianiafjord ship guide"]
+    }
+  ],
+  "11-24": [
+    {
+      "year": 1928,
+      "title": "MS Kungsholm begins her maiden voyage",
+      "ship": "MS Kungsholm",
+      "category": "Maiden Voyage",
+      "summary": "Swedish American Line's motor liner Kungsholm departed Gothenburg for New York on her maiden voyage.",
+      "whyItMatters": "Kungsholm represented the growing importance of diesel-powered passenger liners and Swedish American Line's combination of scheduled Atlantic service with seasonal cruising.",
+      "relatedUrl": "/ships/ms-kungsholm-1928",
+      "significance": "medium",
+      "tags": ["kungsholm","swedish-american-line","maiden-voyage","motor-liner"],
+      "sources": ["Ocean Liner Curator — MS Kungsholm ship guide"]
+    }
+  ],
+  "11-26": [
+    {
+      "year": 1881,
+      "title": "RMS Servia begins her maiden voyage",
+      "ship": "RMS Servia",
+      "category": "Maiden Voyage",
+      "summary": "Cunard's RMS Servia departed Liverpool for New York via Queenstown on her maiden voyage.",
+      "whyItMatters": "Servia was an important technological marker in liner history as a large steel-hulled passenger ship and an early Cunarder fitted with electric lighting.",
+      "relatedUrl": "/ships/rms-servia-1881",
+      "significance": "high",
+      "tags": ["servia","cunard-line","maiden-voyage","steel-hull","electric-lighting"],
+      "sources": ["Ocean Liner Curator — RMS Servia ship guide"]
+    }
+  ],
+  "11-29": [
+    {
+      "year": 1932,
+      "title": "SS Conte di Savoia is delivered",
+      "ship": "SS Conte di Savoia",
+      "category": "Delivery",
+      "summary": "Conte di Savoia was delivered to Italia Flotte Riunite after completion at the San Marco yard in Trieste.",
+      "whyItMatters": "Her completion brought one of Italy's two great interwar prestige flagships into service, distinguished especially by her much-publicized gyroscopic stabilization system.",
+      "relatedUrl": "/ships/ss-conte-di-savoia",
+      "significance": "medium",
+      "tags": ["conte-di-savoia","italian-line","delivery","interwar-flagships"],
+      "sources": ["Ocean Liner Curator — SS Conte di Savoia ship guide"]
+    }
+  ],
+  "11-30": [
+    {
+      "year": 1932,
+      "title": "SS Conte di Savoia begins her maiden voyage",
+      "ship": "SS Conte di Savoia",
+      "category": "Maiden Voyage",
+      "summary": "Conte di Savoia departed Genoa for New York on her maiden voyage.",
+      "whyItMatters": "The voyage introduced the second of Italy's major 1932 Atlantic flagships and a ship marketed around both modern design and passenger comfort through gyroscopic stabilization.",
+      "relatedUrl": "/ships/ss-conte-di-savoia",
+      "significance": "high",
+      "tags": ["conte-di-savoia","italian-line","maiden-voyage","gyroscopic-stabilization"],
+      "sources": ["Ocean Liner Curator — SS Conte di Savoia ship guide"]
+    }
   ]
 };
