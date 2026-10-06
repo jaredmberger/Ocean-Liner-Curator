@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:03:44.752Z",
+  "generatedAt": "2026-10-06T01:18:24.782Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -20,9 +20,9 @@
     "trackedHtml": 650,
     "indexablePages": 634,
     "priorityPages": 86,
-    "priorityMissingFromSitemap": 20,
-    "priorityEditorialOrphans": 11,
-    "priorityWithOneEditorialInbound": 13,
+    "priorityMissingFromSitemap": 4,
+    "priorityEditorialOrphans": 2,
+    "priorityWithOneEditorialInbound": 22,
     "priorityWithThreePlusEditorialInbound": 51
   },
   "categories": {
@@ -36,23 +36,23 @@
     "bridge-page": {
       "pages": 11,
       "searchEligible": 11,
-      "sitemapListed": 0,
+      "sitemapListed": 11,
       "editorialInbound": 32,
       "averageEditorialInbound": 2.91
     },
     "collection": {
       "pages": 34,
       "searchEligible": 34,
-      "sitemapListed": 29,
-      "editorialInbound": 97,
-      "averageEditorialInbound": 2.85
+      "sitemapListed": 34,
+      "editorialInbound": 105,
+      "averageEditorialInbound": 3.09
     },
     "comparative-history": {
       "pages": 30,
       "searchEligible": 30,
       "sitemapListed": 26,
-      "editorialInbound": 375,
-      "averageEditorialInbound": 12.5
+      "editorialInbound": 374,
+      "averageEditorialInbound": 12.47
     },
     "evidence-methodology": {
       "pages": 11,
@@ -78,541 +78,6 @@
   },
   "signals": {
     "missingFromSitemap": [
-      {
-        "path": "why-hmhs-britannic-matters.html",
-        "route": "/why-hmhs-britannic-matters",
-        "title": "Why HMHS Britannic Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 6,
-        "editorialInbound": 4,
-        "baselineInbound": 2,
-        "byCategory": {
-          "collection": 1,
-          "ship-guide": 1,
-          "hub": 2
-        },
-        "sources": [
-          {
-            "sourcePath": "collections/olympic-class-liners.html",
-            "sourceRoute": "/collections/olympic-class-liners",
-            "sourceCategory": "collection",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "ships/rms-britannic.html",
-            "sourceRoute": "/ships/rms-britannic",
-            "sourceCategory": "ship-guide",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "titanic.html",
-            "sourceRoute": "/titanic",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "white-star-line.html",
-            "sourceRoute": "/white-star-line",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-mv-britannic-matters.html",
-        "route": "/why-mv-britannic-matters",
-        "title": "Why MV Britannic Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 4,
-        "editorialInbound": 2,
-        "baselineInbound": 2,
-        "byCategory": {
-          "hub": 1,
-          "article-reference": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "white-star-line.html",
-            "sourceRoute": "/white-star-line",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "why-cabin-class-ships-matter.html",
-            "sourceRoute": "/why-cabin-class-ships-matter",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-queen-mary-still-matters.html",
-        "route": "/why-queen-mary-still-matters",
-        "title": "Why Queen Mary Still Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 3,
-        "editorialInbound": 1,
-        "baselineInbound": 2,
-        "byCategory": {
-          "article-reference": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "rms-queen-mary.html",
-            "sourceRoute": "/rms-queen-mary",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-rms-aquitania-matters.html",
-        "route": "/why-rms-aquitania-matters",
-        "title": "Why RMS Aquitania Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 5,
-        "editorialInbound": 3,
-        "baselineInbound": 2,
-        "byCategory": {
-          "hub": 1,
-          "article-reference": 1,
-          "ship-guide": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "cunard-line.html",
-            "sourceRoute": "/cunard-line",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "lusitania-sinking-timeline.html",
-            "sourceRoute": "/lusitania-sinking-timeline",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "ships/rms-aquitania.html",
-            "sourceRoute": "/ships/rms-aquitania",
-            "sourceCategory": "ship-guide",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-rms-carpathia-matters.html",
-        "route": "/why-rms-carpathia-matters",
-        "title": "Why RMS Carpathia Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 4,
-        "editorialInbound": 2,
-        "baselineInbound": 2,
-        "byCategory": {
-          "hub": 2
-        },
-        "sources": [
-          {
-            "sourcePath": "cunard-line.html",
-            "sourceRoute": "/cunard-line",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "titanic.html",
-            "sourceRoute": "/titanic",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-rms-lusitania-matters.html",
-        "route": "/why-rms-lusitania-matters",
-        "title": "Why RMS Lusitania Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 7,
-        "editorialInbound": 5,
-        "baselineInbound": 2,
-        "byCategory": {
-          "hub": 2,
-          "article-reference": 2,
-          "bridge-page": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "cunard-line.html",
-            "sourceRoute": "/cunard-line",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "lusitania-sinking-timeline.html",
-            "sourceRoute": "/lusitania-sinking-timeline",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "titanic.html",
-            "sourceRoute": "/titanic",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "why-rms-mauretania-matters.html",
-            "sourceRoute": "/why-rms-mauretania-matters",
-            "sourceCategory": "bridge-page",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "why-speed-mattered-on-the-atlantic.html",
-            "sourceRoute": "/why-speed-mattered-on-the-atlantic",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-rms-mauretania-matters.html",
-        "route": "/why-rms-mauretania-matters",
-        "title": "Why RMS Mauretania Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 7,
-        "editorialInbound": 5,
-        "baselineInbound": 2,
-        "byCategory": {
-          "hub": 2,
-          "article-reference": 2,
-          "bridge-page": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "cunard-line.html",
-            "sourceRoute": "/cunard-line",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "lusitania-sinking-timeline.html",
-            "sourceRoute": "/lusitania-sinking-timeline",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "titanic.html",
-            "sourceRoute": "/titanic",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "why-rms-aquitania-matters.html",
-            "sourceRoute": "/why-rms-aquitania-matters",
-            "sourceCategory": "bridge-page",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "why-speed-mattered-on-the-atlantic.html",
-            "sourceRoute": "/why-speed-mattered-on-the-atlantic",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-rms-olympic-matters.html",
-        "route": "/why-rms-olympic-matters",
-        "title": "Why RMS Olympic Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 7,
-        "editorialInbound": 5,
-        "baselineInbound": 2,
-        "byCategory": {
-          "collection": 1,
-          "ship-guide": 1,
-          "comparative-history": 1,
-          "hub": 2
-        },
-        "sources": [
-          {
-            "sourcePath": "collections/olympic-class-liners.html",
-            "sourceRoute": "/collections/olympic-class-liners",
-            "sourceCategory": "collection",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "ships/rms-olympic.html",
-            "sourceRoute": "/ships/rms-olympic",
-            "sourceCategory": "ship-guide",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "titanic-vs-olympic.html",
-            "sourceRoute": "/titanic-vs-olympic",
-            "sourceCategory": "comparative-history",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "titanic.html",
-            "sourceRoute": "/titanic",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "white-star-line.html",
-            "sourceRoute": "/white-star-line",
-            "sourceCategory": "hub",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-ss-leviathan-matters.html",
-        "route": "/why-ss-leviathan-matters",
-        "title": "Why SS Leviathan Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 1,
-        "editorialInbound": 1,
-        "baselineInbound": 0,
-        "byCategory": {
-          "article-reference": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "ss-leviathan.html",
-            "sourceRoute": "/ss-leviathan",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-ss-normandie-matters.html",
-        "route": "/why-ss-normandie-matters",
-        "title": "Why SS Normandie Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 3,
-        "editorialInbound": 1,
-        "baselineInbound": 2,
-        "byCategory": {
-          "ship-guide": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "ships/ss-normandie.html",
-            "sourceRoute": "/ships/ss-normandie",
-            "sourceCategory": "ship-guide",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-ss-united-states-still-matters.html",
-        "route": "/why-ss-united-states-still-matters",
-        "title": "Why SS United States Still Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 5,
-        "editorialInbound": 3,
-        "baselineInbound": 2,
-        "byCategory": {
-          "article-reference": 3
-        },
-        "sources": [
-          {
-            "sourcePath": "ss-united-states.html",
-            "sourceRoute": "/ss-united-states",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "why-did-ocean-liners-disappear.html",
-            "sourceRoute": "/why-did-ocean-liners-disappear",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "why-was-ss-united-states-so-fast.html",
-            "sourceRoute": "/why-was-ss-united-states-so-fast",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "collections/from-vaterland-to-leviathan.html",
-        "route": "/collections/from-vaterland-to-leviathan",
-        "title": "From Vaterland to Leviathan",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 6,
-        "editorialInbound": 6,
-        "baselineInbound": 0,
-        "byCategory": {
-          "article-reference": 6
-        },
-        "sources": [
-          {
-            "sourcePath": "leviathan-postcards-ephemera-collecting.html",
-            "sourceRoute": "/leviathan-postcards-ephemera-collecting",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "leviathan-public-rooms.html",
-            "sourceRoute": "/leviathan-public-rooms",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "ships/ss-leviathan-timeline.html",
-            "sourceRoute": "/timelines-history/ss-leviathan-timeline",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "ss-leviathan-financial-struggles.html",
-            "sourceRoute": "/ss-leviathan-financial-struggles",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "ss-leviathan-specifications.html",
-            "sourceRoute": "/ss-leviathan-specifications",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "ss-leviathan.html",
-            "sourceRoute": "/ss-leviathan",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "collections/lost-ocean-liner-interiors.html",
-        "route": "/lost-ocean-liner-interiors",
-        "title": "Lost Ocean Liner Interiors",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 0,
-        "editorialInbound": 0,
-        "baselineInbound": 0,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/queen-mary-at-war.html",
-        "route": "/collections/queen-mary-at-war",
-        "title": "Queen Mary at War",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 5,
-        "editorialInbound": 5,
-        "baselineInbound": 0,
-        "byCategory": {
-          "article-reference": 3,
-          "ship-guide": 1,
-          "bridge-page": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "queen-mary-specifications.html",
-            "sourceRoute": "/queen-mary-specifications",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "queen-mary-speed-prestige.html",
-            "sourceRoute": "/queen-mary-speed-prestige",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "rms-queen-mary.html",
-            "sourceRoute": "/rms-queen-mary",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "ships/rms-queen-mary-timeline.html",
-            "sourceRoute": "/timelines-history/rms-queen-mary-timeline",
-            "sourceCategory": "ship-guide",
-            "sourceBaseline": false
-          },
-          {
-            "sourcePath": "why-queen-mary-still-matters.html",
-            "sourceRoute": "/why-queen-mary-still-matters",
-            "sourceCategory": "bridge-page",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "collections/ss-united-states-speed-record-blue-riband.html",
-        "route": "/ss-united-states-speed-record-blue-riband",
-        "title": "SS United States",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 0,
-        "editorialInbound": 0,
-        "baselineInbound": 0,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/william-francis-gibbs-and-the-ship.html",
-        "route": "/ss-united-states/william-francis-gibbs-and-the-ship",
-        "title": "William Francis Gibbs and the Ship",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 0,
-        "editorialInbound": 0,
-        "baselineInbound": 0,
-        "byCategory": {},
-        "sources": []
-      },
       {
         "path": "collectors-notebook/generic-nautical-motifs-vs-company-design.html",
         "route": "/collectors-notebook/generic-nautical-motifs-vs-company-design",
@@ -755,118 +220,6 @@
     ],
     "editorialOrphans": [
       {
-        "path": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
-        "route": "/collections/dining-rooms-lounges-and-ritual-at-sea",
-        "title": "Dining Rooms, Lounges, and Ritual at Sea",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 2,
-        "editorialInbound": 0,
-        "baselineInbound": 2,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/lost-ocean-liner-interiors.html",
-        "route": "/lost-ocean-liner-interiors",
-        "title": "Lost Ocean Liner Interiors",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 0,
-        "editorialInbound": 0,
-        "baselineInbound": 0,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/ocean-liners-at-war.html",
-        "route": "/collections/ocean-liners-at-war",
-        "title": "Ocean Liners at War",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 1,
-        "editorialInbound": 0,
-        "baselineInbound": 1,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/ports-piers-terminals-liner-era.html",
-        "route": "/collections/ports-piers-terminals-liner-era",
-        "title": "Ports, Piers & Terminals of the Liner Era",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 1,
-        "editorialInbound": 0,
-        "baselineInbound": 1,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/ss-united-states-speed-record-blue-riband.html",
-        "route": "/ss-united-states-speed-record-blue-riband",
-        "title": "SS United States",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 0,
-        "editorialInbound": 0,
-        "baselineInbound": 0,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/postwar-migration-liner.html",
-        "route": "/collections/postwar-migration-liner",
-        "title": "The Postwar Migration Liner",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 1,
-        "editorialInbound": 0,
-        "baselineInbound": 1,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/white-stars-big-four.html",
-        "route": "/collections/white-stars-big-four",
-        "title": "White Star’s Big Four",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 2,
-        "editorialInbound": 0,
-        "baselineInbound": 2,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collections/william-francis-gibbs-and-the-ship.html",
-        "route": "/ss-united-states/william-francis-gibbs-and-the-ship",
-        "title": "William Francis Gibbs and the Ship",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 0,
-        "editorialInbound": 0,
-        "baselineInbound": 0,
-        "byCategory": {},
-        "sources": []
-      },
-      {
         "path": "comparative-liner-history.html",
         "route": "/comparative-liner-history",
         "title": "Comparative Liner History",
@@ -893,20 +246,6 @@
         "baselineInbound": 0,
         "byCategory": {},
         "sources": []
-      },
-      {
-        "path": "how-to-weigh-conflicting-ocean-liner-sources.html",
-        "route": "/how-to-weigh-conflicting-ocean-liner-sources",
-        "title": "How to Weigh Conflicting Ocean Liner Sources",
-        "category": "evidence-methodology",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 2,
-        "editorialInbound": 0,
-        "baselineInbound": 2,
-        "byCategory": {},
-        "sources": []
       }
     ],
     "weaklyLinked": [
@@ -916,7 +255,7 @@
         "title": "Why Queen Mary Still Matters",
         "category": "bridge-page",
         "searchEligible": true,
-        "sitemapListed": false,
+        "sitemapListed": true,
         "canonicalDiffersFromPhysical": false,
         "inboundTotal": 3,
         "editorialInbound": 1,
@@ -939,7 +278,7 @@
         "title": "Why SS Leviathan Matters",
         "category": "bridge-page",
         "searchEligible": true,
-        "sitemapListed": false,
+        "sitemapListed": true,
         "canonicalDiffersFromPhysical": false,
         "inboundTotal": 1,
         "editorialInbound": 1,
@@ -962,7 +301,7 @@
         "title": "Why SS Normandie Matters",
         "category": "bridge-page",
         "searchEligible": true,
-        "sitemapListed": false,
+        "sitemapListed": true,
         "canonicalDiffersFromPhysical": false,
         "inboundTotal": 3,
         "editorialInbound": 1,
@@ -975,6 +314,29 @@
             "sourcePath": "ships/ss-normandie.html",
             "sourceRoute": "/ships/ss-normandie",
             "sourceCategory": "ship-guide",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
+        "route": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+        "title": "Dining Rooms, Lounges, and Ritual at Sea",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 3,
+        "editorialInbound": 1,
+        "baselineInbound": 2,
+        "byCategory": {
+          "collection": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "collections/floating-palaces-interior-innovation.html",
+            "sourceRoute": "/collections/floating-palaces-interior-innovation",
+            "sourceCategory": "collection",
             "sourceBaseline": false
           }
         ]
@@ -997,6 +359,75 @@
           {
             "sourcePath": "what-is-the-ss-leviathan-and-why-was-it-important.html",
             "sourceRoute": "/what-is-the-ss-leviathan-and-why-was-it-important",
+            "sourceCategory": "article-reference",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "collections/lost-ocean-liner-interiors.html",
+        "route": "/lost-ocean-liner-interiors",
+        "title": "Lost Ocean Liner Interiors",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": true,
+        "inboundTotal": 1,
+        "editorialInbound": 1,
+        "baselineInbound": 0,
+        "byCategory": {
+          "collection": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "collections/floating-palaces-interior-innovation.html",
+            "sourceRoute": "/collections/floating-palaces-interior-innovation",
+            "sourceCategory": "collection",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "collections/ocean-liners-at-war.html",
+        "route": "/collections/ocean-liners-at-war",
+        "title": "Ocean Liners at War",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 2,
+        "editorialInbound": 1,
+        "baselineInbound": 1,
+        "byCategory": {
+          "comparative-history": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
+            "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
+            "sourceCategory": "comparative-history",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "collections/ports-piers-terminals-liner-era.html",
+        "route": "/collections/ports-piers-terminals-liner-era",
+        "title": "Ports, Piers & Terminals of the Liner Era",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 2,
+        "editorialInbound": 1,
+        "baselineInbound": 1,
+        "byCategory": {
+          "article-reference": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "how-the-liner-system-worked.html",
+            "sourceRoute": "/how-the-liner-system-worked",
             "sourceCategory": "article-reference",
             "sourceBaseline": false
           }
@@ -1026,6 +457,29 @@
         ]
       },
       {
+        "path": "collections/ss-united-states-speed-record-blue-riband.html",
+        "route": "/ss-united-states-speed-record-blue-riband",
+        "title": "SS United States",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": true,
+        "inboundTotal": 1,
+        "editorialInbound": 1,
+        "baselineInbound": 0,
+        "byCategory": {
+          "ship-guide": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "ships/ss-us.html",
+            "sourceRoute": "/ships/ss-us",
+            "sourceCategory": "ship-guide",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
         "path": "collections/the-birth-of-the-modern-passenger-ship-1838-1875.html",
         "route": "/collections/the-birth-of-the-modern-passenger-ship-1838-1875",
         "title": "The Birth of the Modern Passenger Ship (1838–1875)",
@@ -1043,6 +497,29 @@
           {
             "sourcePath": "collections/what-defines-an-ocean-liner.html",
             "sourceRoute": "/collections/what-defines-an-ocean-liner",
+            "sourceCategory": "collection",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "collections/postwar-migration-liner.html",
+        "route": "/collections/postwar-migration-liner",
+        "title": "The Postwar Migration Liner",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 2,
+        "editorialInbound": 1,
+        "baselineInbound": 1,
+        "byCategory": {
+          "collection": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+            "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
             "sourceCategory": "collection",
             "sourceBaseline": false
           }
@@ -1067,6 +544,52 @@
             "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
             "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
             "sourceCategory": "collection",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "collections/white-stars-big-four.html",
+        "route": "/collections/white-stars-big-four",
+        "title": "White Star’s Big Four",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 3,
+        "editorialInbound": 1,
+        "baselineInbound": 2,
+        "byCategory": {
+          "article-reference": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "white-star-line-history.html",
+            "sourceRoute": "/white-star-line-history",
+            "sourceCategory": "article-reference",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "collections/william-francis-gibbs-and-the-ship.html",
+        "route": "/ss-united-states/william-francis-gibbs-and-the-ship",
+        "title": "William Francis Gibbs and the Ship",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": true,
+        "inboundTotal": 1,
+        "editorialInbound": 1,
+        "baselineInbound": 0,
+        "byCategory": {
+          "ship-guide": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "ships/ss-us.html",
+            "sourceRoute": "/ships/ss-us",
+            "sourceCategory": "ship-guide",
             "sourceBaseline": false
           }
         ]
@@ -1182,6 +705,29 @@
             "sourcePath": "why-ocean-liner-specifications-disagree.html",
             "sourceRoute": "/why-ocean-liner-specifications-disagree",
             "sourceCategory": "evidence-methodology",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "how-to-weigh-conflicting-ocean-liner-sources.html",
+        "route": "/how-to-weigh-conflicting-ocean-liner-sources",
+        "title": "How to Weigh Conflicting Ocean Liner Sources",
+        "category": "evidence-methodology",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 3,
+        "editorialInbound": 1,
+        "baselineInbound": 2,
+        "byCategory": {
+          "article-reference": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "sources.html",
+            "sourceRoute": "/sources",
+            "sourceCategory": "article-reference",
             "sourceBaseline": false
           }
         ]
@@ -12166,7 +11712,7 @@
       "title": "Why HMHS Britannic Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 6,
       "editorialInbound": 4,
@@ -12209,7 +11755,7 @@
       "title": "Why MV Britannic Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 4,
       "editorialInbound": 2,
@@ -12239,7 +11785,7 @@
       "title": "Why Queen Mary Still Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 3,
       "editorialInbound": 1,
@@ -12262,7 +11808,7 @@
       "title": "Why RMS Aquitania Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 5,
       "editorialInbound": 3,
@@ -12299,7 +11845,7 @@
       "title": "Why RMS Carpathia Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 4,
       "editorialInbound": 2,
@@ -12328,7 +11874,7 @@
       "title": "Why RMS Lusitania Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 7,
       "editorialInbound": 5,
@@ -12377,7 +11923,7 @@
       "title": "Why RMS Mauretania Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 7,
       "editorialInbound": 5,
@@ -12426,7 +11972,7 @@
       "title": "Why RMS Olympic Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 7,
       "editorialInbound": 5,
@@ -12476,7 +12022,7 @@
       "title": "Why SS Leviathan Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 1,
       "editorialInbound": 1,
@@ -12499,7 +12045,7 @@
       "title": "Why SS Normandie Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 3,
       "editorialInbound": 1,
@@ -12522,7 +12068,7 @@
       "title": "Why SS United States Still Matters",
       "category": "bridge-page",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 5,
       "editorialInbound": 3,
@@ -12619,11 +12165,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 0,
+      "inboundTotal": 3,
+      "editorialInbound": 1,
       "baselineInbound": 2,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collections/empire-routes-beyond-the-north-atlantic.html",
@@ -12829,7 +12384,7 @@
       "title": "From Vaterland to Leviathan",
       "category": "collection",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 6,
       "editorialInbound": 6,
@@ -13148,13 +12703,22 @@
       "title": "Lost Ocean Liner Interiors",
       "category": "collection",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collections/ocean-liners-at-war.html",
@@ -13164,11 +12728,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "comparative-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
+          "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collections/olympic-class-liners.html",
@@ -13228,11 +12801,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "how-the-liner-system-worked.html",
+          "sourceRoute": "/how-the-liner-system-worked",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collections/propulsion-machinery-liner-age.html",
@@ -13269,7 +12851,7 @@
       "title": "Queen Mary at War",
       "category": "collection",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
       "inboundTotal": 5,
       "editorialInbound": 5,
@@ -13370,13 +12952,22 @@
       "title": "SS United States",
       "category": "collection",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-us.html",
+          "sourceRoute": "/ships/ss-us",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collections/the-birth-of-the-modern-passenger-ship-1838-1875.html",
@@ -13475,11 +13066,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collections/the-superliner-race.html",
@@ -13693,11 +13293,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 0,
+      "inboundTotal": 3,
+      "editorialInbound": 1,
       "baselineInbound": 2,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "white-star-line-history.html",
+          "sourceRoute": "/white-star-line-history",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collections/william-francis-gibbs-and-the-ship.html",
@@ -13705,13 +13314,22 @@
       "title": "William Francis Gibbs and the Ship",
       "category": "collection",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-us.html",
+          "sourceRoute": "/ships/ss-us",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "andrea-doria-colombo-leonardo-design-evolution.html",
@@ -15770,13 +15388,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 26,
-      "editorialInbound": 24,
+      "inboundTotal": 25,
+      "editorialInbound": 23,
       "baselineInbound": 2,
       "byCategory": {
         "comparative-history": 17,
         "collection": 2,
-        "ship-guide": 5
+        "ship-guide": 4
       },
       "sources": [
         {
@@ -15896,12 +15514,6 @@
         {
           "sourcePath": "ships/ss-rex.html",
           "sourceRoute": "/ships/ss-rex",
-          "sourceCategory": "ship-guide",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "ships/ss-us.html",
-          "sourceRoute": "/ships/ss-us",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -16830,11 +16442,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 0,
+      "inboundTotal": 3,
+      "editorialInbound": 1,
       "baselineInbound": 2,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "sources.html",
+          "sourceRoute": "/sources",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "trial-speed-vs-service-speed-on-ocean-liners.html",
@@ -17070,24 +16691,17 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 4,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
       "baselineInbound": 2,
       "byCategory": {
-        "evidence-methodology": 3,
-        "ship-guide": 1
+        "evidence-methodology": 3
       },
       "sources": [
         {
           "sourcePath": "gross-tonnage-is-not-weight.html",
           "sourceRoute": "/gross-tonnage-is-not-weight",
           "sourceCategory": "evidence-methodology",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "ships/ss-us.html",
-          "sourceRoute": "/ships/ss-us",
-          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
