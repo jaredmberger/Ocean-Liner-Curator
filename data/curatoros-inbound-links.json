@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:09:31.675Z",
+  "generatedAt": "2026-10-06T07:25:57.813Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -15,8 +15,8 @@
     "editorialOrphans": 45,
     "oneEditorialInbound": 144,
     "threePlusEditorialInbound": 60,
-    "totalEditorialInboundLinks": 783,
-    "averageEditorialInbound": 2.24
+    "totalEditorialInboundLinks": 787,
+    "averageEditorialInbound": 2.25
   },
   "orphanedShips": [
     {
@@ -9085,37 +9085,6 @@
       ]
     },
     {
-      "name": "RMS Baltic",
-      "slug": "rms-baltic",
-      "url": "/ships/rms-baltic",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/white-stars-big-four.html",
-          "sourceRoute": "/collections/white-stars-big-four",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Campania",
       "slug": "rms-campania",
       "url": "/ships/rms-campania",
@@ -9172,37 +9141,6 @@
           "sourcePath": "migrant-traffic-vs-tourist-traffic.html",
           "sourceRoute": "/migrant-traffic-vs-tourist-traffic",
           "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
-      "name": "RMS Cedric",
-      "slug": "rms-cedric",
-      "url": "/ships/rms-cedric",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/white-stars-big-four.html",
-          "sourceRoute": "/collections/white-stars-big-four",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9668,17 +9606,18 @@
       ]
     },
     {
-      "name": "RMS Adriatic (1907)",
-      "slug": "rms-adriatic",
-      "url": "/ships/rms-adriatic",
+      "name": "RMS Baltic",
+      "slug": "rms-baltic",
+      "url": "/ships/rms-baltic",
       "inboundTotal": 5,
       "editorialInbound": 4,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
         "collection": 1,
-        "hub-history": 2,
-        "ship-guide": 1
+        "hub-history": 1,
+        "ship-guide": 1,
+        "article-reference": 1
       },
       "sources": [
         {
@@ -9697,9 +9636,46 @@
           "sourceCategory": "ship-guide"
         },
         {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
+          "sourcePath": "white-star-intermediate-liners-and-olympic-class.html",
+          "sourceRoute": "/white-star-intermediate-liners-and-olympic-class",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "RMS Cedric",
+      "slug": "rms-cedric",
+      "url": "/ships/rms-cedric",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1,
+        "ship-guide": 1,
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/white-stars-big-four.html",
+          "sourceRoute": "/collections/white-stars-big-four",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "white-star-intermediate-liners-and-olympic-class.html",
+          "sourceRoute": "/white-star-intermediate-liners-and-olympic-class",
+          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -9987,9 +9963,9 @@
       ]
     },
     {
-      "name": "RMS Celtic",
-      "slug": "rms-celtic",
-      "url": "/ships/rms-celtic",
+      "name": "RMS Adriatic (1907)",
+      "slug": "rms-adriatic",
+      "url": "/ships/rms-adriatic",
       "inboundTotal": 6,
       "editorialInbound": 5,
       "baselineInbound": 1,
@@ -10017,8 +9993,8 @@
           "sourceCategory": "ship-guide"
         },
         {
-          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
-          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
+          "sourcePath": "white-star-intermediate-liners-and-olympic-class.html",
+          "sourceRoute": "/white-star-intermediate-liners-and-olympic-class",
           "sourceCategory": "article-reference"
         },
         {
@@ -10364,6 +10340,53 @@
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "RMS Celtic",
+      "slug": "rms-celtic",
+      "url": "/ships/rms-celtic",
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 2,
+        "ship-guide": 1,
+        "article-reference": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/white-stars-big-four.html",
+          "sourceRoute": "/collections/white-stars-big-four",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
+          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "white-star-intermediate-liners-and-olympic-class.html",
+          "sourceRoute": "/white-star-intermediate-liners-and-olympic-class",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub-history"
         }
       ]
     },
