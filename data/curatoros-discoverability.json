@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T01:18:24.782Z",
+  "generatedAt": "2026-10-06T05:56:36.704Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -27,11 +27,11 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 176,
-      "searchEligible": 175,
-      "sitemapListed": 82,
-      "editorialInbound": 1330,
-      "averageEditorialInbound": 7.56
+      "pages": 192,
+      "searchEligible": 191,
+      "sitemapListed": 87,
+      "editorialInbound": 1413,
+      "averageEditorialInbound": 7.36
     },
     "bridge-page": {
       "pages": 11,
@@ -62,11 +62,11 @@
       "averageEditorialInbound": 6.27
     },
     "hub": {
-      "pages": 20,
-      "searchEligible": 20,
-      "sitemapListed": 4,
-      "editorialInbound": 204,
-      "averageEditorialInbound": 10.2
+      "pages": 4,
+      "searchEligible": 4,
+      "sitemapListed": 1,
+      "editorialInbound": 122,
+      "averageEditorialInbound": 30.5
     },
     "ship-guide": {
       "pages": 353,
@@ -128,8 +128,8 @@
         "baselineInbound": 1,
         "byCategory": {
           "collection": 1,
-          "hub": 4,
-          "article-reference": 5
+          "article-reference": 8,
+          "hub": 1
         },
         "sources": [
           {
@@ -141,7 +141,7 @@
           {
             "sourcePath": "how-accurate-is-the-titanic-movie.html",
             "sourceRoute": "/how-accurate-is-the-titanic-movie",
-            "sourceCategory": "hub",
+            "sourceCategory": "article-reference",
             "sourceBaseline": false
           },
           {
@@ -153,7 +153,7 @@
           {
             "sourcePath": "titanic-myths-that-persist.html",
             "sourceRoute": "/titanic-myths-that-persist",
-            "sourceCategory": "hub",
+            "sourceCategory": "article-reference",
             "sourceBaseline": false
           },
           {
@@ -183,7 +183,7 @@
           {
             "sourcePath": "what-happened-to-titanic-artifacts.html",
             "sourceRoute": "/what-happened-to-titanic-artifacts",
-            "sourceCategory": "hub",
+            "sourceCategory": "article-reference",
             "sourceBaseline": false
           },
           {
@@ -206,13 +206,13 @@
         "editorialInbound": 1,
         "baselineInbound": 0,
         "byCategory": {
-          "hub": 1
+          "article-reference": 1
         },
         "sources": [
           {
             "sourcePath": "why-did-cunard-and-white-star-matter.html",
             "sourceRoute": "/why-did-cunard-and-white-star-matter",
-            "sourceCategory": "hub",
+            "sourceCategory": "article-reference",
             "sourceBaseline": false
           }
         ]
@@ -675,13 +675,13 @@
         "editorialInbound": 1,
         "baselineInbound": 0,
         "byCategory": {
-          "hub": 1
+          "article-reference": 1
         },
         "sources": [
           {
             "sourcePath": "why-did-cunard-and-white-star-matter.html",
             "sourceRoute": "/why-did-cunard-and-white-star-matter",
-            "sourceCategory": "hub",
+            "sourceCategory": "article-reference",
             "sourceBaseline": false
           }
         ]
@@ -1757,6 +1757,20 @@
       "sources": []
     },
     {
+      "path": "sitemap.html",
+      "route": "/sitemap",
+      "title": "Complete Index",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 0,
+      "editorialInbound": 0,
+      "baselineInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "path": "contact.html",
       "route": "/contact",
       "title": "Contact",
@@ -1922,8 +1936,7 @@
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
-        "article-reference": 2,
-        "hub": 1
+        "article-reference": 3
       },
       "sources": [
         {
@@ -1941,7 +1954,7 @@
         {
           "sourcePath": "what-happened-to-titanics-grand-staircase.html",
           "sourceRoute": "/what-happened-to-titanics-grand-staircase",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -1965,6 +1978,36 @@
       "baselineInbound": 0,
       "byCategory": {},
       "sources": []
+    },
+    {
+      "path": "did-anyone-survive-in-the-water-after-titanic-sank.html",
+      "route": "/did-anyone-survive-in-the-water-after-titanic-sank",
+      "title": "Did Anyone Survive in the Water After Titanic Sank?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 2,
+      "editorialInbound": 2,
+      "baselineInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "hub": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "how-long-did-it-take-titanic-to-sink.html",
+          "sourceRoute": "/how-long-did-it-take-titanic-to-sink",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "designs-interiors/public-rooms.html",
@@ -2121,8 +2164,7 @@
       "editorialInbound": 8,
       "baselineInbound": 2,
       "byCategory": {
-        "article-reference": 7,
-        "hub": 1
+        "article-reference": 8
       },
       "sources": [
         {
@@ -2170,7 +2212,7 @@
         {
           "sourcePath": "what-can-ocean-liner-gpt-help-with.html",
           "sourceRoute": "/what-can-ocean-liner-gpt-help-with",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
       ]
@@ -2519,6 +2561,48 @@
       "sources": []
     },
     {
+      "path": "how-accurate-is-the-titanic-movie.html",
+      "route": "/how-accurate-is-the-titanic-movie",
+      "title": "How Accurate Is the Titanic Movie?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "byCategory": {
+        "comparative-history": 1,
+        "article-reference": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "titanic-vs-olympic.html",
+          "sourceRoute": "/titanic-vs-olympic",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-happened-to-titanics-grand-staircase.html",
+          "sourceRoute": "/what-happened-to-titanics-grand-staircase",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-do-people-still-care-about-titanic.html",
+          "sourceRoute": "/why-do-people-still-care-about-titanic",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-was-titanic-called-unsinkable.html",
+          "sourceRoute": "/why-was-titanic-called-unsinkable",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "how-value-is-determined.html",
       "route": "/how-value-is-determined",
       "title": "How Is Ocean Liner Memorabilia Value Determined?",
@@ -2549,6 +2633,54 @@
           "sourcePath": "what-ocean-liner-artifacts-survive-most-often.html",
           "sourceRoute": "/what-ocean-liner-artifacts-survive-most-often",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "how-long-did-it-take-titanic-to-sink.html",
+      "route": "/how-long-did-it-take-titanic-to-sink",
+      "title": "How Long Did It Take Titanic to Sink?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 5,
+      "editorialInbound": 5,
+      "baselineInbound": 0,
+      "byCategory": {
+        "article-reference": 3,
+        "hub": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "did-anyone-survive-in-the-water-after-titanic-sank.html",
+          "sourceRoute": "/did-anyone-survive-in-the-water-after-titanic-sank",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-titanic-changed-maritime-safety.html",
+          "sourceRoute": "/how-titanic-changed-maritime-safety",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-was-third-class-like-on-titanic.html",
+          "sourceRoute": "/what-was-third-class-like-on-titanic",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub",
           "sourceBaseline": false
         }
       ]
@@ -2995,6 +3127,56 @@
           "sourcePath": "collections/ports-piers-terminals-liner-era.html",
           "sourceRoute": "/collections/ports-piers-terminals-liner-era",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "how-titanic-changed-maritime-safety.html",
+      "route": "/how-titanic-changed-maritime-safety",
+      "title": "How Titanic Changed Maritime Safety",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "byCategory": {
+        "collection": 2,
+        "article-reference": 1,
+        "comparative-history": 1,
+        "hub": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
+          "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-news-crossed-the-atlantic-before-the-internet.html",
+          "sourceRoute": "/how-news-crossed-the-atlantic-before-the-internet",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "olympic-titanic-britannic-design-evolution.html",
+          "sourceRoute": "/olympic-titanic-britannic-design-evolution",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
           "sourceBaseline": false
         }
       ]
@@ -4073,6 +4255,240 @@
       ]
     },
     {
+      "path": "index.html",
+      "route": "/",
+      "title": "Ocean Liner Curator - OceanLiners.net",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 40,
+      "editorialInbound": 36,
+      "baselineInbound": 4,
+      "byCategory": {
+        "article-reference": 13,
+        "collection": 23
+      },
+      "sources": [
+        {
+          "sourcePath": "about.html",
+          "sourceRoute": "/about",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/cabin-liner-transition.html",
+          "sourceRoute": "/collections/cabin-liner-transition",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
+          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/french-atlantic-flagships.html",
+          "sourceRoute": "/collections/french-atlantic-flagships",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/from-leviathan-to-united-states.html",
+          "sourceRoute": "/collections/from-leviathan-to-united-states",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
+          "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/from-vaterland-to-leviathan.html",
+          "sourceRoute": "/collections/from-vaterland-to-leviathan",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/liners-rebuilt-and-renamed.html",
+          "sourceRoute": "/collections/liners-rebuilt-and-renamed",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
+          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/olympic-class-liners.html",
+          "sourceRoute": "/collections/olympic-class-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/queen-mary-at-war.html",
+          "sourceRoute": "/collections/queen-mary-at-war",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-birth-of-the-modern-passenger-ship-1838-1875.html",
+          "sourceRoute": "/collections/the-birth-of-the-modern-passenger-ship-1838-1875",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-imperator-class-as-a-design-system.html",
+          "sourceRoute": "/collections/the-imperator-class-as-a-design-system",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-superliner-race.html",
+          "sourceRoute": "/collections/the-superliner-race",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
+          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/tourist-third-cabin-democratization.html",
+          "sourceRoute": "/collections/tourist-third-cabin-democratization",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/what-defines-an-ocean-liner.html",
+          "sourceRoute": "/collections/what-defines-an-ocean-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/white-stars-big-four.html",
+          "sourceRoute": "/collections/white-stars-big-four",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "community/submissions/thanks.html",
+          "sourceRoute": "/submissions/thanks",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "contact.html",
+          "sourceRoute": "/contact",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "definitive-guide.html",
+          "sourceRoute": "/definitive-guide",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-to-identify-fake-ocean-liner-memorabilia.html",
+          "sourceRoute": "/how-to-identify-fake-ocean-liner-memorabilia",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "liner-links.html",
+          "sourceRoute": "/external-references",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "photos.html",
+          "sourceRoute": "/photos",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "reference-objects.html",
+          "sourceRoute": "/reference-objects",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "shipbuilders.html",
+          "sourceRoute": "/shipbuilders",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "shipping-lines.html",
+          "sourceRoute": "/shipping-lines",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "shipyards.html",
+          "sourceRoute": "/shipyards",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "sources.html",
+          "sourceRoute": "/sources",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "ships/ocean-liner-evolution-map.html",
       "route": "/ocean-liner-evolution-map",
       "title": "Ocean Liner Evolution Map",
@@ -4098,8 +4514,8 @@
       "editorialInbound": 8,
       "baselineInbound": 5,
       "byCategory": {
-        "article-reference": 6,
-        "hub": 2
+        "article-reference": 7,
+        "hub": 1
       },
       "sources": [
         {
@@ -4141,7 +4557,7 @@
         {
           "sourcePath": "what-can-ocean-liner-gpt-help-with.html",
           "sourceRoute": "/what-can-ocean-liner-gpt-help-with",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -4164,9 +4580,9 @@
       "editorialInbound": 34,
       "baselineInbound": 5,
       "byCategory": {
-        "article-reference": 17,
+        "article-reference": 18,
         "collection": 12,
-        "hub": 4,
+        "hub": 3,
         "bridge-page": 1
       },
       "sources": [
@@ -4353,7 +4769,7 @@
         {
           "sourcePath": "what-can-ocean-liner-gpt-help-with.html",
           "sourceRoute": "/what-can-ocean-liner-gpt-help-with",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -8883,6 +9299,41 @@
       ]
     },
     {
+      "path": "start-here.html",
+      "route": "/start-here",
+      "title": "Start Here: How to Use Ocean Liner Curator",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
+      "baselineInbound": 2,
+      "byCategory": {
+        "article-reference": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collectors-notebook.html",
+          "sourceRoute": "/collectors-notebook",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ocean-liner-collecting-guide.html",
+          "sourceRoute": "/ocean-liner-collecting-guide",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "community/submissions/thanks.html",
       "route": "/submissions/thanks",
       "title": "Submission Received",
@@ -9151,6 +9602,79 @@
       ]
     },
     {
+      "path": "titanic-myths-that-persist.html",
+      "route": "/titanic-myths-that-persist",
+      "title": "Titanic Myths That Persist — and Why They Persist",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 10,
+      "editorialInbound": 9,
+      "baselineInbound": 1,
+      "byCategory": {
+        "article-reference": 6,
+        "collection": 1,
+        "hub": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "authentic-titanic-postcards.html",
+          "sourceRoute": "/authentic-titanic-postcards",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
+          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
+          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic-officers-roles-decisions-and-survival.html",
+          "sourceRoute": "/titanic-officers-roles-decisions-and-survival",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic-what-the-world-knew.html",
+          "sourceRoute": "/titanic-what-the-world-knew",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-titanic-teaches-about-evidence.html",
+          "sourceRoute": "/titanic-evidence",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-didnt-titanic-slow-down.html",
+          "sourceRoute": "/why-didnt-titanic-slow-down",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "ships/titanic-southampton-to-rescue-timeline.html",
       "route": "/ships/titanic-departure-to-carpathia-rescue",
       "title": "Titanic: Departure to Rescue",
@@ -9176,10 +9700,10 @@
       "editorialInbound": 7,
       "baselineInbound": 2,
       "byCategory": {
-        "article-reference": 2,
+        "article-reference": 3,
         "collection": 1,
         "comparative-history": 1,
-        "hub": 3
+        "hub": 2
       },
       "sources": [
         {
@@ -9215,7 +9739,7 @@
         {
           "sourcePath": "what-was-it-like-aboard-titanic.html",
           "sourceRoute": "/what-was-it-like-aboard-titanic",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -9361,10 +9885,9 @@
       "editorialInbound": 17,
       "baselineInbound": 3,
       "byCategory": {
-        "article-reference": 14,
+        "article-reference": 15,
         "collection": 1,
-        "comparative-history": 1,
-        "hub": 1
+        "comparative-history": 1
       },
       "sources": [
         {
@@ -9454,7 +9977,7 @@
         {
           "sourcePath": "what-can-ocean-liner-gpt-help-with.html",
           "sourceRoute": "/what-can-ocean-liner-gpt-help-with",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -9466,6 +9989,29 @@
         {
           "sourcePath": "why-did-ocean-liners-have-classes.html",
           "sourceRoute": "/why-did-ocean-liners-have-classes",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "what-can-ocean-liner-gpt-help-with.html",
+      "route": "/what-can-ocean-liner-gpt-help-with",
+      "title": "What Can Ocean Liner GPT Help With?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ocean-liner-gpt.html",
+          "sourceRoute": "/ocean-liner-gpt",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -10139,6 +10685,77 @@
       ]
     },
     {
+      "path": "what-happened-to-titanic-artifacts.html",
+      "route": "/what-happened-to-titanic-artifacts",
+      "title": "What Happened to Titanic Artifacts?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 3,
+      "baselineInbound": 0,
+      "byCategory": {
+        "article-reference": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "did-anyone-survive-in-the-water-after-titanic-sank.html",
+          "sourceRoute": "/did-anyone-survive-in-the-water-after-titanic-sank",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-happened-to-titanics-grand-staircase.html",
+          "sourceRoute": "/what-happened-to-titanics-grand-staircase",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-do-people-still-care-about-titanic.html",
+          "sourceRoute": "/why-do-people-still-care-about-titanic",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "what-happened-to-titanics-grand-staircase.html",
+      "route": "/what-happened-to-titanics-grand-staircase",
+      "title": "What Happened to Titanic’s Grand Staircase?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 3,
+      "baselineInbound": 0,
+      "byCategory": {
+        "hub": 2,
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-was-third-class-like-on-titanic.html",
+          "sourceRoute": "/what-was-third-class-like-on-titanic",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "ocean-liner-cruise-ship.html",
       "route": "/ocean-liner-cruise-ship",
       "title": "What Is the Difference Between an Ocean Liner and a Cruise Ship?",
@@ -10235,8 +10852,7 @@
       "editorialInbound": 3,
       "baselineInbound": 0,
       "byCategory": {
-        "article-reference": 2,
-        "hub": 1
+        "article-reference": 3
       },
       "sources": [
         {
@@ -10248,7 +10864,7 @@
         {
           "sourcePath": "why-did-cunard-and-white-star-matter.html",
           "sourceRoute": "/why-did-cunard-and-white-star-matter",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -10371,6 +10987,42 @@
       ]
     },
     {
+      "path": "what-was-it-like-aboard-titanic.html",
+      "route": "/what-was-it-like-aboard-titanic",
+      "title": "What Was It Like Aboard Titanic?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 3,
+      "baselineInbound": 0,
+      "byCategory": {
+        "comparative-history": 1,
+        "article-reference": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "titanic-vs-olympic.html",
+          "sourceRoute": "/titanic-vs-olympic",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-happened-to-titanics-grand-staircase.html",
+          "sourceRoute": "/what-happened-to-titanics-grand-staircase",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-was-titanic-called-unsinkable.html",
+          "sourceRoute": "/why-was-titanic-called-unsinkable",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "what-was-it-like-to-cross-the-atlantic-on-an-ocean-liner.html",
       "route": "/what-was-it-like-to-cross-the-atlantic-on-an-ocean-liner",
       "title": "What Was It Like to Cross the Atlantic on an Ocean Liner?",
@@ -10411,8 +11063,7 @@
       "editorialInbound": 3,
       "baselineInbound": 0,
       "byCategory": {
-        "article-reference": 2,
-        "hub": 1
+        "article-reference": 3
       },
       "sources": [
         {
@@ -10430,7 +11081,7 @@
         {
           "sourcePath": "why-did-cunard-and-white-star-matter.html",
           "sourceRoute": "/why-did-cunard-and-white-star-matter",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
       ]
@@ -10453,6 +11104,48 @@
         {
           "sourcePath": "what-are-ocean-liners.html",
           "sourceRoute": "/what-are-ocean-liners",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "what-was-third-class-like-on-titanic.html",
+      "route": "/what-was-third-class-like-on-titanic",
+      "title": "What Was Third Class Like on Titanic?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 4,
+      "editorialInbound": 4,
+      "baselineInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "hub": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "did-all-ocean-liners-carry-immigrants.html",
+          "sourceRoute": "/did-all-ocean-liners-carry-immigrants",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-did-ocean-liners-have-classes.html",
+          "sourceRoute": "/why-did-ocean-liners-have-classes",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -10882,6 +11575,36 @@
       ]
     },
     {
+      "path": "why-did-cunard-and-white-star-matter.html",
+      "route": "/why-did-cunard-and-white-star-matter",
+      "title": "Why Did Cunard and White Star Matter?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 2,
+      "editorialInbound": 2,
+      "baselineInbound": 0,
+      "byCategory": {
+        "hub": 1,
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line-history.html",
+          "sourceRoute": "/white-star-line-history",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "why-did-ocean-liners-carry-musicians.html",
       "route": "/why-did-ocean-liners-carry-musicians",
       "title": "Why Did Ocean Liners Carry Musicians?",
@@ -11027,6 +11750,35 @@
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "why-do-people-still-care-about-titanic.html",
+      "route": "/why-do-people-still-care-about-titanic",
+      "title": "Why Do People Still Care About Titanic?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 2,
+      "editorialInbound": 2,
+      "baselineInbound": 0,
+      "byCategory": {
+        "hub": 2
+      },
+      "sources": [
         {
           "sourcePath": "titanic.html",
           "sourceRoute": "/titanic",
@@ -11643,6 +12395,29 @@
           "sourcePath": "what-was-the-blue-riband.html",
           "sourceRoute": "/what-was-the-blue-riband",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "why-was-titanic-called-unsinkable.html",
+      "route": "/why-was-titanic-called-unsinkable",
+      "title": "Why Was Titanic Called Unsinkable?",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
+      "baselineInbound": 0,
+      "byCategory": {
+        "comparative-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "titanic-vs-olympic.html",
+          "sourceRoute": "/titanic-vs-olympic",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         }
       ]
@@ -13134,9 +13909,9 @@
       "editorialInbound": 9,
       "baselineInbound": 2,
       "byCategory": {
-        "article-reference": 4,
+        "article-reference": 6,
         "comparative-history": 1,
-        "hub": 4
+        "hub": 2
       },
       "sources": [
         {
@@ -13160,7 +13935,7 @@
         {
           "sourcePath": "titanic-myths-that-persist.html",
           "sourceRoute": "/titanic-myths-that-persist",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -13178,7 +13953,7 @@
         {
           "sourcePath": "what-happened-to-titanic-artifacts.html",
           "sourceRoute": "/what-happened-to-titanic-artifacts",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -16021,8 +16796,8 @@
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "hub": 4,
-        "article-reference": 5
+        "article-reference": 8,
+        "hub": 1
       },
       "sources": [
         {
@@ -16034,7 +16809,7 @@
         {
           "sourcePath": "how-accurate-is-the-titanic-movie.html",
           "sourceRoute": "/how-accurate-is-the-titanic-movie",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -16046,7 +16821,7 @@
         {
           "sourcePath": "titanic-myths-that-persist.html",
           "sourceRoute": "/titanic-myths-that-persist",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -16076,7 +16851,7 @@
         {
           "sourcePath": "what-happened-to-titanic-artifacts.html",
           "sourceRoute": "/what-happened-to-titanic-artifacts",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -16099,13 +16874,13 @@
       "editorialInbound": 1,
       "baselineInbound": 0,
       "byCategory": {
-        "hub": 1
+        "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "why-did-cunard-and-white-star-matter.html",
           "sourceRoute": "/why-did-cunard-and-white-star-matter",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
       ]
@@ -16719,20 +17494,6 @@
       ]
     },
     {
-      "path": "sitemap.html",
-      "route": "/sitemap",
-      "title": "Complete Index",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": true,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "path": "cunard-line.html",
       "route": "/cunard-line",
       "title": "Cunard Line",
@@ -16788,402 +17549,6 @@
       ]
     },
     {
-      "path": "did-anyone-survive-in-the-water-after-titanic-sank.html",
-      "route": "/did-anyone-survive-in-the-water-after-titanic-sank",
-      "title": "Did Anyone Survive in the Water After Titanic Sank?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 1,
-      "baselineInbound": 0,
-      "byCategory": {
-        "hub": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "how-accurate-is-the-titanic-movie.html",
-      "route": "/how-accurate-is-the-titanic-movie",
-      "title": "How Accurate Is the Titanic Movie?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "byCategory": {
-        "comparative-history": 1,
-        "hub": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "titanic-vs-olympic.html",
-          "sourceRoute": "/titanic-vs-olympic",
-          "sourceCategory": "comparative-history",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "what-happened-to-titanics-grand-staircase.html",
-          "sourceRoute": "/what-happened-to-titanics-grand-staircase",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "why-do-people-still-care-about-titanic.html",
-          "sourceRoute": "/why-do-people-still-care-about-titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "why-was-titanic-called-unsinkable.html",
-          "sourceRoute": "/why-was-titanic-called-unsinkable",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "how-long-did-it-take-titanic-to-sink.html",
-      "route": "/how-long-did-it-take-titanic-to-sink",
-      "title": "How Long Did It Take Titanic to Sink?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 5,
-      "baselineInbound": 0,
-      "byCategory": {
-        "hub": 5
-      },
-      "sources": [
-        {
-          "sourcePath": "did-anyone-survive-in-the-water-after-titanic-sank.html",
-          "sourceRoute": "/did-anyone-survive-in-the-water-after-titanic-sank",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "how-titanic-changed-maritime-safety.html",
-          "sourceRoute": "/how-titanic-changed-maritime-safety",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "what-was-third-class-like-on-titanic.html",
-          "sourceRoute": "/what-was-third-class-like-on-titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "how-titanic-changed-maritime-safety.html",
-      "route": "/how-titanic-changed-maritime-safety",
-      "title": "How Titanic Changed Maritime Safety",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 5,
-      "baselineInbound": 1,
-      "byCategory": {
-        "collection": 2,
-        "article-reference": 1,
-        "comparative-history": 1,
-        "hub": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
-          "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "how-news-crossed-the-atlantic-before-the-internet.html",
-          "sourceRoute": "/how-news-crossed-the-atlantic-before-the-internet",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "olympic-titanic-britannic-design-evolution.html",
-          "sourceRoute": "/olympic-titanic-britannic-design-evolution",
-          "sourceCategory": "comparative-history",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "index.html",
-      "route": "/",
-      "title": "Ocean Liner Curator - OceanLiners.net",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": true,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 40,
-      "editorialInbound": 36,
-      "baselineInbound": 4,
-      "byCategory": {
-        "article-reference": 13,
-        "collection": 23
-      },
-      "sources": [
-        {
-          "sourcePath": "about.html",
-          "sourceRoute": "/about",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/blue-riband-era.html",
-          "sourceRoute": "/collections/blue-riband-era",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/cabin-liner-transition.html",
-          "sourceRoute": "/collections/cabin-liner-transition",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
-          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/floating-palaces-interior-innovation.html",
-          "sourceRoute": "/collections/floating-palaces-interior-innovation",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/french-atlantic-flagships.html",
-          "sourceRoute": "/collections/french-atlantic-flagships",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/from-leviathan-to-united-states.html",
-          "sourceRoute": "/collections/from-leviathan-to-united-states",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
-          "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/from-vaterland-to-leviathan.html",
-          "sourceRoute": "/collections/from-vaterland-to-leviathan",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/german-prestige-liners.html",
-          "sourceRoute": "/collections/german-prestige-liners",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
-          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/liners-rebuilt-and-renamed.html",
-          "sourceRoute": "/collections/liners-rebuilt-and-renamed",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
-          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/olympic-class-liners.html",
-          "sourceRoute": "/collections/olympic-class-liners",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/queen-mary-at-war.html",
-          "sourceRoute": "/collections/queen-mary-at-war",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/the-birth-of-the-modern-passenger-ship-1838-1875.html",
-          "sourceRoute": "/collections/the-birth-of-the-modern-passenger-ship-1838-1875",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
-          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/the-imperator-class-as-a-design-system.html",
-          "sourceRoute": "/collections/the-imperator-class-as-a-design-system",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/the-superliner-race.html",
-          "sourceRoute": "/collections/the-superliner-race",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
-          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/tourist-third-cabin-democratization.html",
-          "sourceRoute": "/collections/tourist-third-cabin-democratization",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/what-defines-an-ocean-liner.html",
-          "sourceRoute": "/collections/what-defines-an-ocean-liner",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/white-stars-big-four.html",
-          "sourceRoute": "/collections/white-stars-big-four",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "community/submissions/thanks.html",
-          "sourceRoute": "/submissions/thanks",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "contact.html",
-          "sourceRoute": "/contact",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "definitive-guide.html",
-          "sourceRoute": "/definitive-guide",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "how-to-identify-fake-ocean-liner-memorabilia.html",
-          "sourceRoute": "/how-to-identify-fake-ocean-liner-memorabilia",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "liner-links.html",
-          "sourceRoute": "/external-references",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "photos.html",
-          "sourceRoute": "/photos",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "reference-objects.html",
-          "sourceRoute": "/reference-objects",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "shipbuilders.html",
-          "sourceRoute": "/shipbuilders",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "shipping-lines.html",
-          "sourceRoute": "/shipping-lines",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "shipyards.html",
-          "sourceRoute": "/shipyards",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "sources.html",
-          "sourceRoute": "/sources",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
       "path": "titanic.html",
       "route": "/titanic",
       "title": "RMS Titanic",
@@ -17195,9 +17560,9 @@
       "editorialInbound": 28,
       "baselineInbound": 4,
       "byCategory": {
-        "article-reference": 8,
+        "article-reference": 21,
         "collection": 1,
-        "hub": 15,
+        "hub": 2,
         "comparative-history": 2,
         "bridge-page": 2
       },
@@ -17223,25 +17588,25 @@
         {
           "sourcePath": "did-anyone-survive-in-the-water-after-titanic-sank.html",
           "sourceRoute": "/did-anyone-survive-in-the-water-after-titanic-sank",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "how-accurate-is-the-titanic-movie.html",
           "sourceRoute": "/how-accurate-is-the-titanic-movie",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "how-long-did-it-take-titanic-to-sink.html",
           "sourceRoute": "/how-long-did-it-take-titanic-to-sink",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "how-titanic-changed-maritime-safety.html",
           "sourceRoute": "/how-titanic-changed-maritime-safety",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -17271,7 +17636,7 @@
         {
           "sourcePath": "titanic-myths-that-persist.html",
           "sourceRoute": "/titanic-myths-that-persist",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -17301,19 +17666,19 @@
         {
           "sourcePath": "what-can-ocean-liner-gpt-help-with.html",
           "sourceRoute": "/what-can-ocean-liner-gpt-help-with",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "what-happened-to-titanic-artifacts.html",
           "sourceRoute": "/what-happened-to-titanic-artifacts",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "what-happened-to-titanics-grand-staircase.html",
           "sourceRoute": "/what-happened-to-titanics-grand-staircase",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -17325,13 +17690,13 @@
         {
           "sourcePath": "what-was-it-like-aboard-titanic.html",
           "sourceRoute": "/what-was-it-like-aboard-titanic",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "what-was-third-class-like-on-titanic.html",
           "sourceRoute": "/what-was-third-class-like-on-titanic",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -17343,13 +17708,13 @@
         {
           "sourcePath": "why-did-cunard-and-white-star-matter.html",
           "sourceRoute": "/why-did-cunard-and-white-star-matter",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "why-do-people-still-care-about-titanic.html",
           "sourceRoute": "/why-do-people-still-care-about-titanic",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -17367,7 +17732,7 @@
         {
           "sourcePath": "why-was-titanic-called-unsinkable.html",
           "sourceRoute": "/why-was-titanic-called-unsinkable",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
       ]
@@ -17384,9 +17749,9 @@
       "editorialInbound": 77,
       "baselineInbound": 5,
       "byCategory": {
-        "article-reference": 36,
+        "article-reference": 38,
         "collection": 32,
-        "hub": 5,
+        "hub": 3,
         "comparative-history": 1,
         "ship-guide": 1,
         "bridge-page": 2
@@ -17773,7 +18138,7 @@
         {
           "sourcePath": "what-can-ocean-liner-gpt-help-with.html",
           "sourceRoute": "/what-can-ocean-liner-gpt-help-with",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -17809,7 +18174,7 @@
         {
           "sourcePath": "why-did-cunard-and-white-star-matter.html",
           "sourceRoute": "/why-did-cunard-and-white-star-matter",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -17857,285 +18222,6 @@
       ]
     },
     {
-      "path": "start-here.html",
-      "route": "/start-here",
-      "title": "Start Here: How to Use Ocean Liner Curator",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": true,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 3,
-      "baselineInbound": 2,
-      "byCategory": {
-        "article-reference": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "collectors-notebook.html",
-          "sourceRoute": "/collectors-notebook",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "designs-interiors.html",
-          "sourceRoute": "/designs-interiors",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "ocean-liner-collecting-guide.html",
-          "sourceRoute": "/ocean-liner-collecting-guide",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "titanic-myths-that-persist.html",
-      "route": "/titanic-myths-that-persist",
-      "title": "Titanic Myths That Persist — and Why They Persist",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 9,
-      "baselineInbound": 1,
-      "byCategory": {
-        "article-reference": 6,
-        "collection": 1,
-        "hub": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "authentic-titanic-postcards.html",
-          "sourceRoute": "/authentic-titanic-postcards",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
-          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
-          "sourceCategory": "collection",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "titanic-officers-roles-decisions-and-survival.html",
-          "sourceRoute": "/titanic-officers-roles-decisions-and-survival",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "titanic-what-the-world-knew.html",
-          "sourceRoute": "/titanic-what-the-world-knew",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "why-didnt-titanic-slow-down.html",
-          "sourceRoute": "/why-didnt-titanic-slow-down",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "what-can-ocean-liner-gpt-help-with.html",
-      "route": "/what-can-ocean-liner-gpt-help-with",
-      "title": "What Can Ocean Liner GPT Help With?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "byCategory": {
-        "article-reference": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ocean-liner-gpt.html",
-          "sourceRoute": "/ocean-liner-gpt",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "what-happened-to-titanic-artifacts.html",
-      "route": "/what-happened-to-titanic-artifacts",
-      "title": "What Happened to Titanic Artifacts?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 3,
-      "baselineInbound": 0,
-      "byCategory": {
-        "hub": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "did-anyone-survive-in-the-water-after-titanic-sank.html",
-          "sourceRoute": "/did-anyone-survive-in-the-water-after-titanic-sank",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "what-happened-to-titanics-grand-staircase.html",
-          "sourceRoute": "/what-happened-to-titanics-grand-staircase",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "why-do-people-still-care-about-titanic.html",
-          "sourceRoute": "/why-do-people-still-care-about-titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "what-happened-to-titanics-grand-staircase.html",
-      "route": "/what-happened-to-titanics-grand-staircase",
-      "title": "What Happened to Titanic’s Grand Staircase?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 3,
-      "baselineInbound": 0,
-      "byCategory": {
-        "hub": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "what-was-third-class-like-on-titanic.html",
-          "sourceRoute": "/what-was-third-class-like-on-titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "what-was-it-like-aboard-titanic.html",
-      "route": "/what-was-it-like-aboard-titanic",
-      "title": "What Was It Like Aboard Titanic?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 3,
-      "baselineInbound": 0,
-      "byCategory": {
-        "comparative-history": 1,
-        "hub": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "titanic-vs-olympic.html",
-          "sourceRoute": "/titanic-vs-olympic",
-          "sourceCategory": "comparative-history",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "what-happened-to-titanics-grand-staircase.html",
-          "sourceRoute": "/what-happened-to-titanics-grand-staircase",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "why-was-titanic-called-unsinkable.html",
-          "sourceRoute": "/why-was-titanic-called-unsinkable",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "what-was-third-class-like-on-titanic.html",
-      "route": "/what-was-third-class-like-on-titanic",
-      "title": "What Was Third Class Like on Titanic?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 4,
-      "baselineInbound": 0,
-      "byCategory": {
-        "article-reference": 2,
-        "hub": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "did-all-ocean-liners-carry-immigrants.html",
-          "sourceRoute": "/did-all-ocean-liners-carry-immigrants",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "why-did-ocean-liners-have-classes.html",
-          "sourceRoute": "/why-did-ocean-liners-have-classes",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
       "path": "white-star-line.html",
       "route": "/white-star-line",
       "title": "White Star Line",
@@ -18148,8 +18234,9 @@
       "baselineInbound": 3,
       "byCategory": {
         "collection": 4,
-        "hub": 3,
+        "hub": 2,
         "comparative-history": 1,
+        "article-reference": 1,
         "bridge-page": 3
       },
       "sources": [
@@ -18192,7 +18279,7 @@
         {
           "sourcePath": "how-titanic-changed-maritime-safety.html",
           "sourceRoute": "/how-titanic-changed-maritime-safety",
-          "sourceCategory": "hub",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -18217,88 +18304,6 @@
           "sourcePath": "why-rms-olympic-matters.html",
           "sourceRoute": "/why-rms-olympic-matters",
           "sourceCategory": "bridge-page",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "why-did-cunard-and-white-star-matter.html",
-      "route": "/why-did-cunard-and-white-star-matter",
-      "title": "Why Did Cunard and White Star Matter?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 2,
-      "baselineInbound": 0,
-      "byCategory": {
-        "hub": 1,
-        "article-reference": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "cunard-line.html",
-          "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "white-star-line-history.html",
-          "sourceRoute": "/white-star-line-history",
-          "sourceCategory": "article-reference",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "why-do-people-still-care-about-titanic.html",
-      "route": "/why-do-people-still-care-about-titanic",
-      "title": "Why Do People Still Care About Titanic?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 2,
-      "baselineInbound": 0,
-      "byCategory": {
-        "hub": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "titanic.html",
-          "sourceRoute": "/titanic",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "white-star-line.html",
-          "sourceRoute": "/white-star-line",
-          "sourceCategory": "hub",
-          "sourceBaseline": false
-        }
-      ]
-    },
-    {
-      "path": "why-was-titanic-called-unsinkable.html",
-      "route": "/why-was-titanic-called-unsinkable",
-      "title": "Why Was Titanic Called Unsinkable?",
-      "category": "hub",
-      "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 1,
-      "baselineInbound": 0,
-      "byCategory": {
-        "comparative-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "titanic-vs-olympic.html",
-          "sourceRoute": "/titanic-vs-olympic",
-          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         }
       ]
