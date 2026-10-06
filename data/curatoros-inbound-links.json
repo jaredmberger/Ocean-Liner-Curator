@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T10:04:47.792Z",
+  "generatedAt": "2026-10-06T07:09:31.675Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -13,10 +13,10 @@
   "summary": {
     "shipGuides": 350,
     "editorialOrphans": 45,
-    "oneEditorialInbound": 146,
+    "oneEditorialInbound": 144,
     "threePlusEditorialInbound": 60,
-    "totalEditorialInboundLinks": 781,
-    "averageEditorialInbound": 2.23
+    "totalEditorialInboundLinks": 783,
+    "averageEditorialInbound": 2.24
   },
   "orphanedShips": [
     {
@@ -2588,25 +2588,6 @@
       ]
     },
     {
-      "name": "SS Michelangelo (1965)",
-      "slug": "ss-michelangelo-1965",
-      "url": "/ships/ss-michelangelo-1965",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Moltke",
       "slug": "ss-moltke",
       "url": "/ships/ss-moltke",
@@ -2964,25 +2945,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Raffaello (1965)",
-      "slug": "ss-raffaello-1965",
-      "url": "/ships/ss-raffaello-1965",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -5859,25 +5821,6 @@
       ]
     },
     {
-      "name": "SS Michelangelo (1965)",
-      "slug": "ss-michelangelo-1965",
-      "url": "/ships/ss-michelangelo-1965",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Moltke",
       "slug": "ss-moltke",
       "url": "/ships/ss-moltke",
@@ -6235,25 +6178,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Raffaello (1965)",
-      "slug": "ss-raffaello-1965",
-      "url": "/ships/ss-raffaello-1965",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -8351,6 +8275,31 @@
       ]
     },
     {
+      "name": "SS Michelangelo (1965)",
+      "slug": "ss-michelangelo-1965",
+      "url": "/ships/ss-michelangelo-1965",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Milwaukee",
       "slug": "ss-milwaukee",
       "url": "/ships/ss-milwaukee",
@@ -8694,6 +8643,31 @@
         {
           "sourcePath": "ships/timeline-1900-1960.html",
           "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Raffaello (1965)",
+      "slug": "ss-raffaello-1965",
+      "url": "/ships/ss-raffaello-1965",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
         }
       ]

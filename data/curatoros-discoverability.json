@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T05:56:36.704Z",
+  "generatedAt": "2026-10-06T07:09:35.991Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,20 +17,20 @@
     ]
   },
   "summary": {
-    "trackedHtml": 650,
-    "indexablePages": 634,
-    "priorityPages": 86,
+    "trackedHtml": 651,
+    "indexablePages": 635,
+    "priorityPages": 87,
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 2,
-    "priorityWithOneEditorialInbound": 22,
-    "priorityWithThreePlusEditorialInbound": 51
+    "priorityWithOneEditorialInbound": 20,
+    "priorityWithThreePlusEditorialInbound": 53
   },
   "categories": {
     "article-reference": {
       "pages": 192,
       "searchEligible": 191,
       "sitemapListed": 87,
-      "editorialInbound": 1413,
+      "editorialInbound": 1414,
       "averageEditorialInbound": 7.36
     },
     "bridge-page": {
@@ -44,15 +44,15 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 105,
-      "averageEditorialInbound": 3.09
+      "editorialInbound": 108,
+      "averageEditorialInbound": 3.18
     },
     "comparative-history": {
-      "pages": 30,
-      "searchEligible": 30,
-      "sitemapListed": 26,
-      "editorialInbound": 374,
-      "averageEditorialInbound": 12.47
+      "pages": 31,
+      "searchEligible": 31,
+      "sitemapListed": 27,
+      "editorialInbound": 382,
+      "averageEditorialInbound": 12.32
     },
     "evidence-methodology": {
       "pages": 11,
@@ -72,8 +72,8 @@
       "pages": 353,
       "searchEligible": 353,
       "sitemapListed": 350,
-      "editorialInbound": 781,
-      "averageEditorialInbound": 2.21
+      "editorialInbound": 783,
+      "averageEditorialInbound": 2.22
     }
   },
   "signals": {
@@ -595,29 +595,6 @@
         ]
       },
       {
-        "path": "andrea-doria-colombo-leonardo-design-evolution.html",
-        "route": "/andrea-doria-colombo-leonardo-design-evolution",
-        "title": "Andrea Doria, Cristoforo Colombo & Leonardo da Vinci: Postwar Italian Design Evolution",
-        "category": "comparative-history",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 2,
-        "editorialInbound": 1,
-        "baselineInbound": 1,
-        "byCategory": {
-          "collection": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "collections/italian-ocean-liners.html",
-            "sourceRoute": "/collections/italian-ocean-liners",
-            "sourceCategory": "collection",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
         "path": "collectors-notebook/generic-nautical-motifs-vs-company-design.html",
         "route": "/collectors-notebook/generic-nautical-motifs-vs-company-design",
         "title": "Generic Nautical Motifs vs Company Design",
@@ -636,29 +613,6 @@
             "sourcePath": "collectors-notebook/patterns-and-motifs.html",
             "sourceRoute": "/collectors-notebook/patterns-and-motifs",
             "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "rex-conte-di-savoia-flagship-study.html",
-        "route": "/rex-conte-di-savoia-flagship-study",
-        "title": "Rex & Conte di Savoia: Two Answers to the Italian Flagship Problem",
-        "category": "comparative-history",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 2,
-        "editorialInbound": 1,
-        "baselineInbound": 1,
-        "byCategory": {
-          "collection": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "collections/italian-ocean-liners.html",
-            "sourceRoute": "/collections/italian-ocean-liners",
-            "sourceCategory": "collection",
             "sourceBaseline": false
           }
         ]
@@ -6251,12 +6205,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 428,
-      "editorialInbound": 426,
+      "inboundTotal": 429,
+      "editorialInbound": 427,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
-        "comparative-history": 4,
+        "comparative-history": 5,
         "collection": 32,
         "evidence-methodology": 1,
         "ship-guide": 346
@@ -6566,6 +6520,12 @@
           "sourcePath": "lusitania-sinking-timeline.html",
           "sourceRoute": "/lusitania-sinking-timeline",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
         {
@@ -13287,12 +13247,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
-        "comparative-history": 2,
-        "collection": 1
+        "comparative-history": 3,
+        "collection": 1,
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -13308,9 +13269,27 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "rex-conte-di-savoia-flagship-study.html",
           "sourceRoute": "/rex-conte-di-savoia-flagship-study",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-michelangelo-1965.html",
+          "sourceRoute": "/ships/ss-michelangelo-1965",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-raffaello-1965.html",
+          "sourceRoute": "/ships/ss-raffaello-1965",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -14114,17 +14093,37 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 1,
+        "comparative-history": 1,
+        "ship-guide": 2
       },
       "sources": [
         {
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-michelangelo-1965.html",
+          "sourceRoute": "/ships/ss-michelangelo-1965",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-raffaello-1965.html",
+          "sourceRoute": "/ships/ss-raffaello-1965",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -15217,6 +15216,42 @@
       ]
     },
     {
+      "path": "michelangelo-raffaello-design-evolution.html",
+      "route": "/michelangelo-raffaello-design-evolution",
+      "title": "Michelangelo & Raffaello: Italy’s Last Atlantic Sisters",
+      "category": "comparative-history",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-michelangelo-1965.html",
+          "sourceRoute": "/ships/ss-michelangelo-1965",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-raffaello-1965.html",
+          "sourceRoute": "/ships/ss-raffaello-1965",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "migrant-traffic-vs-tourist-traffic.html",
       "route": "/migrant-traffic-vs-tourist-traffic",
       "title": "Migrant Traffic and Tourist Traffic",
@@ -15958,11 +15993,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 21,
-      "editorialInbound": 19,
+      "inboundTotal": 22,
+      "editorialInbound": 20,
       "baselineInbound": 2,
       "byCategory": {
-        "comparative-history": 15,
+        "comparative-history": 16,
         "ship-guide": 4
       },
       "sources": [
@@ -16005,6 +16040,12 @@
         {
           "sourcePath": "french-vs-british-flagships-between-the-wars.html",
           "sourceRoute": "/french-vs-british-flagships-between-the-wars",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
@@ -16090,17 +16131,24 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 1,
+        "comparative-history": 1
       },
       "sources": [
         {
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
+          "sourceCategory": "comparative-history",
           "sourceBaseline": false
         }
       ]
@@ -26556,13 +26604,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
+        "comparative-history": 1,
         "article-reference": 1
       },
       "sources": [
+        {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ocean-liner-evolution-map",
@@ -27903,13 +27958,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
+        "comparative-history": 1,
         "article-reference": 1
       },
       "sources": [
+        {
+          "sourcePath": "michelangelo-raffaello-design-evolution.html",
+          "sourceRoute": "/michelangelo-raffaello-design-evolution",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ocean-liner-evolution-map",
