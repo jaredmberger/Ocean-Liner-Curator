@@ -50,7 +50,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: publish-archive-gap-intelligence
+  group: publish-archive-gap-intelligence-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
