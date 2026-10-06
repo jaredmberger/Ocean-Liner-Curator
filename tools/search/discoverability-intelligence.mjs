@@ -9,7 +9,9 @@ const root = resolve(here, '../..');
 const origin = 'https://oceanliners.net';
 
 const trackedHtml = execFileSync('git', ['ls-files', '-z', '*.html'], { cwd: root, encoding: 'utf8' })
-  .split('\0').filter(Boolean).filter(path => !path.startsWith('tools/'));
+  .split('\0')
+  .filter(Boolean)
+  .filter(path => !path.startsWith('tools/') && !path.startsWith('partials/'));
 
 const baselineSurfaces = new Set([
   'index.html',
@@ -40,13 +42,32 @@ function internalRoute(raw, baseRoute = '/') {
   }
 }
 
+const evidenceMethodologyPages = new Set([
+  'evidence-methodology.html',
+  'gross-tonnage-is-not-weight.html',
+  'how-to-distinguish-ocean-liners-with-the-same-name.html',
+  'how-to-identify-an-ocean-liner-refit-from-a-photograph.html',
+  'how-to-track-a-renamed-or-transferred-ocean-liner.html',
+  'how-to-weigh-conflicting-ocean-liner-sources.html',
+  'trial-speed-vs-service-speed-on-ocean-liners.html',
+  'why-maiden-voyage-dates-conflict.html',
+  'why-ocean-liner-casualty-totals-differ.html',
+  'why-ocean-liner-passenger-capacities-change.html',
+  'why-ocean-liner-specifications-disagree.html'
+]);
+
 function pageCategory(path, $, title) {
   const combined = `${title} ${$('body').text().slice(0, 8000)}`;
   if (path.startsWith('ships/') && /ship guide/i.test(combined) && path !== 'ships/ships.html') return 'ship-guide';
   if (path.startsWith('collections/')) return 'collection';
-  if (path === 'comparative-liner-history.html' || $('a[href="/comparative-liner-history"]').length || /Comparative History/i.test(combined)) return 'comparative-history';
-  if (path === 'evidence-methodology.html' || $('a[href="/evidence-methodology"]').length || /Evidence & Methodology/i.test(combined)) return 'evidence-methodology';
-  if (/^why-.*-matters\.html$/i.test(path) || /^Why .* Matters/i.test(title)) return 'bridge-page';
+  if (/^why-.*(?:-still)?-matters\.html$/i.test(path) || /^Why .* Matters/i.test(title) || /^Why .* Still Matters/i.test(title)) return 'bridge-page';
+  if (evidenceMethodologyPages.has(path)) return 'evidence-methodology';
+  if (
+    path === 'comparative-liner-history.html' ||
+    /-vs-/.test(path) ||
+    /design-evolution\.html$/i.test(path) ||
+    /flagship-study\.html$/i.test(path)
+  ) return 'comparative-history';
   if (/hub/i.test(title) || /(?:titanic|white-star-line|cunard).*hub/i.test(combined)) return 'hub';
   return 'article-reference';
 }
