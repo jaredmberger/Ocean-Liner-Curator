@@ -7,10 +7,10 @@
     "archiveGenerated": "2026-10-07"
   },
   "counts": {
-    "archive": 356,
-    "randomEligible": 355,
-    "sitemapShips": 356,
-    "deviceDetails": 356,
+    "archive": 357,
+    "randomEligible": 356,
+    "sitemapShips": 357,
+    "deviceDetails": 357,
     "errors": 0,
     "warnings": 0
   },
@@ -20,7 +20,7 @@
       "exists": true,
       "status": "ok",
       "generatedAt": "2026-10-07",
-      "count": 356
+      "count": 357
     },
     "builders": {
       "file": "data/builders.json",
@@ -41,7 +41,7 @@
       "counts": {
         "errors": 0,
         "warnings": 0,
-        "archiveCards": 356,
+        "archiveCards": 357,
         "inlineLinkErrors": 0,
         "imageErrors": 0,
         "structuralWarnings": 0,
@@ -90,15 +90,15 @@
       "name": "archive-minimum",
       "ok": true,
       "severity": "error",
-      "count": 356,
+      "count": 357,
       "minimum": 300
     },
     {
       "name": "archive-declared-count",
       "ok": true,
       "severity": "error",
-      "declared": 356,
-      "actual": 356
+      "declared": 357,
+      "actual": 357
     },
     {
       "name": "ship-sitemap-reconciliation",
@@ -120,21 +120,21 @@
       "name": "random-ship-reconciliation",
       "ok": true,
       "severity": "error",
-      "expectedCount": 355,
+      "expectedCount": 356,
       "intentionalExclusions": [
         "tall-ships-guide"
       ],
       "files": [
         {
           "file": "random-ship.js",
-          "count": 355,
+          "count": 356,
           "missing": [],
           "extra": [],
           "match": true
         },
         {
           "file": "assets/random-ship.js",
-          "count": 355,
+          "count": 356,
           "missing": [],
           "extra": [],
           "match": true
@@ -165,7 +165,7 @@
         "counts": {
           "errors": 0,
           "warnings": 0,
-          "archiveCards": 356,
+          "archiveCards": 357,
           "inlineLinkErrors": 0,
           "imageErrors": 0,
           "structuralWarnings": 0,

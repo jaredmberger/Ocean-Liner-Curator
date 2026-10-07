@@ -113,6 +113,7 @@
 "/ships/rms-franconia-1910.html",
 "/ships/rms-franconia.html",
 "/ships/ss-galileo-galilei.html",
+"/ships/ss-guglielmo-marconi.html",
 "/ships/ss-george-washington.html",
 "/ships/ms-georges-philippar.html",
 "/ships/mv-georgic.html",
