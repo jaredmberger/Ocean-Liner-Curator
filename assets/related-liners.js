@@ -546,6 +546,19 @@
       "Manhattan-class sisters"
     ),
 
+    late_liner_transition: cluster(
+      "Late Liner Era.",
+      "Postwar passenger ships that entered service as the jet age was rapidly changing long-distance sea travel, forcing liner operators toward cruising and mixed employment.",
+      [
+        { href: "/ships/ss-us", label: "SS <em>United States</em>", tail: "United States Lines · 1952" },
+        { href: "/ships/ss-france", label: "SS <em>France</em>", tail: "French Line · 1962" },
+        { href: "/ships/ss-shalom", label: "SS <em>Shalom</em>", tail: "ZIM Lines · 1964" },
+        { href: "/ships/ss-michelangelo-1965", label: "SS <em>Michelangelo</em>", tail: "Italian Line · 1965" },
+        { href: "/ships/ss-raffaello-1965", label: "SS <em>Raffaello</em>", tail: "Italian Line · 1965" }
+      ],
+      "Late liner-era passenger ships"
+    ),
+
     michelangelo_raffaello: cluster(
       "Related Liners.",
       "Italian Line’s late superliner duo—frequently discussed together in design, technology, and decline-era context.",
@@ -1579,7 +1592,8 @@
     "ss-st-louis": ["american_line_express"],
     "ss-new-york": ["american_line_express"],
     "ss-city-of-paris": ["american_line_express"],
-    "ss-city-of-new-york-1888": ["american_line_express"]
+    "ss-city-of-new-york-1888": ["american_line_express"],
+    "ss-shalom": ["late_liner_transition"]
 
   };
 
