@@ -237,6 +237,7 @@
 "/ships/rms-saxonia.html",
 "/ships/ss-scharnhorst.html",
 "/ships/rms-scythia.html",
+"/ships/ss-shalom.html",
 "/ships/ss-sirius.html",
 "/ships/ss-statendam-1929.html",
 "/ships/stirling-castle.html",
