@@ -186,6 +186,7 @@
 "/ships/oceania.html",
 "/ships/ss-oceanic-1871.html",
 "/ships/rms-oceanic-1899.html",
+"/ships/tss-olympia.html",
 "/ships/rms-olympic.html",
 "/ships/ms-oranje.html",
 "/ships/ss-orama.html",
