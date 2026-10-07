@@ -329,6 +329,7 @@
 "/ships/ss-graf-waldersee.html",
 "/ships/ss-patricia.html",
 "/ships/ss-briton.html",
+"/ships/ss-santa-maria.html",
 "/ships/ss-saxon.html",
 "/ships/rms-walmer-castle.html",
 "/ships/ss-armadale-castle.html",
