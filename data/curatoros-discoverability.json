@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:41:57.588Z",
+  "generatedAt": "2026-10-07T10:33:29.532Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 653,
-    "indexablePages": 637,
+    "trackedHtml": 663,
+    "indexablePages": 647,
     "priorityPages": 89,
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 2,
@@ -30,8 +30,8 @@
       "pages": 192,
       "searchEligible": 191,
       "sitemapListed": 87,
-      "editorialInbound": 1417,
-      "averageEditorialInbound": 7.38
+      "editorialInbound": 1427,
+      "averageEditorialInbound": 7.43
     },
     "bridge-page": {
       "pages": 11,
@@ -69,11 +69,11 @@
       "averageEditorialInbound": 30.5
     },
     "ship-guide": {
-      "pages": 353,
-      "searchEligible": 353,
-      "sitemapListed": 350,
+      "pages": 363,
+      "searchEligible": 363,
+      "sitemapListed": 360,
       "editorialInbound": 793,
-      "averageEditorialInbound": 2.25
+      "averageEditorialInbound": 2.18
     }
   },
   "signals": {
@@ -6189,15 +6189,15 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 431,
-      "editorialInbound": 429,
+      "inboundTotal": 441,
+      "editorialInbound": 439,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
         "comparative-history": 7,
         "collection": 32,
         "evidence-methodology": 1,
-        "ship-guide": 346
+        "ship-guide": 356
       },
       "sources": [
         {
@@ -6669,6 +6669,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ms-vera-cruz.html",
+          "sourceRoute": "/ships/ms-vera-cruz",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ms-vulcania.html",
           "sourceRoute": "/ships/ms-vulcania",
           "sourceCategory": "ship-guide",
@@ -6903,6 +6909,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/rms-edinburgh-castle.html",
+          "sourceRoute": "/ships/rms-edinburgh-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-empress-of-asia.html",
           "sourceRoute": "/ships/rms-empress-of-asia",
           "sourceCategory": "ship-guide",
@@ -7055,6 +7067,12 @@
         {
           "sourcePath": "ships/rms-orontes.html",
           "sourceRoute": "/ships/rms-orontes",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-pendennis-castle.html",
+          "sourceRoute": "/ships/rms-pendennis-castle",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -7767,6 +7785,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-galileo-galilei.html",
+          "sourceRoute": "/ships/ss-galileo-galilei",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-george-washington-ngl.html",
           "sourceRoute": "/ships/ss-george-washington-ngl",
           "sourceCategory": "ship-guide",
@@ -7829,6 +7853,12 @@
         {
           "sourcePath": "ships/ss-grosser-kurfurst.html",
           "sourceRoute": "/ships/ss-grosser-kurfurst",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-guglielmo-marconi.html",
+          "sourceRoute": "/ships/ss-guglielmo-marconi",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -8421,6 +8451,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-queen-frederica.html",
+          "sourceRoute": "/ships/ss-queen-frederica",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-queen-of-bermuda.html",
           "sourceRoute": "/ships/ss-queen-of-bermuda",
           "sourceCategory": "ship-guide",
@@ -8511,6 +8547,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-santa-maria.html",
+          "sourceRoute": "/ships/ss-santa-maria",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-saxon.html",
           "sourceRoute": "/ships/ss-saxon",
           "sourceCategory": "ship-guide",
@@ -8519,6 +8561,12 @@
         {
           "sourcePath": "ships/ss-scharnhorst.html",
           "sourceRoute": "/ships/ss-scharnhorst",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-shalom.html",
+          "sourceRoute": "/ships/ss-shalom",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -8682,6 +8730,18 @@
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
           "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/tss-olympia.html",
+          "sourceRoute": "/ships/tss-olympia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/tss-patris.html",
+          "sourceRoute": "/ships/tss-patris",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -18955,6 +19015,20 @@
       ]
     },
     {
+      "path": "ships/ms-vera-cruz.html",
+      "route": "/ships/ms-vera-cruz",
+      "title": "MS Vera Cruz (1952)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "path": "ships/ms-vulcania.html",
       "route": "/ships/ms-vulcania",
       "title": "MS Vulcania",
@@ -20366,6 +20440,20 @@
       ]
     },
     {
+      "path": "ships/rms-edinburgh-castle.html",
+      "route": "/ships/rms-edinburgh-castle",
+      "title": "RMS Edinburgh Castle (1948)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "path": "ships/rms-empress-of-asia.html",
       "route": "/ships/rms-empress-of-asia",
       "title": "RMS Empress of Asia (1913)",
@@ -21679,6 +21767,20 @@
           "sourceBaseline": false
         }
       ]
+    },
+    {
+      "path": "ships/rms-pendennis-castle.html",
+      "route": "/ships/rms-pendennis-castle",
+      "title": "RMS Pendennis Castle (1958)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
     },
     {
       "path": "ships/rms-persia-1855.html",
@@ -25258,6 +25360,20 @@
       ]
     },
     {
+      "path": "ships/ss-galileo-galilei.html",
+      "route": "/ships/ss-galileo-galilei",
+      "title": "SS Galileo Galilei (1963)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "path": "ships/ss-george-washington-ngl.html",
       "route": "/ships/ss-george-washington-ngl",
       "title": "SS George Washington",
@@ -25517,6 +25633,20 @@
           "sourceBaseline": false
         }
       ]
+    },
+    {
+      "path": "ships/ss-guglielmo-marconi.html",
+      "route": "/ships/ss-guglielmo-marconi",
+      "title": "SS Guglielmo Marconi (1963)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
     },
     {
       "path": "ships/ss-hamburg-1925.html",
@@ -28165,6 +28295,20 @@
       ]
     },
     {
+      "path": "ships/ss-queen-frederica.html",
+      "route": "/ships/ss-queen-frederica",
+      "title": "SS Queen Frederica (1955)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "path": "ships/ss-queen-of-bermuda.html",
       "route": "/ships/ss-queen-of-bermuda",
       "title": "SS Queen of Bermuda",
@@ -28564,6 +28708,20 @@
       ]
     },
     {
+      "path": "ships/ss-santa-maria.html",
+      "route": "/ships/ss-santa-maria",
+      "title": "SS Santa Maria (1953)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "path": "ships/ss-saxon.html",
       "route": "/ships/ss-saxon",
       "title": "SS Saxon",
@@ -28608,6 +28766,20 @@
           "sourceBaseline": false
         }
       ]
+    },
+    {
+      "path": "ships/ss-shalom.html",
+      "route": "/ships/ss-shalom",
+      "title": "SS Shalom (1964)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
     },
     {
       "path": "ships/ss-sirius.html",
@@ -29342,6 +29514,34 @@
       "path": "ships/ss-hibernia.html",
       "route": "/ships/ss-hibernia",
       "title": "TSS Hibernia (1899)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "path": "ships/tss-olympia.html",
+      "route": "/ships/tss-olympia",
+      "title": "TSS Olympia (1953)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "path": "ships/tss-patris.html",
+      "route": "/ships/tss-patris",
+      "title": "TSS Patris (1959)",
       "category": "ship-guide",
       "searchEligible": true,
       "sitemapListed": true,

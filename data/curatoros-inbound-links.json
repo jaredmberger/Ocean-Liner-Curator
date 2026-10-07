@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T07:41:53.318Z",
+  "generatedAt": "2026-10-07T10:33:24.996Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -11,12 +11,12 @@
     "caution": "A low inbound count is a discoverability signal, not evidence that additional links should be invented. New links should reflect a documented historical or thematic relationship."
   },
   "summary": {
-    "shipGuides": 350,
-    "editorialOrphans": 44,
+    "shipGuides": 360,
+    "editorialOrphans": 54,
     "oneEditorialInbound": 145,
     "threePlusEditorialInbound": 62,
     "totalEditorialInboundLinks": 793,
-    "averageEditorialInbound": 2.27
+    "averageEditorialInbound": 2.2
   },
   "orphanedShips": [
     {
@@ -75,6 +75,17 @@
       "sources": []
     },
     {
+      "name": "MS Vera Cruz (1952)",
+      "slug": "ms-vera-cruz",
+      "url": "/ships/ms-vera-cruz",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "MS Vulcania",
       "slug": "ms-vulcania",
       "url": "/ships/ms-vulcania",
@@ -122,6 +133,28 @@
       "name": "QSMV Dominion Monarch",
       "slug": "qsmv-dominion-monarch",
       "url": "/ships/qsmv-dominion-monarch",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "RMS Edinburgh Castle (1948)",
+      "slug": "rms-edinburgh-castle",
+      "url": "/ships/rms-edinburgh-castle",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "RMS Pendennis Castle (1958)",
+      "slug": "rms-pendennis-castle",
+      "url": "/ships/rms-pendennis-castle",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -284,6 +317,17 @@
       "sources": []
     },
     {
+      "name": "SS Galileo Galilei (1963)",
+      "slug": "ss-galileo-galilei",
+      "url": "/ships/ss-galileo-galilei",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "SS George Washington",
       "slug": "ss-george-washington",
       "url": "/ships/ss-george-washington",
@@ -298,6 +342,17 @@
       "name": "SS Great Britain",
       "slug": "ss-great-britain-1843",
       "url": "/ships/ss-great-britain-1843",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "SS Guglielmo Marconi (1963)",
+      "slug": "ss-guglielmo-marconi",
+      "url": "/ships/ss-guglielmo-marconi",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -471,9 +526,42 @@
       "sources": []
     },
     {
+      "name": "SS Queen Frederica (1955)",
+      "slug": "ss-queen-frederica",
+      "url": "/ships/ss-queen-frederica",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "SS Resolute",
       "slug": "ss-resolute",
       "url": "/ships/ss-resolute",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "SS Santa Maria (1953)",
+      "slug": "ss-santa-maria",
+      "url": "/ships/ss-santa-maria",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "SS Shalom (1964)",
+      "slug": "ss-shalom",
+      "url": "/ships/ss-shalom",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -496,6 +584,28 @@
       "name": "TSS Hibernia (1899)",
       "slug": "ss-hibernia",
       "url": "/ships/ss-hibernia",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "TSS Olympia (1953)",
+      "slug": "tss-olympia",
+      "url": "/ships/tss-olympia",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "TSS Patris (1959)",
+      "slug": "tss-patris",
+      "url": "/ships/tss-patris",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3318,6 +3428,17 @@
       "sources": []
     },
     {
+      "name": "MS Vera Cruz (1952)",
+      "slug": "ms-vera-cruz",
+      "url": "/ships/ms-vera-cruz",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "MS Vulcania",
       "slug": "ms-vulcania",
       "url": "/ships/ms-vulcania",
@@ -3365,6 +3486,28 @@
       "name": "QSMV Dominion Monarch",
       "slug": "qsmv-dominion-monarch",
       "url": "/ships/qsmv-dominion-monarch",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "RMS Edinburgh Castle (1948)",
+      "slug": "rms-edinburgh-castle",
+      "url": "/ships/rms-edinburgh-castle",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "RMS Pendennis Castle (1958)",
+      "slug": "rms-pendennis-castle",
+      "url": "/ships/rms-pendennis-castle",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3527,6 +3670,17 @@
       "sources": []
     },
     {
+      "name": "SS Galileo Galilei (1963)",
+      "slug": "ss-galileo-galilei",
+      "url": "/ships/ss-galileo-galilei",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "SS George Washington",
       "slug": "ss-george-washington",
       "url": "/ships/ss-george-washington",
@@ -3541,6 +3695,17 @@
       "name": "SS Great Britain",
       "slug": "ss-great-britain-1843",
       "url": "/ships/ss-great-britain-1843",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "SS Guglielmo Marconi (1963)",
+      "slug": "ss-guglielmo-marconi",
+      "url": "/ships/ss-guglielmo-marconi",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3714,9 +3879,42 @@
       "sources": []
     },
     {
+      "name": "SS Queen Frederica (1955)",
+      "slug": "ss-queen-frederica",
+      "url": "/ships/ss-queen-frederica",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "SS Resolute",
       "slug": "ss-resolute",
       "url": "/ships/ss-resolute",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "SS Santa Maria (1953)",
+      "slug": "ss-santa-maria",
+      "url": "/ships/ss-santa-maria",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "SS Shalom (1964)",
+      "slug": "ss-shalom",
+      "url": "/ships/ss-shalom",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3739,6 +3937,28 @@
       "name": "TSS Hibernia (1899)",
       "slug": "ss-hibernia",
       "url": "/ships/ss-hibernia",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "TSS Olympia (1953)",
+      "slug": "tss-olympia",
+      "url": "/ships/tss-olympia",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "TSS Patris (1959)",
+      "slug": "tss-patris",
+      "url": "/ships/tss-patris",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-05T10:04:43.314Z",
+  "generatedAt": "2026-10-07T10:33:20.393Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 362,
-    "shipGuides": 350,
-    "canonicalBuilders": 86,
-    "guidesWithBuilder": 350,
+    "trackedShipHtmlFiles": 372,
+    "shipGuides": 360,
+    "canonicalBuilders": 87,
+    "guidesWithBuilder": 360,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -33,7 +33,7 @@
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 81,
+      "shipCount": 84,
       "firstLaunchYear": 1870,
       "lastLaunchYear": 1960,
       "locations": [
@@ -221,6 +221,29 @@
       ]
     },
     {
+      "id": "alexander-stephen-and-sons",
+      "name": "Alexander Stephen & Sons",
+      "shipCount": 7,
+      "firstLaunchYear": 1881,
+      "lastLaunchYear": 1953,
+      "locations": [
+        "Glasgow",
+        "Glasgow, Scotland",
+        "Govan",
+        "Linthouse, Glasgow",
+        "Linthouse, Glasgow, Scotland"
+      ],
+      "operators": [
+        "Anchor Line (Glasgow)",
+        "Atlantic Transport Line",
+        "Greek Line",
+        "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
+        "P&O Steam Navigation Company",
+        "Peninsular & Oriental Steam Navigation Company (P&O)",
+        "Swedish American Line"
+      ]
+    },
+    {
       "id": "j-and-g-thomson",
       "name": "J. & G. Thomson",
       "shipCount": 7,
@@ -258,27 +281,6 @@
         "Anchor Line (Henderson Bros / Anchor Line (1935) Ltd often cited)",
         "Canadian Pacific Steamships",
         "Lloyd Sabaudo"
-      ]
-    },
-    {
-      "id": "alexander-stephen-and-sons",
-      "name": "Alexander Stephen & Sons",
-      "shipCount": 6,
-      "firstLaunchYear": 1881,
-      "lastLaunchYear": 1928,
-      "locations": [
-        "Glasgow",
-        "Govan",
-        "Linthouse, Glasgow",
-        "Linthouse, Glasgow, Scotland"
-      ],
-      "operators": [
-        "Anchor Line (Glasgow)",
-        "Atlantic Transport Line",
-        "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
-        "P&O Steam Navigation Company",
-        "Peninsular & Oriental Steam Navigation Company (P&O)",
-        "Swedish American Line"
       ]
     }
   ],
@@ -351,7 +353,7 @@
         "Harland & Wolff, Queen's Island, Belfast · yard no. 352",
         "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
       ],
-      "shipCount": 81
+      "shipCount": 84
     },
     {
       "id": "john-brown-and-company",
@@ -545,6 +547,22 @@
       "shipCount": 8
     },
     {
+      "id": "alexander-stephen-and-sons",
+      "name": "Alexander Stephen & Sons",
+      "names": [
+        "Alexander Stephen & Sons"
+      ],
+      "rawValues": [
+        "Alexander Stephen & Sons (Glasgow)",
+        "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)",
+        "Alexander Stephen & Sons, Glasgow, Scotland",
+        "Alexander Stephen & Sons, Govan · yard no. 504",
+        "Alexander Stephen & Sons, Linthouse, Glasgow",
+        "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
+      ],
+      "shipCount": 7
+    },
+    {
       "id": "j-and-g-thomson",
       "name": "J. & G. Thomson",
       "names": [
@@ -581,21 +599,6 @@
       "shipCount": 7
     },
     {
-      "id": "alexander-stephen-and-sons",
-      "name": "Alexander Stephen & Sons",
-      "names": [
-        "Alexander Stephen & Sons"
-      ],
-      "rawValues": [
-        "Alexander Stephen & Sons (Glasgow)",
-        "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)",
-        "Alexander Stephen & Sons, Govan · yard no. 504",
-        "Alexander Stephen & Sons, Linthouse, Glasgow",
-        "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
-      ],
-      "shipCount": 6
-    },
-    {
       "id": "new-york-shipbuilding-company",
       "name": "New York Shipbuilding Company",
       "names": [
@@ -621,6 +624,21 @@
         "AG Weser, Bremen",
         "AG Weser, Bremen · yard no. 193",
         "AG Weser, Bremen, Germany"
+      ],
+      "shipCount": 5
+    },
+    {
+      "id": "cantieri-riuniti-dell-adriatico",
+      "name": "Cantieri Riuniti dell'Adriatico",
+      "names": [
+        "Cantieri Riuniti dell'Adriatico",
+        "Cantieri Riuniti dell’Adriatico"
+      ],
+      "rawValues": [
+        "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1126",
+        "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1127",
+        "Cantieri Riuniti dell'Adriatico, Monfalcone, Italy",
+        "Cantieri Riuniti dell’Adriatico, Monfalcone"
       ],
       "shipCount": 5
     },
@@ -670,6 +688,21 @@
         "Cammell Laird (Birkenhead, England)",
         "Cammell Laird, Birkenhead · yard no. 1287",
         "Cammell Laird, Birkenhead · yard no. 787"
+      ],
+      "shipCount": 4
+    },
+    {
+      "id": "chantiers-de-l-atlantique",
+      "name": "Chantiers de l’Atlantique",
+      "names": [
+        "Chantiers de l'Atlantique",
+        "Chantiers de l’Atlantique"
+      ],
+      "rawValues": [
+        "Chantiers de l'Atlantique, Saint-Nazaire",
+        "Chantiers de l'Atlantique, Saint-Nazaire, France",
+        "Chantiers de l’Atlantique, Saint-Nazaire · yard G19",
+        "Chantiers de l’Atlantique, Saint-Nazaire, France"
       ],
       "shipCount": 4
     },
@@ -739,34 +772,6 @@
       "shipCount": 3
     },
     {
-      "id": "cantieri-riuniti-dell-adriatico",
-      "name": "Cantieri Riuniti dell'Adriatico",
-      "names": [
-        "Cantieri Riuniti dell'Adriatico",
-        "Cantieri Riuniti dell’Adriatico"
-      ],
-      "rawValues": [
-        "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1126",
-        "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1127",
-        "Cantieri Riuniti dell’Adriatico, Monfalcone"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "chantiers-de-l-atlantique",
-      "name": "Chantiers de l’Atlantique",
-      "names": [
-        "Chantiers de l'Atlantique",
-        "Chantiers de l’Atlantique"
-      ],
-      "rawValues": [
-        "Chantiers de l'Atlantique, Saint-Nazaire",
-        "Chantiers de l’Atlantique, Saint-Nazaire · yard G19",
-        "Chantiers de l’Atlantique, Saint-Nazaire, France"
-      ],
-      "shipCount": 3
-    },
-    {
       "id": "r-and-w-hawthorn-leslie-and-co",
       "name": "R. & W. Hawthorn, Leslie & Co.",
       "names": [
@@ -803,6 +808,17 @@
         "Robert Steele & Co., Greenock",
         "Robert Steele & Co., Greenock, Scotland",
         "Robert Steele & Co., Greenock, Scotland · yard no. 114A"
+      ],
+      "shipCount": 3
+    },
+    {
+      "id": "william-cramp-and-sons",
+      "name": "William Cramp & Sons",
+      "names": [
+        "William Cramp & Sons"
+      ],
+      "rawValues": [
+        "William Cramp & Sons, Philadelphia"
       ],
       "shipCount": 3
     },
@@ -924,6 +940,17 @@
       "shipCount": 2
     },
     {
+      "id": "societe-anonyme-john-cockerill",
+      "name": "Société Anonyme John Cockerill",
+      "names": [
+        "Société Anonyme John Cockerill"
+      ],
+      "rawValues": [
+        "Société Anonyme John Cockerill, Hoboken, Belgium"
+      ],
+      "shipCount": 2
+    },
+    {
       "id": "swan",
       "name": "Swan",
       "names": [
@@ -945,17 +972,6 @@
       "rawValues": [
         "Vickers Ltd, Barrow-in-Furness",
         "Vickers Ltd., Barrow-in-Furness · yard no. 498"
-      ],
-      "shipCount": 2
-    },
-    {
-      "id": "william-cramp-and-sons",
-      "name": "William Cramp & Sons",
-      "names": [
-        "William Cramp & Sons"
-      ],
-      "rawValues": [
-        "William Cramp & Sons, Philadelphia"
       ],
       "shipCount": 2
     },
@@ -1664,6 +1680,20 @@
       ]
     },
     {
+      "name": "MS Vera Cruz (1952)",
+      "path": "ships/ms-vera-cruz.html",
+      "url": "/ships/ms-vera-cruz",
+      "launchYear": "1951",
+      "builderRaw": "Société Anonyme John Cockerill, Hoboken, Belgium",
+      "builders": [
+        {
+          "id": "societe-anonyme-john-cockerill",
+          "name": "Société Anonyme John Cockerill",
+          "raw": "Société Anonyme John Cockerill, Hoboken, Belgium"
+        }
+      ]
+    },
+    {
       "name": "MS Vulcania",
       "path": "ships/ms-vulcania.html",
       "url": "/ships/ms-vulcania",
@@ -2210,6 +2240,20 @@
       ]
     },
     {
+      "name": "RMS Edinburgh Castle (1948)",
+      "path": "ships/rms-edinburgh-castle.html",
+      "url": "/ships/rms-edinburgh-castle",
+      "launchYear": "1947",
+      "builderRaw": "Harland & Wolff, Belfast",
+      "builders": [
+        {
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast"
+        }
+      ]
+    },
+    {
       "name": "RMS Empress of Asia (1913)",
       "path": "ships/rms-empress-of-asia.html",
       "url": "/ships/rms-empress-of-asia",
@@ -2626,6 +2670,20 @@
           "id": "vickers-armstrongs",
           "name": "Vickers-Armstrongs",
           "raw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 1021"
+        }
+      ]
+    },
+    {
+      "name": "RMS Pendennis Castle (1958)",
+      "path": "ships/rms-pendennis-castle.html",
+      "url": "/ships/rms-pendennis-castle",
+      "launchYear": "1957",
+      "builderRaw": "Harland & Wolff, Belfast",
+      "builders": [
+        {
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast"
         }
       ]
     },
@@ -4287,6 +4345,20 @@
       ]
     },
     {
+      "name": "SS Galileo Galilei (1963)",
+      "path": "ships/ss-galileo-galilei.html",
+      "url": "/ships/ss-galileo-galilei",
+      "launchYear": "1961",
+      "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone, Italy",
+      "builders": [
+        {
+          "id": "cantieri-riuniti-dell-adriatico",
+          "name": "Cantieri Riuniti dell'Adriatico",
+          "raw": "Cantieri Riuniti dell'Adriatico, Monfalcone, Italy"
+        }
+      ]
+    },
+    {
       "name": "SS George Washington",
       "path": "ships/ss-george-washington-ngl.html",
       "url": "/ships/ss-george-washington-ngl",
@@ -4437,6 +4509,20 @@
           "id": "f-schichau",
           "name": "F. Schichau",
           "raw": "F. Schichau, Danzig"
+        }
+      ]
+    },
+    {
+      "name": "SS Guglielmo Marconi (1963)",
+      "path": "ships/ss-guglielmo-marconi.html",
+      "url": "/ships/ss-guglielmo-marconi",
+      "launchYear": "1961",
+      "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone, Italy",
+      "builders": [
+        {
+          "id": "cantieri-riuniti-dell-adriatico",
+          "name": "Cantieri Riuniti dell'Adriatico",
+          "raw": "Cantieri Riuniti dell'Adriatico, Monfalcone, Italy"
         }
       ]
     },
@@ -5813,6 +5899,20 @@
       ]
     },
     {
+      "name": "SS Queen Frederica (1955)",
+      "path": "ships/ss-queen-frederica.html",
+      "url": "/ships/ss-queen-frederica",
+      "launchYear": "1926",
+      "builderRaw": "William Cramp & Sons, Philadelphia",
+      "builders": [
+        {
+          "id": "william-cramp-and-sons",
+          "name": "William Cramp & Sons",
+          "raw": "William Cramp & Sons, Philadelphia"
+        }
+      ]
+    },
+    {
       "name": "SS Queen of Bermuda",
       "path": "ships/ss-queen-of-bermuda.html",
       "url": "/ships/ss-queen-of-bermuda",
@@ -6023,6 +6123,20 @@
       ]
     },
     {
+      "name": "SS Santa Maria (1953)",
+      "path": "ships/ss-santa-maria.html",
+      "url": "/ships/ss-santa-maria",
+      "launchYear": "1952",
+      "builderRaw": "Société Anonyme John Cockerill, Hoboken, Belgium",
+      "builders": [
+        {
+          "id": "societe-anonyme-john-cockerill",
+          "name": "Société Anonyme John Cockerill",
+          "raw": "Société Anonyme John Cockerill, Hoboken, Belgium"
+        }
+      ]
+    },
+    {
       "name": "SS Saxon",
       "path": "ships/ss-saxon.html",
       "url": "/ships/ss-saxon",
@@ -6047,6 +6161,20 @@
           "id": "deutsche-schiff-und-maschinenbau-ag",
           "name": "Deutsche Schiff- und Maschinenbau AG",
           "raw": "Deutsche Schiff- und Maschinenbau AG, Werk AG Weser, Bremen · yard no. 891"
+        }
+      ]
+    },
+    {
+      "name": "SS Shalom (1964)",
+      "path": "ships/ss-shalom.html",
+      "url": "/ships/ss-shalom",
+      "launchYear": "1962",
+      "builderRaw": "Chantiers de l'Atlantique, Saint-Nazaire, France",
+      "builders": [
+        {
+          "id": "chantiers-de-l-atlantique",
+          "name": "Chantiers de l'Atlantique",
+          "raw": "Chantiers de l'Atlantique, Saint-Nazaire, France"
         }
       ]
     },
@@ -6369,6 +6497,34 @@
           "id": "mitsubishi-shipbuilding-and-engineering-co",
           "name": "Mitsubishi Shipbuilding & Engineering Co.",
           "raw": "Mitsubishi Shipbuilding & Engineering Co., Nagasaki · yard no. 451"
+        }
+      ]
+    },
+    {
+      "name": "TSS Olympia (1953)",
+      "path": "ships/tss-olympia.html",
+      "url": "/ships/tss-olympia",
+      "launchYear": "1953",
+      "builderRaw": "Alexander Stephen & Sons, Glasgow, Scotland",
+      "builders": [
+        {
+          "id": "alexander-stephen-and-sons",
+          "name": "Alexander Stephen & Sons",
+          "raw": "Alexander Stephen & Sons, Glasgow, Scotland"
+        }
+      ]
+    },
+    {
+      "name": "TSS Patris (1959)",
+      "path": "ships/tss-patris.html",
+      "url": "/ships/tss-patris",
+      "launchYear": "1949",
+      "builderRaw": "Harland & Wolff, Belfast",
+      "builders": [
+        {
+          "id": "harland-and-wolff",
+          "name": "Harland & Wolff",
+          "raw": "Harland & Wolff, Belfast"
         }
       ]
     }

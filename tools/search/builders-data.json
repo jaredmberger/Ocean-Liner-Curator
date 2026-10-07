@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-05T10:04:43.314Z",
+  "generatedAt": "2026-10-07T10:33:20.393Z",
   "summary": {
-    "shipGuides": 350,
-    "canonicalBuilders": 86,
-    "guidesWithBuilder": 350
+    "shipGuides": 360,
+    "canonicalBuilders": 87,
+    "guidesWithBuilder": 360
   },
   "builders": [
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 81,
+      "shipCount": 84,
       "locations": [
         "Belfast",
         "Belfast, Ireland",
@@ -575,11 +575,32 @@
           "builderRaw": "Harland & Wolff, Belfast · yard no. 1005"
         },
         {
+          "name": "RMS Edinburgh Castle (1948)",
+          "url": "/ships/rms-edinburgh-castle",
+          "launchYear": "1947",
+          "operator": "Union-Castle Mail Steam Ship Company",
+          "builderRaw": "Harland & Wolff, Belfast"
+        },
+        {
+          "name": "TSS Patris (1959)",
+          "url": "/ships/tss-patris",
+          "launchYear": "1949",
+          "operator": "Union-Castle Line",
+          "builderRaw": "Harland & Wolff, Belfast"
+        },
+        {
           "name": "SS Iberia (1954)",
           "url": "/ships/ss-iberia",
           "launchYear": "1954",
           "operator": "Peninsular & Oriental Steam Navigation Company (P&O)",
           "builderRaw": "Harland & Wolff, Belfast · yard no. 1476"
+        },
+        {
+          "name": "RMS Pendennis Castle (1958)",
+          "url": "/ships/rms-pendennis-castle",
+          "launchYear": "1957",
+          "operator": "Union-Castle Mail Steam Ship Company",
+          "builderRaw": "Harland & Wolff, Belfast"
         },
         {
           "name": "SS Canberra",
@@ -1542,6 +1563,71 @@
       ]
     },
     {
+      "id": "alexander-stephen-and-sons",
+      "name": "Alexander Stephen & Sons",
+      "shipCount": 7,
+      "locations": [
+        "Glasgow",
+        "Glasgow, Scotland",
+        "Govan",
+        "Linthouse, Glasgow",
+        "Linthouse, Glasgow, Scotland"
+      ],
+      "firstLaunchYear": 1881,
+      "lastLaunchYear": 1953,
+      "ships": [
+        {
+          "name": "SS Norge",
+          "url": "/ships/ss-norge",
+          "launchYear": "1881",
+          "operator": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
+          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow"
+        },
+        {
+          "name": "SS Marquette",
+          "url": "/ships/ss-marquette",
+          "launchYear": "1897",
+          "operator": "Atlantic Transport Line",
+          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
+        },
+        {
+          "name": "SS Drottningholm",
+          "url": "/ships/ss-drottningholm",
+          "launchYear": "1904",
+          "operator": "Swedish American Line",
+          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow"
+        },
+        {
+          "name": "RMS Caledonia",
+          "url": "/ships/rms-caledonia",
+          "launchYear": "1925",
+          "operator": "Anchor Line (Glasgow)",
+          "builderRaw": "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)"
+        },
+        {
+          "name": "SS Chitral (1925)",
+          "url": "/ships/ss-chitral",
+          "launchYear": "1925",
+          "operator": "Peninsular & Oriental Steam Navigation Company (P&O)",
+          "builderRaw": "Alexander Stephen & Sons, Govan · yard no. 504"
+        },
+        {
+          "name": "RMS Viceroy of India",
+          "url": "/ships/rms-viceroy-of-india",
+          "launchYear": "1928",
+          "operator": "P&O Steam Navigation Company",
+          "builderRaw": "Alexander Stephen & Sons (Glasgow)"
+        },
+        {
+          "name": "TSS Olympia (1953)",
+          "url": "/ships/tss-olympia",
+          "launchYear": "1953",
+          "operator": "Greek Line",
+          "builderRaw": "Alexander Stephen & Sons, Glasgow, Scotland"
+        }
+      ]
+    },
+    {
       "id": "j-and-g-thomson",
       "name": "J. & G. Thomson",
       "shipCount": 7,
@@ -1671,63 +1757,6 @@
       ]
     },
     {
-      "id": "alexander-stephen-and-sons",
-      "name": "Alexander Stephen & Sons",
-      "shipCount": 6,
-      "locations": [
-        "Glasgow",
-        "Govan",
-        "Linthouse, Glasgow",
-        "Linthouse, Glasgow, Scotland"
-      ],
-      "firstLaunchYear": 1881,
-      "lastLaunchYear": 1928,
-      "ships": [
-        {
-          "name": "SS Norge",
-          "url": "/ships/ss-norge",
-          "launchYear": "1881",
-          "operator": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
-          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow"
-        },
-        {
-          "name": "SS Marquette",
-          "url": "/ships/ss-marquette",
-          "launchYear": "1897",
-          "operator": "Atlantic Transport Line",
-          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow · yard no. 373"
-        },
-        {
-          "name": "SS Drottningholm",
-          "url": "/ships/ss-drottningholm",
-          "launchYear": "1904",
-          "operator": "Swedish American Line",
-          "builderRaw": "Alexander Stephen & Sons, Linthouse, Glasgow"
-        },
-        {
-          "name": "RMS Caledonia",
-          "url": "/ships/rms-caledonia",
-          "launchYear": "1925",
-          "operator": "Anchor Line (Glasgow)",
-          "builderRaw": "Alexander Stephen & Sons (Linthouse, Glasgow, Scotland)"
-        },
-        {
-          "name": "SS Chitral (1925)",
-          "url": "/ships/ss-chitral",
-          "launchYear": "1925",
-          "operator": "Peninsular & Oriental Steam Navigation Company (P&O)",
-          "builderRaw": "Alexander Stephen & Sons, Govan · yard no. 504"
-        },
-        {
-          "name": "RMS Viceroy of India",
-          "url": "/ships/rms-viceroy-of-india",
-          "launchYear": "1928",
-          "operator": "P&O Steam Navigation Company",
-          "builderRaw": "Alexander Stephen & Sons (Glasgow)"
-        }
-      ]
-    },
-    {
       "id": "new-york-shipbuilding-company",
       "name": "New York Shipbuilding Company",
       "shipCount": 6,
@@ -1827,6 +1856,54 @@
           "launchYear": "1925",
           "operator": "Compagnie des Messageries Maritimes",
           "builderRaw": "AG Weser, Bremen, Germany"
+        }
+      ]
+    },
+    {
+      "id": "cantieri-riuniti-dell-adriatico",
+      "name": "Cantieri Riuniti dell'Adriatico",
+      "shipCount": 5,
+      "locations": [
+        "Monfalcone",
+        "Monfalcone, Italy"
+      ],
+      "firstLaunchYear": 1932,
+      "lastLaunchYear": 1961,
+      "ships": [
+        {
+          "name": "Oceania",
+          "url": "/ships/oceania",
+          "launchYear": "1932",
+          "operator": "Cosulich Società Triestina di Navigazione",
+          "builderRaw": "Cantieri Riuniti dell’Adriatico, Monfalcone"
+        },
+        {
+          "name": "MS Piłsudski (1935)",
+          "url": "/ships/ms-pilsudski",
+          "launchYear": "1934",
+          "operator": "Gdynia-America Line",
+          "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1126"
+        },
+        {
+          "name": "MS Batory (1936)",
+          "url": "/ships/ms-batory",
+          "launchYear": "1935",
+          "operator": "Gdynia-America Line",
+          "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1127"
+        },
+        {
+          "name": "SS Galileo Galilei (1963)",
+          "url": "/ships/ss-galileo-galilei",
+          "launchYear": "1961",
+          "operator": "Lloyd Triestino",
+          "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone, Italy"
+        },
+        {
+          "name": "SS Guglielmo Marconi (1963)",
+          "url": "/ships/ss-guglielmo-marconi",
+          "launchYear": "1961",
+          "operator": "Lloyd Triestino",
+          "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone, Italy"
         }
       ]
     },
@@ -1960,6 +2037,47 @@
           "launchYear": "1959",
           "operator": "Union-Castle Mail Steamship Company",
           "builderRaw": "Cammell Laird, Birkenhead · yard no. 1287"
+        }
+      ]
+    },
+    {
+      "id": "chantiers-de-l-atlantique",
+      "name": "Chantiers de l’Atlantique",
+      "shipCount": 4,
+      "locations": [
+        "Saint-Nazaire",
+        "Saint-Nazaire, France"
+      ],
+      "firstLaunchYear": 1913,
+      "lastLaunchYear": 2003,
+      "ships": [
+        {
+          "name": "SS Flandre",
+          "url": "/ships/ss-flandre",
+          "launchYear": "1913",
+          "operator": "Compagnie Générale Transatlantique (CGT / French Line)",
+          "builderRaw": "Chantiers de l'Atlantique, Saint-Nazaire"
+        },
+        {
+          "name": "SS France",
+          "url": "/ships/ss-france",
+          "launchYear": "1960",
+          "operator": "Compagnie Générale Transatlantique / French Line",
+          "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire · yard G19"
+        },
+        {
+          "name": "SS Shalom (1964)",
+          "url": "/ships/ss-shalom",
+          "launchYear": "1962",
+          "operator": "ZIM Israel Navigation Company",
+          "builderRaw": "Chantiers de l'Atlantique, Saint-Nazaire, France"
+        },
+        {
+          "name": "RMS Queen Mary 2",
+          "url": "/ships/rms-queen-mary-2",
+          "launchYear": "2003",
+          "operator": "Cunard",
+          "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire, France"
         }
       ]
     },
@@ -2143,73 +2261,6 @@
       ]
     },
     {
-      "id": "cantieri-riuniti-dell-adriatico",
-      "name": "Cantieri Riuniti dell'Adriatico",
-      "shipCount": 3,
-      "locations": [
-        "Monfalcone"
-      ],
-      "firstLaunchYear": 1932,
-      "lastLaunchYear": 1935,
-      "ships": [
-        {
-          "name": "Oceania",
-          "url": "/ships/oceania",
-          "launchYear": "1932",
-          "operator": "Cosulich Società Triestina di Navigazione",
-          "builderRaw": "Cantieri Riuniti dell’Adriatico, Monfalcone"
-        },
-        {
-          "name": "MS Piłsudski (1935)",
-          "url": "/ships/ms-pilsudski",
-          "launchYear": "1934",
-          "operator": "Gdynia-America Line",
-          "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1126"
-        },
-        {
-          "name": "MS Batory (1936)",
-          "url": "/ships/ms-batory",
-          "launchYear": "1935",
-          "operator": "Gdynia-America Line",
-          "builderRaw": "Cantieri Riuniti dell'Adriatico, Monfalcone · yard no. 1127"
-        }
-      ]
-    },
-    {
-      "id": "chantiers-de-l-atlantique",
-      "name": "Chantiers de l’Atlantique",
-      "shipCount": 3,
-      "locations": [
-        "Saint-Nazaire",
-        "Saint-Nazaire, France"
-      ],
-      "firstLaunchYear": 1913,
-      "lastLaunchYear": 2003,
-      "ships": [
-        {
-          "name": "SS Flandre",
-          "url": "/ships/ss-flandre",
-          "launchYear": "1913",
-          "operator": "Compagnie Générale Transatlantique (CGT / French Line)",
-          "builderRaw": "Chantiers de l'Atlantique, Saint-Nazaire"
-        },
-        {
-          "name": "SS France",
-          "url": "/ships/ss-france",
-          "launchYear": "1960",
-          "operator": "Compagnie Générale Transatlantique / French Line",
-          "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire · yard G19"
-        },
-        {
-          "name": "RMS Queen Mary 2",
-          "url": "/ships/rms-queen-mary-2",
-          "launchYear": "2003",
-          "operator": "Cunard",
-          "builderRaw": "Chantiers de l’Atlantique, Saint-Nazaire, France"
-        }
-      ]
-    },
-    {
       "id": "r-and-w-hawthorn-leslie-and-co",
       "name": "R. & W. Hawthorn, Leslie & Co.",
       "shipCount": 3,
@@ -2308,6 +2359,39 @@
           "launchYear": "1852",
           "operator": "British and North American Royal Mail Steam Packet Company (Cunard)",
           "builderRaw": "Robert Steele & Co., Greenock, Scotland"
+        }
+      ]
+    },
+    {
+      "id": "william-cramp-and-sons",
+      "name": "William Cramp & Sons",
+      "shipCount": 3,
+      "locations": [
+        "Philadelphia"
+      ],
+      "firstLaunchYear": 1902,
+      "lastLaunchYear": 1926,
+      "ships": [
+        {
+          "name": "SS Finland",
+          "url": "/ships/ss-finland",
+          "launchYear": "1902",
+          "operator": "Red Star Line / International Navigation Company",
+          "builderRaw": "William Cramp & Sons, Philadelphia"
+        },
+        {
+          "name": "SS Kroonland",
+          "url": "/ships/ss-kroonland",
+          "launchYear": "1902",
+          "operator": "Red Star Line / International Mercantile Marine",
+          "builderRaw": "William Cramp & Sons, Philadelphia"
+        },
+        {
+          "name": "SS Queen Frederica (1955)",
+          "url": "/ships/ss-queen-frederica",
+          "launchYear": "1926",
+          "operator": "Matson Navigation Company",
+          "builderRaw": "William Cramp & Sons, Philadelphia"
         }
       ]
     },
@@ -2582,6 +2666,32 @@
       ]
     },
     {
+      "id": "societe-anonyme-john-cockerill",
+      "name": "Société Anonyme John Cockerill",
+      "shipCount": 2,
+      "locations": [
+        "Hoboken, Belgium"
+      ],
+      "firstLaunchYear": 1951,
+      "lastLaunchYear": 1952,
+      "ships": [
+        {
+          "name": "MS Vera Cruz (1952)",
+          "url": "/ships/ms-vera-cruz",
+          "launchYear": "1951",
+          "operator": "Companhia Colonial de Navegação",
+          "builderRaw": "Société Anonyme John Cockerill, Hoboken, Belgium"
+        },
+        {
+          "name": "SS Santa Maria (1953)",
+          "url": "/ships/ss-santa-maria",
+          "launchYear": "1952",
+          "operator": "Companhia Colonial de Navegação",
+          "builderRaw": "Société Anonyme John Cockerill, Hoboken, Belgium"
+        }
+      ]
+    },
+    {
       "id": "swan",
       "name": "Swan",
       "shipCount": 2,
@@ -2630,32 +2740,6 @@
           "launchYear": "1921",
           "operator": "Cunard Line",
           "builderRaw": "Vickers Ltd., Barrow-in-Furness · yard no. 498"
-        }
-      ]
-    },
-    {
-      "id": "william-cramp-and-sons",
-      "name": "William Cramp & Sons",
-      "shipCount": 2,
-      "locations": [
-        "Philadelphia"
-      ],
-      "firstLaunchYear": 1902,
-      "lastLaunchYear": 1902,
-      "ships": [
-        {
-          "name": "SS Finland",
-          "url": "/ships/ss-finland",
-          "launchYear": "1902",
-          "operator": "Red Star Line / International Navigation Company",
-          "builderRaw": "William Cramp & Sons, Philadelphia"
-        },
-        {
-          "name": "SS Kroonland",
-          "url": "/ships/ss-kroonland",
-          "launchYear": "1902",
-          "operator": "Red Star Line / International Mercantile Marine",
-          "builderRaw": "William Cramp & Sons, Philadelphia"
         }
       ]
     },

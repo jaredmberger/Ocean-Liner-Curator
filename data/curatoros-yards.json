@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T10:04:43.314Z",
+  "generatedAt": "2026-10-07T10:33:20.393Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 350,
-    "guidesWithDocumentedYard": 350,
+    "shipGuides": 360,
+    "guidesWithDocumentedYard": 360,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 74,
+    "canonicalYardLocations": 76,
     "multiYardShips": 0
   },
   "yards": [
@@ -22,7 +22,7 @@
         "Harland & Wolff",
         "Workman, Clark & Co."
       ],
-      "shipCount": 76,
+      "shipCount": 79,
       "ships": [
         {
           "name": "SS Atlantic (1873)",
@@ -543,10 +543,31 @@
           "builder": "Harland & Wolff"
         },
         {
+          "name": "RMS Edinburgh Castle (1948)",
+          "path": "ships/rms-edinburgh-castle.html",
+          "url": "/ships/rms-edinburgh-castle",
+          "launchYear": "1947",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "TSS Patris (1959)",
+          "path": "ships/tss-patris.html",
+          "url": "/ships/tss-patris",
+          "launchYear": "1949",
+          "builder": "Harland & Wolff"
+        },
+        {
           "name": "SS Iberia (1954)",
           "path": "ships/ss-iberia.html",
           "url": "/ships/ss-iberia",
           "launchYear": "1954",
+          "builder": "Harland & Wolff"
+        },
+        {
+          "name": "RMS Pendennis Castle (1958)",
+          "path": "ships/rms-pendennis-castle.html",
+          "url": "/ships/rms-pendennis-castle",
+          "launchYear": "1957",
           "builder": "Harland & Wolff"
         },
         {
@@ -1306,7 +1327,7 @@
         "Chantiers de l'Atlantique",
         "Chantiers de l’Atlantique"
       ],
-      "shipCount": 17,
+      "shipCount": 18,
       "ships": [
         {
           "name": "SS La Bretagne",
@@ -1419,6 +1440,13 @@
           "url": "/ships/ss-france",
           "launchYear": "1960",
           "builder": "Chantiers de l’Atlantique"
+        },
+        {
+          "name": "SS Shalom (1964)",
+          "path": "ships/ss-shalom.html",
+          "url": "/ships/ss-shalom",
+          "launchYear": "1962",
+          "builder": "Chantiers de l'Atlantique"
         },
         {
           "name": "RMS Queen Mary 2",
@@ -2165,6 +2193,50 @@
       ]
     },
     {
+      "id": "glasgow-scotland",
+      "name": "Glasgow, Scotland",
+      "rawValues": [
+        "Glasgow, Scotland"
+      ],
+      "builders": [
+        "Alexander Stephen & Sons",
+        "J. & G. Thomson",
+        "John Elder & Co., Govan",
+        "Robert Napier & Sons"
+      ],
+      "shipCount": 4,
+      "ships": [
+        {
+          "name": "SS China (1862)",
+          "path": "ships/ss-china-1862.html",
+          "url": "/ships/ss-china-1862",
+          "launchYear": "1861",
+          "builder": "Robert Napier & Sons"
+        },
+        {
+          "name": "SS Russia (1867)",
+          "path": "ships/ss-russia-1867.html",
+          "url": "/ships/ss-russia-1867",
+          "launchYear": "1867",
+          "builder": "J. & G. Thomson"
+        },
+        {
+          "name": "SS Elbe (1881)",
+          "path": "ships/ss-elbe-1881.html",
+          "url": "/ships/ss-elbe-1881",
+          "launchYear": "1881",
+          "builder": "John Elder & Co., Govan"
+        },
+        {
+          "name": "TSS Olympia (1953)",
+          "path": "ships/tss-olympia.html",
+          "url": "/ships/tss-olympia",
+          "launchYear": "1953",
+          "builder": "Alexander Stephen & Sons"
+        }
+      ]
+    },
+    {
       "id": "greenock",
       "name": "Greenock",
       "rawValues": [
@@ -2320,42 +2392,6 @@
       ]
     },
     {
-      "id": "glasgow-scotland",
-      "name": "Glasgow, Scotland",
-      "rawValues": [
-        "Glasgow, Scotland"
-      ],
-      "builders": [
-        "J. & G. Thomson",
-        "John Elder & Co., Govan",
-        "Robert Napier & Sons"
-      ],
-      "shipCount": 3,
-      "ships": [
-        {
-          "name": "SS China (1862)",
-          "path": "ships/ss-china-1862.html",
-          "url": "/ships/ss-china-1862",
-          "launchYear": "1861",
-          "builder": "Robert Napier & Sons"
-        },
-        {
-          "name": "SS Russia (1867)",
-          "path": "ships/ss-russia-1867.html",
-          "url": "/ships/ss-russia-1867",
-          "launchYear": "1867",
-          "builder": "J. & G. Thomson"
-        },
-        {
-          "name": "SS Elbe (1881)",
-          "path": "ships/ss-elbe-1881.html",
-          "url": "/ships/ss-elbe-1881",
-          "launchYear": "1881",
-          "builder": "John Elder & Co., Govan"
-        }
-      ]
-    },
-    {
       "id": "greenock-scotland",
       "name": "Greenock, Scotland",
       "rawValues": [
@@ -2421,6 +2457,40 @@
           "url": "/ships/ss-drottningholm",
           "launchYear": "1904",
           "builder": "Alexander Stephen & Sons"
+        }
+      ]
+    },
+    {
+      "id": "philadelphia",
+      "name": "Philadelphia",
+      "rawValues": [
+        "Philadelphia"
+      ],
+      "builders": [
+        "William Cramp & Sons"
+      ],
+      "shipCount": 3,
+      "ships": [
+        {
+          "name": "SS Finland",
+          "path": "ships/ss-finland.html",
+          "url": "/ships/ss-finland",
+          "launchYear": "1902",
+          "builder": "William Cramp & Sons"
+        },
+        {
+          "name": "SS Kroonland",
+          "path": "ships/ss-kroonland.html",
+          "url": "/ships/ss-kroonland",
+          "launchYear": "1902",
+          "builder": "William Cramp & Sons"
+        },
+        {
+          "name": "SS Queen Frederica (1955)",
+          "path": "ships/ss-queen-frederica.html",
+          "url": "/ships/ss-queen-frederica",
+          "launchYear": "1926",
+          "builder": "William Cramp & Sons"
         }
       ]
     },
@@ -2541,6 +2611,33 @@
       ]
     },
     {
+      "id": "hoboken-belgium",
+      "name": "Hoboken, Belgium",
+      "rawValues": [
+        "Hoboken, Belgium"
+      ],
+      "builders": [
+        "Société Anonyme John Cockerill"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "MS Vera Cruz (1952)",
+          "path": "ships/ms-vera-cruz.html",
+          "url": "/ships/ms-vera-cruz",
+          "launchYear": "1951",
+          "builder": "Société Anonyme John Cockerill"
+        },
+        {
+          "name": "SS Santa Maria (1953)",
+          "path": "ships/ss-santa-maria.html",
+          "url": "/ships/ss-santa-maria",
+          "launchYear": "1952",
+          "builder": "Société Anonyme John Cockerill"
+        }
+      ]
+    },
+    {
       "id": "hunter-and-wigham-richardson-wallsend",
       "name": "Hunter & Wigham Richardson, Wallsend",
       "rawValues": [
@@ -2596,6 +2693,33 @@
       ]
     },
     {
+      "id": "monfalcone-italy",
+      "name": "Monfalcone, Italy",
+      "rawValues": [
+        "Monfalcone, Italy"
+      ],
+      "builders": [
+        "Cantieri Riuniti dell'Adriatico"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS Galileo Galilei (1963)",
+          "path": "ships/ss-galileo-galilei.html",
+          "url": "/ships/ss-galileo-galilei",
+          "launchYear": "1961",
+          "builder": "Cantieri Riuniti dell'Adriatico"
+        },
+        {
+          "name": "SS Guglielmo Marconi (1963)",
+          "path": "ships/ss-guglielmo-marconi.html",
+          "url": "/ships/ss-guglielmo-marconi",
+          "launchYear": "1961",
+          "builder": "Cantieri Riuniti dell'Adriatico"
+        }
+      ]
+    },
+    {
       "id": "nagasaki",
       "name": "Nagasaki",
       "rawValues": [
@@ -2620,33 +2744,6 @@
           "url": "/ships/tatsuta-maru-1929",
           "launchYear": "1929",
           "builder": "Mitsubishi Shipbuilding & Engineering Co."
-        }
-      ]
-    },
-    {
-      "id": "philadelphia",
-      "name": "Philadelphia",
-      "rawValues": [
-        "Philadelphia"
-      ],
-      "builders": [
-        "William Cramp & Sons"
-      ],
-      "shipCount": 2,
-      "ships": [
-        {
-          "name": "SS Finland",
-          "path": "ships/ss-finland.html",
-          "url": "/ships/ss-finland",
-          "launchYear": "1902",
-          "builder": "William Cramp & Sons"
-        },
-        {
-          "name": "SS Kroonland",
-          "path": "ships/ss-kroonland.html",
-          "url": "/ships/ss-kroonland",
-          "launchYear": "1902",
-          "builder": "William Cramp & Sons"
         }
       ]
     },
@@ -3679,6 +3776,20 @@
       ]
     },
     {
+      "name": "MS Vera Cruz (1952)",
+      "path": "ships/ms-vera-cruz.html",
+      "url": "/ships/ms-vera-cruz",
+      "launchYear": "1951",
+      "assignments": [
+        {
+          "builder": "Société Anonyme John Cockerill",
+          "builderId": "societe-anonyme-john-cockerill",
+          "location": "Hoboken, Belgium",
+          "locationRaw": "Hoboken, Belgium"
+        }
+      ]
+    },
+    {
       "name": "MS Vulcania",
       "path": "ships/ms-vulcania.html",
       "url": "/ships/ms-vulcania",
@@ -4225,6 +4336,20 @@
       ]
     },
     {
+      "name": "RMS Edinburgh Castle (1948)",
+      "path": "ships/rms-edinburgh-castle.html",
+      "url": "/ships/rms-edinburgh-castle",
+      "launchYear": "1947",
+      "assignments": [
+        {
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Belfast",
+          "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
       "name": "RMS Empress of Asia (1913)",
       "path": "ships/rms-empress-of-asia.html",
       "url": "/ships/rms-empress-of-asia",
@@ -4641,6 +4766,20 @@
           "builderId": "vickers-armstrongs",
           "location": "Barrow-in-Furness",
           "locationRaw": "Barrow-in-Furness"
+        }
+      ]
+    },
+    {
+      "name": "RMS Pendennis Castle (1958)",
+      "path": "ships/rms-pendennis-castle.html",
+      "url": "/ships/rms-pendennis-castle",
+      "launchYear": "1957",
+      "assignments": [
+        {
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Belfast",
+          "locationRaw": "Belfast"
         }
       ]
     },
@@ -6297,6 +6436,20 @@
       ]
     },
     {
+      "name": "SS Galileo Galilei (1963)",
+      "path": "ships/ss-galileo-galilei.html",
+      "url": "/ships/ss-galileo-galilei",
+      "launchYear": "1961",
+      "assignments": [
+        {
+          "builder": "Cantieri Riuniti dell'Adriatico",
+          "builderId": "cantieri-riuniti-dell-adriatico",
+          "location": "Monfalcone, Italy",
+          "locationRaw": "Monfalcone, Italy"
+        }
+      ]
+    },
+    {
       "name": "SS George Washington",
       "path": "ships/ss-george-washington-ngl.html",
       "url": "/ships/ss-george-washington-ngl",
@@ -6447,6 +6600,20 @@
           "builderId": "f-schichau",
           "location": "Danzig",
           "locationRaw": "Danzig"
+        }
+      ]
+    },
+    {
+      "name": "SS Guglielmo Marconi (1963)",
+      "path": "ships/ss-guglielmo-marconi.html",
+      "url": "/ships/ss-guglielmo-marconi",
+      "launchYear": "1961",
+      "assignments": [
+        {
+          "builder": "Cantieri Riuniti dell'Adriatico",
+          "builderId": "cantieri-riuniti-dell-adriatico",
+          "location": "Monfalcone, Italy",
+          "locationRaw": "Monfalcone, Italy"
         }
       ]
     },
@@ -7823,6 +7990,20 @@
       ]
     },
     {
+      "name": "SS Queen Frederica (1955)",
+      "path": "ships/ss-queen-frederica.html",
+      "url": "/ships/ss-queen-frederica",
+      "launchYear": "1926",
+      "assignments": [
+        {
+          "builder": "William Cramp & Sons",
+          "builderId": "william-cramp-and-sons",
+          "location": "Philadelphia",
+          "locationRaw": "Philadelphia"
+        }
+      ]
+    },
+    {
       "name": "SS Queen of Bermuda",
       "path": "ships/ss-queen-of-bermuda.html",
       "url": "/ships/ss-queen-of-bermuda",
@@ -8033,6 +8214,20 @@
       ]
     },
     {
+      "name": "SS Santa Maria (1953)",
+      "path": "ships/ss-santa-maria.html",
+      "url": "/ships/ss-santa-maria",
+      "launchYear": "1952",
+      "assignments": [
+        {
+          "builder": "Société Anonyme John Cockerill",
+          "builderId": "societe-anonyme-john-cockerill",
+          "location": "Hoboken, Belgium",
+          "locationRaw": "Hoboken, Belgium"
+        }
+      ]
+    },
+    {
       "name": "SS Saxon",
       "path": "ships/ss-saxon.html",
       "url": "/ships/ss-saxon",
@@ -8057,6 +8252,20 @@
           "builderId": "deutsche-schiff-und-maschinenbau-ag",
           "location": "Werk AG Weser, Bremen",
           "locationRaw": "Werk AG Weser, Bremen"
+        }
+      ]
+    },
+    {
+      "name": "SS Shalom (1964)",
+      "path": "ships/ss-shalom.html",
+      "url": "/ships/ss-shalom",
+      "launchYear": "1962",
+      "assignments": [
+        {
+          "builder": "Chantiers de l'Atlantique",
+          "builderId": "chantiers-de-l-atlantique",
+          "location": "Saint-Nazaire",
+          "locationRaw": "Saint-Nazaire, France"
         }
       ]
     },
@@ -8379,6 +8588,34 @@
           "builderId": "mitsubishi-shipbuilding-and-engineering-co",
           "location": "Nagasaki",
           "locationRaw": "Nagasaki"
+        }
+      ]
+    },
+    {
+      "name": "TSS Olympia (1953)",
+      "path": "ships/tss-olympia.html",
+      "url": "/ships/tss-olympia",
+      "launchYear": "1953",
+      "assignments": [
+        {
+          "builder": "Alexander Stephen & Sons",
+          "builderId": "alexander-stephen-and-sons",
+          "location": "Glasgow, Scotland",
+          "locationRaw": "Glasgow, Scotland"
+        }
+      ]
+    },
+    {
+      "name": "TSS Patris (1959)",
+      "path": "ships/tss-patris.html",
+      "url": "/ships/tss-patris",
+      "launchYear": "1949",
+      "assignments": [
+        {
+          "builder": "Harland & Wolff",
+          "builderId": "harland-and-wolff",
+          "location": "Belfast",
+          "locationRaw": "Belfast"
         }
       ]
     }

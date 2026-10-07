@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T10:04:43.314Z",
+  "generatedAt": "2026-10-07T10:33:20.393Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 350,
-    "guidesWithOperator": 350,
+    "shipGuides": 360,
+    "guidesWithOperator": 360,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 81,
+    "canonicalOperators": 86,
     "aliasedOperatorGroups": 24
   },
   "operators": [
@@ -128,7 +128,7 @@
         "Union-Castle Line",
         "Union-Castle Mail Steamship Company"
       ],
-      "shipCount": 11
+      "shipCount": 12
     },
     {
       "id": "compagnie-des-messageries-maritimes",
@@ -239,6 +239,16 @@
       "shipCount": 4
     },
     {
+      "id": "matson-navigation-company",
+      "name": "Matson Navigation Company",
+      "rawValues": [
+        "Matson Lines / Matson Navigation Company",
+        "Matson Navigation Co. (Matson Line)",
+        "Matson Navigation Company"
+      ],
+      "shipCount": 4
+    },
+    {
       "id": "allan-line",
       "name": "Allan Line",
       "rawValues": [
@@ -262,15 +272,6 @@
       "rawValues": [
         "Italia di Navigazione / Italian Line",
         "Italian Line (Italia di Navigazione)"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "matson-navigation-company",
-      "name": "Matson Navigation Company",
-      "rawValues": [
-        "Matson Lines / Matson Navigation Company",
-        "Matson Navigation Co. (Matson Line)"
       ],
       "shipCount": 3
     },
@@ -320,6 +321,14 @@
       "name": "Compagnie de Navigation Sud-Atlantique",
       "rawValues": [
         "Compagnie de Navigation Sud-Atlantique"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "companhia-colonial-de-navegacao",
+      "name": "Companhia Colonial de Navegação",
+      "rawValues": [
+        "Companhia Colonial de Navegação"
       ],
       "shipCount": 2
     },
@@ -383,6 +392,14 @@
       "shipCount": 2
     },
     {
+      "id": "lloyd-triestino",
+      "name": "Lloyd Triestino",
+      "rawValues": [
+        "Lloyd Triestino"
+      ],
+      "shipCount": 2
+    },
+    {
       "id": "pacific-mail-steamship-company",
       "name": "Pacific Mail Steamship Company",
       "rawValues": [
@@ -395,6 +412,14 @@
       "name": "Swedish American Line",
       "rawValues": [
         "Swedish American Line"
+      ],
+      "shipCount": 2
+    },
+    {
+      "id": "union-castle-mail-steam-ship-company",
+      "name": "Union-Castle Mail Steam Ship Company",
+      "rawValues": [
+        "Union-Castle Mail Steam Ship Company"
       ],
       "shipCount": 2
     },
@@ -491,6 +516,14 @@
       "name": "Great Northern Steamship Company (owned by James J. Hill)",
       "rawValues": [
         "Great Northern Steamship Company (owned by James J. Hill)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "greek-line",
+      "name": "Greek Line",
+      "rawValues": [
+        "Greek Line"
       ],
       "shipCount": 1
     },
@@ -725,6 +758,14 @@
         "White Star Line, 1923–34 · Cunard-White Star, 1934–35"
       ],
       "shipCount": 1
+    },
+    {
+      "id": "zim-israel-navigation-company",
+      "name": "ZIM Israel Navigation Company",
+      "rawValues": [
+        "ZIM Israel Navigation Company"
+      ],
+      "shipCount": 1
     }
   ],
   "ships": [
@@ -839,6 +880,14 @@
       "launchYear": "1946",
       "operatorRaw": "Swedish America Line (Svenska Amerika Linien)",
       "operator": "Swedish America Line (Svenska Amerika Linien)"
+    },
+    {
+      "name": "MS Vera Cruz (1952)",
+      "path": "ships/ms-vera-cruz.html",
+      "url": "/ships/ms-vera-cruz",
+      "launchYear": "1951",
+      "operatorRaw": "Companhia Colonial de Navegação",
+      "operator": "Companhia Colonial de Navegação"
     },
     {
       "name": "MS Vulcania",
@@ -1153,6 +1202,14 @@
       "operator": "White Star Line"
     },
     {
+      "name": "RMS Edinburgh Castle (1948)",
+      "path": "ships/rms-edinburgh-castle.html",
+      "url": "/ships/rms-edinburgh-castle",
+      "launchYear": "1947",
+      "operatorRaw": "Union-Castle Mail Steam Ship Company",
+      "operator": "Union-Castle Mail Steam Ship Company"
+    },
+    {
       "name": "RMS Empress of Asia (1913)",
       "path": "ships/rms-empress-of-asia.html",
       "url": "/ships/rms-empress-of-asia",
@@ -1391,6 +1448,14 @@
       "launchYear": "1953",
       "operatorRaw": "Orient Steam Navigation Company; later P&O-Orient / P&O",
       "operator": "Orient Line"
+    },
+    {
+      "name": "RMS Pendennis Castle (1958)",
+      "path": "ships/rms-pendennis-castle.html",
+      "url": "/ships/rms-pendennis-castle",
+      "launchYear": "1957",
+      "operatorRaw": "Union-Castle Mail Steam Ship Company",
+      "operator": "Union-Castle Mail Steam Ship Company"
     },
     {
       "name": "RMS Persia",
@@ -2337,6 +2402,14 @@
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
+      "name": "SS Galileo Galilei (1963)",
+      "path": "ships/ss-galileo-galilei.html",
+      "url": "/ships/ss-galileo-galilei",
+      "launchYear": "1961",
+      "operatorRaw": "Lloyd Triestino",
+      "operator": "Lloyd Triestino"
+    },
+    {
       "name": "SS George Washington",
       "path": "ships/ss-george-washington-ngl.html",
       "url": "/ships/ss-george-washington-ngl",
@@ -2423,6 +2496,14 @@
       "launchYear": "1899",
       "operatorRaw": "Norddeutscher Lloyd",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
+    },
+    {
+      "name": "SS Guglielmo Marconi (1963)",
+      "path": "ships/ss-guglielmo-marconi.html",
+      "url": "/ships/ss-guglielmo-marconi",
+      "launchYear": "1961",
+      "operatorRaw": "Lloyd Triestino",
+      "operator": "Lloyd Triestino"
     },
     {
       "name": "SS Hamburg (1925)",
@@ -3209,6 +3290,14 @@
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
     },
     {
+      "name": "SS Queen Frederica (1955)",
+      "path": "ships/ss-queen-frederica.html",
+      "url": "/ships/ss-queen-frederica",
+      "launchYear": "1926",
+      "operatorRaw": "Matson Navigation Company",
+      "operator": "Matson Navigation Company"
+    },
+    {
       "name": "SS Queen of Bermuda",
       "path": "ships/ss-queen-of-bermuda.html",
       "url": "/ships/ss-queen-of-bermuda",
@@ -3329,6 +3418,14 @@
       "operator": "Cunard Line"
     },
     {
+      "name": "SS Santa Maria (1953)",
+      "path": "ships/ss-santa-maria.html",
+      "url": "/ships/ss-santa-maria",
+      "launchYear": "1952",
+      "operatorRaw": "Companhia Colonial de Navegação",
+      "operator": "Companhia Colonial de Navegação"
+    },
+    {
       "name": "SS Saxon",
       "path": "ships/ss-saxon.html",
       "url": "/ships/ss-saxon",
@@ -3343,6 +3440,14 @@
       "launchYear": "1934",
       "operatorRaw": "Norddeutscher Lloyd (North German Lloyd)",
       "operator": "Norddeutscher Lloyd (North German Lloyd)"
+    },
+    {
+      "name": "SS Shalom (1964)",
+      "path": "ships/ss-shalom.html",
+      "url": "/ships/ss-shalom",
+      "launchYear": "1962",
+      "operatorRaw": "ZIM Israel Navigation Company",
+      "operator": "ZIM Israel Navigation Company"
     },
     {
       "name": "SS Sirius",
@@ -3527,6 +3632,22 @@
       "launchYear": "1929",
       "operatorRaw": "Nippon Yusen Kaisha (NYK)",
       "operator": "Nippon Yusen Kaisha (NYK Line)"
+    },
+    {
+      "name": "TSS Olympia (1953)",
+      "path": "ships/tss-olympia.html",
+      "url": "/ships/tss-olympia",
+      "launchYear": "1953",
+      "operatorRaw": "Greek Line",
+      "operator": "Greek Line"
+    },
+    {
+      "name": "TSS Patris (1959)",
+      "path": "ships/tss-patris.html",
+      "url": "/ships/tss-patris",
+      "launchYear": "1949",
+      "operatorRaw": "Union-Castle Line",
+      "operator": "Union-Castle Line"
     }
   ]
 }

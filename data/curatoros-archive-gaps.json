@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T10:04:46.095Z",
+  "generatedAt": "2026-10-07T10:33:23.362Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,23 +11,30 @@
     ]
   },
   "summary": {
-    "shipGuides": 350,
-    "relationshipCovered": 322,
-    "relationshipUncovered": 28,
-    "relationshipCoveragePct": 92,
-    "canonicalOperators": 81,
-    "thinOperators": 52,
-    "canonicalYardLocations": 74,
+    "shipGuides": 360,
+    "relationshipCovered": 323,
+    "relationshipUncovered": 37,
+    "relationshipCoveragePct": 89.7,
+    "canonicalOperators": 86,
+    "thinOperators": 57,
+    "canonicalYardLocations": 76,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 43,
-    "unresolvedSisterMentions": 13,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 7
+    "explicitSisterLinks": 45,
+    "unresolvedSisterMentions": 14,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 8
   },
   "signals": {
     "sisterShipResearchCandidates": [
+      {
+        "ship": "RMS Edinburgh Castle (1948)",
+        "path": "ships/rms-edinburgh-castle.html",
+        "mentioned": "Pretoria Castle",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
       {
         "ship": "SS Asia (1850)",
         "path": "ships/ss-asia-1850.html",
@@ -92,6 +99,13 @@
         "mentioned": "Caronia",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
+      {
+        "ship": "RMS Edinburgh Castle (1948)",
+        "path": "ships/rms-edinburgh-castle.html",
+        "mentioned": "Pretoria Castle",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
         "ship": "RMS Olympic",
@@ -274,6 +288,60 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "MS Vera Cruz (1952)",
+        "slug": "ms-vera-cruz",
+        "url": "/ships/ms-vera-cruz",
+        "operator": "Companhia Colonial de Navegação",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Santa Maria (1953)",
+        "slug": "ss-santa-maria",
+        "url": "/ships/ss-santa-maria",
+        "operator": "Companhia Colonial de Navegação",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Galileo Galilei (1963)",
+        "slug": "ss-galileo-galilei",
+        "url": "/ships/ss-galileo-galilei",
+        "operator": "Lloyd Triestino",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Guglielmo Marconi (1963)",
+        "slug": "ss-guglielmo-marconi",
+        "url": "/ships/ss-guglielmo-marconi",
+        "operator": "Lloyd Triestino",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "RMS Edinburgh Castle (1948)",
+        "slug": "rms-edinburgh-castle",
+        "url": "/ships/rms-edinburgh-castle",
+        "operator": "Union-Castle Mail Steam Ship Company",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "RMS Pendennis Castle (1958)",
+        "slug": "rms-pendennis-castle",
+        "url": "/ships/rms-pendennis-castle",
+        "operator": "Union-Castle Mail Steam Ship Company",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Coptic",
         "slug": "ss-coptic",
         "url": "/ships/ss-coptic",
@@ -292,6 +360,15 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "TSS Patris (1959)",
+        "slug": "tss-patris",
+        "url": "/ships/tss-patris",
+        "operator": "Union-Castle Line",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 12 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "RMS Canopic",
         "slug": "rms-canopic",
         "url": "/ships/rms-canopic",
@@ -307,6 +384,15 @@
         "operator": "Anchor Line",
         "signalStrength": "high-context",
         "rationale": "Unlinked ship within a well-represented operator group of 6 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Queen Frederica (1955)",
+        "slug": "ss-queen-frederica",
+        "url": "/ships/ss-queen-frederica",
+        "operator": "Matson Navigation Company",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
       {
         "type": "relationship-gap",
@@ -350,6 +436,15 @@
         "slug": "ss-arctic",
         "url": "/ships/ss-arctic",
         "operator": "Collins Line (New York and Liverpool United States Mail Steamship Company)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "TSS Olympia (1953)",
+        "slug": "tss-olympia",
+        "url": "/ships/tss-olympia",
+        "operator": "Greek Line",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -484,6 +579,11 @@
       },
       {
         "operator": "Great Northern Steamship Company (owned by James J. Hill)",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Greek Line",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -633,12 +733,22 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
+        "operator": "ZIM Israel Navigation Company",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
         "operator": "American Export Lines",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
         "operator": "Compagnie de Navigation Sud-Atlantique",
+        "shipCount": 2,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Companhia Colonial de Navegação",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -678,12 +788,22 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
+        "operator": "Lloyd Triestino",
+        "shipCount": 2,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
         "operator": "Pacific Mail Steamship Company",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
         "operator": "Swedish American Line",
+        "shipCount": 2,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Union-Castle Mail Steam Ship Company",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       }
@@ -794,6 +914,69 @@
         "coveragePct": 89.5
       },
       {
+        "name": "Companhia Colonial de Navegação",
+        "total": 2,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "MS Vera Cruz (1952)",
+            "slug": "ms-vera-cruz",
+            "url": "/ships/ms-vera-cruz",
+            "launchYear": "1951"
+          },
+          {
+            "name": "SS Santa Maria (1953)",
+            "slug": "ss-santa-maria",
+            "url": "/ships/ss-santa-maria",
+            "launchYear": "1952"
+          }
+        ],
+        "uncoveredCount": 2,
+        "coveragePct": 0
+      },
+      {
+        "name": "Lloyd Triestino",
+        "total": 2,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "SS Galileo Galilei (1963)",
+            "slug": "ss-galileo-galilei",
+            "url": "/ships/ss-galileo-galilei",
+            "launchYear": "1961"
+          },
+          {
+            "name": "SS Guglielmo Marconi (1963)",
+            "slug": "ss-guglielmo-marconi",
+            "url": "/ships/ss-guglielmo-marconi",
+            "launchYear": "1961"
+          }
+        ],
+        "uncoveredCount": 2,
+        "coveragePct": 0
+      },
+      {
+        "name": "Union-Castle Mail Steam Ship Company",
+        "total": 2,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "RMS Edinburgh Castle (1948)",
+            "slug": "rms-edinburgh-castle",
+            "url": "/ships/rms-edinburgh-castle",
+            "launchYear": "1947"
+          },
+          {
+            "name": "RMS Pendennis Castle (1958)",
+            "slug": "rms-pendennis-castle",
+            "url": "/ships/rms-pendennis-castle",
+            "launchYear": "1957"
+          }
+        ],
+        "uncoveredCount": 2,
+        "coveragePct": 0
+      },
+      {
         "name": "White Star Line",
         "total": 39,
         "covered": 38,
@@ -824,6 +1007,21 @@
         "coveragePct": 97.4
       },
       {
+        "name": "Union-Castle Line",
+        "total": 12,
+        "covered": 11,
+        "uncovered": [
+          {
+            "name": "TSS Patris (1959)",
+            "slug": "tss-patris",
+            "url": "/ships/tss-patris",
+            "launchYear": "1949"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 91.7
+      },
+      {
         "name": "Dominion Line",
         "total": 7,
         "covered": 6,
@@ -852,6 +1050,21 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 83.3
+      },
+      {
+        "name": "Matson Navigation Company",
+        "total": 4,
+        "covered": 3,
+        "uncovered": [
+          {
+            "name": "SS Queen Frederica (1955)",
+            "slug": "ss-queen-frederica",
+            "url": "/ships/ss-queen-frederica",
+            "launchYear": "1926"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 75
       },
       {
         "name": "Allan Line",
@@ -923,6 +1136,21 @@
             "slug": "ss-arctic",
             "url": "/ships/ss-arctic",
             "launchYear": "1850"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 0
+      },
+      {
+        "name": "Greek Line",
+        "total": 1,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "TSS Olympia (1953)",
+            "slug": "tss-olympia",
+            "url": "/ships/tss-olympia",
+            "launchYear": "1953"
           }
         ],
         "uncoveredCount": 1,
@@ -1081,14 +1309,6 @@
         "coveragePct": 100
       },
       {
-        "name": "Union-Castle Line",
-        "total": 11,
-        "covered": 11,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
         "name": "Compagnie des Messageries Maritimes",
         "total": 9,
         "covered": 9,
@@ -1162,14 +1382,6 @@
       },
       {
         "name": "Italian Line",
-        "total": 3,
-        "covered": 3,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
-        "name": "Matson Navigation Company",
         "total": 3,
         "covered": 3,
         "uncovered": [],
@@ -1527,6 +1739,14 @@
         "uncovered": [],
         "uncoveredCount": 0,
         "coveragePct": 100
+      },
+      {
+        "name": "ZIM Israel Navigation Company",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
       }
     ],
     "eras": [
@@ -1546,10 +1766,10 @@
       },
       {
         "era": "Jet-age transition",
-        "shipCount": 8,
-        "relationshipCovered": 8,
-        "relationshipUncovered": 0,
-        "relationshipCoveragePct": 100
+        "shipCount": 11,
+        "relationshipCovered": 9,
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 81.8
       },
       {
         "era": "First World War era",
@@ -1559,18 +1779,18 @@
         "relationshipCoveragePct": 100
       },
       {
-        "era": "Postwar liner renaissance",
-        "shipCount": 21,
-        "relationshipCovered": 21,
-        "relationshipUncovered": 0,
-        "relationshipCoveragePct": 100
-      },
-      {
         "era": "Pioneer steam era",
         "shipCount": 26,
         "relationshipCovered": 19,
         "relationshipUncovered": 7,
         "relationshipCoveragePct": 73.1
+      },
+      {
+        "era": "Postwar liner renaissance",
+        "shipCount": 27,
+        "relationshipCovered": 21,
+        "relationshipUncovered": 6,
+        "relationshipCoveragePct": 77.8
       },
       {
         "era": "Late Victorian expansion",
@@ -1588,10 +1808,10 @@
       },
       {
         "era": "Interwar recovery",
-        "shipCount": 83,
+        "shipCount": 84,
         "relationshipCovered": 82,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 98.8
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 97.6
       },
       {
         "era": "Edwardian / pre-war peak",
@@ -1667,10 +1887,10 @@
       },
       {
         "decade": "1920s",
-        "shipCount": 83,
+        "shipCount": 84,
         "relationshipCovered": 82,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 98.8
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 97.6
       },
       {
         "decade": "1930s",
@@ -1681,24 +1901,24 @@
       },
       {
         "decade": "1940s",
-        "shipCount": 7,
+        "shipCount": 8,
         "relationshipCovered": 7,
-        "relationshipUncovered": 0,
-        "relationshipCoveragePct": 100
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 87.5
       },
       {
         "decade": "1950s",
-        "shipCount": 15,
+        "shipCount": 20,
         "relationshipCovered": 15,
-        "relationshipUncovered": 0,
-        "relationshipCoveragePct": 100
+        "relationshipUncovered": 5,
+        "relationshipCoveragePct": 75
       },
       {
         "decade": "1960s",
-        "shipCount": 8,
-        "relationshipCovered": 8,
-        "relationshipUncovered": 0,
-        "relationshipCoveragePct": 100
+        "shipCount": 11,
+        "relationshipCovered": 9,
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 81.8
       },
       {
         "decade": "2000s",
@@ -1710,6 +1930,13 @@
     ]
   },
   "relationshipUncoveredShips": [
+    {
+      "name": "MS Vera Cruz (1952)",
+      "slug": "ms-vera-cruz",
+      "url": "/ships/ms-vera-cruz",
+      "operator": "Companhia Colonial de Navegação",
+      "launchYear": "1951"
+    },
     {
       "name": "QSMV Dominion Monarch",
       "slug": "qsmv-dominion-monarch",
@@ -1723,6 +1950,20 @@
       "url": "/ships/rms-canopic",
       "operator": "Dominion Line",
       "launchYear": "1900"
+    },
+    {
+      "name": "RMS Edinburgh Castle (1948)",
+      "slug": "rms-edinburgh-castle",
+      "url": "/ships/rms-edinburgh-castle",
+      "operator": "Union-Castle Mail Steam Ship Company",
+      "launchYear": "1947"
+    },
+    {
+      "name": "RMS Pendennis Castle (1958)",
+      "slug": "rms-pendennis-castle",
+      "url": "/ships/rms-pendennis-castle",
+      "operator": "Union-Castle Mail Steam Ship Company",
+      "launchYear": "1957"
     },
     {
       "name": "SS Arabia (1852)",
@@ -1793,6 +2034,20 @@
       "url": "/ships/ss-elbe-1881",
       "operator": "Norddeutscher Lloyd, Bremen",
       "launchYear": "1881"
+    },
+    {
+      "name": "SS Galileo Galilei (1963)",
+      "slug": "ss-galileo-galilei",
+      "url": "/ships/ss-galileo-galilei",
+      "operator": "Lloyd Triestino",
+      "launchYear": "1961"
+    },
+    {
+      "name": "SS Guglielmo Marconi (1963)",
+      "slug": "ss-guglielmo-marconi",
+      "url": "/ships/ss-guglielmo-marconi",
+      "operator": "Lloyd Triestino",
+      "launchYear": "1961"
     },
     {
       "name": "SS Hibernia (1843)",
@@ -1893,6 +2148,20 @@
       "launchYear": "1903"
     },
     {
+      "name": "SS Queen Frederica (1955)",
+      "slug": "ss-queen-frederica",
+      "url": "/ships/ss-queen-frederica",
+      "operator": "Matson Navigation Company",
+      "launchYear": "1926"
+    },
+    {
+      "name": "SS Santa Maria (1953)",
+      "slug": "ss-santa-maria",
+      "url": "/ships/ss-santa-maria",
+      "operator": "Companhia Colonial de Navegação",
+      "launchYear": "1952"
+    },
+    {
       "name": "SS Vestris",
       "slug": "ss-vestris",
       "url": "/ships/ss-vestris",
@@ -1905,6 +2174,20 @@
       "url": "/ships/ss-winifredian",
       "operator": "Leyland Line; briefly marketed through Red Star Line arrangements in 1927",
       "launchYear": "1899"
+    },
+    {
+      "name": "TSS Olympia (1953)",
+      "slug": "tss-olympia",
+      "url": "/ships/tss-olympia",
+      "operator": "Greek Line",
+      "launchYear": "1953"
+    },
+    {
+      "name": "TSS Patris (1959)",
+      "slug": "tss-patris",
+      "url": "/ships/tss-patris",
+      "operator": "Union-Castle Line",
+      "launchYear": "1949"
     }
   ]
 }
