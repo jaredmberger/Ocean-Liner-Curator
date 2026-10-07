@@ -4,13 +4,13 @@
   "system": "CuratorOS",
   "status": "healthy",
   "generatedFrom": {
-    "archiveGenerated": "2026-10-05"
+    "archiveGenerated": "2026-10-07"
   },
   "counts": {
-    "archive": 351,
-    "randomEligible": 350,
-    "sitemapShips": 351,
-    "deviceDetails": 351,
+    "archive": 352,
+    "randomEligible": 351,
+    "sitemapShips": 352,
+    "deviceDetails": 352,
     "errors": 0,
     "warnings": 0
   },
@@ -19,8 +19,8 @@
       "file": "api/device/archive.json",
       "exists": true,
       "status": "ok",
-      "generatedAt": "2026-10-05",
-      "count": 351
+      "generatedAt": "2026-10-07",
+      "count": 352
     },
     "builders": {
       "file": "data/builders.json",
@@ -41,14 +41,14 @@
       "counts": {
         "errors": 0,
         "warnings": 0,
-        "archiveCards": 351,
+        "archiveCards": 352,
         "inlineLinkErrors": 0,
         "imageErrors": 0,
         "structuralWarnings": 0,
         "yearWarnings": 0,
         "orphanGuides": 0,
         "orphanImages": 0,
-        "relatedLinerRefs": 227,
+        "relatedLinerRefs": 228,
         "relatedLinerUnresolved": 0
       }
     },
@@ -90,15 +90,15 @@
       "name": "archive-minimum",
       "ok": true,
       "severity": "error",
-      "count": 351,
+      "count": 352,
       "minimum": 300
     },
     {
       "name": "archive-declared-count",
       "ok": true,
       "severity": "error",
-      "declared": 351,
-      "actual": 351
+      "declared": 352,
+      "actual": 352
     },
     {
       "name": "ship-sitemap-reconciliation",
@@ -120,21 +120,21 @@
       "name": "random-ship-reconciliation",
       "ok": true,
       "severity": "error",
-      "expectedCount": 350,
+      "expectedCount": 351,
       "intentionalExclusions": [
         "tall-ships-guide"
       ],
       "files": [
         {
           "file": "random-ship.js",
-          "count": 350,
+          "count": 351,
           "missing": [],
           "extra": [],
           "match": true
         },
         {
           "file": "assets/random-ship.js",
-          "count": 350,
+          "count": 351,
           "missing": [],
           "extra": [],
           "match": true
@@ -165,14 +165,14 @@
         "counts": {
           "errors": 0,
           "warnings": 0,
-          "archiveCards": 351,
+          "archiveCards": 352,
           "inlineLinkErrors": 0,
           "imageErrors": 0,
           "structuralWarnings": 0,
           "yearWarnings": 0,
           "orphanGuides": 0,
           "orphanImages": 0,
-          "relatedLinerRefs": 227,
+          "relatedLinerRefs": 228,
           "relatedLinerUnresolved": 0
         }
       },
