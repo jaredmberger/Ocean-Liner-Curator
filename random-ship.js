@@ -271,6 +271,7 @@
 "/ships/rms-scotia-1861.html",
 "/ships/ss-great-western.html",
 "/ships/ss-leviathan.html",
+"/ships/rms-pendennis-castle.html",
 "/ships/rms-persia-1855.html",
 "/ships/rms-servia-1881.html",
 "/ships/ss-montclare.html",
