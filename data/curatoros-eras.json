@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:13:24.779Z",
+  "generatedAt": "2026-10-08T06:30:25.633Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 368,
-    "guidesWithServiceStart": 362,
+    "shipGuides": 370,
+    "guidesWithServiceStart": 364,
     "guidesWithExplicitServiceEnd": 282,
     "eras": 10,
     "decades": 15
@@ -1270,7 +1270,7 @@
     },
     {
       "name": "Interwar express-liner era",
-      "shipCount": 52,
+      "shipCount": 54,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -1301,11 +1301,25 @@
           "serviceEndYear": "1944"
         },
         {
+          "name": "MS Baloeran (1930)",
+          "path": "ships/ms-baloeran.html",
+          "url": "/ships/ms-baloeran",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
+        },
+        {
           "name": "MS Batory (1936)",
           "path": "ships/ms-batory.html",
           "url": "/ships/ms-batory",
           "serviceStartYear": "1936",
           "serviceEndYear": "1971"
+        },
+        {
+          "name": "MS Dempo (1931)",
+          "path": "ships/ms-dempo.html",
+          "url": "/ships/ms-dempo",
+          "serviceStartYear": "1931",
+          "serviceEndYear": null
         },
         {
           "name": "MS Félix Roussel (1931)",
@@ -3712,7 +3726,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 57,
+      "shipCount": 59,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -3743,11 +3757,25 @@
           "serviceEndYear": "1944"
         },
         {
+          "name": "MS Baloeran (1930)",
+          "path": "ships/ms-baloeran.html",
+          "url": "/ships/ms-baloeran",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
+        },
+        {
           "name": "MS Batory (1936)",
           "path": "ships/ms-batory.html",
           "url": "/ships/ms-batory",
           "serviceStartYear": "1936",
           "serviceEndYear": "1971"
+        },
+        {
+          "name": "MS Dempo (1931)",
+          "path": "ships/ms-dempo.html",
+          "url": "/ships/ms-dempo",
+          "serviceStartYear": "1931",
+          "serviceEndYear": null
         },
         {
           "name": "MS Félix Roussel (1931)",
@@ -5299,6 +5327,17 @@
       "endEvidence": "Scuttled at Genoa in 1944; recovered after the war and demolished"
     },
     {
+      "name": "MS Baloeran (1930)",
+      "path": "ships/ms-baloeran.html",
+      "url": "/ships/ms-baloeran",
+      "launchYear": "1929",
+      "serviceStartYear": "1930",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
+    },
+    {
       "name": "MS Batory (1936)",
       "path": "ships/ms-batory.html",
       "url": "/ships/ms-batory",
@@ -5319,6 +5358,17 @@
       "era": "Interwar recovery",
       "decade": "1920s",
       "endEvidence": "Wrecked off the northwest coast of Scotland, 30 April 1933, while under tow for scrapping"
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "path": "ships/ms-dempo.html",
+      "url": "/ships/ms-dempo",
+      "launchYear": "1930",
+      "serviceStartYear": "1931",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
     },
     {
       "name": "MS Félix Roussel (1931)",

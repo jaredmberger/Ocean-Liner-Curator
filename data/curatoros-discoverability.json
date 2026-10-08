@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:13:32.437Z",
+  "generatedAt": "2026-10-08T06:30:31.094Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 671,
-    "indexablePages": 655,
+    "trackedHtml": 673,
+    "indexablePages": 657,
     "priorityPages": 89,
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 2,
@@ -30,8 +30,8 @@
       "pages": 192,
       "searchEligible": 191,
       "sitemapListed": 87,
-      "editorialInbound": 1435,
-      "averageEditorialInbound": 7.47
+      "editorialInbound": 1437,
+      "averageEditorialInbound": 7.48
     },
     "bridge-page": {
       "pages": 11,
@@ -65,15 +65,15 @@
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 123,
-      "averageEditorialInbound": 30.75
+      "editorialInbound": 124,
+      "averageEditorialInbound": 31
     },
     "ship-guide": {
-      "pages": 371,
-      "searchEligible": 371,
-      "sitemapListed": 368,
-      "editorialInbound": 808,
-      "averageEditorialInbound": 2.18
+      "pages": 373,
+      "searchEligible": 373,
+      "sitemapListed": 370,
+      "editorialInbound": 809,
+      "averageEditorialInbound": 2.17
     }
   },
   "signals": {
@@ -6189,15 +6189,15 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 449,
-      "editorialInbound": 447,
+      "inboundTotal": 451,
+      "editorialInbound": 449,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
         "comparative-history": 7,
         "collection": 32,
         "evidence-methodology": 1,
-        "ship-guide": 364
+        "ship-guide": 366
       },
       "sources": [
         {
@@ -6621,6 +6621,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ms-batory.html",
           "sourceRoute": "/ships/ms-batory",
           "sourceCategory": "ship-guide",
@@ -6629,6 +6635,12 @@
         {
           "sourcePath": "ships/ms-bermuda.html",
           "sourceRoute": "/ships/ms-bermuda",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-dempo.html",
+          "sourceRoute": "/ships/ms-dempo",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -18077,15 +18089,15 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 83,
-      "editorialInbound": 78,
+      "inboundTotal": 84,
+      "editorialInbound": 79,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 38,
         "collection": 32,
         "hub": 3,
         "comparative-history": 1,
-        "ship-guide": 2,
+        "ship-guide": 3,
         "bridge-page": 2
       },
       "sources": [
@@ -18387,6 +18399,12 @@
           "sourcePath": "shipping-lines.html",
           "sourceRoute": "/shipping-lines",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -18845,6 +18863,29 @@
       ]
     },
     {
+      "path": "ships/ms-baloeran.html",
+      "route": "/ships/ms-baloeran",
+      "title": "MS Baloeran (1930)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-dempo.html",
+          "sourceRoute": "/ships/ms-dempo",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "ships/ms-batory.html",
       "route": "/ships/ms-batory",
       "title": "MS Batory (1936)",
@@ -18889,6 +18930,20 @@
           "sourceBaseline": false
         }
       ]
+    },
+    {
+      "path": "ships/ms-dempo.html",
+      "route": "/ships/ms-dempo",
+      "title": "MS Dempo (1931)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
     },
     {
       "path": "ships/ms-felix-roussel.html",

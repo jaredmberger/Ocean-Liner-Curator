@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:13:26.144Z",
+  "generatedAt": "2026-10-08T06:30:26.548Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 368,
+    "shipGuides": 370,
     "guidesWithExplicitClass": 18,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 47,
+    "explicitSisterLinks": 48,
     "unresolvedSisterMentions": 16
   },
   "classes": [
@@ -202,6 +202,19 @@
     }
   ],
   "sisterLinks": [
+    {
+      "a": {
+        "name": "MS Baloeran (1930)",
+        "path": "ships/ms-baloeran.html",
+        "url": "/ships/ms-baloeran"
+      },
+      "b": {
+        "name": "MS Dempo (1931)",
+        "path": "ships/ms-dempo.html",
+        "url": "/ships/ms-dempo"
+      },
+      "evidenceFrom": "ships/ms-baloeran.html"
+    },
     {
       "a": {
         "name": "MS Piłsudski (1935)",
@@ -959,6 +972,15 @@
       "sisters": []
     },
     {
+      "name": "MS Baloeran (1930)",
+      "path": "ships/ms-baloeran.html",
+      "url": "/ships/ms-baloeran",
+      "classes": [],
+      "sisters": [
+        "Dempo"
+      ]
+    },
+    {
       "name": "MS Batory (1936)",
       "path": "ships/ms-batory.html",
       "url": "/ships/ms-batory",
@@ -971,6 +993,15 @@
       "url": "/ships/ms-bermuda",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "path": "ships/ms-dempo.html",
+      "url": "/ships/ms-dempo",
+      "classes": [],
+      "sisters": [
+        "Baloeran"
+      ]
     },
     {
       "name": "MS Félix Roussel (1931)",

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:13:23.333Z",
+  "generatedAt": "2026-10-08T06:30:24.636Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 368,
-    "guidesWithDocumentedYard": 368,
+    "shipGuides": 370,
+    "guidesWithDocumentedYard": 370,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 78,
     "multiYardShips": 0
@@ -2559,6 +2559,42 @@
       ]
     },
     {
+      "id": "vlissingen",
+      "name": "Vlissingen",
+      "rawValues": [
+        "Vlissingen"
+      ],
+      "builders": [
+        "Koninklijke Maatschappij De Schelde",
+        "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde",
+        "N.V. Koninklijke Maatschappij De Schelde"
+      ],
+      "shipCount": 3,
+      "ships": [
+        {
+          "name": "MS Baloeran (1930)",
+          "path": "ships/ms-baloeran.html",
+          "url": "/ships/ms-baloeran",
+          "launchYear": "1929",
+          "builder": "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde"
+        },
+        {
+          "name": "MS Dempo (1931)",
+          "path": "ships/ms-dempo.html",
+          "url": "/ships/ms-dempo",
+          "launchYear": "1930",
+          "builder": "Koninklijke Maatschappij De Schelde"
+        },
+        {
+          "name": "MS Willem Ruys (1947)",
+          "path": "ships/ms-willem-ruys.html",
+          "url": "/ships/ms-willem-ruys",
+          "launchYear": "1946",
+          "builder": "N.V. Koninklijke Maatschappij De Schelde"
+        }
+      ]
+    },
+    {
       "id": "alameda-california",
       "name": "Alameda, California",
       "rawValues": [
@@ -3603,26 +3639,6 @@
       ]
     },
     {
-      "id": "vlissingen",
-      "name": "Vlissingen",
-      "rawValues": [
-        "Vlissingen"
-      ],
-      "builders": [
-        "N.V. Koninklijke Maatschappij De Schelde"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "MS Willem Ruys (1947)",
-          "path": "ships/ms-willem-ruys.html",
-          "url": "/ships/ms-willem-ruys",
-          "launchYear": "1946",
-          "builder": "N.V. Koninklijke Maatschappij De Schelde"
-        }
-      ]
-    },
-    {
       "id": "waterford",
       "name": "Waterford",
       "rawValues": [
@@ -3749,6 +3765,20 @@
       ]
     },
     {
+      "name": "MS Baloeran (1930)",
+      "path": "ships/ms-baloeran.html",
+      "url": "/ships/ms-baloeran",
+      "launchYear": "1929",
+      "assignments": [
+        {
+          "builder": "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde",
+          "builderId": "maatschappij-fijenoord-rotterdam-outfitting-at-de-schelde",
+          "location": "Vlissingen",
+          "locationRaw": "Vlissingen"
+        }
+      ]
+    },
+    {
       "name": "MS Batory (1936)",
       "path": "ships/ms-batory.html",
       "url": "/ships/ms-batory",
@@ -3773,6 +3803,20 @@
           "builderId": "workman-clark-and-co",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "path": "ships/ms-dempo.html",
+      "url": "/ships/ms-dempo",
+      "launchYear": "1930",
+      "assignments": [
+        {
+          "builder": "Koninklijke Maatschappij De Schelde",
+          "builderId": "koninklijke-maatschappij-de-schelde",
+          "location": "Vlissingen",
+          "locationRaw": "Vlissingen"
         }
       ]
     },

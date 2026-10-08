@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:13:27.929Z",
+  "generatedAt": "2026-10-08T06:30:27.812Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -11,18 +11,29 @@
     "caution": "A low inbound count is a discoverability signal, not evidence that additional links should be invented. New links should reflect a documented historical or thematic relationship."
   },
   "summary": {
-    "shipGuides": 368,
-    "editorialOrphans": 58,
-    "oneEditorialInbound": 144,
+    "shipGuides": 370,
+    "editorialOrphans": 59,
+    "oneEditorialInbound": 145,
     "threePlusEditorialInbound": 66,
-    "totalEditorialInboundLinks": 808,
-    "averageEditorialInbound": 2.2
+    "totalEditorialInboundLinks": 809,
+    "averageEditorialInbound": 2.19
   },
   "orphanedShips": [
     {
       "name": "Heian Maru (1930)",
       "slug": "heian-maru",
       "url": "/ships/heian-maru",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "slug": "ms-dempo",
+      "url": "/ships/ms-dempo",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -713,6 +724,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MS Baloeran (1930)",
+      "slug": "ms-baloeran",
+      "url": "/ships/ms-baloeran",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-dempo.html",
+          "sourceRoute": "/ships/ms-dempo",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -3409,6 +3439,17 @@
       "sources": []
     },
     {
+      "name": "MS Dempo (1931)",
+      "slug": "ms-dempo",
+      "url": "/ships/ms-dempo",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
       "url": "/ships/ms-kungsholm-1928",
@@ -4089,6 +4130,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MS Baloeran (1930)",
+      "slug": "ms-baloeran",
+      "url": "/ships/ms-baloeran",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-dempo.html",
+          "sourceRoute": "/ships/ms-dempo",
+          "sourceCategory": "ship-guide"
         }
       ]
     },

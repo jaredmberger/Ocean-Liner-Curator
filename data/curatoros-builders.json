@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T06:13:23.333Z",
+  "generatedAt": "2026-10-08T06:30:24.636Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 380,
-    "shipGuides": 368,
-    "canonicalBuilders": 92,
-    "guidesWithBuilder": 368,
+    "trackedShipHtmlFiles": 382,
+    "shipGuides": 370,
+    "canonicalBuilders": 94,
+    "guidesWithBuilder": 370,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -1308,6 +1308,28 @@
       "shipCount": 1
     },
     {
+      "id": "koninklijke-maatschappij-de-schelde",
+      "name": "Koninklijke Maatschappij De Schelde",
+      "names": [
+        "Koninklijke Maatschappij De Schelde"
+      ],
+      "rawValues": [
+        "Koninklijke Maatschappij De Schelde, Vlissingen"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "maatschappij-fijenoord-rotterdam-outfitting-at-de-schelde",
+      "name": "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde",
+      "names": [
+        "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde"
+      ],
+      "rawValues": [
+        "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde, Vlissingen"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "malcolmson-and-co",
       "name": "Malcolmson & Co.",
       "names": [
@@ -1625,6 +1647,20 @@
       ]
     },
     {
+      "name": "MS Baloeran (1930)",
+      "path": "ships/ms-baloeran.html",
+      "url": "/ships/ms-baloeran",
+      "launchYear": "1929",
+      "builderRaw": "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde, Vlissingen",
+      "builders": [
+        {
+          "id": "maatschappij-fijenoord-rotterdam-outfitting-at-de-schelde",
+          "name": "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde",
+          "raw": "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde, Vlissingen"
+        }
+      ]
+    },
+    {
       "name": "MS Batory (1936)",
       "path": "ships/ms-batory.html",
       "url": "/ships/ms-batory",
@@ -1649,6 +1685,20 @@
           "id": "workman-clark-and-co",
           "name": "Workman, Clark & Co.",
           "raw": "Workman, Clark & Co., Belfast · yard no. 494"
+        }
+      ]
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "path": "ships/ms-dempo.html",
+      "url": "/ships/ms-dempo",
+      "launchYear": "1930",
+      "builderRaw": "Koninklijke Maatschappij De Schelde, Vlissingen",
+      "builders": [
+        {
+          "id": "koninklijke-maatschappij-de-schelde",
+          "name": "Koninklijke Maatschappij De Schelde",
+          "raw": "Koninklijke Maatschappij De Schelde, Vlissingen"
         }
       ]
     },

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T06:13:23.333Z",
+  "generatedAt": "2026-10-08T06:30:24.636Z",
   "summary": {
-    "shipGuides": 368,
-    "canonicalBuilders": 92,
-    "guidesWithBuilder": 368
+    "shipGuides": 370,
+    "canonicalBuilders": 94,
+    "guidesWithBuilder": 370
   },
   "builders": [
     {
@@ -3338,6 +3338,44 @@
           "launchYear": "1881",
           "operator": "Norddeutscher Lloyd, Bremen",
           "builderRaw": "John Elder & Co., Govan, Glasgow, Scotland"
+        }
+      ]
+    },
+    {
+      "id": "koninklijke-maatschappij-de-schelde",
+      "name": "Koninklijke Maatschappij De Schelde",
+      "shipCount": 1,
+      "locations": [
+        "Vlissingen"
+      ],
+      "firstLaunchYear": 1930,
+      "lastLaunchYear": 1930,
+      "ships": [
+        {
+          "name": "MS Dempo (1931)",
+          "url": "/ships/ms-dempo",
+          "launchYear": "1930",
+          "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
+          "builderRaw": "Koninklijke Maatschappij De Schelde, Vlissingen"
+        }
+      ]
+    },
+    {
+      "id": "maatschappij-fijenoord-rotterdam-outfitting-at-de-schelde",
+      "name": "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde",
+      "shipCount": 1,
+      "locations": [
+        "Vlissingen"
+      ],
+      "firstLaunchYear": 1929,
+      "lastLaunchYear": 1929,
+      "ships": [
+        {
+          "name": "MS Baloeran (1930)",
+          "url": "/ships/ms-baloeran",
+          "launchYear": "1929",
+          "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
+          "builderRaw": "Maatschappij Fijenoord, Rotterdam; outfitting at De Schelde, Vlissingen"
         }
       ]
     },

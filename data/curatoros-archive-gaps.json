@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:13:26.213Z",
+  "generatedAt": "2026-10-08T06:30:26.613Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,18 +11,18 @@
     ]
   },
   "summary": {
-    "shipGuides": 368,
+    "shipGuides": 370,
     "relationshipCovered": 323,
-    "relationshipUncovered": 45,
-    "relationshipCoveragePct": 87.8,
-    "canonicalOperators": 89,
-    "thinOperators": 60,
+    "relationshipUncovered": 47,
+    "relationshipCoveragePct": 87.3,
+    "canonicalOperators": 91,
+    "thinOperators": 62,
     "canonicalYardLocations": 78,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 47,
+    "explicitSisterLinks": 48,
     "unresolvedSisterMentions": 16,
     "unresolvedSisterMentionsWithNoArchiveMatch": 10
   },
@@ -604,6 +604,24 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "MS Dempo (1931)",
+        "slug": "ms-dempo",
+        "url": "/ships/ms-dempo",
+        "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "MS Baloeran (1930)",
+        "slug": "ms-baloeran",
+        "url": "/ships/ms-baloeran",
+        "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "QSMV Dominion Monarch",
         "slug": "qsmv-dominion-monarch",
         "url": "/ships/qsmv-dominion-monarch",
@@ -749,6 +767,16 @@
       },
       {
         "operator": "Rederi AB Sverige-Nordamerika (Swedish American Line), 1923–1926",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -1455,6 +1483,36 @@
         "coveragePct": 0
       },
       {
+        "name": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
+        "total": 1,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "MS Dempo (1931)",
+            "slug": "ms-dempo",
+            "url": "/ships/ms-dempo",
+            "launchYear": "1930"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 0
+      },
+      {
+        "name": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
+        "total": 1,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "MS Baloeran (1930)",
+            "slug": "ms-baloeran",
+            "url": "/ships/ms-baloeran",
+            "launchYear": "1929"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 0
+      },
+      {
         "name": "Shaw, Savill & Albion Line",
         "total": 1,
         "covered": 0,
@@ -1993,10 +2051,10 @@
       },
       {
         "era": "Interwar express-liner era",
-        "shipCount": 52,
+        "shipCount": 54,
         "relationshipCovered": 46,
-        "relationshipUncovered": 6,
-        "relationshipCoveragePct": 88.5
+        "relationshipUncovered": 8,
+        "relationshipCoveragePct": 85.2
       },
       {
         "era": "Interwar recovery",
@@ -2086,10 +2144,10 @@
       },
       {
         "decade": "1930s",
-        "shipCount": 57,
+        "shipCount": 59,
         "relationshipCovered": 50,
-        "relationshipUncovered": 7,
-        "relationshipCoveragePct": 87.7
+        "relationshipUncovered": 9,
+        "relationshipCoveragePct": 84.7
       },
       {
         "decade": "1940s",
@@ -2134,6 +2192,20 @@
       "slug": "heian-maru",
       "url": "/ships/heian-maru",
       "operator": "Nippon Yusen Kaisha (NYK Line)",
+      "launchYear": "1930"
+    },
+    {
+      "name": "MS Baloeran (1930)",
+      "slug": "ms-baloeran",
+      "url": "/ships/ms-baloeran",
+      "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
+      "launchYear": "1929"
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "slug": "ms-dempo",
+      "url": "/ships/ms-dempo",
+      "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
       "launchYear": "1930"
     },
     {

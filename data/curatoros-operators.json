@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:13:23.333Z",
+  "generatedAt": "2026-10-08T06:30:24.636Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 368,
-    "guidesWithOperator": 368,
+    "shipGuides": 370,
+    "guidesWithOperator": 370,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 89,
+    "canonicalOperators": 91,
     "aliasedOperatorGroups": 24
   },
   "operators": [
@@ -641,6 +641,22 @@
       "shipCount": 1
     },
     {
+      "id": "rotterdamsche-lloyd-wm-ruys-and-zonen",
+      "name": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
+      "rawValues": [
+        "Rotterdamsche Lloyd (Wm Ruys & Zonen)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "rotterdamsche-lloyd-wm-ruys-and-zonen-rotterdam",
+      "name": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
+      "rawValues": [
+        "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "rotterdamsche-lloyd-koninklijke-rotterdamsche-lloyd-royal-rotterdam-lloyd",
       "name": "Rotterdamsche Lloyd / Koninklijke Rotterdamsche Lloyd (Royal Rotterdam Lloyd)",
       "rawValues": [
@@ -843,6 +859,14 @@
       "operator": "Navigazione Generale Italiana (NGI)"
     },
     {
+      "name": "MS Baloeran (1930)",
+      "path": "ships/ms-baloeran.html",
+      "url": "/ships/ms-baloeran",
+      "launchYear": "1929",
+      "operatorRaw": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
+      "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam"
+    },
+    {
       "name": "MS Batory (1936)",
       "path": "ships/ms-batory.html",
       "url": "/ships/ms-batory",
@@ -857,6 +881,14 @@
       "launchYear": "1927",
       "operatorRaw": "Furness Bermuda Line / Furness, Withy group",
       "operator": "Furness Bermuda Line"
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "path": "ships/ms-dempo.html",
+      "url": "/ships/ms-dempo",
+      "launchYear": "1930",
+      "operatorRaw": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
+      "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen)"
     },
     {
       "name": "MS Félix Roussel (1931)",
