@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:30:46.248Z",
+  "generatedAt": "2026-10-08T04:35:29.815Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -11,11 +11,11 @@
     "caution": "A low inbound count is a discoverability signal, not evidence that additional links should be invented. New links should reflect a documented historical or thematic relationship."
   },
   "summary": {
-    "shipGuides": 361,
+    "shipGuides": 362,
     "editorialOrphans": 55,
     "oneEditorialInbound": 145,
     "threePlusEditorialInbound": 62,
-    "totalEditorialInboundLinks": 793,
+    "totalEditorialInboundLinks": 795,
     "averageEditorialInbound": 2.2
   },
   "orphanedShips": [
@@ -45,6 +45,17 @@
       "name": "MS Oranje (1939)",
       "slug": "ms-oranje",
       "url": "/ships/ms-oranje",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "MS Oslofjord (1938)",
+      "slug": "ms-oslofjord",
+      "url": "/ships/ms-oslofjord",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -562,17 +573,6 @@
       "name": "SS Shalom (1964)",
       "slug": "ss-shalom",
       "url": "/ships/ss-shalom",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Stavangerfjord (1918)",
-      "slug": "ss-stavangerfjord",
-      "url": "/ships/ss-stavangerfjord",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -1729,25 +1729,6 @@
       ]
     },
     {
-      "name": "SS Bergensfjord",
-      "slug": "ss-bergensfjord",
-      "url": "/ships/ss-bergensfjord",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
-          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Bothnia",
       "slug": "ss-bothnia",
       "url": "/ships/ss-bothnia",
@@ -3230,6 +3211,25 @@
       ]
     },
     {
+      "name": "SS Stavangerfjord (1918)",
+      "slug": "ss-stavangerfjord",
+      "url": "/ships/ss-stavangerfjord",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-oslofjord.html",
+          "sourceRoute": "/ships/ms-oslofjord",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Storstad",
       "slug": "ss-storstad",
       "url": "/ships/ss-storstad",
@@ -3409,6 +3409,17 @@
       "name": "MS Oranje (1939)",
       "slug": "ms-oranje",
       "url": "/ships/ms-oranje",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "MS Oslofjord (1938)",
+      "slug": "ms-oslofjord",
+      "url": "/ships/ms-oslofjord",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3926,17 +3937,6 @@
       "name": "SS Shalom (1964)",
       "slug": "ss-shalom",
       "url": "/ships/ss-shalom",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS Stavangerfjord (1918)",
-      "slug": "ss-stavangerfjord",
-      "url": "/ships/ss-stavangerfjord",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -5091,25 +5091,6 @@
       ]
     },
     {
-      "name": "SS Bergensfjord",
-      "slug": "ss-bergensfjord",
-      "url": "/ships/ss-bergensfjord",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
-          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Bothnia",
       "slug": "ss-bothnia",
       "url": "/ships/ss-bothnia",
@@ -6588,6 +6569,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Stavangerfjord (1918)",
+      "slug": "ss-stavangerfjord",
+      "url": "/ships/ss-stavangerfjord",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-oslofjord.html",
+          "sourceRoute": "/ships/ms-oslofjord",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -7759,6 +7759,31 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Bergensfjord",
+      "slug": "ss-bergensfjord",
+      "url": "/ships/ss-bergensfjord",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ms-oslofjord.html",
+          "sourceRoute": "/ships/ms-oslofjord",
+          "sourceCategory": "ship-guide"
         }
       ]
     },

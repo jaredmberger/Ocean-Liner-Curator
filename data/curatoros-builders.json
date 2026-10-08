@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T04:30:43.524Z",
+  "generatedAt": "2026-10-08T04:35:27.145Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 373,
-    "shipGuides": 361,
-    "canonicalBuilders": 87,
-    "guidesWithBuilder": 361,
+    "trackedShipHtmlFiles": 374,
+    "shipGuides": 362,
+    "canonicalBuilders": 88,
+    "guidesWithBuilder": 362,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -999,6 +999,17 @@
       "shipCount": 1
     },
     {
+      "id": "ag-weser-deutsche-schiff-und-maschinenbau",
+      "name": "AG Weser / Deutsche Schiff- und Maschinenbau",
+      "names": [
+        "AG Weser / Deutsche Schiff- und Maschinenbau"
+      ],
+      "rawValues": [
+        "AG Weser / Deutsche Schiff- und Maschinenbau, Bremen"
+      ],
+      "shipCount": 1
+    },
+    {
       "id": "ateliers-et-chantiers-de-bretagne",
       "name": "Ateliers et Chantiers de Bretagne",
       "names": [
@@ -1635,6 +1646,20 @@
           "id": "n-v-nederlandsche-scheepsbouw-maatschappij",
           "name": "N.V. Nederlandsche Scheepsbouw-Maatschappij",
           "raw": "N.V. Nederlandsche Scheepsbouw-Maatschappij, Amsterdam · yard no. 270"
+        }
+      ]
+    },
+    {
+      "name": "MS Oslofjord (1938)",
+      "path": "ships/ms-oslofjord.html",
+      "url": "/ships/ms-oslofjord",
+      "launchYear": "1937",
+      "builderRaw": "AG Weser / Deutsche Schiff- und Maschinenbau, Bremen",
+      "builders": [
+        {
+          "id": "ag-weser-deutsche-schiff-und-maschinenbau",
+          "name": "AG Weser / Deutsche Schiff- und Maschinenbau",
+          "raw": "AG Weser / Deutsche Schiff- und Maschinenbau, Bremen"
         }
       ]
     },

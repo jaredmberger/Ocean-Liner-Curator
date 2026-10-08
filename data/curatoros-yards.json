@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:30:43.524Z",
+  "generatedAt": "2026-10-08T04:35:27.145Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 361,
-    "guidesWithDocumentedYard": 361,
+    "shipGuides": 362,
+    "guidesWithDocumentedYard": 362,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 76,
     "multiYardShips": 0
@@ -1717,6 +1717,63 @@
       ]
     },
     {
+      "id": "bremen",
+      "name": "Bremen",
+      "rawValues": [
+        "Bremen"
+      ],
+      "builders": [
+        "A.G. Weser / Deschimag",
+        "AG Weser",
+        "AG Weser / Deutsche Schiff- und Maschinenbau"
+      ],
+      "shipCount": 6,
+      "ships": [
+        {
+          "name": "SS Arabic (1921)",
+          "path": "ships/ss-arabic-1920.html",
+          "url": "/ships/ss-arabic-1920",
+          "launchYear": "1908",
+          "builder": "AG Weser"
+        },
+        {
+          "name": "SS Berlin (1909)",
+          "path": "ships/ss-berlin-1909.html",
+          "url": "/ships/ss-berlin-1909",
+          "launchYear": "1908",
+          "builder": "AG Weser"
+        },
+        {
+          "name": "SS Resolute",
+          "path": "ships/ss-resolute.html",
+          "url": "/ships/ss-resolute",
+          "launchYear": "1914",
+          "builder": "AG Weser"
+        },
+        {
+          "name": "SS Albertic",
+          "path": "ships/ss-albertic.html",
+          "url": "/ships/ss-albertic",
+          "launchYear": "1920",
+          "builder": "AG Weser"
+        },
+        {
+          "name": "SS Bremen",
+          "path": "ships/ss-bremen.html",
+          "url": "/ships/ss-bremen",
+          "launchYear": "1928",
+          "builder": "A.G. Weser / Deschimag"
+        },
+        {
+          "name": "MS Oslofjord (1938)",
+          "path": "ships/ms-oslofjord.html",
+          "url": "/ships/ms-oslofjord",
+          "launchYear": "1937",
+          "builder": "AG Weser / Deutsche Schiff- und Maschinenbau"
+        }
+      ]
+    },
+    {
       "id": "wallsend",
       "name": "Wallsend",
       "rawValues": [
@@ -1821,55 +1878,6 @@
           "url": "/ships/rms-windsor-castle",
           "launchYear": "1959",
           "builder": "Cammell Laird"
-        }
-      ]
-    },
-    {
-      "id": "bremen",
-      "name": "Bremen",
-      "rawValues": [
-        "Bremen"
-      ],
-      "builders": [
-        "A.G. Weser / Deschimag",
-        "AG Weser"
-      ],
-      "shipCount": 5,
-      "ships": [
-        {
-          "name": "SS Arabic (1921)",
-          "path": "ships/ss-arabic-1920.html",
-          "url": "/ships/ss-arabic-1920",
-          "launchYear": "1908",
-          "builder": "AG Weser"
-        },
-        {
-          "name": "SS Berlin (1909)",
-          "path": "ships/ss-berlin-1909.html",
-          "url": "/ships/ss-berlin-1909",
-          "launchYear": "1908",
-          "builder": "AG Weser"
-        },
-        {
-          "name": "SS Resolute",
-          "path": "ships/ss-resolute.html",
-          "url": "/ships/ss-resolute",
-          "launchYear": "1914",
-          "builder": "AG Weser"
-        },
-        {
-          "name": "SS Albertic",
-          "path": "ships/ss-albertic.html",
-          "url": "/ships/ss-albertic",
-          "launchYear": "1920",
-          "builder": "AG Weser"
-        },
-        {
-          "name": "SS Bremen",
-          "path": "ships/ss-bremen.html",
-          "url": "/ships/ss-bremen",
-          "launchYear": "1928",
-          "builder": "A.G. Weser / Deschimag"
         }
       ]
     },
@@ -3737,6 +3745,20 @@
           "builderId": "n-v-nederlandsche-scheepsbouw-maatschappij",
           "location": "Amsterdam",
           "locationRaw": "Amsterdam"
+        }
+      ]
+    },
+    {
+      "name": "MS Oslofjord (1938)",
+      "path": "ships/ms-oslofjord.html",
+      "url": "/ships/ms-oslofjord",
+      "launchYear": "1937",
+      "assignments": [
+        {
+          "builder": "AG Weser / Deutsche Schiff- und Maschinenbau",
+          "builderId": "ag-weser-deutsche-schiff-und-maschinenbau",
+          "location": "Bremen",
+          "locationRaw": "Bremen"
         }
       ]
     },

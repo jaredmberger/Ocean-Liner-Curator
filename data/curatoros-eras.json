@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:30:44.381Z",
+  "generatedAt": "2026-10-08T04:35:27.991Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 361,
-    "guidesWithServiceStart": 355,
+    "shipGuides": 362,
+    "guidesWithServiceStart": 356,
     "guidesWithExplicitServiceEnd": 279,
     "eras": 10,
     "decades": 15
@@ -1270,7 +1270,7 @@
     },
     {
       "name": "Interwar express-liner era",
-      "shipCount": 47,
+      "shipCount": 48,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -1305,6 +1305,13 @@
           "path": "ships/ms-georges-philippar.html",
           "url": "/ships/ms-georges-philippar",
           "serviceStartYear": "1932",
+          "serviceEndYear": null
+        },
+        {
+          "name": "MS Oslofjord (1938)",
+          "path": "ships/ms-oslofjord.html",
+          "url": "/ships/ms-oslofjord",
+          "serviceStartYear": "1938",
           "serviceEndYear": null
         },
         {
@@ -3663,7 +3670,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 52,
+      "shipCount": 53,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -3706,6 +3713,13 @@
           "url": "/ships/ms-oranje",
           "serviceStartYear": "1939",
           "serviceEndYear": "1979"
+        },
+        {
+          "name": "MS Oslofjord (1938)",
+          "path": "ships/ms-oslofjord.html",
+          "url": "/ships/ms-oslofjord",
+          "serviceStartYear": "1938",
+          "serviceEndYear": null
         },
         {
           "name": "MS Piłsudski (1935)",
@@ -5254,6 +5268,17 @@
       "era": "Second World War era",
       "decade": "1930s",
       "endEvidence": "Fire-damaged in 1979; sank while under tow for scrapping on 24 September 1979"
+    },
+    {
+      "name": "MS Oslofjord (1938)",
+      "path": "ships/ms-oslofjord.html",
+      "url": "/ships/ms-oslofjord",
+      "launchYear": "1937",
+      "serviceStartYear": "1938",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
     },
     {
       "name": "MS Piłsudski (1935)",

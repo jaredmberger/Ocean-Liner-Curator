@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:30:45.238Z",
+  "generatedAt": "2026-10-08T04:35:28.819Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,10 +11,10 @@
     ]
   },
   "summary": {
-    "shipGuides": 361,
+    "shipGuides": 362,
     "relationshipCovered": 323,
-    "relationshipUncovered": 38,
-    "relationshipCoveragePct": 89.5,
+    "relationshipUncovered": 39,
+    "relationshipCoveragePct": 89.2,
     "canonicalOperators": 87,
     "thinOperators": 58,
     "canonicalYardLocations": 76,
@@ -324,6 +324,24 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "MS Oslofjord (1938)",
+        "slug": "ms-oslofjord",
+        "url": "/ships/ms-oslofjord",
+        "operator": "Norwegian America Line (Den norske Amerikalinje)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Stavangerfjord (1918)",
+        "slug": "ss-stavangerfjord",
+        "url": "/ships/ss-stavangerfjord",
+        "operator": "Norwegian America Line (Den norske Amerikalinje)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "RMS Edinburgh Castle (1948)",
         "slug": "rms-edinburgh-castle",
         "url": "/ships/rms-edinburgh-castle",
@@ -495,15 +513,6 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS Stavangerfjord (1918)",
-        "slug": "ss-stavangerfjord",
-        "url": "/ships/ss-stavangerfjord",
-        "operator": "Norwegian America Line (Den norske Amerikalinje)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "SS Norge",
         "slug": "ss-norge",
         "url": "/ships/ss-norge",
@@ -628,11 +637,6 @@
       },
       {
         "operator": "Norwegian America Line",
-        "shipCount": 1,
-        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
-      },
-      {
-        "operator": "Norwegian America Line (Den norske Amerikalinje)",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -807,6 +811,11 @@
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
       {
+        "operator": "Norwegian America Line (Den norske Amerikalinje)",
+        "shipCount": 2,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
         "operator": "Pacific Mail Steamship Company",
         "shipCount": 2,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
@@ -964,6 +973,27 @@
             "slug": "ss-guglielmo-marconi",
             "url": "/ships/ss-guglielmo-marconi",
             "launchYear": "1961"
+          }
+        ],
+        "uncoveredCount": 2,
+        "coveragePct": 0
+      },
+      {
+        "name": "Norwegian America Line (Den norske Amerikalinje)",
+        "total": 2,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "MS Oslofjord (1938)",
+            "slug": "ms-oslofjord",
+            "url": "/ships/ms-oslofjord",
+            "launchYear": "1937"
+          },
+          {
+            "name": "SS Stavangerfjord (1918)",
+            "slug": "ss-stavangerfjord",
+            "url": "/ships/ss-stavangerfjord",
+            "launchYear": "1917"
           }
         ],
         "uncoveredCount": 2,
@@ -1240,21 +1270,6 @@
             "slug": "ss-elbe-1881",
             "url": "/ships/ss-elbe-1881",
             "launchYear": "1881"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
-      },
-      {
-        "name": "Norwegian America Line (Den norske Amerikalinje)",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS Stavangerfjord (1918)",
-            "slug": "ss-stavangerfjord",
-            "url": "/ships/ss-stavangerfjord",
-            "launchYear": "1917"
           }
         ],
         "uncoveredCount": 1,
@@ -1830,10 +1845,10 @@
       },
       {
         "era": "Interwar express-liner era",
-        "shipCount": 47,
+        "shipCount": 48,
         "relationshipCovered": 46,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 97.9
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 95.8
       },
       {
         "era": "Interwar recovery",
@@ -1923,10 +1938,10 @@
       },
       {
         "decade": "1930s",
-        "shipCount": 52,
+        "shipCount": 53,
         "relationshipCovered": 50,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 96.2
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 94.3
       },
       {
         "decade": "1940s",
@@ -1959,6 +1974,13 @@
     ]
   },
   "relationshipUncoveredShips": [
+    {
+      "name": "MS Oslofjord (1938)",
+      "slug": "ms-oslofjord",
+      "url": "/ships/ms-oslofjord",
+      "operator": "Norwegian America Line (Den norske Amerikalinje)",
+      "launchYear": "1937"
+    },
     {
       "name": "MS Vera Cruz (1952)",
       "slug": "ms-vera-cruz",
