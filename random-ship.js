@@ -40,6 +40,7 @@
 "/ships/ms-pilsudski.html",
 "/ships/rms-berengaria.html",
 "/ships/ss-bergensfjord.html",
+"/ships/ss-stavangerfjord.html",
 "/ships/ss-berlin-1909.html",
 "/ships/ms-bermuda.html",
 "/ships/ss-bismarck-1914.html",
