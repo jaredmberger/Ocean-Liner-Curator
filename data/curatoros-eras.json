@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:50:26.443Z",
+  "generatedAt": "2026-10-08T05:39:21.977Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 364,
-    "guidesWithServiceStart": 358,
+    "shipGuides": 365,
+    "guidesWithServiceStart": 359,
     "guidesWithExplicitServiceEnd": 281,
     "eras": 10,
     "decades": 15
@@ -1270,7 +1270,7 @@
     },
     {
       "name": "Interwar express-liner era",
-      "shipCount": 48,
+      "shipCount": 49,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -1278,6 +1278,13 @@
           "url": "/ships/athlone-castle",
           "serviceStartYear": "1936",
           "serviceEndYear": "1965"
+        },
+        {
+          "name": "Chichibu Maru (1930)",
+          "path": "ships/chichibu-maru.html",
+          "url": "/ships/chichibu-maru",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
         },
         {
           "name": "MS Aramis (1932)",
@@ -3684,7 +3691,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 53,
+      "shipCount": 54,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -3692,6 +3699,13 @@
           "url": "/ships/athlone-castle",
           "serviceStartYear": "1936",
           "serviceEndYear": "1965"
+        },
+        {
+          "name": "Chichibu Maru (1930)",
+          "path": "ships/chichibu-maru.html",
+          "url": "/ships/chichibu-maru",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
         },
         {
           "name": "MS Aramis (1932)",
@@ -5197,6 +5211,17 @@
       "era": "Interwar express-liner era",
       "decade": "1930s",
       "endEvidence": "Retired 1965; broken up at Kaohsiung, Taiwan"
+    },
+    {
+      "name": "Chichibu Maru (1930)",
+      "path": "ships/chichibu-maru.html",
+      "url": "/ships/chichibu-maru",
+      "launchYear": "1929",
+      "serviceStartYear": "1930",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
     },
     {
       "name": "MS Aramis (1932)",

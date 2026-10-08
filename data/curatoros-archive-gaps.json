@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:50:27.799Z",
+  "generatedAt": "2026-10-08T05:39:23.052Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,10 +11,10 @@
     ]
   },
   "summary": {
-    "shipGuides": 364,
+    "shipGuides": 365,
     "relationshipCovered": 323,
-    "relationshipUncovered": 41,
-    "relationshipCoveragePct": 88.7,
+    "relationshipUncovered": 42,
+    "relationshipCoveragePct": 88.5,
     "canonicalOperators": 89,
     "thinOperators": 60,
     "canonicalYardLocations": 77,
@@ -409,6 +409,15 @@
         "slug": "ss-queen-frederica",
         "url": "/ships/ss-queen-frederica",
         "operator": "Matson Navigation Company",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "Chichibu Maru (1930)",
+        "slug": "chichibu-maru",
+        "url": "/ships/chichibu-maru",
+        "operator": "Nippon Yusen Kaisha (NYK Line)",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -1139,6 +1148,21 @@
         "coveragePct": 75
       },
       {
+        "name": "Nippon Yusen Kaisha (NYK Line)",
+        "total": 4,
+        "covered": 3,
+        "uncovered": [
+          {
+            "name": "Chichibu Maru (1930)",
+            "slug": "chichibu-maru",
+            "url": "/ships/chichibu-maru",
+            "launchYear": "1929"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 75
+      },
+      {
         "name": "Allan Line",
         "total": 3,
         "covered": 2,
@@ -1492,14 +1516,6 @@
       },
       {
         "name": "New Zealand Shipping Company",
-        "total": 3,
-        "covered": 3,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
-        "name": "Nippon Yusen Kaisha (NYK Line)",
         "total": 3,
         "covered": 3,
         "uncovered": [],
@@ -1903,10 +1919,10 @@
       },
       {
         "era": "Interwar express-liner era",
-        "shipCount": 48,
+        "shipCount": 49,
         "relationshipCovered": 46,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 95.8
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 93.9
       },
       {
         "era": "Interwar recovery",
@@ -1996,10 +2012,10 @@
       },
       {
         "decade": "1930s",
-        "shipCount": 53,
+        "shipCount": 54,
         "relationshipCovered": 50,
-        "relationshipUncovered": 3,
-        "relationshipCoveragePct": 94.3
+        "relationshipUncovered": 4,
+        "relationshipCoveragePct": 92.6
       },
       {
         "decade": "1940s",
@@ -2032,6 +2048,13 @@
     ]
   },
   "relationshipUncoveredShips": [
+    {
+      "name": "Chichibu Maru (1930)",
+      "slug": "chichibu-maru",
+      "url": "/ships/chichibu-maru",
+      "operator": "Nippon Yusen Kaisha (NYK Line)",
+      "launchYear": "1929"
+    },
     {
       "name": "MS Oslofjord (1938)",
       "slug": "ms-oslofjord",

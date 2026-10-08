@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:50:29.430Z",
+  "generatedAt": "2026-10-08T05:39:24.357Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -11,14 +11,25 @@
     "caution": "A low inbound count is a discoverability signal, not evidence that additional links should be invented. New links should reflect a documented historical or thematic relationship."
   },
   "summary": {
-    "shipGuides": 364,
-    "editorialOrphans": 56,
-    "oneEditorialInbound": 145,
+    "shipGuides": 365,
+    "editorialOrphans": 57,
+    "oneEditorialInbound": 142,
     "threePlusEditorialInbound": 62,
-    "totalEditorialInboundLinks": 797,
+    "totalEditorialInboundLinks": 800,
     "averageEditorialInbound": 2.19
   },
   "orphanedShips": [
+    {
+      "name": "Chichibu Maru (1930)",
+      "slug": "chichibu-maru",
+      "url": "/ships/chichibu-maru",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
     {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
@@ -638,25 +649,6 @@
   ],
   "weaklyLinkedShips": [
     {
-      "name": "Asama Maru",
-      "slug": "asama-maru-1929",
-      "url": "/ships/asama-maru-1929",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "Monarch of Bermuda",
       "slug": "ss-monarch-of-bermuda",
       "url": "/ships/ss-monarch-of-bermuda",
@@ -824,25 +816,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "NYK Hikawa Maru",
-      "slug": "nyk-hikawa-maru",
-      "url": "/ships/nyk-hikawa-maru",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -3372,28 +3345,20 @@
           "sourceCategory": "hub-history"
         }
       ]
-    },
-    {
-      "name": "Tatsuta Maru",
-      "slug": "tatsuta-maru-1929",
-      "url": "/ships/tatsuta-maru-1929",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
     }
   ],
   "ships": [
+    {
+      "name": "Chichibu Maru (1930)",
+      "slug": "chichibu-maru",
+      "url": "/ships/chichibu-maru",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
     {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
@@ -4011,25 +3976,6 @@
       "sources": []
     },
     {
-      "name": "Asama Maru",
-      "slug": "asama-maru-1929",
-      "url": "/ships/asama-maru-1929",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "Monarch of Bermuda",
       "slug": "ss-monarch-of-bermuda",
       "url": "/ships/ss-monarch-of-bermuda",
@@ -4197,25 +4143,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "NYK Hikawa Maru",
-      "slug": "nyk-hikawa-maru",
-      "url": "/ships/nyk-hikawa-maru",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -6747,17 +6674,22 @@
       ]
     },
     {
-      "name": "Tatsuta Maru",
-      "slug": "tatsuta-maru-1929",
-      "url": "/ships/tatsuta-maru-1929",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "name": "Asama Maru",
+      "slug": "asama-maru-1929",
+      "url": "/ships/asama-maru-1929",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "ship-guide": 1
+        "ship-guide": 2
       },
       "sources": [
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
+          "sourceCategory": "ship-guide"
+        },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
@@ -6812,6 +6744,30 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "NYK Hikawa Maru",
+      "slug": "nyk-hikawa-maru",
+      "url": "/ships/nyk-hikawa-maru",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9270,6 +9226,30 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "Tatsuta Maru",
+      "slug": "tatsuta-maru-1929",
+      "url": "/ships/tatsuta-maru-1929",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
         }
       ]
     },

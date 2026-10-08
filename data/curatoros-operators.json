@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:50:24.590Z",
+  "generatedAt": "2026-10-08T05:39:20.881Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 364,
-    "guidesWithOperator": 364,
+    "shipGuides": 365,
+    "guidesWithOperator": 365,
     "guidesMissingOperator": 0,
     "canonicalOperators": 89,
     "aliasedOperatorGroups": 24
@@ -249,6 +249,15 @@
       "shipCount": 4
     },
     {
+      "id": "nippon-yusen-kaisha-nyk-line",
+      "name": "Nippon Yusen Kaisha (NYK Line)",
+      "rawValues": [
+        "Nippon Yusen Kaisha (NYK Line)",
+        "Nippon Yusen Kaisha (NYK)"
+      ],
+      "shipCount": 4
+    },
+    {
       "id": "allan-line",
       "name": "Allan Line",
       "rawValues": [
@@ -280,15 +289,6 @@
       "name": "New Zealand Shipping Company",
       "rawValues": [
         "New Zealand Shipping Company"
-      ],
-      "shipCount": 3
-    },
-    {
-      "id": "nippon-yusen-kaisha-nyk-line",
-      "name": "Nippon Yusen Kaisha (NYK Line)",
-      "rawValues": [
-        "Nippon Yusen Kaisha (NYK Line)",
-        "Nippon Yusen Kaisha (NYK)"
       ],
       "shipCount": 3
     },
@@ -808,6 +808,14 @@
       "launchYear": "1935",
       "operatorRaw": "Union-Castle Line",
       "operator": "Union-Castle Line"
+    },
+    {
+      "name": "Chichibu Maru (1930)",
+      "path": "ships/chichibu-maru.html",
+      "url": "/ships/chichibu-maru",
+      "launchYear": "1929",
+      "operatorRaw": "Nippon Yusen Kaisha (NYK Line)",
+      "operator": "Nippon Yusen Kaisha (NYK Line)"
     },
     {
       "name": "MS Aramis (1932)",

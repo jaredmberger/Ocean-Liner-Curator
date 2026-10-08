@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:50:24.590Z",
+  "generatedAt": "2026-10-08T05:39:20.881Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 364,
-    "guidesWithDocumentedYard": 364,
+    "shipGuides": 365,
+    "guidesWithDocumentedYard": 365,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 77,
     "multiYardShips": 0
@@ -2901,6 +2901,34 @@
       ]
     },
     {
+      "id": "yokohama-japan",
+      "name": "Yokohama, Japan",
+      "rawValues": [
+        "Yokohama, Japan"
+      ],
+      "builders": [
+        "Yokohama Dock Co. Ltd.",
+        "Yokohama Dock Company"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "Chichibu Maru (1930)",
+          "path": "ships/chichibu-maru.html",
+          "url": "/ships/chichibu-maru",
+          "launchYear": "1929",
+          "builder": "Yokohama Dock Company"
+        },
+        {
+          "name": "NYK Hikawa Maru",
+          "path": "ships/nyk-hikawa-maru.html",
+          "url": "/ships/nyk-hikawa-maru",
+          "launchYear": "1929",
+          "builder": "Yokohama Dock Co. Ltd."
+        }
+      ]
+    },
+    {
       "id": "birkenhead-england",
       "name": "Birkenhead, England",
       "rawValues": [
@@ -3599,26 +3627,6 @@
           "builder": "Furness, Withy & Co."
         }
       ]
-    },
-    {
-      "id": "yokohama-japan",
-      "name": "Yokohama, Japan",
-      "rawValues": [
-        "Yokohama, Japan"
-      ],
-      "builders": [
-        "Yokohama Dock Co. Ltd."
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "NYK Hikawa Maru",
-          "path": "ships/nyk-hikawa-maru.html",
-          "url": "/ships/nyk-hikawa-maru",
-          "launchYear": "1929",
-          "builder": "Yokohama Dock Co. Ltd."
-        }
-      ]
     }
   ],
   "ships": [
@@ -3647,6 +3655,20 @@
           "builderId": "harland-and-wolff",
           "location": "Belfast",
           "locationRaw": "Belfast"
+        }
+      ]
+    },
+    {
+      "name": "Chichibu Maru (1930)",
+      "path": "ships/chichibu-maru.html",
+      "url": "/ships/chichibu-maru",
+      "launchYear": "1929",
+      "assignments": [
+        {
+          "builder": "Yokohama Dock Company",
+          "builderId": "yokohama-dock-company",
+          "location": "Yokohama, Japan",
+          "locationRaw": "Yokohama, Japan"
         }
       ]
     },

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T04:50:24.590Z",
+  "generatedAt": "2026-10-08T05:39:20.881Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 376,
-    "shipGuides": 364,
-    "canonicalBuilders": 90,
-    "guidesWithBuilder": 364,
+    "trackedShipHtmlFiles": 377,
+    "shipGuides": 365,
+    "canonicalBuilders": 91,
+    "guidesWithBuilder": 365,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -1514,6 +1514,17 @@
         "Yokohama Dock Co. Ltd. (Yokohama, Japan)"
       ],
       "shipCount": 1
+    },
+    {
+      "id": "yokohama-dock-company",
+      "name": "Yokohama Dock Company",
+      "names": [
+        "Yokohama Dock Company"
+      ],
+      "rawValues": [
+        "Yokohama Dock Company, Yokohama, Japan"
+      ],
+      "shipCount": 1
     }
   ],
   "ships": [
@@ -1542,6 +1553,20 @@
           "id": "harland-and-wolff",
           "name": "Harland & Wolff",
           "raw": "Harland & Wolff, Belfast · yard no. 942"
+        }
+      ]
+    },
+    {
+      "name": "Chichibu Maru (1930)",
+      "path": "ships/chichibu-maru.html",
+      "url": "/ships/chichibu-maru",
+      "launchYear": "1929",
+      "builderRaw": "Yokohama Dock Company, Yokohama, Japan",
+      "builders": [
+        {
+          "id": "yokohama-dock-company",
+          "name": "Yokohama Dock Company",
+          "raw": "Yokohama Dock Company, Yokohama, Japan"
         }
       ]
     },
