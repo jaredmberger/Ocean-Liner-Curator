@@ -2,11 +2,11 @@
   "schema": 1,
   "project": "Ocean Liner Curator",
   "audit": "ship-archive-consistency",
-  "status": "healthy",
+  "status": "warning",
   "counts": {
     "errors": 0,
-    "warnings": 0,
-    "archiveCards": 365,
+    "warnings": 1,
+    "archiveCards": 366,
     "inlineLinkErrors": 0,
     "imageErrors": 0,
     "structuralWarnings": 0,
@@ -17,5 +17,14 @@
     "relatedLinerUnresolved": 0
   },
   "errors": [],
-  "warnings": []
+  "warnings": [
+    {
+      "code": "operator-name-variants",
+      "normalized": "nyk",
+      "variants": [
+        "NYK Line",
+        "NYK Line (Nippon Yusen Kaisha)"
+      ]
+    }
+  ]
 }

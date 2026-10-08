@@ -7,10 +7,10 @@
     "archiveGenerated": "2026-10-08"
   },
   "counts": {
-    "archive": 365,
-    "randomEligible": 364,
-    "sitemapShips": 365,
-    "deviceDetails": 365,
+    "archive": 366,
+    "randomEligible": 365,
+    "sitemapShips": 366,
+    "deviceDetails": 366,
     "errors": 0,
     "warnings": 0
   },
@@ -20,7 +20,7 @@
       "exists": true,
       "status": "ok",
       "generatedAt": "2026-10-08",
-      "count": 365
+      "count": 366
     },
     "builders": {
       "file": "data/builders.json",
@@ -40,8 +40,8 @@
       "status": "ok",
       "counts": {
         "errors": 0,
-        "warnings": 0,
-        "archiveCards": 365,
+        "warnings": 1,
+        "archiveCards": 366,
         "inlineLinkErrors": 0,
         "imageErrors": 0,
         "structuralWarnings": 0,
@@ -90,15 +90,15 @@
       "name": "archive-minimum",
       "ok": true,
       "severity": "error",
-      "count": 365,
+      "count": 366,
       "minimum": 300
     },
     {
       "name": "archive-declared-count",
       "ok": true,
       "severity": "error",
-      "declared": 365,
-      "actual": 365
+      "declared": 366,
+      "actual": 366
     },
     {
       "name": "ship-sitemap-reconciliation",
@@ -120,21 +120,21 @@
       "name": "random-ship-reconciliation",
       "ok": true,
       "severity": "error",
-      "expectedCount": 364,
+      "expectedCount": 365,
       "intentionalExclusions": [
         "tall-ships-guide"
       ],
       "files": [
         {
           "file": "random-ship.js",
-          "count": 364,
+          "count": 365,
           "missing": [],
           "extra": [],
           "match": true
         },
         {
           "file": "assets/random-ship.js",
-          "count": 364,
+          "count": 365,
           "missing": [],
           "extra": [],
           "match": true
@@ -164,8 +164,8 @@
         "status": "ok",
         "counts": {
           "errors": 0,
-          "warnings": 0,
-          "archiveCards": 365,
+          "warnings": 1,
+          "archiveCards": 366,
           "inlineLinkErrors": 0,
           "imageErrors": 0,
           "structuralWarnings": 0,
@@ -177,7 +177,7 @@
         }
       },
       "errors": 0,
-      "warnings": 0
+      "warnings": 1
     }
   ]
 }
