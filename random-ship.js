@@ -34,6 +34,7 @@
 "/ships/athlone-castle.html",
 "/ships/ms-augustus.html",
 "/ships/ss-baltic-1871.html",
+"/ships/ms-baloeran.html",
 "/ships/rms-baltic.html",
 "/ships/ss-belgenland.html",
 "/ships/ms-batory.html",
