@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-07T10:33:20.393Z",
+  "generatedAt": "2026-10-08T04:30:43.524Z",
   "summary": {
-    "shipGuides": 360,
+    "shipGuides": 361,
     "canonicalBuilders": 87,
-    "guidesWithBuilder": 360
+    "guidesWithBuilder": 361
   },
   "builders": [
     {
@@ -1860,6 +1860,54 @@
       ]
     },
     {
+      "id": "cammell-laird",
+      "name": "Cammell Laird",
+      "shipCount": 5,
+      "locations": [
+        "Birkenhead",
+        "Birkenhead, England"
+      ],
+      "firstLaunchYear": 1913,
+      "lastLaunchYear": 1959,
+      "ships": [
+        {
+          "name": "SS Bergensfjord",
+          "url": "/ships/ss-bergensfjord",
+          "launchYear": "1913",
+          "operator": "Norwegian America Line",
+          "builderRaw": "Cammell Laird, Birkenhead · yard no. 787"
+        },
+        {
+          "name": "SS Stavangerfjord (1918)",
+          "url": "/ships/ss-stavangerfjord",
+          "launchYear": "1917",
+          "operator": "Norwegian America Line (Den norske Amerikalinje)",
+          "builderRaw": "Cammell Laird & Co., Birkenhead"
+        },
+        {
+          "name": "SS De Grasse",
+          "url": "/ships/ss-de-grasse",
+          "launchYear": "1924",
+          "operator": "Compagnie Générale Transatlantique",
+          "builderRaw": "Cammell Laird & Co., Birkenhead · yard no. 886"
+        },
+        {
+          "name": "RMS Mauretania (II)",
+          "url": "/ships/rms-mauretania-ii",
+          "launchYear": "1938",
+          "operator": "Cunard-White Star Line (later Cunard Line)",
+          "builderRaw": "Cammell Laird (Birkenhead, England)"
+        },
+        {
+          "name": "RMS Windsor Castle",
+          "url": "/ships/rms-windsor-castle",
+          "launchYear": "1959",
+          "operator": "Union-Castle Mail Steamship Company",
+          "builderRaw": "Cammell Laird, Birkenhead · yard no. 1287"
+        }
+      ]
+    },
+    {
       "id": "cantieri-riuniti-dell-adriatico",
       "name": "Cantieri Riuniti dell'Adriatico",
       "shipCount": 5,
@@ -1996,47 +2044,6 @@
           "launchYear": "1924",
           "operator": "Swedish American Line",
           "builderRaw": "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999"
-        }
-      ]
-    },
-    {
-      "id": "cammell-laird",
-      "name": "Cammell Laird",
-      "shipCount": 4,
-      "locations": [
-        "Birkenhead",
-        "Birkenhead, England"
-      ],
-      "firstLaunchYear": 1913,
-      "lastLaunchYear": 1959,
-      "ships": [
-        {
-          "name": "SS Bergensfjord",
-          "url": "/ships/ss-bergensfjord",
-          "launchYear": "1913",
-          "operator": "Norwegian America Line",
-          "builderRaw": "Cammell Laird, Birkenhead · yard no. 787"
-        },
-        {
-          "name": "SS De Grasse",
-          "url": "/ships/ss-de-grasse",
-          "launchYear": "1924",
-          "operator": "Compagnie Générale Transatlantique",
-          "builderRaw": "Cammell Laird & Co., Birkenhead · yard no. 886"
-        },
-        {
-          "name": "RMS Mauretania (II)",
-          "url": "/ships/rms-mauretania-ii",
-          "launchYear": "1938",
-          "operator": "Cunard-White Star Line (later Cunard Line)",
-          "builderRaw": "Cammell Laird (Birkenhead, England)"
-        },
-        {
-          "name": "RMS Windsor Castle",
-          "url": "/ships/rms-windsor-castle",
-          "launchYear": "1959",
-          "operator": "Union-Castle Mail Steamship Company",
-          "builderRaw": "Cammell Laird, Birkenhead · yard no. 1287"
         }
       ]
     },

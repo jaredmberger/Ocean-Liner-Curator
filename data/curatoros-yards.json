@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T10:33:20.393Z",
+  "generatedAt": "2026-10-08T04:30:43.524Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 360,
-    "guidesWithDocumentedYard": 360,
+    "shipGuides": 361,
+    "guidesWithDocumentedYard": 361,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 76,
     "multiYardShips": 0
@@ -1776,6 +1776,55 @@
       ]
     },
     {
+      "id": "birkenhead",
+      "name": "Birkenhead",
+      "rawValues": [
+        "Birkenhead"
+      ],
+      "builders": [
+        "Cammell Laird",
+        "Cammell, Laird & Co. Ltd."
+      ],
+      "shipCount": 5,
+      "ships": [
+        {
+          "name": "SS Kristianiafjord (1913)",
+          "path": "ships/ss-kristianiafjord.html",
+          "url": "/ships/ss-kristianiafjord",
+          "launchYear": "1912",
+          "builder": "Cammell, Laird & Co. Ltd."
+        },
+        {
+          "name": "SS Bergensfjord",
+          "path": "ships/ss-bergensfjord.html",
+          "url": "/ships/ss-bergensfjord",
+          "launchYear": "1913",
+          "builder": "Cammell Laird"
+        },
+        {
+          "name": "SS Stavangerfjord (1918)",
+          "path": "ships/ss-stavangerfjord.html",
+          "url": "/ships/ss-stavangerfjord",
+          "launchYear": "1917",
+          "builder": "Cammell Laird"
+        },
+        {
+          "name": "SS De Grasse",
+          "path": "ships/ss-de-grasse.html",
+          "url": "/ships/ss-de-grasse",
+          "launchYear": "1924",
+          "builder": "Cammell Laird"
+        },
+        {
+          "name": "RMS Windsor Castle",
+          "path": "ships/rms-windsor-castle.html",
+          "url": "/ships/rms-windsor-castle",
+          "launchYear": "1959",
+          "builder": "Cammell Laird"
+        }
+      ]
+    },
+    {
       "id": "bremen",
       "name": "Bremen",
       "rawValues": [
@@ -2065,48 +2114,6 @@
           "url": "/ships/ss-michelangelo-1965",
           "launchYear": "1962",
           "builder": "Ansaldo"
-        }
-      ]
-    },
-    {
-      "id": "birkenhead",
-      "name": "Birkenhead",
-      "rawValues": [
-        "Birkenhead"
-      ],
-      "builders": [
-        "Cammell Laird",
-        "Cammell, Laird & Co. Ltd."
-      ],
-      "shipCount": 4,
-      "ships": [
-        {
-          "name": "SS Kristianiafjord (1913)",
-          "path": "ships/ss-kristianiafjord.html",
-          "url": "/ships/ss-kristianiafjord",
-          "launchYear": "1912",
-          "builder": "Cammell, Laird & Co. Ltd."
-        },
-        {
-          "name": "SS Bergensfjord",
-          "path": "ships/ss-bergensfjord.html",
-          "url": "/ships/ss-bergensfjord",
-          "launchYear": "1913",
-          "builder": "Cammell Laird"
-        },
-        {
-          "name": "SS De Grasse",
-          "path": "ships/ss-de-grasse.html",
-          "url": "/ships/ss-de-grasse",
-          "launchYear": "1924",
-          "builder": "Cammell Laird"
-        },
-        {
-          "name": "RMS Windsor Castle",
-          "path": "ships/rms-windsor-castle.html",
-          "url": "/ships/rms-windsor-castle",
-          "launchYear": "1959",
-          "builder": "Cammell Laird"
         }
       ]
     },
@@ -8308,6 +8315,20 @@
           "builderId": "harland-and-wolff-belfast-completed-by-wilton-s",
           "location": "Schiedam",
           "locationRaw": "Schiedam"
+        }
+      ]
+    },
+    {
+      "name": "SS Stavangerfjord (1918)",
+      "path": "ships/ss-stavangerfjord.html",
+      "url": "/ships/ss-stavangerfjord",
+      "launchYear": "1917",
+      "assignments": [
+        {
+          "builder": "Cammell Laird",
+          "builderId": "cammell-laird",
+          "location": "Birkenhead",
+          "locationRaw": "Birkenhead"
         }
       ]
     },

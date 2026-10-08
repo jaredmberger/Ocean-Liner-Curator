@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T10:33:23.362Z",
+  "generatedAt": "2026-10-08T04:30:45.238Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,12 +11,12 @@
     ]
   },
   "summary": {
-    "shipGuides": 360,
+    "shipGuides": 361,
     "relationshipCovered": 323,
-    "relationshipUncovered": 37,
-    "relationshipCoveragePct": 89.7,
-    "canonicalOperators": 86,
-    "thinOperators": 57,
+    "relationshipUncovered": 38,
+    "relationshipCoveragePct": 89.5,
+    "canonicalOperators": 87,
+    "thinOperators": 58,
     "canonicalYardLocations": 76,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
@@ -495,6 +495,15 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "SS Stavangerfjord (1918)",
+        "slug": "ss-stavangerfjord",
+        "url": "/ships/ss-stavangerfjord",
+        "operator": "Norwegian America Line (Den norske Amerikalinje)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Norge",
         "slug": "ss-norge",
         "url": "/ships/ss-norge",
@@ -619,6 +628,11 @@
       },
       {
         "operator": "Norwegian America Line",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "Norwegian America Line (Den norske Amerikalinje)",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -1232,6 +1246,21 @@
         "coveragePct": 0
       },
       {
+        "name": "Norwegian America Line (Den norske Amerikalinje)",
+        "total": 1,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "SS Stavangerfjord (1918)",
+            "slug": "ss-stavangerfjord",
+            "url": "/ships/ss-stavangerfjord",
+            "launchYear": "1917"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 0
+      },
+      {
         "name": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
         "total": 1,
         "covered": 0,
@@ -1773,10 +1802,10 @@
       },
       {
         "era": "First World War era",
-        "shipCount": 15,
+        "shipCount": 16,
         "relationshipCovered": 15,
-        "relationshipUncovered": 0,
-        "relationshipCoveragePct": 100
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 93.8
       },
       {
         "era": "Pioneer steam era",
@@ -1880,10 +1909,10 @@
       },
       {
         "decade": "1910s",
-        "shipCount": 37,
+        "shipCount": 38,
         "relationshipCovered": 36,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 97.3
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 94.7
       },
       {
         "decade": "1920s",
@@ -2160,6 +2189,13 @@
       "url": "/ships/ss-santa-maria",
       "operator": "Companhia Colonial de Navegação",
       "launchYear": "1952"
+    },
+    {
+      "name": "SS Stavangerfjord (1918)",
+      "slug": "ss-stavangerfjord",
+      "url": "/ships/ss-stavangerfjord",
+      "operator": "Norwegian America Line (Den norske Amerikalinje)",
+      "launchYear": "1917"
     },
     {
       "name": "SS Vestris",

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T10:33:20.393Z",
+  "generatedAt": "2026-10-08T04:30:43.524Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 372,
-    "shipGuides": 360,
+    "trackedShipHtmlFiles": 373,
+    "shipGuides": 361,
     "canonicalBuilders": 87,
-    "guidesWithBuilder": 360,
+    "guidesWithBuilder": 361,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -628,6 +628,22 @@
       "shipCount": 5
     },
     {
+      "id": "cammell-laird",
+      "name": "Cammell Laird",
+      "names": [
+        "Cammell Laird",
+        "Cammell Laird & Co."
+      ],
+      "rawValues": [
+        "Cammell Laird & Co., Birkenhead",
+        "Cammell Laird & Co., Birkenhead · yard no. 886",
+        "Cammell Laird (Birkenhead, England)",
+        "Cammell Laird, Birkenhead · yard no. 1287",
+        "Cammell Laird, Birkenhead · yard no. 787"
+      ],
+      "shipCount": 5
+    },
+    {
       "id": "cantieri-riuniti-dell-adriatico",
       "name": "Cantieri Riuniti dell'Adriatico",
       "names": [
@@ -673,21 +689,6 @@
         "Armstrong, Whitworth & Co. Ltd., High Walker-on-Tyne · yard no. 970",
         "Armstrong, Whitworth & Co., High Walker, Newcastle upon Tyne · yard no. 999",
         "Armstrong, Whitworth & Co., Low Walker, Newcastle · yard no. 824"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "cammell-laird",
-      "name": "Cammell Laird",
-      "names": [
-        "Cammell Laird",
-        "Cammell Laird & Co."
-      ],
-      "rawValues": [
-        "Cammell Laird & Co., Birkenhead · yard no. 886",
-        "Cammell Laird (Birkenhead, England)",
-        "Cammell Laird, Birkenhead · yard no. 1287",
-        "Cammell Laird, Birkenhead · yard no. 787"
       ],
       "shipCount": 4
     },
@@ -6217,6 +6218,20 @@
           "id": "harland-and-wolff-belfast-completed-by-wilton-s",
           "name": "Harland & Wolff, Belfast; completed by Wilton's",
           "raw": "Harland & Wolff, Belfast; completed by Wilton's, Schiedam"
+        }
+      ]
+    },
+    {
+      "name": "SS Stavangerfjord (1918)",
+      "path": "ships/ss-stavangerfjord.html",
+      "url": "/ships/ss-stavangerfjord",
+      "launchYear": "1917",
+      "builderRaw": "Cammell Laird & Co., Birkenhead",
+      "builders": [
+        {
+          "id": "cammell-laird",
+          "name": "Cammell Laird",
+          "raw": "Cammell Laird & Co., Birkenhead"
         }
       ]
     },

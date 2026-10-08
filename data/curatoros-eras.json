@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T10:33:21.918Z",
+  "generatedAt": "2026-10-08T04:30:44.381Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 360,
-    "guidesWithServiceStart": 354,
-    "guidesWithExplicitServiceEnd": 278,
+    "shipGuides": 361,
+    "guidesWithServiceStart": 355,
+    "guidesWithExplicitServiceEnd": 279,
     "eras": 10,
     "decades": 15
   },
@@ -2295,7 +2295,7 @@
     },
     {
       "name": "First World War era",
-      "shipCount": 15,
+      "shipCount": 16,
       "ships": [
         {
           "name": "RMS Aquitania",
@@ -2387,6 +2387,13 @@
           "url": "/ships/ss-reliance",
           "serviceStartYear": "1914",
           "serviceEndYear": null
+        },
+        {
+          "name": "SS Stavangerfjord (1918)",
+          "path": "ships/ss-stavangerfjord.html",
+          "url": "/ships/ss-stavangerfjord",
+          "serviceStartYear": "1918",
+          "serviceEndYear": "1964"
         },
         {
           "name": "SS Vaterland",
@@ -4026,7 +4033,7 @@
     },
     {
       "name": "1910s",
-      "shipCount": 37,
+      "shipCount": 38,
       "ships": [
         {
           "name": "RMS Alaunia (1913)",
@@ -4251,6 +4258,13 @@
           "url": "/ships/ss-rochambeau",
           "serviceStartYear": "1911",
           "serviceEndYear": "1934"
+        },
+        {
+          "name": "SS Stavangerfjord (1918)",
+          "path": "ships/ss-stavangerfjord.html",
+          "url": "/ships/ss-stavangerfjord",
+          "serviceStartYear": "1918",
+          "serviceEndYear": "1964"
         },
         {
           "name": "SS Storstad",
@@ -8837,6 +8851,17 @@
       "era": "Interwar recovery",
       "decade": "1920s",
       "endEvidence": "Burned out during fighting in Rotterdam, May 1940; wreck dismantled"
+    },
+    {
+      "name": "SS Stavangerfjord (1918)",
+      "path": "ships/ss-stavangerfjord.html",
+      "url": "/ships/ss-stavangerfjord",
+      "launchYear": "1917",
+      "serviceStartYear": "1918",
+      "serviceEndYear": "1964",
+      "era": "First World War era",
+      "decade": "1910s",
+      "endEvidence": "Sold for demolition in Hong Kong; broken up 1964"
     },
     {
       "name": "SS Storstad",

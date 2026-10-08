@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T10:33:20.393Z",
+  "generatedAt": "2026-10-08T04:30:43.524Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 360,
-    "guidesWithOperator": 360,
+    "shipGuides": 361,
+    "guidesWithOperator": 361,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 86,
+    "canonicalOperators": 87,
     "aliasedOperatorGroups": 24
   },
   "operators": [
@@ -580,6 +580,14 @@
       "name": "Norwegian America Line",
       "rawValues": [
         "Norwegian America Line"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "norwegian-america-line-den-norske-amerikalinje",
+      "name": "Norwegian America Line (Den norske Amerikalinje)",
+      "rawValues": [
+        "Norwegian America Line (Den norske Amerikalinje)"
       ],
       "shipCount": 1
     },
@@ -3472,6 +3480,14 @@
       "launchYear": "1924",
       "operatorRaw": "Holland America Line",
       "operator": "Holland America Line"
+    },
+    {
+      "name": "SS Stavangerfjord (1918)",
+      "path": "ships/ss-stavangerfjord.html",
+      "url": "/ships/ss-stavangerfjord",
+      "launchYear": "1917",
+      "operatorRaw": "Norwegian America Line (Den norske Amerikalinje)",
+      "operator": "Norwegian America Line (Den norske Amerikalinje)"
     },
     {
       "name": "SS Storstad",
