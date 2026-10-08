@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:30:27.812Z",
+  "generatedAt": "2026-10-08T06:45:06.362Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,10 +12,10 @@
   },
   "summary": {
     "shipGuides": 370,
-    "editorialOrphans": 59,
-    "oneEditorialInbound": 145,
+    "editorialOrphans": 57,
+    "oneEditorialInbound": 147,
     "threePlusEditorialInbound": 66,
-    "totalEditorialInboundLinks": 809,
+    "totalEditorialInboundLinks": 811,
     "averageEditorialInbound": 2.19
   },
   "orphanedShips": [
@@ -23,17 +23,6 @@
       "name": "Heian Maru (1930)",
       "slug": "heian-maru",
       "url": "/ships/heian-maru",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Dempo (1931)",
-      "slug": "ms-dempo",
-      "url": "/ships/ms-dempo",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -537,17 +526,6 @@
       "sources": []
     },
     {
-      "name": "SS President Cleveland (1947)",
-      "slug": "ss-president-cleveland",
-      "url": "/ships/ss-president-cleveland",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS President Coolidge",
       "slug": "ss-president-coolidge",
       "url": "/ships/ss-president-coolidge",
@@ -781,6 +759,25 @@
           "sourcePath": "collections/cabin-liner-transition.html",
           "sourceRoute": "/collections/cabin-liner-transition",
           "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "slug": "ms-dempo",
+      "url": "/ships/ms-dempo",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -3042,6 +3039,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS President Cleveland (1947)",
+      "slug": "ss-president-cleveland",
+      "url": "/ships/ss-president-cleveland",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-president-wilson.html",
+          "sourceRoute": "/ships/ss-president-wilson",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -3439,17 +3455,6 @@
       "sources": []
     },
     {
-      "name": "MS Dempo (1931)",
-      "slug": "ms-dempo",
-      "url": "/ships/ms-dempo",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
       "url": "/ships/ms-kungsholm-1928",
@@ -3945,17 +3950,6 @@
       "sources": []
     },
     {
-      "name": "SS President Cleveland (1947)",
-      "slug": "ss-president-cleveland",
-      "url": "/ships/ss-president-cleveland",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS President Coolidge",
       "slug": "ss-president-coolidge",
       "url": "/ships/ss-president-coolidge",
@@ -4187,6 +4181,25 @@
           "sourcePath": "collections/cabin-liner-transition.html",
           "sourceRoute": "/collections/cabin-liner-transition",
           "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "slug": "ms-dempo",
+      "url": "/ships/ms-dempo",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -6448,6 +6461,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS President Cleveland (1947)",
+      "slug": "ss-president-cleveland",
+      "url": "/ships/ss-president-cleveland",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-president-wilson.html",
+          "sourceRoute": "/ships/ss-president-wilson",
+          "sourceCategory": "ship-guide"
         }
       ]
     },

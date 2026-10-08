@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:30:31.094Z",
+  "generatedAt": "2026-10-08T06:45:09.177Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -65,14 +65,14 @@
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 124,
-      "averageEditorialInbound": 31
+      "editorialInbound": 123,
+      "averageEditorialInbound": 30.75
     },
     "ship-guide": {
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 809,
+      "editorialInbound": 811,
       "averageEditorialInbound": 2.17
     }
   },
@@ -18089,15 +18089,15 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 84,
-      "editorialInbound": 79,
+      "inboundTotal": 83,
+      "editorialInbound": 78,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 38,
         "collection": 32,
         "hub": 3,
         "comparative-history": 1,
-        "ship-guide": 3,
+        "ship-guide": 2,
         "bridge-page": 2
       },
       "sources": [
@@ -18434,12 +18434,6 @@
         {
           "sourcePath": "ships/ss-drottningholm.html",
           "sourceRoute": "/ships/ss-drottningholm",
-          "sourceCategory": "ship-guide",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "ships/ss-president-wilson.html",
-          "sourceRoute": "/ships/ss-president-wilson",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -18939,11 +18933,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ms-felix-roussel.html",
@@ -28321,11 +28324,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-president-wilson.html",
+          "sourceRoute": "/ships/ss-president-wilson",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ss-president-coolidge.html",
