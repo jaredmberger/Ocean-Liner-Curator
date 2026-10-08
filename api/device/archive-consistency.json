@@ -5,7 +5,7 @@
   "status": "warning",
   "counts": {
     "errors": 0,
-    "warnings": 1,
+    "warnings": 2,
     "archiveCards": 371,
     "inlineLinkErrors": 0,
     "imageErrors": 0,
@@ -18,6 +18,12 @@
   },
   "errors": [],
   "warnings": [
+    {
+      "code": "card-title-name-mismatch",
+      "slug": "ss-storstad",
+      "card": "SS Storstad",
+      "title": "SS Storstad: Empress of Ireland Collision (1914) | Ocean Liner Curator"
+    },
     {
       "code": "operator-name-variants",
       "normalized": "nyk",
