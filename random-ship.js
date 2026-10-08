@@ -218,6 +218,7 @@
 "/ships/ss-president-hoover.html",
 "/ships/ss-president-lincoln.html",
 "/ships/ss-president-roosevelt.html",
+"/ships/ss-president-wilson.html",
 "/ships/ss-principessa-mafalda.html",
 "/ships/ss-prinz-friedrich-wilhelm.html",
 "/ships/rms-queen-elizabeth.html",
