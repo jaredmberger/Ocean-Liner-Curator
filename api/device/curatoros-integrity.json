@@ -4,13 +4,13 @@
   "system": "CuratorOS",
   "status": "healthy",
   "generatedFrom": {
-    "archiveGenerated": "2026-10-07"
+    "archiveGenerated": "2026-10-08"
   },
   "counts": {
-    "archive": 361,
-    "randomEligible": 360,
-    "sitemapShips": 361,
-    "deviceDetails": 361,
+    "archive": 362,
+    "randomEligible": 361,
+    "sitemapShips": 362,
+    "deviceDetails": 362,
     "errors": 0,
     "warnings": 0
   },
@@ -19,8 +19,8 @@
       "file": "api/device/archive.json",
       "exists": true,
       "status": "ok",
-      "generatedAt": "2026-10-07",
-      "count": 361
+      "generatedAt": "2026-10-08",
+      "count": 362
     },
     "builders": {
       "file": "data/builders.json",
@@ -41,7 +41,7 @@
       "counts": {
         "errors": 0,
         "warnings": 0,
-        "archiveCards": 361,
+        "archiveCards": 362,
         "inlineLinkErrors": 0,
         "imageErrors": 0,
         "structuralWarnings": 0,
@@ -90,15 +90,15 @@
       "name": "archive-minimum",
       "ok": true,
       "severity": "error",
-      "count": 361,
+      "count": 362,
       "minimum": 300
     },
     {
       "name": "archive-declared-count",
       "ok": true,
       "severity": "error",
-      "declared": 361,
-      "actual": 361
+      "declared": 362,
+      "actual": 362
     },
     {
       "name": "ship-sitemap-reconciliation",
@@ -120,21 +120,21 @@
       "name": "random-ship-reconciliation",
       "ok": true,
       "severity": "error",
-      "expectedCount": 360,
+      "expectedCount": 361,
       "intentionalExclusions": [
         "tall-ships-guide"
       ],
       "files": [
         {
           "file": "random-ship.js",
-          "count": 360,
+          "count": 361,
           "missing": [],
           "extra": [],
           "match": true
         },
         {
           "file": "assets/random-ship.js",
-          "count": 360,
+          "count": 361,
           "missing": [],
           "extra": [],
           "match": true
@@ -165,7 +165,7 @@
         "counts": {
           "errors": 0,
           "warnings": 0,
-          "archiveCards": 361,
+          "archiveCards": 362,
           "inlineLinkErrors": 0,
           "imageErrors": 0,
           "structuralWarnings": 0,
