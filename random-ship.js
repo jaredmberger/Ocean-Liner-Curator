@@ -90,6 +90,7 @@
 "/ships/ss-cymric.html",
 "/ships/ss-dakota.html",
 "/ships/ss-de-grasse.html",
+"/ships/ms-dempo.html",
 "/ships/ss-deutschland.html",
 "/ships/qsmv-dominion-monarch.html",
 "/ships/ss-doric.html",
