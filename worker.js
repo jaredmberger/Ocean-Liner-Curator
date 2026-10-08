@@ -12,9 +12,9 @@ export default {
     const url = new URL(request.url);
 
     if (url.hostname.toLowerCase() === "www.oceanliners.net") {
-      url.protocol = "https:";
-      url.hostname = CANONICAL_HOST;
-      return Response.redirect(url.toString(), 301);
+      const redirectTarget =
+        CANONICAL_ORIGIN + encodeURI(url.pathname) + url.search;
+      return Response.redirect(redirectTarget, 301);
     }
 
     const response = await env.ASSETS.fetch(request);
