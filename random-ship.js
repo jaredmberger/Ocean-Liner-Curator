@@ -127,6 +127,7 @@
 "/ships/ss-hamburg-1925.html",
 "/ships/nyk-hikawa-maru.html",
 "/ships/ss-himalaya.html",
+"/ships/heian-maru.html",
 "/ships/ss-hibernia-1843.html",
 "/ships/ss-hibernia.html",
 "/ships/rms-homeric.html",
