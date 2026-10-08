@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:35:28.819Z",
+  "generatedAt": "2026-10-08T04:40:08.665Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,20 +11,20 @@
     ]
   },
   "summary": {
-    "shipGuides": 362,
+    "shipGuides": 363,
     "relationshipCovered": 323,
-    "relationshipUncovered": 39,
-    "relationshipCoveragePct": 89.2,
-    "canonicalOperators": 87,
-    "thinOperators": 58,
-    "canonicalYardLocations": 76,
+    "relationshipUncovered": 40,
+    "relationshipCoveragePct": 89,
+    "canonicalOperators": 88,
+    "thinOperators": 59,
+    "canonicalYardLocations": 77,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
     "explicitSisterLinks": 45,
-    "unresolvedSisterMentions": 14,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 8
+    "unresolvedSisterMentions": 15,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 9
   },
   "signals": {
     "sisterShipResearchCandidates": [
@@ -67,6 +67,13 @@
         "ship": "SS La Bourgogne",
         "path": "ships/ss-la-bourgogne.html",
         "mentioned": "La Gascogne",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "SS President Wilson (1948)",
+        "path": "ships/ss-president-wilson.html",
+        "mentioned": "President Cleveland",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -169,6 +176,13 @@
         "mentioned": "Orcades",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
+      {
+        "ship": "SS President Wilson (1948)",
+        "path": "ships/ss-president-wilson.html",
+        "mentioned": "President Cleveland",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
         "ship": "SS Scharnhorst",
@@ -432,6 +446,15 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "SS President Wilson (1948)",
+        "slug": "ss-president-wilson",
+        "url": "/ships/ss-president-wilson",
+        "operator": "American President Lines (APL)",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Letitia",
         "slug": "ss-letitia",
         "url": "/ships/ss-letitia",
@@ -542,6 +565,11 @@
     "thinOperatorRepresentation": [
       {
         "operator": "A. F. Klaveness",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "American President Lines (APL)",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -1139,6 +1167,21 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 50
+      },
+      {
+        "name": "American President Lines (APL)",
+        "total": 1,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "SS President Wilson (1948)",
+            "slug": "ss-president-wilson",
+            "url": "/ships/ss-president-wilson",
+            "launchYear": "1947"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 0
       },
       {
         "name": "Anchor-Donaldson Line; later Donaldson Atlantic Line and Donaldson Brothers & Black management in postwar service",
@@ -1831,10 +1874,10 @@
       },
       {
         "era": "Postwar liner renaissance",
-        "shipCount": 27,
+        "shipCount": 28,
         "relationshipCovered": 21,
-        "relationshipUncovered": 6,
-        "relationshipCoveragePct": 77.8
+        "relationshipUncovered": 7,
+        "relationshipCoveragePct": 75
       },
       {
         "era": "Late Victorian expansion",
@@ -1945,10 +1988,10 @@
       },
       {
         "decade": "1940s",
-        "shipCount": 8,
+        "shipCount": 9,
         "relationshipCovered": 7,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 87.5
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 77.8
       },
       {
         "decade": "1950s",
@@ -2197,6 +2240,13 @@
       "url": "/ships/ss-president-lincoln",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1903"
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "slug": "ss-president-wilson",
+      "url": "/ships/ss-president-wilson",
+      "operator": "American President Lines (APL)",
+      "launchYear": "1947"
     },
     {
       "name": "SS Queen Frederica (1955)",

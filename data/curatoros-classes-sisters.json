@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:35:28.767Z",
+  "generatedAt": "2026-10-08T04:40:08.590Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 362,
+    "shipGuides": 363,
     "guidesWithExplicitClass": 18,
     "canonicalClasses": 10,
     "explicitSisterLinks": 45,
-    "unresolvedSisterMentions": 14
+    "unresolvedSisterMentions": 15
   },
   "classes": [
     {
@@ -860,6 +860,12 @@
       "path": "ships/ss-orion.html",
       "mentioned": "Orcades",
       "candidateCount": 2
+    },
+    {
+      "ship": "SS President Wilson (1948)",
+      "path": "ships/ss-president-wilson.html",
+      "mentioned": "President Cleveland",
+      "candidateCount": 0
     },
     {
       "ship": "SS Scharnhorst",
@@ -3212,6 +3218,15 @@
       "classes": [],
       "sisters": [
         "President Harding"
+      ]
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "path": "ships/ss-president-wilson.html",
+      "url": "/ships/ss-president-wilson",
+      "classes": [],
+      "sisters": [
+        "President Cleveland"
       ]
     },
     {

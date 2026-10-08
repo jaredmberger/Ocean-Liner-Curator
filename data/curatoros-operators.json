@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:35:27.145Z",
+  "generatedAt": "2026-10-08T04:40:05.849Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 362,
-    "guidesWithOperator": 362,
+    "shipGuides": 363,
+    "guidesWithOperator": 363,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 87,
+    "canonicalOperators": 88,
     "aliasedOperatorGroups": 24
   },
   "operators": [
@@ -436,6 +436,14 @@
       "name": "A. F. Klaveness",
       "rawValues": [
         "A. F. Klaveness"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "american-president-lines-apl",
+      "name": "American President Lines (APL)",
+      "rawValues": [
+        "American President Lines (APL)"
       ],
       "shipCount": 1
     },
@@ -3272,6 +3280,14 @@
       "launchYear": null,
       "operatorRaw": "United States Lines",
       "operator": "United States Lines"
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "path": "ships/ss-president-wilson.html",
+      "url": "/ships/ss-president-wilson",
+      "launchYear": "1947",
+      "operatorRaw": "American President Lines (APL)",
+      "operator": "American President Lines (APL)"
     },
     {
       "name": "SS Pretoria",

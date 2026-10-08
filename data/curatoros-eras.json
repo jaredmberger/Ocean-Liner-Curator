@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:35:27.991Z",
+  "generatedAt": "2026-10-08T04:40:07.264Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 362,
-    "guidesWithServiceStart": 356,
-    "guidesWithExplicitServiceEnd": 279,
+    "shipGuides": 363,
+    "guidesWithServiceStart": 357,
+    "guidesWithExplicitServiceEnd": 280,
     "eras": 10,
     "decades": 15
   },
@@ -1919,7 +1919,7 @@
     },
     {
       "name": "Postwar liner renaissance",
-      "shipCount": 27,
+      "shipCount": 28,
       "ships": [
         {
           "name": "MS Stockholm (1948)",
@@ -2074,6 +2074,13 @@
           "url": "/ships/ss-independence",
           "serviceStartYear": "1951",
           "serviceEndYear": "2010"
+        },
+        {
+          "name": "SS President Wilson (1948)",
+          "path": "ships/ss-president-wilson.html",
+          "url": "/ships/ss-president-wilson",
+          "serviceStartYear": "1948",
+          "serviceEndYear": "1984"
         },
         {
           "name": "SS Rotterdam (1959)",
@@ -4860,6 +4867,75 @@
       ]
     },
     {
+      "name": "1940s",
+      "shipCount": 9,
+      "ships": [
+        {
+          "name": "MS Stockholm (1948)",
+          "path": "ships/ms-stockholm.html",
+          "url": "/ships/ms-stockholm",
+          "serviceStartYear": "1946",
+          "serviceEndYear": "2025"
+        },
+        {
+          "name": "MS Willem Ruys (1947)",
+          "path": "ships/ms-willem-ruys.html",
+          "url": "/ships/ms-willem-ruys",
+          "serviceStartYear": "1947",
+          "serviceEndYear": null
+        },
+        {
+          "name": "RMS Caronia (1947)",
+          "path": "ships/rms-caronia-1947.html",
+          "url": "/ships/rms-caronia-1947",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1974"
+        },
+        {
+          "name": "RMS Edinburgh Castle (1948)",
+          "path": "ships/rms-edinburgh-castle.html",
+          "url": "/ships/rms-edinburgh-castle",
+          "serviceStartYear": "1948",
+          "serviceEndYear": "1976"
+        },
+        {
+          "name": "RMS Orcades (1948)",
+          "path": "ships/rms-orcades-1948.html",
+          "url": "/ships/rms-orcades-1948",
+          "serviceStartYear": "1948",
+          "serviceEndYear": "1973"
+        },
+        {
+          "name": "SS America",
+          "path": "ships/ss-america.html",
+          "url": "/ships/ss-america",
+          "serviceStartYear": "1940",
+          "serviceEndYear": "1994"
+        },
+        {
+          "name": "SS Chusan (1950)",
+          "path": "ships/ss-chusan.html",
+          "url": "/ships/ss-chusan",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1973"
+        },
+        {
+          "name": "SS Himalaya (1949)",
+          "path": "ships/ss-himalaya.html",
+          "url": "/ships/ss-himalaya",
+          "serviceStartYear": "1949",
+          "serviceEndYear": "1975"
+        },
+        {
+          "name": "SS President Wilson (1948)",
+          "path": "ships/ss-president-wilson.html",
+          "url": "/ships/ss-president-wilson",
+          "serviceStartYear": "1948",
+          "serviceEndYear": "1984"
+        }
+      ]
+    },
+    {
       "name": "1860s",
       "shipCount": 8,
       "ships": [
@@ -4918,68 +4994,6 @@
           "url": "/ships/ss-russia-1867",
           "serviceStartYear": "1867",
           "serviceEndYear": null
-        }
-      ]
-    },
-    {
-      "name": "1940s",
-      "shipCount": 8,
-      "ships": [
-        {
-          "name": "MS Stockholm (1948)",
-          "path": "ships/ms-stockholm.html",
-          "url": "/ships/ms-stockholm",
-          "serviceStartYear": "1946",
-          "serviceEndYear": "2025"
-        },
-        {
-          "name": "MS Willem Ruys (1947)",
-          "path": "ships/ms-willem-ruys.html",
-          "url": "/ships/ms-willem-ruys",
-          "serviceStartYear": "1947",
-          "serviceEndYear": null
-        },
-        {
-          "name": "RMS Caronia (1947)",
-          "path": "ships/rms-caronia-1947.html",
-          "url": "/ships/rms-caronia-1947",
-          "serviceStartYear": "1949",
-          "serviceEndYear": "1974"
-        },
-        {
-          "name": "RMS Edinburgh Castle (1948)",
-          "path": "ships/rms-edinburgh-castle.html",
-          "url": "/ships/rms-edinburgh-castle",
-          "serviceStartYear": "1948",
-          "serviceEndYear": "1976"
-        },
-        {
-          "name": "RMS Orcades (1948)",
-          "path": "ships/rms-orcades-1948.html",
-          "url": "/ships/rms-orcades-1948",
-          "serviceStartYear": "1948",
-          "serviceEndYear": "1973"
-        },
-        {
-          "name": "SS America",
-          "path": "ships/ss-america.html",
-          "url": "/ships/ss-america",
-          "serviceStartYear": "1940",
-          "serviceEndYear": "1994"
-        },
-        {
-          "name": "SS Chusan (1950)",
-          "path": "ships/ss-chusan.html",
-          "url": "/ships/ss-chusan",
-          "serviceStartYear": "1949",
-          "serviceEndYear": "1973"
-        },
-        {
-          "name": "SS Himalaya (1949)",
-          "path": "ships/ss-himalaya.html",
-          "url": "/ships/ss-himalaya",
-          "serviceStartYear": "1949",
-          "serviceEndYear": "1975"
         }
       ]
     },
@@ -8579,6 +8593,17 @@
       "era": "Interwar recovery",
       "decade": "1920s",
       "endEvidence": "Decommissioned 7 March 1946; scrapped in 1948"
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "path": "ships/ss-president-wilson.html",
+      "url": "/ships/ss-president-wilson",
+      "launchYear": "1947",
+      "serviceStartYear": "1948",
+      "serviceEndYear": "1984",
+      "era": "Postwar liner renaissance",
+      "decade": "1940s",
+      "endEvidence": "Scrapped in 1984 according to MARAD-associated summaries; published disposal dates vary"
     },
     {
       "name": "SS Pretoria",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:35:29.815Z",
+  "generatedAt": "2026-10-08T04:40:10.343Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -11,12 +11,12 @@
     "caution": "A low inbound count is a discoverability signal, not evidence that additional links should be invented. New links should reflect a documented historical or thematic relationship."
   },
   "summary": {
-    "shipGuides": 362,
-    "editorialOrphans": 55,
-    "oneEditorialInbound": 145,
+    "shipGuides": 363,
+    "editorialOrphans": 56,
+    "oneEditorialInbound": 144,
     "threePlusEditorialInbound": 62,
-    "totalEditorialInboundLinks": 795,
-    "averageEditorialInbound": 2.2
+    "totalEditorialInboundLinks": 796,
+    "averageEditorialInbound": 2.19
   },
   "orphanedShips": [
     {
@@ -529,6 +529,17 @@
       "name": "SS President Hoover",
       "slug": "ss-president-hoover",
       "url": "/ships/ss-president-hoover",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "slug": "ss-president-wilson",
+      "url": "/ships/ss-president-wilson",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3002,25 +3013,6 @@
       ]
     },
     {
-      "name": "SS President Roosevelt (1922)",
-      "slug": "ss-president-roosevelt",
-      "url": "/ships/ss-president-roosevelt",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Pretoria",
       "slug": "ss-pretoria",
       "url": "/ships/ss-pretoria",
@@ -3893,6 +3885,17 @@
       "name": "SS President Hoover",
       "slug": "ss-president-hoover",
       "url": "/ships/ss-president-hoover",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "slug": "ss-president-wilson",
+      "url": "/ships/ss-president-wilson",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -6364,25 +6367,6 @@
       ]
     },
     {
-      "name": "SS President Roosevelt (1922)",
-      "slug": "ss-president-roosevelt",
-      "url": "/ships/ss-president-roosevelt",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "SS Pretoria",
       "slug": "ss-pretoria",
       "url": "/ships/ss-pretoria",
@@ -8803,6 +8787,31 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS President Roosevelt (1922)",
+      "slug": "ss-president-roosevelt",
+      "url": "/ships/ss-president-roosevelt",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ss-president-wilson.html",
+          "sourceRoute": "/ships/ss-president-wilson",
+          "sourceCategory": "ship-guide"
         }
       ]
     },

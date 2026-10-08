@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T04:35:27.145Z",
+  "generatedAt": "2026-10-08T04:40:05.849Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 374,
-    "shipGuides": 362,
-    "canonicalBuilders": 88,
-    "guidesWithBuilder": 362,
+    "trackedShipHtmlFiles": 375,
+    "shipGuides": 363,
+    "canonicalBuilders": 89,
+    "guidesWithBuilder": 363,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -1028,6 +1028,17 @@
       ],
       "rawValues": [
         "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "bethlehem-steel-company",
+      "name": "Bethlehem Steel Company",
+      "names": [
+        "Bethlehem Steel Company"
+      ],
+      "rawValues": [
+        "Bethlehem Steel Company, Alameda, California"
       ],
       "shipCount": 1
     },
@@ -5865,6 +5876,20 @@
           "id": "new-york-shipbuilding-company",
           "name": "New York Shipbuilding Company",
           "raw": "New York Shipbuilding Corporation, Camden, New Jersey · yard no. 252"
+        }
+      ]
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "path": "ships/ss-president-wilson.html",
+      "url": "/ships/ss-president-wilson",
+      "launchYear": "1947",
+      "builderRaw": "Bethlehem Steel Company, Alameda, California",
+      "builders": [
+        {
+          "id": "bethlehem-steel-company",
+          "name": "Bethlehem Steel Company",
+          "raw": "Bethlehem Steel Company, Alameda, California"
         }
       ]
     },

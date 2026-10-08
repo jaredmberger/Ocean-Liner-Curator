@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:35:27.145Z",
+  "generatedAt": "2026-10-08T04:40:05.849Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 362,
-    "guidesWithDocumentedYard": 362,
+    "shipGuides": 363,
+    "guidesWithDocumentedYard": 363,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 76,
+    "canonicalYardLocations": 77,
     "multiYardShips": 0
   },
   "yards": [
@@ -2869,6 +2869,26 @@
           "url": "/ships/ss-gneisenau",
           "launchYear": "1935",
           "builder": "Deutsche Schiff- und Maschinenbau AG"
+        }
+      ]
+    },
+    {
+      "id": "alameda-california",
+      "name": "Alameda, California",
+      "rawValues": [
+        "Alameda, California"
+      ],
+      "builders": [
+        "Bethlehem Steel Company"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS President Wilson (1948)",
+          "path": "ships/ss-president-wilson.html",
+          "url": "/ships/ss-president-wilson",
+          "launchYear": "1947",
+          "builder": "Bethlehem Steel Company"
         }
       ]
     },
@@ -7959,6 +7979,20 @@
           "builderId": "new-york-shipbuilding-company",
           "location": "Camden, New Jersey",
           "locationRaw": "Camden, New Jersey"
+        }
+      ]
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "path": "ships/ss-president-wilson.html",
+      "url": "/ships/ss-president-wilson",
+      "launchYear": "1947",
+      "assignments": [
+        {
+          "builder": "Bethlehem Steel Company",
+          "builderId": "bethlehem-steel-company",
+          "location": "Alameda, California",
+          "locationRaw": "Alameda, California"
         }
       ]
     },
