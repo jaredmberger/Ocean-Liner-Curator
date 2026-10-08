@@ -213,6 +213,7 @@
 "/ships/ss-persic.html",
 "/ships/ss-potsdam.html",
 "/ships/ss-potsdam-1935.html",
+"/ships/ss-president-cleveland.html",
 "/ships/ss-president-coolidge.html",
 "/ships/ss-president-harding.html",
 "/ships/ss-president-hoover.html",
