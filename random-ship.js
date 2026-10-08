@@ -295,6 +295,7 @@
 "/ships/ss-columbia.html",
 "/ships/ss-cleveland.html",
 "/ships/ss-cathay-1924.html",
+"/ships/chichibu-maru.html",
 "/ships/ss-chitral.html",
 "/ships/ss-comorin.html",
 "/ships/ss-great-britain-1843.html",
