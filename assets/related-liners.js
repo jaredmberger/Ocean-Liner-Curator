@@ -325,6 +325,58 @@
      Clusters
   ========================= */
   const CLUSTERS = {
+    nal_generations: cluster(
+      "Norwegian America Line Generations.",
+      "Successive ships in the Norway–New York passenger trade, from the pioneering Bergen and Kristianiafjord generation through Stavangerfjord to the diesel Oslofjord. This is a fleet-evolution comparison, not a sister-ship grouping.",
+      [
+        { href: "/ships/ss-bergensfjord", label: "SS <em>Bergensfjord</em>", tail: "1913 founding service" },
+        { href: "/ships/ss-stavangerfjord", label: "SS <em>Stavangerfjord</em>", tail: "entered service 1918" },
+        { href: "/ships/ms-oslofjord", label: "MS <em>Oslofjord</em>", tail: "modern motor liner, 1938" }
+      ],
+      "Norwegian America Line generations", true
+    ),
+
+    apl_postwar_sisters: cluster(
+      "American President Lines Sisters.",
+      "The closely related postwar transpacific liners President Cleveland and President Wilson. Distinguish these ships from earlier vessels carrying the President names.",
+      [
+        { href: "/ships/ss-president-cleveland", label: "SS <em>President Cleveland</em>", tail: "entered service 1947" },
+        { href: "/ships/ss-president-wilson", label: "SS <em>President Wilson</em>", tail: "entered service 1948" }
+      ],
+      "American President Lines postwar sisters", true
+    ),
+
+    nyk_sf_trio: cluster(
+      "NYK San Francisco Route Trio.",
+      "Asama Maru, Tatsuta Maru, and Chichibu Maru were closely related NYK transpacific liners associated with the Japan–San Francisco service. Heian Maru and Hikawa Maru served the distinct Seattle route.",
+      [
+        { href: "/ships/asama-maru-1929", label: "<em>Asama Maru</em>", tail: "1929" },
+        { href: "/ships/tatsuta-maru-1929", label: "<em>Tatsuta Maru</em>", tail: "1929" },
+        { href: "/ships/chichibu-maru", label: "<em>Chichibu Maru</em>", tail: "1930 · later Kamakura Maru" }
+      ],
+      "NYK San Francisco route liners", true
+    ),
+
+    nyk_seattle_sisters: cluster(
+      "NYK Seattle Route Sisters.",
+      "Hikawa Maru and Heian Maru were closely related vessels in NYK's Japan–Seattle passenger service; their wartime and postwar fates diverged.",
+      [
+        { href: "/ships/nyk-hikawa-maru", label: "<em>Hikawa Maru</em>", tail: "1930 · preserved" },
+        { href: "/ships/heian-maru", label: "<em>Heian Maru</em>", tail: "1930 · lost at Truk" }
+      ],
+      "NYK Seattle route sisters", true
+    ),
+
+    rl_baloeran_dempo: cluster(
+      "Rotterdamsche Lloyd Sisters.",
+      "Baloeran and Dempo were near-sister motor liners for the Rotterdam–Dutch East Indies route. Their wartime careers differed fundamentally: Baloeran was seized by Germany; Dempo served the Allied troop movement.",
+      [
+        { href: "/ships/ms-baloeran", label: "MS <em>Baloeran</em>", tail: "1930 · later Strassburg" },
+        { href: "/ships/ms-dempo", label: "MS <em>Dempo</em>", tail: "1931 · lost 1944" }
+      ],
+      "Rotterdamsche Lloyd near-sisters", true
+    ),
+
     mm_american_transports: cluster(
       "Messageries Maritimes Liners in American Wartime Service.",
       "French passenger liners employed in American military transport under different arrangements: Athos II through the War Shipping Administration, and Maréchal Joffre as the commissioned USS Rochambeau. This is a service connection, not a sister-ship grouping.",
@@ -1124,7 +1176,9 @@
       [
         { href: "/ships/ss-strathaird", label: "RMS <em>Strathaird</em>", tail: "P&amp;O · 1932" },
         { href: "/ships/rms-strathnaver", label: "RMS <em>Strathnaver</em>", tail: "P&amp;O · 1931" },
-        { href: "/ships/ss-strathmore", label: "SS <em>Strathmore</em>", tail: "P&amp;O · 1935" }
+        { href: "/ships/ss-strathmore", label: "SS <em>Strathmore</em>", tail: "P&amp;O · 1935" },
+        { href: "/ships/rms-stratheden", label: "RMS <em>Stratheden</em>", tail: "P&amp;O · 1937" },
+        { href: "/ships/ss-strathallan", label: "SS <em>Strathallan</em>", tail: "P&amp;O · 1938 · lost 1942" }
       ],
       "P&O Strath liners"
     ),
@@ -1374,6 +1428,8 @@
 
     "ss-president-harding": ["usl_flagships"],
     "ss-president-roosevelt": ["usl_flagships"],
+    "ss-president-cleveland": ["apl_postwar_sisters"],
+    "ss-president-wilson": ["apl_postwar_sisters"],
     "ss-manhattan": ["usl_flagships", "manhattan_washington"],
     "ss-us": ["usl_flagships"],
     "ss-washington": ["manhattan_washington"],
@@ -1428,10 +1484,14 @@
     "ss-mariposa": ["matson_white_ships"],
     "ss-monterey": ["matson_white_ships"],
 
-    "asama-maru-1929": ["nyk_pacific_trio"],
-    "tatsuta-maru-1929": ["nyk_pacific_trio"],
-    "nyk-hikawa-maru": ["nyk_pacific_trio"],
+    "asama-maru-1929": ["nyk_sf_trio"],
+    "tatsuta-maru-1929": ["nyk_sf_trio"],
+    "nyk-hikawa-maru": ["nyk_seattle_sisters"],
+    "chichibu-maru": ["nyk_sf_trio"],
+    "heian-maru": ["nyk_seattle_sisters"],
 
+    "ms-baloeran": ["rl_baloeran_dempo"],
+    "ms-dempo": ["rl_baloeran_dempo"],
     "ms-willem-ruys": ["dutch_postwar_indies"],
     "ss-johan-van-oldenbarnevelt": ["netherland_line_east_indies", "dutch_postwar_indies"],
     "ss-marnix-van-st-aldegonde": ["netherland_line_east_indies"],
@@ -1512,7 +1572,9 @@
     "ss-pennland": ["red_star_interwar"],
     "ss-westernland": ["red_star_interwar"],
 
-    "ss-bergensfjord": ["norwegian_america_founders"],
+    "ss-bergensfjord": ["norwegian_america_founders", "nal_generations"],
+    "ss-stavangerfjord": ["nal_generations"],
+    "ms-oslofjord": ["nal_generations"],
     "ss-kristianiafjord": ["norwegian_america_founders"],
     "ss-dakota": ["great_northern_pair"],
     "ss-minnesota": ["great_northern_pair"],
@@ -1545,6 +1607,8 @@
 
     "ss-strathaird": ["po_strath_group"],
     "ss-strathmore": ["po_strath_group"],
+    "rms-stratheden": ["po_strath_group"],
+    "ss-strathallan": ["po_strath_group"],
 
     "ss-warwick-castle": ["union_castle_named_group"],
     "ss-winchester-castle": ["union_castle_named_group"],
