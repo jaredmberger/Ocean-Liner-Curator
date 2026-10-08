@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:42:20.202Z",
+  "generatedAt": "2026-10-08T05:48:21.394Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 366,
-    "guidesWithDocumentedYard": 366,
+    "shipGuides": 367,
+    "guidesWithDocumentedYard": 367,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 78,
     "multiYardShips": 0
@@ -1004,6 +1004,163 @@
       ]
     },
     {
+      "id": "barrow-in-furness",
+      "name": "Barrow-in-Furness",
+      "rawValues": [
+        "Barrow-in-Furness",
+        "Barrow-in-Furness, England"
+      ],
+      "builders": [
+        "Barrow Shipbuilding Company",
+        "Vickers Ltd",
+        "Vickers Ltd.",
+        "Vickers-Armstrongs"
+      ],
+      "shipCount": 20,
+      "ships": [
+        {
+          "name": "SS City of Rome (1881)",
+          "path": "ships/ss-city-of-rome.html",
+          "url": "/ships/ss-city-of-rome",
+          "launchYear": "1881",
+          "builder": "Barrow Shipbuilding Company"
+        },
+        {
+          "name": "SS La Normandie",
+          "path": "ships/ss-la-normandie.html",
+          "url": "/ships/ss-la-normandie",
+          "launchYear": "1882",
+          "builder": "Barrow Shipbuilding Company"
+        },
+        {
+          "name": "RMS Scythia",
+          "path": "ships/rms-scythia.html",
+          "url": "/ships/rms-scythia",
+          "launchYear": "1920",
+          "builder": "Vickers Ltd"
+        },
+        {
+          "name": "RMS Antonia (1922)",
+          "path": "ships/rms-antonia.html",
+          "url": "/ships/rms-antonia",
+          "launchYear": "1921",
+          "builder": "Vickers Ltd."
+        },
+        {
+          "name": "SS Orama",
+          "path": "ships/ss-orama.html",
+          "url": "/ships/ss-orama",
+          "launchYear": "1924",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Orford",
+          "path": "ships/ss-orford.html",
+          "url": "/ships/ss-orford",
+          "launchYear": "1927",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Orontes (1929)",
+          "path": "ships/ss-orontes.html",
+          "url": "/ships/ss-orontes",
+          "launchYear": "1929",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Strathnaver",
+          "path": "ships/rms-strathnaver.html",
+          "url": "/ships/rms-strathnaver",
+          "launchYear": "1931",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Strathaird",
+          "path": "ships/ss-strathaird.html",
+          "url": "/ships/ss-strathaird",
+          "launchYear": "1931",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Queen of Bermuda",
+          "path": "ships/ss-queen-of-bermuda.html",
+          "url": "/ships/ss-queen-of-bermuda",
+          "launchYear": "1932",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Orion",
+          "path": "ships/ss-orion.html",
+          "url": "/ships/ss-orion",
+          "launchYear": "1934",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Strathmore",
+          "path": "ships/ss-strathmore.html",
+          "url": "/ships/ss-strathmore",
+          "launchYear": "1935",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Orcades (1937)",
+          "path": "ships/rms-orcades.html",
+          "url": "/ships/rms-orcades",
+          "launchYear": "1936",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Stratheden (1937)",
+          "path": "ships/rms-stratheden.html",
+          "url": "/ships/rms-stratheden",
+          "launchYear": "1937",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Orcades (1948)",
+          "path": "ships/rms-orcades-1948.html",
+          "url": "/ships/rms-orcades-1948",
+          "launchYear": "1947",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Himalaya (1949)",
+          "path": "ships/ss-himalaya.html",
+          "url": "/ships/ss-himalaya",
+          "launchYear": "1948",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Chusan (1950)",
+          "path": "ships/ss-chusan.html",
+          "url": "/ships/ss-chusan",
+          "launchYear": "1949",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Oronsay (1951)",
+          "path": "ships/rms-oronsay.html",
+          "url": "/ships/rms-oronsay",
+          "launchYear": "1950",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "RMS Orsova (1954)",
+          "path": "ships/rms-orsova.html",
+          "url": "/ships/rms-orsova",
+          "launchYear": "1953",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Oriana",
+          "path": "ships/ss-oriana.html",
+          "url": "/ships/ss-oriana",
+          "launchYear": "1959",
+          "builder": "Vickers-Armstrongs"
+        }
+      ]
+    },
+    {
       "id": "govan",
       "name": "Govan",
       "rawValues": [
@@ -1158,156 +1315,6 @@
           "url": "/ships/rms-empress-of-japan-1929",
           "launchYear": "1929",
           "builder": "Fairfield Shipbuilding & Engineering Co."
-        }
-      ]
-    },
-    {
-      "id": "barrow-in-furness",
-      "name": "Barrow-in-Furness",
-      "rawValues": [
-        "Barrow-in-Furness",
-        "Barrow-in-Furness, England"
-      ],
-      "builders": [
-        "Barrow Shipbuilding Company",
-        "Vickers Ltd",
-        "Vickers Ltd.",
-        "Vickers-Armstrongs"
-      ],
-      "shipCount": 19,
-      "ships": [
-        {
-          "name": "SS City of Rome (1881)",
-          "path": "ships/ss-city-of-rome.html",
-          "url": "/ships/ss-city-of-rome",
-          "launchYear": "1881",
-          "builder": "Barrow Shipbuilding Company"
-        },
-        {
-          "name": "SS La Normandie",
-          "path": "ships/ss-la-normandie.html",
-          "url": "/ships/ss-la-normandie",
-          "launchYear": "1882",
-          "builder": "Barrow Shipbuilding Company"
-        },
-        {
-          "name": "RMS Scythia",
-          "path": "ships/rms-scythia.html",
-          "url": "/ships/rms-scythia",
-          "launchYear": "1920",
-          "builder": "Vickers Ltd"
-        },
-        {
-          "name": "RMS Antonia (1922)",
-          "path": "ships/rms-antonia.html",
-          "url": "/ships/rms-antonia",
-          "launchYear": "1921",
-          "builder": "Vickers Ltd."
-        },
-        {
-          "name": "SS Orama",
-          "path": "ships/ss-orama.html",
-          "url": "/ships/ss-orama",
-          "launchYear": "1924",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Orford",
-          "path": "ships/ss-orford.html",
-          "url": "/ships/ss-orford",
-          "launchYear": "1927",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Orontes (1929)",
-          "path": "ships/ss-orontes.html",
-          "url": "/ships/ss-orontes",
-          "launchYear": "1929",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "RMS Strathnaver",
-          "path": "ships/rms-strathnaver.html",
-          "url": "/ships/rms-strathnaver",
-          "launchYear": "1931",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Strathaird",
-          "path": "ships/ss-strathaird.html",
-          "url": "/ships/ss-strathaird",
-          "launchYear": "1931",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Queen of Bermuda",
-          "path": "ships/ss-queen-of-bermuda.html",
-          "url": "/ships/ss-queen-of-bermuda",
-          "launchYear": "1932",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Orion",
-          "path": "ships/ss-orion.html",
-          "url": "/ships/ss-orion",
-          "launchYear": "1934",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "RMS Strathmore",
-          "path": "ships/ss-strathmore.html",
-          "url": "/ships/ss-strathmore",
-          "launchYear": "1935",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "RMS Orcades (1937)",
-          "path": "ships/rms-orcades.html",
-          "url": "/ships/rms-orcades",
-          "launchYear": "1936",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "RMS Orcades (1948)",
-          "path": "ships/rms-orcades-1948.html",
-          "url": "/ships/rms-orcades-1948",
-          "launchYear": "1947",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Himalaya (1949)",
-          "path": "ships/ss-himalaya.html",
-          "url": "/ships/ss-himalaya",
-          "launchYear": "1948",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Chusan (1950)",
-          "path": "ships/ss-chusan.html",
-          "url": "/ships/ss-chusan",
-          "launchYear": "1949",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "RMS Oronsay (1951)",
-          "path": "ships/rms-oronsay.html",
-          "url": "/ships/rms-oronsay",
-          "launchYear": "1950",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "RMS Orsova (1954)",
-          "path": "ships/rms-orsova.html",
-          "url": "/ships/rms-orsova",
-          "launchYear": "1953",
-          "builder": "Vickers-Armstrongs"
-        },
-        {
-          "name": "SS Oriana",
-          "path": "ships/ss-oriana.html",
-          "url": "/ships/ss-oriana",
-          "launchYear": "1959",
-          "builder": "Vickers-Armstrongs"
         }
       ]
     },
@@ -5047,6 +5054,20 @@
           "builderId": "j-and-g-thomson",
           "location": "Clydebank",
           "locationRaw": "Clydebank"
+        }
+      ]
+    },
+    {
+      "name": "RMS Stratheden (1937)",
+      "path": "ships/rms-stratheden.html",
+      "url": "/ships/rms-stratheden",
+      "launchYear": "1937",
+      "assignments": [
+        {
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness"
         }
       ]
     },

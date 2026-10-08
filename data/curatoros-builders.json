@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T05:42:20.202Z",
+  "generatedAt": "2026-10-08T05:48:21.394Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 378,
-    "shipGuides": 366,
+    "trackedShipHtmlFiles": 379,
+    "shipGuides": 367,
     "canonicalBuilders": 92,
-    "guidesWithBuilder": 366,
+    "guidesWithBuilder": 367,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -98,6 +98,28 @@
       ]
     },
     {
+      "id": "vickers-armstrongs",
+      "name": "Vickers-Armstrongs",
+      "shipCount": 17,
+      "firstLaunchYear": 1924,
+      "lastLaunchYear": 1959,
+      "locations": [
+        "Barrow-in-Furness",
+        "Barrow-in-Furness, England",
+        "High Walker"
+      ],
+      "operators": [
+        "Furness Bermuda Line",
+        "Furness, Withy & Co. / Furness Bermuda Line",
+        "Orient Steam Navigation Company (Orient Line)",
+        "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
+        "Orient Steam Navigation Company; later P&O-Orient / P&O",
+        "Orient Steam Navigation Company; later P&O-Orient and P&O",
+        "P&O Steam Navigation Company; later P&O-Orient Lines",
+        "P&O; later P&O-Orient and P&O"
+      ]
+    },
+    {
       "id": "ag-vulcan",
       "name": "AG Vulcan",
       "shipCount": 16,
@@ -118,28 +140,6 @@
         "Norddeutscher Lloyd",
         "Norddeutscher Lloyd (North German Lloyd)",
         "Norddeutscher Lloyd / North German Lloyd"
-      ]
-    },
-    {
-      "id": "vickers-armstrongs",
-      "name": "Vickers-Armstrongs",
-      "shipCount": 16,
-      "firstLaunchYear": 1924,
-      "lastLaunchYear": 1959,
-      "locations": [
-        "Barrow-in-Furness",
-        "Barrow-in-Furness, England",
-        "High Walker"
-      ],
-      "operators": [
-        "Furness Bermuda Line",
-        "Furness, Withy & Co. / Furness Bermuda Line",
-        "Orient Steam Navigation Company (Orient Line)",
-        "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-        "Orient Steam Navigation Company; later P&O-Orient / P&O",
-        "Orient Steam Navigation Company; later P&O-Orient and P&O",
-        "P&O Steam Navigation Company; later P&O-Orient Lines",
-        "P&O; later P&O-Orient and P&O"
       ]
     },
     {
@@ -414,29 +414,6 @@
       "shipCount": 23
     },
     {
-      "id": "ag-vulcan",
-      "name": "AG Vulcan",
-      "names": [
-        "A.G. Vulcan",
-        "AG Vulcan",
-        "AG Vulcan, Stettin",
-        "Vulcan AG"
-      ],
-      "rawValues": [
-        "A.G. Vulcan, Hamburg",
-        "A.G. Vulcan, Stettin",
-        "AG Vulcan (Stettin, Germany)",
-        "AG Vulcan, Hamburg · yard no. 334",
-        "AG Vulcan, Stettin",
-        "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)",
-        "AG Vulcan, Stettin · yard no. 286",
-        "AG Vulcan, Stettin, Germany",
-        "AG Vulcan, Stettin, Germany · yard no. 232",
-        "Vulcan AG, Stettin"
-      ],
-      "shipCount": 16
-    },
-    {
       "id": "vickers-armstrongs",
       "name": "Vickers-Armstrongs",
       "names": [
@@ -461,7 +438,31 @@
         "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 951",
         "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 964",
         "Vickers-Armstrongs Ltd., Barrow-in-Furness, England",
+        "Vickers-Armstrongs, Barrow-in-Furness",
         "Vickers-Armstrongs, Barrow-in-Furness · yard no. 976"
+      ],
+      "shipCount": 17
+    },
+    {
+      "id": "ag-vulcan",
+      "name": "AG Vulcan",
+      "names": [
+        "A.G. Vulcan",
+        "AG Vulcan",
+        "AG Vulcan, Stettin",
+        "Vulcan AG"
+      ],
+      "rawValues": [
+        "A.G. Vulcan, Hamburg",
+        "A.G. Vulcan, Stettin",
+        "AG Vulcan (Stettin, Germany)",
+        "AG Vulcan, Hamburg · yard no. 334",
+        "AG Vulcan, Stettin",
+        "AG Vulcan, Stettin (then Germany; today Szczecin, Poland)",
+        "AG Vulcan, Stettin · yard no. 286",
+        "AG Vulcan, Stettin, Germany",
+        "AG Vulcan, Stettin, Germany · yard no. 232",
+        "Vulcan AG, Stettin"
       ],
       "shipCount": 16
     },
@@ -2936,6 +2937,20 @@
           "id": "j-and-g-thomson",
           "name": "J. & G. Thomson",
           "raw": "J. & G. Thomson, Clydebank"
+        }
+      ]
+    },
+    {
+      "name": "RMS Stratheden (1937)",
+      "path": "ships/rms-stratheden.html",
+      "url": "/ships/rms-stratheden",
+      "launchYear": "1937",
+      "builderRaw": "Vickers-Armstrongs, Barrow-in-Furness",
+      "builders": [
+        {
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
+          "raw": "Vickers-Armstrongs, Barrow-in-Furness"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:42:23.141Z",
+  "generatedAt": "2026-10-08T05:48:24.247Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,10 +11,10 @@
     ]
   },
   "summary": {
-    "shipGuides": 366,
+    "shipGuides": 367,
     "relationshipCovered": 323,
-    "relationshipUncovered": 43,
-    "relationshipCoveragePct": 88.3,
+    "relationshipUncovered": 44,
+    "relationshipCoveragePct": 88,
     "canonicalOperators": 89,
     "thinOperators": 60,
     "canonicalYardLocations": 78,
@@ -23,8 +23,8 @@
     "decades": 15,
     "canonicalClasses": 10,
     "explicitSisterLinks": 46,
-    "unresolvedSisterMentions": 16,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 10
+    "unresolvedSisterMentions": 17,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 11
   },
   "signals": {
     "sisterShipResearchCandidates": [
@@ -46,6 +46,13 @@
         "ship": "RMS Edinburgh Castle (1948)",
         "path": "ships/rms-edinburgh-castle.html",
         "mentioned": "Pretoria Castle",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "RMS Stratheden (1937)",
+        "path": "ships/rms-stratheden.html",
+        "mentioned": "Strathallan",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -141,6 +148,13 @@
         "mentioned": "Britannic",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
+      },
+      {
+        "ship": "RMS Stratheden (1937)",
+        "path": "ships/rms-stratheden.html",
+        "mentioned": "Strathallan",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
         "ship": "SS Asia (1850)",
@@ -421,6 +435,15 @@
         "operator": "Cunard Line",
         "signalStrength": "high-context",
         "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "RMS Stratheden (1937)",
+        "slug": "rms-stratheden",
+        "url": "/ships/rms-stratheden",
+        "operator": "P&O",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -1146,6 +1169,21 @@
         "coveragePct": 97.4
       },
       {
+        "name": "P&O",
+        "total": 16,
+        "covered": 15,
+        "uncovered": [
+          {
+            "name": "RMS Stratheden (1937)",
+            "slug": "rms-stratheden",
+            "url": "/ships/rms-stratheden",
+            "launchYear": "1937"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 93.8
+      },
+      {
         "name": "Union-Castle Line",
         "total": 12,
         "covered": 11,
@@ -1449,14 +1487,6 @@
         "name": "Norddeutscher Lloyd (North German Lloyd)",
         "total": 21,
         "covered": 21,
-        "uncovered": [],
-        "uncoveredCount": 0,
-        "coveragePct": 100
-      },
-      {
-        "name": "P&O",
-        "total": 15,
-        "covered": 15,
         "uncovered": [],
         "uncoveredCount": 0,
         "coveragePct": 100
@@ -1962,10 +1992,10 @@
       },
       {
         "era": "Interwar express-liner era",
-        "shipCount": 50,
+        "shipCount": 51,
         "relationshipCovered": 46,
-        "relationshipUncovered": 4,
-        "relationshipCoveragePct": 92
+        "relationshipUncovered": 5,
+        "relationshipCoveragePct": 90.2
       },
       {
         "era": "Interwar recovery",
@@ -2055,10 +2085,10 @@
       },
       {
         "decade": "1930s",
-        "shipCount": 55,
+        "shipCount": 56,
         "relationshipCovered": 50,
-        "relationshipUncovered": 5,
-        "relationshipCoveragePct": 90.9
+        "relationshipUncovered": 6,
+        "relationshipCoveragePct": 89.3
       },
       {
         "decade": "1940s",
@@ -2146,6 +2176,13 @@
       "url": "/ships/rms-pendennis-castle",
       "operator": "Union-Castle Mail Steam Ship Company",
       "launchYear": "1957"
+    },
+    {
+      "name": "RMS Stratheden (1937)",
+      "slug": "rms-stratheden",
+      "url": "/ships/rms-stratheden",
+      "operator": "P&O",
+      "launchYear": "1937"
     },
     {
       "name": "SS Arabia (1852)",

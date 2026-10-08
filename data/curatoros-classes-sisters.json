@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:42:23.065Z",
+  "generatedAt": "2026-10-08T05:48:24.175Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 366,
+    "shipGuides": 367,
     "guidesWithExplicitClass": 18,
     "canonicalClasses": 10,
     "explicitSisterLinks": 46,
-    "unresolvedSisterMentions": 16
+    "unresolvedSisterMentions": 17
   },
   "classes": [
     {
@@ -839,6 +839,12 @@
       "candidateCount": 2
     },
     {
+      "ship": "RMS Stratheden (1937)",
+      "path": "ships/rms-stratheden.html",
+      "mentioned": "Strathallan",
+      "candidateCount": 0
+    },
+    {
       "ship": "SS Asia (1850)",
       "path": "ships/ss-asia-1850.html",
       "mentioned": "Africa",
@@ -1648,6 +1654,15 @@
       "url": "/ships/rms-servia-1881",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "RMS Stratheden (1937)",
+      "path": "ships/rms-stratheden.html",
+      "url": "/ships/rms-stratheden",
+      "classes": [],
+      "sisters": [
+        "Strathallan"
+      ]
     },
     {
       "name": "RMS Strathnaver",

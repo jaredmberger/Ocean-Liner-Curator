@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:42:21.685Z",
+  "generatedAt": "2026-10-08T05:48:22.835Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 366,
-    "guidesWithServiceStart": 360,
-    "guidesWithExplicitServiceEnd": 281,
+    "shipGuides": 367,
+    "guidesWithServiceStart": 361,
+    "guidesWithExplicitServiceEnd": 282,
     "eras": 10,
     "decades": 15
   },
@@ -1270,7 +1270,7 @@
     },
     {
       "name": "Interwar express-liner era",
-      "shipCount": 50,
+      "shipCount": 51,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -1411,6 +1411,13 @@
           "url": "/ships/rms-queen-mary",
           "serviceStartYear": "1936",
           "serviceEndYear": null
+        },
+        {
+          "name": "RMS Stratheden (1937)",
+          "path": "ships/rms-stratheden.html",
+          "url": "/ships/rms-stratheden",
+          "serviceStartYear": "1937",
+          "serviceEndYear": "1969"
         },
         {
           "name": "RMS Strathnaver",
@@ -3698,7 +3705,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 55,
+      "shipCount": 56,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -3867,6 +3874,13 @@
           "url": "/ships/rms-queen-mary",
           "serviceStartYear": "1936",
           "serviceEndYear": null
+        },
+        {
+          "name": "RMS Stratheden (1937)",
+          "path": "ships/rms-stratheden.html",
+          "url": "/ships/rms-stratheden",
+          "serviceStartYear": "1937",
+          "serviceEndYear": "1969"
         },
         {
           "name": "RMS Strathnaver",
@@ -6303,6 +6317,17 @@
       "era": "Late Victorian expansion",
       "decade": "1880s",
       "endEvidence": "Withdrawn after 1901 service; broken up in 1902"
+    },
+    {
+      "name": "RMS Stratheden (1937)",
+      "path": "ships/rms-stratheden.html",
+      "url": "/ships/rms-stratheden",
+      "launchYear": "1937",
+      "serviceStartYear": "1937",
+      "serviceEndYear": "1969",
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": "Broken up at La Spezia, 1969"
     },
     {
       "name": "RMS Strathnaver",

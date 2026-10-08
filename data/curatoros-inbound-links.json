@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:42:24.879Z",
+  "generatedAt": "2026-10-08T05:48:26.014Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -11,11 +11,11 @@
     "caution": "A low inbound count is a discoverability signal, not evidence that additional links should be invented. New links should reflect a documented historical or thematic relationship."
   },
   "summary": {
-    "shipGuides": 366,
-    "editorialOrphans": 57,
+    "shipGuides": 367,
+    "editorialOrphans": 58,
     "oneEditorialInbound": 143,
-    "threePlusEditorialInbound": 64,
-    "totalEditorialInboundLinks": 803,
+    "threePlusEditorialInbound": 66,
+    "totalEditorialInboundLinks": 805,
     "averageEditorialInbound": 2.19
   },
   "orphanedShips": [
@@ -177,6 +177,17 @@
       "name": "RMS Pendennis Castle (1958)",
       "slug": "rms-pendennis-castle",
       "url": "/ships/rms-pendennis-castle",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "RMS Stratheden (1937)",
+      "slug": "rms-stratheden",
+      "url": "/ships/rms-stratheden",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3525,6 +3536,17 @@
       "name": "RMS Pendennis Castle (1958)",
       "slug": "rms-pendennis-castle",
       "url": "/ships/rms-pendennis-castle",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "name": "RMS Stratheden (1937)",
+      "slug": "rms-stratheden",
+      "url": "/ships/rms-stratheden",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -7434,31 +7456,6 @@
       ]
     },
     {
-      "name": "RMS Strathmore",
-      "slug": "ss-strathmore",
-      "url": "/ships/ss-strathmore",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/ss-strathaird.html",
-          "sourceRoute": "/ships/ss-strathaird",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Sylvania (1957)",
       "slug": "rms-sylvania",
       "url": "/ships/rms-sylvania",
@@ -9022,31 +9019,6 @@
       ]
     },
     {
-      "name": "SS Strathaird",
-      "slug": "ss-strathaird",
-      "url": "/ships/ss-strathaird",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/ss-strathmore.html",
-          "sourceRoute": "/ships/ss-strathmore",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Suevic",
       "slug": "ss-suevic",
       "url": "/ships/ss-suevic",
@@ -9547,6 +9519,36 @@
       ]
     },
     {
+      "name": "RMS Strathmore",
+      "slug": "ss-strathmore",
+      "url": "/ships/ss-strathmore",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/rms-stratheden.html",
+          "sourceRoute": "/ships/rms-stratheden",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS America",
       "slug": "ss-america",
       "url": "/ships/ss-america",
@@ -9906,6 +9908,36 @@
         {
           "sourcePath": "ships/ss-nieuw-amsterdam-1906.html",
           "sourceRoute": "/ships/ss-nieuw-amsterdam-1906",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Strathaird",
+      "slug": "ss-strathaird",
+      "url": "/ships/ss-strathaird",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/rms-stratheden.html",
+          "sourceRoute": "/ships/rms-stratheden",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
           "sourceCategory": "ship-guide"
         }
       ]

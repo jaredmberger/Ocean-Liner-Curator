@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T05:42:20.202Z",
+  "generatedAt": "2026-10-08T05:48:21.394Z",
   "summary": {
-    "shipGuides": 366,
+    "shipGuides": 367,
     "canonicalBuilders": 92,
-    "guidesWithBuilder": 366
+    "guidesWithBuilder": 367
   },
   "builders": [
     {
@@ -981,6 +981,139 @@
       ]
     },
     {
+      "id": "vickers-armstrongs",
+      "name": "Vickers-Armstrongs",
+      "shipCount": 17,
+      "locations": [
+        "Barrow-in-Furness",
+        "Barrow-in-Furness, England",
+        "High Walker"
+      ],
+      "firstLaunchYear": 1924,
+      "lastLaunchYear": 1959,
+      "ships": [
+        {
+          "name": "SS Orama",
+          "url": "/ships/ss-orama",
+          "launchYear": "1924",
+          "operator": "Orient Steam Navigation Company (Orient Line)",
+          "builderRaw": "Vickers-Armstrong Ltd., Barrow-in-Furness"
+        },
+        {
+          "name": "SS Orford",
+          "url": "/ships/ss-orford",
+          "launchYear": "1927",
+          "operator": "Orient Steam Navigation Company (Orient Line)",
+          "builderRaw": "Vickers-Armstrong Ltd., Barrow-in-Furness"
+        },
+        {
+          "name": "SS Orontes (1929)",
+          "url": "/ships/ss-orontes",
+          "launchYear": "1929",
+          "operator": "Orient Steam Navigation Company (Orient Line)",
+          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 637"
+        },
+        {
+          "name": "Monarch of Bermuda",
+          "url": "/ships/ss-monarch-of-bermuda",
+          "launchYear": "1931",
+          "operator": "Furness Bermuda Line",
+          "builderRaw": "Vickers-Armstrongs Ltd, High Walker · yard no. 1"
+        },
+        {
+          "name": "RMS Strathnaver",
+          "url": "/ships/rms-strathnaver",
+          "launchYear": "1931",
+          "operator": "P&O Steam Navigation Company; later P&O-Orient Lines",
+          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 663"
+        },
+        {
+          "name": "SS Strathaird",
+          "url": "/ships/ss-strathaird",
+          "launchYear": "1931",
+          "operator": "P&O Steam Navigation Company; later P&O-Orient Lines",
+          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 664"
+        },
+        {
+          "name": "SS Queen of Bermuda",
+          "url": "/ships/ss-queen-of-bermuda",
+          "launchYear": "1932",
+          "operator": "Furness, Withy & Co. / Furness Bermuda Line",
+          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 681"
+        },
+        {
+          "name": "SS Orion",
+          "url": "/ships/ss-orion",
+          "launchYear": "1934",
+          "operator": "Orient Steam Navigation Company (Orient Line)",
+          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness"
+        },
+        {
+          "name": "RMS Strathmore",
+          "url": "/ships/ss-strathmore",
+          "launchYear": "1935",
+          "operator": "Peninsular and Oriental Steam Navigation Company (P&O)",
+          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness"
+        },
+        {
+          "name": "RMS Orcades (1937)",
+          "url": "/ships/rms-orcades",
+          "launchYear": "1936",
+          "operator": "Orient Steam Navigation Company (Orient Line)",
+          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness, England"
+        },
+        {
+          "name": "RMS Stratheden (1937)",
+          "url": "/ships/rms-stratheden",
+          "launchYear": "1937",
+          "operator": "Peninsular and Oriental Steam Navigation Company (P&O)",
+          "builderRaw": "Vickers-Armstrongs, Barrow-in-Furness"
+        },
+        {
+          "name": "RMS Orcades (1948)",
+          "url": "/ships/rms-orcades-1948",
+          "launchYear": "1947",
+          "operator": "Orient Steam Navigation Company; later P&O-Orient and P&O",
+          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 950"
+        },
+        {
+          "name": "SS Himalaya (1949)",
+          "url": "/ships/ss-himalaya",
+          "launchYear": "1948",
+          "operator": "P&O; later P&O-Orient and P&O",
+          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 951"
+        },
+        {
+          "name": "SS Chusan (1950)",
+          "url": "/ships/ss-chusan",
+          "launchYear": "1949",
+          "operator": "Peninsular & Oriental Steam Navigation Company",
+          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 964"
+        },
+        {
+          "name": "RMS Oronsay (1951)",
+          "url": "/ships/rms-oronsay",
+          "launchYear": "1950",
+          "operator": "Orient Steam Navigation Company; later P&O-Orient and P&O",
+          "builderRaw": "Vickers-Armstrongs, Barrow-in-Furness · yard no. 976"
+        },
+        {
+          "name": "RMS Orsova (1954)",
+          "url": "/ships/rms-orsova",
+          "launchYear": "1953",
+          "operator": "Orient Steam Navigation Company; later P&O-Orient / P&O",
+          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 1021"
+        },
+        {
+          "name": "SS Oriana",
+          "url": "/ships/ss-oriana",
+          "launchYear": "1959",
+          "operator": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
+          "builderRaw": "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061"
+        }
+      ]
+    },
+    {
       "id": "ag-vulcan",
       "name": "AG Vulcan",
       "shipCount": 16,
@@ -1104,132 +1237,6 @@
           "launchYear": "1913",
           "operator": "Hamburg Südamerikanische Dampfschifffahrts-Gesellschaft (Hamburg Süd)",
           "builderRaw": "AG Vulcan, Hamburg · yard no. 334"
-        }
-      ]
-    },
-    {
-      "id": "vickers-armstrongs",
-      "name": "Vickers-Armstrongs",
-      "shipCount": 16,
-      "locations": [
-        "Barrow-in-Furness",
-        "Barrow-in-Furness, England",
-        "High Walker"
-      ],
-      "firstLaunchYear": 1924,
-      "lastLaunchYear": 1959,
-      "ships": [
-        {
-          "name": "SS Orama",
-          "url": "/ships/ss-orama",
-          "launchYear": "1924",
-          "operator": "Orient Steam Navigation Company (Orient Line)",
-          "builderRaw": "Vickers-Armstrong Ltd., Barrow-in-Furness"
-        },
-        {
-          "name": "SS Orford",
-          "url": "/ships/ss-orford",
-          "launchYear": "1927",
-          "operator": "Orient Steam Navigation Company (Orient Line)",
-          "builderRaw": "Vickers-Armstrong Ltd., Barrow-in-Furness"
-        },
-        {
-          "name": "SS Orontes (1929)",
-          "url": "/ships/ss-orontes",
-          "launchYear": "1929",
-          "operator": "Orient Steam Navigation Company (Orient Line)",
-          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 637"
-        },
-        {
-          "name": "Monarch of Bermuda",
-          "url": "/ships/ss-monarch-of-bermuda",
-          "launchYear": "1931",
-          "operator": "Furness Bermuda Line",
-          "builderRaw": "Vickers-Armstrongs Ltd, High Walker · yard no. 1"
-        },
-        {
-          "name": "RMS Strathnaver",
-          "url": "/ships/rms-strathnaver",
-          "launchYear": "1931",
-          "operator": "P&O Steam Navigation Company; later P&O-Orient Lines",
-          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 663"
-        },
-        {
-          "name": "SS Strathaird",
-          "url": "/ships/ss-strathaird",
-          "launchYear": "1931",
-          "operator": "P&O Steam Navigation Company; later P&O-Orient Lines",
-          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 664"
-        },
-        {
-          "name": "SS Queen of Bermuda",
-          "url": "/ships/ss-queen-of-bermuda",
-          "launchYear": "1932",
-          "operator": "Furness, Withy & Co. / Furness Bermuda Line",
-          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 681"
-        },
-        {
-          "name": "SS Orion",
-          "url": "/ships/ss-orion",
-          "launchYear": "1934",
-          "operator": "Orient Steam Navigation Company (Orient Line)",
-          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness"
-        },
-        {
-          "name": "RMS Strathmore",
-          "url": "/ships/ss-strathmore",
-          "launchYear": "1935",
-          "operator": "Peninsular and Oriental Steam Navigation Company (P&O)",
-          "builderRaw": "Vickers-Armstrong, Barrow-in-Furness"
-        },
-        {
-          "name": "RMS Orcades (1937)",
-          "url": "/ships/rms-orcades",
-          "launchYear": "1936",
-          "operator": "Orient Steam Navigation Company (Orient Line)",
-          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness, England"
-        },
-        {
-          "name": "RMS Orcades (1948)",
-          "url": "/ships/rms-orcades-1948",
-          "launchYear": "1947",
-          "operator": "Orient Steam Navigation Company; later P&O-Orient and P&O",
-          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 950"
-        },
-        {
-          "name": "SS Himalaya (1949)",
-          "url": "/ships/ss-himalaya",
-          "launchYear": "1948",
-          "operator": "P&O; later P&O-Orient and P&O",
-          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 951"
-        },
-        {
-          "name": "SS Chusan (1950)",
-          "url": "/ships/ss-chusan",
-          "launchYear": "1949",
-          "operator": "Peninsular & Oriental Steam Navigation Company",
-          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 964"
-        },
-        {
-          "name": "RMS Oronsay (1951)",
-          "url": "/ships/rms-oronsay",
-          "launchYear": "1950",
-          "operator": "Orient Steam Navigation Company; later P&O-Orient and P&O",
-          "builderRaw": "Vickers-Armstrongs, Barrow-in-Furness · yard no. 976"
-        },
-        {
-          "name": "RMS Orsova (1954)",
-          "url": "/ships/rms-orsova",
-          "launchYear": "1953",
-          "operator": "Orient Steam Navigation Company; later P&O-Orient / P&O",
-          "builderRaw": "Vickers-Armstrongs Ltd., Barrow-in-Furness · yard no. 1021"
-        },
-        {
-          "name": "SS Oriana",
-          "url": "/ships/ss-oriana",
-          "launchYear": "1959",
-          "operator": "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
-          "builderRaw": "Vickers-Armstrongs (Shipbuilders) Ltd., Barrow-in-Furness · yard no. 1061"
         }
       ]
     },
