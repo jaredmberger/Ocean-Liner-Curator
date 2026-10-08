@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:39:21.977Z",
+  "generatedAt": "2026-10-08T05:42:21.685Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 365,
-    "guidesWithServiceStart": 359,
+    "shipGuides": 366,
+    "guidesWithServiceStart": 360,
     "guidesWithExplicitServiceEnd": 281,
     "eras": 10,
     "decades": 15
@@ -1270,7 +1270,7 @@
     },
     {
       "name": "Interwar express-liner era",
-      "shipCount": 49,
+      "shipCount": 50,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -1283,6 +1283,13 @@
           "name": "Chichibu Maru (1930)",
           "path": "ships/chichibu-maru.html",
           "url": "/ships/chichibu-maru",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
+        },
+        {
+          "name": "Heian Maru (1930)",
+          "path": "ships/heian-maru.html",
+          "url": "/ships/heian-maru",
           "serviceStartYear": "1930",
           "serviceEndYear": null
         },
@@ -3691,7 +3698,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 54,
+      "shipCount": 55,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -3704,6 +3711,13 @@
           "name": "Chichibu Maru (1930)",
           "path": "ships/chichibu-maru.html",
           "url": "/ships/chichibu-maru",
+          "serviceStartYear": "1930",
+          "serviceEndYear": null
+        },
+        {
+          "name": "Heian Maru (1930)",
+          "path": "ships/heian-maru.html",
+          "url": "/ships/heian-maru",
           "serviceStartYear": "1930",
           "serviceEndYear": null
         },
@@ -5217,6 +5231,17 @@
       "path": "ships/chichibu-maru.html",
       "url": "/ships/chichibu-maru",
       "launchYear": "1929",
+      "serviceStartYear": "1930",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
+    },
+    {
+      "name": "Heian Maru (1930)",
+      "path": "ships/heian-maru.html",
+      "url": "/ships/heian-maru",
+      "launchYear": "1930",
       "serviceStartYear": "1930",
       "serviceEndYear": null,
       "era": "Interwar express-liner era",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:39:23.052Z",
+  "generatedAt": "2026-10-08T05:42:23.141Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,23 +11,37 @@
     ]
   },
   "summary": {
-    "shipGuides": 365,
+    "shipGuides": 366,
     "relationshipCovered": 323,
-    "relationshipUncovered": 42,
-    "relationshipCoveragePct": 88.5,
+    "relationshipUncovered": 43,
+    "relationshipCoveragePct": 88.3,
     "canonicalOperators": 89,
     "thinOperators": 60,
-    "canonicalYardLocations": 77,
+    "canonicalYardLocations": 78,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
     "explicitSisterLinks": 46,
-    "unresolvedSisterMentions": 14,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 8
+    "unresolvedSisterMentions": 16,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 10
   },
   "signals": {
     "sisterShipResearchCandidates": [
+      {
+        "ship": "Heian Maru (1930)",
+        "path": "ships/heian-maru.html",
+        "mentioned": "Hie Maru",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "Heian Maru (1930)",
+        "path": "ships/heian-maru.html",
+        "mentioned": "Hikawa Maru",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
       {
         "ship": "RMS Edinburgh Castle (1948)",
         "path": "ships/rms-edinburgh-castle.html",
@@ -86,6 +100,20 @@
       }
     ],
     "unresolvedSisterMentions": [
+      {
+        "ship": "Heian Maru (1930)",
+        "path": "ships/heian-maru.html",
+        "mentioned": "Hikawa Maru",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
+      {
+        "ship": "Heian Maru (1930)",
+        "path": "ships/heian-maru.html",
+        "mentioned": "Hie Maru",
+        "candidateCount": 0,
+        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
+      },
       {
         "ship": "MV Georgic",
         "path": "ships/mv-georgic.html",
@@ -288,6 +316,24 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "Chichibu Maru (1930)",
+        "slug": "chichibu-maru",
+        "url": "/ships/chichibu-maru",
+        "operator": "Nippon Yusen Kaisha (NYK Line)",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 5 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "Heian Maru (1930)",
+        "slug": "heian-maru",
+        "url": "/ships/heian-maru",
+        "operator": "Nippon Yusen Kaisha (NYK Line)",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 5 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "MS Vera Cruz (1952)",
         "slug": "ms-vera-cruz",
         "url": "/ships/ms-vera-cruz",
@@ -409,15 +455,6 @@
         "slug": "ss-queen-frederica",
         "url": "/ships/ss-queen-frederica",
         "operator": "Matson Navigation Company",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "Chichibu Maru (1930)",
-        "slug": "chichibu-maru",
-        "url": "/ships/chichibu-maru",
-        "operator": "Nippon Yusen Kaisha (NYK Line)",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -974,6 +1011,27 @@
         "coveragePct": 89.5
       },
       {
+        "name": "Nippon Yusen Kaisha (NYK Line)",
+        "total": 5,
+        "covered": 3,
+        "uncovered": [
+          {
+            "name": "Chichibu Maru (1930)",
+            "slug": "chichibu-maru",
+            "url": "/ships/chichibu-maru",
+            "launchYear": "1929"
+          },
+          {
+            "name": "Heian Maru (1930)",
+            "slug": "heian-maru",
+            "url": "/ships/heian-maru",
+            "launchYear": "1930"
+          }
+        ],
+        "uncoveredCount": 2,
+        "coveragePct": 60
+      },
+      {
         "name": "Companhia Colonial de Navegação",
         "total": 2,
         "covered": 0,
@@ -1142,21 +1200,6 @@
             "slug": "ss-queen-frederica",
             "url": "/ships/ss-queen-frederica",
             "launchYear": "1926"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 75
-      },
-      {
-        "name": "Nippon Yusen Kaisha (NYK Line)",
-        "total": 4,
-        "covered": 3,
-        "uncovered": [
-          {
-            "name": "Chichibu Maru (1930)",
-            "slug": "chichibu-maru",
-            "url": "/ships/chichibu-maru",
-            "launchYear": "1929"
           }
         ],
         "uncoveredCount": 1,
@@ -1919,10 +1962,10 @@
       },
       {
         "era": "Interwar express-liner era",
-        "shipCount": 49,
+        "shipCount": 50,
         "relationshipCovered": 46,
-        "relationshipUncovered": 3,
-        "relationshipCoveragePct": 93.9
+        "relationshipUncovered": 4,
+        "relationshipCoveragePct": 92
       },
       {
         "era": "Interwar recovery",
@@ -2012,10 +2055,10 @@
       },
       {
         "decade": "1930s",
-        "shipCount": 54,
+        "shipCount": 55,
         "relationshipCovered": 50,
-        "relationshipUncovered": 4,
-        "relationshipCoveragePct": 92.6
+        "relationshipUncovered": 5,
+        "relationshipCoveragePct": 90.9
       },
       {
         "decade": "1940s",
@@ -2054,6 +2097,13 @@
       "url": "/ships/chichibu-maru",
       "operator": "Nippon Yusen Kaisha (NYK Line)",
       "launchYear": "1929"
+    },
+    {
+      "name": "Heian Maru (1930)",
+      "slug": "heian-maru",
+      "url": "/ships/heian-maru",
+      "operator": "Nippon Yusen Kaisha (NYK Line)",
+      "launchYear": "1930"
     },
     {
       "name": "MS Oslofjord (1938)",

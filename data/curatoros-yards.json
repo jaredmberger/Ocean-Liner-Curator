@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:39:20.881Z",
+  "generatedAt": "2026-10-08T05:42:20.202Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 365,
-    "guidesWithDocumentedYard": 365,
+    "shipGuides": 366,
+    "guidesWithDocumentedYard": 366,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 77,
+    "canonicalYardLocations": 78,
     "multiYardShips": 0
   },
   "yards": [
@@ -3509,6 +3509,26 @@
       ]
     },
     {
+      "id": "sakurajima-osaka",
+      "name": "Sakurajima, Osaka",
+      "rawValues": [
+        "Sakurajima, Osaka"
+      ],
+      "builders": [
+        "Ōsaka Iron Works"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "Heian Maru (1930)",
+          "path": "ships/heian-maru.html",
+          "url": "/ships/heian-maru",
+          "launchYear": "1930",
+          "builder": "Ōsaka Iron Works"
+        }
+      ]
+    },
+    {
       "id": "schiedam",
       "name": "Schiedam",
       "rawValues": [
@@ -3669,6 +3689,20 @@
           "builderId": "yokohama-dock-company",
           "location": "Yokohama, Japan",
           "locationRaw": "Yokohama, Japan"
+        }
+      ]
+    },
+    {
+      "name": "Heian Maru (1930)",
+      "path": "ships/heian-maru.html",
+      "url": "/ships/heian-maru",
+      "launchYear": "1930",
+      "assignments": [
+        {
+          "builder": "Ōsaka Iron Works",
+          "builderId": "osaka-iron-works",
+          "location": "Sakurajima, Osaka",
+          "locationRaw": "Sakurajima, Osaka"
         }
       ]
     },

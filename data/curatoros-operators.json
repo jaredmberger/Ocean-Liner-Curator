@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:39:20.881Z",
+  "generatedAt": "2026-10-08T05:42:20.202Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 365,
-    "guidesWithOperator": 365,
+    "shipGuides": 366,
+    "guidesWithOperator": 366,
     "guidesMissingOperator": 0,
     "canonicalOperators": 89,
     "aliasedOperatorGroups": 24
@@ -197,6 +197,15 @@
       "shipCount": 5
     },
     {
+      "id": "nippon-yusen-kaisha-nyk-line",
+      "name": "Nippon Yusen Kaisha (NYK Line)",
+      "rawValues": [
+        "Nippon Yusen Kaisha (NYK Line)",
+        "Nippon Yusen Kaisha (NYK)"
+      ],
+      "shipCount": 5
+    },
+    {
       "id": "red-star-line",
       "name": "Red Star Line",
       "rawValues": [
@@ -245,15 +254,6 @@
         "Matson Lines / Matson Navigation Company",
         "Matson Navigation Co. (Matson Line)",
         "Matson Navigation Company"
-      ],
-      "shipCount": 4
-    },
-    {
-      "id": "nippon-yusen-kaisha-nyk-line",
-      "name": "Nippon Yusen Kaisha (NYK Line)",
-      "rawValues": [
-        "Nippon Yusen Kaisha (NYK Line)",
-        "Nippon Yusen Kaisha (NYK)"
       ],
       "shipCount": 4
     },
@@ -814,6 +814,14 @@
       "path": "ships/chichibu-maru.html",
       "url": "/ships/chichibu-maru",
       "launchYear": "1929",
+      "operatorRaw": "Nippon Yusen Kaisha (NYK Line)",
+      "operator": "Nippon Yusen Kaisha (NYK Line)"
+    },
+    {
+      "name": "Heian Maru (1930)",
+      "path": "ships/heian-maru.html",
+      "url": "/ships/heian-maru",
+      "launchYear": "1930",
       "operatorRaw": "Nippon Yusen Kaisha (NYK Line)",
       "operator": "Nippon Yusen Kaisha (NYK Line)"
     },

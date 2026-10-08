@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:39:24.357Z",
+  "generatedAt": "2026-10-08T05:42:24.879Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -11,18 +11,18 @@
     "caution": "A low inbound count is a discoverability signal, not evidence that additional links should be invented. New links should reflect a documented historical or thematic relationship."
   },
   "summary": {
-    "shipGuides": 365,
+    "shipGuides": 366,
     "editorialOrphans": 57,
-    "oneEditorialInbound": 142,
-    "threePlusEditorialInbound": 62,
-    "totalEditorialInboundLinks": 800,
+    "oneEditorialInbound": 143,
+    "threePlusEditorialInbound": 64,
+    "totalEditorialInboundLinks": 803,
     "averageEditorialInbound": 2.19
   },
   "orphanedShips": [
     {
-      "name": "Chichibu Maru (1930)",
-      "slug": "chichibu-maru",
-      "url": "/ships/chichibu-maru",
+      "name": "Heian Maru (1930)",
+      "slug": "heian-maru",
+      "url": "/ships/heian-maru",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -648,6 +648,25 @@
     }
   ],
   "weaklyLinkedShips": [
+    {
+      "name": "Chichibu Maru (1930)",
+      "slug": "chichibu-maru",
+      "url": "/ships/chichibu-maru",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
     {
       "name": "Monarch of Bermuda",
       "slug": "ss-monarch-of-bermuda",
@@ -3349,9 +3368,9 @@
   ],
   "ships": [
     {
-      "name": "Chichibu Maru (1930)",
-      "slug": "chichibu-maru",
-      "url": "/ships/chichibu-maru",
+      "name": "Heian Maru (1930)",
+      "slug": "heian-maru",
+      "url": "/ships/heian-maru",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3974,6 +3993,25 @@
       "discoverySurfaceInbound": 0,
       "byCategory": {},
       "sources": []
+    },
+    {
+      "name": "Chichibu Maru (1930)",
+      "slug": "chichibu-maru",
+      "url": "/ships/chichibu-maru",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        }
+      ]
     },
     {
       "name": "Monarch of Bermuda",
@@ -6674,30 +6712,6 @@
       ]
     },
     {
-      "name": "Asama Maru",
-      "slug": "asama-maru-1929",
-      "url": "/ships/asama-maru-1929",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/chichibu-maru.html",
-          "sourceRoute": "/ships/chichibu-maru",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "MS Georges Philippar (1932)",
       "slug": "ms-georges-philippar",
       "url": "/ships/ms-georges-philippar",
@@ -6744,30 +6758,6 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "NYK Hikawa Maru",
-      "slug": "nyk-hikawa-maru",
-      "url": "/ships/nyk-hikawa-maru",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/chichibu-maru.html",
-          "sourceRoute": "/ships/chichibu-maru",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9254,6 +9244,35 @@
       ]
     },
     {
+      "name": "Asama Maru",
+      "slug": "asama-maru-1929",
+      "url": "/ships/asama-maru-1929",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "Athlone Castle",
       "slug": "athlone-castle",
       "url": "/ships/athlone-castle",
@@ -9311,6 +9330,35 @@
           "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
           "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
           "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "NYK Hikawa Maru",
+      "slug": "nyk-hikawa-maru",
+      "url": "/ships/nyk-hikawa-maru",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
