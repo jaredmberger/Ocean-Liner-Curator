@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:45:09.177Z",
+  "generatedAt": "2026-10-08T06:57:56.246Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -72,8 +72,8 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 811,
-      "averageEditorialInbound": 2.17
+      "editorialInbound": 821,
+      "averageEditorialInbound": 2.2
     }
   },
   "signals": {
@@ -18739,16 +18739,28 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
+      "baselineInbound": 2,
       "byCategory": {
-        "ship-guide": 1
+        "ship-guide": 3
       },
       "sources": [
         {
+          "sourcePath": "ships/asama-maru-1929.html",
+          "sourceRoute": "/ships/asama-maru-1929",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/heian-maru.html",
           "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/nyk-hikawa-maru.html",
+          "sourceRoute": "/ships/nyk-hikawa-maru",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -18762,11 +18774,26 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "inboundTotal": 4,
+      "editorialInbound": 2,
+      "baselineInbound": 2,
+      "byCategory": {
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/asama-maru-1929.html",
+          "sourceRoute": "/ships/asama-maru-1929",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/nyk-hikawa-maru.html",
+          "sourceRoute": "/ships/nyk-hikawa-maru",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ss-monarch-of-bermuda.html",
@@ -18864,9 +18891,9 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
+      "inboundTotal": 3,
       "editorialInbound": 1,
-      "baselineInbound": 1,
+      "baselineInbound": 2,
       "byCategory": {
         "ship-guide": 1
       },
@@ -18933,9 +18960,9 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
+      "inboundTotal": 3,
       "editorialInbound": 1,
-      "baselineInbound": 1,
+      "baselineInbound": 2,
       "byCategory": {
         "ship-guide": 1
       },
@@ -19110,11 +19137,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "inboundTotal": 3,
+      "editorialInbound": 1,
+      "baselineInbound": 2,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-bergensfjord.html",
+          "sourceRoute": "/ships/ss-bergensfjord",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ms-pilsudski.html",
@@ -22510,16 +22546,28 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
+      "baselineInbound": 2,
       "byCategory": {
-        "ship-guide": 1
+        "ship-guide": 3
       },
       "sources": [
         {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-strathallan.html",
           "sourceRoute": "/ships/ss-strathallan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -28324,9 +28372,9 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
+      "inboundTotal": 3,
       "editorialInbound": 1,
-      "baselineInbound": 1,
+      "baselineInbound": 2,
       "byCategory": {
         "ship-guide": 1
       },
@@ -28457,9 +28505,9 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
+      "inboundTotal": 3,
       "editorialInbound": 1,
-      "baselineInbound": 1,
+      "baselineInbound": 2,
       "byCategory": {
         "ship-guide": 1
       },
@@ -29119,16 +29167,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
+      "inboundTotal": 4,
+      "editorialInbound": 2,
+      "baselineInbound": 2,
       "byCategory": {
-        "ship-guide": 1
+        "ship-guide": 2
       },
       "sources": [
         {
           "sourcePath": "ships/ms-oslofjord.html",
           "sourceRoute": "/ships/ms-oslofjord",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-bergensfjord.html",
+          "sourceRoute": "/ships/ss-bergensfjord",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -29207,11 +29261,26 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "inboundTotal": 4,
+      "editorialInbound": 2,
+      "baselineInbound": 2,
+      "byCategory": {
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ss-suevic.html",

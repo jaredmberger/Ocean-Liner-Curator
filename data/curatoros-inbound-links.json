@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:45:06.362Z",
+  "generatedAt": "2026-10-08T06:57:51.563Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,24 +12,13 @@
   },
   "summary": {
     "shipGuides": 370,
-    "editorialOrphans": 57,
-    "oneEditorialInbound": 147,
-    "threePlusEditorialInbound": 66,
-    "totalEditorialInboundLinks": 811,
-    "averageEditorialInbound": 2.19
+    "editorialOrphans": 54,
+    "oneEditorialInbound": 140,
+    "threePlusEditorialInbound": 71,
+    "totalEditorialInboundLinks": 831,
+    "averageEditorialInbound": 2.25
   },
   "orphanedShips": [
-    {
-      "name": "Heian Maru (1930)",
-      "slug": "heian-maru",
-      "url": "/ships/heian-maru",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
     {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
@@ -56,17 +45,6 @@
       "name": "MS Oranje (1939)",
       "slug": "ms-oranje",
       "url": "/ships/ms-oranje",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Oslofjord (1938)",
-      "slug": "ms-oslofjord",
-      "url": "/ships/ms-oslofjord",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -592,17 +570,6 @@
       "sources": []
     },
     {
-      "name": "SS Strathallan (1938)",
-      "slug": "ss-strathallan",
-      "url": "/ships/ss-strathallan",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Virginia",
       "slug": "ss-virginia",
       "url": "/ships/ss-virginia",
@@ -649,25 +616,6 @@
   ],
   "weaklyLinkedShips": [
     {
-      "name": "Chichibu Maru (1930)",
-      "slug": "chichibu-maru",
-      "url": "/ships/chichibu-maru",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/heian-maru.html",
-          "sourceRoute": "/ships/heian-maru",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "Monarch of Bermuda",
       "slug": "ss-monarch-of-bermuda",
       "url": "/ships/ss-monarch-of-bermuda",
@@ -706,25 +654,6 @@
       ]
     },
     {
-      "name": "MS Baloeran (1930)",
-      "slug": "ms-baloeran",
-      "url": "/ships/ms-baloeran",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ms-dempo.html",
-          "sourceRoute": "/ships/ms-dempo",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "MS Batory (1936)",
       "slug": "ms-batory",
       "url": "/ships/ms-batory",
@@ -759,25 +688,6 @@
           "sourcePath": "collections/cabin-liner-transition.html",
           "sourceRoute": "/collections/cabin-liner-transition",
           "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "MS Dempo (1931)",
-      "slug": "ms-dempo",
-      "url": "/ships/ms-dempo",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ms-baloeran.html",
-          "sourceRoute": "/ships/ms-baloeran",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -1424,25 +1334,6 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "RMS Stratheden (1937)",
-      "slug": "rms-stratheden",
-      "url": "/ships/rms-stratheden",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-strathallan.html",
-          "sourceRoute": "/ships/ss-strathallan",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -3043,25 +2934,6 @@
       ]
     },
     {
-      "name": "SS President Cleveland (1947)",
-      "slug": "ss-president-cleveland",
-      "url": "/ships/ss-president-cleveland",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-president-wilson.html",
-          "sourceRoute": "/ships/ss-president-wilson",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS President Harding (1921)",
       "slug": "ss-president-harding",
       "url": "/ships/ss-president-harding",
@@ -3077,25 +2949,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS President Wilson (1948)",
-      "slug": "ss-president-wilson",
-      "url": "/ships/ss-president-wilson",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-president-cleveland.html",
-          "sourceRoute": "/ships/ss-president-cleveland",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -3286,25 +3139,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Stavangerfjord (1918)",
-      "slug": "ss-stavangerfjord",
-      "url": "/ships/ss-stavangerfjord",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ms-oslofjord.html",
-          "sourceRoute": "/ships/ms-oslofjord",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -3444,17 +3278,6 @@
   ],
   "ships": [
     {
-      "name": "Heian Maru (1930)",
-      "slug": "heian-maru",
-      "url": "/ships/heian-maru",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "MS Kungsholm (1928)",
       "slug": "ms-kungsholm-1928",
       "url": "/ships/ms-kungsholm-1928",
@@ -3480,17 +3303,6 @@
       "name": "MS Oranje (1939)",
       "slug": "ms-oranje",
       "url": "/ships/ms-oranje",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Oslofjord (1938)",
-      "slug": "ms-oslofjord",
-      "url": "/ships/ms-oslofjord",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -4016,17 +3828,6 @@
       "sources": []
     },
     {
-      "name": "SS Strathallan (1938)",
-      "slug": "ss-strathallan",
-      "url": "/ships/ss-strathallan",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Virginia",
       "slug": "ss-virginia",
       "url": "/ships/ss-virginia",
@@ -4071,25 +3872,6 @@
       "sources": []
     },
     {
-      "name": "Chichibu Maru (1930)",
-      "slug": "chichibu-maru",
-      "url": "/ships/chichibu-maru",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/heian-maru.html",
-          "sourceRoute": "/ships/heian-maru",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "Monarch of Bermuda",
       "slug": "ss-monarch-of-bermuda",
       "url": "/ships/ss-monarch-of-bermuda",
@@ -4128,25 +3910,6 @@
       ]
     },
     {
-      "name": "MS Baloeran (1930)",
-      "slug": "ms-baloeran",
-      "url": "/ships/ms-baloeran",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ms-dempo.html",
-          "sourceRoute": "/ships/ms-dempo",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "MS Batory (1936)",
       "slug": "ms-batory",
       "url": "/ships/ms-batory",
@@ -4181,25 +3944,6 @@
           "sourcePath": "collections/cabin-liner-transition.html",
           "sourceRoute": "/collections/cabin-liner-transition",
           "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "MS Dempo (1931)",
-      "slug": "ms-dempo",
-      "url": "/ships/ms-dempo",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ms-baloeran.html",
-          "sourceRoute": "/ships/ms-baloeran",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -4846,25 +4590,6 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "RMS Stratheden (1937)",
-      "slug": "rms-stratheden",
-      "url": "/ships/rms-stratheden",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-strathallan.html",
-          "sourceRoute": "/ships/ss-strathallan",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -6465,25 +6190,6 @@
       ]
     },
     {
-      "name": "SS President Cleveland (1947)",
-      "slug": "ss-president-cleveland",
-      "url": "/ships/ss-president-cleveland",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-president-wilson.html",
-          "sourceRoute": "/ships/ss-president-wilson",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS President Harding (1921)",
       "slug": "ss-president-harding",
       "url": "/ships/ss-president-harding",
@@ -6499,25 +6205,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS President Wilson (1948)",
-      "slug": "ss-president-wilson",
-      "url": "/ships/ss-president-wilson",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ss-president-cleveland.html",
-          "sourceRoute": "/ships/ss-president-cleveland",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -6712,25 +6399,6 @@
       ]
     },
     {
-      "name": "SS Stavangerfjord (1918)",
-      "slug": "ss-stavangerfjord",
-      "url": "/ships/ss-stavangerfjord",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/ms-oslofjord.html",
-          "sourceRoute": "/ships/ms-oslofjord",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Storstad",
       "slug": "ss-storstad",
       "url": "/ships/ss-storstad",
@@ -6864,6 +6532,56 @@
       ]
     },
     {
+      "name": "MS Baloeran (1930)",
+      "slug": "ms-baloeran",
+      "url": "/ships/ms-baloeran",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ms-dempo.html",
+          "sourceRoute": "/ships/ms-dempo",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "MS Dempo (1931)",
+      "slug": "ms-dempo",
+      "url": "/ships/ms-dempo",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "MS Georges Philippar (1932)",
       "slug": "ms-georges-philippar",
       "url": "/ships/ms-georges-philippar",
@@ -6885,6 +6603,31 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "MS Oslofjord (1938)",
+      "slug": "ms-oslofjord",
+      "url": "/ships/ms-oslofjord",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ss-bergensfjord.html",
+          "sourceRoute": "/ships/ss-bergensfjord",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -8878,6 +8621,31 @@
       ]
     },
     {
+      "name": "SS President Cleveland (1947)",
+      "slug": "ss-president-cleveland",
+      "url": "/ships/ss-president-cleveland",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ss-president-wilson.html",
+          "sourceRoute": "/ships/ss-president-wilson",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS President Lincoln",
       "slug": "ss-president-lincoln",
       "url": "/ships/ss-president-lincoln",
@@ -8922,6 +8690,31 @@
         {
           "sourcePath": "ships/ss-president-wilson.html",
           "sourceRoute": "/ships/ss-president-wilson",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "slug": "ss-president-wilson",
+      "url": "/ships/ss-president-wilson",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ss-president-cleveland.html",
+          "sourceRoute": "/ships/ss-president-cleveland",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -9401,6 +9194,36 @@
         {
           "sourcePath": "ships/stirling-castle.html",
           "sourceRoute": "/ships/stirling-castle",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "Heian Maru (1930)",
+      "slug": "heian-maru",
+      "url": "/ships/heian-maru",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/asama-maru-1929.html",
+          "sourceRoute": "/ships/asama-maru-1929",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/nyk-hikawa-maru.html",
+          "sourceRoute": "/ships/nyk-hikawa-maru",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -10013,6 +9836,101 @@
       ]
     },
     {
+      "name": "SS Stavangerfjord (1918)",
+      "slug": "ss-stavangerfjord",
+      "url": "/ships/ss-stavangerfjord",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ms-oslofjord.html",
+          "sourceRoute": "/ships/ms-oslofjord",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-bergensfjord.html",
+          "sourceRoute": "/ships/ss-bergensfjord",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Strathallan (1938)",
+      "slug": "ss-strathallan",
+      "url": "/ships/ss-strathallan",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "Chichibu Maru (1930)",
+      "slug": "chichibu-maru",
+      "url": "/ships/chichibu-maru",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/asama-maru-1929.html",
+          "sourceRoute": "/ships/asama-maru-1929",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/nyk-hikawa-maru.html",
+          "sourceRoute": "/ships/nyk-hikawa-maru",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "MS Augustus",
       "slug": "ms-augustus",
       "url": "/ships/ms-augustus",
@@ -10188,6 +10106,41 @@
           "sourcePath": "white-star-line.html",
           "sourceRoute": "/white-star-line",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Stratheden (1937)",
+      "slug": "rms-stratheden",
+      "url": "/ships/rms-stratheden",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathallan.html",
+          "sourceRoute": "/ships/ss-strathallan",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
