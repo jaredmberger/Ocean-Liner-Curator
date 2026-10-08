@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:48:22.835Z",
+  "generatedAt": "2026-10-08T06:13:24.779Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 367,
-    "guidesWithServiceStart": 361,
+    "shipGuides": 368,
+    "guidesWithServiceStart": 362,
     "guidesWithExplicitServiceEnd": 282,
     "eras": 10,
     "decades": 15
@@ -1270,7 +1270,7 @@
     },
     {
       "name": "Interwar express-liner era",
-      "shipCount": 51,
+      "shipCount": 52,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -1593,6 +1593,13 @@
           "url": "/ships/ss-strathaird",
           "serviceStartYear": "1932",
           "serviceEndYear": "1961"
+        },
+        {
+          "name": "SS Strathallan (1938)",
+          "path": "ships/ss-strathallan.html",
+          "url": "/ships/ss-strathallan",
+          "serviceStartYear": "1938",
+          "serviceEndYear": null
         },
         {
           "name": "RMS Strathmore",
@@ -3705,7 +3712,7 @@
     },
     {
       "name": "1930s",
-      "shipCount": 56,
+      "shipCount": 57,
       "ships": [
         {
           "name": "Athlone Castle",
@@ -4063,6 +4070,13 @@
           "url": "/ships/ss-strathaird",
           "serviceStartYear": "1932",
           "serviceEndYear": "1961"
+        },
+        {
+          "name": "SS Strathallan (1938)",
+          "path": "ships/ss-strathallan.html",
+          "url": "/ships/ss-strathallan",
+          "serviceStartYear": "1938",
+          "serviceEndYear": null
         },
         {
           "name": "RMS Strathmore",
@@ -9034,6 +9048,17 @@
       "era": "Interwar express-liner era",
       "decade": "1930s",
       "endEvidence": "Withdrawn 1961 and broken up at Hong Kong"
+    },
+    {
+      "name": "SS Strathallan (1938)",
+      "path": "ships/ss-strathallan.html",
+      "url": "/ships/ss-strathallan",
+      "launchYear": "1937",
+      "serviceStartYear": "1938",
+      "serviceEndYear": null,
+      "era": "Interwar express-liner era",
+      "decade": "1930s",
+      "endEvidence": null
     },
     {
       "name": "RMS Strathmore",

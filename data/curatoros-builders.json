@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T05:48:21.394Z",
+  "generatedAt": "2026-10-08T06:13:23.333Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 379,
-    "shipGuides": 367,
+    "trackedShipHtmlFiles": 380,
+    "shipGuides": 368,
     "canonicalBuilders": 92,
-    "guidesWithBuilder": 367,
+    "guidesWithBuilder": 368,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -100,7 +100,7 @@
     {
       "id": "vickers-armstrongs",
       "name": "Vickers-Armstrongs",
-      "shipCount": 17,
+      "shipCount": 18,
       "firstLaunchYear": 1924,
       "lastLaunchYear": 1959,
       "locations": [
@@ -115,8 +115,8 @@
         "Orient Steam Navigation Company (Orient Line); transferred to P&O ownership in 1966",
         "Orient Steam Navigation Company; later P&O-Orient / P&O",
         "Orient Steam Navigation Company; later P&O-Orient and P&O",
-        "P&O Steam Navigation Company; later P&O-Orient Lines",
-        "P&O; later P&O-Orient and P&O"
+        "P&O (Peninsular and Oriental Steam Navigation Company)",
+        "P&O Steam Navigation Company; later P&O-Orient Lines"
       ]
     },
     {
@@ -441,7 +441,7 @@
         "Vickers-Armstrongs, Barrow-in-Furness",
         "Vickers-Armstrongs, Barrow-in-Furness · yard no. 976"
       ],
-      "shipCount": 17
+      "shipCount": 18
     },
     {
       "id": "ag-vulcan",
@@ -6400,6 +6400,20 @@
           "id": "vickers-armstrongs",
           "name": "Vickers-Armstrongs",
           "raw": "Vickers-Armstrong, Barrow-in-Furness · yard no. 664"
+        }
+      ]
+    },
+    {
+      "name": "SS Strathallan (1938)",
+      "path": "ships/ss-strathallan.html",
+      "url": "/ships/ss-strathallan",
+      "launchYear": "1937",
+      "builderRaw": "Vickers-Armstrongs, Barrow-in-Furness",
+      "builders": [
+        {
+          "id": "vickers-armstrongs",
+          "name": "Vickers-Armstrongs",
+          "raw": "Vickers-Armstrongs, Barrow-in-Furness"
         }
       ]
     },

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:48:21.394Z",
+  "generatedAt": "2026-10-08T06:13:23.333Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 367,
-    "guidesWithDocumentedYard": 367,
+    "shipGuides": 368,
+    "guidesWithDocumentedYard": 368,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 78,
     "multiYardShips": 0
@@ -1016,7 +1016,7 @@
         "Vickers Ltd.",
         "Vickers-Armstrongs"
       ],
-      "shipCount": 20,
+      "shipCount": 21,
       "ships": [
         {
           "name": "SS City of Rome (1881)",
@@ -1113,6 +1113,13 @@
           "name": "RMS Stratheden (1937)",
           "path": "ships/rms-stratheden.html",
           "url": "/ships/rms-stratheden",
+          "launchYear": "1937",
+          "builder": "Vickers-Armstrongs"
+        },
+        {
+          "name": "SS Strathallan (1938)",
+          "path": "ships/ss-strathallan.html",
+          "url": "/ships/ss-strathallan",
           "launchYear": "1937",
           "builder": "Vickers-Armstrongs"
         },
@@ -8506,6 +8513,20 @@
       "path": "ships/ss-strathaird.html",
       "url": "/ships/ss-strathaird",
       "launchYear": "1931",
+      "assignments": [
+        {
+          "builder": "Vickers-Armstrongs",
+          "builderId": "vickers-armstrongs",
+          "location": "Barrow-in-Furness",
+          "locationRaw": "Barrow-in-Furness"
+        }
+      ]
+    },
+    {
+      "name": "SS Strathallan (1938)",
+      "path": "ships/ss-strathallan.html",
+      "url": "/ships/ss-strathallan",
+      "launchYear": "1937",
       "assignments": [
         {
           "builder": "Vickers-Armstrongs",

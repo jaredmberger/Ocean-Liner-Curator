@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:48:31.164Z",
+  "generatedAt": "2026-10-08T06:13:32.437Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 670,
-    "indexablePages": 654,
+    "trackedHtml": 671,
+    "indexablePages": 655,
     "priorityPages": 89,
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 2,
@@ -30,7 +30,7 @@
       "pages": 192,
       "searchEligible": 191,
       "sitemapListed": 87,
-      "editorialInbound": 1434,
+      "editorialInbound": 1435,
       "averageEditorialInbound": 7.47
     },
     "bridge-page": {
@@ -69,10 +69,10 @@
       "averageEditorialInbound": 30.75
     },
     "ship-guide": {
-      "pages": 370,
-      "searchEligible": 370,
-      "sitemapListed": 367,
-      "editorialInbound": 805,
+      "pages": 371,
+      "searchEligible": 371,
+      "sitemapListed": 368,
+      "editorialInbound": 808,
       "averageEditorialInbound": 2.18
     }
   },
@@ -6189,15 +6189,15 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 448,
-      "editorialInbound": 446,
+      "inboundTotal": 449,
+      "editorialInbound": 447,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
         "comparative-history": 7,
         "collection": 32,
         "evidence-methodology": 1,
-        "ship-guide": 363
+        "ship-guide": 364
       },
       "sources": [
         {
@@ -8639,6 +8639,12 @@
         {
           "sourcePath": "ships/ss-strathaird.html",
           "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-strathallan.html",
+          "sourceRoute": "/ships/ss-strathallan",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -22446,11 +22452,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-strathallan.html",
+          "sourceRoute": "/ships/ss-strathallan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ss-strathmore.html",
@@ -22460,12 +22475,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "ship-guide": 2
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -22483,6 +22498,12 @@
         {
           "sourcePath": "ships/ss-strathaird.html",
           "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-strathallan.html",
+          "sourceRoute": "/ships/ss-strathallan",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -29077,12 +29098,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "ship-guide": 2
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -29098,12 +29119,32 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-strathallan.html",
+          "sourceRoute": "/ships/ss-strathallan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-strathmore.html",
           "sourceRoute": "/ships/ss-strathmore",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
+    },
+    {
+      "path": "ships/ss-strathallan.html",
+      "route": "/ships/ss-strathallan",
+      "title": "SS Strathallan (1938)",
+      "category": "ship-guide",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
     },
     {
       "path": "ships/ss-suevic.html",

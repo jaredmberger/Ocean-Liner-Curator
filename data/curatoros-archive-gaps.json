@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:48:24.247Z",
+  "generatedAt": "2026-10-08T06:13:26.213Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,10 +11,10 @@
     ]
   },
   "summary": {
-    "shipGuides": 367,
+    "shipGuides": 368,
     "relationshipCovered": 323,
-    "relationshipUncovered": 44,
-    "relationshipCoveragePct": 88,
+    "relationshipUncovered": 45,
+    "relationshipCoveragePct": 87.8,
     "canonicalOperators": 89,
     "thinOperators": 60,
     "canonicalYardLocations": 78,
@@ -22,9 +22,9 @@
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 46,
-    "unresolvedSisterMentions": 17,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 11
+    "explicitSisterLinks": 47,
+    "unresolvedSisterMentions": 16,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 10
   },
   "signals": {
     "sisterShipResearchCandidates": [
@@ -46,13 +46,6 @@
         "ship": "RMS Edinburgh Castle (1948)",
         "path": "ships/rms-edinburgh-castle.html",
         "mentioned": "Pretoria Castle",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "RMS Stratheden (1937)",
-        "path": "ships/rms-stratheden.html",
-        "mentioned": "Strathallan",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -148,13 +141,6 @@
         "mentioned": "Britannic",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
-      },
-      {
-        "ship": "RMS Stratheden (1937)",
-        "path": "ships/rms-stratheden.html",
-        "mentioned": "Strathallan",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
         "ship": "SS Asia (1850)",
@@ -330,6 +316,24 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "RMS Stratheden (1937)",
+        "slug": "rms-stratheden",
+        "url": "/ships/rms-stratheden",
+        "operator": "P&O",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 17 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
+        "ship": "SS Strathallan (1938)",
+        "slug": "ss-strathallan",
+        "url": "/ships/ss-strathallan",
+        "operator": "P&O",
+        "signalStrength": "high-context",
+        "rationale": "Unlinked ship within a well-represented operator group of 17 archive guides; worth checking for class, running-mate, route, or succession links."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "Chichibu Maru (1930)",
         "slug": "chichibu-maru",
         "url": "/ships/chichibu-maru",
@@ -435,15 +439,6 @@
         "operator": "Cunard Line",
         "signalStrength": "high-context",
         "rationale": "Unlinked ship within a well-represented operator group of 38 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "RMS Stratheden (1937)",
-        "slug": "rms-stratheden",
-        "url": "/ships/rms-stratheden",
-        "operator": "P&O",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 16 archive guides; worth checking for class, running-mate, route, or succession links."
       },
       {
         "type": "relationship-gap",
@@ -1034,6 +1029,27 @@
         "coveragePct": 89.5
       },
       {
+        "name": "P&O",
+        "total": 17,
+        "covered": 15,
+        "uncovered": [
+          {
+            "name": "RMS Stratheden (1937)",
+            "slug": "rms-stratheden",
+            "url": "/ships/rms-stratheden",
+            "launchYear": "1937"
+          },
+          {
+            "name": "SS Strathallan (1938)",
+            "slug": "ss-strathallan",
+            "url": "/ships/ss-strathallan",
+            "launchYear": "1937"
+          }
+        ],
+        "uncoveredCount": 2,
+        "coveragePct": 88.2
+      },
+      {
         "name": "Nippon Yusen Kaisha (NYK Line)",
         "total": 5,
         "covered": 3,
@@ -1167,21 +1183,6 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 97.4
-      },
-      {
-        "name": "P&O",
-        "total": 16,
-        "covered": 15,
-        "uncovered": [
-          {
-            "name": "RMS Stratheden (1937)",
-            "slug": "rms-stratheden",
-            "url": "/ships/rms-stratheden",
-            "launchYear": "1937"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 93.8
       },
       {
         "name": "Union-Castle Line",
@@ -1992,10 +1993,10 @@
       },
       {
         "era": "Interwar express-liner era",
-        "shipCount": 51,
+        "shipCount": 52,
         "relationshipCovered": 46,
-        "relationshipUncovered": 5,
-        "relationshipCoveragePct": 90.2
+        "relationshipUncovered": 6,
+        "relationshipCoveragePct": 88.5
       },
       {
         "era": "Interwar recovery",
@@ -2085,10 +2086,10 @@
       },
       {
         "decade": "1930s",
-        "shipCount": 56,
+        "shipCount": 57,
         "relationshipCovered": 50,
-        "relationshipUncovered": 6,
-        "relationshipCoveragePct": 89.3
+        "relationshipUncovered": 7,
+        "relationshipCoveragePct": 87.7
       },
       {
         "decade": "1940s",
@@ -2400,6 +2401,13 @@
       "url": "/ships/ss-stavangerfjord",
       "operator": "Norwegian America Line (Den norske Amerikalinje)",
       "launchYear": "1917"
+    },
+    {
+      "name": "SS Strathallan (1938)",
+      "slug": "ss-strathallan",
+      "url": "/ships/ss-strathallan",
+      "operator": "P&O",
+      "launchYear": "1937"
     },
     {
       "name": "SS Vestris",

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:48:21.394Z",
+  "generatedAt": "2026-10-08T06:13:23.333Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 367,
-    "guidesWithOperator": 367,
+    "shipGuides": 368,
+    "guidesWithOperator": 368,
     "guidesMissingOperator": 0,
     "canonicalOperators": 89,
     "aliasedOperatorGroups": 24
@@ -86,6 +86,7 @@
       "id": "p-and-o",
       "name": "P&O",
       "rawValues": [
+        "P&O (Peninsular and Oriental Steam Navigation Company)",
         "P&O / P&O-Orient Lines",
         "P&O Steam Navigation Company",
         "P&O Steam Navigation Company; later P&O-Orient Lines",
@@ -94,7 +95,7 @@
         "Peninsular & Oriental Steam Navigation Company (P&O)",
         "Peninsular and Oriental Steam Navigation Company (P&O)"
       ],
-      "shipCount": 16
+      "shipCount": 17
     },
     {
       "id": "canadian-pacific",
@@ -3567,6 +3568,14 @@
       "url": "/ships/ss-strathaird",
       "launchYear": "1931",
       "operatorRaw": "P&O Steam Navigation Company; later P&O-Orient Lines",
+      "operator": "P&O"
+    },
+    {
+      "name": "SS Strathallan (1938)",
+      "path": "ships/ss-strathallan.html",
+      "url": "/ships/ss-strathallan",
+      "launchYear": "1937",
+      "operatorRaw": "P&O (Peninsular and Oriental Steam Navigation Company)",
       "operator": "P&O"
     },
     {
