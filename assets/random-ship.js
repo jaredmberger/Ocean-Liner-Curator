@@ -254,6 +254,7 @@
 "/ships/ms-stockholm.html",
 "/ships/ss-storstad.html",
 "/ships/ss-strathaird.html",
+"/ships/rms-stratheden.html",
 "/ships/ss-strathmore.html",
 "/ships/rms-strathnaver.html",
   "/ships/rms-teutonic.html",
