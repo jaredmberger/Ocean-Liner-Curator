@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T04:40:05.849Z",
+  "generatedAt": "2026-10-08T04:50:24.590Z",
   "summary": {
-    "shipGuides": 363,
-    "canonicalBuilders": 89,
-    "guidesWithBuilder": 363
+    "shipGuides": 364,
+    "canonicalBuilders": 90,
+    "guidesWithBuilder": 364
   },
   "builders": [
     {
@@ -2849,6 +2849,25 @@
           "launchYear": "1932",
           "operator": "Matson Navigation Co. (Matson Line)",
           "builderRaw": "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)"
+        }
+      ]
+    },
+    {
+      "id": "bethlehem-steel",
+      "name": "Bethlehem Steel",
+      "shipCount": 1,
+      "locations": [
+        "Alameda, California"
+      ],
+      "firstLaunchYear": 1946,
+      "lastLaunchYear": 1946,
+      "ships": [
+        {
+          "name": "SS President Cleveland (1947)",
+          "url": "/ships/ss-president-cleveland",
+          "launchYear": "1946",
+          "operator": "American President Lines, under U.S. government charter",
+          "builderRaw": "Bethlehem Steel, Alameda, California (yard 9509)"
         }
       ]
     },

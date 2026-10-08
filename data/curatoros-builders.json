@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T04:40:05.849Z",
+  "generatedAt": "2026-10-08T04:50:24.590Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "trackedShipHtmlFiles": 375,
-    "shipGuides": 363,
-    "canonicalBuilders": 89,
-    "guidesWithBuilder": 363,
+    "trackedShipHtmlFiles": 376,
+    "shipGuides": 364,
+    "canonicalBuilders": 90,
+    "guidesWithBuilder": 364,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
     "operatorValuesRecoveredFromSubtitle": 11,
@@ -1028,6 +1028,17 @@
       ],
       "rawValues": [
         "Bethlehem Shipbuilding Corp., Fore River Shipyard (Quincy, Massachusetts)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "bethlehem-steel",
+      "name": "Bethlehem Steel",
+      "names": [
+        "Bethlehem Steel"
+      ],
+      "rawValues": [
+        "Bethlehem Steel, Alameda, California (yard 9509)"
       ],
       "shipCount": 1
     },
@@ -5806,6 +5817,20 @@
           "id": "blohm-and-voss",
           "name": "Blohm & Voss",
           "raw": "Blohm & Voss, Hamburg · yard no. 139"
+        }
+      ]
+    },
+    {
+      "name": "SS President Cleveland (1947)",
+      "path": "ships/ss-president-cleveland.html",
+      "url": "/ships/ss-president-cleveland",
+      "launchYear": "1946",
+      "builderRaw": "Bethlehem Steel, Alameda, California (yard 9509)",
+      "builders": [
+        {
+          "id": "bethlehem-steel",
+          "name": "Bethlehem Steel",
+          "raw": "Bethlehem Steel, Alameda, California (yard 9509)"
         }
       ]
     },

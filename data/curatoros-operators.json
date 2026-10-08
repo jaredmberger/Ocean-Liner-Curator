@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:40:05.849Z",
+  "generatedAt": "2026-10-08T04:50:24.590Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
-    "shipGuides": 363,
-    "guidesWithOperator": 363,
+    "shipGuides": 364,
+    "guidesWithOperator": 364,
     "guidesMissingOperator": 0,
-    "canonicalOperators": 88,
+    "canonicalOperators": 89,
     "aliasedOperatorGroups": 24
   },
   "operators": [
@@ -444,6 +444,14 @@
       "name": "American President Lines (APL)",
       "rawValues": [
         "American President Lines (APL)"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "american-president-lines-under-u-s-government-charter",
+      "name": "American President Lines, under U.S. government charter",
+      "rawValues": [
+        "American President Lines, under U.S. government charter"
       ],
       "shipCount": 1
     },
@@ -3240,6 +3248,14 @@
       "launchYear": "1899",
       "operatorRaw": "Holland America Line / Nederlandsch-Amerikaansche Stoomvaart Maatschappij",
       "operator": "Holland America Line"
+    },
+    {
+      "name": "SS President Cleveland (1947)",
+      "path": "ships/ss-president-cleveland.html",
+      "url": "/ships/ss-president-cleveland",
+      "launchYear": "1946",
+      "operatorRaw": "American President Lines, under U.S. government charter",
+      "operator": "American President Lines, under U.S. government charter"
     },
     {
       "name": "SS President Coolidge",

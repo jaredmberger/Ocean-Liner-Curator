@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:40:05.849Z",
+  "generatedAt": "2026-10-08T04:50:24.590Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
-    "shipGuides": 363,
-    "guidesWithDocumentedYard": 363,
+    "shipGuides": 364,
+    "guidesWithDocumentedYard": 364,
     "guidesWithoutDocumentedYard": 0,
     "canonicalYardLocations": 77,
     "multiYardShips": 0
@@ -2545,6 +2545,34 @@
       ]
     },
     {
+      "id": "alameda-california",
+      "name": "Alameda, California",
+      "rawValues": [
+        "Alameda, California"
+      ],
+      "builders": [
+        "Bethlehem Steel",
+        "Bethlehem Steel Company"
+      ],
+      "shipCount": 2,
+      "ships": [
+        {
+          "name": "SS President Cleveland (1947)",
+          "path": "ships/ss-president-cleveland.html",
+          "url": "/ships/ss-president-cleveland",
+          "launchYear": "1946",
+          "builder": "Bethlehem Steel"
+        },
+        {
+          "name": "SS President Wilson (1948)",
+          "path": "ships/ss-president-wilson.html",
+          "url": "/ships/ss-president-wilson",
+          "launchYear": "1947",
+          "builder": "Bethlehem Steel Company"
+        }
+      ]
+    },
+    {
       "id": "bristol",
       "name": "Bristol",
       "rawValues": [
@@ -2869,26 +2897,6 @@
           "url": "/ships/ss-gneisenau",
           "launchYear": "1935",
           "builder": "Deutsche Schiff- und Maschinenbau AG"
-        }
-      ]
-    },
-    {
-      "id": "alameda-california",
-      "name": "Alameda, California",
-      "rawValues": [
-        "Alameda, California"
-      ],
-      "builders": [
-        "Bethlehem Steel Company"
-      ],
-      "shipCount": 1,
-      "ships": [
-        {
-          "name": "SS President Wilson (1948)",
-          "path": "ships/ss-president-wilson.html",
-          "url": "/ships/ss-president-wilson",
-          "launchYear": "1947",
-          "builder": "Bethlehem Steel Company"
         }
       ]
     },
@@ -7909,6 +7917,20 @@
           "builderId": "blohm-and-voss",
           "location": "Hamburg",
           "locationRaw": "Hamburg"
+        }
+      ]
+    },
+    {
+      "name": "SS President Cleveland (1947)",
+      "path": "ships/ss-president-cleveland.html",
+      "url": "/ships/ss-president-cleveland",
+      "launchYear": "1946",
+      "assignments": [
+        {
+          "builder": "Bethlehem Steel",
+          "builderId": "bethlehem-steel",
+          "location": "Alameda, California",
+          "locationRaw": "Alameda, California"
         }
       ]
     },

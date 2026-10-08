@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:40:10.343Z",
+  "generatedAt": "2026-10-08T04:50:29.430Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -11,11 +11,11 @@
     "caution": "A low inbound count is a discoverability signal, not evidence that additional links should be invented. New links should reflect a documented historical or thematic relationship."
   },
   "summary": {
-    "shipGuides": 363,
+    "shipGuides": 364,
     "editorialOrphans": 56,
-    "oneEditorialInbound": 144,
+    "oneEditorialInbound": 145,
     "threePlusEditorialInbound": 62,
-    "totalEditorialInboundLinks": 796,
+    "totalEditorialInboundLinks": 797,
     "averageEditorialInbound": 2.19
   },
   "orphanedShips": [
@@ -515,6 +515,17 @@
       "sources": []
     },
     {
+      "name": "SS President Cleveland (1947)",
+      "slug": "ss-president-cleveland",
+      "url": "/ships/ss-president-cleveland",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "SS President Coolidge",
       "slug": "ss-president-coolidge",
       "url": "/ships/ss-president-coolidge",
@@ -529,17 +540,6 @@
       "name": "SS President Hoover",
       "slug": "ss-president-hoover",
       "url": "/ships/ss-president-hoover",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS President Wilson (1948)",
-      "slug": "ss-president-wilson",
-      "url": "/ships/ss-president-wilson",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -3013,6 +3013,25 @@
       ]
     },
     {
+      "name": "SS President Wilson (1948)",
+      "slug": "ss-president-wilson",
+      "url": "/ships/ss-president-wilson",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-president-cleveland.html",
+          "sourceRoute": "/ships/ss-president-cleveland",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Pretoria",
       "slug": "ss-pretoria",
       "url": "/ships/ss-pretoria",
@@ -3871,6 +3890,17 @@
       "sources": []
     },
     {
+      "name": "SS President Cleveland (1947)",
+      "slug": "ss-president-cleveland",
+      "url": "/ships/ss-president-cleveland",
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "name": "SS President Coolidge",
       "slug": "ss-president-coolidge",
       "url": "/ships/ss-president-coolidge",
@@ -3885,17 +3915,6 @@
       "name": "SS President Hoover",
       "slug": "ss-president-hoover",
       "url": "/ships/ss-president-hoover",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "SS President Wilson (1948)",
-      "slug": "ss-president-wilson",
-      "url": "/ships/ss-president-wilson",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -6363,6 +6382,25 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS President Wilson (1948)",
+      "slug": "ss-president-wilson",
+      "url": "/ships/ss-president-wilson",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-president-cleveland.html",
+          "sourceRoute": "/ships/ss-president-cleveland",
+          "sourceCategory": "ship-guide"
         }
       ]
     },

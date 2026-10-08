@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:40:07.264Z",
+  "generatedAt": "2026-10-08T04:50:26.443Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
-    "shipGuides": 363,
-    "guidesWithServiceStart": 357,
-    "guidesWithExplicitServiceEnd": 280,
+    "shipGuides": 364,
+    "guidesWithServiceStart": 358,
+    "guidesWithExplicitServiceEnd": 281,
     "eras": 10,
     "decades": 15
   },
@@ -1919,7 +1919,7 @@
     },
     {
       "name": "Postwar liner renaissance",
-      "shipCount": 28,
+      "shipCount": 29,
       "ships": [
         {
           "name": "MS Stockholm (1948)",
@@ -2074,6 +2074,13 @@
           "url": "/ships/ss-independence",
           "serviceStartYear": "1951",
           "serviceEndYear": "2010"
+        },
+        {
+          "name": "SS President Cleveland (1947)",
+          "path": "ships/ss-president-cleveland.html",
+          "url": "/ships/ss-president-cleveland",
+          "serviceStartYear": "1947",
+          "serviceEndYear": "1974"
         },
         {
           "name": "SS President Wilson (1948)",
@@ -4868,7 +4875,7 @@
     },
     {
       "name": "1940s",
-      "shipCount": 9,
+      "shipCount": 10,
       "ships": [
         {
           "name": "MS Stockholm (1948)",
@@ -4925,6 +4932,13 @@
           "url": "/ships/ss-himalaya",
           "serviceStartYear": "1949",
           "serviceEndYear": "1975"
+        },
+        {
+          "name": "SS President Cleveland (1947)",
+          "path": "ships/ss-president-cleveland.html",
+          "url": "/ships/ss-president-cleveland",
+          "serviceStartYear": "1947",
+          "serviceEndYear": "1974"
         },
         {
           "name": "SS President Wilson (1948)",
@@ -8538,6 +8552,17 @@
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
       "endEvidence": "1944; wreck raised and scrapped"
+    },
+    {
+      "name": "SS President Cleveland (1947)",
+      "path": "ships/ss-president-cleveland.html",
+      "url": "/ships/ss-president-cleveland",
+      "launchYear": "1946",
+      "serviceStartYear": "1947",
+      "serviceEndYear": "1974",
+      "era": "Postwar liner renaissance",
+      "decade": "1940s",
+      "endEvidence": "scrapped at Kaohsiung, Taiwan, in 1974"
     },
     {
       "name": "SS President Coolidge",

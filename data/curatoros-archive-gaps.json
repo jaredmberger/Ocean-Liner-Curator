@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:40:08.665Z",
+  "generatedAt": "2026-10-08T04:50:27.799Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -11,20 +11,20 @@
     ]
   },
   "summary": {
-    "shipGuides": 363,
+    "shipGuides": 364,
     "relationshipCovered": 323,
-    "relationshipUncovered": 40,
-    "relationshipCoveragePct": 89,
-    "canonicalOperators": 88,
-    "thinOperators": 59,
+    "relationshipUncovered": 41,
+    "relationshipCoveragePct": 88.7,
+    "canonicalOperators": 89,
+    "thinOperators": 60,
     "canonicalYardLocations": 77,
     "guidesWithoutDocumentedYard": 0,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 45,
-    "unresolvedSisterMentions": 15,
-    "unresolvedSisterMentionsWithNoArchiveMatch": 9
+    "explicitSisterLinks": 46,
+    "unresolvedSisterMentions": 14,
+    "unresolvedSisterMentionsWithNoArchiveMatch": 8
   },
   "signals": {
     "sisterShipResearchCandidates": [
@@ -67,13 +67,6 @@
         "ship": "SS La Bourgogne",
         "path": "ships/ss-la-bourgogne.html",
         "mentioned": "La Gascogne",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
-      },
-      {
-        "ship": "SS President Wilson (1948)",
-        "path": "ships/ss-president-wilson.html",
-        "mentioned": "President Cleveland",
         "candidateCount": 0,
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
@@ -176,13 +169,6 @@
         "mentioned": "Orcades",
         "candidateCount": 2,
         "signal": "Ambiguous archive match; identity disambiguation needed"
-      },
-      {
-        "ship": "SS President Wilson (1948)",
-        "path": "ships/ss-president-wilson.html",
-        "mentioned": "President Cleveland",
-        "candidateCount": 0,
-        "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       },
       {
         "ship": "SS Scharnhorst",
@@ -455,6 +441,15 @@
       },
       {
         "type": "relationship-gap",
+        "ship": "SS President Cleveland (1947)",
+        "slug": "ss-president-cleveland",
+        "url": "/ships/ss-president-cleveland",
+        "operator": "American President Lines, under U.S. government charter",
+        "signalStrength": "normal",
+        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
+      },
+      {
+        "type": "relationship-gap",
         "ship": "SS Letitia",
         "slug": "ss-letitia",
         "url": "/ships/ss-letitia",
@@ -570,6 +565,11 @@
       },
       {
         "operator": "American President Lines (APL)",
+        "shipCount": 1,
+        "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
+      },
+      {
+        "operator": "American President Lines, under U.S. government charter",
         "shipCount": 1,
         "note": "Thin archive representation; research signal only, not proof of historical underrepresentation."
       },
@@ -1178,6 +1178,21 @@
             "slug": "ss-president-wilson",
             "url": "/ships/ss-president-wilson",
             "launchYear": "1947"
+          }
+        ],
+        "uncoveredCount": 1,
+        "coveragePct": 0
+      },
+      {
+        "name": "American President Lines, under U.S. government charter",
+        "total": 1,
+        "covered": 0,
+        "uncovered": [
+          {
+            "name": "SS President Cleveland (1947)",
+            "slug": "ss-president-cleveland",
+            "url": "/ships/ss-president-cleveland",
+            "launchYear": "1946"
           }
         ],
         "uncoveredCount": 1,
@@ -1874,10 +1889,10 @@
       },
       {
         "era": "Postwar liner renaissance",
-        "shipCount": 28,
+        "shipCount": 29,
         "relationshipCovered": 21,
-        "relationshipUncovered": 7,
-        "relationshipCoveragePct": 75
+        "relationshipUncovered": 8,
+        "relationshipCoveragePct": 72.4
       },
       {
         "era": "Late Victorian expansion",
@@ -1988,10 +2003,10 @@
       },
       {
         "decade": "1940s",
-        "shipCount": 9,
+        "shipCount": 10,
         "relationshipCovered": 7,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 77.8
+        "relationshipUncovered": 3,
+        "relationshipCoveragePct": 70
       },
       {
         "decade": "1950s",
@@ -2233,6 +2248,13 @@
       "url": "/ships/ss-poland",
       "operator": "Atlantic Transport Line",
       "launchYear": "1897"
+    },
+    {
+      "name": "SS President Cleveland (1947)",
+      "slug": "ss-president-cleveland",
+      "url": "/ships/ss-president-cleveland",
+      "operator": "American President Lines, under U.S. government charter",
+      "launchYear": "1946"
     },
     {
       "name": "SS President Lincoln",

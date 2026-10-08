@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T04:40:08.590Z",
+  "generatedAt": "2026-10-08T04:50:27.728Z",
   "source": "Explicit class and sister-ship wording in tracked ship guides",
   "summary": {
-    "shipGuides": 363,
+    "shipGuides": 364,
     "guidesWithExplicitClass": 18,
     "canonicalClasses": 10,
-    "explicitSisterLinks": 45,
-    "unresolvedSisterMentions": 15
+    "explicitSisterLinks": 46,
+    "unresolvedSisterMentions": 14
   },
   "classes": [
     {
@@ -737,6 +737,19 @@
     },
     {
       "a": {
+        "name": "SS President Cleveland (1947)",
+        "path": "ships/ss-president-cleveland.html",
+        "url": "/ships/ss-president-cleveland"
+      },
+      "b": {
+        "name": "SS President Wilson (1948)",
+        "path": "ships/ss-president-wilson.html",
+        "url": "/ships/ss-president-wilson"
+      },
+      "evidenceFrom": "ships/ss-president-cleveland.html"
+    },
+    {
+      "a": {
         "name": "SS President Coolidge",
         "path": "ships/ss-president-coolidge.html",
         "url": "/ships/ss-president-coolidge"
@@ -860,12 +873,6 @@
       "path": "ships/ss-orion.html",
       "mentioned": "Orcades",
       "candidateCount": 2
-    },
-    {
-      "ship": "SS President Wilson (1948)",
-      "path": "ships/ss-president-wilson.html",
-      "mentioned": "President Cleveland",
-      "candidateCount": 0
     },
     {
       "ship": "SS Scharnhorst",
@@ -3176,6 +3183,15 @@
       "url": "/ships/ss-potsdam",
       "classes": [],
       "sisters": []
+    },
+    {
+      "name": "SS President Cleveland (1947)",
+      "path": "ships/ss-president-cleveland.html",
+      "url": "/ships/ss-president-cleveland",
+      "classes": [],
+      "sisters": [
+        "President Wilson"
+      ]
     },
     {
       "name": "SS President Coolidge",
