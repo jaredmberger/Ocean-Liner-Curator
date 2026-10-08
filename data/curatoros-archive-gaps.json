@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:30:26.613Z",
+  "generatedAt": "2026-10-08T08:56:37.061Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -12,9 +12,9 @@
   },
   "summary": {
     "shipGuides": 370,
-    "relationshipCovered": 323,
-    "relationshipUncovered": 47,
-    "relationshipCoveragePct": 87.3,
+    "relationshipCovered": 333,
+    "relationshipUncovered": 37,
+    "relationshipCoveragePct": 90,
     "canonicalOperators": 91,
     "thinOperators": 62,
     "canonicalYardLocations": 78,
@@ -316,42 +316,6 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "RMS Stratheden (1937)",
-        "slug": "rms-stratheden",
-        "url": "/ships/rms-stratheden",
-        "operator": "P&O",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 17 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Strathallan (1938)",
-        "slug": "ss-strathallan",
-        "url": "/ships/ss-strathallan",
-        "operator": "P&O",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 17 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "Chichibu Maru (1930)",
-        "slug": "chichibu-maru",
-        "url": "/ships/chichibu-maru",
-        "operator": "Nippon Yusen Kaisha (NYK Line)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 5 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "Heian Maru (1930)",
-        "slug": "heian-maru",
-        "url": "/ships/heian-maru",
-        "operator": "Nippon Yusen Kaisha (NYK Line)",
-        "signalStrength": "high-context",
-        "rationale": "Unlinked ship within a well-represented operator group of 5 archive guides; worth checking for class, running-mate, route, or succession links."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "MS Vera Cruz (1952)",
         "slug": "ms-vera-cruz",
         "url": "/ships/ms-vera-cruz",
@@ -383,24 +347,6 @@
         "slug": "ss-guglielmo-marconi",
         "url": "/ships/ss-guglielmo-marconi",
         "operator": "Lloyd Triestino",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "MS Oslofjord (1938)",
-        "slug": "ms-oslofjord",
-        "url": "/ships/ms-oslofjord",
-        "operator": "Norwegian America Line (Den norske Amerikalinje)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS Stavangerfjord (1918)",
-        "slug": "ss-stavangerfjord",
-        "url": "/ships/ss-stavangerfjord",
-        "operator": "Norwegian America Line (Den norske Amerikalinje)",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -496,24 +442,6 @@
       },
       {
         "type": "relationship-gap",
-        "ship": "SS President Wilson (1948)",
-        "slug": "ss-president-wilson",
-        "url": "/ships/ss-president-wilson",
-        "operator": "American President Lines (APL)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "SS President Cleveland (1947)",
-        "slug": "ss-president-cleveland",
-        "url": "/ships/ss-president-cleveland",
-        "operator": "American President Lines, under U.S. government charter",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
         "ship": "SS Letitia",
         "slug": "ss-letitia",
         "url": "/ships/ss-letitia",
@@ -599,24 +527,6 @@
         "slug": "ss-norge",
         "url": "/ships/ss-norge",
         "operator": "Originally Theodore C. Engels & Co. as Pieter de Coninck; later Thingvalla Line; later Scandinavian America Line / DFDS as Norge",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "MS Dempo (1931)",
-        "slug": "ms-dempo",
-        "url": "/ships/ms-dempo",
-        "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
-        "signalStrength": "normal",
-        "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
-      },
-      {
-        "type": "relationship-gap",
-        "ship": "MS Baloeran (1930)",
-        "slug": "ms-baloeran",
-        "url": "/ships/ms-baloeran",
-        "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
         "signalStrength": "normal",
         "rationale": "Unlinked ship; retain as unlinked unless a specific historical relationship can be documented."
       },
@@ -1057,48 +967,6 @@
         "coveragePct": 89.5
       },
       {
-        "name": "P&O",
-        "total": 17,
-        "covered": 15,
-        "uncovered": [
-          {
-            "name": "RMS Stratheden (1937)",
-            "slug": "rms-stratheden",
-            "url": "/ships/rms-stratheden",
-            "launchYear": "1937"
-          },
-          {
-            "name": "SS Strathallan (1938)",
-            "slug": "ss-strathallan",
-            "url": "/ships/ss-strathallan",
-            "launchYear": "1937"
-          }
-        ],
-        "uncoveredCount": 2,
-        "coveragePct": 88.2
-      },
-      {
-        "name": "Nippon Yusen Kaisha (NYK Line)",
-        "total": 5,
-        "covered": 3,
-        "uncovered": [
-          {
-            "name": "Chichibu Maru (1930)",
-            "slug": "chichibu-maru",
-            "url": "/ships/chichibu-maru",
-            "launchYear": "1929"
-          },
-          {
-            "name": "Heian Maru (1930)",
-            "slug": "heian-maru",
-            "url": "/ships/heian-maru",
-            "launchYear": "1930"
-          }
-        ],
-        "uncoveredCount": 2,
-        "coveragePct": 60
-      },
-      {
         "name": "Companhia Colonial de Navegação",
         "total": 2,
         "covered": 0,
@@ -1135,27 +1003,6 @@
             "slug": "ss-guglielmo-marconi",
             "url": "/ships/ss-guglielmo-marconi",
             "launchYear": "1961"
-          }
-        ],
-        "uncoveredCount": 2,
-        "coveragePct": 0
-      },
-      {
-        "name": "Norwegian America Line (Den norske Amerikalinje)",
-        "total": 2,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "MS Oslofjord (1938)",
-            "slug": "ms-oslofjord",
-            "url": "/ships/ms-oslofjord",
-            "launchYear": "1937"
-          },
-          {
-            "name": "SS Stavangerfjord (1918)",
-            "slug": "ss-stavangerfjord",
-            "url": "/ships/ss-stavangerfjord",
-            "launchYear": "1917"
           }
         ],
         "uncoveredCount": 2,
@@ -1301,36 +1148,6 @@
         ],
         "uncoveredCount": 1,
         "coveragePct": 50
-      },
-      {
-        "name": "American President Lines (APL)",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS President Wilson (1948)",
-            "slug": "ss-president-wilson",
-            "url": "/ships/ss-president-wilson",
-            "launchYear": "1947"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
-      },
-      {
-        "name": "American President Lines, under U.S. government charter",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "SS President Cleveland (1947)",
-            "slug": "ss-president-cleveland",
-            "url": "/ships/ss-president-cleveland",
-            "launchYear": "1946"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
       },
       {
         "name": "Anchor-Donaldson Line; later Donaldson Atlantic Line and Donaldson Brothers & Black management in postwar service",
@@ -1483,36 +1300,6 @@
         "coveragePct": 0
       },
       {
-        "name": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "MS Dempo (1931)",
-            "slug": "ms-dempo",
-            "url": "/ships/ms-dempo",
-            "launchYear": "1930"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
-      },
-      {
-        "name": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
-        "total": 1,
-        "covered": 0,
-        "uncovered": [
-          {
-            "name": "MS Baloeran (1930)",
-            "slug": "ms-baloeran",
-            "url": "/ships/ms-baloeran",
-            "launchYear": "1929"
-          }
-        ],
-        "uncoveredCount": 1,
-        "coveragePct": 0
-      },
-      {
         "name": "Shaw, Savill & Albion Line",
         "total": 1,
         "covered": 0,
@@ -1546,6 +1333,14 @@
         "name": "Norddeutscher Lloyd (North German Lloyd)",
         "total": 21,
         "covered": 21,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "P&O",
+        "total": 17,
+        "covered": 17,
         "uncovered": [],
         "uncoveredCount": 0,
         "coveragePct": 100
@@ -1592,6 +1387,14 @@
       },
       {
         "name": "Navigazione Generale Italiana (NGI)",
+        "total": 5,
+        "covered": 5,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Nippon Yusen Kaisha (NYK Line)",
         "total": 5,
         "covered": 5,
         "uncovered": [],
@@ -1735,6 +1538,14 @@
         "coveragePct": 100
       },
       {
+        "name": "Norwegian America Line (Den norske Amerikalinje)",
+        "total": 2,
+        "covered": 2,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
         "name": "Pacific Mail Steamship Company",
         "total": 2,
         "covered": 2,
@@ -1752,6 +1563,22 @@
       },
       {
         "name": "A. F. Klaveness",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "American President Lines (APL)",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "American President Lines, under U.S. government charter",
         "total": 1,
         "covered": 1,
         "uncovered": [],
@@ -1856,6 +1683,22 @@
       },
       {
         "name": "Rederi AB Sverige-Nordamerika (Swedish American Line), 1923–1926",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
+        "total": 1,
+        "covered": 1,
+        "uncovered": [],
+        "uncoveredCount": 0,
+        "coveragePct": 100
+      },
+      {
+        "name": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
         "total": 1,
         "covered": 1,
         "uncovered": [],
@@ -2024,9 +1867,9 @@
       {
         "era": "First World War era",
         "shipCount": 16,
-        "relationshipCovered": 15,
-        "relationshipUncovered": 1,
-        "relationshipCoveragePct": 93.8
+        "relationshipCovered": 16,
+        "relationshipUncovered": 0,
+        "relationshipCoveragePct": 100
       },
       {
         "era": "Pioneer steam era",
@@ -2038,9 +1881,9 @@
       {
         "era": "Postwar liner renaissance",
         "shipCount": 29,
-        "relationshipCovered": 21,
-        "relationshipUncovered": 8,
-        "relationshipCoveragePct": 72.4
+        "relationshipCovered": 23,
+        "relationshipUncovered": 6,
+        "relationshipCoveragePct": 79.3
       },
       {
         "era": "Late Victorian expansion",
@@ -2052,9 +1895,9 @@
       {
         "era": "Interwar express-liner era",
         "shipCount": 54,
-        "relationshipCovered": 46,
-        "relationshipUncovered": 8,
-        "relationshipCoveragePct": 85.2
+        "relationshipCovered": 53,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 98.1
       },
       {
         "era": "Interwar recovery",
@@ -2131,9 +1974,9 @@
       {
         "decade": "1910s",
         "shipCount": 38,
-        "relationshipCovered": 36,
-        "relationshipUncovered": 2,
-        "relationshipCoveragePct": 94.7
+        "relationshipCovered": 37,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 97.4
       },
       {
         "decade": "1920s",
@@ -2145,16 +1988,16 @@
       {
         "decade": "1930s",
         "shipCount": 59,
-        "relationshipCovered": 50,
-        "relationshipUncovered": 9,
-        "relationshipCoveragePct": 84.7
+        "relationshipCovered": 57,
+        "relationshipUncovered": 2,
+        "relationshipCoveragePct": 96.6
       },
       {
         "decade": "1940s",
         "shipCount": 10,
-        "relationshipCovered": 7,
-        "relationshipUncovered": 3,
-        "relationshipCoveragePct": 70
+        "relationshipCovered": 9,
+        "relationshipUncovered": 1,
+        "relationshipCoveragePct": 90
       },
       {
         "decade": "1950s",
@@ -2180,41 +2023,6 @@
     ]
   },
   "relationshipUncoveredShips": [
-    {
-      "name": "Chichibu Maru (1930)",
-      "slug": "chichibu-maru",
-      "url": "/ships/chichibu-maru",
-      "operator": "Nippon Yusen Kaisha (NYK Line)",
-      "launchYear": "1929"
-    },
-    {
-      "name": "Heian Maru (1930)",
-      "slug": "heian-maru",
-      "url": "/ships/heian-maru",
-      "operator": "Nippon Yusen Kaisha (NYK Line)",
-      "launchYear": "1930"
-    },
-    {
-      "name": "MS Baloeran (1930)",
-      "slug": "ms-baloeran",
-      "url": "/ships/ms-baloeran",
-      "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen), Rotterdam",
-      "launchYear": "1929"
-    },
-    {
-      "name": "MS Dempo (1931)",
-      "slug": "ms-dempo",
-      "url": "/ships/ms-dempo",
-      "operator": "Rotterdamsche Lloyd (Wm Ruys & Zonen)",
-      "launchYear": "1930"
-    },
-    {
-      "name": "MS Oslofjord (1938)",
-      "slug": "ms-oslofjord",
-      "url": "/ships/ms-oslofjord",
-      "operator": "Norwegian America Line (Den norske Amerikalinje)",
-      "launchYear": "1937"
-    },
     {
       "name": "MS Vera Cruz (1952)",
       "slug": "ms-vera-cruz",
@@ -2249,13 +2057,6 @@
       "url": "/ships/rms-pendennis-castle",
       "operator": "Union-Castle Mail Steam Ship Company",
       "launchYear": "1957"
-    },
-    {
-      "name": "RMS Stratheden (1937)",
-      "slug": "rms-stratheden",
-      "url": "/ships/rms-stratheden",
-      "operator": "P&O",
-      "launchYear": "1937"
     },
     {
       "name": "SS Arabia (1852)",
@@ -2433,25 +2234,11 @@
       "launchYear": "1897"
     },
     {
-      "name": "SS President Cleveland (1947)",
-      "slug": "ss-president-cleveland",
-      "url": "/ships/ss-president-cleveland",
-      "operator": "American President Lines, under U.S. government charter",
-      "launchYear": "1946"
-    },
-    {
       "name": "SS President Lincoln",
       "slug": "ss-president-lincoln",
       "url": "/ships/ss-president-lincoln",
       "operator": "Hamburg America Line (HAPAG)",
       "launchYear": "1903"
-    },
-    {
-      "name": "SS President Wilson (1948)",
-      "slug": "ss-president-wilson",
-      "url": "/ships/ss-president-wilson",
-      "operator": "American President Lines (APL)",
-      "launchYear": "1947"
     },
     {
       "name": "SS Queen Frederica (1955)",
@@ -2466,20 +2253,6 @@
       "url": "/ships/ss-santa-maria",
       "operator": "Companhia Colonial de Navegação",
       "launchYear": "1952"
-    },
-    {
-      "name": "SS Stavangerfjord (1918)",
-      "slug": "ss-stavangerfjord",
-      "url": "/ships/ss-stavangerfjord",
-      "operator": "Norwegian America Line (Den norske Amerikalinje)",
-      "launchYear": "1917"
-    },
-    {
-      "name": "SS Strathallan (1938)",
-      "slug": "ss-strathallan",
-      "url": "/ships/ss-strathallan",
-      "operator": "P&O",
-      "launchYear": "1937"
     },
     {
       "name": "SS Vestris",
