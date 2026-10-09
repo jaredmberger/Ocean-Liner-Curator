@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T08:36:45.899Z",
+  "generatedAt": "2026-10-09T06:42:25.962Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -23,7 +23,7 @@
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 19,
-    "priorityWithThreePlusEditorialInbound": 56
+    "priorityWithThreePlusEditorialInbound": 58
   },
   "categories": {
     "article-reference": {
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 109,
-      "averageEditorialInbound": 3.21
+      "editorialInbound": 118,
+      "averageEditorialInbound": 3.47
     },
     "comparative-history": {
       "pages": 33,
@@ -12956,12 +12956,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
-        "article-reference": 1
+        "article-reference": 1,
+        "ship-guide": 1
       },
       "sources": [
         {
@@ -12974,6 +12975,12 @@
           "sourcePath": "how-to-use-the-ship-archive.html",
           "sourceRoute": "/how-to-use-the-ship-archive",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-bremen.html",
+          "sourceRoute": "/ships/ss-bremen",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -13290,13 +13297,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 4,
+      "inboundTotal": 9,
+      "editorialInbound": 7,
       "baselineInbound": 2,
       "byCategory": {
         "comparative-history": 2,
         "collection": 1,
-        "article-reference": 1
+        "article-reference": 1,
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -13321,6 +13329,24 @@
           "sourcePath": "designs-interiors/french-british-german-and-italian-interior-traditions.html",
           "sourceRoute": "/collectors-notebook/french-british-german-and-italian-interior-traditions",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-bremen.html",
+          "sourceRoute": "/ships/ss-bremen",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-imperator.html",
+          "sourceRoute": "/ships/ss-imperator",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-leviathan.html",
+          "sourceRoute": "/ships/ss-leviathan",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -13466,13 +13492,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 8,
-      "editorialInbound": 6,
+      "inboundTotal": 10,
+      "editorialInbound": 8,
       "baselineInbound": 2,
       "byCategory": {
         "comparative-history": 1,
         "collection": 2,
-        "article-reference": 3
+        "article-reference": 3,
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -13510,6 +13537,18 @@
           "sourceRoute": "/how-to-use-the-ship-archive",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-imperator.html",
+          "sourceRoute": "/ships/ss-imperator",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-leviathan.html",
+          "sourceRoute": "/ships/ss-leviathan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
         }
       ]
     },
@@ -13521,12 +13560,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 8,
-      "editorialInbound": 6,
+      "inboundTotal": 9,
+      "editorialInbound": 7,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 5,
-        "comparative-history": 1
+        "comparative-history": 1,
+        "ship-guide": 1
       },
       "sources": [
         {
@@ -13563,6 +13603,12 @@
           "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
           "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-titanic.html",
+          "sourceRoute": "/ships/rms-titanic",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -13772,11 +13818,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
-        "comparative-history": 2
+        "comparative-history": 2,
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -13789,6 +13836,18 @@
           "sourcePath": "olympic-titanic-britannic-design-evolution.html",
           "sourceRoute": "/olympic-titanic-britannic-design-evolution",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-olympic.html",
+          "sourceRoute": "/ships/rms-olympic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-titanic.html",
+          "sourceRoute": "/ships/rms-titanic",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
