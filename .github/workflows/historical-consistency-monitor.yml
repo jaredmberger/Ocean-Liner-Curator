@@ -1,0 +1,30 @@
+name: Historical consistency monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '31 13 * * 2'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit ship chronology and identity groups
+        run: |
+          python3 scripts/historical-consistency-monitor.py \
+            --output historical-consistency-report.md \
+            --csv historical-consistency-findings.csv
+      - name: Summarize findings
+        run: cat historical-consistency-report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-consistency-report
+          path: |
+            historical-consistency-report.md
+            historical-consistency-findings.csv
+          retention-days: 30
