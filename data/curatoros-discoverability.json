@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-09T06:42:25.962Z",
+  "generatedAt": "2026-10-09T06:48:33.790Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -22,8 +22,8 @@
     "priorityPages": 89,
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 2,
-    "priorityWithOneEditorialInbound": 19,
-    "priorityWithThreePlusEditorialInbound": 58
+    "priorityWithOneEditorialInbound": 18,
+    "priorityWithThreePlusEditorialInbound": 60
   },
   "categories": {
     "article-reference": {
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 118,
-      "averageEditorialInbound": 3.47
+      "editorialInbound": 125,
+      "averageEditorialInbound": 3.68
     },
     "comparative-history": {
       "pages": 33,
@@ -383,29 +383,6 @@
             "sourcePath": "collections/floating-palaces-interior-innovation.html",
             "sourceRoute": "/collections/floating-palaces-interior-innovation",
             "sourceCategory": "collection",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "collections/ocean-liners-at-war.html",
-        "route": "/collections/ocean-liners-at-war",
-        "title": "Ocean Liners at War",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 2,
-        "editorialInbound": 1,
-        "baselineInbound": 1,
-        "byCategory": {
-          "comparative-history": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
-            "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
-            "sourceCategory": "comparative-history",
             "sourceBaseline": false
           }
         ]
@@ -12956,13 +12933,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 3,
+      "inboundTotal": 6,
+      "editorialInbound": 4,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
         "article-reference": 1,
-        "ship-guide": 1
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -12975,6 +12952,12 @@
           "sourcePath": "how-to-use-the-ship-archive.html",
           "sourceRoute": "/how-to-use-the-ship-archive",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-aquitania.html",
+          "sourceRoute": "/ships/rms-aquitania",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -13359,12 +13342,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
-        "comparative-history": 1
+        "comparative-history": 1,
+        "ship-guide": 1
       },
       "sources": [
         {
@@ -13378,6 +13362,12 @@
           "sourceRoute": "/first-class-vs-third-class-on-ocean-liners",
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-belgenland.html",
+          "sourceRoute": "/ships/ss-belgenland",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
         }
       ]
     },
@@ -13389,13 +13379,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 7,
-      "editorialInbound": 6,
+      "inboundTotal": 8,
+      "editorialInbound": 7,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 3,
         "collection": 1,
-        "ship-guide": 2
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -13420,6 +13410,12 @@
           "sourcePath": "rex-conte-di-savoia-flagship-study.html",
           "sourceRoute": "/rex-conte-di-savoia-flagship-study",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-cristoforo-colombo.html",
+          "sourceRoute": "/ships/ss-cristoforo-colombo",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -13560,13 +13556,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 7,
+      "inboundTotal": 10,
+      "editorialInbound": 8,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 5,
         "comparative-history": 1,
-        "ship-guide": 1
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -13603,6 +13599,12 @@
           "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
           "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-empress-of-britain.html",
+          "sourceRoute": "/ships/rms-empress-of-britain",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -13644,17 +13646,30 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "comparative-history": 1
+        "comparative-history": 1,
+        "ship-guide": 2
       },
       "sources": [
         {
           "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
           "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-aquitania.html",
+          "sourceRoute": "/ships/rms-aquitania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-empress-of-britain.html",
+          "sourceRoute": "/ships/rms-empress-of-britain",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -13818,12 +13833,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 4,
+      "inboundTotal": 6,
+      "editorialInbound": 5,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 2,
-        "ship-guide": 2
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -13847,6 +13862,12 @@
         {
           "sourcePath": "ships/rms-titanic.html",
           "sourceRoute": "/ships/rms-titanic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-eastland.html",
+          "sourceRoute": "/ships/ss-eastland",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
