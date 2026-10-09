@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Run historical consistency regression tests
+        run: python3 -m unittest discover -s tests -p "test_historical_consistency_monitor.py" -v
       - name: Audit ship chronology and identity groups
         run: |
           python3 scripts/historical-consistency-monitor.py \
