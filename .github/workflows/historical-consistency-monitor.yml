@@ -2,6 +2,11 @@ name: Historical consistency monitor
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/historical-consistency-monitor.py'
+      - 'tests/test_historical_consistency_monitor.py'
+      - '.github/workflows/historical-consistency-monitor.yml'
   schedule:
     - cron: '31 13 * * 2'
 
