@@ -1,0 +1,30 @@
+name: Research discoverability audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 12 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit inbound collection links
+        run: |
+          python3 scripts/research-discoverability-audit.py \
+            --output research-discoverability-report.md \
+            --csv research-discoverability-collections.csv
+      - name: Summarize audit
+        run: cat research-discoverability-report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-discoverability-report
+          path: |
+            research-discoverability-report.md
+            research-discoverability-collections.csv
+          retention-days: 30
