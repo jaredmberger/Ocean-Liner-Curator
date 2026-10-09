@@ -1,0 +1,28 @@
+name: Canonical host health
+
+on:
+  pull_request:
+    paths:
+      - '**.html'
+      - 'scripts/check-canonical-host.py'
+      - '.github/workflows/canonical-host-health.yml'
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'scripts/check-canonical-host.py'
+      - '.github/workflows/canonical-host-health.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  canonical-host:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check canonical host metadata
+        run: python3 scripts/check-canonical-host.py
