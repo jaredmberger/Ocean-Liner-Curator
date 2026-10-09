@@ -48,7 +48,17 @@ def main():
     collections = sorted((root / "collections").glob("*.html"))
     if not collections:
         raise SystemExit("No collections/*.html found; refusing an empty report")
-    targets = {normalized("/collections/" + p.name, ""): p.name for p in collections}
+    # Redirect compatibility stubs are not independent research collections.
+    # Keep them listed separately rather than reporting them as orphaned content.
+    redirects = []
+    editorial = []
+    for p in collections:
+        data = p.read_text(encoding="utf-8")
+        if ('http-equiv="refresh"' in data.lower() and 'noindex' in data.lower()):
+            redirects.append(p.name)
+        else:
+            editorial.append(p)
+    targets = {normalized("/collections/" + p.name, ""): p.name for p in editorial}
     inbound = {k: set() for k in targets}
     ship_links = {}
     sitemap = root / "sitemaps" / "sitemap-ships.xml"
@@ -96,7 +106,8 @@ def main():
         f"- Ship files resolved: {len(ship_links)}",
         f"- Ship files missing: {len(missing)}",
         f"- Guides with no direct collection links: {sum(not v for v in ship_links.values())}",
-        f"- Research collections: {len(targets)}",
+        f"- Editorial research collections: {len(targets)}",
+        f"- Redirect stubs excluded: {len(redirects)}",
         "",
         "## Collection inbound links",
         "",
@@ -110,6 +121,9 @@ def main():
         lines.append(f"| {targets[key]} | {len(inbound[key])} | {ship_sources} |")
     lines += ["", "## Ship guides without direct collection links", ""]
     lines.extend("- " + x for x in sorted(k for k, v in ship_links.items() if not v))
+    if redirects:
+        lines += ["", "## Redirect stubs excluded from collection counts", ""]
+        lines.extend("- " + x for x in redirects)
     if missing:
         lines += ["", "## Unresolved sitemap paths", ""]
         lines.extend("- " + x for x in missing)
@@ -122,7 +136,7 @@ def main():
         writer = csv.writer(f)
         writer.writerow(("collection", "inbound_html_sources", "inbound_ship_guides"))
         writer.writerows(records)
-    print(f"Audited {len(ship_links)} ship pages and {len(targets)} collections; {len(missing)} unresolved sitemap paths")
+    print(f"Audited {len(ship_links)} ship pages and {len(targets)} editorial collections; excluded {len(redirects)} redirect stubs; {len(missing)} unresolved sitemap paths")
 
 if __name__ == "__main__":
     main()
