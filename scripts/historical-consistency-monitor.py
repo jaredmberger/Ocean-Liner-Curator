@@ -20,7 +20,7 @@ DATE_PATTERN = re.compile(
     r"\b(?:\d{1,2}\s+[A-Za-z]+\s+\d{4}|[A-Za-z]+\s+\d{1,2},?\s+\d{4})\b"
 )
 ROW_PATTERN = re.compile(
-    r'<div\b[^>]*class="[^"]*\bfact-row\b[^"]*"[^>]*>(.*?)</div>\s*</div>',
+    r'<div\b[^>]*class="[^"]*\bfact-row\b[^"]*"[^>]*>\s*((?:<div\b[^>]*>.*?</div>\s*){2})</div>',
     re.I | re.S)
 LABEL_PATTERN = re.compile(r'<div\b[^>]*class="[^"]*\bfact-label\b[^"]*"[^>]*>(.*?)</div>', re.I | re.S)
 VALUE_PATTERN = re.compile(r'<div\b[^>]*class="[^"]*\bfact-value\b[^"]*"[^>]*>(.*?)</div>', re.I | re.S)
