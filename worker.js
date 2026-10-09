@@ -1,4 +1,3 @@
-const CANONICAL_HOST = "oceanliners.net";
 const LEGACY_ORIGIN = "https://www.oceanliners.net";
 const CANONICAL_ORIGIN = "https://oceanliners.net";
 
@@ -9,14 +8,6 @@ function normalizeUrl(value) {
 
 export default {
   async fetch(request, env) {
-    const url = new URL(request.url);
-
-    if (url.hostname.toLowerCase() === "www.oceanliners.net") {
-      const redirectTarget =
-        CANONICAL_ORIGIN + encodeURI(url.pathname) + url.search;
-      return Response.redirect(redirectTarget, 301);
-    }
-
     const response = await env.ASSETS.fetch(request);
     const contentType = response.headers.get("content-type") || "";
 
