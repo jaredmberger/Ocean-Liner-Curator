@@ -77,7 +77,6 @@ An open question is not a proven error. Do not replace a qualified claim with an
 | Oceanic (1899) | Exact speed and capacity figures across configurations | Dated plans, registers or owner documents; specify service versus trial speed and class/configuration date. | #328 |
 | Etruria / Umbria (1884) | Differing launch and tonnage summaries | Contemporary launch reports and dated register entries; retain source distinctions rather than silently harmonizing. | #312 |
 | Deutschland / Celtic | Stronger ship-specific bibliography records | Verify relevant institutional or primary records before substitution. Existing guides were left unchanged. | #308 |
-
 | Conte di Savoia | Formal wartime requisition and 29 November 1932 delivery | Owner/builder acceptance and wartime administrative records. Current review establishes lay-up in the cited chronology, not definitive requisition status. | #330 (pending) |
 | Andrea Doria | Exact casualty and rescue totals; distinction between inaugural cruise and first line voyage | Named manifest/inquiry or rescue-account totals with counting rules; dated operator documents for voyage milestones. Existing qualified figures retained. | #330 (pending) |
 | Stockholm | Primary confirmation of exact maiden departure and final recycling milestones | Contemporary operator sailing record; dated tow/recycler records. Secondary summaries are not proof of all later identities or demolition completion. | #330 (pending) |
