@@ -20,6 +20,11 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Homeric February 1922 maiden-voyage chronology (pending PR #359)
+
+Contemporary newspaper notices as transcribed support departure on 15 February rather than the alternative 21 February; arrival on 24 February is independently noted by later ship histories. Completion documentation remains outstanding. [PR #358](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/358) merged 2026-10-11 UTC.
+
+
 ### Rangitata First Echelon embarkation and sailing (pending PR #358)
 
 The 5 January 1940 embarkation context and documented 6 January Wellington sailing are distinguished. Child-evacuee counts and disposal remain open. [PR #357](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/357) merged 2026-10-11 UTC.
@@ -375,7 +380,7 @@ An open question is not a proven error. Do not replace a qualified claim with an
 | Minnewaska (1908) | Capacity, tonnage, loss-voyage destination and disposal | Dated accommodation / register records to separate passenger capacity from troop configuration; contemporary movement and breaker records to resolve Saloniki versus Malta and breakup completion. | [#342](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/342) (merged; question open) |
 | Minnetonka (1901) | Precise completion/delivery, tonnage and wartime designation | Builder acceptance and dated registers / transport records; loss-record and collection figures differ. Original action report needed for independent loss verification. | [#342](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/342) (merged; question open) |
 | Lapland | **Period distinction clarified:** retrospective Norway Heritage chronology lists 17,540 GRT at construction and a revised 18,565 GRT in 1920. Key Facts now explicitly label both phases. **Still open:** original 1920 register entry and cause of remeasurement. | [Norway Heritage, Lapland](https://www.norwayheritage.com/p_ship.asp?sh=lapl2); earlier [NMNI construction catalogue](https://collections.nationalmuseumsni.org/object-hoyfm-hw-h1226). | [#342](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/342); [#352](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/352) (measurement phase clarified; primary reconciliation open) |
-| Homeric | Exact completion / maiden departure and arrival milestones | Contemporary builder and sailing / port records to resolve existing 15 versus 21 February 1922 accounts; do not use model title or undated miniature as chronology proof. | [#342](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/342) (merged; question open) |
+| Homeric | **Maiden departure strongly corroborated:** *Times* notices dated 21 January and 13 February 1922 (later transcriptions) identify Wednesday 15 February as Southampton maiden departure; later ship chronology gives 24 February New York arrival after weather delay. The competing 21 February maiden-departure date lacks support from these contemporary notices. **Open:** original issues, port arrival register and exact builder completion/acceptance milestone. | [*Times* newspaper transcriptions](https://www.encyclopedia-titanica.org/community/threads/news-from-1922-homeric-enters-service.25824/); [Homeric arrival summary](https://kaiserhafen.com/rms-homeric/). | [#342](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/342); [#359](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/359) (departure clarified; completion open) |
 
 America's unverified completion assertion was replaced with documented delivery in #327; Paris's combined loss date was clarified in #327. These supersede the corresponding pending corrections in #326. The remaining questions above stay open. Empress of Canada's maiden-route question and Empress of Japan's bibliography-coverage question from #335 are superseded by #336 within the limited scopes recorded above; the inaccessible Norway Heritage record's identity remains unverified.
 
