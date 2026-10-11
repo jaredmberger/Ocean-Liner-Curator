@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T05:09:31.374Z",
+  "generatedAt": "2026-10-11T05:21:53.148Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -51,8 +51,8 @@
       "pages": 33,
       "searchEligible": 33,
       "sitemapListed": 29,
-      "editorialInbound": 409,
-      "averageEditorialInbound": 12.39
+      "editorialInbound": 410,
+      "averageEditorialInbound": 12.42
     },
     "evidence-methodology": {
       "pages": 11,
@@ -16055,11 +16055,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 2,
+        "ship-guide": 1,
         "comparative-history": 1
       },
       "sources": [
@@ -16073,6 +16074,12 @@
           "sourcePath": "collections/olympic-class-liners.html",
           "sourceRoute": "/collections/olympic-class-liners",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-olympic.html",
+          "sourceRoute": "/ships/rms-olympic",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
