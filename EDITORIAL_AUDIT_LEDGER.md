@@ -20,6 +20,19 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Current five-guide sample (pending PR #346)
+
+| Merge date (UTC) | Guide | Claims reviewed and disposition | Evidence / record locator | Editorial PR |
+|---|---|---|---|---|
+| Pending | [Campania (1893)](ships/rms-campania.html) | **Source reference only:** Added a specific record to selected bibliography; existing narrative and Key Facts unchanged. Source catalogue does not by itself verify full career chronology. | [Royal Museums Greenwich — Campania/Lucania shared shade, bridge and promenade deck plan (FFA0240; 1:96; differences for Lucania noted)](https://www.rmg.co.uk/collections/objects/rmgc-object-460515) | [#346](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/346) |
+| Pending | [Lucania (1893)](ships/rms-lucania.html) | **Source reference only:** Added a specific record to selected bibliography; existing narrative and Key Facts unchanged. Source catalogue does not by itself verify full career chronology. | [Royal Museums Greenwich — Campania/Lucania upper and main deck plan (FFA0239; 1:96; Lucania-specific arrangements identified)](https://www.rmg.co.uk/collections/objects/rmgc-object-460514) | [#346](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/346) |
+| Pending | [Aquitania (1914)](ships/rms-aquitania.html) | **Source reference only:** Added a specific record to selected bibliography; existing narrative and Key Facts unchanged. Source catalogue does not by itself verify full career chronology. | [Royal Museums Greenwich — Aquitania as-fitted B-deck plan (CWS0026; 10 December 1914; 1:96)](https://www.rmg.co.uk/collections/objects/rmgc-object-539269) | [#346](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/346) |
+| Pending | [Franconia (1910)](ships/rms-franconia-1910.html) | **Source reference only:** Added a specific record to selected bibliography; existing narrative and Key Facts unchanged. Source catalogue does not by itself verify full career chronology. | [GG Archives — Franconia collection, including 8 August 1911 passenger list and dated Cunard fleet material (1910 vessel; distinguish later namesakes)](https://www.ggarchives.com/OT/Ships/Franconia.html) | [#346](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/346) |
+| Pending | [Alaunia (1913)](ships/rms-alaunia.html) | **Source reference only:** Added a specific record to selected bibliography; existing narrative and Key Facts unchanged. Loss database states two casualties; no independent casualty reconciliation. | [uboat.net — Alaunia ship-specific mine-loss record (19 October 1916; UC-16; reported two casualties)](https://uboat.net/wwi/ships_hit/144.html) | [#346](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/346) |
+
+Confirmed: [PR #345](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/345) merged 2026-10-11 UTC. Its five-guide source review remains limited to the claims and records noted there.
+
+
 | Merge date (UTC) | Guide | Claims reviewed and disposition | Evidence / record locator | Editorial PR |
 |---|---|---|---|---|
 | 2026-10-09 | [SS America](ships/ss-america.html) | **Corrected:** Navy acquisition on 1 June 1941 and commissioning on 15 June preceded U.S. war entry in December 1941. | [NHHC, West Point II](https://www.history.navy.mil/research/histories/ship-histories/danfs/w/west-point-ii.html); [National Archives, declaration of war](https://www.archives.gov/milestone-documents/joint-address-to-congress-declaration-of-war-against-japan). NHHC indexed text available; direct fetch unavailable during review. | [#326](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/326) |
