@@ -46,7 +46,7 @@ const files = [];
 await visit(root, files);
 // Physical HTML routes include files intentionally omitted from the sitemap.
 const physicalRoutes = new Set(files.map(file => {
-  const pathname = '/' + relative(root, file).replaceAll('\\\\', '/').replace(/\\.html?$/i, '').replace(/\\/index$/i, '');
+  const pathname = '/' + relative(root, file).split('\\').join('/').replace(/[.]html?$/i, '').replace(/\/index$/i, '');
   return normalize(pathname === '/index' ? '/' : pathname);
 }).filter(Boolean));
 const incoming = new Map([...targets].map(path => [path, new Set()]));
