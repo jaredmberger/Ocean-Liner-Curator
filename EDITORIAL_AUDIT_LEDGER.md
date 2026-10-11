@@ -20,6 +20,11 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Deutschland (1900) and Celtic (1901) catalogue specificity (pending PR #369)
+
+The existing GG Archives Deutschland link now explicitly distinguishes the 1900 vessel from its 1923 namesake. National Museums NI catalogue item HOYFM.HW.H699 provides a ship-identified original Harland & Wolff photograph with dated Celtic launch and delivery metadata. The 20,904 catalogue tonnage and 20,902.07 guide tonnage must not be silently conflated. [PR #368](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/368) merged 2026-10-11 UTC.
+
+
 ### Orcades (1948) air-conditioning timeline (PR #366 merged)
 
 The P&O refit dates (December 1958–January 1959) align with an RMG 1959 shakedown catalogue description; Museums Victoria's narrative sequence is not proof of a 1956 refit. Technical and accommodation discrepancies remain open. [PR #365](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/365) merged 2026-10-11 UTC.
@@ -369,7 +374,7 @@ These are batch-level historical records, not new source verification. The linke
 
 An open question is not a proven error. Do not replace a qualified claim with an unsupported exact figure.
 
-**Current research queue (43 ship/group entries):** **18 partially resolved** (a substantive subclaim clarified or corrected, but a specific evidence gap remains) · **25 research needed** (principal recorded questions remain without such a documented resolution). **0 fully resolved entries remain in this open-questions table.** These are *entry counts*, not counts of individual disputed facts; one entry may contain several questions.
+**Current research queue (43 ship/group entries):** **19 partially resolved** (a substantive subclaim clarified or corrected, but a specific evidence gap remains) · **24 research needed** (principal recorded questions remain without such a documented resolution). **0 fully resolved entries remain in this open-questions table.** These are *entry counts*, not counts of individual disputed facts; one entry may contain several questions.
 
 Status meanings:
 
@@ -395,7 +400,7 @@ Recount the statuses and update the tally whenever a row is added, removed, or c
 | Mauretania (II) | Research needed | Targeted archives | Formal wartime classification | Admiralty requisition/commissioning or service records distinguishing troop transport from armed merchant cruiser designation. A photograph of defensive guns alone is insufficient. | #328 |
 | Oceanic (1899) | Research needed | Targeted archives | Exact speed and capacity figures across configurations | Dated plans, registers or owner documents; specify service versus trial speed and class/configuration date. | #328 |
 | Etruria / Umbria (1884) | Research needed | Deep reconciliation | Differing launch and tonnage summaries | Contemporary launch reports and dated register entries; retain source distinctions rather than silently harmonizing. | #312 |
-| Deutschland / Celtic | Research needed | Catalogue-first | Stronger ship-specific bibliography records | Verify relevant institutional or primary records before substitution. Existing guides were left unchanged. | #308 |
+| Deutschland / Celtic | Partially resolved | Catalogue-first | **Ship-specific references located:** GG Archives collects *Deutschland* (1900) artifacts while also indexing an unrelated *Deutschland* (1923); existing link relabeled to prevent identity conflation. National Museums NI's original H&W *Celtic* photograph HOYFM.HW.H699 gives yard 335, launch 4 April 1901, delivery 11 July 1901 and catalogue tonnage 20,904, while the guide's more precise 20,902.07 GRT comes from a separately attributed H&W summary. **Open:** original registry explanation for tonnage difference and original maiden-date records for both ships; catalogue figures are not automatically register-certified. | [GG Archives Deutschland collection](https://www.ggarchives.com/OT/Ships/Deutschland.html); [National Museums NI H699](https://collections.nationalmuseumsni.org/object-hoyfm-hw-h699). | [#308](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/308); [#369](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/369) (bibliography enhanced; primary reconciliations open) |
 | Conte di Savoia | Research needed | Catalogue-first | Formal wartime requisition and 29 November 1932 delivery | Owner/builder acceptance and wartime administrative records. Current review establishes lay-up in the cited chronology, not definitive requisition status. | #330 (merged; question open) |
 | Andrea Doria | Research needed | Deep reconciliation | Exact casualty and rescue totals; distinction between inaugural cruise and first line voyage | Named manifest/inquiry or rescue-account totals with counting rules; dated operator documents for voyage milestones. Existing qualified figures retained. | #330 (merged; question open) |
 | Stockholm | Research needed | Catalogue-first | Primary confirmation of exact maiden departure and final recycling milestones | Contemporary operator sailing record; dated tow/recycler records. Secondary summaries are not proof of all later identities or demolition completion. | #330 (merged; question open) |
