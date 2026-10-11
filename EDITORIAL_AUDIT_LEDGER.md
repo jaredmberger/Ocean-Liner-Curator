@@ -20,6 +20,17 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Selected photograph references (pending PR #349)
+
+| Merge date (UTC) | Guide | Claims reviewed and disposition | Evidence / record locator | Editorial PR |
+|---|---|---|---|---|
+| Pending | [Ausonia](ships/rms-ausonia.html) | **Source reference only:** Catalogued photograph linked without treating catalogue date ranges as exact exposure dates or ambiguous hull identities as definite. No narrative/Key Facts modification. | [Royal Museums Greenwich — N6743, port broadside view captioned December 1939](https://www.rmg.co.uk/collections/objects/rmgc-object-1014138) | [#349](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/349) |
+| Pending | [Aquitania](ships/rms-aquitania.html) | **Source reference only:** Catalogued photograph linked without treating catalogue date ranges as exact exposure dates or ambiguous hull identities as definite. No narrative/Key Facts modification. | [Royal Museums Greenwich — P85394, Aquitania and Alaunia at Southampton's Ocean Dock (catalogued 1929–1935)](https://www.rmg.co.uk/collections/objects/rmgc-object-1170515) | [#349](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/349) |
+| Pending | [Ascania](ships/rms-ascania.html) | **Source reference only:** Catalogued photograph linked without treating catalogue date ranges as exact exposure dates or ambiguous hull identities as definite. No narrative/Key Facts modification. | [Royal Museums Greenwich — P93472, Monaco photograph attributed to either Ascania or Alaunia (1925); identification unresolved](https://www.rmg.co.uk/collections/objects/rmgc-object-1152473) | [#349](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/349) |
+
+PR [#348](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/348) merged 2026-10-11 UTC. Source additions do not imply entire historical guides verified.
+
+
 ### Current source sample (pending #348)
 
 | Merge date (UTC) | Guide | Claims reviewed and disposition | Evidence / record locator | Editorial PR |
