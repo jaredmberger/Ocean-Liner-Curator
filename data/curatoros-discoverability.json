@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T08:11:48.966Z",
+  "generatedAt": "2026-10-11T08:14:51.428Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 673,
-    "indexablePages": 657,
+    "trackedHtml": 674,
+    "indexablePages": 658,
     "priorityPages": 89,
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 1,
@@ -27,11 +27,11 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 192,
-      "searchEligible": 191,
-      "sitemapListed": 87,
-      "editorialInbound": 1439,
-      "averageEditorialInbound": 7.49
+      "pages": 193,
+      "searchEligible": 192,
+      "sitemapListed": 89,
+      "editorialInbound": 1441,
+      "averageEditorialInbound": 7.47
     },
     "bridge-page": {
       "pages": 11,
@@ -65,8 +65,8 @@
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 123,
-      "averageEditorialInbound": 30.75
+      "editorialInbound": 124,
+      "averageEditorialInbound": 31
     },
     "ship-guide": {
       "pages": 373,
@@ -1786,12 +1786,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 4,
+      "inboundTotal": 7,
+      "editorialInbound": 5,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
-        "article-reference": 3
+        "article-reference": 4
       },
       "sources": [
         {
@@ -1802,6 +1802,12 @@
         },
         {
           "sourcePath": "floating-cities-ocean-liners.html",
+          "sourceRoute": "/floating-cities",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "floating-cities.html",
           "sourceRoute": "/floating-cities",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
@@ -2078,8 +2084,22 @@
       "title": "Floating Cities",
       "category": "article-reference",
       "searchEligible": true,
-      "sitemapListed": false,
+      "sitemapListed": true,
       "canonicalDiffersFromPhysical": true,
+      "inboundTotal": 0,
+      "editorialInbound": 0,
+      "baselineInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "path": "floating-cities.html",
+      "route": "/floating-cities",
+      "title": "Floating Cities",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
       "inboundTotal": 0,
       "editorialInbound": 0,
       "baselineInbound": 0,
@@ -11039,15 +11059,21 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "article-reference": 2
+        "article-reference": 3
       },
       "sources": [
         {
           "sourcePath": "floating-cities-ocean-liners.html",
+          "sourceRoute": "/floating-cities",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "floating-cities.html",
           "sourceRoute": "/floating-cities",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
@@ -18031,11 +18057,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 83,
-      "editorialInbound": 78,
+      "inboundTotal": 84,
+      "editorialInbound": 79,
       "baselineInbound": 5,
       "byCategory": {
-        "article-reference": 38,
+        "article-reference": 39,
         "collection": 32,
         "hub": 3,
         "comparative-history": 1,
@@ -18267,6 +18293,12 @@
         },
         {
           "sourcePath": "floating-cities-ocean-liners.html",
+          "sourceRoute": "/floating-cities",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "floating-cities.html",
           "sourceRoute": "/floating-cities",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
