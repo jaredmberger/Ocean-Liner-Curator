@@ -385,6 +385,21 @@ These are batch-level historical records, not new source verification. The linke
 | 2026-10-08 | Europa/Liberté, Leviathan/Vaterland, Berengaria/Imperator, Pasteur/Bremen, Republic/Servian/President Grant | Republic: launch corrected to 19 February 1903 as Servian, citing [Norway Heritage, Servian / President Grant](https://www.norwayheritage.com/p_ship.asp?sh=pregr). Other four retained era-specific claims; no speculative numerical reconciliation. | [#311](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/311) |
 | 2026-10-08 | Rotterdam (1908), Franconia (1910), Nieuw Amsterdam (1906), Etruria (1884), Umbria (1884) | Franconia: maiden voyage 25 February 1911 to New York distinguished from first Boston voyage on 18 April; [Norway Heritage history](https://www.norwayheritage.com/p_ship.asp?sh=fran5) added. Etruria/Umbria launch and tonnage differences not resolved. | [#312](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/312) |
 
+## Catalogue-first closure triage (2026-10-11)
+
+This is a **research planning** audit of the 16 entries currently marked **Catalogue-first**, not a re-verification of their sources. None of the rows below is declared fully resolved, and no archival availability is assumed. In the current queue, **4 still need their principal research question investigated** and **12 are partially resolved**.
+
+| Next investigation | Current status | Why to tackle it next | Closure test |
+|---|---|---|---|
+| **Orion** | Research needed | Narrowest outstanding issue among the untouched catalogue-first entries: postwar refit chronology | Dated yard completion and owner return-to-service notices establish beginning, end and whether the claimed duration describes the same work period |
+| **Rangitiki** | Research needed | Identifiable convoy and builder records, but several independent questions | Original ship specifications, HX 84 participation/evidence and distinct withdrawal, delivery-for-breaking and demolition milestones each reconciled |
+| **Minnewaska (1908)** | Research needed | Ship movement may be traceable in dated voyage/loss reports, but tonnage and passenger/troop configurations also differ | Dated registers/accommodation documents resolve figures and primary movement/disposal records reconcile Malta versus Saloniki and end-of-life dates |
+| **Minnetonka (1901)** | Research needed | Multiple technical and wartime designation questions | Original builder acceptance and register figures plus official wartime designation and loss records independently checked |
+
+**Recommended first follow-up: Orion.** Resolve only what dated evidence actually supports. Even if the refit duration is confirmed, leave an entry open while any other expressly listed question remains. Conversely, when every documented open question is substantiated, move it out of the queue and preserve the conclusion with a dated record locator.
+
+For the **12 partially resolved catalogue-first entries**, prioritize original source access rather than new summary citations. Examples include the Harland & Wolff builder/registry discrepancy for *Cedric*, original sailing notices for *Homeric* and *Doric*, and an operator closeout record for *Stockholm/Astoria*. These are examples, not additional independently verified findings.
+
 ## Open questions
 
 An open question is not a proven error. Do not replace a qualified claim with an unsupported exact figure.
