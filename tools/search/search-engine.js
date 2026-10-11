@@ -33,6 +33,9 @@ export function searchAliasFor(value) {
 const INTENT_TITLE_ALIASES = new Map([
   ['white star ships', 'White Star Line'],
   ['white star line ships', 'White Star Line'],
+  ['cunard ships', 'Cunard Line'],
+  ['french ocean liners', 'French Line'],
+  ['fastest ocean liners', 'What Was the Blue Riband?'],
   ['what happened to ocean liners', 'Why Did Ocean Liners Disappear?'],
   ['what happened to the ocean liners', 'Why Did Ocean Liners Disappear?'],
   ['where did ocean liners go', 'Why Did Ocean Liners Disappear?']
