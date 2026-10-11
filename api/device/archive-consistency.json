@@ -5,7 +5,7 @@
   "status": "warning",
   "counts": {
     "errors": 0,
-    "warnings": 4,
+    "warnings": 5,
     "archiveCards": 371,
     "inlineLinkErrors": 0,
     "imageErrors": 0,
@@ -23,6 +23,13 @@
       "slug": "ss-storstad",
       "card": "SS Storstad",
       "title": "SS Storstad: Empress of Ireland Collision (1914) | Ocean Liner Curator"
+    },
+    {
+      "code": "duplicate-source-url",
+      "slug": "ss-america",
+      "hrefs": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/w/west-point-ii.html"
+      ]
     },
     {
       "code": "duplicate-source-url",
