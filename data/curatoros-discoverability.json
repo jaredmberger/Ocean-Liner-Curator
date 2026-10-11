@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T05:06:51.861Z",
+  "generatedAt": "2026-10-11T05:09:31.374Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -23,7 +23,7 @@
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 61
+    "priorityWithThreePlusEditorialInbound": 62
   },
   "categories": {
     "article-reference": {
@@ -51,8 +51,8 @@
       "pages": 33,
       "searchEligible": 33,
       "sitemapListed": 29,
-      "editorialInbound": 404,
-      "averageEditorialInbound": 12.24
+      "editorialInbound": 409,
+      "averageEditorialInbound": 12.39
     },
     "evidence-methodology": {
       "pages": 11,
@@ -14355,11 +14355,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 3
+        "collection": 3,
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -14378,6 +14379,24 @@
           "sourcePath": "collections/liners-rebuilt-and-renamed.html",
           "sourceRoute": "/collections/liners-rebuilt-and-renamed",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-bremen.html",
+          "sourceRoute": "/ships/ss-bremen",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-europa.html",
+          "sourceRoute": "/ships/ss-europa",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-liberte.html",
+          "sourceRoute": "/ships/ss-liberte",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -16420,12 +16439,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "comparative-history": 1
+        "comparative-history": 1,
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -16438,6 +16458,18 @@
           "sourcePath": "michelangelo-raffaello-design-evolution.html",
           "sourceRoute": "/michelangelo-raffaello-design-evolution",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-conte-di-savoia.html",
+          "sourceRoute": "/ships/ss-conte-di-savoia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-rex.html",
+          "sourceRoute": "/ships/ss-rex",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
