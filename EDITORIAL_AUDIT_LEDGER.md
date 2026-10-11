@@ -20,6 +20,11 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Oranje hospital-service totals (pending PR #357)
+
+Two museum accounts agree on 32,461 patients, and a 1947 Dutch reference gives a more exact reported voyage mileage. Original patient manifests and later disposal records remain outstanding. [PR #356](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/356) merged 2026-10-11 UTC.
+
+
 ### Britannic (1874) accommodation discrepancy (pending PR #356)
 
 A contemporary newspaper transcription provides a third, class-specific capacity account (200 cabin, about 1,500 steerage), while RMG's 450 figure remains unexplained. Original accommodation records are still needed. [PR #355](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/355) merged 2026-10-11 UTC.
@@ -342,7 +347,7 @@ An open question is not a proven error. Do not replace a qualified claim with an
 | Marnix van Sint Aldegonde | First-voyage route; wartime capacity versus actual complement | Contemporary October 1930 itinerary and dated troopship accommodation/convoy loading records. Do not equate persons aboard with troop capacity. | [#333](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/333) (merged; question open) |
 | Orion | Postwar refit duration and return-to-service milestones | Yard and owner sailing records; removing an inconsistent duration does not verify all retained milestone dates. | [#333](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/333) (merged; question open) |
 | Orcades (1948) | Differing technical figures and air-conditioning chronology | Dated registers, accommodation plans and yard refit records. Existing owner attribution does not resolve the museum's different chronology. | [#333](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/333) (merged; question open) |
-| Oranje | Hospital-ship patient totals and exact later disposal milestones | Dated voyage/patient records and tow/recycler documents; sampled institutional account does not independently establish all figures. | [#334](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/334) (merged; question open) |
+| Oranje | **Published hospital-service totals corroborated:** Australian War Memorial states 41 voyages, over 382,000 nautical miles and 32,461 patients; Het Scheepvaartmuseum independently repeats 32,461 wounded soldiers; a 1947 Dutch encyclopaedia gives 382,262 nautical miles. These are institutional/published accounts, not an audit of underlying manifests. **Open:** original voyage/patient ledgers, counting rules and exact later disposal milestones. | [Australian War Memorial, *Hospital ship Oranje*](https://www.awm.gov.au/visit/exhibitions/alliesinadversity/seafaring/oranje); [Het Scheepvaartmuseum exhibition](https://www.hetscheepvaartmuseum.nl/doen/tentoonstelling/ms-oranje); [Winkler Prins 1947](https://www.ensie.nl/winkler/oranje-schip). | [#334](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/334); [#357](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/357) (published totals corroborated; records and disposal open) |
 | Empress of Britain (1930) | Precise completion/acceptance milestone versus library metadata | Contemporary builder/owner acceptance record; NRS gives April 1931, while NLNZ's June 1930 wording conflicts with later trials. Retain broad 1931 completion. | [#334](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/334) (merged; question open) |
 | Rangitane | Independent named casualty-list reconciliation | Named inquiry/casualty records; current government summaries agree, but no independent list audit was completed. | [#334](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/334) (merged; question open) |
 | Rangitata | 5 versus 6 January 1940 departure; child-evacuee total and disposal | Contemporary movement/sailing records identifying port and milestone, dated CORB manifest and demolition record. Broad January departure retained. | [#334](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/334) (merged; question open) |
