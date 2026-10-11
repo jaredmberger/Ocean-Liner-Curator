@@ -20,6 +20,18 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Current source sample (pending #348)
+
+| Merge date (UTC) | Guide | Claims reviewed and disposition | Evidence / record locator | Editorial PR |
+|---|---|---|---|---|
+| Pending | [Carmania (1905)](ships/rms-carmania.html) | **Source reference only:** Added specific plan or catalogued documents; original facts and prose retained; original objects not independently examined beyond online catalogues. | [Royal Museums Greenwich — 29 December 1905 lines plan, CWS0012, scale 1:48](https://www.rmg.co.uk/collections/objects/rmgc-object-539252) | [#348](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/348) |
+| Pending | [Ivernia](ships/rms-ivernia.html) | **Source reference only:** Added specific plan or catalogued documents; original facts and prose retained; original objects not independently examined beyond online catalogues. | [GG Archives — Ivernia collection, including 18 May 1909 second-cabin passenger-list material; catalogue examples only](https://www.ggarchives.com/OT/Ships/Ivernia.html) | [#348](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/348) |
+| Pending | [Laconia](ships/rms-laconia.html) | **Source reference only:** Added specific plan or catalogued documents; original facts and prose retained; original objects not independently examined beyond online catalogues. | [GG Archives — Laconia collection, including identified 1912 Liverpool/New York photographs; distinguish later namesakes](https://www.ggarchives.com/OT/Ships/Laconia.html) | [#348](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/348) |
+| Pending | [Franconia (1910)](ships/rms-franconia-1910.html) | **Source reference only:** Added specific plan or catalogued documents; original facts and prose retained; original objects not independently examined beyond online catalogues. | [GG Archives — 8 August 1911 saloon passenger list, Liverpool–Boston via Queenstown; 1910-launched vessel](https://www.ggarchives.com/OT/PLs/Ships/Franconia-PassengerLists.html) | [#348](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/348) |
+
+PR [#347](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/347) merged 2026-10-11 UTC. Scope remains catalogued-source references, not full guides verified.
+
+
 ### Current selected-source sample (pending #347)
 
 | Merge date (UTC) | Guide | Claims reviewed and disposition | Evidence / record locator | Editorial PR |
