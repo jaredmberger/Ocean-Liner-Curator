@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:57:51.563Z",
+  "generatedAt": "2026-10-11T05:06:46.754Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -15,8 +15,8 @@
     "editorialOrphans": 54,
     "oneEditorialInbound": 140,
     "threePlusEditorialInbound": 71,
-    "totalEditorialInboundLinks": 831,
-    "averageEditorialInbound": 2.25
+    "totalEditorialInboundLinks": 837,
+    "averageEditorialInbound": 2.26
   },
   "orphanedShips": [
     {
@@ -10358,42 +10358,6 @@
       ]
     },
     {
-      "name": "SS Liberté",
-      "slug": "ss-liberte",
-      "url": "/ships/ss-liberte",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 2,
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "bremen-europa-liberte-design-evolution.html",
-          "sourceRoute": "/bremen-europa-liberte-design-evolution",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "french-line.html",
-          "sourceRoute": "/french-line",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Minnehaha (1900)",
       "slug": "ss-minnehaha",
       "url": "/ships/ss-minnehaha",
@@ -10585,60 +10549,17 @@
       ]
     },
     {
-      "name": "SS Conte di Savoia",
-      "slug": "ss-conte-di-savoia",
-      "url": "/ships/ss-conte-di-savoia",
+      "name": "SS Liberté",
+      "slug": "ss-liberte",
+      "url": "/ships/ss-liberte",
       "inboundTotal": 6,
       "editorialInbound": 5,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "collection": 1,
+        "article-reference": 3,
         "hub-history": 1,
-        "article-reference": 1,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/italian-ocean-liners.html",
-          "sourceRoute": "/collections/italian-ocean-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "designs-interiors.html",
-          "sourceRoute": "/designs-interiors",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "rex-conte-di-savoia-flagship-study.html",
-          "sourceRoute": "/rex-conte-di-savoia-flagship-study",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Europa",
-      "slug": "ss-europa",
-      "url": "/ships/ss-europa",
-      "inboundTotal": 6,
-      "editorialInbound": 5,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "collection": 1,
-        "hub-history": 1,
-        "ship-guide": 2
+        "ship-guide": 1
       },
       "sources": [
         {
@@ -10647,9 +10568,14 @@
           "sourceCategory": "article-reference"
         },
         {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
+          "sourcePath": "comparative-liner-history.html",
+          "sourceRoute": "/comparative-liner-history",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "french-line.html",
+          "sourceRoute": "/french-line",
+          "sourceCategory": "article-reference"
         },
         {
           "sourcePath": "history-of-major-shipping-lines.html",
@@ -10659,52 +10585,6 @@
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Rex",
-      "slug": "ss-rex",
-      "url": "/ships/ss-rex",
-      "inboundTotal": 6,
-      "editorialInbound": 5,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "article-reference": 1,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/italian-ocean-liners.html",
-          "sourceRoute": "/collections/italian-ocean-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "rex-conte-di-savoia-flagship-study.html",
-          "sourceRoute": "/rex-conte-di-savoia-flagship-study",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -10896,6 +10776,100 @@
       ]
     },
     {
+      "name": "SS Conte di Savoia",
+      "slug": "ss-conte-di-savoia",
+      "url": "/ships/ss-conte-di-savoia",
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 2,
+        "hub-history": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "comparative-liner-history.html",
+          "sourceRoute": "/comparative-liner-history",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "rex-conte-di-savoia-flagship-study.html",
+          "sourceRoute": "/rex-conte-di-savoia-flagship-study",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Europa",
+      "slug": "ss-europa",
+      "url": "/ships/ss-europa",
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "collection": 1,
+        "hub-history": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "bremen-europa-liberte-design-evolution.html",
+          "sourceRoute": "/bremen-europa-liberte-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "comparative-liner-history.html",
+          "sourceRoute": "/comparative-liner-history",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "SS Kaiser Wilhelm der Grosse",
       "slug": "ss-kaiser-wilhelm-der-grosse",
       "url": "/ships/ss-kaiser-wilhelm-der-grosse",
@@ -10938,6 +10912,52 @@
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Rex",
+      "slug": "ss-rex",
+      "url": "/ships/ss-rex",
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 2,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/italian-ocean-liners.html",
+          "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "comparative-liner-history.html",
+          "sourceRoute": "/comparative-liner-history",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "rex-conte-di-savoia-flagship-study.html",
+          "sourceRoute": "/rex-conte-di-savoia-flagship-study",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -11153,63 +11173,6 @@
       ]
     },
     {
-      "name": "SS Bremen",
-      "slug": "ss-bremen",
-      "url": "/ships/ss-bremen",
-      "inboundTotal": 9,
-      "editorialInbound": 8,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "collection": 3,
-        "hub-history": 1,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "bremen-europa-liberte-design-evolution.html",
-          "sourceRoute": "/bremen-europa-liberte-design-evolution",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "collections/blue-riband-era.html",
-          "sourceRoute": "/collections/blue-riband-era",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/german-prestige-liners.html",
-          "sourceRoute": "/collections/german-prestige-liners",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ships/ocean-liner-speed-record-table",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/ships/timeline-1900-1960",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "MV Britannic (1930)",
       "slug": "mv-britannic",
       "url": "/ships/mv-britannic",
@@ -11268,6 +11231,68 @@
           "sourcePath": "why-mv-britannic-matters.html",
           "sourceRoute": "/why-mv-britannic-matters",
           "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "SS Bremen",
+      "slug": "ss-bremen",
+      "url": "/ships/ss-bremen",
+      "inboundTotal": 10,
+      "editorialInbound": 9,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "collection": 3,
+        "hub-history": 1,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "bremen-europa-liberte-design-evolution.html",
+          "sourceRoute": "/bremen-europa-liberte-design-evolution",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "comparative-liner-history.html",
+          "sourceRoute": "/comparative-liner-history",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-speed-record-table.html",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/timeline-1900-1960.html",
+          "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -12483,12 +12508,12 @@
       "name": "RMS Olympic",
       "slug": "rms-olympic",
       "url": "/ships/rms-olympic",
-      "inboundTotal": 36,
-      "editorialInbound": 35,
+      "inboundTotal": 37,
+      "editorialInbound": 36,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "article-reference": 17,
+        "article-reference": 18,
         "collection": 10,
         "hub-history": 6,
         "ship-guide": 2
@@ -12553,6 +12578,11 @@
           "sourcePath": "collections/what-defines-an-ocean-liner.html",
           "sourceRoute": "/collections/what-defines-an-ocean-liner",
           "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "comparative-liner-history.html",
+          "sourceRoute": "/comparative-liner-history",
+          "sourceCategory": "article-reference"
         },
         {
           "sourcePath": "cunard-vs-white-star-different-atlantic-strategies.html",
