@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T06:37:44.973Z",
+  "generatedAt": "2026-10-11T07:53:23.649Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -22,7 +22,7 @@
     "priorityPages": 89,
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 1,
-    "priorityWithOneEditorialInbound": 17,
+    "priorityWithOneEditorialInbound": 16,
     "priorityWithThreePlusEditorialInbound": 62
   },
   "categories": {
@@ -37,15 +37,15 @@
       "pages": 11,
       "searchEligible": 11,
       "sitemapListed": 11,
-      "editorialInbound": 32,
-      "averageEditorialInbound": 2.91
+      "editorialInbound": 33,
+      "averageEditorialInbound": 3
     },
     "collection": {
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 129,
-      "averageEditorialInbound": 3.79
+      "editorialInbound": 130,
+      "averageEditorialInbound": 3.82
     },
     "comparative-history": {
       "pages": 33,
@@ -253,29 +253,6 @@
           {
             "sourcePath": "rms-queen-mary.html",
             "sourceRoute": "/rms-queen-mary",
-            "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "why-ss-leviathan-matters.html",
-        "route": "/why-ss-leviathan-matters",
-        "title": "Why SS Leviathan Matters",
-        "category": "bridge-page",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 1,
-        "editorialInbound": 1,
-        "baselineInbound": 0,
-        "byCategory": {
-          "article-reference": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "ss-leviathan.html",
-            "sourceRoute": "/ss-leviathan",
             "sourceCategory": "article-reference",
             "sourceBaseline": false
           }
@@ -12831,13 +12808,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 1,
+      "inboundTotal": 2,
+      "editorialInbound": 2,
       "baselineInbound": 0,
       "byCategory": {
+        "ship-guide": 1,
         "article-reference": 1
       },
       "sources": [
+        {
+          "sourcePath": "ships/ss-leviathan.html",
+          "sourceRoute": "/ships/ss-leviathan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ss-leviathan.html",
           "sourceRoute": "/ss-leviathan",
@@ -13206,11 +13190,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 6,
+      "inboundTotal": 7,
+      "editorialInbound": 7,
       "baselineInbound": 0,
       "byCategory": {
-        "article-reference": 6
+        "article-reference": 6,
+        "ship-guide": 1
       },
       "sources": [
         {
@@ -13229,6 +13214,12 @@
           "sourcePath": "ships/ss-leviathan-timeline.html",
           "sourceRoute": "/timelines-history/ss-leviathan-timeline",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-leviathan.html",
+          "sourceRoute": "/ships/ss-leviathan",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
