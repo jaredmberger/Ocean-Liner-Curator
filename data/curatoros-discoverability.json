@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T05:21:53.148Z",
+  "generatedAt": "2026-10-11T06:37:44.973Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -21,8 +21,8 @@
     "indexablePages": 657,
     "priorityPages": 89,
     "priorityMissingFromSitemap": 4,
-    "priorityEditorialOrphans": 2,
-    "priorityWithOneEditorialInbound": 16,
+    "priorityEditorialOrphans": 1,
+    "priorityWithOneEditorialInbound": 17,
     "priorityWithThreePlusEditorialInbound": 62
   },
   "categories": {
@@ -30,8 +30,8 @@
       "pages": 192,
       "searchEligible": 191,
       "sitemapListed": 87,
-      "editorialInbound": 1437,
-      "averageEditorialInbound": 7.48
+      "editorialInbound": 1439,
+      "averageEditorialInbound": 7.49
     },
     "bridge-page": {
       "pages": 11,
@@ -51,15 +51,15 @@
       "pages": 33,
       "searchEligible": 33,
       "sitemapListed": 29,
-      "editorialInbound": 410,
-      "averageEditorialInbound": 12.42
+      "editorialInbound": 411,
+      "averageEditorialInbound": 12.45
     },
     "evidence-methodology": {
       "pages": 11,
       "searchEligible": 11,
       "sitemapListed": 11,
-      "editorialInbound": 69,
-      "averageEditorialInbound": 6.27
+      "editorialInbound": 70,
+      "averageEditorialInbound": 6.36
     },
     "hub": {
       "pages": 4,
@@ -219,20 +219,6 @@
       }
     ],
     "editorialOrphans": [
-      {
-        "path": "comparative-liner-history.html",
-        "route": "/comparative-liner-history",
-        "title": "Comparative Liner History",
-        "category": "comparative-history",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 3,
-        "editorialInbound": 0,
-        "baselineInbound": 3,
-        "byCategory": {},
-        "sources": []
-      },
       {
         "path": "collectors-notebook/silverplate-vs-sterling.html",
         "route": "/collectors-notebook/silver-plate-vs-sterling",
@@ -498,6 +484,29 @@
             "sourcePath": "ships/ss-us.html",
             "sourceRoute": "/ships/ss-us",
             "sourceCategory": "ship-guide",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
+        "path": "comparative-liner-history.html",
+        "route": "/comparative-liner-history",
+        "title": "Comparative Liner History",
+        "category": "comparative-history",
+        "searchEligible": true,
+        "sitemapListed": true,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 4,
+        "editorialInbound": 1,
+        "baselineInbound": 3,
+        "byCategory": {
+          "article-reference": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "history-of-ocean-liners.html",
+            "sourceRoute": "/history-of-ocean-liners",
+            "sourceCategory": "article-reference",
             "sourceBaseline": false
           }
         ]
@@ -2985,17 +2994,24 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 1,
+      "inboundTotal": 5,
+      "editorialInbound": 2,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 1
+        "collection": 1,
+        "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "collections/ports-piers-terminals-liner-era.html",
           "sourceRoute": "/collections/ports-piers-terminals-liner-era",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
       ]
@@ -4917,11 +4933,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 0,
+      "inboundTotal": 3,
+      "editorialInbound": 1,
       "baselineInbound": 2,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "photos.html",
@@ -14801,11 +14826,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 0,
+      "inboundTotal": 4,
+      "editorialInbound": 1,
       "baselineInbound": 3,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "cunard-vs-white-star-different-atlantic-strategies.html",
@@ -17337,13 +17371,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 21,
-      "editorialInbound": 18,
+      "inboundTotal": 22,
+      "editorialInbound": 19,
       "baselineInbound": 3,
       "byCategory": {
         "collection": 7,
         "evidence-methodology": 10,
-        "article-reference": 1
+        "article-reference": 2
       },
       "sources": [
         {
@@ -17392,6 +17426,12 @@
           "sourcePath": "gross-tonnage-is-not-weight.html",
           "sourceRoute": "/gross-tonnage-is-not-weight",
           "sourceCategory": "evidence-methodology",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "history-of-ocean-liners.html",
+          "sourceRoute": "/history-of-ocean-liners",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
