@@ -20,6 +20,19 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Current selected-source sample (pending #347)
+
+| Merge date (UTC) | Guide | Claims reviewed and disposition | Evidence / record locator | Editorial PR |
+|---|---|---|---|---|
+| Pending | [Mauretania (1907)](ships/rms-mauretania.html) | **Source reference only:** Added identified museum catalogue object; no whole-guide certification. No numerical or chronology change. | [Royal Museums Greenwich — main-deck plan CWS0043, dated 25 April 1908, scale 1:96](https://www.rmg.co.uk/collections/objects/rmgc-object-539286) | [#347](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/347) |
+| Pending | [Lusitania (1907)](ships/rms-lusitania.html) | **Source reference only:** Added identified museum catalogue object; no whole-guide certification. Plans not inspected; access limitations explicit. | [Royal Museums Greenwich — Admiralty plan box ADRB0757; catalogue includes Lusitania plans, some too fragile to unroll](https://www.rmg.co.uk/collections/objects/rmgc-object-374874) | [#347](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/347) |
+| Pending | [Campania (1893)](ships/rms-campania.html) | **Source reference only:** Added identified museum catalogue object; no whole-guide certification. No numerical or chronology change. | [Royal Museums Greenwich — lower-deck plan CWS0020, scale 1:96, creation date not recorded](https://www.rmg.co.uk/collections/objects/rmgc-object-539262) | [#347](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/347) |
+| Pending | [Aquitania (1914)](ships/rms-aquitania.html) | **Source reference only:** Added identified museum catalogue object; no whole-guide certification. No numerical or chronology change. | [Royal Museums Greenwich — 1914 glass negative G10901, shipboard consulting and operating room](https://www.rmg.co.uk/collections/objects/rmgc-object-20625) | [#347](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/347) |
+| Pending | [Lucania (1893)](ships/rms-lucania.html) | **Source reference only:** Added identified museum catalogue object; no whole-guide certification. Campania comparator does not establish Lucania capacity. | [Royal Museums Greenwich — Campania passenger-capacity plan CWS0014; comparison material, not direct proof of Lucania capacity](https://www.rmg.co.uk/collections/objects/rmgc-object-539254) | [#347](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/347) |
+
+[PR #346](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/346) merged 2026-10-11 UTC; prior sample remains source-reference-only.
+
+
 ### Current five-guide sample (pending PR #346)
 
 | Merge date (UTC) | Guide | Claims reviewed and disposition | Evidence / record locator | Editorial PR |
