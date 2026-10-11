@@ -20,6 +20,11 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Willem Ruys maiden sailing (pending PR #360)
+
+Published maritime records support Rotterdam departure on 2 December 1947 and Tandjong Priok arrival on 24 December. Original departure register and origin of conflicting 5 December date are still open. [PR #359](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/359) merged 2026-10-11 UTC.
+
+
 ### Homeric February 1922 maiden-voyage chronology (pending PR #359)
 
 Contemporary newspaper notices as transcribed support departure on 15 February rather than the alternative 21 February; arrival on 24 February is independently noted by later ship histories. Completion documentation remains outstanding. [PR #358](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/358) merged 2026-10-11 UTC.
@@ -352,7 +357,7 @@ An open question is not a proven error. Do not replace a qualified claim with an
 | Chusan | Exact service milestones, later capacities and independent stabilizer priority | Dated sailing/accommodation records; define vessel and stabilizer scope before making broader priority claims. Catalogue wording alone is insufficient. | [#332](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/332) (merged; question open) |
 | Orsova | Differing class-capacity figures and cause | Dated accommodation plans or brochures identifying configuration and counting rules; existing explanation remains an inference. | [#332](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/332) (merged; question open) |
 | Oronsay (1951) | Exact completion, maiden, refit and withdrawal dates | Contemporary builder/owner or service records; brochure catalogue identities do not establish these milestones. | [#332](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/332) (merged; question open) |
-| Willem Ruys | Exact maiden departure and reason for conflicting dates | Contemporary sailing notice, port log or owner voyage record; database and later summaries disagree. | [#333](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/333) (merged; question open) |
+| Willem Ruys | **Published-record chronology supported:** MarHisData identifies departure from Rotterdam on 2 December 1947 under Captain Vellenga and arrival at Tandjong Priok on 24 December. Independent specialist De Vlijt history and book publisher description agree on 2 December. A retrospective 5 December date is not shown to be a different milestone. **Open:** inspect original departure log and account for origin of 5 December date. | [MarHisData dated chronology](https://www.marhisdata.nl/schip?id=7323); [De Vlijt launch-boat history](https://www.scheepswerfdevlijt.nl/?p=166); [Zuidhoek monograph description](https://www.routledge.com/Willem-Ruys/Zuidhoek/p/book/9789086162512). | [#333](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/333); [#360](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/360) (Rotterdam sailing supported; port log open) |
 | Johan van Oldenbarnevelt | 17 versus 19 knots labeled service speed | Dated owner specifications and service/trial records; retain phase and measurement distinctions. Exact completion and requisition also not newly verified. | [#333](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/333) (merged; question open) |
 | Marnix van Sint Aldegonde | First-voyage route; wartime capacity versus actual complement | Contemporary October 1930 itinerary and dated troopship accommodation/convoy loading records. Do not equate persons aboard with troop capacity. | [#333](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/333) (merged; question open) |
 | Orion | Postwar refit duration and return-to-service milestones | Yard and owner sailing records; removing an inconsistent duration does not verify all retained milestone dates. | [#333](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/333) (merged; question open) |
