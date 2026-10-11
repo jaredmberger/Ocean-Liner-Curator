@@ -44,6 +44,11 @@ async function visit(dir, output) {
 }
 const files = [];
 await visit(root, files);
+// Physical HTML routes include files intentionally omitted from the sitemap.
+const physicalRoutes = new Set(files.map(file => {
+  const pathname = '/' + relative(root, file).replaceAll('\\\\', '/').replace(/\\.html?$/i, '').replace(/\\/index$/i, '');
+  return normalize(pathname === '/index' ? '/' : pathname);
+}).filter(Boolean));
 const incoming = new Map([...targets].map(path => [path, new Set()]));
 const fromArchive = new Map([...targets].map(path => [path, new Set()]));
 const unresolved = new Map();
@@ -68,6 +73,14 @@ for (const file of files) {
     }
   }
 }
+const destinationCategories = { existingHtmlNotInSitemap: [], needsRouteOrRedirectReview: [] };
+for (const pair of [...unresolved.keys()].sort()) {
+  const destination = pair.slice(pair.indexOf(' -> ') + 4);
+  const category = physicalRoutes.has(destination)
+    ? 'existingHtmlNotInSitemap'
+    : 'needsRouteOrRedirectReview';
+  destinationCategories[category].push(pair);
+}
 const rows = [...targets].map(path => ({
   path,
   incoming: incoming.get(path).size,
@@ -80,10 +93,12 @@ const metrics = {
   matchedHtmlFiles: matchedPages,
   withZeroStaticIncoming: rows.filter(row => row.incoming === 0).length,
   withZeroContextualIncoming: rows.filter(row => row.contextual === 0).length,
-  unlistedDestinationPairs: unresolved.size
+  unlistedDestinationPairs: unresolved.size,
+  existingHtmlNotInSitemapPairs: destinationCategories.existingHtmlNotInSitemap.length,
+  routeOrRedirectReviewPairs: destinationCategories.needsRouteOrRedirectReview.length
 };
 if (process.argv.includes('--json')) {
-  console.log(JSON.stringify({ metrics, pages: rows, unlistedDestinations: [...unresolved.keys()].sort() }, null, 2));
+  console.log(JSON.stringify({ metrics, pages: rows, unlistedDestinations: [...unresolved.keys()].sort(), destinationCategories }, null, 2));
 } else {
   console.log('Internal link audit (read only; static HTML anchors only)');
   console.log(JSON.stringify(metrics, null, 2));
