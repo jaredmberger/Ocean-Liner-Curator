@@ -84,6 +84,9 @@ const whiteStar = byQuery('White Star Line');
 assert.equal(whiteStar.top[0].title, 'White Star Line', 'Exact page-title matches should rank first');
 assert.equal(byQuery('The White Star Line').top[0].title, 'White Star Line', 'Leading article should not prevent an exact title match');
 assert.equal(byQuery('White Star ships').top[0].title, 'White Star Line', 'Broad White Star ship intent should lead with the line hub');
+assert.equal(byQuery('Cunard ships').top[0].url, 'https://oceanliners.net/cunard-line', 'Broad Cunard ship intent should lead with the Cunard hub');
+assert.equal(byQuery('French ocean liners').top[0].url, 'https://oceanliners.net/french-line', 'Broad French liner intent should lead with the French Line hub');
+assert.equal(byQuery('fastest ocean liners').top[0].url, 'https://oceanliners.net/what-was-the-blue-riband', 'Fastest liner query should introduce the Blue Riband context');
 assert.equal(byQuery('what happened to ocean liners').top[0].title, 'Why Did Ocean Liners Disappear?', 'Natural-language disappearance intent should lead with the dedicated explainer');
 assert.equal(byQuery('why did ocean liners disappear').top[0].title, 'Why Did Ocean Liners Disappear?', 'Direct disappearance query should lead with the dedicated explainer');
 
