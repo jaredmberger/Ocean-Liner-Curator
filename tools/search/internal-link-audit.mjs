@@ -9,7 +9,7 @@
  * and links inferred from navigation scripts are outside this report.
  * A low count is a review candidate, not a search-engine orphan finding.
  */
-import { readdir, readFile, stat } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
 import { resolve, relative, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -50,7 +50,7 @@ const unresolved = new Map();
 let matchedPages = 0;
 for (const file of files) {
   const sourcePath = '/' + relative(root, file).replaceAll('\\', '/').replace(/\.html?$/i, '').replace(/\/index$/i, '');
-  const source = normalize(sourcePath);
+  const source = normalize(sourcePath === '/index' ? '/' : sourcePath);
   if (!targets.has(source)) continue;
   matchedPages++;
   const html = await readFile(file, 'utf8');
