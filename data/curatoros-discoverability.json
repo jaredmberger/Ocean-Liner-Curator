@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T20:37:32.538Z",
+  "generatedAt": "2026-10-12T20:41:06.656Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -23,7 +23,7 @@
     "priorityMissingFromSitemap": 4,
     "priorityEditorialOrphans": 1,
     "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 62
+    "priorityWithThreePlusEditorialInbound": 63
   },
   "categories": {
     "article-reference": {
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 138,
-      "averageEditorialInbound": 4.06
+      "editorialInbound": 140,
+      "averageEditorialInbound": 4.12
     },
     "comparative-history": {
       "pages": 33,
@@ -14027,12 +14027,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "ship-guide": 1
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -14044,6 +14044,18 @@
         {
           "sourcePath": "ships/ms-augustus.html",
           "sourceRoute": "/ships/ms-augustus",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-giulio-cesare.html",
+          "sourceRoute": "/ships/ss-giulio-cesare",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-latlantique.html",
+          "sourceRoute": "/ships/ss-latlantique",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
