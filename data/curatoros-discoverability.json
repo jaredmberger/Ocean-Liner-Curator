@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T23:01:23.145Z",
+  "generatedAt": "2026-10-12T23:06:01.844Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,7 +30,7 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1455,
+      "editorialInbound": 1456,
       "averageEditorialInbound": 7.54
     },
     "bridge-page": {
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 147,
-      "averageEditorialInbound": 4.32
+      "editorialInbound": 148,
+      "averageEditorialInbound": 4.35
     },
     "comparative-history": {
       "pages": 33,
@@ -12006,14 +12006,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 13,
-      "editorialInbound": 12,
+      "inboundTotal": 14,
+      "editorialInbound": 13,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
         "article-reference": 6,
-        "ship-guide": 4
+        "ship-guide": 5
       },
       "sources": [
         {
@@ -12061,6 +12061,12 @@
         {
           "sourcePath": "ships/heian-maru.html",
           "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/nyk-hikawa-maru.html",
+          "sourceRoute": "/ships/nyk-hikawa-maru",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -13730,12 +13736,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 7,
-      "editorialInbound": 6,
+      "inboundTotal": 8,
+      "editorialInbound": 7,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 1,
-        "ship-guide": 5
+        "ship-guide": 6
       },
       "sources": [
         {
@@ -13747,6 +13753,12 @@
         {
           "sourcePath": "ships/asama-maru-1929.html",
           "sourceRoute": "/ships/asama-maru-1929",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
