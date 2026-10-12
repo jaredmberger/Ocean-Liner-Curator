@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T23:13:03.289Z",
+  "generatedAt": "2026-10-12T23:53:03.365Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1459,
-      "averageEditorialInbound": 7.56
+      "editorialInbound": 1461,
+      "averageEditorialInbound": 7.57
     },
     "bridge-page": {
       "pages": 11,
@@ -2970,12 +2970,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 8,
+      "inboundTotal": 11,
+      "editorialInbound": 10,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "article-reference": 7
+        "article-reference": 7,
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -3006,6 +3007,18 @@
           "sourcePath": "how-the-liner-system-worked.html",
           "sourceRoute": "/how-the-liner-system-worked",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-corsican.html",
+          "sourceRoute": "/ships/ss-corsican",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-finland.html",
+          "sourceRoute": "/ships/ss-finland",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
