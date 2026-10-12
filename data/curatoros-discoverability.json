@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T20:17:42.679Z",
+  "generatedAt": "2026-10-12T20:32:11.250Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 134,
-      "averageEditorialInbound": 3.94
+      "editorialInbound": 136,
+      "averageEditorialInbound": 4
     },
     "comparative-history": {
       "pages": 33,
@@ -13852,12 +13852,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 7,
-      "editorialInbound": 6,
+      "inboundTotal": 9,
+      "editorialInbound": 8,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 2,
-        "ship-guide": 4
+        "ship-guide": 6
       },
       "sources": [
         {
@@ -13885,6 +13885,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/rms-persia-1855.html",
+          "sourceRoute": "/ships/rms-persia-1855",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-china-1862.html",
           "sourceRoute": "/ships/ss-china-1862",
           "sourceCategory": "ship-guide",
@@ -13893,6 +13899,12 @@
         {
           "sourcePath": "ships/ss-great-britain-1843.html",
           "sourceRoute": "/ships/ss-great-britain-1843",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-russia-1867.html",
+          "sourceRoute": "/ships/ss-russia-1867",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
