@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T20:41:06.656Z",
+  "generatedAt": "2026-10-12T20:44:22.517Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 140,
-      "averageEditorialInbound": 4.12
+      "editorialInbound": 142,
+      "averageEditorialInbound": 4.18
     },
     "comparative-history": {
       "pages": 33,
@@ -14027,12 +14027,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 4,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "ship-guide": 3
+        "ship-guide": 5
       },
       "sources": [
         {
@@ -14048,6 +14048,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-duilio.html",
+          "sourceRoute": "/ships/ss-duilio",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-giulio-cesare.html",
           "sourceRoute": "/ships/ss-giulio-cesare",
           "sourceCategory": "ship-guide",
@@ -14056,6 +14062,12 @@
         {
           "sourcePath": "ships/ss-latlantique.html",
           "sourceRoute": "/ships/ss-latlantique",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-principessa-mafalda.html",
+          "sourceRoute": "/ships/ss-principessa-mafalda",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
