@@ -21,7 +21,7 @@ const targets = new Set(urls.map(normalized).filter(Boolean));
 const ships = [...targets].filter(p => p.startsWith('/ships/') && p !== '/ships/ships').sort();
 const excluded = new Set(['/', '/sources', '/ships/ships', '/search', '/explore', '/about', '/contact', '/attribution', '/provenance']);
 const rows = [];
-const nonGuideRoutes = new Set(['/ships/ocean-liner-speed-record-table']);
+const nonGuideRoutes = new Set(['/ships/ocean-liner-speed-record-table', '/ships/ocean-liner-evolution-map']);
 const theme = p => {
   if (/^(\/collections\/|\/people-behind-the-liners)/.test(p)) return 'collections';
   if (/^(\/how-|\/what-|\/why-|\/who-)/.test(p)) return 'explainers';
@@ -74,9 +74,9 @@ if (process.argv.includes('--json')) console.log(JSON.stringify({ metrics, ships
 else {
   console.log('Research connectivity candidate audit (read-only, static anchors only)');
   console.log(JSON.stringify(metrics, null, 2));
-  console.log('\\nFirst 30 scanned guides with no static research link (editorial review candidates):');
+  console.log('\nFirst 30 scanned guides with no static research link (editorial review candidates):');
   console.log(scanned.filter(r => r.researchTargets.length === 0).slice(0, 30).map(r => r.ship).join('\n'));
-  console.log('\\nFirst 15 scanned guides with one research destination:');
-  console.log(scanned.filter(r => r.researchTargets.length === 1).slice(0, 15).map(r => r.ship).join('\\n'));
-  console.log('\\nUse --json for all rows. This is not proof that a ship lacks contextual links; other templates and dynamic links are excluded.');
+  console.log('\nFirst 15 scanned guides with one research destination:');
+  console.log(scanned.filter(r => r.researchTargets.length === 1).slice(0, 15).map(r => r.ship).join('\n'));
+  console.log('\nUse --json for all rows. This is not proof that a ship lacks contextual links; other templates and dynamic links are excluded.');
 }
