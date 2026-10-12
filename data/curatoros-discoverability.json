@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T23:06:01.844Z",
+  "generatedAt": "2026-10-12T23:13:03.289Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,11 +17,11 @@
     ]
   },
   "summary": {
-    "trackedHtml": 674,
-    "indexablePages": 658,
-    "priorityPages": 89,
-    "priorityMissingFromSitemap": 4,
-    "priorityEditorialOrphans": 1,
+    "trackedHtml": 675,
+    "indexablePages": 659,
+    "priorityPages": 90,
+    "priorityMissingFromSitemap": 5,
+    "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 16,
     "priorityWithThreePlusEditorialInbound": 63
   },
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1456,
-      "averageEditorialInbound": 7.54
+      "editorialInbound": 1459,
+      "averageEditorialInbound": 7.56
     },
     "bridge-page": {
       "pages": 11,
@@ -41,11 +41,11 @@
       "averageEditorialInbound": 3
     },
     "collection": {
-      "pages": 34,
-      "searchEligible": 34,
+      "pages": 35,
+      "searchEligible": 35,
       "sitemapListed": 34,
-      "editorialInbound": 148,
-      "averageEditorialInbound": 4.35
+      "editorialInbound": 149,
+      "averageEditorialInbound": 4.26
     },
     "comparative-history": {
       "pages": 33,
@@ -58,26 +58,40 @@
       "pages": 11,
       "searchEligible": 11,
       "sitemapListed": 11,
-      "editorialInbound": 70,
-      "averageEditorialInbound": 6.36
+      "editorialInbound": 71,
+      "averageEditorialInbound": 6.45
     },
     "hub": {
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 124,
-      "averageEditorialInbound": 31
+      "editorialInbound": 125,
+      "averageEditorialInbound": 31.25
     },
     "ship-guide": {
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 828,
-      "averageEditorialInbound": 2.22
+      "editorialInbound": 833,
+      "averageEditorialInbound": 2.23
     }
   },
   "signals": {
     "missingFromSitemap": [
+      {
+        "path": "collections/japanese-trans-pacific-liner-history.html",
+        "route": "/collections/japanese-trans-pacific-liner-history",
+        "title": "Japanese & Trans-Pacific Liner History",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": false,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 1,
+        "editorialInbound": 0,
+        "baselineInbound": 1,
+        "byCategory": {},
+        "sources": []
+      },
       {
         "path": "collectors-notebook/generic-nautical-motifs-vs-company-design.html",
         "route": "/collectors-notebook/generic-nautical-motifs-vs-company-design",
@@ -219,6 +233,20 @@
       }
     ],
     "editorialOrphans": [
+      {
+        "path": "collections/japanese-trans-pacific-liner-history.html",
+        "route": "/collections/japanese-trans-pacific-liner-history",
+        "title": "Japanese & Trans-Pacific Liner History",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": false,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 1,
+        "editorialInbound": 0,
+        "baselineInbound": 1,
+        "byCategory": {},
+        "sources": []
+      },
       {
         "path": "collectors-notebook/silverplate-vs-sterling.html",
         "route": "/collectors-notebook/silver-plate-vs-sterling",
@@ -4489,12 +4517,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 39,
-      "editorialInbound": 34,
+      "inboundTotal": 40,
+      "editorialInbound": 35,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 18,
-        "collection": 12,
+        "collection": 13,
         "hub": 3,
         "bridge-page": 1
       },
@@ -4532,6 +4560,12 @@
         {
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -6173,13 +6207,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 451,
-      "editorialInbound": 449,
+      "inboundTotal": 452,
+      "editorialInbound": 450,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
         "comparative-history": 7,
-        "collection": 32,
+        "collection": 33,
         "evidence-methodology": 1,
         "ship-guide": 366
       },
@@ -6283,6 +6317,12 @@
         {
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -12006,16 +12046,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 14,
-      "editorialInbound": 13,
+      "inboundTotal": 15,
+      "editorialInbound": 14,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "comparative-history": 1,
         "article-reference": 6,
         "ship-guide": 5
       },
       "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/ports-piers-terminals-liner-era.html",
           "sourceRoute": "/collections/ports-piers-terminals-liner-era",
@@ -13523,6 +13569,20 @@
       ]
     },
     {
+      "path": "collections/japanese-trans-pacific-liner-history.html",
+      "route": "/collections/japanese-trans-pacific-liner-history",
+      "title": "Japanese & Trans-Pacific Liner History",
+      "category": "collection",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "path": "collections/life-below-deck-crew-and-systems.html",
       "route": "/collections/life-below-deck-crew-and-systems",
       "title": "Life Below Deck: Crew & Systems",
@@ -13736,14 +13796,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 8,
-      "editorialInbound": 7,
+      "inboundTotal": 9,
+      "editorialInbound": 8,
       "baselineInbound": 1,
       "byCategory": {
+        "collection": 1,
         "comparative-history": 1,
         "ship-guide": 6
       },
       "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
           "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
@@ -17590,11 +17657,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 22,
-      "editorialInbound": 19,
+      "inboundTotal": 23,
+      "editorialInbound": 20,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 7,
+        "collection": 8,
         "evidence-methodology": 10,
         "article-reference": 2
       },
@@ -17602,6 +17669,12 @@
         {
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -18259,12 +18332,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 84,
-      "editorialInbound": 79,
+      "inboundTotal": 85,
+      "editorialInbound": 80,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 39,
-        "collection": 32,
+        "collection": 33,
         "hub": 3,
         "comparative-history": 1,
         "ship-guide": 2,
@@ -18352,6 +18425,12 @@
         {
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -19031,14 +19110,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
+        "collection": 1,
         "ship-guide": 2,
         "article-reference": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/chichibu-maru.html",
           "sourceRoute": "/ships/chichibu-maru",
@@ -19104,13 +19190,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 3,
+      "inboundTotal": 6,
+      "editorialInbound": 4,
       "baselineInbound": 2,
       "byCategory": {
+        "collection": 1,
         "ship-guide": 3
       },
       "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/asama-maru-1929.html",
           "sourceRoute": "/ships/asama-maru-1929",
@@ -19139,13 +19232,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
       "baselineInbound": 2,
       "byCategory": {
+        "collection": 1,
         "ship-guide": 2
       },
       "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/asama-maru-1929.html",
           "sourceRoute": "/ships/asama-maru-1929",
@@ -19838,14 +19938,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
+        "collection": 1,
         "ship-guide": 2,
         "article-reference": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/chichibu-maru.html",
           "sourceRoute": "/ships/chichibu-maru",
@@ -21051,13 +21158,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
+        "collection": 1,
         "article-reference": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",

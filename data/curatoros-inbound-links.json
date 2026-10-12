@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T19:43:22.670Z",
+  "generatedAt": "2026-10-12T23:12:59.016Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -13,10 +13,10 @@
   "summary": {
     "shipGuides": 370,
     "editorialOrphans": 53,
-    "oneEditorialInbound": 138,
+    "oneEditorialInbound": 137,
     "threePlusEditorialInbound": 72,
-    "totalEditorialInboundLinks": 844,
-    "averageEditorialInbound": 2.28
+    "totalEditorialInboundLinks": 849,
+    "averageEditorialInbound": 2.29
   },
   "orphanedShips": [
     {
@@ -923,25 +923,6 @@
         {
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "RMS Empress of Asia (1913)",
-      "slug": "rms-empress-of-asia",
-      "url": "/ships/rms-empress-of-asia",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
         }
       ]
@@ -4135,25 +4116,6 @@
       ]
     },
     {
-      "name": "RMS Empress of Asia (1913)",
-      "slug": "rms-empress-of-asia",
-      "url": "/ships/rms-empress-of-asia",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Empress of Australia",
       "slug": "rms-empress-of-australia",
       "url": "/ships/rms-empress-of-australia",
@@ -6834,6 +6796,31 @@
       ]
     },
     {
+      "name": "RMS Empress of Asia (1913)",
+      "slug": "rms-empress-of-asia",
+      "url": "/ships/rms-empress-of-asia",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "RMS Empress of Ireland",
       "slug": "rms-empress-of-ireland",
       "url": "/ships/rms-empress-of-ireland",
@@ -9091,35 +9078,6 @@
       ]
     },
     {
-      "name": "Asama Maru",
-      "slug": "asama-maru-1929",
-      "url": "/ships/asama-maru-1929",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/chichibu-maru.html",
-          "sourceRoute": "/ships/chichibu-maru",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/heian-maru.html",
-          "sourceRoute": "/ships/heian-maru",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "Athlone Castle",
       "slug": "athlone-castle",
       "url": "/ships/athlone-castle",
@@ -9151,36 +9109,6 @@
       ]
     },
     {
-      "name": "Heian Maru (1930)",
-      "slug": "heian-maru",
-      "url": "/ships/heian-maru",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections.html",
-          "sourceRoute": "/collections",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/asama-maru-1929.html",
-          "sourceRoute": "/ships/asama-maru-1929",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/nyk-hikawa-maru.html",
-          "sourceRoute": "/ships/nyk-hikawa-maru",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "MS Gripsholm (1925)",
       "slug": "ms-gripsholm-1925",
       "url": "/ships/ms-gripsholm-1925",
@@ -9207,35 +9135,6 @@
           "sourcePath": "steam-turbine-vs-diesel-motor-liners.html",
           "sourceRoute": "/steam-turbine-vs-diesel-motor-liners",
           "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
-      "name": "NYK Hikawa Maru",
-      "slug": "nyk-hikawa-maru",
-      "url": "/ships/nyk-hikawa-maru",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "ships/chichibu-maru.html",
-          "sourceRoute": "/ships/chichibu-maru",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/heian-maru.html",
-          "sourceRoute": "/ships/heian-maru",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9848,16 +9747,52 @@
       ]
     },
     {
-      "name": "Chichibu Maru (1930)",
-      "slug": "chichibu-maru",
-      "url": "/ships/chichibu-maru",
+      "name": "Asama Maru",
+      "slug": "asama-maru-1929",
+      "url": "/ships/asama-maru-1929",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "Heian Maru (1930)",
+      "slug": "heian-maru",
+      "url": "/ships/heian-maru",
       "inboundTotal": 5,
       "editorialInbound": 4,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
         "article-reference": 1,
-        "ship-guide": 3
+        "collection": 1,
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -9866,13 +9801,13 @@
           "sourceCategory": "article-reference"
         },
         {
-          "sourcePath": "ships/asama-maru-1929.html",
-          "sourceRoute": "/ships/asama-maru-1929",
-          "sourceCategory": "ship-guide"
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection"
         },
         {
-          "sourcePath": "ships/heian-maru.html",
-          "sourceRoute": "/ships/heian-maru",
+          "sourcePath": "ships/asama-maru-1929.html",
+          "sourceRoute": "/ships/asama-maru-1929",
           "sourceCategory": "ship-guide"
         },
         {
@@ -9913,6 +9848,41 @@
         {
           "sourcePath": "ships/ss-roma.html",
           "sourceRoute": "/ships/ss-roma",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "NYK Hikawa Maru",
+      "slug": "nyk-hikawa-maru",
+      "url": "/ships/nyk-hikawa-maru",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -10410,6 +10380,47 @@
           "sourcePath": "women-who-worked-aboard-ocean-liners.html",
           "sourceRoute": "/women-who-worked-aboard-ocean-liners",
           "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
+      "name": "Chichibu Maru (1930)",
+      "slug": "chichibu-maru",
+      "url": "/ships/chichibu-maru",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "collection": 1,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/asama-maru-1929.html",
+          "sourceRoute": "/ships/asama-maru-1929",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/nyk-hikawa-maru.html",
+          "sourceRoute": "/ships/nyk-hikawa-maru",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
