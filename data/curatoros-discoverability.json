@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T20:01:53.302Z",
+  "generatedAt": "2026-10-12T20:14:46.995Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1452,
-      "averageEditorialInbound": 7.52
+      "editorialInbound": 1454,
+      "averageEditorialInbound": 7.53
     },
     "bridge-page": {
       "pages": 11,
@@ -2597,13 +2597,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 12,
-      "editorialInbound": 11,
+      "inboundTotal": 14,
+      "editorialInbound": 13,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "article-reference": 6,
-        "ship-guide": 3,
+        "ship-guide": 5,
         "comparative-history": 1
       },
       "sources": [
@@ -2638,8 +2638,20 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/rms-britannia-1840.html",
+          "sourceRoute": "/ships/rms-britannia-1840",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-cambria-1845.html",
           "sourceRoute": "/ships/rms-cambria-1845",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-scotia-1861.html",
+          "sourceRoute": "/ships/rms-scotia-1861",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
