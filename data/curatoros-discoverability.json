@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T23:56:14.612Z",
+  "generatedAt": "2026-10-12T23:59:19.509Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 35,
       "searchEligible": 35,
       "sitemapListed": 34,
-      "editorialInbound": 151,
-      "averageEditorialInbound": 4.31
+      "editorialInbound": 153,
+      "averageEditorialInbound": 4.37
     },
     "comparative-history": {
       "pages": 33,
@@ -13491,13 +13491,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 7,
-      "editorialInbound": 5,
+      "inboundTotal": 9,
+      "editorialInbound": 7,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
-        "ship-guide": 3
+        "ship-guide": 5
       },
       "sources": [
         {
@@ -13521,6 +13521,18 @@
         {
           "sourcePath": "ships/ss-canada-1896.html",
           "sourceRoute": "/ships/ss-canada-1896",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-montclare.html",
+          "sourceRoute": "/ships/ss-montclare",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-montrose.html",
+          "sourceRoute": "/ships/ss-montrose",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
