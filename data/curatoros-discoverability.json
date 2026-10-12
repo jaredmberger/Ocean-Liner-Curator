@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T23:53:03.365Z",
+  "generatedAt": "2026-10-12T23:56:14.612Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 35,
       "searchEligible": 35,
       "sitemapListed": 34,
-      "editorialInbound": 149,
-      "averageEditorialInbound": 4.26
+      "editorialInbound": 151,
+      "averageEditorialInbound": 4.31
     },
     "comparative-history": {
       "pages": 33,
@@ -13491,13 +13491,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 3,
+      "inboundTotal": 7,
+      "editorialInbound": 5,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
-        "ship-guide": 1
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -13515,6 +13515,18 @@
         {
           "sourcePath": "ships/ss-belgenland.html",
           "sourceRoute": "/ships/ss-belgenland",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-canada-1896.html",
+          "sourceRoute": "/ships/ss-canada-1896",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-patricia.html",
+          "sourceRoute": "/ships/ss-patricia",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
