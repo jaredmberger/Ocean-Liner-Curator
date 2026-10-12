@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T19:29:54.372Z",
+  "generatedAt": "2026-10-12T19:32:04.277Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 130,
-      "averageEditorialInbound": 3.82
+      "editorialInbound": 132,
+      "averageEditorialInbound": 3.88
     },
     "comparative-history": {
       "pages": 33,
@@ -13668,12 +13668,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 6,
+      "editorialInbound": 5,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 1,
-        "ship-guide": 2
+        "ship-guide": 4
       },
       "sources": [
         {
@@ -13691,6 +13691,18 @@
         {
           "sourcePath": "ships/rms-empress-of-britain.html",
           "sourceRoute": "/ships/rms-empress-of-britain",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-lancastria.html",
+          "sourceRoute": "/ships/rms-lancastria",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-calgarian.html",
+          "sourceRoute": "/ships/ss-calgarian",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
