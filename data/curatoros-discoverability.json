@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T08:14:51.428Z",
+  "generatedAt": "2026-10-12T18:38:46.915Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -72,8 +72,8 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 822,
-      "averageEditorialInbound": 2.2
+      "editorialInbound": 823,
+      "averageEditorialInbound": 2.21
     }
   },
   "signals": {
@@ -25823,18 +25823,24 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
         "article-reference": 1,
-        "ship-guide": 1
+        "ship-guide": 2
       },
       "sources": [
         {
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-george-washington.html",
+          "sourceRoute": "/ships/ss-george-washington",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {

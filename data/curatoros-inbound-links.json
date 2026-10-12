@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T08:11:45.924Z",
+  "generatedAt": "2026-10-12T18:38:43.800Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -14,9 +14,9 @@
     "shipGuides": 370,
     "editorialOrphans": 54,
     "oneEditorialInbound": 140,
-    "threePlusEditorialInbound": 71,
-    "totalEditorialInboundLinks": 838,
-    "averageEditorialInbound": 2.26
+    "threePlusEditorialInbound": 72,
+    "totalEditorialInboundLinks": 839,
+    "averageEditorialInbound": 2.27
   },
   "orphanedShips": [
     {
@@ -8024,31 +8024,6 @@
       ]
     },
     {
-      "name": "SS George Washington",
-      "slug": "ss-george-washington-ngl",
-      "url": "/ships/ss-george-washington-ngl",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "history-of-major-shipping-lines.html",
-          "sourceRoute": "/history-of-major-shipping-lines",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/ss-kaiser-wilhelm-der-grosse.html",
-          "sourceRoute": "/ships/ss-kaiser-wilhelm-der-grosse",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Germanic",
       "slug": "ss-germanic",
       "url": "/ships/ss-germanic",
@@ -9588,6 +9563,36 @@
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
           "sourceRoute": "/ships/ocean-liner-speed-record-table",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS George Washington",
+      "slug": "ss-george-washington-ngl",
+      "url": "/ships/ss-george-washington-ngl",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "hub-history": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "history-of-major-shipping-lines.html",
+          "sourceRoute": "/history-of-major-shipping-lines",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/ss-george-washington.html",
+          "sourceRoute": "/ships/ss-george-washington",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-kaiser-wilhelm-der-grosse.html",
+          "sourceRoute": "/ships/ss-kaiser-wilhelm-der-grosse",
           "sourceCategory": "ship-guide"
         }
       ]
