@@ -1,0 +1,41 @@
+name: Run Ship Audit Report
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit-coverage:
+    name: Generate audit coverage files
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out archive
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Reconcile indexed guides against audits
+        run: python3 tools/search/reconcile_ship_audits.py
+
+      - name: Show report in job summary
+        if: success()
+        shell: bash
+        run: |
+          cat tools/search/SHIP_AUDIT_COVERAGE.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload downloadable reports
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ship-audit-coverage
+          path: |
+            tools/search/ship-audit-coverage.csv
+            tools/search/SHIP_AUDIT_COVERAGE.md
+          if-no-files-found: error
+          retention-days: 90
