@@ -96,6 +96,20 @@ def main():
         except ValueError as exc:
             raise ValueError(str(doc.relative_to(ROOT)) + ": " + str(exc)) from exc
         batches[doc.name] = guides
+    # Rapid reviews use explicit canonical path lists (10–20 guides per batch).
+    # Validate subject count and identities without counting links in prose.
+    for doc in sorted(AUDITS.glob("SHIP_GUIDE_RAPID_REVIEW_*.md")):
+        body = doc.read_text(encoding="utf8")
+        header, marker, _ = body.partition("## Results")
+        subjects = list(dict.fromkeys(
+            "ships/" + m for m in re.findall(r"^- `ships/([a-z0-9-]+\\.html)`$", header, flags=re.MULTILINE)
+        ))
+        if not (10 <= len(subjects) <= 20 and all(g in inventory for g in subjects)):
+            raise ValueError(
+                str(doc.relative_to(ROOT)) + ": rapid review must declare 10–20 distinct indexed guides"
+            )
+        batches[doc.name] = subjects
+
     sampled = {}
     for doc, guides in batches.items():
         for guide in guides:
@@ -128,8 +142,8 @@ def main():
         "Generated against the current canonical ship index, numbered audit-batch files, and partial editorial ledger. **No category certifies full historical accuracy.**",
         "",
         f"- Canonical indexed guides: **{len(ships)}**",
-        f"- Numbered batch records parsed: **{len(batches)}**",
-        f"- Batch review instances: **{sum(map(len, batches.values()))}**",
+        f"- Scoped audit records parsed (numbered + rapid): **{len(batches)}**",
+        f"- Scoped review instances: **{sum(map(len, batches.values()))}**",
         f"- Unique guides in documented scoped batches: **{len(sampled)}**",
         f"- Scoped batch + ledger overlap: **{len(set(sampled) & ledger_paths)}**",
         f"- Ledger-only guides: **{len(ledger_paths - set(sampled))}**",
@@ -141,7 +155,7 @@ def main():
         "| Status | Count | Meaning |",
         "| --- | ---: | --- |",
         *[f"| {label} | {counts[label]} | " + {
-            "Reviewed — scoped": "One or more five-guide editorial inspections; not a full audit.",
+            "Reviewed — scoped": "One or more scoped editorial screenings (five-guide or rapid); not a full audit.",
             "Partially reviewed — ledger only": "Selected fact/source mentioned in ledger; not a systematic guide inspection.",
             "Not documented as reviewed": "No match in the indexed batches or partial ledger; not proof no one ever read it.",
         }[label] + " |" for label in ("Reviewed — scoped", "Partially reviewed — ledger only", "Not documented as reviewed")],
