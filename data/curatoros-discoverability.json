@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T19:40:04.035Z",
+  "generatedAt": "2026-10-12T19:43:27.452Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -72,8 +72,8 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 826,
-      "averageEditorialInbound": 2.21
+      "editorialInbound": 828,
+      "averageEditorialInbound": 2.22
     }
   },
   "signals": {
@@ -27436,17 +27436,24 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 1,
+        "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "collections/immigrant-era-atlantic-liners.html",
           "sourceRoute": "/collections/immigrant-era-atlantic-liners",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "women-who-worked-aboard-ocean-liners.html",
+          "sourceRoute": "/women-who-worked-aboard-ocean-liners",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
       ]
@@ -29523,11 +29530,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
       "baselineInbound": 2,
       "byCategory": {
-        "ship-guide": 2
+        "ship-guide": 2,
+        "article-reference": 1
       },
       "sources": [
         {
@@ -29540,6 +29548,12 @@
           "sourcePath": "ships/ss-strathmore.html",
           "sourceRoute": "/ships/ss-strathmore",
           "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "women-who-worked-aboard-ocean-liners.html",
+          "sourceRoute": "/women-who-worked-aboard-ocean-liners",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
       ]

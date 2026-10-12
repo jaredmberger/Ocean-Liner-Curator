@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T19:27:28.580Z",
+  "generatedAt": "2026-10-12T19:43:22.670Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -13,9 +13,9 @@
   "summary": {
     "shipGuides": 370,
     "editorialOrphans": 53,
-    "oneEditorialInbound": 139,
+    "oneEditorialInbound": 138,
     "threePlusEditorialInbound": 72,
-    "totalEditorialInboundLinks": 842,
+    "totalEditorialInboundLinks": 844,
     "averageEditorialInbound": 2.28
   },
   "orphanedShips": [
@@ -2596,25 +2596,6 @@
           "sourcePath": "ships/ss-monterey.html",
           "sourceRoute": "/ships/ss-monterey",
           "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Marquette",
-      "slug": "ss-marquette",
-      "url": "/ships/ss-marquette",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
-          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -5826,25 +5807,6 @@
       ]
     },
     {
-      "name": "SS Marquette",
-      "slug": "ss-marquette",
-      "url": "/ships/ss-marquette",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
-          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Mayflower",
       "slug": "ss-mayflower",
       "url": "/ships/ss-mayflower",
@@ -8261,6 +8223,31 @@
       ]
     },
     {
+      "name": "SS Marquette",
+      "slug": "ss-marquette",
+      "url": "/ships/ss-marquette",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "women-who-worked-aboard-ocean-liners.html",
+          "sourceRoute": "/women-who-worked-aboard-ocean-liners",
+          "sourceCategory": "article-reference"
+        }
+      ]
+    },
+    {
       "name": "SS Medic",
       "slug": "ss-medic",
       "url": "/ships/ss-medic",
@@ -9861,36 +9848,6 @@
       ]
     },
     {
-      "name": "SS Strathallan (1938)",
-      "slug": "ss-strathallan",
-      "url": "/ships/ss-strathallan",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections.html",
-          "sourceRoute": "/collections",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ss-strathaird.html",
-          "sourceRoute": "/ships/ss-strathaird",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ss-strathmore.html",
-          "sourceRoute": "/ships/ss-strathmore",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "Chichibu Maru (1930)",
       "slug": "chichibu-maru",
       "url": "/ships/chichibu-maru",
@@ -10418,6 +10375,41 @@
           "sourcePath": "ships/ss-strathmore.html",
           "sourceRoute": "/ships/ss-strathmore",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Strathallan (1938)",
+      "slug": "ss-strathallan",
+      "url": "/ships/ss-strathallan",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "women-who-worked-aboard-ocean-liners.html",
+          "sourceRoute": "/women-who-worked-aboard-ocean-liners",
+          "sourceCategory": "article-reference"
         }
       ]
     },
