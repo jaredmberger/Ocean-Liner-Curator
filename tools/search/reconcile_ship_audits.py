@@ -33,25 +33,47 @@ def canonical():
     return sorted({path(m) for m in URL_RE.findall(INDEX.read_text(encoding="utf8")) if m != "ships.html"})
 
 def batch_guides(body, inventory):
-    # Audit records have multiple layouts: some name their five guides in the
-    # introduction, others list them as the first five Markdown table entries.
-    # Collect explicit, backticked ship paths or filenames from the whole
-    # document, in order. Validate that exactly five canonical identities are
-    # present rather than presuming the introductory paragraph lists them.
-    candidates = []
-    for match in re.finditer(
-        r"`(?:ships/)?([a-z0-9-]+\.html)`|(?<![A-Za-z0-9/])ships/([a-z0-9-]+\.html)",
-        body, flags=re.MULTILINE
-    ):
-        name = match.group(1) or match.group(2)
-        guide = path(name)
-        if guide in inventory and guide not in candidates:
-            candidates.append(guide)
-    if len(candidates) != 5:
-        raise ValueError(
-            f"expected five distinct indexed guide identities, got {len(candidates)}: {candidates}"
+    # Audit subject lists differ in layout. Read the declared five ships
+    # before the first table; where absent, read rows from the first table.
+    # Later mentions (links, related ships and follow-up research) are not
+    # audit subjects and must never inflate the audited count.
+    def extract(text):
+        matches = re.finditer(
+            r"`(?:ships/)?([a-z0-9-]+\.html)`|(?<![A-Za-z0-9/])ships/([a-z0-9-]+\.html)",
+            text, flags=re.MULTILINE
         )
-    return candidates
+        found = []
+        for match in matches:
+            item = path(match.group(1) or match.group(2))
+            if item in inventory and item not in found:
+                found.append(item)
+        return found
+
+    before_table = body.split("\n|", 1)[0]
+    guides = extract(before_table)
+    if len(guides) == 5:
+        return guides
+
+    # Some opening sections simply announce five guides without naming them.
+    # In those records the first Markdown table holds the review subjects.
+    table_rows = []
+    in_table = False
+    for line in body.splitlines():
+        if line.startswith("|"):
+            in_table = True
+            cells = line.split("|")
+            if len(cells) > 2:
+                table_rows.extend(extract(cells[1]))
+        elif in_table:
+            break
+    table_rows = list(dict.fromkeys(table_rows))
+    if len(table_rows) == 5:
+        return table_rows
+
+    raise ValueError(
+        "Could not confidently identify exactly five reviewed subjects; "
+        f"intro={guides}, table={table_rows}"
+    )
 
 def main():
     ships = canonical()
