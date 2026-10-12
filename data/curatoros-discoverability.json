@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T20:14:46.995Z",
+  "generatedAt": "2026-10-12T20:17:42.679Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 132,
-      "averageEditorialInbound": 3.88
+      "editorialInbound": 134,
+      "averageEditorialInbound": 3.94
     },
     "comparative-history": {
       "pages": 33,
@@ -13852,12 +13852,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 4,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 2,
-        "ship-guide": 2
+        "ship-guide": 4
       },
       "sources": [
         {
@@ -13881,6 +13881,18 @@
         {
           "sourcePath": "ships/rms-lucania.html",
           "sourceRoute": "/ships/rms-lucania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-china-1862.html",
+          "sourceRoute": "/ships/ss-china-1862",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-great-britain-1843.html",
+          "sourceRoute": "/ships/ss-great-britain-1843",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
