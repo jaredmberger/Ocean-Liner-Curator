@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T18:42:53.349Z",
+  "generatedAt": "2026-10-12T19:24:23.398Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,7 +30,7 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1441,
+      "editorialInbound": 1442,
       "averageEditorialInbound": 7.47
     },
     "bridge-page": {
@@ -11943,13 +11943,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 8,
+      "inboundTotal": 10,
+      "editorialInbound": 9,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
-        "article-reference": 6
+        "article-reference": 6,
+        "ship-guide": 1
       },
       "sources": [
         {
@@ -11992,6 +11993,12 @@
           "sourcePath": "how-the-liner-system-worked.html",
           "sourceRoute": "/how-the-liner-system-worked",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-dakota.html",
+          "sourceRoute": "/ships/ss-dakota",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
