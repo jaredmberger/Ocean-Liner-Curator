@@ -23,9 +23,9 @@ jobs:
         run: |
           echo '## Research connectivity (static candidate inventory)' >> "$GITHUB_STEP_SUMMARY"
           echo 'This excludes script-generated links and unrecognized templates; zeros are review candidates, not confirmed defects.' >> "$GITHUB_STEP_SUMMARY"
-          echo '\`\`\`text' >> "$GITHUB_STEP_SUMMARY"
+          echo '```text' >> "$GITHUB_STEP_SUMMARY"
           cat research-connectivity-summary.txt >> "$GITHUB_STEP_SUMMARY"
-          echo '\`\`\`' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
       - name: Upload reports
         uses: actions/upload-artifact@v4
         with:
