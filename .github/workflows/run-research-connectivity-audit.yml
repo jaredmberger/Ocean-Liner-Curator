@@ -1,0 +1,37 @@
+name: Run Research Connectivity Audit
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  connectivity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generate connectivity baseline
+        run: |
+          node tools/search/research-connectivity-audit.mjs --json > research-connectivity-baseline.json
+          node tools/search/research-connectivity-audit.mjs > research-connectivity-summary.txt
+      - name: Post summary
+        run: |
+          echo '## Research connectivity (static candidate inventory)' >> "$GITHUB_STEP_SUMMARY"
+          echo 'This excludes script-generated links and unrecognized templates; zeros are review candidates, not confirmed defects.' >> "$GITHUB_STEP_SUMMARY"
+          echo '\`\`\`text' >> "$GITHUB_STEP_SUMMARY"
+          cat research-connectivity-summary.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '\`\`\`' >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-connectivity-baseline
+          path: |
+            research-connectivity-baseline.json
+            research-connectivity-summary.txt
+          if-no-files-found: error
+          retention-days: 60
