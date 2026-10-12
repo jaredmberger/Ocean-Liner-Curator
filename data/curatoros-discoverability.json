@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T20:51:45.013Z",
+  "generatedAt": "2026-10-12T23:01:23.145Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1454,
-      "averageEditorialInbound": 7.53
+      "editorialInbound": 1455,
+      "averageEditorialInbound": 7.54
     },
     "bridge-page": {
       "pages": 11,
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 146,
-      "averageEditorialInbound": 4.29
+      "editorialInbound": 147,
+      "averageEditorialInbound": 4.32
     },
     "comparative-history": {
       "pages": 33,
@@ -12006,14 +12006,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 12,
-      "editorialInbound": 11,
+      "inboundTotal": 13,
+      "editorialInbound": 12,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
         "article-reference": 6,
-        "ship-guide": 3
+        "ship-guide": 4
       },
       "sources": [
         {
@@ -12056,6 +12056,12 @@
           "sourcePath": "how-the-liner-system-worked.html",
           "sourceRoute": "/how-the-liner-system-worked",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -13724,18 +13730,24 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 5,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 1,
-        "ship-guide": 4
+        "ship-guide": 5
       },
       "sources": [
         {
           "sourcePath": "peacetime-vs-wartime-ocean-liner-roles.html",
           "sourceRoute": "/peacetime-vs-wartime-ocean-liner-roles",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/asama-maru-1929.html",
+          "sourceRoute": "/ships/asama-maru-1929",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
