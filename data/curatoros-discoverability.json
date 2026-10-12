@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T19:43:27.452Z",
+  "generatedAt": "2026-10-12T20:01:53.302Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1450,
-      "averageEditorialInbound": 7.51
+      "editorialInbound": 1452,
+      "averageEditorialInbound": 7.52
     },
     "bridge-page": {
       "pages": 11,
@@ -2597,13 +2597,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 9,
+      "inboundTotal": 12,
+      "editorialInbound": 11,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "article-reference": 6,
-        "ship-guide": 1,
+        "ship-guide": 3,
         "comparative-history": 1
       },
       "sources": [
@@ -2635,6 +2635,18 @@
           "sourcePath": "how-the-liner-system-worked.html",
           "sourceRoute": "/how-the-liner-system-worked",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-cambria-1845.html",
+          "sourceRoute": "/ships/rms-cambria-1845",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-arabia-1852.html",
+          "sourceRoute": "/ships/ss-arabia-1852",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
