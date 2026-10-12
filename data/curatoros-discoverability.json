@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T18:38:46.915Z",
+  "generatedAt": "2026-10-12T18:42:53.349Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -72,7 +72,7 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 823,
+      "editorialInbound": 825,
       "averageEditorialInbound": 2.21
     }
   },
@@ -22118,17 +22118,24 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 1,
+        "ship-guide": 1
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-orontes.html",
+          "sourceRoute": "/ships/ss-orontes",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -28287,17 +28294,24 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 1,
+        "ship-guide": 1
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-orontes.html",
+          "sourceRoute": "/ships/rms-orontes",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]

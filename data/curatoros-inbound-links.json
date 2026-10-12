@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T18:38:43.800Z",
+  "generatedAt": "2026-10-12T18:42:48.799Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -13,9 +13,9 @@
   "summary": {
     "shipGuides": 370,
     "editorialOrphans": 54,
-    "oneEditorialInbound": 140,
+    "oneEditorialInbound": 138,
     "threePlusEditorialInbound": 72,
-    "totalEditorialInboundLinks": 839,
+    "totalEditorialInboundLinks": 841,
     "averageEditorialInbound": 2.27
   },
   "orphanedShips": [
@@ -1227,25 +1227,6 @@
       "name": "RMS Oronsay (1951)",
       "slug": "rms-oronsay",
       "url": "/ships/rms-oronsay",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Orontes (1902)",
-      "slug": "rms-orontes",
-      "url": "/ships/rms-orontes",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -2785,25 +2766,6 @@
       "name": "SS Orion",
       "slug": "ss-orion",
       "url": "/ships/ss-orion",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "SS Orontes (1929)",
-      "slug": "ss-orontes",
-      "url": "/ships/ss-orontes",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -4499,25 +4461,6 @@
       ]
     },
     {
-      "name": "RMS Orontes (1902)",
-      "slug": "rms-orontes",
-      "url": "/ships/rms-orontes",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "RMS Orsova (1954)",
       "slug": "rms-orsova",
       "url": "/ships/rms-orsova",
@@ -6057,25 +6000,6 @@
       ]
     },
     {
-      "name": "SS Orontes (1929)",
-      "slug": "ss-orontes",
-      "url": "/ships/ss-orontes",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Patricia",
       "slug": "ss-patricia",
       "url": "/ships/ss-patricia",
@@ -7177,6 +7101,31 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Orontes (1902)",
+      "slug": "rms-orontes",
+      "url": "/ships/rms-orontes",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ss-orontes.html",
+          "sourceRoute": "/ships/ss-orontes",
+          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -8566,6 +8515,31 @@
         {
           "sourcePath": "ships/rms-orcades-1948.html",
           "sourceRoute": "/ships/rms-orcades-1948",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Orontes (1929)",
+      "slug": "ss-orontes",
+      "url": "/ships/ss-orontes",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/rms-orontes.html",
+          "sourceRoute": "/ships/rms-orontes",
           "sourceCategory": "ship-guide"
         }
       ]
