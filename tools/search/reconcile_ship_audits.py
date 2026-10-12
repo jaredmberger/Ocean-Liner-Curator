@@ -102,7 +102,7 @@ def main():
         body = doc.read_text(encoding="utf8")
         header, marker, _ = body.partition("## Results")
         subjects = list(dict.fromkeys(
-            "ships/" + m for m in re.findall(r"^- `ships/([a-z0-9-]+\\.html)`$", header, flags=re.MULTILINE)
+            "ships/" + m for m in re.findall(r"^- `ships/([a-z0-9-]+\.html)`$", header, flags=re.MULTILINE)
         ))
         if not (10 <= len(subjects) <= 20 and all(g in inventory for g in subjects)):
             raise ValueError(
