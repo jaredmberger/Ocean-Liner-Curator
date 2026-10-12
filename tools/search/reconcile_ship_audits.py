@@ -40,7 +40,7 @@ def batch_guides(body, inventory):
     # present rather than presuming the introductory paragraph lists them.
     candidates = []
     for match in re.finditer(
-        r"`(?:ships/)?([a-z0-9-]+\.html)`|(?:^|[\\s(])ships/([a-z0-9-]+\.html)",
+        r"`(?:ships/)?([a-z0-9-]+\.html)`|(?<![A-Za-z0-9/])ships/([a-z0-9-]+\.html)",
         body, flags=re.MULTILINE
     ):
         name = match.group(1) or match.group(2)
