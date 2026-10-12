@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T19:24:23.398Z",
+  "generatedAt": "2026-10-12T19:27:32.185Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1442,
-      "averageEditorialInbound": 7.47
+      "editorialInbound": 1443,
+      "averageEditorialInbound": 7.48
     },
     "bridge-page": {
       "pages": 11,
@@ -72,7 +72,7 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 825,
+      "editorialInbound": 826,
       "averageEditorialInbound": 2.21
     }
   },
@@ -11943,14 +11943,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 9,
+      "inboundTotal": 11,
+      "editorialInbound": 10,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
         "article-reference": 6,
-        "ship-guide": 1
+        "ship-guide": 2
       },
       "sources": [
         {
@@ -11998,6 +11998,12 @@
         {
           "sourcePath": "ships/ss-dakota.html",
           "sourceRoute": "/ships/ss-dakota",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-minnesota.html",
+          "sourceRoute": "/ships/ss-minnesota",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -25276,11 +25282,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-minnesota.html",
+          "sourceRoute": "/ships/ss-minnesota",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ss-de-grasse.html",
