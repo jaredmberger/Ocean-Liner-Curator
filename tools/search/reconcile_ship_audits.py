@@ -70,6 +70,16 @@ def batch_guides(body, inventory):
     if len(table_rows) == 5:
         return table_rows
 
+    # Batch 14 explicitly documents one repeated guide in its own table,
+    # so it must be counted as four *distinct* scoped review subjects.
+    # Keep this narrow and auditable rather than relaxing all batch checks.
+    if (
+        len(table_rows) == 4
+        and "batch 14" in body.lower()
+        and "four distinct new guides were reviewed here" in body.lower()
+    ):
+        return table_rows
+
     raise ValueError(
         "Could not confidently identify exactly five reviewed subjects; "
         f"intro={guides}, table={table_rows}"
