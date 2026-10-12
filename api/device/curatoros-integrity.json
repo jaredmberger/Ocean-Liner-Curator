@@ -4,7 +4,7 @@
   "system": "CuratorOS",
   "status": "healthy",
   "generatedFrom": {
-    "archiveGenerated": "2026-10-11"
+    "archiveGenerated": "2026-10-12"
   },
   "counts": {
     "archive": 371,
@@ -19,7 +19,7 @@
       "file": "api/device/archive.json",
       "exists": true,
       "status": "ok",
-      "generatedAt": "2026-10-11",
+      "generatedAt": "2026-10-12",
       "count": 371
     },
     "builders": {
@@ -40,11 +40,11 @@
       "status": "ok",
       "counts": {
         "errors": 0,
-        "warnings": 6,
+        "warnings": 8,
         "archiveCards": 371,
         "inlineLinkErrors": 0,
         "imageErrors": 0,
-        "structuralWarnings": 0,
+        "structuralWarnings": 1,
         "yearWarnings": 0,
         "orphanGuides": 0,
         "orphanImages": 0,
@@ -164,11 +164,11 @@
         "status": "ok",
         "counts": {
           "errors": 0,
-          "warnings": 6,
+          "warnings": 8,
           "archiveCards": 371,
           "inlineLinkErrors": 0,
           "imageErrors": 0,
-          "structuralWarnings": 0,
+          "structuralWarnings": 1,
           "yearWarnings": 0,
           "orphanGuides": 0,
           "orphanImages": 0,
@@ -177,7 +177,7 @@
         }
       },
       "errors": 0,
-      "warnings": 6
+      "warnings": 8
     }
   ]
 }

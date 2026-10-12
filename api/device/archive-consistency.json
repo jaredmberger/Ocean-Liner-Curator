@@ -5,11 +5,11 @@
   "status": "warning",
   "counts": {
     "errors": 0,
-    "warnings": 6,
+    "warnings": 8,
     "archiveCards": 371,
     "inlineLinkErrors": 0,
     "imageErrors": 0,
-    "structuralWarnings": 0,
+    "structuralWarnings": 1,
     "yearWarnings": 0,
     "orphanGuides": 0,
     "orphanImages": 0,
@@ -18,6 +18,17 @@
   },
   "errors": [],
   "warnings": [
+    {
+      "code": "card-title-name-mismatch",
+      "slug": "ss-george-washington",
+      "card": "SS George Washington",
+      "title": "SS George Washington — United States Lines Era | Ocean Liner Curator"
+    },
+    {
+      "code": "missing-standard-section",
+      "slug": "ss-george-washington",
+      "section": "Overview"
+    },
     {
       "code": "card-title-name-mismatch",
       "slug": "ss-storstad",
