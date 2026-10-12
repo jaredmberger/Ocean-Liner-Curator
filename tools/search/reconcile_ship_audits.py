@@ -33,15 +33,25 @@ def canonical():
     return sorted({path(m) for m in URL_RE.findall(INDEX.read_text(encoding="utf8")) if m != "ships.html"})
 
 def batch_guides(body, inventory):
-    # The first paragraph (before the first Markdown table) states the five guide
-    # identities. Some early reports omit ships/ and use only backticked filenames.
-    opening = body.split("\n| Guide", 1)[0].split("\n| Ship", 1)[0][:1250]
-    candidates = [path(s + ".html") for s in PATH_RE.findall(opening)]
-    candidates += [path(s) for s in BARE_RE.findall(opening) if path(s) in inventory]
-    unique = list(dict.fromkeys(x for x in candidates if x in inventory))
-    if len(unique) != 5:
-        raise ValueError("expected five indexed guide identities, got " + str(unique))
-    return unique
+    # Audit records have multiple layouts: some name their five guides in the
+    # introduction, others list them as the first five Markdown table entries.
+    # Collect explicit, backticked ship paths or filenames from the whole
+    # document, in order. Validate that exactly five canonical identities are
+    # present rather than presuming the introductory paragraph lists them.
+    candidates = []
+    for match in re.finditer(
+        r"`(?:ships/)?([a-z0-9-]+\.html)`|(?<![A-Za-z0-9/])ships/([a-z0-9-]+\.html)",
+        body, flags=re.MULTILINE
+    ):
+        name = match.group(1) or match.group(2)
+        guide = path(name)
+        if guide in inventory and guide not in candidates:
+            candidates.append(guide)
+    if len(candidates) != 5:
+        raise ValueError(
+            f"expected five distinct indexed guide identities, got {len(candidates)}: {candidates}"
+        )
+    return candidates
 
 def main():
     ships = canonical()
