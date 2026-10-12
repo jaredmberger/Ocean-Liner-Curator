@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T20:49:25.451Z",
+  "generatedAt": "2026-10-12T20:51:45.013Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 34,
       "searchEligible": 34,
       "sitemapListed": 34,
-      "editorialInbound": 144,
-      "averageEditorialInbound": 4.24
+      "editorialInbound": 146,
+      "averageEditorialInbound": 4.29
     },
     "comparative-history": {
       "pages": 33,
@@ -14027,12 +14027,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 8,
+      "inboundTotal": 11,
+      "editorialInbound": 10,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "ship-guide": 7
+        "ship-guide": 9
       },
       "sources": [
         {
@@ -14050,6 +14050,18 @@
         {
           "sourcePath": "ships/ms-vera-cruz.html",
           "sourceRoute": "/ships/ms-vera-cruz",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-alcantara-1926.html",
+          "sourceRoute": "/ships/rms-alcantara-1926",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-asturias-1925.html",
+          "sourceRoute": "/ships/ss-asturias-1925",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
