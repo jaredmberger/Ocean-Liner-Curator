@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:01:58.153Z",
+  "generatedAt": "2026-10-13T04:08:53.222Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1478,
-      "averageEditorialInbound": 7.66
+      "editorialInbound": 1488,
+      "averageEditorialInbound": 7.71
     },
     "bridge-page": {
       "pages": 11,
@@ -2666,13 +2666,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 14,
-      "editorialInbound": 13,
+      "inboundTotal": 24,
+      "editorialInbound": 23,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "article-reference": 6,
-        "ship-guide": 5,
+        "ship-guide": 15,
         "comparative-history": 1
       },
       "sources": [
@@ -2707,6 +2707,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/athlone-castle.html",
+          "sourceRoute": "/ships/athlone-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-britannia-1840.html",
           "sourceRoute": "/ships/rms-britannia-1840",
           "sourceCategory": "ship-guide",
@@ -2725,14 +2731,68 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/rms-servia-1881.html",
+          "sourceRoute": "/ships/rms-servia-1881",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-strathnaver.html",
+          "sourceRoute": "/ships/rms-strathnaver",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-arabia-1852.html",
           "sourceRoute": "/ships/ss-arabia-1852",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-asia-1850.html",
+          "sourceRoute": "/ships/ss-asia-1850",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-barbarossa.html",
+          "sourceRoute": "/ships/ss-barbarossa",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-china-1862.html",
+          "sourceRoute": "/ships/ss-china-1862",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-chitral.html",
+          "sourceRoute": "/ships/ss-chitral",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-hibernia-1843.html",
+          "sourceRoute": "/ships/ss-hibernia-1843",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-la-bourgogne.html",
+          "sourceRoute": "/ships/ss-la-bourgogne",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-la-bretagne.html",
           "sourceRoute": "/ships/ss-la-bretagne",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-saxon.html",
+          "sourceRoute": "/ships/ss-saxon",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
