@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T00:22:16.503Z",
+  "generatedAt": "2026-10-13T00:25:29.125Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 158,
-      "averageEditorialInbound": 4.39
+      "editorialInbound": 160,
+      "averageEditorialInbound": 4.44
     },
     "comparative-history": {
       "pages": 33,
@@ -13776,14 +13776,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 8,
+      "inboundTotal": 12,
+      "editorialInbound": 10,
       "baselineInbound": 2,
       "byCategory": {
         "comparative-history": 1,
         "collection": 2,
         "article-reference": 3,
-        "ship-guide": 2
+        "ship-guide": 4
       },
       "sources": [
         {
@@ -13823,6 +13823,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-conte-biancamano.html",
+          "sourceRoute": "/ships/ss-conte-biancamano",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-imperator.html",
           "sourceRoute": "/ships/ss-imperator",
           "sourceCategory": "ship-guide",
@@ -13831,6 +13837,12 @@
         {
           "sourcePath": "ships/ss-leviathan.html",
           "sourceRoute": "/ships/ss-leviathan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-liberte.html",
+          "sourceRoute": "/ships/ss-liberte",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
