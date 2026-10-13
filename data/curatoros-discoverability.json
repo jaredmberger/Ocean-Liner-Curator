@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:29:42.850Z",
+  "generatedAt": "2026-10-13T04:33:26.408Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 185,
-      "averageEditorialInbound": 5.14
+      "editorialInbound": 197,
+      "averageEditorialInbound": 5.47
     },
     "comparative-history": {
       "pages": 33,
@@ -14234,13 +14234,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 9,
+      "inboundTotal": 22,
+      "editorialInbound": 21,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 2,
         "comparative-history": 1,
-        "ship-guide": 6
+        "ship-guide": 18
       },
       "sources": [
         {
@@ -14274,6 +14274,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ms-dempo.html",
+          "sourceRoute": "/ships/ms-dempo",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-aquitania.html",
           "sourceRoute": "/ships/rms-aquitania",
           "sourceCategory": "ship-guide",
@@ -14292,8 +14298,74 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/rms-orcades.html",
+          "sourceRoute": "/ships/rms-orcades",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-calgarian.html",
           "sourceRoute": "/ships/ss-calgarian",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-conte-rosso.html",
+          "sourceRoute": "/ships/ss-conte-rosso",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-duchess-of-york.html",
+          "sourceRoute": "/ships/ss-duchess-of-york",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-la-provence.html",
+          "sourceRoute": "/ships/ss-la-provence",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-mooltan.html",
+          "sourceRoute": "/ships/ss-mooltan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-orama.html",
+          "sourceRoute": "/ships/ss-orama",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-orford.html",
+          "sourceRoute": "/ships/ss-orford",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-orion.html",
+          "sourceRoute": "/ships/ss-orion",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-warwick-castle.html",
+          "sourceRoute": "/ships/ss-warwick-castle",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
