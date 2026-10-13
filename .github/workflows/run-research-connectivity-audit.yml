@@ -28,7 +28,7 @@ jobs:
           echo '```text' >> "$GITHUB_STEP_SUMMARY"
           cat research-connectivity-summary.txt >> "$GITHUB_STEP_SUMMARY"
           echo '### Completion worklist' >> "$GITHUB_STEP_SUMMARY"
-          grep -E '^(reviewed|unreviewed|needsLink|needsResearch|unfinishedGuides|classificationExceptions|validationErrors|complete):' research-connectivity-completion/completion-report.md >> "$GITHUB_STEP_SUMMARY" || true
+          grep -E '^- (reviewed|unreviewed|needsLink|needsResearch|unfinishedGuides|classificationExceptions|validationErrors|complete):' research-connectivity-completion/completion-report.md >> "$GITHUB_STEP_SUMMARY" || true
           echo '```' >> "$GITHUB_STEP_SUMMARY"
       - name: Upload reports
         uses: actions/upload-artifact@v4
