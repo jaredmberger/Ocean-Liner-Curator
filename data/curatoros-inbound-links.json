@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T08:32:13.961Z",
+  "generatedAt": "2026-10-13T08:40:09.030Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -13,10 +13,10 @@
   "summary": {
     "shipGuides": 370,
     "editorialOrphans": 48,
-    "oneEditorialInbound": 136,
-    "threePlusEditorialInbound": 78,
-    "totalEditorialInboundLinks": 870,
-    "averageEditorialInbound": 2.35
+    "oneEditorialInbound": 134,
+    "threePlusEditorialInbound": 80,
+    "totalEditorialInboundLinks": 877,
+    "averageEditorialInbound": 2.37
   },
   "orphanedShips": [
     {
@@ -1709,25 +1709,6 @@
       ]
     },
     {
-      "name": "SS Cathay",
-      "slug": "ss-cathay-1924",
-      "url": "/ships/ss-cathay-1924",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Ceramic",
       "slug": "ss-ceramic",
       "url": "/ships/ss-ceramic",
@@ -1788,25 +1769,6 @@
       "name": "SS Chitral (1925)",
       "slug": "ss-chitral",
       "url": "/ships/ss-chitral",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "SS Chusan (1950)",
-      "slug": "ss-chusan",
-      "url": "/ships/ss-chusan",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -4823,25 +4785,6 @@
       ]
     },
     {
-      "name": "SS Cathay",
-      "slug": "ss-cathay-1924",
-      "url": "/ships/ss-cathay-1924",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Ceramic",
       "slug": "ss-ceramic",
       "url": "/ships/ss-ceramic",
@@ -4902,25 +4845,6 @@
       "name": "SS Chitral (1925)",
       "slug": "ss-chitral",
       "url": "/ships/ss-chitral",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "SS Chusan (1950)",
-      "slug": "ss-chusan",
-      "url": "/ships/ss-chusan",
       "inboundTotal": 2,
       "editorialInbound": 1,
       "baselineInbound": 1,
@@ -7266,30 +7190,6 @@
       ]
     },
     {
-      "name": "SS Arcadia (1954)",
-      "slug": "ss-arcadia-1954",
-      "url": "/ships/ss-arcadia-1954",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/postwar-migration-liner.html",
-          "sourceRoute": "/collections/postwar-migration-liner",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
       "name": "SS Arctic",
       "slug": "ss-arctic",
       "url": "/ships/ss-arctic",
@@ -7536,6 +7436,30 @@
       ]
     },
     {
+      "name": "SS Cathay",
+      "slug": "ss-cathay-1924",
+      "url": "/ships/ss-cathay-1924",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Champlain",
       "slug": "ss-champlain",
       "url": "/ships/ss-champlain",
@@ -7582,6 +7506,30 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Chusan (1950)",
+      "slug": "ss-chusan",
+      "url": "/ships/ss-chusan",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -7937,30 +7885,6 @@
       "name": "SS Himalaya (1949)",
       "slug": "ss-himalaya",
       "url": "/ships/ss-himalaya",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/postwar-migration-liner.html",
-          "sourceRoute": "/collections/postwar-migration-liner",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "SS Iberia (1954)",
-      "slug": "ss-iberia",
-      "url": "/ships/ss-iberia",
       "inboundTotal": 3,
       "editorialInbound": 2,
       "baselineInbound": 1,
@@ -9260,6 +9184,35 @@
       ]
     },
     {
+      "name": "SS Arcadia (1954)",
+      "slug": "ss-arcadia-1954",
+      "url": "/ships/ss-arcadia-1954",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "SS Bismarck (1914)",
       "slug": "ss-bismarck-1914",
       "url": "/ships/ss-bismarck-1914",
@@ -9346,6 +9299,35 @@
           "sourcePath": "ships/ss-kaiser-wilhelm-der-grosse.html",
           "sourceRoute": "/ships/ss-kaiser-wilhelm-der-grosse",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Iberia (1954)",
+      "slug": "ss-iberia",
+      "url": "/ships/ss-iberia",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -10317,76 +10299,6 @@
       ]
     },
     {
-      "name": "SS Strathaird",
-      "slug": "ss-strathaird",
-      "url": "/ships/ss-strathaird",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/rms-stratheden.html",
-          "sourceRoute": "/ships/rms-stratheden",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ss-strathallan.html",
-          "sourceRoute": "/ships/ss-strathallan",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ss-strathmore.html",
-          "sourceRoute": "/ships/ss-strathmore",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "SS Strathallan (1938)",
-      "slug": "ss-strathallan",
-      "url": "/ships/ss-strathallan",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 2,
-        "ship-guide": 2
-      },
-      "sources": [
-        {
-          "sourcePath": "collections.html",
-          "sourceRoute": "/collections",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ss-strathaird.html",
-          "sourceRoute": "/ships/ss-strathaird",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ss-strathmore.html",
-          "sourceRoute": "/ships/ss-strathmore",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "women-who-worked-aboard-ocean-liners.html",
-          "sourceRoute": "/women-who-worked-aboard-ocean-liners",
-          "sourceCategory": "article-reference"
-        }
-      ]
-    },
-    {
       "name": "Chichibu Maru (1930)",
       "slug": "chichibu-maru",
       "url": "/ships/chichibu-maru",
@@ -10510,46 +10422,6 @@
       ]
     },
     {
-      "name": "RMS Strathnaver",
-      "slug": "rms-strathnaver",
-      "url": "/ships/rms-strathnaver",
-      "inboundTotal": 6,
-      "editorialInbound": 5,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 4,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/ocean-liners-at-war.html",
-          "sourceRoute": "/collections/ocean-liners-at-war",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/postwar-migration-liner.html",
-          "sourceRoute": "/collections/postwar-migration-liner",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "collections/propulsion-machinery-liner-age.html",
-          "sourceRoute": "/collections/propulsion-machinery-liner-age",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "SS Canberra",
       "slug": "ss-canberra",
       "url": "/ships/ss-canberra",
@@ -10627,6 +10499,87 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Strathaird",
+      "slug": "ss-strathaird",
+      "url": "/ships/ss-strathaird",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/rms-stratheden.html",
+          "sourceRoute": "/ships/rms-stratheden",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathallan.html",
+          "sourceRoute": "/ships/ss-strathallan",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "SS Strathallan (1938)",
+      "slug": "ss-strathallan",
+      "url": "/ships/ss-strathallan",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "collection": 1,
+        "ship-guide": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ss-strathmore.html",
+          "sourceRoute": "/ships/ss-strathmore",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "women-who-worked-aboard-ocean-liners.html",
+          "sourceRoute": "/women-who-worked-aboard-ocean-liners",
+          "sourceCategory": "article-reference"
         }
       ]
     },
@@ -10812,6 +10765,51 @@
         {
           "sourcePath": "ships/timeline-1900-1960.html",
           "sourceRoute": "/ships/timeline-1900-1960",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "RMS Strathnaver",
+      "slug": "rms-strathnaver",
+      "url": "/ships/rms-strathnaver",
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 5,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/ocean-liners-at-war.html",
+          "sourceRoute": "/collections/ocean-liners-at-war",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/postwar-migration-liner.html",
+          "sourceRoute": "/collections/postwar-migration-liner",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/propulsion-machinery-liner-age.html",
+          "sourceRoute": "/collections/propulsion-machinery-liner-age",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
         }
       ]

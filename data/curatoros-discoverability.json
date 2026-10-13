@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T08:32:18.735Z",
+  "generatedAt": "2026-10-13T08:40:14.212Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,21 +17,21 @@
     ]
   },
   "summary": {
-    "trackedHtml": 678,
-    "indexablePages": 662,
-    "priorityPages": 93,
+    "trackedHtml": 679,
+    "indexablePages": 663,
+    "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 68
+    "priorityWithThreePlusEditorialInbound": 69
   },
   "categories": {
     "article-reference": {
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1521,
-      "averageEditorialInbound": 7.88
+      "editorialInbound": 1522,
+      "averageEditorialInbound": 7.89
     },
     "bridge-page": {
       "pages": 11,
@@ -41,11 +41,11 @@
       "averageEditorialInbound": 3
     },
     "collection": {
-      "pages": 38,
-      "searchEligible": 38,
-      "sitemapListed": 36,
-      "editorialInbound": 259,
-      "averageEditorialInbound": 6.82
+      "pages": 39,
+      "searchEligible": 39,
+      "sitemapListed": 37,
+      "editorialInbound": 265,
+      "averageEditorialInbound": 6.79
     },
     "comparative-history": {
       "pages": 33,
@@ -58,8 +58,8 @@
       "pages": 11,
       "searchEligible": 11,
       "sitemapListed": 11,
-      "editorialInbound": 74,
-      "averageEditorialInbound": 6.73
+      "editorialInbound": 75,
+      "averageEditorialInbound": 6.82
     },
     "hub": {
       "pages": 4,
@@ -72,8 +72,8 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 854,
-      "averageEditorialInbound": 2.29
+      "editorialInbound": 861,
+      "averageEditorialInbound": 2.31
     }
   },
   "signals": {
@@ -12336,11 +12336,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 36,
-      "editorialInbound": 35,
+      "inboundTotal": 37,
+      "editorialInbound": 36,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 4,
+        "collection": 5,
         "comparative-history": 1,
         "article-reference": 6,
         "ship-guide": 24
@@ -12349,6 +12349,12 @@
         {
           "sourcePath": "collections/dutch-east-indies-passenger-network.html",
           "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -14104,6 +14110,47 @@
       ]
     },
     {
+      "path": "collections/indian-ocean-suez-passenger-networks.html",
+      "route": "/collections/indian-ocean-suez-passenger-networks",
+      "title": "Indian Ocean and Suez Passenger Networks",
+      "category": "collection",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "byCategory": {
+        "ship-guide": 4
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-cathay-1924.html",
+          "sourceRoute": "/ships/ss-cathay-1924",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-chusan.html",
+          "sourceRoute": "/ships/ss-chusan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-strathaird.html",
+          "sourceRoute": "/ships/ss-strathaird",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-strathallan.html",
+          "sourceRoute": "/ships/ss-strathallan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "collections/italian-ocean-liners.html",
       "route": "/collections/italian-ocean-liners",
       "title": "Italian Ocean Liners",
@@ -14434,11 +14481,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 30,
-      "editorialInbound": 29,
+      "inboundTotal": 31,
+      "editorialInbound": 30,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 4,
+        "collection": 5,
         "comparative-history": 1,
         "ship-guide": 24
       },
@@ -14452,6 +14499,12 @@
         {
           "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
           "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -14677,11 +14730,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 9,
+      "inboundTotal": 11,
+      "editorialInbound": 10,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 2,
+        "collection": 3,
         "article-reference": 1,
         "ship-guide": 6
       },
@@ -14689,6 +14742,12 @@
         {
           "sourcePath": "collections/dutch-east-indies-passenger-network.html",
           "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -18787,11 +18846,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 26,
-      "editorialInbound": 23,
+      "inboundTotal": 27,
+      "editorialInbound": 24,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 11,
+        "collection": 12,
         "evidence-methodology": 10,
         "article-reference": 2
       },
@@ -18805,6 +18864,12 @@
         {
           "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
           "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -24370,17 +24435,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 5,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 4,
+        "collection": 5,
         "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -25269,16 +25340,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 2
+        "collection": 3
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -26146,16 +26223,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 2
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         }
@@ -26319,16 +26402,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 2
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         }
@@ -27802,16 +27891,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 2
+        "collection": 3
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -31025,17 +31120,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 4,
+      "inboundTotal": 6,
+      "editorialInbound": 5,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "ship-guide": 3
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -31067,14 +31168,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 3,
+      "inboundTotal": 6,
+      "editorialInbound": 4,
       "baselineInbound": 2,
       "byCategory": {
+        "collection": 1,
         "ship-guide": 2,
         "article-reference": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/indian-ocean-suez-passenger-networks.html",
+          "sourceRoute": "/collections/indian-ocean-suez-passenger-networks",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/ss-strathaird.html",
           "sourceRoute": "/ships/ss-strathaird",
