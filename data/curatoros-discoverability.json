@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:53:59.993Z",
+  "generatedAt": "2026-10-13T07:02:18.374Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1507,
-      "averageEditorialInbound": 7.81
+      "editorialInbound": 1510,
+      "averageEditorialInbound": 7.82
     },
     "bridge-page": {
       "pages": 11,
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 232,
-      "averageEditorialInbound": 6.44
+      "editorialInbound": 240,
+      "averageEditorialInbound": 6.67
     },
     "comparative-history": {
       "pages": 33,
@@ -10784,12 +10784,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 14,
-      "editorialInbound": 13,
+      "inboundTotal": 16,
+      "editorialInbound": 15,
       "baselineInbound": 1,
       "byCategory": {
         "article-reference": 7,
-        "ship-guide": 6
+        "ship-guide": 8
       },
       "sources": [
         {
@@ -10805,8 +10805,20 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/rms-campania.html",
+          "sourceRoute": "/ships/rms-campania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-carpathia.html",
           "sourceRoute": "/ships/rms-carpathia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-etruria-1884.html",
+          "sourceRoute": "/ships/rms-etruria-1884",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -11966,11 +11978,11 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 13,
-      "editorialInbound": 12,
+      "inboundTotal": 14,
+      "editorialInbound": 13,
       "baselineInbound": 1,
       "byCategory": {
-        "ship-guide": 10,
+        "ship-guide": 11,
         "article-reference": 2
       },
       "sources": [
@@ -11983,6 +11995,12 @@
         {
           "sourcePath": "ships/rms-caronia-1947.html",
           "sourceRoute": "/ships/rms-caronia-1947",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-empress-of-canada.html",
+          "sourceRoute": "/ships/rms-empress-of-canada",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -13900,13 +13918,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 19,
-      "editorialInbound": 17,
+      "inboundTotal": 20,
+      "editorialInbound": 18,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
-        "ship-guide": 15
+        "ship-guide": 16
       },
       "sources": [
         {
@@ -13919,6 +13937,12 @@
           "sourcePath": "first-class-vs-third-class-on-ocean-liners.html",
           "sourceRoute": "/first-class-vs-third-class-on-ocean-liners",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-alaunia.html",
+          "sourceRoute": "/ships/rms-alaunia",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -14344,13 +14368,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 22,
-      "editorialInbound": 21,
+      "inboundTotal": 26,
+      "editorialInbound": 25,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 2,
         "comparative-history": 1,
-        "ship-guide": 18
+        "ship-guide": 22
       },
       "sources": [
         {
@@ -14390,8 +14414,32 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/rms-andania-1922.html",
+          "sourceRoute": "/ships/rms-andania-1922",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-aquitania.html",
           "sourceRoute": "/ships/rms-aquitania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-aurania.html",
+          "sourceRoute": "/ships/rms-aurania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-cameronia.html",
+          "sourceRoute": "/ships/rms-cameronia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-empress-of-asia.html",
+          "sourceRoute": "/ships/rms-empress-of-asia",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -14599,12 +14647,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 22,
-      "editorialInbound": 21,
+      "inboundTotal": 25,
+      "editorialInbound": 24,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 2,
-        "ship-guide": 19
+        "ship-guide": 22
       },
       "sources": [
         {
@@ -14686,6 +14734,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/rms-carmania.html",
+          "sourceRoute": "/ships/rms-carmania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-laurentic.html",
           "sourceRoute": "/ships/rms-laurentic",
           "sourceCategory": "ship-guide",
@@ -14700,6 +14754,18 @@
         {
           "sourcePath": "ships/rms-persia-1855.html",
           "sourceRoute": "/ships/rms-persia-1855",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-queen-mary-2.html",
+          "sourceRoute": "/ships/rms-queen-mary-2",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-viceroy-of-india.html",
+          "sourceRoute": "/ships/rms-viceroy-of-india",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
