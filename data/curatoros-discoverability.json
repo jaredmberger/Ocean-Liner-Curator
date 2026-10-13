@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T03:44:45.141Z",
+  "generatedAt": "2026-10-13T03:47:00.320Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 163,
-      "averageEditorialInbound": 4.53
+      "editorialInbound": 165,
+      "averageEditorialInbound": 4.58
     },
     "comparative-history": {
       "pages": 33,
@@ -13776,14 +13776,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 15,
-      "editorialInbound": 13,
+      "inboundTotal": 17,
+      "editorialInbound": 15,
       "baselineInbound": 2,
       "byCategory": {
         "comparative-history": 1,
         "collection": 2,
         "article-reference": 3,
-        "ship-guide": 7
+        "ship-guide": 9
       },
       "sources": [
         {
@@ -13841,6 +13841,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-duchess-of-richmond.html",
+          "sourceRoute": "/ships/ss-duchess-of-richmond",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-imperator.html",
           "sourceRoute": "/ships/ss-imperator",
           "sourceCategory": "ship-guide",
@@ -13861,6 +13867,12 @@
         {
           "sourcePath": "ships/ss-pasteur.html",
           "sourceRoute": "/ships/ss-pasteur",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-queen-frederica.html",
+          "sourceRoute": "/ships/ss-queen-frederica",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
