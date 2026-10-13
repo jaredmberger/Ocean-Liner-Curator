@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T23:59:19.509Z",
+  "generatedAt": "2026-10-13T00:04:17.494Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 35,
       "searchEligible": 35,
       "sitemapListed": 34,
-      "editorialInbound": 153,
-      "averageEditorialInbound": 4.37
+      "editorialInbound": 155,
+      "averageEditorialInbound": 4.43
     },
     "comparative-history": {
       "pages": 33,
@@ -13833,13 +13833,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 8,
+      "inboundTotal": 11,
+      "editorialInbound": 10,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
-        "ship-guide": 6
+        "ship-guide": 8
       },
       "sources": [
         {
@@ -13867,8 +13867,20 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ms-oranje.html",
+          "sourceRoute": "/ships/ms-oranje",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-aquitania.html",
           "sourceRoute": "/ships/rms-aquitania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-britannic.html",
+          "sourceRoute": "/ships/rms-britannic",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
