@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T08:22:52.975Z",
+  "generatedAt": "2026-10-13T08:32:18.735Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,21 +17,21 @@
     ]
   },
   "summary": {
-    "trackedHtml": 677,
-    "indexablePages": 661,
-    "priorityPages": 92,
+    "trackedHtml": 678,
+    "indexablePages": 662,
+    "priorityPages": 93,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 67
+    "priorityWithThreePlusEditorialInbound": 68
   },
   "categories": {
     "article-reference": {
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1517,
-      "averageEditorialInbound": 7.86
+      "editorialInbound": 1521,
+      "averageEditorialInbound": 7.88
     },
     "bridge-page": {
       "pages": 11,
@@ -41,11 +41,11 @@
       "averageEditorialInbound": 3
     },
     "collection": {
-      "pages": 37,
-      "searchEligible": 37,
-      "sitemapListed": 35,
-      "editorialInbound": 254,
-      "averageEditorialInbound": 6.86
+      "pages": 38,
+      "searchEligible": 38,
+      "sitemapListed": 36,
+      "editorialInbound": 259,
+      "averageEditorialInbound": 6.82
     },
     "comparative-history": {
       "pages": 33,
@@ -58,22 +58,22 @@
       "pages": 11,
       "searchEligible": 11,
       "sitemapListed": 11,
-      "editorialInbound": 73,
-      "averageEditorialInbound": 6.64
+      "editorialInbound": 74,
+      "averageEditorialInbound": 6.73
     },
     "hub": {
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 127,
-      "averageEditorialInbound": 31.75
+      "editorialInbound": 128,
+      "averageEditorialInbound": 32
     },
     "ship-guide": {
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 849,
-      "averageEditorialInbound": 2.28
+      "editorialInbound": 854,
+      "averageEditorialInbound": 2.29
     }
   },
   "signals": {
@@ -4643,12 +4643,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 42,
-      "editorialInbound": 37,
+      "inboundTotal": 43,
+      "editorialInbound": 38,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 18,
-        "collection": 15,
+        "collection": 16,
         "hub": 3,
         "bridge-page": 1
       },
@@ -4668,6 +4668,12 @@
         {
           "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
           "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -6345,13 +6351,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 454,
-      "editorialInbound": 452,
+      "inboundTotal": 455,
+      "editorialInbound": 453,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
         "comparative-history": 7,
-        "collection": 35,
+        "collection": 36,
         "evidence-methodology": 1,
         "ship-guide": 366
       },
@@ -6401,6 +6407,12 @@
         {
           "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
           "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -9719,13 +9731,19 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 6,
+      "inboundTotal": 10,
+      "editorialInbound": 7,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 6
+        "collection": 7
       },
       "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
@@ -12318,16 +12336,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 35,
-      "editorialInbound": 34,
+      "inboundTotal": 36,
+      "editorialInbound": 35,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 3,
+        "collection": 4,
         "comparative-history": 1,
         "article-reference": 6,
         "ship-guide": 24
       },
       "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
           "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
@@ -14410,15 +14434,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 29,
-      "editorialInbound": 28,
+      "inboundTotal": 30,
+      "editorialInbound": 29,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 3,
+        "collection": 4,
         "comparative-history": 1,
         "ship-guide": 24
       },
       "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
           "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
@@ -14647,15 +14677,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 8,
+      "inboundTotal": 10,
+      "editorialInbound": 9,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "article-reference": 1,
         "ship-guide": 6
       },
       "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/south-african-mail-route.html",
           "sourceRoute": "/collections/south-african-mail-route",
@@ -15145,6 +15181,41 @@
           "sourcePath": "collections/what-defines-an-ocean-liner.html",
           "sourceRoute": "/collections/what-defines-an-ocean-liner",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "collections/dutch-east-indies-passenger-network.html",
+      "route": "/collections/dutch-east-indies-passenger-network",
+      "title": "The Dutch East Indies Passenger Network",
+      "category": "collection",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "byCategory": {
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ms-oranje.html",
+          "sourceRoute": "/ships/ms-oranje",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-willem-ruys.html",
+          "sourceRoute": "/ships/ms-willem-ruys",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-johan-van-oldenbarnevelt.html",
+          "sourceRoute": "/ships/ss-johan-van-oldenbarnevelt",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -18716,15 +18787,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 25,
-      "editorialInbound": 22,
+      "inboundTotal": 26,
+      "editorialInbound": 23,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 10,
+        "collection": 11,
         "evidence-methodology": 10,
         "article-reference": 2
       },
       "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
           "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
@@ -19403,12 +19480,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 87,
-      "editorialInbound": 82,
+      "inboundTotal": 88,
+      "editorialInbound": 83,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 39,
-        "collection": 35,
+        "collection": 36,
         "hub": 3,
         "comparative-history": 1,
         "ship-guide": 2,
@@ -19442,6 +19519,12 @@
         {
           "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
           "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -20445,14 +20528,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 3,
       "baselineInbound": 2,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "ship-guide": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
           "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
@@ -20633,13 +20722,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
+        "collection": 1,
         "ship-guide": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/ss-marnix-van-st-aldegonde.html",
           "sourceRoute": "/ships/ss-marnix-van-st-aldegonde",
@@ -20670,11 +20766,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ms-oranje.html",
@@ -20684,13 +20789,19 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 2
       },
       "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
           "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
@@ -20832,11 +20943,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/dutch-east-indies-passenger-network.html",
+          "sourceRoute": "/collections/dutch-east-indies-passenger-network",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/mv-britannic.html",
