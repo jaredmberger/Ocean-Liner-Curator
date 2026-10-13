@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T23:12:59.016Z",
+  "generatedAt": "2026-10-13T00:08:42.880Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,11 +12,11 @@
   },
   "summary": {
     "shipGuides": 370,
-    "editorialOrphans": 53,
-    "oneEditorialInbound": 137,
-    "threePlusEditorialInbound": 72,
-    "totalEditorialInboundLinks": 849,
-    "averageEditorialInbound": 2.29
+    "editorialOrphans": 52,
+    "oneEditorialInbound": 138,
+    "threePlusEditorialInbound": 73,
+    "totalEditorialInboundLinks": 853,
+    "averageEditorialInbound": 2.31
   },
   "orphanedShips": [
     {
@@ -34,17 +34,6 @@
       "name": "MS Marnix Van St Aldegonde",
       "slug": "ss-marnix-van-st-aldegonde",
       "url": "/ships/ss-marnix-van-st-aldegonde",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "MS Oranje (1939)",
-      "slug": "ms-oranje",
-      "url": "/ships/ms-oranje",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -715,6 +704,25 @@
           "sourcePath": "ships/ss-marnix-van-st-aldegonde.html",
           "sourceRoute": "/ships/ss-marnix-van-st-aldegonde",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "MS Oranje (1939)",
+      "slug": "ms-oranje",
+      "url": "/ships/ms-oranje",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -3232,17 +3240,6 @@
       "sources": []
     },
     {
-      "name": "MS Oranje (1939)",
-      "slug": "ms-oranje",
-      "url": "/ships/ms-oranje",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "MS Piłsudski (1935)",
       "slug": "ms-pilsudski",
       "url": "/ships/ms-pilsudski",
@@ -3903,6 +3900,25 @@
           "sourcePath": "ships/ss-marnix-van-st-aldegonde.html",
           "sourceRoute": "/ships/ss-marnix-van-st-aldegonde",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "MS Oranje (1939)",
+      "slug": "ms-oranje",
+      "url": "/ships/ms-oranje",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -6392,31 +6408,6 @@
           "sourcePath": "harland-wolff-builder-proof-of-concept.html",
           "sourceRoute": "/harland-wolff-builder-proof-of-concept",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "MS Baloeran (1930)",
-      "slug": "ms-baloeran",
-      "url": "/ships/ms-baloeran",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "article-reference": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections.html",
-          "sourceRoute": "/collections",
-          "sourceCategory": "article-reference"
-        },
-        {
-          "sourcePath": "ships/ms-dempo.html",
-          "sourceRoute": "/ships/ms-dempo",
-          "sourceCategory": "ship-guide"
         }
       ]
     },
@@ -9109,6 +9100,37 @@
       ]
     },
     {
+      "name": "MS Baloeran (1930)",
+      "slug": "ms-baloeran",
+      "url": "/ships/ms-baloeran",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "article-reference": 1,
+        "collection": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections.html",
+          "sourceRoute": "/collections",
+          "sourceCategory": "article-reference"
+        },
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/ms-dempo.html",
+          "sourceRoute": "/ships/ms-dempo",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
       "name": "MS Gripsholm (1925)",
       "slug": "ms-gripsholm-1925",
       "url": "/ships/ms-gripsholm-1925",
@@ -9853,41 +9875,6 @@
       ]
     },
     {
-      "name": "NYK Hikawa Maru",
-      "slug": "nyk-hikawa-maru",
-      "url": "/ships/nyk-hikawa-maru",
-      "inboundTotal": 5,
-      "editorialInbound": 4,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "ship-guide": 3
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
-          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "ships/chichibu-maru.html",
-          "sourceRoute": "/ships/chichibu-maru",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/heian-maru.html",
-          "sourceRoute": "/ships/heian-maru",
-          "sourceCategory": "ship-guide"
-        },
-        {
-          "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
       "name": "RMS Baltic",
       "slug": "rms-baltic",
       "url": "/ships/rms-baltic",
@@ -10420,6 +10407,46 @@
         {
           "sourcePath": "ships/nyk-hikawa-maru.html",
           "sourceRoute": "/ships/nyk-hikawa-maru",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "NYK Hikawa Maru",
+      "slug": "nyk-hikawa-maru",
+      "url": "/ships/nyk-hikawa-maru",
+      "inboundTotal": 6,
+      "editorialInbound": 5,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "ship-guide": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
+          "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "ships/chichibu-maru.html",
+          "sourceRoute": "/ships/chichibu-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/heian-maru.html",
+          "sourceRoute": "/ships/heian-maru",
+          "sourceCategory": "ship-guide"
+        },
+        {
+          "sourcePath": "ships/ocean-liner-evolution-map.html",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -11637,12 +11664,12 @@
       "name": "RMS/HMHS Britannic",
       "slug": "rms-britannic",
       "url": "/ships/rms-britannic",
-      "inboundTotal": 14,
-      "editorialInbound": 13,
+      "inboundTotal": 15,
+      "editorialInbound": 14,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "collection": 6,
+        "collection": 7,
         "hub-history": 3,
         "article-reference": 2,
         "ship-guide": 2
@@ -11651,6 +11678,11 @@
         {
           "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
           "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
           "sourceCategory": "collection"
         },
         {

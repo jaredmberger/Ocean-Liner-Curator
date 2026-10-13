@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T00:04:17.494Z",
+  "generatedAt": "2026-10-13T00:08:46.668Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,11 +17,11 @@
     ]
   },
   "summary": {
-    "trackedHtml": 675,
-    "indexablePages": 659,
-    "priorityPages": 90,
-    "priorityMissingFromSitemap": 5,
-    "priorityEditorialOrphans": 2,
+    "trackedHtml": 676,
+    "indexablePages": 660,
+    "priorityPages": 91,
+    "priorityMissingFromSitemap": 6,
+    "priorityEditorialOrphans": 3,
     "priorityWithOneEditorialInbound": 16,
     "priorityWithThreePlusEditorialInbound": 63
   },
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1461,
-      "averageEditorialInbound": 7.57
+      "editorialInbound": 1464,
+      "averageEditorialInbound": 7.59
     },
     "bridge-page": {
       "pages": 11,
@@ -41,11 +41,11 @@
       "averageEditorialInbound": 3
     },
     "collection": {
-      "pages": 35,
-      "searchEligible": 35,
+      "pages": 36,
+      "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 155,
-      "averageEditorialInbound": 4.43
+      "editorialInbound": 158,
+      "averageEditorialInbound": 4.39
     },
     "comparative-history": {
       "pages": 33,
@@ -58,26 +58,40 @@
       "pages": 11,
       "searchEligible": 11,
       "sitemapListed": 11,
-      "editorialInbound": 71,
-      "averageEditorialInbound": 6.45
+      "editorialInbound": 72,
+      "averageEditorialInbound": 6.55
     },
     "hub": {
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 125,
-      "averageEditorialInbound": 31.25
+      "editorialInbound": 126,
+      "averageEditorialInbound": 31.5
     },
     "ship-guide": {
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 833,
-      "averageEditorialInbound": 2.23
+      "editorialInbound": 837,
+      "averageEditorialInbound": 2.24
     }
   },
   "signals": {
     "missingFromSitemap": [
+      {
+        "path": "collections/hospital-ships-wartime-medical-service.html",
+        "route": "/collections/hospital-ships-wartime-medical-service",
+        "title": "Hospital Ships & Wartime Medical Service",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": false,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 1,
+        "editorialInbound": 0,
+        "baselineInbound": 1,
+        "byCategory": {},
+        "sources": []
+      },
       {
         "path": "collections/japanese-trans-pacific-liner-history.html",
         "route": "/collections/japanese-trans-pacific-liner-history",
@@ -233,6 +247,20 @@
       }
     ],
     "editorialOrphans": [
+      {
+        "path": "collections/hospital-ships-wartime-medical-service.html",
+        "route": "/collections/hospital-ships-wartime-medical-service",
+        "title": "Hospital Ships & Wartime Medical Service",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": false,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 1,
+        "editorialInbound": 0,
+        "baselineInbound": 1,
+        "byCategory": {},
+        "sources": []
+      },
       {
         "path": "collections/japanese-trans-pacific-liner-history.html",
         "route": "/collections/japanese-trans-pacific-liner-history",
@@ -4530,12 +4558,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 40,
-      "editorialInbound": 35,
+      "inboundTotal": 41,
+      "editorialInbound": 36,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 18,
-        "collection": 13,
+        "collection": 14,
         "hub": 3,
         "bridge-page": 1
       },
@@ -4567,6 +4595,12 @@
         {
           "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
           "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -6220,13 +6254,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 452,
-      "editorialInbound": 450,
+      "inboundTotal": 453,
+      "editorialInbound": 451,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
         "comparative-history": 7,
-        "collection": 33,
+        "collection": 34,
         "evidence-methodology": 1,
         "ship-guide": 366
       },
@@ -6318,6 +6352,12 @@
         {
           "sourcePath": "collections/german-prestige-liners.html",
           "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -10598,14 +10638,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 8,
+      "inboundTotal": 10,
+      "editorialInbound": 9,
       "baselineInbound": 1,
       "byCategory": {
+        "collection": 1,
         "article-reference": 7,
         "ship-guide": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "people-behind-the-liners.html",
           "sourceRoute": "/people-behind-the-liners",
@@ -13484,6 +13531,20 @@
       ]
     },
     {
+      "path": "collections/hospital-ships-wartime-medical-service.html",
+      "route": "/collections/hospital-ships-wartime-medical-service",
+      "title": "Hospital Ships & Wartime Medical Service",
+      "category": "collection",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
+    },
+    {
       "path": "collections/immigrant-era-atlantic-liners.html",
       "route": "/collections/immigrant-era-atlantic-liners",
       "title": "Immigrant-Era Atlantic Liners",
@@ -13833,15 +13894,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 11,
-      "editorialInbound": 10,
+      "inboundTotal": 14,
+      "editorialInbound": 13,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "comparative-history": 1,
-        "ship-guide": 8
+        "ship-guide": 10
       },
       "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
           "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
@@ -13867,8 +13934,20 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ms-oranje.html",
           "sourceRoute": "/ships/ms-oranje",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/nyk-hikawa-maru.html",
+          "sourceRoute": "/ships/nyk-hikawa-maru",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -17706,15 +17785,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 23,
-      "editorialInbound": 20,
+      "inboundTotal": 24,
+      "editorialInbound": 21,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 8,
+        "collection": 9,
         "evidence-methodology": 10,
         "article-reference": 2
       },
       "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/italian-ocean-liners.html",
           "sourceRoute": "/collections/italian-ocean-liners",
@@ -18381,12 +18466,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 85,
-      "editorialInbound": 80,
+      "inboundTotal": 86,
+      "editorialInbound": 81,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 39,
-        "collection": 33,
+        "collection": 34,
         "hub": 3,
         "comparative-history": 1,
         "ship-guide": 2,
@@ -18462,6 +18547,12 @@
         {
           "sourcePath": "collections/german-prestige-liners.html",
           "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -19405,13 +19496,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 1,
+      "inboundTotal": 4,
+      "editorialInbound": 2,
       "baselineInbound": 2,
       "byCategory": {
+        "collection": 1,
         "ship-guide": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/ms-dempo.html",
           "sourceRoute": "/ships/ms-dempo",
@@ -19637,11 +19735,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ms-oslofjord.html",
@@ -19987,15 +20094,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 4,
+      "inboundTotal": 6,
+      "editorialInbound": 5,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "ship-guide": 2,
         "article-reference": 1
       },
       "sources": [
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
           "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
@@ -23589,11 +23702,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 14,
-      "editorialInbound": 13,
+      "inboundTotal": 15,
+      "editorialInbound": 14,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 6,
+        "collection": 7,
         "article-reference": 2,
         "comparative-history": 1,
         "ship-guide": 1,
@@ -23604,6 +23717,12 @@
         {
           "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
           "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/hospital-ships-wartime-medical-service.html",
+          "sourceRoute": "/collections/hospital-ships-wartime-medical-service",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
