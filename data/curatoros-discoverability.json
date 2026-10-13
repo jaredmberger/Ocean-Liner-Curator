@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T03:47:00.320Z",
+  "generatedAt": "2026-10-13T03:50:47.369Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,7 +30,7 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1464,
+      "editorialInbound": 1465,
       "averageEditorialInbound": 7.59
     },
     "bridge-page": {
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 165,
-      "averageEditorialInbound": 4.58
+      "editorialInbound": 166,
+      "averageEditorialInbound": 4.61
     },
     "comparative-history": {
       "pages": 33,
@@ -10724,12 +10724,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 9,
+      "inboundTotal": 11,
+      "editorialInbound": 10,
       "baselineInbound": 1,
       "byCategory": {
         "article-reference": 7,
-        "ship-guide": 2
+        "ship-guide": 3
       },
       "sources": [
         {
@@ -10747,6 +10747,12 @@
         {
           "sourcePath": "ships/rms-titanic.html",
           "sourceRoute": "/ships/rms-titanic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-republic-1903.html",
+          "sourceRoute": "/ships/ss-republic-1903",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -14256,12 +14262,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 5,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 2,
-        "ship-guide": 3
+        "ship-guide": 4
       },
       "sources": [
         {
@@ -14274,6 +14280,12 @@
           "sourcePath": "olympic-titanic-britannic-design-evolution.html",
           "sourceRoute": "/olympic-titanic-britannic-design-evolution",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-empress-of-ireland.html",
+          "sourceRoute": "/ships/rms-empress-of-ireland",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
