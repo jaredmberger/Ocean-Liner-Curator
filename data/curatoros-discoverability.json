@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:14:56.099Z",
+  "generatedAt": "2026-10-13T04:29:42.850Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1488,
-      "averageEditorialInbound": 7.71
+      "editorialInbound": 1497,
+      "averageEditorialInbound": 7.76
     },
     "bridge-page": {
       "pages": 11,
@@ -12203,14 +12203,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 25,
-      "editorialInbound": 24,
+      "inboundTotal": 34,
+      "editorialInbound": 33,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 2,
         "comparative-history": 1,
         "article-reference": 6,
-        "ship-guide": 15
+        "ship-guide": 24
       },
       "sources": [
         {
@@ -12274,6 +12274,12 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/qsmv-dominion-monarch.html",
+          "sourceRoute": "/ships/qsmv-dominion-monarch",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/rms-andania.html",
           "sourceRoute": "/ships/rms-andania",
           "sourceCategory": "ship-guide",
@@ -12282,6 +12288,30 @@
         {
           "sourcePath": "ships/rms-antonia.html",
           "sourceRoute": "/ships/rms-antonia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-orontes.html",
+          "sourceRoute": "/ships/rms-orontes",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-rangitane.html",
+          "sourceRoute": "/ships/rms-rangitane",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-rangitata.html",
+          "sourceRoute": "/ships/rms-rangitata",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-rangitiki.html",
+          "sourceRoute": "/ships/rms-rangitiki",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -12322,8 +12352,26 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-coptic.html",
+          "sourceRoute": "/ships/ss-coptic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-corinthic.html",
+          "sourceRoute": "/ships/ss-corinthic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-dakota.html",
           "sourceRoute": "/ships/ss-dakota",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-gothic-white-star-line.html",
+          "sourceRoute": "/ships/ss-gothic-white-star-line",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -12348,6 +12396,12 @@
         {
           "sourcePath": "ships/ss-new-england.html",
           "sourceRoute": "/ships/ss-new-england",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-winifredian.html",
+          "sourceRoute": "/ships/ss-winifredian",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
