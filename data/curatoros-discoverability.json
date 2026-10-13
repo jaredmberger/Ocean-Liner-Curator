@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T00:39:44.504Z",
+  "generatedAt": "2026-10-13T03:44:45.141Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 162,
-      "averageEditorialInbound": 4.5
+      "editorialInbound": 163,
+      "averageEditorialInbound": 4.53
     },
     "comparative-history": {
       "pages": 33,
@@ -13776,14 +13776,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 14,
-      "editorialInbound": 12,
+      "inboundTotal": 15,
+      "editorialInbound": 13,
       "baselineInbound": 2,
       "byCategory": {
         "comparative-history": 1,
         "collection": 2,
         "article-reference": 3,
-        "ship-guide": 6
+        "ship-guide": 7
       },
       "sources": [
         {
@@ -13855,6 +13855,12 @@
         {
           "sourcePath": "ships/ss-liberte.html",
           "sourceRoute": "/ships/ss-liberte",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-pasteur.html",
+          "sourceRoute": "/ships/ss-pasteur",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
