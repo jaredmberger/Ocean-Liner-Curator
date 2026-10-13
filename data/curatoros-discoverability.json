@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:44:35.601Z",
+  "generatedAt": "2026-10-13T04:47:47.368Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1497,
-      "averageEditorialInbound": 7.76
+      "editorialInbound": 1507,
+      "averageEditorialInbound": 7.81
     },
     "bridge-page": {
       "pages": 11,
@@ -11966,13 +11966,74 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 13,
+      "editorialInbound": 12,
       "baselineInbound": 1,
       "byCategory": {
+        "ship-guide": 10,
         "article-reference": 2
       },
       "sources": [
+        {
+          "sourcePath": "ships/rms-carinthia.html",
+          "sourceRoute": "/ships/rms-carinthia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-caronia-1947.html",
+          "sourceRoute": "/ships/rms-caronia-1947",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-ivernia.html",
+          "sourceRoute": "/ships/rms-ivernia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-sylvania.html",
+          "sourceRoute": "/ships/rms-sylvania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-arcadia-1954.html",
+          "sourceRoute": "/ships/ss-arcadia-1954",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-galileo-galilei.html",
+          "sourceRoute": "/ships/ss-galileo-galilei",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-queen-frederica.html",
+          "sourceRoute": "/ships/ss-queen-frederica",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-rotterdam-1959.html",
+          "sourceRoute": "/ships/ss-rotterdam-1959",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-shalom.html",
+          "sourceRoute": "/ships/ss-shalom",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/tss-olympia.html",
+          "sourceRoute": "/ships/tss-olympia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "what-made-rms-queen-mary-famous.html",
           "sourceRoute": "/what-made-rms-queen-mary-famous",
