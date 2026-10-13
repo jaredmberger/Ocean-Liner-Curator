@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:37:24.096Z",
+  "generatedAt": "2026-10-13T04:41:12.114Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -23,7 +23,7 @@
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 64
+    "priorityWithThreePlusEditorialInbound": 65
   },
   "categories": {
     "article-reference": {
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 208,
-      "averageEditorialInbound": 5.78
+      "editorialInbound": 216,
+      "averageEditorialInbound": 6
     },
     "comparative-history": {
       "pages": 33,
@@ -13478,11 +13478,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 2,
+      "inboundTotal": 12,
+      "editorialInbound": 10,
       "baselineInbound": 2,
       "byCategory": {
-        "collection": 2
+        "collection": 2,
+        "ship-guide": 8
       },
       "sources": [
         {
@@ -13495,6 +13496,54 @@
           "sourcePath": "collections/from-olympic-to-titanic-design-revisions-between-sisters.html",
           "sourceRoute": "/collections/from-olympic-to-titanic-design-revisions-between-sisters",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-batory.html",
+          "sourceRoute": "/ships/ms-batory",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-kungsholm-1928.html",
+          "sourceRoute": "/ships/ms-kungsholm-1928",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-ile-de-france.html",
+          "sourceRoute": "/ships/ss-ile-de-france",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-latlantique.html",
+          "sourceRoute": "/ships/ss-latlantique",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-liberte.html",
+          "sourceRoute": "/ships/ss-liberte",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-nieuw-amsterdam.html",
+          "sourceRoute": "/ships/ss-nieuw-amsterdam",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-normandie.html",
+          "sourceRoute": "/ships/ss-normandie",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
