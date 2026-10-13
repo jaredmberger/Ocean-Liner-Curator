@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T00:25:29.125Z",
+  "generatedAt": "2026-10-13T00:39:44.504Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 160,
-      "averageEditorialInbound": 4.44
+      "editorialInbound": 162,
+      "averageEditorialInbound": 4.5
     },
     "comparative-history": {
       "pages": 33,
@@ -13776,14 +13776,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 12,
-      "editorialInbound": 10,
+      "inboundTotal": 14,
+      "editorialInbound": 12,
       "baselineInbound": 2,
       "byCategory": {
         "comparative-history": 1,
         "collection": 2,
         "article-reference": 3,
-        "ship-guide": 4
+        "ship-guide": 6
       },
       "sources": [
         {
@@ -13820,6 +13820,18 @@
           "sourcePath": "how-to-use-the-ship-archive.html",
           "sourceRoute": "/how-to-use-the-ship-archive",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-stockholm.html",
+          "sourceRoute": "/ships/ms-stockholm",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-berengaria.html",
+          "sourceRoute": "/ships/rms-berengaria",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
