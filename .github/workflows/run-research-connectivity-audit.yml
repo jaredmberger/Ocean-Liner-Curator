@@ -19,12 +19,16 @@ jobs:
         run: |
           node tools/search/research-connectivity-audit.mjs --json > research-connectivity-baseline.json
           node tools/search/research-connectivity-audit.mjs > research-connectivity-summary.txt
+      - name: Generate archive-wide completion worklist
+        run: node tools/search/research-connectivity-completion.mjs --out research-connectivity-completion
       - name: Post summary
         run: |
           echo '## Research connectivity (static candidate inventory)' >> "$GITHUB_STEP_SUMMARY"
           echo 'This excludes script-generated links and unrecognized templates; zeros are review candidates, not confirmed defects.' >> "$GITHUB_STEP_SUMMARY"
           echo '```text' >> "$GITHUB_STEP_SUMMARY"
           cat research-connectivity-summary.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '### Completion worklist' >> "$GITHUB_STEP_SUMMARY"
+          grep -E '^(reviewed|unreviewed|needsLink|needsResearch|unfinishedGuides|classificationExceptions|validationErrors|complete):' research-connectivity-completion/completion-report.md >> "$GITHUB_STEP_SUMMARY" || true
           echo '```' >> "$GITHUB_STEP_SUMMARY"
       - name: Upload reports
         uses: actions/upload-artifact@v4
@@ -33,5 +37,8 @@ jobs:
           path: |
             research-connectivity-baseline.json
             research-connectivity-summary.txt
+            research-connectivity-completion/worklist.csv
+            research-connectivity-completion/worklist.json
+            research-connectivity-completion/completion-report.md
           if-no-files-found: error
           retention-days: 60
