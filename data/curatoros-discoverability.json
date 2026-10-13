@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T00:17:12.098Z",
+  "generatedAt": "2026-10-13T00:22:16.503Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -23,7 +23,7 @@
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 63
+    "priorityWithThreePlusEditorialInbound": 64
   },
   "categories": {
     "article-reference": {
@@ -86,16 +86,28 @@
         "searchEligible": true,
         "sitemapListed": false,
         "canonicalDiffersFromPhysical": false,
-        "inboundTotal": 3,
-        "editorialInbound": 2,
+        "inboundTotal": 5,
+        "editorialInbound": 4,
         "baselineInbound": 1,
         "byCategory": {
-          "ship-guide": 2
+          "ship-guide": 4
         },
         "sources": [
           {
+            "sourcePath": "ships/ms-baloeran.html",
+            "sourceRoute": "/ships/ms-baloeran",
+            "sourceCategory": "ship-guide",
+            "sourceBaseline": false
+          },
+          {
             "sourcePath": "ships/ms-oranje.html",
             "sourceRoute": "/ships/ms-oranje",
+            "sourceCategory": "ship-guide",
+            "sourceBaseline": false
+          },
+          {
+            "sourcePath": "ships/nyk-hikawa-maru.html",
+            "sourceRoute": "/ships/nyk-hikawa-maru",
             "sourceCategory": "ship-guide",
             "sourceBaseline": false
           },
@@ -13539,16 +13551,28 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
-        "ship-guide": 2
+        "ship-guide": 4
       },
       "sources": [
         {
+          "sourcePath": "ships/ms-baloeran.html",
+          "sourceRoute": "/ships/ms-baloeran",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ms-oranje.html",
           "sourceRoute": "/ships/ms-oranje",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/nyk-hikawa-maru.html",
+          "sourceRoute": "/ships/nyk-hikawa-maru",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -13910,13 +13934,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 12,
-      "editorialInbound": 11,
+      "inboundTotal": 10,
+      "editorialInbound": 9,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 2,
         "comparative-history": 1,
-        "ship-guide": 8
+        "ship-guide": 6
       },
       "sources": [
         {
@@ -13946,18 +13970,6 @@
         {
           "sourcePath": "ships/chichibu-maru.html",
           "sourceRoute": "/ships/chichibu-maru",
-          "sourceCategory": "ship-guide",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "ships/ms-baloeran.html",
-          "sourceRoute": "/ships/ms-baloeran",
-          "sourceCategory": "ship-guide",
-          "sourceBaseline": false
-        },
-        {
-          "sourcePath": "ships/nyk-hikawa-maru.html",
-          "sourceRoute": "/ships/nyk-hikawa-maru",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
