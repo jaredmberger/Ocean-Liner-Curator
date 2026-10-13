@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:08:53.222Z",
+  "generatedAt": "2026-10-13T04:14:56.099Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 175,
-      "averageEditorialInbound": 4.86
+      "editorialInbound": 185,
+      "averageEditorialInbound": 5.14
     },
     "comparative-history": {
       "pages": 33,
@@ -13736,13 +13736,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 9,
-      "editorialInbound": 7,
+      "inboundTotal": 19,
+      "editorialInbound": 17,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 1,
         "comparative-history": 1,
-        "ship-guide": 5
+        "ship-guide": 15
       },
       "sources": [
         {
@@ -13758,14 +13758,62 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-ascania-1911.html",
+          "sourceRoute": "/ships/ss-ascania-1911",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-batavia.html",
+          "sourceRoute": "/ships/ss-batavia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-belgenland.html",
           "sourceRoute": "/ships/ss-belgenland",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-belgravia.html",
+          "sourceRoute": "/ships/ss-belgravia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-brasilia.html",
+          "sourceRoute": "/ships/ss-brasilia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-bulgaria.html",
+          "sourceRoute": "/ships/ss-bulgaria",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-canada-1896.html",
           "sourceRoute": "/ships/ss-canada-1896",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-cincinnati.html",
+          "sourceRoute": "/ships/ss-cincinnati",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-grosser-kurfurst.html",
+          "sourceRoute": "/ships/ss-grosser-kurfurst",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-lahn.html",
+          "sourceRoute": "/ships/ss-lahn",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -13784,6 +13832,18 @@
         {
           "sourcePath": "ships/ss-patricia.html",
           "sourceRoute": "/ships/ss-patricia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-pretoria.html",
+          "sourceRoute": "/ships/ss-pretoria",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-rochambeau.html",
+          "sourceRoute": "/ships/ss-rochambeau",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
