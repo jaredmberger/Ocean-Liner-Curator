@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T03:50:47.369Z",
+  "generatedAt": "2026-10-13T03:56:13.062Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1465,
-      "averageEditorialInbound": 7.59
+      "editorialInbound": 1468,
+      "averageEditorialInbound": 7.61
     },
     "bridge-page": {
       "pages": 11,
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 166,
-      "averageEditorialInbound": 4.61
+      "editorialInbound": 175,
+      "averageEditorialInbound": 4.86
     },
     "comparative-history": {
       "pages": 33,
@@ -10724,18 +10724,24 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 11,
-      "editorialInbound": 10,
+      "inboundTotal": 14,
+      "editorialInbound": 13,
       "baselineInbound": 1,
       "byCategory": {
         "article-reference": 7,
-        "ship-guide": 3
+        "ship-guide": 6
       },
       "sources": [
         {
           "sourcePath": "people-behind-the-liners.html",
           "sourceRoute": "/people-behind-the-liners",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-baltic.html",
+          "sourceRoute": "/ships/rms-baltic",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -10751,8 +10757,20 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-duchess-of-atholl.html",
+          "sourceRoute": "/ships/ss-duchess-of-atholl",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-republic-1903.html",
           "sourceRoute": "/ships/ss-republic-1903",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-rijndam-1901.html",
+          "sourceRoute": "/ships/ss-rijndam-1901",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -14262,12 +14280,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 7,
-      "editorialInbound": 6,
+      "inboundTotal": 16,
+      "editorialInbound": 15,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 2,
-        "ship-guide": 4
+        "ship-guide": 13
       },
       "sources": [
         {
@@ -14280,6 +14298,18 @@
           "sourcePath": "olympic-titanic-britannic-design-evolution.html",
           "sourceRoute": "/olympic-titanic-britannic-design-evolution",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-georges-philippar.html",
+          "sourceRoute": "/ships/ms-georges-philippar",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-stockholm.html",
+          "sourceRoute": "/ships/ms-stockholm",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
@@ -14301,8 +14331,50 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-andrea-doria.html",
+          "sourceRoute": "/ships/ss-andrea-doria",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-arctic.html",
+          "sourceRoute": "/ships/ss-arctic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-eastland.html",
           "sourceRoute": "/ships/ss-eastland",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-ile-de-france.html",
+          "sourceRoute": "/ships/ss-ile-de-france",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-morro-castle.html",
+          "sourceRoute": "/ships/ss-morro-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-norge.html",
+          "sourceRoute": "/ships/ss-norge",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-otranto.html",
+          "sourceRoute": "/ships/ss-otranto",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-vestris.html",
+          "sourceRoute": "/ships/ss-vestris",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
