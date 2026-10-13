@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:47:47.368Z",
+  "generatedAt": "2026-10-13T04:53:59.993Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -23,7 +23,7 @@
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 65
+    "priorityWithThreePlusEditorialInbound": 66
   },
   "categories": {
     "article-reference": {
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 227,
-      "averageEditorialInbound": 6.31
+      "editorialInbound": 232,
+      "averageEditorialInbound": 6.44
     },
     "comparative-history": {
       "pages": 33,
@@ -14539,12 +14539,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 8,
+      "editorialInbound": 7,
       "baselineInbound": 1,
       "byCategory": {
         "article-reference": 1,
-        "ship-guide": 1
+        "ship-guide": 6
       },
       "sources": [
         {
@@ -14556,6 +14556,36 @@
         {
           "sourcePath": "ships/rms-queen-mary.html",
           "sourceRoute": "/ships/rms-queen-mary",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-great-eastern.html",
+          "sourceRoute": "/ships/ss-great-eastern",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-montrose.html",
+          "sourceRoute": "/ships/ss-montrose",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-nomadic.html",
+          "sourceRoute": "/ships/ss-nomadic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-rotterdam-1908.html",
+          "sourceRoute": "/ships/ss-rotterdam-1908",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-traffic.html",
+          "sourceRoute": "/ships/ss-traffic",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
