@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:33:26.408Z",
+  "generatedAt": "2026-10-13T04:37:24.096Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 197,
-      "averageEditorialInbound": 5.47
+      "editorialInbound": 208,
+      "averageEditorialInbound": 5.78
     },
     "comparative-history": {
       "pages": 33,
@@ -15021,13 +15021,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 8,
+      "inboundTotal": 21,
+      "editorialInbound": 19,
       "baselineInbound": 2,
       "byCategory": {
         "collection": 2,
         "article-reference": 5,
-        "comparative-history": 1
+        "comparative-history": 1,
+        "ship-guide": 11
       },
       "sources": [
         {
@@ -15076,6 +15077,72 @@
           "sourcePath": "migrant-traffic-vs-tourist-traffic.html",
           "sourceRoute": "/migrant-traffic-vs-tourist-traffic",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/mv-britannic.html",
+          "sourceRoute": "/ships/mv-britannic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-ascania.html",
+          "sourceRoute": "/ships/rms-ascania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-carinthia.html",
+          "sourceRoute": "/ships/rms-carinthia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-ivernia.html",
+          "sourceRoute": "/ships/rms-ivernia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-saxonia.html",
+          "sourceRoute": "/ships/rms-saxonia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-sylvania.html",
+          "sourceRoute": "/ships/rms-sylvania",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-champollion.html",
+          "sourceRoute": "/ships/ss-champollion",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-chicago-1908.html",
+          "sourceRoute": "/ships/ss-chicago-1908",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-iberia.html",
+          "sourceRoute": "/ships/ss-iberia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-letitia.html",
+          "sourceRoute": "/ships/ss-letitia",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-pennland.html",
+          "sourceRoute": "/ships/ss-pennland",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
