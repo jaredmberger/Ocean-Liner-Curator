@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T07:09:18.841Z",
+  "generatedAt": "2026-10-13T08:22:52.975Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,21 +17,21 @@
     ]
   },
   "summary": {
-    "trackedHtml": 676,
-    "indexablePages": 660,
-    "priorityPages": 91,
+    "trackedHtml": 677,
+    "indexablePages": 661,
+    "priorityPages": 92,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 2,
     "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 66
+    "priorityWithThreePlusEditorialInbound": 67
   },
   "categories": {
     "article-reference": {
       "pages": 193,
       "searchEligible": 192,
       "sitemapListed": 89,
-      "editorialInbound": 1512,
-      "averageEditorialInbound": 7.83
+      "editorialInbound": 1517,
+      "averageEditorialInbound": 7.86
     },
     "bridge-page": {
       "pages": 11,
@@ -41,11 +41,11 @@
       "averageEditorialInbound": 3
     },
     "collection": {
-      "pages": 36,
-      "searchEligible": 36,
-      "sitemapListed": 34,
-      "editorialInbound": 242,
-      "averageEditorialInbound": 6.72
+      "pages": 37,
+      "searchEligible": 37,
+      "sitemapListed": 35,
+      "editorialInbound": 254,
+      "averageEditorialInbound": 6.86
     },
     "comparative-history": {
       "pages": 33,
@@ -58,22 +58,22 @@
       "pages": 11,
       "searchEligible": 11,
       "sitemapListed": 11,
-      "editorialInbound": 72,
-      "averageEditorialInbound": 6.55
+      "editorialInbound": 73,
+      "averageEditorialInbound": 6.64
     },
     "hub": {
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 126,
-      "averageEditorialInbound": 31.5
+      "editorialInbound": 127,
+      "averageEditorialInbound": 31.75
     },
     "ship-guide": {
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 837,
-      "averageEditorialInbound": 2.24
+      "editorialInbound": 849,
+      "averageEditorialInbound": 2.28
     }
   },
   "signals": {
@@ -2666,11 +2666,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 25,
-      "editorialInbound": 24,
+      "inboundTotal": 26,
+      "editorialInbound": 25,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "article-reference": 6,
         "ship-guide": 16,
         "comparative-history": 1
@@ -2679,6 +2679,12 @@
         {
           "sourcePath": "collections/ports-piers-terminals-liner-era.html",
           "sourceRoute": "/collections/ports-piers-terminals-liner-era",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -4637,12 +4643,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 41,
-      "editorialInbound": 36,
+      "inboundTotal": 42,
+      "editorialInbound": 37,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 18,
-        "collection": 14,
+        "collection": 15,
         "hub": 3,
         "bridge-page": 1
       },
@@ -4722,6 +4728,12 @@
         {
           "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
           "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -6333,13 +6345,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 453,
-      "editorialInbound": 451,
+      "inboundTotal": 454,
+      "editorialInbound": 452,
       "baselineInbound": 2,
       "byCategory": {
         "article-reference": 43,
         "comparative-history": 7,
-        "collection": 34,
+        "collection": 35,
         "evidence-methodology": 1,
         "ship-guide": 366
       },
@@ -6509,6 +6521,12 @@
         {
           "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
           "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -9701,11 +9719,11 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 8,
-      "editorialInbound": 5,
+      "inboundTotal": 9,
+      "editorialInbound": 6,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 5
+        "collection": 6
       },
       "sources": [
         {
@@ -9729,6 +9747,12 @@
         {
           "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
           "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -12294,11 +12318,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 34,
-      "editorialInbound": 33,
+      "inboundTotal": 35,
+      "editorialInbound": 34,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 2,
+        "collection": 3,
         "comparative-history": 1,
         "article-reference": 6,
         "ship-guide": 24
@@ -12313,6 +12337,12 @@
         {
           "sourcePath": "collections/ports-piers-terminals-liner-era.html",
           "sourceRoute": "/collections/ports-piers-terminals-liner-era",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -14380,11 +14410,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 28,
-      "editorialInbound": 27,
+      "inboundTotal": 29,
+      "editorialInbound": 28,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 2,
+        "collection": 3,
         "comparative-history": 1,
         "ship-guide": 24
       },
@@ -14398,6 +14428,12 @@
         {
           "sourcePath": "collections/japanese-trans-pacific-liner-history.html",
           "sourceRoute": "/collections/japanese-trans-pacific-liner-history",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -14611,14 +14647,21 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 8,
-      "editorialInbound": 7,
+      "inboundTotal": 9,
+      "editorialInbound": 8,
       "baselineInbound": 1,
       "byCategory": {
+        "collection": 1,
         "article-reference": 1,
         "ship-guide": 6
       },
       "sources": [
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "how-the-liner-system-worked.html",
           "sourceRoute": "/how-the-liner-system-worked",
@@ -15191,6 +15234,83 @@
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "collections/south-african-mail-route.html",
+      "route": "/collections/south-african-mail-route",
+      "title": "The South African Mail Route",
+      "category": "collection",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 11,
+      "editorialInbound": 10,
+      "baselineInbound": 1,
+      "byCategory": {
+        "ship-guide": 10
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/athlone-castle.html",
+          "sourceRoute": "/ships/athlone-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-arundel-castle-1921.html",
+          "sourceRoute": "/ships/rms-arundel-castle-1921",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-kenilworth-castle.html",
+          "sourceRoute": "/ships/rms-kenilworth-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-pendennis-castle.html",
+          "sourceRoute": "/ships/rms-pendennis-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-walmer-castle.html",
+          "sourceRoute": "/ships/rms-walmer-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-windsor-castle-1921.html",
+          "sourceRoute": "/ships/rms-windsor-castle-1921",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-windsor-castle.html",
+          "sourceRoute": "/ships/rms-windsor-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-armadale-castle.html",
+          "sourceRoute": "/ships/ss-armadale-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-warwick-castle.html",
+          "sourceRoute": "/ships/ss-warwick-castle",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/stirling-castle.html",
+          "sourceRoute": "/ships/stirling-castle",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
@@ -18596,11 +18716,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 24,
-      "editorialInbound": 21,
+      "inboundTotal": 25,
+      "editorialInbound": 22,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 9,
+        "collection": 10,
         "evidence-methodology": 10,
         "article-reference": 2
       },
@@ -18650,6 +18770,12 @@
         {
           "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
           "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -19277,12 +19403,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 86,
-      "editorialInbound": 81,
+      "inboundTotal": 87,
+      "editorialInbound": 82,
       "baselineInbound": 5,
       "byCategory": {
         "article-reference": 39,
-        "collection": 34,
+        "collection": 35,
         "hub": 3,
         "comparative-history": 1,
         "ship-guide": 2,
@@ -19442,6 +19568,12 @@
         {
           "sourcePath": "collections/safety-regulation-changing-ocean-liner.html",
           "sourceRoute": "/collections/safety-regulation-changing-ocean-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -20104,11 +20236,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "article-reference": 1,
         "ship-guide": 1
       },
@@ -20116,6 +20248,12 @@
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -21336,17 +21474,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -22117,11 +22261,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/rms-empress-of-asia.html",
@@ -22472,16 +22625,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 2
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         }
@@ -23460,11 +23619,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/rms-persia-1855.html",
@@ -24437,17 +24605,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -24467,16 +24641,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 2
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         }
@@ -24490,16 +24670,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 2
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         }
@@ -25021,16 +25207,22 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "collection": 2
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         }
@@ -31222,17 +31414,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -31298,17 +31496,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -31374,17 +31578,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 3,
-      "editorialInbound": 2,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
       "baselineInbound": 1,
       "byCategory": {
-        "collection": 1,
+        "collection": 2,
         "article-reference": 1
       },
       "sources": [
         {
           "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
           "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },

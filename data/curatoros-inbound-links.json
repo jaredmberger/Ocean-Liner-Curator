@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T00:08:42.880Z",
+  "generatedAt": "2026-10-13T08:22:48.141Z",
   "methodology": {
     "purpose": "Measure meaningful inbound HTML links to ship guides beyond the master archive, sitemap, and generic discovery surfaces.",
     "exclusions": [
@@ -12,11 +12,11 @@
   },
   "summary": {
     "shipGuides": 370,
-    "editorialOrphans": 52,
-    "oneEditorialInbound": 138,
-    "threePlusEditorialInbound": 73,
-    "totalEditorialInboundLinks": 853,
-    "averageEditorialInbound": 2.31
+    "editorialOrphans": 50,
+    "oneEditorialInbound": 136,
+    "threePlusEditorialInbound": 78,
+    "totalEditorialInboundLinks": 865,
+    "averageEditorialInbound": 2.34
   },
   "orphanedShips": [
     {
@@ -122,28 +122,6 @@
       "name": "QSMV Dominion Monarch",
       "slug": "qsmv-dominion-monarch",
       "url": "/ships/qsmv-dominion-monarch",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Edinburgh Castle (1948)",
-      "slug": "rms-edinburgh-castle",
-      "url": "/ships/rms-edinburgh-castle",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Pendennis Castle (1958)",
-      "slug": "rms-pendennis-castle",
-      "url": "/ships/rms-pendennis-castle",
       "inboundTotal": 1,
       "editorialInbound": 0,
       "baselineInbound": 1,
@@ -936,6 +914,25 @@
       ]
     },
     {
+      "name": "RMS Edinburgh Castle (1948)",
+      "slug": "rms-edinburgh-castle",
+      "url": "/ships/rms-edinburgh-castle",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "RMS Empress of Australia",
       "slug": "rms-empress-of-australia",
       "url": "/ships/rms-empress-of-australia",
@@ -1065,25 +1062,6 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "RMS Kenilworth Castle",
-      "slug": "rms-kenilworth-castle",
-      "url": "/ships/rms-kenilworth-castle",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -1240,6 +1218,25 @@
       ]
     },
     {
+      "name": "RMS Pendennis Castle (1958)",
+      "slug": "rms-pendennis-castle",
+      "url": "/ships/rms-pendennis-castle",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "RMS Queen Mary 2",
       "slug": "rms-queen-mary-2",
       "url": "/ships/rms-queen-mary-2",
@@ -1330,44 +1327,6 @@
         {
           "sourcePath": "collections/immigrant-era-atlantic-liners.html",
           "sourceRoute": "/collections/immigrant-era-atlantic-liners",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Windsor Castle",
-      "slug": "rms-windsor-castle",
-      "url": "/ships/rms-windsor-castle",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Windsor Castle (1921)",
-      "slug": "rms-windsor-castle-1921",
-      "url": "/ships/rms-windsor-castle-1921",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
           "sourceCategory": "collection"
         }
       ]
@@ -1483,25 +1442,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Armadale Castle",
-      "slug": "ss-armadale-castle",
-      "url": "/ships/ss-armadale-castle",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -3328,28 +3268,6 @@
       "sources": []
     },
     {
-      "name": "RMS Edinburgh Castle (1948)",
-      "slug": "rms-edinburgh-castle",
-      "url": "/ships/rms-edinburgh-castle",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
-      "name": "RMS Pendennis Castle (1958)",
-      "slug": "rms-pendennis-castle",
-      "url": "/ships/rms-pendennis-castle",
-      "inboundTotal": 1,
-      "editorialInbound": 0,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {},
-      "sources": []
-    },
-    {
       "name": "SS Assyria",
       "slug": "ss-assyria",
       "url": "/ships/ss-assyria",
@@ -4132,6 +4050,25 @@
       ]
     },
     {
+      "name": "RMS Edinburgh Castle (1948)",
+      "slug": "rms-edinburgh-castle",
+      "url": "/ships/rms-edinburgh-castle",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "RMS Empress of Australia",
       "slug": "rms-empress-of-australia",
       "url": "/ships/rms-empress-of-australia",
@@ -4261,25 +4198,6 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "RMS Kenilworth Castle",
-      "slug": "rms-kenilworth-castle",
-      "url": "/ships/rms-kenilworth-castle",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -4436,6 +4354,25 @@
       ]
     },
     {
+      "name": "RMS Pendennis Castle (1958)",
+      "slug": "rms-pendennis-castle",
+      "url": "/ships/rms-pendennis-castle",
+      "inboundTotal": 2,
+      "editorialInbound": 1,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
       "name": "RMS Queen Mary 2",
       "slug": "rms-queen-mary-2",
       "url": "/ships/rms-queen-mary-2",
@@ -4526,44 +4463,6 @@
         {
           "sourcePath": "collections/immigrant-era-atlantic-liners.html",
           "sourceRoute": "/collections/immigrant-era-atlantic-liners",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Windsor Castle",
-      "slug": "rms-windsor-castle",
-      "url": "/ships/rms-windsor-castle",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        }
-      ]
-    },
-    {
-      "name": "RMS Windsor Castle (1921)",
-      "slug": "rms-windsor-castle-1921",
-      "url": "/ships/rms-windsor-castle-1921",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
           "sourceCategory": "collection"
         }
       ]
@@ -4679,25 +4578,6 @@
           "sourcePath": "history-of-major-shipping-lines.html",
           "sourceRoute": "/history-of-major-shipping-lines",
           "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Armadale Castle",
-      "slug": "ss-armadale-castle",
-      "url": "/ships/ss-armadale-castle",
-      "inboundTotal": 2,
-      "editorialInbound": 1,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
         }
       ]
     },
@@ -6587,31 +6467,6 @@
       ]
     },
     {
-      "name": "RMS Arundel Castle (1921)",
-      "slug": "rms-arundel-castle-1921",
-      "url": "/ships/rms-arundel-castle-1921",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "RMS Ascania",
       "slug": "rms-ascania",
       "url": "/ships/rms-ascania",
@@ -6933,6 +6788,30 @@
           "sourcePath": "cunard-line.html",
           "sourceRoute": "/cunard-line",
           "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Kenilworth Castle",
+      "slug": "rms-kenilworth-castle",
+      "url": "/ships/rms-kenilworth-castle",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -7309,16 +7188,15 @@
       ]
     },
     {
-      "name": "RMS Walmer Castle",
-      "slug": "rms-walmer-castle",
-      "url": "/ships/rms-walmer-castle",
+      "name": "RMS Windsor Castle",
+      "slug": "rms-windsor-castle",
+      "url": "/ships/rms-windsor-castle",
       "inboundTotal": 3,
       "editorialInbound": 2,
       "baselineInbound": 1,
       "discoverySurfaceInbound": 0,
       "byCategory": {
-        "collection": 1,
-        "hub-history": 1
+        "collection": 2
       },
       "sources": [
         {
@@ -7327,9 +7205,33 @@
           "sourceCategory": "collection"
         },
         {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "RMS Windsor Castle (1921)",
+      "slug": "rms-windsor-castle-1921",
+      "url": "/ships/rms-windsor-castle-1921",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
         }
       ]
     },
@@ -7402,6 +7304,30 @@
         {
           "sourcePath": "collections/the-birth-of-the-modern-passenger-ship-1838-1875.html",
           "sourceRoute": "/collections/the-birth-of-the-modern-passenger-ship-1838-1875",
+          "sourceCategory": "collection"
+        }
+      ]
+    },
+    {
+      "name": "SS Armadale Castle",
+      "slug": "ss-armadale-castle",
+      "url": "/ships/ss-armadale-castle",
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection"
         }
       ]
@@ -8970,81 +8896,6 @@
       ]
     },
     {
-      "name": "SS Warwick Castle",
-      "slug": "ss-warwick-castle",
-      "url": "/ships/ss-warwick-castle",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "SS Winchester Castle",
-      "slug": "ss-winchester-castle",
-      "url": "/ships/ss-winchester-castle",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
-      "name": "Stirling Castle",
-      "slug": "stirling-castle",
-      "url": "/ships/stirling-castle",
-      "inboundTotal": 3,
-      "editorialInbound": 2,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        }
-      ]
-    },
-    {
       "name": "Tatsuta Maru",
       "slug": "tatsuta-maru-1929",
       "url": "/ships/tatsuta-maru-1929",
@@ -9064,37 +8915,6 @@
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
-          "sourceCategory": "ship-guide"
-        }
-      ]
-    },
-    {
-      "name": "Athlone Castle",
-      "slug": "athlone-castle",
-      "url": "/ships/athlone-castle",
-      "inboundTotal": 4,
-      "editorialInbound": 3,
-      "baselineInbound": 1,
-      "discoverySurfaceInbound": 0,
-      "byCategory": {
-        "collection": 1,
-        "hub-history": 1,
-        "ship-guide": 1
-      },
-      "sources": [
-        {
-          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
-          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
-          "sourceCategory": "collection"
-        },
-        {
-          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
-          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
-          "sourceCategory": "hub-history"
-        },
-        {
-          "sourcePath": "ships/stirling-castle.html",
-          "sourceRoute": "/ships/stirling-castle",
           "sourceCategory": "ship-guide"
         }
       ]
@@ -9212,6 +9032,36 @@
         {
           "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
           "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "RMS Arundel Castle (1921)",
+      "slug": "rms-arundel-castle-1921",
+      "url": "/ships/rms-arundel-castle-1921",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
           "sourceCategory": "collection"
         },
         {
@@ -9341,6 +9191,36 @@
           "sourcePath": "ships/rms-ivernia.html",
           "sourceRoute": "/ships/rms-ivernia",
           "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "RMS Walmer Castle",
+      "slug": "rms-walmer-castle",
+      "url": "/ships/rms-walmer-castle",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
         }
       ]
     },
@@ -9769,6 +9649,96 @@
       ]
     },
     {
+      "name": "SS Warwick Castle",
+      "slug": "ss-warwick-castle",
+      "url": "/ships/ss-warwick-castle",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "SS Winchester Castle",
+      "slug": "ss-winchester-castle",
+      "url": "/ships/ss-winchester-castle",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
+      "name": "Stirling Castle",
+      "slug": "stirling-castle",
+      "url": "/ships/stirling-castle",
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        }
+      ]
+    },
+    {
       "name": "Asama Maru",
       "slug": "asama-maru-1929",
       "url": "/ships/asama-maru-1929",
@@ -9799,6 +9769,42 @@
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
+          "sourceCategory": "ship-guide"
+        }
+      ]
+    },
+    {
+      "name": "Athlone Castle",
+      "slug": "athlone-castle",
+      "url": "/ships/athlone-castle",
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "discoverySurfaceInbound": 0,
+      "byCategory": {
+        "collection": 2,
+        "hub-history": 1,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "collections/south-african-mail-route.html",
+          "sourceRoute": "/collections/south-african-mail-route",
+          "sourceCategory": "collection"
+        },
+        {
+          "sourcePath": "harland-wolff-builder-proof-of-concept.html",
+          "sourceRoute": "/harland-wolff-builder-proof-of-concept",
+          "sourceCategory": "hub-history"
+        },
+        {
+          "sourcePath": "ships/stirling-castle.html",
+          "sourceRoute": "/ships/stirling-castle",
           "sourceCategory": "ship-guide"
         }
       ]
