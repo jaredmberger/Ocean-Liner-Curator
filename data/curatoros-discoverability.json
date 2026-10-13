@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T04:41:12.114Z",
+  "generatedAt": "2026-10-13T04:44:35.601Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -44,8 +44,8 @@
       "pages": 36,
       "searchEligible": 36,
       "sitemapListed": 34,
-      "editorialInbound": 216,
-      "averageEditorialInbound": 6
+      "editorialInbound": 227,
+      "averageEditorialInbound": 6.31
     },
     "comparative-history": {
       "pages": 33,
@@ -14508,12 +14508,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 11,
-      "editorialInbound": 10,
+      "inboundTotal": 22,
+      "editorialInbound": 21,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 2,
-        "ship-guide": 8
+        "ship-guide": 19
       },
       "sources": [
         {
@@ -14529,14 +14529,68 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ms-aramis.html",
+          "sourceRoute": "/ships/ms-aramis",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ms-augustus.html",
           "sourceRoute": "/ships/ms-augustus",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ms-batory.html",
+          "sourceRoute": "/ships/ms-batory",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-bermuda.html",
+          "sourceRoute": "/ships/ms-bermuda",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-felix-roussel.html",
+          "sourceRoute": "/ships/ms-felix-roussel",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-georges-philippar.html",
+          "sourceRoute": "/ships/ms-georges-philippar",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ms-gripsholm-1925.html",
           "sourceRoute": "/ships/ms-gripsholm-1925",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ms-oslofjord.html",
+          "sourceRoute": "/ships/ms-oslofjord",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/mv-britannic.html",
+          "sourceRoute": "/ships/mv-britannic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/mv-georgic.html",
+          "sourceRoute": "/ships/mv-georgic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/mv-jean-laborde.html",
+          "sourceRoute": "/ships/mv-jean-laborde",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -14571,8 +14625,20 @@
           "sourceBaseline": false
         },
         {
+          "sourcePath": "ships/ss-marnix-van-st-aldegonde.html",
+          "sourceRoute": "/ships/ss-marnix-van-st-aldegonde",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
           "sourcePath": "ships/ss-russia-1867.html",
           "sourceRoute": "/ships/ss-russia-1867",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-winchester-castle.html",
+          "sourceRoute": "/ships/ss-winchester-castle",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
