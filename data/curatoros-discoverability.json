@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T03:37:51.963Z",
+  "generatedAt": "2026-10-16T03:50:32.011Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -22,7 +22,7 @@
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 2,
-    "priorityWithOneEditorialInbound": 15,
+    "priorityWithOneEditorialInbound": 14,
     "priorityWithThreePlusEditorialInbound": 70
   },
   "categories": {
@@ -44,8 +44,8 @@
       "pages": 39,
       "searchEligible": 39,
       "sitemapListed": 37,
-      "editorialInbound": 272,
-      "averageEditorialInbound": 6.97
+      "editorialInbound": 273,
+      "averageEditorialInbound": 7
     },
     "comparative-history": {
       "pages": 33,
@@ -392,29 +392,6 @@
             "sourcePath": "what-is-the-ss-leviathan-and-why-was-it-important.html",
             "sourceRoute": "/what-is-the-ss-leviathan-and-why-was-it-important",
             "sourceCategory": "article-reference",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "collections/lost-ocean-liner-interiors.html",
-        "route": "/lost-ocean-liner-interiors",
-        "title": "Lost Ocean Liner Interiors",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 1,
-        "editorialInbound": 1,
-        "baselineInbound": 0,
-        "byCategory": {
-          "collection": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "collections/floating-palaces-interior-innovation.html",
-            "sourceRoute": "/collections/floating-palaces-interior-innovation",
-            "sourceCategory": "collection",
             "sourceBaseline": false
           }
         ]
@@ -1878,7 +1855,7 @@
       "sources": [
         {
           "sourcePath": "collections/lost-ocean-liner-interiors.html",
-          "sourceRoute": "/lost-ocean-liner-interiors",
+          "sourceRoute": "/collections/lost-ocean-liner-interiors",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -5309,7 +5286,7 @@
       "sources": [
         {
           "sourcePath": "collections/lost-ocean-liner-interiors.html",
-          "sourceRoute": "/lost-ocean-liner-interiors",
+          "sourceRoute": "/collections/lost-ocean-liner-interiors",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -5938,7 +5915,7 @@
         },
         {
           "sourcePath": "collections/lost-ocean-liner-interiors.html",
-          "sourceRoute": "/lost-ocean-liner-interiors",
+          "sourceRoute": "/collections/lost-ocean-liner-interiors",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -14760,23 +14737,29 @@
     },
     {
       "path": "collections/lost-ocean-liner-interiors.html",
-      "route": "/lost-ocean-liner-interiors",
+      "route": "/collections/lost-ocean-liner-interiors",
       "title": "Lost Ocean Liner Interiors",
       "category": "collection",
       "searchEligible": true,
       "sitemapListed": true,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 1,
-      "editorialInbound": 1,
-      "baselineInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
       "byCategory": {
-        "collection": 1
+        "ship-guide": 2
       },
       "sources": [
         {
-          "sourcePath": "collections/floating-palaces-interior-innovation.html",
-          "sourceRoute": "/collections/floating-palaces-interior-innovation",
-          "sourceCategory": "collection",
+          "sourcePath": "ships/rms-queen-mary.html",
+          "sourceRoute": "/ships/rms-queen-mary",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-normandie.html",
+          "sourceRoute": "/ships/ss-normandie",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
       ]
