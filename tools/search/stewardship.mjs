@@ -36,6 +36,21 @@ try { links = JSON.parse(execute('internal-link-audit.mjs',['--json'])); }
 catch (e) { errors.push({audit:'internal-links',error:String(e.message).slice(0,500)}); }
 
 const findings = [];
+let chronology = null, sources = null;
+try {
+  const csvPath=resolve(output,'chronology-findings.csv');
+  execFileSync('python3',[resolve(dir,'../../scripts/historical-consistency-monitor.py'),
+    '--root',resolve(dir,'../..'),'--output',resolve(output,'chronology.md'),'--csv',csvPath],
+    {cwd:resolve(dir,'../..'),encoding:'utf8',timeout:120000});
+  chronology=JSON.parse(execFileSync('python3',['-c',
+    'import csv,json,sys;print(json.dumps(list(csv.DictReader(open(sys.argv[1],encoding="utf-8")))))',
+    csvPath],{encoding:'utf8'}));
+} catch(e){ errors.push({audit:'historical',error:String(e.message).slice(0,500)}); }
+try {
+  execute('stewardship-sources.mjs',[]);
+  sources=JSON.parse(await readFile(resolve(output,'source-checks.json'),'utf8'));
+} catch(e){ errors.push({audit:'sources',error:String(e.message).slice(0,500)}); }
+
 if (urls) {
   for (const r of urls.findings ?? []) {
     findings.push(finding('canonical:'+r.kind, r.file,
@@ -54,12 +69,23 @@ if (links) {
       {incoming:page.incoming,fromShipIndex:page.fromShipIndex},'informational'));
   }
 }
+if(chronology) for(const row of chronology){
+  findings.push(finding('historical:'+row.issue, row.subject,
+    'Review historical chronology candidate: '+row.issue,
+    {subject:row.subject,level:row.level,sourceEvidence:row.evidence,method:'narrow Key Facts date heuristic'},'review'));
+}
+if(sources) for(const row of sources.results||[]){
+  if(row.kind==='missing-candidate') findings.push(finding('sources:http-missing',row.url,
+    'External reference returned HTTP '+row.status+' in bounded pilot; verify independently',
+    {url:row.url,sourcePages:row.sourcePages,status:row.status,finalUrl:row.finalUrl,
+      caveat:'May be bot-dependent or temporary; never automatically remove a citation'},'review'));
+}
 findings.sort((a,b)=>a.type.localeCompare(b.type)||a.scope.localeCompare(b.scope));
 let previous = null;
 try { previous = JSON.parse(await readFile(statePath,'utf8')); }
 catch (e) { if (e.code !== 'ENOENT') errors.push({audit:'prior-state',error:String(e.message).slice(0,500)}); }
 const snapshot = reconcile(previous, findings, new Date().toISOString(),
-  [urls ? 'canonical' : null, links ? 'internal-links' : null].filter(Boolean));
+  [urls ? 'canonical' : null, links ? 'internal-links' : null, chronology ? 'historical' : null, sources ? 'sources' : null].filter(Boolean));
 await mkdir(dirname(statePath),{recursive:true});
 await writeFile(statePath,JSON.stringify(snapshot,null,2)+'\n');
 await writeFile(resolve(output,'history.json'),JSON.stringify(snapshot,null,2)+'\n');
