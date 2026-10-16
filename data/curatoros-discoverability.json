@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T08:40:14.212Z",
+  "generatedAt": "2026-10-16T03:03:24.972Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -29,9 +29,9 @@
     "article-reference": {
       "pages": 193,
       "searchEligible": 192,
-      "sitemapListed": 89,
-      "editorialInbound": 1522,
-      "averageEditorialInbound": 7.89
+      "sitemapListed": 90,
+      "editorialInbound": 1542,
+      "averageEditorialInbound": 7.99
     },
     "bridge-page": {
       "pages": 11,
@@ -4557,17 +4557,141 @@
     },
     {
       "path": "ships/ocean-liner-evolution-map.html",
-      "route": "/ocean-liner-evolution-map",
+      "route": "/ships/ocean-liner-evolution-map",
       "title": "Ocean Liner Evolution Map",
       "category": "article-reference",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 21,
+      "editorialInbound": 20,
+      "baselineInbound": 1,
+      "byCategory": {
+        "collection": 17,
+        "article-reference": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/cabin-liner-transition.html",
+          "sourceRoute": "/collections/cabin-liner-transition",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/dining-rooms-lounges-and-ritual-at-sea.html",
+          "sourceRoute": "/collections/dining-rooms-lounges-and-ritual-at-sea",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/french-atlantic-flagships.html",
+          "sourceRoute": "/collections/french-atlantic-flagships",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/liners-rebuilt-and-renamed.html",
+          "sourceRoute": "/collections/liners-rebuilt-and-renamed",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
+          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/olympic-class-liners.html",
+          "sourceRoute": "/collections/olympic-class-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-birth-of-the-modern-passenger-ship-1838-1875.html",
+          "sourceRoute": "/collections/the-birth-of-the-modern-passenger-ship-1838-1875",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-superliner-race.html",
+          "sourceRoute": "/collections/the-superliner-race",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/tourist-third-cabin-democratization.html",
+          "sourceRoute": "/collections/tourist-third-cabin-democratization",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/what-defines-an-ocean-liner.html",
+          "sourceRoute": "/collections/what-defines-an-ocean-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/white-stars-big-four.html",
+          "sourceRoute": "/collections/white-stars-big-four",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-to-use-the-ship-archive.html",
+          "sourceRoute": "/how-to-use-the-ship-archive",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/routes-and-trade-lanes-timeline.html",
+          "sourceRoute": "/ships/routes-and-trade-lanes-timeline",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "timelines-history.html",
+          "sourceRoute": "/timelines-history",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ocean-liner-gpt.html",
@@ -6928,7 +7052,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -19895,7 +20019,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -20370,7 +20494,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -21068,7 +21192,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -21171,7 +21295,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -21263,7 +21387,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -21342,7 +21466,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -21380,7 +21504,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -21847,7 +21971,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -21967,7 +22091,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -22080,7 +22204,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -22370,7 +22494,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -22414,7 +22538,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -22766,7 +22890,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -22938,7 +23062,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -22989,7 +23113,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -23233,7 +23357,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -23424,7 +23548,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -23614,7 +23738,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -23843,7 +23967,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -23893,7 +24017,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -24022,7 +24146,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -24344,7 +24468,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -24475,7 +24599,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -24645,7 +24769,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -24782,7 +24906,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -24958,7 +25082,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -25018,7 +25142,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -25136,7 +25260,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -25802,7 +25926,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -25916,7 +26040,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -26694,7 +26818,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -26951,7 +27075,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -27032,7 +27156,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -27218,7 +27342,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -27319,7 +27443,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -27424,7 +27548,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -27600,7 +27724,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -27630,7 +27754,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -27759,7 +27883,7 @@
       "sources": [
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -27980,7 +28104,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -28072,7 +28196,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -28193,7 +28317,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -28229,7 +28353,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -28330,7 +28454,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -28359,7 +28483,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -28524,7 +28648,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -28815,7 +28939,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -28881,7 +29005,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -29167,7 +29291,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -29815,7 +29939,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -30093,7 +30217,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -30559,7 +30683,7 @@
       "sources": [
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -30595,7 +30719,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -30699,7 +30823,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -31390,7 +31514,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -31508,7 +31632,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -31858,7 +31982,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-evolution-map.html",
-          "sourceRoute": "/ocean-liner-evolution-map",
+          "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
