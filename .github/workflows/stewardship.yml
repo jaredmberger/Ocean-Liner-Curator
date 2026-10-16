@@ -19,7 +19,19 @@ jobs:
           cache: npm
           cache-dependency-path: tools/search/package-lock.json
       - run: npm ci --prefix tools/search
+      - uses: actions/cache/restore@v4
+        with:
+          path: tools/search/.stewardship-state
+          key: curatoros-stewardship-state-${{ github.run_id }}
+          restore-keys: |
+            curatoros-stewardship-state-
       - run: npm run stewardship --prefix tools/search
+      - run: node tools/search/stewardship-state.test.mjs
+      - uses: actions/cache/save@v4
+        if: success() && github.ref == 'refs/heads/main'
+        with:
+          path: tools/search/.stewardship-state
+          key: curatoros-stewardship-state-${{ github.run_id }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
