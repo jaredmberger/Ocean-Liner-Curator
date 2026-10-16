@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T03:03:24.972Z",
+  "generatedAt": "2026-10-16T03:37:51.963Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -22,16 +22,16 @@
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 2,
-    "priorityWithOneEditorialInbound": 16,
-    "priorityWithThreePlusEditorialInbound": 69
+    "priorityWithOneEditorialInbound": 15,
+    "priorityWithThreePlusEditorialInbound": 70
   },
   "categories": {
     "article-reference": {
       "pages": 193,
       "searchEligible": 192,
-      "sitemapListed": 90,
-      "editorialInbound": 1542,
-      "averageEditorialInbound": 7.99
+      "sitemapListed": 92,
+      "editorialInbound": 1573,
+      "averageEditorialInbound": 8.15
     },
     "bridge-page": {
       "pages": 11,
@@ -44,8 +44,8 @@
       "pages": 39,
       "searchEligible": 39,
       "sitemapListed": 37,
-      "editorialInbound": 265,
-      "averageEditorialInbound": 6.79
+      "editorialInbound": 272,
+      "averageEditorialInbound": 6.97
     },
     "comparative-history": {
       "pages": 33,
@@ -72,8 +72,8 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 370,
-      "editorialInbound": 861,
-      "averageEditorialInbound": 2.31
+      "editorialInbound": 867,
+      "averageEditorialInbound": 2.32
     }
   },
   "signals": {
@@ -201,7 +201,7 @@
           },
           {
             "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-            "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+            "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
             "sourceCategory": "article-reference",
             "sourceBaseline": false
           },
@@ -415,29 +415,6 @@
             "sourcePath": "collections/floating-palaces-interior-innovation.html",
             "sourceRoute": "/collections/floating-palaces-interior-innovation",
             "sourceCategory": "collection",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "collections/ss-united-states-speed-record-blue-riband.html",
-        "route": "/ss-united-states-speed-record-blue-riband",
-        "title": "SS United States",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 1,
-        "editorialInbound": 1,
-        "baselineInbound": 0,
-        "byCategory": {
-          "ship-guide": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "ships/ss-us.html",
-            "sourceRoute": "/ships/ss-us",
-            "sourceCategory": "ship-guide",
             "sourceBaseline": false
           }
         ]
@@ -1502,17 +1479,44 @@
     },
     {
       "path": "designs-interiors/china-silver-linens.html",
-      "route": "/designs-interiors/china-silver-linens-and-the-total-interior-scheme",
+      "route": "/designs-interiors/china-silver-linens",
       "title": "China, Silver, Linens & the Total Interior Scheme",
       "category": "article-reference",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
+      "baselineInbound": 1,
+      "byCategory": {
+        "article-reference": 4
+      },
+      "sources": [
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/carpets-textiles-and-upholstery-at-sea.html",
+          "sourceRoute": "/designs-interiors/carpets-textiles-and-upholstery-at-sea",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/menus-printed-matter-and-interior-branding.html",
+          "sourceRoute": "/collectors-notebook/menus-printed-matter-and-interior-branding",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/tourist-class-interiors-and-the-middle-market-ship.html",
+          "sourceRoute": "/designs-interiors/tourist-class-interiors-and-the-middle-market-ship",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ss-united-states-memorabilia.html",
@@ -1668,17 +1672,26 @@
     },
     {
       "path": "collectors-notebook/common-silver-markings-in-listings.html",
-      "route": "/collectors-notebook/common-silver-marks-in-listings",
+      "route": "/collectors-notebook/common-silver-markings-in-listings",
       "title": "Common Silver Marks in Listings (What They Actually Mean)",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collectors-notebook/marks.html",
+          "sourceRoute": "/collectors-notebook/marks",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "sitemap.html",
@@ -1793,7 +1806,7 @@
         },
         {
           "sourcePath": "designs-interiors/china-silver-linens.html",
-          "sourceRoute": "/designs-interiors/china-silver-linens-and-the-total-interior-scheme",
+          "sourceRoute": "/designs-interiors/china-silver-linens",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -1974,7 +1987,7 @@
         },
         {
           "sourcePath": "designs-interiors/china-silver-linens.html",
-          "sourceRoute": "/designs-interiors/china-silver-linens-and-the-total-interior-scheme",
+          "sourceRoute": "/designs-interiors/china-silver-linens",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -2289,7 +2302,7 @@
         },
         {
           "sourcePath": "designs-interiors/china-silver-linens.html",
-          "sourceRoute": "/designs-interiors/china-silver-linens-and-the-total-interior-scheme",
+          "sourceRoute": "/designs-interiors/china-silver-linens",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -2354,7 +2367,7 @@
         },
         {
           "sourcePath": "designs-interiors/china-silver-linens.html",
-          "sourceRoute": "/designs-interiors/china-silver-linens-and-the-total-interior-scheme",
+          "sourceRoute": "/designs-interiors/china-silver-linens",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -3474,7 +3487,7 @@
       "sources": [
         {
           "sourcePath": "collectors-notebook/common-silver-markings-in-listings.html",
-          "sourceRoute": "/collectors-notebook/common-silver-marks-in-listings",
+          "sourceRoute": "/collectors-notebook/common-silver-markings-in-listings",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -3861,7 +3874,7 @@
         },
         {
           "sourcePath": "collectors-notebook/common-silver-markings-in-listings.html",
-          "sourceRoute": "/collectors-notebook/common-silver-marks-in-listings",
+          "sourceRoute": "/collectors-notebook/common-silver-markings-in-listings",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -4005,7 +4018,7 @@
         },
         {
           "sourcePath": "designs-interiors/china-silver-linens.html",
-          "sourceRoute": "/designs-interiors/china-silver-linens-and-the-total-interior-scheme",
+          "sourceRoute": "/designs-interiors/china-silver-linens",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -4537,7 +4550,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -5237,7 +5250,7 @@
         },
         {
           "sourcePath": "designs-interiors/china-silver-linens.html",
-          "sourceRoute": "/designs-interiors/china-silver-linens-and-the-total-interior-scheme",
+          "sourceRoute": "/designs-interiors/china-silver-linens",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -6303,7 +6316,7 @@
         },
         {
           "sourcePath": "ships/rms-queen-mary-timeline.html",
-          "sourceRoute": "/timelines-history/rms-queen-mary-timeline",
+          "sourceRoute": "/ships/rms-queen-mary-timeline",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -6674,7 +6687,7 @@
         },
         {
           "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
-          "sourceRoute": "/ss-united-states-speed-record-blue-riband",
+          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -7436,7 +7449,7 @@
         },
         {
           "sourcePath": "ships/rms-queen-mary-timeline.html",
-          "sourceRoute": "/timelines-history/rms-queen-mary-timeline",
+          "sourceRoute": "/ships/rms-queen-mary-timeline",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -8396,7 +8409,7 @@
         },
         {
           "sourcePath": "ships/ss-leviathan-timeline.html",
-          "sourceRoute": "/timelines-history/ss-leviathan-timeline",
+          "sourceRoute": "/ships/ss-leviathan-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -8996,7 +9009,7 @@
         },
         {
           "sourcePath": "ships/ss-united-states-timeline.html",
-          "sourceRoute": "/timelines-history/ss-united-states-timeline",
+          "sourceRoute": "/ships/ss-united-states-timeline",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -9098,7 +9111,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -9208,17 +9221,63 @@
     },
     {
       "path": "ships/ocean-liner-speed-record-table.html",
-      "route": "/ocean-liner-speed-record-table",
+      "route": "/ships/ocean-liner-speed-record-table",
       "title": "Speed Record Table",
       "category": "article-reference",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 8,
+      "editorialInbound": 7,
+      "baselineInbound": 1,
+      "byCategory": {
+        "collection": 4,
+        "article-reference": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
+          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/propulsion-technology-timeline.html",
+          "sourceRoute": "/ships/propulsion-technology-timeline",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/routes-and-trade-lanes-timeline.html",
+          "sourceRoute": "/ships/routes-and-trade-lanes-timeline",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "timelines-history.html",
+          "sourceRoute": "/timelines-history",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ss-leviathan.html",
@@ -9261,7 +9320,7 @@
         },
         {
           "sourcePath": "ships/ss-leviathan-timeline.html",
-          "sourceRoute": "/timelines-history/ss-leviathan-timeline",
+          "sourceRoute": "/ships/ss-leviathan-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -9351,7 +9410,7 @@
       "sources": [
         {
           "sourcePath": "ships/ss-leviathan-timeline.html",
-          "sourceRoute": "/timelines-history/ss-leviathan-timeline",
+          "sourceRoute": "/ships/ss-leviathan-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -9383,17 +9442,33 @@
     },
     {
       "path": "ships/ss-leviathan-timeline.html",
-      "route": "/timelines-history/ss-leviathan-timeline",
+      "route": "/ships/ss-leviathan-timeline",
       "title": "SS Leviathan Timeline",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 2,
+      "editorialInbound": 2,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/from-vaterland-to-leviathan.html",
+          "sourceRoute": "/collections/from-vaterland-to-leviathan",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-leviathan.html",
+          "sourceRoute": "/ss-leviathan",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "leviathan-public-rooms.html",
@@ -9424,7 +9499,7 @@
         },
         {
           "sourcePath": "ships/ss-leviathan-timeline.html",
-          "sourceRoute": "/timelines-history/ss-leviathan-timeline",
+          "sourceRoute": "/ships/ss-leviathan-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -9485,7 +9560,7 @@
       "sources": [
         {
           "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
-          "sourceRoute": "/ss-united-states-speed-record-blue-riband",
+          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -9624,7 +9699,7 @@
         },
         {
           "sourcePath": "ships/ss-united-states-timeline.html",
-          "sourceRoute": "/timelines-history/ss-united-states-timeline",
+          "sourceRoute": "/ships/ss-united-states-timeline",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -9931,7 +10006,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -9993,7 +10068,7 @@
         },
         {
           "sourcePath": "ships/rms-queen-mary-timeline.html",
-          "sourceRoute": "/timelines-history/rms-queen-mary-timeline",
+          "sourceRoute": "/ships/rms-queen-mary-timeline",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -10030,7 +10105,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -10074,17 +10149,126 @@
     },
     {
       "path": "ships/titanic-southampton-to-rescue-timeline.html",
-      "route": "/ships/titanic-departure-to-carpathia-rescue",
+      "route": "/ships/titanic-southampton-to-rescue-timeline",
       "title": "Titanic: Departure to Rescue",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 18,
+      "editorialInbound": 17,
+      "baselineInbound": 1,
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 11,
+        "hub": 3,
+        "comparative-history": 1,
+        "bridge-page": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
+          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "could-titanic-have-survived-the-collision.html",
+          "sourceRoute": "/could-titanic-have-survived-the-collision",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-long-did-it-take-titanic-to-sink.html",
+          "sourceRoute": "/how-long-did-it-take-titanic-to-sink",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "timelines-history.html",
+          "sourceRoute": "/timelines-history",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic-history-vs-movie.html",
+          "sourceRoute": "/titanic-history-vs-movie",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic-myths-that-persist.html",
+          "sourceRoute": "/titanic-myths-that-persist",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic-officers-roles-decisions-and-survival.html",
+          "sourceRoute": "/titanic-officers-roles-decisions-and-survival",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic-public-rooms.html",
+          "sourceRoute": "/titanic-public-rooms",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic-what-the-world-knew.html",
+          "sourceRoute": "/titanic-what-the-world-knew",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-happened-to-titanic-artifacts.html",
+          "sourceRoute": "/what-happened-to-titanic-artifacts",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-titanic-teaches-about-evidence.html",
+          "sourceRoute": "/titanic-evidence",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-was-it-like-aboard-titanic.html",
+          "sourceRoute": "/what-was-it-like-aboard-titanic",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-rms-carpathia-matters.html",
+          "sourceRoute": "/why-rms-carpathia-matters",
+          "sourceCategory": "bridge-page",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-was-titanic-called-unsinkable.html",
+          "sourceRoute": "/why-was-titanic-called-unsinkable",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "titanic-public-rooms.html",
@@ -10469,7 +10653,7 @@
         },
         {
           "sourcePath": "collectors-notebook/common-silver-markings-in-listings.html",
-          "sourceRoute": "/collectors-notebook/common-silver-marks-in-listings",
+          "sourceRoute": "/collectors-notebook/common-silver-markings-in-listings",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -11379,7 +11563,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -12035,7 +12219,7 @@
         },
         {
           "sourcePath": "collectors-notebook/common-silver-markings-in-listings.html",
-          "sourceRoute": "/collectors-notebook/common-silver-marks-in-listings",
+          "sourceRoute": "/collectors-notebook/common-silver-markings-in-listings",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -13619,7 +13803,7 @@
       "sources": [
         {
           "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
-          "sourceRoute": "/ss-united-states-speed-record-blue-riband",
+          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -13973,7 +14157,7 @@
         },
         {
           "sourcePath": "ships/ss-leviathan-timeline.html",
-          "sourceRoute": "/timelines-history/ss-leviathan-timeline",
+          "sourceRoute": "/ships/ss-leviathan-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -15124,7 +15308,7 @@
         },
         {
           "sourcePath": "ships/rms-queen-mary-timeline.html",
-          "sourceRoute": "/timelines-history/rms-queen-mary-timeline",
+          "sourceRoute": "/ships/rms-queen-mary-timeline",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -15324,23 +15508,69 @@
     },
     {
       "path": "collections/ss-united-states-speed-record-blue-riband.html",
-      "route": "/ss-united-states-speed-record-blue-riband",
+      "route": "/collections/ss-united-states-speed-record-blue-riband",
       "title": "SS United States",
       "category": "collection",
       "searchEligible": true,
       "sitemapListed": true,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 1,
-      "editorialInbound": 1,
-      "baselineInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 9,
+      "editorialInbound": 8,
+      "baselineInbound": 1,
       "byCategory": {
-        "ship-guide": 1
+        "collection": 1,
+        "ship-guide": 1,
+        "article-reference": 4,
+        "comparative-history": 1,
+        "bridge-page": 1
       },
       "sources": [
         {
-          "sourcePath": "ships/ss-us.html",
-          "sourceRoute": "/ships/ss-us",
+          "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
+          "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-united-states-timeline.html",
+          "sourceRoute": "/ships/ss-united-states-timeline",
           "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-united-states-preservation-reefing-public-memory.html",
+          "sourceRoute": "/ss-united-states-preservation-reefing-public-memory",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-united-states-specifications.html",
+          "sourceRoute": "/ss-united-states-specifications",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-united-states-voyage-aboard.html",
+          "sourceRoute": "/ss-united-states-voyage-aboard",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-united-states.html",
+          "sourceRoute": "/ss-united-states",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "state-supported-vs-privately-financed-flagships.html",
+          "sourceRoute": "/state-supported-vs-privately-financed-flagships",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-ss-united-states-still-matters.html",
+          "sourceRoute": "/why-ss-united-states-still-matters",
+          "sourceCategory": "bridge-page",
           "sourceBaseline": false
         }
       ]
@@ -15635,7 +15865,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -17100,7 +17330,7 @@
         },
         {
           "sourcePath": "collectors-notebook/common-silver-markings-in-listings.html",
-          "sourceRoute": "/collectors-notebook/common-silver-marks-in-listings",
+          "sourceRoute": "/collectors-notebook/common-silver-markings-in-listings",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -18823,7 +19053,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -20025,7 +20255,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -20256,7 +20486,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -22062,7 +22292,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -22151,7 +22381,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -22210,7 +22440,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -22439,7 +22669,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -22807,7 +23037,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -23119,7 +23349,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -23363,7 +23593,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -24152,13 +24382,13 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "ships/rms-queen-mary-timeline.html",
-          "sourceRoute": "/timelines-history/rms-queen-mary-timeline",
+          "sourceRoute": "/ships/rms-queen-mary-timeline",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -24231,17 +24461,39 @@
     },
     {
       "path": "ships/rms-queen-mary-timeline.html",
-      "route": "/timelines-history/rms-queen-mary-timeline",
+      "route": "/ships/rms-queen-mary-timeline",
       "title": "RMS Queen Mary Timeline",
       "category": "ship-guide",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 3,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 2,
+        "bridge-page": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "queen-mary-speed-prestige.html",
+          "sourceRoute": "/queen-mary-speed-prestige",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "rms-queen-mary.html",
+          "sourceRoute": "/rms-queen-mary",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-queen-mary-still-matters.html",
+          "sourceRoute": "/why-queen-mary-still-matters",
+          "sourceCategory": "bridge-page",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/rms-rangitane.html",
@@ -24415,7 +24667,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -24781,7 +25033,7 @@
         },
         {
           "sourcePath": "ships/titanic-southampton-to-rescue-timeline.html",
-          "sourceRoute": "/ships/titanic-departure-to-carpathia-rescue",
+          "sourceRoute": "/ships/titanic-southampton-to-rescue-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -24876,7 +25128,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -25148,7 +25400,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -25708,7 +25960,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -26046,7 +26298,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -26601,7 +26853,7 @@
       "sources": [
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -27162,7 +27414,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -27889,7 +28141,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -28323,7 +28575,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -28359,7 +28611,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -28945,7 +29197,7 @@
         },
         {
           "sourcePath": "ships/ss-leviathan-timeline.html",
-          "sourceRoute": "/timelines-history/ss-leviathan-timeline",
+          "sourceRoute": "/ships/ss-leviathan-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -29945,7 +30197,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -30829,7 +31081,7 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -31155,7 +31407,7 @@
       "sources": [
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -31454,7 +31706,7 @@
         },
         {
           "sourcePath": "collections/ss-united-states-speed-record-blue-riband.html",
-          "sourceRoute": "/ss-united-states-speed-record-blue-riband",
+          "sourceRoute": "/collections/ss-united-states-speed-record-blue-riband",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -31520,13 +31772,13 @@
         },
         {
           "sourcePath": "ships/ocean-liner-speed-record-table.html",
-          "sourceRoute": "/ocean-liner-speed-record-table",
+          "sourceRoute": "/ships/ocean-liner-speed-record-table",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "ships/ss-united-states-timeline.html",
-          "sourceRoute": "/timelines-history/ss-united-states-timeline",
+          "sourceRoute": "/ships/ss-united-states-timeline",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -31582,17 +31834,39 @@
     },
     {
       "path": "ships/ss-united-states-timeline.html",
-      "route": "/timelines-history/ss-united-states-timeline",
+      "route": "/ships/ss-united-states-timeline",
       "title": "SS United States Timeline",
       "category": "ship-guide",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 3,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 2,
+        "bridge-page": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ss-united-states-preservation-reefing-public-memory.html",
+          "sourceRoute": "/ss-united-states-preservation-reefing-public-memory",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-united-states.html",
+          "sourceRoute": "/ss-united-states",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-ss-united-states-still-matters.html",
+          "sourceRoute": "/why-ss-united-states-still-matters",
+          "sourceCategory": "bridge-page",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/ss-vaterland.html",
@@ -31638,7 +31912,7 @@
         },
         {
           "sourcePath": "ships/ss-leviathan-timeline.html",
-          "sourceRoute": "/timelines-history/ss-leviathan-timeline",
+          "sourceRoute": "/ships/ss-leviathan-timeline",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
