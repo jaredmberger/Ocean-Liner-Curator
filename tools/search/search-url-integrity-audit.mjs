@@ -53,24 +53,11 @@ console.log(JSON.stringify({trackedHtml:report.trackedHtml,canonicalMismatches:r
 // The baseline is an explicit temporary inventory of unresolved pre-existing metadata.
 // New missing routes fail CI, and removing a baseline entry makes its fix permanent.
 const legacyFiles = new Set([
-  "collections/lost-ocean-liner-interiors.html",
-  "collections/william-francis-gibbs-and-the-ship.html",
-  "collectors-notebook/silverplate-vs-sterling.html",
+  // Submission paths require a separate routes/visibility review.
   "community/submissions/art.html",
   "community/submissions/thanks.html",
-  "designs-interiors/french-british-german-and-italian-interior-traditions.html",
-  "designs-interiors/how-route-shaped-interior-planning.html",
-  "designs-interiors/menus-printed-matter-and-interior-branding.html",
-  "how-to-read.html",
-  "liner-links.html",
-  "reference-objects/object-template.html",
-  "reference-objects/object1.html",
-  "reference-objects/object2.html",
-  "reference-objects/object3.html",
-  "reference-objects/object4.html",
-  "ships/tall-ships-guide.html",
-  "ships/timeline-1900-1960.html",
-  "what-titanic-teaches-about-evidence.html"
+  // Source template is intentionally excluded from the Pagefind builder.
+  "reference-objects/object-template.html"
 ]);
 const introduced = rows.filter(row => (row.kind === 'canonical-route-not-found' || row.kind === 'invalid-canonical') && !legacyFiles.has(row.file));
 if (process.argv.includes('--enforce') && introduced.length) {
