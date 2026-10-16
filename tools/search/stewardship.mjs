@@ -8,9 +8,11 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { reconcile } from './stewardship-state.mjs';
 
 const dir = dirname(fileURLToPath(import.meta.url));
 const output = resolve(dir, 'dist/stewardship');
+const statePath = resolve(dir, '.stewardship-state/state.json');
 await mkdir(output, { recursive: true });
 
 function execute(name, args) {
@@ -53,6 +55,14 @@ if (links) {
   }
 }
 findings.sort((a,b)=>a.type.localeCompare(b.type)||a.scope.localeCompare(b.scope));
+let previous = null;
+try { previous = JSON.parse(await readFile(statePath,'utf8')); }
+catch (e) { if (e.code !== 'ENOENT') errors.push({audit:'prior-state',error:String(e.message).slice(0,500)}); }
+const snapshot = reconcile(previous, findings, new Date().toISOString(),
+  [urls ? 'canonical' : null, links ? 'internal-links' : null].filter(Boolean));
+await mkdir(dirname(statePath),{recursive:true});
+await writeFile(statePath,JSON.stringify(snapshot,null,2)+'\n');
+await writeFile(resolve(output,'history.json'),JSON.stringify(snapshot,null,2)+'\n');
 const counts = findings.reduce((n,f)=>(n[f.severity]=(n[f.severity]||0)+1,n),{});
 const report = {
   schemaVersion:1,
@@ -61,6 +71,7 @@ const report = {
   mode:'read-only',
   policy:'Observations are candidates, not verified historical or production errors. No content modification without human review.',
   auditHealth: errors.length ? 'incomplete' : 'complete',
+  changes: Object.fromEntries(Object.entries(snapshot.changes).map(([key,ids])=>[key,ids.length])),
   counts, errors, findings
 };
 await writeFile(resolve(output,'findings.json'),JSON.stringify(report,null,2)+'\n');
@@ -75,6 +86,8 @@ const markdown = [
   '**Audit health:** '+report.auditHealth,
   '',
   '**Counts:** '+JSON.stringify(counts),
+  '', '**Lifecycle changes:** '+JSON.stringify(report.changes),
+  '', '**Note:** State persists through GitHub Actions cache (best effort). Cache eviction resets first-seen history; this is not yet an authoritative review ledger.',
   '',
   '## Errors', '',
   errors.length ? errors.map(e=>'- '+e.audit+': '+e.error).join('\n') : 'None.',

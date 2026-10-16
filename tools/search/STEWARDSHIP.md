@@ -31,3 +31,9 @@ No automatic editing, commits, PRs, alerts, source deletion, historical inferenc
 ## Next increment
 
 Add a persistent finding ledger (first-seen, last-seen, acknowledged/dismissed states) and CuratorOS integration after the snapshot output is validated, then layer in source-change/indexing detectors without producing duplicate alerts.
+
+## Lifecycle tracking (second sprint)
+
+The workflow now writes `history.json` and tracks `new`, `continuing`, `resolved`, and `unverified` cases by stable finding ID. First/last seen and occurrence counts are retained between successful runs on `main` using a GitHub Actions cache. Missing observations from a failed audit are **unverified**, not resolved. `node tools/search/stewardship-state.test.mjs` checks these transitions.
+
+**Limits:** Cache is best-effort and can expire or be evicted; missing state resets first-seen history. This is not a durable system of record. Manual dismissals, editorial reviewer identity, persistent acknowledgements, and CuratorOS dashboard integration are deliberately not implemented here. Do not interpret lifecycle `resolved` as an approved historical correction; it means a heuristic was no longer observed in a healthy audit.
