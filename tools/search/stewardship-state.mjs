@@ -22,7 +22,9 @@ export function reconcile(previous, current, now, healthyTypes) {
   for (const old of prior.values()) {
     if (active.has(old.id)) continue;
     const family = old.type.startsWith('canonical:') ? 'canonical' :
-      old.type.startsWith('link:') || old.type.startsWith('discovery:') ? 'internal-links' : 'unknown';
+      old.type.startsWith('link:') || old.type.startsWith('discovery:') ? 'internal-links' :
+      old.type.startsWith('historical:') ? 'historical' :
+      old.type.startsWith('sources:') ? 'sources' : 'unknown';
     if (!typesHealthy.has(family)) {
       cases.push({...old, lifecycle:'unverified'});
       changes.unverified.push(old.id);
