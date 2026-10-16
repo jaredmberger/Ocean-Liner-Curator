@@ -10,7 +10,8 @@
     "audit:inline-citations": "node inline-citation-audit.mjs",
     "normalize:archive": "node normalize-archive-source.mjs",
     "normalize:guides": "node normalize-guide-facts.mjs",
-    "audit:urls": "node search-url-integrity-audit.mjs"
+    "audit:urls": "node search-url-integrity-audit.mjs",
+    "stewardship": "node stewardship.mjs"
   },
   "engines": {
     "node": ">=22.12"
