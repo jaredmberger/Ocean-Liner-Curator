@@ -2,7 +2,12 @@
 // Deliver read-only stewardship observations to CuratorOS.
 // Only called from the main-branch workflow after a successful audit.
 import { readFile } from 'node:fs/promises';
-const endpoint='https://curator.oceanliners.net/api/stewardship-review';
+// The custom hostname currently serves a bot challenge to GitHub Actions.
+// The same Cloudflare Pages project also serves curator-os.pages.dev.
+// Override if necessary after verifying the selected endpoint.
+const endpoint=process.env.STEWARDSHIP_INGEST_URL || 'https://curator-os.pages.dev/api/stewardship-review';
+const allowed=new Set(['https://curator-os.pages.dev/api/stewardship-review','https://curator.oceanliners.net/api/stewardship-review']);
+if(!allowed.has(endpoint))throw new Error('Stewardship ingestion URL is not an approved CuratorOS endpoint');
 const token=process.env.STEWARDSHIP_INGEST_TOKEN;
 if (!token) {
   console.error('Missing STEWARDSHIP_INGEST_TOKEN GitHub Actions secret. No findings were delivered.');
