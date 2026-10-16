@@ -1,0 +1,28 @@
+name: CuratorOS Stewardship Review
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 11 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/search/**', 'sitemap.xml', '**.html', '.github/workflows/stewardship.yml']
+permissions:
+  contents: read
+jobs:
+  stewardship:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: tools/search/package-lock.json
+      - run: npm ci --prefix tools/search
+      - run: npm run stewardship --prefix tools/search
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: curatoros-stewardship-review
+          path: tools/search/dist/stewardship/
+          retention-days: 30
