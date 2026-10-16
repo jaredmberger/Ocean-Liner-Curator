@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T03:50:32.011Z",
+  "generatedAt": "2026-10-16T04:01:10.302Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -21,17 +21,17 @@
     "indexablePages": 663,
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
-    "priorityEditorialOrphans": 2,
-    "priorityWithOneEditorialInbound": 14,
-    "priorityWithThreePlusEditorialInbound": 70
+    "priorityEditorialOrphans": 1,
+    "priorityWithOneEditorialInbound": 13,
+    "priorityWithThreePlusEditorialInbound": 72
   },
   "categories": {
     "article-reference": {
       "pages": 193,
       "searchEligible": 192,
-      "sitemapListed": 92,
-      "editorialInbound": 1573,
-      "averageEditorialInbound": 8.15
+      "sitemapListed": 96,
+      "editorialInbound": 1606,
+      "averageEditorialInbound": 8.32
     },
     "bridge-page": {
       "pages": 11,
@@ -43,16 +43,16 @@
     "collection": {
       "pages": 39,
       "searchEligible": 39,
-      "sitemapListed": 37,
-      "editorialInbound": 273,
-      "averageEditorialInbound": 7
+      "sitemapListed": 36,
+      "editorialInbound": 276,
+      "averageEditorialInbound": 7.08
     },
     "comparative-history": {
       "pages": 33,
       "searchEligible": 33,
-      "sitemapListed": 29,
-      "editorialInbound": 411,
-      "averageEditorialInbound": 12.45
+      "sitemapListed": 30,
+      "editorialInbound": 414,
+      "averageEditorialInbound": 12.55
     },
     "evidence-methodology": {
       "pages": 11,
@@ -71,9 +71,9 @@
     "ship-guide": {
       "pages": 373,
       "searchEligible": 373,
-      "sitemapListed": 370,
-      "editorialInbound": 867,
-      "averageEditorialInbound": 2.32
+      "sitemapListed": 371,
+      "editorialInbound": 892,
+      "averageEditorialInbound": 2.39
     }
   },
   "signals": {
@@ -134,6 +134,49 @@
         "sources": []
       },
       {
+        "path": "collections/william-francis-gibbs-and-the-ship.html",
+        "route": "/collections/william-francis-gibbs-and-the-ship",
+        "title": "William Francis Gibbs and the Ship",
+        "category": "collection",
+        "searchEligible": true,
+        "sitemapListed": false,
+        "canonicalDiffersFromPhysical": false,
+        "inboundTotal": 4,
+        "editorialInbound": 4,
+        "baselineInbound": 0,
+        "byCategory": {
+          "ship-guide": 1,
+          "article-reference": 2,
+          "bridge-page": 1
+        },
+        "sources": [
+          {
+            "sourcePath": "ships/ss-united-states-timeline.html",
+            "sourceRoute": "/ships/ss-united-states-timeline",
+            "sourceCategory": "ship-guide",
+            "sourceBaseline": false
+          },
+          {
+            "sourcePath": "ss-united-states-preservation-reefing-public-memory.html",
+            "sourceRoute": "/ss-united-states-preservation-reefing-public-memory",
+            "sourceCategory": "article-reference",
+            "sourceBaseline": false
+          },
+          {
+            "sourcePath": "ss-united-states.html",
+            "sourceRoute": "/ss-united-states",
+            "sourceCategory": "article-reference",
+            "sourceBaseline": false
+          },
+          {
+            "sourcePath": "why-ss-united-states-still-matters.html",
+            "sourceRoute": "/why-ss-united-states-still-matters",
+            "sourceCategory": "bridge-page",
+            "sourceBaseline": false
+          }
+        ]
+      },
+      {
         "path": "collectors-notebook/generic-nautical-motifs-vs-company-design.html",
         "route": "/collectors-notebook/generic-nautical-motifs-vs-company-design",
         "title": "Generic Nautical Motifs vs Company Design",
@@ -155,20 +198,6 @@
             "sourceBaseline": false
           }
         ]
-      },
-      {
-        "path": "collectors-notebook/silverplate-vs-sterling.html",
-        "route": "/collectors-notebook/silver-plate-vs-sterling",
-        "title": "Silverplate vs Sterling",
-        "category": "comparative-history",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 0,
-        "editorialInbound": 0,
-        "baselineInbound": 0,
-        "byCategory": {},
-        "sources": []
       },
       {
         "path": "titanic-history-vs-movie.html",
@@ -243,7 +272,7 @@
           },
           {
             "sourcePath": "what-titanic-teaches-about-evidence.html",
-            "sourceRoute": "/titanic-evidence",
+            "sourceRoute": "/what-titanic-teaches-about-evidence",
             "sourceCategory": "article-reference",
             "sourceBaseline": false
           }
@@ -285,20 +314,6 @@
         "inboundTotal": 1,
         "editorialInbound": 0,
         "baselineInbound": 1,
-        "byCategory": {},
-        "sources": []
-      },
-      {
-        "path": "collectors-notebook/silverplate-vs-sterling.html",
-        "route": "/collectors-notebook/silver-plate-vs-sterling",
-        "title": "Silverplate vs Sterling",
-        "category": "comparative-history",
-        "searchEligible": true,
-        "sitemapListed": false,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 0,
-        "editorialInbound": 0,
-        "baselineInbound": 0,
         "byCategory": {},
         "sources": []
       }
@@ -461,29 +476,6 @@
             "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
             "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
             "sourceCategory": "collection",
-            "sourceBaseline": false
-          }
-        ]
-      },
-      {
-        "path": "collections/william-francis-gibbs-and-the-ship.html",
-        "route": "/ss-united-states/william-francis-gibbs-and-the-ship",
-        "title": "William Francis Gibbs and the Ship",
-        "category": "collection",
-        "searchEligible": true,
-        "sitemapListed": true,
-        "canonicalDiffersFromPhysical": true,
-        "inboundTotal": 1,
-        "editorialInbound": 1,
-        "baselineInbound": 0,
-        "byCategory": {
-          "ship-guide": 1
-        },
-        "sources": [
-          {
-            "sourcePath": "ships/ss-us.html",
-            "sourceRoute": "/ships/ss-us",
-            "sourceCategory": "ship-guide",
             "sourceBaseline": false
           }
         ]
@@ -1483,7 +1475,7 @@
         },
         {
           "sourcePath": "designs-interiors/menus-printed-matter-and-interior-branding.html",
-          "sourceRoute": "/collectors-notebook/menus-printed-matter-and-interior-branding",
+          "sourceRoute": "/designs-interiors/menus-printed-matter-and-interior-branding",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -1789,7 +1781,7 @@
         },
         {
           "sourcePath": "designs-interiors/french-british-german-and-italian-interior-traditions.html",
-          "sourceRoute": "/collectors-notebook/french-british-german-and-italian-interior-traditions",
+          "sourceRoute": "/designs-interiors/french-british-german-and-italian-interior-traditions",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -2196,17 +2188,57 @@
     },
     {
       "path": "designs-interiors/french-british-german-and-italian-interior-traditions.html",
-      "route": "/collectors-notebook/french-british-german-and-italian-interior-traditions",
+      "route": "/designs-interiors/french-british-german-and-italian-interior-traditions",
       "title": "French, British, German, and Italian Interior Traditions",
       "category": "article-reference",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "byCategory": {
+        "article-reference": 5,
+        "comparative-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/lighting-fixtures-and-decorative-metalwork.html",
+          "sourceRoute": "/designs-interiors/lighting-fixtures-and-decorative-metalwork",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/verandahs-and-winter-gardens-at-sea.html",
+          "sourceRoute": "/designs-interiors/verandahs-and-winter-gardens-at-sea",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/wall-panels-woods-veneers-and-painted-finishes.html",
+          "sourceRoute": "/designs-interiors/wall-panels-woods-veneers-and-painted-finishes",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "french-line.html",
+          "sourceRoute": "/french-line",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "french-vs-british-flagships-between-the-wars.html",
+          "sourceRoute": "/french-vs-british-flagships-between-the-wars",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "from-ocean-liners-to-sail250.html",
@@ -2285,7 +2317,7 @@
         },
         {
           "sourcePath": "designs-interiors/how-route-shaped-interior-planning.html",
-          "sourceRoute": "/collectors-notebook/how-route-shaped-interior-planning",
+          "sourceRoute": "/designs-interiors/how-route-shaped-interior-planning",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -3146,17 +3178,57 @@
     },
     {
       "path": "designs-interiors/how-route-shaped-interior-planning.html",
-      "route": "/collectors-notebook/how-route-shaped-interior-planning",
+      "route": "/designs-interiors/how-route-shaped-interior-planning",
       "title": "How Route Shaped Interior Planning",
       "category": "article-reference",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
+      "baselineInbound": 1,
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 5
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/life-below-deck-crew-and-systems.html",
+          "sourceRoute": "/collections/life-below-deck-crew-and-systems",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/carpets-textiles-and-upholstery-at-sea.html",
+          "sourceRoute": "/designs-interiors/carpets-textiles-and-upholstery-at-sea",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/french-british-german-and-italian-interior-traditions.html",
+          "sourceRoute": "/designs-interiors/french-british-german-and-italian-interior-traditions",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/verandahs-and-winter-gardens-at-sea.html",
+          "sourceRoute": "/designs-interiors/verandahs-and-winter-gardens-at-sea",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/wall-panels-woods-veneers-and-painted-finishes.html",
+          "sourceRoute": "/designs-interiors/wall-panels-woods-veneers-and-painted-finishes",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "how-the-liner-system-worked.html",
@@ -3478,17 +3550,26 @@
     },
     {
       "path": "how-to-read.html",
-      "route": "/reference-objects/how-to-read",
+      "route": "/how-to-read",
       "title": "How to Read a Reference Object",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "reference-objects.html",
+          "sourceRoute": "/reference-objects",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collectors-notebook/how-to-read-an-ocean-liner-postcard.html",
@@ -3582,7 +3663,7 @@
         },
         {
           "sourcePath": "designs-interiors/menus-printed-matter-and-interior-branding.html",
-          "sourceRoute": "/collectors-notebook/menus-printed-matter-and-interior-branding",
+          "sourceRoute": "/designs-interiors/menus-printed-matter-and-interior-branding",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -3905,7 +3986,7 @@
         },
         {
           "sourcePath": "collectors-notebook/silverplate-vs-sterling.html",
-          "sourceRoute": "/collectors-notebook/silver-plate-vs-sterling",
+          "sourceRoute": "/collectors-notebook/silverplate-vs-sterling",
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
@@ -3923,7 +4004,7 @@
         },
         {
           "sourcePath": "designs-interiors/menus-printed-matter-and-interior-branding.html",
-          "sourceRoute": "/collectors-notebook/menus-printed-matter-and-interior-branding",
+          "sourceRoute": "/designs-interiors/menus-printed-matter-and-interior-branding",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -3983,7 +4064,7 @@
         },
         {
           "sourcePath": "collectors-notebook/silverplate-vs-sterling.html",
-          "sourceRoute": "/collectors-notebook/silver-plate-vs-sterling",
+          "sourceRoute": "/collectors-notebook/silverplate-vs-sterling",
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
@@ -4009,17 +4090,32 @@
     },
     {
       "path": "designs-interiors/menus-printed-matter-and-interior-branding.html",
-      "route": "/collectors-notebook/menus-printed-matter-and-interior-branding",
+      "route": "/designs-interiors/menus-printed-matter-and-interior-branding",
       "title": "Menus, Printed Matter, and Interior Branding",
       "category": "article-reference",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "byCategory": {
+        "article-reference": 2
+      },
+      "sources": [
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-ocean-liners-were-provisioned.html",
+          "sourceRoute": "/how-ocean-liners-were-provisioned",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "collectors-notebook/function-first.html",
@@ -4497,7 +4593,7 @@
         },
         {
           "sourcePath": "liner-links.html",
-          "sourceRoute": "/external-references",
+          "sourceRoute": "/liner-links",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -5233,7 +5329,7 @@
         },
         {
           "sourcePath": "designs-interiors/menus-printed-matter-and-interior-branding.html",
-          "sourceRoute": "/collectors-notebook/menus-printed-matter-and-interior-branding",
+          "sourceRoute": "/designs-interiors/menus-printed-matter-and-interior-branding",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -5453,7 +5549,7 @@
         },
         {
           "sourcePath": "how-to-read.html",
-          "sourceRoute": "/reference-objects/how-to-read",
+          "sourceRoute": "/how-to-read",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -5786,7 +5882,7 @@
         },
         {
           "sourcePath": "designs-interiors/french-british-german-and-italian-interior-traditions.html",
-          "sourceRoute": "/collectors-notebook/french-british-german-and-italian-interior-traditions",
+          "sourceRoute": "/designs-interiors/french-british-german-and-italian-interior-traditions",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -5798,7 +5894,7 @@
         },
         {
           "sourcePath": "designs-interiors/how-route-shaped-interior-planning.html",
-          "sourceRoute": "/collectors-notebook/how-route-shaped-interior-planning",
+          "sourceRoute": "/designs-interiors/how-route-shaped-interior-planning",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -5836,59 +5932,95 @@
     },
     {
       "path": "reference-objects/object1.html",
-      "route": "/reference-objects/ro-0001",
+      "route": "/reference-objects/object1",
       "title": "Reference Object",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "reference-objects.html",
+          "sourceRoute": "/reference-objects",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "reference-objects/object2.html",
-      "route": "/reference-objects/ro-0002",
+      "route": "/reference-objects/object2",
       "title": "Reference Object",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "reference-objects.html",
+          "sourceRoute": "/reference-objects",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "reference-objects/object3.html",
-      "route": "/reference-objects/ro-0003",
+      "route": "/reference-objects/object3",
       "title": "Reference Object",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "reference-objects.html",
+          "sourceRoute": "/reference-objects",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "reference-objects/object4.html",
-      "route": "/reference-objects/ro-0004",
+      "route": "/reference-objects/object4",
       "title": "Reference Object",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "reference-objects.html",
+          "sourceRoute": "/reference-objects",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "reference-objects.html",
@@ -5969,7 +6101,7 @@
         },
         {
           "sourcePath": "collectors-notebook/silverplate-vs-sterling.html",
-          "sourceRoute": "/collectors-notebook/silver-plate-vs-sterling",
+          "sourceRoute": "/collectors-notebook/silverplate-vs-sterling",
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
@@ -5987,7 +6119,7 @@
         },
         {
           "sourcePath": "designs-interiors/menus-printed-matter-and-interior-branding.html",
-          "sourceRoute": "/collectors-notebook/menus-printed-matter-and-interior-branding",
+          "sourceRoute": "/designs-interiors/menus-printed-matter-and-interior-branding",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -6011,25 +6143,25 @@
         },
         {
           "sourcePath": "reference-objects/object1.html",
-          "sourceRoute": "/reference-objects/ro-0001",
+          "sourceRoute": "/reference-objects/object1",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "reference-objects/object2.html",
-          "sourceRoute": "/reference-objects/ro-0002",
+          "sourceRoute": "/reference-objects/object2",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "reference-objects/object3.html",
-          "sourceRoute": "/reference-objects/ro-0003",
+          "sourceRoute": "/reference-objects/object3",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "reference-objects/object4.html",
-          "sourceRoute": "/reference-objects/ro-0004",
+          "sourceRoute": "/reference-objects/object4",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -6088,25 +6220,25 @@
         },
         {
           "sourcePath": "reference-objects/object1.html",
-          "sourceRoute": "/reference-objects/ro-0001",
+          "sourceRoute": "/reference-objects/object1",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "reference-objects/object2.html",
-          "sourceRoute": "/reference-objects/ro-0002",
+          "sourceRoute": "/reference-objects/object2",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "reference-objects/object3.html",
-          "sourceRoute": "/reference-objects/ro-0003",
+          "sourceRoute": "/reference-objects/object3",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
           "sourcePath": "reference-objects/object4.html",
-          "sourceRoute": "/reference-objects/ro-0004",
+          "sourceRoute": "/reference-objects/object4",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -6330,17 +6462,33 @@
     },
     {
       "path": "liner-links.html",
-      "route": "/external-references",
+      "route": "/liner-links",
       "title": "Selected Enthusiast & Collector Sites",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
+      "baselineInbound": 1,
+      "byCategory": {
+        "collection": 1,
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/titanic-artifacts-what-survives-and-what-doesnt.html",
+          "sourceRoute": "/collections/titanic-artifacts-what-survives-and-what-doesnt",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "sources.html",
+          "sourceRoute": "/sources",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "community/art.html",
@@ -6718,7 +6866,7 @@
         },
         {
           "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -9070,7 +9218,7 @@
         },
         {
           "sourcePath": "ships/tall-ships-guide.html",
-          "sourceRoute": "/ships/tall-ships",
+          "sourceRoute": "/ships/tall-ships-guide",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -9082,7 +9230,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -9166,7 +9314,7 @@
         },
         {
           "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
+          "sourceRoute": "/what-titanic-teaches-about-evidence",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -9543,7 +9691,7 @@
         },
         {
           "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -9633,7 +9781,7 @@
       "sources": [
         {
           "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -9664,7 +9812,7 @@
       "sources": [
         {
           "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -9829,15 +9977,15 @@
     },
     {
       "path": "ships/tall-ships-guide.html",
-      "route": "/ships/tall-ships",
+      "route": "/ships/tall-ships-guide",
       "title": "Tall Ships",
       "category": "article-reference",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
       "editorialInbound": 0,
-      "baselineInbound": 0,
+      "baselineInbound": 1,
       "byCategory": {},
       "sources": []
     },
@@ -9995,7 +10143,7 @@
         },
         {
           "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
+          "sourceRoute": "/what-titanic-teaches-about-evidence",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -10106,7 +10254,7 @@
         },
         {
           "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
+          "sourceRoute": "/what-titanic-teaches-about-evidence",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -10217,7 +10365,7 @@
         },
         {
           "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
+          "sourceRoute": "/what-titanic-teaches-about-evidence",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -10333,7 +10481,7 @@
         },
         {
           "sourcePath": "designs-interiors/how-route-shaped-interior-planning.html",
-          "sourceRoute": "/collectors-notebook/how-route-shaped-interior-planning",
+          "sourceRoute": "/designs-interiors/how-route-shaped-interior-planning",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -10475,7 +10623,7 @@
         },
         {
           "sourcePath": "designs-interiors/how-route-shaped-interior-planning.html",
-          "sourceRoute": "/collectors-notebook/how-route-shaped-interior-planning",
+          "sourceRoute": "/designs-interiors/how-route-shaped-interior-planning",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -10696,7 +10844,7 @@
         },
         {
           "sourcePath": "collectors-notebook/silverplate-vs-sterling.html",
-          "sourceRoute": "/collectors-notebook/silver-plate-vs-sterling",
+          "sourceRoute": "/collectors-notebook/silverplate-vs-sterling",
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
@@ -10732,7 +10880,7 @@
         },
         {
           "sourcePath": "designs-interiors/menus-printed-matter-and-interior-branding.html",
-          "sourceRoute": "/collectors-notebook/menus-printed-matter-and-interior-branding",
+          "sourceRoute": "/designs-interiors/menus-printed-matter-and-interior-branding",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -11558,7 +11706,7 @@
         },
         {
           "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
+          "sourceRoute": "/what-titanic-teaches-about-evidence",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -11578,17 +11726,94 @@
     },
     {
       "path": "what-titanic-teaches-about-evidence.html",
-      "route": "/titanic-evidence",
+      "route": "/what-titanic-teaches-about-evidence",
       "title": "What Titanic Teaches About Evidence",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 13,
+      "editorialInbound": 12,
+      "baselineInbound": 1,
+      "byCategory": {
+        "article-reference": 8,
+        "hub": 3,
+        "comparative-history": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "authentic-titanic-postcards.html",
+          "sourceRoute": "/authentic-titanic-postcards",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "could-titanic-have-survived-the-collision.html",
+          "sourceRoute": "/could-titanic-have-survived-the-collision",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "cunard-line.html",
+          "sourceRoute": "/cunard-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-accurate-is-the-titanic-movie.html",
+          "sourceRoute": "/how-accurate-is-the-titanic-movie",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-long-did-it-take-titanic-to-sink.html",
+          "sourceRoute": "/how-long-did-it-take-titanic-to-sink",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic-vs-olympic.html",
+          "sourceRoute": "/titanic-vs-olympic",
+          "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "titanic.html",
+          "sourceRoute": "/titanic",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-happened-to-titanic-artifacts.html",
+          "sourceRoute": "/what-happened-to-titanic-artifacts",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "what-was-it-like-aboard-titanic.html",
+          "sourceRoute": "/what-was-it-like-aboard-titanic",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-didnt-titanic-slow-down.html",
+          "sourceRoute": "/why-didnt-titanic-slow-down",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-was-titanic-called-unsinkable.html",
+          "sourceRoute": "/why-was-titanic-called-unsinkable",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "what-was-food-like-on-ocean-liners.html",
@@ -12529,7 +12754,7 @@
         },
         {
           "sourcePath": "designs-interiors/french-british-german-and-italian-interior-traditions.html",
-          "sourceRoute": "/collectors-notebook/french-british-german-and-italian-interior-traditions",
+          "sourceRoute": "/designs-interiors/french-british-german-and-italian-interior-traditions",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -13035,7 +13260,7 @@
         },
         {
           "sourcePath": "collectors-notebook/silverplate-vs-sterling.html",
-          "sourceRoute": "/collectors-notebook/silver-plate-vs-sterling",
+          "sourceRoute": "/collectors-notebook/silverplate-vs-sterling",
           "sourceCategory": "comparative-history",
           "sourceBaseline": false
         },
@@ -13095,7 +13320,7 @@
         },
         {
           "sourcePath": "how-to-read.html",
-          "sourceRoute": "/reference-objects/how-to-read",
+          "sourceRoute": "/how-to-read",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -13894,7 +14119,7 @@
         },
         {
           "sourcePath": "designs-interiors/how-route-shaped-interior-planning.html",
-          "sourceRoute": "/collectors-notebook/how-route-shaped-interior-planning",
+          "sourceRoute": "/designs-interiors/how-route-shaped-interior-planning",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -14021,7 +14246,7 @@
         },
         {
           "sourcePath": "designs-interiors/french-british-german-and-italian-interior-traditions.html",
-          "sourceRoute": "/collectors-notebook/french-british-german-and-italian-interior-traditions",
+          "sourceRoute": "/designs-interiors/french-british-german-and-italian-interior-traditions",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -14202,7 +14427,7 @@
         },
         {
           "sourcePath": "designs-interiors/french-british-german-and-italian-interior-traditions.html",
-          "sourceRoute": "/collectors-notebook/french-british-german-and-italian-interior-traditions",
+          "sourceRoute": "/designs-interiors/french-british-german-and-italian-interior-traditions",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -15510,7 +15735,7 @@
       "sources": [
         {
           "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -15884,7 +16109,7 @@
         },
         {
           "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
+          "sourceRoute": "/what-titanic-teaches-about-evidence",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -16085,23 +16310,43 @@
     },
     {
       "path": "collections/william-francis-gibbs-and-the-ship.html",
-      "route": "/ss-united-states/william-francis-gibbs-and-the-ship",
+      "route": "/collections/william-francis-gibbs-and-the-ship",
       "title": "William Francis Gibbs and the Ship",
       "category": "collection",
       "searchEligible": true,
-      "sitemapListed": true,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 1,
-      "editorialInbound": 1,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 4,
+      "editorialInbound": 4,
       "baselineInbound": 0,
       "byCategory": {
-        "ship-guide": 1
+        "ship-guide": 1,
+        "article-reference": 2,
+        "bridge-page": 1
       },
       "sources": [
         {
-          "sourcePath": "ships/ss-us.html",
-          "sourceRoute": "/ships/ss-us",
+          "sourcePath": "ships/ss-united-states-timeline.html",
+          "sourceRoute": "/ships/ss-united-states-timeline",
           "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-united-states-preservation-reefing-public-memory.html",
+          "sourceRoute": "/ss-united-states-preservation-reefing-public-memory",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-united-states.html",
+          "sourceRoute": "/ss-united-states",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-ss-united-states-still-matters.html",
+          "sourceRoute": "/why-ss-united-states-still-matters",
+          "sourceCategory": "bridge-page",
           "sourceBaseline": false
         }
       ]
@@ -18365,17 +18610,38 @@
     },
     {
       "path": "collectors-notebook/silverplate-vs-sterling.html",
-      "route": "/collectors-notebook/silver-plate-vs-sterling",
+      "route": "/collectors-notebook/silverplate-vs-sterling",
       "title": "Silverplate vs Sterling",
       "category": "comparative-history",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "byCategory": {
+        "article-reference": 3
+      },
+      "sources": [
+        {
+          "sourcePath": "collectors-notebook.html",
+          "sourceRoute": "/collectors-notebook",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collectors-notebook/marks.html",
+          "sourceRoute": "/collectors-notebook/marks",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collectors-notebook/materials.html",
+          "sourceRoute": "/collectors-notebook/materials",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "speed-vs-comfort-what-ocean-liner-companies-optimized-for.html",
@@ -19078,7 +19344,7 @@
         },
         {
           "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
+          "sourceRoute": "/what-titanic-teaches-about-evidence",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -20118,7 +20384,7 @@
         },
         {
           "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -20529,7 +20795,7 @@
         },
         {
           "sourcePath": "what-titanic-teaches-about-evidence.html",
-          "sourceRoute": "/titanic-evidence",
+          "sourceRoute": "/what-titanic-teaches-about-evidence",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -21303,7 +21569,7 @@
       "sources": [
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -21608,17 +21874,171 @@
     },
     {
       "path": "ships/timeline-1900-1960.html",
-      "route": "/timeline-1900-1960",
+      "route": "/ships/timeline-1900-1960",
       "title": "Ocean Liner Timeline",
       "category": "ship-guide",
       "searchEligible": true,
-      "sitemapListed": false,
-      "canonicalDiffersFromPhysical": true,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 26,
+      "editorialInbound": 25,
+      "baselineInbound": 1,
+      "byCategory": {
+        "collection": 18,
+        "article-reference": 7
+      },
+      "sources": [
+        {
+          "sourcePath": "collections/blue-riband-era.html",
+          "sourceRoute": "/collections/blue-riband-era",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/cabin-liner-transition.html",
+          "sourceRoute": "/collections/cabin-liner-transition",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/empire-routes-beyond-the-north-atlantic.html",
+          "sourceRoute": "/collections/empire-routes-beyond-the-north-atlantic",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/floating-palaces-interior-innovation.html",
+          "sourceRoute": "/collections/floating-palaces-interior-innovation",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/french-atlantic-flagships.html",
+          "sourceRoute": "/collections/french-atlantic-flagships",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/from-leviathan-to-united-states.html",
+          "sourceRoute": "/collections/from-leviathan-to-united-states",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/from-vaterland-to-leviathan.html",
+          "sourceRoute": "/collections/from-vaterland-to-leviathan",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/german-prestige-liners.html",
+          "sourceRoute": "/collections/german-prestige-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/immigrant-era-atlantic-liners.html",
+          "sourceRoute": "/collections/immigrant-era-atlantic-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/liners-rebuilt-and-renamed.html",
+          "sourceRoute": "/collections/liners-rebuilt-and-renamed",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/lost-liners-and-interrupted-careers.html",
+          "sourceRoute": "/collections/lost-liners-and-interrupted-careers",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/olympic-class-liners.html",
+          "sourceRoute": "/collections/olympic-class-liners",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/queen-mary-at-war.html",
+          "sourceRoute": "/collections/queen-mary-at-war",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-birth-of-the-modern-passenger-ship-1838-1875.html",
+          "sourceRoute": "/collections/the-birth-of-the-modern-passenger-ship-1838-1875",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-end-of-the-atlantic-express-liner.html",
+          "sourceRoute": "/collections/the-end-of-the-atlantic-express-liner",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/the-superliner-race.html",
+          "sourceRoute": "/collections/the-superliner-race",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/tourist-third-cabin-democratization.html",
+          "sourceRoute": "/collections/tourist-third-cabin-democratization",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "collections/white-stars-big-four.html",
+          "sourceRoute": "/collections/white-stars-big-four",
+          "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors.html",
+          "sourceRoute": "/designs-interiors",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "designs-interiors/how-route-shaped-interior-planning.html",
+          "sourceRoute": "/designs-interiors/how-route-shaped-interior-planning",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "how-to-use-the-ship-archive.html",
+          "sourceRoute": "/how-to-use-the-ship-archive",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ocean-liner-research.html",
+          "sourceRoute": "/ocean-liner-research",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/propulsion-technology-timeline.html",
+          "sourceRoute": "/ships/propulsion-technology-timeline",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/routes-and-trade-lanes-timeline.html",
+          "sourceRoute": "/ships/routes-and-trade-lanes-timeline",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "timelines-history.html",
+          "sourceRoute": "/timelines-history",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "ships/oceania.html",
@@ -22646,7 +23066,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -22944,7 +23364,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -23215,7 +23635,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -23338,7 +23758,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -23393,7 +23813,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -23582,7 +24002,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -23767,7 +24187,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -23957,7 +24377,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -24236,7 +24656,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -24377,7 +24797,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -25010,7 +25430,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -25323,7 +25743,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -25616,7 +26036,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -26167,7 +26587,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -26287,7 +26707,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -27059,7 +27479,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -27684,7 +28104,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -27789,7 +28209,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -28345,7 +28765,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -28437,7 +28857,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -28600,7 +29020,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -29186,7 +29606,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -30186,7 +30606,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -30924,7 +31344,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -31070,7 +31490,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -31465,7 +31885,7 @@
       "sources": [
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         }
@@ -31701,7 +32121,7 @@
         },
         {
           "sourcePath": "collections/william-francis-gibbs-and-the-ship.html",
-          "sourceRoute": "/ss-united-states/william-francis-gibbs-and-the-ship",
+          "sourceRoute": "/collections/william-francis-gibbs-and-the-ship",
           "sourceCategory": "collection",
           "sourceBaseline": false
         },
@@ -31767,7 +32187,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
@@ -31901,7 +32321,7 @@
         },
         {
           "sourcePath": "ships/timeline-1900-1960.html",
-          "sourceRoute": "/timeline-1900-1960",
+          "sourceRoute": "/ships/timeline-1900-1960",
           "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
