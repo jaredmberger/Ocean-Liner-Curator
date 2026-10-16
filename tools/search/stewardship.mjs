@@ -84,6 +84,14 @@ findings.sort((a,b)=>a.type.localeCompare(b.type)||a.scope.localeCompare(b.scope
 let previous = null;
 try { previous = JSON.parse(await readFile(statePath,'utf8')); }
 catch (e) { if (e.code !== 'ENOENT') errors.push({audit:'prior-state',error:String(e.message).slice(0,500)}); }
+// A source timeout or transient network error does not establish recovery.
+// Preserve previously flagged sources until that URL is actually rechecked.
+const uncertainSources=new Set((sources?.results||[]).filter(x=>x.kind==='unverified'||x.kind==='observed'&&x.status>=500).map(x=>x.url));
+for(const old of previous?.cases||[]){
+  if(old.type.startsWith('sources:') && uncertainSources.has(old.scope) && !findings.some(x=>x.id===old.id)){
+    findings.push({id:old.id,type:old.type,scope:old.scope,severity:old.severity,status:'needs-human-review',description:old.description,evidence:old.evidence});
+  }
+}
 const snapshot = reconcile(previous, findings, new Date().toISOString(),
   [urls ? 'canonical' : null, links ? 'internal-links' : null, chronology ? 'historical' : null, sources ? 'sources' : null].filter(Boolean));
 await mkdir(dirname(statePath),{recursive:true});
