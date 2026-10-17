@@ -74,22 +74,23 @@ if(chronology) for(const row of chronology){
     'Review historical chronology candidate: '+row.issue,
     {subject:row.subject,level:row.level,sourceEvidence:row.evidence,method:'narrow Key Facts date heuristic'},'review'));
 }
-if(sources) for(const row of sources.results||[]){
-  if(row.kind==='missing-candidate') findings.push(finding('sources:http-missing',row.url,
-    'External reference returned HTTP '+row.status+' in bounded pilot; verify independently',
-    {url:row.url,sourcePages:row.sourcePages,status:row.status,finalUrl:row.finalUrl,
-      caveat:'May be bot-dependent or temporary; never automatically remove a citation'},'review'));
+if(sources) for(const row of sources.confirmedCandidates||[]){
+  findings.push(finding('sources:http-missing',row.url,
+    'External source returned 404/410 on at least two separate days; independently verify before editing',
+    {url:row.url,sourcePages:row.sourcePages,lastObservation:row.lastObservation,
+      missingStreak:row.missingStreak,caveat:'Response status cannot prove a source or its historical evidence is permanently lost'},'review'));
 }
 findings.sort((a,b)=>a.type.localeCompare(b.type)||a.scope.localeCompare(b.scope));
 let previous = null;
 try { previous = JSON.parse(await readFile(statePath,'utf8')); }
 catch (e) { if (e.code !== 'ENOENT') errors.push({audit:'prior-state',error:String(e.message).slice(0,500)}); }
-// A source timeout or transient network error does not establish recovery.
-// Preserve previously flagged sources until that URL is actually rechecked.
-const uncertainSources=new Set((sources?.results||[]).filter(x=>x.kind==='unverified'||x.kind==='observed'&&x.status>=500).map(x=>x.url));
+// Preserve previously flagged sources whenever they were not positively rechecked.
+// This includes cache loss: missing local source history must not silently close a case.
+const cleared=new Set((sources?.results||[]).filter(x=>x.kind==='accessible').map(x=>x.url));
 for(const old of previous?.cases||[]){
-  if(old.type.startsWith('sources:') && uncertainSources.has(old.scope) && !findings.some(x=>x.id===old.id)){
-    findings.push({id:old.id,type:old.type,scope:old.scope,severity:old.severity,status:'needs-human-review',description:old.description,evidence:old.evidence});
+  if(old.type.startsWith('sources:')&&!cleared.has(old.scope)&&!findings.some(x=>x.id===old.id)){
+    findings.push({id:old.id,type:old.type,scope:old.scope,severity:old.severity,
+      status:'needs-human-review',description:old.description,evidence:old.evidence});
   }
 }
 const snapshot = reconcile(previous, findings, new Date().toISOString(),
@@ -120,6 +121,7 @@ const markdown = [
   '**Audit health:** '+report.auditHealth,
   '',
   '**Counts:** '+JSON.stringify(counts),
+  '', '**External source coverage:** '+(sources?`${sources.checkedThisRun} checked this run; ${sources.totalEverChecked}/${sources.inventory} checked in available history`:'unavailable'),
   '', '**Lifecycle changes:** '+JSON.stringify(report.changes),
   '', '**Note:** State persists through GitHub Actions cache (best effort). Cache eviction resets first-seen history; this is not yet an authoritative review ledger.',
   '',
