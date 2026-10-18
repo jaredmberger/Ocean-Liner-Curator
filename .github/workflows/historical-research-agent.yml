@@ -51,3 +51,47 @@ jobs:
           path: research-agent-output/
           if-no-files-found: ignore
           retention-days: 30
+
+  propose-memory:
+    name: Propose research ledger update
+    needs: research
+    if: ${{ needs.research.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: historical-research-dossiers
+          path: research-agent-output
+      - name: Prepare candidate ledger changes
+        env:
+          RESEARCH_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 scripts/propose-research-memory.py \
+            --proposal research-agent-output/proposed-ledger-additions.json \
+            --run-url "$RESEARCH_RUN_URL"
+      - name: Create reviewable ledger-only PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RESEARCH_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ ! -s research-ledger-added.txt ]; then
+            echo "No new investigation records; skipping pull request." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branch="automation/historical-research-memory-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add research/agent-ledger.json
+          git commit -m "Record historical research run ${GITHUB_RUN_ID} for editorial review"
+          git push --set-upstream origin "$branch"
+          body=$(printf 'Research ledger proposal from [run %s](%s).\\n\\nInvestigation records only; historical claims and sources remain **unverified**. Merge only after inspecting the run dossiers. No ship guides were changed.\\n' "$GITHUB_RUN_ID" "$RESEARCH_RUN_URL")
+          gh pr create --base main --head "$branch" \
+            --title "Review Historical Research Agent memory from run ${GITHUB_RUN_ID}" \
+            --body "$body"
