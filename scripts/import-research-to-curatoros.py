@@ -9,6 +9,34 @@ import urllib.request
 
 ENDPOINT = "https://curator.oceanliners.net/api/research-agent/import"
 
+def classify_error(error):
+    """Report fixed categories only; never log response bodies or credentials."""
+    headers = error.headers
+    markers = []
+    for label, header in (
+        ("access-location", "Location"),
+        ("access-request-id", "CF-Access-Request-Id"),
+        ("challenge-indicator", "cf-mitigated"),
+        ("worker-indicator", "x-worker-error"),
+    ):
+        if headers.get(header):
+            markers.append(label)
+    # Inspect a bounded error body locally. Only emit hard-coded classifications.
+    sample = error.read(4096).lower()
+    if b"error 1020" in sample or b"access denied" in sample and b"cloudflare" in sample:
+        category = "cloudflare-access-denied-page"
+    elif b"cloudflare access" in sample or b"/cdn-cgi/access/" in sample:
+        category = "cloudflare-access-response"
+    elif b"attention required" in sample or b"just a moment" in sample or b"challenge-platform" in sample:
+        category = "cloudflare-challenge-response"
+    elif b"forbidden" in sample:
+        category = "generic-forbidden"
+    elif b"error code: 403" in sample:
+        category = "generic-403"
+    else:
+        category = "unclassified"
+    return category, markers
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--directory", type=Path, default=Path("research-agent-output"))
@@ -46,9 +74,11 @@ def main():
             cf_ray = (error.headers.get("CF-Ray") or "unavailable").splitlines()[0][:100]
             content_type = (error.headers.get("Content-Type") or "unknown").split(";")[0][:60]
             service = (error.headers.get("Server") or "unknown").splitlines()[0][:40]
+            category, markers = classify_error(error)
             print(f"{path.name}: import failed: HTTP {error.code}; content-type={content_type}; server={service}; CF-Ray={cf_ray}")
+            print(f"Response classification: {category}; header indicators: {','.join(markers) or 'none'}")
             if error.code == 403:
-                print("403 is not emitted by the Research Agent endpoint; investigate Cloudflare Access or WAF security events using the CF-Ray.")
+                print("403 is not emitted by the Research Agent endpoint; compare Access, WAF, and response classification for the CF-Ray.")
             raise SystemExit(1) from None
 
 if __name__ == "__main__":
