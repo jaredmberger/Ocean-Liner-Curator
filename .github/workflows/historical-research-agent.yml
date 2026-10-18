@@ -123,5 +123,7 @@ jobs:
       - name: Import unverified evidence registers
         env:
           CURATOROS_RESEARCH_IMPORT_TOKEN: ${{ secrets.CURATOROS_RESEARCH_IMPORT_TOKEN }}
+          CURATOROS_CF_ACCESS_CLIENT_ID: ${{ secrets.CURATOROS_CF_ACCESS_CLIENT_ID }}
+          CURATOROS_CF_ACCESS_CLIENT_SECRET: ${{ secrets.CURATOROS_CF_ACCESS_CLIENT_SECRET }}
           RESEARCH_RUN_ID: ${{ github.run_id }}
         run: python3 scripts/import-research-to-curatoros.py --directory research-agent-output --run-id "$RESEARCH_RUN_ID"
