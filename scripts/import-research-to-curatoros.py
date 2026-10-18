@@ -17,6 +17,10 @@ def main():
     token = os.environ.get("CURATOROS_RESEARCH_IMPORT_TOKEN", "")
     if not token:
         raise SystemExit("Missing CURATOROS_RESEARCH_IMPORT_TOKEN; no upload attempted")
+    access_id = os.environ.get("CURATOROS_CF_ACCESS_CLIENT_ID", "")
+    access_secret = os.environ.get("CURATOROS_CF_ACCESS_CLIENT_SECRET", "")
+    if not access_id or not access_secret:
+        raise SystemExit("Cloudflare Access service credentials are required; no upload attempted")
     files = sorted(args.directory.glob("*.evidence.json"))
     if not files:
         raise SystemExit("No evidence registers; no upload attempted")
@@ -26,7 +30,8 @@ def main():
         request = urllib.request.Request(
             ENDPOINT,
             data=payload,
-            headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"},
+            headers={"Authorization": "Bearer " + token, "Content-Type": "application/json",
+                     "CF-Access-Client-Id": access_id, "CF-Access-Client-Secret": access_secret},
             method="POST",
         )
         try:
