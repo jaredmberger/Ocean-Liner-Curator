@@ -42,7 +42,14 @@ def main():
                     raise RuntimeError("Import response did not indicate success")
                 print(f"{path.name}: {result.get('imported', 0)} new, {result.get('already_present', 0)} existing")
         except urllib.error.HTTPError as error:
-            raise SystemExit(f"{path.name}: CuratorOS import returned HTTP {error.code} (verify access, token, and enable flag)") from None
+            # Response metadata only; never echo credentials, response body or full URLs.
+            cf_ray = (error.headers.get("CF-Ray") or "unavailable").splitlines()[0][:100]
+            content_type = (error.headers.get("Content-Type") or "unknown").split(";")[0][:60]
+            service = (error.headers.get("Server") or "unknown").splitlines()[0][:40]
+            print(f"{path.name}: import failed: HTTP {error.code}; content-type={content_type}; server={service}; CF-Ray={cf_ray}")
+            if error.code == 403:
+                print("403 is not emitted by the Research Agent endpoint; investigate Cloudflare Access or WAF security events using the CF-Ray.")
+            raise SystemExit(1) from None
 
 if __name__ == "__main__":
     main()
