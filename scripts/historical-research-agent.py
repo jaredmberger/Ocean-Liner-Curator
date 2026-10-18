@@ -12,6 +12,7 @@ import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 GUIDES = ROOT / "ships"
+LEDGER = ROOT / "research" / "agent-ledger.json"
 SYSTEM = """You are the Ocean Liner Curator Historical Research Agent. Investigate cautiously.
 You must distinguish documented evidence, interpretation, and unknowns.
 Prefer original contemporary documents, national archives, inquiries, newspapers, and established maritime reference collections.
@@ -28,9 +29,20 @@ def text_only(source):
     source = re.sub(r"(?s)<[^>]*>", " ", source)
     return html.unescape(re.sub(r"\s+", " ", source)).strip()
 
-def candidates():
+def load_ledger():
+    if not LEDGER.exists():
+        raise RuntimeError(f"Missing research ledger: {LEDGER}")
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
+    if ledger.get("schema_version") != 1 or not isinstance(ledger.get("entries"), dict):
+        raise RuntimeError("Invalid research ledger schema")
+    return ledger
+
+def candidates(ledger):
     guides = []
+    reviewed = ledger["entries"]
     for file in GUIDES.glob("*.html"):
+        if file.name in reviewed:
+            continue  # Earlier investigation recorded in persistent reviewed ledger.
         raw = file.read_text(encoding="utf-8", errors="replace")
         body = text_only(raw)
         if len(body) < 250:
@@ -82,10 +94,12 @@ def main():
         raise SystemExit("OPENAI_API_KEY is required; no research run attempted.")
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
-    selected = candidates()[:args.count]
+    ledger = load_ledger()
+    selected = candidates(ledger)[:args.count]
     if not selected:
         raise SystemExit("No eligible ship guides found")
     summary = ["# Historical Research Agent — Review Queue", "", f"Run: {dt.datetime.now(dt.timezone.utc).isoformat()}", "", "Research leads only. No guide files modified. Human verification required.", ""]
+    pending = {"schema_version": 1, "entries": {}}
     failures = 0
     for length, file, guide in selected:
         print(f"Investigating {file.name} ({length} characters)", flush=True)
@@ -94,11 +108,18 @@ def main():
             path = output / (file.stem + ".md")
             path.write_text(f"# Research dossier — {file.stem}\n\nSource guide: ships/{file.name}\n\n{dossier}\n", encoding="utf-8")
             summary.append(f"- {file.name}: dossier generated ({path.name})")
+            pending["entries"][file.name] = {
+                "investigated_at": dt.datetime.now(dt.timezone.utc).date().isoformat(),
+                "review_status": "pending_editorial_review",
+                "dossier": path.name,
+                "notes": "Unverified research leads. Review before incorporation into the authoritative ledger."
+            }
         except (urllib.error.URLError, TimeoutError, RuntimeError, ValueError) as exc:
             failures += 1
             message = str(exc).replace("\\n", " ")[:500]
             print(f"::error title=Research dossier failed::{file.name}: {type(exc).__name__}: {message}", flush=True)
             summary.append(f"- {file.name}: FAILED ({type(exc).__name__}: {message}); no findings inferred")
+    (output / "proposed-ledger-additions.json").write_text(json.dumps(pending, indent=2) + "\n", encoding="utf-8")
     (output / "README.md").write_text("\n".join(summary) + "\n", encoding="utf-8")
     print("\n".join(summary), flush=True)
     if failures:
