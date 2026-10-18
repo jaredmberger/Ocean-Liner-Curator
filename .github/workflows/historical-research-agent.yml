@@ -37,6 +37,9 @@ jobs:
           RESEARCH_MODEL: gpt-5
           GUIDE_COUNT: ${{ inputs.guide_count }}
         run: python3 scripts/historical-research-agent.py --count "$GUIDE_COUNT"
+      - name: Build offline research review dashboard
+        if: success()
+        run: python3 scripts/build-research-review.py --input research-agent-output
       - name: Show report summary
         if: always()
         run: |
