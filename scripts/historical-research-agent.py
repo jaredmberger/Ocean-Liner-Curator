@@ -44,7 +44,8 @@ def research(name, guide):
     payload = {
         "model": os.getenv("RESEARCH_MODEL", "gpt-5"),
         "tools": [{"type": "web_search"}],
-        "max_output_tokens": 3000,
+        "max_output_tokens": 7000,
+        "reasoning": {"effort": "low"},
         "instructions": SYSTEM,
         "input": f"Investigate this existing vessel guide. Guide path: ships/{name}\nExisting text excerpt (may be incomplete):\n{guide[:11500]}\nSeek a few meaningful evidence-backed research leads, not a rewrite.",
     }
@@ -63,7 +64,11 @@ def research(name, guide):
                 if part.get("type") == "output_text":
                     chunks.append(part.get("text", ""))
     if not chunks:
-        raise RuntimeError("Research model returned no textual dossier")
+        status = result.get("status", "unknown")
+        reason = (result.get("incomplete_details") or {}).get("reason", "not provided")
+        types = ",".join(item.get("type", "?") for item in result.get("output", []))
+        usage = result.get("usage") or {}
+        raise RuntimeError(f"Empty dossier: status={status}; incomplete_reason={reason}; output_types={types}; output_tokens={usage.get('output_tokens', 'unknown')}")
     return "\n\n".join(chunks)
 
 def main():
@@ -81,6 +86,7 @@ def main():
     if not selected:
         raise SystemExit("No eligible ship guides found")
     summary = ["# Historical Research Agent — Review Queue", "", f"Run: {dt.datetime.now(dt.timezone.utc).isoformat()}", "", "Research leads only. No guide files modified. Human verification required.", ""]
+    failures = 0
     for length, file, guide in selected:
         print(f"Investigating {file.name} ({length} characters)", flush=True)
         try:
@@ -89,9 +95,14 @@ def main():
             path.write_text(f"# Research dossier — {file.stem}\n\nSource guide: ships/{file.name}\n\n{dossier}\n", encoding="utf-8")
             summary.append(f"- {file.name}: dossier generated ({path.name})")
         except (urllib.error.URLError, TimeoutError, RuntimeError, ValueError) as exc:
-            summary.append(f"- {file.name}: FAILED ({type(exc).__name__}); no findings inferred")
+            failures += 1
+            message = str(exc).replace("\\n", " ")[:500]
+            print(f"::error title=Research dossier failed::{file.name}: {type(exc).__name__}: {message}", flush=True)
+            summary.append(f"- {file.name}: FAILED ({type(exc).__name__}: {message}); no findings inferred")
     (output / "README.md").write_text("\n".join(summary) + "\n", encoding="utf-8")
     print("\n".join(summary), flush=True)
+    if failures:
+        raise SystemExit(f"{failures} of {len(selected)} research dossiers failed")
 
 if __name__ == "__main__":
     main()
