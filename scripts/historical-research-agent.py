@@ -22,7 +22,7 @@ Respect the vessel's exact identity and phase of service; distinguish namesakes 
 Never recommend silently overwriting existing text. Make modest, specific additions only where clearly warranted.
 Never recommend generating an image or copying copyrighted source text.
 Return Markdown with headings: Research question; Current guide baseline; Candidate findings (each with a source URL and confidence); Contradictions and uncertainties; Recommended verification; Proposed editorial action.
-If credible evidence cannot be found, say so and recommend no change."""
+For each proposed finding give: exact claim, direct source URL, publisher/institution and date if known, source type (contemporary primary / archival catalog / scholarly secondary / general secondary / derivative), and evidence access status (actual source read / search snippet only / inaccessible). Compare it explicitly with the current guide: already present, new, conflict or unclear. Note ship identities and service phases, competing evidence, uncertainty and confidence rationale. Do not mistake search snippets for source verification, or repeated derivative reports for independent corroboration. Favor no more than three strong leads. Finish with sections Sources inspected, Unverified source leads, Unresolved questions, and Editorial triage (no change / verification needed / candidate for human review). If credible evidence cannot be found, say so and recommend no change."""
 
 def text_only(source):
     source = re.sub(r"(?is)<(script|style|nav|footer)\b.*?</\1>", " ", source)
@@ -59,7 +59,7 @@ def research(name, guide):
         "max_output_tokens": 7000,
         "reasoning": {"effort": "low"},
         "instructions": SYSTEM,
-        "input": f"Investigate this existing vessel guide. Guide path: ships/{name}\nExisting text excerpt (may be incomplete):\n{guide[:11500]}\nSeek a few meaningful evidence-backed research leads, not a rewrite.",
+        "input": f"Investigate this existing vessel guide. Guide path: ships/{name}\nExisting text excerpt (may be incomplete):\n{guide[:11500]}\nSeek up to three meaningful evidence-backed research leads, not a rewrite. Avoid repeating claims already in the guide. Never present a search-result snippet as primary-source verification.",
     }
     request = urllib.request.Request(
         "https://api.openai.com/v1/responses",
