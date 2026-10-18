@@ -8,7 +8,7 @@ When disabled, research works as before, generating dossiers and opening the usu
 
 1. Verify the `curator.oceanliners.net` Pages deployment and Cloudflare Access policies, including service-to-service requests to `/api/research-agent/import`.
 2. In CuratorOS's **server-side** Cloudflare Pages environment, configure a strong secret `RESEARCH_AGENT_IMPORT_TOKEN`, and only after security review set `RESEARCH_AGENT_IMPORT_ENABLED=true`.
-3. In the **Ocean-Liner-Curator** GitHub Actions repository secrets, configure `CURATOROS_RESEARCH_IMPORT_TOKEN` with that token. Never expose it to browser JavaScript or commit it to Git.
+3. In the **Ocean-Liner-Curator** GitHub Actions repository secrets, configure `CURATOROS_RESEARCH_IMPORT_TOKEN` with that token. Create or use a narrowly scoped Cloudflare Access **service token authorized for the CuratorOS application**, and separately set `CURATOROS_CF_ACCESS_CLIENT_ID` and `CURATOROS_CF_ACCESS_CLIENT_SECRET` in GitHub Actions secrets. Both Cloudflare Access and the application bearer token must authorize the request. Never expose credentials in browser JavaScript or commit them to Git.
 4. Test one ship with the opt-in checkbox. Check the separate `import-curatoros` job's status, then verify storage using a controlled Cloudflare administrative method.
 5. Leave the checkbox off during regular research until we have authenticated readback and archival export/recovery tests.
 
