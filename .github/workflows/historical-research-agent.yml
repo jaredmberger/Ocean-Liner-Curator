@@ -9,6 +9,11 @@ on:
         default: '3'
         type: choice
         options: ['1', '2', '3', '4', '5']
+      import_to_curatoros:
+        description: 'Opt in to CuratorOS evidence import (requires separately enabled protected API)'
+        required: true
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -98,3 +103,25 @@ jobs:
           gh pr create --base main --head "$branch" \
             --title "Review Historical Research Agent memory from run ${GITHUB_RUN_ID}" \
             --body "$body"
+
+  import-curatoros:
+    name: Optional protected CuratorOS evidence intake
+    needs: research
+    if: ${{ needs.research.result == 'success' && inputs.import_to_curatoros == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: historical-research-dossiers
+          path: research-agent-output
+      - name: Import unverified evidence registers
+        env:
+          CURATOROS_RESEARCH_IMPORT_TOKEN: ${{ secrets.CURATOROS_RESEARCH_IMPORT_TOKEN }}
+          RESEARCH_RUN_ID: ${{ github.run_id }}
+        run: python3 scripts/import-research-to-curatoros.py --directory research-agent-output --run-id "$RESEARCH_RUN_ID"
