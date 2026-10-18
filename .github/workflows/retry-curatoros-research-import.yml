@@ -1,0 +1,45 @@
+name: Retry CuratorOS Research Import
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: 'Historical Research Agent workflow run ID with an existing research artifact'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  retry-import:
+    name: Retry existing research artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate source run ID
+        env:
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+        run: |
+          if ! [[ "$SOURCE_RUN_ID" =~ ^[0-9]{1,20}$ ]]; then
+            echo "::error::The source run ID must contain only digits."
+            exit 1
+          fi
+      - name: Download existing research artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: historical-research-dossiers
+          path: research-agent-output
+          run-id: ${{ inputs.source_run_id }}
+          github-token: ${{ github.token }}
+      - name: Retry protected CuratorOS intake
+        env:
+          CURATOROS_RESEARCH_IMPORT_TOKEN: ${{ secrets.CURATOROS_RESEARCH_IMPORT_TOKEN }}
+          CURATOROS_CF_ACCESS_CLIENT_ID: ${{ secrets.CURATOROS_CF_ACCESS_CLIENT_ID }}
+          CURATOROS_CF_ACCESS_CLIENT_SECRET: ${{ secrets.CURATOROS_CF_ACCESS_CLIENT_SECRET }}
+          RESEARCH_RUN_ID: ${{ inputs.source_run_id }}
+        run: python3 scripts/import-research-to-curatoros.py --directory research-agent-output --run-id "$RESEARCH_RUN_ID"
