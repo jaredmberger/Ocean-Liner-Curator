@@ -1,0 +1,53 @@
+name: Historical Research Agent
+
+on:
+  workflow_dispatch:
+    inputs:
+      guide_count:
+        description: 'Number of short guides to investigate (1–5)'
+        required: true
+        default: '3'
+        type: choice
+        options: ['1', '2', '3', '4', '5']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: historical-research-agent
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify API credential exists
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::Configure repository secret OPENAI_API_KEY to enable research."
+            exit 1
+          fi
+      - name: Produce research dossiers (read-only)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RESEARCH_MODEL: gpt-5
+          GUIDE_COUNT: ${{ inputs.guide_count }}
+        run: python3 scripts/historical-research-agent.py --count "$GUIDE_COUNT"
+      - name: Show report summary
+        if: always()
+        run: |
+          if [ -f research-agent-output/README.md ]; then
+            cat research-agent-output/README.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Upload dossiers for editorial review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-research-dossiers
+          path: research-agent-output/
+          if-no-files-found: ignore
+          retention-days: 30
