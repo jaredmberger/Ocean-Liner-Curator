@@ -45,4 +45,4 @@ jobs:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           SOURCE_RUN_ID: ${{ inputs.source_run_id }}
-        run: python3 scripts/archive-research-to-r2.py --directory research-agent-output --run-id "$SOURCE_RUN_ID"
+        run: python3 scripts/archive-research-to-r2.py --directory research-agent-output --run-id "$SOURCE_RUN_ID" --allow-legacy-markdown-only
