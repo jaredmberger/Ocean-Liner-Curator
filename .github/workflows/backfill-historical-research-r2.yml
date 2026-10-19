@@ -1,0 +1,48 @@
+name: Backfill Historical Research Dossiers to R2
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: "Existing Historical Research Agent workflow run ID"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  backfill:
+    name: Archive existing research artifact to private R2
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate original run ID
+        env:
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+        run: |
+          if ! [[ "$SOURCE_RUN_ID" =~ ^[0-9]{1,20}$ ]]; then
+            echo "::error::Expected a numeric original workflow run ID."
+            exit 1
+          fi
+      - name: Download existing historical research artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: historical-research-dossiers
+          path: research-agent-output
+          run-id: ${{ inputs.source_run_id }}
+          github-token: ${{ github.token }}
+      - name: Install R2 archive client
+        run: python3 -m pip install 'boto3>=1.35,<2'
+      - name: Archive existing unverified dossiers
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_RESEARCH_BUCKET: ${{ vars.R2_RESEARCH_BUCKET }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+        run: python3 scripts/archive-research-to-r2.py --directory research-agent-output --run-id "$SOURCE_RUN_ID"
