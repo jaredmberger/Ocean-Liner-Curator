@@ -20,6 +20,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--directory", type=Path, required=True)
     ap.add_argument("--run-id", required=True)
+    ap.add_argument("--allow-legacy-markdown-only", action="store_true", help="Allow historical dossier artifacts without evidence JSON")
     args = ap.parse_args()
     if not RUN_ID.fullmatch(args.run_id):
         ap.error("run-id must contain 1–20 digits")
@@ -36,8 +37,10 @@ def main():
     files = sorted(p for p in args.directory.iterdir() if p.is_file()
                    and (p.name.endswith(SUFFIXES)) and ALLOWED.fullmatch(p.name)
                    and not p.is_symlink())
-    if not files or not any(p.name.endswith(".evidence.json") for p in files):
-        raise SystemExit("No research evidence registers found")
+    markdown = [p for p in files if p.name.endswith(".md") and p.name != "README.md"]
+    evidence = [p for p in files if p.name.endswith(".evidence.json")]
+    if not evidence and not (args.allow_legacy_markdown_only and markdown):
+        raise SystemExit("No research evidence registers found (legacy Markdown requires explicit backfill flag)")
     for path in files:
         if path.stat().st_size > MAX_FILE_SIZE:
             raise SystemExit(f"Research file exceeds maximum size: {path.name}")
@@ -50,6 +53,8 @@ def main():
                                           retries={"max_attempts": 3, "mode": "standard"}))
     manifest = {"schema_version": 1, "run_id": args.run_id,
                 "editorial_status": "unverified_pending_editorial_review",
+                "evidence_registers_present": bool(evidence),
+                "legacy_markdown_only": not bool(evidence),
                 "files": []}
     for path in files:
         data = path.read_bytes()
