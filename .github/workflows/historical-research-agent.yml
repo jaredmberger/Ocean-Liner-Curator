@@ -9,6 +9,11 @@ on:
         default: '3'
         type: choice
         options: ['1', '2', '3', '4', '5']
+      archive_to_r2:
+        description: 'Archive research to private R2 (requires bucket and scoped credentials)'
+        required: true
+        default: false
+        type: boolean
       import_to_curatoros:
         description: 'Opt in to CuratorOS evidence import (requires separately enabled protected API)'
         required: true
@@ -103,6 +108,33 @@ jobs:
           gh pr create --base main --head "$branch" \
             --title "Review Historical Research Agent memory from run ${GITHUB_RUN_ID}" \
             --body "$body"
+
+  archive-r2:
+    name: Optional permanent private dossier archive
+    needs: research
+    if: ${{ needs.research.result == 'success' && inputs.archive_to_r2 == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: historical-research-dossiers
+          path: research-agent-output
+      - name: Install R2 S3 client
+        run: python3 -m pip install 'boto3>=1.35,<2'
+      - name: Archive unverified research privately
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_RESEARCH_BUCKET: ${{ vars.R2_RESEARCH_BUCKET }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          RESEARCH_RUN_ID: ${{ github.run_id }}
+        run: python3 scripts/archive-research-to-r2.py --directory research-agent-output --run-id "$RESEARCH_RUN_ID"
 
   import-curatoros:
     name: Optional protected CuratorOS evidence intake
