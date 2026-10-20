@@ -57,7 +57,7 @@ jobs:
     needs: guard
     if: ${{ needs.guard.outputs.proceed == 'true' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - name: Verify API credential exists
@@ -131,7 +131,7 @@ jobs:
           git add research/agent-ledger.json
           git commit -m "Record historical research run ${GITHUB_RUN_ID} for editorial review"
           git push --set-upstream origin "$branch"
-          body=$(printf 'Research ledger proposal from [run %s](%s).\\n\\nInvestigation records only; historical claims and sources remain **unverified**. Merge only after inspecting the run dossiers. No ship guides were changed.\\n' "$GITHUB_RUN_ID" "$RESEARCH_RUN_URL")
+          body=$(printf 'Research ledger proposal from [run %s](%s).\\n\\nInvestigation records only; historical claims and sources remain **unverified**. Only the investigation record is eligible for validated auto-merge; historical claims remain pending human review. No ship guides were changed.\\n' "$GITHUB_RUN_ID" "$RESEARCH_RUN_URL")
           pr_url=$(gh pr create --base main --head "$branch" \
             --title "Review Historical Research Agent memory from run ${GITHUB_RUN_ID}" \
             --body "$body")
