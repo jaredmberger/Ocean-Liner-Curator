@@ -42,7 +42,7 @@ def main():
         f"https://github.com/jaredmberger/Ocean-Liner-Curator/actions/runs/{args.run_id}"
     )
     for name in added:
-        if not re.fullmatch(r"[a-zA-Z0-9_-]+\\.html", name):
+        if not re.fullmatch(r"[a-zA-Z0-9_-]+\.html", name):
             raise SystemExit(f"Invalid ship guide: {name}")
         if not Path("ships", name).is_file():
             raise SystemExit(f"Ship guide missing: {name}")
