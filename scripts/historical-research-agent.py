@@ -7,6 +7,10 @@ import json
 import os
 from pathlib import Path
 import re
+import random
+import time
+from datetime import timezone
+from email.utils import parsedate_to_datetime
 import urllib.error
 import urllib.request
 
@@ -51,6 +55,40 @@ def candidates(ledger):
         guides.append((len(body), file, body))
     return sorted(guides, key=lambda x: (x[0], x[1].name))
 
+def api_response(payload):
+    """Bounded retry of transient API failures; quota exhaustion remains a failure."""
+    key = os.environ["OPENAI_API_KEY"]
+    body = json.dumps(payload).encode()
+    for attempt in range(5):
+        request = urllib.request.Request(
+            "https://api.openai.com/v1/responses",
+            data=body,
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=180) as response:
+                return json.load(response)
+        except urllib.error.HTTPError as exc:
+            detail = exc.read(4096).decode("utf-8", errors="replace")
+            if exc.code == 429 and ("insufficient_quota" in detail or "billing_hard_limit_reached" in detail):
+                raise RuntimeError("OpenAI API quota exhausted; check billing and project limits") from exc
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == 4:
+                raise RuntimeError(f"OpenAI API HTTP {exc.code}: {detail[:300]}") from exc
+            retry_after = exc.headers.get("Retry-After")
+            delay = min(90.0, (2 ** attempt) * 5.0 + random.uniform(0, 2))
+            if retry_after:
+                try:
+                    delay = min(90.0, max(0.0, float(retry_after)))
+                except ValueError:
+                    try:
+                        delay = min(90.0, max(0.0, (parsedate_to_datetime(retry_after) - dt.datetime.now(timezone.utc)).total_seconds()))
+                    except (TypeError, ValueError, OverflowError):
+                        pass
+            print(f"OpenAI HTTP {exc.code}; retry {attempt + 1}/4 in {delay:.1f}s", flush=True)
+            time.sleep(delay)
+
+
 def research(name, guide):
     key = os.environ["OPENAI_API_KEY"]
     payload = {
@@ -61,14 +99,7 @@ def research(name, guide):
         "instructions": SYSTEM,
         "input": f"Investigate this existing vessel guide. Guide path: ships/{name}\nExisting text excerpt (may be incomplete):\n{guide[:11500]}\nSeek up to three meaningful evidence-backed research leads, not a rewrite. Avoid repeating claims already in the guide. Never present a search-result snippet as primary-source verification.",
     }
-    request = urllib.request.Request(
-        "https://api.openai.com/v1/responses",
-        data=json.dumps(payload).encode(),
-        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-        method="POST",
-    )
-    with urllib.request.urlopen(request, timeout=180) as response:
-        result = json.load(response)
+    result = api_response(payload)
     chunks = []
     for item in result.get("output", []):
         if item.get("type") == "message":
@@ -121,14 +152,7 @@ def evidence_register(name, dossier):
         "input": dossier[:26000],
         "text": {"format": {"type": "json_schema", "name": "evidence_claims", "strict": True, "schema": schema}},
     }
-    request = urllib.request.Request(
-        "https://api.openai.com/v1/responses",
-        data=json.dumps(payload).encode(),
-        headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"},
-        method="POST",
-    )
-    with urllib.request.urlopen(request, timeout=180) as response:
-        result = json.load(response)
+    result = api_response(payload)
     strings = [part.get("text", "") for item in result.get("output", [])
                if item.get("type") == "message"
                for part in item.get("content", []) if part.get("type") == "output_text"]
@@ -189,7 +213,9 @@ def main():
     (output / "README.md").write_text("\n".join(summary) + "\n", encoding="utf-8")
     print("\n".join(summary), flush=True)
     if failures:
-        raise SystemExit(f"{failures} of {len(selected)} research dossiers failed")
+        print(f"::warning::{failures} of {len(selected)} research dossiers failed; successes retained", flush=True)
+    if not pending["entries"]:
+        raise SystemExit("No complete research dossiers generated")
 
 if __name__ == "__main__":
     main()
