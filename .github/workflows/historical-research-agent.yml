@@ -1,12 +1,15 @@
 name: Historical Research Agent
 
 on:
+  schedule:
+    # GitHub cron uses UTC; 12:17 UTC is 06:17 CST / 07:17 CDT.
+    - cron: '17 12 * * *'
   workflow_dispatch:
     inputs:
       guide_count:
         description: 'Number of short guides to investigate (1–5)'
         required: true
-        default: '3'
+        default: '5'
         type: choice
         options: ['1', '2', '3', '4', '5']
       archive_to_r2:
@@ -28,9 +31,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  research:
+  guard:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      proceed: ${{ steps.pending.outputs.proceed }}
+    steps:
+      - name: Avoid duplicate research while a ledger PR awaits merge
+        id: pending
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pending=$(gh api "repos/${GITHUB_REPOSITORY}/pulls?state=open&per_page=100" --paginate \
+            --jq '[.[] | select(.head.ref | startswith("automation/historical-research-memory-"))] | length' | awk '{sum += $1} END {print sum+0}')
+          if [ "$pending" -gt 0 ]; then
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            echo "Research paused: an earlier ledger PR awaits merge." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  research:
+    needs: guard
+    if: ${{ needs.guard.outputs.proceed == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - name: Verify API credential exists
@@ -45,7 +72,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           RESEARCH_MODEL: gpt-5
-          GUIDE_COUNT: ${{ inputs.guide_count }}
+          GUIDE_COUNT: ${{ github.event_name == 'schedule' && '5' || inputs.guide_count }}
         run: python3 scripts/historical-research-agent.py --count "$GUIDE_COUNT"
       - name: Build offline research review dashboard
         if: success()
@@ -67,8 +94,8 @@ jobs:
 
   propose-memory:
     name: Propose research ledger update
-    needs: research
-    if: ${{ needs.research.result == 'success' }}
+    needs: [research, archive-r2]
+    if: ${{ always() && needs.research.result == 'success' && (needs.archive-r2.result == 'success' || (github.event_name == 'workflow_dispatch' && needs.archive-r2.result == 'skipped')) }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -104,15 +131,34 @@ jobs:
           git add research/agent-ledger.json
           git commit -m "Record historical research run ${GITHUB_RUN_ID} for editorial review"
           git push --set-upstream origin "$branch"
-          body=$(printf 'Research ledger proposal from [run %s](%s).\\n\\nInvestigation records only; historical claims and sources remain **unverified**. Merge only after inspecting the run dossiers. No ship guides were changed.\\n' "$GITHUB_RUN_ID" "$RESEARCH_RUN_URL")
-          gh pr create --base main --head "$branch" \
+          body=$(printf 'Research ledger proposal from [run %s](%s).\\n\\nInvestigation records only; historical claims and sources remain **unverified**. Only the investigation record is eligible for validated auto-merge; historical claims remain pending human review. No ship guides were changed.\\n' "$GITHUB_RUN_ID" "$RESEARCH_RUN_URL")
+          pr_url=$(gh pr create --base main --head "$branch" \
             --title "Review Historical Research Agent memory from run ${GITHUB_RUN_ID}" \
-            --body "$body"
+            --body "$body")
+          echo "Created $pr_url" >> "$GITHUB_STEP_SUMMARY"
+      - name: Validate ledger-only commit and automatically merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GUIDE_COUNT: ${{ github.event_name == 'schedule' && '5' || inputs.guide_count }}
+        run: |
+          if [ ! -s research-ledger-added.txt ]; then
+            exit 0
+          fi
+          python3 scripts/validate-research-ledger-automerge.py \
+            --run-id "$GITHUB_RUN_ID" --expected-count "$GUIDE_COUNT"
+          pr_url=$(gh pr list --head "automation/historical-research-memory-${GITHUB_RUN_ID}" \
+            --base main --state open --json url --jq '.[0].url')
+          if [ -z "$pr_url" ]; then
+            echo "::error::Expected ledger PR not found; refusing auto-merge"
+            exit 1
+          fi
+          gh pr merge "$pr_url" --squash --delete-branch
+          echo "Validated and automatically merged ledger-only PR: $pr_url" >> "$GITHUB_STEP_SUMMARY"
 
   archive-r2:
     name: Optional permanent private dossier archive
     needs: research
-    if: ${{ needs.research.result == 'success' && inputs.archive_to_r2 == true }}
+    if: ${{ needs.research.result == 'success' && (github.event_name == 'schedule' || inputs.archive_to_r2 == true) }}
     runs-on: ubuntu-latest
     timeout-minutes: 8
     permissions:
