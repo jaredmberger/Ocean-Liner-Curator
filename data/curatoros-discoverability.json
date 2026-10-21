@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T04:01:10.302Z",
+  "generatedAt": "2026-10-21T07:31:05.453Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 679,
-    "indexablePages": 663,
+    "trackedHtml": 680,
+    "indexablePages": 664,
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 1,
@@ -27,11 +27,11 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 193,
-      "searchEligible": 192,
+      "pages": 194,
+      "searchEligible": 193,
       "sitemapListed": 96,
-      "editorialInbound": 1606,
-      "averageEditorialInbound": 8.32
+      "editorialInbound": 1608,
+      "averageEditorialInbound": 8.29
     },
     "bridge-page": {
       "pages": 11,
@@ -72,7 +72,7 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 371,
-      "editorialInbound": 892,
+      "editorialInbound": 893,
       "averageEditorialInbound": 2.39
     }
   },
@@ -4118,6 +4118,29 @@
       ]
     },
     {
+      "path": "provenance/ss-monarch-of-bermuda.html",
+      "route": "/provenance/ss-monarch-of-bermuda",
+      "title": "Monarch of Bermuda: the 1947 fire date",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
+      "baselineInbound": 0,
+      "byCategory": {
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/ss-monarch-of-bermuda.html",
+          "sourceRoute": "/ships/ss-monarch-of-bermuda",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "collectors-notebook/function-first.html",
       "route": "/collectors-notebook/function-first",
       "title": "Object Function Before Ship Attribution",
@@ -5450,11 +5473,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 34,
-      "editorialInbound": 29,
+      "inboundTotal": 35,
+      "editorialInbound": 30,
       "baselineInbound": 5,
       "byCategory": {
-        "article-reference": 29
+        "article-reference": 30
       },
       "sources": [
         {
@@ -5592,6 +5615,12 @@
         {
           "sourcePath": "ocean-liner-research.html",
           "sourceRoute": "/ocean-liner-research",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "provenance/ss-monarch-of-bermuda.html",
+          "sourceRoute": "/provenance/ss-monarch-of-bermuda",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -21108,13 +21137,20 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
-      "editorialInbound": 1,
+      "inboundTotal": 3,
+      "editorialInbound": 2,
       "baselineInbound": 1,
       "byCategory": {
+        "article-reference": 1,
         "ship-guide": 1
       },
       "sources": [
+        {
+          "sourcePath": "provenance/ss-monarch-of-bermuda.html",
+          "sourceRoute": "/provenance/ss-monarch-of-bermuda",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/ss-queen-of-bermuda.html",
           "sourceRoute": "/ships/ss-queen-of-bermuda",
