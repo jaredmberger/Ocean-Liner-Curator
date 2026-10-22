@@ -335,6 +335,23 @@
 
     td.small, th.small{ width:1%; white-space:nowrap; }
     td.muted{ color:rgba(230,223,207,0.70); }
+    /* Keep all editorial and table links in the Ocean Liner Curator brass palette. */
+    .content a:not(.button),
+    .content a:not(.button):link {
+      color:#d9c18a;
+      text-decoration-color:rgba(191,164,106,0.75);
+      text-underline-offset:0.18em;
+    }
+    .content a:not(.button):visited { color:#c4ad83; }
+    .content a:not(.button):hover,
+    .content a:not(.button):focus-visible {
+      color:#f1deb1;
+      text-decoration-color:currentColor;
+    }
+    .content a:not(.button):focus-visible {
+      outline:2px solid #d9c18a;
+      outline-offset:3px;
+    }
     .ship{
       color:var(--link);
       text-decoration:none;
