@@ -990,29 +990,6 @@
     );
   }
 
-  /*
-   * Simple Analytics.
-   */
-  function injectSimpleAnalytics() {
-    const SRC =
-      "https://scripts.simpleanalyticscdn.com/latest.js";
-
-    if (
-      document.querySelector(
-        'script[src="' + SRC + '"]'
-      )
-    ) {
-      return;
-    }
-
-    const script =
-      document.createElement("script");
-
-    script.src = SRC;
-    script.async = true;
-
-    document.head.appendChild(script);
-  }
 
   /*
    * Public repair command.
@@ -1149,10 +1126,6 @@
       injectGA
     );
 
-    await window.OLC.runFeature(
-      "Simple Analytics",
-      injectSimpleAnalytics
-    );
 
     console.info(
       "[OceanLiners.net] Shared header/footer initialization complete."
