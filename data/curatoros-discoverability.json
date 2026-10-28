@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T07:31:05.453Z",
+  "generatedAt": "2026-10-28T08:27:44.768Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 680,
-    "indexablePages": 664,
+    "trackedHtml": 681,
+    "indexablePages": 665,
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 1,
@@ -27,11 +27,11 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 194,
-      "searchEligible": 193,
+      "pages": 195,
+      "searchEligible": 194,
       "sitemapListed": 96,
-      "editorialInbound": 1608,
-      "averageEditorialInbound": 8.29
+      "editorialInbound": 1612,
+      "averageEditorialInbound": 8.27
     },
     "bridge-page": {
       "pages": 11,
@@ -3629,6 +3629,42 @@
       "sources": []
     },
     {
+      "path": "photos/inside-uss-leviathan/index.html",
+      "route": "/photos/inside-uss-leviathan",
+      "title": "Inside the U.S.S. Leviathan",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 3,
+      "editorialInbound": 3,
+      "baselineInbound": 0,
+      "byCategory": {
+        "article-reference": 2,
+        "ship-guide": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "photos.html",
+          "sourceRoute": "/photos",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/ss-leviathan.html",
+          "sourceRoute": "/ships/ss-leviathan",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ss-leviathan.html",
+          "sourceRoute": "/ss-leviathan",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
       "path": "designs-interiors/branding.html",
       "route": "/designs-interiors/branding",
       "title": "Interiors & Branding",
@@ -5395,12 +5431,12 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 4,
+      "inboundTotal": 6,
+      "editorialInbound": 5,
       "baselineInbound": 1,
       "byCategory": {
         "collection": 1,
-        "article-reference": 3
+        "article-reference": 4
       },
       "sources": [
         {
@@ -5424,6 +5460,12 @@
         {
           "sourcePath": "designs-interiors/how-to-read-an-ocean-liner-interior-photograph.html",
           "sourceRoute": "/designs-interiors/how-to-read-an-ocean-liner-interior-photograph",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "photos/inside-uss-leviathan/index.html",
+          "sourceRoute": "/photos/inside-uss-leviathan",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
