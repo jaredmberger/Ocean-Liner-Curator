@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T08:27:44.768Z",
+  "generatedAt": "2026-10-29T22:24:24.039Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 681,
-    "indexablePages": 665,
+    "trackedHtml": 683,
+    "indexablePages": 667,
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 1,
@@ -27,11 +27,11 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 195,
-      "searchEligible": 194,
+      "pages": 197,
+      "searchEligible": 196,
       "sitemapListed": 96,
-      "editorialInbound": 1612,
-      "averageEditorialInbound": 8.27
+      "editorialInbound": 1615,
+      "averageEditorialInbound": 8.2
     },
     "bridge-page": {
       "pages": 11,
@@ -1684,11 +1684,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 5,
-      "editorialInbound": 4,
+      "inboundTotal": 6,
+      "editorialInbound": 5,
       "baselineInbound": 1,
       "byCategory": {
-        "article-reference": 4
+        "article-reference": 5
       },
       "sources": [
         {
@@ -1712,6 +1712,12 @@
         {
           "sourcePath": "how-we-work.html",
           "sourceRoute": "/how-we-work",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ocean-liner-gpt.html",
+          "sourceRoute": "/ocean-liner-gpt",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -4899,6 +4905,52 @@
         {
           "sourcePath": "why-ocean-liners-are-so-cool.html",
           "sourceRoute": "/why-ocean-liners-are-so-cool",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "ocean-liner-gpt-privacy.html",
+      "route": "/ocean-liner-gpt-privacy",
+      "title": "Ocean Liner GPT Privacy Policy",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
+      "baselineInbound": 0,
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ocean-liner-gpt.html",
+          "sourceRoute": "/ocean-liner-gpt",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
+    },
+    {
+      "path": "ocean-liner-gpt-terms.html",
+      "route": "/ocean-liner-gpt-terms",
+      "title": "Ocean Liner GPT Terms of Use",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
+      "baselineInbound": 0,
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ocean-liner-gpt.html",
+          "sourceRoute": "/ocean-liner-gpt",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
