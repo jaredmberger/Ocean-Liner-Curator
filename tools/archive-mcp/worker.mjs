@@ -14,6 +14,7 @@ function createServer(env){
 export default {
  async fetch(request,env,ctx){
  const url=new URL(request.url);
+ if(url.pathname==='/.well-known/openai-apps-challenge'&&request.method==='GET')return new Response('OwEJ4meDkxRMjGDr1kLgEiMsrEzbv05ZZ7cC-3j9Ldo',{headers:{'content-type':'text/plain; charset=utf-8'}});
  if(url.pathname==='/health'&&request.method==='GET'&&url.searchParams.get('check')==='protocol'){
  const handler=createMcpHandler(()=>createServer(env),{route:'/mcp',allowedHostnames:['ocean-liner-archive-mcp.75tqx86g8q.workers.dev']});
  const outputs=[];
