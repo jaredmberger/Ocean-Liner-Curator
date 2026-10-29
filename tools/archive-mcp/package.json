@@ -1,14 +1,13 @@
 {
-  "name": "archive-mcp",
+  "name": "ocean-liner-archive-mcp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Read-only MCP connection to the published Ocean Liner Curator archive",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test test.mjs",
+    "build": "esbuild worker.mjs --bundle --minify --format=esm --platform=neutral --main-fields=module,main --external:cloudflare:* --external:node:* --outfile=dist/worker.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "@cloudflare/workers-types": "^5.20261029.1",
@@ -17,5 +16,6 @@
     "cheerio": "^1.2.0",
     "esbuild": "^0.28.2",
     "zod": "^4.6.7"
-  }
+  },
+  "private": true
 }
