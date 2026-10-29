@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T23:03:37.933Z",
+  "generatedAt": "2026-10-29T01:10:44.574Z",
   "source": "Structured ship-guide dates with conservative explicit service-end extraction",
   "summary": {
     "shipGuides": 370,
     "guidesWithServiceStart": 364,
-    "guidesWithExplicitServiceEnd": 283,
+    "guidesWithExplicitServiceEnd": 282,
     "eras": 10,
     "decades": 15
   },
@@ -299,7 +299,7 @@
           "path": "ships/ss-corinthic.html",
           "url": "/ships/ss-corinthic",
           "serviceStartYear": "1902",
-          "serviceEndYear": "1931"
+          "serviceEndYear": null
         },
         {
           "name": "SS Corsican",
@@ -3419,7 +3419,7 @@
           "path": "ships/ss-corinthic.html",
           "url": "/ships/ss-corinthic",
           "serviceStartYear": "1902",
-          "serviceEndYear": "1931"
+          "serviceEndYear": null
         },
         {
           "name": "SS Corsican",
@@ -7290,10 +7290,10 @@
       "url": "/ships/ss-corinthic",
       "launchYear": "1902",
       "serviceStartYear": "1902",
-      "serviceEndYear": "1931",
+      "serviceEndYear": null,
       "era": "Edwardian / pre-war peak",
       "decade": "1900s",
-      "endEvidence": "scrapped in 1931"
+      "endEvidence": null
     },
     {
       "name": "SS Corsican",
