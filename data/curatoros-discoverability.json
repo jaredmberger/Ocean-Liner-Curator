@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T22:24:24.039Z",
+  "generatedAt": "2026-11-01T07:55:47.506Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 683,
-    "indexablePages": 667,
+    "trackedHtml": 684,
+    "indexablePages": 668,
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 1,
@@ -27,11 +27,11 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 197,
-      "searchEligible": 196,
+      "pages": 198,
+      "searchEligible": 197,
       "sitemapListed": 96,
-      "editorialInbound": 1615,
-      "averageEditorialInbound": 8.2
+      "editorialInbound": 1616,
+      "averageEditorialInbound": 8.16
     },
     "bridge-page": {
       "pages": 11,
@@ -65,8 +65,8 @@
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 128,
-      "averageEditorialInbound": 32
+      "editorialInbound": 129,
+      "averageEditorialInbound": 32.25
     },
     "ship-guide": {
       "pages": 373,
@@ -904,6 +904,20 @@
           "sourceBaseline": false
         }
       ]
+    },
+    {
+      "path": "christmas-at-sea.html",
+      "route": "/christmas-at-sea",
+      "title": "A Christmas at Sea",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 1,
+      "editorialInbound": 0,
+      "baselineInbound": 1,
+      "byCategory": {},
+      "sources": []
     },
     {
       "path": "rms-queen-mary-voyage-reconstructed.html",
@@ -4480,17 +4494,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 40,
-      "editorialInbound": 36,
+      "inboundTotal": 41,
+      "editorialInbound": 37,
       "baselineInbound": 4,
       "byCategory": {
-        "article-reference": 13,
+        "article-reference": 14,
         "collection": 23
       },
       "sources": [
         {
           "sourcePath": "about.html",
           "sourceRoute": "/about",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "christmas-at-sea.html",
+          "sourceRoute": "/christmas-at-sea",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -20271,11 +20291,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 88,
-      "editorialInbound": 83,
+      "inboundTotal": 89,
+      "editorialInbound": 84,
       "baselineInbound": 5,
       "byCategory": {
-        "article-reference": 39,
+        "article-reference": 40,
         "collection": 36,
         "hub": 3,
         "comparative-history": 1,
@@ -20292,6 +20312,12 @@
         {
           "sourcePath": "about.html",
           "sourceRoute": "/about",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "christmas-at-sea.html",
+          "sourceRoute": "/christmas-at-sea",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
