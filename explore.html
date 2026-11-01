@@ -1997,6 +1997,37 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
   overflow:hidden;
 }
     
+
+/* Christmas exhibition: a seasonal variation of the Explore feature card. */
+.hero-special-feature.hero-christmas-feature{
+  padding:1.2rem clamp(1.15rem,3vw,1.65rem);
+  padding-right:clamp(5.2rem,19%,7.5rem);
+  border-color:rgba(191,164,106,.38);
+  background:
+    radial-gradient(circle at 90% 88%,rgba(44,77,56,.26),transparent 42%),
+    linear-gradient(145deg,rgba(27,43,36,.96),rgba(10,20,19,.98));
+  box-shadow:0 14px 38px rgba(0,0,0,.28),inset 0 1px 0 rgba(191,164,106,.08);
+}
+.hero-special-feature.hero-christmas-feature::after{
+  content:"";
+  position:absolute;
+  top:auto;
+  bottom:.65rem;
+  right:.55rem;
+  width:clamp(58px,15%,92px);
+  height:clamp(82px,21%,120px);
+  background:url("/assets/christmas-at-sea/mistletoe.webp") center bottom/contain no-repeat;
+  filter:none;
+  opacity:.42;
+  pointer-events:none;
+}
+.hero-christmas-feature .hero-special-label{color:#bfa46a}
+.hero-christmas-feature h2{font-variant:small-caps;letter-spacing:.045em}
+.hero-christmas-feature .hero-special-link{color:#d1bb86}
+@media(max-width:640px){
+ .hero-special-feature.hero-christmas-feature{padding-right:5.3rem}
+ .hero-special-feature.hero-christmas-feature::after{width:64px;height:88px;right:.45rem;bottom:.6rem;opacity:.33}
+}
     </style>
 </head>
 
@@ -2036,14 +2067,14 @@ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
   Whether you’re discovering ocean liners for the first time or researching a specific ship, this page is designed to help you find your way through one of the web’s largest evidence-first collections devoted to transatlantic passenger liners.
 </p>
 
-<div class="hero-special-feature">
-  <span class="hero-special-label">Special Feature · American 250</span>
-  <h2>250 Years Across the Atlantic</h2>
+<div class="hero-special-feature hero-christmas-feature">
+  <span class="hero-special-label">A Seasonal Exhibition</span>
+  <h2>A Christmas at Sea</h2>
   <p>
-    A curator-minded feature connecting the birth of the United States to the long Atlantic story of migration, steamships, ocean liners, wartime crossings, and public memory.
+    Across winter seas, discover how ocean liner passengers and crews marked Christmas—from festive menus and decorated saloons to the work and journeys behind the celebration.
   </p>
-  <a class="hero-special-link" href="/250-years-across-the-atlantic">
-    Read the special feature
+  <a class="hero-special-link" href="/christmas-at-sea.html">
+    Explore Christmas at Sea
   </a>
 </div>
 
