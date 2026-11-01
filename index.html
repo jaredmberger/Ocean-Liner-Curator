@@ -3,6 +3,18 @@
 <head>
 <style>
   html { background:#0a1110; }
+
+/* Christmas at Sea — seasonal exhibition, 2026 */
+.christmas-at-sea{position:relative;isolation:isolate;margin:2.25rem auto 2.75rem;padding:2.1rem clamp(1.1rem,4vw,3rem);max-width:880px;text-align:center;background:linear-gradient(145deg,rgba(27,43,36,.94),rgba(10,20,19,.96));border:1px solid var(--border);box-shadow:0 14px 38px rgba(0,0,0,.23);overflow:hidden}
+.christmas-at-sea .christmas-kicker{font:600 .73rem/1.6 var(--font-sans);letter-spacing:.19em;text-transform:uppercase;color:var(--accent)}
+.christmas-at-sea h2{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(1.5rem,3.7vw,2.4rem);line-height:1.35;margin:.55rem 0 1rem;color:var(--text)}
+.christmas-at-sea p{max-width:36rem;margin:0 auto 1.25rem;color:var(--muted);line-height:1.75}
+.christmas-at-sea .christmas-garland{display:block;width:min(100%,620px);max-height:180px;object-fit:contain;margin:0 auto .7rem}
+.christmas-at-sea .christmas-flower,.christmas-at-sea .christmas-mistletoe{position:absolute;z-index:-1;width:clamp(90px,18%,150px);height:auto;opacity:.4;pointer-events:none}
+.christmas-at-sea .christmas-flower{left:-2%;bottom:-7%}.christmas-at-sea .christmas-mistletoe{right:-2%;top:12%}
+.christmas-at-sea .christmas-link{display:inline-block;color:var(--link);text-decoration:none;border-bottom:1px solid var(--accent);padding:.3rem .2rem;font-weight:600}
+.christmas-at-sea .christmas-link:hover,.christmas-at-sea .christmas-link:focus-visible{color:#fff;border-bottom-color:#fff}
+@media(max-width:560px){.christmas-at-sea{padding:1.6rem 1rem}.christmas-at-sea .christmas-flower,.christmas-at-sea .christmas-mistletoe{opacity:.18;width:100px}.christmas-at-sea .christmas-garland{max-height:115px}}
 </style>
 
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -2781,6 +2793,18 @@ font-size: 1rem;
     loading="lazy"
     aria-hidden="true"
   />
+
+
+  <!-- Seasonal editorial feature: artwork files to be added before merging -->
+  <section class="christmas-at-sea" aria-labelledby="christmas-at-sea-title">
+    <img class="christmas-garland" src="/assets/christmas-at-sea/holly-garland.webp" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">
+    <img class="christmas-flower" src="/assets/christmas-at-sea/christmas-roses.webp" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">
+    <img class="christmas-mistletoe" src="/assets/christmas-at-sea/mistletoe.webp" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">
+    <div class="christmas-kicker">A seasonal exhibition</div>
+    <h2 id="christmas-at-sea-title">A Christmas at Sea</h2>
+    <p>Across the great ocean routes, Christmas was observed far from home. Explore the traditions, journeys, and surviving traces of the holiday season aboard passenger liners.</p>
+    <a class="christmas-link" href="/christmas-at-sea.html">Explore Christmas at Sea »</a>
+  </section>
 
   <!-- "Choose Your Path" (reveal + stagger cards) -->
   <section class="paths reveal" aria-label="Choose your path">
