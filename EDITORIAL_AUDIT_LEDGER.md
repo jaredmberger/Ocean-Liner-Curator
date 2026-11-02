@@ -20,6 +20,16 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Champlain — dossier run 41334140435 (2026-11-02)
+
+- **Clarified, qualified:** Saint-Nazaire Patrimoine records the first Le Havre–New York voyage in June 1932; the guide now specifies June service entry. A historical compilation reports 18 June 1932 as the planned maiden departure, but original CGT sailing notices and port records were not examined; the precise departure date is expressly provisional. Sources: https://www.saint-nazaire-musees.com/liste-ressources/collections-en-dialogue/vins-et-paquebots/bar-circulaire-paquebot-champlain/ ; https://sschamplain.blogspot.com/2019/03/
+- **Contemporary corroboration:** *TIME*, 4 July 1932, describes the maiden crossing and names Mme Louis Germain-Martin, Norma Talmadge, George Jessel and Charles Hackett aboard, but does not give a precise departure date. Source: https://time.com/archive/6749468/france-fast-cabin/
+- **Already present / retained:** 15 August 1931 launch is attributed to Saint-Nazaire Patrimoine; derivative 15 June discrepancy and absence of original yard ledger remain stated.
+- **Already present / unresolved:** 17 June 1940 mine strike off La Pallice retained. The guide distinguishes later torpedo damage to the wreck, but original Admiralty/French reports and an independently corroborated later torpedoing entry were not examined in this review. Source for follow-up: https://www.naval-history.net/xDKWDa-Aerial.htm
+- **Retained / unresolved:** 25 June 1932 New York arrival appears in a retrospective passenger-statistics compilation but is not added without checking port arrival records. https://sschamplain.blogspot.com/2019/
+- **Scope:** `model_extraction_only` dossier; this is claim-level editorial review, not independent verification of the full guide.
+
+
 ### Canopic (Commonwealth) — dossier run 41334140435 (2026-11-02)
 
 - **Clarified (qualified):** 14 January 1904 Liverpool–Boston departure under White Star Line. BYU *Saints by Sea* voyage entry transcribes a contemporary *Millennial Star* / British Mission account documenting passengers sailing that day; the designation **first White Star voyage** is attributed to retrospective sailing chronologies rather than treated as independently established by the contemporary account. Guide text and selected source updated. Source: https://saintsbysea.byu.edu/europe/voyage/156
