@@ -20,6 +20,15 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Prinz Friedrich Wilhelm — dossier run 41334140435 (2026-11-02)
+
+- **Clarified with institutional attribution:** NHHC *Dictionary of American Naval Fighting Ships* records commissioning at Cowes on 30 March 1919; five Brest–Hoboken westbound troop-return crossings (15,213 veterans); final arrival 23 August 1919; decommissioning at New York and transfer to U.S. Shipping Board 25 November 1919. Guide chronology expanded; original Navy deck logs or movement cards not examined. https://www.history.navy.mil/content/history/nhhc/research/histories/ship-histories/danfs/p/prinz-friedrich-wilhelm.html
+- **Retained / unresolved:** Norway Heritage places the vessel at Odda, Norway, in August 1914; no contemporary Odda port documentation examined. Existing general statement of Norwegian refuge unchanged. https://www.norwayheritage.com/p_ship.asp?sh=prifw
+- **Research lead:** Contemporary *Evening Star* report dated 4 December 1914 describes the vessel at Bergen and a gale-related grounding; reconcile the timeline with the reported earlier Odda refuge before publishing specific movements. Original issue and exact report context merit checking. https://chroniclingamerica.loc.gov/
+- **Qualified secondary addition:** Norway Heritage reports an August 1921 Cunard charter during the <em>Empress of India</em> phase. Guide now labels this a secondary chronology, without asserting the exact date or reported two Southampton–New York round trips. https://www.norwayheritage.com/ships/empin/
+- **Scope:** Dossier remains `model_extraction_only`; these are claim-level decisions, not primary-record verification or certification of the guide.
+
+
 ### Champlain — dossier run 41334140435 (2026-11-02)
 
 - **Clarified, qualified:** Saint-Nazaire Patrimoine records the first Le Havre–New York voyage in June 1932; the guide now specifies June service entry. A historical compilation reports 18 June 1932 as the planned maiden departure, but original CGT sailing notices and port records were not examined; the precise departure date is expressly provisional. Sources: https://www.saint-nazaire-musees.com/liste-ressources/collections-en-dialogue/vins-et-paquebots/bar-circulaire-paquebot-champlain/ ; https://sschamplain.blogspot.com/2019/03/
