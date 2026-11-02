@@ -20,6 +20,14 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Canopic (Commonwealth) — dossier run 41334140435 (2026-11-02)
+
+- **Clarified (qualified):** 14 January 1904 Liverpool–Boston departure under White Star Line. BYU *Saints by Sea* voyage entry transcribes a contemporary *Millennial Star* / British Mission account documenting passengers sailing that day; the designation **first White Star voyage** is attributed to retrospective sailing chronologies rather than treated as independently established by the contemporary account. Guide text and selected source updated. Source: https://saintsbysea.byu.edu/europe/voyage/156
+- **Retained / unresolved:** Harland & Wolff yard no. 330 and Richard Mills & Co. as contracting customer. TheYard.info is derivative, and its displayed April 1900 date conflicts with the guide's 31 May 1900 launch; no original yard register or launch notice examined. Do not add to guide pending primary corroboration. Source: https://www.theyard.info/ships/list_ships1.asp?photo=x
+- **Retained / unresolved:** 25 April 1925 claimed final Liverpool–New York departure and autumn sale for breakup at Briton Ferry. Secondary narrative (GreatShips, citing Haws/Bonsor/NYT) has not been checked against contemporary shipping notices. Guide retains its existing broad 1925 withdrawal and breakup chronology. Source: https://greatships.net/canopic
+- **Scope:** Dossier remains `model_extraction_only`; these dispositions are claim-specific, not a declaration of independent verification of the full dossier or ship guide.
+
+
 ### Oceanic (1899) original accommodation versus later specifications (pending PR #380)
 
 A transcription of a 14 January 1899 contemporary launch preview supports 410/300/1,000 designed accommodations and the then-estimated 17,040 GRT. Later references list 17,274 tons and 21 knots; final registry, class changes and measured speed remain unverified. [PR #379](https://github.com/jaredmberger/Ocean-Liner-Curator/pull/379) merged 2026-10-11 UTC.
