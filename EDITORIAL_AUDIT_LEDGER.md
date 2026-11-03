@@ -20,6 +20,14 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Michelangelo (1965) — dossier run 41531359351 (2026-11-03)
+
+- **Already present / precise dates held:** Guide already documents Iranian accommodation use and 1991 demolition at Gadani. Dossier attributes 1977 sale to Iranian Navy and June 1991 arrival from Iran to Lloyd's *Casualty Returns 1991*, but the cited PDF was not independently inspected (access denied). Do not add precise dates until checked. https://lloyds-production.s3.amazonaws.com/_file/general/1991-casualty-returns.pdf
+- **Accepted with contemporary attribution:** *l’Unità* (19 April 1966, p. 5; dispatch datelined New York, 18 April) reports emergency repairs in New York, temporary Plexiglas over damaged bridge windows, continuous repair shifts and expected 20 April departure for Genoa. Guide adds these as reported; actual sailing date and exact New York arrival not established. The newspaper also mentions a minor extinguished onboard bar fire, retained here rather than highlighted in guide. https://archivio.unita.news/assets/derived/1966/04/19/issue_full.pdf
+- **Already present / exact time held:** Guide records three deaths and more than fifty injuries in the 12 April 1966 storm. Dossier cites Publifoto archival captions for 10:00 impact and two passengers plus one crewman dead, but caption was not independently inspected; do not add exact impact time without corroboration. https://www.publifoto.net/rps/det.php?RCCrps=MICHELANGELO&art_id=5959&ord=iD&page=1&sogg=navi
+- **Scope:** Dossier remains `model_extraction_only`; this review verifies selected claims, not the full guide.
+
+
 ### Columbus (1924) — dossier run 41531359351 (2026-11-02)
 
 - **Already present / retained:** Guide already describes 1929 replacement of reciprocating engines with geared turbines and shortened funnels. Dossier cites a contemporary Hamburg newspaper dated 18 November 1929 for Blohm & Voss, accommodation upgrades, proposed December/January sailings and a Raymond & Whitcomb world cruise; original newspaper PDF was **not independently inspected** in this review. No new refit particulars or proposed sailings added. Research lead: https://img.sub.uni-hamburg.de/kitodo/PPN1754726119_19291118/PDF/PPN1754726119_19291118.pdf
