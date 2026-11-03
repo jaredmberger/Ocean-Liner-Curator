@@ -20,6 +20,14 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Albert Ballin / Hansa — dossier run 41531359351 (2026-11-03)
+
+- **Accepted with museum-catalog attribution:** German Maritime Museum LostLift record identifies last completed westbound voyage Bremen 27 July–New York 4 August 1939, followed by Hamburg departure 23 August and recalled return via Bremen to Hamburg on 26 August. Museum references Hamburg State Archive cargo papers, including StAHH 621-1/95_3715; original archive files not independently examined. https://www.lostlift.dsm.museum/de/detail/person/441d3915-4ced-46cf-b24b-6b304f113945
+- **Already present / date clarified:** JTA report dated 27 October 1935 documents formal renaming from *Albert Ballin* to *Hansa* after docking in Germany; decision predates the report. Existing guide's account of antisemitic political context retained. https://www.jta.org/archive/reich-liner-albert-ballin-formally-renamed-hansa
+- **Numerical discrepancy held:** Guide had said lengthened 'about fifty feet' in 1934, whereas dossier describes a class-level 'about forty feet' prefabricated bow increase and up-to-60-day yard period from *Nature*, 6 October 1934. Original technical article not independently inspected; neither precise length nor yard duration adopted. Guide now uses qualified 'substantial bow reconstruction and lengthening' pending ship-specific register/yard confirmation. https://www.nature.com/articles/134529a0
+- **Scope:** Dossier remains `model_extraction_only`; claim-specific review, not a full guide audit.
+
+
 ### Raffaello (1965) — dossier run 41531359351 (2026-11-03)
 
 - **Accepted with official archival attribution:** President Antonio Segni attended the 24 March 1963 launch ceremony; the presidential diary identifies Giuliana Merzagora as godmother and distinguishes the ceremony from a later visit to Monfalcone. Guide adds attendance and christening, avoiding an unsupported precise ceremony-location claim. https://archivio.quirinale.it/aspr/diari/EVENT-002-003706/presidente/antonio-segni
