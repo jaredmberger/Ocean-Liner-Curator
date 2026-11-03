@@ -20,6 +20,14 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Raffaello (1965) — dossier run 41531359351 (2026-11-03)
+
+- **Accepted with official archival attribution:** President Antonio Segni attended the 24 March 1963 launch ceremony; the presidential diary identifies Giuliana Merzagora as godmother and distinguishes the ceremony from a later visit to Monfalcone. Guide adds attendance and christening, avoiding an unsupported precise ceremony-location claim. https://archivio.quirinale.it/aspr/diari/EVENT-002-003706/presidente/antonio-segni
+- **Accepted with archival-photo qualification:** Bridgeman/Mondadori catalog entry for Sergio del Grande's photograph documents fire damage in the after engine room at Genoa on 6 November 1965. This is a photographic catalog date, not proof of a 31 October incident date, voyage number or full repair chronology. Guide adds qualified fire account; no image reproduced. https://www.bridgemanimages.com/it/noartistknown/the-stern-engine-room-of-the-raffaello-liner/photograph/asset/2368732
+- **Held pending primary text inspection:** Dossier reports 14 December 1976 *l’Unità* announcement of sale of both sisters to Iran with expected May–June 1977 transfer, plus July 1977 *sequestro* reporting. Original issue text and legal context not independently inspected; no precise sale/transfer dates added. https://archivio.unita.news/assets/derived/1976/12/14/issue_full.pdf
+- **Scope:** Dossier remains `model_extraction_only`; claim-specific review only, not a full guide audit.
+
+
 ### Michelangelo (1965) — dossier run 41531359351 (2026-11-03)
 
 - **Already present / precise dates held:** Guide already documents Iranian accommodation use and 1991 demolition at Gadani. Dossier attributes 1977 sale to Iranian Navy and June 1991 arrival from Iran to Lloyd's *Casualty Returns 1991*, but the cited PDF was not independently inspected (access denied). Do not add precise dates until checked. https://lloyds-production.s3.amazonaws.com/_file/general/1991-casualty-returns.pdf
