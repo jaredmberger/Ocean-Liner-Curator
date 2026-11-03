@@ -20,6 +20,14 @@ Disposition terms:
 
 ## Recent claim-level reviews
 
+### Columbus (1924) — dossier run 41531359351 (2026-11-02)
+
+- **Already present / retained:** Guide already describes 1929 replacement of reciprocating engines with geared turbines and shortened funnels. Dossier cites a contemporary Hamburg newspaper dated 18 November 1929 for Blohm & Voss, accommodation upgrades, proposed December/January sailings and a Raymond & Whitcomb world cruise; original newspaper PDF was **not independently inspected** in this review. No new refit particulars or proposed sailings added. Research lead: https://img.sub.uni-hamburg.de/kitodo/PPN1754726119_19291118/PDF/PPN1754726119_19291118.pdf
+- **Clarified with official naval-history attribution:** NHHC DANFS identifies HMS *Hyperion* as the British destroyer intercepting *Columbus* on 19 December 1939 and records Ellis Island landing of survivors on 20 December between 16:10 and 17:30. Original ship logs not examined. https://www.history.navy.mil/research/histories/ship-histories/danfs/t/tuscaloosa-i.html
+- **Clarified, explicitly attributed:** U.S. Navy official chronology reports USS *Tuscaloosa* rescued 567 men and nine women stewardesses (576 total), with two deaths during abandonment. Published aggregate totals differ (including 574 in a National Archives account); no definitive manifest reconciliation performed. https://www.ibiblio.org/hyperwar/USN/USN-Chron/USN-Chron-1939.html
+- **Scope:** Dossier remains `model_extraction_only`; no blanket claim of primary-source verification or whole-guide audit.
+
+
 ### Prinz Friedrich Wilhelm — dossier run 41334140435 (2026-11-02)
 
 - **Clarified with institutional attribution:** NHHC *Dictionary of American Naval Fighting Ships* records commissioning at Cowes on 30 March 1919; five Brest–Hoboken westbound troop-return crossings (15,213 veterans); final arrival 23 August 1919; decommissioning at New York and transfer to U.S. Shipping Board 25 November 1919. Guide chronology expanded; original Navy deck logs or movement cards not examined. https://www.history.navy.mil/content/history/nhhc/research/histories/ship-histories/danfs/p/prinz-friedrich-wilhelm.html
