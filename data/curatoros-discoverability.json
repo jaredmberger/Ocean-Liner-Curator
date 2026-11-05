@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T09:35:08.749Z",
+  "generatedAt": "2026-11-05T06:04:23.481Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 684,
-    "indexablePages": 668,
+    "trackedHtml": 685,
+    "indexablePages": 669,
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 1,
@@ -27,11 +27,11 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 198,
-      "searchEligible": 197,
+      "pages": 199,
+      "searchEligible": 198,
       "sitemapListed": 96,
-      "editorialInbound": 1617,
-      "averageEditorialInbound": 8.17
+      "editorialInbound": 1618,
+      "averageEditorialInbound": 8.13
     },
     "bridge-page": {
       "pages": 11,
@@ -2083,6 +2083,20 @@
           "sourceBaseline": false
         }
       ]
+    },
+    {
+      "path": "edmund-fitzgerald.html",
+      "route": "/edmund-fitzgerald",
+      "title": "Edmund Fitzgerald: The Last Voyage",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 0,
+      "editorialInbound": 0,
+      "baselineInbound": 0,
+      "byCategory": {},
+      "sources": []
     },
     {
       "path": "explore.html",
@@ -4494,11 +4508,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 41,
-      "editorialInbound": 37,
+      "inboundTotal": 42,
+      "editorialInbound": 38,
       "baselineInbound": 4,
       "byCategory": {
-        "article-reference": 14,
+        "article-reference": 15,
         "collection": 23
       },
       "sources": [
@@ -4667,6 +4681,12 @@
         {
           "sourcePath": "definitive-guide.html",
           "sourceRoute": "/definitive-guide",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "edmund-fitzgerald.html",
+          "sourceRoute": "/edmund-fitzgerald",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
