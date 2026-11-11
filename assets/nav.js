@@ -15,6 +15,17 @@
 
   window.OLC = window.OLC || {};
 
+  // Single shared research handoff for ship guides. Existing buttons retain their styling.
+  if (location.pathname.startsWith("/ships/") && !window.__olcShipGPTRequested) {
+    window.__olcShipGPTRequested = true;
+    const gptScript = document.createElement("script");
+    gptScript.src = "/assets/ocean-liner-gpt.js";
+    gptScript.defer = true;
+    document.head.appendChild(gptScript);
+  }
+
+
+
   if (!window.OLC.__errorBusReporterRequested) {
     window.OLC.__errorBusReporterRequested = true;
 
