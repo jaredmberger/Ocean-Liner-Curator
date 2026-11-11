@@ -1706,7 +1706,7 @@ Clearly distinguish between documented fact, scholarly consensus, and interpreta
     })
     .catch(() => {
       window.open(
-        "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt",
+        "https://chatgpt.com/plugins/plugin_asdk_app_6ae3cef4f504819195e28d3175d3bd66",
         "_blank"
       );
     });
@@ -1720,7 +1720,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (continueBtn) {
     continueBtn.addEventListener("click", function () {
       window.open(
-        "https://chatgpt.com/g/g-693e5f55929481918bc76271fc403bea-ocean-liner-gpt",
+        "https://chatgpt.com/plugins/plugin_asdk_app_6ae3cef4f504819195e28d3175d3bd66",
         "_blank"
       );
 
