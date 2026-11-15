@@ -599,3 +599,10 @@ Do not derive coverage percentages from this partial ledger or count source-refe
 - Maiden voyage: retain 15 February 1922 Southampton departure and 24 February New York arrival. New York Times publication of 25 February reports stormy first trip, NOT a 25 February arrival. Full article and port register pending.
 - Fleet table: U.S. Senate Document No. 224 (1936), American Ships in Foreign Trade, reported printed p. 23, lists 34,351 gross tons and 20 knots; quoted as a government tabulation, not a measured service speed. Original table image pending inspection.
 - Evidence status: supplied dossier remains model_extraction_only, not independently verified. Exact completion/acceptance, modernization speeds and disposal chronology remain unresolved.
+
+## Kaiser Wilhelm der Grosse dossier review — 2026-11-14 (run 43625576614)
+
+- **26 August 1914 engagement:** Added attributed timings from the British commander's report reproduced in Ursula Feldkamp, *Die letzte Reise des Schnelldampfers Kaiser Wilhelm der Grosse* (Deutsches Schifffahrtsmuseum), printed pp. 182–183: firing began 3:10 p.m.; German fire ceased 4:25 p.m.; sinking reported at 5:10 p.m. German accounts of deliberate scuttling are kept distinct; the British report does not independently settle sinking mechanism. PDF scan accessible and report text inspected.
+- **April 1898 record:** Existing approximately 22-knot account retained. Dossier's 5d 20h / 3,120 nautical miles / 22.29 knots / 561-mile best day not promoted because original *Engineering News-Record* article has not been examined.
+- **March 1900 wireless:** Existing permanent Marconi installation and Borkum account retained. Proposed 7 March arrival and 8 March *New York Times* details not promoted pending inspection of full newspaper article; permanent-equipment superlative not inferred from it.
+- **Evidence status:** Submitted JSON remains model_extraction_only; source access and unresolved claims are recorded individually, without blanket verification.
