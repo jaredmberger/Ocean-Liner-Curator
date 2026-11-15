@@ -593,6 +593,13 @@ Do not derive coverage percentages from this partial ledger or count source-refe
 | Pending | [Guide name](ships/guide.html) | Exact sampled claims; corrected / clarified / sample agreed / retained or unresolved / source reference only | Source URL, dated edition and page or object ID; access limitations | PR link |
 
 
+## Homeric dossier review — 2026-11-14 (run 43625576614)
+
+- Launch: 17 December 1913 was already recorded; contemporary Oberschlesischer Wanderer Danzig dispatch reports midday Schichau launch of NDL Columbus, attended by Crown Prince, Crown Princess and Count Zeppelin. Facsimile not independently inspected.
+- Maiden voyage: retain 15 February 1922 Southampton departure and 24 February New York arrival. New York Times publication of 25 February reports stormy first trip, NOT a 25 February arrival. Full article and port register pending.
+- Fleet table: U.S. Senate Document No. 224 (1936), American Ships in Foreign Trade, reported printed p. 23, lists 34,351 gross tons and 20 knots; quoted as a government tabulation, not a measured service speed. Original table image pending inspection.
+- Evidence status: supplied dossier remains model_extraction_only, not independently verified. Exact completion/acceptance, modernization speeds and disposal chronology remain unresolved.
+
 ## Kaiser Wilhelm der Grosse dossier review — 2026-11-14 (run 43625576614)
 
 - **26 August 1914 engagement:** Added attributed timings from the British commander's report reproduced in Ursula Feldkamp, *Die letzte Reise des Schnelldampfers Kaiser Wilhelm der Grosse* (Deutsches Schifffahrtsmuseum), printed pp. 182–183: firing began 3:10 p.m.; German fire ceased 4:25 p.m.; sinking reported at 5:10 p.m. German accounts of deliberate scuttling are kept distinct; the British report does not independently settle sinking mechanism. PDF scan accessible and report text inspected.
