@@ -592,3 +592,10 @@ Do not derive coverage percentages from this partial ledger or count source-refe
 |---|---|---|---|---|
 | Pending | [Guide name](ships/guide.html) | Exact sampled claims; corrected / clarified / sample agreed / retained or unresolved / source reference only | Source URL, dated edition and page or object ID; access limitations | PR link |
 
+
+## Kaiser Wilhelm der Grosse dossier review — 2026-11-14 (run 43625576614)
+
+- **26 August 1914 engagement:** Added attributed timings from the British commander's report reproduced in Ursula Feldkamp, *Die letzte Reise des Schnelldampfers Kaiser Wilhelm der Grosse* (Deutsches Schifffahrtsmuseum), printed pp. 182–183: firing began 3:10 p.m.; German fire ceased 4:25 p.m.; sinking reported at 5:10 p.m. German accounts of deliberate scuttling are kept distinct; the British report does not independently settle sinking mechanism. PDF scan accessible and report text inspected.
+- **April 1898 record:** Existing approximately 22-knot account retained. Dossier's 5d 20h / 3,120 nautical miles / 22.29 knots / 561-mile best day not promoted because original *Engineering News-Record* article has not been examined.
+- **March 1900 wireless:** Existing permanent Marconi installation and Borkum account retained. Proposed 7 March arrival and 8 March *New York Times* details not promoted pending inspection of full newspaper article; permanent-equipment superlative not inferred from it.
+- **Evidence status:** Submitted JSON remains model_extraction_only; source access and unresolved claims are recorded individually, without blanket verification.
