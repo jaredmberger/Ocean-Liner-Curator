@@ -606,3 +606,11 @@ Do not derive coverage percentages from this partial ledger or count source-refe
 - **April 1898 record:** Existing approximately 22-knot account retained. Dossier's 5d 20h / 3,120 nautical miles / 22.29 knots / 561-mile best day not promoted because original *Engineering News-Record* article has not been examined.
 - **March 1900 wireless:** Existing permanent Marconi installation and Borkum account retained. Proposed 7 March arrival and 8 March *New York Times* details not promoted pending inspection of full newspaper article; permanent-equipment superlative not inferred from it.
 - **Evidence status:** Submitted JSON remains model_extraction_only; source access and unresolved claims are recorded individually, without blanket verification.
+
+
+## Empress of Australia dossier review — 2026-11-16 (run 43968521204)
+
+- **1926–27 refurbishment and Atlantic voyage:** Historic England Bedford Lemere catalogue [BL29020/028](https://historicengland.org.uk/images-books/photos/item/BL29020/028) dates first post-refurbishment Southampton–Quebec voyage to 25 June 1927; [Liverpool Nautical Research Society Bulletin 53(1), 2009](https://liverpoolmaritimesociety.org/wp-content/uploads/2019/03/Bulletin-Vol-53-No-01-2009.pdf) provides retrospective machinery-reconstruction context. Exact date attributed to catalogue, not independently verified from a contemporary sailing notice; intermediate port calls not asserted for this specific voyage.
+- **1952 disposal:** Same society bulletin, including a former officer's account, reports departure from the Mersey on 8 May 1952 for breaking at Inverkeithing. Contemporary movement and yard records not inspected; Thos. W. Ward attribution not promoted.
+- **1923 Yokohama relief:** [FRUS 1923, vol. II, document 433](https://history.state.gov/historicaldocuments/frus1923v02/d433), 24 November 1923, is contemporary primary diplomatic evidence. Guide already included a short account and citation; retained without inventing rescue totals.
+- **Evidence status:** Original dossier is `model_extraction_only`; one claim supported by contemporary primary diplomatic text, two qualified retrospective/catalogue claims. This is a claim-level editorial review, not full-guide certification. Editorial PR pending.
