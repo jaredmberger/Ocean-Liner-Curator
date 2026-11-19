@@ -795,24 +795,6 @@
       ]
     }
   ],
-  "12-10": [
-    {
-      "year": 1937,
-      "title": "Leviathan sold for scrapping",
-      "ship": "SS Leviathan",
-      "category": "Retirement",
-      "summary": "United States Lines' Leviathan, formerly Vaterland, was sold for scrapping to a British firm.",
-      "whyItMatters": "The sale marked the end of the celebrated liner's American commercial career.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "winter-chronology"
-      ],
-      "sources": [
-        "https://www.history.navy.mil/research/histories/ship-histories/danfs/l/leviathan-sp-1326.html"
-      ]
-    }
-  ],
   "12-11": [
     {
       "year": 1942,
@@ -918,6 +900,24 @@
       ],
       "sources": [
         "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+      ]
+    }
+  ],
+  "11-10": [
+    {
+      "year": 1908,
+      "title": "SS George Washington launched at Stettin",
+      "ship": "SS George Washington",
+      "category": "Launch",
+      "summary": "The North German Lloyd passenger liner George Washington was launched at the Vulcan Works in Stettin, Germany.",
+      "whyItMatters": "The ship later became a U.S. troop transport and carried President Woodrow Wilson to the Paris Peace Conference.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/g/george-washington-ii.html"
       ]
     }
   ]
