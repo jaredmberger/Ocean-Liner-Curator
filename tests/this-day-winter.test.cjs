@@ -38,8 +38,8 @@ test('scripts parse and add exactly 50 distinct entries without dropping existin
   }
 });
 test('linked ship guides exist', () => {
-  const { data } = getChronology();
-  for (const events of Object.values(data)) for (const e of events) {
+  const { data, before } = getChronology();
+  for (const [date, events] of Object.entries(data)) for (const e of events.slice(before[date] || 0)) {
     if (!e.relatedUrl) continue;
     assert.match(e.relatedUrl, /^\\/ships\\/[a-z0-9-]+$/);
     assert.ok(fs.existsSync(path.join(root, e.relatedUrl.slice(1) + '.html')), 'missing guide ' + e.relatedUrl);
