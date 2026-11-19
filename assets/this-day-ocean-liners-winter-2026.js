@@ -446,6 +446,173 @@
   for (const [date, events] of Object.entries(verifiedExpansion)) {
     additions[date] = (additions[date] || []).concat(events);
   }
+  const civilianMilestones = {
+  "11-19": [
+    {
+      "year": 1968,
+      "title": "Queen Elizabeth 2 leaves Clydebank to begin trials",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Sea Trials",
+      "summary": "Queen Elizabeth 2 departed the John Brown shipyard for the first time, beginning her sea-trial period.",
+      "whyItMatters": "The departure marked a major milestone in bringing Cunard's new flagship into service.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://www.qe2.org.uk/history.html"
+      ]
+    }
+  ],
+  "11-30": [
+    {
+      "year": 1911,
+      "title": "Olympic returns to service after collision repairs",
+      "ship": "RMS Olympic",
+      "category": "Service",
+      "summary": "Olympic returned to service after repairs following her collision with HMS Hawke.",
+      "whyItMatters": "The interruption had also affected work on her sister ship Titanic.",
+      "relatedUrl": "/ships/rms-olympic",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://titanicinquiry.org/ships/olympic.php"
+      ]
+    }
+  ],
+  "12-04": [
+    {
+      "year": 1975,
+      "title": "Queen Elizabeth 2 passes one million nautical miles",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Milestone",
+      "summary": "Queen Elizabeth 2 reached one million nautical miles traveled since entering service in 1969.",
+      "whyItMatters": "The milestone illustrates the intensity of her transatlantic and cruising schedule.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://maritime.elettra.co.uk/qe2/service/"
+      ]
+    }
+  ],
+  "12-16": [
+    {
+      "year": 1908,
+      "title": "Keel of Olympic laid in Belfast",
+      "ship": "RMS Olympic",
+      "category": "Construction",
+      "summary": "Harland & Wolff laid the keel of Olympic, yard number 400, at Queen's Island, Belfast.",
+      "whyItMatters": "The event began physical construction of the first Olympic-class liner.",
+      "relatedUrl": "/ships/rms-olympic",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://www.titanicbelfast.com/history-of-titanic/ship-fact-files/olympic-fact-file"
+      ]
+    }
+  ],
+  "12-17": [
+    {
+      "year": 1968,
+      "title": "Queen Elizabeth 2 begins a second series of sea trials",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Sea Trials",
+      "summary": "Queen Elizabeth 2 began another series of trials after difficulties involving oil contamination in her steam feed.",
+      "whyItMatters": "The engineering setback contributed to the complex preparations for her 1969 entry into service.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://maritime.elettra.co.uk/qe2/construction/"
+      ]
+    }
+  ],
+  "12-23": [
+    {
+      "year": 1968,
+      "title": "Queen Elizabeth 2 begins main sea trials",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Sea Trials",
+      "summary": "Queen Elizabeth 2 commenced her main trials off the Scottish coast to test her seaworthiness.",
+      "whyItMatters": "These trials were a critical stage in accepting Cunard's new transatlantic flagship.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://maritime.elettra.co.uk/qe2/construction/"
+      ]
+    }
+  ],
+  "12-30": [
+    {
+      "year": 1964,
+      "title": "Contract signed for Queen Elizabeth 2",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Construction",
+      "summary": "Cunard signed the contract with John Brown's Clydebank shipyard for the new liner later named Queen Elizabeth 2.",
+      "whyItMatters": "The agreement set in motion construction of Cunard's last great twentieth-century purpose-built Atlantic liner.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://www.qe2.org.uk/history.html"
+      ]
+    }
+  ],
+  "01-02": [
+    {
+      "year": 1969,
+      "title": "Queen Elizabeth 2 arrives in Southampton after turbine difficulties",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Sea Trials",
+      "summary": "Queen Elizabeth 2 reached Southampton following problems with her turbine machinery during trials.",
+      "whyItMatters": "The engineering difficulties delayed the ship's introduction into passenger service.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://maritime.elettra.co.uk/qe2/construction/"
+      ]
+    }
+  ],
+  "01-17": [
+    {
+      "year": 1969,
+      "title": "Cunard postpones Queen Elizabeth 2 maiden voyage",
+      "ship": "RMS Queen Elizabeth 2",
+      "category": "Service",
+      "summary": "Cunard postponed Queen Elizabeth 2's maiden voyage while technical problems were being addressed.",
+      "whyItMatters": "The postponement reflected the challenges of commissioning a complex new ocean liner.",
+      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "significance": "medium",
+      "tags": [
+        "ocean-liner-history"
+      ],
+      "sources": [
+        "https://maritime.elettra.co.uk/qe2/construction/"
+      ]
+    }
+  ]
+};
+  for (const [date, events] of Object.entries(civilianMilestones)) {
+    additions[date] = (additions[date] || []).concat(events);
+  }
   for (const [date, events] of Object.entries(additions)) {
     const existing = Array.isArray(window.OCEAN_LINER_THIS_DAY[date]) ? window.OCEAN_LINER_THIS_DAY[date] : [];
     const seen = new Set(existing.map(e => String(e.year) + '|' + String(e.ship || '').toLowerCase() + '|' + String(e.title || '').toLowerCase()));
