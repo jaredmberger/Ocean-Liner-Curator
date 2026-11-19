@@ -586,17 +586,18 @@
   "01-17": [
     {
       "year": 1969,
-      "title": "Cunard postpones Queen Elizabeth 2 maiden voyage",
+      "title": "QE2's originally scheduled maiden voyage date passes",
       "ship": "RMS Queen Elizabeth 2",
       "category": "Service",
-      "summary": "Cunard postponed Queen Elizabeth 2's maiden voyage while technical problems were being addressed.",
-      "whyItMatters": "The postponement reflected the challenges of commissioning a complex new ocean liner.",
+      "summary": "Queen Elizabeth 2 had originally been advertised to sail to New York on 17 January 1969, but turbine problems delayed her departure until 2 May. The 17 January date is the planned sailing date, not a verified date on which Cunard announced the postponement.",
+      "whyItMatters": "The missed inaugural sailing illustrates the technical setbacks that delayed QE2's entry into transatlantic service.",
       "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
         "ocean-liner-history"
       ],
       "sources": [
+        "https://www.postalmuseum.org/wp-content/uploads/2018/12/Stamp-History-1969-Ships.pdf",
         "https://maritime.elettra.co.uk/qe2/construction/"
       ]
     }
