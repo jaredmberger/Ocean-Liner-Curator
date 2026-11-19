@@ -555,18 +555,19 @@
         "ocean-liner-history"
       ],
       "sources": [
-        "https://maritime.elettra.co.uk/qe2/construction/"
+        "https://maritime.elettra.co.uk/qe2/construction/",
+        "https://www.qe2abstractlog.com/itinerary"
       ]
     }
   ],
   "12-30": [
     {
       "year": 1964,
-      "title": "Cunard places formal order for Queen Elizabeth 2",
+      "title": "Cunard's QE2 construction contract recorded as signed",
       "ship": "RMS Queen Elizabeth 2",
       "category": "Construction",
-      "summary": "Cunard placed its formal construction order for the new liner at John Brown's Clydebank yard on 30 December 1964. Some histories distinguish this from an earlier October contract-signing ceremony.",
-      "whyItMatters": "The agreement set in motion construction of Cunard's last great twentieth-century purpose-built Atlantic liner.",
+      "summary": "A QE2 historical chronology dates the signing of Cunard's contract with John Brown's Clydebank shipyard to 30 December 1964. Other accounts describe earlier contract arrangements; the distinction between preliminary agreement and final signing requires further archival confirmation.",
+      "whyItMatters": "The shipbuilding agreement advanced Cunard's plans for a new Atlantic flagship, although the precise contractual sequence remains a research question.",
       "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
@@ -634,6 +635,8 @@
         "winter-chronology"
       ],
       "sources": [
+        "https://www.usmodernist.org/LAH/LAH-1935-08.pdf",
+        "https://library.imarest.org/record/1619/files/1646.pdf",
         "https://catalogs.marinersmuseum.org/object/CL4380"
       ]
     }
