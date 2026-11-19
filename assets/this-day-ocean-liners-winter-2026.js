@@ -19,6 +19,8 @@
         "historical-chronology"
       ],
       "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/g/great-northern.html",
+        "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/u/us-navy-world-war-i-redirect.html",
         "https://www.history.navy.mil/our-collections/photography/us-navy-ships/alphabetical-listing/g/uss-great-northern0.html"
       ]
     }
