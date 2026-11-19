@@ -202,6 +202,155 @@
     }
   ]
 };
+  const additionalEvents = {
+  "11-03": [
+    {
+      "year": 1917,
+      "title": "Northern Pacific is commissioned as a troop transport",
+      "ship": "SS Northern Pacific",
+      "category": "Wartime Service",
+      "summary": "The former coastal passenger steamer Northern Pacific was commissioned at Bremerton for U.S. Navy service.",
+      "whyItMatters": "She subsequently carried thousands of troops and passengers across the Atlantic.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/n/northern-pacific.html"
+      ]
+    }
+  ],
+  "11-19": [
+    {
+      "year": 1921,
+      "title": "Great Northern is renamed Columbia",
+      "ship": "SS Great Northern",
+      "category": "Naval Service",
+      "summary": "The former passenger steamer Great Northern was renamed Columbia by presidential order while serving as an Atlantic Fleet flagship.",
+      "whyItMatters": "Her naval service followed her wartime work transporting troops.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/g/great-northern.html"
+      ]
+    }
+  ],
+  "11-24": [
+    {
+      "year": 1919,
+      "title": "Imperator is transferred to British control",
+      "ship": "SS Imperator",
+      "category": "Postwar Transfer",
+      "summary": "The former German express liner Imperator was decommissioned by the U.S. Navy and delivered to the British Ministry of Shipping.",
+      "whyItMatters": "Her transfer led to her later career as Cunard's Berengaria.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/i/imperator.html"
+      ]
+    }
+  ],
+  "11-25": [
+    {
+      "year": 1919,
+      "title": "Former liner Cleveland leaves U.S. Navy service",
+      "ship": "SS Cleveland",
+      "category": "Postwar Transfer",
+      "summary": "The former Hamburg-Amerika liner Cleveland, which had served as USS Mobile, was decommissioned and transferred to the U.S. Shipping Board.",
+      "whyItMatters": "The ship's successive identities reflect the postwar redistribution of German passenger liners.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/content/history/nhhc/research/histories/ship-histories/danfs/m/mobile-ii.html"
+      ]
+    }
+  ],
+  "01-01": [
+    {
+      "year": 1919,
+      "title": "Northern Pacific grounds off Fire Island",
+      "ship": "SS Northern Pacific",
+      "category": "Grounding",
+      "summary": "The U.S. troop transport Northern Pacific ran aground off Fire Island, New York, with returning troops aboard.",
+      "whyItMatters": "The incident exposed the risks that persisted for wartime passenger transports even after the Armistice.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/n/northern-pacific.html"
+      ]
+    }
+  ],
+  "01-02": [
+    {
+      "year": 1918,
+      "title": "Former Austrian liner Martha Washington is commissioned",
+      "ship": "SS Martha Washington",
+      "category": "Wartime Service",
+      "summary": "The former Trieste–New York passenger liner Martha Washington entered U.S. Navy commission as a troop transport.",
+      "whyItMatters": "The conversion brought an interned Central Powers passenger vessel into Allied troop service.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/m/martha-washington.html"
+      ]
+    }
+  ],
+  "01-14": [
+    {
+      "year": 1942,
+      "title": "Former liner President Van Buren is acquired by the Navy",
+      "ship": "SS President Van Buren",
+      "category": "Wartime Service",
+      "summary": "The passenger liner President Van Buren was acquired by the U.S. Navy for conversion to the transport Thomas Stone.",
+      "whyItMatters": "Her wartime career included the Allied landings in North Africa.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/t/thomas-stone.html"
+      ]
+    }
+  ],
+  "01-18": [
+    {
+      "year": 1919,
+      "title": "Northern Pacific is refloated after grounding",
+      "ship": "SS Northern Pacific",
+      "category": "Salvage",
+      "summary": "The troop transport Northern Pacific was refloated after grounding off Fire Island on New Year's Day.",
+      "whyItMatters": "The salvage allowed the ship to proceed to Staten Island and eventually return to transport service.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/n/northern-pacific.html"
+      ]
+    }
+  ]
+};
+  for (const [date, events] of Object.entries(additionalEvents)) {
+    additions[date] = (additions[date] || []).concat(events);
+  }
   for (const [date, events] of Object.entries(additions)) {
     const existing = Array.isArray(window.OCEAN_LINER_THIS_DAY[date]) ? window.OCEAN_LINER_THIS_DAY[date] : [];
     const seen = new Set(existing.map(e => String(e.year) + '|' + String(e.ship || '').toLowerCase() + '|' + String(e.title || '').toLowerCase()));
