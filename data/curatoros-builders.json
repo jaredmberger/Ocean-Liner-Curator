@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T10:36:50.566Z",
+  "generatedAt": "2026-11-19T08:32:36.496Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 382,
@@ -1011,17 +1011,6 @@
       "shipCount": 1
     },
     {
-      "id": "ateliers-et-chantiers-de-bretagne",
-      "name": "Ateliers et Chantiers de Bretagne",
-      "names": [
-        "Ateliers et Chantiers de Bretagne"
-      ],
-      "rawValues": [
-        "Ateliers et Chantiers de Bretagne, Saint-Nazaire"
-      ],
-      "shipCount": 1
-    },
-    {
       "id": "bethlehem-shipbuilding-corp-fore-river-shipyard",
       "name": "Bethlehem Shipbuilding Corp., Fore River Shipyard",
       "names": [
@@ -1150,6 +1139,17 @@
       ],
       "rawValues": [
         "Chantiers & Ateliers de Saint-Nazaire / Penhoët, Saint-Nazaire, France"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "chantiers-de-saint-nazaire-penhoet",
+      "name": "Chantiers de Saint-Nazaire (Penhoët)",
+      "names": [
+        "Chantiers de Saint-Nazaire (Penhoët)"
+      ],
+      "rawValues": [
+        "Chantiers de Saint-Nazaire (Penhoët), Saint-Nazaire — reported in contemporary press"
       ],
       "shipCount": 1
     },
@@ -3611,12 +3611,12 @@
       "path": "ships/ss-bretagne.html",
       "url": "/ships/ss-bretagne",
       "launchYear": "1951",
-      "builderRaw": "Ateliers et Chantiers de Bretagne, Saint-Nazaire",
+      "builderRaw": "Chantiers de Saint-Nazaire (Penhoët), Saint-Nazaire — reported in contemporary press",
       "builders": [
         {
-          "id": "ateliers-et-chantiers-de-bretagne",
-          "name": "Ateliers et Chantiers de Bretagne",
-          "raw": "Ateliers et Chantiers de Bretagne, Saint-Nazaire"
+          "id": "chantiers-de-saint-nazaire-penhoet",
+          "name": "Chantiers de Saint-Nazaire (Penhoët)",
+          "raw": "Chantiers de Saint-Nazaire (Penhoët), Saint-Nazaire — reported in contemporary press"
         }
       ]
     },

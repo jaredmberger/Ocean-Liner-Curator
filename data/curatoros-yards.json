@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T06:30:24.636Z",
+  "generatedAt": "2026-11-19T08:32:36.496Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
     "shipGuides": 370,
     "guidesWithDocumentedYard": 370,
     "guidesWithoutDocumentedYard": 0,
-    "canonicalYardLocations": 78,
+    "canonicalYardLocations": 79,
     "multiYardShips": 0
   },
   "yards": [
@@ -1333,7 +1333,6 @@
         "Saint-Nazaire, France"
       ],
       "builders": [
-        "Ateliers et Chantiers de Bretagne",
         "Ateliers et Chantiers de Saint-Nazaire Penhoët",
         "Ateliers et Chantiers de la Loire",
         "Chantiers & Ateliers de Saint-Nazaire / Penhoët",
@@ -1341,7 +1340,7 @@
         "Chantiers de l'Atlantique",
         "Chantiers de l’Atlantique"
       ],
-      "shipCount": 18,
+      "shipCount": 17,
       "ships": [
         {
           "name": "SS La Bretagne",
@@ -1440,13 +1439,6 @@
           "url": "/ships/ss-pasteur",
           "launchYear": "1938",
           "builder": "Chantiers de Penhoët"
-        },
-        {
-          "name": "SS Bretagne",
-          "path": "ships/ss-bretagne.html",
-          "url": "/ships/ss-bretagne",
-          "launchYear": "1951",
-          "builder": "Ateliers et Chantiers de Bretagne"
         },
         {
           "name": "SS France",
@@ -3555,6 +3547,26 @@
           "url": "/ships/ss-principessa-mafalda",
           "launchYear": "1908",
           "builder": "Cantiere Navale di Riva Trigoso"
+        }
+      ]
+    },
+    {
+      "id": "saint-nazaire-reported-in-contemporary-press",
+      "name": "Saint-Nazaire — reported in contemporary press",
+      "rawValues": [
+        "Saint-Nazaire — reported in contemporary press"
+      ],
+      "builders": [
+        "Chantiers de Saint-Nazaire (Penhoët)"
+      ],
+      "shipCount": 1,
+      "ships": [
+        {
+          "name": "SS Bretagne",
+          "path": "ships/ss-bretagne.html",
+          "url": "/ships/ss-bretagne",
+          "launchYear": "1951",
+          "builder": "Chantiers de Saint-Nazaire (Penhoët)"
         }
       ]
     },
@@ -5731,10 +5743,10 @@
       "launchYear": "1951",
       "assignments": [
         {
-          "builder": "Ateliers et Chantiers de Bretagne",
-          "builderId": "ateliers-et-chantiers-de-bretagne",
-          "location": "Saint-Nazaire",
-          "locationRaw": "Saint-Nazaire"
+          "builder": "Chantiers de Saint-Nazaire (Penhoët)",
+          "builderId": "chantiers-de-saint-nazaire-penhoet",
+          "location": "Saint-Nazaire — reported in contemporary press",
+          "locationRaw": "Saint-Nazaire — reported in contemporary press"
         }
       ]
     },
