@@ -450,10 +450,10 @@
   "11-19": [
     {
       "year": 1968,
-      "title": "Queen Elizabeth 2 leaves Clydebank to begin trials",
+      "title": "Queen Elizabeth 2 leaves Clydebank for Greenock",
       "ship": "RMS Queen Elizabeth 2",
       "category": "Sea Trials",
-      "summary": "Queen Elizabeth 2 departed the John Brown shipyard for the first time, beginning her sea-trial period.",
+      "summary": "Queen Elizabeth 2 departed John Brown's fitting-out berth at Clydebank for drydocking at Greenock. Her first technical trial began on 26 November.",
       "whyItMatters": "The departure marked a major milestone in bringing Cunard's new flagship into service.",
       "relatedUrl": "/ships/rms-queen-elizabeth-2",
       "significance": "medium",
@@ -461,6 +461,7 @@
         "ocean-liner-history"
       ],
       "sources": [
+        "https://library.imarest.org/record/2014/files/2041.pdf",
         "https://www.qe2.org.uk/history.html"
       ]
     }
@@ -533,6 +534,7 @@
         "ocean-liner-history"
       ],
       "sources": [
+        "https://library.imarest.org/record/2014/files/2041.pdf",
         "https://maritime.elettra.co.uk/qe2/construction/"
       ]
     }
@@ -558,10 +560,10 @@
   "12-30": [
     {
       "year": 1964,
-      "title": "Contract signed for Queen Elizabeth 2",
+      "title": "Cunard places formal order for Queen Elizabeth 2",
       "ship": "RMS Queen Elizabeth 2",
       "category": "Construction",
-      "summary": "Cunard signed the contract with John Brown's Clydebank shipyard for the new liner later named Queen Elizabeth 2.",
+      "summary": "Cunard placed its formal construction order for the new liner at John Brown's Clydebank yard on 30 December 1964. Some histories distinguish this from an earlier October contract-signing ceremony.",
       "whyItMatters": "The agreement set in motion construction of Cunard's last great twentieth-century purpose-built Atlantic liner.",
       "relatedUrl": "/ships/rms-queen-elizabeth-2",
       "significance": "medium",
@@ -569,7 +571,8 @@
         "ocean-liner-history"
       ],
       "sources": [
-        "https://www.qe2.org.uk/history.html"
+        "https://www.qe2.org.uk/history.html",
+        "https://www.titanicandco.com/qe2/qe2index.php"
       ]
     }
   ],
@@ -587,7 +590,8 @@
         "ocean-liner-history"
       ],
       "sources": [
-        "https://maritime.elettra.co.uk/qe2/construction/"
+        "https://www.scottishmaritimemuseum.org/collections/qe2-starboard-high-pressure-turbine-pattern/",
+        "https://www.sotonwss.org.uk/blackjack/Mar19BJ.pdf"
       ]
     }
   ],
