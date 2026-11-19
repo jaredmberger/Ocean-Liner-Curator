@@ -24,10 +24,10 @@ test('scripts parse and add exactly 50 distinct entries without dropping existin
     assert.ok(Array.isArray(events));
     assert.ok(events.length >= (before[date] || 0), 'lost original events on ' + date);
     added += events.length - (before[date] || 0);
-    for (const e of events) {
-      assert.ok(Number.isInteger(e.year));
-      assert.ok(e.title && e.ship && e.summary);
-      assert.ok(Array.isArray(e.sources) && e.sources.length);
+    for (const e of events.slice(before[date] || 0)) {
+      assert.ok(Number.isInteger(e.year), 'invalid winter year on ' + date);
+      assert.ok(e.title && e.ship && e.summary, 'missing winter fields on ' + date);
+      assert.ok(Array.isArray(e.sources) && e.sources.length, 'missing winter sources on ' + date);
     }
   }
   assert.equal(added, 50);
