@@ -636,7 +636,26 @@
       ]
     }
   ],
-  "11-09": [
+  "12-11": [
+    {
+      "year": 1931,
+      "title": "Construction of Queen Mary halted amid Depression",
+      "ship": "RMS Queen Mary",
+      "category": "Construction",
+      "summary": "The Queen Mary's official timeline dates the suspension of work on Cunard's Hull 534 to 11 December 1931 amid the Great Depression; a contemporary engineering article instead gives 10 December, so the one-day discrepancy is retained in the source record.",
+      "whyItMatters": "The suspension delayed completion of the ship that would become Queen Mary.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.queenmary.com/timeline-stats--fun-facts.htm",
+        "https://graces-guide-s3-live.s3.amazonaws.com/gracesguide/2/2d/Er19340928.pdf"
+      ]
+    }
+  ],
+  "11-07": [
     {
       "year": 1915,
       "title": "Italian liner Ancona sunk in the Mediterranean",
@@ -650,11 +669,12 @@
         "winter-chronology"
       ],
       "sources": [
-        "https://kpolsson.com/cruiseship/"
+        "https://history.state.gov/historicaldocuments/frus1915Supp/d856",
+        "https://fraser.stlouisfed.org/title/commercial-financial-chronicle-1339/november-13-1915-499868/fulltext"
       ]
     }
   ],
-  "01-11": [
+  "01-12": [
     {
       "year": 1920,
       "title": "French liner Afrique sinks in the Bay of Biscay",
@@ -668,25 +688,7 @@
         "winter-chronology"
       ],
       "sources": [
-        "https://kpolsson.com/cruiseship/"
-      ]
-    }
-  ],
-  "12-11": [
-    {
-      "year": 1931,
-      "title": "Construction of Queen Mary halted amid Depression",
-      "ship": "RMS Queen Mary",
-      "category": "Construction",
-      "summary": "Work on Cunard's new liner, then known as Hull 534, was suspended during the economic crisis.",
-      "whyItMatters": "The suspension delayed completion of the ship that would become Queen Mary.",
-      "relatedUrl": "/ships/rms-queen-mary",
-      "significance": "high",
-      "tags": [
-        "winter-chronology"
-      ],
-      "sources": [
-        "https://kpolsson.com/cruiseship/ship1930.htm"
+        "https://www.franceandcolonies.org/philatelist/300.pdf"
       ]
     }
   ]
