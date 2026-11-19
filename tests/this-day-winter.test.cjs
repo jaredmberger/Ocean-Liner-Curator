@@ -320,7 +320,83 @@ test('all 50 audited winter entries reside in the authoritative chronology exact
   assert.equal(expected.length,50);
   const seen = new Set();
   for(const [date,events] of Object.entries(data)) {
-    assert.match(date,/^\\d{2}-\\d{2}$/);
+    assert.match(date,new RegExp('^[0-9]{2}-[0-9]{2}
+    assert.ok(Array.isArray(events));
+    for(const e of events){
+      const key=JSON.stringify([date,e.year,e.ship,e.title]);
+      assert.ok(!seen.has(key),'duplicate chronology event '+key);
+      seen.add(key);
+    }
+  }
+  for(const entry of expected){
+    const [date,year,ship,title]=entry;
+    assert.equal((data[date]||[]).filter(e=>e.year===year&&e.ship===ship&&e.title===title).length,1,'missing or duplicate '+JSON.stringify(entry));
+    const e=data[date].find(e=>e.year===year&&e.ship===ship&&e.title===title);
+    assert.ok(e.summary && Array.isArray(e.sources)&&e.sources.length,'missing provenance '+title);
+    if(e.relatedUrl){
+      assert.match(e.relatedUrl,new RegExp('^/ships/[a-z0-9-]+
+      assert.ok(fs.existsSync(path.join(root,e.relatedUrl.slice(1)+'.html')),'missing guide '+e.relatedUrl);
+    }
+  }
+  assert.ok(Object.values(data).reduce((n,arr)=>n+arr.length,0)>=239,'lost original chronology entries');
+  load(ctx,file);
+  assert.equal(Object.values(ctx.window.OCEAN_LINER_THIS_DAY).reduce((n,arr)=>n+arr.length,0),Object.values(data).reduce((n,arr)=>n+arr.length,0));
+});
+test('both public pages load the authoritative file and no winter supplement',()=>{
+  for(const page of ['ships/ships.html','this-day-in-ocean-liner-history.html']){
+    const html=fs.readFileSync(path.join(root,page),'utf8');
+    assert.ok(html.includes('/assets/this-day-ocean-liners.js'),'missing main chronology on '+page);
+    assert.ok(!html.includes('this-day-ocean-liners-winter-2026.js'),'stale supplement on '+page);
+  }
+  assert.ok(!fs.existsSync(path.join(root,'assets/this-day-ocean-liners-winter-2026.js')),'obsolete winter file still present');
+});
+));
+    assert.ok(Array.isArray(events));
+    for(const e of events){
+      const key=JSON.stringify([date,e.year,e.ship,e.title]);
+      assert.ok(!seen.has(key),'duplicate chronology event '+key);
+      seen.add(key);
+    }
+  }
+  for(const entry of expected){
+    const [date,year,ship,title]=entry;
+    assert.equal((data[date]||[]).filter(e=>e.year===year&&e.ship===ship&&e.title===title).length,1,'missing or duplicate '+JSON.stringify(entry));
+    const e=data[date].find(e=>e.year===year&&e.ship===ship&&e.title===title);
+    assert.ok(e.summary && Array.isArray(e.sources)&&e.sources.length,'missing provenance '+title);
+    if(e.relatedUrl){
+      assert.match(e.relatedUrl,/^\\/ships\\/[a-z0-9-]+$/);
+      assert.ok(fs.existsSync(path.join(root,e.relatedUrl.slice(1)+'.html')),'missing guide '+e.relatedUrl);
+    }
+  }
+  assert.ok(Object.values(data).reduce((n,arr)=>n+arr.length,0)>=239,'lost original chronology entries');
+  load(ctx,file);
+  assert.equal(Object.values(ctx.window.OCEAN_LINER_THIS_DAY).reduce((n,arr)=>n+arr.length,0),Object.values(data).reduce((n,arr)=>n+arr.length,0));
+});
+test('both public pages load the authoritative file and no winter supplement',()=>{
+  for(const page of ['ships/ships.html','this-day-in-ocean-liner-history.html']){
+    const html=fs.readFileSync(path.join(root,page),'utf8');
+    assert.ok(html.includes('/assets/this-day-ocean-liners.js'),'missing main chronology on '+page);
+    assert.ok(!html.includes('this-day-ocean-liners-winter-2026.js'),'stale supplement on '+page);
+  }
+  assert.ok(!fs.existsSync(path.join(root,'assets/this-day-ocean-liners-winter-2026.js')),'obsolete winter file still present');
+});
+));
+      assert.ok(fs.existsSync(path.join(root,e.relatedUrl.slice(1)+'.html')),'missing guide '+e.relatedUrl);
+    }
+  }
+  assert.ok(Object.values(data).reduce((n,arr)=>n+arr.length,0)>=239,'lost original chronology entries');
+  load(ctx,file);
+  assert.equal(Object.values(ctx.window.OCEAN_LINER_THIS_DAY).reduce((n,arr)=>n+arr.length,0),Object.values(data).reduce((n,arr)=>n+arr.length,0));
+});
+test('both public pages load the authoritative file and no winter supplement',()=>{
+  for(const page of ['ships/ships.html','this-day-in-ocean-liner-history.html']){
+    const html=fs.readFileSync(path.join(root,page),'utf8');
+    assert.ok(html.includes('/assets/this-day-ocean-liners.js'),'missing main chronology on '+page);
+    assert.ok(!html.includes('this-day-ocean-liners-winter-2026.js'),'stale supplement on '+page);
+  }
+  assert.ok(!fs.existsSync(path.join(root,'assets/this-day-ocean-liners-winter-2026.js')),'obsolete winter file still present');
+});
+));
     assert.ok(Array.isArray(events));
     for(const e of events){
       const key=JSON.stringify([date,e.year,e.ship,e.title]);
