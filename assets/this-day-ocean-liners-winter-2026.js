@@ -455,7 +455,7 @@
       "category": "Sea Trials",
       "summary": "Queen Elizabeth 2 departed John Brown's fitting-out berth at Clydebank for drydocking at Greenock. Her first technical trial began on 26 November.",
       "whyItMatters": "The departure marked a major milestone in bringing Cunard's new flagship into service.",
-      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
         "ocean-liner-history"
@@ -492,7 +492,7 @@
       "category": "Milestone",
       "summary": "Queen Elizabeth 2 reached one million nautical miles traveled since entering service in 1969.",
       "whyItMatters": "The milestone illustrates the intensity of her transatlantic and cruising schedule.",
-      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
         "ocean-liner-history"
@@ -528,7 +528,7 @@
       "category": "Sea Trials",
       "summary": "Queen Elizabeth 2 began another series of trials after difficulties involving oil contamination in her steam feed.",
       "whyItMatters": "The engineering setback contributed to the complex preparations for her 1969 entry into service.",
-      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
         "ocean-liner-history"
@@ -547,7 +547,7 @@
       "category": "Sea Trials",
       "summary": "Queen Elizabeth 2 commenced her main trials off the Scottish coast to test her seaworthiness.",
       "whyItMatters": "These trials were a critical stage in accepting Cunard's new transatlantic flagship.",
-      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
         "ocean-liner-history"
@@ -565,7 +565,7 @@
       "category": "Construction",
       "summary": "Cunard placed its formal construction order for the new liner at John Brown's Clydebank yard on 30 December 1964. Some histories distinguish this from an earlier October contract-signing ceremony.",
       "whyItMatters": "The agreement set in motion construction of Cunard's last great twentieth-century purpose-built Atlantic liner.",
-      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
         "ocean-liner-history"
@@ -584,7 +584,7 @@
       "category": "Sea Trials",
       "summary": "Queen Elizabeth 2 reached Southampton following problems with her turbine machinery during trials.",
       "whyItMatters": "The engineering difficulties delayed the ship's introduction into passenger service.",
-      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
         "ocean-liner-history"
@@ -603,7 +603,7 @@
       "category": "Service",
       "summary": "Cunard postponed Queen Elizabeth 2's maiden voyage while technical problems were being addressed.",
       "whyItMatters": "The postponement reflected the challenges of commissioning a complex new ocean liner.",
-      "relatedUrl": "/ships/rms-queen-elizabeth-2",
+      "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
       "tags": [
         "ocean-liner-history"
