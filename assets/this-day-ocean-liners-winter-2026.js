@@ -351,6 +351,101 @@
   for (const [date, events] of Object.entries(additionalEvents)) {
     additions[date] = (additions[date] || []).concat(events);
   }
+  const verifiedExpansion = {
+  "11-07": [
+    {
+      "year": 1940,
+      "title": "Former City of Baltimore commissioned as USS Heywood",
+      "ship": "SS City of Baltimore",
+      "category": "Wartime Service",
+      "summary": "The former Panama Pacific passenger liner City of Baltimore entered Navy service as the troop transport USS Heywood (AP-12).",
+      "whyItMatters": "Her conversion illustrates how intercoastal passenger liners became military transports.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/h/heywood.html"
+      ]
+    }
+  ],
+  "11-13": [
+    {
+      "year": 1902,
+      "title": "Former passenger liner John Englis transfers to the U.S. Navy",
+      "ship": "SS John Englis",
+      "category": "Naval Service",
+      "summary": "The former passenger liner John Englis, then serving as the hospital ship Relief, was transferred from the U.S. Army to the U.S. Navy.",
+      "whyItMatters": "Her changing role traces the early development of American naval hospital-ship service.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/r/relief-ii.html"
+      ]
+    }
+  ],
+  "12-11": [
+    {
+      "year": 1920,
+      "title": "Passenger-cargo liner Silver State is launched",
+      "ship": "SS Silver State",
+      "category": "Launch",
+      "summary": "Silver State was launched at Newport News, Virginia, for the Pacific passenger and cargo trade.",
+      "whyItMatters": "Later renamed President Jackson, she eventually became the U.S. Navy transport Zeilin.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/content/history/nhhc/research/histories/ship-histories/danfs/z/zeilin-ii.html"
+      ]
+    }
+  ],
+  "01-03": [
+    {
+      "year": 1942,
+      "title": "Former President Jackson commissioned as USS Zeilin",
+      "ship": "SS President Jackson",
+      "category": "Wartime Service",
+      "summary": "The former passenger liner President Jackson was commissioned as the transport USS Zeilin (AP-9).",
+      "whyItMatters": "The ship later supported American amphibious operations in the Pacific.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/content/history/nhhc/research/histories/ship-histories/danfs/z/zeilin-ii.html"
+      ]
+    }
+  ],
+  "01-16": [
+    {
+      "year": 1942,
+      "title": "Former SS Washington departs Singapore as USS Mount Vernon",
+      "ship": "SS Washington",
+      "category": "Wartime Service",
+      "summary": "After delivering British and Canadian troops to Singapore, the former American liner Washington, serving as USS Mount Vernon, sailed for Aden.",
+      "whyItMatters": "The voyage reflects the far-reaching transport duties assigned to converted transatlantic liners.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "historical-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/m/mount-vernon-iv.html"
+      ]
+    }
+  ]
+};
+  for (const [date, events] of Object.entries(verifiedExpansion)) {
+    additions[date] = (additions[date] || []).concat(events);
+  }
   for (const [date, events] of Object.entries(additions)) {
     const existing = Array.isArray(window.OCEAN_LINER_THIS_DAY[date]) ? window.OCEAN_LINER_THIS_DAY[date] : [];
     const seen = new Set(existing.map(e => String(e.year) + '|' + String(e.ship || '').toLowerCase() + '|' + String(e.title || '').toLowerCase()));
