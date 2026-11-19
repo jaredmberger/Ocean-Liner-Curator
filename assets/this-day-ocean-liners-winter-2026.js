@@ -262,10 +262,10 @@
   "11-25": [
     {
       "year": 1919,
-      "title": "Former liner Cleveland leaves U.S. Navy service",
-      "ship": "SS Cleveland",
+      "title": "USS Mobile, formerly SS Cleveland, decommissioned",
+      "ship": "SS Cleveland / USS Mobile",
       "category": "Postwar Transfer",
-      "summary": "The former Hamburg-Amerika liner Cleveland, which had served as USS Mobile, was decommissioned and transferred to the U.S. Shipping Board.",
+      "summary": "USS Mobile (Id. No. 4030), the former Hamburg-Amerika liner Cleveland, was decommissioned on 25 November 1919 and turned over to the U.S. Shipping Board. She had been renamed Mobile in March 1919.",
       "whyItMatters": "The ship's successive identities reflect the postwar redistribution of German passenger liners.",
       "relatedUrl": "",
       "significance": "medium",
@@ -871,10 +871,10 @@
   "12-04": [
     {
       "year": 1919,
-      "title": "Crew unrest aboard former liner America at Brest",
-      "ship": "SS Amerika",
+      "title": "Crew unrest aboard USAT America at Brest",
+      "ship": "SS Amerika / USAT America",
       "category": "Wartime Service",
-      "summary": "The Army transport America, formerly the German liner Amerika, experienced serious crew unrest at Brest, prompting her captain to request an armed guard.",
+      "summary": "While serving as the U.S. Army transport America (formerly German liner Amerika), the ship's crew became unruly at Brest on 4 December 1919, prompting her Army captain to request an armed guard.",
       "whyItMatters": "The episode shows the difficult transition from naval wartime operations to Army transport service.",
       "relatedUrl": "",
       "significance": "medium",
@@ -889,10 +889,10 @@
   "12-20": [
     {
       "year": 1919,
-      "title": "Plans made to transfer former liner America to Shipping Board",
-      "ship": "SS Amerika",
+      "title": "USAT America considered for Shipping Board operation",
+      "ship": "SS Amerika / USAT America",
       "category": "Postwar Transfer",
-      "summary": "Arrangements were made to turn the Army transport America and two other transports over to the U.S. Shipping Board, although subsequent events altered the plan.",
+      "summary": "On 20 December 1919, arrangements were made to transfer USAT America and two other Army transports to U.S. Shipping Board operation while they remained on the Army Transport Reserve rolls. Subsequent events changed the plan.",
       "whyItMatters": "The episode reflects the unsettled postwar disposition of requisitioned passenger liners.",
       "relatedUrl": "",
       "significance": "medium",
