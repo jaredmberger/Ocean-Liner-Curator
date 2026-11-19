@@ -761,6 +761,7 @@
         "winter-chronology"
       ],
       "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html",
         "https://www.navsource.net/archives/09/22/22029.htm",
         "https://mail.shipscribe.com/usnaux/AP/AP29.html"
       ]
@@ -780,6 +781,7 @@
         "winter-chronology"
       ],
       "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html",
         "https://www.navsource.net/archives/09/22/22029.htm",
         "https://mail.shipscribe.com/usnaux/AP/AP29.html"
       ]
@@ -845,7 +847,7 @@
       "title": "USS U.S. Grant departs San Francisco",
       "ship": "SS König Wilhelm II (1907) / USS U.S. Grant",
       "category": "Wartime Service",
-      "summary": "USS U.S. Grant (AP-29), originally the German liner König Wilhelm II, departed San Francisco on 23 January 1945 according to the staged naval chronology; the precise voyage details still require direct primary-source checking.",
+      "summary": "USS U.S. Grant (AP-29), formerly the German passenger liner König Wilhelm II, arrived at San Francisco on 23 January 1945, disembarked passengers, and departed that afternoon without passengers or escort for the Caribbean.",
       "whyItMatters": "The voyage illustrates her continued wartime transport assignments.",
       "relatedUrl": "",
       "significance": "medium",
@@ -853,6 +855,7 @@
         "winter-chronology"
       ],
       "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html",
         "https://www.navsource.net/archives/09/22/22029.htm",
         "https://mail.shipscribe.com/usnaux/AP/AP29.html"
       ]
@@ -900,7 +903,7 @@
       "title": "USS U.S. Grant arrives in San Francisco",
       "ship": "SS König Wilhelm II (1907) / USS U.S. Grant",
       "category": "Wartime Service",
-      "summary": "USS U.S. Grant (AP-29), originally the German passenger liner König Wilhelm II, arrived at San Francisco on 7 November 1945 and subsequently disembarked her passengers.",
+      "summary": "USS U.S. Grant (AP-29), formerly the German passenger liner König Wilhelm II, arrived at San Francisco on 7 November 1945 after carrying 1,273 passengers from Okinawa; she disembarked her passengers soon afterward.",
       "whyItMatters": "The voyage was part of the postwar repatriation effort.",
       "relatedUrl": "",
       "significance": "medium",
@@ -908,6 +911,7 @@
         "winter-chronology"
       ],
       "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html",
         "https://www.navsource.net/archives/09/22/22029.htm",
         "https://mail.shipscribe.com/usnaux/AP/AP29.html"
       ]
