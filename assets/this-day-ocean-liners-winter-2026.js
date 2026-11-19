@@ -613,6 +613,83 @@
   for (const [date, events] of Object.entries(civilianMilestones)) {
     additions[date] = (additions[date] || []).concat(events);
   }
+  const crossFleetMilestones = {
+  "01-26": [
+    {
+      "year": 1931,
+      "title": "Keel laid for SS Normandie",
+      "ship": "SS Normandie",
+      "category": "Construction",
+      "summary": "The keel of the French Line's Normandie was laid at the Penhoët yard in Saint-Nazaire.",
+      "whyItMatters": "The beginning of construction marked an early milestone in the development of France's landmark Art Deco Atlantic liner.",
+      "relatedUrl": "/ships/ss-normandie",
+      "significance": "high",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://catalogs.marinersmuseum.org/object/CL4380"
+      ]
+    }
+  ],
+  "11-09": [
+    {
+      "year": 1915,
+      "title": "Italian liner Ancona sunk in the Mediterranean",
+      "ship": "SS Ancona",
+      "category": "Wartime Loss",
+      "summary": "The Italian passenger liner Ancona was torpedoed and sunk in the Mediterranean during the First World War.",
+      "whyItMatters": "The sinking became a diplomatic flashpoint over attacks on passenger shipping.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://kpolsson.com/cruiseship/"
+      ]
+    }
+  ],
+  "01-11": [
+    {
+      "year": 1920,
+      "title": "French liner Afrique sinks in the Bay of Biscay",
+      "ship": "SS Afrique",
+      "category": "Disaster",
+      "summary": "The French passenger steamer Afrique sank in severe weather off the French Atlantic coast.",
+      "whyItMatters": "The loss became one of the major French maritime disasters of the early twentieth century.",
+      "relatedUrl": "",
+      "significance": "high",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://kpolsson.com/cruiseship/"
+      ]
+    }
+  ],
+  "12-11": [
+    {
+      "year": 1931,
+      "title": "Construction of Queen Mary halted amid Depression",
+      "ship": "RMS Queen Mary",
+      "category": "Construction",
+      "summary": "Work on Cunard's new liner, then known as Hull 534, was suspended during the economic crisis.",
+      "whyItMatters": "The suspension delayed completion of the ship that would become Queen Mary.",
+      "relatedUrl": "/ships/rms-queen-mary",
+      "significance": "high",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://kpolsson.com/cruiseship/ship1930.htm"
+      ]
+    }
+  ]
+};
+  for (const [date, events] of Object.entries(crossFleetMilestones)) {
+    additions[date] = (additions[date] || []).concat(events);
+  }
   for (const [date, events] of Object.entries(additions)) {
     const existing = Array.isArray(window.OCEAN_LINER_THIS_DAY[date]) ? window.OCEAN_LINER_THIS_DAY[date] : [];
     const seen = new Set(existing.map(e => String(e.year) + '|' + String(e.ship || '').toLowerCase() + '|' + String(e.title || '').toLowerCase()));
