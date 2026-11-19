@@ -690,6 +690,241 @@
   for (const [date, events] of Object.entries(crossFleetMilestones)) {
     additions[date] = (additions[date] || []).concat(events);
   }
+  const finalThirteen = {
+  "11-18": [
+    {
+      "year": 1918,
+      "title": "Santa Teresa commissioned as a troop transport",
+      "ship": "SS Santa Teresa",
+      "category": "Wartime Service",
+      "summary": "The Grace Line passenger ship Santa Teresa entered U.S. Navy commission after conversion to a troop transport.",
+      "whyItMatters": "She subsequently carried wounded personnel and returning veterans from Europe.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/s/santa-teresa.html"
+      ]
+    },
+    {
+      "year": 1919,
+      "title": "Martha Washington leaves Navy service",
+      "ship": "SS Martha Washington",
+      "category": "Postwar Transfer",
+      "summary": "The former Austro-American passenger liner Martha Washington was decommissioned and transferred to the War Department.",
+      "whyItMatters": "The transition followed extensive wartime and postwar transport work.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/m/martha-washington.html"
+      ]
+    }
+  ],
+  "11-28": [
+    {
+      "year": 1919,
+      "title": "George Washington decommissioned after troop voyages",
+      "ship": "SS George Washington",
+      "category": "Postwar Transfer",
+      "summary": "The former North German Lloyd liner George Washington was decommissioned following wartime and postwar troop transport service.",
+      "whyItMatters": "The vessel had also carried President Wilson and other diplomatic passengers.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/g/george-washington-ii.html"
+      ]
+    },
+    {
+      "year": 1945,
+      "title": "Former President Grant struck from Navy List",
+      "ship": "SS President Grant",
+      "category": "Postwar Transfer",
+      "summary": "The former passenger liner President Grant, latterly U.S. Grant, was struck from the Navy List.",
+      "whyItMatters": "The ship had served in transport roles during both world wars.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+      ]
+    }
+  ],
+  "11-14": [
+    {
+      "year": 1945,
+      "title": "Former German liner President Grant returned to Army",
+      "ship": "SS President Grant",
+      "category": "Postwar Transfer",
+      "summary": "The former German passenger liner President Grant, serving as U.S. Grant, was decommissioned and returned to the War Department.",
+      "whyItMatters": "The event closed another chapter in a passenger ship's long military career.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+      ]
+    }
+  ],
+  "11-12": [
+    {
+      "year": 1919,
+      "title": "George Washington returns Belgian royalty to Brest",
+      "ship": "SS George Washington",
+      "category": "Historic Voyage",
+      "summary": "The former German liner George Washington carried the King and Queen of Belgium and their party back to Brest after a visit to the United States.",
+      "whyItMatters": "The journey reflects the diplomatic role assumed by a requisitioned Atlantic liner.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/g/george-washington-ii.html"
+      ]
+    }
+  ],
+  "12-10": [
+    {
+      "year": 1937,
+      "title": "Leviathan sold for scrapping",
+      "ship": "SS Leviathan",
+      "category": "Retirement",
+      "summary": "United States Lines' Leviathan, formerly Vaterland, was sold for scrapping to a British firm.",
+      "whyItMatters": "The sale marked the end of the celebrated liner's American commercial career.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/l/leviathan-sp-1326.html"
+      ]
+    }
+  ],
+  "12-11": [
+    {
+      "year": 1942,
+      "title": "Former Conte Biancamano returns to Norfolk as Hermitage",
+      "ship": "SS Conte Biancamano",
+      "category": "Wartime Service",
+      "summary": "The former Italian passenger liner Conte Biancamano, serving as USS Hermitage, returned to Norfolk after transporting troops to North Africa.",
+      "whyItMatters": "The voyage illustrates the wartime transformation of an Italian luxury liner.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/h/hermitage-i.html"
+      ]
+    }
+  ],
+  "01-13": [
+    {
+      "year": 1942,
+      "title": "Former SS Washington reaches Singapore",
+      "ship": "SS Washington",
+      "category": "Wartime Service",
+      "summary": "The former American transatlantic liner Washington, now USS Mount Vernon, arrived at Singapore carrying British and Canadian troops.",
+      "whyItMatters": "Her arrival came during the Japanese offensive in Southeast Asia.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/m/mount-vernon-iv.html"
+      ]
+    }
+  ],
+  "01-23": [
+    {
+      "year": 1945,
+      "title": "Former German liner U.S. Grant departs San Francisco",
+      "ship": "SS President Grant",
+      "category": "Wartime Service",
+      "summary": "After disembarking passengers at San Francisco, the former liner President Grant, then serving as U.S. Grant, departed for the Caribbean.",
+      "whyItMatters": "The voyage illustrates her continued wartime transport assignments.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+      ]
+    }
+  ],
+  "12-04": [
+    {
+      "year": 1919,
+      "title": "Crew unrest aboard former liner America at Brest",
+      "ship": "SS Amerika",
+      "category": "Wartime Service",
+      "summary": "The Army transport America, formerly the German liner Amerika, experienced serious crew unrest at Brest, prompting her captain to request an armed guard.",
+      "whyItMatters": "The episode shows the difficult transition from naval wartime operations to Army transport service.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/a/america-ii.html"
+      ]
+    }
+  ],
+  "12-20": [
+    {
+      "year": 1919,
+      "title": "Plans made to transfer former liner America to Shipping Board",
+      "ship": "SS Amerika",
+      "category": "Postwar Transfer",
+      "summary": "Arrangements were made to turn the Army transport America and two other transports over to the U.S. Shipping Board, although subsequent events altered the plan.",
+      "whyItMatters": "The episode reflects the unsettled postwar disposition of requisitioned passenger liners.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/a/america-ii.html"
+      ]
+    }
+  ],
+  "11-07": [
+    {
+      "year": 1945,
+      "title": "Former German liner U.S. Grant arrives in San Francisco",
+      "ship": "SS President Grant",
+      "category": "Wartime Service",
+      "summary": "The former passenger liner President Grant, serving as U.S. Grant, arrived in San Francisco carrying returning passengers from Okinawa.",
+      "whyItMatters": "The voyage was part of the postwar repatriation effort.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "winter-chronology"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+      ]
+    }
+  ]
+};
+  for (const [date, events] of Object.entries(finalThirteen)) {
+    additions[date] = (additions[date] || []).concat(events);
+  }
   for (const [date, events] of Object.entries(additions)) {
     const existing = Array.isArray(window.OCEAN_LINER_THIS_DAY[date]) ? window.OCEAN_LINER_THIS_DAY[date] : [];
     const seen = new Set(existing.map(e => String(e.year) + '|' + String(e.ship || '').toLowerCase() + '|' + String(e.title || '').toLowerCase()));
