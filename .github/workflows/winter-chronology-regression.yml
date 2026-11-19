@@ -1,0 +1,21 @@
+name: Winter chronology regression
+on:
+  pull_request:
+    paths:
+      - 'assets/this-day-ocean-liners*.js'
+      - 'tests/this-day-winter.test.cjs'
+      - 'ships/ships.html'
+      - 'this-day-in-ocean-liner-history.html'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate winter chronology
+        run: node --test tests/this-day-winter.test.cjs
