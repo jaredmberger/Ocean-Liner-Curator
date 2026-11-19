@@ -908,6 +908,27 @@
         "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
       ]
     }
+  ],
+  "12-08": [
+    {
+      "year": 1900,
+      "title": "North German Lloyd passenger liner Neckar is launched",
+      "ship": "SS Neckar (1900)",
+      "category": "Launch",
+      "summary": "The North German Lloyd passenger-and-freight liner Neckar was launched at Geestemünde, Germany, by Joh. C. Tecklenborg on 8 December 1900.",
+      "whyItMatters": "Built for emigrant and transatlantic passenger traffic, Neckar later served the United States as the troop transport USS Antigone during the First World War.",
+      "relatedUrl": "",
+      "significance": "medium",
+      "tags": [
+        "north-german-lloyd",
+        "launch",
+        "passenger-liner"
+      ],
+      "sources": [
+        "https://www.history.navy.mil/research/histories/ship-histories/danfs/a/antigone-i.html",
+        "https://www.navsource.net/archives/12/173007.htm"
+      ]
+    }
   ]
 };
   for (const [date, events] of Object.entries(finalThirteen)) {
