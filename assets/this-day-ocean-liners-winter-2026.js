@@ -750,10 +750,10 @@
     },
     {
       "year": 1945,
-      "title": "Former President Grant struck from Navy List",
-      "ship": "SS President Grant",
+      "title": "USS U.S. Grant struck from Navy List",
+      "ship": "SS König Wilhelm II (1907) / USS U.S. Grant",
       "category": "Postwar Transfer",
-      "summary": "The former passenger liner President Grant, latterly U.S. Grant, was struck from the Navy List.",
+      "summary": "The former passenger liner U.S. Grant, latterly U.S. Grant, was struck from the Navy List.",
       "whyItMatters": "The ship had served in transport roles during both world wars.",
       "relatedUrl": "",
       "significance": "medium",
@@ -761,17 +761,18 @@
         "winter-chronology"
       ],
       "sources": [
-        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+        "https://www.navsource.net/archives/09/22/22029.htm",
+        "https://mail.shipscribe.com/usnaux/AP/AP29.html"
       ]
     }
   ],
   "11-14": [
     {
       "year": 1945,
-      "title": "Former German liner President Grant returned to Army",
-      "ship": "SS President Grant",
+      "title": "USS U.S. Grant returned to Army",
+      "ship": "SS König Wilhelm II (1907) / USS U.S. Grant",
       "category": "Postwar Transfer",
-      "summary": "The former German passenger liner President Grant, serving as U.S. Grant, was decommissioned and returned to the War Department.",
+      "summary": "The former German passenger liner U.S. Grant, serving as U.S. Grant, was decommissioned and returned to the War Department.",
       "whyItMatters": "The event closed another chapter in a passenger ship's long military career.",
       "relatedUrl": "",
       "significance": "medium",
@@ -779,7 +780,8 @@
         "winter-chronology"
       ],
       "sources": [
-        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+        "https://www.navsource.net/archives/09/22/22029.htm",
+        "https://mail.shipscribe.com/usnaux/AP/AP29.html"
       ]
     }
   ],
@@ -840,10 +842,10 @@
   "01-23": [
     {
       "year": 1945,
-      "title": "Former German liner U.S. Grant departs San Francisco",
-      "ship": "SS President Grant",
+      "title": "USS U.S. Grant departs San Francisco",
+      "ship": "SS König Wilhelm II (1907) / USS U.S. Grant",
       "category": "Wartime Service",
-      "summary": "After disembarking passengers at San Francisco, the former liner President Grant, then serving as U.S. Grant, departed for the Caribbean.",
+      "summary": "After disembarking passengers at San Francisco, the former liner U.S. Grant, then serving as U.S. Grant, departed for the Caribbean.",
       "whyItMatters": "The voyage illustrates her continued wartime transport assignments.",
       "relatedUrl": "",
       "significance": "medium",
@@ -851,7 +853,8 @@
         "winter-chronology"
       ],
       "sources": [
-        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+        "https://www.navsource.net/archives/09/22/22029.htm",
+        "https://mail.shipscribe.com/usnaux/AP/AP29.html"
       ]
     }
   ],
@@ -894,10 +897,10 @@
   "11-07": [
     {
       "year": 1945,
-      "title": "Former German liner U.S. Grant arrives in San Francisco",
-      "ship": "SS President Grant",
+      "title": "USS U.S. Grant arrives in San Francisco",
+      "ship": "SS König Wilhelm II (1907) / USS U.S. Grant",
       "category": "Wartime Service",
-      "summary": "The former passenger liner President Grant, serving as U.S. Grant, arrived in San Francisco carrying returning passengers from Okinawa.",
+      "summary": "The former passenger liner U.S. Grant, serving as U.S. Grant, arrived in San Francisco carrying returning passengers from Okinawa.",
       "whyItMatters": "The voyage was part of the postwar repatriation effort.",
       "relatedUrl": "",
       "significance": "medium",
@@ -905,7 +908,8 @@
         "winter-chronology"
       ],
       "sources": [
-        "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
+        "https://www.navsource.net/archives/09/22/22029.htm",
+        "https://mail.shipscribe.com/usnaux/AP/AP29.html"
       ]
     }
   ],
