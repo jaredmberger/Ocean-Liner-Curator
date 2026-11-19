@@ -93,6 +93,7 @@
         "historical-chronology"
       ],
       "sources": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/The_Engineering_and_Mining_Journal_1894-11-17-_Vol_58_Iss_20_%28IA_sim_engineering-and-mining-journal_1894-11-17_58_20%29.pdf",
         "https://www.history.navy.mil/research/histories/ship-histories/danfs/s/st-louis-iii.html"
       ]
     }
@@ -471,10 +472,10 @@
   "11-30": [
     {
       "year": 1911,
-      "title": "Olympic returns to service after collision repairs",
+      "title": "Olympic's return to service recorded in historical chronology",
       "ship": "RMS Olympic",
       "category": "Service",
-      "summary": "Olympic returned to service on 30 November 1911 following repairs after her September collision with HMS Hawke. This is the date stated by multiple liner histories; some other accounts use 29 November, possibly for preparatory movements.",
+      "summary": "A historical ship chronology records 30 November 1911 as Olympic's return to service following collision repairs. However, a contemporary newspaper report dated 30 November says she sailed from Southampton on 29 November. The precise departure date is therefore distinguished from the later chronology's return-to-service date.",
       "whyItMatters": "The interruption had also affected work on her sister ship Titanic.",
       "relatedUrl": "/ships/rms-olympic",
       "significance": "medium",
@@ -482,9 +483,10 @@
         "ocean-liner-history"
       ],
       "sources": [
+        "https://titanicinquiry.org/ships/olympic.php",
+        "https://oregonnews.uoregon.edu/lccn/sn96088115/1911-11-30/ed-1/seq-5/ocr/",
         "https://www.whitestarhistory.com/olympic.html",
-        "https://www.dieselduck.info/historical/05%20documents/White%20Star%20Liners.pdf",
-        "https://titanicinquiry.org/ships/olympic.php"
+        "https://www.dieselduck.info/historical/05%20documents/White%20Star%20Liners.pdf"
       ]
     }
   ],
@@ -605,7 +607,7 @@
       "title": "QE2 construction contract signed at Clydebank",
       "ship": "RMS Queen Elizabeth 2",
       "category": "Construction",
-      "summary": "The University of Glasgow's John Brown shipbuilding archive dates the signing of Cunard's Q4 (later Queen Elizabeth 2) construction contract to 20 December 1964. Several later chronologies instead give 30 December; the archive-based date is preferred pending examination of the signed contract itself.",
+      "summary": "The University of Glasgow's John Brown shipyard archive dates signing of Cunard's Q4 construction contract to 20 December 1964. Other histories give 30 December, and an Aberdeen museum collection describes the contract as dated 30 December. These may distinguish signing from the agreement's formal date; the signed instrument itself has not been examined.",
       "whyItMatters": "The negotiated contract allowed John Brown's Clydebank yard to proceed with construction of Cunard's new transatlantic flagship.",
       "relatedUrl": "/ships/queen-elizabeth-2",
       "significance": "medium",
@@ -614,6 +616,7 @@
       ],
       "sources": [
         "https://www.gla.ac.uk/myglasgow/archivespecialcollections/digitisedcollections/qe2/anewcunardliner/",
+        "https://emuseum.aberdeencity.gov.uk/objects/85267/mountbatten-medallic-history-of-great-britain-and-the-sea-me",
         "https://www.qe2.org.uk/history.html"
       ]
     }
