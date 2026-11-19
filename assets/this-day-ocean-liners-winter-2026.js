@@ -1,6 +1,6 @@
-/* Ocean Liner Curator — winter chronology additions (source-checked, staged batch).
+/* Ocean Liner Curator — winter chronology additions (provisional staged batch).
    Loaded after the main chronology; does not replace existing entries.
-   Sources are direct institutional ship histories; link to guides once confirmed.
+   Sources vary in authority and require individual editorial confirmation; link to guides once confirmed.
 */
 (function () {
   window.OCEAN_LINER_THIS_DAY = window.OCEAN_LINER_THIS_DAY || {};
@@ -906,24 +906,6 @@
       ],
       "sources": [
         "https://www.history.navy.mil/research/histories/ship-histories/danfs/u/u-s-grant-screw-steamer.html"
-      ]
-    }
-  ],
-  "11-10": [
-    {
-      "year": 1908,
-      "title": "SS George Washington launched at Stettin",
-      "ship": "SS George Washington",
-      "category": "Launch",
-      "summary": "The North German Lloyd passenger liner George Washington was launched at the Vulcan Works in Stettin, Germany.",
-      "whyItMatters": "The ship later became a U.S. troop transport and carried President Woodrow Wilson to the Paris Peace Conference.",
-      "relatedUrl": "",
-      "significance": "medium",
-      "tags": [
-        "winter-chronology"
-      ],
-      "sources": [
-        "https://www.history.navy.mil/research/histories/ship-histories/danfs/g/george-washington-ii.html"
       ]
     }
   ]
