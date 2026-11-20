@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T07:22:35.968Z",
+  "generatedAt": "2026-11-20T07:57:23.995Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -30,8 +30,8 @@
       "pages": 200,
       "searchEligible": 199,
       "sitemapListed": 96,
-      "editorialInbound": 1619,
-      "averageEditorialInbound": 8.1
+      "editorialInbound": 1622,
+      "averageEditorialInbound": 8.11
     },
     "bridge-page": {
       "pages": 11,
@@ -913,9 +913,9 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 2,
+      "inboundTotal": 1,
       "editorialInbound": 0,
-      "baselineInbound": 2,
+      "baselineInbound": 1,
       "byCategory": {},
       "sources": []
     },
@@ -10346,11 +10346,34 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
-      "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "inboundTotal": 4,
+      "editorialInbound": 3,
+      "baselineInbound": 1,
+      "byCategory": {
+        "ship-guide": 1,
+        "hub": 1,
+        "bridge-page": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "ships/rms-olympic.html",
+          "sourceRoute": "/ships/rms-olympic",
+          "sourceCategory": "ship-guide",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "white-star-line.html",
+          "sourceRoute": "/white-star-line",
+          "sourceCategory": "hub",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "why-rms-olympic-matters.html",
+          "sourceRoute": "/why-rms-olympic-matters",
+          "sourceCategory": "bridge-page",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "timelines-history.html",
