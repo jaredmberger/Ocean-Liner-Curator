@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T06:04:23.481Z",
+  "generatedAt": "2026-11-20T07:22:35.968Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 685,
-    "indexablePages": 669,
+    "trackedHtml": 686,
+    "indexablePages": 670,
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 1,
@@ -27,11 +27,11 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 199,
-      "searchEligible": 198,
+      "pages": 200,
+      "searchEligible": 199,
       "sitemapListed": 96,
-      "editorialInbound": 1618,
-      "averageEditorialInbound": 8.13
+      "editorialInbound": 1619,
+      "averageEditorialInbound": 8.1
     },
     "bridge-page": {
       "pages": 11,
@@ -72,8 +72,8 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 371,
-      "editorialInbound": 893,
-      "averageEditorialInbound": 2.39
+      "editorialInbound": 894,
+      "averageEditorialInbound": 2.4
     }
   },
   "signals": {
@@ -4508,11 +4508,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 42,
-      "editorialInbound": 38,
+      "inboundTotal": 43,
+      "editorialInbound": 39,
       "baselineInbound": 4,
       "byCategory": {
-        "article-reference": 15,
+        "article-reference": 16,
         "collection": 23
       },
       "sources": [
@@ -4741,6 +4741,12 @@
         {
           "sourcePath": "sources.html",
           "sourceRoute": "/sources",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "thomas-andrews-aboard-olympic.html",
+          "sourceRoute": "/thomas-andrews-aboard-olympic",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
@@ -10322,6 +10328,20 @@
       "path": "this-day-in-ocean-liner-history.html",
       "route": "/this-day-in-ocean-liner-history",
       "title": "This Day in Ocean Liner History",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": false,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 0,
+      "editorialInbound": 0,
+      "baselineInbound": 0,
+      "byCategory": {},
+      "sources": []
+    },
+    {
+      "path": "thomas-andrews-aboard-olympic.html",
+      "route": "/thomas-andrews-aboard-olympic",
+      "title": "Thomas Andrews Aboard Olympic",
       "category": "article-reference",
       "searchEligible": true,
       "sitemapListed": false,
@@ -24383,13 +24403,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 37,
-      "editorialInbound": 35,
+      "inboundTotal": 38,
+      "editorialInbound": 36,
       "baselineInbound": 2,
       "byCategory": {
         "comparative-history": 9,
         "collection": 10,
-        "article-reference": 12,
+        "article-reference": 13,
         "ship-guide": 1,
         "hub": 2,
         "bridge-page": 1
@@ -24567,6 +24587,12 @@
           "sourcePath": "standardized-sister-ships-vs-revised-sisters.html",
           "sourceRoute": "/standardized-sister-ships-vs-revised-sisters",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "thomas-andrews-aboard-olympic.html",
+          "sourceRoute": "/thomas-andrews-aboard-olympic",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
