@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T10:31:24.750Z",
+  "generatedAt": "2026-11-24T11:43:54.586Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -72,8 +72,8 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 371,
-      "editorialInbound": 897,
-      "averageEditorialInbound": 2.4
+      "editorialInbound": 900,
+      "averageEditorialInbound": 2.41
     }
   },
   "signals": {
@@ -22642,17 +22642,23 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 11,
-      "editorialInbound": 10,
+      "inboundTotal": 12,
+      "editorialInbound": 11,
       "baselineInbound": 1,
       "byCategory": {
+        "article-reference": 3,
         "collection": 3,
         "hub": 1,
         "comparative-history": 3,
-        "article-reference": 2,
         "bridge-page": 1
       },
       "sources": [
+        {
+          "sourcePath": "christmas-at-sea.html",
+          "sourceRoute": "/christmas-at-sea",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "collections/ocean-liners-at-war.html",
           "sourceRoute": "/collections/ocean-liners-at-war",
@@ -24193,14 +24199,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 27,
-      "editorialInbound": 26,
+      "inboundTotal": 28,
+      "editorialInbound": 27,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 12,
+        "article-reference": 8,
         "collection": 2,
         "hub": 2,
-        "article-reference": 7,
         "ship-guide": 1,
         "bridge-page": 2
       },
@@ -24209,6 +24215,12 @@
           "sourcePath": "british-vs-german-ocean-liners-before-1914.html",
           "sourceRoute": "/british-vs-german-ocean-liners-before-1914",
           "sourceCategory": "comparative-history",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "christmas-at-sea.html",
+          "sourceRoute": "/christmas-at-sea",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -24989,11 +25001,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 27,
-      "editorialInbound": 26,
+      "inboundTotal": 28,
+      "editorialInbound": 27,
       "baselineInbound": 1,
       "byCategory": {
-        "article-reference": 13,
+        "article-reference": 14,
         "comparative-history": 6,
         "collection": 4,
         "hub": 1,
@@ -25003,6 +25015,12 @@
         {
           "sourcePath": "250-years-across-the-atlantic.html",
           "sourceRoute": "/250-years-across-the-atlantic",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "christmas-at-sea.html",
+          "sourceRoute": "/christmas-at-sea",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
