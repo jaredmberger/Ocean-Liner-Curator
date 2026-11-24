@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-19T08:32:36.496Z",
+  "generatedAt": "2026-11-24T05:31:10.136Z",
   "source": "Tracked ships/*.html pages identified as Ship Guides",
   "summary": {
     "trackedShipHtmlFiles": 382,
     "shipGuides": 370,
-    "canonicalBuilders": 94,
+    "canonicalBuilders": 95,
     "guidesWithBuilder": 370,
     "guidesMissingBuilder": 0,
     "guidesMissingOperator": 0,
@@ -33,7 +33,7 @@
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 84,
+      "shipCount": 83,
       "firstLaunchYear": 1870,
       "lastLaunchYear": 1960,
       "locations": [
@@ -353,7 +353,7 @@
         "Harland & Wolff, Queen's Island, Belfast · yard no. 352",
         "Harland & Wolff, Queen's Island, Belfast · yard no. 358"
       ],
-      "shipCount": 84
+      "shipCount": 83
     },
     {
       "id": "john-brown-and-company",
@@ -1227,6 +1227,17 @@
       ],
       "rawValues": [
         "Götaverken, Gothenburg"
+      ],
+      "shipCount": 1
+    },
+    {
+      "id": "harland-and-wolff-belfast-northern-ireland-yard-no-317",
+      "name": "Harland & Wolff (Belfast, Northern Ireland); yard no. 317",
+      "names": [
+        "Harland & Wolff (Belfast, Northern Ireland); yard no. 317"
+      ],
+      "rawValues": [
+        "Harland & Wolff (Belfast, Northern Ireland); yard no. 317"
       ],
       "shipCount": 1
     },
@@ -2729,12 +2740,12 @@
       "path": "ships/rms-oceanic-1899.html",
       "url": "/ships/rms-oceanic-1899",
       "launchYear": "1899",
-      "builderRaw": "Harland & Wolff (Belfast, Northern Ireland)",
+      "builderRaw": "Harland & Wolff (Belfast, Northern Ireland); yard no. 317",
       "builders": [
         {
-          "id": "harland-and-wolff",
-          "name": "Harland & Wolff",
-          "raw": "Harland & Wolff (Belfast, Northern Ireland)"
+          "id": "harland-and-wolff-belfast-northern-ireland-yard-no-317",
+          "name": "Harland & Wolff (Belfast, Northern Ireland); yard no. 317",
+          "raw": "Harland & Wolff (Belfast, Northern Ireland); yard no. 317"
         }
       ]
     },

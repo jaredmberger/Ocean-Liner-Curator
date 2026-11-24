@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T08:32:36.496Z",
+  "generatedAt": "2026-11-24T05:31:10.136Z",
   "source": "Ship-specific builder yard/location wording extracted by builder audit",
   "summary": {
     "shipGuides": 370,
-    "guidesWithDocumentedYard": 370,
-    "guidesWithoutDocumentedYard": 0,
+    "guidesWithDocumentedYard": 369,
+    "guidesWithoutDocumentedYard": 1,
     "canonicalYardLocations": 79,
     "multiYardShips": 0
   },
@@ -22,7 +22,7 @@
         "Harland & Wolff",
         "Workman, Clark & Co."
       ],
-      "shipCount": 79,
+      "shipCount": 78,
       "ships": [
         {
           "name": "SS Atlantic (1873)",
@@ -148,13 +148,6 @@
           "path": "ships/ss-romanic.html",
           "url": "/ships/ss-romanic",
           "launchYear": "1898",
-          "builder": "Harland & Wolff"
-        },
-        {
-          "name": "RMS Oceanic (1899)",
-          "path": "ships/rms-oceanic-1899.html",
-          "url": "/ships/rms-oceanic-1899",
-          "launchYear": "1899",
           "builder": "Harland & Wolff"
         },
         {
@@ -4859,14 +4852,7 @@
       "path": "ships/rms-oceanic-1899.html",
       "url": "/ships/rms-oceanic-1899",
       "launchYear": "1899",
-      "assignments": [
-        {
-          "builder": "Harland & Wolff",
-          "builderId": "harland-and-wolff",
-          "location": "Belfast",
-          "locationRaw": "Belfast, Northern Ireland"
-        }
-      ]
+      "assignments": []
     },
     {
       "name": "RMS Olympic",

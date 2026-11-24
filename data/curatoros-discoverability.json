@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T02:11:36.883Z",
+  "generatedAt": "2026-11-24T05:31:16.875Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -72,7 +72,7 @@
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 371,
-      "editorialInbound": 894,
+      "editorialInbound": 895,
       "averageEditorialInbound": 2.4
     }
   },
@@ -25546,14 +25546,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 26,
-      "editorialInbound": 25,
+      "inboundTotal": 27,
+      "editorialInbound": 26,
       "baselineInbound": 1,
       "byCategory": {
         "article-reference": 12,
         "collection": 6,
         "comparative-history": 4,
-        "ship-guide": 1,
+        "ship-guide": 2,
         "hub": 2
       },
       "sources": [
@@ -25651,6 +25651,12 @@
           "sourcePath": "ships/ocean-liner-evolution-map.html",
           "sourceRoute": "/ships/ocean-liner-evolution-map",
           "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "ships/rms-oceanic-1899.html",
+          "sourceRoute": "/ships/rms-oceanic-1899",
+          "sourceCategory": "ship-guide",
           "sourceBaseline": false
         },
         {

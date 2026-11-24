@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T08:32:38.648Z",
+  "generatedAt": "2026-11-24T05:31:12.220Z",
   "methodology": {
     "purpose": "Surface internal archive signals that merit research without treating low counts as proof of historical underrepresentation.",
     "cautions": [
@@ -18,7 +18,7 @@
     "canonicalOperators": 91,
     "thinOperators": 62,
     "canonicalYardLocations": 79,
-    "guidesWithoutDocumentedYard": 0,
+    "guidesWithoutDocumentedYard": 1,
     "eras": 10,
     "decades": 15,
     "canonicalClasses": 10,
@@ -213,7 +213,14 @@
         "signal": "Possible missing archive ship, alternate name, or unresolved wording"
       }
     ],
-    "yardDocumentationGaps": [],
+    "yardDocumentationGaps": [
+      {
+        "name": "RMS Oceanic (1899)",
+        "path": "ships/rms-oceanic-1899.html",
+        "url": "/ships/rms-oceanic-1899",
+        "launchYear": "1899"
+      }
+    ],
     "relationshipResearchCandidates": [
       {
         "type": "relationship-gap",

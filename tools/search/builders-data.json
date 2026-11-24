@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-19T08:32:36.496Z",
+  "generatedAt": "2026-11-24T05:31:10.136Z",
   "summary": {
     "shipGuides": 370,
-    "canonicalBuilders": 94,
+    "canonicalBuilders": 95,
     "guidesWithBuilder": 370
   },
   "builders": [
     {
       "id": "harland-and-wolff",
       "name": "Harland & Wolff",
-      "shipCount": 84,
+      "shipCount": 83,
       "locations": [
         "Belfast",
         "Belfast, Ireland",
@@ -146,13 +146,6 @@
           "launchYear": "1898",
           "operator": "Dominion Line",
           "builderRaw": "Harland & Wolff, Belfast"
-        },
-        {
-          "name": "RMS Oceanic (1899)",
-          "url": "/ships/rms-oceanic-1899",
-          "launchYear": "1899",
-          "operator": "White Star Line",
-          "builderRaw": "Harland & Wolff (Belfast, Northern Ireland)"
         },
         {
           "name": "SS Belgia",
@@ -3205,6 +3198,23 @@
           "launchYear": "1946",
           "operator": "Swedish America Line (Svenska Amerika Linien)",
           "builderRaw": "Götaverken, Gothenburg"
+        }
+      ]
+    },
+    {
+      "id": "harland-and-wolff-belfast-northern-ireland-yard-no-317",
+      "name": "Harland & Wolff (Belfast, Northern Ireland); yard no. 317",
+      "shipCount": 1,
+      "locations": [],
+      "firstLaunchYear": 1899,
+      "lastLaunchYear": 1899,
+      "ships": [
+        {
+          "name": "RMS Oceanic (1899)",
+          "url": "/ships/rms-oceanic-1899",
+          "launchYear": "1899",
+          "operator": "White Star Line",
+          "builderRaw": "Harland & Wolff (Belfast, Northern Ireland); yard no. 317"
         }
       ]
     },
