@@ -614,3 +614,12 @@ Do not derive coverage percentages from this partial ledger or count source-refe
 - **1952 disposal:** Same society bulletin, including a former officer's account, reports departure from the Mersey on 8 May 1952 for breaking at Inverkeithing. Contemporary movement and yard records not inspected; Thos. W. Ward attribution not promoted.
 - **1923 Yokohama relief:** [FRUS 1923, vol. II, document 433](https://history.state.gov/historicaldocuments/frus1923v02/d433), 24 November 1923, is contemporary primary diplomatic evidence. Guide already included a short account and citation; retained without inventing rescue totals.
 - **Evidence status:** Original dossier is `model_extraction_only`; one claim supported by contemporary primary diplomatic text, two qualified retrospective/catalogue claims. This is a claim-level editorial review, not full-guide certification. Editorial PR pending.
+
+
+## RMS Oceanic (1899) dossier review — 2026-11-24 (run 45293719904)
+
+- **Construction:** National Museums NI catalogue [HOYFM.HW.H297](https://prints.nationalmuseumsni.org/image-library/image-overview/poster/hoyfm.hw.h297/posterid/2400351.html) identifies yard 317 and records 17,274 tons without explicit measurement basis. Retain approximate 17,272 GRT with attributed discrepancy. Launch and delivery already documented; no new milestone correction.
+- **Titanic connection:** Add 13 May 1912 recovery of Collapsible A and burial at sea of three deceased occupants, supported by [Mark Chirnside](https://markchirnside.co.uk/category/titanic/lifeboats/) and [Nebraska History](https://history.nebraska.gov/wp-content/uploads/2017/11/doc_publications_NH1997Titanic.pdf). Supplied New Zealand Herald article not independently inspected; exact New York landing date withheld pending directly retrievable supporting evidence.
+- **Loss:** [Jellicoe, The Grand Fleet, 1914–1916](https://www.gutenberg.org/cache/epub/75323/pg75323-images.html), confirms salvage abandoned 11 September owing to heavy weather and eventual breakup.
+- **Rejected attribution:** The dossier's ADM 1/8413/60 and ADM 137/1089 belong to Okino in the [derivative naval listing](https://www.naval-history.net/WW1NavyBritishShips-Locations10Attacked.htm), not Oceanic. ADM 53/53135 is listed for Oceanic but original file remains uninspected. Precise coordinates withheld.
+- **Evidence status:** Claim-level editorial acceptance with limitations; original model_extraction_only dossier not certified. Editorial approval received; PR pending.
