@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T05:31:16.875Z",
+  "generatedAt": "2026-11-24T10:31:24.750Z",
   "methodology": {
     "purpose": "Measure structural discoverability of indexable Ocean Liner Curator pages beyond ship-guide-only linkage intelligence.",
     "priorityCategories": [
@@ -17,8 +17,8 @@
     ]
   },
   "summary": {
-    "trackedHtml": 686,
-    "indexablePages": 670,
+    "trackedHtml": 687,
+    "indexablePages": 671,
     "priorityPages": 94,
     "priorityMissingFromSitemap": 6,
     "priorityEditorialOrphans": 1,
@@ -27,10 +27,10 @@
   },
   "categories": {
     "article-reference": {
-      "pages": 200,
-      "searchEligible": 199,
-      "sitemapListed": 96,
-      "editorialInbound": 1622,
+      "pages": 201,
+      "searchEligible": 200,
+      "sitemapListed": 97,
+      "editorialInbound": 1631,
       "averageEditorialInbound": 8.11
     },
     "bridge-page": {
@@ -58,21 +58,21 @@
       "pages": 11,
       "searchEligible": 11,
       "sitemapListed": 11,
-      "editorialInbound": 75,
-      "averageEditorialInbound": 6.82
+      "editorialInbound": 76,
+      "averageEditorialInbound": 6.91
     },
     "hub": {
       "pages": 4,
       "searchEligible": 4,
       "sitemapListed": 1,
-      "editorialInbound": 128,
-      "averageEditorialInbound": 32
+      "editorialInbound": 129,
+      "averageEditorialInbound": 32.25
     },
     "ship-guide": {
       "pages": 373,
       "searchEligible": 373,
       "sitemapListed": 371,
-      "editorialInbound": 895,
+      "editorialInbound": 897,
       "averageEditorialInbound": 2.4
     }
   },
@@ -913,11 +913,20 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 1,
-      "editorialInbound": 0,
+      "inboundTotal": 2,
+      "editorialInbound": 1,
       "baselineInbound": 1,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "rms-queen-mary-voyage-reconstructed.html",
@@ -1103,11 +1112,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 12,
-      "editorialInbound": 9,
+      "inboundTotal": 13,
+      "editorialInbound": 10,
       "baselineInbound": 3,
       "byCategory": {
-        "article-reference": 9
+        "article-reference": 10
       },
       "sources": [
         {
@@ -1143,6 +1152,12 @@
         {
           "sourcePath": "how-we-work.html",
           "sourceRoute": "/how-we-work",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -1698,11 +1713,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 6,
-      "editorialInbound": 5,
+      "inboundTotal": 7,
+      "editorialInbound": 6,
       "baselineInbound": 1,
       "byCategory": {
-        "article-reference": 5
+        "article-reference": 6
       },
       "sources": [
         {
@@ -1726,6 +1741,12 @@
         {
           "sourcePath": "how-we-work.html",
           "sourceRoute": "/how-we-work",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -2106,11 +2127,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 8,
+      "inboundTotal": 11,
+      "editorialInbound": 9,
       "baselineInbound": 2,
       "byCategory": {
-        "article-reference": 8
+        "article-reference": 9
       },
       "sources": [
         {
@@ -2128,6 +2149,12 @@
         {
           "sourcePath": "how-we-work.html",
           "sourceRoute": "/how-we-work",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -3656,11 +3683,20 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 0,
-      "editorialInbound": 0,
+      "inboundTotal": 1,
+      "editorialInbound": 1,
       "baselineInbound": 0,
-      "byCategory": {},
-      "sources": []
+      "byCategory": {
+        "article-reference": 1
+      },
+      "sources": [
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        }
+      ]
     },
     {
       "path": "photos/inside-uss-leviathan/index.html",
@@ -3697,6 +3733,20 @@
           "sourceBaseline": false
         }
       ]
+    },
+    {
+      "path": "institutional.html",
+      "route": "/institutional",
+      "title": "Institutional ★ Information",
+      "category": "article-reference",
+      "searchEligible": true,
+      "sitemapListed": true,
+      "canonicalDiffersFromPhysical": false,
+      "inboundTotal": 0,
+      "editorialInbound": 0,
+      "baselineInbound": 0,
+      "byCategory": {},
+      "sources": []
     },
     {
       "path": "designs-interiors/branding.html",
@@ -5010,11 +5060,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 43,
-      "editorialInbound": 38,
+      "inboundTotal": 44,
+      "editorialInbound": 39,
       "baselineInbound": 5,
       "byCategory": {
-        "article-reference": 18,
+        "article-reference": 19,
         "collection": 16,
         "hub": 3,
         "bridge-page": 1
@@ -5149,6 +5199,12 @@
         {
           "sourcePath": "how-to-use-the-ship-archive.html",
           "sourceRoute": "/how-to-use-the-ship-archive",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -6788,11 +6844,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 455,
-      "editorialInbound": 453,
+      "inboundTotal": 456,
+      "editorialInbound": 454,
       "baselineInbound": 2,
       "byCategory": {
-        "article-reference": 43,
+        "article-reference": 44,
         "comparative-history": 7,
         "collection": 36,
         "evidence-methodology": 1,
@@ -7120,6 +7176,12 @@
         {
           "sourcePath": "identify.html",
           "sourceRoute": "/identify",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -10230,11 +10292,12 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 10,
-      "editorialInbound": 7,
+      "inboundTotal": 11,
+      "editorialInbound": 8,
       "baselineInbound": 3,
       "byCategory": {
-        "collection": 7
+        "collection": 7,
+        "article-reference": 1
       },
       "sources": [
         {
@@ -10277,6 +10340,12 @@
           "sourcePath": "collections/south-atlantic-latin-american-liner-routes.html",
           "sourceRoute": "/collections/south-atlantic-latin-american-liner-routes",
           "sourceCategory": "collection",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         }
       ]
@@ -10346,15 +10415,22 @@
       "searchEligible": true,
       "sitemapListed": false,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 4,
-      "editorialInbound": 3,
+      "inboundTotal": 5,
+      "editorialInbound": 4,
       "baselineInbound": 1,
       "byCategory": {
+        "article-reference": 1,
         "ship-guide": 1,
         "hub": 1,
         "bridge-page": 1
       },
       "sources": [
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
         {
           "sourcePath": "ships/rms-olympic.html",
           "sourceRoute": "/ships/rms-olympic",
@@ -19661,13 +19737,13 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 27,
-      "editorialInbound": 24,
+      "inboundTotal": 28,
+      "editorialInbound": 25,
       "baselineInbound": 3,
       "byCategory": {
         "collection": 12,
         "evidence-methodology": 10,
-        "article-reference": 2
+        "article-reference": 3
       },
       "sources": [
         {
@@ -19776,6 +19852,12 @@
           "sourcePath": "how-to-weigh-conflicting-ocean-liner-sources.html",
           "sourceRoute": "/how-to-weigh-conflicting-ocean-liner-sources",
           "sourceCategory": "evidence-methodology",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
+          "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
         {
@@ -20360,11 +20442,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 88,
-      "editorialInbound": 83,
+      "inboundTotal": 89,
+      "editorialInbound": 84,
       "baselineInbound": 5,
       "byCategory": {
-        "article-reference": 39,
+        "article-reference": 40,
         "collection": 36,
         "hub": 3,
         "comparative-history": 1,
@@ -20645,6 +20727,12 @@
         {
           "sourcePath": "how-to-use-the-ship-archive.html",
           "sourceRoute": "/how-to-use-the-ship-archive",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -24105,14 +24193,14 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 26,
-      "editorialInbound": 25,
+      "inboundTotal": 27,
+      "editorialInbound": 26,
       "baselineInbound": 1,
       "byCategory": {
         "comparative-history": 12,
         "collection": 2,
         "hub": 2,
-        "article-reference": 6,
+        "article-reference": 7,
         "ship-guide": 1,
         "bridge-page": 2
       },
@@ -24180,6 +24268,12 @@
         {
           "sourcePath": "how-ocean-liners-were-coaled-and-fueled.html",
           "sourceRoute": "/how-ocean-liners-were-coaled-and-fueled",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
@@ -32297,11 +32391,11 @@
       "searchEligible": true,
       "sitemapListed": true,
       "canonicalDiffersFromPhysical": false,
-      "inboundTotal": 27,
-      "editorialInbound": 26,
+      "inboundTotal": 28,
+      "editorialInbound": 27,
       "baselineInbound": 1,
       "byCategory": {
-        "article-reference": 13,
+        "article-reference": 14,
         "comparative-history": 4,
         "collection": 6,
         "ship-guide": 2,
@@ -32389,6 +32483,12 @@
         {
           "sourcePath": "how-the-liner-system-worked.html",
           "sourceRoute": "/how-the-liner-system-worked",
+          "sourceCategory": "article-reference",
+          "sourceBaseline": false
+        },
+        {
+          "sourcePath": "institutional.html",
+          "sourceRoute": "/institutional",
           "sourceCategory": "article-reference",
           "sourceBaseline": false
         },
