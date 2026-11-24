@@ -623,3 +623,11 @@ Do not derive coverage percentages from this partial ledger or count source-refe
 - **Loss:** [Jellicoe, The Grand Fleet, 1914–1916](https://www.gutenberg.org/cache/epub/75323/pg75323-images.html), confirms salvage abandoned 11 September owing to heavy weather and eventual breakup.
 - **Rejected attribution:** The dossier's ADM 1/8413/60 and ADM 137/1089 belong to Okino in the [derivative naval listing](https://www.naval-history.net/WW1NavyBritishShips-Locations10Attacked.htm), not Oceanic. ADM 53/53135 is listed for Oceanic but original file remains uninspected. Precise coordinates withheld.
 - **Evidence status:** Claim-level editorial acceptance with limitations; original model_extraction_only dossier not certified. Editorial approval received; PR pending.
+
+
+## City of New York (1888) dossier review — 2026-11-24 (run 45293719904)
+
+- **Titanic near-collision:** [U.S. Senate Inquiry final report](https://www.titanicinquiry.org/USInq/USReport/AmInqRep03.php) supports 10 April 1912 Southampton incident and approximately half-hour delay. Attribute starboard propeller backwash to committee; avoid substituting suction as its wording.
+- **1901–1903 reconstruction:** Already substantially present. [Mariners’ Museum CL8342](https://catalogs.marinersmuseum.org/object/CL8342) supports withdrawal, machinery replacement, two taller funnels and April 1903 return as retrospective catalogue metadata. Quadruple-expansion description conflicts with triple-expansion in Norway Heritage and GG Archives; five-cylinder assertion not established. Key facts now explicitly distinguish as-built machinery.
+- **Pretoria collision:** [Eugene Daily Guard, 13 June 1914](https://oregonnews.uoregon.edu/lccn/sn96088107/1914-06-13/ed-1/seq-1/) and [Sunday Oregonian, 14 June 1914](https://oregonnews.uoregon.edu/lccn/sn83045782/1914-06-14/ed-1/seq-4/ocr/) support 13 June collision in fog, port-side damage above waterline and continuation of voyages. Shared wireless reporting is not independent eyewitness corroboration. Supplied Washington Herald scan inaccessible; exact position, damage measurements and final arrivals withheld.
+- **Evidence status:** Editorial approval with qualifications; original model_extraction_only dossier remains unverified as a whole. PR pending.
